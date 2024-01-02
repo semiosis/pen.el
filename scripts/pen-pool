@@ -22,6 +22,7 @@ while test -z "$SOCKET"; do
     fi
     echo
     echo "$(date-ts-hr)"
+    ns "Waiting for socket..." 1>&2
     echo "Waiting for socket..." 1>&2
     sleep 1
 done
@@ -33,6 +34,7 @@ rm -f ~/.pen/pool/available/$SOCKET
 : "${SOCKET:="DEFAULT"}"
 
 export SOCKET
+echo "pool selected $SOCKET" | hls red 1>&2
 
 # Do stuff
 "$@"

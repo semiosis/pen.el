@@ -1,8 +1,53 @@
 #!/bin/bash
 export TTY
 
-spinner-start
+# ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Trap to kill subprocesses is almost useless here because the spinner is a
+# popup
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        TMUX_SPINNER=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# TODO Make the tmux spinner
+if test "$TMUX_SPINNER" = "y"; then
+    "$@"
+    exit "$?"
+fi
+
+extraargs=()
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b) {
+        extraargs=( -b "${extraargs[@]}" )
+        shift
+    }
+    ;;
+
+    -time) {
+        extraargs=( "$opt" "$2" "${extraargs[@]}" )
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# 1 is the message and it's taken from the first
+# command in the command arguments
+spinner-start "${extraargs[@]}" -m "$1"
 
 "$@"
+ret="$?"
 
 spinner-stop
+exit "$ret"

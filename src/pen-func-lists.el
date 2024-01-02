@@ -9,6 +9,14 @@
         (w3m-find-file (buffer-file-path))
       (w3m (buffer-file-path)))))
 
+(defun chrome-this-file ()
+  (interactive)
+  (chrome (buffer-file-path) t nil))
+
+(defun firefox-this-file ()
+  (interactive)
+  (snc (cmd "firefox" (buffer-file-path))))
+
 (defun elinks-dump-this-file ()
   (interactive)
   (nw (cmd "elinks-dump" (buffer-file-path))))
@@ -20,6 +28,10 @@
 (defun elinks-dump-open-this-file ()
   (interactive)
   (new-buffer-from-string (pen-sn (concat "elinks-dump " (pen-q (buffer-file-path))))))
+
+(defset org-agenda-mode-funcs '(agenda-fix-questionmarks
+                                cfw:open-org-calendar
+                                notmuch-search-agenda))
 
 (defset prog-mode-funcs '(pen-lsp-get-hover-docs
                           run-file-with-interpreter
@@ -47,6 +59,7 @@
                            dired-toggle-read-only
                            find-ci-here
                            find-src-here
+                           find-doc-here
                            show-extensions-below
                            run-fs-search-function
                            todayfile
@@ -56,17 +69,29 @@
 (defset magit-status-mode-funcs '(magit-section-cycle-diffs
                                   magit-dired-jump))
 (defset vimrc-mode-funcs '(vimhelp))
-(defset bible-mode-funcs '(bible-mode-cross-references
+(defset bible-mode-funcs '(apropos-variable
+                           bible-mode-fast-toggle
+                           bible-mode-cross-references
                            bible-mode-split-display
-                           bible-random-verse-ref))
-(defset bible-search-mode-funcs '(bible-mode-cross-references
+                           bible-random-verse-ref
+                           nicene-creed
+                           bible-mode-fuzzy-search
+                           commandments-of-Jesus
+                           prophesies-fortelling-Jesus-fulfilled))
+(defset bible-search-mode-funcs '(apropos-variable
+                                  bible-mode-fast-toggle
+                                  bible-mode-cross-references
                                   bible-mode-split-display
-                                  bible-random-verse-ref))
+                                  bible-random-verse-ref
+                                  bible-mode-fuzzy-search))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
+(defset problog-mode-funcs '(compile-run-compile))
 (defset html-mode-funcs '(w3m-open-this-file
                           eww-open-this-file
+                          ;; chrome-this-file
+                          firefox-this-file
                           elinks-dump-this-file
                           elinks-open-this-file))
 (defset solidity-mode-funcs '(find-file-at-point))
@@ -82,7 +107,8 @@
 
 (defset proced-mode-funcs '(proced-get-pwd))
 
-(defset Info-mode-funcs '(info-buttons-imenu))
+(defset Info-mode-funcs '(info-buttons-imenu
+                          info-apropos))
 
 (defset web-mode-funcs '(eww-open-this-file))
 
@@ -103,10 +129,17 @@
                          csv-open-in-pandas
                          csv-open-in-fpvd))
 
+(defset gnu-apl-mode-funcs '(gnu-apl))
+
 (defset tabulated-list-mode-funcs '(tablist-export-csv
                                     tablist-open-in-fpvd))
 
 (defset subed-mode-funcs '(show-clean-subs))
+(defset notmuch-search-mode-funcs '(helm-notmuch))
+(defset notmuch-show-mode-funcs '(
+                                  helm-notmuch
+                                  notmuch-show-save-attachments
+                                  notmuch-search-agenda))
 
 (defset context-functions '(org-in-src-block-p org-babel-change-block-type))
 
@@ -123,8 +156,10 @@
                                 nil nil nil t))))
 (defset org-mode-funcs ;; (list 'org-latex-export-to-pdf 'tvipe-org-table-export)
   (list
+   'org-toggle-link-display
    'org-ascii-convert-region-to-utf8
    'poly-org-mode
+   'insert-figlet-org
    'pen-lsp-open-hover-docs-url
    'idify-org-file
    'unidify-org-file
@@ -257,15 +292,23 @@
   (interactive)
   (edit-var-elisp 'org-brain--vis-history))
 
+(defun org-brain-clear-hist ()
+  (interactive)
+  (setq org-brain--vis-history nil))
+
 (defset graphviz-dot-mode-funcs
   '(dot-digraph
     neato-digraph))
 
 (defset org-brain-visualize-mode-funcs
   (list
-     'org-brain-to-dot-associates
+   'apropos-variable
+   'notmuch-search-agenda
+   'org-brain-to-dot-associates
    'org-brain-to-dot-children
    'pp-org-brain-tree
+   'org-brain-clear-metadata
+   'org-brain-edit-metadata
    'org-brain-show-recursive-children
    'org-brain-show-recursive-children-names
    'org-brain-describe-topic
@@ -276,6 +319,7 @@
    'org-brain-google-here
    'org-brain-suggest-subtopics
    'org-brain-edit-hist
+   'org-brain-clear-hist
    'org-brain-set-title
    'org-brain-open-resource
    'org-id-update-id-locations
@@ -337,6 +381,8 @@
                                 (defshellfilter-new-buffer hcl2json)))
 (defset terraform-mode-funcs (list
                               (lk (lint "tflint"))))
+(defset text-mode-funcs (list
+                         'insert-figlet))
 (defset text-mode-filters (list
                            (defshellfilter grex)
                            (defshellfilter-new-buffer-mode 'text-mode ner)

@@ -75,7 +75,8 @@
              (setq pen-graphic-theme-set t)))
     (message "skipping after-make-frame-set-theme")))
 
-(add-hook 'after-make-frame-functions 'after-make-frame-set-theme)
+;; (add-hook 'after-make-frame-functions 'after-make-frame-set-theme)
+(remove-hook 'after-make-frame-functions 'after-make-frame-set-theme)
 
 
 (defun close-all-other-buffers-and-frames ()

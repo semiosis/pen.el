@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+msg="$1"
+: ${msg:="Date"}
+
+echo "$msg" :: "$(date)" | udl | hlblue ".* ::"

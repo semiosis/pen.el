@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 
 export PENCONF="$HOME/.pen"
 test -d "$EMACSD/host/pen.el" && : "${PENELD:="$EMACSD/host/pen.el"}"
@@ -94,7 +94,8 @@ case "$opt" in
         fi
 
         set pipefail
-        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; eval 'cat $fp | ' pen-timeout 4 {}" -pcomplete)"
+        exec 0</dev/null
+        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; nh ocif -nd -E 'cat $fp | timeout 4 {}'" -pcomplete)"
         ret="$?" # catches fzf cancel exit = 130
 
         if [ -n "$filter" ]; then

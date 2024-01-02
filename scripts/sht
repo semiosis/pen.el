@@ -5,8 +5,18 @@ export TTY
 
 # e21 shx "$@"
 
-{
-exec 2>&1;
-export PS4='+	"$(basename $0)"	${LINENO}	 '
-bash -x "$@" 
-} | ts -i '[%H:%M:%.S]'
+. $PENEL_DIR/scripts/utils.sh
+
+if stdin_exists; then
+    ts -i '[%H:%M:%.S]'
+else
+    {
+    exec 2>&1;
+    export PS4='+	"$(basename $0)"	${LINENO}	 '
+    if test -f "$1"; then
+        bash -x "$@" 
+    else
+        "$@"
+    fi
+    } | ts -i '[%H:%M:%.S]'
+fi

@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 
 if test -f $TMPDIR/stdincap; then
     in="$(cat $TMPDIR/stdincap)"

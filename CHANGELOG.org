@@ -1,4 +1,10 @@
 * Change Log
+** 25.11.23
+I have updated the readme to reflect this project's new objectives,
+that being that the project now purposed to support Christians with their
+computing, including Bible-study, prayers, holiness, and otherwise just
+enabling people to be focused on God, even while using a computer.
+
 ** 07.07.21
 The project has been excised from my main
 =emacs.d=.

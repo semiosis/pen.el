@@ -1,7 +1,24 @@
 #!/bin/bash
 export TTY
 
-FAST=y
+# eval 'echo -e -n "export PS4=\"+\t\\\"$(basename $0)\\\"\t${LINENO}\t\""'
+# set -xv
+
+# POSIX-compliant
+p () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
+FAST=y s
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -f) {
@@ -24,7 +41,7 @@ key="$(p "$key" | sed 's/^\.//')"
 jkey=".$key"
 
 if test "$FAST" = "n"; then
-    test -n "$key" && test "$(pen-rc "$jkey")" = true
+    test -n "$key" && test "$(pen-rc-get "$jkey")" = true
 else
     value="$(sed -n "/^$key: \([^ ]\+\)$/{s/^\($key: \)\(.*\)$/\2/p;q}" ~/.pen/pen.yaml)"
     test "$value" = on

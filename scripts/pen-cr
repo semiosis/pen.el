@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 
 unset CWD
 
@@ -299,7 +299,7 @@ if test -z "$fp"; then
     trycr dune-project
     trycr config.toml
 
-    glow
+    glow -d
 
     exit 1
 fi
@@ -1610,8 +1610,8 @@ case "$fnspec" in
                         if pen-yn "v job commands?"; then
                             job="$(cat "$fn" | yq -r ".jobs | keys[]" | pen-fzf -1)"
                             if test -n "$job"; then
-                                cat "$fn" | yq -r ".jobs.$job" | pen-mnm-cmds | pen-sps v
-                                cat "$fn" | yq -r ".jobs.$job.steps[].run // empty" | pen-mnm-cmds | v
+                                cat "$fn" | yq -r ".jobs.$job" | mnm-cmds | pen-sps v
+                                cat "$fn" | yq -r ".jobs.$job.steps[].run // empty" | mnm-cmds | v
                             fi
                         fi
                     fi
@@ -2398,6 +2398,12 @@ case "$file_type" in
     }
     ;;
 
+    [0-9]) {
+        troff2man "$rp"
+        exit 0
+    }
+    ;;
+
     toml) {
         filter toiq "$rp" 2>&1
         pen-pak -k c
@@ -2502,6 +2508,12 @@ case "$file_type" in
     }
     ;;
 
+    apl) {
+        apl -f "$rp"
+        exit $?
+    }
+    ;;
+
     org) {
         cd "$dn"
 
@@ -2531,7 +2543,7 @@ case "$file_type" in
         esac
 
         exit $?
-    }
+   }
     ;;
 
     kotlin|kts) {

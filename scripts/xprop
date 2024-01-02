@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+# /usr/bin/xprop "$@" | pen-xt -b pa -v
+/usr/bin/xprop "$@" | pen-xt -b v

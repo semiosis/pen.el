@@ -8,12 +8,22 @@
 if test -d "$1"; then
     find . -type f -executable
 else
-    compgen -c
+    # { IFS=:; set -f; find -H $PATH -prune -type f -perm -100 -print; } | sed 's!.*/!!' | sort
+    { set -f; IFS=:; for d in $PATH; do set +f; [ -n "$d" ] || d=.; for f in "$d"/.[!.]* "$d"/..?* "$d"/*; do [ -f "$f" ] && [ -x "$f" ] && printf '%s\n' "${f##*/}"; done; done; } | sort
+
+    ##compgen frustratingly also added builtins
+    # compgen -c
+    # compgen -A command
 fi
 
 exit 0
 
 if which "compgen" &>/dev/null; then
-    compgen -c
+    # { IFS=:; set -f; find -H $PATH -prune -type f -perm -100 -print; } | sed 's!.*/!!' | sort
+    { set -f; IFS=:; for d in $PATH; do set +f; [ -n "$d" ] || d=.; for f in "$d"/.[!.]* "$d"/..?* "$d"/*; do [ -f "$f" ] && [ -x "$f" ] && printf '%s\n' "${f##*/}"; done; done; } | sort
+
+    ##compgen frustratingly also added builtins
+    # compgen -c
+    # compgen -A command
     exit 0
 fi

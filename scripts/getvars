@@ -1,8 +1,11 @@
 #!/bin/bash
 export TTY
 
+. $PENELD/scripts/debug.sh
+
 # Automatically cache
-if ! test "$CI_CACHED" = "y"; then sn="$(basename -- "$0")"; cif "$sn" "$@"; exit "$?"; fi
+# -fretry is needed because this calls the same cif command and the retry timeout needs to be disabled
+if ! test "$NO_CI" = y && ! test "$INSIDE_CI" = "y"; then sn="$(basename -- "$0")"; cif -fretry "$sn" "$@" 2>/tmp/getvars-debug.txt; exit "$?"; fi
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

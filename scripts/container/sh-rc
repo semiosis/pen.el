@@ -140,7 +140,7 @@ case "$d" in
     r) cmd="vs $HOME/.config/ranger/rc.conf" ;; # much better in vs
     R) cmd="rifle $HOME/.config/ranger/rifle.conf" ;;
     h) cmd="pin $EMACSD/config/my-hydra.el" ;;
-    p) cmd="pins $HOME/notes/ws/python/rc/pythonrc.full.py" ;;
+    p) cmd="pin $HOME/notes/ws/python/rc/pythonrc.full.py" ;;
     P) cmd="vs $EMACSD/packages.txt" ;;
     # Q) cmd="vs $HOME/.bigqueryrc" ;;
     o) cmd="pin $EMACSD/config/org-config.el" ;;

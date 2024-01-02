@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /root/.pen/dosbox
+# -fullscreen
+# dosbox -conf "configs/cb.conf" -c "mount c $DUMP$HOME/notes2018/programs/dosbox/c" -c C: -c "cd \CB" -c "mixer MASTER 20:20" -c "CB.EXE" -c "exit"
+dosbox -conf "configs/cb.conf" -c "mount c /root/.pen/dosbox/c" -c C: -c "cd \CB" -c "mixer MASTER 20:20" -c "CBSE.EXE" -c "exit"

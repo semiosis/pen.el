@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-list-unicode | mfz -nv | cut -d '	' -f 1 | chomp
+list-unicode | mfz -nv -q "'" | cut -d '	' -f 1 | chomp

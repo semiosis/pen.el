@@ -1,0 +1,137 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+hymnal_dir="/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org"
+pdf_dir="$hymnal_dir/Pdf"
+mp3_dir="$hymnal_dir/Mp3"
+midi_dir="$hymnal_dir/Midi"
+lyrics_dir="$hymnal_dir/Lyrics"
+
+# cd "$hymnal_dir"
+# find Pdf -name '*.pdf'
+# find Mp3 -name '*.mp3'
+# find Midi -name '*.mid'
+# find Lyrics -name '*.txt'
+
+list_titles_readable() {
+    cd "$mp3_dir"
+    find . -name '*.mp3' | sed -e 's=^\./==' -e 's/\..*//' -e 's/_/ /g'
+}
+
+mode=default
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -mode) {
+        mode="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ly|-lyrics) {
+        mode=lyrics
+        shift
+    }
+    ;;
+
+    -pdf) {
+        mode=pdf
+        shift
+    }
+    ;;
+
+    -st|-show-title) {
+        mode=show-title
+        shift
+    }
+    ;;
+
+    -last) {
+        sel="$(cat "$TMPDIR/play-hymn_last_sel.txt")"
+        shift
+    }
+    ;;
+
+    -sel) {
+        sel="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${sel:="$@"}"
+: "${sel:="$(list_titles_readable | pen-mfz -C -nm -p -pscript "true; eval 'play-hymn -ly {}'" -pcomplete)"}"
+
+test -n "$sel" || exit 0
+
+if test -n "$TMPDIR" && test -n "$sel"; then
+    echo "$sel" > "$TMPDIR/play-hymn_last_sel.txt"
+fi
+
+mant="$(p "$sel" | tr ' ' _)"
+
+case "$mode" in
+    default|sing) {
+        pdf_fp="$pdf_dir/${mant}.pdf"
+        mp3_fp="$mp3_dir/${mant}.mp3"
+        nohup z "$pdf_fp"
+        z_proc="$$"
+        rpt -ask cvlc "$mp3_fp"
+        kill "$z_proc"
+    }
+    ;;
+
+    show-title) {
+        echo "$sel" | pavs
+    }
+    ;;
+
+    lastpdf) {
+        sel="$(cat "$TMPDIR/play-hymn_last_sel.txt")"
+        eval "play-hymn -pdf $sel"
+        exit "$?"
+    }
+    ;;
+
+    default|sing) {
+        pdf_fp="$pdf_dir/${mant}.pdf"
+        mp3_fp="$mp3_dir/${mant}.mp3"
+        nohup z "$pdf_fp"
+        z_proc="$$"
+        rpt -ask cvlc "$mp3_fp"
+        kill "$z_proc"
+    }
+    ;;
+
+    pdf) {
+        pdf_fp="$pdf_dir/${mant}.pdf"
+        z "$pdf_fp"
+    }
+    ;;
+
+    mp3) {
+        mp3_fp="$mp3_dir/${mant}.mp3"
+        rpt -ask cvlc "$mp3_fp"
+    }
+    ;;
+
+    midi) {
+        midi_fp="$midi_dir/${mant}.mid"
+        rpt -ask timidity "$midi_fp"
+    }
+    ;;
+
+    lyrics) {
+        lyrics_fp="$lyrics_dir/${mant}.html.txt"
+        cat "$lyrics_fp" | pavs
+    }
+    ;;
+
+    *)
+esac

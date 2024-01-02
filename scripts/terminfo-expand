@@ -1,0 +1,37 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+# TODO Make an easy way to run this sed pipeline on only a part of the file
+# Actually 'ved' might be good for this (vim sed)
+
+if stdin_exists; then
+    sed 's/^\s//' | sed 's/, \?/,/g' | sed 's/,$//' |
+        sed 's/,/\n/g' | sort | sed 's/^/\t/' | sed 's/$/,/' |
+        tee \
+          >(grep -P -v '[#=]' > "$TMPDIR/terminfo-expand-first.txt") \
+          >(grep '#' > "$TMPDIR/terminfo-expand-hash.txt") \
+          >(grep '=' > "$TMPDIR/terminfo-expand-equals.txt") \
+          > "$TMPDIR/terminfo-expand-all.txt"
+    {
+        cat "$TMPDIR/terminfo-expand-first.txt"
+        cat "$TMPDIR/terminfo-expand-hash.txt"
+        cat "$TMPDIR/terminfo-expand-equals.txt"
+    } | pavs
+elif test -f "$1"; then
+    :
+else
+    echo "Please provide .ti file" | hls red 1>&2
+    exit 1
+fi

@@ -97,7 +97,7 @@ else
     in-pen oci "diatheke" "-b" "$module" "-s" "$searchtype" "-o" "w" "-f" "phrase" "-k" "$query" |
         sed 's/^[^-]*-- //' | sed 's/ --.*//' | sed 's/ ; /\n/g' | sed '1{s/\([0-9]\)\([A-Z]\)/\1\n\2/}' | {
         if test "$getverses" = "y"; then
-            bible-show-verses -m "$module"
+            bible-show-verses -m "$module" | cat
         else
             sed -z 's/\n$//'
         fi

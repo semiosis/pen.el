@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# /root/.config/lf/preview
+
+# $HOME/repos/horriblename/lfimg-sixel/lfrun "$@"
+/usr/bin/lfrun "$@"

@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+uniq=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -U) {
+        uniq=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+cd $PENCONF/documents/agenda
+pen-scrape-r "\\[notmuch-search:[^]]+\\]" "*.org" | sed -e 's/[^:]\+://' -e 's/\]//' | {
+    if ! test "$uniq" = "n"; then
+        uniqnosort
+    else
+        cat
+    fi
+} | pavs

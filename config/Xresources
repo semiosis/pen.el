@@ -21,6 +21,10 @@ xclock*background:        black
 ! xterm*font: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
 ! xterm*boldfont: -*-*-bold-*-*-*-18-*-*-*-*-*-*-*
 
+!! inverse / invert
+!! Also, "xterm -rv" works
+! xterm*reverseVideo:	on
+
 xterm*faceName: Monospace:style=Bold:antialias=true:pixelsize=20
 ! xterm*faceSize: 10
 

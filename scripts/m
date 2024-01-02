@@ -1,0 +1,189 @@
+#!/bin/bash
+export TTY
+
+export MANPATH="$MANPATH:$HOME$MYGIT/fzf/man"
+
+( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+# hs "$(basename "$0")" $@
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+CMD="$(cmd "$@")"
+export GY_CMD="man $CMD"
+
+opt="$1"
+shift
+
+case "$opt" in
+    e|exists) {
+        /usr/bin/man -w "$1" &>/dev/null
+        exit $?
+    }
+    ;;
+    
+    u|man) {
+        # eval "$(resize)"
+        #notify-send m "Displaying man page for $1"
+
+        target="$1"
+        shift
+
+        case "$target" in
+            figlet) {
+                target=toilet
+            }
+            ;;
+
+            *)
+        esac
+
+        case "$target" in
+            hub) {
+                :
+                # man hub | v +/"New commands" -
+            }
+            ;;
+
+            xsv) {
+                cat $HOME/notes2018/programs/m/pages/xsv.txt | less
+            }
+            ;;
+
+            kaggle) {
+                spv -E "cat $MYGIT/Kaggle/kaggle-api/README.md | pager -vs"
+            }
+            ;;
+
+            racket) {
+                racket -h | pager -vs
+                exit $?
+            }
+            ;;
+
+            mupen64plus) {
+                vimlinks "https://mupen64plus.org/wiki/index.php/KeyboardSetup"
+            }
+            ;;
+
+            sharelin) {
+                v $DUMP$HOME/notes2018/ws/gnutella2/sharelin-0.2.6/README
+            }
+            ;;
+
+            perl) {
+                perldoc perlrun
+                exit $?
+            }
+            ;;
+
+            prolog) {
+                eww "/usr/share/doc/gprolog-doc/gprolog.html/index.html"
+                exit $?
+            }
+            ;;
+
+            pvd|fpvd) {
+                target="vd"
+            }
+            ;;
+
+            *)
+        esac
+
+        # export PAGER=tless
+        export PAGER=less
+
+        pattern="$1"
+        shift
+
+        # This script should output plain text only
+
+        # echo "target $target"
+        # echo "pattern $pattern"
+        if m e "$target"; then
+            # NEVER invoke emacs from this as m u is wrapped in emacs
+            if false && e -D spacemacs running; then
+                # This appears to be quite slow
+                # man_func=woman
+
+                # Not sure why but (man) is having display problems
+                man_func=man
+
+                if [ -n "$pattern" ]; then
+                    pattern="$(p "$pattern" | qne | qne)"
+
+                    # These work but if I could figure out how to make a
+                    # temporary local binding in the new man butter,
+                    # that would be preferable.
+
+                    # Instead of using emacs' man command, I should run
+                    # the man command and create a temporary file and
+                    # open that in emacs
+
+                    e -D spacemacs --runclient -e "($man_func \"$target\")(occur \"$pattern\")(delete-other-windows)(define-key Man-mode-map (kbd \"q\") '(lambda() (interactive) (kill-buffer) (delete-frame) ))"
+
+
+                    # e -D spacemacs --runclient -e "($man_func \"$target\")(occur \"$pattern\")(delete-other-windows)(define-key Man-mode-map (kbd \"q\") 'delete-frame)"
+                else
+                    e -D spacemacs --runclient -e "($man_func \"$target\")(delete-other-windows)(define-key Man-mode-map (kbd \"q\") '(lambda() (interactive) (kill-buffer) (delete-frame) ))"
+
+
+                    # e -D spacemacs --runclient -e "($man_func \"$target\")(delete-other-windows)(define-key Man-mode-map (kbd \"q\") 'delete-frame)"
+                    #e -D spacemacs --runclient -e "(progn (man \"$target\")(delete-other-windows)(local-set-key (kbd \"q\") '(lambda() (interactive) (let ((oldbuf (current-buffer))) (kill-buffer oldbuf)) (delete-frame) )))"
+                    # e -D spacemacs --runclient -e "($man_func \"$target\")(delete-other-windows)(local-set-key (kbd \"q\") 'delete-frame)"
+                    # (local-set-key (kbd \"q\") 'revert-kill-window-and-quit-emacsclient)
+                    # (local-set-key (kbd \"q\") 'revert-and-quit-emacsclient-without-killing-server)
+                    # (local-set-key (kbd \"q\") 'revert-and-quit-emacsclient-without-killing-server)
+                fi
+            else
+                # tldr "$target" | vs
+                # $HOME/scripts/man "$target"
+                /usr/bin/man "$target" | cat
+            fi
+        elif tt -exit $target --help; then
+            {
+                # tldr "$target"
+                $target --help 2>&1
+            } | "$PAGER" -S +F
+            # echo hi
+            # exit
+            
+            # e -D spacemacs --runclient -e "(progn (man \"$1\")(occur \"$pattern\")(delete-other-windows))"
+        else
+            dman "$target"
+        fi
+
+        # Never ask for tldr
+        # is_tty && yn "tldr?" && tldr "$target"
+
+        exit $?
+            # tm -d nw "man $@ || $@ --help 2>&1 | tless -S"
+            # man "$@"
+    }
+    ;;
+
+    py) {
+        pydoc_pid="$(ps -ef | grep "pydoc -p 7080" | grep -v grep | s fi 2)"
+        if [ -z "$pydoc_pid" ]; then
+            pydoc -p 7080 &>/dev/null & disown
+        fi
+
+        query="$1"
+
+        python -m pydoc "$query"
+
+        # pydoc -k "$query" # keyword # useless
+        # pydoc -w "$query" # writes html to file for a module # useless
+    }
+    ;;
+
+    *) {
+        notify-send m "This command is no longer mnm."
+    }
+    ;;
+
+esac

@@ -18,6 +18,7 @@ rg() {
     rg '**/*.cpp' '\b main\(\b'
     # rg '**/*.clj{,c}' 'defn -main\b'
     rg '**/*.clj' 'defn -main\b'
+    rg '**/*.java' 'void main\(\b'
     rg '**/*.cljc' 'defn -main\b'
     rg '**/*.cljs' 'defn -main\b'
     rg '**/*.hs'  '^main :: IO\b'

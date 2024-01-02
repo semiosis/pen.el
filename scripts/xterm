@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+unset TMUX
+unset PEN_TMUX
+unset TMUX_PANE
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# vt340 has sixel
+/usr/bin/xterm -ti vt340 "$@"

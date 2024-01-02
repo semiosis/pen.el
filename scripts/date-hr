@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if stdin_exists && ! is_tty; then
+    awk1 | while IFS=$'\n' read -r line; do
+        echo "$(date-day "$@" "$line")__$(date-time "$@" "$line")"
+    done
+else
+    echo "$(date-day "$@")__$(date-time "$@")"
+fi

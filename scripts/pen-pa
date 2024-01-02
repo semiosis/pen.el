@@ -5,28 +5,7 @@ PEN_PAGER="less"
 
 export NOAUTOCHDIR=y
 
-is_tty() {
-    # If stout is a tty
-    [[ -t 1 ]]
-}
-
-is_stdout_pipe() {
-    # If stout is a pipe
-    [[ -p /dev/stdout ]]
-}
-
-stdin_exists() {
-    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
-}
-
-is_tty
-istty="$?"
-
-stdin_exists
-hasstdin="$?"
-
-is_stdout_pipe
-ispipe="$?"
+. $PENEL_DIR/scripts/utils.sh
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;

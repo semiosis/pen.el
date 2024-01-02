@@ -1,5 +1,19 @@
 #!/bin/bash
 export TTY
 
-export EDITOR=vim
-less "$@"
+# It's not really worth colorizing less
+# Though, perhaps I could make it darker
+
+# This works to darken less from insite Pen.el,
+# but not on the host, it appears
+# Sadly, on the host, it resets the colour
+# on the second line. Perhaps it's a terminfo thing.
+# printf -- "%s" "[38;5;240m" # dgrey
+# Putting dgrey here broke the following
+# vim +/"print_all_following() {" "$PENELD/scripts/container/next-file"
+
+: "${EDITOR:="v"}"
+/usr/bin/less "$@"
+
+# export EDITOR="sps $EDITOR"
+# nvc /usr/bin/less "$@"

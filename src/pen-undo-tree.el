@@ -25,7 +25,7 @@
 (advice-remove 'special-lispy-undo #'advise-to-save-region)
 
 (defun undo-tree-undo-around-advice (proc &rest args)
-  (if (selectedp)
+  (if (pen-selected-p)
       (call-interactively 'undo)
     (let ((res (apply proc args)))
       res)))

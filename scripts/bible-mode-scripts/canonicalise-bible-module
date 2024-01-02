@@ -44,6 +44,11 @@ case "$module" in
     }
     ;;
 
+    rlt) {
+        module=RLT
+    }
+    ;;
+
     asv) {
         module=ASV
     }

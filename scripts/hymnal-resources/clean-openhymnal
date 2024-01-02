@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+generate_txts() {
+    cd $DUMP/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Lyrics
+    htmls2txt
+}
+
+# Example
+# $DUMP/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org/Lyrics/moment-by-moment-whittle.txt
+
+sed '/•/,$d' | remove-leading-and-trailing-newlines.sh

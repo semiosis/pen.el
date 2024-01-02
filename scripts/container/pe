@@ -40,7 +40,7 @@ case "$d" in
     p|c) cmd="pc" ;; # purcell
     f) cmd="e -D frank c" ;;
     e|r) cmd="xr" ;; # exordium 
-    m) cmd="me" ;; # magit # e -D default -s magit c -ei magit-status
+    m) cmd="me" ;; # magit # e -D default -s magit --runclient -ei magit-status
     t) cmd="e -D default -s tmux c" ;;
     v) cmd="e c" ;;
     o) cmd="og" ;;
@@ -48,7 +48,7 @@ case "$d" in
     a) {
         elisp="(org-agenda-list 50)(delete-other-windows)"
 
-        pen-e c -e "$elisp"
+        pen-e --runclient -e "$elisp"
     }
     ;;
 

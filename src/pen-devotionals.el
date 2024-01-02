@@ -1,3 +1,48 @@
+;; Try to do my devotionals through this mechanism
+
+(defun jeff-vines--word-for-today ()
+  (interactive)
+  (sps "jeff-vines--word-for-today"))
+
+(defun alistair-begg--sermons ()
+  (interactive)
+  (sps "alistair-begg--sermons"))
+
+;; desiring God
+(defun john-piper ()
+  "desiring God"
+  (interactive))
+
+(defun john-piper-messages ()
+  "desiring God - Messages"
+  (interactive)
+
+  (sps (cmd "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/messages")))
+
+(defun john-piper-light-and-truth ()
+  "desiring God - Classic Sermons (audio/video)"
+  (interactive)
+
+  ;; Each top-level html/directory in this directory is a sermon series with multiple parts
+
+  (sps (cmd "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/light-and-truth")))
+
+(defun john-piper-labs ()
+  "desiring God - Look at the Book
+
+You look at a Bible text on the screen. You listen to John Piper. You watch his pen “draw out”
+meaning. You see for yourself whether the meaning is really there. And (we pray!) all that God is
+for you in Christ explodes with faith, and joy, and love."
+  (interactive)
+
+  (sps (cmd "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/labs")))
+
+(defun john-piper-articles ()
+  "desiring God - Article"
+  (interactive)
+
+  (sps (cmd "ranger" "/volumes/home/shane/dump/programs/httrack/mirrors/https-www-desiringgod-org-/www.desiringgod.org/articles")))
+
 (defun michael-youseff ()
   (interactive)
   ;; TODO Make this handle 'recent' properly
@@ -38,7 +83,7 @@
     (if (test-n url)
         (chrome url nil t)))
 
-  
+
   ;; (interactive (list (string-to-int (sor (read-string-hist "last `n` devotionals:")
   ;;                                        "0"))))
   ;; (let ((id (string-to-int (s-replace-regexp ":.*" "" (fz (davidjeremiah-list last_n)
@@ -64,7 +109,7 @@
   (interactive
    (let ((max_id (pen-snc "david-jeremiah-get-latest-radio-id")))
      (list (read-string-hist "id=" max_id))))
-  
+
   (chrome (concat "https://www.davidjeremiah.org/radio/player?id=" (str id))
           nil t))
 

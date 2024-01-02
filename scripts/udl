@@ -11,7 +11,7 @@ is_tty() {
 IFS= read -rd '' input < <(cat /dev/stdin | tr -d '\n' | sed 's/\s\+$//')
 
 printf -- "%s\n" "${input}"
-printf -- "%s\n" "${input}" | sed 's/./‾/g' | {
+printf -- "%s\n" "${input}" | tts | sed 's/./‾/g' | {
     if is_tty; then
         pen-his -i -f dred -b nblack .
     else

@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+tm_pid="$(tmux-show-pid)"
+test -n "$tm_pid" || { echo tmux not running | hls red 1>&2; }
+
+if ! yn "This produces massize files extremely quickly 1 GB in 10 seconds. Proceed?"; then
+    exit
+fi
+
+fn="tmux-server-${tm_pid}.log";
+if test -f "$fn"; then
+    kill -SIGUSR2 "$tm_pid"
+    rm -f "$fn"
+else
+    kill -SIGUSR2 "$tm_pid"
+    tail "$fn" -F +F
+fi

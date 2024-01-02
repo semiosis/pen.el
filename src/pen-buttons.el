@@ -68,16 +68,18 @@
                                (type-of-of-of . ,(button-get b 'type))))
       (emacs-lisp-mode))))
 
-(defun get-button-action ()
+(defun get-button-action-direct (&optional bt)
   "Get the action of the button at point"
-  (interactive)
-  (let ((b (button-at (point))))
-    (if b
-        (button-get b 'action))))
+  (interactive (list (button-at (point))))
+  (setq bt (or bt (button-at (point))))
 
-(defun copy-button-action (&optional goto)
-  (interactive)
-  (let ((f (get-button-action))
+  (if bt (button-get bt 'action)))
+
+(defun get-button-action (&optional bt)
+  (interactive (list (button-at (point))))
+  (setq bt (or bt (button-at (point))))
+
+  (let ((f (get-button-action-direct bt))
         (b (button-at (point))))
     (setq f
           (cond ((eq 'help-button-action f) `(progn (apply ',(button-get b 'help-function)
@@ -85,9 +87,16 @@
                                                     nil))
                 ((eq 'helpful--navigate f) `(find-file (substring-no-properties ,(button-get b 'path))))
                 (t f)))
-    (if goto
-        (ignore-errors (find-function f)))
-    (pen-copy (pp-to-string f))))
+    f))
+
+(defun copy-button-action (&optional goto)
+  (interactive)
+  (let ((f (get-button-action)))
+    (if f
+        (progn
+          (if goto
+              (ignore-errors (find-function f)))
+          (pen-copy (pp-to-string f))))))
 
 (defun goto-button-action ()
   (interactive)

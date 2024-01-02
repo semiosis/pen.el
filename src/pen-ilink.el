@@ -40,6 +40,9 @@
 (advice-add 'org-link-open :around #'org-link-open-around-advice)
 (advice-remove 'org-link-open #'org-link-open-around-advice)
 
+;; org-link-parameters
+;; org-link-open
+
 (defun org-link-open (link &optional arg)
   "Open a link object LINK.
 
@@ -65,26 +68,47 @@ for internal and \"file\" links, or stored as a parameter in
                                   ("sys" 'system)))))
       ;; Internal links.
       ((or "coderef" "custom-id" "fuzzy" "radio")
-       (unless (run-hook-with-args-until-success 'org-open-link-functions path)
-         (if (not arg) (org-mark-ring-push)
-           (switch-to-buffer-other-window (org-link--buffer-for-internals)))
-         (let ((destination
-                (org-with-wide-buffer
-                 (if (equal type "radio")
-                     (org-link--search-radio-target path)
-                   (org-link-search
-                    (pcase type
-                      ("custom-id" (concat "#" path))
-                      ("coderef" (format "(%s)" path))
-                      (_ path))
-                    ;; Prevent fuzzy links from matching themselves.
-                    (and (equal type "fuzzy")
-                         (+ 2 (org-element-property :begin link)))))
-                 (point))))
-           (unless (and (<= (point-min) destination)
-                        (>= (point-max) destination))
-             (widen))
-           (goto-char destination))))
+
+       ;; If my fuzzy handler works then dont do the regular
+       ;; fuzzy header search
+       (or (if (equal type "fuzzy")
+               (let* ((linktypename (s-replace-regexp ":.*" "" path))
+                      (argumentstring (s-replace-regexp ".*:" "" path))
+                      (linktypesym (str2sym linktypename))
+                      (arglist (pen-cip-string argumentstring)))
+
+                 ;; (tv linktypename)
+                 (cond ((functionp linktypesym)
+                        (progn
+                          (eval
+                           `(call-function ',linktypesym ,@arglist))
+                          t))
+                       ((executable-find linktypename)
+                        (progn
+                          (pen-snc (concat linktypename " " argumentstring " & disown"))
+                          t))
+                       (t nil))))
+
+           (unless (run-hook-with-args-until-success 'org-open-link-functions path)
+             (if (not arg) (org-mark-ring-push)
+               (switch-to-buffer-other-window (org-link--buffer-for-internals)))
+             (let ((destination
+                    (org-with-wide-buffer
+                     (if (equal type "radio")
+                         (org-link--search-radio-target path)
+                       (org-link-search
+                        (pcase type
+                          ("custom-id" (concat "#" path))
+                          ("coderef" (format "(%s)" path))
+                          (_ path))
+                        ;; Prevent fuzzy links from matching themselves.
+                        (and (equal type "fuzzy")
+                             (+ 2 (org-element-property :begin link)))))
+                     (point))))
+               (unless (and (<= (point-min) destination)
+                            (>= (point-max) destination))
+                 (widen))
+               (goto-char destination)))))
       (_
        ;; Look for a dedicated "follow" function in custom links.
        (let ((f (org-link-get-parameter type :follow)))
@@ -97,4 +121,6 @@ for internal and \"file\" links, or stored as a parameter in
              (wrong-number-of-arguments
               (funcall (org-link-get-parameter type :follow) path)))))))))
 
+;; This is a handler for links that have a link type
+;; which hasn't been defined.
 (provide 'pen-ilink)

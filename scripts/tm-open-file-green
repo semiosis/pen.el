@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+: "${TMUX_PANE:="$(tmux-pane-id)"}"
+export TMUX_PANE
+
+fp="$1"
+bn="$(basename "$fp")"
+
+# tm -d -te nw -hlgreen -R -nopakf -n "$bn" -c "$CWD" "preview $(aqf-nice "$fp"); python $HOME$MYGIT/ranger/ranger/ranger/ext/rifle.py $(aqf-nice "$fp")"
+
+tm -d -te nw -hlgreen -R -nopakf -n "$bn" -c "$CWD" "preview $(aqf-nice "$fp"); rifle $(aqf-nice "$fp")"

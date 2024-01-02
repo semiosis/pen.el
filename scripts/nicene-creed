@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+fp="$PEN/documents/Christianity/Nicene-Creed.txt"
+
+if is_stdout_pipe; then
+    cat "$fp"
+else
+    v "$fp"
+fi

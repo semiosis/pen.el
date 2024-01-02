@@ -1,21 +1,10 @@
 #!/bin/bash
 export TTY
 
-while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-    "") { shift; }; ;;
-    -nbs) {
-        export NOBS=y
-        shift
-    }
-    ;;
-
-    *) break;
-esac; done
-
 # This is primarily designed for posix shell double-quote escapes.
 # If other languages can use this, then great.
 
-cmd-nice() {
+cmd-nice-posix() {
     for var in "$@"
     do
         # A grand test of this is that it's idempotent with myeval
@@ -39,4 +28,4 @@ cmd-nice() {
     done | sed 's/ $//'
 }
 
-cmd-nice "$@"
+cmd-nice-posix "$@"

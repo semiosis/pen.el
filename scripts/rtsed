@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+fp="$last_arg"
+shift
+
+if { ! stdin_exists; } && test -n "$fp" && test -f "$fp"; then
+    cmd_prefix+="cat $(aqf "$fp") | "
+fi
+
+CMD="$(cmd "$@")"
+# : ${CMD:="-n \"s/.* /\U&/ip\""}
+: ${CMD:="-n \"s/.* /&/ip\""}
+
+# s chomp | rtcmd "+/\(\\<sed\\>\( -[^ ]\+\)* [^-]\)\@<=." -E "sed $CMD | vi -"
+
+# s chomp | eval "rtcmd ++sed sed $CMD"
+
+cmdname=sed
+
+if stdin_exists; then
+    s chomp | rtcmd ++$cmdname -E "$cmdname $CMD | v -nls"
+else
+    rtcmd ++$cmdname -E "$cmd_prefix $cmdname $CMD | v -nls"
+fi

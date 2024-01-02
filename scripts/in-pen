@@ -1,11 +1,15 @@
 #!/bin/bash
 export TTY
 
-if ! { inside-docker-p && test -n ~/pen_user.txt; }; then
-    if test "$NOEMACS" = "y"; then
-        set -- env NOEMACS=y "$@"
+if ! in-pen-p; then
+    if test -n "$PREFER_GUI"; then
+        set -- env PREFER_GUI="$PREFER_GUI" "$@"
     fi
-    
+
+    if test -n "$NOEMACS"; then
+        set -- env NOEMACS="$NOEMACS" "$@"
+    fi
+
     pen sh "$@"
     exit "$?"
 fi

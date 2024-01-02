@@ -54,13 +54,13 @@ else
 
     if stdin_exists; then
         : ${CMD:="-r $(cmd ".")"}
-        chomp | pen-rtcmd ++jq -E "jq $CMD | pen-v"
+        chomp | pen-rtcmd ++jq -E "jq $CMD | vs -nls"
     else
         : ${CMD:="echo []"}
         if test -f "$CMD"; then
             CMD="cat $(cmd "$CMD")"
         fi
         # Use '' rather than "" so I can copy from zh
-        pen-rtcmd ++jq -E "$CMD | jq '.' | pen-v"
+        pen-rtcmd ++jq -E "$CMD | jq '.' | vs -nls"
     fi
 fi

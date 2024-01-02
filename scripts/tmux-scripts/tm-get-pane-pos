@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tp) {
+        tuple=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${y:="$(tmux display -p "#{cursor_y}")"}
+: ${x:="$(tmux display -p "#{cursor_x}")"}
+
+# echo "$x,$y" > /tmp/tmux_cursor_pos.txt
+if test "$tuple" = "y"; then
+    echo "$x,$y"
+else
+    echo -e "CURSOR_X=$x\nCURSOR_Y=$y"
+fi

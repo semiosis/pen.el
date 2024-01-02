@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pen
-# Version 2.0, bash
+# Version 3.0, bash
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
@@ -18,7 +18,7 @@
 # ufs $MYGIT/semiosis/yas-snippets $HOME/.pen/host/snippets
 # ufs $HOME/learn-functions $HOME/.pen/documents/learn-functions
 
-pen_version=2.0
+pen_version=3.0
 
 sn="$(basename "$0")"
 bn="$sn"
@@ -27,6 +27,9 @@ rp="$(realpath "$bn")"
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export PEN_INVOCATION="$sn $(cmd "$@")"
+
+# This may speed things up
+test -f $PENELD/scripts/utils.sh && . $PENELD/scripts/utils.sh
 
 # This will detach the docker container immediately - but how to disable entirely?
 # At least I have saved C-p from being highjacked.
@@ -88,7 +91,12 @@ get_config_dir() {
     return 0
 }
 
+# By unsetting, it's undecided.
+# But should it be decided by this script?
+# Or should it be decided by pen-e?
+# Currently, pen-e only considers PEN_USE_GUI
 unset PEN_USE_GUI
+# The environment may contain $PREFER_GUI
 
 drunning=
 docker-running-p() {
@@ -269,7 +277,7 @@ else
     batch=y
 fi
 
-: "${PEN_USE_GUI:="y"}"
+: "${PEN_PREFER_GUI:="y"}"
 : "${PEN_SHARE_X:="y"}"
 
 docker() {
@@ -320,13 +328,13 @@ docker() {
 case "$sn" in
     pi) {
         sn=pen
-        PEN_USE_GUI=n
+        : "${PREFER_GUI:="n"}"
     }
     ;;
 
     pen) {
         sn=pen
-        PEN_USE_GUI=y
+        : "${PREFER_GUI:="y"}"
         # Minimum for apostrophe is 2
         # export PEN_N_WORKERS=2
     }
@@ -334,7 +342,7 @@ case "$sn" in
 
     pin) {
         sn=pen
-        PEN_USE_GUI=n
+        : "${PREFER_GUI:="n"}"
         : "${no:="y"}"
         # Minimum for apostrophe is 2
         export PEN_N_WORKERS=2
@@ -343,7 +351,7 @@ case "$sn" in
 
     pind) {
         sn=pen
-        PEN_USE_GUI=n
+        : "${PREFER_GUI:="n"}"
         : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
         export PEN_N_WORKERS=2
@@ -352,7 +360,7 @@ case "$sn" in
 
     pend) {
         sn=pen
-        PEN_USE_GUI=y
+        : "${PREFER_GUI:="y"}"
         : "${no:="y"}"
         PEN_USE_REMOTE_PATH=y
         export PEN_N_WORKERS=2
@@ -381,6 +389,8 @@ case "$sn" in
 
     *)
 esac
+
+: "${PEN_USE_GUI:="$PREFER_GUI"}"
 
 if test "$sn" = penx; then
     sn=penc
@@ -417,6 +427,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     tm) {
+        start_shell=y
+        shift
+        set -- in-tm "$@"
+        break
+    }
+    ;;
+
+    tmux) {
         start_shell=y
         shift
         set -- tmux "$@"
@@ -882,6 +900,13 @@ if test "$start_shell" = "y"; then
         }
         ;;
 
+        -E) {
+            CMD="$2"
+            shift
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
 
@@ -1038,10 +1063,21 @@ if { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = 
 elif { test "$sn" = pen || test "$sn" = penc || test "$sn" = penv || test "$sn" = pent; } && \
     test "$#" -eq 1 && \
     test -n "$1" && \
-    { test -f "$1" || test -d "$1"; } && \
+    { test -f "$1" || test -d "$1" || which "$1" &>/dev/null; } && \
     test -d "$PEN_CONFIG_DIR/documents"; then
 
-    rp="$(realpath "$1")"
+    if { ! test -f "$1"; } && which "$1" &>/dev/null; then
+        fp="$(which "$1")"
+    else
+        fp="$1"
+    fi
+    # echo "$fp" | tv &>/dev/null
+
+    rp="$(realpath "$fp")"
+
+    shift
+    set -- "$rp" "$@"
+
     bn="$(basename "$rp")"
 
     export NO_QUIT_WORKERS=y
@@ -1592,11 +1628,12 @@ if ! test "$show_banner" = n; then
         ;;
 
         *) {
-            pen-banner.sh | cat
-            printf -- "%s" "[38;5;240m" # dgrey
+            ocif -today pen-banner.sh | cat
+            dgrey
             echo
-            echo Version: ${pen_version}, License: GPL-3
+            echo Version: ${pen_version}, License: GPL-3 | hls orange
             echo
+            dgrey
             printf -- "%s\n" "$info_txt"
             echo "Using image: $pen_image"
         }
@@ -2177,6 +2214,8 @@ IFS= read -r -d '' shcode <<HEREDOC
 
     # After it has started, simply run again
     # "$sn" tm new pen-watch-workers
+    ( sleep 2 && "$sn" sh tmux run -t pen: "spinner-start -b" ) & disown
+    # The spinner is stoppen in pen-banner.sh
     "$sn" sh pen-tm init-or-attach -n pen
 HEREDOC
     }

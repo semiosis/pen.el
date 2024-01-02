@@ -1,0 +1,36 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+input_fp="$(cat | tf txt)"
+
+. $PENEL_DIR/scripts/utils.sh
+
+slug="$(printf -- "%s\n" "$@" | tr '\n' ' ' | sed 's/ $//' | slugify | cut -c -10)"
+
+if test "$hasstdin" = 0; then
+    USING_STDIN=y
+
+    tf_stdin="$(cat | sed -z 's/^\s*$//' | pen-tf -sha pen-tf-stdin-sha.txt)"
+    sha="$(sha1sum "$tf_stdin" | awk '{print $1}')"
+else
+    create_stdin=y
+fi
+cat "$tf_stdin"
+exit "$?"
+
+if test "$sn" = store; then
+    ref="$slug"
+    cat
+elif test "$sn" = stored; then
+    ref="$slug"
+    cat | "$@"
+elif test "$sn" = unstore; then
+    ref="$slug"
+    export UNSTORE+=" $ref"
+elif test "$sn" = editstore; then
+    ref="$slug"
+fi

@@ -23,11 +23,6 @@
 (defun plist2yaml (plist)
   (json2yaml (json-encode-plist plist)))
 
-;; These bindings need to be made when the mode loads
-;; because yaml-ts-mode-map doesn't exist yet
-(define-key yaml-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
-;; (define-key yaml-ts-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
-
 (defun sh/yaml-get-value-from-this-file ()
   (interactive)
   (if (and (major-mode-p 'yaml-mode)

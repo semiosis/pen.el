@@ -1,11 +1,20 @@
 (require 'org-brain)
 (require 'pen-support)
 
-(require 'org-brain)
-
 (defalias 'org-brain-entry-to-string 'org-brain-entry-name)
 
-(defvar org-brains-dir "~/.pen/org-brain")
+(defset org-brains-dir "~/.pen/org-brain")
+
+(setq org-directory (f-join pen-confdir "documents"))
+;; But there can be multiple root directories for org-brain
+;; So let's just set here the default one for 'agenda'
+
+;; org-brain-path and org-brain-data-file should be set again when I switch org-brain
+(setq org-brain-path (file-truename (f-join (expand-file-name "org-brain" pen-confdir) "agenda")))
+(setq org-brain-data-file (file-truename (expand-file-name ".org-brain-data.el" org-brain-path)))
+
+(setq org-brain-completion-system 'ivy)
+;; (setq org-brain-completion-system 'helm)
 
 (ignore-errors
   (mkdir org-brains-dir)
@@ -28,24 +37,16 @@
 
 (use-package org-brain :ensure t
   :init
-  (setq org-brain-path (f-join org-brains-dir "billboard"))
+  (setq org-brain-path (f-join org-brains-dir "agenda"))
   :config
   (setq org-id-track-globally t)
+  (test-f "$EMACSD_BUILTIN/.org-id-locations")
   (setq org-id-locations-file "~/.emacs.d/.org-id-locations")
   (push '("b" "Brain" plain (function org-brain-goto-end)
           "* %i%?" :empty-lines 1)
         org-capture-templates)
   (setq org-brain-visualize-default-choices 'all)
   (setq org-brain-title-max-length 30))
-
-(defmacro setface (name spec doc)
-  `(custom-set-faces (list ',name
-                           ,spec)))
-
-(defmacro defsetface (name spec doc)
-  `(progn
-     (defface ,name ,spec ,doc)
-     (setface ,name ,spec ,doc)))
 
 (defsetface org-brain-title
   '((t :foreground "#999999"
@@ -88,26 +89,84 @@
        :underline t))
   "Face for org-brain-local-child buttons.")
 
+(defsetface org-brain-wires
+  `((t . (:inherit 'font-lock-comment-face :italic nil)))
+  "Face for the wires connecting entries.")
+
+(defsetface org-brain-file-face-template
+  '((t . (
+          :foreground "#888800"
+          ;; :slant italic
+                      )))
+  "Attributes of this face are added to file-entry faces.")
+
 (defun org-brain-list-child-nodes ()
   "child files"
   (interactive)
   (let ((l
-          (-uniq
-           (append
-            (org-brain-children org-brain--vis-entry)
-            (org-brain-local-children org-brain--vis-entry)))))
+         (-uniq
+          (append
+           (org-brain-children org-brain--vis-entry)
+           (org-brain-local-children org-brain--vis-entry)))))
     (if (interactive-p)
         (pen-etv l)
       l)))
+
+(defun org-brain-local-children (entry)
+  "Get file local children of ENTRY."
+  (remove
+   entry
+   (if (org-brain-filep entry)
+       ;; File entry
+       (with-temp-buffer
+         (ignore-errors (insert-file-contents (org-brain-entry-path entry)))
+         (org-element-map (org-element-parse-buffer 'headline) 'headline
+           (lambda (headline)
+             (when-let ((id (org-element-property :ID headline)))
+               (unless (org-brain-id-exclude-taggedp id)
+                 (org-brain-entry-from-id id))))
+           nil nil 'headline))
+     ;; Headline entry
+     (org-with-point-at (org-brain-entry-marker entry)
+       (let (children)
+         (deactivate-mark)
+         (org-mark-subtree)
+         (org-goto-first-child)
+         ;; I've added this level check
+         ;; becuase there seems to be a bug
+         ;; with org-map-entries and 'region-start-level
+         (let ((level (org-current-level)))
+           (setq children
+                 (org-map-entries
+                  (lambda ()
+                    (cons
+                     (org-current-level)
+                     (org-brain-entry-from-id (org-entry-get nil "ID"))))
+                  t 'region-start-level
+                  (lambda ()
+                    (let ((id (org-entry-get nil "ID")))
+                      (when (and
+                             (or (not id)
+                                 (org-brain-id-exclude-taggedp id))
+                             (eq level (org-current-level)))
+                        (save-excursion
+                          (outline-next-heading)
+                          (point)))))))
+           (deactivate-mark)
+           (mapcar
+            'cdr
+            (-filter (lambda (e) (eq (car e)
+                                     level))
+                     children))))))))
 
 (defun org-brain-list-child-headings ()
   "local-child / heading"
   (interactive)
   (pen-etv (-uniq
-        (-uniq-d
-         (append
-          (org-brain-children org-brain--vis-entry)
-          (org-brain-local-children org-brain--vis-entry))))))
+            (-uniq-d
+             (append
+              (org-brain-children org-brain--vis-entry)
+              (org-brain-local-children org-brain--vis-entry))))))
 
 (defun org-brain-headline-at-point ()
   (let ((b (button-at-point))
@@ -117,7 +176,7 @@
           (car (-filter
                 (λ (e)
                   (and (equal (car e) org-brain--vis-entry))
-                  (equal (second e) (str (button-get-text b))))
+                  (equal (second e) (str (pen-button-get-text b))))
                 (org-brain-headline-entries)))))))
 
 (defun org-brain-file-at-point ()
@@ -126,6 +185,7 @@
     (and b (button-face-p-here 'org-brain-child))))
 
 (defun org-brain-this-headline-to-file ()
+  (interactive)
   (let ((h (org-brain-headline-at-point)))
     (if h
         (progn
@@ -176,7 +236,9 @@
                             (org-brain-parents entry))))
       (if parent
           (org-brain-visualize parent)
-        (message "Arrived at top")))))
+        (progn
+          (goto-char (point-min))
+          (message "Arrived at top"))))))
 
 
 (defun org-brain-recursive-children-flat (entry max-level &optional func)
@@ -251,32 +313,85 @@ If ALL is nil, choose only between externally linked children."
     (if (sor f)
         (call-interactively (str2sym f)))))
 
+(defun org-brain-clear-data-reset (dir-or-name)
+  (interactive (list (fz (mapcar 'f-base (glob (f-join org-brains-dir "*")))
+                         nil nil "org-brain clear metadata: ")) "D")
+
+  (let ((fp (f-join org-brains-dir dir-or-name ".org-brain-data.el")))
+    (f-delete fp f)))
+
+(defun org-brain-edit-metadata (dir-or-name)
+  (interactive (list (fz (mapcar 'f-base (glob (f-join org-brains-dir "*")))
+                         nil nil "org-brain edit metadata: ")) "D")
+
+  (let ((fp (f-join org-brains-dir dir-or-name ".org-brain-data.el")))
+    (f-touch fp)
+    (e fp)))
+
+;; j:org-brain-switch-brain
+
 (defun pen-org-brain-switch-brain (dir-or-name)
   (interactive (list (fz (mapcar 'f-base (glob (f-join org-brains-dir "*")))
-                         nil nil "switch brain: ")) "D")
-  (if (and (not (f-directory-p dir-or-name))
-           (f-directory-p (f-join org-brains-dir dir-or-name)))
-      (setq dir-or-name (f-join org-brains-dir dir-or-name)))
-  (org-brain-switch-brain dir-or-name)
-  (org-brain-add-entry "index")
-  (org-brain-visualize-reset-map "index")
+                         nil nil "switch or make brain: ")) "D")
+  (with-current-buffer (switch-to-buffer "*scratch*")
 
-  (org-brain-update-id-locations)
+    (let ((default-directory org-brains-dir))
+      (if (not (f-directory-p dir-or-name))
+          (mkdir-p (f-directory-p dir-or-name))
+        ;; (error (concat dir-or-name " is not a directory"))
+        )
 
-  (cl-loop for b in
-        (org-brain-files)
-        do
-        (find-file b)
-        (with-current-buffer (current-buffer)
-          (save-buffer)
-          (kill-buffer))))
+      (if (not (f-directory-p dir-or-name))
+          (mkdir-p dir-or-name))
 
+      (if (not (f-file-p (f-join dir-or-name "index.org")))
+          (f-touch (f-join dir-or-name "index.org")))
+
+      ;; (tv (f-realpath dir-or-name))
+
+      (org-brain-switch-brain (f-join org-brains-dir dir-or-name))
+      ;; (org-brain-add-entry "index")
+      (org-brain-visualize-reset-map "index")))
+
+  ;; (org-brain-update-id-locations)
+
+  ;; (cl-loop for b in
+  ;;          (org-brain-files)
+  ;;          do
+  ;;          (find-file b)
+  ;;          (with-current-buffer (current-buffer)
+  ;;            (save-buffer)
+  ;;            (kill-buffer)))
+  )
+
+;; [[brain:agenda/index]]
+;; (org-brain-entry-from-text "prayers")
+;; (etv (list2str (org-brain--all-targets)))
+;; (assoc "prayers" (org-brain--all-targets))
+;; (member "prayers" (mapcar 'car (org-brain--all-targets)))
+;; (-contains? (mapcar 'car (org-brain--all-targets)) "prayers")
 (defun org-brain-entry-from-text (text)
   (interactive (list (read-string-hist "org-brain-entry: ")))
   (pen-org-brain-switch-brain (chomp (cut text :d "/" :f 1)))
   (let* ((name (chomp (cut text :d "/" :f 2)))
+         (all-targets (org-brain--all-targets))
+         (ensure-dir-is-idified
+          (if org-brain--vis-entry
+              (idify-org-files-here default-directory)))
          (entry
-          (org-brain-choose-entry "Goto entry: " 'all nil t name)))
+
+          (let ((item-names (mapcar 'car all-targets)))
+            (comment
+             (org-brain-choose-entry "Goto entry: " 'all nil t name))
+            (if (member name item-names)
+
+                (if (re-match-p "::" name)
+                    (let ((id
+                           (cdr (assoc name (org-brain--all-targets)))))
+                      (append (s-split "::" name)
+                              (list id)))
+                  name)
+              (org-brain-choose-entry "Goto entry: " 'all nil t name)))))
     (org-brain-visualize entry)))
 
 (defun defswitchbrain (prefix brainname)
@@ -304,7 +419,7 @@ If ALL is nil, choose only between externally linked children."
 (define-key org-brain-visualize-mode-map (kbd ">") 'pen-fz-org-brain-shortcut-select)
 (define-key org-brain-visualize-mode-map (kbd "Z") 'pen-fz-org-brain-select)
 
-(defvar brainkeys
+(defset brainkeys
   '(
     ;; Prefix Q
     ("b" "billboard")
@@ -328,14 +443,14 @@ If ALL is nil, choose only between externally linked children."
     ("d" "ideation")
     ("o" "open-source-alternatives")
     ("i" "infogetics")
-    ("n" "neuralink")
     ;; (define-key org-brain-visualize-mode-map (kbd (concat "Q " (esed "\\(.\\)" "\\1 " "P"))) nil)
     ("c" "clojure")
     ("pc" "clojure")
     ("pp" "python")
     ("pl" "programming-languages")
     ;; (define-key org-brain-visualize-mode-map (kbd (concat "Q " (esed "\\(.\\)" "\\1 " "PL"))) nil)
-    ("w" "welfare-organisations")))
+    ("w" "welfare-organisations")
+    ("a" "agenda")))
 
 (cl-loop for tp in brainkeys
       do
@@ -372,9 +487,10 @@ If ALL is nil, choose only between externally linked children."
 
 ;; These shortcuts should really just be fuzzy searchable. They are lol
 ;; Prefix D
-(defswitchbrainentry "N" "neuralink/index")
-(defswitchbrainentry "I" "infogetics/index")
-(defswitchbrainentry "T" "infogetics/text->text")
+;; (defswitchbrainentry "N" "neuralink/index")
+;; (defswitchbrainentry "I" "infogetics/index")
+;; (defswitchbrainentry "T" "infogetics/text->text")
+(defswitchbrainentry "A" "agenda/agenda")
 
 ;; Prefix I
 ;; (dsbls "i" "index")
@@ -766,26 +882,11 @@ suggest-full-list will ask if you want to add the entire list as subtopics to th
 
 (defun pen-org-brain-goto-current ()
   (interactive)
-  (call-interactively 'org-brain-goto-current)
-  (call-interactively 'pen-org-brain-goto-header))
+  (progn-continue-failures
+   (call-interactively 'org-brain-goto-current)
+   (call-interactively 'pen-org-brain-goto-header)))
 
 (define-key org-brain-visualize-mode-map (kbd "RET") 'pen-org-brain-goto-current)
-
-(defun org-link-open-from-string (s &optional arg)
-  "Open a link in the string S, as if it was in Org mode.
-Optional argument is passed to `org-open-file' when S is
-a \"file\" link."
-  (interactive "sLink: \nP")
-  (pcase (with-temp-buffer
-	         (let ((org-inhibit-startup nil))
-	           (insert s)
-             ;; Switching to org-mode kinda breaks it
-	           ;; (org-mode)
-	           (goto-char (point-min))
-             ;; (call-interactively 'tm-edit-v-in-nw)
-	           (org-element-link-parser)))
-    (`nil (user-error "No valid link in %S" s))
-    (link (org-link-open link arg))))
 
 (defun pen-org-brain-add-child (entry children verbose)
   (interactive (list (if current-prefix-arg
@@ -847,7 +948,6 @@ a \"file\" link."
 
 (defun org-brain-current-depth ()
   (org-brain-tree-depth (org-brain-recursive-parents org-brain--vis-entry 100)))
-
 
 (defun org-brain-go-index ()
   (interactive)
@@ -1149,11 +1249,107 @@ Also stop descending if a node has been visited before.
 
     (nbfs (pen-snc "uniqnosort" (pen-list2str tre)) nil 'graphviz-dot-mode)))
 
+(defun select-brain-paths-recursive (&optional max-level)
+  (interactive)
+
+  (let* ((all-brain-paths
+          (pen-snc "pen-list-brain-targets")
+          ;; (save-window-excursion
+          ;;   (save-excursion
+          ;;     (-flatten
+          ;;      (cl-loop for dir in (f-directories org-brains-dir)
+          ;;               collect
+                        
+                        
+          ;;               (let* ((org-brain-path dir)
+          ;;                      (bn (f-basename dir)))
+          ;;                 (pen-org-brain-switch-brain org-brain-path)
+
+          ;;                 (mapcar
+          ;;                  (lambda (e) (concat bn "/" e))
+          ;;                  (mapcar 'car (org-brain--all-targets)))
+          ;;                 ;; (mapcar 'org-brain-get-path-for-entry (-uniq (org-brain-recursive-children-flat org-brain--vis-entry (or max-level 10))))
+                                  
+          ;;                 ;; (cl-loop for child in
+          ;;                 ;;          (-uniq (org-brain-recursive-children-flat org-brain--vis-entry (or max-level 10)))
+          ;;                 ;;          collect
+          ;;                 ;;          (progn
+          ;;                 ;;            (org-brain-visualize-goto)
+          ;;                 ;;            (org-brain-get-path-for-entry org-brain--vis-entry)))
+                                  
+          ;;                 ;; org-brain-path
+          ;;                 )))))
+          )
+         ;; (tidied-brain-paths
+         ;;  (snc "sed -e 's/[^:]*://' -e 's/]]$//'" (list2str all-brain-paths)))
+         (sel
+          ;; (fz tidied-brain-paths)
+          (fz all-brain-paths nil nil "org-brain: "))
+         (link-string (concat "[[brain:" sel "]]")))
+    (if (sor sel)
+        (org-link-open-from-string link-string))))
+
 ;; (defun uniqify-buffer-around-advice (proc &rest args)
 ;;   (let ((res (uniqify-buffer (apply proc args))))
 ;;     res))
 ;; (advice-add 'org-brain-visualize :around #'uniqify-buffer-around-advice)
 ;; (advice-remove 'org-brain-visualize #'uniqify-buffer-around-advice)
+
+(advice-add 'org-brain-switch-brain :around #'shut-up-around-advice)
+
+;; From org-brain
+;; (switch-to-marker (org-brain-entry-marker (org-brain-current-entry)))
+(defun switch-to-marker (m)
+  (let ((buf  (marker-buffer m)))
+    (switch-to-buffer buf)(goto-char m)))
+
+;; ocif -today tm-unbuffer pool pen-e -ic view-agenda | cat
+;; tm -uin -w -sout -vipe nw -d -fargs ub -E "pool pen-e -ic view-agenda | cat" | pavs
+(defun agenda-string (&optional filter)
+  (interactive)
+  (let ((agenda-string (snc (cmd "agenda-string" filter))))
+    (if (interactive-p)
+        (nbfs agenda-string)
+      agenda-string)))
+
+;; (org-brain-text (org-brain-current-entry))
+(defun org-brain-text (entry &optional all-data)
+  "Get the text of ENTRY as string.
+Only get the body text, unless ALL-DATA is t."
+  (when-let ((entry-text
+              (if (org-brain-filep entry)
+                  ;; File entry
+                  (with-temp-buffer
+                    (ignore-errors (insert-file-contents (org-brain-entry-path entry)))
+                    (apply #'buffer-substring-no-properties
+                           (org-brain-text-positions entry all-data)))
+                ;; Headline entry
+                (org-with-point-at (org-brain-entry-marker entry)
+                  (apply #'buffer-substring-no-properties
+                         (org-brain-text-positions entry all-data))))))
+    (if all-data
+        (org-remove-indentation entry-text)
+      (with-temp-buffer
+        (if (org-agenda-file-p (org-brain-entry-path (org-brain-current-entry)))
+            (let ((title (org-brain-vis-title org-brain--vis-entry)))
+              ;; (insert (snc (cmd "grep" "-C" "3" (org-brain-vis-title org-brain--vis-entry))
+              ;;              (agenda-string)))
+              ;; (insert (org-brain-vis-title org-brain--vis-entry))
+              (if (not (string-equal "index" title))
+                  (insert
+                   (--> (agenda-string (s-replace "…" "" title))
+                        ;; Make the tags, which were justified on the right
+                        ;; to hug the text to the left
+                        (s-replace-regexp "\s\+\\(:[^ ]\+:\\)" " \t\\1" it))))))
+        (insert (org-remove-indentation entry-text))
+        (goto-char (org-brain-first-headline-position))
+        (if (re-search-backward org-brain-resources-start-re nil t)
+            (progn
+              (end-of-line)
+              (re-search-forward org-drawer-regexp nil t))
+          (goto-char (point-min)))
+        (buffer-substring (point) (point-max))))))
+
 
 (define-key org-brain-visualize-mode-map (kbd "C-c C-d") 'org-brain-to-dot-associates)
 (define-key org-brain-visualize-mode-map (kbd "R") 'org-brain-rename-file)
@@ -1188,5 +1384,98 @@ Also stop descending if a node has been visited before.
 
 (define-key org-brain-visualize-mode-map (kbd "C-c C-c") #'org-ctrl-c-ctrl-c)
 (define-key org-brain-visualize-mode-map (kbd "C-c C-o") 'org-open-at-point)
+
+(define-key global-map (kbd "C-c r") 'select-brain-paths-recursive)
+
+(define-key global-map (kbd "C-c M-a") 'dff-obeft-agenda-agenda-)
+
+
+;; How can I make extra syntax highlighting for the org-brain visualizer
+(defset org-brain-visualize-highlights
+        ;; '(("Sin\\|Cos\\|Sum" . 'font-lock-function-name-face)
+        ;;   ("Pi\\|Infinity" . 'font-lock-constant-face))
+
+        
+        '(("TODAY" . 'font-lock-constant-face)
+          ("TODO" . 'org-todo)))
+
+(defun set-org-brain-visualize-highlights ()
+  (setq font-lock-defaults '(org-brain-visualize-highlights))
+  ;; j:font-lock-defaults
+  ;; generates:
+  ;; j:font-lock-keywords
+
+  (save-excursion
+    (goto-char (point-min))
+    (search-forward "--- Entry -")
+    (beginning-of-line)
+    (let ((m (point))
+          (p (point-max)))
+      (font-lock-fontify-region m p)))
+  ;; (font-lock-fontify-region)
+  ;; (font-lock-update)
+  )
+
+;; (add-hook 'org-brain-after-visualize-hook 'set-org-brain-visualize-highlights)
+;; (remove-hook 'org-brain-after-visualize-hook 'set-org-brain-visualize-highlights)
+(add-hook 'org-brain-visualize-text-hook 'set-org-brain-visualize-highlights)
+
+(defun around-advice-buffer-erase-trailing-whitespace-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (buffer-erase-trailing-whitespace)
+    res))
+(advice-add 'org-brain-visualize :around #'around-advice-buffer-erase-trailing-whitespace-advice)
+;; (advice-remove 'org-brain-visualize #'around-advice-buffer-erase-trailing-whitespace-advice)
+
+(defvar org-brain-included-states '()
+  "Header states which are allowed. If not set, then all are allowed.")
+
+(defvar org-brain-excluded-states '()
+  "Header states which exclude. If not set then none are excluded.")
+
+;; For example, if I want to display a subtree in org-brain:
+;; (setq org-brain-included-tags '(thanksgiving))
+(defvar org-brain-included-tags '()
+  "Header tags which exclude. If not set then none are excluded.")
+
+(defvar org-brain-excluded-tags '()
+  "Header tags which exclude. If not set then none are excluded.")
+
+(comment
+ (setq org-brain-included-states '("TODO")))
+(setq org-brain-excluded-states '("DONE" "DISCARD"))
+
+(defun org-brain-entry-at-point-excludedp ()
+  "Return t if the entry at point is tagged as being excluded from org-brain."
+
+  ;; (if (>= (prefix-numeric-value current-prefix-arg) 4))
+  (or
+   (and
+    org-brain-excluded-states
+    (member (str (org-get-todo-state)) org-brain-excluded-states))
+   (and
+    org-brain-included-states
+    (not (member (str (org-get-todo-state)) org-brain-included-states)))
+
+   (let ((tags (org-get-tags)))
+     (or (member org-brain-exclude-tree-tag tags)
+         (and (member org-brain-exclude-children-tag tags)
+              (not (member org-brain-exclude-children-tag
+                           (org-get-tags nil t))))))))
+
+(defun org-brain-goto-child (entry &optional all)
+  "Goto a child of ENTRY.
+If run interactively, get ENTRY from context.
+If ALL is nil, choose only between externally linked children."
+  (interactive (list (org-brain-entry-at-pt)))
+  (let* ((entries (if all (org-brain-children entry)
+                    (org-brain--linked-property-entries
+                     entry org-brain-children-property-name)))
+         (child (cond
+                 ((equal 1 (length entries)) (car-safe entries))
+                 ;; I added org-brain-entry-name here
+                 ((not entries) (error (concat (org-brain-entry-name entry) " has no children")))
+                 (t (org-brain-choose-entry "Goto child: " entries nil t)))))
+    (org-brain-goto child)))
 
 (provide 'pen-org-brain)

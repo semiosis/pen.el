@@ -5,138 +5,149 @@
 (tool-bar-mode -1) ; "M-x tool-bar-mode"
 (toggle-scroll-bar -1)
 
+;; Richard Stallman made easy-menu-define - awesome!
+;; This should disable lots of different menus
+
+(comment
+ (defmacro easy-menu-define (symbol maps doc menu)
+   ""
+   nil))
+
+;; (easy-menu-define table-cell-menu-map table-cell-map
+;;   "Table cell menu" table-cell-menu)
+
 (defset menu-bar-file-menu
-  (let ((menu (make-sparse-keymap "File")))
+        (let ((menu (make-sparse-keymap "File")))
 
-    ;; The "File" menu items
-    (bindings--define-key menu [exit-emacs]
-      '(menu-item "Quit" save-buffers-kill-terminal
-                  :help "Save unsaved buffers, then exit"))
+          ;; The "File" menu items
+          (bindings--define-key menu [exit-emacs]
+            '(menu-item "Quit" save-buffers-kill-terminal
+                        :help "Save unsaved buffers, then exit"))
 
-    (bindings--define-key menu [separator-exit]
-      menu-bar-separator)
+          (bindings--define-key menu [separator-exit]
+            menu-bar-separator)
 
-    (unless (featurep 'ns)
-      (bindings--define-key menu [close-tab]
-        '(menu-item "Close Tab" tab-close
-                    :visible (fboundp 'tab-close)
-                    :help "Close currently selected tab"))
-      (bindings--define-key menu [make-tab]
-        '(menu-item "New Tab" tab-new
-                    :visible (fboundp 'tab-new)
-                    :help "Open a new tab"))
+          (unless (featurep 'ns)
+            (bindings--define-key menu [close-tab]
+              '(menu-item "Close Tab" tab-close
+                          :visible (fboundp 'tab-close)
+                          :help "Close currently selected tab"))
+            (bindings--define-key menu [make-tab]
+              '(menu-item "New Tab" tab-new
+                          :visible (fboundp 'tab-new)
+                          :help "Open a new tab"))
 
-      (bindings--define-key menu [separator-tab]
-        menu-bar-separator))
+            (bindings--define-key menu [separator-tab]
+              menu-bar-separator))
 
-    ;; Don't use delete-frame as event name because that is a special
-    ;; event.
-    (bindings--define-key menu [delete-this-frame]
-      '(menu-item "Delete Frame" delete-frame
-                  :visible (fboundp 'delete-frame)
-                  :enable (delete-frame-enabled-p)
-                  :help "Delete currently selected frame"))
-    (bindings--define-key menu [make-frame-on-monitor]
-      '(menu-item "New Frame on Monitor..." make-frame-on-monitor
-                  :visible (fboundp 'make-frame-on-monitor)
-                  :help "Open a new frame on another monitor"))
-    (bindings--define-key menu [make-frame-on-display]
-      '(menu-item "New Frame on Display..." make-frame-on-display
-                  :visible (fboundp 'make-frame-on-display)
-                  :help "Open a new frame on another display"))
-    (bindings--define-key menu [make-frame]
-      '(menu-item "New Frame" make-frame-command
-                  :visible (fboundp 'make-frame-command)
-                  :help "Open a new frame"))
+          ;; Don't use delete-frame as event name because that is a special
+          ;; event.
+          (bindings--define-key menu [delete-this-frame]
+            '(menu-item "Delete Frame" delete-frame
+                        :visible (fboundp 'delete-frame)
+                        :enable (delete-frame-enabled-p)
+                        :help "Delete currently selected frame"))
+          (bindings--define-key menu [make-frame-on-monitor]
+            '(menu-item "New Frame on Monitor..." make-frame-on-monitor
+                        :visible (fboundp 'make-frame-on-monitor)
+                        :help "Open a new frame on another monitor"))
+          (bindings--define-key menu [make-frame-on-display]
+            '(menu-item "New Frame on Display..." make-frame-on-display
+                        :visible (fboundp 'make-frame-on-display)
+                        :help "Open a new frame on another display"))
+          (bindings--define-key menu [make-frame]
+            '(menu-item "New Frame" make-frame-command
+                        :visible (fboundp 'make-frame-command)
+                        :help "Open a new frame"))
 
-    (bindings--define-key menu [separator-frame]
-      menu-bar-separator)
+          (bindings--define-key menu [separator-frame]
+            menu-bar-separator)
 
-    (bindings--define-key menu [one-window]
-      '(menu-item "Remove Other Windows" delete-other-windows
-                  :enable (not (one-window-p t nil))
-                  :help "Make selected window fill whole frame"))
+          (bindings--define-key menu [one-window]
+            '(menu-item "Remove Other Windows" delete-other-windows
+                        :enable (not (one-window-p t nil))
+                        :help "Make selected window fill whole frame"))
 
-    (bindings--define-key menu [new-window-on-right]
-      '(menu-item "New Window on Right" split-window-right
-                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
-                               (menu-bar-non-minibuffer-window-p))
-                  :help "Make new window on right of selected one"))
+          (bindings--define-key menu [new-window-on-right]
+            '(menu-item "New Window on Right" split-window-right
+                        :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                                     (menu-bar-non-minibuffer-window-p))
+                        :help "Make new window on right of selected one"))
 
-    (bindings--define-key menu [new-window-below]
-      '(menu-item "New Window Below" split-window-below
-                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
-                               (menu-bar-non-minibuffer-window-p))
-                  :help "Make new window below selected one"))
+          (bindings--define-key menu [new-window-below]
+            '(menu-item "New Window Below" split-window-below
+                        :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                                     (menu-bar-non-minibuffer-window-p))
+                        :help "Make new window below selected one"))
 
-    (bindings--define-key menu [separator-window]
-      menu-bar-separator)
+          (bindings--define-key menu [separator-window]
+            menu-bar-separator)
 
-    (bindings--define-key menu [recover-session]
-      '(menu-item "Recover Crashed Session" recover-session
-                  :enable
-                  (and auto-save-list-file-prefix
-                       (file-directory-p
-                        (file-name-directory auto-save-list-file-prefix))
-                       (directory-files
-                        (file-name-directory auto-save-list-file-prefix)
-                        nil
-                        (concat "\\`"
-                                (regexp-quote
-                                 (file-name-nondirectory
-                                  auto-save-list-file-prefix)))
-                        t))
-                  :help "Recover edits from a crashed session"))
-    (bindings--define-key menu [revert-buffer]
-      '(menu-item "Revert Buffer" revert-buffer
-                  :enable (or (not (eq revert-buffer-function
-                                       'revert-buffer--default))
-                              (not (eq
-                                    revert-buffer-insert-file-contents-function
-                                    'revert-buffer-insert-file-contents--default-function))
-                              (and buffer-file-number
-                                   (or (buffer-modified-p)
-                                       (not (verify-visited-file-modtime
-                                             (current-buffer))))))
-                  :help "Re-read current buffer from its file"))
-    (bindings--define-key menu [write-file]
-      '(menu-item "Save As..." write-file
-                  :enable (and (menu-bar-menu-frame-live-and-visible-p)
-                               (menu-bar-non-minibuffer-window-p))
-                  :help "Write current buffer to another file"))
-    (bindings--define-key menu [save-buffer]
-      '(menu-item "Save" save-buffer
-                  :enable (and (buffer-modified-p)
-                               (buffer-file-name)
-                               (menu-bar-non-minibuffer-window-p))
-                  :help "Save current buffer to its file"))
+          (bindings--define-key menu [recover-session]
+            '(menu-item "Recover Crashed Session" recover-session
+                        :enable
+                        (and auto-save-list-file-prefix
+                             (file-directory-p
+                              (file-name-directory auto-save-list-file-prefix))
+                             (directory-files
+                              (file-name-directory auto-save-list-file-prefix)
+                              nil
+                              (concat "\\`"
+                                      (regexp-quote
+                                       (file-name-nondirectory
+                                        auto-save-list-file-prefix)))
+                              t))
+                        :help "Recover edits from a crashed session"))
+          (bindings--define-key menu [revert-buffer]
+            '(menu-item "Revert Buffer" revert-buffer
+                        :enable (or (not (eq revert-buffer-function
+                                             'revert-buffer--default))
+                                    (not (eq
+                                          revert-buffer-insert-file-contents-function
+                                          'revert-buffer-insert-file-contents--default-function))
+                                    (and buffer-file-number
+                                         (or (buffer-modified-p)
+                                             (not (verify-visited-file-modtime
+                                                   (current-buffer))))))
+                        :help "Re-read current buffer from its file"))
+          (bindings--define-key menu [write-file]
+            '(menu-item "Save As..." write-file
+                        :enable (and (menu-bar-menu-frame-live-and-visible-p)
+                                     (menu-bar-non-minibuffer-window-p))
+                        :help "Write current buffer to another file"))
+          (bindings--define-key menu [save-buffer]
+            '(menu-item "Save" save-buffer
+                        :enable (and (buffer-modified-p)
+                                     (buffer-file-name)
+                                     (menu-bar-non-minibuffer-window-p))
+                        :help "Save current buffer to its file"))
 
-    (bindings--define-key menu [separator-save]
-      menu-bar-separator)
+          (bindings--define-key menu [separator-save]
+            menu-bar-separator)
 
 
-    (bindings--define-key menu [kill-buffer]
-      '(menu-item "Close" kill-this-buffer
-                  :enable (kill-this-buffer-enabled-p)
-                  :help "Discard (kill) current buffer"))
-    (bindings--define-key menu [insert-file]
-      '(menu-item "Insert File..." insert-file
-                  :enable (menu-bar-non-minibuffer-window-p)
-                  :help "Insert another file into current buffer"))
-    (bindings--define-key menu [dired]
-      '(menu-item "Open Directory..." dired
-                  :enable (menu-bar-non-minibuffer-window-p)
-                  :help "Read a directory, to operate on its files"))
-    (bindings--define-key menu [open-file]
-      '(menu-item "Open File..." menu-find-file-existing
-                  :enable (menu-bar-non-minibuffer-window-p)
-                  :help "Read an existing file into an Emacs buffer"))
-    (bindings--define-key menu [new-file]
-      '(menu-item "Visit New File..." find-file
-                  :enable (menu-bar-non-minibuffer-window-p)
-                  :help "Specify a new file's name, to edit the file"))
+          (bindings--define-key menu [kill-buffer]
+            '(menu-item "Close" kill-this-buffer
+                        :enable (kill-this-buffer-enabled-p)
+                        :help "Discard (kill) current buffer"))
+          (bindings--define-key menu [insert-file]
+            '(menu-item "Insert File..." insert-file
+                        :enable (menu-bar-non-minibuffer-window-p)
+                        :help "Insert another file into current buffer"))
+          (bindings--define-key menu [dired]
+            '(menu-item "Open Directory..." dired
+                        :enable (menu-bar-non-minibuffer-window-p)
+                        :help "Read a directory, to operate on its files"))
+          (bindings--define-key menu [open-file]
+            '(menu-item "Open File..." menu-find-file-existing
+                        :enable (menu-bar-non-minibuffer-window-p)
+                        :help "Read an existing file into an Emacs buffer"))
+          (bindings--define-key menu [new-file]
+            '(menu-item "Visit New File..." find-file
+                        :enable (menu-bar-non-minibuffer-window-p)
+                        :help "Specify a new file's name, to edit the file"))
 
-    menu))
+          menu))
 
 (defset menu-bar-emacs-help-menu
   (let ((menu (make-sparse-keymap "Help")))
@@ -355,6 +366,9 @@
     (bindings--define-key menu [mi-pen-edit-conf]
       '(menu-item "Edit Pen.el configuration" pen-edit-conf
                   :help "Edit the pen.yaml file"))
+    (bindings--define-key menu [mi-pen-disable-all-faces]
+      '(menu-item "Disable all faces (B&W-mode)" pen-disable-all-faces
+                  :help "Enable black and white mode"))
     (bindings--define-key menu [mi-menu-bar-source-menu]
       `(menu-item "Pen.el source code" ,menu-bar-source-menu
                   :help "Manage source code"))
@@ -366,7 +380,10 @@
                   :help "Edit the efm-langserver-config.yaml file"))
     (bindings--define-key menu [mi-pen-customize]
       '(menu-item "Customize Pen.el" pen-customize
-                  :help "Pen.el customization"))
+                  :help "Pen.el customization (loaded pen.yaml)"))
+    (bindings--define-key menu [mi-pen-rc]
+      '(menu-item "Customize pen.yaml" pen-rc
+                  :help "Pen.el customization pen.yaml"))
     (bindings--define-key menu [mi-pen-reload]
       '(menu-item "Reload Pen.el config, engines and prompts" pen-reload
                   :help "Reload Pen.el config, engines and prompts"))
@@ -662,9 +679,9 @@
                   :help "Cancel out of this menu"))
     menu))
 
-(defset menu-bar-paracosm-menu
-  (let ((menu (make-sparse-keymap "Paracosm")))
-    (bindings--define-key menu [from-name]
+(defset menu-bar-brain-menu
+  (let ((menu (make-sparse-keymap "Brain")))
+    (bindings--define-key menu [mi-pen-org-brain-switch-brain]
       '(menu-item "Switch brain" pen-org-brain-switch-brain
                   :help "Switch brain"))
     (bindings--define-key menu [cancel-menu]
@@ -907,6 +924,22 @@
                   :help "Cancel out of this menu"))
     menu))
 
+(defset menu-bar-Bible-menu
+        (let ((menu (make-sparse-keymap "Bible")))
+          (bindings--define-key menu [mi-bible-open]
+            '(menu-item "Bible open" bible-open
+                        :help "Open the Bible"))
+          (bindings--define-key menu [mi-bible-e-chapter-titles]
+            '(menu-item "Bible chapter titles" bible-e-chapter-titles
+                        :help "Open file containing Bible chapter titles"))
+          (bindings--define-key menu [mi-bible-e-outlines]
+            '(menu-item "Bible outlines" bible-e-outlines
+                        :help "Open file containing Bible outlines"))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          menu))
+
 (defset menu-bar-inkwell-menu
   (let ((menu (make-sparse-keymap "Inkw.el")))
     (bindings--define-key menu [mi-pen-go-to-prompt-for-ink]
@@ -990,6 +1023,106 @@
 
 (defset menu-bar-apps-menu
   (let ((menu (make-sparse-keymap "Applications")))
+    ;; (bindings--define-key menu [mi-menu-bar-brain-menu]
+    ;;   `(menu-item "org-brain" ,menu-bar-brain-menu
+    ;;               :help "Mind-mapping"))
+    (bindings--define-key menu [mi-nasb]
+      '(menu-item "Open NASB Bible" nasb
+                  :help "Open Bible"))
+    (bindings--define-key menu [mi-view-agenda]
+      '(menu-item "View agenda" view-agenda
+                  :help "View org-agenda"))
+    (bindings--define-key menu [mi-captain-bible]
+      '(menu-item "Captain Bible" captain-bible
+                  :help "Play Captain Bible"))
+    (bindings--define-key menu [mi-play-hymn-with-transient]
+      '(menu-item "Open hymnal" play-hymn-with-transient
+                  :help "Select and play a hymn"))
+    (bindings--define-key menu [mi-notmuch-launch]
+      '(menu-item "View emails" notmuch-launch
+                  :help "Launch notmuch"))
+    (bindings--define-key menu [mi-pen-org-brain-switch-brain]
+      '(menu-item "Mind-map" pen-org-brain-switch-brain
+                  :help "Select org-brain"))
+    ;; (bindings--define-key menu [mi-menu-bar-brain-menu]
+    ;;   `(menu-item "Brain" ,menu-bar-brain-menu
+    ;;               :help "Mind-mapping"))
+    (bindings--define-key menu [cancel-menu]
+      '(menu-item "Cancel" identity-command
+                  :help "Cancel out of this menu"))
+    menu))
+
+;; There's got to be a more efficient way of defining these menus
+(defset menu-bar-praise-and-worship-menu
+        (let ((menu (make-sparse-keymap "Praise & Worship")))
+          (bindings--define-key menu [mi-play-hymn-with-transient]
+            '(menu-item "Hymnal" play-hymn-with-transient
+                        :help "Sing a hymn"))
+          (bindings--define-key menu [mi-hillsong]
+            '(menu-item "Hillsong" hillsong
+                        :help "Listen to Hillsong"))
+          (bindings--define-key menu [mi-bethel]
+            '(menu-item "Bethel" bethel
+                        :help "Listen to Bethel"))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          menu))
+
+(defset menu-bar-bible-study-menu
+        (let ((menu (make-sparse-keymap "Bible Study")))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          menu))
+
+(defset menu-bar-devotionals-menu
+        (let ((menu (make-sparse-keymap "Devotionals")))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          (bindings--define-key menu [mi-jeff-vines--word-for-today]
+            '(menu-item "The Word for Today with Jeff Vines" jeff-vines--word-for-today
+                        :help "Read Jeff Vines' devotional"))
+          (bindings--define-key menu [mi-alistair-begg--sermons]
+            '(menu-item "Sermons from Alistair Begg" alistair-begg--sermons
+                        :help "Read Alistair Begg's sermons"))
+          (bindings--define-key menu [mi-john-piper-messages]
+            '(menu-item "Messages from John Piper" john-piper-messages
+                        :help "Read Alistair Begg's sermons"))
+          menu))
+
+(defset menu-bar-sermons-menu
+        (let ((menu (make-sparse-keymap "Sermons")))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          menu))
+
+(defset menu-bar-activities-menu
+        (let ((menu (make-sparse-keymap "Activities")))
+          (bindings--define-key menu [mi-menu-bar-praise-and-worship-menu]
+            `(menu-item "Praise & Worship" ,menu-bar-praise-and-worship-menu
+                        :help "Listen to Hillsong"))
+          (bindings--define-key menu [mi-menu-bar-bible-study-menu]
+            `(menu-item "Bible Study" ,menu-bar-bible-study-menu
+                        :help "Study the Bible"))
+          (bindings--define-key menu [mi-menu-bar-devotionals-menu]
+            `(menu-item "Devotionals" ,menu-bar-devotionals-menu
+                        :help "Read and listen to devotionals"))
+          (bindings--define-key menu [mi-menu-bar-sermons-menu]
+            `(menu-item "Sermons" ,menu-bar-devotionals-menu
+                        :help "Read and listen to sermons"))
+          (bindings--define-key menu [mi-nasb]
+            '(menu-item "Open NASB Bible" nasb
+                        :help "Open Bible"))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
+          menu))
+
+(defset menu-bar-oldapps-menu
+  (let ((menu (make-sparse-keymap "Applications")))
     (bindings--define-key menu [mi-menu-bar-apostrophe-menu]
       `(menu-item "Apostrophe" ,menu-bar-apostrophe-menu
                   :help "Talk 1-on-1 to chatbots"))
@@ -1043,7 +1176,7 @@
       `(menu-item "LookingGlass" ,menu-bar-lookingglass-menu
                   :help "Visit imaginary websites"))
     (bindings--define-key menu [mi-menu-bar-paracosm-menu]
-      `(menu-item "Paracosm" ,menu-bar-paracosm-menu
+      `(menu-item "Brain" ,menu-bar-brain-menu
                   :help "AI-assisted mind-mapping"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
@@ -1104,7 +1237,7 @@
       '(menu-item "Talking to chatbots with Apostrophe" pen-demo-apostrophe
                   :help "Demo talking to chatbots"))
     (bindings--define-key menu [mi-pen-demo-paracosm]
-      '(menu-item "Mind-mapping with Paracosm" pen-demo-paracosm
+      '(menu-item "Mind-mapping with Brain" pen-demo-paracosm
                   :help "Mind-mapping with Augmented Intelligence"))
     (bindings--define-key menu [mi-pen-demo-human-promptee]
       '(menu-item "Human-Promptee" pen-demo-human-promptee
@@ -1244,18 +1377,32 @@
       (bindings--define-key global-map [menu-bar mtp] nil)
 
       ;; (bindings--define-key global-map [menu-bar paracosm]
-      ;;   (cons "Cosm" menu-bar-paracosm-menu))
+      ;;   (cons "Cosm" menu-bar-brain-menu))
       (bindings--define-key global-map [menu-bar paracosm] nil)
       (bindings--define-key global-map [menu-bar apps] nil)
 
       (bindings--define-key global-map [menu-bar network]
         (cons "Network" menu-bar-network-menu))
+      
+      ;; disable
+      (bindings--define-key global-map [menu-bar network] nil)
 
       (bindings--define-key global-map [menu-bar applications]
-        (cons "Applications" menu-bar-apps-menu))
+        (cons "Apps" menu-bar-apps-menu))
 
-      (bindings--define-key global-map [menu-bar utilities]
-        (cons "Utilities" menu-bar-utils-menu))
+      (bindings--define-key global-map [menu-bar resources]
+        (cons "Activities" menu-bar-activities-menu))
+      
+      ;; (bindings--define-key global-map [menu-bar oldapplications]
+      ;;   (cons "Applications" menu-bar-oldapps-menu))
+
+      ;; disable
+      ;; (bindings--define-key global-map [menu-bar applications] nil)
+
+      ;; (bindings--define-key global-map [menu-bar utilities]
+      ;;   (cons "Utilities" menu-bar-utils-menu))
+      
+      (bindings--define-key global-map [menu-bar utilities] nil)
 
       (bindings--define-key global-map [menu-bar common]
         (cons "Common" menu-bar-common-menu))
@@ -1282,8 +1429,11 @@
       ;;   (cons "Engineering" menu-bar-engineering-menu))
       (bindings--define-key global-map [menu-bar engineering] nil)
 
-      (bindings--define-key global-map [menu-bar prompting]
-        (cons "Prompting" menu-bar-prompting-menu))
+      (bindings--define-key global-map [menu-bar bible]
+        (cons "Bible" menu-bar-Bible-menu))
+
+      ;; (bindings--define-key global-map [menu-bar prompting]
+      ;;   (cons "Prompting" menu-bar-prompting-menu))
 
       ;; (bindings--define-key global-map [menu-bar network]
       ;;   (cons "Network" menu-bar-networks-menu))
@@ -1292,8 +1442,8 @@
       (bindings--define-key global-map [menu-bar config]
         (cons "Configure" menu-bar-configure-menu))
 
-      (bindings--define-key global-map [menu-bar pen-help]
-        (cons "Tutorials" menu-bar-pen-tutorials-menu))
+      ;; (bindings--define-key global-map [menu-bar pen-help]
+      ;;   (cons "Tutorials" menu-bar-pen-tutorials-menu))
 
       (bindings--define-key global-map [menu-bar documents]
         (cons "Documents" menu-bar-documents-menu))

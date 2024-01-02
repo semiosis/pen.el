@@ -1,5 +1,1 @@
-#!/bin/bash
-
-export UPDATE=y
-
-"$@"
+wo

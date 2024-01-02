@@ -6,32 +6,147 @@
 
 (require 'helm-flyspell)
 
+(defun pen-flyspell-buffer ()
+  (interactive)
+  nil
+  ;; Was the error breaking startup?
+  ;; (user-error "flyspell-flycheck disabled")
+  ;;;; In honesty, this may be too slow
+  ;;(if (pen-rc-test "auto_flyspell_flycheck")
+  ;;    (flyspell-buffer)
+  ;;  ;; (user-error "flyspell-flycheck disabled")
+  ;;  )
+  )
+
+;; Combine flyspell and flycheck
+(defun fly-next-error ()
+  (interactive)
+  (let* ((pos (point))
+         (fspos
+          (save-excursion
+            (ignore-errors
+              (try
+               (progn
+                 (if (flyspell-overlay-here-p)
+                     (setq flyspell-old-pos-error (point))
+                   (setq flyspell-old-pos-error nil))
+                 (call-interactively 'flyspell-goto-next-error)
+                 (point))))))
+         (fcpos
+          (save-excursion
+            (ignore-errors
+              (try
+               (progn
+                 (call-interactively 'flycheck-next-error)
+                 (point)))))))
+
+    (if (and fspos
+             (= pos fspos))
+        (setq fspos nil))
+
+    (if (and fcpos
+             (= pos fcpos))
+        (setq fcpos nil))
+
+    (cond
+     ((and fspos
+           (or
+            (not fcpos)
+            (< fspos fcpos))
+           (< (point) fspos))
+      (progn
+        ;; (message (concat "going from " (str (point)) " to " (str fspos) " oldpos: " (str flyspell-old-pos-error) " flyspell-old-pos-error: " (str flyspell-old-pos-error)))
+
+        (goto-char fspos)
+
+        ;; This isn't very reliable. Just go to the point
+        ;; (call-interactively 'flyspell-goto-next-error)
+        ;; (flyspell-goto-next-error)
+        ;; (message (concat "gone from " (str (point)) " to " (str fspos) " oldpos: " (str flyspell-old-pos-error)))
+        ))
+     ((and fcpos
+           (or
+            (not fspos)
+            (< fcpos fspos))
+           (< (point) fcpos))
+      (call-interactively 'flycheck-next-error)))))
+
+(defun fly-prev-error ()
+  (interactive)
+  (let* ((pos (point))
+         (fspos
+          (save-excursion
+            (ignore-errors
+              (try
+               (progn
+                 (if (flyspell-overlay-here-p)
+                     (setq flyspell-old-pos-error (point))
+                   (setq flyspell-old-pos-error nil))
+                 (call-interactively 'flyspell-goto-previous-error)
+                 (point))))))
+         (fcpos
+          (save-excursion
+            (ignore-errors
+              (try
+               (progn
+                 (call-interactively 'flycheck-previous-error)
+                 (point)))))))
+
+    (if (and fspos
+             (= pos fspos))
+        (setq fspos nil))
+
+    (if (and fcpos
+             (= pos fcpos))
+        (setq fcpos nil))
+
+    (cond
+     ((and fspos
+           (or
+            (not fcpos)
+            (> fspos fcpos))
+           (> (point) fspos))
+      (progn
+        (goto-char fspos)
+        ;; (call-interactively 'flyspell-goto-previous-error)
+        ))
+     ((and fcpos
+           (or
+            (not fspos)
+            (> fcpos fspos))
+           (> (point) fcpos))
+      (call-interactively 'flycheck-previous-error)))))
+
+(add-hook 'org-mode-hook 'flyspell-mode)
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
 (defun flyspell-goto-next-error ()
   "Go to the next previously detected error.
 In general FLYSPELL-GOTO-NEXT-ERROR must be used after
 FLYSPELL-BUFFER."
   (interactive)
   (let ((pos (point))
-	(max (point-max)))
+	    (max (point-max)))
     (if (and (eq (current-buffer) flyspell-old-buffer-error)
-	     (eq pos flyspell-old-pos-error))
-	(progn
-	  (if (= flyspell-old-pos-error max)
-	      ;; goto beginning of buffer
-	      (progn
-		(message "Restarting from beginning of buffer")
-		(goto-char (point-min)))
-	    (forward-word 1))
-	  (setq pos (point))))
+	         (eq pos flyspell-old-pos-error))
+	    (progn
+	      (if (= flyspell-old-pos-error max)
+	          ;; goto beginning of buffer
+	          (progn
+		        (message "Restarting from beginning of buffer")
+		        (goto-char (point-min)))
+	        (forward-word 1))
+	      (setq pos (point))))
     ;; seek the next error
     (while (and (< pos max)
-		(let ((ovs (overlays-at pos))
-		      (r '()))
-		  (while (and (not r) (consp ovs))
-		    (if (flyspell-overlay-p (car ovs))
-			(setq r t)
-		      (setq ovs (cdr ovs))))
-		  (not r)))
+		        (let ((ovs (overlays-at pos))
+		              (r '()))
+		          (while (and (not r) (consp ovs))
+		            (if (flyspell-overlay-p (car ovs))
+			            (setq r t)
+		              (setq ovs (cdr ovs))))
+		          (not r)))
       (setq pos (1+ pos)))
     ;; save the current location for next invocation
     (setq flyspell-old-pos-error pos)
@@ -39,7 +154,7 @@ FLYSPELL-BUFFER."
     (goto-char pos)
     (if (= pos max)
         ;; Here is the change
-	      (error "No more miss-spelled word!"))))
+	    (error "No more miss-spelled word!"))))
 
 ;; move point to previous error
 ;; based on code by hatschipuh at

@@ -1,4 +1,1 @@
-#!/bin/bash
-export TTY
-
-date +%s "$@"
+date-timestamp

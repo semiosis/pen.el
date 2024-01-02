@@ -2,10 +2,14 @@
   (interactive)
   (if (stringp thing)
       (setq thing (intern thing)))
-  (try (find-function thing)
-       (find-variable thing)
-       (find-face-definition thing)
-       (pen-ns (concat (str thing) " is neither function nor variable"))))
+
+  (try
+   (pen-goto-package thing)
+   (find-function thing)
+   (find-variable thing)
+   (find-face-definition thing)
+
+   (pen-ns (concat (str thing) " is neither function nor variable"))))
 (defalias 'j 'find-thing)
 (defalias 'ft 'find-thing)
 
@@ -202,5 +206,23 @@ buffer."
   nil)
 
 (defalias 'detect-language-set-mode 'guess-major-mode)
+
+(defun getline (&optional number)
+  (chomp
+   (str
+    (if number
+        (save-excursion
+          (goto-line number)
+          (thing-at-point 'line))
+      (thing-at-point 'line)))))
+
+(defalias 'get-line 'getline)
+
+(defun test-f (filename)
+  (file-exists-p (umn filename)))
+
+(defun pen-switch-to-buffer-for-pen-e (ret)
+  (if (bufferp ret)
+      (switch-to-buffer ret)))
 
 (provide 'pen-utils)

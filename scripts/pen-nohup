@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This is a nohup script which is good for fzf preview - it reconnects to the
+# command, and if the command finishes, collects the output
+
+trap '' HUP
+
+"$@"

@@ -1,0 +1,135 @@
+#!/bin/bash
+export TTY
+
+# # As it turns out, installing mu4e is not easy
+# # because my version of Debian is quite old.
+# {
+#   # e ia secretaria
+#   
+#   e ia el-secretario el-secretario-org el-secretario-notmuch el-secretario-mu4e el-secretario-elfeed
+#   
+#   # The Debian 10 version is too old
+#   # agi mu4e
+#   # dpkg -L mu4e
+#   # /usr/share/emacs/site-lisp/mu4e
+#   
+#   # (
+#   # cd "$(gc "https://github.com/mesonbuild/meson")"
+#   # )
+#   # agi meson
+#   
+#   python3.10 -m pip install meson
+#   
+#   # Can't install because of dependency problems
+#   # (
+#   # cd $HOME/programs
+#   # wget "http://http.us.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.66.8-1_amd64.deb"
+#   # dpkg --auto-deconfigure -i libglib2.0-0_2.66.8-1_amd64.deb
+#   # )
+#   
+#   # https://packages.debian.org/sid/amd64/libglib2.0-0/download
+#   # (
+#   # cd "$(gc "https://github.com/emacsmirror/mu4e")"
+#   # ./autogen.sh && make
+#   # )
+#   
+#   # emails
+#   e ia helm-mu mu4easy mu4e-views mu4e-query-fragments mu4e-overview mu4e-marker-icons mu4e-jump-to-list mu4e-conversation mu4e-column-faces mu4e-alert evil-mu4e el-secretario-mu4e
+# }
+
+# TODO Set up notmuch instead of mu4e
+
+# https://kkatsuyuki.github.io/notmuch-conf/
+# Actually, try this:
+# https://www.johnborwick.com/2019/02/09/notmuch-gmailieer.html
+{
+  e ia notmuch ol-notmuch notmuch-transient notmuch-maildir notmuch-labeler notmuch-bookmarks notmuch-addr helm-notmuch el-secretario-notmuch counsel-notmuch consult-notmuch notmuch-indicator
+
+  # https://pypi.org/project/lieer/
+  # pip3 install lieer
+  # Use the Debian 10 builtins
+  (
+  agi notmuch
+  agi python3-notmuch
+  agi gmailieer
+  )
+}
+
+# For gmailieer to work:
+(
+apt remove python3-pip
+cd /root/programs
+wget https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+/usr/local/bin/pip3 install pyopenssl --upgrade
+)
+
+# {
+#     notmuch setup
+#     mv /root/.notmuch-config ~/.pen/
+#     ln -sf ~/.pen/.notmuch-config ~
+# }
+
+{
+  # create notmuch database:
+  mkdir -p ~/.pen/Mail
+  cd ~/.pen/Mail
+  notmuch new
+}
+
+# notmuch setup
+# #+BEGIN_SRC text -n :async :results verbatim code :lang text
+#   Your full name [root]: Shane Mulligan
+#   Your primary email address [root@pen-agia.(none)]: mullikine@gmail.com
+#   Additional email address [Press 'Enter' if none]:
+#   Top-level directory of your email archive [/root/mail]: /root/.pen/Mail
+#   Tags to apply to all new messages (separated by spaces) [unread inbox]: unread inbox
+#   Tags to exclude when searching messages (separated by spaces) [deleted spam]: deleted spam
+#   
+#   Notmuch is now configured, and the configuration settings are saved in
+#   a file in your home directory named .notmuch-config . If you'd like to
+#   change the configuration in the future, you can either edit that file
+#   directly or run "notmuch setup".  To choose an alternate configuration
+#   location, set ${NOTMUCH_CONFIG}.
+#   
+#   The next step is to run "notmuch new" which will create a database
+#   that indexes all of your mail. Depending on the amount of mail you have
+#   the initial indexing process can take a long time, so expect that.
+#   Also, the resulting database will require roughly the same amount of
+#   storage space as your current collection of email. So please ensure you
+#   have sufficient storage space available now.
+# #+END_SRC
+
+{
+  # make notmuch call gmi when 'notmuch new' is called:
+  mkdir -p ~/.pen/notmuch/hooks
+  ln -sf ~/.pen/notmuch ~/.notmuch
+  cat > ~/.pen/notmuch/hooks/pre-new <<EOF
+#!/bin/sh
+cd ~/.pen/Mail
+gmi sync
+EOF
+  chmod +x ~/.pen/notmuch/hooks/pre-new
+}
+
+(
+cd ~/.pen/Mail
+cat > .notmuch/hooks/post-new <<EOF
+#!/bin/sh
+EOF
+notmuch tag +to_me -- to:mullikine@gmail.com and -tag:to_me
+chmod +x ~/.notmuch/hooks/post-new
+
+~/.notmuch/hooks/post-new
+gmi sync
+)
+
+# This was definitely worth it
+# for notmuch
+agi libxapian-dev libgmime-3.0-dev libtalloc-dev zlib1g-devsudo apt-get install libxapian-dev libgmime-3.0-dev libtalloc-dev zlib1g-dev
+(
+cd "$(gc "https://github.com/notmuch/notmuch")"
+./configure
+make -j 10
+make install
+)

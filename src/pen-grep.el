@@ -200,7 +200,11 @@ NEEDLE is the search string."
                        (concat extra-args " " needle)))))
 
 (defun vc-get-top-level ()
-  (s-replace-regexp "/$" "" (projectile-project-root)))
+  (s-replace-regexp "/$" ""
+                    (or (projectile-project-root)
+                        (progn
+                          (ns "vc-get-top-level: using pwd")
+                          default-directory))))
 
 (defun sps-ead-thing-at-point ()
   (interactive)

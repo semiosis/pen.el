@@ -10,6 +10,9 @@
 ;; (require 'pen-utils)
 (require 'helm-net)
 
+;; For completing-read
+(require 'helm-mode)
+
 ;; https://github.com/emacs-helm/helm/issues/550
 (setq helm-exit-idle-delay 0)
 
@@ -90,6 +93,8 @@ display values."
               (cond
                ((listp e)
                 (car e))
+               ((bufferp e)
+                (buffer-file-name e))
                (t e)))
             (helm-marked-candidates ,@body))))
 
@@ -115,6 +120,34 @@ display values."
 
   (xc (chomp (sh/cut "-d ' ' -f 2" (pen-tvipe (helm-marked-candidates :all-sources t))))))
 
+(defun helm-open-in-vim ()
+  (interactive)
+  (pen-sps
+   (cmd
+    "v"
+    (pen-umn
+     ;; (pen-snc "head -n 1"
+     ;;          (eval `(helm-marked-candidates-strings)))
+     (pen-snc "head -n 1"
+              (helm-marked-candidates-strings))))))
+
+(defun helm-open-in-sps ()
+  (interactive)
+  (pen-sps
+   (concat "zrepl o "
+           (pen-umn
+            (pen-bp head -n 1
+                    (helm-marked-candidates-strings))))))
+
+(defun helm-open-in-fzf ()
+  (interactive)
+  (pen-sph
+   (concat "ca "
+           (pen-umn
+            (pen-bp head -n 1
+                    (helm-marked-candidates-strings)))
+           " | pen-fzf -P")))
+
 (with-eval-after-load 'helm
   (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
   (define-key helm-map (kbd "C-z") 'helm-select-action)
@@ -122,9 +155,9 @@ display values."
   (define-key helm-map (kbd "M-e") (df helm-open ;; (helm-keyboard-quit)
                                        (find-file (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings)))) ;; (helm-keyboard-quit) ;This works to quit helm, but when it quits, the buffer quits too; This is desirable behaviour
                                        ))
-  (define-key helm-map (kbd "M-v") (df helm-open-in-vim (pen-tv (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings))))))
-  (define-key helm-map (kbd "M-o") (df helm-open-in-sps (pen-sps (concat "zrepl o " (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings)))))))
-  (define-key helm-map (kbd "M-F") (df helm-open-in-fzf (pen-sph (concat "ca " (pen-umn (pen-bp head -n 1 (helm-marked-candidates-strings))) " | pen-fzf -P"))))
+  (define-key helm-map (kbd "M-v") 'helm-open-in-vim)
+  (define-key helm-map (kbd "M-o") 'helm-open-in-sps)
+  (define-key helm-map (kbd "M-F") 'helm-open-in-fzf)
 
   ;; helm-help to do the same thing as helm documentation
   (define-key helm-map (kbd "C-c ?")    'helm-documentation)
@@ -503,12 +536,8 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key helm-map (kbd "M-D") #'send-m-del)
 (define-key helm-find-files-map (kbd "M-D") #'send-m-del)
 (define-key helm-map (kbd "C-h") nil)
-(define-key pen-map (kbd "M-l f r") 'helm-mini) ; recent
-(define-key pen-map (kbd "M-l f R") 'pen-sps-ranger)
+;; (define-key pen-map (kbd "M-l f R") 'pen-sps-ranger)
 (define-key pen-map (kbd "M-\"") nil)
-(define-key pen-map (kbd "M-l f z") 'pen-helm-fzf)
-(define-key pen-map (kbd "M-l f Z") 'pen-helm-fzf-top)
-(define-key pen-map (kbd "M-l f f") 'pen-helm-find-files) ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 (define-key helm-map (kbd "<help> p") #'helm-test-code)
 (define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
 (define-key helm-map (kbd "M-n") 'next-line)

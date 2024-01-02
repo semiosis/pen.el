@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+bash -s <<'HEREDOC'
+#!/bin/bash
+
+echo hi
+echo "There\" you go"
+HEREDOC

@@ -3,19 +3,52 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# Keep these args
+kargs=()
+
+# Forward the watch args
+fargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -c|-E) {
-        cmd="$2"
+    -n) {
+        fargs+=("$1" "$2")
         shift
         shift
-        set -- "$@" sh -c "$cmd"
+    }
+    ;;
+
+    -E|-c) {
+        kargs+=("$1")
+        shift
+    }
+    ;;
+
+    -*|--[a-z]*) {
+        fargs+=("$1")
+        shift
     }
     ;;
 
     *) break;
 esac; done
 
-test -f "${GOPATH%%:*}/bin/viddy" && : "${bin:="${GOPATH%%:*}/bin/viddy"}"
+# Keep and process these args
+set -- "${kargs[@]}" "$@"
+
+: ${CWD:="$(pwd)"};
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -c|-E) {
+        cmd="$2"
+        shift
+        shift
+        set -- "$@" sh -c "cd \"$CWD\"; $cmd"
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# test -f "${GOPATH%%:*}/bin/viddy" && : "${bin:="${GOPATH%%:*}/bin/viddy"}"
 test -f "/usr/bin/watch" && : "${bin:="/usr/bin/watch"}"
-"$bin" "$@"
+"$bin" "${fargs[@]}" "$@"

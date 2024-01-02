@@ -1,22 +1,23 @@
 (require 'magit)
 (require 'magit-status)
+(require 'memoize)
 
 ;; This stuff is broken somewhere for emacs29
 
-(require 'magithub)
+;; (require 'magithub)
 (require 'magit-section)
 (require 'git-timemachine)
 
 (setq magit-git-executable (executable-find "git"))
 
-;; magithub-issue-repo
-;; this fixes magithub and ghub+
-(defun ghub--host-around-advice (proc &rest args)
-  (if (not args)
-      (setq args '(github)))
-  (let ((res (apply proc args)))
-    res))
-(advice-add 'ghub--host :around #'ghub--host-around-advice)
+;; ;; magithub-issue-repo
+;; ;; this fixes magithub and ghub+
+;; (defun ghub--host-around-advice (proc &rest args)
+;;   (if (not args)
+;;       (setq args '(github)))
+;;   (let ((res (apply proc args)))
+;;     res))
+;; (advice-add 'ghub--host :around #'ghub--host-around-advice)
 
 (defun magit-eww-releases ()
   (interactive)
@@ -379,10 +380,7 @@ revisions (interactive.e., use a \"...\" range)."
 ;; https://github.com/magit/ghub
 
 (require 'magit-todos)
-
-(defun date-short ()
-  (interactive)
-  (pen-cl-sn "date-short" :chomp t))
+(require 'pen-dates-and-locales)
 
 (defun magit-commit-instant (&optional args)
   "Instant commit.
@@ -565,11 +563,11 @@ revisions (interactive.e., use a \"...\" range)."
    ("<return>" "visit thing at point"     magit-visit-thing)
    ("C-h m" "   show all key bindings"    describe-mode)])
 
-(use-package magithub
-  :after magit
-  :config
-  (magithub-feature-autoinject t)
-  (setq magithub-clone-default-directory "~/github"))
+;; (use-package magithub
+;;   :after magit
+;;   :config
+;;   (magithub-feature-autoinject t)
+;;   (setq magithub-clone-default-directory "~/github"))
 
 (defun magit-next-line-around-advice (proc &rest args)
   (let ((res (try (apply proc args)
@@ -583,8 +581,8 @@ revisions (interactive.e., use a \"...\" range)."
     res))
 (advice-add 'magit-previous-line :around #'magit-previous-line-around-advice)
 
-(advice-add 'magithub-issue-repo :around #'ignore-errors-around-advice)
-(advice-remove 'magithub-issue-repo #'ignore-errors-around-advice)
+;; (advice-add 'magithub-issue-repo :around #'ignore-errors-around-advice)
+;; (advice-remove 'magithub-issue-repo #'ignore-errors-around-advice)
 
 ;; I'm not sure where this was set, but this is what it needs to be set to
 (setq magit-display-buffer-function
@@ -597,8 +595,10 @@ revisions (interactive.e., use a \"...\" range)."
           (set-window-buffer nil buffer)
           (get-buffer-window buffer))))
 
-(require 'magit-gitflow)
-(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+;; broken
+;; (require 'magit-gitflow)
+;; (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+
 
 (define-key magit-log-mode-map (kbd "M-j") (kbd "M-m"))
 (define-key magit-log-mode-map (kbd "d") 'magit-diff)
@@ -637,6 +637,16 @@ revisions (interactive.e., use a \"...\" range)."
 (define-key magit-diff-mode-map (kbd "<M-tab>") 'magit-section-cycle-diffs)
 
 (require 'pen-magit-section)
-(require 'pen-magithub)
+;; (require 'pen-magithub)
+
+(defset pen-magit-log-sha1-size 12)
+(defun pen-magit-log-arguments-extra (fn-orig &optional mode)
+  (pcase-let ((`(,args ,files) (funcall fn-orig mode)))
+    (list (append args (list (format "--abbrev=%d" pen-magit-log-sha1-size))) files)))
+
+(advice-add 'magit-log-arguments :around #'pen-magit-log-arguments-extra)
+
+(put 'magit-status-mode 'magit-log-default-arguments
+     '("-n256" "--decorate"))
 
 (provide 'pen-magit)

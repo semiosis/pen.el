@@ -1,5 +1,5 @@
 (require 'adaptive-wrap)
-;; (use-package 'adaptive-wrap)
+;; (use-package adaptive-wrap)
 
 ;; e ia adaptive-wrap
 ;; https://elpa.gnu.org/packages/adaptive-wrap.html

@@ -1,0 +1,73 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+. $PENEL_DIR/scripts/utils.sh
+
+if test "$istty" = 0 && ! in-pen-p; then
+    if test "$has_stdout" = y; then
+        ocif in-pen "$sn" "$@" | pavs
+    else
+        in-pen in-tm "$sn" "$@"
+    fi
+    exit "$?"
+fi
+
+bin=/usr/bin/m4
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h|--help) {
+        shift
+
+        section="$@"
+        if test -n "$section"; then
+            case "$section" in
+                # m4 -h macros
+                # m4 -h builtins
+                macros|builtins) {
+                    info "(m4) Macro index"
+                }
+                ;;
+
+                m4) {
+                    info m4
+                }
+                ;;
+
+                *) {
+                    info "(m4) $section"
+                }
+                ;;
+
+            esac
+        else
+            if yn "(y) info builtins (n) --help"; then
+                info "(m4) Macro index"
+            else
+                "$bin" --help | pavs
+            fi
+        fi
+        exit "$?"
+
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# /usr/bin/info m4 -o - | vs
+# info "m4" | vs
+# info "(m4) Define" | vs
+# /usr/bin/m4 --help
+
+if test "$istty" = 0; then
+    builtins="$(pen-ci -otf -f -nd bash -c 'info "(m4) Macro index" | sed -n -e "/^\\* [^ ]\\+:./p" | sed "s/^\\* \\([^ ]\\+\\):.*/\\1/"')"
+    in-pen nvc rl -f "$builtins" "$bin" "$@"
+else
+    "$bin" "$@"
+fi

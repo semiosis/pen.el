@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f ""${GOPATH%%:*}/bin/hugo"" && : "${bin:=""${GOPATH%%:*}/bin/hugo""}"
+
+test -f "$bin" || {
+    # go get -v github.com/gohugoio/hugo
+    cd "$(gc "https://github.com/gohugoio/hugo")"
+    go install --tags extended
+} &>/dev/null
+
+# "$bin" --buildFuture -v "$@"
+"$bin" -v "$@"

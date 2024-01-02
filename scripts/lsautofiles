@@ -1,0 +1,45 @@
+#!/bin/bash
+export TTY
+
+# $NOTES/programs/tm/
+
+: ${CWD:="$(pwd)"}; cd "$CWD"
+
+# Default
+AUTOFILE_PATH="$NOTES/programs/tm/autofiles.txt"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -g) {
+        AUTOFILE_PATH="$NOTES/programs/tm/autofiles.txt"
+        shift
+    }
+    ;;
+
+    -l) {
+        # Don't prefix with CWD here. I want this to be relative so if I
+        # specify TARGET_DIR later, it will work
+        #$CWD/
+        AUTOFILE_PATH="autofiles.txt"
+        shift
+    }
+    ;;
+
+    -c) {
+        AUTOFILE_PATH="$(realpath "$2")"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+TARGET_DIR="$1"
+
+if [ -d "$TARGET_DIR" ]; then
+    cd "$TARGET_DIR"
+fi
+
+if [ -f "$AUTOFILE_PATH" ]; then
+    ls | pcregrep "$(cat "$AUTOFILE_PATH" | sed ':a;N;$!ba;s/\n/|/g' | sed 's/\(.*\)/(\1)/')" 
+fi

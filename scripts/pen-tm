@@ -1,7 +1,9 @@
 #!/bin/bash
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+
+oargs=("$@")
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
@@ -53,10 +55,17 @@ editor() {
 }
 
 # I still need to know what terminal it is that I am in, if I am in one
-export PEN_TMUX="$TMUX"
+: "${PEN_TMUX:="$TMUX"}"
+export PEN_TMUX="$PEN_TMUX"
+
 # This must be unset so terminal open in the correct places
 unset TMUX
 unset TMUX_PANE
+# But, frustratingly, it means that autofiles do not know they are in tmux
+# tm-open-file-green perspective.org
+
+# : "${TMUX_PANE:="$(tmux-pane-id)"}"
+# export TMUX_PANE
 
 init-tm() {
     while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -74,14 +83,24 @@ init-tm() {
         }
         ;;
 
+        -2) {
+            BLACK_AND_WHITE=y
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
+
+    if test "$BLACK_AND_WHITE" = "y"; then
+        export TERM=screen-2color
+    fi
 
     # Unique ID -- prompt for a random thing such as a pokemon, if pen server is running
     uid="$(date +%s)"
 
     # Ensure the localhost session is up
-    #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
+    pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n localhost "$SHELL"
     #pen-tm ns $(test "$FORCE" = "y" && printf -- "%s\n" "-f") -np -r -l -d -c "$HOME/notes" -n "${uid}" "$SHELL"
 
     cd "$HOME/notes"
@@ -1286,7 +1305,8 @@ case "$f" in
                 session_name="${d_bn}"
             fi
 
-            session_name="$(p "$session_name" | slugify | hash-trim)"
+            # session_name="$(p "$session_name" | slugify | hash-trim)"
+            session_name="$(p "$session_name" | slugify)"
         fi
 
         if [ -z "$TARGET" ] && test "$HAS_PARENT" = "y"; then
@@ -1335,6 +1355,55 @@ case "$f" in
 
                     test -f ".tmux-pre.sh" && source ".tmux-pre.sh"
                     test -f ".tmux.sh" && source ".tmux.sh"
+
+                    case "$AUTOFILES" in
+                        n) {
+                            G_AUTOFILES=n
+                            L_AUTOFILES=n
+                        }
+                        ;;
+
+                        y) {
+                            G_AUTOFILES=y
+                            L_AUTOFILES=y
+                        }
+                        ;;
+
+                        *)
+                    esac
+
+                    # : "${TMUX_PANE:="$(tmux-pane-id)"}"
+                    # export TMUX_PANE
+
+                    if test "$G_AUTOFILES" = "y"; then
+                        CWD="$CWD" lsautofiles -g | awk 1 | while IFS=$'\n' read -r line; do
+                            if test -f "$line"; then
+                                tm-open-file-green "$line"
+
+                            elif test -d "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+                                REPEAT_COMMAND=y tm ns -hlred -r -l -s -c "$line"
+                            fi
+                        done
+                    fi
+
+                    if false && tm-minimal; then
+                        test -f ".tmux-minimal.sh" && source ".tmux-minimal.sh"
+                    else
+                        test -f ".tmux.sh" && source ".tmux.sh"
+                    fi
+
+                    if test "$L_AUTOFILES" = "y"; then
+                        CWD="$CWD" lsautofiles -l | awk 1 | while IFS=$'\n' read -r line; do
+                            if test -f "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+                                tm -d -te nw -hldblue -R -nopakf -n "$line" -c "$CWD" "preview $(cmd-nice-posix "$line"); rifle \"$line\""
+                            elif test -d "$line"; then
+                                line="$(printf -- "%s" "$line" | qne)"
+                                REPEAT_COMMAND=y tm ns -hlblue -r -l -s -c "$line"
+                            fi
+                        done
+                    fi
                 )
             fi
 
@@ -1601,6 +1670,31 @@ case "$f" in
     }
     ;;
 
+    # This is like sps or nw
+    tpop) {
+        set -- "${oargs[@]}"
+        fargs=()
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            tpop) {
+                fargs+=("nw")
+                shift
+            }
+
+            ;;
+
+            *) {
+                fargs+=("$1")
+                shift
+            }
+            ;;
+
+        esac; done
+
+        tpop pen-tm "${fargs[@]}"
+    }
+    ;;
+
     split|nw|neww|spv|sph|ss|new-window|rs|rsp|sps|smart|cw) {
         BACKGROUNDED=
         SPLIT=
@@ -1715,6 +1809,12 @@ case "$f" in
             }
             ;;
 
+            -2|-nv2|-nvc2) { # wrap in a neovim
+                NEOVIM_TWOCOLOR=y
+                shift
+            }
+            ;;
+
             -nvt) { # wrap in a neovim
                 NEOVIM_TMUX=y
                 shift
@@ -1817,8 +1917,9 @@ case "$f" in
             }
             ;;
 
-            -p|-size-percent) {
+            -l|-p|-size-percent) {
                 split_size="$2"
+                # echo "$split_size" | tv &>/dev/null
                 shift
                 shift
             }
@@ -1827,6 +1928,13 @@ case "$f" in
             -zsh) {
                 CHANGE_SHELL=y
                 DEFAULT_SHELL="zsh"
+                shift
+            }
+            ;;
+
+            -tmux-shell) {
+                CHANGE_SHELL=y
+                DEFAULT_SHELL="tmux-shell"
                 shift
             }
             ;;
@@ -2066,7 +2174,9 @@ case "$f" in
             fi
         fi
 
-        if test "$NEOVIM" = "y"; then
+        if test "$NEOVIM_TWOCOLOR" = "y"; then
+            cmd="nvc -2 -E $(cmd-nice-posix "$cmd")"
+        elif test "$NEOVIM" = "y"; then
             cmd="nvc -E $(cmd-nice-posix "$cmd")"
         elif test "$NEOVIM_TMUX" = "y"; then
             cmd="nvt -E $(cmd-nice-posix "$cmd")"
@@ -2142,13 +2252,17 @@ case "$f" in
         elif test -n "$SPLIT"; then
             # The additional -l 50% is needed for tmux 3.4 when -d is supplied
             # -d makes it so the new split-window is not focused
-            if test -n "$BACKGROUNDED"; then
+            if test -n "$BACKGROUNDED" && ! test -n "$split_size"; then
                 BACKGROUNDED="$BACKGROUNDED -l 50%"
             fi
 
             if test -n "$split_size"; then
-                split_size="-p $split_size"
+                # split_size="-p $split_size"
+
+                # -l is size now
+                split_size="-l $split_size"
             fi
+
             full_id="$(tmux split -F "$ID_FORMAT" -P -t "$TARGET" $SPLIT $split_size $BACKGROUNDED -c "$dir" "$fullcmd")"
         else
             # Work around a window-renaming bad feature
@@ -2159,28 +2273,33 @@ case "$f" in
 
             full_id="$(tmux neww -P -F "$ID_FORMAT" -t "$TARGET" $PARENT_SESSION $BACKGROUNDED -n "$window_name" -c "$dir" "$fullcmd")"
             case "$HIGHLIGHT" in
-                warn) {
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W'
+                yellow|warn) {
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227,bg=colour161]#W'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227]#W'
                 }
                 ;;
 
                 red) {
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160,bg=colour235]#W'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour160]#W'
                 }
                 ;;
 
                 blue) {
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour026,bg=colour235]#W'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour020]#W'
                 }
                 ;;
 
                 dblue) {
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour024,bg=colour233]#W'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour018]#W'
                 }
                 ;;
 
                 green) {
-                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W'
+                    # tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040,bg=colour235]#W'
+                    tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour040]#W'
                 }
                 ;;
 
@@ -2661,6 +2780,8 @@ case "$f" in
             tmux capture-pane -t "$CALLER_PANE" $CAPTURE_OPTIONS -S $SCROLLBACK \; save-buffer "$np"
         fi
 
+        (
+        exec 1>&-
         if test "$CLEAN" = "y"; then
             cat "$np" | clean-term-capture | sponge "$np"
         fi
@@ -2668,6 +2789,7 @@ case "$f" in
         if test "$ASCIFY" = "y"; then
             cat "$np" | pen-c ascify | sponge "$np"
         fi
+        )
 
         if test "$STDOUT" = ""; then
             if is_tty; then
@@ -3214,7 +3336,7 @@ case "$f" in
         stdinfd=/proc/$$/fd/0
         stdoutfd=/proc/$$/fd/1
 
-        0</dev/null pen-tm -te sps -w "nvc ised $stdinfd $stdoutfd" | cat
+        0</dev/null pen-tm -te sps -w "ised $stdinfd $stdoutfd" | cat
     }
     ;;
 
@@ -3513,7 +3635,8 @@ case "$f" in
             tm-lsp.sh | grep -P "$re_target\t" | head -n 1 | sed 's/.*\t//' | xargs -l tmux select-window -t
         } || exit 1
 
-        PARENT_PANE_ID="$(tmux show-env -t "$target" PARENT_WINDOW_ID | sed 's/.*=//')"
+        # Recursion for nested tmux
+        PARENT_PANE_ID="$(tmux show-env -t "$target" PARENT_WINDOW_ID 2>/dev/null | sed 's/.*=//')"
         if [ -n "$PARENT_PANE_ID" ]; then
             pen-tm sel "$PARENT_PANE_ID"
         fi
@@ -3598,7 +3721,8 @@ case "$f" in
             *) break;
         esac; done
 
-        fzfcmd="tm-lsp.sh \"${CALLER_TARGET}\" | his -i -r -f white '\.org' | his -i -r -f purple directories | his -i -r -f blue links | his -i -b red -f yellow '\(problems\)' | his -i -r -f orange '\(setup\|scripts\)' | his -i -r -f green commands | his -i -r -f yellow notes | his -i -f blue localhost | his -i -f red '\.[0-9]\+' | his -i -f purple : | mfz -A -nm | strip-ansi"
+        # fzfcmd="tm-lsp.sh \"${CALLER_TARGET}\" | his -i -r -f white '\.org' | his -i -r -f purple directories | his -i -r -f blue links | his -i -b red -f yellow '\(problems\)' | his -i -r -f orange '\(setup\|scripts\)' | his -i -r -f green commands | his -i -r -f yellow notes | his -i -f blue localhost | his -i -f red '\.[0-9]\+' | his -i -f purple : | mfz -A -nm | strip-ansi"
+        fzfcmd="tm-lsp.sh \"${CALLER_TARGET}\" | mfz -A -nm | strip-ansi"
         if test "$no_split" = "y"; then
             result="$(eval "$fzfcmd")"
         else

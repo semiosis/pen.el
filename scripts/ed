@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+# Learn to use ed:
+# [[https://www.youtube.com/watch?v=S0pXQVMC770][Linux like original Unix - YouTube]]
+# [[https://youtu.be/Zpdo6We-_e0][Ed Is The Standard Text Editor For Unix/Linux - YouTube]]
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nox) {
+        nox=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+stdin_exists() {
+    ! [ -t 0 ] && ! test "$(readlink /proc/$$/fd/0)" = /dev/null
+}
+
+if stdin_exists; then
+    input_fp="$(cat | tf txt)"
+    set -- "$@" "$input_fp"
+fi
+
+# H adds error messages
+# https://youtu.be/Zpdo6We-_e0?t=330
+
+# ,g/re/p
+# https://youtu.be/Zpdo6We-_e0?t=1010
+
+
+if test "$nox" = "y"; then
+    builtins="$(pen-ci -otf -f -nd bash -c "info \"(ed) Commands\" | sed -n \"/^'[^ ]\\\\+'$/s/^'\\([^ ]\\\\+\\)'$/\\1/p\"")"
+    in-pen nvc rl --break-chars "" -f "$builtins" /bin/ed -p'ed> ' "$@"
+else
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    x -sh "ed -nox $CMD" -e ">" -s "H" -c m -i
+fi

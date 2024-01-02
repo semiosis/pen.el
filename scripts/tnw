@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# echo "$CMD" | tmless
+# echo "tm -f -S -tout nw -fa $CMD" | tmless
+
+eval "tm -f -S -tout nw -fa $CMD"

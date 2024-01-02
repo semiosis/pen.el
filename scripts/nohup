@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CMD:="$(cmd-nice "$@")"}
+eval "/usr/bin/nohup $CMD" &>/dev/null &
+ret="$?"
+{
+echo "nohup $CMD" | mnm
+echo "exit code: $ret"
+} | hls orange 1>&2
+exit "$ret"

@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+mdp="$PEN/documents/devotionals/the-word-for-today-reading/"
+
+cd "$mdp"
+list_word_for_today() {
+    find . -name "clean.txt" | sed -e 's/^\.\///' -e 's/\/.*//'
+}
+
+# TODO Make a preview which shows part of the devotional
+sel="$(list_word_for_today | mfz)"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test -n "$sel"; then
+    sel_fp="$sel/clean.txt"
+
+    if test -f "$sel_fp"; then
+        if is_tty; then
+            v "$sel_fp"
+        else
+            cat "$sel_fp" | pavs
+        fi
+    fi
+fi

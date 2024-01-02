@@ -1,17 +1,26 @@
 #!/bin/bash
 export TTY
 
-# export "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION"
+# eval 'echo -e -n "export PS4=\"+\t\\\"$(basename $0)\\\"\t${LINENO}\t\""'
+# set -xv
 
-aqf() { apply q "$@" | bs '`'; }
+# Test the speed of nvim:
+# nvim -u $HOME/.nvimrc -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
+
+# export "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION"
 
 # aqf() {
 #     cmd-nice-without-bs "$@"
 # }
 
-pl() {
-    printf -- "%s\n" "$@"
-}
+. $PENELD/scripts/utils.sh
+
+# Sadly, these are not the same:
+# aqf() { cmd-nice-posix "$@"; }
+aqf() { apply q "$@" | bs '`'; }
+
+# test aqf for nvc (because fzf uses nvc):
+# echo hi | fzf
 
 # This script is misnamed
 
@@ -60,33 +69,15 @@ if test "$#" -eq 0; then
     CMD="\"zsh\""
 fi
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
-
 if test "$EVAL" = "y"; then
     CMD="eval $CMD"
 fi
 
-if stdin_exists; then
+if test "$has_stdin" = y; then
     input_fp="$(cat | tf txt)"
     CMD="cat $(cmd "$input_fp") | $CMD"
     exec <&2
 fi
-
-is_stdout_pipe() {
-    # If stdout is a pipe
-    [[ -p /dev/stdout ]]
-}
-
-is_stdout_pipe
-ispipe="$?"
 
 # just run the command without nvim
 if inside-emacs-p; then
@@ -95,8 +86,8 @@ if inside-emacs-p; then
 fi
 
 # This must come *BEFORE* output_fp=
-if test "$INSIDE_NEOVIM" = y; then
-    if test "$ispipe" -eq 0; then
+if test "$INSIDE_NEOVIM" = y || test "$NO_NVC" = y; then
+    if test "$isstdoutpipe" -eq 0; then
         eval "$CMD | cat"
     else
         eval "$CMD"
@@ -105,7 +96,7 @@ if test "$INSIDE_NEOVIM" = y; then
 fi
 
 # This must come *AFTER* insite-emacs-p
-if test "$ispipe" -eq 0; then
+if test "$isstdoutpipe" -eq 0; then
     output_fp="$(0</dev/null tf txt)"
     CMD="$CMD > $(cmd "$output_fp")"
     
@@ -118,13 +109,17 @@ export NO_DEFAULT_BG=y # This is so any script that uses colorize-build looks be
 
 # I have a wrapper script now, so this will always happen
 if which -a nvim &>/dev/null; then
-    cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+
+    # cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c $(aqf "call GeneralSyntax()") -c $(aqf "call NumberSyntax()") -c $(aqf "normal! i")"
+
+    # For speed, eliminate aqfs
+    cmd="nvim -u $HOME/.nvimrc -c $(aqf "call TermAndQuit($(aqf "$precmd $CMD$postcmd"))") -c \"call GeneralSyntax()\" -c \"call NumberSyntax()\" -c \"normal! i\""
     eval "$cmd"
 else
     eval "$CMD"
 fi
 
-if test "$ispipe" -eq 0; then
+if test "$isstdoutpipe" -eq 0; then
     exec 1>&3
     cat "$output_fp"
     # exit "$?"

@@ -5,6 +5,8 @@ export TTY
 
 # $SCRIPTS/diatheke-list-bibles
 
+. $PENELD/scripts/debug.sh
+
 test -f /usr/bin/diatheke || agi diatheke &>/dev/null
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -18,6 +20,17 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+CMD="$(cmd "$@")"
+
+postprocess() {
+    if printf -- "%s\n" "$CMD" | grep -q -P '(engbsb2020eb|engASV1901eb|ASV)'; then
+        # Fix issue with engbsb2020eb - disable strongs
+        sed 's~<w savlm="strong:[^>]\+>\([^<]\+\)</w>~\1~g'
+    else
+        cat
+    fi
+}
+
 # Does this *really* need caching? It's very fast so I don't think it needs caching
 # ocif in-pen /usr/bin/diatheke "$@"
-in-pen /usr/bin/diatheke "$@"
+in-pen /usr/bin/diatheke "$@" | postprocess

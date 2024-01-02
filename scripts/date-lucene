@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# The %3N is a formatting thing
+# The Z at the end means the date is in UTC
+
+TZ=UTC date "+%Y-%m-%dT%H:%M:%S.%3NZ" "$@"

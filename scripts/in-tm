@@ -1,6 +1,26 @@
 #!/bin/bash
 export TTY
 
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+: "${PEN_TMUX:="$TMUX"}"
+: "${PEN_TMUX:="$(tmux-socket -strict 2>/dev/null)"}"
+export PEN_TMUX="$PEN_TMUX"
+
+fargs=()
 in-tm() {
     while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         "") { shift; }; ;;
@@ -17,19 +37,35 @@ in-tm() {
         }
         ;;
 
+        -2) {
+            # BLACK_AND_WHITE=y
+            fargs+=(-2)
+            shift
+        }
+        ;;
+
         *) break;
     esac; done
 
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    shift "$#"
+
+    if stdin_exists; then
+        input_fp="$(cat | tf txt)"
+        CMD="cat $(cmd-nice "$input_fp") | $CMD"
+    fi
+
     if test "$NOEMACS" = "y"; then
-        set -- env NOEMACS=y "$@"
+        set -- env NOEMACS=y sh -c "$CMD"
     fi
 
     if test "$PEN_NO_TM" = "y"; then
-        "$@"
+        eval "$CMD"
     elif inside-docker-p && inside-tmux-p; then
-        "$@"
+        eval "$CMD"
     elif test "$PEN_USE_GUI" = "y"; then
-        "$@"
+        eval "$CMD"
     else
         if test -n "$detached"; then
             set -- -d "$@"
@@ -39,7 +75,8 @@ in-tm() {
             set -- -n "$session_name" "$@"
         fi
 
-        pen-tm init-or-attach "$@"
+        is_tty && exec <&1
+        pen-tm init-or-attach "${fargs[@]}" "$@" sh -c "$CMD"
     fi
 }
 

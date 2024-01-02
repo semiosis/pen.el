@@ -16,11 +16,11 @@
         (loop for y in l2
               collect (list x y))))
 
-(defun uncdr (l)
+(defun uncdr (lst)
   "Return car with cdr appended"
-  (append (car l) (list (cdr l))))
+  (append (car lst) (list (cdr lst))))
 
-(defun unsnd (l &optional depth)
+(defun unsnd (lst &optional depth)
   "Return car with cdr appended"
 
   (if (or (not depth)
@@ -28,8 +28,8 @@
       (setq depth 1))
 
   (cond
-   ((< 1 depth) (append (unsnd (car l) (- depth 1)) (list (cadr l))))
-   (t (append (car l) (list (cadr l))))))
+   ((< 1 depth) (append (unsnd (car lst) (- depth 1)) (list (cadr lst))))
+   (t (append (car lst) (list (cadr lst))))))
 
 ;; (uncdr '((1 2) . c))
 
@@ -54,7 +54,7 @@
                    ;; (-reduce 'cartesian-product-2 ls)
                    ))))
     (if (< 2 len)
-        (mapcar (λ (l) (unsnd l (- len 2)))
+        (mapcar (λ (lst) (unsnd lst (- len 2)))
                 result)
       result)))
 
@@ -92,8 +92,8 @@ SEQ __is__ modified."
   (if (null v) (cons a nil) (cons (car v) (endcons a (cdr v)))))
 ;; (endcons 'a '(b c d))
 
-(defun -filter-not-empty-string (l)
-  (-filter 'string-not-empty-nor-nil-p l))
+(defun -filter-not-empty-string (lst)
+  (-filter 'string-not-empty-nor-nil-p lst))
 (defalias '-filter-string-not-empty '-filter-not-empty-string)
 
 ;; (-uniq '(("haskell" "DependentTypes" "36bc2cfa-2ffe-4a80-bfb1-26243e220ce4")
@@ -112,7 +112,7 @@ SEQ __is__ modified."
 ;;            ("haskell" "ImpredicativeTypes" "01f5902b-0b1c-4ed1-9719-8068f609ee48")))
 
 ;; https://www.reddit.com/r/emacs/comments/jzcefc/question_keep_only_unique_elements_uniq_u/
-(defun -uniq-u (l &optional testfun)
+(defun -uniq-u (lst &optional testfun)
   "Return a copy of LIST with all non-unique elements removed."
 
   (if (not testfun)
@@ -123,16 +123,39 @@ SEQ __is__ modified."
   (setq testfun (define-hash-table-test 'contents-hash testfun 'sxhash-equal))
 
   (let ((table (make-hash-table :test 'contents-hash)))
-    (cl-loop for string in l do
+    (cl-loop for string in lst do
              (puthash string (1+ (gethash string table 0))
                       table))
     (cl-loop for key being the hash-keys of table
              unless (> (gethash key table) 1)
              collect key)))
 
-(defun -uniq-d (l)
+(defun -uniq-d (lst)
   "Return a copy of LIST with all unique elements removed."
-  (-difference l (-uniq-u l)))
+  (-difference lst (-uniq-u lst)))
 
+;; Make
+(defun -resize-list (lst size-len &optional init)
+  (let* ((len (length lst))
+         (diff (- len min)))
+    (cond ((< diff 0)
+           ;; Add more
+           (-minsize-list lst size-len init))
+          ((> diff 0)
+           ;; remove some
+           (-maxsize-list lst size-len))
+          (t lst))))
+
+(defun -minsize-list (lst min &optional init)
+  (let* ((len (length lst))
+         (diff (- len min)))
+    (if (< diff 0)
+        ;; Add more
+        (append lst (make-list (- diff) init))
+      ;; otherwise return the same list
+      lst)))
+
+(defun -maxsize-list (lst max)
+  (-take max lst))
 
 (provide 'pen-lists)

@@ -1,0 +1,47 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+dir="$1"
+: "${dir:="."}"
+
+if test -n "$dir"; then
+    FULLY_QUALIFIED=y
+fi
+
+: ${dir:="."}
+
+cd "$dir"
+
+exec 3>&2
+exec 2>/dev/null
+
+{
+    # wildcards work
+    # vim +/"\*.circleci" "$NOTES/ws/lists/file-types/doc.txt"
+    if test -f "$NOTES/ws/lists/file-types/doc.txt"; then
+        eval "$(cmd find . -type f) $(cat "$NOTES/ws/lists/file-types/doc.txt" | sed -n "s/.*/-name '&'/ip" | s join ' -or ')"
+    fi
+
+    # Files
+    {
+        # find . -type f -name '.ament_pclint-ignore-headers'
+        find . -type f -name '.emacs'
+    }
+
+    # Files under dir
+    {
+        find . -type f -path '*/doc/*'
+    }
+
+} | remove-prefix "./" | {
+    if test "$FULLY_QUALIFIED" = "y"; then
+        sed "s=^=$dir/="
+    else
+        cat
+    fi
+} | uniqnosort | {
+    exec 2>&3;
+    pa -vs
+}

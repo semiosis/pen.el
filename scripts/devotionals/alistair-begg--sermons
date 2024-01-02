@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+mdp="$PEN/documents/devotionals/alistair-begg-sermons/"
+
+cd "$mdp"
+list_alistair_begg_sermons() {
+    find . -name "clean.txt" | sed -e 's/^\.\///' -e 's/\/.*//'
+}
+
+# TODO Make a preview which shows part of the devotional
+sel="$(list_alistair_begg_sermons | mfz)"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if test -n "$sel"; then
+    sel_fp="$sel/clean.txt"
+
+    if test -f "$sel_fp"; then
+        if is_tty; then
+            v "$sel_fp"
+        else
+            cat "$sel_fp" | pavs
+        fi
+    fi
+fi

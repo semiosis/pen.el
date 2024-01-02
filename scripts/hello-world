@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+echo "Hello World!" | hls red

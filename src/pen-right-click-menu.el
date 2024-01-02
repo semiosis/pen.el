@@ -214,6 +214,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
                   (lax-plist-get (text-properties-at (point)) 'PEN_LM_COMMAND)))
         ("Get value from YAML" :call yaml-get-value-from-this-file :if (major-mode-p 'yaml-mode))
         ("LSP right click menu" :call pen-lsp-mouse-click :if (minor-mode-p lsp-mode))
+        ("ebdb right click menu" :call pen-ebdb-mouse-click :if (major-mode-p 'ebdb-mode))
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
@@ -250,6 +251,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
          ("generate regex for above" :call pf-gpt-j-generate-regex/2))
         ("Press return" :call press-return)
         ("Kill current buffer" :call kill-current-buffer)
+        ("Kill current buffer and window" :call kill-buffer-and-window)
         ("(Accept) Save then kill buffer and emacsclient" :call pen-save-and-kill-buffer-window-and-emacsclient)
         ("(Abort) Revert and kill buffer and emacsclient" :call pen-revert-kill-buffer-and-window)
         ("Context functions" :call show-suggest-funcs-context-menu)))

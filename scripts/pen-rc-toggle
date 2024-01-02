@@ -11,10 +11,13 @@ jkey=".$key"
 
 if pen-rc-test "$key"; then
     pen-rc-set "$key" off
-    exit 1
 else
     pen-rc-set "$key" on
-    exit 0
 fi
+ret="$?"
+
+pen-rc-get "$key" | hls blue 1>&2
+
+exit "$ret"
 
 # test -n "$key" && test "$(pen-rc "$key")" = true

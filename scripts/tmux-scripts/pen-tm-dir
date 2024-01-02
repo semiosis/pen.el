@@ -11,7 +11,7 @@ fi
 paths="directories.*"
 paths="$(shopt -s nullglob; shopt -s extglob; eval lit -s "$paths")" # expand
 if [ -n "$paths" ]; then
-    eval "vim $paths"
+    eval "vs -nad $paths"
 else
     vim directories.txt
 fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+pen-cterm-ssh -ssh-to-host y -ssh -O exit

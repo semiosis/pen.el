@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+: "${UPDATE:="y"}"
+export UPDATE="$UPDATE"
+{
+for url in "https://star.net.nz/the-word-for-today"; do
+    urlarchive "$url" | sha
+done
+} | pavs

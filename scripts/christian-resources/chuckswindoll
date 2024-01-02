@@ -9,7 +9,7 @@ getpage() {
     # meta-date elinks-dump ...
     # echo "$page" 1>&2
     paste \
-        <(elinks-dump "https://www.oneplace.com/ministries/insight-for-living/listen/?page=$page" | sed -e '0,/By Date/d' -e '/Previous Next/,$d' -e '/play-butto/d' | ved -gm IMG "ddA\\<C-v>\\<C-i>\\<C-c>Jj") \
+        <(elinks-dump "https://www.oneplace.com/ministries/insight-for-living/listen/?page=$page" | sed -e '0,/By Date/d' -e '/Previous Next/,$d' -e '/play-butto/d' | ved -g -pat IMG "ddA\\<C-v>\\<C-i>\\<C-c>Jj") \
         <(elinks-dump -orefs "https://www.oneplace.com/ministries/insight-for-living/listen/?page=$page" | sed -e '0,/\/topics\//d' -e '/\/listen\/$/,$d' -e '/\/listen\/?/,$d' | uniqnosort | pavs)
 }
 

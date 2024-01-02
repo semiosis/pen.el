@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# For Pen
+sudo umount $HOME/.pen/host/snippets | :
+sudo umount $HOME/.pen/documents/learn-functions | :
+ufs $MYGIT/semiosis/yas-snippets $HOME/.pen/host/snippets
+ufs $HOME/learn-functions $HOME/.pen/documents/learn-functions

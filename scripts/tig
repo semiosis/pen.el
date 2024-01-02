@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f "/usr/bin/tig" || agi "tig" &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h) {
+        mode=help
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+runhelp() {
+    if is_tty && ! is_stdout_pipe; then
+        bare_repo_for_tig_dp="$TMPDIR/tig"
+        mkdir -p "$bare_repo_for_tig_dp"
+        cd "$bare_repo_for_tig_dp"
+        test -d ".git" || {
+            git init
+            touch README.org
+            git add README.org
+            git commit -m "first"
+        } &>/dev/null
+        x -sh tig -e first -s vh -i
+    else
+        /usr/bin/tig -h "$@"
+        exit "$?"
+    fi
+}
+
+case "$mode" in
+    help) {
+        runhelp
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac
+
+/usr/bin/tig "$@"

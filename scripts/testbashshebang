@@ -1,0 +1,5 @@
+#!/usr/bin/env pen-bash
+export TTY
+
+cmd "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null
+

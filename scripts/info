@@ -1,0 +1,35 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+. $PENEL_DIR/scripts/utils.sh
+
+# agi info
+if ! in-pen-p; then
+    if test "$has_stdout" = y; then
+        ocif in-pen "$sn" "$@" | pavs
+    else
+        in-pen in-tm "$sn" "$@"
+    fi
+    exit "$?"
+fi
+
+: "${bin:="/usr/bin/info"}"
+
+query="$@"
+
+if test "$has_stdout" = y; then
+    "$bin" "$query" -o - | pavs
+elif test "$sn" = binfo; then
+    nvc "$bin" "$query"
+else
+    einfo "$query"
+fi
+# if test -f "$bin"; then
+#     nvc "$bin" "$query"
+# else
+#     einfo "$query"
+# fi

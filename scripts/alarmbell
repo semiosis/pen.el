@@ -12,7 +12,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# (alarm-clock-set "1:34" "Shower and go to Anak")
+# (alarm-clock-set "1:34" "Shower")
 
 # sps vlc -l "$@"
 
@@ -20,11 +20,11 @@ exec 1> >(lolcat -f)
 exec 2> >(lolcat -f)
 
 if test "$once" = "y"; then
-    echo "WAKE UP!!" | toilet
+    echo "WAKE UP!!" | toilet -f 3D-ASCII.flf
     mplayer "$@"
 else
     while :; do
-        echo "WAKE UP!!" | toilet
+        echo "WAKE UP!!" | toilet -f 3D-ASCII.flf
         mplayer "$@"
         sleep 5
     done

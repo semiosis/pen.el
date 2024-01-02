@@ -6,13 +6,16 @@ export TTY
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -l) {
+        shift
         pen-show-alarm-clock-list "$@"
         exit $?
-        shift
     }
     ;;
 
     *) break;
 esac; done
 
+#                          hour min am/pm
+# example 1: pen-alarm-set    8  30 am    # 
+# example 2: pen-alarm-set                # No arguments sets interactively
 pen-alarm-set "$@"

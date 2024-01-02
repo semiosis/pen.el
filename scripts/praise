@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-list_fp="/root/.pen/documents/notes/ws/lists/peniel/praise-songs.txt"
+list_fp="/root/.pen/documents/notes/ws/lists/peniel/praise-songs.org"
 
 sel="$(cat "$list_fp" | awk 1 | fzf | xurls)"
 

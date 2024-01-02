@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+rtcmd_cmd_fp="$TMPDIR/rtcmd-$pid.txt"
+rtcmd_script_fp="$TMPDIR/rtcmd-${pid}-script.txt"
+
+# Deliberately block stdin
+respawn_command="odn cat \"$rtcmd_cmd_fp\" | pen-tm -f -S -tout rsp $(test "$NEOVIM" = "y" && p "-nv") -xargs -pakf -safe -t '$CREATED_PANE_ID'"
+
+# But the vim should write on every change

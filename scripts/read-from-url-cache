@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+                         
+cd /
+
+list_sites() {
+    for dp in \
+        /home/shane/my-url-cache/ \
+        /volumes/home/shane/my-url-cache \
+        $PENCONF/url-cache; do
+
+        test -d "$dp" && (
+            
+            cd "$dp"
+            find "$(pwd)" -type f
+        )
+    done | mnm
+}
+
+dirpath="$(list_sites | fzf)"
+
+test -n "$dirpath" &&

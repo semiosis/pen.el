@@ -2,11 +2,15 @@
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
+export NO_AUTO_START=n
+
 sn="$(basename -- "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     ~/.emacs.d/host/pen.el/scripts/$sn "$@"
     exit "$?"
 fi
+
+/etc/init.d/cron start
 
 # pen-restart-clipboard
 
@@ -56,6 +60,10 @@ fi
 
 if test -d ~/.pen && ! test -f ~/.pen/pen.vim && test -f "$penvim_fp"; then
     cp -a "$penvim_fp" ~/.pen
+fi
+
+if test -f ~/.pen/pen.yaml; then
+    ln -sf ~/.pen/pen.yaml /tmp/pen.yaml
 fi
 
 if test -d ~/.pen/documents/notes; then
@@ -109,6 +117,10 @@ else
     rm -f ~/.config/broot/conf.hjson
 fi
 
+test -f ~/.pen/git/config && ln -sf ~/.pen/git/config ~/.gitconfig
+test -f ~/.pen/git/credentials && ln -sf ~/.pen/git/credentials ~/.git-credentials
+
+
 if [ -f ~/.shellrc ]; then
     . ~/.shellrc
 fi
@@ -129,6 +141,24 @@ fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/tmux.conf; then
     ln -sf $HOME/.emacs.d/host/pen.el/config/tmux.conf $HOME/.tmux.conf
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/screen-2color.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/screen-2color.ti"
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/screen-2color-norev.ti"; then
+    tic "/root/.emacs.d/host/pen.el/config/screen-2color-norev.ti"
+fi
+
+if test -f "/root/.emacs.d/host/pen.el/config/Xresources"; then
+    ln -sf "/root/.emacs.d/host/pen.el/config/Xresources" ~/.Xresourses
+fi
+
+if test -f "$EMACSD/host/pen.el/config/bash/scriptrc"; then
+    ln -sf "$EMACSD/host/pen.el/config/bash/scriptrc" ~/.scriptrc
+elif test -f "$EMACSD/pen.el/config/bash/scriptrc"; then
+    ln -sf "$EMACSD/pen.el/config/bash/scriptrc" ~/.scriptrc
 fi
 
 if test -f $HOME/.emacs.d/host/pen.el/config/efm-langserver-config.yaml && ! test -f $HOME/.config/efm-langserver; then
@@ -317,7 +347,7 @@ fi
 # emacs -nw --debug-init
 
 if ! test -n "$DISPLAY"; then
-    nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
+    /usr/bin/nohup Xvfb :0 -screen 0 1x1x8 &>/dev/null &
 fi
 
 (

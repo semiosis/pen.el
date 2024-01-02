@@ -1,9 +1,22 @@
 #!/bin/bash
 export TTY
 
+mode=by_char
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -s) {
-        WHITESPACE=y
+        mode=whitespace_separation
+        shift
+    }
+    ;;
+
+    -c) {
+        mode=by_char
+        shift
+    }
+    ;;
+
+    -w) {
+        mode=by_word
         shift
     }
     ;;
@@ -11,8 +24,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$WHITESPACE" = "y"; then
+if test "$mode" = "whitespace_separation"; then
     sed -e "s/\(.\)/\1\\\s*/g" -e "s/...$//"
-else
+elif test "$mode" = "by_char"; then
     sed -e "s/\(.\)/\1.*/g" -e "s/..$//"
+elif test "$mode" = "by_word"; then
+    sed -e "s/\( \+\)/\1.*/g"
 fi

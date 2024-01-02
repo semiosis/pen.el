@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+"diatheke" "-b" "system" "-o" "w" "-f" "internal" "-k" "modulelist" | {
+    sed 1d | sed '/:$/,$d' |
+    pavs
+}

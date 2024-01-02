@@ -9,6 +9,12 @@
 (if (not (f-dir-p genhistdir))
     (f-mkdir genhistdir))
 
+(defun pen-rc (&optional key var)
+  (interactive)
+
+  (if (and (not key) (not var))
+      (find-file (f-join penconfdir "pen.yaml"))))
+
 (defun pen-edit-conf ()
   (interactive)
   (find-file (f-join penconfdir "pen.yaml")))

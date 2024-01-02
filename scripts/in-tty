@@ -6,8 +6,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
-is_tty_stderr() { [ -t 2 ] && ! test "$TERM" = "dumb"; }
+. $PENEL_DIR/scripts/utils.sh
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -29,18 +28,29 @@ esac; done
 
 CMD="$(cmd "$@")"
 
-if is_tty; then
-    # echo is tty 1>&2
+# test:
+# nem bible-search disciple | v
+
+if test "$unless_pipe_out" = y && test "$ispipe" = 0; then
+    # echo pipingout | hls red 1>&2
     eval "$CMD"
-# elif is_tty_stderr; then
-#     echo is tty stderr 1>&2
-#     (
-#     exec <&2
-#     exec 1>&2
-#     eval "$CMD"
-#     )
-elif test "$unless_pipe_out" = y && ! is_tty; then
+elif test "$istty" = 0; then
+    # echo is tty | hls red 1>&2
     eval "$CMD"
+elif test "$istty_stderr" = 0; then
+    # echo is tty stderr | hls red 1>&2
+    if test "$hasstdin" = 0; then
+        (
+        exec 1>&2
+        eval "$CMD"
+        )
+    else
+        (
+        exec <&2
+        exec 1>&2
+        eval "$CMD"
+        )
+    fi
 else
     # echo tpop 1>&2
     tpop -E "$CMD"

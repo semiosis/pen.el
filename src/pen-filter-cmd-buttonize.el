@@ -60,7 +60,7 @@
 (defun filter-cmd-button-pressed (button)
   "When I press a filtercmd button, it should run the button's function"
   (let* (
-         ;; (term (button-get-text button))
+         ;; (term (pen-button-get-text button))
          (term (button-get button 'term))
          (runfunc (button-get button 'runfunc))
          (start (button-start button))
@@ -79,7 +79,7 @@
           (if selected-button
               (progn
                 (setq button selected-button)
-                ;; (setq term (button-get-text button))
+                ;; (setq term (pen-button-get-text button))
                 (setq term (button-get button 'term))
                 (setq runfunc (button-get button 'runfunc))
                 (setq start (button-start button))

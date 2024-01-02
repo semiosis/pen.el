@@ -239,6 +239,9 @@ perl -00 -e 'print reverse <>'                                                  
 perl -0777 -ne 'print "$.: doubled $_\n" while /\b(\w+)\b\s+\b\1\b/gi'              # look for duplicated words in a line
 fold -w 80 -s                                                                       # wrap lines to 80 characters
 wrap 80                                                                             # joins all text and then wraps
+wrap
+fit
+trunc
 strip-html-tags.py
 tr '\n' '\0'                                                                        # replace newline with NUL
 awk 1                                                                               # ensure newline. opposite of chomp

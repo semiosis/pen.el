@@ -6,6 +6,7 @@
 ;; (require 'pen-troubleshooting)
 (require 'pen-aliases)
 (require 'pen-fuzzy-lists)
+(require 'pen-auto-highlight-symbol)
 
 (defun lispy-gy-emacs-vim-link (arg)
   (interactive "P")
@@ -512,7 +513,6 @@ The result is a string."
   (interactive)
   (format-sexp-at-point "cljfmt"))
 
-(require 'auto-highlight-symbol)
 (defun without-ahs-around-advice (proc &rest args)
   (let ((ahs_status global-auto-highlight-symbol-mode))
     (if ahs_status

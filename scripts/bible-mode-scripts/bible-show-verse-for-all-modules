@@ -1,0 +1,43 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+getverses() {
+    verse_ref="$@"
+
+    {
+    echo "$verse_ref" | udl
+    diatheke-list-modules | awk 1 | sed 's/ : /,/' | while IFS=$'\n' read -r line; do
+    (
+        exec 0</dev/null
+        module="$(p "$line" | cut -d , -f 1)"
+        module_name="$(p "$line" | cut -d , -f 2)"
+        verse="$(bible-show-verses -nsm -m "$module" "$verse_ref")"
+        verse_passage="$(p "$verse" | sed 's/.*: //' | tr '\n' ' ')"
+        if test -n "$verse_passage"; then
+            echo "$module_name : $verse_passage"
+        fi
+    )
+    done
+    } | pavs
+}
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -fn) {
+        shift
+        "$@" | pavs
+        exit "$?"
+    }
+    ;;
+
+    *) {
+        # by default rerun the script and call getverses function, and cache the results
+        ocif "$sn" -fn getverses "$@" | pavs
+        exit "$?"
+    }
+    ;;
+esac; done

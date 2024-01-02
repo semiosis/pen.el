@@ -201,7 +201,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -p|-pcmd) {
+    -pcmd) {
         preview="fzf-scope -n $lines"
         shift
     }
@@ -228,6 +228,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -t) {
         preview_opts="up:30%"
+        shift
+    }
+    ;;
+
+    -po) {
+        preview_opts="$2"
+        shift
         shift
     }
     ;;

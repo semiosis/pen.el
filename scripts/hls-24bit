@@ -1,0 +1,49 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# echo hello | hls-24bit lblue dgrey
+# ocif pen-e-ic -sn list-colors-display-24bit | cat
+
+fg_code="38;2"
+bg_code="48;2"
+
+fg="$1"
+bg="$2"
+
+getcol() {
+    col="$1"
+    shift
+    case "$col" in
+        dgrey) { col="28;28;28"; } ;;
+        lgrey) { col="64;64;64"; } ;;
+        lblue) { col="85;85;255"; } ;;
+    esac
+
+    printf -- "%s" "$col"
+}
+
+if test -n "$bg"; then
+    bg="$(getcol "$bg")"
+    printf -- "%s" "[${bg_code};${bg}m"
+fi
+
+if test -n "$fg"; then
+    fg="$(getcol "$fg")"
+    printf -- "%s" "[${fg_code};${fg}m"
+fi
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    cat
+fi

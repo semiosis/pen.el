@@ -287,10 +287,18 @@ case "$vc_opt" in
                 fi
 
                 # Test if git first
-                git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local | {
-                    sed 's=/home/shane/=/root/=' |
-                    sed 's=/root/var/smulliga/=/home/shane/var/smulliga/='
-                } || pwd
+                wd="$(
+                    git rev-parse --show-toplevel 2>/dev/null | pen-convert-path-to-local | {
+                        sed 's=/home/shane/=/root/=' |
+                        sed 's=/root/var/smulliga/=/home/shane/var/smulliga/='
+                    } || pwd
+                )"
+
+                if test -n "$wd"; then
+                    printf -- "%s\n" "$wd"
+                else
+                    pwd
+                fi
 
                 exit $?
             }
@@ -459,13 +467,23 @@ HEREDOC
 
     *) {
         # Do some pen-vc detection here
-        if git status &>/dev/null; then
-            $0 g "$vc_opt" "$@"
-            exit "$?"
-        else
+        if ! git status &>/dev/null; then
+            (
+            set -xv
             git status
-            exit "$?"
+            )
         fi
+
+        $0 g "$vc_opt" "$@"
+        exit "$?"
+
+        # if git status &>/dev/null; then
+        #     $0 g "$vc_opt" "$@"
+        #     exit "$?"
+        # else
+        #     git status
+        #     exit "$?"
+        # fi
     }
 
 esac

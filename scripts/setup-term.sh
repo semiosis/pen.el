@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 
 # This script is sourced
@@ -20,6 +20,9 @@ export TERM=screen-256color
 export LANGUAGE=en_US:en
 export LC_ALL=en_US.UTF-8
 
+test -d ~/.config && : ${XDG_CONFIG_HOME:=~/.config}
+export XDG_CONFIG_HOME="$XDG_CONFIG_HOME"
+
 # This fixes an issue where you only have one or the other
 : "${TMUX:="$PEN_TMUX"}"
 : "${PEN_TMUX:="$TMUX"}"
@@ -36,6 +39,8 @@ unset EMACSD
 test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
+
+export PENELD="$EMACSD/pen.el"
 
 unset VIMCONFIG
 test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
@@ -73,7 +78,7 @@ export LD_LIBRARY_PATH=/root/libwebsockets/build/lib:$LD_LIBRARY_PATH
 export EDITOR=sps-w-pin
 # export BROWSER=sps-lg
 export BROWSER=browser
-# export PAGER="sps -maybe v"
+# export PAGER="sps -iftty v"
 export PAGER="pen-tpager"
 
 [ -f "/root/.ghcup/env" ] && . "/root/.ghcup/env" # ghcup-env

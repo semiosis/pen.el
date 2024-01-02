@@ -5,6 +5,42 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -srcp|-srcprofile) {
+        do_profile=y
+        shift
+    }
+    ;;
+
+    -2) {
+        do_screen_2color=y
+        shift
+    }
+    ;;
+
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+fargs=()
+
+if test "$do_profile" = "y"; then
+    fargs+=(source-profile)
+fi
+
+if test "$do_screen_2color" = "y"; then
+    fargs+=(screen-2color)
+fi
+
+fargs+=("$sn" "$@")
+
 # This will use the host git to run git commands, if ssh to host is available
 
 if ! test -n "$SSH_HOST_ALLOWED" && pen-rc-test host-ssh-master; then
@@ -28,7 +64,7 @@ export USE_PROFILE
 export SSH_EXPORTS="GIT_PAGER=pen-pager"
 case "$(pwd)" in
     *) {
-        pen-ssh-host "$sn" "$@"
+        pen-ssh-host "${fargs[@]}"
     }
     ;;
 esac

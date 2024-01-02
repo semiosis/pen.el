@@ -69,17 +69,17 @@ case "$opt" in
     s|status) {
         # Magit doesn't work very well with emacs24 and spacemacs.
         # pen-e sd
-        # pen-e c -e "(progn (magit-status)( delete-other-windows ))"
+        # pen-e --runclient -e "(progn (magit-status)( delete-other-windows ))"
 
         # But I'm using emacs26 now
         # pen-e -fs magit sd
-        # pen-e -fs magit c -e "(progn (magit-status)( delete-other-windows ))"
+        # pen-e -fs magit --runclient -e "(progn (magit-status)( delete-other-windows ))"
 
         # pen-e sd
         # sp sd
         # pc sd
-        # pen-e c -e "(progn (magit-status)( delete-other-windows ))"
-        # pd c -e "(progn (magit-status)( delete-other-windows ))"
+        # pen-e --runclient -e "(progn (magit-status)( delete-other-windows ))"
+        # pd --runclient -e "(progn (magit-status)( delete-other-windows ))"
 
         if pen-vc g is-repo; then
             export SOCKET=

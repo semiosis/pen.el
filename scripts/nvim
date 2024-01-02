@@ -3,6 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# Test the speed of nvim:
+# nvim -u $HOME/.nvimrc -c "call TermAndQuit(\"bash\")" -c "call GeneralSyntax()" -c "call NumberSyntax()" -c "normal! i"
+
 # neovim is horrible -- never use it
 # You can't even do ":!vi ~/.vimrc"
 # It doesn't have a tty for ! commands.

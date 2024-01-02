@@ -1,0 +1,55 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -srcp|-srcprofile) {
+        do_profile=y
+        shift
+    }
+    ;;
+
+    -2) {
+        do_screen_2color=y
+        shift
+    }
+    ;;
+
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+case "$sn" in
+    nmtui) {
+        do_profile=y
+    }
+    ;;
+
+    *)
+esac
+
+CMD="$(cmd-nice "$@")"
+
+if printf -- "%s\n" "$sn" | grep -q -P -- '-host$'; then
+    sn="$(printf -- "%s" "$sn" | sed 's/-host$//')"
+
+    CMD="$(printf -- "%s" "$CMD" | sed 's=/volumes/home/=/home/=')"
+fi
+
+# sth host-script -sn "$sn" "$@"
+
+if test "$do_profile" = "y"; then
+    eval "sth host-script -srcp -sn $sn $CMD"
+else
+    eval "sth host-script -sn $sn $CMD"
+fi

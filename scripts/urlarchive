@@ -29,8 +29,8 @@ test -n "$url" || exit 1
 
 {
 if url-needs-chrome "$url"; then
-    oci -nd -m "$date" elinks-dump-chrome "$url"
+    oci -f -nd -m "$date" noci elinks-dump-chrome "$url"
 else
-    oci -nd -m "$date" elinks-dump "$url"
+    oci -f -nd -m "$date" noci elinks-dump "$url"
 fi
 } | pavs

@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# /usr/bin/notmuch "$@"
+
+opt="$1"
+case "$opt" in
+    show|search) {
+        do_pagify=y
+    }
+    ;;
+
+    *)
+esac
+
+if test "$do_pagify" = "y"; then
+    spin -t /usr/local/bin/notmuch "$@" | pavs
+else
+    spin -t /usr/local/bin/notmuch "$@"
+fi

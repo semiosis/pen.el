@@ -1,10 +1,14 @@
 #!/bin/bash
 export TTY
 
+# default_bible_version=NASB
+default_bible_version=RLT
+
+# export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
@@ -21,11 +25,32 @@ if ! test -n "$BORDER"; then
     fi
 fi
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
-istty="$?"
+. $PENEL_DIR/scripts/utils.sh
 
-is_stdout_pipe() { [[ -p /dev/stdout ]]; }
-isstdoutpipe="$?"
+# if test "$isstdoutpipe" = 0 && ! test "$NO_CI" = y  && ! test "$INSIDE_CI" = y; then
+#     ocif "$sn" "$@"
+#     exit "$?"
+# fi
+
+ebible_pager() {
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        -s) {
+            slug="$2"
+            shift
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    if test -n "$slug"; then
+        pa -E "tf -sha -X $slug txt | xa colvs -nls -num"
+    else
+        pa -E "tf txt | xa colvs -nls -num"
+    fi
+}
 
 if { ! test "$istty" = 0; } && { ! test "$isstdoutpipe" = 0; }; then
     # e.g. (pen-snc "1John")
@@ -38,6 +63,10 @@ if ! inside-docker-p && docker-running-p; then
     # Or this on host would not work: Romans 3:21-26 | cat
     if test "$istty" = 0 && { ! test "$isstdoutpipe" = 0; }; then
         in-pen in-tm "$sn" "$@"
+    # elif test "$istty" = 0 && test "$isstdoutpipe" = 0; then
+        # in-pen in-tm "$sn" "$@"
+    elif test "$istty" = 0 && test "$NOEMACS" = y; then
+        ocif -nd in-pen "$sn" "$@" | ebible_pager
     else
         ocif -nd in-pen "$sn" "$@"
     fi
@@ -47,12 +76,12 @@ fi
 
 if test "$FAST" = "y"; then
     if test "$sn" = ebible; then
-        module=NASB
+        module="$default_bible_version"
     fi
-    : "${module:="NASB"}"
+    : "${module:="$default_bible_version"}"
 else
     module="$(0</dev/null ocif -nd canonicalise-bible-module "$sn")"
-    : "${module:="NASB"}"
+    : "${module:="$default_bible_version"}"
 fi
 
 format=plain
@@ -176,6 +205,7 @@ ref="$CMD"
 if ! test "$FAST" = "y"; then
     ref="$(echo "$ref" | cif canonicalise-bible-ref)"
 fi
+# echo "$ref" | hls red 1>&2
 
 : "${maybemod:="$(printf -- "%s\n" "$ref" | sed -n '/(.*)/s/.*(\([^)]\+\)).*/\1/p')"}"
 if test -n "$maybemod"; then
@@ -194,54 +224,88 @@ if test "$CONCORDANCE" = "all"; then
     strongs_cmd="strongs-get-word -f"
 fi
 
+iforcat() {
+    fargs=()
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        --) {
+            shift
+            break;
+        }
+        ;;
+
+        *) {
+            fargs+=("$1")
+            shift
+        }
+        ;;
+    esac; done
+
+    if "${fargs[@]}"; then
+        "$@"
+    else
+        cat
+    fi
+}
+
+export -f iforcat
+
 IFS= read -r -d '' pipeline <<'HEREDOC'
     {
-    if test "$FAST" = "y"; then
-        echo "$ref" | udl
-    else
-        echo "$ref" | openbible-canonicalise-ref | udl
-    fi
-    {
-    in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref" | sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d' |
-        if test "$CONCORDANCE" = "y" || test "$CONCORDANCE" = "all"; then
-            sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g' |
-            sed 's/<[^>]*>//g' |
-            patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; $strongs_cmd | tr '[:lower:]' '[:upper:]'" |
-            sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g'
+        if test "$FAST" = "y"; then
+            echo "$ref" | udl
         else
-            cat
+            echo "$ref" | openbible-canonicalise-ref | udl
         fi
+        {
+            0</dev/null in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref"
+        } | {
+            # TODO Make it so here I can have the verse numbers inline and not actually remove the verse refereces
+            # But I also want them to actually be formatted into the margin / border
+            # sed 's/^.* \([0-9]\+:[0-9]\+\): */\1 /'
+            cat
+        } | { 
+            # Remove the verse references from the start of each line
+            sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d'
+        } | {
+            # Using patm is quite slow.
+            # ebible -cac Revelation 22 | cat
+            # ebible -c Revelation 22 | cat
+            # Consider a faster solution.
+            # Running diatheke many times for the strongs definitions is quite slow.
+            # Maybe reformat the strongs codes too.
+            if test "$CONCORDANCE" = "y" || test "$CONCORDANCE" = "all"; then
+                sed -e 's/<w savlm="strong:\([^"]*\)">\([^<]*\)<\/w>/\2 \1/g' -e 's/\bstrong://g' |
+                sed 's/<[^>]*>//g' |
+                patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; $strongs_cmd | tr '[:lower:]' '[:upper:]'" |
+                sed 's/\( ✓\)\+\([^(]\)/\2/g' | sed 's/✓//g'
+            else
+                cat
+            fi
+        } | {
+            iforcat test "$USE_TTP" = "y" -- ttp
+        } | {
+            sed '$s/\( *\)\(([^)]\+)\)$/\n\n\n\2/' | doublespacemax
+        }
     } | {
-        if test "$USE_TTP" = "y"; then
-            ttp
-        else
-            cat
-        fi
-    }
-    } | sed '$s/\( *\)\(([^)]\+)\)$/\n\n\n\2/' | doublespacemax | {
-        if test "$BORDER" = "y"; then
-            sed 's/^/| /'
-        else
-            cat
-        fi
+        iforcat test "$BORDER" = "y" -- sed 's/^/| /'
     }
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
 HEREDOC
 
 # TODO Cache this pipeline
 # I can also cache pipelines with the new pipe utility pipexec (for certain cases, anyway)
-if is_tty && ! test "$NOEMACS" = y; then
+if test "$istty" = 0 && ! test "$NOEMACS" = y; then
     if test "$1"; then
         sp -cip bible-open =nil =nil "$module" "$ref"
     else
         sp -cip bible-open =nil =nil "$module"
     fi
-else
+else 
     assignments="$(printf -- "%s\n" "$pipeline" | getvars -eval-pp)"
     assignments="$(eval "$assignments" | s join " ")"
     export -f doublespacemax
     output="$(ocif -nd bash -c "$assignments $pipeline")"
     slug="$(printf -- "%s\n" "$output" | head -n 1 | slugify)"
-    printf -- "%s\n" "$output" | pa -E "tf -sha -X $slug txt | xa colvs -nls -num"
+    printf -- "%s\n" "$output" | ebible_pager -s "$slug"
     # printf -- "%s\n" "$output" | pavs
 fi

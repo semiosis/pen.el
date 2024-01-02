@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+"diatheke" "-b" "NASB" "-o" "w" "-f" "plain" "-k" "Romans 1" |
+    sed 's/^\(.*\)\([0-9]\+\):\([0-9]\+\): /\3 /' | pavs

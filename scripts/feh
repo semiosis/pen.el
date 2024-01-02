@@ -1,0 +1,54 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    --myadjust) {
+        adjust=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# Convert svg
+test "$#" -gt 0 && last_arg="${@: -1}"
+if test -f "$last_arg" && pl "$last_arg" | grep -q -P '\.svg$'; then
+    newpath="$(svg2png "$last_arg")"
+    if test -f "$newpath"; then
+        test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+        set -- "$@" "$newpath"
+    fi
+fi
+
+set -m
+
+if test "$adjust" = "y"; then
+{
+for i in `seq -w 1 20`; do
+    # use mathematica to solve the geometric sequence
+    # a20 = 0.1*r^100
+    # Solve[a20 == 10, r]
+
+    sleep "$(echo "0.1 * 1.27427^($i - 1)"|bc -l)"
+    xdotool search --name "feh" windowsize 0 0
+    if test -n "$(xdotool search --name "feh")"; then
+        xdotool key "Meta_L+h"
+        xdotool key "Meta_L+l"
+        break
+    fi
+done
+} &
+fi
+
+/usr/bin/feh -Z -x -B white --scale-down "$@"
+
+# /usr/bin/feh "$@"
+
+# /usr/bin/feh "$@"
+
+# Sometimmse I use --fill-bg etc, so can't do this without checks
+# /usr/bin/feh -f - -x -B white -. -ps --zoom max -- "$@"

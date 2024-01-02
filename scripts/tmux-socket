@@ -1,0 +1,56 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -strict|-iff) {
+        # Only return if the terminal tty matches one of tmux's ttys
+        mode=strict
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+case "$mode" in
+    strict) {
+        # Abort if the current tty is not found.
+        TTY="$(tty)"
+        test -n "$TTY" && tmux list-panes -a -F "#{pane_tty}" | grep -q $TTY || {
+            echo "tty doesn't belong to tmux" | hls red 1>&2
+            exit 1
+        }
+    }
+    ;;
+
+    *)
+esac
+
+if test -n "$TMUX"; then
+    if test "$#" -gt 0; then
+        export TMUX="$TMUX"
+        "$@"
+    else
+        echo "$TMUX"
+    fi
+    exit "$?"
+fi
+
+: "${socket:="$(tmux-list-sockets | grep -P "/default$")"}"
+: "${socket:="$(tmux-list-sockets | fzf -nv)"}"
+unknown=1
+
+test -n "$socket" || exit 1
+: "${pid:="$(TMUX= bash -c "tmux -S $socket display-message -p '#{pid}'")"}"
+
+TMUX="${socket},${pid},${unknown}"
+
+if test "$#" -gt 0; then
+    export TMUX="${socket},${pid},${unknown}"
+    "$@"
+else
+    echo "$TMUX"
+fi

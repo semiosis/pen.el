@@ -1,6 +1,13 @@
 #!/bin/bash
 export TTY
 
+if ! test "$INSIDE_NEOVIM" = y; then
+    sn="$(basename -- "$0")"
+
+    nvc "$sn" "$@"
+    exit "$?"
+fi
+
 ff_stdin="$1"
 ff_stdout="$2"
 

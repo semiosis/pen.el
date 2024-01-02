@@ -249,7 +249,9 @@ if test -n "$display_time"; then
 fi
 
 if test "$(tm_getvar session_name)" = "popup"; then
-    tmux detach-client
+    # Detaching isn't actually good behaviour. Just ignore it.
+    # tmux detach-client
+    exit 1
 else
     # This speeds it up if the status needs to be hidden in advance of appearing
     tmux has-session -t popup 2>/dev/null || tmux new -d -s popup env "CALLER_TMUX_SESSION=$CALLER_TMUX_SESSION" \

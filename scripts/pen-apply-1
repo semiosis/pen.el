@@ -4,7 +4,36 @@ export TTY
 
 # apply
 
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+stdin_exists
+hasstdin="$?"
+
+# . $PENEL_DIR/scripts/utils.sh
+
+if test "$hasstdin" = 0; then
+    IFS='' read -d '' -r input
+fi
+
 f="$1"
 shift
 
-"$@" | eval "$f"
+for (( i = 1; i <= $#; i++ )); do
+    eval ARG=\${$i}
+
+    # # obscure case, but here is an example
+    # echo hi | pen-apply -1 v -num -nc
+    if test "$hasstdin" = 0; then
+        printf -- "%s" "$input" | "$f" "$ARG"
+    else
+        ARG="$(cmd "$ARG")"
+        eval "$f $ARG"
+    fi
+done

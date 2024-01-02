@@ -1,15 +1,10 @@
 #!/bin/bash
 export TTY
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
+. $PENELD/scripts/utils.sh
+
+# Test its speed
+# nonvc slmenu
 
 # Don't detach by default because most of the time I will open a TUI
 # : "${detach:="y"}"
@@ -28,12 +23,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -i|-initial-input) {
+        initial_input="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 exec 3>&0
 
-if ! stdin_exists; then
+if ! stdin_exists 2>/dev/null; then
     exec < <(list-executables|awk 1|uniqnosort)
 fi
 
@@ -44,11 +46,11 @@ fi
 result="$(
     if test "$LINES" -gt "5" || ! command -v slmenu; then
         if test "$#" -eq 0; then
-            set -- -q "'" "$@"
+            set -- -q "'${initial_input}" "$@"
         fi
-        nvc pen-fzf "$@" | cat
+        pen-fzf "$@" | cat
     else
-        nvc /usr/local/bin/slmenu $LINES "$@"
+        /usr/local/bin/slmenu $LINES "$@"
     fi
 )"
 

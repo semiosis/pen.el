@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+cd $PENCONF/documents/agenda
+pen-scrape-r " :[^ ]+:" "*.org" | sed -e 's/^ *//' -e 's/^://' -e 's/:$//' -e 's/:/\n/g' | uniqnosort | pavs

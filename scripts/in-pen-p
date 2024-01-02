@@ -1,0 +1,3 @@
+#!/bin/sh
+
+inside-docker-p && { test -n "$PEN_USER" || test -f ~/pen_user.txt; }

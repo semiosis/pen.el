@@ -1,0 +1,64 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# From this script I need to export the entire 'local' environment
+# export $(compgen -A variable | tr -s '\n' ' ')
+
+. $PENELD/scripts/utils.sh
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -j) {
+        join=y
+        shift
+    }
+    ;;
+
+    -f) {
+        force=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+for var in "$@"
+do
+    eval "export $var"
+done
+
+# It is set
+# echo "DEBUG=$DEBUG"
+# But it does not export
+# export DEBUG
+# Unless I set it - this is STRANGE bash behaviour
+# export DEBUG=y
+
+for var in "$@"
+do
+    if test "$force" = y && ! varexists "$var"; then
+        eval "export ${var}="
+    fi
+done
+
+jq_code="$(
+for var in "$@"
+do
+    if varexists "$var"; then
+        echo "\"$var\":( env.$var // empty ),"
+    elif test "$force" = y; then
+        echo "\"$var\":( env.$var // empty ),"
+    fi
+done
+)"
+
+jq -ne "{ $jq_code }" | sed -e 1d -e 's/^ *"\([^"]\+\)": /\1=/' -e 's/,$//' -e '$d' | {
+    if test "$join" = "y"; then
+        tr -s '\n' ' '
+    else
+        cat
+    fi
+} | pavs

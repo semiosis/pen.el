@@ -1,0 +1,56 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+query="$1"
+
+: ${query:="$(rl pen-readln "Search tmux panes PCRE")"}
+
+# I actually probably only need to search each window, not each pane
+
+findings="$(
+tm-lsp.sh | while read line; do
+    pane_id="$( printf -- "%s\n" "$line" | s field 2; )"
+    pane_contents="$( p "$pane_id" | xargs -l -I{} tm cat {}; )"
+
+    if p "$pane_contents" | grep -q -P "$query" &>/dev/null; then
+        # text found in tmux pane
+        echo -n -e "$line\t"
+        # p "$pane_contents" | tr -s '\n' ' ' | grep -P "$query" | chomp
+        p "$pane_contents" | grep -P "$query" | chomp | tr -s '\n' ' '
+        echo
+    fi
+
+    # eipct -E "xap $(aqf "xargs -l cat | is-dos")"
+done
+)"
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+filter_results() {
+    # cat
+    # grep -v -P "\t\\+ :" |
+    grep -v -P "\tSearch tmux panes"
+}
+
+extract_tmux_ref() {
+    sed -e 's/[^	]\+[	]\+//' -e 's/	.*//'
+}
+
+results="$(printf -- "%s\n" "$findings" | filter_results)"
+
+test -n "$results" || { pak -m "No results"; exit 1; }
+
+if is_tty; then
+    sel="$(printf -- "%s\n" "$results" | fzf | extract_tmux_ref)"
+    if test -n "$sel"; then
+        tm sel "$sel"
+    else
+        echo "$sel" | xc -n
+    fi
+else
+    printf -- "%s\n" "$results"
+fi
+
+exit 0

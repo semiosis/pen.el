@@ -106,9 +106,11 @@ START and END can be in either order."
   (if (not dir)
       (setq dir (cwd)))
   (if (not cmd)
-      (setq cmd (tmuxify-cmd "zsh"))
-    ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
-    )
+      (progn
+        (setq cmd "zsh")
+        (setq cmd (tmuxify-cmd cmd dir))
+        ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
+        ))
   (pen-e-sph (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
 
 ;; (defalias 'sph-term 'pen-e-sph-zsh)
@@ -120,11 +122,14 @@ START and END can be in either order."
   (if (not dir)
       (setq dir (cwd)))
   (if (not cmd)
-      (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\""))
-  (pen-e-spv (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir))))
-
-;; (defalias 'term-spv 'pen-e-spv-zsh)
-;; (defalias 'tspv 'pen-e-spv-zsh)
+      (progn
+        (setq cmd "zsh")
+        (setq cmd (tmuxify-cmd cmd dir))
+        ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
+        ))
+  (if (>= (prefix-numeric-value current-prefix-arg) 8)
+      (pen-e-spv (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir)))
+    (pen-sps cmd)))
 
 (defun pen-e-sps-zsh (&optional cmd dir)
   (interactive)
@@ -134,11 +139,16 @@ START and END can be in either order."
       (progn
         ;; (setq cmd (concat "TMUX= tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
         (setq cmd "zsh")
-        (setq cmd (tmuxify-cmd cmd dir cmd))))
+        (setq cmd (tmuxify-cmd cmd dir))
+        ;; (setq cmd "TMUX= tmux new -n zsh \"CWD= zsh\"")
+        ))
   ;; This resorts to =e=
   (if (>= (prefix-numeric-value current-prefix-arg) 8)
       (pen-e-sps (pen-lm (pen-term-nsfa cmd nil "zsh" nil nil dir)))
     (pen-sps cmd)))
+
+;; (defalias 'term-spv 'pen-e-spv-zsh)
+;; (defalias 'tspv 'pen-e-spv-zsh)
 (defalias 'term-sps 'pen-e-sps-zsh)
 (defalias 'tsps 'pen-e-sps-zsh)
 
@@ -176,7 +186,7 @@ START and END can be in either order."
       (progn
         ;; (setq cmd (concat "TMUX= tmux new -c " (pen-q dir) " -n zsh \"CWD= zsh\""))
         (setq cmd "zsh")
-        (setq cmd (tmuxify-cmd cmd dir cmd))))
+        (setq cmd (tmuxify-cmd cmd dir))))
   (if (not (sor window-type))
       (setq window-type "nw"))
   (cond
@@ -217,10 +227,12 @@ START and END can be in either order."
                         " &"))
               input dir)
     (if input
-        (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input dir)
+        (if (display-graphic-p)
+            (pen-e-nw-zsh (concat (cmd "cat" (tf "stdin" input "txt")) "|" (cmd "tmwr" "-E" (concat "nem " cmd))) window-type dir)
+          (pen-sn (concat "pen-tm -export '" pen-tm-extra-exports "' -tout -S " window-type " " nw_args " " (pen-q cmd)) input dir))
       (if (display-graphic-p)
           ;; (pen-e-nw-zsh cmd window-type (xtv dir))
-          (pen-e-nw-zsh (cmd "tmwr" "-E" cmd) window-type dir)
+          (pen-e-nw-zsh (cmd "tmwr" "-E" (concat "nem " cmd)) window-type dir)
         (progn
           (if (and (variable-p 'pen-sh-update)
                    (eval 'pen-sh-update))
@@ -349,13 +361,47 @@ START and END can be in either order."
           (setq c (concat c "| cat")))
       (pen-sn c stdin dir nil (not output_b)))))
 
-(defun tm-cursor-pos-client ()
-  (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-client-pos -tp"))))
+(defun tm-cursor-pos-client (&optional offset_x offset_y)
+  (let ((pos (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-client-pos -tp")))))
+    (if offset_x
+        (setcar pos
+                (+
+                 (car pos)
+                 offset_x)))
+    (if offset_y
+        (setcdr pos
+                (list
+                 (+
+                  (car (cdr pos))
+                  offset_y))))
+    pos))
+
+(defun tm-cursor-pos-pane (&optional offset_x offset_y)
+  (let ((pos (mapcar 'string-to-number (s-split "," (pen-snc "tm-get-pane-pos -tp")))))
+    (if offset_x
+        (setcar pos
+                (+
+                 (car pos)
+                 offset_x)))
+    (if offset_y
+        (setcdr pos
+                (list
+                 (+
+                  (car (cdr pos))
+                  offset_y))))
+    pos))
+
+(defun get-pos-for-x-popup-menu ()
+  (if (display-graphic-p)
+      ;; This is more accurate for the GUI:
+      `(mouse-3 ,(posn-at-point))
+    ;; This is more accurate for the terminal:
+    `(,(tm-cursor-pos-pane 1 1) ,(get-buffer-window))))
 
 (defun tmux-cursor-x (&optional echo)
   (tryelse
    (let ((y
-          (car (tm-cursor-pos-client))))
+           (car (tm-cursor-pos-client))))
      (if echo
          (message (str y)))
      y)
@@ -364,7 +410,7 @@ START and END can be in either order."
 (defun tmux-cursor-y (&optional echo)
   (tryelse
    (let ((y
-          (car (cdr (tm-cursor-pos-client)))))
+           (car (cdr (tm-cursor-pos-client)))))
      (if echo
          (message (str y)))
      y)
@@ -523,7 +569,7 @@ START and END can be in either order."
   "
 
   (if (display-graphic-p)
-      (xt shcmd)
+      (xt shcmd stdin)
     ;; (pen-eterm (pen-nsfa shcmd)
     ;;          ;; stdin dir noborder output_b
     ;;              )

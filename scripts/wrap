@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+: "${COLUMNS:="$1"}"
+: "${COLUMNS:="80"}"
+
+if test -n "$1"; then
+    COLUMNS="$1"
+fi
+
+pen-wrap ${COLUMNS}

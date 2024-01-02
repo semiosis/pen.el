@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# man tmux | v +/TMUX_TMPDIR
+# TMUX= TMUX_TMPDIR=/tmp/tm bash -c "mkdir \$TMUX_TMPDIR; tmux"
+
+: "${TMUX_TMPDIR:="/tmp"}"
+
+# : "${TMUX_TMPDIR:="$TMPDIR"}"
+
+find $TMUX_TMPDIR/tmux-* -type s | pavs

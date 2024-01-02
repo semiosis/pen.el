@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+{
+for dn in $PENCONF/org-brain/*; do
+    if test -d "$dn"; then
+        dnbn="$(basename -- "$dn")"
+        (
+        cd "$dn"
+        find . -name '*.org' -type f | awk 1 | sed -e 's/^\.\///' -e 's~\.org$~~' | while IFS=$'\n' read -r line; do
+            (
+                exec 0</dev/null
+                echo "$line"
+                grep -P "^\\*" "${line}.org" | 
+                    sed -e 's/^\** //' -e \
+                    's/^\(TODO\|DONE\) //' -e \
+                    's/^\(\[#.*\]\) //' | sed "s~^~$line::~"
+            )
+        done
+        ) | sed "s/^/$dnbn\\//"
+    fi
+done
+} | pavs

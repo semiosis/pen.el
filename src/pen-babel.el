@@ -459,4 +459,15 @@ block."
       (org-copy-src-block)
     (self-insert-command 1)))
 
+(defun org-babel-template-gen (text &optional interp org-NAME)
+  (interactive (list (pen-selection) "text"))
+
+  ;; If it's interactive and text is selected, then use that text.
+  ;; Otherwise, just use what is provided
+  
+  (pen-snc (cmd "pen-org-template-gen"
+                interp
+                org-NAME)
+           text))
+
 (provide 'pen-babel)

@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# ocrmypdf                      # it's a scriptable command line program
+#    -l eng+fra                 # it supports multiple languages
+#    --rotate-pages             # it can fix pages that are misrotated
+#    --deskew                   # it can deskew crooked PDFs!
+#    --title "My PDF"           # it can change output metadata
+#    --jobs 4                   # it uses multiple cores by default
+#    --output-type pdfa         # it produces PDF/A by default
+#    input_scanned.pdf          # takes PDF input (or images)
+#    output_searchable.pdf      # produces validated PDF output
+
+test -f "/usr/bin/ocrmypdf" || agi "ocrmypdf" &>/dev/null
+
+/usr/bin/ocrmypdf "$@"

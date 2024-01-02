@@ -3,4 +3,57 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-unicode-to-ascii | /usr/bin/toilet "$@"
+. $PENELD/scripts/utils.sh
+
+cd ~/repos/figlet-fonts
+
+if test "$#" -eq 0; then
+    if ! test "$istty_stderr" = 0; then
+        tpop -E "figlet | cat" | cat
+        exit "$?"
+    fi
+
+    if ! stdin_exists; then
+        exec < <(readln input)
+    fi
+
+    input="$(cat)"
+
+    font="$(0</dev/null ls | nonvc mfz -P -po "up:80%" -pscript "echo $(aqf-nice "$input") | /usr/bin/figlet -f {} | lolcat -f ")"
+
+    # TODO Make it so the font is previewed in fzf
+
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    finalcmd="printf -- \"%s\" $(aqf "$input") | figlet -t -f \"$font\" $CMD"
+
+
+    if test "$isstdoutpipe" = 0; then
+        eval "$finalcmd" | cat
+    else
+        printf -- "%s\n" "$finalcmd" | xc -n | vimcat 1>&2
+        eval "$finalcmd" | lolcat 1>&2
+    fi
+
+    exit "$?"
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h) {
+        do_help=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$do_help" = "y"; then
+    /usr/bin/figlet -h | pavs
+
+    exit "$?"
+fi
+
+unicode-to-ascii | /usr/bin/figlet "$@"

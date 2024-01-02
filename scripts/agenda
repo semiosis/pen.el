@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+: "${dir:="$HOME/.pen/documents/agenda"}"
+mkdir -p "$dir"
+
+cd "$dir"
+test -f "agenda.org" && : "${fn:="agenda.org"}"
+: "${fn:="default.org"}"
+
+touch "$fn"
+
+# cat "$fn"
+
+# pen-e "$dir/$fn"
+
+# pen-e -ic view-agenda
+pen-e -ic org-super-agenda-run
+
+# stdout make it write
+# pen-e -ic view-agenda +e "(write-to-file (buffer-string) \"/tmp/pen-e-stdout.txt\")(delete-frame)"

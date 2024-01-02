@@ -4,13 +4,23 @@ export TTY
 # Remember:
 # $EMACSD/host/pen.el/scripts/container/man /usr/local/lib/python3.7/dist-packages/visidata/man/vd.1
 
+. $PENELD/scripts/utils.sh
+
 IFS= read -r -d '' shcode <<'HEREDOC'
-/usr/bin/man bash-builtins | sed -e '0,/SYNOPSIS/d' -e '/^$/,$d' | sed -e 's/^\s\+//' -e 's/, */\n/g' | sed '/^$/d' | sed '1s/.*: //' | sed -z 's/‐\n//g' | sed '$s/\.$//'
+/usr/bin/man bash-builtins |
+    sed -e '0,/SYNOPSIS/d' -e '/^$/,$d' |
+    sed -e 's/^\s\+//' -e 's/, */\n/g' |
+    sed '/^$/d' |
+    sed '1s/.*: //' |
+    sed -z 's/‐\n//g' |
+    sed '$s/\.$//' |
+    grep -vP "^(kill)$"
 HEREDOC
 
-# builtins_list="$(printf -- "%s\n" "$shcode" | ci -f -nd myeval)"
+# builtins_list="$(pf -- "%s\n" "$shcode" | ci -f -nd myeval)"
 # I need to fix stdin caching
-builtins_list="$(printf -- "%s\n" "$shcode" | myeval)"
+builtins_list="$(pf -- "%s\n" "$shcode" | myeval)"
+signals_list="$(/bin/kill -l | tr -s ' ' '\n')"
 
 CMD="$(cmd "$@")"
 export GY_CMD="man $CMD"
@@ -24,9 +34,7 @@ if pl "$caller_tree" | grep -q -P 'pvd'; then
     exit "$?"
 fi
 
-is_tty() { [ -t 1 ]; }
-
-if [ -z "$COLUMNS" ] && is_tty; then
+if [ -z "$COLUMNS" ] && test "$istty" = 0; then
     eval `resize`
 fi
 
@@ -37,7 +45,7 @@ fi
 export COLUMNS
 export MANWIDTH="$COLUMNS"
 
-if is_tty; then
+if test "$istty" = 0; then
     export PAGER=v
 else
     export PAGER=sps-v
@@ -47,9 +55,25 @@ if test "$#" -gt 0; then
     last_arg="${@: -1}"
 
     case "$last_arg" in
+        pipexec) {
+            # /usr/bin/man -l doc/man/pipexec.1 | pen-strip-ansi | v
+            (
+             cd $MYGIT/flonatel/pipexec
+            /usr/bin/man -l doc/man/pipexec.1
+            ) | v -ft man
+            exit "$?"
+        }
+        ;;
+
         hdc) {
             x -sh hdc -e '>' -s :help -c m -i
             exit "$?"
+        }
+        ;;
+
+        figlet) {
+            shift
+            set -- toilet "$@"
         }
         ;;
 
@@ -64,8 +88,9 @@ if test "$#" -gt 0; then
     esac
 
     last_arg="${@: -1}"
+    # String length of the last argument
     len=${#last_arg}
-    builtin_match="$(printf "%s\n" -- "$builtins_list" | grep -F "$last_arg" | grep -P "^$(0</dev/null rps "$len" .)$")"
+    builtin_match="$(pl -- "$builtins_list" | grep -F "$last_arg" | grep -P "^$(0</dev/null rps "$len" .)$")"
 
     if test "$builtin_match" = "["; then
         builtin_match=test
@@ -74,6 +99,15 @@ if test "$#" -gt 0; then
     if test -n "$builtin_match"; then
         vimcmd="vs +/$(cmd-nice "$builtin_match") -ft man"
         eval "/usr/bin/man bash-builtins 2>&1 | $vimcmd"
+        exit "$?"
+    fi
+
+    maybe_signame="$(pl "$last_arg" | sed 's/^SIG//')"
+    len=${#maybe_signame}
+    signals_match="$(pl -- "$signals_list" | grep -F "$maybe_signame" | grep -P "^$(0</dev/null rps "$len" .)$")"
+    if test -n "$signals_match"; then
+        vimcmd="vs +/$(cmd-nice "$signals_match") -ft man"
+        eval "man 7 signal 2>&1 | $vimcmd"
         exit "$?"
     fi
 fi

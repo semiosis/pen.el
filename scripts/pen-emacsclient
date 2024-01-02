@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# Because, otherwise, I may get this issue:
+# Boostrapping emacs worker test... /usr/local/bin/emacsclient: Invalid permissions on parent directory of socket: /root/.pen/tmp/emacs0/test
+export TMPDIR=/tmp
+
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # env | xt -d v
@@ -13,5 +17,8 @@ term_env_arr=()
 if pen-rc-test truecolor; then
     term_env_arr=(env COLORTERM=truecolor TERM="xterm-24bit" EMACS_TERM_TYPE="xterm-24bit")
 fi
+
+# cmd "${term_env_arr[@]}" /usr/local/bin/emacsclient "$@" | tv &>/dev/null
+# cmd "${term_env_arr[@]}" /usr/local/bin/emacsclient "$@" 1>&2
 
 "${term_env_arr[@]}" /usr/local/bin/emacsclient "$@"

@@ -1,9 +1,14 @@
 #!/bin/bash
 export TTY
 
+# set -xv
+
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+sn="$(basename -- "$0")"
+
 # ed -- improved. uses real vim
+# edm / ved
 
 tf_temp="$(ux tf temp || echo /dev/null)"
 trap "rm \"$tf_temp\" 2>/dev/null" 0
@@ -21,6 +26,7 @@ read -r -d '' shell_cmd <<HEREDOC
 unbuffer vim -c 'set noswapfile' \\
     -c "e! $tf_temp" \\
 $(
+pattern=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -n) {
         printf -- "%s\n" "    -c $(aqfd ":norm! $2") \\"
@@ -29,12 +35,45 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -gm) {
+    -p|-pat) {
         pattern="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -gp) {
+        pattern="$2"
+        : "${pattern:="^"}"
+
         macro="$3"
 
         printf -- "%s\n" "    -c $(aqfd "g/$pattern/exe \"$(printf -- "%s" ":norm $macro" | sed 's/\\s/\\&/' | esc '"' | sed 's/\\\\</\\</g')\"") \\" | ds lastvimmacro
         shift
+        shift
+        shift
+    }
+    ;;
+
+    -g|-gm) {
+        shift
+
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -p|-pat) {
+                pattern="$2"
+                shift
+                shift
+            }
+            ;;
+
+            *) break;
+        esac; done
+        : "${pattern:="^"}"
+
+        macro="$1"
+
+        printf -- "%s\n" "    -c $(aqfd "g/$pattern/exe \"$(printf -- "%s" ":norm $macro" | sed 's/\\s/\\&/' | esc '"' | sed 's/\\\\</\\</g')\"") \\" | ds lastvimmacro
         shift
         shift
     }
@@ -97,7 +136,7 @@ HEREDOC
 
 shell_cmd="$(printf -- "%s" "$shell_cmd" | esc '`')"
 
-printf -- "%s\n" "$shell_cmd" | ds last-edm &>/dev/null
+printf -- "%s\n" "$shell_cmd" | ds "last-$sn" &>/dev/null
 
 eval "$shell_cmd"
 
@@ -105,4 +144,4 @@ eval "$shell_cmd"
 # vim -c "e! $tf_temp" -c "$macro" -c w
 
 # vim -c "e! $tf_temp" -c "$macro" -c w -c q
-cat "$tf_temp"
+cat "$tf_temp" | pavs

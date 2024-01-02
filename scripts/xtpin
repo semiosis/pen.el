@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# xt pin "$@"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -2) {
+        BLACK_AND_WHITE=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$BLACK_AND_WHITE" = "y"; then
+    unbuffer in-pen xt -2 -xt in-tm -2 pin
+else
+    unbuffer in-pen xt -xt pin tmux attach -t localhost
+fi

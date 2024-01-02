@@ -2,7 +2,7 @@
   "Return the current time formatted to include microseconds."
   (let* ((nowtime (current-time))
          (now-ms (nth 2 nowtime)))
-    (concat (format-time-string "[%Y-%m-%dT%T" nowtime) (format ".%d]" now-ms))))
+    (concat (format-time-string "[%Y-%m-%dT%T" nowtime) (format ".%06d]" now-ms))))
 
 (defun pen-ad-timestamp-message (FORMAT-STRING &rest args)
   "Advice to run before `message' that prepends a timestamp to each message.
@@ -21,5 +21,11 @@ Activate this advice with:
           (insert (pen-current-time-microseconds) " "))))))
 
 (advice-add 'message :before 'pen-ad-timestamp-message)
+
+(defun pen-clear-message ()
+  (interactive)
+  (message nil))
+
+(global-set-key (kbd "C-c c") 'pen-clear-message)
 
 (provide 'pen-messages)

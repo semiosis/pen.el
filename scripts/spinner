@@ -3,10 +3,19 @@ export TTY
 
 # exec 2>/dev/null
 
+# . $PENELD/scripts/utils.sh
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -fn) {
         runfn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -m) {
+        message="$2"
         shift
         shift
     }
@@ -26,6 +35,7 @@ fi
 
 rainbow=y
 bluebg=y
+paused=n
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -b) {
@@ -45,6 +55,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -nobgb) {
         bluebg=
+        shift
+    }
+    ;;
+
+    -x|-xpl) {
+        explanation="$2"
+        shift
         shift
     }
     ;;
@@ -76,8 +93,12 @@ esac; done
 # for i in $(seq 1 314); do echo "$message"; done | lolcat -f
 
 tput civis
-message="$@"
-: "${message:="» Loading »»»»»»»»»"}"
+: "${message:="$@"}"
+: "${message:="Loading"}"
+
+# : "${message:="» Loading »»»»»»»»»"}"
+
+message="» $message »»»»»»»»»"
 
 IFS= read -r -d '' script <<'HEREDOC'
 for i in $(seq 314 -1 1); do
@@ -109,21 +130,12 @@ else
     clear_sequence="[H[J"
 fi
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
-
 awk 1 <<HEREDOC > /dev/shm/spinnervars.txt
 bluebg="$bluebg"
 rainbow="$rainbow"
 big="$big"
 message="$message"
+explanation="$explanation"
 HEREDOC
 
 run() {
@@ -194,6 +206,14 @@ read_char() {
     stty icanon echo
 }
 
+# pause_job() {
+#     kill -STOP "$jobid" 2>/dev/null
+# }
+# 
+# resume_job() {
+#     kill -CONT "$jobid" 2>/dev/null
+# }
+
 reload_job() {
     # The 'Main subprocess' is not quit, but its children are
     # Before the 'Main subprocess' discovers its child processes have ended, trigger it to start a new job
@@ -240,6 +260,8 @@ while read_char; do
         g) { togglevar bluebg; reload_job; } ;;
         b) { togglevar big; reload_job; } ;;
         r) { togglevar rainbow; reload_job; } ;;
+
+        # p) { pause_job || resume_job; } ;;
 
         *) {
             endr -INT "$pid" 2>/dev/null

@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+locale="$@"
+if printf -- "%s\n" "$locale" | grep -q -P '_'; then
+    locale="en_${locale}"
+fi
+
+locales_dir="/usr/share/i18n/locales"
+locales_fn="$(ls "$locales_dir" | head -n 1)"

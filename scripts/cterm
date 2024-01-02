@@ -27,17 +27,17 @@ sn="$(basename "$0")"
 
 cterm-logo 1>&2
 
-{
-echo -n Running
-echo -n " $(cmd-nice-posix "$@") " | hls red
-echo in cterm
-} 1>&2
-
 : "${USE_TMUX:="y"}"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
         DO_EXEC=y
+        shift
+    }
+    ;;
+
+    -ct-nem) {
+        CT_NOEMACS=y
         shift
     }
     ;;
@@ -85,6 +85,12 @@ if test "$DO_EXEC" = "y"; then
 else
     CMD="$(cmd-nice-posix "$@")"
 fi
+
+{
+echo -n Running
+echo -n " $CMD " | hls red
+echo in cterm
+} 1>&2
 
 case "$CMD" in
     zsh|"\"zsh"\"|vd*) {
@@ -156,14 +162,22 @@ fi
 
 # This runs in the docker to the host
 # The "$@" are unneccesary because of CMD exported
-cterm-docker \
-    -bufname "$bufname" \
-    -e "$extra_elisp" \
-    pen-cterm-ssh \
+
+remote_cmd=(pen-cterm-ssh \
     -ssh-to-host "$SSH_TO_HOST" \
     -cwd "$CWD" \
     -cmd "$CMD" \
-    -user "$PEN_USER"
+    -user "$PEN_USER")
 
     # -user "$PEN_USER" \
     # "$@"
+
+if test "$CT_NOEMACS" = "y"; then
+    "${remote_cmd[@]}"
+else
+    cterm-docker \
+        -bufname "$bufname" \
+        -e "$extra_elisp" \
+        "${remote_cmd[@]}"
+fi
+

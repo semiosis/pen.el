@@ -37,6 +37,9 @@ test -n "$PEN_LM_COMMAND" || {
     exit 1
 }
 
+# Force human promptee
+PEN_LM_COMMAND=human-complete.sh
+
 test -n "$ALSO_EXPORT" && {
     eval "export $ALSO_EXPORT"
 }

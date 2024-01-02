@@ -89,7 +89,8 @@ point determined by `mouse-select-region-move-to-beginning'."
                'double-down-mouse-1)
            (not mark-active))
        (pen-mouse-set-point event promote-to-region))
-   (pen-mouse-set-point event promote-to-region)))
+   (pen-mouse-set-point event promote-to-region)
+   t))
 
 (defun right-click-context-click-menu (_event)
   "Open Right Click Context menu by Mouse Click `EVENT'."
@@ -124,5 +125,23 @@ point determined by `mouse-select-region-move-to-beginning'."
 (define-key global-map (kbd "<left-margin> <mouse-movement>") 'ignore)
 ;; lsp breadcrumbs, for example
 (define-key global-map (kbd "<header-line> <mouse-movement>") 'ignore)
+
+(defun cua-scroll-up-2 ()
+  (interactive)
+  (cua-scroll-up 2))
+
+(defun cua-scroll-down-2 ()
+  (interactive)
+  (cua-scroll-down 2))
+
+;; For the GUI
+(progn
+  (define-key global-map (kbd "<wheel-down>") 'cua-scroll-up-2)
+  (define-key global-map (kbd "<double-wheel-down>") 'cua-scroll-up-2)
+  (define-key global-map (kbd "<triple-wheel-down>") 'cua-scroll-up-2)
+
+  (define-key global-map (kbd "<wheel-up>") 'cua-scroll-down-2)
+  (define-key global-map (kbd "<double-wheel-up>") 'cua-scroll-down-2)
+  (define-key global-map (kbd "<triple-wheel-up>") 'cua-scroll-down-2))
 
 (provide 'pen-mouse)

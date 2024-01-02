@@ -73,5 +73,8 @@ mkdir -p $NOTES/programs/rlwrap/history
 touch "$hf"
 touch "$cf"
 
+# Specifying `--break-chars ""` means that words are split by whitespace only
+# /root/.emacs.d/host/pen.el/scripts/ed
+
 # cmd1 /usr/bin/rlwrap -a -H "$hf" -f "$cf" "$@" 1>&2
-/usr/bin/rlwrap -n -a -s 1000 -H "$hf" -f "$cf" "$@"
+/usr/bin/rlwrap --break-chars "" -n -a -s 1000 -H "$hf" -f "$cf" "$@"

@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+iforcat() {
+    fargs=()
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        --) {
+            shift
+            break;
+        }
+        ;;
+
+        *) {
+            fargs+=("$1")
+            shift
+        }
+        ;;
+    esac; done
+
+    if "${fargs[@]}"; then
+        "$@"
+    else
+        cat
+    fi
+}
+
+iforcat "$@"

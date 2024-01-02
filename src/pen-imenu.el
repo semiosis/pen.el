@@ -195,6 +195,13 @@
 	          (imenu--truncate-items (cdr item))))
 	      (helm-imenu-filter-correct-candidates menulist)))
 
+(defun agenda-imenu ()
+  (interactive)
+
+  (let* ((imenu-create-index-function
+          (eval `(λ () (ace-link--org-agenda-collect ,(point-min) ,(point-max))))))
+    (helm-imenu)))
+
 (defun pen-helm-imenu ()
   (interactive)
   (cond
@@ -202,7 +209,8 @@
     (call-interactively 'helm-imenu))
    ;; (eq major-mode 'text-mode)
    ((eq major-mode 'help-mode) (call-interactively 'pen-button-imenu))
-   ((eq major-mode 'org-brain-visualize-mode) (call-interactively 'button-imenu))
+   ((eq major-mode 'org-agenda-mode) (call-interactively 'agenda-imenu))
+   ((eq major-mode 'org-brain-visualize-mode) (call-interactively 'pen-button-imenu))
    ((derived-mode-p 'Info-mode)
     (if (>= (prefix-numeric-value current-prefix-arg) 4)
         (try (call-interactively 'info-buttons-imenu)
@@ -279,23 +287,62 @@
 
 (defun ace-link--info-current ()
   "Return the node at point."
-  (cons
-   (s-replace-regexp
-    "\s+" " "
-    (s-replace-regexp
-     "\n" " "
-     (s-replace-regexp
-      "\s+" " "
-      
-      (cl-letf (((symbol-function #'Info-goto-node)
-                 (λ (node _) node))
-                (browse-url-browser-function
-                 (λ (url &rest _) url)))
-        (Info-try-follow-nearest-node)))))
-   
-   (point)))
+  (let* ((sym (symbol-at-point))
+         (node-text (if sym (sym2str sym)))
+         (ref-text (if (not sym) (regex-at-point "[^ ]+")))
+         (node-title
+          (save-excursion
+            (cl-letf (((symbol-function #'Info-goto-node)
+                       (λ (node _) node))
+                      (browse-url-browser-function
+                       (λ (url &rest _) url)))
+              (Info-try-follow-nearest-node))))
+         (node-title
+          (if (stringp node-title)
+              (s-replace-regexp
+               "\s+" " "
+               (s-replace-regexp
+                "\n" " "
+                (s-replace-regexp
+                 "\s+" " "
+                 node-title)))
+            node-title)))
+
+    (cons
+     (cond ((and
+             (booleanp node-title)
+             node-title)
+            (or node-text
+                ref-text))
+           ((stringp node-title)
+            node-title)
+           ((not node-title)
+            ref-text)
+           (t
+            "?"))
+
+     (point))))
 
 (defun info-collect-imenu (&optional min max)
+  "Collect the positions of visible links in the current `Info-mode' buffer."
+  (setq min (or min (point-min)))
+  (setq max (or max (point-max)))
+
+  (let ((end max)
+        points)
+    (save-excursion
+      (goto-char min)
+      (when (ignore-errors (Info-next-reference) t)
+        (push (ace-link--info-current) points)
+        (Info-next-reference)
+        (while (and (< (point) end)
+                    (> (point) (cdar points)))
+          (push (ace-link--info-current) points)
+          (Info-next-reference))
+        (nreverse points)))))
+
+;; font-lock-function-name-face
+(defun prog-syntax-font-lock-collect-imenu (&optional min max)
   "Collect the positions of visible links in the current `Info-mode' buffer."
   (setq min (or min (point-min)))
   (setq max (or max (point-max)))

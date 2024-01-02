@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+in-tty x -sh cli-chess \
+    -e Online \
+    -down \
+    -e Create \
+    -right \
+    -down \
+    -down \
+    -e Top \
+    -right \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -down \
+    -f1 \
+    -i

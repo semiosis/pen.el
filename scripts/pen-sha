@@ -13,8 +13,23 @@ stdin_exists() {
     } &>/dev/null
 }
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -f) {
+        fp="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 {
-if stdin_exists; then
+if test -f "$fp"; then
+    # cmd sha256sum "$fp" 1>&2
+    sha256sum "$fp" | str field 1
+elif stdin_exists; then
     sha256sum | str field 1
 else
     echo -n "$@" | sha256sum | str field 1

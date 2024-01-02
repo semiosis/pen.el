@@ -191,3 +191,23 @@
 ;; To generate examples, I would need to force-generate prompts
 
 ;; (iassert 55 add-5-to-x 50)
+
+
+(defun test-brain-stdout ()
+  (interactive)
+  (progn
+    (message
+     (str (frame-terminal)))
+    (pen-switch-to-buffer-for-pen-e
+     (pen-org-brain-switch-brain "agenda"))
+    (ignore-errors (recenter-top-bottom))
+    ;; (get-buffer-create "*scratch*")
+    (write-to-file
+     (buffer-string)
+     "/tmp/pen-e-stdout.txt")
+    ;; (delete-frame)
+    ))
+
+(defun testbrain-stdout ()
+  (interactive)
+  (pen-switch-to-buffer-for-pen-e (pen-org-brain-switch-brain "agenda")))

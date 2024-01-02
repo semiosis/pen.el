@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+video_id="$1"
+# 9bZkp7q19f0
+key="$(myrc-get youtube_key)"
+
+test -n "$video_id" || exit 1
+test -n "$key" || exit 1
+
+ocif -nd curl -s "https://www.googleapis.com/youtube/v3/videos?id=${video_id}&part=contentDetails&key=${key}"

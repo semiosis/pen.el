@@ -3803,3 +3803,80 @@ snippet bin
 	test -f "${1:path}" && : "${bin:="$1"}"
 snippet fc
 	IFS= read -rd '' file_contents < <(cat);typeset -p file_contents &>/dev/null
+snippet hdci
+	# $PENEL_DIR/scripts/show-vim-mappings
+	IFS= read -r -d '' shcode <<HEREDOC
+	echo hi
+	HEREDOC
+	
+	printf -- "%s\n" "\$shcode" | ci myeval | pavs
+snippet fargs
+	fargs=()
+	while [ \$# -gt 0 ]; do opt="\$1"; case "\$opt" in
+	    "") { shift; }; ;;
+	    -n) {
+	        fargs+=("\$1" "\$2")
+	        shift
+	        shift
+	    }
+	    ;;
+	
+	    -*|--[a-z]*) {
+	        fargs+=("\$1")
+	        shift
+	    }
+	    ;;
+	
+	    *) break;
+	esac; done
+	
+	ebible -m "\$version" "\${fargs[@]}" "\$ref"
+snippet cachepipeline
+	doublespacemax () {
+	    sed 's/\\s\\+\$//' | sed ':a;N;\$!ba;s/\\n\\n\\+/\\n\\n/g'
+	}
+	
+	IFS= read -r -d '' pipeline <<'HEREDOC'
+	    {
+	    if test "\$FAST" = "y"; then
+	        echo "\$ref" | udl
+	    else
+	        echo "\$ref" | openbible-canonicalise-ref | udl
+	    fi
+	    {
+	    in-pen "diatheke" "-b" "\$module" "-o" "w" "-f" "\$format" "-k" "\$ref" | sed 's/^.* [0-9]\\+:[0-9]\\+: *//' | pen-s remove-trailing-whitespace | sed '/^\$/d' |
+	        if test "\$CONCORDANCE" = "y" || test "\$CONCORDANCE" = "all"; then
+	            sed -e 's/<w savlm="strong:\\([^"]*\\)">\\([^<]*\\)<\\/w>/\\2 \\1/g' -e 's/\\bstrong://g' |
+	            sed 's/<[^>]*>//g' |
+	            patm -r "[HG][0-9]+[a-z]?" "echo -n ✓; \$strongs_cmd | tr '[:lower:]' '[:upper:]'" |
+	            sed 's/\\( ✓\\)\\+\\([^(]\\)/\\2/g' | sed 's/✓//g'
+	        else
+	            cat
+	        fi
+	    } | {
+	        if test "\$USE_TTP" = "y"; then
+	            ttp
+	        else
+	            cat
+	        fi
+	    }
+	    } | sed '\$s/\\( *\\)\\(([^)]\\+)\\)\$/\\n\\n\\n\\2/' | doublespacemax | {
+	        if test "\$BORDER" = "y"; then
+	            sed 's/^/| /'
+	        else
+	            cat
+	        fi
+	    }
+	HEREDOC
+	
+	assignments="\$(printf -- "%s\\n" "\$pipeline" | getvars -eval-pp)"
+	assignments="\$(eval "\$assignments" | s join " ")"
+	export -f doublespacemax
+	output="\$(ocif -nd bash -c "\$assignments \$pipeline")"
+# snippet shx
+# 	# Sadly, the tabs don't work in vim's snippet engine
+# 	export PS4='+	"$(basename $0)"	${LINENO}	 '
+# 	set -xv
+snippet shx
+	eval 'echo -e -n "export PS4=\\"+\\t\\\\\\"$(basename \$0)\\\\\\"\\t${LINENO}\\t\\""'
+	set -xv

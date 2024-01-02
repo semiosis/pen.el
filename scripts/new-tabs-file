@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+tabs_dir=$HOME/notes/ws/tabs
+mkdir -p "$tabs_dir"
+cd "$tabs_dir"
+
+vim `date +%d.%m.%y`.txt

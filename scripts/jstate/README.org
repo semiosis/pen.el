@@ -1,0 +1,8 @@
+* jstate
+
+A very simple database system
+
+- Useful for ad-hoc state
+- Useful for displaying status screens
+
+e: $PENCONF/jstate

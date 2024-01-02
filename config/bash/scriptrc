@@ -1,0 +1,6 @@
+# . $PENELD/scripts/utils.sh
+
+(
+unset BASH_ENV
+( echo "${BASH_SOURCE[0]}:" "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) | vimcat | cat 1>&2
+)

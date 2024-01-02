@@ -26,10 +26,14 @@
   (interactive)
   (cond
    ((derived-mode-p 'org-brain-visualize-mode)
-    (org-brain-pf-topic))
+    (get-path nil t))
+   ((derived-mode-p 'bible-mode)
+    (get-path nil t))
    ((pen-is-glossary-file (get-path nil t))
     (pen-get-glossary-topic (get-path nil t)))
-   (t (pen-detect-language))))
+   (buffer-file-name (get-path nil t))
+   (t
+    (pen-detect-language))))
 
 (defun get-temp-fp ()
   "Create a temp file with appropriate extension, but don't assign to the current buffer"
@@ -80,6 +84,33 @@
          nil)))
 (defalias 'full-path 'buffer-file-path)
 
+(defmacro with-writable-buffer (&rest body)
+  ""
+  `(let ((ro buffer-read-only))
+     (setq buffer-read-only nil)
+     ,@body
+     (setq buffer-read-only ro)))
+
+(defmacro with-buffer-region-beg-end (&rest body)
+  ""
+  `(let ((beg (point-min))
+         (end (point-max)))
+     ,@body))
+
+(defun region-erase-trailing-whitespace (beg end)
+  (interactive "r")
+
+  (with-writable-buffer
+   (save-excursion
+     (goto-char beg)
+
+     (while (re-search-forward "\s$" end t)
+       (delete-horizontal-space)))))
+
+(defun buffer-erase-trailing-whitespace ()
+  (interactive)
+  (region-erase-trailing-whitespace (point-min) (point-max)))
+
 ;; This is usually used programmatically to get a single path name
 (defun get-path (&optional soft no-create-path for-clipboard semantic-path keep-buffer-name)
   "Get path for buffer. semantic-path means a path suitable for google/nl searching"
@@ -94,9 +125,17 @@
     ;; (xc-m (f-realpath (buffer-file-name)))
     (let ((path
            (or (and (eq major-mode 'Info-mode)
+                    ;;
                     (if soft
-                        (concat "(" (basename Info-current-file) ") " Info-current-node)
+                        (progn
+                          (Info-copy-current-node-name)
+                          ;; (concat "(" (basename Info-current-file) ") " Info-current-node)
+                          )
                       (concat Info-current-file ".info")))
+
+               (and (or (major-mode-enabled 'notmuch-show-mode)
+                        (major-mode-enabled 'notmuch-search-mode))
+                    (org-get-link))
 
                (and (major-mode-enabled 'eww-mode)
                     (s-replace-regexp "^file:\/\/" ""
@@ -104,8 +143,23 @@
                                        (or (eww-current-url)
                                            eww-followed-link))))
 
+               (and (major-mode-enabled 'bible-mode)
+                    (concat
+                     (ignore-errors
+                       (bible-mode-get-book-and-chapter))
+
+                     ;; I need to have different highlights for different
+                     ;; Bible reading modes
+                     (cond (bible-mode-fast-enabled
+                            " (FM)")
+                           (bible-mode-word-study-enabled
+                            " (WS)"))))
+
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
+
+               (and (major-mode-enabled 'Custom-mode)
+                    (custom-get-path))
 
                (and (major-mode-enabled 'w3m-mode)
                     w3m-current-url)
@@ -505,8 +559,8 @@ single-character strings, or a string of characters."
       (pen-sn "penx" nil nil nil t)
     (error "Display not available")))
 
-(defun xterm (cmd)
-  (pen-sn (concat "xt in-pen in-tm " cmd) nil nil nil t))
+(defun xterm (cmd &optional stdin)
+  (pen-sn (concat "xt in-pen in-tm " cmd) stdin nil nil t))
 (defalias 'xt 'xterm)
 (defalias 'pen-xt 'xterm)
 
@@ -584,6 +638,9 @@ single-character strings, or a string of characters."
 Write straight bash within elisp syntax (it looks like emacs-lisp)"
   `(pen-sn (e-cmd ,@body)))
 
+(if (inside-docker-p)
+    (defalias 'b 'pen-b))
+
 (defmacro echo (&rest body)
   `(pen-b echo ,@body))
 
@@ -627,12 +684,13 @@ Write straight bash within elisp syntax (it looks like emacs-lisp)"
 
   ;; Kill the process and bury the buffer
   ;; Use bury buffer
-  
+
   (if buffer-name
       (switch-to-buffer buffer-name))
   (set-buffer-modified-p nil)
 
   (cond
+   ((major-mode-p 'crossword-mode) (call-interactively 'crossword-quit))
    ((major-mode-p 'ranger-mode) (ranger-close))
    (t (let ((win (selected-window))
             (isterm (major-mode-p 'term-mode)))
@@ -1071,7 +1129,10 @@ non-nil."
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-backward))
    ((string= (current-major-mode) "circe-query-mode") (call-interactively 'lui-previous-input))
    ((string= (current-major-mode) "subed-mode") (call-interactively 'subed-prev))
+   ((string= (current-major-mode) "term-mode") (call-interactively 'term-send-raw-meta))
    ((string= (current-major-mode) "lsp-browser-mode") (call-interactively 'widget-backward))
+   ((string= (current-major-mode) "ebdb-mode") (call-interactively 'ebdb-prev-record))
+   ((string= (current-major-mode) "prolog-inferior-mode") (call-interactively 'comint-previous-input))
    ((string= (current-major-mode) "cider-repl-mode") (call-interactively 'cider-repl-previous-input))
    ((string= (current-major-mode) "hackernews-mode") (call-interactively 'hackernews-previous-item))
    ((string= (current-major-mode) "moccur-grep-mode") (call-interactively 'moccur-prev))
@@ -1140,9 +1201,13 @@ non-nil."
    ((string= (current-major-mode) "org-mode") (call-interactively 'org-forward-heading-same-level))
    ((string= (current-major-mode) "epa-key-list-mode") (call-interactively 'widget-forward))
    ((string= (current-major-mode) "lsp-browser-mode") (call-interactively 'widget-forward))
+   ((string= (current-major-mode) "ebdb-mode") (call-interactively 'ebdb-next-record))
    ((string= (current-major-mode) "circe-query-mode") (call-interactively 'lui-next-input))
+   ((string= (current-major-mode) "term-mode") (call-interactively 'term-send-raw-meta))
    ((string= (current-major-mode) "hackernews-mode") (call-interactively 'hackernews-next-item))
    ((string= (current-major-mode) "cider-repl-mode") (call-interactively 'cider-repl-next-input))
+   ((string= (current-major-mode) "prolog-inferior-mode") (call-interactively 'comint-next-input))
+
    ((string= (current-major-mode) "subed-mode") (call-interactively 'subed-next))
    ((string= (current-major-mode) "moccur-grep-mode") (call-interactively 'moccur-next))
    ((string= (current-major-mode) "sx-question-mode") (call-interactively 'sx-question-mode-next-section))
@@ -1260,13 +1325,13 @@ non-nil."
             (call-interactively fun)
           (execute-kbd-macro (kbd "C-m")))))))
 
-
 (defun current-line-string ()
   (thing-at-point 'line t))
 
-(defun urls-in-region-or-buffer (&optional s)
+(defun urls-in-region-or-buffer (&optional s consider-textprops)
   (let ((mediastring
          (cond
+          (consider-textprops (pen-textprops-in-region-or-buffer))
           ((major-mode-p 'eww-mode) (pen-textprops-in-region-or-buffer))
           (t (selection-or-buffer-string)))))
     (sh/ptw/uniqnosort (sh/ptw/xurls mediastring))))
@@ -1340,5 +1405,60 @@ non-nil."
   `(let ((current-prefix-arg nil)
          (current-global-prefix-arg nil))
      ,@body))
+
+(defun flush-blank-lines (start end)
+  (interactive "r")
+  (flush-lines "^\\s-*$" start end nil))
+
+(defun collapse-blank-lines (start end)
+  (interactive "r")
+  (replace-regexp "^\n\\{2,\\}" "\n" nil start end))
+
+;; (keywordp :i)
+(defmacro id (&rest body)
+  ""
+  (let ((newbody)
+        (ignore-next))
+    (cl-loop for e in body
+             do
+             (progn
+               (if (and (not ignore-next)
+                        (not (eq :i e)))
+                   (setq newbody (cons e newbody)))
+               (setq ignore-next (eq :i e))))
+    (setq newbody (reverse newbody))
+    `(progn ,@newbody)))
+(defalias 'pn 'id)
+
+;; the following should equal 9
+(comment
+ (pn :i 7 9)
+ (id (message "yo") :i 7 (list 9) :i 10))
+;; id is a (progn) where arguments with :i are ignored
+
+(defmacro progn-continue-failures (&rest body)
+  "Like progn, but the code continues even if one step fails"
+  (let ((failable-sexps
+         (cl-loop for e in body
+                  collect
+                  `(try ,e
+                        (message "%s" (concat "failed but continuing: " ,(e/hash-trim (str e) 40)))))))
+    `(progn ,@failable-sexps)))
+
+(defalias 'progn-dontstop 'progn-continue-failures)
+(defalias 'dontstop 'progn-continue-failures)
+
+(defun e/grep (input pattern)
+  (list2str (-filter (lambda (s) (string-match-p pattern s)) (str2lines input))))
+
+(defun e/ls (dir)
+  (list2str
+   (-filter
+    (lambda (s) (not (or (string-equal "." s)
+                         (string-equal ".." s))))
+    (directory-files dir))))
+
+(defun e/head-n (s n)
+  (list2str (-take n (str2lines s ))))
 
 (provide 'pen-library)

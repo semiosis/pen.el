@@ -1,9 +1,6 @@
 #!/bin/bash
 export TTY
 
-export PS4='+	"$(basename $0)"	${LINENO}	 '
-# set -xv
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -pt) {

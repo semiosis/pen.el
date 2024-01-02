@@ -1,0 +1,143 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+
+# Also see: displayopts
+
+# TODO Consider serialising many variables into an environment variable
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+case "$sn" in
+    wo|withopts) {
+        :
+    }
+    ;;
+
+    *) {
+        withopts "$sn" -- "$@"
+        exit "$?"
+    }
+    ;;
+esac
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    --) {
+        shift
+        break
+    }
+    ;;
+
+    *) {
+        shift
+
+        case "$opt" in
+            debug) {
+                export DEBUG=y
+            }
+            ;;
+
+            nbd|nobd) {
+                export BORDER=n
+            }
+            ;;
+
+            nup) {
+                export UPDATE=n
+                export FORCE_RETRY=n
+            }
+            ;;
+
+            upd) {
+                export UPDATE=y
+                export FORCE_RETRY=y
+            }
+            ;;
+
+            -2|bw|baw) {
+                export BLACK_AND_WHITE=y
+            }
+            ;;
+
+            # Can't use -no2 to represent b&w because no2 disables stderr
+            nobw) {
+                export BLACK_AND_WHITE=n
+            }
+            ;;
+
+            as|das|autostart) {
+                export NO_AUTO_START=n
+            }
+            ;;
+
+            screen-2color) {
+                export TERM=screen-2color
+            }
+            ;;
+
+            nas|noautostart) {
+                export NO_AUTO_START=y
+            }
+            ;;
+
+            fast) {
+                export FAST=y
+            }
+            ;;
+
+            gui) {
+                export PREFER_GUI=y
+            }
+            ;;
+
+            tui) {
+                export PREFER_GUI=n
+            }
+            ;;
+
+            nem|noem) {
+                export NOEMACS=y
+            }
+            ;;
+
+            nnv|nonvc) {
+                export NO_NVC=y
+            }
+            ;;
+
+            nci|noci) {
+                export NO_CI=y
+            }
+            ;;
+
+            sth) {
+                export SSH_HOST_ALLOWED=y
+            }
+            ;;
+
+            nsth|nosth) {
+                export SSH_HOST_ALLOWED=n
+            }
+            ;;
+
+            *) {
+                echo Unknown option "'$opt'" | hls red 1>&2
+            }
+            ;;
+        esac
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty && test "$#" -eq 0; then
+    zsh
+else
+    "$@"
+fi

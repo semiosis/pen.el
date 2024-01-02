@@ -99,7 +99,9 @@
       (let ((url_xurls (xurls url)))
         (if (and (not (string-equal url url_xurls))
                  (or force_xurls
-                     (yn "xurls changed the url. Use xurls?")))
+                     (and
+                      (interactive-p)
+                      (yn "xurls changed the url. Use xurls?"))))
             (setq url url_xurls))))
   (setq url (chomp url))
   (pen-sn (concat "tmux run -b " (pen-q (concat "adn unbuffer pen-ssh-host-run-or-local-run chrome " (pen-q url)))) nil nil nil t))

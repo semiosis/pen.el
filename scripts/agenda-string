@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# set -xv
+
+filter="$@"
+
+# pool pen-e -ic view-agenda | cat
+
+ocif -today in-pen tm-unbuffer -nub -E "spin pool timeout --foreground 7 pen-e -ic view-agenda" | {
+    if test -n "$filter"; then
+        filter="$(p "$filter" | bs '()')"
+        sed -n -E -e "/^[^ ]|$filter/p"
+    else
+        cat
+    fi
+} | {
+    sed 's/^=====\+$/---/'
+} | pavs

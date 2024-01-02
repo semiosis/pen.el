@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# But it requires youtube-dl, which I refuse to use
+
+url="$@"
+
+python /usr/share/mkchromecast/mkchromecast.py --encoder-backend ffmpeg --alsa-device hw:2,1 -y "$url" --video

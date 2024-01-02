@@ -6,7 +6,7 @@ set -m
 
 editor() {
     if pen-e running; then
-        pen-e c "$1"
+        pen-e --runclient "$1"
     else
         v "$1"
     fi
@@ -27,6 +27,11 @@ ISPIPE="$?"
 
 is_tty
 ISTTY="$?"
+
+if ! test "$ISTTY" = 0; then
+    nw "$0" "$@"
+    exit "$?"
+fi
 
 : ${WAIT:="n"}
 : ${WHICH:="y"}
@@ -232,7 +237,7 @@ elif pen-pl "$fp" | grep -q -P '^(https?|git)://'; then
         }
         ;;
 
-        http*stackoverflow.com/q*) {
+        http*stackexchange.com/q*|http*stackoverflow.com/q*) {
             sx-from-url "$fp"
         }
         ;;
@@ -428,8 +433,37 @@ if [ -e "$fp" ]; then
         }
         ;;
 
-        pdf) {
-            z "$fp" & disown
+        epub) {
+            baca "$fp"
+            exit $?
+        }
+        ;;
+
+        pdf|PDF) {
+            if test -z "$ans"; then
+                printf -- "%s\n" "$fp"
+                ans="$(qa -. edit \
+                          -c copy \
+                          -d zcd \
+                          -z zathura \
+                          -t pdf2txt \
+                          -q QUIT )"
+            fi
+
+            case "$ans" in
+                copy) { xc "$fp"; } ;;
+                zathura) { z "$fp"; } ;;
+                zcd) { zcd "$fp"; } ;;
+                pdf2txt) { pdf2txt -mkfp "$fp"; } ;;
+                QUIT) { exit 0; } ;;
+                edit) { vs $0; } ;;
+                *) {
+                    "$ans" "$url"
+                }
+                ;;
+            esac
+
+            # z "$fp" & disown
             exit $?
         }
         ;;
@@ -518,7 +552,9 @@ fi
 
 # pen-pl "($ofp) File doesn't exist or mimetype not known"
 
-bibleverse="$(echo "$fp" | scrape-bible-references)"
+# scrape-bible-references really needs to be quite fast.
+# I really wish I knew rosie lang.
+bibleverse="$(echo "$fp" | cif scrape-bible-references)"
 
 if test -n "$bibleverse"; then
     if test "$ISPIPE" = 0; then

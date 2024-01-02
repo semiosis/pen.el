@@ -1,0 +1,12 @@
+#!/bin/sh
+export TTY
+
+fp="$1"
+bn="$(basename "$fp")"
+
+: "${CWD:="$(pwd)"}"
+
+# eval "preview $(aqf "$fp"); python $HOME$MYGIT/ranger/ranger/ranger/ext/rifle.py $(aqf "$fp")"
+# tm -d -te nw -hldblue -R -nopakf -n "$bn" -c "$CWD" "preview $(aqf "$fp"); python $HOME$MYGIT/ranger/ranger/ranger/ext/rifle.py $(aqf "$fp")"
+
+tm -d -te nw -hldblue -R -nopakf -n "$bn" -c "$CWD" "preview $(aqf-nice "$fp"); rifle $(aqf-nice "$fp")"

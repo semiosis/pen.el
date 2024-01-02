@@ -3,6 +3,7 @@ export TTY
 
 # https://lem-project.github.io/lem-page/usage/usage/
 # https://lem-project.github.io/lem-page/installation/configuration/
+# https://lem-project.github.io/lem-page/usage/keybindings/
 
 # export TERM=xterm-256color
 
@@ -12,5 +13,17 @@ export TTY
 
 # --rm 
 # docker run -ti -v `pwd`:/app 40ants/lem:latest
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -h|--help) {
+        # elinks-dump "https://lem-project.github.io/lem-page/usage/keybindings/"
+        cat "$(ros -e '(princ (ql:where-is-system :lem))')/docs/default-keybindings.md" | glow
+        exit "$?"
+    }
+    ;;
+
+    *) break;
+esac; done
 
 $HOME/.roswell/bin/lem-ncurses "$@"

@@ -59,12 +59,15 @@ export QUIET
 export VERBOSE
 export USE_PROFILE
 
+
 if test "$#" -eq 0; then
     set -- sh -c "/bin/bash || /bin/zsh || sh" "$@"
+elif printf -- "%s\n" "$1" | grep -q -P '^[^-]'; then
+    set -- -- "$@"
 fi
 
 case "$sn" in
-    pen-ssh-host) {
+    sshh|ssh-host|pen-ssh-host) {
         :
         pen-cterm-ssh -ssh-to-host y -ssh "$@"
     }

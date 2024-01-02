@@ -109,4 +109,11 @@
 ;; a new buffer? (y or n)
 (setq async-shell-command-buffer 'new-buffer)
 
+(defun insert-date ()
+  (interactive)
+  (insert
+   (snc "k f8")))
+
+(define-key global-map (kbd "<M-f8>") #'insert-date)
+
 (provide 'pen-editing)

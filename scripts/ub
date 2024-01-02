@@ -7,4 +7,20 @@ export TTY
 # TODO: make it execute the arguments while clearing stderr
 # Because by default unbuffer mixes stderr into stdout
 
-/usr/bin/unbuffer bash -c "$@" 2>/dev/null
+# This is an important option used by tm-unbuffer
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CMD:="$(cmd "$@")"}
+
+/usr/bin/unbuffer bash -c "$CMD" 2>/dev/null

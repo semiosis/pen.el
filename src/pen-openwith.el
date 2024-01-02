@@ -42,6 +42,7 @@
 (advice-add 'openwith-mode :around #'openwith-mode-around-advice)
 
 (advice-add 'dired--find-file :around #'ignore-errors-around-advice)
+;; (advice-remove 'dired--find-file #'ignore-errors-around-advice)
 
 ;; (error) is used to abort higher functions, so I can't ignore errors for the subfunctions
 ;; (advice-add 'openwith-file-handler :around #'ignore-errors-around-advice)

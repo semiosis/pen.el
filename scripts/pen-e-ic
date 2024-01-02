@@ -7,6 +7,18 @@ sn="$(basename "$0")"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
     -o|-only) { # Make the window that appears the only window
         export ONLY_WINDOW=y
         shift
@@ -22,6 +34,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -sn) {
         sn="$2"
         shift
+        shift
+    }
+    ;;
+
+    -1|-rest|-Eargs) {
+        eargs=y
         shift
     }
     ;;
@@ -52,8 +70,49 @@ case "$sn" in
     }
     ;;
 
+    einfo) {
+        ic=info
+    }
+    ;;
+
+    ebdb) {
+        ic=ebdb-display-all-records
+        # ic=ebdb-display-all-records-full
+    }
+    ;;
+
+    enm|enotmuch) {
+        ic=notmuch
+    }
+    ;;
+
+    cfw-agenda) {
+        ic=cfw:open-org-calendar
+    }
+    ;;
+
+    notmuch-compose) {
+        ic=notmuch-mua-mail
+    }
+    ;;
+
     ehtop) {
         ic=htop
+    }
+    ;;
+
+    ecal|ecalendar) {
+        ic=calendar
+    }
+    ;;
+
+    cfw|ecfw) {
+        ic=cfw:open-calendar-buffer
+    }
+    ;;
+
+    calr|ecalr) {
+        ic=cfw:open-org-calendar
     }
     ;;
 
@@ -64,6 +123,11 @@ case "$sn" in
 
     ecreate-tablist) {
         ic=create-tablist
+    }
+    ;;
+
+    ra|lra) {
+        ic=pen-goto-package
     }
     ;;
 
@@ -112,7 +176,14 @@ esac
 ic="$(p "$ic" | sed "s/^e-//")"
 
 if test "$#" -gt 0; then
-    set -- -cip "$ic" "$@"
+    if test "$eargs" = "y"; then
+        # cmd-nice sdlajf lkadsjf kldsajk "fld  dalks"
+        # sdlajf lkadsjf kldsajk "fld  dalks"
+        CMD="$(cmd-nice "$@")"
+        set -- -cip "$ic" "$CMD"
+    else
+        set -- -cip "$ic" "$@"
+    fi
 else
     set -- -ic "$ic"
 fi

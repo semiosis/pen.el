@@ -1,0 +1,4 @@
+#!/bin/sh
+
+urlarchive "https://star.net.nz/the-word-for-today" | sha
+urlarchive "https://vision.org.au/the-word-for-today-reading/" | sha

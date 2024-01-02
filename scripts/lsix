@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f $HOME/local/bin/lsix && : "${bin:="$HOME/local/bin/lsix"}"
+test -f $HOME/repos/hackerb9/lsix/lsix && : "${bin:="$HOME/repos/hackerb9/lsix/lsix"}"
+
+test -f "$bin" || (
+    # cd /root/repos
+    cd "$(gc "https://github.com/hackerb9/lsix")"
+    # git clone "https://github.com/hackerb9/lsix"
+)
+
+"$bin" "$@"

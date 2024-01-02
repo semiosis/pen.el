@@ -2,14 +2,22 @@
 # unalias ls 2>/dev/null || :
 
 # ls pwd
-for sn in df du ifconfig route mount netstat; do
+for sn in which df du env ifconfig route mount netstat; do
 IFS= read -r -d '' shcode <<HEREDOC
     $sn() {
+        (
+        set -o pipefail
         command "$sn" "\$@" | pa -E colvs
+        )
     }
 HEREDOC
 eval "$shcode"
 done
+
+unalias ls
+ls() {
+    /bin/ls -I ".git" -p "$@"
+}
 
 apply() {
     f="$1"

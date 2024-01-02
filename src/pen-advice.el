@@ -1,6 +1,13 @@
 (require 'pen-pcre)
+(require 'helpful)
 
 (advice-add 'message-no-echo :around #'ignore-errors-around-advice)
+
+;; For new advice
+(defun funcall-without-advice (f_sym &rest args)
+  (let* ((proc (helpful--without-advice f_sym))
+         (res (apply proc args)))
+    res))
 
 (defun ignore-errors-passthrough-around-advice (proc arg)
   (try

@@ -29,6 +29,8 @@
           (new-buffer-from-string (pen-readsubs sel))
           (play-song-chrome sel)))))
 
+;; Who You say I am (Irish accent) -  https://youtu.be/MHu3cH34-0g?t=740
+
 ;; TODO Make this open up in bible-mode
 ;; j:bible-mode--open-search
 ;; j:bible-mode--display-search
@@ -40,5 +42,26 @@
   ;; (nbfs (snc "ocif show-promises"))
   )
 (defalias 'promises 'blessings)
+
+(defun nicene-creed ()
+  (interactive)
+  (find-file (umn "$PEN/documents/Christianity/Nicene-Creed.txt")))
+
+(defun commandments-of-Jesus ()
+  (interactive)
+  (find-file (umn "$PEN/documents/bible-notes/commandments-of-Jesus.org")))
+
+(defun prophesies-fortelling-Jesus-fulfilled ()
+  (interactive)
+  (find-file (umn "$PEN/documents/bible/44-prophecies-of-Jesus-Christ-fulfilled.org")))
+
+(defun devotional-for-today ()
+  (interactive)
+  ;; (sps (cmd "cvlc" "https://resources.vision.org.au/audio/thewordfortoday/20231213.mp3"))
+  
+  (sps (cmd "cvlc" "https://resources.vision.org.au/audio/thewordfortoday/" (date "%Y%m%d") ".mp3"))
+  
+  ;; (chrome "https://vision.org.au/the-word-for-today-reading/" t)
+  )
 
 (provide 'peniel)

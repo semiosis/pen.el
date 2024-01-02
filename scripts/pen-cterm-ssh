@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 unset CWD
 
 sshargs=()
@@ -15,16 +17,22 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
 
         # All arguments that proceed -ssh should be captured and used
-        # as arguments to ssh
+        # as arguments to ssh:
+        # Examples:
+        # pen-cterm-ssh -ssh -M zsh
+        # pen-cterm-ssh -ssh -M -- bash
         while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             "") { shift; }; ;;
-            -*) {
-                sshargs=( "$opt" "${sshargs[@]}" )
+            --) { shift; break; }; ;;
+
+            *) {
+                sshargs=( "${sshargs[@]}" "$opt" )
                 shift
             }
             ;;
 
-            *) break;
+            # Break at a non-option
+            [^-]*) break;
         esac; done
     }
     ;;
@@ -147,9 +155,19 @@ SETUP="export TERM=screen-256color;"
 
 : ${CWD:="$(pwd)"}
 
+SSH_FROM_PEN=y
+
+# List all the ENVS I would like exported here (to the host)
+SSH_EXPORTS="$(envq -j DEBUG SSH_FROM_PEN) $SSH_EXPORTS"
+
 if test -n "$SSH_EXPORTS"; then
     SETUP="export $SSH_EXPORTS;$SETUP"
 fi
+
+# OH Wow pen-cterm-ssh is being caled all the time!
+# Because of git in zsh
+
+ns pen-cterm-ssh "$@" &>/dev/null
 
 if test "$VERBOSE" = "y"; then
     set -xv
@@ -166,6 +184,10 @@ if test "$SSH_TO_HOST" = "y"; then
     if test "$SSH_HOST_ALLOWED" = n; then
         echo ssh to host not enabled in pen.yaml | hls red 1>&2
         exit 1
+    fi
+
+    if test "$DEBUG" = "y"; then
+        SETUP="set -xv; $SETUP"
     fi
 
     if test "$USE_PROFILE" = "y"; then

@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+age() {
+    fileMod="$(stat -c %Y -- "$1")"
+    if test -n "$fileMod"; then
+        echo $(( $(date +%s) - fileMod ))
+    else
+        return $?
+    fi
+}
+
+age "$@"

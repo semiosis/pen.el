@@ -1,6 +1,8 @@
 #!/bin/bash
 
 unset TMUX
+unset PEN_TMUX
+unset TMUX_PANE
 
 # sct "$(pen-rc .screen_temperature)"
 
@@ -21,7 +23,10 @@ if stdin_exists; then
     input_fp="$(cat | tf txt)"
 fi
 
-exec <&1
+
+# exec <&1 # Don't do it this or j:pen-start-in-xterm will break
+ # vim +/"STDIN_EXISTS=y" "$PENELD/scripts/pen-nsfa"
+exec <`tm-tty` `# see etty`
 
 : "${DISPLAY:=":0"}"
 export DISPLAY
@@ -39,6 +44,8 @@ FONT_SIZE=6
 # FONT_SIZE=13
 FONT_SIZE=26
 
+light_mode=n
+
 use_term="$(pen-rc .use_term)"
 : "${use_term:="xterm"}"
 : "${use_term:="alacritty"}"
@@ -46,6 +53,25 @@ use_term="$(pen-rc .use_term)"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -d) {
         DETACH=y
+        shift
+    }
+    ;;
+
+    -li) {
+        light_mode=y
+        shift
+    }
+    ;;
+
+    -nvt) {
+        use_nvt=y
+        shift
+    }
+    ;;
+
+    -2) {
+        # Disable colours
+        BLACK_AND_WHITE=y
         shift
     }
     ;;
@@ -66,6 +92,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -xt) {
         use_term=xterm
+        shift
+    }
+    ;;
+
+    -rv) {
+        use_term=xterm
+        reverse_video=y
         shift
     }
     ;;
@@ -120,7 +153,7 @@ if test "$HIDDEN" = "y"; then
     fi
 fi
 
-export SHELL=/bin/bash 
+export SHELL=/bin/bash
 
 CMD="export WINDOWID; cd "$(pwd)"; $CMD"
 
@@ -164,7 +197,34 @@ run_term() {
         ;;
 
         *|xterm) {
-            /usr/bin/xterm -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
+            fargs=()
+
+            if test "$reverse_video" = "y"; then
+                fargs+=(-rv)
+            fi
+
+            if test "$light_mode" = "y"; then
+                # force light background
+                # v +/"! blue on paper" "$HOME/.Xresources"
+                fargs+=(-bg "#f7e7d7" -fg "#444477")
+            else
+                # dark background
+                fargs+=(-bg "#000000" -fg "#ffffff")
+            fi
+
+            if test "$BLACK_AND_WHITE" = "y"; then
+                CMD="bw $CMD"
+            fi
+
+            if test "$use_nvt" = "y"; then
+                if test "$BLACK_AND_WHITE" = "y"; then
+                    CMD="nvt -2 $CMD"
+                else
+                    CMD="nvt $CMD"
+                fi
+            fi
+
+            xterm "${fargs[@]}" -ls -fs "$FONT_SIZE" -e ". $HOME/.xterm-sh-rc; $CMD"
         }
         ;;
 

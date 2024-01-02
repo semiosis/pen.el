@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+# Also see: withopts
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# vim +/"displayopts" "$PENELD/config/zsh/zshrc"
+
+# if test "$NOEMACS" = "y"; then
+#     printf -- "%s\n" "NOEMACS" | hls nearblack 1>&2
+# fi
+
+if test "$#" = 0; then
+    set -- DEBUG BORDER FAST NOEMACS NO_CI PREFER_GUI "$@"
+fi
+
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
+if is_stdout_pipe; then
+    envq "$@" | awk 1
+else
+    # envq "$@" | awk 1 | hls nearblack 1>&2
+    envq -j "$@" | awk 1 | vimcat | cat 1>&2
+fi
+
+# 'envq' -f 'DEBUG' 'BORDER' 'FAST' 'NOEMACS' 'NO_CI' | cat
+# 'envq' 'NOEMACS' 'NO_CI' | cat
+# 'envq' 'NOEMACS' | cat

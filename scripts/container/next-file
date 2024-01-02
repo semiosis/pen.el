@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# eval 'echo -e -n "export PS4=\"+\t\\\"$(basename $0)\\\"\t${LINENO}\t\""'
+# set -xv
+
 fn="$1"
 
 # Filter list by predicate

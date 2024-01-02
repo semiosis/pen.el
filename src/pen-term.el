@@ -32,10 +32,21 @@
       (shut-up-c (message "sending C-d"))
       (term-send-raw))))
 
+;; For some reason read-kbd-macro gives a vector now,
+;; since emacs29? so I need this
+(defun term-vector-to-string (vector)
+  "Turns vector into a string, changing <escape> to '\\e'"
+  (mapconcat (lambda (c)
+               (if (equal c 'escape)
+                   "\e"
+                 (make-string 1 c)))
+             vector
+             ""))
+
 (defun term-send-function-key ()
   (interactive)
   (let* ((char last-input-event)
-         (output (cdr (assoc (str char) term-function-key-alist))))
+         (output (term-vector-to-string (cdr (assoc (str char) term-function-key-alist)))))
     (term-send-raw-string output)))
 
 (defconst term-function-key-alist `(("f1" . ,(read-kbd-macro "<ESC> OP"))
@@ -316,7 +327,13 @@ commands to use in that buffer.
                                           ;; So sending a C-l is a workaround
                                           ;; Can't send C-l. Try C-g.
                                           ;; This is for the read-only, not fixing clear in hhgttg
-                                          (pen-sn "TMUX= tmux send-keys C-g"))))
+                                          ;; (pen-sn "TMUX= tmux send-keys C-g")
+                                          ;; Send C-m but add a read to the start of the command
+                                          ;; (pen-sn "TMUX= tmux send-keys C-m")
+
+                                          ;; Do this - but do it in pen-e-ic:
+                                          ;; (refresh-frame)
+                                          )))
                                   ;; 'pen-try-init-char-mode
                                   )))
 
@@ -373,6 +390,7 @@ commands to use in that buffer.
    ((major-mode-p 'term-mode)
     ;; M-F4
     (term-send-raw-string "[1;3S"))
+   ((major-mode-p 'crossword-mode) (call-interactively 'crossword-quit))
    (t (ignore-errors
         (if (not (major-mode-p 'comint-mode))
             (force-revert-buffer))
@@ -490,6 +508,7 @@ without any interpretation."
                        term-term-name term-height term-width)
 
              (format "INSIDE_EMACS=%s,term:%s" emacs-version term-protocol-version)
+             (format "NOEMACS=y" term-height)
              (format "LINES=%d" term-height)
              (format "COLUMNS=%d" term-width))
             process-environment))

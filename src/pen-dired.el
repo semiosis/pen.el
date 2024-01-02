@@ -5,6 +5,22 @@
 (setq dgi-auto-hide-details-p nil)
 (setq dired-listing-switches "-alh")
 
+;; This forces emacs to use pen-dired-ls
+(setq ls-lisp-use-insert-directory-program t)
+
+;; This forces emacs to use pen-dired-ls
+;; I've noticed it revert
+(defun dired-insert-directory-around-advice (proc &rest args)
+  (let* ((ls-lisp-use-insert-directory-program t)
+         (res (apply proc args)))
+    res))
+(advice-add 'dired-insert-directory :around #'dired-insert-directory-around-advice)
+;; (advice-remove 'dired-insert-directory #'dired-insert-directory-around-advice)
+
+;; -p gives directories a trailing forward-slash
+;; j:pen-dired-ls
+;; But why is pen-dired-ls not always used
+
 (defun pen-open-dir (dir)
   (setq dir (pen-umn dir))
   (if (not (f-directory-p dir))
@@ -39,9 +55,10 @@
 (use-package dired-narrow
   :ensure t
   :config
-  (bind-key "C-c C-n" #'dired-narrow)
-  (bind-key "C-c C-f" #'dired-narrow-fuzzy)
-  (bind-key "C-x C-N" #'dired-narrow-regexp))
+  ;; (bind-key "C-c C-n" #'dired-narrow)
+  ;; (bind-key "C-c C-f" #'dired-narrow-fuzzy)
+  ;; (bind-key "C-x C-N" #'dired-narrow-regexp)
+  )
 
 (use-package dired-subtree :ensure t
   :after dired
@@ -58,6 +75,8 @@
   (interactive)
   (dired-sort-other "-alXGh --group-directories-first"))
 
+(add-hook 'dired-mode-hook 'dired-sort-dirs-first)
+
 (require 'dired)
 (setq insert-directory-program "pen-dired-ls")
 
@@ -72,13 +91,15 @@
         (insert-directory-program c))
     (dired dirname switches)))
 
-(defun ev (&optional path)
-  (interactive)
-  (pen-term-nsfa (concat "pen-v " (pen-q path))))
+(defalias 'ev 'org-link--edit-var)
+
+;; (defun ev (&optional path)
+;;   (interactive)
+;;   (pen-term-nsfa (concat "pen-v " (pen-q path))))
 
 (defun evim (&optional path)
   (interactive)
-  (pen-term-nsfa (concat "vim " (pen-q path))))
+  (pen-term-nsfa (concat "v " (pen-q path))))
 
 (defun evs (&optional path)
   (interactive)
@@ -184,6 +205,17 @@
          (paras "--dired -alh"))
     (dired-cmd script dir paras)))
 
+(defun find-doc-here (&optional a_dir)
+  (interactive)
+  (let* ((dir (or
+               (sor a_dir)
+               (pen-umn default-directory)))
+         (joined-list (pen-snc "find-doc-here | sed 's/^\\.\\///' | lines-to-args" nil dir))
+         (dired-ls-cmd (concat "shift 2; dired-ls-d --dired -alh -- " joined-list))
+         (script (pen-nsfa dired-ls-cmd dir))
+         (paras "--dired -alh"))
+    (dired-cmd script dir paras)))
+
 (defun find-files-here (&optional a_dir)
   (interactive)
   (let* ((dir (or
@@ -254,7 +286,10 @@ read from minibuffer."
        ((equal disable-narrow "dired-narrow-enter-directory")
         (dired-narrow--internal filter-function))))))
 
-(define-key dired-mode-map (kbd "@") 'find-src-here)
+(define-key dired-mode-map (kbd "@ s") 'find-src-here)
+(define-key dired-mode-map (kbd "@ d") 'find-doc-here)
+(define-key dired-mode-map (kbd "@ c") 'find-ci-here)
+(define-key dired-mode-map (kbd "@ f") 'find-files-here)
 (define-key dired-mode-map (kbd "{") 'find-ci-here)
 (define-key dired-mode-map (kbd "}") 'find-files-here)
 

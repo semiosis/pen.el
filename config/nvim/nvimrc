@@ -14,7 +14,7 @@ MapM OpenInEmacs g m
 if has('nvim')
     source $HOME/var/smulliga/source/git/config/vim/utils.vim
     MapM FilterWithFzf q f
-    
+
     execute pathogen#infect()
 
     hi Normal       ctermfg=60
@@ -37,7 +37,7 @@ if has('nvim')
                     \ }
 
         let jobid = termopen(s:cmd, s:callbacks)
-        
+
         " # This works but is not what I want. This will hang
         " let joblist=[]
         " call add(joblist, jobid)

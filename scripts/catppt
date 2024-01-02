@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Not finished
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    /usr/bin/catppt "$@"
+else
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    in-tty -E "/usr/bin/catppt $CMD | pavs"
+fi
+

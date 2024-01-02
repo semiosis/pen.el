@@ -1,6 +1,28 @@
 (require 'ace-link)
 (require 'pen-buttons)
 
+;; (defun xc-add-brackets (s)
+;;   (tv s)
+;;   ;; (xc s)
+;;   )
+
+;; (defun link-hint-copy-link-around-advice (proc &rest args)
+;;   (cl-letf (((symbol-function 'kill-new)
+;;              'xc-add-brackets))
+;;     (let ((res (apply proc args)))
+;;       res)))
+;; (advice-add 'link-hint-copy-link :around #'link-hint-copy-link-around-advice)
+;; (advice-remove 'link-hint-copy-link #'link-hint-copy-link-around-advice)
+
+;; nadvice - proc is the original function, passed in. do not modify
+(defun link-hint--apply-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (if (eq (first args) 'kill-new)
+        (xc (pen-clean-up-copy-link (xc nil t)) t))
+    res))
+(advice-add 'link-hint--apply :around #'link-hint--apply-around-advice)
+(advice-remove 'link-hint--apply #'link-hint--apply-around-advice)
+
 (defun ace-link-copy-button-link ()
   (interactive)
   (avy-with ace-link-help
@@ -20,6 +42,9 @@
               (avy-process
                (mapcar #'cdr (buttons-collect))
                (avy--style-fn avy-style)))))
+    ;; In the case of a notmuch email,
+    ;; it might be an shr link/button
+    ;; j:push-button-around-advice
     (ace-link--help-action pt)))
 
 (defun ace-link-button-or-org ()
@@ -30,7 +55,7 @@
                               (append
                                (buttons-collect)
                                (ace-link--org-collect))))
-               (avy--style-fn avy-style)))))
+               (avy--style-fn avy-style)))))    
     (try
      (ace-link--org-action pt)
      (push-button))))
@@ -43,12 +68,14 @@
           (ace-link-info))
          ((string-equal "*button cloud*" (buffer-name))
           (ace-link-click-button))
+         ((eq major-mode 'notmuch-hello-mode)
+          (ace-link-click-link-or-button))
          ((eq major-mode 'dockerfile-mode)
           (ace-link-click-button))
-         ((member major-mode '(help-mode package-menu-mode geiser-doc-mode elbank-report-mode
-                                         org-brain-visualize-mode
-                                         elbank-overview-mode slime-trace-dialog-mode helpful-mode))
+         ((member major-mode '(help-mode package-menu-mode geiser-doc-mode elbank-report-mode elbank-overview-mode slime-trace-dialog-mode helpful-mode))
           (ace-link-button-or-org))
+         ((member major-mode '(org-brain-visualize-mode))
+          (ace-link-button))
          ((eq major-mode 'markdown-mode)
           (ace-link-markdown))
 
@@ -63,6 +90,8 @@
          ((eq major-mode 'Man-mode)
           (ace-link-goto-button))
          ((eq major-mode 'special-mode)
+          (ace-link-click-widget))
+         ((eq major-mode 'eieio-custom-mode)
           (ace-link-click-widget))
          ((eq major-mode 'woman-mode)
           (ace-link-woman))

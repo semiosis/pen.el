@@ -207,3 +207,23 @@ after_dashes() {
 
     return 0
 }
+
+
+ifdo() {
+    test "$#" -gt 1 || exit 1
+
+    test_script="$1"
+    shift
+
+    a_script="$1"
+    shift
+
+    b_script="$1"
+    test -n "$b_script" && shift
+
+    if eval "$test_script"; then
+        eval "$a_script" "$@"
+    else
+        eval "$b_script" "$@"
+    fi
+}

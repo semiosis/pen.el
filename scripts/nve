@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# export TERM=screen-256color
+
+# This is quite fast because the syntax highlighting only opperates on the visible text
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+# nvc -2 v -nsyn "$@"
+
+# With "zsh -i", M-F1 works properly.
+# This is a more appropriate place to put zsh -i, instead of as tmux's default-shell
+
+zsh -i -c "nvc -2 v -nsyn $CMD"

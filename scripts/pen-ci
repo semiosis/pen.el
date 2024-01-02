@@ -3,21 +3,13 @@
 : "${TMPDIR:="/root/.pen/tmp"}"
 : "${TMPDIR:="/tmp"}"
 
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
 
-stdin_exists
-hasstdin="$?"
+. $PENEL_DIR/scripts/utils.sh
 
 if test "$hasstdin" = 0; then
-    export USING_STDIN=y
+    USING_STDIN=y
 
     tf_stdin="$(cat | sed -z 's/^\s*$//' | pen-tf -sha pen-tf-stdin-sha.txt)"
     sha="$(sha1sum "$tf_stdin" | awk '{print $1}')"
@@ -26,7 +18,7 @@ fi
 : ${RETRY_TIMEOUT:="15"} # 15 seconds
 
 # Just says that the command being run is run inside ci
-export CI_CACHED=y
+export INSIDE_CI=y
 
 # ci means "cache it"
 
@@ -78,6 +70,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -fretry) {
+        FORCE_RETRY=y
+        shift
+    }
+    ;;
+
     -v) {
         CI_VERBOSE=y
         shift
@@ -120,7 +118,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-test "$#" -gt 0 || { echo "ci: no command" | hls red 1>&2; exit 1; }
+{
+    test "$#" -gt 0 || test -n "$CMD"
+} || { echo "ci: no command" | hls red 1>&2; exit 1; }
+
+if test "$NO_CI" = "y"; then
+    "$@"
+    exit "$?"
+fi
 
 getpwd() {
     test "$IGNORE_DIR" = "y" || pwd
@@ -139,8 +144,6 @@ cache_file_path="${cache_file_path_mant}.txt"
 cache_file_path_exitcode="${cache_file_path_mant}.code"
 # echo "$cache_file_path" 1>&2
 
-# CMD="notty $CMD"
-
 # output cat
 o_cat() {
     local o_cat_last_arg=
@@ -155,6 +158,7 @@ o_cat() {
 
 # output tee
 o_tee() {
+    # set -xv
     local o_cat_last_arg=
     test "$#" -gt 0 && o_cat_last_arg="${@: -1}"
 
@@ -178,6 +182,7 @@ if test "$CI_VERBOSE" = "y"; then
     } | hls blue 1>&2
 fi
 
+# $PENELD/scripts/age
 age() {
     fileMod="$(stat -c %Y -- "$1")"
     if test -n "$fileMod"; then
@@ -189,8 +194,10 @@ age() {
 
 CMD="$CMD; echo \"\$?\" > \"\$cache_file_path_exitcode\""
 
+# Check whether there is a cache with this path and act accordingly
 if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
-    if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT"; then
+    if test -f "$cache_file_path" && { ! test -s "$cache_file_path"; } && test "$(age "$cache_file_path")" -lt "$RETRY_TIMEOUT" && ! test "$FORCE_RETRY" = y; then
+        echo "Cache checked too soon: $cache_file_path" | hls blue 1>&2
         exit 0
     elif test -f "$cache_file_path" && test -s "$cache_file_path" && ! test "$UPDATE" = y; then
         0</dev/null o_cat "$cache_file_path"
@@ -201,15 +208,17 @@ if test "$force_on" = y || test "$PEN_CACHE" = "y"; then
 
             if test "$USING_STDIN" = y; then
                 # Both nohup and & are necessary
-                # nohup sh -c "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
+                # /usr/bin/nohup sh -c "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
 
-                nohup tmux neww -n running-pen-ci -d "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
+                /usr/bin/nohup tmux neww -n running-pen-ci -d "cat $tf_stdin | $CMD > $cache_file_path" 2>/dev/null &
             else
                 eval "$CMD" > "$cache_file_path" &
             fi
         else
             if test "$USING_STDIN" = y; then
-                cat $tf_stdin | eval "$CMD" | o_tee "$cache_file_path"
+                # cmd-nice bash -c "cat $tf_stdin | $CMD" | tv &>/dev/null
+                # bash -c "cat $tf_stdin | $CMD" | o_tee "$cache_file_path"
+                odn cat "$tf_stdin" | eval "$CMD" | o_tee "$cache_file_path"
             else
                 eval "$CMD" | o_tee "$cache_file_path"
             fi

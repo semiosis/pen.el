@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+pp="$(ps -o comm= $PPID)"
+
+if test "$pp" = "sh-general"; then
+    cd $NOTES
+fi
+
+# I need to expand globs first.
+paths="urls.*"
+paths="urls.txt $(shopt -s nullglob; shopt -s extglob; eval lit -s "$paths")" # expand
+if [ -n "$paths" ]; then
+    eval "vs $paths"
+else
+    vs urls.txt
+fi

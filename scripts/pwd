@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    /bin/pwd "$@" | lolcat
+else
+    /bin/pwd "$@"
+fi

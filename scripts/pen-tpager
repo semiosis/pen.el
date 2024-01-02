@@ -3,6 +3,7 @@ export TTY
 
 # tpager should never call pager directly, to prevent recursion
 
-PAGER=vs
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
 
-sps -maybe "$PAGER" "$@"
+sps -iftty bash -c "strip-ansi | vs $CMD"

@@ -1,0 +1,79 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# /usr/bin/ranger "$@"
+# exit "$?"
+
+# export PAGER=less
+# export EDITOR=vim
+# export PATH="$HOME/scripts:$PATH"
+
+if [ -z "$CWD" ]; then
+    CWD="$(pwd)"
+else
+    CWD="$(p "$CWD" | umn)"
+    ! test -d "$CWD" && CWD="$(pwd)"
+fi
+
+# eval `resize`
+cd "$CWD"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -d|-dump) {
+        export CWD="$(get-dump-name "$CWD")"
+        mkdir -p "$CWD"
+        cd "$CWD"
+        shift
+    }
+    ;;
+
+    -e|-edit) {
+        export CWD="$MYGIT/ranger/ranger/core/"
+        cd "$CWD"
+        v actions.py
+        cd "$CWD"
+        shift
+    }
+    ;;
+
+    -F) {
+        filter="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -ka|-kill-all) {
+        ps -ef |grep -P 'python.*ranger.py' | grep -v grep | field 2 | xargs kill
+        exit 0
+    }
+    ;;
+
+    *) break;
+esac; done
+
+export TERM=xterm-256color
+
+# pybin=/usr/bin/python3.7
+pybin=/usr/local/bin/python3.10
+CMD="$pybin /root/repos/ranger/ranger/ranger.py $(cmd "$@")"
+# CMD="/root/repos/ranger/ranger/ranger.py $(cmd "$@")"
+
+# echo "$CMD"
+# exit
+
+{
+	# This doesn't work, sadly
+    if test -n "$filter"; then
+        # x -shE "$CMD" -e "@" -s "f$filter" -c m -i
+        # x -shE "$CMD" -s1 -s f -e filter -s "$filter" -c m -i
+        # x -shE "$CMD" -sl 2 -s f -i
+        x -sh ranger -s j -i
+    else
+        eval "$CMD"
+    fi
+} || {
+    echo "If ranger crashed, it may be due to an error in rifle.conf" 1>&2
+}

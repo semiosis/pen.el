@@ -32,9 +32,9 @@ get_link() {
         # Timeout here was causing problems
         # I guess that a timeout of 10 is still not enough
         # timeout 10 ci web title "$@"
-        # in-pen ci -nd apply-1 tv web title "$@"
-        # in-pen ci -nd apply-1 tv env
-        # in-pen apply-1 tv which python
+        # in-pen ci -nd apply-n tv web title "$@"
+        # in-pen ci -nd apply-n tv env
+        # in-pen apply-n tv which python
         oci -f -nd in-pen web title "$@"
     else
         # p "$@" | sed 's/^https\?:\/\///'

@@ -1,12 +1,16 @@
 #!/bin/bash
 export TTY
 
+# Total length = max-mant-len + 6
+
 input="$(cat)"
+maxmantlen="$1"
+: "${maxmantlen:="20"}"
 
 hash="$(p "$input" | pen-sha)"
 name="$(p "$input" | cut -c1-15)-$hash"
 strl=$(echo -n "$input" | wc -m)
-if test "$strl" -gt "20"; then
+if test "$strl" -gt "$maxmantlen"; then
     echo -n "$name"
 else
     echo -n "$hash"

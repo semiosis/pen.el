@@ -1,0 +1,27 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Also, see: tm-get-pane-id
+
+pty="$(tty)"
+: "${tmux_pane:="$TMUX_PANE"}"
+: "${tmux_pane:="$(tmux display-message -p '#{pane_id}')"}"
+: "${tmux_pane_tty:="$(tmux display-message -p '#{pane_tty}')"}"
+
+if test "$tmux_pane_tty" = "$pty"; then
+    if test "$#" -gt 0; then
+        export TMUX_PANE="$tmux_pane"
+        "$@"
+    else
+        echo "$tmux_pane"
+    fi
+else
+    if test "$#" -gt 0; then
+        export TMUX_PANE=
+        "$@"
+    else
+        exit 1
+    fi
+fi

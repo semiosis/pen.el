@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+bin=/usr/local/bin/wayback_machine_downloader 
+test -f "$bin" || { 
+    gem install wayback_machine_downloader
+}
+test -f "$bin" || exit
+
+cd /root/.pen/documents/websites
+
+"$bin" "$@"
+
+# Follow up with converting to text
+# htmls2txt -p "index.php*"

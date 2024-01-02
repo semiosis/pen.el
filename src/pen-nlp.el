@@ -46,7 +46,7 @@
 
 (defun ngram-query-replace-this ()
   (interactive)
-  (if (not (selectedp))
+  (if (not (pen-selected-p))
       (let* ((pen-str2lines (chomp (get-current-line-string)))
              (col (+ 1 (current-column)))
              (suggestions (ngram-suggest (fz (gen-google-ngram-queries line-str col)
@@ -59,8 +59,8 @@
 
 (defun ngram-query-replace ()
   (interactive)
-  (if (selectedp)
-      (let* ((query (if (selectedp)
+  (if (pen-selected-p)
+      (let* ((query (if (pen-selected-p)
                         (pen-selected-text)))
              (reformulated-query (if (string-match-p "\\*" query)
                                      query
@@ -122,7 +122,7 @@
 
 (defun find-anagrams (word)
   (interactive (list
-                (if (selectedp)
+                (if (pen-selected-p)
                     (pen-selected-text)
                     (read-string-hist "find-anagrams: "
                                       (pen-thing-at-point)))))

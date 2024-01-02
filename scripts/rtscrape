@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+CMD="$(cmd "$@")"
+: ${CMD:="\"[^ ]+\""}
+
+cmdname="scrape"
+s chomp | rtcmd ++$cmdname -E "$cmdname $CMD | vs"
+
+# s chomp | rtcmd ++$cmdname -E "$cmdname $CMD | vi -"

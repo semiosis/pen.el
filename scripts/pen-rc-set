@@ -10,6 +10,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    # What is this runtime pen.yaml nonsense?
     -runtime) {
         yaml_file="/tmp/pen.yaml"
         shift
@@ -20,7 +21,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: "${yaml_file:="~/.pen/pen.yaml"}"
+: "${yaml_file:=$(glob "~/.pen/pen.yaml")}"
 
 # pen-rc-set n-workers 10
 
@@ -46,7 +47,7 @@ if ! test -f "$yaml_file"; then
     touch "$yaml_file"
 fi
 
-if pen-pl "$rp" | grep -q -P "^$key: "; then
+if cat "$yaml_file" | grep -q -P "^$key: "; then
     sed -i "/^$key: \([^ ]\+\)/{s/^\($key: \)\(.*\)$/\1$value/}" "$yaml_file"
 else
     # Ensure there is a newline at the end of the yaml file

@@ -10,11 +10,14 @@
 
 # eshell takes an optional numeric argument that does nothing useful
 
-# e -D spacemacs c -e "(progn (eshell)(delete-other-windows))"
+# e -D spacemacs --runclient -e "(progn (eshell)(delete-other-windows))"
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -c) {
+    # -d is annoying. Sometimes -d means to background
+    # sometimes -d means directory.
+    # Therefore, I will use -cd
+    -cd) {
         CWD="$2"
         shift
         shift
@@ -34,8 +37,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -E) {
-        DO_EXEC=y
+    # Because it's a shell, -c should be a command
+    -c|-E) {
+        CMD="$1"
+        mode=command
         shift
     }
     ;;
@@ -43,13 +48,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-: ${CWD:="$(pwd)"}; cd "$CWD"
-
-if test "$DO_EXEC" = "y"; then
-    CMD="$1"
-else
-    CMD="$(cmd-nice-posix "$@")"
+if test "$1" = "y"; then
+    mode=runfile
 fi
+
+: "${mode:="command"}"
+
+: ${CWD:="$(pwd)"}; cd "$CWD"
 
 if test -n "$to_buffer"; then
     CMD="$CMD > #<buffer $to_buffer>"

@@ -1,0 +1,150 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+
+( hs "$sn" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# jq ".foo.bar = "new value"" file.json
+
+case "$sn" in
+    jstate-del) {
+        op=del
+    }
+    ;;
+
+    jstate-get) {
+        op=get
+    }
+    ;;
+
+    jstate-clear) {
+        op=clear
+    }
+    ;;
+
+    jstate-watch) {
+        op=watch
+    }
+    ;;
+
+    jstate-jiq) {
+        op=jiq
+    }
+    ;;
+
+    jstate-jq) {
+        op=jq
+    }
+    ;;
+
+    *)
+esac
+
+test -d /root/.pen/jstate && : "${dbdir:="/root/.pen/jstate"}"
+
+: "${dbdir:="/tmp/jstate"}"
+mkdir -p "$dbdir"
+
+db=default
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        op=del
+        shift
+    }
+    ;;
+
+    -w) {
+        op=watch
+        shift
+    }
+    ;;
+
+    -c) {
+        op=clear
+        shift
+    }
+    ;;
+
+    # Should be a slug
+    -db) {
+        db="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+: "${db:="default"}"
+
+db_fp="/root/.pen/jstate/${db}.json"
+
+touch "$db_fp"
+test -s "$db_fp" || echo "{}" | sponge "$db_fp"
+
+case "$op" in
+    jq) {
+        jq "$@" "/root/.pen/jstate/${db}.json"
+        exit "$?"
+    }
+    ;;
+
+    clear) {
+        rm -f "$db_fp"
+        touch "$db_fp"
+        exit "$?"
+    }
+    ;;
+
+    watch) {
+        # Use inotify instead
+        watch -n 1 -E "less -rS /root/.pen/jstate/${db}.json"
+        exit "$?"
+    }
+    ;;
+
+    jiq) {
+        # Use inotify instead
+        jiq "/root/.pen/jstate/${db}.json"
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac
+
+# If 1 field then get
+# If 2 fileds then set
+
+field="$1"
+test -n "$field" || exit 1
+
+# example
+# echo "hello\nthere" | map -be 'echo "[$(cmd-nice-posix "$e")]"' | s join .
+
+# This resulted in bad syntax
+# field="$(printf -- "%s" "$field" | sed 's/\./\n/g' | map -be 'echo "[$(cmd-nice-posix "$e")]"' | s join .)"
+# So just keep nested keys simple:
+# jstate-set a.b.d 5
+
+if test "$#" = 1; then
+    if test "$op" = "del"; then
+        # cat test.json | jq 'map(del(.Country, .number, .Language))'
+        jq "del(.${field})" "$db_fp" | sponge "$db_fp"
+        # jq ".${field} = $value" "$db_fp" | sponge "$db_fp"
+    else
+        jq -r ".${field}" "$db_fp"
+    fi
+elif test "$#" = 2; then
+    if printf -- "%s\n" "$2" | grep -q -P '^[^0-9{[]'; then
+        value="$(cmd-nice-posix "$2")"
+    else
+        value="$2"
+    fi
+    : "${value:="\"\""}"
+
+    # cmd jq ".${field} = $value" "$db_fp"
+    jq ".${field} = $value" "$db_fp" | sponge "$db_fp"
+fi

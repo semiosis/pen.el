@@ -8,6 +8,69 @@
   (md-org-export-to-org)
   (pen-org-publish-current-file))
 
+(defun markdown-convert-buffer-to-org ()
+  "Convert the current buffer's content from markdown to orgmode format and save it with the current buffer's file name but with .org extension."
+  (interactive)
+  (shell-command-on-region (point-min) (point-max)
+                           (format "pandoc -f markdown -t org -o %s"
+                                   (pen-new-filename-with-extension "org"))))
+
+(defun pen-new-filename-with-extension (ext)
+       "Generates a new filename based on the current filename but with a different extension"
+       (concat (file-name-sans-extension (buffer-file-name)) "." ext))
+
+(defun html2org ()
+  (interactive)
+
+  (shell-command-on-region (point-min) (point-max)
+                           (format "pandoc -f markdown -t org -o %s"
+                                   (pen-new-filename-with-extension "org")))
+
+  (let ((fn
+         (pen-new-filename-with-extension "org")))
+    (markdown-convert-buffer-to-org)
+    (pen-snc
+     (concat
+      "sed '1 s~^~#+HTML_HEAD: <link rel="
+      (pen-q "stylesheet")
+      " type="
+      (pen-q "text/css")
+      " href="
+      (pen-q
+       "http://gongzhitaao.org/orgcss/org.css")
+      "/>\\n~' "
+      (pen-q fn)
+      " | sponge "
+      (pen-q fn)))
+    (find-file fn)))
+
+(defun md-org-export-to-org-b64 ()
+  (interactive)
+  (let ((fn
+         (pen-new-filename-with-extension "org")))
+    ;; (markdown-convert-buffer-to-org)
+    (base64-encode-string (concat "sed '1 s~^~#+HTML_HEAD: <link rel=\" stylesheet \" type=\" text/css \" href=\" http://gongzhitaao.org/orgcss/org.css \"/>\\n~' " fn " | sponge " fn))))
+
+(defun md-org-export-to-org ()
+  (interactive)
+  (let ((fn
+         (pen-new-filename-with-extension "org")))
+    (markdown-convert-buffer-to-org)
+    (pen-snc
+     (concat
+      "sed '1 s~^~#+HTML_HEAD: <link rel="
+      (pen-q "stylesheet")
+      " type="
+      (pen-q "text/css")
+      " href="
+      (pen-q
+       "http://gongzhitaao.org/orgcss/org.css")
+      "/>\\n~' "
+      (pen-q fn)
+      " | sponge "
+      (pen-q fn)))
+    (find-file fn)))
+
 (defun pen-md-publish-current-file ()
   (interactive)
 

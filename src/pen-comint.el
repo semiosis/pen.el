@@ -12,11 +12,18 @@
    ((derived-mode-p 'comint-mode)
     (comint-bol))
    
+   ((derived-mode-p 'vterm-mode)
+    (vterm-send-C-a))
+   
    ((derived-mode-p 'eshell-mode)
 
     (let ((comint-use-prompt-regexp t)
-          ;; Really need to derive this from scrraping the line
-          (comint-prompt-regexp "^.*[»#\\$] "))
+          ;; Really need to derive this from scraping the line
+          ;; (comint-prompt-regexp "^.*[»#\\$] ")
+          ;; Don't use the backslash as a prompt marker.
+          ;; or it will break in this instance:
+          ;;  $PEN/documents/notes:master λ# sps o Music\ Data\ Base.xls
+          (comint-prompt-regexp "^.*[»#$] "))
       ;; (call-interactively 'term-bol)
       (call-interactively 'comint-bol))
     

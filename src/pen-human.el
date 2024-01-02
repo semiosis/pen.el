@@ -1,6 +1,10 @@
 (defun pen-display-p ()
   (pen-snq "display-p"))
 
+;; display-p should point to display-graphic-p, not pen-display-p
+(defalias 'display-p 'display-graphic-p)
+(defalias 'gui-p 'display-graphic-p)
+
 (defun pen-start-hidden-terminal (&optional in-cterm)
   (interactive)
   (if in-cterm

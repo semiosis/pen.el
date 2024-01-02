@@ -185,6 +185,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   (chomp (replace-regexp-in-string "\n +" " " (pp l))))
 (defalias 'pp-ol 'pp-oneline)
 
+(defalias 'typeof 'type-of)
 (defalias 'type 'type-of)
 
 (defun pen-eval-string (string)
@@ -250,6 +251,14 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
     (defvar user-home-directory nil))
 (setq user-home-directory (or user-home-directory "/root"))
 
+(defset pen-user-emacs-directory
+  (let* ((default-emacs-dir (string-replace "$HOME" user-home-directory user-emacs-directory))
+         (host-emacs-dir (f-join (string-replace "$HOME" user-home-directory user-emacs-directory)
+                                 "host"))
+         (emacs-dir (cond ((f-directory-p host-emacs-dir) host-emacs-dir)
+                          t  default-emacs-dir)))
+    (s-replace "//" "/" emacs-dir)))
+
 (defmacro upd (&rest body)
   (let ((l (eval
             `(let (;; (current-global-prefix-arg '(4))
@@ -277,42 +286,6 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 
 (defmacro noupd (&rest body)
   `(let ((pen-sh-update nil)) ,@body))
-
-(defmacro tryelse (thing &optional otherwise)
-  "Try to run a thing. Run something else if it fails."
-  `(condition-case
-       nil ,thing
-     (error ,otherwise)))
-
-(defmacro try (&rest list-of-alternatives)
-  "Try to run a thing. Run something else if it fails."
-  `(try-cascade '(,@list-of-alternatives)))
-
-(defmacro pen-try (&rest list-of-alternatives)
-  "Try to run a thing. Run something else if it fails."
-  (if pen-debug
-      (car list-of-alternatives)
-    `(try-cascade '(,@list-of-alternatives))))
-
-(defun try-cascade (list-of-alternatives)
-  "Try to run a thing. Run something else if it fails."
-  ;; (pen-list2str list-of-alternatives)
-
-  (let* ((failed t)
-         (result
-          (catch 'bbb
-            (dolist (p list-of-alternatives)
-              ;; (message "%s" (pen-list2str p))
-              (let ((result nil))
-                (tryelse
-                 (progn
-                   (setq result (eval p))
-                   (setq failed nil)
-                   (throw 'bbb result))
-                 result))))))
-    (if failed
-        (error "Nothing in try succeeded")
-      result)))
 
 (defmacro defset (symbol value &optional documentation)
   "Instead of doing a defvar and a setq, do this. [[http://ergoemacs.org/emacs/elisp_defvar_problem.html][ergoemacs.org/emacs/elisp_defvar_problem.html]]"
@@ -379,7 +352,8 @@ STRINGS will be evaluated in normal `or' order."
 (defun cwd ()
   "Gets the current working directory"
   (interactive)
-  (let ((c (shut-up-c (pwd))))
+  (let ((c (shut-up
+             (shut-up-c (pwd)))))
     (if c
         (f-expand (substring c 10))
       default-directory)))
@@ -475,7 +449,7 @@ Takes into account the current file name."
   (shut-up-c
    (let* ((filedir (if buffer-file-name
                        (file-name-directory buffer-file-name)
-                     (file-name-directory (cwd))))
+                     (cwd)))
           (dir
            (if (s-blank? filedir)
                (cwd)
@@ -715,71 +689,160 @@ b_output is (t/nil) tm_session is the session of the new tmux window"
 (defun shell-command-sentinel (process signal)
   (when (memq (process-status process) '(exit signal))))
 
-(defun eslugify (title &optional joinlines length)
-  "Return the slug of NODE."
-  (if (not joinlines)
-      (pen-list2str (mapcar
-                     (eval
-                      `(lambda
-                         (s)
-                         (eslugify s t ,length)))
-                     (pen-str2list title)))
-    (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
-                             768  ; U+0300 COMBINING GRAVE ACCENT
-                             769  ; U+0301 COMBINING ACUTE ACCENT
-                             770  ; U+0302 COMBINING CIRCUMFLEX ACCENT
-                             771  ; U+0303 COMBINING TILDE
-                             772  ; U+0304 COMBINING MACRON
-                             774  ; U+0306 COMBINING BREVE
-                             775  ; U+0307 COMBINING DOT ABOVE
-                             776  ; U+0308 COMBINING DIAERESIS
-                             777  ; U+0309 COMBINING HOOK ABOVE
-                             778  ; U+030A COMBINING RING ABOVE
-                             779 ; U+030B COMBINING DOUBLE ACUTE ACCENT
-                             780 ; U+030C COMBINING CARON
-                             795 ; U+031B COMBINING HORN
-                             803 ; U+0323 COMBINING DOT BELOW
-                             804 ; U+0324 COMBINING DIAERESIS BELOW
-                             805 ; U+0325 COMBINING RING BELOW
-                             807 ; U+0327 COMBINING CEDILLA
-                             813 ; U+032D COMBINING CIRCUMFLEX ACCENT BELOW
-                             814 ; U+032E COMBINING BREVE BELOW
-                             816 ; U+0330 COMBINING TILDE BELOW
-                             817 ; U+0331 COMBINING MACRON BELOW
-                             )))
-      (cl-flet* ((nonspacing-mark-p (char) (memq char slug-trim-chars))
-                 (strip-nonspacing-marks (s) (string-glyph-compose
-                                              (apply #'string
-                                                     (seq-remove #'nonspacing-mark-p
-                                                                 (string-glyph-decompose s)))))
-                 (cl-replace (title pair) (replace-regexp-in-string (car pair) (cdr pair) title)))
-        (let* ((pairs `(("[^[:alnum:][:digit:]]" . "-") ;; convert anything not alphanumeric
-                        ("__*" . "_") ;; remove sequential underscores
-                        ("--*" . "-") ;; remove sequential dashes
-                        ("^_" . "")   ;; remove starting underscore
-                        ("_$" . ""))) ;; remove ending underscore
-               (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs))
-               (slug (downcase slug))
-               (slug (if length
-                         (substring slug 0 (- length 1))
-                       slug)))
-          slug)
-        ))))
+(defvar inside-host-b nil)
 
-(defalias 'slugify 'eslugify)
+(defun inside-host-p ()
+  inside-host-b)
+
+(defun ascify (title)
+  (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
+                                 768 ; U+0300 COMBINING GRAVE ACCENT
+                                 769 ; U+0301 COMBINING ACUTE ACCENT
+                                 770 ; U+0302 COMBINING CIRCUMFLEX ACCENT
+                                 771 ; U+0303 COMBINING TILDE
+                                 772 ; U+0304 COMBINING MACRON
+                                 774 ; U+0306 COMBINING BREVE
+                                 775 ; U+0307 COMBINING DOT ABOVE
+                                 776 ; U+0308 COMBINING DIAERESIS
+                                 777 ; U+0309 COMBINING HOOK ABOVE
+                                 778 ; U+030A COMBINING RING ABOVE
+                                 779 ; U+030B COMBINING DOUBLE ACUTE ACCENT
+                                 780 ; U+030C COMBINING CARON
+                                 795 ; U+031B COMBINING HORN
+                                 803 ; U+0323 COMBINING DOT BELOW
+                                 804 ; U+0324 COMBINING DIAERESIS BELOW
+                                 805 ; U+0325 COMBINING RING BELOW
+                                 807 ; U+0327 COMBINING CEDILLA
+                                 813 ; U+032D COMBINING CIRCUMFLEX ACCENT BELOW
+                                 814 ; U+032E COMBINING BREVE BELOW
+                                 816 ; U+0330 COMBINING TILDE BELOW
+                                 817 ; U+0331 COMBINING MACRON BELOW
+                                 )))
+          (cl-flet* ((nonspacing-mark-p (char) (memq char slug-trim-chars))
+                     (strip-nonspacing-marks (s) (string-glyph-compose
+                                                  (apply #'string
+                                                         (seq-remove #'nonspacing-mark-p
+                                                                     (string-glyph-decompose s)))))
+                     (cl-replace (title pair) (replace-regexp-in-string (car pair) (cdr pair) title)))
+            (let* ((pairs `(("[^[:alnum:][:digit:]]" . " ") ;; convert anything not alphanumeric
+                            ("__*" . "_") ;; remove sequential underscores
+                            ("--*" . "-") ;; remove sequential dashes
+                            ("^_" . "") ;; remove starting underscore
+                            ("_$" . ""))) ;; remove ending underscore
+                   (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs)))
+              slug))))
+
+(if (inside-host-p)
+    (defalias 'eslugify 'slugify)
+  (progn
+    (require 'ucs-normalize)
+    (defun eslugify (title &optional joinlines length)
+      "Return the slug of NODE."
+      (if (not joinlines)
+          (pen-list2str (mapcar
+                         (eval
+                          `(lambda
+                             (s)
+                             (eslugify s t ,length)))
+                         (pen-str2list title)))
+        (let ((slug-trim-chars '(;; Combining Diacritical Marks https://www.unicode.org/charts/PDF/U0300.pdf
+                                 768  ; U+0300 COMBINING GRAVE ACCENT
+                                 769  ; U+0301 COMBINING ACUTE ACCENT
+                                 770  ; U+0302 COMBINING CIRCUMFLEX ACCENT
+                                 771  ; U+0303 COMBINING TILDE
+                                 772  ; U+0304 COMBINING MACRON
+                                 774  ; U+0306 COMBINING BREVE
+                                 775  ; U+0307 COMBINING DOT ABOVE
+                                 776  ; U+0308 COMBINING DIAERESIS
+                                 777  ; U+0309 COMBINING HOOK ABOVE
+                                 778  ; U+030A COMBINING RING ABOVE
+                                 779  ; U+030B COMBINING DOUBLE ACUTE ACCENT
+                                 780  ; U+030C COMBINING CARON
+                                 795  ; U+031B COMBINING HORN
+                                 803  ; U+0323 COMBINING DOT BELOW
+                                 804  ; U+0324 COMBINING DIAERESIS BELOW
+                                 805  ; U+0325 COMBINING RING BELOW
+                                 807  ; U+0327 COMBINING CEDILLA
+                                 813  ; U+032D COMBINING CIRCUMFLEX ACCENT BELOW
+                                 814  ; U+032E COMBINING BREVE BELOW
+                                 816  ; U+0330 COMBINING TILDE BELOW
+                                 817  ; U+0331 COMBINING MACRON BELOW
+                                 )))
+          (cl-flet* ((nonspacing-mark-p (char) (memq char slug-trim-chars))
+                     (strip-nonspacing-marks (s) (string-glyph-compose
+                                                  (apply #'string
+                                                         (seq-remove #'nonspacing-mark-p
+                                                                     (string-glyph-decompose s)))))
+                     (cl-replace (title pair) (replace-regexp-in-string (car pair) (cdr pair) title)))
+            (let* ((pairs `(("[^[:alnum:][:digit:]]" . "-") ;; convert anything not alphanumeric
+                            ("__*" . "_") ;; remove sequential underscores
+                            ("--*" . "-") ;; remove sequential dashes
+                            ("^_" . "")   ;; remove starting underscore
+                            ("_$" . ""))) ;; remove ending underscore
+                   (slug (-reduce-from #'cl-replace (strip-nonspacing-marks title) pairs))
+                   (slug (downcase slug))
+                   (slug (if length
+                             (substring slug 0 (- length 1))
+                           slug)))
+              slug)))))
+
+    (defalias 'slugify 'eslugify)))
+
+(defun sh/hash-trim (s &optional max-mant-len)
+  "Total length = max-mant-len + 6"
+  (snc (cmd "hash-trim" max-mant-len) s))
+
+(defun sha256 (o)
+  (secure-hash 'sha256 o))
+
+(defun e/hash-trim (s &optional max-mant-len)
+  "Total length = max-mant-len + 6"
+  (setq max-mant-len (or max-mant-len 20))
+  (let* ((hash (s-left 10 (sha256 s)))
+         (name (concat (s-left (- max-mant-len 5) s) "-" hash))
+         (strl (length s)))
+    (if (> strl max-mant-len)
+        name
+      hash)))
+
+(defalias 'hash-trim 'e/hash-trim)
+
+;; This is set from $SHELL when emacs starts.
+;; But I can change it like this.
+(setq explicit-shell-file-name (executable-find "bash"))
+(setq-default explicit-shell-file-name (executable-find "bash"))
+(defvaralias 'default-shell 'explicit-shell-file-name)
+
+;; Nevertheless, I'm still getting a zsh error here, and I don't know why:
+;; (shell-command-to-string (concat " ;printf -- \"%s\\n\" " "yo -5 =yo yo"))
+;; (shell-command-to-string (concat "env | tv; printf -- \"%s\\n\" " "yo -5 =yo yo"))
+
+;; (setenv "ESHELL" "/bin/bash")
+;; (setenv "ESHELL" "/usr/bin/zsh")
+;; (setenv "SHELL" "/bin/bash")
+;; (setenv "SHELL" "/usr/bin/zsh")
+
+;; (snc "find ~+ -name 'snippets' -type d" nil pen-user-emacs-directory)
 
 ;; I think this always assumes output
-(defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code)
+(defun pen-sn (shell-cmd &optional stdin dir exit_code_var detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code shell env-var-tups)
   "Runs command in shell and return the result.
 This appears to strip ansi codes.
 \(sh) does not.
 This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .prompt files"
   (interactive)
 
+  ;; This uses emacs' (getenv "SHELL")
+  ;; So I must set it like so:
+
+  (if shell
+      (setenv "SHELL" shell)
+    (setenv "SHELL" default-shell))
+
   (let ((output)
         (tf_output)
         (tf_input)
-        (slug (eslugify (concat "elisp_bash_" shell-cmd " detach:" (str detach)))))
+        (slug (e/hash-trim (eslugify (concat "elisp_bash_" shell-cmd " detach:" (str detach))))))
     (if (not shell-cmd)
         (setq shell-cmd "false"))
 
@@ -814,20 +877,22 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 
       (let ((exps
              (sh-construct-exports
-              (-filter 'identity
-                       (list (list "DISPLAY" ":0")
-                             (list "PATH" (getenv "PATH"))
-                             (list "TMUX" "")
-                             (list "TMUX_PANE" "")
-                             (list "PEN_WORKER" (sor (daemonp) "default"))
-                             (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
-                             (if (or (pen-var-value-maybe 'pen-sh-update)
-                                     (pen-var-value-maybe 'pen-sh-update))
-                                 (list "UPDATE" "y"))
-                             (if (or (pen-var-value-maybe 'pen-force-engine))
-                                 (list "PEN_ENGINE" (pen-var-value-maybe 'pen-force-engine)))
-                             (if (or (pen-var-value-maybe 'force-temperature))
-                                 (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature))))))))
+              (append
+               (-filter 'identity
+                        (list (list "DISPLAY" ":0")
+                              (list "PATH" (getenv "PATH"))
+                              (list "TMUX" "")
+                              (list "TMUX_PANE" "")
+                              (list "PEN_WORKER" (sor (daemonp) "default"))
+                              (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
+                              (if (or (pen-var-value-maybe 'pen-sh-update)
+                                      (pen-var-value-maybe 'pen-sh-update))
+                                  (list "UPDATE" "y"))
+                              (if (or (pen-var-value-maybe 'pen-force-engine))
+                                  (list "PEN_ENGINE" (pen-var-value-maybe 'pen-force-engine)))
+                              (if (or (pen-var-value-maybe 'force-temperature))
+                                  (list "PEN_TEMPERATURE" (pen-var-value-maybe 'force-temperature)))))
+               env-var-tups))))
 
         (if (and detach
                  stdin)
@@ -851,14 +916,20 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
               (setq final_cmd (concat "trap '' HUP; bash -c " (pen-q final_cmd) " &"))
             (setq final_cmd (concat "trap '' HUP; unbuffer bash -c " (pen-q final_cmd) " &"))))
 
-      (shut-up-c
-       (if (or
-            (not stdin)
-            detach)
-           (shell-command final_cmd output_buffer "*pen-sn-stderr*")
-         (with-temp-buffer
-           (insert stdin)
-           (shell-command-on-region (point-min) (point-max) final_cmd output_buffer nil "*pen-sn-stderr*"))))
+      ;; shut-up is needed to remove  (Shell command succeeded with no output)
+      (shut-up
+        (shut-up-c
+         (if (or
+              (not stdin)
+              detach)
+             (progn
+               (comment
+                (if pen-debug
+                    (message "%s" (shell-command-to-string final_cmd))))
+               (shell-command final_cmd output_buffer "*pen-sn-stderr*"))
+           (with-temp-buffer
+             (insert stdin)
+             (shell-command-on-region (point-min) (point-max) final_cmd output_buffer nil "*pen-sn-stderr*")))))
 
       (if detach
           t
@@ -877,9 +948,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                  (ignore-errors (f-delete tf_exit_code)))
           output)))))
 
-(cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code)
+(cl-defun pen-cl-sn (shell-cmd &key stdin &key dir &key detach &key b_no_unminimise &key output_buffer &key b_unbuffer &key chomp &key b_output-return-code &key shell &key env-var-tups)
   (interactive)
-  (pen-sn shell-cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code))
+  (pen-sn shell-cmd stdin dir nil detach b_no_unminimise output_buffer b_unbuffer chomp b_output-return-code shell env-var-tups))
 
 (defun pen-snc (shell-cmd &optional stdin dir)
   "sn chomp"
@@ -975,7 +1046,6 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
 ;; so that when called by (get-dir), this does not do an infinite loop.
 (defun sh/slugify (input &optional joinlines length)
   "Slugify input"
-  (interactive)
   (let ((slug
          (if joinlines
              (pen-sn "tr '\n' - | slugify" input "/")
@@ -983,6 +1053,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
     (if length
         (chomp (pen-sn (pen-cmd "head" "-c" length) nil "/"))
       slug)))
+
 
 (defun fz-completion-second-of-tuple-annotation-function (s)
   ;; (tv minibuffer-completion-table)
@@ -1088,6 +1159,7 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
    (use-region-p)
    (evil-visual-state-p)))
 (defalias 'pen-selected-p 'pen-selected)
+(defalias 'selected-p 'pen-selected)
 
 (defun glob (pattern &optional dir)
   (split-string (pen-cl-sn (concat "pen-glob " (pen-q pattern) " 2>/dev/null") :stdin nil :dir dir :chomp t) "\n"))
@@ -1506,6 +1578,9 @@ when s is a string, set the clipboard to s"
     (kill-buffer buf)
     (str lang)))
 
+(if (inside-docker-p)
+    (defalias 'detect-language 'pen-detect-language))
+
 (defalias 'current-lang 'pen-detect-language)
 (defalias 'buffer-language 'pen-detect-language)
 
@@ -1542,6 +1617,7 @@ when s is a string, set the clipboard to s"
   (cond ((derived-mode-p 'json-mode) "json")
         ((derived-mode-p 'haskell-mode) "hs")
         ((eq major-mode 'python-mode) "py")
+        ((eq major-mode 'problog-mode) "problog")
         ((derived-mode-p 'csv-mode) "csv")
         ((eq major-mode 'fundamental-mode) "txt")
         ((eq major-mode 'graphviz-dot-mode) "dot")
@@ -1758,6 +1834,10 @@ when s is a string, set the clipboard to s"
               ,@newtups))))
 (defalias 'seds 'do-substitutions)
 
+(defun tmpdir ()
+  (cond ((f-dir-p (f-join penconfdir "tmp")) (f-join penconfdir "tmp"))
+        (t "/tmp")))
+
 (defun pen-mnm (input)
   "Minimise string."
   ;; (pen-sn "mnm" input)
@@ -1765,15 +1845,21 @@ when s is a string, set the clipboard to s"
       (seds (pen-umn input)
             ("/root/notes" "$HOME/notes")
             ((f-join pen-prompts-directory "prompts") "$PROMPTS")
-            (user-emacs-directory "$EMACSD")
+            ((getenv "EMACSD") "$EMACSD")
+            (user-emacs-directory "$EMACSD_BUILTIN")
+            ((getenv "EMACSD_BUILTIN") "$EMACSD_BUILTIN")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
             ((getenv "PENELD") "$PENELD")
             (penconfdir "$PEN")
+            ((tmpdir) "$TMPDIR")
                                         ; ((f-join user-emacs-directory "pen.el") "$PENEL_DIR")
             ((f-join user-emacs-directory "pen.el") "$PENEL")
             (user-home-directory "$HOME"))))
 
+;; Test
+;; (umn "$EMACSD_BUILTIN/elpa-light/")
+;; (umn "$EMACSD/elpa-light/")
 (defun pen-umn (input)
   "Unminimise string."
   (if input
@@ -1781,13 +1867,18 @@ when s is a string, set the clipboard to s"
             ("~" user-home-directory)
             ("$NOTES" "/root/notes")
             ("$PROMPTS" (f-join pen-prompts-directory "prompts"))
-            ("$EMACSD" user-emacs-directory)
+            ;; EMACSD is /host
+            ;; ("$EMACSD" (pen-umn user-emacs-directory))
+            ;; ("$EMACSD" pen-user-emacs-directory)
+            ("$EMACSD_BUILTIN" (getenv "EMACSD_BUILTIN"))
+            ("$EMACSD" (getenv "EMACSD"))
             ("$PEN_PROMPTS_DIR" pen-prompts-directory)
             ("$PEN_ENGINES_DIR" pen-engines-directory)
             ;; This is dodgy because there are other vars that are prefixed with $PEN_
             ("$PENEL_DIR" (f-join user-emacs-directory "pen.el"))
             ("$PENCONF" penconfdir)
             ("$PENELD" (getenv "PENELD"))
+            ("$TMPDIR" (tmpdir))
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$SCRIPTS" (f-join user-emacs-directory "pen.el/scripts"))
@@ -1840,6 +1931,9 @@ when s is a string, set the clipboard to s"
 
   (setq command (concat "sed '" (str command) "'"))
   (pen-sn command stdin))
+
+(if (inside-docker-p)
+    (defalias 'sed 'pen-sed))
 
 ;; (alist2pairs '(("hi" . "yo") ("my day" . "is good")))
 ;; (alist2pairs '((hi . "yo") (my-day . "is good")))
@@ -1951,6 +2045,14 @@ Out
 
   (setq command (concat "sed '" (str command) "'"))
   (pen-sn command stdin))
+
+(defmacro pen-macro-filter (s-filter-fun &rest body)
+  "This transforms the code with a sed expression"
+  (let* ((codestring (pp-map-line body))
+         (ucodestring (call-function s-filter-fun codestring))
+         (newcode (pen-eval-string (concat "'(progn " ucodestring ")"))))
+    newcode))
+(defalias 'pen-mf 'pen-macro-filter)
 
 (defmacro pen-macro-sed (expr &rest body)
   "This transforms the code with a sed expression"
@@ -2116,28 +2218,31 @@ This function accepts any number of ARGUMENTS, but ignores them."
     (let ((line-and-col (concat-string "+" (line-number-at-pos) ":" (current-column))))
       (if (display-graphic-p)
           (progn
+            ;; Just a bit lazy
+            (xterm "v" (buffer-string))
             ;; (pen-sn "xt tmux" nil nil nil t)
             ;; This could be improved
-            (pen-sps "sh -c 'sleep 1'" nil nil nil t)
-            (sleep-for 0.5)))
-      (if (and buffer-file-name
-               (not (string-match "\\[*Org Src" (buffer-name))))
-          (progn
-            (save-buffer)
-            (let ((c
-                   (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
-              (shell-command c)))
-        (let ((c
-               (cond
-                ((or
-                  (not (buffer-file-path))
-                  (string-match "\.~" (buffer-name)))
-                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
-                ((string-match "\\[*Org Src" (buffer-name))
-                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
-                (t
-                 (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))
-          (shell-command-on-region min max c))))))
+            ;; (pen-sps "sh -c 'sleep 1'" nil nil nil t)
+            ;; (sleep-for 0.5)
+            )
+        (if (and buffer-file-name
+                 (not (string-match "\\[*Org Src" (buffer-name))))
+            (progn
+              (save-buffer)
+              (let ((c
+                     (concat-string "pen-tm -d -te " window_type " -fa " editor " " line-and-col " " (pen-q buffer-file-name))))
+                (shell-command c)))
+          (let ((c
+                 (cond
+                  ((or
+                    (not (buffer-file-path))
+                    (string-match "\.~" (buffer-name)))
+                   (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                  ((string-match "\\[*Org Src" (buffer-name))
+                   (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col))
+                  (t
+                   (concat-string "pen-tsp -wincmd " window_type " -fa " editor " " line-and-col)))))
+            (shell-command-on-region min max c)))))))
 
 (defalias 'open-in 'pen-tmux-edit)
 
@@ -2146,8 +2251,17 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (interactive)
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (pen-tm-edit-hx-in-nw)
-    (pen-tmux-edit "pen-v" "nw")))
+      ;; (pen-tm-edit-bvi-in-nw)
+    (pen-tmux-edit "pen-v" "nw")
+    ;; (pen-tmux-edit "nve" "nw")
+    ;; (pen-tmux-edit "nvem" "tpop")
+    ))
 (define-key pen-map (kbd "C-c o") #'pen-tm-edit-v-in-nw)
+
+(defun pen-tm-edit-bvi-in-nw ()
+  "Opens bvi in new window for buffer contents"
+  (interactive)
+  (pen-tmux-edit "bvi" "nw"))
 
 (defun pen-tm-edit-hx-in-nw ()
   "Opens hx in new window for buffer contents"
@@ -2231,34 +2345,40 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-revert (arg)
   (interactive "P")
-  (remove-overlays (point-min) (point-max))
-  (pen-run-buttonize-hooks)
-  (let ((l (line-number-at-pos))
-        (c (current-column)))
+  (cond ((major-mode-p 'notmuch-search-mode) (notmuch-refresh-this-buffer))
+        ((major-mode-p 'notmuch-show-mode) (notmuch-refresh-this-buffer))
+        ((major-mode-p 'notmuch-hello-mode) (notmuch-refresh-this-buffer))
+        (t
+         (progn
+           (remove-overlays (point-min) (point-max))
+           (pen-run-buttonize-hooks)
+           (let ((l (line-number-at-pos))
+                 (c (current-column)))
 
-    (if arg
-        (progn (force-revert-buffer)
-               (message "%s" "Reverted from disk"))
-      (progn (try (progn (if (string-match-p "\\*Org .*" (buffer-name))
-                             (message "Not going to revert.")
-                           (undo-tree-restore-state-from-register ?^))
-                         )
-                  (progn (force-revert-buffer)
-                         )))       ; revert without loading from disk
-      )
+             (if arg
+                 (progn (force-revert-buffer)
+                        (message "%s" "Reverted from disk"))
+               (progn (try (progn (if (string-match-p "\\*Org .*" (buffer-name))
+                                      (message "Not going to revert.")
+                                    (undo-tree-restore-state-from-register ?^))
+                                  )
+                           (progn (force-revert-buffer)
+                                  )))            ; revert without loading from disk
+               )
 
-    (goto-line l)
-    (move-to-column c)
-    ;; For some reason, this hook is added whenever I revert. Therefore remove it. What is adding it?
-    (remove-hook 'after-save-hook (λ nil (byte-force-recompile default-directory)) t))
-  (ignore-errors
-    (clear-undo-tree))
-  (company-cancel))
+             (goto-line l)
+             (move-to-column c)
+             ;; For some reason, this hook is added whenever I revert. Therefore remove it. What is adding it?
+             (remove-hook 'after-save-hook (λ nil (byte-force-recompile default-directory)) t))
+           (ignore-errors
+             (clear-undo-tree))
+           (company-cancel)))))
 
-(defun pen-etv-urls-in-region (&optional s)
+(defun pen-etv-urls-in-region (&optional s ignore-textprops)
   (interactive)
-  (new-buffer-from-string (urls-in-region-or-buffer s)
-                          nil 'org-mode))
+  (new-buffer-from-string
+   (urls-in-region-or-buffer s (not ignore-textprops))
+   nil 'org-mode))
 
 (defun pen-yank-dir ()
   (interactive)
@@ -2353,9 +2473,20 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-save ()
   (interactive)
-  (save-buffer)
-  (shut-up (if-shebang-exec-otherwise-remove))
-  (message "%s" "File saved"))
+  (cond ((major-mode-p 'org-agenda-mode)
+         (call-interactively 'org-save-all-org-buffers))
+        ((major-mode-p 'org-brain-visualize-mode)
+         (call-interactively 'sh/git-add-all-below))
+        ((major-mode-p 'ebdb-mode)
+         (call-interactively 'ebdb-save-ebdb))
+        ((major-mode-p 'bible-mode)
+         ;; Simulate the hooks for pen-ov-highlight
+         (run-hooks 'before-save-hook)
+         (run-hooks 'after-save-hook))
+        (t
+         (progn (save-buffer)
+                (shut-up (if-shebang-exec-otherwise-remove))
+                (message "%s" "File saved")))))
 
 (defmacro pen-defun (name arglist suggest-predicates &optional docstring &rest body)
   "Same as defun, except provide context predicates.

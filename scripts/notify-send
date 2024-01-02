@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# Emacs uses this command through the 'alert' package
+
 pen-rc-test notify || exit 0
 
 # Instead of using display-message, change the name of the session?

@@ -55,13 +55,15 @@
         (h_x/body))
     (h_nx/body)))
 
-(defun erase_starting_whitespace ()
-  "Use sed to erase starting whitespace."
-  (pen-region-pipe "sed 's/^\\s\\+//'"))
+(defun erase-starting-whitespace (input)
+  ;; (sed "s/^\\s\\+//" input)
+  (sn "sed 's/^\\s\\+//'" input))
 
-(defun erase_surrounding_whitespace ()
+;; I shoudl probably do this with elisp
+(defun erase-surrounding-whitespace (input)
   "Use sed to erase surrounding whitespace."
-  (concat "sed 's/\\s\\+$//'"))
+  ;; (concat "sed 's/\\s\\+$//'")
+  (sn "sed -e 's/^\\s\\+//' -e 's/\\s\\+$//'" input))
 
 (defun search_code ()
   (interactive)
@@ -124,6 +126,29 @@
 
 ;; This is very slow to load
 ;; (pen-load "$MYGIT/config/emacs/config/hydra-elfeed.el")
+
+(defhydra mz/hydra-elfeed ()
+   "filter"
+   ("c" (elfeed-search-set-filter "@6-months-ago +cs") "cs")
+   ("e" (elfeed-search-set-filter "@6-months-ago +emacs") "emacs")
+   ("d" (elfeed-search-set-filter "@6-months-ago +education") "education")
+   ("*" (elfeed-search-set-filter "@6-months-ago +star") "Starred")
+   ("M" elfeed-toggle-star "Mark")
+   ("A" (elfeed-search-set-filter "@6-months-ago") "All")
+   ("T" (elfeed-search-set-filter "@1-day-ago") "Today")
+   ("Q" bjm/elfeed-save-db-and-bury "Quit Elfeed" :color blue)
+   ("q" nil "quit" :color blue)
+   )
+
+(use-package elfeed
+  :ensure t
+  :bind (:map elfeed-search-mode-map
+          ("q" . bjm/elfeed-save-db-and-bury)
+          ("Q" . bjm/elfeed-save-db-and-bury)
+          ("m" . elfeed-toggle-star)
+          ("M" . elfeed-toggle-star)
+          ("j" . mz/hydra-elfeed/body)
+          ("J" . mz/hydra-elfeed/body)))
 
 (defvar norm/hydra-stack nil)
 
@@ -344,6 +369,7 @@ display values."
                          ("h" #'describe-mode "describe mode")
                          ("k" #'pen-ead-binding "ead binding")
                          ("K" #'pen-ead-binding "ead binding")
+                         ("a" #'pen-goto-package "goto package")
                          ;; ("K" #'pen-ead-binding-pen "ead binding pen")
                          ("f" #'goto-function-from-binding "goto function from binding")
                          ("w" #'edit-var-elisp "edit var containing elisp")

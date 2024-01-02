@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-/bin/ls -I ".git" "$@" | pavs
+/bin/ls -I ".git" -p "$@" | pavs

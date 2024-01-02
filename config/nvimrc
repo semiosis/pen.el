@@ -1305,8 +1305,13 @@ fun! GeneralSyntax()
     syntax match liesel "\c\<lisel\>"
 endf
 command! GeneralSyntax silent! call GeneralSyntax()
-call NumberSyntax()
-call GeneralSyntax()
+
+" call NumberSyntax()
+" call GeneralSyntax()
+
+" This works better:
+" windo silent! call GeneralSyntax()|au BufEnter * call GeneralSyntax()
+
 tnoremap <C-@> <C-Space>
 tmap <LeftMouse> <LeftMouse>
 " tmap <C-LeftMouse> <C-LeftMouse>
@@ -1724,6 +1729,38 @@ fun! Byte(...)
     return line2byte(line(indicator))+col(indicator)-1
 endf
 
+" TODO Do more work on this
+fun! VisualTL()
+    if Byte(".") != Byte("'<")
+        normal o
+    endif
+
+    if ! visualmode() == "V"
+        if col(".") > col("'>")
+            normal O
+        endif
+    endif
+endf
+
+" Reselect visual only works if the cursor is not moved;
+" You can't relocate and then run ReselectVisual
+fun! ReselectVisualTL()
+    " call Tv(visualmode())
+
+    if visualmode() == "V"
+       " we are in visual line mode
+        " normal! mxgv`x
+        normal! mxgv
+    elseif visualmode() == "\<C-V>"
+       " we are in visual block mode
+        normal! mxgv`x
+    else
+        normal! mxgvV
+    endif
+
+    " call VisualTL()
+endf
+
 " I can improve on these to be more picky
 fun! SearchUpDiffColPicky()
     let charatcursor = escape(CharAtCursor(), "*./\\")
@@ -1776,7 +1813,8 @@ cmap <silent> <Esc>d <Esc>dd
 imap <silent> <Esc>[2~ <Esc>ZX
 nmap <silent> <Esc>[2~ ZX
 cmap <silent> <Esc>t normal ge<CR>
-cmap <silent> <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
+" cmap <silent> <Esc>e silent! e! \| call NumberSyntax() \| call GeneralSyntax()<CR>
+cmap <silent> <Esc>e silent! e!<CR>
 cmap <silent> <Esc>w silent! w!<CR>
 cmap <silent> <Esc>; silent! wa!<CR>
 cmap <silent> <Esc>p normal <leader>tb<CR>
@@ -2208,7 +2246,7 @@ nmap <silent> <Leader>7 ;silent! call AmendRespawn()<CR>
 nmap <silent> <Leader>8 ;silent! call CommitRespawn()<CR>
 nmap <silent> <Leader>9 ;!git difftool HEAD\^\! -- %<CR><C-L>
 
-autocmd BufEnter * call GeneralSyntax()
+" autocmd BufEnter * call GeneralSyntax()
 
 " autocmd BufEnter * call NumberSyntax()
 " autocmd BufEnter * call GeneralSyntax()
@@ -2232,6 +2270,26 @@ endf
 MapM InsertParaAbove q o
 
 MapM FilterWithFzf q f
+
+MapM GeneralSyntax q y
+
+function! AmendRespawn()
+    !vc amend-respawn
+    redraw!
+endfunction
+
+function! CommitRespawn()
+    !vc commit-respawn
+    redraw!
+endfunction
+
+MapM CommitRespawn q 8
+MapM AmendRespawn q 7
+
+nnoremap <Esc>7 :silent! call AmendRespawn()<CR>
+nnoremap <Esc>8 :silent! call CommitRespawn()<CR>
+cmap <silent> <Esc>8 silent! call CommitRespawn()<CR>
+cmap <silent> <Esc>9 Git difftool HEAD\^\! -- %<CR><C-L>
 
 " This fixes select-mode when needing to enter dvorak letters (e.g. in
 " snipmate)
@@ -2302,7 +2360,7 @@ fun! GetCopySearchFileProgram()
      elseif &ft=='man'
         return "man"
      else
-        return "vim"
+        return "v"
      endif
 endf
 
@@ -2323,14 +2381,61 @@ fun! CopySearchFile(sel)
         let result=substitute(environ()["GY_CMD"], "^pvr ", "", "") . ' | vs +/"'.escape(escape(a:sel, '\\'),'`"$*[]\\').'"'
     else
         let result=GetCopySearchFileProgram() . ' +/"'.escape(escape(a:sel, '\\'),'`"$*[]\\').'" "'.GetCopySearchFilePath().'"'
-        " silent! call system('xc -m', 'vim +/"'.escape(a:sel, '`/"$*[]').'" "'.expand('%:p').'"')
+        " silent! call system('xc -m', 'v +/"'.escape(a:sel, '`/"$*[]').'" "'.expand('%:p').'"')
     endif
 
     silent! call system('xc -m', result)
-    " silent! call system('xc -m', 'vim +/"'.escape(a:sel,'`"$*').'" "'.expand('%:p').'"')
+    " silent! call system('xc -m', 'v +/"'.escape(a:sel,'`"$*').'" "'.expand('%:p').'"')
 
     if v:shell_error == 0
         echom "Copied: " . result
     endif
 endf
 xmap gy "zy;call CopySearchFile(@z)<CR>
+
+function! Babel(lang)
+    " Only operate in visual line mode
+    if visualmode() == "V"
+        let cmd = "org-template-gen " . a:lang . " | xc"
+        silent! call system(cmd, @z)
+    endif
+endfunction
+
+" Unfortulately, yanking moves the cursor again before reselectvisual
+" That's why it breaks sometimes.
+" Therefore, I can't use yanking as the mechanism.
+xmap Z/ "zy;silent! call Babel("sps") \| call ReselectVisualTL()<CR>P
+xmap Zb "zy;silent! call Babel("bash") \| call ReselectVisualTL()<CR>P
+xmap Ze "zy;silent! call Babel("emacs-lisp") \| call ReselectVisualTL()<CR>P
+xmap ZH "zy;silent! call Babel("haskell") \| call ReselectVisualTL()<CR>P
+xmap ZJ "zy;silent! call Babel("clojure") \| call ReselectVisualTL()<CR>P
+xmap ZT "zy;silent! call Babel("text") \| call ReselectVisualTL()<CR>P
+
+function! RunInTmux(cmd)
+    call system('tnw -icmd', a:cmd)
+endfunction
+
+fun! YRun()
+    normal Y"zy
+    call RunInTmux(@z)
+endf
+
+cmap <Esc>m <C-e><C-u>silent! call YRun()<CR>
+cmap <Esc>d <C-e><C-u>bd!<CR>
+
+
+nmap [h <Plug>GitGutterPrevHunk
+nmap ]h <Plug>GitGutterNextHunk
+
+" Fixes this
+" Error detected while processing function gitgutter#process_buffer[17]..gitgutter#diff#handler[15]..gitgutter#sign#update_signs[1]..<SNR>204_find_current_signs:
+let g:gitgutter_realtime = 0
+
+nmap <silent> <Leader>' ;silent! :call system("tm -f -d sph -c \"".expand('%:p:h')."\" -fargs git d -- " . system("xa realpath", expand('%'))[:-2] . " &")<CR>
+" nmap <silent> <Leader>' ;silent! call TmuxSplitH('git d -- '.system("xa realpath", expand('%'))[:-2])<CR>
+
+
+nnoremap <leader>um :%!mnm<CR>
+xnoremap <leader>um :!mnm<CR>
+nnoremap <leader>uu :%!umn<CR>
+xnoremap <leader>uu :!umn<CR>

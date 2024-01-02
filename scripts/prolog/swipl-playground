@@ -1,0 +1,31 @@
+#!/bin/bash
+
+dbpath="$1"
+if test -f "$dbpath"; then
+    fp="$dbpath"
+    rp="$(realpath "$fp")"
+    wd="$(dirname "$rp")"
+    fn="$(basename "$rp")"
+else
+    wd="$(td swipl)"
+    fn=db.pl
+fi
+
+export CWD="$wd"
+cd "$wd"
+
+touch "$fn"
+
+mant="${fn%.*}"
+
+sent="$(uuid)"
+
+sessions="$(nvt -pc cterm x -cd "$wd" -sh swipl -e "?-" -tr "$sent" -sl 1.2 -s "consult($mant)." -c m -i)"
+parent="$(p "$sessions" | sed -n 1p)"
+child="$(p "$sessions" | sed -n 2p)"
+# tmux splitw -t "$child" -v -c "$wd" x -shE "$(cmd cterm v "$fn")" -e Documents -tr "$sent" -i
+# tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm ttr "${sent}2" v -ft prolog "$fn"
+tmux splitw -t "$child" -v -c "$wd" twf "$sent" cterm v -ft prolog "$fn"
+# tmux splith -t "$child" -v -c "$wd" twf "${sent}2" cterm sp "$fn"
+tmux splitw -t "$child" -h -c "$wd" sp "$fn"
+TMUX= tmux attach -t "$parent"

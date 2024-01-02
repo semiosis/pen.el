@@ -1,49 +1,118 @@
+(require 'bible-mode)
+
+(defsetface bible-verse-ref
+            '((t
+               :foreground "#5555ff"))
+            "Bible verse ref"
+            :group 'bible-mode)
+
+(defsetface bible-verse-ref-notes
+            '((t
+               :foreground "green"))
+            "Bible verse ref with notes"
+            :group 'bible-mode)
+
+(defsetface bible-jesus-words
+            '((t
+               :foreground "#ff3333"
+               :weight bold
+               ;; :underline t
+               ))
+            "Jesus' Words"
+            :group 'bible-mode)
+
+(defsetface bible-divine-name
+            '((t
+               :foreground "orange"
+               :background "#552200"
+
+               :weight bold
+               ;; :underline t
+               ))
+            "Divine Name"
+            :group 'bible-mode)
+
 ;; Can't require sqlite here or it will break bible-mode on the host
 ;; (require 'sqlite-mode)
 
 ;; This is a new variable, nonexistent in the original package
 (defcustom default-bible-mode-book-module
-  "NASB"
+  ;; "NASB"
+  "RLT"
   "Default book module for Diatheke to query."
   :type '(choice (const :tag "None" nil)
                  (string :tag "Module abbreviation (e.g. \"KJV\")"))
   :group 'bible-mode)
+
+(setq default-bible-mode-book-module "RLT")
 
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
   (let ((lines (list2str codeslist)))
     (mapcar 'str2sym (str2lines (snc "bible-strongs-codes-sort" lines)))))
 
+(define-derived-mode bible-mode special-mode "Bible"
+  "Mode for reading the Bible.
+\\{bible-mode-map}"
+  (buffer-disable-undo)
+  (font-lock-mode t)
+  ;; (auto-fill-mode t)
+  (use-local-map bible-mode-map)
+  (setq buffer-read-only t)
+  (setq word-wrap t))
+
+(define-derived-mode bible-search-mode special-mode "Bible Search"
+  "Mode for performing Bible searches.
+\\{bible-search-mode-map}"
+  (buffer-disable-undo)
+  (font-lock-mode t)
+  ;; (auto-fill-mode t)
+  (use-local-map bible-search-mode-map)
+  (setq buffer-read-only t)
+  (setq word-wrap t))
+
 ;; sort
 ;;
 (defset bible-strongs-always-show-codelist
-  (bible-strongs-codes-sort
-   '(G25 G859 G2983 G1431
-     G1679 G5287
-     G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
-     G227 G228 G266 G281 G286 G386 G458 G487 G517
-     G571 G721 G746 G757 G758 G907 G908 G932 G935
-     G948 G1035 G1080 G1100 G1103 G1107 G1108 G1110
-     G1140 G1169 G1169 G1208 G1242 G1258 G1336 G1390
-     G1391 G1401 G1410 G1411 G1438 G1438 G1479 G1496
-     G1497 G1504 G1515 G1680 G1781 G1785 G1799 G1849
-     G1922 G2032 G2032 G2041 G2096 G2098 G2150 G2198
-     G2222 G2226 G2246 G2250 G2288 G2303 G2307 G2316
-     G2374 G2378 G2379 G2409 G2413 G2424 G2545 G2588
-     G2730 G2809 G2839 G2842 G2889 G2919 G2937 G2962
-     G3041 G3056 G3140 G3313 G3321 G3340 G3404 G3417
-     G3439 G3466 G3485 G3528 G3609 G3739 G3741 G3772
-     G3841 G3870 G3900 G3939 G3956 G3962 G4073 G4102
-     G4103 G4138 G4151 G4178 G4190 G4202 G4203 G4205
-     G4276 G4375 G4416 G4442 G4487 G4561 G4561 G4592
-     G4633 G4637 G4678 G4716 G4891 G4982 G4990 G4991
-     G5046 G5048 G5055 G5087 G5204 G5206 G5206 G5331
-     G5333 G5360 G5368 G5399 G5406 G5426 G5457 G5479
-     G5485 G5547 G5571 G5578 G5583 G5590 G3614 G4160
-     G2570 G4550 G3551 G727 G154 G1097 G5429 G4160 G1857 G4655
-     G1342 G2631 G1343 G4828
-     H1 H410 H3068 H430 H1004 H1121 H3801 H3548 H4687 H5411 H5921 H6440 H6942
-     H8034 H8130 H8544)))
+        (bible-strongs-codes-sort
+         '(G25 G859 G2983 G1431
+               G1679 G5287
+               G299 G26 G38 G40 G53 G76 G129 G165 G166 G169 G225
+               G227 G228 G266 G281 G286 G386
+
+               ;; https://www.sermonindex.net/modules/articles/index.php?view=article&aid=34351
+               G458
+
+               G487 G517
+               G571
+
+               ;; II Corinthians 8:2
+               ;; TODO Make G572 show as = generosity
+               ;; https://youtu.be/aUPSZBm1OjY?t=2797
+               G572
+
+               G721 G746 G757 G758 G907 G908 G932 G935
+               G948 G1035 G1080 G1100 G1103 G1107 G1108 G1110
+               G1140 G1169 G1169 G1208 G1242 G1258 G1336 G1390
+               G1391 G1401 G1410 G1411 G1438 G1438 G1479 G1496
+               G1497 G1504 G1515 G1680 G1781 G1785 G1799 G1849
+               G1922 G2032 G2032 G2041 G2096 G2098 G2150 G2198
+               G2222 G2226 G2246 G2250 G2288 G2303 G2307 G2316
+               G2374 G2378 G2379 G2409 G2413 G2424 G2545 G2588
+               G2730 G2809 G2839 G2842 G2889 G2919 G2937 G2962
+               G3041 G3056 G3140 G3313 G3321 G3340 G3404 G3417
+               G3439 G3466 G3485 G3528 G3609 G3739 G3741 G3772
+               G3841 G3870 G3900 G3939 G3956 G3962 G4073 G4102
+               G4103 G4138 G4151 G4178 G4190 G4202 G4203 G4205
+               G4276 G4375 G4416 G4442 G4487 G4561 G4561 G4592
+               G4633 G4637 G4678 G4716 G4891 G4982 G4990 G4991
+               G5046 G5048 G5055 G5087 G5204 G5206 G5206 G5331
+               G5333 G5360 G5368 G5399 G5406 G5426 G5457 G5479
+               G5485 G5547 G5571 G5578 G5583 G5590 G3614 G4160
+               G2570 G4550 G3551 G727 G154 G1097 G5429 G4160 G1857 G4655
+               G1342 G2631 G1343 G4828
+               H1 H410 H3068 H430 H1004 H1121 H3801 H3548 H4687 H5411 H5921 H6440 H6942
+               H8034 H8130 H8544)))
 
 (comment
  (defset bible-strongs-always-show-code-tuples
@@ -68,7 +137,7 @@
        (slug (slugify buffername_ref))
        (buf (or buffer
                 (get-buffer-create "*bible*"))))
-    
+
     (bible-rename-buffer buffername_ref buf)
     (set-buffer buf)
     (setq module (or module
@@ -90,10 +159,24 @@
         (set-window-buffer (get-buffer-window (current-buffer)) buf)))
     buf))
 
+(defun bible-mode-select-module()
+  "Queries user to select a new reading module for the current `bible-mode' buffer."
+  (interactive)
+  (let* (
+         (module
+          (fz (bible-mode--list-biblical-modules) nil nil "Module: ")
+          ;; (completing-read "Module: " (bible-mode--list-biblical-modules))
+          ))
+    (setq bible-mode-book-module module)
+    (bible-mode--display)))
+
 (defun bible-open-version (version)
-  (interactive (list (completing-read "Module: " (bible-mode--list-biblical-modules))))
+  (interactive (list
+                (fz (bible-mode--list-biblical-modules) nil nil "Module: ")
+                ;; (completing-read "Module: " (bible-mode--list-biblical-modules))
+                ))
   (if (not version)
-      (setq version "NASB"))
+      (setq version (or default-bible-mode-book-module "NASB")))
 
   (let ((bible-mode-book-module version))
     (bible-open nil nil version)))
@@ -223,15 +306,23 @@
              (ref (s-replace-regexp ": " "" (buffer-substring start end)))
              (fp (bible-mode-get-notes-fp-for-verse ref)))
         (if (f-exists-p fp)
-            (put-text-property start end 'font-lock-face '(:foreground "green"))
+            (put-text-property start end 'font-lock-face
+                               'bible-verse-ref-notes
+                               ;; '(:foreground "green")
+                               )
 
           ;; #rrggbb works with truecolor, and to get nice blues, truecolor is required
           ;; (put-text-property start end 'font-lock-face '(:foreground
           ;;                                                ;; "#443344"
           ;;                                                "#222255"))
-          (put-text-property start end 'font-lock-face '(:foreground
-                                                         ;; "#443344"
-                                                         "#333377"))))
+
+          ;; This is a good colour on both xterm and alacritty
+          (put-text-property start end 'font-lock-face
+                             'bible-verse-ref
+                             ;; '(:foreground
+                             ;;   ;; "#443344"
+                             ;;   "#5555ff")
+                             )))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 
@@ -290,20 +381,18 @@
   (setq-local bible-mode-search-mode searchmode)
   (goto-char (point-min)))
 
-(defun nasb ()
-  (interactive)
-  (if (pen-selected-p)
-      (call-interactively-with-prefix-and-parameters 'bible-search-phrase (prefix-numeric-value current-prefix-arg) (pen-selection))
-    ;; (bible-search-phrase (pen-selection))
-    (bible-open-version "NASB")))
+(defmacro defun-bible-open-version (module-name module-sym)
+  `(defun ,module-sym ()
+     (interactive)
+     (if (selected-p)
+         (call-interactively-with-prefix-and-parameters 'bible-search-phrase (prefix-numeric-value current-prefix-arg) (pen-selection))
+       ;; (bible-search-phrase (pen-selection))
+       (bible-open-version ,module-name))))
 
-(defun kjv ()
-  (interactive)
-  (bible-open-version "KJV"))
-
-(defun bsb ()
-  (interactive)
-  (bible-open-version "engbsb2020eb"))
+(defun-bible-open-version "NASB" nasb)
+(defun-bible-open-version "KJV" kjv)
+(defun-bible-open-version "engbsb2020eb" bsb)
+(defun-bible-open-version "RLT" rlt)
 
 ;; TODO But I also need to grep for all of these, when looking for verse references
 ;; https://www.logos.com/bible-book-abbreviations
@@ -529,7 +618,7 @@
          (optimal_name (concat "*bible-" slug "*"))
          (next_name (generate-new-buffer-name
                      optimal_name)))
-    
+
     (if (not (string-equal current_name optimal_name))
         (with-current-buffer buf
           (rename-buffer next_name)))
@@ -709,7 +798,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
    (interactive)
    (setq buffer-read-only nil)
    (erase-buffer)
-           
+
    (let ((tmux_win (tm-get-window)))
 
      (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
@@ -756,18 +845,42 @@ creating a new `bible-mode' buffer positioned at the specified verse."
        (rename-buffer bufname t)
        (tmux-rename-current-window tmuxname tmux_win)))
 
-   (run-hooks 'bible-mode-hook)))
+   (run-hooks 'bible-mode-hook)
+   (pen-clear-message)))
+
+(defun pen-highlight-line ()
+  (interactive)
+  ;; twice so the cursor moves past the initial whitespace
+  (pen-comint-bol)
+  (pen-comint-bol)
+  (cua-set-mark)
+  (end-of-line))
+
+(defun spinner-start-around-advice (proc &rest args)
+  (if (not (display-graphic-p))
+      (pen-snc "spinner-start -b"))
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'spinner-start :around #'spinner-start-around-advice)
+;; (advice-remove 'spinner-start #'spinner-start-around-advice)
+
+(defun spinner-stop-around-advice (proc &rest args)
+  (if (not (display-graphic-p))
+      (pen-snc "spinner-stop"))
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'spinner-stop :around #'spinner-stop-around-advice)
+;; (advice-remove 'spinner-stop #'spinner-stop-around-advice)
 
 (defun bible-mode--display (&optional verse)
   "Renders text for `bible-mode'"
   (interactive)
   (setq buffer-read-only nil)
   (erase-buffer)
+  (deselect)
 
   (message "Rendering page...")
   (spinner-start)
-  ;; (spinner-stop)
-  (pen-snc "spinner-start -b")
 
   (insert (bible-mode--exec-diatheke (concat "Genesis " (number-to-string bible-mode-global-chapter)) nil nil nil bible-mode-book-module))
   (let* (
@@ -786,27 +899,43 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (setq mode-name (concat "Bible (" bible-mode-book-module ")"))
   (setq buffer-read-only t)
   (goto-char (point-min))
-  ;; (tv (concat ":" (number-to-string verse) ": "))
-  (if verse
+  ;; (message (concat ":" (number-to-string verse) ": "))
+
+  (if (and verse (numberp verse))
       (progn
         ;; Can't use ": " because sometimes like with Psalms 40:1
         ;; there is no space
-        (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string))))
+        ;; (goto-char (string-match (regexp-opt `(,(concat ":" (number-to-string verse) ":"))) (buffer-string)))
+        (goto-char (string-match (concat ":" (str verse) ":") (buffer-string))))
     (goto-char (point-min)))
 
   (run-hooks 'bible-mode-hook)
   (spinner-stop)
-  (pen-snc "spinner-stop")
 
-  (if (and
-       verse
-       (re-match-p ":" verse))
+  (pen-clear-message)
+
+  ;; Sometimes 'verse' is just a number
+  (if (or (and
+           verse
+           (and verse (numberp verse)))
+          (and
+           verse
+           (re-match-p ":" (str verse))))
       (progn
-        (beginning-of-line)
-        (cua-set-mark)
-        (end-of-line)
-        (recursive-narrow-or-widen-dwim)
-        (deselect))))
+        (pen-highlight-line)
+
+        ;; Don't actually narrow it right now
+        ;; because it's half-baked.
+        ;; Instead, highlight the line.
+        ;; (pen-copy-line)
+
+        (comment
+         (progn
+           (beginning-of-line)
+           (cua-set-mark)
+           (end-of-line)
+           (recursive-narrow-or-widen-dwim)
+           (deselect))))))
 
 ;; Use hooks instead
 ;; nadvice - proc is the original function, passed in. do not modify
@@ -814,10 +943,32 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 ;;   (let ((res (apply proc args)))
 ;;     ;; (pen-generate-glossary-buttons-manually)
 ;;     ;; (message "%s" "Done.")
-    
+
 ;;     res))
 ;; (advice-add 'bible-mode--display :around #'bible-mode--display-around-advice)
-(advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
+;; (advice-remove 'bible-mode--display #'bible-mode--display-around-advice)
+
+(defset bible-mode-fast-enabled t)
+
+(defun bible-mode-fast-toggle ()
+   (interactive)
+   (if bible-mode-fast-enabled
+       (add-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually t)
+     (remove-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually))
+   (defset bible-mode-fast-enabled (not bible-mode-fast-enabled))
+   (if bible-mode-fast-enabled
+       (message "%s" "bible-mode-fast enabled")
+     (message "%s" "bible-mode-fast disabled")))
+
+(add-hook 'bible-mode-hook 'ov-highlight-load)
+
+
+;; (defun pen-after-emacs-loaded-setup-biblemode ()
+;;   (interactive)
+;;   (bible-mode-fast-toggle)
+;;   (bible-mode-fast-toggle))
+
+;; (add-hook 'emacs-startup-hook 'pen-after-emacs-loaded-setup-biblemode t)
 
 
 ;; TODO Make it so God's names are all highlighted by passing each bit of text through a matcher?
@@ -867,9 +1018,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
             ;; (lo iproperties)
             (cond
              ((plist-get iproperties 'jesus)
-              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "red" :background "black")))
+              ;; :background "#110000"
+              ;; (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "#ff3333"))
+              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face 'bible-jesus-words))
              ((plist-get iproperties 'divinename)
-              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "orange")))
+              ;; (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face '(:foreground "orange" :background "#552200"))
+              (put-text-property (- (point) (length (string-trim-right (s-replace-regexp "\n.*" "" subnode)))) (point) 'font-lock-face 'bible-divine-name)
+              )
+
              ;; (verse-start
              ;;  t
              ;;  ;; (let* (
@@ -893,22 +1049,23 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
         (if (and
              (not (stringp subnode))
+             (not bible-mode-fast-enabled)
              (or bible-mode-word-study-enabled
                  (member (dom-attr subnode 'savlm)
                          bible-strongs-always-show-xmllist)))
             ;; (plist-get iproperties 'jesus)
             ;; (plist-get iproperties 'divinename)
-            
+
             ;;word study. Must be done after subnode is inserted recursively.
 
             (let* (
                    (savlm (dom-attr subnode 'savlm))
-              
+
                    (iter 0)
                    floating
                    refstart
                    refend)
-              (if savlm
+              (if (and (not bible-mode-fast-enabled) savlm)
                   ;; code
                   (progn
                     ;; Greek, hebrew and lemma are independant of each other
@@ -986,11 +1143,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                    refend (point))
                              (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
                              (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))
-          (insert )))))
+          (insert)))))
 
   (if (equal (dom-tag node) 'title) ;;newline at end of title (i.e. those in Psalms)
       (insert "\n"))
-  (redisplay)
+  (if (not bible-mode-fast-enabled)
+      (redisplay))
   t)
 
 (defun bible-search (query &optional module searchtype)
@@ -1026,7 +1184,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (nasb)
   (bible-mode-select-book))
 
-(defun fz-bible-book (prompt)
+(defun fz-bible-book (&optional prompt)
   (setq prompt (or prompt "Book: "))
   (completing-read prompt bible-mode-book-chapters nil t))
 
@@ -1156,11 +1314,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            (is_greek (bible-term-greek-get term_code))
            (is_hebrew (bible-term-hebrew-get term_code))
            (t nil)))
-         (word (if info
-                   (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+         (word
+          ;; This isn't the main bottleneck
+          (if info
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
     word))
 
+;; This speeds it up a lot
+;; I should ensure that the memoization databases are saved on the host
 (memoize 'bible-term-get-word)
+;; (memoize-restore 'bible-term-get-word)
 
 ;; TODO Make it so it resumes the same place
 (defun bible-mode-toggle-word-study()
@@ -1196,7 +1359,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            ((>= (prefix-numeric-value current-prefix-arg) 4) "-c")
            (t nil)))
          (current-prefix-arg nil))
-  
+
     (tpop (bible-verse-get-quote-cmd concordance_arg)
           nil
           :x_pos "M+1"
@@ -1204,24 +1367,37 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           :width_pc 50
           :height_pc 20)))
 
+(defun count-chars (char str)
+  (let ((s (char-to-string char))
+        (count 0)
+        (start-pos -1))
+    (while (setq start-pos (string-search s str (+ 1 start-pos)))
+      (setq count (+ 1 count)))
+    count))
+
 (defun tpop-fit-vim-string (s)
-  (let* ((nlines (snc "wc -l" s))
+  (let* ((nlines
+          ;; (snc "wc -l" s)
+          (count-chars ?\n s))
          (lines (string2list s))
          (first_line (car lines))
-         (slug (slugify first_line)))
+         (slug (slugify first_line t)))
     (tpop
-     (concat "pa -E \"tf -sha -X " slug " txt | xa colvs -nls -num\"")
+     ;; (concat "pa -E \"tf -sha -X " slug " txt | xa colvs -nls -num\"")
+     (concat "pa -E \"tf -sha -X " slug " txt | xa v -nls -num\"")
      s
      :x_pos "M+1"
      :y_pos "M+1"
      :bg 233
      :width_pc 55
-     :height_pc (+ 4 (string-to-int nlines))
+     :height_pc (+ 4 ;; (string-to-int nlines)
+                   nlines)
      ;; 20
      :style "heavy")))
 
-(defun bible-mode-tpop ()
-  (interactive)
+(defun bible-mode-tpop (ref)
+  (interactive (list (or (bible-mode-copy-link)
+                         (read-string-hist "Bible ref: "))))
   (let* ((concordance_arg
           (cond
            ((>= (prefix-numeric-value current-prefix-arg) 64) "-cac")
@@ -1233,12 +1409,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                   "-ca"
                 "-c"))))
          (current-prefix-arg nil)
-         (s (snc (cmd "nem" "fast" "ebible"
+         (s (snc (cmd "bible-tpop-lookup"
                       concordance_arg
-                      "-m" bible-mode-book-module (bible-mode-copy-link)))))
+                      "-m" bible-mode-book-module ref))))
 
     (tpop-fit-vim-string s)
-  
+
     ;; (tpop (cmd "nem" "fast" "ebible"
     ;;            concordance_arg
     ;;            "-m" bible-mode-book-module (bible-mode-copy-link))
@@ -1263,9 +1439,123 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
    ;; (t nil)
    ))
 
+(comment
+ (defmacro closure (vars &rest body)
+   ""
+   (let ((assignments (-zip-lists vars (mapcar 'eval vars))))
+     (tv
+      `(lambda ()
+         (interactive)
+         (let ,assignments
+           ,@body)))))
+
+ ;; This will capture a closure lambda, which I can rerun independently
+ (defmacro capture (vars &rest body)
+   ""
+   (let* ((assignments (-zip-lists vars (mapcar 'eval vars)))
+          (f `(lambda ()
+                (interactive)
+                (let ,assignments
+                  ,@body))))
+     (tv f)
+     (f)))
+
+ (defmacro memo (vars &rest body)
+   ""
+   (let* ((assignments (-zip-lists vars (mapcar 'eval vars)))
+          (bodyform `(let ,assignments
+                       ,@body))
+          (form `(dff
+                  (eval
+                   ',bodyform)))
+          (f_sym (dff-sym bodyform))
+          ;; (show_form (tv form))
+          ;; idempotent (I think it is)
+          (f_sym
+           (if (commandp f_sym)
+               f_sym
+             (progn
+               (tv "redefining")
+               (eval form)))))
+
+     ;; (tv f_sym)
+     ;; (tv f_sym)
+     ;; Hopefully, this is idempotent (I think it is)
+     ;; (memoize-restore f_sym)
+     (if (not (memoize-exists-p f_sym))
+         (memoize f_sym))
+     (tv f_sym)
+     ;; does this execute the memoized version? It *SHOULD*
+     `(,f_sym)))
+
+ (defmacro unmemo (vars &rest body)
+   ""
+   (let* ((assignments (-zip-lists vars (mapcar 'eval vars)))
+          (bodyform `(let ,assignments
+                       ,@body))
+          (form `(dff
+                  (eval
+                   ',bodyform)))
+          (f_sym (dff-sym bodyform))
+          ;; (show_form (tv form))
+          ;; idempotent (I think it is)
+          (f_sym
+           (if (commandp f_sym)
+               f_sym
+             ;; (eval form)
+             )))
+
+     ;; (tv f_sym)
+     ;; Hopefully, this is idempotent (I think it is)
+     (if f_sym
+         (if (memoize-exists-p f_sym)
+             (memoize-restore f_sym)))
+     nil
+     ;; (ignore-errors (memoize f_sym))
+     ;; `(,f_sym)
+     ))
+
+ ;; TODO Make the memo macro
+ (defun test-memo ()
+   (interactive)
+   (let ((info_a "about a\nstory book")
+         (info_b "about a\nmystery"))
+     (unmemo (info_a info_b)
+             (tv "firstrun")
+             (snc "tr -s a A" (car (str2lines (concat info_a info_b))))))
+   (let ((info_a "about a\nstory book")
+         (info_b "about a\nmystery"))
+     (memo (info_a info_b)
+           (tv "firstrun")
+           (snc "tr -s a A" (car (str2lines (concat info_a info_b))))))))
+
+(defun bible-e-chapter-titles ()
+  (interactive)
+  (if (interactive-p)
+      (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+    (cat "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
+
+(defun bible-e-outlines ()
+  (interactive)
+  (if (interactive-p)
+      (find-file (umn "$PEN/documents/notes/ws/peniel/Bible-outlines.txt"))
+    (cat "$PEN/documents/notes/ws/peniel/Bible-outlines.txt")))
+
+;; (memoize-restore 'dff-let-nil-let-info-a-about-a-nstory-book-info-b-about-a-nmystery-tv-firstrun-snc-tr-s-a-a-car-str2lines-concat-info-a-info-b-)
+;; (memoize 'dff-let-nil-let-info-a-about-a-nstory-book-info-b-about-a-nmystery-tv-firstrun-snc-tr-s-a-a-car-str2lines-concat-info-a-info-b-)
+
+(defun bible-mode-next-book ()
+  "Pages to the next book for the active `bible-mode' buffer."
+  (interactive)
+
+  bible-mode-book-chapters
+
+  (bible-mode--set-global-chapter (+ bible-mode-global-chapter 1)))
+
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
-(define-key bible-mode-map (kbd "M-v") 'view-notes-fp-verse-v)
+(define-key bible-mode-map (kbd "M-v") nil)
+(define-key bible-mode-map (kbd "M-V") 'view-notes-fp-verse-v)
 (define-key bible-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
@@ -1273,11 +1563,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-mode-map "n" 'bible-mode-next-chapter)
+;; next title / outline would also be cool
+(define-key bible-mode-map "N" 'bible-mode-next-book)
 (define-key bible-mode-map "p" 'bible-mode-previous-chapter)
 (define-key bible-mode-map "b" 'bible-mode-select-book)
 (define-key bible-mode-map "g" 'bible-mode--display)
 (define-key bible-mode-map "c" 'bible-mode-select-chapter)
 (define-key bible-mode-map "s" 'bible-search-phrase)
+(define-key bible-mode-map "z" 'bible-mode-fuzzy-search)
 (define-key bible-mode-map "S" 'bible-search-lucene)
 (define-key bible-mode-map "m" 'bible-mode-select-module)
 ;; (define-key bible-mode-map "x" 'bible-mode-split-display)
@@ -1285,6 +1578,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map "l" 'bible-mode-lookup-ref)
 
 (define-key bible-search-mode-map "s" 'bible-search-phrase)
+(define-key bible-search-mode-map "z" 'bible-mode-fuzzy-search)
 (define-key bible-search-mode-map "S" 'bible-search-lucene)
 (define-key bible-search-mode-map "b" 'bible-search-mode-select-book)
 (define-key bible-search-mode-map "x" 'bible-mode-cross-references)
@@ -1292,7 +1586,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-search-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-search-mode-map (kbd "M-e") 'view-notes-fp-verse)
-(define-key bible-search-mode-map (kbd "M-v") 'view-notes-fp-verse-v)
+(define-key bible-search-mode-map (kbd "M-v") nil)
+(define-key bible-search-mode-map (kbd "M-V") 'view-notes-fp-verse-v)
 (define-key bible-search-mode-map (kbd "e") 'bible-mode-open-notes-for-verse)
 (define-key bible-search-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-search-mode-map (kbd "d") 'bible-mode-toggle-word-study)
@@ -1301,17 +1596,54 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-search-mode-map (kbd "RET") 'bible-search-mode-follow-verse)
 
-(define-key bible-mode-greek-keymap (kbd "RET") (λ ()
-                                                  (interactive)
-                                                  (bible-term-greek (replace-regexp-in-string "[^0-9]*" "" (thing-at-point 'word t)))))
+(defun bible-term-greek-at-point ()
+  (interactive)
+  (bible-term-greek (replace-regexp-in-string "[^0-9]*" "" (thing-at-point 'word t))))
 
+(defun bible-term-hebrew-at-point ()
+  (interactive)
+  (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t))))
+
+(define-key bible-mode-greek-keymap (kbd "RET") 'bible-term-greek-at-point)
 (define-key bible-mode-lemma-keymap (kbd "RET") (λ ()(interactive)))
+(define-key bible-mode-hebrew-keymap (kbd "RET") 'bible-term-hebrew-at-point)
 
-(define-key bible-mode-hebrew-keymap (kbd "RET") (λ ()
-                                                   (interactive)
-                                                   (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t)))))
+(define-key bible-mode-greek-keymap (kbd "<mouse-1>") 'bible-term-greek-at-point)
+(define-key bible-mode-lemma-keymap (kbd "<mouse-1>") (λ ()(interactive)))
+(define-key bible-mode-hebrew-keymap (kbd "<mouse-1>") 'bible-term-hebrew-at-point)
 
-(define-key global-map (kbd "H-v") 'nasb)
+;; (define-key global-map (kbd "H-v") 'nasb)
+(define-key global-map (kbd "H-v") 'rlt)
 (define-key bible-mode-map (kbd "v") 'bible-mode-select-module)
+
+(defun pen-bible-set-margins ()
+  ;; perfect-margin-mode doesn't work for Bible-mode.
+  ;; (perfect-margin-mode 1)
+
+  ;; I have to do it manually.
+  ;; (set-window-margins (selected-window) 20 20)
+  ;; But there are still issues with it.
+  )
+;; (add-hook 'bible-mode-hook 'pen-bible-set-margins)
+(remove-hook 'bible-mode-hook 'pen-bible-set-margins)
+
+;; (bible-mode-fuzzy-search "out of my hand")
+(defun bible-mode-fuzzy-search (query)
+  (interactive (list (read-string-hist "Bible fuzzy phrase search:")))
+  (let* ((results
+          (sor
+           (if (>= (prefix-numeric-value current-prefix-arg) 4)
+               (pen-snc (concat "ocif diatheke-regex-search-multi " query))
+             (pen-snc (concat "ocif diatheke-regex-search-multi -fv " default-bible-mode-book-module " " query)))))
+         (sel
+          (if results
+              (fz results nil nil "Bible fuzzy phrase search results:"))))
+
+    (if (sor sel)
+        (let ((ref
+               (s-replace-regexp ": $" "" (s-replace-regexp "\\(.*[0-9]: \\).*" "\\1" sel))))
+          (bible-mode-lookup-ref ref)))))
+
+(define-key bible-mode-map (kbd "F") 'bible-mode-fast-toggle)
 
 (provide 'pen-bible-mode)

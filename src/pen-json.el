@@ -1,4 +1,5 @@
 (require 'json)
+(use-package json-mode :ensure t)
 
 ;; Just dont run the json lsp server
 (define-derived-mode jsonl-mode json-mode "JSONl"

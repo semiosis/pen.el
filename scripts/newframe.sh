@@ -1,6 +1,9 @@
 #!/bin/bash
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
+
+export NO_AUTO_START=n
 
 sn="$(basename "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
@@ -63,6 +66,8 @@ unset EMACSD
 test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
+
+export PENELD="$EMACSD/pen.el"
 
 unset VIMCONFIG
 test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"

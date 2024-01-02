@@ -99,7 +99,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.pl\\|\\.psgi\\|\\.pm\\)\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.pro\\|\\.problog\\)\\'" . prolog-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.yas\\|\\.snippet\\)\\'" . snippet-mode))
-(add-to-list 'auto-mode-alist '("\\(shellrc\\|\\.shell_aliases\\|profile\\|\\.profile\\|\\.bashrc\\|\\.bash_logout\\|\\.bash_profile\\|\\.zshrc\\|\\.shell_environment\\|\\.shell_functions\\|zshrc\\)\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\(shellrc\\|\\.shell_aliases\\|profile\\|\\.profile\\|scriptrc\\|bashrc\\|\\.bashrc\\|\\.bash_logout\\|\\.bash_profile\\|\\.zshrc\\|\\.shell_environment\\|\\.shell_functions\\|zshrc\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.aderc\\)\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.Xresources\\|\\.Xdefaults\\)\\'" . conf-xdefaults-mode))
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
@@ -127,6 +127,7 @@
 (add-to-list 'auto-mode-alist '("\\.dbscheme\\'" . dbscheme-mode))
 
 (add-to-list 'auto-mode-alist '("\\.gnus\\'" . emacs-lisp-mode))
+(add-to-list 'auto-mode-alist '("\\.sexp\\'" . emacs-lisp-mode))
 
 ;; Hash table stored in file
 (add-to-list 'auto-mode-alist '("\\.elht\\'" . emacs-lisp-mode))
@@ -169,6 +170,7 @@
   (visual-line-mode -1))
 
 (add-hook 'dired-mode-hook 'disable-visual-line-mode)
+(add-hook 'bible-mode-hook 'disable-visual-line-mode)
 
 (defun pen-emacs-lisp-mode-hook-body ()
   "What happens when emacs lisp mode loads"
@@ -240,6 +242,8 @@
 
 (add-hook 'pen-lisp-mode-hook #'pen-lisp-mode-autoload)
 (add-hook 'emacs-lisp-mode-hook 'org-link-minor-mode)
+;; (add-hook 'ebdb-mode-hook 'org-link-minor-mode)
+;; (remove-hook 'ebdb-mode-hook 'org-link-minor-mode)
 (remove-hook 'clojure-mode-hook 'org-link-minor-mode)
 
 (add-to-list 'auto-minor-mode-alist '("\\(\\.go\\)\\'" . org-link-minor-mode))

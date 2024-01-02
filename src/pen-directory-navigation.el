@@ -4,6 +4,7 @@
 
 ;; This is not the same as change dir / cd. If you're in ranger, then open with ranger, etc.
 (defun pen-open-dir (dir)
+  (interactive (list (counsel-read-directory-name "Pen open dir:")))
   (setq dir (pen-umn dir))
   (cond
    ;; Both dired-mode and ranger-mode can be true at the same time. Therefore, ranger must precede

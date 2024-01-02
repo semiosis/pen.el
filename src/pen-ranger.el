@@ -277,7 +277,7 @@ is set, show literally instead of actual buffer."
 (define-key ranger-mode-map (kbd "C-p") nil)
 (define-key ranger-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key ranger-mode-map (kbd "r") 'pen-ranger-to-dired)
-(define-key ranger-mode-map (kbd "M-r") 'pen-sps-ranger)
+;; (define-key ranger-mode-map (kbd "M-r") 'pen-sps-ranger)
 (define-key ranger-mode-map (kbd "M-1") 'ranger-tpreview)
 
 (define-key global-map (kbd "M-R") 'ranger)

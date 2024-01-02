@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+is_tty "$@"

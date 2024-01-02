@@ -11,6 +11,10 @@ clear
 # T  pen-tm sel localhost_current:trello-my-cards.0
 # S  pen-tm sel localhost_im:slack.0
 # S  pen-tm sel localhost_im:slack
+# v  pen-tm sel ':investigate.org*'
+# M  pen-tm sel ':algorithms.org*'
+# P  pen-tm sel ':plan.org*'
+# O  pen-tm sel ':models.org*'
 read -r -d '' options <<HEREDOC
 .  EDIT
 d  dir
@@ -19,7 +23,13 @@ f  pen-tm find-window-from-session -no-activate -no-split
 I  pen-tm sel localhost_im:finch
 g  pen-tm sel ':glossary.txt*' || nw v $NOTES/glossary.txt
 B  pen-tm sel ':org-brain'
+M  tm sel ':meditate.org*'
+v  tm sel ':devotionals.org*'
+u  tm sel ':bible-studies.org*'
+P  tm sel ':prayers.org*'
 D  pen-tm sel ':dreams.org*'
+O  tm sel ':look.org*'
+J  nw zcd $NOTES/ws/journal
 7  pen-tm sel ':biochemistry.txt'
 b  pen-tm sel localhost_ws:blog || nw orspv $HOME/blog/posts
 j  pen-tm sel localhost_ws:jobs
@@ -34,12 +44,8 @@ i  pen-tm sel localhost_im:irssi
 S  pen-tm sel localhost:status
 m  ranger $NOTES/ws/music
 e  pen-tm sel ':explanations.txt*'
-v  pen-tm sel ':investigate.org*'
-O  pen-tm sel ':models.org*'
-M  pen-tm sel ':algorithms.org*'
 q  pen-tm sel ':questions.org*'
 p  pen-tm sel ':perspective.org*'
-P  pen-tm sel ':plan.org*'
 l  pen-tm sel ':links.org*'
 L  pen-tm sel ':learn.org*'
 t  pen-tm sel ':todo.org*'
@@ -74,6 +80,8 @@ read -n1 d; test "$d" = "" && read -n1 d
 # clear
 
     # T) cmd="pen-tm sel localhost_current:trello-my-cards.0" ;;
+    # P) cmd="pen-tm sel ':plan.org*'" ;;
+    # O) cmd="pen-tm sel ':models.org*'" ;;
 case "$d" in
     .) cmd="v $0" ;;
     d) cmd="sh-dir" ;;
@@ -81,7 +89,6 @@ case "$d" in
     f) cmd="pen-tm find-window-from-session -no-activate -no-split" ;;
     I) cmd="pen-tm sel localhost_im:finch" ;;
     g) cmd="pen-tm sel ':glossary.txt*' || nw v $NOTES/glossary.txt" ;;
-    D) cmd="pen-tm sel ':dreams.org*'" ;;
     B) cmd="pen-tm sel ':org-brain'" ;;
     7) cmd="pen-tm sel ':biochemistry.txt'" ;;
     b) cmd="pen-tm sel localhost_ws:blog || nw orspv $HOME/blog/posts" ;;
@@ -98,12 +105,15 @@ case "$d" in
     S) cmd="pen-tm sel localhost:status" ;;
     m) cmd="ranger $NOTES/ws/music" ;;
     e) cmd="pen-tm sel ':explanations.txt*'" ;;
-    v) cmd="pen-tm sel ':investigate.org*'" ;;
-    O) cmd="pen-tm sel ':models.org*'" ;;
-    M) cmd="pen-tm sel ':algorithms.org*'" ;;
+    M) cmd="tm sel ':meditate.org*'" ;;
+    v) cmd="tm sel ':devotionals.org*'" ;;
+    u) cmd="tm sel ':bible-studies.org*'" ;;
+    P) cmd="tm sel ':prayers.org*'" ;;
+    D) cmd="tm sel ':dreams.org*'" ;;
+    O) cmd="tm sel ':look.org*'" ;;
+    J) cmd="nw zcd $NOTES/ws/journal" ;;
     q) cmd="pen-tm sel ':questions.org*'" ;;
     p) cmd="pen-tm sel ':perspective.org*'" ;;
-    P) cmd="pen-tm sel ':plan.org*'" ;;
     l) cmd="pen-tm sel ':links.org*'" ;;
     L) cmd="pen-tm sel ':learn.org*'" ;;
     t) cmd="pen-tm sel ':todo.org*'" ;;

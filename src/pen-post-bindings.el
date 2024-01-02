@@ -8,7 +8,8 @@
 (sslk "laY" (make-etui-cmd "chkservice" nil))
 (sslk "law" 'aws-instances)
 (sslk "lap" #'list-processes)
-(sslk "laS" #'list-clients)
+(sslk "las" #'ebdb-display-all-records)
+(sslk "laS" #'server-list-clients)
 (sslk "lal" #'bufler)
 (sslk "lqtt" #'todayfile)
 (sslk "laU" #'bluetooth-list-devices)
@@ -108,9 +109,9 @@
   (sslk "ldW" 'fz-find-ws)
   (sslk "ldG" 'ag-glossaries)
   (sslk "ldg l" 'swiper-glossaries)
-  (sslk "ld6" (dff (e "$EMACSD/elpa-full")))
-  (sslk "ld7" (dff (e "$EMACSD/elpa-full")))
-  (sslk "ld8" (dff (e "$EMACSD/elpa-full")))
+  (sslk "ld6" (dff (e "$EMACSD_BUILTIN/elpa")))
+  (sslk "ld7" (dff (e "$EMACSD_BUILTIN/elpa-full")))
+  (sslk "ld8" (dff (e "$EMACSD_BUILTIN/elpa-light")))
   (sslk "ldm" (dff (e "$NOTES/ws/music")))
   (sslk "lds" (dff (e "$SCRIPTS")))
   (sslk "lfx" (dff (e "$REPOS/pen.el/src/pen-examplary.el")))
@@ -120,7 +121,7 @@
   (sslk "ldd" (dff (e "$DUMP")))
   (sslk "ldD" (dff (e "$DUMP/downloads")))
   (sslk "ldn" (dff (e "$NOTES")))
-  (sslk "ldM" (dff (e "$EMACSD/manual-packages")))
+  (sslk "ldM" (dff (e "$EMACSD_BUILTIN/manual-packages")))
   (sslk "ldzG" (dff (pen-sps "select-git-repo")))
 
   ;; unminimise for some of them
@@ -222,11 +223,23 @@
 (sslk "lD" 'pen-swipe)
 (define-key pen-map (kbd "M-l / C-i") #'tvipe-completions)
 (sslk "lt" 'sh/git-add-all-below)
-(sslk "lL" 'pen-flycheck-list-errors)
+(sslk "lLR" 'helm-mini)
+
+(define-key global-map (kbd "<help> h") nil)
+(define-key global-map (kbd "<help> h z") 'pen-helm-fzf)
+;; (sslk "lLz" 'pen-helm-fzf)
+(define-key global-map (kbd "<help> h Z") 'pen-helm-fzf-top)
+;; (sslk "lLZ" 'pen-helm-fzf-top)
+(define-key global-map (kbd "<help> h i") 'ap/helm-info-emacs-elisp-cl)
+;; (sslk "lLi" 'ap/helm-info-emacs-elisp-cl)
+(define-key global-map (kbd "<help> h f") 'pen-helm-find-files)
+;; (sslk "lLf" 'pen-helm-find-files)
+                                        ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 (sslk "lkJ" 'compile-run-term)
 (sslk "lk," 'compile-run-compile)
 (sslk "lk<" 'compile-run-tm-ecompile)
-(sslk "ly" 'pen-copy-link-at-point)
+(if (inside-docker-p)
+    (sslk "ly" 'pen-copy-link-at-point))
 (sslk "ljh" 'cheat-sh)
 (sslk "l." 'pen-kill-buffer-immediately)
 (sslk "lfP" 'fi-text-to-paras-nosegregate)
@@ -274,6 +287,16 @@
 (define-key pen-map (kbd "M-l E d") 'deselect-i)
 (define-key pen-map (kbd "M-l E r") (df reselect-i (reselect-last-region)))
 (define-key global-map (kbd "C-q") #'quoted-insert-nooctal)
+
+;; These bindings need to be made when the mode loads
+;; because yaml-ts-mode-map doesn't exist yet
+
+(require 'yaml-mode)
+(define-key yaml-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
+
+(require 'yaml-ts-mode)
+(define-key yaml-ts-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
+;; (define-key yaml-ts-mode-map (kbd "C-c e") 'yaml-get-value-from-this-file)
 
 (defun company-complete-quick-access-around-advice (proc &rest args)
   (let ((res (apply proc args)))

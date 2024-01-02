@@ -1,6 +1,15 @@
 (require 'warnings)
 (require 'help)
 (require 'yasnippet)
+(require 'yasnippet-snippets)
+
+(setq yas-snippet-dirs
+      (-uniq-u
+       (append yas-snippet-dirs
+               (string2list (snc "find ~+ -name 'snippets' -type d" nil pen-user-emacs-directory))
+               (string2list (snc "find ~+ -name 'snippets' -type d" nil (f-join user-emacs-directory "elpa-full"))))))
+
+;; (pendir (f-join pen-user-emacs-directory "pen.el"))
 
 (setq warning-minimum-level :error)
 (add-to-list 'warning-suppress-types '(yasnippet backquote-change))
@@ -356,5 +365,84 @@ Meant to be called in a narrowed buffer, does various passes"
 (define-key yas-minor-mode-map (kbd "C-c") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key global-map (kbd "M-5") 'company-yasnippet)
+
+(defun yas-reload-all-around-advice (proc &rest args)
+  (message "Reloading snippets...")
+  (let ((res (apply proc args)))
+    (message "Finished reloading snippets")
+    res))
+(advice-add 'yas-reload-all :around #'yas-reload-all-around-advice)
+;; (advice-remove 'yas-reload-all #'yas-reload-all-around-advice)
+
+;; Modified this to not close snippets buffers
+;; with risk of there being potential errors in the
+;; snippet buffer.
+(defun yas-reload-all (&optional no-jit interactive)
+  "Reload all snippets and rebuild the YASnippet menu.
+
+When NO-JIT is non-nil force immediate reload of all known
+snippets under `yas-snippet-dirs', otherwise use just-in-time
+loading.
+
+When called interactively, use just-in-time loading when given a
+prefix argument."
+  (interactive (list (not current-prefix-arg) t))
+  (catch 'abort
+    (let ((errors)
+          (snippet-editing-buffers
+           (cl-remove-if-not (lambda (buffer)
+                               (with-current-buffer buffer
+                                 yas--editing-template))
+                             (buffer-list))))
+      ;; Warn if there are buffers visiting snippets, since reloading will break
+      ;; any on-line editing of those buffers.
+      ;;
+      (when snippet-editing-buffers
+        (mapc #'(lambda (buffer)
+                  (with-current-buffer buffer
+                    (kill-local-variable 'yas--editing-template)))
+              (buffer-list)))
+
+      ;; Empty all snippet tables and parenting info
+      ;;
+      (setq yas--tables (make-hash-table))
+      (setq yas--parents (make-hash-table))
+
+      ;; Before killing `yas--menu-table' use its keys to cleanup the
+      ;; mode menu parts of `yas--minor-mode-menu' (thus also cleaning
+      ;; up `yas-minor-mode-map', which points to it)
+      ;;
+      (maphash #'(lambda (menu-symbol _keymap)
+                   (define-key yas--minor-mode-menu (vector menu-symbol) nil))
+               yas--menu-table)
+      ;; Now empty `yas--menu-table' as well
+      (setq yas--menu-table (make-hash-table))
+
+      ;; Cancel all pending 'yas--scheduled-jit-loads'
+      ;;
+      (setq yas--scheduled-jit-loads (make-hash-table))
+
+      ;; Reload the directories listed in `yas-snippet-dirs' or prompt
+      ;; the user to select one.
+      ;;
+      (setq errors (yas--load-snippet-dirs no-jit))
+      ;; Reload the direct keybindings
+      ;;
+      (yas-direct-keymaps-reload)
+
+      (run-hooks 'yas-after-reload-hook)
+      (let ((no-snippets
+             (cl-every (lambda (table) (= (hash-table-count table) 0))
+                       (list yas--scheduled-jit-loads
+                             yas--parents yas--tables))))
+        (yas--message (if (or no-snippets errors) 2 3)
+                      (if no-jit "Snippets loaded %s."
+                        "Prepared just-in-time loading of snippets %s.")
+                      (cond (errors
+                             "with some errors.  Check *Messages*")
+                            (no-snippets
+                             "(but no snippets found)")
+                            (t
+                             "successfully")))))))
 
 (provide 'pen-yasnippet)

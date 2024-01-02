@@ -17,6 +17,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -d) {
+        mode=default
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -29,22 +35,52 @@ stdin_exists() {
     # So test to make sure 0 does not point to 1
     } &>/dev/null
 }
+stdin_exists
+hasstdin="$?"
 
-if stdin_exists; then
+if test "$hasstdin" = 0; then
     input_fp="$(cat | tf md)"
     set -- "$@" "$input_fp"
     exec <&2
-    exec <`tm-tty` `# see etty` 
+    # exec <`tm-tty` `# see etty` 
+    # echo hi
+    # pak
+    # exit
 fi
 
-unbuffer_maybe() {
+clean_output() {
+    s remove-leading-and-trailing-newlines
+}
+
+fix_ansi() {
     if test "$nocolor" = "y"; then
-        "$@" | pavs
+        unbuffer "$@" | strip-ansi | clean_output | pavs
     elif test "$force_color" = "y"; then
-        unbuffer "$@"
+        unbuffer "$@" | clean_output | less -rS
     else
-        "$@"
+        unbuffer "$@" | strip-ansi | clean_output | pavs
     fi
 }
 
-unbuffer_maybe ~/repos/glow/glow "$@" | s remove-leading-and-trailing-newlines | pa -E "less -rS"
+test -f "$HOME/repos/glow/glow" && : "${bin:="$HOME/repos/glow/glow"}"
+test -f "${GOPATH%%:*}/bin/glow" && : "${bin:="${GOPATH%%:*}/bin/glow"}"
+
+glow() {
+    fix_ansi "$bin" "$@"
+}
+
+if test "$hasstdin" = 1 && test "$#" = 0; then
+    mode=default
+fi
+
+case "$mode" in
+    default) {
+        "$bin" "$@"
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac
+
+glow "$@"

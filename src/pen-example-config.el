@@ -1,5 +1,9 @@
 (setq enable-local-variables :all)
 
+;; disable auto-indent. This is the less-aggressive auto-indent that
+;; happens after pressing enter
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
 ;; 2 is also quite nice
 (setq-default tab-width 4)
 
@@ -46,6 +50,9 @@
 
 (define-key global-map (kbd "M-_") 'irc-find-prev-line-with-diff-char)
 (define-key global-map (kbd "M-+") 'irc-find-next-line-with-diff-char)
+
+(define-key global-map (kbd "C-c j") 'next-line)
+(define-key global-map (kbd "C-c k") 'previous-line)
 
 ;; Is this a good idea?
 ;; (define-key function-key-map (kbd "TAB") 'hyperify)
@@ -97,6 +104,7 @@
 (define-key pen-map (kbd "H-s") 'fz-pen-counsel)
 (define-key pen-map (kbd "M-9") 'handle-docs)
 
+(define-key pen-map (kbd "H-n") nil)
 (define-key pen-map (kbd "H-n") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-.") 'global-pen-acolyte-minor-mode)
 (define-key pen-map (kbd "H-:") 'pen-compose-cli-command)
@@ -106,7 +114,8 @@
 
 ;; from contrib
 (require 'pen-org-brain)
-(define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
+;; (define-key org-brain-visualize-mode-map (kbd "C-c a") 'org-brain-asktutor)
+(define-key org-brain-visualize-mode-map (kbd "C-c a") nil)
 (define-key org-brain-visualize-mode-map (kbd "C-c t") 'org-brain-show-topic)
 (define-key org-brain-visualize-mode-map (kbd "C-c d") 'org-brain-describe-topic)
 
@@ -243,8 +252,10 @@
         (read-only-mode t)
 
         ;; (use-local-map (copy-keymap foo-mode-map))
-        (local-set-key "q" 'kill-current-buffer)
-        (local-set-key "d" 'kill-current-buffer)
+
+        ;; For some reason, these set keys for term-mode generally
+        ;; (local-set-key "q" 'kill-current-buffer)
+        ;; (local-set-key "d" 'kill-current-buffer)
 
         ;; TODO Make something to convert ansi 256 colors to ansi xterm color
         ;; This works:
@@ -269,15 +280,18 @@
         (read-only-mode t)
 
         ;; (use-local-map (copy-keymap foo-mode-map))
-        (local-set-key "q" 'kill-current-buffer)
-        (local-set-key "d" 'kill-current-buffer)
+
+        ;; For some reason, these set keys for term-mode generally
+        ;; (local-set-key "q" 'kill-current-buffer)
+        ;; (local-set-key "d" 'kill-current-buffer)
 
         ;; TODO Make something to convert ansi 256 colors to ansi xterm color
         ;; This works:
         ;; TERM=xterm TMUX= tmux new pen-banner.sh
         ;; Then export the basic ansi codes.
         )
-      (switch-to-buffer b))))
+      (switch-to-buffer b)
+      b)))
 
 ;; (defun pen-banner ()
 ;;   (interactive)
@@ -391,6 +405,7 @@
 (add-hook 'after-make-frame-functions 'pen-after-init-package-loads)
 
 (define-key pen-map (kbd "C-c n") #'nbfs)
+;; (define-key global-map (kbd "C-c C-n") nil)
 
 ;; This makes a prefix in the ~/.pen directory for the memoization cache
 (setq pen-memo-prefix (pen-get-hostname))
@@ -625,6 +640,7 @@
   ;; Overrides
   (pen-dk-htab "g" 'pen-reload)
   (pen-dk-htab "e" 'pen-customize)
+  (pen-dk-htab "E" 'pen-rc)
 
   (define-key pen-map (kbd "M-1") 'pen-complete-word)
   (define-key pen-map (kbd "M-2") 'pen-complete-words)
@@ -1189,7 +1205,7 @@
 (define-key ranger-mode-map (kbd "C-M-i") (dff (tsps "cr")))
 (define-key dired-mode-map (kbd "M-^") 'pen-vc-cd-top-level)
 (define-key dired-mode-map (kbd "r") 'my-ranger)
-(define-key dired-mode-map (kbd "M-r") 'pen-sps-ranger)
+;; (define-key dired-mode-map (kbd "M-r") 'pen-sps-ranger)
 (define-key dired-mode-map (kbd "[") 'peep-dired)
 (define-key dired-mode-map (kbd "f") 'dired-narrow)
 (define-key dired-mode-map (kbd "/") 'dired-narrow-fuzzy)
@@ -1210,10 +1226,10 @@
 (pen-truly-selective-binding "S =" (df fi-surround-equals (pen-region-pipe "surround '=' '='")))
 (pen-truly-selective-binding "S _" (df fi-surround-underscore (pen-region-pipe "surround '_' '_'")))
 (pen-truly-selective-binding "S ~" (df fi-surround-tilde (pen-region-pipe "surround '~' '~'")))
-(pen-truly-selective-binding "S {" (df fi-surround-parens (pen-region-pipe "surround '{' '}'")))
-(pen-truly-selective-binding "S }" (df fi-surround-parens-pad (pen-region-pipe "surround '{' '}'")))
-(pen-truly-selective-binding "S )" (df fi-surround-parens (pen-region-pipe "surround '(' ')'")))
-(pen-truly-selective-binding "S (" (df fi-surround-parens-pad (pen-region-pipe "surround '( ' ' )'")))
+(pen-truly-selective-binding "S {" (df fi-surround-braces (pen-region-pipe "surround '{' '}'")))
+(pen-truly-selective-binding "S }" (df fi-surround-braces-pad (pen-region-pipe "surround '{ ' ' }'")))
+(pen-truly-selective-binding "S (" (df fi-surround-parens (pen-region-pipe "surround '(' ')'")))
+(pen-truly-selective-binding "S )" (df fi-surround-parens-pad (pen-region-pipe "surround '( ' ' )'")))
 (pen-truly-selective-binding "S >" (df fi-asurround-angle (pen-region-pipe "surround '<' '>'")))
 (pen-truly-selective-binding "S <" (df fi-surround-angle-pad (pen-region-pipe "surround '< ' ' >'")))
 (pen-truly-selective-binding "S ]" (df fi-surround-square (pen-region-pipe "surround '[' ']'")))
@@ -1332,15 +1348,7 @@
         (call-interactively 'find-file-at-point)
       (call-interactively 'find-file))))
 
-(defun insert-program ()
-  (interactive)
-  (insert (chomp (tpop "slmenu | cat" nil
-                       :width_pc "50%"
-                       :height_pc "50%"
-                       :x_pos "M+1"
-                       :y_pos "M+1"
-                       :output_b t))))
-(define-key global-map (kbd "M-0") 'insert-program)
+
 
 (define-key global-map (kbd "C-x C-f") 'pen-find-file)
 
@@ -1353,13 +1361,12 @@
     (define-key global-map (kbd "M-Y") 'pen-copy-line))
 
 (require 'pen-handle)
-(define-key global-map (kbd "H-h") 'fz-run-handle)
+(define-key global-map (kbd "s-h") 'fz-run-handle)
 ;; Use <help> for handle bindings
-(define-key global-map (kbd "<help> h") 'fz-run-handle)
-(define-key global-map (kbd "<help> x") 'handle-runfunc)
-(define-key global-map (kbd "<help> T") 'handle-toggle-test)
-(define-key global-map (kbd "<help> t") 'handle-toggle-test)
-(define-key global-map (kbd "<help> M-x") 'handle-runfunc)
+(define-key global-map (kbd "s-H x") 'handle-runfunc)
+(define-key global-map (kbd "s-H T") 'handle-toggle-test)
+(define-key global-map (kbd "s-H t") 'handle-toggle-test)
+(define-key global-map (kbd "s-H M-x") 'handle-runfunc)
 
 (require 'pen-glossary-new)
 (define-key global-map (kbd "H-Y H") 'pen-goto-glossary-definition)
@@ -1388,6 +1395,8 @@
 (define-key pen-map (kbd "<help> J") 'custom-keys-goto)
 
 (define-key global-map (kbd "M-g M-f") 'find-file-at-point)
+
+(define-key global-map (kbd "C-c a") 'org-agenda)
 
 (defun test-surreal-strawberry ()
   (interactive)

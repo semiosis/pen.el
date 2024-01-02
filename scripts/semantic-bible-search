@@ -1,0 +1,76 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+. $PENELD/scripts/utils.sh
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -oc) {
+        org_link=y
+        shift
+    }
+    ;;
+
+    -all) {
+        all=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+tf_bible="/tmp/biblesearch.txt"
+
+# Can do this
+# tvipify "semantic-bible-search -oc"
+
+if stdin_exists; then
+    query="$(cat)"
+    exec <&2
+else
+    query="$@"
+fi
+
+test -n "$query" || query="$(rlwrap readln "Bible search")"
+
+test -n "$query" || exit 1
+
+test -d "$HOME/repos/hoffa/bible-search" && : "${repo_dir:="$HOME/repos/hoffa/bible-search"}"
+test -d "$MYGIT/hoffa/bible-search" && : "${repo_dir:="$MYGIT/hoffa/bible-search"}"
+
+cd "$repo_dir"
+
+CMD="$(cmd python bible_search.py "$query") | chomp > $tf_bible"
+
+oci unbuffer x -cd "$repo_dir" -sh bash -s ". .venv/bin/activate; $CMD" -c m -e '$' -c d -i &>/dev/null
+
+test -s "$tf_bible" || exit 1
+
+sel_to_link() {
+    awk1 | while IFS=$'\n' read -r sel; do
+        text="$(p "$sel" | jq -r .text | pen-str join ' ')"
+        book="$(p "$sel" | jq -r .book)"
+        chapter="$(p "$sel" | jq -r .chapter)"
+        url="$(p "$sel" | jq -r .url)"
+        link="+ [[$url][$book $chapter]] :: $text"
+        printf -- "%s\n" "$link"
+    done
+}
+
+if test "$org_link" = "y" && test "$all" = "y"; then
+    cat "$tf_bible" | awk1 | while IFS=$'\n' read -r sel; do
+        echo "$sel" | sel_to_link
+    done | pavs
+elif test "$org_link" = "y"; then
+    sel="$(cat "$tf_bible" | mfz -nv)"
+
+    test -n "$sel" || exit 1
+
+    echo "$sel" | sel_to_link | pavs
+else
+    cat "$tf_bible" | pavs
+fi

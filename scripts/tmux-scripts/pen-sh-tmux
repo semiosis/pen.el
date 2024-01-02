@@ -19,6 +19,7 @@ fzf_cmd_last_output() {
     fi
 }
 
+# g  sh-tmux-sel
 # S  pen-tm -f -d spv
 # p  sps slmenu
 read -r -d '' options <<HEREDOC
@@ -51,7 +52,7 @@ S  tmux -L shane attach || tmux new -L shane -c $NOTES zsh
 f  pen-tm goto-fzf
 s  pen-tm -f -d sph
 h  pen-tm -f -d spv
-g  sh-tmux-sel
+g  sh-go
 Y  pen-tm copy-current-line
 nw cd $NOTES; tmux attach || tmux new -c $NOTES -s notes zsh
 T  tat # tmux touchbar attach
@@ -72,6 +73,7 @@ case "$d" in
     4) cmd="( sleep 0.5; tmux select-layout main-vertical ) &" ;;
     5) cmd="( sleep 0.5; tmux select-layout tiled ) &" ;;
 
+    # g) cmd="sh-tmux-sel" ;;
     # these must run after the menu window has closed
     b) cmd="tmux run -b $(cmd-nice-posix "pen-tm breakp")" ;;
     # p) cmd="sps slmenu" ;;
@@ -94,7 +96,7 @@ case "$d" in
     i) cmd="cd $NOTES; tmux attach -t init: || tmux new -c $NOTES -s init zsh" ;;
     S) cmd="tmux -L shane attach || tmux new -L shane -c $NOTES zsh" ;;
     f) cmd="tmux run -b $(cmd-nice-posix "pen-tm find-window-from-session -no-activate")" ;;
-    g) cmd="sh-tmux-sel" ;;
+    g) cmd="sh-go" ;;
     Y) cmd="tmux run -b $(cmd-nice-posix "pen-tm copy-current-line")" ;;
     s) cmd="pen-tm -f -d sph" ;;
     # S) cmd="pen-tm -f -d spv" ;;

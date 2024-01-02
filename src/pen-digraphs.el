@@ -45,6 +45,7 @@
             (xc digraph)
           (insert digraph))
       digraph)))
+(defalias 'insert-digraph 'digraph-select)
 
 (defun symbol-select (&optional filter)
   (interactive)
@@ -70,5 +71,8 @@
                 (xc digraph)
               (insert digraph))
           digraph)))))
+(defalias 'unicode-select 'symbol-select)
+(defalias 'insert-unicode 'symbol-select)
+(defalias 'insert-symbol 'symbol-select)
 
 (provide 'pen-digraphs)

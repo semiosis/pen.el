@@ -84,6 +84,12 @@ case "$f" in
     }
     ;;
 
+    # Number of characters ignoring double-width chars
+    length|len|clen) {
+        sed 's/./-/g' | wc -c
+    }
+    ;;
+
     chomp|chomp-last-line)
         perl -pe 'chomp if eof'
     ;;
@@ -106,7 +112,7 @@ case "$f" in
         fi
 
         for (( i = 0; i < count; i++ )); do
-            printf -- "%s" "$input"
+            printf -- "%s" "${input}"
         done
     }
     ;;

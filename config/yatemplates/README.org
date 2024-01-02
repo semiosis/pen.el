@@ -1,0 +1,3 @@
+To guarantee a particular order, filenames must contain one colon (":"). After
+collecting all the filenames in yatemplate-dir, their names will be sorted
+with string<, then split on the colon. 

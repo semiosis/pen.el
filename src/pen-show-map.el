@@ -67,11 +67,20 @@
   (if (stringp mapsym)
       (setq mapsym (eval (intern (mapsym)))))
 
-  (with-current-buffer
-      (new-buffer-from-string
-       (concat (symbol-name mapsym) "\n\n" (show-map-as-string mapsym))
-       (concat "∙" (symbol-name mapsym) "∙"))
-    (view-mode 1))
+  (let ((bindings (concat (symbol-name mapsym) "\n\n" (show-map-as-string mapsym))))
+    (if (or
+         (major-mode-p 'crossword-mode)
+         (>= (prefix-numeric-value current-prefix-arg) 4))
+
+        (tpop "v" bindings)
+        ;; (nw "v" nil bindings)
+
+      (with-current-buffer
+          (new-buffer-from-string
+           bindings
+           (concat "∙" (symbol-name mapsym) "∙"))
+        (view-mode 1))))
+
   (fz-map-fn mapsym))
 
 (provide 'pen-show-map)

@@ -1,12 +1,19 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
-
 sn="$(basename -- "$0")"
 
-# Automatically cache
-if ! test "$CI_CACHED" = "y"; then cif "$sn" "$@"; exit "$?"; fi
+# For debugging
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
+
+# # Automatically cache
+# if ! test "$INSIDE_CI" = "y"; then cif "$sn" "$@"; exit "$?"; fi
+
+# Instead of caching canonicalise-bible-book-title, cache canonicalise-bible-book-title.cl
+# It's better to do that.
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 ref="$@"
 
@@ -32,16 +39,16 @@ if stdin_exists; then
             booktitle="$(printf -- "%s" "$line" | sed 's/[. ][0-9].*//')"
             chapverse="$(printf -- "%s" "$line" | sed -n 's/.*[. ]\([0-9].*\)/\1/p')"
             {
-                canonicalise-bible-book-title.cl "$booktitle"
+                ocif canonicalise-bible-book-title.cl "$booktitle"
                 if test -n "$chapverse"; then
                     echo -n " $chapverse"
                 fi
             } | awk 1
         else
-            canonicalise-bible-book-title.cl "$line" | awk 1
+            ocif canonicalise-bible-book-title.cl "$line" | awk 1
         fi
     done
 else
     test -n "$ref" || { echo "canonicalise-bible-ref: No ref" | hls red 1>&2; exit 1; }
-    echo "$ref" | canonicalise-bible-book-title
+    echo "$ref" | cif canonicalise-bible-book-title
 fi

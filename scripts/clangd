@@ -5,4 +5,4 @@ export TTY
 
 # LSP
 
-$EMACSD/.cache/lsp/clangd/clangd_15.0.6/bin/clangd "$@"
+$EMACSD_BUILTIN/.cache/lsp/clangd/clangd_15.0.6/bin/clangd "$@"

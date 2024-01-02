@@ -1,3 +1,5 @@
 #!/bin/sh
 
-test -n "$TMUX" || test -n "$PEN_TMUX"
+# Should this also check to see
+# if the current tty belongs to tmux? Yes... I think it should.
+{ test -n "$TMUX" || test -n "$PEN_TMUX"; } && tmux-pane-id 2>/dev/null

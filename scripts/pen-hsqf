@@ -13,6 +13,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -fp) {
+        shift
+        hsq "$@"
+        exit "$?"
+    }
+    ;;
+
     *) break;
 esac; done
 

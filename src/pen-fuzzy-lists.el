@@ -33,19 +33,19 @@
 (defun go-to-todo-list ()
   (interactive)
   (let ((fp (pen-umn (fz (mnm
-                      (b find $NOTES -type f -name todo.org))
-                     nil
-                     nil
-                     "go-to-todo-list: "))))
+                          (b find -L $NOTES -type f -name todo.org))
+                         nil
+                         nil
+                         "go-to-todo-list: "))))
     (find-file fp)))
 
 (defun go-to-remember-file ()
   (interactive)
   (let ((fp (pen-umn (fz (mnm
-                      (b find $NOTES -type f -name remember.org))
-                     nil
-                     nil
-                     "go-to-remember-file: "))))
+                          (b find -L $NOTES -type f -name remember.org))
+                         nil
+                         nil
+                         "go-to-remember-file: "))))
     (find-file fp)))
 
 

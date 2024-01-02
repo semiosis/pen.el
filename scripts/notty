@@ -1,0 +1,67 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+. $PENELD/scripts/utils.sh
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
+    -21) {
+        stderr_to_stdout=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
+
+if test "$stderr_to_stdout" = "y"; then
+    CMD="( exec 2>&1; $CMD; )"
+fi
+
+if test "$ispipe" = 0; then
+    CMD="$CMD | cat"
+fi
+
+# test
+# echo hello | notty tvipe | cat
+
+if test "$hasstdin" = 0; then
+    input_fp="$(cat | tf txt)"
+    CMD="cat $(aqf "$input_fp") | $CMD"
+fi
+
+if test "$ispipe" = 0; then
+    output_fp="$(odn tf txt)"
+    CMD="$CMD > $(aqf "$output_fp")"
+
+    use_sentinel=y
+fi
+
+if test "$use_sentinel" = "y"; then
+    sentinel_string="notty$$"
+    wait-for "$sentinel_string" &
+    CMD="$CMD; stop-waiting-for \"$sentinel_string\""
+fi
+
+/usr/bin/nohup tmux run -b "$CMD" &>/dev/null
+
+if test "$use_sentinel" = "y"; then
+    wait
+fi
+
+if test -f "$output_fp"; then
+    cat "$output_fp"
+fi

@@ -175,6 +175,7 @@ This issue might be caused by:
 (add-hook 'c-ts-mode-hook #'maybe-lsp)
 (add-hook 'python-mode-hook 'maybe-lsp)
 (add-hook 'python-ts-mode-hook 'maybe-lsp)
+(add-hook 'bash-ts-mode-hook 'maybe-lsp)
 (add-hook 'perl-mode-hook 'maybe-lsp)
 ;; (remove-hook 'perl-mode-hook 'maybe-lsp)
 (add-hook 'dockerfile-mode-hook 'maybe-lsp)
@@ -273,10 +274,11 @@ This issue might be caused by:
     (require 'dap-hydra)
     (require 'dap-gdb-lldb) ; download and expand lldb-vscode to the =$HOME/.extensions/webfreak.debug=
     (require 'dap-go) ; download and expand vscode-go-extenstion to the =$HOME/.extensions/go=
-    (use-package dap-ui
-      :ensure nil
-      :config
-      (dap-ui-mode 1))))
+    ;; (use-package dap-ui
+    ;;   :ensure nil
+    ;;   :config
+    ;;   (dap-ui-mode 1))
+    ))
 
 (setq lsp-inhibit-message t)
 
@@ -517,7 +519,7 @@ We don't extract the string that `lps-line' is already displaying."
   (interactive)
   (let* ((doc (pen-lsp-get-hover-docs))
          (url (pen-snc "scrape \"](.*)\" | sed -e 's/^..//' -e 's/)$//'" (pen-lsp-get-hover-docs))))
-    (pen-lg url)))
+    (lg-eww url)))
 
 (setq lsp-enable-on-type-formatting nil)
 

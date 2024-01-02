@@ -3,6 +3,8 @@ export TTY
 
 exec 0</dev/null
 
+# set -xv
+
 is_tty() {
     [[ -t 1 ]]
 }

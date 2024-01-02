@@ -1,0 +1,1 @@
+time sort /usr/share/dict/words|sed 's/^\(...\).*/\1/' |uniq -c|sort -nr|head -1

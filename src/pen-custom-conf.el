@@ -1,15 +1,6 @@
 (require 'f)
 (setq custom-file (f-join penconfdir "emacs-custom.el"))
 
-(defmacro setface (name spec doc)
-  `(custom-set-faces (list ',name
-                           ,spec)))
-
-(defmacro defsetface (name spec doc)
-  `(progn
-     (defface ,name ,spec ,doc)
-     (setface ,name ,spec ,doc)))
-
 (defsetface colour-button-face
   '((t :foreground nil
        :background nil
@@ -141,6 +132,7 @@ widget.  If FILTER is nil, ACTION is always valid.")
 
 (define-key pen-map (kbd "M-l M-q M-v") 'customize-variable)
 (define-key pen-map (kbd "M-l M-q M-g") 'customize-group)
+(define-key pen-map (kbd "M-l M-q M-c") 'customize-group)
 (define-key pen-map (kbd "M-l M-q M-o") 'customize-apropos)
 
 (provide 'pen-custom-conf)

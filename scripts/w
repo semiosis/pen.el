@@ -1,0 +1,3 @@
+#!/bin/bash
+
+which "$@" | iforcat is_tty -- eval "echo -n 'Copied: ' | hls blue; xc | vimcat"

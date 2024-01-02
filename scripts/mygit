@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# TODO Have also a search mechanism for mygit.
+
+test -d "/home/shane/source/git" && : "${dp:="/home/shane/source/git"}"
+test -d "/volumes/home/shane/var/smulliga/source/git" && : "${dp:="/volumes/home/shane/var/smulliga/source/git"}"
+
+zcd "$dp"

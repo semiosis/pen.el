@@ -9,6 +9,29 @@
 (advice-add 'global-hl-line-highlight :around #'not-terminal-around-advice)
 (advice-add 'display-line-numbers--turn-on :around #'not-terminal-around-advice)
 
+
+
+;; Enabling visual-line-mode means it's possible to see the entire line.
+;; It's useful for swiper and bible-mode.
+;; However, a big problem with Enabling visual-line-mode is that sometimes (with grep, for instance),
+;; a really big line results in wrapping that takes up the entire screen.
+;; So ideally, there would be a settable limit to the number of visual lines per semantic line.
+
+;; (add-hook 'minibuffer-setup-hook
+;;           (λ ()
+;;             (visual-line-mode t)
+
+;;             ;; linum doesn't work good
+;;             ;; linum-mode
+;;             ))
+;; (remove-hook 'minibuffer-setup-hook
+;;           (λ ()
+;;             (visual-line-mode t)
+
+;;             ;; linum doesn't work good
+;;             ;; linum-mode
+;;             ))
+
 (setq manage-minor-mode-default
       '((aws-instances-mode
          (on tablist-minor-mode)

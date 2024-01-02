@@ -1,11 +1,13 @@
 (require 'pen-eww)
 
+(require 'pen-postrender-sanitize)
+
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/eww.el.gz
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/shr.el.gz
 
 (defset pen-url-cache-dir
-  (f-join penconfdir
-          "url-cache"))
+        (f-join penconfdir
+                "url-cache"))
 (f-mkdir pen-url-cache-dir)
 
 (defvar eww-racket-doc-only-www nil)
@@ -566,6 +568,8 @@ Differences in #targets are ignored."
             (run-hooks 'eww-after-render-hook)))
       (kill-buffer data-buffer))))
 
+;; eww-after-render-hook
+
 (defun lg-url-cache-slug-fp (url)
   (concat pen-url-cache-dir "/" (slugify (s-replace-regexp "#.*" "" url)) ".txt"))
 
@@ -667,10 +671,13 @@ word(s) will be searched for via `eww-search-prefix'."
            (if (eq major-mode 'eww-mode)
                (current-buffer)
              (get-buffer-create "*eww*")))
-        (uniqify-buffer (pop-to-buffer-same-window
-                         (if (eq major-mode 'eww-mode)
-                             (current-buffer)
-                           (get-buffer-create "*eww*")))))
+        ;; I can re-enable uniqifiy-buffer  by removing "id :i"
+        ;; (id :i uniqify-buffer (pop-to-buffer-same-window (if (eq major-mode 'eww-mode) (current-buffer) (get-buffer-create "*eww*"))))
+        (uniqify-buffer
+            (pop-to-buffer-same-window
+             (if (eq major-mode 'eww-mode)
+                 (current-buffer)
+               (get-buffer-create "*eww*")))))
       (eww-setup-buffer)
       ;; Check whether the domain only uses "Highly Restricted" Unicode
       ;; IDNA characters.  If not, transform to punycode to indicate that
@@ -701,9 +708,6 @@ word(s) will be searched for via `eww-search-prefix'."
           (url-retrieve url 'eww-render
                         (list url nil (current-buffer) nil use-chrome))))
       (current-buffer)))))
-
-(defun dom-to-str () (
-                      (format "%S" (plist-get eww-data :dom))))
 
 (defun lg-url-is-404 (url)
   "URL is 404"
@@ -1281,41 +1285,46 @@ xdg-open is a desktop utility that calls your preferred web browser."
 (defun finished-loading-page ()
   "Needed so that x/expect can automate it"
 
-  (ignore-errors
-    (let ((f (assoc-default (get-path) eww-patchup-url-alist #'string-match)))
-      (if f (call-function f))))
+  (with-writable-buffer
+   (with-buffer-region-beg-end
+    (eww-sanitize-postrendered beg end)
+    (region-erase-trailing-whitespace beg end)))
 
-  (setq-local imenu-create-index-function #'button-cloud-create-imenu-index)
+  (progn-dontstop
+   (let ((f (assoc-default (get-path) eww-patchup-url-alist #'string-match)))
+     (if f (call-function f)))
 
-  (never (my-flyspell-buffer))
+   (setq-local imenu-create-index-function #'button-cloud-create-imenu-index)
 
-  (ignore-errors (recenter-top))
-  (ignore-errors (goto-fragment (get-path)))
+   (never (my-flyspell-buffer))
 
-  (deselect)
-  (cond
-   ((and (or (equal 0 (length (buffer-string)))
-             (re-match-p "502 Bad Gateway" (buffer-string)))
-         (not (lg-url-is-404 (get-path))))
-    (progn
-      (message "Failed to load page, I think")
-      (let ((cb (current-buffer)))
-        (w3m (get-path))
-        (kill-buffer cb))))
-   ((and (or (equal 0 (length (buffer-string)))
-             (re-match-p "502 Bad Gateway" (buffer-string)))
-         (lg-url-is-404 (get-path)))
-    (progn
-      (let ((cb (current-buffer)))
-        (message "Website doesn't exist. Imagining instead")
-        (pen-lg-display-page url)
-        (kill-buffer cb))))
-   (t
-    (progn
-      ;; Run if exists
-      (ignore-errors
-        (pen-run-buttonize-hooks))
-      (pen-eww-show-status)))))
+   (recenter-top)
+   (goto-fragment (get-path))
+
+   (deselect)
+   (cond
+    ((and (or (equal 0 (length (buffer-string)))
+              (re-match-p "502 Bad Gateway" (buffer-string)))
+          (not (lg-url-is-404 (get-path))))
+     (progn
+       (message "Failed to load page, I think")
+       (let ((cb (current-buffer)))
+         (w3m (get-path))
+         (kill-buffer cb))))
+    ((and (or (equal 0 (length (buffer-string)))
+              (re-match-p "502 Bad Gateway" (buffer-string)))
+          (lg-url-is-404 (get-path)))
+     (progn
+       (let ((cb (current-buffer)))
+         (message "Website doesn't exist. Imagining instead")
+         (pen-lg-display-page url)
+         (kill-buffer cb))))
+    (t
+     (progn
+       ;; Run if exists
+       (progn-dontstop
+         (pen-run-buttonize-hooks)
+         (pen-eww-show-status)))))))
 
 (defun eww-back-url-around-advice (proc &rest args)
   (let ((res (apply proc args)))
@@ -1328,6 +1337,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (add-hook 'eww-after-render-hook #'finished-loading-page)
 ;; (add-hook 'eww-after-render-hook 'pen-set-faces)
+
+(add-hook 'eww-after-render-hook #'finished-loading-page)
 
 (defun eww-display-html-after-advice (&rest args)
   (run-hooks 'eww-display-html-after-hook))
@@ -2063,14 +2074,6 @@ the URL of the image to the kill buffer instead."
   (if (lg-url-is-404 "https:/www.google.com/search?ie=utf-8&oe=utf-8&q=containers-0.4.0.0")
       "is 404"
     "is not 404"))
-
-(defun pen-uniqify-buffer (b)
-  "Give the buffer a unique name"
-  (with-current-buffer b
-    (ignore-errors (let* ((hash (short-hash (str (time-to-seconds))))
-                          (new-buffer-name (pcre-replace-string "(\\*?)$" (concat "-" hash "\\1") (current-buffer-name))))
-                     (rename-buffer new-buffer-name)))
-    b))
 
 (defun eww-open-url-maybe-file (url &optional use-chrome)
   (interactive (list (read-string "url:")))

@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Perhaps I could make a version of this which generates the sed
+# commands from the environment.
+
 : ${SEDOPTS:="-u"}
 
 # . $HOME/.shell_environment
@@ -20,9 +23,13 @@ test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
 
+export PENELD="$EMACSD/pen.el"
+
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
-export TMPDIR="/tmp"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+export TMPDIR="$TMPDIR"
 export GLOSSARIES="$PENCONF/glossaries"
 export PENELD="$EMACSD/pen.el"
 export PEN_SCRIPTS="$PENELD/scripts"

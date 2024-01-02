@@ -279,6 +279,7 @@
         :formatters '(lsp-format-buffer)
         :docs '(lookup-thing-glossary-definition
                 dict-word
+                wordnut-lookup-current-word
                 helm-wordnet-suggest
                 lsp-describe-thing-at-point)
         :toggle-test '(projectile-toggle-between-implementation-and-test
@@ -379,6 +380,10 @@
         :prevdef '()
         :nexterr '()
         :preverr '()
+        :global-references '(
+                             pen-counsel-ag-thing-at-point
+                             ;; fall back to godef
+                             handle-godef)
         :rc '()
         :errors '(lsp-ui-flycheck-list
                   ;; pen-lsp-error-list
@@ -403,6 +408,18 @@
 (handle '(sh-base-mode bash-ts-mode)
         :runmain '()
         :repls '()
+        :formatters '()
+        :docs '(man-thing-at-point)
+        :godef '()
+        :docsearch '()
+        :nextdef '()
+        :prevdef '()
+        :nexterr '()
+        :preverr '())
+
+(handle '(gnu-apl-mode)
+        :runmain '()
+        :repls '(gnu-apl)
         :formatters '()
         :docs '(man-thing-at-point)
         :godef '()
@@ -493,12 +510,20 @@
 
 (handle '(text-mode)
         :nexterr '()
-        :docs '(pen-docs-for-thing-given-screen)
+        :docs '(lookup-thing-glossary-definition
+                dict-word
+                wordnut-lookup-current-word
+                helm-wordnet-suggest
+                pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(fundamental-mode)
         :nexterr '()
-        :docs '(pen-docs-for-thing-given-screen)
+        :docs '(lookup-thing-glossary-definition
+                dict-word
+                wordnut-lookup-current-word
+                helm-wordnet-suggest
+                pen-docs-for-thing-given-screen)
         :preverr '())
 
 (handle '(special-mode)
@@ -510,6 +535,97 @@
         :nexterr '()
         :docs '(pen-docs-for-thing-given-screen)
         :preverr '())
+
+(defun swipl-playground ()
+  (interactive)
+  (sps (cmd "swipl-playground" (get-path nil t))))
+
+(handle '(prolog-mode)
+        :complete '(indent-for-tab-command)
+        ;; This is for running the program
+        :run '(compile-run)
+        :repls '(
+                 prolog-consult-buffer
+                 ;; run-prolog
+                 swipl-playground)
+        :formatters '(lsp-format)
+        :refactor '()
+        :debug '(dap-debug-and-hydra)
+        :docfun '(helpful-symbol)
+        :docs '(
+                pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                ;; lsp-ui-doc-show
+                pen-lsp-get-hover-docs
+                pen-doc-thing-at-point
+                prolog-help-on-predicate
+                pen-docs-for-thing-given-screen)
+        :docsearch '(pen-doc-ask)
+        :godec '(lsp-find-declaration
+                 google-for-docs
+                 )
+        :godef '(lsp-find-definition
+                 helm-gtags-dwim
+                 xref-find-definitions-immediately
+                 fz-cq-symbols
+                 google-for-def)
+        :showuml (list 'show-uml)
+        :nextdef '(pen-prog-next-def)
+        :prevdef '(pen-prog-prev-def)
+        :nexterr '(fly-next-error)
+        :preverr '(fly-prev-error)
+        :rc '(pen-goto-rc)
+        ;; select from multiple
+        :errors '(lsp-ui-flycheck-list flycheck-buffer)
+        :assignments '()
+        :references '(lsp-ui-peek-find-references
+                      ;; lsp-find-references
+                      pen-counsel-ag-thing-at-point
+                      ;; pen-counsel-ag
+                      )
+        :definitions '(lsp-ui-peek-find-definitions)
+        :implementations '(lsp-ui-peek-find-implementation))
+
+(handle '(problog-mode)
+        :complete '(indent-for-tab-command)
+        ;; This is for running the program
+        :run '(compile-run)
+        :repls '()
+        :formatters '()
+        :refactor '()
+        :debug '()
+        :docfun '()
+        :docs '(
+                pen-esp-docs-for-thing-if-prefix
+                pen-doc-override
+                ;; lsp-ui-doc-show
+                pen-lsp-get-hover-docs
+                pen-doc-thing-at-point
+                prolog-help-on-predicate
+                pen-docs-for-thing-given-screen)
+        :docsearch '(pen-doc-ask)
+        :godec '()
+        :godef '(lsp-find-definition
+                 helm-gtags-dwim
+                 xref-find-definitions-immediately
+                 fz-cq-symbols
+                 google-for-def)
+        :showuml (list 'show-uml)
+        :nextdef '(pen-prog-next-def)
+        :prevdef '(pen-prog-prev-def)
+        :nexterr '(fly-next-error)
+        :preverr '(fly-prev-error)
+        :rc '(pen-goto-rc)
+        ;; select from multiple
+        :errors '()
+        :assignments '()
+        :references '(lsp-ui-peek-find-references
+                      ;; lsp-find-references
+                      pen-counsel-ag-thing-at-point
+                      ;; pen-counsel-ag
+                      )
+        :definitions '(lsp-ui-peek-find-definitions)
+        :implementations '(lsp-ui-peek-find-implementation))
 
 (handle '(c-mode c-ts-base-mode c++-ts-mode)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
@@ -562,7 +678,7 @@
 (handle '(emacs-lisp-mode)
         :repls '(ielm)
         :formatters '(lsp-format-buffer)
-        :global-references '(my-helpful--all-references-sym)
+        :global-references '(pen-helpful--all-references-sym)
         :fz-sym '(find-function)
         :docs '(my-doc-override
                 describe-thing-at-point

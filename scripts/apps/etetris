@@ -1,14 +1,31 @@
 #!/bin/bash
 sn="$(basename "$0")"
 
-if test "$sn" = "etetris-xterm"; then
-    nw=" -nw "
-elif test "$sn" = "etetris-vt100"; then
-    nw=" -nw "
-    export TERM=vt100
-else
-    extra="(load \"/tmp/tetris-load.el\")"
-fi
+case "$sn" in
+    etetris-gui) {
+        nw=" "
+    }
+    ;;
+
+    etetris|etetris-xterm) {
+        nw=" -nw "
+    }
+    ;;
+
+    etetris-vt100) {
+        nw=" -nw "
+        export TERM=vt100
+    }
+    ;;
+
+    *) {
+        :
+    }
+    ;;
+
+esac
+
+extra="(load \"/tmp/tetris-load.el\")"
 
 cat <<HEREDOC > /tmp/tetris-load.el
 (defun str (thing)

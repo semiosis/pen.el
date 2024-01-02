@@ -15,9 +15,13 @@
   (pen-sn (concat "hist-save " (pen-q name) " " (mapconcat 'pen-q (mapcar 'str body) " "))))
 
 (defun hg (name)
-  (s-lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t)))
+    (interactive (list (read-string-hist "hist-edit: ")))
+    (ifi-etv (s-lines (pen-cl-sn (concat "hist-get " (pen-q name)) :chomp t))))
 
+;; memos
+;; (hist-edit "eww-display-html")
 (defun hist-edit (name)
+  (interactive (list (read-string-hist "hist-edit: ")))
   (find-file (pen-cl-sn (concat "hist-getfile " (pen-q name)) :chomp t)))
 (defalias 'he 'hist-edit)
 
@@ -121,9 +125,6 @@ Be mindful of quoting arguments correctly."
 (defun less (input)
   (sh "tless -r" input nil nil "sh" t "spv"))
 (defalias 'tless 'less)
-
-(defun vime (input)
-  (pen-snc "vime" input))
 
 (defun xxd-spv (input)
   (sh "xxd -g1 | tless" input nil nil "sh" t "spv"))
@@ -432,7 +433,9 @@ Be mindful of quoting arguments correctly."
 ;; (defun tmuxify-cmd (cmd)
 ;;   (concat "t new " (pen-q (concat "TTY= " cmd))))
 
-(defun tmuxify-cmd (command)
+(defun tmuxify-cmd (command &optional dir)
+  (if dir
+      (setq command (concat (cmd "cd" dir) "; " command)))
   (cmd "tmwr"  "-E" (concat "TTY= " command)))
 
 (defun term-nsfa-tm (cmd &optional input)
@@ -536,6 +539,6 @@ Be mindful of quoting arguments correctly."
                 nil
                 "eww history: ")))
       (if url
-          (pen-lg url)))))
+          (lg-eww url)))))
 
 (provide 'pen-nix)

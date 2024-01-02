@@ -4,4 +4,3 @@ export TTY
 canonicalise-bible-ref |
     sed -e 's/^III /3 /' -e 's/^II /2 /' -e 's/^I /1 /' \
         -e 's/Revelation of John/Revelation/'
-

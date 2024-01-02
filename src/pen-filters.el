@@ -56,11 +56,11 @@
 (defun pen-fwfzf ()
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
   (interactive)
-  (if (region-active-p)
-      (if (>= (prefix-numeric-value current-prefix-arg) 4)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (if (region-active-p)
           (pen-region-pipe "pen-tm filter")
-        (pen-region-pipe (select-filter)))
-    (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
+        (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t)))
+    (pen-region-pipe (select-filter))))
 
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 

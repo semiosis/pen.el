@@ -1,0 +1,32 @@
+#!/usr/bin/awk -f
+
+BEGIN {
+    print "Starting"
+    prefix = ""
+    prefix_depth = 0
+}
+
+/^\*/ {
+    # prefix = gensub("^[*]* \(.*\)", "_", "1", $0)
+    stars = gensub(/^(\** )(.*)/, "\\1", "g", $0)
+    heading_depth = length(stars)
+    title = gensub(/^(\** )(.*)/, "\\2", "g", $0)
+    if (heading_depth > prefix_depth) {
+        prefix = prefix "::" title
+    } else if (heading_depth < prefix_depth) {
+        prefix = gensub(/^(\** )(.*)/, "\\2", "g", $0)
+    } else {
+        prefix = prefix
+    }
+    $0 = gensub(/^(\** )(.*)/, "\\1" prefix, "g", $0)
+    # print
+}
+
+{
+    # $0 = gensub("^.", "_", "1", $0)
+    print
+}
+
+END {
+    print "Finished"
+}

@@ -1,0 +1,25 @@
+#!/bin/bash
+export TTY
+
+# vimlinks +/"Embedded Code Execution" "https://perldoc.perl.org/perlre.html#Regular-Expressions"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+test "$#" -gt 0 || exit 1
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+url="$last_arg"
+set -- "${@:1:$(($#-1))}" # shift last arg
+
+# ci elinks-dump "$url" | fpage "$@"
+# echo "$(cmd ci elinks-dump "$url") | $(cmd PAGER=v pager "$@")"
+# nvt -E "$(cmd ci elinks-dump "$url") | $(cmd PAGER=v pager "$@")"
+# nvt -E "$(cmd ci elinks-dump "$url") | PAGER=v $(cmd pager "$@")"
+# nvt -E "$(cmd ci elinks-dump "$url") | $(cmd pager -v "$@")"
+# echo "$(cmd ci elinks-dump "$url") | $(cmd pager -v "$@")"
+
+# This only works because fpage has been made into a script
+nvt -E "$(cmd-nice ci elinks-dump "$url") | $(cmd-nice pavs "$@")"

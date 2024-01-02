@@ -9,4 +9,11 @@ export TTY
 # Run the preprocessor on any opened file
 # expand-bash-preprocessor
 
-bash "$@"
+export BASH_ENV=$HOME/.scriptrc
+# bash "$@"
+cmd bash <(echo "echo \$0") "$@"
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+bash -c ". $lastarg"
+# $HOME/.scriptrc

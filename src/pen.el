@@ -8,13 +8,7 @@
 
 (setq large-file-warning-threshold nil)
 
-;; (defun require-around-advice (proc &rest args)
-;;   (message "require called with args %S" args)
-;;   (let ((res (apply proc args)))
-;;     (message "require returned %S" res)
-;;     res))
-;; (advice-add 'require :around #'require-around-advice)
-;; (advice-remove 'require #'require-around-advice)
+(require 'pen-debug)
 
 ;; This may have been defined in init,
 ;; for contrib, etc.
@@ -30,6 +24,12 @@
     (let ((res (apply proc args)))
       res)))
 
+(defun around-advice-disable-true (proc &rest args)
+  i)
+
+(defun around-advice-disable-nil (proc &rest args)
+  nil)
+
 (defalias 'λ 'lambda)
 (defalias 'y 'lambda)
 
@@ -38,12 +38,30 @@
   `(λ () (interactive) ,@body))
 
 (defmacro comment (&rest body) nil)
+;; (defalias 'comment 'ignore)
+
+(defalias 'co 'comment)
+(defalias 'cm 'comment)
 
 (setq disabled-command-function nil)
 
 ;; builtin
 (require 'cl-macs)
 (require 'pp)
+
+(defun dff-sym (body)
+  (intern
+   (s-replace-regexp
+    "^-" "dff-"
+    (slugify
+     (pp body) t))))
+
+(defmacro dff (&rest body)
+  "This defines a 0 arity function with name based on the contents of the function.
+It should only really be used to create names for one-liners.
+It's really meant for key bindings and which-key, so they should all be interactive."
+  (let* ((slugsym (dff-sym body)))
+    `(defun ,slugsym () (interactive) ,@body)))
 
 (defmacro dff (&rest body)
   "This defines a 0 arity function with name based on the contents of the function.
@@ -84,6 +102,15 @@ It's really meant for key bindings and which-key, so they should all be interact
       nil)
      (t `(require ,library)))))
 
+(defmacro setface (name spec doc)
+  `(custom-set-faces (list ',name
+                           ,spec)))
+
+(defmacro defsetface (name spec doc &rest args)
+  `(progn
+     (defface ,name ,spec ,doc ,@args)
+     (setface ,name ,spec ,doc)))
+
 (require 'dash)
 (require 'projectile)
 (require 'transient)
@@ -118,7 +145,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'transducer)
 (require 'handle)
 (require 'pen-company-lsp)
-;; (require 'pen-nlp)
+(require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
 (require 'pen-custom-values)
@@ -131,7 +158,10 @@ It's really meant for key bindings and which-key, so they should all be interact
       (require 'pen-avy)
       (require 'pen-ace-link)
       (require 'pen-links)))
-(require 'pen-link-types)
+(require 'pen-org-link-types)
+(require 'pen-ilink)
+(require 'pen-apl)
+(require 'pen-music)
 (require 'pen-manage-minor-mode)
 (require 'pen-handle)
 (require 'pen-edit)
@@ -140,7 +170,8 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-shackle)
 (require 'pen-translation-map)
 (require 'helm-fzf)
-(require 'pen-helm-fzf)
+(if (inside-docker-p)
+    (require 'pen-helm-fzf))
 (require 'pen-help)
 (require 'pen-helpful)
 (require 'pen-eipe)
@@ -153,7 +184,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-packages)
 (require 'pen-pensieve)
 (require 'pen-menu-bar)
-(require 'pen-workers)
+;; (require 'pen-workers)
 (require 'pen-edbi)
 (require 'pen-clipboard)
 (require 'pen-source)
@@ -167,6 +198,9 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-esp)
 (if (inside-docker-p)
     (require 'pen-openwith))
+;; notmuch mail uses mm-decode
+;; to open mimetypes such as application/pdf
+(require 'pen-mm-decode)
 (require 'pen-update)
 (require 'pen-keys)
 (require 'pen-swipe)
@@ -199,6 +233,8 @@ It's really meant for key bindings and which-key, so they should all be interact
       (require 'pen-hydra-org)))
 (require 'pen-lists)
 (require 'pen-projectile)
+(require 'pen-epl)
+(require 'pen-dates-and-locales)
 (if (inside-docker-p)
     (require 'pen-magit))
 (require 'pen-advice)
@@ -209,6 +245,10 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-major-mode)
 (require 'pen-aliases)
 (require 'pen-org)
+(require 'pen-alert)
+(require 'pen-org-agenda)
+(require 'pen-calendar-diary)
+(require 'pen-calfw)
 (require 'pen-term-modes)
 (require 'pen-tablist)
 (require 'pen-micro-blogging)
@@ -236,6 +276,8 @@ Be mindful of quoting arguments correctly."
 (require 'pen-sh)
 (require 'pen-library)
 (require 'pen-context)
+(require 'pen-journal)
+(require 'pen-gitlab)
 (require 'pen-hist)
 (require 'pen-utils)
 (require 'pen-rhizome)
@@ -924,10 +966,59 @@ Reconstruct the entire yaml-ht for a different language."
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
            nil default-directory))
 
+(defun pen-list2cmd-f (l)
+  (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
+           nil default-directory))
+
+(defun pen-q-cip (s)
+  (snc "q-cip" s))
+(defalias 'q-cip 'pen-q-cip)
+
+(defun pen-list2cmd-cip (l)
+  (pen-snc (concat "cmd-cip " (mapconcat 'pen-q l " "))
+           nil default-directory))
+
+;; (cmd-cip "-5" 5 "hello" "=h")
+(defun pen-cmd-cip (&rest args)
+  ;; default-directory specified here to avoid a bug with tramp
+  (let ((default-directory "/"))
+    (pen-list2cmd-cip args)))
+(defalias 'cmd-cip 'pen-cmd-cip)
+
 (defun pen-cmd (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))
     (pen-list2cmd args)))
+
+;; pen-cip-string "yo -5 =yo yo \"YO YO\""
+;; (pen-snc (concat "printf -- \"%s\\n\" " "yo -5 =yo yo"))
+;; (pen-sn (concat "printf -- \"%s\\n\" " "yo -5 =yo yo") nil nil nil nil nil nil nil t nil "zsh")
+;; (pen-sn (concat "printf -- \"%s\\n\" " "yo -5 =yo yo") nil nil nil nil nil nil nil t nil "bash")
+;; (pen-sn "echo $SHELL" nil nil nil nil nil nil nil t nil "zsh")
+;; (pen-sn "echo $SHELL" nil nil nil nil nil nil nil t nil "bash")
+;; (shell-command-to-string (concat "printf -- \"%s\\n\" " "yo -5 =yo yo"))
+(defun pen-cip-string (s)
+  ;; (eval-string (concat "'(" (apply 'cmd-cip (s-split " " s)) ")"))
+  ;; Bash is important. This wont work with zsh
+  (eval-string (concat "'(" (apply 'cmd-cip (str2lines (pen-snc (concat "bash -c " (cmd (concat "printf -- \"%s\\n\" "  s)))))) ")"))
+  ;; (eval-string (concat "'(" (apply 'cmd-cip (str2lines (pen-snc (concat "printf -- \"%s\\n\" "  s)))) ")"))
+  )
+
+(defun test-emacs-default-shell-binary ()
+  (interactive)
+  (start-process "my-env-process" "*env*" "/usr/bin/env")
+  (sleep 0.05)
+  (switch-to-buffer "*env*"))
+
+;; (defvar test-cip-string
+;;   (pen-cip-string "yo -5 =yo yo"))
+
+(defun pen-cmd-f (&rest args)
+  ;; default-directory specified here to avoid a bug with tramp
+  (let ((default-directory "/"))
+    (pen-list2cmd-f args)))
+
+(defalias 'cmd-f 'pen-cmd-f)
 
 (defun pen-list2cmd-nice (l)
   (pen-snc (concat "cmd-nice " (mapconcat 'qf-or-empty l " "))
@@ -941,8 +1032,23 @@ Reconstruct the entire yaml-ht for a different language."
 (defun tee (fp input)
   (pen-sn (pen-cmd "tee" fp) input))
 
-(defun awk1 (s)
-  (pen-sn "awk 1" s))
+;; TODO Make an e/awk1
+(defun sh/awk1 (&rest ss)
+  (apply 'concat
+   (cl-loop for s in ss
+            collect
+            (pen-sn "awk 1" s))))
+
+(defun e/awk1 (&rest ss)
+  (apply 'concat
+         (cl-loop for s in ss
+              collect
+              (let* ((s (str s))
+                     (has-nl (equal 10 (car (string-to-list (org-reverse-string s))))))
+                (if (sor s)
+                    (concat s (if (not has-nl) "\n")))))))
+
+(defalias 'awk1 'e/awk1)
 
 (defun tee-a (fp input)
   (pen-sn (pen-cmd "tee" "-a" fp) (awk1 (concat "\n" input))))
@@ -2179,6 +2285,9 @@ May use to generate code from comments."
 (require 'pen-enable-mouse)
 (require 'pen-mouse)
 (require 'pen-xt-mouse)
+(require 'pen-ess)
+(require 'pen-font-lock-studio)
+(require 'pen-wordnut)
 (require 'pen-prompt-description)
 (require 'pen-colorise)
 (require 'pen-creation)
@@ -2232,6 +2341,7 @@ May use to generate code from comments."
 (require 'pen-solidity)
 (require 'pen-cacheit)
 (require 'pen-ii)
+(require 'pen-hymnal)
 (require 'pen-comint)
 (require 'pen-tty)
 (require 'pen-tmux)
@@ -2244,8 +2354,14 @@ May use to generate code from comments."
 (require 'pen-quit)
 (require 'pen-melee)
 (require 'pen-scratch)
+(require 'pen-subr)
+(require 'pen-transducers)
+(require 'pen-wiki)
+(require 'pen-bash)
+(require 'pen-figlet)
 (require 'pen-minor-modes)
 (require 'pen-modeline)
+(require 'pen-minions)
 (require 'pen-hide-minor-modes)
 (if (inside-docker-p)
     (require 'pen-dired))
@@ -2253,29 +2369,57 @@ May use to generate code from comments."
 (require 'pen-alethea-ai)
 (require 'pen-mad-teaparty)
 (require 'pen-games)
+(require 'pen-keycast)
 (require 'pen-colors)
 (require 'pen-popwin)
 (require 'pen-documents)
+(require 'pen-jstate)
 (require 'pen-wrap)
 (require 'pen-shebang)
 (require 'pen-show-map)
 (require 'pen-isearch)
+(require 'pen-perfect-margin)
+(require 'pen-visual-line)
 (require 'pen-r)
 (require 'pen-find-file)
 (if (inside-docker-p)
     (require 'pen-docker))
 
 (require 'pen-media)
+(require 'pen-problog)
+(require 'pen-addressbook)
+(require 'pen-autoinsert)
+(require 'pen-yatemplate)
 (require 'pen-rhizome)
 (require 'pen-net)
 (require 'pen-alarm)
+(require 'pen-el-patch)
 (require 'pen-clojure)
+(require 'pen-cs-notation)
 (require 'pen-go)
+(require 'pen-ediff)
+(require 'pen-org-appear)
+(require 'pen-crontab)
+(require 'pen-clients)
+(require 'pen-whitespace)
+(require 'pen-ledger)
+(require 'pen-widgets)
+(require 'pen-easymenu)
+(require 'pen-ace-popup-menu)
+(require 'pen-annotate)
+(require 'pen-annotation)
+(require 'pen-ov-highlight)
 (require 'pen-racket)
+(require 'pen-denote)
+(require 'pen-fun)
 (require 'pen-lsp-go)
 (require 'pen-lsp-r)
+(require 'pen-lsp-c)
+(require 'pen-ead)
+(require 'pen-info)
 (require 'pen-lsp-python)
 (require 'pen-lsp-rust)
+(require 'pen-notmuch)
 (require 'pen-haskell)
 (require 'pen-browser)
 (require 'peniel)
@@ -2460,13 +2604,15 @@ May use to generate code from comments."
   (setq fp (pen-umn fp))
   (cond
    ((pen-snq (pen-cmd "which" fp)) (find-file (chomp (pen-sn (concat "which " fp)))))
-   ((pen-snq (pen-cmd "test" "-f" fp)) (find-file (chomp fp)))
-   ((pen-snq (pen-cmd "test" "-d" fp)) (find-file (chomp fp)))
+   ((pen-test-f fp) (find-file (chomp fp)))
+   ((pen-test-d fp) (find-file (chomp fp)))
    ((string-match "^/[^:]+:" fp) (find-file (chomp fp)))
    (t (message (concat fp " not found")))))
 (defalias 'pen-edit-which 'pen-edit-fp-on-path)
 (defalias 'pen-ewhich 'pen-edit-fp-on-path)
 (defalias 'pen-ew 'pen-edit-fp-on-path)
+
+(require 'pen-after-init)
 
 ;; This didn't fix the hanging
 ;; (setq after-init-hook

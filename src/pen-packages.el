@@ -2,6 +2,41 @@
 
 (use-package paradox :ensure t)
 
+;; This is from emacs29 with some adjustments
+(defun package--get-description (desc)
+  "Return a string containing the long description of the package DESC.
+The description is read from the installed package files."
+  ;; Installed packages have nil for kind, so we look for README
+  ;; first, then fall back to the Commentary header.
+
+  ;; We don’t include README.md here, because that is often the home
+  ;; page on a site like github, and not suitable as the package long
+  ;; description.
+  (let ((files '("README-elpa" "README-elpa.md" "README" "README.rst" "README.org"))
+        file
+        (srcdir (package-desc-dir desc))
+        result)
+    (while (and files
+                (not result))
+      (setq file (pop files))
+      (when (file-readable-p (expand-file-name file srcdir))
+        ;; Found a README.
+        (with-temp-buffer
+          (insert-file-contents (expand-file-name file srcdir))
+          (setq result (buffer-string)))))
+
+    (or
+     result
+
+     ;; Look for Commentary header.
+     (ignore-errors
+       (try
+        (lm-commentary (expand-file-name
+                        (format "%s.el" (package-desc-name desc)) srcdir))
+        (lm-commentary (expand-file-name
+                        (format "%s.el" (replace-regexp-in-string "-mode" "" (package-desc-name desc))) srcdir))))
+     "")))
+
 (defun pen-slurp-file (f)
   (with-temp-buffer
     (insert-file-contents f)

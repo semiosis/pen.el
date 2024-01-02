@@ -15,7 +15,13 @@ Optional argument CANDIDATE is the selected item."
   (unless candidate
     (setq candidate (car (calibredb-find-candidate-at-point))))
   ;; (pen-sps (concat "o " (pen-q (expand-file-name (calibredb-getattr candidate :file-path))) ""))
-  (pen-sn (concat "o " (pen-q (expand-file-name (calibredb-getattr candidate :file-path))) "") nil nil nil t)
+
+  ;; fascinatingly, spinner runs when calibre opens
+
+  (pen-sn (cmd
+           "o"
+           (expand-file-name (calibredb-getattr candidate :file-path))
+           ) nil nil nil t)
   ;; (tv (concat "o " (pen-q (expand-file-name (calibredb-getattr candidate :file-path))) "") nil nil nil t)
   )
 
@@ -311,5 +317,7 @@ Argument EVENT mouse event."
         (error "No ebook chosen"))
     (with-current-buffer (window-buffer window)
       (pen-sn (pen-cmd "z" (get-text-property pos 'help-echo nil))))))
+
+(advice-add 'calibredb :around #'around-advice-buffer-erase-trailing-whitespace-advice)
 
 (provide 'pen-calibre)

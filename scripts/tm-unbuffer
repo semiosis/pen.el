@@ -1,0 +1,46 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This puts a real tty around unbuffer
+
+# examples:
+# echo hi | tm-unbuffer -p cat | v
+# tm-unbuffer -p cat | v
+
+# Use ub because I want -E
+
+use_unbuffer=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -E) {
+        CMD="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -nub) {
+        use_unbuffer=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: ${CMD:="$(cmd "$@")"}
+
+stderr_fp=/tmp/tm-unbuffer-stderr.txt
+
+if test "$use_unbuffer" = "y"; then
+    unbuffer_string="unbuffer "
+fi
+
+(
+tm -w -sout -vipe nw -d -fargs bash -c "${unbuffer_string}$CMD 2>$stderr_fp | cat"
+ret="$?"
+test -s "$stderr_fp" && cat "$stderr_fp" 1>&2
+exit "$ret"
+) | pavs

@@ -4,4 +4,4 @@ export TTY
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 # In the pen container PS4 is always lost
-bash -x "$@"
+debug bash -x "$@"

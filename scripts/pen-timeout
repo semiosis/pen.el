@@ -4,8 +4,8 @@ export TTY
 PEN_TIMEOUT="$1"
 shift
 
-: "${PEN_NO_TIMEOUT:="$(0</dev/null pen-rc-get no-timeout)"}"
-: "${PEN_TIMEOUT:="$(0</dev/null pen-rc-get timeout)"}"
+: "${PEN_NO_TIMEOUT:="$(0</dev/null pen-rc-get no-timeout 2>/dev/null)"}"
+: "${PEN_TIMEOUT:="$(0</dev/null pen-rc-get timeout 2>/dev/null)"}"
 
 if test "$PEN_NO_TIMEOUT" = "y"; then
     "$@"

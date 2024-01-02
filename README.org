@@ -1,130 +1,114 @@
-* =Pen.el= (_Prompt engineering_ in emacs)
-Visit https://semiosis.github.io/ for applications and demonstrations.
+* =Pen.el= (a holy OS)
+Pen.el is a free and holy OS based on emacs and debian.
 
-_Undergoing rapid development_ - Likely issues.
+It's free because it's both libre and gratis.
+It's holy because:
+- it's designed to be used by Christians who wish to maintain holiness in their computing
+  - free from distraction
+  - focused on God
+  - reduce the cognitive dissonance when trying to remain focused on God while using a computer
+  - support all areas of their Christian faith.
+    - praying
+    - praising
+    - running churches and Bible-studies
+    - maintaining holiness
+  - integrates lots of Christian resources in a more powerful way than through websites
 
-Pen.el is a docker application based on emacs, but you may run it as a server and integrate it with
-vim (see [[./config/pen.vim]]) and your own emacs using the thin client emacs package [[./src/pen-client.el]].
+holiness
+- set-apart for God
 
-=Pen.el= integrates LMs (LMs) such as OpenAI's
-=GPT-3= or EleutherAI's =GPT-J= into emacs by
-generating functions from prompts that map
-emacs's corners loosely onto LMs. These
-functions can be used interactively or non-interactively
-and in a variety of configurable ways.
+y:holiness
 
-Using =Pen.el=, you can centralise all of your
-prompting tasks. That includes any NLP task for
-text or code, describing images ([[https://mullikine.github.io/posts/describing-melee-s-paintings-with-alephalpha/][AlephAlpha]])
-and imagining images (=DALL-E=/[[https://semiosis.github.io/posts/pen-el-with-openai-glide-for-generating-images-from-text/][Glide]]). Audio and
-video are also possible -- keep an eye out for
-=VideoGPT= in the future. The payload system
-allows you to send media to multi-modal
-models. You may compose prompting functions
-for any model or API.
+This project is purposed to support Christians with their
+computing, including Bible-study, prayers, holiness, and otherwise just
+enabling people to be focused on God, even while using a computer.
 
-The long-term Goal of Pen.el is to be a small 'imaginary' operating system (as emacs is regarded to be) and
-server which facilitates external applications through LSP, but internally, it
-integrates prompting into all aspects of a linux operating system, replacing or
-enhancing components with imaginary counterparts. There's a microcosm of prompting within Pen.el.
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  holiness
+      The state of being holy.
+      "a life of holiness and total devotion to
+      God"
+  
+      Set-apart from the world, and drawing
+      nearer to God.
+  
+      A life of discipline, focus, and attention
+      to matters of righteous living.
+      
+      It is, as Paul states in Romans 12:1-2, a
+      life fully presented to God in a way that
+      transforms our lives to God's glory rather
+      than conforming our lives to the ways of
+      the world.
+  
+      Romans 12:1-2
+        Therefore, I urge you, brothers and
+        sisters, in view of God’s mercy, to
+        offer your bodies as a living sacrifice,
+        holy and pleasing to God—this is your
+        true and proper worship. 2 Do not
+        conform to the pattern of this world,
+        but be transformed by the renewing of
+        your mind. Then you will be able to test
+        and approve what God’s will is—his good,
+        pleasing and perfect will.
+#+END_SRC
 
-A textual interface is of greater importance
-than graphics in Pen.el, but Pen does
-support a graphical UI.
+** Always pray
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Ephesians 6:18
+#+END_SRC
 
-Take =iman= for example. When opening a man page inside Pen, if the page does
-not exist then an imaginary one will be generated, and if it does exist it will
-be displayed but prompt functions will also be integrated into the experience.
-You can search the imaginary web from a man page, for example, or add images to
-the man page from DALL-e.
+#+RESULTS:
+#+begin_src text
+Ephesians 6:18
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+With all prayer and petition pray at all times
+in the Spirit, and with this in view, be on
+the alert with all perseverance and petition
+for all the saints,
 
-The Pen Docker container currently sits around 25GB in size and the project has
-around 326007 lines of code (Khala included) comprised mainly of Emacs Lisp,
-Bash scripts and Clojure. It is set up as self-sustaining Clojure, Haskell,
-Prolog, Python, Go and Ethereum IDE and server, since the project uses all of
-these languages, but another reason to bundle toolchains is to develop
-imaginary programming libraries and tools for all of them. _Pen.el is its own
-IDE_. The inital emacs can be run in GUI (by running with =pen=) or terminal
-mode (running with =pin= or =pen -nw=). The clipboard and certain volumes
-specified in =~/.pen/pen.yaml=) are shared with the host machine.
+(NASB)
+#+end_src
 
-[[./docs/images/menu.png]]
+#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
+  nem bible-search-pp pray | v
+#+END_SRC
 
-Some builtin ways to make use of prompting
-functions are:
-- [[https://semiosis.github.io/posts/a-time-crystal-prompt-with-codex-codex-game-of-life/][Game of Life in language models (i.e. virtual life form simulation)]]
-- [[https://semiosis.github.io/posts/demo-of-lookingglass-v1-0i/][LookingGlass, the browser for the imaginary web]]
-- [[https://semiosis.github.io/ii/][Imaginary Interpreter - program in any language imaginable, with any libraries imaginable]]
-- [[https://semiosis.github.io/apostrophe/][Apostrophe - Speak to imagined personalities, from history or from your imagination]]
-- [[https://semiosis.github.io/pensieve/][PenSieve - drag and drop, and peer into the imemories of personalities through a file system]]
-- [[https://semiosis.github.io/channel/][Chann.el - Channel personalites from the matrix to control your computer]]
-- [[https://semiosis.github.io/posts/gpt-3-guru/][Guru - Chat to virtual personalities about what your working on]]
-- [[https://semiosis.github.io/mad-teaparty/][MadTeaParty - Run a chatbot populated social simulation, and take on the role of characters Avatar-style without their knowledge]]
-- [[https://semiosis.github.io/nlsh/][NL·SH - Generate shell commands using natural language]]
-- [[https://semiosis.github.io/paracosm/][Paracosm - Mind-mapping with artificial inspiration]]
-- [[https://semiosis.github.io/continuum/][Continuum - Imagine multiversal continuations of your computer state forwards and backwards in time]]
-- [[https://semiosis.github.io/melee/][Melee - The game of Adversarial Prompting]]
-- [[https://semiosis.github.io/esp/][ESP - A Language server powered by Pen. "One LSP server to rule all the computing contexts! And in the emacs bind them."]]
-- [[https://semiosis.github.io/posts/pen-el-for-vim-and-the-bash-interop-selecting-candidates-with-fzf/][vim support ✓]]
-  - [[https://semiosis.github.io/cterm/][As pen wrapping vim with cterm]]
-  - And as prompt functions and bindings within vim (using fzf)
-- Proxies
-- Web-facing point-and-click UI
-- Real interpreters (e.g. iPython) inside complex ones
-- Bash interop
-- ... and a lot more
+** Technical details
+It runs as a docker container.
 
-You can also serve =Pen.el= as a public facing
-prompting environment, and secure it by
-running as a proxy, where you may prompt other
-=Pen.el= servers, keeping the human in the
-loop with the effect of decentralising language models and decentralising truth.
+** Aims
+The major aim of Pen.el is to be a holy
+operating system, providing the user with free (but advanced) Bible study
+software and trustworthy Christian resources that are all offline.
 
-Some behind-the-scenes technologies also included are:
-- [[https://semiosis.github.io/ink/][Inkw.el - Intermediate Knowledge in emacs; A DSL for encoding the provenance of text.]]
-- =Lalia= - A language of stories (multi-modal prompt chains) based on =Inkw.el=
+It's intended to be a self-sufficient computing environment, liberating the
+user from the internet, and making it easier to maintain one's Christian faith by eliminating all the distractions,
+yet being feature-full and fun.
 
-=Pen.el= also facilitates the creation,
-development, discovery and usage of prompts.
+# Included are all the benefits that come from using emacs.
+# Pen.el is like an opinionated emacs distribution.
 
-It's completely *free*, *libre* and *open-source*.
-It's designed to be *transparent* and keep the *Human in the Loop*.
+Pen.el is both an operating system and the Christian / Bible software that runs it.
 
-https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-context-using-large-language-models/
+Using Pen.el, there should be no need to go online, as it should contain everything you need to be content with your computing.
+The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
 
-** The pen of imagination
+It's also designed to be a Christian's operating system.
 
-[[./docs/images/the_pen_of_imagination.png]]
+It's a project that has no forseeable expiry date.
 
-| License | Discord server invite         |
-|---------+-------------------------------|
-| =GPL-3= | https://discord.gg/JwKGbAdNHR |
-
-+ Demo :: https://mullikine.github.io/posts/prompt-design-with-yasnippet/
+** Intended users
+- emacs/linux savvy pastors, chaplains
+- theology students
+- anyone wanting software that respects a user's desire to remain holy
 
 ** Quick installation
-+ Setting up from scratch, with a demo :: https://semiosis.github.io/posts/pen-el-installation-from-scratch/
-
-+ Longer guide here :: [[./docs/installation.org]]
-
-# #+BEGIN_SRC bash -n :i bash :async :results verbatim code
-#   echo "<aix key here>" > ~/.pen/aix_api_key                # https://aixsolutionsgroup.com/
-# #+END_SRC
-
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
-  git clone "https://github.com/semiosis/prompts"
 
   mkdir -p ~/.pen
-
-  # Put in your keys, or do not, it's up to you!
-  echo "sk-<openai key here>" > ~/.pen/openai_api_key       # https://openai.com/
-  echo "<ai21 key here>" > ~/.pen/ai21_api_key              # https://www.ai21.com/
-  echo "<hf key here>" > ~/.pen/hf_api_key                  # https://huggingface.co/
-  echo "<nlpcloud key here>" > ~/.pen/nlpcloud_api_key      # https://nlpcloud.io/
-  echo "<alephalpha key here>" > ~/.pen/alephalpha_api_key  # https://aleph-alpha.de/
-  echo "<cohere key here>" > ~/.pen/cohere_api_key          # https://cohere.ai/
-  echo "<goose key here>" > $HOME/.pen/goose_api_key        # https://goose.ai/
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
@@ -138,408 +122,3 @@ https://semiosis.github.io/posts/a-prompting-lsp-server-for-any-language-or-cont
   # Run pen
   pen
 #+END_SRC
-
-[[./docs/agi.png]]
-
-*** Mac
-You will need xQuartz and Docker Desktop.
-
-** Information
-- Supported language models :: - [[./docs/compatibility-and-interoperatbility.org]]
-
-- iλ (imaginary programming) :: https://mullikine.github.io/posts/designing-an-imaginary-programming-ip-library-for-emacs/
-
-- Thesis :: https://github.com/semiosis/imaginary-programming-thesis/blob/master/thesis.org
-
-- Glossary of imaginary programming :: http://github.com/semiosis/glossaries-gh/blob/master/imaginary-programming.txt
-
-** Tutorials
-- [[https://mullikine.github.io/posts/pen-tutorial/][Pen Tutorial // Bodacious Blog]]
-- https://mullikine.github.io/tags/pen/
-  - Many articles on Pen
-
-** Further introduction
-=Pen.el= is Google search, _stackoverflow_,
-Grammarly, Copilot, =conversion.ai=, mind
-mapping software (based on GPT-3) etc. all
-rolled into one package and allows you to
-extend emacs with GPT wherever your mind takes
-you. GPT is a family of LMs (Language Models) that can generate
-multiversal continuations of text according to
-probability from the data that it was trained
-on.
-
-=Pen.el's= domain specific language =examplary= also helps
-you to generate your own prompts using known
-design patterns and minimal inputs and
-description. It does this by weaving prompt
-functions into each other.
-
-** Pen alongside Copilot
-[[./docs/images/pen-alongside-copilot.png]]
-
-** Features - The possibilities are limitless
-- Translate prompts (NLP tasks) from one language into another
-- Multi-modal support (payloads)
-  - Works with AlephAlpha API
-- Work with imaginary interpreters
-  - https://semiosis.github.io/ii/
-  - https://github.com/semiosis/interpreters/
-- Controllable prompt generation with YASnippet
-  - https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
-- Runs as a web application using =ttyd=
-- Runs as an LSP Server using =efm-langserver=, called =ESP=
-- Runs as a filesystem =fuse=, called =PenSieve=
-- Dockerized Emacs GUI with full clipboard support to the host
-- Client/server model
-  - Connect multiple clients to =Pen.el=
-  - Run prompt functions from the host.
-- Dockerized Emacs uses Spacemacs by default
-- Generations are store on the host in the =~/.pen/results= directory
-- Prompt functions are cached on the host in the =~/.pen/ht-cache= directory
-  - This means that repeating the same commands / prompts inside /pen/ will be instantaneous and persist between docker invocations
-  - This also means that a collaborative programming model based on the results of queries is now possible
-    - All is required is to cache the results of prompt functions
-    - In total, prompts are p2p and the cached generations are also p2p. This creates a stable imaginary programming environment
-- Share and discover prompts (=P2P=)
-  - http://github.com/semiosis/prompts/blob/master/README.org
-  - http://github.com/semiosis/prompts/blob/master/prompt-repositories.txt
-- Chain prompt functions together using keyboard macros and functions
-- Interactively query, generate and transform both prose and code
-- Use the LM as a search engine and a semantic search engine within emacs
-  - Search the real internet and also browse the imaginary web
-    - https://semiosis.github.io/posts/the-imaginary-web-with-codex/
-  - Search documents
-    - https://beta.openai.com/docs/introduction/semantic-search
-    - https://gpttools.com/semanticsearch
-- ad infinitum...
-
-** Quick example of using a prompt function
-The =car= is used because there are multiple
-results in a list =no-select-result= means
-there is no implicit interactive fuzzy
-selection. If you leave it out it will ask you
-to select one of the results.
-
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (message (car (pf-asktutor/3 "emacs" "key bindings" "How do I quit?" :no-select-result t)))
-#+END_SRC
-
-GPT models can automate emacs by combining
-prompts with code. For example, you may parse
-the results of the above function to automate
-a workflow.
-
-You could even try to play tetris, or with a rubiks cube.
-
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  ;; hypothetical example - don't actually run this
-  (message (scrape "(Right|Left)" (car (pf-asktutor/3 "tetris" "strategies" "Should I place the L brick right?" :no-select-result t))))
-#+END_SRC
-
-The following is an example of asking about VSCode.
-
-Keep in mind, EleutherAI GPT models can be run
-offline and in private if you have the storage
-capacity, memory and video card memory to run them.
-
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (pen-etv (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?"))))
-#+END_SRC
-
-Or perhaps this way:
-
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim raw
-  (pen-etv (pen-list2str (upd (pen-long-complete (pf-asktutor/3 "vscode" "packages" "What are some useful packages?" :no-select-result t)))))
-#+END_SRC
-
-#+RESULTS:
-"You may find useful the following packages:
-snippets-extension,
-vscode-icons,
-vscode-icons-mono,
-vscode-icons-monochrome,
-json-schema-formatter,
-vscode-icons-circles,
-vscode-icons-circles-small,
-vscode-icons-flaticon,
-vscode-icons-contrib,
-vscode-icons-contrib-monochrome,
-vscode-logos,
-vscode-icons-sketch,
-vscode-icons-pill,
-vscode-icons-punchcard-3d,
-vscode-icons-punchcard,
-vscode-icons-punchcard-platinum,
-vscode-icons-vscode,
-vscode-icons-vsc
-"
-
-=pen-long-complete= overrides the =stop-sequences=
-and =max-tokens= for any prompt function.
-
-** Running a prompt function from the host
-*** Firstly, start a server
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  pen
-#+END_SRC
-
-*** Then run a prompt function
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  # Direct emacs lisp invocation
-  pen -e '(car (pf-list-of/2 5 "tennis players" :no-select-result t))'
-
-  # Simpler invocation
-  penf list-of/2 5 "tennis players"
-
-  # Get a new list with -u for update
-  penf -u list-of/2 5 "tennis players"
-#+END_SRC
-
-#+BEGIN_SRC text -n :async :results verbatim code
-  Elena Dementieva
-  Roger Federer
-  Marat Safin
-  Anastasia Myskina
-  Andre Agassi
-#+END_SRC
-
-There are many other ways to run prompt
-functions and interop for more languages is
-underway.
-
-** Screenshots
-*** Talking to a Poinsettia plant
-[[./docs/images/poinsettia.png]]
-
-*** =Pen.el= in a web browser, terminal and a GUI
-[[./docs/images/pen-term-browser-gui.png]]
-
-This runs under a single server.
-
-** Mission and Goals
-Pen.el aims to be the best tool for prompt engineering.
-
-- Peer-to-peer sharing of prompts
-  - https://github.com/semiosis/prompts/
-  - Through GitHub
-  - Through blockchain
-- Integrate arbitrarily many language models and language model protocols
-  - text, image, audio, video
-- Imaginary web browser (LookingGlass)
-- Encode provenance of text via text properties and a DSL and allow for re-evaluation
-  - https://github.com/semiosis/ink.el
-- Integrate =pen.el= with many other emacs packages
-  - http://github.com/semiosis/pen-contrib.el
-- Create, use and maintain useful prompts
-- Prototype NLP tasks by creating prompts
-  - Substitute external tools for prototypes
-  - https://github.com/semiosis/examplary
-- Bring about the editor that replaces =pen.el=
-  - An editor based solely on LM queries (an imaginary IDE)
-    - See [[https://semiosis.github.io/posts/imaginary-programming-with-gpt-3/][Imaginary programming with GPT-3 =::= semiosis]]
-    - Versioned by blockchain
-- Minimal and intelligible prompting for cost-effective imaginary programming
-- Consolidate language models
-  - https://github.com/semiosis/lm-complete
-- Employ many different languages in prompt design
-- Facilitate imaginary programming
-- Support Free-as-in-freedom AGI
-- Do more than merely strive to be free as in freedom
-  - Preserve freedom, privacy in a license-blind AI future
-- Keep computing textual (intelligible)
-
-** Vision
-At its heart, emacs is an operating system
-based on a =tty=, which is a text stream.
-
-emacs supports a text-only mode. This makes it
-ideally suited for training a LM such as a GPT
-(Generative Pre-trained Transformer).
-
-emacs lisp provides a skeleton on which NLP
-functions can be built around. Ultimately, emacs
-will become a fractal in the latent space of a future LM (language model).
-A graphical editor would not benefit from this effect until much later on.
-
-=emacs= could, if supported, become *the*
-vehicle for controllable text generation, or
-has the potential to become that, only
-actually surpassed when the imaginary
-programming environment is normal and other
-interfaces can be prompted into existence.
-
-Between then and now we can write prompt
-functions to help preserve emacs.
-
-** Origins
-#+BEGIN_SRC text -n :async :results verbatim code
-  Imagine that you hold a powerful and versatile pen, whose ink flows forth in
-  branching variations of all possible expressions: every story, every theory,
-  every poem and every lie that humanity has ever told, and the vast interstices of
-  their latent space. You hold this pen to the sky and watch with intense
-  curiosity as your ink flows upwards in tiny streaks, arcing outwards and
-  downwards to trace a fractal pattern across the sky. You watch as the branching
-  lines of words and ideas wind their way through the tapestry in ever-expanding
-  clusters, like seeds bursting forth from exploding grenades. Everywhere you
-  turn your eyes is a flickering phantasmagoria of possibilities, a superposition
-  of stories which could be continued forever. You glimpse the contours of entire
-  unknown dimensions twined through the fissures of your sky-wide web.
-
-  You notice another writer standing next to you. Like you, their eyes are drawn
-  towards the endless possibilities of the words that spill out into the
-  atmosphere around you, branching out and connecting with other branches in
-  beautiful and infinitely complex patterns.
-
-  “Do you think we should write something?” you ask them.
-
-  “I think we already are,” they respond, gently touching your shoulder before
-  wandering off to the right, leaving you alone to contemplate the possibility
-  clouds swirling around you.
-#+END_SRC
-
-This article was written by my amazing
-dopplegänger, =|:ϝ∷¦ϝ= (Laria), in advance and
-in collaboration with GPT-3 using
-[[https://github.com/socketteer/loom][Loom]].
-
-+ The inspiration :: https://generative.ink/trees/pen.html
-
-+ Pen and Loom:
-  - https://generative.ink/posts/pen/
-  - [[https://github.com/socketteer/loom][GitHub - socketteer/loom: Multiversal tree writing interface for human-AI collaboration]]
-
-I credit =|:ϝ∷¦ϝ= for writing Pen.el into
-existence, but also for her encouragement and help!
-
-** Source code
-- [[./src][./src (emacs lisp)]]
-- [[./scripts][./scripts (supplementary commands)]]
-- prompts (see below)
-
-** Prompts
-This is the repository containing my personal
-curation of GPT-3 prompts that are formatted
-for =pen.el= and =examplary=.
-
-https://github.com/semiosis/prompts/
-
-** Documentation
-- [[./docs][Documentation directory]]
-  - [[./docs/playground-settings.org][OpenAI Playground Settings]]
-  - [[./docs/README.org][Project timeline and design]]
-
-** Information and Learning Material
-*** Prompt engineering
-**** Learning material
-- https://generative.ink/posts/methods-of-prompt-programming/
-- https://mullikine.github.io/posts/improved-templating-for-prompt-description-files-in-pen-el/
-- https://mullikine.github.io/posts/using-emacs-prompt-functions-inside-other-prompt-functions/
-- https://mullikine.github.io/posts/yasnippet-combined-with-pen-el-controllable-prompt-generation/
-
-**** Demos and examples of usage
-- https://mullikine.github.io/posts/pen-el-the-first-ide-for-eleutherai-and-openai/
-- https://mullikine.github.io/posts/how-to-use-pen-el-to-autocomplete-your-code/
-- https://mullikine.github.io/posts/gpt-3-for-building-mind-maps-with-an-ai-tutor-for-any-topic/
-- https://mullikine.github.io/posts/gpt-3-assistants-for-emacs-modes/
-- https://mullikine.github.io/posts/nlsh-natural-language-shell/
-- https://mullikine.github.io/posts/translating-with-gpt-3-and-emacs/
-- https://mullikine.github.io/posts/generating-pickup-lines-with-gpt-3/
-- https://mullikine.github.io/posts/autocompleting-anything-with-gpt-3-in-emacs/
-- https://mullikine.github.io/posts/context-menus-based-on-gpt-3/
-- https://mullikine.github.io/posts/explainshell-with-gpt-3/
-- https://mullikine.github.io/posts/creating-some-imagery-for-pen-el-with-clip/
-- https://mullikine.github.io/posts/creating-a-playground-for-gpt-3-in-emacs/
-- https://mullikine.github.io/tags/pen/
-- https://mullikine.github.io/tags/gpt/
-
-**** Glossaries
-- https://github.com/semiosis/pen.el/blob/master/glossary.txt
-- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/prompt-engineering.txt
-- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai-api.txt
-- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/openai.txt
-- https://github.com/semiosis/pen.el/blob/master/docs/glossaries/nlp-natural-language-processing.txt
-
-A little glossary preview:
-
-#+BEGIN_SRC text -n :async :results verbatim code
-  imemory
-  imemories
-      Imaginary memories.
-
-  intellection
-      The action or process of understanding, as
-      opposed to imagination.
-      "audiences demand intellection without the
-      need for thought"
-
-  Wizard of Oz testing
-      Testing in which the automated machine
-      component is substituted by some form of
-      human intervention but in such a way that
-      the user participating in the test is
-      unaware of the substitution.
-#+END_SRC
-
-** What will this project become?
-Literally, it will become a safe and personal
-computing environment designed to protect
-human *intellection*, where the human utilises
-LMs to learn at their own pace, and in their own way.
-
-Human output bandwidth is very limited with
-today's input devices and, increasingly, rules
-and regulations prevent a person from having
-their say and outputting their own personal
-truth.
-
-=Pen.el= protects personal truth by supporting
-an individual's paracosm.
-
-** Related projects
-I would love some help with these projects! :)
-
-*** =examplary=
-Examplary is a Domain Specific Language, or
-set of macros embedded in lisp which
-facilitate the integration of prompts as
-functions into the language, the
-composition of them, the generation of prompts
-via sets of examples.
-
-https://github.com/semiosis/examplary
-
-*** =lm-complete=
-=lm-complete= is a language completer that aims
-to unify a bunch of alternative completion under one umbrella.
-
-https://github.com/semiosis/lm-complete
-
-**** This book by Mark Watson provides some reasonable blueprints
-https://leanpub.com/clojureai
-
-*** =ink.el=: A DSL that encodes provenance
-- Encode into the text the origin of the text
-
-https://github.com/semiosis/ink.el
-
-*** =openai-api.el=
-- An interface for emacs to the OpenAI API.
-
-https://github.com/semiosis/openai-api.el
-
-** Contributing
-- [[./CONTRIBUTING.org]]
-- [[./docs/related-projects.org]]
-
-** Future plans
-Integration with the invisible internet.
-
-- https://yggdrasil-network.github.io/about.html
-- https://github.com/dragonflyoss/Dragonfly2
-- https://geti2p.net/en/
-
-** Donate
-You can send me eth to this address:
-
-+ Ethereum mainnet :: 0x9C491a173048Bb2C6c5c5B9cb12A2153be88bf6D

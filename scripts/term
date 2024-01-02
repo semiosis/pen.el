@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename -- "$0")"
+
+unset TMUX
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tm) {
+        USE_TMUX=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$USE_TMUX" = "y"; then
+    "$sn" tmux new -s "$(cmd "$@" | slugify)" "$@"
+    exit "$?"
+fi
+
+if test "$#" -gt 0; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    TERM="$sn" sh -c "$CMD"
+else
+    TERM="$sn" sh
+fi

@@ -1,3 +1,5 @@
+;; j:pen-fun
+
 ;; Need functions for listing music file types
 (defvar music-extensions '(mp4 m4a webm mkv mp3))
 

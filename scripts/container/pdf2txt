@@ -4,6 +4,17 @@ export TTY
 # Updating the library recently fixed some issues. It's worth doing this
 # py f pdfminer
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -mkfp) {
+        make_txt_fp=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
@@ -17,5 +28,30 @@ if is_stdout_pipe; then
         sed 's/	\+/ /g' | sed 's/ \+/ /g' | sed 's/ . . ./.../g' | sed 's//\n&\n/g'
     }
 else
-    pdf2txt.py "$@"
+    # arguments is a list of file paths
+
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        "") { shift; }; ;;
+        *) {
+            if test -f "$opt"; then
+                (
+                    fp="$opt"
+                    fn=$(basename -- "$fp")
+                    dn=$(dirname "$fp")
+                    ext="${fn##*.}"
+                    mant="${fn%.*}"
+
+                    cd "$dn"
+                    if ! test -f "${mant}.txt"; then
+                        pdf2txt.py "$fn" > "${mant}.txt"
+                    fi
+                    v "${mant}.txt"
+                )
+            fi
+            shift
+        }
+        ;;
+    esac; done
+
+    # pdf2txt.py "$@"
 fi

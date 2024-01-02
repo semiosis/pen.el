@@ -1,7 +1,33 @@
 #!/bin/bash
 export TTY
 
-f="$1"
-shift
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
 
-cat1 "$@" | eval "$f"
+stdin_exists
+hasstdin="$?"
+
+# . $PENEL_DIR/scripts/utils.sh
+
+# Perhaps this should actually use pipeexec
+# cat file | filter sed1 sed2 sed3
+# filter fp sed1 sed2 sed3
+
+if test -f "$1" || ! test "$hasstdin" = 0; then
+    cat1 "$1" | eval "$f"
+elif test -n "$1" && test "$hasstdin" = 0; then
+    f="$1"
+    shift
+
+    cat1 "$@" | eval "$f"
+else
+    # TODO treat each argument0
+    "$@"
+fi

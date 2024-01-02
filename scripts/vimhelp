@@ -28,9 +28,28 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-test "$#" -gt 0 && last_arg="${@: -1}"
-section="$last_arg"
-set -- "${@:1:$(($#-1))}" # shift last arg
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    /|-ead) {
+        shift
+        mode=ead
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$mode" = ead; then
+    cd /usr/local/share/vim/vim82/doc
+    ead "$@"
+    exit "$?"
+fi
+
+if test "$#" -gt 0; then
+    last_arg="${@: -1}"
+    section="$last_arg"
+    set -- "${@:1:$(($#-1))}" # shift last arg
+fi
 
 # Example
 # vimhelp digraph-table
@@ -59,6 +78,7 @@ fi
 # echo "vim +$(cmd-nice "help $section") +only $CMD"
 # exit 0
 cmd="vim -c $(cmd-nice "$extra_commands_prepend$extra_commands") --not-a-term +$(cmd-nice "help $section") +only $CMD $opts"
+# "vim" "--not-a-term" "-c" "silent\! echom|silent\! echom|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()|windo silent\! call GeneralSyntax()|au BufEnter * call GeneralSyntax()" "--not-a-term" "+help digraph-table" "+only"
 # cmd="vim --not-a-term +$(cmd-nice "help $section") +only $CMD $opts"
 printf -- "%s" "$cmd" | ds vhlast &>/dev/null
 eval "$cmd"

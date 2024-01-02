@@ -22,10 +22,12 @@ b=("$@"); unset "b[0]"
 {
     test -n "$inputfp" && exec < <(cat "$inputfp")
 
-    "${a[@]}"
+    # This should be fine because eval "v -ac" /etc/hosts
+    # pen-or "pen-e -nas" vs "$@"
+    eval "${a[@]}"
 } || {
     test -n "$inputfp" && exec < <(cat "$inputfp")
 
-    "${b[@]}"
+    eval "${b[@]}"
 }
 exit "$?"

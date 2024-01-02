@@ -2,6 +2,20 @@
 (require 'pcomplete-extension)
 (require 'eshell-git-prompt)
 (require 'eshell-prompt-extras)
+(require 'eshell-autojump)
+(require 'eshell-z)
+(require 'eshell-vterm)
+(require 'eshell-up)
+(require 'eshell-toggle)
+(require 'eshell-syntax-highlighting)
+(require 'eshell-outline)
+(require 'eshell-info-banner)
+(require 'eshell-fringe-status)
+(require 'eshell-fixed-prompt)
+(require 'eshell-did-you-mean)
+(require 'eshell-bookmark)
+
+(setq epe-fish-path-max-len 40)
 
 (with-eval-after-load "esh-opt"
   (autoload 'epe-theme-lambda "eshell-prompt-extras")
@@ -16,6 +30,7 @@
 ;; https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
 
 (setq eshell-buffer-shorthand t)
+;; e:$EMACSD_BUILTIN/pen.el/config/eshellrc.el
 (setq eshell-rc-script "~/.emacs.d/pen.el/config/eshellrc.el")
 
 ;; I can never seem to remember that find and chmod behave differently from Emacs than their Unix counterparts, so the last setting will prefer the native implementations.
@@ -99,13 +114,14 @@ list of (fn args) to pass to `apply''"
   (interactive)
   (if (cljr--end-of-buffer-p)
       (pen-revert-kill-buffer-and-window)
-    (delete-char)))
+    (delete-char 1)))
 
 (add-hook 'eshell-mode-hook
           '(lambda ()
              (progn
                ;; define-key must go here becasue eshell-mode-map doesn't exist until it's started
                (define-key eshell-mode-map "\C-a" 'eshell-bol)
+               (define-key eshell-mode-map (kbd "C-c C-a") 'beginning-of-line)
                (define-key eshell-mode-map "\C-d" 'eshell-delete-char-maybe-quit)
                (define-key eshell-mode-map "\C-r" 'counsel-esh-history)
                (define-key eshell-mode-map [up] 'previous-line)
@@ -117,7 +133,7 @@ list of (fn args) to pass to `apply''"
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
                (define-key eshell-mode-map
-                 (kbd "M-R") 'eshell-previous-matching-input))))
+                           (kbd "M-R") 'eshell-previous-matching-input))))
 
 
 
@@ -154,35 +170,36 @@ list of (fn args) to pass to `apply''"
 
 ;; I need to edit this function
 ;; ----------------------------
-(defun eshell-plain-command (command args)
-  "Insert output from a plain COMMAND, using ARGS.
+(comment
+ (defun eshell-plain-command (command args)
+   "Insert output from a plain COMMAND, using ARGS.
 COMMAND may result in either a Lisp function being executed by name,
 or an external command."
 
-  (cond ((string-match-p command "^builtin$")
-         (let* ((command (car args))
-                (args (rest args))
-                (esym (eshell-find-alias-function command))
-                (sym (or esym (intern-soft command))))
-           (eshell-lisp-command sym args)))
-        ((string-match-p command "^command$")
-         (let* ((command (car args))
-                (args (rest args))
-                (esym (eshell-find-alias-function command))
-                (sym (or esym (intern-soft command))))
-           (eshell-external-command command args)))
-        (t
-         (let* ((esym (eshell-find-alias-function command))
-                (sym (or esym (intern-soft command))))
+   (cond ((string-match-p command "^builtin$")
+          (let* ((command (car args))
+                 (args (rest args))
+                 (esym (eshell-find-alias-function command))
+                 (sym (or esym (intern-soft command))))
+            (eshell-lisp-command sym args)))
+         ((string-match-p command "^command$")
+          (let* ((command (car args))
+                 (args (rest args))
+                 (esym (eshell-find-alias-function command))
+                 (sym (or esym (intern-soft command))))
+            (eshell-external-command command args)))
+         (t
+          (let* ((esym (eshell-find-alias-function command))
+                 (sym (or esym (intern-soft command))))
 
-           (if (and sym (fboundp sym)
-                    (or esym eshell-prefer-lisp-functions
-                        (not (eshell-search-path command))))
-               (eshell-lisp-command sym args)
-             (eshell-external-command command args)))))
+            (if (and sym (fboundp sym)
+                     (or esym eshell-prefer-lisp-functions
+                         (not (eshell-search-path command))))
+                (eshell-lisp-command sym args)
+              (eshell-external-command command args)))))
 
-  (let* ((esym (eshell-find-alias-function command))
-         (sym (or esym (intern-soft command))))))
+   (let* ((esym (eshell-find-alias-function command))
+          (sym (or esym (intern-soft command)))))))
 
 (defun eshell-unique (&optional arg)
   (interactive "P")
@@ -286,6 +303,7 @@ or an external command."
 ;; This fixes eshell-pcomplete.
 ;; eshell-bol was going to the very beginning of the line
 (defun eshell-bol ()
+  (interactive)
   (pen-comint-bol))
 
 ;; Custom commands
@@ -308,5 +326,34 @@ or an external command."
 ;; (define-key eshell-mode-map (kbd "M-h") 'pen-sph)
 ;; (define-key eshell-mode-map (kbd "M-h") 'eshell-sph)
 (define-key eshell-mode-map (kbd "M-h") 'eshell-sps)
+
+;; e:$EMACSD_BUILTIN/pen.el/config/eshellrc.el
+;; It's also possible to define aliases this way:
+;; (eshell/alias 'sps "pen-find-file-create $1")
+;; j:pen-find-file-create
+;; (eshell/alias 'sps "pen-find-file-create $1")
+;; (eshell/alias 'sps "pen-sps $1")
+
+(defun eshell-edit-aliases ()
+  (interactive)
+  (e eshell-aliases-file)
+  ;; (eshell-read-aliases-list)
+  )
+
+
+(defun pen-eshell-source-file (fp &rest args)
+  (interactive)
+  (with-current-buffer (eshell)
+    (eshell-source-file p args)))
+
+;; j:eshell-output-filter-functions
+
+(defun eshell-filter-region-remove-trailing-whitespace ()
+  (region-erase-trailing-whitespace
+   eshell-last-output-start
+   (- eshell-last-output-end 1)))
+
+(add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
+;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
 
 (provide 'pen-eshell)

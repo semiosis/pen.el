@@ -54,8 +54,10 @@
     res))
 (advice-add 'iedit-mode :around #'iedit-mode-around-advice)
 
-(define-key iedit-mode-occurrence-keymap (kbd "H-\"") 'iedit-show/hide-unmatched-lines)
-(define-key iedit-mode-keymap (kbd "H-\"") 'iedit-show/hide-unmatched-lines)
+(define-key iedit-mode-occurrence-keymap (kbd "H-\"") 'iedit-show/hide-context-lines)
+(define-key iedit-mode-keymap (kbd "H-\"") 'iedit-show/hide-context-lines)
+;; (define-key iedit-mode-occurrence-keymap (kbd "H-\"") 'iedit-show/hide-unmatched-lines)
+;; (define-key iedit-mode-keymap (kbd "H-\"") 'iedit-show/hide-unmatched-lines)
 (define-key global-map (kbd "H-\"") 'iedit-enter-and-show-all)
 
 (defun iedit-stop-and-isearch ()
@@ -71,10 +73,10 @@
 
     (if (/= (point) isearch-opoint)
         (or (and transient-mark-mode mark-active)
-	          (progn
-	            (push-mark isearch-opoint t)
-	            (or executing-kbd-macro (> (minibuffer-depth) 0) edit
-		              (message "Mark saved where search started")))))
+	        (progn
+	          (push-mark isearch-opoint t)
+	          (or executing-kbd-macro (> (minibuffer-depth) 0) edit
+		          (message "Mark saved where search started")))))
 
     (and (not edit) isearch-recursive-edit (exit-recursive-edit))
 
@@ -88,7 +90,9 @@
   (interactive)
   (if (not iedit-mode)
       (call-interactively 'iedit-mode))
-  (iedit-show/hide-unmatched-lines))
+  ;; (iedit-show/hide-unmatched-lines)
+  ;; (iedit-show/hide-occurrence-lines)
+  (iedit-show/hide-context-lines))
 
 (defun iedit-regexp-quote (exp)
   "Return a regexp string."

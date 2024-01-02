@@ -100,6 +100,16 @@
            (buttons-collect))
    (pen-widgets-collect)))
 
+(defun ace-link-click-link-or-button ()
+  (interactive)
+  (let ((pt (avy-with ace-link-help
+              (avy-process
+               (mapcar #'cdr (ace-link-or-button-collect))
+               (avy--style-fn avy-style)))))
+
+    (if pt
+        (ekm "C-m"))))
+
 (defun ace-link-goto-link-or-button ()
   (interactive)
   (avy-with ace-link-help
@@ -197,6 +207,12 @@ values to copy the link to the clipboard and/or primary as well."
 (defun ace-link-bible-ref ()
   (interactive)
   (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-lookup)
+  ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible")
+  )
+
+(defun ace-link-bible-ref-tpop ()
+  (interactive)
+  (ace-link-goto-filter-cmd-button "scrape-bible-references" 'bible-mode-tpop)
   ;; (ace-link-goto-filter-cmd-button "scrape-bible-references" "sps ebible")
   )
 
@@ -325,6 +341,25 @@ values to copy the link to the clipboard and/or primary as well."
          (mapcar #'cdr wordtuples)
          (avy--style-fn avy-style))))))
 
-(define-key pen-map (kbd "M-j M-v") 'ace-link-bible-ref)
+(define-key pen-map (kbd "M-j M-b") 'ace-link-bible-ref)
+(define-key pen-map (kbd "M-j M-v") 'ace-link-bible-ref-tpop)
+
+(defun ace-link-goto-widget ()
+  (interactive)
+  (avy-with ace-link-help
+    (avy-process
+     (mapcar #'cdr (widgets-collect))
+     (avy--style-fn avy-style)))
+  ;; (ace-link--help-action pt)
+  )
+
+(defun ace-link-goto-link-or-button ()
+  (interactive)
+  (avy-with ace-link-help
+    (avy-process
+     (mapcar #'cdr (ace-link-or-button-collect))
+     (avy--style-fn avy-style)))
+  ;; (ace-link--help-action pt)
+  )
 
 (provide 'pen-avy)

@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+
+printf -- "%s\n" "$TMPDIR"

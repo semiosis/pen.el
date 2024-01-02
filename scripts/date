@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# v +/"date() {" "$PENELD/config/bash/bashrc"
+# v +/"date() {" "$PENELD/config/zsh/zshrc"
+
+# I think NZDT is an incorrect timezone specification
+# It should be NZ or Pacific/Auckland
+# : ${TZ:="NZDT"}
+: ${TZ:="Pacific/Auckland"}
+# : ${TZ:="UTC+12"}
+# : ${TZ:="UTC+13"}
+export TZ="$TZ"
+
+/bin/date "$@"

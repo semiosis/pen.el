@@ -1,7 +1,25 @@
 #!/bin/bash
 # export TTY="$(tty)"
 
+test -f "/usr/bin/fzf" && : "${bin:="/usr/bin/fzf"}"
+test -f "/home/shane/local/bin/fzf" && : "${bin:="/home/shane/local/bin/fzf"}"
+
+# If we're using fzf for fuzzy matching grep, then run it quickly (use the binary)
+quick_cmd="$@"
+# Test only the start of the command by removing "--bind.*"
+if printf -- "%s\n" "$quick_cmd" | sed 's/--bind.*//' | grep -q -P -- ' -f '; then
+    "$bin" "$@"
+    exit "$?"
+fi
+
 # ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# eval 'echo -e -n "export PS4=\"+\t\\\"$(basename $0)\\\"\t${LINENO}\t\""'
+# set -xv
+
+: "${USE_NVC:="y"}"
+
+. $PENELD/scripts/utils.sh
 
 : "${FZF_DEFAULT_COMMAND:="ag --hidden --ignore .git -g '' | pen-find-ignore-filter"}"
 export FZF_DEFAULT_COMMAND
@@ -110,7 +128,7 @@ bindings+="alt-t:top,"
 # No function to go to the last result
 # bindings+="alt-4:bottom,"
 
-mfie="pen-pl {+}" # 'multi' field index expression
+mfie="pen-pl {+} | umn" # 'multi' field index expression
 
 # This comes from pen-mfz script
 if test "$FZF_PREPEND_DIR" = "y"; then
@@ -118,7 +136,7 @@ if test "$FZF_PREPEND_DIR" = "y"; then
 fi
 
 # mfl="$mfie | q -l | tr -d '\\n'"
-mfl="cmd-nice {+}"
+mfl="cmd-nice {+} | umn"
 bindings+="alt-r:execute-silent($mfie | awk 1 | head -n 1 | pen-ux drn | pen-tm -f -S -tout spv -xargs ranger),"
 bindings+="alt-o:execute-silent($mfie | awk 1 | head -n 1 | q -l -f | pen-tm -S -tout nw -xargs o),"
 bindings+="alt-y:toggle-all,"
@@ -127,23 +145,30 @@ bindings+="alt-l:execute-silent($mfie | pen-tm -f -S -tout spv v),"
 bindings+="alt-e:execute-silent($mfl | pen-tm -f -S -tout spv -xargs pin),"
 bindings+="alt-v:execute-silent($mfl | pen-tm -f -S -tout sps -xargs v),"
 bindings+="alt-q:execute-silent($mfl | pen-tm -f -S -tout spv -xargs edit-with),"
-bindings+="alt-s:execute-silent($mfl | pen-umn | head -n 1 | pen-ux drn | xargs pen-tm -d spv -c),"
-bindings+="alt-h:execute-silent($mfl | pen-umn | head -n 1 | pen-ux drn | xargs pen-tm -d sph -c),"
+bindings+="alt-s:execute-silent($mfl | head -n 1 | pen-ux drn | xargs pen-tm -d spv -c),"
+bindings+="alt-h:execute-silent($mfl | head -n 1 | pen-ux drn | xargs pen-tm -d sph -c),"
 bindings+="alt-w:execute-silent(pen-tm -f -d spv 'v '$tf_input),"
 bindings+="alt-f:execute-silent($mfie | fzf-thing),"
 bindings+="alt-i:execute-silent($mfie | awk 1 | $preview | pen-tm -f -S -i spv -noerror 'pen-mfz -nm'),"
 bindings+="alt-p:execute-silent($mfie | fzf-thing)," # this should put the preview in a new window
 bindings+="alt-n:execute-silent($mfie | pen-ux fn | pen-xc),"
 bindings+="alt-d:execute-silent($mfie | awk 1 | xargs -l1 dirname | pen-xc -i -n),"
-bindings+="alt-c:execute-silent($mfie | pen-umn | chomp | sed 's/\"#\".*//' | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | pen-xc -i -n),"
-bindings+="alt-m:execute-silent($mfie | pen-mnm | chomp | pen-xc -i -n),"
+bindings+="alt-c:execute-silent($mfie | chomp | sed 's/\"#\".*//' | sed 's/#[^#]\+$//' | sed 's/\s\+$//' | pen-xc -i -n),"
+bindings+="alt-m:execute-silent($mfie | chomp | pen-xc -i -n),"
 bindings+="alt-j:execute-silent($mfie | awk 1 | $preview | head -n 1 | chomp | pen-xc -i)," # copy first result of preview
 bindings="$(p "$bindings" | sed 's/.$//')"
 
 opts+=" --bind=$(cmd-nice-posix "$bindings") "
 
-test -f "/usr/bin/fzf" && : "${bin:="/usr/bin/fzf"}"
-test -f "/home/shane/local/bin/fzf" && : "${bin:="/home/shane/local/bin/fzf"}"
+# fzf --color=bw
 
 # eval "$bin --algo=v2 $opts $CMD"
-nvc -E "$bin --algo=v2 $opts $CMD" | cat
+
+if test "$USE_NVC" = "y"; then
+    opts=" --color=bw $opts"
+    full_cmd="$bin --algo=v2 $opts $CMD"
+    nvc -E "$full_cmd" | cat
+else
+    full_cmd="$bin --algo=v2 $opts $CMD"
+    eval "$full_cmd" | cat
+fi

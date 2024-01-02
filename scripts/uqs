@@ -12,7 +12,7 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    set -- "$(eval "printf -- \"%s\\n\" $(cat)")" "$@"
+    set -- "$(eval "printf -- \"%s \" $(cat)")" "$@"
 fi
 
-printf -- "%s" "$@"
+printf -- "%s" "$@" | sed '$s/ $//'

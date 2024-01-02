@@ -8,6 +8,9 @@
 
 
       (add-to-list 'load-path "/root/.emacs.d/manual-packages/obvious.el")
-      (require 'obvious)))
+      (require 'obvious)
+      
+      (add-to-list 'load-path "/root/.emacs.d/manual-packages/problog-mode")
+      (require 'problog-mode)))
 
 (provide 'pen-load-manually)

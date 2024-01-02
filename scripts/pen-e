@@ -1,7 +1,19 @@
 #!/bin/bash
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+sn="$(basename -- "$0")"
+
+. $PENELD/scripts/utils.sh
+
+: "${FAST:="y"}"
+
+if ! in-pen-p; then
+    # in-pen "$sn" "$@"
+    pin "$@"
+    exit "$?"
+fi
+
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 
 unset EMACSD_BUILTIN
@@ -12,6 +24,8 @@ unset EMACSD
 test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
+
+export PENELD="$EMACSD/pen.el"
 
 unset VIMCONFIG
 test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"
@@ -54,7 +68,7 @@ find_file_command=find-file
 
 if printf -- "%s\n" "$sn" | grep -q 'x$'; then
     sn="$(printf -- "%s" "$sn" | sed 's/.$//')"
-    export USEGUI=y
+    : "${PEN_USE_GUI:="y"}"
 fi
 
 apply() {
@@ -116,6 +130,7 @@ stdin_exists() {
 
 NEW_FILE=n
 
+: "${NO_AUTO_START:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     --) {
         shift
@@ -142,8 +157,32 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -gui) {
+        export PEN_USE_GUI=y
+        shift
+    }
+    ;;
+
+    -tui) {
+        export PEN_USE_GUI=n
+        shift
+    }
+    ;;
+
     -noonly) {
         export ONLY_WINDOW=n
+        shift
+    }
+    ;;
+
+    -autostart|-as|-das) {
+        export NO_AUTO_START=n
+        shift
+    }
+    ;;
+
+    -noautostart|-nas) {
+        export NO_AUTO_START=y
         shift
     }
     ;;
@@ -205,6 +244,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+export NO_AUTO_START="$NO_AUTO_START"
 
 if test "$MONOCHROME" = "y"; then
     export EMACS_TERM_TYPE=screen-2color
@@ -422,7 +463,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         elisp="(runscript \"$script_path\" $CMD)$elisp(delete-frame)"
 
-        export do_unbuffer=y
+        export run_as_script_with_tmux=y
         shift "$#"
     }
     ;;
@@ -462,10 +503,9 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -ci|-ic|-fi|-ei|-if) {
-
-        elisp="(call-interactively '$2)$elisp"
-        CLEAR=y
+    -eval) {
+        export EVAL_DO_STDOUT=y
+        elisp="(write-to-file (str $2) \"/tmp/pen-e-stdout.txt\")"
         shift
         shift
     }
@@ -473,7 +513,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -ci|-ic|-fi|-ei|-if) {
 
-        elisp+="(call-interactively '$2)"
+        # elisp="(call-interactively '$2)$elisp"
+
+        # This is more reliable for stdout
+        elisp="(pen-switch-to-buffer-for-pen-e (call-interactively '$2))(let ((ret $elisp)) (ignore (refresh-frame)) ret)"
+
         CLEAR=y
         shift
         shift
@@ -505,7 +549,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         CMD="$(cmd-cip "$@")"
         : ${CMD:="$(cmd-cip "$@")"}
 
-        elisp="(funcall-interactively '$fun $CMD)$elisp"
+        elisp="(funcall-interactively '$fun $CMD)(let ((ret $elisp)) (ignore (refresh-frame)) ret)"
 
         shift "$#"
 
@@ -727,7 +771,7 @@ export SERVER_NAME="$SOCKET"
 export SOCKET
 
 if test "$CLEAR" = "y"; then
-   elisp+="(recenter-top-bottom)"
+    elisp+="(ignore-errors (recenter-top-bottom))"
 fi
 
 if test "$FT_DETECT" = "y"; then
@@ -740,19 +784,27 @@ fi
 
 export TTY
 
-if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
-    if test "$#" -gt 0 && test -e "$last_arg_path"; then
-        {
-            unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m
-        } &>/dev/null
-    else
-        # This was hanging
-        # pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
-        {
-            unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m
-        } &>/dev/null
+if ! test "$FAST" = "y"; then
+    # I think this was probably meant to make it more reliable
+
+    if ( printf -- "%s\n" "$elisp" | grep -q -P "call-interactively"; ); then
+        if test "$#" -gt 0 && test -e "$last_arg_path"; then
+            {
+                unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))" \"$last_arg_path\")" -e KILL_FRAME -c m
+            } &>/dev/null
+        else
+            :
+            # This was hanging
+            # pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m &>/dev/null &
+
+            # What is the point of running this?
+            {
+                unbuffer pen-x -ub -sh "$(cmd pen-emacsclient -a "" -t -s $SOCKET -e "(progn (read-string \"KILL_FRAME\")(kill-frame))")" -e KILL_FRAME -c m
+            } &>/dev/null
+        fi
     fi
 fi
+
 
 if stdin_exists; then
     if test -n "$n_columns"; then
@@ -781,7 +833,7 @@ if stdin_exists; then
     exec 1>&0
     exec 2>&0
 
-    eval "pen-e c $new_arg_string"
+    eval "pen-e --runclient $new_arg_string"
     ret="$?"
     exec 1>&3
     exec 2>&4
@@ -798,18 +850,18 @@ fi
 . `which pen-bash-library.sh`
 
 if test "$sn" = "ec"; then
-    f=c
+    f=--runclient
 elif test "$sn" = "ecn"; then
-    f=c
-elif [ -n "$1" ] && [ -e "$1" ] && ! [ "$1" == c ]; then
+    f=--runclient
+elif [ -n "$1" ] && [ -e "$1" ] && ! [ "$1" == --runclient ]; then
     case "$1" in
-        c|running) {
+        --runclient|running) {
             echo "$1" is a file. opening 1>&2
         }
         ;;
     esac
 
-    f=c
+    f=--runclient
 elif [ -z "$f" ]; then
     f="$1"
     shift
@@ -861,6 +913,7 @@ case "$f" in
             if [ -n "$SOCKET" ]; then
                 pen-e running && exit 0
 
+                # ( test "$SOCKET" = DEFAULT && spinner-start -b; ) & disown
                 if test "$DEBUG_WORKER" = "y"; then
                     eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -ta '' -s $SOCKET $CMD"
                 else
@@ -932,7 +985,7 @@ case "$f" in
 
     -arf|arf|rfa|-rfa|-refresh-all) {
         for d in pen-e; do
-            $d c -e "(package-refresh-contents)(pen-revert-and-quit-emacsclient-without-killing-server)"
+            $d --runclient -e "(package-refresh-contents)(pen-revert-and-quit-emacsclient-without-killing-server)"
         done
 
         exit $?
@@ -945,7 +998,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (my-delete-package ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
+                $d --runclient -e "$pre_cmd(ignore-errors (my-delete-package '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 cat1 $PACKAGES_TXT | sed "/$pkg_name/d" | pen-sponge $PACKAGES_TXT
 
@@ -974,7 +1027,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
+                $d --runclient -e "$pre_cmd(ignore-errors (package-reinstall '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
@@ -991,7 +1044,7 @@ case "$f" in
         for d in pen-e; do
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (lsp-install-server ...) $pkg_name" 1>&2
-                $d c -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(pen-revert-and-quit-emacsclient-without-killing-server)"
+                $d --runclient -e "$pre_cmd(ignore-errors (lsp--install-server-internal (lsp-get-server-for-install $(cmd-nice-posix "$pkg_name"))))(pen-revert-and-quit-emacsclient-without-killing-server)"
                 shift
             done
         done
@@ -1017,7 +1070,7 @@ case "$f" in
             while [ $# -gt 0 ]; do pkg_name=$1
                 echo "$d (package-install ...) $pkg_name" 1>&2
 
-                $d c -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
+                $d --runclient -e "$pre_cmd(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
                 echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
@@ -1033,12 +1086,12 @@ case "$f" in
     fi|-fi|fast-install) {
 
         if yn "refresh contents?"; then
-            pen-e c -e "(ignore-errors (package-refresh-contents))"
+            pen-e --runclient -e "(ignore-errors (package-refresh-contents))"
         fi
 
         while [ $# -gt 0 ]; do pkg_name=$1
 
-            pen-e c -e "(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
+            pen-e --runclient -e "(ignore-errors (package-install '$pkg_name))(pen-revert-and-quit-emacsclient-without-killing-server)"
 
             echo "$pkg_name" | pen-append-uniq $PACKAGES_TXT
 
@@ -1084,7 +1137,7 @@ case "$f" in
     ;;
 
     p|packages) {
-        pen-e c -e "(list-packages)"
+        pen-e --runclient -e "(list-packages)"
         exit $?
     }
     ;;
@@ -1099,7 +1152,7 @@ case "$f" in
         tf_thing="$(pen-ux tf thing || echo /dev/null)"
         trap "rm \"$tf_thing\" 2>/dev/null" 0
 
-        unbuffer pen-e -nosettty c -n -e "(write-string-to-file (str $val) $(cmd-nice-posix "$tf_thing"))" &>/dev/null
+        unbuffer pen-e -nosettty --runclient -n -e "(write-string-to-file (str $val) $(cmd-nice-posix "$tf_thing"))" &>/dev/null
 
         cat "$tf_thing"
         exit $?
@@ -1107,7 +1160,7 @@ case "$f" in
     ;;
 
     -flash) {
-        pen-e c -n -e "(mode-line-bell-flash)"
+        pen-e --runclient -n -e "(mode-line-bell-flash)"
         exit $?
     }
     ;;
@@ -1115,7 +1168,7 @@ case "$f" in
     q|quit) {
 
         if pen-e running; then
-            pen-e c -e "(pen-kill-emacs t)"
+            pen-e --runclient -e "(pen-kill-emacs t)"
             printf -- "%s\n" "$SOCKET is dead" 1>&2
         else
             printf -- "%s\n" "$SOCKET not running" 1>&2
@@ -1144,23 +1197,20 @@ case "$f" in
         exec 1>/dev/null
         exec 2>/dev/null
 
-        if [ -n "$SOCKET" ]; then
+        (
+        : "${SOCKET:="DEFAULT"}"
+        if test -n "$SOCKET"; then
             {
                 lc_socket="$(pen-pl "$SOCKET" | sed 's/_.*$//' | pen-c lc)"
                 COLUMNS=10000 ps -ef |grep "pen-e -D $lc_socket"
 
-                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/$SOCKET\$/p"
+                COLUMNS=10000 ps -ef | grep emacs | sed -n "/emacs --daemon=${SOCKET}\$/p" | tv
             } | pen-str field 2 | {
                 pids="$(cat)"
                 pen-pl "$pids" | xargs kill -"$signal"
             }
-        else
-            ps -ef | grep emacs | sed -n "/emacs --daemon=.*\/DEFAULT\$/p" | field 2 | {
-                pids="$(cat)"
-                pen-pl "$pids" | xargs kill -"$signal"
-                pen-pl "$pids" | xargs kill -9
-            }
         fi
+        )
 
         exec 2>&3
 
@@ -1195,14 +1245,22 @@ case "$f" in
     }
     ;;
 
-    c|-x|x|e|client) { # start emacs client
-        if ! pen-e running; then
-            echo "$SOCKET not started yet. Starting worker." 1>&2
-            pen-e sd
-            # exit $?
+    # --runclient|-x|x|e|client) { # start emacs client
+    --runclient) { # start emacs client
+        pen-e running
+        ret="$?"
+        if ! test "$ret" = 0; then
+            if test "$NO_AUTO_START" = "y"; then
+                echo "$SOCKET not started yet. Not starting worker." 1>&2
+                exit "$ret"
+            else
+                echo "$SOCKET not started yet. Starting worker." 1>&2
+                pen-e sd
+                # exit $?
+            fi
         fi
 
-        if test "$USEGUI" = "y"; then
+        if test "$PEN_USE_GUI" = "y"; then
             f=x
         fi
 
@@ -1268,7 +1326,7 @@ case "$f" in
             }
             ;;
 
-            -ac|-colvim) {
+            -ac|-colmacs) {
                 if test -z "$COLUMNS"; then
                     eval `resize`
                 fi
@@ -1337,7 +1395,7 @@ case "$f" in
             shift
         fi
 
-        if test "$USEGUI" = "y"; then
+        if test "$PEN_USE_GUI" = "y"; then
             elisp="(toggle-scroll-bar -1)$elisp"
         fi
 
@@ -1392,6 +1450,19 @@ case "$f" in
             elisp+="(goto-line $GOTO_LINE)"
         fi
 
+        if test "$EVAL_DO_STDOUT" = y; then
+            tf_buffer_path=/tmp/pen-e-stdout.txt
+            rm -f /tmp/pen-e-stdout.txt
+            elisp+="(delete-frame)"
+        elif test "$ispipe" = 0; then
+            if ! test -n "$tf_buffer_path"; then
+                tf_buffer_path=/tmp/pen-e-stdout.txt
+                rm -f /tmp/pen-e-stdout.txt
+                elisp="(ignore-errors $elisp)"
+                elisp+="(write-to-file (buffer-string) \"$tf_buffer_path\")(delete-frame)"
+            fi
+        fi
+
         if [ -n "$elisp" ]; then
             elispsh="-e $(cmd-nice-posix "(progn (ignore-errors $elisp))")"
         fi
@@ -1402,10 +1473,16 @@ case "$f" in
 
         export EMACS_USER_DIRECTORY
 
+        if test "$DEBUG" = "y"; then
+            printf -- "%s\n" "$elispsh $CMD" 1>&2
+        fi
+
+        # printf -- "%s\n" "$elispsh $CMD" | tv &>/dev/null
+
         if [ -n "$SOCKET" ]; then
             ! pen-e running && ( pen-pl "emacs ~ Starting $SOCKET server" 1>&2; pen-e sd )
 
-            new_cmd="TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN -a '' $client_ops -s $SOCKET $elispsh $CMD"
+            new_cmd="TERM=$EMACS_TERM_TYPE $UNBUFFER_MAYBE $EMACSCLIENT_BIN -a '' $client_ops -s $SOCKET $elispsh $CMD"
 
             exec 3>&1
             exec 4>&2
@@ -1428,7 +1505,7 @@ case "$f" in
             exec 4>&2
             exec 1>"$TTY"
             exec 2>"$TTY"
-            eval "TERM=$EMACS_TERM_TYPE $EMACSCLIENT_BIN $client_ops $elispsh $CMD"
+            eval "TERM=$EMACS_TERM_TYPE $UNBUFFER_MAYBE $EMACSCLIENT_BIN $client_ops $elispsh $CMD"
             exec 1>&3
             exec 2>&4
         fi
@@ -1486,7 +1563,7 @@ case "$f" in
     tf|-tf) {
         tf_scratch="$(pen-ux tf scratch || echo /dev/null)"
 
-        pen-e c "$tf_scratch" "$@"
+        pen-e --runclient "$tf_scratch" "$@"
     }
     ;;
 
@@ -1518,6 +1595,12 @@ case "$f" in
                 if ! [ -f "$1" ]; then
                     w="$(which "$1")"
                     r="$?"
+                    bn="pen-$(basename -- "$w")"
+                    w2="$(which "$bn")"
+                    if test -f "$w2"; then
+                        w="$w2"
+                    fi
+
                     if test "$r" -eq 0; then
                         shift
                         set -- "$w" "$@"
@@ -1530,14 +1613,14 @@ case "$f" in
             fi
         fi
 
-        if test "$do_unbuffer" = "y"; then
+        if test "$run_as_script_with_tmux" = "y"; then
             # hmm.. with unbuffer it's still using the terminal
             # so i'll run it in a hidden tmux window.
             # for the best anyway, in case something goes wrong.
-            tmux neww -d "pen-e c $CMD"
+            tmux neww -d "pen-e --runclient $CMD"
             # Now I still need to capture stdin, stdout, etc
         else
-            eval "pen-e c $CMD"
+            eval "pen-e --runclient $CMD"
         fi
         exit $?
 

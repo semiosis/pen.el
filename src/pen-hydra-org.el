@@ -2,10 +2,10 @@
 
 (defun insert-or-unindent (arg)
   (interactive "P")
-  (if (selectedp)
+  (if (pen-selected-p)
       (progn
         (if (not arg) (setq arg 4))
-        (pen-region-pipe (concat "indent -" (str arg))))
+        (pen-region-pipe (concat "pen-indent -" (str arg))))
     (call-interactively 'self-insert-command)))
 
 (defset org-hydra-snippet-names
@@ -145,7 +145,6 @@
 
     (if s (hot-expand "<s" s))))
 
-
 (defun hot-expand (str &optional mod header)
   "Expand org template.
 
@@ -167,10 +166,10 @@ prepended to the element after the #+HEADER: tag."
              (insert (eval `(pen-bp pen-org-template-gen ,mod ,sublang ,text)))))
           ((string-equal mod "plantuml-svg")
            (insert (eval `(pen-bp pen-org-template-gen ,mod ,(let ((fp (read-string "svg fp: ")))
-                                                       (if (string-match "\.svg$" fp)
-                                                           fp
-                                                         (concat fp ".svg")))
-                              ,text))))
+                                                               (if (string-match "\.svg$" fp)
+                                                                   fp
+                                                                 (concat fp ".svg")))
+                                  ,text))))
           (t
            (insert (eval `(pen-bp pen-org-template-gen ,mod ,text)))))))
 

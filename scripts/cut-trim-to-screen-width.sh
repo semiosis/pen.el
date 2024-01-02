@@ -1,13 +1,16 @@
 #!/bin/bash
 export TTY
 
-eval `resize`
+eval `resize 2>/dev/null`
 
-: "${MAXCOLS:="200"}"
-# MAXCOLS="$(myrc .ideal_screenwidth_read)"
+if test -n "$COLUMNS"; then
+    : "${MAXCOLS:="200"}"
 
-if [ "$COLUMNS" -gt "$MAXCOLS" ]; then
-    COLUMNS="$MAXCOLS"
+    if [ "$COLUMNS" -gt "$MAXCOLS" ]; then
+        COLUMNS="$MAXCOLS"
+    fi
+
+    cut -c -$COLUMNS -
+else
+    cat
 fi
-
-cut -c -$COLUMNS -

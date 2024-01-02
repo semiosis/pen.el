@@ -55,7 +55,52 @@ esac; done
 # Thankfully there is a multiple of 10 number of books
 
 input_fp="$(cat | c ascify | tf txt)"
+spinner-start
+
+# Make this consume the args and generate a regex
+
+# Cache each part
+pipeline_a() {
+    cat "$input_fp" | awk 1 | sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g'
+}
+
+pipeline_b() {
+    titles="$(printf -- "%s\\|" "$@" | sed -z "s/|$//")"
+
+    # But there might be more than one verse on the same line
+    # But it's unlikely, so keep it like this.
+    # Otherwise, I can reduce it to one title,
+    # and it will be slower, but more accurate
+    # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b.*/\\1/p"
+    # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b\\( [0-9]\+\\)\?.*/\\1\\2/pI"
+    # cat "$input_fp" | sed -n "s/.*\\b\\($title\\|$title2\\|$title3\\|$title4\\|$title5\\|$title6\\|$title7\\|$title8\\|$title9\?\\)\\b\\( [0-9]\+\\)\?\\(:[0-9]\+\\)\\?.*/\\1\\2\\3/pI"
+
+    # This is slow but it works
+    # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b.*/\\1/p"
+    # cat "$input_fp" | awk 1 | sed -n "s/.*\\b\\($title\\)\\b\\( [0-9]\+\\).*/\\1\\2/pI"
+
+    # Mark 6:1-13Psalms 119:73-80Proverbs 17:27-28
+    # SoulFood: Heb 11:17-13:25, Mark 10:1-12, Ps 88:1-9a, Pr 11:24-26
+    # Ps.33.6
+    # Ps.136.5-Ps.136.8
+
+    cat "$input_fp" | awk 1 | 
+        sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
+        sed -n "s/.*\\b\\($titles\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
+        sed '/^$/d' | canonicalise-bible-book-title
+}
+
+pipeline() {
+    pipeline_a | pipeline_b
+}
+
 {
+    # I need to list all the many different possible book
+    # titles in all formats
+    # list-bible-books
+
+    # TODO this pipeline run in parallel
+    # list-bible-book-titles | while IFS=$'\n' read -r title; do
     list-bible-books | while IFS=$'\n' read -r title; do
         #read -r title2
         #read -r title3
@@ -86,7 +131,7 @@ input_fp="$(cat | c ascify | tf txt)"
         cat "$input_fp" | awk 1 | 
             sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
             sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
-            sed '/^$/d'
+            sed '/^$/d' | canonicalise-bible-book-title
     done
 } | sponge "$input_fp" | {
     # This takes care of such:
@@ -119,4 +164,15 @@ input_fp="$(cat | c ascify | tf txt)"
     else
         cat
     fi
-} | uniqnosort | sed '/^..$/d' | pavs
+} | uniqnosort | sed '/^..$/d' | {
+    # # Interesting. I can't use spinner-stop here because
+    # # pipelines start all chained subshells immediately.
+    # # Even using 'soak' won't delay it if it's in a preceedingly chained
+    # # subshell
+    # spinner-stop
+
+    # Therefore I must soak in the same subshell.
+    input="$(cat)"
+    spinner-stop
+    printf -- "%s" "$input" | pavs
+}

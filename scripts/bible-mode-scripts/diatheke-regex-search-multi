@@ -1,0 +1,49 @@
+#!/bin/bash
+export TTY
+
+# Search multiple bible versions for a regex
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -fv) {
+        final_version="$2"
+        shift
+        shift
+    }
+    ;;
+
+    -fv-nasb) {
+        final_version=nasb
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+query="$@"
+query="$(p "$query" | pen-fuzzify-regex -w)"
+
+# Also, with the words, add alternatives:
+# - take -> (take|snatch)
+
+test -n "$query" || exit 1
+
+for m in NASB KJV engbsb2020eb; do
+    # diatheke's regex search is sometimes not accurate
+    # I need to do a grep -P I think
+    "diatheke" "-b" "$m" "-s" "regex" "-o" "w" "-f" "plain" "-k" "$query" |
+        sed 's/^[^-]*-- //' | sed 's/ --.*//' | sed 's/ ; /\n/g' | sed '1{s/\([0-9]\)\([A-Z]\)/\1\n\2/}' | sed "/^$/d" | bible-show-verses -m "$m" -nhm | sed '/^(.*)$/d' | sed '/^JOIN$/d' | sed "/^none /d" | sed "s/^/($m) /" |
+        grep -iP "$query"
+done | {
+    if test -n "$final_version"; then
+        # Combine results from all versions
+        sed 's/^([^)]*) //' | sed 's/: .*//' | uniqnosort | bible-show-verses -m "$m" -nhm | sed '/^(.*)$/d'
+    else
+        cat
+    fi
+} | {
+  sed '/^JOIN$/d'
+} | pavs

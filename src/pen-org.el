@@ -1,6 +1,7 @@
 (require 'wordnut)
 (require 'org)
 (require 'org-macs)
+(require 'org-goto)
 (require 'org-table)
 (require 'evil-org)
 (load-library "find-lisp")
@@ -11,8 +12,38 @@
 (require 'org-habit)
 (require 'org-translate)
 (require 'org-link-minor-mode)
+(require 'org-parser)
+(require 'org-sql)
+(require 'org-ql)
+;; There appears to be an issue with helm-org-ql currently
+;; TODO Fix it
+;; (require 'helm-org-ql)
 
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
+
+;; https://github.com/suvayu/.emacs.d/blob/master/lisp/nifty.el
+;; recursively find .org files in provided directory
+;; modified from an Emacs Lisp Intro example
+(defun sa-find-org-file-recursively (&optional directory filext)
+  "Return .org and .org_archive files recursively from DIRECTORY.
+If FILEXT is provided, return files with extension FILEXT instead."
+  (interactive "DDirectory: ")
+  (let* (org-file-list
+	     (case-fold-search t)	      ; filesystems are case sensitive
+	     (file-name-regex "^[^.#].*") ; exclude dot, autosave, and backup files
+	     (filext (or filext "org$\\\|org_archive"))
+	     (fileregex (format "%s\\.\\(%s$\\)" file-name-regex filext))
+	     (cur-dir-list (directory-files directory t file-name-regex)))
+    ;; loop over directory listing
+    (dolist (file-or-dir cur-dir-list org-file-list) ; returns org-file-list
+      (cond
+       ((file-regular-p file-or-dir)         ; regular files
+	    (if (string-match fileregex file-or-dir) ; org files
+	        (add-to-list 'org-file-list file-or-dir)))
+       ((file-directory-p file-or-dir)
+	    (dolist (org-file (sa-find-org-file-recursively file-or-dir filext)
+			              org-file-list) ; add files found to result
+	      (add-to-list 'org-file-list org-file)))))))
 
 ;; nadvice - proc is the original function, passed in. do not modify
 ;; nadvice - proc is the original function, passed in. do not modify
@@ -46,10 +77,15 @@
 
 (defun org-agenda-refresh ()
   (interactive)
-  (setq org-agenda-files (find-lisp-find-files agendadir "\.org$"))
-  (org-agenda-redo))
+  (setq org-agenda-files
+        (append
+         ;; (find-lisp-find-files agendadir "\.org$")
+         (sa-find-org-file-recursively agendadir "org")
+         ;; (sa-find-org-file-recursively some-other-dir "org")
+         ))
+  (ignore-errors (org-agenda-redo)))
 
-(setq org-agenda-files (find-lisp-find-files agendadir "\.org$"))
+(org-agenda-refresh)
 
 (add-hook 'org-mode-hook (λ () (modify-syntax-entry (string-to-char "\u25bc") "w"))) ; Down arrow for collapsed drawer.
 
@@ -418,79 +454,99 @@ With argument N not nil or 1, move forward N - 1 lines first."
 
 ;; This broke org. Why did I have it here? Did I make changes?
 ;; It was badly formatted when I copied it too.
-(comment
- (defun org-activate-links (limit)
-   "Add link properties to links.
+;; I added eww-cached
+(defun org-activate-links--text-properties (limit)
+  "Add link properties to links.
 This includes angle, plain, and bracket links."
-   (catch :exit
-     (while (re-search-forward org-link-any-re limit t)
-       (let* ((start (match-beginning 0))
-              (end (match-end 0))
-              (visible-start (or (match-beginning 3) (match-beginning 2)))
-              (visible-end (or (match-end 3) (match-end 2)))
-              (style (cond ((eq ?< (char-after start)) 'angle)
-                           ((eq ?\[ (char-after (1+ start))) 'bracket)
-                           (t 'plain))))
-         (when (and (memq style org-highlight-links)
-                    ;; Do not span over paragraph boundaries.
-                    (not (string-match-p org-element-paragraph-separate
-                                         (match-string 0)))
-                    ;; Do not confuse plain links with tags.
-                    (not (and (eq style 'plain)
-                              (let ((face (get-text-property
-                                           (max (1- start) (point-min)) 'face)))
-                                (if (consp face) (memq 'org-tag face)
-                                  (eq 'org-tag face))))))
-           (let* ((link-object (save-excursion
-                                 (goto-char start)
-                                 (save-match-data (org-element-link-parser))))
-                  (link (org-element-property :raw-link link-object))
-                  (type-of-of-of (org-element-property :type link-object))
-                  (path (org-element-property :path link-object))
-                  (properties           ;for link's visible part
-                   (list
-                    'face (pcase (org-link-get-parameter type :face)
-                            ((and (pred functionp) face) (funcall face path))
-                            ((and (pred facep) face) face)
-                            ((and (pred consp) face) face) ;anonymous
-                            (_
-                             (if (pen-url-cache-exists link)
-                                 'eww-cached
-                               'org-link)))
-                    'mouse-face (or (org-link-get-parameter type :mouse-face)
-                                    'highlight)
-                    'keymap (or (org-link-get-parameter type :keymap)
-                                org-mouse-map)
-                    'help-echo (pcase (org-link-get-parameter type :help-echo)
-                                 ((and (pred stringp) echo) echo)
-                                 ((and (pred functionp) echo) echo)
-                                 (_ (concat "LINK: " link)))
-                    'htmlize-link (pcase (org-link-get-parameter type
-                                                                 :htmlize-link)
-                                    ((and (pred functionp) f) (funcall f))
-                                    (_ `(:uri ,link)))
-                    'font-lock-multiline t)))
-             (org-remove-flyspell-overlays-in start end)
-             (org-rear-nonsticky-at end)
-             (if (not (eq 'bracket style))
-                 (add-text-properties start end properties)
-               ;; Handle invisible parts in bracket links.
-               (remove-text-properties start end '(invisible nil))
-               (let ((hidden
-                      (append `(invisible
-                                ,(or (org-link-get-parameter type :display)
-                                     'org-link))
-                              properties)))
-                 (add-text-properties start visible-start hidden)
-                 (add-text-properties visible-start visible-end properties)
-                 (add-text-properties visible-end end hidden)
-                 (org-rear-nonsticky-at visible-start)
-                 (org-rear-nonsticky-at visible-end)))
-             (let ((f (org-link-get-parameter type :activate-func)))
-               (when (functionp f)
-                 (funcall f start end path (eq style 'bracket))))
-             (throw :exit t)))))        ;signal success
-     nil)))
+  (catch :exit
+    (while (re-search-forward org-link-any-re limit t)
+      (let* ((start (match-beginning 0))
+             (end (match-end 0))
+             (visible-start (or (match-beginning 3) (match-beginning 2)))
+             (visible-end (or (match-end 3) (match-end 2)))
+             (style (cond ((eq ?< (char-after start)) 'angle)
+                          ((eq ?\[ (char-after (1+ start))) 'bracket)
+                          (t 'plain))))
+        (when (and (memq style org-highlight-links)
+                   ;; Do not span over paragraph boundaries.
+                   (not (string-match-p org-element-paragraph-separate
+                                        (match-string 0)))
+                   ;; Do not confuse plain links with tags.
+                   (not (and (eq style 'plain)
+                             (let ((face (get-text-property
+                                          (max (1- start) (point-min)) 'face)))
+                               (if (consp face) (memq 'org-tag face)
+                                 (eq 'org-tag face))))))
+          (let* ((link-object (save-excursion
+                                (goto-char start)
+                                (save-match-data (org-element-link-parser))))
+                 (link (org-element-property :raw-link link-object))
+                 (type (org-element-property :type link-object))
+                 (path (org-element-property :path link-object))
+                 (face-property (pcase (org-link-get-parameter type :face)
+                                  ((and (pred functionp) face) (funcall face path))
+                                  ((and (pred facep) face) face)
+                                  ((and (pred consp) face) face) ;anonymous
+                                  ;; (_ 'org-link)
+                                  (_
+                                   (if (lg-url-cache-exists link)
+                                       'eww-cached
+                                     'org-link))))
+                 (properties            ;for link's visible part
+                  (list 'mouse-face (or (org-link-get-parameter type :mouse-face)
+                                        'highlight)
+                        'keymap (or (org-link-get-parameter type :keymap)
+                                    org-mouse-map)
+                        'help-echo (pcase (org-link-get-parameter type :help-echo)
+                                     ((and (pred stringp) echo) echo)
+                                     ((and (pred functionp) echo) echo)
+                                     (_ (concat "LINK: " link)))
+                        'htmlize-link (pcase (org-link-get-parameter type
+                                                                     :htmlize-link)
+                                        ((and (pred functionp) f) (funcall f))
+                                        (_ `(:uri ,link)))
+                        'font-lock-multiline t)))
+            (org-remove-flyspell-overlays-in start end)
+            (org-rear-nonsticky-at end)
+            (if (not (eq 'bracket style))
+                (progn
+                  (add-face-text-property start end face-property)
+                  (add-text-properties start end properties))
+              ;; Initialize folding when used outside org-mode.
+              (unless (or (derived-mode-p 'org-mode)
+                          (and (org-fold-folding-spec-p 'org-link-description)
+                               (org-fold-folding-spec-p 'org-link)))
+                (org-fold-initialize (or (and (stringp org-ellipsis) (not (equal "" org-ellipsis)) org-ellipsis)
+                                         "...")))
+              ;; Handle invisible parts in bracket links.
+              (let ((spec (or (org-link-get-parameter type :display)
+                              'org-link)))
+                (unless (org-fold-folding-spec-p spec)
+                  (org-fold-add-folding-spec spec
+                                             (cdr org-link--link-folding-spec)
+                                             nil
+                                             'append)
+                  (org-fold-core-set-folding-spec-property spec :visible t))
+                (org-fold-region start end nil 'org-link)
+                (org-fold-region start end nil 'org-link-description)
+                ;; We are folding the whole emphasized text with SPEC
+                ;; first.  It makes everything invisible (or whatever
+                ;; the user wants).
+                (org-fold-region start end t spec)
+                ;; The visible part of the text is folded using
+                ;; 'org-link-description, which is forcing this part of
+                ;; the text to be visible.
+                (org-fold-region visible-start visible-end t 'org-link-description)
+                (add-text-properties start end properties)
+                (add-face-text-property start end face-property)
+                (org-rear-nonsticky-at visible-start)
+                (org-rear-nonsticky-at visible-end)))
+            (let ((f (org-link-get-parameter type :activate-func)))
+              (when (functionp f)
+                (funcall f start end path (eq style 'bracket))))
+            (throw :exit t)))))         ;signal success
+    nil))
+
 
 (define-key org-agenda-mode-map (kbd "r") 'org-agenda-refresh)
 (define-key org-mode-map (kbd "M-{") nil) ; remove old binding
@@ -522,5 +578,217 @@ This includes angle, plain, and bracket links."
 
 ;; This makes the org-man message go away
 (advice-add 'org-link-minor-mode :around #'shut-up-around-advice)
+
+
+;; nadvice - proc is the original function, passed in. do not modify
+(defun org-agenda-around-advice (proc &rest args)
+  (org-agenda-refresh)
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'org-agenda :around #'org-agenda-around-advice)
+;; (advice-remove 'org-agenda #'org-agenda-around-advice)
+
+;; org-todo
+;; org-auto-repeat-maybe
+(defun org-entry-put (pom property value)
+  "Set PROPERTY to VALUE for entry at point-or-marker POM.
+
+If the value is nil, it is converted to the empty string.  If it
+is not a string, an error is raised.  Also raise an error on
+invalid property names.
+
+PROPERTY can be any regular property (see
+d`org-special-properties').  It can also be \"TODO\",
+\"PRIORITY\", \"SCHEDULED\" and \"DEADLINE\".
+
+For the last two properties, VALUE may have any of the special
+values \"earlier\" and \"later\".  The function then increases or
+decreases scheduled or deadline date by one day."
+  (cond ((null value) (setq value ""))
+        ((not (stringp value)) (error "Properties values should be strings"))
+        ((not (org--valid-property-p property))
+         (user-error "Invalid property name: \"%s\"" property)))
+  (org-no-read-only
+   (org-with-point-at pom
+     (if (or (not (featurep 'org-inlinetask)) (org-inlinetask-in-task-p))
+         (org-back-to-heading-or-point-min t)
+       (org-with-limited-levels (org-back-to-heading-or-point-min t)))
+     (let ((beg (point)))
+       (cond
+        ((equal property "TODO")
+         (cond ((not (org-string-nw-p value)) (setq value 'none))
+               ((not (member value org-todo-keywords-1))
+                (user-error "\"%s\" is not a valid TODO state" value)))
+         (org-todo value)
+         (org-align-tags))
+        ((equal property "PRIORITY")
+         (org-priority (if (org-string-nw-p value) (string-to-char value) ?\s))
+         (org-align-tags))
+        ((equal property "SCHEDULED")
+         (forward-line)
+         (if (and (looking-at-p org-planning-line-re)
+                  (re-search-forward
+                   org-scheduled-time-regexp (line-end-position) t))
+             (cond ((string= value "earlier") (org-timestamp-change -1 'day))
+                   ((string= value "later") (org-timestamp-change 1 'day))
+                   ((string= value "") (org-schedule '(4)))
+                   (t (org-schedule nil value)))
+           (if (member value '("earlier" "later" ""))
+               (call-interactively #'org-schedule)
+             (org-schedule nil value))))
+        ((equal property "DEADLINE")
+         (forward-line)
+         (if (and (looking-at-p org-planning-line-re)
+                  (re-search-forward
+                   org-deadline-time-regexp (line-end-position) t))
+             (cond ((string= value "earlier") (org-timestamp-change -1 'day))
+                   ((string= value "later") (org-timestamp-change 1 'day))
+                   ((string= value "") (org-deadline '(4)))
+                   (t (org-deadline nil value)))
+           (if (member value '("earlier" "later" ""))
+               (call-interactively #'org-deadline)
+             (org-deadline nil value))))
+        ((member property org-special-properties)
+         (error "The %s property cannot be set with `org-entry-put'" property))
+        (t
+         (org-fold-core-ignore-modifications
+           (let* ((range (org-get-property-block beg 'force))
+                  (end (cdr range))
+                  (case-fold-search t))
+             (goto-char (car range))
+             (if (re-search-forward (org-re-property property nil t) end t)
+                 (progn
+                   ;; I fixed a bug here.
+                   ;; The match was changing, and the match-beginnging
+                   ;; and match-end were no longer correct.
+                   ;; But placing the let here seems to have  fixed it.
+                   (let ((b (match-beginning 0))
+                         (e (match-end 0)))
+                     (delete-region b e)
+                     (goto-char b)))
+               (goto-char end)
+               (insert-and-inherit "\n")
+               (backward-char))
+             (insert-and-inherit ":" property ":")
+             (when value (insert-and-inherit " " value))
+             (org-indent-line))))))
+     (run-hook-with-args 'org-property-changed-functions property value))))
+
+(defun sort-string-lessp (i j)
+  "[internal] String comparator."
+  (cond
+   ((string= i j) 0)
+   ((string< i j) -1)
+   (t 1)))
+
+(defun pen-org-add-tag ()
+  (interactive)
+  (let* ((tags (mapcar
+                (lambda (s) (s-replace "_" " " s))
+                (mapcar 'str (org-get-tags))))
+         (all_agenda_tags (mapcar
+                           (lambda (s) (s-replace "_" " " s))
+                           (org-agenda-list-tags)))
+         (sel (fz all_agenda_tags nil nil "Add tag:"))
+         ;; (e (etv sel))
+         (tags (-uniq (-sort 'sort-string-lessp (append tags (list sel))))))
+    (if (sor sel)
+        (org-set-tags
+         (mapcar
+          (lambda (s) (s-replace " " "_" s))
+          tags)))))
+
+;; Remember these
+(setq org-speed-commands
+      '(("Outline Navigation")
+        ("n" org-speed-move-safe 'org-next-visible-heading)
+        ("p" org-speed-move-safe 'org-previous-visible-heading)
+        ("f" org-speed-move-safe 'org-forward-heading-same-level)
+        ("b" org-speed-move-safe 'org-backward-heading-same-level)
+        ("F" . org-next-block)
+        ("B" . org-previous-block)
+        ("u" org-speed-move-safe 'outline-up-heading)
+        ("j" . org-goto)
+        ("g" org-refile
+         '(4))
+        ("Outline Visibility")
+        ("c" . org-cycle)
+        ("C" . org-shifttab)
+        (" " . org-display-outline-path)
+        ("s" . org-toggle-narrow-to-subtree)
+        ("k" . org-cut-subtree)
+        ("=" . org-columns)
+        ("Outline Structure Editing")
+        ("U" . org-metaup)
+        ("D" . org-metadown)
+        ("r" . org-metaright)
+        ("l" . org-metaleft)
+        ("R" . org-shiftmetaright)
+        ("L" . org-shiftmetaleft)
+        ("i" progn
+         (forward-char 1)
+         (call-interactively 'org-insert-heading-respect-content))
+        ("^" . org-sort)
+        ("w" . org-refile)
+        ("a" . org-archive-subtree-default-with-confirmation)
+        ("@" . org-mark-subtree)
+        ("#" . org-toggle-comment)
+        ("Clock Commands")
+        ("I" . org-clock-in)
+        ("O" . org-clock-out)
+        ("Meta Data Editing")
+        ("t" . org-todo)
+        ("," org-priority)
+        ("0" org-priority 32)
+        ("1" org-priority 65)
+        ("2" org-priority 66)
+        ("3" org-priority 67)
+        (":" . org-set-tags-command)
+        ("T" . pen-org-add-tag)
+        ("e" . org-set-effort)
+        ("E" . org-inc-effort)
+        ("W" lambda
+         (m)
+         (interactive "sMinutes before warning: ")
+         (org-entry-put
+          (point)
+          "APPT_WARNTIME" m))
+        ("Agenda Views etc")
+        ("v" . org-agenda)
+        ("/" . org-sparse-tree)
+        ("Misc")
+        ("o" . org-open-at-point)
+        ("?" . org-speed-command-help)
+        ("<" org-agenda-set-restriction-lock 'subtree)
+        (">" org-agenda-remove-restriction-lock)))
+
+(defun org-toggle-link-display ()
+  "Toggle the literal or descriptive display of links."
+  (interactive)
+  (if org-descriptive-links
+      (progn (org-remove-from-invisibility-spec '(org-link))
+         (org-restart-font-lock)
+         (setq org-descriptive-links nil))
+    (progn (add-to-invisibility-spec '(org-link))
+       (org-restart-font-lock)
+       (setq org-descriptive-links t))))
+
+(define-key org-mode-map (kbd "C-c l") 'org-toggle-link-display)
+
+(defun org-get-link ()
+  (interactive)
+  (shut-up (call-interactively 'org-store-link))
+  (with-temp-buffer
+    (call-interactively 'org-insert-last-stored-link)
+    (buffer-string)))
+
+(defun org-copy-link ()
+  (interactive)
+  (xc (org-get-link)))
+
+(define-key pen-map (kbd "C-c L") 'org-copy-link)
+
+(require 'org-ref)
+(require 'org-ref-prettify)
 
 (provide 'pen-org)

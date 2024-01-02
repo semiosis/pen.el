@@ -37,7 +37,8 @@
     ("buffer-name" . ,(try (buffer-name)))))
 
 (defun pen-json-encode-alist (alist)
-  (pen-format-json (json-encode-alist alist)))
+  (snc "sed -z 's/\\[\\n\\s*/[/g' | sed -z 's/\\n\\s*\\],/]/g'"
+       (pen-format-json (json-encode-alist alist))))
 
 (defun pen-buffer-variables-json ()
   "Gets some properties of the current emacs buffer in json format."
@@ -128,11 +129,18 @@
     (try
      (list
       (car e)
-      (if (or (stringp (cdr e))
-              (symbolp (cdr e))
-              (numberp (cdr e)))
-          (cdr e)
-        nil))
+      (let ((s (cdr e)))
+        (cond ((or (stringp s)
+                   (symbolp s)
+                   (numberp s))
+               s)
+              ((keymapp s)
+               (s-left 100 (pps s)))
+              ((listp s)
+               ;; (pen-json-encode-alist (force-alist s))
+               ;; (chomp (s-left 100 (pps (mapcar 'force-keyvalue s))))
+               (chomp (s-left 100 (pps s))))
+              (t nil))))
      (list (car e) nil))))
 
 ;; (advice-add 'json-encode-key :around #'ignore-errors-around-advice)

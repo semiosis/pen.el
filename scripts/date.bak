@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# This appears to not work
+## : ${TZ:="NZDT"}
+#: ${TZ:="AWST"}
+#export TZ
+
+/bin/date "$@"

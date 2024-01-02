@@ -7,7 +7,8 @@ sn="$(basename -- "$0")"
 
 if ! inside-docker-p; then
     # in-pen "$sn" "$@"
-    pen tm new -s "$sn" "$sn" "$@"
+    # pen tm new -s "$sn" "$sn" "$@"
+    pen tm "$sn" "$@"
     exit
 fi
 

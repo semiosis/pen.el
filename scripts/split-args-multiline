@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+sed "s/ \\([^ ]\+\\)/ \\\\\\n   __placeholder__\\1/g" |
+    sed "s/__placeholder__/ /"

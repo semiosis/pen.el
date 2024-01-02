@@ -133,6 +133,30 @@
    nil mode))
 
 (defalias 'pen-etv 'new-buffer-from-o)
+
+(defmacro ifi-message (&rest body)
+  `(let ((result
+          ,@body))
+     (if (interactive-p)
+         (message "%s" (str result))
+       result)))
+
+(defmacro ifietv (&rest body)
+  ""
+  `(let ((result ,@body))
+     (if (interactive-p)
+         (pen-etv result)
+       result)))
+(defalias 'ifi-etv 'ifietv)
+
+(defmacro ifi-v (&rest body)
+  `(let ((result
+          ,@body))
+     (if (interactive-p)
+         (tpop "v" (str result)
+               :output_b nil)
+       result)))
+
 (defun str (thing)
   "Converts object or string to an unformatted string."
 
@@ -378,7 +402,7 @@ TODO make it so if I don't have anything selected, it takes me to the same posit
 This function doesn't really like it when you put 'sp' as the editor."
   (interactive)
   (if (not editor)
-      (setq editor "vim"))
+      (setq editor "v"))
 
   (if (not tm_wincmd)
       (setq tm_wincmd "sps"))
@@ -409,18 +433,27 @@ This function doesn't really like it when you put 'sp' as the editor."
         (pen-bash editor (str stdin) (or (not b_quiet) (not b_nowait)) nil t tm_wincmd dir (not b_nowait)))
     (message "%s" "tvipe: stdin is empty")))
 
-(cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir)
-  "Setting b-wait to -1 disables waiting."
+(cl-defun pen-cl-tv (&optional stdin &key editor &key tm_wincmd &key dir &key pp
+                               &key use_etv
+                               &key use_tm_tv)
+  "Setting b-wait to -1 disables waiting.
+"
   (interactive)
-  (if (display-graphic-p)
+  (setq pp (or pp 'pp-to-string))
+
+  (if (and (or (display-graphic-p)
+               use_etv)
+           (not use_tm_tv))
       (etv stdin)
-      ;; (xtv stdin)
-      (if stdin
-          (progn
-            (if (not (stringp stdin))
-                (setq stdin (pp-to-string stdin)))
-            (pen-sh/tvipe stdin editor tm_wincmd nil t t dir))
-        (message "tv: no input")))
+    ;; (xtv stdin)
+    (if stdin
+        (let ((tv_input
+               (cond ((and (stringp stdin)
+                           (eq pp 'pp-to-string))
+                      stdin)
+                     (t (apply pp (list stdin))))))
+          (pen-sh/tvipe tv_input editor tm_wincmd nil t t dir))
+      (message "tv: no input")))
   stdin)
 (defalias 'pen-tv 'pen-cl-tv)
 

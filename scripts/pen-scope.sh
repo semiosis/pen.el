@@ -65,7 +65,7 @@ if odn adn url-file-p "$path"; then
     ocif scope.sh "$(ocif download-file "$path")" | pavs
     exit "$?"
 elif odn adn url-p "$path"; then
-    elinks-dump "$path"
+    ocif elinks-dump "$path"
     exit "$?"
 fi
 

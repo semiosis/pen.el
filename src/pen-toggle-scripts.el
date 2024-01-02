@@ -1,9 +1,12 @@
 (require 'pen-rc)
 (require 'pen-log)
 
-(pen-mu (defset toggle-scripts (glob "toggle-*" "$SCRIPTS")))
+(defun reload-toggle-keys ()
+  (interactive)
+  (pen-mu (defset toggle-scripts (-filter-not-empty-string (glob "toggle-*" "$SCRIPTS"))))
+  (defset toggle-pen-rc-keys (pen-str2lines (pen-cl-sn "cat /root/.pen/pen.yaml | sed -n \"/^[a-z].*: \\(on\\|off\\)$/p\" | cut -d : -f1" :chomp t))))
 
-(defset toggle-pen-rc-keys (pen-str2lines (pen-cl-sn "cat /root/.pen/pen.yaml | sed -n \"/^[a-z].*: \\(on\\|off\\)$/p\" | cut -d : -f1" :chomp t)))
+(reload-toggle-keys)
 
 ;; Lambda for inverting a predicate
 (defmacro lmv (pred)
@@ -50,24 +53,25 @@
 
 (defun fz-toggle ()
   (interactive)
+  (reload-toggle-keys)
   (let* ((sel
           (fz
            (append
-            (mapcar (λ (script) (concat "script " script " " (str (toggle-script-current-status script)))) toggle-scripts)
-            (mapcar (λ (key) (concat "pen-rc " key " " (str (toggle-pen-rc-current-status key)))) toggle-pen-rc-keys)
+            (mapcar (λ (script) (list (concat "script: " script) (str (toggle-script-current-status script)))) toggle-scripts)
+            (mapcar (λ (key) (list (concat "pen-rc: " key) (if (pen-rc-test key) "on" "off"))) toggle-pen-rc-keys)
             ;; (mapcar (λ (func) (concat "func " (sym2str func))) toggle-functions)
-            (mapcar (λ (c) (concat "cmd " (sym2str c))) toggle-commands)
-            (mapcar (λ (sym) (concat "var " (sym2str sym))) toggle-values)
-            (mapcar (λ (mode) (concat "mode " (sym2str mode))) toggle-modes))
+            (mapcar (λ (c) (list (concat "cmd: " (sym2str c)) "")) toggle-commands)
+            (mapcar (λ (sym) (list (concat "var: " (sym2str sym)) "")) toggle-values)
+            (mapcar (λ (mode) (list (concat "mode: " (sym2str mode)) "")) toggle-modes))
            nil nil "fz-toggle: "))
-         (spl (s-split " " sel))
+         (spl (s-split ": " sel))
          (type (car spl))
-         (name (nth 1 spl)))
-    ;; (never
-    ;;  (cond
-    ;;   ((string-match-p "pen-rc: " type)
-    ;;    (toggle-pen-rc r nil t))))
-    ))
+         (key (nth 1 spl)))
+
+    ;; Actually do the togle
+    (cond
+     ((string-match-p "pen-rc" type)
+      (toggle-pen-rc key nil t)))))
 
 
 ;; TODO Create rc toggles for these
@@ -175,16 +179,16 @@
       (cl-loop for r in toggle-pen-rc-keys do
                (insert-button (concat r "(r)")
                               'type
-                              (if (toggle-pen-rc r nil t)
+                              (if (pen-rc-test r)
                                   'on-button
                                 'off-button)
                               'action
                               (eval
                                `(λ (b)
-                                  (let* ((currentstatus (toggle-pen-rc ,r nil t))
+                                  (let* ((currentstatus (pen-rc-test ,r))
                                          (status (toggle-pen-rc ,r (if currentstatus
                                                                      "off"
-                                                                   "on"))))
+                                                                     "on"))))
                                     (if status
                                         (button-put b 'type 'on-button)
                                       (button-put b 'type 'off-button))))))

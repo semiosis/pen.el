@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+CMD="$(cmd-nice "$@")"
+: ${CMD:="$(cmd-nice "$@")"}
+
+# $PENEL_DIR/scripts/show-vim-mappings
+IFS= read -r -d '' shcode <<HEREDOC
+ocif nem bible-search "$CMD" | sed -n "/: /s/: .*//p" | bible-show-verses -pp
+HEREDOC
+
+# ocif nem bible-search "$CMD" | sed -n "/: /s/: .*//p" | stored bible-show-verses -pp
+
+printf -- "%s\n" "$shcode" | ci -f -nd myeval | pavs

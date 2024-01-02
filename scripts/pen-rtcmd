@@ -5,8 +5,8 @@ sn="$(basename "$0")"
 
 export LINES
 
-WINCMD="sph -p 90"
-# WINCMD="spv -p 30"
+WINCMD="sph -p 80%"
+# WINCMD="spv -p 30%"
 
 pattern=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
@@ -24,13 +24,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     -sph) {
-        WINCMD="sph -p 90"
+        WINCMD="sph -p 80%"
         shift
     }
     ;;
 
     -spv) {
-        WINCMD="spv -p 10"
+        WINCMD="spv -p 20%"
         shift
     }
     ;;
@@ -67,9 +67,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-stdin_exists() {
-    ! [ -t 0 ]
-}
+. $PENELD/scripts/utils.sh
+
 stdin_exists && STDIN_EXISTS=y
 
 tf_stdin="$(pen-ux tf stdin txt 0</dev/null || echo /dev/null)"
@@ -95,7 +94,7 @@ qfd() {
 
 cmdparas="$(echo -e -n "$CMD" | qfd | pen-esc '`')"
 
-printf -- "%s\n" "$cmdparas" | pen-ds -s rtcmd_cmdparas
+printf -- "%s\n" "$cmdparas" | pen-ds -s rtcmd_cmd_fpparas
 
 CREATED_PANE_ID="$(eval "pen-tm -f -d $WINCMD $(test "$NEOVIM" = "y" && p "-nvt") -pakf -safe -d -P $cmdparas" | pen-scrape '%[0-9]+')"
 
@@ -103,4 +102,17 @@ TMUX= eval "pen-tm -f -d spv -pakf -safe -d -t '$CREATED_PANE_ID' $cmdparas"
 
 exec <`pen-tm-tty` `# see etty`
 
-echo -e "$CMD" | pen-v "$vimpat" -ft sh -rt "cat | pen-tm -f -S -tout rs $(test "$NEOVIM" = "y" && p "-nv") -xargs -pakf -safe -t '$CREATED_PANE_ID'" -pc "set ls=0" $vimopts_end
+# TODO Finish this: /root/.emacs.d/host/pen.el/scripts/rted
+
+pid=$$
+rtcmd_cmd_fp="$TMPDIR/rtcmd-$pid.txt"
+
+# Put the command into rtcmd_cmd_fp, but also pass it directly to tmux to run
+# The reason the rtcmd_cmd_fp is stored in a file is so it can be called upon by other potential rtcmds.
+respawn_command="tee \"$rtcmd_cmd_fp\" | pen-tm -f -S -tout rsp $(test "$NEOVIM" = "y" && p "-nv") -xargs -pakf -safe -t '$CREATED_PANE_ID'"
+
+# See:
+# sp +/"RTCmdSetup(cmd)" "$EMACSD_BUILTIN/host/pen.el/config/nvimrc"
+
+# When this vim is edited, the buffer contents are piped the respawn command
+echo -e "$CMD" | pen-v "$vimpat" -ft sh -rt "$respawn_command" -pc "set ls=0" $vimopts_end

@@ -174,8 +174,10 @@ color.  The function should accept a single argument, the color name."
       (read-only-mode t)
 
       ;; (use-local-map (copy-keymap foo-mode-map))
-      (local-set-key "q" 'kill-current-buffer)
-      (local-set-key "d" 'kill-current-buffer)
+
+      
+      ;; (local-set-key "q" 'kill-current-buffer)
+      ;; (local-set-key "d" 'kill-current-buffer)
 
       (beginning-of-buffer))
     (switch-to-buffer b)))

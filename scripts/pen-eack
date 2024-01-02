@@ -2,6 +2,8 @@
 
 # If stdin is not pregrepped, it serves as the list of files to search
 
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
 origcmd="$(cmd "$@")"
 
 UPDATE=y

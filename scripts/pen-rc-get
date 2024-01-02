@@ -3,21 +3,57 @@ export TTY
 
 # pen-rc-get n-workers
 
+# POSIX-compliant
+p () {
+    {
+        i=1
+        while [ "$i" -lt "$#" ]; do
+            eval ARG=\${$i}
+            printf -- "%s " "$ARG"
+            i=$((i + 1))
+        done
+        eval ARG=\${$i}
+        printf -- "%s" "$ARG"
+    } | sed 's/\\n/\n/g'
+}
+
+pl() {
+    printf -- "%s\n" "$@"
+}
+
 key="$1"
 
 if pl "$key" | grep -q -P '^\..*'; then
     key="$(p "$key" | sed 's/^\.//')"
 fi
 
-val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" ~/.pen/pen.yaml)"
+varexists() {
+    [[ -v $1 ]]
+    return $?
+}
 
+env_key="$(p "$key" | tr '[:lower:]' '[:upper:]' | tr -s - _)"
+test -n "$env_key" || exit 1
 
-if test -f "/tmp/pen.yaml"; then
-    runtime_val="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" /tmp/pen.yaml)"
+if varexists "$env_key"; then
+    val="$(eval p \$$env_key)"
+fi
+
+# 3 second delay in rechecking - this does actually make debugging confusing
+# val="$(pen-oci -f -today -t 3 yq -r ".[$(cmd-nice-posix "$key")] // empty" ~/.pen/pen.yaml)"
+# Don't use the cache for get
+: "${val:="$(yq -r ".[$(cmd-nice-posix "$key")] // empty" ~/.pen/pen.yaml)"}"
+
+# What is this runtime pen.yaml nonsense?
+
+if test -f "/tmp/pen.yaml" && ! test -f ~/.pen/pen.yaml; then
+    runtime_val="$(pen-oci -f -today yq -r ".[$(cmd-nice-posix "$key")] // empty" /tmp/pen.yaml)"
 fi
 
 if test -n "$runtime_val"; then
+    test -z "$runtime_val" && echo "$key: empty or false/off" | hls blue 1>&2
     printf -- "%s" "$runtime_val"
 else
+    test -z "$val" && echo "$key: empty or false/off" | hls blue 1>&2
     printf -- "%s" "$val"
 fi

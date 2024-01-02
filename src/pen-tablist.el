@@ -708,4 +708,6 @@ Return t, if point is now in a visible area."
 (define-key subnetscan-tablist-mode-map (kbd "'") 'server-suggest-subnet-scan)
 (define-key ports-tablist-mode-map (kbd "k") 'arp-tablist-nmap-ports)
 
+(advice-add 'tabulated-list-print-entry :around #'ignore-errors-around-advice)
+
 (provide 'pen-tablist)

@@ -1,3 +1,14 @@
+# alias pf='printf'
+
+. $PENEL_DIR/scripts/utils.sh
+
+pf() {
+    printf "$@"
+}
+
+# export PS4='+	"$(basename $0)"	${LINENO}	 '
+# set -xv
+
 unset HISTFILE
 test -f "$HOME/.pen/zsh_history" && : "${HISTFILE:="$HOME/.pen/zsh_history"}"
 test -f "$HOME/programs/zsh/dotfiles/.zsh_history" && : "${HISTFILE:="$HOME/programs/zsh/dotfiles/.zsh_history"}"
@@ -39,9 +50,9 @@ omzdir=/root/repos/oh-my-zsh
 if test -f "$omzdir/oh-my-zsh.sh"; then
     export ZSH="$omzdir"
     export ZSH_THEME="more-minimal" # - fav
-    # plugins=(command-not-found git)
+    plugins=(command-not-found git)
     # git is just too slow, especially when I'm using the git wrapper
-    plugins=(command-not-found)
+    # plugins=(command-not-found)
     source "$omzdir/oh-my-zsh.sh"
 fi
 
@@ -108,10 +119,6 @@ settitle() {
 unsetopt autocd
 unsetopt auto_name_dirs
 
-if [ -n "$NOEMACS" ]; then
-    printf -- "%s\n" "NOEMACS" | hls nearblack 1>&2
-fi
-
 if [ -n "$CWD" ] && ! test "$CWD" = "$(pwd)"; then
     printf -- "%s\n" "Inherited CWD: $CWD" | pen-mnm | hls nearblack 1>&2
 
@@ -120,8 +127,10 @@ else
     CWD="$(pwd)"
 fi
 
-echo -en "\e[0;37m"
-echo -en "\e[0m"
+if tty -s; then
+    echo -en "\e[0;37m"
+    echo -en "\e[0m"
+fi
 
 zstyle ':completion:history-words:*' list no
 zstyle ':completion:history-words:*' menu yes
@@ -520,9 +529,14 @@ export CWD
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# echo hi | zsh -i -c v
+# Causes errors when have both stdin and -i.
+# An example is 'nve'
+{
 stty stop undef
 stty start undef
 stty -ixon
+} 2>/dev/null
 
 # Tmux completion
 _tmux_pane_words() {
@@ -724,3 +738,38 @@ stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 source /root/.config/broot/launcher/bash/br
 
 eval "$(direnv hook zsh)"
+
+# For debugging
+export PS4='+	"$(basename $0)"	${LINENO}	 '
+
+pwd() {
+    if is_tty; then
+        /bin/pwd "$@" | lolcat
+    else
+        /bin/pwd "$@"
+    fi
+}
+
+date() {
+    : ${TZ:="NZ"}
+    # : ${TZ:="UTC+12"}
+    # : ${TZ:="UTC+13"}
+    export TZ="$TZ"
+
+    if is_tty; then
+        /bin/date "$@" | vimcat | cat
+    else
+        /bin/date "$@"
+    fi
+}
+
+# displayopts BORDER
+displayopts
+
+listfunctions() {
+    {
+        print -rl -- ${(k)aliases} | sed 's/^/alias:/'
+        print -rl -- ${(k)functions} | sed 's/^/function:/'
+        print -rl -- ${(k)parameters} | sed 's/^/parameter:/'
+    } | pavs
+}

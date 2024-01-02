@@ -1,0 +1,12 @@
+(require 'wiki-nav) 
+(require 'wikinfo) 
+(require 'wikinforg) 
+(require 'tracwiki-mode) 
+(require 'plain-org-wiki) 
+(require 'org-multi-wiki) 
+(require 'ox-mediawiki) 
+(require 'mediawiki) 
+(require 'helm-wikipedia) 
+;; (require 'helm-org-multi-wiki) 
+
+(provide 'pen-wiki)

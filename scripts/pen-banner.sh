@@ -2,6 +2,8 @@
 export TTY
 echo pen-banner.sh
 
+spinner-stop &>/dev/null & disown
+
 (
 IFS= read -r -d '' banner <<HEREDOC
  [0;1;31;91m▄[0;1;33;93m▄▄[0;1;32;92m▄▄[0;1;36;96m▄[0m                                            [0;1;33;93m▄[0;1;32;92m▄▄[0;1;36;96m▄[0m
@@ -47,6 +49,6 @@ fi
 echo
 penelfonts -f smbraille.tlf Genesis 32:30 | lolcat -f | sed 's/^/         /'
 echo
-ocif Genesis 32:30 | sed '1,2d' | lolcat -f | sed 's/^/     /'
+ocif nbd Genesis 32:30 | sed '1,2d' | lolcat -f | sed 's/^/     /'
 echo
-) | less -rS
+) | erase-trailing-whitespace | less -rS

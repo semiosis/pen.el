@@ -12,5 +12,8 @@ fi
 page="$1"
 test -n "$1" || exit
 
+echo "iman disabled" | hls red 1>&2
+exit 1
+
 echo Imagining man page for "$1"... 1>&2
 penf -nto --tokens 300 --pool pf-imagine-a-man-page/1 "$1" | pen-pavs

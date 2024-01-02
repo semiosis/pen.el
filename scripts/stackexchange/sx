@@ -1,0 +1,31 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# site="stackoverflow"
+# while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+#     "") { shift; }; ;;
+#     -u) {
+#         site="askubuntu"
+#         shift
+#     }
+#     ;;
+# 
+#     *) break;
+# esac; done
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# sp -e "(sx-search-immediately $(aqf "$CMD") )"
+
+# eval "sp -cip sx-search-immediately $CMD"
+
+# eval "sp-ic sx-search-immediately $CMD"
+
+query="$@"
+sx-search-immediately-lang "$query"
+
+# sp -e "(sx-search $(aqf "$site") $(aqf "$CMD") )"
+# sp -e "(sx-search \"\" $(aqf "$CMD") )"

@@ -1,0 +1,29 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    +/*) { # pattern
+        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | chomp)"
+
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd "$@")"
+
+if test -n "$pattern"; then
+    # The Hit return only appears when the terminal width (COLUMNS) is shorter than the file path
+    # TODO Make a conditional for tcl/expect
+
+    # eval "/usr/bin/bvi $CMD"
+    # nvc x -sh "/usr/bin/bvi $CMD" -i # -e "Hit return" -c m -i # -e 000 -s "/$pattern" -c m -i
+    nvc x -sh "/usr/bin/bvi $CMD" -e 000 -s "/$pattern" -c m -i
+else
+    nvc /usr/bin/bvi "$@"
+fi

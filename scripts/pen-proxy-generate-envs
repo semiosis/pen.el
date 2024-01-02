@@ -1,6 +1,10 @@
 #!/bin/bash
 export TTY
 
+# Maybe use 'envq' instead
+# envq -j HOME LANGUAGE
+# envq HOME LANGUAGE
+
 # Don't use all these environment variables
 # "PEN_API_ENDPOINT": env.PEN_API_ENDPOINT // empty,
 # "PEN_N_JOBS": env.PEN_N_JOBS // empty,

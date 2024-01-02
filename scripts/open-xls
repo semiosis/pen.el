@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+opt="$(qa -l libreoffice -v visidata -p pdf)"
+
+case "$opt" in
+    libreoffice) {
+        set -m
+        libreoffice "$@" & disown
+    } ;;
+
+    visidata) {
+        visidata "$@"
+    } ;;
+
+    pdf) {
+        opendoc.sh "$@"
+    } ;;
+
+    *)
+esac

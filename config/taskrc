@@ -1,0 +1,64 @@
+### taskwarrior configuration options
+
+# Taskwarrior program configuration file.
+# For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# You can also refence environment variables:
+#   variable=$HOME/task
+#   variable=$VALUE
+
+# Use the command 'task show' to see all defaults and overrides
+
+# Files
+data.location=/root/.task
+
+# To use the default location of the XDG directories,
+# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
+
+#data.location=~/.local/share/task
+#hooks.location=~/.config/task/hooks
+
+# Color theme (uncomment one to use)
+#include light-16.theme
+#include light-256.theme
+#include dark-16.theme
+#include dark-256.theme
+#include dark-red-256.theme
+#include dark-green-256.theme
+#include dark-blue-256.theme
+#include dark-violets-256.theme
+#include dark-yellow-green.theme
+#include dark-gray-256.theme
+#include dark-gray-blue-256.theme
+#include solarized-dark-256.theme
+#include solarized-light-256.theme
+#include no-color.theme
+
+
+# taskwarrior's configuration
+data.location=.task
+verbose=affected,blank,context,edit,header,footnote,label,new-id,project,special,sync,recur
+uda.priority.values=H,M,,L
+color.alternate=
+
+# taskwarrior-tui reads color attributes from the following to display the same colors of tasks as the CLI
+color.tagged=black on rgb444
+
+# Remove age, tags from task next report.
+# taskwarrior-tui reads the labels and columns from these options to display tasks the same way taskwarrior does
+report.next.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
+report.next.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description.truncated_count,urgency
+report.next.filter=(status:pending or status:waiting) page:limit
+
+### taskwarrior-tui configuration options
+
+uda.taskwarrior-tui.keyconfig.done=x
+uda.taskwarrior-tui.keyconfig.delete=d
+uda.taskwarrior-tui.shortcuts.0=~/local/bin/task-sync.sh
+uda.taskwarrior-tui.report.next.filter=(status:pending or status:waiting)

@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+(
+# black and white
+in-pen xt -rv in-tm -2 pin "$@"
+
+# pen blue on white
+# in-pen xt -li in-tm -2 pin "$@"
+
+# in-pen xt -li -2 in-tm -2 pin "$@"
+
+# Colourful
+# in-pen xt -2 nvt -2 in-tm -2 pin "$@"
+# in-pen xt -2 nvc -2 in-tm -2 pin "$@"
+) & disown

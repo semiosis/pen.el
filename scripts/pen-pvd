@@ -43,18 +43,50 @@ is_tty() {
     [[ -t 1 ]]
 }
 
+: "${BLACK_AND_WHITE:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -2) {
         # precmd="TERM=xterm-2color "
-        precmd="export TERM=screen-2color; "
+        # precmd="export TERM=screen-2color; "
+        export TERM=screen-2color
         # precmd="TERM=vt100 "
+
+        BLACK_AND_WHITE=y
+        shift
+    }
+    ;;
+
+    -nobw) {
+        BLACK_AND_WHITE=n
+        shift
+    }
+    ;;
+
+    -open-plugins) {
+        mode=open-plugins
         shift
     }
     ;;
 
     *) break;
 esac; done
+
+if test "$BLACK_AND_WHITE" = "y"; then
+    export TERM=screen-2color
+else
+    :
+fi
+
+case "$mode" in
+    open-plugins) {
+        x -sh visidata -s ' open-plugins' -c m -i
+        exit "$?"
+    }
+    ;;
+
+    *)
+esac
 
 eval `resize`
 

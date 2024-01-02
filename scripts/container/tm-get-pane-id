@@ -1,6 +1,14 @@
 #!/bin/bash
 export TTY
 
+# tm-get-pane-id gets the id including the session and window
+
+: "${TMUX_PANE:="$(tmux-pane-id)"}"
+
 format_string="#{session_id}:#{window_id}.#{pane_id}"
 
-tmux display-message -p "$format_string"
+if test -n "$TMUX_PANE"; then
+    tmux display-message -t "$TMUX_PANE" -p "$format_string"
+else
+    tmux display-message -p "$format_string"
+fi

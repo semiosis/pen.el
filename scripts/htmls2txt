@@ -3,6 +3,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+do_slugify=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -p) {
@@ -18,8 +19,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -noslug) {
+        do_slugify=n
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
+
+current_dirname="$(pwd)"
 
 convert_html_to_txt() {
     fp="$1"
@@ -28,7 +37,11 @@ convert_html_to_txt() {
 
     (
         cd "$dn"
-        slug="$(printf -- "%s\n" "$bn" | tr '\n' ' ' | sed 's/ $//' | sed 's/\.html$//' | slugify)"
+        if test "$do_slugify" = "y"; then
+            slug="$(printf -- "%s\n" "$bn" | tr '\n' ' ' | sed 's/ $//' | sed 's/\.html$//' | slugify)"
+        else
+            slug="$bn"
+        fi
 
         # pwd | hls orange | awk 1 1>&2
         export EXTRA_METADATA="$(pwd)"
@@ -51,3 +64,8 @@ else
     done
 fi
 
+sync_text_dir="${current_dirname}_text"
+
+cd ..
+rsync -rtlphx --exclude "*/" --include "*.txt" --exclude "*" "${current_dirname}/" "${sync_text_dir}"
+zcd "${sync_text_dir}"

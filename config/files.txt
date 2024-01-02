@@ -338,3 +338,12 @@ $HOME/.config/cli-chess/config.ini
 $HOME/.config/litecli/config
 $HOME/.config/irust/config.toml
 $EMACSD/pen.el/config/vim-bundles/vim-snippets/snippets/sh.snippets
+$HOME/.config/lf/lfrc
+$HOME/.config/glow/glow.yml
+$PENELD/config/taskrc
+$PENCONF/transient-values.el
+$HOME/.scriptrc
+$PENCONF/.notmuch-config
+$HOME/.notmuch-config
+$PENELD/config/visidatarc
+/root/.emacs.d/eshell/alias

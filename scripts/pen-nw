@@ -35,8 +35,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -maybe) {
-        maybe=y
+    -iftty) {
+        iftty=y
         shift
     }
     ;;
@@ -61,7 +61,7 @@ export TARGET
 
 is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-if test "$maybe" = "y" && is_tty; then
+if test "$iftty" = "y" && is_tty; then
     "$@"
     exit "$?"
 fi

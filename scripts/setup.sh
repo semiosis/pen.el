@@ -23,6 +23,8 @@ test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
 
+export PENELD="$EMACSD/pen.el"
+
 mkdir -p "$EMACSD"
 mkdir -p "$HOME/dump"
 mkdir -p "$HOME/repos"
@@ -94,23 +96,24 @@ mkdir -p /root/org-roam
 mkdir -p ~/repos/pen-emacsd
 mkdir -p ~/.config
 (
-cd ~/repos/pen-emacsd
-test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
-test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
-test -d ~/.config/efm-langserver || git clone --depth 1 "https://github.com/semiosis/pen-efm-config" ~/.config/efm-langserver
-test -d interpreters || git clone --depth 1 "https://github.com/semiosis/interpreters"
-test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
-test -d "ink.el" || git clone --depth 1 "https://github.com/semiosis/ink.el"
-test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/openai-api.el"
-test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
-test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
-test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
+    cd ~/repos/pen-emacsd
+    test -d prompts || git clone --depth 1 "https://github.com/semiosis/prompts"
+    test -d engines || git clone --depth 1 "https://github.com/semiosis/engines"
+    test -d ~/.config/efm-langserver || git clone --depth 1 "https://github.com/semiosis/pen-efm-config" ~/.config/efm-langserver
+    test -d interpreters || git clone --depth 1 "https://github.com/semiosis/interpreters"
+    test -d "pen.el" || git clone --depth 1 "https://github.com/semiosis/pen.el"
+    test -d "ink.el" || git clone --depth 1 "https://github.com/semiosis/ink.el"
+    test -d "openai-api.el" || git clone --depth 1 "https://github.com/semiosis/openai-api.el"
+    test -d "pen-contrib.el" || git clone --depth 1 "https://github.com/semiosis/pen-contrib.el"
+    test -d glossaries || git clone --depth 1 "https://github.com/semiosis/glossaries"
+    test -d emacs-yamlmod || git clone --depth 1 "https://github.com/perfectayush/emacs-yamlmod"
 )
 
 tic $HOME/repos/pen.el/config/eterm-256color.ti
 tic $HOME/repos/pen.el/config/screen-256color.ti
 tic $HOME/repos/pen.el/config/screen-2color.ti
-tic $HOME/repos/pen.el/config/screen-2color.ti
+tic $HOME/repos/pen.el/config/screen-2color-rev.ti
+tic $HOME/repos/pen.el/config/vt100rev.ti
 tic $HOME/repos/pen.el/config/xterm-24bit.ti
 # tic /root/.emacs.d/host/pen.el/config/xterm-24bit.ti
 
@@ -126,6 +129,9 @@ touch ~/.tmux.conf.main
 ln -sf ~/.emacs.d/pen.el/src/init-setup.el ~/.emacs
 ln -sf ~/.emacs.d/pen.el/config/shellrc ~/.shellrc
 echo ". ~/.shellrc" >> ~/.profile
+
+ln -sf ~/.pen/git/config ~/.gitconfig
+ln -sf ~/.pen/git/credentials ~/.git-credentials
 
 mkdir -p "$EMACSD/comint-history"
 
@@ -168,11 +174,11 @@ apt install imagemagick-6.q16 libmagick++-6-headers libmagick++-dev
 apt install libgtk-3-0 libgtk-3-dev
 
 (
-cd "$DUMP/programs"
-wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter0_0.20.8-2_amd64.deb"
-dpkg -i "libtree-sitter0_0.20.8-2_amd64.deb"
-wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter-dev_0.20.8-2_amd64.deb"
-dpkg -i "libtree-sitter-dev_0.20.8-2_amd64.deb"
+    cd "$DUMP/programs"
+    wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter0_0.20.8-2_amd64.deb"
+    dpkg -i "libtree-sitter0_0.20.8-2_amd64.deb"
+    wget "http://ftp.us.debian.org/debian/pool/main/t/tree-sitter/libtree-sitter-dev_0.20.8-2_amd64.deb"
+    dpkg -i "libtree-sitter-dev_0.20.8-2_amd64.deb"
 )
 
 (
@@ -253,34 +259,34 @@ tic -s ./eterm-256color/eterm-256color.ti
 apt install chromium
 
 (
-cd
-wget "http://ports.ubuntu.com/pool/universe/libh/libhtml-html5-parser-perl/libhtml-html5-parser-perl_0.301-2_all.deb"
-dpkg -i libhtml-html5-parser-perl_0.301-2_all.deb || true
-agi libhtml-html5-parser-perl
-agi libhtml-html5-entities-perl
+    cd
+    wget "http://ports.ubuntu.com/pool/universe/libh/libhtml-html5-parser-perl/libhtml-html5-parser-perl_0.301-2_all.deb"
+    dpkg -i libhtml-html5-parser-perl_0.301-2_all.deb || true
+    agi libhtml-html5-parser-perl
+    agi libhtml-html5-entities-perl
 )
 
 # https://go.dev/doc/install
 (
-cd
-apt install wget
-wget "https://go.dev/dl/go1.21.1.linux-amd64.tar.gz"
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
+    cd
+    apt install wget
+    wget "https://go.dev/dl/go1.21.1.linux-amd64.tar.gz"
+    rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 )
 
 (
-cd
-git clone "https://github.com/Aleph-Alpha/aleph-alpha-client"
-python3 setup.py build install
+    cd
+    git clone "https://github.com/Aleph-Alpha/aleph-alpha-client"
+    python3 setup.py build install
 )
 
 (
-apt install libxml2-dev libseccomp-dev
-apt install libcurl4-gnutls-dev
-cd
-git clone "https://github.com/eafer/rdrview"
-make
-make install
+    apt install libxml2-dev libseccomp-dev
+    apt install libcurl4-gnutls-dev
+    cd
+    git clone "https://github.com/eafer/rdrview"
+    make
+    make install
 )
 
 (
@@ -357,6 +363,9 @@ agi unzip
 
 mkdir -p ~/.fonts
 mkdir -p /usr/share/fonts/opentype
+
+# Also, install this font:
+# /root/.pen/PkgTTC-IosevkaEtoile-28.0.1.zip
 
 # Place your fonts
 
@@ -739,6 +748,7 @@ raco pkg install --batch describe
 raco pkg install --batch --deps search-auto megaparsack
 raco pkg install racket-langserver
 raco pkg install pollen
+raco pkg install symalg
 raco pkg install --batch --deps search-auto
 HEREDOC
 
@@ -811,12 +821,13 @@ test -d $REPOS/figlet-fonts || (
     git clone "https://github.com/xero/figlet-fonts"
 )
 
-test -d $REPOS/glow || (
-    cd "$REPOS"
-    git clone "https://github.com/charmbracelet/glow"
-    cd glow
-    go build
-)
+# test -d $REPOS/glow || (
+#     cd "$REPOS"
+#     git clone "https://github.com/charmbracelet/glow"
+#     cd glow
+#     go build
+# )
+go install github.com/charmbracelet/glow@latest
 
 test -d $REPOS/go-ethereum || (
     cd "$REPOS"
@@ -932,6 +943,13 @@ cp -a /root/repos/pen.el/config/utils.vim /root/.vim
 cp -a /root/repos/pen.el/config/pen.vim /root/.vim
 cp -a /root/repos/pen.el/config/nvim-function-keysvimrc /root/.vim
 cp -a /root/repos/pen.el/config/fixkeymaps-vimrc /root/.vim
+
+test -d ~/.config && : ${XDG_CONFIG_HOME:=~/.config}
+export XDG_CONFIG_HOME="$XDG_CONFIG_HOME"
+
+mkdir -p "$XDG_CONFIG_HOME/tig"
+cp -a /root/.emacs.d/host/pen.el/config/tigrc "$XDG_CONFIG_HOME/tig/config"
+cp -a /root/.emacs.d/host/pen.el/config/molokai-like-theme.tigrc "$XDG_CONFIG_HOME/tig/theme.tigrc"
 
 mkdir -p /root/.emacs.d/eshell
 cp -a /root/repos/pen.el/config/eshell/* /root/.emacs.d/eshell
@@ -1256,6 +1274,13 @@ agi ftp
 # make install
 # )
 
+(
+cd "$(gc "https://github.com/tmux/tmux")"
+./autogen.sh
+./configure --enable-sixel --prefix=$HOME/.local
+make -j 4
+make install
+)
 
 (
 cd "/root/.emacs.d/manual-packages/"
@@ -1323,20 +1348,27 @@ cd "$EMACSD/manual-packages"
 git clone "https://github.com/alphapapa/obvious.el"
 )
 
-# A TUI common-lisp IDE
-ros install lem-project/lem
-
-(
-cd "$HOME/repos"
-git clone --recursive https://github.com/lem-project/lem
-git clone https://github.com/lem-project/micros
-cd lem
-)
- 
-
 # (ql:quickload :swank)
 xs quicklisp-install swank
 
+# lem
+apt-get update && apt-get install gcc libncurses-dev -y
+
+# Install through git
+# (
+# ros install qlot
+# cd "$HOME/repos"
+# git clone --recursive https://github.com/lem-project/lem
+# git clone https://github.com/lem-project/micros
+# cd lem
+# qlot install
+# qlot exec sbcl --noinform --no-sysinit --no-userinit --load .qlot/setup.lisp --load scripts/build-ncurses.lisp
+# )
+# # Run lem
+# qlot exec sbcl --eval "(ql:quickload :lem-ncurses)" --eval "(lem:lem)" --quit
+
+# A TUI common-lisp IDE
+ros install lem-project/lem
 # cd "$HOME/.roswell/local-projects/lem-project/lem"; sh-yank
 {
 cd $(ros -e '(princ (ql:where-is-system :lem))')
@@ -1524,8 +1556,8 @@ fi
 
 # Database
 (
-cd /root/dump/root/notes/databases/
-test -f kjv.db || http://simoncozens.github.io/open-source-bible-data/cooked/sqlite/kjv.db
+    cd /root/dump/root/notes/databases/
+    test -f kjv.db || http://simoncozens.github.io/open-source-bible-data/cooked/sqlite/kjv.db
 )
 e ia edbi
 
@@ -1536,24 +1568,24 @@ plf install RPC::EPC::Service
 pip install -U litecli
 
 (
-cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
+    cd "$(gc "https://github.com/aaronjohnsabu1999/bible-databases/")"
 )
 
 go install github.com/mithrandie/csvq@latest
 
 (
-cd ~/repos/
-git clone git://repo.or.cz/cwc.git
-cd cwc
-make -j$(nproc)
+    cd ~/repos/
+    git clone git://repo.or.cz/cwc.git
+    cd cwc
+    make -j$(nproc)
 )
 
 (
-cd ~/repos/
-git clone --recursive "https://github.com/chr15m/flk"
-cd flk
-make
-newscript="$(mkw -f flk)"
+    cd ~/repos/
+    git clone --recursive "https://github.com/chr15m/flk"
+    cd flk
+    make
+    newscript="$(mkw -f flk)"
 )
 
 e ia rubik
@@ -1589,9 +1621,8 @@ e ia gumshoe
 go install github.com/maaslalani/typer@latest
 
 (
-gc "https://github.com/gabe565/ascii-movie"
-
-go install github.com/gabe565/ascii-movie@latest
+    gc "https://github.com/gabe565/ascii-movie"
+    go install github.com/gabe565/ascii-movie@latest
 )
 
 # wordle
@@ -1603,7 +1634,7 @@ go install github.com/antonmedv/fx@latest
 agi gron
 
 (
-cd "$(gc "https://github.com/erikgeiser/promptkit")"
+    cd "$(gc "https://github.com/erikgeiser/promptkit")"
 )
 
 agi telnet zathura
@@ -1624,8 +1655,8 @@ pip3.10 install seagoat
 
 # Greek and Hebrew Bibles
 (
-cd "$(gc "https://github.com/eliranwong/OpenHebrewBible")"
-cd "$(gc "https://github.com/eliranwong/OpenGNT/")"
+    cd "$(gc "https://github.com/eliranwong/OpenHebrewBible")"
+    cd "$(gc "https://github.com/eliranwong/OpenGNT/")"
 )
 
 agi iftop nethogs
@@ -1657,31 +1688,31 @@ apt-get install git ssh curl bzip2 libffi-dev -y
 
 sudo rm -rf /usr/local/lib/R
 (
-cd ~/dump/programs
-wget "https://cran.r-project.org/src/base/R-4/R-4.3.1.tar.gz"
-tar xf R-4.3.1.tar.gz 
-cd R-4.3.1/
-agi libpcre2-32-0 libpcre2-dev
-./configure 
-make -j 10
-make install
+    cd ~/dump/programs
+    wget "https://cran.r-project.org/src/base/R-4/R-4.3.1.tar.gz"
+    tar xf R-4.3.1.tar.gz 
+    cd R-4.3.1/
+    agi libpcre2-32-0 libpcre2-dev
+    ./configure 
+    make -j 10
+    make install
 )
 
 # This debian version of R is not new enough
 (
-cd "$(gc "https://github.com/REditorSupport/languageserver")"
-Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r-project.org')"
-Rscript -e "remotes::install_deps(dependencies = TRUE)"
-r-install-package languageserver
-r-install-package lubridate
+    cd "$(gc "https://github.com/REditorSupport/languageserver")"
+    Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r-project.org')"
+    Rscript -e "remotes::install_deps(dependencies = TRUE)"
+    r-install-package languageserver
+    r-install-package lubridate
 )
 
 (
-cd ~/dump/programs
-wget "https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb"
-agi libclang-dev
-# sudo apt --fix-broken install
-sudo dpkg -i "rstudio-2023.09.0-463-amd64.deb"
+    cd ~/dump/programs
+    wget "https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb"
+    agi libclang-dev
+    # sudo apt --fix-broken install
+    sudo dpkg -i "rstudio-2023.09.0-463-amd64.deb"
 )
 
 e ia smalltalk-mode
@@ -1697,17 +1728,371 @@ e ia smalltalk-mode
 pip install lyricy
 
 (
-cd "$(gc "https://github.com/flonatel/pipexec")"
-autoreconf -i 
-./configure
-make -j 10
-make install
+    cd "$(gc "https://github.com/flonatel/pipexec")"
+    autoreconf -i 
+    ./configure
+    make -j 10
+    make install
 )
 
 (
-# cd "$(gc "http://github.com/theprophetictimeline/Bible-Gematria-Interlinear-Explorer")"
-cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer
-cp -a Complete.db ~/.pen/gematria-interlinear.db
+    # cd "$(gc "http://github.com/theprophetictimeline/Bible-Gematria-Interlinear-Explorer")"
+    cd /volumes/home/shane/var/smulliga/source/git/theprophetictimeline/Bible-Gematria-Interlinear-Explorer
+    cp -a Complete.db ~/.pen/gematria-interlinear.db
 )
 
 e ia helm-dogears dogears
+
+(
+    agi libjpeg-dev
+    agi librsvg2-2 librsvg2-bin librsvg2-dev
+    agi libtiff5 libtiff-dev
+    agi libwebp6 libwebp-dev
+    cd "$(gc "https://github.com/hpjansson/chafa")"
+    git checkout origin/1.12
+    ./autogen.sh
+    make -j 4
+    make install
+    ldconfig
+)
+
+(
+    cd "$(gc "https://github.com/marianosimone/epub-thumbnailer")"
+    pip3.10 install pillow
+    python3.10 install.py install
+)
+
+agi zathura zathura-djvu zathura-pdf-poppler
+
+(
+    agi ffmpegthumbnailer
+    agi libffmpegthumbnailer-dev
+    agi libffmpegthumbnailer4v5
+    agi imagemagick imagemagick-6.q16 libmagick++-6-headers libmagick++-dev
+    agi poppler libpoppler-cil libpoppler-cil-dev libpoppler-dev libpoppler82
+    agi wkhtmltopdf
+    agi unzip
+    agi p7zip-full
+    agi unrar-free
+    agi catdoc
+    agi docx2txt
+    agi odt2txt
+
+    agi bat
+    # https://github.com/sharkdp/bat
+    
+    # agi gnumeric
+    # agi exiftool
+    # agi iso-info
+    # agi transmission
+    # agi mcomix
+
+    cd "$(gc "https://github.com/horriblename/lfimg-sixel")"
+    make install
+
+    echo "set previewer ~/.config/lf/preview" > /root/.config/lf/lfrc
+)
+
+agi tesseract-ocr tesseract-ocr-chi-sim
+# (
+# cd "$(gc "http://github.com/writecrow/ocr2text")"
+# pip install --user --requirement requirements.txt
+# )
+
+apt install ocrmypdf
+
+# (
+# cd "$(gc "https://github.com/ocrmypdf/OCRmyPDF")"
+# )
+
+agi info
+
+e ia eat
+
+pip3.11 install poetry
+
+(
+` # cd "$(gc "http://github.com/thetacom/hexabyte")"`
+cd /volumes/home/shane/var/smulliga/source/git/thetacom/hexabyte
+poetry build
+poetry install
+)
+
+e ia m4-mode
+
+agi info
+agi ed
+
+e ia perfect-margin
+
+cargo install du-dust
+
+agi tig
+
+(
+cd "$(gc "https://github.com/gohugoio/hugo")";
+go install --tags extended;
+)
+
+(
+cd "$(gc "http://github.com/dzello/reveal-hugo")"
+)
+
+(
+cd $HOME/programs
+wget "https://github.com/muammar/mkchromecast/releases/download/0.3.8.1/mkchromecast_0.3.8.1-1_all.deb"
+sudo dpkg -i mkchromecast_0.3.8.1-1_all.deb
+sudo apt --fix-broken install
+)
+
+(
+cd $HOME/programs
+wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6.2/task-2.6.2.tar.gz"
+tar zxf task-2.6.2.tar.gz
+cd $HOME/programs/task-2.6.2
+cmake -DCMAKE_BUILD_TYPE=release .
+make -j 4
+sudo make install
+` # not much need for the code, tbh `
+cd "$(gc "https://github.com/kdheepak/taskwarrior-tui")"
+cargo install taskwarrior-tui
+)
+
+# I don't think it can be built under Pen.el
+# I might need the host to build ZealOS
+# But perhaps I can *run* ZealOS from Pen.el
+# For building and running ZealOS
+agi xorriso
+agi parted
+agi kmod # for modprobe
+agi qemu-system-x86
+
+# notmuch-setup
+
+# afew/oldoldstable 1.3.0-1 all
+# alot/oldoldstable 0.8.1-1+deb10u1 all
+# alot-doc/oldoldstable 0.8.1-1+deb10u1 all
+# astroid/oldoldstable 0.14-2.1 amd64
+# gmailieer/oldoldstable 0.10-1 all
+# libnotmuch-dev/oldoldstable 0.28.4-1 amd64
+# libnotmuch5/oldoldstable,now 0.28.4-1 amd64 [installed,automatic]
+# muchsync/oldoldstable 5-1 amd64
+# notmuch/oldoldstable 0.28.4-1 amd64
+# notmuch-addrlookup/oldoldstable 9-2 amd64
+# notmuch-doc/bullseye-backports 0.37-1~bpo11+2 all
+# notmuch-emacs/oldoldstable 0.28.4-1 all
+# notmuch-git/bullseye-backports 0.37-1~bpo11+2 all
+# notmuch-mutt/oldoldstable 0.28.4-1 all
+# notmuch-vim/oldoldstable 0.28.4-1 all
+# python-notmuch/oldoldstable 0.28.4-1 all
+# python3-notmuch/oldoldstable,now 0.28.4-1 all [installed]
+# python3-notmuch2/bullseye-backports 0.37-1~bpo11+2 amd64
+# ruby-notmuch/oldoldstable 0.28.4-1 amd64
+
+e ia org-super-agenda
+
+# Hymns
+agi timidity
+
+# https://askubuntu.com/questions/972510/how-to-set-alsa-default-device-to-pulseaudio-sound-server-on-docker
+
+# apt-get install -y --no-install-recommends \
+#     alsa-oss \
+#     alsa-tools \
+#     alsa-utils \
+#     libsndfile1 \
+#     libsndfile1-dev
+
+# Wrap lines
+e ia visual-fill-column
+
+e ia ox-hugo easy-hugo
+e ia orthodox-christian-new-calendar-holidays
+e ia org-alert
+
+e ia eshell-prompt-extras eshell-git-prompt eshell-z eshell-vterm eshell-up eshell-toggle eshell-syntax-highlighting eshell-prompt-extras eshell-outline eshell-info-banner eshell-git-prompt eshell-fringe-status eshell-fixed-prompt eshell-did-you-mean eshell-bookmark eshell-autojump
+
+e ia universal-sidecar-roam universal-sidecar-elfeed-score universal-sidecar-elfeed-related universal-sidecar org-roam-ql-ql org-roam-ql org-roam org-roam-ui org-roam-timestamps org-roam-ql-ql org-roam-ql org-roam-bibtex org-roam gkroam consult-org-roam
+
+e ia org-sql org-roam-ql-ql org-roam-ql org-ql helm-org-ql
+e ia org-parser
+
+e ia prism
+
+e ia org-shoplist org-listcruncher org-autolist
+
+e ia list-environment
+e ia load-bash-alias
+e ia babashka
+
+# for notdeft and building notmuch
+agi xapian-tools xapian-examples libxapian-dev libxapian30
+
+# notdeft
+# Set up xiphos toolchain
+# None of these seemed to work
+agi dbus libdbus-1-3 libdbus-1-dev libdbus-c++-bin libdbus-c++-dev libdbus2.0-cil libdbus2.0-cil-dev
+# This got dbus going
+agi dbus-x11
+# This is required for xiphos build
+agi libdbus-glib-1-dev-bin itstool desktop-file-utils appstream-util yelp-tools uuid-runtime
+agi libbiblesync-dev libbiblesync1.1
+agi fp-utils # for chmcmd
+
+# Docs say
+agi intltool libdbus-glib-1-dev libwebkitgtk-3.0-dev libxml2-dev libgsf-1-dev libgconfmm-2.6-dev libsword-dev uuid-dev libwebkitgtk-dev libglade2-dev
+
+# Trying this
+agi intltool libdbus-glib-1-dev libwebkit2gtk-4.0-dev libxml2-dev libgsf-1-dev libgconfmm-2.6-dev libsword-dev uuid-dev libwebkitgtk-dev libglade2-dev
+
+# 
+(
+cd "$(gc "https://github.com/crosswire/xiphos")"
+)
+
+agi command-not-found
+update-command-not-found
+
+e ia calfw calfw-org calfw-ical calfw-howm calfw-gcal calfw-cal
+
+e ia yatemplate templatel template-overlays ptemplate-templates ptemplate license-snippets
+
+# Actually, I don't know about this.
+# It uses an api.
+# e ia helm-gitignore license-templates gitignore-templates
+
+e ia yasnippet-snippets
+
+e ia org-appear
+
+# email TUI that works with notmuch
+cargo install meli
+# another one that looks interesting:
+# https://github.com/soywod/himalaya
+# another one that looks interesting:
+# https://github.com/purebred-mua/purebred
+
+meli create-config
+mv ~/.config/meli ~/.pen
+ln -sf ~/.pen/meli ~/.config
+# meli edit-config
+meli install-man /root/.local/share
+
+cargo install himalaya
+
+# Set up sendmail
+# https://www.tutorialspoint.com/configure-sendmail-with-gmail-on-ubuntu
+(
+mkdir -p /etc/mail/
+ln -sf /root/.pen/sendmail.mc /etc/mail/sendmail.mc
+)
+
+# Finances in emacs
+e ia ledger-mode ledger-import hledger-mode flymake-hledger flycheck-ledger flycheck-hledger company-ledger
+
+e ia org-ref-prettify org-ref
+
+e ia crontab-mode
+
+# e ia sc
+
+e ia addressbook-bookmark
+
+agi libasound2-dev
+cargo install termusic termusic-server
+
+# APL
+agi gnuplot
+e ia gnu-apl-mode
+apt install libtinfo5
+apt install libtinfo6
+(
+cd "$HOME/programs"
+wget "https://ftp.gnu.org/gnu/apl/apl_1.8-1_amd64.deb"
+)
+
+agi sc
+(
+cd "$(gc "https://github.com/andmarti1424/sc-im")"
+make -C src
+make -C src install
+)
+
+# elfeed
+e ia elfeed elfeed-webkit elfeed-web elfeed-tube-mpv elfeed-tube elfeed-summary elfeed-protocol elfeed-org elfeed-goodies elfeed-dashboard elfeed-curate elfeed-score elfeed-autotag universal-sidecar-elfeed-score universal-sidecar-elfeed-related el-secretario-elfeed
+
+e ia ace-popup-menu
+
+e ia transducers
+
+e ia wiki-nav wikinfo wikinforg tracwiki-mode plain-org-wiki org-multi-wiki ox-mediawiki mediawiki helm-wikipedia helm-org-multi-wiki
+
+e ia docker docker-tramp docker-compose-mode docker-cli docker-api dockerfile-mode dockerfile-ts-mode
+
+# TODO Build buffer-agnostic persistent annotanion
+# Annotation commands
+e ia annotate
+e ia annotation
+
+(
+cd "$(git clone "https://github.com/jkitchin/ov-highlight/")"
+sed -i "s/<return>/RET/g" /root/repos/ov-highlight/ov-highlight.el
+)
+
+e ia minions
+
+agi xdotool
+
+# For visidata
+# cd "$PENCONF/documents/notes"; fpvd Music\ Data\ Base.xls
+pip3 install xlrd openpyxl
+
+e ia define-it
+e ia helm-wordnet
+
+e ia font-lock-studio
+
+# Install printing software
+apt install cups-bsd
+apt install lpr
+apt install lprng
+
+e ia org-journal org-journal-tags org-journal-list
+
+e ia gitlab ivy-gitlab helm-gitlab gitlab-snip-helm gitlab-pipeline gitlab-ci-mode-flycheck gitlab-ci-mode
+
+# e ia ebdb company-ebdb
+(
+cd /root/repos
+git clone "https://github.com/girzel/ebdb"
+git clone "https://github.com/emacsmirror/company-ebdb"
+)
+
+e ia keycast
+
+agi plsense
+
+agi font-manager
+
+# OpenJDK
+# https://download.java.net/java/GA/jdk21.0.1/415e3f918a1f4062a0074a2794853d0d/12/GPL/openjdk-21.0.1_linux-x64_bin.tar.gz
+(
+cd /root/programs
+wget "https://download.java.net/java/GA/jdk21.0.1/415e3f918a1f4062a0074a2794853d0d/12/GPL/openjdk-21.0.1_linux-x64_bin.tar.gz"
+tar zxf "openjdk-21.0.1_linux-x64_bin.tar.gz"
+)
+
+# A P2P filesystem
+e ia hyperdrive
+
+e ia denote-refs denote-menu denote
+
+e ia docker slime-docker mermaid-docker-mode lsp-docker docker-tramp docker-compose-mode docker-cli docker-api dockerfile-mode dockerfile-ts-mode
+
+timedatectl set-timezone "Pacific/Auckland"
+# Test:
+# ls -l /etc/localtime
+
+e ia nano-agenda
+
+raco pkg update racket-langserver

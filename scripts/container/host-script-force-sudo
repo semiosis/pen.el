@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -sn) {
+        sn="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+CMD="$(cmd-nice sudo "$@")"
+
+if printf -- "%s\n" "$sn" | grep -q -P -- '-host$'; then
+    sn="$(printf -- "%s" "$sn" | sed 's/-host$//')"
+
+    CMD="$(printf -- "%s" "$CMD" | sed 's=/volumes/home/=/home/=')"
+fi
+
+# sth host-script -sn "$sn" "$@"
+
+eval "sth host-script -sn $sn $CMD"

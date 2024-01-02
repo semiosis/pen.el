@@ -38,7 +38,9 @@
 ;; dired-mode doesn't work here. I think it's because it preloads the buffer in the background then selects it
 ;; The hook happens before the buffer is selected.
 ;; Perhaps I can do a save-window-excursion and select the buffer temporarily instead
-(defset modes-for-annotate-mode '(Info-mode-hook helpful-mode help-mode prog-mode conf-mode text-mode yaml-mode ssh-config-mode))
+(defset modes-for-annotate-mode '(Info-mode-hook helpful-mode help-mode prog-mode conf-mode text-mode yaml-mode ssh-config-mode
+                                                 bible-mode))
+
 (cl-loop for m in modes-for-annotate-mode do
          ;; (message (str m))
          (let ((h (intern (concat (symbol-name m) "-hook"))))
@@ -132,9 +134,9 @@
 ;; Currently happening with todo.org
 ;; Therefore, I have to cover it up.
 (defun annotate-load-annotations-around-advice (proc &rest args)
-  ;; (pen-shut-up (let ((res (apply proc args)))
+  ;; (shut-up (let ((res (apply proc args)))
   ;;               res))
-  (pen-shut-up (ignore-errors (let ((res (apply proc args)))
+  (shut-up (ignore-errors (let ((res (apply proc args)))
                                res)))
   ;; (let ((res (apply proc args)))
   ;;   res)
@@ -665,6 +667,5 @@ results can be filtered with a simple query language: see
   (let ((res (ignore-errors (apply proc args))))
     res))
 (advice-add 'annotate--remove-annotation-property :around #'annotate--remove-annotation-property-around-advice)
-
 
 (provide 'pen-annotate)

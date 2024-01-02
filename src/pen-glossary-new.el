@@ -704,14 +704,18 @@ Use my position list code. Make it use rosie lang and external software."
               (pen-draw-glossary-buttons-and-maybe-recalculate nil nil))))))
 
 (defun pen-test-f (fp)
-  (eq (progn (pen-sn (concat "test -f " (pen-q fp)))
-             (string-to-number b_exit_code))
-      0))
+  (pen-snq (pen-cmd "test" "-f" fp))
+  ;; (eq (progn (pen-sn (concat "test -f " (pen-q fp)))
+  ;;            (string-to-number b_exit_code))
+  ;;     0)
+  )
 
 (defun pen-test-d (fp)
-  (eq (progn (pen-sn (concat "test -d " (pen-q fp)))
-             (string-to-number b_exit_code))
-      0))
+  (pen-snq (pen-cmd "test" "-d" fp))
+  ;; (eq (progn (pen-sn (concat "test -d " (pen-q fp)))
+  ;;            (string-to-number b_exit_code))
+  ;;     0)
+  )
 
 (defun pen-glossary-path-p (&optional fp)
   (if (not fp)
@@ -874,7 +878,8 @@ Use my position list code. Make it use rosie lang and external software."
     (pen-gl-beg-end
      (if (use-region-p)
          (pen-generate-glossary-buttons-over-region gl-beg gl-end nil t)
-       (pen-generate-glossary-buttons-over-buffer gl-end gl-end nil t)))))
+       (pen-generate-glossary-buttons-over-buffer gl-end gl-end nil t))))
+  (message "%s" "Generating glossary buttons... DONE!"))
 
 (defun pen-wordnut--lookup-around-advice (proc &rest args)
   (let ((res (apply proc args)))
@@ -885,7 +890,11 @@ Use my position list code. Make it use rosie lang and external software."
 (defun pen-after-emacs-loaded-add-hooks-for-glossary ()
   (add-hook 'find-file-hooks 'pen-run-buttonize-hooks t)
   ;; (remove-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually)
-  (add-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually t)
+
+  ;; this is quite slow. disable by default
+  ;; (add-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually t)
+  
+  ;; (remove-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually)
   (remove-hook 'new-buffer-hooks 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened)
   (pen-restart-glossary))
 
@@ -976,7 +985,10 @@ Use my position list code. Make it use rosie lang and external software."
                     (downcase (pen-thing-at-point))
                     nil
                     "goto-glossary-definition: ")))
-  (pen-goto-glossary-definition term))
+  (if (sor term)
+      (pen-goto-glossary-definition term)
+    ;; This is for handle
+    (error "No word chosen")))
 
 (defun pen-goto-glossary-definition (term)
   (interactive (list
@@ -1172,11 +1184,13 @@ Use my position list code. Make it use rosie lang and external software."
   (button-at-point))
 (defalias 'pen-glossary-button-at-point-p 'pen-glossary-button-at-point)
 
+;; This should be an org-link that has the same function/action as the button
 (defun pen-button-get-link (b)
   (cond
    ((eq (button-get b 'face) 'glossary-button-face)
     (concat "[[y:" (pen-button-get-text b) "]]"))
-   (t nil)))
+   (t
+    (concat "el:(" (sym2str (get-button-action b)) ")"))))
 
 (defun pen-button-copy-link-at-point ()
   (interactive)

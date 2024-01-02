@@ -1,3 +1,6 @@
+(require 'cus-edit)
+(defalias 'cg 'customize-group)
+
 (comment
  (defcustom w3m-session-load-crashed-sessions 'ask
    "Whether to reload a crashed session when emacs-w3m starts.
@@ -540,5 +543,20 @@ widget.  If FILTER is nil, ACTION is always valid.")
 
 (advice-add 'Custom-save :around #'Custom-save-around-advice)
 ;; (advice-remove 'Custom-save #'Custom-save-around-advice)
+
+(defun custom-get-path ()
+  (interactive)
+  (if custom--invocation-options
+      (let* ((first-opt (car custom--invocation-options))
+             (typeb (second first-opt)))
+        (if (eq typeb 'custom-group)
+            (let* ((loc (car first-opt))
+                   (loc (if loc
+                            (concat "cg:" (str loc)))))
+              (if (interactive-p)
+                  (xc loc)
+                loc))))))
+
+(define-key custom-mode-map (kbd "w") 'custom-get-path)
 
 (provide 'pen-custom)

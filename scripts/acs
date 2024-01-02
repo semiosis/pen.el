@@ -2,6 +2,17 @@
 
 ( hs "$(basename "$0")" "$@" "#" <== "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -i) {
+        installed=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 #apt search $@
 
 # using apt-cache instead of apt will do an AND on each argument and
@@ -12,4 +23,12 @@
 # This makes an emacs split
 # sps search-libraries "$@"
 
-library-search "$@"
+query="$@"
+
+if test "$installed" = "y"; then
+    apt list --installed "*$query*" | pavs
+else
+    # library-search "$@"
+    # apt search "*$query*" | pavs
+    apt search "$query" | pavs
+fi

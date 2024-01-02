@@ -1,6 +1,11 @@
 #!/bin/bash
 export TTY
 
+exec 0</dev/null
+
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+
 extraargs=()
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -45,4 +50,4 @@ else
     tpop "${extraargs[@]}" -d -delay 0.1 -b none -nos -x "$(( 1 + left ))" -y "$(( bottom - 1 ))" -w 19 -h 1 -bg 004 spinner "$@" # -nobgb -norb
 fi
 
-tmux display -pF "#{client_tty}:" > spinner_client_tty.txt
+tmux display -pF "#{client_tty}:" > $TMPDIR/spinner_client_tty.txt

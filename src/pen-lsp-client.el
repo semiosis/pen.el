@@ -403,10 +403,12 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
 ;; See j:lsp-mouse-click
 
 (defun pen-lsp-mouse-click (event)
-  (interactive (list `(mouse-3 ,(posn-at-point))))
+  (interactive (list
+                (get-pos-for-x-popup-menu)))
 
   (let* ((ec (event-start event))
-         (choice (x-popup-menu event lsp-mode-menu))
+         (choice ;; (x-popup-menu event lsp-mode-menu)
+          (popup-menu lsp-mode-menu event))
          (action (lookup-key lsp-mode-menu (apply 'vector choice))))
 
     (select-window (posn-window ec))

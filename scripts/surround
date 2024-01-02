@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+start="$1"
+end="$2"
+
+: ${start:="{{"}
+
+if test -z "$end"; then
+    end="$(printf -- "%s" "$start" | tr '[<\[({]' '[>\])}]')"
+fi
+: ${end:="$start"}
+
+# This did it for each line
+# add-prefix "$start" | add-suffix "$end"
+
+# Strangely, this doesn't add anything because nothing was given to sed
+#sed -u -z "s/\(.*\)/$start\1$end/"
+
+echo -n "$start"
+cat
+echo -n "$end"

@@ -85,7 +85,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -z) {
+    -gz|-z) {
         USE_ZGREP=y
         shift
     }
@@ -105,7 +105,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -f|--follow) {
+    -L|-f|--follow) {
         FOLLOW=y
         shift
     }

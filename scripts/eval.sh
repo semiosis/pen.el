@@ -1,7 +1,7 @@
 #!/bin/bash
 
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 
@@ -61,6 +61,8 @@ unset EMACSD
 test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
 test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
+
+export PENELD="$EMACSD/pen.el"
 
 unset VIMCONFIG
 test -d "/root/.vim/host" && : "${VIMCONFIG:="/root/.vim/host"}"

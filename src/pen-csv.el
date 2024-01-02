@@ -35,7 +35,6 @@
       (setq fp (get-path nil nil t)))
 
   (if (f-file-p fp)
-      (sps
-       (concat app " " (pen-q fp)))))
+      (nw (concat app " " (pen-q fp)))))
 
 (provide 'pen-csv)

@@ -3,7 +3,12 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-client_tty="$(cat spinner_client_tty.txt)"
+exec 0</dev/null
+
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+
+client_tty="$(cat "$TMPDIR/spinner_client_tty.txt")"
 
 if test -n "$client_tty"; then
     tmux popup -C -c "$client_tty"

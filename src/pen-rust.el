@@ -112,8 +112,8 @@
 (use-package dap-mode
   :ensure
   :config
-  (dap-ui-mode)
-  (dap-ui-controls-mode 1)
+  ;;(dap-ui-mode)
+  ;;(dap-ui-controls-mode 1)
 
   (require 'dap-lldb)
   (require 'dap-gdb-lldb)

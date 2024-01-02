@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+: "${COLUMNS:="$1"}"
+: "${COLUMNS:="80"}"
+
+if test -n "$1"; then
+    COLUMNS="$1"
+fi
+
+cut -c -${COLUMNS} -

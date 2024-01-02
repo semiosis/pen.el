@@ -3,6 +3,9 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+. $PENELD/scripts/utils.sh
+
+: "${show_module:="y"}"
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -m) {
@@ -18,22 +21,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nsm) {
+        # no show meta
+        show_module=n
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 : "${module:="NASB"}"
 
 # scrape-bible-references | 
-
-stdin_exists() {
-    {
-    ! [ -t 0 ] && \
-    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
-    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
-    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
-    # So test to make sure 0 does not point to 1
-    } &>/dev/null
-}
 
 if ! stdin_exists; then
     if test "$#" -eq 1 && test -f "$1"; then
@@ -51,11 +51,10 @@ raw="$(s join ";" | xargs "diatheke" "-b" "$module" "-o" "w" "-f" "plain" "-k")"
 mod="$(printf -- "%s\n" "$raw" | sed -n '$p')"
 raw="$(printf -- "%s\n" "$raw" | sed '$d')"
 
-is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
-
 : "${COLS:="50"}"
 
 unset COLUMNS
+{
 if test "$pretty" = "y"; then
     if is_tty; then
         eval `resize`
@@ -67,11 +66,16 @@ if test "$pretty" = "y"; then
         fi
     fi
 fi
+} 2>/dev/null
+
+join_multi_liners() {
+    sed "/[0-9]:/!s/^/JOIN/" | sed -z "s/\s*\nJOIN/ /g"
+}
 
 {
     printf -- "%s\n" "$raw"
 } |
-    sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | {
+    join_multi_liners | sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | {
     if test "$pretty" = "y"; then
         awk1 | while IFS=$'\n' read -r line; do
         (
@@ -84,5 +88,7 @@ fi
     else
         cat
     fi
-    echo "$mod"
+    if test "$show_module" = "y"; then
+        echo "$mod"
+    fi
 } | in-tty -upo pen-pavs
