@@ -253,7 +253,7 @@ display values."
                          ("Z" #'fz-filter-by-elisp-function "filter by elisp function")
                          ("d" #'major-mode-filter "filter by major mode function")
                          ("f" (df fi-with-fzf (pen-region-pipe "pen-tm filter")) "filter with fzf")
-                         ("E" (df erase-starting-ws () (pen-sn (concat "sed -i 's/^\\s\\+//' " (pen-q buffer-file-name)))) "erase starting whitespace")
+                         ("E" (df erase-starting-ws () (pen-sn (concat "erase-trailing-whitespace-emacs " (pen-q buffer-file-name)))) "erase starting whitespace")
                          ("e" (df efs () (pen-sn (concat "sed -i 's/\\s\\+$//' " (pen-q buffer-file-name)))) "erase free/end whitespace")
                          ("8" (df pep8 () (bash (concat "autopep8 -i \"" buffer-file-name "\""))) "autopep8")
                          ("W" (df fixup-whitespace-line (fixup-whitespace)) "fixup whitespace") ; this only works on a single line
