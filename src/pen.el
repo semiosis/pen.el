@@ -2396,6 +2396,7 @@ May use to generate code from comments."
 (require 'pen-el-patch)
 (require 'pen-clojure)
 (require 'pen-cs-notation)
+(require 'pen-deprecated)
 (require 'pen-go)
 (require 'pen-ediff)
 (require 'pen-org-appear)
