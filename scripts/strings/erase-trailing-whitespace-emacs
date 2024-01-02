@@ -11,6 +11,7 @@ stdin_exists() {
     } &>/dev/null
 }
 
+{
 if test -f "$1" && ! stdin_exists; then
     # Remove trailing whitespace but add a trailing space for org headers
     cat "$1" | sed -e 's/\s\+$//' \
@@ -20,3 +21,4 @@ elif stdin_exists; then
     sed -e 's/\s\+$//' \
         -e 's/^\(\*\+\)$/\1 /'
 fi
+} | pavs
