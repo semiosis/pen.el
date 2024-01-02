@@ -1679,7 +1679,7 @@ when s is a string, set the clipboard to s"
           (message "buffer is readonly. placing in temp buffer")
           (nbfs s))
       (progn
-        (let ((doreverse (< (point) (mark))))
+        (let ((doreverse (< rend rstart)))
           (delete-region
            rstart
            rend)
