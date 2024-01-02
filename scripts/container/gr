@@ -68,12 +68,12 @@ export UPDATE
 # python3.7 -c "$PYCODE"
 
 search_with_googler() {
-    pen-oci python $REPOS/googler/googler "$@" 2>/dev/null
+    ocif python $REPOS/googler/googler "$@" 2>/dev/null
 }
 
 # duck duck go
 search_with_ddg() {
-    pen-oci ddgr "$@" 2>/dev/null
+    ocif ddgr "$@" 2>/dev/null
 }
 
 search() {
