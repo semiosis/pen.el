@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# Remove trailing whitespace but add a trailing space for org headers
+sed -e 's/\s\+$//' \
+    -e 's/^\(\*\+\)$/\1 /'
