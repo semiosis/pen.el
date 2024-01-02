@@ -16,8 +16,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         shift
     }
     ;;
-    
-    -upo) {
+
+    -ifnopipe|-upo) {
         unless_pipe_out=y
         shift
     }

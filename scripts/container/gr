@@ -9,6 +9,11 @@ query="$@"
 # ddgr can't go above 25
 nresults=25
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -n) {
@@ -104,7 +109,10 @@ else
         if test "$NOTTY" = "y"; then
             cat
         else
-            pen-pavs
+            in-tty pen-pavs
         fi
     }
 fi
+
+is_stdout_pipe
+ispipe="$?"
