@@ -1121,7 +1121,6 @@
 (define-key eww-mode-map (kbd ",") (pen-lm (call-interactively 'eww-lnum-universal)))
 (define-key eww-mode-map (kbd ".") (pen-lm (call-interactively 'eww-lnum-follow)))
 
-(require 'pen-eww-extras)
 (define-key eww-bookmark-mode-map (kbd "b") 'eww-add-bookmark-manual)
 (define-key eww-bookmark-mode-map (kbd "k") 'eww-bookmark-kill-ask)
 (define-key eww-bookmark-mode-map (kbd "C-k") 'eww-bookmark-kill-ask)

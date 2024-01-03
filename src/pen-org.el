@@ -574,8 +574,8 @@ This includes angle, plain, and bracket links."
 (define-key org-mode-map (kbd "M-*") 'pen-evil-star-maybe)
 
 ;; I'm not a fan of polymode. It also breaks <pre> blocks in eww
-;; (require 'poly-org)
-;; (remove-from-list 'auto-mode-alist '("\\.org\\'" . poly-org-mode))
+(require 'poly-org)
+(remove-from-list 'auto-mode-alist '("\\.org\\'" . poly-org-mode))
 
 ;; This makes the org-man message go away
 (advice-add 'org-link-minor-mode :around #'shut-up-around-advice)
