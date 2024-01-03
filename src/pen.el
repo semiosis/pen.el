@@ -32,11 +32,10 @@
 
 ;; Strangely, even this alias caused lots of problems
 ;; perhaps if I want to use λ then I should change the emacs C code
-(defalias 'λ 'lambda)
+;; (defalias 'λ 'lambda)
 (defalias 'y 'lambda)
 
 ;; Or, perhaps this will work
-
 (defmacro λ (&rest cdr)
   (declare (doc-string 2) (indent defun)
            (debug (&define lambda-list lambda-doc
