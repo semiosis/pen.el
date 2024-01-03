@@ -79,6 +79,7 @@ if test "$#" -gt 0; then
         ;;
 
         m4) {
+            echo "Info for ${opt} exists." | hls blue 1>&2
             if yn "info $last_arg? (y) or man $last_arg? (n)"; then
                 info "$@"
                 exit "$?"
