@@ -76,7 +76,7 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    "$bin" "$@"
+    "$bin" "$@" | pavs
 elif test "$istty" = 0; then
     builtins="$(pen-ci -otf -f -nd bash -c 'info "(m4) Macro index" | sed -n -e "/^\\* [^ ]\\+:./p" | sed "s/^\\* \\([^ ]\\+\\):.*/\\1/"')"
     in-pen nvc rl -f "$builtins" "$bin" "$@"
