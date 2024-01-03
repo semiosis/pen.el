@@ -31,7 +31,7 @@
   nil)
 
 ;; Strangely, even this alias caused lots of problems
-;; perhaps
+;; perhaps if I want to use λ then I should change the emacs C code
 (defalias 'λ 'lambda)
 (defalias 'y 'lambda)
 
