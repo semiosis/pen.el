@@ -30,9 +30,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if test "$query" = "y"; then
-    echo "Info for ${opt} exists." | hls blue 1>&2
     info_exists "$@"
-    exit "$?"
+    ret="$?"
+    if test "$ret" = 0; then
+        echo "Info for ${opt} exists." | hls blue 1>&2
+    fi
+    exit "$ret"
 fi
 
 # agi info
