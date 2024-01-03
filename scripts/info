@@ -9,7 +9,7 @@ export TTY
 # j:Info-find-file
 
 info_exists() {
-    content="$(/usr/bin/info -o /dev/stdout "$@")"
+    content="$(/usr/bin/info -o /dev/stdout "$@" 2>/dev/null)"
     test -n "$content"
 }
 
