@@ -25,25 +25,29 @@
       (advice-add 'eww-display-html :around
                   'eww-display-html--override-shr-external-rendering-functions))))
 
+;; j:slime-add-face
+(defun pen-add-face-to-string (face string)
+  (declare (indent 1))
+  (add-text-properties 0 (length string) (list 'face face) string)
+  string)
+
 ;; TODO Find a way to simply make the entire pre-block
 ;; a single colour.
 ;; Don't use syntax highlighting.
-(setq shr-tag-pre-highlight-lang-modes
-      '(("ocaml" . tuareg)
-        ("elisp" . emacs-lisp)
-        ("ditaa" . artist)
-        ("asymptote" . asy)
-        ("dot" . fundamental)
-        ("sqlite" . sql)
-        ("calc" . fundamental)
-        ("C" . c)
-        ("cpp" . c++)
-        ("C++" . c++)
-        ("screen" . shell-script)
-        ("shell" . sh)
-        ("bash" . sh)
-        ("emacslisp" . emacs-lisp)
-        ("el" . emacs-lisp)))
+(defun shr-tag-pre-highlight (pre)
+  "Highlighting code in PRE."
+  (let* ((shr-folding-mode 'none)
+         (shr-current-font 'default)
+         (code (with-temp-buffer
+                 (shr-generic pre)
+                 (buffer-string)))
+         (mode 'fundamental-mode))
+    (shr-ensure-newline)
+    (insert
+     (pen-add-face-to-string
+         'shr-text
+       code))
+    (shr-ensure-newline)))
 
 (require 'pen-postrender-sanitize)
 
