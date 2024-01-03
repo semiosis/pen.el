@@ -2355,3 +2355,4 @@ denote
 mermaid-docker-mode
 dockerfile-ts-mode
 nano-agenda
+shr-external-rendering-functions
