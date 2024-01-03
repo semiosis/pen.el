@@ -44,7 +44,7 @@
         (((string-match "/ws/music" (pen-pwd)))
          (xdotool-press-key
           random-playlist))
-        (((eq (face-at-point nil nil t) 'info-code-face))
+        (((eq (pen-face-at-point) 'info-code-face))
          (select-font-lock-face-region))
         (((glossary-button-at-point))
          (pen-button-copy-link-at-point))
