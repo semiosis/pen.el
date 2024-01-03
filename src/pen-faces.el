@@ -1590,4 +1590,14 @@ Also see option `magit-blame-styles'."
                                     (list f (face-bold-p f fr))))))))
 
 
+(defun select-font-lock-face-region ()
+  (interactive)
+  (while (and (not (eobp)) (forward-char 1) (not (eq (face-at-point) 'font-lock-keyword-face))))
+  (while (and (not (eobp)) (forward-char 1) (not (eq (face-at-point) 'font-lock-keyword-face))))
+  (when (eq (face-at-point) 'font-lock-keyword-face)
+    (set-mark (point))
+    (while (eq (face-at-point) 'font-lock-keyword-face)
+      (forward-char 1))))
+
+
 (provide 'pen-faces)
