@@ -23,7 +23,7 @@
                   (lsp-stdio-connection 'lsp-rust--server-command)
                   :major-modes '(rust-mode rustic-mode rust-ts-mode)
                   :server-id 'rust
-                  :initialized-fn (λ (workspace)
+                  :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:rust ,lsp-rust--config-options))))))
