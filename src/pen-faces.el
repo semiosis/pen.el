@@ -1597,10 +1597,12 @@ Also see option `magit-blame-styles'."
 - go backwards until the face changes
 - go forwards until the face changes"
   (interactive)
-  (let ((block-face (face-at-point))))
+  (let ((block-face (face-at-point))
+        (initial-point (point))))
   
   (while (and (not (eobp)) (backward-char 1) (eq (face-at-point) block-face)))
   (while (and (not (eobp)) (forward-char 1) (eq (face-at-point) block-face)))
+
   (when (eq (face-at-point) 'font-lock-keyword-face)
     (set-mark (point))
     (while (eq (face-at-point) 'font-lock-keyword-face)
