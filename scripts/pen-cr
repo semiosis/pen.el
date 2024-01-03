@@ -1657,6 +1657,14 @@ case "$fnspec" in
     }
     ;;
 
+    # /etc/mail/sendmail.mc
+    *.mc) {
+        cd "$dn"
+        m4 "$fp"
+        exit "$?"
+    }
+    ;;
+
     *.cabal) {
         cd "$dn"
         cabal build
