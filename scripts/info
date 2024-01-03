@@ -10,7 +10,7 @@ export TTY
 
 # This is awful
 info_exists() {
-    content="$(timeout 0.2 /usr/bin/info -o /dev/stdout "$@" 2>/dev/null)"
+    content="$(ocif timeout 0.2 /usr/bin/info -o /dev/stdout "$@" 2>/dev/null)"
     test -n "$content"
 }
 
