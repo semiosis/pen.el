@@ -25,6 +25,9 @@
       (advice-add 'eww-display-html :around
                   'eww-display-html--override-shr-external-rendering-functions))))
 
+;; TODO Find a way to simply make the entire pre-block
+;; a single colour.
+;; Don't use syntax highlighting.
 (setq shr-tag-pre-highlight-lang-modes
       '(("ocaml" . tuareg)
         ("elisp" . emacs-lisp)
