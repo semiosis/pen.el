@@ -45,7 +45,7 @@
     (shr-ensure-newline)
     (insert
      (pen-add-face-to-string
-         'shr-text
+         'info-code-face
        code))
     (shr-ensure-newline)))
 
