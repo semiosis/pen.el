@@ -2423,6 +2423,7 @@ May use to generate code from comments."
 (require 'pen-haskell)
 (require 'pen-browser)
 (require 'peniel)
+(require 'pen-discipleship-group)
 
 ;; (if (inside-docker-p)
 ;;     (progn
