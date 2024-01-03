@@ -1284,6 +1284,11 @@ Also see option `magit-blame-styles'."
 
                              font-lock-keyword-face
 
+                             notmuch-message-summary-face
+                             message-header-subject
+                             message-header-to
+                             message-header-other
+                             message-mml
 
                              epe-git-face
                              epe-symbol-face
