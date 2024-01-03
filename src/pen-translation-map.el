@@ -43,7 +43,7 @@
   "Disables all keys."
   :lighter " dk"
   :keymap (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "C-g") (λ ()
+            (define-key map (kbd "C-g") (lambda ()
                                           (interactive)
                                           (pen-disable-keys-mode -1)))
             (define-key map [t] 'ignore)

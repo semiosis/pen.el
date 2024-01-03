@@ -49,7 +49,7 @@
 (use-package eshell
   :init
   (add-hook 'eshell-mode-hook
-            (λ ()
+            (lambda ()
               (setq eshell-prefer-lisp-functions t)
               (add-to-list 'eshell-visual-commands "ssh")
               (add-to-list 'eshell-visual-commands "tail")

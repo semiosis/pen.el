@@ -163,7 +163,7 @@ then be executed with @code{it} exposed as the list item. Here's an
 example:
 
 @lisp
-(-map (λ (n) (* n n)) '(1 2 3 4)) ;; normal version
+(-map (lambda (n) (* n n)) '(1 2 3 4)) ;; normal version
 
 (--map (* it it) '(1 2 3 4)) ;; anaphoric version
 @end lisp
@@ -214,7 +214,7 @@ Return a new list consisting of the result of applying @var{fn} to the items in 
 
 @example
 @group
-(-map (λ (num) (* num num)) '(1 2 3 4))
+(-map (lambda (num) (* num num)) '(1 2 3 4))
     @result{} '(1 4 9 16)
 @end group
 @group
@@ -308,7 +308,7 @@ See also: @code{-each-indexed} (@pxref{-each-indexed}).
 
 @example
 @group
-(-map-indexed (λ (index item) (- item index)) '(1 2 3 4))
+(-map-indexed (lambda (index item) (- item index)) '(1 2 3 4))
     @result{} '(1 1 1 1)
 @end group
 @group
@@ -353,7 +353,7 @@ See also: @code{-splice-list} (@pxref{-splice-list}), @code{-insert-at} (@pxref{
 
 @example
 @group
-(-splice 'even? (λ (x) (list x x)) '(1 2 3 4))
+(-splice 'even? (lambda (x) (list x x)) '(1 2 3 4))
     @result{} '(1 2 2 3 4 4)
 @end group
 @group
@@ -400,7 +400,7 @@ Thus function @var{fn} should return a list.
     @result{} '(1 2 3)
 @end group
 @group
-(-mapcat (λ (item) (list 0 item)) '(1 2 3))
+(-mapcat (lambda (item) (list 0 item)) '(1 2 3))
     @result{} '(0 1 0 2 0 3)
 @end group
 @group
@@ -446,7 +446,7 @@ See also: @code{-keep} (@pxref{-keep}), @code{-remove} (@pxref{-remove}).
 
 @example
 @group
-(-filter (λ (num) (= 0 (% num 2))) '(1 2 3 4))
+(-filter (lambda (num) (= 0 (% num 2))) '(1 2 3 4))
     @result{} '(2 4)
 @end group
 @group
@@ -470,7 +470,7 @@ See also: @code{-filter} (@pxref{-filter}).
 
 @example
 @group
-(-remove (λ (num) (= 0 (% num 2))) '(1 2 3 4))
+(-remove (lambda (num) (= 0 (% num 2))) '(1 2 3 4))
     @result{} '(1 3)
 @end group
 @group
@@ -798,7 +798,7 @@ If you want to select the original items satisfying a predicate use @code{-filte
     @result{} '((2 3) (5))
 @end group
 @group
-(-keep (λ (num) (when (> num 3) (* 10 num))) '(1 2 3 4 5 6))
+(-keep (lambda (num) (when (> num 3) (* 10 num))) '(1 2 3 4 5 6))
     @result{} '(40 50 60)
 @end group
 @group
@@ -1000,11 +1000,11 @@ See also: @code{-map-when} (@pxref{-map-when})
 
 @example
 @group
-(-update-at 0 (λ (x) (+ x 9)) '(0 1 2 3 4 5))
+(-update-at 0 (lambda (x) (+ x 9)) '(0 1 2 3 4 5))
     @result{} '(9 1 2 3 4 5)
 @end group
 @group
-(-update-at 1 (λ (x) (+ x 8)) '(0 1 2 3 4 5))
+(-update-at 1 (lambda (x) (+ x 8)) '(0 1 2 3 4 5))
     @result{} '(0 9 2 3 4 5)
 @end group
 @group
@@ -1086,7 +1086,7 @@ See also: @code{-reduce} (@pxref{-reduce}), @code{-reduce-r} (@pxref{-reduce-r})
     @result{} 4
 @end group
 @group
-(-reduce-from (λ (memo item) (format "(%s - %d)" memo item)) "10" '(1 2 3))
+(-reduce-from (lambda (memo item) (format "(%s - %d)" memo item)) "10" '(1 2 3))
     @result{} "(((10 - 1) - 2) - 3)"
 @end group
 @group
@@ -1113,7 +1113,7 @@ See also: @code{-reduce-r} (@pxref{-reduce-r}), @code{-reduce} (@pxref{-reduce})
     @result{} -8
 @end group
 @group
-(-reduce-r-from (λ (item memo) (format "(%d - %s)" item memo)) "10" '(1 2 3))
+(-reduce-r-from (lambda (item memo) (format "(%d - %s)" item memo)) "10" '(1 2 3))
     @result{} "(1 - (2 - (3 - 10)))"
 @end group
 @group
@@ -1173,7 +1173,7 @@ See also: @code{-reduce-r-from} (@pxref{-reduce-r-from}), @code{-reduce} (@pxref
     @result{} -2
 @end group
 @group
-(-reduce-r (λ (item memo) (format "%s-%d" memo item)) '(1 2 3))
+(-reduce-r (lambda (item memo) (format "%s-%d" memo item)) '(1 2 3))
     @result{} "3-2-1"
 @end group
 @group
@@ -1193,7 +1193,7 @@ See also: @code{-reductions} (@pxref{-reductions}), @code{-reductions-r} (@pxref
 
 @example
 @group
-(-reductions-from (λ (a i) (format "(%s FN %d)" a i)) "INIT" '(1 2 3 4))
+(-reductions-from (lambda (a i) (format "(%s FN %d)" a i)) "INIT" '(1 2 3 4))
     @result{} '("INIT" "(INIT FN 1)" "((INIT FN 1) FN 2)" "(((INIT FN 1) FN 2) FN 3)" "((((INIT FN 1) FN 2) FN 3) FN 4)")
 @end group
 @group
@@ -1217,7 +1217,7 @@ See also: @code{-reductions-r} (@pxref{-reductions-r}), @code{-reductions} (@pxr
 
 @example
 @group
-(-reductions-r-from (λ (i a) (format "(%d FN %s)" i a)) "INIT" '(1 2 3 4))
+(-reductions-r-from (lambda (i a) (format "(%d FN %s)" i a)) "INIT" '(1 2 3 4))
     @result{} '("(1 FN (2 FN (3 FN (4 FN INIT))))" "(2 FN (3 FN (4 FN INIT)))" "(3 FN (4 FN INIT))" "(4 FN INIT)" "INIT")
 @end group
 @group
@@ -1241,7 +1241,7 @@ See also: @code{-reductions-from} (@pxref{-reductions-from}), @code{-reductions-
 
 @example
 @group
-(-reductions (λ (a i) (format "(%s FN %d)" a i)) '(1 2 3 4))
+(-reductions (lambda (a i) (format "(%s FN %d)" a i)) '(1 2 3 4))
     @result{} '(1 "(1 FN 2)" "((1 FN 2) FN 3)" "(((1 FN 2) FN 3) FN 4)")
 @end group
 @group
@@ -1265,7 +1265,7 @@ See also: @code{-reductions-r-from} (@pxref{-reductions-r-from}), @code{-reducti
 
 @example
 @group
-(-reductions-r (λ (i a) (format "(%d FN %s)" i a)) '(1 2 3 4))
+(-reductions-r (lambda (i a) (format "(%d FN %s)" i a)) '(1 2 3 4))
     @result{} '("(1 FN (2 FN (3 FN 4)))" "(2 FN (3 FN 4))" "(3 FN 4)" 4)
 @end group
 @group
@@ -1571,7 +1571,7 @@ This means a list of form:
     @result{} '(1 2 3 4 5 6 7 8 9 10)
 @end group
 @group
-(-iterate (λ (x) (+ x x)) 2 5)
+(-iterate (lambda (x) (+ x x)) 2 5)
     @result{} '(2 4 8 16 32)
 @end group
 @group
@@ -1595,7 +1595,7 @@ the new seed.
 
 @example
 @group
-(-unfold (λ (x) (unless (= x 0) (cons x (1- x)))) 10)
+(-unfold (lambda (x) (unless (= x 0) (cons x (1- x)))) 10)
     @result{} '(10 9 8 7 6 5 4 3 2 1)
 @end group
 @group
@@ -1922,7 +1922,7 @@ Return a list of ((-filter @var{pred} @var{list}) (-remove @var{pred} @var{list}
 
 @example
 @group
-(-separate (λ (num) (= 0 (% num 2))) '(1 2 3 4 5 6 7))
+(-separate (lambda (num) (= 0 (% num 2))) '(1 2 3 4 5 6 7))
     @result{} '((2 4 6) (1 3 5 7))
 @end group
 @group
@@ -2748,7 +2748,7 @@ See also: @code{-table-flat} (@pxref{-table-flat})
     @result{} '((1 2 3) (2 4 6) (3 6 9))
 @end group
 @group
-(-table (λ (a b) (-sum (-zip-with '* a b))) '((1 2) (3 4)) '((1 3) (2 4)))
+(-table (lambda (a b) (-sum (-zip-with '* a b))) '((1 2) (3 4)) '((1 3) (2 4)))
     @result{} '((7 15) (10 22))
 @end group
 @group
@@ -3052,7 +3052,7 @@ Compute the (least) fixpoint of @var{fn} with initial input @var{list}.
 
 @example
 @group
-(-fix (λ (l) (-non-nil (--mapcat (-split-at (/ (length it) 2) it) l))) '((1 2 3 4 5 6)))
+(-fix (lambda (l) (-non-nil (--mapcat (-split-at (/ (length it) 2) it) l))) '((1 2 3 4 5 6)))
     @result{} '((1) (2) (3) (4) (5) (6))
 @end group
 @group
@@ -3128,11 +3128,11 @@ further.
 
 @example
 @group
-(-tree-map-nodes 'vectorp (λ (x) (-sum (append x nil))) '(1 [2 3] 4 (5 [6 7] 8)))
+(-tree-map-nodes 'vectorp (lambda (x) (-sum (append x nil))) '(1 [2 3] 4 (5 [6 7] 8)))
     @result{} '(1 5 4 (5 13 8))
 @end group
 @group
-(-tree-map-nodes 'keywordp (λ (x) (symbol-name x)) '(1 :foo 4 ((5 6 :bar) :baz 8)))
+(-tree-map-nodes 'keywordp (lambda (x) (symbol-name x)) '(1 :foo 4 ((5 6 :bar) :baz 8)))
     @result{} '(1 ":foo" 4 ((5 6 ":bar") ":baz" 8))
 @end group
 @group
@@ -3345,7 +3345,7 @@ In the first form, bind @var{variable} to @var{value}.  In the second form, bind
 
 @example
 @group
-(-as-> 3 my-var (1+ my-var) (list my-var) (mapcar (λ (ele) (* 2 ele)) my-var))
+(-as-> 3 my-var (1+ my-var) (list my-var) (mapcar (lambda (ele) (* 2 ele)) my-var))
     @result{} '(8)
 @end group
 @group
@@ -3734,7 +3734,7 @@ See @code{-let} (@pxref{-let}) for the list of all possible patterns.
 
 @anchor{-lambda}
 @defmac -lambda (match-form &rest body)
-Return a λ which destructures its input as @var{match-form} and executes @var{body}.
+Return a lambda which destructures its input as @var{match-form} and executes @var{body}.
 
 Note that you have to enclose the @var{match-form} in a pair of parens,
 such that:
@@ -3742,8 +3742,8 @@ such that:
     (-lambda (x) body)
     (-lambda (x y ...) body)
 
-has the usual semantics of @code{λ}.  Furthermore, these get
-translated into normal λ, so there is no performance
+has the usual semantics of @code{lambda}.  Furthermore, these get
+translated into normal lambda, so there is no performance
 penalty.
 
 See @code{-let} (@pxref{-let}) for the description of destructuring mechanism.
@@ -3817,11 +3817,11 @@ Call @var{fn} with every item in @var{list}. Return nil, used for side-effects o
 
 @example
 @group
-(let (s) (-each '(1 2 3) (λ (item) (setq s (cons item s)))))
+(let (s) (-each '(1 2 3) (lambda (item) (setq s (cons item s)))))
     @result{} nil
 @end group
 @group
-(let (s) (-each '(1 2 3) (λ (item) (setq s (cons item s)))) s)
+(let (s) (-each '(1 2 3) (lambda (item) (setq s (cons item s)))) s)
     @result{} '(3 2 1)
 @end group
 @group
@@ -3838,7 +3838,7 @@ Return nil, used for side-effects only.
 
 @example
 @group
-(let (s) (-each-while '(2 4 5 6) 'even? (λ (item) (!cons item s))) s)
+(let (s) (-each-while '(2 4 5 6) 'even? (lambda (item) (!cons item s))) s)
     @result{} '(4 2)
 @end group
 @group
@@ -3858,7 +3858,7 @@ See also: @code{-map-indexed} (@pxref{-map-indexed}).
 
 @example
 @group
-(let (s) (-each-indexed '(a b c) (λ (index item) (setq s (cons (list item index) s)))) s)
+(let (s) (-each-indexed '(a b c) (lambda (index item) (setq s (cons (list item index) s)))) s)
     @result{} '((c 2) (b 1) (a 0))
 @end group
 @group
@@ -3875,11 +3875,11 @@ Call @var{fn} with every item in @var{list} in reversed order.
 
 @example
 @group
-(let (s) (-each-r '(1 2 3) (λ (item) (setq s (cons item s)))))
+(let (s) (-each-r '(1 2 3) (lambda (item) (setq s (cons item s)))))
     @result{} nil
 @end group
 @group
-(let (s) (-each-r '(1 2 3) (λ (item) (setq s (cons item s)))) s)
+(let (s) (-each-r '(1 2 3) (lambda (item) (setq s (cons item s)))) s)
     @result{} '(1 2 3)
 @end group
 @group
@@ -3896,7 +3896,7 @@ Return nil, used for side-effects only.
 
 @example
 @group
-(let (s) (-each-r-while '(2 4 5 6) 'even? (λ (item) (!cons item s))) s)
+(let (s) (-each-r-while '(2 4 5 6) 'even? (lambda (item) (!cons item s))) s)
     @result{} '(6)
 @end group
 @group
@@ -3912,7 +3912,7 @@ Repeatedly calls @var{fn} (presumably for side-effects) passing in integers from
 
 @example
 @group
-(let (s) (-dotimes 3 (λ (n) (!cons n s))) s)
+(let (s) (-dotimes 3 (lambda (n) (!cons n s))) s)
     @result{} '(2 1 0)
 @end group
 @group
@@ -4090,7 +4090,7 @@ expects a list with n items as arguments
     @result{} '(3 6 15)
 @end group
 @group
-(-map (-applify (λ (a b c) `(,a (,b (,c))))) '((1 1 1) (1 2 3) (5 5 5)))
+(-map (-applify (lambda (a b c) `(,a (,b (,c))))) '((1 1 1) (1 2 3) (5 5 5)))
     @result{} '((1 (1 (1))) (1 (2 (3))) (5 (5 (5))))
 @end group
 @group
@@ -4181,7 +4181,7 @@ See @var{srfi-26} for detailed description.
     @result{} '(1 2 3 4 5)
 @end group
 @group
-(-map (-cut funcall <> 5) '(1+ 1- (λ (x) (/ 1.0 x))))
+(-map (-cut funcall <> 5) '(1+ 1- (lambda (x) (/ 1.0 x))))
     @result{} '(6 4 0.2)
 @end group
 @group
@@ -4270,7 +4270,7 @@ This function satisfies the following law:
 
 @example
 @group
-(funcall (-iteratefn (λ (x) (* x x)) 3) 2)
+(funcall (-iteratefn (lambda (x) (* x x)) 3) 2)
     @result{} 256
 @end group
 @group
@@ -4288,7 +4288,7 @@ This function satisfies the following law:
 @defun -fixfn (fn &optional equal-test halt-test)
 Return a function that computes the (least) fixpoint of @var{fn}.
 
-@var{fn} must be a unary function. The returned λ takes a single
+@var{fn} must be a unary function. The returned lambda takes a single
 argument, @var{x}, the initial value for the fixpoint iteration. The
 iteration halts when either of the following conditions is satisified:
 
@@ -4306,7 +4306,7 @@ iteration halts when either of the following conditions is satisified:
       should continue. In this way, a more sophisticated
       convergence test may be supplied by the caller.
 
-The return value of the λ is either the fixpoint or, if
+The return value of the lambda is either the fixpoint or, if
 iteration halted before converging, a cons with car @code{halted} and
 cdr the final output from @var{halt-test}.
 
@@ -4318,7 +4318,7 @@ In types: (a -> a) -> a -> a.
     @result{} 0.7390851332151607
 @end group
 @group
-(funcall (-fixfn (λ (x) (expt (+ x 10) 0.25))) 2.0)
+(funcall (-fixfn (lambda (x) (expt (+ x 10) 0.25))) 2.0)
     @result{} 1.8555845286409378
 @end group
 @group

@@ -21,7 +21,7 @@
 (require 'evil-lisp-state)
 
 (pen-with 'paredit
-          (add-hook 'pen-lisp-mode-hook (λ () (paredit-mode 1))))
+          (add-hook 'pen-lisp-mode-hook (lambda () (paredit-mode 1))))
 
 (define-key paredit-mode-map (kbd "M-r") nil)
 (define-key paredit-mode-map (kbd "C-M-n") nil)

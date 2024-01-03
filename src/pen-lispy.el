@@ -30,10 +30,10 @@
                (arglist (pen-vector2list argvec))
                ;; Probably the simplest fix is to remove the &
                ;; Rather than implementing variable arguments
-               (arglist (-filter (λ (s) (not (string-equal "&" s)))
+               (arglist (-filter (lambda (s) (not (string-equal "&" s)))
                                  arglist))
                (iarglist (mapcar
-                          (λ (e) `(read-string-hist ,(concat (str e) ": ")))
+                          (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
                           arglist))
                (argrepr (str (third sexp)))
                (argstr (s-substring "\\[\\(.*\\)\\]" argrepr)))
@@ -42,7 +42,7 @@
               (progn
                 (eval
                  `(call-interactively
-                   (λ (,@arglist)
+                   (lambda (,@arglist)
                      (interactive (list ,@iarglist))
                      (let* ((valstr (pen-cmd ,@arglist))
                             (clj (concat "(" ,symstr " " valstr ")")))
@@ -174,7 +174,7 @@ ARG can extend the bounds beyond the current defun."
       (lispy--avy-do
        lispy-left
        bnd
-       (λ () (not (lispy--in-string-or-comment-p)))
+       (lambda () (not (lispy--in-string-or-comment-p)))
        lispy-avy-style-paren))))
 
 (defun lispy-ace-paren-visible ()
@@ -265,7 +265,7 @@ ARG can extend the bounds beyond the current defun."
     (lispy-define-key map "." 'lispy-repeat)
     (lispy-define-key map "~" 'lispy-tilde)
     ;; digit argument
-    (mapc (λ (x) (lispy-define-key map (format "%d" x) 'digit-argument))
+    (mapc (lambda (x) (lispy-define-key map (format "%d" x) 'digit-argument))
           (number-sequence 0 9))
     map))
 

@@ -23,7 +23,7 @@
                   (lsp-stdio-connection 'lsp-c--server-command)
                   :major-modes '(c-mode c-ts-mode)
                   :server-id 'c
-                  :initialized-fn (λ (workspace)
+                  :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:c ,lsp-c--config-options))))))

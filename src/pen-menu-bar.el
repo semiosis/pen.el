@@ -1161,7 +1161,7 @@
     (bindings--define-key menu [mi-menu-bar-cterm-menu]
       `(menu-item "cterm" ,menu-bar-cterm-menu
                   :help "Run your terminals within Pen.el"))
-    ;; Frustratingly, can't use λ either in the menu bar
+    ;; Frustratingly, can't use lambda either in the menu bar
     (bindings--define-key menu [mi-menu-bar-ilambda-menu]
       `(menu-item "ilambda" ,menu-bar-ilambda-menu
                   :help "ilambda REPLs"))

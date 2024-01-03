@@ -179,7 +179,7 @@
   (selected-off))
 
 ;; Disable this so C-c C-s works
-(add-hook 'magit-popup-mode-hook (λ () (pen -1)))
+(add-hook 'magit-popup-mode-hook (lambda () (pen -1)))
 
 (add-hook 'magit-status-mode-hook #'pen-magit-status-hook-body)
 (add-hook 'emacs-lisp-mode-hook #'pen-emacs-lisp-mode-hook-body)

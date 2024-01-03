@@ -37,7 +37,7 @@
 (defun pen-client-ecmd (&rest args)
   (chomp (mapconcat 'identity (mapcar 'e/q
                                       (mapcar 'substring-no-properties
-                                              (mapcar (λ (e) (if e e "")) args))) " ")))
+                                              (mapcar (lambda (e) (if e e "")) args))) " ")))
 
 (defun variable-p (s)
   (and (not (eq s nil))
@@ -200,7 +200,7 @@
                    "pene"
                    "(pen-list-signatures-for-client)")))))
             (mapcar
-             (λ (s) (pen-eval-string (concat "'" s)))
+             (lambda (s) (pen-eval-string (concat "'" s)))
              (pen-list-signatures-for-client)))))
 
     (dolist (s sig-sexps)

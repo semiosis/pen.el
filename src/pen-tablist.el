@@ -21,7 +21,7 @@
 
   (ignore-errors (tablist-import-csv path))
 
-  (eval `(setq tabulated-list-revert-hook (λ () (tablist-import-csv ,path)))))
+  (eval `(setq tabulated-list-revert-hook (lambda () (tablist-import-csv ,path)))))
 
 (defun cmd-out-to-tablist-quick (cmd &optional has-header)
   (interactive (list (read-string-hist "tablist cmd: ")))
@@ -71,7 +71,7 @@
          (parsed (pcsv-parse-buffer b))
          (header (if has-header
                      (first parsed)
-                   (mapcar (λ (s) "") (first parsed))))
+                   (mapcar (lambda (s) "") (first parsed))))
          (data (if has-header
                    (-drop 1 parsed)
                  parsed)))
@@ -85,10 +85,10 @@
                       (list2vec
                        (let* ((sizes
                                (or col-sizes
-                                   (mapcar (λ (e) ;; (si "tabulated-list-format column-size" (max 10 (min 30 (length e))))
+                                   (mapcar (lambda (e) ;; (si "tabulated-list-format column-size" (max 10 (min 30 (length e))))
                                              (max pen-tablist-min-column-width (min 30 (length e))))
                                            header)))
-                              (trues (mapcar (λ (e) t)
+                              (trues (mapcar (lambda (e) t)
                                              header)))
                          (-zip header sizes trues))
                        )))
@@ -96,7 +96,7 @@
 
       ;; It would be nice to find the approximate length of each column, but who cares for the moment
 
-      (setq-local tabulated-list-entries (-map (λ (lst) (list (first lst) (list2vec lst))) data))
+      (setq-local tabulated-list-entries (-map (lambda (lst) (list (first lst) (list2vec lst))) data))
 
       (tabulated-list-mode)
 
@@ -154,7 +154,7 @@ Return the output buffer."
         ((printit (entry)
                   (insert
                    (mapconcat
-                    (λ (e)
+                    (lambda (e)
                       (unless (stringp e)
                         (setq e (car e)))
                       (if (or always-quote-p
@@ -445,7 +445,7 @@ Returns nil, if point is before the first column."
               (current-visible-column)
               (append (tablist-column-offsets)
                       (list most-positive-fixnum))
-              :test (λ (column offset) (> offset column))))))
+              :test (lambda (column offset) (> offset column))))))
     (when (>= column 0)
       column)))
 

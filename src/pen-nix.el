@@ -34,7 +34,7 @@
 (defmacro quote-args (&rest body)
   "Join all the arguments in a sexp into a single string.
 Be mindful of quoting arguments correctly."
-  `(mapconcat (λ (input)
+  `(mapconcat (lambda (input)
                 (shellquote (str input))) ',body " "))
 
 (defun shellquote (input)
@@ -255,7 +255,7 @@ Be mindful of quoting arguments correctly."
   (setq f (- (string-to-int f) 1))
 
   (let ((lines (str2lines stdin)))
-    (list2str (mapcar (λ (line) (nth f (s-split d line)))
+    (list2str (mapcar (lambda (line) (nth f (s-split d line)))
                       lines))))
 
 (defalias 'cut 'sh/cut)
@@ -371,7 +371,7 @@ Be mindful of quoting arguments correctly."
   (pen-sn (concat "u dn | chomp") paths dir))
 
 (defun e/dn (paths &optional dir)
-  (mapcar (λ (path) (file-name-directory path)) (split-string paths "\n")))
+  (mapcar (lambda (path) (file-name-directory path)) (split-string paths "\n")))
 (defalias 'dn 'e/dn)
 
 (defun /rp (path &optional dir)

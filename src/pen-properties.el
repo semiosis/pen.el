@@ -56,7 +56,7 @@
 
   (if (yes-or-no-p "This takes a long time. Continue?")
       (let ((result '()))
-        (mapatoms (λ (x)
+        (mapatoms (lambda (x)
                     (when (boundp x)
                       (let ((file (ignore-errors
                                     (find-lisp-object-file-name x 'defvar))))

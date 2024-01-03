@@ -93,7 +93,7 @@
 
 
 (defun pen-annotate-list-buffer-annotations-in-memory ()
-  (cl-remove-if (λ (a)
+  (cl-remove-if (lambda (a)
                   (= (annotate-beginning-of-annotation a)
                      (annotate-ending-of-annotation a)))
                 (annotate-describe-annotations)))
@@ -296,7 +296,7 @@ results can be filtered with a simple query language: see
                                                                       annotation-end))
                                  annotate-error-summary-win-filename-invalid)))
               (db-empty-p    (dump)
-                             (cl-every (λ (a)
+                             (cl-every (lambda (a)
                                          (cl-every 'null
                                                    (annotate-annotations-from-dump a)))
                                        dump))
@@ -320,7 +320,7 @@ results can be filtered with a simple query language: see
          (select-window (get-buffer-window annotate-summary-buffer-name t))
          (outline-mode)
          ;; (use-local-map nil)
-         (local-set-key "q" (λ ()
+         (local-set-key "q" (lambda ()
                               (interactive)
                               (kill-buffer annotate-summary-buffer-name)
                               (local-unset-key "q")))
@@ -380,7 +380,7 @@ results can be filtered with a simple query language: see
   "Save `data` into annotation file."
   (with-temp-file annotate-file
     (let ((print-length nil))
-      ;; (tv (chomp (pp (-filter (λ (s) (not (string-match-p "^/tmp/" (str (car s))))) data))))
+      ;; (tv (chomp (pp (-filter (lambda (s) (not (string-match-p "^/tmp/" (str (car s))))) data))))
       (chomp (pp (-filter 'annotate-path-filter-p data) (current-buffer)))
       ;; (prin1 data (current-buffer))
       )))
@@ -503,7 +503,7 @@ results can be filtered with a simple query language: see
                              ;;   annotate-error-summary-win-filename-invalid)
                              )
               (db-empty-p    (dump)
-                             (cl-every (λ (a)
+                             (cl-every (lambda (a)
                                          (cl-every 'null
                                                    (annotate-annotations-from-dump a)))
                                        dump))
@@ -532,7 +532,7 @@ results can be filtered with a simple query language: see
          ;; (use-local-map nil)
 
          ;; Just don't bind this
-         ;; (local-set-key "q" (λ ()
+         ;; (local-set-key "q" (lambda ()
          ;;                      (interactive)
          ;;                      (kill-buffer annotate-summary-buffer-name)))
 

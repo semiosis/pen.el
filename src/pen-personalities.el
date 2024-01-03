@@ -55,7 +55,7 @@
    (pen-expand-template-keyvals "Biography:\n<(pf-instruct-an-ai-to-write-something/1 task)>"
                                 '(("(pf-instruct-an-ai-to-write-something/1 task)" . "She was just a young girl when she was trafficked. She didn't know what was happening to her, and she certainly didn't know how to get out. She was taken from her home country and forced into a life of prostitution. She was beaten and abused, and she didn't see any way out. But she was eventually rescued, and she is now working to help other victims of trafficking. She is a powerful advocate for change, and she is determined to make a difference in the world.")))))
 
-;; mapcar((λ (s) (eval `(pen-let-keyvals ',def-replacement-keyvals (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s))))) ("biography>)" "biography"))
+;; mapcar((lambda (s) (eval `(pen-let-keyvals ',def-replacement-keyvals (eval-string (s-replace-regexp "<\\([^>]*\\)>" "\\1" s))))) ("biography>)" "biography"))
 
 ;; Yes this may prompt to define all the personalities initially.
 ;; But I can always update them on a one-off basis.

@@ -34,7 +34,7 @@ respectively."
 (defun pen-set-autosuggestions ()
   (setq pen-autosuggest-candidates-list
         ;; (pen-no-select (pen-line-complete (pen-complete-function (pen-preceding-text))))
-        (mapcar (λ (s) (concat (pen-preceding-text-line) s))
+        (mapcar (lambda (s) (concat (pen-preceding-text-line) s))
                 (pen-no-select (pen-line-complete (pen-one (pen-complete-function (pen-preceding-text)))))))
   (message (pp-oneline pen-autosuggest-candidates-list))
   pen-autosuggest-candidates-list)
@@ -56,11 +56,11 @@ respectively."
   "Select the first penel history candidate that starts with PREFIX."
   (let* ((history
           (delete-dups
-           (mapcar (λ (str)
+           (mapcar (lambda (str)
                      (string-trim (substring-no-properties str)))
                    pen-autosuggest-candidates-list)))
          (most-similar (cl-find-if
-                        (λ (str)
+                        (lambda (str)
                           (string-prefix-p prefix str))
                         history)))
     (when most-similar

@@ -30,7 +30,7 @@
   (s-lines (pen-snc (concat "pl " s))))
 
 (defun pen-record (category-and-args-string &optional input)
-  (let* ((λ (uncmd category-and-args-string))
+  (let* ((lambda (uncmd category-and-args-string))
          (cat (car l) ))
     (si cat input (rest l))))
 

@@ -32,7 +32,7 @@
 (defvar sel/hydra-stack nil)
 
 (defun sel/hydra-push (expr)
-  (push `(λ () ,expr) sel/hydra-stack))
+  (push `(lambda () ,expr) sel/hydra-stack))
 
 (defun sel/hydra-pop ()
   (interactive)
@@ -107,15 +107,15 @@
 
           (setq result
                 (mapcar
-                 (λ (l)
+                 (lambda (l)
                    (-map-indexed
-                    (λ (index item)
+                    (lambda (index item)
                       (if (= index 0) (concat prefix item) item))
                     l))
                  result))
 
           (cons `(sslk ,prefix nil)
-                (mapcar (λ (l) (cons 'sslk l)) result)))))
+                (mapcar (lambda (l) (cons 'sslk l)) result)))))
 
 (require 'pen-yasnippet)
 
@@ -153,7 +153,7 @@
 (defvar norm/hydra-stack nil)
 
 (defun norm/hydra-push (expr)
-  (push `(λ () ,expr) norm/hydra-stack))
+  (push `(lambda () ,expr) norm/hydra-stack))
 
 (defun norm/hydra-pop ()
   (interactive)
@@ -175,9 +175,9 @@ display values."
   (interactive)
   (with-helm-alive-p
     (helm-run-after-exit
-     (λ (cands)
+     (lambda (cands)
        (with-helm-current-buffer
-         (insert (mapconcat (λ (c)
+         (insert (mapconcat (lambda (c)
                               (format "%s" c))
                             cands "\n"))))
      (helm-marked-candidates))))
@@ -239,7 +239,7 @@ display values."
 (convert-hydra-to-sslk "lo"
                        (defhydra h_o (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "VISUAL: tools"
                          "VISUAL: tools"
-                         ("e" (dff (rfilter (λ (s) (concat "[[egr:" pen-str "]]")))) "egr")
+                         ("e" (dff (rfilter (lambda (s) (concat "[[egr:" pen-str "]]")))) "egr")
                          ("l" (df h-org-clink (pen-region-pipe "oc")) "oc")
                          ("L" (df h-org-clink-u (pen-region-pipe "org clink -u")) "org clink -u")
                          ("g" (df h-org-clink-g (pen-region-pipe "org clink -g")) "org clink -g")
@@ -575,11 +575,11 @@ display values."
 
 (defhydra hydra-org (:color blue :timeout 12 :columns 4)
   "Org commands"
-  ("i" (λ () (interactive) (org-clock-in '(4))) "Clock in")
+  ("i" (lambda () (interactive) (org-clock-in '(4))) "Clock in")
   ("o" org-clock-out "Clock out")
   ("q" org-clock-cancel "Cancel a clock")
   ("<f10>" org-clock-in-last "Clock in the last task")
-  ("j" (λ () (interactive) (org-clock-goto '(4))) "Go to a clock")
+  ("j" (lambda () (interactive) (org-clock-goto '(4))) "Go to a clock")
   ("m" make-this-message-into-an-org-todo-item "Flag and capture this message"))
 ;; (global-set-key (kbd "<f10>") 'hydra-org/body)
 

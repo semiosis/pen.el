@@ -442,11 +442,11 @@ revisions (interactive.e., use a \"...\" range)."
   "Pull from another repository."
   :man-page "git-pull"
   [:description
-   (λ () (if magit-pull-or-fetch "Pull arguments" "Arguments"))
+   (lambda () (if magit-pull-or-fetch "Pull arguments" "Arguments"))
    ("-r" "Rebase local commits" ("-r" "--rebase"))
    ("-A" "Autostash" "--autostash" :level 7)]
   [:description
-   (λ ()
+   (lambda ()
      (if-let ((branch (magit-get-current-branch)))
          (concat
           (propertize "Pull into " 'face 'transient-heading)
@@ -488,7 +488,7 @@ revisions (interactive.e., use a \"...\" range)."
    (5 "-u" "Set upstream" "--set-upstream")
    (7 "-t" "Follow tags" "--follow-tags")]
   [:if magit-get-current-branch
-       :description (λ ()
+       :description (lambda ()
                       (format (propertize "Push %s to" 'face 'transient-heading)
                               (propertize (magit-get-current-branch)
                                           'face 'magit-branch-local)))
@@ -586,7 +586,7 @@ revisions (interactive.e., use a \"...\" range)."
 
 ;; I'm not sure where this was set, but this is what it needs to be set to
 (setq magit-display-buffer-function
-      (λ
+      (lambda
         (buffer)
         (if magit-display-buffer-noselect
             (magit-display-buffer-traditional buffer)
@@ -602,8 +602,8 @@ revisions (interactive.e., use a \"...\" range)."
 
 (define-key magit-log-mode-map (kbd "M-j") (kbd "M-m"))
 (define-key magit-log-mode-map (kbd "d") 'magit-diff)
-(define-key magit-diff-mode-map (kbd "M-P") (λ () (interactive) (ekm "q M-p dd")))
-(define-key magit-diff-mode-map (kbd "M-N") (λ () (interactive) (ekm "q M-n dd")))
+(define-key magit-diff-mode-map (kbd "M-P") (lambda () (interactive) (ekm "q M-p dd")))
+(define-key magit-diff-mode-map (kbd "M-N") (lambda () (interactive) (ekm "q M-n dd")))
 ;; (define-key pen-map (kbd "M-m g f h") 'magit-log-buffer-file)
 (define-key magit-log-mode-map (kbd "H") 'magit-status)
 (define-key magit-status-mode-map (kbd "N") '-interactive-sn-git-add-a-nil-pen-pwd-)

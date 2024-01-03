@@ -94,7 +94,7 @@
                     (lsp-stdio-connection 'pen-lsp--server-command)
                     :major-modes pen-lsp-modes
                     :server-id 'pen
-                    :initialized-fn (λ (workspace)
+                    :initialized-fn (lambda (workspace)
                                       (with-lsp-workspace workspace
                                         (lsp--set-configuration
                                          (lsp-configuration-section "pen")
@@ -258,7 +258,7 @@ argument ask the user to select which language server to start."
         (lsp--info "There are language server(%s) installation in progress.
 The server(s) will be started in the buffer when it has finished."
                    (-map #'lsp--client-server-id clients))
-        (seq-do (λ (client)
+        (seq-do (lambda (client)
                   (cl-pushnew (current-buffer) (lsp--client-buffers client)))
                 clients))
        ;; look for servers to install
@@ -281,7 +281,7 @@ The server(s) will be started in the buffer when it has finished."
         (lsp--warn "The following servers support current file but do not have automatic installation configuration: %s
 You may find the installation instructions at https://emacs-lsp.github.io/lsp-mode/page/languages.
 (If you have already installed the server check *lsp-log*)."
-                   (mapconcat (λ (client)
+                   (mapconcat (lambda (client)
                                 (symbol-name (lsp--client-server-id client)))
                               clients
                               " ")))
@@ -362,7 +362,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
   (if (not path)
       (setq path (get-path-nocreate)))
   (let ((l))
-    (maphash (λ (file diagnostic)
+    (maphash (lambda (file diagnostic)
                (if (string-equal path file)
                    (dolist (diag diagnostic)
                      (-let* (((&Diagnostic :message :severity? :source?
@@ -417,7 +417,7 @@ Push sideline overlays on `lsp-ui-sideline--ovs'."
       (goto-char (posn-point ec)))
     (run-with-idle-timer
      0.001 nil
-     (λ ()
+     (lambda ()
        ;; I also had to add ignore-errors here, so I can C-g the menu
        (ignore-errors
          (cl-labels ((check (value) (not (null value))))

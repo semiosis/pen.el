@@ -151,7 +151,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 (defun pen-detect-imaginary-interpreter ()
   ;; TODO Check for user prompt on current line first
   ;; TODO Then do a language detect
-  (-filter (λ (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
+  (-filter (lambda (i) (istr-match-p (ht-get i "language") lang)) (pen-list-interpreters))
   (re-match-p "^In \\[[0-9]*\\]: " (current-line-string)))
 
 (defun pen-e-sps (&optional run)
@@ -193,7 +193,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
 
   (eval
    `(def-right-click-menu rcm-suggest-funcs
-      (quote ,(mapcar (λ (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
+      (quote ,(mapcar (lambda (sym) (list (sym2str sym) :call sym)) (pen-suggest-funcs-collect)))))
   (rcm-suggest-funcs))
 
 (defun ekbd (keys)

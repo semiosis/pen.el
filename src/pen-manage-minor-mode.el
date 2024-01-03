@@ -18,14 +18,14 @@
 ;; So ideally, there would be a settable limit to the number of visual lines per semantic line.
 
 ;; (add-hook 'minibuffer-setup-hook
-;;           (λ ()
+;;           (lambda ()
 ;;             (visual-line-mode t)
 
 ;;             ;; linum doesn't work good
 ;;             ;; linum-mode
 ;;             ))
 ;; (remove-hook 'minibuffer-setup-hook
-;;           (λ ()
+;;           (lambda ()
 ;;             (visual-line-mode t)
 
 ;;             ;; linum doesn't work good

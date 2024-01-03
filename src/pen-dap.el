@@ -105,6 +105,6 @@
 
 ;; automatically trigger the hydra when the program hits a breakpoint by using the following code.
 (add-hook 'dap-stopped-hook
-          (λ (arg) (call-interactively #'dap-hydra)))
+          (lambda (arg) (call-interactively #'dap-hydra)))
 
 (provide 'pen-dap)

@@ -113,7 +113,7 @@ $0`(yas-escape-text yas-selected-text)`")
   (call-interactively 'pen-helm-imenu))
 
 (add-hook 'yas-minor-mode-hook
-          (λ ()
+          (lambda ()
             (yas-activate-extra-mode '_)))
 
 (defun activate-yas-python-interpreter ()
@@ -172,7 +172,7 @@ NO-TEMPLATE is non-nil."
     (snippet-mode)
     (yas-minor-mode 1)
     (set (make-local-variable 'yas--guessed-modes)
-         (mapcar (λ (d) (yas--table-mode (car d)))
+         (mapcar (lambda (d) (yas--table-mode (car d)))
                  guessed-directories))
     (set (make-local-variable 'default-directory)
          (car (cdr (car guessed-directories))))
@@ -280,7 +280,7 @@ for normal snippets, and a list for command snippets)."
   "Preview the snippet under the cursor"
   (interactive)
   (apply
-   (λ (template) (yas--visit-snippet-file-1 template))
+   (lambda (template) (yas--visit-snippet-file-1 template))
    (button-get (button-at (point)) (quote help-args)))
   (other-window 1)
   nil)

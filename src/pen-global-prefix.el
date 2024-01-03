@@ -30,7 +30,7 @@
         (setq prefix-command--last-echo
               (let ((strs nil))
                 (run-hook-wrapped 'prefix-command-echo-keystrokes-functions
-                                  (λ (fun) (push (funcall fun) strs)))
+                                  (lambda (fun) (push (funcall fun) strs)))
                 (setq strs (delq nil strs))
                 (when strs (mapconcat #'identity strs " ")))))
       (if (not global-prefix-command--needs-update)
@@ -38,7 +38,7 @@
         (setq global-prefix-command--last-echo
               (let ((strs nil))
                 (run-hook-wrapped 'global-prefix-command-echo-keystrokes-functions
-                                  (λ (fun) (push (funcall fun) strs)))
+                                  (lambda (fun) (push (funcall fun) strs)))
                 (setq strs (delq nil strs))
                 (when strs (mapconcat #'identity strs " "))))))))))
 
@@ -99,10 +99,10 @@ Runs `global-prefix-command-preserve-state-hook'."
          ;; For backward compatibility, minus with no modifiers is an ordinary
          ;; command if digits have already been entered.
          `(menu-item "" global-negative-argument
-                     :filter ,(λ (cmd)
+                     :filter ,(lambda (cmd)
                                 (if (integerp global-prefix-arg) nil cmd)))))
     (define-key map [switch-frame]
-      (λ (e) (interactive "e")
+      (lambda (e) (interactive "e")
         (handle-switch-frame e) (global-argument--mode)))
     (define-key map [?\H-u] 'global-argument-more)
     (define-key map [?-] global-argument-minus)

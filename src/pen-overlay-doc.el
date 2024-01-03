@@ -51,12 +51,12 @@ Because some variables are buffer local.")
                 (run-with-idle-timer
                  lsp-ui-doc-delay nil
                  (let ((buf (current-buffer)))
-                   (λ nil
+                   (lambda nil
                      (when (equal buf (current-buffer))
                        (lsp-request-async
                         "textDocument/hover"
                         (lsp--text-document-position-params)
-                        (λ (hover)
+                        (lambda (hover)
                           (when (equal buf (current-buffer))
                             (lsp-ui-doc--callback hover bounds (current-buffer))))
                         :mode 'tick

@@ -48,7 +48,7 @@ for you in Christ explodes with faith, and joy, and love."
   ;; TODO Make this handle 'recent' properly
   (let* ((links (string2list (pen-snc "leading-the-way-recent")))
          (tuples (mapcar
-                  (λ (e)
+                  (lambda (e)
                     (list
                      (--> e
                           (s-replace-regexp "^\\[\\[" "" it)
@@ -99,7 +99,7 @@ for you in Christ explodes with faith, and joy, and love."
          (min_id (max 1 (- max_id last_n))))
 
     (mapcar
-     (λ (tp)
+     (lambda (tp)
        (concat (str (car tp)) ": " (cadr tp)))
      (reverse (cl-loop for x from min_id to max_id
                        collect

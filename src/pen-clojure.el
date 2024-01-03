@@ -50,15 +50,15 @@
 (defmacro pen-cider-eval-return-handler (&rest code)
   "Make a handler for the result."
   `(nrepl-make-response-handler (or buffer (current-buffer))
-                                (λ (buffer value)
+                                (lambda (buffer value)
                                   (with-current-buffer buffer
                                     (insert
                                      (if (derived-mode-p 'cider-clojure-interaction-mode)
                                          (format "\n%s\n" value)
                                        value))))
-                                (λ (_buffer out)
+                                (lambda (_buffer out)
                                   (cider-emit-interactive-eval-output out))
-                                (λ (_buffer err)
+                                (lambda (_buffer err)
                                   (cider-emit-interactive-eval-err-output err))
                                 '()))
 
@@ -90,7 +90,7 @@ buffer."
   (xc (fz (pen-snc (apply 'pen-cmd "clojure-find-deps"
                                (if use-google
                                    "-gl")
-                               (-flatten (mapcar (λ (e) (s-split " " e)) query)))))))
+                               (-flatten (mapcar (lambda (e) (s-split " " e)) query)))))))
 
 
 
@@ -179,7 +179,7 @@ canceled the action, signal quit."
   (let* ((proj-dir (plist-get params :project-dir))
          (host (plist-get params :host))
          ;; (port (plist-get params :port))
-         (session (seq-find (λ (ses)
+         (session (seq-find (lambda (ses)
                               (let ((ses-params (cider--gather-session-params ses)))
                                 (and (equal proj-dir (plist-get ses-params :project-dir))
                                      ;; (or (null port)
@@ -265,7 +265,7 @@ so the same nrepl is used for all files in the project"
           (cd dir)
 
           ;; Also, clean up the buffer after 5 seconds, just in case
-          (eval `(run-with-timer 2 nil (λ () (ignore-errors (kill-buffer ,bufname)))))
+          (eval `(run-with-timer 2 nil (lambda () (ignore-errors (kill-buffer ,bufname)))))
 
           (let ((res (apply proc args)))
             (if (re-match-p "closure" (str proc))
@@ -308,16 +308,16 @@ so the same nrepl is used for all files in the project"
                 (-filter
                  (cond
                   ((>= (prefix-numeric-value current-prefix-arg) (expt 4 4))
-                   (λ (e)
+                   (lambda (e)
                      (string-equal "function" (get-text-property 0 'type e))))
                   ((>= (prefix-numeric-value current-prefix-arg) (expt 4 3))
-                   (λ (e)
+                   (lambda (e)
                      (string-equal "special-form" (get-text-property 0 'type e))))
                   ((>= (prefix-numeric-value current-prefix-arg) (expt 4 2))
-                   (λ (e)
+                   (lambda (e)
                      (string-equal "macro" (get-text-property 0 'type e))))
                   (t
-                   (λ (e)
+                   (lambda (e)
                      (or (string-equal "function" (get-text-property 0 'type e))
                          (string-equal "macro" (get-text-property 0 'type e))
                          (string-equal "special-form" (get-text-property 0 'type e))))))
@@ -564,13 +564,13 @@ the namespace in the Clojure source buffer"
 ;; The handler simply inserts the result value in BUFFER."
 ;;   (let ((eval-buffer (current-buffer)))
 ;;     (nrepl-make-response-handler (or buffer eval-buffer)
-;;                                  (λ (_buffer value)
+;;                                  (lambda (_buffer value)
 ;;                                    (with-current-buffer buffer
 ;;                                      (insert (concat "(" value ")"))
 ;;                                      (cider-repl-return)))
-;;                                  (λ (_buffer out)
+;;                                  (lambda (_buffer out)
 ;;                                    (cider-repl-emit-interactive-stdout out))
-;;                                  (λ (_buffer err)
+;;                                  (lambda (_buffer err)
 ;;                                    (cider-handle-compilation-errors err eval-buffer))
 ;;                                  '())))
 
@@ -648,13 +648,13 @@ the namespace in the Clojure source buffer"
 
 (defun helm-cider--apropos-sources-nodoc ()  
   (-map
-   (λ (e)
+   (lambda (e)
      ;; (setq e (delq (assoc 'action e) e))
      (setq e (delq (assoc 'persistent-action e) e))
      
      ;; This action means helm will return the value. So helm functions like fzf.
      ;; 
-     (setcdr (assq 'action e) (λ (c) (helm-marked-candidates)))
+     (setcdr (assq 'action e) (lambda (c) (helm-marked-candidates)))
      (setcdr (assq 'persistent-help e) "Run function")
      ;; (setcdr (assq 'header-line e) "C-j: Run function")
      (setcdr (assq 'header-line e) "C-m: Run function")
@@ -692,7 +692,7 @@ the namespace in the Clojure source buffer"
                      (replace-regexp-in-string
                       "^.*: (\\(.*\\))$" "\\1"
                       (cider-company-docsig ret))))))
-         (arglist (-filter (λ (s) (not (string-equal "&" s)))
+         (arglist (-filter (lambda (s) (not (string-equal "&" s)))
                            arglist)))
 
     ;; khala.core/start-khala: ([port])
@@ -708,19 +708,19 @@ the namespace in the Clojure source buffer"
 
 (defun pen-cider-repl-run-function-interactively (funname argnames)
   (let* ((iarglist (mapcar
-                    (λ (e) `(read-string-hist ,(concat (str e) ": ")))
+                    (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
                     argnames)))
 
     (eval
      `(call-interactively
-       (λ (,@arglist)
+       (lambda (,@arglist)
          (interactive (list ,@iarglist))
          (let* ((valstr (pen-cmd ,@arglist))
                 (clj (concat "(" ,funname " " valstr ")")))
            (cider-nrepl-request:eval clj
-                                     (λ (response) (tm-notify response)))))))
+                                     (lambda (response) (tm-notify response)))))))
     (cider-nrepl-request:eval (concat "(" funname ")")
-                              (λ (response) (tm-notify response)))))
+                              (lambda (response) (tm-notify response)))))
 
 (define-key cider-mode-map (kbd "C-c C-o") nil)
 (define-key cider-mode-map (kbd "C-M-i") nil)

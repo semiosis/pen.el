@@ -72,7 +72,7 @@
 (defun byte-recompile-directory (directory &optional arg force)
   "I hope this disables this function"
   nil)
-(remove-hook 'after-save-hook (λ nil (byte-force-recompile default-directory)) t)
+(remove-hook 'after-save-hook (lambda nil (byte-force-recompile default-directory)) t)
 
 (when (functionp 'mac-auto-ascii-mode)
   (mac-auto-ascii-mode 1))

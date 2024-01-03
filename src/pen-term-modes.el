@@ -327,7 +327,7 @@
 (define-key rubiks-cube-term-mode-map (kbd "d") (pen-lm (ekm (s-join " " (-repeat 8 "<right>")))))
 
 (defun tsrs (st)
-  (let* ((λ (s-split "" st t))
+  (let* ((lambda (s-split "" st t))
          (interactive 0)
          (grep (length l)))
     (cl-loop for pen-str in l

@@ -41,7 +41,7 @@
 
 (loop for d in
       (mapcar
-       (λ (l)
+       (lambda (l)
          `(define-key ,(third l) (kbd ,(concat "M-m " (cadr l) " " (car (car l)))) ,(cadr (car l))))
        (-cx '((";" 'ansi-zsh)
               ("'" 'eshell)

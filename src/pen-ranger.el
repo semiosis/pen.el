@@ -320,7 +320,7 @@ is set, show literally instead of actual buffer."
         (setq i (+ i 1))
         (unless (string-equal current-name parent-name)
           ;; (walk-window-tree
-          ;;  (λ (window)
+          ;;  (lambda (window)
           ;;    (when (eq (window-parameter window 'window-slot) (- 0 i))
           ;;      (setq unused-window window)
           ;;      ))
@@ -334,7 +334,7 @@ is set, show literally instead of actual buffer."
       ;; select child folder in each parent
       (save-excursion
         (walk-window-tree
-         (λ (window)
+         (lambda (window)
            (progn
              (when (member window ranger-parent-windows)
                (with-selected-window window

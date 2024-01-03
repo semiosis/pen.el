@@ -80,7 +80,7 @@
    ("inferior"    "i" :prefix)
    ("interaction" "i" :prefix)
    ("interactive" "i" :prefix)
-   ("lisp"        "λ" :postfix)
+   ("lisp"        "lambda" :postfix)
    ("menu"        "▤" :postfix)
    ("mode"        "")
    ("package"     "↓")

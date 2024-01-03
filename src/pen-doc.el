@@ -313,8 +313,8 @@
          (val (completing-read
                (format "Describe symbol (default %s): " thing)
                (vconcat (list thing) obarray)
-               (λ (vv)
-                (cl-some (λ (x) (funcall (nth 1 x) vv))
+               (lambda (vv)
+                (cl-some (lambda (x) (funcall (nth 1 x) vv))
                          describe-symbol-backends))
                t nil nil))
          (it (intern val)))

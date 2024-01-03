@@ -23,7 +23,7 @@
                   (lsp-stdio-connection 'lsp-python--server-command)
                   :major-modes '(python-mode python-ts-mode)
                   :server-id 'python
-                  :initialized-fn (λ (workspace)
+                  :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:python ,lsp-python--config-options))))))

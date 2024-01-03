@@ -82,7 +82,7 @@ argument, prompt for a regular expression using `read-regexp'."
         disp-frame window face-name)
     ;; We filter and take the max length in one pass
     (delq nil
-          (mapcar (λ (f)
+          (mapcar (lambda (f)
                     (let ((s (symbol-name f)))
                       (when (or all-faces (string-match-p regexp s))
                         (setq max-length (max (length s) max-length))

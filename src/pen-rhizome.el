@@ -15,7 +15,7 @@
 
   (let* ((json-pen-last-prompt-data
           ;; Remove everything with no value.
-          (-map (λ (e)
+          (-map (lambda (e)
                   (if (not (cdr e))
                       ;; Use the empty string (not ideal)
                       (cons (car e) "")

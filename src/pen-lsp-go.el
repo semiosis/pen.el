@@ -23,7 +23,7 @@
                   (lsp-stdio-connection 'lsp-go--server-command)
                   :major-modes '(go-mode go-ts-mode)
                   :server-id 'go
-                  :initialized-fn (λ (workspace)
+                  :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        `(:go ,lsp-go--config-options))))))

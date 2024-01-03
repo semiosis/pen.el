@@ -79,8 +79,8 @@ display values."
   (interactive)
   (with-helm-alive-p
     (helm-run-after-exit
-     (λ (cands)
-       (pen-tvipe (mapconcat (λ (c)
+     (lambda (cands)
+       (pen-tvipe (mapconcat (lambda (c)
                               (format "%s" c))
                             cands "\n")))
      (helm-marked-candidates))))
@@ -89,7 +89,7 @@ display values."
   ""
   `(s-join "\n"
            (mapcar
-            (λ (e)
+            (lambda (e)
               (cond
                ((listp e)
                 (car e))
@@ -320,7 +320,7 @@ The completion method is determined by `completion-at-point-functions'."
        (unless (markerp start) (setq start (copy-marker start)))
        (let* ((completion-extra-properties plist)
               (completion-in-region-mode-predicate
-               (λ ()
+               (lambda ()
                  (let ((newstart (car-safe (funcall hookfun))))
                    (and newstart (= newstart start))))))
          (completion-in-region start end collection
@@ -379,7 +379,7 @@ The completion method is determined by `completion-at-point-functions'."
 ;;                            (not (display-graphic-p))))
 ;;          cfn-error
 ;;          (notify-error
-;;           (λ (&optional e)
+;;           (lambda (&optional e)
 ;;             (error
 ;;              "In `%s' source: `%s' %s %s"
 ;;              (assoc-default 'name source)
@@ -481,7 +481,7 @@ Call `helm' only with SOURCES and BUFFER as args."
              suggestions
              (list (cons (format "No completions. Search for '%s' on Google" helm-input)
                          helm-input))))))
-    (mapcar (λ (e) (if (stringp e)
+    (mapcar (lambda (e) (if (stringp e)
                             (if (string-match (unregexify helm-input) e)
                                 e
                               (concat helm-input " " e))
@@ -524,7 +524,7 @@ Call `helm' only with SOURCES and BUFFER as args."
 
 (defset helm-source-google-suggest
   (helm-build-sync-source "Google Suggest"
-    :candidates (λ ()
+    :candidates (lambda ()
                   (funcall helm-google-suggest-default-function))
     :action 'helm-google-suggest-actions
     :volatile t
@@ -560,7 +560,7 @@ Call `helm' only with SOURCES and BUFFER as args."
   (etv
    (concat
     "'"
-    (cdar (-filter (λ (s) (string-match "^DEL$" (car s)))
+    (cdar (-filter (lambda (s) (string-match "^DEL$" (car s)))
                    (let ((which-key-pps t)) (which-key--get-keymap-bindings helm-read-file-map)))))))
 
 (require 'helm-files)

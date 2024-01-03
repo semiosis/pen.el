@@ -117,12 +117,12 @@
   (interactive (list (read-string-hist "hostname: ")))
   (let* ((hnopen
           (mapcar
-           (λ (tp) (-drop 1 tp))
-           (-filter (λ (tp) (string-equal hostname (car tp)))
+           (lambda (tp) (-drop 1 tp))
+           (-filter (lambda (tp) (string-equal hostname (car tp)))
                     (pen-n-list-open-ports hostname t))))
          (openmap
           (mapcar
-           (λ (tp)
+           (lambda (tp)
              (cons (string-to-number (car tp))
                    (cdr tp)))
            hnopen))

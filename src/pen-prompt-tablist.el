@@ -34,7 +34,7 @@
          (parsed (pcsv-parse-buffer b))
          (header (if has-header
                      (first parsed)
-                   (mapcar (λ (s) "") (first parsed))))
+                   (mapcar (lambda (s) "") (first parsed))))
          (data (if has-header
                    (-drop 1 parsed)
                  parsed)))
@@ -47,16 +47,16 @@
                       (list2vec
                        (let* ((sizes
                                (or col-sizes
-                                   (mapcar (λ (e)
+                                   (mapcar (lambda (e)
                                              (max my-tablist-min-column-width (min 30 (length e))))
                                            header)))
-                              (trues (mapcar (λ (e) t)
+                              (trues (mapcar (lambda (e) t)
                                              header)))
                          (-zip header sizes trues))
                        )))
       (setq-local tabulated-list-sort-key (list (first header)))
 
-      (setq-local tabulated-list-entries (-map (λ (l) (list (first l) (list2vec l))) data))
+      (setq-local tabulated-list-entries (-map (lambda (l) (list (first l) (list2vec l))) data))
 
       (tabulated-list-mode)
 

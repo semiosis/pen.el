@@ -144,7 +144,7 @@ prompt additionally for EXTRA-AG-ARGS."
          (results (helm-google--search helm-pattern engine)))
 
     (let ((ret
-           (mapcar (λ (result)
+           (mapcar (lambda (result)
                      (let ((cite (plist-get result :cite)))
                        (cons
                         (concat

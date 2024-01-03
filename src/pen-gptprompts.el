@@ -11,7 +11,7 @@
 (defun company-suggest--wiktionary-candidates (callback prefix)
   "Return a list of Wiktionary suggestions matching PREFIX."
   (url-retrieve (format company-suggest-wiktionary-url (url-encode-url prefix))
-                (λ (status)
+                (lambda (status)
                   (when-let ((err (plist-get status :error)))
                     (error "Error retrieving: %s: %s" (url-encode-url prefix) err))
                   (when (re-search-forward "^$")

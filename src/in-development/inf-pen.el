@@ -272,7 +272,7 @@ Most of this is borrowed from python.el")
 ;;   )
 
 ;; (defun filter-unread (input)
-;;   (s-filter-lines (λ (s) (string-match-p "unread" s)) input))
+;;   (s-filter-lines (lambda (s) (string-match-p "unread" s)) input))
 
 ;; (defun inf-pen-recent-contacts-sh (&optional unread)
 ;;   (extract-name-from-recent-item (if unread
@@ -283,7 +283,7 @@ Most of this is borrowed from python.el")
 ;;   (interactive)
 ;;   (evipe (inf-pen-recent-contacts-sh unread)))
 
-;; (evipe (string-join (-filter (λ (s) (string-match-p "unread" s)) (split-string (inf-pen-recent-sh) "\n")) "\n"))
+;; (evipe (string-join (-filter (lambda (s) (string-match-p "unread" s)) (split-string (inf-pen-recent-sh) "\n")) "\n"))
 
 ;; (defun inf-pen-recent-sh ()
 ;;   (let ((sentout

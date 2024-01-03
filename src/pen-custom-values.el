@@ -12,7 +12,7 @@
  '(cider-auto-select-error-buffer nil)
  '(comint-buffer-maximum-size 20000)
  '(comint-completion-addsuffix t)
- '(comint-get-old-input (λ nil "") t)
+ '(comint-get-old-input (lambda nil "") t)
  '(comint-input-ignoredups t)
  '(comint-input-ring-size 5000)
  '(comint-move-point-for-output nil)

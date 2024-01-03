@@ -10,7 +10,7 @@
 
 ;; Lambda for inverting a predicate
 (defmacro lmv (pred)
-  `(λ (v) (not (,pred v))))
+  `(lambda (v) (not (,pred v))))
 
 ;; This is the only one it seems
 (defun toggle-pen-test ()
@@ -57,12 +57,12 @@
   (let* ((sel
           (fz
            (append
-            (mapcar (λ (script) (list (concat "script: " script) (str (toggle-script-current-status script)))) toggle-scripts)
-            (mapcar (λ (key) (list (concat "pen-rc: " key) (if (pen-rc-test key) "on" "off"))) toggle-pen-rc-keys)
-            ;; (mapcar (λ (func) (concat "func " (sym2str func))) toggle-functions)
-            (mapcar (λ (c) (list (concat "cmd: " (sym2str c)) "")) toggle-commands)
-            (mapcar (λ (sym) (list (concat "var: " (sym2str sym)) "")) toggle-values)
-            (mapcar (λ (mode) (list (concat "mode: " (sym2str mode)) "")) toggle-modes))
+            (mapcar (lambda (script) (list (concat "script: " script) (str (toggle-script-current-status script)))) toggle-scripts)
+            (mapcar (lambda (key) (list (concat "pen-rc: " key) (if (pen-rc-test key) "on" "off"))) toggle-pen-rc-keys)
+            ;; (mapcar (lambda (func) (concat "func " (sym2str func))) toggle-functions)
+            (mapcar (lambda (c) (list (concat "cmd: " (sym2str c)) "")) toggle-commands)
+            (mapcar (lambda (sym) (list (concat "var: " (sym2str sym)) "")) toggle-values)
+            (mapcar (lambda (mode) (list (concat "mode: " (sym2str mode)) "")) toggle-modes))
            nil nil "fz-toggle: "))
          (spl (s-split ": " sel))
          (type (car spl))
@@ -117,7 +117,7 @@
                                 'off-button)
                               'action
                               (eval
-                               `(λ (b)
+                               `(lambda (b)
                                   (if (eval ,c)
                                       (,c -1)
                                     (,c 1))
@@ -135,7 +135,7 @@
                                 'off-button)
                               'action
                               (eval
-                               `(λ (b)
+                               `(lambda (b)
                                   (call-interactively ',c)
                                   (if (,c)
                                       (button-put b 'type 'on-button)
@@ -150,7 +150,7 @@
                                 'off-button)
                               'action
                               (eval
-                               `(λ (b)
+                               `(lambda (b)
                                   (kill-local-variable ,v)
                                   (setq ,v (not ,v))
                                   (if ,v
@@ -166,7 +166,7 @@
                                 'off-button)
                               'action
                               (eval
-                               `(λ (b)
+                               `(lambda (b)
                                   (let* ((currentstatus (toggle-script ,s))
                                          (status (toggle-script ,s (if currentstatus
                                                                        "0"
@@ -184,7 +184,7 @@
                                 'off-button)
                               'action
                               (eval
-                               `(λ (b)
+                               `(lambda (b)
                                   (let* ((currentstatus (pen-rc-test ,r))
                                          (status (toggle-pen-rc ,r (if currentstatus
                                                                      "off"
@@ -213,10 +213,10 @@
   ;; getter setter
   ;; "script in path"
 
-  ;; (create-buttoncloud `(("yo" . (λ (b) (message "yo")))
-  ;;                       ("hi" . (λ (b) (flash)))
-  ;;                       ("hi1" . (λ (b) (beep)))
-  ;;                       ("toggle me" . (λ (b) (beep)
+  ;; (create-buttoncloud `(("yo" . (lambda (b) (message "yo")))
+  ;;                       ("hi" . (lambda (b) (flash)))
+  ;;                       ("hi1" . (lambda (b) (beep)))
+  ;;                       ("toggle me" . (lambda (b) (beep)
   ;;                                        (let ((bt (button-get b 'type)))
   ;;                                          (if (eq bt 'on-button)
   ;;                                              (button-put b 'type 'off-button)
@@ -224,7 +224,7 @@
   ;;                       ;; ( "toggle me 2" . (deftogglebuttonl
   ;;                       ;;                     (message "enabled")
   ;;                       ;;                     (message "disabled")))
-  ;;                       ("hi2" . (λ (b) (pen-sn "tmux run -b \"a beep\"")))
+  ;;                       ("hi2" . (lambda (b) (pen-sn "tmux run -b \"a beep\"")))
   ;;                       ;; ("hi3" . flash)
   ;;                       ;; ("hi4" . flash)
   ;;                       )

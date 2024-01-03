@@ -58,7 +58,7 @@
     (let ((bs (buffer-string)))
       (async-pf "pf-evaluate-entire-terminal-to-get-a-new-terminal/1"
                 (eval
-                 `(λ (result)
+                 `(lambda (result)
                     (with-current-buffer ,buf
                       (if (and (string-equal (buffer-string) ,bs)
                                (not (string-equal (buffer-string) result))

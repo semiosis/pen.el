@@ -41,7 +41,7 @@ DEFAULT is the coding system to use by default in the query."
       ;; buffer is displayed.
       (when (and unsafe (not (stringp from)))
 	      (pop-to-buffer bufname)
-	      (goto-char (apply #'min (mapcar (λ (x) (or (car (cadr x)) (point-max)))
+	      (goto-char (apply #'min (mapcar (lambda (x) (or (car (cadr x)) (point-max)))
 				                                unsafe))))
       ;; Then ask users to select one from CODINGS while showing
       ;; the reason why none of the defaults are not used.

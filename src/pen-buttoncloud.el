@@ -67,7 +67,7 @@
                (insert-button (car bt)
                               ;; 'type
                               ;; 'glossary-button
-                              'action (eval `(λ (b)
+                              'action (eval `(lambda (b)
                                                ;; Quit before or after?
                                                (quit-window) (funcall ,(cdr bt) b))))
              (insert-button (car bt)
@@ -81,8 +81,8 @@
     (if prompt (call-interactively 'forward-button))))
 
 (defmacro if-bc-yn (ify &optional ifn prompt)
-  `(create-buttoncloud '(("Yes" . (λ (b) (interactive) (quit-window) ,ify))
-                         ("No" . (λ (b) (interactive) (quit-window) ,ifn)))
+  `(create-buttoncloud '(("Yes" . (lambda (b) (interactive) (quit-window) ,ify))
+                         ("No" . (lambda (b) (interactive) (quit-window) ,ifn)))
                        ,prompt))
 
 (defun test-cb-yn ()
@@ -99,7 +99,7 @@
 ;; It could be a variable or function invocation
 ;; (defmacro deftogglebuttonl (determiner enablecode disablecode)
 ;;   `(list
-;;     (λ (b)
+;;     (lambda (b)
 ;;       (let ((bt (button-get b 'type)))
 ;;         (if (eq bt 'on-button)
 ;;             (progn
@@ -144,7 +144,7 @@
 ;; (defmacro make-toggle-button-value (&rest body)
 ;;   `(progn (,@body) nil))
 
-;; TODO Create lambdas for the timers. The state is provided in the form of literals within the λ
+;; TODO Create lambdas for the timers. The state is provided in the form of literals within the lambda
 
 
 ;; (deftogglebuttonl

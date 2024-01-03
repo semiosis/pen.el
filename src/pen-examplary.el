@@ -80,7 +80,7 @@ The last element in the list is the output/return value"
     ;; If gen is a shell script, convert it to an elisp function
     (if (stringp gen)
         (setq gen (eval
-                   `(λ (initial n)
+                   `(lambda (initial n)
                       (pen-str2list
                        (pen-snc
                         (concat
@@ -91,7 +91,7 @@ The last element in the list is the output/return value"
     ;; If gen is a shell pipeline string, convert it to an elisp function
     (if (stringp filter)
         (setq filter (eval
-                      `(λ (in)
+                      `(lambda (in)
                          (pen-snc ,filter in)))))
 
     ;; Generate examples if none
@@ -141,7 +141,7 @@ The last element in the list is the output/return value"
             task "\n\n"
             (list2str
              (mapcar
-              (λ (ex)
+              (lambda (ex)
                 (list2str (list (concat "Input:" (pen-onelineify (car ex)))
                                 (concat "Output:" (pen-onelineify (cadr ex))))))
               examples))

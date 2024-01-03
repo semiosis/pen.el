@@ -118,12 +118,12 @@
 
 (comment
  (defset bible-strongs-always-show-code-tuples
-   (mapcar (λ (e) (list e (bible-term-get-word e)))
+   (mapcar (lambda (e) (list e (bible-term-get-word e)))
            bible-strongs-always-show-codelist)))
 
 (defset bible-strongs-always-show-xmllist
   (mapcar
-   (λ (e)
+   (lambda (e)
      (concat "strong:" (str e)))
    bible-strongs-always-show-codelist))
 
@@ -1607,11 +1607,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (bible-term-hebrew (replace-regexp-in-string "[a-z]+" "" (thing-at-point 'word t))))
 
 (define-key bible-mode-greek-keymap (kbd "RET") 'bible-term-greek-at-point)
-(define-key bible-mode-lemma-keymap (kbd "RET") (λ ()(interactive)))
+(define-key bible-mode-lemma-keymap (kbd "RET") (lambda ()(interactive)))
 (define-key bible-mode-hebrew-keymap (kbd "RET") 'bible-term-hebrew-at-point)
 
 (define-key bible-mode-greek-keymap (kbd "<mouse-1>") 'bible-term-greek-at-point)
-(define-key bible-mode-lemma-keymap (kbd "<mouse-1>") (λ ()(interactive)))
+(define-key bible-mode-lemma-keymap (kbd "<mouse-1>") (lambda ()(interactive)))
 (define-key bible-mode-hebrew-keymap (kbd "<mouse-1>") 'bible-term-hebrew-at-point)
 
 (defun bible-open-default ()

@@ -7,12 +7,12 @@
    (defun list-colors-print (list &optional callback)
      (let ((callback-fn
             (if callback
-                `(λ (button)
+                `(lambda (button)
                    (funcall ,callback (button-get button 'color-name))))))
        (dolist (color list)
          (if (consp color)
              (if (cdr color)
-                 (setq color (sort color (λ (a b)
+                 (setq color (sort color (lambda (a b)
                                            (string< (downcase a)
                                                     (downcase b))))))
            (setq color (list color)))
@@ -34,7 +34,7 @@
            (insert " ")
            (insert (propertize
                     (apply 'format "#%02x%02x%02x"
-                           (mapcar (λ (c) (ash c -8))
+                           (mapcar (lambda (c) (ash c -8))
                                    color-values))
                     'mouse-face 'highlight
                     'help-echo

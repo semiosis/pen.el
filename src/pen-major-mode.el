@@ -70,7 +70,7 @@
 
   (let ((keystr (format "%s" (key-description key))))
     (if (not def)
-        (setq def (eval `(λ () (interactive)
+        (setq def (eval `(lambda () (interactive)
                            (message ,(concat keystr " not defined"))
                            (edit-var-elisp 'custom-defined-keys)))))
 
@@ -111,7 +111,7 @@
   (interactive "P")
 
   (dolist (e (mapcar
-              (λ (ee)
+              (lambda (ee)
                 (append (-drop-last 1 ee) (list nil)))
               custom-defined-keys))
     (eval e))

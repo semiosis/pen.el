@@ -230,7 +230,7 @@
                                  (-filter 'f-exists-p)
                                  (mapcar 'e/cat)
                                  (mapcar
-                                  (λ (r)
+                                  (lambda (r)
                                     (if final-split-patterns
                                         (cl-loop
                                          for stpat in final-split-patterns collect
@@ -238,14 +238,14 @@
                                       (list r)))))))
                              (processed-results
                               (->> processed-results
-                                (mapcar (λ (r)
+                                (mapcar (lambda (r)
                                           (cl-loop
                                            for stsq in final-stop-sequences do
                                            (let ((matchpos (pen-string-search (regexp-quote stsq) r)))
                                              (if matchpos
                                                  (setq r (s-truncate matchpos r "")))))
                                           r))
-                                (mapcar (λ (r)
+                                (mapcar (lambda (r)
                                           (cl-loop
                                            for stpat in final-stop-patterns do
                                            (let ((matchpos (re-match-p stpat r)))
@@ -256,7 +256,7 @@
                                 ;; TODO in iλ? I need an imaginary map function which performs the multiplex
                                 ;; I should add this capability manually.
                                 ;; Or do I want an =icompose=?
-                                (mapcar (λ (r) (if (and final-postprocessor (sor final-postprocessor))
+                                (mapcar (lambda (r) (if (and final-postprocessor (sor final-postprocessor))
                                                         (if (string-match "^pf-" final-postprocessor)
                                                             (eval `(car (pen-one (apply (str2sym ,final-postprocessor) (list ,r)))))
                                                           (pen-sn (concat
@@ -265,7 +265,7 @@
                                                                    final-postprocessor)
                                                                   r))
                                                       r)))
-                                (mapcar (λ (r) (if (or
+                                (mapcar (lambda (r) (if (or
                                                          (and
                                                           (or is-interactive
                                                               (and (variable-p 'prettify)
@@ -277,17 +277,17 @@
                                                         (pen-sn ,prettifier r)
                                                       r)))
 
-                                (mapcar (λ (r) (if (or (not ,no-trim-start)
+                                (mapcar (lambda (r) (if (or (not ,no-trim-start)
                                                             ;; (sor final-inject-gen-start)
                                                             )
                                                         (s-trim-left r) r)))
-                                (mapcar (λ (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
+                                (mapcar (lambda (r) (if (not ,no-trim-end) (s-trim-right r) r)))))
 
                              (processed-results
                               (-flatten
                                (->> processed-results
                                  (mapcar
-                                  (λ (r)
+                                  (lambda (r)
                                     (if final-end-split-patterns
                                         (cl-loop
                                          for stpat in final-end-split-patterns collect
@@ -297,7 +297,7 @@
                              (processed-results
                               (->> processed-results
                                 (-filter
-                                 (λ (r)
+                                 (lambda (r)
                                    (or
                                     final-engine-whitespace-support
                                     (not (sor trailing-whitespace))
@@ -306,7 +306,7 @@
                              (processed-results
                               (->> processed-results
                                 (-filter
-                                 (λ (r)
+                                 (lambda (r)
                                    (if
                                        (not final-engine-whitespace-support)
                                        (concat trailing-whitespace r)
@@ -314,7 +314,7 @@
 
                              ;; (processed-results
                              ;;  (mapcar
-                             ;;   (λ (r)
+                             ;;   (lambda (r)
                              ;;     (if (and (not final-engine-whitespace-support)
                              ;;              (sor trailing-whitespace))
                              ;;         (s-remove-starting-specified-whitespace r trailing-whitespace)
@@ -325,7 +325,7 @@
                              (processed-results
                               (->> processed-results
                                 (-filter
-                                 (λ (r)
+                                 (lambda (r)
                                    (or
                                     (not final-validator)
                                     ;; Theoretically, both a shell script and elisp should have access to prompt-length and result-length
@@ -481,7 +481,7 @@
                ;; If this is broken then stuff it
                (ignore-errors
                  (mapconcat
-                  (λ (s) (concat "<" s ">"))
+                  (lambda (s) (concat "<" s ">"))
                   (-filter
                    'identity
                    (pen-vector2list final-flags))
@@ -658,7 +658,7 @@
 
           (final-preprocessors
            (if final-preprocessors
-               (mapcar (λ (pp) (pen-expand-template-keyvals pp final-pipelines nil final-pipelines)) final-preprocessors)
+               (mapcar (lambda (pp) (pen-expand-template-keyvals pp final-pipelines nil final-pipelines)) final-preprocessors)
              final-preprocessors))
 
           (final-subprompts-al
@@ -818,7 +818,7 @@
           ;; The following needs
           (parameter-slug
            (s-join "."
-                   (mapcar (λ (kv)
+                   (mapcar (lambda (kv)
                              (let* ((k (car kv))
                                     (v (cdr kv))
                                     (kslug (slugify (s-left 10 k)))
@@ -1341,7 +1341,7 @@
 
           (defs-and-vals-alist
             ;; Filter out anything with a nil key
-            (-filter (λ (e) (car e)) defs-and-vals-alist))
+            (-filter (lambda (e) (car e)) defs-and-vals-alist))
 
           ;; This must come after the initial template expand.
           ;; Because dni-let will try to expand <...> and evaluate remaining templates.
@@ -1449,7 +1449,7 @@
           ;; Expressions may be used inside various prompt parameters, such as max-tokens
           (final-expressions
            (if final-expressions
-               (mapcar (λ (atp)
+               (mapcar (lambda (atp)
                          (let ((k (car atp))
                                (v (cdr atp)))
                            (cons k (pen-expand-template-keyvals v final-pipelines))))
@@ -1752,14 +1752,14 @@
           (results
            (if suffix-at-pos
                (mapcar
-                (λ (s) (s-chop-suffix final-suffix s))
+                (lambda (s) (s-chop-suffix final-suffix s))
                 results)
              results))
 
           (results
            (if final-include-prompt
                (mapcar
-                (λ (s) (concat final-prompt s))
+                (lambda (s) (concat final-prompt s))
                 results)
              results))
 
@@ -1767,7 +1767,7 @@
           (results (if (and (not final-no-gen)
                             (sor final-postpostprocessor))
                        (mapcar
-                        (λ (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
+                        (lambda (r) (if (and final-postpostprocessor (sor final-postpostprocessor))
                                         (pen-sn (concat
                                                  (sh-construct-envs (pen-alist-to-list `(("FINAL_PROMPT" . ,final-prompt))))
                                                  " "

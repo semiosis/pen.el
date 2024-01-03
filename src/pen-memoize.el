@@ -123,7 +123,7 @@ care."
           (table (make-or-load-hash-table tablename '(:test equal)))
           (timeouts (make-or-load-hash-table timeoutsname '(:test equal))))
      (eval
-      `(λ (&rest args)
+      `(lambda (&rest args)
          (let ((value (gethash args ,table)))
            (unwind-protect
                ;; (or value (puthash args (apply ,func args) ,table))
@@ -157,7 +157,7 @@ care."
                  (puthash args
                           (run-at-time timeout-to-use nil
                                        (eval
-                                        `(λ ()
+                                        `(lambda ()
                                            (remhash ,args ,,table)
                                            ;; It would probably be better to alert and ignore
                                            n ;; (try (remhash args ,table)
@@ -225,7 +225,7 @@ care."
          (table (make-or-load-hash-table tablename '(:test equal)))
          (timeouts (make-or-load-hash-table timeoutsname '(:test equal))))
     (eval
-     `(λ (&rest args)
+     `(lambda (&rest args)
         (let ((value (gethash args ,table)))
           (unwind-protect
               ;; (or value (puthash args (apply ,func args) ,table))
@@ -257,7 +257,7 @@ care."
               (when timeout-to-use
                 (puthash args
                          (run-at-time timeout-to-use nil
-                                      (λ ()
+                                      (lambda ()
                                         ;; It would probably be better to alert and ignore
                                         (try (remhash args ,table)
                                              ;; (message ,(concat "timer for memoized " func_slug " failed"))

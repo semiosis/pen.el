@@ -300,7 +300,7 @@ Modifies the match data; use `save-match-data' if necessary.
          (s-parts   ())
          has-val-b  has-val-e)
     (unless test
-      (setq test  (if val #'eq (λ (actual-prop-val _ignore) actual-prop-val))))
+      (setq test  (if val #'eq (lambda (actual-prop-val _ignore) actual-prop-val))))
     (while (and (< start s-len)
                 (setq this-end  (next-single-char-property-change start prop string)))
       (setq this-beg   start)
@@ -382,7 +382,7 @@ FLIP gives `*-propertied', and nil gives `*-unpropertied'."
   (unless (require 'subr+ nil t)        ; `split-string-by-property'
     (error "This function requires library `subr+.el'"))
   (when (> start end) (setq start (prog1 end (setq end start))))
-  (let* ((filter-buffer-substring-function   (λ (beg end _delete)
+  (let* ((filter-buffer-substring-function   (lambda (beg end _delete)
                                                (let* ((strg   (buffer-substring beg end))
                                                       (parts  (split-string-by-property
                                                                strg `(,property nil) 'OMIT-NULLS
@@ -392,7 +392,7 @@ FLIP gives `*-propertied', and nil gives `*-unpropertied'."
                                                  (set-text-properties 0 (length strg) () strg)
                                                  strg)))
          ;; Older Emacs versions use `filter-buffer-substring-functions'.
-         (filter-buffer-substring-functions  (list (λ (fun beg end del)
+         (filter-buffer-substring-functions  (list (lambda (fun beg end del)
                                                      (funcall filter-buffer-substring-function
                                                               beg end del)))))
     (filter-buffer-substring start end)))

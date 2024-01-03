@@ -16,7 +16,7 @@
   "thin-client mode toggle"
   :type 'boolean
   :group 'pen
-  :initialize (λ(_sym _exp)
+  :initialize (lambda(_sym _exp)
                 (custom-initialize-default _sym nil)))
 (defalias 'ilambda-thin 'iλ-thin)
 
@@ -190,7 +190,7 @@
 (defalias 'ifun 'idefun)
 
 (cl-defmacro ilambda (&optional args task-or-code more-code &key name-sym)
-  "Define an imaginary λ (iλ)"
+  "Define an imaginary lambda (iλ)"
   (let* ((task)
          (code '()))
 
@@ -236,7 +236,7 @@
   (let* ((slug (replace-regexp-in-string "-$" "" (pen-slugify-basic (eval task))))
          (fsym (or name-sym
                    (intern slug))))
-    `(λ ,args
+    `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
@@ -251,7 +251,7 @@
 (defmacro ilambda/task-code (args task code &optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
-    `(λ ,args
+    `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
@@ -266,7 +266,7 @@
 (defmacro ilambda/name (&optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
-    `(λ (&rest body)
+    `(lambda (&rest body)
        (eval
         ;; imagined by an LM
         `(ieval/m
@@ -278,7 +278,7 @@
 (defmacro ilambda/name-args (name-sym args)
   (let ((fsym (or name-sym
                   'main)))
-    `(λ ,args
+    `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
@@ -289,7 +289,7 @@
 (defmacro ilambda/code (args code &optional name-sym)
   (let ((fsym (or name-sym
                   'main)))
-    `(λ ,args
+    `(lambda ,args
        (eval
         ;; imagined by an LM
         `(ieval/m
@@ -303,8 +303,8 @@
   (interactive)
   (pen-etv
    (mapcar
-    ;; wrapped up in a λ
-    (λ (x)
+    ;; wrapped up in a lambda
+    (lambda (x)
       (eval
        ;; imagined by an LM
        `(ieval/m
@@ -404,20 +404,20 @@
 (defun test-itest-2 ()
   (interactive)
   (pen-etv
-   (itest/m (λ (l) (= 4 (length l)))
+   (itest/m (lambda (l) (= 4 (length l)))
             '(a b c d))))
 
 ;; Interestingly, these tests do not work very well
 ;; 𝑖λ seems only suited for code when it comes to elisp
-(defun test-itest-3 () (interactive) (pen-etv (itest/m (λ (thing) (= "Charles Lutwidge Dodgson" thing)) "Lewis Carroll")))
-(defun test-itest-4 () (interactive) (pen-etv (itest/m (λ (thing) (= "J. R. R. Tolkien" thing)) "Lewis Carroll")))
+(defun test-itest-3 () (interactive) (pen-etv (itest/m (lambda (thing) (= "Charles Lutwidge Dodgson" thing)) "Lewis Carroll")))
+(defun test-itest-4 () (interactive) (pen-etv (itest/m (lambda (thing) (= "J. R. R. Tolkien" thing)) "Lewis Carroll")))
 (defun test-itest-5 () (interactive) (pen-etv (itest/m 'is-jrr-tolkien-p "Lewis Carroll")))
 (defun test-itest-6 () (interactive) (pen-etv (itest/m 'is-jrr-tolkien-p "J. R. R. Tolkien")))
 
 (defun test-itest-4 ()
   (interactive)
   (pen-etv
-   (itest/m (λ (thing)
+   (itest/m (lambda (thing)
               (= "An Egyptian king who ruled during the First Dynasty"
                  thing))
             "Semerkhet")))
@@ -425,7 +425,7 @@
 (defun test-itest-4 ()
   (interactive)
   (pen-etv
-   (itest/m (λ (thing) (same-person "Moses" thing))
+   (itest/m (lambda (thing) (same-person "Moses" thing))
             "Joseph")))
 
 (defmacro iequal/m (predicate value)
@@ -467,7 +467,7 @@
 
  (im internet-is-connected-p ())
 
- ;; imacro λ for ilambda
+ ;; imacro lambda for ilambda
  (defmacro ilm (name &rest body)
    "
 example: (ilm internet-is-connected-p ())
@@ -476,7 +476,7 @@ example: (ilm internet-is-connected-p ())
       (eval (imacro ,@body) ,@body)))
 
  ;; Some alternative identifiers
- ;; I chose gamma because it's an upside-down λ
+ ;; I chose gamma because it's an upside-down lambda
  (defalias 'γ 'ilm)
  (defalias 'ilmacro 'ilm)
  (defalias 'imaginary-lambda-macro 'ilm)

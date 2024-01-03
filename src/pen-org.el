@@ -87,7 +87,7 @@ If FILEXT is provided, return files with extension FILEXT instead."
 
 (org-agenda-refresh)
 
-(add-hook 'org-mode-hook (λ () (modify-syntax-entry (string-to-char "\u25bc") "w"))) ; Down arrow for collapsed drawer.
+(add-hook 'org-mode-hook (lambda () (modify-syntax-entry (string-to-char "\u25bc") "w"))) ; Down arrow for collapsed drawer.
 
 ; Speed up org-mode
 ; Reduce the number of Org agenda files to avoid slowdowns due to hard drive accesses.
@@ -217,12 +217,12 @@ If FILEXT is provided, return files with extension FILEXT instead."
   ^^      _j_     ^^
 "
       ("x" exchange-point-and-mark "exchange point/mark")
-      ("l" (λ (arg)
+      ("l" (lambda (arg)
              (interactive "p")
              (when (eq 1 arg)
                (setq arg 2))
              (org-table-end-of-field arg)))
-      ("h" (λ (arg)
+      ("h" (lambda (arg)
              (interactive "p")
              (when (eq 1 arg)
                (setq arg 2))
@@ -440,7 +440,7 @@ With argument N not nil or 1, move forward N - 1 lines first."
 
 (defun pen-org-select-heading (name)
   (interactive (list (fz (pen-org-list-top-level-headings))))
-  (let* ((λ (-filter (λ (e) (string-equal name (car e))) (org-imenu-get-tree)))
+  (let* ((lambda (-filter (lambda (e) (string-equal name (car e))) (org-imenu-get-tree)))
          (sel (if (> 0 (length l))
                   ;; I need an fz that lets me pick by a different thing
                   ;; (fz l)
