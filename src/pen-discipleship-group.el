@@ -6,5 +6,8 @@
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/hear-journal")))
 
+(defun d-group-agenda ()
+  (interactive)
+  (org-link-open-from-string "[[brain:agenda/Church::Discipleship group <2023-12-29 Fri 12:00 +1w>]]"))
 
 (provide 'pen-discipleship-group)
