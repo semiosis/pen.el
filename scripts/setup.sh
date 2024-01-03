@@ -2096,3 +2096,6 @@ timedatectl set-timezone "Pacific/Auckland"
 e ia nano-agenda
 
 raco pkg update racket-langserver
+
+# Sendmail
+agi sendmail sma

@@ -65,7 +65,19 @@ esac; done
 # info "(m4) Define" | vs
 # /usr/bin/m4 --help
 
-if test "$istty" = 0; then
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists; then
+    "$bin" "$@"
+elif test "$istty" = 0; then
     builtins="$(pen-ci -otf -f -nd bash -c 'info "(m4) Macro index" | sed -n -e "/^\\* [^ ]\\+:./p" | sed "s/^\\* \\([^ ]\\+\\):.*/\\1/"')"
     in-pen nvc rl -f "$builtins" "$bin" "$@"
 else
