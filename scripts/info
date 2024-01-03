@@ -3,6 +3,9 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# TODO Make it so
+# v +/"m4) {" "$PENELD/scripts/container/man"
+
 sn="$(basename -- "$0")"
 
 . $PENEL_DIR/scripts/utils.sh
