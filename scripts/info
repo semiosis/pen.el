@@ -17,6 +17,18 @@ sn="$(basename -- "$0")"
 
 . $PENEL_DIR/scripts/utils.sh
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -q) {
+        # Query if a tut exists
+        query=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # agi info
 if ! in-pen-p; then
     if test "$has_stdout" = y; then
