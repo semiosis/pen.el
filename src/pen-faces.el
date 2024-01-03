@@ -1599,7 +1599,7 @@ Also see option `magit-blame-styles'."
   (interactive)
   (let ((block-face (face-at-point))
         (initial-point (point))))
-  
+
   (while (and (not (eobp)) (backward-char 1) (eq (face-at-point) block-face)))
   (while (and (not (eobp)) (forward-char 1) (eq (face-at-point) block-face)))
 
