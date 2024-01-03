@@ -5,6 +5,7 @@ export TTY
 
 # TODO Make it so the info script also has a query mode
 # v +/"m4) {" "$PENELD/scripts/container/man"
+# How to do that?
 # j:Info-find-file
 
 sn="$(basename -- "$0")"
