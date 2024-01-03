@@ -1601,15 +1601,18 @@ Also see option `magit-blame-styles'."
         (initial-point (point))))
 
   (while (and (not (eobp)) (backward-char 1) (eq (face-at-point) block-face)))
+  (forward-char 1)
   (mark)
 
   (goto-char initial-point)
   (while (and (not (eobp)) (forward-char 1) (eq (face-at-point) block-face)))
+  (backward-char 1)
 
-  (when (eq (face-at-point) 'font-lock-keyword-face)
-    (set-mark (point))
-    (while (eq (face-at-point) 'font-lock-keyword-face)
-      (forward-char 1))))
+  ;; (when (eq (face-at-point) 'font-lock-keyword-face)
+  ;;   (set-mark (point))
+  ;;   (while (eq (face-at-point) 'font-lock-keyword-face)
+  ;;     (forward-char 1)))
+  )
 
 
 (provide 'pen-faces)
