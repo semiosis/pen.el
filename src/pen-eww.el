@@ -25,6 +25,38 @@
       (advice-add 'eww-display-html :around
                   'eww-display-html--override-shr-external-rendering-functions))))
 
+(setq shr-tag-pre-highlight-lang-modes
+      ;; '(("ocaml" . tuareg)
+      ;;   ("elisp" . emacs-lisp)
+      ;;   ("ditaa" . artist)
+      ;;   ("asymptote" . asy)
+      ;;   ("dot" . fundamental)
+      ;;   ("sqlite" . sql)
+      ;;   ("calc" . fundamental)
+      ;;   ("C" . c)
+      ;;   ("cpp" . c++)
+      ;;   ("C++" . c++)
+      ;;   ("screen" . shell-script)
+      ;;   ("shell" . sh)
+      ;;   ("bash" . sh)
+      ;;   ("emacslisp" . emacs-lisp)
+      ;;   ("el" . emacs-lisp))
+      '(("ocaml" . artist)
+        ("elisp" . artist)
+        ("ditaa" . artist)
+        ("asymptote" . artist)
+        ("dot" . artist)
+        ("sqlite" . artist)
+        ("calc" . artist)
+        ("C" . artist)
+        ("cpp" . artist)
+        ("C++" . artist)
+        ("screen" . artist)
+        ("shell" . artist)
+        ("bash" . artist)
+        ("emacslisp" . artist)
+        ("el" . artist)))
+
 (require 'pen-postrender-sanitize)
 
 ;; Handler j:pen-advice-handle-url
