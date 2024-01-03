@@ -1284,6 +1284,9 @@ Also see option `magit-blame-styles'."
 
                              font-lock-keyword-face
 
+                             company-tooltip-selection
+                             company-tooltip-common-selection
+
                              notmuch-message-summary-face
                              message-header-subject
                              message-header-to
