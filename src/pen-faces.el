@@ -1591,7 +1591,11 @@ Also see option `magit-blame-styles'."
 
 
 (defun select-font-lock-face-region ()
+  "Make something to select consecutively syntax-highlighted text
+- go backwards until the face changes
+- go forwards until the face changes"
   (interactive)
+  (eq (face-at-point) 'info-code-face)
   (while (and (not (eobp)) (forward-char 1) (not (eq (face-at-point) 'font-lock-keyword-face))))
   (while (and (not (eobp)) (forward-char 1) (not (eq (face-at-point) 'font-lock-keyword-face))))
   (when (eq (face-at-point) 'font-lock-keyword-face)
