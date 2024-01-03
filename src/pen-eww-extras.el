@@ -2,6 +2,8 @@
 
 (require 'pen-postrender-sanitize)
 
+;; Handler j:pen-advice-handle-url
+
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/eww.el.gz
 ;; e:$HOME/local/emacs28/share/emacs/28.0.50/lisp/net/shr.el.gz
 
