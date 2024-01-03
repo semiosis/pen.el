@@ -1602,11 +1602,11 @@ Also see option `magit-blame-styles'."
    (face-at-point)))
 
 (defun go-to-start-of-face (&optional face)
-  (setq face (or face (face-at-point))
-        (while (and
-                (not (bobp))
-                (backward-char 1)
-                (eq (pen-face-at-point) block-face)))))
+  (setq face (or face (face-at-point)))
+  (while (and
+          (not (bobp))
+          (backward-char 1)
+          (eq (face-at-point) face))))
 
 (defun select-font-lock-face-region ()
   "Make something to select consecutively syntax-highlighted text
