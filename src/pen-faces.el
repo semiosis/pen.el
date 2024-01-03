@@ -89,6 +89,32 @@ argument, prompt for a regular expression using `read-regexp'."
                         f)))
                   (sort (face-list) #'string-lessp)))))
 
+(defmacro without-hl-line (&rest body)
+  ""
+  `(let ((inhibit-quit t)
+         (hlm (ignore-errors hl-line-mode))
+         (ghlm (ignore-errors global-hl-line-mode))
+         (hls (ignore-errors auto-highlight-symbol-mode)))
+     (if hlm
+         (ignore-errors
+           (hl-line-mode -1)))
+     (if ghlm
+         (ignore-errors
+           (global-hl-line-mode -1)))
+     (if hls
+         (ignore-errors
+           (auto-highlight-symbol-mode -1)))
+
+     (let ((ret ,@body))
+
+       (if hlm
+           (ignore-errors (hl-line-mode t)))
+       (if ghlm
+           (ignore-errors (global-hl-line-mode t)))
+       (if hls
+           (ignore-errors (auto-highlight-symbol-mode t)))
+       ret)))
+
 ;; https://stackoverflow.com/questions/884498/how-do-i-intercept-ctrl-g-in-emacs
 (defun pen-customize-face (face)
   (interactive
