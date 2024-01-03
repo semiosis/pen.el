@@ -1625,7 +1625,6 @@ Also see option `magit-blame-styles'."
          (initial-point (point)))
 
      (go-to-start-of-face block-face)
-
      (forward-char 1)
      (mark)
 
