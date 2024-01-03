@@ -20,7 +20,7 @@ esac; done
 
 runtut() {
     if test "$query" = "y"; then
-        echo "Tutorial for $@ exists." 1>&2
+        echo "Tutorial for $@ exists." | hls blue 1>&2
         :
         exit "$?"
     else
