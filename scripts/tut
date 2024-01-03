@@ -20,10 +20,20 @@ esac; done
 
 opt="$@"
 
-notut() {
+hastut() {
     if test "$query" = "y"; then
         echo "Tutorial for ${opt} exists." | hls blue 1>&2
         :
+        exit "$?"
+    else
+        "$@"
+        exit "$?"
+    fi
+}
+
+notut() {
+    if test "$query" = "y"; then
+        false
         exit "$?"
     else
         "$@"
