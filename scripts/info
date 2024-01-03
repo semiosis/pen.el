@@ -8,6 +8,11 @@ export TTY
 # How to do that?
 # j:Info-find-file
 
+info_exists() {
+    content="$(/usr/bin/info -o /dev/stdout "$@")"
+    test -n "$content"
+}
+
 sn="$(basename -- "$0")"
 
 . $PENEL_DIR/scripts/utils.sh
