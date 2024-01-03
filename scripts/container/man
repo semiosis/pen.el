@@ -54,6 +54,13 @@ fi
 if test "$#" -gt 0; then
     last_arg="${@: -1}"
 
+    if tut -q "$last_arg"; then
+        if yn "tut $last_arg? (y) or man $last_arg? (n)"; then
+            tut "$last_arg"
+            exit "$?"
+        fi
+    fi
+
     case "$last_arg" in
         pipexec) {
             # /usr/bin/man -l doc/man/pipexec.1 | pen-strip-ansi | v
