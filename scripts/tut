@@ -18,9 +18,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+opt="$@"
+
 runtut() {
     if test "$query" = "y"; then
-        echo "Tutorial for $@ exists." | hls blue 1>&2
+        echo "Tutorial for ${opt} exists." | hls blue 1>&2
         :
         exit "$?"
     else
@@ -29,7 +31,6 @@ runtut() {
     fi
 }
 
-opt="$@"
 case "$opt" in
     m4) {
         runtut eww "https://mbreen.com/m4.html"
