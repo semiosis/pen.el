@@ -32,9 +32,11 @@ esac; done
 if test "$query" = "y"; then
     info_exists "$@"
     ret="$?"
-    if test "$ret" = 0; then
-        echo "Info for ${opt} exists." | hls blue 1>&2
-    fi
+
+    # if test "$ret" = 0; then
+    #     echo "Info for ${opt} exists." | hls blue 1>&2
+    # fi
+
     exit "$ret"
 fi
 
