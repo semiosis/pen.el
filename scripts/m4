@@ -92,5 +92,5 @@ elif test "$istty" = 0; then
         in-pen nvc rl -f "$builtins" "$bin" "$@"
     fi
 else
-    "$bin" "$@"
+    "$bin" "$@" | pavs
 fi
