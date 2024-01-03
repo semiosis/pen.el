@@ -21,10 +21,11 @@ esac; done
 runtut() {
     if test "$query" = "y"; then
         :
+        exit "$?"
     else
         "$@"
+        exit "$?"
     fi
-    exit "$?"
 }
 
 opt="$@"
