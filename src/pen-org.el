@@ -576,6 +576,8 @@ This includes angle, plain, and bracket links."
 ;; I'm not a fan of polymode. It also breaks <pre> blocks in eww
 (require 'poly-org)
 (remove-from-list 'auto-mode-alist '("\\.org\\'" . poly-org-mode))
+;; But something elsewhere seems to be loading it.
+;; Therefore I have to manually disable it after it has loaded.
 
 ;; This makes the org-man message go away
 (advice-add 'org-link-minor-mode :around #'shut-up-around-advice)
