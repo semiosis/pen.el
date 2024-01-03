@@ -5,3 +5,6 @@
 (defun d-group-hear-journal ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/hear-journal")))
+
+
+(provide 'pen-discipleship-group)
