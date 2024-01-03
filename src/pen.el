@@ -30,7 +30,9 @@
 (defun around-advice-disable-nil (proc &rest args)
   nil)
 
-(defalias 'lambda 'lambda)
+;; Strangely, even this alias caused lots of problems
+;; perhaps
+(defalias 'λ 'lambda)
 (defalias 'y 'lambda)
 
 (defmacro lm (&rest body)
