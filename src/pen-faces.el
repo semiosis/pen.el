@@ -1610,6 +1610,7 @@ Also see option `magit-blame-styles'."
 
 (defun go-to-end-of-face (&optional face)
   (setq face (or face (face-at-point)))
+  ;; (next-single-property-change )
   (while (and
           (not (eobp))
           (forward-char 1)
