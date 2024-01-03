@@ -24,6 +24,7 @@ runtut() {
     else
         "$@"
     fi
+    exit "$?"
 }
 
 opt="$@"
