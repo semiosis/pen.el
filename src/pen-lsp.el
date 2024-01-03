@@ -49,7 +49,7 @@ argument ask the user to select which language server to start."
         (lsp--info "There are language server(%s) installation in progress.
 The server(s) will be started in the buffer when it has finished."
                    (-map #'lsp--client-server-id clients))
-        (seq-do (λ (client)
+        (seq-do (lambda (client)
                   (cl-pushnew (current-buffer) (lsp--client-buffers client)))
                 clients))
        ;; look for servers to install
@@ -72,7 +72,7 @@ The server(s) will be started in the buffer when it has finished."
         (lsp--warn "The following servers support current file but do not have automatic installation configuration: %s
 You may find the installation instructions at https://emacs-lsp.github.io/lsp-mode/page/languages.
 (If you have already installed the server check *lsp-log*)."
-                   (mapconcat (λ (client)
+                   (mapconcat (lambda (client)
                                 (symbol-name (lsp--client-server-id client)))
                               clients
                               " ")))
@@ -368,7 +368,7 @@ function signature)."
       (lsp:set-marked-string-value contents (clean-sideline (lsp:marked-string-value contents)))
       contents)
      ((vectorp contents)
-      (seq-find (λ (it) (and (lsp-marked-string? it)
+      (seq-find (lambda (it) (and (lsp-marked-string? it)
                              (lsp-get-renderer (lsp:marked-string-language it))))
                 contents))
      ((lsp-markup-content? contents)
@@ -532,7 +532,7 @@ We don't extract the string that `lps-line' is already displaying."
     nil
     (condition-case ()
         ;; Suppresses the error
-        (-some-> client lsp--client-new-connection (plist-get :test?) (λ (&rest a) (ignore-errors funcall ,@a)))
+        (-some-> client lsp--client-new-connection (plist-get :test?) (lambda (&rest a) (ignore-errors funcall ,@a)))
       ;; (-some-> client lsp--client-new-connection (plist-get :test?) funcall)
       (error nil)
       (args-out-of-range nil))))
@@ -561,7 +561,7 @@ We don't extract the string that `lps-line' is already displaying."
   (interactive (list (fz (lsp-list-all-servers))))
   (setq name (or name (fz (lsp-list-all-servers))))
   
-  (cdr (car (-filter (λ (sv) (string-equal (car sv) name))
+  (cdr (car (-filter (lambda (sv) (string-equal (car sv) name))
                      (--map (cons (funcall
                                    (-compose #'symbol-name #'lsp--client-server-id) it) it)
                             (or (->> lsp-clients
@@ -666,7 +666,7 @@ We don't extract the string that `lps-line' is already displaying."
 
 (lsp-register-client
  (make-lsp-client :new-connection (lsp-stdio-connection
-                                   (λ ()
+                                   (lambda ()
                                      `(,(or (executable-find (cl-first lsp-yaml-server-command))
                                             (lsp-package-path 'yaml-language-server))
                                        ,@(cl-rest lsp-yaml-server-command))))
@@ -674,11 +674,11 @@ We don't extract the string that `lps-line' is already displaying."
                                  gitlab-ci-mode)
                   :priority 0
                   :server-id 'yamlls
-                  :initialized-fn (λ (workspace)
+                  :initialized-fn (lambda (workspace)
                                     (with-lsp-workspace workspace
                                       (lsp--set-configuration
                                        (lsp-configuration-section "yaml"))))
-                  :download-server-fn (λ (_client callback error-callback _update?)
+                  :download-server-fn (lambda (_client callback error-callback _update?)
                                         (lsp-package-ensure 'yaml-language-server
                                                             callback error-callback))))
 
@@ -689,7 +689,7 @@ We don't extract the string that `lps-line' is already displaying."
     res))
 
 (defun lsp--create-default-error-handler-around-advice (proc &rest args)
-  (λ (e) nil))
+  (lambda (e) nil))
 (advice-add 'lsp--create-default-error-handler :around #'lsp--create-default-error-handler-around-advice)
 
 (defun lsp--error-string-around-advice (proc &rest args)
@@ -734,13 +734,13 @@ We don't extract the string that `lps-line' is already displaying."
                   "Code Actions"
                 :candidates actions
                 :candidate-transformer
-                (λ (candidates)
+                (lambda (candidates)
                   (-map
                    (-lambda ((candidate &as
                                         &CodeAction :title))
                      (list title :data candidate))
                    candidates))
-                :action '(("Execute code action" . (λ(candidate)
+                :action '(("Execute code action" . (lambda(candidate)
                                                      (lsp-execute-code-action (plist-get candidate :data))))))
               ;; :exec-when-only-one nil
               )))))
@@ -780,7 +780,7 @@ We don't extract the string that `lps-line' is already displaying."
 (defun pen-lsp-error-list (&optional path)
   (interactive (list (get-path)))
   (let ((l))
-    (maphash (λ (file diagnostic)
+    (maphash (lambda (file diagnostic)
                (if (string-equal path file)
                    (dolist (diag diagnostic)
                      (-let* (((&Diagnostic :message :severity? :source?
