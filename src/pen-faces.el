@@ -1597,6 +1597,10 @@ Also see option `magit-blame-styles'."
 ;; TODO Add this to context functions
 ;; (eq (face-at-point) 'info-code-face)
 
+(defun pen-face-at-point ()
+  (without-hl-line
+   (face-at-point)))
+
 (defun select-font-lock-face-region ()
   "Make something to select consecutively syntax-highlighted text
 - go backwards until the face changes
@@ -1609,19 +1613,14 @@ Also see option `magit-blame-styles'."
     (while (and
             (not (bobp))
             (backward-char 1)
-            (eq
-             (without-hl-line
-              (face-at-point))
-             block-face)))
+            (eq (pen-face-at-point) block-face)))
 
     (forward-char 1)
     (mark)
 
     (goto-char initial-point)
-    (while (and (not (eobp)) (forward-char 1) (eq
-                                               (without-hl-line
-                                                (face-at-point))
-                                               block-face)))
+    (while (and (not (eobp)) (forward-char 1)
+                (eq (pen-face-at-point) block-face)))
     (backward-char 1))
 
   ;; (when (eq (face-at-point) 'font-lock-keyword-face)
@@ -1629,6 +1628,5 @@ Also see option `magit-blame-styles'."
   ;;   (while (eq (face-at-point) 'font-lock-keyword-face)
   ;;     (forward-char 1)))
   )
-
 
 (provide 'pen-faces)
