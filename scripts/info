@@ -3,7 +3,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# TODO Make it so the info page
+# TODO Make it so the info page also has a query mode
 # v +/"m4) {" "$PENELD/scripts/container/man"
 
 sn="$(basename -- "$0")"
