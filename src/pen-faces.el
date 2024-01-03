@@ -118,41 +118,20 @@ argument, prompt for a regular expression using `read-regexp'."
 ;; https://stackoverflow.com/questions/884498/how-do-i-intercept-ctrl-g-in-emacs
 (defun pen-customize-face (face)
   (interactive
-   (let ((inhibit-quit t)
-         (hlm (ignore-errors hl-line-mode))
-         (ghlm (ignore-errors global-hl-line-mode))
-         (hls (ignore-errors auto-highlight-symbol-mode)))
-     (if hlm
-         (ignore-errors
-           (hl-line-mode -1)))
-     (if ghlm
-         (ignore-errors
-           (global-hl-line-mode -1)))
-     (if hls
-         (ignore-errors
-           (auto-highlight-symbol-mode -1)))
-
-     (let ((f))
-       ;; with-local-quit always returns nil
-       (unless (with-local-quit
-                 (setq f (str-or (fz (pen-list-faces)
-                                     (if (and
-                                          (face-at-point)
-                                          (yes-or-no-p "Face at point?"))
-                                         (symbol-name
-                                          (face-at-point)))
-                                     nil
-                                     "face: ")
-                                 nil)))
-         (progn
-           (setq quit-flag nil)))
-       (if hlm
-           (ignore-errors (hl-line-mode t)))
-       (if ghlm
-           (ignore-errors (global-hl-line-mode t)))
-       (if hls
-           (ignore-errors (auto-highlight-symbol-mode t)))
-       (list f))))
+   (without-hl-line
+    (list
+     (unless (with-local-quit
+               (setq f (str-or (fz (pen-list-faces)
+                                   (if (and
+                                        (face-at-point)
+                                        (yes-or-no-p "Face at point?"))
+                                       (symbol-name
+                                        (face-at-point)))
+                                   nil
+                                   "face: ")
+                               nil)))
+       (progn
+         (setq quit-flag nil))))))
 
   (if face
       (if (>= (prefix-numeric-value current-prefix-arg) 4)
