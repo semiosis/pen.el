@@ -35,6 +35,17 @@
 (defalias 'λ 'lambda)
 (defalias 'y 'lambda)
 
+;; Or, perhaps this will work
+
+(defmacro λ (&rest cdr)
+  (declare (doc-string 2) (indent defun)
+           (debug (&define lambda-list lambda-doc
+                           [&optional ("interactive" interactive)]
+                           def-body)))
+  ;; Note that this definition should not use backquotes; subr.el should not
+  ;; depend on backquote.el.
+  (list 'function (cons 'lambda cdr)))
+
 (defmacro lm (&rest body)
   "Interactive lambda with no arguments."
   `(lambda () (interactive) ,@body))
