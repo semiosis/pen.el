@@ -263,6 +263,7 @@
 
 (defset eww-mode-funcs '(eww-open-in-chrome
                          eww-dump-vim
+                         select-font-lock-face-region
                          w3m-open-this-file
                          elinks-open-this-file
                          elinks-dump-this-file
