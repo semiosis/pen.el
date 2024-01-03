@@ -20,7 +20,7 @@ esac; done
 
 opt="$@"
 
-runtut() {
+notut() {
     if test "$query" = "y"; then
         echo "Tutorial for ${opt} exists." | hls blue 1>&2
         :
@@ -33,12 +33,12 @@ runtut() {
 
 case "$opt" in
     m4) {
-        runtut eww "https://mbreen.com/m4.html"
+        hastut eww "https://mbreen.com/m4.html"
     }
     ;;
 
     *) {
-        runtut man "$@"
+        notut man "$@"
     }
     ;;
 esac
