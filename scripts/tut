@@ -5,8 +5,7 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-opt="$1"
-shift
+opt="$@"
 case "$opt" in
     m4) {
         eww "https://mbreen.com/m4.html"
