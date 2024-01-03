@@ -1608,6 +1608,13 @@ Also see option `magit-blame-styles'."
           (backward-char 1)
           (eq (face-at-point) face))))
 
+(defun go-to-end-of-face (&optional face)
+  (setq face (or face (face-at-point)))
+  (while (and
+          (not (eobp))
+          (forward-char 1)
+          (eq (face-at-point) face))))
+
 (defun select-font-lock-face-region ()
   "Make something to select consecutively syntax-highlighted text
 - go backwards until the face changes
@@ -1617,17 +1624,14 @@ Also see option `magit-blame-styles'."
    (let ((block-face (face-at-point))
          (initial-point (point)))
 
-     (while (and
-             (not (bobp))
-             (backward-char 1)
-             (eq (face-at-point) block-face)))
+     (go-to-start-of-face block-face)
 
      (forward-char 1)
      (mark)
 
      (goto-char initial-point)
-     (while (and (not (eobp)) (forward-char 1)
-                 (eq (face-at-point) block-face)))
+
+     (go-to-end-of-face block-face)
      (backward-char 1)))
 
   ;; (when (eq (face-at-point) 'font-lock-keyword-face)
