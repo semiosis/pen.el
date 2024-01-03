@@ -75,6 +75,11 @@ stdin_exists() {
     } &>/dev/null
 }
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+
 if stdin_exists; then
     "$bin" "$@" | pavs
 elif test "$istty" = 0; then
