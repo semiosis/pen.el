@@ -143,7 +143,7 @@
 (add-to-list 'auto-mode-alist '("\\.hy\\'" . hy-mode))
 (add-to-list 'auto-mode-alist '("\\.closhrc\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.fishrc\\'" . fish-mode))
-(add-to-list 'auto-mode-alist '("\\.gntrc\\'" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.gntrc\\|tigrc\\)\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.clisprc\\|\\.clojurerc\\)\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\(CONTRIBUTING\\|\\.md\\|\\.markdown\\|\\.Rmd\\)\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.clj\\|\\.clojurerc\\|\\.repl\\)\\'" . clojure-mode))
