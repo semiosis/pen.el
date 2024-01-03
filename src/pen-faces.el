@@ -1602,7 +1602,8 @@ Also see option `magit-blame-styles'."
 - go backwards until the face changes
 - go forwards until the face changes"
   (interactive)
-  (let ((block-face (face-at-point))
+  (let ((block-face (without-hl-line
+                     (face-at-point)))
         (initial-point (point)))
 
     (while (and (not (eobp)) (backward-char 1) (eq (face-at-point) block-face)))
