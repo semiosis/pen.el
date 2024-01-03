@@ -1613,6 +1613,7 @@ Also see option `magit-blame-styles'."
              (without-hl-line
               (face-at-point))
              block-face)))
+    
     (forward-char 1)
     (mark)
 
