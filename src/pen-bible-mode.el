@@ -44,7 +44,9 @@
                  (string :tag "Module abbreviation (e.g. \"KJV\")"))
   :group 'bible-mode)
 
-(setq default-bible-mode-book-module "RLT")
+(comment
+ (setq default-bible-mode-book-module "RLT"))
+(setq default-bible-mode-book-module "NASB")
 
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
