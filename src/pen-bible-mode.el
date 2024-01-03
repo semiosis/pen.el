@@ -1616,8 +1616,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-open-default ()
   (interactive)
-  (if
-      (selected-p)
+  (if (selected-p)
       (call-interactively-with-prefix-and-parameters 'bible-search-phrase
                                                      (prefix-numeric-value current-prefix-arg)
                                                      (pen-selection))
