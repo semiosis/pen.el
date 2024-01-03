@@ -1606,7 +1606,7 @@ Also see option `magit-blame-styles'."
                      (face-at-point)))
         (initial-point (point)))
 
-    (while (and (not (eobp)) (backward-char 1) (eq
+    (while (and (not (bobp)) (backward-char 1) (eq
                                                 (without-hl-line
                                                  (face-at-point))
                                                 block-face)))
