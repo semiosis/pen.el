@@ -1614,8 +1614,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-lemma-keymap (kbd "<mouse-1>") (λ ()(interactive)))
 (define-key bible-mode-hebrew-keymap (kbd "<mouse-1>") 'bible-term-hebrew-at-point)
 
-;; (define-key global-map (kbd "H-v") 'nasb)
-(define-key global-map (kbd "H-v") 'rlt)
+(define-key global-map (kbd "H-v") 'nasb)
+;; (define-key global-map (kbd "H-v") 'rlt)
 (define-key bible-mode-map (kbd "v") 'bible-mode-select-module)
 
 (defun pen-bible-set-margins ()
