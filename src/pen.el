@@ -33,7 +33,7 @@
 ;; Strangely, even these aliases caused lots of problems
 ;; perhaps if I want to use λ then I should change the emacs C code
 ;; (defalias 'λ 'lambda)
-(defalias 'y 'lambda)
+;; (defalias 'y 'lambda)
 
 ;; Or, perhaps this will work
 (defmacro λ (&rest cdr)
