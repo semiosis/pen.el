@@ -10,8 +10,20 @@
 ;; https://stackoverflow.com/q/11807128
 (setq max-lisp-eval-depth 10000)
 
-(setq shr-external-rendering-functions '((pre . eww-tag-pre)))
+;; (setq shr-external-rendering-functions '((pre . eww-tag-pre)))
+(setq shr-external-rendering-functions nil)
 (setq shr-use-colors nil)
+
+(use-package shr-tag-pre-highlight
+  :ensure t
+  :after shr
+  :config
+  (add-to-list 'shr-external-rendering-functions
+               '(pre . shr-tag-pre-highlight))
+  (when (version< emacs-version "26")
+    (with-eval-after-load 'eww
+      (advice-add 'eww-display-html :around
+                  'eww-display-html--override-shr-external-rendering-functions))))
 
 (require 'pen-postrender-sanitize)
 
