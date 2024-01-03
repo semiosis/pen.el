@@ -6,10 +6,24 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -q) {
+        # Query if a tut exists
+        query=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+runtut
+
 opt="$@"
 case "$opt" in
     m4) {
-        eww "https://mbreen.com/m4.html"
+        runtut eww "https://mbreen.com/m4.html"
     }
     ;;
 
