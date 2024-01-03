@@ -9,7 +9,7 @@
 ;; When running an imaginary web search, optionally say which ones are real
 
 (require 'eww)
-(require 'pen-eww-extras)
+(require 'pen-eww)
 (require 'cl-lib)
 ;; (require 'eww-lnum)
 (require 'pen-asciinema)

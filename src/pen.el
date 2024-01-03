@@ -154,7 +154,6 @@ It's really meant for key bindings and which-key, so they should all be interact
 (if (inside-docker-p)
     (progn
       (require 'pen-eww)
-      (require 'pen-eww-extras)
       (require 'pen-avy)
       (require 'pen-ace-link)
       (require 'pen-links)))
