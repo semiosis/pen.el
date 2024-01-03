@@ -79,7 +79,7 @@ if test "$#" -gt 0; then
         ;;
 
         m4) {
-            if yn "info $last_arg? (y) or info $last_arg? (n)"; then
+            if yn "info $last_arg? (y) or man $last_arg? (n)"; then
                 info "$@"
                 exit "$?"
             fi
