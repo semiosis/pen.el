@@ -2,7 +2,7 @@
 export TTY
 
 # This is to be used like `man`
-# Actually, in 'man' I should first check to see if there is a tut
+# Actually, in 'man' I should first check to see if there is a 'tut' and then ask what I want to do.
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
