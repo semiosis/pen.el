@@ -61,6 +61,14 @@ if test "$#" -gt 0; then
         fi
     fi
 
+    if info -q "$last_arg"; then
+        echo "Info for ${last_arg} exists." | hls blue 1>&2
+        if yn "info $last_arg? (y) or man $last_arg? (n)"; then
+            info "$@"
+            exit "$?"
+        fi
+    fi
+
     case "$last_arg" in
         pipexec) {
             # /usr/bin/man -l doc/man/pipexec.1 | pen-strip-ansi | v
@@ -75,15 +83,6 @@ if test "$#" -gt 0; then
         hdc) {
             x -sh hdc -e '>' -s :help -c m -i
             exit "$?"
-        }
-        ;;
-
-        m4) {
-            echo "Info for ${last_arg} exists." | hls blue 1>&2
-            if yn "info $last_arg? (y) or man $last_arg? (n)"; then
-                info "$@"
-                exit "$?"
-            fi
         }
         ;;
 
