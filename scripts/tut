@@ -9,12 +9,7 @@ opt="$1"
 shift
 case "$opt" in
     m4) {
-        "https://mbreen.com/m4.html"
-    }
-    ;;
-
-    template) {
-        :
+        eww "https://mbreen.com/m4.html"
     }
     ;;
 
