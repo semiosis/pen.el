@@ -80,11 +80,17 @@ is_stdout_pipe() {
     [[ -p /dev/stdout ]]
 }
 
+test "$#" -gt 0 && last_arg="${@: -1}"
+
 if stdin_exists; then
     "$bin" "$@" | pavs
 elif test "$istty" = 0; then
     builtins="$(pen-ci -otf -f -nd bash -c 'info "(m4) Macro index" | sed -n -e "/^\\* [^ ]\\+:./p" | sed "s/^\\* \\([^ ]\\+\\):.*/\\1/"')"
-    in-pen nvc rl -f "$builtins" "$bin" "$@"
+    if test -f "$last_arg"; then
+        in-pen nvc pavit "$bin" "$@"
+    else
+        in-pen nvc rl -f "$builtins" "$bin" "$@"
+    fi
 else
     "$bin" "$@"
 fi
