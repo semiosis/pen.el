@@ -1287,6 +1287,8 @@ Also see option `magit-blame-styles'."
                              company-tooltip-selection
                              company-tooltip-common-selection
 
+                             diredfl-dir-heading
+
                              notmuch-message-summary-face
                              message-header-subject
                              message-header-to
