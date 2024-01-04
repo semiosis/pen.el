@@ -8,10 +8,6 @@
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/memorization")))
 
-(defun d-group-hear-journal ()
-  (interactive)
-  (dired (umn "$PEN/documents/notes/ws/discipleship-group/hear-journal")))
-
 (defun d-group-weekly-journal ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
