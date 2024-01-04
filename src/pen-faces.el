@@ -1295,6 +1295,8 @@ Also see option `magit-blame-styles'."
                              message-header-other
                              message-mml
 
+                             org-block
+
                              epe-git-face
                              epe-symbol-face
                              epe-sudo-symbol-face
