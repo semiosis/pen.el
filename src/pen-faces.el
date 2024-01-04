@@ -1295,8 +1295,6 @@ Also see option `magit-blame-styles'."
                              message-header-other
                              message-mml
 
-                             org-verbatim
-
                              epe-git-face
                              epe-symbol-face
                              epe-sudo-symbol-face
@@ -1483,6 +1481,19 @@ Also see option `magit-blame-styles'."
             ;; :italic t
             ;; :bold (pen-use-bold-p)
             ))
+
+  (cl-loop for f in '(
+
+                      org-verbatim
+                      org-bold)
+           do
+           (set-face-attribute
+            f nil
+            ;; :inverse-video nil
+
+            :inverse-video nil
+
+            :italic t))
 
   ;; [[customize-variable:-whitespace-style]]
   (setq whitespace-style
