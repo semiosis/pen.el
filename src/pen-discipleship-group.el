@@ -2,7 +2,7 @@
   "Luke 1-5")
 
 (defun d-group-get-weekly-scripture-memory ()
-  "Luke 1-5")
+  "Matthew 5:1-2")
 
 (defun d-group-memorize-scripture ()
   (interactive)
