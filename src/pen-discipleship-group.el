@@ -1,6 +1,9 @@
 (defun d-group-get-weekly-reading ()
   "Luke 1-5")
 
+(defun d-group-get-weekly-scripture-memory ()
+  "Luke 1-5")
+
 (defun d-group-memorize-scripture ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/memorization")))
