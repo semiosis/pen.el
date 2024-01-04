@@ -2533,7 +2533,6 @@ case "$file_type" in
         mant="${fn%.*}"
 
         case "$prog" in
-
             edit) { vs $0; } ;;
 
             org2pdf) {
