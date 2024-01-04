@@ -1513,6 +1513,7 @@ Also see option `magit-blame-styles'."
                             hc-trailing-whitespace
                             trailing-whitespace
                             whitespace-trailing
+                            font-lock-comment-face
 
                             whitespace-big-indent
                             whitespace-empty
