@@ -2525,7 +2525,7 @@ case "$file_type" in
     org) {
         cd "$dn"
 
-        prog="$(qa -p org2pdf -h org2html)"
+        prog="$(qa -. edit -p org2pdf -h org2html)"
 
         fn=$(basename -- "$fp")
         dn=$(dirname "$fp")
@@ -2533,6 +2533,9 @@ case "$file_type" in
         mant="${fn%.*}"
 
         case "$prog" in
+
+            edit) { vs $0; } ;;
+
             org2pdf) {
                 "$prog" "$fn"
 
