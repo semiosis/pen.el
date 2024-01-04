@@ -1307,6 +1307,8 @@ Also see option `magit-blame-styles'."
 
                              minibuffer-prompt
 
+                             evil-ex-substitute-replacement
+
                              bible-verse-ref-notes
 
                              org-hide
