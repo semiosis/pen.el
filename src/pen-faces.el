@@ -19,7 +19,7 @@
        :background "#2e2e2e"
        ;; :weight bold
        :underline t))
-  "Face for org-mode bold."
+  "Face for org-mode bowld."
   :group 'org-faces)
 
 (defsetface org-italic
@@ -1514,6 +1514,7 @@ Also see option `magit-blame-styles'."
                             trailing-whitespace
                             whitespace-trailing
                             font-lock-comment-face
+                            info-code-face
 
                             whitespace-big-indent
                             whitespace-empty
