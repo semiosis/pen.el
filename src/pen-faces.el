@@ -1482,9 +1482,7 @@ Also see option `magit-blame-styles'."
             ;; :bold (pen-use-bold-p)
             ))
 
-  (cl-loop for f in '(
-
-                      org-verbatim
+  (cl-loop for f in '(org-verbatim
                       org-bold)
            do
            (set-face-attribute
@@ -1493,7 +1491,9 @@ Also see option `magit-blame-styles'."
 
             :inverse-video nil
 
-            :italic t))
+            :italic t
+            :slant italic
+            ))
 
   ;; [[customize-variable:-whitespace-style]]
   (setq whitespace-style
