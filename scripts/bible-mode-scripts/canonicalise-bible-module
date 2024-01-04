@@ -59,6 +59,11 @@ case "$module" in
     }
     ;;
 
+    murdock) {
+        module=Murdock
+    }
+    ;;
+
     irish|gaelic) {
         case "$book" in
             Mark) { module=ScotsGaelic; } ;;
