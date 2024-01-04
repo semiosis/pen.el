@@ -12,6 +12,10 @@
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/hear-journal")))
 
+(defun d-group-weekly-journal ()
+  (interactive)
+  (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
+
 (defun d-group-hear-preparation ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/preparation")))
