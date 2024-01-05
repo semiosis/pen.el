@@ -2545,7 +2545,7 @@ case "$file_type" in
             org2html) {
                 "$prog" "$fn"
 
-                nvc -2 elinks "${mant}.html"
+                ff "${mant}.html"
             }
             ;;
 
