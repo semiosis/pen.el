@@ -125,8 +125,9 @@ Optional argument CANDIDATE is the selected item."
          (bn (f-basename fp))
          (mant (f-mant fp))
          (org-fp (f-join dn (concat mant ".org"))))
-    (if (f-exists-p))
-    (find-file fp))
+    (if (f-exists-p org-fp)
+        (find-file org-fp)
+      (find-file fp)))
 
 
 
