@@ -2101,3 +2101,5 @@ raco pkg update racket-langserver
 agi sendmail sma
 
 e ia helm-eww markdown-preview-eww
+
+agi fp-docs fp-compiler fp-ide
