@@ -1857,6 +1857,7 @@ instead of `browse-url-new-window-flag'."
    (url (lg-eww url))))
 
 ;; Mirrors pages from a site
+;; TODO Get this to use a URL initally instead of an eww buffer
 (defun eww-open-all-links (&optional filter recursively mirrored)
   (interactive (list (read-string-hist "filter: " (concat "//" (unregexify
                                                                 (url-domain url-current-lastloc
