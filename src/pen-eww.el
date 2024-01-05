@@ -1857,7 +1857,10 @@ instead of `browse-url-new-window-flag'."
    (url (lg-eww url))))
 
 (defun eww-open-all-links (&optional filter)
-  (interactive (list (read-string-hist "filter: " (concat "^" (unregexify (url-domain (get-path nil t)))))))
+  (interactive (list (read-string-hist "filter: " (concat "//" (unregexify
+                                                               (url-domain url-current-lastloc
+                                                                           ;; (get-path nil t)
+                                                                           ))))))
   (cl-loop for url in (-filter
                        (eval `(lambda (s) (string-match ,filter s)))
                        (pen-str2list (buffer-links)))
