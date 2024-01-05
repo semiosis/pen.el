@@ -55,7 +55,7 @@ if ! test -f "$newfp"; then
         pdf) {
             echo "Opening https://pdf2md.morethan.io/" 1>&2
             chrome "https://pdf2md.morethan.io/"
-            pak
+            zcd .
         }
         ;;
 
