@@ -2109,4 +2109,5 @@ agi fp-compiler fp-ide fp-docs fp-units-base fp-units-db
 # emacs lsp booster (for performance)
 (
 cd "$(gc "https://github.com/blahgeek/emacs-lsp-booster")"
+cargo install --force --path .
 )
