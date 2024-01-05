@@ -19,6 +19,8 @@
 ;; TODO Fix it
 ;; (require 'helm-org-ql)
 
+(setq org-export-with-broken-links t)
+
 (define-key org-link-minor-mode-map (kbd "C-c C-o") 'org-open-at-point)
 
 ;; https://github.com/suvayu/.emacs.d/blob/master/lisp/nifty.el
