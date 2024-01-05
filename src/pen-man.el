@@ -1,3 +1,5 @@
+(setq manual-program "/usr/bin/man")
+
 (defun man-page-p (args)
   (sn-true (concat "/usr/bin/man " args)))
 
