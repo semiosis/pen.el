@@ -2102,4 +2102,4 @@ agi sendmail sma
 
 e ia helm-eww markdown-preview-eww
 
-agi fp-docs fp-compiler fp-ide
+agi fp-compiler fp-ide fp-docs fp-units-base fp-units-db
