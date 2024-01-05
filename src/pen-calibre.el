@@ -141,7 +141,7 @@ Optional argument CANDIDATE is the selected item."
          (yn "Open org version?"))
         (find-file org-fp)
       (if (yn "Make org version?")
-          (find-file fp)
+          (sps (f-join "any2org" org-fp))
         (find-file fp)))))
 
 
