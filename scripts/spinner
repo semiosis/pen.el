@@ -100,6 +100,8 @@ tput civis
 
 message="» $message »»»»»»»»»"
 
+# Add some more then trimit
+message="$mesage»»»»»»»»»"
 max_message_length="$(echo -n "» Loading »»»»»»»»»" | sed 's/./-/g' | wc -c)"
 message="$(printf -- "%s" "$message" | cut -c -${max_message_length} -)"
 
