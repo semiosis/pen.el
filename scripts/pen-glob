@@ -5,7 +5,7 @@ shopt -s globstar
 
 glob="$1"
 # Change the () and ' ' into ? which is a wildcard
-glob="$(printf -- "%s" "$glob" | tr '[ ()]' '?')"
+glob="$(printf -- "%s" "$glob" | tr "[' ()]" '?')"
 
 cmd="eval printf -- \"%s\\\\\\n\" $(cmd "$glob")"
 
