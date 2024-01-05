@@ -1496,6 +1496,7 @@ Also see option `magit-blame-styles'."
                     (set-face-attribute
                      f fr
                      :inverse-video nil
+                     :overline t
 
                      ;; :italic t
                      )
