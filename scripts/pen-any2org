@@ -57,6 +57,7 @@ if ! test -f "$newfp"; then
             set -o pipefail
             pandoc -f "$ext" -t org "$fp" | max-one-empty-line.sh > "$newfp"
             ret="$?"
+            test -s "$newfp" || rm "$newfp"
             if ! test "$ret" = 0; then
                 pak
                 exit "$ret"
