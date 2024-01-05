@@ -2105,3 +2105,8 @@ e ia helm-eww markdown-preview-eww
 agi fp-compiler fp-ide fp-docs fp-units-base fp-units-db
 # dpkg -S /usr/bin/x86_64-linux-gnu-fpcmkcfg-3.0.4
 /usr/bin/x86_64-linux-gnu-fpcmkcfg-3.0.4
+
+# emacs lsp booster (for performance)
+(
+cd "$(gc "https://github.com/blahgeek/emacs-lsp-booster")"
+)
