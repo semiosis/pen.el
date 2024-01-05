@@ -1490,7 +1490,8 @@ Also see option `magit-blame-styles'."
            do
 
            (cl-loop for f in '(org-verbatim
-                               org-bold)
+                               org-bold
+                               bible-verse-ref)
                     do
                     (set-face-attribute
                      f fr
