@@ -31,7 +31,7 @@ elif [ ! -e $1 ]; then
 fi
 # unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") print $4}' | xargs -t rm -rf {} &> /dev/null
 
-line="$(unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") { $1=$2=$3=""; print $0 }}' | s remove-starting-and-trailing-whitespace | sed '/^\s*$/d' | q -l | s join ' ')"
+line="$(unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") { $1=$2=$3=""; print $0 }}' | pen-str remove-starting-and-trailing-whitespace | sed '/^\s*$/d' | q -l | s join ' ')"
 
 #echo "askcmd rm -rf $line"
 #exit
