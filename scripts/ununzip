@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+# fp="$1"
+
+#unzip -l "$fp" | \
+# sed '1,3d' | \
+# tac | \
+# sed '1,2d' | \
+# tac | \
+# sed 's/^\s\+[^ ]\+\s\+[^ ]\+\s\+[^ ]\+\s\+//' | \
+# awk1 | while IFS=$'\n' read -r line; do
+#    if test -e  "$line"; then
+#        if test -f "$line"; then
+#            rm "$line"
+#        else
+#            echo "$line"
+#        fi
+#    fi
+# done
+
+#!/bin/bash
+# A bash-wrapped version of http://www.commandlinefu.com/commands/view/9536/un-unzip-a-file
+if [ $# -eq 0 ]; then
+    echo "Un-unzips a file without a root folder."
+    echo "Usage: ununzip <filename>"
+    exit 1
+elif [ ! -e $1 ]; then
+    echo "File not found: $1"
+    exit 1
+fi
+# unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") print $4}' | xargs -t rm -rf {} &> /dev/null
+
+line="$(unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") { $1=$2=$3=""; print $0 }}' | s remove-starting-and-trailing-whitespace | sed '/^\s*$/d' | q -l | s join ' ')"
+
+#echo "askcmd rm -rf $line"
+#exit
+
+if test -n "$line"; then
+    # eval "askcmd rm -rf $line"
+    eval "rm -i -rf $line"
+fi
