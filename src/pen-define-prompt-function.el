@@ -2067,7 +2067,10 @@
                        (save-excursion-reliably
                         (save-excursion-and-region-reliably
                          ,(macroexpand `(pen-define-prompt-function-body))))
-                     ,(macroexpand `(pen-define-prompt-function-body)))))))))
+                     ,(macroexpand `(pen-define-prompt-function-body)))))
+        (progn
+          (message ,(concat "pen-prompt-functions-enabled=nil, " func-sym " disabled"))
+          nil)))))
 
 (defmacro pen-load-prompt-function ()
   `(let*
