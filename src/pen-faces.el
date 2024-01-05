@@ -1499,7 +1499,7 @@ Also see option `magit-blame-styles'."
                      :overline t
                      :underline t
                      :box nil
-                     :strike-through t
+                     :strike-through nil
                      :slant 'italic
 
                      ;; :italic t
