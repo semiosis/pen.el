@@ -103,12 +103,22 @@ Optional argument CANDIDATE is the selected item."
 (define-key calibredb-show-mode-map (kbd "O") 'calibre-open-file-externally)
 (define-key calibredb-show-mode-map (kbd "w") 'calibredb-org-link-copy)
 
-;; Setting the prefix to 16 allows find-file to always open in text
-(defun calibredb-find-file-around-advice (proc &rest args)
-  (let ((current-prefix-arg '(16)))
-    (let ((res (apply proc args)))
-      res)))
-(advice-add 'calibredb-find-file :around #'calibredb-find-file-around-advice)
+
+;; This function actually is usually called without any arguments.
+;; TODO Setting the prefix to 16 allows find-file to always open in text
+;; (defun calibredb-find-file-around-advice (proc &rest args)
+;;   (let ((current-prefix-arg '(16)))
+;;     (let ((res (apply proc args)))
+;;       res)))
+;; (advice-add 'calibredb-find-file :around #'calibredb-find-file-around-advice)
+
+(defun calibredb-find-file (&optional candidate)
+  "Open file of the selected item.
+Optional argument CANDIDATE is the selected item."
+  (interactive)
+  (unless candidate
+    (setq candidate (car (calibredb-find-candidate-at-point))))
+  (find-file (calibredb-getattr candidate :file-path)))
 
 
 
