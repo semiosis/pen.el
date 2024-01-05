@@ -23,3 +23,4 @@ esac
 
 echo "Running org2pdf through emacs" 1>&2
 unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+echo "Running org2pdf through emacs... done!" 1>&2
