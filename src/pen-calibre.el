@@ -112,6 +112,7 @@ Optional argument CANDIDATE is the selected item."
 ;;       res)))
 ;; (advice-add 'calibredb-find-file :around #'calibredb-find-file-around-advice)
 
+
 ;; Therefore I will just edit the actual function
 (defun calibredb-find-file (&optional candidate)
   "Open file of the selected item.
@@ -125,7 +126,8 @@ Optional argument CANDIDATE is the selected item."
          (bn (f-basename fp))
          (mant (f-mant fp))
          (org-fp (f-join dn (concat mant ".org"))))
-    (if (f-exists-p org-fp)
+    (if (and (f-exists-p org-fp)
+             (yn "Open org version?"))
         (find-file org-fp)
       (find-file fp)))
 
