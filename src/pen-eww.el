@@ -1856,17 +1856,18 @@ instead of `browse-url-new-window-flag'."
   (cond
    (url (lg-eww url))))
 
+;; Mirrors pages from a site
 (defun eww-open-all-links (&optional filter)
   (interactive (list (read-string-hist "filter: " (concat "//" (unregexify
-                                                               (url-domain url-current-lastloc
-                                                                           ;; (get-path nil t)
-                                                                           ))))))
+                                                                (url-domain url-current-lastloc
+                                                                            ;; (get-path nil t)
+                                                                            ))))))
   (cl-loop for url in (-filter
                        (eval `(lambda (s) (string-match ,filter s)))
                        (pen-str2list (buffer-links)))
-        do (progn
-             (lg-eww url)
-             (sleep 2))))
+           do (progn
+                (lg-eww url)
+                (sleep 2))))
 
 (defun file-from-data (data)
   (let* ((hash (sha1 data))
