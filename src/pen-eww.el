@@ -1856,8 +1856,8 @@ instead of `browse-url-new-window-flag'."
   (cond
    (url (lg-eww url))))
 
-(defun eww-open-all-links ()
-  (interactive)
+(defun eww-open-all-links (&optional filter)
+  (interactive (list (read-string-hist "filter: ")))
   (cl-loop for url in (pen-str2list (buffer-links))
         do (progn
              (lg-eww url)
