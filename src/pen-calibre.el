@@ -319,5 +319,10 @@ Argument EVENT mouse event."
       (pen-sn (pen-cmd "z" (get-text-property pos 'help-echo nil))))))
 
 (advice-add 'calibredb :around #'around-advice-buffer-erase-trailing-whitespace-advice)
+(advice-add 'calibredb-search-update :around #'around-advice-buffer-erase-trailing-whitespace-advice)
+
+;; I haven't been able to get this to work perfectly
+;; (advice-add 'calibredb-toggle-view-at-point :around #'around-advice-buffer-erase-trailing-whitespace-advice)
+;; (advice-remove 'calibredb-toggle-view-at-point #'around-advice-buffer-erase-trailing-whitespace-advice)
 
 (provide 'pen-calibre)
