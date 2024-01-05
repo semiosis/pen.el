@@ -6,6 +6,7 @@
 (require 'ace-link)
 
 (require 'helm-eww)
+(require 'markdown-preview-eww)
 
 (setq max-specpdl-size 10000)
 ;; This isn't a great solution
