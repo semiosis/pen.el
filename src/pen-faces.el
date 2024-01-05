@@ -1497,6 +1497,7 @@ Also see option `magit-blame-styles'."
                      f fr
                      :inverse-video nil
                      :overline t
+                     :strikethrough t
 
                      ;; :italic t
                      )
