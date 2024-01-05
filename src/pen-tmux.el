@@ -284,18 +284,24 @@ START and END can be in either order."
   (interactive)
   (pen-window 'nw cmd nw_args input dir output_b))
 (defalias 'nw 'pen-nw)
+(defalias 'tm-nw 'pen-nw)
+(defalias 'sh/nw 'pen-nw)
 
 (defun pen-sps (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"
   (interactive)
   (pen-window 'sps cmd nw_args input dir output_b))
 (defalias 'pen-tm-sps 'pen-sps)
+(defalias 'tm-sps 'pen-sps)
+(defalias 'sh/sps 'pen-sps)
 
 (defun pen-sph (&optional cmd nw_args input dir output_b)
   "Runs command in a horizontal split"
   (interactive)
   (pen-window 'sph cmd nw_args input dir output_b))
 (defalias 'pen-tm-sph 'pen-sph)
+(defalias 'tm-sph 'pen-sph)
+(defalias 'sh/sph 'pen-sph)
 
 (defun pen-spv (&optional cmd nw_args input dir output_b)
   "Runs command in a vertical split"
