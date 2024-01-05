@@ -1497,7 +1497,14 @@ Also see option `magit-blame-styles'."
                      f fr
                      :inverse-video nil
 
-                     :italic t)))
+                     ;; :italic t
+                     )
+                    (set-face-attribute
+                     f fr
+                     :slant 'italic
+
+                     ;; :italic t
+                     )))
 
   ;; [[customize-variable:-whitespace-style]]
   (setq whitespace-style
