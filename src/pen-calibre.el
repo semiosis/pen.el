@@ -132,7 +132,6 @@ Optional argument CANDIDATE is the selected item."
       (find-file fp)))
 
 
-
 ;; (load-library "calibredb")
 
 ;; (define-transient-command calibredb-dispatch ()
