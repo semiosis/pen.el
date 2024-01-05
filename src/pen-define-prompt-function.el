@@ -2069,7 +2069,7 @@
                          ,(macroexpand `(pen-define-prompt-function-body))))
                      ,(macroexpand `(pen-define-prompt-function-body)))))
         (progn
-          (message ,(concat "pen-prompt-functions-enabled=nil, " func-sym " disabled"))
+          (message ,(concat "pen-prompt-functions-enabled=nil, " (str func-sym) " disabled"))
           nil)))))
 
 (defmacro pen-load-prompt-function ()
