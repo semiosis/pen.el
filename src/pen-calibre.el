@@ -131,10 +131,11 @@ Optional argument CANDIDATE is the selected item."
                           org-fp1)
                      (and (f-exists-p org-fp2)
                           org-fp2))))
+
     (if (and (f-exists-p org-fp)
              (yn "Open org version?"))
         (find-file org-fp)
-      (find-file fp)))
+      (find-file fp))))
 
 
 ;; (load-library "calibredb")
