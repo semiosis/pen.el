@@ -99,9 +99,9 @@ tput civis
 # : "${message:="» Loading »»»»»»»»»"}"
 
 # Add some more then trim it
-max_message_length="$(echo -n "» Loading »»»»»»»»»" | sed 's/./-/g' | wc -c)"
-max_message_length_ascii="$(echo -n "» Loading »»»»»»»»»" | wc -c)"
-full_message_length="$(echo -n "» $message »»»»»»»»»" | sed 's/./-/g' | wc -c)"
+# max_message_length_ascii="$(echo -n "» Loading »»»»»»»»»" | sed 's/./-/g' | wc -c)"
+max_message_length="$(echo -n "» Loading »»»»»»»»»" | wc -c)"
+full_message_length="$(echo -n "» $message »»»»»»»»»" | wc -c)"
 
 message="» $message »»»»»»»»»"
 message="${message}»»»»»»»»»"
