@@ -1857,7 +1857,7 @@ instead of `browse-url-new-window-flag'."
    (url (lg-eww url))))
 
 ;; Mirrors pages from a site
-(defun eww-open-all-links (&optional filter recursively)
+(defun eww-open-all-links (&optional filter recursively mirrored)
   (interactive (list (read-string-hist "filter: " (concat "//" (unregexify
                                                                 (url-domain url-current-lastloc
                                                                             ;; (get-path nil t)
@@ -1866,7 +1866,8 @@ instead of `browse-url-new-window-flag'."
                        (eval `(lambda (s) (string-match ,filter s)))
                        (pen-str2list (buffer-links)))
            do (progn
-                (lg-eww url)
+                (with-current-buffer (lg-eww url)
+                  )
                 (sleep 2))))
 
 (defun eww-open-all-links-recursively (&optional filter)
