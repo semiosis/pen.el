@@ -1869,6 +1869,8 @@ instead of `browse-url-new-window-flag'."
            do (progn
                 (setq mirrored (cons url mirrored))
                 (sleep 2)
+
+                ;; Get this working a bit better
                 (with-current-buffer (lg-eww url)
                   (eww-open-all-links filter recursively mirrored)))))
 
