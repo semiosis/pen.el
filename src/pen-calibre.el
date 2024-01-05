@@ -127,13 +127,18 @@ Optional argument CANDIDATE is the selected item."
          (mant (f-mant fp))
          (org-fp1 (f-join dn (concat mant ".org")))
          (org-fp2 (f-join dn (concat bn ".org")))
+         (org-fp3 (f-join dn (concat mant ".md.org")))
          (org-fp (or (and (f-exists-p org-fp1)
                           org-fp1)
                      (and (f-exists-p org-fp2)
-                          org-fp2))))
+                          org-fp2)
+                     (and (f-exists-p org-fp3)
+                          org-fp3))))
 
-    (if (and (f-exists-p org-fp)
-             (yn "Open org version?"))
+    (if (and
+         org-fp
+         (f-exists-p org-fp)
+         (yn "Open org version?"))
         (find-file org-fp)
       (find-file fp))))
 
