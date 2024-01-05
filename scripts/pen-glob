@@ -4,6 +4,7 @@ shopt -s nullglob
 shopt -s globstar
 
 glob="$1"
+# Change the () into ? which is a wildcard
 glob="$(printf -- "%s" "$glob" | tr '[()]' '?')"
 echo "$glob" 1>&2
 
