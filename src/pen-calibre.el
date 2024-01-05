@@ -119,7 +119,13 @@ Optional argument CANDIDATE is the selected item."
   (interactive)
   (unless candidate
     (setq candidate (car (calibredb-find-candidate-at-point))))
-  (find-file (calibredb-getattr candidate :file-path)))
+
+  (let* ((fp (calibredb-getattr candidate :file-path))
+         (dn (f-dirname fp))
+         (bn (f-basename fp))
+         (mant (f-mant fp))
+         (org-fp (f-join dn (concat mant ".org"))))
+    (find-file fp))
 
 
 
