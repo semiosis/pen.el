@@ -1,4 +1,5 @@
 ;; Don't use the script because it breaks when an info-page exists
+;; v +/"echo \"Info for" "$EMACSD/pen.el/scripts/container/man"
 ;; (setq manual-program "man")
 (setq manual-program "/usr/bin/man")
 
