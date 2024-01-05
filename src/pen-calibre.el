@@ -112,6 +112,7 @@ Optional argument CANDIDATE is the selected item."
 ;;       res)))
 ;; (advice-add 'calibredb-find-file :around #'calibredb-find-file-around-advice)
 
+;; Therefore I will just edit the actual function
 (defun calibredb-find-file (&optional candidate)
   "Open file of the selected item.
 Optional argument CANDIDATE is the selected item."
