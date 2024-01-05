@@ -58,7 +58,8 @@ if ! test -f "$newfp"; then
             ret="$?"
             if ! test "$ret" = 0; then
                 pak
-            exit "$ret"
+                exit "$ret"
+            fi
         }
         ;;
     esac
