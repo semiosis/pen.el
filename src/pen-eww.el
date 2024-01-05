@@ -1863,11 +1863,9 @@ instead of `browse-url-new-window-flag'."
                                                                             ;; (get-path nil t)
                                                                             ))))))
   (cl-loop for url in
-           (-filter
-            (lambda (s) (not (member url mirrored))
-              (-filter
-               (eval `(lambda (s) (string-match ,filter s)))
-               (pen-str2list (buffer-links)))))
+           (--> (pen-str2list (buffer-links))
+                (-filter (lambda (s) (not (member url mirrored))))
+                (-filter (eval `(lambda (s) (string-match ,filter s))) it) it)
            do (progn
                 (setq mirrored (cons url mirrored))
                 (sleep 2)
