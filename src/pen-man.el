@@ -1,4 +1,4 @@
-;; Don't use the script because
+;; Don't use the script because it breaks when an info-page exists
 ;; (setq manual-program "man")
 (setq manual-program "/usr/bin/man")
 
