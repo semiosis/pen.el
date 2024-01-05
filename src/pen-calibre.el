@@ -141,7 +141,7 @@ Optional argument CANDIDATE is the selected item."
          (yn "Open org version?"))
         (find-file org-fp)
       (if (yn "Make org version?")
-          (tm-sps (cmd "any2org" fp))
+          (tm-sps (cmd "zrepl" "any2org" fp))
         (find-file fp)))))
 
 
