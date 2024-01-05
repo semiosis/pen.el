@@ -13,7 +13,7 @@
   ;; Non-greedy
   ;; (s-replace-regexp "\\..*" "" (pen-f-basename path))
 
-  ;; I want a greedy match here because I want to make sure that filenames with full-stops are match properly.
+  ;; I want a greedy match here because I want to make sure that filenames with periods/full-stops are matched properly.
   ;; [[calibredb:11][ 11 - C. H. Spurgeon's Puritan Catechism]].pdf
   (s-replace-regexp "\\(.*\\)\\..*" "\\1" (pen-f-basename path)))
 
