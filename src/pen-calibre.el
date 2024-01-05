@@ -140,7 +140,9 @@ Optional argument CANDIDATE is the selected item."
          (f-exists-p org-fp)
          (yn "Open org version?"))
         (find-file org-fp)
-      (find-file fp))))
+      (if (yn "Make org version?")
+          (find-file fp)
+        (find-file fp)))))
 
 
 ;; (load-library "calibredb")
