@@ -128,12 +128,15 @@ Optional argument CANDIDATE is the selected item."
          (org-fp1 (f-join dn (concat mant ".org")))
          (org-fp2 (f-join dn (concat bn ".org")))
          (org-fp3 (f-join dn (concat mant ".md.org")))
+         (org-fp4 (f-join dn (concat mant ".epub.org")))
          (org-fp (or (and (f-exists-p org-fp1)
                           org-fp1)
                      (and (f-exists-p org-fp2)
                           org-fp2)
                      (and (f-exists-p org-fp3)
-                          org-fp3))))
+                          org-fp3)
+                     (and (f-exists-p org-fp4)
+                          org-fp4))))
 
     (if (and
          org-fp
