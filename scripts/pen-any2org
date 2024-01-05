@@ -79,6 +79,6 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-if is_tty; then
+if test -f "$newfp" && is_tty; then
     pin "$newfp"
 fi
