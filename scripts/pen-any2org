@@ -41,6 +41,13 @@ newfp="${fn}.org"
 
 if ! test -f "$newfp"; then
     case "$ext" in
+        md) {
+            ext=markdown
+        }
+        ;;
+    esac
+
+    case "$ext" in
         tsv) {
             cat "$fp" | tsv2org-table > "$newfp"
         }
