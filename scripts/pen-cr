@@ -2543,6 +2543,7 @@ case "$file_type" in
             ;;
 
             org2html) {
+                # cmd "$prog" "$fn" | tv
                 "$prog" "$fn"
 
                 ff "${mant}.html"
