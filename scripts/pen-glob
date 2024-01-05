@@ -3,6 +3,10 @@
 shopt -s nullglob
 shopt -s globstar
 
+glob="$1"
+glob="$(printf -- "%s" "$glob" | tr '[()]' '?')"
+echo "$glob" 1>&2
+
 cmd="eval printf -- \"%s\\\\\\n\" $(cmd "$1")"
 
 out="$(eval "$cmd")"
