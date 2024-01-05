@@ -96,8 +96,6 @@ tput civis
 : "${message:="$@"}"
 : "${message:="Loading"}"
 
-# : "${message:="» Loading »»»»»»»»»"}"
-
 # Add some more spaces then trim it
 full_message_length="$(echo -n "Loading" | wc -c)"
 message="${message}          "
