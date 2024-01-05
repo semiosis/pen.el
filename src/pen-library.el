@@ -10,7 +10,12 @@
                                  "")))
 
 (defun f-mant (path)
-  (s-replace-regexp "\\..*" "" (pen-f-basename path)))
+  ;; Non-greedy
+  ;; (s-replace-regexp "\\..*" "" (pen-f-basename path))
+
+  ;; I want a greedy match here because I want to make sure that filenames with 
+  ;; [[calibredb:11][ 11 - C. H. Spurgeon's Puritan Catechism]].pdf
+  (s-replace-regexp "\\(.*\\)\\..*" "\\1" (pen-f-basename path)))
 
 (defalias 'f-basename 'f-filename)
 (defun f-mant (path)
