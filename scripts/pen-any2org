@@ -54,6 +54,7 @@ if ! test -f "$newfp"; then
 
         *) {
             # iconv | 
+            set -o pipefail
             pandoc -f "$ext" -t org "$fp" | max-one-empty-line.sh > "$newfp"
             ret="$?"
             if ! test "$ret" = 0; then
