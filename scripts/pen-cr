@@ -2538,14 +2538,14 @@ case "$file_type" in
             org2pdf) {
                 "$prog" "$fn"
 
-                zrepl z "${mant}.pdf"
+                z "${mant}.pdf"
             }
             ;;
 
             org2html) {
                 "$prog" "$fn"
 
-                zrepl ff "${mant}.html"
+                ff "${mant}.html"
             }
             ;;
 
