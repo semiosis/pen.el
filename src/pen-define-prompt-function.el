@@ -2018,6 +2018,8 @@
 
             ,(macroexpand `(pen-define-prompt-function-pipeline))))))))
 
+(defvar pen-prompt-functions-enabled nil)
+
 (defun define-prompt-function ()
   (eval
    ;; Annoyingly, cl-defun does not support &rest, so I provide it as the variadic-var, here
@@ -2045,26 +2047,27 @@
       ,doc
       (interactive ,(cons 'list all-iargs))
 
-      (setq no-select-result
-            (or no-select-result
-                (pen-var-value-maybe 'pen-no-select-result)
-                (pen-var-value-maybe 'do-pen-batch)))
+      (if pen-prompt-functions-enabled
+          (progn (setq no-select-result
+                       (or no-select-result
+                           (pen-var-value-maybe 'pen-no-select-result)
+                           (pen-var-value-maybe 'do-pen-batch)))
 
-      ;; force-custom, unfortunately disables call-interactively
-      ;; i guess that it could also disable other values
-      (let ((final-prompt-save-mark-and-excursion
-             (if (not (pen-var-value-maybe 'do-pen-batch))
-                 (or (pen-var-value-maybe 'prompt-save-mark-and-excursion)
-                     ',prompt-save-mark-and-excursion))))
+                 ;; force-custom, unfortunately disables call-interactively
+                 ;; i guess that it could also disable other values
+                 (let ((final-prompt-save-mark-and-excursion
+                        (if (not (pen-var-value-maybe 'do-pen-batch))
+                            (or (pen-var-value-maybe 'prompt-save-mark-and-excursion)
+                                ',prompt-save-mark-and-excursion))))
 
-        ;; Many a  transformation pipeline here could benefit from transducers
-        ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
-        ;; https://github.com/FrancisMurillo/transducer.el
-        (if final-prompt-save-mark-and-excursion
-            (save-excursion-reliably
-             (save-excursion-and-region-reliably
-              ,(macroexpand `(pen-define-prompt-function-body))))
-          ,(macroexpand `(pen-define-prompt-function-body)))))))
+                   ;; Many a  transformation pipeline here could benefit from transducers
+                   ;; https://dev.solita.fi/2021/10/14/grokking-clojure-transducers.html
+                   ;; https://github.com/FrancisMurillo/transducer.el
+                   (if final-prompt-save-mark-and-excursion
+                       (save-excursion-reliably
+                        (save-excursion-and-region-reliably
+                         ,(macroexpand `(pen-define-prompt-function-body))))
+                     ,(macroexpand `(pen-define-prompt-function-body)))))))))
 
 (defmacro pen-load-prompt-function ()
   `(let*
