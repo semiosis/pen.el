@@ -104,7 +104,6 @@ message="${message}          "
 message="$(printf -- "%s" "$message" | cut -c -${full_message_length} -)"
 
 message="» $message »»»»»»»»»"
-message="${message}»»»»»»»»»"
 
 IFS= read -r -d '' script <<'HEREDOC'
 for i in $(seq 314 -1 1); do
