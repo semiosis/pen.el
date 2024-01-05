@@ -142,8 +142,9 @@ Optional argument CANDIDATE is the selected item."
         (find-file org-fp)
       (if (yn "Make org version?")
           (progn
-            (tm-sps (cmd "zrepl" "-cm" "any2org" (umn fp)))
-            (error "Convert it to org first."))
+            (snc (cmd "sps" "zrepl" "-cm" "any2org" (umn fp)))
+            (xc (umn fp))
+            (error "Copied the path. Convert it to org first."))
         (find-file fp)))))
 
 
