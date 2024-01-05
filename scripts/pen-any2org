@@ -56,7 +56,9 @@ if ! test -f "$newfp"; then
             # iconv | 
             pandoc -f "$ext" -t org "$fp" | max-one-empty-line.sh > "$newfp"
             ret="$?"
-            test "$ret" = 0 || pac
+            if ! test "$ret" = 0; then
+                pak
+            exit
         }
         ;;
     esac
