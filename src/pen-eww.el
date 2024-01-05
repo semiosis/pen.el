@@ -1866,9 +1866,10 @@ instead of `browse-url-new-window-flag'."
                        (eval `(lambda (s) (string-match ,filter s)))
                        (pen-str2list (buffer-links)))
            do (progn
+                (setq mirrored (cons url mirrored))
+                (sleep 2)
                 (with-current-buffer (lg-eww url)
-                  )
-                (sleep 2))))
+                  (eww-open-all-links filter recursively mirrored)))))
 
 (defun eww-open-all-links-recursively (&optional filter)
   (interactive (list (read-string-hist "filter: " (concat "//" (unregexify (url-domain url-current-lastloc))))))
