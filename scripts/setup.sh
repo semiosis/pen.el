@@ -2099,3 +2099,5 @@ raco pkg update racket-langserver
 
 # Sendmail
 agi sendmail sma
+
+e ia helm-eww markdown-preview-eww
