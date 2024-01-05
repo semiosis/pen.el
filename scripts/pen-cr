@@ -304,7 +304,6 @@ if test -z "$fp"; then
     exit 1
 fi
 
-echo "$fp" | tv &>/dev/null
 fp="$(pen-glob "$fp")"
 rp="$(realpath "$fp")"
 dn="${rp%/*}"
