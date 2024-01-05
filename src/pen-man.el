@@ -1,3 +1,5 @@
+;; Don't use the script because
+;; (setq manual-program "man")
 (setq manual-program "/usr/bin/man")
 
 (defun man-page-p (args)
