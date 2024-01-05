@@ -5,6 +5,8 @@
 (require 'f)
 (require 'ace-link)
 
+(require 'helm-eww)
+
 (setq max-specpdl-size 10000)
 ;; This isn't a great solution
 ;; https://stackoverflow.com/q/11807128
