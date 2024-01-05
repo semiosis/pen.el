@@ -1,0 +1,18 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+if ! stdin_exists; then
+    if test -f "$1"; then
+        exec < <(cat "$1")
+    elif test -n "$1"; then
+        exec < <(oci curl -s "$1")
+    fi
+fi
+
+iconv | pandoc -f html -t org | sed '/#+BEGIN_HTML/,/#+END_HTML/d' | max-one-empty-line.sh | pager -E "tf org | xa og"

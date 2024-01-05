@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+set -xv
+
+find . -name '*.html' | awk1 | while IFS=$'\n' read -r line; do
+(
+    exec 0</dev/null
+
+    dn="$(dirname "$line")"
+    cd "$dn"
+    bn="$(basename -- "$line")"
+    mant="${bn%.*}"
+
+    elinks-dump "$bn" > "${mant}.txt"
+)
+done

@@ -1,0 +1,11 @@
+#!/usr/bin/env python3.6
+# -*- coding: utf-8 -*-
+
+#  py -6 i html-to-json
+
+import html_to_json
+import sys
+
+# Sadly, the json output is not often well-formed
+
+print(html_to_json.convert(sys.stdin.read()))

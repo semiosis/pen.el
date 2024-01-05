@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tidy --indent auto --quiet yes --show-body-only auto --show-errors 0 --wrap 0 /dev/stdin

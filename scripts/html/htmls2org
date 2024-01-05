@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+for fp in *.html; do
+    slug="$(printf -- "%s\n" "$fp" | tr '\n' ' ' | sed 's/ $//' | sed 's/\.html$//' | slugify)"
+
+    html2org "$fp" > "${slug}.org"
+done
