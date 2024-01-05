@@ -38,5 +38,6 @@ line="$(unzip -l $1 | awk '{ if($4 != "Name" && $4 != "----") { $1=$2=$3=""; pri
 
 if test -n "$line"; then
     # eval "askcmd rm -rf $line"
+    echo "rm -i -rf $line" 1>&2
     eval "rm -i -rf $line"
 fi
