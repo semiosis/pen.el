@@ -98,12 +98,13 @@ tput civis
 
 # : "${message:="» Loading »»»»»»»»»"}"
 
-# Add some more then trim it
-full_message_length="$(echo -n "$message" | wc -c)"
+# Add some more spaces then trim it
+full_message_length="$(echo -n "Loading" | wc -c)"
+message="${message}          "
+message="$(printf -- "%s" "$message" | cut -c -${full_message_length} -)"
 
 message="» $message »»»»»»»»»"
 message="${message}»»»»»»»»»"
-message="$(printf -- "%s" "$message" | cut -c -${max_message_length} -)"
 
 IFS= read -r -d '' script <<'HEREDOC'
 for i in $(seq 314 -1 1); do
