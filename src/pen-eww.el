@@ -1871,7 +1871,7 @@ instead of `browse-url-new-window-flag'."
                 (sleep 2)
 
                 ;; Get this working a bit better
-                ;; The browser function I use must return the buffer, or take a callback
+                ;; The browser function I use must return the buffer, or take a callback (yeah, that's better)
                 (with-current-buffer (lg-eww url)
                   (eww-open-all-links filter recursively mirrored)))))
 
