@@ -1493,6 +1493,7 @@ Also see option `magit-blame-styles'."
            (cl-loop for f in '(org-verbatim
                                org-bold
                                org-todo
+                               org-done
                                hc-tab
                                org-block-begin-line
                                org-block-end-line
