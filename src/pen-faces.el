@@ -1377,7 +1377,6 @@ Also see option `magit-blame-styles'."
 
                              helm-selection
 
-                             hc-tab
                              hc-hard-hyphen
                              hc-hard-space
                              hc-other-char
@@ -1492,6 +1491,7 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(org-verbatim
                                org-bold
+                               hc-tab
                                bible-verse-ref
                                org-agenda-date
                                org-agenda-date-weekend
