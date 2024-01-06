@@ -406,11 +406,11 @@ With argument N not nil or 1, move forward N - 1 lines first."
     (org-table-export newfile "orgtbl-to-tsv")
     (pen-sps (concat "fpvd " (pen-q newfile)))))
 
-;; This advice didn't work
-(advice-add 'fpvd-org-table-export :around #'advise-to-yes)
-(advice-remove 'fpvd-org-table-export #'advise-to-yes)
-(advice-add 'fpvd-org-table-export :around #'advice-auto-yes)
-(advice-remove 'fpvd-org-table-export #'advice-auto-yes)
+;; This advice didn't work - I guess I need to advise org-table-export
+;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
+;; (advice-remove 'fpvd-org-table-export #'advise-to-yes)
+;; (advice-add 'fpvd-org-table-export :around #'advice-auto-yes)
+;; (advice-remove 'fpvd-org-table-export #'advice-auto-yes)
 
 (advice-add 'kill-buffer :around #'advise-to-yes)
 ;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
