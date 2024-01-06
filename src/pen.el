@@ -1,5 +1,5 @@
 ;;; pen.el
-;;;
+
 ;; So Jacob named the place Peniel, for he said,
 ;; “I have seen God face to face, yet my life has
 ;; been preserved.” - Genesis 32:30
