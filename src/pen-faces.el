@@ -1404,8 +1404,6 @@ Also see option `magit-blame-styles'."
                       lsp-ui-peek-selection
                       lsp-ui-peek-highlight
 
-                      avy-lead-face
-
                       ;; org-agenda-date-weekend-today
                       org-agenda-current-time
                       ;; org-imminent-deadline
