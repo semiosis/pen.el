@@ -1496,6 +1496,8 @@ Also see option `magit-blame-styles'."
                                font-lock-comment-face
                                bible-verse-ref
                                org-agenda-date
+                               lsp-ui-peek-list
+                               lsp-ui-peek-peek
                                org-agenda-date-weekend
                                org-agenda-date-weekend-today
                                org-imminent-deadline)
