@@ -264,6 +264,7 @@
   "Copy the link with the highest priority at the point."
   (interactive)
   (try
+   (pen-error-if-equals (chomp (str (car (eww-links-at-point)))) "")
    ;; (progn (pen-error-if-equals (link-hint--action-at-point :copy) "There is no link supporting the :copy action at the point.")
    ;;        (e/xc))
    (pen-error-if-equals (calibre-copy-org-link) "[[calibre:]]")
@@ -273,6 +274,7 @@
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
+   
    ""))
 
 (defun pen-copy-link-at-point ()
