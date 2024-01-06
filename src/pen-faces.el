@@ -1284,6 +1284,7 @@ Also see option `magit-blame-styles'."
 
                              font-lock-keyword-face
 
+                             company-tooltip-annotation
                              company-tooltip-selection
                              company-tooltip-common-selection
 

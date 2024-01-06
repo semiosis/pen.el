@@ -375,6 +375,7 @@ If ALL is nil, choose only between externally linked children."
   (pen-org-brain-switch-brain (chomp (cut text :d "/" :f 1)))
   (let* ((name (chomp (cut text :d "/" :f 2)))
          (all-targets (org-brain--all-targets))
+         (ii (major-mode-p org-brain-visualize-mode))
          (ensure-dir-is-idified
           (if org-brain--vis-entry
               (idify-org-files-here default-directory)))
