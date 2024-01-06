@@ -1295,7 +1295,7 @@ Also see option `magit-blame-styles'."
                              message-header-other
                              message-mml
 
-                             org-block
+                             ;; org-block
 
                              epe-git-face
                              epe-symbol-face
@@ -1450,6 +1450,7 @@ Also see option `magit-blame-styles'."
 
                       lsp-ui-peek-peek
 
+                      org-block
                       ;; hc-tab
                       ;; font-lock-keyword-face
 
@@ -1493,7 +1494,8 @@ Also see option `magit-blame-styles'."
                                org-bold
                                org-todo
                                hc-tab
-                               org-block
+                               org-block-begin-line
+                               org-block-end-line
                                font-lock-comment-face
                                font-lock-comment-face
                                bible-verse-ref
