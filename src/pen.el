@@ -241,7 +241,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-org)
 (require 'pen-alert)
 (require 'pen-org-agenda)
-;; This works but 
+;; This works but, I think I prefer plain ascii overall
 ;; (require 'pen-org-modern)
 (require 'pen-calendar-diary)
 (require 'pen-calfw)
