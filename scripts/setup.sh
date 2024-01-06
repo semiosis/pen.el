@@ -2116,4 +2116,4 @@ cargo install --force --path .
 
 e ia olivetti
 
-e ia org-modern
+e ia modus-themes org-modern
