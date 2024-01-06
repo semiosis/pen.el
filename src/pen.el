@@ -1,7 +1,8 @@
-;;; pen.el --- Prompt Engineering functions
+;;; pen.el
 ;;;
-;;; Prompt Engineering in Emacs
-;;; The Pen of Imagination
+;; So Jacob named the place Peniel, for he said,
+;; “I have seen God face to face, yet my life has
+;; been preserved.”
 
 ;; why did this run twice?
 (message "start of pen.el")
