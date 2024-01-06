@@ -1,5 +1,33 @@
 (require 'rpl-mode)
 
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/time.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/ver.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/re.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/all.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/rosie/rcfile.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/rosie/rpl_1_3.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/rosie/rpl_1_2.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/rosie/rpl_1_1.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/os.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/num.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/builtin/prelude.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/char.rpl
 ;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/csv.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/ts.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/net.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/id.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/date.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/json.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/Block.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/Script.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/SentenceBreak.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/LineBreak.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/WordBreak.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/Ascii.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/NumericType.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/Category.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/GraphemeBreak.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/Unicode/Property.rpl
+;; e:/volumes/home/shane/var/smulliga/source/git/rosie-pattern-language/rosie/rpl/word.rpl
 
 (provide 'pen-rosie)
