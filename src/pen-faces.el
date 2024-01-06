@@ -1399,7 +1399,7 @@ Also see option `magit-blame-styles'."
 
                              avy-lead-face
 
-                             org-agenda-date-weekend-today
+                             ;; org-agenda-date-weekend-today
                              org-agenda-current-time
                              org-imminent-deadline)
            do
@@ -1493,7 +1493,8 @@ Also see option `magit-blame-styles'."
                                org-bold
                                bible-verse-ref
                                org-agenda-date
-                               org-agenda-date-weekend)
+                               org-agenda-date-weekend
+                               org-agenda-date-weekend-today)
                     do
                     (set-face-attribute
                      f fr
