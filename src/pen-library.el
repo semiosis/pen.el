@@ -274,7 +274,6 @@
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'sexp)))) "")
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'url)))) "")
    (pen-error-if-equals (chomp (pen-sn "xurls" (str (thing-at-point 'line)))) "")
-   
    ""))
 
 (defun pen-copy-link-at-point ()
