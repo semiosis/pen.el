@@ -2124,4 +2124,7 @@ agi graphviz
 (
 cd /root/programs
 wget "https://github.com/RangerMauve/hyper-gateway/releases/download/v3.6.0/hyper-gateway-linux"
+chmod a+x hyper-gateway-linux
+cd /usr/bin
+ln -s /root/programs/hyper-gateway-linux hyper-gateway
 )
