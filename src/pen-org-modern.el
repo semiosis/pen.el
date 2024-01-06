@@ -13,7 +13,11 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(modus-themes-load-operandi)
+
+(require 'modus-themes)
+(load-theme 'modus-operandi)
+;; (modus-themes-load-themes)
+;; (modus-themes-load-operandi)
 
 ;; Choose some fonts
 ;; (set-face-attribute 'default nil :family "Iosevka")
