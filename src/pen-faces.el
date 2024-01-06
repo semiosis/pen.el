@@ -1510,6 +1510,8 @@ Also see option `magit-blame-styles'."
                                bible-verse-ref
                                org-agenda-date
                                lsp-ui-peek-list
+
+                               Man-underline
                                
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
@@ -1573,7 +1575,7 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
            (cl-loop for f in '(Man-overstrike
-                               Man-underline)
+                               )
                     do
                     (set-face-attribute
                      f fr
