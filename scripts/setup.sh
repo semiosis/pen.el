@@ -229,13 +229,14 @@ rm -rf /root/emacs
 
 apt install libreadline-dev
 apt install libbsd-dev
-# (
-# cd
-# git clone --depth 1 "https://gitlab.com/rosie-pattern-language/rosie"
-# cd rosie
-# make
-# make install
-# )
+
+(
+cd
+git clone "https://gitlab.com/rosie-pattern-language/rosie"
+cd rosie
+make
+make installforce
+)
 
 (
 export TERM=xterm
