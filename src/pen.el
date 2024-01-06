@@ -227,10 +227,6 @@ It's really meant for key bindings and which-key, so they should all be interact
       (require 'pen-hydra-org)))
 (require 'pen-lists)
 (require 'pen-projectile)
-(require 'pen-epl)
-(require 'pen-epl-test)
-(require 'pen-ebl)
-(require 'pen-ebl-test)
 (require 'pen-dates-and-locales)
 (if (inside-docker-p)
     (require 'pen-magit))
@@ -2263,6 +2259,10 @@ May use to generate code from comments."
 
 (defun pen-continue-prompt ())
 
+(require 'pen-epl)
+(require 'pen-epl-test)
+(require 'pen-ebl)
+(require 'pen-ebl-test)
 (require 'pen-borrowed)
 (require 'pen-core)
 (require 'pen-openai)
