@@ -3,9 +3,9 @@
 
 ;; Option 1: Per buffer
 (add-hook 'org-mode-hook #'org-modern-mode)
-(add-hook 'org-agenda-finalize-hook #'org-m
-(remove-hook 'org-mode-hook #'org-modern-mode)
-(remove-hook 'org-agenda-finalize-hook #'org-modern-agenda)odern-agenda)
+(add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
+;; (remove-hook 'org-mode-hook #'org-modern-mode)
+;; (remove-hook 'org-agenda-finalize-hook #'org-modern-agenda)
 
 ;; Option 2: Globally
 (with-eval-after-load 'org (global-org-modern-mode))
