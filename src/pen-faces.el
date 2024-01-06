@@ -1467,6 +1467,8 @@ Also see option `magit-blame-styles'."
                       git-gutter+-deleted
                       git-gutter+-commit-header-face
 
+                      org-agenda-calendar-event
+
                       ;; org-verbatim
 
                       popup-menu-mouse-face
