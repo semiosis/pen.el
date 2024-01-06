@@ -1569,7 +1569,7 @@ Also see option `magit-blame-styles'."
                      ;; :italic t
                      )))
 
-  ;; No underline, no inverse
+  ;; No underline, no inverse, no inherit
   (cl-loop for fr in (frame-list)
            do
            (cl-loop for f in '(Man-overstrike
