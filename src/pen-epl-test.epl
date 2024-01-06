@@ -6,6 +6,8 @@
 ;; I want it to be lispy through-and-through.
 ;; It simply generates the problog.
 
+(require 'pen-epl)
+
 ;; A progn
 (defun problog-model-burglary ()
   (interactive)
