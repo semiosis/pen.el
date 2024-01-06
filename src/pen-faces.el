@@ -1271,7 +1271,7 @@ Also see option `magit-blame-styles'."
   ;; avy-lead-face-2
 
   ;; j:invert-highlight-faces
-  (cl-loop for f in '(region iedit-occurrence
+  (cl-loop for f in '(region 
 
                              ivy-highlight-face
                              ivy-current-match
@@ -1530,7 +1530,8 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
 
-           (cl-loop for f in '(magit-diff-added-highlight)
+           (cl-loop for f in '(magit-diff-added-highlight
+                               iedit-occurrence)
                     do
                     (set-face-attribute
                      f fr
