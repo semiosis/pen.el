@@ -1273,138 +1273,138 @@ Also see option `magit-blame-styles'."
   ;; j:invert-highlight-faces
   (cl-loop for f in '(region 
 
-                             ivy-highlight-face
-                             ivy-current-match
+                      ivy-highlight-face
+                      ivy-current-match
 
-                             popup-menu-face
+                      popup-menu-face
 
-                             ebdb-person-name
+                      ebdb-person-name
 
-                             line-number
+                      line-number
 
-                             font-lock-keyword-face
+                      font-lock-keyword-face
 
-                             company-tooltip-annotation
-                             company-tooltip-selection
-                             company-tooltip-common-selection
+                      company-tooltip-annotation
+                      company-tooltip-selection
+                      company-tooltip-common-selection
 
-                             diredfl-dir-heading
+                      diredfl-dir-heading
 
-                             notmuch-message-summary-face
-                             message-header-subject
-                             message-header-to
-                             message-header-other
-                             message-mml
+                      notmuch-message-summary-face
+                      message-header-subject
+                      message-header-to
+                      message-header-other
+                      message-mml
 
-                             magit-diff-added-highlight
+                      magit-diff-added-highlight
 
-                             ;; org-block
+                      ;; org-block
 
-                             epe-git-face
-                             epe-symbol-face
-                             epe-sudo-symbol-face
+                      epe-git-face
+                      epe-symbol-face
+                      epe-sudo-symbol-face
 
-                             ;; font-lock-keyword-face
+                      ;; font-lock-keyword-face
 
-                             ;; window-divider
-                             ;; window-divider-first-pixel
-                             ;; window-divider-last-pixel
+                      ;; window-divider
+                      ;; window-divider-first-pixel
+                      ;; window-divider-last-pixel
 
-                             minibuffer-prompt
+                      minibuffer-prompt
 
-                             evil-ex-substitute-replacement
+                      evil-ex-substitute-replacement
 
-                             bible-verse-ref-notes
+                      bible-verse-ref-notes
 
-                             org-hide
-                             org-level-1
-                             org-level-2
-                             org-level-3
-                             org-level-4
-                             org-level-5
+                      org-hide
+                      org-level-1
+                      org-level-2
+                      org-level-3
+                      org-level-4
+                      org-level-5
 
-                             ;; org-verbatim
+                      ;; org-verbatim
 
-                             message-header-name
+                      message-header-name
 
-                             mode-line-active
+                      mode-line-active
 
-                             lsp-ui-doc-background
-                             lsp-ui-doc-header
+                      lsp-ui-doc-background
+                      lsp-ui-doc-header
 
-                             link
+                      link
 
-                             ;; main menu bar face
-                             menu
+                      ;; main menu bar face
+                      menu
 
-                             epe-dir-face
+                      epe-dir-face
 
-                             fringe
+                      fringe
 
-                             tty-menu-enabled-face
-                             tty-menu-disabled-face
+                      tty-menu-enabled-face
+                      tty-menu-disabled-face
 
-                             consult-grep-context
+                      consult-grep-context
 
-                             ;; helm-grep-cmd-line
-                             ;; helm-grep-file
-                             ;; helm-grep-finish
-                             ;; helm-grep-lineno
-                             helm-grep-match
-                             ivy-grep-info
-                             ivy-grep-line-number
+                      ;; helm-grep-cmd-line
+                      ;; helm-grep-file
+                      ;; helm-grep-finish
+                      ;; helm-grep-lineno
+                      helm-grep-match
+                      ivy-grep-info
+                      ivy-grep-line-number
 
-                             ivy-current-match
-                             ivy-match-required-face
-                             ivy-minibuffer-match-face-1
-                             ivy-minibuffer-match-face-2
-                             ivy-minibuffer-match-face-3
-                             ivy-minibuffer-match-face-4
-                             ivy-minibuffer-match-highlight
-                             ivy-prompt-match
-
-
-                             ;; wgrep-delete-face
-                             ;; wgrep-done-face
-                             ;; wgrep-face
-                             ;; wgrep-file-face
-                             ;; wgrep-reject-face
+                      ivy-current-match
+                      ivy-match-required-face
+                      ivy-minibuffer-match-face-1
+                      ivy-minibuffer-match-face-2
+                      ivy-minibuffer-match-face-3
+                      ivy-minibuffer-match-face-4
+                      ivy-minibuffer-match-highlight
+                      ivy-prompt-match
 
 
-                             ;; git-gutter+-unchanged
-                             ;; git-gutter+-modified
-                             ;; git-gutter+-separator
-                             ;; git-gutter+-added
-                             ;; git-gutter+-deleted
-                             ;; git-gutter+-commit-header-face
+                      ;; wgrep-delete-face
+                      ;; wgrep-done-face
+                      ;; wgrep-face
+                      ;; wgrep-file-face
+                      ;; wgrep-reject-face
 
-                             helm-selection
 
-                             hc-hard-hyphen
-                             hc-hard-space
-                             hc-other-char
-                             ;; hc-tab
-                             hc-trailing-whitespace
+                      ;; git-gutter+-unchanged
+                      ;; git-gutter+-modified
+                      ;; git-gutter+-separator
+                      ;; git-gutter+-added
+                      ;; git-gutter+-deleted
+                      ;; git-gutter+-commit-header-face
 
-                             hl-line
+                      helm-selection
 
-                             magit-diff-file-heading-highlight
-                             magit-diff-removed-highlight
+                      hc-hard-hyphen
+                      hc-hard-space
+                      hc-other-char
+                      ;; hc-tab
+                      hc-trailing-whitespace
 
-                             ;; Highlight is the face for moving cursur over a button
-                             highlight
+                      hl-line
 
-                             lsp-ui-peek-header
-                             lsp-ui-peek-footer
-                             lsp-ui-peek-selection
-                             lsp-ui-peek-highlight
+                      magit-diff-file-heading-highlight
+                      magit-diff-removed-highlight
 
-                             avy-lead-face
+                      ;; Highlight is the face for moving cursur over a button
+                      highlight
 
-                             ;; org-agenda-date-weekend-today
-                             org-agenda-current-time
-                             ;; org-imminent-deadline
-                             )
+                      lsp-ui-peek-header
+                      lsp-ui-peek-footer
+                      lsp-ui-peek-selection
+                      lsp-ui-peek-highlight
+
+                      avy-lead-face
+
+                      ;; org-agenda-date-weekend-today
+                      org-agenda-current-time
+                      ;; org-imminent-deadline
+                      )
            do
            (set-face-attribute
             f nil
@@ -1531,7 +1531,8 @@ Also see option `magit-blame-styles'."
            do
 
            (cl-loop for f in '(magit-diff-added-highlight
-                               iedit-occurrence)
+                               iedit-occurrence
+                               Man-overstrike)
                     do
                     (set-face-attribute
                      f fr
@@ -1540,7 +1541,24 @@ Also see option `magit-blame-styles'."
                      :underline t
                      :box nil
                      :strike-through nil
-                     :slant 'italic
+                     ;; :slant 'italic
+
+                     ;; :italic t
+                     )))
+
+  ;; Inverse with no underline
+  (cl-loop for fr in (frame-list)
+           do
+           (cl-loop for f in '(Man-underline)
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video t
+                     :overline nil
+                     :underline nil
+                     :box nil
+                     :strike-through nil
+                     ;; :slant nil
 
                      ;; :italic t
                      )))
