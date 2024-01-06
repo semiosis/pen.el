@@ -1401,7 +1401,8 @@ Also see option `magit-blame-styles'."
 
                              ;; org-agenda-date-weekend-today
                              org-agenda-current-time
-                             org-imminent-deadline)
+                             ;; org-imminent-deadline
+                             )
            do
            (set-face-attribute
             f nil
@@ -1494,7 +1495,8 @@ Also see option `magit-blame-styles'."
                                bible-verse-ref
                                org-agenda-date
                                org-agenda-date-weekend
-                               org-agenda-date-weekend-today)
+                               org-agenda-date-weekend-today
+                               org-imminent-deadline)
                     do
                     (set-face-attribute
                      f fr
