@@ -2356,3 +2356,5 @@ mermaid-docker-mode
 dockerfile-ts-mode
 nano-agenda
 shr-external-rendering-functions
+org-modern
+modus-themes
