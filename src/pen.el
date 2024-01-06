@@ -2390,6 +2390,7 @@ May use to generate code from comments."
 (require 'pen-addressbook)
 (require 'pen-autoinsert)
 (require 'pen-yatemplate)
+(require 'pen-hyperdrive)
 (require 'pen-rhizome)
 (require 'pen-net)
 (require 'pen-alarm)
