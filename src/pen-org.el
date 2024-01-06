@@ -412,6 +412,8 @@ With argument N not nil or 1, move forward N - 1 lines first."
 ;; (advice-add 'fpvd-org-table-export :around #'advice-auto-yes)
 ;; (advice-remove 'fpvd-org-table-export #'advice-auto-yes)
 
+(advice-add 'org-table-export :around #'advise-to-yes)
+
 (advice-add 'kill-buffer :around #'advise-to-yes)
 ;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
 
