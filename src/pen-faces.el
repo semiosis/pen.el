@@ -1273,7 +1273,7 @@ Also see option `magit-blame-styles'."
   ;; avy-lead-face-2
 
   ;; j:invert-highlight-faces
-  (cl-loop for f in '(region 
+  (cl-loop for f in '(region
 
                       ivy-highlight-face
                       ivy-current-match
@@ -1512,7 +1512,7 @@ Also see option `magit-blame-styles'."
                                lsp-ui-peek-list
 
                                Man-underline
-                               
+
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
                                org-agenda-date-weekend-today
