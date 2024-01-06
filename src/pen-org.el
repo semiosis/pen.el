@@ -411,7 +411,6 @@ With argument N not nil or 1, move forward N - 1 lines first."
 ;; (advice-remove 'fpvd-org-table-export #'advise-to-yes)
 ;; (advice-add 'fpvd-org-table-export :around #'advice-auto-yes)
 ;; (advice-remove 'fpvd-org-table-export #'advice-auto-yes)
-
 ;; That didn't work either
 ;; (advice-add 'org-table-export :around #'advise-to-yes)
 ;; (advice-remove 'org-table-export #'advise-to-yes)
