@@ -2120,3 +2120,7 @@ e ia olivetti
 e ia modus-themes org-modern
 
 agi graphviz
+
+(
+wget "https://github.com/RangerMauve/hyper-gateway/releases/download/v3.6.0/hyper-gateway-linux"
+)
