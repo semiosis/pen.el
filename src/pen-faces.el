@@ -1493,6 +1493,7 @@ Also see option `magit-blame-styles'."
                                org-bold
                                org-todo
                                hc-tab
+                               org-block
                                font-lock-comment-face
                                font-lock-comment-face
                                bible-verse-ref
