@@ -1441,8 +1441,10 @@ Also see option `magit-blame-styles'."
                        (face-attribute f :slant fr)
                        'italic)
                       (set-face-attribute f fr
+                                          :inverse-video t
                                           :italic nil
-                                          :inverse-video t)
+                                          ;; :slant 'normal
+                                          )
                     ;; (set-face-attribute f fr
                     ;;                       :italic nil
                     ;;                       :inverse-video nil)
