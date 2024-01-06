@@ -1500,6 +1500,7 @@ Also see option `magit-blame-styles'."
                                org-todo
                                org-done
                                hc-tab
+                               company-tooltip
                                org-block-begin-line
                                org-block-end-line
                                font-lock-comment-face
