@@ -12,4 +12,6 @@
 ;;     (global-set-key (kbd (concat margin "<" multiple "wheel-up>")) 'mwheel-scroll)
 ;;     (global-set-key (kbd (concat margin "<" multiple "wheel-down>")) 'mwheel-scroll)))
 
+(require 'olivetti)
+
 (provide 'pen-perfect-margin)
