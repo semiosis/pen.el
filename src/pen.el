@@ -2424,12 +2424,6 @@ May use to generate code from comments."
 (require 'pen-browser)
 (require 'peniel)
 (require 'pen-discipleship-group)
-
-;; (if (inside-docker-p)
-;;     (progn
-;;       (require 'pen-chatgpt)
-;;       (load-library "pen-chatgpt")))
-
 (require 'pen-custom-conf)
 
 (if (inside-docker-p)
