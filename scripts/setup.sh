@@ -2118,3 +2118,5 @@ cargo install --force --path .
 e ia olivetti
 
 e ia modus-themes org-modern
+
+agi graphviz
