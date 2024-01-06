@@ -1508,6 +1508,7 @@ Also see option `magit-blame-styles'."
                                bible-verse-ref
                                org-agenda-date
                                lsp-ui-peek-list
+                               Man-overstrike
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
                                org-agenda-date-weekend-today
@@ -1532,7 +1533,7 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(magit-diff-added-highlight
                                iedit-occurrence
-                               Man-overstrike)
+                               )
                     do
                     (set-face-attribute
                      f fr
