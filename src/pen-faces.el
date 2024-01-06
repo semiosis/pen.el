@@ -1491,6 +1491,7 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(org-verbatim
                                org-bold
+                               org-todo
                                hc-tab
                                font-lock-comment-face
                                font-lock-comment-face
