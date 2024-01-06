@@ -1284,6 +1284,9 @@ Also see option `magit-blame-styles'."
 
                       line-number
 
+                      ;; Good for YAML
+                      font-lock-property-use-face
+
                       font-lock-keyword-face
 
                       company-tooltip-annotation
