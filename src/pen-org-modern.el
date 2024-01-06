@@ -1,11 +1,14 @@
 (require 'modus-themes)
+(require 'org-modern)
 
 ;; Option 1: Per buffer
 (add-hook 'org-mode-hook #'org-modern-mode)
-(add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
+(add-hook 'org-agenda-finalize-hook #'org-m
+(remove-hook 'org-mode-hook #'org-modern-mode)
+(remove-hook 'org-agenda-finalize-hook #'org-modern-agenda)odern-agenda)
 
 ;; Option 2: Globally
-;; (with-eval-after-load 'org (global-org-modern-mode))
+(with-eval-after-load 'org (global-org-modern-mode))
 
 
 ;; Minimal UI
@@ -15,7 +18,7 @@
 (scroll-bar-mode -1)
 
 (require 'modus-themes)
-(load-theme 'modus-operandi)
+;; (load-theme 'modus-operandi)
 ;; (modus-themes-load-themes)
 ;; (modus-themes-load-operandi)
 
