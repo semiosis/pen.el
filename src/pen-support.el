@@ -2105,7 +2105,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun advice-auto-yes (proc &rest args)
   (let ((res
-         (eval `(auto-no (apply ,proc ,args)))))
+         (eval `(auto-yes (apply ,proc ,args)))))
     res))
 
 (defun advice-auto-no (proc &rest args)
