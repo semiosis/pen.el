@@ -1168,8 +1168,6 @@ Also see option `magit-blame-styles'."
                              ivy-highlight-face
                              ivy-current-match
 
-                             avy-lead-face
-
                              org-agenda-date-weekend-today
                              org-agenda-current-time
                              org-imminent-deadline)
@@ -1542,7 +1540,7 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(magit-diff-added-highlight
                                iedit-occurrence
-                               )
+                               avy-lead-face)
                     do
                     (set-face-attribute
                      f fr
