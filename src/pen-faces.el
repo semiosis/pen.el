@@ -1295,6 +1295,8 @@ Also see option `magit-blame-styles'."
                              message-header-other
                              message-mml
 
+                             magit-diff-added-highlight
+
                              ;; org-block
 
                              epe-git-face
@@ -1505,11 +1507,30 @@ Also see option `magit-blame-styles'."
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
                                org-agenda-date-weekend-today
-                               org-imminent-deadline)
+                               org-imminent-deadline
+
+                               magit-diff-removed-highlight)
                     do
                     (set-face-attribute
                      f fr
                      :inverse-video nil
+                     :overline nil
+                     :underline t
+                     :box nil
+                     :strike-through nil
+                     :slant 'italic
+
+                     ;; :italic t
+                     )))
+
+  (cl-loop for fr in (frame-list)
+           do
+
+           (cl-loop for f in '(magit-diff-added-highlight)
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video t
                      :overline nil
                      :underline t
                      :box nil
