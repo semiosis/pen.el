@@ -118,20 +118,22 @@ argument, prompt for a regular expression using `read-regexp'."
 ;; https://stackoverflow.com/questions/884498/how-do-i-intercept-ctrl-g-in-emacs
 (defun pen-customize-face (face)
   (interactive
-   (without-hl-line
-    (list
-     (unless (with-local-quit
-               (setq f (str-or (fz (pen-list-faces)
-                                   (if (and
-                                        (face-at-point)
-                                        (yes-or-no-p "Face at point?"))
-                                       (symbol-name
-                                        (face-at-point)))
-                                   nil
-                                   "face: ")
-                               nil)))
-       (progn
-         (setq quit-flag nil))))))
+   (let ((f))
+     (without-hl-line
+      (list
+       (unless (with-local-quit
+                 (setq f (str-or (fz (pen-list-faces)
+                                     (if (and
+                                          (face-at-point)
+                                          (yes-or-no-p "Face at point?"))
+                                         (symbol-name
+                                          (face-at-point)))
+                                     nil
+                                     "face: ")
+                                 nil)))
+         (progn
+           (setq quit-flag nil)))))
+     (list f)))
 
   (if face
       (if (>= (prefix-numeric-value current-prefix-arg) 4)
@@ -1508,7 +1510,7 @@ Also see option `magit-blame-styles'."
                                bible-verse-ref
                                org-agenda-date
                                lsp-ui-peek-list
-                               Man-overstrike
+                               
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
                                org-agenda-date-weekend-today
@@ -1527,6 +1529,8 @@ Also see option `magit-blame-styles'."
 
                      ;; :italic t
                      )))
+
+
 
   (cl-loop for fr in (frame-list)
            do
@@ -1550,11 +1554,30 @@ Also see option `magit-blame-styles'."
   ;; Inverse with no underline
   (cl-loop for fr in (frame-list)
            do
-           (cl-loop for f in '(Man-underline)
+           (cl-loop for f in '(
+                               Man-underline)
                     do
                     (set-face-attribute
                      f fr
                      :inverse-video t
+                     :overline nil
+                     :underline nil
+                     :box nil
+                     :strike-through nil
+                     ;; :slant nil
+
+                     ;; :italic t
+                     )))
+
+  ;; No underline, no inverse
+  (cl-loop for fr in (frame-list)
+           do
+           (cl-loop for f in '(Man-overstrike
+                               Man-underline)
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video nil
                      :overline nil
                      :underline nil
                      :box nil
