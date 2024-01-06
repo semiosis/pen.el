@@ -932,6 +932,14 @@ If EXTERNAL is double prefix, browse in new buffer."
      (t
       (lg-eww url)))))
 
+(defun eww-copy-link (&optional external mouse-event)
+  "Browse the URL under point.
+If EXTERNAL is single prefix, browse the URL using `shr-external-browser'.
+If EXTERNAL is double prefix, browse in new buffer."
+  (interactive (list current-prefix-arg last-nonmenu-event))
+  (mouse-set-point mouse-event)
+
+  (xc (get-text-property (point) 'shr-url)))
 
 (defun rename-eww-buffer-unique (&optional url)
   (interactive)
