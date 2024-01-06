@@ -9,6 +9,18 @@ export TTY
 checktut=y
 checkinfo=y
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -callingfromemacs) {
+        checktut=n
+        checkinfo=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 IFS= read -r -d '' shcode <<'HEREDOC'
 /usr/bin/man bash-builtins |
     sed -e '0,/SYNOPSIS/d' -e '/^$/,$d' |
