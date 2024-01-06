@@ -6,6 +6,9 @@ export TTY
 
 . $PENELD/scripts/utils.sh
 
+checktut=y
+checkinfo=y
+
 IFS= read -r -d '' shcode <<'HEREDOC'
 /usr/bin/man bash-builtins |
     sed -e '0,/SYNOPSIS/d' -e '/^$/,$d' |
@@ -54,14 +57,14 @@ fi
 if test "$#" -gt 0; then
     last_arg="${@: -1}"
 
-    if tut -q "$last_arg"; then
+    if test "$checktut" = y && tut -q "$last_arg"; then
         if yn "tut $last_arg? (y) or man $last_arg? (n)"; then
             tut "$last_arg"
             exit "$?"
         fi
     fi
 
-    if info -q "$last_arg"; then
+    if test "$checkinfo" = y && info -q "$last_arg"; then
         echo "Info for ${last_arg} exists." | hls blue 1>&2
         if yn "info $last_arg? (y) or man $last_arg? (n)"; then
             info "$@"
