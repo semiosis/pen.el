@@ -2366,7 +2366,6 @@ May use to generate code from comments."
 (if (inside-docker-p)
     (require 'pen-dired))
 (require 'pen-semiosis-protocol)
-(require 'pen-alethea-ai)
 (require 'pen-mad-teaparty)
 (require 'pen-games)
 (require 'pen-keycast)
