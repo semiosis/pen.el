@@ -1581,6 +1581,7 @@ Also see option `magit-blame-styles'."
                      :overline nil
                      :underline nil
                      :box nil
+                     :inherit nil
                      :strike-through nil
                      ;; :slant nil
 
