@@ -1380,7 +1380,7 @@ Also see option `magit-blame-styles'."
                              hc-hard-hyphen
                              hc-hard-space
                              hc-other-char
-                             hc-tab
+                             ;; hc-tab
                              hc-trailing-whitespace
 
                              hl-line
@@ -1492,6 +1492,8 @@ Also see option `magit-blame-styles'."
            (cl-loop for f in '(org-verbatim
                                org-bold
                                hc-tab
+                               font-lock-comment-face
+                               font-lock-comment-face
                                bible-verse-ref
                                org-agenda-date
                                org-agenda-date-weekend
@@ -1529,7 +1531,7 @@ Also see option `magit-blame-styles'."
                             hc-trailing-whitespace
                             trailing-whitespace
                             whitespace-trailing
-                            font-lock-comment-face
+                            ;; font-lock-comment-face
                             info-code-face
 
                             whitespace-big-indent
