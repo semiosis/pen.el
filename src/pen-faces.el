@@ -1583,7 +1583,7 @@ Also see option `magit-blame-styles'."
                      :box nil
                      :inherit nil
                      :strike-through nil
-                     ;; :slant nil
+                     :slant 'normal
 
                      ;; :italic t
                      )))
