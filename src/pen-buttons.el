@@ -58,7 +58,7 @@
 (defun button-show-properties-here ()
   (interactive)
   (let ((b (button-at (point))))
-    (with-current-buffer (btv `(
+    (with-current-buffer (etv `(
                                (action . ,(button-get b 'action))
                                (mouse-action . ,(button-get b 'mouse-action))
                                (face . ,(button-get b 'face))
