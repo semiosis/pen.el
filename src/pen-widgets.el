@@ -9,7 +9,7 @@
   (interactive)
   (widget-button-press (point)))
 
-(defun buffer-tv (o)
+(defmacro buffer-tv (&rest body)
   "Captures inserts, and opens in a tv"
   (new-buffer-from-o o))
 (defalias 'btv 'buffer-tv)
