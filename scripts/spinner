@@ -26,6 +26,7 @@ esac; done
 
 colorize() { lolcat -f; }
 makebluebg() { printf -- "%s" "[44m"; sed -u "s=\(.\)\(\[38\)=\1[44m\1\2=g"; }
+# makebluebg() { printf -- "%s" "[48;2;21;101;192m"; sed -u "s=\(.\)\(\[38\)=\1[48;2;21;101;192m\1\2=g"; }
 fontify() { smbraille; }
 
 if test -n "$runfn"; then
