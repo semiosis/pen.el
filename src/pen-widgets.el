@@ -16,7 +16,7 @@
 ;; (widget-get (widget-at-point) :options)
 (defun widget-show-properties-here ()
   (interactive)
-  (with-current-buffer (btv (plist-get-keys (widget-at (point))))
+  (with-current-buffer (etv (plist-get-keys (widget-at (point))))
     (emacs-lisp-mode)))
 
 (defun widget-get-action (widget &optional event)
