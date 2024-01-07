@@ -10,7 +10,7 @@
   (widget-button-press (point)))
 
 (defun buffer-tv (o)
-  "like tv but returns the buffer"
+  "Captures inserts, opens the bufferstring in tv and returns the buffer"
   (new-buffer-from-o o))
 (defalias 'btv 'buffer-tv)
 
