@@ -9,9 +9,10 @@
   (interactive)
   (widget-button-press (point)))
 
-(defun btv (o)
+(defun buffer-tv (o)
   "like tv but returns the buffer"
   (new-buffer-from-o o))
+(defalias 'btv 'buffer-tv)
 
 ;; (widget-get (widget-at-point) :options)
 (defun widget-show-properties-here ()
