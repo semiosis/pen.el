@@ -205,22 +205,16 @@ popped up from."
      (when select
        (select-window buffer-window)))))
 
-(defun ebdb (style regexp &optional fmt)
-  "Display all records in the EBDB matching REGEXP.
-Search all fields, and display using formatter FMT, using style
-STYLE: meaning display, append, or filter."
+
+(defun ebdb-around-advice (proc style regexp &optional fmt)
   (interactive (list (ebdb-search-style)
                      (ebdb-search-read 'all)
                      (ebdb-formatter-prefix)))
   (setq fmt (or fmt
                 ebdb-full-formatter))
-  (ebdb-search-display style `((ebdb-field-name ,regexp)
-                               (organization ,regexp)
-                               (ebdb-field-mail ,regexp)
-                               (ebdb-field-notes ,regexp)
-                               (ebdb-field-user ,regexp)
-                               (ebdb-field-phone ,regexp)
-                               (ebdb-field-address ,regexp))
-                       fmt))
+  (let ((res (apply proc (list style regexp fmt))))
+    res))
+(advice-add 'ebdb :around #'ebdb-around-advice)
+;; (advice-remove 'ebdb #'ebdb-around-advice)
 
 (provide 'pen-addressbook)
