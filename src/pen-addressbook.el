@@ -116,4 +116,12 @@
 
   (ebdb-mouse-menu event))
 
+(define-key ebdb-mode-map (kbd "w f") nil)
+(define-key ebdb-mode-map (kbd "w m") nil)
+(define-key ebdb-mode-map (kbd "w r") nil)
+
+(define-key ebdb-mode-map (kbd "M-W f") 'ebdb-copy-fields-as-kill)
+(define-key ebdb-mode-map (kbd "M-W m") 'ebdb-copy-mail-as-kill)
+(define-key ebdb-mode-map (kbd "M-W r") 'ebdb-copy-records-as-kill)
+
 (provide 'pen-addressbook)
