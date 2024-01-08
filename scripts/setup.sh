@@ -2128,3 +2128,5 @@ chmod a+x hyper-gateway-linux
 cd /usr/bin
 ln -s /root/programs/hyper-gateway-linux hyper-gateway
 )
+
+cargo install gitui

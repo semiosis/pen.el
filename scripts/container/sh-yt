@@ -16,7 +16,7 @@ tn yt -tty -v $(cmd-nice-posix "$url")
 v  yt -vlc -v $(cmd-nice-posix "$url")
 p  yt -a $(cmd-nice-posix "$url")
 s  play-song $(cmd-nice-posix "$url")
-c  chrome $(cmd-nice-posix "$url")
+cg chrome $(cmd-nice-posix "$url")
 f  ff $(cmd-nice-posix "$url")
 r  readsubs $(cmd-nice-posix "$url")
 HEREDOC
@@ -34,7 +34,7 @@ case "$d" in
     v) cmd="yt -vlc -v $(cmd-nice-posix "$url")" ;;
     p) cmd="yt -a $(cmd-nice-posix "$url") &" ;;
     s) cmd="play-song $(cmd-nice-posix "$url") &" ;;
-    c) cmd="chrome $(cmd-nice-posix "$url")" ;;
+    c|g) cmd="chrome $(cmd-nice-posix "$url")" ;;
     f) cmd="ff $(cmd-nice-posix "$url")" ;;
     r) cmd="readsubs $(cmd-nice-posix "$url")" ;;
 esac
