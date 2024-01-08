@@ -121,6 +121,8 @@
 (define-key ebdb-mode-map (kbd "w r") nil)
 (define-key ebdb-mode-map (kbd "w") nil)
 
+(define-key ebdb-mode-map (kbd "w") 'get-path)
+
 (define-key ebdb-mode-map (kbd "M-W f") 'ebdb-copy-fields-as-kill)
 (define-key ebdb-mode-map (kbd "M-W m") 'ebdb-copy-mail-as-kill)
 (define-key ebdb-mode-map (kbd "M-W r") 'ebdb-copy-records-as-kill)
