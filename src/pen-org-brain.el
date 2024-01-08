@@ -161,9 +161,15 @@
 
 (defun org-brain-local-children-around-advice (proc &rest args)
   (let ((res (apply proc args)))
+    (mapcar (lambda (e)
+              (cons
+               ;; Remove the date from each heading
+               (car e)
+               (cdr e)))
+            res)
     res))
 (advice-add 'org-brain-local-children :around #'org-brain-local-children-around-advice)
-(advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice)
+;; (advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice)
 
 (defun org-brain-list-child-headings ()
   "local-child / heading"
