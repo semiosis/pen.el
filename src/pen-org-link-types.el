@@ -305,6 +305,11 @@ PATH is the sexp to evaluate, as a string."
   "Run v `pattern'."
   (pen-sps (concat "v " (pen-q pattern))))
 
+(org-add-link-type "ebdb" 'pen-follow-ebdb-link)
+(defun pen-follow-ebdb-link (pattern)
+  "Run ebdb `pattern'."
+  (ebdb (ebdb-search-style) pattern))
+
 (org-add-link-type "vs" 'pen-follow-vs-link)
 (defun pen-follow-vs-link (pattern)
   "Run v `pattern'."
