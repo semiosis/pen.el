@@ -90,7 +90,6 @@
 
 ;; j:ebdb-display-all-records
 
-;; nadvice - proc is the original function, passed in. do not modify
 (defun ebdb-display-all-records-around-advice (proc &optional fmt)
   (interactive)
   (setq fmt (or fmt
