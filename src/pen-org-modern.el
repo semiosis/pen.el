@@ -1,7 +1,8 @@
 (require 'modus-themes)
 (require 'org-modern)
 
-;; TODO 
+;; TODO Make it so the entire org babel bock header and footer are hidden
+;; and replaced with \ and /
 ;; j:org-modern--make-font-lock-keywords
 
 ;; Option 1: Per buffer
