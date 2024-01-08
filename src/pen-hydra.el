@@ -245,6 +245,10 @@ display values."
                          ("g" (df h-org-clink-g (pen-region-pipe "org clink -g")) "org clink -g")
                          ("u" 'h-org-clink-u "org clink -u")))
 
+(defun efs ()
+  (interactive)
+  (pen-sn (cmd "erase-trailing-whitespace-emacs" (get-path-nocreate))))
+
 (convert-hydra-to-sslk "lf"
                        (defhydra h_f (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "VISUAL: filtering"
                          "VISUAL: filtering"
@@ -254,7 +258,7 @@ display values."
                          ("d" #'major-mode-filter "filter by major mode function")
                          ("f" (df fi-with-fzf (pen-region-pipe "pen-tm filter")) "filter with fzf")
                          ("E" (df erase-starting-ws (pen-sn (concat "sed -i 's/^\\s\\+//' " (pen-q (get-path-nocreate))))) "erase starting whitespace")
-                         ("e" (df efs (pen-sn (cmd "erase-trailing-whitespace-emacs" (get-path-nocreate)))) "erase free/end whitespace")
+                         ("e" #'efs "erase free/end whitespace")
                          ("8" (df pep8 (bash (concat "autopep8 -i \"" buffer-file-name "\""))) "autopep8")
                          ("W" (df fixup-whitespace-line (fixup-whitespace)) "fixup whitespace") ; this only works on a single line
                          ("U" (df fi-uniqnosort (pen-region-pipe "pen-str uniq")) "uniq no sort")
