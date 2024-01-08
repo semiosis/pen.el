@@ -205,4 +205,20 @@ popped up from."
      (when select
        (select-window buffer-window)))))
 
+(defun ebdb (style regexp &optional fmt)
+  "Display all records in the EBDB matching REGEXP.
+Search all fields, and display using formatter FMT, using style
+STYLE: meaning display, append, or filter."
+  (interactive (list (ebdb-search-style)
+                     (ebdb-search-read 'all)
+                     (ebdb-formatter-prefix)))
+  (ebdb-search-display style `((ebdb-field-name ,regexp)
+                               (organization ,regexp)
+                               (ebdb-field-mail ,regexp)
+                               (ebdb-field-notes ,regexp)
+                               (ebdb-field-user ,regexp)
+                               (ebdb-field-phone ,regexp)
+                               (ebdb-field-address ,regexp))
+                       fmt))
+
 (provide 'pen-addressbook)
