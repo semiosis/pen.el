@@ -212,6 +212,8 @@ STYLE: meaning display, append, or filter."
   (interactive (list (ebdb-search-style)
                      (ebdb-search-read 'all)
                      (ebdb-formatter-prefix)))
+  (setq fmt (or fmt
+                ebdb-full-formatter))
   (ebdb-search-display style `((ebdb-field-name ,regexp)
                                (organization ,regexp)
                                (ebdb-field-mail ,regexp)
