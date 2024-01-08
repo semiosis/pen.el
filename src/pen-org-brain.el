@@ -159,18 +159,20 @@
                                      level))
                      children))))))))
 
-(defun org-brain-local-children-around-advice (proc &rest args)
-  (let ((res (apply proc args)))
-    (mapcar (lambda (e)
-              (list
-               (car e)
-               ;; Remove the date from each heading
-               (s-replace-regexp " <.*" "" 
-                                 (second e))
-               (third e)))
-            res)))
-(advice-add 'org-brain-local-children :around #'org-brain-local-children-around-advice)
-;; (advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice)
+;; Instead remove the date as part of rendering
+(comment
+ (defun org-brain-local-children-around-advice (proc &rest args)
+   (let ((res (apply proc args)))
+     (mapcar (lambda (e)
+               (list
+                (car e)
+                ;; Remove the date from each heading
+                (s-replace-regexp " <.*" "" 
+                                  (second e))
+                (third e)))
+             res)))
+ (advice-add 'org-brain-local-children :around #'org-brain-local-children-around-advice)
+ (advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice))
 
 (defun org-brain-list-child-headings ()
   "local-child / heading"
