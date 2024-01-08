@@ -1505,7 +1505,7 @@ Also see option `magit-blame-styles'."
                                hc-tab
                                company-tooltip
                                org-block-begin-line
-                               org-block-end-line
+                               ;; org-block-end-line
                                font-lock-comment-face
                                font-lock-comment-face
                                bible-verse-ref
