@@ -1,6 +1,9 @@
 (require 'modus-themes)
 (require 'org-modern)
 
+;; TODO 
+;; j:org-modern--make-font-lock-keywords
+
 ;; Option 1: Per buffer
 (add-hook 'org-mode-hook #'org-modern-mode)
 (add-hook 'org-agenda-finalize-hook #'org-modern-agenda)
