@@ -1407,7 +1407,8 @@ when s is a string, set the clipboard to s"
   (if s
       (progn
         (pen-sn "xsel --clipboard --input" s)
-        (if (not silent) (message "%s" (concat "Copied: " s))))
+        (if (not silent) (message "%s" (concat "Copied: " s)))
+        s)
     (progn
       ;; Frustratingly, shell-command-to-string uses the current directory.
       ;; (shell-command-to-string "xsel --clipboard --output")
