@@ -174,6 +174,34 @@
  (advice-add 'org-brain-local-children :around #'org-brain-local-children-around-advice)
  (advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice))
 
+;; sanitize
+(defun org-brain-remove-date-from-heading-string (s)
+  (s-replace-regexp " <.*" "" s))
+
+(defun org-brain-vis-title-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (org-brain-remove-date-from-heading-string res)))
+(advice-add 'org-brain-vis-title :around #'org-brain-vis-title-around-advice)
+;; (advice-remove 'org-brain-vis-title #'org-brain-vis-title-around-advice)
+
+
+;; (defun org-brain-insert-visualize-button (entry &optional face category)
+;;   "Insert a button, running `org-brain-visualize' on ENTRY when clicked.
+;; FACE is sent to `org-brain-display-face' and sets the face of the button.
+;; CATEGORY is used to set the `brain-category` text property."
+;;   (let ((annotation (org-brain-get-edge-annotation org-brain--vis-entry
+;;                                                    entry
+;;                                                    org-brain--vis-entry-keywords)))
+;;     (insert-text-button
+;;      (org-brain-vis-title entry)
+;;      'action (lambda (_x) (org-brain-visualize entry))
+;;      'id (org-brain-entry-identifier entry)
+;;      'follow-link t
+;;      'brain-category (or category 'default)
+;;      'help-echo annotation
+;;      'aa2u-text t
+;;      'face (org-brain-display-face entry face annotation))))
+
 (defun org-brain-list-child-headings ()
   "local-child / heading"
   (interactive)
