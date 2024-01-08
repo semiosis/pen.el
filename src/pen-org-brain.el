@@ -5,6 +5,10 @@
 
 (defset org-brains-dir "~/.pen/org-brain")
 
+(setq org-brain-exclude-tree-tag "nobrain")
+(setq org-brain-exclude-siblings-tag "nosiblings")
+(setq org-brain-exclude-local-parent-tag "nolocalparent")
+
 (setq org-directory (f-join pen-confdir "documents"))
 ;; But there can be multiple root directories for org-brain
 ;; So let's just set here the default one for 'agenda'

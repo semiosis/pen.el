@@ -127,4 +127,9 @@
 (define-key ebdb-mode-map (kbd "M-W m") 'ebdb-copy-mail-as-kill)
 (define-key ebdb-mode-map (kbd "M-W r") 'ebdb-copy-records-as-kill)
 
+(defun ebdb-copy-current-record-link ()
+
+  )
+ebdb-copy-fields-as-kill
+
 (provide 'pen-addressbook)
