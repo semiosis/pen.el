@@ -132,8 +132,13 @@
   (shut-up-c (call-interactively 'ebdb-copy-fields-as-kill))
   (xc (format "[[ebdb:%s]]" (car kill-ring))))
 
+;; This combined with shackle, seems to do the trick
 (defun ebdb-pop-up-window (buf &optional select pop)
-  "Display *EBDB* buffer BUF by popping up a new window.
+  (display-buffer buf))
+
+(comment
+ (defun ebdb-pop-up-window (buf &optional select pop)
+   "Display *EBDB* buffer BUF by popping up a new window.
 If SELECT is non-nil, select the new window after creation.
 
 POP is a list of (window split direction), where \"window\" is
@@ -151,54 +156,54 @@ If the whole POP argument is nil, re-use the current window.
 If the option `ebdb-join-atomic-windows' is non-nil, a popped-up
 buffer window will become part of whichever atomic window it was
 popped up from."
-  (let* ((buf (get-buffer buf))
-         (split-window (car-safe pop))
-         (buffer-window (get-buffer-window buf t))
-         direction size)
-    ;; It's already visible, re-use it and we're done.
-    (unless buffer-window
-      (setq direction (or (nth 2 pop)
-                          (if (> (window-total-width split-window)
-                                 (window-total-height split-window))
-                              'right
-                            'below))
-            size (cond ((null pop)
-                        nil)
-                       ((integerp (cadr pop))
-                        (cadr pop))
-                       ((or (floatp (cadr pop)) (floatp ebdb-default-window-size))
-                        (let ((flt (or (cadr pop) ebdb-default-window-size)))
-                          (round (* (if (memq direction '(left right))
-                                        (window-total-width split-window)
-                                      (window-total-height split-window))
-                                    (- 1 flt)))))
-                       ((integerp ebdb-default-window-size)
-                        ebdb-default-window-size)))
-      (if (not (or split-window size))
-          ;; Not splitting, but buffer isn't visible, just take up
-          ;; the whole window.
-          (progn
-            (pop-to-buffer-same-window buf)
-            (setq buffer-window (get-buffer-window buf t)))
-        ;; Otherwise split.
-        (setq
-         buffer-window
-         ;; If the window we're splitting is an atomic window,
-         ;; maybe make our buffer part of the atom.
-         (if (and ebdb-join-atomic-windows
-                  (window-atom-root split-window))
-             (display-buffer-in-atom-window
-              buf `((window . ,split-window)
-                    (side . ,direction)
-                    ,(if (eq direction 'below)
-                         `(window-height . ,size)
-                       `(window-width . ,size))))
-           (split-window
-            split-window size direction))))
-      (set-window-buffer buffer-window buf)
-      (display-buffer-record-window 'window buffer-window buf)
-      (set-window-prev-buffers buffer-window nil))
-    (when select
-      (select-window buffer-window))))
+   (let* ((buf (get-buffer buf))
+          (split-window (car-safe pop))
+          (buffer-window (get-buffer-window buf t))
+          direction size)
+     ;; It's already visible, re-use it and we're done.
+     (unless buffer-window
+       (setq direction (or (nth 2 pop)
+                           (if (> (window-total-width split-window)
+                                  (window-total-height split-window))
+                               'right
+                             'below))
+             size (cond ((null pop)
+                         nil)
+                        ((integerp (cadr pop))
+                         (cadr pop))
+                        ((or (floatp (cadr pop)) (floatp ebdb-default-window-size))
+                         (let ((flt (or (cadr pop) ebdb-default-window-size)))
+                           (round (* (if (memq direction '(left right))
+                                         (window-total-width split-window)
+                                       (window-total-height split-window))
+                                     (- 1 flt)))))
+                        ((integerp ebdb-default-window-size)
+                         ebdb-default-window-size)))
+       (if (not (or split-window size))
+           ;; Not splitting, but buffer isn't visible, just take up
+           ;; the whole window.
+           (progn
+             (pop-to-buffer-same-window buf)
+             (setq buffer-window (get-buffer-window buf t)))
+         ;; Otherwise split.
+         (setq
+          buffer-window
+          ;; If the window we're splitting is an atomic window,
+          ;; maybe make our buffer part of the atom.
+          (if (and ebdb-join-atomic-windows
+                   (window-atom-root split-window))
+              (display-buffer-in-atom-window
+               buf `((window . ,split-window)
+                     (side . ,direction)
+                     ,(if (eq direction 'below)
+                          `(window-height . ,size)
+                        `(window-width . ,size))))
+            (split-window
+             split-window size direction))))
+       (set-window-buffer buffer-window buf)
+       (display-buffer-record-window 'window buffer-window buf)
+       (set-window-prev-buffers buffer-window nil))
+     (when select
+       (select-window buffer-window)))))
 
 (provide 'pen-addressbook)

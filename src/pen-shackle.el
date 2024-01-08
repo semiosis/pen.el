@@ -153,6 +153,7 @@
             ;; Therefore, I use =save-window-excursion= for lispy's =e= binding
             ("*Racket REPL*" :select t :same t)
             ("*EBDB-Org*" :select t :same t)
+            ("*EBDB*" :select t :same t)
             ;; ("*Racket REPL*" :ignore t :select nil :same t)
             ("\\*YASnippet Tables.*" :regexp t :select t :same t)
             ("\\*Slack - .*" :regexp t :select t :same t)
