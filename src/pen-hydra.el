@@ -360,7 +360,7 @@ display values."
 (convert-hydra-to-sslk "lr"
                        (defhydra h_nr (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: refactoring"
                          "NORMAL: emacs"
-                         ("e" (df efs () (pen-sn (concat "sed -i 's/\\s\\+$//' " (pen-q buffer-file-name)))) "erase free/end whitespace")
+                         ("e" #'efs "erase free/end whitespace")
                          ("m" #'record-keyboard-macro-string "yank keys")
                          (">" (dff (e "/root/.pen/pen.yaml")) "pen-rc")
                          ("M" #'copy-keybinding-as-table-row-or-macro-string "yank key binding as table row")
