@@ -27,6 +27,7 @@
                        ;; visual-line-mode
                        ))
 (defset toggle-values '(openwith-confirm-invocation
+                        bible-mode-fast-enabled
                         ;; pen-disable-lsp
                         ;; pen-do-cider-auto-jack-in
                         lg-url-cache-enabled

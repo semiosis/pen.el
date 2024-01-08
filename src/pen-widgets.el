@@ -11,6 +11,11 @@
 
 (defmacro buffer-tv (&rest body)
   "Captures inserts, and opens in a tv"
+
+  (cl-letf (((symbol-function 'insert)
+             (lambda ())))
+    (ignore-errors (aggressive-indent-indent-defun l r)))
+
   (new-buffer-from-o o))
 (defalias 'btv 'buffer-tv)
 
