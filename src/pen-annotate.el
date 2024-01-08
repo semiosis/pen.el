@@ -669,8 +669,8 @@ results can be filtered with a simple query language: see
     res))
 (advice-add 'annotate--remove-annotation-property :around #'annotate--remove-annotation-property-around-advice)
 
-(define-key annotate-mode-map (kbd "C-c C-d") 'annotate-delete-annotation)
-C-c C-d			annotate-delete-annotation
-C-c C-s			annotate-show-annotation-summary
+(define-key annotate-mode-map (kbd "C-c C-s") nil)
+(define-key annotate-mode-map (kbd "C-c C-s") nil)
+(define-key annotate-mode-map (kbd "C-c") nil)
 
 (provide 'pen-annotate)
