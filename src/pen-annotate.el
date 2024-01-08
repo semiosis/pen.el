@@ -179,6 +179,7 @@
 (define-key annotate-mode-map (kbd "C-c ]") 'annotate-goto-next-annotation)
 (define-key annotate-mode-map (kbd "C-c [") 'annotate-goto-previous-annotation)
 (define-key annotate-mode-map (kbd "H-A m") 'annotate-show-annotation-summary)
+(define-key annotate-mode-map (kbd "H-A d") 'annotate-delete-annotation)
 (define-key annotate-mode-map (kbd "H-A h") 'annotate-show-annotation-summary-immediate)
 (define-key global-map (kbd "H-A S") 'annotate-show-annotation-summary-immediate)
 (define-key annotate-mode-map (kbd "H-A l") 'annotate-load-annotations-command)
@@ -667,5 +668,9 @@ results can be filtered with a simple query language: see
   (let ((res (ignore-errors (apply proc args))))
     res))
 (advice-add 'annotate--remove-annotation-property :around #'annotate--remove-annotation-property-around-advice)
+
+(define-key annotate-mode-map (kbd "C-c C-d") 'annotate-delete-annotation)
+C-c C-d			annotate-delete-annotation
+C-c C-s			annotate-show-annotation-summary
 
 (provide 'pen-annotate)
