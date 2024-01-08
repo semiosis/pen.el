@@ -129,7 +129,7 @@
 
 (defun ebdb-copy-fields-as-kill-org-link ()
   (interactive)
-  (call-interactively 'ebdb-copy-fields-as-kill)
-  (xc (format "[[ebdb:%s]]" (current-kill 1))))
+  (shut-up-c (call-interactively 'ebdb-copy-fields-as-kill))
+  (xc (format "[[ebdb:%s]]" (tv (car kill-ring)))))
 
 (provide 'pen-addressbook)
