@@ -159,6 +159,12 @@
                                      level))
                      children))))))))
 
+(defun org-brain-local-children-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    res))
+(advice-add 'org-brain-local-children :around #'org-brain-local-children-around-advice)
+(advice-remove 'org-brain-local-children #'org-brain-local-children-around-advice)
+
 (defun org-brain-list-child-headings ()
   "local-child / heading"
   (interactive)
