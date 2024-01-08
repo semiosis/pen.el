@@ -164,7 +164,8 @@
     (mapcar (lambda (e)
               (cons
                ;; Remove the date from each heading
-               (car e)
+               (s-replace-regexp " <.*" "" 
+                                 (car e))
                (cdr e)))
             res)
     res))
