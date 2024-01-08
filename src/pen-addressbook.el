@@ -85,7 +85,11 @@
       (setq regexp (ebdb-search-read 'all)))
 
   (let ((style (ebdb-search-style))
-        (fmt (ebdb-formatter-prefix)))
+        (fmt
+
+         ebdb-full-formatter
+         ;; (ebdb-formatter-prefix)
+         ))
     (ebdb style regexp fmt)))
 
 ;; j:ebdb-display-all-records
