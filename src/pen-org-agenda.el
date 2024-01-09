@@ -491,7 +491,9 @@ items if they have an hour specification like [h]h:mm."
         (when (or rtnall org-agenda-show-all-dates)
           (setq day-cnt (1+ day-cnt))
           (if (equal (calendar-current-date) date)
-              (insert "TODAY:\n"))
+              (insert
+               (concat (propertize "TODAY:" 'face 'pen-org-agenda-today-label)
+                       "\n")))
           (insert
            (if (stringp org-agenda-format-date)
                (format-time-string org-agenda-format-date
