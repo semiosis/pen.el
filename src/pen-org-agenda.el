@@ -3,7 +3,7 @@
 (use-package org-super-agenda :ensure t)
 (use-package org-alert :ensure t)
 
-(defface pen-org-agenda-today-label
+(defsetface pen-org-agenda-today-label
   '((t :inverse-video t))
   "Org-agenda today face."
   :group 'pen-org-agenda)
