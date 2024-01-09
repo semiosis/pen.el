@@ -37,7 +37,7 @@
                                :inverse-video t)
                 (propertize " " 'display `(space :align-to (- right ,(length datestr))))
                 (ph--with-face datestr
-                               :weight 'bold))))))
+                               :inverse-video t))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
