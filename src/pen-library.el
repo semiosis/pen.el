@@ -158,7 +158,7 @@
                      (cond (bible-mode-fast-enabled
                             " (Fast-Mode)")
                            (bible-mode-word-study-enabled
-                            " (WS)"))))
+                            " (Word-Study)"))))
 
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
