@@ -6,7 +6,7 @@
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header ()
   ""
-  (let* ((ph--full-header (abbreviate-file-name buffer-file-name))
+  (let* ((ph--full-header (get-path nil t))
          (ph--header (file-name-directory ph--full-header))
          (ph--drop-str "[...]"))
     (if (> (length ph--full-header)
@@ -36,7 +36,7 @@
   "Display path on headerline."
   (setq header-line-format
         '("" ;; invocation-name
-          (:eval (if (buffer-file-name)
+          (:eval (if (ph--make-header)
                      (ph--make-header)
                    "%b")))))
 
