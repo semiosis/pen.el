@@ -3,7 +3,10 @@
 (require 'path-headerline-mode)
 
 (defun ph-get-path-string ()
-  (str (get-path nil t)))
+  (let ((gp (get-path nil t)))
+    (if gp
+        (str gp)
+      "get-path=nil")))
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
