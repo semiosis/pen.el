@@ -1406,7 +1406,7 @@ Also see option `magit-blame-styles'."
                       lsp-ui-peek-selection
                       lsp-ui-peek-highlight
 
-                      org-agenda-date-today
+                      ;; org-agenda-date-today
 
                       ;; org-agenda-date-weekend-today
                       org-agenda-current-time
@@ -1480,6 +1480,7 @@ Also see option `magit-blame-styles'."
                       tab-bar-tab
 
                       org-agenda-calendar-event
+                      ;; org-agenda-date-today
 
                       ;; org-verbatim
 
