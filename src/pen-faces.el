@@ -1406,6 +1406,8 @@ Also see option `magit-blame-styles'."
                       lsp-ui-peek-selection
                       lsp-ui-peek-highlight
 
+                      pen-org-agenda-today-label
+
                       ;; org-agenda-date-today
 
                       ;; org-agenda-date-weekend-today
