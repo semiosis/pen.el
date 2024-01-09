@@ -2,7 +2,8 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
-;; This should simply display some status information about the current buffer
+;; This should simply display some status information about the current buffer.
+;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header ()
   ""
   (let* ((ph--full-header (abbreviate-file-name buffer-file-name))
