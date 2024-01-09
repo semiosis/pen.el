@@ -3,7 +3,7 @@
 (require 'path-headerline-mode)
 
 (path-headerline-mode t)
-(path-headerline-mode -1)
+;; (path-headerline-mode -1)
 
 ;; mini-header-line-mode
 ;; places the modeline up the top, just below the tab bar
