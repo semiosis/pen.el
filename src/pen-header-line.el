@@ -29,7 +29,7 @@
       (concat (ph--with-face ph--header
                              :weight 'bold
                              :foreground "#8fb28f")
-              (ph--with-face (file-name-nondirectory buffer-file-name)
+              (ph--with-face (get-path nil t)
                              :weight 'bold)))))
 
 (defun ph--display-header ()
