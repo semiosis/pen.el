@@ -1293,6 +1293,8 @@ Also see option `magit-blame-styles'."
 
                       diredfl-dir-heading
 
+                      tab-bar-tab
+
                       notmuch-message-summary-face
                       message-header-subject
                       message-header-to
