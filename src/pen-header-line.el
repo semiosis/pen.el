@@ -7,7 +7,7 @@
 (defun ph--make-header ()
   ""
   (let* ((ph--full-header (get-path nil t))
-         (ph--header (file-name-directory ph--full-header))
+         (ph--header (get-path nil t))
          (ph--drop-str "[...]"))
     (if (> (length ph--full-header)
            (window-body-width))
