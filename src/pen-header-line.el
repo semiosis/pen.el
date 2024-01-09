@@ -2,6 +2,42 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+(defun ph--make-header ()
+  ""
+  (let* ((ph--full-header (abbreviate-file-name buffer-file-name))
+         (ph--header (file-name-directory ph--full-header))
+         (ph--drop-str "[...]"))
+    (if (> (length ph--full-header)
+           (window-body-width))
+        (if (> (length ph--header)
+               (window-body-width))
+            (progn
+              (concat (ph--with-face ph--drop-str
+                                 :background "blue"
+                                 :weight 'bold)
+                      (ph--with-face (substring ph--header
+                                            (+ (- (length ph--header)
+                                                  (window-body-width))
+                                               (length ph--drop-str))
+                                            (length ph--header))
+                                     :weight 'bold)))
+          (concat (ph--with-face ph--header
+                             :foreground "#8fb28f"
+                             :weight 'bold)))
+      (concat (ph--with-face ph--header
+                         :weight 'bold
+                         :foreground "#8fb28f")
+              (ph--with-face (file-name-nondirectory buffer-file-name)
+                             :weight 'bold)))))
+
+(defun ph--display-header ()
+  "Display path on headerline."
+  (setq header-line-format
+        '("" ;; invocation-name
+          (:eval (if (buffer-file-name)
+                     (ph--make-header)
+                   "%b")))))
+
 (path-headerline-mode t)
 ;; (path-headerline-mode -1)
 
