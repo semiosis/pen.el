@@ -1294,6 +1294,7 @@ Also see option `magit-blame-styles'."
                       diredfl-dir-heading
 
 
+                      tab-bar
                       tab-bar-tab-inactive
 
                       notmuch-message-summary-face
