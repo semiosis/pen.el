@@ -162,7 +162,7 @@
 
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
-               
+
                (and (major-mode-enabled 'ebdb-mode)
                     (call-interactively 'ebdb-copy-fields-as-kill-org-link))
 
