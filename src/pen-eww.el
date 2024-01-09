@@ -696,7 +696,6 @@ word(s) will be searched for via `eww-search-prefix'."
      (list (pen-read-string prompt nil nil uris))))
 
   (progn
-
     ;; It works when placed here
     (pen-set-faces)
 
