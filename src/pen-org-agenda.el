@@ -3,6 +3,11 @@
 (use-package org-super-agenda :ensure t)
 (use-package org-alert :ensure t)
 
+(defface pen-org-agenda-today-label
+  '((t :inverse-video t))
+  "Org-agenda today face."
+  :group 'pen-org-agenda)
+
 ;; (setq org-agenda-show-future-repeats nil)
 (setq org-agenda-show-future-repeats t)
 ;; Show a single future repeat

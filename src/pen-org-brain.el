@@ -1443,7 +1443,6 @@ Only get the body text, unless ALL-DATA is t."
         ;; '(("Sin\\|Cos\\|Sum" . 'font-lock-function-name-face)
         ;;   ("Pi\\|Infinity" . 'font-lock-constant-face))
 
-        
         '(("TODAY" . 'font-lock-constant-face)
           ("TODO" . 'org-todo)))
 
