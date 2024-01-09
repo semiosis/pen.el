@@ -156,7 +156,7 @@
                      ;; I need to have different highlights for different
                      ;; Bible reading modes
                      (cond (bible-mode-fast-enabled
-                            " (FM)")
+                            " (Fast-Mode)")
                            (bible-mode-word-study-enabled
                             " (WS)"))))
 
