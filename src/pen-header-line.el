@@ -29,9 +29,9 @@
       (let ((datestr (str (e/date))))
         (concat (ph--with-face ph--header
                                :inverse-video t)
-                (ph--with-face
-                 (propertize datestr 'display `(space :align-to (- right ,(length datestr))))
-                 :inverse-video t))))))
+                (propertize " " 'display `(space :align-to (- right ,(length datestr))))
+                (ph--with-face datestr
+                               :weight 'bold))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
