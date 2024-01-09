@@ -2,12 +2,15 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+(defun ph-get-path-string ()
+  (str (get-path nil t)))
+
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header ()
   ""
-  (let* ((ph--full-header (get-path nil t))
-         (ph--header (get-path nil t))
+  (let* ((ph--full-header (ph-get-path-string))
+         (ph--header (ph-get-path-string))
          (ph--drop-str "[...]"))
     (if (> (length ph--full-header)
            (window-body-width))
