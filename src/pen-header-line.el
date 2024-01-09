@@ -2,6 +2,7 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+;; This should simply display some status information about the current buffer
 (defun ph--make-header ()
   ""
   (let* ((ph--full-header (abbreviate-file-name buffer-file-name))
@@ -13,20 +14,20 @@
                (window-body-width))
             (progn
               (concat (ph--with-face ph--drop-str
-                                 :background "blue"
-                                 :weight 'bold)
+                                     :background "blue"
+                                     :weight 'bold)
                       (ph--with-face (substring ph--header
-                                            (+ (- (length ph--header)
-                                                  (window-body-width))
-                                               (length ph--drop-str))
-                                            (length ph--header))
+                                                (+ (- (length ph--header)
+                                                      (window-body-width))
+                                                   (length ph--drop-str))
+                                                (length ph--header))
                                      :weight 'bold)))
           (concat (ph--with-face ph--header
-                             :foreground "#8fb28f"
-                             :weight 'bold)))
+                                 :foreground "#8fb28f"
+                                 :weight 'bold)))
       (concat (ph--with-face ph--header
-                         :weight 'bold
-                         :foreground "#8fb28f")
+                             :weight 'bold
+                             :foreground "#8fb28f")
               (ph--with-face (file-name-nondirectory buffer-file-name)
                              :weight 'bold)))))
 
