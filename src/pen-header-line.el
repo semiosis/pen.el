@@ -26,10 +26,10 @@
           (concat (ph--with-face ph--header
                                  :foreground "#8fb28f"
                                  :weight 'bold)))
+      (propertize " " 'display '(space :align-to (- right 9)))
       (concat (ph--with-face ph--header
-                             :weight 'bold
-                             :foreground "#8fb28f")
-              (ph--with-face (get-path nil t)
+                             :inverse-video t)
+              (ph--with-face (str (e/date))
                              :weight 'bold)))))
 
 (defun ph--display-header ()
