@@ -1293,7 +1293,8 @@ Also see option `magit-blame-styles'."
 
                       diredfl-dir-heading
 
-                      tab-bar-tab
+                      
+                      tab-bar-tab-inactive
 
                       notmuch-message-summary-face
                       message-header-subject
@@ -1472,6 +1473,8 @@ Also see option `magit-blame-styles'."
                       git-gutter+-added
                       git-gutter+-deleted
                       git-gutter+-commit-header-face
+
+                      tab-bar-tab
 
                       org-agenda-calendar-event
 
