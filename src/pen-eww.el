@@ -697,7 +697,6 @@ word(s) will be searched for via `eww-search-prefix'."
 
   (if (test-f url)
       (eww-open-file url)
-      
     (progn
       ;; It works when placed here
       (pen-set-faces)
