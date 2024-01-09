@@ -26,11 +26,12 @@
           (concat (ph--with-face ph--header
                                  :foreground "#8fb28f"
                                  :weight 'bold)))
-      (propertize " " 'display '(space :align-to (- right 9)))
-      (concat (ph--with-face ph--header
-                             :inverse-video t)
-              (ph--with-face (str (e/date))
-                             :weight 'bold)))))
+      (let ((datestr (str (e/date))))
+        (concat (ph--with-face ph--header
+                               :inverse-video t)
+                (ph--with-face
+                 (propertize datestr 'display `(space :align-to (- right ,(length datestr))))
+                 :inverse-video t))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
