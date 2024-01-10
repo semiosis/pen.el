@@ -2,12 +2,19 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+(defset pen-header-line-path-last-time (e/date))
+(defset pen-header-line-path-last-path (get-path nil t))
+
 ;; I need this to be memoized and re-queried per-second max
+;;
+
 (defun ph-get-path-string ()
-  (let ((gp (get-path nil t)))
-    (if gp
-        (str gp)
-      "get-path=nil")))
+  (let ((gd (e/date)))
+    (if (not (string-equal gd pen-header-line-path-last-time))
+        (let ((gp (get-path nil t)))
+          (if gp
+              (str gp)
+            "get-path=nil")))))
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
