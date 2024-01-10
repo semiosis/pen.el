@@ -308,7 +308,10 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "ebdb" 'pen-follow-ebdb-link)
 (defun pen-follow-ebdb-link (pattern)
   "Run ebdb `pattern'."
-  (ebdb (ebdb-search-style) pattern))
+  (if (and (re-match-p "^\"" pattern)
+           (re-match-p "\"$" pattern))
+      (ebdb (ebdb-search-style) (eval-string pattern))
+    (ebdb (ebdb-search-style) pattern)))
 
 (org-add-link-type "vs" 'pen-follow-vs-link)
 (defun pen-follow-vs-link (pattern)
