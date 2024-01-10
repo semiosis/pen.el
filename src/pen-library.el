@@ -1281,7 +1281,7 @@ non-nil."
 
 (defun call-interactively-with-prefix-and-parameters (func prefix &rest args)
   ;; Can't do it this way, or it sets the global current-prefix-arg.
-  ;; And (get-path) might show a different link in the header line
+  ;; And (get-path) might show a different link in the header line when I press C-n.
   ;; (setq current-prefix-arg (list prefix))
   ;; Must use a let
   (let ((current-prefix-arg (list prefix))) ; C-u
