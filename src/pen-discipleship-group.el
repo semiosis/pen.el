@@ -2,7 +2,8 @@
 
 (defset d-group-weekly-readings-foundations260
         '(1 . ("Genesis 1-2"
-               "Genesis 3-4"))
+               "Genesis 3-4"
+               "Genesis 6-7"))
         )
 
 ;; New Testament 260
