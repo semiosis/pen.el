@@ -1,5 +1,9 @@
 (require 'pen-dates-and-locales)
 
+(defset d-group-weekly-readings-foundations260
+        '(1 . ("Genesis 1"))
+        )
+
 ;; New Testament 260
 ;; A 260-day Bible reading plan
 (defset d-group-weekly-readings-nt260
