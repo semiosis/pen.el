@@ -23,7 +23,9 @@
     (14 ("I Corinthians 4-8"))
     (15 ("I Corinthians 9-13"))
     (16 ("I Corinthians 14-16"
-         "II Corinthians 1-2"))))
+         "II Corinthians 1-2"))
+    (17 ("II Corinthians 3-7"))
+    (18 ("II Corinthians 3-7"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
