@@ -10,7 +10,10 @@
     (8 ("Acts 12-14"
         "James 1-2"))
     (9 ("James 3-5"
-        "Acts 15-16"))))
+        "Acts 15-16"))
+    (10 ("Galatians 1-5"))
+    (11 ("Galatians 6"
+         "Galatians 6"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
