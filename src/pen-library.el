@@ -1280,8 +1280,11 @@ non-nil."
   (call-interactively  func t (apply 'vector args)))
 
 (defun call-interactively-with-prefix-and-parameters (func prefix &rest args)
-  (setq current-prefix-arg (list prefix)) ; C-u
-  (call-interactively func t (apply 'vector args)))
+  ;; Can't do it this way, or it sets the global current-prefix-arg
+  ;; (setq current-prefix-arg (list prefix))
+  ;; Must use a let
+  (let ((current-prefix-arg (list prefix))) ; C-u
+    (call-interactively func t (apply 'vector args))))
 
 (defun pen-scroll-up ()
   (interactive)
