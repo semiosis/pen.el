@@ -1519,7 +1519,7 @@ Also see option `magit-blame-styles'."
                                org-block-end-line
                                font-lock-comment-face
                                font-lock-comment-face
-                               
+
                                org-agenda-date
                                lsp-ui-peek-list
 
