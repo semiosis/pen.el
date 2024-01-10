@@ -139,7 +139,16 @@ if test -z "$fp"; then
     exit $?
 fi
 
+# This needs to work:
+# o '[[ebdb:"Street\nDunedin, Otago\nNew Zealand"]]'
+
+echo "$fp"
+fp="$(p "$fp" | sed -z "s/\n/\\\n/g")"
+
+# Go from "string" to string
+# Evaluate a string.
 fp="$(eval echo -e "$fp")" # expand
+
 
 pen-pl "$fp" > /tmp/open2.txt
 

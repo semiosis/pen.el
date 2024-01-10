@@ -13,6 +13,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 IFS= read -r -d '' "categories" <<HEREDOC
+Syriac / Aramaic (U+0700 to U+074F)
 General Punctuation (U+2000 to U+206F)
 Superscripts and Subscripts (U+2070 to U+209F)
 Currency Symbols (U+20A0 to U+20CF)
