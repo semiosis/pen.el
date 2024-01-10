@@ -37,9 +37,9 @@
           (22 . ("Mark 15-16"
                  "Romans 1-3"))))
 
-(defun d-group-get-weekly-reading ()
-  (list2str (cdr (assoc (date-week-number)
-                        d-group-weekly-readings-nt260))))
+(defun d-group-get-weekly-reading (&optional week)
+  (setq week (or week (date-week-number)))
+  (list2str (cdr (assoc week d-group-weekly-readings-nt260))))
 
 (defset d-group-weekly-scripture-memory-nt260
         '((1 . ("Matthew 5:1-2"))
@@ -56,10 +56,12 @@
           (12 . ("Matthew 5:23-24"))))
 
 (defun d-group-get-weekly-scripture-memory ()
+  (setq week (or week (date-week-number)))
   (list2str (cdr (assoc (date-week-number)
                         d-group-weekly-scripture-memory-nt260))))
 
-(defun d-group-weekly-scripture-memory-hear-journal-table-rows ()
+(defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
+  (setq week (or week (date-week-number)))
   (-zip-lists-fill "" (str2lines (d-group-get-weekly-reading)) (str2lines (d-group-get-weekly-scripture-memory)))
   (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |"))
 
