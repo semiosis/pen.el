@@ -43,7 +43,9 @@
   (7 ("Matthew 5:13-14"))
   (8 ("Matthew 5:15-16"))
   (9 ("Matthew 5:17-18"))
-  (10 ("Matthew 5:19-20")))
+  (10 ("Matthew 5:19-20"))
+  (11 ("Matthew 5:21-22"))
+  (12 ("Matthew 5:23-24")))
 
 (defun d-group-memorize-scripture ()
   (interactive)
