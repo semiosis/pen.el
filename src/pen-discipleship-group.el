@@ -36,7 +36,7 @@
                "Romans 1-3"))))
 
 (defun d-group-get-weekly-reading ()
-  ')
+  (d-group-weekly-readings-nt260))
 
 (defun d-group-get-weekly-scripture-memory ()
   (1 ("Matthew 5:1-2"))
