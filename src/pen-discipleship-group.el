@@ -60,7 +60,8 @@
                         d-group-weekly-scripture-memory-nt260))))
 
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows ()
-  "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
+  (yasnippet-ex)
+  (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |"))
 
 (defun d-group-weekly-journal ()
   (interactive)
