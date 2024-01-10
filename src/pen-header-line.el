@@ -50,7 +50,7 @@
           (concat (ph--with-face ph--header
                                  :foreground "#8fb28f"
                                  :weight 'bold)))
-      (let ((datestr (str (e/date))))
+      (let ((datestr (str (ph-get-date))))
         (concat (ph--with-face ph--header
                                :inverse-video t)
                 (propertize " " 'display `(space :align-to (- right ,(length datestr))))
