@@ -74,7 +74,9 @@
   (setq week (or week (date-week-number)))
   (list2str
    (loop for row in
-         (-zip-lists-fill "" (str2lines (d-group-get-weekly-reading week)) (str2lines (d-group-get-weekly-scripture-memory week)))
+         (-zip-lists-fill ""
+                          (str2lines (d-group-get-weekly-scripture-memory week))
+                          (str2lines (d-group-get-weekly-reading week)))
          collect
          (concat "| " (d-group-linkify-bible-verse-ref (car row)) " | " (d-group-linkify-bible-verse-ref (cadr row)) " |")))
   ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
