@@ -1,8 +1,8 @@
 #!/bin/bash
 export TTY
 
-# default_bible_version=NASB
-default_bible_version=RLT
+default_bible_version=NASB
+# default_bible_version=RLT
 
 # export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
