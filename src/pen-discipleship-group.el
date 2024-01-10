@@ -1,3 +1,5 @@
+(require 'pen-dates-and-locales)
+
 ;; New Testament 260
 ;; A 260-day Bible reading plan
 (defset d-group-weekly-readings-nt260
