@@ -1,6 +1,12 @@
 (defun d-group-get-weekly-reading ()
   '((1 ("Luke 1-5"))
-    (2 ("Luke 6-10"))))
+    (2 ("Luke 6-10"))
+    (3 ("Luke 11-15"))
+    (4 ("Luke 16-20"))
+    (5 ("Luke 21-24"
+        "Acts 1"))
+    (6 ("Luke 21-24"
+        "Acts 1"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
