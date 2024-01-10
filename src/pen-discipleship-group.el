@@ -18,7 +18,9 @@
     (12 ("I Thessalonians 3-5"
          "II Thessalonians 1-2"))
     (13 ("II Thessalonians 3"
-         "Acts 19"))))
+         "Acts 19"
+         "I Corinthians 1-3"))
+    (13 ("I Corinthians 4-8"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
