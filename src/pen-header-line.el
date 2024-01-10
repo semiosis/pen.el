@@ -2,6 +2,7 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+;; I need this to be memoized and re-queried per-second max
 (defun ph-get-path-string ()
   (let ((gp (get-path nil t)))
     (if gp
