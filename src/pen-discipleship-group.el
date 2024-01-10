@@ -34,7 +34,9 @@
          "Romans 1-3"))))
 
 (defun d-group-get-weekly-scripture-memory ()
-  "Matthew 5:1-2")
+  (1 ("Matthew 5:1-2"))
+  (2 ("Matthew 5:3-4"))
+  (3 ("Matthew 5:3-4")))
 
 (defun d-group-memorize-scripture ()
   (interactive)
