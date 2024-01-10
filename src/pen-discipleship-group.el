@@ -59,13 +59,18 @@
   (setq week (or week (date-week-number)))
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
+(defun d-group-linkify-bible-verse-ref (s)
+ "[[sh:tpop nem nasb " ref " ]]"
+
+  )
+
 ;; (d-group-weekly-scripture-memory-hear-journal-table-rows 5)
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
   (setq week (or week (date-week-number)))
   (loop for row in
         (-zip-lists-fill "" (str2lines (d-group-get-weekly-reading week)) (str2lines (d-group-get-weekly-scripture-memory week)))
         collect
-        (concat "| " (car row) " | " (cadr row) " |"))
+        (concat "| " (d-group-linkify-bible-verse-ref (car row)) " | " (d-group-linkify-bible-verse-ref (cadr row)) " |"))
   ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
   )
 
