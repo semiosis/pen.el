@@ -5,16 +5,16 @@
 (defset pen-header-line-path-last-time (e/date))
 (defset pen-header-line-path-last-path (get-path nil t))
 
-;; I need this to be memoized and re-queried per-second max
-;;
+;; I need this to be memoized and re-queried per-second max, and also per-buffer
 
 (defun ph-get-path-string ()
   (let ((gd (e/date)))
     (if (not (string-equal gd pen-header-line-path-last-time))
         (let ((gp (get-path nil t)))
-          (if gp
-              (str gp)
-            "get-path=nil")))))
+          (setq pen-header-line-path-last-path gp)
+          (setq pen-header-line-path-last-time gd)
+          (str gp)
+          "get-path=nil"))))
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
