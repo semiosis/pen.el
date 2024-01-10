@@ -27,7 +27,8 @@
     (17 ("II Corinthians 3-7"))
     (18 ("II Corinthians 8-12"))
     (19 ("II Corinthians 13"
-         "Mark 1-4"))))
+         "Mark 1-4"))
+    (20 ("Mark 5-9"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
