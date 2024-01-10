@@ -1,4 +1,5 @@
-(defset d-group-weekly-readings
+;; New Testament 260
+(defset d-group-weekly-readings-nt260
         '((1 ("Luke 1-5"))
           (2 ("Luke 6-10"))
           (3 ("Luke 11-15"))
