@@ -794,7 +794,7 @@ decreases scheduled or deadline date by one day."
   (shut-up (call-interactively 'org-store-link))
   (with-temp-buffer
     (call-interactively 'org-insert-last-stored-link)
-    (buffer-string)))
+    (chomp (buffer-string))))
 
 (defun org-copy-link ()
   (interactive)

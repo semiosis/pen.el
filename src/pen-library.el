@@ -201,6 +201,7 @@
                  (let ((p (full-path)))
                    (if (stringp p)
                        (chomp p)))))))
+      (setq path (chomp path))
       (if (interactive-p)
           (xc path)
         path))))
