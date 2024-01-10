@@ -91,4 +91,4 @@ join_multi_liners() {
     if test "$show_module" = "y"; then
         echo "$mod"
     fi
-} | in-tty -upo pen-pavs
+} | erase-trailing-whitespace | in-tty -upo pen-pavs

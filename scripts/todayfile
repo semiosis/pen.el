@@ -1,14 +1,18 @@
 #!/bin/bash
 export TTY
 
-fp="`date +%d.%m.%y`.org"
-
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -cd) {
         dir="$2"
         full_path=y
         shift
+        shift
+    }
+    ;;
+
+    -w) {
+        mode=week
         shift
     }
     ;;
@@ -27,6 +31,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+fp="`date +%d.%m.%y`.org"
 
 if test "$full_path" = "y"; then
     : "${dir:="$(pwd)"}"
