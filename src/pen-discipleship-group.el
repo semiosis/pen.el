@@ -3,8 +3,7 @@
 ;; New Testament 260
 ;; A 260-day Bible reading plan
 (defset d-group-weekly-readings-nt260
-        '((0 . ())
-          (1 . ("Luke 1-5"))
+        '((1 . ("Luke 1-5"))
           (2 . ("Luke 6-10"))
           (3 . ("Luke 11-15"))
           (4 . ("Luke 16-20"))
@@ -43,8 +42,7 @@
                         d-group-weekly-readings-nt260))))
 
 (defset d-group-weekly-scripture-memory-nt260
-        '((0 . ())
-          (1 . ("Matthew 5:1-2"))
+        '((1 . ("Matthew 5:1-2"))
           (2 . ("Matthew 5:3-4"))
           (3 . ("Matthew 5:5-6"))
           (4 . ("Matthew 5:7-8"))
