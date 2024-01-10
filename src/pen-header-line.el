@@ -9,7 +9,7 @@
 
 (comment
  (defun ph-get-path-string ()
-   (let ((gd (e/date)))
+   (let ((gd (e/date "%F %a %T")))
      (if (not (string-equal gd pen-header-line-path-last-time))
          (let ((gp (get-path nil t)))
            (setq pen-header-line-path-last-path gp)
