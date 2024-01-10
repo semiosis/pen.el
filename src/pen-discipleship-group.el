@@ -10,7 +10,19 @@
                 "Job 40-42"
                 "Genesis 11-12"
                 "Genesis 15"
-                "Genesis 16-17"))))
+                "Genesis 16-17"))
+          (3 . ("Genesis 18-19"
+                "Genesis 20-21"
+                "Genesis 22"
+                "Genesis 24"
+                "Genesis 25:19-34"
+                "Genesis 26"))
+          (4 . ("Genesis 27-28"
+                "Genesis 29-30:24"
+                "Genesis 22"
+                "Genesis 24"
+                "Genesis 25:19-34"
+                "Genesis 26"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
