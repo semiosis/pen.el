@@ -78,6 +78,8 @@
                            bible-mode-fuzzy-search
                            syriac-digraph-select
                            greek-digraph-select
+                           hebrew-digraph-select
+                           arabic-digraph-select
                            commandments-of-Jesus
                            prophesies-fortelling-Jesus-fulfilled))
 (defset bible-search-mode-funcs '(apropos-variable
