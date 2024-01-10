@@ -61,7 +61,8 @@
 
 (defun d-group-linkify-bible-verse-ref (s)
   (if (sor s)
-      (concat "[[sh:tpop nem nasb " ref) " ]]"))
+      (concat "[[sh:tpop nem nasb " ref " ]]")
+    ""))
 
 ;; (d-group-weekly-scripture-memory-hear-journal-table-rows 5)
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
