@@ -168,7 +168,8 @@ is a list, copy only the NUMth list element."
 
 (defun ebdb-get-path-org-link ()
   (interactive)
-  (format "[[ebdb:%s]]" (call-interactively 'pen-ebdb-return-fields-for-get-path)))
+  (let ((path (call-interactively 'pen-ebdb-return-fields-for-get-path)))
+    (format "[[ebdb:%s]]" (pps path))))
 
 (defun ebdb-copy-fields-as-kill-org-link ()
   (interactive)
