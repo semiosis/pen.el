@@ -84,7 +84,7 @@ case "$module" in
     ;;
 
     *) {
-        module=NASB
+        module="$(pen-rc-get default_bible_module)"
     }
     ;;
 

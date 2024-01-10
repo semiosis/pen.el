@@ -2,7 +2,6 @@
 export TTY
 
 default_bible_version="$(pen-rc-get default_bible_module)"
-# default_bible_version=RLT
 
 # export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
