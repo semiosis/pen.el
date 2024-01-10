@@ -55,7 +55,7 @@
           (11 . ("Matthew 5:21-22"))
           (12 . ("Matthew 5:23-24"))))
 
-(defun d-group-get-weekly-scripture-memory ()
+(defun d-group-get-weekly-scripture-memory (&optional week)
   (setq week (or week (date-week-number)))
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
