@@ -23,6 +23,7 @@
   (if (interactive-p)
       (funcall-interactively 'symbol-select "SYRIAC")
     (digraph-select "SYRIAC")))
+(defalias 'aramaic-digraph-select 'syriac-digraph-select)
 
 (defun arabic-digraph-select ()
   (interactive)
