@@ -35,7 +35,7 @@ esac; done
 
 case "$mode" in
     week) {
-        fp="week-`date +%U`.org"
+        fp="%y-week-`date +%U`.org"
     }
     ;;
 
