@@ -62,7 +62,7 @@
                  nil
                  :width_pc 90)
            nil))
-   
+
    (t (let ((digraph (tpop (cmd "unicode-select" filter) nil
                            :output_b t
                            :width_pc 90)))
