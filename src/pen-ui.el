@@ -40,7 +40,8 @@
         ;; (setq-default truncate-lines t)
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
-        (tab-bar-mode -1))
+        ;; (tab-bar-mode -1)
+        )
     (progn
       (if lsp-mode
           (lsp-headerline-breadcrumb-mode 1))
@@ -52,7 +53,8 @@
       ;; (setq-default truncate-lines nil)
       ;; (setq truncate-lines nil)
       (menu-bar-mode 1)
-      (tab-bar-mode 1))))
+      ;; (tab-bar-mode 1)
+      )))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
 
 (visual-line-mode 1)
