@@ -1519,7 +1519,7 @@ Also see option `magit-blame-styles'."
                                org-block-end-line
                                font-lock-comment-face
                                font-lock-comment-face
-                               bible-verse-ref
+                               
                                org-agenda-date
                                lsp-ui-peek-list
 
@@ -1551,6 +1551,7 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(magit-diff-added-highlight
                                iedit-occurrence
+                               bible-verse-ref
                                avy-lead-face)
                     do
                     (set-face-attribute
@@ -1560,7 +1561,25 @@ Also see option `magit-blame-styles'."
                      :underline t
                      :box nil
                      :strike-through nil
-                     ;; :slant 'italic
+                     :slant 'normal
+
+                     ;; :italic t
+                     )))
+
+  (cl-loop for fr in (frame-list)
+           do
+
+           (cl-loop for f in '(bible-verse-ref
+                               )
+                    do
+                    (set-face-attribute
+                     f fr
+                     :inverse-video nil
+                     :overline nil
+                     :underline t
+                     :box nil
+                     :strike-through nil
+                     :slant 'normal
 
                      ;; :italic t
                      )))
