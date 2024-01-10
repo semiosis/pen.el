@@ -35,6 +35,8 @@
           (22 ("Mark 15-16"
                "Romans 1-3"))))
 
+
+
 (defun d-group-get-weekly-reading ()
   (d-group-weekly-readings-nt260))
 
