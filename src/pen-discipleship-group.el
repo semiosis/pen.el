@@ -1,5 +1,5 @@
 ;; New Testament 260
-;; A 260-day BIble reading plan
+;; A 260-day Bible reading plan
 (defset d-group-weekly-readings-nt260
         '((1 ("Luke 1-5"))
           (2 ("Luke 6-10"))
