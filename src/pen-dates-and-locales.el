@@ -129,6 +129,7 @@
   (sh/date "%d.%m.%y"))
 
 (defun date-week-number ()
+  "Base 1. 1 is the first week, not 0."
   (+ 1 (eval-string (e/date "%U"))))
 
 (provide 'pen-dates-and-locales)
