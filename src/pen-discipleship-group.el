@@ -3,8 +3,9 @@
 (defset d-group-weekly-readings-foundations260
         '(1 . ("Genesis 1-2"
                "Genesis 3-4"
-               "Genesis 6-7"))
-        )
+               "Genesis 6-7"
+               "Genesis 8-9"
+               "Job 1-2")))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
