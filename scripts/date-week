@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-echo "$(date-week) + 1" | bc
+echo "$(date "+%U") + 1" | bc
