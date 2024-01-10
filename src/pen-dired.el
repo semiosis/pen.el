@@ -241,6 +241,15 @@
         (find-file fp)
       fp)))
 
+(defun weekfile ()
+  (interactive)
+  (let ((fp
+         (snc "todayfile -P | cat")))
+
+    (if (interactive-p)
+        (find-file fp)
+      fp)))
+
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun dired-narrow-around-advice (proc &rest args)
   ;; I should clear it every time
