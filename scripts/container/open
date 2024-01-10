@@ -337,6 +337,7 @@ elif pen-pl "$fp" | grep -q -P '^(https?|git)://'; then
     exit 0
 elif pen-pl "$fp" | grep -q -P '^(\[\[[a-z]+:)'; then
     sp -e "(org-link-open-from-string $(aqf-nice "$fp"))"
+    exit "$?"
 elif pen-pl "$fp" | grep -q -P "(^file:/.*|.*\\.html)"; then
     ff "$fp"
 
