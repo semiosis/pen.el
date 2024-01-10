@@ -12,6 +12,7 @@
 (sslk "laS" #'server-list-clients)
 (sslk "lal" #'bufler)
 (sslk "lqtt" #'todayfile)
+(sslk "lqtw" #'weekfile)
 (sslk "laU" #'bluetooth-list-devices)
 (sslk "lag" #'gist-list)
 (sslk "laN" #'gnus)
