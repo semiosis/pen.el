@@ -76,6 +76,7 @@
                            bible-random-verse-ref
                            nicene-creed
                            bible-mode-fuzzy-search
+                           syriac-digraph-select
                            commandments-of-Jesus
                            prophesies-fortelling-Jesus-fulfilled))
 (defset bible-search-mode-funcs '(apropos-variable
