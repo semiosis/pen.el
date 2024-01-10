@@ -21,7 +21,7 @@
 (defun syriac-digraph-select ()
   (interactive)
   (if (interactive-p)
-      (funcall-interactively 'digraph-select "SYRIAC")
+      (funcall-interactively 'symbol-select "SYRIAC")
     (digraph-select "SYRIAC")))
 
 (defun arabic-digraph-select ()
