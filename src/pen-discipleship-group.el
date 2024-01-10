@@ -3,39 +3,39 @@
 ;; New Testament 260
 ;; A 260-day Bible reading plan
 (defset d-group-weekly-readings-nt260
-        '((1 ("Luke 1-5"))
-          (2 ("Luke 6-10"))
-          (3 ("Luke 11-15"))
-          (4 ("Luke 16-20"))
-          (5 ("Luke 21-24"
-              "Acts 1"))
-          (6 ("Acts 2-6"))
-          (7 ("Acts 7-11"))
-          (8 ("Acts 12-14"
-              "James 1-2"))
-          (9 ("James 3-5"
-              "Acts 15-16"))
-          (10 ("Galatians 1-5"))
-          (11 ("Galatians 6"
-               "Acts 17-18"
-               "I Thessalonians 1-2"))
-          (12 ("I Thessalonians 3-5"
-               "II Thessalonians 1-2"))
-          (13 ("II Thessalonians 3"
-               "Acts 19"
-               "I Corinthians 1-3"))
-          (14 ("I Corinthians 4-8"))
-          (15 ("I Corinthians 9-13"))
-          (16 ("I Corinthians 14-16"
-               "II Corinthians 1-2"))
-          (17 ("II Corinthians 3-7"))
-          (18 ("II Corinthians 8-12"))
-          (19 ("II Corinthians 13"
-               "Mark 1-4"))
-          (20 ("Mark 5-9"))
-          (21 ("Mark 10-14"))
-          (22 ("Mark 15-16"
-               "Romans 1-3"))))
+        '((1 . ("Luke 1-5"))
+          (2 . ("Luke 6-10"))
+          (3 . ("Luke 11-15"))
+          (4 . ("Luke 16-20"))
+          (5 . ("Luke 21-24"
+                "Acts 1"))
+          (6 . ("Acts 2-6"))
+          (7 . ("Acts 7-11"))
+          (8 . ("Acts 12-14"
+                "James 1-2"))
+          (9 . ("James 3-5"
+                "Acts 15-16"))
+          (10 . ("Galatians 1-5"))
+          (11 . ("Galatians 6"
+                 "Acts 17-18"
+                 "I Thessalonians 1-2"))
+          (12 . ("I Thessalonians 3-5"
+                 "II Thessalonians 1-2"))
+          (13 . ("II Thessalonians 3"
+                 "Acts 19"
+                 "I Corinthians 1-3"))
+          (14 . ("I Corinthians 4-8"))
+          (15 . ("I Corinthians 9-13"))
+          (16 . ("I Corinthians 14-16"
+                 "II Corinthians 1-2"))
+          (17 . ("II Corinthians 3-7"))
+          (18 . ("II Corinthians 8-12"))
+          (19 . ("II Corinthians 13"
+                 "Mark 1-4"))
+          (20 . ("Mark 5-9"))
+          (21 . ("Mark 10-14"))
+          (22 . ("Mark 15-16"
+                 "Romans 1-3"))))
 
 
 
