@@ -130,10 +130,45 @@
 (define-key ebdb-mode-map (kbd "M-W m") 'ebdb-copy-mail-as-kill)
 (define-key ebdb-mode-map (kbd "M-W r") 'ebdb-copy-records-as-kill)
 
+(defun pen-ebdb-return-fields-for-get-path (records field &optional num)
+  "For RECORDS copy values of FIELD at point to kill ring.
+If FIELD is an address or phone with a label, copy only field values
+with the same label.  With numeric prefix NUM, if the value of FIELD
+is a list, copy only the NUMth list element."
+  (interactive
+   (list (ebdb-do-records t) (ebdb-current-field)
+         (and current-prefix-arg
+              (prefix-numeric-value current-prefix-arg))))
+  (unless field (error "Not a field"))
+  (let ((field-class (eieio-object-class field))
+        val-list fields)
+    ;; Store the first field string, then pop the record list.  If
+    ;; there's only one record, this keeps things simpler.
+    (push (ebdb-string field) val-list)
+    (setq records (cdr (ebdb-record-list records)))
+    (dolist (record records)
+      (setq fields
+            (seq-filter
+             (lambda (f)
+               (same-class-p f field-class))
+             (mapcar #'cdr (ebdb-record-current-fields (car record)))))
+      (when (object-of-class-p field 'ebdb-field-labeled)
+        (setq fields
+              (seq-filter
+               (lambda (f)
+                 (string= (ebdb-field-label f)
+                          (ebdb-field-label field)))
+               fields)))
+      (when (and num (> 1 (length fields)))
+        (setq fields (list (nth num fields))))
+      (dolist (f fields)
+        (push (ebdb-string f) val-list)))
+    (let ((str (ebdb-concat 'record (nreverse val-list))))
+      str)))
+
 (defun ebdb-get-path-org-link ()
   (interactive)
-  (shut-up-c (call-interactively 'ebdb-copy-fields-as-kill))
-  (format "[[ebdb:%s]]" (car kill-ring)))
+  (format "[[ebdb:%s]]" (call-interactively 'pen-ebdb-return-fields-for-get-path)))
 
 (defun ebdb-copy-fields-as-kill-org-link ()
   (interactive)
