@@ -1691,7 +1691,7 @@ Also see option `magit-blame-styles'."
   ;; (snc "win vt100-tmux")
 
   (pen-snc "tmux source $EMACSD/pen.el/config/tmux-bw.conf")
-  
+
   (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))
 
 (comment
