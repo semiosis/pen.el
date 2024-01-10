@@ -60,9 +60,14 @@
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
 (defun d-group-linkify-bible-verse-ref (ref &optional tpop)
-  (if (sor ref)
-      (concat "[[sh:tpop nem nasb " ref " ][" ref "]]")
-    ""))
+  (let ((tmwindowtype
+         (if tpop
+             "tpop nem"
+           "sps nem")))
+
+    (if (sor ref)
+        (concat "[[sh:" tmwindowtype " nasb " ref " ][" ref "]]")
+      "")))
 
 ;; (d-group-weekly-scripture-memory-hear-journal-table-rows 5)
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
