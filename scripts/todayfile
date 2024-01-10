@@ -1,6 +1,7 @@
 #!/bin/bash
 export TTY
 
+mode=day
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -cd) {
@@ -32,7 +33,19 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-fp="`date +%d.%m.%y`.org"
+case "$mode" in
+    week) {
+        fp="week-`date +%U`.org"
+    }
+    ;;
+
+    day) {
+        fp="`date +%d.%m.%y`.org"
+    }
+    ;;
+
+    *)
+esac
 
 if test "$full_path" = "y"; then
     : "${dir:="$(pwd)"}"
