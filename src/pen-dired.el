@@ -244,7 +244,7 @@
 (defun weekfile ()
   (interactive)
   (let ((fp
-         (snc "todayfile -P | cat")))
+         (snc "todayfile -w -P | cat")))
 
     (if (interactive-p)
         (find-file fp)
