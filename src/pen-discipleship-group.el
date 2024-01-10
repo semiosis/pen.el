@@ -29,7 +29,9 @@
     (19 ("II Corinthians 13"
          "Mark 1-4"))
     (20 ("Mark 5-9"))
-    (21 ("Mark 10-14"))))
+    (21 ("Mark 10-14"))
+    (22 ("Mark 15-16"
+         "Romans 1-3"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
