@@ -30,6 +30,7 @@ case "$d" in
     T) cmd="zcd $NOTES/ws/tabs" ;;
     f) cmd="todayfile" ;;
     d) cmd="todaydir" ;;
+    w) cmd="weekfile" ;;
 esac
 echo
 echo "$cmd" | hls nearblack
