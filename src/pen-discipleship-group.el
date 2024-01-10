@@ -40,8 +40,8 @@
 
 
 (defun d-group-get-weekly-reading ()
-  (date-week-number)
-  d-group-weekly-readings-nt260)
+  (cdr (assoc (date-week-number)
+              d-group-weekly-readings-nt260)))
 
 (defun d-group-get-weekly-scripture-memory ()
   (1 ("Matthew 5:1-2"))
