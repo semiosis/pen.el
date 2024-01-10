@@ -77,6 +77,7 @@
                            nicene-creed
                            bible-mode-fuzzy-search
                            syriac-digraph-select
+                           aramaic-digraph-select
                            greek-digraph-select
                            hebrew-digraph-select
                            arabic-digraph-select
