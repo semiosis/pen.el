@@ -59,10 +59,13 @@
   (setq week (or week (date-week-number)))
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
+;; (d-group-weekly-scripture-memory-hear-journal-table-rows 5)
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
   (setq week (or week (date-week-number)))
-  (-zip-lists-fill "" (str2lines (d-group-get-weekly-reading)) (str2lines (d-group-get-weekly-scripture-memory)))
-  (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |"))
+  ()
+  (-zip-lists-fill "" (str2lines (d-group-get-weekly-reading week)) (str2lines (d-group-get-weekly-scripture-memory week)))
+  ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
+  )
 
 (defun d-group-weekly-journal ()
   (interactive)
