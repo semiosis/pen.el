@@ -16,7 +16,9 @@
          "Acts 17-18"
          "I Thessalonians 1-2"))
     (12 ("I Thessalonians 3-5"
-         "II Thessalonians 1-2"))))
+         "II Thessalonians 1-2"))
+    (13 ("II Thessalonians 3"
+         "Acts 19"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
