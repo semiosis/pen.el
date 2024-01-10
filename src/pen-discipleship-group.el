@@ -13,7 +13,9 @@
         "Acts 15-16"))
     (10 ("Galatians 1-5"))
     (11 ("Galatians 6"
-         "Galatians 6"))))
+         "Acts 17-18"))
+    (12 ("I Thessalonians 1-2"))
+    (13 ("I Thessalonians 1-2"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
