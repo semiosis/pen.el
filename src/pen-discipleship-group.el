@@ -39,7 +39,8 @@
                  "Romans 1-3"))))
 
 (defun d-group-get-weekly-reading ()
-  (list2str (cdr (assoc (date-week-number)
+  ;; Since I'm reading for the next week, do a +1
+  (list2str (cdr (assoc (+ 1 (date-week-number))
                         d-group-weekly-readings-nt260))))
 
 (defset d-group-weekly-scripture-memory-nt260
