@@ -1,7 +1,8 @@
 (require 'pen-dates-and-locales)
 
 (defset d-group-weekly-readings-foundations260
-        '(1 . ("Genesis 1"))
+        '(1 . ("Genesis 1-2"
+               "Genesis 3-4"))
         )
 
 ;; New Testament 260
