@@ -163,6 +163,8 @@
   (list
    'org-toggle-link-display
    'org-ascii-convert-region-to-utf8
+   'org-html-export-to-html
+   'org-latex-export-to-pdf
    'poly-org-mode
    'insert-figlet-org
    'pen-lsp-open-hover-docs-url
