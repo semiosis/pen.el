@@ -39,12 +39,10 @@ case "$mode" in
     }
     ;;
 
-    day) {
+    day|*) {
         fp="`date +%d.%m.%y`.org"
     }
     ;;
-
-    *)
 esac
 
 if test "$full_path" = "y"; then
