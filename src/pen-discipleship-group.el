@@ -38,7 +38,6 @@
                  "Romans 1-3"))))
 
 
-
 (defun d-group-get-weekly-reading ()
   (cdr (assoc (date-week-number)
               d-group-weekly-readings-nt260)))
