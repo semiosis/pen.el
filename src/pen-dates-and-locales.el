@@ -129,6 +129,6 @@
   (sh/date "%d.%m.%y"))
 
 (defun date-week-number ()
-  (eval-string (e/date "%U")))
+  (+ 1 (eval-string (e/date "%U"))))
 
 (provide 'pen-dates-and-locales)
