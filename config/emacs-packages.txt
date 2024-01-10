@@ -2358,3 +2358,6 @@ nano-agenda
 shr-external-rendering-functions
 org-modern
 modus-themes
+mini-header-line
+minibuffer-header
+path-headerline-mode
