@@ -300,12 +300,12 @@
   (save-excursion
     (beginning-of-buffer)
     (while (re-search-forward ":[0-9]+: " nil t)
-      (let* ((end (point))
+      (let* ((end (- (point) 1))
              (start
               (progn
                 (beginning-of-line)
                 (point)))
-             (ref (s-replace-regexp ": " "" (buffer-substring start end)))
+             (ref (s-replace-regexp ": " "" (buffer-substring start (+ 1 end))))
              (fp (bible-mode-get-notes-fp-for-verse ref)))
         (if (f-exists-p fp)
             (put-text-property start end 'font-lock-face
