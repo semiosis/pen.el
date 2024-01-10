@@ -59,7 +59,7 @@
   (setq week (or week (date-week-number)))
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
-(defun d-group-linkify-bible-verse-ref (ref)
+(defun d-group-linkify-bible-verse-ref (ref &optional tpop)
   (if (sor ref)
       (concat "[[sh:tpop nem nasb " ref " ][" ref "]]")
     ""))
