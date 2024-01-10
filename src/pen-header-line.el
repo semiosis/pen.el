@@ -18,7 +18,7 @@
            "get-path=nil")))))
 
 (defun ph-get-date ()
-  (e/date "%F %a %T"))
+  (e/date "%F %a %r"))
 
 (defun ph-get-path-string ()
   (let ((gp (get-path nil t)))
