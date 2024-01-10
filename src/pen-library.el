@@ -164,7 +164,7 @@
                     (sx-get-question-url))
 
                (and (major-mode-enabled 'ebdb-mode)
-                    (call-interactively 'ebdb-copy-fields-as-kill-org-link))
+                    (ebdb-get-path-org-link))
 
                (and (major-mode-enabled 'Custom-mode)
                     (custom-get-path))
