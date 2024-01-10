@@ -63,7 +63,9 @@
   (let ((tmwindowtype
          (if tpop
              "tpop nem"
-           "sps nem")))
+           ;; "sps nem"
+           ;; Use emacs
+           "sps")))
 
     (if (sor ref)
         (concat "[[sh:" tmwindowtype " nasb " ref " ][" ref "]]")
