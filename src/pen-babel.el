@@ -316,7 +316,9 @@ block."
       ;; cfilter breaks the mark
       (pen-region-pipe "sed -e /^#+/d -e 's/^  //'")
 
-      (call-interactively 'cua-exchange-point-and-mark)
+      ;; pen-region-pipe appears to do this automatically now
+      ;; (call-interactively 'cua-exchange-point-and-mark)
+
       (re-search-backward "[^[:space:]]")
       (call-interactively 'move-end-of-line))))
 
