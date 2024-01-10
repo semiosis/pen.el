@@ -72,9 +72,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-# : "${version:="nasb"}"
-version="$(pen-rc-get default_bible_module)"
-# : "${version:="rlt"}"
+version="$(pen-rc-get default_bible_version)"
 
 maybe_version="$(cmd-nice "$book" "$@" | bible-get-module-from-ref -df "$version")"
 ref="$(cmd-nice "$book" "$@")"
