@@ -57,8 +57,7 @@
 
 (defun d-group-get-weekly-scripture-memory ()
   (setq week (or week (date-week-number)))
-  (list2str (cdr (assoc (date-week-number)
-                        d-group-weekly-scripture-memory-nt260))))
+  (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
 
 (defun d-group-weekly-scripture-memory-hear-journal-table-rows (&optional week)
   (setq week (or week (date-week-number)))
