@@ -8,7 +8,7 @@
     (6 ("Acts 2-6"))
     (7 ("Acts 7-11"))
     (8 ("Acts 12-14"
-        "Acts 12-14"))))
+        "James 1-2"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
