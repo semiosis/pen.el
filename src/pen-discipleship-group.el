@@ -20,8 +20,10 @@
     (13 ("II Thessalonians 3"
          "Acts 19"
          "I Corinthians 1-3"))
-    (13 ("I Corinthians 4-8"))
-    (14 ("I Corinthians 9-13"))))
+    (14 ("I Corinthians 4-8"))
+    (15 ("I Corinthians 9-13"))
+    (16 ("I Corinthians 14-16"
+         "II Corinthians 1-2"))))
 
 (defun d-group-get-weekly-scripture-memory ()
   "Matthew 5:1-2")
