@@ -1276,8 +1276,8 @@ non-nil."
   (message (str current-prefix-arg)))
 
 (defun call-interactively-with-default-prefix-and-parameters (func &rest args)
-  (setq current-prefix-arg (list 4)) ; C-u
-  (call-interactively  func t (apply 'vector args)))
+  (let ((current-prefix-arg (list 4)))  ; C-u
+    (call-interactively  func t (apply 'vector args))))
 
 (defun call-interactively-with-prefix-and-parameters (func prefix &rest args)
   ;; Can't do it this way, or it sets the global current-prefix-arg.
