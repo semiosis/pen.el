@@ -59,10 +59,6 @@
   (list2str (cdr (assoc (date-week-number)
                         d-group-weekly-scripture-memory-nt260))))
 
-(defun d-group-memorize-scripture ()
-  (interactive)
-  (dired (umn "$PEN/documents/notes/ws/discipleship-group/memorization")))
-
 (defun d-group-weekly-journal ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
