@@ -132,6 +132,7 @@
   (org-link-open-from-string "[[brain:agenda/Church::Discipleship group <2023-12-29 Fri 12:00 +1w>]]"))
 
 (defun d-group-weekly-journal ()
+  (interactive)
   (let ((dir d-group-weekly-journal-dir))
     
     ))
