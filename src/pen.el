@@ -2290,7 +2290,7 @@ May use to generate code from comments."
 (require 'pen-wordnut)
 
 ;; I have to debug pen-prompt-description because it is hanging
-;; (require 'pen-prompt-description)
+(require 'pen-prompt-description)
 (require 'pen-colorise)
 (require 'pen-creation)
 ;; TODO Bring personalities, incarnations,
