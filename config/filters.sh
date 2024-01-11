@@ -416,8 +416,8 @@ jq-select level error                                                           
 aatc -d "	" -f 1 ts2human                                                         # Make first column timestamps human-readable
 pyslice / 1::2                                                                      # every odd element
 pyslice / 2::2                                                                      # every even element
-pen-scrape "[a-zA-Z_-]+: ?[^ ]+"                                                        # key: value pairs                                                                                           # for quickly scraping logs
-pen-scrape "\x23([0-9A-Za-z]{6}|[0-9A-Za-z]{3})\b"                                      # hex
+pen-scrape "[a-zA-Z_-]+: ?[^ ]+"                                                    # key: value pairs, for quickly scraping logs
+pen-scrape "\x23([0-9A-Za-z]{6}|[0-9A-Za-z]{3})\b"                                  # hex
 sed -n "/^[A-Za-z]/p"                                                               # glossary headings
 sed -n "/^\** [A-Za-z]/p"                                                           # org headings
 sed -n "/^\x23* [A-Za-z]/p"                                                         # markdown headings
@@ -440,7 +440,7 @@ ftfy                                                                            
 sed "s/\[[0-9]\+\]//g"                                                              # remove wiki href links [1]
 ttp                                                                                 # text-to-paras
 tabulate
-sed "2q;d"                                                                          # 2nd line nth line                                                                                          # faster than -n
+sed "2q;d"                                                                          # 2nd line nth line, faster than -n
 python2to3
 wrlp yt-search                                                                      # youtube query to url
 filter-text-files-only
