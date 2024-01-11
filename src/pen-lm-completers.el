@@ -2,6 +2,7 @@
 
 ;; This has suddenly broken
 ;; I think it's due to not having an internet connection.
+;; As a workround, disable my internet connection when starting Pen.el.
 
 (defset pen-completion-backends
         '()
