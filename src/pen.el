@@ -2288,7 +2288,7 @@ May use to generate code from comments."
 (require 'pen-ess)
 (require 'pen-font-lock-studio)
 (require 'pen-wordnut)
-(require 'pen-prompt-description)
+;; (require 'pen-prompt-description)
 (require 'pen-colorise)
 (require 'pen-creation)
 ;; TODO Bring personalities, incarnations,
