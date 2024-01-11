@@ -133,8 +133,7 @@
 
 (defun d-group-weekly-journal ()
   (interactive)
-  (let* ((dir (d-group-weekly-journal-dir))
-         (fp (f-join dir (weekfile))))
+  (let* ((fp (weekfile)))
     (e fp)))
 
 (provide 'pen-discipleship-group)
