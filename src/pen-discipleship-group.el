@@ -120,11 +120,15 @@
 
 (defun d-group-weekly-journal-dir ()
   (interactive)
-  (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
+  (if (interacive-p)
+      (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal"))
+    (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
 
 (defun d-group-hear-preparation ()
   (interactive)
-  (dired (umn "$PEN/documents/notes/ws/discipleship-group/preparation")))
+  (if (interactive-p)
+      (dired (umn "$PEN/documents/notes/ws/discipleship-group/preparation"))
+    (umn "$PEN/documents/notes/ws/discipleship-group/preparation")))
 
 ;; [[brain:agenda/Church::Discipleship group <2023-12-29 Fri 12:00 +1w>]]
 (defun d-group-agenda ()
@@ -134,7 +138,7 @@
 (defun d-group-weekly-journal ()
   (interactive)
   (let* ((dir (d-group-weekly-journal-dir))
-         (fp (f-join dir (weekfile))))
+         (fp (f-join dir (weekfile t))))
     (e fp)))
 
 (provide 'pen-discipleship-group)
