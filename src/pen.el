@@ -240,6 +240,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-aliases)
 (require 'pen-org)
 (require 'pen-alert)
+(require 'pen-org-gtd)
 (require 'pen-org-agenda)
 ;; This works but, I think I prefer plain ascii overall
 ;; (require 'pen-org-modern)
