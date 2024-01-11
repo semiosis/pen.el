@@ -1,7 +1,7 @@
 filter-things.sh                                                                    # keep this at the top, so it's the default
 f-irc
 sttr
-q -ftln                                                                             # quote ftln                                                                                                 # lines
+q -ftln                                                                             # quote ftln
 uq -ftln                                                                            # unquote ftln
 q                                                                                   # quote
 qne                                                                                 # quote no outside quotes
