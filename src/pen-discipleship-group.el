@@ -26,6 +26,12 @@
                 "Genesis 41"
                 "Genesis 42-43"
                 "Genesis 44-45"
+                "Genesis 46-47"))
+          (6 . ("Genesis 48-49"
+                "Genesis 50"
+                "Exodus 1"
+                "Genesis 42-43"
+                "Genesis 44-45"
                 "Genesis 46-47"))))
 
 ;; New Testament 260
