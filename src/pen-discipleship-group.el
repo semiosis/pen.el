@@ -118,7 +118,7 @@
   ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
   )
 
-(defun d-group-weekly-journal ()
+(defun d-group-weekly-journal-dir ()
   (interactive)
   (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
 
@@ -130,5 +130,11 @@
 (defun d-group-agenda ()
   (interactive)
   (org-link-open-from-string "[[brain:agenda/Church::Discipleship group <2023-12-29 Fri 12:00 +1w>]]"))
+
+(defun d-group-weekly-journal ()
+  (let ((dir d-group-weekly-journal-dir))
+    
+    ))
+
 
 (provide 'pen-discipleship-group)
