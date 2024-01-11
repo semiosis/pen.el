@@ -75,6 +75,7 @@ join_multi_liners() {
 {
     printf -- "%s\n" "$raw"
 } |
+    # James 2:25e:  <- This was problematic
     join_multi_liners | sed -z 's/\([0-9]:\) *\n/\1 /g' | sed 's/^\s*//' | {
     if test "$pretty" = "y"; then
         awk1 | while IFS=$'\n' read -r line; do
