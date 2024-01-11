@@ -18,11 +18,10 @@
                 "Genesis 25:19-34"
                 "Genesis 26"))
           (4 . ("Genesis 27-28"
-                "Genesis 29-30:24"
-                "Genesis 22"
-                "Genesis 24"
-                "Genesis 25:19-34"
-                "Genesis 26"))))
+                "Genesis 29-30"
+                "Genesis 31-32"
+                "Genesis 33-35"
+                "Genesis 37"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
