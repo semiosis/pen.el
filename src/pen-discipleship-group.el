@@ -137,5 +137,4 @@
         (fp (f-join dir (weekfile))))
     (e fp)))
 
-
 (provide 'pen-discipleship-group)
