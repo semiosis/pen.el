@@ -90,7 +90,7 @@
   (interactive)
   (dired (f-join user-home-directory "notes")))
 
-(defun pen-dired-workspace ()
+(defun pen-dired-workspaces ()
   (interactive)
   (dired (f-join user-home-directory "notes" "ws")))
 

@@ -195,6 +195,7 @@
 
   (sslk "ldd" 'pen-dired-documents)
   (sslk "ldn" 'pen-dired-notes)
+  (sslk "ldk" 'pen-dired-workspaces)
   (sslk "ldp" 'pen-acolyte-dired-penel)
   (sslk "ldqd" 'pen-dired-documents)
   (sslk "ldqn" 'pen-dired-notes)
