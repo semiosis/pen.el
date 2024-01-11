@@ -232,19 +232,23 @@
              (defun ranger-set-dired-key ()
                (define-key dired-mode-map ranger-key 'deer-from-dired)))
 
-(defun todayfile ()
+(defun todayfile (&optional bn-only)
   (interactive)
   (let ((fp
-         (snc "todayfile -P | cat")))
+         (if bn-only
+             (snc "todayfile | cat")
+           (snc "todayfile -P | cat"))))
 
     (if (interactive-p)
         (find-file fp)
       fp)))
 
-(defun weekfile ()
+(defun weekfile (&optional bn-only)
   (interactive)
   (let ((fp
-         (snc "todayfile -w -P | cat")))
+         (if bn-only
+             (snc "todayfile -w | cat")
+           (snc "todayfile -w -P | cat"))))
 
     (if (interactive-p)
         (find-file fp)
