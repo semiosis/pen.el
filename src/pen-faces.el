@@ -1293,6 +1293,8 @@ Also see option `magit-blame-styles'."
 
                       diredfl-dir-heading
 
+                      transient-argument
+
                       magit-blame-heading
 
                       tab-bar
