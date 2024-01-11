@@ -1293,6 +1293,7 @@ Also see option `magit-blame-styles'."
 
                       diredfl-dir-heading
 
+                      magit-blame-heading
 
                       tab-bar
                       tab-bar-tab-inactive
