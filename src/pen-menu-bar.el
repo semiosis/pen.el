@@ -1032,6 +1032,9 @@
     (bindings--define-key menu [mi-view-agenda]
       '(menu-item "View agenda" view-agenda
                   :help "View org-agenda"))
+    (bindings--define-key menu [mi-ebdb-display-all-records]
+      '(menu-item "Address book" ebdb-display-all-records
+                  :help "View Address Book"))
     (bindings--define-key menu [mi-captain-bible]
       '(menu-item "Captain Bible" captain-bible
                   :help "Play Captain Bible"))
