@@ -2289,7 +2289,7 @@ May use to generate code from comments."
 (require 'pen-font-lock-studio)
 (require 'pen-wordnut)
 
-;; I have to debug pen-prompt-description
+;; I have to debug pen-prompt-description because it is hanging
 ;; (require 'pen-prompt-description)
 (require 'pen-colorise)
 (require 'pen-creation)
