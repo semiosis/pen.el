@@ -21,7 +21,12 @@
                 "Genesis 29-30"
                 "Genesis 31-32"
                 "Genesis 33-35"
-                "Genesis 37"))))
+                "Genesis 37"))
+          (5 . ("Genesis 39-40"
+                "Genesis 41"
+                "Genesis 42-43"
+                "Genesis 44-45"
+                "Genesis 46-47"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
