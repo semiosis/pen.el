@@ -120,7 +120,7 @@
 
 (defun d-group-weekly-journal-dir ()
   (interactive)
-  (if (interacive-p)
+  (if (interactive-p)
       (dired (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal"))
     (umn "$PEN/documents/notes/ws/discipleship-group/weekly-journal")))
 
