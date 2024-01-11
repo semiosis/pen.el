@@ -90,6 +90,10 @@
   (interactive)
   (dired (f-join user-home-directory "notes")))
 
+(defun pen-dired-workspace ()
+  (interactive)
+  (dired (f-join user-home-directory "notes" "ws")))
+
 (defun pen-reload-config-file ()
   "Fuzzy selects a selects file to be loaded."
   (interactive)
