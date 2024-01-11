@@ -1,5 +1,8 @@
 (require 'pen-openai)
 
+;; This has suddenly broken
+;; I think it's due to not having an internet connection.
+
 (defset pen-completion-backends
         '()
   ;; name completion command and a list of engines
