@@ -2132,3 +2132,5 @@ ln -s /root/programs/hyper-gateway-linux hyper-gateway
 cargo install gitui
 
 e ia path-headerline-mode
+
+e ia org-gtd
