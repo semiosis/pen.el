@@ -643,10 +643,10 @@ items if they have an hour specification like [h]h:mm."
     (region-erase-trailing-whitespace (point-min) (point-max))
     res))
 (advice-add 'org-agenda-redo :around #'org-agenda-redo-around-advice)
-(advice-remove 'org-agenda-redo #'org-agenda-redo-around-advice)
+;; (advice-remove 'org-agenda-redo #'org-agenda-redo-around-advice)
 
 (advice-add 'org-agenda-finalize :around #'org-agenda-redo-around-advice)
-(advice-remove 'org-agenda-finalize #'org-agenda-redo-around-advice)
+;; (advice-remove 'org-agenda-finalize #'org-agenda-redo-around-advice)
 
 ;; org-agenda-refresh is my own command
 (define-key org-agenda-mode-map (kbd "g") 'org-agenda-refresh)
