@@ -9,4 +9,4 @@ pandoc -f markdown -t org |
     sed '/:PROPERTIES/d' |
     sed '/:CUSTOM_ID:/d' |
     sed '/:END:/d' |
-    sed 's/\\_/_/g' | pa -E "tf org | xa og"
+    sed 's/\\_/_/g' | pa -E "tf org | xa e"
