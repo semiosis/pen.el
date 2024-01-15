@@ -31,7 +31,7 @@
 
 ;; Provide the path to you journal file.
 ;; The default location is too opinionated.
-(setq hledger-jfile "/path/to/your/journal-file.journal")
+(setq hledger-jfile "/volumes/home/shane/var/smulliga/source/git/simonmichael/hledger/examples/personal.journal")
 
 ;;; Auto-completion for account names
 ;; For company-mode users,
