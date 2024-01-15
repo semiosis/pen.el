@@ -8,6 +8,9 @@
 (require 'flycheck-hledger)
 (require 'company-ledger)
 
+;; I should be using hledger, not ledger
+;; https://hledger.org/ledger.html
+
 
 ;; https://github.com/ledger/ledger
 ;; https://www.ledger-cli.org/
