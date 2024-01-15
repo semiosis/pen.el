@@ -21,5 +21,6 @@
 ;; https://www.ledger-cli.org/
 
 ;; I think I will start with ledger and move to hledger
+;; This is so I can learn ledger from the info page
 
 (provide 'pen-ledger)
