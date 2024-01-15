@@ -29,7 +29,7 @@
 ;;; Basic configuration
 (require 'hledger-mode)
 
-;; OK, so I simply need to 
+;; OK, so I simply need to get hledger working well in emacs
 ;; https://raw.githubusercontent.com/narendraj9/hledger-mode/master/_assets/new_demo.gif
 
 ;; To open files with .journal extension in hledger-mode
