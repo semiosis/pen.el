@@ -31,7 +31,7 @@
 
 ;; Provide the path to you journal file.
 ;; The default location is too opinionated.
-(setq hledger-jfile "/volumes/home/shane/var/smulliga/source/git/simonmichael/hledger/examples/personal.journal")
+(setq hledger-jfile "/volumes/home/shane/var/smulliga/source/git/simonmichael/hledger/examples/budgeting/forecast-budget-1.journal")
 
 ;;; Auto-completion for account names
 ;; For company-mode users,
