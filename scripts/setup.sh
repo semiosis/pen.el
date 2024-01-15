@@ -2133,3 +2133,6 @@ cargo install gitui
 
 e ia path-headerline-mode
 e ia org-gtd
+
+agi ledger
+agi hledger
