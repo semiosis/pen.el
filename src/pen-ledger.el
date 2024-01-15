@@ -4,6 +4,9 @@
 (require 'company-ledger)
 (add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
 
+;; ledger 
+;; e:/volumes/home/shane/var/smulliga/source/git/ledger/ledger/test/input/demo.ledger
+
 ;; [[info:(ledger-mode) Top]]
 
 ;; https://hledger.org/
