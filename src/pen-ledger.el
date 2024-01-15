@@ -1,12 +1,13 @@
 (require 'ledger-mode)
 (require 'ledger-import)
-(require 'hledger-mode)
-;; https://hledger.org/
-
-(require 'flymake-hledger)
 (require 'flycheck-ledger)
-(require 'flycheck-hledger)
 (require 'company-ledger)
+
+;; https://hledger.org/
+(require 'hledger-mode)
+(require 'flymake-hledger)
+(require 'flycheck-hledger)
+
 
 ;; I should be using hledger, not ledger
 ;; https://hledger.org/ledger.html
