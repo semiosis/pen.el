@@ -53,4 +53,8 @@
 (define-key hledger-mode-map (kbd "<kp-add>") 'hledger-increment-entry-date)
 (define-key hledger-mode-map (kbd "<kp-subtract>") 'hledger-decrement-entry-date)
 
+;; Personal Accounting
+(global-set-key (kbd "C-c e") 'hledger-jentry)
+(global-set-key (kbd "C-c j") 'hledger-run-command)
+
 (provide 'pen-ledger)
