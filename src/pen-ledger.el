@@ -1,6 +1,8 @@
 (require 'ledger-mode)
 (require 'ledger-import)
 (require 'hledger-mode)
+;; https://hledger.org/
+
 (require 'flymake-hledger)
 (require 'flycheck-ledger)
 (require 'flycheck-hledger)
