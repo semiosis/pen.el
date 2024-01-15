@@ -6,6 +6,7 @@
 (require 'flycheck-hledger)
 (require 'company-ledger)
 
+
 ;; https://github.com/ledger/ledger
 ;; https://www.ledger-cli.org/
 
