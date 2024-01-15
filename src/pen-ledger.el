@@ -29,6 +29,9 @@
 ;;; Basic configuration
 (require 'hledger-mode)
 
+;; OK, so I simply need to 
+;; https://raw.githubusercontent.com/narendraj9/hledger-mode/master/_assets/new_demo.gif
+
 ;; To open files with .journal extension in hledger-mode
 (add-to-list 'auto-mode-alist '("\\.journal\\'" . hledger-mode))
 
