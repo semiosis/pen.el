@@ -15,7 +15,6 @@
 ;; https://hledger.org/ledger.html
 
 ;; But there is no info page for hledger
-
 ;; https://hledger.org/1.32/hledger.html
 
 ;; https://github.com/ledger/ledger
