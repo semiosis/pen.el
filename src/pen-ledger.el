@@ -20,4 +20,6 @@
 ;; https://github.com/ledger/ledger
 ;; https://www.ledger-cli.org/
 
+;; I think I will start with ledger and move to hledger
+
 (provide 'pen-ledger)
