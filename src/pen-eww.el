@@ -727,7 +727,7 @@ word(s) will be searched for via `eww-search-prefix'."
        ((and
          (not (pen-internet-connected-p))
          (not (lg-url-cache-exists url)))
-        )
+        (message (concat "Not connected to the internet. Can't browse " url)))
        (t
         (progn
           ;; *eww-racket-doc*
