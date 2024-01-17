@@ -96,7 +96,7 @@
       (ink-propertise alttext-and-description))))
 
 (defun pen-lg-select-rendering (results)
-  (let* ((result (fz results nil nil "select rendering: ")))
+  (let* ((result (fz results nil nil "LG: select rendering: ")))
     (new-buffer-from-string (ink-propertise result))))
 
 (defun pen-lg-display-page (url)
