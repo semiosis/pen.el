@@ -9,6 +9,8 @@ input_fp="$(cat | tf txt)"
 
 transformer="$1"
 test -n "$transformer" || exit 1
+shift
 
-matcher="$2"
+matcher="$1"
 test -n "$matcher" || exit 1
+shift
