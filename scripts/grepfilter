@@ -17,3 +17,5 @@ shift
 
 matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
 transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
+
+# Then make the literal replacements to the original file
