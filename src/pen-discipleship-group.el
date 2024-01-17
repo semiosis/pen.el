@@ -8,11 +8,7 @@
           (2 . ("Job 38-42"
                 "Genesis 11-17"))
           (3 . ("Genesis 18-26"))
-          (4 . ("Genesis 27-28"
-                "Genesis 29-30"
-                "Genesis 31-32"
-                "Genesis 33-35"
-                "Genesis 37"))
+          (4 . ("Genesis 27-28"))
           (5 . ("Genesis 39-40"
                 "Genesis 41"
                 "Genesis 42-43"
