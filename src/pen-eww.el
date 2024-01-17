@@ -711,6 +711,7 @@ word(s) will be searched for via `eww-search-prefix'."
         (setq url (eww--dwim-expand-url url)))
 
       (if (and (not pen-lg-always)
+               (not (lg-url-cache-exists url))
                (lg-url-is-404 url)
                (yn "URL is 404. Try wayback?"))
           (setq url (eww-select-wayback-for-url url)))
