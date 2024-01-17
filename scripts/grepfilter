@@ -14,3 +14,5 @@ shift
 matcher="$1"
 test -n "$matcher" || exit 1
 shift
+
+matches="$(p "$matches" | eval "$matcher")"
