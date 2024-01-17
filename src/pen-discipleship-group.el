@@ -11,8 +11,7 @@
           (4 . ("Genesis 27-28"))
           (5 . ("Genesis 39-47"))
           (6 . ("Genesis 48-50"
-                "Exodus 1"
-                "Genesis 42-47"))))
+                "Exodus 1"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
