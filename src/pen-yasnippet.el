@@ -447,9 +447,10 @@ prefix argument."
 
 (defun org-current-level-bullets (&optional offset)
   (setq offset (or offset 0))
-  (make-string (+ (or (org-current-level)
-                      0)
-                  offset)
-               ?\*))
+  (let ((n-stars (+ (or (org-current-level)
+                        0)
+                    offset)))
+    (make-string n-stars
+                 ?\*)))
 
 (provide 'pen-yasnippet)
