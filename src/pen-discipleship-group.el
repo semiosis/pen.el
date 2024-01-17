@@ -98,7 +98,8 @@
    (loop for row in
          (-zip-lists-fill ""
                           (str2lines (d-group-get-weekly-scripture-memory week))
-                          (str2lines (d-group-get-weekly-reading week)))
+                          (str2lines (d-group-get-weekly-reading-nt week))
+                          (str2lines (d-group-get-weekly-reading-ot week)))
          collect
          (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " |")))
   ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
