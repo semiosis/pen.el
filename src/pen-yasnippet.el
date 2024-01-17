@@ -447,9 +447,11 @@ prefix argument."
 
 (defun org-current-level-bullets (&optional offset)
   (setq offset (or offset 0))
-  (let ((n-stars (+ (or (org-current-level)
-                        0)
-                    offset)))
+  (let ((n-stars
+         (max (+ (or (org-current-level)
+                     0)
+                 offset)
+              0)))
     (make-string n-stars
                  ?\*)))
 
