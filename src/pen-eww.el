@@ -713,6 +713,7 @@ word(s) will be searched for via `eww-search-prefix'."
       (if (and (not pen-lg-always)
                (not (lg-url-cache-exists url))
                (lg-url-is-404 url)
+               (pen-internet-connected-p)
                (yn "URL is 404. Try wayback?"))
           (setq url (eww-select-wayback-for-url url)))
 
