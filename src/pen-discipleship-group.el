@@ -76,6 +76,12 @@
   (setq reading-list (or (assoc (date-week-number) d-group-weekly-readings-nt260)))
   (list2str (cdr reading-list)))
 
+(defun d-group-get-weekly-reading-nt (&optional week)
+  (d-group-get-weekly-reading week d-group-weekly-readings-nt260))
+
+(defun d-group-get-weekly-reading-ot (&optional week)
+  (d-group-get-weekly-reading week d-group-weekly-readings-foundations260))
+
 (defset d-group-weekly-scripture-memory-nt260
         '((1 . ("Matthew 5:1-2"))
           (2 . ("Matthew 5:3-4"))
