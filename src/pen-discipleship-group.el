@@ -1,5 +1,6 @@
 (require 'pen-dates-and-locales)
 
+;; It's better to compact the verses than to separate into days
 (defset d-group-weekly-readings-foundations260
         '((1 . ("Genesis 1-9"
                 "Job 1-2"))
