@@ -9,11 +9,7 @@
                 "Genesis 11-17"))
           (3 . ("Genesis 18-26"))
           (4 . ("Genesis 27-28"))
-          (5 . ("Genesis 39-40"
-                "Genesis 41"
-                "Genesis 42-43"
-                "Genesis 44-45"
-                "Genesis 46-47"))
+          (5 . ("Genesis 39-47"))
           (6 . ("Genesis 48-49"
                 "Genesis 50"
                 "Exodus 1"
