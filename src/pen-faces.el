@@ -1555,6 +1555,7 @@ Also see option `magit-blame-styles'."
            (cl-loop for f in '(magit-diff-added-highlight
                                iedit-occurrence
                                bible-verse-ref
+                               yas-field-highlight-face
                                avy-lead-face)
                     do
                     (set-face-attribute
