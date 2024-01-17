@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+input_fp="$(cat | tf txt)"
+
+transformer="$1"
+
+matcher="$2"
