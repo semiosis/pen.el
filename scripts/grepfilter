@@ -15,4 +15,4 @@ matcher="$1"
 test -n "$matcher" || exit 1
 shift
 
-matches="$(p "$matches" | eval "$matcher")"
+matches="$(cat "$input_fp" | eval "$matcher")"
