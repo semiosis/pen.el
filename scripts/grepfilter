@@ -8,4 +8,7 @@ export TTY
 input_fp="$(cat | tf txt)"
 
 transformer="$1"
+test -n "$transformer" || exit 1
+
 matcher="$2"
+test -n "$matcher" || exit 1
