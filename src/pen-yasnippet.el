@@ -445,9 +445,11 @@ prefix argument."
                             (t
                              "successfully")))))))
 
-(defun org-current-level-bullets ()
-  (make-string (or (org-current-level)
-              0)
+(defun org-current-level-bullets (&optional offset)
+  (setq offset (or offset 0))
+  (make-string (+ (or (org-current-level)
+                      0)
+                  offset)
                ?\*))
 
 (provide 'pen-yasnippet)
