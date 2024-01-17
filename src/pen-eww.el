@@ -724,9 +724,10 @@ word(s) will be searched for via `eww-search-prefix'."
        ;;   (lg-url-is-404 url)
        ;;   (yn "URL is 404. Generate with a LLM?"))
        ;;  (pen-lg-display-page url))
-       (
-        (and
-         (not (pen-internet-connected-p))))
+       ((and
+         (not (pen-internet-connected-p))
+         (not (lg-url-cache-exists url)))
+        )
        (t
         (progn
           ;; *eww-racket-doc*
