@@ -1,16 +1,10 @@
 (require 'pen-dates-and-locales)
 
 (defset d-group-weekly-readings-foundations260
-        '((1 . ("Genesis 1-2"
-                "Genesis 3-4"
-                "Genesis 6-7"
-                "Genesis 8-9"
+        '((1 . ("Genesis 1-9"
                 "Job 1-2"))
-          (2 . ("Job 38-39"
-                "Job 40-42"
-                "Genesis 11-12"
-                "Genesis 15"
-                "Genesis 16-17"))
+          (2 . ("Job 38-42"
+                "Genesis 11-17"))
           (3 . ("Genesis 18-19"
                 "Genesis 20-21"
                 "Genesis 22"
