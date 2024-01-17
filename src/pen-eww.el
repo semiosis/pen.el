@@ -718,7 +718,10 @@ word(s) will be searched for via `eww-search-prefix'."
       (cond
        ((>= (prefix-numeric-value current-prefix-arg) 16) (pen-lg-display-page url))
        (pen-lg-always (pen-lg-display-page url))
-       ((lg-url-is-404 url) (pen-lg-display-page url))
+       ;; ((and
+       ;;   (lg-url-is-404 url)
+       ;;   (yn "URL is 404. Generate with a LLM?"))
+       ;;  (pen-lg-display-page url))
        (t
         (progn
           ;; *eww-racket-doc*
