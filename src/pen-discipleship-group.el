@@ -73,8 +73,8 @@
 
 (defun d-group-get-weekly-reading (&optional week reading-list)
   (setq week (or week (date-week-number)))
-  (setq reading-list (or (assoc (date-week-number) d-group-weekly-readings-nt260)))
-  (list2str (cdr reading-list)))
+  (setq reading-list (or reading-list d-group-weekly-readings-nt260))
+  (list2str (cdr (assoc (date-week-number) reading-list))))
 
 (defun d-group-get-weekly-reading-nt (&optional week)
   (d-group-get-weekly-reading week d-group-weekly-readings-nt260))
