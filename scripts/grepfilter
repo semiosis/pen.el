@@ -15,4 +15,5 @@ matcher="$1"
 test -n "$matcher" || exit 1
 shift
 
-matches="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
+matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
+transformed_fp="$(cat "$matches_fp" | filter)"
