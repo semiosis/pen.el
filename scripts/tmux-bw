@@ -1,6 +1,6 @@
 #!/bin/bash
 export TTY
 
-tmux list-windows | rev | s field 1 | grep @ | rev | awk1 | while IFS=$'\n' read -r line; do
-    tmux setw -t "$line" window-status-format '#I #W'
+tmux list-windows | rev | s field 1 | grep @ | rev | awk1 | while IFS=$'\n' read -r window_id; do
+    tmux setw -t "$window_id" window-status-format '#I #W'
 done
