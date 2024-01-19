@@ -2,6 +2,8 @@
 
 ;; TODO Make it look like Original Tetris from Elektronika 60
 
+;; TODO Start by simply doubling the width
+
 ;; ПОЛНЫХ СТРОК:  3        <! . . . . . . . . . .!>
 ;; УРОВЕНЬ:       7        <! . . . . . . . . . .!>   7: НАЛЕВО   9: НАПРАВО
 ;;   СЧЕТ:  417            <! . . . . . . . . . .!>        8:ПОВОРОТ
@@ -48,5 +50,10 @@
     (delete-window)
     res))
 (advice-add 'tetris-init-buffer :around #'tetris-init-buffer-around-advice)
+
+(defun gamegrid-cell-offset (x y)
+  (+ gamegrid-buffer-start
+     (* (1+ gamegrid-buffer-width) y)
+     x))
 
 (provide 'pen-tetris)

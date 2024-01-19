@@ -1306,6 +1306,14 @@ Also see option `magit-blame-styles'."
                       message-header-other
                       message-mml
 
+                      gamegrid-color-tty-face-yellow
+                      gamegrid-color-tty-face-blue
+                      gamegrid-color-tty-face-black
+                      gamegrid-color-tty-face-red
+                      gamegrid-color-tty-face-cyan
+                      gamegrid-color-tty-face-magenta
+                      gamegrid-color-tty-face-green
+
                       magit-diff-added-highlight
 
                       ;; org-block
