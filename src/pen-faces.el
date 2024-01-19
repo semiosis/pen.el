@@ -1308,11 +1308,12 @@ Also see option `magit-blame-styles'."
 
                       gamegrid-color-tty-face-yellow
                       gamegrid-color-tty-face-blue
-                      gamegrid-color-tty-face-black
+                      
                       gamegrid-color-tty-face-red
                       gamegrid-color-tty-face-cyan
                       gamegrid-color-tty-face-magenta
                       gamegrid-color-tty-face-green
+                      gamegrid-color-tty-face-white
 
                       magit-diff-added-highlight
 
@@ -1497,6 +1498,8 @@ Also see option `magit-blame-styles'."
 
                       ;; org-verbatim
 
+                      gamegrid-color-tty-face-black
+                      
                       popup-menu-mouse-face
                       popup-menu-selection-face)
            do
