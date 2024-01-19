@@ -1697,7 +1697,14 @@ Also see option `magit-blame-styles'."
 
   (pen-snc "tmux source $EMACSD/pen.el/config/tmux-bw.conf")
 
-  (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice))
+  (advice-add 'internal-set-lisp-face-attribute :around #'internal-set-lisp-face-attribute-around-advice)
+
+  ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
+  ;; Double-check this has been successful.
+  (cl-loop for fr in (frame-list)
+           do
+           (set-face-foreground 'default 'unspecified fr)
+           (set-face-background 'default 'unspecified fr)))
 
 (comment
  (add-hook 'minibuffer-setup-hook
