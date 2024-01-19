@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+tmux setw -t "$full_id" window-status-format '#[fg=colour244]#I #[fg=colour227]#W'
