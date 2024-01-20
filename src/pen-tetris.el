@@ -51,9 +51,7 @@
     res))
 (advice-add 'tetris-init-buffer :around #'tetris-init-buffer-around-advice)
 
-(defun gamegrid-cell-offset (x y)
-  (+ gamegrid-buffer-start
-     (* (1+ gamegrid-buffer-width) y)
-     x))
+;; Don't mess with gamegrid,
+;; only change tetris code
 
 (provide 'pen-tetris)
