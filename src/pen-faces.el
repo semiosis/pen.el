@@ -1,4 +1,5 @@
 (require 'spacemacs-dark-theme)
+(require 'gamegrid)
 
 (defvar pen-black-and-white nil)
 
