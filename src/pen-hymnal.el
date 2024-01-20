@@ -5,6 +5,9 @@
 ;; - read the lyrics / hymn / psalm
 ;; - read the sheet music
 
+(defset openhymnal-dir
+        "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org")
+
 (defun sh/play-hymn ()
   (interactive)
   (sps "play-hymn"))
