@@ -1186,12 +1186,12 @@ Also see option `magit-blame-styles'."
   (interactive)
   (hl-line-mode 1))
 
-(defun gamegrid-make-color-tty-face (color)
-  (let* ((color-str (if (symbolp color) (symbol-value color) color))
-	 (name (intern (format "gamegrid-color-tty-face-%s" color-str)))
-	 (face (make-face name)))
-    (gamegrid-setup-face face color-str)
-    face))
+;; (defun gamegrid-make-color-tty-face (color)
+;;   (let* ((color-str (if (symbolp color) (symbol-value color) color))
+;; 	 (name (intern (format "gamegrid-color-tty-face-%s" color-str)))
+;; 	 (face (make-face name)))
+;;     (gamegrid-setup-face face color-str)
+;;     face))
 
 ;; This works well for vt100
 (defun pen-disable-all-faces ()
