@@ -144,7 +144,7 @@
   (sslk "lFW" (dff (e "$NOTES/ws/french/words.txt")))
   (sslk "lFp" (dff (e "$NOTES/perspective.org")))
   (sslk "lFk" (dff (e "$NOTES/keep-in-mind.org")))
-  (sslk "lFP" (dff (e "$NOTES/plan.org")))
+  (sslk "lFP" (dff (e "$NOTES/prayers.org")))
   ;; (sslk "l3dw" (dff (pen-open-dir "$MYGIT/takaheai/otagoai-website")))
   (sslk "ldgg" (dff (pen-open-dir "$MYGIT")))
   (sslk "ldU" 'fz-find-ws-music)
