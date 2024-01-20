@@ -13,8 +13,9 @@
   (let* ((symsandvals (mapcar (lambda (s) (list s (eval s)))
                               pen-directories))
          (dirsym (fz
-                  (list (mapcar 'car symsandvals)
-                        (mapcar 'cadr symsandvals))
+                  symsandvals
+                  ;; (list (mapcar 'car symsandvals)
+                  ;;       (mapcar 'cadr symsandvals))
                   nil nil "Pen open directory:"))
          (dir (eval dirsym)))
     (if dir
