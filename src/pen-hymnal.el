@@ -14,7 +14,7 @@
                               pen-directories))
          (dirsym (fz
                   (list (mapcar 'car symsandvals)
-                        (mapcar 'cdr symsandvals))
+                        (mapcar 'cadr symsandvals))
                   nil nil "Pen open directory:"))
          (dir (eval dirsym)))
     (if dir
