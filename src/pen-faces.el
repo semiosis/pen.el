@@ -1,5 +1,5 @@
 (require 'spacemacs-dark-theme)
-(require 'gamegrid)
+;; (require 'gamegrid)
 
 (defvar pen-black-and-white nil)
 
@@ -1186,6 +1186,13 @@ Also see option `magit-blame-styles'."
   (interactive)
   (hl-line-mode 1))
 
+(defun gamegrid-make-color-tty-face (color)
+  (let* ((color-str (if (symbolp color) (symbol-value color) color))
+	 (name (intern (format "gamegrid-color-tty-face-%s" color-str)))
+	 (face (make-face name)))
+    (gamegrid-setup-face face color-str)
+    face))
+
 ;; This works well for vt100
 (defun pen-disable-all-faces ()
   (interactive)
@@ -1309,7 +1316,7 @@ Also see option `magit-blame-styles'."
 
                       gamegrid-color-tty-face-yellow
                       gamegrid-color-tty-face-blue
-                      
+
                       gamegrid-color-tty-face-red
                       gamegrid-color-tty-face-cyan
                       gamegrid-color-tty-face-magenta
@@ -1428,15 +1435,16 @@ Also see option `magit-blame-styles'."
                       ;; org-imminent-deadline
                       )
            do
-           (set-face-attribute
-            f nil
-            :inverse-video t
-            :background 'unspecified
-            :foreground 'unspecified
-            ;; This was quite useful!
-            :italic nil
-            ;; :bold (pen-use-bold-p)
-            ))
+           (ignore-errors
+             (set-face-attribute
+              f nil
+              :inverse-video t
+              :background 'unspecified
+              :foreground 'unspecified
+              ;; This was quite useful!
+              :italic nil
+              ;; :bold (pen-use-bold-p)
+              )))
 
   ;; ALL FACES
   (loop for fr in (frame-list)
@@ -1504,22 +1512,24 @@ Also see option `magit-blame-styles'."
                       popup-menu-mouse-face
                       popup-menu-selection-face)
            do
-           (set-face-attribute
-            f nil
-            ;; :inverse-video nil
+           ;; The gamegrid faces are only created if you actually play tetris
+           (ignore-errors
+             (set-face-attribute
+              f nil
+              ;; :inverse-video nil
 
-            :inverse-video nil
+              :inverse-video nil
 
-            ;; As beautiful as italic is, it messes with :inverse
-            ;; Because when on 2 colours, and italic is enabled, inverse is enabled
-            :italic nil
-            ;; :background 'unspecified
-            ;; :foreground 'unspecified
-            ;; :foreground "#000000"
-            ;; :background "#ffffff"
-            ;; :italic t
-            ;; :bold (pen-use-bold-p)
-            ))
+              ;; As beautiful as italic is, it messes with :inverse
+              ;; Because when on 2 colours, and italic is enabled, inverse is enabled
+              :italic nil
+              ;; :background 'unspecified
+              ;; :foreground 'unspecified
+              ;; :foreground "#000000"
+              ;; :background "#ffffff"
+              ;; :italic t
+              ;; :bold (pen-use-bold-p)
+              )))
 
   (cl-loop for fr in (frame-list)
            do
