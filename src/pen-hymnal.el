@@ -5,7 +5,6 @@
 ;; - read the lyrics / hymn / psalm
 ;; - read the sheet music
 
-
 (defdir openhymnal-dir
         "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org")
 
