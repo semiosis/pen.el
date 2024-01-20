@@ -1186,7 +1186,7 @@ Also see option `magit-blame-styles'."
   (interactive)
   (hl-line-mode 1))
 
-;; Redefine this to only make b&w faces
+;; Redefine this to only make b&w / inverted faces
 ;; (defun gamegrid-make-color-tty-face (color)
 ;;   (let* ((color-str (if (symbolp color) (symbol-value color) color))
 ;; 	 (name (intern (format "gamegrid-color-tty-face-%s" color-str)))
