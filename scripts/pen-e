@@ -455,13 +455,14 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         script_path="$1"
         shift
 
-
         # Test with e:emacs-script-test4
+
+        : ${TTY:="$(tty)"}
 
         CMD="$(cmd-cip "$@")"
         : ${CMD:="$(cmd-cip "$@")"}
 
-        elisp="(runscript \"$script_path\" $CMD)$elisp(delete-frame)"
+        elisp="(runscript \"$script_path\" \"$TTY\" $CMD)$elisp(delete-frame)"
 
         export run_as_script_with_tmux=y
         shift "$#"
