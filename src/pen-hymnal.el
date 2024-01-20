@@ -8,6 +8,10 @@
 (defdir openhymnal-dir
         "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org")
 
+(defun pen-opendir ()
+  (interactive)
+  (let ((dirsym (fz pen-directories)))))
+
 (defun sh/play-hymn ()
   (interactive)
   (sps "play-hymn"))
