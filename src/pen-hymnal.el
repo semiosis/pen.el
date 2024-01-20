@@ -10,7 +10,8 @@
 
 (defun pen-opendir ()
   (interactive)
-  (let ((dirsym (fz pen-directories)))))
+  (let ((dirsym (fz (mapcar (lambda (s) (list s (eval s)))
+                            pen-directories))))))
 
 (defun sh/play-hymn ()
   (interactive)
