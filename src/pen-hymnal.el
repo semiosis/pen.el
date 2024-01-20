@@ -15,7 +15,7 @@
      (defvar ,symbol ,documentation)
      (setq ,symbol ,value)))
 
-(defset openhymnal-dir
+(defdir openhymnal-dir
         "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org")
 
 (defun sh/play-hymn ()
