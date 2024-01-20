@@ -2,4 +2,5 @@
 
 ;; emacs-script-test hi yo
 
+(message "Yo: %S" argv)
 (message "Hello: %S" argv)

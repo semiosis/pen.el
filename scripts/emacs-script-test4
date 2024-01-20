@@ -4,5 +4,5 @@
 
 ;; (message "Hello: %S" argv)
 ;; (cmd "Hello: %S" (str argv))
-(tv (cmd "Hello: %S" (str argv)))
+(tv (format "Hello: %S" (str argv)))
 "Hallelujah!"
