@@ -3,7 +3,7 @@
 ;; $EMACSD/host/pen.el/scripts/pen-e
 
 ;; (pen-eval-string (xc))
-(defun runscript (script-path &rest argv)
+(defun runscript (script-path tty &rest argv)
   (if (f-exists-p script-path)
       (progn
         (let* ((code (cat script-path))
