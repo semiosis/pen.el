@@ -10,9 +10,12 @@
 
 (defun pen-opendir ()
   (interactive)
-  (let* ((dirsym (fz (mapcar (lambda (s) (list s (eval s)))
-                             pen-directories)
-                     nil nil "Pen open directory:"))
+  (let* ((symsandvals (mapcar (lambda (s) (list s (eval s)))
+                              pen-directories))
+         (dirsym (fz
+                  (list (mapcar 'car symsandvals)
+                        (mapcar 'cdr symsandvals))
+                  nil nil "Pen open directory:"))
          (dir (eval dirsym)))
     (if dir
         (dired dir))))
