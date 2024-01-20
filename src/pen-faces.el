@@ -1435,6 +1435,7 @@ Also see option `magit-blame-styles'."
                       ;; org-imminent-deadline
                       )
            do
+           ;; The gamegrid faces are only created if you actually play tetris
            (ignore-errors
              (set-face-attribute
               f nil
