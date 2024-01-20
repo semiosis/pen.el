@@ -5,6 +5,14 @@
 ;; - read the lyrics / hymn / psalm
 ;; - read the sheet music
 
+(defvar pen-directories nil)
+
+(defmacro defdir (symbol value &optional documentation)
+  "This does a defset, but adds the symbol to a list of directories"
+
+  `(progn (defvar ,symbol ,documentation)
+          (setq ,symbol ,value)))
+
 (defset openhymnal-dir
         "/volumes/home/shane/dump/programs/httrack/mirrors/http-openhymnal-org-/openhymnal.org")
 
