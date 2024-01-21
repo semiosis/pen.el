@@ -1659,6 +1659,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 ;; (bible-get-chapter-title "Genesis" "30")
 ;; (bible-get-chapter-title "Leviticus" "6")
+;; e:bible-get-chapter-title.els
 (defun bible-get-chapter-title (book chapter)
   (interactive (list (read-string "Book: ")
                      (read-string "Chapter: ")))
