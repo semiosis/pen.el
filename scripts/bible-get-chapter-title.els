@@ -1,6 +1,6 @@
 #!/usr/bin/env -S emacs --quick --script
 
-;; emacs-script-test hi yo
+;; bible-get-chapter-title.els Leviticus 5
 
 (defun bible-get-chapter-title (book chapter)
  (interactive (list (read-string "Book: ")
