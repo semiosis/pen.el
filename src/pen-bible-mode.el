@@ -1673,18 +1673,4 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                  (point))))
       (buffer-substring start end))))
 
-(defun get-chapter-title (book chapter)
-  (interactive (list (read-string "Book: ")
-                     (read-string "Chapter: ")))
-  (with-temp-buffer
-    (ignore-errors (insert-file-contents (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
-    (search-forward (unregexify book))
-    (search-forward-regexp (concat "\\b" chapter "\\b"))
-    (search-forward-regexp "\\. ")
-    (let ((start (point))
-          (end (progn
-                 (end-of-line)
-                 (point))))
-      (buffer-substring start end))))
-
 (provide 'pen-bible-mode)
