@@ -710,4 +710,23 @@
     (if sym
         (call-interactively sym))))
 
+(defun handle--command-execute (commands arg)
+  "Run COMMANDS with `command-execute'.
+Try next command on `error', passing ARG as `prefix-arg'."
+  (when (tv commands)
+    (let ((first (car commands))
+          (rest (cdr commands)))
+      (condition-case nil
+          (cond
+           ((let ((prefix-arg arg))
+              ;; (message "`handle' running `%s'." first)
+              (command-execute first 'record)) t)
+           ((not (handle--nice-function-p first)) t)
+           (t (progn
+                ;; (message "`handle' ran `%s' unsuccessfully." first)
+                (handle--command-execute rest arg))))
+        (error ;; (message "`handle' failed to run `%s'." first)
+               (format "`handle' failed to run `%s'." first)
+               (handle--command-execute rest arg))))))
+
 (provide 'pen-handle)
