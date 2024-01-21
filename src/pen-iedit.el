@@ -107,7 +107,7 @@
 (defun around-advice-preserve-clipboard (proc &rest args)
   (let ((clipboard (xc))
         (res (apply proc args)))
-    (xc clipboard)
+    (xc clipboard t)
     res))
 (advice-add 'iedit--quit :around #'around-advice-preserve-clipboard)
 ;; (advice-remove 'iedit--quit #'around-advice-preserve-clipboard)
