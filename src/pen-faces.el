@@ -1857,4 +1857,6 @@ Also see option `magit-blame-styles'."
     (set-mark start)
     (goto-char end)))
 
+(define-key global-map (kbd "s-F") 'select-font-lock-face-region)
+
 (provide 'pen-faces)
