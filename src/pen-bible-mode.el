@@ -1667,7 +1667,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (ignore-errors (insert-file-contents
                     "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
     (search-forward-regexp (concat "^" book))
-    (search-forward-regexp (concat "\\b" (str chapter) "\\b"))
+    (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
+    (beginning-of-line)
     (search-forward-regexp "\\. ")
     (let ((start (point))
           (end (progn
