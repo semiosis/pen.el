@@ -362,4 +362,8 @@ values to copy the link to the clipboard and/or primary as well."
   ;; (ace-link--help-action pt)
   )
 
+(defun pen-avy-goto-char ()
+  (interactive)
+  (call-interactively 'avy-goto-char))
+
 (provide 'pen-avy)
