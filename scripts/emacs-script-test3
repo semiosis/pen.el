@@ -18,6 +18,6 @@
 
 ;; (message "Yo: %S" argv)
 ;; (message "Hello: %S" argv)
-
-(message "%S" (get-chapter-title (car argv) (cadr argv)))
 ;; (get-chapter-title (car argv) (cadr argv))
+
+(message "%s" (get-chapter-title (car argv) (cadr argv)))
