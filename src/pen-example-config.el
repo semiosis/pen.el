@@ -665,7 +665,7 @@
   (define-key pen-map (kbd "<S-f8>") 'pen-define-word-for-topic)
   (define-key pen-map (kbd "H-@") 'pen-see-pen-command-hist)
   (define-key pen-map (kbd "M-l M-y") 'pen-copy-link-at-point)
-  (define-key pen-map (kbd "M-k") 'avy-goto-char))
+  (define-key pen-map (kbd "M-k") 'pen-avy-goto-char))
 
 (pen-define-maps)
 
