@@ -12,6 +12,16 @@
             "Bible verse ref with notes"
             :group 'bible-mode)
 
+(defsetface bible-codes
+            '((t
+               ;; pink - greek words
+               :foreground "#d2268b"
+               :weight bold
+               ;; :underline t
+               ))
+            "Strong's Code"
+            :group 'bible-mode)
+
 (defsetface bible-greek
             '((t
                ;; pink - greek words
