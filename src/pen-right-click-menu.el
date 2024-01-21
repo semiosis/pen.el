@@ -215,6 +215,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("Get value from YAML" :call yaml-get-value-from-this-file :if (major-mode-p 'yaml-mode))
         ("LSP right click menu" :call pen-lsp-mouse-click :if (minor-mode-p lsp-mode))
         ("ebdb right click menu" :call pen-ebdb-mouse-click :if (major-mode-p 'ebdb-mode))
+        ("select thing by face" : select-font-lock-face-region)
         ("prose"
          ("Cancel" :call identity-command)
          ("pick up line" :call pf-very-witty-pick-up-lines-for-a-topic/1)
