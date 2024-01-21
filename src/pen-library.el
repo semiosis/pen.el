@@ -154,10 +154,10 @@
                               (bible-mode-get-book-and-chapter)))
                            (book
                             (ignore-errors
-                              (car (s-split " " refstring))))
+                              (s-replace-regexp " [^ ]*$" "" refstring)))
                            (chapter
                             (ignore-errors
-                              (cadr (s-split " " refstring))))
+                              (s-replace-regexp ".* \\([^ ]*\\)$" "\\1" refstring)))
 
                            (title
                             (ignore-errors
