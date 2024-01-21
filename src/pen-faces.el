@@ -1596,11 +1596,8 @@ Also see option `magit-blame-styles'."
                                org-bold
                                org-italic
 
-                               bible-jesus-words
-                               bible-divine-name
-
-
-
+                               ;; bible-jesus-words
+                               ;; bible-divine-name
 
                                hc-trailing-whitespace
                                trailing-whitespace
