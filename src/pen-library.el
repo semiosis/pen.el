@@ -149,9 +149,14 @@
                                            eww-followed-link))))
 
                (and (major-mode-enabled 'bible-mode)
-                    (let* ((refstring (bible-mode-get-book-and-chapter))
-                           (book (car (s-split " " refstring)))
-                           (chapter (cadr (s-split " " refstring))))
+                    (let* ((refstring
+                            (ignore-error (bible-mode-get-book-and-chapter)))
+                           (book
+                            (ignore-errors
+                              (car (s-split " " refstring))))
+                           (chapter
+                            (ignore-errors
+                              (cadr (s-split " " refstring)))))
                       (concat
                        (ignore-errors
                          refstring)
