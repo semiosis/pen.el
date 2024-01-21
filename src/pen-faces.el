@@ -1600,8 +1600,7 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
 
-           (cl-loop for f in '(bible-verse-ref
-                               )
+           (cl-loop for f in '(bible-verse-ref)
                     do
                     (set-face-attribute
                      f fr
@@ -1727,6 +1726,7 @@ Also see option `magit-blame-styles'."
 
   ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
   ;; Double-check this has been successful.
+  ;; But this has busted the underline for bible-verse-ref-notes
   (cl-loop for fr in (frame-list)
            do
            (with-selected-frame fr
