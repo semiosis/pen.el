@@ -8,7 +8,8 @@
  (with-temp-buffer
    (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
    (search-forward-regexp (concat "^" book))
-   (search-forward-regexp (concat "\\b" chapter "\\b"))
+   (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
+   (beginning-of-line)
    (search-forward-regexp "\\. ")
    (let ((start (point))
          (end (progn
