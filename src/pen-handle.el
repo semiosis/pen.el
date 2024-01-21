@@ -436,6 +436,7 @@
         :docs '(pen-esp-docs-for-thing-if-prefix
                 lookup-thing-glossary-definition
                 dict-word
+                wordnut-lookup-current-word
                 helm-wordnet-suggest
                 pen-docs-for-thing-given-screen)
         :godef '()

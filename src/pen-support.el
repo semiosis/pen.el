@@ -1416,12 +1416,16 @@ when s is a string, set the clipboard to s"
           (call-interactively 'kill-ring-save))))
   (if s
       (progn
+        ;; (pen-sn "xsel --primary --input" s)
+        ;; (pen-sn "xsel --secondary --input" s)
         (pen-sn "xsel --clipboard --input" s)
         (if (not silent) (message "%s" (concat "Copied: " s)))
         s)
     (progn
       ;; Frustratingly, shell-command-to-string uses the current directory.
       ;; (shell-command-to-string "xsel --clipboard --output")
+      ;; (pen-sn "xsel --primary --output")
+      ;; (pen-sn "xsel --secondary --output")
       (pen-sn "xsel --clipboard --output"))))
 
 (defun pen-ivy-completing-read (prompt collection

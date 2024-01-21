@@ -57,8 +57,9 @@
    ((or (major-mode-p 'bible-mode)
         (major-mode-p 'bible-search-mode))
     (if (or (region-active-p))
-        (progn (call-interactively 'cua-copy-region)
-               (deselect))
+        (progn
+          (call-interactively 'cua-copy-region)
+          (deselect))
       (call-interactively 'bible-mode-copy-link)))
    (t
     (progn
