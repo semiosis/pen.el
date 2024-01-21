@@ -716,7 +716,7 @@ Try next command on `error', passing ARG as `prefix-arg'."
   (when commands
     (if (>= (prefix-numeric-value current-global-prefix-arg) 4)
         (let
-            ((cmd (fz commands)))
+            ((cmd (fz commands nil nil "Handle select command: ")))
           ;; (tv (type cmd))
           (command-execute (str2sym cmd) 'record))
       (let ((first (car commands))
