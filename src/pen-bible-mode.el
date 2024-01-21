@@ -1657,4 +1657,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "F") 'bible-mode-fast-toggle)
 
+(defun get-chapter-title (book chapter)
+  (interactive (list (read-string "Book: ")
+                     (read-string "Chapter: ")))
+  (with-temp-buffer
+    (ignore-errors (insert-file-contents (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt")))
+    (search-forward (unregexify book))))
+
 (provide 'pen-bible-mode)
