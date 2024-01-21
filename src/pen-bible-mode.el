@@ -14,8 +14,8 @@
 
 (defsetface bible-codes
             '((t
-               ;; pink - greek words
-               :foreground "#d2268b"
+               ;; bright cyan - codes
+               :foreground "#77ffff"
                :weight bold
                ;; :underline t
                ))
