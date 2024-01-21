@@ -150,8 +150,8 @@
 
                (and (major-mode-enabled 'bible-mode)
                     (let* ((refstring
-                            (ignore-error
-                                (bible-mode-get-book-and-chapter)))
+                            (ignore-errors
+                              (bible-mode-get-book-and-chapter)))
                            (book
                             (ignore-errors
                               (car (s-split " " refstring))))
