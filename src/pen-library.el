@@ -157,20 +157,23 @@
                               (car (s-split " " refstring))))
                            (chapter
                             (ignore-errors
-                              (cadr (s-split " " refstring)))))
-                      (concat
-                       (ignore-errors
-                         refstring)
-                       " "
-                       (ignore-errors
-                         (bible-get-chapter-title book chapter))
+                              (cadr (s-split " " refstring))))
 
-                       ;; I need to have different highlights for different
-                       ;; Bible reading modes
-                       (cond (bible-mode-fast-enabled
-                              " (Fast-Mode)")
-                             (bible-mode-word-study-enabled
-                              " (Word-Study)")))))
+                           (title
+                            (ignore-errors
+                              (bible-get-chapter-title book chapter))))
+                      (if refstring
+                          (concat
+                           refstring
+                           " "
+                           title
+
+                           ;; I need to have different highlights for different
+                           ;; Bible reading modes
+                           (cond (bible-mode-fast-enabled
+                                  " (Fast-Mode)")
+                                 (bible-mode-word-study-enabled
+                                  " (Word-Study)"))))))
 
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
