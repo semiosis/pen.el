@@ -1507,7 +1507,7 @@ Also see option `magit-blame-styles'."
                       ;; org-verbatim
 
                       gamegrid-color-tty-face-black
-                      
+
                       popup-menu-mouse-face
                       popup-menu-selection-face)
            do
@@ -1855,7 +1855,7 @@ Also see option `magit-blame-styles'."
            ))
          (start (car reg))
          (end (cadr reg)))
-    
+
     (set-mark start)
     (goto-char end)))
 
