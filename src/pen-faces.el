@@ -1842,10 +1842,11 @@ Also see option `magit-blame-styles'."
   (interactive)
   (without-hl-line
    (let* ((face (face-at-point))
-          (pt (point)
-              (start (pen-prev-prop-change 'face))
-              (end (pen-next-prop-change 'face))))
-     )
+          (pt (point))
+          (start (pen-prev-prop-change 'face))
+          (end (pen-next-prop-change 'face)))
+     (set-mark start)
+     (goto-char end))
 
    ;; (when (eq (face-at-point) 'font-lock-keyword-face)
    ;;   (set-mark (point))
