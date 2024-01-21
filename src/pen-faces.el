@@ -1352,8 +1352,6 @@ Also see option `magit-blame-styles'."
                       org-level-4
                       org-level-5
 
-                      ;; org-verbatim
-
                       message-header-name
 
                       mode-line-active
@@ -1584,6 +1582,10 @@ Also see option `magit-blame-styles'."
                                eww-cached
                                yas-field-highlight-face
                                avy-lead-face
+
+                               org-verbatim
+                               org-bold
+                               org-italic
 
                                hc-trailing-whitespace
                                trailing-whitespace
