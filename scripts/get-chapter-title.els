@@ -1,0 +1,23 @@
+#!/usr/bin/env -S emacs --quick --script
+
+;; emacs-script-test hi yo
+
+(defun get-chapter-title (book chapter)
+ (interactive (list (read-string "Book: ")
+                    (read-string "Chapter: ")))
+ (with-temp-buffer
+   (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+   (search-forward book)
+   (search-forward-regexp (concat "\\b" chapter "\\b"))
+   (search-forward-regexp "\\. ")
+   (let ((start (point))
+         (end (progn
+                (end-of-line)
+                (point))))
+     (buffer-substring start end))))
+
+;; (message "Yo: %S" argv)
+;; (message "Hello: %S" argv)
+;; (get-chapter-title (car argv) (cadr argv))
+
+(message "%s" (get-chapter-title (car argv) (cadr argv)))
