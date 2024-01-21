@@ -1343,7 +1343,7 @@ Also see option `magit-blame-styles'."
 
                       evil-ex-substitute-replacement
 
-                      bible-verse-ref-notes
+                      
 
                       org-hide
                       org-level-1
@@ -1579,7 +1579,8 @@ Also see option `magit-blame-styles'."
 
            (cl-loop for f in '(magit-diff-added-highlight
                                iedit-occurrence
-                               bible-verse-ref
+
+                               bible-verse-ref-notes
                                eww-cached
                                yas-field-highlight-face
                                avy-lead-face)
