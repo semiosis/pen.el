@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+sn="$(basename -- "$0")"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -b) {
@@ -55,7 +57,7 @@ esac; done
 # Thankfully there is a multiple of 10 number of books
 
 input_fp="$(cat | c ascify | tf txt)"
-spinner-start
+spinner-start "$sn"
 
 # Make this consume the args and generate a regex
 
