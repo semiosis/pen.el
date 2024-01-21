@@ -363,11 +363,7 @@ values to copy the link to the clipboard and/or primary as well."
   )
 
 (defun ivy-running-p ()
-  (member 'ivy--queue-exhibit post-command-hook)
-  ;; (tv (pps post-command-hook))
-  ;; ( "post-command-hook")
-  ;; : ["(ivy--queue-exhibit t)"]
-  )
+  (member 'ivy--queue-exhibit post-command-hook))
 
 (defun pen-avy-goto-char ()
   (interactive)
