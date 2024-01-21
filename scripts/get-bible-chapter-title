@@ -6,4 +6,7 @@ export TTY
 book="$1"
 chapter="$2"
 
-/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt
+# cmd vedm "/$book\\<CR>/\<$chapter\>\\<CR>\"ayyggVGd\"aP"
+# cat /root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt | vedm "/$book\\<CR>/\<$chapter\>\\<CR>\"ayyggVGd\"aP"
+
+cat /root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt | vedm "/$book\\<CR>/\<$chapter\>\\<CR>\"ayyggVGd\"aP"
