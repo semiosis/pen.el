@@ -362,8 +362,18 @@ values to copy the link to the clipboard and/or primary as well."
   ;; (ace-link--help-action pt)
   )
 
+(defun ivy-running-p ()
+  (member 'ivy--queue-exhibit post-command-hook)
+  ;; (tv (pps post-command-hook))
+  ;; ( "post-command-hook")
+  ;; : ["(ivy--queue-exhibit t)"]
+  )
+
 (defun pen-avy-goto-char ()
   (interactive)
-  (call-interactively 'avy-goto-char))
+  (if (and (major-mode-p 'minibuffer-mode)
+           (ivy-running-p))
+      (call-interactively 'ivy-avy)
+    (call-interactively 'avy-goto-char)))
 
 (provide 'pen-avy)
