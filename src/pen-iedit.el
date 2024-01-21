@@ -104,4 +104,12 @@
 
 (advice-add 'iedit-current-occurrence-string :around #'ignore-errors-around-advice)
 
+(defun around-advice-preserve-clipboard (proc &rest args)
+  (let ((clipboard (xc))
+        (res (apply proc args)))
+    (xc clipboard)
+    res))
+(advice-add 'iedit--quit :around #'around-advice-preserve-clipboard)
+;; (advice-remove 'iedit--quit #'around-advice-preserve-clipboard)
+
 (provide 'pen-iedit)
