@@ -12,6 +12,45 @@
             "Bible verse ref with notes"
             :group 'bible-mode)
 
+(defsetface bible-greek
+            '((t
+               ;; pink - greek words
+               :foreground "#d2268b"
+               :weight bold
+               ;; :underline t
+               ))
+            "Strong's Greek"
+            :group 'bible-mode)
+
+(defsetface bible-greek-always
+            '((t
+               ;; light blue - always show greek words
+               :foreground "#7777ff"
+               :weight bold
+               ;; :underline t
+               ))
+            "Strong's Greek (always show)"
+            :group 'bible-mode)
+
+
+(defsetface bible-hebrew
+            '((t
+               :foreground "cyan"
+               :weight bold
+               ;; :underline t
+               ))
+            "Strong's Hebrew"
+            :group 'bible-mode)
+
+(defsetface bible-lemma
+            '((t
+               :foreground "cyan"
+               :weight bold
+               ;; :underline t
+               ))
+            "Strong's Lemma"
+            :group 'bible-mode)
+
 (defsetface bible-jesus-words
             '((t
                :foreground "#ff3333"
@@ -1114,12 +1153,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                       (refend (point)))
                                   (if (member (str2sym strongs_code)
                                               bible-strongs-always-show-codelist)
-                                      (put-text-property refstart refend 'font-lock-face `(
-                                                                                           ;; light blue - always show greek words
-                                                                                           :foreground "#7777ff"))
-                                    (put-text-property refstart refend 'font-lock-face `(
-                                                                                         ;; pink - greek words
-                                                                                         :foreground "#d2268b")))))))
+                                      (put-text-property refstart refend 'face 'bible-greek-always)
+                                    (put-text-property refstart refend
+                                                       'face 'bible-greek))))))
                         (setq match (string-match "[GH][0-9]+" savlm (+ match matchstrlen)))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma
@@ -1130,7 +1166,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                             (insert " " word)
                             (setq refstart (- (point) (length word))
                                   refend (point))
-                            (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
+                            (put-text-property refstart refend 'face 'bible-lemma)
                             (put-text-property refstart refend 'keymap bible-mode-lemma-keymap))))
 
                     (comment
@@ -1143,7 +1179,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                              (insert (if (eq iter 1) "" " ") word)
                              (setq refstart (- (point) (length word))
                                    refend (point))
-                             (put-text-property refstart refend 'font-lock-face `(:foreground "cyan"))
+                             (put-text-property refstart refend 'face 'bible-hebrew)
                              (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))
           (insert)))))
 
