@@ -1371,6 +1371,13 @@ Also see option `magit-blame-styles'."
 
                       consult-grep-context
 
+                      bible-codes
+                      bible-greek
+                      bible-greek-always
+                      bible-hebrew
+                      bible-lemma
+
+
                       ;; helm-grep-cmd-line
                       ;; helm-grep-file
                       ;; helm-grep-finish
@@ -1550,6 +1557,9 @@ Also see option `magit-blame-styles'."
 
                                company-preview
 
+
+                               bible-jesus-words
+                               bible-divine-name
 
 
                                Man-underline
