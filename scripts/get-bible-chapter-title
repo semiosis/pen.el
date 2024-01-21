@@ -3,4 +3,7 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+book="$1"
+chapter="$2"
+
 /root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt
