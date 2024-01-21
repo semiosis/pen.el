@@ -1841,22 +1841,16 @@ Also see option `magit-blame-styles'."
 - go forwards until the face changes"
   (interactive)
   (without-hl-line
-   (let ((block-face (face-at-point))
-         (initial-point (point)))
+   (let* ((face (face-at-point))
+          (pt (point)
+              (start (pen-prev-prop-change 'face))
+              (end (pen-next-prop-change 'face))))
+     )
 
-     (go-to-start-of-face block-face)
-     (forward-char 1)
-     (mark)
-
-     (goto-char initial-point)
-
-     (go-to-end-of-face block-face)
-     (backward-char 1)))
-
-  ;; (when (eq (face-at-point) 'font-lock-keyword-face)
-  ;;   (set-mark (point))
-  ;;   (while (eq (face-at-point) 'font-lock-keyword-face)
-  ;;     (forward-char 1)))
-  )
+   ;; (when (eq (face-at-point) 'font-lock-keyword-face)
+   ;;   (set-mark (point))
+   ;;   (while (eq (face-at-point) 'font-lock-keyword-face)
+   ;;     (forward-char 1)))
+   ))
 
 (provide 'pen-faces)
