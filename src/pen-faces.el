@@ -1343,8 +1343,6 @@ Also see option `magit-blame-styles'."
 
                       evil-ex-substitute-replacement
 
-                      
-
                       org-hide
                       org-level-1
                       org-level-2
@@ -1548,6 +1546,10 @@ Also see option `magit-blame-styles'."
 
                                org-agenda-date
                                lsp-ui-peek-list
+
+                               company-preview
+
+
 
                                Man-underline
 
