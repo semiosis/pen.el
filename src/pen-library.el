@@ -149,16 +149,22 @@
                                            eww-followed-link))))
 
                (and (major-mode-enabled 'bible-mode)
-                    (concat
-                     (ignore-errors
-                       (bible-mode-get-book-and-chapter))
+                    (let* ((refstring (bible-mode-get-book-and-chapter))
+                           (book (car (s-split " " refstring)))
+                           (chapter (cadr (s-split " " refstring))))
+                      (concat
+                       (ignore-errors
+                         refstring)
+                       " "
+                       (ignore-errors
+                         (bible-get-chapter-title book chapter))
 
-                     ;; I need to have different highlights for different
-                     ;; Bible reading modes
-                     (cond (bible-mode-fast-enabled
-                            " (Fast-Mode)")
-                           (bible-mode-word-study-enabled
-                            " (Word-Study)"))))
+                       ;; I need to have different highlights for different
+                       ;; Bible reading modes
+                       (cond (bible-mode-fast-enabled
+                              " (Fast-Mode)")
+                             (bible-mode-word-study-enabled
+                              " (Word-Study)")))))
 
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
