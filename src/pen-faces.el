@@ -1558,10 +1558,6 @@ Also see option `magit-blame-styles'."
                                company-preview
 
 
-                               bible-jesus-words
-                               bible-divine-name
-
-
                                Man-underline
 
                                lsp-ui-peek-peek
@@ -1599,6 +1595,12 @@ Also see option `magit-blame-styles'."
                                org-verbatim
                                org-bold
                                org-italic
+
+                               bible-jesus-words
+                               bible-divine-name
+
+
+
 
                                hc-trailing-whitespace
                                trailing-whitespace
