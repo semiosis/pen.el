@@ -1840,7 +1840,6 @@ Also see option `magit-blame-styles'."
 - go backwards until the face changes
 - go forwards until the face changes"
   (interactive)
-  (deselect)
   (let* ((reg
           (without-hl-line
            (let* ((face (face-at-point))
