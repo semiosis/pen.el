@@ -713,7 +713,7 @@
 (defun handle--command-execute (commands arg)
   "Run COMMANDS with `command-execute'.
 Try next command on `error', passing ARG as `prefix-arg'."
-  (when (tv commands)
+  (when commands
     (let ((first (car commands))
           (rest (cdr commands)))
       (condition-case nil
