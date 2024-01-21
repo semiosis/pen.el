@@ -1862,6 +1862,7 @@ Also see option `magit-blame-styles'."
 
 ;; I can't do s-M-F sadly
 (define-key global-map (kbd "s-F") 'select-font-lock-face-region)
+;; But s-f is fairly easy to press
 (define-key global-map (kbd "s-f") 'select-font-lock-face-region)
 
 (provide 'pen-faces)
