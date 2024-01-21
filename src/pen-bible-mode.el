@@ -42,7 +42,6 @@
             "Strong's Greek (always show)"
             :group 'bible-mode)
 
-
 (defsetface bible-hebrew
             '((t
                :foreground "cyan"
