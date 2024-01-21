@@ -1727,33 +1727,34 @@ Also see option `magit-blame-styles'."
   ;; I hope that by putting this also at the end again I will not have to run pen-disable-all-faces twice
   ;; Double-check this has been successful.
   ;; But this has busted the underline for bible-verse-ref-notes
-  (cl-loop for fr in (frame-list)
-           do
-           (with-selected-frame fr
-             (if (display-graphic-p)
-                 (progn
-                   (comment
+  (comment
+   (cl-loop for fr in (frame-list)
+            do
+            (with-selected-frame fr
+              (if (display-graphic-p)
+                  (progn
+                    (comment
+                     (set-foreground-color "#000000")
+                     (set-background-color "#ffffff"))
+
+                    (comment
+                     (set-foreground-color "#ffffff")
+                     (set-background-color "#000000"))
+
                     (set-foreground-color "#000000")
                     (set-background-color "#ffffff"))
-
-                   (comment
-                    (set-foreground-color "#ffffff")
-                    (set-background-color "#000000"))
-
+                (progn
+                  ;; For the tty, use 'unspecified, because I want to take advantage of rev
+                  (comment
                    (set-foreground-color "#000000")
-                   (set-background-color "#ffffff"))
-               (progn
-                 ;; For the tty, use 'unspecified, because I want to take advantage of rev
-                 (comment
-                  (set-foreground-color "#000000")
-                  (set-background-color 'unspecified))
+                   (set-background-color 'unspecified))
 
-                 (set-foreground-color 'unspecified)
-                 ;; (set-background-color "#000000")
-                 (set-background-color 'unspecified)
+                  (set-foreground-color 'unspecified)
+                  ;; (set-background-color "#000000")
+                  (set-background-color 'unspecified)
 
-                 ;; tty-menu-enabled-face
-                 )))))
+                  ;; tty-menu-enabled-face
+                  ))))))
 
 (comment
  (add-hook 'minibuffer-setup-hook
