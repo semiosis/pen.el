@@ -216,6 +216,8 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
         ("Get value from YAML" :call yaml-get-value-from-this-file :if (major-mode-p 'yaml-mode))
         ("LSP right click menu" :call pen-lsp-mouse-click :if (minor-mode-p lsp-mode))
         ("ebdb right click menu" :call pen-ebdb-mouse-click :if (major-mode-p 'ebdb-mode))
+        ;; This doesnt work because RCM does a save-excursion
+        ;; I should, therefore, be using the proper right click menu for emacs
         ("select thing by face" :call select-font-lock-face-region)
         ("prose"
          ("Cancel" :call identity-command)
