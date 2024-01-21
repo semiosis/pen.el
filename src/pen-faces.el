@@ -1583,7 +1583,23 @@ Also see option `magit-blame-styles'."
                                bible-verse-ref-notes
                                eww-cached
                                yas-field-highlight-face
-                               avy-lead-face)
+                               avy-lead-face
+
+                               hc-trailing-whitespace
+                               trailing-whitespace
+                               whitespace-trailing
+                               whitespace-big-indent
+                               whitespace-empty
+                               whitespace-hspace
+                               whitespace-indentation
+                               whitespace-line
+                               whitespace-missing-newline-at-eof
+                               whitespace-newline
+                               whitespace-space
+                               whitespace-space-after-tab
+                               whitespace-space-before-tab
+                               whitespace-tab
+                               whitespace-trailing)
                     do
                     (set-face-attribute
                      f fr
@@ -1666,25 +1682,11 @@ Also see option `magit-blame-styles'."
 
                             lsp-headerline-breadcrumb-path-face
 
-
-                            hc-trailing-whitespace
-                            trailing-whitespace
-                            whitespace-trailing
                             ;; font-lock-comment-face
                             info-code-face
 
-                            whitespace-big-indent
-                            whitespace-empty
-                            whitespace-hspace
-                            whitespace-indentation
-                            whitespace-line
-                            whitespace-missing-newline-at-eof
-                            whitespace-newline
-                            whitespace-space
-                            whitespace-space-after-tab
-                            whitespace-space-before-tab
-                            whitespace-tab
-                            whitespace-trailing)
+
+                            )
                  do
                  (set-face-attribute
                   f fr
