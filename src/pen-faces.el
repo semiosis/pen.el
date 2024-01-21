@@ -1686,9 +1686,7 @@ Also see option `magit-blame-styles'."
 
                             ;; font-lock-comment-face
                             info-code-face
-
-
-                            )
+                            shr-code)
                  do
                  (set-face-attribute
                   f fr
