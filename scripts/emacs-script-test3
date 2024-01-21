@@ -16,7 +16,7 @@
                 (point))))
      (buffer-substring start end))))
 
-(message "Yo: %S" argv)
-(message "Hello: %S" argv)
+;; (message "Yo: %S" argv)
+;; (message "Hello: %S" argv)
 
 (message "%S" (get-chapter-title (car argv) (cadr argv)))
