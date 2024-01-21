@@ -120,7 +120,7 @@ of exiting.  This function is otherwise like `ivy-done'."
 (define-key ivy-minibuffer-map (kbd "M-D") 'send-m-del)
 (define-key ivy-minibuffer-map (kbd "C-c o") 'ivy-tvipe-filtered-candidates)
 
-;; I havent got this going yet
+;; I havent got this going yet - C-' in the GUI does work
 ;; (define-key ivy-minibuffer-map (kbd "M-k") 'ivy-avy)
 ;; (define-key ivy-mode-map (kbd "M-k") 'ivy-avy)
 
