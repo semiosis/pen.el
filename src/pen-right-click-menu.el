@@ -203,6 +203,7 @@ If `INITIAL-INDEX' is non-nil, this is an initial index value for
   (interactive)
   (ekbd "RET"))
 
+;; TODO Ensure that this uses the built-in right click menu
 (setq right-click-context-global-menu-tree
       `(("Cancel" :call identity-command)
         ("> prompt functions" :call rcm-prompt-functions)
