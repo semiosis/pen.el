@@ -1533,8 +1533,9 @@ Also see option `magit-blame-styles'."
   (cl-loop for fr in (frame-list)
            do
 
-           (cl-loop for f in '(org-verbatim
-                               org-bold
+           (cl-loop for f in '(
+                               ;; org-verbatim
+                               ;; org-bold
                                org-todo
                                org-done
                                hc-tab
