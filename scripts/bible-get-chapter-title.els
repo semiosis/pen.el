@@ -1,8 +1,20 @@
 #!/usr/bin/env -S emacs --quick --script
 
-# https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
+;; https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
 
 ;; bible-get-chapter-title.els Leviticus 5
+
+(defun str (thing)
+  "Converts object or string to an unformatted string."
+
+  (if thing
+      (if (stringp thing)
+          (substring-no-properties thing)
+        (progn
+          (setq thing (format "%s" thing))
+          (set-text-properties 0 (length thing) nil thing)
+          thing))
+    ""))
 
 (defun bible-get-chapter-title (book chapter)
  (interactive (list (read-string "Book: ")
