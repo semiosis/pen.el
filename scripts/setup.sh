@@ -2141,3 +2141,8 @@ v $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 sed -i "/ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE/s/fg=8'/fg=8,underline'/" /root/repos/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 e ia iterator iterators iter2 path-iterator
+
+(
+cd /root/repos
+git clone "https://gitlab.com/emacsos/enum.el"
+)
