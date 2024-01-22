@@ -803,6 +803,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
         (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
 
+        (setq-local bible-mode-ref-tuple (list book chapter verse))
         (setq-local bible-mode-chapter (concat book " " chapter))
 
         (if (>= (prefix-numeric-value current-prefix-arg) 4)
