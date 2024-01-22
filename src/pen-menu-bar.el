@@ -930,7 +930,7 @@
             '(menu-item "Bible open" bible-open
                         :help "Open the Bible"))
           (bindings--define-key menu [mi-bible-mode-read-chapter-aloud-kjv]
-            '(menu-item "Bible chapter titles" bible-mode-read-chapter-aloud-kjv
+            '(menu-item "Read chapter aloud from KJV" bible-mode-read-chapter-aloud-kjv
                         :help "Read chapter aloud from KJV"))
           (bindings--define-key menu [mi-bible-e-chapter-titles]
             '(menu-item "Bible chapter titles" bible-e-chapter-titles
