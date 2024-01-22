@@ -52,7 +52,7 @@ Intended for `eldoc-documentation-functions' (which see)."
   (let* ((syminfo (elisp--fnsym-in-current-sexp))
          (fun (car syminfo))
          (pos (cadr syminfo))
-         (intgen (nth pos (cadr (interactive-form 'e/grep)))))
+         (intgen (nth pos (cadr (interactive-form fun)))))
 
     (insert (pen-pps (eval intgen)))))
 
