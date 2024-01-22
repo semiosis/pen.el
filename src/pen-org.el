@@ -388,23 +388,26 @@ With argument N not nil or 1, move forward N - 1 lines first."
 
 (defun tvipe-org-table-export ()
   (interactive)
-  (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
-    (org-table-export newfile "orgtbl-to-tsv")
-    (pen-sps (concat "vs " (pen-q newfile)))))
+  (auto-yes
+   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
+     (org-table-export newfile "orgtbl-to-tsv")
+     (pen-sps (concat "vs " (pen-q newfile))))))
 (defalias 'tvipe-org-table-export-tsv 'tvipe-org-table-export)
 
 (defun etv-org-table-export ()
   (interactive)
-  (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
-    (org-table-export newfile "orgtbl-to-tsv")
-    (esph (pen-lm (pen-term-nsfa (concat "vs " (pen-q newfile)))))))
+  (auto-yes
+   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
+     (org-table-export newfile "orgtbl-to-tsv")
+     (esph (pen-lm (pen-term-nsfa (concat "vs " (pen-q newfile))))))))
 (defalias 'etv-org-table-export-tsv 'etv-org-table-export)
 
 (defun fpvd-org-table-export ()
   (interactive)
-  (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
-    (org-table-export newfile "orgtbl-to-tsv")
-    (pen-sps (concat "fpvd " (pen-q newfile)))))
+  (auto-yes
+   (let ((newfile (org-babel-temp-file "org-table" ".tsv")))
+     (org-table-export newfile "orgtbl-to-tsv")
+     (pen-sps (concat "fpvd " (pen-q newfile))))))
 
 ;; This advice didn't work - I guess I need to advise org-table-export
 ;; (advice-add 'fpvd-org-table-export :around #'advise-to-yes)
