@@ -1782,7 +1782,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (interactive (list (read-string "Pattern: ")
                      ;; I should select from a list of large string inputs
-                     (read-string "input string: ")))
+                     (read-string "input string: ")
+                     (str2sym (fz (list 'glob 'pcre 'literal)
+                                  nil nil ))))
 
   ;; This should be in the 'cond snippet
   (pcase mode

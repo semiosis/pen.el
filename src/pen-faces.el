@@ -1335,6 +1335,8 @@ Also see option `magit-blame-styles'."
 
                       ;; font-lock-keyword-face
 
+                      eldoc-highlight-function-argument
+
                       ;; window-divider
                       ;; window-divider-first-pixel
                       ;; window-divider-last-pixel
