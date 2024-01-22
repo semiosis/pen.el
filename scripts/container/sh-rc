@@ -15,7 +15,6 @@ Z  zsh
 z  zsh
 ^  selected.el
 s  .ssh/config
-\`  .profile
 ;  .shellrc
 K  .racketrc
 a  .shell_aliases
@@ -82,7 +81,8 @@ W  $MYGIT/config/weechat/weechat.conf
 :  $MYGIT/mullikine/shane-prolog/shane.pl
 L  $HOME/.plrc
 >  $HOME/.pen/pen.yaml
-\`  $HOME/.Xresources
+\`  .profile
+\~  $HOME/.Xresources
 HEREDOC
 
 echo "$0" | udl | hls green
@@ -95,7 +95,6 @@ case "$d" in
     .) cmd="vs $0" ;;
     Z|z) cmd="vs $HOME/.zshrc" ;;
     \^) cmd="pin $MYGIT/config/emacs/config/my-selected.el" ;;
-    \`) cmd="vs $HOME/.profile" ;;
     a) cmd="vs $HOME/.shell_aliases" ;;
     q) cmd="vs ~/.pen/pen.yaml" ;;
     Q) cmd="vs ~/.pen/efm-langserver-config.yaml" ;;
@@ -163,6 +162,7 @@ case "$d" in
     \:) cmd="pin $MYGIT/mullikine/shane-prolog/shane.pl" ;;
     L) cmd="pin $HOME/.plrc" ;;
     \>) cmd="vs +G $HOME/.pen/pen.yaml" ;;
+    \`) cmd="vs $HOME/.profile" ;;
     \~) cmd="vs ~/.Xresources" ;;
 
 esac
