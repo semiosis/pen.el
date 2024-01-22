@@ -1786,11 +1786,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     ('glob
      (pen-snc (cmd "glob-grep" pattern) s))
     ('pcre
-     (tv (-filter (lambda (line) (s-matches-p
-                                  (pcre-to-elisp pattern)
-                                  line))
-                  (str2lines s)))
-     (pen-snc (cmd "grep" "-P" pattern) s))
+     (let ((epat (pcre-to-elisp pattern)))
+       (list2str
+        (-filter (lambda (line) (s-matches-p
+                                 epat
+                                 line))
+                 (str2lines s))))
+     ;; (pen-snc (cmd "grep" "-P" pattern) s)
+     )
     ('literal
      (pen-snc (cmd "grep" "-F" pattern) s))
     (_
