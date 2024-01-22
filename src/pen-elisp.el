@@ -37,4 +37,12 @@ Intended for `eldoc-documentation-functions' (which see)."
 
 (define-key emacs-lisp-mode-map (kbd "M-w") #'pen-elisp-expand-macro-or-copy)
 
+(defun elisp-complete-interactive-arg ()
+  (let* ((syminfo (elisp--fnsym-in-current-sexp))
+         (fun (car syminfo))
+         (pos (cadr syminfo))
+         (intgen (nth pos (cadr (interactive-form 'e/grep)))))
+
+    (tv intgen)))
+
 (provide 'pen-elisp)
