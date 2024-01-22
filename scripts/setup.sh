@@ -2142,6 +2142,7 @@ sed -i "/ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE/s/fg=8'/fg=8,underline'/" /root/repos/o
 
 e ia iterator iterators iter2 path-iterator
 
+# This isn't a very useful implementation of an enum
 (
 cd /root/repos
 git clone "https://gitlab.com/emacsos/enum.el"
