@@ -2136,3 +2136,6 @@ e ia org-gtd
 
 agi ledger
 agi hledger
+
+v $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+sed -i "/ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE/s/fg=8'/fg=8,underline'/" /root/repos/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
