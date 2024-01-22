@@ -61,6 +61,6 @@ Intended for `eldoc-documentation-functions' (which see)."
 (define-key pen-map (kbd "s-/") 'elisp-complete-interactive-arg)
 
 (comment
- (e/grep "lkadsfj" "dlksajfl" 'glob))
+ (e/grep "*" "dlksajfl" 'glob))
 
 (provide 'pen-elisp)
