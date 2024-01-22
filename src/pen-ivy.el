@@ -112,6 +112,10 @@ of exiting.  This function is otherwise like `ivy-done'."
     ;; (call-interactively 'ivy-next-line-or-history)
     (call-interactively 'ivy-next-line)))
 
+(defun ivy-tvipe-filtered-candidates ()
+  (interactive)
+  (tvd (list2str (pen-ivy-filtered-candidates))))
+
 (define-key ivy-minibuffer-map (kbd "<next>") 'ivy-scroll-down)
 (define-key ivy-minibuffer-map (kbd "<prior>") 'ivy-scroll-up)
 
