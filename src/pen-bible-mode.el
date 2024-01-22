@@ -847,7 +847,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
         (list
          book
          chapter
-         verse))))
+         verse
+         title))))
 
 (defalias 'bible-mode-get-ref 'bible-mode-get-link)
 (defalias 'bible-mode-get-verse 'bible-mode-get-link)
