@@ -2361,3 +2361,6 @@ modus-themes
 mini-header-line
 minibuffer-header
 path-headerline-mode
+iterator
+iter2
+path-iterator
