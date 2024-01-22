@@ -1813,4 +1813,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               "-d"))
       (message "Open the Bible first"))))
 
+(define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
+
 (provide 'pen-bible-mode)
