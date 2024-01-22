@@ -2147,3 +2147,6 @@ e ia iterator iterators iter2 path-iterator
 cd /root/repos
 git clone "https://gitlab.com/emacsos/enum.el"
 )
+
+# For arecord: arecord --format=cd file.wav
+agi alsa-utils
