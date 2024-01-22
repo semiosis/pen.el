@@ -1809,7 +1809,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (regex (concat booknumber ".* 0*" book-chapter ".mp3"))
          (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
          (filename (e/grep regex fileslisting 'pcre)))
-    (sps (cmd "vlc" ) filename)))
+    (sps (cmd "mplayer" (f-join dir filename)))))
 
 
 (provide 'pen-bible-mode)
