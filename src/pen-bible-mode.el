@@ -1776,7 +1776,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-mode-read-chapter ()
   (interactive)
   (let* ((reftuple (bible-mode-get-ref-tuple))
-         (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/"))))
+         (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/")
+         (booknumber (current-book-number)))))
 
 
 (provide 'pen-bible-mode)
