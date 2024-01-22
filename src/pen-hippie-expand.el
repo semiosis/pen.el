@@ -10,9 +10,12 @@
   (if
       (and
        (major-mode-p 'emacs-lisp-mode)
-       (string-equal " " (thing-at-point 'char))
+       (or (string-equal " " (thing-at-point 'char))
+           (string-equal ")" (thing-at-point 'char)))
        (not (thing-at-point 'symbol)))
-      (call-interactively 'elisp-complete-interactive-arg)
+      (try
+       (call-interactively 'elisp-complete-interactive-arg)
+       (call-interactively 'hippie-expand))
     (call-interactively 'hippie-expand)))
 
 (provide 'pen-hippie-expand)
