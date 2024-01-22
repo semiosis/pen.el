@@ -56,6 +56,8 @@ Intended for `eldoc-documentation-functions' (which see)."
 
     (insert (pen-pps (eval intgen)))))
 
+(define-key pen-map (kbd "s-/") 'elisp-complete-interactive-arg)
+
 (comment
  (e/grep "lkadsfj" "dlksajfl" 'glob))
 
