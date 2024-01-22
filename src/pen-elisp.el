@@ -54,7 +54,8 @@ Intended for `eldoc-documentation-functions' (which see)."
          (pos (cadr syminfo))
          (intgen (nth pos (cadr (interactive-form fun)))))
 
-    (insert (pen-pps (eval intgen)))))
+    (if intgen
+        (insert (pen-pps (eval intgen))))))
 
 (define-key pen-map (kbd "s-/") 'elisp-complete-interactive-arg)
 
