@@ -1806,7 +1806,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/")
          (booknumber (str (current-book-number)))
          (book-chapter (str (cadr bible-mode-ref-tuple)))
-         (regex (concat "^" booknumber " .* 0*" book-chapter ".mp3"))
+         (regex (concat "/" booknumber " .* 0*" book-chapter ".mp3"))
          (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
          (filename (e/grep (tv regex) fileslisting 'pcre)))
     (tv (cmd "mplayer" (f-join dir filename)))))
