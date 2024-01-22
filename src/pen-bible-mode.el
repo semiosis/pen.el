@@ -831,29 +831,23 @@ creating a new `bible-mode' buffer positioned at the specified verse."
             (string-to-int (s-replace-regexp ".*:" "" refstring))))
          (refstring
           (ignore-errors
-            (s-replace-regexp ":[^:]*" "" ref)))
+            (s-replace-regexp ":[^:]*" "" refstring)))
          (book
           (ignore-errors
             (s-replace-regexp " [^ ]*$" "" refstring)))
          (chapter
           (ignore-errors
-            (s-replace-regexp ".* \\([^ ]*\\)$" "\\1" refstring)))
+            (string-to-int
+             (s-replace-regexp ".* \\([^ ]*\\)$" "\\1" refstring))))
 
          (title
           (ignore-errors
             (bible-get-chapter-title book chapter))))
     (if refstring
-        (concat
-         refstring
-         " "
-         title
-
-         ;; I need to have different highlights for different
-         ;; Bible reading modes
-         (cond (bible-mode-fast-enabled
-                " (Fast-Mode)")
-               (bible-mode-word-study-enabled
-                " (Word-Study)"))))))
+        (list
+         book
+         chapter
+         verse))))
 
 (defalias 'bible-mode-get-ref 'bible-mode-get-link)
 (defalias 'bible-mode-get-verse 'bible-mode-get-link)
