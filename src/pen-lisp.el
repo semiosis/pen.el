@@ -200,7 +200,7 @@ clojure and perhaps all lisp modes. Done."
 
 
 (defun pen-lisp-cursor-elem-index ()
-  " ;;       cursor here
+  ";;       cursor here
               |
 (foo bar baz faz yaz)
 ;;            ^
