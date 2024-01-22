@@ -46,6 +46,7 @@ Intended for `eldoc-documentation-functions' (which see)."
           (pps o)))
         (t (pps o))))
 
+;; This is awesome - now bind it to something
 (defun elisp-complete-interactive-arg ()
   (interactive)
   (let* ((syminfo (elisp--fnsym-in-current-sexp))
@@ -55,6 +56,6 @@ Intended for `eldoc-documentation-functions' (which see)."
 
     (insert (pen-pps (eval intgen)))))
 
-(e/grep "lkadsfj" "dlksajfl" pcre)
+(e/grep "lkadsfj" "dlksajfl" 'glob)
 
 (provide 'pen-elisp)
