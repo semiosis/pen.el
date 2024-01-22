@@ -1800,7 +1800,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
      ;; Default for grep
      (pen-snc (cmd "grep" "-G" pattern) s))))
 
-(defun bible-mode-read-chapter ()
+(defun bible-mode-read-chapter-aloud ()
   (interactive)
   (let* ((reftuple (bible-mode-get-ref-tuple))
          (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/")
@@ -1810,6 +1810,5 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
          (filename (e/grep regex fileslisting 'pcre)))
     (sps (cmd "mplayer" (f-join dir filename)))))
-
 
 (provide 'pen-bible-mode)
