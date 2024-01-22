@@ -1775,8 +1775,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 ;; TODO make a 'grep function' for emacs in pure elisp
 
-;; I really need elisp functions that can take a Enum/option, rather
-;; than lists of binaries;
+;; I really need elisp functions that can take a Enum/option as arg
 ;; one argument should be 'mode and mode should be 'glob, 'pcre or 'literal
 (defun e/grep (pattern s &optional mode)
   "mode can be 'glob, 'pcre or 'literal"
