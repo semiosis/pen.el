@@ -1645,7 +1645,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     ;; (-find (lambda (e) (string-equal "Leviticus" (car e))) bible-mode-book-chapters)
     ;; (-find-index (lambda (e) (string-equal "Leviticus" (car e))) bible-mode-book-chapters)
 
-    (+1 (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
+    (+ 1 (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
     ;; Get the index
     ;; verse
     ))
