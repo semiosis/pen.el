@@ -1719,4 +1719,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                  (point))))
       (buffer-substring start end))))
 
+(defun bible-mode-read-chapter ()
+  (interactive)
+  (let ((dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/"))))
+
+
 (provide 'pen-bible-mode)
