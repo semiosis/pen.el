@@ -1778,10 +1778,21 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 ;; I really need elisp functions that can take options, rather
 ;; than lists of binaries;
 ;; one argument should be 'mode and mode should be 'glob, 'posix or 'literal
-(defun e/grep (pattern s &optional use-posix use-literal)
-  (pen-snc )
+(defun e/grep (pattern s &optional mode)
+  "mode can be 'glob, 'posix or 'literal"
 
-  )
+  ;; This should be in the 'cond snippet
+  (pcase mode
+    ('glob
+     (pen-snc (cmd "glob-grep" pattern) s))
+    ('posix
+     (pen-snc (cmd "grep" "-P" pattern) s))
+    ('literal
+     (pen-snc (cmd "grep" "-F" pattern) s))
+    (_
+     (pen-snc (cmd "grep" "-E" pattern) s)))
+
+  (pen-snc ))
 
 (defun bible-mode-read-chapter ()
   (interactive)
