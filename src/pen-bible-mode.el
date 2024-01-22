@@ -1800,7 +1800,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
      ;; Default for grep
      (pen-snc (cmd "grep" "-G" pattern) s))))
 
-(defun bible-mode-read-chapter-aloud ()
+(defun bible-mode-read-chapter-aloud-kjv ()
   (interactive)
   (let* ((reftuple (bible-mode-get-ref-tuple))
          (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/")
