@@ -1773,7 +1773,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                  (point))))
       (buffer-substring start end))))
 
-;; TODO make a 'grep function' for emacs
+;; TODO make a 'grep function' for emacs in pure elisp
 
 (defun bible-mode-read-chapter ()
   (interactive)
