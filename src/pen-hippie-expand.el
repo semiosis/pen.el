@@ -11,7 +11,10 @@
       (and
        (major-mode-p 'emacs-lisp-mode)
        (or (string-equal " " (thing-at-point 'char))
-           (string-equal ")" (thing-at-point 'char)))
+           (and (save-excursion
+                  (backward-char)
+                  (string-equal " " (thing-at-point 'char)))
+                (string-equal ")" (thing-at-point 'char))))
        (not (thing-at-point 'symbol)))
       (try
        (call-interactively 'elisp-complete-interactive-arg)
