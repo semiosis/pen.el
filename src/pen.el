@@ -2432,6 +2432,7 @@ May use to generate code from comments."
 (require 'peniel)
 (require 'pen-discipleship-group)
 (require 'pen-custom-conf)
+(require 'pen-iterator)
 
 (if (inside-docker-p)
     (progn
