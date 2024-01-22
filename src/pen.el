@@ -1224,7 +1224,7 @@ Reconstruct the entire yaml-ht for a different language."
       (f-touch path))))
 
 (defun pen-touch-all-files (file-list)
-  (interactive (read-string-hist "pen-touch-all-files: "))
+  (interactive (list (read-string-hist "pen-touch-all-files: ")))
   (cl-loop for path in (pen-str2list file-list)
         do
         (progn
