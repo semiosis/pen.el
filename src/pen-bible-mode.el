@@ -809,15 +809,6 @@ creating a new `bible-mode' buffer positioned at the specified verse."
             (concat "[[bible:" (concat bible-mode-chapter ":" verse) "]]")
           (concat bible-mode-chapter ":" verse))))))
 
-(defun bible-mode-get-book-and-chapter (&optional text)
-  (interactive (list (thing-at-point 'line t)))
-
-  (setq text (or text (thing-at-point 'line t)))
-
-  (let ((ref (bible-mode-get-link text)))
-    (setq ref (s-replace-regexp ":[^:]*" "" ref))
-    ref))
-
 (defun bible-mode-get-ref-tuple (&optional text)
   (interactive (list (thing-at-point 'line t)))
 
@@ -852,6 +843,15 @@ creating a new `bible-mode' buffer positioned at the specified verse."
          ;; TODO Get VERSE title
          ;; title
          ))))
+
+(defun bible-mode-get-book-and-chapter (&optional text)
+  (interactive (list (thing-at-point 'line t)))
+
+  (setq text (or text (thing-at-point 'line t)))
+
+  (let ((ref (bible-mode-get-link text)))
+    (setq ref (s-replace-regexp ":[^:]*" "" ref))
+    ref))
 
 (defalias 'bible-mode-get-ref 'bible-mode-get-link)
 (defalias 'bible-mode-get-verse 'bible-mode-get-link)
@@ -1756,7 +1756,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-read-chapter ()
   (interactive)
-  (let ((dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/"))))
+  (let* ((reftuple (bible-mode-get-ref-tuple))
+         (dir "/volumes/home/shane/dump/torrents/The Holy Bible - Audio Bible - King James Version - Alexander Scourby - Voice of The Bible/"))))
 
 
 (provide 'pen-bible-mode)

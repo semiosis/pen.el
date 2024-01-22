@@ -149,22 +149,24 @@
                                            eww-followed-link))))
 
                (and (major-mode-enabled 'bible-mode)
-                    (let* ((refstring
+                    (let* ((reftuple
                             (ignore-errors
-                              (bible-mode-get-book-and-chapter)))
+                              (bible-mode-get-ref-tuple)))
                            (book
                             (ignore-errors
-                              (s-replace-regexp " [^ ]*$" "" refstring)))
+                              (car reftuple)))
                            (chapter
                             (ignore-errors
-                              (s-replace-regexp ".* \\([^ ]*\\)$" "\\1" refstring)))
+                              (cadr reftuple)))
 
                            (title
                             (ignore-errors
                               (bible-get-chapter-title book chapter))))
-                      (if refstring
+                      (if reftuple
                           (concat
-                           refstring
+                           book
+                           " "
+                           (str chapter)
                            " "
                            title
 
