@@ -900,7 +900,8 @@
   (counsel-M-x ""))
 
 (global-set-key (kbd "M-x") 'pen-counsel-M-x)
-(global-set-key (kbd "M-/") 'hippie-expand)
+;; (global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "M-/") 'pen-hippie-expand)
 (require 'expand-region)
 (global-set-key (kbd "M-r") 'er/expand-region)
 
