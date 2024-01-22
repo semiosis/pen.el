@@ -2436,6 +2436,7 @@ May use to generate code from comments."
 
 (if (inside-docker-p)
     (progn
+      (require 'pen-enum)
       (require 'pen-perl)
       (require 'pen-compilation)
       (require 'pen-iedit)
