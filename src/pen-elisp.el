@@ -56,6 +56,6 @@ Intended for `eldoc-documentation-functions' (which see)."
 
     (insert (pen-pps (eval intgen)))))
 
-(e/grep "lkadsfj" "dlksajfl" 'glob)
+;; (e/grep "lkadsfj" "dlksajfl" 'glob)
 
 (provide 'pen-elisp)
