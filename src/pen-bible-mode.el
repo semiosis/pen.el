@@ -1790,9 +1790,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     ('literal
      (pen-snc (cmd "grep" "-F" pattern) s))
     (_
-     (pen-snc (cmd "grep" "-G" pattern) s)))
-
-  (pen-snc ))
+     ;; Default for grep
+     (pen-snc (cmd "grep" "-G" pattern) s))))
 
 (defun bible-mode-read-chapter ()
   (interactive)
