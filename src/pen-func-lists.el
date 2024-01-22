@@ -75,6 +75,7 @@
                            bible-mode-split-display
                            bible-random-verse-ref
                            nicene-creed
+                           bible-mode-read-chapter-aloud-kjv
                            bible-mode-fuzzy-search
                            syriac-digraph-select
                            aramaic-digraph-select
