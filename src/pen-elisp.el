@@ -37,6 +37,15 @@ Intended for `eldoc-documentation-functions' (which see)."
 
 (define-key emacs-lisp-mode-map (kbd "M-w") #'pen-elisp-expand-macro-or-copy)
 
+(defun pen-pps (o)
+  (cond ((or
+          (consp o)
+          (symbolp o))
+         (concat
+          "'"
+          (pps o)))
+        (t (pps o))))
+
 (defun elisp-complete-interactive-arg ()
   (interactive)
   (let* ((syminfo (elisp--fnsym-in-current-sexp))
@@ -44,8 +53,8 @@ Intended for `eldoc-documentation-functions' (which see)."
          (pos (cadr syminfo))
          (intgen (nth pos (cadr (interactive-form 'e/grep)))))
 
-    (insert (pps (eval intgen)))))
+    (insert (pen-pps (eval intgen)))))
 
-(e/grep )
+(e/grep "lkadsfj" "dlksajfl" pcre)
 
 (provide 'pen-elisp)
