@@ -206,15 +206,6 @@ clojure and perhaps all lisp modes. Done."
 ;;            ^
 ;;            4
 "
-  (save-excursion
-    (cond ((region-active-p)
-           (goto-char (region-beginning)))
-          ((eq major-mode 'python-mode)
-           (condition-case nil
-               (goto-char (beginning-of-thing 'sexp))
-             (error (up-list -1))))
-          (t
-           (lispy--back-to-paren)))
-    (point)))
+  (cadr (elisp--fnsym-in-current-sexp)))
 
 (provide 'pen-lisp)
