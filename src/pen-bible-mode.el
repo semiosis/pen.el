@@ -1809,6 +1809,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (regex (concat "^0*" booknumber " .* 0*" book-chapter ".mp3"))
          (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
          (filename (e/grep regex fileslisting 'pcre)))
-    (tv (cmd "mplayer" (f-join dir filename)))))
+    (sps (cmd "mplayer" (f-join dir filename)))))
 
 (provide 'pen-bible-mode)
