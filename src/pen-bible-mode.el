@@ -840,15 +840,18 @@ creating a new `bible-mode' buffer positioned at the specified verse."
             (string-to-int
              (s-replace-regexp ".* \\([^ ]*\\)$" "\\1" refstring))))
 
-         (title
-          (ignore-errors
-            (bible-get-chapter-title book chapter))))
+         ;; (title
+         ;;  (ignore-errors
+         ;;    (bible-get-chapter-title book chapter)))
+         )
     (if refstring
         (list
          book
          chapter
          verse
-         title))))
+         ;; TODO Get VERSE title
+         ;; title
+         ))))
 
 (defalias 'bible-mode-get-ref 'bible-mode-get-link)
 (defalias 'bible-mode-get-verse 'bible-mode-get-link)
