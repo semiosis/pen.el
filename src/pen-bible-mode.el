@@ -1780,6 +1780,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun e/grep (pattern s &optional mode)
   "mode can be 'glob, 'pcre or 'literal"
 
+  (interactive (list (read-string "Pattern: ")
+                     ;; I should select from a list of large string inputs
+                     (read-string "input string: ")))
+
   ;; This should be in the 'cond snippet
   (pcase mode
     ('glob
