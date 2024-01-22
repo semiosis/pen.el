@@ -1629,7 +1629,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   "Pages to the next book for the active `bible-mode' buffer."
   (interactive)
 
-  bible-mode-book-chapters
+  ;; bible-mode-book-chapters
 
   (bible-mode--set-global-chapter (+ bible-mode-global-chapter 1)))
 
@@ -1640,6 +1640,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (book (car bible-mode-ref-tuple))
         (chapter (cadr bible-mode-ref-tuple))
         (verse (caddr bible-mode-ref-tuple)))
+
+    ;; (assoc "Leviticus" bible-mode-book-chapters)
+    ;; (-find (lambda (e) (string-equal "Leviticus" (car e))) bible-mode-book-chapters)
     verse))
 
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
