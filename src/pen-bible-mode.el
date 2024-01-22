@@ -1780,8 +1780,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (booknumber (str (current-book-number)))
          (book-chapter (str (cadr bible-mode-ref-tuple)))
          (regex (concat booknumber ".* 0*" book-chapter ".mp3"))
-         (filelist (list2str (mapcar 'f-basename (f-files dir)))))
-    (tv filelist)
+         (fileslisting (list2str (mapcar 'f-basename (f-files dir)))))
+    (tv fileslisting)
     (message "%s" regex)))
 
 
