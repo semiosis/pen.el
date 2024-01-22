@@ -1632,6 +1632,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (bible-mode--set-global-chapter (+ bible-mode-global-chapter 1)))
 
+;; Where object-orientation is useful is with getters and setters
+;; to make abstractions such as 'iterable'/arraylike
+(defun current-book-number ()
+  (let ((global-chapter bible-mode-global-chapter))))
+
 (define-key bible-mode-map (kbd "M-t") 'bible-mode-tpop)
 (define-key bible-mode-map (kbd "M-e") 'view-notes-fp-verse)
 (define-key bible-mode-map (kbd "M-v") nil)
