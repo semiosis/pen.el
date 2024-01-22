@@ -1811,6 +1811,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                (fileslisting (list2str (mapcar 'f-basename (f-files dir))))
                (filename (e/grep regex fileslisting 'pcre)))
           (nw (cmd "mplayer" (f-join dir filename))
-              "-d")))))
+              "-d"))
+      (message "Open the Bible first"))))
 
 (provide 'pen-bible-mode)
