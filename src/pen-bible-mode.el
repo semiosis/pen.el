@@ -1775,6 +1775,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 ;; TODO make a 'grep function' for emacs in pure elisp
 
+;; I really need elisp functions that can take options, rather
+;; than lists of binaries;
+;; one argument should be 'mode and mode should be 'glob, 'posix or 'literal
+(defun e/grep (pattern s &optional use-posix use-literal)
+  (pen-snc )
+
+  )
+
 (defun bible-mode-read-chapter ()
   (interactive)
   (let* ((reftuple (bible-mode-get-ref-tuple))
