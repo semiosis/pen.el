@@ -1781,6 +1781,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   "mode can be 'glob, 'pcre or 'literal"
 
   ;; Interactive should be queried by the completer when writing in the arguments
+  ;; Therefore, I need a special completer for interactive arguments
   (interactive (list (read-string "Pattern: ")
                      ;; I should select from a list of large string inputs
                      (read-string "input string: ")
