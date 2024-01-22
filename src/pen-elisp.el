@@ -55,7 +55,8 @@ Intended for `eldoc-documentation-functions' (which see)."
          (intgen (nth pos (cadr (interactive-form fun)))))
 
     (if intgen
-        (insert (pen-pps (eval intgen))))))
+        (insert (pen-pps (eval intgen)))
+      (error "Does not have an interactive argument specified"))))
 
 (define-key pen-map (kbd "s-/") 'elisp-complete-interactive-arg)
 
