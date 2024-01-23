@@ -1496,4 +1496,39 @@ non-nil."
 (defun e/head-n (s n)
   (list2str (-take n (str2lines s ))))
 
+;; TODO make a 'grep function' for emacs in pure elisp
+
+;; I really need elisp functions that can take a Enum/option as arg
+;; E.g. 'mode should be 'glob, 'pcre or 'literal
+(defun e/grep (pattern s &optional mode)
+  "mode can be 'glob, 'pcre or 'literal"
+
+  ;; Interactive should be queried by the completer when writing in the arguments
+  ;; Therefore, I need a special completer for interactive arguments.
+  ;; Also, I need an 'interactive' form which does not turn the function into a command
+  (interactive (list (read-string "Pattern: ")
+                     ;; I should select from a list of large string inputs
+                     (read-string "input string: ")
+                     (str2sym (fz (list 'glob 'pcre 'literal)
+                                  nil nil "Mode: "))))
+
+  ;; This should be in the 'cond snippet
+  (pcase mode
+    ('glob
+     (pen-snc (cmd "glob-grep" pattern) s))
+    ('pcre
+     (let ((epat (pcre-to-elisp pattern)))
+       (list2str
+        (-filter (lambda (line) (s-matches-p
+                                 epat
+                                 line))
+                 (str2lines s))))
+     ;; (pen-snc (cmd "grep" "-P" pattern) s)
+     )
+    ('literal
+     (pen-snc (cmd "grep" "-F" pattern) s))
+    (_
+     ;; Default for grep
+     (pen-snc (cmd "grep" "-G" pattern) s))))
+
 (provide 'pen-library)
