@@ -72,17 +72,22 @@
 (defun ph--display-header ()
   "Display path on headerline."
 
-  (cond ;; ((major-mode-p 'universal-sidecar-buffer-mode)
-        ;;  (path-header-line-off)
-        ;;  ;; (universal-sidecar-refresh)
-        ;;  ;; (refresh-frame)
-        ;;  )
-        (t
-         (setq header-line-format
-               '("" ;; invocation-name
-                 (:eval (if (ph--make-header)
-                            (ph--make-header)
-                          "%b")))))))
+  (cond
+   ((major-mode-p 'universal-sidecar-buffer-mode)
+    ;; (path-header-line-off)
+    ;; (universal-sidecar-refresh)
+    ;; (refresh-frame)
+    (setq header-line-format
+          '("" ;; invocation-name
+            (:eval (if (ph--make-header t)
+                       (ph--make-header t)
+                     "%b")))))
+   (t
+    (setq header-line-format
+          '("" ;; invocation-name
+            (:eval (if (ph--make-header)
+                       (ph--make-header)
+                     "%b")))))))
 
 ;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
