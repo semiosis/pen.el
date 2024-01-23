@@ -86,7 +86,7 @@ If FRAME is nil, use `selected-frame'."
 ;; Well, this was breaking
 (advice-add 'magit-diff-update-hunk-region :around #'ignore-errors-around-advice)
 
-(universal-sidecar-insinuate)
-(universal-sidecar-uninsinuate)
+;; (universal-sidecar-insinuate)
+;; (universal-sidecar-uninsinuate)
 
 (provide 'pen-universal-sidecar)
