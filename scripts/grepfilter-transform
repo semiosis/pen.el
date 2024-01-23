@@ -21,8 +21,9 @@
     ""))
 
 (defun grepfilter-transform (matches-fp bytepos-fp transformed-fp)
- (interactive (list (read-string "Book: ")
-                    (read-string "Chapter: ")))
+ (interactive (list (read-string "Matches fp: ")
+                    (read-string "Bytepos fp: ")
+                    (read-string "Transformed fp: ")))
  (with-temp-buffer
    (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
    (search-forward-regexp (concat "^" book))
