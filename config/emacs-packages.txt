@@ -2364,3 +2364,8 @@ path-headerline-mode
 iterator
 iter2
 path-iterator
+sideline
+sideline-lsp
+sideline-flymake
+sideline-flycheck
+sideline-blame
