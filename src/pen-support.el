@@ -2369,6 +2369,7 @@ This function accepts any number of ARGUMENTS, but ignores them."
   (cond ((major-mode-p 'notmuch-search-mode) (notmuch-refresh-this-buffer))
         ((major-mode-p 'notmuch-show-mode) (notmuch-refresh-this-buffer))
         ((major-mode-p 'notmuch-hello-mode) (notmuch-refresh-this-buffer))
+        ((major-mode-p 'bible-mode) (bible-mode--display))
         (t
          (progn
            (remove-overlays (point-min) (point-max))
