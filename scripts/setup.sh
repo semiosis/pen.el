@@ -2150,3 +2150,4 @@ git clone "https://gitlab.com/emacsos/enum.el"
 
 # For arecord: arecord --format=cd file.wav
 agi alsa-utils
+agi normalize-audio
