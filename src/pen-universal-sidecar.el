@@ -35,11 +35,34 @@ If FRAME is nil, use `selected-frame'."
 (add-to-list 'universal-sidecar-sections 'buffer-git-status)
 (add-to-list 'universal-sidecar-sections 'elfeed-score-section)
 
+(universal-sidecar-define-section fortune-section (file title)
+                                  (:major-modes org-mode
+                                   :predicate (not (buffer-modified-p)))
+  (let ((title (or title
+                   (and file
+                        (format "Fortune: %s" file))
+                   "Fortune"))
+        (fortune (shell-command-to-string (format "fortune%s"
+                                                  (if file
+                                                      (format " %s" file)
+                                                    "")))))
+    (universal-sidecar-insert-section fortune-section title
+      (insert fortune))))
+
+;; (add-to-list 'universal-sidecar-sections 'fortune-section)
+;; (add-to-list 'universal-sidecar-sections '(fortune-section :file "definitions"))
+(add-to-list 'universal-sidecar-sections '(fortune-section :title "O Fortuna!"))
+;; (add-to-list 'universal-sidecar-sections '(fortune-section :file "definitions" :title "Random Definition"))
+
 ;; However, if we want the opposite behavior (don't show renames),
 ;; we'd configure it as shown below.
 ;; (add-to-list 'universal-sidecar-sections '(buffer-git-status :show-renames t))
 
 ;; (add-to-list 'universal-sidecar-sections
 ;;              '(universal-sidecar-roam-section org-roam-backlinks-section))
+
+(universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+  (some-function-that-generates-org-text)
+  (some-post-processing-of-org-text))
 
 (provide 'pen-universal-sidecar)
