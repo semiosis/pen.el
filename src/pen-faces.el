@@ -1295,7 +1295,8 @@ Also see option `magit-blame-styles'."
                       ;; Good for YAML
                       font-lock-property-use-face
 
-                      lsp-ui-doc-background
+                      ;; lsp-ui-doc-background
+                      ;; lsp-ui-doc-highlight-hover
 
                       font-lock-keyword-face
 
@@ -1563,6 +1564,7 @@ Also see option `magit-blame-styles'."
 
 
                                Man-underline
+                               lsp-ui-doc-background
 
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
