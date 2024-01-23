@@ -376,7 +376,10 @@
                              ;;   "#5555ff")
                              )
 
-          (pen-magit-make-margin-overlay (concat "  " (str (point))))))
+          (pen-magit-make-margin-overlay
+           (magit--propertize-face
+            (concat "  " (str (point)))
+            'pen-magit-right-margin-face))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 
