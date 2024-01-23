@@ -33,6 +33,7 @@ If FRAME is nil, use `selected-frame'."
                                                                       client))))))
 
 (add-to-list 'universal-sidecar-sections 'buffer-git-status)
+(remove-from-list 'universal-sidecar-sections 'buffer-git-status)
 (add-to-list 'universal-sidecar-sections 'elfeed-score-section)
 
 (universal-sidecar-define-section fortune-section (file title)
