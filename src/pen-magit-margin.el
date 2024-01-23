@@ -44,14 +44,16 @@
   (interactive)
 
   (if magit-buffer-margin
-      (setcar magit-buffer-margin nil))
-  (magit-toggle-margin))
+      (progn
+        (setcar magit-buffer-margin nil)
+        (magit-toggle-margin))))
 
 (defun magit-margin-off ()
   (interactive)
 
   (if magit-buffer-margin
-      (setcar magit-buffer-margin t))
-  (magit-toggle-margin))
+      (progn
+        (setcar magit-buffer-margin t)
+        (magit-toggle-margin))))
 
 (provide 'pen-magit-margin)
