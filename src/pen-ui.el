@@ -25,6 +25,7 @@
   (interactive)
 
   ;; It seems aesthetically better to toggle the tab-bar with the sidecar
+  ;; even though the tab-bar is currently useless
   (cond (off (progn
                (magit-margin-off)
                (universal-sidecar-off)
