@@ -2422,6 +2422,7 @@ May use to generate code from comments."
 (require 'pen-lsp-r)
 (require 'pen-lsp-c)
 (require 'pen-ead)
+(require 'pen-universal-sidecar)
 (require 'pen-sideline)
 (require 'pen-bible-audio)
 (require 'pen-vc)
