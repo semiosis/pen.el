@@ -41,7 +41,7 @@
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
         (magit-margin-off)
-        (universal-sidecar-toggle)
+        (universal-sidecar-off)
         ;; (tab-bar-mode -1)
         )
     (progn
@@ -56,6 +56,7 @@
       ;; (setq truncate-lines nil)
       (menu-bar-mode 1)
       (magit-margin-on)
+      (universal-sidecar-on)
       (universal-sidecar-toggle)
       ;; (tab-bar-mode 1)
       )))
