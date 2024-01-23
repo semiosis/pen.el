@@ -48,7 +48,7 @@ If FRAME is nil, use `selected-frame'."
                    (and file
                         (format "Demo: %s" file))
                    "Demo"))
-        (cmdout (shell-command-to-string "echo hi")))
+        (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
       (insert cmdout))))
 
