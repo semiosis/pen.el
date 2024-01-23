@@ -60,7 +60,6 @@
 (defun ph--display-header ()
   "Display path on headerline."
 
-
   (cond ((major-mode-p 'universal-sidecar-buffer-mode)
          (path-header-line-off))
         (t
