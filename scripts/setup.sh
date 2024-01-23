@@ -2154,3 +2154,9 @@ agi normalize-audio
 
 # This is for showing information on the side
 e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
+
+# I need transient-20231204 for magit
+(
+cd /root/repos
+git clone "https://github.com/magit/transient"
+)
