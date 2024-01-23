@@ -59,11 +59,16 @@
 
 (defun ph--display-header ()
   "Display path on headerline."
-  (setq header-line-format
-        '("" ;; invocation-name
-          (:eval (if (ph--make-header)
-                     (ph--make-header)
-                   "%b")))))
+
+
+  (cond ((major-mode-p 'universal-sidecar-buffer-mode)
+         nil)
+        (t
+         (setq header-line-format
+               '("" ;; invocation-name
+                 (:eval (if (ph--make-header)
+                            (ph--make-header)
+                          "%b")))))))
 
 ;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
