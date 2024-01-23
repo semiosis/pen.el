@@ -1,7 +1,8 @@
 ;; (load-library "transient")
 
-;; (load (umn "$EMACSD_BUILTIN/elpa/transient-20240121.2000/transient.el"))
-;; (load (umn "$HOME/repos/transient/lisp/transient.el"))
+;; Load the new package for the extra functions
+(load (umn "$EMACSD_BUILTIN/elpa/transient-20240121.2000/transient.el"))
+;; Then load the builtin package - now magit works fine
 (load "/usr/local/share/emacs/29.1.50/lisp/transient.el.gz")
 
 ;; TODO Also have a transient to set
