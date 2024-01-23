@@ -2156,10 +2156,4 @@ agi normalize-audio
 e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 
 # I need transient-20231204 for magit
-# What is the commit?
-(
-cd /root/repos
-git clone "https://github.com/magit/transient"
-cd transient
-git checkout eb6e903b6a1271bdf713dae52c7718a874dec1e2
-)
+# But instead I can just load the new one then reload the builtin one
