@@ -63,7 +63,12 @@
       (let ((datestr (str (ph-get-date))))
         (concat (ph--with-face ph--header
                                :inverse-video t)
-                (propertize " " 'display `(space :align-to (- right ,(length datestr))))
+                (propertize " " 'display `(space :align-to (- right
+                                                              ;; For the sidecar margin, so AM/PM isn't covered up
+                                                              (if (universal-sidecar-visible-p)
+                                                                  1
+                                                                0)
+                                                              ,(length datestr))))
                 (if (not nodate)
                     (ph--with-face datestr
                                    :inverse-video t)
