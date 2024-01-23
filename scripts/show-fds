@@ -1,4 +1,19 @@
 #!/bin/bash
 export TTY
 
-ls -la /proc/$$/fd 2>/dev/null
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -tp) {
+        output_as_tuple=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$output_as_tuple" = "y"; then
+    ls -la /proc/$$/fd 2>/dev/null | grep -HnoP "[0-9]+ -> .*"
+else
+    ls -la /proc/$$/fd 2>/dev/null
+fi
