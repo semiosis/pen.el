@@ -8,7 +8,7 @@
 ;; we'd configure it as shown below.
 ;; (add-to-list 'universal-sidecar-sections '(buffer-git-status :show-renames t))
 
-(add-to-list 'universal-sidecar-sections
-             '(universal-sidecar-roam-section org-roam-backlinks-section))
+;; (add-to-list 'universal-sidecar-sections
+;;              '(universal-sidecar-roam-section org-roam-backlinks-section))
 
 (provide 'pen-universal-sidecar)
