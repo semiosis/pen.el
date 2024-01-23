@@ -20,21 +20,38 @@
           thing))
     ""))
 
+(defalias 'umn 'identity)
+(defalias 'pen-umn 'identity)
+
+(defun test-f (filename)
+  (file-exists-p (umn filename)))
+
+(defun e/cat (&optional path input no_unminimise)
+  "cat out a file, or write to one"
+  (if (not no_unminimise)
+      (setq path (pen-umn path)))
+  (cond
+   ((and (test-f path) input) (write-to-file input path))
+   ((test-f path) (with-temp-buffer
+                    (insert-file-contents path)
+                    (buffer-string)))
+   (t (error "Bad path"))))
+
 (defun grepfilter-transform (matches-fp bytepos-fp transformed-fp)
- (interactive (list (read-string "Matches fp: ")
-                    (read-string "Bytepos fp: ")
-                    (read-string "Transformed fp: ")))
- (with-temp-buffer
-   (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
-   (search-forward-regexp (concat "^" book))
-   (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
-   (beginning-of-line)
-   (search-forward-regexp "\\. ")
-   (let ((start (point))
-         (end (progn
-                (end-of-line)
-                (point))))
-     (buffer-substring start end))))
+  (interactive (list (read-string "Matches fp: ")
+                     (read-string "Bytepos fp: ")
+                     (read-string "Transformed fp: ")))
+  (with-temp-buffer
+    (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+    (search-forward-regexp (concat "^" book))
+    (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
+    (beginning-of-line)
+    (search-forward-regexp "\\. ")
+    (let ((start (point))
+          (end (progn
+                 (end-of-line)
+                 (point))))
+      (buffer-substring start end))))
 
 (let ((matches-fp (car argv))
       (bytepos-fp (cadr argv))
