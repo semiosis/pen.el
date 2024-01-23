@@ -76,7 +76,8 @@ If FRAME is nil, use `selected-frame'."
 ;;               #'magit-section--unhighlight-region)
 
 ;; For some reason, these were being run in universal sidecar - magit itself set it
-(advice-add 'magit-section--highlight-region :around #'ignore-errors-around-advice)
-(advice-add 'magit-section--unhighlight-region :around #'ignore-errors-around-advice)
+;; That's because universal-sidecar uses magit-section
+;; (advice-add 'magit-section--highlight-region :around #'ignore-errors-around-advice)
+;; (advice-add 'magit-section--unhighlight-region :around #'ignore-errors-around-advice)
 
 (provide 'pen-universal-sidecar)
