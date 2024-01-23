@@ -14,7 +14,7 @@
 ;; ** DONE Extend this to do any mode:
 
 (defset bible-mode-margin
-      '(t age magit-log-margin-width t 18))
+        '(t age magit-log-margin-width t 18))
 
 (defun magit-margin-option ()
   (pcase major-mode
@@ -27,7 +27,7 @@
     ('magit-status-mode 'magit-status-margin)
     ('forge-notifications-mode 'magit-status-margin)
     ;; This is how I extend it
-    ('bible-mode 'magit-log-margin)
+    ('bible-mode 'bible-mode-margin)
     (_ 'magit-log-margin)))
 
 ;; This adds a line
