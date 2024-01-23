@@ -26,6 +26,7 @@ bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 # - Find all matching tokens
 # - Scan the file again, looking for the matching tokens, but return byte positions and lengths
 #   - grep -f "$matches_FILE" -Hnob "$input_fp"
+# - Run the transformation script on the bytepos_fp matches, and add to the bytepos_fp file
 # - Remove matches which overlap with previous matches
 
 # Do the transformation with elisp
