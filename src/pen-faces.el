@@ -1295,6 +1295,8 @@ Also see option `magit-blame-styles'."
                       ;; Good for YAML
                       font-lock-property-use-face
 
+                      lsp-ui-doc-background
+
                       font-lock-keyword-face
 
                       company-tooltip-annotation
