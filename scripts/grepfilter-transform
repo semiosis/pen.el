@@ -51,6 +51,12 @@
 (defalias 'write-to-file 'cat-to-file)
 
 (defun print-output (s)
+  ;; Can I speed up pen-sn with call-process-shell-command ?
+  (let ((output-file
+         (make-temp-file "grepfilter-transform-output" nil ".txt")))
+    (write-to-file s output-file)
+    (call-process-shell-command
+     "cat | tv >> /dev/stdout" output-file "*pen-sn-stderr*"))
   ;; Do not do this!
   ;; (write-to-file s "/dev/stdout")
   )
