@@ -109,7 +109,10 @@
   ;; (auto-fill-mode t)
   (use-local-map bible-mode-map)
   (setq buffer-read-only t)
-  (setq word-wrap t))
+  (setq word-wrap t)
+
+  (make-local-variable 'magit-buffer-margin)
+  (setq magit-buffer-margin '(t age 30 t 18)))
 
 (define-derived-mode bible-search-mode special-mode "Bible Search"
   "Mode for performing Bible searches.
@@ -260,8 +263,7 @@
                       "-b" (or module bible-mode-book-module))))
       (if filter (setq args (append args (list
                                           "-o" (pcase filter
-                                                 ("jesus" "w"))
-                                          ))))
+                                                 ("jesus" "w"))))))
       (if searchtype (setq args (append args (list
                                               "-s" (pcase searchtype
                                                      ("lucene" "lucene")
