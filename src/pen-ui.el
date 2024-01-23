@@ -21,6 +21,18 @@
 
 (scroll-bar-mode -1)
 
+(defun toggle-chrome-extras ()
+  (interactive)
+  (if (universal-sidecar-visible-p)
+      (progn
+        (magit-margin-off)
+        (universal-sidecar-off)
+        (tab-bar-mode -1))
+    (progn
+      (magit-margin-on)
+      (universal-sidecar-on)
+      (tab-bar-mode 1))))
+
 (defun toggle-chrome ()
   (interactive)
   (kill-buffer-if-not-current "*aws-instances*")
@@ -40,8 +52,6 @@
         ;; (setq-default truncate-lines t)
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
-        (magit-margin-off)
-        (universal-sidecar-off)
         ;; (tab-bar-mode -1)
         )
     (progn
@@ -55,8 +65,6 @@
       ;; (setq-default truncate-lines nil)
       ;; (setq truncate-lines nil)
       (menu-bar-mode 1)
-      (magit-margin-on)
-      (universal-sidecar-on)
       ;; (tab-bar-mode 1)
       )))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
@@ -75,6 +83,7 @@
 (visual-line-mode 1)
 
 (define-key visual-line-mode-map (kbd "<remap>") nil)
+(global-set-key (kbd "<S-f2>") 'toggle-chrome-extras)
 (global-set-key (kbd "<S-f4>") 'toggle-chrome)
 (global-set-key (kbd "<S-f5>") 'global-display-line-numbers-mode)
 (global-set-key (kbd "<S-f6>") 'toggle-truncate-lines)
