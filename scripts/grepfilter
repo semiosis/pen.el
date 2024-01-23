@@ -33,11 +33,8 @@ bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 # Do the transformation with elisp
 # /root/.emacs.d/host/pen.el/scripts/bible-get-chapter-title.els
 
+# Then make the literal replacements to the original file with an elisp algorithm
 output_fp="$(grepfilter-transform "$matches_fp" "$bytepos_fp" "$transformed_fp" | tf txt)"
-
-# Elisp algorithm
-# Do the replacements
 
 cat "$output_fp" | pavs
 
-# Then make the literal replacements to the original file
