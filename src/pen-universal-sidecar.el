@@ -3,6 +3,8 @@
 (require 'universal-sidecar-elfeed-score)
 (require 'universal-sidecar-elfeed-related)
 
+;; This sidecar thing just doesn't seem to work very well
+
 (setq universal-sidecar-buffer-name-format
       '"*sidecar* (%F)")
 
@@ -20,6 +22,8 @@ If FRAME is nil, use `selected-frame'."
                                                                       client))))))
 
 (add-to-list 'universal-sidecar-sections 'buffer-git-status)
+(add-to-list 'universal-sidecar-sections 'elfeed-score-section)
+
 ;; However, if we want the opposite behavior (don't show renames),
 ;; we'd configure it as shown below.
 ;; (add-to-list 'universal-sidecar-sections '(buffer-git-status :show-renames t))
