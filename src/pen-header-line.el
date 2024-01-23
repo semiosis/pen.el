@@ -3,7 +3,7 @@
 (require 'path-headerline-mode)
 
 (defsetface header-line
-  '((t :foreground "#353575"
+  '((t :foreground "#773575"
        :background "#101010"
        :weight normal
        ;; :slant italic
