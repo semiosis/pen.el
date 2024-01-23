@@ -13,7 +13,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if test "$output_as_tuple" = "y"; then
-    ls -la /proc/$$/fd 2>/dev/null | grep -HnoP "[0-9]+ -> .*"
+    ls -la /proc/$$/fd 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
 else
     ls -la /proc/$$/fd 2>/dev/null
 fi
