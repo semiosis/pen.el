@@ -1825,5 +1825,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (message "Open the Bible first"))))
 
 (define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
+(define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
 (provide 'pen-bible-mode)
