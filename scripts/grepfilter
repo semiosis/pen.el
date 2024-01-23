@@ -16,6 +16,7 @@ test -n "$matcher" || exit 1
 shift
 
 matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
+transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
 bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 
 # The matches should result in simply a list of matching tokens
@@ -30,7 +31,6 @@ bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 # - Remove matches which overlap with previous matches
 
 # Do the transformation with elisp
-# transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
 # /root/.emacs.d/host/pen.el/scripts/bible-get-chapter-title.els
 
 # Elisp algorithm
