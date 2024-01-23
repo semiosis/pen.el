@@ -114,4 +114,6 @@ If FRAME is nil, use `selected-frame'."
   (if (universal-sidecar-visible-p)
       (universal-sidecar-toggle)))
 
+(advice-add 'universal-sidecar-refresh-all :around #'ignore-errors-around-advice)
+
 (provide 'pen-universal-sidecar)
