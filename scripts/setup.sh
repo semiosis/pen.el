@@ -2151,3 +2151,6 @@ git clone "https://gitlab.com/emacsos/enum.el"
 # For arecord: arecord --format=cd file.wav
 agi alsa-utils
 agi normalize-audio
+
+# This is for showing information on the side
+e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
