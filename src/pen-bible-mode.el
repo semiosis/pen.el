@@ -112,10 +112,7 @@
   (setq word-wrap t)
 
   (make-local-variable 'magit-buffer-margin)
-  (setq magit-buffer-margin '(t age 30 t 18))
-  (if (universal-sidecar-visible-p)
-      
-      ))
+  (setq magit-buffer-margin '(t age 30 t 18)))
 
 (define-derived-mode bible-search-mode special-mode "Bible Search"
   "Mode for performing Bible searches.
@@ -391,7 +388,10 @@
     (end-of-buffer)
     (while (looking-at-p "^$")
       (delete-backward-char 1)
-      (end-of-buffer))))
+      (end-of-buffer)))
+
+  (if (universal-sidecar-visible-p)
+      (toggle-chrome-extras nil t)))
 
 (defun string-match-capture (regexp string &optional start)
   (string-match regexp string start)
