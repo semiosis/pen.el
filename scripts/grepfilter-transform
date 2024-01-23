@@ -43,7 +43,7 @@
                      (read-string "Bytepos fp: ")
                      (read-string "Transformed fp: ")))
   (with-temp-buffer
-    (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+    (ignore-errors (insert-file-contents input-fp))
     (search-forward-regexp (concat "^" book))
     (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
     (beginning-of-line)
