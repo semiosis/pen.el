@@ -38,7 +38,7 @@
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
-(defun ph--make-header ()
+(defun ph--make-header (&optional nodate)
   ""
   (let* ((ph--full-header (ph-get-path-string))
          (ph--header (ph-get-path-string))
@@ -64,8 +64,10 @@
         (concat (ph--with-face ph--header
                                :inverse-video t)
                 (propertize " " 'display `(space :align-to (- right ,(length datestr))))
-                (ph--with-face datestr
-                               :inverse-video t))))))
+                (if (not nodate)
+                    (ph--with-face datestr
+                                   :inverse-video t)
+                  ""))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
