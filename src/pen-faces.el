@@ -1564,7 +1564,7 @@ Also see option `magit-blame-styles'."
 
 
                                Man-underline
-                               lsp-ui-doc-background
+                               ;; lsp-ui-doc-background
 
                                lsp-ui-peek-peek
                                org-agenda-date-weekend
