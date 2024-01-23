@@ -30,6 +30,30 @@
     ('bible-mode 'bible-mode-margin)
     (_ 'magit-log-margin)))
 
+(defface pen-magit-right-margin-face
+  '((t :foreground "#8b26d2"
+       :background "#2e2e2e"
+       :weight normal
+       :slant italic
+       :underline t))
+  "Read right margin face."
+  :group 'pen-faces)
+
+(defun pen-magit-make-margin-overlay (&optional string previous-line)
+  (if previous-line
+      (save-excursion
+        (forward-line -1)
+        (magit-make-margin-overlay string))
+    ;; Don't put the overlay on the complete line to work around #1880.
+    (let ((o (make-overlay (1+ (line-beginning-position))
+                           (line-end-position)
+                           nil t)))
+      (overlay-put o 'evaporate t)
+      (overlay-put o 'before-string
+                   (propertize "o"
+                               'display (list (list 'margin 'right-margin) (or string " "))
+                               'face 'pen-magit-right-margin-face)))))
+
 ;; This adds a line
 (comment
  (let ((magit-buffer-margin '(t age 30 t 18)))
