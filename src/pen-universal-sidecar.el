@@ -51,7 +51,7 @@ If FRAME is nil, use `selected-frame'."
     (universal-sidecar-insert-section demo-section title
       (insert cmdout)
 
-      ;;;; This has problems currently, asking if I want to 
+      ;;;; This has problems currently, asking if I want to kill the temp buffer
       ;; (insert
       ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
       ;;    ;; This is inserted
