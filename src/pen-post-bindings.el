@@ -1,5 +1,7 @@
 ;; Make these bindings happen last so emacs fully loads before creating bindings
 
+(define-key global-map (kbd "<f2>") nil)
+
 (sslk "lg=" 'position-list-nav/body)
 
 (sslk "lVc" 'toggle-chrome)
