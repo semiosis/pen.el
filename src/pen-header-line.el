@@ -2,6 +2,16 @@
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
 
+(defsetface header-line
+  '((t :foreground "#353575"
+       :background "#101010"
+       :weight normal
+       ;; :slant italic
+       ;; :underline t
+       ))
+  "Read only face."
+  :group 'pen-faces)
+
 ;; (defset pen-header-line-path-last-time (e/date))
 ;; (defset pen-header-line-path-last-path (get-path nil t))
 
