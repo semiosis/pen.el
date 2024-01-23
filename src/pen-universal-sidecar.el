@@ -6,16 +6,17 @@
 ;; This sidecar thing just doesn't seem to work very well
 
 ;; I should probably use shackle instead
-(add-to-list 'display-buffer-alist
-             '("\\*sidecar\\*"
-               (display-buffer-in-side-window)
-               (slot . 0)
-               (window-width . 0.2)
-               (window-height . 0.2)
-               (preserve-size t . t)
-               (window-parameters . ((no-other-window . t)
-                                     (no-delete-other-windows . t)))))
-
+;; Yes, definitely use shackle. Magit log seems to mess with this method
+(comment
+ (add-to-list 'display-buffer-alist
+              '("\\*sidecar\\*"
+                (display-buffer-in-side-window)
+                (slot . 0)
+                (window-width . 0.2)
+                (window-height . 0.2)
+                (preserve-size t . t)
+                (window-parameters . ((no-other-window . t)
+                                      (no-delete-other-windows . t))))))
 (setq universal-sidecar-buffer-name-format
       '"*sidecar* (%F)")
 
