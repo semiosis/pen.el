@@ -11,6 +11,13 @@
 (require 'lsp-headerline)
 (require 'pen-lsp-common-lisp)
 
+;; Ensure that the entire background face is used.
+;; Otherwise, inverse doesn't work
+(defun lsp-ui-doc--inline-padding (string len)
+  (let ((string (concat " " string (make-string (- len (string-width string)) ?\s) " ")))
+    (add-face-text-property 0 (length string) 'lsp-ui-doc-background t string)
+    string))
+
 (el-patch-feature lsp-mode)
 (el-patch-defun lsp (&optional arg)
   "Entry point for the server startup.
