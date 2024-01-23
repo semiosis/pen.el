@@ -2159,4 +2159,6 @@ e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 (
 cd /root/repos
 git clone "https://github.com/magit/transient"
+cd transient
+git checkout eb6e903b6a1271bdf713dae52c7718a874dec1e2
 )
