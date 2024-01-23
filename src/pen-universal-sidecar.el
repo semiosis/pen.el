@@ -80,4 +80,7 @@ If FRAME is nil, use `selected-frame'."
 ;; (advice-add 'magit-section--highlight-region :around #'ignore-errors-around-advice)
 ;; (advice-add 'magit-section--unhighlight-region :around #'ignore-errors-around-advice)
 
+;; (advice-add 'magit-diff-update-hunk-region :around #'ignore-errors-around-advice)
+;; (advice-remove 'magit-diff-update-hunk-region #'ignore-errors-around-advice)
+
 (provide 'pen-universal-sidecar)
