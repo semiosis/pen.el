@@ -30,12 +30,12 @@
     ('bible-mode 'bible-mode-margin)
     (_ 'magit-log-margin)))
 
-(defface pen-magit-right-margin-face
+(defsetface pen-magit-right-margin-face
   '((t :foreground "#8b26d2"
        :background "#2e2e2e"
        :weight normal
        :slant italic
-       :underline t))
+       :underline nil))
   "Read right margin face."
   :group 'pen-faces)
 
@@ -51,7 +51,7 @@
       (overlay-put o 'evaporate t)
       (overlay-put o 'before-string
                    (propertize "o"
-                               'face 'pen-magit-right-margin-face
+                               ;; 'face 'pen-magit-right-margin-face
                                'display (list (list 'margin 'right-margin) (or string " ")))))))
 
 ;; This adds a line
