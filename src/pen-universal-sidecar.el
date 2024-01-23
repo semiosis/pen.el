@@ -40,8 +40,10 @@ If FRAME is nil, use `selected-frame'."
 ;; redisplay-unhighlight-region-function
 
 (universal-sidecar-define-section demo-section (file title)
-                                  (:major-modes org-mode
-                                                :predicate (not (buffer-modified-p)))
+                                  (
+                                   ;; :major-modes org-mode
+                                   ;; :predicate (not (buffer-modified-p))
+                                   )
   (let ((title (or title
                    (and file
                         (format "Demo: %s" file))
