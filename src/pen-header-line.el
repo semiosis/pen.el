@@ -62,7 +62,7 @@
 
 
   (cond ((major-mode-p 'universal-sidecar-buffer-mode)
-         nil)
+         (path-header-line-off))
         (t
          (setq header-line-format
                '("" ;; invocation-name
