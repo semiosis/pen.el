@@ -61,7 +61,9 @@
   "Display path on headerline."
 
   (cond ((major-mode-p 'universal-sidecar-buffer-mode)
-         (path-header-line-off))
+         (path-header-line-off)
+         ;; (refresh-frame)
+         )
         (t
          (setq header-line-format
                '("" ;; invocation-name
