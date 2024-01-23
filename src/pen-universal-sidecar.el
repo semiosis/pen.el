@@ -114,6 +114,7 @@ If FRAME is nil, use `selected-frame'."
   (if (universal-sidecar-visible-p)
       (universal-sidecar-toggle)))
 
+;; [2024-01-24T09:34:24.430461] Error running timer ‘universal-sidecar-refresh-all’: (error "Invalid format character: ‘%F’")
 (advice-add 'universal-sidecar-refresh-all :around #'ignore-errors-around-advice)
 
 (provide 'pen-universal-sidecar)
