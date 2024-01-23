@@ -22,6 +22,8 @@ matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
 
 # Therefore, matches should not overlap.
 # I think I need to manually remove the overlaps.
+# - Find all matching tokens
+# - Scan the file again, looking for the matching tokens, but return byte positions and lengths
 # - Find byte positions of all matches (including length)
 # - Remove matches which overlap with previous matches
 
