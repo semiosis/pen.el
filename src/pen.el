@@ -2437,6 +2437,7 @@ May use to generate code from comments."
 (require 'pen-discipleship-group)
 (require 'pen-custom-conf)
 (require 'pen-iterator)
+(require 'pen-icons)
 
 (if (inside-docker-p)
     (progn
