@@ -1,6 +1,6 @@
 #!/usr/bin/env -S emacs --quick --script
 
-(load "/root/.emacs.d/host_BUILTIN/elpa/s-20210616.619/s.el")
+(load "/root/.emacs.d/elpa/s-20210616.619/s.el")
 
 ;; https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
 
@@ -53,9 +53,9 @@
   (let* ((inputlist (s-lines (e/cat input-fp)))
          (matcheslist (s-lines (e/cat matches-fp)))
          (byteposlist (s-lines (e/cat bytepos-fp)))
-         (transformedlist (s-lines (e/cat transformedlist-fp))))
+         (transformedlist (s-lines (e/cat transformed-fp))))
 
-    (print-output input-fp))
+    (print-output (e/cat input-fp)))
 
   (comment
    (with-temp-buffer
