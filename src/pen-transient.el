@@ -1,5 +1,7 @@
 ;; (load-library "transient")
 
+;; (load (umn "$EMACSD_BUILTIN/elpa/transient-20240121.2000/transient.el"))
+
 ;; TODO Also have a transient to set
 
 (defmacro transient-define-prefix (name arglist &rest args)
