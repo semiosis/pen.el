@@ -112,7 +112,10 @@
   (setq word-wrap t)
 
   (make-local-variable 'magit-buffer-margin)
-  (setq magit-buffer-margin '(t age 30 t 18)))
+  (setq magit-buffer-margin '(t age 30 t 18))
+  (if (universal-sidecar-visible-p)
+      
+      ))
 
 (define-derived-mode bible-search-mode special-mode "Bible Search"
   "Mode for performing Bible searches.

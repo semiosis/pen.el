@@ -21,17 +21,27 @@
 
 (scroll-bar-mode -1)
 
-(defun toggle-chrome-extras ()
+(defun toggle-chrome-extras (&optional off on)
   (interactive)
-  (if (universal-sidecar-visible-p)
-      (progn
-        (magit-margin-off)
-        (universal-sidecar-off)
-        (tab-bar-mode -1))
-    (progn
-      (magit-margin-on)
-      (universal-sidecar-on)
-      (tab-bar-mode 1))))
+
+  (cond (off (progn
+               (magit-margin-off)
+               (universal-sidecar-off)
+               (tab-bar-mode -1)))
+        (on (progn
+             (magit-margin-on)
+             (universal-sidecar-on)
+             (tab-bar-mode 1)))
+        (t
+         (if (universal-sidecar-visible-p)
+             (progn
+               (magit-margin-off)
+               (universal-sidecar-off)
+               (tab-bar-mode -1))
+           (progn
+             (magit-margin-on)
+             (universal-sidecar-on)
+             (tab-bar-mode 1))))))
 
 (defun toggle-chrome ()
   (interactive)
