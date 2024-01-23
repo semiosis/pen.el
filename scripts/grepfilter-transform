@@ -5,6 +5,7 @@
 ;; grepfilter-transform "$bytepos_fp" "$input_fp"
 
 ;; Run the transform once per match
+;; Run the transform ON the byteps_fp
 
 (defun str (thing)
   "Converts object or string to an unformatted string."
