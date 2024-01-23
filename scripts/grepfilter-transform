@@ -20,7 +20,7 @@
           thing))
     ""))
 
-(defun bible-get-chapter-title (book chapter)
+(defun grepfilter-transform (matches-fp bytepos-fp transformed-fp)
  (interactive (list (read-string "Book: ")
                     (read-string "Chapter: ")))
  (with-temp-buffer
@@ -41,4 +41,4 @@
 
   ;; Output
   (message "%s"
-           (bible-get-chapter-title matches-fp bytepos-fp transformed-fp)))
+           (grepfilter-transform matches-fp bytepos-fp transformed-fp)))
