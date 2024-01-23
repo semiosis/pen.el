@@ -29,6 +29,11 @@
 ;; This adds a line
 (comment
  (let ((magit-buffer-margin '(t age 30 t 18)))
-   (magit-log-format-author-margin "Shane Mulligan" "1705809014")))
+   ;; This is sufficient
+   (magit-make-margin-overlay "Something cool")
+   
+   ;; This has some colour
+   ;; (magit-log-format-author-margin "Shane Mulligan" "1705809014")
+   ))
 
 (provide 'pen-magit-margin)
