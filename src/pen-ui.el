@@ -40,8 +40,7 @@
         ;; (setq-default truncate-lines t)
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
-        (if magit-buffer-margin
-            (setcar magit-buffer-margin t))
+        (magit-margin-off)
         ;; (tab-bar-mode -1)
         )
     (progn
@@ -55,6 +54,7 @@
       ;; (setq-default truncate-lines nil)
       ;; (setq truncate-lines nil)
       (menu-bar-mode 1)
+      (magit-margin-on)
       ;; (tab-bar-mode 1)
       )))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
