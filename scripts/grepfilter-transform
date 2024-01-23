@@ -37,22 +37,36 @@
                     (buffer-string)))
    (t (error "Bad path"))))
 
+(defmacro comment (&rest body) nil)
+
+(defun print-output (s)
+  (message "%s" s))
+
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
                      (read-string "Bytepos fp: ")
                      (read-string "Transformed fp: ")))
-  (with-temp-buffer
-    (ignore-errors (insert-file-contents input-fp))
-    (search-forward-regexp (concat "^" book))
-    (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
-    (beginning-of-line)
-    (search-forward-regexp "\\. ")
-    (let ((start (point))
-          (end (progn
-                 (end-of-line)
-                 (point))))
-      (buffer-substring start end))))
+
+  (let* ((inputlist (s-lines (e/cat input-fp)))
+         (matcheslist (s-lines (e/cat matches-fp)))
+         (byteposlist (s-lines (e/cat bytepos-fp)))
+         (transformedlist (s-lines (e/cat transformedlist-fp))))
+
+    (print-output input-fp))
+
+  (comment
+   (with-temp-buffer
+     (ignore-errors (insert-file-contents input-fp))
+     (search-forward-regexp (concat "^" book))
+     (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
+     (beginning-of-line)
+     (search-forward-regexp "\\. ")
+     (let ((start (point))
+           (end (progn
+                  (end-of-line)
+                  (point))))
+       (buffer-substring start end)))))
 
 (let ((input-fp (car argv))
       (matches-fp (cadr argv))
@@ -60,9 +74,9 @@
       (transformed-fp (cadddr argv)))
 
   ;; Output
-  (message "%s"
-           (grepfilter-transform
-            input-fp
-            matches-fp
-            bytepos-fp
-            transformed-fp)))
+  (print-output
+   (grepfilter-transform
+    input-fp
+    matches-fp
+    bytepos-fp
+    transformed-fp)))
