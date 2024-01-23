@@ -87,7 +87,8 @@ If FRAME is nil, use `selected-frame'."
 
 ;; This sometimes makes it lag a lot
 (universal-sidecar-insinuate)
-;; (universal-sidecar-uninsinuate)
+(comment
+ (universal-sidecar-uninsinuate))
 
 
 (defun universal-sidecar-on ()
