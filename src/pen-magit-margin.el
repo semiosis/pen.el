@@ -8,7 +8,7 @@
  (make-local-variable 'magit-buffer-margin)
  (setq magit-buffer-margin '(t age 30 t 18)))
 
-;; Then inside the buffer, toggle the margin on
+;; Then inside the buffer, toggle the margin on and off
 ;; mx:magit-toggle-margin
 
 ;; ** DONE Extend this to do any mode:
