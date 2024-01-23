@@ -2156,6 +2156,7 @@ agi normalize-audio
 e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 
 # I need transient-20231204 for magit
+# What is the commit?
 (
 cd /root/repos
 git clone "https://github.com/magit/transient"
