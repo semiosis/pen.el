@@ -309,5 +309,4 @@ NEEDLE is the search string."
 (if (inside-docker-p)
     (defalias 'wgrep 'pen-wgrep))
 
-
 (provide 'pen-grep)
