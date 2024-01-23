@@ -89,10 +89,11 @@
                   (point))))
        (buffer-substring start end)))))
 
-(let ((input-fp (car argv))
-      (matches-fp (cadr argv))
-      (bytepos-fp (caddr argv))
-      (transformed-fp (cadddr argv)))
+(let ((fds (car argv))
+      (input-fp (cadr argv))
+      (matches-fp (caddr argv))
+      (bytepos-fp (cadddr argv))
+      (transformed-fp (caddddr argv)))
 
   ;; Output
   (print-output
