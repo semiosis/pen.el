@@ -41,8 +41,19 @@
 
 (defmacro comment (&rest body) nil)
 
+(defun cat-to-file (stdin file_path)
+  ;; The ignore-errors is needed for babel for some reason
+  (ignore-errors (with-temp-buffer
+                   (insert stdin)
+                   (delete-file file_path)
+                   (write-file file_path))))
+(defalias 'write-string-to-file 'cat-to-file)
+(defalias 'write-to-file 'cat-to-file)
+
 (defun print-output (s)
-  (message "%s" s))
+  ;; Do not do this!
+  ;; (write-to-file s "/dev/stdout")
+  )
 
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
