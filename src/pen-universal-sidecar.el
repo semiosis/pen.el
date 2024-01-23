@@ -89,4 +89,13 @@ If FRAME is nil, use `selected-frame'."
 ;; (universal-sidecar-insinuate)
 ;; (universal-sidecar-uninsinuate)
 
+
+(defun universal-sidecar-on ()
+  (if (not (universal-sidecar-visible-p))
+      (universal-sidecar-toggle)))
+
+(defun universal-sidecar-off ()
+  (if (universal-sidecar-visible-p)
+      (universal-sidecar-toggle)))
+
 (provide 'pen-universal-sidecar)
