@@ -5,4 +5,4 @@ export TTY
 
 fds="$(show-fds)"
 
-grepfilter-transform.els "$@"
+grepfilter-transform.els "$fds" "$@"
