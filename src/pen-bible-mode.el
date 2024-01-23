@@ -379,7 +379,7 @@
           (pen-magit-make-margin-overlay
            (concat "  "
                    (magit--propertize-face
-                    (str (point))
+                    (bible-verse-margin-status)
                     'pen-magit-right-margin-face)))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
@@ -1834,6 +1834,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
 (defun bible-verse-margin-status ()
-  (pps (bible-mode-get-ref-tuple)))
+  (chomp (pps (bible-mode-get-ref-tuple))))
 
 (provide 'pen-bible-mode)
