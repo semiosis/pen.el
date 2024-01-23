@@ -1805,6 +1805,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (chomp (pps (bible-mode-get-ref-tuple))))
 
 (defun bible-mode-show-hover-docs ()
-  (pen-custom-lsp-ui-doc-display "" (bible-verse-margin-status)))
+  (pen-custom-lsp-ui-doc-display
+   (pen-snc (concat (cmd "nbd" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link)) " | cat"))
+   (bible-verse-margin-status)))
 
 (provide 'pen-bible-mode)
