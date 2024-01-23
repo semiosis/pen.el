@@ -2338,6 +2338,7 @@ May use to generate code from comments."
 (message "running 2222nd line")
 
 (require 'pen-lsp)
+(require 'pen-custom-lsp-ui-doc)
 (require 'pen-lsp-booster)
 (require 'ilambda)
 (require 'pen-metacognition)
