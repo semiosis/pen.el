@@ -37,8 +37,9 @@
                     (buffer-string)))
    (t (error "Bad path"))))
 
-(defun grepfilter-transform (matches-fp bytepos-fp transformed-fp)
-  (interactive (list (read-string "Matches fp: ")
+(defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
+  (interactive (list (read-string "Input fp: ")
+                     (read-string "Matches fp: ")
                      (read-string "Bytepos fp: ")
                      (read-string "Transformed fp: ")))
   (with-temp-buffer
@@ -53,10 +54,15 @@
                  (point))))
       (buffer-substring start end))))
 
-(let ((matches-fp (car argv))
-      (bytepos-fp (cadr argv))
-      (transformed-fp (caadr argv)))
+(let ((input-fp (car argv))
+      (matches-fp (cadr argv))
+      (bytepos-fp (caddr argv))
+      (transformed-fp (cadddr argv)))
 
   ;; Output
   (message "%s"
-           (grepfilter-transform matches-fp bytepos-fp transformed-fp)))
+           (grepfilter-transform
+            input-fp
+            matches-fp
+            bytepos-fp
+            transformed-fp)))
