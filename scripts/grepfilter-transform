@@ -35,4 +35,9 @@
                 (point))))
      (buffer-substring start end))))
 
-(message "%s" (bible-get-chapter-title (car argv) (cadr argv)))
+(let ((matches-fp (car argv))
+      (bytepos-fp (cadr argv))
+      (transformed-fp (caadr argv))))
+;; Output
+(message "%s"
+         (bible-get-chapter-title matches-fp bytepos-fp transformed-fp))
