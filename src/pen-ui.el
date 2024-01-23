@@ -24,16 +24,17 @@
 (defun toggle-chrome-extras (&optional off on)
   (interactive)
 
+  ;; It seems aesthetically better to toggle the tab-bar with the sidecar
   (cond (off (progn
                (magit-margin-off)
                (universal-sidecar-off)
                (tab-bar-mode -1)
                ))
         (on (progn
-             (magit-margin-on)
-             (universal-sidecar-on)
-             (tab-bar-mode 1)
-             ))
+              (magit-margin-on)
+              (universal-sidecar-on)
+              (tab-bar-mode 1)
+              ))
         (t
          (if (universal-sidecar-visible-p)
              (progn
