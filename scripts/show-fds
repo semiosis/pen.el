@@ -3,8 +3,8 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -full) {
-        full=y
+    -ls) {
+        ls=y
         shift
     }
     ;;
@@ -12,7 +12,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$full" = "y"; then
+if test "$ls" = "y"; then
     ls -la /proc/$$/fd 2>/dev/null
 else
     ls -la /proc/$$/fd 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
