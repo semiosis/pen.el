@@ -65,6 +65,7 @@
                      (ph--make-header)
                    "%b")))))
 
+;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
 ;; (path-headerline-mode -1)
 
