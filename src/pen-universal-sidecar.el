@@ -37,9 +37,11 @@ If FRAME is nil, use `selected-frame'."
 (add-to-list 'universal-sidecar-sections 'elfeed-score-section)
 (remove-from-list 'universal-sidecar-sections 'elfeed-score-section)
 
+;; redisplay-unhighlight-region-function
+
 (universal-sidecar-define-section fortune-section (file title)
                                   (:major-modes org-mode
-                                   :predicate (not (buffer-modified-p)))
+                                                :predicate (not (buffer-modified-p)))
   (let ((title (or title
                    (and file
                         (format "Fortune: %s" file))
@@ -67,5 +69,14 @@ If FRAME is nil, use `selected-frame'."
  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
    (some-function-that-generates-org-text)
    (some-post-processing-of-org-text)))
+
+;; (setq-local redisplay-highlight-region-function
+;;               #'magit-section--highlight-region)
+;; (setq-local redisplay-unhighlight-region-function
+;;               #'magit-section--unhighlight-region)
+
+;; For some reason, these were being run in universal sidecar - magit itself set it
+(advice-add 'magit-section--highlight-region :around #'ignore-errors-around-advice)
+(advice-add 'magit-section--unhighlight-region :around #'ignore-errors-around-advice)
 
 (provide 'pen-universal-sidecar)
