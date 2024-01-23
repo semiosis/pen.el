@@ -374,7 +374,9 @@
                              ;; '(:foreground
                              ;;   ;; "#443344"
                              ;;   "#5555ff")
-                             )))
+                             )
+
+          (magit-make-margin-overlay (str (point)))))
       ;; (message "%s" (current-line-string))
       (end-of-line)))
 
