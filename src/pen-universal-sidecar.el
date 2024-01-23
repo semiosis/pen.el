@@ -61,8 +61,9 @@ If FRAME is nil, use `selected-frame'."
 ;; (add-to-list 'universal-sidecar-sections
 ;;              '(universal-sidecar-roam-section org-roam-backlinks-section))
 
-(universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-  (some-function-that-generates-org-text)
-  (some-post-processing-of-org-text))
+(comment
+ (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+   (some-function-that-generates-org-text)
+   (some-post-processing-of-org-text)))
 
 (provide 'pen-universal-sidecar)
