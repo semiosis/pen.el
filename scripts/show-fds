@@ -3,8 +3,8 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
-    -tp) {
-        output_as_tuple=y
+    -full) {
+        full=y
         shift
     }
     ;;
@@ -12,8 +12,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
-if test "$output_as_tuple" = "y"; then
-    ls -la /proc/$$/fd 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
-else
+if test "$full" = "y"; then
     ls -la /proc/$$/fd 2>/dev/null
+else
+    ls -la /proc/$$/fd 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
 fi
