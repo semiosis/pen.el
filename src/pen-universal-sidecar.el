@@ -91,10 +91,12 @@ If FRAME is nil, use `selected-frame'."
 
 
 (defun universal-sidecar-on ()
+  (interactive)
   (if (not (universal-sidecar-visible-p))
       (universal-sidecar-toggle)))
 
 (defun universal-sidecar-off ()
+  (interactive)
   (if (universal-sidecar-visible-p)
       (universal-sidecar-toggle)))
 
