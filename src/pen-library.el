@@ -142,6 +142,9 @@
                         (major-mode-enabled 'notmuch-search-mode))
                     (org-get-link))
 
+               (and (major-mode-enabled 'universal-sidecar-buffer-mode)
+                    "Sidecar")
+
                (and (major-mode-enabled 'eww-mode)
                     (s-replace-regexp "^file:\/\/" ""
                                       (url-encode-url
