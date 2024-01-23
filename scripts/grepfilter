@@ -16,6 +16,7 @@ test -n "$matcher" || exit 1
 shift
 
 matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
+bytepos_fp="$(grep -f "$matches_fp" -Hno "$input_fp" | tf txt)"
 
 # The matches should result in simply a list of matching tokens
 # Future passes should not work on the results of previous passes
@@ -24,8 +25,11 @@ matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
 # I think I need to manually remove the overlaps.
 # - Find all matching tokens
 # - Scan the file again, looking for the matching tokens, but return byte positions and lengths
+    - grep -f "$matches_FILE" -Hno "$input_fp"
 # - Remove matches which overlap with previous matches
 
-transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
+# Do the transformation with elisp
+# transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
+# /root/.emacs.d/host/pen.el/scripts/bible-get-chapter-title.els
 
 # Then make the literal replacements to the original file
