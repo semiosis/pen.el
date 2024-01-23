@@ -49,7 +49,23 @@ If FRAME is nil, use `selected-frame'."
                    "Demo"))
         (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
-      (insert cmdout))))
+      (insert cmdout)
+
+      ;;;; This has problems currently, asking if I want to 
+      ;; (insert
+      ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+      ;;    ;; This is inserted
+      ;;    (concat "[[sh:tpop vim /]]")
+      ;;    ;; This runs after the above
+      ;;    (comment (some-post-processing-of-org-text))))
+      )))
+
+(comment
+ (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+   ;; This is inserted
+   (concat "[[sh:tpop vim /]]")
+   ;; This runs after the above
+   (comment (some-post-processing-of-org-text))))
 
 ;; (add-to-list 'universal-sidecar-sections 'demo-section)
 ;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
@@ -63,10 +79,7 @@ If FRAME is nil, use `selected-frame'."
 ;; (add-to-list 'universal-sidecar-sections
 ;;              '(universal-sidecar-roam-section org-roam-backlinks-section))
 
-(comment
- (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-   (some-function-that-generates-org-text)
-   (some-post-processing-of-org-text)))
+
 
 ;; (setq-local redisplay-highlight-region-function
 ;;               #'magit-section--highlight-region)
