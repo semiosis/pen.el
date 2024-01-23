@@ -39,24 +39,21 @@ If FRAME is nil, use `selected-frame'."
 
 ;; redisplay-unhighlight-region-function
 
-(universal-sidecar-define-section fortune-section (file title)
+(universal-sidecar-define-section demo-section (file title)
                                   (:major-modes org-mode
                                                 :predicate (not (buffer-modified-p)))
   (let ((title (or title
                    (and file
-                        (format "Fortune: %s" file))
-                   "Fortune"))
-        (fortune (shell-command-to-string (format "fortune%s"
-                                                  (if file
-                                                      (format " %s" file)
-                                                    "")))))
-    (universal-sidecar-insert-section fortune-section title
-      (insert fortune))))
+                        (format "Demo: %s" file))
+                   "Demo"))
+        (cmdout (shell-command-to-string "echo hi")))
+    (universal-sidecar-insert-section demo-section title
+      (insert cmdout))))
 
-;; (add-to-list 'universal-sidecar-sections 'fortune-section)
-;; (add-to-list 'universal-sidecar-sections '(fortune-section :file "definitions"))
-(add-to-list 'universal-sidecar-sections '(fortune-section :title "O Fortuna!"))
-;; (add-to-list 'universal-sidecar-sections '(fortune-section :file "definitions" :title "Random Definition"))
+;; (add-to-list 'universal-sidecar-sections 'demo-section)
+;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
+(add-to-list 'universal-sidecar-sections '(demo-section :title "O Demo!"))
+;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions" :title "Random Definition"))
 
 ;; However, if we want the opposite behavior (don't show renames),
 ;; we'd configure it as shown below.
