@@ -1834,7 +1834,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
 (defun bible-verse-margin-status ()
-
-  )
+  (pps (bible-mode-get-ref-tuple)))
 
 (provide 'pen-bible-mode)
