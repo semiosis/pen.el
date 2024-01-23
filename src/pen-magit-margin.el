@@ -40,4 +40,16 @@
    ;; (magit-log-format-author-margin "Shane Mulligan" "1705809014")
    ))
 
+(defun magit-margin-on ()
+  (interactive)
+
+  (if magit-buffer-margin
+      (setcar magit-buffer-margin t)))
+
+(defun magit-margin-off ()
+  (interactive)
+
+  (if magit-buffer-margin
+      (setcar magit-buffer-margin nil)))
+
 (provide 'pen-magit-margin)

@@ -40,6 +40,8 @@
         ;; (setq-default truncate-lines t)
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
+        (if magit-buffer-margin
+            (setcar magit-buffer-margin t))
         ;; (tab-bar-mode -1)
         )
     (progn

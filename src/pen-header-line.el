@@ -62,6 +62,7 @@
 
   (cond ((major-mode-p 'universal-sidecar-buffer-mode)
          (path-header-line-off)
+         ;; (universal-sidecar-refresh)
          ;; (refresh-frame)
          )
         (t
