@@ -2423,6 +2423,7 @@ May use to generate code from comments."
 (require 'pen-lsp-c)
 (require 'pen-ead)
 (require 'pen-bible-audio)
+(require 'pen-sideline)
 (require 'pen-vc)
 (require 'pen-info)
 (require 'pen-lsp-python)
