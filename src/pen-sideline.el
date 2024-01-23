@@ -7,4 +7,4 @@
 ;; (setq sideline-backends-right '(sideline-lsp))
 (setq sideline-backends-right '(sideline-blame))
 
-(provide 'sideline)
+(provide 'pen-sideline)
