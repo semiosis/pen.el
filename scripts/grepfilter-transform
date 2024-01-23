@@ -57,6 +57,7 @@
     (write-to-file s output-file)
     (call-process-shell-command
      ;; Sadly, this still doesn't make it to stdout / stderr
+     ;; Emacs has completely taken stderr / stdout
      "cat | tv >> /dev/stdout" output-file "*pen-sn-stderr*"))
   ;; Do not do this!
   ;; (write-to-file s "/dev/stdout")
