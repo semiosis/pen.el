@@ -51,8 +51,8 @@
       (overlay-put o 'evaporate t)
       (overlay-put o 'before-string
                    (propertize "o"
-                               'display (list (list 'margin 'right-margin) (or string " "))
-                               'face 'pen-magit-right-margin-face)))))
+                               'face 'pen-magit-right-margin-face
+                               'display (list (list 'margin 'right-margin) (or string " ")))))))
 
 ;; This adds a line
 (comment
