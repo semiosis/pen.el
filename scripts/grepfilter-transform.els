@@ -1,8 +1,9 @@
 #!/usr/bin/env -S emacs --quick --script
 
-(load "/root/.emacs.d/elpa/s-20210616.619/s.el")
-
 ;; https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
+
+(require 'cl-macs)
+(load "/root/.emacs.d/elpa/s-20210616.619/s.el")
 
 ;; grepfilter-transform "$bytepos_fp" "$input_fp"
 
@@ -50,15 +51,20 @@
 (defalias 'write-string-to-file 'cat-to-file)
 (defalias 'write-to-file 'cat-to-file)
 
+(defvar fds nil)
+
 (defun print-output (s)
   ;; Can I speed up pen-sn with call-process-shell-command ?
-  (let ((output-file
+  (let ((stdin-fd (cdr (assoc 0 fds)))
+        (stdout-fd (cdr (assoc 1 fds)))
+        (stderr-fd (cdr (assoc 2 fds)))
+        (output-file
          (make-temp-file "grepfilter-transform-output" nil ".txt")))
     (write-to-file s output-file)
     (call-process-shell-command
      ;; Sadly, this still doesn't make it to stdout / stderr
      ;; Emacs has completely taken stderr / stdout
-     "cat | tv >> /dev/stdout" output-file "*pen-sn-stderr*"))
+     (concat "cat | tv >> " stdout-fd) output-file "*pen-sn-stderr*"))
   ;; Do not do this!
   ;; (write-to-file s "/dev/stdout")
   )
@@ -89,11 +95,20 @@
                   (point))))
        (buffer-substring start end)))))
 
-(let ((fds (car argv))
+(defun caddddr (x)
+  (declare (compiler-macro internal--compiler-macro-cXXr))
+  (car (cdr (cdr (cdr (cdr x))))))
+
+(let ((fdstring (car argv))
       (input-fp (cadr argv))
       (matches-fp (caddr argv))
       (bytepos-fp (cadddr argv))
       (transformed-fp (caddddr argv)))
+
+  (setq fds
+        (cl-loop
+         for l in (s-lines fdstring)
+         collect (cons (car l) (cadr l))))
 
   ;; Output
   (print-output
