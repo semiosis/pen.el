@@ -40,7 +40,6 @@ $HOME/versioned/git/config/ranger/rifle.conf
 /root/.emacs.d/host/pen.el/config/filters/transformers.sh
 /root/.emacs.d/host/pen.el/config/filters/grepfilters.sh
 /root/.emacs.d/host/pen.el/config/filters/filters.txt
-/root/.emacs.d/host/pen.el/config/filters/refactorings.txt
 /root/.emacs.d/host/pen.el/config/filters/summarizers.sh
 $VIMCONFIG/git.vim
 $NOTES/ws/python/shanepy/shanepy.py
