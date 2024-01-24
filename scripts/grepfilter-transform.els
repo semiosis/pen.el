@@ -88,17 +88,6 @@
 (defun -filter-not-empty-string (lst)
   (-filter 'string-not-empty-nor-nil-p lst))
 
-(defun ndk/buffer-substring-no-properties-filter (beg end delete)
-  (buffer-substring-no-properties beg end))
-
-(defun ndk/kill-ring-save-no-properties (beg end &optional region)
-  (interactive (list (mark) (point)
-                     (prefix-numeric-value current-prefix-arg)))
-  (let ((filter-buffer-substring-function #'ndk/buffer-substring-no-properties-filter))
-    (if region
-        (kill-ring-save beg end region)
-      (kill-ring-sage beg end))))
-
 (defun pen-position-bytes (pos)
   (if (= 0 pos)
       0
