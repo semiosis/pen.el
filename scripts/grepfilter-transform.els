@@ -152,7 +152,7 @@
               (cl-loop for bytepos in bytepos-list
                        do
                        (let* ((beg (+ offset
-                                      ;; byte-position crashes if it's variable is too big for the 
+                                      ;; byte-position crashes the whole script if its variable is too big for the function
                                       (byte-position
                                        (car bytepos))))
                               (len (car (cdr bytepos)))
