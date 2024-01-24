@@ -79,9 +79,15 @@
 
   (message "Transform"))
 
+(defun pen-grepfilter ()
+  (interactive)
+
+  (message "Grepfilter"))
+
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 (define-key pen-map (kbd "M-q M-e") 'pen-extract)
 (define-key pen-map (kbd "M-q M-t") 'pen-transform)
+(define-key pen-map (kbd "M-q M-g") 'pen-grepfilter)
 
 (defun pen-nwp (&optional cmd input nw_args)
   "Runs command in a new window with input"
