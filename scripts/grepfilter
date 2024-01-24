@@ -20,7 +20,7 @@ shift
 
 matches_fp="$(cat "$input_fp" | eval "$matcher" | uniqnosort | tf txt)"
 transformed_fp="$(cat "$matches_fp" | eval "$transformer" | tf txt)"
-bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
+bytepos_fp="$(grep -F -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 
 # The matches should result in simply a list of matching tokens
 # Future passes should not work on the results of previous passes
