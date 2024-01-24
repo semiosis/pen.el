@@ -535,3 +535,4 @@ cat -A
 grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
 grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
 grepfilter "wrlp oc" "rosie-urls"                           # linkify all urls
+relinkify
