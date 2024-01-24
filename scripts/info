@@ -15,7 +15,7 @@ info_exists() {
 }
 
 info_at_top() {
-    /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed 's/^\* $1: \([^.]\+\)\..*/\1/'
+    /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed -n 's/^\* '$1': \([^.]\+\)\..*/\1/p' &>/dev/null
 }
 
 sn="$(basename -- "$0")"
@@ -64,6 +64,9 @@ if test "$has_stdout" = y; then
 elif test "$sn" = binfo; then
     nvc "$bin" "$query"
 else
+    if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
+        query="$(info_at_top "$query")"
+    fi
     einfo "$query"
 fi
 # if test -f "$bin"; then
