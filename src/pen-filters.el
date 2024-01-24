@@ -78,7 +78,7 @@
            (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
                                         ; in one clause
         (t
-         (pen-region-pipe (select-filter "pen-fwfzf:")))))
+         (pen-region-pipe (select-filter "pen-fwfzf:" type)))))
 
 (defun pen-extract ()
   (interactive)
@@ -90,7 +90,7 @@
   (interactive)
 
   ;; (message "Transform")
-  (pen-fwfzf 'tranformers))
+  (pen-fwfzf 'transformers))
 
 ;; (defun pen-grepfilter ()
 ;;   (interactive)
