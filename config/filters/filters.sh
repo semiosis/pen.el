@@ -132,17 +132,6 @@ xargs -l1 ca                                                                    
 xargs -l1 ia                                                                        # info anything
 xargs-l1-header.sh scope.sh                                                         # scope.sh anything
 expand -t8                                                                          # expand tabs
-sort -nr                                                                            # sort numerically
-sort -k1 -nr                                                                        # sort first column numerically
-tr '[:lower:]' '[:upper:]'                                                          # uppercase capitalize all caps
-s capitalize                                                                        # uppercase capitalize first letter of each word
-s capitalize-sentences                                                              # uppercase capitalize first letter of first word
-s lowercase-capitalize # lcap
-tr '[:upper:]' '[:lower:]'                                                          # lowercase insensitive
-awk '{print tolower($0)}')                                                          # lowercase
-sed 's/.*/\L&/'                                                                     # GNU sed lowercase
-sed 's/^/\t/'                                                                       # indent
-sed 's/\/$//'                                                                       # strip trailing directory slash
 umn | dirs-only.sh | mnm                                                            # directories only
 umn | files-only.sh | mnm                                                           # files only
 bash -s                                                                             # execute line of code in bash
