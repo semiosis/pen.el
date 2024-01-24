@@ -83,7 +83,7 @@
                      (read-string "Bytepos fp: ")
                      (read-string "Transformed fp: ")))
 
-  (let* ((input-list (s-lines (e/cat input-fp)))
+  (let* ((input (e/cat input-fp))
          (matches-list (s-lines (e/cat matches-fp)))
          (bytepos-list
           (mapcar
@@ -100,7 +100,7 @@
          (output
           (pps
            (list
-            input-list
+            input
             matches-list
             bytepos-list
             transformed-list))))
