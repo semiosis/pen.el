@@ -14,15 +14,16 @@
   ;;  (replace-regexp "^\\*$" "" nil beg end)
   ;;  (collapse-blank-lines beg end))
 
-  (with-writable-buffer
-   (progn-dontstop
-    (replace-regexp-in-region "[\x7f\u2028\u2029\ufe0f\u200a\u200c\ufe0f]+" "" beg end)
+  (save-excursion
+    (with-writable-buffer
+     (progn-dontstop
+      (replace-regexp-in-region "[\x7f\u2028\u2029\ufe0f\u200a\u200c\ufe0f]+" "" beg end)
 
-    ;; region-erase-trailing-whitespace is failing
-    ;; for an unknown reason inside eww
-    (region-erase-trailing-whitespace beg end)
-    (replace-regexp "^\\*$" "" nil beg end)
-    (collapse-blank-lines beg end))))
+      ;; region-erase-trailing-whitespace is failing
+      ;; for an unknown reason inside eww
+      (region-erase-trailing-whitespace beg end)
+      (replace-regexp "^\\*$" "" nil beg end)
+      (collapse-blank-lines beg end)))))
 
 (defalias 'notmuch-sanitize-postrendered 'sanitize-postrendered)
 (defalias 'eww-sanitize-postrendered 'sanitize-postrendered)
