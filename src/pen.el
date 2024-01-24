@@ -2328,6 +2328,7 @@ May use to generate code from comments."
     (require 'pen-yasnippet))
 (require 'pen-filters)
 (require 'pen-grepfilter)
+(require 'pen-ctable)
 (require 'pen-lsp-client)
 (if (inside-docker-p)
     (progn
