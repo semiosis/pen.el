@@ -5,6 +5,7 @@
 (require 'cl-macs)
 (require 'pp)
 (load "/root/.emacs.d/elpa/s-20210616.619/s.el")
+(load "/root/.emacs.d/elpa/dash-20230714.723/dash.el")
 
 ;; grepfilter-transform "$bytepos_fp" "$input_fp"
 
@@ -66,17 +67,43 @@
 
 (defvar fds nil)
 
+(defun string-empty-or-nil-p (s)
+  (or (not s)
+      (string-empty-p s)))
+
+(defun string-not-empty-nor-nil-p (s)
+  (not (string-empty-or-nil-p s)))
+
+(defun -filter-not-empty-string (lst)
+  (-filter 'string-not-empty-nor-nil-p lst))
+
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
                      (read-string "Bytepos fp: ")
                      (read-string "Transformed fp: ")))
 
-  (let* ((inputlist (s-lines (e/cat input-fp)))
-         (matcheslist (s-lines (e/cat matches-fp)))
-         (byteposlist (s-lines (e/cat bytepos-fp)))
-         (transformedlist (s-lines (e/cat transformed-fp)))
-         (output (e/cat input-fp)))
+  (let* ((input-list (s-lines (e/cat input-fp)))
+         (matches-list (s-lines (e/cat matches-fp)))
+         (bytepos-list
+          (mapcar
+           (lambda (s)
+             (let* ((bytepos (s-replace-regexp "^[^:]+:[0-9]+:\\([0-9]+\\).*" "\\1" s))
+                    (matchstr (s-replace-regexp "^[^:]+:[0-9]+:[0-9]+:\\(.*\\).*" "\\1" s))
+                    (len (length matchstr)))
+
+               (list (string-to-number bytepos) len matchstr)
+               ))
+           (-filter-not-empty-string
+            (s-lines (e/cat bytepos-fp)))))
+         (transformed-list (s-lines (e/cat transformed-fp)))
+         (output
+          (pps
+           (list
+            input-list
+            matches-list
+            bytepos-list
+            transformed-list))))
 
     (comment
      (with-temp-buffer
