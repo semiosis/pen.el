@@ -532,3 +532,4 @@ cif -nd bible-show-verses
 cif -nd bible-show-verses -pp
 hebrew-letters-explain
 cat -A
+grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
