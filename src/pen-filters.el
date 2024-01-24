@@ -44,14 +44,15 @@
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
-(defun select-filter ()
+(defun select-filter (&optional prompt)
   (interactive)
+  (setq prompt (or prompt "pen-fwfzf:"))
   (chomp (esed " #.*" ""
                (fz
                 (cat
                  (f-join pen-penel-directory
                          "config/filters.sh"))
-                nil nil "pen-fwfzf: "))))
+                nil nil prompt))))
 
 (defun pen-fwfzf ()
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
