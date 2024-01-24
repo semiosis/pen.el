@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # e.g.
 # ifconfig | grepfilter slugify "rosie grep -o subs net.ipv4"
@@ -37,5 +37,6 @@ bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 pid="$$"
 # pty="$(pid2tty "$pid")"
 output_fp="$(grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 2>/dev/null | tf txt)"
+# cmd grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 
 
 cat "$output_fp" | pavs
