@@ -12,6 +12,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# I need to supply the pid of the host script when calling show-fds, if I want to capture the result
+# i.e. fds="$(show-fds "$$")"
+pid="$1"
+: "${pid:="$$"}"
+
 if test "$ls" = "y"; then
     ls -la /proc/$$/fd 2>/dev/null
 else

@@ -6,6 +6,6 @@ export TTY
 # This is a chicken and egg problem
 # I can't get it from proc, sadly.
 # Does bash provide the information?
-fds="$(show-fds)"
+fds="$(show-fds "$$")"
 
 grepfilter-transform.els "$fds" "$@"
