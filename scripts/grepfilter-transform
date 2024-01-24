@@ -4,8 +4,6 @@ export TTY
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # show-fds is a chicken and egg problem
-# I can't get it from proc, sadly.
-# Does bash provide the information?
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
