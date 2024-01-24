@@ -18,3 +18,5 @@ awk '{print tolower($0)}')                                                      
 sed 's/.*/\L&/'                                                                     # GNU sed lowercase
 sed 's/^/\t/'                                                                       # indent
 sed 's/\/$//'                                                                       # strip trailing directory slash
+hash-crc32
+crc-lines

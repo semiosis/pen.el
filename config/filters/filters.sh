@@ -1,8 +1,6 @@
 f-irc
-pen-scrape "[^\"<>]+" | xurls | uniqnosort
 sed "s/\\(\\]\\]\\)/\\1\\n/" | sed -n "s/^.*\\(\\[\\[.*\\]\\]\\).*$/\\1/p"          # filter org links
 cat-urls.sh
-xurls | uniqnosort                                                                  # filter urls and strip url parameters
 get-1-grams.sh
 sed "s/\\s\\+/\\n/g" | sed '/^$/d'                                                  # split by whitespace
 extract-queries-from-google-url-contained.sh
@@ -315,20 +313,9 @@ f-file-not-contains "NewSharedInformerFactory"
 f-file-contains "NewSharedInformerFactory"
 sort -n -t . -k3,3 -k2,2 -k1,1                                                      # sort by date
 filter-facts
-rosie grep -o subs net.ipv4                                                         # ipv4 address
-tr "[\"'()]" ' ' | rosie grep -o subs net.email                                     # email address
-rosie grep -o subs net.path                                                         # path fragments
-scrape-emails
-rosie-ips
-rosie grep -o subs net.url_common                                                   # urls
-rosie grep -o subs all.things                                                       # extract all the things
-rosie match all.things                                                              # color highlight anything
-rosie-urls
-rosie-urls-context
+pen-scrape "[^\"<>]+" | xurls | uniqnosort
 sort-paths
 filter-file-paths-by-dos-line-endings
-rosie grep -o subs net.email                                                        # emails
-rosie grep -o subs json.value                                                       # json
 extract-json-lines
 xsv table                                                                           # tabularize
 cut -c1-25                                                                          # First 25 chars
@@ -437,7 +424,6 @@ awk -- "++c%2"                                                                  
 awk -- "c++%2"                                                                      # Delete every 2nd (odd) line
 split-pipe-multiline
 acronymise
-rosie-extract-paths
 gen-qdot
 grex                                                                                # generate regex
 definition-list-to-formatted-definitions.sh
@@ -459,12 +445,7 @@ sed 's/ / /g'                                                                  
 edm -m! ":\%s/^/hi/\\<CR>"                                                          # stream through vim macro
 edm -m! ":\%s/.*/(\&)"                                                              # Surround with parens
 filter-duckling-times
-rosie-scrape net.MAC
-rosie-scrape date.dashed
 jq -R "[.,input]"                                                                   # consecutive pairs to json
-rosie-scrape 'findall:{net.any <".com"}'
-hash-crc32
-crc-lines
 throttle-lines 1
 throttle-lines 0.2
 org-clink-urls-within
@@ -511,7 +492,5 @@ cif -nd bible-show-verses
 cif -nd bible-show-verses -pp
 hebrew-letters-explain
 cat -A
-grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
-grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
 tv
 sha
