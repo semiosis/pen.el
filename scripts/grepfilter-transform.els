@@ -138,6 +138,9 @@
            (-filter-not-empty-string
             (s-lines (e/cat bytepos-fp)))))
 
+         ;; (temp
+         ;;  (tv (pps bytepos-list)))
+
          ;; Don't use blanked input - it was a bad idea
          ;; instead, simply make the replacements
          ;; and keep a byte offset as I go.
@@ -149,6 +152,7 @@
               (cl-loop for bytepos in bytepos-list
                        do
                        (let* ((beg (+ offset
+                                      ;; byte-position crashes if it's variable is too big for the 
                                       (byte-position
                                        (car bytepos))))
                               (len (car (cdr bytepos)))
