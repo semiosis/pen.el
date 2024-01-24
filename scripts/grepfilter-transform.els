@@ -128,15 +128,20 @@
          (transformation-list
           (-zip matches-list transformed-list))
          (bytepos-list
-          (mapcar
-           (lambda (s)
-             (let* ((bytepos (s-replace-regexp "^[^:]+:[0-9]+:\\([0-9]+\\).*" "\\1" s))
-                    (matchstr (s-replace-regexp "^[^:]+:[0-9]+:[0-9]+:\\(.*\\).*" "\\1" s))
-                    (len (length matchstr)))
+          ;; I need a temp buffer to recalculate byte positions
+          (with-temp-buffer
+            (insert input)
+            (beginning-of-buffer)
 
-               (list (string-to-number bytepos) len matchstr)))
-           (-filter-not-empty-string
-            (s-lines (e/cat bytepos-fp)))))
+            (mapcar
+             (lambda (s)
+               (let* ((bytepos (s-replace-regexp "^[^:]+:[0-9]+:\\([0-9]+\\).*" "\\1" s))
+                      (matchstr (s-replace-regexp "^[^:]+:[0-9]+:[0-9]+:\\(.*\\).*" "\\1" s))
+                      (len (length matchstr)))
+
+                 (list (byte-position (string-to-number bytepos)) len matchstr)))
+             (-filter-not-empty-string
+              (s-lines (e/cat bytepos-fp))))))
 
          ;; (temp
          ;;  (tv (pps bytepos-list)))
@@ -153,8 +158,7 @@
                        do
                        (let* ((beg (+ offset
                                       ;; byte-position crashes the whole script if its variable is too big for the function
-                                      (byte-position
-                                       (car bytepos))))
+                                      (car bytepos)))
                               (len (car (cdr bytepos)))
                               (end (+ beg len))
                               (substr (buffer-substring beg end))
