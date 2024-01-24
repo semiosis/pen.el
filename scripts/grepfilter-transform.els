@@ -96,11 +96,15 @@
                ))
            (-filter-not-empty-string
             (s-lines (e/cat bytepos-fp)))))
+         (blanked-input
+          (with-temp-buffer
+            (insert input)
+            (buffer-string)))
          (transformed-list (s-lines (e/cat transformed-fp)))
          (output
           (pps
            (list
-            input
+            blanked-input
             matches-list
             bytepos-list
             transformed-list))))
