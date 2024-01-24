@@ -8,6 +8,10 @@
 (defun maybe-load (path)
   (ignore-errors (load path)))
 
+(defsubst string-empty-p (string)
+  "Check whether STRING is empty."
+  (string= string ""))
+
 (maybe-load "/home/shane/var/smulliga/source/git/config/emacs/packages28/s-20180406.808/s.el")
 (maybe-load "/home/shane/var/smulliga/source/git/config/emacs/packages28/dash-20210308.2109/dash.el")
 (maybe-load "/root/.emacs.d/elpa/s-20210616.619/s.el")
