@@ -3,4 +3,10 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-urls="$(rosie-urls)"
+input_fp="$(cat | tf txt)"
+
+urls="$(cat "$input_fp" | rosie-urls)"
+urls_links="$(cat "$input_fp" | scrape "\\[\\[http.*\\]\\[.*\\]\\]")"
+
+printf -- "%s\n" "$urls"
+printf -- "%s\n" "$urls_links"
