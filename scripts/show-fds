@@ -18,7 +18,7 @@ pid="$1"
 : "${pid:="$$"}"
 
 if test "$ls" = "y"; then
-    ls -la /proc/$$/fd 2>/dev/null
+    ls -la "/proc/$pid/fd" 2>/dev/null
 else
-    ls -la /proc/$$/fd 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
+    ls -la "/proc/$pid/fd" 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
 fi
