@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+: "${pid:="$$"}"
+/bin/ps -q "$pid" -o tty | sed 1d | sed 's=^=/dev/='
