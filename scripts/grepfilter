@@ -34,9 +34,12 @@ bytepos_fp="$(grep -f "$matches_fp" -Hnob "$input_fp" | tf txt)"
 # - Remove matches which overlap with previous matches
 
 # Then make the literal replacements to the original file with an elisp algorithm
-pid="$$"
+# pid="$$"
 # pty="$(pid2tty "$pid")"
-output_fp="$(grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 2>/dev/null | tf txt)"
-# cmd grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 
+# output_fp="$(grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" 2>/dev/null | tf txt)"
 
-cat "$output_fp" | pavs
+grepfilter-transform "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" | sponge "$input_fp"
+
+# cat "$output_fp" | pavs
+
+cat "$input_fp" | pavs
