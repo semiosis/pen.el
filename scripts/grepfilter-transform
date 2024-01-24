@@ -20,6 +20,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 : "${pid:="$$"}"
-fds="$(show-fds "$pid" | tv)"
+fds="$(show-fds "$pid")"
 
 grepfilter-transform.els "$fds" "$@"
