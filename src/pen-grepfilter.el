@@ -1,5 +1,9 @@
 ;; e:$EMACSD/pen.el/scripts/grepfilter-transform.els
 
+;; - filters
+;;   - extract
+;;   - transform
+
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
