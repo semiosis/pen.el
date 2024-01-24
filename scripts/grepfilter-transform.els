@@ -177,11 +177,7 @@
 
 (defun print-output (s)
   ;; Can I speed up pen-sn with call-process-shell-command ?
-  (with-temp-buffer
-    (insert s)
-    (append-to-file (point-min)
-                    (point-max)
-                    stdout-fp)))
+  (write-to-file s stdout-fp))
 
 (let ((input-fp (car argv))
       (matches-fp (cadr argv))
@@ -190,19 +186,13 @@
 
   (setq stdout-fp input-fp)
 
-  (setq fds
-        (cl-loop
-         for l in (s-lines fdstring)
-         collect
-         (let ((tp (s-split " " l)))
-           (cons (car tp) (cadr tp)))))
-
   (let ((output
          (grepfilter-transform
           input-fp
           matches-fp
           bytepos-fp
           transformed-fp)))
+    
     ;; Output
 
     (print-output
