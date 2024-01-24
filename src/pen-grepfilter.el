@@ -78,5 +78,6 @@
                 (select-filter "Transformer:")))
 
   (pen-region-pipe (cmd "grepfilter" transformer extractor)))
+(defalias 'pen-grepfilter 'grepfilter)
 
 (provide 'pen-grepfilter)
