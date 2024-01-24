@@ -59,10 +59,10 @@ export YAMLMOD_PATH
 export PATH=$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host:$PATH
 export PATH=$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts:$PATH
 export PATH=$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container:$PATH
+export PATH="$(find "$SCRIPTS" -maxdepth 4 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//"):$PATH"
 export PATH="$PATH:/root/go/bin"
 export PATH="$PATH:/root/.cargo/bin/cargo"
 export PATH="$PATH:/root/repos/go-ethereum/build/bin"
-export PATH="$PATH:$(find "$SCRIPTS" -maxdepth 4 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//")"
 
 # For the host:
 # export PATH="$PATH:$(find "$SCRIPTS" -maxdepth 1 -mindepth 1 -type d | grep -v '/\.git' | sed -z "s~\n~:~g" | sed "s/:\$//")"
