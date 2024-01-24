@@ -8,24 +8,11 @@ dedup-prefixes
 minimise.sh
 unminimise.sh
 cat
-pen-scrape | sed '/^$/d'
-pen-scrape "\\w+" | sed '/^$/d'
-pen-scrape "\\w+" | sort | uniq | sed '/^$/d'                                           # words sorted uniquely
-pen-scrape "\\w+" | sort | sed '/^$/d'                                                  # words sorted, just words (non-u)
-pen-scrape '[^ ]+' | sed '/^$/d'                                                        # full words - split by whitespace
 path-candidates.sh | print-line-if-path-exists.sh | uniqnosort                      # filter partial paths files
 path-candidates.sh | print-line-if-which.sh | uniqnosort                            # filter partial which
 path-candidates.sh | print-line-if-locate.sh | uniqnosort                           # filter partial locate
 print-line-if-which.sh                                                              # filter which
-pen-scrape "\\d+" | sed '/^$/d'                                                         # digits
-pen-scrape "\\d+" | sort | uniq | sed '/^$/d'                                           # digits sorted unique
-pen-scrape '[A-Z_][A-Z_]+' | sed '/^$/d'                                                # capital words
-pen-scrape '[a-zA-Z]+' | sed '/^$/d'                                                    # alphabetical
-pen-scrape '[a-zA-Z0-9]+' | sed '/^$/d'                                                 # alphanumeric
-pen-scrape '[a-zA-Z0-9_]+' | sed '/^$/d'                                                # word chars alphanumeric underscore
-pen-scrape '[a-zA-Z0-9-]+' | sed '/^$/d'                                                # word chars alphanumeric dash
 word-chars-alphanumeric-dash-underscore-dash.sh
-pen-scrape '[0-9.]+' | sed '/^$/d'                                                      # float
 split-by-non-paths.sh
 sort                                                                                # simple only
 sort -d                                                                             # dictionary alphanumeric only
@@ -123,9 +110,6 @@ udl -u                                                                          
 tac                                                                                 # reverse lines order
 xargs -l1 basename
 bc                                                                                  # arbitrary precision calculator
-pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-rtc-issue-ids.sh
-pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-nbo-issue-ids.sh
-pen-scrape '[a-zA-Z0-9-_]+' | sed '/^$/d' | filter-jira-issue-ids.sh
 xargs -l1 ca                                                                        # cat anything
 xargs -l1 ia                                                                        # info anything
 xargs-l1-header.sh scope.sh                                                         # scope.sh anything
