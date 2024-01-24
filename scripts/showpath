@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+echo "$PATH" | sed "s/:/\n/g" | pavs
