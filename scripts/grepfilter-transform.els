@@ -108,7 +108,9 @@
   (setq fds
         (cl-loop
          for l in (s-lines fdstring)
-         collect (cons (car l) (cadr l))))
+         collect
+         (let ((tp (s-split " " l)))
+           (cons (car tp) (cadr tp)))))
 
   ;; Output
   (print-output
