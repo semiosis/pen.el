@@ -57,7 +57,7 @@ esac; done
 # Thankfully there is a multiple of 10 number of books
 
 input_fp="$(cat | c ascify | tf txt)"
-spinner-start "$sn"
+# spinner-start "$sn"
 
 # Make this consume the args and generate a regex
 
@@ -175,6 +175,6 @@ pipeline() {
 
     # Therefore I must soak in the same subshell.
     input="$(cat)"
-    spinner-stop
+    # spinner-stop
     printf -- "%s" "$input" | pavs
 }
