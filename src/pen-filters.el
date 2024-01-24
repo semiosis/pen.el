@@ -111,7 +111,7 @@
   "Start an pen-rtcmd with the current region as input"
   (interactive)
   (if mark-active
-      (pen-nwp "pen-rtcmd awk '{$2 = gensub("$", " |", "g", $2); print $0}'" (pen-selected-text))))
+      (pen-nwp "pen-rtcmd awk '{$2 = gensub(\"$\", \" |\", \"g\", $2); print $0}'" (pen-selected-text))))
 
 (defun fzf-on-buffer ()
   (interactive)
