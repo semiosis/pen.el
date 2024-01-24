@@ -190,12 +190,9 @@
 
   (setq stdout-fp input-fp)
 
-  (let ((output
-         (grepfilter-transform
-          input-fp
-          matches-fp
-          bytepos-fp
-          transformed-fp)))
-
-    (print-output
-     output)))
+  (print-output
+   (grepfilter-transform
+    input-fp
+    matches-fp
+    bytepos-fp
+    transformed-fp)))
