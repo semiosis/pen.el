@@ -77,6 +77,17 @@
 (defun -filter-not-empty-string (lst)
   (-filter 'string-not-empty-nor-nil-p lst))
 
+(defun ndk/buffer-substring-no-properties-filter (beg end delete)
+  (buffer-substring-no-properties beg end))
+
+(defun ndk/kill-ring-save-no-properties (beg end &optional region)
+  (interactive (list (mark) (point)
+                     (prefix-numeric-value current-prefix-arg)))
+  (let ((filter-buffer-substring-function #'ndk/buffer-substring-no-properties-filter))
+    (if region
+        (kill-ring-save beg end region)
+      (kill-ring-sage beg end))))
+
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
@@ -85,6 +96,8 @@
 
   (let* ((input (e/cat input-fp))
          (matches-list (s-lines (e/cat matches-fp)))
+         (transformed-list (s-lines (e/cat transformed-fp)))
+         (transformation-list (-zip matches-list transformed-list))
          (bytepos-list
           (mapcar
            (lambda (s)
@@ -96,18 +109,70 @@
                ))
            (-filter-not-empty-string
             (s-lines (e/cat bytepos-fp)))))
-         (blanked-input
+
+         ;; Don't use blanked input - it was a bad idea
+         ;; instead, simply make the replacements
+         ;; and keep a byte offset as I go.
+         (transformed-input
           (with-temp-buffer
             (insert input)
-            (buffer-string)))
-         (transformed-list (s-lines (e/cat transformed-fp)))
+            (beginning-of-buffer)
+            (let ((offset 0)
+                  (placeholder-number 1))
+              (cl-loop for bytepos in bytepos-list
+                       do
+                       (let* ((beg (+ (car bytepos) offset))
+                              (len (cdr bytepos))
+                              (end (+ beg len))
+                              (filter-buffer-substring-function
+                               (lambda (beg end delete)
+                                 (let* ((substr (buffer-substring beg end))
+                                        (replacement
+                                         (car
+                                          (assoc substr transformation-list)))
+                                        (diff
+                                         (- len
+                                            (length replacement))))
+
+                                   (setq offset (+ offset diff))
+
+                                   replacement)
+                                 "hello"))
+                              (newcontents
+                               (filter-buffer-substring beg end)))
+
+
+                         (setq placeholder-number (+ 1 placeholder-number))
+                         ;; (buffer-string)
+                         newcontents)))))
+
+         ;; (blanked-input
+         ;;  (with-temp-buffer
+         ;;    (insert input)
+         ;;    (beginning-of-buffer)
+         ;;    (let* ((beg (point-min))
+         ;;           (end (point-max))
+         ;;           (filter-buffer-substring-function
+         ;;            (lambda (beg end delete)
+         ;;              (let* ((substr (buffer-substring beg end))
+         ;;                     (len (length substr))
+         ;;                     (make-string len ?\ ))
+
+         ;;                )
+         ;;              "hello"))
+         ;;           (newcontents
+         ;;            (filter-buffer-substring beg end)))
+         ;;      ;; (buffer-string)
+         ;;      newcontents)))
+
+
          (output
           (pps
            (list
-            blanked-input
-            matches-list
+            (list input)
+            transformation-list
             bytepos-list
-            transformed-list))))
+            (list transformed-input)))))
 
     (comment
      (with-temp-buffer
