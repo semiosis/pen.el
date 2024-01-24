@@ -58,7 +58,8 @@
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
   (interactive)
 
-  (cond ((>= (prefix-numeric-value current-prefix-arg) 16) x)
+  (cond ((>= (prefix-numeric-value current-prefix-arg) 16)
+         (call-interactively 'grepfilter))
         ((>= (prefix-numeric-value current-prefix-arg) 4)
          (if (region-active-p)
              (pen-region-pipe "pen-tm filter")
