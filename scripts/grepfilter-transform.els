@@ -171,12 +171,8 @@
 
                          (setq offset (+ offset diff)))))
             (buffer-string)))
-
-
          (output
-          transformed-input
-          ))
-
+          transformed-input))
     output))
 
 (defun caddddr (x)
