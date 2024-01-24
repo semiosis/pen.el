@@ -74,8 +74,8 @@
 
 (defun grepfilter (extractor transformer)
   (interactive (list
-                (select-filter "Extractor:")
-                (select-filter "Transformer:")))
+                (select-filter "Extractor:" 'extractor)
+                (select-filter "Transformer:" 'transformer)))
 
   (pen-region-pipe (cmd "grepfilter" transformer extractor)))
 (defalias 'pen-grepfilter 'grepfilter)
