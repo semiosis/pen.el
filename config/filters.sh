@@ -533,3 +533,5 @@ cif -nd bible-show-verses -pp
 hebrew-letters-explain
 cat -A
 grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
+grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
+grepfilter "wrlp oc" "xurls"                                # linkify all urls
