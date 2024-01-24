@@ -409,7 +409,8 @@
         :runmain '()
         :repls '()
         :formatters '()
-        :docs '(man-thing-at-point)
+        :docs '(man-thing-at-point
+                pen-lsp-get-hover-docs)
         :godef '()
         :docsearch '()
         :nextdef '()
