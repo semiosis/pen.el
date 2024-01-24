@@ -110,6 +110,7 @@
 (define-key pen-map (kbd "M-q M-t") 'pen-transform)
 (define-key pen-map (kbd "M-q M-g") 'pen-grepfilter)
 (define-key pen-map (kbd "M-q M-s") 'pen-summarizer)
+(define-key pen-map (kbd "M-q M-h") 'grepfilter)
 
 (defun pen-nwp (&optional cmd input nw_args)
   "Runs command in a new window with input"
