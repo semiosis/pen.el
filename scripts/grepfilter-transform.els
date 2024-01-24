@@ -131,8 +131,8 @@
                                          (car
                                           (assoc substr transformation-list)))
                                         (diff
-                                         (- len
-                                            (length replacement))))
+                                         (- (length replacement)
+                                            len)))
 
                                    (setq offset (+ offset diff))
 
