@@ -68,7 +68,7 @@
         ;; (setq truncate-lines t)
         (menu-bar-mode -1)
         ;; (tab-bar-mode -1)
-        )
+        (pen-snc "tmux set status off"))
     (progn
       (if lsp-mode
           (lsp-headerline-breadcrumb-mode 1))
@@ -81,6 +81,7 @@
       ;; (setq truncate-lines nil)
       (menu-bar-mode 1)
       ;; (tab-bar-mode 1)
+      (pen-snc "tmux set status on")
       )))
 (defalias 'toggle-minimal-clutter 'toggle-chrome)
 
