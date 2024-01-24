@@ -2157,3 +2157,5 @@ e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 
 # I need transient-20231204 for magit
 # But instead I can just load the new one then reload the builtin one
+
+e ia ctable
