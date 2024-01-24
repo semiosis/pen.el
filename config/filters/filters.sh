@@ -250,10 +250,6 @@ sed -E -n '/^(.)(.)(.)\3\2\1$/p'                                                
 sed -e 's/[\x80-\xFF]/ /g'                                                          # convert extended ASCII to spaces
 ssdeep-paths.sh
 resolve.sh                                                                          # resolve paths
-wc -w                                                                               # word count
-wc -l                                                                               # line count
-wc -m                                                                               # char count
-wc -c                                                                               # byte count
 wiki-parser.pl
 c ascify
 awk '!a[$0]++'                                                                      # uniq deduplicate consecutive
