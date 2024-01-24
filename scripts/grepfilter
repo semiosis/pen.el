@@ -3,7 +3,10 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# e.g. ifconfig | grepfilter slugify "rosie grep -o subs net.ipv4"
+# e.g.
+# ifconfig | grepfilter slugify "rosie grep -o subs net.ipv4"
+# ifconfig | grepfilter "wrlp pen-sha" "rosie grep -o subs net.ipv4" | v
+
 
 input_fp="$(cat | tf txt)"
 
