@@ -3,6 +3,7 @@
 ;; https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
 
 (require 'cl-macs)
+(require 'pp)
 (load "/root/.emacs.d/elpa/s-20210616.619/s.el")
 
 ;; grepfilter-transform "$bytepos_fp" "$input_fp"
@@ -121,10 +122,14 @@
          (let ((tp (s-split " " l)))
            (cons (car tp) (cadr tp)))))
 
-  ;; Output
-  (print-output
-   (grepfilter-transform
-    input-fp
-    matches-fp
-    bytepos-fp
-    transformed-fp)))
+  (let ((output
+         (grepfilter-transform
+          input-fp
+          matches-fp
+          bytepos-fp
+          transformed-fp)))
+    ;; Output
+    (tv-basic
+     output)
+    (print-output
+     output)))
