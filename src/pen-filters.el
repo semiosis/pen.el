@@ -92,11 +92,11 @@
   ;; (message "Transform")
   (pen-fwfzf 'transformers))
 
-;; (defun pen-grepfilter ()
-;;   (interactive)
+(defun pen-grepfilter ()
+  (interactive)
 
-;;   ;; (message "Grepfilter")
-;;   (pen-fwfzf 'grepfilters))
+  ;; (message "Grepfilter")
+  (pen-fwfzf 'grepfilters))
 
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 (define-key pen-map (kbd "M-q M-e") 'pen-extract)
