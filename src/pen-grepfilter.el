@@ -72,11 +72,11 @@
 
     output))
 
-(defun grepfilter (transformer extractor)
+(defun grepfilter (extractor transformer)
   (interactive (list
                 (select-filter "Extractor:")
                 (select-filter "Transformer:")))
 
-  (pen-region-pipe (cmd "grepfilter" transformer extractor)))
+  (pen-region-pipe (tv (cmd "grepfilter" transformer extractor))))
 
 (provide 'pen-grepfilter)
