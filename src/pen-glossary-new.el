@@ -525,9 +525,13 @@ Use my position list code. Make it use rosie lang and external software."
                                     (cadr termtuple)
                                     buttontype)))
 
+(defun byte-position (byteoffset)
+  (interactive "nByte position: ")
+  (byte-to-position (+ byteoffset 1)))
+
 (defun pen-goto-byte (byteoffset)
   (interactive "nByte position: ")
-  (goto-char (byte-to-position (+ byteoffset 1))))
+  (goto-char (byte-position byteoffset)))
 
 (defun pen-glossary-candidate-button-pressed (button)
   "When I press a glossary button, it should take me to the definition"
