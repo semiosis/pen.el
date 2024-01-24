@@ -35,4 +35,3 @@ pid="$$"
 output_fp="$(grepfilter-transform -toppid "$pid" "$input_fp" "$matches_fp" "$bytepos_fp" "$transformed_fp" | tf txt)"
 
 cat "$output_fp" | pavs
-
