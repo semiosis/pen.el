@@ -88,6 +88,19 @@
         (kill-ring-save beg end region)
       (kill-ring-sage beg end))))
 
+(defun pen-position-bytes (pos)
+  (if (= 0 pos)
+      0
+    (position-bytes pos)))
+
+(defun byte-position (byteoffset)
+  (interactive "nByte position: ")
+  (byte-to-position (+ byteoffset 1)))
+
+(defun pen-goto-byte (byteoffset)
+  (interactive "nByte position: ")
+  (goto-char (byte-position byteoffset)))
+
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
@@ -95,9 +108,14 @@
                      (read-string "Transformed fp: ")))
 
   (let* ((input (e/cat input-fp))
-         (matches-list (s-lines (e/cat matches-fp)))
-         (transformed-list (s-lines (e/cat transformed-fp)))
-         (transformation-list (-zip matches-list transformed-list))
+         (matches-list
+          (-filter-not-empty-string
+           (s-lines (e/cat matches-fp))))
+         (transformed-list
+          (-filter-not-empty-string
+           (s-lines (e/cat transformed-fp))))
+         (transformation-list
+          (-zip matches-list transformed-list))
          (bytepos-list
           (mapcar
            (lambda (s)
@@ -105,8 +123,7 @@
                     (matchstr (s-replace-regexp "^[^:]+:[0-9]+:[0-9]+:\\(.*\\).*" "\\1" s))
                     (len (length matchstr)))
 
-               (list (string-to-number bytepos) len matchstr)
-               ))
+               (list (string-to-number bytepos) len matchstr)))
            (-filter-not-empty-string
             (s-lines (e/cat bytepos-fp)))))
 
@@ -117,34 +134,24 @@
           (with-temp-buffer
             (insert input)
             (beginning-of-buffer)
-            (let ((offset 0)
-                  (placeholder-number 1))
+            (let ((offset 0))
               (cl-loop for bytepos in bytepos-list
                        do
-                       (let* ((beg (+ (car bytepos) offset))
-                              (len (cdr bytepos))
+                       (let* ((beg (+ offset
+                                      (byte-position
+                                       (car bytepos))))
+                              (len (car (cdr bytepos)))
                               (end (+ beg len))
-                              (filter-buffer-substring-function
-                               (lambda (beg end delete)
-                                 (let* ((substr (buffer-substring beg end))
-                                        (replacement
-                                         (car
-                                          (assoc substr transformation-list)))
-                                        (diff
-                                         (- (length replacement)
-                                            len)))
+                              (substr (buffer-substring beg end))
+                              (replacement (cdr (assoc substr transformation-list)))
+                              (diff (- (length replacement) len)))
 
-                                   (setq offset (+ offset diff))
+                         (goto-char beg)
+                         (delete-region beg end)
+                         (insert replacement)
 
-                                   replacement)
-                                 "hello"))
-                              (newcontents
-                               (filter-buffer-substring beg end)))
-
-
-                         (setq placeholder-number (+ 1 placeholder-number))
-                         ;; (buffer-string)
-                         newcontents)))))
+                         (setq offset (+ offset diff)))))
+            (buffer-string)))
 
          ;; (blanked-input
          ;;  (with-temp-buffer
@@ -167,12 +174,14 @@
 
 
          (output
-          (pps
-           (list
-            (list input)
-            transformation-list
-            bytepos-list
-            (list transformed-input)))))
+          transformed-input
+          ;; (pps
+          ;;  (list
+          ;;   (list input)
+          ;;   transformation-list
+          ;;   bytepos-list
+          ;;   (list transformed-input)))
+          ))
 
     (comment
      (with-temp-buffer
