@@ -8,6 +8,7 @@
 (defun maybe-load (path)
   (ignore-errors (load path)))
 
+;; This was required because it's not present in the host emacs
 (defsubst string-empty-p (string)
   "Check whether STRING is empty."
   (string= string ""))
