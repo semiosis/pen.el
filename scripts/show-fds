@@ -28,7 +28,8 @@ fi
         exec 0</dev/null
         fd_num="${line/ */}"
         pipeid="$(printf -- "%s\n" "$line" | grep -oP 'pipe:.*')"
-        pid_list="$(0</dev/null pipeid-to-pid "$pipeid")"
+        # The -pid should speed it up
+        pid_list="$(0</dev/null pipeid-to-pid -pid "$pid" "$pipeid")"
         if test -n "$pipeid" && test "$fd_num" = 0; then
             # It's actually possible to get the fd of the sending process if the the stdin pipe in still open
             # ( echo hi; sleep 10; echo yo ) | show-fds | cat
