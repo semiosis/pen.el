@@ -68,6 +68,16 @@
         (t
          (pen-region-pipe (select-filter "pen-fwfzf:")))))
 
+(defun pen-extract ()
+  (interactive)
+
+  (message "Extract"))
+
+(defun pen-transform ()
+  (interactive)
+
+  (message "Transform"))
+
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 (define-key pen-map (kbd "M-q M-e") 'pen-extract)
 (define-key pen-map (kbd "M-q M-t") 'pen-transform)
