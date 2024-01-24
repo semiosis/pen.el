@@ -112,7 +112,7 @@
     (call-process-shell-command
      ;; Sadly, this still doesn't make it to stdout / stderr
      ;; Emacs has completely taken stderr / stdout
-     (concat "cat >> " (tv stdout-fd)) output-file "*pen-sn-stderr*"))
+     (concat "cat >> " stdout-fd) output-file "*pen-sn-stderr*"))
   ;; Do not do this!
   ;; (write-to-file s "/dev/stdout")
   )
