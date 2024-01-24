@@ -196,8 +196,6 @@
           matches-fp
           bytepos-fp
           transformed-fp)))
-    
-    ;; Output
 
     (print-output
      output)))
