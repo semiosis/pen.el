@@ -410,7 +410,8 @@
         :repls '()
         :formatters '()
         :docs '(man-thing-at-point
-                pen-lsp-get-hover-docs)
+                pen-lsp-get-hover-docs
+                ladicle/toggle-lsp-ui-doc)
         :godef '()
         :docsearch '()
         :nextdef '()
