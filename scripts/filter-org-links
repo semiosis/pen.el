@@ -1,4 +1,6 @@
 #!/bin/bash
 export TTY
 
-scrape "\\[\\[http.*\\]\\[.*\\]\\]"
+type="$@"
+
+scrape "\\[\\[${type}.*\\]\\[.*\\]\\]"
