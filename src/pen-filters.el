@@ -59,6 +59,8 @@
              (cat (f-join dir "transformers.sh")))
             ('grepfilters
              (cat (f-join dir "grepfilters.sh")))
+            ('summarizers
+             (cat (f-join dir "summarizers.sh")))
             (_
              (cat (f-join dir "filters.sh"))))))
 
