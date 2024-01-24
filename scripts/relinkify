@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp oc" rosie-urls
