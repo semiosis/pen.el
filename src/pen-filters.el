@@ -54,6 +54,7 @@
                          "config/filters.sh"))
                 nil nil prompt))))
 
+;; Filter should include the extract and transform commands
 (defun pen-fwfzf ()
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
   (interactive)
@@ -64,7 +65,7 @@
          (if (region-active-p)
              (pen-region-pipe "pen-tm filter")
            (pen-nil (pen-sn (concat "pen-tm -f -S -tout nw -noerror " (pen-q "f filter-with-fzf")) (buffer-string) nil nil t))))
- ; in one clause
+                                        ; in one clause
         (t
          (pen-region-pipe (select-filter "pen-fwfzf:")))))
 
