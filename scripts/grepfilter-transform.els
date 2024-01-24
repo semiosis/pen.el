@@ -2,6 +2,8 @@
 
 ;; https://gist.github.com/Kreyren/a12e3618525477c3dd5fb16c3de45bf3
 
+;; ifconfig | grepfilter "wrlp pen-sha" "rosie grep -o subs net.ipv4" | v
+
 (require 'cl-macs)
 (require 'pp)
 (load "/root/.emacs.d/elpa/s-20210616.619/s.el")
