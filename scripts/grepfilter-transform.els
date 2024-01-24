@@ -80,7 +80,7 @@
          (byteposlist (s-lines (e/cat bytepos-fp)))
          (transformedlist (s-lines (e/cat transformed-fp))))
 
-    (print-output (e/cat input-fp)))
+    (e/cat input-fp))
 
   (comment
    (with-temp-buffer
