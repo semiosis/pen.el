@@ -50,16 +50,17 @@
                                  nil nil "Filter type"))))
   (setq prompt (or prompt "pen-fwfzf:"))
 
-  (let ((filters
-         (pcase type
-           ('extractors
-            (cat (f-join pen-penel-directory "config/filters/extractors.sh")))
-           ('transformers
-            (cat (f-join pen-penel-directory "config/filters/transformers.sh")))
-           ('grepfilters
-            (cat (f-join pen-penel-directory "config/filters/grepfilters.sh")))
-           (_
-            (cat (f-join pen-penel-directory "config/filters/filters.sh"))))))
+  (let* ((dir (f-join pen-penel-directory "config/filters"))
+         (filters
+          (pcase type
+            ('extractors
+             (cat (f-join dir "extractors.sh")))
+            ('transformers
+             (cat (f-join dir "transformers.sh")))
+            ('grepfilters
+             (cat (f-join dir "grepfilters.sh")))
+            (_
+             (cat (f-join dir "filters.sh"))))))
 
     (chomp (esed " #.*" ""
                  (fz filters nil nil prompt)))))
