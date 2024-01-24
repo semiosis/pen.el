@@ -44,15 +44,25 @@
       (setq cmd "pen-tm filter"))
   (pen-region-filter (lambda (input) (pen-sn (concat cmd) input))))
 
-(defun select-filter (&optional prompt)
-  (interactive)
+(defun select-filter (&optional prompt type)
+  (interactive (list (read-string "Prompt:")
+                     (intern (fz '(filters extractors transformers grepfilters)
+                                 nil nil "Filter type"))))
   (setq prompt (or prompt "pen-fwfzf:"))
-  (chomp (esed " #.*" ""
-               (fz
-                (cat
-                 (f-join pen-penel-directory
-                         "config/filters/filters.sh"))
-                nil nil prompt))))
+
+  (let ((filters
+         (pcase type
+           ('extractors
+            (cat (f-join pen-penel-directory "config/filters/extractors.sh")))
+           ('transformers
+            (cat (f-join pen-penel-directory "config/filters/transformers.sh")))
+           ('grepfilters
+            (cat (f-join pen-penel-directory "config/filters/grepfilters.sh")))
+           (_
+            (cat (f-join pen-penel-directory "config/filters/filters.sh"))))))
+
+    (chomp (esed " #.*" ""
+                 (fz filters nil nil prompt)))))
 
 ;; Filter should include the extract and transform commands
 (defun pen-fwfzf ()
