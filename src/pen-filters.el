@@ -51,7 +51,7 @@
                (fz
                 (cat
                  (f-join pen-penel-directory
-                         "config/filters.sh"))
+                         "config/filters/filters.sh"))
                 nil nil prompt))))
 
 ;; Filter should include the extract and transform commands
@@ -108,11 +108,11 @@
    (point-min) (point-max)
    (concat "pen-tm -S -tout nw 'fzf --sync | pen-tm -S -soak -tout nw v'")))
 
-;; cat "$PENELD/config/filters.sh"
+;; cat "$PENELD/config/filters/filters.sh"
 (require 'f)
 (defun pen-filter-shellscript (script)
   "This will pipe the selection into fzf filters,\nreplacing the original region. If no region is\nselected, then the entire buffer is passed\nread only."
-  (interactive (list (fz (cat (f-join pen-penel-directory "config" "filters.sh")) nil nil "pen-filter-shellscript: ")))
+  (interactive (list (fz (cat (f-join pen-penel-directory "config" "filters" "filters.sh")) nil nil "pen-filter-shellscript: ")))
   (if (region-active-p)
       (pen-region-pipe
        (chomp

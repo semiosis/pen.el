@@ -141,7 +141,7 @@
   (sslk "lFt" (dff (e "$NOTES/todo.org")))
   (sslk "lFn" (dff (e "$NOTES/need.org")))
   (sslk "lFf" (dff (e "$NOTES/files.txt")))
-  (sslk "lFF" (dff (e "$HOME/filters/filters.sh")))
+  (sslk "lFF" (dff (e "$EMACSD/pen.el/config/filters/filters.sh")))
   (sslk "lFe" (dff (e "$NOTES/examples.txt")))
   (sslk "lFW" (dff (e "$NOTES/ws/french/words.txt")))
   (sslk "lFp" (dff (e "$NOTES/perspective.org")))
