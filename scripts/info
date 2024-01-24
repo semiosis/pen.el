@@ -15,7 +15,7 @@ info_exists() {
 }
 
 info_at_top() {
-    /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed -n 's/^\* '$1': \([^.]\+\)\..*/\1/p' &>/dev/null
+    /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed -n 's/^\* '$1': \([^.]\+\)\..*/\1/p' 2>/dev/null
 }
 
 sn="$(basename -- "$0")"
