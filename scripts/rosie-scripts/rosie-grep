@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+filter-grep rosie grep -o line "$@"
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+#pat="$1"
+#shift
+#
+#exec 2>/dev/null
+#
+#if test "$#" -eq 0; then
+#    grep -HnR . | rosie grep -o line "$pat"
+#else
+#    grep -Hn . "$@" | rosie grep -o line "$pat"
+#fi

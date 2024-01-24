@@ -1,4 +1,4 @@
 #!/bin/bash
 export TTY
 
-grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp timeout oc" rosie-urls
+grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp debug oc" rosie-urls

@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+rosie-scrape net.ipv4

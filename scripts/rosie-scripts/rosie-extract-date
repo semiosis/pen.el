@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+/usr/local/bin/rosie -f $MYGIT/rosie-pattern-language/rosie/rpl/date.rpl --rpl 'import date' grep -o subs '{ date.day "." date.month "." { [0-9]{4,4} / [0-9]{2,2} } }'

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# I'm not sure exactly why strip-ansi is needed here
+
+test -f $MYGIT/rosie-pattern-language/rosie/rosie && : "${bin:="$MYGIT/rosie-pattern-language/rosie/rosie"}"
+test -f /usr/local/bin/rosie && : "${bin:="/usr/local/bin/rosie"}"
+
+test -f "$bin" || {
+    update-rosie &>/dev/null
+}
+
+exec 2>/dev/null
+
+"$bin" -f $MYGIT/rosie-pattern-language/rosie/rpl/all.rpl \
+    -f $MYGIT/rosie-pattern-language/rosie/rpl/net.rpl \
+    -f $MYGIT/rosie-pattern-language/rosie/rpl/date.rpl \
+    -f $MYGIT/rosie-pattern-language/rosie/rpl/csv.rpl \
+    -f $MYGIT/rosie-pattern-language/rosie/rpl/json.rpl \
+    "$@" | strip-ansi
+
+# for i in $MYGIT/rosie-pattern-language/rosie/rpl/
+# /usr/local/bin/rosie --libpath $MYGIT/rosie-pattern-language/rosie/rpl "$@"
+# /usr/local/bin/rosie -f $MYGIT/rosie-pattern-language/rosie/rpl/all.rpl "$@"
+# /usr/local/bin/rosie "$@"
+# /usr/local/bin/rosie -f $HOME/programs/rosie/ipv4.rpl "$@"
+#     -f may be repeated
