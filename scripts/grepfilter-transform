@@ -7,7 +7,19 @@ export TTY
 # I can't get it from proc, sadly.
 # Does bash provide the information?
 
-pid="$$"
-fds="$(show-fds "$pid")"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -toppid) {
+        pid="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+: "${pid:="$$"}"
+fds="$(show-fds "$pid" | tv)"
 
 grepfilter-transform.els "$fds" "$@"
