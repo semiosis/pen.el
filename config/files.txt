@@ -36,6 +36,9 @@ $HOME/.zsh_history
 $HOME/.compton.conf
 $HOME/versioned/git/config/ranger/rifle.conf
 $NOTES/ws/filters/filters.sh
+$NOTES/ws/filters/extractors.sh
+$NOTES/ws/filters/transformers.sh
+$NOTES/ws/filters/grepfilters.sh
 $NOTES/ws/filters/filters.txt
 $NOTES/ws/filters/refactorings.txt
 $NOTES/ws/filters/summarizers.txt
