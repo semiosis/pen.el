@@ -4,8 +4,14 @@
 
 (require 'cl-macs)
 (require 'pp)
-(load "/root/.emacs.d/elpa/s-20210616.619/s.el")
-(load "/root/.emacs.d/elpa/dash-20230714.723/dash.el")
+
+(defun maybe-load (path)
+  (ignore-errors (load path)))
+
+(maybe-load "/home/shane/var/smulliga/source/git/config/emacs/packages28/s-20180406.808/s.el")
+(maybe-load "/home/shane/var/smulliga/source/git/config/emacs/packages28/dash-20210308.2109/dash.el")
+(maybe-load "/root/.emacs.d/elpa/s-20210616.619/s.el")
+(maybe-load "/root/.emacs.d/elpa/dash-20230714.723/dash.el")
 
 ;; grepfilter-transform "$bytepos_fp" "$input_fp"
 
