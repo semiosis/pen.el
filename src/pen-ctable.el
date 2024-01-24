@@ -1,6 +1,7 @@
 (require 'ctable)
 
 ;; https://github.com/kiwanami/emacs-ctable
+;; https://raw.githubusercontent.com/kiwanami/emacs-ctable/master/readme.md
 
 ;; Demo
 (comment
