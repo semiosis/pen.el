@@ -1,5 +1,7 @@
 (require 'ctable)
 
+;; https://github.com/kiwanami/emacs-ctable
+
 ;; Demo
 (comment
  (let* ((column-model                   ; column model
