@@ -217,14 +217,22 @@
   (let ((stdin-fd (cdr (assoc "0" fds)))
         (stdout-fd (cdr (assoc "1" fds)))
         (stderr-fd (cdr (assoc "2" fds)))
-        (output-file
-         (make-temp-file "grepfilter-transform-output" nil ".txt")))
+        ;; (output-file
+        ;;  (make-temp-file "grepfilter-transform-output" nil ".txt"))
+        )
 
-    (write-to-file s output-file)
-    (call-process-shell-command
-     ;; Sadly, this still doesn't make it to stdout / stderr
-     ;; Emacs has completely taken stderr / stdout
-     (concat "cat >> " stdout-fd) output-file "*pen-sn-stderr*"))
+    ;; This is a little more efficient
+    (with-temp-buffer
+      (insert s)
+      (append-to-file (point-min)
+                      (point-max)
+                      stdout-fd))
+    ;; (write-to-file s output-file)
+    ;; (call-process-shell-command
+    ;;  ;; Sadly, this still doesn't make it to stdout / stderr
+    ;;  ;; Emacs has completely taken stderr / stdout
+    ;;  (concat "cat >> " stdout-fd) output-file "*pen-sn-stderr*")
+    )
   ;; Do not do this!
   ;; (write-to-file s "/dev/stdout")
   )
