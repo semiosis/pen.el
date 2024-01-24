@@ -66,7 +66,7 @@
                  (fz filters nil nil prompt)))))
 
 ;; Filter should include the extract and transform commands
-(defun pen-fwfzf ()
+(defun pen-fwfzf (&optional type)
   "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
   (interactive)
 
@@ -83,17 +83,20 @@
 (defun pen-extract ()
   (interactive)
 
-  (message "Extract"))
+  ;; (message "Extract")
+  (pen-fwfzf 'extractors))
 
 (defun pen-transform ()
   (interactive)
 
-  (message "Transform"))
+  ;; (message "Transform")
+  (pen-fwfzf 'tranformers))
 
-(defun pen-grepfilter ()
-  (interactive)
+;; (defun pen-grepfilter ()
+;;   (interactive)
 
-  (message "Grepfilter"))
+;;   ;; (message "Grepfilter")
+;;   (pen-fwfzf 'grepfilters))
 
 (define-key pen-map (kbd "M-q M-f") 'pen-fwfzf)
 (define-key pen-map (kbd "M-q M-e") 'pen-extract)
