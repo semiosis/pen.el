@@ -3,7 +3,6 @@ pen-scrape "[^\"<>]+" | xurls | uniqnosort
 sed "s/\\(\\]\\]\\)/\\1\\n/" | sed -n "s/^.*\\(\\[\\[.*\\]\\]\\).*$/\\1/p"          # filter org links
 cat-urls.sh
 xurls | uniqnosort                                                                  # filter urls and strip url parameters
-org clink
 get-1-grams.sh
 sed "s/\\s\\+/\\n/g" | sed '/^$/d'                                                  # split by whitespace
 extract-queries-from-google-url-contained.sh
@@ -525,9 +524,5 @@ hebrew-letters-explain
 cat -A
 grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
 grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
-filter-org-links
-filter-org-links http
-unlinkify                                                   # Unlinkify/unclinkify all urls
-relinkify                                                   # Linkify/Clinkify all urls
 tv
 sha
