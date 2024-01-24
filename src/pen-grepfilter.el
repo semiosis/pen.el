@@ -77,6 +77,6 @@
                 (select-filter "Extractor:")
                 (select-filter "Transformer:")))
 
-  (pen-region-pipe (tv (cmd "grepfilter" transformer extractor))))
+  (pen-region-pipe (cmd "grepfilter" transformer extractor)))
 
 (provide 'pen-grepfilter)
