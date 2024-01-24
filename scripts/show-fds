@@ -17,8 +17,29 @@ esac; done
 pid="$1"
 : "${pid:="$$"}"
 
+(
 if test "$ls" = "y"; then
     ls -la "/proc/$pid/fd" 2>/dev/null
 else
     ls -la "/proc/$pid/fd" 2>/dev/null | grep -oP "[0-9]+ -> .*" | sed 's/ -> / /'
 fi
+) | awk 1 | while IFS=$'\n' read -r line; do
+    (
+        exec 0</dev/null
+        fd_num="${line/ */}"
+        pipeid="$(printf -- "%s\n" "$line" | grep -oP 'pipe:.*')"
+        pid_list="$(0</dev/null pipeid-to-pid "$pipeid")"
+        if test -n "$pipeid" && test "$fd_num" = 0; then
+            # It's actually possible to get the fd of the sending process if the the stdin pipe in still open
+            # ( echo hi; sleep 10; echo yo ) | show-fds | cat
+
+            pipe_stdin_fd="$(echo "$pid_list" | sed -n "/\/fd\/[12] ->/{s/ .*//p;q}" | cat)"
+            echo "${line/ */} ${pipe_stdin_fd}"
+        elif test -n "$pipeid" && test "$fd_num" = 1; then
+            pipe_stdin_fd="$(echo "$pid_list" | sed -n "/\/fd\/0 ->/{s/ .*//p;q}" | cat)"
+            echo "${line/ */} ${pipe_stdin_fd}"
+        else
+            echo "$line"
+        fi
+    )
+done

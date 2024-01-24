@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pid) {
+        pid="$2"
+        shift
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# e.g. pipe:[20043922]
+pipeid="$1"
+test -n "$pipeid" || exit 1
+
+(find /proc -type l | xargs ls -l | fgrep "$pipeid") 2>/dev/null | sed 's=^.*\(/proc/\)=\1='
