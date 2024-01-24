@@ -66,10 +66,6 @@
 
 (defvar fds nil)
 
-
-
-
-
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
                      (read-string "Matches fp: ")
