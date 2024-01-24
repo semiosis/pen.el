@@ -30,6 +30,18 @@
 (defun test-f (filename)
   (file-exists-p (umn filename)))
 
+(defun tv-basic (s)
+  (let ((output-file
+         (make-temp-file "tv-basic-output" nil ".txt")))
+    (write-to-file s output-file)
+    (call-process-shell-command
+     "tv" output-file "*pen-sn-stderr*")
+    (delete-file output-file))
+  s)
+(defalias 'tv 'tv-basic)
+
+(defalias 'pps 'pp-to-string)
+
 (defun e/cat (&optional path input no_unminimise)
   "cat out a file, or write to one"
   (if (not no_unminimise)
@@ -54,30 +66,9 @@
 
 (defvar fds nil)
 
-(defun tv-basic (s)
-  (let ((output-file
-         (make-temp-file "tv-basic-output" nil ".txt")))
-    (write-to-file s output-file)
-    (call-process-shell-command
-     "tv" output-file "*pen-sn-stderr*")
-    (delete-file output-file))
-  s)
 
-(defun print-output (s)
-  ;; Can I speed up pen-sn with call-process-shell-command ?
-  (let ((stdin-fd (cdr (assoc 0 fds)))
-        (stdout-fd (cdr (assoc 1 fds)))
-        (stderr-fd (cdr (assoc 2 fds)))
-        (output-file
-         (make-temp-file "grepfilter-transform-output" nil ".txt")))
-    (write-to-file s output-file)
-    (call-process-shell-command
-     ;; Sadly, this still doesn't make it to stdout / stderr
-     ;; Emacs has completely taken stderr / stdout
-     (concat "cat | tv >> " stdout-fd) output-file "*pen-sn-stderr*"))
-  ;; Do not do this!
-  ;; (write-to-file s "/dev/stdout")
-  )
+
+
 
 (defun grepfilter-transform (input-fp matches-fp bytepos-fp transformed-fp)
   (interactive (list (read-string "Input fp: ")
@@ -88,26 +79,43 @@
   (let* ((inputlist (s-lines (e/cat input-fp)))
          (matcheslist (s-lines (e/cat matches-fp)))
          (byteposlist (s-lines (e/cat bytepos-fp)))
-         (transformedlist (s-lines (e/cat transformed-fp))))
+         (transformedlist (s-lines (e/cat transformed-fp)))
+         (output (e/cat input-fp)))
 
-    (e/cat input-fp))
-
-  (comment
-   (with-temp-buffer
-     (ignore-errors (insert-file-contents input-fp))
-     (search-forward-regexp (concat "^" book))
-     (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
-     (beginning-of-line)
-     (search-forward-regexp "\\. ")
-     (let ((start (point))
-           (end (progn
-                  (end-of-line)
-                  (point))))
-       (buffer-substring start end)))))
+    (comment
+     (with-temp-buffer
+       (ignore-errors (insert-file-contents input-fp))
+       (search-forward-regexp (concat "^" book))
+       (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
+       (beginning-of-line)
+       (search-forward-regexp "\\. ")
+       (let ((start (point))
+             (end (progn
+                    (end-of-line)
+                    (point))))
+         (buffer-substring start end))))
+    output))
 
 (defun caddddr (x)
   (declare (compiler-macro internal--compiler-macro-cXXr))
   (car (cdr (cdr (cdr (cdr x))))))
+
+(defun print-output (s)
+  ;; Can I speed up pen-sn with call-process-shell-command ?
+  (let ((stdin-fd (cdr (assoc "0" fds)))
+        (stdout-fd (cdr (assoc "1" fds)))
+        (stderr-fd (cdr (assoc "2" fds)))
+        (output-file
+         (make-temp-file "grepfilter-transform-output" nil ".txt")))
+
+    (write-to-file s output-file)
+    (call-process-shell-command
+     ;; Sadly, this still doesn't make it to stdout / stderr
+     ;; Emacs has completely taken stderr / stdout
+     (concat "cat | tv >> " stdout-fd) output-file "*pen-sn-stderr*"))
+  ;; Do not do this!
+  ;; (write-to-file s "/dev/stdout")
+  )
 
 (let ((fdstring (car argv))
       (input-fp (cadr argv))
@@ -129,7 +137,6 @@
           bytepos-fp
           transformed-fp)))
     ;; Output
-    (tv-basic
-     output)
+
     (print-output
      output)))
