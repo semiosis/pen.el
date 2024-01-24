@@ -53,6 +53,15 @@
 
 (defvar fds nil)
 
+(defun tv-basic (s)
+  (let ((output-file
+         (make-temp-file "tv-basic-output" nil ".txt")))
+    (write-to-file s output-file)
+    (call-process-shell-command
+     "tv" output-file "*pen-sn-stderr*")
+    (delete-file output-file))
+  s)
+
 (defun print-output (s)
   ;; Can I speed up pen-sn with call-process-shell-command ?
   (let ((stdin-fd (cdr (assoc 0 fds)))
