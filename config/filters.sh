@@ -535,6 +535,7 @@ cat -A
 grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addresses
 grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
 filter-org-links
+filter-org-links http
 unlinkify                                                   # Uninkify all urls
 relinkify                                                   # Linkify all urls
 tv
