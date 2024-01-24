@@ -14,6 +14,10 @@ info_exists() {
     test -n "$content"
 }
 
+info_at_top() {
+    /usr/bin/info -n '(dir)Top' -o /dev/stdout | sed 's/^\* $1: \([^.]\+\)\..*/\1/'
+}
+
 sn="$(basename -- "$0")"
 
 . $PENEL_DIR/scripts/utils.sh
