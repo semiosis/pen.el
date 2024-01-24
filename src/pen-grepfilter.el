@@ -1,7 +1,7 @@
 ;; e:$EMACSD/pen.el/scripts/grepfilter-transform.els
 
 ;; Two types of filters
-;; - filters:
+;; - filters
 ;;   - extract
 ;;   - transform
 
