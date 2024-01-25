@@ -77,6 +77,7 @@
                            nicene-creed
                            bible-mode-read-chapter-aloud-kjv
                            bible-mode-fuzzy-search
+                           bible-open-interlinear
                            syriac-digraph-select
                            aramaic-digraph-select
                            greek-digraph-select
@@ -89,7 +90,8 @@
                                   bible-mode-cross-references
                                   bible-mode-split-display
                                   bible-random-verse-ref
-                                  bible-mode-fuzzy-search))
+                                  bible-mode-fuzzy-search
+                                  bible-open-interlinear))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
