@@ -7,7 +7,8 @@
 (defun test-temp-buffer-kill-without-asking ()
   (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (not-modified) (kill-buffer)))
 
-;; nadvice - proc is the original function, passed in. do not modify
+;; This fixed the issue, but only for the org-mode test
+;; The problem still exists with the Hyperdrive menu
 (defun kill-buffer-around-advice (proc &rest args)
   (let ((res
          (progn
