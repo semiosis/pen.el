@@ -1826,7 +1826,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (chap (str (cadr tup)))
          (verse (str (caddr tup))))
     (chrome
-     (format "https://biblehub.com/interlinear/%book/%s-%s.htm" chap verse))))
+     (format "https://biblehub.com/interlinear/%s/%s-%s.htm" chap verse))))
 
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 
