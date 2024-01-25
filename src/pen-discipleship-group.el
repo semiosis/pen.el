@@ -126,7 +126,9 @@
   (interactive)
   (let* ((dir (d-group-weekly-journal-dir))
          (fp (f-join dir (weekfile t))))
-    (test-s )
+    (if (and (file-exists-p)
+             (not (test-s fp)))
+        (f-delete fp))
     (e fp)))
 
 (provide 'pen-discipleship-group)
