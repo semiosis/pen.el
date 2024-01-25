@@ -2161,3 +2161,5 @@ e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 # But instead I can just load the new one then reload the builtin one
 
 e ia ctable
+
+e ia chezscheme
