@@ -17,7 +17,12 @@
 ;; Unsure why.
 ;; But the problem it solves needs solving.
 ;; But, sadly, it doesn't solve it.
+;; Frustratingly, this breaks the messages entirely.
+;; Also, it doesn't even succeed.
 (add-hook 'kill-buffer-query-functions
           (lambda () (not-modified) t))
+
+;; (remove-hook 'kill-buffer-query-functions
+;;           (lambda () (not-modified) t))
 
 (provide 'pen-buffers)
