@@ -1266,9 +1266,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
        (let ((book (fz-bible-book "Bible Search (book): "))
              (query (pen-ask (pen-selection) "Bible Search: ")))
          (list query nil book))
-     (list (pen-ask (pen-selection) "Bible Search: ") nil nil)))
-  ;; lucene or phrase
-
+     (list (pen-ask (pen-selection) "Bible Search: ") nil nil))
+   nil nil
+   (let* ((tup (ignore-errors (bible-mode-get-ref-tuple))))
+     (concat (car tup) " " (str (cadr tup)))))
   (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range))
 
 (defun bible-search-mode-select-book ()
