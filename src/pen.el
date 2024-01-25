@@ -153,6 +153,7 @@ It's really meant for key bindings and which-key, so they should all be interact
       (require 'pen-avy)
       (require 'pen-ace-link)
       (require 'pen-links)))
+(require 'pen-w3m)
 (require 'pen-org-link-types)
 (require 'pen-ilink)
 (require 'pen-apl)
