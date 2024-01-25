@@ -10,6 +10,8 @@
 
 ;; This fixed the issue, but created another issue.
 ;; Now nothing saves -- actually, with further modifications it works properly.
+;; I had to conditionally apply mark-buffer-unmodified to the specified buffer.
+;; Now save works
 (defun kill-buffer-around-advice (proc &optional buffer-or-name)
   (let ((res
          (progn
