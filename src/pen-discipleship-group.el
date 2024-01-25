@@ -126,7 +126,7 @@
   (interactive)
   (let* ((dir (d-group-weekly-journal-dir))
          (fp (f-join dir (weekfile t))))
-    (if (and (file-exists-p)
+    (if (and (file-exists-p fp)
              (not (test-s fp)))
         (f-delete fp))
     (e fp)))
