@@ -5,7 +5,20 @@
 
 ;; If this asks if I really want to kill the buffer then the test fails
 (defun test-temp-buffer-kill-without-asking ()
-  (with-temp-buffer (org-mode) (insert "hi") (buffer-string)))
+  (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (not-modified) (kill-buffer)))
+
+;; nadvice - proc is the original function, passed in. do not modify
+(defun kill-buffer-around-advice (proc &rest args)
+  (let ((res
+         (progn
+           (mark-buffer-unmodified)
+           (apply proc args))))
+    res))
+(advice-add 'kill-buffer :around #'kill-buffer-around-advice)
+(advice-remove 'kill-buffer #'kill-buffer-around-advice)
+
+(advice-add 'kill-buffer :around #'advice-auto-yes)
+(advice-remove 'kill-buffer #'advice-auto-yes)
 
 (setq kill-buffer-query-functions
       '(pen-dont-kill-scratch))
