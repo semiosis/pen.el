@@ -2164,3 +2164,5 @@ e ia sideline sideline-lsp sideline-flymake sideline-flycheck sideline-blame
 e ia ctable
 
 e ia chezscheme
+
+install-babashka
