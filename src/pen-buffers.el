@@ -3,6 +3,9 @@
 ;; (setq kill-buffer-query-functions
 ;;       '(pen-dont-kill-scratch))
 
+(defun test-temp-buffer-kill-without-asking ()
+  (with-temp-buffer (org-mode) (insert "hi") (buffer-string)))
+
 (setq kill-buffer-query-functions
       '(pen-dont-kill-scratch))
 
