@@ -6,7 +6,6 @@
 (setq kill-buffer-query-functions
       '(pen-dont-kill-scratch))
 
-
 ;; Do it like this so that the minibuffer messages do not break.
 ;; shut-up and shut-up-c did not work.
 (defun mark-buffer-unmodified ()
