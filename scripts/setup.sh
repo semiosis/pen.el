@@ -2166,3 +2166,6 @@ e ia ctable
 e ia chezscheme
 
 install-babashka
+
+# This lags a bit
+e ia focus
