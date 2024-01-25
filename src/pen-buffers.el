@@ -23,7 +23,7 @@
 ;; Sadly, this hasn't solved the issue.
 (add-hook 'kill-buffer-query-functions 'mark-buffer-unmodified)
 
-;; Test/Debug the problem by opening hyperdrive menu bar and clicking on drives->nickname:USHIN->Describe
+;; Test/Debug the problem by opening hyperdrive menu bar and clicking on Drives->nickname:USHIN->Describe
 
 ;; (remove-hook 'kill-buffer-query-functions
 ;;           (lambda () (not-modified) t))
