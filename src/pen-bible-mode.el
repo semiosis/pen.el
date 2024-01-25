@@ -240,7 +240,7 @@
 ;; (advice-add 'bible-mode--exec-diatheke :around #'bible-mode-fun-around-advice)
 ;; (advice-remove 'bible-mode--exec-diatheke #'bible-mode-fun-around-advice)
 
-(defun bible-mode--open-search(query searchmode &optional module range)
+(defun bible-mode--open-search(query searchmode &optional module range search-on-search)
   "Opens a search buffer of QUERY using SEARCHMODE."
   (let
       (
@@ -250,6 +250,10 @@
     (setq bible-mode-book-module (or module default-bible-mode-book-module))
     ;; (lo module)
     (bible-mode--display-search query searchmode bible-mode-book-module range)
+    (if search-on-search
+        (progn
+          (goto-char (point-min))
+          (search-forward search-on-search nil t)))
     (pop-to-buffer buf nil t)))
 
 (defun bible-mode--exec-diatheke(query &optional filter format searchtype module range)
@@ -1262,15 +1266,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-search-phrase (query &optional module range search-on-search)
   (interactive
-   (if (>= (prefix-numeric-value current-prefix-arg) 4)
-       (let ((book (fz-bible-book "Bible Search (book): "))
-             (query (pen-ask (pen-selection) "Bible Search: ")))
-         (list query nil book))
-     (list (pen-ask (pen-selection) "Bible Search: ") nil nil))
-   nil nil
-   (let* ((tup (ignore-errors (bible-mode-get-ref-tuple))))
-     (concat (car tup) " " (str (cadr tup)))))
-  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range))
+   (let ((current-book-and-chap
+          (ignore-errors
+            (let* ((tup (bible-mode-get-ref-tuple)))
+              (concat (car tup) " " (str (cadr tup)))))))
+     (if (>= (prefix-numeric-value current-prefix-arg) 4)
+         (let ((book (fz-bible-book "Bible Search (book): "))
+               (query (pen-ask (pen-selection) "Bible Search: ")))
+           (list query nil book search-on-search))
+       (list (pen-ask (pen-selection) "Bible Search: ") nil nil search-on-search))))
+  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range
+                           (tv search-on-search)))
 
 (defun bible-search-mode-select-book ()
   (interactive)
