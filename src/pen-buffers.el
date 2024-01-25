@@ -7,6 +7,7 @@
       '(pen-dont-kill-scratch))
 
 ;; Frustratingly, this makes the 'File saved' message disappear quickly.
+;; Unsure why.
 (add-hook 'kill-buffer-query-functions
           (lambda () (not-modified) t))
 
