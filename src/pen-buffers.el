@@ -8,16 +8,17 @@
   (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (not-modified) (kill-buffer)))
 
 ;; j:hyperdrive-describe-hyperdrive
-(with-temp-buffer
-  (require 'org)
-  (org-mode)
-  (insert "\n|-\n| Key | Value |\n|-\n")
-  (cl-loop for (key . value) in metadata
-           do (insert (format "| %s | %s |\n" key value)))
-  (insert "|-\n")
-  (forward-line -1)
-  (org-table-align)
-  (buffer-string))
+(defun test-temp-buffer-kill-without-asking-hyperdrive ()
+  (with-temp-buffer
+    (require 'org)
+    (org-mode)
+    (insert "\n|-\n| Key | Value |\n|-\n")
+    (cl-loop for (key . value) in metadata
+             do (insert (format "| %s | %s |\n" key value)))
+    (insert "|-\n")
+    (forward-line -1)
+    (org-table-align)
+    (buffer-string)))
 
 ;; This fixed the issue, but only for the org-mode test
 ;; The problem still exists with the Hyperdrive menu
