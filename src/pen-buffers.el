@@ -9,7 +9,7 @@
 ;; j:hyperdrive-describe-hyperdrive
 
 ;; This fixed the issue, but created another issue. Now nothing saves
-(defun kill-buffer-around-advice (proc buffer-or-name)
+(defun kill-buffer-around-advice (proc &optional buffer-or-name)
   (let ((res
          (progn
            (if buffer-or-name
