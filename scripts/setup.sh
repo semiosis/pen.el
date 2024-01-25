@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p ~/source/gist
+
 mcd () {
     last_arg="${@: -1}"
     mkdir -p "$@" && cd "$last_arg"
