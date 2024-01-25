@@ -8,6 +8,7 @@
 
 ;; Frustratingly, this makes the 'File saved' message disappear quickly.
 ;; Unsure why.
+;; But the problem it solves needs solving.
 (add-hook 'kill-buffer-query-functions
           (lambda () (not-modified) t))
 
