@@ -1828,5 +1828,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
     (w3m (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse))))
 
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
+(define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
 
 (provide 'pen-bible-mode)
