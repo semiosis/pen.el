@@ -221,6 +221,9 @@ buffer."
 (defun test-f (filename)
   (file-exists-p (umn filename)))
 
+(defun test-s (filename)
+  (not (denote--file-empty-p (umn filename))))
+
 (defun pen-switch-to-buffer-for-pen-e (ret)
   (if (bufferp ret)
       (switch-to-buffer ret)))

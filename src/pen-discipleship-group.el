@@ -126,6 +126,7 @@
   (interactive)
   (let* ((dir (d-group-weekly-journal-dir))
          (fp (f-join dir (weekfile t))))
+    (test-s )
     (e fp)))
 
 (provide 'pen-discipleship-group)
