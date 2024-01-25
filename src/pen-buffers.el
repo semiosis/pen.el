@@ -5,7 +5,7 @@
 
 ;; If this asks if I really want to kill the buffer then the test fails
 (defun test-temp-buffer-kill-without-asking ()
-  (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (not-modified) (kill-buffer)))
+  (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (kill-buffer)))
 
 ;; j:hyperdrive-describe-hyperdrive
 (defun test-temp-buffer-kill-without-asking-hyperdrive ()
@@ -13,8 +13,8 @@
     (require 'org)
     (org-mode)
     (insert "\n|-\n| Key | Value |\n|-\n")
-    (cl-loop for (key . value) in metadata
-             do (insert (format "| %s | %s |\n" key value)))
+    ;; (cl-loop for (key . value) in metadata
+    ;;          do (insert (format "| %s | %s |\n" key value)))
     (insert "|-\n")
     (forward-line -1)
     (org-table-align)
