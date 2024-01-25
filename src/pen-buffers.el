@@ -6,11 +6,18 @@
 (setq kill-buffer-query-functions
       '(pen-dont-kill-scratch))
 
+
+;; Do it like this so that the minibuffer messages do not break.
+;; shut-up and shut-up-c did not work.
+(defun mark-buffer-unmodified ()
+  (cl-letf (((symbol-function 'files--message)
+             'ignore-truthy))
+    (not-modified))
+  t)
+
 (setq kill-buffer-query-functions
       '(
-        (lambda nil
-          (not-modified)
-          t)
+        mark-buffer-unmodified
         pen-dont-kill-scratch))
 
 ;; Frustratingly, this makes the 'File saved' message disappear quickly.
