@@ -1819,6 +1819,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
    (pen-snc (concat (cmd "nbd" "ebible" "-m" bible-mode-book-module (bible-mode-copy-link)) " | cat"))
    (bible-verse-margin-status)))
 
+(defun bible-open-interlinear ()
+  (interactive)
+  (let* ((tup (bible-mode-get-ref-tuple))
+         (book-lc (downcase (car tup)))
+         (chap (str (cadr tup)))
+         (verse (str (caddr tup))))
+    (chrome
+     (format "https://biblehub.com/interlinear/%book/%s-%s.htm" chap verse))))
+
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 
 (provide 'pen-bible-mode)
