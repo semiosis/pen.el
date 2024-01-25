@@ -2182,7 +2182,7 @@ command! -nargs=+ MapToggleBoth call MapToggleBoth(<f-args>)
 
 command! ForceQuit silent! call ForceQuit()
 
-" source ~/.vim/inkpot.vim
+colorscheme inkpot
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
 source ~/.vim/pen.vim
@@ -2440,125 +2440,9 @@ xnoremap <leader>um :!mnm<CR>
 nnoremap <leader>uu :%!umn<CR>
 xnoremap <leader>uu :!umn<CR>
 
-
-
+let g:comment_syntax_on = 1
+let g:syntax_on = 1
 
 map <F12> ;call ToggleCommentSyntax()<CR>
-" map <S-F12> ;call ToggleCommentSyntax()<CR>
-
-let g:comment_syntax_on = 1
-if !exists("*ToggleCommentSyntax")
-    function! ToggleCommentSyntax()
-        if g:comment_syntax_on == 1
-            if has("gui_running")
-                hi Comment        gui=NONE   guifg=#111111   guibg=NONE
-            else
-                exec "hi Comment        cterm=NONE   ctermfg=" . "233" . " ctermbg=NONE"
-            endif
-            let g:comment_syntax_on = 0
-            echom "Hiding comments"
-        else
-            if has("gui_running")
-                hi Comment        gui=NONE   guifg=#ffff55   guibg=NONE
-            else
-                exec "hi Comment        cterm=NONE   ctermfg=227                ctermbg=" . "NONE"
-                "exec "hi Comment        cterm=NONE   ctermfg=000              ctermbg=238"
-                " exec "hi Comment        cterm=NONE   ctermfg=NONE              ctermbg=NONE"
-            endif
-            echom "Revealing comments"
-            let g:comment_syntax_on = 1
-        endif
-    endfunction
-endif
-
-
-let g:syntax_on = 1
 map <F10> ;call ToggleSyntax()<CR>
-if !exists("*ToggleSyntax")
-    function! ToggleSyntax()
-        if g:syntax_on == 1
-            syntax off
-            let g:syntax_on = 0
-            echom "Syntax off"
-        else
-            syntax enable
-            let g:syntax_on = 1
-            echom "Syntax on"
-        endif
-    endfunction
-
-    command! ToggleSyntax silent call ToggleSyntax()
-endif
-
-" For use in vim-easymotion
-let g:diff_syntax_on = 1
-if !exists("*ToggleDiffSyntax")
-    function! DiffSyntaxStatus()
-        if g:diff_syntax_on == 1
-            echom "Diff Syntax on show whitespace"
-        elseif g:diff_syntax_on == 2
-            echom "Diff Syntax on ingore whitespace"
-        else
-            echom "Diff Syntax off"
-        endif
-    endfunction
-
-    function! ToggleDiffSyntax()
-        " too problematic
-        exec "hi String         cterm=NONE ctermfg=NONE ctermbg=NONE"
-        if g:diff_syntax_on == 0
-            set diffopt-=iwhite
-            let g:diff_syntax_on = 3
-            set hl&
-        elseif g:diff_syntax_on == 3
-            let g:diff_syntax_on = 1
-            set hl+=A:none,C:none,T:none
-        elseif g:diff_syntax_on == 1
-            set diffopt+=iwhite
-            let g:diff_syntax_on = 2
-            set hl&
-        elseif g:diff_syntax_on == 2
-            let g:diff_syntax_on = 0
-            set hl+=A:none,C:none,T:none
-        else
-            " same as 0
-            set diffopt-=iwhite
-            let g:diff_syntax_on = 1
-            set hl&
-        endif
-    endfunction
-
-    command! ToggleDiffSyntax silent! call ToggleDiffSyntax() \| call DiffSyntaxStatus()
-endif
-
-
-" changing the normal highlighting was disabled so it could be colorised
-" with nvim
-let g:syntax_brightness = 1
 map <F11> ;call ToggleBrightness()<CR>
-if !exists("*ToggleSyntaxBrightness")
-    function! ToggleBrightness()
-        if g:syntax_brightness == 1
-            hi Normal       ctermfg=103
-            exec "hi String         cterm=NONE   ctermbg=" . <SID>X(81)
-            "exec "hi String         cterm=NONE   ctermfg=181                ctermbg=" . <SID>X(81)
-            let g:syntax_brightness = 2
-            echom "Brighter text"
-        elseif g:syntax_brightness == 2
-            hi Normal       ctermfg=173
-            exec "hi String         cterm=NONE   ctermbg=" . <SID>X(81)
-            "exec "hi String         cterm=NONE   ctermfg=181                ctermbg=" . <SID>X(81)
-            let g:syntax_brightness = 0
-            echom "Brighter text"
-        else
-            hi Normal       ctermfg=60
-            exec "hi String         cterm=NONE   ctermbg=234"
-            "exec "hi String         cterm=NONE   ctermfg=138                ctermbg=234"
-            let g:syntax_brightness = 1
-            echom "Darker text"
-        endif
-    endfunction
-
-    command! ToggleBrightness silent call ToggleBrightness()
-endif
-
