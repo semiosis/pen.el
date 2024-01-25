@@ -1273,8 +1273,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
      (if (>= (prefix-numeric-value current-prefix-arg) 4)
          (let ((book (fz-bible-book "Bible Search (book): "))
                (query (pen-ask (pen-selection) "Bible Search: ")))
-           (list query nil book search-on-search))
-       (list (pen-ask (pen-selection) "Bible Search: ") nil nil search-on-search))))
+           (list query nil book current-book-and-chap))
+       (list (pen-ask (pen-selection) "Bible Search: ") nil nil current-book-and-chap))))
   (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range
                            (tv search-on-search)))
 
