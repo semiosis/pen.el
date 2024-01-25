@@ -2361,6 +2361,7 @@ May use to generate code from comments."
 (require 'pen-quit)
 (require 'pen-melee)
 (require 'pen-scratch)
+(require 'pen-buffers)
 (require 'pen-subr)
 (require 'pen-transducers)
 (require 'pen-wiki)
