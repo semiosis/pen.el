@@ -240,7 +240,7 @@
 ;; (advice-add 'bible-mode--exec-diatheke :around #'bible-mode-fun-around-advice)
 ;; (advice-remove 'bible-mode--exec-diatheke #'bible-mode-fun-around-advice)
 
-(defun bible-mode--open-search(query searchmode &optional module range search-on-search)
+(defun bible-mode--open-search (query searchmode &optional module range search-on-search)
   "Opens a search buffer of QUERY using SEARCHMODE."
   (let
       (
