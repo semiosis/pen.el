@@ -940,7 +940,8 @@ quicklisp-install closer-mop
 # cp -a "$REPOS/roswell/lisp/helper.el" /root/.emacs.d/roswell-helper.el
 
 mkdir -p /root/.vim
-cp -a /root/repos/pen.el/config/inkpot.vim /root/.vim
+mkdir -p /root/.vim/colors
+cp -a /root/repos/pen.el/config/inkpot.vim /root/.vim/colors
 cp -a /root/repos/pen.el/config/paste-replace.vim /root/.vim
 cp -a /root/repos/pen.el/config/utils.vim /root/.vim
 cp -a /root/repos/pen.el/config/pen.vim /root/.vim
