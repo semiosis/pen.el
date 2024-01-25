@@ -8,7 +8,8 @@
   (with-temp-buffer (org-mode) (insert "hi") (buffer-string) (kill-buffer)))
 ;; j:hyperdrive-describe-hyperdrive
 
-;; This fixed the issue, but created another issue. Now nothing saves
+;; This fixed the issue, but created another issue.
+;; Now nothing saves -- actually, with further modifications it works properly.
 (defun kill-buffer-around-advice (proc &optional buffer-or-name)
   (let ((res
          (progn
