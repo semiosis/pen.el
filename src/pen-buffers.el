@@ -3,6 +3,7 @@
 ;; (setq kill-buffer-query-functions
 ;;       '(pen-dont-kill-scratch))
 
+;; If this asks if I really want to kill the buffer then the test fails
 (defun test-temp-buffer-kill-without-asking ()
   (with-temp-buffer (org-mode) (insert "hi") (buffer-string)))
 
