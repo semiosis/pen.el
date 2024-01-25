@@ -1267,12 +1267,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-search-phrase (query &optional module range search-on-search)
   (interactive
    (let ((current-book-and-chap
-          (ignore-errors
-            (let* ((tup (bible-mode-get-ref-tuple))
-                   (book (car tup))
-                   (chap (str (car cadr)))
-                   (re (concat "\\(" book " " chap ":\\|" book "\\)")))
-              re))))
+          (ignore (let* ((tup (bible-mode-get-ref-tuple))
+                         (book (car tup))
+                         (chap (str (cadr tup)))
+                         (re (concat "\\(" book " " chap ":\\|" book "\\)")))
+                    re))))
      (if (>= (prefix-numeric-value current-prefix-arg) 4)
          (let ((book (fz-bible-book "Bible Search (book): "))
                (query (pen-ask (pen-selection) "Bible Search: ")))
