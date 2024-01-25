@@ -723,6 +723,9 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'shr-link fg)
     (set-face-background 'shr-link bg)
 
+    (require 'focus)
+    (set-face-foreground 'focus-unfocused "#303030")
+
     (require 'org-faces)
     (set-face-foreground 'org-link fg)
     (set-face-background 'org-link bg)
