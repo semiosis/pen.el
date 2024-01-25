@@ -20,12 +20,7 @@
         mark-buffer-unmodified
         pen-dont-kill-scratch))
 
-;; Frustratingly, this makes the 'File saved' message disappear quickly.
-;; Unsure why.
-;; But the problem it solves needs solving.
-;; But, sadly, it doesn't solve it.
-;; Frustratingly, this breaks the messages entirely.
-;; Also, it doesn't even succeed.
+;; Sadly, this hasn't solved the issue.
 (add-hook 'kill-buffer-query-functions
           (lambda () (not-modified) t))
 
