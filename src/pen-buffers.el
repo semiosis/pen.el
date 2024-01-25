@@ -21,8 +21,7 @@
         pen-dont-kill-scratch))
 
 ;; Sadly, this hasn't solved the issue.
-(add-hook 'kill-buffer-query-functions
-          (lambda () (not-modified) t))
+(add-hook 'kill-buffer-query-functions 'mark-buffer-unmodified)
 
 ;; (remove-hook 'kill-buffer-query-functions
 ;;           (lambda () (not-modified) t))
