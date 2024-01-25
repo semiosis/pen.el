@@ -1260,7 +1260,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   (bible-mode--open-search query "lucene" (or module default-bible-mode-book-module)))
 
-(defun bible-search-phrase (query &optional module range)
+(defun bible-search-phrase (query &optional module range search-on-search)
   (interactive
    (if (>= (prefix-numeric-value current-prefix-arg) 4)
        (let ((book (fz-bible-book "Bible Search (book): "))
