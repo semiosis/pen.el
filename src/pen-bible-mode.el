@@ -458,6 +458,7 @@
 (defun-bible-open-version "KJV" kjv)
 (defun-bible-open-version "engbsb2020eb" bsb)
 (defun-bible-open-version "RLT" rlt)
+(defun-bible-open-version "ESV" esv)
 
 ;; TODO But I also need to grep for all of these, when looking for verse references
 ;; https://www.logos.com/bible-book-abbreviations
