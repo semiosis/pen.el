@@ -253,7 +253,7 @@
     (if search-on-search
         (progn
           (goto-char (point-min))
-          (search-forward search-on-search nil t)))
+          (search-forward-regexp search-on-search nil t)))
     (pop-to-buffer buf nil t)))
 
 (defun bible-mode--exec-diatheke(query &optional filter format searchtype module range)
