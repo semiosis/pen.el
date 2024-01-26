@@ -5,9 +5,9 @@
 
 
 ;; This is interesting! - the collection is a filter, actually
-;; It appears as though the problem is that flag is always 't
-;; Is not being populated for some reason.
-;; But the lambda *is* being called.
+;; It appears as though the problem is that when
+;; str is not empty, flag is 'metadata - always.
+;; flag is 't only if str is empty.
 (defun dogs-filter (seq)
   (lambda (str pred flag)
     (pcase flag
