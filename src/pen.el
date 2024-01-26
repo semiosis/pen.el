@@ -140,6 +140,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'asoc)
 (require 'transducer)
 (require 'handle)
+(require 'timeout)
 (require 'pen-company-lsp)
 (require 'pen-nlp)
 (require 'pen-which-key)
