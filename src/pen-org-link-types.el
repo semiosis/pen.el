@@ -109,6 +109,11 @@ PATH is the sexp to evaluate, as a string."
             ',funsym
             ,@args)
           (+ 2 min-arity) nil))
+      ;; call-interactively doesn't specify the arguments,
+      ;; but runs the interactive argument getters.
+      ;; funcall-interactively asks you to specify
+      ;; the arguments, and doesn't call the getters,
+      ;; but marks the call as interactive
       (call-interactively funsym))))
 
 (org-add-link-type "ci" 'call-interactively-fun-name)
