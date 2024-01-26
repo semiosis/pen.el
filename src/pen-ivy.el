@@ -302,7 +302,7 @@ prompt additionally for EXTRA-AG-ARGS."
     ;; And when ivy-inhibit-action is t, res is not the tuple.
     ;; I can't be bothered digging further and changing behaviour.
     (setq pen-ivy-result-tuple res)
-    
+
     (if ivy-inhibit-action
         res
       current)))
