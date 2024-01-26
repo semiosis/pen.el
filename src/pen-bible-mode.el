@@ -1835,7 +1835,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
-;; j:$EMACSD/pen.el/src/pen-completing-read.el
+;; e:$EMACSD/pen.el/src/pen-completing-read.el
 
 (defun bible-fz-chapter-titles-go ()
   (interactive)
