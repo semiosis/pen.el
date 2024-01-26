@@ -1836,8 +1836,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-chapter-titles ()
   (interactive)
-  (fz )
+  (fz (str2lines (e/cat bible-chapter-titles-fp))))
 
-  )
+(defun bible-passage-outlines ()
+  (interactive)
+  (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
 (provide 'pen-bible-mode)
