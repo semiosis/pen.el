@@ -1775,7 +1775,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "F") 'bible-mode-fast-toggle)
 
-
 (defdir bible-chapter-titles-fp (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
 (defdir bible-passage-outlines-fp (umn "$PEN/documents/notes/ws/peniel/Bible-outlines.txt"))
 
