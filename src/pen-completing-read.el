@@ -36,13 +36,14 @@
    "Select a breed: "
    (dogs-filter coll)))
 
-(fz
- '(("Affenpinscher" . "Loyal and amusing")
-   ("Akita" . "Ancient Japanese")
-   ("Bulldog" . "Kind but courageous")
-   ("Caucasian Shepherd" . "Serious guarding breed")
-   ("Miniature Schnauzer" . "Long-lived and low-shedding"))
- nil nil
- "Select a breed: ")
+(comment
+ (fz
+  '(("Affenpinscher" . "Loyal and amusing")
+    ("Akita" . "Ancient Japanese")
+    ("Bulldog" . "Kind but courageous")
+    ("Caucasian Shepherd" . "Serious guarding breed")
+    ("Miniature Schnauzer" . "Long-lived and low-shedding"))
+  nil nil
+  "Select a breed: "))
 
 (provide 'pen-completing-read)
