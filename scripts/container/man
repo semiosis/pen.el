@@ -66,21 +66,25 @@ else
     export PAGER=sps-v
 fi
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
 if test "$#" -gt 0; then
     last_arg="${@: -1}"
 
-    if test "$checktut" = y && tut -q "$last_arg"; then
-        if yn "tut $last_arg? (y) or man $last_arg? (n)"; then
-            tut "$last_arg"
-            exit "$?"
+    if is_tty; then
+        if test "$checktut" = y && tut -q "$last_arg"; then
+            if yn "tut $last_arg? (y) or man $last_arg? (n)"; then
+                tut "$last_arg"
+                exit "$?"
+            fi
         fi
-    fi
 
-    if test "$checkinfo" = y && info -q "$last_arg"; then
-        echo "Info for ${last_arg} exists." | hls blue 1>&2
-        if yn "info $last_arg? (y) or man $last_arg? (n)"; then
-            info "$@"
-            exit "$?"
+        if test "$checkinfo" = y && info -q "$last_arg"; then
+            echo "Info for ${last_arg} exists." | hls blue 1>&2
+            if yn "info $last_arg? (y) or man $last_arg? (n)"; then
+                info "$@"
+                exit "$?"
+            fi
         fi
     fi
 
