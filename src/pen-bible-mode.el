@@ -1777,6 +1777,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 
 (defset bible-chapter-titles-fp (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+(defset bible-passage-outlines-fp (umn "$PEN/documents/notes/ws/peniel/Bible-outlines.txt"))
 
 ;; (bible-get-chapter-title "Genesis" "30")
 ;; (bible-get-chapter-title "Leviticus" "6")
