@@ -310,7 +310,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
                              (mapcar 'eval pen-directories))
                  nil nil "dired-open-pen-defdir:")))
     (if dir
-        (dired dir))))
+        (dired (eval (car dir))))))
 
 (defun string-empty-or-nil-p (s)
   (or (not s)
