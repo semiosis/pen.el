@@ -100,12 +100,14 @@ PATH is the sexp to evaluate, as a string."
          (max-arity (cdr (func-arity funsym))))
 
     ;; This works for functions with different numbers of arguments
-    (eval
-     (-minsize-list
-      `(funcall-interactively
-        ',(intern funname)
-        ,@args)
-      (+ 2 min-arity) nil))))
+    (if args
+        (eval
+         (-minsize-list
+          `(funcall-interactively
+            ',funsym
+            ,@args)
+          (+ 2 min-arity) nil))
+      (call-interactively funsym))))
 
 (org-add-link-type "ci" 'call-interactively-fun-name)
 (org-add-link-type "ic" 'call-interactively-fun-name)
