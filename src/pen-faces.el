@@ -1555,8 +1555,12 @@ Also see option `magit-blame-styles'."
                                org-done
                                hc-tab
                                company-tooltip
+
+                               markdown-markup-face
+
                                org-block-begin-line
                                org-block-end-line
+
                                font-lock-comment-face
                                font-lock-comment-face
 
