@@ -91,7 +91,7 @@
    ("wdired"      "↯δ")))
 
 ;; (cyphejor-mode 1)
-;; It's laggy.
+;; It's laggy. It even massively slows down pen-sn
 ;; e:$HOME/dump/tmp/scratchPcbwPc.txt
 (cyphejor-mode -1)
 
