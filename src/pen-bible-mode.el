@@ -1852,7 +1852,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
-
 (defun test-throttle-fun ()
   (vime "strftime(\"%c\")"))
 
