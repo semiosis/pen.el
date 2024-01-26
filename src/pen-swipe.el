@@ -25,6 +25,13 @@
 ;; This makes swiper very slow
 ;; j:consult--fontify-all
 
+(defun around-advice-ignore-truthy (proc &rest args)
+  (let ((res (ignore-truthy
+              (apply proc args))))
+    res))
+(advice-add 'consult--fontify-all :around #'around-advice-ignore-truthy)
+;; (advice-remove 'consult--fontify-all #'around-advice-ignore-truthy)
+
 (defun stribb/isearch-region (&optional not-regexp no-recursive-edit)
   "If a region is active, make this the isearch default search pattern."
   (interactive "P\np")
