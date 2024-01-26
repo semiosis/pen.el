@@ -303,6 +303,13 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
      (defvar ,symbol ,documentation)
      (setq ,symbol ,value)))
 
+(defun dired-open-pen-defdir ()
+  (interactive)
+
+  (let ((dir (fz pen-directories nil nil dired-open-pen-defdir)))
+    (if dir
+        (dired dir))))
+
 (defun string-empty-or-nil-p (s)
   (or (not s)
       (string-empty-p s)))
