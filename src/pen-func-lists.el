@@ -93,7 +93,9 @@
                                   bible-mode-split-display
                                   bible-random-verse-ref
                                   bible-mode-fuzzy-search
-                                  bible-open-interlinear))
+                                  bible-open-interlinear
+                                  bible-fz-chapter-titles-go
+                                  bible-fz-passage-outlines-go))
 (defset ranger-mode-funcs '(open-main
                             ranger-hacky-fix
                             pen-sps-ranger))
