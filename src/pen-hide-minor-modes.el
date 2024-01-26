@@ -90,6 +90,9 @@
    ("text"        "ξ")
    ("wdired"      "↯δ")))
 
-(cyphejor-mode 1)
+;; (cyphejor-mode 1)
+;; It's laggy.
+;; e:$HOME/dump/tmp/scratchPcbwPc.txt
+(cyphejor-mode -1)
 
 (provide 'pen-hide-minor-modes)
