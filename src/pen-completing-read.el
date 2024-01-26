@@ -1,5 +1,7 @@
 (setq lexical-binding t)
 
+;; https://emacs.stackexchange.com/questions/74547/completing-read-search-also-in-annotations
+
 (defun dogs-filter (seq)
   (lambda (str pred flag)
     (pcase flag
