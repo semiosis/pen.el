@@ -33,6 +33,9 @@
                ("Caucasian Shepherd" . "Serious guarding breed")
                ("Miniature Schnauzer" . "Long-lived and low-shedding"))))
 
+  ;; completing-read takes different arguments.
+  ;; It doesn't take a 'filter' lambda.
+  ;; So I need to see what this person was doing.
   (completing-read
    "Select a breed: "
    (dogs-filter coll)))
