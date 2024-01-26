@@ -7,6 +7,7 @@
 ;; This is interesting! - the collection is a filter, actually
 ;; It appears as though the problem is the lambda's first arg str
 ;; Is not being populated for some reason.
+;; But the lambda *is* being called.
 (defun dogs-filter (seq)
   (lambda (str pred flag)
     (pcase flag
