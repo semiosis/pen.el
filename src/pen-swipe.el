@@ -26,9 +26,10 @@
 ;; j:consult--fontify-all
 
 (defun around-advice-ignore-truthy (proc &rest args)
-  (let ((res (ignore-truthy
-              (apply proc args))))
-    res))
+  ;; (let ((res (ignore-truthy
+  ;;             (apply proc args))))
+  ;;   res)
+  t)
 (advice-add 'consult--fontify-all :around #'around-advice-ignore-truthy)
 ;; (advice-remove 'consult--fontify-all #'around-advice-ignore-truthy)
 
