@@ -1311,6 +1311,8 @@ Also see option `magit-blame-styles'."
 
                       transient-argument
 
+                      ivy-completions-annotations
+
                       magit-blame-heading
 
                       tab-bar
