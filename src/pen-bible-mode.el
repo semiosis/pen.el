@@ -1775,6 +1775,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "F") 'bible-mode-fast-toggle)
 
+
+(defset bible-chapter-titles-fp (umn "$PEN/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+
 ;; (bible-get-chapter-title "Genesis" "30")
 ;; (bible-get-chapter-title "Leviticus" "6")
 ;; e:bible-get-chapter-title.els
@@ -1782,8 +1785,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive (list (read-string "Book: ")
                      (read-string "Chapter: ")))
   (with-temp-buffer
-    (ignore-errors (insert-file-contents
-                    "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+    (ignore-errors (insert-file-contents bible-chapter-titles-fp))
     (search-forward-regexp (concat "^" book))
     (search-forward-regexp (concat "\\b" (str chapter) "[,.]"))
     (beginning-of-line)
@@ -1830,5 +1832,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
 (define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
+
+(defun bible-chapter-titles ()
+  (interactive)
+  (fz )
+
+  )
 
 (provide 'pen-bible-mode)
