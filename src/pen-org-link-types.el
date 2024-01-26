@@ -101,10 +101,11 @@ PATH is the sexp to evaluate, as a string."
 
     ;; This works for functions with different numbers of arguments
     (eval
-     (-minsize-list `(funcall-interactively
-                      ',(intern funname)
-                      ,@args)
-                    (+ 2 min-arity) nil))))
+     (-minsize-list
+      `(funcall-interactively
+        ',(intern funname)
+        ,@args)
+      (+ 2 min-arity) nil))))
 
 (org-add-link-type "ci" 'call-interactively-fun-name)
 (org-add-link-type "ic" 'call-interactively-fun-name)
