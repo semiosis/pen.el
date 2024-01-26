@@ -1,5 +1,8 @@
 (require 'bible-mode)
 
+;; Using:
+;; $EMACSD/pen.el/src/pen-magit-margin.el
+
 (defsetface bible-verse-ref
             '((t
                :foreground "#5555ff"))
