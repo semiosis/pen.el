@@ -9,6 +9,7 @@
 
 (setq large-file-warning-threshold nil)
 
+(require 'pen-simple)
 (require 'pen-debug)
 
 ;; This may have been defined in init,
