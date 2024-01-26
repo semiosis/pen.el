@@ -306,7 +306,7 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 (defun dired-open-pen-defdir ()
   (interactive)
 
-  (let ((dir (fz pen-directories nil nil dired-open-pen-defdir)))
+  (let ((dir (fz pen-directories nil nil "dired-open-pen-defdir:")))
     (if dir
         (dired dir))))
 
