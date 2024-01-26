@@ -1,0 +1,66 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# expand glob
+
+# Use bash double star glob
+# glob -b "$HOME/var/smulliga/source/git/verygoodsoftwarenotvirus/blanket/example_packages/**/*_test.go"
+
+predicate="name"
+
+BASHGLOB=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -i) {
+        shopt -s nocaseglob
+        predicate="iname"
+        shift
+    }
+    ;;
+
+    -ext|x) {
+        shopt -s extglob
+        shift
+    }
+    ;;
+
+    -b) {
+        BASHGLOB=y
+        shift
+    }
+    ;;
+
+    # 'find' glob
+    -f) {
+        BASHGLOB=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+
+if test "$BASHGLOB" = "y"; then
+    # bash globs are not the best because of nullglob madness
+    shopt -s nullglob
+    # However bash globs have double star
+    shopt -s globstar
+
+    # echo "$1"
+
+    cmd="eval printf -- \"%s\\\\\\n\" $(cmd "$1")"
+
+    # echo "$cmd" 1>&2
+else
+    cmd="find . -maxdepth 1 -$predicate $(cmd "$1") | sed 's/^..//'"
+fi
+
+out="$(eval "$cmd")"
+
+if test -n "$out"; then
+    printf -- "%s\n" "$out"
+fi
+
+test -n "$out"
