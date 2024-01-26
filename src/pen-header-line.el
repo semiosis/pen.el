@@ -95,6 +95,8 @@
                        (ph--make-header)
                      "%b")))))))
 
+(timeout-throttle! 'ph--display-header 2.0)
+
 ;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
 ;; (path-headerline-mode -1)
