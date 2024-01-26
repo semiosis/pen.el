@@ -38,6 +38,7 @@
   ;; completing-read takes different arguments.
   ;; It doesn't take a 'filter' lambda.
   ;; So I need to see what this person was doing.
+  ;; (tv (dogs-filter coll))
   (completing-read
    "Select a breed: "
    (dogs-filter coll)))
