@@ -1,7 +1,8 @@
 (require 'bible-mode)
 
 ;; Using:
-;; $EMACSD/pen.el/src/pen-magit-margin.el
+;; e:$EMACSD/pen.el/src/pen-magit-margin.el
+;; e:$EMACSD/pen.el/src/pen-universal-sidecar.el
 
 (defsetface bible-verse-ref
             '((t
