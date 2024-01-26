@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+type="$@"
+
+scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"

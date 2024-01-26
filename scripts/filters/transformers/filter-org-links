@@ -1,6 +1,1 @@
-#!/bin/bash
-export TTY
-
-type="$@"
-
-scrape "\\[\\[${type}.*\\](\\[.*\\])?\\]"
+../../filter-org-links
