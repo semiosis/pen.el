@@ -1311,9 +1311,6 @@ Also see option `magit-blame-styles'."
 
                       transient-argument
 
-                      ;; I shouldn't highlight the entire annotation
-                      ;; ivy-completions-annotations
-
                       magit-blame-heading
 
                       tab-bar
@@ -1573,6 +1570,10 @@ Also see option `magit-blame-styles'."
 
                                company-preview
 
+                               ;; I shouldn't highlight the entire annotation
+                               ;; because custom highlighting is used often.
+                               ;; But perhaps I should use underline.
+                               ivy-completions-annotations
 
                                Man-underline
                                ;; lsp-ui-doc-background
