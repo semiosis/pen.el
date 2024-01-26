@@ -2445,6 +2445,7 @@ May use to generate code from comments."
 (require 'pen-custom-conf)
 (require 'pen-iterator)
 (require 'pen-icons)
+(require 'pen-timeout)
 
 (if (inside-docker-p)
     (progn
