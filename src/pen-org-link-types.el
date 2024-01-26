@@ -102,6 +102,8 @@ PATH is the sexp to evaluate, as a string."
     ;; This works for functions with different numbers of arguments
     (if args
         (eval
+         ;; TODO Alternatively, I can now prompt for them, instead of use nil
+         ;; j:elisp-complete-interactive-arg
          (-minsize-list
           `(funcall-interactively
             ',funsym
