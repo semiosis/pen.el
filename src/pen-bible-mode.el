@@ -1854,5 +1854,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun test-throttle-fun ()
   (vime "strftime(\"%c\")"))
+(timeout-throttle! 'test-throttle-fun 2.0)
 
 (provide 'pen-bible-mode)
