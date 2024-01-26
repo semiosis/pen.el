@@ -1867,9 +1867,10 @@ Also see option `magit-blame-styles'."
 - go backwards until the face changes
 - go forwards until the face changes"
   (interactive)
+  (forward-char)
   (let* ((reg
           (without-hl-line
-           (let* ((face (face-at-point))
+           (let* (;; (face (face-at-point))
                   (pt (point))
                   (start (pen-prev-prop-change 'face))
                   (end (pen-next-prop-change 'face)))
