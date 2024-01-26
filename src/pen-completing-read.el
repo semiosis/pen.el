@@ -2,6 +2,7 @@
 
 ;; https://emacs.stackexchange.com/questions/74547/completing-read-search-also-in-annotations
 
+;; This is interesting! - the collection is a filter, actually
 (defun dogs-filter (seq)
   (lambda (str pred flag)
     (pcase flag
