@@ -145,6 +145,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'pen-nlp)
 (require 'pen-which-key)
 (require 'pen-elisp)
+(require 'pen-profiler)
 (require 'pen-custom-values)
 (require 'pen-configure)
 (pen-require 'pen-selected)
