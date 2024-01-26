@@ -5,7 +5,7 @@
 
 
 ;; This is interesting! - the collection is a filter, actually
-;; It appears as though the problem is the lambda's first arg str
+;; It appears as though the problem is that flag is always 't
 ;; Is not being populated for some reason.
 ;; But the lambda *is* being called.
 (defun dogs-filter (seq)
