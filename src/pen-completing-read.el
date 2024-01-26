@@ -1,6 +1,8 @@
 (setq lexical-binding t)
 
 ;; https://emacs.stackexchange.com/questions/74547/completing-read-search-also-in-annotations
+;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Programmed-Completion.html
+
 
 ;; This is interesting! - the collection is a filter, actually
 (defun dogs-filter (seq)
