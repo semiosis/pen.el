@@ -3,6 +3,7 @@
 ;; Using:
 ;; e:$EMACSD/pen.el/src/pen-magit-margin.el
 ;; e:$EMACSD/pen.el/src/pen-universal-sidecar.el
+;; j:bible-mode-show-hover-docs
 
 (defsetface bible-verse-ref
             '((t
