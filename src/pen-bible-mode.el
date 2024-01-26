@@ -6,6 +6,8 @@
 ;; j:bible-mode-show-hover-docs
 ;; $EMACSD/pen.el/src/pen-sideline.el
 
+;; (sideline-mode)
+
 (defsetface bible-verse-ref
             '((t
                :foreground "#5555ff"))
