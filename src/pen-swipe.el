@@ -22,6 +22,9 @@
     (consult-line s)
     (setf visual-line-mode x)))
 
+;; This makes swiper very slow
+;; j:consult--fontify-all
+
 (defun stribb/isearch-region (&optional not-regexp no-recursive-edit)
   "If a region is active, make this the isearch default search pattern."
   (interactive "P\np")
