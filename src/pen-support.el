@@ -306,11 +306,11 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 (defun dired-open-pen-defdir ()
   (interactive)
 
-  (let ((dir (fz (-zip-lists pen-directories
-                             (mapcar 'eval pen-directories))
-                 nil nil "dired-open-pen-defdir:")))
+  (let ((dir (tv (fz (-zip-lists pen-directories
+                                 (mapcar 'eval pen-directories))
+                     nil nil "dired-open-pen-defdir:"))))
     (if dir
-        (dired (eval (car dir))))))
+        (dired (cdr dir)))))
 
 (defun string-empty-or-nil-p (s)
   (or (not s)
