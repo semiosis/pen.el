@@ -9,6 +9,7 @@
 
 (setq large-file-warning-threshold nil)
 
+;; Speed up pen-sn
 (require 'pen-simple)
 (require 'pen-debug)
 
