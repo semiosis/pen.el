@@ -84,6 +84,8 @@
                            hebrew-digraph-select
                            arabic-digraph-select
                            commandments-of-Jesus
+                           bible-fz-chapter-titles-go
+                           bible-fz-passage-outlines-go
                            prophesies-fortelling-Jesus-fulfilled))
 (defset bible-search-mode-funcs '(apropos-variable
                                   bible-mode-fast-toggle
