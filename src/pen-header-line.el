@@ -95,8 +95,8 @@
                        (ph--make-header)
                      "%b")))))))
 
-;; This function may run at most once every 2 seconds
-;; Hmm. I want it to not merely abort, but return the previous value.
+;; This function may run at most once every 2 seconds.
+;; It also memoizes, which is good.
 (timeout-throttle! 'ph-get-path-string 2.0)
 
 ;; How do I disable this for universal-sidecar-buffer-mode ?
