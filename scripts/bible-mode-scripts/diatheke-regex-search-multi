@@ -31,7 +31,7 @@ query="$(p "$query" | pen-fuzzify-regex -w)"
 
 test -n "$query" || exit 1
 
-for m in NASB KJV engbsb2020eb; do
+for m in NASB KJV engbsb2020eb ESV; do
     # diatheke's regex search is sometimes not accurate
     # I need to do a grep -P I think
     "diatheke" "-b" "$m" "-s" "regex" "-o" "w" "-f" "plain" "-k" "$query" |
