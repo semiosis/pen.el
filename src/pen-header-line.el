@@ -96,7 +96,7 @@
                      "%b")))))))
 
 ;; This function may run at most once every 2 seconds
-(timeout-throttle! 'ph--display-header 2.0)
+(timeout-throttle! 'ph-get-path-string 2.0)
 
 ;; How do I disable this for universal-sidecar-buffer-mode ?
 (path-headerline-mode t)
