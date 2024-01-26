@@ -1557,6 +1557,7 @@ Also see option `magit-blame-styles'."
                                company-tooltip
 
                                markdown-markup-face
+                               markdown-language-keyword-face
 
                                org-block-begin-line
                                org-block-end-line
