@@ -1311,7 +1311,8 @@ Also see option `magit-blame-styles'."
 
                       transient-argument
 
-                      ivy-completions-annotations
+                      ;; I shouldn't highlight the entire annotation
+                      ;; ivy-completions-annotations
 
                       magit-blame-heading
 
