@@ -16,6 +16,7 @@ It's holy because:
   - Lots of scripts for working with Bible-verses etc.
     - Extracting Bible verses from websites, documents, etc.
     - Canonicalising Bible-refs
+    - Formatting Bible passages in various ways.
     - etc.
 - I also have a policy of avoiding AI fiction and a strict ban on proprietary software
   - Both AI fiction and proprietary software are considered unholy.
