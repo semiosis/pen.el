@@ -53,7 +53,6 @@
 
 ;; (define-key global-map (kbd "H-W") 'hyperbole)
 
-
 ;; TODO Finish this. Low priority
 (defun pen-hyperbole-list-implicit-buttons (&optional arg)
   "Pretty print the attributes of a button or buttons.
