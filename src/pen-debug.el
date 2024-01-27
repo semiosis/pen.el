@@ -80,4 +80,6 @@
 
     (error (concat "Can't find " p " in loaded packages"))))
 
+(memoize 'locate-library)
+
 (provide 'pen-debug)
