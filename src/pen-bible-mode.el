@@ -1857,4 +1857,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
+(define-key bible-mode-map (kbd "r") 'universal-sidecar-refresh)
+
 (provide 'pen-bible-mode)
