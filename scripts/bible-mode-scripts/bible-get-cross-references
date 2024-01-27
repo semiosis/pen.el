@@ -56,7 +56,7 @@ sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` 
         ;;
 
         olol|org-links-oneliners) {
-            bible-canonicalise-cross-reference
+            bible-canonicalise-cross-reference | bible-show-verses -m "NASB" -pp
             # | sed 's/^\(.*\).*$/[[sh:tpop nem \1][\1]]/'
         }
         ;;
