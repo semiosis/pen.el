@@ -13,6 +13,10 @@ It's holy because:
 - Features:
   - Bible software comparable to Logos / e-Sword.
   - Integrates lots of Christian resources.
+  - Lots of scripts for working with Bible-verses etc.
+    - Extracting Bible verses from websites, documents, etc.
+    - Canonicalising Bible-refs
+    - etc.
 - I also have a policy of avoiding AI fiction and a strict ban on proprietary software
   - Both AI fiction and proprietary software are considered unholy.
 
