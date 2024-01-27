@@ -75,12 +75,13 @@ If FRAME is nil, use `selected-frame'."
          (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
       (insert crossrefs
-              (comment
-               (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-                 ;; This is inserted
-                 crossrefs
-                 ;; This runs after the above
-                 (comment (some-post-processing-of-org-text))))))))
+              ;; (comment
+              ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+              ;;    ;; This is inserted
+              ;;    crossrefs
+              ;;    ;; This runs after the above
+              ;;    (comment (some-post-processing-of-org-text))))
+              ))))
 
 ;; (add-to-list 'universal-sidecar-sections 'demo-section)
 ;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
