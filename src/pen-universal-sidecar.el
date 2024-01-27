@@ -67,7 +67,7 @@ If FRAME is nil, use `selected-frame'."
                                                 )
   (ignore-errors (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
                         (ref (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
-                        (title (concat "xrefs:" ref))
+                        (title (concat ref " cross-references:"))
                         (crossrefs
                          ;; (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
                          ;;      (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
