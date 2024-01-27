@@ -64,12 +64,13 @@ If FRAME is nil, use `selected-frame'."
                                   (
                                    :major-modes bible-mode
                                                 ;; :predicate (not (buffer-modified-p))
-                                   )
+                                                )
   (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
          (title (or title
                     (and file
                          (format "Demo: %s" file))
                     "Crossreferences"))
+         (crossrefs (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))))
          (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
       (insert (pps ref-tuple))
