@@ -1426,6 +1426,8 @@ Also see option `magit-blame-styles'."
                       ;; hc-tab
                       hc-trailing-whitespace
 
+                      magit-section-highlight
+
                       hl-line
 
                       magit-diff-file-heading-highlight
