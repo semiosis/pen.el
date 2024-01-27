@@ -70,8 +70,10 @@ If FRAME is nil, use `selected-frame'."
                     (and file
                          (format "Demo: %s" file))
                     "Crossreferences"))
-         (crossrefs (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\)/[[bible:\\1]]/'"
-                         (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))))
+         (crossrefs ""
+          ;; (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\)/[[bible:\\1]]/'"
+          ;;      (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
+                    )
          (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
       (insert crossrefs
