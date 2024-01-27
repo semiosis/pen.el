@@ -18,7 +18,7 @@ Redefining FUNCTION also cancels it."
    (list (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
   (advice-add function :before #'debug--implement-debug-on-entry
               '((depth . -100)))
-  (call-interactively 'function))
+  (call-interactively function))
 
 (defun cancel-debug-on-entry-form-binding (function)
   (interactive
