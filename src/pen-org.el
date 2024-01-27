@@ -500,9 +500,11 @@ This includes angle, plain, and bracket links."
                                   ((and (pred consp) face) face) ;anonymous
                                   ;; (_ 'org-link)
                                   (_
-                                   (if (lg-url-cache-exists link)
-                                       'eww-cached
-                                     'org-link))))
+ 'org-link
+                                   ;; (if (lg-url-cache-exists link)
+                                   ;;     'eww-cached
+                                   ;;   'org-link)
+                                   )))
                  (properties            ;for link's visible part
                   (list 'mouse-face (or (org-link-get-parameter type :mouse-face)
                                         'highlight)
