@@ -1860,7 +1860,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "r") 'universal-sidecar-refresh)
 
 (defun bible-mode-update-sidecar ()
-  )
+  ;; This sets the variable first
+  (bible-mode-get-link)
+  (universal-sidecar-refresh))
 
 (add-hook 'changed-line-hook #'bible-mode-update-sidecar)
 
