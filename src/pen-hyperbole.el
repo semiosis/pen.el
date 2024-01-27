@@ -4,7 +4,7 @@
 ;; (defun hkey-initialize-around-advice (proc &rest args)
 ;;                                         ; bypass function entirely and use my own
 ;;                                         ; proc
-;;   (let ((res (apply 'my-hkey-initialize args)))
+;;   (let ((res (apply 'pen-hkey-initialize args)))
 ;;     res))
 ;; (advice-add 'hkey-initialize :around #'hkey-initialize-around-advice)
 
@@ -26,7 +26,7 @@
 ;; (hkey-maybe-global-set-key (kbd "\C-c@") 'hycontrol-windows-grid t)
 
 
-(defun my-hui-act ()
+(defun pen-hui-act ()
   (interactive)
   (try
    ;; explicit
@@ -38,7 +38,7 @@
 
 ; <(say hi)>
 
-(hkey-global-set-key (kbd "H-W g") 'my-hui-act t)
+(hkey-global-set-key (kbd "H-W g") 'pen-hui-act t)
 (hkey-global-set-key (kbd "H-W E") 'hui:ebut-create)
 (hkey-global-set-key (kbd "H-W e") 'hui:ebut-act)
 (hkey-global-set-key (kbd "H-W i") 'hui:hbut-act)
@@ -49,13 +49,13 @@
 ;; (hkey-maybe-global-set-key (kbd "\C-c\\") 'hycontrol-enable-windows-mode)
 (hkey-maybe-global-set-key (kbd "H-W w") 'hui-search-web)
 (hkey-maybe-global-set-key (kbd "H-W ,") 'hui-select-goto-matching-delimiter t)
-;; (my-hkey-initialize)
+;; (pen-hkey-initialize)
 
 ;; (define-key global-map (kbd "H-W") 'hyperbole)
 
 
 ;; TODO Finish this. Low priority
-(defun my-hyperbole-list-implicit-buttons (&optional arg)
+(defun pen-hyperbole-list-implicit-buttons (&optional arg)
   "Pretty print the attributes of a button or buttons.
 Return number of buttons reported on or nil if none."
   (let* ((but (hbut:at-p))
