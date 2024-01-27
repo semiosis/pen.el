@@ -38,7 +38,7 @@ If FRAME is nil, use `selected-frame'."
 
 ;; redisplay-unhighlight-region-function
 
-(universal-sidecar-define-section demo-section (file title)
+(universal-sidecar-define-section quote-section (file title)
                                   (
                                    ;; :major-modes org-mode
                                    ;; :predicate (not (buffer-modified-p))
@@ -47,8 +47,9 @@ If FRAME is nil, use `selected-frame'."
                    (and file
                         (format "Demo: %s" file))
                    "Demo"))
+        (quote (seq-random-elt (str2lines (e/cat "$PEN/documents/quotes.txt"))))
         (cmdout (shell-command-to-string "pwd")))
-    (universal-sidecar-insert-section demo-section title
+    (universal-sidecar-insert-section quote-section title
       (insert cmdout)
 
       ;;;; This has problems currently, asking if I want to kill the temp buffer
@@ -91,12 +92,12 @@ If FRAME is nil, use `selected-frame'."
    ;; This runs after the above
    (comment (some-post-processing-of-org-text))))
 
-;; (add-to-list 'universal-sidecar-sections 'demo-section)
-;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
-(add-to-list 'universal-sidecar-sections '(demo-section :title "O Demo!"))
+;; (add-to-list 'universal-sidecar-sections 'quote-section)
+;; (add-to-list 'universal-sidecar-sections '(quote-section :file "definitions"))
+(add-to-list 'universal-sidecar-sections '(quote-section :title "Quote!"))
 (add-to-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
 (remove-from-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
-;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions" :title "Random Definition"))
+;; (add-to-list 'universal-sidecar-sections '(quote-section :file "definitions" :title "Random Definition"))
 
 ;; However, if we want the opposite behavior (don't show renames),
 ;; we'd configure it as shown below.
