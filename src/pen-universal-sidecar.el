@@ -97,7 +97,7 @@ If FRAME is nil, use `selected-frame'."
 ;; (add-to-list 'universal-sidecar-sections '(quote-section :file "definitions"))
 (add-to-list 'universal-sidecar-sections '(quote-section :title "Quote!"))
 (add-to-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
-(remove-from-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
+;; (remove-from-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
 ;; (add-to-list 'universal-sidecar-sections '(quote-section :file "definitions" :title "Random Definition"))
 
 ;; However, if we want the opposite behavior (don't show renames),
