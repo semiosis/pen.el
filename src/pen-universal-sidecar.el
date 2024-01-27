@@ -71,8 +71,7 @@ If FRAME is nil, use `selected-frame'."
                         (ref (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
                         (title (concat ref " cross-references:"))
                         (crossrefs
-                         (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1][\\1]]/'"
-                              ref))
+                         (snc "in-pen bible-get-cross-references -olol" ref))
                         (cmdout (shell-command-to-string "pwd")))
                    (universal-sidecar-insert-section bible-section title
                      (insert
