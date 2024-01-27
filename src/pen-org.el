@@ -805,6 +805,7 @@ decreases scheduled or deadline date by one day."
 (require 'org-ref)
 (require 'org-ref-prettify)
 
+;; For speed, open raw
 (defun org-id-find-id-in-file (id file &optional markerp)
   "Return the position of the entry ID in FILE.
 
@@ -819,15 +820,17 @@ optional argument MARKERP, return the position as a new marker."
    (t
     (let* ((visiting (find-buffer-visiting file))
            ;; For speed, open literally
-	       (buffer (or visiting (find-file-noselect file nil t))))
+	       (buffer (or visiting (find-file-noselect file nil t)))
+           ;; (buffer (or visiting (find-file-noselect file)))
+           )
       (unwind-protect
-	  (with-current-buffer buffer
-	    (let ((pos (org-find-entry-with-id id)))
-	      (cond
-	       ((null pos) nil)
-	       (markerp (move-marker (make-marker) pos buffer))
-	       (t (cons file pos)))))
-	;; Remove opened buffer in the process.
-	  (unless (or visiting markerp) (kill-buffer buffer)))))))
+	      (with-current-buffer buffer
+	        (let ((pos (org-find-entry-with-id id)))
+	          (cond
+	           ((null pos) nil)
+	           (markerp (move-marker (make-marker) pos buffer))
+	           (t (cons file pos)))))
+	    ;; Remove opened buffer in the process.
+	    (unless (or visiting markerp) (kill-buffer buffer)))))))
 
 (provide 'pen-org)
