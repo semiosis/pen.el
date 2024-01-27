@@ -2569,6 +2569,7 @@ May use to generate code from comments."
   (pen-load-config)
 
   ;; Not sure why this disappeared - i.e. having it inside e:pen-line-changed.el was not sufficient
+  ;; Maybe it disappears when there are errors
   (add-hook 'post-command-hook #'update-line-number))
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
