@@ -77,7 +77,7 @@
     :config
     (global-treesit-auto-mode)))
 
-;; Disable it. It's slow.
+;; Disable it. It makes universal sidecar slow, among other things.
 (global-treesit-auto-mode -1)
 
 (provide 'pen-tree-sitter)
