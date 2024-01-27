@@ -5,10 +5,10 @@ It's a free and holy OS made with emacs, debian linux and docker.
 It's free because it's libre and gratis.
 It's holy because:
 - It's designed to be used by Christians who wish to maintain holiness in their computing.
-  - reduce the cognitive dissonance when trying to remain focused on God while using a computer
+  - Reduce the cognitive dissonance when trying to remain focused on God while using a computer
     - free from distractions
   - Bible reading / study software based on Emacs and Xiphos.
-  - support all areas of their Christian faith.
+  - Support all areas of their Christian faith.
     - praying
     - praising
     - running churches
