@@ -1865,7 +1865,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode-get-link)
         (universal-sidecar-refresh)
 
-        (bible-mode-show-hover-docs))))
+        ;; (bible-mode-show-hover-docs)
+        )))
 
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-sidecar)
 
