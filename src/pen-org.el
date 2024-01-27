@@ -898,6 +898,7 @@ optional argument MARKERP, return the position as a new marker."
 ;; (advice-remove 'org-back-to-heading-or-point-min #'ignore-errors-around-advice)
 
 ;; This fixes a bug, which I could debug with the profiler
+;; But I don't care to fix it.
 (advice-add 'org-brain-entry-at-point-excludedp :around #'around-advice-ignore-truthy)
 
 (provide 'pen-org)
