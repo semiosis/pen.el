@@ -2426,6 +2426,7 @@ May use to generate code from comments."
 (require 'pen-ov-highlight)
 (require 'pen-racket)
 (require 'pen-denote)
+(require 'pen-hyperbole)
 (require 'pen-fun)
 (require 'pen-lsp-go)
 (require 'pen-lsp-r)
