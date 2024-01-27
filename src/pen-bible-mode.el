@@ -1857,8 +1857,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
-(define-key bible-mode-map (kbd "r") 'universal-sidecar-refresh)
-
 (defun bible-mode-update-sidecar ()
   (interactive)
   (if (eq major-mode 'bible-mode)
@@ -1866,6 +1864,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         ;; This sets the variable first
         (bible-mode-get-link)
         (universal-sidecar-refresh))))
+
+(define-key bible-mode-map (kbd "r") 'bible-mode-update-sidecar)
 
 (add-hook 'changed-line-hook #'bible-mode-update-sidecar)
 
