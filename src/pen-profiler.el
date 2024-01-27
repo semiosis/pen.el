@@ -26,6 +26,6 @@ Redefining FUNCTION also cancels it."
 (define-key pen-map (kbd "s-P R") 'profiler-report)
 
 (define-key pen-map (kbd "s-D D") 'debug-on-entry)
-(define-key pen-map (kbd "s-D N") 'debug-on-entry)
+(define-key pen-map (kbd "s-D N") 'debug-on-entry-from-binding)
 
 (provide 'pen-profiler)
