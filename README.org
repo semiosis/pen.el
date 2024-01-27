@@ -1,5 +1,5 @@
 * =Pen.el= (a holy OS)
-Pen.el is a free and holy OS based on emacs and debian.
+Pen.el is a free and holy OS made with on emacs, debian linux and docker.
 
 It's free because it's both libre and gratis.
 It's holy because:
