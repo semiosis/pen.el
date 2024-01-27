@@ -775,6 +775,9 @@ Use my position list code. Make it use rosie lang and external software."
 (advice-add 'pen-generate-glossary-buttons-over-buffer :around #'pen-generate-glossary-buttons-over-buffer-around-advice)
 (advice-remove 'pen-generate-glossary-buttons-over-buffer #'pen-generate-glossary-buttons-over-buffer-around-advice)
 
+;; This shouldn't run when I scan org-brain for children
+;; emacs is opening all the buffers as it's scanning org-files
+;; and buttonizing them
 (defun pen-generate-glossary-buttons-over-buffer (beg end &optional clear-first force)
   (interactive "r")
 
