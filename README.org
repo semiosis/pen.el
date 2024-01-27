@@ -77,7 +77,7 @@ for all the saints,
 
 ** Technical details
 - It runs in a docker container.
-- It's primarily text-based with emacs as the main component.
+- It's primarily text-based with emacs as the main component towards that end.
 
 ** Aims
 The major aim of Pen.el is to be a holy
