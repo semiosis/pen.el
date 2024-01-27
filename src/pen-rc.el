@@ -22,6 +22,7 @@
                (string-equal v "on")))))
 
 (defun pen-rc-test (key)
+  (message "%s %s" "pen-rc-test: " key)
   (pen-yaml-truthy-string-test (pen-rc-get key)))
 
 (defun reload-from-pen-rc ()
