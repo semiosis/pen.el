@@ -18,7 +18,7 @@ Redefining FUNCTION also cancels it."
    (list (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
   (advice-add function :before #'debug--implement-debug-on-entry
               '((depth . -100)))
-  function)
+  (call-interactively 'function))
 
 
 (define-key pen-map (kbd "s-P P") 'profiler-start)
