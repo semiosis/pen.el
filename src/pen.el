@@ -2567,8 +2567,8 @@ May use to generate code from comments."
   (load-library "pen-company-lsp")
   (load-library "pen-tty")
   (pen-load-config)
-  
-  ;; Not sure why this disappeared
+
+  ;; Not sure why this disappeared - i.e. having it inside e:pen-line-changed.el was not sufficient
   (add-hook 'post-command-hook #'update-line-number))
 
 (add-hook 'window-setup-hook ;; 'emacs-startup-hook ;; 'after-init-hook
