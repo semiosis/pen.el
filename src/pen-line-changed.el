@@ -19,5 +19,6 @@
 (add-hook 'changed-line-hook #'universal-sidecar-refresh)
 
 (add-hook 'post-command-hook #'update-line-number)
+;; (remove-hook 'post-command-hook #'update-line-number)
 
 (provide 'pen-line-changed)
