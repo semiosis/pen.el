@@ -23,7 +23,7 @@
            (apply proc (list buffer-or-name)))))
     res))
 (advice-add 'kill-buffer :around #'kill-buffer-around-advice)
-(advice-remove 'kill-buffer #'kill-buffer-around-advice)
+;; (advice-remove 'kill-buffer #'kill-buffer-around-advice)
 ;; (advice-remove 'kill-buffer #'advise-to-yes)
 
 ;; Do it like this so that the minibuffer messages do not break.
