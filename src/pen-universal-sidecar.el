@@ -63,15 +63,16 @@ If FRAME is nil, use `selected-frame'."
 (universal-sidecar-define-section bible-section (file title)
                                   (
                                    :major-modes bible-mode
-                                   ;; :predicate (not (buffer-modified-p))
+                                                ;; :predicate (not (buffer-modified-p))
                                    )
-  (let ((title (or title
-                   (and file
-                        (format "Demo: %s" file))
-                   "Crossreferences"))
-        (cmdout (shell-command-to-string "pwd")))
+  (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
+         (title (or title
+                    (and file
+                         (format "Demo: %s" file))
+                    "Crossreferences"))
+         (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
-      (insert cmdout)
+      (insert (pps ref-tuple))
 
 ;;;; This has problems currently, asking if I want to kill the temp buffer
       ;; (insert
