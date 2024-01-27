@@ -127,8 +127,8 @@ If FRAME is nil, use `selected-frame'."
 ;; (advice-remove 'magit-diff-update-hunk-region #'ignore-errors-around-advice)
 
 ;; This sometimes makes it lag a lot
-(universal-sidecar-insinuate)
 (comment
+ (universal-sidecar-insinuate)
  (universal-sidecar-uninsinuate))
 
 
