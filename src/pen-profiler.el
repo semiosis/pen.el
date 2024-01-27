@@ -20,7 +20,7 @@ Redefining FUNCTION also cancels it."
               '((depth . -100)))
   (call-interactively function))
 
-(defun cancel-debug-on-entry-form-binding (function)
+(defun cancel-debug-on-entry-from-binding (function)
   (interactive
    (list (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
   (cancel-debug-on-entry function))
