@@ -3,5 +3,8 @@ export TTY
 
 # I have to detach the clients of the sessions
 
-client="$(cat /tmp/asciinema-client.txt)"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
+
+client="$(cat $TMPDIR/asciinema-client.txt)"
 tmux detach-client -t "$client"
