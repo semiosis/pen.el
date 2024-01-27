@@ -3,13 +3,14 @@ Pen.el is an emacs-based operating system designed with holiness in mind.
 It's a free and holy OS made with emacs, debian linux and docker.
 
 It's holy because:
-- This software is dedicated to supporting one's Christian faith in various ways
-  - Support a person's Christian faith:
-    - praying
-    - praising
-    - running churches
-    - maintaining holiness
-    - Bible reading / study software based on Emacs and Xiphos.
+- This software is dedicated to supporting one's Christian faith
+  - Facilitate:
+    - Praying
+    - Praising
+    - Running churches
+    - Maintaining holiness
+    - Bible studies
+      - Pen.el aims to be Bible study software comparable to Logos / e-Sword
 - It's designed to be used by anyone who wishes to maintain holiness in their computing.
   - Reduce the cognitive dissonance when trying to remain focused on God while using a computer
     - free from distractions
@@ -21,7 +22,7 @@ It's holy because:
 ** Aims
 - The major aim of Pen.el is to be a 'holy' operating system.
   - No proprietary software, nor dependence on AI fiction.
-- Provide the user with free (but advanced) Bible study software
+- Provide the user with free (but advanced) Bible study software, and
 - Provide trustworthy Christian resources that are all offline.
 - Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.
 
