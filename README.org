@@ -76,7 +76,8 @@ for all the saints,
 #+END_SRC
 
 ** Technical details
-It runs in a docker container.
+- It runs in a docker container.
+- It's primarily text-based.
 
 ** Aims
 The major aim of Pen.el is to be a holy
