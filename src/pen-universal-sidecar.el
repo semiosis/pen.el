@@ -85,6 +85,13 @@ If FRAME is nil, use `selected-frame'."
                 (comment (some-post-processing-of-org-text)))
               ))))
 
+;; Fix this
+(comment
+ (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+   "Hello"
+   ;; This runs after the above
+   (comment (some-post-processing-of-org-text))))
+
 ;; (add-to-list 'universal-sidecar-sections 'demo-section)
 ;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
 (add-to-list 'universal-sidecar-sections '(demo-section :title "O Demo!"))
