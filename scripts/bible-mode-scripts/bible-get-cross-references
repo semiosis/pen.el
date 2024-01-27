@@ -54,4 +54,4 @@ sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` 
         }
         ;;
     esac
-} | tpavs
+} | pavs
