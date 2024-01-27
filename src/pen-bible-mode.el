@@ -1869,6 +1869,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (add-hook 'changed-line-hook #'bible-mode-update-sidecar)
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun bible-mode--set-global-chapter-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (bible-mode-update-sidecar)
+    res))
+(advice-add 'bible-mode--set-global-chapter :around #'bible-mode--set-global-chapter-around-advice)
+;; (advice-remove 'bible-mode--set-global-chapter #'bible-mode--set-global-chapter-around-advice)
+
 ;; (add-hook 'changed-line-hook #'universal-sidecar-refresh)
 ;; (remove-hook 'changed-line-hook #'universal-sidecar-refresh)
 
