@@ -95,4 +95,6 @@ Return number of buttons reported on or nil if none."
              lbl-lst))
           (length lbl-lst)))))
 
+(hyperbole-mode 1)
+
 (provide 'pen-hyperbole)
