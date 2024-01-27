@@ -895,7 +895,7 @@ Use my position list code. Make it use rosie lang and external software."
 (advice-add 'wordnut--lookup :around #'pen-wordnut--lookup-around-advice)
 
 (defun pen-after-emacs-loaded-add-hooks-for-glossary ()
-  ;; This simply happens too often
+  ;; This simply happens too often, even opening when org-brain scans for headings
   ;; (add-hook 'find-file-hooks 'pen-run-buttonize-hooks t)
 
   ;; (remove-hook 'bible-mode-hook 'pen-generate-glossary-buttons-manually)
