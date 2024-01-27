@@ -13,7 +13,7 @@
 (defun my-line-func ()
   (message "This is the current line: %s" current-line-number))
 
-;; (add-hook 'changed-line-hook #'my-line-func)
+(add-hook 'changed-line-hook #'my-line-func)
 ;; (remove-hook 'changed-line-hook #'my-line-func)
 
 (add-hook 'post-command-hook #'update-line-number)
