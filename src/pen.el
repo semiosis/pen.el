@@ -2427,10 +2427,11 @@ May use to generate code from comments."
 (require 'pen-ov-highlight)
 (require 'pen-racket)
 (require 'pen-denote)
-(require 'pen-hyperbole)
+;; I think hyperbole broke the menu bar
+;; (require 'pen-hyperbole)
 (require 'pen-fun)
-(require 'pen-lsp-go)
 (require 'pen-lsp-r)
+(require 'pen-lsp-go)
 (require 'pen-lsp-c)
 (require 'pen-ead)
 (require 'pen-universal-sidecar)

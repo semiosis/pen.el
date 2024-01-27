@@ -300,11 +300,11 @@ read from minibuffer."
         (dired-narrow--internal filter-function))))))
 
 ;; TODO Consider fixing this!
-;; (define-key dired-mode-map (kbd "@ s") 'find-src-here)
-;; (define-key dired-mode-map (kbd "@ d") 'find-doc-here)
-;; (define-key dired-mode-map (kbd "@ c") 'find-ci-here)
-;; (define-key dired-mode-map (kbd "@ f") 'find-files-here)
-;; (define-key dired-mode-map (kbd "{") 'find-ci-here)
-;; (define-key dired-mode-map (kbd "}") 'find-files-here)
+(define-key dired-mode-map (kbd "@ s") 'find-src-here)
+(define-key dired-mode-map (kbd "@ d") 'find-doc-here)
+(define-key dired-mode-map (kbd "@ c") 'find-ci-here)
+(define-key dired-mode-map (kbd "@ f") 'find-files-here)
+(define-key dired-mode-map (kbd "{") 'find-ci-here)
+(define-key dired-mode-map (kbd "}") 'find-files-here)
 
 (provide 'pen-dired)
