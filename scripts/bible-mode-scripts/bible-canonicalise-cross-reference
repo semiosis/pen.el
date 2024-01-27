@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+# Do it twice
 sed -e 's/\([a-z]\)\./\1 /' -e 's/\./:/' |
+    sed -e 's/\([a-z]\)\./\1 /' -e 's/\./:/' |
     cat
     # canonicalise-bible-book-title
