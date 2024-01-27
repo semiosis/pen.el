@@ -1400,7 +1400,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (if (>= (prefix-numeric-value current-prefix-arg) 4)
       (let ((current-prefix-arg nil))
         (bible-mode-cross-references-ext ref))
-    (etv (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" ref))))
+    ;; (etv (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" ref))
+    (etv (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref))))
 
 (defun bible-term-greek-get (term_g_num)
   "Queries user for a Strong Greek Lexicon term."
