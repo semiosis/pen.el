@@ -2169,3 +2169,5 @@ install-babashka
 
 # This lags a bit
 e ia focus
+
+e ia hyperbole
