@@ -300,6 +300,7 @@ read from minibuffer."
         (dired-narrow--internal filter-function))))))
 
 ;; TODO Consider fixing this!
+(define-key dired-mode-map (kbd "@") nil)
 (define-key dired-mode-map (kbd "@ s") 'find-src-here)
 (define-key dired-mode-map (kbd "@ d") 'find-doc-here)
 (define-key dired-mode-map (kbd "@ c") 'find-ci-here)
