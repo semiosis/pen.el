@@ -6,6 +6,12 @@ export TTY
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
+    -ol) {
+        mode="org-links"
+        shift
+    }
+    ;;
+
     -olol) {
         mode="org-links-oneliners"
         shift
@@ -44,6 +50,11 @@ ref="${book}.${chap}.${verse}"
 
 sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | {
     case "$mode" in
+        ol|org-links-oneliners) {
+            bible-canonicalise-cross-reference | sed 's/^\(.*\).*$/[[sh:tpop nem \1][\1]]/'
+        }
+        ;;
+
         olol|org-links-oneliners) {
             bible-canonicalise-cross-reference | sed 's/^\(.*\).*$/[[sh:tpop nem \1][\1]]/'
         }
