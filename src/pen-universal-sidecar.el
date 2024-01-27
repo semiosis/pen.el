@@ -66,25 +66,25 @@ If FRAME is nil, use `selected-frame'."
                                                 ;; :predicate (not (buffer-modified-p))
                                                 )
   (ignore-errors (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
-                        (title (or title
-                                   (and file
-                                        (format "Demo: %s" file))
-                                   "Crossreferences"))
+                        (ref (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
+                        (title (concat "xrefs:" ref))
                         (crossrefs
                          ;; (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
                          ;;      (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
                          (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
-                              (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
+                              ref)
                          ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
                          )
                         (cmdout (shell-command-to-string "pwd")))
                    (universal-sidecar-insert-section bible-section title
                      (insert
-                             (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-                               ;; This is inserted
-                               crossrefs
-                               ;; This runs after the above
-                               (comment (some-post-processing-of-org-text))))))))
+                      crossrefs
+                      ;; (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                      ;;   ;; This is inserted
+                      ;;   crossrefs
+                      ;;   ;; This runs after the above
+                      ;;   (comment (some-post-processing-of-org-text)))
+                      )))))
 
 ;; Fix this
 (comment
