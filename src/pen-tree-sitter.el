@@ -77,4 +77,7 @@
     :config
     (global-treesit-auto-mode)))
 
+;; Disable it. It's slow.
+(global-treesit-auto-mode -1)
+
 (provide 'pen-tree-sitter)
