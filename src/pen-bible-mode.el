@@ -1859,4 +1859,12 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (define-key bible-mode-map (kbd "r") 'universal-sidecar-refresh)
 
+(defun bible-mode-update-sidecar ()
+  )
+
+(add-hook 'changed-line-hook #'bible-mode-update-sidecar)
+
+;; (add-hook 'changed-line-hook #'universal-sidecar-refresh)
+;; (remove-hook 'changed-line-hook #'universal-sidecar-refresh)
+
 (provide 'pen-bible-mode)

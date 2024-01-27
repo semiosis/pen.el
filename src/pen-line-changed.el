@@ -16,8 +16,6 @@
 ;; (add-hook 'changed-line-hook #'my-line-func)
 ;; (remove-hook 'changed-line-hook #'my-line-func)
 
-(add-hook 'changed-line-hook #'universal-sidecar-refresh)
-
 (add-hook 'post-command-hook #'update-line-number)
 ;; (remove-hook 'post-command-hook #'update-line-number)
 
