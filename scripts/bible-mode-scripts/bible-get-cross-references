@@ -4,6 +4,17 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -olol) {
+        mode="org-links-oneliners"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # Jer.10.14
 
 stdin_exists() {
@@ -31,4 +42,16 @@ verse="$(printf -- "%s" "$ref" | cut -d : -f 2)"
 
 ref="${book}.${chap}.${verse}"
 
-sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | pavs
+sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | {
+    case "$mode" in
+        olol) {
+            bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1][\\1]]/'
+        }
+        ;;
+
+        *) {
+            cat
+        }
+        ;;
+    esac
+} | tpavs
