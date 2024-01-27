@@ -2,6 +2,8 @@
 Pen.el is an emacs-based operating system designed with holiness in mind.
 It's a free and holy OS made with emacs, debian linux and docker.
 
+It's not yet in a ready state for trying out.
+
 It's holy because:
 - This software is dedicated to supporting one's Christian faith in various ways
   - Support a person's Christian faith:
