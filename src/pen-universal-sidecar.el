@@ -64,25 +64,25 @@ If FRAME is nil, use `selected-frame'."
                                   (
                                    :major-modes bible-mode
                                                 ;; :predicate (not (buffer-modified-p))
-                                   )
-  (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
-         (title (or title
-                    (and file
-                         (format "Demo: %s" file))
-                    "Crossreferences"))
-         (crossrefs
-                    (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\)/[[sh:top nem \\1]]/'"
-                         (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
-                    ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
-                    )
-         (cmdout (shell-command-to-string "pwd")))
-    (universal-sidecar-insert-section bible-section title
-      (insert crossrefs
-              (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-                ;; This is inserted
-                crossrefs
-                ;; This runs after the above
-                (comment (some-post-processing-of-org-text)))))))
+                                                )
+  (ignore-errors (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
+                        (title (or title
+                                   (and file
+                                        (format "Demo: %s" file))
+                                   "Crossreferences"))
+                        (crossrefs
+                         (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\)/[[sh:tpop nem \\1]]/'"
+                              (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
+                         ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
+                         )
+                        (cmdout (shell-command-to-string "pwd")))
+                   (universal-sidecar-insert-section bible-section title
+                     (insert crossrefs
+                             (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                               ;; This is inserted
+                               crossrefs
+                               ;; This runs after the above
+                               (comment (some-post-processing-of-org-text))))))))
 
 ;; Fix this
 (comment
