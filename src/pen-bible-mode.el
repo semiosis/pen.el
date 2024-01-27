@@ -1863,10 +1863,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (progn
         ;; This sets the variable first
         (bible-mode-get-link)
-        (universal-sidecar-refresh)
 
-        ;; (bible-mode-show-hover-docs)
-        )))
+        ;; These two need to both be asynchronous
+        (universal-sidecar-refresh)
+        (bible-mode-show-hover-docs))))
 
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-sidecar)
 
