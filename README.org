@@ -88,10 +88,7 @@ for all the saints,
 
 Using Pen.el, there should be no need to go online, as it should contain everything you need to be content with your computing.
 The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
-
-It's also designed to be a Christian's operating system.
-
-It's a project that has no forseeable expiry date.
+I plan to be using it as my main OS into the future.
 
 ** Intended users
 - emacs/linux savvy pastors, chaplains
