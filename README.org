@@ -28,6 +28,7 @@ It's holy because:
 - Provide the user with free (but advanced) Bible study software, and
 - Provide trustworthy Christian resources that are all offline.
 - Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.
+- Able to be the main operating system somebody uses (It's my main OS).
 
 Using Pen.el, there should be no need to go online, as it should contain everything you need to be content with your computing.
 The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
