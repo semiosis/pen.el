@@ -18,4 +18,6 @@
 ;; (add-hook 'changed-line-hook #'my-line-func)
 ;; (remove-hook 'changed-line-hook #'my-line-func)
 
+(add-hook 'changed-line-hook #'universal-sidecar-refresh)
+
 (provide 'pen-line-changed)
