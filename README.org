@@ -18,6 +18,44 @@ It's holy because:
 - I also have a policy of avoiding AI fiction and a strict ban on proprietary software
   - Both AI fiction and proprietary software are considered unholy.
 
+** Aims
+- The major aim of Pen.el is to be a 'holy' operating system.
+- Provide the user with free (but advanced) Bible study software
+- Provide trustworthy Christian resources that are all offline.
+- Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.
+
+Using Pen.el, there should be no need to go online, as it should contain everything you need to be content with your computing.
+The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
+
+** Intended users
+- emacs/linux savvy pastors, chaplains
+- theology students
+- anyone wanting software that respects a user's desire to remain holy
+
+** Technical details
+- It runs in a docker container.
+- It's primarily text-based computing environment with emacs as the main component towards that end.
+
+** Quick installation
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  git clone "https://github.com/semiosis/pen.el"
+
+  mkdir -p ~/.pen
+
+  # Add the scripts to the PATH
+  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+
+  # Add this to prevent C-s from freezing the terminal
+  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
+
+  # Source your .profile
+  . ~/.profile
+
+  # Run pen
+  pen
+#+END_SRC
+
+** It's about holiness
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   holiness
       The state of being holy.
@@ -70,39 +108,3 @@ for all the saints,
   nem bible-search-pp pray | v
 #+END_SRC
 
-** Technical details
-- It runs in a docker container.
-- It's primarily text-based computing environment with emacs as the main component towards that end.
-
-** Aims
-- The major aim of Pen.el is to be a holy operating system
-- Provide the user with free (but advanced) Bible study software
-- Provide trustworthy Christian resources that are all offline.
-- Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.
-
-Using Pen.el, there should be no need to go online, as it should contain everything you need to be content with your computing.
-The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
-
-** Intended users
-- emacs/linux savvy pastors, chaplains
-- theology students
-- anyone wanting software that respects a user's desire to remain holy
-
-** Quick installation
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code
-  git clone "https://github.com/semiosis/pen.el"
-
-  mkdir -p ~/.pen
-
-  # Add the scripts to the PATH
-  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
-
-  # Add this to prevent C-s from freezing the terminal
-  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
-
-  # Source your .profile
-  . ~/.profile
-
-  # Run pen
-  pen
-#+END_SRC
