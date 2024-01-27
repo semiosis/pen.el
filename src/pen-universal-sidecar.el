@@ -64,7 +64,7 @@ If FRAME is nil, use `selected-frame'."
                                   (
                                    :major-modes bible-mode
                                                 ;; :predicate (not (buffer-modified-p))
-                                                )
+                                   )
   (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
          (title (or title
                     (and file
@@ -74,16 +74,12 @@ If FRAME is nil, use `selected-frame'."
                          (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))))
          (cmdout (shell-command-to-string "pwd")))
     (universal-sidecar-insert-section demo-section title
-      (insert crossrefs)
-
-;;;; This has problems currently, asking if I want to kill the temp buffer
-      ;; (insert
-      ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-      ;;    ;; This is inserted
-      ;;    (concat "[[sh:tpop vim /]]")
-      ;;    ;; This runs after the above
-      ;;    (comment (some-post-processing-of-org-text))))
-      )))
+      (insert 
+              (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                ;; This is inserted
+                crossrefs
+                ;; This runs after the above
+                (comment (some-post-processing-of-org-text)))))))
 
 (comment
  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
