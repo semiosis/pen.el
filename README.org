@@ -19,8 +19,8 @@ It's holy because:
     - Formatting Bible passages in various ways.
     - etc.
 - Policies:
-  - avoiding AI fiction
-  - strict ban on proprietary software
+  - Avoiding AI fiction
+  - Strict ban on proprietary software
 
 ** Aims
 - The major aim of Pen.el is to be a 'holy' operating system.
