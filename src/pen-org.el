@@ -837,4 +837,64 @@ optional argument MARKERP, return the position as a new marker."
 	     ;; Remove opened buffer in the process.
 	     (unless (or visiting markerp) (kill-buffer buffer))))))))
 
+(defun org-back-to-heading (&optional invisible-ok)
+  "Go back to beginning of heading."
+  (beginning-of-line)
+  (or (and (org-at-heading-p (not invisible-ok))
+           (not (and (featurep 'org-inlinetask)
+                   (fboundp 'org-inlinetask-end-p)
+                   (org-inlinetask-end-p))))
+      (if (org-element--cache-active-p)
+          (let ((heading (org-element-lineage (org-element-at-point)
+                                           '(headline inlinetask)
+                                           'include-self)))
+            (when heading
+              (goto-char (org-element-property :begin heading)))
+            (while (and (not invisible-ok)
+                        heading
+                        (org-fold-folded-p))
+              (goto-char (org-fold-core-previous-visibility-change))
+              (setq heading (org-element-lineage (org-element-at-point)
+                                              '(headline inlinetask)
+                                              'include-self))
+              (when heading
+                (goto-char (org-element-property :begin heading))))
+            (unless heading
+              (progn
+                ;; (tv (point))
+                ;; (tv (buffer-string))
+                (user-error "Before first headline at position %d in buffer %s"
+		                    (point) (current-buffer))))
+            (point))
+        (let (found)
+	  (save-excursion
+            ;; At inlinetask end.  Move to bol, so that the following
+            ;; search goes to the beginning of the inlinetask.
+            (when (and (featurep 'org-inlinetask)
+                       (fboundp 'org-inlinetask-end-p)
+                       (org-inlinetask-end-p))
+              (goto-char (line-beginning-position)))
+	    (while (not found)
+	      (or (re-search-backward (concat "^\\(?:" outline-regexp "\\)")
+				                  nil t)
+              (progn
+                ;; (tv (point))
+                ;; (tv (buffer-string))
+                (user-error "Before first headline at position %d in buffer %s"
+		                    (point) (current-buffer))))
+              ;; Skip inlinetask end.
+              (if (and (featurep 'org-inlinetask)
+                       (fboundp 'org-inlinetask-end-p)
+                       (org-inlinetask-end-p))
+                  (org-inlinetask-goto-beginning)
+	        (setq found (and (or invisible-ok (not (org-fold-folded-p)))
+			                 (point))))))
+	  (goto-char found)
+	  found))))
+
+;; (advice-add 'org-back-to-heading :around #'ignore-errors-around-advice)
+;; (advice-remove 'org-back-to-heading #'ignore-errors-around-advice)
+;; (advice-add 'org-back-to-heading-or-point-min :around #'ignore-errors-around-advice)
+;; (advice-remove 'org-back-to-heading-or-point-min #'ignore-errors-around-advice)
+
 (provide 'pen-org)
