@@ -20,6 +20,10 @@ Redefining FUNCTION also cancels it."
               '((depth . -100)))
   (call-interactively 'function))
 
+(defun cancel-debug-on-entry-form-binding (function)
+  (interactive
+   (list (key-binding (kbd (format "%s" (key-description (read-key-sequence-vector "Key: ")))))))
+  (cancel-debug-on-entry function))
 
 (define-key pen-map (kbd "s-P P") 'profiler-start)
 (define-key pen-map (kbd "s-P S") 'profiler-stop)
@@ -27,5 +31,7 @@ Redefining FUNCTION also cancels it."
 
 (define-key pen-map (kbd "s-D D") 'debug-on-entry)
 (define-key pen-map (kbd "s-D N") 'debug-on-entry-from-binding)
+(define-key pen-map (kbd "s-D C") 'cancel-debug-on-entry)
+(define-key pen-map (kbd "s-D U") 'cancel-debug-on-entry-from-binding)
 
 (provide 'pen-profiler)
