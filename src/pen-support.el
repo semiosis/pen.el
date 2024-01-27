@@ -2347,7 +2347,10 @@ This function accepts any number of ARGUMENTS, but ignores them."
 
 (defun pen-cd-vc-cd-top-level ()
   (interactive)
-  (dired (pen-get-top-level)))
+
+  (cond ((major-mode-p 'org-brain-visualize-mode)
+         (call-interactively 'org-brain-visualize-top))
+        (t (dired (pen-get-top-level)))))
 
 (defun dired-here-columnate ()
   (interactive)
