@@ -6,6 +6,7 @@
   (pen-yaml-truthy-string-test (pen-rc-get-early key)))
 
 (defun pen-rc-get (key)
+  (message "%s %s" "pen-rc-get " key)
   (if (and key (not (string-blank-p key)))
       (pen-snc (cmd "pen-rc-get" key))))
 
