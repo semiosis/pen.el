@@ -31,9 +31,12 @@ Using Pen.el, there should be no need to go online, as it should contain everyth
 The Bible-software is indented to be as featureful as any of the other options available, but completely free, and also low maintenance.
 
 ** Intended users
-- emacs/linux savvy pastors, church deacons, chaplains
-- theology students
-- anyone wanting software that respects a user's desire to remain holy
+- emacs/linux savvy:
+  - pastors,
+  - church deacons,
+  - chaplains,
+  - theology students
+  - anyone wanting software that respects a user's desire to remain holy
 
 ** Technical details
 - It runs in a docker container.
