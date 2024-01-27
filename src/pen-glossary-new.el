@@ -1072,6 +1072,7 @@ Use my position list code. Make it use rosie lang and external software."
     res))
 (advice-add 'Info-find-node-2 :around #'pen-Info-find-node-2-around-advice)
 
+;; This is happening way too often
 (defun pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened ()
   (interactive)
   (pen-message-no-echo (concat "redraw-glossary scroll " (get-path nil t)))
