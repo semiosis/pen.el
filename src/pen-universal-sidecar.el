@@ -48,9 +48,10 @@ If FRAME is nil, use `selected-frame'."
                         (format "Demo: %s" file))
                    "Demo"))
         (quote (seq-random-elt (str2lines (e/cat "$PEN/documents/quotes.txt"))))
-        (cmdout (shell-command-to-string "pwd")))
+        ;; (cmdout (shell-command-to-string "pwd"))
+        )
     (universal-sidecar-insert-section quote-section title
-      (insert cmdout)
+      (insert quote)
 
       ;;;; This has problems currently, asking if I want to kill the temp buffer
       ;; (insert
