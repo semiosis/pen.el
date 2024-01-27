@@ -892,14 +892,4 @@ optional argument MARKERP, return the position as a new marker."
 	  (goto-char found)
 	  found))))
 
-;; (advice-add 'org-back-to-heading :around #'ignore-errors-around-advice)
-;; (advice-remove 'org-back-to-heading #'ignore-errors-around-advice)
-;; (advice-add 'org-back-to-heading-or-point-min :around #'ignore-errors-around-advice)
-;; (advice-remove 'org-back-to-heading-or-point-min #'ignore-errors-around-advice)
-
-;; This stops a bug, which I could debug with the profiler.
-;; But it introduces more bugs than it solves.
-(advice-add 'org-brain-entry-at-point-excludedp :around #'around-advice-ignore-truthy)
-(advice-remove 'org-brain-entry-at-point-excludedp #'around-advice-ignore-truthy)
-
 (provide 'pen-org)
