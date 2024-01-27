@@ -808,7 +808,8 @@ decreases scheduled or deadline date by one day."
 (comment
  (load-library "ob-ref")
 
- ;; For speed, open raw
+ ;; For speed, open raw - But I can't do this because org-brain needs
+ ;; to open them as org-mode
  (defun org-id-find-id-in-file (id file &optional markerp)
    "Return the position of the entry ID in FILE.
 
