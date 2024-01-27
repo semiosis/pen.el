@@ -806,7 +806,7 @@ decreases scheduled or deadline date by one day."
 (require 'org-ref-prettify)
 
 (comment
- (load-library "ob-ref")
+ (load-library "org-id")
 
  ;; For speed, open raw - But I can't do this because org-brain needs
  ;; to open them as org-mode
