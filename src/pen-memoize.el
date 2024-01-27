@@ -291,6 +291,7 @@ care."
   (memoize-restore 'pen-prompt-snc)
   (memoize 'pen-prompt-snc))
 
-;; (memoize-restore 'locate-library)
+;; this broke universal-sidecar
+;; (memoize 'locate-library)
 
 (provide 'pen-memoize)
