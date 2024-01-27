@@ -78,13 +78,11 @@ If FRAME is nil, use `selected-frame'."
                         (cmdout (shell-command-to-string "pwd")))
                    (universal-sidecar-insert-section bible-section title
                      (insert
-                      crossrefs
-                      ;; (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
-                      ;;   ;; This is inserted
-                      ;;   crossrefs
-                      ;;   ;; This runs after the above
-                      ;;   (comment (some-post-processing-of-org-text)))
-                      )))))
+                      (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                        ;; This is inserted
+                        crossrefs
+                        ;; This runs after the above
+                        (comment (some-post-processing-of-org-text))))))))
 
 ;; Fix this
 (comment
