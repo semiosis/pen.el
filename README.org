@@ -83,9 +83,7 @@ for all the saints,
 - The major aim of Pen.el is to be a holy operating system
 - Provide the user with free (but advanced) Bible study software
 - Provide trustworthy Christian resources that are all offline.
-
-It's intended to be a self-sufficient text-based  that , and making it easier to maintain one's Christian faith by eliminating all the distractions,
-yet being feature-full and fun.
+- Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.
 
 # Included are all the benefits that come from using emacs.
 # Pen.el is like an opinionated emacs distribution.
