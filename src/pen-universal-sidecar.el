@@ -76,7 +76,7 @@ If FRAME is nil, use `selected-frame'."
                     ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
                     )
          (cmdout (shell-command-to-string "pwd")))
-    (universal-sidecar-insert-section demo-section title
+    (universal-sidecar-insert-section bible-section title
       (insert crossrefs
               ;; (comment
               ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
