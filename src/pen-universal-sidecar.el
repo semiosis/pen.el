@@ -70,7 +70,7 @@ If FRAME is nil, use `selected-frame'."
                     (and file
                          (format "Demo: %s" file))
                     "Crossreferences"))
-         (crossrefs 
+         (crossrefs
                     (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\)/[[bible:\\1]]/'"
                          (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
                     ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
@@ -82,8 +82,7 @@ If FRAME is nil, use `selected-frame'."
                 ;; This is inserted
                 crossrefs
                 ;; This runs after the above
-                (comment (some-post-processing-of-org-text)))
-              ))))
+                (comment (some-post-processing-of-org-text)))))))
 
 ;; Fix this
 (comment
