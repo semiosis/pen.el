@@ -11,7 +11,7 @@
 ;; Example of hook usage
 
 (defun my-line-func ()
-  (message "This is the current line: %s" current-line-number))
+  (message-no-echo "This is the current line: %s" current-line-number))
 
 (add-hook 'changed-line-hook #'my-line-func)
 ;; (remove-hook 'changed-line-hook #'my-line-func)
