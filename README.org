@@ -109,8 +109,3 @@ for all the saints,
 
 (NASB)
 #+end_src
-
-#+BEGIN_SRC sh -n :sps bash :async :results none :lang text
-  nem bible-search-pp pray | v
-#+END_SRC
-
