@@ -60,6 +60,28 @@ If FRAME is nil, use `selected-frame'."
       ;;    (comment (some-post-processing-of-org-text))))
       )))
 
+(universal-sidecar-define-section bible-section (file title)
+                                  (
+                                   :major-modes bible-mode
+                                   ;; :predicate (not (buffer-modified-p))
+                                   )
+  (let ((title (or title
+                   (and file
+                        (format "Demo: %s" file))
+                   "Crossreferences"))
+        (cmdout (shell-command-to-string "pwd")))
+    (universal-sidecar-insert-section demo-section title
+      (insert cmdout)
+
+;;;; This has problems currently, asking if I want to kill the temp buffer
+      ;; (insert
+      ;;  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+      ;;    ;; This is inserted
+      ;;    (concat "[[sh:tpop vim /]]")
+      ;;    ;; This runs after the above
+      ;;    (comment (some-post-processing-of-org-text))))
+      )))
+
 (comment
  (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
    ;; This is inserted
@@ -70,6 +92,7 @@ If FRAME is nil, use `selected-frame'."
 ;; (add-to-list 'universal-sidecar-sections 'demo-section)
 ;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions"))
 (add-to-list 'universal-sidecar-sections '(demo-section :title "O Demo!"))
+(add-to-list 'universal-sidecar-sections '(bible-section :title "Bible!"))
 ;; (add-to-list 'universal-sidecar-sections '(demo-section :file "definitions" :title "Random Definition"))
 
 ;; However, if we want the opposite behavior (don't show renames),
