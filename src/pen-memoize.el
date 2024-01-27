@@ -291,4 +291,6 @@ care."
   (memoize-restore 'pen-prompt-snc)
   (memoize 'pen-prompt-snc))
 
+(memoize 'locate-library)
+
 (provide 'pen-memoize)
