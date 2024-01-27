@@ -80,12 +80,11 @@ for all the saints,
 - It's primarily text-based with emacs as the main component towards that end.
 
 ** Aims
-The major aim of Pen.el is to be a holy
-operating system, providing the user with free (but advanced) Bible study
-software and trustworthy Christian resources that are all offline.
+- The major aim of Pen.el is to be a holy operating system
+- Provide the user with free (but advanced) Bible study software
+- Provide trustworthy Christian resources that are all offline.
 
-It's intended to be a self-sufficient text-based computing environment that does not require
-the internet, and making it easier to maintain one's Christian faith by eliminating all the distractions,
+It's intended to be a self-sufficient text-based computing environment that , and making it easier to maintain one's Christian faith by eliminating all the distractions,
 yet being feature-full and fun.
 
 # Included are all the benefits that come from using emacs.
