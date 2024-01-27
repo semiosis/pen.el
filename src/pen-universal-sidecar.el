@@ -71,7 +71,9 @@ If FRAME is nil, use `selected-frame'."
                                         (format "Demo: %s" file))
                                    "Crossreferences"))
                         (crossrefs
-                         (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
+                         ;; (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
+                         ;;      (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
+                         (snc "in-pen bible-get-cross-references | sed 's/^\\(.*\\).*$/[[sh:tpop nem \\1]]/'"
                               (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
                          ;; (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple))
                          )
