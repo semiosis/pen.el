@@ -1401,7 +1401,11 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
       (let ((current-prefix-arg nil))
         (bible-mode-cross-references-ext ref))
     ;; (etv (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" ref))
-    (etv (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref))))
+    (let ((xrefs
+           (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref)))
+      (if (sor xrefs)
+          (etv xrefs)
+        (message "No cross references for %s" ref)))))
 
 (defun bible-term-greek-get (term_g_num)
   "Queries user for a Strong Greek Lexicon term."
