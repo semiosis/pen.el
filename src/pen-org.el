@@ -806,34 +806,34 @@ decreases scheduled or deadline date by one day."
 (require 'org-ref-prettify)
 
 (comment
- (load-library "ob-ref"))
+ (load-library "ob-ref")
 
-;; For speed, open raw
-(defun org-id-find-id-in-file (id file &optional markerp)
-  "Return the position of the entry ID in FILE.
+ ;; For speed, open raw
+ (defun org-id-find-id-in-file (id file &optional markerp)
+   "Return the position of the entry ID in FILE.
 
 If that files does not exist, or if it does not contain this ID,
 return nil.
 
 The position is returned as a cons cell (file-name . position).  With
 optional argument MARKERP, return the position as a new marker."
-  (cond
-   ((not file) nil)
-   ((not (file-exists-p file)) nil)
-   (t
-    (let* ((visiting (find-buffer-visiting file))
-           ;; For speed, open literally
-	       (buffer (or visiting (find-file-noselect file nil t)))
-           ;; (buffer (or visiting (find-file-noselect file)))
-           )
-      (unwind-protect
-	      (with-current-buffer buffer
-	        (let ((pos (org-find-entry-with-id id)))
-	          (cond
-	           ((null pos) nil)
-	           (markerp (move-marker (make-marker) pos buffer))
-	           (t (cons file pos)))))
-	    ;; Remove opened buffer in the process.
-	    (unless (or visiting markerp) (kill-buffer buffer)))))))
+   (cond
+    ((not file) nil)
+    ((not (file-exists-p file)) nil)
+    (t
+     (let* ((visiting (find-buffer-visiting file))
+            ;; For speed, open literally
+	        (buffer (or visiting (find-file-noselect file nil t)))
+            ;; (buffer (or visiting (find-file-noselect file)))
+            )
+       (unwind-protect
+	       (with-current-buffer buffer
+	         (let ((pos (org-find-entry-with-id id)))
+	           (cond
+	            ((null pos) nil)
+	            (markerp (move-marker (make-marker) pos buffer))
+	            (t (cons file pos)))))
+	     ;; Remove opened buffer in the process.
+	     (unless (or visiting markerp) (kill-buffer buffer))))))))
 
 (provide 'pen-org)
