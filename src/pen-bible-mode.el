@@ -1857,7 +1857,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
-(defun bible-mode-update-sidecar ()
+(defun bible-mode-update-docs ()
   (interactive)
   (if (eq major-mode 'bible-mode)
       (progn
@@ -1868,14 +1868,15 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (universal-sidecar-refresh)
         (bible-mode-show-hover-docs))))
 
-(define-key bible-mode-map (kbd "r") 'bible-mode-update-sidecar)
+(define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
 
-(add-hook 'changed-line-hook #'bible-mode-update-sidecar)
+(add-hook 'changed-line-hook #'bible-mode-update-docs)
+;; (remove-hook 'changed-line-hook #'bible-mode-update-docs)
 
 ;; nadvice - proc is the original function, passed in. do not modify
 (defun bible-mode--set-global-chapter-around-advice (proc &rest args)
   (let ((res (apply proc args)))
-    (bible-mode-update-sidecar)
+    (bible-mode-update-docs)
     res))
 (advice-add 'bible-mode--set-global-chapter :around #'bible-mode--set-global-chapter-around-advice)
 ;; (advice-remove 'bible-mode--set-global-chapter #'bible-mode--set-global-chapter-around-advice)
