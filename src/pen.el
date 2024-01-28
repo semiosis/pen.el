@@ -2426,6 +2426,7 @@ May use to generate code from comments."
 (require 'pen-annotation)
 (require 'pen-ov-highlight)
 (require 'pen-racket)
+(require 'pen-hackernews)
 (require 'pen-denote)
 ;; I think hyperbole broke the menu bar
 ;; (require 'pen-hyperbole)
