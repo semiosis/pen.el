@@ -42,12 +42,13 @@ test -n "$ref" || exit 1
 
 ref="$(printf -- "%s" "$ref" | cif -nd canonicalise-bible-ref)"
 
-book="$(printf -- "%s" "$ref" | cut -d : -f 1 | sed 's/ .*//' | crossref-canonicalise-ref)"
+book="$(printf -- "%s" "$ref" | cut -d : -f 1 | sed 's/ [^ ]\+$//' | crossref-canonicalise-ref)"
 chap="$(printf -- "%s" "$ref" | cut -d : -f 1 | sed 's/.* //')"
 verse="$(printf -- "%s" "$ref" | cut -d : -f 2)"
 
 ref="${book}.${chap}.${verse}"
 
+cmd-nice sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | tv
 sqlite3 $HOME/.pen/refs.db 'select `To Verse` from refstable where `From Verse` = "'$ref'" and `Votes` > 0 order by cast(`Votes` as unsigned) desc' | {
     case "$mode" in
         ol|org-links) {
