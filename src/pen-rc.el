@@ -6,7 +6,7 @@
   (pen-yaml-truthy-string-test (pen-rc-get-early key)))
 
 (defun pen-rc-get (key)
-  (pen-message-no-echo "this-command: %s, inner function: %s %s" (str this-command) " - pen-rc-test " key)
+  (pen-message-no-echo "this-command: %s, inner function: %s, value: %s" (str this-command) "pen-rc-test" key)
 
   (if (and key (not (string-blank-p key)))
       (pen-snc (cmd "pen-rc-get" key))))
