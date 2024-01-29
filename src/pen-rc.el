@@ -6,7 +6,7 @@
   (pen-yaml-truthy-string-test (pen-rc-get-early key)))
 
 (defun pen-rc-get (key)
-  (pen-message-no-echo "this-command: %s, inner function: %s, value: %s" (str this-command) "pen-rc-get" key)
+  (pen-message-no-echo "this-command: %s, inner function: %s, key: %s" (str this-command) "pen-rc-get" key)
 
   (if (and key (not (string-blank-p key)))
       (pen-snc (cmd "pen-rc-get" key))))
@@ -24,7 +24,7 @@
                (string-equal v "on")))))
 
 (defun pen-rc-test (key)
-  (pen-message-no-echo "this-command: %s, inner function: %s, value: %s" (str this-command) "pen-rc-test" key)
+  (pen-message-no-echo "this-command: %s, inner function: %s, key: %s" (str this-command) "pen-rc-test" key)
   (pen-yaml-truthy-string-test (pen-rc-get key)))
 
 (defun reload-from-pen-rc ()
