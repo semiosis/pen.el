@@ -1857,6 +1857,39 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (fz (str2lines (e/cat bible-passage-outlines-fp))))
 
+(defun bible-doc--make-request nil
+  "Request the Bibl documentation."
+  (and (not track-mouse) lsp-ui-doc-show-with-mouse (setq-local track-mouse t))
+  (when (and lsp-ui-doc-show-with-cursor
+             (not (memq this-command lsp-ui-doc--ignore-commands))
+
+             ;; (not (bound-and-true-p lsp-ui-peek-mode))
+             (universal-sidecar-visible-p)
+
+             ;; (lsp--capability "hoverProvider")
+             )
+
+    (-if-let (bounds (or (and (symbol-at-point) (bounds-of-thing-at-point 'symbol))
+                         (and (looking-at "[[:graph:]]") (cons (point) (1+ (point))))))
+        (unless (equal lsp-ui-doc--bounds bounds)
+          (lsp-ui-doc--hide-frame)
+          (lsp-ui-util-safe-kill-timer lsp-ui-doc--timer)
+          (setq lsp-ui-doc--timer
+                (run-with-idle-timer
+                 lsp-ui-doc-delay nil
+                 (let ((buf (current-buffer)))
+                   (lambda nil
+                     (when (equal buf (current-buffer))
+                       (lsp-request-async
+                        "textDocument/hover"
+                        (lsp--text-document-position-params)
+                        (lambda (hover)
+                          (when (equal buf (current-buffer))
+                            (lsp-ui-doc--callback hover bounds (current-buffer))))
+                        :mode 'tick
+                        :cancel-token :lsp-ui-doc-hover)))))))
+      (lsp-ui-doc--hide-frame))))
+
 (defun bible-mode-update-docs ()
   (interactive)
   (if (eq major-mode 'bible-mode)
