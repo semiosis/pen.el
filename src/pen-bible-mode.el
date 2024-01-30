@@ -1892,7 +1892,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
 (defun bible-mode-update-docs ()
   (interactive)
-  (if (eq major-mode 'bible-mode)
+  (if (and (eq major-mode 'bible-mode)
+           (not bible-mode-fast-enabled))
       (progn
         ;; This sets the variable first
         (bible-mode-get-link)
