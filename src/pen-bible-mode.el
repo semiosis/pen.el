@@ -1900,6 +1900,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive)
   (if (and (eq major-mode 'bible-mode))
       (progn
+        (universal-sidecar-on)
+
         ;; This sets the variable first
         (bible-mode-get-link)
 
