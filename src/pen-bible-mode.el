@@ -1823,9 +1823,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               "-d"))
       (message "Open the Bible first"))))
 
-(define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
-(define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
-
 (defun bible-verse-margin-status ()
   (chomp (pps (bible-mode-get-ref-tuple))))
 
@@ -1842,9 +1839,6 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (chap (str (cadr tup)))
          (verse (str (caddr tup))))
     (w3m (format "https://biblehub.com/interlinear/%s/%s-%s.htm" book-lc chap verse))))
-
-(define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
-(define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
 
 ;; TODO If I can, make it so I can fuzzy search the annotations
 ;; e:$EMACSD/pen.el/src/pen-completing-read.el
@@ -1903,6 +1897,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode-show-hover-docs))))
 
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
+(define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
+(define-key bible-mode-map (kbd "I") 'bible-open-interlinear)
+(define-key bible-mode-map (kbd "K") 'bible-mode-read-chapter-aloud-kjv)
+(define-key bible-mode-map (kbd "M") 'magit-toggle-margin)
 
 (add-hook 'changed-line-hook #'bible-mode-update-docs)
 ;; (remove-hook 'changed-line-hook #'bible-mode-update-docs)
