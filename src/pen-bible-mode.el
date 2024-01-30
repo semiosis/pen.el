@@ -1896,6 +1896,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (universal-sidecar-refresh)
         (bible-mode-show-hover-docs))))
 
+(defun bible-mode-sidecar-show ()
+  (interactive)
+  (if (and (eq major-mode 'bible-mode))
+      (progn
+        ;; This sets the variable first
+        (bible-mode-get-link)
+
+        ;; These two need to both be asynchronous
+        (universal-sidecar-refresh))))
+
 (define-key bible-mode-map (kbd "O") 'bible-mode-sidecar-show)
 (define-key bible-mode-map (kbd "r") 'bible-mode-update-docs)
 (define-key bible-mode-map (kbd "D") 'bible-mode-show-hover-docs)
