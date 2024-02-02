@@ -132,11 +132,13 @@ Romans 7:22 - For I delight in the law of God, in my inner being, (ESV)
 
 *** The law may be pursued by faith. Justification through faith
 
-         Faith 
-       /       \
-  Those who     Gentiles
-pursue the law
-  by faith
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+           Faith
+         /       \
+    Those who     Gentiles
+  pursue the law
+    by faith
+#+END_SRC
 
 Romans 9:31-32 - but that Israel who pursued a law that would lead to righteousness did not succeed in reaching that law. Why? Because they did not pursue it by faith, but as if it were based on works. They have stumbled over the stumbling stone, (ESV)
 
