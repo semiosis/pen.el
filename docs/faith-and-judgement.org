@@ -291,22 +291,7 @@ Revelation 22:15 -  Outside are the dogs and sorcerers and the sexually immoral 
 Ephesians 5:5 -  For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God.  (ESV)
 
 ** This makes sense - the law certainly still exists
-#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
-  1 Timothy 1:9
-#+END_SRC
-
-#+RESULTS:
-#+begin_src text
-1 Timothy 1:9
-‾‾‾‾‾‾‾‾‾‾‾‾‾
-understanding this, that the law is not laid
-down for the just but for the lawless and
-disobedient, for the ungodly and sinners, for
-the unholy and profane, for those who strike
-their fathers and mothers, for murderers,
-
-(ESV)
-#+end_src
+1 Timothy 1:9 - understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers,  (ESV)
 
 *** Then, glorification
 
