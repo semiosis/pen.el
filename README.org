@@ -157,6 +157,38 @@ Faith is like a net which a person casts to receive something.
 **** Faith receives salvation, and salvation is the gift which is received through faith
 Faith is something which a person must have to receive the free gift.
 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  2 Chronicles 7:14
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+2 Chronicles 7:14
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+if my people who are called by my name humble
+themselves, and pray and seek my face and turn
+from their wicked ways, then I will hear from
+heaven and will forgive their sin and heal
+their land.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Matthew 18:3
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Matthew 18:3
+‾‾‾‾‾‾‾‾‾‾‾‾
+and said, Truly, I say to you, unless you turn
+and become like children, you will never enter
+the kingdom of heaven.
+
+(ESV)
+#+end_src
+
 *Ephesians 2:8* - For by grace you have been saved through faith.  And this is not your own doing; it is the gift of God,  (ESV)
 
 *** The work of faith
