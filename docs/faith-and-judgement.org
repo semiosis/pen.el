@@ -1,3 +1,6 @@
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+OPTIONS: toc:nil
+
 * My thoughts and bible references regarding theology
 *Acts 13:48* - And when the Gentiles heard this, they began rejoicing and glorifying the word of the Lord, and as many as were appointed to eternal life believed. (ESV)
 
