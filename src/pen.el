@@ -19,7 +19,7 @@
   (defvar pen-map (make-sparse-keymap)
     "Keymap for `pen.el'."))
 
-(defset pen-directories nil)
+(defvar pen-directories nil)
 
 (defmacro defdir (symbol value &optional documentation)
   "This does a defset, but adds the symbol to a list of directories"
