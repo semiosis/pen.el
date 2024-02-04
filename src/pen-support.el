@@ -293,16 +293,6 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
   `(progn (defvar ,symbol ,documentation)
           (setq ,symbol ,value)))
 
-(defset pen-directories nil)
-
-(defmacro defdir (symbol value &optional documentation)
-  "This does a defset, but adds the symbol to a list of directories"
-
-  `(progn
-     (add-to-list 'pen-directories ',symbol)
-     (defvar ,symbol ,documentation)
-     (setq ,symbol ,value)))
-
 (defun dired-open-pen-defdir ()
   (interactive)
 
