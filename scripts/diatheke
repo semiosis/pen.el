@@ -26,7 +26,7 @@ postprocess() {
     {
         if printf -- "%s\n" "$CMD" | grep -q -P '(ESV)'; then
             # Fix issue with ESV - fix spacings between words
-            sed 's~\(x-indent"/>\)~\1 ~g'
+            sed -e 's~\(x-indent"/>\)~\1 ~g' -e 's~<lb/>~ ~g'
         else
             cat
         fi
