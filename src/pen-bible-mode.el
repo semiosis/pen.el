@@ -1286,7 +1286,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                (query (pen-ask (pen-selection) "Bible Search: ")))
            (list query nil book current-book-and-chap))
        (list (pen-ask (pen-selection) "Bible Search: ") nil nil current-book-and-chap))))
-  (bible-mode--open-search query "phrase" (or module default-bible-mode-book-module) range
+  (bible-mode--open-search query "phrase" (or module bible-mode-book-module default-bible-mode-book-module) range
                            search-on-search))
 
 (defun bible-search-mode-select-book ()
