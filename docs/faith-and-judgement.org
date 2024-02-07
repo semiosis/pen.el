@@ -573,6 +573,45 @@ But can they *enter* the kingdom on earth? Maybe. I believe so, actually, with t
 
 I don't think God ever endorses people to sin, but has grace for sinners.
 
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Romans 6:23
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Romans 6:23
+‾‾‾‾‾‾‾‾‾‾‾
+For the wages of sin is death, but the free
+gift of God is eternal life in Christ Jesus
+our Lord.
+
+(ESV)
+#+end_src
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 3:16-18
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 3:16-18
+‾‾‾‾‾‾‾‾‾‾‾‾
+For God so loved the world, that he gave his
+only Son, that whoever believes in him should
+not perish but have eternal life.
+
+For God did not send his Son into the world to
+condemn the world, but in order that the world
+might be saved through him.
+
+Whoever believes in him is not condemned, but
+whoever does not believe is condemned already,
+because he has not believed in the name of the
+only Son of God.
+
+(ESV)
+#+end_src
+
 *** God's original design is male and female union and also the law reflects the spiritual reality
 
 I saw a dark spot around my rib when I was born-again.
