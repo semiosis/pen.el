@@ -43,6 +43,7 @@ FONT_SIZE=6
 # FONT_SIZE=10
 # FONT_SIZE=13
 FONT_SIZE=26
+# FONT_SIZE=36
 
 light_mode=n
 
