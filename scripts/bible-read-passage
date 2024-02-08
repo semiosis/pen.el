@@ -1,0 +1,53 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+mode=tpopvim
+
+case "$sn" in
+    bible-read-passage) {
+        mode=tpopvim
+    }
+    ;;
+
+    bible-study-passage|*) {
+        mode=sps
+    }
+    ;;
+esac
+
+case "$PEN_PREFIX" in
+    4) {
+        mode=audio
+    }
+    ;;
+
+    *)
+esac
+
+version="$1"
+shift
+
+ref="$@"
+
+case "$mode" in
+    audio) {
+        :
+    }
+    ;;
+
+    sps) {
+        eval "sps $ref"
+    }
+    ;;
+
+    tpopvim) {
+        eval "tpop nem $ref"
+    }
+    ;;
+
+    *)
+esac
