@@ -85,7 +85,7 @@
              "bible-read-passage"
            ;; "sps nem"
            ;; Use emacs
-           "sps")))
+           "bible-study-passage")))
 
     (if (sor ref)
         (concat "[[sh:" tmwindowtype " nasb " ref " ][" ref "]]")
