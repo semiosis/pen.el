@@ -3,6 +3,15 @@
 
 (defvar pen-black-and-white nil)
 
+(defmacro with-face (str &rest properties)
+  `(propertize ,str 'face (list ,@properties)))
+
+;; Examples:
+;; (with-face datestr :inverse-video t)
+;; (with-face datestr 'eshell-git-prompt-modified-face)
+
+(propertize "Pull into " 'face 'transient-heading)
+
 (defun fix-spacemacs-dark-theme ()
   (interactive)
   (let ((dirpath
@@ -668,10 +677,15 @@ is specified, `:italic' is ignored."
     ;; Hopefully, invisible
     (set-face-foreground 'transient-unreachable-key "#111111")
 
-    (set-face-foreground 'header-line "#253525")
+    (set-face-foreground 'header-line "#55f555")
+    ;; (set-face-foreground 'header-line "#253525")
     ;; Keep it dark because the LSP breadcrumb is dark
     (set-face-background 'header-line "#101010")
     ;; (set-face-background 'header-line "#202020")
+
+    ;; This is highly legible:
+    (set-face-foreground 'header-line-highlight "#f555f5")
+    (set-face-background 'header-line-highlight "#101010")
 
     (require 'markdown-mode)
     (progn
@@ -1332,6 +1346,8 @@ Also see option `magit-blame-styles'."
                       gamegrid-color-tty-face-white
 
                       magit-diff-added-highlight
+
+                      header-line-highlight
 
                       ;; org-block
 

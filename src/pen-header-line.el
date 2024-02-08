@@ -9,8 +9,18 @@
        ;; :slant italic
        ;; :underline t
        ))
-  "Read only face."
+  "Header line face."
   :group 'pen-faces)
+
+
+(defsetface header-line-highlight
+            '((t :foreground "#773575"
+                 :background "#101010"
+                 ;; :inverse-video t
+                 :weight normal))
+            "Header line highlight face."
+            :group 'pen-faces)
+
 
 ;; (defset pen-header-line-path-last-time (e/date))
 ;; (defset pen-header-line-path-last-path (get-path nil t))
@@ -61,8 +71,9 @@
                                  :foreground "#8fb28f"
                                  :weight 'bold)))
       (let ((datestr (str (ph-get-date))))
+        ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
         (concat (ph--with-face ph--header
-                               :inverse-video t)
+                               'header-line-highlight)
                 (propertize " " 'display `(space :align-to (-
                                                             right
                                                             ;; For the sidecar margin, so AM/PM isn't covered up
@@ -72,7 +83,7 @@
                                                             ,(length datestr))))
                 (if (not nodate)
                     (ph--with-face datestr
-                                   :inverse-video t)
+                                   'header-line-highlight)
                   ""))))))
 
 (defun ph--display-header ()
