@@ -82,7 +82,7 @@
 (defun d-group-linkify-bible-verse-ref (ref &optional tpop)
   (let ((tmwindowtype
          (if tpop
-             "tpop nem"
+             "bible-read-passage"
            ;; "sps nem"
            ;; Use emacs
            "sps")))
@@ -102,7 +102,7 @@
                           (str2lines (d-group-get-weekly-reading-ot week)))
          collect
          (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " |")))
-  ;; (pen-yas-expand-string "| [[sh:tpop nem nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:tpop nem nasb `(d-group-get-weekly-reading)`]] |")
+  ;; (pen-yas-expand-string "| [[sh:bible-read-passage nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:bible-read-passage nasb `(d-group-get-weekly-reading)`]] |")
   )
 
 (defun d-group-weekly-journal-dir ()

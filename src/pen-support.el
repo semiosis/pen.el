@@ -893,6 +893,9 @@ This also exports PEN_PROMPTS_DIR, so lm-complete knows where to find the .promp
                               (list "TMUX" "")
                               (list "TMUX_PANE" "")
                               (list "PEN_WORKER" (sor (daemonp) "default"))
+
+                              (list "PEN_PREFIX" (str (prefix-numeric-value current-prefix-arg)))
+                              (list "PEN_GLOBAL_PREFIX" (str (prefix-numeric-value current-global-prefix-arg)))
                               (list "PEN_PROMPTS_DIR" (concat pen-prompts-directory "/prompts"))
                               (if (or (pen-var-value-maybe 'pen-sh-update)
                                       (pen-var-value-maybe 'pen-sh-update))
