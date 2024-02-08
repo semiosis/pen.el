@@ -252,12 +252,12 @@ If it does not exist, create it and switch it to `messages-buffer-mode'."
 (setq user-home-directory (or user-home-directory "/root"))
 
 (defset pen-user-emacs-directory
-  (let* ((default-emacs-dir (string-replace "$HOME" user-home-directory user-emacs-directory))
-         (host-emacs-dir (f-join (string-replace "$HOME" user-home-directory user-emacs-directory)
-                                 "host"))
-         (emacs-dir (cond ((f-directory-p host-emacs-dir) host-emacs-dir)
-                          t  default-emacs-dir)))
-    (s-replace "//" "/" emacs-dir)))
+        (let* ((default-emacs-dir (string-replace "$HOME" user-home-directory user-emacs-directory))
+               (host-emacs-dir (f-join (string-replace "$HOME" user-home-directory user-emacs-directory)
+                                       "host"))
+               (emacs-dir (cond ((f-directory-p host-emacs-dir) host-emacs-dir)
+                                (t default-emacs-dir))))
+          (s-replace "//" "/" emacs-dir)))
 
 (defmacro upd (&rest body)
   (let ((l (eval
