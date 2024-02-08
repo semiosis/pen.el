@@ -597,10 +597,43 @@ There is a self-righteous way of trying to keep the law, and there is a humble w
 *John 3:16-21* -  For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.  For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him.  Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.  And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil.  For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed.  But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God.  (ESV)
 
 Those who believe in Jesus Christ are not condemned.
+Whoever believes in Jesus Christ should not perish.
+
+*John 3:16* - “For God (G2316 theos) so (G3779 houto) loved (G25 agapao) the world (G2889 kosmos), that He gave (G1325 didomi) His only (G3439 monogenes) begotten (G3439 monogenes) Son (G5207 huios), that whoever (G3956 pas) believes (G4100 pisteuo) in Him shall not perish (G622 apollumi), but have (G2192 echo) eternal (G166 aionios) life (G2222 zoe).
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  4100  pisteuo  pist-yoo'-o
+
+   from 4102; to have faith (in, upon, or with respect to, a person or
+   thing), i.e. credit; by implication, to entrust (especially one's
+   spiritual well-being to Christ):--believe(-r), commit (to trust), put
+   in trust with.
+   see GREEK for 4102
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  166  aionios  ahee-o'-nee-os
+
+
+   from 165; perpetual (also used of past time, or past and future as
+   well):--eternal, for ever, everlasting, world (began).
+   see GREEK for 165
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  2222  zoe  dzo-ay'
+
+   from 2198; life (literally or figuratively):--life(-time). Compare
+   5590.
+   see GREEK for 2198
+   see GREEK for 5590
+#+END_SRC
 
 But repentance and coming to the light are absolutely part of the gospel!
 
 *1 Corinthians 15:1-4* -  Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain.  For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures,  (ESV)
+
+*Acts 2:47* - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
 
 *** A life of faith (living in accordance with the truth, and in relationship with God) is required - faith continues
 What I mean by relationship is:
@@ -632,7 +665,28 @@ We must stop sinning.
 
 *Revelation of John 21:8* - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.”  (ESV)
 
-** Can Other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
+* Spirit of Truth vs Spirit of Error
+Not all 'spirit' is true.
+It's false to say that 'all spirit is true' and body and soul are false.
+
+*John 14:6* - Jesus said to him, I am the way, and the truth, and the life.  No one comes to the Father except through me.  (ESV)
+
+*Psalms 119:160* - The sum of Your word is truth, And every one of Your righteous ordinances is everlasting. (ESV)
+
+*John 17:17* - Sanctify them in the truth; Your word is truth. (ESV)
+
+** Spirit of Truth
+- Jesus' words are Truth and Life
+- God's word is truth
+- Jesus Christ is the Word of God in the Flesh
+- Spirit of Truth
+
+** Spirit of Error
+- Contradicts Jesus
+- Contradicts Scripture
+- Contradicts God's Word
+
+* Can Other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 It's not really the religion but who puts their faith in Jesus and *obeys* the gospel who will be saved.
 
 Not all religions are equal.
@@ -650,7 +704,7 @@ There is only one true God, the Father of Jesus Christ who has revealed Himself 
 
 *James 1:26* - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
 
-** Can gay 'marriage' exist anywhere in the Kingdom of God? I'm unsure.
+* Can gay 'marriage' exist anywhere in the Kingdom of God? I'm unsure.
 I currently believe this means that grace may
 exist for gay people who have faith in Jesus
 but they are accountable to God for it, and
@@ -783,7 +837,7 @@ Jesus is the cornerstone. We must believe in Christ Jesus and obey His words.
 
 *John 17:11-12* -  And I am no longer in the world, but they are in the world, and I am coming to you.  Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me.  I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled. (ESV)
 
-*** Securely abiding in Jesus, abiding in Jesus Christ's love 
+*** Securely abiding in Jesus, abiding in Jesus Christ's love
 - Loving Jesus and abiding in His love involves keeping His commandments
   - Love one another as He loved us - the same way, selflessly, forgivingly, mercifully, compassionately
   - Love God faithfully
