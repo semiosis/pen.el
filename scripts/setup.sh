@@ -2175,5 +2175,6 @@ e ia hyperbole
 # This is awesome and works quite well
 (
 cd /root/repos
-gc "https://github.com/cmang/durdraw"
+cd "$(gc "https://github.com/cmang/durdraw")"
+bash ./installconf.sh 
 )
