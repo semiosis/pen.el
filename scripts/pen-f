@@ -95,7 +95,7 @@ case "$opt" in
 
         set pipefail
         exec 0</dev/null
-        filter="$(cat "$PENELD/config/filters.sh" | pen-mfz -C -nm -p -pscript "true; nh ocif -nd -E 'cat $fp | timeout 4 {}'" -pcomplete)"
+        filter="$(cat "$PENELD/config/filters/filters.sh" | pen-mfz -C -nm -p -pscript "true; nh ocif -nd -E 'cat $fp | timeout 4 {}'" -pcomplete)"
         ret="$?" # catches fzf cancel exit = 130
 
         if [ -n "$filter" ]; then
@@ -169,7 +169,7 @@ case "$opt" in
     bind1-with-fzf) {
         file="$1"
 
-        cat "$PENELD/config/filters.sh" | pen-f z
+        cat "$PENELD/config/filters/filters.sh" | pen-f z
 
         exit 0
     }
