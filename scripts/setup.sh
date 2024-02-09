@@ -2189,3 +2189,10 @@ cargo install --path .
 )
 # Then make the wrapper
 # mkw -f target/release/agg
+
+
+# Hmm. If I use this, I would make the models in Blender
+# And then display them with Term_GL.
+(
+cd "$(gc "https://github.com/wojciech-graj/TermGL")"
+)
