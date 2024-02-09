@@ -2180,8 +2180,12 @@ bash ./installconf.sh
 )
 
 # Make asciinema into gif
-cargo install --git https://github.com/asciinema/agg
+# cargo install --git https://github.com/asciinema/agg
 (
 cd /root/repos
 cd "$(gc "https://github.com/asciinema/agg")"
+cargo build --release
+cargo install --path .
 )
+# Then make the wrapper
+# mkw -f target/release/agg
