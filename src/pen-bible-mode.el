@@ -1199,7 +1199,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                    (strongs_word_len (length strongs_word)))
                               (progn
                                 (setq matchstrlen strongs_code_len)
-                                (insert (concat "(" strongs_code " " strongs_word ")"))
+                                (insert (concat " (" strongs_code " " strongs_word ")"))
 
                                 (let ((refstart (- (point)
                                                    strongs_len

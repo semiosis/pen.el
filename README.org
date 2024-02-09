@@ -41,6 +41,8 @@ The Bible-software I hope will be as featureful as any of the other options avai
   - theology students
   - anyone wanting software that respects a user's desire to remain holy
 
+[[./docs/asciinema/637135.gif]]
+
 ** Technical details
 - It runs in a docker container.
 - It's primarily text-based computing environment with emacs as the main component towards that end.
