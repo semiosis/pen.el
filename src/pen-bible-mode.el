@@ -1199,14 +1199,16 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                    (strongs_word_len (length strongs_word)))
                               (progn
                                 (setq matchstrlen strongs_code_len)
-                                (insert (concat strongs_code " " strongs_word))
+                                (insert (concat "(" strongs_code " " strongs_word ")"))
 
                                 (let ((refstart (- (point)
-                                                   strongs_len))
+                                                   strongs_len
+                                                   1))
                                       (refend (+ (- (point)
-                                                    strongs_len)
+                                                    strongs_len
+                                                    1)
                                                  strongs_code_len)))
-                                  (put-text-property refstart refend 'face 'bible-codes)
+                                  (put-text-property refstart refend 'font-lock-face 'bible-codes)
                                   (cond ((re-match-p "^G" strongs_code)
                                          (put-text-property refstart refend 'keymap bible-mode-greek-keymap))
                                         ((re-match-p "^H" strongs_code)
@@ -1215,14 +1217,18 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                                          nil)))
                                 (let ((refstart (- (point)
                                                    strongs_word_len
+                                                   1
                                                    ;; matchstrlen
                                                    ))
-                                      (refend (point)))
+                                      (refend (- (point)
+                                                 1)))
                                   (if (member (str2sym strongs_code)
                                               bible-strongs-always-show-codelist)
-                                      (put-text-property refstart refend 'face 'bible-greek-always)
+                                      (progn
+                                        (lo (buffer-substring refstart refend))
+                                        (put-text-property refstart refend 'font-lock-face 'bible-greek-always))
                                     (put-text-property refstart refend
-                                                       'face 'bible-greek))))))
+                                                       'font-lock-face 'bible-greek))))))
                         (setq match (string-match "[GH][0-9]+" savlm (+ match matchstrlen)))))
 
                     (if (string-match "lemma.TR:.*" savlm) ;;Lemma
@@ -1233,7 +1239,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                             (insert " " word)
                             (setq refstart (- (point) (length word))
                                   refend (point))
-                            (put-text-property refstart refend 'face 'bible-lemma)
+                            (put-text-property refstart refend 'font-lock-face 'bible-lemma)
                             (put-text-property refstart refend 'keymap bible-mode-lemma-keymap))))
 
                     (comment
@@ -1246,7 +1252,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
                              (insert (if (eq iter 1) "" " ") word)
                              (setq refstart (- (point) (length word))
                                    refend (point))
-                             (put-text-property refstart refend 'face 'bible-hebrew)
+                             (put-text-property refstart refend 'font-lock-face 'bible-hebrew)
                              (put-text-property refstart refend 'keymap bible-mode-hebrew-keymap))))))))
           (insert)))))
 
