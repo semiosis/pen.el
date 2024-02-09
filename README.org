@@ -41,6 +41,8 @@ The Bible-software I hope will be as featureful as any of the other options avai
   - theology students
   - anyone wanting software that respects a user's desire to remain holy
 
+ ** Bible word-study
+
 [[./docs/asciinema/637135.gif]]
 
 ** Technical details
@@ -97,6 +99,10 @@ The Bible-software I hope will be as featureful as any of the other options avai
         and approve what God’s will is—his good,
         pleasing and perfect will.
 #+END_SRC
+
+** Weekly Bible-study
+
+[[./docs/asciinema/637136.gif]]
 
 ** Always pray
 *Ephesians 6:18* -  With all prayer and petition pray at all times in the Spirit, and with this in view, be on the alert with all perseverance and petition for all the saints,  (NASB)
