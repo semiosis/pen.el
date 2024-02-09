@@ -2171,3 +2171,9 @@ install-babashka
 e ia focus
 
 e ia hyperbole
+
+# This is awesome and works quite well
+(
+cd /root/repos
+gc "https://github.com/cmang/durdraw"
+)
