@@ -2178,3 +2178,10 @@ cd /root/repos
 cd "$(gc "https://github.com/cmang/durdraw")"
 bash ./installconf.sh 
 )
+
+# Make asciinema into gif
+cargo install --git https://github.com/asciinema/agg
+(
+cd /root/repos
+cd "$(gc "https://github.com/asciinema/agg")"
+)
