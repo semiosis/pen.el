@@ -2462,6 +2462,7 @@ May use to generate code from comments."
 (require 'pen-iterator)
 (require 'pen-icons)
 (require 'pen-timeout)
+(require 'pen-amot)
 
 (if (inside-docker-p)
     (progn
