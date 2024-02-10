@@ -180,17 +180,19 @@ Faith is a relationship with God. God has promised inheriting the Kingdom, inher
 
 My equations:
 
-=Faith = Hope-from/in-God * Work=
-
-=Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)=
-
-=Work = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)=
-
-=Obedience = Turning from sin, loving, showing mercy, etc.=
-
-=Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"=
-
-=Response-of-love-to-Jesus = e.g. praise, thankfulness=
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Faith = Hope-from/in-God * Work
+  
+  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
+  
+  Work = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+  
+  Obedience = Turning from sin, loving, showing mercy, etc.
+  
+  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+  
+  Response-of-love-to-Jesus = e.g. praise, thankfulness
+#+END_SRC
 
 But salvation is a gift and God is sovereign to save.
 That's why it's grace.
@@ -1663,15 +1665,17 @@ If a person does not have obedience, trust and
 repentance from sin, but their faith has belief, then they only
 abide in Jesus extremely precariously, and also that person's 'faith' probably wont receive much at all from God.
 
-=Faith = Hope-from/in-God * Work=
-
-=Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)=
-
-=Work = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)=
-
-=Obedience = e.g. loving, showing mercy=
-
-=Response-of-love-to-Jesus = e.g. praise, thankfulness=
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  Faith = Hope-from/in-God * Work
+  
+  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
+  
+  Work = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+  
+  Obedience = e.g. loving, showing mercy
+  
+  Response-of-love-to-Jesus = e.g. praise, thankfulness
+#+END_SRC
 
 These things are factors of faith.
 
