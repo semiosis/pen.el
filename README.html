@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-02-11 Sun 12:48 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org89d255a">1. <code>Pen.el</code> (a holy OS)</a>
+<ul>
+<li><a href="#org67f76eb">1.1. Aims</a></li>
+<li><a href="#orga609425">1.2. Intended users</a></li>
+<li><a href="#org70c2bab">1.3. Technical details</a></li>
+<li><a href="#org598bfe9">1.4. Quick installation</a></li>
+<li><a href="#orga080f1d">1.5. It's about holiness</a></li>
+<li><a href="#org8b605d0">1.6. Weekly Bible-study</a></li>
+<li><a href="#org10e08ba">1.7. Always pray</a></li>
+</ul>
+</li>
+<li><a href="#orgefeb50f">2. My thoughts and bible references regarding theology</a></li>
+<li><a href="#orgc0f4304">3. Jesus Christ is Lord! :)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org89d255a" class="outline-2">
+<h2 id="org89d255a"><span class="section-number-2">1.</span> <code>Pen.el</code> (a holy OS)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Pen.el is an emacs-based operating system designed with holiness in mind.
+It's a free and holy OS made with emacs, debian linux and docker.
+</p>
+
+<p>
+<i>This project is not in a ready state</i>
+</p>
+
+<p>
+It's holy because:
+</p>
+<ul class="org-ul">
+<li>This software is dedicated to supporting one's Christian faith
+<ul class="org-ul">
+<li>Facilitate:
+<ul class="org-ul">
+<li>Praying</li>
+<li>Praising</li>
+<li>Running churches</li>
+<li>Maintaining holiness</li>
+<li>Bible studies</li>
+</ul></li>
+</ul></li>
+<li>Features:
+<ul class="org-ul">
+<li>Bible software comparable to Logos / e-Sword.</li>
+<li>Integrates lots of Christian resources.</li>
+<li>Lots of scripts for working with Bible-verses etc.
+<ul class="org-ul">
+<li>Extracting Bible verses from websites, documents, etc.</li>
+<li>Canonicalising Bible-refs</li>
+<li>Formatting Bible passages in various ways.</li>
+<li>etc.</li>
+</ul></li>
+</ul></li>
+<li>Policies:
+<ul class="org-ul">
+<li>Avoid AI fiction and ensure it is kept at a safe distance</li>
+<li>Strict ban on proprietary software</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org67f76eb" class="outline-3">
+<h3 id="org67f76eb"><span class="section-number-3">1.1.</span> Aims</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Provide the user with free (but advanced) Bible study software, and</li>
+<li>Provide trustworthy Christian resources that are all offline.</li>
+<li>Make it easier to maintain one's Christian faith by eliminating all the distractions, yet being featureful and fun.</li>
+<li>Able to be the main operating system somebody uses (It's my main OS).</li>
+</ul>
+
+<p>
+Using Pen.el, there should be no need to go online most of the time, as it should contain everything you need to be content with your computing.
+The Bible-software I hope will be as featureful as any of the other options available, but completely free, and also low maintenance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga609425" class="outline-3">
+<h3 id="orga609425"><span class="section-number-3">1.2.</span> Intended users</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><p>
+emacs/linux savvy:
+</p>
+<ul class="org-ul">
+<li>pastors,</li>
+<li>church deacons,</li>
+<li>chaplains,</li>
+<li>theology students</li>
+<li>anyone wanting software that respects a user's desire to remain holy</li>
+</ul>
+
+<p>
+** Bible word-study
+</p></li>
+</ul>
+
+
+<div id="org9c0eb41" class="figure">
+<p><img src="./docs/asciinema/637135.gif" alt="637135.gif" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org70c2bab" class="outline-3">
+<h3 id="org70c2bab"><span class="section-number-3">1.3.</span> Technical details</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>It runs in a docker container.</li>
+<li>It's primarily text-based computing environment with emacs as the main component towards that end.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org598bfe9" class="outline-3">
+<h3 id="org598bfe9"><span class="section-number-3">1.4.</span> Quick installation</h3>
+<div class="outline-text-3" id="text-1-4">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="linenr"> 1: </span>git clone <span style="color: #2aa198;">"https://github.com/semiosis/pen.el"</span>
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>mkdir -p ~/.pen
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span><span style="color: #008787;"># </span><span style="color: #008787;">Add the scripts to the PATH</span>
+<span class="linenr"> 6: </span><span style="color: #268bd2;">echo</span> export <span style="color: #8787d7;">PATH</span>=<span style="color: #2aa198;">"$(</span><span style="color: #d75fd7;">realpath .</span><span style="color: #2aa198;">)/pen.el/scripts:\$PATH"</span> &gt;&gt; ~/.profile
+<span class="linenr"> 7: </span>
+<span class="linenr"> 8: </span><span style="color: #008787;"># </span><span style="color: #008787;">Add this to prevent C-s from freezing the terminal</span>
+<span class="linenr"> 9: </span><span style="color: #268bd2;">echo</span> <span style="color: #2aa198;">"stty stop undef 2&gt;/dev/null; stty start undef 2&gt;/dev/null"</span> | tee -a ~/.zshrc &gt;&gt; ~/.bashrc
+<span class="linenr">10: </span>
+<span class="linenr">11: </span><span style="color: #008787;"># </span><span style="color: #008787;">Source your .profile</span>
+<span class="linenr">12: </span><span style="color: #268bd2;">.</span> ~/.profile
+<span class="linenr">13: </span>
+<span class="linenr">14: </span><span style="color: #008787;"># </span><span style="color: #008787;">Run pen</span>
+<span class="linenr">15: </span>pen
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga080f1d" class="outline-3">
+<h3 id="orga080f1d"><span class="section-number-3">1.5.</span> It's about holiness</h3>
+<div class="outline-text-3" id="text-1-5">
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr"> 1: </span>holiness
+<span class="linenr"> 2: </span>    The state of being holy.
+<span class="linenr"> 3: </span>    "a life of holiness and total devotion to
+<span class="linenr"> 4: </span>    God"
+<span class="linenr"> 5: </span>
+<span class="linenr"> 6: </span>    Set-apart from the world, and drawing
+<span class="linenr"> 7: </span>    nearer to God.
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>    A life of discipline, focus, and attention
+<span class="linenr">10: </span>    to matters of righteous living.
+<span class="linenr">11: </span>
+<span class="linenr">12: </span>    It is, as Paul states in Romans 12:1-2, a
+<span class="linenr">13: </span>    life fully presented to God in a way that
+<span class="linenr">14: </span>    transforms our lives to God's glory rather
+<span class="linenr">15: </span>    than conforming our lives to the ways of
+<span class="linenr">16: </span>    the world.
+<span class="linenr">17: </span>
+<span class="linenr">18: </span>    Romans 12:1-2
+<span class="linenr">19: </span>      Therefore, I urge you, brothers and
+<span class="linenr">20: </span>      sisters, in view of God&#8217;s mercy, to
+<span class="linenr">21: </span>      offer your bodies as a living sacrifice,
+<span class="linenr">22: </span>      holy and pleasing to God&#8212;this is your
+<span class="linenr">23: </span>      true and proper worship. 2 Do not
+<span class="linenr">24: </span>      conform to the pattern of this world,
+<span class="linenr">25: </span>      but be transformed by the renewing of
+<span class="linenr">26: </span>      your mind. Then you will be able to test
+<span class="linenr">27: </span>      and approve what God&#8217;s will is&#8212;his good,
+<span class="linenr">28: </span>      pleasing and perfect will.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b605d0" class="outline-3">
+<h3 id="org8b605d0"><span class="section-number-3">1.6.</span> Weekly Bible-study</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<div id="org5ef0405" class="figure">
+<p><img src="./docs/asciinema/637136.gif" alt="637136.gif" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10e08ba" class="outline-3">
+<h3 id="org10e08ba"><span class="section-number-3">1.7.</span> Always pray</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+<b>Ephesians 6:18</b> -  With all prayer and petition pray at all times in the Spirit, and with this in view, be on the alert with all perseverance and petition for all the saints,  (NASB)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgefeb50f" class="outline-2">
+<h2 id="orgefeb50f"><span class="section-number-2">2.</span> My thoughts and bible references regarding theology</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<b>Acts 13:48</b> - And when the Gentiles heard this, they began rejoicing and glorifying the word of the Lord, and as many as were appointed to eternal life believed. (ESV)
+</p>
+
+<p>
+I've been thinking about belief, faith, works, law and receiving the Holy Spirit!
+Please let me know what you think if you have the time.
+I'm trying to get clearer on this.
+</p>
+
+<p>
+<a href="https://github.com/semiosis/thoughts-on-theology">https://github.com/semiosis/thoughts-on-theology</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0f4304" class="outline-2">
+<h2 id="orgc0f4304"><span class="section-number-2">3.</span> Jesus Christ is Lord! :)</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2024-02-11 Sun 12:48</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
