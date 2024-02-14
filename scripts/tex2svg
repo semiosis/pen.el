@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+set -xv
+
 sn="$(basename "$0")"
 
 tf_tex="$(odn ux tf tex || echo /dev/null)"
@@ -23,6 +25,8 @@ mant="${fn%.*}"
 
 orig_dir="$(pwd)"
 cd "$dn"
+
+# TODO move all \usepackage commands to the preamble
 
 out=$(odn pdflatex "$fn"; pdf2svg "${mant}.pdf" "${mant}.svg" 2>&1)
 

@@ -1,0 +1,19 @@
+#!/bin/bash
+export TTY
+
+read -r -d '' texcode <<HEREDOC
+\documentclass{standalone}
+\usepackage{varwidth}
+\usepackage{algorithm} %ctan.org\pkg\algorithms
+\usepackage{algpseudocode}
+\begin{document}
+\begin{varwidth}{\linewidth}
+\par\noindent
+\begin{algorithmic}[1]
+$(cat)
+\end{algorithmic}
+\end{varwidth}
+\end{document}
+HEREDOC
+
+printf -- "%s" "$texcode" | tex2png "$@"
