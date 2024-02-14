@@ -175,27 +175,27 @@ Faith has 'substance' and may be described as a vector:
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
 
         Faith plane                 __
-        Serving God plane            /|                                o
-                                    /                                 /
-                                   /                                 /   Past
- Minimum        __              __/                                 /   Baggage /
- Initial         /| 1x Love      /|    2x Love                     /  persecuting
- Belief         /               /                                |/_     Jesus
-   _           /               /
-   /|         /               /                      Dead faith
-  o          o               o                    o
+        Serving God plane            /|
+                                    /                       From past
+                                   /                          baggage          o     _
+ Minimum        __              __/                         persecuting       /       /|
+ Initial         /| 1x Love      /|    2x Love               Jesus           /       /
+ Belief         /               /                           to receiving    /   ↺   /
+   _           /               /                             forgiveness   /       /
+   /|         /               /                             and loving   |/_      /
+  o          o               o                                Jesus              o
 
- ----------------------------------------------------------+-----------------------
-                                                           |    Impossible to be
-       Faithless plane                                     |     simultaneously
-       Serving yourself plane                              |
-       Justifying yourself plane                           |   yoked to God  _
-            __                                             |  (led by)       /|
+ --------------------------------------------+-------------+----------------------------
+                                             |  Dead faith |    Impossible to be
+       Faithless plane                       |             |     simultaneously
+       Serving yourself plane                |      o      |
+       Justifying yourself plane             |             |   yoked to God  _
+            __                               +-------------+  (led by)       /|
              /| Dead works                                 |                /
             /                                              |    while      o
            /                                               |              /
           /            These are entirely worthless        |            |/_
-         o                                                 |  (led by)
+         x                                                 |  (led by)
                                                            |   yoked to money
 #+END_SRC
 
