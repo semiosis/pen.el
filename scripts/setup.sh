@@ -2203,3 +2203,11 @@ git clone "https://github.com/TheZoraiz/ascii-image-converter"
 )
 
 go install "github.com/TheZoraiz/ascii-image-converter@latest"
+
+# An improvement to 'ed'
+(
+cd ~/repos
+git clone "https://github.com/sidju/hired"
+cd hired
+cargo build
+)
