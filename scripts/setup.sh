@@ -2196,3 +2196,10 @@ cargo install --path .
 (
 cd "$(gc "https://github.com/wojciech-graj/TermGL")"
 )
+
+(
+cd ~/repos
+git clone "https://github.com/TheZoraiz/ascii-image-converter"
+)
+
+go install "github.com/TheZoraiz/ascii-image-converter@latest"
