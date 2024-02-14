@@ -93,7 +93,7 @@ Pisteuo = faith.
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   :  4100  pisteuo  pist-yoo'-o
-  
+
    from 4102; to have faith (in, upon, or with respect to, a person or
    thing), i.e. credit; by implication, to entrust (especially one's
    spiritual well-being to Christ):--believe(-r), commit (to trust), put
@@ -132,7 +132,7 @@ I believe in all of theses:
 - =sola scriptura= (by Scripture alone) AMEN!!
 - =Solus Christus= AMEN!!
 - =Soli Deo gloria= (glory to God alone) AMEN!! But the glory God gives us glorifies God.
-  - When it comes to forgiving offenses of others, my understanding is that it is about forgiving others' offenses against 'you', thereby ultimately still going through Christ for forgiveness, since 
+  - When it comes to forgiving offenses of others, my understanding is that it is about forgiving others' offenses against 'you', thereby ultimately still going through Christ for forgiveness, since
   - *John 20:22-23* - And when he had said this, he breathed on them and said to them, Receive the Holy Spirit. (ESV)
   - *Proverbs 19:11* - Good sense makes one slow to anger, and it is his glory to overlook an offense. (ESV)
   - *Matthew 6:12* - and forgive us our debts, as we also have forgiven our debtors.
@@ -179,17 +179,17 @@ Faith has 'substance' and may be described as a vector:
 - Work/Love is the magnitude.
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-                    
-                              __ 
-                               /|
-                              /  
-                             /   
-          __              __/      
-           /| 1x love      /|    2x Love
-          /               /   
-         /               /    
-        /               /     
-       o               o      
+
+                              __
+                               /|                                   o
+                              /                                    /
+                             /                                    /
+          __              __/                                    /   Dead works
+           /| 1x love      /|    2x Love                        /
+          /               /                                   |/_
+         /               /
+        /               /                      Dead faith
+       o               o                    o
 
 #+END_SRC
 
@@ -372,7 +372,7 @@ It's for their sake, so that they would be able to believe (have faith).
 *John 11:15* - and I am (G5463 chairo) glad (G5463 chairo) for your sakes (G1223 dia) that I was not there (G1563 ekei), so (G2443 hina) that you may believe (G4100 pisteuo); but let us go (G71 ago) to him.”
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  :  4100  pisteuo  pist-yoo'-o  
+  :  4100  pisteuo  pist-yoo'-o
 
    from 4102; to have faith (in, upon, or with respect to, a person or
    thing), i.e. credit; by implication, to entrust (especially one's
@@ -1418,7 +1418,7 @@ I John 2:17: And the world is passing away along with its desires, but whoever d
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   :  3306  meno  men'-o
-  
+
    a primary verb; to stay (in a given place, state, relation or
    expectancy):--abide, continue, dwell, endure, be present, remain,
    stand, tarry (for), X thine own.
