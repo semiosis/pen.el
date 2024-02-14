@@ -166,8 +166,8 @@ The whole chapter of Hebrews 11 also describes many 'acts' of faith. Belief and 
 
   Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
 
-  Love is proportional-to forgiveness:
-  Love ∝ forgiveness
+  Love is proportional-to the baggage which has been forgiven
+  Love ∝ forgiven-baggage
 
   Obedience ∝ Love
 
@@ -180,16 +180,16 @@ Faith has 'substance' and may be described as a vector:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
 
-                              __
-                               /|                                   o
-                              /                                    /
-                             /                                    /
-          __              __/                                    /   Dead works
-           /| 1x love      /|    2x Love                        /
-          /               /                                   |/_
-         /               /
-        /               /                      Dead faith
-       o               o                    o
+  Faith plane                 __                                               |  Faithless plane
+  Serving God plane            /|                                o             |  Serving yourself plane
+                              /                                 /              |  Justifying yourself plane
+                             /                                 /   Past        |       __
+          __              __/                                 /   Baggage /    |        /| Dead works
+           /| 1x love      /|    2x Love                     /  persecuting    |       /
+          /               /                                |/_     Jesus       |      /
+         /               /                                                     |     /            These are entirely worthless
+        /               /                      Dead faith                      |    o
+       o               o                    o                                  |
 
 #+END_SRC
 
