@@ -1,0 +1,30 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# this doesn't work yet
+# I cah already use \equation in org-moode
+# But I want to be able to also turn them into images
+
+read -r -d '' texcode <<HEREDOC
+\documentclass{standalone}
+\usepackage{varwidth}
+\usepackage{amsmath}
+\usepackage{amssymb} % this is for \mid
+\usepackage{mathtools}
+\usepackage{algorithm} %ctan.org\pkg\algorithms
+\begin{document}
+\begin{varwidth}{\linewidth}
+\par\noindent
+$(cat)
+\end{varwidth}
+\end{document}
+HEREDOC
+
+sn="$(basename "$0")"
+if [[ "$sn" == *svg ]]; then
+    printf -- "%s" "$texcode" | tex2svg "$@"
+else
+    printf -- "%s" "$texcode" | tex2png "$@"
+fi
