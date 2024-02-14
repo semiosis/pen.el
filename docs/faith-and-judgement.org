@@ -153,19 +153,6 @@ Hebrews describes faith as hope with belief in reward from seeking God.
 
 The whole chapter of Hebrews 11 also describes many 'acts' of faith. Belief and action are like a vector.
 
-\documentclass{article}
-\usepackage{tikz}
-\usepackage{amsmath}
-\begin{document}
-\begin{tikzpicture}
-  \draw[thin,gray!40] (-2,-2) grid (2,2);
-  \draw[<->] (-2,0)--(2,0) node[right]{$x$};
-  \draw[<->] (0,-2)--(0,2) node[above]{$y$};
-  \draw[line width=2pt,blue,-stealth](0,0)--(1,1) node[anchor=south west]{$\boldsymbol{u}$};
-  \draw[line width=2pt,red,-stealth](0,0)--(-1,-1) node[anchor=north east]{$\boldsymbol{-u}$};
-\end{tikzpicture}
-\end{document}
-
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   Faith = Hope-from/in-God * Work/Love
 
@@ -178,11 +165,33 @@ The whole chapter of Hebrews 11 also describes many 'acts' of faith. Belief and 
   Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
 
   Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+
+  Love is proportional-to forgiveness:
+  Love ∝ forgiveness
+
+  Obedience ∝ Love
+
+  F = H * L
 #+END_SRC
 
 Faith has 'substance' and may be described as a vector:
 - Hope-from/in-God is the direction.
 - Work/Love is the magnitude.
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+                    
+                              __ 
+                               /|
+                              /  
+                             /   
+          __              __/      
+           /| 1x love      /|    2x Love
+          /               /   
+         /               /    
+        /               /     
+       o               o      
+
+#+END_SRC
 
 But it's God that tests the faith, and God that justifies. That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
 
