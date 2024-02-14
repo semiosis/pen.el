@@ -1,0 +1,49 @@
+#!/bin/bash
+export TTY
+
+sn="$(basename "$0")"
+
+tf_tex="$(odn ux tf tex || echo /dev/null)"
+trap "rm \"$tf_tex\" 2>/dev/null" 0
+
+cat | ds -q "$sn" > "$tf_tex"
+
+fp="$tf_tex"
+
+name="$1"
+
+if test "$name" = nil; then
+    name=""
+fi
+
+fn=$(basename "$fp")
+dn=$(dirname "$fp")
+ext="${fn##*.}"
+mant="${fn%.*}"
+
+orig_dir="$(pwd)"
+cd "$dn"
+
+out=$(odn pdflatex "$fn"; pdf2svg "${mant}.pdf" "${mant}.svg" 2>&1)
+
+genf="$dn/${mant}.svg"
+cd "$orig_dir"
+
+if ! test -f "$genf"; then
+    echo "$out" 1>&2
+    exit 1
+fi
+
+: ${name:="$mant"}
+# echo "[[file:${name}.svg][$name]]"
+
+nf="${name}.svg"
+cp -a "$genf" "$orig_dir/$nf"
+
+if [[ "$sn" == "tex2png" ]]; then
+    nnf="${name}.png"
+    convert "$orig_dir/$nf" "$orig_dir/$nnf"
+    echo -n "[[file:$nnf]]"
+else
+    echo -n "[[file:$nf]]"
+fi

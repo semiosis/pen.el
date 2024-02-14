@@ -2211,3 +2211,5 @@ git clone "https://github.com/sidju/hired"
 cd hired
 cargo build
 )
+
+agi pdf2svg
