@@ -269,11 +269,32 @@ Fear made them disobedient. They had only a small amount of faith.
 
 *I John 2:17* - And the world is passing away along with its desires, but *whoever does the will of God abides forever*.
 
+=pisteuo = to have faith upon=
+
+*John 3:36* - Whoever believes (G4100 *pisteuo*) in the Son has eternal life; whoever does not *obey* the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+*John 3:16* - "For God (G2316 theos) so (G3779 houto) loved (G25 agapao) the world (G2889 kosmos), that He gave (G1325 didomi) His only (G3439 monogenes) begotten (G3439 monogenes) Son (G5207 huios), that whoever (G3956 pas) believes (G4100 pisteuo) in Him shall not perish (G622 apollumi), but have (G2192 echo) eternal (G166 aionios) life (G2222 zoe).
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  4100  pisteuo  pist-yoo'-o
+
+   from 4102; to have faith (in, upon, or with respect to, a person or
+   thing), i.e. credit; by implication, to entrust (especially one's
+   spiritual well-being to Christ):--believe(-r), commit (to trust), put
+   in trust with.
+   see GREEK for 4102
+#+END_SRC
+
+We must trust Him and Obey.
+
 ** Jesus' odedience resulted in turning others to obedience
 *Romans 5:19* - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many *will be made* righteous.
 
 A process:
 - 'Will be made' => Turning people to obedience.
+
+*** Likewise, we are commanded to do the same
+*Matthew 28:18-20* - And Jesus came and said to them, All authority in heaven and on earth has been given to me.  Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.
 
 ** It is the mercy of God that we are turned from obedience to obedience
 I think that is the correct way to see the following Scripture:
