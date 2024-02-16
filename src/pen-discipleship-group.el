@@ -11,7 +11,17 @@
           (4 . ("Genesis 27-28"))
           (5 . ("Genesis 39-47"))
           (6 . ("Genesis 48-50"
-                "Exodus 1"))))
+                "Exodus 1-7"))
+          (7 . ("Exodus 8-17"))
+          (8 . ("Exodus 18-31"))
+          (9 . ("Exodus 32-40"
+                "Leviticus 8-17"))
+          (10 . ("Leviticus 18-26"
+                 "Numbers 11-17"))
+          (11 . ("Numbers 20"
+                 "Numbers 27"
+                 "Numbers 34-35"
+                 "Deuteronomy 1-7"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan
