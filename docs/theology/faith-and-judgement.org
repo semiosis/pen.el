@@ -399,6 +399,29 @@ But now I know.
 - the 613 Mosaic laws
 - the law of Christ
 
+# It's interesting that there is a distinction in Exodus 16:28
+
+# *Exodus 16:28* - And the Lord said to Moses, How long will you refuse to keep my commandments and my laws? (ESV)
+
+# *Exodus 16:28* - Then the Lord (H3068 Yhovah) said (H559 'amar) to Moses (H4872 Mosheh), “How (H575 'an) long (H5704 `ad) do you refuse (H3985 ma'en) to keep (H8104 shamar) My commandments (H4687 mitsvah) and My instructions (H8451 towrah)?
+
+# #+BEGIN_SRC text -n :async :results verbatim code :lang text
+#   :  4687  mitsvah  mits-vaw'
+
+#    from 6680; a command, whether human or divine (collectively,
+#    the Law):--(which was) commanded(-ment), law, ordinance,
+#    precept.
+#    see HEBREW for 06680
+# #+END_SRC
+
+# #+BEGIN_SRC text -n :async :results verbatim code :lang text
+#   :  8451  towrah  to-raw'
+
+#    or torah {to-raw'}; from 3384; a precept or statute,
+#    especially the Decalogue or Pentateuch:--law.
+#    see HEBREW for 03384
+# #+END_SRC
+
 * Commandments and faith
 *Revelation of John 14:12* - Here is a call for the endurance of the saints, those who keep the commandments of God and their faith in Jesus.
 
