@@ -1,4 +1,0 @@
-** =pen.el= improvements
-- I plan on linking =.prompt= (prompt
-description) files into a graph format where
-fungible prompts can be observed.
