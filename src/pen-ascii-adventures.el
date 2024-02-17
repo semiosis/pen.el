@@ -78,6 +78,8 @@
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
 
 
+;; TODO Eventually build a map.
+;; But it might be better if I leave it for the user to try to remember the way.
 (defun aa/map ()
   "This should display the map.
 
