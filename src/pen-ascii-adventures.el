@@ -1,13 +1,17 @@
 (require 'pen-hypertext)
 
+
 ;; Remember
 ;; Every slot that appears in each parent class is replicated in the new class.
+
 
 ;; TODO Find out if I can save eieio objects
 ;; [[info:(eieio) eieio-persistent]]
 
+
 ;; Example of using ebdb
 ;; j:ebdb-record
+
 
 ;; The 'place' has an animated, clickable
 
