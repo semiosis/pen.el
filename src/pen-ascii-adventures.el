@@ -53,8 +53,11 @@ A map should mainly simply connect places together.
 
    (slot-value pers 'animation-speed)))
 
-(defvar entrance
-  (person :name "Eric" :birthday "June" :phone "555-5555"))
+;; I won't typically need to have many areas remain open in memory.
+;; But, actually, I *do* want world state.
+
+(defset entrance
+        (place :name "House" :timer 1))
 
 ;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
