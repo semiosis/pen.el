@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
+if test "$NO_RL" = y || printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P 'comint$'; then
     # skip rlwrap
     "$@"
     exit "$?"

@@ -5,4 +5,6 @@ export TTY
 
 # xterm inside Pen.el has sixel support
 
-xt -xt cterm -ct-nem guild-of-thieves -vmode sixel
+# I have to disable readline for sixel
+
+xt -xt cterm -ct-nem norl guild-of-thieves -vmode sixel

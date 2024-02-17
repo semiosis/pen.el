@@ -113,6 +113,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            nrl|norl) {
+                export NO_RL=y
+            }
+            ;;
+
             sth) {
                 export SSH_HOST_ALLOWED=y
             }
