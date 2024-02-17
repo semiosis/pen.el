@@ -39,8 +39,7 @@
 ;;     - This leads to another scene, etc.
 
 
-;; I guess the genius of this game is that it could lead anywhere,
-;; 
+;; I guess the genius of this game is that it could lead anywhere.
 
 ;; The above alone should be quite fun.
 ;; I would not even need an inventory, etc.
