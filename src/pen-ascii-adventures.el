@@ -41,19 +41,28 @@ A map should mainly simply connect places together.
 ;; However, it may be better to use org files to store the state.
 
 ;; Here, area is a variable
-(cl-defmethod aa/goto-place ((area place) &optional scriptname)
-  "Dial the phone for the person PERS.
-     Execute the program SCRIPTNAME to dial the phone."
-  (message "Going to %s"  (slot-value area 'name))
+;; Make methods as I need them
+(comment
+ (cl-defmethod aa/goto-place ((area place) &optional scriptname)
+   ""
+   (message "Going to %s"  (slot-value area 'name))
 
-  (slot-value pers 'animation-speed))
+   (slot-value pers 'animation-speed)))
 
 (defvar entrance
   (person :name "Eric" :birthday "June" :phone "555-5555"))
 
+;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
-  (setq path (umn path)))
+  (setq path (umn path))
 
-(load-place-from-file "$HOME/notes/ws/ascii-adventures/house.org")
+  ;; I guess this is parsing it twice
+  (let ((parse (org-parser-parse-file filename))
+        (b (open-hypertext-in-buffer path)))))
+
+(comment
+ (load-place-from-file "$HOME/notes/ws/ascii-adventures/house.org")
+
+ (open-hypertext))
 
 (provide 'pen-ascii-adventures)
