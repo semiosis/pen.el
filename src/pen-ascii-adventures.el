@@ -251,6 +251,7 @@ prompting.")
 
    (slot-value pers 'animation-speed)))
 
+
 ;; I won't typically need to have many areas remain open in memory,
 ;; because I will be only at a single place at a time.
 ;; But, actually, I *do* want persistent world state.
