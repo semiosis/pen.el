@@ -285,11 +285,12 @@ Also switch old :object-name slot name to :label."
       (setq p (plist-put p :label obj-name)))
     (cl-call-next-method db p)))
 
+
 (defun aa/reload-database (db)
   "Reload all records from database DB."
   (interactive (list (aa/prompt-for-db nil t)))
   (let ((db-str (aa/string db))
-	    (rec-uuids (mapcar #'aa/record-uuid (slot-value db 'records))))
+        (rec-uuids (mapcar #'aa/record-uuid (slot-value db 'records))))
     ;; I don't actually know if keeping pointers to DB's records would
     ;; interfere with the reloading of the database.  I suspect it
     ;; wouldn't, but safer to use the uuids.
@@ -298,6 +299,7 @@ Also switch old :object-name slot name to :label."
     (aa/db-reload db)
     (aa/redisplay-records rec-uuids 'reformat)
     (message "Reloading %s... done" db-str)))
+
 
 ;; The world is inside of
 ;; I should actually load/initialize this the way ebdb does.
