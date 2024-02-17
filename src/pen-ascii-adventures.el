@@ -47,7 +47,6 @@ A map should mainly simply connect places together.
   "A class for describing an area.")
 
 
-
 (defclass aa/inventory-object ()        ; No superclasses
   ((name :initarg :name
          ;; This gives the default name. It is empty.
