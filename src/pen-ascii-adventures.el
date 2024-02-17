@@ -30,6 +30,7 @@ A map should mainly simply connect places together.
 ;; Exploring the world, you may find objects that increase your stats
 
 ;; This could be a jump-gate like in Ray's Maze.
+;; Or it could be a 'sign' or it could be an immovable object.
 ;; Or it could be 'writing' on the wall or something.
 (defclass aa/static-object ()           ; No superclasses
   ((name :initarg :name
