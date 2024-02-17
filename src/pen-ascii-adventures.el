@@ -195,19 +195,16 @@ A map should mainly simply connect places together.
          :type string
          :custom string
          :documentation "A game world.")
-   (areas :initarg :timer
+
+   (areas :initarg :areas
           :initform 1
           :type (list-of aa/area)
-          :documentation "The animation speed.")
+          :documentation "The areas in the world.")
 
-   (entrance :initarg :timer
+   (entrance :initarg :entrance
              :initform 1
-             :type (or null aa/place)
-             :documentation "The entry place to the world.")
-   (exit :initarg :timer
-         :initform 1
-         :type (or null aa/inventory-object)
-         :documentation "The animation speed."))
+             :type (or null aa/area)
+             :documentation "The entry/exit area to the world."))
   "A class for describing the game world.")
 
 
