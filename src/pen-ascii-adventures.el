@@ -60,8 +60,9 @@
 ;; - Inspect things closely.
 
 
-;; TODO Make it so:
-;; - I can look at objects up close - this should be hypertext
+;; Later:
+;; - Inventory.
+;;   - Make it so I can look at objects up close - this should be hypertext, too.
 
 
 ;; TODO Find out if I can save eieio objects
