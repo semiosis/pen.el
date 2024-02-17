@@ -106,7 +106,7 @@ A map should mainly simply connect places together.
                    :initform 1
                    :custom integer
                    :type (list-of aa/static-object)
-                   :documentation "Objects you can't take with you.")
+                   :documentation "An immovable object.")
 
    ;; Items you can take
    (inventory-objects :initarg :timer
