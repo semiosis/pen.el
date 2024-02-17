@@ -235,13 +235,23 @@ A map should mainly simply connect places together.
 (defset aa/current-gamestate (aa/gamestate))
 
 
-(cl-defmethod aa/enter-world ((aa/world world))
-  "Dial the phone for the person PERS.
-     Execute the program SCRIPTNAME to dial the phone."
+(cl-defmethod aa/enter-world ((world aa/world))
+  "Start a new game"
   
   (let ((worldname (slot-value world 'name)))
     (message "Entering world %s"  worldname)
-    (setq aa/current-area)))
+    (set-slot-value aa/current-gamestate 'world world)))
+
+
+;; The world is inside of
+;; I should actually load/initialize this the way ebdb does.
+(defset world (aa/world :name "Imagiverse" :entrance))
+
+
+(comment
+ (let ((entrance (aa/area :name "Big House"))
+       (world (aa/world :name "Big World")))
+   (aa/enter-world world)))
 
 
 ;; TODO Open the house.org file in j:hypertext-mode
@@ -260,7 +270,7 @@ A map should mainly simply connect places together.
 ;; Here, area is a variable
 ;; Make methods as I need them
 (comment
- (cl-defmethod aa/goto-place ((area place) &optional scriptname)
+ (cl-defmethod aa/goto-place ((place aa/area) &optional scriptname)
    ""
    (message "Going to %s"  (slot-value area 'name))
 
@@ -316,11 +326,6 @@ Also switch old :object-name slot name to :label."
     (aa/db-reload db)
     (aa/redisplay-records rec-uuids 'reformat)
     (message "Reloading %s... done" db-str)))
-
-
-;; The world is inside of
-;; I should actually load/initialize this the way ebdb does.
-(defset world (aa/world :name "Imagiverse" :entrance))
 
 
 ;; Do I really want to maintain a separate state?
