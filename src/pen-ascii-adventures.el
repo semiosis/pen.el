@@ -7,8 +7,8 @@
 
 A map should mainly simply connect places together.
 "
-
-  )
+  (interactive)
+  (message "%s" "Go to the map"))
 
 ;; Yeah, call it a 'place'.
 (defclass place ()                      ; No superclasses
