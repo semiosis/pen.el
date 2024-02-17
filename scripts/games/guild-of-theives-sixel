@@ -7,4 +7,4 @@ export TTY
 
 # I have to disable readline for sixel
 
-xt -xt cterm -ct-nem norl guild-of-thieves -vmode sixel
+in-pen xt -xt cterm -ct-nem norl guild-of-thieves -vmode sixel
