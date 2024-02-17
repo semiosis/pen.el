@@ -20,6 +20,7 @@
 ;; Editing:
 ;; - Make it so I can build the game as I am exploring it.
 ;;   - This will be the most efficient way to construct the world.
+;; - I may as well use eieio, then, and persistent storage
 
 
 ;; Example scene:
