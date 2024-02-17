@@ -53,7 +53,8 @@ A map should mainly simply connect places together.
 
    (slot-value pers 'animation-speed)))
 
-;; I won't typically need to have many areas remain open in memory.
+;; I won't typically need to have many areas remain open in memory,
+;; because I will be only at a single place at a time.
 ;; But, actually, I *do* want persistent world state.
 ;; How will I do that?
 
