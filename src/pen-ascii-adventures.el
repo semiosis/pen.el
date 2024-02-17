@@ -100,24 +100,25 @@ A map should mainly simply connect places together.
 ;; This could be a jump-gate like in Ray's Maze.
 ;; Or it could be a 'sign' or it could be an immovable object.
 ;; Or it could be 'writing' on the wall or something.
-(defclass aa/static-object ()           ; No superclasses
-  ((name :initarg :name
-         ;; This gives the default name. It is empty.
-         :initform ""
-         :type string
-         :custom string
-         :documentation "A part of the landscape.")
-   (weight :initarg :timer
-           :initform 1
-           :custom integer
-           :type integer
-           :documentation ".")
-   (visible :initarg :timer
-            :initform t
-            :custom boolean
-            :type boolean
-            :documentation "."))
-  "A class for describing an area.")
+(comment
+ (defclass aa/static-object ()           ; No superclasses
+   ((name :initarg :name
+          ;; This gives the default name. It is empty.
+          :initform ""
+          :type string
+          :custom string
+          :documentation "A part of the landscape.")
+    (weight :initarg :timer
+            :initform 1
+            :custom integer
+            :type integer
+            :documentation ".")
+    (visible :initarg :timer
+             :initform t
+             :custom boolean
+             :type boolean
+             :documentation "."))
+   "A class for describing an area."))
 
 
 (comment
@@ -161,20 +162,21 @@ A map should mainly simply connect places together.
                     :type integer
                     :documentation "The animation speed.")
 
-   (static-objects :initarg :timer
-                   :initform 1
-                   :type (list-of aa/static-object)
-                   :documentation "An immovable object.")
+   ;; (static-objects :initarg :timer
+   ;;                 :initform 1
+   ;;                 :type (list-of aa/static-object)
+   ;;                 :documentation "An immovable object.")
 
    ;; Items you can take
-   (inventory-objects :initarg :timer
-                      :initform 1
-                      :type (list-of aa/inventory-object)
-                      :documentation "Objects which may be picked up.")
-   ;; (frames :initarg :phone
-   ;;         :initform ""
-   ;;         :documentation "Phone number.")
-   )
+   ;; (inventory-objects :initarg :timer
+   ;;                    :initform 1
+   ;;                    :type (list-of aa/inventory-object)
+   ;;                    :documentation "Objects which may be picked up.")
+
+   ;; Yes, load these frames from the file
+   (frames :initarg :phone
+           :initform ""
+           :documentation "Phone number."))
   "A class for describing an area.")
 
 
