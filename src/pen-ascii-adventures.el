@@ -41,6 +41,8 @@
 
 ;; I guess the genius of this game is that it could lead anywhere.
 
+;; Then, maybe you can time yourself doing a race from A-B.
+
 ;; The above alone should be quite fun.
 ;; I would not even need an inventory, etc.
 ;; Therefore, I should start with that.
