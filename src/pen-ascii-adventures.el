@@ -5,6 +5,13 @@
 ;; Every slot that appears in each parent class is replicated in the new class.
 
 
+;; Vision:
+;; - This is meant to be a puzzle game.
+;;   - It's not meant to be difficult.
+;;   - It should not require much tedium.
+;;   - But it should have many areas to stretch the imagination.
+
+
 ;; Design decisions:
 ;; - Keep it simple
 ;; - Show everything on the map
@@ -88,12 +95,6 @@ A map should mainly simply connect places together.
          :type string
          :custom string
          :documentation "An object.")
-   (decal :initarg :name
-          ;; This gives the default name. It is empty.
-          :initform ""
-          :type string
-          :custom string
-          :documentation "The clickable decal which appears on the viewport.")
    (weight :initarg :timer
            :initform 1
            :custom integer
