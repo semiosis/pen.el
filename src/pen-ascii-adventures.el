@@ -180,9 +180,10 @@ A map should mainly simply connect places together.
    ;;                    :documentation "Objects which may be picked up.")
 
    ;; Yes, load these frames from the file
-   (frames :initarg :phone
-           :initform ""
-           :documentation "Phone number."))
+   (frames :initarg :frames
+           :initform '()
+           :type (list-of string)
+           :documentation "Hypertext frames."))
   "A class for describing an area.")
 
 
