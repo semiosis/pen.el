@@ -114,6 +114,7 @@ A map should mainly simply connect places together.
    )
   "A class for describing an area.")
 
+
 ;; The game world can be saved because it inherits from eieio-persistent
 (defclass aa/world (eieio-persistent)
   ((name :initarg :name
