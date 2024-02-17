@@ -331,6 +331,7 @@ Also switch old :object-name slot name to :label."
 
  (object-add-to-list entrance 'objects item &optional append))
 
+
 ;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
   (setq path (umn path))
@@ -338,6 +339,7 @@ Also switch old :object-name slot name to :label."
   ;; I guess this is parsing it twice
   (let ((parse (org-parser-parse-file filename))
         (b (open-hypertext-in-buffer path)))))
+
 
 (comment
  (load-place-from-file "$HOME/notes/ws/ascii-adventures/house.org")
