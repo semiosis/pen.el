@@ -349,3 +349,4 @@ $PENCONF/.notmuch-config
 $HOME/.notmuch-config
 $PENELD/config/visidatarc
 /root/.emacs.d/eshell/alias
+$PENCONF/ascii-adventures/todo.org

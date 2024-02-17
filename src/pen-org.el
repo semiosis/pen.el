@@ -899,4 +899,22 @@ optional argument MARKERP, return the position as a new marker."
 	  (goto-char found)
 	  found))))
 
+
+;; $PEN/ascii-adventures/todo.org
+;; https://emacs.stackexchange.com/questions/57967/can-orgmode-be-made-to-open-all-property-drawers-by-default-upon-opening-my-docu
+;; https://stackoverflow.com/questions/20033467/setting-a-local-file-variable-in-emacs-org-mode
+(defun org+-show-drawers ()
+  "Show all property drawers in current buffer."
+  (interactive)
+  (let ((data (org-element-parse-buffer)))
+    (org-element-map
+        data
+        'property-drawer
+      (lambda (drawer)
+        (let ((b (org-element-property :begin drawer))
+              (e (org-element-property :end drawer)))
+          (org-flag-region b e nil 'org-hide-drawer))))))
+
+(put 'org+-show-drawers 'safe-local-eval-function t)
+
 (provide 'pen-org)
