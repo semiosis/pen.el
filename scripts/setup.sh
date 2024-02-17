@@ -2213,3 +2213,5 @@ cargo build
 )
 
 agi pdf2svg
+
+agi sshpass
