@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# xterm inside Pen.el has sixel support
+
+xt -xt cterm -ct-nem guild-of-thieves -vmode sixel
