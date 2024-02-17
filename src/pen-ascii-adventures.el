@@ -3,6 +3,12 @@
 ;; Remember
 ;; Every slot that appears in each parent class is replicated in the new class.
 
+;; TODO Find out if I can save eieio objects
+;; [[info:(eieio) eieio-persistent]]
+
+;; Example of using ebdb
+;; j:ebdb-record
+
 ;; The 'place' has an animated, clickable
 
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
@@ -15,32 +21,120 @@ A map should mainly simply connect places together.
   (interactive)
   (message "%s" "Go to the map"))
 
-;; Yeah, call it a 'place'.
-;; [[info:(eieio) Slot Options]]
-(defclass aa/place ()                      ; No superclasses
+;; It would be cool if the game state is stored in a git repository and synchronized over the internet.
+;; So many people can play together. But nah.
+
+;; An inventory object should have a decal
+;; Exploring the world, you may find objects that increase your stats
+
+;; This could be a jump-gate like in Ray's Maze.
+;; Or it could be 'writing' on the wall or something.
+(defclass aa/static-object ()           ; No superclasses
   ((name :initarg :name
          ;; This gives the default name. It is empty.
          :initform ""
          :type string
          :custom string
-         :documentation "An area.")
+         :documentation "A part of the landscape.")
+   (weight :initarg :timer
+           :initform 1
+           :custom integer
+           :type integer
+           :documentation "."))  
+  "A class for describing an area.")
+
+
+
+(defclass aa/inventory-object ()        ; No superclasses
+  ((name :initarg :name
+         ;; This gives the default name. It is empty.
+         :initform ""
+         :type string
+         :custom string
+         :documentation "An object.")
+   (decal :initarg :name
+          ;; This gives the default name. It is empty.
+          :initform ""
+          :type string
+          :custom string
+          :documentation "The clickable decal which appears on the viewport.")
+   (weight :initarg :timer
+           :initform 1
+           :custom integer
+           :type integer
+           :documentation ".")
+
+   ;; Items you can take
+   (inventory-objects :initarg :timer
+                      :initform 1
+                      :custom integer
+                      :type (list-of aa/inventory-object)
+                      :documentation "Objects that can be picked up.")
+   ;; (frames :initarg :phone
+   ;;         :initform ""
+   ;;         :documentation "Phone number.")
+   )
+  "A class for describing an area.")
+
+
+;; Can be drawn on the viewport.
+;; Yeah, call it a 'place'.
+;; [[info:(eieio) Slot Options]]
+(defclass aa/area ()                    ; No superclasses
+  ((name :initarg :name
+         ;; This gives the default name. It is empty.
+         :initform ""
+         :type string
+         :custom string
+         :documentation "A place/area.")
+
    (animation-speed :initarg :timer
                     :initform 1
                     :custom integer
                     :type integer
                     :documentation "The animation speed.")
 
+   (static-objects :initarg :timer
+                   :initform 1
+                   :custom integer
+                   :type (list-of aa/static-object)
+                   :documentation "Objects you can't take with you.")
+
    ;; Items you can take
-   (inventory :initarg :timer
-              :initform 1
-              :custom integer
-              :type integer
-              :documentation "The animation speed.")
+   (inventory-objects :initarg :timer
+                      :initform 1
+                      :custom integer
+                      :type (list-of aa/inventory-object)
+                      :documentation "Objects which may be picked up.")
    ;; (frames :initarg :phone
    ;;         :initform ""
    ;;         :documentation "Phone number.")
    )
   "A class for describing an area.")
+
+;; The game world can be saved because it inherits from eieio-persistent
+(defclass aa/world (eieio-persistent)
+  ((name :initarg :name
+         ;; This gives the default name. It is empty.
+         :initform ""
+         :type string
+         :custom string
+         :documentation "A game world.")
+   (areas :initarg :timer
+          :initform 1
+          :type (list-of aa/area)
+          :documentation "The animation speed.")
+
+   (entrance :initarg :timer
+             :initform 1
+             :type (or null aa/place)
+             :documentation "The entry place to the world.")
+   (exit :initarg :timer
+         :initform 1
+         :type (or null aa/inventory-object)
+         :documentation "The animation speed."))
+  "A class for describing the game world.")
+
 
 ;; TODO Open the house.org file in j:hypertext-mode
 ;; Hypertext mode will be renamed as ascii-adventures-mode
@@ -70,7 +164,7 @@ A map should mainly simply connect places together.
 ;; How will I do that?
 
 (defset entrance
-        (aa/place :name "House" :timer 1))
+        (aa/area :name "House" :timer 1))
 
 ;; Do I really want to maintain a separate state?
 ;; It *would* be useful for automating the game, of course:
@@ -78,11 +172,11 @@ A map should mainly simply connect places together.
 ;; If it was filesystem-based-state then it would work nicely across hyperdrive, for example.
 (comment
  (defset entrance
-         (make-instance 'aa/place :name "House" :timer 1))
+         (make-instance 'aa/area :name "House" :timer 1))
  ;; Rename the area
  (set-slot-value entrance 'name "Big house")
 
- (aa/place-p entrance)
+ (aa/area-p entrance)
  
  (slot-value entrance 'name)
  (oref entrance name)
@@ -91,8 +185,8 @@ A map should mainly simply connect places together.
  ;; Rename the house yet again
  (oset entrance name "Giant house")
 
- ;; Change the default name for new objects of type  aa/place
- (oset-default aa/place name "Unnamed place")
+ ;; Change the default name for new objects of type  aa/area
+ (oset-default aa/area name "Unnamed place")
 
  (object-add-to-list entrance 'objects item &optional append))
 
