@@ -21,12 +21,12 @@
 ;; - Keep it simple.
 ;; - Show everything there is to see on the viewport in a simple animation.
 ;;   - Typically, 1,2 or 3 frames
-;; - List the things you can take or look at
+;; - List the things you can take or look at.
 ;;   - Prioritise an 'Escape from Monkey Island' interface
 ;;     - vs a text adventure interface (like magnetic scrolls)
 ;;     - Advance to using emacs transients, etc.
 ;;   - Click on options, item names, commands, etc.
-;; - Inspect things closely
+;; - Inspect things closely.
 
 
 ;; TODO Make it so:
