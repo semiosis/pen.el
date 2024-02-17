@@ -6,7 +6,7 @@
 
 
 ;; Vision:
-;; - This is meant to be a puzzle game.
+;; - This is meant to be an imagination game.
 ;;   - It's not meant to be difficult.
 ;;   - It should not require much tedium.
 ;;   - But it should have many areas to stretch the imagination.
