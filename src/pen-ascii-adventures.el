@@ -13,6 +13,7 @@
 
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
 
+
 (defun aa/map ()
   "This should display the map.
 
@@ -20,6 +21,7 @@ A map should mainly simply connect places together.
 "
   (interactive)
   (message "%s" "Go to the map"))
+
 
 ;; It would be cool if the game state is stored in a git repository and synchronized over the internet.
 ;; So many people can play together. But nah.
