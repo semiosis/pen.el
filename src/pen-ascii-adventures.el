@@ -1,5 +1,8 @@
 (require 'pen-hypertext)
 
+;; Remember
+;; Every slot that appears in each parent class is replicated in the new class.
+
 ;; The 'place' has an animated, clickable
 
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
@@ -14,7 +17,7 @@ A map should mainly simply connect places together.
 
 ;; Yeah, call it a 'place'.
 ;; [[info:(eieio) Slot Options]]
-(defclass place ()                      ; No superclasses
+(defclass aa/place ()                      ; No superclasses
   ((name :initarg :name
          :initform ""
          :type string
@@ -59,7 +62,15 @@ A map should mainly simply connect places together.
 ;; How will I do that?
 
 (defset entrance
-        (place :name "House" :timer 1))
+        (aa/place :name "House" :timer 1))
+
+(comment
+ (defset entrance
+         (make-instance 'aa/place :name "House" :timer 1))
+
+ (aa/place-p entrance)
+ (slot-value entrance 'name)
+ (set-slot-value entrance 'name "Big house"))
 
 ;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
