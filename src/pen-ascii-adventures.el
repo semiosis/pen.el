@@ -37,6 +37,10 @@ A map should mainly simply connect places together.
 ;; j:open-hypertext
 ;; j:load-place-from-file
 
+;; OK, so how do I store game state?
+;; I should probably use an emacs buffer for the game state
+;; That way, I can open the buffer to tweak variable as the game is running'
+
 ;; I guess that I will use objects to store game state.
 ;; However, it may be better to use org files to store the state.
 
