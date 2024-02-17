@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# Make sure to only use sshpass for websites like https://magneticscrolls.net/
+# and not for anything where I do not want the password remembered
+
+# Nevertheless, I disable the remembering of the passwords
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test -f "/usr/bin/sshpass" || agi "sshpass" &>/dev/null
+
+/usr/bin/sshpass "$@"
