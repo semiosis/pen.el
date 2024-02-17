@@ -63,6 +63,7 @@
 ;; (advice-remove 'require #'require-around-advice)
 
 (require 'lispy)
+
 (defun pen-goto-package (p)
   (interactive (list (fz pen_loaded_packages nil nil "Package:")))
 
@@ -79,5 +80,32 @@
             r)))
 
     (error (concat "Can't find " p " in loaded packages"))))
+
+(defun all-loaded-packages ()
+  (append (mapcar #'car package-alist)
+          ;; (mapcar #'car package-archive-contents)
+          (mapcar #'car package--builtins)))
+
+(defun pen-goto-package-all (p)
+  (interactive (list (fz
+                      (-uniq
+                       (append
+                        (mapcar
+                         'str2sym
+                         pen_loaded_packages)
+                        (all-loaded-packages))) nil nil "Package:")))
+
+  (if (symbolp p)
+      (setq p (str p)))
+
+  (let ((mn "*emacs-lisp-scratch*"))
+    (with-current-buffer
+        (switch-to-buffer mn)
+      (emacs-lisp-mode)
+      (let ((r (lispy-goto-symbol p)))
+        (kill-buffer mn)
+        r)))
+
+  (error (concat "Can't find " p " in loaded packages")))
 
 (provide 'pen-debug)
