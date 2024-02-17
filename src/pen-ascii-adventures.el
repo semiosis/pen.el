@@ -26,8 +26,10 @@ A map should mainly simply connect places together.
 ;; It would be cool if the game state is stored in a git repository and synchronized over the internet.
 ;; So many people can play together. But nah.
 
+
 ;; An inventory object should have a decal
 ;; Exploring the world, you may find objects that increase your stats
+
 
 ;; This could be a jump-gate like in Ray's Maze.
 ;; Or it could be a 'sign' or it could be an immovable object.
