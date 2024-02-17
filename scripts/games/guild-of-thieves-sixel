@@ -7,4 +7,11 @@ export TTY
 
 # I have to disable readline for sixel
 
-in-pen xt -xt cterm -ct-nem norl guild-of-thieves -vmode sixel
+# The host tmux has sixel support and the Pen.el tmux has sixel support:
+# in-pen xt -xt cterm -ct-nem norl guild-of-thieves -vmode sixel.
+# What about the Pen.el tmux? Yes it does:
+# in-pen cterm -ct-nem -ntm norl guild-of-thieves -vmode sixel
+# in-pen xt -xt cterm -ct-nem -ntm norl guild-of-thieves -vmode sixel
+
+# Sadly rlwrap does not work with sixels
+in-pen cterm -ct-nem -ntm norl guild-of-thieves -vmode sixel
