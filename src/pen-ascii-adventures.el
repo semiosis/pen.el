@@ -14,6 +14,7 @@
 ;;     - And they don't need to be discovered.
 ;;       - Pretty much everything should be visible.
 ;; - It's like a super elaborate Magic School Bus exploration game.
+;; - Just go from area to area.
 
 
 ;; Design decisions:
