@@ -201,7 +201,7 @@ A map should mainly simply connect places together.
 
 
 ;; The game world can be saved because it inherits from eieio-persistent
-(defclass aa/world (eieio-persistent)
+(defclass aa/world ()
   ((name :initarg :name
          ;; This gives the default name. It is empty.
          :initform ""
@@ -210,23 +210,38 @@ A map should mainly simply connect places together.
          :documentation "A game world.")
 
    (areas :initarg :areas
-          :initform 1
           :type (list-of aa/area)
           :documentation "The areas in the world.")
 
    (entrance :initarg :entrance
-             :initform 1
              :type (or null aa/area)
              :documentation "The entry/exit area to the world."))
   "A class for describing the game world.")
 
 
-;; To create a new area
-(cl-defgeneric aa/read (class &optional slots obj)
-  "Prompt the user for values to create an instance of CLASS.
-SLOTS are a plist of slot values; OBJ is an optional existing
-object of type CLASS, from which to draw default values during
-prompting.")
+(defclass aa/gamestate (eieio-persistent)
+  ((world :initarg :world
+          ;; This gives the default name. It is empty.
+          :type (or null aa/world)
+          :documentation "The current world.")
+
+   (area :initarg :area
+         :type (or null aa/area)
+         :documentation "The current area."))
+  "A class for describing the game state.")
+
+
+;; I should really load this from a database
+(defset aa/current-gamestate (aa/gamestate))
+
+
+(cl-defmethod aa/enter-world ((aa/world world))
+  "Dial the phone for the person PERS.
+     Execute the program SCRIPTNAME to dial the phone."
+  
+  (let ((worldname (slot-value world 'name)))
+    (message "Entering world %s"  worldname)
+    (setq aa/current-area)))
 
 
 ;; TODO Open the house.org file in j:hypertext-mode
