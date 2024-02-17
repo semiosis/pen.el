@@ -1,3 +1,8 @@
+(require 'cl-lib)
+(require 'eieio)
+(require 'eieio-base)
+(require 'eieio-opt)
+
 (require 'pen-hypertext)
 
 
@@ -216,6 +221,14 @@ A map should mainly simply connect places together.
   "A class for describing the game world.")
 
 
+;; To create a new area
+(cl-defgeneric aa/read (class &optional slots obj)
+  "Prompt the user for values to create an instance of CLASS.
+SLOTS are a plist of slot values; OBJ is an optional existing
+object of type CLASS, from which to draw default values during
+prompting.")
+
+
 ;; TODO Open the house.org file in j:hypertext-mode
 ;; Hypertext mode will be renamed as ascii-adventures-mode
 ;; because it will be the major mode for playing the game.
@@ -246,8 +259,49 @@ A map should mainly simply connect places together.
 (defset entrance
         (aa/area :name "House" :timer 1))
 
+;; j:ebdb-save
+;; j:ebdb-save-on-emacs-exit
+;; There's a bunch of these initialize-instance methods.
+;; That's because it's a defgeneric
+;; j:initialize-instance
+;; v +/"^(cl-defmethod initialize-instance ((field ebdb-field-labeled)" "$HOME/repos/ebdb/ebdb.el"
+
+(cl-defmethod initialize-instance ((db aa/world) &optional slots)
+  "Make sure DB has a uuid.
+Also switch old :object-name slot name to :label."
+  (let ((obj-name (plist-get slots :object-name))
+        p)
+    (unless (and (slot-boundp db 'uuid)
+                 (slot-value db 'uuid))
+      (setf (slot-value db 'uuid)
+            (make-instance 'aa/field-uuid
+                           :uuid (aa/make-uuid
+                                  (slot-value db 'uuid-prefix)))))
+    (while slots
+      (when (not (eq :object-name (car slots)))
+        (setq p (plist-put p (car slots) (nth 1 slots))))
+      (setq slots (cddr slots)))
+    (when obj-name
+      (setq p (plist-put p :label obj-name)))
+    (cl-call-next-method db p)))
+
+(defun aa/reload-database (db)
+  "Reload all records from database DB."
+  (interactive (list (aa/prompt-for-db nil t)))
+  (let ((db-str (aa/string db))
+	    (rec-uuids (mapcar #'aa/record-uuid (slot-value db 'records))))
+    ;; I don't actually know if keeping pointers to DB's records would
+    ;; interfere with the reloading of the database.  I suspect it
+    ;; wouldn't, but safer to use the uuids.
+    (message "Reloading %s..." db-str)
+    (aa/redisplay-records rec-uuids 'unload)
+    (aa/db-reload db)
+    (aa/redisplay-records rec-uuids 'reformat)
+    (message "Reloading %s... done" db-str)))
+
 ;; The world is inside of
-(defset world (aa/world :name "Big house" :areas :entrance))
+;; I should actually load/initialize this the way ebdb does.
+(defset world (aa/world :name "Imagiverse" :entrance))
 
 ;; Do I really want to maintain a separate state?
 ;; It *would* be useful for automating the game, of course:
