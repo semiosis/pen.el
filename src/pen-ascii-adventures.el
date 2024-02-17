@@ -17,6 +17,11 @@
 ;; - Just go from area to area and see what others have created.
 
 
+;; Editing:
+;; - Make it so I can build the game as I am exploring it.
+;;   - This will be the most efficient way to construct the world.
+
+
 ;; Example scene:
 ;; - The outside of a house with 3 people around a barrel fire
 ;; - Some clickable options for things to do:
