@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Example:
+# eval1pipe "echo hi" v
+
+cmd="$1"
+shift
+test "$#" -gt 0 || exit 1
+
+eval "$cmd" | "$@"
