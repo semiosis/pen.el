@@ -19,6 +19,7 @@ A map should mainly simply connect places together.
 ;; [[info:(eieio) Slot Options]]
 (defclass aa/place ()                      ; No superclasses
   ((name :initarg :name
+         ;; This gives the default name. It is empty.
          :initform ""
          :type string
          :custom string
@@ -28,6 +29,13 @@ A map should mainly simply connect places together.
                     :custom integer
                     :type integer
                     :documentation "The animation speed.")
+
+   ;; Items you can take
+   (inventory :initarg :timer
+              :initform 1
+              :custom integer
+              :type integer
+              :documentation "The animation speed.")
    ;; (frames :initarg :phone
    ;;         :initform ""
    ;;         :documentation "Phone number.")
@@ -64,13 +72,29 @@ A map should mainly simply connect places together.
 (defset entrance
         (aa/place :name "House" :timer 1))
 
+;; Do I really want to maintain a separate state?
+;; It *would* be useful for automating the game, of course:
+;; - searching for things.
+;; If it was filesystem-based-state then it would work nicely across hyperdrive, for example.
 (comment
  (defset entrance
          (make-instance 'aa/place :name "House" :timer 1))
+ ;; Rename the area
+ (set-slot-value entrance 'name "Big house")
 
  (aa/place-p entrance)
+ 
  (slot-value entrance 'name)
- (set-slot-value entrance 'name "Big house"))
+ (oref entrance name)
+ (oref-default entrance name)
+
+ ;; Rename the house yet again
+ (oset entrance name "Giant house")
+
+ ;; Change the default name for new objects of type  aa/place
+ (oset-default aa/place name "Unnamed place")
+
+ (object-add-to-list entrance 'objects item &optional append))
 
 ;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
