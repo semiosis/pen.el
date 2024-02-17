@@ -307,6 +307,7 @@ Also switch old :object-name slot name to :label."
 ;; I should actually load/initialize this the way ebdb does.
 (defset world (aa/world :name "Imagiverse" :entrance))
 
+
 ;; Do I really want to maintain a separate state?
 ;; It *would* be useful for automating the game, of course:
 ;; - searching for things.
