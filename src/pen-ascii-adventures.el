@@ -18,8 +18,8 @@
 
 
 ;; Design decisions:
-;; - Keep it simple
-;; - Show everything on the map
+;; - Keep it simple.
+;; - Show everything there is to see on the map.
 ;; - List the things you can take or look at
 ;;   - Prioritise an 'Escape from Monkey Island' interface
 ;;     - vs a text adventure interface (like magnetic scrolls)
