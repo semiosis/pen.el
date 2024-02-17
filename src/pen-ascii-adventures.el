@@ -55,6 +55,7 @@ A map should mainly simply connect places together.
 
 ;; I won't typically need to have many areas remain open in memory.
 ;; But, actually, I *do* want persistent world state.
+;; How will I do that?
 
 (defset entrance
         (place :name "House" :timer 1))
