@@ -13,7 +13,7 @@
 ;;   - It should just have a lot of switches.
 ;;     - And they don't need to be discovered.
 ;;       - Pretty much everything should be visible.
-;; - It's like a super elaborate Magic School Bus game.
+;; - It's like a super elaborate Magic School Bus exploration game.
 
 
 ;; Design decisions:
