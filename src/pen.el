@@ -2436,6 +2436,8 @@ May use to generate code from comments."
 (require 'pen-annotation)
 (require 'pen-ov-highlight)
 (require 'pen-racket)
+;; For building games, etc.
+(require 'pen-hypertext)
 ;; (require 'pen-hn)
 (require 'pen-denote)
 ;; I think hyperbole broke the menu bar
