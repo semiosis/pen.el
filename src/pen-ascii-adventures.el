@@ -20,6 +20,7 @@
 ;; Editing:
 ;; - Make it so I can build the game as I am exploring it.
 ;;   - This will be the most efficient way to construct the world.
+;;   - New [org-link]s should create the new areas.
 ;; - I may as well use eieio, then, and persistent storage
 ;;   - Also, I get a pretty printer, Custom etc. and other features
 
