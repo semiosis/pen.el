@@ -260,6 +260,7 @@ prompting.")
 (defset entrance
         (aa/area :name "House" :timer 1))
 
+
 ;; j:ebdb-save
 ;; j:ebdb-save-on-emacs-exit
 ;; There's a bunch of these initialize-instance methods.
