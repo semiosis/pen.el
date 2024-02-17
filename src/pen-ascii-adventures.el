@@ -10,6 +10,9 @@
 ;;   - It's not meant to be difficult.
 ;;   - It should not require much tedium.
 ;;   - But it should have many areas to stretch the imagination.
+;;   - It should just have a lot of switches.
+;;     - And they don't need to be discovered.
+;;       - Pretty much everything should be visible.
 
 
 ;; Design decisions:
