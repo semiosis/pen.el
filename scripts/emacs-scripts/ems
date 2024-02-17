@@ -1,0 +1,41 @@
+#!/bin/bash
+export TTY
+
+# This wraps a command with a pattern parameter =+/= that assumes the
+# underlying command is emacs-based
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Example
+# ems +/"when done" sp $HOME/scripts/ems
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    +/*) { # pattern
+        pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp)"
+
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test -n "$pattern"; then
+    x \
+    -cd "$(pwd)" \
+    -sh "$(cmd "$@")" \
+    -e "When done with this frame" \
+    -c s \
+    -s "$pattern" \
+    -c m \
+    -i
+    #-m s \
+    #-s o \
+    #-s "$pattern" \
+    #-c m \
+    #-m : \
+    #-s "(recenter-top)" \
+    #-c m \
+else
+    "$@"
+fi

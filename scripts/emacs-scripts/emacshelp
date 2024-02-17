@@ -1,0 +1,22 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+if test "$#" -gt 0; then
+    last_arg="${@: -1}"
+    funcname="$last_arg"
+    set -- "${@:1:$(($#-1))}" # shift last arg
+fi
+
+if pl "$funcname" | grep -q -P '^\[\[info:'; then
+    funcname="$(p "$funcname" | sed -e 's/^\[\[info://' -e 's/\]\]$//')"
+    ems "$@" sp -e "(info $(aqf-nice "$funcname"))"
+elif pl "$funcname" | grep -q -P '^info:'; then
+    funcname="$(p "$funcname" | sed -e 's/^info://')"
+    ems "$@" sp -e "(info $(aqf-nice "$funcname"))"
+elif test -n "$funcname"; then
+    ems "$@" sp -e "(emacshelp $(aqf-nice "$funcname"))"
+else
+    ems "$@" sp -e "(info)(Info-index)"
+fi
