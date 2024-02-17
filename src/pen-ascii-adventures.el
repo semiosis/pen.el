@@ -1,3 +1,5 @@
+(require 'pen-hypertext)
+
 ;; The 'place' has an animated, clickable
 
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
@@ -28,6 +30,15 @@ A map should mainly simply connect places together.
    ;;         :documentation "Phone number.")
    )
   "A class for describing an area.")
+
+;; TODO Open the house.org file in j:hypertext-mode
+;; Hypertext mode will be renamed as ascii-adventures-mode
+;; because it will be the major mode for playing the game.
+;; j:open-hypertext
+;; j:load-place-from-file
+
+;; I guess that I will use objects to store game state.
+;; However, it may be better to use org files to store the state.
 
 ;; Here, area is a variable
 (cl-defmethod aa/goto-place ((area place) &optional scriptname)
