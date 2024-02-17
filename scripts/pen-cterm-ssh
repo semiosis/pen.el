@@ -158,7 +158,11 @@ SETUP="export TERM=screen-256color;"
 SSH_FROM_PEN=y
 
 # List all the ENVS I would like exported here (to the host)
-SSH_EXPORTS="$(envq -j DEBUG SSH_FROM_PEN) $SSH_EXPORTS"
+if test -n "$SSH_EXPORTS"; then
+    SSH_EXPORTS="$(envq -j DEBUG SSH_FROM_PEN) $SSH_EXPORTS"
+else
+    SSH_EXPORTS="$(envq -j DEBUG SSH_FROM_PEN)"
+fi
 
 if test -n "$SSH_EXPORTS"; then
     SETUP="export $SSH_EXPORTS;$SETUP"
