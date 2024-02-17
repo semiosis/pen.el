@@ -17,6 +17,11 @@
 ;; - Just go from area to area and see what others have created.
 
 
+;; The above alone should be quite fun.
+;; I would not even need an inventory, etc.
+;; Therefore, I should start with that.
+
+
 ;; Design decisions:
 ;; - Keep it simple.
 ;; - Show everything there is to see on the viewport in a simple animation.
