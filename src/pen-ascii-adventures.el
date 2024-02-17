@@ -21,6 +21,7 @@
 ;; - Make it so I can build the game as I am exploring it.
 ;;   - This will be the most efficient way to construct the world.
 ;; - I may as well use eieio, then, and persistent storage
+;;   - Also, I get a pretty printer, Custom etc. and other features
 
 
 ;; Example scene:
@@ -161,6 +162,12 @@ A map should mainly simply connect places together.
          :type string
          :custom string
          :documentation "A place/area.")
+   
+   (name :initarg :name
+         :initform ""
+         :type string
+         :custom string
+         :documentation "A description of the area.")
 
    (animation-speed :initarg :timer
                     :initform 1
@@ -237,6 +244,9 @@ A map should mainly simply connect places together.
 
 (defset entrance
         (aa/area :name "House" :timer 1))
+
+;; The world is inside of
+(defset world (aa/world :name "Big house" :areas :entrance))
 
 ;; Do I really want to maintain a separate state?
 ;; It *would* be useful for automating the game, of course:
