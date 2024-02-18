@@ -15,9 +15,9 @@
   (setq buffer-read-only t)
   (buffer-disable-undo))
 
-;; e:$PEN/documents/notes/ws/ascii-adventures/house.org
+;; e:$MYGIT/ascii-adventures/bewilderness/house.org
 
-;; [[el:(etv (pps (ht/org-get-title (umn "$HOME/notes/ws/ascii-adventures/house.org"))))]]
+;; [[el:(etv (pps (ht/org-get-title (umn "$MYGIT/ascii-adventures/bewilderness/house.org"))))]]
 
 ;; Maybe I will use this method to parse other things
 (defun ht/org-get-title (&optional buffer-or-file)
@@ -38,9 +38,9 @@ Returns nil if there are no #+TITLE property."
   "Create a new untitled buffer from a string."
   (interactive)
 
-  ;; [[el:(open-hypertext "$HOME/notes/ws/ascii-adventures/house.org")]]
+  ;; [[el:(open-hypertext "$MYGIT/ascii-adventures/bewilderness/house.org")]]
 
-  ;; [[el:(etv (pps (org-parser-parse-file (umn "$HOME/notes/ws/ascii-adventures/house.org"))))]]
+  ;; [[el:(etv (pps (org-parser-parse-file (umn "$MYGIT/ascii-adventures/bewilderness/house.org"))))]]
 
   (setq filename (umn filename))
   
