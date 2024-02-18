@@ -367,4 +367,11 @@ Also switch old :object-name slot name to :label."
 
  (open-hypertext))
 
+
+;; parent: special-mode, fundamental-mode or text-mode
+(define-derived-mode ascii-adventures-mode text-mode "ASCII Adventures"
+  "ASCII Adventures major mode.
+\\{ascii-adventures-mode-map}"
+  (defvar-local area-file nil))
+
 (provide 'pen-ascii-adventures)
