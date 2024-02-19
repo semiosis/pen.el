@@ -917,4 +917,12 @@ optional argument MARKERP, return the position as a new marker."
 
 (put 'org+-show-drawers 'safe-local-eval-function t)
 
+;; I want to temporarily do this
+;; %s/^\*\*\*\* /*** /
+
+;; (defun my-org-latex-export-to-pdf (&optional async subtreep visible-only body-only ext-plist)
+;;   (org-latex-export-to-pdf
+;;    async subtreep visible-only body-only ext-plist))
+
+
 (provide 'pen-org)
