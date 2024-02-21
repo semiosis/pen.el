@@ -186,6 +186,12 @@ fi
 
 : "${USE_TTP:="y"}"
 
+if test "$ONELINED" = "y"; then
+    USE_TTP=n
+    BORDER=
+    no_udl=y
+fi
+
 doublespacemax () {
     sed 's/\s\+$//' | sed ':a;N;$!ba;s/\n\n\+/\n\n/g'
 }
@@ -250,11 +256,17 @@ export -f iforcat
 
 IFS= read -r -d '' pipeline <<'HEREDOC'
     {
-        if test "$FAST" = "y"; then
-            echo "$ref" | udl
-        else
-            echo "$ref" | openbible-canonicalise-ref | udl
-        fi
+        {
+            if test "$no_udl" = "y"; then
+                echo "$ref - "
+            else
+                if test "$FAST" = "y"; then
+                    echo "$ref" | udl
+                else
+                    echo "$ref" | openbible-canonicalise-ref | udl
+                fi
+            fi
+        }
         {
             0</dev/null in-pen "diatheke" "-b" "$module" "-o" "w" "-f" "$format" "-k" "$ref"
         } | {
@@ -287,6 +299,8 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
         }
     } | {
         iforcat test "$BORDER" = "y" -- sed 's/^/| /'
+    } | {
+        iforcat test "$no_udl" = "y" -- s join ' ' | sed 's/ \+/ /g'
     }
     # | pen-s remove-trailing-whitespace | pen-s join ' ' | sed 's/[0-9]: /&\n/g' | sed '/^$/d' | awk 'NR%2==0' | pavs
 HEREDOC
