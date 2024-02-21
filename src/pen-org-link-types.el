@@ -4,9 +4,14 @@
 
 (setq org-confirm-elisp-link-function nil)
 
+
+;; ev:org-link-parameters
+;; [[edit-var-elisp:-org-link-parameters]]
+
 ;; This generates links for functions
 (defset org-link-auto-functions '(show-map
-                                  describe-package))
+                                  describe-package
+                                  ))
 
 (defun org-link-generate-link-types ()
   (interactive)
@@ -73,6 +78,7 @@ PATH is the sexp to evaluate, as a string."
       (user-error "Abort"))))
 
 (org-add-link-type "el" 'org-link--open-elisp)
+(org-add-link-type "ev" 'org-link--open-elisp)
 
 (org-add-link-type "o" 'open)
 (org-add-link-type "open" 'open)
@@ -165,10 +171,15 @@ PATH is the sexp to evaluate, as a string."
   "Run `egr' with QUERY as argument."
   (pen-sps (concat "egr " query)))
 
+;; (org-add-link-type "pa" 'follow-pa-link)
+;; (defun follow-pa-link (cmd)
+;;   "Run `pa' with CMD as argument."
+;;   (pen-sps (concat cmd " | pa -vs")))
+
 (org-add-link-type "pa" 'follow-pa-link)
 (defun follow-pa-link (cmd)
   "Run `pa' with CMD as argument."
-  (pen-sps (concat cmd " | pa -vs")))
+  (pen-goto-package-all (intern (str cmd))))
 
 (org-add-link-type "pa" 'follow-pa-link)
 (defun follow-pa-link (cmd)
@@ -252,6 +263,9 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "ob" 'pen-follow-brain-link)
 (org-add-link-type "br" 'pen-follow-brain-link)
 (org-add-link-type "brain" 'pen-follow-brain-link)
+
+;; This should work: pa:org-brain
+(defalias 'pa 'pen-goto-package-all)
 
 (defun pen-follow-brain-link (pattern)
   "Run brain `pattern'."

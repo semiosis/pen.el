@@ -404,7 +404,6 @@ Also switch old :object-name slot name to :label."
   ;; [[el:(etv (pps (org-parser-parse-file (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org"))))]]
 
   (let ((filename (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")))
-
     (let ((buf
            (let ((nodisplay nil)
                  ;; (parse (org-parser-parse-file filename))
