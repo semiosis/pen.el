@@ -379,9 +379,49 @@ Also switch old :object-name slot name to :label."
 
 
 ;; parent: special-mode, fundamental-mode or text-mode
-(define-derived-mode ascii-adventures-mode text-mode "ASCII Adventures"
+(define-derived-mode ascii-adventures-mode hypertext-mode "ASCII Adventures"
   "ASCII Adventures major mode.
 \\{ascii-adventures-mode-map}"
   (defvar-local area-file nil))
+
+
+
+(defun test-ascii-adventures ()
+  "Create a new untitled buffer from a string."
+  (interactive)
+
+  ;; [[el:(open-hypertext "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
+
+  ;; [[el:(etv (pps (org-parser-parse-file (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org"))))]]
+
+  (let ((filename (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")))
+
+    (let ((buf
+           (let ((nodisplay nil)
+                 (parse (org-parser-parse-file filename)))
+             (let ((buffer (generate-new-buffer "ascii adventures")))
+               ;; (set-buffer-major-mode buffer)
+               
+               (if (not nodisplay)
+                   (display-buffer buffer '(display-buffer-same-window . nil)))
+
+               (with-current-buffer buffer
+                 (setq buffer-read-only nil)
+                 (beginning-of-buffer)
+
+                 (defvar-local aa/parse parse)
+
+                 ;; There's  a better way of doing this
+                 
+                 (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
+                 (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
+
+                 ;; Search for heading Frames
+                 ;; enumerate all the babel source blocks                 
+                 
+                 (insert (pps aa/parse))
+                 
+                 (ascii-adventures-mode))
+               buffer)))))))
 
 (provide 'pen-ascii-adventures)

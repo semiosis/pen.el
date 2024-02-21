@@ -2216,6 +2216,7 @@ agi pdf2svg
 
 agi sshpass
 
+# This is awesome but I need to get it working.
 # Haskell-Emacs interop
 # https://github.com/knupfer/haskell-emacs
 e ia haskell-emacs haskell-emacs-text haskell-emacs-base
