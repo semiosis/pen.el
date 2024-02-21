@@ -168,4 +168,9 @@ SEQ __is__ modified."
 
 (defalias '-random-element 'seq-random-elt)
 
+(defun -select-mod-element (lst mod)
+  (let* ((n (length lst))
+         (i (modulo mod n)))
+    (-nth i lst)))
+
 (provide 'pen-lists)

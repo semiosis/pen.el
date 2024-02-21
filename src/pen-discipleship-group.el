@@ -1,13 +1,13 @@
 (require 'pen-dates-and-locales)
 
-(defset hymn-yt-urls '("[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s][www.youtube.com/watch?v=K5qgKMWbo4c&t=1s]]"
+(defset hymn-yt-urls '("[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene d???CHRISTIAN piano - YouTube]]"
                        "[[https://www.youtube.com/watch?v=z6vR_FV7s7c][4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i?? - YouTube]]"
                        "[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]"))
 
 (defun dgs-get-weekly-hymn-music-link (&optional week)
   (setq week (or week (date-week-number)))
 
-  (-random-element hymn-yt-urls))
+  (-select-mod-element hymn-yt-urls week))
 
 ;; It's better to compact the verses than to separate into days
 ;; It's easier to handle them that way.

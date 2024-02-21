@@ -213,6 +213,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 ;; to open mimetypes such as application/pdf
 (require 'pen-mm-decode)
 (require 'pen-update)
+(require 'pen-math)
 (require 'pen-random)
 (require 'pen-keys)
 (require 'pen-swipe)
