@@ -3,6 +3,10 @@
 ;; https://dantorop.info/project/emacs-animation/
 
 ;; e:$EMACSD/pen.el/src/pen-ascii-adventures.el
+;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+
+;; [[el:(etv (pps (ht/org-get-title (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org"))))]]
+
 
 (defset hypertext-mode-map
         (let ((map (make-sparse-keymap)))
@@ -14,10 +18,6 @@
 \\{hypertext-mode-map}"
   (setq buffer-read-only t)
   (buffer-disable-undo))
-
-;; e:$MYGIT/ascii-adventures/bewilderness/house.org
-
-;; [[el:(etv (pps (ht/org-get-title (umn "$MYGIT/ascii-adventures/bewilderness/house.org"))))]]
 
 ;; Maybe I will use this method to parse other things
 (defun ht/org-get-title (&optional buffer-or-file)

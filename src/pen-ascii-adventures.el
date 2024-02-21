@@ -5,6 +5,12 @@
 
 (require 'pen-hypertext)
 
+;; e:$EMACSD/pen.el/src/pen-ascii-adventures.el
+;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+
+;; Game worlds:
+;; - bewilderness
+;; - bibleverse
 
 ;; Remember
 ;; Every slot that appears in each parent class is replicated in the new class.
