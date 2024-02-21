@@ -181,7 +181,7 @@ A map should mainly simply connect places together.
          :type string
          :custom string
          :documentation "A place/area.")
-   
+
    (name :initarg :name
          :initform ""
          :type string
@@ -250,7 +250,7 @@ A map should mainly simply connect places together.
 
 (cl-defmethod aa/enter-world ((world aa/world))
   "Start a new game"
-  
+
   (let ((worldname (slot-value world 'name)))
     (message "Entering world %s"  worldname)
     (set-slot-value aa/current-gamestate 'world world)))
@@ -352,7 +352,7 @@ Also switch old :object-name slot name to :label."
  (set-slot-value entrance 'name "Big house")
 
  (aa/area-p entrance)
- 
+
  (slot-value entrance 'name)
  (oref entrance name)
  (oref-default entrance name)
@@ -410,7 +410,7 @@ Also switch old :object-name slot name to :label."
                  (parse (pen-org-parse-file filename)))
              (let ((buffer (generate-new-buffer "ascii adventures")))
                ;; (set-buffer-major-mode buffer)
-               
+
                (if (not nodisplay)
                    (display-buffer buffer '(display-buffer-same-window . nil)))
 
@@ -429,19 +429,19 @@ Also switch old :object-name slot name to :label."
                           (unless (org-brain-id-exclude-taggedp id)
                             (org-brain-entry-from-id id))))
                       nil nil 'headline)))
-                 
+
                  ;; (defvar-local aa/parse2 parse2)
 
                  ;; There's  a better way of doing this
-                 
+
                  ;; (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
                  ;; (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
 
                  ;; Search for heading Frames
-                 ;; enumerate all the babel source blocks                 
-                 
+                 ;; enumerate all the babel source blocks
+
                  (insert (pps aa/parse2))
-                 
+
                  (ascii-adventures-mode))
                buffer)))))))
 
