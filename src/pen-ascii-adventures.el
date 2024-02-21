@@ -3,6 +3,9 @@
 (require 'eieio-base)
 (require 'eieio-opt)
 
+;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
+;; (require 'org-parser)
+
 (require 'pen-hypertext)
 
 ;; e:$EMACSD/pen.el/src/pen-ascii-adventures.el
@@ -385,6 +388,12 @@ Also switch old :object-name slot name to :label."
   (defvar-local area-file nil))
 
 
+(defun pen-org-parse-file (filename)
+  "Parse FILENAME into a list of structure items."
+  (with-temp-buffer
+    (insert-file-contents filename)
+    (org-element-parse-buffer)))
+
 
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
@@ -398,7 +407,8 @@ Also switch old :object-name slot name to :label."
 
     (let ((buf
            (let ((nodisplay nil)
-                 (parse (org-parser-parse-file filename)))
+                 ;; (parse (org-parser-parse-file filename))
+                 (parse (pen-org-parse-file filename)))
              (let ((buffer (generate-new-buffer "ascii adventures")))
                ;; (set-buffer-major-mode buffer)
                
@@ -411,15 +421,27 @@ Also switch old :object-name slot name to :label."
 
                  (defvar-local aa/parse parse)
 
+                 (comment
+                  (with-temp-buffer
+                    (ignore-errors (insert-file-contents filename))
+                    (org-element-map (org-element-parse-buffer 'headline) 'headline
+                      (lambda (headline)
+                        (when-let ((id (org-element-property :ID headline)))
+                          (unless (org-brain-id-exclude-taggedp id)
+                            (org-brain-entry-from-id id))))
+                      nil nil 'headline)))
+                 
+                 ;; (defvar-local aa/parse2 parse2)
+
                  ;; There's  a better way of doing this
                  
-                 (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
-                 (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
+                 ;; (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
+                 ;; (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
 
                  ;; Search for heading Frames
                  ;; enumerate all the babel source blocks                 
                  
-                 (insert (pps aa/parse))
+                 (insert (pps aa/parse2))
                  
                  (ascii-adventures-mode))
                buffer)))))))
