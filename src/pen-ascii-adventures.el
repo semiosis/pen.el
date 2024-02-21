@@ -12,6 +12,10 @@
 ;; - bewilderness
 ;; - bibleverse
 
+;; TODO;
+;; - Make it so an area/place file can be loaded into the major mode, and animates
+;;   - /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+
 ;; Remember
 ;; Every slot that appears in each parent class is replicated in the new class.
 
