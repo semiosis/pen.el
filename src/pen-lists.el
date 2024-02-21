@@ -1,3 +1,5 @@
+(require 'seq)
+;; Another list library
 (require 'dash)
 
 ;;https://www.emacswiki.org/emacs/ListModification#toc7
@@ -157,5 +159,13 @@ SEQ __is__ modified."
 
 (defun -maxsize-list (lst max)
   (-take max lst))
+
+(defalias '-nth 'nth)
+(defalias '-pick-nth 'nth)
+
+;; -pick
+;; -nth
+
+(defalias '-random-element 'seq-random-elt)
 
 (provide 'pen-lists)

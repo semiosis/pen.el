@@ -213,6 +213,7 @@ It's really meant for key bindings and which-key, so they should all be interact
 ;; to open mimetypes such as application/pdf
 (require 'pen-mm-decode)
 (require 'pen-update)
+(require 'pen-random)
 (require 'pen-keys)
 (require 'pen-swipe)
 (require 'pen-ilambda)
@@ -2458,6 +2459,7 @@ May use to generate code from comments."
 (require 'pen-lsp-rust)
 (require 'pen-notmuch)
 (require 'pen-haskell)
+(require 'pen-haskell-emacs-interop)
 (require 'pen-browser)
 (require 'peniel)
 (require 'pen-discipleship-group)

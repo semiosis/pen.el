@@ -64,4 +64,17 @@
   ;; (chrome "https://vision.org.au/the-word-for-today-reading/" t)
   )
 
+;; [[e:$PEN/ebooks/John Bunyan/The Holy War (18)/The Holy War - John Bunyan.org]]
+;; sp +/"^\*\* Relation of the Holy War" "$PEN/ebooks/John Bunyan/The Holy War (18)/The Holy War - John Bunyan.org"
+;; https://youtu.be/NTYBiungbHY?t=178
+
+;; pdf:
+;; https://www.ccel.org/ccel/b/bunyan/holy_war/cache/holy_war.pdf
+
+;; A bit slower
+;; https://www.youtube.com/watch?v=NTYBiungbHY&ab_channel=AnekoPress-ChristianAudiobooks
+
+;; Too fast:
+;; "https://www.youtube.com/watch?v=-9Xq6hiqWoI&ab_channel=RyanSebo"
+
 (provide 'peniel)

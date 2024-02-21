@@ -86,6 +86,8 @@
           ;; (mapcar #'car package-archive-contents)
           (mapcar #'car package--builtins)))
 
+;; TODO: I can get the precise location the way j:describe-package-1 does it
+;; j:describe-package-1
 (defun pen-goto-package-all (p)
   (interactive (list (fz
                       (-uniq

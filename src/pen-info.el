@@ -139,4 +139,22 @@
 The face is assigned to the third, sixth, and ninth `*' for easier
 orientation.  See `Info-nth-menu-item'.")
 
+(define-key Info-mode-map (kbd "w") 'Info-copy-current-node-name)
+(define-key Info-mode-map (kbd "w") 'org-info-copy-link)
+
+
+(defun org-info-copy-link ()
+  "Copy a link to an Info file and node."
+  (interactive)
+  (when (eq major-mode 'Info-mode)
+    (let ((link (concat "info:"
+			            (file-name-nondirectory Info-current-file)
+			            "#" Info-current-node))
+	      (desc (concat (file-name-nondirectory Info-current-file)
+			            "#" Info-current-node)))
+      ;; (org-link-store-props :type "info" :file Info-current-file
+	  ;;   	    :node Info-current-node
+	  ;;   	    :link link :description desc)
+      (xc (format "[[%s][%s]]" link (concat "Emacs Info: " desc))))))
+
 (provide 'pen-info)

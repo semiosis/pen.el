@@ -2369,3 +2369,5 @@ sideline-lsp
 sideline-flymake
 sideline-flycheck
 sideline-blame
+haskell-emacs-text
+haskell-emacs-base

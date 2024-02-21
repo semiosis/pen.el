@@ -2215,3 +2215,13 @@ cargo build
 agi pdf2svg
 
 agi sshpass
+
+# Haskell-Emacs interop
+# https://github.com/knupfer/haskell-emacs
+e ia haskell-emacs haskell-emacs-text haskell-emacs-base
+
+(
+mkdir -p ~/.pen/downloads
+cd /root
+ln -sf ~/.pen/downloads
+)
