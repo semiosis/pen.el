@@ -377,6 +377,9 @@ Return list of cons '((destination content)"
              (if (not nodisplay)
                  (display-buffer buffer '(display-buffer-same-window . nil)))
 
+             (when (timerp aa/animation-timer)
+               (cancel-timer (tv aa/animation-timer)))
+
              (with-current-buffer buffer
                (setq buffer-read-only nil)
                (beginning-of-buffer)
@@ -432,9 +435,6 @@ Return list of cons '((destination content)"
                  (defset aa/animation-timer nil)
                  (defset aa/buf (current-buffer)))
 
-               (when (timerp aa/animation-timer)
-                 (cancel-timer aa/animation-timer))
-
                (setq aa/animation-timer
                      (run-with-timer 0 aa/delay
                                      ;; Animation
@@ -443,10 +443,10 @@ Return list of cons '((destination content)"
                                            (when (timerp aa/animation-timer)
                                              (cancel-timer aa/animation-timer)))
 
-                                       (when (and (buffer-live-p buf)
-                                                  (not avy--overlays-back)
-                                                  org-descriptive-links)
-                                         (ignore-errors
+                                       (ignore-errors
+                                         (when (and (buffer-live-p buf)
+                                                    (not avy--overlays-back)
+                                                    org-descriptive-links)
                                            (with-current-buffer buf
                                              ;; (set-window-start nil 1)
                                              (with-writable-buffer
