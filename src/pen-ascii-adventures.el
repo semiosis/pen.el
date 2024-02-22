@@ -462,8 +462,11 @@ Return list of cons '((destination content)"
 
                  (comment
                   (insert (pps aa/parse)))
-                 
-                 (insert (car aa/frames))
+
+                 (let ((first-frame (car aa/frames)))
+                   (comment (insert (car aa/frames)))
+
+                   (animate-string (car aa/frames) 0 0))
 
                  (comment
                   (etv (pps aa/parse) 'emacs-lisp-mode))
