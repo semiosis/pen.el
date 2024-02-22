@@ -34,11 +34,6 @@ A map should mainly simply connect places together.
   (interactive)
   (message "%s" "Go to the map"))
 
-;; It would be cool if the game state is stored in a git repository and synchronized over the internet.
-;; So many people can play together. But nah.
-
-;; An inventory object should have a decal
-;; Exploring the world, you may find objects that increase your stats
 
 ;; This could be a jump-gate like in Ray's Maze.
 ;; Or it could be a 'sign' or it could be an immovable object.
@@ -439,7 +434,8 @@ Return list of cons '((destination content)"
                                              (cancel-timer aa/animation-timer)))
 
                                        (when (and (buffer-live-p buf)
-                                                  (not avy--overlays-back))
+                                                  (not avy--overlays-back)
+                                                  org-descriptive-links)
                                          (ignore-errors
                                            (with-current-buffer buf
                                              ;; (set-window-start nil 1)
@@ -484,5 +480,22 @@ Return list of cons '((destination content)"
   (when (timerp aa/animation-timer)
     (cancel-timer aa/animation-timer))
   (ascii-adventures-open-map (f-join aa/bewilderness-dir "house.org")))
+
+(universal-sidecar-define-section ascii-adventures-section (file title)
+                                  (
+                                   :major-modes ascii-adventures-mode
+                                                ;; :predicate (not (buffer-modified-p))
+                                                )
+  (ignore-errors (let* ((mm-string (with-current-buffer buffer (str major-mode)))
+                        (title mm-string))
+                   (universal-sidecar-insert-section bible-section title
+                     (insert
+                      (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
+                        ;; This is inserted
+                        "[[el:(sps)][Split screen]]"
+                        ;; This runs after the above
+                        (comment (some-post-processing-of-org-text))))))))
+
+(add-to-list 'universal-sidecar-sections '(ascii-adventures-section :title "Bible!"))
 
 (provide 'pen-ascii-adventures)

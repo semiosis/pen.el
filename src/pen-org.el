@@ -795,6 +795,7 @@ decreases scheduled or deadline date by one day."
        (setq org-descriptive-links t))))
 
 (define-key org-mode-map (kbd "C-c l") 'org-toggle-link-display)
+(define-key global-map (kbd "C-c l") 'org-toggle-link-display)
 
 (defun org-get-link ()
   (interactive)
