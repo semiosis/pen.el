@@ -496,19 +496,28 @@ Return list of cons '((destination content)"
                  (defset aa/animation-timer nil)
                  (defset aa/buf (current-buffer))
 
+                 (when (timerp aa/animation-timer)
+                   (cancel-timer aa/animation-timer))
+                 
                  (setq aa/animation-timer
                        (run-with-timer 0 aa/delay
                                        ;; Animation
                                        (lambda (buf)
+                                         (if (not (buffer-live-p buf))
+                                             (when (timerp aa/animation-timer)
+                                               (cancel-timer aa/animation-timer)))
+                                         
                                          (when (and (buffer-live-p buf)
                                                     (not avy--overlays-back))
                                            (with-current-buffer buf
+                                             (set-window-start nil 1)
                                              (with-writable-buffer
                                               (comment
                                                (cl-loop for f in aa/frames
                                                         do
-                                                        (erase-buffer)
-                                                        (insert f)
+                                                        (save-excursion
+                                                          (erase-buffer)
+                                                          (insert f))
                                                         (redraw-frame)
                                                         (sit-for aa/delay)))
 
