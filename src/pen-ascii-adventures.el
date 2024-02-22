@@ -24,7 +24,6 @@
 
 ;; e:$EMACSD/pen.el/src/pen-hypertext.el
 
-
 ;; TODO Eventually build a map.
 ;; But it might be better if I leave it for the user to try to remember the way.
 (defun aa/map ()
@@ -35,14 +34,11 @@ A map should mainly simply connect places together.
   (interactive)
   (message "%s" "Go to the map"))
 
-
 ;; It would be cool if the game state is stored in a git repository and synchronized over the internet.
 ;; So many people can play together. But nah.
 
-
 ;; An inventory object should have a decal
 ;; Exploring the world, you may find objects that increase your stats
-
 
 ;; This could be a jump-gate like in Ray's Maze.
 ;; Or it could be a 'sign' or it could be an immovable object.
