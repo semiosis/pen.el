@@ -422,6 +422,10 @@ Return list of cons '((destination content)"
 
 ;; TODO Make it so
 ;; - I can easily add new areas
+;;   - Edit the current area by opening the current area file
+;;   - Make an org link which when clicked opens a new area file and expands the template
+
+;; mx:list-timers
 
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
