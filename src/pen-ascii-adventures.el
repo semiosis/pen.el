@@ -10,6 +10,8 @@
 (defsetdir aa/mapdir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/"))
 (defsetdir aa/bewilderness-dir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/"))
 
+;; TODO Make a hyperdrive for ASCII Adventures
+
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
 
@@ -516,7 +518,7 @@ Return list of cons '((destination content)"
 
                (when (timerp aa/animation-timer)
                  (cancel-timer aa/animation-timer))
-               
+
                (setq aa/animation-timer
                      (run-with-timer 0 aa/delay
                                      ;; Animation
@@ -524,7 +526,7 @@ Return list of cons '((destination content)"
                                        (if (not (buffer-live-p buf))
                                            (when (timerp aa/animation-timer)
                                              (cancel-timer aa/animation-timer)))
-                                       
+
                                        (when (and (buffer-live-p buf)
                                                   (not avy--overlays-back))
                                          (with-current-buffer buf
