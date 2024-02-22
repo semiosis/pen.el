@@ -529,24 +529,25 @@ Return list of cons '((destination content)"
 
                                        (when (and (buffer-live-p buf)
                                                   (not avy--overlays-back))
-                                         (with-current-buffer buf
-                                           ;; (set-window-start nil 1)
-                                           (with-writable-buffer
-                                            (comment
-                                             (cl-loop for f in aa/frames
-                                                      do
-                                                      (save-excursion-reliably
-                                                       (erase-buffer)
-                                                       (insert f))
-                                                      (redraw-frame)
-                                                      (sit-for aa/delay)))
+                                         (ignore-errors
+                                           (with-current-buffer buf
+                                             ;; (set-window-start nil 1)
+                                             (with-writable-buffer
+                                              (comment
+                                               (cl-loop for f in aa/frames
+                                                        do
+                                                        (save-excursion-reliably
+                                                         (erase-buffer)
+                                                         (insert f))
+                                                        (redraw-frame)
+                                                        (sit-for aa/delay)))
 
-                                            (save-excursion-reliably
-                                             (erase-buffer)
-                                             (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
-                                            ;; (redraw-frame)
-                                            ;; (sit-for aa/delay)
-                                            ))))
+                                              (save-excursion-reliably
+                                               (erase-buffer)
+                                               (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                              ;; (redraw-frame)
+                                              ;; (sit-for aa/delay)
+                                              )))))
                                      (current-buffer)))
 
                (comment
@@ -568,6 +569,8 @@ Return list of cons '((destination content)"
 
 (defun ascii-adventures ()
   (interactive)
+  (when (timerp aa/animation-timer)
+    (cancel-timer aa/animation-timer))
   (ascii-adventures-open-map (f-join aa/bewilderness-dir "house.org")))
 
 (provide 'pen-ascii-adventures)
