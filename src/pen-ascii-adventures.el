@@ -430,6 +430,9 @@ Return list of cons '((destination content)"
 
 ;; mx:list-timers
 
+;; TODO Make it so if I open an org file and it is an area file, it should load it
+;; (add-to-list 'auto-mode-alist '("\\.jq$" . jq-mode))
+
 (defun ascii-adventures-open-map (filepath)
   "Create a new untitled buffer from a string."
   (interactive (list (read-file-name "ASCII Adventures area: "
