@@ -12,9 +12,9 @@
 
 ;; TODO Make a hyperdrive for ASCII Adventures
 ;; - Actually, some people might simply not use it
-;; - Because 
+;; - Because
 
-;; 
+;;
 
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
@@ -553,7 +553,7 @@ Return list of cons '((destination content)"
                                               (save-excursion-reliably
                                                (erase-buffer)
                                                (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
-                                              
+
                                               ;; (redraw-frame)
                                               ;; (sit-for aa/delay)
                                               )))))

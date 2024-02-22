@@ -28,6 +28,8 @@
     ('forge-notifications-mode 'magit-status-margin)
     ;; This is how I extend it
     ('bible-mode 'bible-mode-margin)
+    ;; I need to force-disable it now for certain modes in magit that did not use it
+    ('magit-diff-mode nil)
     (_ 'magit-log-margin)))
 
 (defsetface pen-magit-right-margin-face

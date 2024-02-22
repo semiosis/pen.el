@@ -2461,7 +2461,7 @@ May use to generate code from comments."
 (require 'pen-lsp-rust)
 (require 'pen-notmuch)
 (require 'pen-haskell)
-(require 'pen-haskell-emacs-interop)
+;; (require 'pen-haskell-emacs-interop)
 (require 'pen-browser)
 (require 'peniel)
 (require 'pen-discipleship-group)
