@@ -11,6 +11,10 @@
 (defsetdir aa/bewilderness-dir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/"))
 
 ;; TODO Make a hyperdrive for ASCII Adventures
+;; - Actually, some people might simply not use it
+;; - Because 
+
+;; 
 
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
@@ -42,6 +46,8 @@
 ;;       - Pretty much everything should be visible.
 ;; - It's like a super elaborate Magic School Bus exploration game.
 ;; - Just go from area to area and see what others have created.
+;; - Keep it very simple so that it is very easy to extend
+;; - Keep all the level data inside of org files
 
 
 ;; Editing:
