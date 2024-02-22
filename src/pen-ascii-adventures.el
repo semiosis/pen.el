@@ -414,6 +414,12 @@ Return list of cons '((destination content)"
 
 ;; j:animate-birthday-present
 
+(comment
+ (add-hook 'kill-buffer-hook
+           (lambda ()
+             (when (timerp my-local-timer)
+               (cancel-timer my-local-timer)))))
+
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
   (interactive)
@@ -433,12 +439,12 @@ Return list of cons '((destination content)"
                (if (not nodisplay)
                    (display-buffer buffer '(display-buffer-same-window . nil)))
 
-               (with-current-buffer (tv buffer)
+               (with-current-buffer buffer
                  (setq buffer-read-only nil)
                  (beginning-of-buffer)
 
-                 (defset-local aa/parse parse)
-                 (defset-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 (defset aa/parse parse)
+                 (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
                  ;; (tv (second aa/frames))
 
                  (comment
@@ -473,17 +479,38 @@ Return list of cons '((destination content)"
                  ;; This seems to clear the local variables
                  (ascii-adventures-mode)
 
-                 ;; Therefore I need to set them again
-                 (defset-local aa/parse parse)
-                 (defset-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 ;; Don't use local vars.
+                 ;; Instead, just have only one ascii-adventures mode buffer at a time
 
-                 (with-writable-buffer
-                  (cl-loop for f in aa/frames
-                           do
-                           (erase-buffer)
-                           (insert f)
-                           (redraw-frame)
-                           (sit-for 1)))
+                 ;; Therefore I need to set them again
+                 (defset aa/parse parse)
+                 (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 (defset aa/delay 1)
+                 (defset aa/animation-timer nil)
+                 (defset aa/buf (current-buffer))
+
+                 (setq aa/animation-timer
+                       (run-with-timer 0 aa/delay
+                                       ;; Animation
+                                       (lambda (buf)
+                                         (when (and (buffer-live-p buf)
+                                                    (not avy--overlays-back))
+                                           (with-current-buffer buf
+                                             (with-writable-buffer
+                                              (comment
+                                               (cl-loop for f in aa/frames
+                                                        do
+                                                        (erase-buffer)
+                                                        (insert f)
+                                                        (redraw-frame)
+                                                        (sit-for aa/delay)))
+
+                                              (erase-buffer)
+                                              (insert (-select-mod-element aa/frames (truncate (time-to-seconds))))
+                                              ;; (redraw-frame)
+                                              ;; (sit-for aa/delay)
+                                              ))))
+                                       (current-buffer)))
 
                  (comment
                   (etv (pps aa/parse) 'emacs-lisp-mode)))
