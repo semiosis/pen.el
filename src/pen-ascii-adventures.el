@@ -433,12 +433,13 @@ Return list of cons '((destination content)"
                (if (not nodisplay)
                    (display-buffer buffer '(display-buffer-same-window . nil)))
 
-               (with-current-buffer buffer
+               (with-current-buffer (tv buffer)
                  (setq buffer-read-only nil)
                  (beginning-of-buffer)
 
-                 (defvar-local aa/parse parse)
-                 (defvar-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 (defset-local aa/parse parse)
+                 (defset-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 ;; (tv (second aa/frames))
 
                  (comment
                   (with-temp-buffer
@@ -463,15 +464,20 @@ Return list of cons '((destination content)"
                  (comment
                   (insert (pps aa/parse)))
 
+
                  (let ((first-frame (car aa/frames)))
-                    (comment (insert (car aa/frames)))
+                   (comment (insert (car aa/frames)))
 
-                    (animate-string (car aa/frames) 0 0))
+                   (animate-string (car aa/frames) 0 0))
 
+                 ;; This seems to clear the local variables
                  (ascii-adventures-mode)
 
+                 ;; Therefore I need to set them again
+                 (defset-local aa/parse parse)
+                 (defset-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+
                  (with-writable-buffer
-                  
                   (cl-loop for f in aa/frames
                            do
                            (erase-buffer)
