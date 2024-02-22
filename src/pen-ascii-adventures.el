@@ -507,14 +507,16 @@ Return list of cons '((destination content)"
                ;; Don't use local vars.
                ;; Instead, just have only one ascii-adventures mode buffer at a time
 
-               ;; Therefore I need to set them again
-               (defset aa/parse parse)
-               (defset aa/filepath filepath)
-               (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src aa/filepath)))
-               ;; (tv parse)
-               (defset aa/delay (string-to-int (first (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))))))
-               (defset aa/animation-timer nil)
-               (defset aa/buf (current-buffer))
+               (let* ((frameproperties (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))) ))
+                 ;; Therefore I need to set them again
+                 (defset aa/parse parse)
+                 (defset aa/filepath filepath)
+                 (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src aa/filepath)))
+                 ;; (tv parse)
+                 (defset aa/delay (string-to-int (first frameproperties)))
+                 ;; (defset aa/enddelay (string-to-int (second frameproperties)))
+                 (defset aa/animation-timer nil)
+                 (defset aa/buf (current-buffer)))
 
                (when (timerp aa/animation-timer)
                  (cancel-timer aa/animation-timer))
@@ -545,6 +547,7 @@ Return list of cons '((destination content)"
                                               (save-excursion-reliably
                                                (erase-buffer)
                                                (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                              
                                               ;; (redraw-frame)
                                               ;; (sit-for aa/delay)
                                               )))))

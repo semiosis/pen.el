@@ -166,6 +166,9 @@
            (deactivate-mark t))
        res)))
 
+;; Even better than this, I want x y coordinate and to recalculate it
+;; I also want it to work when I have org-links on the screen (invisible characters)
+;; Can't use mouse-position and set-mouse-position because that only works for the GUI
 (defmacro save-excursion-reliably (&rest body)
   `(let* ((p (point))
           (res (progn ,@body)))
