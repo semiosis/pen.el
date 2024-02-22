@@ -40,11 +40,15 @@
 (defun ph-get-date ()
   (e/date "%F %a %r"))
 
+;; Get the current buffer name, too
 (defun ph-get-path-string ()
-  (let ((gp (get-path nil t)))
-    (if gp
-        (str gp)
-      "(eq nil (get-path nil t))")))
+  (concat
+   (buffer-name)
+   " "
+   (let ((gp (get-path nil t)))
+     (if gp
+         (str gp)
+       "(eq nil (get-path nil t))"))))
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.

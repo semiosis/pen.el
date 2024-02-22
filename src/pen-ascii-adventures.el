@@ -447,7 +447,8 @@ Return list of cons '((destination content)"
                                        (ignore-errors
                                          (when (and (buffer-live-p buf)
                                                     (not avy--overlays-back)
-                                                    org-descriptive-links)
+                                                    org-descriptive-links
+                                                    (not (pen-selected-p)))
                                            (with-current-buffer buf
                                              ;; (set-window-start nil 1)
                                              (with-writable-buffer

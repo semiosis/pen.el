@@ -142,6 +142,9 @@
                         (major-mode-enabled 'notmuch-search-mode))
                     (org-get-link))
 
+               (and (major-mode-enabled 'ascii-adventures-mode)
+                    "ASCII Adventures")
+
                (and (major-mode-enabled 'universal-sidecar-buffer-mode)
                     "Sidecar")
 
