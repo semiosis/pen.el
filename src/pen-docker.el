@@ -1,3 +1,7 @@
+(require 'docker)
+
+(setq docker-command "real-docker")
+
 ;; (require 'docker-compose)
 ;; (require 'docker-utils)
 ;; 
