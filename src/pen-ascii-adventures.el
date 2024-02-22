@@ -492,6 +492,7 @@ Return list of cons '((destination content)"
                  ;; Therefore I need to set them again
                  (defset aa/parse parse)
                  (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
+                 (tv parse)
                  (defset aa/delay 1)
                  (defset aa/animation-timer nil)
                  (defset aa/buf (current-buffer))
@@ -516,14 +517,14 @@ Return list of cons '((destination content)"
                                                (cl-loop for f in aa/frames
                                                         do
                                                         (save-excursion-reliably
-                                                          (erase-buffer)
-                                                          (insert f))
+                                                         (erase-buffer)
+                                                         (insert f))
                                                         (redraw-frame)
                                                         (sit-for aa/delay)))
 
                                               (save-excursion-reliably
-                                                (erase-buffer)
-                                                (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                               (erase-buffer)
+                                               (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
                                               ;; (redraw-frame)
                                               ;; (sit-for aa/delay)
                                               ))))
