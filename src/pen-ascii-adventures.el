@@ -420,6 +420,9 @@ Return list of cons '((destination content)"
              (when (timerp my-local-timer)
                (cancel-timer my-local-timer)))))
 
+;; TODO Make it so
+;; - I can easily add new areas
+
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
   (interactive)
