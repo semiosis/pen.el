@@ -66,6 +66,9 @@
         ;; (hypertext-mode
         ;;  (on org-link-minor-mode))
 
+        (ascii-adventures-mode
+         (off hl-line-mode))
+
         (universal-sidecar-buffer-mode
          (on org-link-minor-mode))
 

@@ -7,7 +7,8 @@
 ;; It also memoizes, which is good.
 ;; Throttling this is great, but it's no longer strictly buffer-specific
 (timeout-throttle! 'ph-get-path-string 0.5)
-(timeout-unthrottle! 'ph-get-path-string)
+(comment
+ (timeout-unthrottle! 'ph-get-path-string))
 
 (timeout-throttle! 'pen-compose-mode-line 1.0)
 (timeout-throttle! 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened 2.0)

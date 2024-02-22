@@ -461,9 +461,13 @@ Return list of cons '((destination content)"
                                                         (redraw-frame)
                                                         (sit-for aa/delay)))
 
-                                              (save-excursion-reliably
-                                               (erase-buffer)
-                                               (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                              ;; Saving the window point hasn't really worked
+                                              (let* ((win (get-buffer-window buf))
+                                                     (wp (window-point win)))
+                                                (save-excursion-reliably
+                                                 (erase-buffer)
+                                                 (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                                (set-window-point win wp))
 
                                               ;; (redraw-frame)
                                               ;; (sit-for aa/delay)

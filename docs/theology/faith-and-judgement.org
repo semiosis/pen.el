@@ -661,7 +661,56 @@ It's impossible to please God without faith, but with faith all things are possi
 *Hebrews 11:6* - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
 
 *** The Mosaic law doesn't help people to keep the law. It doesn't save - it only condemns or justifies. Only Jesus saves and helps us to fulfill the requirement of the law
-*Romans 3:20-27* - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith.
+
+*Acts 13:38-39* - Therefore let it be known to you, brethren, that through (G1223 *dia*) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes (G4100 *pisteuo*) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
+
+Due to Jesus, forgiveness is proclaimed:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  1223  dia  dee-ah'
+
+   a primary preposition denoting the channel of an act; through (in very
+   wide applications, local, causal, or occasional):--after, always,
+   among, at, to avoid, because of (that), briefly, by, for (cause) ...
+   fore, from, in, by occasion of, of, by reason of, for sake, that,
+   thereby, therefore, X though, through(-out), to, wherefore, with
+   (-in). In composition it retains the same general importance.
+#+END_SRC
+
+Forgiveness: Pardon, freedom.
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  859  aphesis  af'-es-is
+
+   from 863; freedom; (figuratively) pardon:--deliverance, forgiveness,
+   liberty, remission.
+   see GREEK for 863
+#+END_SRC
+
+Together with him, everyone who has faith in him is freed from all things:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  1722  en  en
+
+   a primary preposition denoting (fixed) position (in place, time or
+   state), and (by implication) instrumentality (medially or
+   constructively), i.e. a relation of rest (intermediate between 1519
+   and 1537); "in," at, (up-)on, by, etc.:--about, after, against, +
+   almost, X altogether, among, X as, at, before, between, (here-)by (+
+   all means), for (... sake of), + give self wholly to, (here-)in(-to,
+   -wardly), X mightily, (because) of, (up-)on, (open-)ly, X outwardly,
+   one, X quickly,
+   X shortly, (speedi-)ly, X that, X there(-in, -on),
+   through(-out), (un-)to(-ward), under, when, where(-with), while,
+   with(-in). Often used in compounds, with substantially the same
+   import; rarely with verbs of motion, and then not to indicate
+   direction, except (elliptically) by a separate (and different)
+   preposition.
+#+END_SRC
+
+Faith is how we receive the propitiation by His blood. God justifies the one who *has* (continues having) faith in Jesus. The law of faith is what we keep:
+
+*Romans 3:20-27* - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, *to be received by faith*. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith.
 
 Yes, the requirement of the *law* might be fulfilled in us, who do something i.e. walk according to the spirit.
 
