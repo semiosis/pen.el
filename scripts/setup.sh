@@ -2226,3 +2226,6 @@ mkdir -p ~/.pen/downloads
 cd /root
 ln -sf ~/.pen/downloads
 )
+
+# for j:org-sync-snippets--iterate-org-src
+e ia org-sync org-sync-snippets

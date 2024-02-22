@@ -17,7 +17,8 @@
   "Mode for clickable ascii text graphics.
 \\{hypertext-mode-map}"
   (setq buffer-read-only t)
-  (buffer-disable-undo))
+  (buffer-disable-undo)
+  (org-link-minor-mode t))
 
 ;; Maybe I will use this method to parse other things
 (defun ht/org-get-title (&optional buffer-or-file)

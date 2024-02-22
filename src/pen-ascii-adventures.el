@@ -2,6 +2,8 @@
 (require 'eieio)
 (require 'eieio-base)
 (require 'eieio-opt)
+(require 'org-sync)
+(require 'org-sync-snippets)
 
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
@@ -394,18 +396,19 @@ Also switch old :object-name slot name to :label."
     (insert-file-contents filename)
     (org-element-parse-buffer)))
 
-(defun org-sync-snippets--iterate-org-src (org-file)
-  "Iterate over source blocks of ORG-FILE.
+(comment
+ (defun org-sync-snippets--iterate-org-src (org-file)
+   "Iterate over source blocks of ORG-FILE.
 Return list of cons '((destination content)"
-  (with-temp-buffer
-    (insert-file-contents org-file)
-    (org-element-map (org-element-parse-buffer) 'src-block
-      (lambda (el)
-        (cons
-         (org-sync-snippets--decode-snippets-dir
-          org-sync-snippets-snippets-dir
-          (replace-regexp-in-string "^:tangle " "" (org-element-property :parameters el)))
-         (org-element-property :value el))))))
+   (with-temp-buffer
+     (insert-file-contents org-file)
+     (org-element-map (org-element-parse-buffer) 'src-block
+       (lambda (el)
+         (cons
+          (org-sync-snippets--decode-snippets-dir
+           org-sync-snippets-snippets-dir
+           (replace-regexp-in-string "^:tangle " "" (org-element-property :parameters el)))
+          (org-element-property :value el)))))))
 
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
@@ -431,6 +434,7 @@ Return list of cons '((destination content)"
                  (beginning-of-buffer)
 
                  (defvar-local aa/parse parse)
+                 (defvar-local aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
 
                  (comment
                   (with-temp-buffer
@@ -452,8 +456,13 @@ Return list of cons '((destination content)"
                  ;; Search for heading Frames
                  ;; enumerate all the babel source blocks
 
-                 (insert (pps aa/parse))
-                 (etv (pps aa/parse) 'emacs-lisp-mode)
+                 (comment
+                  (insert (pps aa/parse)))
+                 
+                 (insert (car aa/frames))
+
+                 (comment
+                  (etv (pps aa/parse) 'emacs-lisp-mode))
 
                  (ascii-adventures-mode))
                buffer)))))))

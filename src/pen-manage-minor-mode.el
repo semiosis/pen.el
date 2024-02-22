@@ -63,8 +63,8 @@
         (sh-mode
          (off org-link-minor-mode))
 
-        (hypertext-mode
-         (on org-link-minor-mode))
+        ;; (hypertext-mode
+        ;;  (on org-link-minor-mode))
 
         (universal-sidecar-buffer-mode
          (on org-link-minor-mode))
