@@ -440,7 +440,8 @@ Return list of cons '((destination content)"
            (let ((nodisplay nil)
                  ;; (parse (org-parser-parse-file filename))
                  (parse (pen-org-parse-file filename)))
-             (let ((buffer (generate-new-buffer "ascii adventures")))
+             (let (;; (buffer (generate-new-buffer "ascii adventures"))
+                   (buffer (switch-to-buffer "ascii adventures")))
                ;; (set-buffer-major-mode buffer)
 
                (if (not nodisplay)
@@ -478,10 +479,11 @@ Return list of cons '((destination content)"
                   (insert (pps aa/parse)))
 
 
-                 (let ((first-frame (car aa/frames)))
-                   (comment (insert (car aa/frames)))
+                 (comment
+                  (let ((first-frame (car aa/frames)))
+                    (comment (insert (car aa/frames)))
 
-                   (animate-string (car aa/frames) 0 0))
+                    (animate-string (car aa/frames) 0 0)))
 
                  ;; This seems to clear the local variables
                  (ascii-adventures-mode)
@@ -492,8 +494,8 @@ Return list of cons '((destination content)"
                  ;; Therefore I need to set them again
                  (defset aa/parse parse)
                  (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
-                 (tv parse)
-                 (defset aa/delay 1)
+                 ;; (tv parse)
+                 (defset aa/delay (string-to-int (first (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))))))
                  (defset aa/animation-timer nil)
                  (defset aa/buf (current-buffer))
 
