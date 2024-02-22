@@ -7,6 +7,9 @@
 
 (require 'animate)
 
+(defsetdir aa/mapdir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/"))
+(defsetdir aa/bewilderness-dir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/"))
+
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
 
@@ -430,9 +433,9 @@ Return list of cons '((destination content)"
 (defun ascii-adventures-open-map (filepath)
   "Create a new untitled buffer from a string."
   (interactive (list (read-file-name "ASCII Adventures area: "
-                                     "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/")))
+                                     aa/mapdir)))
 
-  (setq filepath (or filepath (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")))
+  (setq filepath (or filepath aa/bewilderness-dir))
 
   ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
 

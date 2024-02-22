@@ -28,6 +28,7 @@
      (add-to-list 'pen-directories ',symbol)
      (defvar ,symbol ,documentation)
      (setq ,symbol ,value)))
+(defalias 'defsetdir 'defdir)
 
 (defun f-join (&rest bits)
   (s-join "/" bits))
