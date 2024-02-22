@@ -1038,6 +1038,9 @@
     (bindings--define-key menu [mi-ebdb-display-all-records]
       '(menu-item "Address book" ebdb-display-all-records
                   :help "View Address Book"))
+    (bindings--define-key menu [mi-ascii-adventures]
+      '(menu-item "ASCII Adventures" ascii-adventures
+                  :help "Play ASCII Adventures"))
     (bindings--define-key menu [mi-captain-bible]
       '(menu-item "Captain Bible" captain-bible
                   :help "Play Captain Bible"))

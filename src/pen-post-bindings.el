@@ -22,7 +22,9 @@
 (sslk "laT" #'list-timers)
 (sslk "laP" #'proced)
 (sslk "lab" #'dap-hydra/body)
-(sslk "laa" #'dap-ui-breakpoints)
+(comment
+ (sslk "laa" #'dap-ui-breakpoints))
+(sslk "laa" #'ascii-adventures)
 (sslk "lad" #'docker)
 (sslk "lax" #'mitmproxy)
 (sslk "laD" #'prodigy)
