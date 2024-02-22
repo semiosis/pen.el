@@ -375,7 +375,7 @@ Also switch old :object-name slot name to :label."
   (setq path (umn path))
 
   ;; I guess this is parsing it twice
-  (let ((parse (org-parser-parse-file filename))
+  (let ((parse (org-parser-parse-file path))
         (b (open-hypertext-in-buffer path)))))
 
 
@@ -392,10 +392,10 @@ Also switch old :object-name slot name to :label."
   (defvar-local area-file nil))
 
 
-(defun pen-org-parse-file (filename)
+(defun pen-org-parse-file (filepath)
   "Parse FILENAME into a list of structure items."
   (with-temp-buffer
-    (insert-file-contents filename)
+    (insert-file-contents filepath)
     (org-element-parse-buffer)))
 
 (comment
@@ -427,113 +427,115 @@ Return list of cons '((destination content)"
 
 ;; mx:list-timers
 
-(defun test-ascii-adventures ()
+(defun ascii-adventures-open-map (filepath)
   "Create a new untitled buffer from a string."
-  (interactive)
+  (interactive (list (read-file-name "ASCII Adventures area: "
+                                     "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/")))
+
+  (setq filepath (or filepath (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")))
 
   ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
 
   ;; [[el:(etv (pps (org-parser-parse-file (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org"))))]]
 
-  (let ((filename (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")))
-    (let ((buf
-           (let ((nodisplay nil)
-                 ;; (parse (org-parser-parse-file filename))
-                 (parse (pen-org-parse-file filename)))
-             (let (;; (buffer (generate-new-buffer "ascii adventures"))
-                   (buffer (switch-to-buffer "ascii adventures")))
-               ;; (set-buffer-major-mode buffer)
+  (let ((buf
+         (let ((nodisplay nil)
+               ;; (parse (org-parser-parse-file filepath))
+               (parse (pen-org-parse-file filepath)))
+           (let (;; (buffer (generate-new-buffer "ascii adventures"))
+                 (buffer (switch-to-buffer "ascii adventures")))
+             ;; (set-buffer-major-mode buffer)
 
-               (if (not nodisplay)
-                   (display-buffer buffer '(display-buffer-same-window . nil)))
+             (if (not nodisplay)
+                 (display-buffer buffer '(display-buffer-same-window . nil)))
 
-               (with-current-buffer buffer
-                 (setq buffer-read-only nil)
-                 (beginning-of-buffer)
+             (with-current-buffer buffer
+               (setq buffer-read-only nil)
+               (beginning-of-buffer)
 
-                 (defset aa/parse parse)
-                 (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
-                 ;; (tv (second aa/frames))
+               (defset aa/parse parse)
+               (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filepath)))
+               ;; (tv (second aa/frames))
 
-                 (comment
-                  (with-temp-buffer
-                    (ignore-errors (insert-file-contents filename))
-                    (org-element-map (org-element-parse-buffer 'headline) 'headline
-                      (lambda (headline)
-                        (when-let ((id (org-element-property :ID headline)))
-                          (unless (org-brain-id-exclude-taggedp id)
-                            (org-brain-entry-from-id id))))
-                      nil nil 'headline)))
+               (comment
+                (with-temp-buffer
+                  (ignore-errors (insert-file-contents filepath))
+                  (org-element-map (org-element-parse-buffer 'headline) 'headline
+                    (lambda (headline)
+                      (when-let ((id (org-element-property :ID headline)))
+                        (unless (org-brain-id-exclude-taggedp id)
+                          (org-brain-entry-from-id id))))
+                    nil nil 'headline)))
 
-                 ;; (defvar-local aa/parse2 parse2)
+               ;; (defvar-local aa/parse2 parse2)
 
-                 ;; There's  a better way of doing this
+               ;; There's  a better way of doing this
 
-                 ;; (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
-                 ;; (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
+               ;; (defvar-local aa/settings (ht-get aa/parse :in-buffer-settings))
+               ;; (defvar-local aa/content (ht-get aa/parse :in-buffer-content))
 
-                 ;; Search for heading Frames
-                 ;; enumerate all the babel source blocks
+               ;; Search for heading Frames
+               ;; enumerate all the babel source blocks
 
-                 (comment
-                  (insert (pps aa/parse)))
+               (comment
+                (insert (pps aa/parse)))
 
 
-                 (comment
-                  (let ((first-frame (car aa/frames)))
-                    (comment (insert (car aa/frames)))
+               (comment
+                (let ((first-frame (car aa/frames)))
+                  (comment (insert (car aa/frames)))
 
-                    (animate-string (car aa/frames) 0 0)))
+                  (animate-string (car aa/frames) 0 0)))
 
-                 ;; This seems to clear the local variables
-                 (ascii-adventures-mode)
+               ;; This seems to clear the local variables
+               (ascii-adventures-mode)
 
-                 ;; Don't use local vars.
-                 ;; Instead, just have only one ascii-adventures mode buffer at a time
+               ;; Don't use local vars.
+               ;; Instead, just have only one ascii-adventures mode buffer at a time
 
-                 ;; Therefore I need to set them again
-                 (defset aa/parse parse)
-                 (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filename)))
-                 ;; (tv parse)
-                 (defset aa/delay (string-to-int (first (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))))))
-                 (defset aa/animation-timer nil)
-                 (defset aa/buf (current-buffer))
+               ;; Therefore I need to set them again
+               (defset aa/parse parse)
+               (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filepath)))
+               ;; (tv parse)
+               (defset aa/delay (string-to-int (first (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))))))
+               (defset aa/animation-timer nil)
+               (defset aa/buf (current-buffer))
 
-                 (when (timerp aa/animation-timer)
-                   (cancel-timer aa/animation-timer))
-                 
-                 (setq aa/animation-timer
-                       (run-with-timer 0 aa/delay
-                                       ;; Animation
-                                       (lambda (buf)
-                                         (if (not (buffer-live-p buf))
-                                             (when (timerp aa/animation-timer)
-                                               (cancel-timer aa/animation-timer)))
-                                         
-                                         (when (and (buffer-live-p buf)
-                                                    (not avy--overlays-back))
-                                           (with-current-buffer buf
-                                             ;; (set-window-start nil 1)
-                                             (with-writable-buffer
-                                              (comment
-                                               (cl-loop for f in aa/frames
-                                                        do
-                                                        (save-excursion-reliably
-                                                         (erase-buffer)
-                                                         (insert f))
-                                                        (redraw-frame)
-                                                        (sit-for aa/delay)))
+               (when (timerp aa/animation-timer)
+                 (cancel-timer aa/animation-timer))
+               
+               (setq aa/animation-timer
+                     (run-with-timer 0 aa/delay
+                                     ;; Animation
+                                     (lambda (buf)
+                                       (if (not (buffer-live-p buf))
+                                           (when (timerp aa/animation-timer)
+                                             (cancel-timer aa/animation-timer)))
+                                       
+                                       (when (and (buffer-live-p buf)
+                                                  (not avy--overlays-back))
+                                         (with-current-buffer buf
+                                           ;; (set-window-start nil 1)
+                                           (with-writable-buffer
+                                            (comment
+                                             (cl-loop for f in aa/frames
+                                                      do
+                                                      (save-excursion-reliably
+                                                       (erase-buffer)
+                                                       (insert f))
+                                                      (redraw-frame)
+                                                      (sit-for aa/delay)))
 
-                                              (save-excursion-reliably
-                                               (erase-buffer)
-                                               (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
-                                              ;; (redraw-frame)
-                                              ;; (sit-for aa/delay)
-                                              ))))
-                                       (current-buffer)))
+                                            (save-excursion-reliably
+                                             (erase-buffer)
+                                             (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
+                                            ;; (redraw-frame)
+                                            ;; (sit-for aa/delay)
+                                            ))))
+                                     (current-buffer)))
 
-                 (comment
-                  (etv (pps aa/parse) 'emacs-lisp-mode)))
-               buffer)))))))
+               (comment
+                (etv (pps aa/parse) 'emacs-lisp-mode)))
+             buffer))))))
 
 (provide 'pen-ascii-adventures)
