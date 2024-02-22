@@ -32,7 +32,17 @@
 A map should mainly simply connect places together.
 "
   (interactive)
-  (message "%s" "Go to the map"))
+  (message "%s" "Go to the map")
+  (ascii-adventures-open-map (f-join aa/bewilderness-dir "map.org")))
+
+(defun aa/house ()
+  "This should display the map.
+
+A map should mainly simply connect places together.
+"
+  (interactive)
+  (message "%s" "Go to the map")
+  (ascii-adventures-open-map (f-join aa/bewilderness-dir "house.org")))
 
 
 ;; This could be a jump-gate like in Ray's Maze.
