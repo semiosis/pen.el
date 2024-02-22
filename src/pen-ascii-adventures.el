@@ -394,6 +394,18 @@ Also switch old :object-name slot name to :label."
     (insert-file-contents filename)
     (org-element-parse-buffer)))
 
+(defun org-sync-snippets--iterate-org-src (org-file)
+  "Iterate over source blocks of ORG-FILE.
+Return list of cons '((destination content)"
+  (with-temp-buffer
+    (insert-file-contents org-file)
+    (org-element-map (org-element-parse-buffer) 'src-block
+      (lambda (el)
+        (cons
+         (org-sync-snippets--decode-snippets-dir
+          org-sync-snippets-snippets-dir
+          (replace-regexp-in-string "^:tangle " "" (org-element-property :parameters el)))
+         (org-element-property :value el))))))
 
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
@@ -440,7 +452,8 @@ Also switch old :object-name slot name to :label."
                  ;; Search for heading Frames
                  ;; enumerate all the babel source blocks
 
-                 (insert (pps aa/parse2))
+                 (insert (pps aa/parse))
+                 (etv (pps aa/parse) 'emacs-lisp-mode)
 
                  (ascii-adventures-mode))
                buffer)))))))
