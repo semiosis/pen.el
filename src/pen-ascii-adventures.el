@@ -464,14 +464,23 @@ Return list of cons '((destination content)"
                   (insert (pps aa/parse)))
 
                  (let ((first-frame (car aa/frames)))
-                   (comment (insert (car aa/frames)))
+                    (comment (insert (car aa/frames)))
 
-                   (animate-string (car aa/frames) 0 0))
+                    (animate-string (car aa/frames) 0 0))
+
+                 (ascii-adventures-mode)
+
+                 (with-writable-buffer
+                  
+                  (cl-loop for f in aa/frames
+                           do
+                           (erase-buffer)
+                           (insert f)
+                           (redraw-frame)
+                           (sit-for 1)))
 
                  (comment
-                  (etv (pps aa/parse) 'emacs-lisp-mode))
-
-                 (ascii-adventures-mode))
+                  (etv (pps aa/parse) 'emacs-lisp-mode)))
                buffer)))))))
 
 (provide 'pen-ascii-adventures)
