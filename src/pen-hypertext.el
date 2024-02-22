@@ -35,7 +35,7 @@ Returns nil if there are no #+TITLE property."
         (unless (string= "" title)
           title)))))
 
-(defun open-hypertext-in-buffer (&optional filename)
+(defun open-hypertext-in-buffer (&optional filename bufname nodisplay contents mode)
   "Create a new untitled buffer from a string."
   (interactive)
 

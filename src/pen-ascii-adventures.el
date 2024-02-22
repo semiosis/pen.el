@@ -5,6 +5,8 @@
 (require 'org-sync)
 (require 'org-sync-snippets)
 
+(require 'animate)
+
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
 
@@ -380,7 +382,7 @@ Also switch old :object-name slot name to :label."
 (comment
  (load-place-from-file "$HOME/notes/ws/ascii-adventures/house.org")
 
- (open-hypertext))
+ (open-hypertext-in-buffer))
 
 
 ;; parent: special-mode, fundamental-mode or text-mode
@@ -410,11 +412,13 @@ Return list of cons '((destination content)"
            (replace-regexp-in-string "^:tangle " "" (org-element-property :parameters el)))
           (org-element-property :value el)))))))
 
+;; j:animate-birthday-present
+
 (defun test-ascii-adventures ()
   "Create a new untitled buffer from a string."
   (interactive)
 
-  ;; [[el:(open-hypertext "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
+  ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
 
   ;; [[el:(etv (pps (org-parser-parse-file (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org"))))]]
 
