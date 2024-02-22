@@ -444,7 +444,7 @@ Return list of cons '((destination content)"
   (interactive (list (read-file-name "ASCII Adventures area: "
                                      aa/mapdir)))
 
-  (setq filepath (or filepath aa/bewilderness-dir))
+  (setq filepath (or filepath (f-join aa/bewilderness-dir "house.org")))
 
   ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
 
@@ -563,5 +563,9 @@ Return list of cons '((destination content)"
       )))
 
 (define-key ascii-adventures-mode-map (kbd "o") 'aa/edit-area)
+
+(defun ascii-adventures ()
+  (interactive)
+  (ascii-adventures-open-map (f-join aa/bewilderness-dir "house.org")))
 
 (provide 'pen-ascii-adventures)
