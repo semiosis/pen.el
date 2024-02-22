@@ -7,6 +7,8 @@
 
 (require 'animate)
 
+;; [[sh:sps braille-show-image $PEN/documents/rays-maze-techtrons.png]]
+
 ;; e:$PEN/documents/ascii-adventures/todo.org
 
 (defsetdir aa/mapdir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/"))
@@ -378,7 +380,7 @@ Return list of cons '((destination content)"
                  (display-buffer buffer '(display-buffer-same-window . nil)))
 
              (when (timerp aa/animation-timer)
-               (cancel-timer (tv aa/animation-timer)))
+               (cancel-timer aa/animation-timer))
 
              (with-current-buffer buffer
                (setq buffer-read-only nil)
