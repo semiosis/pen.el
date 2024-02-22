@@ -510,19 +510,20 @@ Return list of cons '((destination content)"
                                          (when (and (buffer-live-p buf)
                                                     (not avy--overlays-back))
                                            (with-current-buffer buf
-                                             (set-window-start nil 1)
+                                             ;; (set-window-start nil 1)
                                              (with-writable-buffer
                                               (comment
                                                (cl-loop for f in aa/frames
                                                         do
-                                                        (save-excursion
+                                                        (save-excursion-reliably
                                                           (erase-buffer)
                                                           (insert f))
                                                         (redraw-frame)
                                                         (sit-for aa/delay)))
 
-                                              (erase-buffer)
-                                              (insert (-select-mod-element aa/frames (truncate (time-to-seconds))))
+                                              (save-excursion-reliably
+                                                (erase-buffer)
+                                                (insert (-select-mod-element aa/frames (truncate (time-to-seconds)))))
                                               ;; (redraw-frame)
                                               ;; (sit-for aa/delay)
                                               ))))
