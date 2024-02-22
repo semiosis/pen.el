@@ -7,14 +7,10 @@
 
 (require 'animate)
 
+;; e:$PEN/documents/ascii-adventures/todo.org
+
 (defsetdir aa/mapdir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/"))
 (defsetdir aa/bewilderness-dir (umn "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/"))
-
-;; TODO Make a hyperdrive for ASCII Adventures
-;; - Actually, some people might simply not use it
-;; - Because
-
-;;
 
 ;; org-parser is not actually that good compared to org-element-parse-buffer which is part of org
 ;; (require 'org-parser)
@@ -23,96 +19,6 @@
 
 ;; e:$EMACSD/pen.el/src/pen-ascii-adventures.el
 ;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
-
-;; Game worlds:
-;; - bewilderness
-;; - bibleverse
-
-;; TODO;
-;; - Make it so an area/place file can be loaded into the major mode, and animates
-;;   - /volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
-
-;; Remember
-;; Every slot that appears in each parent class is replicated in the new class.
-
-
-;; Vision:
-;; - This is meant to be an imagination, exploration game.
-;;   - It's not meant to be difficult.
-;;   - It should not require much tedium.
-;;   - But it should have many areas to stretch the imagination.
-;;   - It should just have a lot of switches.
-;;     - And they don't need to be discovered.
-;;       - Pretty much everything should be visible.
-;; - It's like a super elaborate Magic School Bus exploration game.
-;; - Just go from area to area and see what others have created.
-;; - Keep it very simple so that it is very easy to extend
-;; - Keep all the level data inside of org files
-
-
-;; Editing:
-;; - Make it so I can build the game as I am exploring it.
-;;   - This will be the most efficient way to construct the world.
-;;   - New [org-link]s should create the new areas.
-;; - I may as well use eieio, then, and persistent storage
-;;   - Also, I get a pretty printer, Custom etc. and other features
-
-
-;; Example scene:
-;; - The outside of a house with 3 people around a barrel fire
-;; - Some clickable options for things to do:
-;;   - Enter the house
-;;   - Sit down with them around the barrel
-
-
-;; Example scene (barrel):
-;; - Some clickable options for things to do:
-;;   - Listen to them sing
-;;   - Leave (and return to the outside of the house)
-
-
-;; Example scene (inside the house):
-;; - Clickable options:
-;;   - Talk to the dormouse
-;;     - This leads to another scene, etc.
-;;       - Going into the mouse tunnels.
-;;   - Yell out really loudly, "I love apples!"
-;;     - This leads to another scene, etc.
-
-
-;; I guess the genius of this game is that it could lead anywhere.
-
-;; Then, maybe you can time yourself doing a race from A-B.
-
-;; The above alone should be quite fun.
-;; I would not even need an inventory, etc.
-;; Therefore, I should start with that.
-
-
-;; Design decisions:
-;; - Keep it simple.
-;; - Show everything there is to see on the viewport in a simple animation.
-;;   - Typically, 1,2 or 3 frames
-;; - List the things you can take or look at.
-;;   - Prioritise an 'Escape from Monkey Island' interface
-;;     - vs a text adventure interface (like magnetic scrolls)
-;;     - Advance to using emacs transients, etc.
-;;   - Click on options, item names, commands, etc.
-;; - Inspect things closely.
-
-
-;; Later:
-;; - Inventory.
-;;   - Make it so I can look at objects up close - this should be hypertext, too.
-
-
-;; TODO Find out if I can save eieio objects
-;; [[info:(eieio) eieio-persistent]]
-
-
-;; Example of using ebdb
-;; j:ebdb-record
-
 
 ;; The 'place' has an animated, clickable
 
@@ -444,6 +350,7 @@ Return list of cons '((destination content)"
 ;; This should open the game, I guess? Nah. I still want to be able to easily edit.
 ;; But I should be able to easily open the org file from the game
 ;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/map.org
 
 (defset aa/filepath nil)
 
