@@ -433,6 +433,12 @@ Return list of cons '((destination content)"
 ;; TODO Make it so if I open an org file and it is an area file, it should load it
 ;; (add-to-list 'auto-mode-alist '("\\.jq$" . jq-mode))
 
+;; This should open the game, I guess? Nah. I still want to be able to easily edit.
+;; But I should be able to easily open the org file from the game
+;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
+
+(defset aa/filepath nil)
+
 (defun ascii-adventures-open-map (filepath)
   "Create a new untitled buffer from a string."
   (interactive (list (read-file-name "ASCII Adventures area: "
@@ -501,7 +507,8 @@ Return list of cons '((destination content)"
 
                ;; Therefore I need to set them again
                (defset aa/parse parse)
-               (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src filepath)))
+               (defset aa/filepath filepath)
+               (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src aa/filepath)))
                ;; (tv parse)
                (defset aa/delay (string-to-int (first (org-element-map parse 'node-property (lambda (el) (org-element-property :value el))))))
                (defset aa/animation-timer nil)
@@ -543,5 +550,18 @@ Return list of cons '((destination content)"
                (comment
                 (etv (pps aa/parse) 'emacs-lisp-mode)))
              buffer))))))
+
+(defun aa/edit-area ()
+  (interactive)
+  (let* ((b (buffer-live-p "ascii adventures"))
+         (fp aa/filepath))
+
+    (if (f-file-p aa/filepath)
+        (find-file aa/filepath)
+
+        ;; (ascii-adventures-open-map aa/filepath)
+      )))
+
+(define-key ascii-adventures-mode-map (kbd "o") 'aa/edit-area)
 
 (provide 'pen-ascii-adventures)
