@@ -504,12 +504,17 @@ Return list of cons '((destination content)"
                                                 ;; :predicate (not (buffer-modified-p))
                                                 )
   (ignore-errors (let* ((mm-string (with-current-buffer buffer (str major-mode)))
+                        (parse (with-current-buffer buffer (org-element-parse-buffer)))
                         (title mm-string))
                    (universal-sidecar-insert-section bible-section title
                      (insert
                       (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
                         ;; This is inserted
-                        "[[el:(sps)][Split screen]]"
+                        ;; "[[el:(sps)][Split screen]]"
+                        (pps (org-element-map parse 'link
+                               (lambda (link)
+                                 (when (string= (org-element-property :type link) "el")
+                                   (org-element-property :path link)))))
                         ;; This runs after the above
                         (comment (some-post-processing-of-org-text))))))))
 
