@@ -421,6 +421,7 @@ Return list of cons '((destination content)"
 
                ;; This seems to clear the local variables
                (ascii-adventures-mode)
+               ;; (picture-mode-exit)
 
                ;; Don't use local vars.
                ;; Instead, just have only one ascii-adventures mode buffer at a time
@@ -451,6 +452,7 @@ Return list of cons '((destination content)"
                                                     (not (pen-selected-p)))
                                            (with-current-buffer buf
                                              ;; (set-window-start nil 1)
+                                             ;; (ignore-errors (picture-mode-exit))
                                              (with-writable-buffer
                                               (comment
                                                (cl-loop for f in aa/frames

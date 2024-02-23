@@ -18,6 +18,8 @@
 \\{hypertext-mode-map}"
   ;; (setq buffer-read-only t)
   (buffer-disable-undo)
+  ;; This interfered with ascii-adventure
+  ;; (picture-mode)
   (org-link-minor-mode t))
 
 ;; Maybe I will use this method to parse other things
