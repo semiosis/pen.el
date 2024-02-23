@@ -29,7 +29,7 @@
 ;; I need this to be memoized and re-queried per-second max, and also per-buffer
 
 (comment
- (defun ph-get-path-wstring ()
+ (defun ph-get-path-string ()
    (let ((gd (e/date "%F %a %T")))
      (if (not (string-equal gd pen-header-line-path-last-time))
          (let ((gp (get-path nil t)))
@@ -42,20 +42,26 @@
   (e/date "%F %a %r"))
 
 ;; Get the current buffer name, too
-(defun ph-get-path-wstring ()
-  (concat
-   (buffer-name)
-   " "
-   (let ((gp (get-path nil t)))
-     (if gp
-         (str gp)
-       "(eq nil (get-path nil t))"))))
+(defun ph-get-path-string ()
+  (let ((gp (get-path nil t)))
+    (if gp
+        (str gp)
+      "(eq nil (get-path nil t))")))
+
+(defun ph-get-path-string-for-buf (buffer)
+  (with-current-buffer buffer
+    (let ((gp (get-path nil t)))
+      (if gp
+          (str gp)
+        "(eq nil (get-path nil t))"))))
 
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
-(defun ph--make-header (&optional nodate)
+(defun ph--make-header (&optional nodate buffer)
   ""
-  (let ((fh (ph-get-path-string)))
+  (setq buffer (or buffer (current-buffer)))
+
+  (let ((fh (ph-get-path-string-for-buf buffer)))
     (if fh
         (let* ((ph--full-header fh)
                (ph--header fh)

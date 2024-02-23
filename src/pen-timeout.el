@@ -17,9 +17,15 @@
  (timeout-throttle! 'ph-get-path-string 0.5)
  (timeout-unthrottle! 'ph-get-path-string))
 
-(timeout-nil-throttle! 'ph-get-path-string 0.5)
 (comment
+ (timeout-nil-throttle! 'ph-get-path-string 0.5)
  (timeout-nil-unthrottle! 'ph-get-path-string))
+
+;; DONE ensure this works the same as timeout-throttle!
+;; TODO add arg which buffer ph-get-path-string should refer to
+(timeout-memo-throttle! 'ph-get-path-string-for-buf 0.5)
+(comment
+ (timeout-memo-unthrottle! 'ph-get-path-string-for-buf))
 
 (timeout-throttle! 'pen-compose-mode-line 1.0)
 (timeout-throttle! 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened 2.0)
@@ -76,5 +82,49 @@ function."
 
 (defun timeout-nil-unthrottle! (func)
   (timeout-nil-throttle! func 0))
+
+
+(defun timeout-memo--throttle-advice (&optional timeout)
+  "Return a function that throttles its argument function.
+But also updates when the arguments change.
+
+TIMEOUT defaults to 1.0 seconds.  This is intended for use as
+function advice."
+  (let ((throttle-timer)
+        (timeout (or timeout 1.0))
+        (result)
+        (lastargs))
+    (lambda (orig-fn &rest args)
+      "Throttle calls to this function."
+      (if (and (timerp throttle-timer)
+               (eq lastargs args))
+          result
+        (prog1
+            (setq result (apply orig-fn args))
+          (setq throttle-timer
+                (run-with-timer
+                 timeout nil
+                 (lambda ()
+                   (if (timerp throttle-timer)
+                       (cancel-timer throttle-timer))
+                   (setq throttle-timer nil))))
+          (setq lastargs args))))))
+
+(defun timeout-memo-throttle! (func &optional throttle)
+  "Throttle FUNC by THROTTLE seconds.
+
+This advises FUNC so that it can run no more than once every
+THROTTLE seconds.
+
+THROTTLE defaults to 1.0 seconds.  Using a throttle of 0 resets the
+function."
+  (if (= throttle 0)
+      (advice-remove func 'throttle)
+    (advice-add func :around (timeout-memo--throttle-advice throttle)
+                '((name . throttle)
+                  (depth . -98)))))
+
+(defun timeout-memo-unthrottle! (func)
+  (timeout-memo-throttle! func 0))
 
 (provide 'pen-timeout)
