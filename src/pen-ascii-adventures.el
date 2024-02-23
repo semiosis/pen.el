@@ -289,7 +289,6 @@ Also switch old :object-name slot name to :label."
 
  (object-add-to-list entrance 'objects item &optional append))
 
-
 ;; OK, so I need to think about how I load this
 (defun load-place-from-file (path)
   (setq path (umn path))
@@ -298,12 +297,10 @@ Also switch old :object-name slot name to :label."
   (let ((parse (org-parser-parse-file path))
         (b (open-hypertext-in-buffer path)))))
 
-
 (comment
  (load-place-from-file "$HOME/notes/ws/ascii-adventures/house.org")
 
  (open-hypertext-in-buffer))
-
 
 ;; parent: special-mode, fundamental-mode or text-mode
 (define-derived-mode ascii-adventures-mode hypertext-mode "ASCII Adventures"
@@ -333,6 +330,7 @@ Return list of cons '((destination content)"
           (org-element-property :value el)))))))
 
 ;; j:animate-birthday-present
+;; mx:animate-birthday-present
 
 (comment
  (add-hook 'kill-buffer-hook
