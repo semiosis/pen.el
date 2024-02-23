@@ -506,7 +506,7 @@ Return list of cons '((destination content)"
   (ignore-errors (let* ((mm-string (with-current-buffer buffer (str major-mode)))
                         (parse (with-current-buffer buffer (org-element-parse-buffer)))
                         (title mm-string))
-                   
+
                    (universal-sidecar-insert-section ascii-adventures-section title
                      (insert
                       (universal-sidecar-fontify-as org-mode ((org-fold-core-style 'overlays))
@@ -526,7 +526,7 @@ Return list of cons '((destination content)"
                                                     (pps (org-element-property :path link))
                                                     (pps (buffer-substring (org-element-property :contents-begin link)
                                                                            (org-element-property :contents-end link)))))))))
-                        
+
                         (comment (pps (org-element-map parse 'link
                                         (lambda (link)
                                           (when (string= (org-element-property :type link) "el")
