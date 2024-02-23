@@ -17,8 +17,9 @@
  (timeout-throttle! 'ph-get-path-string 0.5)
  (timeout-unthrottle! 'ph-get-path-string))
 
-(timeout-throttle! 'ph-get-path-string 0.5)
-;; (timeout-nil-unthrottle! 'ph-get-path-string)
+(timeout-nil-throttle! 'ph-get-path-string 0.5)
+(comment
+ (timeout-nil-unthrottle! 'ph-get-path-string))
 
 (timeout-throttle! 'pen-compose-mode-line 1.0)
 (timeout-throttle! 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened 2.0)

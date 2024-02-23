@@ -29,7 +29,7 @@
 ;; I need this to be memoized and re-queried per-second max, and also per-buffer
 
 (comment
- (defun ph-get-path-string ()
+ (defun ph-get-path-wstring ()
    (let ((gd (e/date "%F %a %T")))
      (if (not (string-equal gd pen-header-line-path-last-time))
          (let ((gp (get-path nil t)))
@@ -42,7 +42,7 @@
   (e/date "%F %a %r"))
 
 ;; Get the current buffer name, too
-(defun ph-get-path-string ()
+(defun ph-get-path-wstring ()
   (concat
    (buffer-name)
    " "
@@ -55,41 +55,43 @@
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header (&optional nodate)
   ""
-  (let* ((ph--full-header (ph-get-path-string))
-         (ph--header (ph-get-path-string))
-         (ph--drop-str "[...]"))
-    (if (> (length ph--full-header)
-           (window-body-width))
-        (if (> (length ph--header)
-               (window-body-width))
-            (progn
-              (concat (ph--with-face ph--drop-str
-                                     :background "blue"
-                                     :weight 'bold)
-                      (ph--with-face (substring ph--header
-                                                (+ (- (length ph--header)
-                                                      (window-body-width))
-                                                   (length ph--drop-str))
-                                                (length ph--header))
-                                     :weight 'bold)))
-          (concat (ph--with-face ph--header
-                                 :foreground "#8fb28f"
-                                 :weight 'bold)))
-      (let ((datestr (str (ph-get-date))))
-        ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
-        (concat (ph--with-face ph--header
-                               'header-line-highlight)
-                (propertize " " 'display `(space :align-to (-
-                                                            right
-                                                            ;; For the sidecar margin, so AM/PM isn't covered up
-                                                            ,(if (universal-sidecar-visible-p)
-                                                                 1
-                                                               0)
-                                                            ,(length datestr))))
-                (if (not nodate)
-                    (ph--with-face datestr
-                                   'header-line-highlight)
-                  ""))))))
+  (let ((fh (ph-get-path-string)))
+    (if fh
+        (let* ((ph--full-header fh)
+               (ph--header fh)
+               (ph--drop-str "[...]"))
+          (if (> (length ph--full-header)
+                 (window-body-width))
+              (if (> (length ph--header)
+                     (window-body-width))
+                  (progn
+                    (concat (ph--with-face ph--drop-str
+                                           :background "blue"
+                                           :weight 'bold)
+                            (ph--with-face (substring ph--header
+                                                      (+ (- (length ph--header)
+                                                            (window-body-width))
+                                                         (length ph--drop-str))
+                                                      (length ph--header))
+                                           :weight 'bold)))
+                (concat (ph--with-face ph--header
+                                       :foreground "#8fb28f"
+                                       :weight 'bold)))
+            (let ((datestr (str (ph-get-date))))
+              ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
+              (concat (ph--with-face ph--header
+                                     'header-line-highlight)
+                      (propertize " " 'display `(space :align-to (-
+                                                                  right
+                                                                  ;; For the sidecar margin, so AM/PM isn't covered up
+                                                                  ,(if (universal-sidecar-visible-p)
+                                                                       1
+                                                                     0)
+                                                                  ,(length datestr))))
+                      (if (not nodate)
+                          (ph--with-face datestr
+                                         'header-line-highlight)
+                        ""))))))))
 
 (defun ph--display-header ()
   "Display path on headerline."
