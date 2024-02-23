@@ -516,6 +516,25 @@ Return list of cons '((destination content)"
                                (lambda (link)
                                  (when (string= (org-element-property :type link) "el")
                                    (org-element-property :path link)))))
+
+                        (comment (pps (org-element-map parse 'link
+                                        (lambda (link)
+                                          (comment
+                                           (org-element-property :path link))
+                                          (when (string= (org-element-property :type link) "el")
+                                            (format "[[%s][%s]]"
+                                                    (pps (org-element-property :path link))
+                                                    (pps (buffer-substring (org-element-property :contents-begin link)
+                                                                           (org-element-property :contents-end link)))))))))
+                        
+                        (comment (pps (org-element-map parse 'link
+                                        (lambda (link)
+                                          (when (string= (org-element-property :type link) "el")
+                                            (org-element-property :path link))))))
+                        (comment (pps (org-element-map parse 'link
+                                        (lambda (link)
+                                          link))))
+                        (comment (pps parse))
                         ;; This runs after the above
                         (comment (some-post-processing-of-org-text))))))))
 
