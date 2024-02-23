@@ -3,44 +3,13 @@
 ;; Lexical binding is needed:
 ;; Therefore, to reload: mx:pen-reload-config-file
 
+;; TODO Make it so when I press 'e' on a sexp in a file which has lexical-binding inside,
+;; it suggests that I load the entire file in a message.
+
 (require 'timeout)
 
 (defun timeout-unthrottle! (func)
   (timeout-throttle! func 0))
-
-;; This function may run at most once every 2 seconds.
-;; It also memoizes, which is good.
-;; Throttling this is great, but it's no longer strictly buffer-specific.
-;; I need to throttle/cache per-buffer. Per-buffer debounce memoization.
-;; OK, so just throw away the value and don't update the buffer, if it bounces, rather than taking the value.
-(comment
- (timeout-throttle! 'ph-get-path-string 0.5)
- (timeout-unthrottle! 'ph-get-path-string))
-
-(comment
- (timeout-nil-throttle! 'ph-get-path-string 0.5)
- (timeout-nil-unthrottle! 'ph-get-path-string))
-
-;; DONE ensure this works the same as timeout-throttle!
-;; TODO add arg which buffer ph-get-path-string should refer to
-(timeout-memo-throttle! 'ph-get-path-string-for-buf 0.5)
-(comment
- (timeout-memo-unthrottle! 'ph-get-path-string-for-buf))
-
-(timeout-throttle! 'pen-compose-mode-line 1.0)
-(timeout-throttle! 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened 2.0)
-(timeout-throttle! 'git-gutter+-refresh 2.0)
-
-(comment
- (timeout-throttle! 'git-gutter+-refresh 2.0)
- (timeout-unthrottle! 'git-gutter+-refresh))
-
-(comment
- (defun test-throttle-fun ()
-   (message (vime "strftime(\"%c\")")))
- (timeout-throttle! 'test-throttle-fun 2.0)
- (test-throttle-fun))
-
 
 (defun timeout-nil--throttle-advice (&optional timeout)
   "Return a function that throttles its argument function.
@@ -126,5 +95,40 @@ function."
 
 (defun timeout-memo-unthrottle! (func)
   (timeout-memo-throttle! func 0))
+
+
+
+;; This function may run at most once every 2 seconds.
+;; It also memoizes, which is good.
+;; Throttling this is great, but it's no longer strictly buffer-specific.
+;; I need to throttle/cache per-buffer. Per-buffer debounce memoization.
+;; OK, so just throw away the value and don't update the buffer, if it bounces, rather than taking the value.
+(comment
+ (timeout-throttle! 'ph-get-path-string 0.5)
+ (timeout-unthrottle! 'ph-get-path-string))
+
+(comment
+ (timeout-nil-throttle! 'ph-get-path-string 0.5)
+ (timeout-nil-unthrottle! 'ph-get-path-string))
+
+;; DONE ensure this works the same as timeout-throttle!
+;; TODO add arg which buffer ph-get-path-string should refer to
+(timeout-memo-throttle! 'ph-get-path-string-for-buf 0.5)
+(comment
+ (timeout-memo-unthrottle! 'ph-get-path-string-for-buf))
+
+(timeout-throttle! 'pen-compose-mode-line 1.0)
+(timeout-throttle! 'pen-redraw-glossary-buttons-when-window-scrolls-or-file-is-opened 2.0)
+(timeout-throttle! 'git-gutter+-refresh 2.0)
+
+(comment
+ (timeout-throttle! 'git-gutter+-refresh 2.0)
+ (timeout-unthrottle! 'git-gutter+-refresh))
+
+(comment
+ (defun test-throttle-fun ()
+   (message (vime "strftime(\"%c\")")))
+ (timeout-throttle! 'test-throttle-fun 2.0)
+ (test-throttle-fun))
 
 (provide 'pen-timeout)
