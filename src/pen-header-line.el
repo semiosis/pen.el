@@ -54,8 +54,8 @@
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header (&optional nodate)
   ""
-  (let* ((ph--full-header (ph-get-path-string))
-         (ph--header (ph-get-path-string))
+  (let* ((ph--full-header (or (ph-get-path-string) (buffer-name)))
+         (ph--header (or (ph-get-path-string) (buffer-name)))
          (ph--drop-str "[...]"))
     (if (> (length ph--full-header)
            (window-body-width))
