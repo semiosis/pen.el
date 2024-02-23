@@ -3,6 +3,7 @@
 (require 'face-remap)
 
 (require 'default-text-scale)
+(require 'universal-sidecar)
 
 (default-text-scale-mode 1)
 

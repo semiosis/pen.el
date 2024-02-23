@@ -1,16 +1,17 @@
 (require 'mini-header-line)
 (require 'minibuffer-header)
 (require 'path-headerline-mode)
+(require 'universal-sidecar)
 
 (defsetface header-line
-  '((t :foreground "#773575"
-       :background "#101010"
-       :weight normal
-       ;; :slant italic
-       ;; :underline t
-       ))
-  "Header line face."
-  :group 'pen-faces)
+            '((t :foreground "#773575"
+                 :background "#101010"
+                 :weight normal
+                 ;; :slant italic
+                 ;; :underline t
+                 ))
+            "Header line face."
+            :group 'pen-faces)
 
 
 (defsetface header-line-highlight
@@ -54,8 +55,8 @@
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
 (defun ph--make-header (&optional nodate)
   ""
-  (let* ((ph--full-header (or (ph-get-path-string) (buffer-name)))
-         (ph--header (or (ph-get-path-string) (buffer-name)))
+  (let* ((ph--full-header (ph-get-path-string))
+         (ph--header (ph-get-path-string))
          (ph--drop-str "[...]"))
     (if (> (length ph--full-header)
            (window-body-width))

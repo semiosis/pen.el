@@ -4,6 +4,7 @@
 (require 'eieio-opt)
 (require 'org-sync)
 (require 'org-sync-snippets)
+(require 'universal-sidecar)
 
 (require 'animate)
 
@@ -354,6 +355,7 @@ Return list of cons '((destination content)"
 ;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org
 ;; e:/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/map.org
 
+(defset aa/animation-timer nil)
 (defset aa/filepath nil)
 
 (defun ascii-adventures-open-map (filepath)

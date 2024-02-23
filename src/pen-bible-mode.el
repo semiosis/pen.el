@@ -1,4 +1,5 @@
 (require 'bible-mode)
+(require 'universal-sidecar)
 
 ;; Using:
 ;; e:$EMACSD/pen.el/src/pen-magit-margin.el
