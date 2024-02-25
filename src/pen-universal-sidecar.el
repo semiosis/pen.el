@@ -62,16 +62,20 @@ If FRAME is nil, use `selected-frame'."
       ;;    (comment (some-post-processing-of-org-text))))
       )))
 
+(defun sidecar-get-cross-references-for-ref (ref)
+  (snc "in-pen bible-get-cross-references -olol" ref))
+
+(memoize 'sidecar-get-cross-references-for-ref)
+
 (universal-sidecar-define-section bible-section (file title)
                                   (
                                    :major-modes bible-mode
                                                 ;; :predicate (not (buffer-modified-p))
-                                                )
+                                   )
   (ignore-errors (let* ((ref-tuple (with-current-buffer buffer bible-mode-ref-tuple))
                         (ref (concat (car ref-tuple) " " (cadr ref-tuple) ":" (caddr ref-tuple)))
                         (title (concat ref " cross-references:"))
-                        (crossrefs
-                         (snc "in-pen bible-get-cross-references -olol" ref))
+                        (crossrefs (sidecar-get-cross-references-for-ref ref))
                         (cmdout (shell-command-to-string "pwd")))
                    (universal-sidecar-insert-section bible-section title
                      (insert
