@@ -7,7 +7,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     $sn() {
         (
         set -o pipefail
-        command "$sn" "\$@" | pa -E colvs
+        command "$sn" "\$@" | pa -E vs
         )
     }
 HEREDOC
