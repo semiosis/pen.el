@@ -258,7 +258,11 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
     {
         {
             if test "$no_udl" = "y"; then
-                echo "$ref - "
+                if test "$DECORATED" = "y"; then
+                    echo "*${ref}* - "
+                else
+                    echo "$ref - "
+                fi
             else
                 if test "$FAST" = "y"; then
                     echo "$ref" | udl

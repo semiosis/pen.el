@@ -50,6 +50,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            decorated) {
+                export DECORATED=y
+            }
+            ;;
+
             nup) {
                 export UPDATE=n
                 export FORCE_RETRY=n
