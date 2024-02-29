@@ -1033,7 +1033,8 @@ creating a new `bible-mode' buffer positioned at the specified verse."
            verse
            (re-match-p ":" (str verse))))
       (progn
-        (pen-highlight-line)
+        (comment
+         (pen-highlight-line))
 
         ;; Don't actually narrow it right now
         ;; because it's half-baked.
