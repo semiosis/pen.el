@@ -2371,3 +2371,8 @@ sideline-flycheck
 sideline-blame
 haskell-emacs-text
 haskell-emacs-base
+org-ivy-search
+org-auto-tangle
+org-zettelkasten
+org-tidy
+org-tag-beautify
