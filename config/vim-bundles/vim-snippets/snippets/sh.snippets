@@ -3880,3 +3880,9 @@ snippet cachepipeline
 snippet shx
 	eval 'echo -e -n "export PS4=\\"+\\t\\\\\\"$(basename \$0)\\\\\\"\\t${LINENO}\\t\\""'
 	set -xv
+
+snippet dbg
+	trap '(read -p "[\$BASH_SOURCE:\$LINENO] \$BASH_COMMAND")' DEBUG
+
+snippet dg
+	trap '(read -p "[\$BASH_SOURCE:\$LINENO] \$BASH_COMMAND")' DEBUG
