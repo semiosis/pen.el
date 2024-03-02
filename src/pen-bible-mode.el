@@ -1,5 +1,7 @@
 (require 'bible-mode)
-(require 'universal-sidecar)
+
+(if (inside-docker-p)
+(require 'universal-sidecar))
 
 ;; Using:
 ;; e:$EMACSD/pen.el/src/pen-magit-margin.el
@@ -403,8 +405,9 @@
       (delete-backward-char 1)
       (end-of-buffer)))
 
+  (if (inside-docker-p)
   (if (universal-sidecar-visible-p)
-      (toggle-chrome-extras nil t)))
+      (toggle-chrome-extras nil t))))
 
 (defun string-match-capture (regexp string &optional start)
   (string-match regexp string start)
@@ -1866,7 +1869,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
              (not (memq this-command lsp-ui-doc--ignore-commands))
 
              ;; (not (bound-and-true-p lsp-ui-peek-mode))
-             (universal-sidecar-visible-p)
+             (if (inside-docker-p)
+             (universal-sidecar-visible-p))
 
              ;; (lsp--capability "hoverProvider")
              )
@@ -1901,7 +1905,8 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode-get-link)
 
         ;; These two need to both be asynchronous
-        (universal-sidecar-refresh)
+        (if (inside-docker-p)
+        (universal-sidecar-refresh))
         (bible-mode-show-hover-docs))))
 
 (defun bible-mode-sidecar-show ()
