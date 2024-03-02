@@ -35,7 +35,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -orefs) {
+    -orefs|-l) {
         ONLY_REFS=y
         shift
     }

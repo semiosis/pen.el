@@ -2229,3 +2229,15 @@ ln -sf ~/.pen/downloads
 
 # for j:org-sync-snippets--iterate-org-src
 e ia org-sync org-sync-snippets
+
+# Cargo install zellij - it's really slow to compile though
+cargo install --locked zellij
+
+(
+cd /root/programs
+wget "https://github.com/zellij-org/zellij/releases/download/v0.39.2/zellij-aarch64-unknown-linux-musl.tar.gz"
+tar xzf "zellij-aarch64-unknown-linux-musl.tar.gz"
+chmod a+x "zellij"
+cd /usr/bin
+ln -s /root/programs/zellij zellij
+)
