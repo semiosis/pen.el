@@ -1,7 +1,7 @@
 #!/bin/bash
 export TTY
 
-cd
+# cd
 pwd
 
 docker export pen -o pen.tar
