@@ -2465,7 +2465,8 @@ May use to generate code from comments."
 ;; For building games, etc.
 (require 'pen-hypertext)
 (if (inside-docker-p)
-(require 'pen-ascii-adventures))
+(require 'pen-ascii-adventures)
+(require 'pen-platform-game))
 ;; (require 'pen-hn)
 (if (inside-docker-p)
 (require 'pen-denote))
