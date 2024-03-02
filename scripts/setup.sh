@@ -2231,6 +2231,7 @@ ln -sf ~/.pen/downloads
 e ia org-sync org-sync-snippets
 
 # Cargo install zellij - it's really slow to compile though
+# I'm not a very big fan of zellij
 cargo install --locked zellij
 
 (
