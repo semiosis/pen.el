@@ -210,6 +210,8 @@ elif test "$#" -eq 1 && test -f "$1"; then
     set -- -e "(find-file $(cmd-nice -ff "$file"))"
 fi
 
+ln -sf $HOME/.pen/bash-messages.txt ~/bash-messages.txt
+
 # I don't want to open directly or killing the buffer will kill the frame
 # pen-emacsclient -s DEFAULT '-a' '' '-t' '/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans'
 # pen-emacsclient -s DEFAULT '-a' '' '-t' -e '(dired "/volumes/home/shane/var/smulliga/source/git/zyrolasting/racket-koans")'

@@ -458,6 +458,9 @@
     (bindings--define-key menu [mi-pen-quit]
       '(menu-item "Shutdown Pen.el" pen-kill-emacs
                   :help "Shutdown everything"))
+    (bindings--define-key menu [mi-bash-messages]
+      '(menu-item "Bash messages" bash-messages
+                  :help "itail bash messages"))
     (bindings--define-key menu [cancel-menu]
       '(menu-item "Cancel" identity-command
                   :help "Cancel out of this menu"))
@@ -938,6 +941,9 @@
           (bindings--define-key menu [mi-bible-e-outlines]
             '(menu-item "Bible outlines" bible-e-outlines
                         :help "Open file containing Bible outlines"))
+          (bindings--define-key menu [mi-pen-org-bible-verse-repl]
+            '(menu-item "Bible verse REPL" pen-org-bible-verse-repl
+                        :help "Open REPL for copying Bible verses"))
           (bindings--define-key menu [cancel-menu]
             '(menu-item "Cancel" identity-command
                         :help "Cancel out of this menu"))

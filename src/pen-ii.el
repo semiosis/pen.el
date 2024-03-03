@@ -1,3 +1,5 @@
+(require 'pen-comint)
+
 (defcustom pen-nlsh-histdir ""
   "Directory where history files for nlsh"
   :type 'string
@@ -25,20 +27,6 @@
 (defun turn-on-comint-history (history-file)
   (setq comint-input-ring-file-name history-file)
   (comint-read-input-ring 'silent))
-
-(defun comint-quick (cmd &optional dir prompt-regexp unique)
-  (interactive (list (read-string-hist "comint-quick: ")))
-  (let* ((slug (slugify cmd))
-         (slug (if unique
-                   (concat slug "<" (substring (uuidgen-4) 0 8) ">")
-                 slug))
-         (buf (make-comint slug (pen-nsfa cmd dir))))
-    (with-current-buffer buf
-      (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))
-      (setq-local comint-prompt-regexp
-                  (pen-unonelineify-safe prompt-regexp))
-      (switch-to-buffer buf)
-      (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
 
 (defun ii-python ()
   (interactive)

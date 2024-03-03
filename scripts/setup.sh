@@ -2246,3 +2246,5 @@ ln -s /root/programs/zellij zellij
 e ia org-noter org-mind-map org-ivy-search org-superstar org-drill org-auto-tangle org-contacts org-zettelkasten
 
 e ia org-treeusage org-transform-tree-table org-timeline org-tidy org-tag-beautify org-static-blog org-recur org-radiobutton org-projectile
+
+e ia itail

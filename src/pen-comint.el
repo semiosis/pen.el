@@ -92,6 +92,20 @@
     ;;   (execute-kbd-macro (kbd "C-h")))
     )))
 
+(defun comint-quick (cmd &optional dir prompt-regexp unique)
+  (interactive (list (read-string-hist "comint-quick: ")))
+  (let* ((slug (slugify cmd))
+         (slug (if unique
+                   (concat slug "<" (substring (uuidgen-4) 0 8) ">")
+                 slug))
+         (buf (make-comint slug (pen-nsfa cmd dir))))
+    (with-current-buffer buf
+      (setq-local comint-use-prompt-regexp (if (sor prompt-regexp) t))
+      (setq-local comint-prompt-regexp
+                  (pen-unonelineify-safe prompt-regexp))
+      (switch-to-buffer buf)
+      (turn-on-comint-history (f-join pen-nlsh-histdir slug)))))
+
 (advice-add 'pen-comint-del :around #'shut-up-around-advice)
 ;; (advice-remove 'pen-comint-del #'shut-up-around-advice)
 

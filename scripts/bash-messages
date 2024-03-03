@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+filter="$@"
+
+if test -n "$filter"; then
+    tail -f ~/bash-messages.txt | sed "s=${filter}=="
+else
+    tail -f ~/bash-messages.txt
+fi

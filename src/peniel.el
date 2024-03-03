@@ -77,4 +77,10 @@
 ;; Too fast:
 ;; "https://www.youtube.com/watch?v=-9Xq6hiqWoI&ab_channel=RyanSebo"
 
+(defun pen-org-bible-verse-repl ()
+  (interactive)
+
+  (sps
+   "nem decorated onelined zsh"))
+
 (provide 'peniel)

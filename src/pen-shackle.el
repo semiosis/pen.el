@@ -92,6 +92,7 @@
             ("*Bluetooth device info*" :ignore nil :select t :same t)
             ("*kubernetes logs*" :ignore nil :select t :same t)
             ("*alarm clock*" :ignore nil :select t :same t)
+            ("\\*itail:.*" :regexp t :ignore nil :select t :same t)
             ("*Org Agenda*" :ignore nil :select t :same t)
             ("*ChatGPT*" :ignore nil :select t :same t)
             ("*slime-description*" :ignore nil :select t :same nil)
