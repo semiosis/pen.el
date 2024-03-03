@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+message="$@"
+
+echo "$message" 1>&2 >> ~/bash-messages.txt

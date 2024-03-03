@@ -44,7 +44,8 @@ fi
 : "${ext:="txt"}"
 
 fp="$(mktemp -t "tf_${name}XXXXXXX${extraslug:0:220}.${ext}" 2>/dev/null || :)"
-echo "$fp" 1>&2 >> ~/bash-messages.txt
+# e:bash-message
+# echo "pen-tf: $fp" 1>&2 >> ~/bash-messages.txt
 
 # TODO
 # Use ~/.pen first

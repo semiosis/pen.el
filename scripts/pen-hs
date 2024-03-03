@@ -3,6 +3,12 @@ export TTY
 
 exec 0</dev/null
 
+sn="$(basename "$0")"
+sn="$(p "$sn" | sed 's/^pen-//')"
+
+CMD="$@"
+bash-message "$sn $CMD"
+
 # Add a sort -k to this
 
 # This script creates logs of things
@@ -77,8 +83,6 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-sn="$(basename "$0")"
-sn="$(p "$sn" | sed 's/^pen-//')"
 case "$sn" in
     hsq) {
         if ! test -d "$dir"; then
