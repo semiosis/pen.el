@@ -1,8 +1,8 @@
 (require 'sh-script)
 (require 'itail)
 
-(defun bash-messages (filter)
-  (interactive (list (read-string-hist "bash-messages filter: ")))
+(defun bash-messages ()
+  (interactive)
   ;; (comint-quick (pen-cmd "bash-messages" filter) user-home-directory)
 
   (itail (f-join user-home-directory "bash-messages.txt"))
