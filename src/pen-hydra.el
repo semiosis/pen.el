@@ -486,6 +486,12 @@ display values."
 (df get-clql-verbose (get-clql t))
 (df get-clql-terse (get-clql nil))
 
+(defun switch-to-messages ()
+  (interactive)
+  (if (>= (prefix-numeric-value current-prefix-arg) 4)
+      (call-interactively 'bash-messages)
+    (switch-to-buffer "*Messages*")))
+
 (convert-hydra-to-sslk "lk"
                        (defhydra h_nc (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: commands"
                          "NORMAL: commands"
@@ -525,7 +531,7 @@ display values."
                          ("~" #'menu-bar-open "Menu bar")
                          ;; ("M" #'helm-imenu-anywhere "imenu anywhere")
                          ;; ("m" #'helm-imenu "imenu")
-                         ("m" (df switch-to-messages (switch-to-buffer "*Messages*")) "messages")
+                         ("m" #'switch-to-messages "messages")
                          ;; ("m" #'view-echo-area-messages "messages")
                          ;; ("M" #'view-echo-area-messages "messages")
                          ("n" #'helm-buffers-list "Helm Buffers list")
