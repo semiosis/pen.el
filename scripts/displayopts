@@ -12,7 +12,7 @@ export TTY
 # fi
 
 if test "$#" = 0; then
-    set -- DEBUG BORDER FAST NOEMACS NO_CI PREFER_GUI "$@"
+    set -- DEBUG BORDER FAST NOEMACS NO_CI PREFER_GUI DECORATED COLUMNATED ONELINED "$@"
 fi
 
 is_stdout_pipe() {

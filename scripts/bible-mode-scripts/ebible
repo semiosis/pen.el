@@ -44,10 +44,16 @@ ebible_pager() {
         *) break;
     esac; done
 
-    if test -n "$slug"; then
-        pa -E "tf -sha -X $slug txt | xa colvs -nls -num"
+    if test "$COLUMNATED" = "y"; then
+        vim_cmd="colvs -nls -num"
     else
-        pa -E "tf txt | xa colvs -nls -num"
+        vim_cmd="vs -nls -num"
+    fi
+
+    if test -n "$slug"; then
+        pa -E "tf -sha -X $slug txt | xa $vim_cmd"
+    else
+        pa -E "tf txt | xa $vim_cmd"
     fi
 }
 
