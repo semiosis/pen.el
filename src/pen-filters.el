@@ -210,4 +210,17 @@
         (if (not arg) (setq arg 4))
         (pen-region-pipe (concat "pen-indent -" (str arg)))))))
 
+;; TODO Add quote
+
+(define-key org-mode-map (kbd "M-l M-f M-<") 'org-run-babel-template-hydra)
+(define-key org-mode-map (kbd "M-l M-r M-<") 'org-run-babel-template-hydra)
+
+(defun pen-org-quote-selection ()
+  (interactive)
+
+  (hot-expand "<q" "QUOTE"))
+
+(define-key org-mode-map (kbd "M-l M-f M-e") 'pen-org-quote-selection)
+(define-key org-mode-map (kbd "M-l M-r M-e") 'pen-org-quote-selection)
+
 (provide 'pen-filters)

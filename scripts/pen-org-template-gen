@@ -274,6 +274,13 @@ case "$interp" in
     }
     ;;
 
+    QUOTE) {
+        echo "#+BEGIN_QUOTE"
+        cat "$input_fp" | postprocess
+        echo -n "#+END_QUOTE"
+    }
+    ;;
+
     guile) {
         echo "#+BEGIN_SRC scheme -n :i guile :async :results verbatim code :lang text"
         cat "$input_fp" | postprocess
