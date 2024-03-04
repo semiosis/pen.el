@@ -1093,9 +1093,6 @@
 
 (defset menu-bar-devotionals-menu
         (let ((menu (make-sparse-keymap "Devotionals")))
-          (bindings--define-key menu [cancel-menu]
-            '(menu-item "Cancel" identity-command
-                        :help "Cancel out of this menu"))
           (bindings--define-key menu [mi-jeff-vines--word-for-today]
             '(menu-item "The Word for Today with Jeff Vines" jeff-vines--word-for-today
                         :help "Read Jeff Vines' devotional"))
@@ -1105,10 +1102,22 @@
           (bindings--define-key menu [mi-john-piper-messages]
             '(menu-item "Messages from John Piper" john-piper-messages
                         :help "Read Alistair Begg's sermons"))
+          (bindings--define-key menu [cancel-menu]
+            '(menu-item "Cancel" identity-command
+                        :help "Cancel out of this menu"))
           menu))
 
 (defset menu-bar-sermons-menu
         (let ((menu (make-sparse-keymap "Sermons")))
+          (bindings--define-key menu [mi-michael-youseff]
+            `(menu-item "Michael Youseff" michael-youseff
+                        :help "Listen to Michael Youseff"))
+          (bindings--define-key menu [mi-jeff-vines--word-for-today]
+            `(menu-item "Jeff Vines - Word for today" jeff-vines--word-for-today
+                        :help "Listen to Jeff Vines - Word for today"))
+          (bindings--define-key menu [mi-alistair-begg]
+            `(menu-item "Alistair Begg" alistair-begg
+                        :help "Listen to Alistair Begg"))
           (bindings--define-key menu [cancel-menu]
             '(menu-item "Cancel" identity-command
                         :help "Cancel out of this menu"))
@@ -1126,7 +1135,7 @@
             `(menu-item "Devotionals" ,menu-bar-devotionals-menu
                         :help "Read and listen to devotionals"))
           (bindings--define-key menu [mi-menu-bar-sermons-menu]
-            `(menu-item "Sermons" ,menu-bar-devotionals-menu
+            `(menu-item "Sermons" ,menu-bar-sermons-menu
                         :help "Read and listen to sermons"))
           (bindings--define-key menu [mi-nasb]
             '(menu-item "Open NASB Bible" nasb
