@@ -3,6 +3,8 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-test -f $HOME/.cargo/bin/zellij || cargo install "zellij" &>/dev/null
+# test -f $HOME/.cargo/bin/zellij || cargo install "zellij" &>/dev/null
+# 
+# $HOME/.cargo/bin/zellij "$@"
 
-$HOME/.cargo/bin/zellij "$@"
+/usr/bin/zellij "$@"

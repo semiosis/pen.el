@@ -2232,7 +2232,7 @@ e ia org-sync org-sync-snippets
 
 # Cargo install zellij - it's really slow to compile though
 # I'm not a very big fan of zellij
-cargo install --locked zellij
+# cargo install --locked zellij
 
 (
 cd /root/programs
@@ -2248,3 +2248,14 @@ e ia org-noter org-mind-map org-ivy-search org-superstar org-drill org-auto-tang
 e ia org-treeusage org-transform-tree-table org-timeline org-tidy org-tag-beautify org-static-blog org-recur org-radiobutton org-projectile
 
 e ia itail
+
+# # Run chromium inside of a terminal
+# (
+# cd ~/repos
+# git clone "https://github.com/fathyb/carbonyl"
+# cd carbonyl
+# cargo build
+# )
+
+# Instead, run this on the host OS
+# docker run -ti fathyb/carbonyl https://youtube.com
