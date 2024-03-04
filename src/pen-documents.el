@@ -6,6 +6,10 @@
   (interactive)
   (find-file (f-join user-home-directory ".pen/glossaries")))
 
+(defun pen-go-to-quotes ()
+  (interactive)
+  (find-file (f-join user-home-directory ".pen/documents/quotes.txt")))
+
 (defun pen-go-to-results ()
   (interactive)
   (find-file (f-join user-home-directory ".pen/results")))

@@ -418,6 +418,9 @@
     (bindings--define-key menu [mi-pen-go-to-glossaries]
       '(menu-item "Glossaries (shared with host)" pen-go-to-glossaries
                   :help "Open dired at ~/.pen/glossaries"))
+    (bindings--define-key menu [mi-pen-go-to-quotes]
+      '(menu-item "Quotes (shared with host)" pen-go-to-quotes
+                  :help "Open dired at ~/.pen/quotes"))
     (bindings--define-key menu [mi-pen-your-imagination]
       '(menu-item "Your Imagination" pen-your-imagination
                   :help "Play the best song ever"))
