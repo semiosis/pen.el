@@ -5,7 +5,8 @@
   (interactive)
   ;; (comint-quick (pen-cmd "bash-messages" filter) user-home-directory)
 
-  (itail (f-join user-home-directory "bash-messages.txt"))
+  (itail (f-join user-home-directory "bash-messages.txt")
+         0)
   ;; (sps (pen-cmd "bash-messages" filter))
   
   ;; (let ((shell-file-name "/bin/sh"))

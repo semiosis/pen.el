@@ -5,8 +5,10 @@ export TTY
 
 filter="$@"
 
+(
 if test -n "$filter"; then
     tail -f ~/bash-messages.txt | sed "s=${filter}=="
 else
     tail -f ~/bash-messages.txt
 fi
+) | sed 's= "#" = # ='
