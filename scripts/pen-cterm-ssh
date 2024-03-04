@@ -187,7 +187,7 @@ else
 fi
 export SSH_HOST_ALLOWED
 
-if test "$SSH_TO_HOST" = "y"; then
+if test "$SSH_TO_HOST" = "y" && test "$inside_docker" = 0; then
     if test "$SSH_HOST_ALLOWED" = n; then
         echo ssh to host not enabled in pen.yaml | hls red 1>&2
         exit 1
