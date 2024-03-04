@@ -15,9 +15,12 @@
   - They believe Gentiles are under the Mosaic law.
 
 * Calvinism
-Heresies:
-- bad interpretation of the Bible
-- cheap grace
+- http://www.bcbsr.com/topics/calvinism_heresy.html
+
+Generally:
+- they have a bad interpretation of the Scripture
+- they believe in cheap grace
+- they lean on their own understanding, and try to conform God to their philosophy
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   "Cheap grace is the preaching of forgiveness
@@ -36,7 +39,7 @@ Heresies:
   to follow Jesus, it comes as a word of
   forgiveness to the broken spirit and the
   contrite heart.
-
+s
   It is costly because it compels a man to
   submit to the yoke of Christ and follow him;
   it is grace because Jesus says: "My yoke is
@@ -48,6 +51,51 @@ too far with not believing that repentance is
 something we must do for our own salvation-sake.
 
 “Forgiveness does not mean excusing.” ~C.S. Lewis
+
+The repentant sinner next to Jesus on the cross knew he deserved his punishment, and he even demonstrated that he had a heart that obeys the gospel (whereas the other person appears to have been disobedient to the gospel to death):
+
+*John 7:17* - _If anyone's will is to do God's will_, he will know whether the teaching is from God or whether I am speaking on my own authority.
+
+The unrepentant sinner wanted Jesus to save his present life:
+
+*Luke 23:39* - One of the criminals who were hanged there was hurling abuse at Him, saying, “Are You not the Christ? Save Yourself and us!”
+
+The repentant sinner feared God and put his hope on Jesus Christ, not to save him from the cross, but to save his soul:
+
+*Luke 23:40-43* - But the other answered, and rebuking him said, “Do you not even fear God, since you are under the same sentence of condemnation? And we indeed are suffering justly, for we are receiving what we deserve for our deeds; but this man has done nothing wrong.” And he was saying, “Jesus, remember me when You come in Your kingdom!” And He said to him, “Truly I say to you, today you shall be with Me in Paradise.”
+
+A _key thing_ here is that the repentant sinner didn't value his present life, and didn't care to ask Jesus to save his present life on earth. The repentant sinner had come to the end of caring about his present life, and put his trust in Jesus. This is what we should do, and it looks like sacrificing the present life to follow Jesus. And I believe that to someone who isn't literally at the end of their earthly life that looks like repentance from sin and an obedient heart, serving Jesus. You can see that he had a _changed heart_, and was remorseful. He knew he was being justly punished. And he had the heart to want to follow Jesus.
+
+*Luke 9:23-24* - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
+
+** A distorted view of election/predestination
+Also under Calvinism Christ didn't die for the sins of the world, but only for the sins of the elect. In contrast the
+Bible says, "He is the atoning sacrifice for our sins, and not only for ours but also for the sins of the whole world."
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  1 John 2:2
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+1 John 2:2
+‾‾‾‾‾‾‾‾‾‾
+He is the propitiation for our sins, and not
+for ours only but also for the sins of the
+whole world.
+
+(ESV)
+#+end_src
+
+They don't understand that God has the capacity to make children from anyone who turns to Him:
+
+The truth is this:
+
+*Matthew 3:3-9* - For this is he who was spoken of by the prophet Isaiah when he said, The voice of one crying in the wilderness: Prepare the way of the Lord; make his paths straight. Now John wore a garment of camel's hair and a leather belt around his waist, and his food was locusts and wild honey. Then Jerusalem and all Judea and all the region about the Jordan were going out to him, and they were baptized by him in the river Jordan, confessing their sins. But when he saw many of the Pharisees and Sadducees coming for baptism, he said to them, You brood of vipers! Who warned you to flee from the wrath to come? Bear fruit in keeping with repentance. And do not presume to say to yourselves, We have Abraham as our father, for I tell you, _God is able from these stones to raise up children for Abraham._
+
+and:
+
+*II Peter 1:10-11* - Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. For in this way there will be richly provided for you an entrance into the eternal kingdom of our Lord and Savior Jesus Christ.
 
 ** The Calvinistic heresy regarding regeneration
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
