@@ -7,7 +7,8 @@ sn="$(basename "$0")"
 sn="$(p "$sn" | sed 's/^pen-//')"
 
 CMD="$@"
-bash-message "$sn $CMD"
+# bash-message "$sn $CMD"
+bash-message "$CMD"
 
 # Add a sort -k to this
 
@@ -128,6 +129,7 @@ cd "$dir"
 fp="$(date +%d.%m.%y).sh"
 
 full_command="cd $(cmd-nice "$wd"); $(test -n "$content" && p "pen-pl $(cmd-nice "$content") | ") $parameters"
+bash-message "$full_command"
 
 printf -- "%s\n" "$full_command" >> "$fp"
 
