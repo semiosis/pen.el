@@ -1,7 +1,11 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+if test "$2" = StrongsGreek || test "$2" = StrongsHebrew; then
+    :
+else
+    ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+fi
 
 # $SCRIPTS/diatheke-list-bibles
 
