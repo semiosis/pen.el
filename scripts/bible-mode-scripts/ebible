@@ -51,7 +51,7 @@ ebible_pager() {
     fi
 
     if test -n "$slug"; then
-        pa -E "tf -sha -X $slug txt | xa $vim_cmd"
+        pa -E "tf -sha -X ${slug:0:220} txt | xa $vim_cmd"
     else
         pa -E "tf txt | xa $vim_cmd"
     fi

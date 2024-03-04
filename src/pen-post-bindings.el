@@ -12,6 +12,7 @@
 (sslk "lap" #'list-processes)
 (sslk "las" #'ebdb-display-all-records)
 (sslk "laS" #'server-list-clients)
+(sslk "lav" 'pen-org-bible-verse-repl)
 (sslk "lal" #'bufler)
 (sslk "lqtt" #'todayfile)
 (sslk "lqtw" #'weekfile)
