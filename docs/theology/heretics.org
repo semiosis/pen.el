@@ -48,3 +48,38 @@ too far with not believing that repentance is
 something we must do for our own salvation-sake.
 
 “Forgiveness does not mean excusing.” ~C.S. Lewis
+
+** The Calvinistic heresy regarding regeneration
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  John 1:12
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+John 1:12
+‾‾‾‾‾‾‾‾‾
+But to all who did receive him, who believed
+in his name, he gave the right to become
+children of God,
+
+(ESV)
+#+end_src
+
+That is, people are not given the right to become children of God until they believe in Christ.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  Galatians 3:26
+#+END_SRC
+
+#+RESULTS:
+#+begin_src text
+Galatians 3:26
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+for in Christ Jesus you are all sons of God,
+through faith.
+
+(ESV)
+#+end_src
+
+But Calvinists have it backwards. Under Calvinism a person cannot believe
+until he's been born of God. They get the order of faith and regeneration _backwards._
