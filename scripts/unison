@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+# https://www.baeldung.com/linux/sync-files-continuously-one-way
+# https://www.baeldung.com/linux/synchronize-linux-directories/
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+/usr/bin/unison "$@"

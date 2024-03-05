@@ -2259,3 +2259,15 @@ e ia itail
 
 # Instead, run this on the host OS
 # docker run -ti fathyb/carbonyl https://youtube.com
+
+mkdir -p ~/.pen/elpa-full
+
+agi unison
+# Couldn't easily compile the latest version
+# agi ocaml-nox
+# (
+# cd ~/repos
+# git clone "https://github.com/bcpierce00/unison"
+# cd unison
+# make
+# )
