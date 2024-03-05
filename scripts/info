@@ -11,7 +11,8 @@ export TTY
 # This is awful
 info_exists() {
     content="$(ocif timeout 0.2 /usr/bin/info -o /dev/stdout "$@" 2>/dev/null)"
-    test -n "$content"
+    maybe_manual="$(printf -- "%s" "$content" | grep -P "^NAME$")"
+    test -n "$content" && ! test -n "$maybe_manual"
 }
 
 # Perhaps add this to the actual emacs info command
