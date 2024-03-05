@@ -11,6 +11,9 @@ export TTY
 # This is awful
 info_exists() {
     content="$(ocif timeout 0.2 /usr/bin/info -o /dev/stdout "$@" 2>/dev/null)"
+
+    # Sometimes the /usr/bin/info command displays the man page, which is not what we want
+
     maybe_manual="$(printf -- "%s" "$content" | grep -P "^NAME$")"
     test -n "$content" && ! test -n "$maybe_manual"
 }
