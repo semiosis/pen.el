@@ -1779,6 +1779,8 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
 
 You can't have faith without obedience.
 
+[Keith Green - To Obey Is Better Than Sacrifice (live)](https://youtu.be/TzWyZxlwGKI?list=RDz7oCa9BvO9g&t=98)
+
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit, whom God has given to those who obey him**. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
