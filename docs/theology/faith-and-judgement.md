@@ -7938,7 +7938,7 @@ Walk in the truth, love one another and do not deny that Jesus Christ has come i
 
 ## Commandments of Jesus (which are from God)
 
-Have faith in God?
+Have faith in God:
 
 > **Mark 11:22** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God (G2316 theos).
 
@@ -7962,7 +7962,7 @@ Come and follow Jesus and allow Him to make you into a fisher of men:
 
 > **Matthew 4:19** - And he said to them, Follow me, and I will make you fishers of men. (ESV)
 
-Rejoice when you're persecuted in My name:
+Rejoice when you're persecuted in Jesus' name:
 
 > **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
 
