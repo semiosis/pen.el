@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# This is used after exporting from org-mode with org-md-export-to-markdown
+
+sed 's~\(<span class="underline">\)\([^<]\+\)\(</span>\)~<ins>\2</ins>~g'
