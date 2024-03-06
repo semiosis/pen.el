@@ -37,14 +37,16 @@ We're not justified through the works of the law but through faith, and faith in
   *Galatians 2:15-16* - “We are Jews by nature and not sinners from among the Gentiles; nevertheless knowing that a man is not justified by the works of the Law but through faith in Christ Jesus, even we have believed in Christ Jesus, so that we may be *justified by faith in Christ* and not by the works of the Law; since by the works of the Law no flesh will be justified.
 #+END_QUOTE
 
-It's by faith in Christ that we are justified, and faith involves obedience.
+It's by faith in Christ that we are justified, and faith involves obedience (at least of the heart).
 
 #+BEGIN_QUOTE
   *John 3:36* - Whoever believes (G4100 pisteuo) in the Son has eternal life; whoever does not *obey* the Son shall not see life, but the wrath of God remains on him. (ESV)
 #+END_QUOTE
 
+It's faith in the heart which we need. Obedience and believe in the heart.
+
 #+BEGIN_QUOTE
-  *John 3:16* - "For God (G2316 theos) so (G3779 houto) loved (G25 agapao) the world (G2889 kosmos), that He gave (G1325 didomi) His only (G3439 monogenes) begotten (G3439 monogenes) Son (G5207 huios), that whoever (G3956 pas) believes (G4100 pisteuo) in Him shall not perish (G622 apollumi), but have (G2192 echo) eternal (G166 aionios) life (G2222 zoe).
+  *John 3:16* - For God so loved the world, that he gave his only Son, that whoever believes (G4100 pisteuo) in him should not perish but have eternal life. (ESV)
 #+END_QUOTE
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
@@ -292,4 +294,57 @@ We receive reconciliation through Jesus Christ who is our Lord.
 
 #+BEGIN_QUOTE
   *Romans 5:19* - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
+#+END_QUOTE
+
+** Whoever makes an appeal to God, calls upon His name will be saved
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  1941  epikaleomai  ep-ee-kal-eh'-om-ahee
+
+   middle voice from 1909 and 2564; to entitle; by implication, to invoke
+   (for aid, worship, testimony, decision, etc.):--appeal (unto), call
+   (on, upon), surname.
+   see GREEK for 1909
+   see GREEK for 2564
+#+END_SRC
+
+Confessing that Jesus is Lord is becoming obedient to Him:
+
+**Romans 10:8-9* - But what does it say? “The word is near you, in your mouth and in your heart”-- that is, the word (G4487 rhema) of faith (G4102 pistis) which we are preaching, that if you confess (G3670 homologeo) with your mouth Jesus as Lord, and _believe (G4100 *pisteuo*) in your heart_ (G2588 kardia) that God raised Him from the dead, you will be saved; (NASB)
+
+It's faith in the heart that a person needs.
+
+#+BEGIN_QUOTE
+  *John 7:17* -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+#+END_QUOTE
+
+Therefore, to arrive at the knowledge of the truth, you've got to have an obedient heart.
+
+How can they call on Him whom they have not had faith in?
+
+How will they have faith in Him whom they have not heard?
+
+How will they hear without a preacher?
+
+**Romans 10:14-15*- But how are they to call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent? As it is written, How beautiful are the feet of those who preach the good news!
+
+Confess:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  3670  homologeo  hom-ol-og-eh'-o
+
+   from a compound of the base of 3674 and 3056; to assent, i.e.
+   covenant, acknowledge:--con- (pro-)fess, confession is made, give
+   thanks, promise.
+   see GREEK for 3674
+   see GREEK for 3056
+#+END_SRC
+
+*** Baptism is an appeal
+Baptism is an appeal to God for a good conscience - It's an *appeal* to God but not strictly required to be saved.
+It is an appeal to God for a good conscience, through the resurrection of Jesus Christ.
+I definitely believe that "believer's baptism" is the right way to perform baptism.
+Baptism does save.
+
+#+BEGIN_QUOTE
+  *I Peter 3:18-21* - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to *death in the flesh but made alive in the spirit*, in which he went and proclaimed to the spirits in prison, because *they formerly did not obey*, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
 #+END_QUOTE
