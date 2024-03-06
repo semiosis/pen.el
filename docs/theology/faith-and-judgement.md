@@ -329,7 +329,7 @@ What I mean by relationship is:
 
     We must look upon Jesus and stop sexual immorality and stop idolatry. The stories mentioned here are examples for us to follow:
     
-    **I Corinthians 10:1-7** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. Nevertheless, with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play.
+    > **I Corinthians 10:1-7** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. Nevertheless, <ins>with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were;</ins> as it is written, The people sat down to eat and drink and rose up to play.
     
     We must take heed of this, because we don't want to **fall**:
     
