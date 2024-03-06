@@ -181,6 +181,7 @@
    'unidify-org-files-here
    'org-copy-thing-here
    'generate-glossary-buttons-over-buffer-force-on
+   'org-md-export-to-markdown
    'org-latex-export-to-pdf
    'org-latex-export-to-pdf
    'org-sidebar-tree-toggle
