@@ -18,4 +18,8 @@
   (interactive)
   (find-file (f-join user-home-directory ".pen/org-brain")))
 
+(defun e-faith-and-judgement ()
+  (interactive)
+  (e "$EMACSD/pen.el/docs/theology/faith-and-judgement.org"))
+
 (provide 'pen-documents)
