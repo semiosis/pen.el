@@ -7918,127 +7918,226 @@ Even our bodies will be raised imperishable:
 
 # Commandments of God
 
-Commandments of Father God in the New Testament:
 
--   Listen to Jesus and believe Jesus is God's Son
-    -   **Mark 9:7** - And a cloud overshadowed them, and a voice came out of the cloud, This is my beloved Son; listen to him. (ESV)
-    -   **Luke 9:35** - And a voice came out of the cloud, saying, This is my Son, my Chosen One; listen to him! (ESV)
-    -   **Acts 3:22** - Moses said, The Lord God will raise up for you a prophet like me from your brothers. You shall listen to him in whatever he tells you. (ESV)
-        -   **Deuteronomy 18:15-19** - The LORD your God will raise up for you a prophet like me from among you, from your brothers—it is to him you shall listen— just as you desired of the LORD your God at Horeb on the day of the assembly, when you said, Let me not hear again the voice of the LORD my God or see this great fire any more, lest I die. And the LORD said to me, They are right in what they have spoken. I will raise up for them a prophet like you from among their brothers. And I will put my words in his mouth, and he shall speak to them all that I command him. And whoever will not listen to my words that he shall speak in my name, I myself will require it of him. (ESV)
--   Walk in the truth, love one another and do not deny that Jesus Christ has come in the flesh
-    -   **II John 1:4-9** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we love one another. And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it. For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist. Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+## Commandments of Father God in the New Testament:
 
-Commandments of Jesus:
+Listen to Jesus and believe Jesus is God's Son:
 
--   Have faith in God
-    -   **Mark 11:22** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God (G2316 theos).
-        -   **pisis** is the faith noun.
--   Have faith in God and have faith in Jesus
-    -   **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
-        -   **pisteuo** is the faith verb.
--   Repent, for the kingdom of heaven is near
-    -   **Matthew 3:2** - Repent, for the kingdom of heaven is at hand. (ESV)
--   Follow the 10 commandments from the heart in truth as far as to not idolize or covet your material possessions, leave behind your old life and follow Him (Jesus). 
-    -   **Luke 18:18-22** - And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
-    -   Have faith in God to help you achieve this
-        -   **Luke 18:26-27** - Those who heard it said, Then who can be saved? But he said, What is impossible with men is possible with God. (ESV)
--   Come and follow Jesus and allow Him to make you into a fisher of men
-    -   **Matthew 4:19** - And he said to them, Follow me, and I will make you fishers of men. (ESV)
--   Rejoice when you're persecuted in My name
-    -   **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
--   Let your light shine before all people
-    -   **Matthew 5:16** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
--   Be reconciled to one another
-    -   **Matthew 5:23-24** - So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift. (ESV)
--   Take sin very seriously
-    -   **Matthew 5:29-30** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
--   Follow the commandments from the heart, and in truth, accountable to God
-    -   **Matthew 5:32** - But I say to you that everyone who divorces his wife, except on the ground of sexual immorality, makes her commit adultery. And whoever marries a divorced woman commits adultery. (ESV)
--   Turn the other cheek
-    -   **Matthew 5:39** - But I say to you, Do not resist the one who is evil. But if anyone slaps you on the right cheek, turn to him the other also. (ESV)
--   Go above and beyond. Forgive 
-    -   **Matthew 5:40-42** - And if anyone would sue you and take your tunic, let him have your cloak as well. And if anyone forces you to go one mile, go with him two miles. Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
--   Love your enemies as well as your friends. Be like Your Heavenly Father. Be perfect
-    -   **Matthew 5:43-48** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
--   Be perfect as your heavenly Father is perfect
-    -   **Matthew 5:48** - You therefore must be perfect, as your heavenly Father is perfect. (ESV)
--   Be accountable to God. Do not seek reward from others but from God. Focus on spiritual disciplines for the right reasons. 
-    -   **Matthew 6:1-18** - Beware of practicing your righteousness before other people in order to be seen by them, for then you will have no reward from your Father who is in heaven. Thus, when you give to the needy, sound no trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may be praised by others. Truly, I say to you, they have received their reward. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. And your Father who sees in secret will reward you. And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and at the street corners, that they may be seen by others. Truly, I say to you, they have received their reward. But when you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you. And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him. Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil. For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
-    -   Have a relationship with God
-        -   **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
--   Seek heavenly reward, not earthly reward. Have a heart seeking reward from God and not from man. Have your heart in heaven, not in eart
-    -   **Matthew 6:19-21** - Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also. (ESV)
--   Seek God's kingdom and His righteousness first of all
-    -   **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
-    -   Obey the law by faith (repent from sin)
-    -   Submit to the righteousness of God through faith in Jesus Christ (repent from disbelief)
--   Do not worry about tomorrow
-    -   **Matthew 6:34** - Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
--   Use right judgment. We should be examining, judging, cleaning ourselves up, taking a look in the mirror first (by God's standards) before judging others
-    -   **Matthew 7:1-5** - Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you. Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
--   Practice discretion
-    -   **Matthew 7:6** - Do not give dogs what is holy, and do not throw your pearls before pigs, lest they trample them underfoot and turn to attack you. (ESV)
--   Ask, seek, and knock
-    -   **Matthew 7:7-8** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened. (ESV)
-    -   Ask God for your needs, which includes asking God for the Holy Spirit
-        -   **Luke 11:1-11** - Now Jesus was praying in a certain place, and when he finished, one of his disciples said to him, Lord, teach us to pray, as John taught his disciples. And he said to them, When you pray, say: Father, hallowed be your name. Your kingdom come. Give us each day our daily bread, and forgive us our sins, for we ourselves forgive everyone who is indebted to us. And lead us not into temptation. And he said to them, Which of you who has a friend will go to him at midnight and say to him, Friend, lend me three loaves, for a friend of mine has arrived on a journey, and I have nothing to set before him; and he will answer from within, Do not bother me; the door is now shut, and my children are with me in bed. I cannot get up and give you anything? I tell you, though he will not get up and give him anything because he is his friend, yet because of his impudence he will rise and give him whatever he needs. And I tell you, ask, and it will be given to you; **seek, and you will find**; knock, and it will be opened to you. For **everyone who asks receives**, and **the one who seeks finds**, and to **the one who knocks it will be opened**. What father among you, if his son asks for a fish, will instead of a fish give him a serpent; (ESV)
--   Treat others as you would like to be treated
-    -   **Matthew 7:12** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
--   Choose the narrow path to life
-    -   **Matthew 7:13-14** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
--   Look out for false prophets
-    -   **Matthew 7:15-20** - Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
--   Pray for kingdom laborers. Pray that God sends out kingdom laborers
-    -   **Matthew 9:37-38** - Then he said to his disciples, The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest. (ESV)
--   Be on your guard. Jesus sends us out to be like scapegoats. Be wise and remain blameless
-    -   **Matthew 10:16-17** - Behold, I am sending you out as sheep in the midst of wolves, so be wise as serpents and innocent as doves. Beware of men, for they will deliver you over to courts and flog you in their synagogues, (ESV)
--   Do not fear persecutors. Fear God. But put your trust in God because He takes care of those who fear Him. Speak the truth
-    -   **Matthew 10:26-31** - So have no fear of them, for nothing is covered that will not be revealed, or hidden that will not be known. What I tell you in the dark, say in the light, and what you hear whispered, proclaim on the housetops. And do not fear those who kill the body but cannot kill the soul. Rather fear him who can destroy both soul and body in hell. Are not two sparrows sold for a penny? And not one of them will fall to the ground apart from your Father. But even the hairs of your head are all numbered. Fear not, therefore; you are of more value than many sparrows. (ESV)
--   Take Jesus' yoke upon yourself
-    -   **Matthew 11:28-30** - Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light. (ESV)
--   Do not despise the little ones
-    -   **Matthew 18:10** - See that you do not despise one of these little ones. For I tell you that in heaven their angels always see the face of my Father who is in heaven. (ESV)
--   How to deal with offenders
-    -   **Matthew 18:15-17** - If your brother sins against you, go and tell him his fault, between you and him alone. If he listens to you, you have gained your brother. But if he does not listen, take one or two others along with you, that every charge may be established by the evidence of two or three witnesses. If he refuses to listen to them, tell it to the church. And if he refuses to listen even to the church, let him be to you as a Gentile and a tax collector. (ESV)
--   Forgive extremely generously / almost without limits
-    -   **Matthew 18:21-22** - Then Peter came up and said to him, Lord, how often will my brother sin against me, and I forgive him? As many as seven times? Jesus said to him, I do not say to you seven times, but seventy times seven. (ESV)
--   Lead through service
-    -   **Matthew 20:25-28** - But Jesus called them to him and said, You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them. It shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
--   Love God with all your heart, mind, and soul
-    -   **Matthew 22:37-38** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. (ESV)
--   Love your neighbor as yourself - fulfill the requirement of the law
-    -   **Matthew 22:39** - And a second is like it: You shall love your neighbor as yourself. (ESV)
--   Stay alert and keep watch
-    -   **Matthew 24:42-44** - Therefore, stay awake, for you do not know on what day your Lord is coming. But know this, that if the master of the house had known in what part of the night the thief was coming, he would have stayed awake and would not have let his house be broken into. Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect. (ESV)
--   Make disciples of all the nations, teaching them to obey Jesus
-    -   **Matthew 28:18-20** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
--   Deny yourself daily, and follow Jesus
-    -   **Luke 9:23-24** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
--   Do not covet your possessions
-    -   **Luke 12:15** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
--   Give to those who can't reciprocate
-    -   **Luke 14:12-14** - He said also to the man who had invited him, When you give a dinner or a banquet, do not invite your friends or your brothers or your relatives or rich neighbors, lest they also invite you in return and you be repaid. But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you. You will be repaid at the resurrection of the just. (ESV)
--   You must be born again
-    -   **John 3:7** - Do not marvel that I said to you, You must be born again. (ESV)
--   If you love Jesus, keep His commandments. The one who keeps Jesus' commandments is the one who loves Jesus
-    -   **John 14:15** - If you love me, you will keep my commandments.
-    -   **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
--   Those who have testimony of Jesus should preach testify that he is the one appointed by God to be judge of the living and the dead
-    -   **Acts 10:41-44** - not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name. While Peter was still saying these things, the Holy Spirit fell on all who heard the word. (ESV)
-    -   **Acts 13:47** - For so the Lord has commanded us, saying, I have made you a light for the Gentiles, that you may bring salvation to the ends of the earth.
--   Those who proclaim the gospel should get their living by the gospel
-    -   **I Corinthians 9:14** - In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.
+> **Mark 9:7** - And a cloud overshadowed them, and a voice came out of the cloud, This is my beloved Son; listen to him. (ESV)
 
-Precepts of Paul:
+> **Luke 9:35** - And a voice came out of the cloud, saying, This is my Son, my Chosen One; listen to him! (ESV)
+
+> **Acts 3:22** - Moses said, The Lord God will raise up for you a prophet like me from your brothers. You shall listen to him in whatever he tells you. (ESV)
+
+> **Deuteronomy 18:15-19** - The LORD your God will raise up for you a prophet like me from among you, from your brothers—it is to him you shall listen— just as you desired of the LORD your God at Horeb on the day of the assembly, when you said, Let me not hear again the voice of the LORD my God or see this great fire any more, lest I die. And the LORD said to me, They are right in what they have spoken. I will raise up for them a prophet like you from among their brothers. And I will put my words in his mouth, and he shall speak to them all that I command him. And whoever will not listen to my words that he shall speak in my name, I myself will require it of him. (ESV)
+
+Walk in the truth, love one another and do not deny that Jesus Christ has come in the flesh:
+
+> **II John 1:4-9** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we love one another. And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it. For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist. Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+
+## Commandments of Jesus (which are from God)
+
+Have faith in God?
+
+> **Mark 11:22** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God (G2316 theos).
+
+Have faith in God and have faith in Jesus:
+
+> **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+
+Repent, for the kingdom of heaven is near:
+
+> **Matthew 3:2** - Repent, for the kingdom of heaven is at hand. (ESV)
+
+Follow the 10 commandments from the heart in truth as far as to not idolize or covet your material possessions, leave behind your old life and follow Him (Jesus). 
+
+> **Luke 18:18-22** - And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
+
+Have faith in God to help you achieve this:
+
+> **Luke 18:26-27** - Those who heard it said, Then who can be saved? But he said, What is impossible with men is possible with God. (ESV)
+
+Come and follow Jesus and allow Him to make you into a fisher of men:
+
+> **Matthew 4:19** - And he said to them, Follow me, and I will make you fishers of men. (ESV)
+
+Rejoice when you're persecuted in My name:
+
+> **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+
+Let your light shine before all people:
+
+> **Matthew 5:16** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
+
+Be reconciled to one another:
+
+> **Matthew 5:23-24** - So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift. (ESV)
+
+Take sin very seriously:
+
+> **Matthew 5:29-30** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+
+Follow the commandments from the heart, and in truth, accountable to God:
+
+> **Matthew 5:32** - But I say to you that everyone who divorces his wife, except on the ground of sexual immorality, makes her commit adultery. And whoever marries a divorced woman commits adultery. (ESV)
+
+Turn the other cheek:
+
+> **Matthew 5:39** - But I say to you, Do not resist the one who is evil. But if anyone slaps you on the right cheek, turn to him the other also. (ESV)
+
+Go above and beyond. Forgive:
+
+> **Matthew 5:40-42** - And if anyone would sue you and take your tunic, let him have your cloak as well. And if anyone forces you to go one mile, go with him two miles. Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
+
+Love your enemies as well as your friends. Be like Your Heavenly Father. Be perfect:
+
+> **Matthew 5:43-48** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
+
+Be perfect as your heavenly Father is perfect:
+
+> **Matthew 5:48** - You therefore must be perfect, as your heavenly Father is perfect. (ESV)
+
+Be accountable to God. Do not seek reward from others but from God. Focus on spiritual disciplines for the right reasons. 
+
+> **Matthew 6:1-18** - Beware of practicing your righteousness before other people in order to be seen by them, for then you will have no reward from your Father who is in heaven. Thus, when you give to the needy, sound no trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may be praised by others. Truly, I say to you, they have received their reward. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. And your Father who sees in secret will reward you. And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and at the street corners, that they may be seen by others. Truly, I say to you, they have received their reward. But when you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you. And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him. Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil. For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
+
+Have a relationship with God:
+
+> **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
+
+Seek heavenly reward, not earthly reward. Have a heart seeking reward from God and not from man. Have your heart in heaven, not in earth:
+
+> **Matthew 6:19-21** - Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also. (ESV)
+
+Seek God's kingdom and His righteousness first of all:
+
+> **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+
+Do not worry about tomorrow:
+
+> **Matthew 6:34** - Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
+
+Use right judgment. We should be examining, judging, cleaning ourselves up, taking a look in the mirror first (by God's standards) before judging others:
+
+> **Matthew 7:1-5** - Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you. Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
+
+Practice discretion:
+
+> **Matthew 7:6** - Do not give dogs what is holy, and do not throw your pearls before pigs, lest they trample them underfoot and turn to attack you. (ESV)
+
+Ask, seek, and knock:
+
+> **Matthew 7:7-8** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened. (ESV)
+
+Ask God for your needs, which includes asking God for the Holy Spirit:
+
+> **Luke 11:1-11** - Now Jesus was praying in a certain place, and when he finished, one of his disciples said to him, Lord, teach us to pray, as John taught his disciples. And he said to them, When you pray, say: Father, hallowed be your name. Your kingdom come. Give us each day our daily bread, and forgive us our sins, for we ourselves forgive everyone who is indebted to us. And lead us not into temptation. And he said to them, Which of you who has a friend will go to him at midnight and say to him, Friend, lend me three loaves, for a friend of mine has arrived on a journey, and I have nothing to set before him; and he will answer from within, Do not bother me; the door is now shut, and my children are with me in bed. I cannot get up and give you anything? I tell you, though he will not get up and give him anything because he is his friend, yet because of his impudence he will rise and give him whatever he needs. And I tell you, ask, and it will be given to you; **seek, and you will find**; knock, and it will be opened to you. For **everyone who asks receives**, and **the one who seeks finds**, and to **the one who knocks it will be opened**. What father among you, if his son asks for a fish, will instead of a fish give him a serpent; (ESV)
+
+Treat others as you would like to be treated:
+
+> **Matthew 7:12** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
+
+Choose the narrow path to life:
+
+> **Matthew 7:13-14** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+
+Look out for false prophets:
+
+> **Matthew 7:15-20** - Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
+
+Pray for kingdom laborers. Pray that God sends out kingdom laborers:
+
+> **Matthew 9:37-38** - Then he said to his disciples, The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest. (ESV)
+
+Be on your guard. Jesus sends us out to be like scapegoats. Be wise and remain blameless:
+
+> **Matthew 10:16-17** - Behold, I am sending you out as sheep in the midst of wolves, so be wise as serpents and innocent as doves. Beware of men, for they will deliver you over to courts and flog you in their synagogues, (ESV)
+
+Do not fear persecutors. Fear God. But put your trust in God because He takes care of those who fear Him. Speak the truth:
+
+> **Matthew 10:26-31** - So have no fear of them, for nothing is covered that will not be revealed, or hidden that will not be known. What I tell you in the dark, say in the light, and what you hear whispered, proclaim on the housetops. And do not fear those who kill the body but cannot kill the soul. Rather fear him who can destroy both soul and body in hell. Are not two sparrows sold for a penny? And not one of them will fall to the ground apart from your Father. But even the hairs of your head are all numbered. Fear not, therefore; you are of more value than many sparrows. (ESV)
+
+Take Jesus' yoke upon yourself:
+
+> **Matthew 11:28-30** - Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light. (ESV)
+
+Do not despise the little ones:
+
+> **Matthew 18:10** - See that you do not despise one of these little ones. For I tell you that in heaven their angels always see the face of my Father who is in heaven. (ESV)
+
+How to deal with offenders:
+
+> **Matthew 18:15-17** - If your brother sins against you, go and tell him his fault, between you and him alone. If he listens to you, you have gained your brother. But if he does not listen, take one or two others along with you, that every charge may be established by the evidence of two or three witnesses. If he refuses to listen to them, tell it to the church. And if he refuses to listen even to the church, let him be to you as a Gentile and a tax collector. (ESV)
+
+Forgive extremely generously / almost without limits:
+
+> **Matthew 18:21-22** - Then Peter came up and said to him, Lord, how often will my brother sin against me, and I forgive him? As many as seven times? Jesus said to him, I do not say to you seven times, but seventy times seven. (ESV)
+
+Lead through service:
+
+> **Matthew 20:25-28** - But Jesus called them to him and said, You know that the rulers of the Gentiles lord it over them, and their great ones exercise authority over them. It shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+
+Love God with all your heart, mind, and soul:
+
+> **Matthew 22:37-38** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. (ESV)
+
+Love your neighbor as yourself - fulfill the requirement of the law:
+
+> **Matthew 22:39** - And a second is like it: You shall love your neighbor as yourself. (ESV)
+
+Stay alert and keep watch:
+
+> **Matthew 24:42-44** - Therefore, stay awake, for you do not know on what day your Lord is coming. But know this, that if the master of the house had known in what part of the night the thief was coming, he would have stayed awake and would not have let his house be broken into. Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect. (ESV)
+
+Make disciples of all the nations, teaching them to obey Jesus:
+
+> **Matthew 28:18-20** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
+
+Deny yourself daily, and follow Jesus:
+
+> **Luke 9:23-24** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
+
+Do not covet your possessions:
+
+> **Luke 12:15** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
+
+Give to those who can't reciprocate:
+
+> **Luke 14:12-14** - He said also to the man who had invited him, When you give a dinner or a banquet, do not invite your friends or your brothers or your relatives or rich neighbors, lest they also invite you in return and you be repaid. But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you. You will be repaid at the resurrection of the just. (ESV)
+
+You must be born again:
+
+> **John 3:7** - Do not marvel that I said to you, You must be born again. (ESV)
+
+If you love Jesus, keep His commandments. The one who keeps Jesus' commandments is the one who loves Jesus:
+
+> **John 14:15** - If you love me, you will keep my commandments.
+
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+
+Those who have testimony of Jesus should preach testify that he is the one appointed by God to be judge of the living and the dead:
+
+> **Acts 10:41-44** - not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name. While Peter was still saying these things, the Holy Spirit fell on all who heard the word. (ESV)
+
+> **Acts 13:47** - For so the Lord has commanded us, saying, I have made you a light for the Gentiles, that you may bring salvation to the ends of the earth.
+
+Those who proclaim the gospel should get their living by the gospel:
+
+> **I Corinthians 9:14** - In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.
+
+
+## Precepts of Paul
 
 -   Pursue godliness with contentment but not without contentment. Pursue personal righteousness
-    -   **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain.  Now there is great gain in godliness with contentment, for we brought nothing into the world, and we cannot take anything out of the world.  But if we have food and clothing, with these we will be content.  But those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.  For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.  But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
-        -   righteousness,
-        -   godliness,
-        -   faith,
-        -   love,
-        -   steadfastness,
-        -   gentleness.
+    -   righteousness,
+    -   godliness,
+    -   faith,
+    -   love,
+    -   steadfastness,
+    -   gentleness.
+
+> **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain.  Now there is great gain in godliness with contentment, for we brought nothing into the world, and we cannot take anything out of the world.  But if we have food and clothing, with these we will be content.  But those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.  For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.  But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
 
 # Free will and justification. The Scripture says **Abraham** believed God
