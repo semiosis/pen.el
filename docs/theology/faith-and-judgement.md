@@ -358,6 +358,8 @@ What I mean by relationship is:
     Jesus implies you must obey Him (Jesus) to be part of His family:
     
     > **John 7:16** - So Jesus answered them, My teaching is not mine, but his who sent me.
+    
+    [Word for today - Do God's word - March 7th](https://www.star.net.nz/the-word-for-today/do-gods-word-2024_03_07)
 
 
 ### The obedient children are the ones who are not conformed to the passions of our former ignorance
@@ -394,11 +396,11 @@ We must obey God. We have faith in God who was delivered up for our trespasses a
 Jesus' sacrifice is the only atonement for our sin we need. It's comprehensive.
 It must be received through faith in Jesus Christ.
 
-> -   **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
+> **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
 
-> -   **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
+> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
-> -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
 We receive reconciliation through Jesus Christ who is our Lord.
 
@@ -712,9 +714,9 @@ Those who are in the faith <ins>can't do anything against the truth</ins> - So t
 
 Because truth is truth, it is imperishable:
 
-> -   **I Peter 1:23-25** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
+> **I Peter 1:23-25** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
 
-> -   **I Corinthians 15:51-58** - Behold! I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory. O death, where is your victory? O death, where is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
+> **I Corinthians 15:51-58** - Behold! I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory. O death, where is your victory? O death, where is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
 
 Stop sinning by faith in the truth - by faith in Jesus, and trusting obedience in God's words:
 
