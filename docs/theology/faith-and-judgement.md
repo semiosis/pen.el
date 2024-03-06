@@ -427,11 +427,15 @@ It's faith in the heart which we need; obedience to Jesus Christ and belief in J
 
 > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
 
-The Father is not the Son (Jesus Christ) but Jesus has been perfectly obedient, so Jesus speaks what Father God speaks, and when someone seeks Jesus Christ, they see Father God, because Father God has been revealed in Jesus Christ:
+Jesus has been perfectly obedient, so Jesus speaks what Father God speaks, and when someone seeks Jesus Christ, they see Father God, because Father God has been revealed to us in Jesus Christ. The Father is in the Son. The Word is God.
 
-<ins>the Father who sent me has himself given me a commandment—what to say and what to speak.</ins>
+Also, through perfect obedience, Jesus has spoken Father God's commandment of eternal life, which is what He has said:
 
-> **John 12:44-48** - And Jesus cried out and said, Whoever believes in me, believes not in me but in him who sent me. And whoever sees me sees him who sent me. I have come into the world as light, so that whoever believes in me may not remain in darkness. If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world. The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day.
+-   "<sub>the</sub> Father who sent me has himself given me a commandment—what to say and what to speak.\_"
+
+Whoever has faith in Jesus, has faith in God. Whoever sees Jesus sees the Father:
+
+> **John 12:44-48** - And Jesus cried out and said, <ins>Whoever believes in me, believes not in me but in him who sent me. And whoever sees me sees him who sent me.</ins> <ins>I have come into the world as light, so that whoever believes in me may not remain in darkness.</ins> If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world. The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day.
 
 Jesus' words bring eternal life. The commandment which Father God gave Jesus is eternal life and the commandment is the words that Jesus Christ has spoken, so we need to abide in Jesus Christ by letting His words abide in us, believing Him and obeying Him; doing what He said:
 
@@ -443,7 +447,7 @@ We need to obey Jesus Christ and walk and believe as God has commanded and spoke
 
 > **John 14:6-11** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. If you had known me, you would have known my Father also. From now on you do know him and have seen him. Philip said to him, Lord, show us the Father, and it is enough for us. Jesus said to him, Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father? Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but the Father who dwells in me does his works. Believe me that I am in the Father and the Father is in me, or else believe on account of the works themselves.
 
-We must believe Jesus, and have faith in Jesus Christ, obeying Jesus:
+We must believe Jesus, and have faith in Jesus Christ, obeying Jesus, and that is obeying God and having faith in God:
 
 > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
 
@@ -890,6 +894,10 @@ Jesus implies you must obey Him (Jesus) to be part of His family:
 
 > **John 7:16** - So Jesus answered them, My teaching is not mine, but his who sent me.
 
+Love Jesus (being obedient to Him) **and** believe that He came from God:
+
+> **John 16:25-27**- I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, because you have loved me and have believed that I came from God.
+
 
 ## The obedient children are the ones who are not conformed to the passions of our former ignorance
 
@@ -1067,13 +1075,17 @@ We must believe what He's achieved, and we must be born-again of the Spirit.
 
 Saved, and being saved. Being cleaned while believing.
 
-Jesus is our High Priest
+Jesus is our High Priest.
 
--   **Romans 8:1** - There is therefore now no condemnation for those who are in Christ Jesus.
--   **Romans 8:3-4** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, **in order that the righteous requirement of the law might be fulfilled in us**, who walk not according to the flesh but according to the Spirit.
+> **Romans 8:1** - There is therefore now no condemnation for those who are in Christ Jesus.
+
+> **Romans 8:3-4** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, **in order that the righteous requirement of the law might be fulfilled in us**, who walk not according to the flesh but according to the Spirit.
 
 Jesus condemned sin in the flesh. Now we walk according to the spirit so that the righteous requirement of the law might be fulfilled in us.
-It's still really important to put a stop to sin! And we must walk according to Jesus' commandments.
+
+It's still really important to put a stop to sin! And we must walk according to Jesus' commandments:
+
+**John 14:24** - <ins>Whoever does not love me does not keep my words.</ins> And the word that you hear is not mine but the Father's who sent me.
 
 
 ### Holiness
@@ -4838,7 +4850,7 @@ Whoever believes in Jesus.
 
 ### Food
 
-> **John 4:34** - Jesus said to them, My food is to do the will of him who sent me and to accomplish his work.
+> **John 4:32-34** - But he said to them, I have food to eat that you do not know about. So the disciples said to one another, Has anyone brought him something to eat? Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. (ESV)
 
 > **John 6:27** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal.
 
@@ -6929,6 +6941,8 @@ We follow them in faith.
 
 
 ## Later in the year
+
+> **John 15:26** - “When the Helper comes, whom I will send to you from the Father, that is the Spirit of truth who proceeds from the Father, He will testify about Me, (ESV)
 
 <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/dream-the-way-the-truth-the-life/>
 
@@ -9280,6 +9294,235 @@ Cleaned up (stop sinning) by having faith in the truth.
 > **Romans 1:18-25** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
 
 
+## Jesus is the Only Way to Father God
+
+> **John 14:1-6** - Let not your hearts be troubled. Believe in God; believe also in me. In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you? And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also. And you know the way to where I am going. Thomas said to him, Lord, we do not know where you are going. How can we know the way? Jesus said to him, <ins>I am the way, and the truth, and the life. No one comes to the Father except through me.</ins>
+
+We must get to know God through knowing Jesus:
+
+> **John 14:7-9** - <ins>If you had known me, you would have known my Father also. From now on you do know him and have seen him.</ins> Philip said to him, Lord, show us the Father, and it is enough for us. Jesus said to him, Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father?
+
+Get to know Jesus by following His commandments and being obedient and willing to do God's will.
+
+
+## The life that Father God gave us is in His Son, Jesus Christ
+
+
+### God made Himself knowable by sending Jesus Christ, who has made Father God known
+
+> **John 1:14** - And the Word became flesh, and dwelt among us, and we saw His glory, glory as of the only begotten from the Father, full of grace and truth.
+
+God is knowable through having faith in Jesus Christ:
+
+> **John 1:18** - No one has ever seen God; the only God, who is at the Father's side, he has made him known.
+
+Grace, mercy, and the eternal life which God has given us is in Jesus Christ. He is the bread of life:
+
+> **II John 1:3** - Grace, mercy, and peace will be with us, from God the Father and from Jesus Christ the Father's Son, in truth and love.
+
+> **I John 5:11** - And this is the testimony, that God gave us eternal life, and this life is in his Son.
+
+God was acting through Jesus Christ as He walked the earth in the flesh, around 2000 years ago.
+
+> **John 10:32** - Jesus answered them, “I showed you many good works from the Father; for which of them are you stoning Me?”
+
+
+### The testimony of God that he has borne concerning his Son
+
+Whoever has faith in the Son of God has the testimony in himself.
+
+> **I John 5:9-13** - If we receive the testimony of men, the testimony of God is greater, for this is the testimony of God that he has borne concerning his Son. <ins>Whoever believes in the Son of God has the testimony in himself.</ins> Whoever does not believe God has made him a liar, because he has not believed in the testimony that God has borne concerning his Son. And this is the testimony, that God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life. I write these things to you who believe in the name of the Son of God that you may know that you have eternal life.
+
+
+### We must be in Him, Jesus Christ
+
+> **I John 5:18-20** - We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him. We know that we are from God, and the whole world lies in the power of the evil one. And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.
+
+We know that we abide in Him because He has given us of His Spirit:
+
+> **James 1:17** - Every good thing given and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shifting shadow.
+
+> **I John 4:13-17** - By this we know that we abide in him and he in us, <ins>because he has given us of his Spirit.</ins> And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God.
+
+> **Acts 2:33** - Therefore having been exalted to the right hand of God, and having received from the Father the promise of the Holy Spirit, He has poured forth this which you both see and hear.
+
+For the day of judgement, we must seek to:
+
+-   abide in His love
+-   be loving as He loves
+
+We should be like Jesus while we are in this world:
+
+> **I John 4:16-17** - So <ins>we have come to know</ins> and to believe <ins>the love that God has for us</ins>. God is love, and <ins>whoever abides in love abides in God, and God abides in him.</ins> By this is <ins>love perfected with us</ins>, so that we may have confidence for the day of judgment, because <ins>as he is so also are we in this world.</ins> (ESV)
+
+Abide in His love:
+
+> **I John 4:10** - In this is love, not that we have loved God but <ins>that he loved us and sent his Son to be the propitiation for our sins.</ins>
+
+Be loving as He loves:
+
+> **II John 1:4-6** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we <ins>love one another</ins>. And <ins>this is love, that we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it.
+
+There are those who have faith, and those who betray. Betrayal is counter to having faith. Faith includes belief, obedience and faithfulness:
+
+> **John 6:63-65** - It is <ins>the Spirit who gives life</ins>; the flesh is of no avail. <ins>The words that I have spoken to you are spirit and life.</ins> But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And He was saying, “For this reason I have said to you, that no one can come to Me unless it has been granted him from the Father.”
+
+
+### Father God was always with Jesus
+
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV)
+
+> **John 16:25-32**- I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, because you have loved me and have believed that I came from God. I came from the Father and have come into the world, and now I am leaving the world and going to the Father. His disciples said, Ah, now you are speaking plainly and not using figurative speech! Now we know that you know all things and do not need anyone to question you; this is why we believe that you came from God. Jesus answered them, Do you now believe? Behold, the hour is coming, indeed it has come, when you will be scattered, each to his own home, and will leave me alone. Yet I am not alone, for the Father is with me.
+
+
+### Our will must be aligned with God's will - We start by desiring to do His will
+
+So put into practice Jesus Christ's commandments, and line up your will line up with God's will:
+
+> **I John 5:14-15** - And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
+
+> **III John 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God.
+
+If we love one another [as He loved us]:
+
+> **I John 4:12** - No one has ever seen God; if we love one another, God abides in us and his love is perfected in us.
+
+We must be drawn to Jesus Christ, who is the bread of life. We do the will of God and Jesus Christ will raise us on the last day:
+
+> **John 6:44-48** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes has eternal life. I am the bread of life.
+
+We must have faith in Jesus Christ and the words He has spoken:
+
+> **John 6:57-58** - As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever.
+
+Don't betray Jesus. Continue walking with Jesus:
+
+> **John 6:63-69** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And He was saying, “For this reason I have said to you, that no one can come to Me unless it has been granted him from the Father.” After this many of his disciples turned back and no longer walked with him. So Jesus said to the Twelve, Do you want to go away as well? Simon Peter answered him, Lord, to whom shall we go? You have the words of eternal life, and we have believed, and have come to know, that you are the Holy One of God.
+
+
+### The Holy Spirit testifies about Jesus
+
+> **John 15:26** - “When the Helper comes, whom I will send to you from the Father, that is the Spirit of truth who proceeds from the Father, He will testify about Me,
+
+<https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/dream-the-way-the-truth-the-life/>
+
+The Holy Spirit is a person, and is a He:
+
+> **John 14:26** - But the Helper, the Holy Spirit, whom the Father will send in my name, <ins>he</ins> will teach you all things and bring to your remembrance all that I have said to you.
+
+
+### We **must** do God's will
+
+> **John 4:32-34** - But he said to them, I have food to eat that you do not know about. So the disciples said to one another, Has anyone brought him something to eat? Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. (ESV)
+
+
+### We must walk in His commandments
+
+If we want God to make His home with us, we must keep Jesus' words, and obey His commandments:
+
+> **John 14:23-25** - Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. <ins>Whoever does not love me does not keep my words.</ins> And the word that you hear is not mine but the Father's who sent me. These things I have spoken to you while I am still with you.
+
+In the following case, I think that obedience would have come before belief as if the disciples had loved Him then they would have rejoiced, but that Jesus explains things in advance so that we will believe when we see. Jesus tells us in advance that He goes to the Father, and will come to us, so that we will believe:
+
+> **John 14:27-29** - Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid. You heard me say to you, I am going away, and I will come to you. If you loved me, you would have rejoiced, because I am going to the Father, for the Father is greater than I. And now I have told you before it takes place, so that when it does take place you may believe.
+
+Faith is a lifestyle. It's walking in the truth:
+
+> **II John 1:4-6** - I was very glad to find some of your children walking in truth, just as we have received commandment to do from the Father. And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we love one another. And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it.
+
+Loving Jesus, obeying Jesus, and believing that He came from God are essential:
+
+> **John 16:25-27**- I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, <ins>because you have loved me and have believed that I came from God.</ins>
+
+
+### The Holy Spirit is a He and brings to remembrance all the words of Jesus
+
+As Jesus came in His Father's name, and spoke His Father's words,
+the Holy Spirit comes in Jesus' name and brings to remembrance all the words of Jesus:
+
+> **John 14:26** - But the Helper, the Holy Spirit, whom the Father will send in my name, <ins>he</ins> will teach you all things and bring to your remembrance all that I have said to you.
+
+
+### Jesus is God with us
+
+> **Matthew 1:18-25** - Now the birth of Jesus Christ took place in this way. When his mother Mary had been betrothed to Joseph, before they came together she was found to be <ins>with child from the Holy Spirit.</ins> And her husband Joseph, being a just man and unwilling to put her to shame, resolved to divorce her quietly. But as he considered these things, behold, an angel of the Lord appeared to him in a dream, saying, Joseph, son of David, do not fear to take Mary as your wife, for that which is conceived in her is from the Holy Spirit. She will bear a son, and you shall call his name Jesus, for he will save his people from their sins. All this took place to fulfill what the Lord had spoken by the prophet: Behold, the virgin shall conceive and bear a son, and <ins>they shall call his name Immanuel (which means, God with us)</ins>. When Joseph woke from sleep, he did as the angel of the Lord commanded him: he took his wife, but knew her not until she had given birth to a son. And he called his name Jesus. (ESV)
+
+> **Isaiah 7:14** - Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel. (ESV)
+
+> **Luke 1:35** - And the angel answered her, The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God. (ESV)
+
+
+### The Word became flesh
+
+> **John 17:5** - And now, Father, glorify me in your own presence with the glory that I had with you before the world existed. (ESV)
+
+> **John 16:28** - I came from the Father and have come into the world, and now I am leaving the world and going to the Father.
+
+> **Matthew 1** -23: Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel (which means, God with us). (ESV)
+
+
+### Jesus returned to the Father
+
+> **John 16:5** - But now I am going to him who sent me, and none of you asks me, Where are you going? (ESV)
+
+> **John 14:28** - You heard me say to you, I am going away, and I will come to you. If you loved me, you would have rejoiced, because I am going to the Father, for the Father is greater than I. (ESV)
+
+> **Isaiah 55:11** - so shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose, and shall succeed in the thing for which I sent it. (ESV)
+
+
+### We also become one with the Father as we are kept in His name
+
+> **John 17:11** - And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
+
+
+### We can know Father God directly, while Jesus tells us plainly about Father God
+
+We must walk in Jesus' commandments and believe that He came from God.
+
+> **John 16:25-28** - I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, <ins>because you have loved me and have believed that I came from God.</ins> I came from the Father and have come into the world, and now I am leaving the world and going to the Father.
+
+
+## We must love God
+
+> **I John 2:15-17** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever.
+
+
+## In a way, the Son is the Father as far as we can see because looking upon Jesus we see the Father, but the Father is greater
+
+One thing is for sure, Jesus is the only way to the Father.
+
+> **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me.
+
+The Father abides in Jesus:
+
+> **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works.
+
+Jesus abides in the Father:
+
+> **John 1:18** - No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.
+
+This says the Word was God, but it doesn't say the Word was the totality of the Father. We can be sure that in the beginning there was the Word and the Word was with God and the Word was God:
+
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV)
+
+> **John 16:32** - Behold, the hour is coming, indeed it has come, when you will be scattered, each to his own home, and will leave me alone. Yet I am not alone, for <ins>the Father is with me.</ins> (ESV)
+
+Jesus came in Father God's name:
+
+> **John 5:43** - I have come in my Father's name, and you do not receive me. If another comes in his own name, you will receive him. (ESV)
+
+> **John 10:25** - Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me,
+
+> **Revelation of John 14:1** - Then I looked, and behold, on Mount Zion stood the Lamb, and with him 144, 000 who had his name and his Father's name written on their foreheads.
+
+The Father is with the Son, the Father is in the Son, and the Son in the Father:
+
+> **John 10:30** - I and the Father are one.
+
+The Father is not specifically the Son (Jesus Christ) but Jesus is the Word, and the Word is God.
+And Jesus came in the Father's name. God was revealed in Jesus Christ for us.
+
+
 # Sun's light failing as the curtain was torn and Jesus died
 
 > **Mark 15:37-39** - And Jesus uttered a loud cry and breathed his last. And the curtain of the temple was torn in two, from top to bottom. And when the centurion, who stood facing him, saw that in this way he breathed his last, he said, Truly this man was the Son of God! (ESV)
@@ -9326,14 +9569,33 @@ I believe in all of theses:
 -   `sola scriptura` (by Scripture alone) AMEN!!
 -   `Solus Christus` AMEN!!
 -   `Soli Deo gloria` (glory to God alone) AMEN!! But the glory God gives us glorifies God.
-    -   When it comes to forgiving offenses of others, my understanding is that it is about forgiving others' offenses against 'you', thereby ultimately still going through Christ for forgiveness, since
-    -   **John 20:22-23** - And when he had said this, he breathed on them and said to them, Receive the Holy Spirit. (ESV)
-    -   **Proverbs 19:11** - Good sense makes one slow to anger, and it is his glory to overlook an offense. (ESV)
-    -   **Matthew 6:12** - and forgive us our debts, as we also have forgiven our debtors.
-    -   **Matthew 18:35** - So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart.
-    -   **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
-    -   **Ephesians 4:32** - Be kind to one another, tender-hearted, forgiving each other, just as God in Christ also has forgiven you.
-    -   **Matthew 10:8** -  Heal the sick, raise the dead, cleanse lepers, cast out demons.  You received without paying; give without pay. (ESV)
+
+> **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood.
+
+I'm honestly just trying to combat falsehood by reading and applying the Scriptures in a way where I'm responding to promptings from the Holy Spirit and taking every thought captive to obey Christ, and I want to honour Jesus and honour God, and not bury my talent. So I hope my Bible study has been helpful. And all glory to God.
+
+> **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ,
+
+> **Matthew 25:22-23** - And he also who had the two talents came forward, saying, Master, you delivered to me two talents; here I have made two talents more. His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.
+
+
+## Regarding glory to God alone
+
+When it comes to forgiving offenses of others, my understanding is that it is about forgiving others' offenses against 'you', thereby ultimately still going through Christ for forgiveness, since:
+
+> **John 20:22-23** - And when he had said this, he breathed on them and said to them, Receive the Holy Spirit. (ESV)
+
+> **Proverbs 19:11** - Good sense makes one slow to anger, and it is his glory to overlook an offense. (ESV)
+
+> **Matthew 6:12** - and forgive us our debts, as we also have forgiven our debtors.
+
+> **Matthew 18:35** - So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart.
+
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
+
+> **Ephesians 4:32** - Be kind to one another, tender-hearted, forgiving each other, just as God in Christ also has forgiven you.
+
+> **Matthew 10:8** -  Heal the sick, raise the dead, cleanse lepers, cast out demons.  You received without paying; give without pay. (ESV)
 
 
 # Then, glorification

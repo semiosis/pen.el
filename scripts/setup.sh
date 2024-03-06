@@ -2260,6 +2260,7 @@ e ia itail
 # Instead, run this on the host OS
 # docker run -ti fathyb/carbonyl https://youtube.com
 
+mkdir -p ~/.pen/elpa-light
 mkdir -p ~/.pen/elpa-full
 
 agi unison

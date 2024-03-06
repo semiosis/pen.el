@@ -1,0 +1,17 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+mkdir -p ~/.pen/elpa-light
+mkdir -p ~/.pen/elpa-full
+
+# unison -batch=true /root/.emacs.d/elpa-full /root/.pen/elpa-full
+
+unison -batch=true /root/.emacs.d/elpa-light /root/.pen/elpa-light
+
+# rsync -rtlphx /root/.emacs.d/elpa-full/ /root/.pen/elpa-full
+# rsync -rtlphx /root/.pen/elpa-full/ /root/.emacs.d/elpa-full 
+# 
+# rsync -rtlphx /root/.emacs.d/elpa-light/ /root/.pen/elpa-light
+# rsync -rtlphx /root/.pen/elpa-light/ /root/.emacs.d/elpa-light 

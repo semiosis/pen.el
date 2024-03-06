@@ -334,6 +334,10 @@ if test -n "$PEN_NO_TIMEOUT"; then
     pen-rc-set -fp /tmp/pen.yaml no-timeout "$PEN_NO_TIMEOUT"
 fi
 
+if test -d "$HOME/.pen/elpa-full"; then
+    sync-elpa-with-host
+fi
+
 # On startup these should always be offline
 rm -f ~/.pen/pool/available/*
 if ! ls ~/.pen/pool/available/* 2>/dev/null | grep -q pen-emacsd; then
