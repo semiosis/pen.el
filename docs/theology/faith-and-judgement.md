@@ -546,7 +546,7 @@ AMEN!! But this doesn't mean the other elements of working faith can't play a pa
 
 We may rest from our labors when we die in the Lord:
 
-**Revelation of John 14:13** - And I heard a voice from heaven saying, Write this: Blessed are the dead who die in the Lord from now on. Blessed indeed, says the Spirit, that they may rest from their labors, for their deeds follow them! (ESV)
+> **Revelation of John 14:13** - And I heard a voice from heaven saying, Write this: Blessed are the dead who die in the Lord from now on. Blessed indeed, says the Spirit, that they may rest from their labors, for their deeds follow them! (ESV)
 
 Circumcision of the flesh does not matter:
 
@@ -660,76 +660,150 @@ We receive reconciliation through Jesus Christ who is our Lord.
 
 I enjoyed this video, but I still am of the opinion that following the full Mosaic law is not necessary, (but not prohibited, so long as it is pursued by faith and submits to God's righteousness):
 
--   [Public Debate - Should Christians Keep The Law? - YouTube](https://www.youtube.com/watch?v=CNHKqhwu6Bo)
-    -   **Galatians 3:10** - For all who rely on works of the law are under a curse; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them.
-        -   Relying on the 'works of the law' for one's righteousness puts a person under a curse.
--   The whole world is accountable to God over the law of God
-    -   **Romans 3:19-20** - Now we know that whatever the law says it speaks to those who are under the law, so that every mouth may be stopped, and the whole world may be held accountable to God. For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. (ESV)
--   The law is still used in judgement, but the one who has faith in Jesus is not condemned
--   The law is good and just and Jesus both obeyed it flawlessly, but He also fulfilled it like a prophesy.
-    -   Through faith we are justified, but we should absolutely stop sinning - we are sanctified by the Spirit **and** faith in the truth.
-        -   **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
-            -   And the Spirit is the Truth
-            -   And God's Word is Truth
-                -   God's Words are Truth
-                -   Jesus is the Truth
-            -   We must have faith in the truth (i.e. believe and trust in the truth)
-        -   Those who are in the faith <ins>can't do anything against the truth</ins> - So those who are in the faith find no contradiction
-            -   **II Corinthians 13:5-8** - Examine yourselves, to see whether you are in the faith. Test yourselves. Or do you not realize this about yourselves, that Jesus Christ is in you? —unless indeed you fail to meet the test! I hope you will find out that we have not failed the test. But we pray to God that you may not do wrong—not that we may appear to have met the test, but that you may do what is right, though we may seem to have failed. For we cannot do anything against the truth, but only for the truth.
-            -   Because truth is truth, it is imperishable
-                -   **I Peter 1:23-25** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
-                -   **I Corinthians 15:51-58** - Behold! I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory. O death, where is your victory? O death, where is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
-        -   **1 Thessalonians 4:3** -  For this is the will of God, your sanctification: that you <ins>abstain</ins> from sexual immorality;  (ESV)
-            -   Stop sinning by faith in the truth - by faith in Jesus, and trusting obedience in God's words.
-    -   **Mark 10:19** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. (ESV)
-    -   **1 John 3:4-9** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness.  You know that he appeared to take away sins, and in him there is no sin.  No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him.  Little children, let no one deceive you.  Whoever practices righteousness is righteous, as he is righteous.  Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning.  The reason the Son of God appeared was to destroy the works of the devil.  No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God.  (ESV)
--   Jesus' words will not pass away
-    -   **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.  (ESV)
-    -   **John 6:68** -  Simon Peter answered him, Lord, to whom shall we go?  You have the words of eternal life,  (ESV)
-    -   **I Peter 1:23** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God;
-    -   **I Peter 1:25** - but the word of the Lord remains forever. And this word is the good news that was preached to you.
-    -   **Ephesians 1:13,14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
--   Adhering strictly to the Mosaic law is not needed to be justified by God if we believe in and follow Jesus
-    -   **Galatians 3:15-18** - To give a human example, brothers: even with a man-made covenant, no one annuls it or adds to it once it has been ratified. Now the promises were made to Abraham and to his offspring. It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ. This is what I mean: the law, which came 430 years afterward, does not annul a covenant previously ratified by God, so as to make the promise void. For if the inheritance comes by the law, it no longer comes by promise; but God gave it to Abraham by a promise.
-    -   The Mosaic law is not really in the same category as the 10 commandments, I believe. The 10 commandments if obeyed in truth from the heart would result in a clean heart, I think. So it serves to describe what a pure heart looks like, and the laws we should always try to keep whether Gentile or Jew.
-        -   **I Peter 1:22** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart,
-        -   **Matthew 5:28** - But I say to you that everyone who looks at a woman with lustful intent has **already committed adultery with her in his heart**.
-        -   **Revelation of John 2:23** - and I will strike her children dead. And all the churches will know that I am **he who searches mind and heart**, and I will give to each of you as your works deserve.
-        -   **II Peter 2:14** - They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have **hearts trained in greed**. Accursed children!
-        -   **II Corinthians 5:11-12** - Therefore, knowing the fear of the Lord, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. We are not commending ourselves to you again but giving you cause to boast about us, so that you may be able to answer those who boast about outward appearance and not about what is in the heart.
-        -   The Holy Spirit cleanses our hearts by faith:
-            -   **Acts 15:8-9** - And God, who knows the heart, bore witness to them, by giving them the Holy Spirit just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith.
--   Do what Jesus says and receive eternal life - obey Jesus
-    -   **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching to which you were committed**, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
-    -   Being a slave to righteousness is possible without adhering to the Mosaic law, by being led by Jesus' Spirit
-        -   **1 Corinthians 1:30-31** -  He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption.  Therefore, as it is written, Let the one who boasts, boast in the Lord.  (ESV)
-            -   God through Jesus is the source of our personal righteousness, and He **is** our righteousness.
-        -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
-            -   We are set free from sin and become slaves of God (so we obey God!!) and the obedience leads to sanctification, and leads to righteousness.
-                -   **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? (ESV)
-                -   If a person is led by the Spirit then the Lord Jesus is in control of their life, which means that person obeys Jesus' commandments
-                    -   Faith receives and continues to receive the supply of the Spirit and we are led by the Spirit.
-                    -   **Galatians 3:1-5** - O foolish Galatians! Who has bewitched you? It was before your eyes that Jesus Christ was publicly portrayed as crucified. Let me ask you only this: Did you **receive the Spirit** by works of the law or **by hearing with faith**? Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh? Did you suffer so many things in vain—if indeed it was in vain? Does he who **supplies the Spirit** to you and works miracles among you do so by works of the law, or by hearing with faith— (ESV)
-                    -   [The Law Refutes Justification by Law: Galatians 3:6a??9, Part 1 - YouTube](https://www.youtube.com/watch?v=34pBf5pZq_I)
-                    -   Faith receives and continues to receive the supply of the Spirit. So a person needs to be having faith in Jesus to be led by the Spirit.
-            -   Sanctification is personal righteousness that is fruit that comes from being in Jesus Christ, Him being our righteousness - we're grafted into Jesus like branches on a tree and become healthier. We must and **should** stop sinning.
-    -   We must simultaneously make the tree good (abide in Jesus) and make the fruit good (be sanctified and glorify God and Jesus in our hearts, minds, bodies and actions).
-        -   **Matthew 12:33-37** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. You brood of vipers! How can you speak good, when you are evil? For out of the abundance of the heart the mouth speaks. The good person out of his good treasure brings forth good, and the evil person out of his evil treasure brings forth evil. I tell you, on the day of judgment people will give account for every careless word they speak, for by your words you will be justified, and by your words you will be condemned. (ESV)
-        -   As we make the tree good, we make the fruit good!
-    -   I still think the 10 commandments are special, and following them in truth is repenting from sin
-        -   **Mark 10:19** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. (ESV)
-        -   **Acts 15:28-29** - For it has seemed good to the Holy Spirit and to us to lay on you no greater burden than these requirements: that you abstain from what has been sacrificed to idols, and from blood, and from what has been strangled, and from sexual immorality. If you keep yourselves from these, you will do well. Farewell.
+
+### Christians are not <ins>under</ins> the Mosaic law
+
+[Public Debate - Should Christians Keep The Law? - YouTube](https://www.youtube.com/watch?v=CNHKqhwu6Bo)
+
+Relying on the 'works of the law' for one's righteousness puts a person under a curse:
+
+> **Galatians 3:10** - For all who rely on works of the law are under a curse; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them.
+
+The whole world is accountable to God over the law of God:
+
+> **Romans 3:19-20** - Now we know that whatever the law says it speaks to those who are under the law, so that every mouth may be stopped, and the whole world may be held accountable to God. For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. (ESV)
+
+The law is still used in judgement, but the one who has faith in Jesus is not condemned.
+
+The law is good and just and Jesus both obeyed it flawlessly, but He also fulfilled it like a prophesy.
 
 
 ### Didache
 
-What I like about the didache is that it still upholds righteous living and following God's Great commandments and precepts.
+The Didache's estimated range of dating is 50-120 A.D, according to [earlychristianwritings.com](https://www.earlychristianwritings.com/text/didache-roberts.html).
+
+What I like about the Didache is that it upholds righteous living and following God's Great commandments and precepts.
 
 [Didache: The Lord's Teaching Through the Twelve Apostles to the Nations](https://www.earlychristianwritings.com/text/didache-roberts.html)
 
 I think it's important to live righteously out of love for God and one's neighbour, and out of faith.
+
 That being said, I think God does justify through faith, and I believe faith works. And working may indeed be called faith if the work is done in faith.
 I also think God likely saves through works because it may be their way of demonstrating faith to Jesus.
+
+
+### Our point of reference
+
+Through faith we are justified, but we should absolutely stop sinning
+
+We are sanctified by the Spirit **and** faith in the truth (taking God's words as True and using them to combat lies):
+
+> **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+
+-   And the Spirit is the Truth
+-   And God's Word is Truth
+    -   God's Words are Truth
+    -   Jesus is the Truth
+-   We must have faith in the truth (i.e. believe and trust in the truth)
+
+Those who are in the faith <ins>can't do anything against the truth</ins> - So those who are in the faith find no contradiction:
+
+> **II Corinthians 13:5-8** - Examine yourselves, to see whether you are in the faith. Test yourselves. Or do you not realize this about yourselves, that Jesus Christ is in you? —unless indeed you fail to meet the test! I hope you will find out that we have not failed the test. But we pray to God that you may not do wrong—not that we may appear to have met the test, but that you may do what is right, though we may seem to have failed. For we cannot do anything against the truth, but only for the truth.
+
+Because truth is truth, it is imperishable:
+
+> -   **I Peter 1:23-25** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
+
+> -   **I Corinthians 15:51-58** - Behold! I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory. O death, where is your victory? O death, where is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
+
+Stop sinning by faith in the truth - by faith in Jesus, and trusting obedience in God's words:
+
+> **1 Thessalonians 4:3** -  For this is the will of God, your sanctification: that you <ins>abstain</ins> from sexual immorality;  (ESV)
+
+> **Mark 10:19** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. (ESV)
+
+> **1 John 3:4-9** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness.  You know that he appeared to take away sins, and in him there is no sin.  No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him.  Little children, let no one deceive you.  Whoever practices righteousness is righteous, as he is righteous.  Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning.  The reason the Son of God appeared was to destroy the works of the devil.  No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God.  (ESV)
+
+Jesus' words will not pass away:
+
+> **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.  (ESV)
+
+> **John 6:68** -  Simon Peter answered him, Lord, to whom shall we go?  You have the words of eternal life,  (ESV)
+
+> **I Peter 1:23** - since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God;
+
+> **I Peter 1:25** - but the word of the Lord remains forever. And this word is the good news that was preached to you.
+
+> **Ephesians 1:13,14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+
+Adhering strictly to the Mosaic law is not needed to be justified by God if we believe in and follow Jesus:
+
+> **Galatians 3:15-18** - To give a human example, brothers: even with a man-made covenant, no one annuls it or adds to it once it has been ratified. Now the promises were made to Abraham and to his offspring. It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ. This is what I mean: the law, which came 430 years afterward, does not annul a covenant previously ratified by God, so as to make the promise void. For if the inheritance comes by the law, it no longer comes by promise; but God gave it to Abraham by a promise.
+
+
+### Purity of heart
+
+The Mosaic law is not really in the same category as the 10 commandments, I believe. The 10 commandments if obeyed in truth from the heart would result in a clean heart, I think. So it serves to describe what a pure heart looks like, and the laws we should always try to keep whether Gentile or Jew:
+
+> **I Peter 1:22** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart,
+
+> **Matthew 5:28** - But I say to you that everyone who looks at a woman with lustful intent has **already committed adultery with her in his heart**.
+
+> **Revelation of John 2:23** - and I will strike her children dead. And all the churches will know that I am **he who searches mind and heart**, and I will give to each of you as your works deserve.
+
+> **II Peter 2:14** - They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have **hearts trained in greed**. Accursed children!
+
+> **II Corinthians 5:11-12** - Therefore, knowing the fear of the Lord, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. We are not commending ourselves to you again but giving you cause to boast about us, so that you may be able to answer those who boast about outward appearance and not about what is in the heart.
+
+The Holy Spirit cleanses our hearts by faith:
+
+> **Acts 15:8-9** - And God, who knows the heart, bore witness to them, by giving them the Holy Spirit just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith.
+
+Do what Jesus says and receive eternal life - obey Jesus:
+
+> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching to which you were committed**, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
+
+
+### Being a slave to righteousness is possible without adhering to the Mosaic law, by being led by Jesus' Spirit
+
+> **1 Corinthians 1:30-31** -  He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption.  Therefore, as it is written, Let the one who boasts, boast in the Lord.  (ESV)
+
+God through Jesus is the source of our personal righteousness, and He **is** our righteousness:
+
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+
+We are set free from sin and become slaves of God (so we obey God!!) and the obedience leads to sanctification, and leads to righteousness:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? (ESV)
+
+1.  If a person is led by the Spirit then the Lord Jesus is in control of their life, which means that person obeys Jesus' commandments:
+
+    Faith is the action word. We must be followers of Jesus Christ, not putting ourselves back under the law.
+    
+    Faith receives and continues to receive the supply of the Spirit and we are led by the Spirit:
+    
+    > **Galatians 3:1-5** - O foolish Galatians! Who has bewitched you? It was before your eyes that Jesus Christ was publicly portrayed as crucified. Let me ask you only this: Did you **receive the Spirit** by works of the law or **by hearing with faith**? Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh? Did you suffer so many things in vain—if indeed it was in vain? Does he who **supplies the Spirit** to you and works miracles among you do so by works of the law, or by hearing with faith— (ESV)
+    
+    [The Law Refutes Justification by Law: Galatians 3:6a??9, Part 1 - YouTube](https://www.youtube.com/watch?v=34pBf5pZq_I)
+    
+    Faith receives and continues to receive the supply of the Spirit. So a person needs to be having faith in Jesus to be led by the Spirit.
+    
+    Sanctification is personal righteousness that is fruit that comes from being in Jesus Christ, Him being our righteousness - we're grafted into Jesus like branches on a tree and become healthier. We must and **should** stop sinning.
+
+
+### Make the tree good and the fruit good
+
+We must simultaneously make the tree good (abide in Jesus) and make the fruit good (be sanctified and glorify God and Jesus in our hearts, minds, bodies and actions).
+
+> **Matthew 12:33-37** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. You brood of vipers! How can you speak good, when you are evil? For out of the abundance of the heart the mouth speaks. The good person out of his good treasure brings forth good, and the evil person out of his evil treasure brings forth evil. I tell you, on the day of judgment people will give account for every careless word they speak, for by your words you will be justified, and by your words you will be condemned. (ESV)
+
+As we make the tree good, we make the fruit good!
+
+I still think the 10 commandments are special, and following them in truth is repenting from sin.
+
+> **Mark 10:19** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. (ESV)
+
+> **Acts 15:28-29** - For it has seemed good to the Holy Spirit and to us to lay on you no greater burden than these requirements: that you abstain from what has been sacrificed to idols, and from blood, and from what has been strangled, and from sexual immorality. If you keep yourselves from these, you will do well. Farewell.
 
 
 ### Judgement
@@ -774,7 +848,7 @@ Eternal judgement:
 
 1.  I believe I was saved and born-again by seeking Jesus and calling on the name of the Lord
 
-    **Acts 2:17-21** - And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams; even on my male servants and female servants in those days I will pour out my Spirit, and they shall prophesy. And I will show wonders in the heavens above and signs on the earth below, blood, and fire, and vapor of smoke; the sun shall be turned to darkness and the moon to blood, before the day of the Lord comes, the great and magnificent day. And it shall come to pass that everyone who calls upon the name of the Lord shall be saved.
+    > **Acts 2:17-21** - And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams; even on my male servants and female servants in those days I will pour out my Spirit, and they shall prophesy. And I will show wonders in the heavens above and signs on the earth below, blood, and fire, and vapor of smoke; the sun shall be turned to darkness and the moon to blood, before the day of the Lord comes, the great and magnificent day. And it shall come to pass that everyone who calls upon the name of the Lord shall be saved.
     
     I prayed a sinners prayer in my own room, and I had begun trying to repent from sin, but I was still stuck in it and I needed help.
     
@@ -1019,17 +1093,13 @@ Our bodies are a vessel for Jesus' holiness to shine out of. It's the vessel of 
 
 We should not deceive our brothers by lying about the matter of sanctifying our bodies:
 
-> **I Thessalonians 4:6-7** - and that no man transgress and defraud his brother in the matter because the Lord is the avenger in all these things, just as we also told you before and solemnly warned you.
-
-For God has not called us for the purpose of impurity, but in sanctification. (NASB)
+> **I Thessalonians 4:6-7** - and that no man transgress and defraud his brother in the matter because the Lord is the avenger in all these things, just as we also told you before and solemnly warned you. For God has not called us for the purpose of impurity, but in sanctification. (NASB)
 
 Jesus is the light in us, and we must let our light shine:
 
-> **Luke 8:14-16** - And as for what fell among the thorns, they are those who hear, but as they go on their way they are choked by the cares and riches and pleasures of life, and their fruit does not mature.
+> **Luke 8:14-16** - And as for what fell among the thorns, they are those who hear, but as they go on their way they are choked by the cares and riches and pleasures of life, and their fruit does not mature. As for that in the good soil, they are those who, hearing the word, hold it fast in an honest and good heart, and bear fruit with patience. , No one after lighting a lamp covers it with a jar or puts it under a bed, but puts it on a stand, so that those who enter may see the light. (ESV)
 
-As for that in the good soil, they are those who, hearing the word, hold it fast in an honest and good heart, and bear fruit with patience. No one after lighting a lamp covers it with a jar or puts it under a bed, but puts it on a stand, so that those who enter may see the light.
-
-Jesus' family actually do the will of God: those who, hearing the word, hold it fast in an honest and good heart, and bear fruit with patience:
+> **Matthew 5:15** - Nor do people light a lamp and put it under a basket, but on a stand, and it gives light to all in the house. (ESV)
 
 > **Luke 8:21** - But he answered them, My mother and my brothers are those who hear the word of God and do it.
 
@@ -2236,16 +2306,16 @@ I think that is the correct way to see the following Scripture:
 > **Ephesians 5:5-10** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them; for at one time you were darkness, but now you are light in the Lord. Walk as children of light (for the fruit of light is found in all that is good and right and true), and try to discern what is pleasing to the Lord.
 
 
-### Legitimate children are left without discipline
+### Illegitimate children are left without discipline and are not sons
 
 > **Hebrews 12:6-8** - For the Lord disciplines the one he loves, and chastises every son whom he receives. It is for discipline that you have to endure. God is treating you as sons. For what son is there whom his father does not discipline? If you are left without discipline, in which all have participated, then you are illegitimate children and not sons.
 
 
-## What we hear and how we hear
+## The measure of <ins>what we hear and take heed of</ins> and <ins>how we hear and let take root in us</ins> will be measured to us
 
-> **Mark 4:24** - And he said to them, Pay attention to what you hear: with the measure you use, it will be measured to you, and still more will be added to you.
+> **Mark 4:24** - And he said to them, Pay attention to **what** you hear: with the measure you use, it will be measured to you, and still more will be added to you.
 
-> **Luke 8:18** - So take care how you listen; for whoever has, to him more shall be given; and whoever does not have, even what he thinks he has shall be taken away from him.”
+> **Luke 8:18** - So take care **how** you listen; for whoever has, to him more shall be given; and whoever does not have, even what he thinks he has shall be taken away from him.”
 
 If you do not take care of `how` you hear and `what` you hear, then &#x2026;
 
