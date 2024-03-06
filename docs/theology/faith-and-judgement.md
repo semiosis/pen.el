@@ -1580,55 +1580,59 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 > **Psalms 31:23** - Love the LORD, all you his saints! The LORD preserves the faithful but abundantly repays the one who acts in pride. (ESV)
 
 
-### Faith has an amount
-
-I think even saving faith requires an amount and is about yielding to God.
+### Yield to God
 
 Submit to God's will:
 
-**James 4:7** - Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
+> **James 4:7** - Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
 
 Submit to Jesus' lordship:
 
-**Matthew 16:24** - Then Jesus told his disciples, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
+> **Matthew 16:24** - Then Jesus told his disciples, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
 
 Sow your own life as an investment for Jesus' sake:
 
-**Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+> **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
 
-**John 12:24-26** - Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+> **John 12:24-26** - Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
 
 Seek God:
 
-**Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
+> **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
 Accept God's plans:
 
-**Jeremiah 29:11** - For I know the plans I have for you, declares the LORD, plans for wholeness and not for evil, to give you a future and a hope. (ESV)
+> **Jeremiah 29:11** - For I know the plans I have for you, declares the LORD, plans for wholeness and not for evil, to give you a future and a hope. (ESV)
 
-**Psalms 23:3-4** - He restores my soul. He leads me in paths of righteousness for his name's sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. (ESV)
+> **Psalms 23:3-4** - He restores my soul. He leads me in paths of righteousness for his name's sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. (ESV)
 
 Desire to do the will of God, and allow God's word to teach you what that is:
 
-**Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. (ESV)
+> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. (ESV)
 
 Actually practice faith, and don't over-intellectualise God:
 
-**Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+> **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
-Yield to God
+Yield to God:
 
-**Isaiah 45:9** - Woe to him who strives with him who formed him, a pot among earthen pots! Does the clay say to him who forms it, What are you making? or Your work has no handles? (ESV)
+> **Isaiah 45:9** - Woe to him who strives with him who formed him, a pot among earthen pots! Does the clay say to him who forms it, What are you making? or Your work has no handles? (ESV)
 
-**Luke 14:33** - So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+> **Luke 14:33** - So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
-**Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+> **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+
+
+### Obey God and let Him save you
 
 Fear of God or love for Him in obedience or thankfulness is work which comes out of belief.
 But faith works, even saving faith works. Saving faith **especially** requires obedience, I think.
 Faith without work doesn't exist I think because the work of God is to believe on who He has sent - Jesus.
 
 > **Exodus 14:14-16** - The Lord will fight for you, and you have only to be silent.  The Lord said to Moses, Why do you cry to me? Tell the people of Israel to go forward.  Lift up your staff, and stretch out your hand over the sea and divide it, that the people of Israel may go through the sea on dry ground.
+
+
+### Don't underestimate Jesus' saving power
 
 With Lazarus - Jesus performed the miracle so the people watching could believe and have faith.
 Jesus wept before he raise Lazarus from the dead, and many other people believed in Jesus and were saved, I assume.
@@ -1647,7 +1651,12 @@ And Jesus is able to save a person out of Jesus' own will, as he resurrected Laz
 
 > **John 11:43** - When He had said these things, He cried out with a loud voice, “Lazarus, come forth.”
 
-But faith is like Peter stepping out on the water. Faith works. But I think sometimes to create faith someone just has to actually believe Jesus because Jesus performs the miracle / the work. The account of Jesus itself when it's read, and Jesus' words, are enough to inspire faith. Jesus calls persistent endurance a work. Therefore, faith comes by hearing the word of Christ.
+
+### Just believe/obey Jesus to receive more faith and revelation and salvation
+
+Faith is like Peter stepping out on the water. Faith works. But I think sometimes to create faith someone just has to actually believe Jesus because Jesus performs the miracle / the work.
+
+The account of Jesus itself when it's read, and Jesus' words, are enough to inspire faith. Jesus calls persistent endurance a work. Therefore, faith comes by hearing the word of Christ.
 
 The LORD did something similar for the Israelites when He parted the Red Sea.
 The Israelites obeyed God, and their obedience led them to sure belief.
@@ -1785,48 +1794,66 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
     4   acknowledgement:--(ac-)knowledge(-ing, - ment).
     5   see GREEK for 1921
 
-Work/Love:
+1.  Work/Love
 
--   **II John 1:6** - And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
--   **John 15:12** - This is my commandment, that you love one another as I have loved you.
-    -   We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others.
--   **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
--   **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
--   **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
--   **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
--   **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
--   **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
--   **John 12:49-50** For I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
-    -   Jesus' commandments are consistent with the rest of God's commandments.
--   **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
--   **John 14:15** If you love me, you will keep my commandments.
--   **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
--   **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
--   **John 15:12** This is my commandment, that you love one another as I have loved you.
+    > **II John 1:6** - And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
+    
+    We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
+    
+    > **John 15:12** - This is my commandment, that you love one another as I have loved you.
+    
+    > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
+    
+    > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
+    
+    > **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
+    
+    > **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
+    
+    > **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
+    
+    > **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
+    
+    Jesus' commandments are consistent with the rest of God's commandments:
+    
+    > **John 12:49-50** For I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+    
+    > **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
+    
+    > **John 14:15** If you love me, you will keep my commandments.
+    
+    > **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+    
+    > **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+    
+    > **John 15:12** This is my commandment, that you love one another as I have loved you.
 
-Fear-of-God:
+2.  Fear-of-God
 
-> **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
+    > **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
+    
+    AMEN!! But this doesn't mean the other elements of working faith can't play a part.
+    
+    Without love, faith is dead:
+    
+    > **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
+    
+    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+    
+    `pisteuo` is obedient faith as it is the verb for faith (pistis).
+    
+    > **James 2:22-26** - You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
+    
+    Without faith, work is dead. Whatever actions we make outside of faith is sin:
+    
+    > **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
+    
+    But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
+    
+    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
 
-AMEN!! But this doesn't mean the other elements of working faith can't play a part.
 
-Without love, faith is dead:
-
-> **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
-
-> **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
-
-`pisteuo` is obedient faith as it is the verb for faith (pistis).
-
-> **James 2:22-26** - You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
-
-Without faith, work is dead. Whatever actions we make outside of faith is sin:
-
-> **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
-
-But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
-
-> **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+### Faith vector illustration
 
 Deeds, love, faith, service and perseverance are not mutually exclusive. They're all important to God and overlap:
 
