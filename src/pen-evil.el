@@ -644,4 +644,13 @@ The following special registers are supported.
 (evil-ex-define-cmd "Ead" 'evil-ead)
 (evil-ex-define-cmd "ead" 'evil-ead)
 
+(defun pen-holy-mark ()
+  (interactive)
+  (cond
+   ((>= (prefix-numeric-value current-prefix-arg) 16) (call-interactively 'evil-show-marks) )
+   ((>= (prefix-numeric-value current-prefix-arg) 4) (call-interactively 'evil-goto-mark-line))
+   (t (call-interactively 'evil-set-marker))))
+
+(define-key global-map (kbd "M-M") #'pen-holy-mark)
+
 (provide 'pen-evil)
