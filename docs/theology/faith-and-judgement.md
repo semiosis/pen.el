@@ -97,7 +97,25 @@ To anyone who receives Jesus, even those who believe on His name, Jesus has give
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
-It's those that believe in him (trust Him, receive Him, have an obedient heart towards Him) that receive forgiveness of sins through his name:
+
+### <ins>Faith</ins> in Jesus Christ's name to be saved
+
+It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved. We expect to receive salvation:
+
+> **Acts 3:2-9** - And a man lame from birth was being carried, whom they laid daily at the gate of the temple that is called the Beautiful Gate to ask alms of those entering the temple. Seeing Peter and John about to go into the temple, he asked to receive alms. And Peter directed his gaze at him, as did John, and said, Look at us. And he fixed his attention on them, <ins>expecting to receive something from them.</ins> But Peter said, I have no silver and gold, but what I do have I give to you. <ins>In the name of Jesus Christ of Nazareth, rise up and walk!</ins> And <ins>he took him by the right hand and raised him up, and immediately his feet and ankles were made strong. And leaping up he stood and began to walk</ins>, and entered the temple with them, walking and leaping and <ins>praising God.</ins> And all the people saw him walking and praising God,
+
+> **Acts 3:16** - And his name—by faith in his name—has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.
+
+**Acts 4:7-10** - And when they had set them in the midst, they inquired, By what power or by what name did you do this? Then Peter, filled with the Holy Spirit, said to them, Rulers of the people and elders, if we are being examined today concerning a good deed done to a crippled man, by what means this man has been healed, let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
+
+> **Acts 4:10** - let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
+
+> **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
+
+
+### It's those who trust, receive, have an obedient heart towards Him that receive forgiveness of sins through his name
+
+It's those that believe in him (trust Him, receive Him, <ins>expect to receive Him</ins>, have an obedient heart towards Him) that receive forgiveness of sins through his name:
 
 > **Acts 10:41-44** - not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name. While Peter was still saying these things, the Holy Spirit fell on all who heard the word. (ESV)
 
@@ -3411,6 +3429,14 @@ God's angels are servants:
 The world cannot hate people who are disobedient to God:
 
 > **John 7:5-7** - For not even his brothers believed in him. Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil.
+
+But the servant of Christ is to be a light to the world:
+
+The world (the remaining people, who have not repented) may know that Father God has sent Jesus and loved Jesus' disciples:
+
+> **John 17:23** - I in them and you in me, that they may become perfectly one, <ins>so that the world may know that you sent me and loved them even as you loved me.</ins>
+
+> **Ephesians 2:2** - in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience—
 
 Servants of Jesus who are servants of God encounter resistance from the world:
 
@@ -6780,6 +6806,8 @@ God can raise up children from anyone who has repentance and may grant being a c
 
 > **Luke 3:3-8** - And he went into all the region around the Jordan, proclaiming a baptism of repentance for the forgiveness of sins. As it is written in the book of the words of Isaiah the prophet, The voice of one crying in the wilderness: Prepare the way of the Lord, make his paths straight. Every valley shall be filled, and every mountain and hill shall be made low, and the crooked shall become straight, and the rough places shall become level ways, and all flesh shall see the salvation of God. He said therefore to the crowds that came out to be baptized by him, You brood of vipers! Who warned you to flee from the wrath to come? <ins>Bear fruits in keeping with repentance</ins>. And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
+> **Galatians 3:13-14** - Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
+
 John the Baptist even taught people to love one another:
 
 > **Luke 3:11-15** - And he answered them, Whoever has two tunics is to share with him who has none, and whoever has food is to do likewise. Tax collectors also came to be baptized and said to him, Teacher, what shall we do? And he said to them, Collect no more than you are authorized to do. Soldiers also asked him, And we, what shall we do? And he said to them, Do not extort money from anyone by threats or by false accusation, and be content with your wages. As the people were in expectation, and all were questioning in their hearts concerning John, whether he might be the Christ,
@@ -8636,7 +8664,12 @@ We must get to know God through knowing Jesus:
 
 > **John 14:7-9** - <ins>If you had known me, you would have known my Father also. From now on you do know him and have seen him.</ins> Philip said to him, Lord, show us the Father, and it is enough for us. Jesus said to him, Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father?
 
-Get to know Jesus by following His commandments and being obedient and willing to do God's will.
+A relationship is formed between the obedient person and God:
+
+-   Get to know Jesus by following His commandments and being obedient and willing to do God's will.
+-   But as we do God's will, God comes to know us (it's simultaneous):
+
+**Galatians 4:8-9**- Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more?
 
 
 ## The life that Father God gave us is in His Son, Jesus Christ
@@ -8855,6 +8888,110 @@ The Father is with the Son, the Father is in the Son, and the Son in the Father:
 
 The Father is not specifically the Son (Jesus Christ) but Jesus is the Word, and the Word is God.
 And Jesus came in the Father's name. God was revealed in Jesus Christ for us.
+
+
+## God adopts children, fellow heirs with Christ
+
+The sons of God on earth who are being adopted by God:
+
+-   are led by the Spirit
+    -   obeying Jesus Christ
+-   are sons of Abraham, with the faith of Abraham
+    -   demonstrating the faith that Abraham had
+-   have had faith in Jesus Christ's name
+-   suffer with Christ in order to be glorified with Him
+-   await their adoption as sons when our bodies are redeemed
+-   have the creation eagerly longing for their revealing
+-   have heard God and had faith
+
+> **Romans 8:14-23** - For <ins>all who are led by the Spirit of God are sons of God.</ins> For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, <ins>provided we suffer with him in order that we may also be glorified with him.</ins> For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us. For the creation waits with eager longing for the revealing of the sons of God. For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. For we know that the whole creation has been groaning together in the pains of childbirth until now. And not only the creation, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as <ins>we wait eagerly for adoption as sons, the redemption of our bodies.</ins> (ESV)
+
+To those who had faith in His name:
+
+> **Acts 3:16** - And his name—by faith in his name—has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.
+
+John the Baptist came as a witness to the Light that is Jesus Christ, so that through John the Baptist's testimony, all might come to faith:
+
+> **John 1:6-7** - There came a man sent from God, whose name was John. He came as a witness (G3141 marturia), to testify (G3140 martureo) about the Light, so that all might believe (G4100 pisteuo) through him. (NASB)
+
+Jesus Christ is <ins>received</ins> through <ins>faith</ins>:
+
+> **John 1:12** - But <ins>to all who did receive (G2983 lambano) him, who believed (G4100 pisteuo) in his name,</ins> he gave the right to become children of God, (ESV)
+
+     1  :  2983  lambano  lam-ban'-o
+     2  
+     3   a prolonged form of a primary verb, which is use only as an alternate
+     4   in certain tenses; to take (in very many applications, literally and
+     5   figuratively (properly objective or active, to get hold of; whereas
+     6   1209 is rather subjective or passive, to have offered to one; while
+     7   138 is more violent, to seize or remove)):--accept, + be amazed,
+     8   assay, attain, bring, X when I call, catch, come on (X unto), +
+     9   forget, have, hold, obtain, receive (X after), take (away, up).
+    10   see GREEK for 1209
+    11   see GREEK for 138
+
+Receiving is a mixture of believing, obeying, trusting, believing to receive - as Abraham's faith was. The faith to receive Jesus, getting to know Him I think is a span of time (it could be instantaneous to a lengthy period of time), I presume, as a person continues to trust Him:
+
+> **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+> **Galatians 3:7** - Know then that it is those of faith who are the sons of Abraham.
+
+> **Galatians 3:9** - So then, those who are of faith are blessed along with Abraham, the man of faith. (ESV)
+
+> **Romans 8:19** - For the creation waits with eager longing for the revealing of the sons of God. (ESV)
+
+> **Galatians 3:3-6** - Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh? <ins>Did you suffer so many things</ins> in vain—if indeed it was in vain? Does he who supplies the Spirit to you and works miracles among you do so by works of the law, or by <ins>hearing with faith—</ins> just as Abraham believed God, and it was counted to him as righteousness?
+
+
+## Inheriting the promises made to Abraham and to Christ
+
+The promises were made to Abraham and to Christ:
+
+> **Galatians 3:16** - Now the promises were made to Abraham and to his offspring. It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ.
+
+But through the faith of Abraham in Jesus Christ, we inherit the promises because we have faith in Jesus Christ:
+
+> **Galatians 3:22** - But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe.
+
+Christ is formed in us, after all:
+
+> **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth until Christ is formed in you!
+
+In Christ Jesus, through living a life of faith, we are sons:
+
+**Galatians 3:25-26** - But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith.
+
+> **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
+
+We put on Christ when we are baptized into Christ:
+
+> **Galatians 3:27** - For as many of you as were baptized into Christ have put on Christ.
+
+If you are Christ's (in Christ) then you are Abraham's offspring:
+
+> **Galatians 3:29** - And if you are Christ's, then you are Abraham's offspring, heirs according to promise.
+
+> **Galatians 4:4-9** - But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons.  And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father!  So you are no longer a slave, but a son, and if a son, then an heir through God.  Formerly, when you did not know God, you were enslaved to those that by nature are not gods.  But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more?
+
+The ones who love God, even demonstrated by repenting from sin and away from the course of this world, God gives to Jesus:
+
+> **John 17:6** - I have manifested your name to <ins>the people whom you gave me out of the world.</ins> Yours they were, and you gave them to me, and they have kept your word.
+
+> **John 17:9** - I am praying for them. I am <ins>not praying for the world but for those whom you have given me, for they are yours.</ins>
+
+With the light of truth, people may go from darkness to light:
+
+> **John 12:36** - While you have the light, believe in the light, that you may become sons of light. When Jesus had said these things, he departed and hid himself from them.
+
+> **Acts 26:18** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.
+
+> **\*Galatians 3:13-14** - Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
+
+The world (the remaining people, who have not repented) may know that Father God has sent Jesus and loved Jesus' disciples:
+
+> **John 17:23** - I in them and you in me, that they may become perfectly one, <ins>so that the world may know that you sent me and loved them even as you loved me.</ins>
+
+> **Ephesians 2:2** - in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience—
 
 
 # Sun's light failing as the curtain was torn and Jesus died
