@@ -3304,28 +3304,7 @@ Those who fear God inherit the Kingdom.
 
 > **Matthew 5:3** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Some will be inherit the kingdom of Heaven</td>
-<td class="org-left">Those who are poor in spirit</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Those who are poor in spirit:** <ins>Promise:</ins> They will inherit the kingdom of Heaven
 
 > **Isaiah 66:2** - All these things my hand has made, and so all these things came to be, declares the LORD. But this is the one to whom I will look: he who is humble and contrite in spirit and trembles at my word. (ESV)
 
@@ -5285,7 +5264,7 @@ Jesus' servants are given mercy by Jesus and they also show mercy to others.
 
 ## Marriage should not be forbidden
 
-> **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, **through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth.** For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
+> **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the <ins>insincerity of liars whose consciences are seared, who forbid marriage</ins> and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For <ins>everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer.</ins> If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
 
 Marriage itself is good.
 
@@ -7194,128 +7173,23 @@ AMEN!! God is good for justifying people who are poor of spirit, and have fear o
 
 > **Matthew 5:3** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Those who are poor in spirit</td>
-<td class="org-left">Some will be inherit the kingdom of Heaven</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Those who are poor in spirit:** <ins>Promise:</ins> They will inherit the kingdom of Heaven
 
 > **Matthew 5:4** - Blessed are those who mourn, for they shall be comforted. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Those that mourn</td>
-<td class="org-left">Some will be comforted</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Those who mourn:** <ins>Promise:</ins> They will be comforted
 
 > **Matthew 5:5** - Blessed are the meek, for they shall inherit the earth. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If you are gentle, humble and/or meek</td>
-<td class="org-left">You will inherit the Earth.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> For the gentle, humble and/or meek:** <ins>Promise:</ins> They will be inherit the Earth
 
 > **Matthew 5:10** - Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If you have been persecuted for the sake of righteousness.</td>
-<td class="org-left">The Kingdom of Heaven will be yours.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> It's those who have been persecuted for the sake of righteousness:** <ins>Promise:</ins> The Kingdom of Heaven will be theirs.
 
 > **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If people revile and persecute you for Jesus' sake and your faith in Him.</td>
-<td class="org-left">The Son of Man (Jesus) will reward people in Heaven and the reward will be great.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
 
 > **Matthew 7:7** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. (ESV)
 
@@ -7336,19 +7210,19 @@ AMEN!! God is good for justifying people who are poor of spirit, and have fear o
 
 <tbody>
 <tr>
-<td class="org-left">If you ask</td>
+<td class="org-left"><ins>If you ask</ins></td>
 <td class="org-left">It will be given you</td>
 </tr>
 
 
 <tr>
-<td class="org-left">If you seek</td>
+<td class="org-left"><ins>If you seek</ins></td>
 <td class="org-left">You will find</td>
 </tr>
 
 
 <tr>
-<td class="org-left">If you knock</td>
+<td class="org-left"><ins>If you knock</ins></td>
 <td class="org-left">It will be opened to you</td>
 </tr>
 </tbody>
@@ -7356,657 +7230,111 @@ AMEN!! God is good for justifying people who are poor of spirit, and have fear o
 
 > **Matthew 16:27** - For the Son of Man is going to come with his angels in the glory of his Father, and then he will repay each person according to what he has done. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">You will be rewarded according to your own deeds in this life.</td>
-<td class="org-left">The Son of Man (Jesus) is going to come in His glory and will reward people.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
 
 > **Matthew 24:14** - And this gospel of the kingdom will be proclaimed throughout the whole world as a testimony to all nations, and then the end will come. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">When the Gospel has been preached to all nations in the whole world.</td>
-<td class="org-left">The end (eschaton) will come.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> When the Gospel has been preached to all nations in the whole world.:** <ins>Promise:</ins> The end (eschaton) will come.
 
 > **Matthew 24:45-47** - Who then is the faithful and wise servant, whom his master has set over his household, to give them their food at the proper time? Blessed is that servant whom his master will find so doing when he comes. Truly, I say to you, he will set him over all his possessions. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If that person is faithful and wise in charge of the "little things".</td>
-<td class="org-left">God will make a person ruler over all that is His (His possessions).</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If that person is faithful and wise in charge of the "little things":** <ins>Promise:</ins> God will make a person ruler over all that is His (His possessions).
 
 > **Mark 9:41** - For truly, I say to you, whoever gives you a cup of water to drink because you belong to Christ will by no means lose his reward. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Giving a cup of water (being charitable) in Christ's name for the exact reason that we belong to Christ.</td>
-<td class="org-left">A person will not lose their reward.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Giving a cup of water (being charitable) in Christ's name for the exact reason that we belong to Christ.:** <ins>Promise:</ins> A person will not lose their reward.
 
 > **John 3:16** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">To whosoever will believe that God sent His only begotten son to die in our place as a sin offering.</td>
-<td class="org-left">You will have eternal life</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> To whosoever will have faith in the true God by being faithful to His Son:** <ins>Promise:</ins> You will have eternal life
 
 Stress: Trust in God.
 
 > **Romans 8:31** - What then shall we say to these things? If God is for us, who can be against us? (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">When God is for you.</td>
-<td class="org-left">No one can be against you.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> When God is for you.:** <ins>Promise:</ins> No one can be against you.
 
 > **Philippians 3:21** - who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
 
 > **Philippians 4:1** - Therefore, my brothers, whom I love and long for, my joy and crown, stand firm thus in the Lord, my beloved. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">We must stand firm in the Lord (4:1)</td>
-<td class="org-left">Jesus will transform our current perishing bodies in exchange for a body that does not perish like His glorious body (Resurrection body) (3:21).</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we stand firm in the Lord:** <ins>Promise:</ins> Jesus will transform our current perishing bodies in exchange for a body that does not perish like His glorious body (Resurrection body)
 
 > **Philippians 4:13** - I can do all things through him who strengthens me. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If Christ strengthens us.</td>
-<td class="org-left">We can do all things.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If Christ strengthens us:** <ins>Promise:</ins> We can do all things.
 
 > **Colossians 3:1-4** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+-   **<ins>Condition:</ins> If we too are risen or raised up in Christ, and seeking the things above:** <ins>Promise:</ins> When Christ appears at the second coming, we will appear with Him in glory.
 
+> **1 Thessalonians 4:14-17** - For <ins>since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.</ins> For this we declare to you by a word from the Lord, that we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep. For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord. (ESV)
 
-<colgroup>
-<col  class="org-left" />
+-   **<ins>Condition:</ins> If we have faith that Jesus died and rose again.:** <ins>Promise:</ins> The dead in Christ will rise first, then we who are still alive will be called up together with them in the clouds to meet the Lord in the air. We will then be with the Lord forever after that.
 
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
+> **II Timothy 4:6-9** - For I am already being poured out as a drink offering, and the time of my departure has come. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing. Do your best to come to me soon.
 
-<tbody>
-<tr>
-<td class="org-left">If we too are risen or raised up in Christ, and seeking the things above.</td>
-<td class="org-left">When Christ appears at the second coming, we will appear with Him in glory.</td>
-</tr>
-</tbody>
-</table>
-
-> **1 Thessalonians 4:14-17** - For since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep. For this we declare to you by a word from the Lord, that we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep. For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord. (ESV)
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">We need to believe that Jesus died and rose again.</td>
-<td class="org-left">The dead in Christ will rise first, then we who are still alive will be called up together with them in the clouds to meet the Lord in the air. We will then be with the Lord forever after that.</td>
-</tr>
-</tbody>
-</table>
-
-> **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Those awarded will have loved His appearing and faithfully preach the Gospel and the Word of God in season and out of season.</td>
-<td class="org-left">There is a crown of righteousness laid up for us by God which I will be awarded with on my day of glory.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Those awarded will have loved His appearing and faithfully preach the Gospel and the Word of God in season and out of season.:** <ins>Promise:</ins> There is a crown of righteousness laid up for us by God which I will be awarded with on my day of glory.
 
 > **Hebrews 12:28** - Therefore let us be grateful for receiving a kingdom that cannot be shaken, and thus let us offer to God acceptable worship, with reverence and awe, (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If we serve Him with reverence and fear.</td>
-<td class="org-left">We will serve God acceptably.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we serve Him with reverence and fear.:** <ins>Promise:</ins> We will serve God acceptably.
 
 > **James 1:5-6** - If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him. But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Wisdom will be given.</td>
-<td class="org-left">If you ask of God in faith.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Wisdom will be given.:** <ins>Promise:</ins> If you ask of God in faith.
 
 > **James 1:12** - Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If we endure trials by temptation and love the Lord.</td>
-<td class="org-left">We will receive the crown of life</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we endure trials by temptation and love the Lord.:** <ins>Promise:</ins> We will receive the crown of life
 
 > **1 Peter 5:1-4** - So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the glory that is going to be revealed: shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly; not domineering over those in your charge, but being examples to the flock. And when the chief Shepherd appears, you will receive the unfading crown of glory. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If they feed the flock God has given them, by taking the oversight of the flock willingly and not for money (blood money). Thereby setting an example for said flock.</td>
-<td class="org-left">Elders will receive a crown of glory that will not fade.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If they feed the flock God has given them, by taking the oversight of the flock willingly and not for money (blood money). Thereby setting an example for said flock.:** <ins>Promise:</ins> Elders will receive a crown of glory that will not fade.
 
 > **1 John 3:2** - Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If we are children of God</td>
-<td class="org-left">When Jesus appears we will be like Him</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we are children of God:** <ins>Promise:</ins> When Jesus appears we will be like Him
 
 > **1 John 3:9** - No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If/because we have been born of God</td>
-<td class="org-left">A Christian cannot habitually sin without feeling horrible and wishing to repentant of it.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If/because we have been born of God:** <ins>Promise:</ins> A Christian cannot habitually sin without feeling horrible and wishing to repentant of it.
 
 > **2 John 1:7-8** - For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist. Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If we acknowledge that Jesus has indeed come in the flesh (incarnate).</td>
-<td class="org-left">We will receive our full reward from God.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we acknowledge that Jesus has indeed come in the flesh (incarnate).:** <ins>Promise:</ins> We will receive our full reward from God.
 
 > **Revelation 2:7** - He who has an ear, let him hear what the Spirit says to the churches. To the one who conquers I will grant to eat of the tree of life, which is in the paradise of God. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If we persevere over evil and endure for Christ's namesake and overcome (persecution and trials)</td>
-<td class="org-left">We will be allowed to eat from the Tree of Life which is in the paradise of God</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If we persevere over evil and endure for Christ's namesake and overcome (persecution and trials):** <ins>Promise:</ins> We will be allowed to eat from the Tree of Life which is in the paradise of God
 
 > **Revelation 2:10** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested, and for ten days you will have tribulation. Be faithful unto death, and I will give you the crown of life. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Do not fear and are faithful to the point of death.</td>
-<td class="org-left">Jesus Himself will give you a crown of life.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Do not fear and are faithful to the point of death.:** <ins>Promise:</ins> Jesus Himself will give you a crown of life.
 
 > **Revelation 2:11** - He who has an ear, let him hear what the Spirit says to the churches. The one who conquers will not be hurt by the second death. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If they overcome persecution and trials</td>
-<td class="org-left">People will not be hurt by the second death which is damnation in the Lake of Fire</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If they overcome persecution and trials:** <ins>Promise:</ins> People will not be hurt by the second death which is damnation in the Lake of Fire
 
 > **Revelation 2:17** - He who has an ear, let him hear what the Spirit says to the churches. To the one who conquers I will give some of the hidden manna, and I will give him a white stone, with a new name written on the stone that no one knows except the one who receives it. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">If people overcome persecution and trials</td>
-<td class="org-left">Jesus will allow people to eat of the hidden Manna and will give a white stone with a new name written on it that only the one that receives it will know.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> If people overcome persecution and trials:** <ins>Promise:</ins> Jesus will allow people to eat of the hidden Manna and will give a white stone with a new name written on it that only the one that receives it will know.
 
 > **Revelation 2:23** - and I will strike her children dead. And all the churches will know that I am he who searches mind and heart, and I will give to each of you as your works deserve. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">According to their works.</td>
-<td class="org-left">Jesus will give to every one.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> According to their works.:** <ins>Promise:</ins> Jesus will give to every one.
 
 > **Revelation 2:26-28** - The one who conquers and who keeps my works until the end, to him I will give authority over the nations, and he will rule them with a rod of iron, as when earthen pots are broken in pieces, even as I myself have received authority from my Father. And I will give him the morning star. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">To those that overcome and keep Jesus' works until the bitter end</td>
-<td class="org-left">Jesus will give power over the nations and will give the morning star</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> To those that overcome and keep Jesus' works until the bitter end:** <ins>Promise:</ins> Jesus will give power over the nations and will give the morning star
 
 > **Revelation 3:21** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">To those that overcome persecution and trials.</td>
-<td class="org-left">Jesus will allow people to sit with Him on His throne</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> To those that overcome persecution and trials.:** <ins>Promise:</ins> Jesus will allow people to sit with Him on His throne
 
 > **Revelation 20:4** - Then I saw thrones, and seated on them were those to whom the authority to judge was committed. Also I saw the souls of those who had been beheaded for the testimony of Jesus and for the word of God, and who had not worshiped the beast or its image and had not received its mark on their foreheads or their hands. They came to life and reigned with Christ for a thousand years. (ESV)
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Condition</th>
-<th scope="col" class="org-left">Promise</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Those that did not worship the beast, nor his image, nor received his mark (666)</td>
-<td class="org-left">Some will live and reign with Christ for 1000 years.</td>
-</tr>
-</tbody>
-</table>
+-   **<ins>Condition:</ins> Those that did not worship the beast, nor his image, nor received his mark (666):** <ins>Promise:</ins> Some will live and reign with Christ for 1000 years.
 
 
 ## Body without spirit is dead. But I think the spirit without the body is still alive
@@ -9105,26 +8433,32 @@ Jesus made the Way - He **is** the Way:
 
 ## Seeking God
 
--   Blessed are those who like being around Jesus and trust Him:
-    -   **Luke 7:23** - And blessed is the one who is not offended by me.
+Blessed are those who like being around Jesus and trust Him:
 
--   Blessed are those who have believed before having come to see and know for certain:
-    -   **John 20:29** - Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed.􇩙
+> **Luke 7:23** - And blessed is the one who is not offended by me.
 
--   Blessed are those who ask and seek for a blessing:
-    -   **Matthew 7:7-8** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
+Blessed are those who have believed before having come to see and know for certain:
+
+> **John 20:29** - Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed.􇩙
+
+Blessed are those who ask and seek for a blessing:
+
+> **Matthew 7:7-8** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
 
 
 ## Run the race
 
--   **Hebrews 12:1** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us,
+> **Hebrews 12:1** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us,
 
-= **I Corinthians 9:24** - Do you not know that in a race all the runners compete, but only one receives the prize? So run that you may obtain it.
+> **I Corinthians 9:24** - Do you not know that in a race all the runners compete, but only one receives the prize? So run that you may obtain it.
 
--   **Luke 13:24** - Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able.
--   **Galatians 5:7** - You were running well. Who hindered you from obeying the truth? (ESV)
--   **Philippians 3:13-14** - Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. (ESV)
--   **II Timothy 4:6-9** - For I am already being poured out as a drink offering, and the time of my departure has come. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing. Do your best to come to me soon.
+> **Luke 13:24** - Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able.
+
+> **Galatians 5:7** - You were running well. Who hindered you from obeying the truth? (ESV)
+
+> **Philippians 3:13-14** - Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. (ESV)
+
+> **II Timothy 4:6-9** - For I am already being poured out as a drink offering, and the time of my departure has come. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing. Do your best to come to me soon.
 
 
 ## God has planned in advance our salvation
