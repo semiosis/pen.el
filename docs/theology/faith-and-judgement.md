@@ -97,6 +97,10 @@ To anyone who receives Jesus, even those who believe on His name, Jesus has give
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
+Yes, I believe that Jesus can save a person who believes in His name. But He is the judge.
+
+> **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
+
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
 
@@ -106,14 +110,28 @@ It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** i
 
 > **Acts 3:16** - And his name—by faith in his name—has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.
 
-**Acts 4:7-10** - And when they had set them in the midst, they inquired, By what power or by what name did you do this? Then Peter, filled with the Holy Spirit, said to them, Rulers of the people and elders, if we are being examined today concerning a good deed done to a crippled man, by what means this man has been healed, let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
+> **Acts 4:7-10** - And when they had set them in the midst, they inquired, By what power or by what name did you do this? Then Peter, filled with the Holy Spirit, said to them, Rulers of the people and elders, if we are being examined today concerning a good deed done to a crippled man, by what means this man has been healed, let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
 
 > **Acts 4:10** - let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
 
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
 
-### It's those who trust, receive, have an obedient heart towards Him that receive forgiveness of sins through his name
+### It's those who trust, receive, have an obedient/repentant heart towards Him, and anyone who He wills, that receive forgiveness of sins through his name
+
+An obedient heart looks like:
+
+-   <ins>wanting to do God's will</ins> (even if it just means <ins>wanting to turn from sin</ins>; because God makes the new heart to enable the person to obey)
+-   <ins>wanting to follow Jesus</ins>
+-   <ins>accepting Jesus Christ as one's Lord</ins>
+
+God provides the new heart:
+
+> **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
+
+The tax collector here has an obedient heart (yielding to Jesus), but the Pharisee in the story has a self-righteous heart:
+
+> **Luke 18:9-14** - He also told this parable to some who trusted in themselves that they were righteous, and treated others with contempt: Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. <ins>But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other.</ins> For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.
 
 It's those that believe in him (trust Him, receive Him, <ins>expect to receive Him</ins>, have an obedient heart towards Him) that receive forgiveness of sins through his name:
 
@@ -246,14 +264,27 @@ The Way is Jesus Christ - <ins>believing in and becoming obedient to</ins> Jesus
 It's being begotten as a servant of God, a disciple of Jesus.
 
 
-### Obedience
+### Obedience to Jesus has everything to do with receiving Him, and receiving Salvation
 
-> **Ezekiel 33:31** - And they come to you as people come, and they sit before you as my people, and <ins>they hear what you say but they will not do it</ins>; for with lustful talk in their mouths they act; their heart is set on their gain. (ESV)
+> **Ezekiel 33:31** - And they come to you as people come, and they sit before you as my people, and <ins>they hear what you say but they will not do it</ins>; for with lustful talk in their mouths they act; their heart is set on their gain. (ESV)w
+
+Jesus' sheep follow Jesus. Jesus knows them:
+
+> **John 10:25-28** - Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me, but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. But you do not believe (G4100 **pisteuo**) because you are not of My sheep. My sheep hear My voice, and I know them, and they follow (G190 akoloutheo) Me; and I give eternal life to them, and they will never perish; and no one will snatch them out of My hand. (NASB)
+
+    1  :  190  akoloutheo  ak-ol-oo-theh'-o
+    2  
+    3   from 1 (as a particle of union) and keleuthos (a road); properly, to
+    4   be in the same way with, i.e. to accompany (specially, as a
+    5   disciple):--follow, reach.
+    6   see GREEK for 1
 
 
 ### The way is easy that leads to destruction
 
 > **Matthew 7:13** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many.
+
+I'm not the judge. But Jesus's words which He left us will be the judge.
 
 
 ### Narrow gate
@@ -262,14 +293,262 @@ It's being begotten as a servant of God, a disciple of Jesus.
 
 > **Hebrews 4:11** - Let us therefore strive to enter that rest, so that no one may fall by the same sort of disobedience. (ESV)
 
-> **I Corinthians 9:24-27** - Do you not know that in a race all the runners compete, but only one receives the prize? So run that you may obtain it. Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable. So I do not run aimlessly; I do not box as one beating the air. But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. (ESV)
+> **I Corinthians 9:24-27** - Do you not know that in a race all the runners compete, but only one receives the prize? So <ins>run that you may obtain it.</ins> Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable. So I do not run aimlessly; I do not box as one beating the air. But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. (ESV)
 
 > **Philippians 2:12-13** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure.</ins> (ESV)
 
+Asking Jesus to save me:
 
-### Submit to God's righteousness
+I can only say that salvation was a total gift for me, an unrighteous sinner. But I'm still working it out.
+
+
+### The narrow gate vitally requires submitting to God's righteousness. We need God's forgiveness and His justification that comes through faith
 
 > **Romans 10:3** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. (ESV)
+
+Like the following example of the tax collector, we must submit to God's righteousness:
+
+> **Luke 18:9-14** - He also told this parable to some who trusted in themselves that they were righteous, and treated others with contempt: Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. <ins>But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other.</ins> For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.
+
+Jesus is the Lamb of God. We must accept God's forgiveness through faith in Jesus:
+
+> **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, <ins>the Lamb of God, who takes away the sin of the world!</ins>
+
+God's righteousness is received by faith - through obedience to the gospel:
+
+> -   **Romans 3:25** -  whom <ins>God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness,</ins> because in his divine forbearance he had passed over former sins.  (ESV)
+
+We must receive atonement for sin through faith.
+
+The tax collector in the story above has an obedient and believing heart. The tax collector has faith. It's not our own righteousness which is sufficient, but Jesus Christ's righteousness imputed onto us when we are **in** Him. We must have faith in Jesus.
+
+
+### We have to receive the Kingdom like a child. Don't resist Jesus or His teachings
+
+I accept that I need Jesus to have mercy on me. Because my own righteousness isn't good enough. I want to obey Jesus for the rest of my life, and live for Him, and I trust Him because I believe His gospel. I know that the Holy Spirit goes to those who obey Him.
+
+> **Luke 18:15-17** - Now they were bringing even infants to him that he might touch them. And when the disciples saw it, they rebuked them. But Jesus called them to him, saying, Let the children come to me, and do not hinder them, for to such belongs the kingdom of God. Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it.
+
+And I'm still trusting and having faith in Jesus Christ even up until now:
+
+> **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
+
+> **Acts 5:32** - And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him.
+
+
+### We have to believe in and obey Jesus. We all fall short but we still must have faith in Jesus
+
+He **is** the Light, and <ins>He wants to give us the light of life</ins> but we have to allow Him to lead us:
+
+> **John 8:12** - Again Jesus spoke to them, saying, I am <ins>the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.</ins> (ESV)
+
+We have to obey Jesus and take heed to all that He has said. Those who don't take heed to His words walk in darkness:
+
+> **John 3:19** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil.
+
+Jesus is God's Son.
+Jesus is the Lamb of God.
+
+We must receive the redemption that is **in** Christ Jesus <ins>through faith</ins>:
+
+> **Romans 3:22-25** - the righteousness of God through faith <ins>(G4102 **pistis**) in Jesus Christ</ins> for <ins>all who believe (G4100 **pisteuo**).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
+
+All of these I believe belong under the umbrella of faith, not works:
+
+-   Taking communion is not 'dead works'. It's obedience.
+-   Getting baptised is not 'dead works'. It's obedience.
+-   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
+
+God will be the judge of who has had faith in Jesus, and who has **actually** obeyed Him, and **actually** made Him their Lord and Saviour.
+
+> **John 12:48** - <ins>The one who rejects me and does not receive my words has a judge</ins>; the <ins>word that I have spoken will judge him</ins> on the last day.
+
+> **Hebrews 10:10-17** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. And every priest stands daily at his service, offering repeatedly the same sacrifices, which can never take away sins. But when <ins>Christ had offered for all time a single sacrifice for sins,</ins> he sat down at the right hand of God, waiting from that time until his enemies should be made a footstool for his feet. For by a single offering he has perfected for all time those who are being sanctified. And the Holy Spirit also bears witness to us; for after saying, This is the covenant that I will make with them after those days, declares the Lord: I will put my laws on their hearts, and write them on their minds, then he adds, I will remember their sins and their lawless deeds no more.
+
+> **Hebrews 10:26** - For if we go on sinning willfully after receiving the knowledge of the truth, there no longer remains a sacrifice for sins,
+
+
+### All judgement has been given to Jesus
+
+We must love Jesus and follow Him. Jesus is the judge.
+Our obedience to Jesus matters. Because the righteousness of God is received through faith.
+We are implored to strive to follow Jesus to our best ability:
+
+> **John 5:17-29** - But Jesus answered them, My Father is working until now, and I am working. This was why the Jews were seeking all the more to kill him, because not only was he breaking the Sabbath, but he was even calling God his own Father, making himself equal with God. So Jesus said to them, Truly, truly, I say to you, the Son can do nothing of his own accord, but only what he sees the Father doing. For whatever the Father does, that the Son does likewise. For the Father loves the Son and shows him all that he himself is doing. And greater works than these will he show him, so that you may marvel. For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him.</ins> Truly, truly, I say to you, <ins>whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life.</ins> Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself. And he has given him authority to execute judgment, because he is the Son of Man. Do not marvel at this, for an hour is coming when all who are in the tombs will hear his voice and come out, <ins>those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment.</ins> (ESV)
+
+
+### The gospel has to be obeyed
+
+> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus.
+
+> **I Peter 4:12-19** - Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ's sufferings, that you may also rejoice and be glad when his glory is revealed. If you are insulted for the name of Christ, you are blessed, because the Spirit of glory and of God rests upon you. But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name. <ins>For it is time for judgment to begin at the household of God; and if it begins with us, what will be the outcome for those who do not obey the gospel of God?</ins> And If the righteous is scarcely saved, what will become of the ungodly and the sinner? Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good.
+
+
+### God will be the judge of who has had faith in Jesus, and who has obeyed Him. I wouldn't take obedience lightly
+
+> **Luke 20:13-18** - Then the owner of the vineyard said, What shall I do? <ins>I will send my beloved son; perhaps they will respect him.</ins> But when the tenants saw him, they said to themselves, This is the heir. Let us kill him, so that the inheritance may be ours. <ins>And they threw him out of the vineyard and killed him.</ins> What then will the owner of the vineyard do to them? He will come and destroy those tenants and give the vineyard to others. When they heard this, they said, Surely not! But he looked directly at them and said, What then is this that is written: The stone that the builders rejected has become the cornerstone? Everyone who falls on that stone will be broken to pieces, and when it falls on anyone, it will crush him.
+
+1.  Jesus was extremely humble here. Likewise, we should be able to recognise that we need Him as our Lord looking over us
+
+    Also, Jesus didn't actually deny that He is good:
+    
+    > **Luke 18:18-19** - And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone.
+    
+    > **Isaiah 64:6** - We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away. (ESV)
+    
+    Nevertheless, we should follow Jesus.
+
+
+### Let us serve Jesus Christ in truth, and have confidence
+
+> **I John 3:21** - Beloved, <ins>if our heart does not condemn us, we have confidence before God;</ins>
+
+> **Hebrews 3:14** - For we share in Christ, if indeed we hold our original confidence firm to the end.
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world.
+
+
+### We must recognise that where our obedience falls short, Jesus's blood covers us. But we must still have the heart to make Jesus our Lord and King
+
+But we must be walking in the light, just as He is in the light.
+
+> **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
+
+
+### Do not condemn others. Speak the truth and leave judgement to the Judge
+
+> **John 8:16-18** - Yet even if I do judge, my judgment is true, for it is not I alone who judge, but I and the Father who sent me. In your Law it is written that the testimony of two men is true. I am the one who bears witness about myself, and the Father who sent me bears witness about me.
+
+> **Luke 6:37** - , Judge not, and you will not be judged; condemn not, and you will not be condemned; forgive, and you will be forgiven; (ESV)
+
+Jesus is also extremely merciful to the woman who was brought before Jesus:
+
+> **John 8:10-11** - Jesus stood up and said to her, Woman, where are they? Has no one condemned you? She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more.]] (ESV)
+
+
+### Simply tell the truth from God. We must not reject Jesus
+
+> **John 8:21-24** - So he said to them again, I am going away, and you will seek me, and you will die in your sin. Where I am going, you cannot come. So the Jews said, Will he kill himself, since he says, Where I am going, you cannot come? He said to them, You are from below; I am from above. You are of this world; I am not of this world. I told you that you would die in your sins, for unless you believe that I am he you will die in your sins.
+
+We must follow Jesus for eternal life:
+
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. <ins>Whoever follows me will not walk in darkness, but will have the light of life.</ins>
+
+Jesus knows Father God, and Jesus keeps His word. Likewise, we must follow Jesus and keep **His** word. Jesus is obedient to Father God. We **must** be obedient to Jesus Christ:
+
+> **John 8:55-58** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. Your father Abraham rejoiced that he would see my day. He saw it and was glad. So the Jews said to him, You are not yet fifty years old, and have you seen Abraham? Jesus said to them, Truly, truly, I say to you, <ins>before Abraham was, I am.</ins>
+
+> **John 10:27-29** - <ins>My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish,</ins> and <ins>no one will snatch them out of my hand.</ins> My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand.
+
+
+### Jesus is Almighty God's Son and is sitting in Power next to His Father
+
+Jesus is One with Almighty God and their will is in perfect alignment.
+
+> **John 10:30** - I and the Father are one.
+
+Jesus makes intercession for those who draw near to God through Him:
+
+> **Hebrews 7:25** - Consequently, he is able to save to the uttermost those who draw near to God through him, since he always lives to make intercession for them.
+
+Likewise, the Holy Spirit is Almighty God. The Godhead is a bit of a mystery though, and I don't want to cause division over the specifics.
+
+["Agnus Dei" with Michael W  Smith & the First Dallas Choir & Orchestra - YouTube](https://www.youtube.com/watch?v=db0t_NUq5bw)
+
+> **Hebrews 1:3** - He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power. After making purification for sins, he sat down at the right hand of the Majesty on high,
+
+Jesus is sitting in power.
+
+> **Hebrews 1:13** - And to which of the angels has he ever said, Sit at my right hand until I make your enemies a footstool for your feet?
+
+
+### Follow Jesus for eternal life. Jesus is the Bread of Life
+
+> **Luke 18:18-22** - And a ruler asked him, Good Teacher, <ins>what must I do to inherit eternal life?</ins> And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and <ins>come, follow me.</ins>
+
+
+### Believe Jesus and allow His word to abide in you
+
+> **Proverbs 7:1-3** - <ins>My son, keep my words and treasure up my commandments with you; keep my commandments and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart.</ins>
+
+Jesus' word:
+
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. <ins>Whoever follows me will not walk in darkness, but will have the light of life.</ins>
+
+These Jews **had believed** but didn't abide in Jesus' words, and so prove to be Jesus' disciples:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed</ins> in him, <ins>If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free.</ins>
+
+They didn't believe they needed Jesus to set them free from sin. No-one who commits sin has eternal life:
+
+> **John 8:33-36** - They answered him, We are offspring of Abraham and have never been enslaved to anyone. How is it that you say, You will become free? Jesus answered them, Truly, truly, I say to you, <ins>everyone who commits sin is a slave to sin. The slave does not remain in the house forever;</ins> the son remains forever. So if the Son sets you free, you will be free indeed.
+
+They couldn't accept that they needed to be saved:
+
+> **John 8:37** - I know that you are offspring of Abraham; yet you seek to kill me because my word finds no place in you.
+
+Jesus speaks of what He has seen with His Father:
+
+> **John 8:38** - I speak of what I have seen with my Father, and you do what you have heard from your father.
+
+
+### We are implored to love Jesus and follow Him
+
+We need to love Jesus because He came from
+God, to show us the Way as the Light of the
+world.
+
+Jesus is the Truth and the Life:
+
+> **John 8:39-42** - They answered him, Abraham is our father. Jesus said to them, If you were Abraham's children, you would be doing what Abraham did, but now you seek to kill me, a man who has told you the truth that I heard from God. This is not what Abraham did. You are doing what your father did. They said to him, We were not born of sexual immorality. We have one Father—even God. Jesus said to them, <ins>If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.</ins>
+
+> **John 8:43** - Why do you not understand what I say? It is because you cannot bear to hear my word.
+
+
+### We must listen to Jesus
+
+> **Luke 9:35** - Then a voice came out of the cloud, saying, “This is My Son, My Chosen One; listen to Him!”
+
+> **John 8:44-47** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. But because I tell the truth, you do not believe me. Which one of you convicts me of sin? <ins>If I tell the truth, why do you not believe me? Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God.</ins>
+
+
+### We are implored to honour Jesus
+
+> **John 8:48-49** - The Jews answered him, Are we not right in saying that you are a Samaritan and have a demon? Jesus answered, I do not have a demon, but I honor my Father, and you dishonor me.
+
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes (G4100 **pisteuo**) him who sent me has eternal life</ins>. He does not come into judgment, but has passed from death to life.
+
+
+### We are implored to keep Jesus' words
+
+> **John 8:50-51** - Yet I do not seek my own glory; there is One who seeks it, and he is the judge. Truly, truly, I say to you, if anyone keeps my word, he will never see death.
+
+
+### We must receive Jesus. Jesus is God's Only-Begotten Son
+
+> **John 8:52-59** - The Jews said to him, Now we know that you have a demon! Abraham died, as did the prophets, yet you say, If anyone keeps my word, he will never taste death. Are you greater than our father Abraham, who died? And the prophets died! Who do you make yourself out to be? Jesus answered, If I glorify myself, my glory is nothing. It is my Father who glorifies me, of whom you say, He is our God. But <ins>you have not known him. I know him.</ins> If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. Your father Abraham rejoiced that he would see my day. He saw it and was glad. So the Jews said to him, You are not yet fifty years old, and have you seen Abraham? Jesus said to them, Truly, truly, I say to you, <ins>before Abraham was, I am.</ins> So they picked up stones to throw at him, but Jesus hid himself and went out of the temple.
+
+
+### Even those who have faith in Jesus Christ's name may have the right to be born of God and become children of God
+
+The worldly people rejected Him. Neither did His own people receive Him.
+
+> **John 1:1-13** - In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things came into being through Him, and apart from Him nothing came into being that has come into being. In Him was life, and the life was the Light of men. <ins>The Light shines in the darkness, and the darkness did not comprehend it.</ins> There came a man sent from God, whose name was John. He came as a witness, to testify about the Light, so that all might believe through him. He was not the Light, but he came to testify about the Light. There was <ins>the true Light which, coming into the world, enlightens (G5461 photizo) every man.</ins> He was in the world, and <ins>the world was made through Him, and the world did not know Him.</ins> <ins>He came to His own, and those who were His own did not receive Him.</ins> But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe in His name,</ins> who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
+
+    1  :  5461  photizo  fo-tid'-zo
+    2  
+    3   from 5457; to shed rays, i.e. to shine or (transitively) to brighten
+    4   up (literally or figuratively):--enlighten, illuminate, (bring to,
+    5   give) light, make to see.
+    6   see GREEK for 5457
+
+> **John 5:17** - But Jesus answered them, My Father is working until now, and I am working. (ESV)
+
+> **I Corinthians 10:1-7** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. Nevertheless, <ins>with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were;</ins> as it is written, The people sat down to eat and drink and rose up to play.
+
+> **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
+
+AMEN!!
 
 
 ### We must do the will of God, which is the food and drink which Jesus gives us
@@ -279,7 +558,7 @@ It's being begotten as a servant of God, a disciple of Jesus.
 > **John 7:34-39** - You will seek me and you will not find me. Where I am you cannot come. (ESV) The Jews said to one another, Where does this man intend to go that we will not find him? Does he intend to go to the Dispersion among the Greeks and teach the Greeks?  What does he mean by saying, You will seek me and you will not find me, and, Where I am you cannot come?  On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink.  Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water.  Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified.
 
 
-### A life of faith (living in accordance with the truth, and in relationship with God) is required - faith continues
+### Having faith (living in accordance with the truth, and in relationship with God) is asked of us - faith continues
 
 What I mean by relationship is:
 
@@ -343,7 +622,7 @@ What I mean by relationship is:
     
     > **Revelation of John 22:14** - Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. (ESV)
 
-7.  We must stop sinning
+7.  We must be wanting to be cleaned of sin
 
     We must look upon Jesus and stop sexual immorality and stop idolatry. The stories mentioned here are examples for us to follow:
     
@@ -407,6 +686,10 @@ You must obey Jesus:
 We must obey God. We have faith in God who was delivered up for our trespasses and raised for our justification, and having faith in God is having faith in His Son which is believing in and obeying Jesus Christ:
 
 > **Romans 4:23-25** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe (G4100 **pisteuo**) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+
+We must obey Jesus' commandments to know Jesus, just as Jesus obeyed Father God's commandments, and knows Father God:
+
+> **John 8:55-58** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. Your father Abraham rejoiced that he would see my day. He saw it and was glad. So the Jews said to him, You are not yet fifty years old, and have you seen Abraham? Jesus said to them, Truly, truly, I say to you, before Abraham was, I am.
 
 
 ### Atonement
@@ -667,7 +950,7 @@ So the promise is for all who put their faith in God by obeying Jesus Christ wit
 
 Jesus' sacrifice is the only atonement for our sin we need. It's comprehensive. It must be received through faith in obedience to Jesus.
 
-> -   **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
+> -   **Romans 3:25** -  whom <ins>God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness,</ins> because in his divine forbearance he had passed over former sins.  (ESV)
 
 > -   **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
@@ -1117,7 +1400,9 @@ Jesus is the True Vine. We are the branches. AMEN!! We can do nothing apart from
 
 Everyone who names the name of the Lord must depart from iniquity:
 
-> **II Timothy 2:19-22** - But God's firm foundation stands, bearing this seal: The Lord knows those who are his, and, Let everyone who names the name of the Lord depart from iniquity. Now in a great house there are not only vessels of gold and silver but also of wood and clay, some for honorable use, some for dishonorable. Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the master of the house, ready for every good work. So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart.
+> **I Corinthians 6:17-20** - But <ins>he who is joined to the Lord becomes one spirit with him.</ins> Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body. Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body.
+
+> **II Timothy 2:19-22** - But <ins>God's firm foundation stands,</ins> bearing this seal: <ins>The Lord knows those who are his, and, Let everyone who names the name of the Lord depart from iniquity.</ins> Now in a great house there are not only vessels of gold and silver but also of wood and clay, some for honorable use, some for dishonorable. Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the master of the house, ready for every good work. So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart.
 
 Our bodies are a vessel for Jesus' holiness to shine out of. It's the vessel of the Holy Spirit:
 
@@ -5839,9 +6124,17 @@ The will of God is that we have faith in God and faith in Jesus.
 The work/will of God is that we believe in Him whom He has sent - believing in Jesus - faithing in Jesus.
 The will of God is that we are bondservants of Christ from the heart.
 The will of God is that we repent from sin.
-The will of God is that we do good.
+The will of God is that we do good
 
-Accomplishing the will of God the Father is **food**.
+**Eternal** salvation is given to those who **obey** Jesus:
+
+> **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of <ins>eternal salvation to all who obey him</ins>, being designated by God a high priest after the order of Melchizedek..
+
+Jesus' sheep follow Jesus:
+
+> **John 10:27-30** - <ins>My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish,</ins> and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
+
+Accomplishing the will of God the Father is **food**:
 
 > **John 4:34-38** - Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. Do you not say, There are yet four months, then comes the harvest? Look, I tell you, lift up your eyes, and see that the fields are white for harvest. Already the one who reaps is receiving wages and gathering fruit for eternal life, so that sower and reaper may rejoice together. For here the saying holds true, One sows and another reaps. I sent you to reap that for which you did not labor. Others have labored, and you have entered into their labor.
 
@@ -6495,6 +6788,10 @@ A disciple of Jesus isn't Jesus, but a disciple.
 
 ### It's **really** important to not reject Jesus through
 
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.
+
+> **John 8:21-24** - So he said to them again, I am going away, and you will seek me, and you will die in your sin. Where I am going, you cannot come. So the Jews said, Will he kill himself, since he says, Where I am going, you cannot come? He said to them, You are from below; I am from above. You are of this world; I am not of this world. I told you that you would die in your sins, for <ins>unless you believe that I am he you will die in your sins.</ins>
+
 > **I Peter 3:18-21** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to **death in the flesh but made alive in the spirit**, in which he went and proclaimed to the spirits in prison, because **they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
 
 If this verse suggests that Jesus went to the spirits in prison who had in the days of Noah disobeyed, then we should definitely obey the gospel while we're alive today.
@@ -7051,9 +7348,15 @@ Justification by faith is the correct teaching but the promise is for the gentil
 > **Acts 23:3** - Then Paul said to him, God is going to strike you, you whitewashed wall! Are you sitting to judge me according to the law, and yet contrary to the law you order me to be struck?
 
 
-## Justified by God through faith and works
+## Justified by God through faith [and works done in faith?]
 
-Predestined, called, justified, glorified - sounds like election.
+All of these, for example,  I believe belong under the umbrella of faith, not works:
+
+-   Taking communion is not 'dead works'. It's obedience.
+-   Getting baptised is not 'dead works'. It's obedience.
+-   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
+
+God will be the judge of who has had faith in Jesus, and who has obeyed Him.
 
 
 ### God is the one who justifies
@@ -7066,13 +7369,14 @@ But repentance is a work of the heart which is an act of faith.
 I believe repentance is inseparable from faith because intrinsic to faith is belief and intrinsic to belief is metanoia (changing one's mind).
 
 At it's most basic form repentance means a
-person believes in Jesus as the Son of God and
-the Messiah who, being innocent, paid the
+person believes in Jesus as the Son of God and the Messiah who, being innocent, paid the
 price for their sin through His broken body
 and shed blood on the cross - a perfect and
 eternal offering; that He died there but God
 resurrected Him, and He is Lord of Heaven and
-Earth, and has a heart of obedience to the will of God.
+Earth, and has a <ins>heart of obedience</ins> to the will of God,
+<ins>wanting</ins> to do the will of God, which involves their sanctification.
+We must honour Jesus.
 
 But I believe we are forgiven to forgive others. That must be part of the act of faith and the change of heart, I think.
 
@@ -9058,9 +9362,9 @@ Christ is formed in us, after all:
 
 > **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth until Christ is formed in you!
 
-In Christ Jesus, through living a life of faith, we are sons:
+In Christ Jesus, through faith, we are sons:
 
-**Galatians 3:25-26** - But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith.
+> **Galatians 3:25-26** - But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith.
 
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
@@ -9368,28 +9672,37 @@ we must accomplish our work.
 
 Christlikeness:
 
--   **I Peter 2:12** - Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation.
+> **I Peter 2:12** - Keep your conduct among the Gentiles honorable, so that when they speak against you as evildoers, they may see your good deeds and glorify God on the day of visitation.
 
--   **Romans 12:1** - I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
+> **Romans 12:1** - I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
 
--   **Revelation of John 19:8** - it was granted her to clothe herself with fine linen, bright and pure— for the fine linen is the righteous deeds of the saints.
+> **Revelation of John 19:8** - it was granted her to clothe herself with fine linen, bright and pure— for the fine linen is the righteous deeds of the saints.
 
--   Suffering for Christian obedience, as Christ suffered for His obedience
-    -   **John 21:18-19** - Truly, truly, I say to you, when you were young, you used to dress yourself and walk wherever you wanted, but when you are old, you will stretch out your hands, and another will dress you and carry you where you do not want to go. (This he said to show by what kind of death he was to glorify God. ) And after saying this he said to him, Follow me.
-    -   **I Peter 4:16** - Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name.
+Suffering for Christian obedience, as Christ suffered for His obedience:
 
--   Please your neighbour for their good
-    -   **Romans 15:2-3** - Let each of us please his neighbor for his good, to build him up. For Christ did not please himself, but as it is written, The reproaches of those who reproached you fell on me.
+> **John 21:18-19** - Truly, truly, I say to you, when you were young, you used to dress yourself and walk wherever you wanted, but when you are old, you will stretch out your hands, and another will dress you and carry you where you do not want to go. (This he said to show by what kind of death he was to glorify God. ) And after saying this he said to him, Follow me.
 
--   Welcome one another as Christ has welcomed you. Live in harmony with one-another, encouraging and serving one another [as Christ did]
-    -   **Romans 15:5-7** May the God of endurance and encouragement grant you to live in such harmony with one another, in accord with Christ Jesus, that together you may with one voice glorify the God and Father of our Lord Jesus Christ. Therefore welcome one another as Christ has welcomed you, for the glory of God.
--   Be merciful and serving to others, show God's truthfulness. glorify God by your conduct
-    -   **Romans 15:8-9** - For I tell you that Christ became a servant to the circumcised to show God's truthfulness, in order to confirm the promises given to the patriarchs, and **in order that the Gentiles might glorify God for his mercy**. As it is written, Therefore I will praise you among the Gentiles, and sing to your name.
-        -   Others then praise God
--   Supply the needs of the saints
-    -   **II Corinthians 9:12** - For the ministry of this service is not only supplying the needs of the saints, but is also overflowing in many thanksgivings to God.
--   Be thankful to God
-    -   **II Corinthians 9:13** - By their approval of this service, they will glorify God because of your submission flowing from your confession of the gospel of Christ, and the generosity of your contribution for them and for all others,
+> **I Peter 4:16** - Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name.
+
+Please your neighbour for their good:
+
+> **Romans 15:2-3** - Let each of us please his neighbor for his good, to build him up. For Christ did not please himself, but as it is written, The reproaches of those who reproached you fell on me.
+
+Welcome one another as Christ has welcomed you. Live in harmony with one-another, encouraging and serving one another [as Christ did]:
+
+> **Romans 15:5-7** May the God of endurance and encouragement grant you to live in such harmony with one another, in accord with Christ Jesus, that together you may with one voice glorify the God and Father of our Lord Jesus Christ. Therefore welcome one another as Christ has welcomed you, for the glory of God.
+
+Be merciful and serving to others, show God's truthfulness. glorify God by your conduct. Others then praise God:
+
+> **Romans 15:8-9** - For I tell you that Christ became a servant to the circumcised to show God's truthfulness, in order to confirm the promises given to the patriarchs, and **in order that the Gentiles might glorify God for his mercy**. As it is written, Therefore I will praise you among the Gentiles, and sing to your name.
+
+Supply the needs of the saints:
+
+> **II Corinthians 9:12** - For the ministry of this service is not only supplying the needs of the saints, but is also overflowing in many thanksgivings to God.
+
+Be thankful to God:
+
+> **II Corinthians 9:13** - By their approval of this service, they will glorify God because of your submission flowing from your confession of the gospel of Christ, and the generosity of your contribution for them and for all others,
 
 
 ### Seeing Jesus, appearing in glory
