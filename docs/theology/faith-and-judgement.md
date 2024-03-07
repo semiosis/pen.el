@@ -117,13 +117,30 @@ It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** i
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
 
-### It's those who trust, receive, have an obedient/repentant heart towards Him, and anyone who He wills, that receive forgiveness of sins through his name
+## Receiving Jesus
 
-An obedient heart looks like:
 
--   <ins>wanting to do God's will</ins> (even if it just means <ins>wanting to turn from sin</ins>; because God makes the new heart to enable the person to obey)
--   <ins>wanting to follow Jesus</ins>
--   <ins>accepting Jesus Christ as one's Lord</ins>
+### Receiving Jesus may be as easy as receiving the one who He sends, or receiving a child in His name
+
+> **John 13:20** - Truly, truly, I say to you, whoever receives the one I send receives me, and whoever receives me receives the one who sent me.
+
+> **Mark 9:37** - Whoever receives one such child in my name receives me, and whoever receives me, receives not me but him who sent me.
+
+A person may need to ask and seek to receive Jesus:
+
+> **Luke 11:10** - For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
+
+
+### Those who have a heart of faith towards Him (and anyone who He wills) may receive forgiveness of sins through his name
+
+An heart of faith looks like:
+
+-   Wanting to do God's will
+    -   Obedience and repentance from sin: even if it just means <ins>wanting to turn from sin</ins>
+    -   because God makes the new heart to enable the person to obey
+-   Wanting to follow Jesus
+-   Accepting Jesus Christ as one's Lord
+-   Accepting through faith the atonement for sin through Jesus Christ
 
 God provides the new heart:
 
@@ -135,15 +152,7 @@ The tax collector here has an obedient heart (yielding to Jesus), but the Pharis
 
 It's those that believe in him (trust Him, receive Him, <ins>expect to receive Him</ins>, have an obedient heart towards Him) that receive forgiveness of sins through his name:
 
-> **Acts 10:41-44** - not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that everyone who believes in him receives forgiveness of sins through his name. While Peter was still saying these things, the Holy Spirit fell on all who heard the word. (ESV)
-
-> **John 13:20** - Truly, truly, I say to you, whoever receives the one I send receives me, and whoever receives me receives the one who sent me.
-
-> **Mark 9:37** - Whoever receives one such child in my name receives me, and whoever receives me, receives not me but him who sent me.
-
-A person still needs to ask and seek to receive Jesus:
-
-> **Luke 11:10** - For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
+> **Acts 10:41-44** - not to all the people but to us who had been chosen by God as witnesses, who ate and drank with him after he rose from the dead. And he commanded us to preach to the people and to testify that he is the one appointed by God to be judge of the living and the dead. To him all the prophets bear witness that <ins>everyone who believes in him receives forgiveness of sins through his name.</ins> While Peter was still saying these things, the Holy Spirit fell on all who heard the word. (ESV)
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
 
