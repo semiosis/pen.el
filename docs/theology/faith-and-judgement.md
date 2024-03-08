@@ -247,8 +247,20 @@ Love (obedience) and belief:
 <td class="org-left">confess with your mouth that Jesus is Lord</td>
 <td class="org-left"><ins>will be saved</ins></td>
 </tr>
+
+
+<tr>
+<td class="org-left">John 10:26-27</td>
+<td class="org-left">but you do not believe because you are not part of my flock</td>
+<td class="org-left">My sheep hear my voice, and I know them, and they follow me.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
 </tbody>
 </table>
+
+Believe and obey (follow) Jesus:
+
+> **John 10:24-28** - So the Jews gathered around him and said to him, How long will you keep us in suspense? If you are the Christ, tell us plainly. Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me, but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand.
 
 > **Matthew 11:29** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. (ESV)
 
@@ -263,6 +275,10 @@ I believe that obedience is as intrinsic to faith as belief is.
 In other words, I believe one must make Jesus Christ their Lord **and** their Saviour for any guarantee at being saved; one must have obedient faith.
 
 'Once saved always saved' wouldn't apply until someone is saved.
+
+John 10:26: but you do not believe because you are not part of my flock.
+John 10:27: My sheep hear my voice, and I know them, and they follow me.
+John 10:28: I give them eternal life, and they will never perish, and no one will snatch them out of my hand.
 
 
 ### My understanding of repentance
