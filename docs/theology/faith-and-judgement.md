@@ -462,7 +462,7 @@ All of these I believe belong under the umbrella of faith, not works:
 -   Getting baptised is not 'dead works'. It's obedience.
 -   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
 
-God will be the judge of who has had faith in Jesus, and who has **actually** obeyed Him, and **actually** made Him their Lord and Saviour.
+God will be the judge of who has had faith in Jesus; who has obeyed Him and who has trusted in Him and who has made Him their Lord and who has accepted Him as their Saviour.
 
 > **John 12:48** - <ins>The one who rejects me and does not receive my words has a judge</ins>; the <ins>word that I have spoken will judge him</ins> on the last day.
 
