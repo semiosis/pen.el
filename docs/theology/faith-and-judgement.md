@@ -204,6 +204,11 @@ Love (obedience) and belief:
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.
 
 
+### Work may be burned up, and the person who has a believing and obedient heart is still saved
+
+> **1 Corinthians 3:15** - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
+
+
 ### Forever abiding is believing and being a disciple
 
 > **John 15:4-8** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
@@ -319,12 +324,30 @@ It's being begotten as a servant of God, a disciple of Jesus.
 
 Either of:
 
--   pursuing holiness without submitting to the righteousness of God through working faith in Jesus Christ
+-   pursuing holiness without submitting to the righteousness of God through obedient faith in Jesus Christ
     -   This is denying Jesus and becoming guilty of sin by denying the atonement
     -   **John 15:22-23** - If I had not come and spoken to them, they would not have been guilty of sin, but now they have no excuse for their sin. Whoever hates me hates my Father also.
--   pursuing justification without becoming obedient to God through working faith in Jesus Christ
-    -   This is withering and being thrown into the fire
+-   pursuing justification without becoming obedient to God through obedient faith in Jesus Christ
+    -   This is being cast out and withering and being thrown into the fire
     -   **John 15:5-6** - I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned.
+
+A person needs to have obedient, believing faith to take the narrow gate.
+
+These people did not obey Jesus, and produced bad fruit:
+
+**Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+
+These people did not believe, and their works were not done in faith:
+
+> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.
+
+These people didn't endure in faith:
+
+> **Matthew 7:13-14** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few.
+
+These people just sat around watching Jesus but didn't obey Him:
+
+> **Luke 13:24-26** - Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able. When once the master of the house has risen and shut the door, and you begin to stand outside and to knock at the door, saying, Lord, open to us, then he will answer you, I do not know where you come from. Then you will begin to say, We ate and drank in your presence, and you taught in our streets. But he will say, I tell you, I do not know where you come from. Depart from me, all you workers of evil!
 
 
 ### Obedience to Jesus has everything to do with receiving Him, and receiving Salvation
