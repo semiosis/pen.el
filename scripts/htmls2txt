@@ -48,7 +48,9 @@ convert_html_to_txt() {
         if test -f "${slug}.txt" && test "$do_continue" = y; then
             echo Already exists | hls black blue 1>&2
         else
-            elinks-dump "$bn" > "${slug}.txt"
+            elinks-dump "$bn" | sed 's/^>/ /' |
+                sed 's/^o /- /' |
+                sed -e 's/^[0-9]:/| /' -e 's/^[0-9][0-9]:/|  /' > "${slug}.txt"
         fi
     )
 }
