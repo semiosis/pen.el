@@ -300,6 +300,20 @@ The Way is Jesus Christ - <ins>believing in and becoming obedient to</ins> Jesus
 
 It's being begotten as a servant of God, a disciple of Jesus.
 
+**Believe:**
+
+> **I John 4:9** - In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him.
+
+**Obey:**
+
+> **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
+
+**Believe and obey:**
+
+> **I John 2:5** - but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him:
+
+> **Jude 1:21** - keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ that leads to eternal life.
+
 
 ### Wide gate
 
