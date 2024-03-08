@@ -360,7 +360,7 @@ A person needs to have obedient, believing faith to take the narrow gate.
 
 These people did not obey Jesus, and produced bad fruit:
 
-**Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+> **Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
 
 These people did not believe, and their works were not done in faith:
 
@@ -1187,7 +1187,7 @@ The wrath of God comes upon the sons of disobedience:
 
 That means that justifying faith involves obeying Jesus:
 
-**Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, <ins>now that we are reconciled, shall we be saved by his life.</ins> More than that, we also rejoice in God through <ins>our Lord</ins> Jesus Christ, through whom we have now received reconciliation.
+> **Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, <ins>now that we are reconciled, shall we be saved by his life.</ins> More than that, we also rejoice in God through <ins>our Lord</ins> Jesus Christ, through whom we have now received reconciliation.
 
 
 ### Believing the Word of Truth - sealed with the promised Holy Spirit
@@ -1640,7 +1640,7 @@ Jesus condemned sin in the flesh. Now we walk according to the spirit so that th
 
 It's still really important to put a stop to sin! And we must walk according to Jesus' commandments:
 
-**John 14:24** - <ins>Whoever does not love me does not keep my words.</ins> And the word that you hear is not mine but the Father's who sent me.
+> **John 14:24** - <ins>Whoever does not love me does not keep my words.</ins> And the word that you hear is not mine but the Father's who sent me.
 
 
 ### Holiness
@@ -4119,7 +4119,7 @@ Also, lay up treasure in Heaven:
 
 Also, <ins>most importantly</ins> believe in the atonement which Jesus provides:
 
-**John 6:55-71** - For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever. Jesus said these things in the synagogue, as he taught at Capernaum. When many of his disciples heard it, they said, This is a hard saying; who can listen to it? But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this? Then what if you were to see the Son of Man ascending to where he was before? It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. )
+> **John 6:55-71** - For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever. Jesus said these things in the synagogue, as he taught at Capernaum. When many of his disciples heard it, they said, This is a hard saying; who can listen to it? But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this? Then what if you were to see the Son of Man ascending to where he was before? It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. )
 
 Also, <ins>most importantly,</ins> become obedient Jesus:
 
@@ -4657,7 +4657,7 @@ But faith is obedient.
 
 ## Both Father God and Jesus Christ God's Son have life in Himself and the power to resurrect
 
-**John 5:24-26** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself.
+> **John 5:24-26** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself.
 
 > **John 5:21** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. (ESV)
 
