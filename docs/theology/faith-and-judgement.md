@@ -203,13 +203,75 @@ Love (obedience) and belief:
 
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Verse Ref</th>
+<th scope="col" class="org-left">Believe (Jesus is their Saviour)</th>
+<th scope="col" class="org-left">Obey (Jesus is their Lord)</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">Matthew 11:29</td>
+<td class="org-left">learn from me</td>
+<td class="org-left">take my yoke upon you</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">John 3:36</td>
+<td class="org-left">Whoever believes in the Son has eternal life</td>
+<td class="org-left">whoever does not obey the Son shall not see life</td>
+<td class="org-left"><ins>saved</ins></td>
+</tr>
+
+
+<tr>
+<td class="org-left">Romans 10:9</td>
+<td class="org-left">believe in your heart that God raised him from the dead</td>
+<td class="org-left">confess with your mouth that Jesus is Lord</td>
+<td class="org-left"><ins>will be saved</ins></td>
+</tr>
+</tbody>
+</table>
+
+> **Matthew 11:29** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. (ESV)
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+> **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
+I believe that a person is not saved until they have in their heart <ins>obedient faith</ins> in Jesus Christ's name.
+
+I believe that obedience is as intrinsic to faith as belief is.
+
+In other words, I believe one must make Jesus Christ their Lord **and** their Saviour for any guarantee at being saved; one must have obedient faith.
+
+'Once saved always saved' wouldn't apply until someone is saved.
+
 
 ### My understanding of repentance
 
-We need both of these:
+We need <ins>both</ins> of these:
 
 -   Belief in Jesus and His atoning sacrifice
 -   Obedience to Jesus' commandments
+    -   Obeying the law of Christ
 
 > **II Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
 
@@ -3147,6 +3209,36 @@ Self-righteous forgiveness:
 
 > **John 7:19** - Has not Moses given you the law? Yet none of you keeps the law. Why do you seek to kill me?
 
+The ones who live <ins>not under law</ins> of God will be thrown into the fiery furnace, as we **must** be <ins>under</ins> the <ins>law of Christ.</ins>
+
+The lawbreakers will be thrown into the fiery furnace:
+
+> **Matthew 13:37-43** - He answered, The one who sows the good seed is the Son of Man. The field is the world, and the good seed is the children of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil. The harvest is the close of the age, and the reapers are angels. Just as the weeds are gathered and burned with fire, so will it be at the close of the age. The Son of Man will send his angels, <ins>and they will gather out of his kingdom all causes of sin and all law-breakers, and throw them into the fiery furnace</ins>. In that place there will be weeping and gnashing of teeth. Then the righteous will shine like the sun in the kingdom of their Father. He who has ears, let him hear.
+
+> **Romans 3:26-27** - It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith.
+
+And faith intrinsically includes obedience to Christ.
+
+
+## The law of Christ
+
+-   be led by the Spirit, applying Jesus' commandments (Jesus is your Lord)
+    -   love one another as Christ has loved you
+    -   bearing your neighbour's burdens
+    -   obedient to Christ
+    -   belief in Christ's atoning sacrifice
+    -   you **must** forgive one another as Christ has forgiven you
+
+> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law.
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+> **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ.
+
+> **Luke 17:4** - and if he sins against you seven times in the day, and turns to you seven times, saying, I repent, you must forgive him.
+
+> **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so <ins>you also must forgive.</ins> (ESV)
+
 
 ## Follow the law in faith, not works, making yourself accountable to God, not men
 
@@ -3243,7 +3335,27 @@ This requires obedience to Jesus:
 
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>.􀀂(ESV)
 
+A person must receive the word:
+
+-   and not fall away
+-   and not let worldly desire distract from, and inhibit following and seeking Jesus
+-   and bear fruit
+
+> **Mark 4:14-20** - <ins>The sower sows the word.</ins> And these are the ones along the path, where the word is sown: when they hear, Satan immediately comes and takes away the word that is sown in them. And these are the ones sown on rocky ground: the ones who, when they hear the word, immediately receive it with joy. And they have no root in themselves, but endure for a while; then, when tribulation or persecution arises on account of the word, immediately they fall away. And others are the ones sown among thorns. They are those who hear the word, but the cares of the world and the deceitfulness of riches and the desires for other things enter in and choke the word, and it proves unfruitful. But <ins>those that were sown on the good soil are the ones who hear the word and accept it and bear fruit, thirtyfold and sixtyfold and a hundredfold.</ins>
+
+Because we keep His commandments, we receive from him whatever we ask.
+And our heart does not condemn us.
+And we have confidence before God.
+
+By this we know <ins>he</ins> abides in <ins>us</ins>:
+
+-   He has given us His Spirit.
+
 > **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+
+<ins>We abide in Him</ins>, and <ins>He in us.</ins>
+
+We keep His commandments, and we abide in Him:
 
 > **John 15:10** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
 
