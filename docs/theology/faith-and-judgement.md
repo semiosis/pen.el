@@ -177,6 +177,8 @@ God still makes apostles:
 
 God is loving and altogether gracious.
 
+> **Exodus 34:5-8** - The Lord descended in the cloud and stood with him there, and proclaimed the name of the Lord. The Lord passed before him and proclaimed, The Lord, the Lord, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children's children, to the third and the fourth generation. And Moses quickly bowed his head toward the earth and worshiped.
+
 Having faith in God involves following Jesus:
 
 > **Hebrews 10:32-39** - But recall the former days when, <ins>after you were enlightened, you endured a hard struggle with sufferings, sometimes being publicly exposed to reproach and affliction</ins>, and sometimes being partners with those so treated. For you had compassion on those in prison, and you joyfully accepted the plundering of your property, since you knew that you yourselves had a better possession and an abiding one. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that <ins>when you have done the will of God you may receive what is promised</ins>. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But <ins>we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls</ins>.
@@ -262,9 +264,33 @@ Believe and obey (follow) Jesus:
 
 > **John 10:24-28** - So the Jews gathered around him and said to him, How long will you keep us in suspense? If you are the Christ, tell us plainly. Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me, but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand.
 
+> **Exodus 33:17** - And the Lord said to Moses, This very thing that you have spoken I will do, for <ins>you have found favor in my sight</ins>, and <ins>I know you by name.</ins>
+
+> **John 10:16** - And I have other sheep that are not of this fold. I must bring them also, and <ins>they will listen to my voice.</ins> So there will be one flock, one shepherd. (ESV)
+
+Jesus knows us and we know Jesus:
+
+> **John 10:14** - I am the good shepherd. I know my own and my own know me, (ESV)
+
+We must be keeping Jesus' commandments for us to be sure that we have come to know Him:
+
+> **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
+
+Jesus commands us to take His yoke (obey Him) and learn from Him (believe Him):
+
 > **Matthew 11:29** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. (ESV)
 
+Whoever believes Jesus obeys Jesus:
+
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+God loves those who love Him and keep His commandments:
+
+> **Nehemiah 1:5** - And I said, O Lord God of heaven, the great and awesome God who keeps covenant and steadfast love with <ins>those who love him and keep his commandments,</ins>
+
+-   If a person has an obedient and believing heart - a heart of faith - towards Jesus, then they will be saved:
+-   If a person truthfully confesses (admits) with their mouth that Jesus is Lord, they have an obedient heart.
+-   If they believe in their heart that God raised Jesus from the dead, they believe Jesus, and believe God who sent Him.
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
@@ -1366,6 +1392,17 @@ We are sanctified by the Spirit **and** faith in the truth (taking God's words a
     -   God's Words are Truth
     -   Jesus is the Truth
 -   We must have faith in the truth (i.e. believe and trust in the truth)
+
+> **Deuteronomy 13:4** - You shall walk after the Lord your God and fear him and keep his commandments and obey his voice, and you shall serve him and hold fast to him.
+
+Think of Jesus here:
+
+-   <ins>keep His commandments</ins>
+-   <ins>obey His voice</ins>
+-   <ins>serve Him</ins>
+-   <ins>hold fast to Him</ins>
+
+Christians must do this.
 
 Those who are in the faith <ins>can't do anything against the truth</ins> - So those who are in the faith find no contradiction:
 
@@ -9593,6 +9630,8 @@ A relationship is formed between the obedient person and God:
 God is knowable through having faith in Jesus Christ:
 
 > **John 1:18** - No one has ever seen God; the only God, who is at the Father's side, he has made him known.
+
+> **Exodus 33:18-23** - Moses said, Please show me your glory. And he said, I will make all my goodness pass before you and will proclaim before you my name The Lord. And I will be gracious to whom I will be gracious, and will show mercy on whom I will show mercy. But, he said, you cannot see my face, for <ins>man shall not see me and live.</ins> And the Lord said, Behold, there is a place by me where you shall stand on the rock, and while my glory passes by I will put you in a cleft of the rock, and I will cover you with my hand until I have passed by. Then I will take away my hand, and you shall see my back, but my face shall not be seen.
 
 Grace, mercy, and the eternal life which God has given us is in Jesus Christ. He is the bread of life:
 
