@@ -1,5 +1,5 @@
-This document is a work in progress. I am learning, but fairly happy with it now.
-I'm trying to have both truth and mercy in my understanding of Christian theology and doctrine.
+This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
+I'm trying to speak the truth in mercy.
 
 I agree whole heartedly with Keith Green here:
 
@@ -192,7 +192,7 @@ If someone obeys Jesus they should arrive at belief in Jesus and who He is and w
 
 If a person believes on Jesus and what He has accomplished they should arrive at obedience. Technically, if someone believes on Him they have begun to obey Him:
 
-> **John 15:10-14** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. You are my friends if you do what I command you.
+> **John 15:10-14** - <ins>If you keep my commandments, you will abide in my love,</ins> just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. You are my friends <ins>if you do what I command you.</ins>
 
 I think faith in Jesus grows as both of these qualities increase.
 
@@ -214,15 +214,12 @@ Love (obedience) and belief:
 <col  class="org-left" />
 
 <col  class="org-left" />
-
-<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
 <th scope="col" class="org-left">Verse Ref</th>
 <th scope="col" class="org-left">Believe (Jesus is their Saviour)</th>
 <th scope="col" class="org-left">Obey (Jesus is their Lord)</th>
-<th scope="col" class="org-left">&#xa0;</th>
 </tr>
 </thead>
 
@@ -231,7 +228,6 @@ Love (obedience) and belief:
 <td class="org-left">Matthew 11:29</td>
 <td class="org-left">learn from me</td>
 <td class="org-left">take my yoke upon you</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 
@@ -239,7 +235,6 @@ Love (obedience) and belief:
 <td class="org-left">John 3:36</td>
 <td class="org-left">Whoever believes in the Son has eternal life</td>
 <td class="org-left">whoever does not obey the Son shall not see life</td>
-<td class="org-left"><ins>saved</ins></td>
 </tr>
 
 
@@ -247,7 +242,6 @@ Love (obedience) and belief:
 <td class="org-left">Romans 10:9</td>
 <td class="org-left">believe in your heart that God raised him from the dead</td>
 <td class="org-left">confess with your mouth that Jesus is Lord</td>
-<td class="org-left"><ins>will be saved</ins></td>
 </tr>
 
 
@@ -255,7 +249,6 @@ Love (obedience) and belief:
 <td class="org-left">John 10:26-27</td>
 <td class="org-left">but you do not believe because you are not part of my flock</td>
 <td class="org-left">My sheep hear my voice, and I know them, and they follow me.</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
