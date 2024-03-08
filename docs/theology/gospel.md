@@ -26,6 +26,10 @@ Love (obedience) and belief:
 
 > **John 15:4-8** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
 
+> **John 12:20-26** - Now among those who went up to worship at the feast were some Greeks. So these came to Philip, who was from Bethsaida in Galilee, and asked him, Sir, we wish to see Jesus. Philip went and told Andrew; Andrew and Philip went and told Jesus. And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+
+AMEN!!
+
 
 # Gospel
 

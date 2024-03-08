@@ -204,6 +204,27 @@ Love (obedience) and belief:
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.
 
 
+### My understanding of repentance
+
+We need both of these:
+
+-   Belief in Jesus and His atoning sacrifice
+-   Obedience to Jesus' commandments
+
+> **II Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
+
+Repentance:
+
+-   Someone who has <ins>only belief in the gift of grace and no obedience to Jesus</ins> (which is effectively hating Jesus) <ins>must repent</ins> and come to have an obedient heart.
+-   Someone who has <ins>only obedience to Jesus' precepts but unbelieving and unsubmissive</ins> to the righteousness of God <ins>must repent</ins> and come to have a believing heart.
+
+Walking in obedient faith is walking in forgiveness and love towards other people, forgiveness and love that flows out from <ins>having been</ins> loved and having been forgiven.
+
+The faith working through love towards God and other people flows out of believing in and accepting Jesus and His atoning sacrifice and from being freely forgiven by Jesus.
+
+I think the person who has arrived at this point has repented from dead work and is now living for Jesus.
+
+
 ### Work may be burned up, and the person who has a believing and obedient heart is still saved
 
 > **1 Corinthians 3:15** - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
@@ -212,6 +233,10 @@ Love (obedience) and belief:
 ### Forever abiding is believing and being a disciple
 
 > **John 15:4-8** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
+
+> **John 12:20-26** - Now among those who went up to worship at the feast were some Greeks. So these came to Philip, who was from Bethsaida in Galilee, and asked him, Sir, we wish to see Jesus. Philip went and told Andrew; Andrew and Philip went and told Jesus. And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+
+AMEN!!
 
 
 ## Gospel
@@ -368,6 +393,8 @@ Jesus' sheep follow Jesus. Jesus knows them:
 People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him.
 
 > **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
+
+> **II Chronicles 7:14** - if my people who are called by my name <ins>humble themselves,</ins> and <ins>pray and seek my face</ins> and <ins>turn from their wicked ways,</ins> then <ins>I will hear from heaven and will forgive their sin and heal their land.</ins> (ESV)
 
 
 ### Disobedience
@@ -6284,6 +6311,12 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/>
     
     Being born-again of the Spirit gave me insight, and I believed God was real.
+    
+    God did it and it was a surprise:
+    
+    > **John 1:12-13** - But to all who did receive him, who believed in his name, he gave the right to become children of God, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God. (ESV)
+    
+    It gave me insight:
     
     > **Proverbs 9:10** - The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight.
 
