@@ -294,6 +294,19 @@ People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. Ma
 > **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
 
 
+### Disobedience
+
+Let us continue following and obeying Jesus, and not turn back:
+
+> **John 6:66** - After this many of his disciples turned back and no longer walked with him.
+
+> **Luke 9:62** - Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
+
+Judas betrayed Jesus after being chosen:
+
+> **John 6:70-71** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you <ins>is a devil.</ins> He spoke of Judas the son of Simon Iscariot, for he, one of the Twelve, was going to betray him.
+
+
 ### The way is easy that leads to destruction
 
 > **Matthew 7:13** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many.
@@ -1056,15 +1069,27 @@ We have peace with God:
     > **James 2:25** - And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? (ESV)
 
 
-### Justified by the blood of Jesus
+### Justified by the blood of Jesus, received through obedience to Jesus Christ as Lord
 
-> **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. (ESV)
+The same Apostle Paul wrote these:
+
+> **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
 Receiving this is a mixture of belief and obedience.
 Faith is a mixture of belief and obedience.
 
+The wrath of God comes upon the sons of disobedience:
+
+> **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things <ins>the wrath of God comes upon the sons of disobedience.</ins> Therefore do not associate with them;
+
+That means that justifying faith involves obeying Jesus:
+
+**Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, <ins>now that we are reconciled, shall we be saved by his life.</ins> More than that, we also rejoice in God through <ins>our Lord</ins> Jesus Christ, through whom we have now received reconciliation.
+
 
 ### Believing the Word of Truth - sealed with the promised Holy Spirit
+
+We had faith in him. We had a faithful, obedient heart, and were sealed with the promised Holy Spirit:
 
 > **Ephesians 1:13-14** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
 
@@ -1072,7 +1097,9 @@ Faith is a mixture of belief and obedience.
 
 Paul 'hears of their faith' (their working faith; faith works; otherwise, what is to hear about) and their love toward the saints. (ESV)
 
-> **Ephesians 1:15-16** - For this reason, because I have heard of your faith in the Lord Jesus and your love toward all the saints, I do not cease to give thanks for you, remembering you in my prayers, (ESV)
+Faith in the Lord Jesus means obedience:
+
+> **Ephesians 1:15-16** - For this reason, because I have heard of <ins>your faith in the Lord Jesus</ins> and your love toward all the saints, I do not cease to give thanks for you, remembering you in my prayers, (ESV)
 
 Knowledge of Him results in the <ins>heart</ins> being enlightened:
 
@@ -2114,9 +2141,13 @@ And Jesus is able to save a person out of Jesus' own will, as he resurrected Laz
 
 ### Just believe/obey Jesus to receive more faith and revelation and salvation
 
-Faith is like Peter stepping out on the water. Faith works. But I think sometimes to create faith someone just has to actually believe Jesus because Jesus performs the miracle / the work.
+The account of Jesus itself when it's read, and Jesus' words, are enough to inspire faith. Therefore, faith comes by hearing the word of Christ.
 
-The account of Jesus itself when it's read, and Jesus' words, are enough to inspire faith. Jesus calls persistent endurance a work. Therefore, faith comes by hearing the word of Christ.
+Jesus calls persistent endurance a work. It's also required to keep our confidence:
+
+> **Hebrews 10:35-36**- Therefore do not throw away your confidence, which has a great reward. For <ins>you have need of endurance, so that when you have done the will of God you may receive what is promised.</ins>
+
+Faith is like Peter stepping out on the water. Faith works. But I think sometimes to create faith someone just has to actually believe Jesus because Jesus performs the miracle / the work.
 
 The LORD did something similar for the Israelites when He parted the Red Sea.
 The Israelites obeyed God, and their obedience led them to sure belief.
@@ -2166,7 +2197,7 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
     When it says "not a result of works", I believe that something more like, even if works were tied into the faith, it's by grace. If a person's saving faith included works then that is fine.
     
     Faith-in-God is hearing God's word and believing it, and even acting on it, or at least the readiness to act on it.
-    A person may act on faith in their heart by arriving at a conviction to the point where a person makes it truth for them.
+    A person may act on faith in their heart by arriving at conviction. But it has to be faith in the truth.
     Then, like Peter stepping out on the water, or like the woman at the well going in to town to tell people about Jesus, or turning from sinful things, it produces more obedience.
     
     > **Matthew 14:27-32** - But immediately Jesus spoke to them, saying, Take heart; it is I. Do not be afraid. And Peter answered him, Lord, if it is you, **command** me to come to you on the water. He said, Come. So Peter **got out of the boat and walked on the water and came to Jesus**. But when he saw the wind, he was afraid, and beginning to sink he cried out, Lord, save me. Jesus immediately reached out his hand and took hold of him, saying to him, O you of little faith, why did you doubt? And when they got into the boat, the wind ceased.
