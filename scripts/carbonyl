@@ -4,4 +4,7 @@ export TTY
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # pen-cterm-ssh -v -ssh -vvv -- docker run -ti fathyb/carbonyl https://youtube.com
-pen-cterm-ssh -ssh -t -- docker run -ti fathyb/carbonyl "$@"
+
+# The remote tmux (tmwr) is needed to prevent a crash
+
+pen-cterm-ssh -ssh -t -- tmwr docker run -ti fathyb/carbonyl "$@"

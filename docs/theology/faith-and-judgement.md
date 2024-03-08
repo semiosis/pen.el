@@ -672,6 +672,10 @@ What I mean by relationship is:
 
 > **I Peter 1:14-16** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy.
 
+I know I can testify to this fiery trial being a real thing:
+
+> **I Peter 1:17-19** - And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
 
 ### The sons of disobedience are the ones who are conformed to sexual immorality, impurity, or covetousness, etc.
 
@@ -959,17 +963,123 @@ So the promise is for all who put their faith in God by obeying Jesus Christ wit
 
 Jesus' sacrifice is the only atonement for our sin we need. It's comprehensive. It must be received through faith in obedience to Jesus.
 
-> -   **Romans 3:25** -  whom <ins>God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness,</ins> because in his divine forbearance he had passed over former sins.  (ESV)
+> **Romans 3:25** -  whom <ins>God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness,</ins> because in his divine forbearance he had passed over former sins.  (ESV)
 
-> -   **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
+> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
-> -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
 We receive reconciliation through Jesus Christ who is our Lord.
 
 > **Romans 5:11** - More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
 
 > **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
+
+
+# Justification - declared 'not guilty'
+
+Jesus is God revealed in the flesh.
+
+I think, that means that if a person truly has loves and has faith in Him, they are most likely saved.
+
+
+## We must **live** by faith
+
+> **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. (ESV)
+
+> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
+
+
+## We must be found in Jesus
+
+> **Ephesians 2:18** - For through him we both have access in one Spirit to the Father. (ESV)
+
+> **Ephesians 1:1** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are <ins>faithful in Christ Jesus:</ins> (ESV)
+
+> **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
+
+> **Colossians 1:14** - <ins>in whom we have redemption,</ins> the forgiveness of sins. (ESV)
+
+> **Colossians 2:10** - and you have been filled in him, who is the head of all rule and authority. (ESV)
+
+> **II Corinthians 1:21** - And it is <ins>God who establishes us with you in Christ,</ins> and has anointed us, (ESV)
+
+> **Colossians 3:3** - For <ins>you have died, and your life is hidden with Christ in God.</ins> (ESV)
+
+
+## The ones who are in Jesus have been called out of darkness and into His light
+
+> **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. (ESV)
+
+> **Hebrews 10:38** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
+
+> **Romans 1:17** - For in it the righteousness of God is revealed from faith for faith, as it is written, The righteous shall live by faith. (ESV)
+
+
+## Sanctification (turning from sin and being cleaned) is a marker of those who are in Jesus
+
+> **I Corinthians 6:11** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
+
+
+## Not justified by works of the law apart from faith, but justified through faith in the atonement which is by Jesus Christ
+
+> **Galatians 5:4** - You are severed from Christ, you who would be justified by the law; you have fallen away from grace. (ESV)
+
+> **Galatians 2:16** - yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. (ESV)
+
+> **Galatians 3:24** - So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
+
+
+## Justified by our words
+
+> **Matthew 12:37** - for by your words you will be justified, and by your words you will be condemned. (ESV)
+
+
+## Justified by grace
+
+**Titus 3:7** - so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
+
+
+### Justified by faith
+
+We have peace with God:
+
+> **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. (ESV)
+
+1.  Justified by obedience (working faith)
+
+    > **James 2:25** - And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? (ESV)
+
+
+### Justified by the blood of Jesus
+
+> **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. (ESV)
+
+Receiving this is a mixture of belief and obedience.
+Faith is a mixture of belief and obedience.
+
+
+### Believing the Word of Truth - sealed with the promised Holy Spirit
+
+> **Ephesians 1:13-14** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
+> **I Corinthians 12:13** - For in one Spirit we were all baptized into one body—Jews or Greeks, slaves or free—and all were made to drink of one Spirit. (ESV)
+
+Paul 'hears of their faith' (their working faith; faith works; otherwise, what is to hear about) and their love toward the saints. (ESV)
+
+> **Ephesians 1:15-16** - For this reason, because I have heard of your faith in the Lord Jesus and your love toward all the saints, I do not cease to give thanks for you, remembering you in my prayers, (ESV)
+
+Knowledge of Him results in the <ins>heart</ins> being enlightened:
+
+> **Ephesians 1:17-20** - that the God of our Lord Jesus Christ, the Father of glory, may give you a spirit of wisdom and of revelation in the knowledge of him, having the eyes of your hearts enlightened, that you may know what is the hope to which he has called you, what are the riches of his glorious inheritance in the saints, and what is the immeasurable greatness of his power toward us who believe, according to the working of his great might that he worked in Christ when he raised him from the dead and seated him at his right hand in the heavenly places, (ESV)
+
+Names have power. Jesus' name is above every other name:
+
+> **Ephesians 1:21** - far above all rule and authority and power and dominion, and above every name that is named, not only in this age but also in the one to come. (ESV)
+
+> **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved. (ESV)
+
+> **Philippians 2:9** - Therefore God has highly exalted him and bestowed on him the name that is above every name, (ESV)
 
 
 ## Faith, Law, Works
@@ -1906,6 +2016,25 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 > **Psalms 31:23** - Love the LORD, all you his saints! The LORD preserves the faithful but abundantly repays the one who acts in pride. (ESV)
 
 
+### Lordship salvation and free grace - an apparent paradox
+
+-   I believe that free grace without belief and obedience is a lie.
+-   I believe both a heart must be both believing **and** obedient to receive the grace through faith, since I believe true faith is both obedient and believing.
+
+After receiving justification (counted not guilty) through obedient and believing faith, we should continue in obedient and believing faith but the work we do is to be tested and is not essential to our justification:
+
+> **1 Corinthians 3:15** - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
+
+Heresies:
+
+-   free grace without Lordship
+-   Lordship without free grace
+
+I believe that either of these heresies fall under this strong delusion category:
+
+> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  (ESV)
+
+
 ### Yield to God
 
 Submit to God's will:
@@ -1918,7 +2047,7 @@ Submit to Jesus' lordship:
 
 Sow your own life as an investment for Jesus' sake:
 
-> **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+> **Matthew 16:25** - For whoever would save his life will lose it, but <ins>whoever loses his life for my sake will find it.</ins> (ESV)
 
 > **John 12:24-26** - Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
 
@@ -3482,11 +3611,16 @@ A <ins>key thing</ins> here is that the repentant sinner didn't value his presen
 
 ### a life of faith
 
+The followers of Paul the Apostle <ins>live by</ins> faith; those are the righteous ones. It's a lifestyle.
+
+> **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall <ins>live by</ins> faith.
+
 I think there's probably some nuance between between being spared from death, from condemnation and receiving eternal life.
 
-> **Romans 6:22** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.
+> **Romans 6:22** - But now that you have been set free from sin and have <ins>become slaves of God,</ins> the fruit you get leads to sanctification and its end, eternal life.
 
 While Jesus can save someone from dying, I think eternal life the way it's presented is more than that - it's becoming a part of the Truth - it's union with Christ and with God.
+
 I think it's <ins>perpetually having faith in Jesus</ins>, having arrived at true knowledge of Him, and being in relationship with Him and with God.
 
 > **Matthew 19:29** - And everyone who has left houses or brothers or sisters or father or mother or children or lands, for my name's sake, will receive a hundredfold and will inherit eternal life. (ESV)
@@ -3588,6 +3722,10 @@ I think a person needs **some** faith to be saved, and faith works. Salvation ha
 
 > **Ephesians 2:8-9** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
+> **James 1:21-22** - Therefore put away all filthiness and rampant wickedness and <ins>receive with meekness the implanted word, which is able to save your souls.</ins> But <ins>be doers of the word, and not hearers only, deceiving yourselves.</ins> (ESV)
+
+> **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall <ins>live by</ins> faith.
+
 A person must be at least willing to do His will - obedience is the essence of faith:
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
@@ -3653,6 +3791,8 @@ Loving God is obeying His commandments.
 -   We are Jesus' servants
 
 > **Psalms 34:22** - The LORD redeems the life of his servants; none of those who take refuge in him will be condemned. (ESV)
+
+> **II Timothy 2:24-26** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will.
 
 Jesus is God's servant:
 
@@ -3738,6 +3878,14 @@ Servants of Jesus who are servants of God encounter resistance from the world:
 
 > **I John 2:15** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him.
 
+> **II Timothy 4:10** - For Demas, in love with this present world, has deserted me and gone to Thessalonica. Crescens has gone to Galatia, Titus to Dalmatia. (ESV)
+
+> **Hebrews 10:38** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
+
+> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+
+> **Hebrews 10:38** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
+
 > **John 12:25** -  Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life.  (ESV)
 
 > **Matthew 6:30-32** - But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all.
@@ -3762,6 +3910,24 @@ As servants of Jesus, we should encourage other servants of Jesus to maturity:
 
 
 ## Entering into life / the Kingdom of Heaven
+
+Endurance is important:
+
+> **Luke 9:62** - Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
+
+> **I John 2:19** - They went out from us, but they were not of us; for if they had been of us, they would have continued with us. But they went out, that it might become plain that they all are not of us. (ESV)
+
+> **Hebrews 10:36-39** - For you have need of endurance, so that when you have done the will of God you may receive what is promised. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls.
+
+A disciple of Jesus is a servant of Jesus:
+
+> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+
+It requires letting go of this world:
+
+> **II Timothy 4:10** - For Demas, in love with this present world, has deserted me and gone to Thessalonica. Crescens has gone to Galatia, Titus to Dalmatia. (ESV)
+
+> **Matthew 19:22-23** - When the young man heard this he went away sorrowful, for he had great possessions. And Jesus said to his disciples, Truly, I say to you, only with difficulty will a rich person enter the kingdom of heaven. (ESV)
 
 Repentance is important:
 
@@ -3797,22 +3963,45 @@ But through faith in Christ Jesus we are justified and have peace with God.
 
 > **Galatians 3:24-26** - So then, the law was our guardian until Christ came, in order that we might be justified by faith. But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith.
 
-Guideline:
 
--   According to `Matthew 19`, keeping the commandments (10 commandments, from the heart, and in reality, accountable to God / the 2 Great commandments) is important for entering into the Kingdom of Heaven [well], entering into life [well].
-    -   **Matthew 19:16-26** - And behold, a man came up to him, saying, Teacher, what good deed must I do to have eternal life? And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments. He said to him, Which ones? And Jesus said, You shall not murder, You shall not commit adultery, You shall not steal, You shall not bear false witness, Honor your father and mother, and, You shall love your neighbor as yourself. The young man said to him, All these I have kept. What do I still lack? Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me. When the young man heard this he went away sorrowful, for he had great possessions. And Jesus said to his disciples, Truly, I say to you, only with difficulty will a rich person enter the kingdom of heaven. Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. When the disciples heard this, they were greatly astonished, saying, Who then can be saved? But Jesus looked at them and said, With man this is impossible, but with God all things are possible.
-    -   **II Corinthians 11:31** - The God and Father of the Lord Jesus, he who is blessed forever, knows that I am not lying.
-        -   Apply them in truth - keep accountability to God, not merely to other people. God can see.
--   Also, lay up treasure in Heaven.
-    -   **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
--   Also, follow Jesus
-    -   Obey Jesus' commandments
-    -   Become a servant of Jesus
-    -   **Matthew 10:24** - A disciple is not above his teacher, nor a servant above his master.
-    -   **Matthew 18:33** - And should not you have had mercy on your fellow servant, as I had mercy on you?
-    -   We must forgive others
+## Guideline
 
-Follow the law in faith, not works, making yourself accountable to God, not men:
+According to `Matthew 19`, obeying (actually keeping, complying with) the commandments (10 commandments, from the heart, and in reality, accountable to God / the 2 Great commandments) is important for entering into the Kingdom of Heaven [well], entering into life [well]:
+
+> **Matthew 19:16-26** - And behold, a man came up to him, saying, Teacher, what good deed must I do to have eternal life? And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments. He said to him, Which ones? And Jesus said, You shall not murder, You shall not commit adultery, You shall not steal, You shall not bear false witness, Honor your father and mother, and, You shall love your neighbor as yourself. The young man said to him, All these I have kept. What do I still lack? Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me. When the young man heard this he went away sorrowful, for he had great possessions. And Jesus said to his disciples, Truly, I say to you, only with difficulty will a rich person enter the kingdom of heaven. Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. When the disciples heard this, they were greatly astonished, saying, Who then can be saved? But Jesus looked at them and said, With man this is impossible, but with God all things are possible.
+
+> **II Corinthians 11:31** - The God and Father of the Lord Jesus, he who is blessed forever, knows that I am not lying.
+
+Apply them in truth - keep accountability to God, not merely to other people. God can see.
+
+Also, lay up treasure in Heaven:
+
+> **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
+
+Also, <ins>most importantly</ins> believe in the atonement which Jesus provides:
+
+**John 6:55-71** - For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever. Jesus said these things in the synagogue, as he taught at Capernaum. When many of his disciples heard it, they said, This is a hard saying; who can listen to it? But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this? Then what if you were to see the Son of Man ascending to where he was before? It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. )
+
+Also, <ins>most importantly,</ins> become obedient Jesus:
+
+-   Obey Jesus' commandments
+-   Do not follow the pattern of this world; leave this world behind
+-   Become a servant of Jesus
+-   We must forgive others
+
+> **Matthew 10:24** - A disciple is not above his teacher, nor a servant above his master.
+
+> **Matthew 18:33** - And should not you have had mercy on your fellow servant, as I had mercy on you?
+
+Don't shrink back:
+
+> **John 6:63-69** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And he said, This is why I told you that no one can come to me unless it is granted him by the Father. After this many of his disciples turned back and no longer walked with him. So Jesus said to the Twelve, Do you want to go away as well? Simon Peter answered him, Lord, to whom shall we go? You have the words of eternal life, and we have believed, and have come to know, that you are the Holy One of God.
+
+Most importantly, don't betray Jesus:
+
+> **John 6:70-71** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you is a devil. He spoke of Judas the son of Simon Iscariot, for he, one of the Twelve, was going to betray him.
+
+Obey the law (to your knowledge or level of commitment) in faith, not by works, making yourself accountable to God, not men, and accept the righteousness of God through Jesus Christ's atoning sacrifice through having faith in Jesus:
 
 We need to be justified before God, and that is through faith in Jesus Christ.
 
