@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# This takes a non-interactive cli command, such as hoogle and makes it
+# into a repl. Each interactive prompt accepts the parameters for the
+# command invocation.
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+printf "REPL for %s\n" "$CMD"
+
+notblank() {
+    [ $# -gt 0 ]
+}
+
+while true ; do
+    printf "%s " "$@"
+    read -r || break;
+    notblank $REPLY || continue;
+    eval command \"\$@\" "$REPLY"
+done

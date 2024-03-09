@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This replaces text inside and also renames files based on a sed
+# command
+
+test "$#" -gt 1 || exit 1
+
+sed_cmd="$1"
+shift
+
+ms "$sed_cmd" "$@"
+rename "$sed_cmd" "$@"

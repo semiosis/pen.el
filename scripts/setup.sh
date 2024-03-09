@@ -2272,3 +2272,5 @@ agi unison
 # cd unison
 # make
 # )
+
+agi fontforge
