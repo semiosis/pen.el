@@ -914,12 +914,22 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
   (setq text (or text (thing-at-point 'line t)))
 
-  (if (or (major-mode-p 'bible-mode)
-          (major-mode-p 'bible-search-mode))
-      (if (interactive-p)
-          (xc (bible-mode-get-link text))
-        (bible-mode-get-link text))
-    nil))
+  (let ((verse
+         (if (or (major-mode-p 'bible-mode)
+                 (major-mode-p 'bible-search-mode))
+             (if (interactive-p)
+                 (xc (bible-mode-get-link text))
+               (bible-mode-get-link text))
+           nil)))
+    verse))
+
+(defun bible-mode-copy-link-decorated (&optional text)
+  "Follows the hovered verse in a `bible-search-mode' buffer,
+creating a new `bible-mode' buffer positioned at the specified verse."
+  (interactive (list (thing-at-point 'line t)))
+
+  (let ((link
+         (bible-mode-copy-link text)))))
 
 (defun tmux-rename-current-window (name &optional win_id)
   (interactive (list (read-string "new tmux window name: ")))
