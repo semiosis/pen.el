@@ -929,7 +929,15 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (thing-at-point 'line t)))
 
   (let ((link
-         (bible-mode-copy-link text)))))
+         (pen-snc
+          (concat
+           "decorated onelined "
+           (bible-mode-copy-link text)
+           " | cat"))))
+
+    (if (interactive-p)
+        (xc link)
+      link)))
 
 (defun tmux-rename-current-window (name &optional win_id)
   (interactive (list (read-string "new tmux window name: ")))
@@ -1736,6 +1744,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (define-key bible-mode-map (kbd "o") 'bible-mode-verse-other-version)
 (define-key bible-mode-map (kbd "d") 'bible-mode-toggle-word-study)
 (define-key bible-mode-map (kbd "w") 'bible-mode-copy-link)
+(define-key bible-mode-map (kbd "W") 'bible-mode-copy-link-decorated)
 (define-key bible-mode-map (kbd "M-w") 'bible-mode-copy-link)
 
 (define-key bible-mode-map "n" 'bible-mode-next-chapter)
