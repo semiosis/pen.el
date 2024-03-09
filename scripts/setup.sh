@@ -2273,4 +2273,6 @@ agi unison
 # make
 # )
 
+agi rename
+
 agi fontforge

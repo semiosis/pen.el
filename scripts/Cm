@@ -1,0 +1,93 @@
+#!/bin/bash
+export TTY
+
+# set -xv
+
+# this makes it hang
+# ( hs "$(basename "$0")" "$@" </dev/tty ` # Disable tty to pipe content into hs ` )
+
+# example
+# ms -n "s/e/yo/g" sh*
+
+sed_command=
+search_pattern=
+replace_pattern=
+options=
+dryrun=
+debug=
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    -n) {
+        dryrun="y"
+        shift
+    }
+    ;;
+
+    -d) {
+        debug="y"
+        shift
+    }
+    ;;
+
+    -s) {
+        sed_command=s
+
+        search_pattern="$2"
+        shift
+
+        replace_pattern="$2"
+        shift
+    }
+    ;;
+
+    -g) {
+        options+="g"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# my own codemod
+# It's a find and sed in combination
+
+# specify a glob
+# followed by a sed command
+# or maybe I should specify the replacement before the glob
+# eg "*.txt"
+# don't use eg?
+# Do I want to use the glob? It would be useful in some situations for
+# bash to not expand the glob.
+
+if test -n "$sed_command"; then
+    sedcmd="$sed_command~$search_pattern~$replace_pattern~$options"
+else
+    sedcmd="$1"
+    shift
+fi
+
+# exec 2> >(mnm)
+
+test "$dryrun" = "y" && printf -- "%s\n" "$sedcmd"
+
+# This goes over the glob
+for fp in "$@"
+do
+    rp="$(realpath "$fp")"
+    if [ -f "$rp" ]; then
+        if test "$dryrun" = "y"; then
+            # echo "$sedcmd"
+            # exit 0
+            cat "$rp" | sed -n "${sedcmd}p" 1>&2
+        else
+            if test "$debug" = "y"; then
+                echo "sed -i \"$sedcmd\" \"$rp\"" 1>&2
+                cat "$rp" | sed -n "${sedcmd}p" 1>&2
+                echo
+            else
+                cat "$rp" | sed -n "${sedcmd}p" 1>&2
+                sed --follow-symlinks -i "$sedcmd" "$rp"
+            fi
+        fi
+    fi
+done

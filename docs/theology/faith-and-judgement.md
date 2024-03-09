@@ -103,6 +103,13 @@ Yes, I believe that Jesus can save a person who believes in His name. But He is 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
 
 
+### Faith is not mere belief, but faith is walking as Abraham did
+
+We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
+
+> **Hebrews 4:1-2** - Therefore, while the promise of entering his rest still stands, let us fear lest any of you should seem to have failed to <ins>reach it.</ins> For good news came to us just as to them, but the message they heard did not benefit them, because they were not <ins>united by faith</ins> with those who listened. (ESV)
+
+
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
 
 It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved. We expect to receive salvation:
@@ -281,19 +288,38 @@ God loves those who love Him and keep His commandments:
 
 > **Nehemiah 1:5** - And I said, O Lord God of heaven, the great and awesome God who keeps covenant and steadfast love with <ins>those who love him and keep his commandments,</ins>
 
--   If a person has an obedient and believing heart - a heart of faith - towards Jesus, then they will be saved:
+If a person has an obedient and believing heart - a heart of faith - towards Jesus, then they <ins>will be</ins> saved:
+
 -   If a person truthfully confesses (admits) with their mouth that Jesus is Lord, they have an obedient heart.
+    -   This must result in the person obeying Jesus; freely forgiving others, loving others as He loved us, <ins>keeping Jesus' commandments</ins>
 -   If they believe in their heart that God raised Jesus from the dead, they believe Jesus, and believe God who sent Him.
+    -   This must result in the person accepting forgiveness for sin
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
-I believe that a person is not eternally saved until they have in their heart <ins>obedient faith</ins> in Jesus Christ's name.
+I believe that a person does not have any <ins>security</ins> of eternal salvation unless they have in their heart <ins>obedient, believing faith</ins> in Jesus Christ, and even then there is often a race and a journey to receive it.
 
-I believe that obedience is as intrinsic to faith as belief is.
+I believe that obedience is as intrinsic and necessary to faith as belief is.
 
-In other words, I believe one must make Jesus Christ their Lord **and** their Saviour for any guarantee at being saved; one must have obedient faith.
+The good news must be united by obedient faith (putting Jesus' words into action):
 
-'Once saved always saved' wouldn't apply until someone is a follower of Jesus.
+> **Hebrews 4:1-2** - Therefore, while the promise of entering his rest still stands, let us fear lest any of you should seem to have failed to reach it. For good news came to us just as to them, but the message they heard did not benefit them, because they were not united by faith with those who listened. (ESV)
+
+> **Philippians 2:12** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+
+I believe in 'once saved, always saved, while doing the will of God'. So someone must be a both a believer and a follower of Jesus.
+
+> **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
+
+Those who love Him, obey Him:
+
+> **James 1:12** - Blessed is the man who remains steadfast under **trial,** for when he has stood the test he will receive the <ins>crown of life,</ins> which God has promised to those who love him. (ESV)
+
+The crown of life is gifted to those who are obedient, and have been tested:
+
+> **Revelation 2:10** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be **tested,** and for ten days you will have tribulation. Be faithful unto death, and I will give you the <ins>crown of life.</ins> (ESV)
+
+And I also think people have free will to sabotage their race.
 
 Clearly believe means also to be obedient to because the ones that <ins>follow Jesus</ins> (which means obey His commandments) are the ones who are counted as believing (**pisteuo**):
 
@@ -496,6 +522,8 @@ These people just sat around watching Jesus but didn't obey Him:
 
 ### Obedience to Jesus has everything to do with receiving Him, and receiving Salvation
 
+> **Hebrews 3:18** - And to whom did he swear that they would not enter his rest, but to those who were disobedient? (ESV)
+
 > **Ezekiel 33:31** - And they come to you as people come, and they sit before you as my people, and <ins>they hear what you say but they will not do it</ins>; for with lustful talk in their mouths they act; their heart is set on their gain. (ESV)w
 
 Jesus' sheep follow Jesus. Jesus knows them:
@@ -527,6 +555,8 @@ Let us continue following and obeying Jesus, and not turn back:
 Judas betrayed Jesus after being chosen:
 
 > **John 6:70-71** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you <ins>is a devil.</ins> He spoke of Judas the son of Simon Iscariot, for he, one of the Twelve, was going to betray him.
+
+> **Hebrews 6:4-8** - For it is impossible to restore again to repentance those who have once been enlightened, who have tasted the heavenly gift, and have shared in the Holy Spirit, and have tasted the goodness of the word of God and the powers of the age to come, if they then fall away, since they are crucifying once again the Son of God to their own harm and holding him up to contempt. For land that has drunk the rain that often falls on it, and produces a crop useful to those for whose sake it is cultivated, receives a blessing from God. But if it bears thorns and thistles, it is worthless and near to being cursed, and its end is to be burned. (ESV)
 
 
 ### The way is easy that leads to destruction
@@ -1058,7 +1088,7 @@ We make it our aim to please him:
 
 > **II Corinthians 5:9-12** - So whether we are at home or away, we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil. Therefore, knowing the <ins>fear of the Lord</ins>, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. We are not commending ourselves to you again but giving you cause to boast about us, so that you may be able to answer those who boast about outward appearance and not about what is in the heart.
 
-> **Proverbs 1:7** -The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
+> **Proverbs 1:7** - The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
 
 > **Proverbs 2:5** - then you will understand the fear of the Lord and find the knowledge of God.
 
@@ -3519,9 +3549,11 @@ There's no contradiction between what the 10 commandments say and loving one's n
 
 ### However, we must submit to God's righteousness through faith in Jesus Christ - this is what saves
 
+It's not with the mind that a person believes, but with the heart:
+
 > **Romans 10:6-13** - But the righteousness based on faith says, Do not say in your heart, Who will ascend into heaven? (that is, to bring Christ down) or Who will descend into the abyss? (that is, to bring Christ up from the dead).  But what does it say? The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.  For **with the heart one believes (G4100 pisteuo) and is justified**, and with the mouth one confesses and is saved.  For the Scripture says, Everyone who believes in him will not be put to shame.  For there is no distinction between Jew and Greek; the same Lord is Lord of all, bestowing his riches on all who call on him.  For everyone who calls on the name of the Lord will be saved.
 
-But what does it take for the heart to truly believe? Because that's the condition.
+But what does it take for the <ins>heart</ins> to truly believe? Because that's the condition. When the heart truly believes, a person is obedient.
 
 More obedience may still need to take place for that individual to arrive at justifying faith, and God may be allowing you to come to your faith.
 
@@ -7011,6 +7043,13 @@ However, I believe keeping Jesus' word and obeying Jesus also leads to communion
     -   Forgiving others, loving others (charity, etc.)
     -   Bringing others to Christ
     -   Prove to be a disciple of Jesus
+
+
+### Abiding forever vs abiding - there's a difference
+
+> **Psalms 125:1** - Those who trust in the Lord are like Mount Zion, which cannot be moved, but abides forever.
+
+> **I John 2:17** - And the world is passing away along with its desires, but whoever does the <ins>will of God</ins> abides forever.
 
 
 ## The fruit (work) of disciples of Jesus then abides

@@ -47,11 +47,16 @@ A map should mainly simply connect places together.
   (message "%s" "Go to the map")
   (ascii-adventures-open-map (f-join aa/bewilderness-dir "house.org")))
 
+(defun aa/go (place)
+  (interactive)
+  ;; (message "%s" "Go to the go")
+  (ascii-adventures-open-map (f-join aa/bewilderness-dir (concat place ".org"))))
+
 ;; This could be a jump-gate like in Ray's Maze.
 ;; Or it could be a 'sign' or it could be an immovable object.
 ;; Or it could be 'writing' on the wall or something.
 (comment
- (defclass aa/static-object ()           ; No superclasses
+ (defclass aa/static-object ()          ; No superclasses
    ((name :initarg :name
           ;; This gives the default name. It is empty.
           :initform ""

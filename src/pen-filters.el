@@ -221,6 +221,5 @@
   (hot-expand "<q" "QUOTE"))
 
 (define-key org-mode-map (kbd "M-l M-f M-e") 'pen-org-quote-selection)
-(define-key org-mode-map (kbd "M-l M-r M-e") 'pen-org-quote-selection)
 
 (provide 'pen-filters)
