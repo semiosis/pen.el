@@ -5999,6 +5999,8 @@ We must have faith in Jesus, we must hope in Jesus, and we must love like Jesus:
     
     > **I Corinthians 11:24-29** - and when he had given thanks, he broke it, and said, This is my body which is for you. Do this in remembrance of me.  In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me.  For as often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.  Whoever, therefore, eats the bread or drinks the cup of the Lord in an unworthy manner will be guilty of profaning the body and blood of the Lord.  Let a person examine himself, then, and so eat of the bread and drink of the cup.  For anyone who eats and drinks without discerning the body eats and drinks judgment on himself.
     
+    I believe that taking the Eucharist absolutely has spiritual and physical effects, and the body and blood of Jesus are received through faith.
+    
     > **I Corinthians 11:30** - That is why many of you are weak and ill, and some have died.  But if we judged ourselves truly, we would not be judged.  But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world.
     
     > **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
