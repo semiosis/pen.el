@@ -323,13 +323,16 @@ The righteousness of faith:
 </tbody>
 </table>
 
-Abraham was justified because of belief:
+Abraham had <ins>righteousness attributed to him when he believed God, while he had an obedient and faithful heart towards God:</ins>
 
 > **Genesis 15:5-6** - And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
 
-The blessing was <ins>assured by God because of obedience</ins> (the obedient works of faith brought <ins>assurance</ins> for God's blessing):
+The blessing was <ins>assured to him by God because of obedience</ins> (the obedient works of faith brought him <ins>assurance</ins> for God's blessing):
 
 > **Genesis 22:17-18** - I will surely bless you, and I will surely multiply your offspring as the stars of heaven and as the sand that is on the seashore. And your offspring shall possess the gate of his enemies, and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice.
+
+Therefore, we should believe with an obedient heart, and obey to receive God's assurance.
+I personally believe that it's God's role to justify, not ours, and if we want assurance for that, we should obey God.
 
 Abraham was obedient the entire time, even when God counted Abraham's belief as righteousness.
 We should, likewise <ins>be obedient when we believe.</ins>
