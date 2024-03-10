@@ -212,6 +212,8 @@ Love (obedience) and belief:
 
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.
 
+The righteousness of faith in Jesus:
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -259,6 +261,63 @@ Love (obedience) and belief:
 </tr>
 </tbody>
 </table>
+
+We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Verse Ref</th>
+<th scope="col" class="org-left">Believing God as Abraham believed God</th>
+<th scope="col" class="org-left">Walking obediently in the footsteps of faith of our father Abraham</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">Galatians 3:6</td>
+<td class="org-left">Abraham believed God, and it was counted to him as righteousness</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">James 2:21-23</td>
+<td class="org-left">Abraham believed God, and it was counted to him as righteousness</td>
+<td class="org-left">he offered up his son Isaac on the altar</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Genesis 26:4-5</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws</td>
+</tr>
+</tbody>
+</table>
+
+> **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
+
+Abraham believed and obeyed:
+
+> **Genesis 26:4-5** - I will multiply your offspring as the stars of heaven and will give to your offspring all these lands. And in your offspring all the nations of the earth shall be blessed, because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws. (ESV)
+
+In this way we must have faith in God the Father of Jesus Christ, and believe and obey Jesus because God commanded it:
+
+> **Romans 4:20-25** - No distrust made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised. That is why his faith was counted to him as righteousness. But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification.
+
+We should believe and obey:
+
+> **Deuteronomy 30:20** - loving the LORD your God, obeying his voice and holding fast to him, for he is your life and length of days, that you may dwell in the land that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them. (ESV)
 
 Believe and obey (follow) Jesus:
 
