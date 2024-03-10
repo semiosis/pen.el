@@ -98,9 +98,13 @@ To anyone who receives Jesus, even those who believe on His name, Jesus has give
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
-Yes, I believe that Jesus can save a person who believes in His name. But He is the judge.
+Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who is disobedient to Jesus Christ will be see life, and I believe that.
 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
+
+Whoever truly believes Jesus is obedient to Jesus:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 
 ### Faith is not mere belief, but faith is walking as Abraham did
