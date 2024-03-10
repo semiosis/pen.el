@@ -520,6 +520,8 @@ Faith works through love; we must be like Jesus - exercising sacrificial, mercif
 
 Grace is free, but a person **must** become obedient - God gives the heart to obey, but a person must desire to do God's will to receive it.
 
+> **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
+
 
 ### Work may be burned up, and the person who has a believing and obedient heart is still saved
 
@@ -892,6 +894,21 @@ Jesus is sitting in power.
 > **Hebrews 1:13** - And to which of the angels has he ever said, Sit at my right hand until I make your enemies a footstool for your feet?
 
 
+### Jesus is the Lamb of God who sits with God on God's throne
+
+Jesus Christ is our God. Forever, He is Father God's revelation to us of Himself.
+
+> **Revelation of John 7:9** - After this I looked, and behold, a great multitude that no one could number, from every nation, from all tribes and peoples and languages, standing before the throne and before the Lamb, clothed in white robes, with palm branches in their hands, (ESV)
+
+> **Revelation of John 7:10-12** - and crying out with a loud voice, Salvation belongs to our **God who sits on the throne, and to the Lamb!** And all the angels were standing around the throne and around the elders and the four living creatures, and they fell on their faces before the throne and worshiped God, saying, Amen! Blessing and glory and wisdom and thanksgiving and honor and power and might be to our God forever and ever! Amen. (ESV)
+
+> **Revelation of John 7:17** - For the <ins>Lamb in the midst of the throne</ins> will be their shepherd, and he will guide them to springs of living water, and God will wipe away every tear from their eyes. (ESV)
+
+> **Revelation of John 19:4** - And the twenty-four elders and the four living creatures fell down and worshiped God who was seated on the throne, saying, Amen. Hallelujah! (ESV)
+
+> **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
+
+
 ### Follow Jesus for eternal life. Jesus is the Bread of Life
 
 > **Luke 18:18-22** - And a ruler asked him, Good Teacher, <ins>what must I do to inherit eternal life?</ins> And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and <ins>come, follow me.</ins>
@@ -1012,9 +1029,11 @@ What I mean by relationship is:
 
     > **Galatians 6:7-8** - Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. (ESV)
 
-3.  We must be servants of Christ
+3.  We **must** be servants of Christ
 
     > **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as servants of Christ, doing the will of God from the heart,
+    
+    > **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
 
 4.  We must remain faithful to Jesus Christ
 
