@@ -264,6 +264,10 @@ The righteousness of faith in Jesus:
 
 We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
 
+> **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+The righteousness of faith:
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -283,6 +287,20 @@ We must have believing, obedient faith in God regarding Jesus Christ His Son as 
 </thead>
 
 <tbody>
+<tr>
+<td class="org-left">Genesis 15:6</td>
+<td class="org-left">And he believed the Lord, and he counted it to him as righteousness</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Genesis 22:17-18</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">because you have obeyed my voice</td>
+</tr>
+
+
 <tr>
 <td class="org-left">Galatians 3:6</td>
 <td class="org-left">Abraham believed God, and it was counted to him as righteousness</td>
@@ -304,6 +322,16 @@ We must have believing, obedient faith in God regarding Jesus Christ His Son as 
 </tr>
 </tbody>
 </table>
+
+Abraham was justified because of belief:
+
+> **Genesis 15:5-6** - And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
+
+The blessing was <ins>assured by God because of obedience</ins> (the obedient works of faith brought <ins>assurance</ins> for God's blessing):
+
+> **Genesis 22:17-18** - I will surely bless you, and I will surely multiply your offspring as the stars of heaven and as the sand that is on the seashore. And your offspring shall possess the gate of his enemies, and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice.
+
+Abraham was <ins>justified when He believed</ins> but faith was <ins>completed by the works of faith</ins>:
 
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
 
