@@ -481,9 +481,22 @@ Repentance:
 -   Someone who has <ins>only obedience to Jesus' precepts but unbelieving and unsubmissive</ins> to the righteousness of God <ins>must repent</ins> and come to have a believing heart.
 
 If people from either category do not repent, then beware because God has the ability and jurisdiction to <ins>cast that person out - graft them out of Christ.</ins> Also, let's not become proud, but stand in awe.
-Jesus said He will not cast people out.
+
+God draws the person to Jesus:
+
+> **John 6:44-46** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. (ESV)
+
+Jesus said He will not cast people out <ins>who have come to Him:</ins>
 
 > **John 6:37** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. (ESV)
+
+We must be a servant of Jesus to not be cast out. We must have obedience:
+
+> **John 12:26** - If <ins>anyone serves me, he must follow me;</ins> and <ins>where I am, there will my servant be also.</ins> If anyone serves me, the Father will honor him. (ESV)
+
+Coming to Jesus involves <ins>denying ourself</ins> and taking up our cross daily to follow Him:
+
+> **Luke 9:23** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. (ESV)
 
 You **must** believe:
 
@@ -543,6 +556,10 @@ Grace is free, but a person **must** become obedient - God gives the heart to ob
 > **John 12:20-26** - Now among those who went up to worship at the feast were some Greeks. So these came to Philip, who was from Bethsaida in Galilee, and asked him, Sir, we wish to see Jesus. Philip went and told Andrew; Andrew and Philip went and told Jesus. And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
 
 AMEN!!
+
+Obey God, obey Jesus:
+
+> **Mark 10:17-21** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.
 
 
 ## Gospel
