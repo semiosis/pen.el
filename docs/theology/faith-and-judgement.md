@@ -10660,7 +10660,23 @@ By God's grace I've been set free from sin, and brought into a relationship with
 > **Matthew 5:16** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
 
 
-# Jesus Christ is Lord! :)
+# [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
+
+The Only True God is the God and Father of Jesus Christ, and Jesus Christ who He Sent.
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+> **Jude 1:25** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
+
+> **Ephesians 3:20-21** - Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, to him be glory in the church and in Christ Jesus throughout all generations, forever and ever. Amen. (ESV)
+
+> **I Chronicles 29:11** - Yours, O LORD, is the greatness and the power and the glory and the victory and the majesty, for all that is in the heavens and in the earth is yours. Yours is the kingdom, O LORD, and you are exalted as head above all. (ESV)
+
+> **Revelation of John 19:1** - After this I heard what seemed to be the loud voice of a great multitude in heaven, crying out, Hallelujah! Salvation and glory and power belong to our God, (ESV)
+
+> **I Timothy 6:15-16** - which he will display at the proper time—he who is the blessed and only Sovereign, the King of kings and Lord of lords, who alone has immortality, who dwells in unapproachable light, whom no one has ever seen or can see. To him be honor and eternal dominion. Amen. (ESV)
+
+> **Revelation of John 17:14** - They will make war on the Lamb, and the Lamb will conquer them, for he is Lord of lords and King of kings, and those with him are called and chosen and faithful. (ESV)
 
 > **I Timothy 1:17** - To the King of ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen.
 
