@@ -2377,3 +2377,4 @@ org-zettelkasten
 org-tidy
 org-tag-beautify
 itail
+doct

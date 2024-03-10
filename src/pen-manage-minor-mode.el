@@ -142,7 +142,8 @@
 
         (org-mode
          (on auto-highlight-symbol-mode)
-         (off visual-line-mode))
+         (off visual-line-mode)
+         (on org-verse))
 
         (yaml-mode
          (on auto-highlight-symbol-mode))
