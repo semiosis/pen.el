@@ -2446,3 +2446,11 @@ let g:syntax_on = 1
 map <F12> ;call ToggleCommentSyntax()<CR>
 map <F10> ;call ToggleSyntax()<CR>
 map <F11> ;call ToggleBrightness()<CR>
+
+function! DiffPrevRev(count)
+    exe "silent !git-dp.sh ".expand("%")." ".count
+    redraw!
+endfunction
+
+command! -nargs=1 DiffPrevRev call DiffPrevRev(<args>)
+map <silent> <Leader>= ;<C-U>DiffPrevRev(v:count1)<CR>
