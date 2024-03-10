@@ -518,6 +518,8 @@ Faith works through love; we must be like Jesus - exercising sacrificial, mercif
 
 [No changed life salvation? Refuting Free Grace and @jacksmack77 - YouTube](https://www.youtube.com/watch?v=_eek1ezwp_A&t=14s)
 
+Grace is free, but a person **must** become obedient - God gives the heart to obey, but a person must desire to do God's will to receive it.
+
 
 ### Work may be burned up, and the person who has a believing and obedient heart is still saved
 
