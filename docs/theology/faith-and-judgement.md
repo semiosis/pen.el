@@ -171,6 +171,10 @@ God provides the new heart:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
+So to be saved a person must have an obedient heart, prepared for the good works which are prepared for us to walk in:
+
+> **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
+
 The tax collector here has an obedient heart (yielding to Jesus), but the Pharisee in the story has a self-righteous heart:
 
 > **Luke 18:9-14** - He also told this parable to some who trusted in themselves that they were righteous, and treated others with contempt: Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. <ins>But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other.</ins> For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.
@@ -356,6 +360,10 @@ We should, likewise <ins>be obedient when we believe.</ins>
 Abraham was <ins>justified when He believed</ins> but faith was <ins>completed by the works of faith</ins> and Abraham was given assurance of the blessing:
 
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
+
+So to be saved a person <ins>must have an obedient heart, prepared for the good works which are prepared for us to walk in:</ins>
+
+> **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
 
 Abraham believed and obeyed:
 
@@ -5935,7 +5943,7 @@ Obeying Jesus:
 > **Jeremiah 31:33-34** - But this is the covenant that I will make with the house of Israel after those days, declares the LORD: I will put my law within them, and I will write it on their hearts.  And I will be their God, and they shall be my people.  And no longer shall each one teach his neighbor and each his brother, saying, Know the LORD, for they shall all know me, from the least of them to the greatest, declares the LORD.  For I will forgive their iniquity, and I will remember their sin no more.  (ESV)
 
 
-### Abiding in the Truth
+## Abiding in Jesus; Abiding in the Truth
 
 > **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
 
@@ -5966,25 +5974,66 @@ It's really important to come to communion with the type of heart that would yea
 
 > **Leviticus 17:11** - For the life of the flesh is in the blood, and I have given it for you on the altar to make atonement for your souls, for it is the blood that makes atonement by the life.
 
-Communion is spiritual:
+We must have faith in Jesus, we must hope in Jesus, and we must love like Jesus:
 
-> **John 6:53-58** - So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you.  Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day.  For my flesh is true food, and my blood is true drink.  Whoever feeds on my flesh and drinks my blood abides in me, and I in him.  As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me.  This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever.
+> **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love. (ESV)
 
-> **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
+1.  Communion is spiritual, and helps us to abide in Him
 
-> **Hebrews 10:19** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh,
+    > **John 6:53-58** - So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you.  Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day.  For my flesh is true food, and my blood is true drink.  Whoever feeds on my flesh and drinks my blood abides in me, and I in him.  As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me.  This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever.
+    
+    We remember Jesus as we take communion:
+    
+    -   We give thanks to God
+    -   We proclaim the Lord Jesus' death until He comes
+    -   We examine ourselves and compare our hearts to the heart of the Lord Jesus
+    -   We consider what our Lord Jesus has done for us on the cross
+    -   Before we take communion, we want to examine our own heart to see how we could be more like Jesus
+        -   How we can be more selfless
+        -   How we can be more loving
+        -   How we can be more like disciples of Jesus
+        -   How we can be more trusting of Jesus
+            -   How we can be more believing of who He is and believing of His atoning sacrifice
+            -   How we can be more obedient to His commandments
+    -   We believe that Jesus will return
+    
+    > **I Corinthians 11:24-29** - and when he had given thanks, he broke it, and said, This is my body which is for you. Do this in remembrance of me.  In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me.  For as often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.  Whoever, therefore, eats the bread or drinks the cup of the Lord in an unworthy manner will be guilty of profaning the body and blood of the Lord.  Let a person examine himself, then, and so eat of the bread and drink of the cup.  For anyone who eats and drinks without discerning the body eats and drinks judgment on himself.
+    
+    > **I Corinthians 11:30** - That is why many of you are weak and ill, and some have died.  But if we judged ourselves truly, we would not be judged.  But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world.
+    
+    > **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
+    
+    > **Hebrews 10:19** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh,
+    
+    > **Didache 10:6** - Let grace come, and let this world pass away. Hosanna to the Son of David. If any one is holy let him come (to the Eucharist); if any one is not, let him repent. Maranatha. Amen.
+    
+    Proclaim the Lord's death until He comes:
+    
+    > **I Corinthians 11:25-26** - In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me. For as often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.
 
-> **Didache 10:6** - Let grace come, and let this world pass away. Hosanna to the Son of David. If any one is holy let him come (to the Eucharist); if any one is not, let him repent. Maranatha. Amen.
+2.  Getting Jesus' words in us helps us to abide in Him
 
-Proclaim the Lord's death until He comes:
+    If a person believes Jesus' words their faith will grow.
+    
+    Father God authorizes people to come to Jesus, but that person must come to Jesus (of their own volition, I think).
+    
+    > **John 6:61-65** - But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this?  Then what if you were to see the Son of Man ascending to where he was before?  It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.  But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And he said, This is why I told you that no one can come to me unless it is granted him by the Father.
+    
+    > **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. (ESV)
+    
+    > **John 15:3-4** - Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.
+    
+    > **John 15:7** - If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. (ESV)
 
-> **I Corinthians 11:25-26** - In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me. For as often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.
+3.  Living the way Jesus commanded us helps us to abide in Him
 
-If a person believes Jesus' words their faith will grow.
-
-Father God authorizes people to come to Jesus, but that person must come to Jesus (of their own volition, I think).
-
-> **John 6:61-65** - But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this?  Then what if you were to see the Son of Man ascending to where he was before?  It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.  But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And he said, This is why I told you that no one can come to me unless it is granted him by the Father.
+    Living as Jesus instructed us to live. Living as Jesus also lived.
+    
+    > **I John 3:24** - Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+    
+    > **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
+    
+    > **I John 4:16** - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
 
 # The day
