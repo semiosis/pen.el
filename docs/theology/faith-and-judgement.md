@@ -98,13 +98,28 @@ To anyone who receives Jesus, even those who believe on His name, Jesus has give
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
-Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who is disobedient to Jesus Christ will be see life, and I believe that.
+Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who is disobedient to Jesus Christ will see life, and I believe that.
 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
 
 Whoever truly believes Jesus is obedient to Jesus:
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+The word for 'believe' which is used in the New Testament is the verb for faith and actually means to 'trust':
+
+-   [In John 3:16, 'Believe' Means More than Believe | by Eric Sentell | Koinonia | Medium](https://medium.com/koinonia/in-john-3-16-believe-means-more-than-believe-b62d350818bc)
+
+> The ancient Greek word for “believe” is
+> [*pisteuó*](https://biblehub.com/greek/4100.htm), which derives from
+> “belief” or “[*pistis*](https://biblehub.com/greek/4102.htm).” The
+> word “/pistis/” stems from
+> [*peíthō*](https://biblehub.com/greek/3982.htm), to persuade or be
+> persuaded.
+> 
+> The Greek word *pisteuó* carries connotations of deep trust and
+> confidence. It means to believe, to entrust, to have confidence in
+> something.
 
 
 ### Faith is not mere belief, but faith is walking as Abraham did
@@ -123,8 +138,6 @@ It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** i
 > **Acts 3:16** - And his name—by faith in his name—has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.
 
 > **Acts 4:7-10** - And when they had set them in the midst, they inquired, By what power or by what name did you do this? Then Peter, filled with the Holy Spirit, said to them, Rulers of the people and elders, if we are being examined today concerning a good deed done to a crippled man, by what means this man has been healed, let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
-
-> **Acts 4:10** - let it be known to all of you and to all the people of Israel that by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead—by him this man is standing before you well.
 
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
@@ -811,7 +824,7 @@ But we must be walking in the light, just as He is in the light.
 
 Jesus is also extremely merciful to the woman who was brought before Jesus:
 
-> **John 8:10-11** - Jesus stood up and said to her, Woman, where are they? Has no one condemned you? She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more.]] (ESV)
+> **John 8:10-11** - Jesus stood up and said to her, Woman, where are they? Has no one condemned you? She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
 
 
 ### Simply tell the truth from God. We must not reject Jesus
@@ -1164,7 +1177,7 @@ Confess:
     6   see GREEK for 3674
     7   see GREEK for 3056
 
-1.  Baptism is an appeal to God for a good conscience through the [death and] resurrection of Jesus Christ's, taking part it in
+1.  Baptism is an appeal to God for a good conscience through the [death and] resurrection of Jesus Christ's, taking part in it
 
     I think baptism of water is an **appeal** to God and identifying oneself into Christ's death and resurrection but the sacrament **maybe** is not strictly required to be saved (as far as I understand).
     
@@ -1268,7 +1281,7 @@ The most important thing is this faith - but God certainly uses our works of fai
 
 Our salvation comes from faith alone in God for the promise of forgiveness from sin and hope of eternal life with Christ Jesus for those who believe in God who raised Jesus Christ from the dead, our Lord, who was delivered up for our trespasses and raised for our justification.
 
-It's because of what Jesus Christ has done that we are justified, not because of anything we have done. We must in God to justify us. And we must hold to our faith.
+It's because of what Jesus Christ has done that we are justified, not because of anything we have done. We must trust in God to justify us we hold to our faith.
 
 > **Romans 4:18-25** - <ins>In hope he believed (G4100 pisteuo) against hope</ins>, that he should become the father of many nations, as he had been told, So shall your offspring be. He did not weaken in faith when he considered his own body, which was as good as dead (since he was about a hundred years old), or when he considered the barrenness of Sarah's womb. No distrust made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised. That is why his faith was counted to him as righteousness. But the words it was counted to him were not written for his sake alone, but for ours also. <ins>It will be counted to us who believe (G4100 pisteuo) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification.</ins>
 
