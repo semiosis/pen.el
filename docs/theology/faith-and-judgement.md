@@ -357,9 +357,13 @@ I personally believe that it's God's role to justify, not ours, and if we want a
 
 Abraham was obedient the entire time, even when God counted Abraham's belief as righteousness.
 We should, likewise <ins>be obedient when we believe.</ins>
-Abraham was <ins>justified when He believed</ins> but faith was <ins>completed by the works of faith</ins> and Abraham was given assurance of the blessing:
+Abraham was <ins>justified when He believed with an obedient heart</ins> but faith was <ins>completed by the works of faith</ins> and Abraham was given assurance of the blessing:
 
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
+
+Without an obedient heart the so-called belief <ins>doesn't qualify as belief.</ins> Anyone who claims to have faith in Jesus, yet does not obey Him is a liar:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 So to be saved a person <ins>must have an obedient heart, prepared for the good works which are prepared for us to walk in:</ins>
 
@@ -450,6 +454,10 @@ The good news must be united by obedient faith (putting Jesus' words into action
 I believe in 'once saved, always saved, while doing the will of God'. So someone must be a both a believer and a follower of Jesus.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
+
+Doing the will of God is what it means to be led by the Spirit. So you have to **do** the will of God, being a servant of Christ under the law of Christ, to have the blessing of not being condemned by the law of Moses:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
 Those who love Him, obey Him:
 
@@ -738,7 +746,7 @@ Jesus' sheep follow Jesus. Jesus knows them:
     5   disciple):--follow, reach.
     6   see GREEK for 1
 
-People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him.
+People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him, and common grace even to the evildoer.
 
 > **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
 
@@ -892,7 +900,7 @@ We are implored to strive to follow Jesus to our best ability:
 
 But we must be walking in the light, just as He is in the light.
 
-> **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
+> **I John 1:7** - But <ins>**if we walk in the light**</ins>, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
 
 
 ### Do not condemn others. Speak the truth and leave judgement to the Judge
@@ -1065,6 +1073,10 @@ What I mean by relationship is:
 -   being led by the Spirit of God,
 -   etc.
 
+Led by the Spirit of God is doing God's will:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
+
 1.  We must abide by his teaching
 
     > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son.
@@ -1110,6 +1122,10 @@ What I mean by relationship is:
     It's the will of God:
     
     > **I Thessalonians 4:3** - For this is the will of God, your sanctification: that you abstain from sexual immorality;
+    
+    And doing the will of God is what it means to be led by the Spirit of God:
+    
+    > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
 6.  We **must** clean ourselves up with God's help
 
@@ -1196,19 +1212,49 @@ We must obey Jesus' commandments to know Jesus, just as Jesus obeyed Father God'
 ### Atonement
 
 Jesus' sacrifice is the only atonement for our sin we need. It's comprehensive.
-It must be received through faith in Jesus Christ.
+It must be received <ins>through faith</ins> in Jesus Christ - and that is not mere belief but obedience:
 
-> **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
+> **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins. (ESV)
 
-> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
+We have been crucified with Christ and we died to sin, as Jesus cancelled our debt, so now we **must** cease to walk in sin, and not go back to the vomit:
 
-> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+> **Colossians 2:13-14** - And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
-We receive reconciliation through Jesus Christ who is our Lord.
+We should do what is valuable in stopping the indulgence of the flesh, and that is not human precepts, but insntead following Christ and His teachings:
+
+> **Colossians 2:21-23**- Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.
+
+Instead, let's follow Jesus Christ's teachings:
+
+> **Colossians 3:1-4** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory.
+
+If people including free-grace Christians do not repent from sin, they will still receive the wrath of God:
+
+> **Colossians 3:5-10**- Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+
+We **must** serve our Lord:
+
+> **Colossians 3:23-24** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.
+
+Walk how Jesus taught us to walk, with faith in Him, and receive
+
+> **I John 1:7** - But <ins>**if we walk in the light**</ins>, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
+
+Be led by God's Spirit by doing God's will:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
+
+We receive reconciliation through Jesus Christ <ins>who is our Lord</ins>:
 
 > **Romans 5:11** - More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
 
-> **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
+We are being made into people who walk in the light, not just intellectually but actually obeying God's commandment to love Him and to love one another:
+
+> **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many <ins>will be made righteous.</ins> (ESV)
+
+Our loving obedience abounds more as we grow in the knowledge of Jesus Christ, filled with the fruit of righteousness which looks like stopping sin and being obedient to Jesus, letting Jesus' righteousness shine through us:
+
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
 
 ### Whoever makes an appeal to God, calls upon His name will be saved
@@ -1475,11 +1521,36 @@ We receive reconciliation through Jesus Christ who is our Lord.
 > **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
 
 
-# Justification - declared 'not guilty'
+# Common grace
+
+We are meant to exercise common grace to other people.
+
+When we pray, we should desire to **do** God's will, as Jesus has prayed for us to remain here to do His will:
+
+> **Matthew 6:9-12** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
+
+Jesus has us remaining here to be sanctified in the Truth:
+
+> **John 17:15-17** - I do not ask that you take them out of the world, but that you keep them from the evil one. They are not of the world, just as I am not of the world. Sanctify them in the truth; your word is truth.
+
+Jesus wants us to do God's will, and love Him and be obedient to Him:
+
+> **John 8:41-44** - You are doing what your father did. They said to him, We were not born of sexual immorality. We have one Father—even God. Jesus said to them, If God were your Father, you would **love me**, for I came from God and I am here. I came not of my own accord, but he sent me. Why do you not understand what I say? It is because you cannot bear to hear my word. You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies.
+
+God has common grace for evildoers, and for the unjust, and Jesus wants us to help work that common grace into the lives of other people:
+
+> **Matthew 5:44-45** - But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. (ESV)
+
+See, our actions reflect who our Father is:
+
+> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+
+
+# Justification - declared 'not guilty', if faithful to Jesus
 
 Jesus is God revealed in the flesh.
 
-I think, that means that if a person loves and has faith in Him, they are most likely saved.
+I think, that means that if a person **loves** (is obedient to) and has faith in Him, they are most likely saved.
 
 
 ## We must **live** by faith
@@ -2015,7 +2086,7 @@ We want to obtain the glory of our Lord Jesus Christ - we do this by being Chris
 We **must** have faith in Jesus for the righteousness of God that comes by faith.
 We must believe what He's achieved, and we must be born-again of the Spirit.
 
-> **Romans 10:4** - For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo**).
+> **Romans 10:4** - For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus).
 
 Saved, and being saved. Being cleaned while believing.
 
@@ -2423,7 +2494,7 @@ We have to submit to God's righteousness, accepting that we are sinners, and acc
 
 > **Luke 5:32** - I have not come to call the righteous but sinners to repentance.
 
-> **Romans 10:3-4** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo**). (ESV)
+> **Romans 10:3-4** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus). (ESV)
 
 > **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
 
@@ -2909,7 +2980,11 @@ But it's God that tests the faith, and God that justifies. That's why I don't li
 
 > **Galatians 5:5** - For through the Spirit, by faith, we ourselves eagerly **wait for the hope of righteousness**.
 
-> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law.
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law.
+
+We must be **doing** the will of God to not be under the law:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
 
@@ -3458,7 +3533,7 @@ not asking us to renovate our old life.
 Renovating is seeking to establish ones own righteousness while not submitting to God's righteousness.
 Following God's commandments is great - a person can renovate for a while but when presented with the Gospel of Jesus they **must** submit to God's righteousness and have faith in Jesus.
 
-> **Romans 10:3-4** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo**).
+> **Romans 10:3-4** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus).
 
 Seek God's kingdom and His righteousness first of all:
 
@@ -3564,7 +3639,11 @@ And faith intrinsically includes obedience to Christ.
     -   belief in Christ's atoning sacrifice
     -   you **must** forgive one another as Christ has forgiven you
 
-> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law.
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law.
+
+Doing the will of God is what it means to be led by the Spirit of God:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
 > **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
 
@@ -3656,7 +3735,7 @@ Moses said we must listen to Jesus:
 
 We must obey Jesus:
 
-> **Romans 10:4** - For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo**).
+> **Romans 10:4** - For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus).
 
 (G4100 **pisteuo**) is <ins>practicing</ins> faith.
 
@@ -6714,7 +6793,7 @@ God, please have mercy. I repent from all sexual immorality, and from endorsing 
 
 ### Without following Jesus Christ's commandments, gay 'marriage' would never be justifiable
 
-> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law.
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law.
 
 But we have to speak and act as those who are to be judged under the law of liberty:
 
@@ -7819,7 +7898,11 @@ The universe is upheld by the word of Jesus' power.
     
     > **Matthew 7:3-5** - Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
     
-    > **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+    > **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+    
+    We must be **doing** the will of God to not be under the law:
+    
+    > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
 
 ### God's kingdom is from Heaven to Earth
@@ -7944,11 +8027,21 @@ We're not <ins>under</ins> / condemned by the Mosaic law but we still don't enco
 
 The law is good and it still exists, and God still uses the law. All of it. We are supposed to stand for truth and live righteously as the light of the world.
 
+If a person rejects this because they don't like law then they are lying to themself because Jesus teaches that not a jot will pass away:
+
+> **John 12:48** - <ins>The one who rejects me and does not receive my words has a judge</ins>; the <ins>word that I have spoken will judge him</ins> on the last day.
+
+Heaven and earth is still around, so therefore the law still exists, but those who are doing the will of God and being led by God's spirit, following Jesus are not **under** it nor condemned by it - that is a <ins>conditional promise</ins>:
+
+> **Luke 16:17** - But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
+
 We all fall short of the glory of God and require the God's righteousness imputed to us through faith in Jesus, but having the righteousness of God through faith in Jesus is not license to sin.
 
 Jesus Christ is the end of the law to all who believe, but grace isn't an excuse to sin.
 
 God's commandments (especially the 10 Commandments; loving God and your neighbour) are still binding on us - written on our heart when we get born-again.
+
+Right after I got [born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) I wrote about the [10 commandments being written on my heart](https://web.archive.org/web/20220703044748/https://mullikine.github.io/posts/the-tapestry-of-truth/), and I believe it was the [Holy Spirit inspiring me](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/).
 
 
 ### Even the smallest of laws still come into effect in certain circumstances
@@ -8865,7 +8958,7 @@ We are bondservants of Christ and it is freedom.
 **If** you are led by the Spirit, you are not under the Law.
 If you are disobedient to God then you are under the Law.
 
-> **Galatians 5:18** - But if you are led by the Spirit, you are not under the Law.
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the Law.
 
 > **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God.
 
