@@ -369,11 +369,34 @@ Abraham believed and obeyed:
 
 > **Genesis 26:4-5** - I will multiply your offspring as the stars of heaven and will give to your offspring all these lands. And in your offspring all the nations of the earth shall be blessed, because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws. (ESV)
 
-In this way we must have faith in God the Father of Jesus Christ, and believe and obey Jesus because God commanded it:
+In this way we must have faith in God the Father of Jesus Christ, and believe and obey Jesus because God commanded it.
+
+According to Paul, Abraham trusted God and that trust he had meant he didn't
+waver concerning the promise of God, but he grew strong in his faith as he have
+glory to God.
+
+That's right, and Abraham's faith included:
+
+-   faithfulness
+-   giving glory to God
+-   obedience
+-   works of faith
+
+What I mean to say is, the trust in God that Abraham had concerning the promise
+of God is exhibited plainly in Abraham's action, and was faithful, enduring,
+unwavering, over an amount of time.
 
 > **Romans 4:20-25** - No distrust made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised. That is why his faith was counted to him as righteousness. But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification.
 
-We should believe and obey:
+Therefore, when we trust wholeheartedly in God who has raised from the dead Jesus Christ (who is our Lord, meaning we obey Him),
+and because we believe, we then inevitably produce working faith.
+
+Our faith is exhibited plainly in our action. Our own actions and way of expressing that faith paint a unique picture, with a faith towards God
+that may be expressed a little bit differently, in different works of faith, or simply keeping Jesus Christ's words and not denying His name - patient endurance.
+
+But it is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith. All glory to God alone.
+
+We should both believe and obey:
 
 > **Deuteronomy 30:20** - loving the LORD your God, obeying his voice and holding fast to him, for he is your life and length of days, that you may dwell in the land that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them. (ESV)
 
