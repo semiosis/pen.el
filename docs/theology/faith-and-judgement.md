@@ -1396,6 +1396,17 @@ So obeying Jesus Christ is having faith in God:
 > **I Peter 1:14-16** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy.
 
 
+### Jesus Christ has explained what the faith of Abraham looks like for someone who believes in Him
+
+Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
+
+> **Luke 19:1-10** - He entered Jericho and was passing through. And there was a man named Zacchaeus. He was a chief tax collector and was rich. And he was seeking to see who Jesus was, but on account of the crowd he could not, because he was small of stature. So he ran on ahead and climbed up into a sycamore tree to see him, for he was about to pass that way. And when Jesus came to the place, he looked up and said to him, Zacchaeus, hurry and come down, for I must stay at your house today. So he hurried and came down and received him joyfully. And when they saw it, they all grumbled, He has gone in to be the guest of a man who is a sinner. And Zacchaeus stood and said to the Lord, Behold, Lord, the half of my goods I give to the poor. And if I have defrauded anyone of anything, I restore it fourfold. <ins>And Jesus said to him, Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost.</ins> (ESV)
+
+> **Hebrews 6:20** - where Jesus has gone as a forerunner on our behalf, having become a high priest forever after the order of Melchizedek. (ESV)
+
+> **Matthew 5:20** - For I tell you, unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven. (ESV)
+
+
 ## The sons of disobedience are the ones who are conformed to sexual immorality, impurity, or covetousness, etc.
 
 > **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
@@ -5799,6 +5810,13 @@ It is the sovereign work of God to make someone born-again of the Spirit, but th
 > **Acts 14:22** - strengthening the souls of the disciples, encouraging them to continue in the faith, and saying that through many tribulations we must enter the kingdom of God.
 
 
+## Salvation absolutely involves repenting from sin
+
+Zacchaeus was repentant, and was saved through Jesus as he had the faith of Abraham, but towards Jesus:
+
+> **Luke 19:1-10** - He entered Jericho and was passing through. And there was a man named Zacchaeus. He was a chief tax collector and was rich. And he was seeking to see who Jesus was, but on account of the crowd he could not, because he was small of stature. So he ran on ahead and climbed up into a sycamore tree to see him, for he was about to pass that way. And when Jesus came to the place, he looked up and said to him, Zacchaeus, hurry and come down, for I must stay at your house today. So he hurried and came down and received him joyfully. And when they saw it, they all grumbled, He has gone in to be the guest of a man who is a sinner. And Zacchaeus stood and said to the Lord, Behold, Lord, the half of my goods I give to the poor. And if I have defrauded anyone of anything, I restore it fourfold. And Jesus said to him, <ins>Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost.</ins> (ESV)
+
+
 ## Inheriting the kingdom
 
 
@@ -5809,11 +5827,13 @@ It is the sovereign work of God to make someone born-again of the Spirit, but th
 
 ### We must repent and be sanctified
 
-> **Galatians 5:19-21** -  Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.  I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+> **Galatians 5:19-21** -  Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.  I warn you, as I warned you before, that those who do such things <ins>will not inherit the kingdom of God.</ins> (ESV)
 
-> **I Corinthians 6:9-10** - Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God. (ESV)
+But only the ones who are truly remorseful.
 
-> **Galatians 5:21** - envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+> **I Corinthians 6:9-10** - Do you not know that <ins>the unrighteous will not inherit the kingdom of God?</ins> Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God. (ESV)
+
+> **Galatians 5:21** - envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things <ins>will not inherit the kingdom of God.</ins>
 
 
 ### We must be a good and faithful servant
@@ -10781,6 +10801,16 @@ It's obedience which leads to righteousness, even the righteousness of faith.
     12  All glory to You, God.
     13  In Jesus Christ's name I pray,
     14  AMEN!!
+
+    1  Dear Heavenly Father, Jehovah God,
+    2  Please forgive, me, LORD.
+    3  I want to serve You, God.
+    4  I don't deserve any of Your grace, LORD.
+    5  Thank You, God, for not condemning me, because Jesus has paid the price for my sin.
+    6  I believe that. I know it's already paid for.
+    7  Nevertheless, I live to serve You, God, and to be conformed into the image of Your Son, Jesus Christ.
+    8  In Jesus Christ's name I pray,
+    9  AMEN!!
 
 > -   **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
 
