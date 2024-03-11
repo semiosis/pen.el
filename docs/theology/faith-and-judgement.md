@@ -142,6 +142,28 @@ It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** i
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
 
+## By God's grace God has saved us and provided us with a means to having faith in Him
+
+God has called us out of darkness and into His marvelous light:
+
+> **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. (ESV)
+
+Saving faith does come (originate) from hearing through the word of Christ. I believe that saving faith must arrive and settle in the heart:
+
+> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+
+There are some doctrines that are so essential that to deny them is to not be a Christian:
+
+> **I John 4:2** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, (ESV)
+
+It's not enough to be saved just by believing that some things are true.
+Let's not focus on minimums, but maximums:
+
+[John Piper: How Much Error Can I Believe and Still Be Saved? - YouTube](https://www.youtube.com/watch?v=MMBn3I-Rvi0)
+
+I believe that trusting Jesus and obedience in the heart towards Jesus is required.
+
+
 ## Receiving Jesus
 
 
@@ -746,7 +768,7 @@ Jesus' sheep follow Jesus. Jesus knows them:
     5   disciple):--follow, reach.
     6   see GREEK for 1
 
-People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him, and common grace even to the evildoer.
+People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him, and common grace even to the one who hasn't arrived [yet] at serving Jesus.
 
 > **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
 
