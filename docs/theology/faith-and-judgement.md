@@ -102,6 +102,27 @@ Yes, I believe that Jesus can save a person who believes in His name. But He is 
 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
 
+I think Jesus calls us to pursue perfection through following Him, and we should definitely give it a go:
+
+> **John 17:23** - I in them and you in me, that <ins>they may become perfectly one,</ins> so that the world may know that you sent me and loved them even as you loved me.
+
+Paul presses on to try to achieve a high level of Christlikeness, and his rational is that Jesus made him (Paul) his own (i.e. Jesus loved him),
+and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm convinced that's the motivation). He wants to be with Jesus.
+
+> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+
+> **John 12:26** - If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+
+I'm pretty convinced that what Jesus means by the following is that by giving up worldly treasure in the pursuit
+of Jesus, heavenly treasure is acquired. I'd say it's likely that the heavenly treasure is simply helping those people.
+Selling what a person possesses and giving to the poor is actually serving Jesus, so doing that is already starting to obediently follow Jesus.
+
+> **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
+
+Jesus' perfect example of patience is for us to follow in patient [endurance], trusting in Him:
+
+> **I Timothy 1:16** - But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience as an example to those who were to believe in him for eternal life. (ESV)
+
 Whoever truly believes Jesus is obedient to Jesus:
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
@@ -894,6 +915,10 @@ All of these I believe belong under the umbrella of faith, not works:
 -   Taking communion is not 'dead works'. It's obedience.
 -   Getting baptised is not 'dead works'. It's obedience.
 -   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
+
+Faith presses on to be like Jesus:
+
+> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
 God will be the judge of who has had faith in Jesus; who has obeyed Him and who has trusted in Him and who has made Him their Lord and who has accepted Him as their Saviour.
 
