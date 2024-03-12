@@ -199,7 +199,7 @@ So to be saved a person must have an obedient heart, prepared for the good works
 
 The tax collector here has an obedient heart (yielding to Jesus), but the Pharisee in the story has a self-righteous heart:
 
-> **Luke 18:9-14** - He also told this parable to some who trusted in themselves that they were righteous, and treated others with contempt: Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. <ins>But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other.</ins> For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.
+> **Luke 18:9-14** - He also told this parable to some who trusted in themselves that they were righteous, and treated others with contempt: Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. <ins>But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other.</ins> For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.his house justified, rather than the other.\_ For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.
 
 It's those that believe in him (trust Him, receive Him, <ins>expect to receive Him</ins>, have an obedient heart towards Him) that receive forgiveness of sins through his name:
 
@@ -254,6 +254,19 @@ Love (obedience) and belief:
 > **John 16:27-28** - for the Father himself loves you, because you have loved me and have believed that I came from God. I came from the Father and have come into the world, and now I am leaving the world and going to the Father.
 
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that whatever you ask the Father in my name, he may give it to you.
+
+It's possible to follow Jesus' voice even before having come to perfect
+knowledge and obedience, but Jesus **knows** His sheep:
+
+> **John 10:26-29** - but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. (ESV)
+
+Jesus' sheep: 
+
+-   hear Jesus' voice
+-   follow Him (they're being obedient)
+-   Jesus knows them
+
+I believe that what this says is that at the point Jesus knows you listen to His voice and obey His voice, He counts you as one of His sheep and He will not let you go.
 
 The righteousness of faith in Jesus:
 
@@ -375,7 +388,12 @@ The blessing was <ins>assured to him by God because of obedience</ins> (the obed
 > **Genesis 22:17-18** - I will surely bless you, and I will surely multiply your offspring as the stars of heaven and as the sand that is on the seashore. And your offspring shall possess the gate of his enemies, and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice.
 
 Therefore, we should believe with an obedient heart, and obey to receive God's assurance.
-I personally believe that it's God's role to justify, not ours, and if we want assurance for that, we should obey God.
+
+I believe that every one of Jesus' sheep have a believing, obedient heart, and Jesus knows
+who they are and no-one will be able to snatch them from Jesus' hand.
+
+I personally believe that it's God's role to justify, not ours, and if we want personal assurance that we are saved, we
+must seek and follow Jesus, and arrive at the door.
 
 Abraham was obedient the entire time, even when God counted Abraham's belief as righteousness.
 We should, likewise <ins>be obedient when we believe.</ins>
@@ -420,7 +438,11 @@ and because we believe, we then inevitably produce working faith.
 Our faith is exhibited plainly in our action. Our own actions and way of expressing that faith paint a unique picture, with a faith towards God
 that may be expressed a little bit differently, in different works of faith, or simply keeping Jesus Christ's words and not denying His name - patient endurance.
 
-But it is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith. All glory to God alone.
+> **Colossians 3:17** - And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
+
+But it is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith - and our obedience gives us confidence. All glory to God alone.
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as <ins>he is so also are we in this world.</ins> (ESV)
 
 We should both believe and obey:
 
@@ -464,6 +486,10 @@ If a person has an obedient and believing heart - a heart of faith - towards Jes
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
 I believe that a person does not have any <ins>security</ins> of eternal salvation unless they have in their heart <ins>obedient, believing faith</ins> in Jesus Christ, and even then there is often a race and a journey to receive it.
+
+The knowledge of the truth is for those who abide in Jesus' word and follow Him:
+
+> **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free.
 
 I believe that obedience is as intrinsic and necessary to faith as belief is.
 
@@ -704,7 +730,7 @@ Repentance and coming to the light are absolutely part of the gospel!
 
 The Way is Jesus Christ - <ins>believing in and becoming obedient to</ins> Jesus Christ.
 
-It's being begotten as a servant of God, a disciple of Jesus.
+It's being begotten as a servant of God, a disciple of Jesus, one of Jesus' sheep.
 
 **Believe:**
 
@@ -1244,7 +1270,7 @@ We have been crucified with Christ and we died to sin, as Jesus cancelled our de
 
 We should do what is valuable in stopping the indulgence of the flesh, and that is not human precepts, but insntead following Christ and His teachings:
 
-> **Colossians 2:21-23**- Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.
+> **Colossians 2:21-23** - Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.
 
 Instead, let's follow Jesus Christ's teachings:
 
@@ -1252,7 +1278,9 @@ Instead, let's follow Jesus Christ's teachings:
 
 If people including free-grace Christians do not repent from sin, they will still receive the wrath of God:
 
-> **Colossians 3:5-10**- Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+
+> **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
 
 We **must** serve our Lord:
 
@@ -2182,6 +2210,8 @@ When we repent and clean ourselves up, we allow Jesus' light to shine through us
     
     -   Stop sexual immorality.
     -   Stop idolatry.
+    -   Stop gossip and slander.
+    -   Stop being hateful of people.
     
     > **I Corinthians 10:7-14** - Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play. We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. Therefore let anyone who thinks that he stands take heed lest he fall. No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it. Therefore, my beloved, flee from idolatry.
 
@@ -6410,6 +6440,16 @@ Not all religions are equal. There is only one true God, the Father of Jesus Chr
 
 > **Ephesians 4:24** - and to put on the new self, created after the likeness of God in true righteousness and holiness. (ESV)
 
+The new self should be <ins>Christ formed in you:</ins>
+
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being <ins>renewed in knowledge after the image of its creator.</ins>
+
+> **Colossians 1:15** - He is the image of the invisible God, the firstborn of all creation. (ESV)
+
+> **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth <ins>until Christ is formed in you!</ins>
+
+> **John 8:31-32** - So Jesus was saying to those Jews who had believed Him, “If you **continue in My word**, then you are truly disciples of Mine; and **you will know the truth**, and the truth will make you free.” (NASB)
+
 
 ## Created for God's glory
 
@@ -6460,6 +6500,71 @@ Not all religions are equal. There is only one true God, the Father of Jesus Chr
 > **I John 5:20** - And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent.
+
+
+# The sheepfold
+
+> **Psalms 23:4** - Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. (ESV)
+
+When the person starts trusting Jesus they are justified.
+But they must reach the end to be saved.
+
+However, I believe that, so long as Jesus
+knows that you're trusting in Him, he knows
+you're His sheep.
+
+The question is, when it is considered they have entered the door
+and received eternal life and been saved?
+
+Jesus says a person is saved when they enter the door.
+
+> **John 10:9** - I am the door. If anyone enters by me, <ins>he will be saved</ins> and will go in and out and find pasture. (ESV)
+
+The following verse says they <ins>will</ins> (when they have eternal life)
+be unable to be snatched away from His hand, when they are saved.
+
+> **John 10:28** - I give them eternal life, and they will never perish, <ins>and no one will snatch them out of my hand.</ins> (ESV)
+
+     1                                                    ||
+     2          |     |    |  |     |                     ||
+     3      Unbelieving    |  | Jesus' voice              ||
+     4    and disobedient  |  |     |    |                ||
+     5        goat    |    |  |     |    |   |            || Saved by entering through Jesus
+     6          |     |    |  |     |    |   |  |        ||||
+     7          |     |    |  |     |    |   |  | |  Jesus, the good shepherd - John 10:11
+     8          |     |    |  |     |                Jesus, the Door - John 10:7
+     9      Trusting--------------------------------------|--->
+    10  sheep (justifed)   |  |                          ||||     pasture
+    11          |     |   _|                              ||
+    12          |     |  / \        Jesus knows his       ||
+    13      Trusting-----   \   -->     sheep             ||
+    14  sheep (justifed)     \_/                          ||
+    15      (wandering)                                   ||
+    16          |     |                                   ||
+    17                                                    ||
+    18                                                    ||    Thief comes to
+    19      unbelieving          dead works              /||\    steal, kill
+    20      dead worker --------------------------------- || ->    and destroy
+    21      (thief/goat)                                  ||       John 10:1
+
+> **John 10:7** - So Jesus again said to them, Truly, truly, I say to you, I am the door of the sheep. (ESV)
+
+> **John 10:1** - Truly, truly, I say to you, he who does not enter the sheepfold by the door but climbs in by another way, that man is a thief and a robber. (ESV)
+
+> **John 10:11** - I am the good shepherd. The good shepherd lays down his life for the sheep. (ESV)
+
+It's possible to follow Jesus' voice even before having come to perfect
+knowledge and obedience, but Jesus **knows** His sheep:
+
+> **John 10:26-29** - but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. (ESV)
+
+Jesus' sheep: 
+
+-   hear Jesus' voice
+-   follow Him (they're being obedient)
+-   Jesus knows them
+
+I believe that what this says is that at the point Jesus knows you listen to His voice and obey His voice, He counts you as one of His sheep and He will not let you go.
 
 
 # Marriage
@@ -9096,7 +9201,7 @@ Jesus is the Saviour of the world.
 
 > **Isaiah 43:10-11** - You are my witnesses, declares the Lord, and my servant whom I have chosen, that you may know and believe me and understand that I am he. Before me no god was formed, nor shall there be any after me. I, I am the Lord, and besides me there is no savior.
 
-God saves through Jesus. 
+God saves through Jesus.
 
 > **Jude 1:25** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen.
 
@@ -9310,7 +9415,7 @@ Repent, for the kingdom of heaven is near:
 
 > **Matthew 3:2** - Repent, for the kingdom of heaven is at hand. (ESV)
 
-Follow the 10 commandments from the heart in truth as far as to not idolize or covet your material possessions, leave behind your old life and follow Him (Jesus). 
+Follow the 10 commandments from the heart in truth as far as to not idolize or covet your material possessions, leave behind your old life and follow Him (Jesus).
 
 > **Luke 18:18-22** - And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
 
@@ -9358,7 +9463,7 @@ Be perfect as your heavenly Father is perfect:
 
 > **Matthew 5:48** - You therefore must be perfect, as your heavenly Father is perfect. (ESV)
 
-Be accountable to God. Do not seek reward from others but from God. Focus on spiritual disciplines for the right reasons. 
+Be accountable to God. Do not seek reward from others but from God. Focus on spiritual disciplines for the right reasons.
 
 > **Matthew 6:1-18** - Beware of practicing your righteousness before other people in order to be seen by them, for then you will have no reward from your Father who is in heaven. Thus, when you give to the needy, sound no trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may be praised by others. Truly, I say to you, they have received their reward. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. And your Father who sees in secret will reward you. And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and at the street corners, that they may be seen by others. Truly, I say to you, they have received their reward. But when you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you. And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him. Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil. For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
 
@@ -10929,7 +11034,7 @@ It's obedience which leads to righteousness, even the righteousness of faith.
      2  Your will be done.
      3  We praise Your name! We praise You God! And, Lord Jesus Christ, we praise You also.
      4  And Holy Spirit, we praise You also!
-     5  Thank You God for Your mercy! 
+     5  Thank You God for Your mercy!
      6  Thank You Father God for making a way for us to be reconciled with You through Your Son Jesus Christ!
      7  Thank You Jesus for dying on the cross to pay the price for our sins.
      8  Thank You Father God for raising Jesus from the dead!
