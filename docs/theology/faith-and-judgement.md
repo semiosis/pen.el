@@ -281,7 +281,7 @@ knowledge and obedience, but Jesus **knows** His sheep:
 
 > **John 10:26-29** - but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. (ESV)
 
-Jesus' sheep: 
+Jesus' sheep:
 
 -   hear Jesus' voice
 -   follow Him (they're being obedient)
@@ -1028,7 +1028,48 @@ Jesus makes intercession for those who draw near to God through Him:
 
 > **Hebrews 7:25** - Consequently, he is able to save to the uttermost those who draw near to God through him, since he always lives to make intercession for them.
 
-Likewise, the Holy Spirit is Almighty God. The Godhead is a bit of a mystery though, and I don't want to cause division over the specifics.
+Likewise, the Holy Spirit is Almighty God.
+
+I affirm the Nicene creed wholeheartedly:
+
+     1  We believe in one God,
+     2        the Father almighty,
+     3        maker of heaven and earth,
+     4        of all things visible and invisible.
+     5  
+     6  And in one Lord Jesus Christ,
+     7        the only Son of God,
+     8        begotten from the Father before all ages,
+     9             God from God,
+    10             Light from Light,
+    11             true God from true God,
+    12        begotten, not made;
+    13        of the same essence as the Father.
+    14        Through him all things were made.
+    15        For us and for our salvation
+    16             he came down from heaven;
+    17             he became incarnate by the Holy Spirit and the virgin Mary,
+    18             and was made human.
+    19             He was crucified for us under Pontius Pilate;
+    20             he suffered and was buried.
+    21             The third day he rose again, according to the Scriptures.
+    22             He ascended to heaven
+    23             and is seated at the right hand of the Father.
+    24             He will come again with glory
+    25             to judge the living and the dead.
+    26             His kingdom will never end.
+    27  
+    28  And we believe in the Holy Spirit,
+    29        the Lord, the giver of life.
+    30        He proceeds from the Father and the Son,
+    31        and with the Father and the Son is worshiped and glorified.
+    32        He spoke through the prophets.
+    33        We believe in one holy catholic and apostolic church.
+    34        We affirm one baptism for the forgiveness of sins.
+    35        We look forward to the resurrection of the dead,
+    36        and to life in the world to come. Amen.
+
+AMEN!!
 
 ["Agnus Dei" with Michael W  Smith & the First Dallas Choir & Orchestra - YouTube](https://www.youtube.com/watch?v=db0t_NUq5bw)
 
@@ -6599,7 +6640,7 @@ knowledge and obedience, but Jesus **knows** His sheep:
 
 > **John 10:26-29** - but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. (ESV)
 
-Jesus' sheep: 
+Jesus' sheep:
 
 -   hear Jesus' voice
 -   follow Him (they're being obedient)
