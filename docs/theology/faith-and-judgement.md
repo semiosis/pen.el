@@ -983,6 +983,14 @@ Jesus is One with Almighty God and their will is in perfect alignment.
 
 > **John 10:30** - I and the Father are one.
 
+By posing the question, Jesus doesn't deny that he is good:
+
+> **Mark 10:18** - And Jesus said to him, Why do you call me good? <ins>No one is good except God alone.</ins> (ESV)
+
+I believe there is only one good shepherd, and that is Jesus Christ, Immanuel (God with us, God incarnate):
+
+> **John 10:14-15** - <ins>I am the good shepherd.</ins> I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
+
 Jesus makes intercession for those who draw near to God through Him:
 
 > **Hebrews 7:25** - Consequently, he is able to save to the uttermost those who draw near to God through him, since he always lives to make intercession for them.
