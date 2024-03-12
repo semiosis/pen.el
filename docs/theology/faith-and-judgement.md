@@ -1,5 +1,5 @@
 This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
-I'm trying to speak the truth in mercy.
+I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing.
 
 I agree whole heartedly with Keith Green here:
 
@@ -280,7 +280,9 @@ Having faith in God involves following Jesus:
 > **Hebrews 10:32-39** - But recall the former days when, <ins>after you were enlightened, you endured a hard struggle with sufferings, sometimes being publicly exposed to reproach and affliction</ins>, and sometimes being partners with those so treated. For you had compassion on those in prison, and you joyfully accepted the plundering of your property, since you knew that you yourselves had a better possession and an abiding one. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that <ins>when you have done the will of God you may receive what is promised</ins>. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But <ins>we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls</ins>.
 
 
-## <ins>Belief</ins> and <ins>Obedience</ins> are both essential for permanent abiding in Christ
+## I believe that a loving, trusting ( <ins>Belief</ins> and <ins>Obedience</ins> ) heart for Jesus Christ is essential for permanent abiding in Him
+
+> **I John 4:19** - We love because he first loved us. (ESV)
 
 If someone obeys Jesus they should arrive at belief in Jesus and who He is and what He has accomplished; they should accept Him:
 
@@ -528,7 +530,7 @@ Jesus commands us to take His yoke (obey Him) and learn from Him (believe Him):
 
 > **Matthew 11:29** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. (ESV)
 
-Whoever believes Jesus obeys Jesus:
+Whoever believes Jesus obeys Jesus - His sheep hear his voice, <ins>trust and obey</ins>:
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
@@ -633,7 +635,7 @@ God draws the person to Jesus:
 
 > **John 6:44-46** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. (ESV)
 
-Jesus said He will not cast people out <ins>who have come to Him:</ins>
+Jesus said He will not cast people out <ins>who have come to Him</ins>:
 
 > **John 6:37** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. (ESV)
 
