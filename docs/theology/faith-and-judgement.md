@@ -119,11 +119,16 @@ Selling what a person possesses and giving to the poor is actually serving Jesus
 
 > **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
 
-Jesus' perfect example of patience is for us to follow in patient [endurance], trusting in Him:
+Jesus' perfect example of patience in mercy towards Paul is to:
+
+-   reassure us that we can trust Jesus as we hope for the promise of eternal life to be received from Him,
+-   for us to see that trusting in Him, we both love God and are loved by God, following Him in patient [endurance], trusting in Him, as we receive mercy
 
 > **I Timothy 1:16** - But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience as an example to those who were to believe in him for eternal life. (ESV)
 
-Whoever truly believes Jesus is obedient to Jesus:
+> **Jude 1:21** - keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+
+Whoever truly believes Jesus trusts in and is obedient to Jesus:
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
@@ -810,7 +815,7 @@ These people just sat around watching Jesus but didn't obey Him:
 
 > **Hebrews 3:18** - And to whom did he swear that they would not enter his rest, but to those who were disobedient? (ESV)
 
-> **Ezekiel 33:31** - And they come to you as people come, and they sit before you as my people, and <ins>they hear what you say but they will not do it</ins>; for with lustful talk in their mouths they act; their heart is set on their gain. (ESV)w
+> **Ezekiel 33:31** - And they come to you as people come, and they sit before you as my people, and <ins>they hear what you say but they will not do it</ins>; for with lustful talk in their mouths they act; their heart is set on their gain. (ESV)
 
 Jesus' sheep follow Jesus. Jesus knows them:
 
@@ -3822,11 +3827,25 @@ Doing the will of God is what it means to be led by the Spirit of God:
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
+We must have obedient faith in Jesus, as God keeps His covenant with those who put their faith in Him:
+
+> **Nehemiah 1:5** - And I said, O Lord God of heaven, the great and awesome God who keeps covenant and steadfast love with those who love him and keep his commandments,
+
+We are under the law of Christ:
+
 > **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+We must bear one another's burdens:
 
 > **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ.
 
-> **Luke 17:4** - and if he sins against you seven times in the day, and turns to you seven times, saying, I repent, you must forgive him.
+Otherwise, the Son of Man will send his angels, and gather out of his kingdom all causes of sin and all law-breakers, and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth:
+
+> **Matthew 13:41-42** - The Son of Man will send his angels, and they will gather out of his kingdom all causes of sin and all law-breakers, and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth.
+
+We must forgive our family in Christ:
+
+> **Luke 17:3-4** - Pay attention to yourselves! If your brother sins, rebuke him, and if he repents, forgive him, and if he sins against you seven times in the day, and turns to you seven times, saying, I repent, you must forgive him.
 
 > **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so <ins>you also must forgive.</ins> (ESV)
 
@@ -3886,7 +3905,7 @@ The 10 Commandments and the 2 Great commandments are special because when follow
 
 And we are <ins>commanded</ins> (even as Christians not <ins>under the law</ins>) to love our neighbours:
 
-> **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>.􀀂(ESV)
+> **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>. (ESV)
 
 > **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
@@ -3924,7 +3943,7 @@ We obtain a strong faith by the righteousness of Jesus Christ.
 
 This requires obedience to Jesus:
 
-> **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>.􀀂(ESV)
+> **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>. (ESV)
 
 A person must receive the word:
 
