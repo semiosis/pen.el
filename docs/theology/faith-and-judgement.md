@@ -1723,13 +1723,40 @@ I think, that means that if a person **loves** (is obedient to) and has faith in
 > **I Corinthians 6:11** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
 
 
-## Not justified by works of the law apart from faith, but justified through faith in the atonement which is by Jesus Christ
+## We are justified by faith in God who delivered up for our trespasses and <ins>raised Jesus Christ from the dead for our justification</ins>
 
 > **Galatians 5:4** - You are severed from Christ, you who would be justified by the law; you have fallen away from grace. (ESV)
 
 > **Galatians 2:16** - yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. (ESV)
 
 > **Galatians 3:24** - So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
+
+We have to have faith which is characteristic of Abraham's faith, but with regards to following the Lord Jesus.
+
+Our justification comes from having trusting faith in God our Father, who has raised from the dead Jesus Christ
+our **Lord** (our brother who we obey); the Jesus Christ who
+was delivered up for our trespasses and raised
+from the dead for our justification.
+
+Obeying God is obeying Jesus. Having faith in God is having faith in Jesus.
+
+He was raised **for** our justification; now in order to be justified by faith, we simply need to put our faith in Him and follow Him.
+
+We have to die to our old self and live for Christ, simply abiding in Him.
+
+If we walk in the footsteps of the faith that our father Abraham had before he was circumcised, but having faith in God by obeying Jesus Christ who was raised for our justification then we have Jesus Christ's righteousness; we have the righteeousness of faith in God.
+
+> **Romans 4:22-23** - That is why his faith was counted to him as righteousness. But <ins>the words it was counted to him were not written for his sake alone,</ins> (ESV)
+
+And the promise will be ours also, because Jesus is our Lord, and we belong to Him.
+
+> **Romans 4:24-25** - but for ours also. It will be counted to us who believe in him who <ins>raised from the dead Jesus our Lord,</ins> who was delivered up for our trespasses and raised for our justification. (ESV)
+
+> **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+So what Jesus is saying is quite similar - we must have the faith that Abraham had when he put Isaac on the Altar, but in regards to following Jesus. We must give up our old life to live for Christ:
+
+> **Luke 9:23-24** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
 
 
 ## Justified by our words
