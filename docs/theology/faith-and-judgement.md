@@ -122,7 +122,7 @@ Selling what a person possesses and giving to the poor is actually serving Jesus
 Jesus' perfect example of patience in mercy towards Paul is to:
 
 -   reassure us that we can trust Jesus as we hope for the promise of eternal life to be received from Him,
--   for us to see that trusting in Him, we both love God and are loved by God, following Him in patient [endurance], trusting in Him, as we receive mercy
+-   for us to see that trusting in Him, we are loved by God and led by His love, following Him in patient [endurance] out of a response of love for Him, trusting in Him, as we receive mercy from Him
 
 > **I Timothy 1:16** - But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience as an example to those who were to believe in him for eternal life. (ESV)
 
@@ -153,6 +153,26 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
 
 > **Hebrews 4:1-2** - Therefore, while the promise of entering his rest still stands, let us fear lest any of you should seem to have failed to <ins>reach it.</ins> For good news came to us just as to them, but the message they heard did not benefit them, because they were not <ins>united by faith</ins> with those who listened. (ESV)
+
+The demons have belief, but they don't have a response of love towards God:
+
+> **James 2:19** - You believe that God is one; you do well. Even the demons believe—and shudder! (ESV)
+
+We must know that God loved us and sent his Son to be the propitiation for our sins. We must believe:
+
+> **I John 4:10** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.
+
+We must obey:
+
+> **II John 1:6** - And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it.
+
+The knowledge comes from having obeyed God's voice. Love becomes perfected in us when we abide in God:
+
+> **I John 4:15-17** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world.
+
+> **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+> **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
 
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
@@ -340,6 +360,20 @@ The righteousness of faith in Jesus:
 <td class="org-left">John 10:26-27</td>
 <td class="org-left">but you do not believe because you are not part of my flock</td>
 <td class="org-left">My sheep hear my voice, and I know them, and they follow me.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">I John 4:10</td>
+<td class="org-left">he loved us and sent his Son to be the propitiation for our sins</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">II John 1:6</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">this is love, that we walk according to his commandments</td>
 </tr>
 </tbody>
 </table>
