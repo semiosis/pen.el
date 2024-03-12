@@ -2002,7 +2002,7 @@ I still think the 10 commandments are special, and following them in truth is re
 
 Will anyone be believing and obeying Jesus?
 
-The law is still used in judgement, but the one who has faith in Jesus is not condemned because they Jesus' sheep:
+God's law is still used in judgement, but the one who has faith in Jesus is not condemned because they abide in Jesus, are Jesus' sheep, and are led by the Spirit, obeying and following Jesus' voice:
 
 -   Whoever is actively believing/trusting/obeying Jesus is not judged.
 -   Whoever is disbelieving/distrusting/disobeying Jesus is judged even now.
@@ -2010,6 +2010,10 @@ The law is still used in judgement, but the one who has faith in Jesus is not co
 [John 3:18 Interlinear: he who is believing in him is not judged, but he who is not believing hath been judged already, because he hath not believed in the name of the only begotten Son of God.](https://biblehub.com/interlinear/john/3-18.htm)
 
 > **John 3:18** - He who believes (G4100 **pisteuo**) in Him is not judged; he who does not believe (G4100 pisteuo) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed (G4100 pisteuo) in the name of the only begotten Son of God. (NASB)
+
+If people including free-grace Christians do not repent from sin, they will still receive the wrath of God:
+
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
 
     1  :  2919  krino  kree'-no
     2  
