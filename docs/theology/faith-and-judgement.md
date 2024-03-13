@@ -15,15 +15,19 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
-I consider all who are trusting in the Lord Jesus Christ, who is God, for their salvation to be <ins>in Christ Jesus.</ins>
-No matter what else I say in this document.
+I consider all who are trusting in the Lord Jesus Christ, who is God, for their salvation to be <ins>in Christ Jesus,</ins> no matter what else I say in this document.
 I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
 
-No matter what I have said. I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, are to be in Christ.
+No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, willing to obey, are to be in Christ.
 
 &#x2014;
 
 I believe that a person is justified when they trust and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a heart that follows Him.
+
+We endeavour to be justified through faithful obedience to Jesus, and if we fall short, we still believe Christ has us covered. But we do endeavour, we do try:
+
+> **Galatians 2:17** - But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! (ESV)
+
 At that stage they may have no work but I believe at that stage they are justified, when it's in their heart.
 But I'm not the one to justify, God is.
 And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
@@ -342,7 +346,9 @@ Jesus' sheep:
 
 I believe that what this says is that at the point Jesus knows you listen to His voice and obey His voice, He counts you as one of His sheep and He will not let you go.
 
-The righteousness of faith in Jesus:
+The righteousness that comes through having faith in Jesus Christ - faith (not mere belief) is required to have the righteousness - to be found in Jesus:
+
+> **Philippians 3:9** - and be found in him, not having a righteousness of my own that comes from the law, but that which **comes through faith in Christ**, the righteousness from God that **depends** on faith— (ESV)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -595,6 +601,10 @@ Doing the will of God is what it means to be led by the Spirit. So you have to *
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
+Walk according to the will of God. Walk the way Jesus Christ has called us to walk:
+
+> **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
+
 Those who love Him, obey Him:
 
 > **James 1:12** - Blessed is the man who remains steadfast under **trial,** for when he has stood the test he will receive the <ins>crown of life,</ins> which God has promised to those who love him. (ESV)
@@ -620,6 +630,12 @@ People may fall away if they sin:
 True sonship is required to remain forever:
 
 > **John 8:36** - So if the Son sets you free, you will be free indeed. (ESV)
+
+But we must be in Christ Jesus:
+
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+
+> **Galatians 3:26** - for in Christ Jesus you are all sons of God, through faith. (ESV)
 
 Jesus is asking of us to believe that He is the resurrection and the life; Coming to a belief which [in John's terminology] involves personally <ins>committing oneself to Jesus as Son of God, Saviour, Lord, Lamb of God and King</ins>:
 
@@ -903,6 +919,8 @@ Jesus' sheep follow Jesus. Jesus knows them:
     6   see GREEK for 1
 
 People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him, and common grace even to the one who hasn't arrived [yet] at serving Jesus.
+
+> **I Peter 5:14** - Greet one another with the kiss of love. Peace to all of you who are in Christ.
 
 > **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
 
@@ -5153,6 +5171,16 @@ We work, obediently serving God, but it's God working in us:
 > **\*Philippians 2:12-13** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure.</ins> (ESV)
 
 We must obey Jesus.
+
+
+## An infant in Christ
+
+> **I Corinthians 3:1** - But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. (ESV)
+
+
+## A person who is mature in Christ
+
+> **Colossians 1:28** - Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ. (ESV)
 
 
 # Faith
@@ -10079,6 +10107,10 @@ A gift can be accepted or rejected - and this is a choice we <ins>can</ins> make
 
 > **Romans 5:17** - If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the free gift of righteousness reign in life through the one man Jesus Christ. (ESV)
 
+Even the elect need help to obtain the salvation that is in Christ Jesus with eternal glory:
+
+> **II Timothy 2:10** - Therefore I endure everything for the sake of the elect, that they also may obtain the salvation that is in Christ Jesus with eternal glory. (ESV)
+
 We should not lean on our own understanding:
 
 > **Isaiah 55:9** - For as the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts.
@@ -10652,6 +10684,8 @@ We must walk in Jesus' commandments and believe that He came from God.
 
 > **I John 2:15-17** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever.
 
+> **I Thessalonians 5:18** - give thanks in all circumstances; for this is the will of God in Christ Jesus for you. (ESV)
+
 
 ## In a way, the Son is the Father as far as we can see because looking upon Jesus we see the Father, but the Father is greater
 
@@ -11021,6 +11055,8 @@ One is supposed to suffer with Christ for glory and be an example to the flock.
 
 
 ### The deeds of glory - Christlikeness
+
+> **Hebrews 3:14** - For we share in Christ, if indeed we hold our original confidence firm to the end. (ESV)
 
 All the times a person has acted in Christlike obedience:
 
