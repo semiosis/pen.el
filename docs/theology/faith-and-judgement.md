@@ -711,7 +711,7 @@ Faith works through love; we must be like Jesus - exercising sacrificial, mercif
 
 > **Galatians 6:15** - For neither circumcision counts for anything, nor uncircumcision, but <ins>a new creation.</ins> (ESV)
 
-No changed life salvation? Refuting Free Grace and @jacksmack77 - YouTube]]
+[No changed life salvation? Refuting Free Grace and @jacksmack77 - YouTube](https://www.youtube.com/watch?v=_eek1ezwp_A&t=14s)
 
 Grace is free, but a person **must** become obedient - God gives the heart to obey, but a person must desire to do God's will to receive it.
 
