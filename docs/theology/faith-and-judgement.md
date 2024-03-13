@@ -19,6 +19,10 @@ I consider all who are trusting in the Lord Jesus Christ, who is God, for their 
 No matter what else I say in this document.
 I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
 
+No matter what I have said. I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus, to be saved, and to be in Christ.
+
+&#x2014;
+
 > **Isaiah 30:20-21** - And <ins>though the Lord give you the bread of adversity and the water of affliction, yet your Teacher will not hide himself anymore</ins>, but your eyes shall see your Teacher. And your ears shall hear a word behind you, saying, **This is the way, walk in it**, when you turn to the right or when you turn to the left.
 
 I believe the above prophetically talks about Jesus. We must obey Jesus. God doesn't guarantee that following Jesus will be easy.
