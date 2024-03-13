@@ -19,7 +19,7 @@ I consider all who are trusting in the Lord Jesus Christ, who is God, for their 
 No matter what else I say in this document.
 I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
 
-No matter what I have said. I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus, to be saved, and to be in Christ.
+No matter what I have said. I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, are to be in Christ.
 
 &#x2014;
 
@@ -27,6 +27,7 @@ I believe that a person is justified when they trust and believe on God in their
 At that stage they may have no work but I believe at that stage they are justified, when it's in their heart.
 But I'm not the one to justify, God is.
 And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
+And when they go through Jesus Christ, the door, they are saved.
 
 &#x2014;
 
@@ -607,6 +608,18 @@ And I also think people have free will to sabotage their race.
 Clearly believe means also to be obedient to because the ones that <ins>follow Jesus</ins> (which means obey His commandments) are the ones who are counted as believing (**pisteuo**):
 
 > **John 10:26-38** - but you do not believe (G4100 **pisteuo**) because you are not part of my flock. My sheep <ins>hear my voice,</ins> and <ins>I know them, and they follow me.</ins> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
+
+Those enslaved by corruption are not sons:
+
+> **II Peter 2:19** - They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved.
+
+People may fall away if they sin:
+
+> **John 8:34-35** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
+
+True sonship is required to remain forever:
+
+> **John 8:36** - So if the Son sets you free, you will be free indeed. (ESV)
 
 Jesus is asking of us to believe that He is the resurrection and the life; Coming to a belief which [in John's terminology] involves personally <ins>committing oneself to Jesus as Son of God, Saviour, Lord, Lamb of God and King</ins>:
 
@@ -10453,7 +10466,7 @@ A relationship is formed between the obedient person and God:
 -   Get to know Jesus by following His commandments and being obedient and willing to do God's will.
 -   But as we do God's will, God comes to know us (it's simultaneous):
 
-**Galatians 4:8-9**- Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more?
+> **Galatians 4:8-9** - Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more?
 
 
 ## The life that Father God gave us is in His Son, Jesus Christ
