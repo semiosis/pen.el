@@ -23,6 +23,13 @@ No matter what I have said. I believe that anyone who trusts in the Lord Jesus C
 
 &#x2014;
 
+I believe that a person is justified when they trust and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a heart that follows Him.
+At that stage they may have no work but I believe at that stage they are justified, when it's in their heart.
+But I'm not the one to justify, God is.
+And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
+
+&#x2014;
+
 > **Isaiah 30:20-21** - And <ins>though the Lord give you the bread of adversity and the water of affliction, yet your Teacher will not hide himself anymore</ins>, but your eyes shall see your Teacher. And your ears shall hear a word behind you, saying, **This is the way, walk in it**, when you turn to the right or when you turn to the left.
 
 I believe the above prophetically talks about Jesus. We must obey Jesus. God doesn't guarantee that following Jesus will be easy.
@@ -1293,6 +1300,8 @@ Led by the Spirit of God is doing God's will:
     > **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as servants of Christ, doing the will of God from the heart,
     
     > **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
+    
+    > **John 12:23-26** - And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.
 
 4.  We must remain faithful to Jesus Christ
 
