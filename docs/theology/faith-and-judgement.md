@@ -1732,8 +1732,6 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 
 > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
-
 You must obey Jesus:
 
 > **John 3:36** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
@@ -2080,6 +2078,19 @@ We are set free from sin and become slaves of God (so we obey God!!) and the obe
     Faith receives and continues to receive the supply of the Spirit. So a person needs to be having faith in Jesus to be led by the Spirit.
     
     Sanctification is personal righteousness that is fruit that comes from being in Jesus Christ, Him being our righteousness - we're grafted into Jesus like branches on a tree and become healthier. We must and **should** stop sinning.
+
+
+### We must have attention to Jesus Christ our Lord
+
+We are saved from his sins, and from his evil practices.
+We are made a new man in Christ Jesus by the power of the Holy Spirit.
+
+> **Matthew 12:33** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. (ESV)
+
+> **John 10:27** - My sheep hear my voice, and I know them, and they follow me. (ESV)
+
+-   [Holiness Demanded - Charles Spurgeon Sermon - YouTube](https://youtu.be/S8rmiZRzqfg)
+-   [Eternal Security - Charles Spurgeon Sermon - YouTube](https://www.youtube.com/watch?v=i27b4cE4xyo)
 
 
 ### Make the tree good and the fruit good

@@ -495,7 +495,24 @@ Return list of cons '((destination content)"
         ;; (ascii-adventures-open-map aa/filepath)
       )))
 
+(defun aa/copy-path ()
+  (interactive)
+  (let* ((b (buffer-live-p "ascii adventures"))
+         (fp aa/filepath))
+
+    (if (f-file-p aa/filepath)
+        (let* ((fn (f-basename aa/filepath))
+               (mant (f-mant fn)))
+          (xc (concat "[[el:(aa/go \"" mant "\")][" mant "]]"))
+          ;; (find-file aa/filepath)
+          )
+
+      ;; (ascii-adventures-open-map aa/filepath)
+      )))
+
+(define-key ascii-adventures-mode-map (kbd "w") 'aa/copy-path)
 (define-key ascii-adventures-mode-map (kbd "o") 'aa/edit-area)
+(define-key ascii-adventures-mode-map (kbd "t") 'aa/map)
 
 (defun ascii-adventures ()
   (interactive)
