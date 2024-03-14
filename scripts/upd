@@ -1,1 +1,47 @@
-wo
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+export UPDATE=y
+export FORCE_RETRY=y
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nd) {
+        export IGNORE_DIR=y
+        shift
+    }
+    ;;
+
+    -m|-meta) {
+        export EXTRA_METADATA="_$2"
+
+        # Great for environment variables
+        # Otherwise, env vars are ingored
+        # ci -meta "$BASENAME" org clink "$@"
+        shift
+        shift
+    }
+    ;;
+
+    -dt|-date) {
+        : "${date:="$2"}"
+        : "${date:="$(date +%d.%m.%y)"}"
+        export EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+        shift
+    }
+    ;;
+
+    -today) {
+        : "${date:="$(date +%d.%m.%y)"}"
+        export EXTRA_METADATA="${EXTRA_METADATA}_${date}"
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+"$@"

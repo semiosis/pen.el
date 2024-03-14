@@ -66,12 +66,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
-            upd) {
-                export UPDATE=y
-                export FORCE_RETRY=y
-            }
-            ;;
-
             -2|bw|baw) {
                 export BLACK_AND_WHITE=y
             }
