@@ -765,6 +765,10 @@ Grace is free, but a person **must** become obedient - God gives the heart to ob
 
 > **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
 
+We must live for the will of God:
+
+> **I Peter 4:1-2** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for <ins>whoever has suffered in the flesh has ceased from sin, so as to live for the rest of the time in the flesh no longer for human passions but for the will of God.</ins> (ESV)
+
 
 ### Work may be burned up, and the person who has a believing and obedient heart is still saved
 
@@ -1980,10 +1984,18 @@ Names have power. Jesus' name is above every other name:
 
 ## Faith, Law, Works
 
+We must live under law of God:
+
+> **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
+
+Christians are under the law of Christ, which is within the law of God:
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+
+### Christians are not <ins>under</ins> the Mosaic law because **we are under Christ's law**, but we don't despise the Torah, nor annul it, nor teach others to annul it
+
 I enjoyed this video, but I still am of the opinion that following the full Mosaic law is not necessary, (but not prohibited, so long as it is pursued by faith and submits to God's righteousness):
-
-
-### Christians are not <ins>under</ins> the Mosaic law
 
 [Public Debate - Should Christians Keep The Law? - YouTube](https://www.youtube.com/watch?v=CNHKqhwu6Bo)
 
@@ -2852,6 +2864,8 @@ Work not done in faith:
 
 > **Leviticus 10:1-2** - Now Nadab and Abihu, the sons of Aaron, each took his censer and put fire in it and laid incense on it and offered unauthorized fire before the Lord, which he had not commanded them. And fire came out from before the Lord and consumed them, and they died before the Lord.
 
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+
 God didn't ask for the offering which Nadab and Abihu offered.
 
 Ananias gave to God unfaithfully, in a manner similar to Cain.
@@ -3589,7 +3603,7 @@ It's impossible to please God without faith, but with faith all things are possi
 
 ### The Mosaic law doesn't help people to keep the law. It doesn't save - it only condemns or justifies. Only grace through faith in God who raised Jesus from the dead saves
 
-And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by following the Mosaic law but by following Christ's law.
+And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by following the Mosaic law but by following **Christ's law**.
 
 > **Acts 13:38-39** - Therefore let it be known to you, brethren, that through (G1223 **dia**) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes (G4100 **pisteuo**) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
 
@@ -3842,7 +3856,7 @@ These do not contradict:
 
 > **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ, (ESV)
 
-1.  `sola scriptura` as the source of truth against false dreams
+1.  `sola scriptura` as the source of truth against false dreams and against lies
 
     I've definitely had some issues, but I've noticed that repenting from sinful habits and obeying Jesus helps a lot to deal with that.
     
@@ -3856,6 +3870,14 @@ These do not contradict:
     But now I know.
     
     `sola scriptura` (by Scripture alone) AMEN!!
+    
+    Jesus used the Scriptures to combat lies:
+    
+    > **Luke 4:7-8** - If you, then, will worship me, it will all be yours. And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. (ESV)
+    
+    > **Luke 4:11-13** - and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
+    
+    > **John 10:35-36** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
 
 2.  Do God's will - follow Jesus in truth, and be obedient to God to combat falsehood
 
@@ -4027,11 +4049,21 @@ We must forgive our family in Christ:
 > **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so <ins>you also must forgive.</ins> (ESV)
 
 
-## Follow the law in faith, not works, making yourself accountable to God, not men
+## The Torah
 
-Keeping to the precepts of the law is great, and making yourself accountable to God with it, is great.
+The Torah is the compilation of the first five books of the Hebrew Bible, namely the books of Genesis, Exodus, Leviticus, Numbers and Deuteronomy. The Torah is known as the Pentateuch or the Five Books of Moses by Christians.
 
-> **Romans 2:25-29** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps the precepts of the law, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter. His praise is not from man but from God.
+> **II Timothy 3:12-17** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
+
+Keeping to <ins>the precepts of the law</ins> is great, and making yourself accountable to God with it, is great.
+
+> **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
+
+Here, Paul actually argues **for** keeping the precepts of the Torah, and relates actually keeping the precepts to those who have been circumcised in the heart:
+
+> **Romans 2:25-29** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps <ins>the precepts of the law</ins>, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But <ins>a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter.</ins> His praise is not from man but from God.
+
+I believe what Paul says here is that Christians who observe and follow the Torah in faith, not works, not being under it (because it doesn't condemn us while we are under Christ's law), but making themselves accountable to God over it, to receive praise from God, are Christian Jews. But we don't Judaise Gentiles.
 
 > **Luke 16:15-17** - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God.  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
 
@@ -5062,6 +5094,10 @@ We must submit to the righteousness of God.
 
 > **II Peter 1:10-11** - Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. For in this way there will be richly provided for you an <ins>entrance into the eternal kingdom</ins> of our Lord and Savior Jesus Christ.
 
+We must live for the will of God:
+
+> **I Peter 4:1-2** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for <ins>whoever has suffered in the flesh has ceased from sin, so as to live for the rest of the time in the flesh no longer for human passions but for the will of God.</ins> (ESV)
+
 
 ### We practice personal righteousness AND we have obtained a faith of equal standing with the Apostles <ins>by the righteousness of our God and Savior Jesus Christ</ins>
 
@@ -5097,6 +5133,14 @@ The guy thought he was obeying the commandments, but he still coveted his posses
 I don't think he was really following the commandments from the heart.
 Also he wasn't prepared to give up his old life to follow Jesus.
 Following Jesus is obeying his commandments.
+
+We must try to stop sinning:
+
+> **I Kings 15:5** - because David did what was right in the eyes of the LORD and did not turn aside from anything that he commanded him all the days of his life, except in the matter of Uriah the Hittite. (ESV)
+
+We now live for the will of God:
+
+> **I Peter 4:1-2** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for <ins>whoever has suffered in the flesh has ceased from sin, so as to live for the rest of the time in the flesh no longer for human passions but for the will of God.</ins> (ESV)
 
 
 ### Then arriving at eternal life - follow Jesus
@@ -6710,6 +6754,43 @@ Anyone who says otherwise is a false teacher.
 > **II Peter 2:1** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, **even denying the Master who bought them**, bringing upon themselves swift destruction.
 
 
+## Stop sinning
+
+> **Proverbs 20:23** - Unequal weights are an abomination to the LORD, and **false scales** are not good. (ESV)
+
+> **Proverbs 21:27** - The **sacrifice of the wicked** is an abomination; how much more when he brings it with evil intent. (ESV)
+
+> **Proverbs 12:22** - **Lying lips** are an abomination to the LORD, but those who act faithfully are his delight. (ESV)
+
+> **Proverbs 15:26** - The **thoughts of the wicked** are an abomination to the LORD, but gracious words are pure. (ESV)
+
+> **Proverbs 29:27** - An **unjust man** is an abomination to the righteous, but one whose way is straight is an abomination to the wicked. (ESV)
+
+> **Proverbs 3:32** - for the **devious person** is an abomination to the LORD, but the upright are in his confidence. (ESV)
+
+> **Proverbs 6:16-19** - There are six things that the LORD hates, seven that are an abomination to him: **haughty eyes**, a **lying tongue**, and **hands that shed innocent blood**, a **heart that devises wicked plans**, **feet that make haste to run to evil**, a **false witness who breathes out lies**, and **one who sows discord among brothers**. (ESV)
+
+> **Proverbs 17:15** - **He who justifies the wicked** and **he who condemns the righteous** are both alike an abomination to the LORD. (ESV)
+
+> **Proverbs 28:9** - If one **turns away his ear from hearing the law**, even his prayer is an abomination. (ESV)
+
+Do not even seek them out:
+
+> **Leviticus 19:31** - Do not turn to **mediums or wizards**; do not seek them out, and so make yourselves unclean by them: I am the LORD your God. (ESV)
+
+> **Exodus 22:18** - You shall not permit a **sorceress** to live. (ESV)
+
+> **Leviticus 20:27** - A man or a woman who is a **medium or a wizard** shall surely be put to death. They shall be stoned with stones; their blood shall be upon them. (ESV)
+
+> **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death. (ESV)
+
+> **Leviticus 20:6** - If a person turns to **mediums and wizards, whoring after them**, I will set my face against that person and will cut him off from among his people. (ESV)
+
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+
+
 ## Those that are younger, be subject to the elders
 
 > **I Peter 5:5** - Likewise, you who are younger, be subject to the elders. Clothe yourselves, all of you, with humility toward one another, for God opposes the proud but gives grace to the humble.
@@ -7706,7 +7787,9 @@ And if a person doesn't believe in reality, then that person probably isn't save
 
 **However**, if a person trusts him who justifies the ungodly, his faith is counted as righteousness.
 
-> **Romans 4:5** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness,
+Trusting Him means having faith in Him, obeying. Ungodly here means wicked.
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness,
 
 This qualifies:
 
@@ -8581,7 +8664,7 @@ I believe in-between is OK, so long as it is by faith.
 
 It's possible for Gentiles to keep Jewish commandments if they want (I think it's honorable) - but we are justified by faith in Jesus, not by being under the law:
 
-> **Romans 2:25-29** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps the precepts of the law, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter. His praise is not from man but from God.
+> **Romans 2:25-29** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps <ins>the precepts of the law</ins>, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But <ins>a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter.</ins> His praise is not from man but from God.
 
 It's possible to keep commandments by faith:
 

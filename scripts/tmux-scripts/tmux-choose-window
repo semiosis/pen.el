@@ -68,7 +68,9 @@ disp="$(echo -e "(=)$lastwindow\n$disp")"
 
 # Can't cache vimcat, because it changes every time
 # But I *could* instead just use a dark grey
-printf -- "%s\n" "$disp" | vimcat | head -n "$(( LINES - 2 ))" 1>&2
+# printf -- "%s\n" "$disp" | vimcat | head -n "$(( LINES - 2 ))" 1>&2
+# printf -- "%s\n" "$disp" | head -n "$(( LINES - 2 ))" 1>&2
+printf -- "%s\n" "$disp" | hls dgrey | head -n "$(( LINES - 2 ))" 1>&2
 read -n 1 -s ret
 
 if test "$ret" = q; then
