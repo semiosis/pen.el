@@ -135,7 +135,7 @@ To anyone who receives Jesus, even those who believe on His name, Jesus has give
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
-Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who is disobedient to Jesus Christ will see life, and I believe that.
+Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who remains disobedient to Jesus Christ will see life, and I believe that.
 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
 
@@ -6818,7 +6818,7 @@ God's grace goes to the humble.
 So sometimes a person needs to choose Jesus over false teachers and blind guides.
 
 
-# Can Other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
+# Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
 It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
