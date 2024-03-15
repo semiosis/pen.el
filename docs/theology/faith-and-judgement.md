@@ -699,9 +699,13 @@ God draws the person to Jesus:
 
 > **John 6:44-46** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. (ESV)
 
-Jesus said He will not cast people out <ins>who have come to Him</ins>:
+Jesus said He will not cast people out <ins>who have come to Him</ins>, and it's His sheep who come to Him, those who follow Him:
 
 > **John 6:37** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. (ESV)
+
+Coming to Jesus is the requirement for not being cast out, and coming to Jesus Christ means obedience and following Jesus:
+
+> **Luke 18:16-22** - But Jesus called them to him, saying, Let the children come to me, and do not hinder them, for to such belongs the kingdom of God. Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it. And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me.
 
 We must be a servant of Jesus to not be cast out. We must have obedience:
 
@@ -6541,6 +6545,8 @@ We must have faith in Jesus, we must hope in Jesus, and we must love like Jesus:
 
 If someone has the light in him, he walks in the day.
 
+> **I Thessalonians 5:8** - But since we belong to the day, let us be sober, having put on the breastplate of faith and love, and for a helmet the hope of salvation. (ESV)
+
 > **John 9:3-5** - Jesus answered, It was not that this man sinned, or his parents, but that the works of God might be displayed in him. We must work the works of him who sent me while it is day; night is coming, when no one can work. As long as I am in the world, I am the light of the world. (ESV)
 
 > **John 12:35** - So Jesus said to them, The light is among you for a little while longer.  Walk while you have the light, lest darkness overtake you.  The one who walks in the darkness does not know where he is going.  (ESV)
@@ -7465,6 +7471,8 @@ I believe that producing good fruit is necessary for being saved:
 > **Luke 14:27** - Whoever does not bear his own cross and come after me cannot be my disciple.
 
 > **Luke 14:33** - So therefore, any one of you who does not renounce all that he has cannot be my disciple.
+
+> **Revelation of John 12:11** - And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death. (ESV)
 
 
 ## The slave to sin doesn't abide forever. Repentance from sin is essential for eternal life
@@ -10918,6 +10926,139 @@ The world (the remaining people, who have not repented) may know that Father God
 > **Luke 24:50-53** - And He led them out as far as Bethany, and He lifted up His hands and blessed them. While He was blessing them, He parted from them and was carried up into heaven. And they, after worshiping Him, returned to Jerusalem with great joy, and were continually in the temple praising God. (ESV)
 
 > **Acts 1:1-12** - The first account I composed, Theophilus, about all that Jesus began to do and teach, until the day when He was taken up to heaven, after He had by the Holy Spirit given orders to the apostles whom He had chosen. To these He also presented Himself alive after His suffering, by many convincing proofs, appearing to them over a period of forty days and speaking of the things concerning the kingdom of God. Gathering them together, He commanded them not to leave Jerusalem, but to wait for what the Father had promised, “Which,” He said, “you heard of from Me; for John baptized with water, but you will be baptized with the Holy Spirit not many days from now.” So when they had come together, they were asking Him, saying, “Lord, is it at this time You are restoring the kingdom to Israel?” He said to them, “It is not for you to know times or epochs which the Father has fixed by His own authority; but you will receive power when the Holy Spirit has come upon you; and you shall be My witnesses both in Jerusalem, and in all Judea and Samaria, and even to the remotest part of the earth.” And after He had said these things, He was lifted up while they were looking on, and a cloud received Him out of their sight. And as they were gazing intently into the sky while He was going, behold, two men in white clothing stood beside them. They also said, “Men of Galilee, why do you stand looking into the sky? This Jesus, who has been taken up from you into heaven, will come in just the same way as you have watched Him go into heaven.” Then they returned to Jerusalem from the mount called Olivet, which is near Jerusalem, a Sabbath day’s journey away. (ESV)
+
+
+# Armour of God
+
+> **Ephesians 6:11-13** - Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm. (ESV)
+
+-   Belt of Truth and Faithfulness
+-   Breastplate of Righteousness
+-   Shoes of the Gospel of Peace
+-   Shield of Faith
+-   Helmet of Salvation
+-   Sword of the Spirit
+-   Prayer
+-   Lamp
+
+
+## Belt of Truth and Faithfulness
+
+> **Ephesians 6:14** - Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, (ESV)
+
+> **Isaiah 11:5** - Righteousness shall be the belt of his waist, and faithfulness the belt of his loins. (ESV)
+
+> **Ephesians 5:9** - (for the fruit of light is found in all that is good and right and true), (ESV)
+
+
+## Breastplate of Righteousness
+
+-   Imputed righteousness
+    -   righteousness through faith in Jesus Christ
+
+> **Philippians 3:9** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— (ESV)
+
+> **Ephesians 6:14** - Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, (ESV)
+
+> **Isaiah 59:17-18** - He put on righteousness as a breastplate, and a helmet of salvation on his head; he put on garments of vengeance for clothing, and wrapped himself in zeal as a cloak. According to their deeds, so will he repay, wrath to his adversaries, repayment to his enemies; to the coastlands he will render repayment. (ESV)
+
+> **I Corinthians 1:30** - He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption. (ESV)
+
+
+## Shoes of the Gospel of Peace
+
+The readiness to share the Gospel of Jesus Christ with people, and also live out the Gospel.
+
+> **Ephesians 6:15** - and, as shoes for your feet, having put on the readiness given by the gospel of peace. (ESV)
+
+> **Isaiah 52:7** - How beautiful upon the mountains are the feet of him who brings good news, who publishes peace, who brings good news of happiness, who publishes salvation, who says to Zion, Your God reigns. (ESV)
+
+> **Romans 10:15** - And how are they to preach unless they are sent? As it is written, How beautiful are the feet of those who preach the good news! (ESV)
+
+> **II Corinthians 5:18-21** - All this is from God, who through Christ reconciled us to himself and gave us the ministry of reconciliation; that is, in Christ God was reconciling the world to himself, not counting their trespasses against them, and entrusting to us the message of reconciliation. Therefore, we are ambassadors for Christ, God making his appeal through us. We implore you on behalf of Christ, be reconciled to God. For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+
+## Shield of Faith
+
+Maintaining faithfulness to God, and our trust in God, God fights for us and is our shield.
+
+> **Ephesians 6:16** - In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one; (ESV)
+
+> **I Peter 5:8-9** - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
+
+> **I John 5:4-5** - For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
+
+> **Psalms 56:3-4** - When I am afraid, I put my trust in you. In God, whose word I praise, in God I trust; I shall not be afraid. What can flesh do to me? (ESV)
+
+Having faith in God, we have our shield:
+
+> **Genesis 15:1** - After these things the word of the LORD came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great. (ESV)
+
+
+## Helmet of Salvation
+
+Our hope of salvation which we have in Jesus Christ.
+
+> **Ephesians 6:17** - and take the helmet of salvation, and the sword of the Spirit, which is the word of God, (ESV)
+
+> **Isaiah 59:17** - He put on righteousness as a breastplate, and a helmet of salvation on his head; he put on garments of vengeance for clothing, and wrapped himself in zeal as a cloak. (ESV)
+
+> **I Thessalonians 5:8** - But since we belong to the day, let us be sober, having put on the breastplate of faith and love, and for a helmet the hope of salvation. (ESV)
+
+
+## Sword of the Spirit
+
+
+### Apply the word of God to combat lies
+
+> **Ephesians 6:17** - and take the helmet of salvation, and the sword of the Spirit, which is the word of God, (ESV)
+
+
+### Believe the truth
+
+> **Matthew 4:4** - But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
+
+
+### Keep a clean heart with God
+
+> **Hebrews 4:12** - For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart. (ESV)
+
+
+### Repent
+
+> **Revelation of John 19:15** - From his mouth comes a sharp sword with which to strike down the nations, and he will rule them with a rod of iron. He will tread the winepress of the fury of the wrath of God the Almighty. (ESV)
+
+> **Revelation of John 2:16** - Therefore repent. If not, I will come to you soon and war against them with the sword of my mouth. (ESV)
+
+> **Hosea 6:5** - Therefore I have hewn them by the prophets; I have slain them by the words of my mouth, and my judgment goes forth as the light. (ESV)
+
+
+## Prayer
+
+> **Ephesians 6:18** - praying at all times in the Spirit, with all prayer and supplication. To that end keep alert with all perseverance, making supplication for all the saints, (ESV)
+
+> **I Thessalonians 5:17** - pray without ceasing, (ESV)
+
+> **Colossians 4:2** - Continue steadfastly in prayer, being watchful in it with thanksgiving. (ESV)
+
+> **I Timothy 2:1** - First of all, then, I urge that supplications, prayers, intercessions, and thanksgivings be made for all people, (ESV)
+
+> **Philippians 4:6** - do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. (ESV)
+
+> **Jude 1:20** - But you, beloved, build yourselves up in your most holy faith; pray in the Holy Spirit; (ESV)
+
+> **Romans 8:26-27** - Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words. And he who searches hearts knows what is the mind of the Spirit, because the Spirit intercedes for the saints according to the will of God. (ESV)
+
+
+## Lamp
+
+Awaiting the revelation of Jesus Christ, prepare our hearts, waiting for Jesus to knock, ready for action.
+
+Keep shining your light, maintaining a heart of service, and do good works of faith to glorify God, as we put our hope fully on the mercy and grace from Jesus Christ.
+
+> **I Peter 1:13** - Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. (ESV)
+
+> **Luke 12:33-37** - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. For where your treasure is, there will your heart be also. Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks. Blessed are those servants whom the master finds awake when he comes. Truly, I say to you, he will **dress himself for service** and have them recline at table, and he will come and serve them. (ESV)
 
 
 # Solae
