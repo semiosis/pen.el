@@ -211,6 +211,10 @@ The knowledge comes from having obeyed God's voice. Love becomes perfected in us
 
 It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved. We expect to receive salvation:
 
+> **Romans 3:21-25** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be **received by faith**. This was to show God's righteousness, because in his divine forbearance he had passed over former sins.
+
+AMEN!!
+
 > **Acts 3:2-9** - And a man lame from birth was being carried, whom they laid daily at the gate of the temple that is called the Beautiful Gate to ask alms of those entering the temple. Seeing Peter and John about to go into the temple, he asked to receive alms. And Peter directed his gaze at him, as did John, and said, Look at us. And he fixed his attention on them, <ins>expecting to receive something from them.</ins> But Peter said, I have no silver and gold, but what I do have I give to you. <ins>In the name of Jesus Christ of Nazareth, rise up and walk!</ins> And <ins>he took him by the right hand and raised him up, and immediately his feet and ankles were made strong. And leaping up he stood and began to walk</ins>, and entered the temple with them, walking and leaping and <ins>praising God.</ins> And all the people saw him walking and praising God,
 
 > **Acts 3:16** - And his name—by faith in his name—has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.
@@ -1913,6 +1917,25 @@ The wrath of God comes upon the sons of disobedience:
 That means that justifying faith involves obeying Jesus:
 
 > **Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, <ins>now that we are reconciled, shall we be saved by his life.</ins> More than that, we also rejoice in God through <ins>our Lord</ins> Jesus Christ, through whom we have now received reconciliation.
+
+The free gift of justification is **received through faith**.
+
+And I believe we need an obedient heart towards Jesus to receive.
+
+It's not about obedience to the law but about obeying Jesus / loving Jesus / trusting Jesus.
+
+The justifying work is finished - Jesus finished it.
+
+Now we need faith to receive it and I believe
+that faith necessitates love for Jesus, which
+includes obedience to Jesus, and it's the
+heart that matters most, because all the work
+may be burned up but we are still saved,
+because it's not the work that saves, it's
+faith, but I believe that faith necessitates
+love/obedience to Jesus, as one of His sheep.
+
+> **Romans 3:21-25** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be **received by faith**. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. (ESV)
 
 
 ### Believing the Word of Truth - sealed with the promised Holy Spirit
