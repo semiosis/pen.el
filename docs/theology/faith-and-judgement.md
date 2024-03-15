@@ -2814,6 +2814,16 @@ The LORD God judges impartially according to each one's deeds:
 
 > **I Peter 1:17** - And if you call on him as Father who <ins>judges impartially according to each one's deeds</ins>, conduct yourselves with fear throughout the time of your exile,
 
+> **Ecclesiastes 12:13-14** - The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man. For God will bring every deed into judgment, with every secret thing, whether good or evil.
+
+[Ecclesiastes: fear God and obey His commandments- the only hope for a good life - YouTube](https://www.youtube.com/watch?v=AVZdtdvnvXs)
+
+We must follow the way righteousness, repenting from sin, and following Jesus Christ. Jesus Christ is Lord:
+
+> **II Peter 2:1-3** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. And many will follow their sensuality, and because of them the way of truth will be blasphemed. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep.
+
+> **II Peter 2:20-22** - For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire.
+
 
 ### Since Jesus has made the way, we serve God with good works. We have received mercy. We should then be merciful:
 
@@ -2972,6 +2982,12 @@ Heresies:
 I believe that either of these heresies fall under this strong delusion category:
 
 > **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  (ESV)
+
+> **II Peter 2:6** - if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly;
+
+> **Jude 1:4-5** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. Now I want to remind you, although you once fully knew it, that Jesus, who saved a people out of the land of Egypt, afterward destroyed those who did not believe.
+
+-   [2 Peter 2 Destructive Doctrines- guidance from the Word - YouTube](https://www.youtube.com/watch?v=Fxsq06WB0CA)
 
 
 ### Yield to God
