@@ -360,6 +360,7 @@ Return list of cons '((destination content)"
 
 (defset aa/animation-timer nil)
 (defset aa/filepath nil)
+(defset aa/history '())
 
 (defun ascii-adventures-open-map (filepath)
   "Create a new untitled buffer from a string."
@@ -367,6 +368,8 @@ Return list of cons '((destination content)"
                                      aa/mapdir)))
 
   (setq filepath (or filepath (f-join aa/bewilderness-dir "house.org")))
+
+  (add-to-list 'aa/history filepath)
 
   ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
 
