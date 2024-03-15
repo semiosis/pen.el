@@ -91,7 +91,7 @@ Please feel free to discuss it with me.
 
 ## Jesus
 
-Jesus is the Word incarnate. The world was made through Jesus:
+Jesus is the Word. The world was made through Jesus:
 
 > **John 1:9-11** - The true light, which enlightens everyone, was coming into the world. He was in the world, and the world was made through him, yet the world did not know him. He came to his own, and his own people did not receive him. (ESV)
 
