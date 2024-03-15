@@ -15,10 +15,9 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
-I consider all who are trusting in the Lord Jesus Christ, who is God, for their salvation to be <ins>in Christ Jesus,</ins> no matter what else I say in this document.
-I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
+I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing turn obey Him to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
 
-No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, willing to obey, are to be in Christ.
+No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, repentant and willing to obey, are to be in Christ.
 
 [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
 
@@ -7252,7 +7251,7 @@ Also, I think eternal life is for those who:
 
 This is my current understanding. So most likely it is not tolerated in the kingdom of God.
 
-I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, but that doesn't mean they inherit the Kingdom..
+I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, but that doesn't mean they inherit the Kingdom.
 But faith requires obedience, and salvation requires turning from sin.
 
 And it doesn't excuse them from repentance from sin.
@@ -7549,7 +7548,7 @@ The will of God is that we do good
 
 **Eternal** salvation is given to those who **obey** Jesus:
 
-> **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of <ins>eternal salvation to all who obey him</ins>, being designated by God a high priest after the order of Melchizedek..
+> **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of <ins>eternal salvation to all who obey him</ins>, being designated by God a high priest after the order of Melchizedek.
 
 Jesus' sheep follow Jesus:
 
@@ -8687,6 +8686,8 @@ We follow them in faith.
 3.  I wrote about following the law by faith, also law written on my heart.
 
     <https://web.archive.org/web/20220703044748/https://mullikine.github.io/posts/the-tapestry-of-truth/>
+    
+    > **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people. And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
 
 4.  Baptised in the Holy Spirit
 
