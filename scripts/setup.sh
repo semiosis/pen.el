@@ -2289,3 +2289,8 @@ e ia doct
 # cd espanso
 # cargo make --profile release -- build-binary
 # )
+
+# https://github.com/sassman/t-rec-rs
+# Noone is going to be saved by deeds of the law
+agi imagemagick
+cargo install -f t-rec --locked 

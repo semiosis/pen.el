@@ -3531,7 +3531,9 @@ It's impossible to please God without faith, but with faith all things are possi
 > **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
 
 
-### The Mosaic law doesn't help people to keep the law. It doesn't save - it only condemns or justifies. Only Jesus saves, clean us up and helps us to fulfill the requirement of the law
+### The Mosaic law doesn't help people to keep the law. It doesn't save - it only condemns or justifies. Only grace through faith in God who raised Jesus from the dead saves
+
+And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by following the Mosaic law but by following Christ's law.
 
 > **Acts 13:38-39** - Therefore let it be known to you, brethren, that through (G1223 **dia**) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes (G4100 **pisteuo**) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
 
@@ -3599,6 +3601,8 @@ God saves us from sin by giving us immediate justification through faith to be i
 > **II Peter 2:19-20** - They promise them freedom, but they themselves are slaves of corruption. For <ins>whatever overcomes a person, to that he is enslaved</ins>. For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.
 
 Therefore, the way of truth involves following Jesus and putting a stop to sin.
+
+[The Hidden Parable of Moses that Few Christians Understand - YouTube](https://www.youtube.com/watch?v=O-aZV-3oBK8)
 
 
 ### With God, following the 10 commandments and to love God and our neighbour is possible
