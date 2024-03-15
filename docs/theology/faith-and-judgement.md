@@ -1471,9 +1471,15 @@ Instead, let's follow Jesus Christ's teachings:
 
 > **Colossians 3:1-4** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory.
 
-If people including free-grace Christians do not repent from sin, they will still receive the wrath of God:
+If people including free-grace Christians do not repent from sin, they will still be repaid impartially, and on account of sinful things the wrath of God comes. We have to put to death sin:
 
 > **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+
+> **Matthew 5:21-22** - You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
+
+> **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
+
+> **John 3:36** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
 
@@ -11185,7 +11191,7 @@ Also, that means deepening my relationship with Jesus.
 > **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.
 
 
-# Jesus Christ is God
+# Jesus Christ is fully God and fully human
 
 Jesus Christ is the Word of God who became flesh - this is what I believe - not just God **in** the flesh but God who **became** flesh, then He was put to death on a tree (a cross) for our trespasses and Father God raised Him from the dead for our justification:
 

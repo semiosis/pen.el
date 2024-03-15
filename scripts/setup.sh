@@ -2278,3 +2278,14 @@ agi rename
 agi fontforge
 
 e ia doct
+
+# Espanso seemed cool but I didn't find a tty version
+# # For espanso:
+# cargo install rust-script --version "0.7.0"
+# cargo install --force cargo-make --version 0.37.5
+# (
+# cd ~/repos
+# git clone "http://github.com/espanso/espanso"
+# cd espanso
+# cargo make --profile release -- build-binary
+# )
