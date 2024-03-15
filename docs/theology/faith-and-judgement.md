@@ -11185,9 +11185,9 @@ Also, that means deepening my relationship with Jesus.
 > **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.
 
 
-# Jesus Christ is God become flesh!
+# Jesus Christ is God
 
-Jesus Christ is the Word of God become flesh - this is what I believe - not just God **in** the flesh but God **become** flesh, then He put to death and Father God raised Him from the dead for our justification:
+Jesus Christ is the Word of God who became flesh - this is what I believe - not just God **in** the flesh but God who **became** flesh, then He was put to death on a tree (a cross) for our trespasses and Father God raised Him from the dead for our justification:
 
 > **John 1:14** - And **the Word became flesh and dwelt among us**, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
