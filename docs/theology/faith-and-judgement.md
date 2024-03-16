@@ -704,6 +704,8 @@ We need <ins>both</ins> of these:
 -   Belief in Jesus and His atoning sacrifice
 -   Obedience to Jesus' commandments
     -   Obeying the law of Christ
+-   Putting a stop to sin
+    -   [You CANNOT Keep Living Like a DEVILa?| {The a??Cheapa?? Gospel EXPOSED!!} - YouTube](https://www.youtube.com/watch?v=k_g1Z6q_f4M)
 
 > **II Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
 
@@ -741,6 +743,10 @@ You **must** believe:
 You **must** obey:
 
 > **John 15:1-6** - I am the true vine, and my Father is the vinedresser.  Every branch of mine that does not bear fruit he takes away, and every branch that does bear fruit he prunes, that it may bear more fruit.  Already you are clean because of the word that I have spoken to you.  Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.  I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. <ins>If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned.</ins>
+
+We **must** put a stop to sin:
+
+> **1 John 3:4-9** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness.  You know that he appeared to take away sins, and in him there is no sin.  No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him.  Little children, let no one deceive you.  Whoever practices righteousness is righteous, as he is righteous.  Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning.  The reason the Son of God appeared was to destroy the works of the devil.  No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God.  (ESV)
 
 Walking in obedient faith is walking in forgiveness and love towards other people, forgiveness and love that flows out from <ins>having been</ins> loved and having been forgiven.
 

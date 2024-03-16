@@ -2294,3 +2294,5 @@ e ia doct
 # Noone is going to be saved by deeds of the law
 agi imagemagick
 cargo install -f t-rec --locked 
+
+agi ncurses-term
