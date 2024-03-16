@@ -1994,6 +1994,17 @@ The same Apostle Paul wrote these:
 -   sacrifice
 -   death
 
+We are sanctified by the Father in the way that Jesus was made perfect.
+We are made perfect the same way He was made perfect, by the sufferings that come through obedience to God's will.
+
+> **Hebrews 2:10-11** - For it was fitting that he, for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation perfect through suffering. For he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers, (ESV)
+
+> **Matthew 26:39-42** - And going a little farther he fell on his face and prayed, saying, My Father, if it be possible, let this cup pass from me; nevertheless, not as I will, but as you will. And he came to the disciples and found them sleeping. And he said to Peter, So, could you not watch with me one hour? Watch and pray that you may not enter into temptation. The spirit indeed is willing, but the flesh is weak. Again, for the second time, he went away and prayed, My Father, if this cannot pass unless I drink it, your will be done. (ESV)
+
+Thee same way Jesus went is the Way, the new and living way, the Jesus way:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
 Receiving this is a mixture of belief and obedience towards Jesus.
 Faith is a mixture of belief and obedience.
 
@@ -2013,7 +2024,7 @@ And I believe we need an obedient heart towards Jesus to receive.
 
 It's not about obedience to the law but about obeying Jesus / loving Jesus / trusting Jesus.
 
-The justifying work is finished - Jesus finished it.
+The justifying work is finished - Jesus finished it, now we follow Him through the same way he went, by obeying Him.
 
 Now we need faith to receive it and I believe
 that faith necessitates love for Jesus, which
