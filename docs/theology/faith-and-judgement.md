@@ -239,7 +239,7 @@ Something like this:
 > **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.
 
 
-## By God's grace God has saved us and provided us with a means to having faith in Him
+## By God's grace God has saved us and provided us with a means to be reconciled to Him through trusting faith in Him
 
 God has called us out of darkness and into His marvelous light:
 
@@ -1047,7 +1047,7 @@ We must receive atonement for sin through faith.
 The tax collector in the story above has an obedient and believing heart. The tax collector has faith. It's not our own righteousness which is sufficient, but Jesus Christ's righteousness imputed onto us when we are **in** Him. We must have faith in Jesus.
 
 
-### We have to receive the Kingdom like a child. Don't resist Jesus or His teachings
+### We have to receive the Kingdom like a child. Don't resist Jesus or His teachings - follow Jesus
 
 I accept that I need Jesus to have mercy on me. Because my own righteousness isn't good enough. I want to obey Jesus for the rest of my life, and live for Him, and I trust Him because I believe His gospel. I know that the Holy Spirit goes to those who obey Him.
 
@@ -1136,11 +1136,13 @@ We are implored to strive to follow Jesus to our best ability:
 > **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world.
 
 
-### We must recognise that where our obedience falls short, Jesus's blood covers us. But we must still have the heart to make Jesus our Lord and King
+### We must recognise that where our efforts to obey falls short, Jesus's blood covers us. But we must still have the heart to make Jesus our Lord and King, and be following Him
 
 But we must be walking in the light, just as He is in the light.
 
 > **I John 1:7** - But <ins>**if we walk in the light**</ins>, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
+
+So the blood of Jesus covers us while we are following Him.
 
 
 ### Do not condemn others. Speak the truth and leave judgement to the Judge
@@ -1297,6 +1299,10 @@ Jesus is the Way, the Truth and the Life:
 > **John 8:39-42** - They answered him, Abraham is our father. Jesus said to them, If you were Abraham's children, you would be doing what Abraham did, but now you seek to kill me, a man who has told you the truth that I heard from God. This is not what Abraham did. You are doing what your father did. They said to him, We were not born of sexual immorality. We have one Father—even God. Jesus said to them, <ins>If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.</ins>
 
 > **John 8:43** - Why do you not understand what I say? It is because you cannot bear to hear my word.
+
+We must obey His commandments to walk in the same way He walked so we get to know Him and are sanctified by faith in the truth, which leads to eternal life:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
 
 
 ### We must listen to Jesus
@@ -1571,6 +1577,10 @@ Our loving obedience abounds more as we grow in the knowledge of Jesus Christ, f
 
 > **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
+Follow Jesus through the new and living Way:
+
+> **Hebrews 10:19-27** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, and since we have a great priest over the house of God, let us draw near with a true heart in full assurance of faith, with our hearts sprinkled clean from an evil conscience and our bodies washed with pure water. Let us hold fast the confession of our hope without wavering, for he who promised is faithful. And let us consider how to stir up one another to love and good works, not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near. For if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries.
+
 
 ### Whoever makes an appeal to God, calls upon His name will be saved
 
@@ -1815,23 +1825,6 @@ We must obey God. We have faith in God who was delivered up for our trespasses a
 `pisteuo` is the faith verb.
 
 So the promise is for all who put their faith in God by obeying Jesus Christ with the faith of Abraham to a greater or lesser degree.
-
-
-## Atonement
-
-Jesus' sacrifice is the only atonement for our sin we need. It's comprehensive. It must be received through faith in obedience to Jesus.
-
-> **Romans 3:25** -  whom <ins>God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness,</ins> because in his divine forbearance he had passed over former sins.  (ESV)
-
-> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
-
-> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
-
-We receive reconciliation through Jesus Christ who is our Lord.
-
-> **Romans 5:11** - More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
-
-> **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
 
 
 # If the world is encouraging you, you're probably in falsehood or taking the wide road
@@ -2474,6 +2467,8 @@ It involves:
 -   sanctification while believing the truth
     -   putting a stop to sin
     -   becoming holy
+    -   being a slave to righteousness, obeying Jesus
+        -   being obedient to Jesus, instead of being obedient to the world
 -   loving selflessly as Jesus loved
 
 
