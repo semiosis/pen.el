@@ -3985,6 +3985,8 @@ These do not contradict:
 -   Contradicts Scripture
 -   Contradicts God's Word
 
+> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+
 
 ### Don't believe lies nor even listen to false dreams from false prophets and diviners
 
@@ -6304,7 +6306,9 @@ I also currently believe that one's response to forgiveness must be like the wom
 
 I think that choosing a relationship Biblically is contrary to worldly precepts:
 
-> **Mark 7:7-9** in vain do they worship me, teaching as doctrines the commandments of men.  You leave the commandment of God and hold to the tradition of men.  And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition!
+> **Mark 7:7-9** in vain do they worship me, teaching as doctrines the commandments of men.  You **leave the commandment of God** and <ins>hold to the tradition of men.</ins>  And he said to them, You have a fine way of <ins>rejecting the commandment of God in order to establish your tradition!</ins>
+
+> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
 
 
 # Who will enter Heaven? Only the ones who do the will of Father God
