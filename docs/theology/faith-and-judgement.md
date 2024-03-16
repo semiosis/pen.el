@@ -218,7 +218,9 @@ The knowledge comes from having obeyed God's voice. Love becomes perfected in us
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
 
-It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved. We expect to receive salvation:
+It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved.
+
+We are granted repentance to life; being a slave to righteousness leading to sanctification and at its end, eternal life. We expect to receive salvation as we have faith in Jesus Christ:
 
 > **Romans 3:21-25** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be **received by faith**. This was to show God's righteousness, because in his divine forbearance he had passed over former sins.
 
