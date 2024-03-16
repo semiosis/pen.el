@@ -283,6 +283,11 @@ An heart of faith looks like:
 -   Wanting to follow Jesus
 -   Accepting Jesus Christ as one's Lord
 -   Accepting through faith the atonement for sin through Jesus Christ
+-   Turning away from sin
+
+Return to obedience to God through obedience to Jesus. Turn from sin:
+
+> **Joel 2:12-13** - Yet even now, declares the LORD, return to me with all your heart, with fasting, with weeping, and with mourning; and rend your hearts and not your garments. Return to the LORD, your God, for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster. (ESV)
 
 God provides the new heart:
 
@@ -1515,6 +1520,10 @@ Instead, let's follow Jesus Christ's teachings:
 If people including free-grace Christians do not repent from sin, they will still be repaid impartially, and on account of sinful things the wrath of God comes. We have to put to death sin:
 
 > **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+
+Absolutely:
+
+> **I Peter 4:17** - For **it is time for judgment to begin at the household of God**; and if it begins with us, what will be the outcome for those who do not obey the gospel of God? (ESV)
 
 > **Matthew 5:21-22** - You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
 
@@ -3478,10 +3487,10 @@ To be fruitful, a person must be further obedient after arriving at the knowledg
 > **II Peter 1:8** - For **if these qualities are yours and are increasing**, they render you <ins>neither useless nor unfruitful</ins> in the <ins>true knowledge</ins> (G1922 **epignosis**) of our Lord Jesus Christ.
 
 
-# Jesus has immortality and gives eternal life
+# Jesus has immortality and gives eternal life, but we must come to Him in obedience, and follow Him, to receive it
 
 We must take hold of the eternal life to which we are called.
-We made the confession to eternal life, and we must now fight the good fight of the faith.
+We made the confession to eternal life, and we must now fight the good fight of the faith, until after being slaves to righteousness, obeying Jesus, we are sanctified and receive eternal life.
 
 > **I Timothy 6:11-16** - But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness.  Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses.  I charge you in the presence of God, who gives life to all things, and of Christ Jesus, who in his testimony before Pontius Pilate made the good confession, to <ins>keep the commandment unstained and free from reproach until the appearing of our Lord Jesus Christ</ins>, which he will display at the proper time—he who is the blessed and only Sovereign, the King of kings and Lord of lords, who alone has immortality, who dwells in unapproachable light, whom no one has ever seen or can see. To him be honor and eternal dominion. Amen.
 
@@ -3574,6 +3583,7 @@ And the obedience doesn't end.
         -   Not what we give, but how we give
         -   The condition of the heart is what God will judge
     -   It's cheerful obedience to God, cheerful obedience to Jesus
+    -   It's what happens when faith is working
 
 
 ### Love is doing what Jesus has said for us to do. Love is following the commandments
@@ -8401,9 +8411,6 @@ If this verse suggests that Jesus went to the spirits in prison who had in the d
 ## I believe that repentance is important in faith and faithfulness to God
 
 > **Acts 2:38** - And Peter said to them, Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit. (ESV)
-
-Basic repentance is 'metanoia' (a change of mind) - it's part of belief.
-But this is what repentance looks like.
 
 > **Joel 2:12-13** - Yet even now, declares the LORD, return to me with all your heart, with fasting, with weeping, and with mourning; and rend your hearts and not your garments. Return to the LORD, your God, for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster. (ESV)
 
