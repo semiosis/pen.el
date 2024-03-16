@@ -1083,7 +1083,7 @@ All of these I believe belong under the umbrella of faith, not works:
 -   Getting baptised is not 'dead works'. It's obedience.
 -   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
 
-Faith presses on to be like Jesus:
+Faith presses on to walk the same way Jesus walked:
 
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
@@ -3115,6 +3115,8 @@ Actually practice faith, and don't over-intellectualise God:
 
 > **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
+> **John 5:39-44** - <ins>You search the Scriptures because you think that in them you have eternal life;</ins> and it is <ins>they that bear witness about me,</ins> yet **you refuse to come to me that you may have life.** I do not receive glory from people. But I know that **you do not have the love of God within you.** I have come in my Father's name, and you do not receive me. If another comes in his own name, you will receive him. How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
+
 Yield to God:
 
 > **Isaiah 45:9** - Woe to him who strives with him who formed him, a pot among earthen pots! Does the clay say to him who forms it, What are you making? or Your work has no handles? (ESV)
@@ -3522,6 +3524,8 @@ To be fruitful, a person must be further obedient after arriving at the knowledg
 
 
 # Jesus has immortality and gives eternal life, but we must come to Him in obedience, and follow Him, to receive it
+
+> **John 5:39-44** - <ins>You search the Scriptures because you think that in them you have eternal life;</ins> and it is <ins>they that bear witness about me,</ins> yet **you refuse to come to me that you may have life.** I do not receive glory from people. But I know that **you do not have the love of God within you.** I have come in my Father's name, and you do not receive me. If another comes in his own name, you will receive him. How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
 We must take hold of the eternal life to which we are called.
 We made the confession to eternal life, and we must now fight the good fight of the faith, until after being slaves to righteousness, obeying Jesus, we are sanctified and receive eternal life.
@@ -6654,7 +6658,7 @@ It's really important to come to communion with the type of heart that would yea
 
 > **I Corinthians 2:11** - For who knows a person's thoughts except the spirit of that person, which is in him? So also no one comprehends the thoughts of God except the Spirit of God. Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God. And we impart this in words not taught by human wisdom but taught by the Spirit, interpreting spiritual truths to those who are spiritual. The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. The spiritual person judges all things, but is himself to be judged by no one. For who has understood the mind of the Lord so as to instruct him? But we have the mind of Christ.
 
-> **John 5:39** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me,
+> **John 5:39** - <ins>You search the Scriptures because you think that in them you have eternal life;</ins> and it is <ins>they that bear witness about me,</ins>
 
 > **Leviticus 17:11** - For the life of the flesh is in the blood, and I have given it for you on the altar to make atonement for your souls, for it is the blood that makes atonement by the life.
 
