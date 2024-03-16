@@ -316,6 +316,8 @@ God still makes apostles and prophetic people:
 
 > **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be children, tossed to and fro by the waves and carried about by every wind of doctrine, by human cunning, by craftiness in deceitful schemes. Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love.
 
+> **Daniel 2:28** - but there is a God in heaven who reveals mysteries, and he has made known to King Nebuchadnezzar what will be in the latter days. Your dream and the visions of your head as you lay in bed are these: (ESV)
+
 God is loving and altogether gracious.
 
 > **Exodus 34:5-8** - The Lord descended in the cloud and stood with him there, and proclaimed the name of the Lord. The Lord passed before him and proclaimed, The Lord, the Lord, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children's children, to the third and the fourth generation. And Moses quickly bowed his head toward the earth and worshiped.
@@ -1793,6 +1795,15 @@ We receive reconciliation through Jesus Christ who is our Lord.
 > **Romans 5:11** - More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
 
 > **Romans 5:19** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. (ESV)
+
+
+# If the world is encouraging you, you're probably in falsehood or taking the wide road
+
+> **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
+
+> **John 15:18-19** - If the world hates you, know that it has hated me before it hated you. If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you.
+
+> **I John 3:13** - Do not be surprised, brothers, that the world hates you.
 
 
 # Common grace
@@ -3660,6 +3671,10 @@ Yes, the requirement of the **law** might be fulfilled in us, who do something i
 The mind set on the spirit submits to the law.
 
 > **Romans 8:5-7** - For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit.  To set the mind on the flesh is death, but to set the mind on the Spirit is life and peace.  For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot.
+
+The law is not of the flesh. The law is spiritual:
+
+> **Romans 7:14** - For we know that the law is spiritual, but I am of the flesh, sold under sin. (ESV)
 
 But the Spirit helps us to put to death the deeds of the flesh.
 

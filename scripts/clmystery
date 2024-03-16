@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# gc https://github.com/veltman/clmystery
+
+td=/volumes/home/shane/var/smulliga/source/git/veltman/clmystery
+test -d "$td" && : "${dp:="$td"}"
+td=$MYGIT/veltman/clmystery
+test -d "$td" && : "${dp:="$td"}"
+
+# zcd $MYGIT/veltman/clmystery
+br-txt "$dp"
