@@ -1980,10 +1980,24 @@ We have peace with God:
 
 The same Apostle Paul wrote these:
 
+> **Romans 5:1-2** - Therefore, since we have been <ins>justified by faith, we have peace with God through our Lord Jesus Christ.</ins> Through him we have also <ins>obtained access by faith into this grace</ins> in which we stand, and we rejoice in hope of the glory of God.
+
+> **Romans 5:6-9** - For while we were still weak, at the right time <ins>Christ died for the ungodly</ins>. For one will scarcely die for a righteous person—though perhaps for a good person one would dare even to die— but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God.
+
 > **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
-Receiving this is a mixture of belief and obedience.
+**The way** that Jesus went is the way that we go. [The new and living way is the Jesus way](https://youtu.be/cAsTwftk0OE?t=485):
+
+-   self denial
+    -   **Matthew 16:24** - Then Jesus told his disciples, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
+-   obedience
+-   sacrifice
+-   death
+
+Receiving this is a mixture of belief and obedience towards Jesus.
 Faith is a mixture of belief and obedience.
+
+> **I Peter 2:21** - For to this you have been called, because Christ also suffered for you, <ins>leaving you an example, so that you might follow in his steps.</ins> (ESV)
 
 The wrath of God comes upon the sons of disobedience:
 
