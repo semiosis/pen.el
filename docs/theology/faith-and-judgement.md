@@ -19,7 +19,7 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing <ins>turn to and obey Him</ins> to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
 
-No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus to be saved, <ins>repentant and willing to obey,</ins> are to be in Christ.
+No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey,</ins> are to be in Christ.
 
 [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
 
@@ -309,7 +309,7 @@ It's those that believe in him (trust Him, receive Him, <ins>expect to receive H
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
 
-We <ins>must honour Jesus Christ in our bodies and in our lives</ins> - fruitful labour, so that we can be confident with `John 5-24`. AMEN!! We must be slaves of righteousness, leading to sanctification, which at its end is eternal life:
+We <ins>must honour Jesus Christ in our bodies and in our lives</ins> - fruitful labour, so that we can be confident with `John 5:24`. AMEN!! We must be slaves of righteousness, leading to sanctification, which at its end is eternal life:
 
 > **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes (G4100 **pisteuo**) him who sent me has eternal life</ins>. He does not come into judgment, but has passed from death to life.
 
@@ -338,7 +338,7 @@ Having faith in God involves following Jesus:
 > **Hebrews 10:32-39** - But recall the former days when, <ins>after you were enlightened, you endured a hard struggle with sufferings, sometimes being publicly exposed to reproach and affliction</ins>, and sometimes being partners with those so treated. For you had compassion on those in prison, and you joyfully accepted the plundering of your property, since you knew that you yourselves had a better possession and an abiding one. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that <ins>when you have done the will of God you may receive what is promised</ins>. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But <ins>we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls</ins>.
 
 
-## I believe that a loving, trusting ( <ins>Belief</ins> and <ins>Obedience</ins> ) heart for Jesus Christ is essential for permanent abiding in Him
+## I believe that a loving, trusting ( <ins>believing</ins> and <ins>obedient</ins> ) heart for Jesus Christ is essential for permanent abiding in Him
 
 > **I John 4:19** - We love because he first loved us. (ESV)
 
@@ -622,7 +622,7 @@ The good news must be united by obedient faith (putting Jesus' words into action
 
 > **Philippians 2:12** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
 
-I believe in 'once saved, always saved, while doing the will of God'. So someone must be a both a believer and a follower of Jesus.
+I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'. So someone must be a both a believer and a follower of Jesus.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
 
@@ -644,7 +644,7 @@ The crown of life is gifted to those who are obedient, and have been tested:
 
 And I also think people have free will to sabotage their race.
 
-Clearly believe means also to be obedient to because the ones that <ins>follow Jesus</ins> (which means obey His commandments) are the ones who are counted as believing (**pisteuo**):
+Clearly 'believe' means also 'to be obedient' to because the ones that <ins>follow Jesus</ins> (which means obey His commandments) are the ones who are counted as believing (**pisteuo**):
 
 > **John 10:26-38** - but you do not believe (G4100 **pisteuo**) because you are not part of my flock. My sheep <ins>hear my voice,</ins> and <ins>I know them, and they follow me.</ins> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
 
@@ -707,7 +707,7 @@ We need <ins>both</ins> of these:
 -   Obedience to Jesus' commandments
     -   Obeying the law of Christ
 -   Putting a stop to sin
-    -   [You CANNOT Keep Living Like a DEVILa?| {The a??Cheapa?? Gospel EXPOSED!!} - YouTube](https://www.youtube.com/watch?v=k_g1Z6q_f4M)
+    -   [You CANNOT Keep Living Like a DEVIL| {The Cheap Gospel EXPOSED!!} - YouTube](https://www.youtube.com/watch?v=k_g1Z6q_f4M)
 
 > **II Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
 
@@ -890,9 +890,15 @@ Because Abraham <ins>obeyed God's voice</ins>:
 
 > **Genesis 22:18** - and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice. (ESV)
 
-Repentance and coming to the light are absolutely part of the gospel!
+Repentance <ins>from sin</ins>, repentance <ins>from disbelief</ins>, and coming to the light are absolutely part of the gospel!
 
-> **1 Corinthians 15:1-4** -  Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you-unless you believed in vain.  For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures,  (ESV)
+> **1 Corinthians 15:1-4** -  Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and <ins>by which you are being saved, if you hold fast to the word I preached to you-unless you believed in vain.</ins> For I delivered to you as of first importance what I also received: that <ins>Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures,</ins> (ESV)
+
+> **John 8:34-35** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
+
+The grace given to Paul allowed him to turn from his evil ways and pursue Jesus, working diligently for Jesus. Therefore, the grace given to Paul was not in vain, because Paul responded well to the grace:
+
+> **I Corinthians 15:10** - But by the grace of God I am what I am, and his grace toward me was not in vain. On the contrary, I worked harder than any of them, though it was not I, but the grace of God that is with me. (ESV)
 
 > **Acts 2:47** - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
 
