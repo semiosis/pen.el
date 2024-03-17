@@ -52,6 +52,15 @@
             (imenu-add-to-menubar "Position")
             (setq imenu-create-index-function 'pen-merge-imenu)))
 
+(comment
+ (add-hook 'org-mode-hook
+           (lambda ()
+             (add-to-list
+              'imenu-generic-expression
+              '("*" "^\\(?:[*\f]+\\).*$" 1))
+             (imenu-add-to-menubar "Position")
+             (setq imenu-create-index-function 'pen-merge-imenu))))
+
 (defvar camdez/markdown-imenu-generic-expression
   '((nil "^#\\s-+\\(.+\\)$" 1)))
 

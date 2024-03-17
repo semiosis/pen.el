@@ -3100,6 +3100,8 @@ I believe that either of these heresies fall under this strong delusion category
 
 > **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  (ESV)
 
+> **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
+
 > **II Peter 2:6** - if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly;
 
 > **Jude 1:4-5** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. Now I want to remind you, although you once fully knew it, that Jesus, who saved a people out of the land of Egypt, afterward destroyed those who did not believe.
@@ -10261,7 +10263,7 @@ Those who proclaim the gospel should get their living by the gospel:
     -   steadfastness,
     -   gentleness.
 
-> **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain.  Now there is great gain in godliness with contentment, for we brought nothing into the world, and we cannot take anything out of the world.  But if we have food and clothing, with these we will be content.  But those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.  For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.  But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
+> **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
 
 # godliness
@@ -10352,7 +10354,7 @@ Perfect godliness revealing God through Jesus Christ:
 
 <tr>
 <td class="org-left">I Timothy 6:10-11</td>
-<td class="org-left">Not worldliness, knowing that true riches are in heaven</td>
+<td class="org-left">Not worldliness, knowing that true riches are in heaven. No love for money</td>
 </tr>
 
 
@@ -10425,6 +10427,18 @@ Perfect godliness revealing God through Jesus Christ:
 <tr>
 <td class="org-left">II Peter 1:5-7</td>
 <td class="org-left">Is supplemented by brotherly affection (in accordance with true knowledge about God)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">II Peter 2:6, I Corinthians 6:18</td>
+<td class="org-left">Obeys God, and lives righteously, and in love for one's neighbour, and flees from lust</td>
+</tr>
+
+
+<tr>
+<td class="org-left">I Corinthians 10:8-14</td>
+<td class="org-left">Does not put Christ to the test. Clings to God, flees from idolatry, sexual immorality and other sin</td>
 </tr>
 </tbody>
 </table>
