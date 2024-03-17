@@ -2998,7 +2998,7 @@ Hebrews addressed the same passage which Jesus addressed:
 > **Matthew 12:3-8** - He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the guiltless. For the Son of Man is lord of the Sabbath.
 
 
-### Working faith
+## Working faith
 
 Works and faith can't exist apart from one another because even to believe in Jesus is a work, and if the belief is true then the obedience continues.
 
@@ -10455,34 +10455,7 @@ Jesus has granted us what we need to live a godly life:
 > **II Peter 3:10-12** - But the day of the Lord will come like a thief, and then the heavens will pass away with a roar, and the heavenly bodies will be burned up and dissolved, and the earth and the works that are done on it will be exposed. Since all these things are thus to be dissolved, what sort of people ought you to be in lives of holiness and godliness, waiting for and hastening the coming of the day of God, because of which the heavens will be set on fire and dissolved, and the heavenly bodies will melt as they burn!
 
 
-# We have free will
-
-When we hear Jesus' voice, we must open the door. We have free will to receive or reject Jesus - we must be obedient believers:
-
-> **Revelation of John 3:20** - Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me. (ESV)
-
-The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
-
-> **Romans 4:3** - For what does the Scripture say? Abraham believed God, and it was counted to him as righteousness. (ESV)
-
-The Scriptures say Abraham obeyed God - we must become obedient believers:
-
-> **Genesis 26:5** - because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws. (ESV)
-
-Also, in advance of being given the promise, Abraham was faithful to God:
-
-> **Genesis 14:23** - that I would not take a thread or a sandal strap or anything that is yours, lest you should say, I have made Abram rich.
-
-That is when God <ins>rewarded</ins> Abraham for Abraham's faithfulness, with a promise:
-
-> **Genesis 15:1-6** - After these things the word of the Lord came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great. But Abram said, O Lord God, what will you give me, for I continue childless, and the heir of my house is Eliezer of Damascus? And Abram said, Behold, you have given me no offspring, and a member of my household will be my heir. And behold, the word of the Lord came to him: This man shall not be your heir; your very own son shall be your heir. And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
-
-Rewards are for people who <ins>choose</ins> to do the right thing.
-
-It doesn't say, God rewarded God. God said that Abraham's reward shall be very great. God rewarded Abraham.
-
-
-## 'Election' / predestination, theology etc. is a massive distraction, I think
+# 'Election' / predestination, theology etc. is a massive distraction, I think
 
 I believe that here on earth, God wants us to choose Jesus. But from God's perspective, who knows how it works.
 
@@ -10654,27 +10627,29 @@ And Jesus instructs us to have an obedient heart if we want to know that Jesus' 
 > **John 7:17** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
 
 
-### God loved us first
+## God loved us first
 
 > **I John 4:8-11** - Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another.
 
-1.  God's love is greater
 
-    > **Romans 8:35** - Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword?
-    
-    > **Romans 8:39** - nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.
+### God's love is greater
 
+> **Romans 8:35** - Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword?
 
-### God was faithful to us first
-
-1.  God's faithfulness is greater
-
-    > **Romans 3:3-4** - What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged.
-    
-    > **II Timothy 2:13** - if we are faithless, he remains faithful— for he cannot deny himself.
+> **Romans 8:39** - nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.
 
 
-### The Way is available for everyone, but not everyone ends up walking it
+## God was faithful to us first
+
+
+### God's faithfulness is greater
+
+> **Romans 3:3-4** - What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged.
+
+> **II Timothy 2:13** - if we are faithless, he remains faithful— for he cannot deny himself.
+
+
+## The Way is available for everyone, but not everyone ends up walking it
 
 Jesus made the Way - He **is** the Way:
 
@@ -10684,7 +10659,34 @@ Jesus made the Way - He **is** the Way:
 -   the many
 
 
-### Seeking God
+## We have free will
+
+When we hear Jesus' voice, we must open the door. We have free will to receive or reject Jesus - we must be obedient believers:
+
+> **Revelation of John 3:20** - Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me. (ESV)
+
+The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
+
+> **Romans 4:3** - For what does the Scripture say? Abraham believed God, and it was counted to him as righteousness. (ESV)
+
+The Scriptures say Abraham obeyed God - we must become obedient believers:
+
+> **Genesis 26:5** - because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws. (ESV)
+
+Also, in advance of being given the promise, Abraham was faithful to God:
+
+> **Genesis 14:23** - that I would not take a thread or a sandal strap or anything that is yours, lest you should say, I have made Abram rich.
+
+That is when God <ins>rewarded</ins> Abraham for Abraham's faithfulness, with a promise:
+
+> **Genesis 15:1-6** - After these things the word of the Lord came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great. But Abram said, O Lord God, what will you give me, for I continue childless, and the heir of my house is Eliezer of Damascus? And Abram said, Behold, you have given me no offspring, and a member of my household will be my heir. And behold, the word of the Lord came to him: This man shall not be your heir; your very own son shall be your heir. And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
+
+Rewards are for people who <ins>choose</ins> to do the right thing.
+
+It doesn't say, God rewarded God. God said that Abraham's reward shall be very great. God rewarded Abraham.
+
+
+## Seeking God
 
 Blessed are those who like being around Jesus and trust Him:
 
@@ -10699,7 +10701,7 @@ Blessed are those who ask and seek for a blessing:
 > **Matthew 7:7-8** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
 
 
-### Run the race
+## Run the race
 
 > **Hebrews 12:1** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us,
 
@@ -10714,72 +10716,77 @@ Blessed are those who ask and seek for a blessing:
 > **II Timothy 4:6-9** - For I am already being poured out as a drink offering, and the time of my departure has come. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing. Do your best to come to me soon.
 
 
-### God has planned in advance our salvation
-
-1.  Grace alone - `sola gratia` (by grace alone) AMEN!!
-
-    > **Ephesians 1:3** - Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavenly places, (ESV)
-    
-    > **Ephesians 1:4-5** - just as He chose (G1586 eklegomai) us in Him before (G4253 pro) the foundation of the world (G2889 kosmos), that we would be holy and blameless before Him. In love He predestined (G4309 **proorizo**) us to adoption as sons through Jesus Christ to Himself, according to the kind intention (G2107 eudokia) of His will, (NASB)
-    
-        1  :  1586  eklegomai  ek-leg'-om-ahee
-        2  
-        3   middle voice from 1537 and 3004 (in its primary sense); to
-        4   select:--make choice, choose (out), chosen.
-        5   see GREEK for 1537
-        6   see GREEK for 3004
-    
-        1  :  4309  proorizo  pro-or-id'-zo
-        2  
-        3   from 4253 and 3724; to limit in advance, i.e. (figuratively)
-        4   predetermine:--determine before, ordain, predestinate.
-        5   see GREEK for 4253
-        6   see GREEK for 3724
-    
-    In the fullness of time, all things in heaven and earth are united to God:
-    
-    > **Ephesians 1:10** - as a plan for the fullness of time, to unite all things in him, things in heaven and things on earth.
-    
-    Given that we have an inheritance, it's evident that God must have predestined us:
-    
-    > **Ephesians 1:11-14** - In him we have obtained an inheritance, having been predestined according to the purpose of him who works all things according to the counsel of his will, so that we who were the first to hope in Christ might be to the praise of his glory. In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.
+## God has planned in advance our salvation
 
 
-### We are fellow workers with God. It's by God's power that our work flourishes
+### Grace alone - `sola gratia` (by grace alone) AMEN!!
+
+> **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
+
+> **Ephesians 1:3** - Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavenly places, (ESV)
+
+> **Ephesians 1:4-5** - just as **He chose (G1586 eklegomai) us in Him** before (G4253 pro) the foundation of the world (G2889 kosmos), that we would be holy and blameless before Him. In love He predestined (G4309 **proorizo**) us to adoption as sons through Jesus Christ to Himself, according to the kind intention (G2107 eudokia) of His will, (NASB)
+
+    1  :  1586  eklegomai  ek-leg'-om-ahee
+    2  
+    3   middle voice from 1537 and 3004 (in its primary sense); to
+    4   select:--make choice, choose (out), chosen.
+    5   see GREEK for 1537
+    6   see GREEK for 3004
+
+    1  :  4309  proorizo  pro-or-id'-zo
+    2  
+    3   from 4253 and 3724; to limit in advance, i.e. (figuratively)
+    4   predetermine:--determine before, ordain, predestinate.
+    5   see GREEK for 4253
+    6   see GREEK for 3724
+
+In the fullness of time, all things in heaven and earth are united to God:
+
+> **Ephesians 1:10** - as a plan for the fullness of time, to unite all things in him, things in heaven and things on earth.
+
+Given that we have an inheritance, it's evident that God must have predestined us:
+
+> **Ephesians 1:11-14** - In him we have obtained an inheritance, having been predestined according to the purpose of him who works all things according to the counsel of his will, so that we who were the first to hope in Christ might be to the praise of his glory. In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.
+
+
+## We are fellow workers with God. It's by God's power that our work flourishes
 
 > **Ephesians 3:16** - that according to the riches of his glory he may grant you to be **strengthened with power through his Spirit** in your inner being,
 
-1.  Without God we can do nothing
 
-    > **I Corinthians 3:6-9** - I planted, Apollos watered, but God gave the growth. So neither he who plants nor he who waters is anything, but only God who gives the growth. He who plants and he who waters are one, and each will receive his wages according to his labor. For we are God's fellow workers. You are God's field, God's building.
-    
-    > **John 1:3** -  All things were made through him, and without him was not any thing made that was made.  (ESV)
-    
-    We work in God's field:
-    
-    > **John 4:34-38** - Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. Do you not say, There are yet four months, then comes the harvest? Look, I tell you, lift up your eyes, and see that the fields are white for harvest. Already the one who reaps is receiving wages and gathering fruit for eternal life, so that sower and reaper may rejoice together. For here the saying holds true, One sows and another reaps. I sent you to reap that for which you did not labor. Others have labored, and you have entered into their labor.
+### Without God we can do nothing
 
-2.  God's power through Jesus, through the man's faith in Jesus' name made the man walk
+> **I Corinthians 3:6-9** - I planted, Apollos watered, but God gave the growth. So neither he who plants nor he who waters is anything, but only God who gives the growth. He who plants and he who waters are one, and each will receive his wages according to his labor. For we are God's fellow workers. You are God's field, God's building.
 
-    > **Acts 3:12** - And when Peter saw it, he answered unto the people, Ye men of Israel, why marvel ye at this? or why look ye so earnestly on us, as though by our own power or holiness we had made this man to walk? (KJV)
-    
-    The man had faith - faith enters into the truth / receives from God:
-    
-    > **Acts 3:5-8** - And he began to give them his attention, <ins>expecting to receive something from them</ins>. But Peter said, “I do not possess silver and gold, but what I do have I give to you: In the name of Jesus Christ the Nazarene&#x2013; walk!” And seizing him by the right hand, he raised him up; and immediately his feet and his ankles were strengthened. With a leap he stood upright and began to walk; and he entered the temple with them, walking and leaping and praising God.
-    
-    Jesus made the man walk through Jesus' power and Jesus' holiness:
-    
-    > **Acts 3:11-12** - While he was clinging to Peter and John, all the people ran together to them at the so-called portico of Solomon, full of amazement. But when Peter saw this, he replied to the people, “Men of Israel, why are you amazed at this, or <ins>why do you gaze at us, as if by our own power or piety we had made him walk</ins>?
-    
-    The faith which He had in Jesus' name is what healed him:
-    
-    > **Acts 3:16** - And on the basis of faith in His name, it is <ins>the name of Jesus which has strengthened this man whom you see and know</ins>; and <ins>the faith which comes through Him has given him this perfect health</ins> in the presence of you all.
-    
-    There are other instances of this - it's faith in Jesus which makes a person well and receives forgiveness and salvation from Jesus:
-    
-    > **Mark 5:34** -  And he said to her, Daughter, your faith has made you well; go in peace, and be healed of your disease.  (ESV)
-    
-    > **Luke 7:47-50** - Therefore I tell you, her sins, which are many, are forgiven-for she loved much. But he who is forgiven little, loves little. And he said to her, Your sins are forgiven. Then those who were at table with him began to say among themselves, Who is this, who even forgives sins? And he said to the woman, Your faith has saved you; go in peace. (ESV)
+> **John 1:3** -  All things were made through him, and without him was not any thing made that was made.  (ESV)
+
+We work in God's field:
+
+> **John 4:34-38** - Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. Do you not say, There are yet four months, then comes the harvest? Look, I tell you, lift up your eyes, and see that the fields are white for harvest. Already the one who reaps is receiving wages and gathering fruit for eternal life, so that sower and reaper may rejoice together. For here the saying holds true, One sows and another reaps. I sent you to reap that for which you did not labor. Others have labored, and you have entered into their labor.
+
+
+### God's power through Jesus, through the man's faith in Jesus' name made the man walk
+
+> **Acts 3:12** - And when Peter saw it, he answered unto the people, Ye men of Israel, why marvel ye at this? or why look ye so earnestly on us, as though by our own power or holiness we had made this man to walk? (KJV)
+
+The man had faith - faith enters into the truth / receives from God:
+
+> **Acts 3:5-8** - And he began to give them his attention, <ins>expecting to receive something from them</ins>. But Peter said, “I do not possess silver and gold, but what I do have I give to you: In the name of Jesus Christ the Nazarene&#x2013; walk!” And seizing him by the right hand, he raised him up; and immediately his feet and his ankles were strengthened. With a leap he stood upright and began to walk; and he entered the temple with them, walking and leaping and praising God.
+
+Jesus made the man walk through Jesus' power and Jesus' holiness:
+
+> **Acts 3:11-12** - While he was clinging to Peter and John, all the people ran together to them at the so-called portico of Solomon, full of amazement. But when Peter saw this, he replied to the people, “Men of Israel, why are you amazed at this, or <ins>why do you gaze at us, as if by our own power or piety we had made him walk</ins>?
+
+The faith which He had in Jesus' name is what healed him:
+
+> **Acts 3:16** - And on the basis of faith in His name, it is <ins>the name of Jesus which has strengthened this man whom you see and know</ins>; and <ins>the faith which comes through Him has given him this perfect health</ins> in the presence of you all.
+
+There are other instances of this - it's faith in Jesus which makes a person well and receives forgiveness and salvation from Jesus:
+
+> **Mark 5:34** -  And he said to her, Daughter, your faith has made you well; go in peace, and be healed of your disease.  (ESV)
+
+> **Luke 7:47-50** - Therefore I tell you, her sins, which are many, are forgiven-for she loved much. But he who is forgiven little, loves little. And he said to her, Your sins are forgiven. Then those who were at table with him began to say among themselves, Who is this, who even forgives sins? And he said to the woman, Your faith has saved you; go in peace. (ESV)
 
 
 # Sanctification
