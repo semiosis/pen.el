@@ -3120,6 +3120,8 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 
 ### Lordship salvation and free grace - an apparent paradox
 
+You can't have only half of Jesus:
+
 -   I believe that free grace without belief and obedience is a lie.
 -   I believe a heart must be both believing **and** obedient to receive the grace through faith, since I believe true faith is both obedient and believing.
 
@@ -3127,16 +3129,20 @@ After receiving justification (counted not guilty) through obedient and believin
 
 > **1 Corinthians 3:15** - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
 
+We love (obey) because He loved us first, and through obedience we are sanctified, which leads to eternal life.
+
 Heresies:
 
--   free grace without Lordship
-    -   We love (obey) because He loved us first
--   Lordship without free grace
-    -   We love (obey) because He loved us first
+-   <ins>free grace without Lordship</ins> (without sanctification by the Spirit)
+    -   the person in this category abides in Jesus extremely precariously, and only if they are actively trusting in Jesus.
+    -   Trusting and obeying Jesus qualifies, but belief without obedience or trust in the heart doesn't qualify.
+-   <ins>Lordship without free grace</ins> (working to be forgiven, without belief in the truth)
+    -   Well, I mean, they are actually trusting in Jesus if they are following Jesus and doing what He said.
+    -   But if they are just doing good works to get to heaven then I think that's not really right.
 
 I believe that either of these heresies fall under this strong delusion category:
 
-> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  (ESV)
+> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit and belief in the truth.**  (ESV)
 
 > **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
