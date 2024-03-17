@@ -1,0 +1,3 @@
+400 Bad Request
+
+HttpSyntaxException("Bad HTTP request line: b'CONNECT *.html:443 HTTP/1.1'",)

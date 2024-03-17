@@ -11045,17 +11045,26 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 ### We only boast in Christ Jesus, since He is our wisdom, righteousness, sanctification and redemption
 
 He is our wisdom, righteousness, sanctification and redemption.
+
+Yes, but that means we must have faith in Him, obeying Him and becoming like Him, and that brings us confidence, because He's in us, and we don't have our lamp hidden, but are cleaned up:
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as <ins>he is so also are we in this world.</ins> (ESV)
+
 We are wise for salvation through faith in Christ Jesus.
 
 > **2 Timothy 3:15** -  and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus.  (ESV)
 
-We must put our trust in Jesus and believe Him and obey Him.
+We must put our trust in Jesus and believe Him and obey Him, and be cleaned up, shining His light:
 
 > **I Corinthians 1:28-29** - God chose what is low and despised in the world, even things that are not, to bring to nothing things that are, so that no human being might boast in the presence of God.
 
 > **Psalms 5:5** -  The boastful shall not stand before your eyes; you hate all evildoers.  (ESV)
 
-> **Galatians 6:14** -  But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world.  (ESV)
+The cross means a changed life, becoming like Jesus, keeping Jesus' commandments:
+
+> **Galatians 6:13-15** - For even those who are circumcised do not themselves keep the law, but they desire to have you circumcised that they may boast in your flesh. But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. (ESV)
+
+> **I Corinthians 7:19** - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
 
 
 ### Filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God
