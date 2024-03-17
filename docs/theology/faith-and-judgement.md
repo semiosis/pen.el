@@ -7045,13 +7045,25 @@ So sometimes a person needs to choose Jesus over false teachers and blind guides
 
 It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
+Jesus goes to those who hear His voice to bring them into His flock:
+
+> **John 10:16** - And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
+
 Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
 
 Not all religions are equal. There is only one true God, the Father of Jesus Christ who has revealed Himself in Jesus Christ.
 
+The only way is Jesus:
+
 > **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 
 > **1 Corinthians 8:5-6** - For although there may be so-called gods in heaven or on earth-as indeed there are many gods and many lords- yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist. (ESV)
+
+Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
+
+> **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
+
+> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
 
 > **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
