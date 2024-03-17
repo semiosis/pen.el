@@ -686,6 +686,8 @@ But we must be in Christ Jesus:
 
 > **Galatians 3:26** - for in Christ Jesus you are all sons of God, through faith. (ESV)
 
+[Free from Judgment, Fighting Sin, Full Assurance - YouTube](https://youtu.be/M9EbSw8O6uc?t=1846)
+
 Jesus is asking of us to believe that He is the resurrection and the life; Coming to a belief which [in John's terminology] involves personally <ins>committing oneself to Jesus as Son of God, Saviour, Lord, Lamb of God and King</ins>:
 
 -   [Alistair Begg: The Hour Has Come - Part One](https://www.youtube.com/watch?v=DgcN1Qc2kJg)
@@ -6491,6 +6493,22 @@ It is the sovereign work of God to make someone born-again of the Spirit, but th
 ### We must turn from sin
 
 > **Mark 9:47** - And if your eye causes you to sin, tear it out. It is better for you to enter the kingdom of God with one eye than with two eyes to be thrown into hell,
+
+After being born-again we must reckon dead the 'old man', and put sin to death.
+
+Those in Christ Jesus have been set free from the law of sin and death, and we should not succumb to sin.
+
+> **Romans 7:20** - Now if I do what I do not want, it is no longer I who do it, but sin that dwells within me. (ESV)
+
+> **Romans 7:24-25** - Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
+
+> **Romans 8:5** - For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit. (ESV)
+
+> **Romans 8:10** - But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. (ESV)
+
+> **Romans 8:13** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+[Free from Judgment, Fighting Sin, Full Assurance - YouTube](https://www.youtube.com/watch?v=M9EbSw8O6uc) |
 
 
 ### We must endure to enter the kingdom of God
