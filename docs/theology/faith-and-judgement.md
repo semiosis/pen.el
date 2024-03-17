@@ -17,9 +17,13 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing <ins>turn to and obey Him</ins> to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. AMEN!!
+In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing <ins>turn to and obey Him</ins> to be probably <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
 
-No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey,</ins> are to be in Christ.
+God puts a person in Christ Jesus:
+
+> **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
+
+No matter what I have said, I believe that anyone who trusts in the Lord Jesus Christ, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey,</ins> theoretically are to be in Christ if God does it.
 
 [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
 
