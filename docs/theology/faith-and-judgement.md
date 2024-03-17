@@ -258,7 +258,9 @@ Let's not focus on minimums, but maximums:
 
 [John Piper: How Much Error Can I Believe and Still Be Saved? - YouTube](https://www.youtube.com/watch?v=MMBn3I-Rvi0)
 
-I believe that trusting Jesus and obedience in the heart towards Jesus is required.
+I believe that trusting Jesus and obedience in the heart towards Jesus is required. Obedience to Jesus is love.
+
+> **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love.
 
 
 ## Receiving Jesus
@@ -273,6 +275,24 @@ I believe that trusting Jesus and obedience in the heart towards Jesus is requir
 A person may need to ask and seek to receive Jesus:
 
 > **Luke 11:10** - For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened.
+
+
+### Receive Jesus and His words, and then put to death the deeds of the body
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
+> **Romans 8:13-25** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us. For the creation waits with eager longing for the revealing of the sons of God. For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. For we know that the whole creation has been groaning together in the pains of childbirth until now. And not only the creation, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as we wait eagerly for adoption as sons, the redemption of our bodies. For in this hope we were saved. Now hope that is seen is not hope. For who hopes for what he sees? But if we hope for what we do not see, we wait for it with patience.
+
+
+### God through His mercy saves us. We should respond well
+
+Christ died for us, so through His mercy alone, he purchased us.
+
+> **Ephesians 1:13-14** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
+> **Ephesians 2:4** - But God, being rich in mercy, because of the great love with which he loved us, (ESV)
+
+> **I John 4:10** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. (ESV)
 
 
 ### Those who have a heart of faith towards Him (and anyone who He wills) may receive forgiveness of sins through his name
@@ -3260,6 +3280,8 @@ You can't have faith without obedience.
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
+> **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
+
      1  Faith-in-God = Hope-from/in-God * Work/Love
      2  
      3  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
@@ -3857,9 +3879,19 @@ Jesus obeyed, and his disciples become obedient.
 
 > **II Corinthians 10:6** - being ready to punish every disobedience, when your obedience is complete.
 
+> **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
+
 I think that is the correct way to see the following Scripture:
 
-> **Romans 11:29-33**: For the gifts and the calling of God are irrevocable. Just as you were at one time disobedient to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For God has consigned all to disobedience, that he may have mercy on all. Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways!
+> **Romans 11:29-33**: For the gifts and the calling of God are irrevocable. Just <ins>as you were at one time disobedient to God</ins> but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For <ins>God has consigned all to disobedience, that he may have mercy on all.</ins> Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways!
+
+The obedient are led by the Spirit of God. But it isn't a Spirit of slavery, it's a Spirit of sonship, where we get to be conformed to the image of Christ!:
+
+> **Romans 8:12-15** - So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received <ins>the Spirit of adoption as sons, by whom we cry, Abba! Father!</ins>
+
+Even as we are going through hardship for following Jesus, we should rejoice because we are more than conquerors through Him who loved us:
+
+> **Romans 8:36-39** - As it is written, For your sake we are being killed all the day long; we are regarded as sheep to be slaughtered. No, in all these things we are more than conquerors through him who loved us. For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.
 
 
 ### As obedient children, we are to be conformed to holiness
@@ -3973,6 +4005,8 @@ These do not contradict:
     > **Luke 4:11-13** - and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
     
     > **John 10:35-36** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
+    
+    [John Piper's Sermon with Scripture only - YouTube](https://www.youtube.com/watch?v=ldag_fIFnqg)
 
 2.  Do God's will - follow Jesus in truth, and be obedient to God to combat falsehood
 
@@ -4356,6 +4390,10 @@ But the mind set on the Spirit does submit to God's law meaning that they may wa
 
 There's no contradiction between what the 10 commandments say and loving one's neighbour, i.e. for the way in which we must live entering into life.
 
+> **Psalms 103:17-19** - But the steadfast love of the Lord is from everlasting to everlasting on those who fear him, and his righteousness to children's children, to those who keep his covenant and remember to do his commandments. The Lord has established his throne in the heavens, and his kingdom rules over all.
+
+> **Romans 5:1-6** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God. More than that, we rejoice in our sufferings, knowing that suffering produces endurance, and endurance produces character, and character produces hope, and hope does not put us to shame, because God's love has been poured into our hearts through the Holy Spirit who has been given to us. For while we were still weak, at the right time Christ died for the ungodly.
+
 
 ### However, we must submit to God's righteousness through faith in Jesus Christ - this is what saves
 
@@ -4659,9 +4697,9 @@ Adam's disobedience caused our disobedience:
 
 ### We were disobedient
 
-> **Romans 11:30** - Just as you were at one time disobedient to God but now have received mercy because of their disobedience,
+> **Romans 11:30** - Just <ins>as you were at one time disobedient to God</ins> but now have received mercy because of their disobedience,
 
-> **Romans 11:32** - For God has consigned all to disobedience, that he may have mercy on all.
+> **Romans 11:32** - For <ins>God has consigned all to disobedience, that he may have mercy on all.</ins>
 
 > **Ephesians 2:2** - in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience—
 
@@ -4860,6 +4898,8 @@ Faith is a relationship with God. God has promised inheriting the Kingdom, inher
 
 I made these equations to describe my understanding that faith is actually closely related to belief, obedience, hope and love, and they actually are not completely separate things.
 
+> **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
+
      1  Faith-in-God = Hope-from/in-God * Work/Love
      2  
      3  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
@@ -4878,10 +4918,11 @@ I made these equations to describe my understanding that faith is actually close
     16  Obedience ∝ Love
     17  
     18  F = H * L
-    19  
-    20  Faith-in-God when tested by God is found to be true Faith in God.
-    21  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    22  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    19  Faith = Hope * Love
+    20  
+    21  Faith-in-God when tested by God is found to be true Faith in God.
+    22  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    23  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 But salvation is a gift and God is sovereign to save.
 That's why it's grace.
@@ -6309,6 +6350,8 @@ I think that choosing a relationship Biblically is contrary to worldly precepts:
 > **Mark 7:7-9** in vain do they worship me, teaching as doctrines the commandments of men.  You **leave the commandment of God** and <ins>hold to the tradition of men.</ins>  And he said to them, You have a fine way of <ins>rejecting the commandment of God in order to establish your tradition!</ins>
 
 > **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+
+> **Matthew 6:31-33** - Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you.
 
 
 # Who will enter Heaven? Only the ones who do the will of Father God
@@ -8192,7 +8235,7 @@ So take stopping sin seriously, and keep Jesus' words and His commandments, and 
 
 > **John 15:1-14** - I am the true vine, and my Father is the vinedresser. Every branch of mine that does not bear fruit he takes away, and every branch that does bear fruit he prunes, that it may bear more fruit. Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. **If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned**. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples. As the Father has loved me, so have I loved you. Abide in my love. If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. You are my friends if you do what I command you.
 
-> **Romans 11:15-32** - For if their rejection means the reconciliation of the world, what will their acceptance mean but life from the dead? If the dough offered as firstfruits is holy, so is the whole lump, and if the root is holy, so are the branches. But if some of the branches were broken off, and you, although a wild olive shoot, were grafted in among the others and now share in the nourishing root of the olive tree, do not be arrogant toward the branches. If you are, remember it is not you who support the root, but the root that supports you. Then you will say, Branches were broken off so that I might be grafted in. That is true. They were broken off because of their unbelief, but you stand fast through faith. So do not become proud, but stand in awe. For if God did not spare the natural branches, neither will he spare you. Note then the kindness and the severity of God: severity toward those who have fallen, but God's kindness to you, provided you continue in his kindness. Otherwise you too will be cut off. And even they, if they do not continue in their unbelief, will be grafted in, for God has the power to graft them in again. For if you were cut from what is by nature a wild olive tree, and grafted, contrary to nature, into a cultivated olive tree, how much more will these, the natural branches, be grafted back into their own olive tree. Lest you be wise in your own conceits, I want you to understand this mystery, brothers: a partial hardening has come upon Israel, until the fullness of the Gentiles has come in. And in this way all Israel will be saved, as it is written, The Deliverer will come from Zion, he will banish ungodliness from Jacob; and this will be my covenant with them when I take away their sins. As regards the gospel, they are enemies of God for your sake. But as regards election, they are beloved for the sake of their forefathers. For the gifts and the calling of God are irrevocable. Just as you were at one time disobedient to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For God has consigned all to disobedience, that he may have mercy on all.
+> **Romans 11:15-32** - For if their rejection means the reconciliation of the world, what will their acceptance mean but life from the dead? If the dough offered as firstfruits is holy, so is the whole lump, and if the root is holy, so are the branches. But if some of the branches were broken off, and you, although a wild olive shoot, were grafted in among the others and now share in the nourishing root of the olive tree, do not be arrogant toward the branches. If you are, remember it is not you who support the root, but the root that supports you. Then you will say, Branches were broken off so that I might be grafted in. That is true. They were broken off because of their unbelief, but you stand fast through faith. So do not become proud, but stand in awe. For if God did not spare the natural branches, neither will he spare you. Note then the kindness and the severity of God: severity toward those who have fallen, but God's kindness to you, provided you continue in his kindness. Otherwise you too will be cut off. And even they, if they do not continue in their unbelief, will be grafted in, for God has the power to graft them in again. For if you were cut from what is by nature a wild olive tree, and grafted, contrary to nature, into a cultivated olive tree, how much more will these, the natural branches, be grafted back into their own olive tree. Lest you be wise in your own conceits, I want you to understand this mystery, brothers: a partial hardening has come upon Israel, until the fullness of the Gentiles has come in. And in this way all Israel will be saved, as it is written, The Deliverer will come from Zion, he will banish ungodliness from Jacob; and this will be my covenant with them when I take away their sins. As regards the gospel, they are enemies of God for your sake. But as regards election, they are beloved for the sake of their forefathers. For the gifts and the calling of God are irrevocable. Just <ins>as you were at one time disobedient to God</ins> but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For <ins>God has consigned all to disobedience, that he may have mercy on all.</ins>
 
 > **Matthew 12:33-37** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. You brood of vipers! How can you speak good, when you are evil? For out of the abundance of the heart the mouth speaks. The good person out of his good treasure brings forth good, and the evil person out of his evil treasure brings forth evil. I tell you, on the day of judgment people will give account for every careless word they speak, for by your words you will be justified, and by your words you will be condemned. (ESV)
 
