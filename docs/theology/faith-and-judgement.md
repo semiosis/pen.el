@@ -5273,7 +5273,13 @@ Also, <ins>most importantly</ins> believe in the atonement which Jesus provides:
 
 > **John 6:55-71** - For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever. Jesus said these things in the synagogue, as he taught at Capernaum. When many of his disciples heard it, they said, This is a hard saying; who can listen to it? But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this? Then what if you were to see the Son of Man ascending to where he was before? It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. )
 
-Also, <ins>most importantly,</ins> become obedient Jesus:
+Both free grace and Lordship are required.
+
+If either the atonement is rejected or Jesus' Lordship is rejected, I think both groups of people who have rejected atonement or Lordship will be rejected.
+And I define Lordship as obeying Jesus Christ, and I define obeying Jesus Christ as obeying His commandments; not just sharing the gospel but also His commandment to love others in the same way that He has loved us.
+However, if someone hasn't heard the good news yet, but lives righteously then God will judge that person fairly, I think.
+
+Also, <ins>most importantly,</ins> become obedient to Jesus:
 
 -   Obey Jesus' commandments
 -   Do not follow the pattern of this world; leave this world behind
