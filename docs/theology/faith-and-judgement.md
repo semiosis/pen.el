@@ -17,7 +17,7 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing <ins>turn to and obey Him</ins> to be probably <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
+In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God, for their salvation, if they are willing <ins>turn to and obey Him</ins>, if God puts them in, to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
 
 God puts a person in Christ Jesus:
 
@@ -1893,7 +1893,7 @@ See, our actions reflect who our Father is:
 [Christianity is God saves us & we respond to obey, not the other way - YouTube](https://www.youtube.com/watch?v=aEsQdxAoR3Y)
 
 
-# Justification - declared 'not guilty', if faithful to Jesus
+# Justification - declared 'not guilty', if in Christ Jesus
 
 Jesus is God revealed in the flesh.
 
