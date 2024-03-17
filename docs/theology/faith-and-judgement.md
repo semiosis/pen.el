@@ -63,9 +63,15 @@ I believe the above prophetically talks about Jesus. We must obey Jesus. God doe
 
 # Great commission
 
+Obedience to Jesus' commandments (repentance from sin):
+
 > **Luke 24:46-47** - and said to them, Thus it is written, that the Christ should suffer and on the third day rise from the dead, and that **repentance** (G3341 metanoia) and **forgiveness** (G859 aphesis) of sins should be proclaimed in his name to all nations, beginning from Jerusalem.
 
+Obedience to Jesus' commandments (becoming disciples, obeying Jesus' commandments):
+
 > **Matthew 28:18-20** - And Jesus came up and spoke to them, saying, “All authority has been given to Me in heaven and on earth. Go therefore and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit, teaching them to observe **all that I commanded you**; and lo, I am with you always, even to the end of the age.”
+
+Obedience to Jesus' commandments (trusting Jesus and being baptised):
 
 > **Mark 16:15-18** - And he said to them, Go into all the world and proclaim the gospel to the whole creation. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned. And these signs will accompany those who believe: in my name they will cast out demons; they will speak in new tongues; they will pick up serpents with their hands; and if they drink any deadly poison, it will not hurt them; they will lay their hands on the sick, and they will recover.
 
@@ -167,11 +173,17 @@ Jesus' perfect example of patience in mercy towards Paul is to:
 
 > **I Timothy 1:16** - But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience as an example to those who were to believe in him for eternal life. (ESV)
 
-Sanctification leads to eternal life:
+We are set free from sin to become slaves of God. The fruit of being a slave to God leads to sanctification and at its end, eternal life:
 
 > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 
-> **Jude 1:21** - keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
+
+> **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+
+Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
@@ -780,6 +792,13 @@ We must be a servant of Jesus to not be cast out. We must have obedience:
 Coming to Jesus involves <ins>denying ourself</ins> and taking up our cross daily to follow Him:
 
 > **Luke 9:23** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. (ESV)
+
+Christ Jesus judged Paul **faithful** - Paul was faithful, and Jesus Christ is Paul's Lord.
+Paul received mercy to become obedient.
+Paul received mercy because he was **acting ignorantly** - behaving in a way which came from disbelief.
+So then, Christ Jesus displays in Paul His perfect patience to those who would trust in Him for eternal life and be brought from ungodliness into godliness - disobedience into obedience.
+
+> **I Timothy 1:12-16** - I thank him who has given me strength, Christ Jesus our Lord, because he judged me faithful, appointing me to his service, though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because I had acted ignorantly in unbelief, and the grace of our Lord overflowed for me with the faith and love that are in Christ Jesus. The saying is trustworthy and deserving of full acceptance, that Christ Jesus came into the world to save sinners, of whom I am the foremost. But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience as an example to those who were to believe in him for eternal life. (ESV)
 
 You **must** believe:
 
@@ -7044,6 +7063,24 @@ So sometimes a person needs to choose Jesus over false teachers and blind guides
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
 It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
+
+Correct Christology is important, but so is obeying Jesus' commandments, and obeying Jesus' commandments is possibly even more important than belief:
+
+> **Matthew 21:28-31** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
+
+We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
+
+> **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+
+Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+
+Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+Therefore, I don't want to flat-out disqualify people who do not have precisely the correct doctrine or theology.
 
 Jesus goes to those who hear His voice to bring them into His flock:
 
