@@ -11774,6 +11774,11 @@ By God's grace I've been set free from sin, and brought into a relationship with
 > **Matthew 5:16** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
 
 
+# The close of the age
+
+> **Matthew 13:45-52** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. Again, the kingdom of heaven is like a net that was thrown into the sea and gathered fish of every kind. When it was full, men drew it ashore and sat down and sorted the good into containers but threw away the bad. So it will be at the close of the age. <ins>The angels will come out and separate the evil from the righteous and throw them into the fiery furnace.</ins> In that place there will be weeping and gnashing of teeth. Have you understood all these things? They said to him, Yes. And he said to them, Therefore every scribe who has been trained for the kingdom of heaven is like a master of a house, who brings out of his treasure what is new and what is old.
+
+
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
 
 The Only True God is the God and Father of Jesus Christ, and Jesus Christ who He Sent.
@@ -11868,6 +11873,8 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 </tr>
 </tbody>
 </table>
+
+[Praise {feat. Brandon Lake, Chris Brown & Chandler Moore} | Elevation Worship - YouTube](https://www.youtube.com/watch?v=f2oxGYpuLkw)
 
 
 ## Prayer of thanks
