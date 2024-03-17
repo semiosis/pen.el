@@ -3130,7 +3130,9 @@ After receiving justification (counted not guilty) through obedient and believin
 Heresies:
 
 -   free grace without Lordship
+    -   We love (obey) because He loved us first
 -   Lordship without free grace
+    -   We love (obey) because He loved us first
 
 I believe that either of these heresies fall under this strong delusion category:
 
@@ -3143,6 +3145,24 @@ I believe that either of these heresies fall under this strong delusion category
 > **Jude 1:4-5** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. Now I want to remind you, although you once fully knew it, that Jesus, who saved a people out of the land of Egypt, afterward destroyed those who did not believe.
 
 -   [2 Peter 2 Destructive Doctrines- guidance from the Word - YouTube](https://www.youtube.com/watch?v=Fxsq06WB0CA)
+
+I'd rather be a doer than merely a hearer.
+
+Correct Christology is important, but so is obeying Jesus' commandments, and obeying Jesus' commandments is possibly even more important than belief:
+
+> **Matthew 21:28-31** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
+
+We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
+
+> **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+
+Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+
+Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 
 ### Yield to God
@@ -7061,6 +7081,8 @@ So sometimes a person needs to choose Jesus over false teachers and blind guides
 
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
+
+> **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
 
 It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
