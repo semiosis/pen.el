@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-03-18 Mon 17:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8413faa">1. Valentinus</a>
+<ul>
+<li><a href="#orge694f5e">1.1. Refutations</a>
+<ul>
+<li><a href="#org4f69c00">1.1.1. Refutation of All Heresies (Hippolytus)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org25e4234">2. WATV - World Mission Society Church of God</a></li>
+<li><a href="#org3d432b6">3. Free-grace without Lordship salvation</a></li>
+<li><a href="#org777a6b6">4. Lordship salvation without free-grace</a></li>
+<li><a href="#org117ea24">5. Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus</a>
+<ul>
+<li><a href="#org187e24d">5.1. They also have to repent from idolatry</a>
+<ul>
+<li><a href="#org7072f18">5.1.1. Idolatry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga663279">6. People who twist the Scriptures to seek worldly prosperity instead of following Jesus</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8413faa" class="outline-2">
+<h2 id="org8413faa"><span class="section-number-2">1.</span> Valentinus</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://www.earlychristianwritings.com/text/valentinian.html">A Valentinian Exposition</a>
+</p>
+</div>
+
+<div id="outline-container-orge694f5e" class="outline-3">
+<h3 id="orge694f5e"><span class="section-number-3">1.1.</span> Refutations</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org4f69c00" class="outline-4">
+<h4 id="org4f69c00"><span class="section-number-4">1.1.1.</span> Refutation of All Heresies (Hippolytus)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+<a href="https://www.newadvent.org/fathers/050106.htm">CHURCH FATHERS: Refutation of All Heresies, Book VI {Hippolytus}</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25e4234" class="outline-2">
+<h2 id="org25e4234"><span class="section-number-2">2.</span> WATV - World Mission Society Church of God</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Positives:
+<ul class="org-ul">
+<li>They believe obedience is important to faith.</li>
+</ul></li>
+<li>Problems:
+<ul class="org-ul">
+<li>They believe the Father is the Son exactly</li>
+<li>They believe in God the Mother</li>
+<li>They believe Gentiles are under the Mosaic law.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d432b6" class="outline-2">
+<h2 id="org3d432b6"><span class="section-number-2">3.</span> Free-grace without Lordship salvation</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+This is a problem in Calvinist churches with people (especially pastors)
+who don't preach for us to 'do' the will of God, but merely want God to do it, when Jesus told His disciples to teach people to obey Him.
+</p>
+
+<p>
+The truth is we are set free from sin to become slaves of God and the fruit of being a slave to God leads to sanctification and at its end, eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>Romans 6:22-23</b> - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
+</p>
+</blockquote>
+
+<p>
+We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>Jude 1:21</b> - <b>keep yourselves in the love of God,</b> waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+</p>
+</blockquote>
+
+<p>
+Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>John 15:10</b> - <b>If you keep my commandments, you will abide in my love,</b> just as I have kept my Father's commandments and abide in his love. (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org777a6b6" class="outline-2">
+<h2 id="org777a6b6"><span class="section-number-2">4.</span> Lordship salvation without free-grace</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+I think that actually following Jesus is probably superior to someone who says that they are a follower of Jesus but doesn't actually follow.
+</p>
+
+<blockquote>
+<p>
+<b>Matthew 21:28-31</b> - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  <b>Which of the two did the will of his father?” They said, “The first.”</b> Jesus said to them, “Truly I say to you that <b>the tax collectors and prostitutes will get into the kingdom of God before you.</b>
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Matthew 7:21</b> - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 15:10</b> - Just so, I tell you, there is joy before the angels of God over one sinner who repents. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 19:9-10</b> - And Jesus said to him, Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>II Peter 3:9</b> - The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Matthew 12:50</b> - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org117ea24" class="outline-2">
+<h2 id="org117ea24"><span class="section-number-2">5.</span> Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus</h2>
+<div class="outline-text-2" id="text-5">
+<blockquote>
+<p>
+<b>John 7:24</b> - Do not judge by appearances, but judge with right judgment. (ESV)
+</p>
+</blockquote>
+
+<p>
+It's not really the religion but who puts their faith in Jesus and <b>obeys</b> the gospel who will be saved.
+</p>
+
+<p>
+Correct Christology is important, but so is obeying Jesus' commandments, and obeying Jesus' commandments is possibly even more important than belief:
+</p>
+
+<blockquote>
+<p>
+<b>Matthew 21:28-31</b> - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  <b>Which of the two did the will of his father?” They said, “The first.”</b> Jesus said to them, “Truly I say to you that <b>the tax collectors and prostitutes will get into the kingdom of God before you.</b>
+</p>
+</blockquote>
+
+<p>
+We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>Jude 1:21</b> - <b>keep yourselves in the love of God,</b> waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+</p>
+</blockquote>
+
+<p>
+Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>John 15:10</b> - <b>If you keep my commandments, you will abide in my love,</b> just as I have kept my Father's commandments and abide in his love. (ESV)
+</p>
+</blockquote>
+
+<p>
+Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
+</p>
+
+<blockquote>
+<p>
+<b>John 3:36</b> - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+</p>
+</blockquote>
+
+<p>
+Therefore, I don't want to flat-out disqualify people who do not have precisely the correct doctrine or theology.
+</p>
+
+<p>
+Jesus goes to those who hear His voice to bring them into His flock:
+</p>
+
+<blockquote>
+<p>
+<b>John 10:16</b> - And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
+</p>
+</blockquote>
+
+<p>
+Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
+</p>
+
+<p>
+Not all religions are equal. There is only one true God, the Father of Jesus Christ who has revealed Himself in Jesus Christ.
+</p>
+
+<p>
+The only way is Jesus:
+</p>
+
+<blockquote>
+<p>
+<b>John 14:6</b> - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>1 Corinthians 8:5-6</b> - For although there may be so-called gods in heaven or on earth-as indeed there are many gods and many lords- yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist. (ESV)
+</p>
+</blockquote>
+
+<p>
+Jesus Himself is the bread of God - Jesus Himself <b>is</b> the source of life:
+</p>
+
+<blockquote>
+<p>
+<b>John 6:33</b> - For the bread of God is he who comes down from heaven and gives life to the world.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>John 6:35</b> - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>John 13:34-35</b> - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Galatians 1:6-10</b> - I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel- not that there is another one, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Micah 4:1-13</b> - It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths. For out of Zion shall go forth the law, and the word of the LORD from Jerusalem. He shall judge between many peoples, and shall decide for strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the LORD of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the LORD our God forever and ever. In that day, declares the LORD, I will assemble the lame and gather those who have been driven away and those whom I have afflicted; and the lame I will make the remnant, and those who were cast off, a strong nation; and the LORD will reign over them in Mount Zion from this time forth and forevermore. And you, O tower of the flock, hill of the daughter of Zion, to you shall it come, the former dominion shall come, kingship for the daughter of Jerusalem. Now why do you cry aloud? Is there no king in you? Has your counselor perished, that pain seized you like a woman in labor? Writhe and groan, O daughter of Zion, like a woman in labor, for now you shall go out from the city and dwell in the open country; you shall go to Babylon. There you shall be rescued; there the LORD will redeem you from the hand of your enemies. Now many nations are assembled against you, saying, Let her be defiled, and let our eyes gaze upon Zion. But they do not know the thoughts of the LORD; they do not understand his plan, that he has gathered them as sheaves to the threshing floor. Arise and thresh, O daughter of Zion, for I will make your horn iron, and I will make your hoofs bronze; you shall beat in pieces many peoples; and shall devote their gain to the LORD, their wealth to the Lord of the whole earth. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>James 1:26</b> - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org187e24d" class="outline-3">
+<h3 id="org187e24d"><span class="section-number-3">5.1.</span> They also have to repent from idolatry</h3>
+<div class="outline-text-3" id="text-5-1">
+<blockquote>
+<p>
+<b>I Thessalonians 1:9-10</b> - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>I Corinthians 10:14-31</b> - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. <b>You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons</b>. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org7072f18" class="outline-4">
+<h4 id="org7072f18"><span class="section-number-4">5.1.1.</span> Idolatry</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<blockquote>
+<p>
+<b>Acts 17:29</b> - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Romans 1:23</b> - and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles.􄐺
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Psalms 106:20</b> - They exchanged the glory of God for the image of an ox that eats grass.􂉢
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga663279" class="outline-2">
+<h2 id="orga663279"><span class="section-number-2">6.</span> People who twist the Scriptures to seek worldly prosperity instead of following Jesus</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+<a href="https://www.youtube.com/watch?v=lTMcFZJTN78">How Kenneth Copeland Scammed Millions - YouTube</a>
+</p>
+
+<blockquote>
+<p>
+<b>I Timothy 6:6</b> - Now there is great gain in godliness with contentment, (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Acts 8:20</b> - But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money! (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>John 12:6</b> - He said this, not because he cared about the poor, but because he was a thief, and having charge of the moneybag he used to help himself to what was put into it. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 12:33</b> - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 9:3</b> - And he said to them, Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 16:13</b> - No servant can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 14:26</b> - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>II Timothy 3:2</b> - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Matthew 6:24</b> - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Luke 18:25</b> - For it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Matthew 6:33</b> - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2024-03-18 Mon 17:07</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
