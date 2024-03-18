@@ -271,9 +271,13 @@ God has called us out of darkness and into His marvelous light:
 
 > **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light. (ESV)
 
-Saving faith does come (originate) from hearing through the word of Christ. I believe that saving faith must arrive and settle in the heart:
+Saving faith does come (originate) from hearing through the word of Christ:
 
 > **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+
+I believe that saving faith must arrive and settle in the heart, and as the heart is made clean, a person's outside changes:
+
+> **Matthew 23:26** - You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. (ESV)
 
 There are some doctrines that are so essential that to deny them is to not be a Christian:
 
@@ -717,6 +721,16 @@ But we must be in Christ Jesus:
 
 > **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
 
+A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesus Christ's commandments</ins>:
+
+> **Galatians 6:15** - For neither <ins>circumcision counts for anything, nor uncircumcision,</ins> but **a new creation.** (ESV)
+
+> **Galatians 5:6** - For in Christ Jesus <ins>neither circumcision nor uncircumcision counts for anything,</ins> but only **faith working through love.** (ESV)
+
+> **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
+
+Following Jesus Christ is not having a religious spirit, but it's serving God in reality.
+
 > **Galatians 3:26** - for in Christ Jesus you are all sons of God, through faith. (ESV)
 
 [Free from Judgment, Fighting Sin, Full Assurance - YouTube](https://youtu.be/M9EbSw8O6uc?t=1846)
@@ -877,7 +891,7 @@ This person worked - served God - and this verse guarantees that the one who tri
 > **1 Corinthians 3:15** - If anyone's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire. (ESV)
 
 
-### Forever abiding is believing and being a disciple
+### Forever abiding is believing and being a disciple, a servant
 
 > **John 15:4-8** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
 
@@ -974,6 +988,31 @@ The grace given to Paul allowed him to turn from his evil ways and pursue Jesus,
 > **I Corinthians 15:10** - But by the grace of God I am what I am, and his grace toward me was not in vain. On the contrary, I worked harder than any of them, though it was not I, but the grace of God that is with me. (ESV)
 
 > **Acts 2:47** - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
+
+
+## Becoming a servant, humbling oneself and following Jesus is what we shoud do
+
+A religious spirit is:
+
+-   not being a servant
+-   neglects the weightier matters of the law: **justice** and **mercy** and **faithfulness**
+-   an emphasis on outward appearances over inner transformation
+-   hypocrisy
+-   uses the law as a beating tool on other people
+    -   they use the law superficially
+-   but are **lawlessness in reality**
+    -   their relationship with God is really busted up - not being faithful to God
+
+True religion:
+
+-   focuses on purifying the heart, and obeying God's commandments in truth, accountable to God
+-   as far as the law is concerned
+    -   externally prioritises justice, mercy and faithfulness
+    -   inwardly tries to maintain a holy heart
+-   serving Jesus
+-   avoids judging people to cut people down, but encourages people to be accountable to God with it
+
+> **Matthew 23:11-33** - The greatest among you shall be your servant. Whoever exalts himself will be humbled, and whoever humbles himself will be exalted. But woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in people's faces. For you neither enter yourselves nor allow those who would enter to go in. Woe to you, scribes and Pharisees, hypocrites! For you travel across sea and land to make a single proselyte, and when he becomes a proselyte, you make him twice as much a child of hell as yourselves. Woe to you, blind guides, who say, If anyone swears by the temple, it is nothing, but if anyone swears by the gold of the temple, he is bound by his oath. You blind fools! For which is greater, the gold or the temple that has made the gold sacred? And you say, If anyone swears by the altar, it is nothing, but if anyone swears by the gift that is on the altar, he is bound by his oath. You blind men! For which is greater, the gift or the altar that makes the gift sacred? So whoever swears by the altar swears by it and by everything on it. And whoever swears by the temple swears by it and by him who dwells in it. And whoever swears by heaven swears by the throne of God and by him who sits upon it. Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have **neglected** the weightier matters of the law: **justice and mercy and faithfulness**. These you ought to have done, without neglecting the others. You blind guides, straining out a gnat and swallowing a camel! Woe to you, scribes and Pharisees, hypocrites! For you clean the outside of the cup and the plate, but inside they are full of greed and self-indulgence. You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which outwardly appear beautiful, but within are full of dead people's bones and all uncleanness. So you also outwardly appear righteous to others, but within you are **full of hypocrisy and lawlessness**. Woe to you, scribes and Pharisees, hypocrites! For you build the tombs of the prophets and decorate the monuments of the righteous, saying, If we had lived in the days of our fathers, we would not have taken part with them in shedding the blood of the prophets. Thus you witness against yourselves that you are sons of those who murdered the prophets. Fill up, then, the measure of your fathers. You serpents, you brood of vipers, <ins>how are you to escape being sentenced to hell?</ins> (ESV)
 
 
 ## I believe that I should try as hard as I can to enter via the narrow gate
