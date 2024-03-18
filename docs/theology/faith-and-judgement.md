@@ -177,6 +177,10 @@ We are set free from sin to become slaves of God. The fruit of being a slave to 
 
 > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 
+You are not your own:
+
+> **I Corinthians 6:17-20** - But he who is joined to the Lord becomes one spirit with him. Flee from sexual immorality. Every other sin a person commits is outside the body, but the sexually immoral person sins against his own body. Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? **You are not your own,** for you were bought with a price. So glorify God in your body. (ESV)
+
 We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
 
 > **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
@@ -1010,7 +1014,7 @@ True religion:
     -   externally prioritises justice, mercy and faithfulness
     -   inwardly tries to maintain a holy heart, and a relationship with God
 -   serving Jesus
--   avoids judging people to cut people down, but encourages people to be accountable to God with it
+-   avoids judging people with the law to cut people down, but encourages people to be accountable to God with it
 -   bear one another's burdens
 
 We're under the <ins>law of Christ,</ins> and that shouldn't be a heavy burden:
@@ -9107,7 +9111,9 @@ their faithfulness to God and their conviction.
 
 ## Justification by faith - Jews + Gentiles, and in-between
 
-[The Law Refutes Justification by Law: Galatians 3:6a??9, Part 1 - YouTube](https://youtu.be/34pBf5pZq_I?t=536)
+Paul preached the same gospel as Jesus, Peter and John, but some people think Paul's gospel is different - but that is because they have been deceived by the two-gospel heresy:
+
+-   [The Two Gospel Heresy - Anton Bosch](https://antonbosch.org/the-two-gospel-heresy)
 
 To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
@@ -9117,10 +9123,48 @@ To be justified, a person must <ins>walk in the footsteps of the faith that our 
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
+How do we become sons of Abraham:
+
+-   [How Do Gentiles Become Sons of Abraham? Galatians 3:6a??9, Part 3 - YouTube](https://www.youtube.com/watch?v=a2xzr8ZJpn8)
+
+I do believe that trusting inevitably bears fruit.
+
+We must be a **child of Abraham.**
+The blessing comes through being counted as sons of Abraham.
+
+> **Romans 9:7-8** - and not all are children of Abraham because they are his offspring, but Through Isaac shall your offspring be named. This means that it is not the children of the flesh who are the children of God, but <ins>the children of the promise are counted as offspring.</ins> (ESV)
+
+> **Genesis 17:4** - Behold, my covenant is with you, and you shall be the father of a multitude of nations. (ESV)
+
+The sign of circumcision was a seal of righteousness that he had by faith while he was still uncircumcised
+This righteousness by faith was not based on lawkeeping.
+The purpose was to make him the father of all who believe without being circumcised so righteousness can be counted to them as well.
+
+> **Romans 4:11-12** - He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised. (ESV)
+
+The promises go to Christ:
+
+> **Galatians 3:16** - Now the promises were made to Abraham and to his offspring. It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ. (ESV)
+
+If you belong to Christ by faith then you are one in spirit with Christ and Abraham's offspring, and heirs according to the promise.
+
+> **Galatians 3:29** - And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
+
 Jesus Christ's blood is the atonement for our sin.
-We should also become obedient to Him.
+
+We should also become obedient to Him - we must have faith in Jesus.
 
 > **John 8:39** - They answered him, Abraham is our father. Jesus said to them, If you were Abraham's children, you <ins>would be doing what Abraham did</ins>,
+
+One of the blessings is that we are counted as righteous before God, because we have faith in Jesus, loving Jesus.
+
+Another promise is that we would be an heir of the world. We belong to the Messiah. In the Messiah, God can make promises such as this to His chosen people:
+
+> **Romans 4:13** - For the promise to Abraham and his offspring that he would be heir of the world did not come through the law but through the righteousness of faith. (ESV)
+
+Another promise is that in Christ (in union with Christ), the blessing of Abraham might come to the Gentiles so that we together Jew, and Gentile, might receive the promised Spirit (God's Spirit) through faith:
+
+> **Galatians 3:13-14** - Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith. (ESV)
 
 God can raise up children from anyone who has repentance and may grant being a child of Abraham to anyone who walks in the footsteps of the faith that Abraham had before he was circumcised.
 
