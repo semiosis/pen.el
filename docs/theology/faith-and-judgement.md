@@ -6537,6 +6537,10 @@ I think that choosing a relationship Biblically is contrary to worldly precepts:
 
 OBEDIENCE!
 
+In Spyridon's words, "Paradise will not be filled with sinless people - it will be filled with people who have repented."
+
+[DESPITE REPEATED SINS, DO NOT DESPAIR - YouTube](https://www.youtube.com/watch?v=MAsHNMlv2bQ)
+
 
 # Sermon on the mount
 
@@ -6710,6 +6714,11 @@ But only the ones who are truly remorseful.
 > **Colossians 3:23-24** -  Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.  (ESV)
 
 > **Matthew 25:35-46** - For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me. Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me. Then he will say to those on his left, Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into eternal punishment, but the righteous into eternal life.
+
+
+# 
+
+<https://www.youtube.com/watch?v=MAsHNMlv2bQ&ab_channel=FatherSpyridon>
 
 
 # Who will enter the holy city of Jerusalem which is in Heaven? Not sinners. Only servants. Only those who follow Jesus' commandments
