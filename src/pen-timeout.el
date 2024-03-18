@@ -131,4 +131,11 @@ function."
  (timeout-throttle! 'test-throttle-fun 2.0)
  (test-throttle-fun))
 
+;; (timeout-memo-throttle! 'sidecar-get-cross-references-for-ref 1)
+;; Why isn't it memoizing?
+(timeout-memo-throttle! 'sidecar-get-cross-references-for-ref 5)
+
+(comment
+ (timeout-memo-unthrottle! 'sidecar-get-cross-references-for-ref))
+
 (provide 'pen-timeout)

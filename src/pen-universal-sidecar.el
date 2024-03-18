@@ -62,10 +62,9 @@ If FRAME is nil, use `selected-frame'."
       ;;    (comment (some-post-processing-of-org-text))))
       )))
 
+;; This appears to be running twice in a row every time the sidecar is opened
 (defun sidecar-get-cross-references-for-ref (ref)
-  (snc "in-pen bible-get-cross-references -olol" ref))
-
-(memoize 'sidecar-get-cross-references-for-ref)
+  (snc "spin in-pen bible-get-cross-references -olol" ref))
 
 (universal-sidecar-define-section bible-section (file title)
                                   (
