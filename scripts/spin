@@ -39,12 +39,21 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -m) {
+        message="$1"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-# 1 is the message and it's taken from the first
+: "${message:="$1"}"
+
+# 1 is the message and it's usually taken from the first
 # command in the command arguments
-spinner-start "${extraargs[@]}" -m "$1"
+spinner-start "${extraargs[@]}" -m "$message"
 
 "$@"
 ret="$?"
