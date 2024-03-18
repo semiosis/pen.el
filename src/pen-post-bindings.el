@@ -36,6 +36,8 @@
 (sslk "lam" #'tzc-world-clock)
 (sslk "law" #'aws-instances)
 ;; (sslk "lak" #'kubernetes-overview)
+
+(sslk "lac" #'artist-mode)
 (sslk "lak" #'toggle-picture-mode)
 (sslk "laf" #'deft)
 (sslk "laB" #'calibredb)
@@ -43,7 +45,7 @@
 (sslk "laio" #'iotop)
 (sslk "laie" #'erc)
 (sslk "laC" #'calc)
-(sslk "lact" #'cryptop)
+
 (sslk "laE" 'elfeed)
 (sslk "la)" #'emoji-cheat-sheet-plus-buffer)
 
