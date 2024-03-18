@@ -1000,7 +1000,7 @@ A religious spirit is:
 -   hypocrisy
 -   uses the law as a beating tool on other people
     -   they use the law superficially
--   but are **lawlessness in reality**
+-   but are **lawless in reality**
     -   their relationship with God is really busted up - not being faithful to God
 
 True religion:
@@ -1008,7 +1008,7 @@ True religion:
 -   focuses on purifying the heart, and obeying God's commandments in truth, accountable to God
 -   as far as the law is concerned
     -   externally prioritises justice, mercy and faithfulness
-    -   inwardly tries to maintain a holy heart
+    -   inwardly tries to maintain a holy heart, and a relationship with God
 -   serving Jesus
 -   avoids judging people to cut people down, but encourages people to be accountable to God with it
 -   bear one another's burdens
