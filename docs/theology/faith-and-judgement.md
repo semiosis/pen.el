@@ -2256,7 +2256,29 @@ Think of Jesus here:
 
 Christians must do this.
 
-Those who are in the faith <ins>can't do anything against the truth</ins> - So those who are in the faith find no contradiction:
+It's Jesus' words are forever true:
+
+> **Matthew 24:35** - Heaven and earth will pass away, but <ins>my words will not pass away.</ins> (ESV)
+
+We will be judged by Jesus' own words which God gave Him, unless we accept Him, and accept His words:
+
+> **John 12:48** - <ins>The one who rejects me and does not receive my words has a judge</ins>; the <ins>word that I have spoken will judge him</ins> on the last day.
+
+I believe the following indicates the law exists pretty much forever - there probably isn't an expiry date:
+
+> **Luke 16:17** - But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
+
+> **Psalms 119:160** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
+
+> **John 17:17-19** - Sanctify them in the truth; Your word is truth. As you sent me into the world, so I have sent them into the world. And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
+
+Those who are in the faith <ins>can't do anything against the truth</ins>.
+
+I think the Apostle here understands that we must test ourselves to see if we are in the faith, and encourage others to test themselves.
+But interestingly, he says, "not that we may appear to have met the test", and "though we may seem to have failed", as if it may **appear** and **seem** as
+though others have failed, but that we should **test ourselves**.
+
+Though there may seem to be **apparent** paradoxes, and **apparent** contradictions in the Scripture, I think they either resolve or we rest in God, not relying on our own understanding. But I confidently affirm God is True, though I don't understand everything, and I affirm that my spiritual eyesight is getting cleaned up by the Spirit, through faith, and by the washing of the word, and I have confidence that Jesus Christ is in me:
 
 > **II Corinthians 13:5-8** - Examine yourselves, to see whether you are in the faith. Test yourselves. Or do you not realize this about yourselves, that Jesus Christ is in you? —unless indeed you fail to meet the test! I hope you will find out that we have not failed the test. But we pray to God that you may not do wrong—not that we may appear to have met the test, but that you may do what is right, though we may seem to have failed. For we cannot do anything against the truth, but only for the truth.
 
