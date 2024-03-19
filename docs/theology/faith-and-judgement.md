@@ -497,7 +497,7 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 <tr>
 <td class="org-left">John 6:35</td>
 <td class="org-left">whoever believes in me shall never thirst</td>
-<td class="org-left">whoever comes to me shall not hunger</td>
+<td class="org-left"><ins>whoever comes to me</ins> shall not hunger</td>
 </tr>
 </tbody>
 </table>
@@ -687,6 +687,15 @@ I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
 
+I think we are permanently saved when we are following Jesus.
+
+We are saved from dying by Jesus giving us His Spirit and then,
+so long as we are His sheep, coming to Him (by following His commandments), we will live forever, in Him.
+
+> **John 6:37** - All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. (ESV)
+
+I believe that anyone who is trusting in Jesus for His finished work is saved. Believing the gospel is obeying the gospel. I just think there's more to it in terms of abiding forever. Because we must bear fruit etc. and follow His commandments to come to know Him. I don't condemn anyone who is believing on Him for life through His name.
+
 Doing the will of God is what it means to be led by the Spirit. So you have to **do** the will of God, being a servant of Christ under the law of Christ, to have the blessing of not being condemned by the law of Moses:
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
@@ -797,7 +806,7 @@ God draws the person to Jesus:
 
 Jesus said He will not cast people out <ins>who have come to Him</ins>, and it's His sheep who come to Him, those who follow Him:
 
-> **John 6:37** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. (ESV)
+> **John 6:37** - All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. (ESV)
 
 Coming to Jesus is the requirement for not being cast out, and coming to Jesus Christ means obedience and following Jesus:
 
@@ -6832,7 +6841,7 @@ But Christians are not <ins>under</ins> the law while we are led by the Spirit:
 
 ## Have faith in Jesus. Continue in faith in Jesus and it will well up to eternal life
 
-> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
+> **John 6:35** - Jesus said to them, I am the bread of life; <ins>whoever comes to me</ins> shall not hunger, and whoever believes in me shall never thirst.
 
 > **John 6:38-40** - For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day.
 
@@ -6907,7 +6916,7 @@ Obeying Jesus:
 
 > **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
 
-> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
+> **John 6:35** - Jesus said to them, I am the bread of life; <ins>whoever comes to me</ins> shall not hunger, and whoever believes in me shall never thirst.
 
 Believing in Jesus is good work.
 Believing in Jesus keeps us alive.
@@ -7266,7 +7275,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 
 > **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
 
-> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
+> **John 6:35** - Jesus said to them, I am the bread of life; <ins>whoever comes to me</ins> shall not hunger, and whoever believes in me shall never thirst.
 
 > **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
@@ -8087,7 +8096,7 @@ Accomplishing the will of God the Father is **food**:
 
 > **Mark 3:35** - Whoever does the will of God, he is my brother and sister and mother.
 
-> **John 6:29-40** - Jesus answered them, This is the work of God, that you believe in him whom he has sent. So they said to him, Then what sign do you do, that we may see and believe you? What work do you perform? Our fathers ate the manna in the wilderness; as it is written, He gave them bread from heaven to eat. Jesus then said to them, Truly, truly, I say to you, it was not Moses who gave you the bread from heaven, but my Father gives you the true bread from heaven. For the bread of God is he who comes down from heaven and gives life to the world. They said to him, Sir, give us this bread always. Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst. But I said to you that you have seen me and yet do not believe. All that the Father gives me will come to me, and whoever comes to me I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day.
+> **John 6:29-40** - Jesus answered them, This is the work of God, that you believe in him whom he has sent. So they said to him, Then what sign do you do, that we may see and believe you? What work do you perform? Our fathers ate the manna in the wilderness; as it is written, He gave them bread from heaven to eat. Jesus then said to them, Truly, truly, I say to you, it was not Moses who gave you the bread from heaven, but my Father gives you the true bread from heaven. For the bread of God is he who comes down from heaven and gives life to the world. They said to him, Sir, give us this bread always. Jesus said to them, I am the bread of life; <ins>whoever comes to me</ins> shall not hunger, and whoever believes in me shall never thirst. But I said to you that you have seen me and yet do not believe. All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day.
 
 > **I Corinthians 5:11** - But now I am writing to you <ins>not to associate with anyone who bears the name of brother if he is guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler—not even to eat with such a one</ins>.
 
@@ -8532,11 +8541,11 @@ Full union with God.
 
 ## The work of God, believing in Jesus
 
-> **John 6:29-40** - Jesus answered them, This is the work of God, that you believe in him whom he has sent. So they said to him, Then what sign do you do, that we may see and believe you? What work do you perform? Our fathers ate the manna in the wilderness; as it is written, He gave them bread from heaven to eat. Jesus then said to them, Truly, truly, I say to you, it was not Moses who gave you the bread from heaven, but my Father gives you the true bread from heaven. For the bread of God is he who comes down from heaven and gives life to the world. They said to him, Sir, give us this bread always. Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst. But I said to you that you have seen me and yet do not believe. All that the Father gives me will come to me, and whoever comes to me I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day.
+> **John 6:29-40** - Jesus answered them, This is the work of God, that you believe in him whom he has sent. So they said to him, Then what sign do you do, that we may see and believe you? What work do you perform? Our fathers ate the manna in the wilderness; as it is written, He gave them bread from heaven to eat. Jesus then said to them, Truly, truly, I say to you, it was not Moses who gave you the bread from heaven, but my Father gives you the true bread from heaven. For the bread of God is he who comes down from heaven and gives life to the world. They said to him, Sir, give us this bread always. Jesus said to them, I am the bread of life; <ins>whoever comes to me</ins> shall not hunger, and whoever believes in me shall never thirst. But I said to you that you have seen me and yet do not believe. All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day.
 
 Jesus doesn't cast people out.
 
-All that the Father gives me will come to me, and whoever comes to me I will
+All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will
 never cast out.
 
 I think that salvation is a totally free gift and the baseline salvation is trusting in Jesus, because of His
@@ -8558,7 +8567,7 @@ A person would have to reject Jesus to be grafted out, I think.
 
 We must be perpetually <ins>approaching Jesus:</ins>
 
-**John 6:37** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. (ESV)
+**John 6:37** - All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. (ESV)
 
 So most importantly, believe in Jesus, and that he has paid the price for your sin with His blood, and continue in relationship with Jesus.
 
