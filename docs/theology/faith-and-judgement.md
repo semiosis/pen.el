@@ -3404,6 +3404,12 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
     
     When it says "not a result of works", I believe that something more like, even if works were tied into the faith, it's by grace. If a person's saving faith included works then that is fine.
     
+    > **I Corinthians 4:7** - For who sees anything different in you? What do you have that you did not receive? If then you received it, why do you boast as if you did not receive it? (ESV)
+    
+    Our works have been gifted to us by God's grace:
+    
+    > **Ephesians 2:10** - For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
+    
     Faith-in-God is hearing God's word and believing it, and even acting on it, or at least the readiness to act on it.
     A person may act on faith in their heart by arriving at conviction. But it has to be faith in the truth.
     Then, like Peter stepping out on the water, or like the woman at the well going in to town to tell people about Jesus, or turning from sinful things, it produces more obedience.
