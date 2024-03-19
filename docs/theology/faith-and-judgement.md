@@ -412,7 +412,7 @@ If someone obeys Jesus they should arrive at belief in Jesus and who He is and w
 
 > **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
-If a person believes on Jesus and what He has accomplished they should arrive at obedience. Technically, if someone believes on Him they have begun to obey Him:
+If a person believes on Jesus and what He has accomplished they should arrive at obedience, and if they want to be counted as a friend of Jesus, they certainly they **must** obey Jesus' commandments:
 
 > **John 15:10-14** - <ins>If you keep my commandments, you will abide in my love,</ins> just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. You are my friends <ins>if you do what I command you.</ins>
 
@@ -420,6 +420,21 @@ I think faith in Jesus grows as both of these qualities increase.
 
 -   Those who believe in part yet do not obey the gospel, I think fall into condemnation.
 -   Those who obey in part yet do not believe the gospel, I think also fall into condemnation
+
+Nevertheless, if someone believes on Him they have begun to obey Him, and so I believe they are in the Lord while they **trust in His name, Jesus Christ (Messiah) the Son of God, to be saved**, as the following applies:
+
+> **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+
+> **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+
+So if a person **is believing** (verb) in Him - I don't think they fall into condemnation, no matter how otherwise disobedient they are.
+Actually, at some stage I think we have to just rest in the knowledge that it's all about what He did, as far as being saved goes, not what we've done for Him.
+
+> **Hebrews 4:10** - for whoever has entered God's rest has also rested from his works as God did from his. (ESV)
+
+It's quite confusing sometimes. But God is the justifier, and God is the one who decides who is **in Christ.**
+
+> **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
 Love (obedience) and belief:
 
@@ -489,6 +504,13 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 <td class="org-left">John 10:26-27</td>
 <td class="org-left">but you do not believe because you are not part of my flock</td>
 <td class="org-left">My sheep hear my voice, and I know them, and they follow me.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">I John 3:23</td>
+<td class="org-left">this is his commandment, that we believe in the name of his Son Jesus Christ</td>
+<td class="org-left">and love one another, just as he has commanded us</td>
 </tr>
 
 
