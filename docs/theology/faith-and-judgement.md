@@ -205,6 +205,16 @@ Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Je
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
+I think believing in the Son is also obedience, but it is an act of obedience which is a gift to us.
+
+> **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
+
+> **John 6:68** - Simon Peter answered him, Lord, to whom shall we go? You have the words of eternal life, (ESV)
+
+> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+
+> **John 4:14** - but whoever drinks of the water that I will give him will never be thirsty forever. The water that I will give him will become in him a spring of water welling up to eternal life. (ESV)
+
 The word for 'believe' which is used in the New Testament is the verb for faith and actually means to 'trust':
 
 -   [In John 3:16, 'Believe' Means More than Believe | by Eric Sentell | Koinonia | Medium](https://medium.com/koinonia/in-john-3-16-believe-means-more-than-believe-b62d350818bc)
