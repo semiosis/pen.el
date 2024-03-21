@@ -7,6 +7,8 @@ export TTY
 
 # Examples
 
+# unbuffer bash -c "ocif curl -sL https://git.io/IRIStsv | cut -f1-4 | uplot density -H -t IRIS 2>&1" | less -rS
+
 # ocif curl -sL https://git.io/ISLANDScsv | sort -nk2 -t, | tail -n15 | uplot bar -d, -t "Areas of the World's Major Landmasses"
 # cd "$PENCONF"; ls -l | awk '{print $9, $5}' | sort -nk 2 | uplot bar -d ' '
 # echo -e "from numpy import random;" "n = random.randn(10000);" "print('\\\n'.join(str(i) for i in n))" | python3 | uplot hist --nbins 20
