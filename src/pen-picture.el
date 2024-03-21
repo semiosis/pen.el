@@ -1,3 +1,4 @@
+(require 'artist)
 (require 'picture)
 
 (defun toggle-picture-mode ()
