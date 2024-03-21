@@ -2297,4 +2297,7 @@ cargo install -f t-rec --locked
 
 agi ncurses-term
 
+# Ah, forget it, it needs a newer ruby
+# gem install ruby-lsp
+
 gem install youplot
