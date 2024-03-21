@@ -2296,3 +2296,5 @@ agi imagemagick
 cargo install -f t-rec --locked 
 
 agi ncurses-term
+
+gem install youplot
