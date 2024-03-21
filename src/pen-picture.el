@@ -1,4 +1,7 @@
 (require 'artist)
+
+;; j:artist-draw-sline
+
 (require 'picture)
 
 (defun toggle-picture-mode ()
