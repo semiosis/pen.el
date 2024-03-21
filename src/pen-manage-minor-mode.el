@@ -69,6 +69,12 @@
         (ascii-adventures-mode
          (off hl-line-mode))
 
+        (prog-mode
+         ;; This didn't seem to work.
+         ;; Ah, OK, so I have to put it for the specific major-mode, not a parent mode
+         ;; (on org-link-minor-mode)
+         )
+        
         (universal-sidecar-buffer-mode
          (on org-link-minor-mode))
 
@@ -134,6 +140,7 @@
          (off flymake-mode))
 
         (haskell-mode
+         (on org-link-minor-mode)
          (off flymake-mode)
          (off structured-haskell-mode))
 
