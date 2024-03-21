@@ -2301,3 +2301,5 @@ agi ncurses-term
 # gem install ruby-lsp
 
 gem install youplot
+
+e ia inheritenv
