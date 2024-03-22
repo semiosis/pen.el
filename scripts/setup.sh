@@ -2303,3 +2303,9 @@ agi ncurses-term
 gem install youplot
 
 e ia inheritenv
+
+(
+cd ~/repos
+git clone "https://github.com/Wilfred/difftastic"
+cd difftastic
+)

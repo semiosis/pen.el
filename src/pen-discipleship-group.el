@@ -10,6 +10,8 @@
 
   (-select-mod-element hymn-yt-urls week))
 
+;; e:/volumes/home/shane/notes/d-group-replicate
+
 ;; It's better to compact the verses than to separate into days
 ;; It's easier to handle them that way.
 (defset d-group-weekly-readings-foundations260
@@ -31,7 +33,13 @@
           (11 . ("Numbers 20"
                  "Numbers 27"
                  "Numbers 34-35"
-                 "Deuteronomy 1-7"))))
+                 "Deuteronomy 1-7"))
+          (12 . ("Deuteronomy 8-9"
+                 "Deuteronomy 30-34"
+                 "Joshua 1-4"))
+          (13 . ("Joshua 5-8"
+                 "Joshua 23-24"
+                 "Judges 2-4"))))
 
 ;; New Testament 260
 ;; A 260-day Bible reading plan

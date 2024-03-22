@@ -926,4 +926,21 @@ optional argument MARKERP, return the position as a new marker."
 ;;    async subtreep visible-only body-only ext-plist))
 
 
+;; C-c C-x RET org-meta-return
+;; C-c C-x D   org-shiftmetadown
+;; C-c C-x L   org-shiftmetaleft
+;; C-c C-x R   org-shiftmetaright
+;; C-c C-x U   org-shiftmetaup
+;; C-c C-x l   org-metaleft
+;; C-c C-x m   org-meta-return
+;; C-c C-x r   org-metaright
+;; C-c C-x u   org-metaup
+
+(define-key org-mode-map (kbd "C-c C-x m") 'org-meta-return)
+
+(define-key org-mode-map (kbd "C-c C-x h") 'org-metaleft)
+(define-key org-mode-map (kbd "C-c C-x l") 'org-metaright)
+(define-key org-mode-map (kbd "C-c C-x k") 'org-metaup)
+(define-key org-mode-map (kbd "C-c C-x j") 'org-metadown)
+
 (provide 'pen-org)

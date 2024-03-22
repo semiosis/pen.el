@@ -2429,8 +2429,9 @@ May use to generate code from comments."
     (require 'pen-docker))
 
 (require 'pen-media)
+;; (require 'pen-inheritenv)
 (if (inside-docker-p)
-(require 'pen-problog))
+    (require 'pen-problog))
 (if (inside-docker-p)
 (require 'pen-addressbook))
 (require 'pen-autoinsert)
