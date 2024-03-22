@@ -33,6 +33,7 @@ D  dwarf fortress
 i  ninvaders
 =  midnight-commander
 k  sudoku
+l  lightcycle
 H  killersheep
 u  erubikscube
 r  rubiks_cube 
@@ -71,6 +72,7 @@ case "$d" in
     D) cmd="df-bay12" ;;
     i) cmd="ninvaders" ;;
     k) cmd="nvt sudoku" ;;
+    l) cmd="lightcycle" ;;
     H) cmd="killersheep" ;;
     u) cmd="erubikscube" ;;
     r) cmd="rubiks_cube" ;;
