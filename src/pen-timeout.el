@@ -133,7 +133,9 @@ function."
 
 ;; (timeout-memo-throttle! 'sidecar-get-cross-references-for-ref 1)
 ;; Why isn't it memoizing?
-(timeout-memo-throttle! 'sidecar-get-cross-references-for-ref 5)
+;; (timeout-memo-throttle! 'sidecar-get-cross-references-for-ref 5)
+
+(timeout-throttle! 'sidecar-get-cross-references-for-ref 5)
 
 (comment
  (timeout-memo-unthrottle! 'sidecar-get-cross-references-for-ref))

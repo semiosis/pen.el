@@ -596,7 +596,7 @@ case "$fnspec" in
     install*) {
         cd "$dn"
         if test -x "$fn"; then
-            DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
+            DO_SUDO="$(yn "Use sudo?" && p y)"
             if test "$DO_SUDO" = "y"; then
                 m"./$fn"
             else
@@ -699,7 +699,7 @@ case "$fnspec" in
     package.json) {
         cd "$dn"
 
-        DO_SUDO="$(yes-or-no-p "Use sudo?" && p y)"
+        DO_SUDO="$(yn "Use sudo?" && p y)"
 
         if pen-yn "Install only (y)?\n Otherwise, select from available commands (n)"; then
             cat package.json| jq -r ".scripts | keys[]" | tr '\n' ' ' | sed -e 's/^/npm commands: /' -e 's/ $//' | awk 1
@@ -1518,7 +1518,7 @@ case "$fnspec" in
             make test
         )
 
-        DO_SUDO="$(yes-or-no-p "Makefile.PL: Use sudo?" && p y)"
+        DO_SUDO="$(yn "Makefile.PL: Use sudo?" && p y)"
         if test "$DO_SUDO" = "y"; then
             make install
         else

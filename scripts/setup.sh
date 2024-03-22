@@ -2309,3 +2309,5 @@ cd ~/repos
 git clone "https://github.com/Wilfred/difftastic"
 cd difftastic
 )
+
+# https://invisible-island.net/xterm/xterm.html#download
