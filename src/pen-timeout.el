@@ -138,4 +138,8 @@ function."
 (comment
  (timeout-memo-unthrottle! 'sidecar-get-cross-references-for-ref))
 
+(comment
+ (timeout-throttle! 'sidecar-get-cross-references-for-ref 5)
+ (timeout-unthrottle! 'sidecar-get-cross-references-for-ref))
+
 (provide 'pen-timeout)
