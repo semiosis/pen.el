@@ -89,7 +89,7 @@ pipeline_b() {
     cat "$input_fp" | awk 1 | 
         sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
         sed -n "s/.*\\b\\($titles\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
-        sed '/^$/d' | canonicalise-bible-book-title
+        sed '/^$/d' | canonicalise-bible-ref
 }
 
 pipeline() {
@@ -133,7 +133,7 @@ pipeline() {
         cat "$input_fp" | awk 1 | 
             sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
             sed -n "s/.*\\b\\($title\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\?\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
-            sed '/^$/d' | canonicalise-bible-book-title
+            sed '/^$/d' | canonicalise-bible-ref
     done
 } | sponge "$input_fp" | {
     # This takes care of such:

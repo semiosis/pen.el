@@ -4,7 +4,16 @@ export TTY
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # echo 'I Thessalonians' | canonicalise-bible-book-title
+# canonicalise-bible-book-title 'Rev'
 
-input_fp="$(cat | tf txt)"
+if test -n "$1"; then
+    input_fp="$(printf -- "%s" "$1" | tf txt)"
+else
+    input_fp="$(cat | tf txt)"
+fi
+
 canonicalise-bible-book-title.els "$input_fp" 2>/dev/null
-cat "$input_fp" | pavs
+{
+printf -- "%s" "$(cat "$input_fp")"
+rm "$input_fp"
+}
