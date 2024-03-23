@@ -26,4 +26,3 @@ stdin_exists() {
 if stdin_exists; then
     :
 fi
-

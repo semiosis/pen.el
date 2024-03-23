@@ -34,6 +34,7 @@ stdin_exists() {
 
 if stdin_exists; then
     awk 1 | while read line; do
+        # echo "$line" 1>&2
         if printf -- "%s\n" "$line" | grep -q -P '[0-9]$'; then
             # separate book title from chapter:verse
             booktitle="$(printf -- "%s" "$line" | sed 's/[. ][0-9].*//')"

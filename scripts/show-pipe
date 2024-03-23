@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# This shows what is running through the pipe
+
+tee >(tm -tout spv -fargs tless -S +F)
