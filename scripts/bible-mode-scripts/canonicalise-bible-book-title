@@ -1,1 +1,10 @@
-canonicalise-bible-ref
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# echo 'I Thessalonians' | canonicalise-bible-book-title
+
+input_fp="$(cat | tf txt)"
+canonicalise-bible-book-title.els "$input_fp" 2>/dev/null
+cat "$input_fp" | pavs

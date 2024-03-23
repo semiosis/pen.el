@@ -1,6 +1,15 @@
 #!/usr/bin/env -S emacs --quick --script
 ;; #!sbcl --script
 
+;; canonicalise-bible-book-title.els 'I Thessalonians' | v
+
+;; The input file path is used to write the output
+;; input_fp="$(cat | tf txt)"
+;; canonicalise-bible-book-title.els =(echo 'I Thessalonians') 2>/dev/null
+
+
+;; echo 'Rev 2:1' | canonicalise-bible-book-title
+
 (defun maybe-load (path)
   (ignore-errors (load path)))
 
@@ -47,6 +56,19 @@
 
 (defun test-n (s)
   (not (string-empty-p s)))
+
+(defun test-f (filename)
+  (file-exists-p (umn filename)))
+
+(defun tv-basic (s)
+  (let ((output-file
+         (make-temp-file "tv-basic-output" nil ".txt")))
+    (write-to-file s output-file)
+    (call-process-shell-command
+     "tv" output-file "*pen-sn-stderr*")
+    (delete-file output-file))
+  s)
+(defalias 'tv 'tv-basic)
 
 (maybe-load "/root/.emacs.d/elpa/shut-up-20210403.1249/shut-up.el")
 (maybe-load "/root/.emacs.d/elpa/s-20210616.619/s.el")
@@ -205,22 +227,43 @@
         (concat booktitle " " chapverse)
       booktitle)))
 
-(message "%s" (bible-canonicalise-ref (car argv) (cadr argv)))
+;; (message "%s" (bible-canonicalise-ref (car argv) (cadr argv)))
+
+(defun cat-to-file (stdin file_path)
+  ;; The ignore-errors is needed for babel for some reason
+  (ignore-errors (with-temp-buffer
+                   (insert stdin)
+                   (delete-file file_path)
+                   (write-file file_path))))
+(defalias 'write-string-to-file 'cat-to-file)
+(defalias 'write-to-file 'cat-to-file)
 
 (defun print-output (s)
   ;; Can I speed up pen-sn with call-process-shell-command ?
   (write-to-file s stdout-fp))
 
-(let ((input-fp (car argv))
-      (matches-fp (cadr argv))
-      (bytepos-fp (caddr argv))
-      (transformed-fp (cadddr argv)))
+(defalias 'umn 'identity)
+(defalias 'pen-umn 'identity)
+
+(defun e/cat (&optional path input no_unminimise)
+  "cat out a file, or write to one"
+  (if (not no_unminimise)
+      (setq path (pen-umn path)))
+  (cond
+   ((and (test-f path) input) (write-to-file input path))
+   ((test-f path) (with-temp-buffer
+                    (insert-file-contents path)
+                    (buffer-string)))
+   (t (error "Bad path"))))
+
+(let* ((input-fp (car argv))
+       (input (e/cat input-fp))
+       ;; (matches-fp (cadr argv))
+       ;; (bytepos-fp (caddr argv))
+       ;; (transformed-fp (cadddr argv))
+       )
 
   (setq stdout-fp input-fp)
 
   (print-output
-   (grepfilter-transform
-    input-fp
-    matches-fp
-    bytepos-fp
-    transformed-fp)))
+   (bible-canonicalise-ref input)))
