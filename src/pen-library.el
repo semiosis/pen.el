@@ -1212,6 +1212,7 @@ non-nil."
    ((string-match "^\*YASnippet Tables" (current-buffer-name)) (progn (call-interactively 'backward-button) (pen-yas-preview-snippet-under-cursor)))
    ((string= (current-major-mode) "mastodon-mode") (call-interactively 'mastodon-tl--previous-tab-item))
    ((minor-mode-p magit-blame-mode) (magit-blame-previous-chunk))
+   ((major-mode-p 'comint-mode) (call-interactively 'comint-previous-input))
    (t (try
        (let ((start-point (point))
              (end-point))
@@ -1286,6 +1287,7 @@ non-nil."
    ((minor-mode-p magit-blame-mode) (magit-blame-next-chunk))
    ((string-match "^magit-" (current-major-mode)) (call-interactively 'magit-section-forward-sibling))
    ((string-match "^\*YASnippet Tables" (current-buffer-name)) (progn (call-interactively 'forward-button) (pen-yas-preview-snippet-under-cursor)))
+   ((major-mode-p 'comint-mode) (call-interactively 'comint-next-input))
    (t (try
        (let ((start-point (point))
              (end-point))

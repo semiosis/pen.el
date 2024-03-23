@@ -107,14 +107,12 @@
 (setq default-bible-mode-book-module "NASB")
 (setq default-bible-mode-book-module "ESV")
 
-
+;; The first element of each sub-tuple is the key which the xiphos database uses
 (defset bible-book-map-names
         ;; Used to translate any of the latter elements into the first element of each tuple.
         ;; I should also make I, 1, First, 2, 3, etc part of the generic regex.
         ;; I still need to be able to translate them. So I still need this.
 
-
-        
         ;; DISCARD Add keyword names into each list too, etc.
         ;; Is this possible?
         ;; ("Genesis" "Gen" "Ge" "Gn" :shortname "Genesis")
@@ -123,7 +121,6 @@
 
         ;; TODO Otherwise, just use a function to select the shortname
 
-        
         '(("Genesis" "Gen" "Ge" "Gn")
           ("Exodus" "Ex" "Exod" "Exo")
           ("Leviticus" "Lev" "Le" "Lv")
@@ -194,11 +191,30 @@
           ("Revelation of John" "Revelation" "Rev" "Re")))
 
 
+;; (bible-book-tinyname "Revelation of John")
+(defun bible-book-tinyname (name)
+  (car (-sort (-on '< 'length) (-filter (lambda (e) (not (string-match-p " " e)))
+                                        (car (-filter (lambda (e) (member name e)) bible-book-map-names))))))
+
+(memoize 'bible-book-tinyname)
+
+(defun bible-book-longname (name)
+  (car (-sort (-on '> 'length) (car (-filter (lambda (e) (member name e)) bible-book-map-names)))))
+
+(memoize 'bible-book-longname)
+
 ;; Not the tiny name, the full book name, but short version
+
+;; (bible-book-shortname "Revelation of John")
+;; (bible-book-shortname "Revelation")
 (defun bible-book-shortname (name)
-  (bible-book-map-names)
-  (if "Revelation of John"
-      "Revelation"))
+  (car (-sort (-on '> 'length)
+              (-filter
+               (lambda (e) (not (string-match-p " " e)))
+
+               (car (-filter (lambda (e) (member name e)) bible-book-map-names))))))
+
+(memoize 'bible-book-shortname)
 
 ;; (define-key pen-map (kbd "M-m r w") 'edit-var-elisp)
 (defun bible-strongs-codes-sort (codeslist)
@@ -457,6 +473,13 @@
 
   (save-excursion
     (beginning-of-buffer)
+    (let* ((book (car bible-mode-ref-tuple))
+           (shortbook (bible-book-tinyname book)))
+      (while (re-search-forward "^.[^0-9]* " nil t)
+        (replace-match (concat shortbook " ")))))
+  
+  (save-excursion
+    (beginning-of-buffer)
     (while (re-search-forward ":[0-9]+: " nil t)
       (let* ((end (- (point) 1))
              (start
@@ -499,8 +522,8 @@
       (end-of-buffer)))
 
   (if (inside-docker-p)
-  (if (universal-sidecar-visible-p)
-      (toggle-chrome-extras nil t))))
+      (if (universal-sidecar-visible-p)
+          (toggle-chrome-extras nil t))))
 
 (defun string-match-capture (regexp string &optional start)
   (string-match regexp string start)
