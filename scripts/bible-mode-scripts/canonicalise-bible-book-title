@@ -6,9 +6,14 @@ export TTY
 # echo 'I Thessalonians' | canonicalise-bible-book-title
 # canonicalise-bible-book-title 'Rev'
 
+# Sometimes, $1 is John. when scraping the following. Find the bug:
+# cat /root/.pen/documents/notes/perspective.org | upd scrape-bible-references
 if test -n "$1"; then
-    echo "$1" 1>&2
-    input_fp="$(printf -- "%s" "$1" | tf txt)"
+    name="$1"
+    # Remove trailing . from John.
+    name="${name//\./}"
+    # echo "$1" 1>&2
+    input_fp="$(printf -- "%s" "$name" | tf txt)"
 else
     input_fp="$(cat | tf txt)"
 fi
