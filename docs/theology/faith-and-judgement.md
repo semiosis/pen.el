@@ -31,13 +31,13 @@ We have to put sin away after we come to believe in Him:
 
 In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God the Son, for their salvation, if they are willing <ins>turn to and obey Him</ins>, **if Father God puts them in**, obediently trusting Jesus Christ who is their life, to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
 
+> **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
+
 I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be true simultaneously, because people misconstrue Jesus' words to their own destruction.
 
 > **II Peter 3:14-18** - Therefore, beloved, since you are waiting for these, be diligent to be found by him without spot or blemish, and at peace. And count the patience of our Lord as salvation, just as our beloved brother Paul also wrote to you according to the wisdom given him, as he does in all his letters when he speaks in them of these matters. There are some things in them that are hard to understand, which the ignorant and unstable twist to their own destruction, as they do the other Scriptures. You therefore, beloved, knowing this beforehand, take care that you are not carried away with the error of lawless people and lose your own stability. But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be the glory both now and to the day of eternity. Amen.
 
 Therefore, I assert that there's no eternal security for those who are not willing to obey Jesus, or to turn away from their sin.
-
-> **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
 I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him.
 
@@ -48,8 +48,6 @@ And I assume that Jesus knows who those people are - He knows that they are His 
 And when they go through Jesus Christ, the door, they are saved.
 
 I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a <ins>heart that follows Him</ins> - that they will be saved.
-
-God puts a person in Christ Jesus:
 
 Christian love:
 
@@ -810,6 +808,10 @@ A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesu
 > **Galatians 5:6** - For in Christ Jesus <ins>neither circumcision nor uncircumcision counts for anything,</ins> but only **faith working through love.** (ESV)
 
 > **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
+
+A new creation lives for Christ:
+
+> **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
 
 Following Jesus Christ is not having a religious spirit, but it's serving God in reality.
 
@@ -2139,6 +2141,8 @@ Obeying God is obeying Jesus. Having faith in God is having faith in Jesus.
 He was raised **for** our justification; now in order to be justified by faith, we simply need to put our faith in Him and follow Him.
 
 We have to die to our old self and live for Christ, simply abiding in Him.
+
+> **II Corinthians 5:14-15** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and he died for all, that <ins>those who live might no longer live for themselves but for him who for their sake died and was raised.</ins>
 
 If we walk in the footsteps of the faith that our father Abraham had before he was circumcised, but having faith in God by obeying Jesus Christ who was raised for our justification then we have Jesus Christ's righteousness; we have the righteeousness of faith in God.
 
