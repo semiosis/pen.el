@@ -3,6 +3,8 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+echo hi | tv &>/dev/null
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -b) {

@@ -256,6 +256,7 @@
                     (buffer-string)))
    (t (error "Bad path"))))
 
+;; Take the function name as the first argument
 (let* ((input-fp (car argv))
        (input (e/cat input-fp))
        ;; (matches-fp (cadr argv))
