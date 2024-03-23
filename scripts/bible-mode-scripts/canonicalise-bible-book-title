@@ -7,6 +7,7 @@ export TTY
 # canonicalise-bible-book-title 'Rev'
 
 if test -n "$1"; then
+    echo "$1" 1>&2
     input_fp="$(printf -- "%s" "$1" | tf txt)"
 else
     input_fp="$(cat | tf txt)"
