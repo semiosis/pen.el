@@ -50,7 +50,7 @@
 
 (defun ph-get-path-string-for-buf (buffer)
   (with-current-buffer buffer
-    (let ((gp (get-path nil t)))
+    (let ((gp (get-path nil t nil t)))
       (if gp
           (str gp)
         "(eq nil (get-path nil t))"))))

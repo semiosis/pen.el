@@ -107,7 +107,8 @@
 (setq default-bible-mode-book-module "NASB")
 (setq default-bible-mode-book-module "ESV")
 
-;; The first element of each sub-tuple is the key which the xiphos database uses
+;; The first element of each sub-tuple is the key which the xiphos database uses.
+;; Don't change it.
 (defset bible-book-map-names
         ;; Used to translate any of the latter elements into the first element of each tuple.
         ;; I should also make I, 1, First, 2, 3, etc part of the generic regex.
@@ -197,6 +198,9 @@
                                         (car (-filter (lambda (e) (member name e)) bible-book-map-names))))))
 
 (memoize 'bible-book-tinyname)
+
+(defun bible-book-keyname (name)
+  (car (car (-filter (lambda (e) (member name e)) bible-book-map-names))))
 
 (defun bible-book-longname (name)
   (car (-sort (-on '> 'length) (car (-filter (lambda (e) (member name e)) bible-book-map-names)))))
@@ -473,6 +477,7 @@
 
   (save-excursion
     (beginning-of-buffer)
+    (bible-mode-get-link)
     (let* ((book (car bible-mode-ref-tuple))
            (shortbook (bible-book-tinyname book)))
       (while (re-search-forward "^.[^0-9]* " nil t)
@@ -812,7 +817,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
       (setq book
             (bible-canonicalise-ref
-             (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
+             (bible-book-keyname (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))))
 
       (if (not (major-mode-p 'bible-mode))
           (setq bible-mode-book-module module))
@@ -874,7 +879,7 @@ creating a new `bible-mode' buffer positioned at the specified verse."
 
         (string-match ":[0-9]?[0-9]?[0-9]?" text)
         (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
-        (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
+        (setq book (bible-book-keyname (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text)))
 
         (setq-local bible-mode-ref-tuple (list book chapter verse))
         (setq-local bible-mode-chapter (concat book " " chapter))

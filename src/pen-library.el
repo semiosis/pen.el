@@ -169,19 +169,24 @@
                             (ignore-errors
                               (bible-get-chapter-title book chapter))))
                       (if reftuple
-                          (concat
-                           book
-                           " "
-                           (str chapter)
-                           " "
-                           title
+                          (if semantic-path
+                              (concat
+                               book
+                               " "
+                               (str chapter)
+                               " "
+                               title
 
-                           ;; I need to have different highlights for different
-                           ;; Bible reading modes
-                           (cond (bible-mode-fast-enabled
-                                  " (Fast-Mode)")
-                                 (bible-mode-word-study-enabled
-                                  " (Word-Study)"))))))
+                               ;; I need to have different highlights for different
+                               ;; Bible reading modes
+                               (cond (bible-mode-fast-enabled
+                                      " (Fast-Mode)")
+                                     (bible-mode-word-study-enabled
+                                      " (Word-Study)")))
+                            (concat
+                             book
+                             " "
+                             (str chapter))))))
 
                (and (major-mode-enabled 'sx-question-mode)
                     (sx-get-question-url))
