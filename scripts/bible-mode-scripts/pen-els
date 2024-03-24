@@ -16,14 +16,24 @@ stdin_exists() {
 }
 
 if stdin_exists; then
-    io_fp="$(cat | tf txt)"
+    input_fp="$(cat | tf -X input txt)"
 else
-    io_fp="$(0</dev/null tf txt)"
+    input_fp="$(0</dev/null tf -X input txt)"
+    if test "$#" -gt 0; then
+        printf -- "%s" "$1" > "$input_fp"
+        shift
+    fi
 fi
 
+output_fp="$(0</dev/null tf -X output txt)"
+
+# By default the stdin is the first arg to the emacs function?
+# Yes. And the stdin can be large because the first parameter
+# will be passed in as a file path.
+
 case "$sn" in
-    canonicalise-bible-book-title.els) {
-        fun_name=bible-canonicalise-ref-internal
+    canonicalise-bible-book-title|canonicalise-bible-book-title-els) {
+        fun_name=bible-canonicalise-ref
     }
     ;;
 
@@ -38,12 +48,17 @@ case "$sn" in
     ;;
 esac
 
-pen.els "$fun_name" "$io_fp" "$@" 2>/dev/null
+# OK, therefore, the arguments go:
+# - fun_name input_fp output_fp [&rest]
+pen.els "$fun_name" "$input_fp" "$output_fp" "$@" 2>/dev/null
 ret="$?"
 
+# Do I remove the temp files?
+# I think I should.
 {
-printf -- "%s" "$(cat "$io_fp")"
-rm -f "$io_fp"
+printf -- "%s" "$(cat "$output_fp")"
+# rm -f "$input_fp"
+# rm -f "$output_fp"
 }
 
 exit "$ret"

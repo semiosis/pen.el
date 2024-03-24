@@ -1,12 +1,13 @@
 #!/usr/bin/env -S emacs --quick --script
 ;; #!sbcl --script
 
-;; canonicalise-bible-book-title.els 'I Thessalonians' | v
+;; canonicalise-bible-book-title-els 'I Thessalonians' | v
 
 ;; The input file path is used to write the output
 ;; input_fp="$(cat | tf txt)"
-;; canonicalise-bible-book-title.els =(echo 'I Thessalonians') 2>/dev/null
+;; canonicalise-bible-book-title-els =(echo 'I Thessalonians') 2>/dev/null
 
+(defmacro comment (&rest body) nil)
 
 ;; echo 'Rev 2:1' | canonicalise-bible-book-title
 
@@ -73,6 +74,7 @@
 (maybe-load "/root/.emacs.d/elpa/shut-up-20210403.1249/shut-up.el")
 (maybe-load "/root/.emacs.d/elpa/s-20210616.619/s.el")
 (maybe-load "/usr/local/share/emacs/29.1.50/lisp/emacs-lisp/cl-extra.el.gz")
+(maybe-load "/usr/local/share/emacs/29.1.50/lisp/emacs-lisp/pp.el.gz")
 
 (maybe-load "/root/.emacs.d/elpa/dash-20230714.723/dash.el")
 
@@ -255,9 +257,6 @@
                     (buffer-string)))
    (t (error "Bad path"))))
 
-(defun bible-canonicalise-ref-internal (io-fp)
-  (bible-canonicalise-ref (e/cat io-fp)))
-
 (defun pen-list2str (&rest l)
   "join the string representation of elements of a given list into a single string with newline delimiters"
   (if (cl-equalp 1 (length l))
@@ -270,15 +269,26 @@
 (defun list-bible-book-titles-lines ()
   (pen-list2str (-flatten bible-book-map-names)))
 
+(defalias 'pps 'pp-to-string)
+
+;; With these functions, the first argument should always be a file path which:
+;; may contain the stdin, or alternatively it should contain the value of the first argument,
+;; if it exists.
+;; The input may also simply be empty, and unused.
+
 ;; Take the function name as the first argument
 (let* ((fun_name (car argv))
-       (io-fp (cadr argv))
-       ;; (input (e/cat io-fp))
+       ;; output_fp functions as stdin and stdout
+       ;; the temp file will always exist
+       (input_fp (cadr argv))
+       (output_fp (caddr argv))
+       (input (e/cat input_fp))
        ;; (matches-fp (cadr argv))
        ;; (bytepos-fp (caddr argv))
        ;; (transformed-fp (cadddr argv))
        )
 
   (write-to-file
-   (apply (intern fun_name) (cddr argv))
-   io-fp))
+   ;; ditch the first 3 arguments
+   (apply (intern fun_name) (cons input (cdddr argv)))
+   output_fp))
