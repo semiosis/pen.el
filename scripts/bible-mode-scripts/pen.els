@@ -290,6 +290,10 @@
     result))
 (defalias 'sor 'string-first-nonnil-nonempty-string)
 
+(defun chomp (str)
+  "Chomp (remove tailing newline from) STR."
+  (replace-regexp-in-string "\n\\'" "" str))
+
 ;; With these functions, the first argument should always be a file path which:
 ;; may contain the stdin, or alternatively it should contain the value of the first argument,
 ;; if it exists.
@@ -301,7 +305,7 @@
        ;; the temp file will always exist
        (input_fp (cadr argv))
        (output_fp (caddr argv))
-       (input (e/cat input_fp))
+       (input (chomp (e/cat input_fp)))
        ;; (matches-fp (cadr argv))
        ;; (bytepos-fp (caddr argv))
        ;; (transformed-fp (cadddr argv))
