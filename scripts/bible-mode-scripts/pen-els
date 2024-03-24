@@ -5,6 +5,29 @@ export TTY
 
 sn="$(basename -- "$0")"
 
+case "$sn" in
+    canonicalise-bible-book-title|canonicalise-bible-book-title-els) {
+        fun_name=bible-canonicalise-ref
+    }
+    ;;
+
+    list-bible-book-titles-els) {
+        fun_name=list-bible-book-titles-lines
+    }
+    ;;
+
+    pen-els) {
+        fun_name="$1"
+        shift
+    }
+    ;;
+
+    *) {
+        fun_name="$sn"
+    }
+    ;;
+esac
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -30,23 +53,6 @@ output_fp="$(0</dev/null tf -X output txt)"
 # By default the stdin is the first arg to the emacs function?
 # Yes. And the stdin can be large because the first parameter
 # will be passed in as a file path.
-
-case "$sn" in
-    canonicalise-bible-book-title|canonicalise-bible-book-title-els) {
-        fun_name=bible-canonicalise-ref
-    }
-    ;;
-
-    list-bible-book-titles-els) {
-        fun_name=list-bible-book-titles-lines
-    }
-    ;;
-
-    *) {
-        fun_name="$sn"
-    }
-    ;;
-esac
 
 # OK, therefore, the arguments go:
 # - fun_name input_fp output_fp [&rest]
