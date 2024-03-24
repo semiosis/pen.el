@@ -271,6 +271,25 @@
 
 (defalias 'pps 'pp-to-string)
 
+(defun string-empty-or-nil-p (s)
+  (or (not s)
+      (string-empty-p s)))
+
+(defun string-not-empty-nor-nil-p (s)
+  (not (string-empty-or-nil-p s)))
+
+(defun string-first-nonnil-nonempty-string (&rest ss)
+  "Get the first non-nil string."
+  (let ((result))
+    (catch 'bbb
+      (dolist (p ss)
+        (if (string-not-empty-nor-nil-p p)
+            (progn
+              (setq result p)
+              (throw 'bbb result)))))
+    result))
+(defalias 'sor 'string-first-nonnil-nonempty-string)
+
 ;; With these functions, the first argument should always be a file path which:
 ;; may contain the stdin, or alternatively it should contain the value of the first argument,
 ;; if it exists.
@@ -290,5 +309,8 @@
 
   (write-to-file
    ;; ditch the first 3 arguments
-   (apply (intern fun_name) (cons input (cdddr argv)))
+   (apply (intern fun_name)
+          (if (sor input)
+              (cons input (cdddr argv))
+            (cdddr argv)))
    output_fp))
