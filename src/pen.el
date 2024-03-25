@@ -324,6 +324,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-minibuffer)
 (require 'pen-load-manually)
 (require 'pen-hebrew)
+(require 'pen-org-verse)
 
 ;; Don't use corfu because it's incompatible with the terminal, as it uses overlay frames
 ;; (require 'pen-corfu)
