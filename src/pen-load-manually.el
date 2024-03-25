@@ -17,6 +17,7 @@
 ;; e:$EMACSD_BUILTIN/straight/repos/org-verse
 ;; e:$EMACSD_BUILTIN/straight/build/org-verse
 (require 'doct)
+
 (comment
  (use-package org-verse
    :straight (:host github :repo "DarkBuffalo/org-verse")

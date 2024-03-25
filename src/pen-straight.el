@@ -1,4 +1,6 @@
-(load "/root/repos/pen-emacsd/straight.el/straight.el")
+(ignore-errors
+  (load "/root/repos/pen-emacsd/straight.el/straight.el"))
+
 (require 'straight)
 
 (defvar bootstrap-version)
