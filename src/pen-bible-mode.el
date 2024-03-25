@@ -191,7 +191,6 @@
           ("Jude" "Jud" "Jd")
           ("Revelation of John" "Revelation" "Rev" "Re")))
 
-
 ;; (bible-book-tinyname "Revelation of John")
 (defun bible-book-tinyname (name)
   (car (-sort (-on '< 'length) (-filter (lambda (e) (not (string-match-p " " e)))
@@ -1435,9 +1434,13 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
         (bible-mode-cross-references-ext ref))
     ;; (etv (snc "in-pen bible-get-cross-references | wrlp cif bible-canonicalise-cross-reference" ref))
     (let ((xrefs
+           ;; (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference | bible-show-verses | cat" ref)
            (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref)))
       (if (sor xrefs)
-          (etv xrefs)
+          (let ((b (etv xrefs)))
+            (with-current-buffer b
+              (org-verse-mode))
+            b)
         (message "No cross references for %s" ref)))))
 
 (defun bible-term-greek-get (term_g_num)
