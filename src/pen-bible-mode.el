@@ -759,12 +759,15 @@
           (rename-buffer next_name)))
     buf))
 
+;; (bible-mode-lookup "Ps.33.6")
+;; (bible-mode-lookup "Ps 33:6")
 (defun bible-mode-lookup (&optional text module buf)
   "Follows the hovered verse in a `bible-search-mode' buffer,
 creating a new `bible-mode' buffer positioned at the specified verse."
   (interactive (list (bible-get-text-here)))
 
   (setq text (or text (bible-get-text-here)))
+  (setq text (pen-snc "canonicalise-bible-ref" text))
 
   ;; (mapcar 'car bible-mode-book-chapters)
 
@@ -1543,6 +1546,9 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun bible-mode-tpop (ref)
   (interactive (list (or (bible-mode-copy-link)
                          (read-string-hist "Bible ref: "))))
+
+  (setq ref (pen-snc "canonicalise-bible-ref" ref))
+  
   (let* ((concordance_arg
           (cond
            ((>= (prefix-numeric-value current-prefix-arg) 64) "-cac")

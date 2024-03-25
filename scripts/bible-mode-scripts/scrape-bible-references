@@ -105,7 +105,7 @@ bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc |
     else
         cat
     fi
-} | uniqnosort | sed '/^..$/d' | {
+} | uniqnosort | sed '/^..$/d' | pen-sort line-length-desc | {
     # # Interesting. I can't use spinner-stop here because
     # # pipelines start all chained subshells immediately.
     # # Even using 'soak' won't delay it if it's in a preceedingly chained

@@ -324,6 +324,12 @@ values to copy the link to the clipboard and/or primary as well."
              (eval
               `(lambda (pt)
                  (avy-action-goto pt)
+
+                 ;; This seems to be looking greedily for the first matching one,
+                 ;; which means it may select the chapter match, not the verse.
+                 ;; So I shoudl then sort it, I think.
+                 ;; I have sorted here:
+                 ;; v +/"pen-sort line-length-desc" "$EMACSD/pen.el/scripts/bible-mode-scripts/scrape-bible-references"
                  (let ((result
                         (cl-loop for tp in ',wordtuples
                                  until (looking-at-p (pen-unregexify (car tp)))
