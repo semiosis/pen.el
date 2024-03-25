@@ -201,10 +201,13 @@
 (defun bible-book-keyname (name)
   (car (car (-filter (lambda (e) (member name e)) bible-book-map-names))))
 
+(defun bible-book-all-name-variants ()
+  (-flatten bible-book-map-names))
+
 (defun bible-book-make-symlinks ()
   (interactive)
   (loop for n in
-        (-flatten bible-book-map-names)
+        (bible-book-all-name-variants)
         do
         (pen-sn (concat "cd $EMACSD/pen.el/scripts/bible-books; ln -sf bible-book " n))))
 
