@@ -3,7 +3,7 @@ export TTY
 
 sn="$(basename -- "$0")"
 
-echo hi | tv &>/dev/null
+# echo hi | tv &>/dev/null
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
@@ -70,7 +70,8 @@ input_fp="$(cat | c ascify | tf txt)"
 
     # TODO this pipeline run in parallel
     # list-bible-book-titles | while IFS=$'\n' read -r title; do
-    list-bible-books | while IFS=$'\n' read -r title; do
+    # list-bible-books | while IFS=$'\n' read -r title; do
+    pen-els list-bible-book-titles-lines | while IFS=$'\n' read -r title; do
         #read -r title2
         #read -r title3
         #read -r title4
