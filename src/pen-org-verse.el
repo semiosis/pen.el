@@ -9,21 +9,41 @@
   'help-echo "Clic le boutton pour lire le verset."
   'help-args "test")
 
+(defun org-verse-button-verse (button)
+  "BUTTON verse."
+  (let ((refverse (button-get button 'title))
+        (book (button-get button 'book))
+        (chapter (button-get button 'chapter))
+        (verses (button-get button 'verses)))
+
+    (tpop-fit-vim-string (pen-snc (cmd "bible-tpop-lookup" "-c" "-m" "KJV"
+                                       (concat
+                                        book " " chapter ":" verses))))
+
+    ;; si buffer pas ouvert, ouvrir sinon mettre a jour
+    (comment
+     (if (window-live-p (get-buffer-window org-verse-buffer))
+         (org-verse-sidebar-refresh refverse book chapter verses)
+       (org-verse-toggle-sidebar)
+       (org-verse-sidebar-refresh refverse book chapter verses)))))
+
 (defset org-verse-pattern
-  (eval
-   `(rx
-     ,(list 'group
-            (cons 'or
-                  (mapcar
-                   (lambda (tp) (cons 'or tp))
-                   bible-book-map-names)))
-     space
-     (group (1+ digit))
-     ":"
-     (group (or
-             (group (group (any digit)) "-" (group (1+ digit) ":" (1+ digit)))
-             (group (1+ (1+ digit) (0+ ",")))))))
-  "Generic regexp for number highlighting.
+        (eval
+         `(rx
+           ,(list 'group
+                  (cons 'or
+                        (mapcar
+                         (lambda (tp) (cons 'or tp))
+                         bible-book-map-names)))
+           space
+           (group (1+ digit))
+           ":"
+           (group (or
+                   (group (group (any digit)) "-" (group (1+ digit) ":" (1+ digit)))
+                   (group (1+ (1+ digit) (0+
+                                          (or ","
+                                              "-"))))))))
+        "Generic regexp for number highlighting.
 It is used when no mode-specific one is available.")
 
 (defun org-verse-buttonize-buffer ()
