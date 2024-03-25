@@ -2,6 +2,9 @@
 
 ;; (etv (filter-cmd-collect "scrape-bible-references" nil))
 
+(defconst org-verse-mode-keymap (make-keymap))
+(define-key org-verse-mode-keymap (kbd "C-c /") #'org-verse-buttonize-buffer)
+
 (define-button-type 'org-verse-button
   'action #'org-verse-button-verse
   'follow-link t
