@@ -467,7 +467,7 @@ scrape-bible-references -vc    # verse or chapter
 scrape-bible-references -v     # verses only
 scrape-bible-references -c     # chapters only
 scrape-bible-references -b     # books only
-canonicalise-bible-book-title
+canonicalise-bible-book-title  # Just the book title
 cif -nd bible-show-verses
 cif -nd bible-show-verses -pp
 hebrew-letters-explain
@@ -475,3 +475,4 @@ cat -A
 tv
 sha
 fix-github-markdown
+canonicalise-bible-ref # Could be a book title or entire ref
