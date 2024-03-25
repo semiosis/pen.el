@@ -25,6 +25,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -cc) {
+        chapters_only=yy
+        shift
+    }
+    ;;
+
     -v) {
         verses_only=y
         shift
@@ -115,7 +121,9 @@ perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | 
     fi
 } | {
     if test "$chapters_only" = "y"; then
-        grep -P "[0-9]$" | sed 's/[:\.][0-9]*$//'
+        grep -P "[0-9]$" | sed 's/[:\.][0-9].*$//'
+    elif test "$chapters_only" = "yy"; then
+        grep -Pv ":"
     else
         cat
     fi
