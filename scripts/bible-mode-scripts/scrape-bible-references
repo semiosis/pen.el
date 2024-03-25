@@ -60,7 +60,8 @@ input_fp="$(cat | c ascify | tf txt)"
 
 # Make this consume the args and generate a regex
 
-bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc | s join "\\\|")"
+# bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc | s join "\\\|")"
+bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "\\\|")"
 
 {
     # I need to list all the many different possible book
@@ -75,6 +76,10 @@ bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc |
     # SoulFood: Heb 11:17-13:25, Mark 10:1-12, Ps 88:1-9a, Pr 11:24-26
     # Ps.33.6
     # Ps.136.5-Ps.136.8
+
+    # I need a non-greedy .* at the start.
+    # Sadly, sed doesn't have a non-greedy
+    # https://stackoverflow.com/questions/1103149/non-greedy-reluctant-regex-matching-in-sed
 
     # TODO Make it longest to shortest
     cat "$input_fp" | awk 1 |
