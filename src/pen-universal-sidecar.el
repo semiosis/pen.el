@@ -82,6 +82,7 @@ If FRAME is nil, use `selected-frame'."
                         ;; This is inserted
                         crossrefs
                         ;; This runs after the above
+                        (org-verse-buttonize-buffer)
                         (comment (some-post-processing-of-org-text))))))))
 
 ;; Fix this

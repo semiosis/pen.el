@@ -53,27 +53,28 @@ It is used when no mode-specific one is available.")
   ;; Hack is to remove them all first.
   ;; remove-overlays does not seem to exist for older emacsen (<23.x.x?)
   (interactive)
-  (if (fboundp 'remove-overlays)
-      (remove-overlays))
+  (with-writable-buffer
+   (if (fboundp 'remove-overlays)
+       (remove-overlays))
 
-  (save-excursion
-    (goto-char (point-min))
-    (while (search-forward-regexp org-verse-pattern nil t)
-      ;;recuperer le contenu de la recherche pour le mettre en titre
-      ;;https://github.com/Kinneyzhang/gkroam/blob/b40555f45a844b8fefc419cd43dc9bf63205a0b4/gkroam.el#L708
-      (let ((title (match-string-no-properties 0))
-            (book (match-string-no-properties 1))
-            (chapter (match-string-no-properties 2))
-            (verses (match-string-no-properties 3)))
-        ;;créer les bouttons
-        (make-text-button (match-beginning 0)
-                          (match-end 0)
-                          :type 'org-verse-button
-                          ;;inserer le titre recuperer plus haut
-                          'title title
-                          'book book
-                          'chapter chapter
-                          'verses verses)))))
+   (save-excursion
+     (goto-char (point-min))
+     (while (search-forward-regexp org-verse-pattern nil t)
+       ;;recuperer le contenu de la recherche pour le mettre en titre
+       ;;https://github.com/Kinneyzhang/gkroam/blob/b40555f45a844b8fefc419cd43dc9bf63205a0b4/gkroam.el#L708
+       (let ((title (match-string-no-properties 0))
+             (book (match-string-no-properties 1))
+             (chapter (match-string-no-properties 2))
+             (verses (match-string-no-properties 3)))
+         ;;créer les bouttons
+         (make-text-button (match-beginning 0)
+                           (match-end 0)
+                           :type 'org-verse-button
+                           ;;inserer le titre recuperer plus haut
+                           'title title
+                           'book book
+                           'chapter chapter
+                           'verses verses))))))
 
 (define-minor-mode org-verse-mode "Highlight bible verses."
   :init-value nil
