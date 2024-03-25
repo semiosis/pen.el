@@ -79,6 +79,34 @@ It is used when no mode-specific one is available.")
                            'chapter chapter
                            'verses verses))))))
 
+(defsetface org-verse-number-face
+  '((t ;;:inherit font-lock-constant-face
+     :foreground "#81B145"
+     :background "#1B2229"
+     :box (:line-width 2)
+     :weight bold))
+  "Face used to verse references."
+  :group 'verse)
+
+(defconst org-verse-lexical
+  '((org-verse-search-for-verse
+     (0 'org-verse-number-face t))))
+
+(defvar org-verse--keywords nil)
+
+(defun org-verse--turn-off ()
+  "Tear down `org-verse-mode'."
+  (when org-verse--keywords
+    (font-lock-remove-keywords nil org-verse--keywords)
+    (kill-local-variable 'org-verse--keywords)))
+
+(defun org-verse--turn-on ()
+  "Set up `org-verse-mode'."
+  (let ((regexp org-verse-lexical))
+    (when regexp
+      (org-verse-buttonize-buffer)
+      (set (make-local-variable 'org-verse--keywords) regexp))))
+
 (define-minor-mode org-verse-mode "Highlight bible verses."
   :init-value nil
   :lighter " verse"

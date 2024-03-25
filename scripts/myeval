@@ -15,5 +15,21 @@ if stdin_exists && test "$#" -eq 0; then
 
     bash "$input_fp"
 else
-    eval "$(cmd "$@")"
+    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+        -E) {
+            DO_EXEC=y
+            shift
+        }
+        ;;
+
+        *) break;
+    esac; done
+
+    if test "$DO_EXEC" = "y"; then
+        CMD="$1"
+    else
+        CMD="$(cmd "$@")"
+    fi
+
+    eval "$CMD"
 fi
