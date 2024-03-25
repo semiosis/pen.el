@@ -136,6 +136,6 @@ new text arrives")
                                             client string)))
 
 
-(provide 'tcp-server)
+(provide 'pen-tcp-server)
 
 ;;; tcp-server.el ends here

@@ -63,6 +63,9 @@ START and END can be in either order."
 
 ;; tmux scripts
 
+(defun tm-window-height ()
+  (string-to-int (pen-snc "tmux display -t \"$CALLER_TARGET\" -p \"#{client_height}\"")))
+
 (defun tm-cap-pane (&optional show-buffer)
   (interactive)
   (let ((cap (pen-sn "pen-tm cap-pane -nohist")))

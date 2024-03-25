@@ -1528,6 +1528,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
           ;; (snc "wc -l" s)
           (count-chars ?\n s))
          (lines (string2list s))
+         (maxlines (tm-window-height))
          (first_line (car lines))
          (slug (slugify first_line t)))
     (tpop
@@ -1538,8 +1539,10 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
      :y_pos "M+1"
      :bg 233
      :width_pc 55
-     :height_pc (+ 4 ;; (string-to-int nlines)
-                   nlines)
+     :height_pc
+     (min maxlines
+          (+ 4 ;; (string-to-int nlines)
+             nlines))
      ;; 20
      :style "heavy")))
 
