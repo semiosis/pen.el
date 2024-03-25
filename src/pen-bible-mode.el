@@ -482,13 +482,13 @@
            (- (point) (length query))
            (point) 'font-lock-face '(:foreground "green" :background "darkgreen")))))
 
-  (save-excursion
-    (beginning-of-buffer)
-    (bible-mode-get-link)
-    (let* ((book (car bible-mode-ref-tuple))
-           (shortbook (bible-book-tinyname book)))
-      (while (re-search-forward "^.[^0-9]* " nil t)
-        (replace-match (concat shortbook " ")))))
+  (let ((book_ref_list (-uniq (mapcar (lambda (s) (s-replace-regexp " [0-9].*" "" s)) (str2lines (scrape "^.*:" (buffer-string)))))))
+    (loop for bookref in book_ref_list do
+          (save-excursion
+            (beginning-of-buffer)
+            (let* ((shortbook (bible-book-tinyname bookref)))
+              (while (re-search-forward (concat "^" bookref " ") nil t)
+                (replace-match (concat shortbook " ")))))))
   
   (save-excursion
     (beginning-of-buffer)
@@ -1310,7 +1310,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
   (interactive
    (let ((current-book-and-chap
           (let* ((tup (bible-mode-get-ref-tuple))
-                 (book (car tup))
+                 (book (bible-book-tinyname (car tup)))
                  (chap (str (cadr tup)))
                  (re (concat "\\(" book " " chap ":\\|" book "\\)")))
             re)))
