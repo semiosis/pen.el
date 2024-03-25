@@ -80,7 +80,10 @@ bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s jo
     # I need a non-greedy .* at the start.
     # Sadly, sed doesn't have a non-greedy
     # https://stackoverflow.com/questions/1103149/non-greedy-reluctant-regex-matching-in-sed
-    # Therefore, I might need 2 sed passes.
+    # Therefore, I might need 2 sed passes with different sets of patterns in order to achieve what I want.
+
+    # or use perl instead of sed - this is probably the best option
+    # perl -pe 's|(http://.*?/).*|\1|'
 
     # TODO Make it longest to shortest
     cat "$input_fp" | awk 1 |
