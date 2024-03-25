@@ -85,6 +85,8 @@ bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s jo
     # or use perl instead of sed - this is probably the best option
     # perl -pe 's|(http://.*?/).*|\1|'
 
+    # https://gist.github.com/apetkau/a93ea4d4bf8b10e65089
+
     # TODO Make it longest to shortest
     cat "$input_fp" | awk 1 |
         sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
