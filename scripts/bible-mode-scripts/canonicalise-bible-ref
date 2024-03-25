@@ -32,8 +32,11 @@ stdin_exists() {
     } &>/dev/null
 }
 
+# Ps.33.6
+# Ps.136.5-Ps.136.8
+
 if stdin_exists; then
-    awk 1 | while read line; do
+    awk 1 | sed -e 's/\([a-z]\)\.\([0-9]\)/\1 \2/g' -e 's/\./:/g' | while read line; do
         # echo "$line" 1>&2
         if printf -- "%s\n" "$line" | grep -q -P '[0-9]$'; then
             # separate book title from chapter:verse

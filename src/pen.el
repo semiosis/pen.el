@@ -2446,6 +2446,7 @@ May use to generate code from comments."
 (require 'pen-clojure)
 (require 'pen-cs-notation)
 (require 'pen-deprecated)
+(require 'pen-tcp-server)
 (require 'pen-go)
 (require 'pen-ediff)
 (if (inside-docker-p)
