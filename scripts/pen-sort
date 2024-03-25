@@ -17,13 +17,17 @@ esac
 case "$f" in
     line-length) {
         # perl sort with custom comparator
-        perl -e 'print sort { length($a) <=> length($b) } <>'
+        awk 1 | perl -e 'print sort { length($a) <=> length($b) } <>'
+
+        # I need the awk 1 for the folowing to not have a bug:
+        # pen-els list-bible-book-titles-lines | pen-sort line-length
+        # The problem was that if there is no final line ending the last item is joined to the second-to-last item
     }
     ;;
     
     line-length-desc) {
         # perl sort with custom comparator
-        perl -e 'print sort { length($b) <=> length($a) } <>'
+        awk 1 | perl -e 'print sort { length($b) <=> length($a) } <>'
     }
     ;;
     

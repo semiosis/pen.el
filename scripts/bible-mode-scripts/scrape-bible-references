@@ -61,7 +61,8 @@ input_fp="$(cat | c ascify | tf txt)"
 # Make this consume the args and generate a regex
 
 # bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length-desc | s join "\\\|")"
-bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "\\\|")"
+# bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "\\\|")"
+perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s join "|")"
 
 {
     # I need to list all the many different possible book
@@ -86,11 +87,19 @@ bookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | s jo
     # perl -pe 's|(http://.*?/).*|\1|'
 
     # https://gist.github.com/apetkau/a93ea4d4bf8b10e65089
+    # e:/var/smulliga/source/gist/apetkau/a93ea4d4bf8b10e65089/gistfile1.txt
 
     # TODO Make it longest to shortest
+    # cat "$input_fp" | awk 1 |
+    #     sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
+    #     sed -n "s/.*\\b\\($bookre\\)\\b\\(\\.\\)\\?\\( \\?[0-9][0-9-]*\\)\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
+    #     sed '/^$/d'
+
+    # *? is the non-greedy *
+    # https://www.oreilly.com/library/view/perl-cookbook/1565922433/ch06s16.html
     cat "$input_fp" | awk 1 |
         sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
-        sed -n "s/.*\\b\\($bookre\\)\\b\\(\\.\\)\\?\\( \?[0-9][0-9-]*\\)\\([:.][0-9][0-9-]*\\)\\?.*/\\1\\2\\3\\4/p" |
+        perl -ne "print $_ if s/.*?\\b($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/;" |
         sed '/^$/d'
 } | sed -e 's/\.$//' | {
     if test "$verses_only" = "y"; then
