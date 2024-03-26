@@ -62,9 +62,12 @@ If FRAME is nil, use `selected-frame'."
       ;;    (comment (some-post-processing-of-org-text))))
       )))
 
-;; This appears to be running twice in a row every time the sidecar is opened
+;; This appears to be running twice in a row every time the sidecar is opened - fix it.
+;; Also, when clicking on buttons in the sidecar,
+;; if the button made a tmux popup, the popup was closed because the spinner appeared
 (defun sidecar-get-cross-references-for-ref (ref)
-  (snc "spin -m verse-xrefs in-pen bible-get-cross-references -olol" ref))
+  ;; (snc "spin -m verse-xrefs in-pen bible-get-cross-references -olol" ref)
+  (snc "in-pen bible-get-cross-references -olol" ref))
 
 (universal-sidecar-define-section bible-section (file title)
                                   (

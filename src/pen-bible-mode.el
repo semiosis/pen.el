@@ -1440,9 +1440,14 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
            ;; (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference | bible-show-verses | cat" ref)
            (snc "in-pen bible-get-cross-references | bible-canonicalise-cross-reference" ref)))
       (if (sor xrefs)
-          (let ((b (etv xrefs)))
+          (let ((b (etv
+                    (concat
+                     ref "\n"
+                     xrefs))))
             (with-current-buffer b
-              (org-verse-mode))
+              (org-verse-mode)
+              (setq buffer-read-only t)
+              (rename-buffer (format "*%s crossreferences*" ref) t))
             b)
         (message "No cross references for %s" ref)))))
 

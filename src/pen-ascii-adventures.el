@@ -437,6 +437,8 @@ Return list of cons '((destination content)"
                  ;; Therefore I need to set them again
                  (defset aa/parse parse)
                  (defset aa/filepath filepath)
+                 
+                 ;; TODO ensure that only code blocks which are inside =** Frames= are used
                  (defset aa/frames (mapcar 'cdr (org-sync-snippets--iterate-org-src aa/filepath)))
                  ;; (tv parse)
                  (defset aa/delay (string-to-int (first frameproperties)))
