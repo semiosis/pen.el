@@ -129,8 +129,10 @@ It is used when no mode-specific one is available.")
 ;;              (setq case-fold-search t))))
 
 (add-hook 'org-mode-hook 'org-verse-mode)
+(remove-hook 'org-mode-hook 'org-verse-mode)
 ;; (add-hook 'emacs-lisp-mode-hook 'org-verse-mode)
 ;; (remove-hook 'emacs-lisp-mode-hook 'org-verse-mode)
 (add-hook 'text-mode-hook 'org-verse-mode)
+(remove-hook 'text-mode-hook 'org-verse-mode)
 
 (provide 'pen-org-verse)
