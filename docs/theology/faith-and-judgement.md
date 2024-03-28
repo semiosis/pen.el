@@ -1445,7 +1445,13 @@ Jesus makes intercession for those who draw near to God through Him:
 
 Likewise, the Holy Spirit is Almighty God.
 
-I affirm the Nicene creed wholeheartedly:
+> **Isaiah 48:16-17** - Draw near to me, hear this: from the beginning I have not spoken in secret, from the time it came to be I have been there. And now the Lord GOD has sent me, and his Spirit. Thus says the LORD, your Redeemer, the Holy One of Israel: I am the LORD your God, who teaches you to profit, who leads you in the way you should go. (ESV)
+
+> **Matthew 3:16-17** - And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+
+> **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on me, on him whom they have pierced, they shall mourn for him, as one mourns for an only child, and weep bitterly over him, as one weeps over a firstborn. (ESV)
+
+I affirm the Nicenee creed wholeheartedly:
 
      1  We believe in one God,
      2        the Father almighty,
