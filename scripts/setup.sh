@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ln -sf ~/.pen/downloads ~/downloads
+
 mkdir -p ~/source/gist
 
 mcd () {
@@ -2311,3 +2313,5 @@ cd difftastic
 )
 
 # https://invisible-island.net/xterm/xterm.html#download
+
+agi mtools

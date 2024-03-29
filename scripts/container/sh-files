@@ -15,7 +15,7 @@ t  todo.org
 g  glossary.txt
 G  glossary.el
 p  perspective.org
-P  plan.org
+P  prayers.org
 k  keep-in-mind.org
 n  need.org
 f  files.txt
@@ -41,7 +41,7 @@ case "$d" in
     g) cmd="vs $NOTES/glossary.txt" ;;
     G) cmd="sp $EMACSD/config/my-glossary.el" ;;
     p) cmd="vs $NOTES/perspective.org" ;;
-    P) cmd="vs $NOTES/plan.org" ;;
+    P) cmd="vs $NOTES/prayers.org" ;;
     k) cmd="vs $NOTES/keep-in-mind.org" ;;
     n) cmd="vs $NOTES/need.org" ;;
     f) cmd="vs $NOTES/files.txt" ;;
