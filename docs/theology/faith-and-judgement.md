@@ -5,6 +5,10 @@ I agree whole heartedly with Keith Green here:
 
 -   [Keith Green 1978 : Make My Life A Prayer to You {live} - YouTube](https://www.youtube.com/watch?v=z7oCa9BvO9g)
 
+I agree whole heartedly also with MP Nick Fletcher:
+
+-   [Christian MP: 'A life in Christ is the most wonderful thing' - YouTube](https://www.youtube.com/watch?v=TWPoQN8PO9E)
+
 Almost all of verses are taken from the ESV
 (English Standard Version) bible with the odd NASB
 (New American Standard Bible), KJV (King
@@ -212,6 +216,12 @@ Yes, I believe that Jesus can save a person who believes in His name. But He is 
 I think Jesus calls us to pursue perfection through following Him, and we should definitely give it a go:
 
 > **John 17:23** - I in them and you in me, that <ins>they may become perfectly one,</ins> so that the world may know that you sent me and loved them even as you loved me.
+
+We aim for perfection / to be made complete / full restoration:
+
+> **II Corinthians 13:11** - Finally, brethren, farewell. **Be perfect**, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you. (KJV)
+
+> **II Corinthians 13:11-14** - Finally, brethren, rejoice, **be made complete**, be comforted, be like-minded, live in peace; and the God of love and peace will be with you. Greet one another with a holy kiss. All the saints greet you. The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit, be with you all. (NASB)
 
 Paul presses on to try to achieve a high level of Christlikeness, and his rational is that Jesus made him (Paul) his own (i.e. Jesus loved him),
 and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm convinced that's the motivation). He wants to be with Jesus.
