@@ -33,6 +33,22 @@ We have to put sin away after we come to believe in Him:
 
 > **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
 
+Those who have been born-again have become obedient to Jesus Christ. We must be born-again. This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
+
+> **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and he died for all, that those who live might no longer live for themselves but for him who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. (ESV)
+
+> **Galatians 6:15** - For neither circumcision counts for anything, nor uncircumcision, but a new creation. (ESV)
+
+> **Galatians 5:6** - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only faith working through love. (ESV)
+
+> **I Corinthians 7:19** - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
+
+> **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
+
+> **John 3:7** - Do not marvel that I said to you, You must be born again. (ESV)
+
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+
 In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God the Son, for their salvation, if they are willing <ins>turn to and obey Him</ins>, **if Father God puts them in**, obediently trusting Jesus Christ who is their life, to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
 
 > **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
@@ -470,6 +486,16 @@ God is loving and altogether gracious.
 Having faith in God involves following Jesus:
 
 > **Hebrews 10:32-39** - But recall the former days when, <ins>after you were enlightened, you endured a hard struggle with sufferings, sometimes being publicly exposed to reproach and affliction</ins>, and sometimes being partners with those so treated. For you had compassion on those in prison, and you joyfully accepted the plundering of your property, since you knew that you yourselves had a better possession and an abiding one. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that <ins>when you have done the will of God you may receive what is promised</ins>. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But <ins>we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls</ins>.
+
+I agree whole heartedly with this guy:
+
+-   [The 'Cheap Grace' Gospel From HELL&#x2026;| - YouTube](https://www.youtube.com/watch?v=BCQX4R1mFAk)
+
+I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian.
+
+There is a transformation in the heart of a born-again Christian that involves changing allegiance towards Jesus Christ, resulting in the will to obey Jesus, and God gives us the spirit to help us to obey Him.
+
+> **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
 
 ## I believe that a loving, trusting ( <ins>believing</ins> and <ins>obedient</ins> ) heart for Jesus Christ is essential for permanent abiding in Him
