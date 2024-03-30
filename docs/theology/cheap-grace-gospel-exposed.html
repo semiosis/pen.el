@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-03-30 Sat 18:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="root" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+Jesus, through salvation, makes us born again…made anew and you become a new creation!! Faith without works is dead, through the heart of Christ that transforms us we want to do as Christ did and does. Glory to God. So your life must change if Christ is living in you, in all the ways the Bible says. Let no one be deceived.
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=BCQX4R1mFAk&amp;t=318s">The a??Cheap Gracea?? Gospel From HELLa?| - YouTube</a>
+</p>
+
+<blockquote>
+<p>
+<b>II Corinthians 5:14-17</b> - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and he died for all, that those who live might no longer live for themselves but for him who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Galatians 6:15</b> - For neither circumcision counts for anything, nor uncircumcision, but a new creation. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Galatians 5:6</b> - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only faith working through love. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>I Corinthians 7:19</b> - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+<b>Ezekiel 11:19-20</b> - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
+</p>
+</blockquote>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr">  1: </span>there are people that believe this
+<span class="linenr">  2: </span>absolutely insane
+<span class="linenr">  3: </span>theology that there is a difference
+<span class="linenr">  4: </span>between simply being a Christian and
+<span class="linenr">  5: </span>being a disciple of Jesus Christ they
+<span class="linenr">  6: </span>say that being a Christian is free but
+<span class="linenr">  7: </span>being a disciple is costly but the Bible
+<span class="linenr">  8: </span>never makes this
+<span class="linenr">  9: </span>distinction being a Christian and being
+<span class="linenr"> 10: </span>a disciple are one and the same the
+<span class="linenr"> 11: </span>reason that people believe this and read
+<span class="linenr"> 12: </span>this into the text is because they
+<span class="linenr"> 13: </span>believe in a false Gospel called the
+<span class="linenr"> 14: </span>cheap Grace Gospel as opposed to the
+<span class="linenr"> 15: </span>free Grace Gospel they believe that a
+<span class="linenr"> 16: </span>person can be born again and it's
+<span class="linenr"> 17: </span>possible that no transformation can
+<span class="linenr"> 18: </span>happen because they wrongly believe that
+<span class="linenr"> 19: </span>if transformation is a result of the
+<span class="linenr"> 20: </span>Born Again experience and a person
+<span class="linenr"> 21: </span>becoming a Christian then a person is
+<span class="linenr"> 22: </span>saved by works and what they do and it's
+<span class="linenr"> 23: </span>a Works based gospel but that is just
+<span class="linenr"> 24: </span>simply not the case and then what they
+<span class="linenr"> 25: </span>do is they throw out a whole bunch of
+<span class="linenr"> 26: </span>verses that clearly illustrate that
+<span class="linenr"> 27: </span>there in a general sense is a
+<span class="linenr"> 28: </span>transformation in the life of a Believer
+<span class="linenr"> 29: </span>and there is evidence that follows that
+<span class="linenr"> 30: </span>transformation they try to explain it
+<span class="linenr"> 31: </span>away and they do it very very poorly uh
+<span class="linenr"> 32: </span>they completely twist the verses uh in
+<span class="linenr"> 33: </span>ways that you wouldn't even
+<span class="linenr"> 34: </span>believe uh to try to arrive at that
+<span class="linenr"> 35: </span>place because they are convinced that a
+<span class="linenr"> 36: </span>person can be born again and there can
+<span class="linenr"> 37: </span>be no transformation at the Born Again
+<span class="linenr"> 38: </span>experience that it's possible for that
+<span class="linenr"> 39: </span>to
+<span class="linenr"> 40: </span>happen now what they do with this whole
+<span class="linenr"> 41: </span>Christian and disciple thing is because
+<span class="linenr"> 42: </span>there are other verses that they can't
+<span class="linenr"> 43: </span>get around whatsoever even with the
+<span class="linenr"> 44: </span>craziest explanations that they
+<span class="linenr"> 45: </span>try they have to separate Christian from
+<span class="linenr"> 46: </span>disciple like for example when Jesus
+<span class="linenr"> 47: </span>says if anyone would come after me let
+<span class="linenr"> 48: </span>him deny himself take up his cross and
+<span class="linenr"> 49: </span>follow me they say well this can't be
+<span class="linenr"> 50: </span>talking about a
+<span class="linenr"> 51: </span>Christian it has to be talking about a
+<span class="linenr"> 52: </span>disciple and the two then have to be
+<span class="linenr"> 53: </span>separate because um otherwise it's
+<span class="linenr"> 54: </span>showing that a Christian will live a
+<span class="linenr"> 55: </span>transformed life and and and we can't
+<span class="linenr"> 56: </span>have that if we believe the cheap Grace
+<span class="linenr"> 57: </span>Gospel but let me completely debunk that
+<span class="linenr"> 58: </span>with one
+<span class="linenr"> 59: </span>passage so let's go to Matthew chapter
+<span class="linenr"> 60: </span>disciples if anyone would come after me
+<span class="linenr"> 61: </span>let him deny himself take up his cross
+<span class="linenr"> 62: </span>and follow me and these people will then
+<span class="linenr"> 63: </span>say see this is talking about Disciple
+<span class="linenr"> 64: </span>This isn't talking about just any
+<span class="linenr"> 65: </span>Christian this isn't talking about a
+<span class="linenr"> 66: </span>person who's just given their life to
+<span class="linenr"> 67: </span>Christ this is talking about someone who
+<span class="linenr"> 68: </span>wants to live a costly life who wants to
+<span class="linenr"> 69: </span>walk in Greater levels of obedience and
+<span class="linenr"> 70: </span>sacrifice for Christ so that doesn't
+<span class="linenr"> 71: </span>prove that a Christian lives a
+<span class="linenr"> 72: </span>transformed life let's read on though
+<span class="linenr"> 73: </span>verse 25 for whoever would save his life
+<span class="linenr"> 74: </span>will lose it but whoever loses his life
+<span class="linenr"> 75: </span>for my sake will find it isn't that
+<span class="linenr"> 76: </span>interesting interesting let's read one
+<span class="linenr"> 77: </span>more verse verse
+<span class="linenr"> 78: </span>gains the whole world and forfeits his
+<span class="linenr"> 79: </span>soul or what shall a man give in return
+<span class="linenr"> 80: </span>for his soul that's talking about
+<span class="linenr"> 81: </span>salvation right there talking about
+<span class="linenr"> 82: </span>someone forfeiting their soul being
+<span class="linenr"> 83: </span>separated from
+<span class="linenr"> 84: </span>God so when we see Jesus is saying if
+<span class="linenr"> 85: </span>anyone would come after him and follow
+<span class="linenr"> 86: </span>him he's talking about
+<span class="linenr"> 87: </span>salvation clearly In this passage that a
+<span class="linenr"> 88: </span>person if they don't come after him and
+<span class="linenr"> 89: </span>follow him will forfeit their soul and
+<span class="linenr"> 90: </span>the person who does come after him and
+<span class="linenr"> 91: </span>follow him will lay down their life take
+<span class="linenr"> 92: </span>up their cross and follow
+<span class="linenr"> 93: </span>[Music]
+<span class="linenr"> 94: </span>him this is not a Works based gospel
+<span class="linenr"> 95: </span>works are never the means by which we
+<span class="linenr"> 96: </span>are saved works are not something that
+<span class="linenr"> 97: </span>ever keep us saved this is something
+<span class="linenr"> 98: </span>false that these people project onto
+<span class="linenr"> 99: </span>people that believe the true gospel but
+<span class="linenr">100: </span>rather this is the
+<span class="linenr">101: </span>result this this denial of self this
+<span class="linenr">102: </span>transformation is a result of the
+<span class="linenr">103: </span>transformation that takes place in the
+<span class="linenr">104: </span>Born Again experience it's not sinless
+<span class="linenr">105: </span>Perfection but rather it is a change of
+<span class="linenr">106: </span>affection people that deny this they
+<span class="linenr">107: </span>deny the power of the Holy Spirit they
+<span class="linenr">108: </span>deny the power of the born- again
+<span class="linenr">109: </span>experience they deny the spirit's power
+<span class="linenr">110: </span>working within the life of a Believer to
+<span class="linenr">111: </span>bring about Godly sorrow to bring about
+<span class="linenr">112: </span>repentance to bring about conviction of
+<span class="linenr">113: </span>sin and they make the false conflation
+<span class="linenr">114: </span>that if a person if a transformation has
+<span class="linenr">115: </span>to have taken place when a person is
+<span class="linenr">116: </span>born again therefore they're relying on
+<span class="linenr">117: </span>their Works to be saved or keep them
+<span class="linenr">118: </span>saved which I've already said is
+<span class="linenr">119: </span>completely
+<span class="linenr">120: </span>false now what people need to do is not
+<span class="linenr">121: </span>get caught up in looking for works all
+<span class="linenr">122: </span>over the place that's true people can so
+<span class="linenr">123: </span>readily doubt their salvation which is
+<span class="linenr">124: </span>dangerous because we are saved by the
+<span class="linenr">125: </span>finished work of Jesus Christ
+<span class="linenr">126: </span>and there are people out there who every
+<span class="linenr">127: </span>time they stumble they doubt their
+<span class="linenr">128: </span>salvation and God doesn't want this for
+<span class="linenr">129: </span>us at all it's definitely a danger
+<span class="linenr">130: </span>people can fall into but what I would
+<span class="linenr">131: </span>say to you is if you're someone who is
+<span class="linenr">132: </span>struggling with this one of the greatest
+<span class="linenr">133: </span>evidences that you are born again is the
+<span class="linenr">134: </span>fact that you are struggling with this
+<span class="linenr">135: </span>because there are people out there who
+<span class="linenr">136: </span>they don't even care about their sin
+<span class="linenr">137: </span>they they they love their sin they
+<span class="linenr">138: </span>indulge in their sin they're slaves to
+<span class="linenr">139: </span>sin if you're feeling a sorrow for a
+<span class="linenr">140: </span>grief in your
+<span class="linenr">141: </span>heart for the sin in your life then it's
+<span class="linenr">142: </span>a sign that the holy spirit is working
+<span class="linenr">143: </span>inside of you and you don't have to look
+<span class="linenr">144: </span>to those feelings you don't have to look
+<span class="linenr">145: </span>to your works just run to Jesus Christ
+<span class="linenr">146: </span>look at the cross get hold of every
+<span class="linenr">147: </span>verse that talks about how where sin
+<span class="linenr">148: </span>abounds the grace of God abounds all the
+<span class="linenr">149: </span>more how uh God showed his love for us
+<span class="linenr">150: </span>in that while we were still sinners
+<span class="linenr">151: </span>Christ died for us and just medit Med
+<span class="linenr">152: </span>itate on that and just rest in the
+<span class="linenr">153: </span>finished work of Christ that sorrow that
+<span class="linenr">154: </span>conviction for your sin is a sign that
+<span class="linenr">155: </span>you've been transformed because the
+<span class="linenr">156: </span>people out there in the world they don't
+<span class="linenr">157: </span>even experience that so friends don't
+<span class="linenr">158: </span>fall for this absolute nonsense that
+<span class="linenr">159: </span>there's a difference between being a
+<span class="linenr">160: </span>Christian and being a disciple don't
+<span class="linenr">161: </span>fall for the lies of the Blasphemous
+<span class="linenr">162: </span>cheap Grace Gospel which denies the
+<span class="linenr">163: </span>power of God
+<span class="linenr">164: </span>and which twists scripture denies
+<span class="linenr">165: </span>scripture don't fall for that the early
+<span class="linenr">166: </span>church fathers who were taught directly
+<span class="linenr">167: </span>by the apostles never believed in that
+<span class="linenr">168: </span>all of the prominent people throughout
+<span class="linenr">169: </span>church history never believed in that
+<span class="linenr">170: </span>and the scriptures most certainly do not
+<span class="linenr">171: </span>teach that it is one of the most insane
+<span class="linenr">172: </span>doctrines that you will come across I'm
+<span class="linenr">173: </span>going to put a video up on the screen
+<span class="linenr">174: </span>which goes over some of the verses that
+<span class="linenr">175: </span>shows the that there will be a
+<span class="linenr">176: </span>transformation in the life of a born-
+<span class="linenr">177: </span>again believer I'll put that on the
+<span class="linenr">178: </span>screen uh you're really going to be
+<span class="linenr">179: </span>blessed by that um if you have any
+<span class="linenr">180: </span>comments leave them below and I would
+<span class="linenr">181: </span>love to talk to you soon God bless you
+<span class="linenr">182: </span>friends
+</pre>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: root</p>
+<p class="date">Created: 2024-03-30 Sat 18:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
