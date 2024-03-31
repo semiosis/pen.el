@@ -73,9 +73,11 @@ Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto 
 
 > **Romans 6:1** - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For **if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his**. We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but **the life he lives he lives to God.** So you also must consider yourselves dead to sin and alive to God in Christ Jesus.
 
-Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!!
+Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the following verse, I believe actually applies to baptism (identifying with Christ in His death and resurrection)! So a nice way of reading the following is: If someone, while believing in Jesus Christ, dies to their old selfish nature to live as someone who loves selflessly, they will live, and the one who lives abiding in Jesus Christ's love, having died to their old selfish nature, and believes in Him will never die:
 
 > **John 11:25-26** - Jesus said to her, I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die. Do you believe this?
+
+I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
 I conjecture that `Obedience = Selfless love`. Nevertheless, where we fall short, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
 
