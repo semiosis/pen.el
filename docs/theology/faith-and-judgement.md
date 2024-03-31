@@ -441,7 +441,7 @@ Return to obedience to God through obedience to Jesus. Turn from sin:
 
 > **Joel 2:12-13** - Yet even now, declares the LORD, return to me with all your heart, with fasting, with weeping, and with mourning; and rend your hearts and not your garments. Return to the LORD, your God, for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster. (ESV)
 
-God provides the new heart:
+God provides the new heart, and God works through us:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
@@ -641,6 +641,13 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 <td class="org-left">&#xa0;</td>
 <td class="org-left">My food is to do the will of him who sent me and to accomplish his work.</td>
 </tr>
+
+
+<tr>
+<td class="org-left">Romans 6:22</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">you have been set free from sin and have become slaves of God</td>
+</tr>
 </tbody>
 </table>
 
@@ -827,7 +834,7 @@ The good news must be united by obedient faith (putting Jesus' words into action
 
 > **Hebrews 4:1-2** - Therefore, while the promise of entering his rest still stands, let us fear lest any of you should seem to have failed to reach it. For good news came to us just as to them, but the message they heard did not benefit them, because they were not united by faith with those who listened. (ESV)
 
-> **Philippians 2:12** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
 
 I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'. So someone must be a both a believer and a follower of Jesus.
 
@@ -1071,15 +1078,63 @@ Obey God, obey Jesus:
 
 ## Gospel
 
-Whoever trusts in Jesus Christ shouldn't perish, but they should have eternal life:
+The Good News of Jesus Christ is the power of God for salvation to everyone who believes - salvation from sin, and eternal life in Christ Jesus.
+
+> **Romans 1:16** - For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. (ESV)
+
+Jesus Christ bore the punishment for our iniquity to bring us peace with God:
+
+> **Isaiah 53:5** - But he was wounded for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his stripes we are healed. (ESV)
+
+We must yield to Jesus. The Spirit we receive causes and helps us to obey. Our obedience is accredited to God working through us:
+
+> **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
+
+Jesus does work through us as we are believing in Him:
+
+> **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
+
+Jesus makes it clear that the ones who believe do the same works He does:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+We have **always obeyed**, participating in the Spirit, having one mind, that of a servant - God works through us:
+
+> **Philippians 2:1-13** - So if there is any encouragement in Christ, any comfort from love, any <ins>participation in the Spirit,</ins> any affection and sympathy, complete my joy by being of the same mind, having the same love, being in full accord and of one mind. Do nothing from rivalry or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, **taking the form of a servant**, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, **work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work** for his good pleasure. (ESV)
+
+'Believing obedience' produces work.
+
+We are saved through faith - it's not our own doing - it's not a **result** of works - the works are a gift:
+
+> **Ephesians 2:8-9** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+
+Whoever trusts in Jesus Christ shouldn't perish, but they should have eternal life. We've just got to have faith in Jesus:
 
 > **John 3:16-21** - For God so loved the world, that he gave his only Son, that whoever (G3956 pas) believes (G4100 pisteuo) in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. But <ins>whoever does what is true comes to the light</ins>, so that <ins>it may be clearly seen that his deeds have been carried out in God</ins>. (ESV)
 
-The gospel involves having <ins>believing</ins> **and** <ins>obedient</ins> heart. It must start with one or the other, but should arrive at both.
+The gospel *involves* having <ins>believing</ins> **and** <ins>obedient</ins> heart. The entrypoint is believing in Jesus Christ to be saved - that itself is an act of obedience.
 
-Whoever <ins>does what is true comes to the light.</ins>
+> **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+
+The obedience of heart:
+
+-   having of faith in Jesus and Jesus' name.
+
+The obedience produces work:
+
+-   carrying out deeds done in God.
+-   coming to the light.
+
+If belief and obedience can even be separated, I think being saved starts with belief or obedience and arrives at both belief and obedience.
+Belief and obedience are both fundamental qualities of faith.
+
+Notice how just after **John 3:16** it says, "whoever <ins>does what is true comes to the light.</ins>"
 
 <ins>Whoever has faith in and puts their trust in in Jesus Christ is not condemned and should not perish.</ins>
+
+We have **always obeyed** - God works through us:
+
+> **Philippians 2:12-13** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
 We must honour Jesus Christ:
 
@@ -1153,7 +1208,73 @@ The grace given to Paul allowed him to turn from his evil ways and pursue Jesus,
 > **Acts 2:47** - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
 
 
-## Becoming a servant, humbling oneself and following Jesus is what we shoud do
+## Be a disciple of Jesus to be set free
+
+-   To be Jesus' disciple, we must abide in Jesus' word / obey His commandments.
+    -   Have love for one another.
+    -   Love Jesus as He loved us.
+    -   Carry our cross / bear one-another's burdens.
+    -   Put following Jesus before all else.
+-   To come to know the truth, we must be Jesus' disciple.
+-   To be set free, we must know the truth.
+
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+> **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. (ESV)
+
+> **Luke 9:23-24** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
+
+> **Luke 14:26** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+
+> **Luke 14:27** - Whoever does not bear his own cross and come after me cannot be my disciple. (ESV)
+
+**If** someone exhibits love toward others,
+learns and lives the expectations unearthed in
+Scripture, denies self in all situations, has
+as their first relational allegiance Jesus
+Christ, and will die for the cause of Christ,
+then they can rest assured, they are a
+disciple of Jesus Christ.
+
+See:
+
+-   <https://rickhowerton.wordpress.com/2015/05/06/you-are-my-disciple-if-the-five-ifs-of-a-disciple/>
+
+
+## The free gift of salvation is to be set free from sin to be a slave of righteousness
+
+The free gift is to be set free from sin to be
+a salve of righteousness - that is received
+through faith, received by those who obey Jesus.
+
+The faith that receives the free gift of salvation is obedient to Jesus.
+
+So when the Spirit begins working in you, and
+you obey, you are receiving the salvation.
+
+Is this considered being saved by works or being saved by faith?
+
+This is considered being saved by faith and not by works.
+
+We must now consider ourselves dead to sin and alive to God in Christ Jesus.
+We must now present ourselves as obedient slaves to righteousness - yes, practicing personal righteousness in accordance with Jesus Christ's commandments.
+
+> **Romans 6** - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that **all of us who have been baptized into Christ Jesus were baptized into his death?** We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his. We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. So **you also must consider yourselves dead to sin and alive to God in Christ Jesus.** Let not sin therefore reign in your mortal bodies, to make you obey their passions. Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness. For sin will have no dominion over you, since you are not under law but under grace. What then? Are we to sin because we are not under law but under grace? By no means! Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification. When you were slaves of sin, you were free in regard to righteousness. But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death. But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but **the free gift of God is eternal life in Christ Jesus our Lord.** (ESV)
+
+Therefore, to be in Christ Jesus our Lord, God puts us in and we then have a change of mindset, presenting ourselves as obedient slaves to Jesus Christ. Is that considered a bad thing to be a slave to righteousness? No, it's considered as being in Christ Jesus.
+
+The Holy Spirit in us **is the gift** which is in us:
+
+> **II Timothy 1:6-7** - For this reason I remind you to fan into flame the gift of God, which is in you through the laying on of my hands, for God gave us a spirit not of fear but of power and love and self-control. (ESV)
+
+> **II Corinthians 1:21-22** - And it is God who establishes us with you in Christ, and has anointed us, and who has also put his seal on us and given us his Spirit in our hearts as a guarantee. (ESV)
+
+God poured out His Holy Spirit richly on us through Jesus Christ our Saviour. And I believe this washing of regeneration and renewal has resulted in our justification
+
+> **Titus 3:4-7** - But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through Jesus Christ our Savior, so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
+
+
+## Becoming a servant, humbling oneself and following Jesus is what we should do
 
 A religious spirit is:
 
@@ -1307,7 +1428,7 @@ I'm not the judge. But Jesus's words which He left us will be the judge.
 
 > **I Corinthians 9:24-27** - Do you not know that in a race all the runners compete, but only one receives the prize? So <ins>run that you may obtain it.</ins> Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable. So I do not run aimlessly; I do not box as one beating the air. But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. (ESV)
 
-> **Philippians 2:12-13** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure.</ins> (ESV)
+> **Philippians 2:12-13** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is **God who works in you, both to will and to work** for his good pleasure.</ins> (ESV)
 
 Asking Jesus to save me:
 
@@ -1678,13 +1799,27 @@ Led by the Spirit of God is doing God's will:
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
+From our perspective we are <ins>obedient as we are participating in the Spirit,</ins> but <ins>God works through us</ins>:
+
+> **Philippians 2:1-13** - So if there is any encouragement in Christ, any comfort from love, any <ins>participation in the Spirit,</ins> any affection and sympathy, complete my joy by being of the same mind, having the same love, being in full accord and of one mind. Do nothing from rivalry or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, **taking the form of a servant**, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, **work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work** for his good pleasure. (ESV)
+
+We must obey! This obedience is being led by the Spirit.
+
 1.  We must abide by his teaching
 
-    > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son.
+    We must abide by Jesus Christ's teaching. Whoever does not abide in Jesus Christ's teaching does not have God.
     
-    It is a gift to be obedient to Jesus:
+    > **II John 1:9** - **Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God.** Whoever abides in the teaching has both the Father and the Son.
     
-    > **Romans 6:23** - For the wages of sin is death, but the free gift of God is eternal life <ins>in</ins> Christ Jesus our Lord. (ESV)
+    > **Matthew 4:17** - From that time Jesus began to preach, saying, Repent, for the kingdom of heaven is at hand. (ESV)
+    
+    We must obey righteousness:
+    
+    > **Romans 2:6-8** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. (ESV)
+    
+    It is a gift to be able to be obedient to Lord Jesus Christ, trusting in Him so that we may become obedient to Him:
+    
+    > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
 2.  We must live sowing to the Spirit
 
@@ -3043,7 +3178,25 @@ Paul awaits Christ to be formed in the person:
 
 # Justifying faith vs justifying works is misunderstood and is a false dichotomy
 
-There's a false dichotomy between faith and works - because obedience is intrinsic to faith.
+Jesus makes it clear that the ones who truly believe in Him **will do** the **works** which **He does**:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+But works by us done in righteousness are **not** the reason God showed mercy on us to save us. God in His mercy simply gave us His Holy Spirit in abundance to wash us, to regenerate us and to renew us, and He did this so that being justified by His grace, we might become heirs according to the hope of eternal life. We were once really disobedient, but by God's grace through faith in Jesus we are now obedient. The faith was **becoming obedient** to Jesus, and out of it flows good works and obedience:
+
+> **Titus 3:3-8** - For we ourselves were **once foolish, disobedient, led astray, slaves to various passions and pleasures,** passing our days in malice and envy, hated by others and hating one another. But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through **Jesus Christ our Savior**, so that being justified by his grace we might become heirs according to the hope of eternal life. The saying is trustworthy, and I want you to insist on these things, so that those who have believed in God may be careful to devote themselves to good works. These things are excellent and profitable for people. (ESV)
+
+So Jesus saves us to become set free from various passions and pleasures and to become far more obedient to righteousness, and this is done through faith in Jesus Christ. Believing in Jesus Christ is the entry point for the salvation that is through Him.
+
+So the point I'm trying to make is that the free gift of the Holy Spirit is received by faith alone, just be trusting in Jesus Christ to be saved, but Jesus Christ helps us to become slaves of righteousness which leads to eternal life.
+
+Therefore I still think there's a false dichotomy between faith and works - because obedience is intrinsic to faith, but the gift of the Holy Spirit remains a completely free gift which is <ins>received through faith</ins> and that **merit** by works of righteousness is not the reason **why** it's given to us, but nevertheless, <ins>the Holy Spirit is given to those who obey Him.</ins>
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit, whom God has given to those who obey him**. (ESV)
+
+> **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
+
+Some people think that this obedience means it's no longer a free gift, where I do not agree with those people. I think that the obedience to Jesus is receiving the free gift through faith.
 
 > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
 
@@ -3052,6 +3205,8 @@ True faith is always obedient; faith is always prepared to obey more:
 > **John 7:17**- If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.
 
 You can't even have faith in God without obeying Jesus because the one who has faith in God has already obeyed Jesus whether they know about `Mark 11:22 or not`. So it's not a dead work.
+
+> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
 
 And justifying faith is having obedient faith in God with regards to the promise given to Abraham.
 
@@ -5804,7 +5959,7 @@ We must cooperate with God by doing what Jesus has instructed, and not fighting 
 
 We work, obediently serving God, but it's God working in us:
 
-> **\*Philippians 2:12-13** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure.</ins> (ESV)
+> **\*Philippians 2:12-13** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, <ins>work out your own salvation with fear and trembling, for it is **God who works in you, both to will and to work** for his good pleasure.</ins> (ESV)
 
 We must obey Jesus.
 
@@ -9314,6 +9469,14 @@ their faithfulness to God and their conviction.
 Paul preached the same gospel as Jesus, Peter and John, but some people think Paul's gospel is different - but that is because they have been deceived by the two-gospel heresy:
 
 -   [The Two Gospel Heresy - Anton Bosch](https://antonbosch.org/the-two-gospel-heresy)
+
+Jesus' words do not pass away, and the truths He spoke before being crucified remain true:
+
+> **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.  (ESV)
+
+Jesus' words are the words of eternal life:
+
+> **John 6:68** -  Simon Peter answered him, Lord, to whom shall we go?  You have the words of eternal life,  (ESV)
 
 To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 

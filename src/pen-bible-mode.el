@@ -1982,4 +1982,28 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 ;; (add-hook 'changed-line-hook #'universal-sidecar-refresh)
 ;; (remove-hook 'changed-line-hook #'universal-sidecar-refresh)
 
+(defun bible-search-mode-follow-verse ()
+  "Follows the hovered verse in a `bible-search-mode' buffer,
+creating a new `bible-mode' buffer positioned at the specified verse."
+  (interactive)
+  (let* (
+         (text (thing-at-point 'line t))
+         book
+         chapter
+         verse)
+
+    (string-match ".+ [0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:" text)
+    (setq text (match-string 0 text))
+
+    (string-match " [0-9]?[0-9]?[0-9]?:" text)
+    (setq chapter (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+
+    (string-match ":[0-9]?[0-9]?[0-9]?" text)
+    (setq verse (replace-regexp-in-string "[^0-9]" "" (match-string 0 text)))
+    (setq book (replace-regexp-in-string "[ ][0-9]?[0-9]?[0-9]?:[0-9]?[0-9]?[0-9]?:$" "" text))
+
+    (setq book (bible-book-keyname book))
+
+    (bible-open (+ (bible-mode--get-book-global-chapter book) (string-to-number chapter)) (string-to-number verse))))
+
 (provide 'pen-bible-mode)
