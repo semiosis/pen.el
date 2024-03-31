@@ -1269,9 +1269,24 @@ The Holy Spirit in us **is the gift** which is in us:
 
 > **II Corinthians 1:21-22** - And it is God who establishes us with you in Christ, and has anointed us, and who has also put his seal on us and given us his Spirit in our hearts as a guarantee. (ESV)
 
-God poured out His Holy Spirit richly on us through Jesus Christ our Saviour. And I believe this washing of regeneration and renewal has resulted in our justification
+God poured out His Holy Spirit richly on us through Jesus Christ our Saviour. This would not be possible without having sent Jesus Christ to die for our sins and be raised for our justification. To be able to be justified is pure grace. To be able to have faith in Jesus is pure grace.
+But we must put our faith in Jesus Christ!
 
 > **Titus 3:4-7** - But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through Jesus Christ our Savior, so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
+
+So we should ask God to receive the Holy Spirit, and believe He will give the Holy Spirit to us:
+
+> **Luke 11:13** - If you then, who are evil, know how to give good gifts to your children, how much more will the heavenly Father give the Holy Spirit to those who ask him! (ESV)
+
+This says Father God gives the Holy Spirit to His children. Then we should seek to behave His children and ask Him.
+
+> **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
+
+Who receives the Holy Spirit? The ones who obey God!
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit, whom God has given to those who obey him**. (ESV)
+
+> **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
 
 ## Becoming a servant, humbling oneself and following Jesus is what we should do
