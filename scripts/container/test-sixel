@@ -2,5 +2,7 @@
 export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# See also 'timg'
 
-lsix $PENCONF/documents/Cheshire-cattree.jpg
+lsix /usr/share/doc/asciidoc/doc/images/tiger.png
+show-pick /usr/share/doc/asciidoc/doc/images/tiger.png
