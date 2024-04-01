@@ -468,4 +468,33 @@ PROMPT overrides the default one used to ask user for a file name."
 (advice-add 'push-button :around #'push-button-around-advice)
 ;; (advice-remove 'push-button #'push-button-around-advice)
 
+(defun notmuch-show-view-part ()
+  "View the MIME part containing point in an external viewer."
+  (interactive)
+  ;; Set mm-inlined-types to nil to force an external viewer
+  (let ((mm-inlined-types nil))
+    (notmuch-show-apply-to-current-part-handle #'mm-display-part)))
+
+(defun notmuch-show-apply-to-current-part-handle (fn &optional mime-type)
+  "Apply FN to an mm-handle for the part containing point.
+
+This ensures that the temporary buffer created for the mm-handle
+is destroyed when FN returns. If MIME-TYPE is given then force
+part to be treated as if it had that mime-type."
+  (let ((handle (notmuch-show-current-part-handle mime-type)))
+    ;; Emacs puts stdout/stderr into the calling buffer so we call
+    ;; it from a temp-buffer, unless notmuch-show-attachment-debug
+    ;; is non-nil, in which case we put it in " *notmuch-part*".
+    (unwind-protect
+	    (if notmuch-show-attachment-debug
+	        (with-current-buffer (generate-new-buffer " *notmuch-part*")
+	          (funcall fn handle))
+	      (with-temp-buffer
+	        (funcall fn handle)))
+      (kill-buffer (mm-handle-buffer handle)))))
+
+
+
+(defalias 'notmuch-open-mail-html-in-browser 'notmuch-show-view-part)
+
 (provide 'pen-notmuch)

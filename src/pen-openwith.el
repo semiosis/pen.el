@@ -1,4 +1,7 @@
 (require 'openwith)
+
+;; e:$EMACSD/pen.el/src/pen-find-file.el
+
 (setq openwith-associations '(
                               ("\\.mp4\\'" "pen-sps pen-win vp" (file))
                               ("\\.webm\\'" "pen-sps pen-win vp" (file))

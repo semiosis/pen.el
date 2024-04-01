@@ -66,6 +66,9 @@
                            dired-toggle-dumpd-dir
                            pen-sps-ranger
                            pen-sps-ncdu))
+
+(defset notmuch-show-mode-funcs '(notmuch-open-mail-html-in-browser))
+
 (defset magit-status-mode-funcs '(magit-section-cycle-diffs
                                   magit-dired-jump))
 (defset vimrc-mode-funcs '(vimhelp))
