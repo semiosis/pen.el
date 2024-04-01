@@ -1,5 +1,6 @@
 (require 'openwith)
 
+;; Alternatively:
 ;; e:$EMACSD/pen.el/src/pen-find-file.el
 
 (setq openwith-associations '(
