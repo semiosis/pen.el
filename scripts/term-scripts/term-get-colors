@@ -3,5 +3,7 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-IFS=";" read -a REPLY -s -t 0.25 -d "S" -p $'\e[?1;1;0S' >&2
+timeout=0.25
+
+IFS=";" read -a REPLY -s -t ${timeout} -d "S" -p $'\e[?1;1;0S' >&2
 [[ ${REPLY[1]} == "0" ]] && echo "${REPLY[2]}"

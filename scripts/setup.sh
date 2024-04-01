@@ -2315,3 +2315,11 @@ cd difftastic
 # https://invisible-island.net/xterm/xterm.html#download
 
 agi mtools
+
+(
+cd ~/repos
+git clone "https://github.com/mattn/go-sixel"
+cd go-sixel
+)
+
+go install github.com/mattn/go-sixel@latest

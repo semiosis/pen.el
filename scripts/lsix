@@ -6,6 +6,11 @@ export TTY
 test -f $HOME/local/bin/lsix && : "${bin:="$HOME/local/bin/lsix"}"
 test -f $HOME/repos/hackerb9/lsix/lsix && : "${bin:="$HOME/repos/hackerb9/lsix/lsix"}"
 
+# e:/root/repos/lsix/lsix
+
+export LSIX_FORCE_SIXEL_SUPPORT=yeah
+# export TERM=xterm
+
 test -f "$bin" || (
     # cd /root/repos
     cd "$(gc "https://github.com/hackerb9/lsix")"
