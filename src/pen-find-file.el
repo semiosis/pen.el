@@ -1,3 +1,6 @@
+;; Alternatively:
+;; e:$EMACSD/pen.el/src/pen-openwith.el
+
 (setq find-file-suppress-same-file-warnings t)
 
 ;; This is actually where dired handles opening files
