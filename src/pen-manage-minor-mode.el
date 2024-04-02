@@ -75,6 +75,9 @@
          ;; (on org-link-minor-mode)
          )
         
+        (prolog-mode
+         (on org-link-minor-mode))
+        
         (universal-sidecar-buffer-mode
          (on org-link-minor-mode))
 
