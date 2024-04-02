@@ -25,10 +25,10 @@ sed '/\/\/[^\/]*.[^\/]*\/\(.*\/\)*[^.#?/][^.#?/]\+\(#.*\|$\)/{s=\(#.*\|$\)=/\1=;
     sed '/\/www.schoolofhaskell.com/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/$//' | \
     sed '/\/www.metalevel.at/s/\/#/#/' | \
-    sed '/\/en.bitcoin.it/s/\/$//' | \
     sed '/\/.*\.github.io/s/\/$//' | \
     sed '/\/.*\.github.io/s/\/#.*//' | \
     sed '/wikipedia.org/s/\/$//' | \
+    sed '/cppreference.com/s/\/$//' | \
     sed '/wikipedia.org/s/\/#.*//' | \
     sed '/http:\/\/google/s/http:/https:/' | \
     sed '/https\?:\/\/www\.google\.com\/url?q=/s/https\?:\/\/www\.google\.com\/url?q=\(.*\)&sa=.*/\1/' | \

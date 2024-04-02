@@ -104,8 +104,8 @@ perlbookre="$(oci pen-els list-bible-book-titles-lines | pen-sort line-length | 
     # *? is the non-greedy *
     # https://www.oreilly.com/library/view/perl-cookbook/1565922433/ch06s16.html
     cat "$input_fp" | awk 1 |
-        sed 's/\(.\)\([0-9]\)\([A-Za-z]\)/\1\2\r\3/g' |
-        perl -ne "print $_ if s/.*?\\b($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/;" |
+        sed 's/ - /\n/g' |
+        perl -ne "print $_ if s/.*?\\b($perlbookre)\\b(\\.)?( ?[0-9][0-9-]*)([:.][0-9][0-9-]*)?.*/\\1\\2\\3\\4/i;" |
         sed '/^$/d'
 } | sed -e 's/\.$//' | {
     if test "$verses_only" = "y"; then

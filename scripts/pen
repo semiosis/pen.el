@@ -1523,6 +1523,7 @@ case "$sn" in
         show_banner=n
 
         # Attempting shutdown of Pen.el
+        in-pen sync-elpa-with-host
 
         if { ! inside-docker-p; } && docker-running-p; then
             set -- -e "(progn (pen-sn \"pen-shutdown\")(kill-emacs))"

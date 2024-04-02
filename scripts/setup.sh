@@ -2323,3 +2323,5 @@ cd go-sixel
 )
 
 go install github.com/mattn/go-sixel@latest
+
+e ia activities
