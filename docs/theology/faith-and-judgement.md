@@ -124,6 +124,10 @@ Work out (**katergazomai**) means here to perform your salvation by work (which 
 
 So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction.
 
+When we are believing in Jesus Christ's finished work and obeying Jesus, obeying His commandments, it is actually God who is working in us:
+
+> **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
+
 If a person serves Christ, this is not a dead works-based gospel, but is simply obeying the gospel. That person has been brought into obedience by the grace of God.
 
 > **II Peter 3:14-18** - Therefore, beloved, since you are waiting for these, be diligent to be found by him without spot or blemish, and at peace. And count the patience of our Lord as salvation, just as our beloved brother Paul also wrote to you according to the wisdom given him, as he does in all his letters when he speaks in them of these matters. There are some things in them that are hard to understand, which the ignorant and unstable twist to their own destruction, as they do the other Scriptures. You therefore, beloved, knowing this beforehand, take care that you are not carried away with the error of lawless people and lose your own stability. But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be the glory both now and to the day of eternity. Amen.
