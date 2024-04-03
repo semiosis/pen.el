@@ -85,7 +85,7 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-I conjecture that `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
+I conjecture that `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a 'my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-based' gospel. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
