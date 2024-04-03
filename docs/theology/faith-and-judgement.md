@@ -1676,7 +1676,9 @@ Likewise, the Holy Spirit is Almighty God.
 
 > **Matthew 3:16-17** - And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
 
-> **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on me, on him whom they have pierced, they shall mourn for him, as one mourns for an only child, and weep bitterly over him, as one weeps over a firstborn. (ESV)
+This quite clearly shows that Jesus Christ is Almighty God:
+
+> **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
 
 I affirm the Nicenee creed wholeheartedly:
 
@@ -5954,7 +5956,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     > **John 16:33** - I have said these things to you, that in me you may have peace.  In the world you will have tribulation.  But take heart; I have overcome the world.  (ESV)
     
-    > **Colossians 2:9-15** - For in him the whole fullness of deity dwells bodily, and you have been filled in him, who is the head of all rule and authority. In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross. He disarmed the rulers and authorities and put them to open shame, by triumphing over them in him.
+    > **Colossians 2:9-15** - For **in him the whole fullness of deity dwells bodily**, and you have been filled in him, who is the head of all rule and authority. In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross. He disarmed the rulers and authorities and put them to open shame, by triumphing over them in him.
     
     > **Colossians 2:20** - If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations—
     
@@ -11883,19 +11885,61 @@ We must walk in Jesus' commandments and believe that He came from God.
 
 One thing is for sure, Jesus is the only way to the Father.
 
-> **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me.
+> **John 14:6** - Jesus said to him, “I am the way, and the truth, and the life; no one comes to the Father but through Me. (NASB)
+
+> **Isaiah 48:16-17** - Draw near to me, hear this: from the beginning I have not spoken in secret, from the time it came to be I have been there. And now the Lord GOD has sent me, and his Spirit. Thus says the LORD, your Redeemer, the Holy One of Israel: I am the LORD your God, who teaches you to profit, who leads you in the way you should go. (ESV)
+
+> **Matthew 3:16-17** - And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+
+This quite clearly shows that Jesus Christ is Almighty God:
+
+> **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
 
 The Father abides in Jesus:
 
-> **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works.
+> **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
-Jesus abides in the Father:
+Jesus abides in the Father (and is in the bosom of the Father):
 
-> **John 1:18** - No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him.
+> **John 1:18** - No one has seen God at any time; the only begotten God who is in the bosom of the Father, He has explained Him. (NASB)
+
+Jesus Christ is at the Father's side (and has made Father God known):
+
+> **John 1:18** - No one has ever seen God; the only God, who is at the Father's side, he has made him known. (ESV)
 
 This says the Word was God, but it doesn't say the Word was the totality of the Father. We can be sure that in the beginning there was the Word and the Word was with God and the Word was God:
 
-> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV)
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV, NASB, KJV, BSB)
+
+In Christ the Godhead is present: simply, it means that in human nature/form of Jesus, that entails the human flesh/body, there dwells the entirety of divine perfection:
+
+> **Colossians 2:9-15** - For **in him the whole fullness of deity dwells bodily**, and you have been filled in him, who is the head of all rule and authority. In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. And you, who were dead in your trespasses and the uncircumcision of your flesh, God made alive together with him, having forgiven us all our trespasses, by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross. He disarmed the rulers and authorities and put them to open shame, by triumphing over them in him.
+
+The Word actually **became** flesh:
+
+> **John 1:14** - And **the Word became flesh and dwelt among us**, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
+
+> **Luke 24:39** - See my hands and my feet, that it is I myself. Touch me, and see. For a spirit does not have flesh and bones as you see that I have. (ESV)
+
+Thomas saw God in Jesus Christ, or Jesus Christ as God:
+
+> **John 20:28** - Thomas answered him, My Lord and my God! (ESV)
+
+It's very clear that there is some distinction between Father and Son:
+
+> **John 20:17** - Jesus said to her, Do not cling to me, for I have not yet ascended to the Father; but go to my brothers and say to them, I am ascending to my Father and your Father, to my God and your God. (ESV)
+
+But Jesus Christ is our Mediator:
+
+> **I Timothy 2:5** - For there is one God, and there is one mediator between God and men, the man Christ Jesus, (ESV)
+
+Jesus still refers to Father God as His God:
+
+> **Revelation of John 3:12** - The one who conquers, I will make him a pillar in the temple of my God. Never shall he go out of it, and I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down from my God out of heaven, and my own new name. (ESV)
+
+I think this really clears things up a little bit:
+
+> **Revelation of John 3:21** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
 
 > **John 16:32** - Behold, the hour is coming, indeed it has come, when you will be scattered, each to his own home, and will leave me alone. Yet I am not alone, for <ins>the Father is with me.</ins> (ESV)
 
@@ -11911,8 +11955,7 @@ The Father is with the Son, the Father is in the Son, and the Son in the Father:
 
 > **John 10:30** - I and the Father are one.
 
-The Father is not specifically the Son (Jesus Christ) but Jesus is the Word, and the Word is God.
-And Jesus came in the Father's name. God was revealed in Jesus Christ for us.
+The Father is not specifically the Son (Jesus Christ), at least in title, but Jesus is the Word, and the Word is God, and I think Jesus Christ is still the Father in the sense that Jesus Christ is in the Father, and the Father in the Son, but there still seems to be some distinction there between persons or titles, and to be honest, I'm just trying to rationalise this and understand how this fits together and don't presume to know everything with certainty. And Jesus came in the Father's name. God was revealed in Jesus Christ for us.
 
 
 ## God adopts children, fellow heirs with Christ
