@@ -2378,3 +2378,6 @@ org-tidy
 org-tag-beautify
 itail
 doct
+activities
+chemtable
+chembalance

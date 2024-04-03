@@ -2468,6 +2468,7 @@ May use to generate code from comments."
 (require 'pen-ov-highlight))
 (require 'pen-racket)
 (require 'pen-activities)
+(require 'pen-chemistry)
 ;; For building games, etc.
 (require 'pen-hypertext)
 (if (inside-docker-p)
