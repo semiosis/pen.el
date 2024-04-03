@@ -109,7 +109,7 @@ In my understanding, I consider all who are repentantly trusting in the Lord Jes
 
 We must also drop the old selfish self and allow Jesus to come in with the new obedient, loving self.
 
-Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important.
+Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
 
 #+BEGIN_QUOTE
   *Romans 6:1* - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For *if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his*. We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but *the life he lives he lives to God.* So you also must consider yourselves dead to sin and alive to God in Christ Jesus.
@@ -123,19 +123,69 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-I conjecture that =Obedience = Selfless love=. Nevertheless, where we fall short, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
+I conjecture that =Obedience = Selfless love= (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
 
-So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be true simultaneously, because people misconstrue Jesus' words to their own destruction.
+#+BEGIN_QUOTE
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *Philippians 2:12* - Therefore, my beloved, as you have *always obeyed*, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+#+END_QUOTE
+
+Let's see what the word *katergazomai* (the word for 'work out') means:
+
+[[https://biblehub.com/interlinear/philippians/2-12.htm][Philippians 2:12 (Interlinear)]]
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  5620      27       1473     2531     3842     5219            3361     5613     1722     3588     3952     1473
+  Hōste     agapētoi mou      kathōs   pantote  hypēkousate     mē       hōs      en       tē       parousia mou
+  Ὥστε  ,   ἀγαπητοί μου  ,   καθὼς    πάντοτε  ὑπηκούσατε  ,   μὴ       ὡς       ἐν       τῇ       παρουσίᾳ μου
+  Therefore beloved  of me    just as  always   you have obeyed not      as       in       the      presence of me
+  Conj      Adj-VMP  PPro-G1S Adv      Adv      V-AIA-2P        Adv      Adv      Prep     Art-DFS  N-DFS    PPro-G1S
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  3440     235     3568     4183     3123     1722     3588     666     1473     3326     5401     2532
+  monon    alla    nyn      pollō    mallon   en       tē       apousia mou      meta     phobou   kai
+  μόνον  , ἀλλὰ    νῦν      πολλῷ    μᾶλλον   ἐν       τῇ       ἀπουσίᾳ μου  ,   μετὰ     φόβου    καὶ
+  only     but     now      much     more     in       the      absence of me    with     fear     and
+  Adv      Conj    Adv      Adj-DNS  Adv      Prep     Art-DFS  N-DFS   PPro-G1S Prep     N-GMS    Conj
+#+END_SRC
+
+Work out (*katergazomai*) means here to perform your salvation by work (which has yet still been gifted to us, and the salvation which we are working is not the result of works):
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  5156      3588     1438        4991      2716
+  tromou    tēn      heautōn     sōtērian  katergazesthe
+  τρόμου    τὴν      ἑαυτῶν      σωτηρίαν  κατεργάζεσθε  .
+  trembling  -       your own    salvation work out
+  N-GMS     Art-AFS  RefPro-GM3P N-AFS     V-PMM/P-2P
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  2716  katergazomai  kat-er-gad'-zom-ahee
+
+   from 2596 and 2038; to work fully, i.e. accomplish; by implication, to
+   finish, fashion:--cause, to (deed), perform, work (out).
+   see GREEK for 2596
+   see GREEK for 2038
+#+END_SRC
+
+So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be *true simultaneously*, because people misconstrue Jesus' words to their own destruction.
+
+If a person serves Christ, this is not a dead works-based gospel, but is simply obeying the gospel. That person has been brought into obedience by the grace of God.
 
 #+BEGIN_QUOTE
   *II Peter 3:14-18* - Therefore, beloved, since you are waiting for these, be diligent to be found by him without spot or blemish, and at peace. And count the patience of our Lord as salvation, just as our beloved brother Paul also wrote to you according to the wisdom given him, as he does in all his letters when he speaks in them of these matters. There are some things in them that are hard to understand, which the ignorant and unstable twist to their own destruction, as they do the other Scriptures. You therefore, beloved, knowing this beforehand, take care that you are not carried away with the error of lawless people and lose your own stability. But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be the glory both now and to the day of eternity. Amen.
 #+END_QUOTE
 
 Therefore, I assert that there's no *eternal* security for those who are not willing to obey Jesus, or to turn away from their sin.
-But I believe that even believing in Jesus is an act of obedience. *If a person is trusting in Him when they die, they will live.*
+Also I conclude that obeying Jesus Christ is having faith in Him. Why then do people preach to stop 'working for God'?
+Even having faith in God through faith in Jesus is obedience according to =Romans 16:26=. *If a person is trusting in Him when they die, they will live.*
 
 #+BEGIN_QUOTE
-  *Romans 16:26* - but has now been disclosed and through the prophetic writings has been made known to all nations, according to _the command of the eternal God_, to bring about the *obedience of faith* — (ESV) 
+  *Romans 16:26* - but has now been disclosed and through the prophetic writings has been made known to all nations, according to _the command of the eternal God_, to bring about the *obedience of faith* — (ESV)
 #+END_QUOTE
 
 I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, _repentant and willing to obey (obedient),_ theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
@@ -147,6 +197,8 @@ And I assume that Jesus knows who those people are - He knows that they are His 
 And when they go through Jesus Christ, the door, they are saved.
 
 I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a _heart that follows Him_ - that they will be saved.
+
+I simply see no enmity between trusting God for justification through the finished work of the cross by Jesus Christ and trusting God by obeying Jesus Christ. I believe that is a false dichotomy.
 
 Christian love:
 - [[https://www.youtube.com/watch?v=ZHhVXgvVSks][Believing Loving and Obeying and abiding in the presence of the Holy Spirit - YouTube]]
@@ -198,7 +250,7 @@ Both robbers start off mocking Jesus but then one of the robbers has a change of
 #+BEGIN_QUOTE
   To be a Christian doesn't mean that we are without sin this side of heaven, but it does mean that we have a hatred for our own sin, that we are wrestling with the flesh that is still inside us even as Jesus is making us new, rather than being complacent over our sin.
 #+END_QUOTE
- 
+
 #+BEGIN_QUOTE
   *Romans 7:19-20* - For I do not do the good I want, but the evil I do not want is what I keep on doing. Now if I do what I do not want, it is no longer I who do it, but sin that dwells within me. (ESV)
 #+END_QUOTE
@@ -679,7 +731,7 @@ God provides the new heart, and God works through us:
 So to be saved a person must have an obedient heart, prepared for the good works which are prepared for us to walk in:
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-10* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
+  *Ephesians 2:8-10* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -913,7 +965,7 @@ God's commandment is to bring about the obedience of faith (having faith is in G
 So to be saved a person _must have an obedient heart, prepared for the good works which are prepared for us to walk in:_
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-10* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
+  *Ephesians 2:8-10* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -1410,7 +1462,7 @@ We have *always obeyed*, participating in the Spirit, having one mind, that of a
 We are saved through faith - it's not our own doing - it's not a *result* of works - the works are a gift:
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 Whoever trusts in Jesus Christ shouldn't perish, but they should have eternal life. We've just got to have faith in Jesus:
@@ -2742,8 +2794,14 @@ Baptism does save.
 #+END_QUOTE
 
 ** Obedience - A heart of obedience is the start of faith, and belief is the start of continued obedience
+*** Continued revelation comes from having a heart of obedience towards God
 #+BEGIN_QUOTE
   *John 7:17* -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. (ESV)
+#+END_QUOTE
+
+*** God's commanded is for everyone to come to the obedience of having faith in Him through Jesus Christ
+#+BEGIN_QUOTE
+  *Romans 16:26* - but has now been disclosed and through the prophetic writings has been made known to all nations, according to _the command of the eternal God_, to bring about the *obedience of faith* — (ESV)
 #+END_QUOTE
 
 *** Fear of the Lord
@@ -4417,7 +4475,7 @@ For example, Noah's works of building the ark was given to Him by God. God even 
 Salvation is the gift, and faith implies an obedient heart. Works can be dead works when they're not done in faith. Faith is what justifies. But faith works. Faith requires obedience to God. Faithless works do not justify:
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 With an obedient heart, a person will receive revelation as they hear the teaching of Jesus.
@@ -4991,7 +5049,7 @@ And I feel like we just need to start obeying God and obeying Jesus in order to 
 Salvation is the gift, and faith implies an obedient heart. Works can be dead works when they're not done in faith. Faith is what justifies. But faith works. Faith requires obedience to God. Faithless works do not justify:
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 **** The obedience of faith
@@ -6709,7 +6767,7 @@ Thank You God.
 And I follow pursue the commandments by faith and not works.
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 A person must be at least willing to do His will - obedience is the essence of faith:
@@ -7297,7 +7355,7 @@ Saved by grace through faith.
 I think a person needs *some* faith to be saved, and faith works. Salvation has to be accepted.
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -8826,7 +8884,7 @@ Also the Kingdom of Heaven, I think is from Heaven to Earth.
 Salvation is the gift. Works can be dead works when they're not done in faith. Therefore works don't save.
 
 #+BEGIN_QUOTE
-  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+  *Ephesians 2:8-9* - For *by grace you have been saved through faith.* And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 #+END_QUOTE
 
 A person must be at least willing to do His will - obedience is the essence of faith:
@@ -14123,7 +14181,7 @@ Even our bodies will be raised imperishable:
 
 ** Commandments of Father God in the New Testament:
 #+BEGIN_QUOTE
-  *Romans 16:26* - but has now been disclosed and through the prophetic writings has been made known to all nations, according to _the command of the eternal God_, to bring about the *obedience of faith* — (ESV) 
+  *Romans 16:26* - but has now been disclosed and through the prophetic writings has been made known to all nations, according to _the command of the eternal God_, to bring about the *obedience of faith* — (ESV)
 #+END_QUOTE
 
 Listen to Jesus and believe Jesus is God's Son:
