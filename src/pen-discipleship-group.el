@@ -275,8 +275,11 @@
 (defun d-group-get-weekly-reading-nt (&optional week)
   (d-group-get-weekly-reading week d-group-weekly-readings-nt260))
 
-(defun d-group-get-weekly-reading-ot (&optional week)
+(defun d-group-get-weekly-reading-fnd (&optional week)
   (d-group-get-weekly-reading week d-group-weekly-readings-foundations260))
+
+(defun d-group-get-weekly-reading-ot (&optional week)
+  (d-group-get-weekly-reading week d-group-weekly-readings-ot260))
 
 (defset d-group-weekly-scripture-memory-ot260
         '((1 . ("Psalm 1:1-2"))
@@ -400,9 +403,10 @@
          (-zip-lists-fill ""
                           (str2lines (d-group-get-weekly-scripture-memory week))
                           (str2lines (d-group-get-weekly-reading-nt week))
+                          (str2lines (d-group-get-weekly-reading-fnd week))
                           (str2lines (d-group-get-weekly-reading-ot week)))
          collect
-         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " |")))
+         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " | " (d-group-linkify-bible-verse-ref (fourth row)) " |")))
   ;; (pen-yas-expand-string "| [[sh:bible-read-passage nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:bible-read-passage nasb `(d-group-get-weekly-reading)`]] |")
   )
 
