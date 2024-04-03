@@ -132,11 +132,28 @@ If a person serves Christ, this is not a dead works-based gospel, but is simply 
 
 > **II Peter 3:14-18** - Therefore, beloved, since you are waiting for these, be diligent to be found by him without spot or blemish, and at peace. And count the patience of our Lord as salvation, just as our beloved brother Paul also wrote to you according to the wisdom given him, as he does in all his letters when he speaks in them of these matters. There are some things in them that are hard to understand, which the ignorant and unstable twist to their own destruction, as they do the other Scriptures. You therefore, beloved, knowing this beforehand, take care that you are not carried away with the error of lawless people and lose your own stability. But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be the glory both now and to the day of eternity. Amen.
 
-Therefore, I assert that there's no **eternal** security for those who are not willing to obey Jesus, or to turn away from their sin.
-Also I conclude that obeying Jesus Christ is having faith in Him. Why then do people preach to stop 'working for God'?
+We are supposed to then proclaim the excellencies of Him who has called us out of darkness into His marvelous light:
+
+> **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may <ins>proclaim the excellencies of him who called you out of darkness into his marvelous light.</ins> (ESV)
+
+God is amazing. Because He made me born-again
+so I could come into a relationship with Him
+where I can truthfully say that I was stuck in
+my sin and God broke that sin off me through
+making me born-again, and has given me a new
+Spirit so I can walk in obedience to Him.
+
+It's only possible through what Jesus Christ
+has achieved for us on the cross.
+
+[Chris Tomlin - Holy Forever {Lyric Video} - YouTube](https://youtu.be/IkHgxKemCRk?list=RDf2oxGYpuLkw&t=94)
+
 Even having faith in God through faith in Jesus is obedience according to `Romans 16:26`. **If a person is trusting in Him when they die, they will live.**
 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
+
+Therefore, I assert that there's no **eternal** security for those who are not willing to obey Jesus, or to turn away from their sin.
+Also I conclude that obeying Jesus Christ is having faith in Him. Why then do people preach to stop 'working for God'?
 
 I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
 
