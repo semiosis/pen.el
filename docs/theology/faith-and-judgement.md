@@ -12926,5 +12926,5 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 
 > -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
--   **Download:** [PDF](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.pdf)
+-   **Download:** [PDF](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.pdf), [TEXT](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt), [MARKDOWN](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.md), [ORG](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.org)
 
