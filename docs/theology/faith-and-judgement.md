@@ -89,7 +89,27 @@ I conjecture that `Obedience = Selfless love` (no longer serving yourself but se
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
-> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+And I wont stop following Jesus Christ until I know Him as personally as possible - I want His thoughts running through my mind like Father God's thoughts ran through His. Anything less than that and I am unsatisfied.
+
+Jesus knows us and we know Jesus:
+
+> **John 10:14** - I am the good shepherd. I know my own and my own know me, (ESV)
+
+We must be keeping Jesus' commandments for us to be sure that we have come to know Him:
+
+> **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
+
+Jesus commands us to take His yoke (obey Him) and learn from Him (believe Him):
+
+> **Matthew 11:29** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. (ESV)
+
+So receive the words of Jesus and the Apostles to know the thoughts of God inside your own mind:
+
+> **I Corinthians 2:11-14** - For <ins>who knows a person's thoughts except the spirit of that person,</ins> which is in him? So also <ins>no one comprehends the thoughts of God except the Spirit of God.</ins> Now **we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God.** And <ins>we impart this in words not taught by human wisdom but taught by the Spirit, interpreting spiritual truths to those who are spiritual.</ins> The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+We need to perform our salvation in obedience to God:
+
+> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
 Let's see what the word **katergazomai** (the word for 'work out') means:
 
@@ -946,7 +966,7 @@ The good news must be united by obedient faith (putting Jesus' words into action
 
 > **Hebrews 4:1-2** - Therefore, while the promise of entering his rest still stands, let us fear lest any of you should seem to have failed to reach it. For good news came to us just as to them, but the message they heard did not benefit them, because they were not united by faith with those who listened. (ESV)
 
-> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (katergazomai) your own salvation with fear and trembling, (ESV)
 
 I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'. So someone must be a both a believer and a follower of Jesus.
 
@@ -1246,7 +1266,7 @@ Notice how just after **John 3:16** it says, "whoever <ins>does what is true com
 
 We have **always obeyed** - God works through us:
 
-> **Philippians 2:12-13** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
+> **Philippians 2:12-13** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (katergazomai) your own salvation with fear and trembling, for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
 We must honour Jesus Christ:
 
@@ -3347,7 +3367,7 @@ True faith is always obedient; faith is always prepared to obey more:
 
 You can't even have faith in God without obeying Jesus because the one who has faith in God has already obeyed Jesus whether they know about `Mark 11:22 or not`. So it's not a dead work.
 
-> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, (ESV)
+> **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (katergazomai) your own salvation with fear and trembling, (ESV)
 
 And justifying faith is having obedient faith in God with regards to the promise given to Abraham.
 
