@@ -549,7 +549,6 @@ There are some doctrines that are so essential that to deny them is to not be a 
 
 > **I John 4:2** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, (ESV)
 
-It's not enough to be saved just by believing that some things are true.
 Let's not focus on minimums, but maximums:
 
 [John Piper: How Much Error Can I Believe and Still Be Saved? - YouTube](https://www.youtube.com/watch?v=MMBn3I-Rvi0)
@@ -694,7 +693,7 @@ Actually, at some stage I think we have to just rest in the knowledge that it's 
 
 > **Hebrews 4:10** - for whoever has entered God's rest has also rested from his works as God did from his. (ESV)
 
-It's quite confusing sometimes. But God is the justifier, and God is the one who decides who is **in Christ.**
+God is the justifier, and God is the one who decides who is **in Christ.**
 
 > **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
@@ -721,6 +720,8 @@ I believe that what this says is that at the point Jesus knows you listen to His
 The righteousness that comes through having faith in Jesus Christ - faith (not mere belief) is required to have the righteousness - to be found in Jesus:
 
 > **Philippians 3:9** - and be found in him, not having a righteousness of my own that comes from the law, but that which **comes through faith in Christ**, the righteousness from God that **depends** on faith— (ESV)
+
+Faith is both believing and obedient, even faith in the heart:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
