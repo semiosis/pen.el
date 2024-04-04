@@ -67,7 +67,12 @@ This was also the case with Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
+And through our obedience to Jesus we are saved. The Bible is clear - a works-based gospel based on God working through us saves:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
 Therefore, we teach people to both believe and to obey the Gospel. Both are required. We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us.
+This is still totally by grace because we needed Jesus to obey God perfectly first! We must still obey Jesus.
 
 God makes us born-again:
 
