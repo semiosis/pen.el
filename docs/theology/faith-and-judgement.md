@@ -57,9 +57,17 @@ That's because God gives us a new spirit to obey Him:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
-What God does by way of initiative and what we do as a response is inextricably woven together:
+What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
 [Born Again - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
+
+> **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
+
+This was also the case with Jesus:
+
+> **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
+
+Therefore, we teach people to both believe and to obey the Gospel. Both are required. We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us.
 
 God makes us born-again:
 
@@ -69,11 +77,13 @@ We must love Jesus:
 
 > **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
 
-In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God the Son, for their salvation, if they are willing <ins>turn to and obey Him</ins>, **if Father God puts them in**, obediently trusting Jesus Christ who is their life, to be <ins>in Christ Jesus,</ins> no matter what else I say in this document. I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
+In my understanding, I consider all who are repentantly trusting in the Lord Jesus Christ, who is God the Son, for their salvation, if they are willing <ins>turn to and obey Him</ins>, **if Father God puts them in**, obediently trusting Jesus Christ who is their life, to be <ins>in Christ Jesus,</ins> no matter what else I say in this document.
+
+I have been just trying to figure out my theology. One God, three persons, Father, Son and Holy Spirit. I don't have the say though. God puts a person in. AMEN!!
 
 > **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
-We must also drop the old selfish self and allow Jesus to come in with the new obedient, loving self.
+We must drop the old selfish self and allow Jesus to come in with the new obediently loving self.
 
 Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
 
@@ -85,7 +95,11 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-I conjecture that `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a 'my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-based' gospel. So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
+I conjecture that `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel. No true Christian would deny that God works in us to save us.
+
+> **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
+
+So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
@@ -2025,30 +2039,33 @@ We must obey! This obedience is being led by the Spirit.
     > **Revelation of John 21:27** - But nothing unclean will ever enter it, nor anyone who does what is detestable or false, but only those who are written in the Lamb's book of life.
     
     > **Revelation of John 22:14** - Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. (ESV)
+    
+    > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
-7.  We must be wanting to be cleaned of sin
 
-    We must look upon Jesus and stop sexual immorality and stop idolatry. The stories mentioned here are examples for us to follow:
-    
-    > **I Corinthians 10:1-7** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. Nevertheless, <ins>with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were;</ins> as it is written, The people sat down to eat and drink and rose up to play.
-    
-    We must take heed of this, because we don't want to **fall**:
-    
-    > **I Corinthians 10:8-13**- We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. Therefore <ins>let anyone who thinks that he stands take heed lest he fall.</ins> No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.
-    
-    > **II Peter 2:2-4** - And many will follow their sensuality, and because of them <ins>the way of truth</ins> will be blasphemed. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep. For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment;
-    
-    > **II Peter 2:19-20** - They promise them freedom, but they themselves are slaves of corruption. For <ins>whatever overcomes a person, to that he is enslaved</ins>. For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.
-    
-    Therefore, the way of truth involves following Jesus and putting a stop to sin.
-    
-    I agree with Billy Graham:
-    
-    -   <https://www.youtube.com/watch?v=jCrhHjQgVhA>
-    
-    > **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death." (ESV)
+### We must be wanting to be cleaned of sin
 
-8.  We should put the ignorant to silence through doing good
+We must look upon Jesus and stop sexual immorality and stop idolatry. The stories mentioned here are examples for us to follow:
+
+> **I Corinthians 10:1-7** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. Nevertheless, <ins>with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were;</ins> as it is written, The people sat down to eat and drink and rose up to play.
+
+We must take heed of this, because we don't want to **fall**:
+
+> **I Corinthians 10:8-13**- We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. Therefore <ins>let anyone who thinks that he stands take heed lest he fall.</ins> No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.
+
+> **II Peter 2:2-4** - And many will follow their sensuality, and because of them <ins>the way of truth</ins> will be blasphemed. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep. For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment;
+
+> **II Peter 2:19-20** - They promise them freedom, but they themselves are slaves of corruption. For <ins>whatever overcomes a person, to that he is enslaved</ins>. For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.
+
+Therefore, the way of truth involves following Jesus and putting a stop to sin.
+
+I agree with Billy Graham:
+
+-   <https://www.youtube.com/watch?v=jCrhHjQgVhA>
+
+> **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death." (ESV)
+
+1.  We should put the ignorant to silence through doing good
 
     > **I Peter 2:15** - For this is the will of God, that by doing good you should put to silence the ignorance of foolish people.
     
