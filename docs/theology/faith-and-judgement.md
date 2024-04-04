@@ -37,6 +37,8 @@ A new creation lives for Christ:
 
 > **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
 
+> **Matthew 20:27-28** - and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+
 We must be in Christ Jesus. Those who have been born-again have become obedient to Jesus Christ. We must be born-again. This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
 
 > **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
@@ -339,6 +341,8 @@ Jesus is the Word. The world was made through Jesus:
 Jesus is the divinely appointed servant of God:
 
 > **Isaiah 53:4-6** - Surely he has borne our griefs and carried our sorrows; yet we esteemed him stricken, smitten by God, and afflicted. But he was wounded for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his stripes we are healed. All we like sheep have gone astray; we have turned every one to his own way; and the Lord has laid on him the iniquity of us all. (ESV)
+
+> **Matthew 20:27-28** - and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
 
 He's the image of God:
 
