@@ -100,7 +100,7 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-I conjecture that `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel. No true Christian would deny that God works in us to save us.
+I conjecture that, effectively, `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel. No true Christian would deny that God works in us to save us.
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
 
@@ -192,7 +192,14 @@ Even having faith in God through faith in Jesus is obedience according to `Roman
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
 
 Therefore, I assert that there's no **eternal** security for those who are not willing to obey Jesus, or to turn away from their sin.
-Also I conclude that obeying Jesus Christ is having faith in Him. Why then do people preach to stop 'working for God'?
+
+> **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
+
+Also I conclude that obeying Jesus Christ is having faith in Him.
+
+Why then do people preach to stop 'working for God'? The problem isn't work, but that work not done in faith is sin.
+Work being done by God in us to sanctify us and bring us everlasting life **is** work done in faith.
+So the problem isn't work (even work relating to salvation) but the problem is work that is not done in faith (i.e. dead work).
 
 I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
 
@@ -805,9 +812,23 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 
 
 <tr>
+<td class="org-left">John 20:31</td>
+<td class="org-left">by believing you may have life in his name.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
 <td class="org-left">Romans 6:22</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">you have been set free from sin and have become slaves of God</td>
+</tr>
+
+
+<tr>
+<td class="org-left">John 5:24</td>
+<td class="org-left">whoever hears my word and believes him who sent me has eternal life</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
@@ -819,9 +840,21 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 </tbody>
 </table>
 
+The drink is to believe that Jesus is the Christ (Messiah), the Son of God, who has come into the world:
+
 > **John 4:10-56** - Jesus answered her, If you knew the gift of God, and who it is that is saying to you, Give me a drink, you would have asked him, and he would have given you living water. Jesus said to her, Everyone who drinks of this water will be thirsty again, but whoever drinks of the water that I will give him will never be thirsty forever. The water that I will give him will become in him a spring of water welling up to eternal life. So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day. For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. (ESV)
 
-> **John 7:37** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. (ESV)
+This belief is a free gift which has to be received in faith (you have to believe it):
+
+> **John 7:37-38** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water. (ESV)
+
+God wants to bring people to the obedience of faith. We have to hear Jesus' word and believe God who sent Him - we have to believe what God has told Jesus to tell us:
+
+> **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+Therefore, I believe that believing Jesus is the Christ (Messiah), the Son of God, who has come into the world, is God's gift to us and it is a very easy to receive (low barrier to entry) act of obedience to Him:
+
+> **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to the command of the eternal God, to bring about the **obedience of faith** — (ESV)
 
 We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
 
@@ -906,7 +939,7 @@ Abraham was <ins>justified when He believed with an obedient heart</ins> but fai
 
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
 
-Without an obedient heart the so-called belief <ins>doesn't qualify as belief.</ins> Anyone who claims to have faith in Jesus, yet does not obey Him is a liar:
+I'm going out on a limb when I say that without an obedient heart the so-called belief <ins>doesn't qualify as belief:</ins>
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
@@ -923,6 +956,10 @@ So to be saved a person <ins>must have an obedient heart, prepared for the good 
 Abraham believed and obeyed:
 
 > **Genesis 26:4-5** - I will multiply your offspring as the stars of heaven and will give to your offspring all these lands. And in your offspring all the nations of the earth shall be blessed, because Abraham obeyed my voice and kept my charge, my commandments, my statutes, and my laws. (ESV)
+
+One of the criminals crucified next to Jesus came to the obedience of faith and obeyed the gospel:
+
+> **Luke 23:39-43** - One of the criminals who were hanged railed at him, saying, Are you not the Christ? Save yourself and us! But the other rebuked him, saying, Do you not fear God, since you are under the same sentence of condemnation? And we indeed justly, for we are receiving the due reward of our deeds; but this man has done nothing wrong. And he said, Jesus, remember me when you come into your kingdom. And he said to him, Truly, I say to you, today you will be with me in Paradise. (ESV)
 
 In this way we must have faith in God the Father of Jesus Christ, and believe and obey Jesus because God commanded it.
 
