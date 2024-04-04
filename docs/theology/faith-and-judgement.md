@@ -477,6 +477,11 @@ The knowledge comes from having obeyed God's voice. Love becomes perfected in us
 > **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
 
 
+### We are bought with the precious blood of Christ and we should be obedient to God
+
+> **I Peter 1:17-19** - And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
+
 ### Eternal salvation goes to those who obey Him
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
@@ -803,6 +808,13 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 <td class="org-left">Romans 6:22</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">you have been set free from sin and have become slaves of God</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Hebrews 5:9</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">eternal salvation to <ins>all who obey him,</ins></td>
 </tr>
 </tbody>
 </table>
@@ -1643,7 +1655,7 @@ I accept that I need Jesus to have mercy on me. Because my own righteousness isn
 
 > **Luke 18:15-17** - Now they were bringing even infants to him that he might touch them. And when the disciples saw it, they rebuked them. But Jesus called them to him, saying, Let the children come to me, and do not hinder them, for to such belongs the kingdom of God. Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it.
 
-And I'm still trusting and having faith in Jesus Christ even up until now:
+And I'm still trusting and having faith in Jesus Christ even up until now. So while through obedience to Jesus we are saved, Jesus is still the source of that salvation:
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
 
