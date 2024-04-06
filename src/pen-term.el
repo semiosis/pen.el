@@ -598,7 +598,7 @@ without any interpretation."
 (defun tm-send-keys-literal (keys)
   (interactive "P")
   (pen-sn (concat "tmux send-keys -l " (pen-q keys)) nil nil nil t))
-(defalias 'pen-tsl 'pen-tm-send-keys-literal)
+(defalias 'pen-tsl 'tm-send-keys-literal)
 
 (defun tm-send-keys (keys)
   (interactive "P")

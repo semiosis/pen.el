@@ -213,6 +213,10 @@ PATH is the sexp to evaluate, as a string."
   "Run sps `CMD' in pen."
   (pen-sps (concat "pen sh " cmd)))
 
+(org-add-link-type "ekm" 'follow-ekm-link)
+(defun follow-ekm-link (cmd)
+  (ekm cmd))
+
 (org-add-link-type "yt" 'follow-yt-link)
 (defun follow-yt-link (cmd)
   "Run pen-sps `CMD'."

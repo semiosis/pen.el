@@ -211,8 +211,8 @@
   (switch-to-buffer "*scratch*")
   (with-current-buffer "*scratch*"
     (call-interactively 'kmacro-start-macro)
-    (tsl s)
-    (sleep-for-for-for 1)
+    (pen-tsl s)
+    (sleep-for 1)
     (call-interactively 'kmacro-end-macro))
 
   (last-kbd-macro-string))

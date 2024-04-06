@@ -378,6 +378,7 @@ Be mindful of quoting arguments correctly."
 (require 'pen-apps)
 (require 'pen-kanban)
 (require 'pen-network)
+(require 'pen-kmacro)
 
 ;; Not sure I need the following in pen.el
 ;; Might be fine to just have them in init.el only
@@ -2158,6 +2159,7 @@ But use the results-analyser."
        (eval `(pf-generic-completion-50-tokens/1 preceding-text ,@args))))))
 
 (defun ekm (binding)
+  (interactive (list (read-string-hist "ekm: ")))
   (let ((fun (key-binding (kbd binding))))
     (if fun
         (call-interactively fun)
