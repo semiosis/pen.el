@@ -47,6 +47,8 @@ A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesu
 
 > **Galatians 6:15** - For neither <ins>circumcision counts for anything, nor uncircumcision,</ins> but **a new creation.** (ESV)
 
+[Steve Apirana - Born Again - YouTube](https://www.youtube.com/watch?v=WuQ_IhzVl1A)
+
 Out with the old selfish self and in with the new selflessly loving self:
 
 > **Galatians 5:6** - For in Christ Jesus <ins>neither circumcision nor uncircumcision counts for anything,</ins> but only **faith working through love.** (ESV)
@@ -61,7 +63,7 @@ That's because God gives us a new spirit to obey Him:
 
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
-[Born Again - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
+[Born Again - Alistair Begg, Parkside Church - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
