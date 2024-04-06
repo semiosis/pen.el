@@ -102,7 +102,9 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-I conjecture that, effectively, `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel. No true Christian would deny that God works in us to save us.
+> I conjecture that, effectively, `Obedience = Selfless love` (no longer serving yourself but serving Christ). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel.
+
+No true Christian would deny that God works in us to save us.
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
 
@@ -203,15 +205,15 @@ Why then do people preach to stop 'working for God'? The problem isn't work, but
 Work being done by God in us to sanctify us and bring us everlasting life **is** work done in faith.
 So the problem isn't work (even work relating to salvation) but the problem is work that is not done in faith (i.e. dead work).
 
-I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
+> I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
 
 [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
 
-At the stage they trust in Jesus, they may have no work but I believe at that stage they are justified, when in their heart is obedient, trusting, believing faith in Christ who is their life. But I'm not the one to justify them, God is.
-And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
-And when they go through Jesus Christ, the door, they are saved.
-
-I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a <ins>heart that follows Him</ins> - that they will be saved.
+> At the stage they trust in Jesus, they may have no work but I believe at that stage they are justified, when in their heart is obedient, trusting, believing faith in Christ who is their life. But I'm not the one to justify them, God is.
+> And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
+> And when they go through Jesus Christ, the door, they are saved.
+> 
+> I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a <ins>heart that follows Him</ins> - that they will be saved.
 
 I simply see no enmity between trusting God for justification through the finished work of the cross by Jesus Christ and trusting God by obeying Jesus Christ. I believe that is a false dichotomy.
 
@@ -1241,7 +1243,7 @@ It's going from disobedience to God (as Adam was disobedient) to obedience to Go
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to obedience—by word and deed,
 
-> **I Corinthians 7:19** - For neither circumcision counts for anything nor uncircumcision, but <ins>keeping the commandments of God.</ins> (ESV)
+> **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
 
 Faith works through love; we must be like Jesus - exercising sacrificial, merciful love. The term 'new creature' is used in Galatians 6 after saying we must 'put sin to death and do good', sowing to the spirit and not to the flesh.
 Sowing to the Spirit is obediently following Jesus:
@@ -1504,7 +1506,7 @@ This says Father God gives **the Holy Spirit** to His children. Then we should s
 
 Who receives **the Holy Spirit**? The ones who obey God!
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -1820,6 +1822,10 @@ Jesus knows Father God, and Jesus keeps His word. Likewise, we must follow Jesus
 Jesus is One with Almighty God and their will is in perfect alignment.
 
 > **John 10:30** - I and the Father are one.
+
+Father God keeps us in His name so that we may be one with Them:
+
+> **John 17:10-11** - All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>. And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
 
 By posing the question, Jesus doesn't deny that he is good:
 
@@ -2453,7 +2459,7 @@ Faith involves obeying Jesus Christ:
 
 > **I John 5:3-4** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -3021,7 +3027,7 @@ Eternal judgement:
 Luke writes that Peter says **the Holy Spirit** goes to those who obey Jesus.
 If the book of Acts is finished after Paul went to Galatia, then it is in knowledge of the letter to the Galatians, where Paul says the promised Spirit is received through faith.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -3448,7 +3454,7 @@ So the point I'm trying to make is that the free gift of **the Holy Spirit** is 
 
 Therefore I still think there's a false dichotomy between faith and works - because obedience is intrinsic to faith, but the gift of **the Holy Spirit** remains a completely free gift which is <ins>received through faith</ins> and that **merit** by works of righteousness is not the reason **why** it's given to us, but nevertheless, <ins>**the Holy Spirit** is given to those who obey Him.</ins>
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -4039,7 +4045,7 @@ You can't have faith without obedience.
 
 [Keith Green - To Obey Is Better Than Sacrifice (live)](https://youtu.be/TzWyZxlwGKI?list=RDz7oCa9BvO9g&t=98)
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -5294,7 +5300,7 @@ If we teach others to annul even the least of the commandments and annul them ou
 
 > **Acts 8:18-21** - Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive **the Holy Spirit**.  But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money!  You have neither part nor lot in this matter, for your heart is not right before God.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
 
@@ -6288,7 +6294,7 @@ We must then believe what is said in the Holy Scriptures and trust it and obey i
 
 The Holy Spirit goes to those who obey God, and causes the person to walk in God's precepts - stopping lying, stealing, coveting, idolizing, cheating, etc.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 Faith involves:
 
@@ -6437,7 +6443,7 @@ To follow the law by faith, I think, is to not lie, commit adultery, idolize, et
 
 This is the key, I think, to following the law by faith: **praise from God and not men**.
 
-> **Romans 2:29** - But he is a Jew who is one inwardly; and circumcision is that which is of the heart, by the Spirit, not by the letter; and his praise is not from men, but from God.
+> **Romans 2:29** - But he is a Jew who is one inwardly; and **circumcision is that which is of the heart, by the Spirit**, not by the letter; and his praise is not from men, but from God.
 
 > **Luke 16:15-17** - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God.  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
 
@@ -7239,7 +7245,7 @@ Please God, give me the righteousness required to enter the kingdom.
 
 It is the sovereign work of God to make someone born-again of the Spirit, but the Apostles say **the Holy Spirit** is given to those who believe in / obey him:
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -9848,7 +9854,7 @@ Not just by hearing but by hearing with faith.
 
 ## Faith requires obedience
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **\*the Holy Spirit**, whom God has given to those who obey him\*. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -9886,7 +9892,7 @@ An indicator of the ones who are saved is that they have remorse for their past 
 
 > **Ezekiel 16:58-63** - You bear the penalty of your lewdness and your abominations, declares the Lord.  For thus says the Lord God: I will deal with you as you have done, you who have despised the oath in breaking the covenant, yet I will remember my covenant with you in the days of your youth, and I will establish for you an **everlasting covenant**.  Then you will <ins>remember your ways and be ashamed</ins> when you take your sisters, both your elder and your younger, and I give them to you as daughters, but not on account of the covenant with you.  I will establish my covenant with you, and <ins>you shall know that I am the Lord</ins>, that you may remember and be confounded, and never open your mouth again because of your shame, when I atone for you for all that you have done, declares the Lord God.
 
-> **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people. And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+> **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
 
 God gives the Spirit to help keep the commandments. When she says the gospel is loving your neighbour, she is actually speaking part of the gospel. In the way that the man on the cross next to Jesus also spoke part of the full gospel message. They deserve the punishment but Jesus has done no wrong.
 
@@ -9929,7 +9935,11 @@ We follow them in faith.
 
     <https://web.archive.org/web/20220703044748/https://mullikine.github.io/posts/the-tapestry-of-truth/>
     
-    > **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people. And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+    > **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+    
+    > **Romans 2:29** - But he is a Jew who is one inwardly; and **circumcision is that which is of the heart, by the Spirit**, not by the letter; and his praise is not from men, but from God.
+    
+    > **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
 
 4.  Baptised in **the Holy Spirit**
 
@@ -9957,7 +9967,7 @@ We follow them in faith.
 
 ## New covenant
 
-> **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people. And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+> **Hebrews 8:10-13** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
 
 Covenants require faithfulness between both parties, but we are able to move on from dead works and focus more on faith towards God, and serving God now.
 
@@ -12487,6 +12497,8 @@ Jesus glorifies us by working through us to do God's work which also glorifies J
 
 > **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
 
+> **John 17:10-11** - All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>. And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
+
 The Spirit whom those who have faith in Jesus receive works through us:
 
 > **John 7:39** - Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified.
@@ -12497,7 +12509,7 @@ Jesus glorified God by accomplishing the work that God gave Him - Jesus obeyed G
 
 Likewise, we must obey God, and obey God by obeying Jesus, and being sanctified in the Truth. By having faith in Jesus and trusting in the Truth, and obeying, we are cleaned, transformed and made to glorify God:
 
-> **John 17:8-26** - For I have given them the words that you gave me, and they have received them and have come to know in truth that I came from you; and they have believed that you sent me.  I am praying for them. I am not praying for the world but for those whom you have given me, for they are yours.  All mine are yours, and yours are mine, and I am glorified in them.  And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me. I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled.  But now I am coming to you, and these things I speak in the world, that they may have my joy fulfilled in themselves.  I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world.  I do not ask that you take them out of the world, but that you keep them from the evil one.  They are not of the world, just as I am not of the world.  Sanctify them in the truth; your word is truth.  As you sent me into the world, so I have sent them into the world.  And for their sake I consecrate myself, that they also may be sanctified in truth.  I do not ask for these only, but also for those who will believe in me through their word, that they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.  The glory that you have given me I have given to them, that they may be one even as we are one, I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me.  Father, I desire that they also, whom you have given me, may be with me where I am, to see my glory that you have given me because you loved me before the foundation of the world.  O righteous Father, even though the world does not know you, I know you, and these know that you have sent me.  I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.
+> **John 17:8-26** - For I have given them the words that you gave me, and they have received them and have come to know in truth that I came from you; and they have believed that you sent me.  I am praying for them. I am not praying for the world but for those whom you have given me, for they are yours.  All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>.  And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me. I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled.  But now I am coming to you, and these things I speak in the world, that they may have my joy fulfilled in themselves.  I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world.  I do not ask that you take them out of the world, but that you keep them from the evil one.  They are not of the world, just as I am not of the world.  Sanctify them in the truth; your word is truth.  As you sent me into the world, so I have sent them into the world.  And for their sake I consecrate myself, that they also may be sanctified in truth.  I do not ask for these only, but also for those who will believe in me through their word, that they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.  The glory that you have given me I have given to them, that they may be one even as we are one, I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me.  Father, I desire that they also, whom you have given me, may be with me where I am, to see my glory that you have given me because you loved me before the foundation of the world.  O righteous Father, even though the world does not know you, I know you, and these know that you have sent me.  I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.
 
 > **II Thessalonians 1:10** - when he comes on that day to be glorified in his saints, and to be marveled at among all who have believed, because our testimony to you was believed.
 
@@ -12657,7 +12669,7 @@ Jesus is glorified in us - our glory is His glory because we obey Him and show J
 
 Jesus is glorified in us.
 
-> **John 17:10** - All mine are yours, and yours are mine, and I am glorified in them. (ESV)
+> **John 17:10** - All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>. (ESV)
 
 Jesus accomplished His work.
 we must accomplish our work.
