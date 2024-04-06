@@ -1108,6 +1108,8 @@ True sonship is required to remain forever:
 
 > **John 8:36** - So if the Son sets you free, you will be free indeed. (ESV)
 
+> **Galatians 4:4-9** - But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons. And because you are sons, God has <ins>sent the Spirit of his Son into our hearts, crying, Abba! Father!</ins> So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? (ESV)
+
 But we must be in Christ Jesus:
 
 > **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
@@ -1926,6 +1928,10 @@ Jesus proceeded forth from Father God, and returned to Father God:
 Jesus Christ is with us in Spirit:
 
 > **Matthew 28:18-20** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
+
+Jesus' Spirit may be inside us!
+
+> **Galatians 4:4-9** - But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons. And because you are sons, God has <ins>sent the Spirit of his Son into our hearts, crying, Abba! Father!</ins> So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? (ESV)
 
 > **John 14:26** - But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things and bring to your remembrance all that I have said to you. (ESV)
 
