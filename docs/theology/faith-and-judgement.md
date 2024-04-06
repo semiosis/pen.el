@@ -272,7 +272,8 @@ We endeavour to be justified through faithful obedience to Jesus, and if we fall
 
 > **I Peter 1:6-7** - In this you rejoice, though now for a little while, if necessary, you have been grieved by various trials, so that the tested genuineness of your faith—more precious than gold that perishes though it is tested by fire—may be found to result in praise and glory and honor at the revelation of Jesus Christ. (ESV)
 
-&#x2014;
+
+# Following Jesus
 
 > **Isaiah 30:20-21** - And <ins>though the Lord give you the bread of adversity and the water of affliction, yet your Teacher will not hide himself anymore</ins>, but your eyes shall see your Teacher. And your ears shall hear a word behind you, saying, **This is the way, walk in it**, when you turn to the right or when you turn to the left.
 
@@ -320,7 +321,7 @@ Trust and believe:
 
 Trust and obey:
 
-> **II Timothy 3:12-17** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
+> **II Timothy 3:12-17** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
 
 [Trust And Obey - YouTube](https://www.youtube.com/watch?v=9ec7jHul9co)
 
@@ -950,6 +951,10 @@ I'm going out on a limb when I say that without an obedient heart the so-called 
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
+Eternal salvation goes to those who obey Jesus:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
 God's commandment is to bring about the obedience of faith (having faith is in God and through Jesus Christ is being obedient to God):
 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to the command of the eternal God, to bring about the **obedience of faith** — (ESV)
@@ -1424,6 +1429,22 @@ The grace given to Paul allowed him to turn from his evil ways and pursue Jesus,
 > **I Corinthians 15:10** - But by the grace of God I am what I am, and his grace toward me was not in vain. On the contrary, I worked harder than any of them, though it was not I, but the grace of God that is with me. (ESV)
 
 > **Acts 2:47** - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
+
+
+### Living a godly life in Christ Jesus is part of the gospel
+
+> **2Ti 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
+
+Godliness (behaviour in accordance with the knowledge of the truth) has the power to change a person's life to go from being selfish to selfless.
+
+We have knowledge of the truth through obedience to the gospel.
+
+
+### Faith is disqualified in people who disregard the teachings
+
+> **2Ti 3:8-12** - Just as Jannes and Jambres opposed Moses, so these <ins>men also oppose the truth, men corrupted in mind and disqualified regarding the faith</ins>. But they will not get very far, for their folly will be plain to all, as was that of those two men. You, however, **have followed my teaching, my conduct,** <ins>my aim in life, my faith, my patience, my love, my steadfastness,</ins> **my persecutions and sufferings** that happened to me at Antioch, at Iconium, and at Lystra—which **persecutions I endured**; yet from them all the Lord rescued me. Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> (ESV)
+
+> **2Ti 3:13** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
 
 ## Be a disciple of Jesus to be set free
@@ -4015,7 +4036,7 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
     
     But the ones who do arrive actually <ins>follow the teaching</ins>:
     
-    > **II Timothy 3:10-13** - You, however, have <ins>followed my teaching, my conduct, my aim in life, my faith, my patience, my love, my steadfastness, my persecutions and sufferings that happened to me</ins> at Antioch, at Iconium, and at Lystra—which persecutions I endured; yet from them all the Lord rescued me. Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived.
+    > **II Timothy 3:10-13** - You, however, have <ins>followed my teaching, my conduct, my aim in life, my faith, my patience, my love, my steadfastness, my persecutions and sufferings that happened to me</ins> at Antioch, at Iconium, and at Lystra—which persecutions I endured; yet from them all the Lord rescued me. Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived.
     
     Peter demonstrated obedience. A changed heart is essential to be saved, I think, because it must produce more obedience.
     
@@ -4958,7 +4979,7 @@ We must forgive our family in Christ:
 
 The Torah is the compilation of the first five books of the Hebrew Bible, namely the books of Genesis, Exodus, Leviticus, Numbers and Deuteronomy. The Torah is known as the Pentateuch or the Five Books of Moses by Christians.
 
-> **II Timothy 3:12-17** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
+> **II Timothy 3:12-17** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
 
 Keeping to <ins>the precepts of the law</ins> is great, and making yourself accountable to God with it, is great.
 
@@ -5390,7 +5411,7 @@ The original Apostles were instructed to feed Jesus' sheep with the living bread
 
 > **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
 
-> **II Timothy 3:12-17** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be competent, equipped for every good work. (ESV)
+> **II Timothy 3:12-17** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be competent, equipped for every good work. (ESV)
 
 > **2 Timothy 3:15-16** -  and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus.  All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,  (ESV)
 
