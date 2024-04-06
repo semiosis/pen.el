@@ -369,6 +369,9 @@ Return list of cons '((destination content)"
 
   (setq filepath (or filepath (f-join aa/bewilderness-dir "house.org")))
 
+  (if (not (f-exists-p filepath))
+      (f-copy aa/filepath filepath))
+
   (add-to-list 'aa/history filepath)
 
   ;; [[el:(open-hypertext-in-buffer "/volumes/home/shane/var/smulliga/source/git/ascii-adventures/bewilderness/house.org")]]
