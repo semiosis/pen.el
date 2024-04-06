@@ -1917,9 +1917,47 @@ AMEN!!
 
 > **Hebrews 1:3** - He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power. After making purification for sins, he sat down at the right hand of the Majesty on high,
 
+Jesus proceeded forth from Father God, and returned to Father God:
+
+> **John 16:28** - I came from the Father and have come into the world, and now I am leaving the world and going to the Father. (ESV)
+
+Jesus Christ is with us in Spirit:
+
+> **Matthew 28:18-20** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
+
+> **John 14:26** - But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things and bring to your remembrance all that I have said to you. (ESV)
+
 Jesus is sitting in power.
 
 > **Hebrews 1:13** - And to which of the angels has he ever said, Sit at my right hand until I make your enemies a footstool for your feet?
+
+I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what-is-the-doctrine-of-the-trinity):
+
+> Thus, the Son is not one-third of the being of God; he is all of the being of God. The Father is not one-third of the being of God; he is all of the being of God. And likewise with the Holy Spirit. Thus, as Wayne Grudem writes, “When we speak of the Father, Son, and Holy Spirit together we are not speaking of any greater being than when we speak of the Father alone, the Son alone, or the Holy Spirit alone” (Ibid., 252).
+> 
+> There is only one God. If each Person of the Trinity is distinct and yet fully God, then should we conclude that there is more than one God? Obviously we cannot, for Scripture is clear that there is only one God: “There is no other God besides me, a righteous God and a Savior; there is none besides me. Turn to me and be saved, all the ends of the earth! For I am God, and there is no other”.
+
+> **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
+
+> **Isaiah 45:21-22** - Declare and present your case; let them take counsel together! Who told this long ago? Who declared it of old? Was it not I, the LORD? And there is no other god besides me, a righteous God and a Savior; there is none besides me. Turn to me and be saved, all the ends of the earth! For I am God, and there is no other. (ESV)
+
+> **Isaiah 44:6-8** - Thus says the LORD, the King of Israel and his Redeemer, the LORD of hosts: I am the first and I am the last; besides me there is no god. Who is like me? Let him proclaim it. Let him declare and set it before me, since I appointed an ancient people. Let them declare what is to come, and what will happen. Fear not, nor be afraid; have I not told you from of old and declared it? And you are my witnesses! Is there a God besides me? There is no Rock; I know not any. (ESV)
+
+> **Exodus 15:11** - Who is like you, O LORD, among the gods? Who is like you, majestic in holiness, awesome in glorious deeds, doing wonders? (ESV)
+
+> **Deuteronomy 4:35** - To you it was shown, that you might know that the LORD is God; there is no other besides him. (ESV)
+
+> **Deuteronomy 6:4-5** - Hear, O Israel: The LORD our God, the LORD is one. You shall love the LORD your God with all your heart and with all your soul and with all your might. (ESV)
+
+> **Deuteronomy 32:39** - See now that I, even I, am he, and there is no god beside me; I kill and I make alive; I wound and I heal; and there is none that can deliver out of my hand. (ESV)
+
+> **I Samuel 2:2** - There is none holy like the LORD; there is none besides you; there is no rock like our God. (ESV)
+
+> **I Kings 8:60** - that all the peoples of the earth may know that the LORD is God; there is no other. (ESV)
+
+AMEN!!
+
+I believe that Jesus Christ **is** Jehovah.
 
 
 ### Jesus is the Lamb of God who sits with God on God's throne
