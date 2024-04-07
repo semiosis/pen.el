@@ -3968,6 +3968,8 @@ Submit to God's will:
 
 > **James 4:7** - Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
 
+> **Proverbs 3:6** - In all your ways acknowledge him, and he will make straight your paths. (ESV)
+
 Submit to Jesus' lordship:
 
 > **Matthew 16:24** - Then Jesus told his disciples, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
@@ -4181,6 +4183,11 @@ You can't have faith without obedience.
 Something like this:
 
 > **I Thessalonians 1:3** - remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ. (ESV)
+
+As the LORD's works are done in faithfulness, our work should be done in faithfulness towards God.
+Everything we do should be done in faithfulness to Him.
+
+> **Psalms 33:4** - For the word of the LORD is upright, and all his work is done in faithfulness. (ESV)
 
 Even after arriving at the true knowledge through obedience, faith is further supplemented/nourished/aided by virtue, knowledge, self-control, steadfastness, godliness, brotherly affection and love:
 
@@ -12716,6 +12723,10 @@ Dominating others in your flock is like witchcraft, and will forfeit glorificati
 > **1 Peter 5:1-4** - So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the **glory** that is going to be revealed: shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly; **not domineering** over those in your charge, but being examples to the flock. And when the chief Shepherd appears, you will receive the unfading crown of glory. (ESV)
 
 One is supposed to suffer with Christ for glory and be an example to the flock.
+
+> **Psalms 37:21** - The wicked borrows but does not pay back, but the righteous is generous and gives; (ESV)
+
+> **Psalms 37:25-26** - I have been young, and now am old, yet I have not seen the righteous forsaken or his children begging for bread. He is ever lending generously, and his children become a blessing. (ESV)
 
 
 ### Do the good works which have been gifted to you
