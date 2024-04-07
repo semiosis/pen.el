@@ -204,6 +204,9 @@ Therefore, I assert that there's no **eternal** security for those who are not w
 Also I conclude that obeying Jesus Christ is having faith in Him.
 
 Why then do people preach to stop 'working for God'? The problem isn't work, but that work not done in faith is sin.
+
+> **I Thessalonians 5:12-14** - We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you, and to esteem them very highly in love because of their work. Be at peace among yourselves. And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
+
 Work being done by God in us to sanctify us and bring us everlasting life **is** work done in faith.
 So the problem isn't work (even work relating to salvation) but the problem is work that is not done in faith (i.e. dead work).
 
@@ -12485,6 +12488,10 @@ Our hope of salvation which we have in Jesus Christ.
 ## Lamp
 
 Awaiting the revelation of Jesus Christ, prepare our hearts, waiting for Jesus to knock, ready for action.
+
+The day of the Lord will come like a thief in the night. But we know it's coming, so we'll be ready for it:
+
+> **I Thessalonians 5:4-5** - But you are not in darkness, brothers, for that day to surprise you like a thief. For you are all children of light, children of the day. We are not of the night or of the darkness. (ESV)
 
 Keep shining your light, maintaining a heart of service, and do good works of faith to glorify God, as we put our hope fully on the mercy and grace from Jesus Christ.
 
