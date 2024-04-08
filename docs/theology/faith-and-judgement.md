@@ -17,7 +17,7 @@ James Version), and BSB (Berean Study Bible) used here and there.
 By default I will use the ESV and where it is
 not from the ESV, I have almost certainly marked it with the alternative version used.
 
-I believe we are set free from being under the Mosaic Law to become a slave to Christ Jesus under grace.
+I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
