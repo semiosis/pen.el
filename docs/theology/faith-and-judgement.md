@@ -71,6 +71,8 @@ This was also the case with Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
+> John Piper, "Maybe my will could correspond to God's will so I could do His will and it would be my will" - ([The Blazing Center: Part 3 - YouTube](https://youtu.be/La7TpqSmuJk))
+
 And through our obedience to Jesus we are saved. The Bible is clear - a works-based gospel based on God working through us saves:
 
 > **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
@@ -2001,6 +2003,8 @@ I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what
 AMEN!!
 
 I believe that Jesus Christ **is** Jehovah.
+
+> **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
 
 ### Jesus is the Lamb of God who sits with God on God's throne
@@ -5014,7 +5018,12 @@ Self-righteous forgiveness:
 
 > **John 7:19** - Has not Moses given you the law? Yet none of you keeps the law. Why do you seek to kill me?
 
-The ones who live <ins>not under law</ins> of God will be thrown into the fiery furnace, as we **must** be <ins>under</ins> the <ins>law of Christ.</ins>
+The ones who live <ins>not under law</ins> of God will be thrown into the fiery furnace.
+
+OK, so being led by the Spirit, we still actually comply with the Law of God.
+So we must have Christ in us, and being led by the Spirit.
+
+So we are <ins>under</ins> the <ins>law of Christ</ins>, which is a law of faith in Christ, and led by the Spirit to have the requirement of the Law fulfilled in us.
 
 The lawbreakers will be thrown into the fiery furnace:
 
@@ -5061,6 +5070,164 @@ We must forgive our family in Christ:
 > **Luke 17:3-4** - Pay attention to yourselves! If your brother sins, rebuke him, and if he repents, forgive him, and if he sins against you seven times in the day, and turns to you seven times, saying, I repent, you must forgive him.
 
 > **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so <ins>you also must forgive.</ins> (ESV)
+
+
+## The law of the Spirit of life vs law of sin and death
+
+The Law (Torah) came in to increase the tresspass:
+
+> **Romans 5:19-21** - For as by the one man's disobedience the many were made sinners, so by the one man's obedience the many will be made righteous. Now the law came in to increase the trespass, but where sin increased, grace abounded all the more, so that, as sin reigned in death, grace also might reign through righteousness leading to eternal life through Jesus Christ our Lord. (ESV)
+
+OK, so being baptised into Christ Jesus' death:
+
+> **Romans 6:1-3** - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? (ESV)
+
+With a death like His:
+
+> **Romans 6:4-5** - We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his. (ESV)
+
+Our old self crucified:
+
+> **Romans 6:6-9** - We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. (ESV)
+
+We live to serve God now, but that doesn't mean putting ourselves under the Torah, but it **does** mean obeying God:
+
+> **Romans 6:10-11** - For the death he died he died to sin, once for all, but the life he lives he lives to God. So you also must consider yourselves dead to sin and alive to God in Christ Jesus. (ESV)
+
+We still must cease from sinning, and we must serve God, and love selflessly as Jesus commanded:
+
+> **Romans 6:12-13** - Let not sin therefore reign in your mortal bodies, to make you obey their passions. Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness. (ESV)
+
+We are under grace now. We're not under the Torah:
+
+**Romans 6:14-15** - For sin will have no dominion over you, since you are not under law but under grace. What then? Are we to sin because we are not under law but under grace? By no means! (ESV)
+
+We are obedient slaves now to righteousness, slaves of God:
+
+> **Romans 6:16-18** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+
+We no longer present our members as slaves to impurity (sin):
+
+> **Romans 6:19** - I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification. (ESV)
+
+This certainly makes sense. OK, so before I was born-again, there was no warring between the spirit and the flesh, and now there is:
+
+> **Romans 6:20** - When you were slaves of sin, you were free in regard to righteousness. (ESV)
+
+My behaviour would have led to death:
+
+> **Romans 6:21** - But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death. (ESV)
+
+So we should be slaves to God now. But this doesn't mean being 'under the Torah':
+
+> **Romans 6:22-23**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+
+Clearly there is a difference between actually keeping / complying with the commandments of God and placing oneself under the Torah, because a new creation still <ins>keeps the commandments of God</ins>:
+
+> **Romans 2:29** - But he is a Jew who is one inwardly; and **circumcision is that which is of the heart, by the Spirit**, not by the letter; and his praise is not from men, but from God.
+
+> **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
+
+The Spirit helps us to **actually** fulfill the requirement of the Law. We do this not putting ourself under the Torah as a yoke of slavery, but by walking according to the Spirit, being a slave to Christ Jesus:
+
+> **Romans 8:4** - in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+
+The Law (Torah), though it still exists, shouldn't be our Master once we are placed into the body of Christ and receive the Spirit:
+
+> **Romans 7:1-3** - Or do you not know, brothers—for I am speaking to those who know the law—that the law is binding on a person only as long as he lives? Thus a married woman is bound by law to her husband while he lives, but if her husband dies she is released from the law of marriage. Accordingly, she will be called an adulteress if she lives with another man while her husband is alive. But if her husband dies, she is free from that law, and if she marries another man she is not an adulteress. (ESV)
+
+Having **died to the Law (Torah)** through the body of Christ - **so that we may belong to another**, Christ:
+
+> **Romans 7:4** - Likewise, my brothers, you also have died to the law through the body of Christ, **so that you may belong to another**, to him who has been raised from the dead, **in order that we may bear fruit for God.** (ESV)
+
+We die to the Law to be slaves of God with Christ in us.
+
+**If** we live in the flesh, then the Law (Torah) arouses our sinful passions:
+
+> **Romans 7:5** - For while we were living in the flesh, our sinful passions, aroused by the law, were at work in our members to bear fruit for death. (ESV)
+
+We no longer serve God under the old written code but we now serve Him in the new life of the Spirit:
+
+> **Romans 7:6** - But now we are released from the law, having died to that which held us captive, so that we serve not under the old written code but in the new life of the Spirit. (ESV)
+
+When Paul mentions 'commandment' here, he's talking about "You shall not covet":
+
+> **Romans 7:7** - What then shall we say? That the law is sin? By no means! Yet if it had not been for the law, I would not have known sin. I would not have known what it is to covet if the law had not said, You shall not covet. (ESV)
+
+Knowledge of the Torah appears to 'make sin come alive'. Paul mentions the Law (Torah) as including the commandments:
+
+> **Romans 7:8-11** - But sin, seizing an opportunity through the commandment, produced in me all kinds of covetousness. Apart from the law, sin lies dead. I was once alive apart from the law, but when the commandment came, sin came alive and I died. The very commandment that promised life proved to be death to me. For sin, seizing an opportunity through the commandment, deceived me and through it killed me. (ESV)
+
+OK, so the Law (Torah) and the commandments within are holy and righteous and good, but because of the sin in us, the Law exposes the sin in us, and even causes it to manifest.
+OK, so the way the Law (Torah) currently still exists, while true, is used for us as some kind of means of exposing sin:
+
+> **Romans 7:12-13** - So the law is holy, and the commandment is holy and righteous and good. Did that which is good, then, bring death to me? By no means! It was sin, producing death in me through what is good, in order that sin might be shown to be sin, and through the commandment might become sinful beyond measure. (ESV)
+
+Sin dwells in the flesh and fights against complying with the Torah:
+
+> **Romans 7:14-17** - For we know that the law is spiritual, but I am of the flesh, sold under sin. I do not understand my own actions. For I do not do what I want, but I do the very thing I hate. Now if I do what I do not want, I agree with the law, that it is good. So now it is no longer I who do it, but sin that dwells within me. (ESV)
+
+We desire to do what is right by the Torah but do not have the ability to carry it out:
+
+> **Romans 7:18-24** - For I know that nothing good dwells in me, that is, in my flesh. For I have the desire to do what is right, but not the ability to carry it out. For I do not do the good I want, but the evil I do not want is what I keep on doing. Now if I do what I do not want, it is no longer I who do it, but sin that dwells within me. So I find it to be a law that when I want to do right, evil lies close at hand. For I delight in the law of God, in my inner being, but I see in my members another law waging war against the law of my mind and making me captive to the law of sin that dwells in my members. Wretched man that I am! Who will deliver me from this body of death? (ESV)
+
+But in our mind we serve the Torah, the law of God:
+
+**Romans 7:25** - Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
+
+We want to do what is right and we don't accept condemnation for when sin in our flesh does the evil:
+
+> **Romans 8:1-2** - **There is therefore now no condemnation for those who are in Christ Jesus.** For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
+
+Sin in the flesh has been condemned. We walk according to the Spirit:
+
+> **Romans 8:3-4** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+
+Law of the Spirit: We must set our minds on the things of the Spirit:
+
+> **Romans 8:5-6** - For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit. To set the mind on the flesh is death, but to set the mind on the Spirit is life and peace. (ESV)
+
+We focus on the things of the Spirit, instead of the Torah, and we will naturally comply:
+
+> **Romans 8:7** - For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. (ESV)
+
+We are in the Spirit now, not the flesh, and we have Christ in us, and we are not our own:
+
+> **Romans 8:8-9** - Those who are in the flesh cannot please God. You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
+
+> **II Corinthians 5:16** - From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. (ESV)
+
+Christ is alive in us. The body is dead because of sin:
+
+> **Romans 8:10-12** - But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. If the Spirit of him who raised Jesus from the dead dwells in you, he who raised Christ Jesus from the dead will also give life to your mortal bodies through his Spirit who dwells in you. So then, brothers, we are debtors, not to the flesh, to live according to the flesh. (ESV)
+
+We still have to stop sinning, but this isn't by placing ourselves under the Torah. It's by getting baptised into Christ, serving God, being slaves of Christ, being led by the Spirit, doing the will of God that we put sin to death:
+
+> **Romans 8:13-17** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+
+> **Romans 9:30-33** - What shall we say, then? That Gentiles who did not pursue righteousness have attained it, that is, a righteousness that is by faith; but that Israel who pursued a law that would lead to righteousness did not succeed in reaching that law. Why? Because they did not pursue it by faith, but as if it were based on works. They have stumbled over the stumbling stone, as it is written, Behold, I am laying in Zion a stone of stumbling, and a rock of offense; and whoever believes in him will not be put to shame. (ESV)
+
+Paul prays for Israel to be saved, saying they have a zeal for God, but not by actual knowledge of God:
+
+> **Romans 10:1-3** - Brothers, my heart's desire and prayer to God for them is that they may be saved. I bear them witness that they have a zeal for God, but not according to knowledge. For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness.
+
+OK, so we need to submit to God's righteousness, and that means having faith in God for what He has done sending Jesus Christ to die on the cross for our sin and raising Him for our justification.
+
+We need to receive the Spirit of God:
+
+> **Romans 8:9** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
+
+We can still have the righteousness based on faith:
+
+> **Romans 10:4** - For Christ is the end of the law for righteousness to everyone who believes. (ESV)
+
+Instead of thinking we must make the Torah our way of life, we simply make Jesus our Lord and Saviour:
+
+> **Romans 10:5-9** - For Moses writes about the righteousness that is based on the law, that the person who does the commandments shall live by them. But the righteousness based on faith says, Do not say in your heart, Who will ascend into heaven? (that is, to bring Christ down) or Who will descend into the abyss? (that is, to bring Christ up from the dead). But what does it say? The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
+This is submitting to the righteousness of God:
+
+> **Romans 10:10**- For with the heart one believes and is justified, and with the mouth one confesses and is saved. (ESV)
 
 
 ## The Torah
