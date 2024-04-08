@@ -5100,7 +5100,7 @@ We still must cease from sinning, and we must serve God, and love selflessly as 
 
 We are under grace now. We're not under the Torah:
 
-**Romans 6:14-15** - For sin will have no dominion over you, since you are not under law but under grace. What then? Are we to sin because we are not under law but under grace? By no means! (ESV)
+> **Romans 6:14-15** - For sin will have no dominion over you, since you are not under law but under grace. What then? Are we to sin because we are not under law but under grace? By no means! (ESV)
 
 We are obedient slaves now to righteousness, slaves of God:
 
@@ -5114,7 +5114,7 @@ This certainly makes sense. OK, so before I was born-again, there was no warring
 
 > **Romans 6:20** - When you were slaves of sin, you were free in regard to righteousness. (ESV)
 
-My behaviour would have led to death:
+My past behaviour would have led to death:
 
 > **Romans 6:21** - But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death. (ESV)
 
@@ -5131,6 +5131,10 @@ Clearly there is a difference between actually keeping / complying with the comm
 The Spirit helps us to **actually** fulfill the requirement of the Law. We do this not putting ourself under the Torah as a yoke of slavery, but by walking according to the Spirit, being a slave to Christ Jesus:
 
 > **Romans 8:4** - in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+
+OK, so in Christ Jesus, having received the Spirit, being a slave of Christ, being yoked to Christ, we are set free:
+
+> **Galatians 5:1** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
 
 The Law (Torah), though it still exists, shouldn't be our Master once we are placed into the body of Christ and receive the Spirit:
 
