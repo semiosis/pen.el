@@ -17,9 +17,15 @@ James Version), and BSB (Berean Study Bible) used here and there.
 By default I will use the ESV and where it is
 not from the ESV, I have almost certainly marked it with the alternative version used.
 
+I believe we are set free from being under the Mosaic Law to become a slave to Christ Jesus under grace.
+
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
+
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, sin and death:
+
+> **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
 I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet.
 
@@ -10966,15 +10972,15 @@ LGBT and transvestism are sinful.
 
 Obeying Jesus, even Jesus' commandments, is actually freedom. To disobey Jesus is to submit to slavery.
 
-> **Galatians 5:1** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery.
+> **Galatians 5:1** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
 
-> **Ephesians 5:24** - Now as the church submits to Christ, so also wives should submit in everything to their husbands.
+> **Ephesians 5:24** - Now as the church submits to Christ, so also wives should submit in everything to their husbands. (ESV)
 
-> **Romans 8:21** - that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God.
+> **Romans 8:21** - that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. (ESV)
 
-> **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.
+> **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
-> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
 
 Don't think that obeying Jesus is submitting to slavery.
 
