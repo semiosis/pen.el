@@ -12,55 +12,19 @@ I agree whole heartedly also with MP Nick Fletcher:
 I agree whole heartedly with John Piper here:
 
 -   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
+-   [God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
 
-***Quote from John Piper:***
 
-> I'm dealing with the issue of God's
-> glory and our gladness. Can they really
-> be one? And I'm doing that under the
-> bigger banner of "How can I spread a
-> passion for the supremacy of God?" because
-> I think that phrase "passion for the
-> supremacy of God" pulls together the two
-> things:
-> 
-> 1.  <ins>"passion"</ins> signifies *"I'm joyful"* and
-> 2.  <ins>"supremacy of God"</ins> signifies *"he's being magnified"*.
-> 
-> So my biggest longing in
-> life is to be used by God to help people
-> see him for who he really is in his
-> magnificence, and then have emotions that
-> are appropriate to that magnificence. Why
-> do we watch the World Series? Why do we
-> watch gymnastics when the Olympics rolls
-> around? Why do we go to the Grand Canyon?
-> Why do we go to the Alps? Why do we go to
-> the ocean and look out over&#x2026; Why do we
-> want to get near bigness and beauty and
-> magnificence and excellence? It's because
-> that's what we were made for. We were not
-> made for mirrors. So I want to be
-> absolutely candid, **the Christian Life Is War** and I'm in the business of helping
-> people know how to fight in the way that
-> they're supposed to, namely for joy.
-> 
-> There's a text in **2 Corinthians 1:24**:
+# My thoughts and bible references regarding theology
 
-> **II Corinthians 1:24** - <ins>Not that we lord it over your faith, but we work with you for your joy,</ins> for you stand firm in your faith. (ESV)
+I've been thinking about belief, faith, works, law and receiving **the Holy Spirit**!
+Please let me know what you think if you have the time.
 
-> I was amazed when I saw that.
-> Paul says I'm a worker for your joy as
-> though Joy requires apostolic work, and
-> if it does for him it does for me. And so
-> yeah there are times in the ministerial
-> life or the Christian Life when we're
-> low. It seems like all the joy is gone we
-> want to quit give up the ministry give
-> up the faith, and at those moments we
-> need to fight like heaven to hold on.
+I'm trying to get clearer on this.
+Please feel free to discuss it with me.
 
-***Bible versions used in this document:***
+
+## Bible versions used in this document
 
 Almost all of verses are taken from the ESV
 (English Standard Version) bible with the odd NASB
@@ -149,7 +113,15 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 Therefore, we teach people to both believe and to obey the Gospel. Both are required, but the success of our work doesn't count for our righteousness. We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us. We rest in believing what Jesus has accomplished on our behalf, but our heart should have become obedient to Jesus. The work is still totally by grace because we needed Jesus to obey God perfectly first! We must still obey Jesus.
 
-God makes us born-again:
+
+## Disobedience is sin
+
+[God is very happy about obedience, and listening to His word](https://www.youtube.com/watch?v=tqtl-sXeTmA&ab_channel=DesiringGod). **Disobedience is sin**, and **disobedience is rejecting the word of the LORD**:
+
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, <span class="underline">to <ins>obey is better than sacrifice</ins></span>, and <span class="underline"><ins>to listen than the fat of rams</ins></span>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
+
+
+## God makes us born-again, so we can love Him, obediently
 
 > **John 3:7** - Do not marvel that I said to you, You must be born again. (ESV)
 
@@ -175,7 +147,35 @@ Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the 
 
 I like that way of thinking of it because it encapsulates both belief and obedience to Jesus - both which I think are important.
 
-> I conjecture that, effectively, `Obedience = Believing the gospel, and Selfless love` (no longer serving yourself but serving Christ. It's obeying Jesus.). Nevertheless, where we fall short of obedience, Jesus has us covered. But if we are keeping Jesus' commandments then we're abiding in His love. Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel.
+Jesus' selfless love also faithful to God. **Without breaking faith with God**, Jesus loved back his persecutors:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
+To put it another way, while needing to fulfill the law and the prophets, he did not sin, and sinners took his life and even his clothes:
+
+> **I Peter 2:22** - He committed no sin, neither was deceit found in his mouth. (ESV)
+
+> **Matthew 27:35** - And when they had crucified him, they divided his garments among them by casting lots. (ESV)
+
+> **I Peter 3:17-18** - For it is better to suffer for doing good, if that should be God's will, than for doing evil. For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit, (ESV)
+
+And Jesus prayed for his persecutors:
+
+> **Luke 23:34** - And Jesus said, Father, forgive them, for they know not what they do. And they cast lots to divide his garments. (ESV)
+
+Likewise, that's the type of selfless love we should have. Selfless love while trying to maintain faithfulness to God:
+
+> **I Peter 2:20** - For what credit is it if, when you sin and are beaten for it, you endure? But if when you do good and suffer for it you endure, this is a gracious thing in the sight of God. (ESV)
+
+> **I Peter 4:19** - Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good. (ESV)
+
+The purest selfless love loves while not breaking faith with God.
+
+> I conjecture that, effectively, `Obedience = Believing the gospel, and Selfless love` (no longer serving yourself but serving Christ. It's obeying Jesus.).
+> 
+> Nevertheless, [where we fall short of obedience, Jesus has us covered](https://youtu.be/tqtl-sXeTmA?t=1459). But if we are keeping Jesus' commandments then we're abiding in His love.
+> 
+> Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel.
 
 No true Christian would deny that God works in us to save us.
 
@@ -297,6 +297,9 @@ So the problem isn't work (even work relating to salvation) but the problem is w
 
 > I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
 
+
+## Eternal security for those who follow Jesus
+
 [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
 
 > At the stage they trust in Jesus, they may have no work but I believe at that stage they are justified, when in their heart is obedient, trusting, believing faith in Christ who is their life. But I'm not the one to justify them, God is.
@@ -312,6 +315,9 @@ Christian love:
 -   [Believing Loving and Obeying and abiding in the presence of the Holy Spirit - YouTube](https://www.youtube.com/watch?v=ZHhVXgvVSks)
 
 > **John 14:15** - If you love me, you will keep my commandments. (ESV)
+
+
+## Some indicators to know for SURE you are saved
 
 [This is how you can know for SURE that you are saved | Assurance of Salvation | Kaci Nicole - YouTube](https://youtu.be/0y-hQrI_sTA?t=779)
 
@@ -414,15 +420,6 @@ Trust and obey:
 > **II Timothy 3:12-17** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
 
 [Trust And Obey - YouTube](https://www.youtube.com/watch?v=9ec7jHul9co)
-
-
-# My thoughts and bible references regarding theology
-
-I've been thinking about belief, faith, works, law and receiving **the Holy Spirit**!
-Please let me know what you think if you have the time.
-
-I'm trying to get clearer on this.
-Please feel free to discuss it with me.
 
 
 ## Jesus
@@ -550,6 +547,15 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 > something.
 
 
+## Obedient faith is penitent, not perfect
+
+> John Piper - "Faith is the baking our **hope on the mercy of God**."
+
+> John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
+
+[God's Delight in Obedience - YouTube](https://youtu.be/tqtl-sXeTmA?t=1459)
+
+
 ### Faith is not mere belief, but faith is walking as Abraham did - believing and obedient
 
 We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
@@ -597,6 +603,60 @@ The knowledge comes from having obeyed God's voice. Love becomes perfected in us
 > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
 > **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
+
+
+### Joy requires apostolic work
+
+I agree whole heartedly with John Piper here:
+
+-   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
+
+***Quote from John Piper:***
+
+> I'm dealing with the issue of God's
+> glory and our gladness. Can they really
+> be one? And I'm doing that under the
+> bigger banner of "How can I spread a
+> passion for the supremacy of God?" because
+> I think that phrase "passion for the
+> supremacy of God" pulls together the two
+> things:
+> 
+> 1.  <ins>"passion"</ins> signifies *"I'm joyful"* and
+> 2.  <ins>"supremacy of God"</ins> signifies *"he's being magnified"*.
+> 
+> So my biggest longing in
+> life is to be used by God to help people
+> see him for who he really is in his
+> magnificence, and then have emotions that
+> are appropriate to that magnificence. Why
+> do we watch the World Series? Why do we
+> watch gymnastics when the Olympics rolls
+> around? Why do we go to the Grand Canyon?
+> Why do we go to the Alps? Why do we go to
+> the ocean and look out over&#x2026; Why do we
+> want to get near bigness and beauty and
+> magnificence and excellence? It's because
+> that's what we were made for. We were not
+> made for mirrors. So I want to be
+> absolutely candid, **the Christian Life Is War** and I'm in the business of helping
+> people know how to fight in the way that
+> they're supposed to, namely for joy.
+> 
+> There's a text in **2 Corinthians 1:24**:
+
+> **II Corinthians 1:24** - <ins>Not that we lord it over your faith, but we work with you for your joy,</ins> for you stand firm in your faith. (ESV)
+
+> I was amazed when I saw that.
+> Paul says "I'm a worker for your joy" as
+> though **Joy requires apostolic work, and
+> if it does for him it does for me.** And so
+> yeah there are times in the ministerial
+> life or the Christian Life when we're
+> low. It seems like all the joy is gone we
+> want to quit give up the ministry give
+> up the faith, and at those moments we
+> need to fight like heaven to hold on.
 
 
 ### We are bought with the precious blood of Christ and we should be obedient to God
@@ -1415,7 +1475,7 @@ Obey God, obey Jesus:
 
 ## Gospel
 
-The Good News of Jesus Christ is the power of God for salvation to everyone who believes - salvation from sin, and eternal life in Christ Jesus.
+The Good News of Jesus Christ is **the power of God for salvation to everyone who believes** - **salvation from sin**, and **eternal life in Christ Jesus.**
 
 > **Romans 1:16** - For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. (ESV)
 
@@ -1783,6 +1843,10 @@ Judas betrayed Jesus after being chosen:
 > **John 6:70-71** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you <ins>is a devil.</ins> He spoke of Judas the son of Simon Iscariot, for he, one of the Twelve, was going to betray him.
 
 > **Hebrews 6:4-8** - For it is impossible to restore again to repentance those who have once been enlightened, who have tasted the heavenly gift, and have shared in **the Holy Spirit**, and have tasted the goodness of the word of God and the powers of the age to come, if they then fall away, since they are crucifying once again the Son of God to their own harm and holding him up to contempt. For land that has drunk the rain that often falls on it, and produces a crop useful to those for whose sake it is cultivated, receives a blessing from God. But if it bears thorns and thistles, it is worthless and near to being cursed, and its end is to be burned. (ESV)
+
+[Goda??s Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
+
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to <ins>obey is better than sacrifice</ins>, and <ins>to listen than the fat of rams</ins>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
 
 ### The way is easy that leads to destruction
@@ -3857,7 +3921,7 @@ Work not done in faith:
 
 > **Leviticus 10:1-2** - Now Nadab and Abihu, the sons of Aaron, each took his censer and put fire in it and laid incense on it and offered unauthorized fire before the Lord, which he had not commanded them. And fire came out from before the Lord and consumed them, and they died before the Lord.
 
-> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to <ins>obey is better than sacrifice</ins>, and <ins>to listen than the fat of rams</ins>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
 God didn't ask for the offering which Nadab and Abihu offered.
 
@@ -8141,7 +8205,7 @@ Do not even seek them out:
 
 > **Leviticus 20:6** - If a person turns to **mediums and wizards, whoring after them**, I will set my face against that person and will cut him off from among his people. (ESV)
 
-> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+> **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to <ins>obey is better than sacrifice</ins>, and <ins>to listen than the fat of rams</ins>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
 > **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
 
@@ -9552,7 +9616,7 @@ So take stopping sin seriously, and keep Jesus' words and His commandments, and 
 
 Rebellion = disobedience.
 
-> **1 Samuel 15:23** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+> **1 Samuel 15:23** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
 > **Ephesians 5:6** - Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. (ESV)
 
