@@ -9,6 +9,57 @@ I agree whole heartedly also with MP Nick Fletcher:
 
 -   [Christian MP: 'A life in Christ is the most wonderful thing' - YouTube](https://www.youtube.com/watch?v=TWPoQN8PO9E)
 
+I agree whole heartedly with John Piper here:
+
+-   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
+
+***Quote from John Piper:***
+
+> I'm dealing with the issue of God's
+> glory and our gladness. Can they really
+> be one? And I'm doing that under the
+> bigger banner of "How can I spread a
+> passion for the supremacy of God?" because
+> I think that phrase "passion for the
+> supremacy of God" pulls together the two
+> things 1. <ins>"passion"</ins> signifies *"I'm joyful"* and
+> 
+> 1.  <ins>"supremacy of God"</ins> signifies *"he's being magnified"*. So my biggest longing in
+> 
+> life is to be used by God to help people
+> see him for who he really is in his
+> magnificence, and then have emotions that
+> are appropriate to that magnificence. Why
+> do we watch the World Series? Why do we
+> watch gymnastics when the Olympics rolls
+> around? Why do we go to the Grand Canyon?
+> Why do we go to the Alps? Why do we go to
+> the ocean and look out over&#x2026; Why do we
+> want to get near bigness and beauty and
+> magnificence and excellence? It's because
+> that's what we were made for. We were not
+> made for mirrors. So I want to be
+> absolutely candid, **the Christian Life Is War** and I'm in the business of helping
+> people know how to fight in the way that
+> they're supposed to, namely for joy.
+> 
+> There's a text in **2 Corinthians 1:24**:
+
+> **II Corinthians 1:24** - <ins>Not that we lord it over your faith, but we work with you for your joy,</ins> for you stand firm in your faith. (ESV)
+
+> I was amazed when I saw that.
+> Paul says I'm a worker for your joy as
+> though Joy requires apostolic work, and
+> if it does for him it does for me. And so
+> yeah there are times in the ministerial
+> life or the Christian Life when we're
+> low. It seems like all the joy is gone we
+> want to quit give up the ministry give
+> up the faith, and at those moments we
+> need to fight like heaven to hold on.
+
+***Bible versions used in this document:***
+
 Almost all of verses are taken from the ESV
 (English Standard Version) bible with the odd NASB
 (New American Standard Bible), KJV (King
@@ -16,6 +67,9 @@ James Version), and BSB (Berean Study Bible) used here and there.
 
 By default I will use the ESV and where it is
 not from the ESV, I have almost certainly marked it with the alternative version used.
+
+
+# Being born-again
 
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
@@ -30,6 +84,10 @@ In Christ Jesus there is freedom from things which were bad for us, including se
 I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet.
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+
+Belief in Jesus Christ turns to obedience, and imitating Christ:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
 To know Jesus, we must obey His commandments.
 
@@ -53,7 +111,7 @@ A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesu
 
 > **Galatians 6:15** - For neither <ins>circumcision counts for anything, nor uncircumcision,</ins> but **a new creation.** (ESV)
 
-[Steve Apirana - Born Again - YouTube](https://www.youtube.com/watch?v=WuQ_IhzVl1A)
+-   [Steve Apirana - Born Again - YouTube](https://www.youtube.com/watch?v=WuQ_IhzVl1A)
 
 Out with the old selfish self and in with the new selflessly loving self:
 
@@ -163,7 +221,7 @@ We need to perform our salvation in obedience to God:
 
 Let's see what the word **katergazomai** (the word for 'work out') means:
 
-[Philippians 2:12 (Interlinear)](https://biblehub.com/interlinear/philippians/2-12.htm)
+-   [Philippians 2:12 (Interlinear)](https://biblehub.com/interlinear/philippians/2-12.htm)
 
     1  5620      27       1473     2531     3842     5219            3361     5613     1722     3588     3952     1473
     2  Hōste     agapētoi mou      kathōs   pantote  hypēkousate     mē       hōs      en       tē       parousia mou
@@ -216,7 +274,7 @@ Spirit so I can walk in obedience to Him.
 It's only possible through what Jesus Christ
 has achieved for us on the cross.
 
-[Chris Tomlin - Holy Forever {Lyric Video} - YouTube](https://youtu.be/IkHgxKemCRk?list=RDf2oxGYpuLkw&t=94)
+-   [Chris Tomlin - Holy Forever {Lyric Video} - YouTube](https://youtu.be/IkHgxKemCRk?list=RDf2oxGYpuLkw&t=94)
 
 Even having faith in God through faith in Jesus is obedience according to `Romans 16:26`. **If a person is trusting in Him when they die, they will live.**
 
@@ -911,6 +969,10 @@ God wants to bring people to the obedience of faith. We have to hear Jesus' word
 Therefore, I believe that believing Jesus is the Christ (Messiah), the Son of God, who has come into the world, is God's gift to us and it is a very easy to receive (low barrier to entry) act of obedience to Him:
 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to the command of the eternal God, to bring about the **obedience of faith** — (ESV)
+
+Obedience should grow. A change should have taken place in the person's life:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
 We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
 
@@ -8014,10 +8076,11 @@ We should be more confident with the light!
 
 ## Don't dominate the flock, but be an example
 
-Dominating others in your flock and forcing them to believe what you believe is like witchcraft, and will forfeit glorification. - See glorification.
 We're supposed to lead by example.
 
 To be domineering is to behave like a lord.
+
+> **II Corinthians 1:24** - <ins>Not that we lord it over your faith, but we work with you for your joy,</ins> for you stand firm in your faith. (ESV)
 
 > **1 Peter 5:1-4** - So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the **glory** that is going to be revealed: shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly; **not domineering** over those in your charge, but being examples to the flock. And when the chief Shepherd appears, you will receive the unfading crown of glory. (ESV)
 
@@ -10516,6 +10579,15 @@ AMEN!! God is good for justifying people who are poor of spirit, and have fear o
 
 
 ## Conditional Promises In The New Testament
+
+The Sermon on the Mount from Matthew 5 may
+better be understood as describing the
+
+The resources to be transformed are not in ourselves. Jesus does the transformation.
+
+We yield our life to Lord Jesus Christ, and our life doesn't lose control when we yield control over it to Jesus.
+
+We should be able to see the transformation described in the sermon of the mount.
 
 > **Matthew 5:3** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
