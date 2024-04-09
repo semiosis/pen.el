@@ -12,7 +12,7 @@ I agree whole heartedly also with MP Nick Fletcher:
 I agree whole heartedly with John Piper here:
 
 -   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
--   [God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
+-   [John Piper - God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
 
 
 # My thoughts and bible references regarding theology
@@ -1844,7 +1844,7 @@ Judas betrayed Jesus after being chosen:
 
 > **Hebrews 6:4-8** - For it is impossible to restore again to repentance those who have once been enlightened, who have tasted the heavenly gift, and have shared in **the Holy Spirit**, and have tasted the goodness of the word of God and the powers of the age to come, if they then fall away, since they are crucifying once again the Son of God to their own harm and holding him up to contempt. For land that has drunk the rain that often falls on it, and produces a crop useful to those for whose sake it is cultivated, receives a blessing from God. But if it bears thorns and thistles, it is worthless and near to being cursed, and its end is to be burned. (ESV)
 
-[Goda's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
+[John Piper - God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
 
 > **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to <ins>obey is better than sacrifice</ins>, and <ins>to listen than the fat of rams</ins>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
