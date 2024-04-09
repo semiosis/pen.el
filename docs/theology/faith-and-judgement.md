@@ -111,7 +111,36 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 > **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
 
-Therefore, we teach people to both believe and to obey the Gospel. Both are required, but the success of our work doesn't count for our righteousness. We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us. We rest in believing what Jesus has accomplished on our behalf, but our heart should have become obedient to Jesus. The work is still totally by grace because we needed Jesus to obey God perfectly first! We must still obey Jesus.
+Therefore, we teach people to both believe and to obey the Gospel. Both are required, but the success of our work doesn't count for our righteousness.
+
+We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us.
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
+We rest in believing what Jesus has accomplished on our behalf, but our heart should have become obedient to Jesus.
+
+Work flowing from obedience is still totally by grace because we needed Jesus to obey God perfectly first! We must still obey Jesus.
+
+Believing in Jesus should result in continued loving obedience to Jesus (following Jesus), and doing the work which is similar to the work that Jesus did:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+I think works that we can expect to come from believers in Jesus are:
+
+-   helping to bring about the obedience of faith
+-   loving selflessly while not breaking faith with God
+
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+> **John 14:10-15** - Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but <ins>the Father who dwells in me does his works.</ins> Believe me that I am in the Father and the Father is in me, or else believe on account of the works themselves. Truly, truly, I say to you, **whoever believes in me will also do the works that I do;** and greater works than these will he do, because I am going to the Father. Whatever you ask in my name, this I will do, that the Father may be glorified in the Son. If you ask me anything in my name, I will do it. <ins>If you love me, you will keep my commandments.</ins> (ESV)
+
+> **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
+
+> **John 4:32-34** - But he said to them, I have food to eat that you do not know about. So the disciples said to one another, Has anyone brought him something to eat? Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. (ESV)
+
+> **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
+
+> **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
 
 ## Disobedience is sin
