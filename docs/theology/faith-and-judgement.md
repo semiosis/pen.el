@@ -22,10 +22,12 @@ I agree whole heartedly with John Piper here:
 > passion for the supremacy of God?" because
 > I think that phrase "passion for the
 > supremacy of God" pulls together the two
-> things 1. <ins>"passion"</ins> signifies *"I'm joyful"* and
+> things:
 > 
-> 1.  <ins>"supremacy of God"</ins> signifies *"he's being magnified"*. So my biggest longing in
+> 1.  <ins>"passion"</ins> signifies *"I'm joyful"* and
+> 2.  <ins>"supremacy of God"</ins> signifies *"he's being magnified"*.
 > 
+> So my biggest longing in
 > life is to be used by God to help people
 > see him for who he really is in his
 > magnificence, and then have emotions that
