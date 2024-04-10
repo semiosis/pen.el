@@ -151,6 +151,65 @@ I think works that we can expect to come from believers in Jesus are:
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
 
+## In God's mercy, we come to obedient faith and come into Christ Jesus
+
+"At one time disobedient, but now disobedient" means we are brought to obedience.
+
+> **Romans 11:30-32** - Just as you were <ins>at one time disobedient</ins> to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For **God has consigned all to disobedience, that he may have mercy on all.** (ESV)
+
+
+## Obedience is absolutely within our ability
+
+God's commandments are not too difficult to follow:
+
+> **Deuteronomy 30:10-11** - when you obey the voice of the LORD your God, to keep his commandments and his statutes that are written in this Book of the Law, when you turn to the LORD your God with all your heart and with all your soul. For this commandment that I command you today is not too hard for you, neither is it far off. (ESV)
+
+It's <ins>perfect</ins> obedience which only Jesus Christ managed to reach:
+
+> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross.
+
+We come to having obedient faith in God through obedient faith in Jesus Christ.
+
+Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He became the source of eternal salvation to all those who obey Him:
+
+> **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
+> **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world! (ESV)
+
+
+### So we become obedient to Jesus
+
+> **Romans 4:25** - who was delivered up for our trespasses and raised for our justification. (ESV)
+
+And we are justified and have peace with God through our Lord Jesus Christ, who we are following:
+
+> **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. (ESV)
+
+He paid the price for our sin.
+
+
+### Eternal life and salvation is a gift received through faith
+
+We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We put our hope on Him to be our High Priest and Advocate, we obey Him as He saves us:
+
+> **John 3:16-19** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+These should really go hand in hand:
+
+-   Believing in Jesus Christ for His finished work to be receive justification and eternal life and remain in relationship with Father God and with Jesus
+-   Obeying Jesus Christ to be saved from the wrath of God should really go hand-in-hand.
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+Being justified by Jesus' blood, we are saved by Him from the wrath of God:
+
+> **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
+
+Being saved by Him I think involves us becoming obedient, and faithfully obeying Jesus Christ our Lord:
+
+> **Ephesians 5:5-10** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them; for at one time you were darkness, but now you are light in the Lord. Walk as children of light (for the fruit of light is found in all that is good and right and true), and try to discern what is pleasing to the Lord.
+
+
 ## Disobedience is sin
 
 [God is very happy about obedience, and listening to His word](https://www.youtube.com/watch?v=tqtl-sXeTmA&ab_channel=DesiringGod). **Disobedience is sin**, and **disobedience is rejecting the word of the LORD**:
