@@ -2327,3 +2327,5 @@ go install github.com/mattn/go-sixel@latest
 e ia activities
 
 e ia listen
+
+e ia org-index
