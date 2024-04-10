@@ -206,7 +206,7 @@ The purest selfless love loves while not breaking faith with God. Jesus maintain
 > 
 > Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel.
 
-No true Christian would deny that God works in us to save us.
+God works in us to save us. Since obedience to God is faith, God works in us through faith:
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
 
@@ -586,7 +586,15 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 [God's Delight in Obedience - YouTube](https://youtu.be/tqtl-sXeTmA?t=1459)
 
 
-### Faith is not mere belief, but faith is walking as Abraham did - believing and obedient
+### Faith is not merely belief, but faith is walking as Abraham did - believing and obedient
+
+Obedience to God is faith. Abraham went to live in the land of promise by **obedience**:
+
+> **Genesis 12:1-8** - Now **the LORD said to Abram, Go from your country and your kindred and your father's house to the land that I will show you. And I will make of you a great nation,** and I will bless you and make your name great, so that you will be a blessing. I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed. **So Abram went, as the LORD had told him,** and Lot went with him. Abram was seventy-five years old when he departed from Haran. And Abram took Sarai his wife, and Lot his brother's son, and all their possessions that they had gathered, and the people that they had acquired in Haran, and they set out to go to the land of Canaan. **When they came to the land of Canaan,** Abram passed through the land to the place at Shechem, to the oak of Moreh. At that time the Canaanites were in the land. **Then the LORD appeared to Abram and said, To your offspring I will give this land. So he built there an altar to the LORD, who had appeared to him.** From there he moved to the hill country on the east of Bethel and pitched his tent, with Bethel on the west and Ai on the east. And there he built an altar to the LORD and called upon the name of the LORD. (ESV)
+
+`Hebrews 11:9` says that Abraham went to live in the land of promise by **faith**:
+
+> **Hebrews 11:9** - By faith he went to live in the land of promise, as in a foreign land, living in tents with Isaac and Jacob, heirs with him of the same promise. (ESV)
 
 We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
 
@@ -2907,11 +2915,19 @@ Jesus is God revealed in the flesh.
 I think, that means that if a person **loves** (is obedient to) and has faith in Him, they are most likely saved.
 
 
-## We must **live** by faith
+## We must **live** by faith - live by obedience to God!
 
 > **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. (ESV)
 
 > **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
+> **Galatians 2:20** - I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me. (ESV)
+
+Being firm in our faith, we can resist:
+
+> **I Peter 5:8-9** - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
 
 
 ## We must be found in Jesus
