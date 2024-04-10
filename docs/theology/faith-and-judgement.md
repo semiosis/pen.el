@@ -91,6 +91,10 @@ That's because God gives us a new spirit to obey Him:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
+We can repent from sin as an act of obedient faith to God:
+
+> **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
+
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
 [Born Again - Alistair Begg, Parkside Church - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
@@ -99,13 +103,13 @@ What God does by way of initiative and what we do as a response is inextricably 
 
 **Paul toils**, <ins>struggling with all God's energy</ins> that **God works** powerfully within him:
 
-> **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his energy that \*he powerfully works within me.** (ESV)
+> **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his energy that he powerfully works within me.** (ESV)
 
 This was also the case with Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
-> John Piper, "Maybe my will could correspond to God's will so I could do His will and it would be my will" - ([The Blazing Center: Part 3 - YouTube](https://youtu.be/La7TpqSmuJk))
+In "[The Blazing Center: Part 3 - YouTube](https://youtu.be/La7TpqSmuJk)" John Piper says, "Maybe my will could correspond to God's will so I could do His will and it would be my will?!" I agree with him.
 
 And through our obedience to Jesus we are saved. The Bible is clear - a works-based gospel based on God working through us saves:
 
