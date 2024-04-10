@@ -135,4 +135,6 @@ It is used when no mode-specific one is available.")
 (add-hook 'text-mode-hook 'org-verse-mode)
 (remove-hook 'text-mode-hook 'org-verse-mode)
 
+(define-key pen-map (kbd "C-c TAB C-n") 'org-verse-buttonize-buffer)
+
 (provide 'pen-org-verse)

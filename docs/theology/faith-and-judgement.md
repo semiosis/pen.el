@@ -1539,6 +1539,8 @@ We have **always obeyed**, participating in the Spirit, having one mind, that of
 
 > **Philippians 2:1-13** - So if there is any encouragement in Christ, any comfort from love, any <ins>participation in the Spirit,</ins> any affection and sympathy, complete my joy by being of the same mind, having the same love, being in full accord and of one mind. Do nothing from rivalry or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, **taking the form of a servant**, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, **work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work** for his good pleasure. (ESV)
 
+[John Fischer - Naphtali - 09 Live in the Power - YouTube](https://www.youtube.com/watch?v=Mqk5mMvvih4&list=RDMqk5mMvvih4&start_radio=1)
+
 'Believing obedience' produces work.
 
 We are saved through faith - it's not our own doing - it's not a **result** of works - the works are a gift:
@@ -1833,7 +1835,7 @@ These people did not obey Jesus, and produced bad fruit:
 
 These people did not believe, and their works were not done in faith:
 
-> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.
+> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. **Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock**.
 
 These people didn't endure in faith:
 
@@ -2475,7 +2477,7 @@ I know I can testify to this fiery trial being a real thing:
 
 ### Get to know Jesus by following His commandments
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 > **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
@@ -2787,14 +2789,9 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 > **Matthew 5:20** - For I tell you, unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven. (ESV)
 
 
-## The sons of disobedience are the ones who are conformed to sexual immorality, impurity, or covetousness, etc.
-
-> **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
-
-
 ## Get to know Jesus by following His commandments
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 > **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
@@ -2811,6 +2808,56 @@ We must obey God. We have faith in God who was delivered up for our trespasses a
 `pisteuo` is the faith verb.
 
 So the promise is for all who put their faith in God by obeying Jesus Christ with the faith of Abraham to a greater or lesser degree.
+
+
+## The sons of disobedience are the ones who are conformed to sexual immorality, impurity, or covetousness, etc.
+
+> **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
+
+
+### All sin is lawlessness
+
+The law (Mosaic law) is laid down for those who are lawless and disobedient!
+
+> **I Timothy 1:9** - understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, (ESV)
+
+Sin is lawlessness:
+
+> **I John 3:4** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. (ESV)
+
+There are lawless spirits (spirits which work things like idolatry, and falsehood; anything which is against the truth):
+
+> **II Thessalonians 2:7-13** - For the mystery of lawlessness is already at work. Only he who now restrains it will do so until he is out of the way. And then the lawless one will be revealed, whom the Lord Jesus will kill with the breath of his mouth and bring to nothing by the appearance of his coming. The coming of the lawless one is by the activity of Satan with all power and false signs and wonders, and with all wicked deception for those who are perishing, because they refused to love the truth and so be saved. Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth. (ESV)
+
+Lawlessness includes idolatry:
+
+> **I Peter 4:3** - The time that is past suffices for doing what the Gentiles want to do, living in sensuality, passions, drunkenness, orgies, drinking parties, and lawless idolatry. (ESV)
+
+If idolatry is lawlessness then so is falsely witnessing, so is sexual immorality, adultery, murder/hate, etc. And the Apostles in the New Testament and Jesus, and the Bible generally testifies that we must stop being lawless!
+
+Lawlessness includes hate/murder:
+
+> **Matthew 24:10-13** - And then **many will fall away and betray one another and hate one another.** And many false prophets will arise and lead many astray. And because lawlessness will be increased, the love of many will grow cold. But the one who endures to the end will be saved. (ESV)
+
+We are commanded by Paul the Apostle to present our members as **slaves to righteousness** leading to sanctification - that's called repentance from sin, folks!:
+
+> **Romans 6:19** - I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification. (ESV)
+
+We were purchased with the precious blood of Jesus Christ and we are supposed to be changed and purified to no longer being lawless!
+
+> **Titus 2:14** - who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+
+We must not allow ourselves to be conformed to or carried away by the error of lawless people. The error is their lawlessness:
+
+> **II Peter 3:17** - You therefore, beloved, knowing this beforehand, take care that you are not carried away with the error of lawless people and lose your own stability. (ESV)
+
+We must follow Jesus, and obey Jesus and stop sinning!
+
+> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but **the one who does the will of my Father who is in heaven**. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you <ins>workers of lawlessness</ins>. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. (ESV)
+
+Part of the will of Father God is that we repent from sin:
+
+> **I Thessalonians 4:3-7** - For this is the will of God, your sanctification: that you abstain from sexual immorality; that each one of you know how to control his own body in holiness and honor, not in the passion of lust like the Gentiles who do not know God; that no one transgress and wrong his brother in this matter, because the Lord is an avenger in all these things, as we told you beforehand and solemnly warned you. For God has not called us for impurity, but in holiness. (ESV)
 
 
 # If the world is encouraging you, you're probably in falsehood or taking the wide road
@@ -3355,13 +3402,13 @@ Love Jesus (being obedient to Him) **and** believe that He came from God:
 
 ## Get to know Jesus by following His commandments
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 > **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 You must obey Jesus:
 
@@ -9831,7 +9878,7 @@ Fulfilling the requirement of the law is required of us by God. God judges the s
 
 ### These people performed dead works, and never obeyed Jesus
 
-> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 To get to know Jesus, follow His commandments - be obedient to Jesus.
 
@@ -10639,7 +10686,7 @@ A person must/should **do** what Jesus said.
 
 > **Luke 6:47-49** - Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built.  But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great.
 
-> **Matthew 7:24-27** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **Matthew 7:24-27** - <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
     1  :  4102  pistis  pis'-tis
     2  
@@ -12804,6 +12851,15 @@ The world (the remaining people, who have not repented) may know that Father God
 > **Isaiah 11:5** - Righteousness shall be the belt of his waist, and faithfulness the belt of his loins. (ESV)
 
 > **Ephesians 5:9** - (for the fruit of light is found in all that is good and right and true), (ESV)
+
+
+### We are fighting against lawlessness
+
+> **II Thessalonians 2:9-13** - The coming of the lawless one is by the activity of Satan with all power and false signs and wonders, and with all wicked deception for those who are perishing, because they refused to love the truth and so be saved. Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth. (ESV)
+
+> **I Peter 1:2** - according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you. (ESV)
+
+We must have belief in the truth while being sanctified by the Spirit through faith.
 
 
 ## Breastplate of Righteousness

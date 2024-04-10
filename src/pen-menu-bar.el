@@ -950,6 +950,9 @@
           (bindings--define-key menu [mi-pen-org-bible-verse-repl]
             '(menu-item "Bible verse REPL" pen-org-bible-verse-repl
                         :help "Open REPL for copying Bible verses"))
+          (bindings--define-key menu [mi-org-verse-buttonize-buffer]
+            '(menu-item "Buttonise buffer Bible references" org-verse-buttonize-buffer
+                        :help "Buttonise buffer Bible references"))
           (bindings--define-key menu [cancel-menu]
             '(menu-item "Cancel" identity-command
                         :help "Cancel out of this menu"))
