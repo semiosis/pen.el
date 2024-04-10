@@ -97,6 +97,10 @@ What God does by way of initiative and what we do as a response is inextricably 
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
+**Paul toils**, <ins>struggling with all God's energy</ins> that **God works** powerfully within him:
+
+> **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his energy that \*he powerfully works within me.** (ESV)
+
 This was also the case with Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
@@ -229,6 +233,8 @@ So it's still extremely important for us to try to keep His commandments, and Hi
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
 And I wont stop following Jesus Christ until I know Him as personally as possible - I want His thoughts running through my mind like Father God's thoughts ran through His. Anything less than that and I am unsatisfied.
+
+> **I Corinthians 2:11-16** - For who knows a person's thoughts except the spirit of that person, which is in him? So also no one comprehends the thoughts of God except the Spirit of God. Now we have received not the spirit of the world, but the Spirit who is from God, that we might understand the things freely given us by God. And we impart this in words not taught by human wisdom but taught by the Spirit, interpreting spiritual truths to those who are spiritual. The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. The spiritual person judges all things, but is himself to be judged by no one. For who has understood the mind of the Lord so as to instruct him? But we have the mind of Christ. (ESV)
 
 Jesus knows us and we know Jesus:
 
@@ -1441,7 +1447,9 @@ We **must** put a stop to sin:
 
 > **Ezekiel 18:20-21** - The soul who sins shall die. The son shall not suffer for the iniquity of the father, nor the father suffer for the iniquity of the son. The righteousness of the righteous shall be upon himself, and the wickedness of the wicked shall be upon himself. But if a wicked person turns away from all his sins that he has committed and keeps all my statutes and does what is just and right, he shall surely live; he shall not die. (ESV)
 
-So I believe that Jesus saves us by giving us of His Spirit and helping us to put sin to death:
+> **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
+
+So I believe that Jesus saves us by giving us of His Spirit and helping us to put sin to death, through obedient faith:
 
 > **1 John 3:4-9** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness.  You know that **he appeared to take away sins, and in him there is no sin.  No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him.**  Little children, let no one deceive you.  Whoever practices righteousness is righteous, as he is righteous.  Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning.  The reason the Son of God appeared was to destroy the works of the devil.  No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God.  (ESV)
 
@@ -1523,9 +1531,47 @@ Obey God, obey Jesus:
 
 ## Gospel
 
-The Good News of Jesus Christ is **the power of God for salvation to everyone who believes** - **salvation from sin**, and **eternal life in Christ Jesus.**
+The Good News of Jesus Christ is **the \*power of God for salvation** to everyone who believes\* - **salvation from sin**, and **eternal life in Christ Jesus.**
 
-> **Romans 1:16** - For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek. (ESV)
+> **Romans 1:16** - For I am not ashamed of the gospel, for it is the **power of God for salvation** <ins>to everyone who believes,</ins> to the Jew first and also to the Greek. (ESV)
+
+The power of God **works** in us to sanctify us! We must realise that, that the gospel is the **power of God** for salvation to everyone who believes.
+
+We have believing, obedient faith in the powerful working of God:
+
+> **Colossians 2:12** - having been buried with him in baptism, in which you were also raised with him **through faith in the powerful working of God,** who raised him from the dead. (ESV)
+
+God works his power mightily towards those who believe:
+
+> **Ephesians 1:19** - and what is the immeasurable greatness of his power toward us who believe, according to the working of his great might (ESV)
+
+Our faith should rest in the power of God - we should know God's power experientially:
+
+> **I Corinthians 2:5** - that your faith might not rest in the wisdom of men but in the power of God. (ESV)
+
+**Paul toils**, <ins>struggling with all God's energy</ins> that **God works** powerfully within him:
+
+> **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his** energy that **he powerfully works within me.** (ESV)
+
+Paul could noticeably see the power working within them:
+
+> **Ephesians 3:20** - Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, (ESV)
+
+The true gospel comes in power:
+
+> **I Thessalonians 1:5** - because **our gospel** came to you **not only in word,** but also **in power** and in the Holy Spirit and with full conviction. You know what kind of men we proved to be among you for your sake. (ESV)
+
+By the power of God, we share in suffering for the gospel:
+
+> **II Timothy 1:8** - Therefore do not be ashamed of the testimony about our Lord, nor of me his prisoner, but **share in suffering for the gospel by the power of God,** (ESV)
+
+The gospel allows us to become partakers of the divine nature, having escaped the lusts of the world:
+
+> **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us <ins>His precious and magnificent promises,</ins> so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
+
+Some people will deny the **power** of the gospel:
+
+> **2Ti 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
 
 Jesus Christ bore the punishment for our iniquity to bring us peace with God:
 
@@ -3693,7 +3739,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     The true knowledge of Jesus grants us everything pertaining to life and godliness, allowing us to partake in the divine nature:
     
-    > **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust. (NASB)
+    > **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
     
     Being set free through the knowledge of our Lord and Savior Jesus Christ is at least in part being set free from the defilements of the world.
     
@@ -3735,6 +3781,8 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     > **II Thessalonians 2:11-14** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** <ins>and</ins> **belief in the truth**. To this he called you through our gospel, so that you may <ins>obtain the glory of our Lord Jesus Christ</ins>.
     
     Continuing to be sanctified by faith is a process where a person continues in Jesus' words because they are sanctified by faith in Jesus and that means ongoing trust and faithful obedience.
+    
+    > **Acts 26:18** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
     
     To be sanctified by faith in Jesus is an applied process, I think:
     
@@ -4451,7 +4499,7 @@ Even after arriving at the true knowledge through obedience, faith is further su
 
 The true knowledge of Jesus grants us everything pertaining to life and godliness, allowing us to partake in the divine nature. We should then reinforce the divine nature with such things:
 
-> **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust. (NASB)
+> **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
 
 Because, having **arrived** at the true knowledge of Jesus, we are partakers of the divine nature, in order to be fruitful we should supply to our faith those qualities:
 
