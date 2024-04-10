@@ -1535,7 +1535,10 @@ Obey God, obey Jesus:
 
 ## Gospel
 
-The Good News of Jesus Christ is **the \*power of God for salvation** to everyone who believes\* - **salvation from sin**, and **eternal life in Christ Jesus.**
+The Good News of Jesus Christ is **the power of God for salvation** (stress: **power of God** for salvation) to everyone who believes:
+
+-   **salvation from sin**, and
+-   **eternal life in Christ Jesus.**
 
 > **Romans 1:16** - For I am not ashamed of the gospel, for it is the **power of God for salvation** <ins>to everyone who believes,</ins> to the Jew first and also to the Greek. (ESV)
 
@@ -1557,7 +1560,7 @@ Our faith should rest in the power of God - we should know God's power experient
 
 > **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his** energy that **he powerfully works within me.** (ESV)
 
-Paul could noticeably see the power working within them:
+Paul could noticeably see the power working within him and the others:
 
 > **Ephesians 3:20** - Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, (ESV)
 
