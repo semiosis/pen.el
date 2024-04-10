@@ -177,7 +177,20 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 > **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world! (ESV)
 
 
-### So we become obedient to Jesus
+### We are saved through Jesus Christ
+
+We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him.
+
+> **John 3:16-19** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+We are not condemned if we believe in the name of Jesus Christ, the only Son of God. That's really good news!:
+
+> **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+
+
+### We become obedient to Jesus
+
+He paid the price for our sin:
 
 > **Romans 4:25** - who was delivered up for our trespasses and raised for our justification. (ESV)
 
@@ -185,18 +198,14 @@ And we are justified and have peace with God through our Lord Jesus Christ, who 
 
 > **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. (ESV)
 
-He paid the price for our sin.
-
 
 ### Eternal life and salvation is a gift received through faith
 
-We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We put our hope on Him to be our High Priest and Advocate, we obey Him as He saves us:
-
-> **John 3:16-19** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+We put our hope on Him to be our High Priest and Advocate, we obey Him as He saves us.
 
 These should really go hand in hand:
 
--   Believing in Jesus Christ for His finished work to be receive justification and eternal life and remain in relationship with Father God and with Jesus
+-   Believing in Jesus Christ for His finished work to receive justification and eternal life and remain in relationship with Father God and with Jesus
 -   Obeying Jesus Christ to be saved from the wrath of God should really go hand-in-hand.
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
@@ -779,6 +788,8 @@ I agree whole heartedly with John Piper here:
 
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
+
+> **Acts 4:12** - And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved. (ESV)
 
 It's <ins>faith in Jesus' name</ins> that is powerful, and it's with **faith** in Jesus' name that we are saved.
 
