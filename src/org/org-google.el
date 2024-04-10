@@ -6,8 +6,8 @@
 
 (org-add-link-type "google" 'org-g-open)
 (org-add-link-type "goo" 'org-g-open)
-(org-add-link-type "gl" 'org-g-open)
-(org-add-link-type "gr" 'org-g-open)
+;; (org-add-link-type "gl" 'org-g-open)
+;; (org-add-link-type "gr" 'org-g-open)
 (org-add-link-type "gg" 'org-g-open)
 (add-hook 'org-store-link-functions 'org-g-store-link)
 

@@ -220,7 +220,16 @@ PATH is the sexp to evaluate, as a string."
 (org-add-link-type "yt" 'follow-yt-link)
 (defun follow-yt-link (cmd)
   "Run pen-sps `CMD'."
-  (pen-nw (concat "yt-search " cmd " | pen-xa o")))
+  (engine/search-youtube cmd)
+  ;; (pen-nw (concat "yt-search " cmd " | pen-xa o"))
+  )
+
+(org-add-link-type "gr" 'follow-gr-link)
+(org-add-link-type "gl" 'follow-gr-link)
+(defun follow-gr-link (cmd)
+  (engine/search-google cmd)
+  ;; (pen-nw (concat "gr-search " cmd " | pen-xa o"))
+  )
 
 (org-add-link-type "z" 'zathura)
 (defun zathura (path)

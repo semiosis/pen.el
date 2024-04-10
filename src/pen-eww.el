@@ -1599,8 +1599,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
       (pen-chrome url))
      ((or (string-match-p "asciinema\\.org/a/" url))
       (nw (concat "o " (pen-q url))))
-     ((or (string-match-p "www\\.youtube\\.com/watch\\?v=" url)
-          (string-match-p "https?://youtu\\.be" url))
+     ((or (string-match-p "www\\.google\\.com/search\\?" url))
+      ;; http://www.google.com/search?ie=utf-8&oe=utf-8&q=farming%20technology
       (pen-sps (concat "ff " (pen-q url))))
      ((string-match-p "magnet:\\?xt" url)
       (pen-sps (concat "rt " (pen-q url))))
