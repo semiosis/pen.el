@@ -2332,3 +2332,6 @@ e ia org-index
 
 # For editing markdown code blocks
 e ia edit-indirect
+
+# e:deunicode
+plf install Text::Unidecode

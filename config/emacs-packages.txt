@@ -2382,3 +2382,4 @@ activities
 chemtable
 chembalance
 listen
+ivy-fuz

@@ -5,4 +5,6 @@ export TTY
 
 # test -f $HOME/.cargo/bin/compress || cargo install --git https://github.com/kornelski/deunicode &>/dev/null
 
-$HOME/.cargo/bin/compress "$@"
+# $HOME/.cargo/bin/compress "$@"
+
+cat

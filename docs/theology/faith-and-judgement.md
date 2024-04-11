@@ -109,6 +109,20 @@ This was also the case with Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
+Here it is further echoed by Paul:
+
+> **II Corinthians 8:3** - For they gave according to their means, as I can testify, and beyond their means, of their own free will, (ESV)
+
+> **II Corinthians 8:5** - and this, not as we expected, but they gave themselves first to the Lord and then by the will of God to us. (ESV)
+
+Paul commands <ins>giving oneself to others by the will of God</ins> (their will was doing God's will):
+
+> **II Corinthians 8:5** - and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
+
+Paul commands both desiring to do the will of God, and then encourages to complete the work they desire to do, but says that **if the will (obedience of heart) is there, it is acceptable** according to what a person has:
+
+> **II Corinthians 8:10-12** - And in this matter I give my judgment: this benefits you, who a year ago started <ins>not only to do this work</ins> but **also to desire to do it**. So now <ins>finish doing it as well</ins>, so that your **readiness in desiring it may be matched by your completing it** out of what you have. For if the readiness is there, it is acceptable according to what a person has, not according to what he does not have. (ESV)
+
 In "[The Blazing Center: Part 3 - YouTube](https://youtu.be/La7TpqSmuJk)" John Piper says, "Maybe my will could correspond to God's will so I could do His will and it would be my will?!" I agree with him.
 
 And through our obedience to Jesus we are saved. The Bible is clear - a works-based gospel based on God working through us saves:
@@ -1794,12 +1808,14 @@ We have knowledge of the truth through obedience to the gospel.
 > **2Ti 3:13** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
 
-## Be a disciple of Jesus to be set free
+## Be a disciple of Jesus to be set free and abide forever
 
 -   To be Jesus' disciple, we must abide in Jesus' word / obey His commandments.
     -   Have love for one another.
     -   Love Jesus as He loved us.
-    -   Carry our cross / bear one-another's burdens.
+    -   Carry our cross:
+        -   bear one-another's burdens.
+        -   renounce all that we have.
     -   Put following Jesus before all else.
 -   To come to know the truth, we must be Jesus' disciple.
 -   To be set free, we must know the truth.
@@ -1829,6 +1845,32 @@ See:
 > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 
 > **Romans 6:7** - For one who has died has been set free from sin. (ESV)
+
+
+### The high cost of following Christ
+
+Change your mind and He will change your heart
+
+[The High Cost of Following Christ | Billy Graham Classic Sermon - YouTube](https://www.youtube.com/watch?v=-vOGxGce3OM)
+
+> **Luke 14:27-33** - Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+
+Do not love the world:
+
+-   do not love desires of the flesh, and
+-   do not love the desires of the eyes, and
+-   do not love pride in possessions
+
+> **I John 2:15-17** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever. (ESV)
+
+> **Romans 12:1** - I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. (ESV)
+
+
+### Give our mind to Christ
+
+> **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised against the knowledge of God, and **take every thought captive to obey Christ,** (ESV)
+
+> **Proverbs 16:32** - Whoever is slow to anger is better than the mighty, and <ins>he who rules his spirit</ins> than he who takes a city. (ESV)
 
 
 ## The free gift of salvation is to be set free from sin to be a slave of righteousness
@@ -2539,6 +2581,10 @@ We must obey! This obedience is being led by the Spirit.
     Jesus' words speak for themselves:
     
     > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+    
+    Paul echos this - a willing mind (readiness to obey). They gave themselves first to the Lord and then by God's will to us:
+    
+    > **II Corinthians 8:3-12** - For they gave according to their means, as I can testify, and beyond their means, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but **they gave themselves first to the Lord and then by the will of God to us**. Accordingly, we urged Titus that as he had started, so he should complete among you this act of grace. But as you excel in everything—in faith, in speech, in knowledge, in all earnestness, and in our love for you—see that you excel in this act of grace also. I say this not as a command, but to prove by the earnestness of others that your love also is genuine. For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you by his poverty might become rich. And in this matter I give my judgment: this benefits you, who a year ago started not only to do this work but also to desire to do it. So now finish doing it as well, so that your readiness in desiring it may be matched by your completing it out of what you have. For if the readiness is there, it is acceptable according to what a person has, not according to what he does not have. (ESV)
     
     And doing the will of God is what it means to be led by the Spirit of God:
     
