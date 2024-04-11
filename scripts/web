@@ -16,6 +16,13 @@ shift
 CMD="$(cmd "$@")"
 : ${CMD:="$(cmd "$@")"}
 
+recode_html() {
+    perl -MHTML::Entities -pe 'decode_entities($_);'
+    php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);'
+
+    # recode html..
+}
+
 wget_title() {
     url="$1"
     shift
@@ -24,7 +31,10 @@ wget_title() {
         *onion*) { eval "oci my-torify wget -qO- $(aqf "$url")"; } ;;
         *) { oci wget -qO- "$url"; } ;;
     esac | \
-        scrape-title-from-html | recode html.. | c ascify
+        scrape-title-from-html | recode_html | c ascify
+
+    # recode html is to take something like &#39; and turn it into its character
+    # but recode html destroys emojis
 }
 
 chrome_title() {
