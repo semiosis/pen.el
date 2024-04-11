@@ -154,4 +154,11 @@ When FACELESS is non-nil, do not return matches where faces have been applied."
 
 (markdown-update-header-faces nil '(1.0 1.0 1.0 1.0 1.0 1.0))
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun markdown-code-block-lang-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (s-replace-regexp ",.*" "" res)))
+(advice-add 'markdown-code-block-lang :around #'markdown-code-block-lang-around-advice)
+;; (advice-remove 'markdown-code-block-lang #'markdown-code-block-lang-around-advice)
+
 (provide 'pen-markdown)

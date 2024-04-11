@@ -277,9 +277,10 @@
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list)
         :formatters '(lsp-format-buffer)
-        :docs '(lookup-thing-glossary-definition
+        :docs '(bible-mode-show-definition
+                lookup-thing-glossary-definition
                 dict-word
-                wordnut-lookup-current-word
+                ;; wordnut-lookup-current-word
                 helm-wordnet-suggest
                 lsp-describe-thing-at-point)
         :toggle-test '(projectile-toggle-between-implementation-and-test
@@ -441,18 +442,6 @@
                 wordnut-lookup-current-word
                 helm-wordnet-suggest
                 pen-docs-for-thing-given-screen)
-        :godef '()
-        :docsearch '()
-        :nextdef '()
-        :prevdef '()
-        :nexterr '()
-        :preverr '())
-
-(handle '(bible-mode)
-        :runmain '()
-        :repls '()
-        :formatters '()
-        :docs '(bible-mode-show-definition)
         :godef '()
         :docsearch '()
         :nextdef '()

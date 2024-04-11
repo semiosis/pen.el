@@ -2329,3 +2329,6 @@ e ia activities
 e ia listen
 
 e ia org-index
+
+# For editing markdown code blocks
+e ia edit-indirect

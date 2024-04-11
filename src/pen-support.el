@@ -1866,6 +1866,8 @@ when s is a string, set the clipboard to s"
             ((getenv "EMACSD") "$EMACSD")
             (user-emacs-directory "$EMACSD_BUILTIN")
             ((getenv "EMACSD_BUILTIN") "$EMACSD_BUILTIN")
+            ;; ((getenv "MYGIT_HOST") "$MYGIT_HOST")
+            ((getenv "MYGIT") "$MYGIT")
             (pen-prompts-directory "$PEN_PROMPTS_DIR")
             (pen-engines-directory "$PEN_ENGINES_DIR")
             ((getenv "PENELD") "$PENELD")
@@ -1900,7 +1902,8 @@ when s is a string, set the clipboard to s"
             ("$PEN" penconfdir)
             ("$PENEL" (f-join user-emacs-directory "pen.el"))
             ("$SCRIPTS" (f-join user-emacs-directory "pen.el/scripts"))
-            ("$MYGIT" "/volumes/home/shane/var/smulliga/source/git")
+            ("$MYGIT_HOST" "/volumes/home/shane/var/smulliga/source/git")
+            ("$MYGIT" "/root/repos")
             ("$HOME" user-home-directory)
             ;; ("^//" "/")
             ;; It must start with something. I still need the replace
