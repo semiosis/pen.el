@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# "recode html..." is to take something like &#39; and turn it into its character
+# but "recode html..." destroys emojis
+
 # recode html..
 perl -MHTML::Entities -pe 'decode_entities($_);'
 # php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);'
