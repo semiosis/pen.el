@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# recode html..
+perl -MHTML::Entities -pe 'decode_entities($_);'
+# php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);'
