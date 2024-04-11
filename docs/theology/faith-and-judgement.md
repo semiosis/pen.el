@@ -113,13 +113,11 @@ Here it is further echoed by Paul:
 
 > **II Corinthians 8:3** - For they gave according to their means, as I can testify, and beyond their means, of their own free will, (ESV)
 
-> **II Corinthians 8:5** - and this, not as we expected, but they gave themselves first to the Lord and then by the will of God to us. (ESV)
-
-Paul commands <ins>giving oneself to others by the will of God</ins> (their will was doing God's will):
+Paul commends <ins>giving oneself to others by the will of God</ins> (their will was doing God's will):
 
 > **II Corinthians 8:5** - and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
 
-Paul commands both desiring to do the will of God, and then encourages to complete the work they desire to do, but says that **if the will (obedience of heart) is there, it is acceptable** according to what a person has:
+Paul commends both desiring to do the will of God, and then encourages to complete the work they desire to do, but says that **if the will (obedience of heart) is there, it is acceptable** according to what a person has:
 
 > **II Corinthians 8:10-12** - And in this matter I give my judgment: this benefits you, who a year ago started <ins>not only to do this work</ins> but **also to desire to do it**. So now <ins>finish doing it as well</ins>, so that your **readiness in desiring it may be matched by your completing it** out of what you have. For if the readiness is there, it is acceptable according to what a person has, not according to what he does not have. (ESV)
 
