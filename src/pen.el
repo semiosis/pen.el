@@ -2469,8 +2469,9 @@ May use to generate code from comments."
 (if (inside-docker-p)
 (require 'pen-ov-highlight))
 (require 'pen-racket)
-(require 'pen-activities)
-(require 'pen-chemistry)
+(if (inside-docker-p)
+  (require 'pen-activities)
+  (require 'pen-chemistry))
 ;; For building games, etc.
 (require 'pen-hypertext)
 (if (inside-docker-p)
@@ -2478,7 +2479,7 @@ May use to generate code from comments."
 (require 'pen-platform-game))
 ;; (require 'pen-hn)
 (if (inside-docker-p)
-(require 'pen-denote))
+  (require 'pen-denote))
 ;; I think hyperbole broke the menu bar
 ;; (require 'pen-hyperbole)
 (require 'pen-fun)

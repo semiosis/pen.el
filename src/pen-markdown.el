@@ -1,4 +1,6 @@
 (require 'markdown-mode)
+(require 'edit-indirect)
+
 (setq markdown-command "pandoc")
 
 (setq markdown-fontify-code-blocks-natively t)
