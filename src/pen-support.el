@@ -1547,6 +1547,7 @@ when s is a string, set the clipboard to s"
                          s))
                      "")))))))
 (defalias 'read-string-hist 'completing-read-hist)
+(defalias 'rshi 'completing-read-hist)
 
 (defun vector2list (pen-v)
   (append pen-v nil))

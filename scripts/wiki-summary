@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# CMD="$(cmd-nice "$@")"
+# : ${CMD:="$(cmd-nice "$@")"}
+
+CMD="$@"
+
+term="$(p "$term" | urlencode)"
+
+term="$CMD"
+test -n "$term" || exit 1
+
+term="$(p "$term" | sed 's/^http.*\///')"
+
+0</dev/null curl "https://en.wikipedia.org/w/api.php?continue=&action=query&titles=$term&prop=extracts&exintro=&explaintext=&format=json&redirects" |
+    jq -r '( .query.pages | keys[0] ) as $k | .query.pages[$k].extract // empty' |
+    pa -E "ttp | vs"

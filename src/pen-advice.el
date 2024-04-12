@@ -15,13 +15,6 @@
      res)
    arg))
 
-(defun wiki-summary-after-advice (&rest args)
-  (toggle-read-only)
-  (pen-region-pipe "ttp")
-  (toggle-read-only))
-
-(advice-add 'wiki-summary/format-summary-in-buffer :after 'wiki-summary-after-advice)
-
 (defun compile-goto-error-after-advice (&rest args)
   (delete-other-windows))
 (advice-add 'compile-goto-error :after 'compile-goto-error-after-advice)
