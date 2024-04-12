@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+input_fp="$(cat | tf txt)"
+
+longest_line="$(cat "$input_fp" | awk ' { if ( length > x ) { x = length; y = $0 } }END{ print y }')"
+len_ll="$(printf -- "%s" "$longest_line" | wc -c)"
+
+cat "$input_fp" | awk '{printf "%-'$len_ll's\n", $0}'
+rm -f "$input_fp"

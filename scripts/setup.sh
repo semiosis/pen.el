@@ -2342,3 +2342,6 @@ git clone "https://github.com/velorek1/terminalperiodictable"
 cd terminalperiodictable
 make
 )
+
+agi rs
+agi datamash
