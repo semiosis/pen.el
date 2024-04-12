@@ -39,4 +39,24 @@
 
 (advice-add 'wiki-summary/format-summary-in-buffer :after 'wiki-summary-after-advice)
 
+(defun wikipedia-search (initial-input)
+  (interactive (list (sor (pen-selected-text t))))
+  (if (>= (prefix-numeric-value current-global-prefix-arg) 4)
+      (if initial-input
+          (wiki-summary initial-input)
+        (call-interactively 'wiki-summary))
+    (if initial-input
+        (helm-wikipedia-suggest initial-input)
+      (call-interactively 'helm-wikipedia-suggest))))
+
+(defun helm-wikipedia-suggest (&optional initial-input)
+  "Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest."
+  (interactive)
+  (let ((helm-input-idle-delay helm-wikipedia-input-idle-delay)) 
+    (helm :sources 'helm-source-wikipedia-suggest
+          :buffer "*helm wikipedia*"
+          :input initial-input
+          :input-idle-delay (max 0.4 helm-input-idle-delay)
+          :history 'helm-wikipedia-history)))
+
 (provide 'pen-wiki)

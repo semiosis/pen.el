@@ -671,7 +671,7 @@ _p_: undo  _n_: redo _s_: save _l_: load   "
                          ("k" #'pen-k8s-hub-search "k8s hub")
                          ("j" #'eegr "Google")
                          ("g" #'pen-egr-guru99 "guru99")
-                         ("w" 'wiki-summary "wiki summary")
+                         ("w" 'wikipedia-search "wikipedia search")
                          ("9" #'pen-egr-guru99 "guru99")
                          ("x" #'google_example "google example")
                          ("a" #'pen-github-awesome-search-and-clone "github awesome search and clone")
