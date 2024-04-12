@@ -71,6 +71,7 @@
 ;; https://en.wikipedia.org/wiki/Hassium
 ;; Ah, I see, this list is out of order
 ;; TODO Get the list of elements anew
+;; https://en.wikipedia.org/wiki/List_of_chemical_elements
 (defset chem-atomic-data
         '(("H" s)
           ("He" s)

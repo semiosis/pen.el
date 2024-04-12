@@ -2335,3 +2335,10 @@ e ia edit-indirect
 
 # e:deunicode
 plf install Text::Unidecode
+
+(
+cd ~/repos
+git clone "https://github.com/velorek1/terminalperiodictable"
+cd terminalperiodictable
+make
+)
