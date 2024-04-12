@@ -173,4 +173,13 @@ SEQ __is__ modified."
          (i (modulo mod n)))
     (-nth i lst)))
 
+(defun number-a-list-last-element (l)
+  (loop for i from 1 to (length l)
+        collect
+        (append (nth (- i 1) l) `(,i))))
+
+(comment
+ (number-a-list-last-element
+  chem-atomic-data))
+
 (provide 'pen-lists)

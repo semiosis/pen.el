@@ -379,9 +379,13 @@
           (51 . ("Matthew 7:26-27"))
           (52 . ("Matthew 7:28-29"))))
 
-(defun d-group-get-weekly-scripture-memory (&optional week)
+(defun d-group-get-weekly-scripture-memory-nt (&optional week)
   (setq week (or week (date-week-number)))
   (list2str (cdr (assoc week d-group-weekly-scripture-memory-nt260))))
+
+(defun d-group-get-weekly-scripture-memory-ot (&optional week)
+  (setq week (or week (date-week-number)))
+  (list2str (cdr (assoc week d-group-weekly-scripture-memory-ot260))))
 
 (defun d-group-linkify-bible-verse-ref (ref &optional tpop)
   (let ((tmwindowtype
@@ -401,13 +405,14 @@
   (list2str
    (loop for row in
          (-zip-lists-fill ""
-                          (str2lines (d-group-get-weekly-scripture-memory week))
+                          (str2lines (d-group-get-weekly-scripture-memory-nt week))
                           (str2lines (d-group-get-weekly-reading-nt week))
                           (str2lines (d-group-get-weekly-reading-fnd week))
+                          (str2lines (d-group-get-weekly-scripture-memory-ot week))
                           (str2lines (d-group-get-weekly-reading-ot week)))
          collect
-         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " | " (d-group-linkify-bible-verse-ref (fourth row)) " |")))
-  ;; (pen-yas-expand-string "| [[sh:bible-read-passage nasb `(d-group-get-weekly-scripture-memory)`]] | [[sh:bible-read-passage nasb `(d-group-get-weekly-reading)`]] |")
+         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " | " (d-group-linkify-bible-verse-ref (fourth row)) " | " (d-group-linkify-bible-verse-ref (fifth row)) " |")))
+  ;; (pen-yas-expand-string "| [[sh:bible-read-passage nasb `(d-group-get-weekly-scripture-memory-nt)`]] | [[sh:bible-read-passage nasb `(d-group-get-weekly-reading)`]] |")
   )
 
 (defun d-group-weekly-journal-dir ()
