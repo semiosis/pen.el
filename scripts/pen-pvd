@@ -4,6 +4,8 @@
 
 # https://www.visidata.org/install/
 
+# https://jsvine.github.io/intro-to-visidata
+
 # Run a command like M-x
 # https://www.visidata.org/docs/plugins/
 # Use "space" - it's like spacemacs.
@@ -43,7 +45,8 @@ is_tty() {
     [[ -t 1 ]]
 }
 
-: "${BLACK_AND_WHITE:="y"}"
+# : "${BLACK_AND_WHITE:="y"}"
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -2) {
