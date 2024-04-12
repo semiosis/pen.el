@@ -72,6 +72,12 @@
 ;; Ah, I see, this list is out of order
 ;; TODO Get the list of elements anew
 ;; https://en.wikipedia.org/wiki/List_of_chemical_elements
+
+(comment
+ ;; TODO Make this dream come true - open a csv into a tuple of tuples
+ ;; or into some kind of queryable data structure - what does elisp use?
+ (csv-load "$PEN/documents/notes/ws/chemistry/list-of-chemical-elements.tsv"))
+
 (defset chem-atomic-data
         '(("H" s)
           ("He" s)
