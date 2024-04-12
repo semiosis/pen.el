@@ -9,7 +9,8 @@
   'action #'org-verse-button-verse
   'follow-link t
   'face 'org-verse-number-face
-  'help-echo "Clic le boutton pour lire le verset."
+  ;; 'help-echo "Clic le boutton pour lire le verset."
+  'help-echo "Click the button to read the verse"
   'help-args "test")
 
 (defun org-verse-button-verse (button)
