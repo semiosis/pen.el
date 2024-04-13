@@ -237,6 +237,7 @@ tsy                                                                             
 tsyh                                                                                # timestampify- Human readable
 od -cb                                                                              # into octal human readable
 u2l                                                                                 # upper case to lower case
+l2u                                                                                 # lower case to upper case
 sed -e 's/\(.*\)/\L\1/'                                                             # GNU sed upper case to lower case
 sed -r 's/\w+/\u&/g'                                                                # GNU sed camel case sentence \u = upper next character of match
 perl -pe 's/\e\[?.*?[\@-~]//g'                                                      # strip all ansi codes
