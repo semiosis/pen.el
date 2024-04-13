@@ -9,7 +9,7 @@ export TTY
 
 # TODO Make it so this exchanges spaces ' ' before and after translation
 
-transpose-chars-awk.sh | erase-trailing-whitespace | pavs
+sed 's/ /✓/g' | transpose-chars-awk.sh | erase-trailing-whitespace | sed 's/✓/ /g' | pavs
 
 # ub sps v "$input_fp"
 
