@@ -1,3 +1,23 @@
 #!/bin/bash
 
-sed -e '/^$/d' | sed -e 1d -e 's/^ //' | q
+tf_2d21d="$(ux tf 2d21d || echo /dev/null)"
+trap "rm \"$tf_2d21d\" 2>/dev/null" 0
+
+sed -e '/^$/d' > "$tf_2d21d"
+
+if cat "$tf_2d21d" | grep -q -P '^\\'; then
+    block="$(cat "$tf_2d21d" | sed 1d | sed '/^[^ ]/,$d')"
+    printf -- "%s" "$block" | sed 's/^ //' | q
+    rest="$(cat "$tf_2d21d" | sed 1d | sed -n '/^[^ ]/,$p')"
+    printf -- "%s" " $rest"
+else
+    cat "$tf_2d21d"
+fi
+printf -- "%s" " "
+
+# input="$(cat)"
+# echo "A"
+# cat
+# echo "Z"
+
+# sed -e '/^\\/d' | q # -e 's/^ //' | q

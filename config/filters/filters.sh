@@ -239,6 +239,7 @@ od -cb                                                                          
 u2l                                                                                 # upper case to lower case
 l2u                                                                                 # lower case to upper case
 sed -e 's/\(.*\)/\L\1/'                                                             # GNU sed upper case to lower case
+sed -e 's/\(.*\)/\U\1/'                                                             # GNU sed lower case to upper case
 sed -r 's/\w+/\u&/g'                                                                # GNU sed camel case sentence \u = upper next character of match
 perl -pe 's/\e\[?.*?[\@-~]//g'                                                      # strip all ansi codes
 perl -pe 's/\e\[[\d;]*m//g;'                                                        # strip ansi color codes
@@ -412,7 +413,7 @@ definition-list-to-formatted-definitions.sh
 sps siq
 sps awkward
 sed -u -z 's/[a-z]/\U&/g'                                                           # to uppercase
-sed -u -z 's/[a-z]/\U&/g'                                                           # to lowercase
+sed -u -z 's/[A-Z]/\L&/g'                                                           # to lowercase
 number-lines-between-hashes                                                         # Number lines between hashes
 sed 's/ / /g'                                                                       # No invisible whitespace
 cut -d ' ' -f2-                                                                     # Remove first word

@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+sed -u -z 's/[a-z]/\U&/g'

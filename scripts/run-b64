@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# run-b64 J2VjaG8nICdoaSc=
+# run-b64 "$(cmd-b64 echo hi)"
+# eval "$(cmd-b64 -mk echo hi)"
+
+# eval "echo $(echo "$@" | base64 -d)"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -show) {
+        show=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# echo "$@" | base64 -d | tv &>/dev/null
+if test "$show" = "y"; then
+    echo "$@" | base64 -d
+else
+    eval "$(echo "$@" | base64 -d)"
+fi

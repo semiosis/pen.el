@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+sed -u -z 's/[A-Z]/\L&/g'
+# sed -e 's/\(.*\)/\L\1/'

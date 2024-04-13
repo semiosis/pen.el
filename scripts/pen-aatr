@@ -160,13 +160,25 @@ function print_transformed_or_raw_record_with_irs(id) {
 HEREDOC
 
 f="$filter_cmd | sed -z \"s/${rsep_escaped}/__RS_PLACEHOLDER__/\""
+# echo "$f" | tv &>/dev/null
+f="$(cmd-b64 -mk eval "$f")"
+# f="$(p "$f" | s field 2)"
+# f="$(run-b64 -show "$f")"
+# echo "$f" | tv &>/dev/null
+# exit
+
+# echo "$f" | tv &>/dev/null
 
 fargs+=("$awkscript")
 # fargs+=(-f "/root/.emacs.d/host/pen.el/scripts/pen-aatr.awk")
 
+# printf -- "%s\n" "$RSEP" | tv &>/dev/null
+# cmd sed -z "s/$RSEP//g" | tv &>/dev/null
+# cmd sed -z "s/$rsep_escaped//g" | tv &>/dev/null
+
 gawk -v irs="$IGNORE_RS" -v r="$SELECTED_RECORD_ID" -v rs_unesc="$RSEP" -v RS="$rsep_escaped" -v ORS="" -v cmd="$f" -v FS=" " -v OFS=" " "${fargs[@]}" | sed -z "s/__RS_PLACEHOLDER__/$RSEP/g" | {
     if test "$REMOVE_RS" = "y"; then
-        sed -z "s/$RSEP//g"
+        sed -z "s/$rsep_escaped//g"
     else
         cat
     fi
