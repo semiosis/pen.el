@@ -6,7 +6,7 @@ trap "rm \"$tf_2d21d\" 2>/dev/null" 0
 sed -e '/^$/d' > "$tf_2d21d"
 
 if cat "$tf_2d21d" | grep -q -P '^\\'; then
-    block="$(cat "$tf_2d21d" | sed 1d | sed '/^[^ ]/,$d')"
+    block="$(cat "$tf_2d21d" | sed 1d | sed '/^[^ ]/,$d' | sed 's/|$//')"
     printf -- "%s" "$block" | sed 's/^ //' | q
     rest="$(cat "$tf_2d21d" | sed 1d | sed -n '/^[^ ]/,$p')"
     printf -- "%s" " $rest"

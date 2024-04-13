@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# TODO Finish this script
+# sp +/"^\* TODO I really want a 2d shell language" "$HOME/notes/todo.org"
+
+# cmd-2d-to-1d-full
+
+tm n "$f :: NOT IMPLEMENTED"
