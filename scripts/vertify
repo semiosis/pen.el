@@ -3,9 +3,8 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-# vertical sed
-# ------------
-# example:
-# cat `which vsed` | vsed 's/bo/__/g' | pavs
+# Examples:
+# - vertify sed "$@"
+# - vertify perl "$@"
 
-vertify sed "$@"
+transpose-characters.sh | "$@" | transpose-characters.sh
