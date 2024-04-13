@@ -176,6 +176,7 @@ pen-str unonelineify
 pen-str unonelineify-safe
 ruby -ne 'print $stdin.eof ? $_.strip : $_'                                         # chomp last line of stdin remove final newline
 s chomp                                                                             # chomp last line of stdin remove final newline
+s longest-line
 transpose-words.sh                                                                  # swap rows and columns by words
 datamash transpose                                                                  # swap rows and columns by words
 datamash rmdup 1 2> /dev/null                                                       # Remove duplicates rows according to the 1st first column
@@ -476,3 +477,5 @@ tv
 sha
 fix-github-markdown
 canonicalise-bible-ref # Could be a book title or entire ref
+fill-lines-to-longest-line
+f-point-out-parentheses

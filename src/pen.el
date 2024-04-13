@@ -2381,6 +2381,7 @@ May use to generate code from comments."
 (require 'pen-ii)
 (require 'pen-hymnal)
 (require 'pen-tty)
+(require 'pen-els)
 (require 'pen-tmux)
 (require 'pen-looking-glass)
 (if (inside-docker-p)

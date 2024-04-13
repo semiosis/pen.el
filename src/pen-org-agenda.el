@@ -652,4 +652,12 @@ items if they have an hour specification like [h]h:mm."
 (define-key org-agenda-mode-map (kbd "g") 'org-agenda-refresh)
 (define-key org-agenda-mode-map (kbd "r") 'helm-org-ql-agenda-files)
 
+;; nadvice - proc is the original function, passed in. do not modify
+(defun org-agenda-property-add-properties-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (goto-char (point-min))
+    res))
+(advice-add 'org-agenda-property-add-properties :around #'org-agenda-property-add-properties-around-advice)
+;; (advice-remove 'org-agenda-property-add-properties #'org-agenda-property-add-properties-around-advice)
+
 (provide 'pen-org-agenda)

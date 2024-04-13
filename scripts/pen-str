@@ -206,6 +206,11 @@ case "$f" in
     }
     ;;
 
+    longest-line) {
+        awk ' { if ( length > x ) { x = length; y = $0 } }END{ print y }'
+    }
+    ;;
+
     # These are more reversible
     onelineify-safe) {
         pen-encode-string | sed -z 's/\n/\\n/g'

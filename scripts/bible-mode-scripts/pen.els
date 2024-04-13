@@ -208,30 +208,6 @@
                  (f-delete tf_exit_code)))
         output))))
 
-(defun bible-canonicalise-book-title (ref &optional nilfailure)
-  (setq ref (s-replace-regexp "\\(\\. \\?\\|\\.\\)" " " ref))
-  (setq ref (esed "\\.$" "" ref))
-  (cl-loop for tp in bible-book-map-names
-           until ;; (member ref (cdr tp))
-           (member-similar ref tp)
-           ;; (member ref tp)
-           finally return
-           (if ;; (member ref (cdr tp))
-               (member-similar ref tp)
-               ;; (member ref tp)
-               (car tp)
-             (if nilfailure
-                 nil
-               ref))))
-
-(defun bible-canonicalise-ref (ref &optional nilfailure)
-  (let* ((booktitle (s-replace-regexp "[. ][0-9].*" "" ref))
-         (chapverse (pen-sn-basic "sed -n 's/.*[. ]\\([0-9].*\\)/\\1/p'" ref))
-         (booktitle (bible-canonicalise-book-title booktitle nilfailure)))
-    (if (test-n chapverse)
-        (concat booktitle " " chapverse)
-      booktitle)))
-
 ;; (message "%s" (bible-canonicalise-ref (car argv) (cadr argv)))
 
 (defun cat-to-file (stdin file_path)
@@ -298,6 +274,9 @@
 ;; may contain the stdin, or alternatively it should contain the value of the first argument,
 ;; if it exists.
 ;; The input may also simply be empty, and unused.
+
+;; Shared functions for pen.els and pen
+(maybe-load "$EMACSD/pen.el/src/pen-els.el")
 
 ;; Take the function name as the first argument
 (let* ((fun_name (car argv))
