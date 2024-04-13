@@ -131,4 +131,13 @@
 
 (minibuffer-header-mode t)
 
+
+;; This fixed a problem with a disappearing header line
+(defun kill-all-local-variables-around-advice (proc &rest args)
+  (let ((res (apply proc args)))
+    (ph--display-header)
+    res))
+(advice-add 'kill-all-local-variables :around #'kill-all-local-variables-around-advice)
+;; (advice-remove 'kill-all-local-variables #'kill-all-local-variables-around-advice)
+
 (provide 'pen-header-line)
