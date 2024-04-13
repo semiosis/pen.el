@@ -7,7 +7,7 @@ export TTY
 
 # fill-lines-to-longest-line | transpose-chars-awk.sh | pavs
 
-# TODO Make it so this
+# TODO Make it so this exchanges spaces ' ' before and after translation
 
 transpose-chars-awk.sh | erase-trailing-whitespace | pavs
 
