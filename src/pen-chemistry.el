@@ -208,6 +208,7 @@
     (t 'chemtable-hl-other-face)))
 
 ;; TODO Put which face to use inside a lookup table, instead of inside the logic
+;; mx:chemtable
 ;; j:chemtable
 ;; cat $EMACSD_BUILTIN/elpa/chemtable-20230314.1825/chemtable.el | scrape "chemtable-.-block-face \"..\""
 
