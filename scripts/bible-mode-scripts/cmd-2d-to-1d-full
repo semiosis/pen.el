@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# pen-aatr -k -r '^\\' cmd-2d-to-1d-block
+# pen-aatr -r "\n\\" cmd-2d-to-1d-block
+pen-aatr -r "\n\\" cat

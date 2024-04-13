@@ -231,5 +231,17 @@ usually part of a code-block."
     (if (sor error)
         (sx-search-lang error))))
 
+(comment
+ ;; nadvice - proc is the original function, passed in. do not modify
+ (defun sx-request-make-around-advice (proc &rest args)
+   (message "sx-request-make called with args %S" args)
+   (let ((res (apply proc args)))
+     ;; (message "sx-request-make returned %S" res)
+     res))
+ (advice-add 'sx-request-make :around #'sx-request-make-around-advice)
+ (advice-remove 'sx-request-make #'sx-request-make-around-advice))
+
+;; (memoize 'sx-request-make)
+;; (memoize-restore 'sx-request-make)
 
 (provide 'pen-sx)
