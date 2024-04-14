@@ -288,6 +288,10 @@ Likewise, that's the type of selfless love we should have. Selfless love while t
 
 The purest selfless love loves while not breaking faith with God. Jesus maintained faithfulness to God while maintaining selfless love. We should endeavour to have the same mind.
 
+We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
+
+> **Matthew 10:16-18** - Behold, I am sending you out as **sheep in the midst of wolves**, so be wise as serpents and **innocent as doves**. Beware of men, for they will deliver you over to courts and flog you in their synagogues, and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
+
 > I conjecture that, effectively, `Obedience = Believing the gospel, and Selfless love` (no longer serving yourself but serving Christ. It's obeying Jesus.).
 > 
 > Nevertheless, [where we fall short of obedience, Jesus has us covered](https://youtu.be/tqtl-sXeTmA?t=1459). But if we are keeping Jesus' commandments then we're abiding in His love.
@@ -2554,7 +2558,55 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Colossians 2:18-19** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God.
 
-5.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
+5.  Christian faith looks like this
+
+    We worship God by the Spirit, following Jesus, not the flesh:
+    
+    > **Philippians 3:2-3** - Look out for the dogs, look out for the evildoers, look out for those who mutilate the flesh. For we are the real circumcision, who worship by the Spirit of God and glory in Christ Jesus and put no confidence in the flesh— (ESV)
+    
+    Paul says that pursuing the righteousness that is by Mosaic law, is placing confidence in the flesh:
+    
+    > **Philippians 3:4-7** - though I myself have reason for confidence in the flesh also. If anyone else thinks he has reason for confidence in the flesh, I have more: circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; as to the law, a Pharisee; as to zeal, a persecutor of the church; as to righteousness, under the law blameless. But whatever gain I had, I counted as loss for the sake of Christ. (ESV)
+    
+    But to put confidence in the Spirit is to not to abandon obedience, but to seek instead to know Christ Jesus, our Lord, with obedient faith to Jesus:
+    
+    > **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
+    
+    The righteousness from God that depends on faith, faith in Christ:
+    
+    -   Know him and the power of His resurrection
+    -   Share His sufferings
+    -   Become like Him in His death
+    
+    Jesus literally commanded us to behave in this way, so keep Jesus' commandments:
+    
+    > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
+    
+    One example of a command from Jesus:
+    
+    > **Matthew 5:42** - Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
+    
+    > **Mark 12:30-31** - And you shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength. The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these. (ESV)
+    
+    We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
+    
+    > **Matthew 10:16-18** - Behold, I am sending you out as sheep in the midst of wolves, so be wise as serpents and innocent as doves. Beware of men, for they will deliver you over to courts and flog you in their synagogues, and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
+    
+    > **Matthew 10:39** - Whoever finds his life will lose it, and whoever loses his life for my sake will find it. (ESV)
+    
+    > **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+    
+    It's the same gospel:
+    
+    > **Mark 8:35** - For whoever would save his life will lose it, but whoever loses his life for my sake and the gospel's will save it. (ESV)
+    
+    > **Mark 10:19-30** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. Disheartened by the saying, he went away sorrowful, for he had great possessions. And Jesus looked around and said to his disciples, How difficult it will be for those who have wealth to enter the kingdom of God! And the disciples were amazed at his words. But Jesus said to them again, Children, how difficult it is to enter the kingdom of God! It is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. And they were exceedingly astonished, and said to him, Then who can be saved? Jesus looked at them and said, With man it is impossible, but not with God. For all things are possible with God. Peter began to say to him, See, we have left everything and followed you. Jesus said, Truly, I say to you, there is no one who has left house or brothers or sisters or mother or father or children or lands, for my sake and for the gospel, who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life. (ESV)
+    
+    > **Mark 13:9-10** - But be on your guard. For they will deliver you over to councils, and you will be beaten in synagogues, and you will stand before governors and kings for my sake, to bear witness before them. And the gospel must first be proclaimed to all nations. (ESV)
+    
+    > **Luke 9:23-26** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. For what does it profit a man if he gains the whole world and loses or forfeits himself? For whoever is ashamed of me and of my words, of him will the Son of Man be ashamed when he comes in his glory and the glory of the Father and of the holy angels. (ESV)
+
+6.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
 
     We should clean ourselves up:
     
@@ -2592,7 +2644,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
-6.  We **must** clean ourselves up with God's help
+7.  We **must** clean ourselves up with God's help
 
     > **Daniel 12:9-10** - He said, Go your way, Daniel, for the words are shut up and sealed until the time of the end.  Many shall purify themselves and make themselves white and be refined, but the wicked shall act wickedly. And none of the wicked shall understand, but those who are wise shall understand.
     
@@ -7359,6 +7411,8 @@ We must obey Jesus.
 
 > **Colossians 1:28** - Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ. (ESV)
 
+> **Philippians 3:8-17** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. **Let those of us who are mature think this way**, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. (ESV)
+
 
 # Faith
 
@@ -9245,9 +9299,15 @@ As far as forsaking God's precepts for worldly precepts go, the truth is that wh
 
 > **Acts 16:6** - And they went through the region of Phrygia and Galatia, having been **forbidden by the Holy Spirit to speak the word in Asia.** (ESV)
 
+> **Philippians 4:19** - And my **God will supply every need of yours** according to his riches in glory in Christ Jesus. (ESV)
+
+> **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+
 God's precept isn't that the rich are the only ones who are allowed to marry. Otherwise robots will be taking human wives before the poor are allowed to marry. I'm a Christian not a transhumanist. We've got to stick to God's precepts and go against the world:
 
 > **II Timothy 3:12** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, (ESV)
+
+> **John 15:19** - If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. (ESV)
 
 We have to obey God. Jesus commandment is to give to the one that asks. If I had to choose between obeying Jesus and holding onto lots of money so I could get a wife, then it is the latter which is actually stealing, and stealing from God, not the former:
 
@@ -10973,9 +11033,25 @@ their faithfulness to God and their conviction.
 
 ## Justification by faith - Jews + Gentiles, and in-between
 
-Paul preached the same gospel as Jesus, Peter and John, but some people think Paul's gospel is different - but that is because they have been deceived by the two-gospel heresy:
+There is only the one gospel message: the same gospel that Paul, Jesus, Peter and John preached.
+
+Paul preached the same gospel as Jesus before
+His crucifixion, and the same gospel that
+Peter and John preached, but some people think
+Paul's gospel is different - but that is
+because they have been deceived by the two-gospel heresy:
 
 -   [The Two Gospel Heresy - Anton Bosch](https://antonbosch.org/the-two-gospel-heresy)
+
+Even before His crucifixion, it's clear Jesus taught the New Covenant:
+
+> **Luke 22:20** - And likewise the cup after they had eaten, saying, This cup that is poured out for you is the new covenant in my blood. (ESV)
+
+And according to Paul, Jesus' commands are still binding:
+
+> **Acts 20:35** - In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, It is more blessed to give than to receive. (ESV)
+
+> **I Corinthians 11:24-25** - and when he had given thanks, he broke it, and said, This is my body which is for you. Do this in remembrance of me. In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me. (ESV)
 
 Jesus' words do not pass away, and the truths He spoke before being crucified remain true:
 
@@ -11561,7 +11637,7 @@ Stress: Trust in God.
 
 &#x2014;
 
-> **Philippians 3:21** - who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
+> **Philippians 3:20-21** - But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ, who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
 
 > **Philippians 4:1** - Therefore, my brothers, whom I love and long for, my joy and crown, stand firm thus in the Lord, my beloved. (ESV)
 
@@ -12114,7 +12190,9 @@ We may die a natural death in this life but be raised at the second coming with 
 
 > **I Corinthians 15:42-48** - So is it with the resurrection of the dead. What is sown is perishable; what is raised is imperishable.  It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power.  It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual body.  Thus it is written, The first man Adam became a living being; the last Adam became a life-giving spirit.  But it is not the spiritual that is first but the natural, and then the spiritual.  The first man was from the earth, a man of dust; the second man is from heaven.  As was the man of dust, so also are those who are of the dust, and as is the man of heaven, so also are those who are of heaven.
 
-> **Philippians 3:21** -  who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself.  (ESV)
+Jesus can subject all things to Himself. By that power, Jesus will transform our lowly body to be like His glorious body:
+
+> **Philippians 3:20-21** - But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ, who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
 
 > **1 Corinthians 15:49** -  Just as we have borne the image of the man of dust, we shall also bear the image of the man of heaven.  (ESV)
 
@@ -12382,7 +12460,7 @@ Pray for kingdom laborers. Pray that God sends out kingdom laborers:
 
 Be on your guard. Jesus sends us out to be like scapegoats. Be wise and remain blameless:
 
-> **Matthew 10:16-17** - Behold, I am sending you out as sheep in the midst of wolves, so be wise as serpents and innocent as doves. Beware of men, for they will deliver you over to courts and flog you in their synagogues, (ESV)
+> **Matthew 10:16-17** - Behold, I am sending you out as **sheep in the midst of wolves**, so be wise as serpents and **innocent as doves**. Beware of men, for they will deliver you over to courts and flog you in their synagogues, (ESV)
 
 Do not fear persecutors. Fear God. But put your trust in God because He takes care of those who fear Him. Speak the truth:
 
@@ -13131,6 +13209,10 @@ So put into practice Jesus Christ's commandments, and line up your will line up 
 > **I John 5:14-15** - And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
 
 > **III John 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God.
+
+We must be imitators of Christ Jesus. See what Paul is doing as an example of imitating Christ:
+
+> **Philippians 3:12-21** - Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. Let those of us who are mature think this way, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. For many, of whom I have often told you and now tell you even with tears, walk as enemies of the cross of Christ. Their end is destruction, their god is their belly, and they glory in their shame, with minds set on earthly things. But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ, who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
 
 If we love one another [as He loved us]:
 

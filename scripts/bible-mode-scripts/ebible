@@ -16,6 +16,21 @@ sn="$(basename -- "$0")"
 
 # set -a # export the functions and variables
 
+. $PENEL_DIR/scripts/utils.sh
+
+# (eshell-environment-variables)
+# TODO Make these export here
+# j:eshell-variable-aliases-list
+
+if printf -- "%s\n" "$INSIDE_EMACS" | grep -q -P ',eshell$'; then
+    export NOEMACS=y
+    export BORDER=n
+    export ONELINED=y
+    export DECORATED=y
+    isstdoutpipe=0
+    export NO_PAGER=y
+fi
+
 if ! test -n "$BORDER"; then
     if test "$EMACS_BABEL" = "y"; then
         set -- -nbd "$@"
@@ -24,36 +39,38 @@ if ! test -n "$BORDER"; then
     fi
 fi
 
-. $PENEL_DIR/scripts/utils.sh
-
 # if test "$isstdoutpipe" = 0 && ! test "$NO_CI" = y  && ! test "$INSIDE_CI" = y; then
 #     ocif "$sn" "$@"
 #     exit "$?"
 # fi
 
 ebible_pager() {
-    while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
-        "") { shift; }; ;;
-        -s) {
-            slug="$2"
-            shift
-            shift
-        }
-        ;;
-
-        *) break;
-    esac; done
-
-    if test "$COLUMNATED" = "y"; then
-        vim_cmd="colvs -nls -num"
+    if test "$NO_PAGER" = "y"; then
+        cat
     else
-        vim_cmd="vs -nls -num"
-    fi
+        while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+            "") { shift; }; ;;
+            -s) {
+                slug="$2"
+                shift
+                shift
+            }
+            ;;
 
-    if test -n "$slug"; then
-        pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
-    else
-        pa -E "tf txt | xa $vim_cmd"
+            *) break;
+        esac; done
+
+        if test "$COLUMNATED" = "y"; then
+            vim_cmd="colvs -nls -num"
+        else
+            vim_cmd="vs -nls -num"
+        fi
+
+        if test -n "$slug"; then
+            pa -E "tf -sha -X \"${slug:0:220}\" txt | xa $vim_cmd"
+        else
+            pa -E "tf txt | xa $vim_cmd"
+        fi
     fi
 }
 

@@ -356,4 +356,46 @@ or an external command."
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
 
+;; Make it so ebible works in eshell
+(setq eshell-variable-aliases-list
+      `(;; for eshell.el
+        ("COLUMNS" ,(lambda () (window-body-width nil 'remap)) t t)
+        ("LINES" ,(lambda () (window-body-height nil 'remap)) t t)
+        ("INSIDE_EMACS" eshell-inside-emacs t)
+
+        ("NOEMACS" "y")
+        ("BORDER" "n")
+        ("ONELINED" "y")
+        ("DECORATED" "y")
+        ("NO_PAGER" "y")
+
+        ;; for esh-ext.el
+        ("PATH" (,(lambda () (string-join (eshell-get-path t) (path-separator)))
+                 . ,(lambda (_ value)
+                      (eshell-set-path value)
+                      value))
+         t t)
+
+        ;; for esh-cmd.el
+        ("_" ,(lambda (indices quoted)
+	            (if (not indices)
+	                (car (last eshell-last-arguments))
+	              (eshell-apply-indices eshell-last-arguments
+				                        indices quoted))))
+        ("?" (eshell-last-command-status . nil))
+        ("$" (eshell-last-command-result . nil))
+
+        ;; for em-alias.el and em-script.el
+        ("0" eshell-command-name)
+        ("1" ,(lambda () (nth 0 eshell-command-arguments)) nil t)
+        ("2" ,(lambda () (nth 1 eshell-command-arguments)) nil t)
+        ("3" ,(lambda () (nth 2 eshell-command-arguments)) nil t)
+        ("4" ,(lambda () (nth 3 eshell-command-arguments)) nil t)
+        ("5" ,(lambda () (nth 4 eshell-command-arguments)) nil t)
+        ("6" ,(lambda () (nth 5 eshell-command-arguments)) nil t)
+        ("7" ,(lambda () (nth 6 eshell-command-arguments)) nil t)
+        ("8" ,(lambda () (nth 7 eshell-command-arguments)) nil t)
+        ("9" ,(lambda () (nth 8 eshell-command-arguments)) nil t)
+        ("*" (eshell-command-arguments . nil))))
+
 (provide 'pen-eshell)
