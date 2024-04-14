@@ -6538,6 +6538,8 @@ This looks like an interesting resource about that - <http://www.abideinchrist.c
 
 ## Justified by faith alone
 
+> [Martin Luther](https://www.goodreads.com/quotes/26222-we-are-saved-by-faith-alone-but-the-faith-that) - “We are saved by faith alone, but the faith that saves is never alone.”
+
 > **Romans 4:12** -  and to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised.  (ESV)
 
 Faith eclipses the law:
@@ -9320,7 +9322,7 @@ I will continue following Jesus. And there's demons I'm fighting against for the
 
 I find deliverance prayers on YouTube such as this to be quite helpful:
 
-[DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
+-   [DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
 
 The demons which have come against me in the last year and a half are just horrendous. My entire situation is awful, and I pray to be raptured every day from this evil world that I live in currently.
 
@@ -10482,7 +10484,17 @@ We must live in holiness. This is practical holiness, the opposite of impurity.
 
 > **Hebrews 12:14** - Pursue peace with all men, and the sanctification without which no one will see the Lord.
 
--   antinomianism is a heresy.
+In his "Introduction to Romans," Luther stated that saving faith is,
+
+> "a living, creative, active and powerful thing, this faith. Faith cannot help doing good works constantly. It doesn't stop to ask if good works ought to be done, but before anyone asks, it already has done them and continues to do them without ceasing. Anyone who does not do good works in this manner is an unbeliever… Thus, it is just as impossible to separate faith and works as it is to separate heat and light from fire!"
+
+AMEN!!
+
+The Lutheran Churches label antinomianism as a heresy.
+
+-   <https://en.wikipedia.org/wiki/Antinomianism>
+
+AMEN!!
 
 I believe one must know that God's law is
 right and when presented with God's law, they
@@ -10490,6 +10502,12 @@ recognise that the law is right and recognise
 their transgression, and continue towards
 sanctification, putting off the old, sinful
 self.
+
+Also, pornography probably attracts evil spirits which hinders finding a relationship:
+
+-   [Prayers Against Evil Attacks During Sleep - Powerful Prayers Against Bad Dreams and Nightmares - YouTube](https://youtu.be/qu8QxxIF4UE?t=520)
+
+Of course we need to be sanctified and stop sinning.
 
 > **Hebrews 12:14,15** -  Strive for peace with everyone, and for the holiness without which no one will see the Lord.  See to it that no one fails to obtain the grace of God; that no root of bitterness springs up and causes trouble, and by it many become defiled;  (ESV)
 
