@@ -3456,6 +3456,23 @@ Faith is a mixture of belief and obedience.
 
 > **I Peter 2:21** - For to this you have been called, because Christ also suffered for you, <ins>leaving you an example, so that you might follow in his steps.</ins> (ESV)
 
+Obedience to God is an act of faith: (**Hebrews 11**). On the flip side, disobedience flows from unbelief/faithlessness:
+
+> **I Timothy 1:13** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because I had acted ignorantly in unbelief, (ESV)
+
+Acting in accordance with faithlessness is sinful behaviour:
+
+> **1Ti 1:13** - even though I was formerly a blasphemer and a persecutor and a violent aggressor. Yet I was shown mercy because I **acted** (G4160 poieo) **ignorantly** (G50 agnoeo) in **unbelief** (G570 apaistia, faithlessness, disobedience);
+
+    1  :  570  apaistia  ap-is-tee'-ah
+    2  
+    3   from 571; faithlessness, i.e. (negatively) disbelief (lack of
+    4   Christian faith), or (positively) unfaithfulness
+    5   (disobedience):--unbelief.
+    6   see GREEK for 571
+
+-   **[bibletools.org - apaistia](https://www.bibletools.org/index.cfm/fuseaction/Lexicon.show/ID/G570/apaistia.htm):** faithlessness
+
 The wrath of God comes upon the sons of disobedience:
 
 > **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things <ins>the wrath of God comes upon the sons of disobedience.</ins> Therefore do not associate with them;
@@ -9211,14 +9228,39 @@ The asceticism [of denying marriage] has no value in stopping the indulgence of 
 
 > **Colossians 2:23** - These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
 
-Marriage itself is good. So denying it for reasons of self-made religion actually causes harm.
+Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
 
-If I'm continually denied relationships, whether it's a spirit of wordliness/antichrist (because it's not what Jesus taught) through a person telling me I need to be financially successful first, or rejection-spirit in a church preventing me from socialising, or a spirit of slander or gossip
-which keeps me isolated, if I'm not allowed to marry the person I love because those spirits start manifesting and the reasons are just made-up lies, then that creates problems.
+> If I'm continually denied relationships, whether it's a spirit of wordliness/antichrist (because it's not what Jesus taught) through a person telling me I need to be financially successful first, or rejection-spirit in a church preventing me from socialising, or a spirit of slander or gossip which keeps me isolated, if I'm not allowed to marry the person I love because those spirits start manifesting and the reasons are just made-up lies, then that creates problems.
+
+The truth is that while in God's favour, God provides, and we cooperate with God by working, etc. But if God doesn't want you to get a job, you wont get a job, etc.
+
+> **Acts 16:6** - And they went through the region of Phrygia and Galatia, having been forbidden by the Holy Spirit to speak the word in Asia. (ESV)
+
+God's precept isn't that the rich are the only ones who are allowed to marry. Otherwise robots will be taking human wives before the poor are allowed to marry. I'm a Christian not a transhumanist. We've got to stick to God's precepts and go against the world:
+
+> **II Timothy 3:12** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, (ESV)
+
+We have to obey God. Jesus commandment is to give to the one that asks. If I had to choose between obeying Jesus and holding onto lots of money so I could get a wife, then it is the latter which is actually stealing, and stealing from God, not the former:
+
+> **Matthew 5:42** - Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
+
+And encourages us to have obedient faith in Him (Jesus) even to the point where we are walking by faith and not sight, even to the point where it gets difficult - no pain, no gain!:
+
+> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on. (ESV)
+
+If I then marry a vacuum cleaner because satan has denied my relationships for so long then how can I be judged for that?
 
 > **John 10:10** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
-If I then marry a vaccum cleaner because satan has denied my relationships for so long then how can I be judged for that? Nevertheless, that's what I've experienced. But we are commanded to forgive as we have been forgiven, and I was forgiven for a lot of sinful things. Anyway, I'm working on being delivered from these demons.
+I have been obeying Jesus Christ, and I won't accept accusations from the enemy while I'm trying to do the will of God and still sin from time to time:
+
+> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. (ESV)
+
+> **Galatians 2:17** - But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! (ESV)
+
+I haven't married a vacuum cleaner yet. And we are commanded to forgive as we have been forgiven, and I was forgiven for a lot of sinful things, which possibly had attracted the demons in the first place. But I'm working on being delivered from these demons, and will continue following Jesus.
+
+I find this person's videos YouTube to be quite helpful:
 
 [DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
 
