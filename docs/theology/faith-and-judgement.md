@@ -9251,15 +9251,21 @@ We have to obey God. Jesus commandment is to give to the one that asks. If I had
 
 > **Matthew 5:42** - Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
 
-And encourages us to have obedient faith in Him (Jesus) even to the point where we are walking by faith and not sight, even to the point where it gets difficult - no pain, no gain!:
+And Jesus encourages us to have obedient faith in Him even to the point, even to the point where it gets difficult - no pain, no gain!
 
 > **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on. (ESV)
+
+We are walking by faith, and not sight, and to walk by faith is to actually see clearly, where to not walk in faith is actually to walk in darkness:
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
+> **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
 
 If satan keeps delaying and blocking my relationships until seeking a relationship with someone who would be good for me has become 'socially unacceptable', then only God can save me. Worldly people wont understand.
 
 > **John 10:10** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
-I believe it's Biblical that God endorses marriage among consenting adults, even if there is a large age gap. Gay marriage, however, is not blessed at all. I literally hate being in this world - a person can barely burp or fart without the police turning up.
+I believe it's Biblical that God endorses marriage among consenting adults, even if there is a large age gap. Gay marriage, however, is not blessed at all. I literally hate being in this world - a person can barely burp or fart without becoming a criminal.
 
 While I agree that lust, and impure motivations disqualify a relationship being seen as Biblically acceptable, there are certain things I think
 are not intrinsically wrong, such as marriage between consenting adults with an age gap.
