@@ -4253,6 +4253,100 @@ Paul awaits Christ to be formed in the person:
 > **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth until Christ is formed in you!
 
 
+## Sanctification by the Spirit and faith / obedience
+
+> **2 Thessalonians 2:13-15** -  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ.  So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
+
+> **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit and faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+
+**Faith** in the truth - strong faith word!
+
+> **II Thessalonians 2:11-15** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**. To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ. So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
+
+> **Hebrews 10:10** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. (ESV)
+
+> **1 Thessalonians 4:3** -  For this is the will of God, your sanctification: that you <ins>abstain</ins> from sexual immorality;  (ESV)
+
+<ins>Abstain</ins> means stop.
+
+
+## God is the source of our life in Christ Jesus. Jesus is <ins>the source of</ins> our wisdom and righteousness and sanctification and redemption
+
+> **1 Corinthians 1:30-31** -  He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption.  Therefore, as it is written, Let the one who boasts, boast in the Lord.  (ESV)
+
+
+### We only boast in Christ Jesus, since He is our wisdom, righteousness, sanctification and redemption
+
+He is our wisdom, righteousness, sanctification and redemption.
+
+Yes, but that means we must have faith in Him, obeying Him and becoming like Him, and that brings us confidence, because He's in us, and we don't have our lamp hidden, but are cleaned up:
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as <ins>he is so also are we in this world.</ins> (ESV)
+
+We are wise for salvation through faith in Christ Jesus.
+
+> **2 Timothy 3:15** -  and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus.  (ESV)
+
+We must put our trust in Jesus and believe Him and obey Him, and be cleaned up, shining His light:
+
+> **I Corinthians 1:28-29** - God chose what is low and despised in the world, even things that are not, to bring to nothing things that are, so that no human being might boast in the presence of God.
+
+> **Psalms 5:5** -  The boastful shall not stand before your eyes; you hate all evildoers.  (ESV)
+
+The cross means a changed life, becoming like Jesus, keeping Jesus' commandments:
+
+> **Galatians 6:13-15** - For even those who are circumcised do not themselves keep the law, but they desire to have you circumcised that they may boast in your flesh. But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. (ESV)
+
+> **I Corinthians 7:19** - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
+
+
+### Filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God
+
+Jesus is the source of our personal righteousness, and He **is** our righteousness.
+
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+
+
+## We must **both** believe the truth and be sanctified, **and** stop sinning to be saved
+
+> **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+
+Cleaned up (stop sinning) by having faith in the truth.
+
+**Faith** in the truth - strong faith word! Belief and ongoing faithfulness, trust, reliance.
+
+    1  :  4102  pistis  pis'-tis
+    2  
+    3   from 3982; persuasion, i.e. credence; moral conviction (of religious
+    4   truth, or the truthfulness of God or a religious teacher), especially
+    5   reliance upon Christ for salvation; abstractly, constancy in such
+    6   profession; by extension, the system of religious (Gospel) truth
+    7   itself:--assurance, belief, believe, faith, fidelity.
+    8   see GREEK for 3982
+
+
+### Bad desire - leads to death. We do not want to be enslaved to corruption
+
+-   Lust is super bad, even after born-again.
+
+> **I John 2:15-17** - Do not love the world nor the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world, the lust of the flesh and the lust of the eyes and the boastful pride of life, is not from the Father, but is from the world. The world is passing away, and also its lusts; but the one who does the will of God lives forever.
+
+> **II Peter 2:19-21** - They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved. For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known **the way of righteousness** than after knowing it to turn back from the holy commandment delivered to them.
+
+
+### Good desire - Love God and one's neighbour
+
+> **Deuteronomy 11:13** - And if you will indeed obey my commandments that I command you today, to love the Lord your God, and to serve him with all your heart and with all your soul,
+
+> **Deuteronomy 30:6** - And the Lord your God will circumcise your heart and the heart of your offspring, so that you will love the Lord your God with all your heart and with all your soul, that you may live.
+
+> **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the Lord commanded you, to love the Lord your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul.
+
+> **Luke 10:27** - And he answered, You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself.
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
+
+
 # Justifying faith vs justifying works is misunderstood and is a false dichotomy
 
 Jesus makes it clear that the ones who truly believe in Him **will do** the **works** which **He does**:
@@ -9111,7 +9205,18 @@ Jesus' servants are given mercy by Jesus and they also show mercy to others.
 
 > **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the <ins>insincerity of liars whose consciences are seared, who forbid marriage</ins> and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For <ins>everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer.</ins> If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
 
-Marriage itself is good.
+The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
+
+> **Colossians 2:18** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, (ESV)
+
+> **Colossians 2:23** - These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
+
+Marriage itself is good. So denying it for reasons of self-made religion actually causes harm.
+
+If I'm continually denied relationships, whether it's a spirit of wordliness/antichrist (because it's not what Jesus taught) through a person telling me I need to be financially successful first, or rejection-spirit in a church preventing me from socialising, or a spirit of slander or gossip
+which keeps me isolated, if I'm not allowed to marry the person I love because those spirits start manifesting and the reasons are just made-up lies, then that creates problems. If I then marry a vaccum cleaner because satan has denied my relationships for so long then I can be judged. Nevertheless, that's what I've experienced. Anyway, I'm working on being delivered from these demons.
+
+[DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
 
 
 ### But gay 'marriage' should not be held in equal standing to God's design
@@ -12788,100 +12893,6 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 > **Mark 5:34** -  And he said to her, Daughter, your faith has made you well; go in peace, and be healed of your disease.  (ESV)
 
 > **Luke 7:47-50** - Therefore I tell you, her sins, which are many, are forgiven-for she loved much. But he who is forgiven little, loves little. And he said to her, Your sins are forgiven. Then those who were at table with him began to say among themselves, Who is this, who even forgives sins? And he said to the woman, Your faith has saved you; go in peace. (ESV)
-
-
-# Sanctification
-
-> **2 Thessalonians 2:13-15** -  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ.  So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
-
-> **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit and faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
-
-**Faith** in the truth - strong faith word!
-
-> **II Thessalonians 2:11-15** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**. To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ. So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
-
-> **Hebrews 10:10** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. (ESV)
-
-> **1 Thessalonians 4:3** -  For this is the will of God, your sanctification: that you <ins>abstain</ins> from sexual immorality;  (ESV)
-
-<ins>Abstain</ins> means stop.
-
-
-## God is the source of our life in Christ Jesus. Jesus is <ins>the source of</ins> our wisdom and righteousness and sanctification and redemption
-
-> **1 Corinthians 1:30-31** -  He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption.  Therefore, as it is written, Let the one who boasts, boast in the Lord.  (ESV)
-
-
-### We only boast in Christ Jesus, since He is our wisdom, righteousness, sanctification and redemption
-
-He is our wisdom, righteousness, sanctification and redemption.
-
-Yes, but that means we must have faith in Him, obeying Him and becoming like Him, and that brings us confidence, because He's in us, and we don't have our lamp hidden, but are cleaned up:
-
-> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as <ins>he is so also are we in this world.</ins> (ESV)
-
-We are wise for salvation through faith in Christ Jesus.
-
-> **2 Timothy 3:15** -  and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus.  (ESV)
-
-We must put our trust in Jesus and believe Him and obey Him, and be cleaned up, shining His light:
-
-> **I Corinthians 1:28-29** - God chose what is low and despised in the world, even things that are not, to bring to nothing things that are, so that no human being might boast in the presence of God.
-
-> **Psalms 5:5** -  The boastful shall not stand before your eyes; you hate all evildoers.  (ESV)
-
-The cross means a changed life, becoming like Jesus, keeping Jesus' commandments:
-
-> **Galatians 6:13-15** - For even those who are circumcised do not themselves keep the law, but they desire to have you circumcised that they may boast in your flesh. But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. (ESV)
-
-> **I Corinthians 7:19** - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
-
-
-### Filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God
-
-Jesus is the source of our personal righteousness, and He **is** our righteousness.
-
-> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
-
-
-## We must **both** believe the truth and be sanctified, **and** stop sinning to be saved
-
-> **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
-
-Cleaned up (stop sinning) by having faith in the truth.
-
-**Faith** in the truth - strong faith word! Belief and ongoing faithfulness, trust, reliance.
-
-    1  :  4102  pistis  pis'-tis
-    2  
-    3   from 3982; persuasion, i.e. credence; moral conviction (of religious
-    4   truth, or the truthfulness of God or a religious teacher), especially
-    5   reliance upon Christ for salvation; abstractly, constancy in such
-    6   profession; by extension, the system of religious (Gospel) truth
-    7   itself:--assurance, belief, believe, faith, fidelity.
-    8   see GREEK for 3982
-
-
-### Bad desire - leads to death. We do not want to be enslaved to corruption
-
--   Lust is super bad, even after born-again.
-
-> **I John 2:15-17** - Do not love the world nor the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world, the lust of the flesh and the lust of the eyes and the boastful pride of life, is not from the Father, but is from the world. The world is passing away, and also its lusts; but the one who does the will of God lives forever.
-
-> **II Peter 2:19-21** - They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved. For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known **the way of righteousness** than after knowing it to turn back from the holy commandment delivered to them.
-
-
-### Good desire - Love God and one's neighbour
-
-> **Deuteronomy 11:13** - And if you will indeed obey my commandments that I command you today, to love the Lord your God, and to serve him with all your heart and with all your soul,
-
-> **Deuteronomy 30:6** - And the Lord your God will circumcise your heart and the heart of your offspring, so that you will love the Lord your God with all your heart and with all your soul, that you may live.
-
-> **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the Lord commanded you, to love the Lord your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul.
-
-> **Luke 10:27** - And he answered, You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself.
-
-> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
 
 
 # Father God
