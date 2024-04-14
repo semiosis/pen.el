@@ -951,9 +951,11 @@ God still makes apostles and prophetic people:
 
 > **Daniel 2:28** - but there is a God in heaven who reveals mysteries, and he has made known to King Nebuchadnezzar what will be in the latter days. Your dream and the visions of your head as you lay in bed are these: (ESV)
 
-God is loving and altogether gracious.
+God is loving and altogether gracious:
 
 > **Exodus 34:5-8** - The Lord descended in the cloud and stood with him there, and proclaimed the name of the Lord. The Lord passed before him and proclaimed, The Lord, the Lord, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness, keeping steadfast love for thousands, forgiving iniquity and transgression and sin, but who will by no means clear the guilty, visiting the iniquity of the fathers on the children and the children's children, to the third and the fourth generation. And Moses quickly bowed his head toward the earth and worshiped.
+
+> **Ezra 9:13** - And after all that has come upon us for our evil deeds and for our great guilt, seeing that you, our God, have punished us less than our iniquities deserved and have given us such a remnant as this, (ESV)
 
 Having faith in God involves following Jesus:
 
@@ -2356,6 +2358,8 @@ I believe that Jesus Christ **is** Jehovah.
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
+> **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
 To have the Spirit of Christ is to have the Spirit of God:
 
 > **Romans 8:9-10** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. (ESV)
@@ -3035,6 +3039,237 @@ Part of the will of Father God is that we repent from sin:
 > **I Thessalonians 4:3-7** - For this is the will of God, your sanctification: that you abstain from sexual immorality; that each one of you know how to control his own body in holiness and honor, not in the passion of lust like the Gentiles who do not know God; that no one transgress and wrong his brother in this matter, because the Lord is an avenger in all these things, as we told you beforehand and solemnly warned you. For God has not called us for impurity, but in holiness. (ESV)
 
 
+# Try to clarify what ***sin*** looks like from Bible verses
+
+-   1. Rejecting Jesus
+    -   **John 15:22-23** - If I had not come and spoken to them, they would not have been guilty of sin, but **now they have no excuse for their sin. Whoever hates me hates my Father also.**
+-   2. Disobeying God - absolutely 100%
+    -   **Romans 5:19** - For as **by the one man's disobedience the many were made sinners**, so by the one man's obedience the many will be made righteous.
+    -   Breaking God's law? Sure.
+        -   Breaking the Mosaic Law is sin for Jews and disobedient people.
+-   3. An evil heart or mind which is hostile to God
+-   4. Evil deeds. Absolutely How is that defined though?
+    -   I would say it's **breaking the Great Commandments**
+    -   To not love God with all one's heart, mind, soul and strength, and to not love their neighbour.
+
+
+## Iniquity and sin: In this case, sin is the verb, I think, and iniquity is the noun
+
+> **Job 10:14** - If I sin, you watch me and do not acquit me of my iniquity. (ESV)
+
+> **Job 14:16-17** - For then you would number my steps; you would not keep watch over my sin; my transgression would be sealed up in a bag, and you would cover over my iniquity. (ESV)
+
+> **Psalms 38:18** - I confess my iniquity; I am sorry for my sin. (ESV)
+
+> **Psalms 51:2** - Wash me thoroughly from my iniquity, and cleanse me from my sin! (ESV)
+
+
+## God searches the heart and tests the mind
+
+> **Jeremiah 17:10** - I the LORD search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds. (ESV)
+
+> **Job 10:4-8** - Have you eyes of flesh? Do you see as man sees? Are your days as the days of man, or your years as a man's years, that you seek out my iniquity and search for my sin, although you know that I am not guilty, and there is none to deliver out of your hand? Your hands fashioned and made me, and now you have destroyed me altogether. (ESV)
+
+
+## The law is laid down for the sinners
+
+Sinners:
+
+-   the lawless and disobedient,
+-   the ungodly,
+-   and sinners,
+-   the unholy and profane
+
+> **I Timothy 1:9** - understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, (ESV)
+
+
+## Whoever transgresses the law is liable to judgement
+
+> **Matthew 5:21** - You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. (ESV)
+
+
+## Sin - what does it look like
+
+-   doing and devising and being evil
+    -   disobedience to God
+    -   divination
+    -   iniquity
+    -   idolatry
+    -   profaning what is holy
+    -   lies
+    -   adultery
+    -   murder
+    -   strengthening the hands of evildoers - supporting evildoers
+    -   self-pride, and prideful sin
+    -   evil thoughts, inventing evil
+    -   sexual immorality
+    -   theft
+    -   false-witness
+    -   slander, gossip
+    -   works of iniquity
+    -   thoughts of iniquity
+    -   in the heart, breaking God's 10 commandments
+    -   envy, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless.
+
+
+### transgressing the 10 commandments
+
+> **James 2:11** - For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law. (ESV)
+
+> **Romans 13:9** - The commandments, You shall not commit adultery, You shall not murder, You shall not steal, You shall not covet, and any other commandment, are summed up in this word: You shall love your neighbor as yourself. (ESV)
+
+
+### Having a will to do evil, rather than a will to do God's will
+
+> **John 8:44** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
+
+> **Matthew 15:19** - For out of the heart come evil thoughts, murder, adultery, sexual immorality, theft, false witness, slander. (ESV)
+
+
+### all manner of unrighteousness
+
+> **Romans 1:26-32** - For this reason God gave them up to dishonorable passions. For their women exchanged natural relations for those that are contrary to nature; and the men likewise gave up natural relations with women and were consumed with passion for one another, men committing shameless acts with men and receiving in themselves the due penalty for their error. And since they did not see fit to acknowledge God, God gave them up to a debased mind to do what ought not to be done. They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. (ESV)
+
+
+### murder
+
+> **I John 3:15** - Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him. (ESV)
+
+> **I John 3:12** - We should not be like Cain, who was of the evil one and murdered his brother. And why did he murder him? Because his own deeds were evil and his brother's righteous. (ESV)
+
+> **Revelation of John 22:15** - Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood. (ESV)
+
+
+### theft
+
+> **Revelation of John 9:21** - nor did they repent of their murders or their sorceries or their sexual immorality or their thefts. (ESV)
+
+
+### Rejecting the word of the LORD
+
+> **Isaiah 30:9-13** - For they are a rebellious people, lying children, children unwilling to hear the instruction of the LORD; who say to the seers, Do not see, and to the prophets, Do not prophesy to us what is right; speak to us smooth things, prophesy illusions, leave the way, turn aside from the path, let us hear no more about the Holy One of Israel. Therefore thus says the Holy One of Israel, Because you despise this word and trust in oppression and perverseness and rely on them, therefore this iniquity shall be to you like a breach in a high wall, bulging out, and about to collapse, whose breaking comes suddenly, in an instant; (ESV)
+
+> **1 Samuel 15:23** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
+
+
+### Wandering / backsliding from God
+
+> **Jeremiah 14:7** - Though our iniquities testify against us, act, O LORD, for your name's sake; for our backslidings are many; we have sinned against you. (ESV)
+
+> **Jeremiah 14:10** - Thus says the LORD concerning this people: They have loved to wander thus; they have not restrained their feet; therefore the LORD does not accept them; now he will remember their iniquity and punish their sins. (ESV)
+
+
+### Prophesying lies
+
+> **Jeremiah 14:14** - And the LORD said to me: The prophets are prophesying lies in my name. I did not send them, nor did I command them or speak to them. They are prophesying to you a lying vision, worthless divination, and the deceit of their own minds. (ESV)
+
+
+### ungodliness
+
+> **Isaiah 32:6** - For the fool speaks folly, and his heart is busy with iniquity, to practice ungodliness, to utter error concerning the LORD, to leave the craving of the hungry unsatisfied, and to deprive the thirsty of drink. (ESV)
+
+
+### pride in self and lack of humility towards God
+
+> **Psalms 36:2** - For he flatters himself in his own eyes that his iniquity cannot be found out and hated. (ESV)
+
+> **Psalms 10:10-11** - The helpless are crushed, sink down, and fall by his might. He says in his heart, God has forgotten, he has hidden his face, he will never see it. (ESV)
+
+> **Isaiah 13:11** - I will punish the world for its evil, and the wicked for their iniquity; I will put an end to the pomp of the arrogant, and lay low the pompous pride of the ruthless. (ESV)
+
+
+### Discouraging the righteous, encouraging the wicked, even to misguide them to harm
+
+> **Ezekiel 13:22** - Because you have disheartened the righteous falsely, although I have not grieved him, and you have encouraged the wicked, that he should not turn from his evil way to save his life, (ESV)
+
+> **Isaiah 31:2** - And yet he is wise and brings disaster; he does not call back his words, but will arise against the house of the evildoers and against the helpers of those who work iniquity. (ESV)
+
+
+### dishonesty
+
+> **Isaiah 59:4-8** - No one enters suit justly; no one goes to law honestly; they rely on empty pleas, they speak lies, they conceive mischief and give birth to iniquity. They hatch adders' eggs; they weave the spider's web; he who eats their eggs dies, and from one that is crushed a viper is hatched. Their webs will not serve as clothing; men will not cover themselves with what they make. Their works are works of iniquity, and deeds of violence are in their hands. Their feet run to evil, and they are swift to shed innocent blood; their thoughts are thoughts of iniquity; desolation and destruction are in their highways. The way of peace they do not know, and there is no justice in their paths; they have made their roads crooked; no one who treads on them knows peace. (ESV)
+
+
+### Lies and adultery
+
+> **Jeremiah 23:14** - But in the prophets of Jerusalem I have seen a horrible thing: they commit adultery and walk in lies; they strengthen the hands of evildoers, so that no one turns from his evil; all of them have become like Sodom to me, and its inhabitants like Gomorrah. (ESV)
+
+
+### Iniquity
+
+> **II Samuel 7:14-15** - I will be to him a father, and he shall be to me a son. When he commits iniquity, I will discipline him with the rod of men, with the stripes of the sons of men, but my steadfast love will not depart from him, as I took it from Saul, whom I put away from before you. (ESV)
+
+> **Psalms 53:1** - The fool says in his heart, There is no God. They are corrupt, doing abominable iniquity; there is none who does good. (ESV)
+
+
+### Profaning what is holy
+
+> **Leviticus 19:8** - and everyone who eats it shall bear his iniquity, because he has **profaned what is holy to the LORD**, and that person shall be cut off from his people. (ESV)
+
+
+### Blsphemy
+
+> **I Samuel 3:13** - And I declare to him that I am about to punish his house forever, for the iniquity that he knew, because his sons were blaspheming God, and he did not restrain them. (ESV)
+
+
+### Lawlessness is sin - unresponsive and disobedient to God
+
+> **I John 3:4** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. (ESV)
+
+> **Isaiah 53:6** - All we like sheep have gone astray; we have turned every one to his own way; and the LORD has laid on him the iniquity of us all. (ESV)
+
+
+### Rebellion against God is sin
+
+> **Deuteronomy 9:7** - Remember and do not forget how you provoked the LORD your God to wrath in the wilderness. From the day you came out of the land of Egypt until you came to this place, you have been rebellious against the LORD. (ESV)
+
+> **Joshua 1:18** - Whoever rebels against your commandment and disobeys your words, whatever you command him, shall be put to death. Only be strong and courageous. (ESV)
+
+> **Deuteronomy 13:5** - But that prophet or that dreamer of dreams shall be put to death, because he has taught rebellion against the LORD your God, who brought you out of the land of Egypt and redeemed you out of the house of slavery, to make you leave the way in which the LORD your God commanded you to walk. So you shall purge the evil from your midst. (ESV)
+
+> **I Samuel 15:23** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+
+
+### Not caring for the innocent
+
+> **Isaiah 59:7** - Their feet run to evil, and they are swift to shed innocent blood; their thoughts are thoughts of iniquity; desolation and destruction are in their highways. (ESV)
+
+
+### Doing evil deeds is sin
+
+> **Colossians 1:21** - And you, who once were alienated and hostile in mind, doing evil deeds, (ESV)
+
+> **Ecclesiastes 4:3** - But better than both is he who has not yet been and has not seen the evil deeds that are done under the sun. (ESV)
+
+> **Jeremiah 21:12** - O house of David! Thus says the LORD: Execute justice in the morning, and deliver from the hand of the oppressor him who has been robbed, lest my wrath go forth like fire, and burn with none to quench it, because of your evil deeds. (ESV)
+
+> **Colossians 1:19-23** - For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross. And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, if indeed you continue in the faith, stable and steadfast, not shifting from the hope of the gospel that you heard, which has been proclaimed in all creation under heaven, and of which I, Paul, became a minister. (ESV)
+
+
+### unjust gain
+
+> **Isaiah 57:17** - Because of the iniquity of his unjust gain I was angry, I struck him; I hid my face and was angry, but he went on backsliding in the way of his own heart. (ESV)
+
+
+### dishonesty
+
+> **Isaiah 59:4** - No one enters suit justly; no one goes to law honestly; they rely on empty pleas, they speak lies, they conceive mischief and give birth to iniquity. (ESV)
+
+
+### idolatry
+
+> **Jeremiah 16:18** - But first I will doubly repay their iniquity and their sin, because they have polluted my land with the carcasses of their detestable idols, and have filled my inheritance with their abominations. (ESV)
+
+> **I Corinthians 10:7** - Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play. (ESV)
+
+
+### sexual immorality
+
+> **I Corinthians 10:8-9** - We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
+> **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death. (ESV)
+
+
 # If the world is encouraging you, you're probably in falsehood or taking the wide road
 
 > **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
@@ -3454,7 +3689,10 @@ We are set free from sin and become slaves of God (so we obey God!!) and the obe
 
 ### We must have attention to Jesus Christ our Lord
 
-We are saved from his sins, and from his evil practices.
+We are saved from our sins, and from our evil practices.
+
+> **Jeremiah 7:9-10** - Will you steal, murder, commit adultery, swear falsely, make offerings to Baal, and go after other gods that you have not known, and then come and stand before me in this house, which is called by my name, and say, We are delivered!—only to go on doing all these abominations? (ESV)
+
 We are made a new man in Christ Jesus by the power of **the Holy Spirit**.
 
 > **Matthew 12:33** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. (ESV)
@@ -4766,7 +5004,7 @@ We must be **doing** the will of God to not be under the law:
 
 Righteousness is the free gift to be received through obedience:
 
-> **Romans 5:17** - If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the **free gift of righteousness** reign in life through the one man Jesus Christ.
+> **Romans 5:17** - If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the **free gift of righteousness** reign in life through the one man Jesus Christ. (ESV)
 
 Jesus made the Way - He **is** the Way:
 
@@ -5623,7 +5861,7 @@ Law of the Spirit: We must set our minds on the things of the Spirit:
 
 > **Romans 8:5-6** - For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit. To set the mind on the flesh is death, but to set the mind on the Spirit is life and peace. (ESV)
 
-We focus on the things of the Spirit, instead of the Torah, and we will naturally comply:
+We focus on the things of the Spirit, instead of the Torah, and we will naturally comply with God's precepts, his law, etc.:
 
 > **Romans 8:7** - For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. (ESV)
 
@@ -5871,7 +6109,7 @@ But if someone judges by the law, it seems right to submit to the law, unless it
 
 > **Matthew 23:2-3** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. (ESV)
 
-We then may observe the law and keep it in faith (not adhering strictly thought), and do not teach others to annul even the smallest commandment, and as we are led by the Spirit (obeying and following Jesus) we are not under the law, nor under its curse, and we are not seeking to be justified by the law, and if we are being obedient servants of Jesus then we naturally submit to God's law.
+We then may observe the law and keep it in faith (not adhering strictly though), and do not teach others to annul even the smallest commandment, and as we are led by the Spirit (obeying and following Jesus) we are not under the law, nor under its curse, and we are not seeking to be justified by the law, and if we are being obedient servants of Jesus then we naturally submit to / comply with God's law.
 
 > **Romans 8:7** - For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. (ESV)
 
@@ -9998,6 +10236,8 @@ I consider practicing homosexuality to be erroneous and sinful, and God's origin
 
 > **Matthew 19:4-12** - He answered, Have you not read that he who created them **from the beginning made them male and female**, and said, Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh?  So they are no longer two but one flesh. What therefore God has joined together, let not man separate.  They said to him, Why then did Moses command one to give a certificate of divorce and to send her away?  He said to them, Because of your hardness of heart Moses allowed you to divorce your wives, but **from the beginning it was not so**.  And I say to you: whoever divorces his wife, except for sexual immorality, and marries another, commits adultery.  The disciples said to him, If such is the case of a man with his wife, it is better not to marry.  But he said to them, Not everyone can receive this saying, but only those to whom it is given.  For there are eunuchs who have been so from birth, and there are eunuchs who have been made eunuchs by men, and there are eunuchs who have made themselves eunuchs for the sake of the kingdom of heaven. Let the one who is able to receive this receive it.
 
+> **Romans 1:26-27** - For this reason God gave them up to dishonorable passions. For their women exchanged natural relations for those that are contrary to nature; and the men likewise gave up natural relations with women and were consumed with passion for one another, men committing shameless acts with men and receiving in themselves the **due penalty for their error**. (ESV)
+
 And no-one should endorse sinful things. Homosexuality is erroneous.
 If they do, however, endorse it then I think that inhibits them from approaching God.
 
@@ -11789,6 +12029,8 @@ Turn the other cheek:
 
 > **Matthew 5:39** - But I say to you, Do not resist the one who is evil. But if anyone slaps you on the right cheek, turn to him the other also. (ESV)
 
+> **James 5:6** - You have condemned; you have murdered **the righteous person. He does not resist you.** (ESV)
+
 Go above and beyond. Forgive:
 
 > **Matthew 5:40-42** - And if anyone would sue you and take your tunic, let him have your cloak as well. And if anyone forces you to go one mile, go with him two miles. Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
@@ -11952,6 +12194,8 @@ The word godliness, I think means, to <ins>act in a way fitting of having true k
 Perfect godliness revealing God through Jesus Christ:
 
 > **I Timothy 3:16** - Great indeed, we confess, is the mystery of godliness: He was manifested in the flesh, vindicated by the Spirit, seen by angels, proclaimed among the nations, believed on in the world, taken up in glory. (ESV)
+
+> **Isaiah 32:6** - For the fool speaks folly, and his heart is busy with iniquity, to practice ungodliness, to utter error concerning the LORD, to leave the craving of the hungry unsatisfied, and to deprive the thirsty of drink. (ESV)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -12451,6 +12695,10 @@ In the fullness of time, all things in heaven and earth are united to God:
 Given that we have an inheritance, it's evident that God must have predestined us:
 
 > **Ephesians 1:11-14** - In him we have obtained an inheritance, having been predestined according to the purpose of him who works all things according to the counsel of his will, so that we who were the first to hope in Christ might be to the praise of his glory. In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.
+
+The inheritance is salvation:
+
+> **Hebrews 1:14** - Are they not all ministering spirits sent out to serve for the sake of those who are to inherit salvation? (ESV)
 
 
 ## We are fellow workers with God. It's by God's power that our work flourishes
