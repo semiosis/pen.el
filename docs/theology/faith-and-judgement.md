@@ -9265,7 +9265,7 @@ If satan keeps delaying and blocking my relationships until seeking a relationsh
 
 > **John 10:10** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
-I believe it's Biblical that God endorses marriage among consenting adults, even if there is a large age gap. Gay marriage, however, is not blessed at all. I literally hate being in this world - a person can barely burp or fart without becoming a criminal.
+The Bible doesn't say that marriage among consenting adults with large age gap is immoral or forbidden, as far as I understand, although I need to do a more comprehensive Bible study and perhaps pray about it. But thus far I haven't found anything and God hasn't said anything against it to me as far as I know. Gay marriage, however, is not blessed at all.
 
 While I agree that lust, and impure motivations disqualify a relationship being seen as Biblically acceptable, there are certain things I think
 are not intrinsically wrong, such as marriage between consenting adults with an age gap.
@@ -9284,13 +9284,17 @@ while worldly people will discriminate against:
 -   age-gap marriage between consenting adults
 -   people who are actually obeying God
 
-So people shouldn't make condemnations based on no evidence because they might be **condemning the innocent**:
+I have a very similar option to John Piper on this I think:
+
+-   [Can I Marry a Woman Half My Age? | Desiring God](https://www.desiringgod.org/interviews/can-i-marry-a-woman-half-my-age)
+
+Also, people shouldn't make condemnations based on wives-tales and zero actual evidence because they might be **condemning the innocent**:
 
 > **Matthew 12:3-8** - He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And **if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the guiltless.** For the Son of Man is lord of the Sabbath.
 
-Statistics alone are not good enough to condemn someone - we need anecdotal evidence or it's not grounded in reality - it's just fiction.
+Statistics alone are not good enough to condemn someone from doing wrong - we need real anecdotal evidence or it's not even grounded in reality - the accusations are just slanderous fiction.
 
-I won't accept accusations or condemnation from the enemy while I'm trying to do the will of God, being obedient to Jesus Christ:
+Also, I won't accept accusations or condemnation from the enemy while I'm trying to do the will of God, being obedient to Jesus Christ:
 
 > **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. (ESV)
 
@@ -9304,15 +9308,23 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 
 > **1 Timothy 1:8-11** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice **homosexuality**, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
-Not that I am perfect. But all the internet slander against me is lies and gossip and slander which hit me after getting born-again.
+Not that I was or am perfect.
 
-We are commanded to forgive as we have been forgiven, and I was forgiven for a lot of sinful things, which possibly had attracted the demons in the first place. But I'm working on being delivered from these demons, and will continue following Jesus. And there's demons I'm fighting against for the last 2 years which lie daily to me, and speak blasphemies and falsehood, and attack me in my sleep. They're pretty disgusting.
+
+### My own experience being persecuted with relationships
+
+Abraham was 10 years older than Sarah, but as an adult in my 30s I've received so much persecution against Christians over this, and even my own parents have a 10 year age gap. Nevertheless, I believe undoubtably that satan would rather have me marry a vacuum cleaner or an animal or accept his kundalini spirit or a spirit spouse before letting me marry somebody.
+
+But I'm working on being delivered from demons which have been attacking me after making a marriage proposal.
+I will continue following Jesus. And there's demons I'm fighting against for the last year and a half which lie daily to me, and speak blasphemies and falsehood, and attacking me in my sleep - they're pretty disgusting.
 
 I find deliverance prayers on YouTube such as this to be quite helpful:
 
 [DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
 
-The demons which have come against me since getting born-again 2 years ago are horrendous. My entire situation is awful, and I pray to be raptured every day from this evil world that I live in currently.
+The demons which have come against me in the last year and a half are just horrendous. My entire situation is awful, and I pray to be raptured every day from this evil world that I live in currently.
+
+In Jesus Christ's name I will be delivered from this, and I will not allow satan to steal from me any more. Jesus Christ is my defense.
 
 
 ### But gay 'marriage' should not be held in equal standing to God's design
