@@ -105,17 +105,15 @@ What God does by way of initiative and what we do as a response is inextricably 
 
 > **Colossians 1:29** - For this **I toil, struggling** <ins>with all</ins> **his energy that he powerfully works within me.** (ESV)
 
-This was also the case with Jesus:
+Father God in Jesus was also doing His work through Jesus:
 
 > **John 14:10** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
 
-Here it is further echoed by Paul:
-
-> **II Corinthians 8:3** - For they gave according to their means, as I can testify, and beyond their means, of their own free will, (ESV)
+Here it is further echoed by Paul that though these people were acting of their own free will, they were doing God's will:
 
 Paul commends <ins>giving oneself to others by the will of God</ins> (their will was doing God's will):
 
-> **II Corinthians 8:5** - and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
+> **II Corinthians 8:3-5** - For they gave *according to their means*, as I can testify, and *beyond their means*, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
 
 Paul commends both desiring to do the will of God, and then encourages to complete the work they desire to do, but says that **if the will (obedience of heart) is there, it is acceptable** according to what a person has:
 
@@ -178,7 +176,7 @@ God's commandments are not too difficult to follow:
 
 It's <ins>perfect</ins> obedience which only Jesus Christ managed to reach:
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross.
+> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
 
 We come to having obedient faith in God through obedient faith in Jesus Christ.
 
@@ -4517,7 +4515,7 @@ Because he offered nothing to God through his work other than what was asked of 
 
 Jesus was perfectly faithful to God by being obedient:
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross.
+> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
 
 > **Romans 9:15-16** - For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
 
@@ -5087,7 +5085,7 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
 
 1.  Work/Love
 
-    > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV) (ESV)
+    > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
     
     We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
     
@@ -5404,7 +5402,7 @@ And the obedience doesn't end.
 
 ### Love is doing what Jesus has said for us to do. Love is following the commandments
 
-> **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV) (ESV)
+> **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
 
 > **2 Corinthians 9:6-7** - The point is this: whoever sows sparingly will also reap sparingly, and whoever sows bountifully will also reap bountifully.  Each one must give as he has made up his mind, not reluctantly or under compulsion, for God loves a **cheerful** giver.  (ESV)
 
@@ -5761,6 +5759,8 @@ These do not contradict:
     > **Luke 4:11-13** - and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
     
     > **John 10:35-36** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
+    
+    [Contrary to Roman Catholics, the Bible Is Our Sufficient Authority - YouTube](https://www.youtube.com/watch?v=COTBu3fBtRs)
     
     [John Piper's Sermon with Scripture only - YouTube](https://www.youtube.com/watch?v=ldag_fIFnqg)
 
@@ -9973,7 +9973,7 @@ The will of God must be discerned through testing with a renewed mind:
 
 Loving one another is the will of God:
 
-> **II Corinthians 8:3-5** - For they gave according to their means, as I can testify, and beyond their means, of their own free will, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they gave themselves first to the Lord and then by the will of God to us. (ESV)
+> **II Corinthians 8:3-5** - For they gave according to their means, as I can testify, and beyond their means, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
 
 Controlling our own body in holiness and honor is the will of God:
 
@@ -10516,9 +10516,30 @@ But the Mosaic law still exists.
 ## Sharing Jesus' holiness / personal righteousness (fruit of righteousness) - coming **after** faith in Jesus
 
 
+### Have faith in Jesus; Believe in Him, and be obedient to Him, following His teaching
+
+We are innocent because we are being obedient to Jesus:
+
+> **Matthew 10:16-17** - Behold, I am sending you out as **sheep in the midst of wolves**, so be wise as serpents and **innocent as doves**. Beware of men, for they will deliver you over to courts and flog you in their synagogues, (ESV)
+
+Remain obedient to Jesus, and do not take vengeance for yourself:
+
+> **Romans 12:19-20** - Beloved, never avenge yourselves, but leave it to the wrath of God, for it is written, Vengeance is mine, I will repay, says the Lord. To the contrary, if your enemy is hungry, feed him; if he is thirsty, give him something to drink; for by so doing you will heap burning coals on his head. (ESV)
+
+Following Jesus' example of being obedient:
+
+> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+
+> **Hebrews 5:7-8** - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to **him who was able to save him from death**, and he was heard because of his reverence. Although he was a son, <ins>he learned obedience through what he suffered.</ins> (ESV)
+
+
 ### The yoke of the Lord Jesus
 
-Yes, there is an amount of following Jesus.
+Firstly, Paul commends going above and even beyond one's means:
+
+> **II Corinthians 8:3-5** - For they gave according to their means, as I can testify, and beyond their means, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
+
+There is an amount of how much a person is following Jesus:
 
 *"resisted to the point of shedding your blood."*
 
@@ -13816,7 +13837,7 @@ Abram did this too. It's a necessary act of faith.
 
 For example, to truly obey God and love / do no harm to one's neighbour involves relieving other's burdens as they ask more from you.
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross.
+> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
 
 Jesus endured the weight of His cross to lighten our burden.
 
