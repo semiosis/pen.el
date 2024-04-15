@@ -1807,6 +1807,8 @@ We have knowledge of the truth through obedience to the gospel.
 
 > **2Ti 3:8-12** - Just as Jannes and Jambres opposed Moses, so these <ins>men also oppose the truth, men corrupted in mind and disqualified regarding the faith</ins>. But they will not get very far, for their folly will be plain to all, as was that of those two men. You, however, **have followed my teaching, my conduct,** <ins>my aim in life, my faith, my patience, my love, my steadfastness,</ins> **my persecutions and sufferings** that happened to me at Antioch, at Iconium, and at Lystra—which **persecutions I endured**; yet from them all the Lord rescued me. Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> (ESV)
 
+> **Galatians 2:14** - But when I saw that <ins>their conduct was not in step with the truth of the gospel</ins>, I said to Cephas before them all, If you, though a Jew, live like a Gentile and not like a Jew, how can you force the Gentiles to live like Jews? (ESV)
+
 > **2Ti 3:13** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
 
@@ -3048,13 +3050,59 @@ So the promise is for all who put their faith in God by obeying Jesus Christ wit
 
 ### All sin is lawlessness
 
-The law (Mosaic law) is laid down for those who are lawless and disobedient!
+If we are led by the spirit then we are not under the Mosaic law. So we should stop sinning as it is described by such works of the flesh as listed:
+
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+
+The law (Mosaic law) is laid down for those who are lawless and disobedient!:
 
 > **I Timothy 1:9** - understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, (ESV)
 
 Sin is lawlessness:
 
 > **I John 3:4** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. (ESV)
+
+We are under Christ's law, not the Mosaic law:
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+**In His flesh** the emnity, which is the Law of commandments contained in ordinances is abolished:
+
+> **Ephesians 2:14-16** - For He Himself is our peace, who made both groups into one and broke down the barrier of the dividing wall, by **abolishing in His flesh the enmity, which is the Law of commandments contained in ordinances**, so that in Himself He might make the two into one new man, thus establishing peace, and might reconcile them both in one body to God through the cross, by it having put to death the enmity. (NASB)
+
+Instead of being under the law, we seek to live for Christ, and follow Christ's teaching:
+
+> **Galatians 6:12** - It is those who want to make a good showing in the flesh who would force you to be circumcised, and only in order that they may not be persecuted for the cross of Christ. (ESV)
+
+Within Christ there is peace:
+
+> **Galatians 5:13** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but through love serve one another. (ESV)
+
+We follow Jesus and obey His commandments:
+
+> **Galatians 5:14** - For the whole law is fulfilled in one word: You shall love your neighbor as yourself. (ESV)
+
+> **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ. (ESV)
+
+We must feed on His flesh to abide in Him:
+
+> **John 6:53** - So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. (ESV)
+
+> **John 6:55-56** - For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. (ESV)
+
+Jesus' flesh is the way into the holy places:
+
+> **Hebrews 10:19-20** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, (ESV)
+
+Jesus suffered in the flesh, and we should too, and stop sinning:
+
+> **I Peter 4:1** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for whoever has suffered in the flesh has ceased from sin, (ESV)
+
+> **Colossians 1:24** - Now I rejoice in my sufferings for your sake, and in my flesh I am filling up what is lacking in Christ's afflictions for the sake of his body, that is, the church, (ESV)
+
+We're justified by our faith in Christ. We simply follow Jesus:
+
+> **Galatians 5:4** - You are severed from Christ, you who would be justified by the law; you have fallen away from grace. (ESV)
 
 There are lawless spirits (spirits which work things like idolatry, and falsehood; anything which is against the truth):
 
@@ -6749,7 +6797,9 @@ However, I still think that inheriting the Kingdom and inheriting eternal life i
 
 > **Matthew 5:3** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
-> **Acts 10:34-35**: So Peter opened his mouth and said: Truly I understand that God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him.
+> **Acts 10:34-35**: So Peter opened his mouth and said: Truly I understand that **God shows no partiality**, but in every nation anyone who fears him and does what is right is acceptable to him.
+
+> **Galatians 2:6** - And from those who seemed to be influential (what they were makes no difference to me; **God shows no partiality**)—those, I say, who seemed influential added nothing to me. (ESV)
 
 > **Isaiah 66:2** - All these things my hand has made, and so all these things came to be, declares the LORD. But this is the one to whom I will look: he who is humble and contrite in spirit and trembles at my word. (ESV)
 
@@ -10605,22 +10655,73 @@ The Lutheran Churches label antinomianism as a heresy.
 
 -   <https://en.wikipedia.org/wiki/Antinomianism>
 
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+We're still under the law of Christ.
+
+> **Romans 6:14** - For sin will have no dominion over you, since you are not under law but under grace. (ESV)
+
+["You Are Not Under Law, but Under Grace" | United Church of God](https://www.ucg.org/bible-study-tools/bible-study-aids/what-does-the-bible-teach-about-grace/you-are-not-under-law-but-under-grace)
+
 AMEN!!
 
-I believe one must know that God's law is
-right and when presented with God's law, they
+I believe one must know that God's law is right:
+
+> **Romans 7:9-16** - I was once alive apart from the law, but when the commandment came, sin came alive and I died. The very commandment that promised life proved to be death to me. For sin, seizing an opportunity through the commandment, deceived me and through it killed me. So the law is holy, and the commandment is holy and righteous and good. Did that which is good, then, bring death to me? By no means! It was sin, producing death in me through what is good, in order that sin might be shown to be sin, and through the commandment might become sinful beyond measure. For we know that the law is spiritual, but I am of the flesh, sold under sin. I do not understand my own actions. For I do not do what I want, but I do the very thing I hate. Now if I do what I do not want, I agree with the law, that it is good. (ESV)
+
+When presented with God's law, we should
 recognise that the law is right and recognise
-their transgression, and continue towards
+our transgression, and continue towards
 sanctification, putting off the old, sinful
 self.
 
-Also, pornography probably attracts evil spirits which hinders finding a relationship:
+We are released from the law, and now we **serve** <ins>in the new life of the Spirit</ins>:
+
+> **Romans 7:6-7** - But now we are released from the law, having died to that which held us captive, so that we serve not under the old written code but in the new life of the Spirit. What then shall we say? That the law is sin? By no means! Yet if it had not been for the law, I would not have known sin. I would not have known what it is to covet if the law had not said, You shall not covet. (ESV)
+
+We believe in Christ Jesus in order to be justified by faith in Christ:
+
+> **Galatians 2:16** - yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. (ESV)
+
+So we're not trying to come under the 613 commandments of the Mosaic law,
+but the precepts such as "do not covet", and "do not commit idolatry", easily seen
+within the 10 commandments still describe how we should behave.
+
+But we also don't teach people that the 613 commandments of the Mosaic law are annulled. They're not annulled. We're just not under them, because we're under the law of Christ instead:
+
+> **Matthew 5:17-18** - Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. For truly, I say to you, until heaven and earth pass away, not an iota, not a dot, will pass from the Law until all is accomplished. (ESV)
+
+Heaven and earth have not passed away yet and neither has the Law:
+
+> **Luke 16:17** - But it is easier for heaven and earth to pass away than for one dot of the Law to become void. (ESV)
+
+**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law:
+
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+
+So we should still stop sinning as it is described:
+
+> **I Timothy 1:9** - understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, (ESV)
+
+> **I Peter 4:1** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for whoever has suffered in the flesh has ceased from sin, (ESV)
+
+We're under grace, and we're supposed to not be enslaved to sin, neither are we supposed to be enslaved under the Mosaic law. The Mosaic law isn't a curse to us.
+
+Things like pornography probably attracts evil spirits which hinders finding a relationship, and obviously, we still want to obey God's precepts for our own good:
 
 -   [Prayers Against Evil Attacks During Sleep - Powerful Prayers Against Bad Dreams and Nightmares - YouTube](https://youtu.be/qu8QxxIF4UE?t=520)
 
-Of course we need to be sanctified and stop sinning.
+Of course we still need to be sanctified and stop sinning, following Jesus.
 
 > **Hebrews 12:14,15** -  Strive for peace with everyone, and for the holiness without which no one will see the Lord.  See to it that no one fails to obtain the grace of God; that no root of bitterness springs up and causes trouble, and by it many become defiled;  (ESV)
+
+But sin is rather described in such a way:
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+
+We must instead be led by the Spirit:
+
+> **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And those who belong to Christ Jesus have crucified the flesh with its passions and desires. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
 > **I Thessalonians 3:13** - so that He may establish your hearts without blame in holiness before our God and Father at the coming of our Lord Jesus with all His saints.
 
@@ -10927,6 +11028,10 @@ The universe is upheld by the word of Jesus' power.
     We must be **doing** the will of God to not be under the law:
     
     > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
+    
+    We must instead be led by the Spirit, and follow Christ Jesus:
+    
+    > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And those who belong to Christ Jesus have crucified the flesh with its passions and desires. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
 
 ### God's kingdom is from Heaven to Earth
@@ -12050,6 +12155,12 @@ LGBT and transvestism are sinful.
 Obeying Jesus, even Jesus' commandments, is actually freedom. To disobey Jesus is to submit to slavery.
 
 > **Galatians 5:1** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
+
+> **Galatians 2:4-5** - Yet because of false brothers secretly brought in—who slipped in to spy out our freedom that we have in Christ Jesus, so that they might bring us into slavery— to them we did not yield in submission even for a moment, so that the truth of the gospel might be preserved for you. (ESV)
+
+This really says it all. We die to the law of Moses but live to God. By the works of the law no one will be justified, but by faith in Jesus Christ we seek to be justified:
+
+> **Galatians 2:16-19** - yet we know that a person is not justified by works of the law but through faith in Jesus Christ, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law **I died to the law, so that I might live to God.** (ESV)
 
 > **Ephesians 5:24** - Now as the church submits to Christ, so also wives should submit in everything to their husbands. (ESV)
 
