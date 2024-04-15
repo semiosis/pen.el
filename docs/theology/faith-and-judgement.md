@@ -5532,7 +5532,17 @@ It's impossible to please God without faith, but with faith all things are possi
 
 ### The Mosaic law doesn't help people to keep the law. It doesn't save - it only condemns or justifies. Only grace through faith in God who raised Jesus from the dead saves
 
-And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by following the Mosaic law but by following **Christ's law**.
+The law doesn't save:
+
+> **Galatians 3:21-24** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
+
+But Jesus Christ was and is sinless:
+
+> **I Peter 2:22** - He committed no sin, neither was deceit found in his mouth. (ESV)
+
+[Jesus was sinless](https://www.gotquestions.org/Jesus-sinless.html), and it is because Jesus was sinless that we have hope of an eternity in heaven. If Jesus were not sinless, there would be no sacrifice for sin.
+
+And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by trying to be justified through perfect Mosaic law-keeping but instead by having faith in Jesus Christ, following **Christ's law**:
 
 > **Acts 13:38-39** - Therefore let it be known to you, brethren, that through (G1223 **dia**) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes (G4100 **pisteuo**) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
 
@@ -5582,9 +5592,13 @@ Yes, the requirement of the **law** might be fulfilled in us, who do something i
 
 > **Romans 8:4** - in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.
 
-The mind set on the spirit submits to the law.
+The mind set on the spirit submits to the law:
 
 > **Romans 8:5-7** - For those who live according to the flesh set their minds on the things of the flesh, but those who live according to the Spirit set their minds on the things of the Spirit.  To set the mind on the flesh is death, but to set the mind on the Spirit is life and peace.  For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot.
+
+See, Jesus actually taught people to practice, but without hypocrisy:
+
+> **Matthew 23:2-7** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
 
 The law is not of the flesh. The law is spiritual:
 
@@ -5600,9 +5614,17 @@ If I understand correctly, the Law, which is spiritual, was weakened by
 our flesh, but Jesus Christ's flesh was rent
 on the cross in order that the righteous
 requirement of the law might be fulfilled in
-us:
+us, who don't walk according to the flesh, but who walk according to the Spirit:
 
 > **Romans 8:3-4** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+
+Paul says that pursuing the righteousness that is by Mosaic law, is placing confidence in the flesh:
+
+> **Philippians 3:4-7** - though I myself have reason for confidence in the flesh also. If anyone else thinks he has reason for confidence in the flesh, I have more: circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; as to the law, a Pharisee; as to zeal, a persecutor of the church; as to righteousness, under the law blameless. But whatever gain I had, I counted as loss for the sake of Christ. (ESV)
+
+But to put confidence in the Spirit is to not to abandon obedience, but to seek instead to know Christ Jesus, our Lord, with obedient faith to Jesus:
+
+> **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
 
 So we still must/should stop sinning after getting born-again, but **the Holy Spirit** helps us to do that.
 God saves us from sin by giving us immediate justification through faith to be in relationship with Him, plus the strength to stop sinning.
@@ -5793,7 +5815,7 @@ These do not contradict:
 -   Jesus is the Truth
 -   Jesus' words are Truth and Life
 -   God's word is truth
-    -   The Scripture does not contradict
+    -   The Scripture (Torah) does not contradict
 -   Jesus Christ is the Word of God in the Flesh
     -   Emmanuel
 -   The Spirit of Truth is the Truth
@@ -5802,6 +5824,8 @@ These do not contradict:
 ### We should listen to and obey Jesus' words and compare everything with the scripture
 
 > **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
+
+> **Psalms 119:142** - Your righteousness is righteous forever, and **your law is true**. (ESV)
 
 > **Acts 17:11** - Now these Jews were more noble than those in Thessalonica; they received the word with all eagerness, examining the Scriptures daily to see if these things were so. (ESV)
 
@@ -6231,10 +6255,14 @@ This is similar to how the Israelites trusted in Moses, and they actually were t
 
 -   [How Preachers Grow Graceless - YouTube](https://www.youtube.com/watch?v=alOI2zxIPgc)
 
+> **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
+
 
 # Be a doer of good, not merely a hearer
 
 > **James 1:22-23** -  But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. (ESV)
+
+Doing the law is actually OK. There's nothing wrong with doing what the law requires:
 
 > **Romans 2:13-16** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
 
@@ -12159,6 +12187,13 @@ LGBT and transvestism are sinful.
 > **James 1:25** - But one who looks intently at the perfect law, the law of liberty, and abides by it, not having become a forgetful hearer but an effectual doer, this man will be blessed in what he does.
 
 > **James 2:11-13** - For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law.  So speak and so act as those who are to be judged under the law of liberty.  For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment.
+
+
+## The Torah isn't contrary to the promises of God, including justification by faith
+
+The law doesn't save:
+
+> **Galatians 3:21-24** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
 
 
 ## Submitting to God is submitting to Christ
