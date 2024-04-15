@@ -3,8 +3,8 @@ export TTY
 
 exec 2>/dev/null
 
-rg -z --ignore tags --vimgrep -e "$@" . &
+( rg -z --ignore tags --vimgrep -e "$@" . | sed 's/^\.\///'; ) &
 # ag -z --ignore tags --vimgrep -- "$@" &
-pen-zgrep-r "$@" | sed 's/^\.\///' &
+( pen-zgrep-r "$@" | sed 's/^\.\///' . | sed 's/^\.\///'; ) &
 wait
 :

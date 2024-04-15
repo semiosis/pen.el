@@ -137,7 +137,7 @@ list of (fn args) to pass to `apply''"
 
 
 
-(defun pen-close-eshell-window-when-dead () 
+(defun pen-close-eshell-window-when-dead ()
   (when (not (one-window-p))
     (delete-window)))
 
@@ -356,18 +356,50 @@ or an external command."
 (add-to-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace t)
 ;; (remove-from-list 'eshell-output-filter-functions 'eshell-filter-region-remove-trailing-whitespace)
 
+(comment
+ (etv (pps (eshell-environment-variables)))
+ (etv (pps (eshell-copy-environment))))
+
+(defun eshell-environment-variables ()
+  "Return a `process-environment', fully updated.
+This involves setting any variable aliases which affect the
+environment, as specified in `eshell-variable-aliases-list'."
+  (let ((process-environment (eshell-copy-environment)))
+    (dolist (var-alias eshell-variable-aliases-list)
+      (if (nth 2 var-alias)
+	      (setenv (car var-alias)
+		          (eshell-stringify
+		           (or (eshell-get-variable (car var-alias)) "")))))
+    process-environment))
+
+(eshell-copy-environment)
+
+;; v +/"INSIDE_EMACS" "$EMACSD/pen.el/scripts/bible-mode-scripts/ebible"
+
+;; TODO Figure out how to get this working:
+
+(comment
+ (defun eshell-copy-environment-around-advice (proc &rest args)
+   (let ((res (apply proc args)))
+
+     (tv (append
+          '("NOEMACS=y"
+            "BORDER=n"
+            "ONELINED=y"
+            "DECORATED=y"
+            "NO_PAGER=y")
+          res))
+
+     res))
+ (advice-add 'eshell-copy-environment :around #'eshell-copy-environment-around-advice)
+ (advice-remove 'eshell-copy-environment #'eshell-copy-environment-around-advice))
+
 ;; Make it so ebible works in eshell
 (setq eshell-variable-aliases-list
       `(;; for eshell.el
         ("COLUMNS" ,(lambda () (window-body-width nil 'remap)) t t)
         ("LINES" ,(lambda () (window-body-height nil 'remap)) t t)
         ("INSIDE_EMACS" eshell-inside-emacs t)
-
-        ("NOEMACS" "y")
-        ("BORDER" "n")
-        ("ONELINED" "y")
-        ("DECORATED" "y")
-        ("NO_PAGER" "y")
 
         ;; for esh-ext.el
         ("PATH" (,(lambda () (string-join (eshell-get-path t) (path-separator)))
@@ -378,10 +410,10 @@ or an external command."
 
         ;; for esh-cmd.el
         ("_" ,(lambda (indices quoted)
-	            (if (not indices)
-	                (car (last eshell-last-arguments))
-	              (eshell-apply-indices eshell-last-arguments
-				                        indices quoted))))
+                (if (not indices)
+                    (car (last eshell-last-arguments))
+                  (eshell-apply-indices eshell-last-arguments
+                                        indices quoted))))
         ("?" (eshell-last-command-status . nil))
         ("$" (eshell-last-command-result . nil))
 
