@@ -224,6 +224,28 @@ Being justified by Jesus' blood, we are saved by Him from the wrath of God:
 
 > **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
+-   Immediately we are reconciled to God by the death of His Son,
+-   and then we are saved from the wrath of God by His life.
+-   Also, we meanwhile rejoice in God through our Lord Jesus Christ
+
+> **Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, now that we are reconciled, shall we be saved by his life. More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
+
+Jesus' act of obedience leads to:
+
+-   justification
+-   life
+    -   I believe that the life of Jesus helps us to stop sinning
+
+> **Romans 5:18** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. (ESV)
+
+We are saved from the wrath of God by the life of Jesus Christ. I think that's in part saying that the life of Jesus helps us to repent from sin:
+
+> **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
+
+We need to obey Jesus to have the life:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
 Being saved by Him I think involves us becoming obedient, and faithfully obeying Jesus Christ our Lord:
 
 > **Ephesians 5:5-10** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them; for at one time you were darkness, but now you are light in the Lord. Walk as children of light (for the fruit of light is found in all that is good and right and true), and try to discern what is pleasing to the Lord.

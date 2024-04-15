@@ -196,6 +196,10 @@ If FILEXT is provided, return files with extension FILEXT instead."
 (setq org-highlight-latex-and-related '(latex))
 
 (require 'ox-latex)
+
+(setq org-latex-pdf-process
+      '("%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f"))
+
 (setq org-latex-default-packages-alist (cons '("mathletters" "ucs" nil) org-latex-default-packages-alist))
 (setq org-latex-inputenc-alist '(("utf8" . "utf8x")))
 ;; https://emacs.stackexchange.com/questions/20062/exporting-unicode-characters-to-pdf-using-latex-from-org-mode

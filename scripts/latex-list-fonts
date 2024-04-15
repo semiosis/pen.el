@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# sp +/"^# fc-list :outline -f \"%{family}\\\\n\"" "$PEN/documents/notes/ws/chemistry/reports/diagrams.org"
+
+fc-list :outline -f "%{family}\n" | pavs
