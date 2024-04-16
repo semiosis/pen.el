@@ -1,10 +1,17 @@
 #!/bin/bash
 export TTY
 
+mode=all
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -lc) {
-        list_categories=y
+        mode=list_categories
+        shift
+    }
+    ;;
+
+    -fn) {
+        fun=list_unicode_all
         shift
     }
     ;;
@@ -53,10 +60,7 @@ Supplemental Symbols and Pictographs (U+1F900 to U+1F9FF)
 Transport/Map (U+1F680 to U+1F6FF)
 HEREDOC
 
-{
-if test "$list_categories" = "y"; then
-    printf -- "%s\n" "$categories" | awk 1
-else
+list_unicode_all() {
     printf -- "%s\n" "$categories" | awk 1 | while IFS=$'\n' read -r heading; do
         first="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 1p | sed 's/^U+//')"
         last="$(echo "$heading" | scrape "U\\+[A-F0-9]+" | sed -n 2p | sed 's/^U+//')"
@@ -65,5 +69,17 @@ else
         0</dev/null ci -f -nd odn list-unicode-range "$first" "$last"
         echo
     done
+}
+
+if test -n "$fun"; then
+    "$fun" "$@"
+    exit "$?"
+fi
+
+{
+if test "$mode" = list_categories; then
+    printf -- "%s\n" "$categories" | awk 1
+else
+    ocif list-unicode -fn list_unicode_all
 fi
 } | pavs
