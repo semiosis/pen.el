@@ -188,7 +188,7 @@ Love your neighbour as yourself:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
 
-Jesus' commandments us to even love one another with selfless love:
+Jesus' commandments us to even love one another, anyone around you, with selfless love:
 
 > **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
