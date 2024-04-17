@@ -1157,6 +1157,20 @@ Faith is both believing and obedient, even faith in the heart:
 
 
 <tr>
+<td class="org-left">John 12:36</td>
+<td class="org-left">believe in the light, that you may become sons of light</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">John 8:12</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">I am the light of the world. Whoever follows me will not walk in darkness</td>
+</tr>
+
+
+<tr>
 <td class="org-left">John 3:36</td>
 <td class="org-left">Whoever believes in the Son has eternal life</td>
 <td class="org-left">whoever does not obey the Son shall not see life</td>
