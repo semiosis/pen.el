@@ -710,7 +710,7 @@ So the problem isn't work (even work relating to salvation) but the problem is w
   At the stage they trust in Jesus, they may have no work but I believe at that stage they are justified, when in their heart is obedient, trusting, believing faith in Christ who is their life. But I'm not the one to justify them, God is.
   And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
   And when they go through Jesus Christ, the door, they are saved.
-  
+
   I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a _heart that follows Him_ - that they will be saved.
 #+END_QUOTE
 
@@ -3100,7 +3100,7 @@ I affirm the [[https://www.desiringgod.org/articles/what-is-the-doctrine-of-the-
 
 #+BEGIN_QUOTE
   Thus, the Son is not one-third of the being of God; he is all of the being of God. The Father is not one-third of the being of God; he is all of the being of God. And likewise with the Holy Spirit. Thus, as Wayne Grudem writes, “When we speak of the Father, Son, and Holy Spirit together we are not speaking of any greater being than when we speak of the Father alone, the Son alone, or the Holy Spirit alone” (Ibid., 252).
-  
+
   There is only one God. If each Person of the Trinity is distinct and yet fully God, then should we conclude that there is more than one God? Obviously we cannot, for Scripture is clear that there is only one God: “There is no other God besides me, a righteous God and a Savior; there is none besides me. Turn to me and be saved, all the ends of the earth! For I am God, and there is no other”.
 #+END_QUOTE
 
@@ -17517,6 +17517,46 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 #+BEGIN_QUOTE
   *Amos 5:8* - He who made the Pleiades and Orion, and turns deep darkness into the morning and darkens the day into night, who calls for the waters of the sea and pours them out on the surface of the earth, the LORD is his name; (ESV)
 #+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  6213              3598         3685          2015
+  ‘ō·śêh            ḵî·māh       ū·ḵə·sîl,     wə·hō·p̄êḵ
+  עֹשֵׂ֨ה	              כִימָ֜ה         וּכְסִ֗יל         וְהֹפֵ֤ךְ
+  He made           the Pleiades and Orion     and He turns
+  V‑Qal‑Prtcpl‑msc  N‑fs         Conj‑w | N‑ms Conj‑w | V‑Qal‑Prtcpl‑ms
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1242               6757                3117          3915
+  lab·bō·qer         ṣal·mā·weṯ,         wə·yō·wm      lay·lāh
+  לַבֹּ֙קֶר֙               צַלְמָ֔וֶת               וְי֖וֹם          לַ֣יְלָה
+  into morning       the shadow of death and the day   as night
+  Prep‑l, Art | N‑ms N‑ms                Conj‑w | N‑ms N‑ms
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  2821             7121                  4325
+  heḥ·šîḵ;         haq·qō·w·rê           lə·mê-
+  הֶחְשִׁ֑יךְ            הַקּוֹרֵ֣א                 לְמֵֽי־
+  makes dark       He calls              for the waters
+  V‑Hifil‑Perf‑3ms Art | V‑Qal‑Prtcpl‑ms Prep‑l | N‑mpc
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  3220       8210
+  hay·yām,   way·yiš·pə·ḵêm
+  הַיָּ֗ם        וַֽיִּשְׁפְּכֵ֛ם
+  of the sea and pours them out
+  Art | N‑ms Conj‑w | V‑Qal‑ConsecImperf‑3ms | 3mp
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  5921 6440     776          3068        8034
+  ‘al- pə·nê    hā·’ā·reṣ    Yah·weh     šə·mōw.       s
+  עַל־  פְּנֵ֥י      הָאָ֖רֶץ         יְהוָ֥ה        שְׁמֽוֹ׃          ס
+  on   the face of the earth Yahweh      [is] His name  -
+  Prep N‑cpc    Art | N‑fs   N‑proper‑ms N‑msc | 3ms   Punc
+#+END_SRC
 
 #+BEGIN_QUOTE
   *II Chronicles 15:3-4* - For a long time Israel was without the true God, and without a teaching priest and without law, but when in their distress they turned to the Lord, the God of Israel, and sought him, he was found by them.
