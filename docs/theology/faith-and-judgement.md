@@ -4951,10 +4951,11 @@ So are you are demon or are you one of Jesus' sheep?
 
 ### Lordship salvation and free grace - an apparent paradox
 
-You can't have only half of Jesus:
+You can't have only half of Jesus. Jesus both protects us and disciplines us:
 
--   I believe that free grace without belief and obedience is a lie.
--   I believe a heart must be both believing **and** obedient to receive the grace through faith, since I believe true faith is both obedient and believing.
+> **Psalms 23:4** - Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; <ins>your</ins> **rod** <ins>and your</ins> **staff**, they comfort me. (ESV)
+
+I believe a heart must be both believing **and** obedient to receive the grace through faith, since I believe true faith is both obedient and believing.
 
 After receiving justification (counted not guilty) through obedient and believing faith, we should continue in obedient and believing faith but the work we do is to be tested and is not essential to our justification:
 
