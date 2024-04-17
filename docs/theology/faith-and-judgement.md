@@ -9856,6 +9856,8 @@ Repentance is **essential** for eternal life.
 
 > **John 8:34-35** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
 
+[Preparing to Meet God - YouTube](https://www.youtube.com/watch?v=5EfSeL3PpGM)
+
 
 ### Practicing homosexuality is very sinful and so locking it in with a covenant is very self-destructive
 
@@ -13425,6 +13427,38 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 
 
 # Father God
+
+> **Amos 5:8** - He who made the Pleiades and Orion, and turns deep darkness into the morning and darkens the day into night, who calls for the waters of the sea and pours them out on the surface of the earth, the LORD is his name; (ESV)
+
+    1  6213              3598         3685          2015
+    2  ‘ō·śêh            ḵî·māh       ū·ḵə·sîl,     wə·hō·p̄êḵ
+    3  עֹשֵׂ֨ה	              כִימָ֜ה         וּכְסִ֗יל         וְהֹפֵ֤ךְ
+    4  He made           the Pleiades and Orion     and He turns
+    5  V‑Qal‑Prtcpl‑msc  N‑fs         Conj‑w | N‑ms Conj‑w | V‑Qal‑Prtcpl‑ms
+
+    1  1242               6757                3117          3915
+    2  lab·bō·qer         ṣal·mā·weṯ,         wə·yō·wm      lay·lāh
+    3  לַבֹּ֙קֶר֙               צַלְמָ֔וֶת               וְי֖וֹם          לַ֣יְלָה
+    4  into morning       the shadow of death and the day   as night
+    5  Prep‑l, Art | N‑ms N‑ms                Conj‑w | N‑ms N‑ms
+
+    1  2821             7121                  4325
+    2  heḥ·šîḵ;         haq·qō·w·rê           lə·mê-
+    3  הֶחְשִׁ֑יךְ            הַקּוֹרֵ֣א                 לְמֵֽי־
+    4  makes dark       He calls              for the waters
+    5  V‑Hifil‑Perf‑3ms Art | V‑Qal‑Prtcpl‑ms Prep‑l | N‑mpc
+
+    1  3220       8210
+    2  hay·yām,   way·yiš·pə·ḵêm
+    3  הַיָּ֗ם        וַֽיִּשְׁפְּכֵ֛ם
+    4  of the sea and pours them out
+    5  Art | N‑ms Conj‑w | V‑Qal‑ConsecImperf‑3ms | 3mp
+
+    1  5921 6440     776          3068        8034
+    2  ‘al- pə·nê    hā·’ā·reṣ    Yah·weh     šə·mōw.       s
+    3  עַל־  פְּנֵ֥י      הָאָ֖רֶץ         יְהוָ֥ה        שְׁמֽוֹ׃          ס
+    4  on   the face of the earth Yahweh      [is] His name  -
+    5  Prep N‑cpc    Art | N‑fs   N‑proper‑ms N‑msc | 3ms   Punc
 
 > **II Chronicles 15:3-4** - For a long time Israel was without the true God, and without a teaching priest and without law, but when in their distress they turned to the Lord, the God of Israel, and sought him, he was found by them.
 
