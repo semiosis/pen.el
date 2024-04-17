@@ -180,7 +180,7 @@ Serve God:
 
 > **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the LORD commanded you, to love the LORD your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul. (ESV)
 
-So that we may live:
+Love God so that we may live:
 
 > **Deuteronomy 30:6** - And the LORD your God will circumcise your heart and the heart of your offspring, so that you will love the LORD your God with all your heart and with all your soul, that you may live. (ESV)
 
@@ -188,15 +188,29 @@ Love your neighbour as yourself:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
 
-Your neighbour is anyone around you:
+Jesus' commandments us to even love one another with selfless love:
 
-> **Luke 10:29-37** - But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise. (ESV)
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+And the Apostle John echos that the commandment is still extremely important:
+
+> **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we love one another. And this is love, that we walk according to his commandments; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
+
+Loving our neighbour as ourself should look like showing merciful love to those around you:
+
+> **Luke 10:29-37** - But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. <ins>Which of these three, do you think,</ins> **proved to be a neighbor** <ins>to the man who fell among the robbers?</ins> He said, <ins>The one who showed him mercy.</ins> And Jesus said to him, You go, and **do likewise.** (ESV)
 
 > **Mark 12:30-31** - And you shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength. The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these. (ESV)
 
 > **Mark 12:32-34** - And the scribe said to him, You are right, Teacher. You have truly said that he is one, and there is no other besides him. And to love him with all the heart and with all the understanding and with all the strength, and to love one's neighbor as oneself, is much more than all whole burnt offerings and sacrifices. And when Jesus saw that he answered wisely, he said to him, You are not far from the kingdom of God. And after that no one dared to ask him any more questions. (ESV)
 
+We are supposed to fulfill the royal law:
+
 > **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
+
+The same way that Jesus loved, selflessly:
+
+> **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ. (ESV)
 
 We should aim to fulfill these great commandments while being merciful:
 
@@ -215,7 +229,7 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 > **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world! (ESV)
 
 
-### We are saved by grace through Jesus Christ
+### We are saved by grace through faith in Jesus Christ
 
 > **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
 
@@ -332,6 +346,8 @@ Being saved by Him I think involves us becoming obedient, and faithfully obeying
 
 > **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, <span class="underline">to <ins>obey is better than sacrifice</ins></span>, and <span class="underline"><ins>to listen than the fat of rams</ins></span>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
+> **Leviticus 5:17** - If anyone sins, doing any of the things that by the LORD's commandments ought not to be done, though he did not know it, then realizes his guilt, he shall bear his iniquity. (ESV)
+
 
 ## God makes us born-again, so we can love Him, obediently
 
@@ -355,7 +371,9 @@ I have been just trying to figure out my theology. One God, three persons, Fathe
 
 > **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
-We must drop the old selfish self and allow Jesus to come in with the new obediently loving self.
+We must drop the old selfish self and allow Jesus to come in with the new obediently loving self:
+
+> **Psalms 37:27** - Turn away from evil and do good; so shall you dwell forever. (ESV)
 
 Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
 
@@ -736,12 +754,28 @@ We aim for perfection / to be made complete / full restoration:
 
 > **II Corinthians 13:11-14** - Finally, brethren, rejoice, **be made complete**, be comforted, be like-minded, live in peace; and the God of love and peace will be with you. Greet one another with a holy kiss. All the saints greet you. The grace of the Lord Jesus Christ, and the love of God, and the fellowship of **the Holy Spirit**, be with you all. (NASB)
 
-Paul presses on to try to achieve a high level of Christlikeness, and his rational is that Jesus made him (Paul) his own (i.e. Jesus loved him),
+Paul presses on to try to live like Christ, and his rational is that Jesus made him (Paul) his own (i.e. Jesus loved him),
 and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm convinced that's the motivation). He wants to be with Jesus.
 
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
+> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+
+> **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
+
 > **John 12:26** - <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins> (ESV)
+
+Jesus' teaching is extremely important for Christians to abide in. Jesus' teaching comes from the same God, Jehovah:
+
+> **John 7:16** - So Jesus answered them, My teaching is not mine, but his who sent me. (ESV)
+
+> **Deuteronomy 30:19-20** - I call heaven and earth to witness against you today, that I have set before you life and death, blessing and curse. Therefore choose life, that you and your offspring may live, loving the LORD your God, obeying his voice and holding fast to him, for he is your life and length of days, that you may dwell in the land that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them. (ESV)
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+> **I Timothy 6:3** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, (ESV)
+
+> **Colossians 3:16** - Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. (ESV)
 
 I'm pretty convinced that what Jesus means by the following is that by giving up worldly treasure in the pursuit
 of Jesus, heavenly treasure is acquired. I'd say it's likely that the heavenly treasure is simply helping those people.
@@ -10147,6 +10181,8 @@ I believe that producing good fruit is necessary for being saved:
 -   a heart that is turning away from sin
 -   believing the Gospel and obeying Jesus
 
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
 
 ## When it says 'hate' here, it means 'unfollow'
 
@@ -13517,6 +13553,8 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 > **Ephesians 3:9-11** - and to bring to light for everyone what is the plan of the mystery hidden for ages in God who created all things, so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places. This was according to the eternal purpose that he has realized in Christ Jesus our Lord,
 
 > **Romans 1:18-25** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
+
+> **Deuteronomy 7:9** - Know therefore that the LORD your God is God, the faithful God who keeps covenant and steadfast love with those who love him and keep his commandments, to a thousand generations, (ESV)
 
 
 ## Jesus is the Only Way to Father God
