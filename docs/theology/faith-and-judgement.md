@@ -170,9 +170,37 @@ I think works that we can expect to come from believers in Jesus are:
 
 ## Obedience is absolutely within our ability
 
-God's commandments are not too difficult to follow:
+God's commandments are not too difficult to follow.
+
+Love the LORD your God:
 
 > **Deuteronomy 30:10-11** - when you obey the voice of the LORD your God, to keep his commandments and his statutes that are written in this Book of the Law, when you turn to the LORD your God with all your heart and with all your soul. For this commandment that I command you today is not too hard for you, neither is it far off. (ESV)
+
+Serve God:
+
+> **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the LORD commanded you, to love the LORD your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul. (ESV)
+
+So that we may live:
+
+> **Deuteronomy 30:6** - And the LORD your God will circumcise your heart and the heart of your offspring, so that you will love the LORD your God with all your heart and with all your soul, that you may live. (ESV)
+
+Love your neighbour as yourself:
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
+Your neighbour is anyone around you:
+
+> **Luke 10:29-37** - But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise. (ESV)
+
+> **Mark 12:30-31** - And you shall love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength. The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these. (ESV)
+
+> **Mark 12:32-34** - And the scribe said to him, You are right, Teacher. You have truly said that he is one, and there is no other besides him. And to love him with all the heart and with all the understanding and with all the strength, and to love one's neighbor as oneself, is much more than all whole burnt offerings and sacrifices. And when Jesus saw that he answered wisely, he said to him, You are not far from the kingdom of God. And after that no one dared to ask him any more questions. (ESV)
+
+> **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
+
+We should aim to fulfill these great commandments while being merciful:
+
+> **James 2:11-13** - For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law. So speak and so act as those who are to be judged under the law of liberty. For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment. (ESV)
 
 It's <ins>perfect</ins> obedience which only Jesus Christ managed to reach:
 
@@ -668,13 +696,31 @@ Jesus has life in Him, and the life is the Light of men - the true Light.
 
 > **John 1:6-7** - There came a man sent from God, whose name was John. He came as a witness, to testify about the Light, so that all might believe through him.
 
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life. (ESV)
+
+> **John 9:5** - As long as I am in the world, I am the light of the world. (ESV)
+
 > **John 12:36** - While you have the light, <ins>believe in the light, that you may become sons of light</ins>. When Jesus had said these things, he departed and hid himself from them.
 
 We testify about the Light, so that through our testimony, others might believe.
 
+> **Matthew 5:14** - You are the light of the world. A city set on a hill cannot be hidden. (ESV)
+
+> **Philippians 2:15** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, (ESV)
+
+> **Colossians 1:12** - giving thanks to the Father, who has qualified you to share in the inheritance of the saints in light. (ESV)
+
+> **James 1:17** - Every good gift and every perfect gift is from above, coming down from the Father of lights with whom there is no variation or shadow due to change. (ESV)
+
+> **I Thessalonians 5:5** - For you are all children of light, children of the day. We are not of the night or of the darkness. (ESV)
+
 To anyone who receives Jesus, even those who believe on His name, Jesus has given the right to become children of God, to be born of God.
 
 > **John 1:11-13** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
+
+> **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+
+> **I John 2:10** - Whoever loves his brother abides in the light, and in him there is no cause for stumbling. (ESV)
 
 Yes, I believe that Jesus can save a person who believes in His name. But He is the judge, and it is written in John's gospel that no person who remains disobedient to Jesus Christ will see life, and I believe that.
 
@@ -4585,6 +4631,10 @@ Cleaned up (stop sinning) by having faith in the truth.
 Jesus makes it clear that the ones who truly believe in Him **will do** the **works** which **He does**:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+James believes that faith is really substantiated by works:
+
+> **James 2:22-26** - You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
 
 But works by us done in righteousness are **not** the reason God showed mercy on us to save us. God in His mercy simply gave us His Holy Spirit in abundance to wash us, to regenerate us and to renew us, and He did this so that being justified by His grace, we might become heirs according to the hope of eternal life. We were once really disobedient, but by God's grace through faith in Jesus we are now obedient. The faith was **becoming obedient** to Jesus, and out of it flows good works and obedience:
 
