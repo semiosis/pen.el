@@ -2550,7 +2550,13 @@ I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what
 
 AMEN!!
 
-I believe that Jesus Christ **is** Jehovah.
+Jehovah is God Almighty:
+
+> **Exodus 6:3** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
+
+[Exodus 6:3 Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;](https://biblehub.com/interlinear/exodus/6-3.htm)
+
+I believe that Jesus Christ **is** Jehovah. Jesus is God the Son.
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
@@ -2571,6 +2577,23 @@ God sends the Spirit of His Son into our heart, crying, "Abba! Father!" We exper
 > **Romans 8:13-17** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
 
 [The Spirit in Us Cries 'Abba Father': Galatians 4:1-7, Part 5 - YouTube](https://www.youtube.com/watch?v=yENsZ-Fsj4I)
+
+I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknowledge that Jesus Christ has come in the flesh. 
+
+> **I John 4:1-3** - Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world. By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
+
+As of now (18 April '24), though, I have not actually heard that confession through the Spirit that Jesus Christ has come in the flesh - just being honest,
+
+I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to hearth in the flesh, born of the virgin Mary,
+was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand.
+
+But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
+So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
+Therefore, I will continue to endeavour to keep Jesus' commandments:
+
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+So it's really important that I remain faithful to Jesus and do my best to not compromise or be swayed by people who deter me from keeping Jesus' commandments.
 
 
 ### Jesus is the Lamb of God who sits with God on God's throne
