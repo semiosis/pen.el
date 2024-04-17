@@ -309,6 +309,14 @@ Being saved by Him I think involves us becoming obedient, and faithfully obeying
 
 > **John 3:7** - Do not marvel that I said to you, You must be born again. (ESV)
 
+We must follow Jesus:
+
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. **Whoever follows me will not walk in darkness, but will have the light of life.** (ESV)
+
+We must believe Jesus is who He says He is:
+
+> **John 8:24** - I told you that you would die in your sins, for unless you believe that I am he you will die in your sins. (ESV)
+
 We must love Jesus:
 
 > **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
