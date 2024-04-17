@@ -187,7 +187,11 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 > **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world! (ESV)
 
 
-### We are saved through Jesus Christ
+### We are saved by grace through Jesus Christ
+
+> **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
+
+[The Heart of the Gospel - YouTube](https://www.youtube.com/watch?v=ecyncQwJlr4)
 
 We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him.
 
@@ -197,8 +201,26 @@ We are not condemned if we believe in the name of Jesus Christ, the only Son of 
 
 > **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
 
+> **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+> **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
+
+Justification comes through through the righteousness of living by faith:
+
+> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
+
+Even the new believer is not condemned:
+
+> **I Corinthians 3:1** - But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. (ESV)
+
+And as we know, no-one in Christ is condemned:
+
+> **Romans 8:1** - There is therefore now no condemnation for those who are in Christ Jesus.
+
 
 ### We become obedient to Jesus
+
+> John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
 
 He paid the price for our sin:
 
@@ -207,6 +229,31 @@ He paid the price for our sin:
 And we are justified and have peace with God through our Lord Jesus Christ, who we are following:
 
 > **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. (ESV)
+
+> **II Timothy 1:9** - who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, (ESV)
+
+> **II Timothy 1:13** - Follow the pattern of the sound words that you have heard from me, in the faith and love that are in Christ Jesus. (ESV)
+
+We love our neighbour the way Jesus commanded:
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but under the law of Christ) that I might win those outside the law. (ESV)
+
+> **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ. (ESV)
+
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+Jesus loved us selflessly. We should love one another selflessly:
+
+> **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
+
+
+### There's some bonuses to suffering for Christ's sake and for endurance
+
+> **II Timothy 2:12-13** - if we endure, we will also reign with him; if we deny him, he also will deny us; if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
+
+> **Romans 8:17** - and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+
+But suffering for Christ's sake should be for giving glory to Jesus:
 
 
 ### Eternal life and salvation is a gift received through faith
@@ -276,6 +323,8 @@ We must drop the old selfish self and allow Jesus to come in with the new obedie
 
 Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
 
+> **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
+
 > **Romans 6:1** - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For **if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his**. We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but **the life he lives he lives to God.** So you also must consider yourselves dead to sin and alive to God in Christ Jesus.
 
 Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the following verse, I believe actually applies to baptism (identifying with Christ in His death and resurrection)! So a nice way of reading the following is: If someone, while believing in Jesus Christ, dies to their old selfish nature to live as someone who loves selflessly, they will live, and the one who lives abiding in Jesus Christ's love, having died to their old selfish nature, and believes in Him will never die:
@@ -321,6 +370,8 @@ We are commanded to be innocent, and to bear witness of Jesus before men who per
 God works in us to save us. Since obedience to God is faith, God works in us through faith:
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
+
+> **Jude 1:21** - keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
 
 Although, we will arrive at rest:
 
@@ -400,6 +451,12 @@ So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believi
 When we are believing in Jesus Christ's finished work and obeying Jesus, obeying His commandments, it is actually God who is working in us:
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
+
+We serve Christ:
+
+> **Matthew 25:40** - And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me. (ESV)
+
+> **Mark 9:37** - Whoever receives one such child in my name receives me, and whoever receives me, receives not me but him who sent me. (ESV)
 
 If a person serves Christ, this is not a dead works-based gospel, but is simply obeying the gospel. That person has been brought into obedience by the grace of God.
 
@@ -549,6 +606,8 @@ Obedience to Jesus' commandments (trusting Jesus and being baptised):
 The original Apostles were instructed to feed Jesus' sheep with the living bread that is Jesus Christ. Likewise, in living testimony we should teach others to walk the way of righteousness:
 
 > **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
+
+> **II Timothy 2:24-26** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will. (ESV)
 
 
 ## Even the Old Testament makes a person wise for salvation through faith in Christ Jesus:
@@ -1019,7 +1078,16 @@ Nevertheless, if someone believes on Him they have begun to obey Him, and so I b
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
 
+That's confirmed here by saying that these people are not 'spiritual' but they are still in Christ:
+
+> **I Corinthians 3:1** - But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. (ESV)
+
+And as we know, no-one in Christ is condemned:
+
+> **Romans 8:1** - There is therefore now no condemnation for those who are in Christ Jesus.
+
 So if a person **is believing** (verb) in Him - I don't think they fall into condemnation, no matter how otherwise disobedient they are.
+
 Actually, at some stage I think we have to just rest in the knowledge that it's all about what He did, as far as being saved goes, not what we've done for Him.
 
 > **Hebrews 4:10** - for whoever has entered God's rest has also rested from his works as God did from his. (ESV)
@@ -2385,6 +2453,10 @@ I believe that Jesus Christ **is** Jehovah.
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
 > **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
+> **I John 5:20** - And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and **we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.** (ESV)
+
+> **I John 5:11** - And this is the testimony, that God gave us eternal life, and this life is in his Son. (ESV)
 
 To have the Spirit of Christ is to have the Spirit of God:
 
@@ -5989,9 +6061,14 @@ Self-righteous forgiveness:
 The ones who live <ins>not under law</ins> of God will be thrown into the fiery furnace.
 
 OK, so being led by the Spirit, we still actually comply with the Law of God.
+
 So we must have Christ in us, and being led by the Spirit.
 
 So we are <ins>under</ins> the <ins>law of Christ</ins>, which is a law of faith in Christ, and led by the Spirit to have the requirement of the Law fulfilled in us.
+
+I'm with this guy:
+
+-   [DEBATE: Should a Christian Observe the Torah Today? - YouTube](https://youtu.be/vVa86R6z0DA?t=1284)
 
 The lawbreakers will be thrown into the fiery furnace:
 
@@ -6362,6 +6439,10 @@ By this we know <ins>he</ins> abides in <ins>us</ins>:
 We keep His commandments, and we abide in Him:
 
 > **John 15:10** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+
+We are in Jesus Christ. Eternal life is in Jesus Christ:
+
+> **I John 5:20** - And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and **we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.** (ESV)
 
 By having an obedient, trusting faith (which fundamentally includes belief) in Jesus, following, we have Jesus' righteousness.
 
@@ -9388,14 +9469,14 @@ The asceticism [of denying marriage] has no value in stopping the indulgence of 
 
 Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
 
-Demon spirits deny relationships, whether it's a spirit of wordliness, spirit-spouse or antichrist (because it's against what Jesus taught) then that creates problems.
+Demon spirits deny relationships:
 
 For example:
 
 -   worldly spirit through a person telling me I need to be financially successful first, or
 -   a spirit of slander or gossip which keeps me isolated, or a rejection-spirit spreading gossip/slander among people around me, creating social anxiety, making it hard to socialise with people who would be good to talk to, or
 -   a spirit spouse which thinks it's my spouse
--   literally satan denying marriage - if I'm not allowed to marry the person I love because all of the above spirits start manifesting
+-   if all of the above spirits start manifesting
 
 As far as forsaking God's precepts for worldly precepts go, the truth is that while in God's favour, God provides, and we cooperate with God by working, etc. But if God doesn't want you to get a job at a particular time, you wont get a job, etc.
 
@@ -9411,7 +9492,7 @@ God's precept isn't that the rich are the only ones who are allowed to marry. Ot
 
 > **John 15:19** - If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. (ESV)
 
-We have to obey God. Jesus commandment is to give to the one that asks. If I had to choose between obeying Jesus and holding onto lots of money so I could get a wife, then it is the latter which is actually stealing, and stealing from God, not the former:
+We have to obey God. Jesus commandment is to give to the one that asks. If I had to choose between obeying Jesus and holding onto lots of money so I could get a wife, then it is the latter which is actually stealing, and stealing from God:
 
 > **Matthew 5:42** - Give to the one who begs from you, and do not refuse the one who would borrow from you. (ESV)
 
@@ -9448,15 +9529,9 @@ while worldly people will discriminate against:
 -   age-gap marriage between consenting adults
 -   people who are actually obeying God
 
-I have a very similar option to John Piper on this I think:
+I have a very similar opinion to John Piper on this I think:
 
 -   [Can I Marry a Woman Half My Age? | Desiring God](https://www.desiringgod.org/interviews/can-i-marry-a-woman-half-my-age)
-
-Also, people shouldn't make condemnations based on wives-tales and zero actual evidence because they might be **condemning the innocent**:
-
-> **Matthew 12:3-8** - He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And **if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the guiltless.** For the Son of Man is lord of the Sabbath.
-
-Statistics alone are not good enough to condemn someone from doing wrong - we need real anecdotal evidence or it's not even grounded in reality - the accusations are just slanderous fiction.
 
 Also, I won't accept accusations or condemnation from the enemy while I'm trying to do the will of God, being obedient to Jesus Christ:
 
