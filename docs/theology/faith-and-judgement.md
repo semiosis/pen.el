@@ -1596,13 +1596,9 @@ Those enslaved by corruption are not sons:
 
 > **II Peter 2:19** - They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved.
 
-People may fall away if they sin:
+People fall away if they are not freed from sin. We're seeking to be freed from sin:
 
-> **John 8:34-35** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
-
-True sonship is required to remain forever:
-
-> **John 8:36** - So if the Son sets you free, you will be free indeed. (ESV)
+> **John 8:34-36** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever. So if the Son sets you free, you will be free indeed. (ESV)
 
 > **Galatians 4:4-9** - But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons. And because you are sons, God has <ins>sent the Spirit of his Son into our hearts, crying, Abba! Father!</ins> So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? (ESV)
 
@@ -7994,6 +7990,10 @@ The ones under the law who also walk in the footsteps of the faith that Abraham 
     5    by faith          of Abraham
 
 > **Galatians 3:6-9** -  just as Abraham believed God, and it was counted to him as righteousness?  Know then that it is those of faith who are the sons of Abraham.  And the Scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, In you shall all the nations be blessed.  So then, those who are of faith are blessed along with Abraham, the man of faith.  (ESV)
+
+We can start by believing what God told us through Jesus:
+
+> **John 8:40** - but now you seek to kill me, a man who has told you the truth that I heard from God. This is not what Abraham did. (ESV)
 
 > **Romans 9:31-32** - but that Israel who pursued a law that would lead to righteousness did not succeed in reaching that law. Why? Because they <ins>did not pursue it by faith</ins>, but as if it were based on works. They have stumbled over the stumbling stone, (ESV)
 
