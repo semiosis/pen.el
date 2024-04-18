@@ -83,7 +83,7 @@ Out with the old selfish self and in with the new selflessly loving self:
 
 > **Galatians 5:6** - For in Christ Jesus <ins>neither circumcision nor uncircumcision counts for anything,</ins> but only **faith working through love.** (ESV)
 
-Out with the old selfish self and in with the new selflessly loving self:
+Out with the old selfish self and in with the new selflessly loving, and obedient to God self:
 
 > **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
 
@@ -9625,7 +9625,11 @@ The asceticism [of denying marriage] has no value in stopping the indulgence of 
 
 Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
 
-Demon spirits deny relationships:
+Abraham was 10 years older than Sarah!
+
+> **Genesis 17:17** - Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child? (ESV)
+
+Demon spirits deny relationships because 
 
 For example:
 
@@ -9704,22 +9708,6 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 > **1 Timothy 1:8-11** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice **homosexuality**, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
 Not that I was or am perfect.
-
-
-### My own experience being persecuted with relationships
-
-Abraham was 10 years older than Sarah, but as an adult in my 30s I've received so much persecution against Christians over this, and even my own parents have a 10 year age gap. Nevertheless, I believe undoubtably that satan would rather have me marry a vacuum cleaner or an animal or accept his kundalini spirit or a spirit spouse before letting me marry somebody.
-
-But I'm working on being delivered from demons which have been attacking me after making a marriage proposal.
-I will continue following Jesus. And there's demons I'm fighting against for the last year and a half which lie daily to me, and speak blasphemies and falsehood, and attacking me in my sleep - they're pretty disgusting.
-
-I find deliverance prayers on YouTube such as this to be quite helpful:
-
--   [DELIVERANCE PRAYER AGAINST DELAYS AND SETBACKS - YouTube](https://www.youtube.com/watch?v=ncXu2NpgtAw)
-
-The demons which have come against me in the last year and a half are just horrendous. My entire situation is awful, and I pray to be raptured every day from this evil world that I live in currently.
-
-In Jesus Christ's name I will be delivered from this, and I will not allow satan to steal from me any more. Jesus Christ is my defense.
 
 
 ### But gay 'marriage' should not be held in equal standing to God's design
@@ -13838,7 +13826,7 @@ Jesus Christ is at the Father's side (and has made Father God known):
 
 > **John 1:18** - No one has ever seen God; the only God, who is at the Father's side, he has made him known. (ESV)
 
-This says the Word was God, but it doesn't say the Word was the totality of the Father. We can be sure that in the beginning there was the Word and the Word was with God and the Word was God:
+This says the Word was God. We can be sure that in the beginning there was the Word and the Word was with God and the Word was God, and that Jesus Christ is the Word:
 
 > **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV, NASB, KJV, BSB)
 
@@ -13886,7 +13874,21 @@ The Father is with the Son, the Father is in the Son, and the Son in the Father:
 
 > **John 10:30** - I and the Father are one.
 
-The Father is not specifically the Son (Jesus Christ), at least in title, but Jesus is the Word, and the Word is God, and I think Jesus Christ is still the Father in the sense that Jesus Christ is in the Father, and the Father in the Son, but there still seems to be some distinction there between persons or titles, and to be honest, I'm just trying to rationalise this and understand how this fits together and don't presume to know everything with certainty. And Jesus came in the Father's name. God was revealed in Jesus Christ for us.
+The Father is not specifically the Son (Jesus
+Christ), at least in title, but Jesus is the
+Word, and the Word is God, and I think Jesus
+Christ is still the Father in the sense that
+Jesus Christ is in the Father, and the Father
+in the Son, but there still seems to be some
+distinction there between persons or titles,
+and to be honest, I'm just trying to
+rationalise this and understand how this fits
+together and don't presume to know everything
+with certainty.
+
+And Jesus came in the Father's name.
+
+God was revealed in Jesus Christ for us.
 
 
 ## God adopts children, fellow heirs with Christ
@@ -14012,7 +14014,7 @@ The world (the remaining people, who have not repented) may know that Father God
 > **Hebrews 10:19-20** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, (ESV)
 
 
-# Jesus rose from the dead and ascended
+# Jesus rose from the dead and ascended. Amen
 
 > **Luke 24:1-7** - But on the first day of the week, at early dawn, they came to the tomb bringing the spices which they had prepared. And they found the stone rolled away from the tomb, but when they entered, they did not find the body of the Lord Jesus. While they were perplexed about this, behold, two men suddenly stood near them in dazzling clothing; and as the women were terrified and bowed their faces to the ground, the men said to them, “Why do you seek the living One among the dead? He is not here, but He has risen. Remember how He spoke to you while He was still in Galilee, saying that the Son of Man must be delivered into the hands of sinful men, and be crucified, and the third day rise again.” (ESV)
 
@@ -14161,7 +14163,7 @@ Our hope of salvation which we have in Jesus Christ.
 
 ## Lamp
 
-Awaiting the revelation of Jesus Christ, prepare our hearts, waiting for Jesus to knock, ready for action.
+Awaiting the grace that will be brought to us at the revelation of Jesus Christ, prepare our hearts, waiting for Jesus to knock, ready for action.
 
 The day of the Lord will come like a thief in the night. But we know it's coming, so we'll be ready for it:
 
@@ -14171,6 +14173,8 @@ Keep shining your light, maintaining a heart of service, and do good works of fa
 
 > **I Peter 1:13** - Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. (ESV)
 
+Jesus will serve His servants who are awake:
+
 > **Luke 12:33-37** - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. For where your treasure is, there will your heart be also. Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks. Blessed are those servants whom the master finds awake when he comes. Truly, I say to you, he will **dress himself for service** and have them recline at table, and he will come and serve them. (ESV)
 
 
@@ -14179,7 +14183,7 @@ Keep shining your light, maintaining a heart of service, and do good works of fa
 I believe in all of theses:
 
 -   `sola fida` (by faith alone) AMEN!!.
-    -   The justifying faith may include 'acts of faith', which is just visible faith.
+    -   The justifying faith may include 'acts of faith', which is just visible, working faith.
     -   Works done outside of faith **do not** qualify for justification.
 -   `sola gratia` (by grace alone) AMEN!!
 -   `sola scriptura` (by Scripture alone) AMEN!!
@@ -14195,7 +14199,7 @@ I'm honestly just trying to combat falsehood by reading and applying the Scriptu
 > **Matthew 25:22-23** - And he also who had the two talents came forward, saying, Master, you delivered to me two talents; here I have made two talents more. His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.
 
 
-# Then, glorification
+# Glorification
 
 Jesus sent us. We seek to glorify Jesus. We seek to glorify our Master.
 We seek to glorify God. We seek to be found in Jesus. We seek the glorification that comes from being found in our Master, Jesus Christ.
@@ -14220,13 +14224,15 @@ God glorifies Himself through glorifying Jesus through working through Jesus. Th
 
 > **John 13:32** - If God is glorified in him, God will also glorify him in himself, and glorify him at once.
 
-Jesus glorifies us by working through us to do God's work which also glorifies Jesus and glorifies God:
+Jesus glorifies us, provided we suffer for His sake, by working through us to do God's work which also glorifies Jesus and glorifies God:
 
 > **John 14:13** - Whatever you ask in my name, this I will do, that the Father may be glorified in the Son.
 
 > **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples.
 
 > **John 17:10-11** - All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>. And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
+
+> **Romans 8:17** - and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
 
 The Spirit whom those who have faith in Jesus receive works through us:
 
@@ -14245,9 +14251,14 @@ Likewise, we must obey God, and obey God by obeying Jesus, and being sanctified 
 
 ### Glorification is Christ-likeness
 
-Glorification is the good works including forgiving others, relieving others' burdens, etc. suffering for the sake of righteousness and obedience to God.
+We are trying to shine the Truth of Jesus Christ and Jesus' gospel.
+
+> **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may <ins>proclaim the excellencies of him who called you out of darkness into his marvelous light.</ins> (ESV)
+
+Glorification is the visible works of following Jesus including forgiving others, relieving others' burdens, etc. suffering for the sake of righteousness and obedience to God.
 
 Imitating Jesus, forgiving others, walking righteously, and doing good works (bearing one-another's burdens) glorifies Jesus and glorifies God.
+The motivation is to glorify Jesus, and to honour Jesus.
 
 > **I Corinthians 6:20** - for you were bought with a price. So glorify God in your body. (ESV)
 
