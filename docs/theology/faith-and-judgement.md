@@ -2568,6 +2568,8 @@ I believe that Jesus Christ **is** Jehovah. Jesus is God the Son.
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
+> **John 8:18-19** - I am the one who bears witness about myself, and the Father who sent me bears witness about me. They said to him therefore, Where is your Father? Jesus answered, You know neither me nor my Father. If you knew me, you would know my Father also. (ESV)
+
 > **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
 
 > **I John 5:20** - And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and **we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life.** (ESV)
@@ -2636,9 +2638,17 @@ These Jews **had believed** but didn't abide in Jesus' words, and so prove to be
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed</ins> in him, <ins>If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free.</ins>
 
-They didn't believe they needed Jesus to set them free from sin. No-one who commits sin has eternal life:
+They didn't believe they needed Jesus to set them free from sin:
 
 > **John 8:33-36** - They answered him, We are offspring of Abraham and have never been enslaved to anyone. How is it that you say, You will become free? Jesus answered them, Truly, truly, I say to you, <ins>everyone who commits sin is a slave to sin. The slave does not remain in the house forever;</ins> the son remains forever. So if the Son sets you free, you will be free indeed.
+
+We need to believe Jesus is who He says He is:
+
+> **John 8:24** - I told you that you would die in your sins, for unless you believe that I am he you will die in your sins. (ESV)
+
+We need to keep Jesus' word until we are set free:
+
+> **John 8:51** - Truly, truly, I say to you, if anyone keeps my word, he will never see death. (ESV)
 
 They couldn't accept that they needed to be saved:
 
