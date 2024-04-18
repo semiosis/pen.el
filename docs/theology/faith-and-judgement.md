@@ -348,6 +348,18 @@ Being saved by Him I think involves us becoming obedient, and faithfully obeying
 
 > **Leviticus 5:17** - If anyone sins, doing any of the things that by the LORD's commandments ought not to be done, though he did not know it, then realizes his guilt, he shall bear his iniquity. (ESV)
 
+The disobedience of mankind started in the Garden of Eden:
+
+> **Genesis 3:17** - And to Adam he said, Because you have listened to the voice of your wife and have eaten of the tree of which I commanded you, You shall not eat of it, cursed is the ground because of you; in pain you shall eat of it all the days of your life; (ESV)
+
+Jesus helps us to overcome sin. Jesus delivers us from it:
+
+> **Romans 7:22-25** - For I delight in the law of God, in my inner being, but I see in my members another law waging war against the law of my mind and making me captive to the law of sin that dwells in my members. Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
+
+God's commandments through Jesus is within the Law of God:
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but under the law of Christ) that I might win those outside the law. (ESV)
+
 
 ## God makes us born-again, so we can love Him, obediently
 
@@ -6489,6 +6501,10 @@ Christians wish to comply with the law of God and do so in their mind, but know 
 Christians comply with the law by faith, not works:
 
 > **Luke 6:9** - And Jesus said to them, I ask you, is it lawful on the Sabbath to do good or to do harm, to save life or to destroy it? (ESV)
+
+God's commandments through Jesus is within the Law of God. Faith in Jesus is how we comply with the law of God:
+
+> **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but under the law of Christ) that I might win those outside the law. (ESV)
 
 Christians do not Judaize (Christians do not instruct Gentiles to conform to Judaism):
 
