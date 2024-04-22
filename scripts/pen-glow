@@ -65,7 +65,7 @@ fix_ansi() {
 test -f "$HOME/repos/glow/glow" && : "${bin:="$HOME/repos/glow/glow"}"
 test -f "${GOPATH%%:*}/bin/glow" && : "${bin:="${GOPATH%%:*}/bin/glow"}"
 
-glow() {
+glowbin() {
     fix_ansi "$bin" "$@"
 }
 
@@ -83,4 +83,4 @@ case "$mode" in
     *)
 esac
 
-glow "$@"
+glowbin "$@"

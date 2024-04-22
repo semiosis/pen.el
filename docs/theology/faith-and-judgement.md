@@ -1,5 +1,6 @@
 This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
-I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing.
+I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
+a Bible study. I hope it spreads some light on the Scriptures.
 
 I agree whole heartedly with Keith Green here:
 
@@ -40,6 +41,8 @@ not from the ESV, I have almost certainly marked it with the alternative version
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
+
+> **John 3:18** - **Whoever believes in him is not condemned**, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
@@ -241,9 +244,13 @@ We believe on Jesus Christ and receive eternal life, and we are saved through Je
 
 We are not condemned if we believe in the name of Jesus Christ, the only Son of God. That's really good news!:
 
-> **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+> **John 3:18** - **Whoever believes in him is not condemned**, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+
+AMEN!!
 
 > **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+AMEN!!
 
 > **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
 
@@ -421,11 +428,15 @@ Likewise, that's the type of selfless love we should have. Selfless love while t
 
 > **I Peter 4:19** - Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good. (ESV)
 
-The purest selfless love loves while not breaking faith with God. Jesus maintained faithfulness to God while maintaining selfless love. We should endeavour to have the same mind.
+The purest selfless love loves while not breaking faith with God. Jesus maintained faithfulness to God while maintaining selfless love. We should endeavour to have the same mind:
+
+> **Philippians 2:5-8** - Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, taking the form of a servant, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
 
 We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
 
 > **Matthew 10:16-18** - Behold, I am sending you out as **sheep in the midst of wolves**, so be wise as serpents and **innocent as doves**. Beware of men, for they will deliver you over to courts and flog you in their synagogues, and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
+
+> **Philippians 2:15-16** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
 
 > I conjecture that, effectively, `Obedience = Believing the gospel, and Selfless love` (no longer serving yourself but serving Christ. It's obeying Jesus.).
 > 
@@ -1169,8 +1180,9 @@ If a person believes on Jesus and what He has accomplished they should arrive at
 
 I think faith in Jesus grows as both of these qualities increase.
 
--   Those who believe in part yet do not obey the gospel, I think fall into condemnation.
--   Those who obey in part yet do not believe the gospel, I think also fall into condemnation
+-   Whoever believes in Jesus Christ, the Only-Begotten Son of God, is not condemned.
+-   Otherwise, those who don't believe that fully and do not obey the gospel, I think fall into condemnation.
+-   Those who obey in part yet do not believe the gospel, I think fall into condemnation.
 
 Nevertheless, if someone believes on Him they have begun to obey Him, and so I believe they are in the Lord while they **trust in His name, Jesus Christ (Messiah) the Son of God, to be saved**, as the following applies:
 
@@ -1864,7 +1876,7 @@ The gospel allows us to become partakers of the divine nature, having escaped th
 
 Some people will deny the **power** of the gospel:
 
-> **2Ti 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
+> **II Timothy 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
 
 Jesus Christ bore the punishment for our iniquity to bring us peace with God:
 
@@ -1996,20 +2008,20 @@ The grace given to Paul allowed him to turn from his evil ways and pursue Jesus,
 
 ### Living a godly life in Christ Jesus is part of the gospel
 
-> **2Ti 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
+> **II Timothy 3:1-7** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
 
 Godliness (behaviour in accordance with the knowledge of the truth) has the power to change a person's life to go from being selfish to selfless.
 
 We have knowledge of the truth through obedience to the gospel.
 
 
-### Faith is disqualified in people who disregard the teachings
+### Faith is disqualified in people who disregard the teachings - they never arrive at the knowledge of the truth
 
-> **2Ti 3:8-12** - Just as Jannes and Jambres opposed Moses, so these <ins>men also oppose the truth, men corrupted in mind and disqualified regarding the faith</ins>. But they will not get very far, for their folly will be plain to all, as was that of those two men. You, however, **have followed my teaching, my conduct,** <ins>my aim in life, my faith, my patience, my love, my steadfastness,</ins> **my persecutions and sufferings** that happened to me at Antioch, at Iconium, and at Lystra—which **persecutions I endured**; yet from them all the Lord rescued me. Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> (ESV)
+> **II Timothy 3:8-12** - Just as Jannes and Jambres opposed Moses, so these <ins>men also oppose the truth, men corrupted in mind and disqualified regarding the faith</ins>. But they will not get very far, for their folly will be plain to all, as was that of those two men. You, however, **have followed my teaching, my conduct,** <ins>my aim in life, my faith, my patience, my love, my steadfastness,</ins> **my persecutions and sufferings** that happened to me at Antioch, at Iconium, and at Lystra—which **persecutions I endured**; yet from them all the Lord rescued me. Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> (ESV)
 
 > **Galatians 2:14** - But when I saw that <ins>their conduct was not in step with the truth of the gospel</ins>, I said to Cephas before them all, If you, though a Jew, live like a Gentile and not like a Jew, how can you force the Gentiles to live like Jews? (ESV)
 
-> **2Ti 3:13** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
+> **II Timothy 3:13** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
 
 ## Be a disciple of Jesus to be set free and abide forever
@@ -2588,7 +2600,7 @@ God sends the Spirit of His Son into our heart, crying, "Abba! Father!" We exper
 
 [The Spirit in Us Cries 'Abba Father': Galatians 4:1-7, Part 5 - YouTube](https://www.youtube.com/watch?v=yENsZ-Fsj4I)
 
-I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknowledge that Jesus Christ has come in the flesh. 
+I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknowledge that Jesus Christ has come in the flesh.
 
 > **I John 4:1-3** - Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world. By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
@@ -2755,6 +2767,10 @@ Led by the Spirit of God is doing God's will:
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
+> **II Corinthians 3:18** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
+
+> **II Corinthians 3:6** - who has made us competent to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life. (ESV)
+
 From our perspective we are <ins>obedient as we are participating in the Spirit,</ins> but <ins>God works through us</ins>:
 
 > **Philippians 2:1-13** - So if there is any encouragement in Christ, any comfort from love, any <ins>participation in the Spirit,</ins> any affection and sympathy, complete my joy by being of the same mind, having the same love, being in full accord and of one mind. Do nothing from rivalry or conceit, but in humility count others more significant than yourselves. Let each of you look not only to his own interests, but also to the interests of others. Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, **taking the form of a servant**, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, **work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work** for his good pleasure. (ESV)
@@ -2830,6 +2846,8 @@ We must obey! This obedience is being led by the Spirit.
     We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
     
     > **Matthew 10:16-18** - Behold, I am sending you out as sheep in the midst of wolves, so be wise as serpents and innocent as doves. Beware of men, for they will deliver you over to courts and flog you in their synagogues, and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
+    
+    > **Philippians 2:15-16** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
     
     > **Matthew 10:39** - Whoever finds his life will lose it, and whoever loses his life for my sake will find it. (ESV)
     
@@ -4404,6 +4422,12 @@ When we repent and clean ourselves up, we allow Jesus' light to shine through us
 
 > **Luke 6:43** - For no good tree bears bad fruit, nor again does a bad tree bear good fruit,
 
+We are the temple of God:
+
+> **I Corinthians 3:17** - If anyone destroys God's temple, God will destroy him. For God's temple is holy, and you are that temple. (ESV)
+
+> **Philippians 2:15-16** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
+
 1.  We approach Christ's very image
 
     > **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers.
@@ -5756,7 +5780,11 @@ The law doesn't save:
 
 > **Galatians 3:21-24** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
 
-But Jesus Christ was and is sinless:
+Paul seems to refer to the Mosaic law as the ministry of death, and Paul refers to the ministry of the Spirit of Christ as giving life:
+
+> **II Corinthians 3:6-9** - who has made us competent to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life. Now if the ministry of death, carved in letters on stone, came with such glory that the Israelites could not gaze at Moses' face because of its glory, which was being brought to an end, will not the ministry of the Spirit have even more glory? For if there was glory in the ministry of condemnation, the ministry of righteousness must far exceed it in glory. (ESV)
+
+Jesus Christ was and is sinless:
 
 > **I Peter 2:22** - He committed no sin, neither was deceit found in his mouth. (ESV)
 
@@ -6041,6 +6069,11 @@ These do not contradict:
 -   The Spirit of Truth is the Truth
 
 
+### God is not a God of confusion but of peace
+
+> **I Corinthians 14:31-33** - For you can all prophesy one by one, so that all may learn and all be encouraged, and **the spirits of prophets are subject to prophets**. For **God is not a God of confusion but of peace**. As in all the churches of the saints, (ESV)
+
+
 ### We should listen to and obey Jesus' words and compare everything with the scripture
 
 > **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
@@ -6266,6 +6299,10 @@ We must forgive our family in Christ:
 
 
 ## The law of the Spirit of life vs law of sin and death
+
+Paul seems to refer to the **Mosaic law as the ministry of death**, and Paul refers to the **ministry of the Spirit of Christ as giving life**:
+
+> **II Corinthians 3:6-9** - who has made us competent to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life. Now if the ministry of death, carved in letters on stone, came with such glory that the Israelites could not gaze at Moses' face because of its glory, which was being brought to an end, will not the ministry of the Spirit have even more glory? For if there was glory in the ministry of condemnation, the ministry of righteousness must far exceed it in glory. (ESV)
 
 The Law (Torah) came in to increase the tresspass:
 
@@ -8513,6 +8550,19 @@ Jesus saving me:
 
 [Astral Projection Pt. 2 // Bodacious Blog](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/)
 
+> I do not actually know what 'astral projection is'. I just googled for whatever I could find to describe it.
+> 
+> This was something for sure, it was a conversation in my sleep, accompanied by dreams.
+> 
+> The first incident was a blue 'light body' which I have felt up until this day, and after that, I have felt like the 'veil' has been very thin
+> and I have had spiritual experiences, and noticing things spiritually.
+> 
+> This was not brought on by meditation or anything, but it happened 'to' me.
+> 
+> I prayed to God consecrating this part of my life to Jesus and the Holy Spirit.
+> 
+> And I also prayed that I would not have any out of body experiences like this.
+
 > **I Timothy 2:6** - who gave himself as a ransom for all, which is the testimony given at the proper time. (ESV)
 
 God never lies:
@@ -9629,7 +9679,7 @@ Abraham was 10 years older than Sarah!
 
 > **Genesis 17:17** - Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child? (ESV)
 
-Demon spirits deny relationships because 
+Demon spirits deny relationships because:
 
 For example:
 
@@ -10085,6 +10135,19 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
 
 1.  God's original design is male and female union and also the law reflects the spiritual reality
 
+    > I do not actually know what 'astral projection is'. I just googled for whatever I could find to describe it.
+    > 
+    > This was something for sure, it was a conversation in my sleep, accompanied by dreams.
+    > 
+    > The first incident was a blue 'light body' which I have felt up until this day, and after that, I have felt like the 'veil' has been very thin
+    > and I have had spiritual experiences, and noticing things spiritually.
+    > 
+    > This was not brought on by meditation or anything, but it happened 'to' me.
+    > 
+    > I prayed to God consecrating this part of my life to Jesus and the Holy Spirit.
+    > 
+    > And I also prayed that I would not have any out of body experiences like this.
+    
     I saw a dark spot around my rib when I was born-again.
     I think this indicates I am male, and there's a female kingdom partner out there for me!
     
