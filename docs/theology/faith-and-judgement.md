@@ -58,6 +58,10 @@ Belief in Jesus Christ turns to obedience, and imitating Christ:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
+As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
 To know Jesus, we must obey His commandments.
 
 > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
@@ -98,6 +102,9 @@ We can repent from sin as an act of obedient faith to God:
 
 > **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
 
+
+## Eventually our own will lines up with God's will
+
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
 [Born Again - Alistair Begg, Parkside Church - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
@@ -132,13 +139,21 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 > **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
 
-Therefore, we teach people to both believe and to obey the Gospel. Both are required, but the success of our work doesn't count for our righteousness.
+Therefore, we teach people to both believe and to obey the Gospel. Both belief and obedience are required of us, but the success of our work doesn't count for our righteousness, and believing is an initial act of obedience before continuing in teaching of Christ.
+
+As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
 We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us.
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
 
 We rest in believing what Jesus has accomplished on our behalf, but our heart should have become obedient to Jesus.
+
+It's crucial to keep Jesus Christ's commandments:
+
+> **I John 3:20-24** - for whenever our heart condemns us, God is greater than our heart, and he knows everything. Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 Work flowing from obedience is still totally by grace because we needed Jesus to obey God perfectly first! We must still obey Jesus.
 
@@ -152,6 +167,17 @@ I think works that we can expect to come from believers in Jesus are:
 -   loving selflessly while not breaking faith with God
 
 > **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+The Apostle John also commands us to:
+
+-   follow Jesus' commandment to believe in the name of God's Son Jesus Christ, and
+-   love one another just as He commanded us.
+
+> **1 John 3:23** - And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. (ESV)
+
+Whoever keeps **commandments** (plural) abides in Him in them. Yes, so I think we must believe Jesus and obey Him:
+
+> **I John 3:24** - Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 > **John 14:10-15** - Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but <ins>the Father who dwells in me does his works.</ins> Believe me that I am in the Father and the Father is in me, or else believe on account of the works themselves. Truly, truly, I say to you, **whoever believes in me will also do the works that I do;** and greater works than these will he do, because I am going to the Father. Whatever you ask in my name, this I will do, that the Father may be glorified in the Son. If you ask me anything in my name, I will do it. <ins>If you love me, you will keep my commandments.</ins> (ESV)
 
@@ -1598,7 +1624,11 @@ Doing the will of God is what it means to be led by the Spirit. So you have to *
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
-Walk according to the will of God. Walk the way Jesus Christ has called us to walk:
+Jesus Christ is the Lord referred to:
+
+> **II Corinthians 3:15-18** - Yes, to this day whenever Moses is read a veil lies over their hearts. But when one turns to the Lord, the veil is removed. Now the Lord *(Κύριος, Kyrios, Lord, Master)* is the Spirit, and where the Spirit of the Lord is, there is freedom. And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
+
+Walk according to the will of God. Walk the way Jesus Christ has called us to walk. **Led by the Spirit = following Jesus**:
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
@@ -2556,6 +2586,12 @@ I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what
 
 > **Isaiah 44:6-8** - Thus says the LORD, the King of Israel and his Redeemer, the LORD of hosts: I am the first and I am the last; besides me there is no god. Who is like me? Let him proclaim it. Let him declare and set it before me, since I appointed an ancient people. Let them declare what is to come, and what will happen. Fear not, nor be afraid; have I not told you from of old and declared it? And you are my witnesses! Is there a God besides me? There is no Rock; I know not any. (ESV)
 
+Jesus was with Father God in the beginning:
+
+> **Proverbs 8:22-32** - The LORD possessed me at the beginning of his work, the first of his acts of old. Ages ago I was set up, at the first, before the beginning of the earth. When there were no depths I was brought forth, when there were no springs abounding with water. Before the mountains had been shaped, before the hills, I was brought forth, before he had made the earth with its fields, or the first of the dust of the world. When he established the heavens, I was there; when he drew a circle on the face of the deep, when he made firm the skies above, when he established the fountains of the deep, when he assigned to the sea its limit, so that the waters might not transgress his command, when he marked out the foundations of the earth, then I was beside him, like a master workman, and I was daily his delight, rejoicing before him always, rejoicing in his inhabited world and delighting in the children of man. And now, O sons, listen to me: blessed are those who keep my ways. (ESV)
+
+> **John 1:1-2** - In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. (ESV)
+
 > **Exodus 15:11** - Who is like you, O LORD, among the gods? Who is like you, majestic in holiness, awesome in glorious deeds, doing wonders? (ESV)
 
 > **Deuteronomy 4:35** - To you it was shown, that you might know that the LORD is God; there is no other besides him. (ESV)
@@ -3422,6 +3458,8 @@ Part of the will of Father God is that we repent from sin:
 ## God searches the heart and tests the mind
 
 > **Jeremiah 17:10** - I the LORD search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds. (ESV)
+
+> **Proverbs 5:21** - For a man's ways are before the eyes of the LORD, and he ponders all his paths. (ESV)
 
 > **Job 10:4-8** - Have you eyes of flesh? Do you see as man sees? Are your days as the days of man, or your years as a man's years, that you seek out my iniquity and search for my sin, although you know that I am not guilty, and there is none to deliver out of your hand? Your hands fashioned and made me, and now you have destroyed me altogether. (ESV)
 
@@ -4544,6 +4582,14 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **II John 1:1-11** - The elder to the elect lady and her children, whom I love in truth, and not only I, but also all who **know the truth**, because of the **truth that abides in us and will be with us forever**: Grace, mercy, and peace will be with us, from God the Father and from Jesus Christ the Father's Son, in **truth and love**.  I rejoiced greatly to find some of your children **walking in the truth**, just as we were **commanded by the Father**.  And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we **love one another**.  And **this is love**, <ins>that we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it.  For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist.  <ins>Watch yourselves, so that you may not lose what we have worked for, but may win a full reward</ins>.  Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son.  If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, for whoever greets him takes part in his **wicked works**. (ESV)
     
+    Paul has taught the Ephesians to follow the teachings of the Lord Jesus Christ. He said we **must** help the weak and remember the words of the Lord Jesus:
+    
+    > **Acts 20:35** - In all things I have shown you that by working hard in this way we **must** <ins>help the weak</ins> and <ins>remember the words of the Lord Jesus, how he himself said,</ins> **It is more blessed to give than to receive.** (ESV)
+    
+    As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+    
+    > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+    
     Definitely stop sinning after receiving the knowledge of the truth:
     
     > **Hebrews 10:26-29** - For if we go on sinning deliberately **after receiving the knowledge of the truth**, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has outraged the Spirit of grace? (ESV)
@@ -5665,6 +5711,8 @@ Therefore, it's an ongoing thing.
 But for our prayer requests to be answered this way, we must be keeping His commandments and do what pleases Him:
 
 > **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+
+> **Proverbs 14:26** - In the fear of the LORD one has strong confidence, and his children will have a refuge. (ESV)
 
 Faith begins and continues:
 
@@ -7996,6 +8044,10 @@ Stopping sinning is important from either angle.
 -   The apostles also taught people to turn from sin, believe and stop sinning.
 
 > **John 5:14** - Afterward Jesus found him in the temple and said to him, See, you are well! Sin no more, that nothing worse may happen to you.
+
+Sin leads to death:
+
+> **Proverbs 6:32** - He who commits adultery lacks sense; he who does it destroys himself. (ESV)
 
 > **Ezekiel 18:20** - The soul who sins shall die. The son shall not suffer for the iniquity of the father, nor the father suffer for the iniquity of the son. The righteousness of the righteous shall be upon himself, and the wickedness of the wicked shall be upon himself. (ESV)
 
