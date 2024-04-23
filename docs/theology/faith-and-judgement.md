@@ -2927,13 +2927,21 @@ We must obey! This obedience is being led by the Spirit.
     
     > **John 12:23-26** - And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins>
 
-4.  We must remain faithful to Jesus Christ
+4.  We must remain ultimately faithful to Jesus Christ, and never deny Him as our only Master and Lord
 
     > **Jude 1:4** - For certain persons have crept in unnoticed, those who were long beforehand marked out for this condemnation, ungodly persons who turn the grace of our God into licentiousness and deny our only Master and Lord, Jesus Christ. (NASB)
     
     > **Colossians 2:18-19** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God.
+    
+    > **Revelation of John 2:10** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested, and for ten days you will have tribulation. **Be faithful unto death**, and I will give you the crown of life. (ESV)
 
-5.  Christian faith looks like this
+5.  We must endeavour to live faithfully to our Jesus Christ
+
+    > **Acts 11:21-24** - And the hand of the Lord was with them, and a great number who believed turned to the Lord. The report of this came to the ears of the church in Jerusalem, and they sent Barnabas to Antioch. When he came and saw the grace of God, he was glad, and he exhorted them all to **remain faithful to the Lord with steadfast purpose**, for he was a good man, full of the Holy Spirit and of faith. And a great many people were added to the Lord. (ESV)
+    
+    > **II Timothy 2:13** - **if we are faithless, he remains faithful** - for he cannot deny himself. (ESV)
+
+6.  Christian faith looks like this
 
     We worship God by the Spirit, following Jesus, not the flesh:
     
@@ -2983,7 +2991,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Luke 9:23-26** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. For what does it profit a man if he gains the whole world and loses or forfeits himself? For whoever is ashamed of me and of my words, of him will the Son of Man be ashamed when he comes in his glory and the glory of the Father and of the holy angels. (ESV)
 
-6.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
+7.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
 
     We should clean ourselves up:
     
@@ -3021,7 +3029,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
-7.  We **must** clean ourselves up with God's help
+8.  We **must** clean ourselves up with God's help
 
     > **Daniel 12:9-10** - He said, Go your way, Daniel, for the words are shut up and sealed until the time of the end.  Many shall purify themselves and make themselves white and be refined, but the wicked shall act wickedly. And none of the wicked shall understand, but those who are wise shall understand.
     
