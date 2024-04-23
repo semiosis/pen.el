@@ -32,12 +32,20 @@
 
 (defun first-order-coin ()
   (problog-play
-   (pfacts (heads1 0.5)
-           (heads2 0.6))
+   (afact 0.6 lands_heads _)
 
-   (rules someHeads
-          (heads1)
-          (heads2))
+   (facts
+    (coin c1)
+    (coin c2)
+    (coin c3)
+    (coin c4))
+
+   (implies (fact heads C)
+            (and (fact coin C)
+                 (fact lands_heads C)))
+
+   (implies (fact someHeads)
+            (fact heads _))
 
    (query someHeads)))
 

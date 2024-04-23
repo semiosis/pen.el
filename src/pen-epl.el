@@ -30,13 +30,17 @@
     (problog-sentencify
      (problog-function-sexp-to-string name-or-func-call)))))
 
-(defmacro problog-fact (&rest name-or-func-call)
-  (e/awk1
-   (problog-sentencify
-    (problog-function-sexp-to-string name-or-func-call))))
+(defmacro problog-fact (pred-func-name &rest parameters)
+  "Fact"
+  (let ((name-or-func-call
+         (cons pred-func-name parameters)))
+    (e/awk1
+     (problog-sentencify
+      (problog-function-sexp-to-string name-or-func-call)))))
 (defalias 'head 'problog-fact)
 
 (defmacro problog-pfact (name-or-func-call &optional probability)
+  "Probabilistic fact"
   (e/awk1
    (problog-sentencify
     (if probability
@@ -46,13 +50,15 @@
 (defalias 'pfact 'problog-pfact)
 
 ;; This is very much like pfact
-(defmacro problog-afact (probability &rest name-or-func-call)
-  (e/awk1
-   (problog-sentencify
-    (if probability
-        (concat (str probability)
-                "::" (problog-function-sexp-to-string name-or-func-call))
-      (problog-function-sexp-to-string name-or-func-call)))))
+(defmacro problog-afact (probability pred-func-name &rest parameters)
+  (let ((name-or-func-call
+         (cons pred-func-name parameters)))
+    (e/awk1
+     (problog-sentencify
+      (if probability
+          (concat (str probability)
+                  "::" (problog-function-sexp-to-string name-or-func-call))
+        (problog-function-sexp-to-string name-or-func-call))))))
 (defalias 'afact 'problog-afact)
 
 (defmacro problog-facts (&rest facts)
