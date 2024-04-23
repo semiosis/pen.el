@@ -98,6 +98,10 @@ That's because God gives us a new spirit to obey Him:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
+We receive the spirit by getting Jesus' words into us, believing them and obeying them. Feeding on them, we get Jesus' spirit and life into us:
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
 We can repent from sin as an act of obedient faith to God:
 
 > **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
@@ -149,7 +153,7 @@ As we go ahead, we **must** abide in the teaching of Christ, or we won't have Go
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-We get Jesus' words into us, believe them and obey them, feed on them, get Jesus' spirit and life into us.
+We receive the spirit by getting Jesus' words into us, believing them and obeying them. Feeding on them, we get Jesus' spirit and life into us:
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
 
@@ -2171,6 +2175,9 @@ The Holy Spirit in us **is the gift** which is in us:
 
 > **II Corinthians 1:21-22** - And it is God who establishes us with you in Christ, and has anointed us, and who has also put his seal on us and given us his Spirit in our hearts as a guarantee. (ESV)
 
+
+### Receiving the Holy Spirit
+
 God poured out His Holy Spirit richly on us through Jesus Christ our Saviour. This would not be possible without having sent Jesus Christ to die for our sins and be raised for our justification. To be able to be justified is pure grace. To be able to have faith in Jesus is pure grace.
 But we must put our faith in Jesus Christ!
 
@@ -2188,7 +2195,21 @@ Who receives **the Holy Spirit**? The ones who obey God!
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
+The Holy Spirit is received through faith:
+
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
+
+We receive the spirit by getting Jesus' words into us, believing them and obeying them. Feeding on them, we get Jesus' spirit and life into us:
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
+So to receive the Holy Spirit:
+
+-   Have faith in Jesus,
+    -   believe Jesus,
+    -   obey Jesus,
+-   practice righteousness, and
+    -   ask God for the Holy Spirit!
 
 
 ## Becoming a servant, humbling oneself and following Jesus is what we should do
