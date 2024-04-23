@@ -450,7 +450,15 @@ I have been just trying to figure out my theology. One God, three persons, Fathe
 
 > **I Corinthians 1:30** - But **by His doing you are in Christ Jesus,** who became to us wisdom from God, and righteousness and sanctification, and redemption, (NASB)
 
-We must drop the old selfish self and allow Jesus to come in with the new obediently loving self:
+We are given the Holy Spirit. The Holy Spirit cleanses our hearts by faith. As we obey Jesus, going against the resistance, our hearts are being cleansed:
+
+> **Acts 15:8-9** - And God, who knows the heart, bore witness to them, by giving them **the Holy Spirit** just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith.
+
+If we have faith in Jesus then we obey Jesus' commandments when presented with opportunities. We walk by faith, not sight. When other people discourage you from following Jesus' commandments, but you choose to obey Jesus anyway, this is overcoming the enemy by faith:
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
+With God's help, we must drop the old selfish self and allow Jesus to come in with the new obediently loving self:
 
 > **Psalms 37:27** - Turn away from evil and do good; so shall you dwell forever. (ESV)
 
@@ -4153,13 +4161,17 @@ The Mosaic law is not really in the same category as the 10 commandments, I beli
 
 > **II Corinthians 5:11-12** - Therefore, knowing the fear of the Lord, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. We are not commending ourselves to you again but giving you cause to boast about us, so that you may be able to answer those who boast about outward appearance and not about what is in the heart.
 
-The Holy Spirit cleanses our hearts by faith:
+We are given the Holy Spirit. The Holy Spirit cleanses our hearts by faith. As we obey Jesus, going against the resistance, our hearts are being cleansed:
 
 > **Acts 15:8-9** - And God, who knows the heart, bore witness to them, by giving them **the Holy Spirit** just as he did to us, and he made no distinction between us and them, having cleansed their hearts by faith.
 
+If we have faith in Jesus then we obey Jesus' commandments when presented with opportunities. We walk by faith, not sight. When other people discourage you from following Jesus' commandments, but you choose to obey Jesus anyway, this is overcoming the enemy by faith:
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
 Do what Jesus says and receive eternal life - obey Jesus:
 
-> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient \*from the heart** to the standard of teaching to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
+> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching** to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
 
 
 ### Being a slave to righteousness is possible without adhering to the Mosaic law, by being led by Jesus' Spirit
@@ -5689,7 +5701,7 @@ Doing the will of Father God:
     -   knowledge of the truth
     -   justification
 
-> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient \*from the heart** to the standard of teaching to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
+> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching** to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
 
 The love of the truth must be received and accepted to be saved:
 
