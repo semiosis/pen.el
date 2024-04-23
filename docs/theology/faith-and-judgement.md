@@ -272,11 +272,33 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 
 > **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
 
+Just because we're gifted repentance to life, that doesn't mean that to go ahead and obediently repent makes the gift of repentance no longer a gift!
+
+> **Acts 11:18** - When they heard these things they fell silent. And they glorified God, saying, Then to the Gentiles also God has granted repentance that leads to life.
+
 [The Heart of the Gospel - YouTube](https://www.youtube.com/watch?v=ecyncQwJlr4)
 
-We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him. We should trust Jesus enough to obey His commandments when we are presented with opportunities to glorify God with our actions.
+We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him. We should trust Jesus enough to obey His commandments when we are presented with opportunities to glorify God with our actions. God works through us as we obey Jesus.
 
 > **John 3:16-19** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+We must hear the words of God. If we hear them then we are of God.
+I know I hear them.
+If we keep Jesus' word (obey Jesus) we will not see death:
+
+> **John 8:47** - Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
+
+> **John 8:51** - Truly, truly, I say to you, if anyone keeps my word, he will never see death. (ESV)
+
+To **keep Jesus' word** means to hear them and to obey:
+
+> **Proverbs 7:1-3** - My son, **keep my words** and treasure up my commandments with you;\* keep my commandments\* and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart. (ESV)
+
+Keeping means, not only <ins>having</ins> them but **keeping**, **obeying** them:
+
+> **John 14:21-24** - Whoever **has my commandments and keeps them**, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. Judas (not Iscariot) said to him, Lord, how is it that you will manifest yourself to us, and not to the world? Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. Whoever does not love me does not keep my words. And the word that you hear is not mine but the Father's who sent me. (ESV)
+
+> **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
 
 We are not condemned if we believe in the name of Jesus Christ, the only Son of God. That's really good news!:
 
@@ -1270,6 +1292,8 @@ Jesus' sheep:
 -   follow Him (they're being obedient)
 -   Jesus knows them
 
+> **John 8:47** - Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
+
 I believe that what this says is that at the point Jesus knows you listen to His voice and obey His voice, He counts you as one of His sheep and He will not let you go.
 
 The righteousness that comes through having faith in Jesus Christ - faith (not mere belief) is required to have the righteousness - to be found in Jesus:
@@ -1682,6 +1706,8 @@ People fall away if they are not freed from sin. We're seeking to be freed from 
 
 > **John 8:34-36** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever. So if the Son sets you free, you will be free indeed. (ESV)
 
+We seek to be adopted as sons. To receive the Spirit of God's Son in our hearts is what I think it means to be set free by the Son:
+
 > **Galatians 4:4-9** - But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons. And because you are sons, God has <ins>sent the Spirit of his Son into our hearts, crying, Abba! Father!</ins> So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? (ESV)
 
 I guess that means we should become slaves of Christ! We should be overcome by Christ:
@@ -1765,6 +1791,8 @@ Repentance:
 
 -   Someone who has <ins>only belief in the gift of grace and no obedience to Jesus</ins> (which is effectively hating Jesus) <ins>must repent</ins> and come to have an obedient heart.
 -   Someone who has <ins>only obedience to Jesus' precepts but unbelieving and unsubmissive</ins> to the righteousness of God <ins>must repent</ins> and come to have a believing heart.
+
+> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 If people from either category do not repent, then beware because God has the ability and jurisdiction to <ins>cast that person out - graft them out of Christ.</ins> Also, let's not become proud, but stand in awe.
 
@@ -2703,7 +2731,7 @@ But I am still seeking hearing that acknowledgement by continuing in Jesus' word
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
 Therefore, I will continue to endeavour to keep Jesus' commandments:
 
-> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 So it's really important that I remain faithful to Jesus and do my best to not compromise or be swayed by people who deter me from keeping Jesus' commandments.
 

@@ -8,6 +8,39 @@
 
 (require 'pen-epl)
 
+(defun problog-basic-coin ()
+  (problog-play
+   (pfacts (heads1 0.5)
+           (heads2 0.6))
+
+   (rule twoHeads heads1 heads1)
+
+   (query heads1)
+   (query heads2)
+   (query twoHeads)))
+
+(defun noisy-or-coin ()
+  (problog-play
+   (pfacts (heads1 0.5)
+           (heads2 0.6))
+
+   (rules someHeads
+          (heads1)
+          (heads2))
+
+   (query someHeads)))
+
+(defun first-order-coin ()
+  (problog-play
+   (pfacts (heads1 0.5)
+           (heads2 0.6))
+
+   (rules someHeads
+          (heads1)
+          (heads2))
+
+   (query someHeads)))
+
 ;; A progn
 (defun problog-model-burglary ()
   (interactive)
@@ -50,32 +83,32 @@
             ((not p_alarm4 A B) 0.3)))
 
    (comment
-    ;; This is correct
+    ;; This pb-is correct
     (fact (p_alarm3) 0.1)
 
-    ;; This is correct
+    ;; This pb-is correct
     (fact (flap_position 0 6))
     (fact flap_position 0 6)
-    ;; This is correct
+    ;; This pb-is correct
     ;; (fact flap_position 0 6)
 
-    ;; This is incorrect
+    ;; This pb-is incorrect
     (fact p_alarm3 0.1)
 
-    ;; This is correct
+    ;; This pb-is correct
     (fact p_alarm3 A B)
-    ;; This is correct
+    ;; This pb-is correct
     (fact "p_alarm3(A B)")
-    ;; This is incorrect
+    ;; This pb-is incorrect
     (fact (p_alarm3 A B) 0.1))
 
-   ;; This is correct
+   ;; This pb-is correct
    (pfact p_alarm3 0.1)
 
    ;; DONE *sigh* just use 'afact instead of 'pfact
    ;; I do want documentation
    (comment
-    ;; This is also correct
+    ;; This pb-is also correct
     (afact 0.1 p_alarm3)
     ;; These are also correct
     (afact 0.1 p_alarm3 A B)
@@ -121,7 +154,7 @@
    ;; (rule "legal_flap_position FP" "between 0 10 FP")
    (rule (legal_flap_position FP) (between 0 10 FP))
 
-   ;; DONE This is the same as above, but implemented a little differently
+   ;; DONE This pb-is the same as above, but implemented a little differently
    (comment
     (implies (fact (legal_flap_position FP)) (fact (between 0 10 FP)))
     (implies (fact (+legal_flap_position FP)) (fact (between 0 10 FP)))
@@ -174,7 +207,7 @@
      (pfact (wind_effect T 3) 0.2))
     (fact (wind strong)))
 
-   (%% the flap is moved to an attempted position if that is legal)
+   (%% the flap pb-is moved to an attempted position if that pb-is legal)
    ;; flap_position(Time,Pos) :- Time > 0, attempted_flap_position(Time,Pos), legal_flap_position(Pos).
    ;; TODO Model this also as an implies
    ;; (implies)
@@ -209,41 +242,41 @@
 
    ;; attempted_flap_position(Time,Pos) :-
    ;;   Time > 0,
-   ;;   Prev is Time-1,
+   ;;   Prev pb-is Time-1,
    ;;   flap_position(Prev,Old),
    ;;   \+ goal(Old),
    ;;   use_actuator(Time,A),
    ;;   actuator_strength(A,AS),
    ;;   goal(GP),
-   ;;   AE is sign(GP-Old)*AS,
+   ;;   AE pb-is sign(GP-Old)*AS,
    ;;   wind_effect(Time,WE),
-   ;;   Pos is Old + AE + WE.
+   ;;   Pos pb-is Old + AE + WE.
 
    (comment
-    (rule (attempted_flap_position Time Pos) (is Prev (verbatim "Time-1")))
-    (rule (attempted_flap_position Time Pos) (is Prev "Time-1")))
+    (rule (attempted_flap_position Time Pos) (pb-is Prev (verbatim "Time-1")))
+    (rule (attempted_flap_position Time Pos) (pb-is Prev "Time-1")))
 
    (comment
-    (is Prev (verbatim "Time-1")))
+    (pb-is Prev (verbatim "Time-1")))
    (comment
-    (is AE (verbatim "sign(GP-Old)*AS")))
+    (pb-is AE (verbatim "sign(GP-Old)*AS")))
    (comment
-    (is Pos (verbatim "Old + AE + WE")))
+    (pb-is Pos (verbatim "Old + AE + WE")))
    
    (rule (attempted_flap_position Time Pos)
          (> Time 0)
          
-         (is Prev "Time-1")
+         (pb-is Prev "Time-1")
          (flap_position Prev Old)
          (not goal Old)
          (use_actuator Time A)
          (actuator_strength A AS)
          (goal GP)
          
-         (is AE "sign(GP-Old)*AS")
+         (pb-is AE "sign(GP-Old)*AS")
          (wind_effect Time WE)
          
-         (is Pos "Old + AE + WE"))
+         (pb-is Pos "Old + AE + WE"))
 
    (%% "we want to go from 6 to 4, i.e., move two steps left")
    (comment
@@ -253,7 +286,7 @@
    (goal 4)
 
    (%% "restrict attention to first five steps")
-   (at 5)
+   (pb-at 5)
 
    (comment
     (evidence alarm t))

@@ -34,7 +34,7 @@
   (e/awk1
    (problog-sentencify
     (problog-function-sexp-to-string name-or-func-call))))
-(defalias 'fact 'problog-fact)
+(defalias 'head 'problog-fact)
 
 (defmacro problog-pfact (name-or-func-call &optional probability)
   (e/awk1
@@ -94,7 +94,7 @@
                    (s-join "," (mapcar 'str (cddr e)))
                    ")"))
 
-          ;; (fact (not (p_alarm2 A B)) 0.8)
+          ;; (head (not (p_alarm2 A B)) 0.8)
           ((and (= (length e) 2)
                 (equal (car e) 'not)
                 (consp (cadr e)))
@@ -128,8 +128,8 @@
 
 ;; head/tail notation [H|Tail]
 ;; http://www.cs.trincoll.edu/$HOMEram/cpsc352/notes/prolog/search.html
-(defmacro problog-rule (fact &rest facts)
-  (setq fact (problog-function-sexp-to-string fact))
+(defmacro problog-rule (head &rest facts)
+  (setq head (problog-function-sexp-to-string head))
   (setq facts
         (mapcar (lambda (p)
                   (setq p (problog-function-sexp-to-string p))
@@ -138,7 +138,7 @@
 
   (e/awk1
    (problog-sentencify
-    fact " :- "
+    head " :- "
     (s-join ", " facts))))
 
 (defalias 'rule 'problog-rule)
@@ -157,14 +157,14 @@
     (problog-chomp ,rhs-facts)))
 (defalias 'implies 'problog-implies)
 
-(defmacro problog-rules (name &rest rule-predicates-lists)
-  (setq name (str name))
+(defmacro problog-rules (head-name &rest rule-predicates-lists)
+  (setq head-name (str head-name))
 
   (apply 'e/awk1
          (cl-loop for rpl in rule-predicates-lists collect
                   (eval
                    `(problog-rule
-                     ,name
+                     ,head-name
                      ,@rpl)))))
 
 (defalias 'rules 'problog-rules)
@@ -192,11 +192,12 @@
 (defmacro problog-is (&rest factname)
   (setq factname (problog-function-sexp-to-string factname))
   (concis "is(" factname ")."))
+(defalias 'pb-is 'problog-is)
 
 (defmacro problog-at (&rest factname)
   (setq factname (problog-function-sexp-to-string factname))
   (concat "at(" factname ")."))
-;; (defalias 'at 'problog-at)
+(defalias 'pb-at 'problog-at)
 
 (defmacro problog-verbatim (&rest factname)
   factname)
