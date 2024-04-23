@@ -200,6 +200,8 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 
 > **Romans 11:30-32** - Just as you were <ins>at one time disobedient</ins> to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For **God has consigned all to disobedience, that he may have mercy on all.** (ESV)
 
+[King of Kings {Lyric Video} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=Of5IcFWiEpg&list=RDf2oxGYpuLkw&index=2)
+
 
 ## Obedience is absolutely within our ability
 
@@ -268,7 +270,7 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 
 [The Heart of the Gospel - YouTube](https://www.youtube.com/watch?v=ecyncQwJlr4)
 
-We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him.
+We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him. We should trust Jesus enough to obey His commandments when we are presented with opportunities to glorify God with our actions.
 
 > **John 3:16-19** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
 
