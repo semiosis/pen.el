@@ -292,11 +292,13 @@ If we keep Jesus' word (obey Jesus) we will not see death:
 
 To **keep Jesus' word** means to hear them and to obey:
 
-> **Proverbs 7:1-3** - My son, **keep my words** and treasure up my commandments with you;\* keep my commandments\* and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart. (ESV)
+> **Proverbs 7:1-3** - My son, **keep my words** and treasure up my commandments with you; **keep my commandments** and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart. (ESV)
 
-Keeping means, not only <ins>having</ins> them but **keeping**, **obeying** them:
+Keeping means, not only <ins>having</ins> them but also **keeping**, **obeying** them:
 
 > **John 14:21-24** - Whoever **has my commandments and keeps them**, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. Judas (not Iscariot) said to him, Lord, how is it that you will manifest yourself to us, and not to the world? Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. Whoever does not love me does not keep my words. And the word that you hear is not mine but the Father's who sent me. (ESV)
+
+> **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
 
 > **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
 
