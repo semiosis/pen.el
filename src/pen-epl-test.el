@@ -49,6 +49,23 @@
 
    (query someHeads)))
 
+;; j:first-order-coin rewritten
+(defun probabilistic-first-clause-coin ()
+  (problog-play
+   (implies (afact 0.6 heads C)
+            (fact coin C))
+
+   (facts
+    (coin c1)
+    (coin c2)
+    (coin c3)
+    (coin c4))
+
+   (implies (fact someHeads)
+            (fact heads _))
+
+   (query someHeads)))
+
 ;; A progn
 (defun problog-model-burglary ()
   (interactive)
