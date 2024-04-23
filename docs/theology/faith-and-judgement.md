@@ -3731,7 +3731,7 @@ God has common grace for evildoers, and for the unjust, and Jesus wants us to he
 
 See, our actions reflect who our Father is:
 
-> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+> **Luke 6:35-36** - But love your enemies, and do good, and **lend, expecting nothing in return,** and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
 [Christianity is God saves us & we respond to obey, not the other way - YouTube](https://www.youtube.com/watch?v=aEsQdxAoR3Y)
 
@@ -9793,7 +9793,7 @@ We have to obey God. Jesus commandment is to give to the one that asks. If I had
 
 And Jesus encourages us to have obedient faith in Him even to the point, even to the point where it gets difficult - no pain, no gain!
 
-> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on. (ESV)
+> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she **out of her poverty has put in everything she had, all she had to live on.** (ESV)
 
 We are walking by faith, and not sight, and to walk by faith is to actually see clearly, where to not walk in faith is actually to walk in darkness:
 
@@ -12771,7 +12771,7 @@ Our heavenly inheritance is imperishable!
 
 ### The resurrection of the just
 
--   **Luke 14:12-14** - He said also to the man who had invited him, When you give a dinner or a banquet, do not invite your friends or your brothers or your relatives or rich neighbors, lest they also invite you in return and you be repaid. But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you. You will be repaid at the resurrection of the just. (ESV)
+> **Luke 14:12-14** - He said also to the man who had invited him, When you give a dinner or a banquet, do not invite your friends or your brothers or your relatives or rich neighbors, lest they also invite you in return and you be repaid. But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you. You will be repaid at the resurrection of the just. (ESV)
 
 
 ### The natural first, then the spiritual
@@ -14496,28 +14496,28 @@ We should have the right response to the grace of God, and forgive our neighbour
 
 We are instructed to forward grace to others:
 
-> **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. You received without paying; give without pay. (ESV)
+> **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. **You received without paying; give without pay.** (ESV)
 
 
 ### Be extremely generous - give without limits to relieve the burdens of others
 
-> **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. You received without paying; give without pay. (ESV)
+> **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. **You received without paying; give without pay.** (ESV)
 
 > **1 Peter 4:8** - Above all, keep loving one another earnestly, since love covers a multitude of sins. (ESV)
 
-> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+> **Luke 6:35-36** - But love your enemies, and do good, and **lend, expecting nothing in return,** and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
-> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but s he out of her poverty has put in everything she had, all she had to live on. (ESV)
+> **Luke 6:38** - give, and it will be given to you. Good measure, pressed down, shaken together, running over, will be put into your lap. For **with the measure you use it will be measured back to you.** (ESV)
 
-Dominating others in your flock is like witchcraft, and will forfeit glorification.
+> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she **out of her poverty has put in everything she had, all she had to live on.** (ESV)
 
-> **1 Peter 5:1-4** - So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the **glory** that is going to be revealed: shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly; **not domineering** over those in your charge, but being examples to the flock. And when the chief Shepherd appears, you will receive the unfading crown of glory. (ESV)
+> **Psalms 37:21** - The wicked borrows but does not pay back, but **the righteous is generous and gives**; (ESV)
 
-One is supposed to suffer with Christ for glory and be an example to the flock.
+> **Psalms 37:25-26** - I have been young, and now am old, yet I have not seen the righteous forsaken or his children begging for bread. **He is ever lending generously**, and his children become a blessing. (ESV)
 
-> **Psalms 37:21** - The wicked borrows but does not pay back, but the righteous is generous and gives; (ESV)
+Paul commends giving even beyond their means. This is in accordance with the widow's offering:
 
-> **Psalms 37:25-26** - I have been young, and now am old, yet I have not seen the righteous forsaken or his children begging for bread. He is ever lending generously, and his children become a blessing. (ESV)
+> **II Corinthians 8:3-5** - For they gave *according to their means*, as I can testify, and *beyond their means*, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
 
 
 ### Do the good works which have been gifted to you
