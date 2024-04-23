@@ -731,7 +731,7 @@ Trust and obey:
 
 > **II Timothy 3:12-17** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
 
-[Trust And Obey - YouTube](https://www.youtube.com/watch?v=9ec7jHul9co)
+[Trust And Obey - Big Daddy Weave - YouTube](https://www.youtube.com/watch?v=9ec7jHul9co)
 
 
 ## Jesus
@@ -749,6 +749,8 @@ Jesus is the divinely appointed servant of God:
 He's the image of God:
 
 > **Colossians 1:15** - He is the image of the invisible God, the firstborn of all creation. (ESV)
+
+[Let It Be Christ - The Stations - YouTube](https://www.youtube.com/watch?v=urnl_qYQ9l0&list=RDurnl_qYQ9l0&start_radio=1)
 
 
 ## Belief
@@ -2542,7 +2544,7 @@ This quite clearly shows that Jesus Christ is Almighty God:
 
 > **Zechariah 12:10** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
 
-I affirm the Nicenee creed wholeheartedly:
+I affirm the Nicene creed wholeheartedly:
 
      1  We believe in one God,
      2        the Father almighty,
