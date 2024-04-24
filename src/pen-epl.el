@@ -273,16 +273,23 @@
    ;; s
    ))
 
+(defmacro problog-play-or-display (&rest body)
+  `(if (>= (prefix-numeric-value current-prefix-arg) 4)
+       (problog-display ,@body)
+     (problog-play ,@body)))
+
 (defmacro problog-play (&rest body)
   (setq body (cdr (macroexpand
                    `(problog-expand ,@body))))
 
   `(ifi-etv
     (problog-eval
-     (if (interactive-p)
-         (tv
-          (awk1 ,@body))
-       (awk1 ,@body)))))
+     (awk1 ,@body)
+     ;; (if (interactive-p)
+     ;;     (tv
+     ;;      (awk1 ,@body))
+     ;;   (awk1 ,@body))
+     )))
 
 (defmacro problog-display (&rest body)
   (setq body (cdr (macroexpand

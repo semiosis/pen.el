@@ -9,23 +9,29 @@
 (require 'pen-epl)
 
 (defun problog-basic-coin ()
-  (problog-play
+  (interactive)
+  (problog-play-or-display
+   ;; the first coin flip has a 0.5 probability of being heads
+   ;; the second coin flip has a 0.5 probability of being heads
    (pfacts (heads1 0.5)
            (heads2 0.6))
 
-   (rule twoHeads heads1 heads1)
+   ;; twoHeads is true if both flips are heads
+   (rule twoHeads heads1 heads2)
 
    (query heads1)
    (query heads2)
    (query twoHeads)))
 
 (defun noisy-or-coin ()
-  (problog-play
+  (interactive)
+  (problog-play-or-display
    (pfacts (heads1 0.5)
            (heads2 0.6))
 
+   ;; twoHeads is true if both flips are heads
    (pfact heads1 0.5)
-   (pfact heads1 0.5 _ a b)
+   (pfact heads1 0.5)
 
    (rules someHeads
           (heads1)
@@ -34,7 +40,8 @@
    (query someHeads)))
 
 (defun first-order-coin ()
-  (problog-play
+  (interactive)
+  (problog-play-or-display
    (afact 0.6 lands_heads _)
 
    (facts
@@ -54,16 +61,20 @@
 
 ;; j:first-order-coin rewritten
 (defun probabilistic-first-clause-coin ()
-  (problog-play
+  (interactive)
+  (problog-play-or-display
    (implies (afact 0.6 heads C)
             (fact coin C))
 
+   ;; c1 to c4 are coins
    (facts
     (coin c1)
     (coin c2)
     (coin c3)
     (coin c4))
 
+   ;; If there are some heads then one of the coins
+   ;; i.e. _ landed as a head
    (implies (fact someHeads)
             (fact heads _))
 
@@ -73,7 +84,7 @@
 (defun problog-model-burglary ()
   (interactive)
 
-  (problog-play
+  (problog-play-or-display
    ;; e:/volumes/home/shane/notes/ws/problog/scratch/earthquake.problog
 
    ;; An optional annotation
