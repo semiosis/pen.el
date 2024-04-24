@@ -125,6 +125,7 @@ and those rules
    (pfacts
     ;; Suppose there is a burglary in our house with probability 0.7
     ;; and an earthquake with probability 0.2.
+    ;; In other words, there may be one or the other, both or neither.
     (burglary 0.7)
     (earthquake 0.2)
 
@@ -193,6 +194,7 @@ and those rules
    (pfacts
     ;; Suppose there is a burglary in our house with probability 0.7
     ;; and an earthquake with probability 0.2.
+    ;; In other words, there may be one or the other, both or neither.
     (burglary 0.7)
     (earthquake 0.2))
 
@@ -244,6 +246,7 @@ and those rules
    (pfacts
     ;; Suppose there is a burglary in our house with probability 0.7
     ;; and an earthquake with probability 0.2.
+    ;; In other words, there may be one or the other, both or neither.
     (burglary 0.7)
     (earthquake 0.2))
 
