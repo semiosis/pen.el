@@ -237,6 +237,10 @@ and those rules
   (interactive)
   (problog-play-or-display
 
+   (facts
+    (person john)
+    (person mary))
+
    (pfacts
     ;; Suppose there is a burglary in our house with probability 0.7
     ;; and an earthquake with probability 0.2.

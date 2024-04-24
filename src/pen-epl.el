@@ -67,6 +67,14 @@
 (defalias 'facts 'problog-facts)
 
 (defmacro problog-pfacts (&rest pfacts)
+  "pfact: name-or-func-call probability &rest parameters
+
+(pfacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7)
+    (earthquake 0.2))
+"
   (apply 'e/awk1
          (cl-loop for f in pfacts collect
                   (eval
