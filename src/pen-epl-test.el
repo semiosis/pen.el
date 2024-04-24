@@ -407,7 +407,8 @@ each annotated with a probability."
    ;; What was the chance of there being a burglary?
    (query burglary)
 
-   ;; What was the chance of there being an earthquake?
+   ;; What was the chances of each type of earthquake including no earthquake?
+   ;; Notice that this does NOT say, "What is the chance there was earthquake?"
    (query (earthquake _))))
 
 (defun problog-non-ground-queries ()
