@@ -405,6 +405,42 @@ each annotated with a probability."
    ;; What was the chance of there being an earthquake?
    (query (earthquake _))))
 
+(defun non-ground-queries ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/non-ground-queries.problog
+
+"
+  (interactive)
+  (problog-play-or-display
+
+   (pb-or
+    (afact 1/6 one 1)
+    (afact 1/6 two 1)
+    (afact 1/6 three 1)
+    (afact 1/6 four 1)
+    (afact 1/6 five 1)
+    (afact 1/6 six 1))
+
+   ;; The second die is weighted
+   (pb-or (afact 0.15 one 2)
+          (afact 0.15 two 2)
+          (afact 0.15 three 2)
+          (afact 0.15 four 2)
+          (afact 0.15 five 2)
+          (afact 0.25 six 2))
+
+   (rules (odd X)
+          ;;  3 different rules for what triggers the alarm
+          ((one X))
+          ((three X))
+          ((five X)))
+   
+   (rules (even X)
+          ((not (odd X))))
+
+   ;; What was the chance of there being a burglary?
+   (query (odd _))
+   (query (even _))))
+
 ;; A progn
 (defun problog-model-burglary-test ()
   (interactive)
