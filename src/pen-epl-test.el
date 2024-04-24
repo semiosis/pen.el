@@ -85,14 +85,17 @@ landing on heads"
    (query someHeads)))
 
 ;; j:first-order-coin rewritten
-(defun probabilistic-first-clause-coin ()
+(defun probabilistic-clause-coin ()
   (interactive)
   (problog-play-or-display
 
    ;; probabilistic clause  | 0.5::a :- x.
    ;; probabilistic clauses help to reduce auxiliary predicates
-   (implies (afact 0.6 heads C)
-            (fact coin C))
+   (comment
+    (implies (afact 0.6 heads C)
+             (fact coin C)))
+
+   (rule (heads C) 0.6 (coin C))
 
    ;; c1 to c4 are coins
    (facts
@@ -336,6 +339,7 @@ each annotated with a probability."
     ;; and an earthquake with probability 0.2.
     (burglary 0.7))
 
+   ;; Fuzzy logic! / categories / multi-valued variable
    (pb-or (afact 0.01 earthquake heavy)
           (afact 0.19 earthquake mild)
           (afact 0.8 earthquake none))
@@ -350,17 +354,17 @@ each annotated with a probability."
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
    (prules alarm
-          ;;  3 different rules for what triggers the alarm
-          (0.90 burglary (earthquake heavy))
-          (0.85 burglary (earthquake mild))
-          (0.80 burglary (earthquake none))
-          (0.10 +burglary (earthquake mild))
-          (0.30 +burglary (earthquake heavy)))
+           ;;  3 different rules for what triggers the alarm
+           (0.90 burglary (earthquake heavy))
+           (0.85 burglary (earthquake mild))
+           (0.80 burglary (earthquake none))
+           (0.10 +burglary (earthquake mild))
+           (0.30 +burglary (earthquake heavy)))
 
    (prules (calls X)
-          ;;  3 different rules for what triggers the alarm
-          (0.9 alarm (person X))
-          (0.8 +alarm (person X)))
+           ;;  3 different rules for what triggers the alarm
+           (0.9 alarm (person X))
+           (0.8 +alarm (person X)))
 
    ;; The query and evidence functions are for clauses.
    ;; It adjusts the probability to make it 100%
