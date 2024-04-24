@@ -7,7 +7,8 @@ test "$#" -gt 0 && last_arg="${@: -1}"
 
 if test -f "$last_arg"; then
     test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
-    sed -i "s/\\\\begin{tabular}{ll}/\\\\begin{tabular}{p{0.35\\\\linewidth} | p{0.6\\\\linewidth}}/" "$last_arg"
+    sed -i "s/\\\\begin{tabular}{ll}/\\\\begin{tabular}{p{0.45\\\\linewidth} | p{0.45\\\\linewidth}}/" "$last_arg"
+    sed -i "s/\\\\begin{tabular}{lll}/\\\\begin{tabular}{p{0.30\\\\linewidth} | p{0.30\\\\linewidth} | p{0.30\\\\linewidth}}/" "$last_arg"
 
     /usr/bin/pdflatex -interaction nonstopmode "$@" "$last_arg"
     exit "$?"
