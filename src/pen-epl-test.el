@@ -9,7 +9,10 @@
 (require 'pen-epl)
 
 (defun problog-basic-coin ()
+  "We are interested in both coins landing on heads"
+
   (interactive)
+  
   (problog-play-or-display
    ;; the first coin flip has a 0.5 probability of being heads
    ;; the second coin flip has a 0.5 probability of being heads
@@ -18,13 +21,19 @@
 
    ;; twoHeads is true if both flips are heads
    (rule twoHeads heads1 heads2)
-
+   
    (query heads1)
    (query heads2)
+
+   ;; The probability of both coins landing on heads is the product of both probabilities: P(twoHeads)=0.3.
+   ;; This has a  low probability - 0.3
    (query twoHeads)))
 
 (defun noisy-or-coin ()
+  "Let’s now consider a variant of the above example j:problog-basic-coin in which we are interested not in both coins landing on heads, but in at least one of them landing on heads."
+
   (interactive)
+  
   (problog-play-or-display
    (pfacts (heads1 0.5)
            (heads2 0.6))
@@ -37,9 +46,14 @@
           (heads1)
           (heads2))
 
+   ;; This has a very high probability - 0.95
    (query someHeads)))
 
 (defun first-order-coin ()
+  "we toss N coins (which are all biased with probability 0.6 for heads)
+and we are interested in the probability of at least one of them
+landing on heads"
+
   (interactive)
   (problog-play-or-display
    (afact 0.6 lands_heads _)
@@ -50,12 +64,21 @@
     (coin c3)
     (coin c4))
 
-   (implies (fact heads C)
-            (and (fact coin C)
-                 (fact lands_heads C)))
+   (implies
+    ;; heads exists for C
+    (fact heads C)
+    ;; if...
+    ;; C is a coin, and
+    ;; C land heads
+    (and (fact coin C)
+         (fact lands_heads C)))
 
-   (implies (fact someHeads)
-            (fact heads _))
+   
+   (implies
+    ;; There has been at least one heads
+    (fact someHeads)
+    ;; if heads is true for anything
+    (fact heads _))
 
    (query someHeads)))
 
