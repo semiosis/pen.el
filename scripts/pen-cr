@@ -2101,7 +2101,14 @@ case "$file_type" in
     ;;
 
     problog) {
-        problog "$rp" | pen-pavs
+        # does it have a shebang? (For different problog invocations)
+        if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
+            cd "$dn"
+            perl "$rp" | pen-pavs
+            exit $?
+        else
+            problog "$rp" | pen-pavs
+        fi
         exit 0
     }
     ;;

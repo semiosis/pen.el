@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+/usr/local/bin/problog dt "$@" 2>/dev/null | pavs
+
+# Example:
+# problog dt /volumes/home/shane/notes/ws/problog/scratch/umbrella.problog
+# /home/shane/dump/programs/httrack/mirrors/https-dtai-cs-kuleuven-be-problog-/dtai.cs.kuleuven.be/problog/tutorial/dtproblog/01_umbrella.html
