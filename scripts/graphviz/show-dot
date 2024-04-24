@@ -1,0 +1,54 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+NOPRETTY=y
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -pp|-pretty) {
+        NOPRETTY=n
+        shift
+    }
+    ;;
+
+    -np|-nopretty) {
+        NOPRETTY=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+is_tty() {
+    [[ -t 1 ]]
+}
+
+stdin_exists() {
+    ! [ -t 0 ]
+}
+
+# This magically makes the UML into left-right instead of top-down
+preprocess() {
+    sed 's/shape="record"/\n&/'
+}
+
+postprocess() {
+    #{
+    #    sed 's/| \+{/| /' |
+    #    sed 's/| }/|  /' |
+    #    sed 's/|\([-+]\) /\n|---\n| \1 /'
+    #} |
+    if test "$NOPRETTY" = "y"; then
+        cat
+    else
+        dot-pretty
+    fi
+}
+
+if is_tty; then
+    preprocess | graph-easy -- "$@" | postprocess | vs
+else
+    preprocess | graph-easy -- "$@" | postprocess
+fi
