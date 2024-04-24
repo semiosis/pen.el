@@ -328,14 +328,14 @@ We can extend the Bayesian network to have a
 multi-valued variable by indicating the
 severity of the earthquake.
 
-The literal earthquake now has three possible
-values none, mild, heavy instead of previously
-two (no or yes).
+The literal 'earthquake' now has three possible
+values 'none', 'mild', 'heavy' instead of previously
+two ('no' or 'yes').
 
 The probabilities of each value is denoted by
 the annotated disjunction in
-0.01::earthquake(heavy);
-0.19::earthquake(mild); 0.8::earthquake(none).
+    0.01::earthquake(heavy);
+    0.19::earthquake(mild); 0.8::earthquake(none).
 
 An annotated disjunction is similar to a
 probabilistic disjunction, but with a
@@ -405,7 +405,7 @@ each annotated with a probability."
    ;; What was the chance of there being an earthquake?
    (query (earthquake _))))
 
-(defun non-ground-queries ()
+(defun problog-non-ground-queries ()
   "e:/volumes/home/shane/notes/ws/problog/scratch/non-ground-queries.problog
 
 "
