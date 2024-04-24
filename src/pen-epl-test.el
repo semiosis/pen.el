@@ -56,8 +56,11 @@ landing on heads"
 
   (interactive)
   (problog-play-or-display
+   ;; The chance of something (normally a coin) landing heads is 0.6
+   ;; probabilistic fact    | 0.5::a.
    (afact 0.6 lands_heads _)
 
+   ;; There are 4 coins
    (facts
     (coin c1)
     (coin c2)
@@ -65,14 +68,13 @@ landing on heads"
     (coin c4))
 
    (implies
-    ;; heads exists for C
+    ;; Something (C) must have landed heads
     (fact heads C)
     ;; if...
     ;; C is a coin, and
-    ;; C land heads
+    ;; C lands heads (there's only a 60% chance of that)
     (and (fact coin C)
          (fact lands_heads C)))
-
    
    (implies
     ;; There has been at least one heads
@@ -86,6 +88,9 @@ landing on heads"
 (defun probabilistic-first-clause-coin ()
   (interactive)
   (problog-play-or-display
+
+   ;; probabilistic clause  | 0.5::a :- x.
+   ;; probabilistic clauses help to reduce auxiliary predicates
    (implies (afact 0.6 heads C)
             (fact coin C))
 
@@ -103,8 +108,37 @@ landing on heads"
 
    (query someHeads)))
 
+(defun probabilistic-burglary ()
+  "Bayesian networks in ProbLog using the famous Earthquake example."
+
+  (interactive)
+  (problog-play-or-display
+
+   ;; probabilistic clause  | 0.5::a :- x.
+   ;; probabilistic clauses help to reduce auxiliary predicates
+   (implies (afact 0.6 heads C)
+            (fact coin C))
+
+   (pfacts (burglary 0.7)
+           (earthquake 0.2)
+           (p_alarm1 0.9)
+           (p_alarm2 0.8)
+           (p_alarm3 0.1))
+
+   (rules alarm
+          (burglary earthquake p_alarm1)
+          (burglary +earthquake p_alarm2)
+          (+burglary earthquake p_alarm3))
+
+   (evidence alarm t)
+
+   ;; (evidence (alarm nil))
+
+   (query burglary)
+   (query earthquake)))
+
 ;; A progn
-(defun problog-model-burglary ()
+(defun problog-model-burglary-test ()
   (interactive)
 
   (problog-play-or-display
