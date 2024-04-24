@@ -132,7 +132,6 @@
 (defmacro problog-rule (head probability-or-fact &rest facts)
   ;; Inside here, for each thing inside here,
   ;; multiply all the numbers together and put them at the start
-  (setq head (problog-function-sexp-to-string head))
   (let ((prob 1))
     (if (numberp probability-or-fact)
         (setq prob probability-or-fact)
@@ -148,6 +147,7 @@
                     (problog-backslash-not p))
                   facts))
 
+    (setq head (problog-function-sexp-to-string head))
     (e/awk1
      (problog-sentencify
       (concat
@@ -174,7 +174,7 @@
 (defalias 'implies 'problog-implies)
 
 (defmacro problog-rules (head-name &rest rule-predicates-lists)
-  (setq head-name (str head-name))
+  ;; (setq head-name (str head-name))
 
   (apply 'e/awk1
          (cl-loop for rpl in rule-predicates-lists collect
@@ -186,7 +186,7 @@
 (defalias 'rules 'problog-rules)
 
 (defmacro problog-evidence (factname t-or-nil)
-  (setq factname (str factname))
+  (setq factname (problog-function-sexp-to-string factname))
   (concat "evidence(" factname "," (if t-or-nil "true"
                                      "false")
           ")."))

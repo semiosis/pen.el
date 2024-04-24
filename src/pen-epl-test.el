@@ -254,6 +254,11 @@ and those rules
           (0.8 burglary +earthquake)
           (0.1 +burglary earthquake))
 
+   (rules (calls X)
+          ;;  3 different rules for what triggers the alarm
+          (0.9 alarm (person X))
+          (0.8 +alarm (person X)))
+
    ;; The query and evidence functions are for clauses.
    ;; It adjusts the probability to make it 100%
    ;; While you can use 'evidence' on a probabilistic fact, it's not that
@@ -266,14 +271,9 @@ and those rules
    ;; it's not technically pure (by haskell standards).
    ;; By giving evidence, we say that the final probability must be 100%.
    ;; The alarm has gone off
-   (evidence alarm t)
+   (evidence (calls john) t)
+   (evidence (calls mary) t)
    
-   ;; (evidence p_alarm1 t)
-   ;; There is no evidence for an alarm having gone off
-   (comment (evidence alarm t))
-   ;; The alarm has not gone off
-   ;; (evidence alarm nil)
-
    ;; What was the chance of there being a burglary?
    (query burglary)
 
