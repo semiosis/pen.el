@@ -145,7 +145,9 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 Therefore, we teach people to both believe and to obey the Gospel. When we obey Jesus' commandments it's actually Jesus working in and through us. We want Jesus to be able to carry out work in us, so we obey Him - our will and God's will come into alignment when we obey Jesus' commandments.
 
-Both belief and obedience are required of us, but the success of our work doesn't count for our righteousness, and believing is an initial act of obedience before continuing in the teaching of Christ. And the obedience is not burdensome:
+Both belief and obedience are required of us, but the success of our work doesn't count for our righteousness, and believing is an initial act of obedience before continuing in the teaching of Christ.
+
+And the obedience is not burdensome:
 
 > **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
@@ -205,6 +207,45 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 > **Romans 11:30-32** - Just as you were <ins>at one time disobedient</ins> to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For **God has consigned all to disobedience, that he may have mercy on all.** (ESV)
 
 [King of Kings {Lyric Video} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=Of5IcFWiEpg&list=RDf2oxGYpuLkw&index=2)
+
+
+### In Christ Jesus, the blood of Jesus cleanses us from all sin
+
+We trust that our sin is covered by Jesus Christ's blood, as we abide in Him through belief and obedience:
+
+> **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin. (ESV)
+
+> **Revelation of John 1:4-6** - John to the seven churches that are in Asia: Grace to you and peace from him who is and who was and who is to come, and from the seven spirits who are before his throne, and from Jesus Christ the faithful witness, the firstborn of the dead, and the ruler of kings on earth. To him who loves us and has **freed us from our sins by his blood** and made us a kingdom, priests to his God and Father, to him be glory and dominion forever and ever. Amen. (ESV)
+
+In Jesus Christ we have redemption, the forgiveness of sins:
+
+> **Colossians 1:13-14** - He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, in whom we have redemption, the forgiveness of sins. (ESV)
+
+As we walk in the light, as He is in the light, that is in the Truth, walking in, believing, professing and obeying Jesus Christ in Truth, the blood of Jesus Christ cleanses us from all sin:
+
+> **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+
+We are sanctified in the Spirit for obedience to Jesus Christ, and for sprinkling with His blood:
+
+> **I Peter 1:2** - according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you. (ESV)
+
+> **Hebrews 7:22** - This makes Jesus the guarantor of a better covenant. (ESV)
+
+> **Hebrews 10:9-14** - then he added, Behold, I have come to do your will. He abolishes the first in order to establish the second. And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. And every priest stands daily at his service, offering repeatedly the same sacrifices, which can never take away sins. But when Christ had offered for all time a single sacrifice for sins, he sat down at the right hand of God, waiting from that time until his enemies should be made a footstool for his feet. For **by a single offering he has perfected for all time those who are being sanctified.** (ESV)
+
+We are ransomed:
+
+> **I Peter 1:18-19** - knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
+The blood of Jesus secures an eternal redemption:
+
+> **Hebrews 9:11-15** - But when Christ appeared as a high priest of the good things that have come, then through the greater and more perfect tent (not made with hands, that is, not of this creation) he entered once for all into the holy places, not by means of the blood of goats and calves but by means of his own blood, thus securing an **eternal redemption**. For if the sprinkling of defiled persons with the blood of goats and bulls and with the ashes of a heifer sanctifies for the purification of the flesh, how much more will the blood of Christ, who through the eternal Spirit offered himself without blemish to God, purify our conscience from dead works to serve the living God. Therefore he is the mediator of a new covenant, so that those who are called may receive the promised eternal inheritance, since a death has occurred that redeems them from the transgressions committed under the first covenant. (ESV)
+
+The eternal redemption is in Christ Jesus:
+
+> **Ephesians 1:7** - In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace, (ESV)
+
+> **Hebrews 5:9-10** - And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek. (ESV)
 
 
 ## Obedience is absolutely within our ability
@@ -619,7 +660,9 @@ making me born-again, and has given me a new
 Spirit so I can walk in obedience to Him.
 
 It's only possible through what Jesus Christ
-has achieved for us on the cross.
+has achieved for us on the cross, because the blood of Jesus Christ redeems us <ins>as we abide in Him</ins>:
+
+> **Ephesians 1:7** - In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace, (ESV)
 
 -   [Chris Tomlin - Holy Forever {Lyric Video} - YouTube](https://youtu.be/IkHgxKemCRk?list=RDf2oxGYpuLkw&t=94)
 
@@ -4149,7 +4192,9 @@ Adhering strictly to the Mosaic law is not needed to be justified by God if we b
 
 ### Purity of heart
 
-The Mosaic law is not really in the same category as the 10 commandments, I believe. The 10 commandments if obeyed in truth **from the heart** would result in a clean heart, I think. So it serves to describe what a pure heart looks like, and the laws we should always try to keep whether Gentile or Jew:
+The Mosaic law is not really in the same category as the 10 commandments, I believe. The 10 commandments if obeyed in truth **from the heart** would result in a clean heart, I think. So it serves to describe what a pure heart looks like, and the laws we should always try to keep whether Gentile or Jew.
+
+We obey the Truth. We obey Jesus Christ. We obey God. We believe and trust God, even for His finished work on the cross:
 
 > **I Peter 1:22** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart,
 
@@ -5032,7 +5077,7 @@ A person must be at least willing to do His will - obedience is the essence of f
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
-Therefore, faith quickly progresses into good work, serving the living God.
+Therefore, faith quickly progresses into good work, serving the living God:
 
 > **Hebrews 9:14** - how much more will the blood of Christ, who through the eternal Spirit offered himself without blemish to God, purify our conscience from dead works to serve the living God.
 
@@ -5359,6 +5404,10 @@ Faith without work doesn't exist I think because the work of God is to believe o
 
 
 ### Don't underestimate Jesus' saving power
+
+Jesus' blood applied to us can sanctify us:
+
+> **Hebrews 13:12** - So Jesus also suffered outside the gate in order to sanctify the people through his own blood. (ESV)
 
 With Lazarus - Jesus performed the miracle so the people watching could believe and have faith.
 Jesus wept before he raise Lazarus from the dead, and many other people believed in Jesus and were saved, I assume.
@@ -14920,6 +14969,8 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 > -   **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
 > -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+
+> **Hebrews 13:20-21** - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, equip you with everything good that you may do his will, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
 
 -   **Download:** [PDF](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.pdf), [TEXT](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt), [MARKDOWN](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.md), [ORG](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.org)
 
