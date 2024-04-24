@@ -411,6 +411,65 @@ each annotated with a probability."
    ;; Notice that this does NOT say, "What is the chance there was earthquake?"
    (query (earthquake _))))
 
+(defun problog-rolling-dice-annotated-disjunctions ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/rolling-dice-with-annotated-disjunctions-ie-multi-valued-variables.problog
+
+We start with a variant of our earlier
+propositional coin example, but now using
+dice.
+
+It illustrates the use of annotated
+disjunctions, a probabilistic primitive that
+chooses exactly one of a number of
+alternatives (if their probabilities sum to
+1.0, if the sum is less than 1.0, then with
+some probability none of the alternatives is
+picked).
+
+The first die is fair, the second has a higher
+chance of throwing a six.
+
+Furthermore, we define what it means to throw
+a six with both dice, or with at least one of
+them.
+"
+  (interactive)
+  (problog-play-or-display
+
+   (pb-or
+    (afact 1/6 one1)
+    (afact 1/6 two1)
+    (afact 1/6 three1)
+    (afact 1/6 four1)
+    (afact 1/6 five1)
+    (afact 1/6 six1))
+
+   ;; The second die is weighted
+   (pb-or (afact 0.15 one2)
+          (afact 0.15 two2)
+          (afact 0.15 three2)
+          (afact 0.15 four2)
+          (afact 0.15 five2)
+          (afact 0.25 six2))
+
+   (rules twoSix
+          (six1 six2))
+   (rules someSix
+          (six1)
+          (six2))
+
+   ;; Make these work as expected
+   (comment
+    (rules twoSix
+           (six1 OR six2))
+    (rules twoSix
+           ((pb-or six1 six2))))
+
+   (query six1)
+   (query six2)
+   (query twoSix)
+   (query someSix)))
+
 (defun problog-non-ground-queries ()
   "e:/volumes/home/shane/notes/ws/problog/scratch/non-ground-queries.problog
 
