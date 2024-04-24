@@ -145,15 +145,21 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 Therefore, we teach people to both believe and to obey the Gospel. When we obey Jesus' commandments it's actually Jesus working in and through us. We want Jesus to be able to carry out work in us, so we obey Him - our will and God's will come into alignment when we obey Jesus' commandments.
 
-Both belief and obedience are required of us, but the success of our work doesn't count for our righteousness, and believing is an initial act of obedience before continuing in the teaching of Christ.
+In Christ Jesus, through faith in Him (through trusting Him, believing Him, believing in Him and obeying Him), we have Jesus as our righteousness, and sanctification and redemption:
 
-And the obedience is not burdensome:
+> **I Corinthians 1:30** - He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption. (ESV)
 
-> **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+Believing is an initial act of obedience before continuing in the teaching of Christ. If we believe in Him we have obeyed Him, but belief doesn't end there:
+
+> **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
 
 As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+And our obedience is not burdensome:
+
+> **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 We receive the spirit by getting Jesus' words into us, believing them and obeying them. Feeding on them, we get Jesus' spirit and life into us:
 
@@ -1705,6 +1711,10 @@ The good news must be united by obedient faith (putting Jesus' words into action
 I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'. So someone must be a both a believer and a follower of Jesus.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
+
+As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
 I think we are permanently saved when we are following Jesus.
 
