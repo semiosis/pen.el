@@ -470,9 +470,98 @@ them.
    (query twoSix)
    (query someSix)))
 
-(defun problog-non-ground-queries ()
-  "e:/volumes/home/shane/notes/ws/problog/scratch/non-ground-queries.problog
+(defun problog-rolling-dice-negation-as-failure ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/rolling-dice-negation-as-failure.problog
 
+"
+  (interactive)
+  (problog-play-or-display
+
+   (pb-or
+    (afact 1/6 one 1)
+    (afact 1/6 two 1)
+    (afact 1/6 three 1)
+    (afact 1/6 four 1)
+    (afact 1/6 five 1)
+    (afact 1/6 six 1))
+
+   ;; The second die is weighted
+   (pb-or (afact 0.15 one 2)
+          (afact 0.15 two 2)
+          (afact 0.15 three 2)
+          (afact 0.15 four 2)
+          (afact 0.15 five 2)
+          (afact 0.25 six 2))
+
+   (rules (odd X)
+          ;;  3 different rules for what triggers the alarm
+          ((one X))
+          ((three X))
+          ((five X)))
+   
+   (rules (even X)
+          ((not (odd X))))
+
+   (query (odd 1))
+   (query (even 1))
+   (query (odd 2))
+   (query (even 2))))
+
+(defun problog-rolling-dice-non-ground-queries ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/rolling-dice-non-ground-queries.problog
+
+As in Prolog, negation has to be used with
+care, as it is only safe on ground goals.
+
+We illustrate this by posing non-ground
+queries (using an anonymous variable denoted
+by _ as argument) to the same program.
+"
+  (interactive)
+  (problog-play-or-display
+
+   (pb-or
+    (afact 1/6 one 1)
+    (afact 1/6 two 1)
+    (afact 1/6 three 1)
+    (afact 1/6 four 1)
+    (afact 1/6 five 1)
+    (afact 1/6 six 1))
+
+   ;; The second die is weighted
+   (pb-or (afact 0.15 one 2)
+          (afact 0.15 two 2)
+          (afact 0.15 three 2)
+          (afact 0.15 four 2)
+          (afact 0.15 five 2)
+          (afact 0.25 six 2))
+
+   (rules (odd X)
+          ;;  3 different rules for what triggers the alarm
+          ((one X))
+          ((three X))
+          ((five X)))
+   
+   (rules (even X)
+          ((not (odd X))))
+
+   ;; What was the chance of there being a burglary?
+   (query (odd _))
+   (query (even _))))
+
+(defun problog-rolling-dice-arithmetic-expressions ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/rolling-dice-arithmetic-expressions.problog
+
+We now consider yet another way to model dice,
+using fair ones only.
+
+This representation allows for convenient use
+of the results in arithmetic expressions,
+e.g., to add up the results from several dice.
+
+We query for the probabilities of the possible
+sums we can get from two dice given that the
+first number is even and the second odd.
 "
   (interactive)
   (problog-play-or-display
