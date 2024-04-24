@@ -129,18 +129,33 @@
 
 ;; head/tail notation [H|Tail]
 ;; http://www.cs.trincoll.edu/$HOMEram/cpsc352/notes/prolog/search.html
-(defmacro problog-rule (head &rest facts)
+(defmacro problog-rule (head probability-or-fact &rest facts)
+  ;; Inside here, for each thing inside here,
+  ;; multiply all the numbers together and put them at the start
   (setq head (problog-function-sexp-to-string head))
-  (setq facts
-        (mapcar (lambda (p)
-                  (setq p (problog-function-sexp-to-string p))
-                  (problog-backslash-not p))
-                facts))
+  (let ((prob 1))
+    (if (numberp probability-or-fact)
+        (setq prob probability-or-fact)
+      (setq facts (append (list probability-or-fact) facts)))
 
-  (e/awk1
-   (problog-sentencify
-    head " :- "
-    (s-join ", " facts))))
+    (setq prob (-reduce '* (-filter 'numberp (append (list prob) facts))))
+
+    (setq facts (-filter (lambda (e) (not (numberp e))) facts))
+    
+    (setq facts
+          (mapcar (lambda (p)
+                    (setq p (problog-function-sexp-to-string p))
+                    (problog-backslash-not p))
+                  facts))
+
+    (e/awk1
+     (problog-sentencify
+      (concat
+       (if (equal 1 prob)
+           head
+         (concat (number-to-string prob) "::" head))
+       " :- ")
+      (s-join ", " facts)))))
 
 (defalias 'rule 'problog-rule)
 

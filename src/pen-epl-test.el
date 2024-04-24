@@ -109,7 +109,15 @@ landing on heads"
    (query someHeads)))
 
 (defun probabilistic-burglary ()
-  "Bayesian networks in ProbLog using the famous Earthquake example."
+  "Bayesian networks in ProbLog using the famous Earthquake example.
+
+In this example, we have a chance that a burglary has happened,
+and a chance that an earthquake has happened,
+and there is also sure evidence that the alarm has gone off.
+
+There are some rules which say under what circumstances does the alarm trigger,
+and those rules 
+"
 
   (interactive)
   (problog-play-or-display
@@ -120,21 +128,41 @@ landing on heads"
     (burglary 0.7)
     (earthquake 0.2)
 
+    ;; The probabilities for the conclusions of the
+    ;; 3 different rules for what triggers the alarm.
+    ;; While this is a correct encoding of the
+    ;; given Bayesian network, it is perhaps not very
+    ;; intuitive due to the auxiliary atoms, p_alarm1, p_alarm2 and p_alarm3
     (p_alarm1 0.9)
     (p_alarm2 0.8)
     (p_alarm3 0.1))
 
-   ;; Here, the alarms all represent the same alarm:
-   ;; if there is a burglary and an earthquake, the alarm rings with probability 0.9;
-   ;; if there is only a burglary, it rings with probability 0.8;
-   ;; if there is only an earthquake, it rings with probability 0.1;
+   ;; Here, the alarms all represent the same alarm. The alarm predicate is described
+   ;; by 3 different rules. They are 3 different scenarios which could have triggered the alarm.
+   ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
+   ;; - if there is only a burglary, it rings with probability 0.8;
+   ;; - if there is only an earthquake, it rings with probability 0.1;
    (rules alarm
+          ;;  3 different rules for what triggers the alarm
           (burglary earthquake p_alarm1)
           (burglary +earthquake p_alarm2)
           (+burglary earthquake p_alarm3))
 
+   ;; The query and evidence functions are for clauses.
+   ;; It adjusts the probability to make it 100%
+   ;; While you can use 'evidence' on a probabilistic fact, it's not that
+   ;; useful to do so, because you could just set the probability right there.
+   ;; But if you use 'evidence' on a rule which refers to auxiliary predicates and
+   ;; facts that have their own probabilities, then you can adjust the original
+   ;; probabilities, even if they were hardcoded.
+
+   ;; Alarm is a predicate (a pure boolean function) but it's stochastic so
+   ;; it's not technically pure (by haskell standards).
+   ;; By giving evidence, we say that the final probability must be 100%.
    ;; The alarm has gone off
    (evidence alarm t)
+   
+   ;; (evidence p_alarm1 t)
    ;; There is no evidence for an alarm having gone off
    (comment (evidence alarm t))
    ;; The alarm has not gone off
@@ -142,6 +170,113 @@ landing on heads"
 
    ;; What was the chance of there being a burglary?
    (query burglary)
+
+   ;; What was the chance of there being an earthquake?
+   (query earthquake)
+
+   ;; What was the likely underlying rule of the alarm predicate
+   ;; which triggered the alarm?
+   ;; By giving evidence, we say that the final probability must be 100%.
+   (query p_alarm1)
+   ;; The most likely scenario which triggered the alarm was a burglary
+   ;; without an earthquake.
+   (query p_alarm2)
+   ;; p_alarm3 was only around 0.1 percent
+   ;; therefore, it's very unlikely that it was an earthquake without
+   ;; a burglary.
+   (query p_alarm3)))
+
+(defun probabilistic-burglary-using-pclauses ()
+  (interactive)
+  (problog-play-or-display
+
+   (pfacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7)
+    (earthquake 0.2))
+
+   ;; Here, the alarms all represent the same alarm. The alarm predicate is described
+   ;; by 3 different rules. They are 3 different scenarios which could have triggered the alarm.
+   ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
+   ;; - if there is only a burglary, it rings with probability 0.8;
+   ;; - if there is only an earthquake, it rings with probability 0.1;
+   (rules alarm
+          ;;  3 different rules for what triggers the alarm
+          (0.9 burglary earthquake)
+          (0.8 burglary +earthquake)
+          (0.1 +burglary earthquake))
+
+   ;; The query and evidence functions are for clauses.
+   ;; It adjusts the probability to make it 100%
+   ;; While you can use 'evidence' on a probabilistic fact, it's not that
+   ;; useful to do so, because you could just set the probability right there.
+   ;; But if you use 'evidence' on a rule which refers to auxiliary predicates and
+   ;; facts that have their own probabilities, then you can adjust the original
+   ;; probabilities, even if they were hardcoded.
+
+   ;; Alarm is a predicate (a pure boolean function) but it's stochastic so
+   ;; it's not technically pure (by haskell standards).
+   ;; By giving evidence, we say that the final probability must be 100%.
+   ;; The alarm has gone off
+   (evidence alarm t)
+   
+   ;; (evidence p_alarm1 t)
+   ;; There is no evidence for an alarm having gone off
+   (comment (evidence alarm t))
+   ;; The alarm has not gone off
+   ;; (evidence alarm nil)
+
+   ;; What was the chance of there being a burglary?
+   (query burglary)
+
+   ;; What was the chance of there being an earthquake?
+   (query earthquake)))
+
+(defun probabilistic-burglary-using-firstorder-logic ()
+  (interactive)
+  (problog-play-or-display
+
+   (pfacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7)
+    (earthquake 0.2))
+
+   ;; Here, the alarms all represent the same alarm. The alarm predicate is described
+   ;; by 3 different rules. They are 3 different scenarios which could have triggered the alarm.
+   ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
+   ;; - if there is only a burglary, it rings with probability 0.8;
+   ;; - if there is only an earthquake, it rings with probability 0.1;
+   (rules alarm
+          ;;  3 different rules for what triggers the alarm
+          (0.9 burglary earthquake)
+          (0.8 burglary +earthquake)
+          (0.1 +burglary earthquake))
+
+   ;; The query and evidence functions are for clauses.
+   ;; It adjusts the probability to make it 100%
+   ;; While you can use 'evidence' on a probabilistic fact, it's not that
+   ;; useful to do so, because you could just set the probability right there.
+   ;; But if you use 'evidence' on a rule which refers to auxiliary predicates and
+   ;; facts that have their own probabilities, then you can adjust the original
+   ;; probabilities, even if they were hardcoded.
+
+   ;; Alarm is a predicate (a pure boolean function) but it's stochastic so
+   ;; it's not technically pure (by haskell standards).
+   ;; By giving evidence, we say that the final probability must be 100%.
+   ;; The alarm has gone off
+   (evidence alarm t)
+   
+   ;; (evidence p_alarm1 t)
+   ;; There is no evidence for an alarm having gone off
+   (comment (evidence alarm t))
+   ;; The alarm has not gone off
+   ;; (evidence alarm nil)
+
+   ;; What was the chance of there being a burglary?
+   (query burglary)
+
    ;; What was the chance of there being an earthquake?
    (query earthquake)))
 
