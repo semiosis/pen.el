@@ -114,27 +114,35 @@ landing on heads"
   (interactive)
   (problog-play-or-display
 
-   ;; probabilistic clause  | 0.5::a :- x.
-   ;; probabilistic clauses help to reduce auxiliary predicates
-   (implies (afact 0.6 heads C)
-            (fact coin C))
+   (pfacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7)
+    (earthquake 0.2)
 
-   (pfacts (burglary 0.7)
-           (earthquake 0.2)
-           (p_alarm1 0.9)
-           (p_alarm2 0.8)
-           (p_alarm3 0.1))
+    (p_alarm1 0.9)
+    (p_alarm2 0.8)
+    (p_alarm3 0.1))
 
+   ;; Here, the alarms all represent the same alarm:
+   ;; if there is a burglary and an earthquake, the alarm rings with probability 0.9;
+   ;; if there is only a burglary, it rings with probability 0.8;
+   ;; if there is only an earthquake, it rings with probability 0.1;
    (rules alarm
           (burglary earthquake p_alarm1)
           (burglary +earthquake p_alarm2)
           (+burglary earthquake p_alarm3))
 
+   ;; The alarm has gone off
    (evidence alarm t)
+   ;; There is no evidence for an alarm having gone off
+   (comment (evidence alarm t))
+   ;; The alarm has not gone off
+   ;; (evidence alarm nil)
 
-   ;; (evidence (alarm nil))
-
+   ;; What was the chance of there being a burglary?
    (query burglary)
+   ;; What was the chance of there being an earthquake?
    (query earthquake)))
 
 ;; A progn
