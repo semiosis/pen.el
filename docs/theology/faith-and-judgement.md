@@ -30,7 +30,12 @@ Please feel free to discuss it with me.
 Almost all of verses are taken from the ESV
 (English Standard Version) bible with the odd NASB
 (New American Standard Bible), KJV (King
-James Version), and BSB (Berean Study Bible) used here and there.
+James Version), and BSB (Berean Study Bible)
+used here and there.
+
+I have also used the original Hebrew and Greek
+from the Interlinear Bible on Biblehub.com a
+couple of times.
 
 By default I will use the ESV and where it is
 not from the ESV, I have almost certainly marked it with the alternative version used.
@@ -3829,9 +3834,24 @@ Paul and the other faithful Apostles were exhibited as last of all, like men sen
 > **I Corinthians 4:6-16** - I have applied all these things to myself and Apollos for your benefit, brothers, that you may learn by us not to go beyond what is written, that none of you may be puffed up in favor of one against another. For who sees anything different in you? What do you have that you did not receive? If then you received it, why do you boast as if you did not receive it? Already you have all you want! Already you have become rich! Without us you have become kings! And would that you did reign, so that we might share the rule with you! For I think that God has exhibited us apostles as last of all, like men sentenced to death, because we have become a spectacle to the world, to angels, and to men. We are fools for Christ's sake, but you are wise in Christ. We are weak, but you are strong. You are held in honor, but we in disrepute. To the present hour we hunger and thirst, we are poorly dressed and buffeted and homeless, and we labor, working with our own hands. When reviled, we bless; when persecuted, we endure; when slandered, we entreat. We have become, and are still, like the scum of the world, the refuse of all things. I do not write these things to make you ashamed, but to admonish you as my beloved children. For though you have countless guides in Christ, you do not have many fathers. For I became your father in Christ Jesus through the gospel. I urge you, then, be imitators of me. (ESV)
 
 
+# The times of ignorance are past
+
+Now God commands **all people** everywhere to repent:
+
+> **Acts 17:30-31** - The times of ignorance God overlooked, but now **he commands all people everywhere to repent**, because he has fixed a day on which he will judge the world in righteousness by a man whom he has appointed; and of this he has given assurance to all by raising him from the dead. (ESV)
+
+> **Acts 14:15-17** - Men, why are you doing these things? We also are men, of like nature with you, and we bring you good news, that you should turn from these vain things to a living God, who made the heaven and the earth and the sea and all that is in them. **In past generations he allowed all the nations to walk in their own ways.** Yet he did not leave himself without witness, for he did good by giving you rains from heaven and fruitful seasons, satisfying your hearts with food and gladness. (ESV)
+
+
 # Common grace
 
+God's common grace extends to even the evil:
+
+> **Matthew 5:44-45** - But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. (ESV)
+
 We are meant to exercise common grace to other people.
+
+> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
 When we pray, we should desire to **do** God's will, as Jesus has prayed for us to remain here to do His will:
 
