@@ -39,8 +39,26 @@
       (problog-function-sexp-to-string name-or-func-call)))))
 (defalias 'head 'problog-fact)
 
-(defmacro problog-pfact (name-or-func-call probability &rest parameters)
+(defmacro problog-pfact (name-or-func-call &optional probability &rest parameters)
   "Probabilistic fact"
+
+  (cond ((and
+          (and probability
+               (not (numberp probability)))
+          parameters)
+         (progn
+           (setq parameters (append (list probability) parameters))
+           (setq probability 1)))
+        
+        ((and
+          probability
+          (not (numberp probability))
+          (not parameters))
+         (setq parameters (list probability)))
+
+        ((not probability)
+         (setq probability 1)))
+  
   `(problog-afact ,probability ,name-or-func-call ,@parameters))
 (defalias 'pfact 'problog-pfact)
 
@@ -53,8 +71,10 @@
            pred-func-name)))
     (e/awk1
      (problog-sentencify
-      (concat (str probability)
-              "::" (problog-function-sexp-to-string name-or-func-call))))))
+      (if (equal probability 1)
+          (problog-function-sexp-to-string name-or-func-call)
+        (concat (str probability)
+                "::" (problog-function-sexp-to-string name-or-func-call)))))))
 (defalias 'afact 'problog-afact)
 
 (defmacro problog-facts (&rest facts)
@@ -192,6 +212,9 @@
                      ,@rpl)))))
 
 (defalias 'rules 'problog-rules)
+(defalias 'prules 'problog-rules)
+(defalias 'clauses 'problog-rules)
+(defalias 'pclauses 'problog-rules)
 
 (defmacro problog-evidence (factname t-or-nil)
   (setq factname (problog-function-sexp-to-string factname))

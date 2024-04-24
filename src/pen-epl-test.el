@@ -42,7 +42,7 @@
    (pfact heads1 0.5)
    (pfact heads1 0.5)
 
-   (rules someHeads
+   (prules someHeads
           (heads1)
           (heads2))
 
@@ -143,7 +143,7 @@ and those rules
    ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
-   (rules alarm
+   (prules alarm
           ;;  3 different rules for what triggers the alarm
           (burglary earthquake p_alarm1)
           (burglary +earthquake p_alarm2)
@@ -203,7 +203,7 @@ and those rules
    ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
-   (rules alarm
+   (prules alarm
           ;;  3 different rules for what triggers the alarm
           (0.9 burglary earthquake)
           (0.8 burglary +earthquake)
@@ -243,6 +243,12 @@ and those rules
     (person john)
     (person mary))
 
+   ;; I can also do this:
+   (comment
+    (pfacts
+     ((person john))
+     ((person mary))))
+
    (pfacts
     ;; Suppose there is a burglary in our house with probability 0.7
     ;; and an earthquake with probability 0.2.
@@ -255,16 +261,21 @@ and those rules
    ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
-   (rules alarm
-          ;;  3 different rules for what triggers the alarm
-          (0.9 burglary earthquake)
-          (0.8 burglary +earthquake)
-          (0.1 +burglary earthquake))
+   (prules alarm
+           ;;  3 different rules for what triggers the alarm
+           (0.9 burglary earthquake)
+           (0.8 burglary +earthquake)
+           (0.1 +burglary earthquake)
+           ;; Sometimes it's a false-alarm:
+           ;; i.e. no burglary or earthquake happened,
+           ;; but the alarm still triggered
+           ;; (0.01 +burglary +earthquake)
+           )
 
-   (rules (calls X)
-          ;;  3 different rules for what triggers the alarm
-          (0.9 alarm (person X))
-          (0.8 +alarm (person X)))
+   (prules (calls X)
+           ;;  3 different rules for what triggers the alarm
+           (0.9 alarm (person X))
+           (0.8 +alarm (person X)))
 
    ;; The query and evidence functions are for clauses.
    ;; It adjusts the probability to make it 100%
@@ -338,7 +349,7 @@ each annotated with a probability."
    ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
-   (rules alarm
+   (prules alarm
           ;;  3 different rules for what triggers the alarm
           (0.90 burglary (earthquake heavy))
           (0.85 burglary (earthquake mild))
@@ -346,7 +357,7 @@ each annotated with a probability."
           (0.10 +burglary (earthquake mild))
           (0.30 +burglary (earthquake heavy)))
 
-   (rules (calls X)
+   (prules (calls X)
           ;;  3 different rules for what triggers the alarm
           (0.9 alarm (person X))
           (0.8 +alarm (person X)))
@@ -448,7 +459,7 @@ each annotated with a probability."
     (afact 0.1 (not p_alarm3 A B))
     (afact 0.1 (not p_alarm3) A B))
 
-   (rules alarm
+   (prules alarm
           (burglary earthquake p_alarm1)
           (burglary +earthquake p_alarm2)
           (burglary +earthquake p_alarm4))
@@ -456,7 +467,7 @@ each annotated with a probability."
    ;; DONE This method of inversing facts should work
    ;; taken care of in j:problog-function-sexp-to-string
    (comment
-    (rules alarm
+    (prules alarm
            (burglary earthquake p_alarm1)
            (burglary (not earthquake) p_alarm2)
            (burglary (not earthquake) p_alarm4)))
@@ -567,7 +578,7 @@ each annotated with a probability."
             (p_alarm1 0.9)
             (p_alarm2 0.8))
 
-    (rules alarm
+    (prules alarm
            (burglary earthquake p_alarm1)
            (burglary +earthquake p_alarm2)))
 
