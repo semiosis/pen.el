@@ -247,6 +247,7 @@
                        facts)))
     `(problog-sentencify
       (s-join "; " ',factstrings))))
+(defalias 'pb-or 'problog-or)
 
 (defmacro problog-and (&rest facts)
   (let* ((factstrings (mapcar
@@ -259,6 +260,7 @@
     `(problog-sentencify
       (s-join ", "
               ',factstrings))))
+(defalias 'pb-and 'problog-and)
 
 (comment
  (etv

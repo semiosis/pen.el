@@ -73,7 +73,7 @@ landing on heads"
     ;; if...
     ;; C is a coin, and
     ;; C lands heads (there's only a 60% chance of that)
-    (and (fact coin C)
+    (pb-and (fact coin C)
          (fact lands_heads C)))
    
    (implies
@@ -283,6 +283,91 @@ and those rules
 
    ;; What was the chance of there being an earthquake?
    (query earthquake)))
+
+(defun probabilistic-burglary-using-annotated-disjunctions ()
+  "Since the random variables in the Bayesian
+network are all Boolean, we only need a single
+literal in the head of the rules.
+
+We can extend the Bayesian network to have a
+multi-valued variable by indicating the
+severity of the earthquake.
+
+The literal earthquake now has three possible
+values none, mild, heavy instead of previously
+two (no or yes).
+
+The probabilities of each value is denoted by
+the annotated disjunction in
+0.01::earthquake(heavy);
+0.19::earthquake(mild); 0.8::earthquake(none).
+
+An annotated disjunction is similar to a
+probabilistic disjunction, but with a
+different head.
+
+Instead of it being one atom annotated with a
+probability, it is now a disjunction of atoms
+each annotated with a probability."
+
+  (interactive)
+  (problog-play-or-display
+
+   (facts
+    (person john)
+    (person mary))
+
+   (pfacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7))
+
+   (pb-or (afact 0.01 earthquake heavy)
+          (afact 0.19 earthquake mild)
+          (afact 0.8 earthquake none))
+   
+   (comment (pb-or (pfact earthquake 0.01 heavy)
+                   (pfact earthquake 0.19 mild)
+                   (pfact earthquake 0.8 none)))
+
+   ;; Here, the alarms all represent the same alarm. The alarm predicate is described
+   ;; by 3 different rules. They are 3 different scenarios which could have triggered the alarm.
+   ;; - if there is a burglary and an earthquake, the alarm rings with probability 0.9;
+   ;; - if there is only a burglary, it rings with probability 0.8;
+   ;; - if there is only an earthquake, it rings with probability 0.1;
+   (rules alarm
+          ;;  3 different rules for what triggers the alarm
+          (0.90 burglary (earthquake heavy))
+          (0.85 burglary (earthquake mild))
+          (0.80 burglary (earthquake none))
+          (0.10 +burglary (earthquake mild))
+          (0.30 +burglary (earthquake heavy)))
+
+   (rules (calls X)
+          ;;  3 different rules for what triggers the alarm
+          (0.9 alarm (person X))
+          (0.8 +alarm (person X)))
+
+   ;; The query and evidence functions are for clauses.
+   ;; It adjusts the probability to make it 100%
+   ;; While you can use 'evidence' on a probabilistic fact, it's not that
+   ;; useful to do so, because you could just set the probability right there.
+   ;; But if you use 'evidence' on a rule which refers to auxiliary predicates and
+   ;; facts that have their own probabilities, then you can adjust the original
+   ;; probabilities, even if they were hardcoded.
+
+   ;; Alarm is a predicate (a pure boolean function) but it's stochastic so
+   ;; it's not technically pure (by haskell standards).
+   ;; By giving evidence, we say that the final probability must be 100%.
+   ;; The alarm has gone off
+   (evidence (calls john) t)
+   (evidence (calls mary) t)
+
+   ;; What was the chance of there being a burglary?
+   (query burglary)
+
+   ;; What was the chance of there being an earthquake?
+   (query (earthquake _))))
 
 ;; A progn
 (defun problog-model-burglary-test ()
