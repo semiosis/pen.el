@@ -24,6 +24,9 @@
    (pfacts (heads1 0.5)
            (heads2 0.6))
 
+   (pfact heads1 0.5)
+   (pfact heads1 0.5 _ a b)
+
    (rules someHeads
           (heads1)
           (heads2))
