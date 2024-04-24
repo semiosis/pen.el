@@ -357,6 +357,11 @@ each annotated with a probability."
     ;; and an earthquake with probability 0.2.
     (burglary 0.7))
 
+   ;; We could express the same thing in an annotated disjunction:
+   (comment
+    (pb-or (afact 0.7 burglary)
+           (afact 0.3 (not burglary))))
+
    ;; Fuzzy logic! / categories / multi-valued variable
    (pb-or (afact 0.01 earthquake heavy)
           (afact 0.19 earthquake mild)
