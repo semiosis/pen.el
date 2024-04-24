@@ -254,6 +254,7 @@ and those rules
   (interactive)
   (problog-play-or-display
 
+   ;; There are 2 'person' defined.
    (facts
     (person john)
     (person mary))
@@ -287,6 +288,9 @@ and those rules
            ;; (0.01 +burglary +earthquake)
            )
 
+   ;; There are N people. X represents one of those people.
+   ;; Since we know there are only 2 'person' defined,
+   ;; N=2.
    (prules (calls X)
            ;;  3 different rules for what triggers the alarm
            (0.9 alarm (person X))
