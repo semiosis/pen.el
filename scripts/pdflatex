@@ -3,4 +3,14 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-/usr/bin/pdflatex "$@"
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test -f "$last_arg"; then
+    test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
+    sed -i "s/\\\\begin{tabular}{ll}/\\\\begin{tabular}{p{0.35\\\\linewidth} | p{0.6\\\\linewidth}}/" "$last_arg"
+
+    /usr/bin/pdflatex -interaction nonstopmode "$@" "$last_arg"
+    exit "$?"
+fi
+
+/usr/bin/pdflatex -interaction nonstopmode "$@"
