@@ -9,7 +9,9 @@
 (require 'pen-epl)
 
 (defun problog-basic-coin ()
-  "We are interested in both coins landing on heads"
+  "e:/volumes/home/shane/notes/ws/problog/scratch/basic-coin.problog
+
+We are interested in both coins landing on heads"
 
   (interactive)
   
@@ -30,7 +32,9 @@
    (query twoHeads)))
 
 (defun noisy-or-coin ()
-  "Let’s now consider a variant of the above example j:problog-basic-coin in which we are interested not in both coins landing on heads, but in at least one of them landing on heads."
+  "e:/volumes/home/shane/notes/ws/problog/scratch/noisy-or-coin.problog
+
+Let’s now consider a variant of the above example j:problog-basic-coin in which we are interested not in both coins landing on heads, but in at least one of them landing on heads."
 
   (interactive)
   
@@ -50,7 +54,9 @@
    (query someHeads)))
 
 (defun first-order-coin ()
-  "we toss N coins (which are all biased with probability 0.6 for heads)
+  "e:/volumes/home/shane/notes/ws/problog/scratch/first-order-coin.problog
+
+We toss N coins (which are all biased with probability 0.6 for heads)
 and we are interested in the probability of at least one of them
 landing on heads"
 
@@ -74,7 +80,7 @@ landing on heads"
     ;; C is a coin, and
     ;; C lands heads (there's only a 60% chance of that)
     (pb-and (fact coin C)
-         (fact lands_heads C)))
+            (fact lands_heads C)))
    
    (implies
     ;; There has been at least one heads
@@ -86,6 +92,7 @@ landing on heads"
 
 ;; j:first-order-coin rewritten
 (defun probabilistic-clause-coin ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/probabilistic-clause-coin.problog"
   (interactive)
   (problog-play-or-display
 
@@ -112,7 +119,9 @@ landing on heads"
    (query someHeads)))
 
 (defun probabilistic-burglary ()
-  "Bayesian networks in ProbLog using the famous Earthquake example.
+  "e:/volumes/home/shane/notes/ws/problog/scratch/earthquake.problog
+
+Bayesian networks in ProbLog using the famous Earthquake example.
 
 In this example, we have a chance that a burglary has happened,
 and a chance that an earthquake has happened,
@@ -147,10 +156,10 @@ and those rules
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
    (prules alarm
-          ;;  3 different rules for what triggers the alarm
-          (burglary earthquake p_alarm1)
-          (burglary +earthquake p_alarm2)
-          (+burglary earthquake p_alarm3))
+           ;;  3 different rules for what triggers the alarm
+           (burglary earthquake p_alarm1)
+           (burglary +earthquake p_alarm2)
+           (+burglary earthquake p_alarm3))
 
    ;; The query and evidence functions are for clauses.
    ;; It adjusts the probability to make it 100%
@@ -191,6 +200,7 @@ and those rules
    (query p_alarm3)))
 
 (defun probabilistic-burglary-using-pclauses ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/earthquake-probabilistic-clauses.problog"
   (interactive)
   (problog-play-or-display
 
@@ -207,10 +217,10 @@ and those rules
    ;; - if there is only a burglary, it rings with probability 0.8;
    ;; - if there is only an earthquake, it rings with probability 0.1;
    (prules alarm
-          ;;  3 different rules for what triggers the alarm
-          (0.9 burglary earthquake)
-          (0.8 burglary +earthquake)
-          (0.1 +burglary earthquake))
+           ;;  3 different rules for what triggers the alarm
+           (0.9 burglary earthquake)
+           (0.8 burglary +earthquake)
+           (0.1 +burglary earthquake))
 
    ;; The query and evidence functions are for clauses.
    ;; It adjusts the probability to make it 100%
@@ -239,6 +249,8 @@ and those rules
    (query earthquake)))
 
 (defun probabilistic-burglary-using-firstorder-logic ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/earthquake-firstorder.problog"
+  
   (interactive)
   (problog-play-or-display
 
@@ -302,7 +314,9 @@ and those rules
    (query earthquake)))
 
 (defun probabilistic-burglary-using-annotated-disjunctions ()
-  "Since the random variables in the Bayesian
+  "e:/volumes/home/shane/notes/ws/problog/scratch/annotated-disjunctions-earthquake.problog
+
+Since the random variables in the Bayesian
 network are all Boolean, we only need a single
 literal in the head of the rules.
 
