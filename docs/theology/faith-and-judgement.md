@@ -7941,6 +7941,8 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     Everything is put in subjection under Jesus and in subjection under Father God:
     
     > **I Corinthians 15:24-28** - Then comes the end, when he delivers the kingdom to God the Father after destroying every rule and every authority and power. For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.
+    
+    [Victor's Crown - Darlene Zschech {Official Live Video} - YouTube](https://www.youtube.com/watch?v=_2nBOGA6X2g&list=RDurnl_qYQ9l0&index=3)
 
 
 ### The Kingdom of Heaven - is a kingdom of servants
@@ -14897,8 +14899,10 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 
 ## For one's work to stand the test of fire
 
+It should be:
+
 -   For God's Glory
--   Obedience to the Word of God
+-   In obedience to the Word of God
 -   Working in the power of **the Holy Spirit**
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -14906,39 +14910,19 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 
 <colgroup>
 <col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">God's telephone number</th>
-</tr>
-</thead>
 
-<tbody>
-<tr>
-<td class="org-left"><b>Jeremiah 33:3</b> - Call to me and I will answer you, and will tell you great and hidden things that you have not known. (ESV)</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
 <col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
+<th scope="col" class="org-left">God's telephone number</th>
 <th scope="col" class="org-left">The password</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
+<td class="org-left"><b>Jeremiah 33:3</b> - Call to me and I will answer you, and will tell you great and hidden things that you have not known. (ESV)</td>
 <td class="org-left"><b>Psalms 100:4</b> -  Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!  (ESV)</td>
 </tr>
 </tbody>
@@ -14974,11 +14958,11 @@ It's obedience which leads to righteousness, even the righteousness of faith.
     8  In Jesus Christ's name I pray,
     9  AMEN!!
 
-> -   **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
+> **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
 
-> -   **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
+> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
 
-> -   **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
+> **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
 > **Hebrews 13:20-21** - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, equip you with everything good that you may do his will, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
 
