@@ -102,6 +102,22 @@
                      ,@f)))))
 (defalias 'pfacts 'problog-pfacts)
 
+(defmacro problog-afacts (&rest afacts)
+  "afact: probability name-or-func-call &rest parameters
+
+(afacts
+    ;; Suppose there is a burglary in our house with probability 0.7
+    ;; and an earthquake with probability 0.2.
+    (burglary 0.7)
+    (earthquake 0.2))
+"
+  (apply 'e/awk1
+         (cl-loop for f in afacts collect
+                  (eval
+                   `(problog-afact
+                     ,@f)))))
+(defalias 'afacts 'problog-afacts)
+
 (defun problog-function-sexp-to-string (e)
   (cond ((consp e)
          (cond
@@ -322,6 +338,8 @@
    ))
 
 (defmacro problog-play-or-display (&rest body)
+  "Normally, generate and run the problog, and display the results.
+With C-u, show the problog code"
   `(if (>= (prefix-numeric-value current-prefix-arg) 4)
        (problog-display ,@body)
      (problog-play ,@body)))

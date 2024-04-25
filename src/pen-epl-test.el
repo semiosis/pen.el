@@ -595,6 +595,43 @@ first number is even and the second odd.
    (query (odd _))
    (query (even _))))
 
+(defun problog-getting-wet ()
+  "e:/volumes/home/shane/notes/ws/problog/scratch/getting-wet.problog
+
+Calculate the probability of getting wet
+given the probabilities for rain and the
+probabilities that someone brings an umbrella:
+"
+  (interactive)
+  (problog-play-or-display
+
+   (afacts
+    (0.4 rain weekday)
+    (0.9 rain weekend)
+    (0.8 umbrella_if_rainy Day)
+    (0.2 umbrella_if_dry Day))
+
+   ;; The second die is weighted
+   (pb-or (afact 0.15 one 2)
+          (afact 0.15 two 2)
+          (afact 0.15 three 2)
+          (afact 0.15 four 2)
+          (afact 0.15 five 2)
+          (afact 0.25 six 2))
+
+   (rules (umbrella Day)
+          ;;  3 different rules for what triggers the alarm
+          ((rain Day))
+          ((not (umbrella Day))))
+   
+   (rules (wet X)
+          ((rain Day))
+          (( Day)))
+
+   ;; What was the chance of there being a burglary?
+   (query (odd _))
+   (query (even _))))
+
 ;; A progn
 (defun problog-model-burglary-test ()
   (interactive)
