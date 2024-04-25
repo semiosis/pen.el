@@ -148,6 +148,16 @@ It's actually a faith-based gospel, and the works are a gift. So believing, obed
 
 > **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
 
+Jesus is the vine. We can do nothing without Jesus working through us. We just have to be a believing, willing, obedient vessel for Him:
+
+> **John 15:4** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. (ESV)
+
+That obedience in may, for example, look like proclaim the excellencies of him who called you out of darkness into his marvelous light:
+
+> **Luke 8:39** - Return to your home, and declare how much God has done for you. And he went away, proclaiming throughout the whole city how much Jesus had done for him. (ESV)
+
+> **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may <ins>proclaim the excellencies of him who called you out of darkness into his marvelous light.</ins> (ESV)
+
 Therefore, we teach people to both believe and to obey the Gospel. When we obey Jesus' commandments it's actually Jesus working in and through us. We want Jesus to be able to carry out work in us, so we obey Him - our will and God's will come into alignment when we obey Jesus' commandments.
 
 In Christ Jesus, through faith in Him (through trusting Him, believing Him, believing in Him and obeying Him), we have Jesus as our righteousness, and sanctification and redemption:
@@ -446,6 +456,8 @@ Jesus' act of obedience leads to:
 
 > **Romans 5:18** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. (ESV)
 
+> **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. (ESV)
+
 We are saved from the wrath of God by the life of Jesus Christ. I think that's in part saying that the life of Jesus helps us to repent from sin:
 
 > **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
@@ -457,6 +469,20 @@ We need to obey Jesus to have the life:
 Being saved by Him I think involves us becoming obedient, and faithfully obeying Jesus Christ our Lord:
 
 > **Ephesians 5:5-10** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them; for at one time you were darkness, but now you are light in the Lord. Walk as children of light (for the fruit of light is found in all that is good and right and true), and try to discern what is pleasing to the Lord.
+
+Eternal life is **in** Jesus:
+
+> **Romans 6:23** - For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+
+> **I John 5:11** - And this is the testimony, that God gave us eternal life, and this life is in his Son. (ESV)
+
+We receive / walk into the eternal life through faith in Jesus:
+
+> **John 10:27-28** - My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. (ESV)
+
+If you believe Jesus' words and believe God:
+
+> **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
 
 
 ## Disobedience is sin
@@ -840,7 +866,7 @@ He's the image of God:
 
 > **Colossians 1:15** - He is the image of the invisible God, the firstborn of all creation. (ESV)
 
-[Let It Be Christ - The Stations - YouTube](https://www.youtube.com/watch?v=urnl_qYQ9l0&list=RDurnl_qYQ9l0&start_radio=1)
+[Let It Be Christ - The Sations - YouTube](https://www.youtube.com/watch?v=urnl_qYQ9l0&list=RDurnl_qYQ9l0&start_radio=1)
 
 
 ## Belief
@@ -3849,6 +3875,8 @@ God's common grace extends to even the evil:
 
 > **Matthew 5:44-45** - But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. (ESV)
 
+[Mercies {New Every Morning} {Live from Trafalgar Square} - Matt Redman - YouTube](https://www.youtube.com/watch?v=TYyZCCs5bJc&list=RDurnl_qYQ9l0&index=12)
+
 We are meant to exercise common grace to other people.
 
 > **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
@@ -4103,6 +4131,21 @@ We must live under law of God:
 Christians are under the law of Christ, which is within the law of God:
 
 > **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
+
+A result of abiding by the law of God is that people will love God and one another. On the other hand, not abiding in the law of God will result in people's love growing cold:
+
+> 
+> 
+> **Matthew 24:12** - And because lawlessness will be increased, the love of many will grow cold. (ESV)
+
+
+### Love is defined by Jesus
+
+[The New Commandment of Christ: 'Love One Another As I Have Loved You' | Desiring God](https://www.desiringgod.org/messages/the-new-commandment-of-christ-love-one-another-as-i-have-loved-you)
+
+We must love (not just any way you believe it's defined) but in the same way that Jesus loved us:
+
+> **John 13:34** - A new commandment I give to you, that you **love one another: just as I have loved you**, you also are to love one another. (ESV)
 
 
 ### Christians are not <ins>under</ins> the Mosaic law because **we are under Christ's law**, but we don't despise the Torah, nor annul it, nor teach others to annul it
@@ -8233,6 +8276,8 @@ Stopping sinning is important from either angle.
 Sin leads to death:
 
 > **Proverbs 6:32** - He who commits adultery lacks sense; he who does it destroys himself. (ESV)
+
+> **John 5:14** - Afterward Jesus found him in the temple and said to him, See, you are well! Sin no more, that nothing worse may happen to you. (ESV)
 
 > **Ezekiel 18:20** - The soul who sins shall die. The son shall not suffer for the iniquity of the father, nor the father suffer for the iniquity of the son. The righteousness of the righteous shall be upon himself, and the wickedness of the wicked shall be upon himself. (ESV)
 
@@ -13060,6 +13105,51 @@ Even our bodies will be raised imperishable:
 > **I Corinthians 15:52** - in a moment, in the twinkling of an eye, at the last trumpet; for the trumpet will sound, and the dead will be raised imperishable, and we will be changed.
 
 
+# We're not called to agree with sinners but to show them the light
+
+
+## Jesus' company with sinners was to bring them to repentance, and from darkness to light
+
+> **Mark 2:17** - And when Jesus heard it, he said to them, Those who are well have no need of a physician, but those who are sick. I came not to call the righteous, but sinners. (ESV)
+
+> **Luke 15:2** - And the Pharisees and the scribes grumbled, saying, This man receives sinners and eats with them. (ESV)
+
+> **Matthew 9:10-13** - And as Jesus reclined at table in the house, behold, many tax collectors and sinners came and were reclining with Jesus and his disciples. And when the Pharisees saw this, they said to his disciples, Why does your teacher eat with tax collectors and sinners? But when he heard it, he said, Those who are well have no need of a physician, but those who are sick. Go and learn what this means, I desire mercy, and not sacrifice. For I came not to call the righteous, but sinners. (ESV)
+
+
+## We must disagree with evil, and show people the light of the Gospel
+
+> **Proverbs 4:14-15** - Do not enter the path of the wicked, and do not walk in the way of the evil. Avoid it; do not go on it; turn away from it and pass on. (ESV)
+
+> **Psalms 1:1-4** - Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers; but his delight is in the law of the LORD, and on his law he meditates day and night. He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither. In all that he does, he prospers. The wicked are not so, but are like chaff that the wind drives away. (ESV)
+
+> **I Peter 4:3-4** - The time that is past suffices for doing what the Gentiles want to do, living in sensuality, passions, drunkenness, orgies, drinking parties, and lawless idolatry. With respect to this they are surprised when you do not join them in the same flood of debauchery, and they malign you; (ESV)
+
+> **Ephesians 5:11** - Take no part in the unfruitful works of darkness, but instead expose them. (ESV)
+
+
+### Friendship with the world is emnity to God
+
+[Why is Friendship with the World Enmity with God? {James 4:4} - InspiredWalk.com](https://www.inspiredwalk.com/11273/why-is-friendship-with-the-world-enmity-with-god-james-44)
+
+> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+
+> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. (ESV)
+
+> **I Corinthians 5:10** - not at all meaning the sexually immoral of this world, or the greedy and swindlers, or idolaters, since then you would need to go out of the world. (ESV)
+
+> **II Corinthians 4:4** - In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. (ESV)
+
+> **John 15:18** - If the world hates you, know that it has hated me before it hated you. (ESV)
+
+> **John 15:19** - If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. (ESV)
+
+
+### We must desire to live a godly life in Christ Jesus and that goes against the pattern of the world
+
+> **II Timothy 3:12** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, (ESV)
+
+
 # Commandments of God
 
 
@@ -13288,6 +13378,11 @@ Those who proclaim the gospel should get their living by the gospel:
     -   gentleness.
 
 > **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
+
+
+## Do not be unequally yoked with unbelievers
+
+> **II Corinthians 6:14** - Do not be unequally yoked with unbelievers. For what partnership has righteousness with lawlessness? Or what fellowship has light with darkness? (ESV)
 
 
 # godliness

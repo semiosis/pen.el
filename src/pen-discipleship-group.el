@@ -411,7 +411,7 @@
                           (str2lines (d-group-get-weekly-scripture-memory-ot week))
                           (str2lines (d-group-get-weekly-reading-ot week)))
          collect
-         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " | " (d-group-linkify-bible-verse-ref (fourth row)) " | " (d-group-linkify-bible-verse-ref (fifth row)) " |")))
+         (concat "| " (d-group-linkify-bible-verse-ref (car row) t) " | " (d-group-linkify-bible-verse-ref (cadr row)) " | " (d-group-linkify-bible-verse-ref (third row)) " | " (d-group-linkify-bible-verse-ref (fourth row) t) " | " (d-group-linkify-bible-verse-ref (fifth row)) " |")))
   ;; (pen-yas-expand-string "| [[sh:bible-read-passage nasb `(d-group-get-weekly-scripture-memory-nt)`]] | [[sh:bible-read-passage nasb `(d-group-get-weekly-reading)`]] |")
   )
 

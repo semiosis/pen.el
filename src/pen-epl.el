@@ -38,6 +38,7 @@
      (problog-sentencify
       (problog-function-sexp-to-string name-or-func-call)))))
 (defalias 'head 'problog-fact)
+(defalias 'fact 'problog-fact)
 
 (defmacro problog-pfact (name-or-func-call &optional probability &rest parameters)
   "Probabilistic fact"
@@ -216,6 +217,7 @@
     " :- "
     (problog-chomp ,rhs-facts)))
 (defalias 'implies 'problog-implies)
+(defalias 'clause 'problog-implies)
 
 (defmacro problog-rules (head-name &rest rule-predicates-lists)
   ;; (setq head-name (str head-name))

@@ -611,18 +611,20 @@ probabilities that someone brings an umbrella:
     (0.8 umbrella_if_rainy Day)
     (0.2 umbrella_if_dry Day))
 
-   ;; The second die is weighted
-   (pb-or (afact 0.15 one 2)
-          (afact 0.15 two 2)
-          (afact 0.15 three 2)
-          (afact 0.15 four 2)
-          (afact 0.15 five 2)
-          (afact 0.25 six 2))
-
    (rules (umbrella Day)
           ;;  3 different rules for what triggers the alarm
           ((rain Day))
           ((not (umbrella Day))))
+
+   (implies
+    (fact (umbrella Day))
+    (pb-or (fact rain Day)
+           (fact umbrella_if_rainy Day)))
+
+   ;; This should work
+   (rule (umbrella Day)
+         (or (not (rain Day))
+             (umbrella_if_dry Day)))
    
    (rules (wet X)
           ((rain Day))
