@@ -152,7 +152,7 @@ Jesus is the vine. We can do nothing without Jesus working through us. We just h
 
 > **John 15:4** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. (ESV)
 
-That obedience in may, for example, look like proclaim the excellencies of him who called you out of darkness into his marvelous light:
+That obedience may, for example, look like proclaiming the excellencies of him who called you out of darkness into his marvelous light:
 
 > **Luke 8:39** - Return to your home, and declare how much God has done for you. And he went away, proclaiming throughout the whole city how much Jesus had done for him. (ESV)
 
@@ -401,6 +401,8 @@ And we are justified and have peace with God through our Lord Jesus Christ, who 
 
 > **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. (ESV)
 
+Long before we ever believed in / obeyed Jesus, God had chosen us to believe in Him and to take part in His holy calling:
+
 > **II Timothy 1:9** - who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, (ESV)
 
 > **II Timothy 1:13** - Follow the pattern of the sound words that you have heard from me, in the faith and love that are in Christ Jesus. (ESV)
@@ -480,9 +482,15 @@ We receive / walk into the eternal life through faith in Jesus:
 
 > **John 10:27-28** - My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. (ESV)
 
-If you believe Jesus' words and believe God:
+If you hear Jesus' words which came from God and trust God then you have eternal life:
 
 > **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+> **John 7:16** - So Jesus answered them, My teaching is not mine, but his who sent me. (ESV)
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+> **I Timothy 6:3-4** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, (ESV)
 
 
 ## Disobedience is sin
@@ -946,7 +954,7 @@ Jesus' teaching is extremely important for Christians to abide in. Jesus' teachi
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-> **I Timothy 6:3** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, (ESV)
+> **I Timothy 6:3-4** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, (ESV)
 
 > **Colossians 3:16** - Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. (ESV)
 
