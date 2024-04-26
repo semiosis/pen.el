@@ -4279,13 +4279,29 @@ We obey the Truth. We obey Jesus Christ. We obey God. We believe and trust God, 
 
 > **I Peter 1:22** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart,
 
+Even belief must be in the heart:
+
+> **Romans 10:10**- For with the heart one believes and is justified, and with the mouth one confesses and is saved. (ESV)
+
+
+### Impurity lies the heart
+
+> **Matthew 15:19** - For out of the heart come evil thoughts, murder, adultery, sexual immorality, theft, false witness, slander. (ESV)
+
 > **Matthew 5:28** - But I say to you that everyone who looks at a woman with lustful intent has **already committed adultery with her in his heart**.
 
+Yes, adultery includes looking at pornography, and fantasizing over it. Yes, adultery includes looking at AI-generated pornography as well.
+
 > **Revelation of John 2:23** - and I will strike her children dead. And all the churches will know that I am **he who searches mind and heart**, and I will give to each of you as your works deserve.
+
+Similarly, the heart can be trained in greed, always looking to make more money from people. That's sinful thinking too:
 
 > **II Peter 2:14** - They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have **hearts trained in greed**. Accursed children!
 
 > **II Corinthians 5:11-12** - Therefore, knowing the fear of the Lord, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. We are not commending ourselves to you again but giving you cause to boast about us, so that you may be able to answer those who boast about outward appearance and not about what is in the heart.
+
+
+### Purifying the heart
 
 We are given the Holy Spirit. The Holy Spirit cleanses our hearts by faith. As we obey Jesus, going against the resistance, our hearts are being cleansed:
 
