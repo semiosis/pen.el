@@ -9971,6 +9971,11 @@ Jesus' servants are given mercy by Jesus and they also show mercy to others.
 
 ## Marriage should not be forbidden
 
+If you know why I'm writing this, there's some people I have already forgiven about stuff to do with me and a certain marriage proposal.
+But I have forgiven them <3 Besides, I know I was pretty messed up at the time,
+so actually Jesus saved me and I just want people who come to read this to come to know the Lord Jesus for themself.
+I forgive everyone.
+
 > **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the <ins>insincerity of liars whose consciences are seared, who forbid marriage</ins> and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For <ins>everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer.</ins> If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
 
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
