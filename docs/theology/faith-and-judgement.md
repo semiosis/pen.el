@@ -3860,6 +3860,26 @@ Sinners:
 > **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death. (ESV)
 
 
+### carnal, fleshly things, greed and self-indulgence
+
+> **James 5:5** - You have lived on the earth in luxury and in self-indulgence. You have fattened your hearts in a day of slaughter. (ESV)
+
+> **Matthew 23:25-26** - Woe to you, scribes and Pharisees, hypocrites! For you clean the outside of the cup and the plate, but inside they are full of greed and self-indulgence. You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. (ESV)
+
+
+### unnatural desire
+
+> **I Corinthians 10:8-9** - We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
+> **Colossians 2:23** - These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. (ESV)
+
+Defiling passion <ins>defiles</ins>:
+
+> **II Peter 2:10** - and especially those who indulge in the lust of defiling passion and despise authority. Bold and willful, they do not tremble as they blaspheme the glorious ones, (ESV)
+
+> **Jude 1:7** - just as Sodom and Gomorrah and the surrounding cities, which likewise indulged in sexual immorality and pursued unnatural desire, serve as an example by undergoing a punishment of eternal fire. (ESV)
+
+
 # If the world is encouraging you, you're probably in falsehood or taking the wide road
 
 > **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
@@ -6231,7 +6251,7 @@ Abraham's <ins>obedience</ins> which he had as part of his faith led him to <ins
 
 > **Hebrews 4:11** - Let us therefore strive to enter that rest, so that no one may fall by the same sort of disobedience.
 
-And <ins>willing</ins> to do the will of God must become '<sub>doing</sub>\_'.
+And <ins>willing</ins> to do the will of God must become <ins>'doing'</ins>.
 
 > **I John 2:17** - And the world is passing away along with its desires, but **whoever does the will of God abides forever**.
 
