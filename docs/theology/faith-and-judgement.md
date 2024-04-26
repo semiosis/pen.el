@@ -99,7 +99,12 @@ Out with the old selfish self and in with the new selflessly loving, and obedien
 
 > **I Corinthians 7:19** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
 
-That's because God gives us a new spirit to obey Him:
+There is a change in our lives:
+
+> **Ephesians 2:3-7** - among whom we all **once lived** in the passions of our flesh, carrying out the desires of the body and the mind, and **were** <ins>by nature children of wrath, like the rest of mankind</ins>. But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, <ins>made us alive together with Christ</ins> **by grace you have been saved** and raised us up with him and seated us with him in the heavenly places in Christ Jesus, so that in the coming ages he might show the immeasurable riches of his grace in kindness toward us in Christ Jesus. (ESV)
+
+
+### That's because God gives us a new spirit to obey Him:
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
@@ -281,9 +286,9 @@ Serve God:
 
 > **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the LORD commanded you, to love the LORD your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul. (ESV)
 
-Love God so that we may live:
+Love God [from the heart and soul] so that we may live:
 
-> **Deuteronomy 30:6** - And the LORD your God will circumcise your heart and the heart of your offspring, so that you will love the LORD your God with all your heart and with all your soul, that you may live. (ESV)
+> **Deuteronomy 30:6** - And the LORD your God will circumcise your heart and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
 
 Love your neighbour as yourself:
 

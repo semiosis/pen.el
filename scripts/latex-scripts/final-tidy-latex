@@ -1,0 +1,16 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+(
+exec 0</dev/null
+
+if test -f "$last_arg"; then
+    sed -i "s/\\\\begin{tabular}{ll}/\\\\begin{tabular}{p{0.45\\\\linewidth} | p{0.45\\\\linewidth}}/" "$last_arg"
+    sed -i "s/\\\\begin{tabular}{lll}/\\\\begin{tabular}{p{0.30\\\\linewidth} | p{0.30\\\\linewidth} | p{0.30\\\\linewidth}}/" "$last_arg"
+    sed -i "s/\\\\begin{tabular}{llll}/\\\\begin{tabular}{p{0.23\\\\linewidth} | p{0.23\\\\linewidth} | p{0.23\\\\linewidth} | p{0.23\\\\linewidth}}/" "$last_arg"
+fi
+)
