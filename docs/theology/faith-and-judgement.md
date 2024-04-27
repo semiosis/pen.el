@@ -2488,13 +2488,20 @@ Jesus' sheep follow Jesus. Jesus knows them:
     5   disciple):--follow, reach.
     6   see GREEK for 1
 
-People who do not serve the Lord Jesus, and do not obey Jesus, are deceivers. May the grace of our Lord Jesus be with those who serve Him, and common grace even to the one who hasn't arrived [yet] at serving Jesus.
+The gospel teaches us to serve the Lord Jesus.
+Those who teach others that the gospel does not, are deceivers, and they do not obey Jesus.
+
+> **Matthew 7:16** - You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? (ESV)
 
 > **I Peter 5:14** - Greet one another with the kiss of love. Peace to all of you who are in Christ.
 
-> **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For <ins>such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
+The gospel teaches us to serve the Lord Jesus.
+
+> **Romans 16:17-20** - I appeal to you, brothers, to watch out for <ins>those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them.</ins> For **such persons do not serve our Lord Christ**, <ins>but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive.</ins> For <ins>your obedience is known to all</ins>, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. The God of peace will soon crush Satan under your feet. <ins>The grace of our Lord Jesus Christ be with you.</ins>
 
 > **II Chronicles 7:14** - if my people who are called by my name <ins>humble themselves,</ins> and <ins>pray and seek my face</ins> and <ins>turn from their wicked ways,</ins> then <ins>I will hear from heaven and will forgive their sin and heal their land.</ins> (ESV)
+
+> **II Corinthians 13:14** - The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all. (ESV)
 
 
 ### Disobedience
