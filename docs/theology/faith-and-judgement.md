@@ -1894,14 +1894,30 @@ We need <ins>all</ins> of these:
 
 > **II Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
 
-Repentance:
+Repentance leads to belief and obedience to Jesus:
 
 -   Someone who has <ins>only belief in the gift of grace and no obedience to Jesus</ins> (which is effectively hating Jesus) <ins>must repent</ins> and come to have an obedient heart.
+    -   **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 -   Someone who has <ins>only obedience to Jesus' precepts but unbelieving and unsubmissive</ins> to the righteousness of God <ins>must repent</ins> and come to have a believing heart.
+    -   **John 20:27-28** - Then he said to Thomas, Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe. Thomas answered him, My Lord and my God!
 
-> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+Jesus' sheep hear His voice and they follow Him:
 
-If people from either category do not repent, then beware because God has the ability and jurisdiction to <ins>cast that person out - graft them out of Christ.</ins> Also, let's not become proud, but stand in awe.
+> **John 10:26-29** - but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. (ESV)
+
+We love Jesus by keeping His commandments:
+
+> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me <ins>will be loved by my Father,</ins> and I will love him and manifest myself to him. (ESV)
+
+Nothing will be able to separate us from the love of God in Christ Jesus our Lord. He has to be our Lord:
+
+> **Romans 8:38-39** - For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the **love of God in Christ Jesus our Lord**. (ESV)
+
+I repeat this:
+
+> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me <ins>will be loved by my Father,</ins> and I will love him and manifest myself to him. (ESV)
+
+We want to abide in God's love through following Jesus' commandments, and then nothing can separate us from His love.
 
 God draws the person to Jesus:
 
@@ -1938,9 +1954,11 @@ You **must** obey:
 
 > **John 15:1-6** - I am the true vine, and my Father is the vinedresser.  Every branch of mine that does not bear fruit he takes away, and every branch that does bear fruit he prunes, that it may bear more fruit.  Already you are clean because of the word that I have spoken to you.  Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.  I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. <ins>If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned.</ins>
 
-We **must** put a stop to sin:
+We **must** put a stop to sin - it's for our own good:
 
 > **Ezekiel 18:20-21** - The soul who sins shall die. The son shall not suffer for the iniquity of the father, nor the father suffer for the iniquity of the son. The righteousness of the righteous shall be upon himself, and the wickedness of the wicked shall be upon himself. But if a wicked person turns away from all his sins that he has committed and keeps all my statutes and does what is just and right, he shall surely live; he shall not die. (ESV)
+
+> **Romans 6:23** - For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
 > **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
 
@@ -2838,7 +2856,7 @@ But I am still seeking hearing that acknowledgement by continuing in Jesus' word
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
 Therefore, I will continue to endeavour to keep Jesus' commandments:
 
-> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:21** - Whoever has my commandments and **keeps them**, **he it is who loves me**. And he who loves me <ins>will be loved by my Father,</ins> and I will love him and manifest myself to him. (ESV)
 
 So it's really important that I remain faithful to Jesus and do my best to not compromise or be swayed by people who deter me from keeping Jesus' commandments.
 
@@ -5922,7 +5940,7 @@ Speak the truth and do not sin:
 
 The outcome of being set free from sin and becoming a slave to God is receiving the gift of eternal life:
 
-> **Romans 8:33** -  Who shall bring any charge against God's elect?  It is God who justifies.  (ESV)
+> **Romans 8:33** -  **Who shall bring any charge against God's elect?**  It is God who justifies.  (ESV)
 
 > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves to God, the fruit you reap leads to holiness, and the outcome is eternal life. For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. (BSB)
 
@@ -12221,7 +12239,7 @@ God will be the judge of who has had faith in Jesus, and who has obeyed Him.
 
 ### God is the one who justifies
 
-> **Romans 8:33** - Who shall bring any charge against God's elect? It is God who justifies.
+> **Romans 8:33** - **Who shall bring any charge against God's elect?** It is God who justifies.
 
 > **Romans 8:30** - And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified. (ESV)
 
@@ -13706,7 +13724,7 @@ Although God chooses who He has mercy on, we should still have a godly and humbl
 
 We should be confident that God will continue to take care of us:
 
-> **Romans 8:29-39**- For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified. What then shall we say to these things? If God is for us, who can be against us? He who did not spare his own Son but gave him up for us all, how will he not also with him graciously give us all things? Who shall bring any charge against God's elect? It is God who justifies. Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us. Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword? As it is written, For your sake we are being killed all the day long; we are regarded as sheep to be slaughtered. No, in all these things we are more than conquerors through him who loved us. For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.
+> **Romans 8:29-39**- For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. And those whom he predestined he also called, and those whom he called he also justified, and those whom he justified he also glorified. What then shall we say to these things? If God is for us, who can be against us? He who did not spare his own Son but gave him up for us all, how will he not also with him graciously give us all things? **Who shall bring any charge against God's elect?** It is God who justifies. Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us. Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword? As it is written, For your sake we are being killed all the day long; we are regarded as sheep to be slaughtered. No, in all these things we are more than conquerors through him who loved us. For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.
 
 God has good plans for us and we should submit to His wisdom, and obey Him:
 
