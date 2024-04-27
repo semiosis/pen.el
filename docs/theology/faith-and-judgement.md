@@ -720,7 +720,8 @@ Even having faith in God through faith in Jesus is obedience according to `Roman
 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
 
-Therefore, I assert that there's no **eternal** security for those who are not willing to obey Jesus, or to turn away from their sin.
+We must go to Jesus to receive eternal life.
+
 Our obedience is penitent, not perfect.
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
@@ -1492,20 +1493,6 @@ Faith is both believing and obedient, even faith in the heart:
 <td class="org-left">II John 1:6</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">this is love, that we walk according to his commandments</td>
-</tr>
-
-
-<tr>
-<td class="org-left">John 5:40</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-
-<tr>
-<td class="org-left">John 7:37-38</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 
@@ -5488,9 +5475,7 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 
 > **I John 2:4** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
 
-Even the demons are subject to the authority of Jesus Christ.
-
-So are you are demon or are you one of Jesus' sheep?
+Even the demons are subject to the authority of Jesus Christ, but they certainly don't have a response of love for God.
 
 > **John 6:70** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you is a devil. (ESV)
 
