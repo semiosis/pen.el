@@ -3828,6 +3828,11 @@ Sinners:
 > **Isaiah 32:6** - For the fool speaks folly, and his heart is busy with iniquity, to practice ungodliness, to utter error concerning the LORD, to leave the craving of the hungry unsatisfied, and to deprive the thirsty of drink. (ESV)
 
 
+### Pride, debauchery, greed
+
+> **Ezekiel 16:49-58** - Behold, this was the guilt of your sister Sodom: she and her daughters had pride, excess of food, and prosperous ease, but did not aid the poor and needy. They were haughty and did an abomination before me. So I removed them, when I saw it. Samaria has not committed half your sins. You have committed more abominations than they, and have made your sisters appear righteous by all the abominations that you have committed. Bear your disgrace, you also, for you have intervened on behalf of your sisters. Because of your sins in which you acted more abominably than they, they are more in the right than you. So be ashamed, you also, and bear your disgrace, for you have made your sisters appear righteous. I will restore their fortunes, both the fortunes of Sodom and her daughters, and the fortunes of Samaria and her daughters, and I will restore your own fortunes in their midst, that you may bear your disgrace and be ashamed of all that you have done, becoming a consolation to them. As for your sisters, Sodom and her daughters shall return to their former state, and Samaria and her daughters shall return to their former state, and you and your daughters shall return to your former state. Was not your sister Sodom a byword in your mouth in the day of your pride, before your wickedness was uncovered? Now you have become an object of reproach for the daughters of Syria and all those around her, and for the daughters of the Philistines, those all around who despise you. You bear the penalty of your lewdness and your abominations, declares the LORD. (ESV)
+
+
 ### Pride in self and lack of humility towards God
 
 > **Psalms 36:2** - For he flatters himself in his own eyes that his iniquity cannot be found out and hated. (ESV)
@@ -4322,7 +4327,7 @@ I believe the following indicates the law exists pretty much forever - there pro
 
 > **Psalms 119:160** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
 
-> **John 17:17-19** - Sanctify them in the truth; Your word is truth. As you sent me into the world, so I have sent them into the world. And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
+> **John 17:17-19** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
 
 Those who are in the faith <ins>can't do anything against the truth</ins>.
 
@@ -4877,7 +4882,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **Psalms 119:160** - The sum of Your word is truth, And every one of Your righteous ordinances is everlasting. (ESV)
     
-    > **John 17:17-19** - Sanctify them in the truth; Your word is truth. As you sent me into the world, so I have sent them into the world. And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
+    > **John 17:17-19** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
     
     Jesus is eternally our Great High Priest. I believe this says Father God has sworn and will not change His mind.
     
@@ -4953,6 +4958,15 @@ This is what we must come to know in truth - that Jesus came from Father God, an
 We are being prepared to be presented to Jesus:
 
 > **Colossians 1:21-22** - And you, who <ins>once were alienated</ins> and **hostile in mind, doing evil deeds**, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, (ESV)
+
+
+## Be corrected by the truth
+
+> **John 17:17-19** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
+
+As we are have faith in Jesus, even obeying Him to go out into the world, we are also sanctified by the Truth, as Jesus has consecrated Himself.
+
+We are healed, corrected, sanctified by God's word.
 
 
 ## Repent of evil deeds, feelings and thoughts
