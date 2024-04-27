@@ -682,9 +682,11 @@ Work out (**katergazomai**) means here to perform your salvation by work (which 
     5   see GREEK for 2596
     6   see GREEK for 2038
 
-So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction.
+So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction:
 
-When we are believing in Jesus Christ's finished work and obeying Jesus, obeying His commandments, it is actually God who is working in us:
+> **Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+
+When we are believing in Jesus Christ's finished work and obeying Jesus, obeying His commandments, it is actually God who is working in us, transforming us, sanctifying us, restoring us:
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
@@ -702,12 +704,12 @@ We are supposed to then proclaim the excellencies of Him who has called us out o
 
 > **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may <ins>proclaim the excellencies of him who called you out of darkness into his marvelous light.</ins> (ESV)
 
-God is amazing. Because He made me born-again
-so I could come into a relationship with Him
-where I can truthfully say that I was stuck in
-my sin and God broke that sin off me through
-making me born-again, and has given me a new
-Spirit so I can walk in obedience to Him.
+> God is amazing. Because He made me born-again
+> so I could come into a relationship with Him
+> where I can truthfully say that I was stuck in
+> my sin and God broke that sin off me through
+> making me born-again, and has given me a new
+> Spirit so I can walk in obedience to Him.
 
 It's only possible through what Jesus Christ
 has achieved for us on the cross, because the blood of Jesus Christ redeems us <ins>as we abide in Him</ins>:
@@ -748,7 +750,7 @@ So the problem isn't work (even work relating to salvation) but the problem is w
 > 
 > I believe that if a person trusts and believe on God in their heart, believing that they need saving and that Jesus Christ is their Lord and that Jesus Christ died for their transgressions and was raised for their justification - that they have a hearing heart and a <ins>heart that follows Him</ins> - that they will be saved.
 
-I simply see no enmity between trusting God for justification through the finished work of the cross by Jesus Christ and trusting God by obeying Jesus Christ. I believe that is a false dichotomy.
+I simply see no enmity between trusting God for justification through the finished work of the cross by Jesus Christ and trusting God by obeying Jesus Christ. I believe that is a false dichotomy. While faith alone saves, I believe that both belief and obedience (willingness to do the will of God) are intrinsic qualities of faith.
 
 Christian love:
 
@@ -5626,6 +5628,7 @@ Faith is like Peter stepping out on the water. Faith works. But I think sometime
 
 The LORD did something similar for the Israelites when He parted the Red Sea.
 The Israelites obeyed God, and their obedience led them to sure belief.
+The Israelites were an actual part of the miracle of going through the Red Sea. By obeying God, God was sending them through the Red Sea.
 Obedience, belief and trust are all important in faith.
 
 Revelation comes as we do what God commands us:
