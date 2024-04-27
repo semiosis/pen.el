@@ -1954,9 +1954,17 @@ Coming to Jesus is the requirement for not being cast out, and coming to Jesus C
 
 > **Luke 18:16-22** - But Jesus called them to him, saying, Let the children come to me, and do not hinder them, for to such belongs the kingdom of God. Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it. And a ruler asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not commit adultery, Do not murder, Do not steal, Do not bear false witness, Honor your father and mother. And he said, All these I have kept from my youth. When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me.
 
-We must be a servant of Jesus to not be cast out. We must have obedience:
+Following Jesus may simply mean going to Him for mercy; asking Him for mercy or forgiveness:
+
+> **Hebrews 4:15-16** - For we do not have a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sin. Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need. (ESV)
+
+Jesus' sheep follow Him:
 
 > **John 12:26** - If <ins>anyone serves me, he must follow me;</ins> and <ins>where I am, there will my servant be also.</ins> If anyone serves me, the Father will honor him. (ESV)
+
+There are wandering sheep, too, sheep that aren't exactly making a bee-line:
+
+> **Isaiah 53:6** - All we like sheep have gone astray; we have turned every one to his own way; and the LORD has laid on him the iniquity of us all. (ESV)
 
 Coming to Jesus involves <ins>denying ourself</ins> and taking up our cross daily to follow Him:
 
