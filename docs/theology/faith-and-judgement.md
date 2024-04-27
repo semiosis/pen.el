@@ -1496,6 +1496,20 @@ Faith is both believing and obedient, even faith in the heart:
 
 
 <tr>
+<td class="org-left">John 5:40</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">John 7:37-38</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
 <td class="org-left">John 6:35</td>
 <td class="org-left">whoever believes in me shall never thirst</td>
 <td class="org-left"><ins>whoever comes to me</ins> shall not hunger</td>
@@ -2364,6 +2378,24 @@ We receive the spirit by getting Jesus' words into us, believing them and obeyin
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
 
+The Spirit was given after Jesus was glorified:
+
+> **John 7:37-39** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+
+Jesus was glorified and God glorified in Him when He laid down His life for us and bore much fruit:
+
+> **Luke 24:26** - Was it not necessary that the Christ should suffer these things and enter into his glory? (ESV)
+
+> **John 12:23-24** - And Jesus answered them, The hour has come for the Son of Man to be glorified. Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. (ESV)
+
+> **John 17:1** - When Jesus had spoken these words, he lifted up his eyes to heaven, and said, Father, the hour has come; glorify your Son that the Son may glorify you, (ESV)
+
+> **John 13:31** - When he had gone out, Jesus said, Now is the Son of Man glorified, and God is glorified in him. (ESV)
+
+This seems to show that to follow Jesus we must also lay our lives down for Him:
+
+> **John 13:36-38** - Simon Peter said to him, Lord, where are you going? Jesus answered him, Where I am going you cannot follow me now, but you will follow afterward. Peter said to him, Lord, why can I not follow you now? I will lay down my life for you. Jesus answered, Will you lay down your life for me? Truly, truly, I say to you, the rooster will not crow till you have denied me three times. (ESV)
+
 So to receive the Holy Spirit:
 
 -   Have faith in Jesus,
@@ -2371,6 +2403,7 @@ So to receive the Holy Spirit:
     -   obey Jesus,
 -   practice righteousness, and
     -   ask God for the Holy Spirit!
+-   lay your life down for Jesus
 
 
 ## Becoming a servant, humbling oneself and following Jesus is what we should do
