@@ -43,6 +43,10 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 # Being born-again
 
+Billy Graham really explains this quite well:
+
+-   [Born Again | Billy Graham Classic - YouTube](https://youtu.be/CGS2A1RBo00?t=650)
+
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
@@ -103,6 +107,10 @@ There is a change in our lives:
 
 > **Ephesians 2:3-7** - among whom we all **once lived** in the passions of our flesh, carrying out the desires of the body and the mind, and **were** <ins>by nature children of wrath, like the rest of mankind</ins>. But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, <ins>made us alive together with Christ</ins> **by grace you have been saved** and raised us up with him and seated us with him in the heavenly places in Christ Jesus, so that in the coming ages he might show the immeasurable riches of his grace in kindness toward us in Christ Jesus. (ESV)
 
+And eventually His commandments become unburdensome, and we're keeping them, and we have confidence we have come to know Him:
+
+> **I John 2:3** - And by this we know that we have come to know him, if we keep his commandments. (ESV)
+
 
 ### That's because God gives us a new spirit to obey Him:
 
@@ -114,7 +122,11 @@ We receive the spirit by getting Jesus' words into us, believing them and obeyin
 
 We can repent from sin as an act of obedient faith to God:
 
-> **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
+> **Jeremiah 4:4** - **Circumcise yourselves to the LORD**; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
+
+And God helps us to do that. God changes our heart to love Him, so that we will live:
+
+> **Deuteronomy 30:6** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
 
 
 ## Eventually our own will lines up with God's will
@@ -288,7 +300,7 @@ Serve God:
 
 Love God [from the heart and soul] so that we may live:
 
-> **Deuteronomy 30:6** - And the LORD your God will circumcise your heart and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
+> **Deuteronomy 30:6** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
 
 Love your neighbour as yourself:
 
@@ -1971,7 +1983,7 @@ We **must** put a stop to sin - it's for our own good:
 
 > **Romans 6:23** - For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
-> **Jeremiah 4:4** - Circumcise yourselves to the LORD; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
+> **Jeremiah 4:4** - **Circumcise yourselves to the LORD**; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
 
 So I believe that Jesus saves us by giving us of His Spirit and helping us to put sin to death, through obedient faith:
 

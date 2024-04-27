@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  27 APR 2024 15:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  27 APR 2024 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,7 +318,7 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-No file faith-and-judgement.aux.
+(.//faith-and-judgement.aux)
 \openout1 = `faith-and-judgement.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -339,6 +339,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -356,6 +357,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
+
+(.//faith-and-judgement.out) (.//faith-and-judgement.out)
 \@outlinefile=\write3
 \openout3 = `faith-and-judgement.out'.
 
@@ -1364,7 +1367,7 @@ Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
-(rerunfilecheck)             Before: 
+(rerunfilecheck)             Before: 347134F1E5CD64C4475C66EF52B787CD
 (rerunfilecheck)             After:  3C8F83EFCF9B552FA4AE604FB3E0573A.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1372,12 +1375,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21053.
  ) 
 Here is how much of TeX's memory you used:
- 10596 strings out of 494868
- 148698 string characters out of 6175714
- 261408 words of memory out of 5000000
- 14431 multiletter control sequences out of 15000+600000
+ 10735 strings out of 494868
+ 150894 string characters out of 6175714
+ 399997 words of memory out of 5000000
+ 14564 multiletter control sequences out of 15000+600000
  10411 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,9n,45p,6286b,716s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,45p,6286b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ./faith-and-judgement.pdf (389 pages).
