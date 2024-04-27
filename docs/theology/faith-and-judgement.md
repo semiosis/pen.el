@@ -2827,7 +2827,21 @@ Jehovah is God Almighty:
 
 [Exodus 6:3 Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;](https://biblehub.com/interlinear/exodus/6-3.htm)
 
-I believe that Jesus Christ **is** Jehovah. Jesus is God the Son.
+Jehovah God gave Jesus His name, Jesus Christ, Son of God:
+
+> **Matthew 1:21** - She will bear a son, and you shall call his name Jesus, for he will save his people from their sins. (ESV)
+
+> **Matthew 3:17** - and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+
+The life which God has given us is in Jesus. And by believing He is who He is, we may have life in His name:
+
+> **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing **you may have life in his name.** (ESV)
+
+Jesus says that Jehovah God gave Him His name:
+
+> **John 17:11** - And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
+
+I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
