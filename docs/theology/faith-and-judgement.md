@@ -949,7 +949,15 @@ and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm
 
 > **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
 
+Disciples of Jesus have love for one another, just the same way that Jesus loved us (with selfless love):
+
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
 > **John 12:26** - <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins> (ESV)
+
+Serving Jesus literally looks a lot like serving other people with selfless love, just as Jesus has practically defined it through His commandments and His example:
+
+> **Matthew 25:40** - And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me. (ESV)
 
 Jesus' teaching is extremely important for Christians to abide in. Jesus' teaching comes from the same God, Jehovah:
 
