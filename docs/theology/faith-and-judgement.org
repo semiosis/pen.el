@@ -6,6 +6,8 @@
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
 #+OPTIONS: toc:nil
 
+#+LATEX_COMPILER: xelatex
+
 This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
 I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
 a Bible study. I hope it spreads some light on the Scriptures.
