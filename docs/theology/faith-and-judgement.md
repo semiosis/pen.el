@@ -1104,6 +1104,30 @@ The demons have belief, but they don't have a response of love towards God:
 
 > **James 2:19** - You believe that God is one; you do well. Even the demons believe—and shudder! (ESV)
 
+In response to forgiveness, we must love:
+
+> **Luke 7:47** - Therefore I tell you, her sins, which are many, are forgiven—for she loved much. But he who is forgiven little, loves little. (ESV)
+
+He loved us first, and that is why we love:
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
+We should have a loving response to God for Him having saved us. It certainly appears that not having a loving/obedient/thankful response to God for His mercy, we may miss out on 'entering into the joy of our master':
+
+> **Matthew 25:23** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
+
+Our response might be a positive response of proclaiming to others how much God has done for them - giving God the glory:
+
+> **Luke 8:39** - Return to your home, and declare how much God has done for you. And he went away, proclaiming throughout the whole city how much Jesus had done for him. (ESV)
+
+So we want to have a response of love for Jesus:
+
+> **Luke 12:48** - But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. (ESV)
+
+Jesus is so generous that He saves people who turn out to be unthankful, but we should definitely love Jesus as a response. This story should be taken not only to see how Good God is, but also taken as a warning against unthankfulness:
+
+> **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
+
 We must know that God loved us and sent his Son to be the propitiation for our sins. We must believe:
 
 > **I John 4:10** - In **this is love**, <ins>not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.</ins>
@@ -4019,6 +4043,10 @@ God's common grace extends to even the evil:
 
 > **Matthew 5:44-45** - But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. (ESV)
 
+Jesus is so generous that He saves even unthankful people, but we should definitely love Jesus as a response. This story should be taken to see how Good God is, but also taken as a warning against unthankfulness:
+
+> **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
+
 -   **Song:** [Mercies {New Every Morning} {Live from Trafalgar Square} - Matt Redman - YouTube](https://www.youtube.com/watch?v=TYyZCCs5bJc&list=RDurnl_qYQ9l0&index=12)
 
 We are meant to exercise common grace to other people.
@@ -5666,6 +5694,10 @@ And Jesus is able to save a person out of Jesus' own will, as he resurrected Laz
 -   **Sermon:** [Where's the Arminian John Piper? - YouTube](https://www.youtube.com/watch?v=49JgVR30bLA)
 
 > **John 11:43** - When He had said these things, He cried out with a loud voice, “Lazarus, come forth.”
+
+Jesus is so generous that He saves even unthankful people, but we should definitely love Jesus as a response. This story should be taken to see how Good God is, but also taken as a warning against unthankfulness:
+
+> **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
 
 
 ### Just believe/obey Jesus to receive more faith and revelation and salvation
@@ -12483,7 +12515,7 @@ AMEN!! God is good for justifying people who are poor of spirit, and have fear o
 ## Conditional Promises In The New Testament
 
 The Sermon on the Mount from Matthew 5 may
-better be understood as describing the
+better be understood as describing the transformation that happens when we are born-again.
 
 The resources to be transformed are not in ourselves. Jesus does the transformation.
 
