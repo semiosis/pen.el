@@ -5390,7 +5390,39 @@ We should pursue Jesus Christ similarly. God commanded it.
 
 ## The type of work that is good - works done in faith
 
+We are redeemed to be purified and to perform good works:
+
+> **Titus 2:14** - who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+
+We've been created in Christ Jesus for good works:
+
+> **Ephesians 2:10** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
+
+We're not being saved by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
+
+> **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
+
+The Holy Spirit still goes to those who obey Jesus:
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
+
+It's extremely important to have a response of love for Jesus, and to do the good works which we have been created in Christ Jesus to do, but Jesus also saves people who turn out to be unthankful:
+
+> **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
+
+When we abide in Jesus by belief and obedience, we bear much fruit, but outside of Jesus, we can't actually do anything:
+
 > **John 15:5** - I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. (ESV)
+
+We don't want lazy, cowardly, disobedient faith:
+
+> **Matthew 25:24-26** - He also who had received the one talent came forward, saying, Master, I knew you to be a hard man, reaping where you did not sow, and gathering where you scattered no seed, so I was afraid, and I went and hid your talent in the ground. Here you have what is yours. But his master answered him, You wicked and slothful servant! You knew that I reap where I have not sowed and gather where I scattered no seed? (ESV)
+
+> **Luke 12:48** - But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. (ESV)
+
+As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
 Obedience is good.
 
