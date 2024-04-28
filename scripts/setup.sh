@@ -2350,9 +2350,21 @@ agi datamash
 # https://github.com/latex-lsp/texlab/releases
 # https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz
 
+# (
+# cd "$HOME/programs"
+# wget "https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz"
+# tar zxf texlab-x86_64-linux.tar.gz
+# mkw -f texlab
+# )
+# I need to compile it myself
+# because of the glibc version
+# https://github.com/latex-lsp/texlab?tab=readme-ov-file
+
+update-rust
 (
-cd "$HOME/programs"
-wget "https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz"
-tar zxf texlab-x86_64-linux.tar.gz
-mkw -f texlab
+cd ~/repos
+git clone "https://github.com/latex-lsp/texlab"
+cd texlab
+cargo build --release
+chown a+x target/release/texlab
 )
