@@ -2345,3 +2345,14 @@ make
 
 agi rs
 agi datamash
+
+# Latex language server
+# https://github.com/latex-lsp/texlab/releases
+# https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz
+
+(
+cd "$HOME/programs"
+wget "https://github.com/latex-lsp/texlab/releases/download/v5.15.0/texlab-x86_64-linux.tar.gz"
+tar zxf texlab-x86_64-linux.tar.gz
+mkw -f texlab
+)
