@@ -1886,9 +1886,11 @@ I guess that means we should become slaves of Christ! We should be overcome by C
 
 > **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? (ESV)
 
-Christ's Spirit is a spirit of adoption as sons, by whom we cry, "Abba! Father!" It's not a spirit of slavery. So with a spirit of adoption we are slaves to God:
+Christ's Spirit is a spirit of adoption as sons, by whom **we cry**, "Abba! Father!" It's not a spirit of slavery. So with a spirit of adoption we are slaves to God:
 
 > **Romans 8:13-17** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+
+Abba, Father!
 
 We must be in Christ Jesus as a new creation:
 
@@ -2946,11 +2948,15 @@ To have the Spirit of Christ is to have the Spirit of God:
 
 > **Romans 8:9-10** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. (ESV)
 
-God sends the Spirit of His Son into our heart, crying, "Abba! Father!" We experience this as our own cry. This is how we are given the assurance that we are the children of God:
+God sends the Spirit of His Son into our heart, crying, "Abba! Father!" We experience this as our own cry.
+
+This is how we are given the assurance that we are the children of God:
 
 > **Galatians 4:1-7** - I mean that the heir, as long as he is a child, is no different from a slave, though he is the owner of everything, but he is under guardians and managers until the date set by his father. In the same way we also, when we were children, were enslaved to the elementary principles of the world. But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons. And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father! So you are no longer a slave, but a son, and if a son, then an heir through God. (ESV)
 
-> **Romans 8:13-17** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+We, personally cry "Abba, Father!" We call to Father God.
+
+> **Romans 8:13-17** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom **we cry, Abba! Father!** The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
 
 -   **Sermon:** [The Spirit in Us Cries 'Abba Father': Galatians 4:1-7, Part 5 - YouTube](https://www.youtube.com/watch?v=yENsZ-Fsj4I)
 
@@ -2958,10 +2964,9 @@ I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknow
 
 > **I John 4:1-3** - Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world. By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
-As of now (18 April '24), though, I have not actually heard that confession through the Spirit that Jesus Christ has come in the flesh - just being honest,
+As of now (28 April '24), though, I have not actually heard that confession through the Spirit (as I expect to hear it) that Jesus Christ has come in the flesh - just being honest,
 
-I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to hearth in the flesh, born of the virgin Mary,
-was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand.
+I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to hearth in the flesh, born of the virgin Mary, was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand, and I pray daily to Father God.
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
@@ -8720,34 +8725,34 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Messiah would be born of a woman.</td>
 <td class="org-left">Ge 3:15</td>
-<td class="org-left">Mt 1:20 Ga 4:4</td>
+<td class="org-left">Mt 1:20, Ga 4:4</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be born in Bethlehem.</td>
 <td class="org-left">Mc 5:2</td>
-<td class="org-left">Mt 2:1 Lk 2:4-6</td>
+<td class="org-left">Mt 2:1, Lk 2:4-6</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be born of a virgin.</td>
 <td class="org-left">Is 7:14</td>
-<td class="org-left">Mt 1:22-23 Lk 1:26-31</td>
+<td class="org-left">Mt 1:22-23, Lk 1:26-31</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would come from the line of Abraham.</td>
-<td class="org-left">Ge 12:3 Ge 22:18</td>
-<td class="org-left">Mt 1:1 Rm 9:5</td>
+<td class="org-left">Ge 12:3, Ge 22:18</td>
+<td class="org-left">Mt 1:1, Rm 9:5</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be a descendant of Isaac.</td>
-<td class="org-left">Ge 17:19 Ge 21:12</td>
+<td class="org-left">Ge 17:19, Ge 21:12</td>
 <td class="org-left">Lk 3:34</td>
 </tr>
 
@@ -8762,21 +8767,21 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Messiah would come from the tribe of Judah.</td>
 <td class="org-left">Ge 49:10</td>
-<td class="org-left">Lk 3:33 Heb 7:14</td>
+<td class="org-left">Lk 3:33, Heb 7:14</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be heir to King David's throne.</td>
-<td class="org-left">2Sa 7:12-13 Is 9:7</td>
-<td class="org-left">Lk 1:32-33 Rm 1:3</td>
+<td class="org-left">2Sa 7:12-13, Is 9:7</td>
+<td class="org-left">Lk 1:32-33, Rm 1:3</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah's throne will be anointed and eternal.</td>
-<td class="org-left">Ps 45:6-7 Da 2:44</td>
-<td class="org-left">Lk 1:33 Heb 1:8-12</td>
+<td class="org-left">Ps 45:6-7, Da 2:44</td>
+<td class="org-left">Lk 1:33, Heb 1:8-12</td>
 </tr>
 
 
@@ -8810,8 +8815,8 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 <tr>
 <td class="org-left">Messiah would be rejected by his own people.</td>
-<td class="org-left">Ps 69:8 Is 53:3</td>
-<td class="org-left">Jn 1:11 John 7:5</td>
+<td class="org-left">Ps 69:8, Is 53:3</td>
+<td class="org-left">Jn 1:11, John 7:5</td>
 </tr>
 
 
@@ -8852,7 +8857,7 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 <tr>
 <td class="org-left">Messiah would speak in parables.</td>
-<td class="org-left">Ps 78:2-4 Is 6:9-10</td>
+<td class="org-left">Ps 78:2-4, Is 6:9-10</td>
 <td class="org-left">Mt 13:10-15, 34-35</td>
 </tr>
 
@@ -8874,10 +8879,30 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Messiah would be called King.</td>
 <td class="org-left">Ps 2:6 Zc 9:9</td>
-<td class="org-left">Mt 27:37 Mk 11:7-11</td>
+<td class="org-left">Mt 27:37, Mk 11:7-11</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be praised by little children.</td>
 <td class="org-left">Ps 8:2</td>
@@ -8887,8 +8912,8 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 <tr>
 <td class="org-left">Messiah would be betrayed.</td>
-<td class="org-left">Ps 41:9 Zc 11:12-13</td>
-<td class="org-left">Lk 22:47-48 Mt 26:14-16</td>
+<td class="org-left">Ps 41:9, Zc 11:12-13</td>
+<td class="org-left">Lk 22:47-48, Mt 26:14-16</td>
 </tr>
 
 
@@ -8922,7 +8947,7 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 <tr>
 <td class="org-left">Messiah would be hated without cause.</td>
-<td class="org-left">Ps 35:19 Psalm 69:4</td>
+<td class="org-left">Ps 35:19, Psalm 69:4</td>
 <td class="org-left">Jn 15:24-25</td>
 </tr>
 
@@ -8930,20 +8955,20 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Messiah would be crucified with criminals.</td>
 <td class="org-left">Is 53:12</td>
-<td class="org-left">Mt 27:38 Mk 15:27-28</td>
+<td class="org-left">Mt 27:38, Mk 15:27-28</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be given vinegar to drink.</td>
 <td class="org-left">Ps 69:21</td>
-<td class="org-left">Mt 27:34 Jn 19:28-30</td>
+<td class="org-left">Mt 27:34, Jn 19:28-30</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah's hands and feet would be pierced.</td>
-<td class="org-left">Ps 22:16 Zc 12:10</td>
+<td class="org-left">Ps 22:16, Zc 12:10</td>
 <td class="org-left">Jn 20:25-27</td>
 </tr>
 
@@ -8958,13 +8983,13 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Soldiers would gamble for Messiah's garments.</td>
 <td class="org-left">Ps 22:18</td>
-<td class="org-left">Lk 23:34 Mt 27:35-36</td>
+<td class="org-left">Lk 23:34, Mt 27:35-36</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah's bones would not be broken.</td>
-<td class="org-left">Ex 12:46 Ps 34:20</td>
+<td class="org-left">Ex 12:46, Ps 34:20</td>
 <td class="org-left">Jn 19:33-36</td>
 </tr>
 
@@ -8999,22 +9024,22 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 <tr>
 <td class="org-left">Messiah would resurrect from the dead.</td>
-<td class="org-left">Ps 16:10 Psalm 49:15</td>
-<td class="org-left">Mt 28:2-7 Ac 2:22-32</td>
+<td class="org-left">Ps 16:10, Psalm 49:15</td>
+<td class="org-left">Mt 28:2-7, Ac 2:22-32</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would ascend to heaven.</td>
 <td class="org-left">Ps 24:7-10</td>
-<td class="org-left">Mk 16:19 Lk 24:51</td>
+<td class="org-left">Mk 16:19, Lk 24:51</td>
 </tr>
 
 
 <tr>
 <td class="org-left">Messiah would be seated at God's right hand.</td>
-<td class="org-left">Ps 68:18 Psalm 110:1</td>
-<td class="org-left">Mk 16:19 Mt 22:44</td>
+<td class="org-left">Ps 68:18, Psalm 110:1</td>
+<td class="org-left">Mk 16:19, Mt 22:44</td>
 </tr>
 
 
