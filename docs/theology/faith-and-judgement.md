@@ -15230,6 +15230,76 @@ Also, that means deepening my relationship with Jesus.
 > **Matthew 24:35** - Heaven and earth will pass away, but my words will not pass away.
 
 
+# I was dead and helpless before being made alive in Christ
+
+-   [Is the Calvinist-Arminian Debate Really Important? - YouTube](https://youtu.be/H_wfnir1hQ4?t=278)
+
+
+## Before being born-again of the spirit I was thinking worldly/materially
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+
+## I was quite unable to go against the trajectory of the world
+
+> **Romans 8:7** - For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. (ESV)
+
+
+## I was spiritually blind
+
+> **II Corinthians 4:4** - In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. (ESV)
+
+
+## In a very real sense I was helpless
+
+I was helplessly:
+
+-   stuck in sinful habits,
+-   struggling with mental energy to try to stay on top of things / get ahead (of others),
+-   wondering why everything was going against me, and
+-   wondering where God is
+-   wondering why other so-called Christians were not being Christlike
+
+I could not see my spiritual opposition:
+
+> **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
+
+I felt like giving up, and I cried out to Jesus one night to save me:
+
+> **Romans 10:13** - For everyone who calls on the name of the Lord will be saved. (ESV)
+
+
+## In defense of any type of love for God before being born-again
+
+I had begun speaking out against evil and I had begun repenting from my evil deeds, but I was still very much spiritually depraved.
+
+> The doctrine of total depravity asserts that
+> people are, as a result of the fall, not
+> inclined or even able to love God wholly with
+> heart, mind, and strength, but rather are
+> inclined by nature to serve their own will and
+> desires and reject his rule.
+
+
+## In my helpless state I cried out to God for help, and He made me born-again of the spirit
+
+I was spiritually bankrupt and I knew I needed God's help.
+
+> **Ephesians 2:4-5** - But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
+
+
+### My spiritual senses were enabled
+
+> **John 3:3** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God. (ESV)
+
+And I began learning to walk in Jesus' commandments, and repenting from sin.
+There was an incredible amount of resistance from other people to following Jesus' commandments.
+
+> **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
+
+Likewise, there was also a lot of resistance, spiritually, to repenting from sin.
+
+
 # Jesus Christ is fully God and fully human
 
 Jesus Christ is the Word of God who became flesh - this is what I believe - not just God **in** the flesh but God who **became** flesh, then He was put to death on a tree (a cross) for our trespasses and Father God raised Him from the dead for our justification:
