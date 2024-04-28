@@ -11376,9 +11376,33 @@ I think a person needs **some** faith to be saved, and faith works.
 > **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
 
 
-## God the Father can graft people in and out of Christ
+## We in Christ, Christ in us
 
-A person would have to reject Jesus to be grafted out, I think.
+[What Does it Mean to be in Christ? - YouTube](https://www.youtube.com/watch?v=LNZ-ZBsPpgk)
+
+
+### Jesus Christ is in us
+
+> **Galatians 2:20** - I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me. (ESV)
+
+> **Romans 8:10** - But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. (ESV)
+
+
+### We are in Christ
+
+> **Galatians 2:4** - Yet because of false brothers secretly brought in—who slipped in to spy out our freedom that we have in Christ Jesus, so that they might bring us into slavery— (ESV)
+
+> **Romans 8:1** - There is therefore now no condemnation for those who are in Christ Jesus.
+
+
+### Our life is hidden with Christ in God
+
+> **Colossians 3:3** - For you have died, and your life is hidden with Christ in God. (ESV)
+
+
+## Only God the Father could graft people in and out of Christ
+
+A person would have to reject Jesus to be grafted out, I think. Then again, God might still not do that.
 
 We must be perpetually <ins>approaching Jesus:</ins>
 
