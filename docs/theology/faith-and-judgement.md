@@ -1703,9 +1703,21 @@ Abraham was <ins>justified when He believed with an obedient heart</ins> but fai
 
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
 
-I'm going out on a limb when I say that without an obedient heart the so-called belief <ins>doesn't qualify as belief:</ins>
+Where previously I said "I'm going out on a limb when I say that without an obedient heart the so-called belief <ins>doesn't qualify as belief:</ins>",
+my best interpretation of this now is that, believing in Jesus Christ, a person has obeyed Jesus and has eternal life which is to know Jesus and Father God, but this belief must be true belief, incorporating a sense of 'trust' towards Jesus, the type of trust that elicits obedience.
+We need to obey Jesus in order to have a good life, and without obedience to Jesus the wrath of God remains. I really believe we should both believe and obey Jesus, but I don't want to condemn people when I am not the judge, and nor can I see the person's heart.
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+> **Deuteronomy 10:13** - and to keep the commandments and statutes of the LORD, which I am commanding you today for your good? (ESV)
+
+It's definitely about belief in in the heart:
+
+> **Proverbs 4:23** - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
+
+> **Jeremiah 17:10** - I the LORD search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds. (ESV)
 
 Eternal salvation goes to those who obey Jesus:
 
