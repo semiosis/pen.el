@@ -12139,10 +12139,16 @@ goes to those who obey Jesus.
 
 The Bible also teaches that the Holy Spirit goes those who put their faith on Jesus.
 
+
+### John Piper's view, I affirm, but it also sounds optimal
+
 I believe John Piper's view here is optimal, that during the turbulent process of being born-again of the spirit,
 we should rely entirely on the righteousness of Christ, and not be led astray by relying on our own works for justification.
 
 > John Piper - [We should rely entirely on the righteousness of Christ imputed to us by faith alone as the ground of God being 100% for us after which necessary sanctification comes.](https://www.youtube.com/watch?v=lQvtAd7WEOY&ab_channel=DesiringGod)
+
+
+### But my experience was like this
 
 But then, as what happened to me after I was
 born-again of the Spirit (by the grace of God through faith), is that shortly after I was quickly confronted with a lot of paganism,
@@ -12153,12 +12159,16 @@ I even began to get dreams of evading judgement through good works, and then pag
 and all I'm saying is that adhering to the truth that I am justified not by my own works but by Christ's finished works
 was very important for me through that time, so that I wasn't led astray by paganism.
 
-Mid-2022 to mid-2023 was chaotic:
 
--   I was saved when I was spiritually dead as an act of pure grace - like a plane on the verge of crashing to the ground, I was born-again.
+### Mid-2022 to mid-2023 was chaotic
+
+-   I was saved when I was spiritually dead as an act of pure grace - like a plane on the verge of crashing to the ground, I was born-again at one of the lowest (perhaps the lowest) points in my life.
 -   My own theology and behaviour was deeply flawed when I was born-again, and it had to be rectified, and that was a painful process as I repented **after** being born-again of the spirit.
 -   Without reforming my behaviour to come into obedience to Jesus' commandments after being born-again, I would've been led into paganism and licentiousness.
 -   Adhering to the truth during these events had me in constant spiritual warfare, and it wasn't easy.
+
+
+### An obedient/loving response to Jesus, I think is extremely important
 
 I believe it's necessary that we should have a loving response to Jesus, and an obedient response to Jesus.
 Is that preaching justification through my own works or my own effort? No, I don't think so.
@@ -12168,7 +12178,8 @@ The **obediently loving response** to Jesus after being born-again of the spirit
 to the selfish nature and learn to walk in
 Jesus' commandments.
 
-But I believe the grace is a free gift from God.
+
+### But I believe the grace is a free gift from God.
 
 Jesus is so generous that He saves people who turn out to be unthankful, but we should definitely love Jesus as a response. This story should be taken not only to see how Good God is, but also taken as a warning against unthankfulness:
 
