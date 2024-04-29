@@ -12164,8 +12164,12 @@ was very important for me through that time, so that I wasn't led astray by paga
 
 -   I was saved when I was spiritually dead as an act of pure grace - like a plane on the verge of crashing to the ground, I was born-again at one of the lowest (perhaps the lowest) points in my life.
 -   My own theology and behaviour was deeply flawed when I was born-again, and it had to be rectified, and that was a painful process as I repented **after** being born-again of the spirit.
--   Without reforming my behaviour to come into obedience to Jesus' commandments after being born-again, I would've been led into paganism and licentiousness.
--   Adhering to the truth during these events had me in constant spiritual warfare, and it wasn't easy.
+-   Without reforming my behaviour to come into obedience to Jesus' commandments after being born-again, I would've been led into endorsing paganism and licentiousness.
+-   Adhering to the truth during these events had me in constant spiritual warfare, and it wasn't easy, so I believe that obedience is **extremely important** and I think is in some way **very important** to saving faith.
+
+Obeying Jesus is very important:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 
 ### An obedient/loving response to Jesus, I think is extremely important
