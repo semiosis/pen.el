@@ -10842,7 +10842,7 @@ There's abiding in Christ, and then there is ABIDING FOREVER in Christ, and fore
 
 I believe that to abide forever in Christ, one must produce good fruit.
 
-> **Matthew 3:8-10** - Bear fruit in keeping with repentance.  And do not presume to say to yourselves, We have Abraham as our father, for I tell you, God is able from these stones to raise up children for Abraham.  Even now the axe is laid to the root of the trees. Every tree therefore that does not bear good fruit is cut down and thrown into the fire.
+> **Matthew 3:8-10** - Bear fruit in keeping with repentance. And do not presume to say to yourselves, We have Abraham as our father, for I tell you, God is able from these stones to raise up children for Abraham.  Even now the axe is laid to the root of the trees. Every tree therefore that does not bear good fruit is cut down and thrown into the fire.
 
 I believe that producing good fruit is necessary for being saved:
 
@@ -10850,6 +10850,8 @@ I believe that producing good fruit is necessary for being saved:
 -   believing the Gospel and obeying Jesus
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+[What does it mean to be "in Christ"? - YouTube](https://www.youtube.com/watch?v=RZmmuLEptvE)
 
 
 ## When it says 'hate' here, it means 'unfollow'
@@ -12113,6 +12115,64 @@ For example, if Jesus sends you as an ambassador to some pagans and they asked y
 
 Therefore, a person should do what is out of love and faith for the LORD, based on their knowledge of the law,
 their faithfulness to God and their conviction.
+
+
+## My experience of being born-again, and reasoning surrounding justification
+
+I affirm justification through faith alone by the imputed righteousness of having
+trusting faith in Jesus (in the heart, without
+any work) for the finished work of the cross but I believe that this belief has
+to be qualified, and that God does the
+qualifying when He looks at the heart.
+
+I think that a willingness to turn to obey Jesus in the
+heart is characteristic of a repentant heart,
+and I think a willingness to turn away from evil and
+follow Jesus is an important step towards being born-again.
+
+It's also important to have a response of love for Jesus, and
+without Jesus' finished work on the cross, we
+couldn't receive Jesus' Holy Spirit to live inside us.
+
+The Bible teaches that the Holy Spirit
+goes to those who obey Jesus.
+
+The Bible also teaches that the Holy Spirit goes those who put their faith on Jesus.
+
+I believe John Piper's view here is optimal, that during the turbulent process of being born-again of the spirit,
+we should rely entirely on the righteousness of Christ, and not be led astray by relying on our own works for justification.
+
+> John Piper - [We should rely entirely on the righteousness of Christ imputed to us by faith alone as the ground of God being 100% for us after which necessary sanctification comes.](https://www.youtube.com/watch?v=lQvtAd7WEOY&ab_channel=DesiringGod)
+
+But then, as what happened to me after I was
+born-again of the Spirit (by the grace of God through faith), is that shortly after I was quickly confronted with a lot of paganism,
+and through obedience to Jesus' commandments through that time, as I learned to walk in them,
+I was simultaneously getting tested very strongly on them through other people.
+
+I even began to get dreams of evading judgement through good works, and then pagan dreams etc. that were distinctly not Christian,
+and all I'm saying is that adhering to the truth that I am justified not by my own works but by Christ's finished works
+was very important for me through that time, so that I wasn't led astray by paganism.
+
+Mid-2022 to mid-2023 was chaotic:
+
+-   I was saved when I was spiritually dead as an act of pure grace - like a plane on the verge of crashing to the ground, I was born-again.
+-   My own theology and behaviour was deeply flaws when I was born-again, and it had to be rectified.
+-   Without reforming my behaviour to come into obedience to Jesus' commandments after being born-again, I would've been led into paganism and licentiousness.
+-   Adhering to the truth during these events had me in constant spiritual warfare, and it wasn't easy.
+
+I believe it's necessary that we should have a loving response to Jesus, and an obedient response to Jesus.
+Is that preaching justification through my own works or my own effort? No, I don't think so.
+
+The **obediently loving response** to Jesus after being born-again of the spirit is to pass-forward the mercy onto others
+(forgive others as we have been forgiven), die
+to the selfish nature and learn to walk in
+Jesus' commandments.
+
+But I believe the grace is a free gift from God.
+
+Jesus is so generous that He saves people who turn out to be unthankful, but we should definitely love Jesus as a response. This story should be taken not only to see how Good God is, but also taken as a warning against unthankfulness:
+
+> **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
 
 
 ## Justification by faith - Jews + Gentiles, and in-between
