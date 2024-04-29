@@ -2994,6 +2994,24 @@ And eventually His commandments become unburdensome, and we're keeping them, and
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
 
+### Jesus has overcome the world
+
+> **John 16:33** - I have said these things to you, that in me you may have peace. In the world you will have tribulation. But take heart; I have overcome the world. (ESV)
+
+> **John 15:7** - If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. (ESV)
+
+AMEN!!
+
+That's really good news for us:
+
+-   He carries our burdens
+-   He carries our shame
+
+AMEN!!
+
+-   **Song:** [Darlene Zschech - In Jesus' Name | Official Live Video - YouTube](https://www.youtube.com/watch?v=TVsRM55_jsE&list=RDWO6wHz0R27k&index=5)
+
+
 ### Jesus is the Lamb of God who sits with God on God's throne
 
 Jesus Christ is our God. Forever, He is Father God's revelation to us of Himself.
