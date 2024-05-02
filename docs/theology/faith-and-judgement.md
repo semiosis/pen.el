@@ -12685,7 +12685,9 @@ Our faith must be sound. We must believe and have assurance in the Truth:
 
 > **Titus 2:1-2** - But as for you, teach what accords with sound doctrine. Older men are to be sober-minded, dignified, self-controlled, sound in faith, in love, and in steadfastness. (ESV)
 
-Faith from hearing the word of Christ. Christ's words are Absolute Truth, therefore, as we believe them, it increases our faith:
+Faith comes from hearing the word of Christ. Christ's words are Absolute Truth, therefore, as we believe them, it increases our faith:
+
+> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
 
 With faith we believe what God's Word tells us:
 
