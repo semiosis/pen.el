@@ -3532,6 +3532,8 @@ Confess:
     > **I Peter 3:18-21** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to **death in the flesh but made alive in the spirit**, in which he went and proclaimed to the spirits in prison, because **they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
     
     > **I Corinthians 6:14** - And God raised the Lord and will also raise us up by his power. (ESV)
+    
+    [CHRIST IS ENOUGH - HILLSONG LIVE LYRIC VIDEO | GLORIOUS RUINS 2013 - YouTube](https://www.youtube.com/watch?v=0fZ-tBR7LJ0&list=RDkemT9EoKvHs&index=2)
 
 
 ## Obedience - A heart of obedience is the start of faith, and belief is the start of continued obedience
@@ -4988,7 +4990,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **II Peter 2:20-21** - For if, after they have escaped the <ins>defilements of the world through the knowledge of our Lord and Savior Jesus Christ</ins>, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known **the way of righteousness** than after knowing it to turn back from the holy commandment delivered to them.
     
-    Then we continue to add Work/Love/Virtue to be fruitful:
+    Then we continue to add Work/Love/Walking-By-Faith/Virtue to be fruitful:
     
     But we must practice Jesus' commandments even before we have arrived at the knowledge of the truth, in order to arrive at the knowledge of the truth:
     
@@ -5907,11 +5909,11 @@ You can't have faith without obedience.
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Work/Love = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
@@ -5959,7 +5961,7 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
     4   acknowledgement:--(ac-)knowledge(-ing, - ment).
     5   see GREEK for 1921
 
-1.  Work/Love
+1.  Work/Love/Walking-By-Faith
 
     > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
     
@@ -6064,7 +6066,7 @@ Faith has 'substance/magnitude' and may be described as a vector:
 -   The origin of hope/belief is represented by the point.
     -   On the Faith plane, positive magnitude comes from trust in God
 -   Hope-from/in-God is the direction.
--   Work/Love/Obedience is the magnitude.
+-   Work/Love/Walking-By-Faith/Obedience is the magnitude.
 
 I want to be clear, having faith in Jesus Christ is not dead faith.
 Dead faith is precisely not having faith in Jesus Christ.
@@ -7796,11 +7798,11 @@ I made these equations to describe my understanding that faith is actually close
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Work/Love = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
@@ -10000,15 +10002,15 @@ So sometimes a person needs to choose Jesus over false teachers and blind guides
 
 > **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
 
-It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
+It's not really the religion but the person who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
-But it is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith - and our obedience gives us confidence. All glory to God alone. We must obey Jesus to become like Jesus:
+Also, no-one can save themself from eternal damnation - it's only the blood of Jesus which can.
+
+It is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith - and our obedience gives us confidence. All glory to God alone. We must obey Jesus to become like Jesus:
 
 > **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as <ins>he is so also are we in this world.</ins> (ESV)
 
-> **John 7:24** - Do not judge by appearances, but judge with right judgment.
-
-Therefore, I'd have more confidence if I was following Jesus is reality and **from the heart** but was caught up in incorrect theology, than if thought I had all the correct theology but didn't do what Jesus said.
+I'd have more confidence if I was following Jesus is reality and **from the heart** but was caught up in incorrect theology, than if thought I had all the correct theology but didn't do what Jesus said. When confronted with the reality of Jesus Christ, we must believe Him, believe who He is, believe what He's done, love Him and put our faith in Him:
 
 Correct Christology is important, but so is obeying Jesus' commandments, and obeying Jesus' commandments is possibly even more important than belief:
 
@@ -10018,7 +10020,7 @@ It's not the ones with the correct doctrine who will stand in the congregation o
 
 > **Psalms 5:5** -  The boastful shall not stand before your eyes; you hate all evildoers.  (ESV)
 
-For that reason, I would have more confidence before God if I was serving Him, having put sin to death and trying to be holy and selfless and loving, than if I believed precise theology but had no changed life:
+For that reason, I would have more confidence before God if I was serving Him, having put sin to death and trying to be holy and selfless and loving in faith towards Jesus, than if I believed precise theology but had no changed life / love for Jesus:
 
 > **Psalms 1:4-5** - The wicked are not so, but are like chaff that the wind drives away. Therefore the wicked will not stand in the judgment, nor sinners in the congregation of the righteous; (ESV)
 
@@ -12673,11 +12675,59 @@ If a person does not have obedience, trust and
 repentance from sin, but their faith has belief, then they only
 abide in Jesus extremely precariously, and also that person's 'faith' probably wont receive much at all from God.
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love
+> **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
+
+Hebrews 11 describes faith. We must live by faith:
+
+> **Hebrews 10:37-39** - For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls. (ESV)
+
+Our faith must be sound. We must believe and have assurance in the Truth:
+
+> **Titus 2:1-2** - But as for you, teach what accords with sound doctrine. Older men are to be sober-minded, dignified, self-controlled, sound in faith, in love, and in steadfastness. (ESV)
+
+Faith from hearing the word of Christ. Christ's words are Absolute Truth, therefore, as we believe them, it increases our faith:
+
+With faith we believe what God's Word tells us:
+
+> **Hebrews 11:1-3** - Now **faith is the assurance of things hoped for**, the **conviction of things not seen**. For by it the people of old received their commendation. **By faith we understand that the universe was created by the word of God**, so that what is seen was not made out of things that are visible. (ESV)
+
+We walk by faith, not by sight:
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
+Faith in the Truth naturally produces evidence of the faith, as a person is believing the Truth, and operating in the Truth, people should be able to recognise it:
+
+> **James 2:18** - But someone will say, You have faith and I have works. Show me your faith apart from your works, and I will show you my faith by my works. (ESV)
+
+The object of our faith is Jesus, who is the Truth:
+
+> **Revelation of John 14:12** - Here is a call for the endurance of the saints, those who keep the commandments of God and their faith in Jesus. (ESV)
+
+The Truth is that we know we can ask God for things, then by faith we can ask from God and await to receive:
+
+> **James 1:6** - But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. (ESV)
+
+Faith in Jesus is something we aim to keep our entire lives:
+
+> **Galatians 2:20** - I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me. (ESV)
+
+> **II Timothy 4:7** - I have fought the good fight, I have finished the race, I have kept the faith. (ESV)
+
+> **Philippians 2:16** - holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
+
+The rhema word of God:
+
+> **Hebrews 5:12** - For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart. (ESV)
+
+[What is the rhema word? | GotQuestions.org](https://www.gotquestions.org/rhema-word.html)
+
+I put a bunch of concepts together to describe faith:
+
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is truth)
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Work/Love = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  

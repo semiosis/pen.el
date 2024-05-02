@@ -28,7 +28,11 @@
            ;; (save-temp-if-no-file)
            (if (not (buffer-file-name))
                ;; (pen-sn (concat "pen-tm -f -S -i -tout sps -x -pak -args pen-cr " crstr) (awk1 (buffer-string)))
-               (tpop (concat "pen-cr " crstr) (awk1 (buffer-string)))
+               (tpop (concat "pen-cr " crstr)
+                     (awk1 (s-replace-regexp
+                            "^ \\+"
+                            ""
+                            (buffer-string))))
              ;; (pen-snc (concat "unbuffer pen-tm -f -te -d sps -x -pak -args pen-cr " crstr))
              (tpop (concat "pen-cr " crstr)))))))
 

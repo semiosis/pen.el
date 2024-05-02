@@ -336,7 +336,14 @@
   ""
   `(let ((result ,@body))
      (if (interactive-p)
-         (pen-etv result 'tsv-mode)
+         (pen-etv
+          (pen-snc
+           "pen-tabulate"
+           (concat "Fact\tProbability\n"
+                   (s-replace-regexp
+                    "^ +" ""
+                    result)))
+          'tsv-mode)
        result)))
 (defalias 'ifi-etv-tsv-mode 'ifietv-tsv-mode)
 
