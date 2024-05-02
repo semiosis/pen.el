@@ -2892,6 +2892,10 @@ Jesus is sitting in power.
 
 > **Hebrews 1:13** - And to which of the angels has he ever said, Sit at my right hand until I make your enemies a footstool for your feet?
 
+This video is pretty awesome:
+
+-   [Did Anyone Believe in the Trinity Before Nicea? - YouTube](https://www.youtube.com/watch?v=e2YZ0WweRQM)
+
 I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what-is-the-doctrine-of-the-trinity):
 
 > Thus, the Son is not one-third of the being of God; he is all of the being of God. The Father is not one-third of the being of God; he is all of the being of God. And likewise with the Holy Spirit. Thus, as Wayne Grudem writes, “When we speak of the Father, Son, and Holy Spirit together we are not speaking of any greater being than when we speak of the Father alone, the Son alone, or the Holy Spirit alone” (Ibid., 252).
@@ -3857,7 +3861,7 @@ Sinners:
     -   profaning what is holy
     -   lies
     -   adultery
-    -   murder
+    -   murder, which includes abortion
     -   strengthening the hands of evildoers - supporting evildoers
     -   self-pride, and prideful sin
     -   evil thoughts, inventing evil
@@ -4052,6 +4056,21 @@ Defiling passion <ins>defiles</ins>:
 > **II Peter 2:10** - and especially those who indulge in the lust of defiling passion and despise authority. Bold and willful, they do not tremble as they blaspheme the glorious ones, (ESV)
 
 > **Jude 1:7** - just as Sodom and Gomorrah and the surrounding cities, which likewise indulged in sexual immorality and pursued unnatural desire, serve as an example by undergoing a punishment of eternal fire. (ESV)
+
+
+### Abortion
+
+Abortion specifically has been condemned since
+the beginnings of the Church.
+
+The Church hash **always** stood against abortion, and placed it right alongside murder.
+
+> **Didache 2** - The Second Commandment: Grave Sin Forbidden. And the second commandment of the Teaching; You shall not commit murder, you shall not commit adultery, you shall not commit pederasty, you shall not commit fornication, you shall not steal, you shall not practice magic, you shall not practice witchcraft, **you shall not murder a child by abortion nor kill that which is born**. You shall not covet the things of your neighbor, you shall not swear, you shall not bear false witness, you shall not speak evil, you shall bear no grudge. You shall not be double-minded nor double-tongued, for to be double-tongued is a snare of death. Your speech shall not be false, nor empty, but fulfilled by deed. You shall not be covetous, nor rapacious, nor a hypocrite, nor evil disposed, nor haughty. You shall not take evil counsel against your neighbor. You shall not hate any man; but some you shall reprove, and concerning some you shall pray, and some you shall love more than your own life.
+
+
+### More sins condemned by the early Church
+
+> **Didache 3** - Other Sins Forbidden. My child, flee from every evil thing, and from every likeness of it. Be not prone to anger, for anger leads to murder. Be neither jealous, nor quarrelsome, nor of hot temper, for out of all these murders are engendered. My child, be not a lustful one. for lust leads to fornication. Be neither a filthy talker, nor of lofty eye, for out of all these adulteries are engendered. My child, be not an observer of omens, since it leads to idolatry. Be neither an enchanter, nor an astrologer, nor a purifier, nor be willing to took at these things, for out of all these idolatry is engendered. My child, be not a liar, since a lie leads to theft. Be neither money-loving, nor vainglorious, for out of all these thefts are engendered. My child, be not a murmurer, since it leads the way to blasphemy. Be neither self-willed nor evil-minded, for out of all these blasphemies are engendered.  Rather, be meek, since the meek shall inherit the earth. Be long-suffering and pitiful and guileless and gentle and good and always trembling at the words which you have heard. You shall not exalt yourself, nor give over-confidence to your soul. Your soul shall not be joined with lofty ones, but with just and lowly ones shall it have its intercourse. Accept whatever happens to you as good, knowing that apart from God nothing comes to pass.
 
 
 # If the world is encouraging you, you're probably in falsehood or taking the wide road
@@ -9447,6 +9466,13 @@ Zacchaeus was repentant, and was saved through Jesus as he had the faith of Abra
 > **I Corinthians 15:50** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable. (ESV)
 
 
+### Made alive in Christ
+
+> **Ephesians 2:1** - And you were dead in the trespasses and sins (ESV)
+
+> **Ephesians 2:4-5** - But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
+
+
 ### We must repent and be sanctified
 
 > **Galatians 5:19-21** -  Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these.  I warn you, as I warned you before, that those who do such things <ins>will not inherit the kingdom of God.</ins> (ESV)
@@ -9933,6 +9959,42 @@ God's grace goes to the humble.
 > **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek.
 
 So sometimes a person needs to choose Jesus over false teachers and blind guides.
+
+
+# Concerning Baptism (taken from the Didache)
+
+     1  Chapter 7.
+     2  
+     3  Concerning Baptism.
+     4  
+     5  And concerning baptism, baptize this way:
+     6  Having first said all these things, baptize
+     7  into the name of the Father, and of the Son,
+     8  and of the Holy Spirit, in living water.
+     9  
+    10  But if you have no living water, baptize into
+    11  other water; and if you cannot do so in cold
+    12  water, do so in warm.
+    13  
+    14  But if you have neither, pour out water three
+    15  times upon the head into the name of Father
+    16  and Son and Holy Spirit.
+    17  
+    18  But before the baptism let the baptizer fast,
+    19  and the baptized, and whoever else can; but
+    20  you shall order the baptized to fast one or
+    21  two days before.
+
+-   Trinitarian.
+    -   Baptising into the Trinitarian name of the LORD God
+        -   AMEN!!
+-   Moving water:
+    -   Immersion in a river, for example
+    -   Pouring is fine interestingly, also
+
+[The Didache: The Earliest Christian Writing After the Bible - YouTube](https://www.youtube.com/watch?v=L7fejsKKPE4):
+
+-   The Holy Spirit poured out onto the people of God.
 
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
