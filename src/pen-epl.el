@@ -332,9 +332,17 @@
 
 (defalias 'problog 'problog-expand)
 
+(defmacro ifietv-tsv-mode (&rest body)
+  ""
+  `(let ((result ,@body))
+     (if (interactive-p)
+         (pen-etv result 'tsv-mode)
+       result)))
+(defalias 'ifi-etv-tsv-mode 'ifietv-tsv-mode)
+
 (defun problog-eval (s)
   (interactive (list (read-string-hist "problog code: ")))
-  (ifi-etv
+  (ifi-etv-tsv-mode
    (pen-snc "problog" (problog-final-pp s))
    ;; s
    ))
@@ -350,7 +358,7 @@ With C-u, show the problog code"
   (setq body (cdr (macroexpand
                    `(problog-expand ,@body))))
 
-  `(ifi-etv
+  `(ifi-etv-tsv-mode
     (problog-eval
      (awk1 ,@body)
      ;; (if (interactive-p)

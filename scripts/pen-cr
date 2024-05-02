@@ -1982,7 +1982,9 @@ case "$file_type" in
 
     tsv|csv) {
         if ! pen-pl "$rp" | grep -q -P '.csv' && test "$file_type" = csv; then
-            cat "$rp" | pen-tf csv | pen-xa fpvd
+            cat "$rp" | pen-tf tsv | pen-xa fpvd
+        elif ! pen-pl "$rp" | grep -q -P '.tsv' && test "$file_type" = tsv; then
+            cat "$rp" | pen-tf tsv | pen-xa fpvd
         else
             fpvd "$rp"
         fi
