@@ -5250,13 +5250,13 @@ Cleaned up (stop sinning) by having faith in the truth.
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
 
 
-# Justifying faith vs justifying works is misunderstood and is a false dichotomy
+# Clearing up justifying faith vs 'justifying works', which isn't a thing
 
 Jesus makes it clear that the ones who truly believe in Him **will do** the **works** which **He does**:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
-James believes that faith is really substantiated by works:
+James believes that people can see the evidence of faith by works:
 
 > **James 2:22-26** - You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
 
@@ -5313,17 +5313,33 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 
 > **Luke 9:23-24** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
 
-Now about the following:
+
+## You can't work for justification. We must have faith on God justifying us even though we are ungodly
+
+My best understanding of **Romans 4:4** is: "The person who works receives wages, but the wages are not a gift, but the person receives reward which is due for his work."
 
 > **Romans 4:4** - Now to the one who works, his wages are not counted as a gift but as his due.
 
-I believe that what *Romans 4:4* is saying is that before accepting God's forgiveness yourself, submitting to the righteousness of God, believing that you were in need of God's forgiveness,
-anything you try to give God is simply giving God what is due to Him, and that you will never be able to return enough stolen goods to God to ever be justified. Nor would you ever be able to forgive enough other people to attain that justification.
-<ins>You ultimately need God's forgiveness</ins>. However, forgiving others is still required if someone wants God to forgive them.
+However, the work we produce doesn't **justify us** before God (it doesn't clear us from being guilty of sin before God). We still need to have faith on God to justify us due to the atonement for our sin by Christ's blood.
+
+Before accepting God's forgiveness yourself, submitting to the righteousness of God, believing that you were in need of God's forgiveness and accepting that Jesus' blood has atoned for our sin, anything we try to give God is simply giving God what is due to Him, and that you will never be able to return enough stolen goods to God to ever be justified. Nor would you ever be able to forgive enough other people to attain that justification.
+<ins>We ultimately need God's forgiveness</ins>. 
+
+> **Romans 4:5-7** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; (ESV)
+
+But for the person who does not work but trusts God who justifies the ungodly, his faith is counted as righteousness:
 
 > **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
 
+I'm trusting God wholeheartedly to be justified by Christ's finished work on the cross. And this type of justification by faith is for anyone who trusts in God for the forgiveness of their sins through Jesus' finished work on the cross. I don't deny that to other people.
+
+I'm unsure if the following applies for justification (it may be that it is meant in a different context), but in some sense, forgiving others is still required if someone wants God to forgive them:
+
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
+
 > **Matthew 6:12-15** -  and forgive us our debts, as we also have forgiven our debtors.  And lead us not into temptation, but deliver us from evil.  For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses.  (ESV)
+
+Nevertheless, I forgive everyone, and hold no gurdges.
 
 
 ## Obedient action including seeking God in faith (trusting God's words and seeking)
