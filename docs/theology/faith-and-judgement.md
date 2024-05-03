@@ -10828,7 +10828,15 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     
     > **Proverbs 9:10** - The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight.
 
-2.  The truth is God made them male and female, but handed erroneous, rebellious people over to their lust in impurity
+2.  Born of water and the spirit
+
+    > **John 3:5** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
+    
+    > **Ezekiel 36:24-27** - I will take you from the nations and gather you from all the countries and bring you into your own land. I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules. (ESV)
+    
+    <https://youtu.be/MSc3BfyHDfg?t=289>
+
+3.  The truth is God made them male and female, but handed erroneous, rebellious people over to their lust in impurity
 
     > **Genesis 1:27** - So God created man in his own image, in the image of God he created him; male and female he created them.
     
