@@ -10013,6 +10013,50 @@ So sometimes a person needs to choose Jesus over false teachers and blind guides
 
 -   The Holy Spirit poured out onto the people of God.
 
+I was baptised again to rededicate my life to the Lord Jesus Christ.
+I see no problem with getting baptised again, personally.
+I see it as like renewing wedding vows.
+I've only been made a child of God, born-again of the spirit (grafted into Christ), once, though!
+
+I have been baptised 3 times total now.
+
+But born-again as a child of God through the
+spirit only happened to me one time.
+
+But each time I was baptised it was in the
+names of the Father, Son and Holy Spirit.
+
+I've got my reasons why this has happened.
+
+The summary of it is that while I was water
+baptised at 15, nothing much appeared to
+happen.
+
+But at 35 I was spontaneously born-again of
+the Spirit after a little repentance and
+seeking God.
+
+Then I was drawn into a church soon after and
+I got baptised again, but experienced a lot of
+spiritual attack.
+
+I wanted to get baptised the last time to
+really show God I was all in with Jesus, with
+nothing else, and to repent of sin. Repentance after being born-again of the Spirit is biblical:
+
+> **Romans 8:13** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+Each time I was baptised, was into the names of the
+Father, Son and Holy Spirit.
+
+So therefore, I don't see the big problem with
+wanting to rededicate myself to Jesus.
+
+I don't have all the answers guys to how it
+works! But Jesus did say in 
+
+> **John 3:8** - The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit. (ESV)
+
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
