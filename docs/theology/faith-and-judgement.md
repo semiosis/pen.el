@@ -1472,6 +1472,10 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 
 > **Philippians 3:9** - and be found in him, not having a righteousness of my own that comes from the law, but that which **comes through faith in Christ**, the righteousness from God that **depends** on faith— (ESV)
 
+The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
+
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
+
 Faith is both believing and obedient, even faith in the heart:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -6031,7 +6035,7 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
     
     Jesus' commandments are consistent with the rest of God's commandments:
     
-    > **John 12:49-50** For I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+    > **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
     
     > **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
     
@@ -7114,7 +7118,7 @@ I believe what Paul says here is that Christians who observe and follow the Tora
 
 We must follow Jesus, similarly to how the Israelites followed Moses through the Red Sea - it requires action.
 
-> **John 12:44-50** - And Jesus cried out and said, Whoever believes (G4100 pisteuo) in me, believes (G4100 pisteuo) not in me but in him who sent me.  And whoever sees me sees him who sent me.  I have come into the world as light, so that whoever believes in me may not remain in darkness.  If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world.  The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day.  For I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak.  And I know that his commandment is eternal life.  What I say, therefore, I say as the Father has told me. (ESV)
+> **John 12:44-50** - And Jesus cried out and said, Whoever believes (G4100 pisteuo) in me, believes (G4100 pisteuo) not in me but in him who sent me.  And whoever sees me sees him who sent me.  I have come into the world as light, so that whoever believes in me may not remain in darkness.  If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world.  The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day.  For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**.  And I know that his commandment is eternal life.  What I say, therefore, I say as the Father has told me. (ESV)
 
 This is similar to how the Israelites trusted in Moses, and they actually were trusting in God.
 
@@ -8735,7 +8739,7 @@ Jesus has shown us the Way we have to **walk** in. The Way is Himself. To walk i
 
 > **Deuteronomy 18:15-19** - The LORD your God will raise up for you a prophet like me from among you, from your brothers—it is **to him you shall listen** — just as you desired of the LORD your God at Horeb on the day of the assembly, when you said, Let me not hear again the voice of the LORD my God or see this great fire any more, lest I die. And the LORD said to me, They are right in what they have spoken. I will raise up for them a prophet like you from among their brothers. And **I will put my words in his mouth, and he shall speak to them all that I command him**. And whoever will not listen to my words that he shall speak in my name, I myself will require it of him. (ESV)
 
-> **John 12:49-50** - For I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
 
 > **John 14:6-7** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. If you had known me, you would have known my Father also. From now on you do know him and have seen him.
 
@@ -10093,6 +10097,10 @@ works! But Jesus did say in
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
 > **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
+
+The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
+
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
 
 It's not really the religion but the person who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
@@ -13792,6 +13800,10 @@ Walk in the truth, love one another and do not deny that Jesus Christ has come i
 
 ## Commandments of Jesus (which are from God)
 
+The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
+
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
+
 Have faith in God:
 
 > **Mark 11:22** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God (G2316 theos).
@@ -14001,7 +14013,11 @@ Those who proclaim the gospel should get their living by the gospel:
 > **II Corinthians 6:14** - Do not be unequally yoked with unbelievers. For what partnership has righteousness with lawlessness? Or what fellowship has light with darkness? (ESV)
 
 
-# Commandments of Jesus
+# More commandments of Jesus (which are all from God)
+
+The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
+
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
 
 -   **Video:** ["These things I command you" Jesus' own words from the 4 Gospels - YouTube](https://www.youtube.com/watch?v=C7hdUorDU-U)
 
