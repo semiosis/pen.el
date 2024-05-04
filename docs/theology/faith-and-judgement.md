@@ -1218,6 +1218,12 @@ I agree whole heartedly with John Piper here:
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins>
 
+If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
+
+> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+
+This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
+
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
 
@@ -4662,7 +4668,15 @@ Eternal judgement:
 
 > **Hebrews 6:2** - and of instruction about washings, the laying on of hands, the resurrection of the dead, and eternal judgment.
 
-1.  I believe I was saved and born-again by seeking Jesus and calling on the name of the Lord
+1.  Our Lord is the Son of Man, and we should be ready and on alert
+
+    > **Matthew 24:42** - Therefore, stay awake, for you do not know on what day your Lord is coming. (ESV)
+    
+    > **Matthew 24:44** - Therefore you also must be ready, for the Son of Man is coming at an hour you do not expect. (ESV)
+    
+    > **Matthew 25:13** - Watch therefore, for you know neither the day nor the hour. (ESV)
+
+2.  I believe I was saved and born-again by seeking Jesus and calling on the name of the Lord
 
     > **Acts 2:17-21** - And in the last days it shall be, God declares, that I will pour out my Spirit on all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams; even on my male servants and female servants in those days I will pour out my Spirit, and they shall prophesy. And I will show wonders in the heavens above and signs on the earth below, blood, and fire, and vapor of smoke; the sun shall be turned to darkness and the moon to blood, before the day of the Lord comes, the great and magnificent day. And it shall come to pass that everyone who calls upon the name of the Lord shall be saved.
     
@@ -4670,7 +4684,7 @@ Eternal judgement:
     
     And when we are born-again and given a new heart we should continue in obedience.
 
-2.  We should not rebel against the law - but we should obey the truth in truth
+3.  We should not rebel against the law - but we should obey the truth in truth
 
     > **Matthew 23:2-7** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
     
@@ -11840,7 +11854,9 @@ I believe that **the Holy Spirit** goes to those who obey God. I believe belief 
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
 
-> **John 14:15-17** - If you love me, you will keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
+
+> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
 
 Belief in Jesus comes first but receiving **the Holy Spirit** and baptism may happen in any order after that.
 
@@ -14352,6 +14368,8 @@ Those who proclaim the gospel should get their living by the gospel:
 
 > **Matthew 25:13** - Watch therefore, for you know neither the day nor the hour. (ESV)
 
+> **Luke 18:8** - I tell you, he will give justice to them speedily. Nevertheless, when the Son of Man comes, <ins>will he find faith on earth</ins>?
+
 
 ### 
 
@@ -15563,6 +15581,20 @@ We're supposed to do the will of God from the heart:
 When we hear Jesus' voice, we must open the door. We have free will to receive or reject Jesus - we must be obedient believers:
 
 > **Revelation of John 3:20** - Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me. (ESV)
+
+If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
+
+> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+
+We obey Jesus to be saved:
+
+> **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
+
+We obey Jesus to receive the Holy Spirit:
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins>
+
+This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
 
 The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
 

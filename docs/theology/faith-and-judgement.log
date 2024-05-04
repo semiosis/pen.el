@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  4 MAY 2024 20:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  4 MAY 2024 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -609,231 +609,231 @@ Missing character: There is no ε in font [lmmono10-regular]:!
 [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1835.
+(hyperref)                removing `math shift' on input line 1843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 1835.
+(hyperref)                removing `\@@underline' on input line 1843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1835.
+(hyperref)                removing `\hbox' on input line 1843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1835.
+(hyperref)                removing `\mathsurround' on input line 1843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1835.
+(hyperref)                removing `\z@' on input line 1843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1835.
+(hyperref)                removing `math shift' on input line 1843.
 
 [32] [33] [34] [35] [36]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2090.
+(hyperref)                removing `math shift' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 2090.
+(hyperref)                removing `\@@underline' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 2090.
+(hyperref)                removing `\hbox' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 2090.
+(hyperref)                removing `\mathsurround' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 2090.
+(hyperref)                removing `\z@' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2090.
+(hyperref)                removing `math shift' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2090.
+(hyperref)                removing `math shift' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 2090.
+(hyperref)                removing `\@@underline' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 2090.
+(hyperref)                removing `\hbox' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 2090.
+(hyperref)                removing `\mathsurround' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 2090.
+(hyperref)                removing `\z@' on input line 2098.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2090.
+(hyperref)                removing `math shift' on input line 2098.
 
-[37] [38] [39]
-Underfull \hbox (badness 6775) in paragraph at lines 2269--2269
+[37] [38] [39] [40]
+Underfull \hbox (badness 6775) in paragraph at lines 2277--2277
 []\TU/lmr/m/n/10.95 because Abraham obeyed my
  []
 
-[40] [41] [42] [43] [44]
+[41] [42] [43] [44]
 Missing character: There is no ύ in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no ρ in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no ι in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no ο in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no ς in font [lmroman10-italic]:mapping=tex-text;!
- [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
-Overfull \hbox (7.19118pt too wide) in paragraph at lines 3013--3014
+ [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55]
+Overfull \hbox (7.19118pt too wide) in paragraph at lines 3021--3022
 []\TU/lmr/bx/n/10.95 Philippians 2:1-13 \TU/lmr/m/n/10.95 - So if there is any 
 encouragement in Christ, any comfort from love, any |   []
  []
 
-[55] [56] [57] [58]
-Overfull \hbox (42.22986pt too wide) in paragraph at lines 3242--3243
+[56] [57] [58] [59]
+Overfull \hbox (42.22986pt too wide) in paragraph at lines 3250--3251
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][] [] [][][][][][][][][] [] [][]
 [] [] [][][][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[] 
 
  []
 
-[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
-[74] [75] [76] [77] [78] [79] [80] [81]
-Overfull \hbox (7.19118pt too wide) in paragraph at lines 4439--4440
+[60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74]
+[75] [76] [77] [78] [79] [80] [81] [82]
+Overfull \hbox (7.19118pt too wide) in paragraph at lines 4447--4448
 []\TU/lmr/bx/n/10.95 Philippians 2:1-13 \TU/lmr/m/n/10.95 - So if there is any 
 encouragement in Christ, any comfort from love, any |   []
  []
 
-[82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96]
-[97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109]
-Overfull \hbox (219.00302pt too wide) in paragraph at lines 5920--5920
+[83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97]
+[98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110]
+Overfull \hbox (219.00302pt too wide) in paragraph at lines 5928--5928
 []\TU/lmr/bx/n/12 We are justified by faith in God who delivered up for our tre
 spasses and $[]$ 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5920.
+(hyperref)                removing `math shift' on input line 5928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 5920.
+(hyperref)                removing `\@@underline' on input line 5928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 5920.
+(hyperref)                removing `\hbox' on input line 5928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 5920.
+(hyperref)                removing `\mathsurround' on input line 5928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 5920.
+(hyperref)                removing `\z@' on input line 5928.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5920.
+(hyperref)                removing `math shift' on input line 5928.
 
-[110] [111] [112] [113]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6186.
-
+[111] [112] [113] [114]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 6186.
+(hyperref)                removing `math shift' on input line 6194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 6186.
+(hyperref)                removing `\@@underline' on input line 6194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 6186.
+(hyperref)                removing `\hbox' on input line 6194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 6186.
+(hyperref)                removing `\mathsurround' on input line 6194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 6186.
-
-[114] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125]
-[126] [127] [128] [129]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7028.
+(hyperref)                removing `\z@' on input line 6194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 7028.
+(hyperref)                removing `math shift' on input line 6194.
+
+[115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126]
+[127] [128] [129] [130]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 7051.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 7028.
+(hyperref)                removing `\@@underline' on input line 7051.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 7028.
+(hyperref)                removing `\hbox' on input line 7051.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 7028.
+(hyperref)                removing `\mathsurround' on input line 7051.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7028.
-
-[130] [131] [132] [133] [134]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7327.
+(hyperref)                removing `\z@' on input line 7051.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 7327.
+(hyperref)                removing `math shift' on input line 7051.
+
+[131] [132] [133] [134] [135] [136]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 7350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 7327.
+(hyperref)                removing `\@@underline' on input line 7350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 7327.
+(hyperref)                removing `\hbox' on input line 7350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 7327.
+(hyperref)                removing `\mathsurround' on input line 7350.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7327.
+(hyperref)                removing `\z@' on input line 7350.
 
-[135] [136] [137] [138] [139] [140] [141] [142] [143] [144] [145] [146]
-[147] [148] [149] [150] [151] [152] [153] [154]
-Overfull \hbox (176.56859pt too wide) in paragraph at lines 8446--8446
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 7350.
+
+[137] [138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148]
+[149] [150] [151] [152] [153] [154] [155] [156]
+Overfull \hbox (176.56859pt too wide) in paragraph at lines 8469--8469
 [] \TU/lmtt/m/n/10.95 5  Work/Love/Walking-By-Faith = Obedience * Faithfulness 
 * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)[] 
  []
 
 
-Overfull \hbox (44.34737pt too wide) in paragraph at lines 8446--8446
+Overfull \hbox (44.34737pt too wide) in paragraph at lines 8469--8469
 [] \TU/lmtt/m/n/10.95 7  Obedience = Submitting to the Righteousness of God * T
 urning from sin, loving, showing mercy, etc.[] 
  []
 
 
-Overfull \hbox (395.02104pt too wide) in paragraph at lines 8446--8446
+Overfull \hbox (395.02104pt too wide) in paragraph at lines 8469--8469
 [] \TU/lmtt/m/n/10.95 9  Fear-of-God = e.g. The poor in spirit recognise their 
 need of God's mercy and tremble at His Word: "beat his breast, saying, God, be 
 merciful to me, a sinner!"[] 
@@ -842,90 +842,90 @@ merciful to me, a sinner!"[]
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 Missing character: There is no ∝ in font [lmmono10-regular]:!
-[155] [156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166]
-[167] [168] [169] [170] [171]
-Overfull \hbox (5.94298pt too wide) in paragraph at lines 9362--9362
+[157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
+[169] [170] [171] [172] [173]
+Overfull \hbox (5.94298pt too wide) in paragraph at lines 9385--9385
 []\TU/lmr/bx/n/12 The measure of $[]$ and $[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 9362.
+(hyperref)                removing `math shift' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 9362.
+(hyperref)                removing `\@@underline' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 9362.
+(hyperref)                removing `\hbox' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 9362.
+(hyperref)                removing `\mathsurround' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 9362.
+(hyperref)                removing `\z@' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 9362.
+(hyperref)                removing `math shift' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 9362.
+(hyperref)                removing `math shift' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 9362.
+(hyperref)                removing `\@@underline' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 9362.
+(hyperref)                removing `\hbox' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 9362.
+(hyperref)                removing `\mathsurround' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 9362.
+(hyperref)                removing `\z@' on input line 9385.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 9362.
+(hyperref)                removing `math shift' on input line 9385.
 
-[172] [173]
+[174] [175]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 9480.
- [174] [175] [176] [177] [178] [179] [180] [181] [182] [183]
-[184] [185] [186] [187] [188] [189] [190]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 9503.
+ [176] [177] [178] [179] [180] [181] [182] [183] [184] [185]
+[186] [187] [188] [189] [190] [191] [192]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 10316.
+(hyperref)                than one, level fixed on input line 10339.
 
-[191] [192] [193] [194] [195] [196] [197] [198] [199]
-Overfull \hbox (16.0254pt too wide) in paragraph at lines 10722--10723
+[193] [194] [195] [196] [197] [198] [199] [200]
+Overfull \hbox (16.0254pt too wide) in paragraph at lines 10745--10746
 []\TU/lmr/m/n/10.95 This looks like an interesting resource about that - []$[][
 ][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][]
 [] [] [][][][][][][][][][][][][][] []
  []
 
-[200] [201] [202] [203] [204] [205]
-Overfull \hbox (176.56859pt too wide) in paragraph at lines 11136--11136
+[201] [202] [203] [204] [205] [206] [207]
+Overfull \hbox (176.56859pt too wide) in paragraph at lines 11159--11159
 [] \TU/lmtt/m/n/10.95 5  Work/Love/Walking-By-Faith = Obedience * Faithfulness 
 * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)[] 
  []
 
 
-Overfull \hbox (44.34737pt too wide) in paragraph at lines 11136--11136
+Overfull \hbox (44.34737pt too wide) in paragraph at lines 11159--11159
 [] \TU/lmtt/m/n/10.95 7  Obedience = Submitting to the Righteousness of God * T
 urning from sin, loving, showing mercy, etc.[] 
  []
 
-[206]
-Overfull \hbox (395.02104pt too wide) in paragraph at lines 11136--11136
+
+Overfull \hbox (395.02104pt too wide) in paragraph at lines 11159--11159
 [] \TU/lmtt/m/n/10.95 9  Fear-of-God = e.g. The poor in spirit recognise their 
 need of God's mercy and tremble at His Word: "beat his breast, saying, God, be 
 merciful to me, a sinner!"[] 
@@ -933,126 +933,126 @@ merciful to me, a sinner!"[]
 
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 Missing character: There is no ∝ in font [lmmono10-regular]:!
-[207] [208] [209] [210] [211] [212] [213] [214] [215]
+[208] [209] [210] [211] [212] [213] [214] [215] [216]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 11628.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 11628.
+(hyperref)                removing `math shift' on input line 11651.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 11628.
+(hyperref)                removing `\@@underline' on input line 11651.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 11628.
+(hyperref)                removing `\hbox' on input line 11651.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 11628.
+(hyperref)                removing `\mathsurround' on input line 11651.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 11628.
+(hyperref)                removing `\z@' on input line 11651.
 
-[216] [217] [218] [219] [220] [221] [222] [223] [224] [225] [226] [227]
-[228] [229]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 11651.
+
+[217] [218] [219] [220] [221] [222] [223] [224] [225] [226] [227] [228]
+[229] [230]
 Missing character: There is no 􄌹 in font [lmroman10-regular]:mapping=tex-text;!
- [230] [231] [232] [233]
-Underfull \hbox (badness 3601) in paragraph at lines 12556--12556
+ [231] [232] [233] [234]
+Underfull \hbox (badness 3601) in paragraph at lines 12579--12579
 []\TU/lmr/m/n/10.95 Messiah would be born of a
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 12562--12562
+Underfull \hbox (badness 2005) in paragraph at lines 12585--12585
 []\TU/lmr/m/n/10.95 Messiah would come from the
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 12565--12565
+Underfull \hbox (badness 4647) in paragraph at lines 12588--12588
 []\TU/lmr/m/n/10.95 Messiah would be called Im-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12573--12573
+Underfull \hbox (badness 10000) in paragraph at lines 12596--12596
 []\TU/lmr/m/n/10.95 Messiah would be called a
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 12574--12574
+Underfull \hbox (badness 4144) in paragraph at lines 12597--12597
 []\TU/lmr/m/n/10.95 Messiah would bring light to
  []
 
-[234]
-Underfull \hbox (badness 1221) in paragraph at lines 12596--12596
+[235]
+Underfull \hbox (badness 1221) in paragraph at lines 12619--12619
 []\TU/lmr/m/n/10.95 Messiah would be mocked and
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 12599--12599
+Underfull \hbox (badness 1888) in paragraph at lines 12622--12622
 []\TU/lmr/m/n/10.95 Messiah would be forsaken by
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 12601--12601
+Underfull \hbox (badness 1237) in paragraph at lines 12624--12624
 []\TU/lmr/m/n/10.95 Soldiers would pierce Messiah’s
  []
 
-[235] [236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246]
-[247] [248] [249] [250] [251] [252] [253] [254] [255] [256] [257] [258]
-[259] [260]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252] [253] [254] [255] [256] [257] [258] [259]
+[260] [261]
 Missing character: There is no 􄐺 in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 􂉢 in font [lmroman10-regular]:mapping=tex-text;!
- [261] [262] [263] [264] [265] [266] [267] [268] [269] [270]
-[271] [272] [273] [274]
+ [262] [263] [264] [265] [266] [267] [268] [269] [270] [271]
+[272] [273] [274] [275]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 14746.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 14746.
+(hyperref)                removing `math shift' on input line 14769.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 14746.
+(hyperref)                removing `\@@underline' on input line 14769.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 14746.
+(hyperref)                removing `\hbox' on input line 14769.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 14746.
+(hyperref)                removing `\mathsurround' on input line 14769.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 14746.
+(hyperref)                removing `\z@' on input line 14769.
 
-[275] [276] [277] [278]
-Overfull \hbox (21.60612pt too wide) in paragraph at lines 15006--15007
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14769.
+
+[276] [277] [278] [279]
+Overfull \hbox (21.60612pt too wide) in paragraph at lines 15029--15030
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][]$[] 
  []
 
-[279] [280] [281] [282] [283] [284] [285] [286] [287] [288] [289] [290]
-[291] [292] [293] [294] [295] [296] [297] [298] [299] [300] [301] [302]
-[303] [304] [305] [306] [307] [308] [309] [310] [311] [312] [313] [314]
-[315] [316] [317] [318] [319] [320] [321]
+[280] [281] [282] [283] [284] [285] [286] [287] [288] [289] [290] [291]
+[292] [293] [294] [295] [296] [297] [298] [299] [300] [301] [302] [303]
+[304] [305] [306] [307] [308] [309] [310] [311] [312] [313] [314] [315]
+[316] [317] [318] [319] [320] [321] [322]
 Missing character: There is no 􀧁 in font [lmroman10-regular]:mapping=tex-text;!
- [322]
-Overfull \hbox (4.60612pt too wide) in paragraph at lines 17389--17390
+ [323]
+Overfull \hbox (4.60612pt too wide) in paragraph at lines 17414--17415
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][]$[] 
  []
 
 
-Overfull \hbox (34.34987pt too wide) in paragraph at lines 17403--17404
+Overfull \hbox (34.34987pt too wide) in paragraph at lines 17428--17429
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]$[
@@ -1060,7 +1060,7 @@ Overfull \hbox (34.34987pt too wide) in paragraph at lines 17403--17404
  []
 
 
-Overfull \hbox (28.60112pt too wide) in paragraph at lines 17420--17421
+Overfull \hbox (28.60112pt too wide) in paragraph at lines 17445--17446
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][]$[] 
@@ -1068,95 +1068,95 @@ Overfull \hbox (28.60112pt too wide) in paragraph at lines 17420--17421
  []
 
 
-Overfull \hbox (34.34987pt too wide) in paragraph at lines 17436--17437
+Overfull \hbox (34.34987pt too wide) in paragraph at lines 17461--17462
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]$[
 ] 
  []
 
-[323]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 17462--17463
+[324]
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 17487--17488
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][]$[] 
  []
 
-[324] [325] [326] [327] [328]
-Overfull \hbox (176.56859pt too wide) in paragraph at lines 17798--17798
+[325] [326] [327] [328] [329]
+Overfull \hbox (176.56859pt too wide) in paragraph at lines 17823--17823
 [] \TU/lmtt/m/n/10.95 5  Work/Love/Walking-By-Faith = Obedience * Faithfulness 
 * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)[] 
  []
 
 
-Overfull \hbox (44.34737pt too wide) in paragraph at lines 17798--17798
+Overfull \hbox (44.34737pt too wide) in paragraph at lines 17823--17823
 [] \TU/lmtt/m/n/10.95 7  Obedience = Submitting to the Righteousness of God * T
 urning from sin, loving, showing mercy, etc.[] 
  []
 
 
-Overfull \hbox (395.02104pt too wide) in paragraph at lines 17798--17798
+Overfull \hbox (395.02104pt too wide) in paragraph at lines 17823--17823
 [] \TU/lmtt/m/n/10.95 9  Fear-of-God = e.g. The poor in spirit recognise their 
 need of God's mercy and tremble at His Word: "beat his breast, saying, God, be 
 merciful to me, a sinner!"[] 
  []
 
-[329]
+[330]
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 Missing character: There is no ∝ in font [lmmono10-regular]:!
- [330] [331]
-Overfull \hbox (8.86021pt too wide) in paragraph at lines 17941--17942
+ [331] [332]
+Overfull \hbox (8.86021pt too wide) in paragraph at lines 17966--17967
 []|   [] \TU/lmr/m/n/10.95 The Son
  []
 
 
-Overfull \hbox (0.99814pt too wide) in paragraph at lines 17967--17968
+Overfull \hbox (0.99814pt too wide) in paragraph at lines 17992--17993
 []|   [] \TU/lmr/m/n/10.95 The end
  []
 
 
-Overfull \hbox (103.30942pt too wide) in paragraph at lines 17987--17988
+Overfull \hbox (103.30942pt too wide) in paragraph at lines 18012--18013
 []
- []
-
-[332]
-Overfull \hbox (26.29262pt too wide) in paragraph at lines 18043--18044
-[]|   [] \TU/lmr/m/n/10.95 When Christ
  []
 
 [333]
-Overfull \hbox (192.63947pt too wide) in paragraph at lines 18063--18064
-[]
- []
-
-
-Overfull \hbox (443.05136pt too wide) in paragraph at lines 18103--18104
-[]
+Overfull \hbox (26.29262pt too wide) in paragraph at lines 18068--18069
+[]|   [] \TU/lmr/m/n/10.95 When Christ
  []
 
 [334]
-Overfull \hbox (65.31293pt too wide) in paragraph at lines 18143--18144
+Overfull \hbox (192.63947pt too wide) in paragraph at lines 18088--18089
+[]
+ []
+
+
+Overfull \hbox (443.05136pt too wide) in paragraph at lines 18128--18129
 []
  []
 
 [335]
-Overfull \hbox (5.95848pt too wide) in paragraph at lines 18193--18194
+Overfull \hbox (65.31293pt too wide) in paragraph at lines 18168--18169
+[]
+ []
+
+[336]
+Overfull \hbox (5.95848pt too wide) in paragraph at lines 18218--18219
 []|   [] \TU/lmr/m/n/10.95 Jesus will give
  []
 
 
-Overfull \hbox (17.31909pt too wide) in paragraph at lines 18213--18214
+Overfull \hbox (17.31909pt too wide) in paragraph at lines 18238--18239
 []|   []
  []
 
-[336] [337] [338] [339] [340] [341] [342] [343] [344] [345] [346] [347]
-[348] [349] [350] [351] [352] [353] [354] [355] [356] [357] [358] [359]
-[360] [361] [362] [363] [364] [365] [366] [367] [368] [369] [370] [371]
-[372] [373] [374] [375] [376] [377] [378] [379] [380] [381] [382] [383]
-[384] [385] [386] [387] [388] [389]
+[337] [338] [339] [340] [341] [342] [343] [344] [345] [346] [347] [348]
+[349] [350] [351] [352] [353] [354] [355] [356] [357] [358] [359] [360]
+[361] [362] [363] [364] [365] [366] [367] [368] [369] [370] [371] [372]
+[373] [374] [375] [376] [377] [378] [379] [380] [381] [382] [383] [384]
+[385] [386] [387] [388] [389] [390] [391]
 Missing character: There is no 􇩙 in font [lmroman10-regular]:mapping=tex-text;!
- [390] [391] [392]
+ [392] [393]
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ḵ in font [lmmono10-regular]:!
@@ -1256,6 +1256,7 @@ Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ֽ in font [lmmono10-regular]:!
 Missing character: There is no י in font [lmmono10-regular]:!
 Missing character: There is no ־ in font [lmmono10-regular]:!
+ [394]
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ה in font [lmmono10-regular]:!
 Missing character: There is no ַ in font [lmmono10-regular]:!
@@ -1315,45 +1316,45 @@ Missing character: There is no ו in font [lmmono10-regular]:!
 Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ׃ in font [lmmono10-regular]:!
 Missing character: There is no ס in font [lmmono10-regular]:!
- [393] [394] [395]
-[396] [397]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 21693--21694
+ [395] [396]
+[397] [398]
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 21742--21743
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][]$[] 
  []
 
-[398] [399] [400] [401] [402] [403] [404] [405] [406] [407] [408] [409]
-[410] [411]
+[399] [400] [401] [402] [403] [404] [405] [406] [407] [408] [409] [410]
+[411] [412] [413]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 22514.
+(hyperref)                than one, level fixed on input line 22563.
 
-[412] [413] [414] [415] [416] [417] [418] [419] [420] [421] [422]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 23172--23172
+[414] [415] [416] [417] [418] [419] [420] [421] [422] [423]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 23221--23221
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 23172--23172
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 23221--23221
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
-[423]
-Overfull \hbox (55.84486pt too wide) in paragraph at lines 23184--23184
+[424]
+Overfull \hbox (55.84486pt too wide) in paragraph at lines 23233--23233
 []\TU/lmtt/m/n/10.95 7  Nevertheless, I live to serve You, God, and to be confo
 rmed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23205.
-[424]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23205.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23254.
+[425]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 23254.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 23205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23205
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 23254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23254
 .
 
 
@@ -1363,19 +1364,19 @@ Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 (rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  0947A5CC0DDEE6CFCC3D0E13257AB731.
+(rerunfilecheck)             After:  0246BDFF30A1A9A9FD8F5B4779EF1BA7.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23205.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23254.
  ) 
 Here is how much of TeX's memory you used:
- 10847 strings out of 494868
- 152714 string characters out of 6175714
- 260408 words of memory out of 5000000
- 14682 multiletter control sequences out of 15000+600000
+ 10848 strings out of 494868
+ 152730 string characters out of 6175714
+ 259408 words of memory out of 5000000
+ 14683 multiletter control sequences out of 15000+600000
  10411 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,9n,45p,6286b,967s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,45p,6286b,968s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./faith-and-judgement.pdf (424 pages).
+Output written on ./faith-and-judgement.pdf (425 pages).
