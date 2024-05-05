@@ -27,6 +27,18 @@ cd_ls() {
 
 sn="$(basename "$0")"
 
+is_batch() {
+    # run inside script
+    # If not running interactively, don't continue
+    [ -z "$PS1" ] && return 2>/dev/null
+}
+
+if is_batch; then
+    interactive=n
+else
+    interactive=y
+fi
+
 case "$sn" in
     cri) {
         interactive=y
@@ -1748,27 +1760,31 @@ esac
 
 case "$file_type" in
     hs) {
-        if pen-yn "use interpreter?"; then
-            # zrepl -cm runhaskell "$rp"
-            if yn "cd into dir?"; then
-                cd "$dn"
-                zrepl -cm runhaskell "$fn"
+        if test "$interactive" = "y"; then
+            if pen-yn "use interpreter?"; then
+                # zrepl -cm runhaskell "$rp"
+                if yn "cd into dir?"; then
+                    cd "$dn"
+                    zrepl -cm runhaskell "$fn"
+                else
+                    zrepl -cm runhaskell "$rp"
+                fi
+                pen-pak
             else
-                zrepl -cm runhaskell "$rp"
+                cd "$td_cr"
+                ln -s "$rp"
+
+                # zrepl -cm ghc "./$fn" -o "$mant" \; ./"$mant"
+                # Need to use -E to handle the ;.
+                zrepl -cm -E "ghc \"./$fn\" -o \"$mant\" ; ./\"$mant\""
+
+                # zrepl -cm -E "( ghc \"./$fn\" -o \"$mant\" && "./$mant" \"\\\$@\" )"
+                bash
+                # And here I could use my terminal automation script to pretype
+                # the command
             fi
-            pen-pak
         else
-            cd "$td_cr"
-            ln -s "$rp"
-
-            # zrepl -cm ghc "./$fn" -o "$mant" \; ./"$mant"
-            # Need to use -E to handle the ;.
-            zrepl -cm -E "ghc \"./$fn\" -o \"$mant\" ; ./\"$mant\""
-
-            # zrepl -cm -E "( ghc \"./$fn\" -o \"$mant\" && "./$mant" \"\\\$@\" )"
-            bash
-            # And here I could use my terminal automation script to pretype
-            # the command
+            runhaskell "$rp"
         fi
         exit 0
     }
