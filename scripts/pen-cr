@@ -27,16 +27,17 @@ cd_ls() {
 
 sn="$(basename "$0")"
 
-is_batch() {
-    # run inside script
-    # If not running interactively, don't continue
-    [ -z "$PS1" ] && return 2>/dev/null
+is_terminal() {
+    # run inside terminal (this is almost everything)
+    tty -s
+
+    [ "0" == "$?" ]
 }
 
-if is_batch; then
-    interactive=n
-else
+if is_terminal; then
     interactive=y
+else
+    interactive=n
 fi
 
 case "$sn" in
