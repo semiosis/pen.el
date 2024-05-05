@@ -1404,6 +1404,10 @@ After believing in Him we must go ahead in the teaching of Christ:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
+Jesus' disciples (who had made Jesus their Lord) heard his words and were developing their belief for a while:
+
+> **John 16:29-31** - His disciples said, Ah, now you are speaking plainly and not using figurative speech! Now we know that you know all things and do not need anyone to question you; this is why we believe that you came from God. Jesus answered them, Do you now believe? (ESV)
+
 If a person truly believes Jesus is who He says He is then they have eternal life and they will go on **at some point** to do the works Jesus did:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
@@ -1639,10 +1643,6 @@ Faith is both believing and obedient, even faith in the heart:
 </tr>
 </tbody>
 </table>
-
-Jesus' disciples (who had made Jesus their Lord) heard his and were developing their belief for a while:
-
-> **John 16:29-31** - His disciples said, Ah, now you are speaking plainly and not using figurative speech! Now we know that you know all things and do not need anyone to question you; this is why we believe that you came from God. Jesus answered them, Do you now believe? (ESV)
 
 
 ### Peter was quick to belief, and his belief led to obedience
