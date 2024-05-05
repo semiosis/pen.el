@@ -161,13 +161,15 @@ born-again of the Spirit, because this is the way it happened with me, and it's 
 
 So we must receive the Holy Spirit.
 
-In this case, I believe the first baptism was a baptism of water in the name of the Lord Jesus Christ. It's also apparent that a person may receive the Holy Spirit at the time they believe:
+When the following says "they were **baptized in the name of the Lord Jesus**", I'm sure this is baptism in <ins>water</ins>. It's also apparent that a person may receive the Holy Spirit at the time they believed, and the passage also seems to suggest that believing alongside being baptized in water, the person is expected to receive the Holy Spirit:
 
 > **Acts 19:1-6** - And it happened that while Apollos was at Corinth, Paul passed through the inland country and came to Ephesus. There he found some disciples. And he said to them, **Did you receive the Holy Spirit when you believed?** And they said, No, we have not even heard that there is a Holy Spirit. And he said, Into what then were you baptized? They said, Into John's baptism. And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. On hearing this, they were **baptized in the name of the Lord Jesus**. And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying. (ESV)
 
-Again, these people were baptised in the name of the Lord Jesus, but they hadn't yet received the Holy Spirit. So the point I'd like to make is that sometimes there is some delay, or another vector for receiving the Holy Spirit, such as through the hands of the Apostles:
+Again, these people were baptised in the name of the Lord Jesus, but they hadn't yet received the Holy Spirit. So the point I'd like to make is that there may be some delay, or another vector for receiving the Holy Spirit, such as through the hands of the Apostles:
 
 > **Acts 8:14-17** - Now when the apostles at Jerusalem heard that Samaria had received the word of God, they sent to them Peter and John, who came down and prayed for them that they might receive the Holy Spirit, for he had not yet fallen on any of them, but they had only been baptized in the name of the Lord Jesus. Then they laid their hands on them and they received the Holy Spirit. (ESV)
+
+For me it was years after being baptised in water that I was born-again of the Spirit, and being born-again of the Spirit happened shortly after I had begun seeking God in truth, and repenting from sin.
 
 
 ### Water baptism is an <ins>appeal to God for a good conscience, through the resurrection of Jesus Christ</ins>
@@ -177,18 +179,24 @@ I think baptism of water is an **appeal** to God and identifying oneself into Ch
 > **I Peter 3:21** - Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ, (ESV)
 
 
-### What we really want is to be born-again and baptised by the Holy Spirit
+### What is more important, probably, is to be born-again and baptised by the Holy Spirit
 
 > **John 3:5** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
 
 And as it happened for me, the water baptism
 was a precursor to being born-again of the
-Spirit <ins>spontaneously</ins> and my Holy Spirit baptism happened
+Spirit <ins>spontaneously</ins> years later and my Holy Spirit baptism happened
 shortly after being born-again of the spirit.
 
 Therefore, I see water baptism as firstly to be baptized into Jesus Christ's name, in the names of the Father, Son and Holy Spirit,
-and as an appeal to God for a good conscience through the death and resurrection of Jesus,
-to be born-again of the Spirit and receive the Holy Spirit baptism.
+and as an appeal to God for a good conscience through the death and resurrection of Jesus, appealing also to
+be born-again of the Spirit and to receive the Holy Spirit baptism.
+
+And begin born-again of the Spirit and receiving the Holy Spirit helps us to obey God.
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+> **John 3:3-5** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.  Nicodemus said to him, How can a man be born when he is old?  Can he enter a second time into his mother's womb and be born?  Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
 
 
 ## Eventually our own will lines up with God's will
