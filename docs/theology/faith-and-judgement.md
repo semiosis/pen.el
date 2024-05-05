@@ -73,7 +73,9 @@ To get to know Jesus, we must obey His commandments:
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
-> **John 8:31-32** - So Jesus said to the Jews who had believed in him, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+**Belief** leads to **obedience** which leads to **knowledge** of the truth:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 We have to put sin away after we come to believe in Him:
 
@@ -144,6 +146,50 @@ And God helps us to do that. God changes our heart to love Him, so that we will 
 
 > **Deuteronomy 30:6** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
 
+I believe that as we believe and obey Jesus,
+God sends His Spirit to help us to obey Him.
+
+In other words, believing the gospel and repentance leads to getting born-again of the Spirit.
+
+I believe that belief and obedience to Jesus naturally comes
+**before** being born-again of the Spirit, but
+that obedience is much easier **after** being
+born-again of the Spirit, because this is the way it happened with me, and it's also scriptural.
+
+
+## Receiving the Holy Spirit
+
+So we must receive the Holy Spirit.
+
+In this case, I believe the first baptism was a baptism of water in the name of the Lord Jesus Christ. It's also apparent that a person may receive the Holy Spirit at the time they believe:
+
+> **Acts 19:1-6** - And it happened that while Apollos was at Corinth, Paul passed through the inland country and came to Ephesus. There he found some disciples. And he said to them, **Did you receive the Holy Spirit when you believed?** And they said, No, we have not even heard that there is a Holy Spirit. And he said, Into what then were you baptized? They said, Into John's baptism. And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. On hearing this, they were **baptized in the name of the Lord Jesus**. And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying. (ESV)
+
+Again, these people were baptised in the name of the Lord Jesus, but they hadn't yet received the Holy Spirit. So the point I'd like to make is that sometimes there is some delay, or another vector for receiving the Holy Spirit, such as through the hands of the Apostles:
+
+> **Acts 8:14-17** - Now when the apostles at Jerusalem heard that Samaria had received the word of God, they sent to them Peter and John, who came down and prayed for them that they might receive the Holy Spirit, for he had not yet fallen on any of them, but they had only been baptized in the name of the Lord Jesus. Then they laid their hands on them and they received the Holy Spirit. (ESV)
+
+
+### Water baptism is an <ins>appeal to God for a good conscience, through the resurrection of Jesus Christ</ins>
+
+I think baptism of water is an **appeal** to God and identifying oneself into Christ's death and resurrection but the sacrament **maybe** is not strictly required to be saved (as far as I understand).
+
+> **I Peter 3:21** - Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ, (ESV)
+
+
+### What we really want is to be born-again and baptised by the Holy Spirit
+
+> **John 3:5** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
+
+And as it happened for me, the water baptism
+was a precursor to being born-again of the
+Spirit <ins>spontaneously</ins> and my Holy Spirit baptism happened
+shortly after being born-again of the spirit.
+
+Therefore, I see water baptism as firstly to be baptized into Jesus Christ's name, in the names of the Father, Son and Holy Spirit,
+and as an appeal to God for a good conscience through the death and resurrection of Jesus,
+to be born-again of the Spirit and receive the Holy Spirit baptism.
+
 
 ## Eventually our own will lines up with God's will
 
@@ -180,6 +226,31 @@ And through our obedience to Jesus we are saved. The Bible is clear - a works-ba
 It's actually a faith-based gospel, and the works are a gift. So believing, obedient faith comes first and God works in us to change our heart to be transformed to love in the likeness of Jesus:
 
 > **Ephesians 2:8-10** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
+
+Jesus can work in a person to bring them to belief in Him.
+
+When you obey Jesus' commandments, Jesus may be working in you, and you may arrive at belief.
+
+Can a person be saved through:
+
+-   reading their Bible, or
+-   listening to the word of Christ?
+
+There are people who would say that a person is not saved through obedience to the gospel, but by making that claim they are contradicting many scriptures:
+
+> **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
+
+Like the:
+
+-   Israelites walking through the Red Sea, or
+-   Noah building the ark, or
+-   The lame man standing up to be healed
+
+Obedience to the gospel leads to eternal salvation. I believe obedience should arrive at belief, and belief should yield obedience, and **knowledge**.
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+
+Obeying Jesus is quite simply one aspect of having faith in Jesus.
 
 Jesus is the vine. We can do nothing without Jesus working through us. We just have to be a believing, willing, obedient vessel for Him:
 
@@ -585,7 +656,17 @@ Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto 
 
 > **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
 
+I think baptism of water is an **appeal** to God and identifying oneself into Christ's death and resurrection but the sacrament **maybe** is not strictly required to be saved (as far as I understand).
+
+> **Romans 6:3** - Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? (ESV)
+
 > **Romans 6:1** - What shall we say then? Are we to continue in sin that grace may abound? By no means! How can we who died to sin still live in it? Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life. For **if we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his**. We know that our old self was crucified with him in order that the body of sin might be brought to nothing, so that we would no longer be enslaved to sin. For one who has died has been set free from sin. Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but **the life he lives he lives to God.** So you also must consider yourselves dead to sin and alive to God in Christ Jesus.
+
+The most important baptism is the baptism of the Holy Spirit, and I **think** that water baptism is an appeal to partake in it:
+
+> **I Corinthians 12:13** - For in one Spirit we were all baptized into one body—Jews or Greeks, slaves or free—and all were made to drink of one Spirit. (ESV)
+
+> **I Corinthians 10:1-4** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. (ESV)
 
 Nevertheless the one who trusts in Jesus and dies will yet live. AMEN!! And the following verse, I believe actually applies to baptism (identifying with Christ in His death and resurrection)! So a nice way of reading the following is: If someone, while believing in Jesus Christ, dies to their old selfish nature to live as someone who loves selflessly, they will live, and the one who lives abiding in Jesus Christ's love, having died to their old selfish nature, and believes in Him will never die:
 
@@ -976,7 +1057,7 @@ and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm
 
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
-> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
 
@@ -1428,7 +1509,7 @@ If a person **continues to obey** Jesus they will eventually, like Thomas, arriv
 
 Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief and actual **knowledge**:
 
-> **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 
@@ -1645,6 +1726,11 @@ Faith is both believing and obedient, even faith in the heart:
 </tr>
 </tbody>
 </table>
+
+
+### Belief leads to obedience, which leads to knowledge of the Truth
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 
 ### Peter was quick to belief, and his belief led to obedience
@@ -1890,7 +1976,7 @@ I believe that a person does not have any <ins>security</ins> of eternal salvati
 
 The knowledge of the truth is for those who abide in Jesus' word and follow Him:
 
-> **John 8:31-32** - So Jesus said to the Jews who had believed in him, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 I believe that obedience is as intrinsic and necessary to faith as belief is.
 
@@ -4903,7 +4989,7 @@ Faith:
 -   Belief and Obedience => true knowledge => fruit
     -   Belief and obedience leads to true knowledge, and after true knowledge, fruit
 
-> **John 8:31-32** - So Jesus said to the Jews who had believed in him, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Also, the Old Testament speaks a lot about how to walk in righteousness:
 
@@ -8122,7 +8208,7 @@ Servants of Jesus who are servants of God encounter resistance from the world:
 
 > **Hebrews 10:38** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
 
-> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **Hebrews 10:38** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
 
@@ -8161,7 +8247,7 @@ Endurance is important:
 
 A disciple of Jesus is a servant of Jesus:
 
-> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 It requires letting go of this world:
 
@@ -9450,35 +9536,59 @@ In Spyridon's words, "Paradise will not be filled with sinless people - it will 
 
 # Sermon on the mount
 
-Those who mourn will be comforted.
+
+## Those who mourn will be comforted
 
 > **Matthew 5:4** - Blessed are those who mourn, for they shall be comforted.
 
-The earth may be inherited.
+
+## The earth may be inherited
 
 > **Matthew 5:5** - Blessed are the meek, for they shall inherit the earth.
 
-Those who hunger and thirst for righteousness will be satisfied.
+
+## Those who hunger and thirst for righteousness will be satisfied
 
 > **Matthew 5:6** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
 
-The merciful shall receive mercy.
+
+## The merciful shall receive mercy
 
 > **Matthew 5:7** - Blessed are the merciful, for they shall receive mercy.
 
-Without holiness, no-one will see the Lord.
+
+## Without holiness, no-one will see the Lord
 
 > **Matthew 5:8** - Blessed are the pure in heart, for they shall see God.
 
-Th peacemakers shall be called sons of God.
+
+## The peacemakers shall be called sons of God
 
 > **Matthew 5:9** - Blessed are the peacemakers, for they shall be called sons of God.
 
-The kingdom of heaven may be inherited.
+Jesus didn't come to bring peace on <ins>earth</ins>, but division:
+
+> **Luke 12:51** - Do you think that I have come to give peace on earth? No, I tell you, but rather division. (ESV)
+
+The peace Jesus brings is peace in Christ:
+
+> **I Peter 5:14** - Greet one another with the kiss of love. Peace to all of you who are in Christ. (ESV)
+
+> **I Thessalonians 5:13** - and to esteem them very highly in love because of their work. Be at peace among yourselves. (ESV)
+
+> **Philippians 4:7** - And the peace of God, which surpasses all understanding, will guard your hearts and your minds **in Christ Jesus**. (ESV)
+
+> **Colossians 1:21-22** - And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, (ESV)
+
+
+## The kingdom of heaven may be inherited
 
 > **Matthew 5:10** - Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven.
 
 > **Matthew 5:3-9** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
+
+
+## Rejoicing with all the slander which has come against me has not been easy
 
 > **Matthew 5:11-13**  Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet.
 
@@ -9830,7 +9940,7 @@ Loving the way Jesus loves is a **requirement**!
 
 Keeping Jesus' commandments is obeying Jesus. Obedience to Jesus is a requirement of a Christian - obedience in the heart, which translates into deeds.
 
-> **John 8:31** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **John 13:35** - By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
@@ -9883,7 +9993,7 @@ Father God authorizes people to come to Jesus, but that person must come to Jesu
 
 > **John 6:61-65** - But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this?  Then what if you were to see the Son of Man ascending to where he was before?  It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.  But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And he said, This is why I told you that no one can come to me unless it is granted him by the Father.
 
-> **John 8:31-32** - So Jesus said to the Jews who had believed in him, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **John 15:3-4** - Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.
 
@@ -11594,6 +11704,8 @@ However, I believe keeping Jesus' word and obeying Jesus also leads to communion
 
 
 ## His name: Jesus Christ, the Son of God
+
+> **Luke 1:31-35** - And behold, you will conceive in your womb and bear a son, and you shall call his name Jesus. He will be great and will be called the Son of the Most High. And the Lord God will give to him the throne of his father David, and he will reign over the house of Jacob forever, and of his kingdom there will be no end. And Mary said to the angel, How will this be, since I am a virgin? And the angel answered her, The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God. (ESV)
 
 > **Acts 3:16** - And his name-by faith in his name-has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.??
 
@@ -16854,6 +16966,11 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 I was spiritually bankrupt and I knew I needed God's help.
 
 > **Ephesians 2:4-5** - But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
+
+
+### I was spiritually blind
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
 
 
 ### My spiritual senses were enabled
