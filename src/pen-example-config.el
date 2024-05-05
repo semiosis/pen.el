@@ -1363,6 +1363,8 @@
 (require 'pen-handle)
 (define-key global-map (kbd "s-h") 'fz-run-handle)
 ;; Use <help> for handle bindings
+(define-key global-map (kbd "s-H c") 'handle-compile)
+(define-key global-map (kbd "C-c C-p") 'compile)
 (define-key global-map (kbd "s-H x") 'handle-runfunc)
 (define-key global-map (kbd "s-H T") 'handle-toggle-test)
 (define-key global-map (kbd "s-H t") 'handle-toggle-test)

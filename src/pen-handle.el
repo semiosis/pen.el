@@ -500,6 +500,7 @@
         :nexterr '()
         :preverr '()
         :complete '()
+        :compile '(compile-run-compile)
         :rc '())
 
 (handle '(text-mode)

@@ -9601,6 +9601,11 @@ The peace Jesus brings is peace in Christ:
 > **Matthew 5:11-13**  Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet.
 
 
+### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time
+
+> **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
+
+
 # The Kingdom of God
 
 After I got born-again I started getting dreams with themes of the 'Kingdom of God', and also through interactions I began having with people, while I was pursuing following Jesus' commandments, etc. So my 'evidence' is a personal conviction that comes through faith in Jesus which has been working.
@@ -14286,6 +14291,8 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
 
 > **Matthew 5:44-45** - But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. (ESV)
 
+> **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you?  Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
+
 > **Matthew 5:48** - You therefore must be perfect, as your heavenly Father is perfect. (ESV)
 
 
@@ -14312,7 +14319,50 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
 
 ### How to fast
 
+[A Guide to Prayer and Fasting - General Assembly](https://pcaga.org/united-prayer/a-guide-to-prayer-and-fasting/)
+
+    1  fasting
+    2      The self-denial of some or all food or
+    3      drink as the faithful express their
+    4      intense concerns to God in special times
+    5      of prayer and worship.
+
 > **Matthew 6:16-18** - And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
+
+When you fast:
+
+-   anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret
+-   Pray:
+    -   your Father knows what you need before you ask him
+-   also, fast for those who persecute you
+-   use Scripture
+-   praise and worship the Lord
+
+Be humble while fasting and supplicating to God:
+
+> **Isaiah 58:4-6** - Behold, you fast only to quarrel and to fight and to hit with a wicked fist. Fasting like yours this day will not make your voice to be heard on high. Is such the fast that I choose, a day for a person to humble himself? Is it to bow down his head like a reed, and to spread sackcloth and ashes under him? Will you call this a fast, and a day acceptable to the LORD? Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke? (ESV)
+
+Some manuscripts include 'fasting' in [Mark 9:29](https://hermeneutics.stackexchange.com/questions/13601/omission-of-fasting-in-mark-929):
+
+> **Mark 9:29** - And he said to them, This kind cannot be driven out by anything but prayer. (ESV)
+
+> **Mark 9:29** - And He said to them, “This kind cannot come out by anything but prayer.” (NASB)
+
+> **Mark 9:29** - And he said unto them, This kind can come forth by nothing, but by prayer **and fasting**. (KJV)
+
+> **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you?  Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
+
+Use Scripture while fasting:
+
+> **Matthew 4:1-4** - Then Jesus was led up by the Spirit into the wilderness to be tempted by the devil. And after fasting forty days and forty nights, he was hungry. And the tempter came and said to him, If you are the Son of God, command these stones to become loaves of bread. But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
+
+Praise and worship the Lord while fasting:
+
+> **Acts 13:2** - While they were worshiping the Lord and fasting, the Holy Spirit said, Set apart for me Barnabas and Saul for the work to which I have called them. (ESV)
+
+Pray while fasting:
+
+> **Acts 14:23** - And when they had appointed elders for them in every church, with prayer and fasting they committed them to the Lord in whom they had believed. (ESV)
 
 
 ### 
@@ -14808,6 +14858,12 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
 ### 
 
 > **Luke 6:27-28** - But I say to you who hear, Love your enemies, do good to those who hate you, bless those who curse you, pray for those who abuse you. (ESV)
+
+We should pray for our enemies and bless those who curse us. After all, at one time I was myself in the dark, and we are not fighting against flesh and blood.
+
+> **Proverbs 24:17-18** - Do not rejoice when your enemy falls, and let not your heart be glad when he stumbles, lest the LORD see it and be displeased, and turn away his anger from him. (ESV)
+
+> **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
 
 
 ### 
