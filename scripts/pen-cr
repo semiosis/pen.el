@@ -27,14 +27,10 @@ cd_ls() {
 
 sn="$(basename "$0")"
 
-is_terminal() {
-    # run inside terminal (this is almost everything)
-    tty -s
+# is_tty works for detecting the different between a tty and compilation-mode in emacs
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
 
-    [ "0" == "$?" ]
-}
-
-if is_terminal; then
+if is_tty; then
     interactive=y
 else
     interactive=n
