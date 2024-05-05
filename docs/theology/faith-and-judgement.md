@@ -1404,6 +1404,36 @@ After believing in Him we must go ahead in the teaching of Christ:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
+If a person truly believes Jesus is who He says He is then they have eternal life and they will go on **at some point** to do the works Jesus did:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+Like the Apostle Peter, they may be **quick** to belief, and stumble their way to obedience:
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it. (ESV)
+
+Thomas had extreme love towards Jesus and obedience to following Jesus:
+
+> **John 11:8** - The disciples said to him, Rabbi, the Jews were just now seeking to stone you, and are you going there again? (ESV)
+
+> **John 11:16** - So Thomas, called the Twin, said to his fellow disciples, Let us also go, that we may die with him. (ESV)
+
+If a person obeys Jesus they will eventually, like Thomas, arrive at the Truth and believe Jesus is who He says He is.
+
+> **John 20:27-31** - Then he said to Thomas, Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe. Thomas answered him, My Lord and my God! Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed. Now Jesus did many other signs in the presence of the disciples, which are not written in this book; but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+
+Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief:
+
+> **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. (ESV)
+
+> **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+
+And I believe too that we must arrive at willing to do the will of God:
+
+> **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+
+> **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him,
+
 Jesus loved us before we loved Him:
 
 > **I John 4:19** - We love because he first loved us. (ESV)
@@ -1609,6 +1639,37 @@ Faith is both believing and obedient, even faith in the heart:
 </tr>
 </tbody>
 </table>
+
+Jesus' disciples (who had made Jesus their Lord) heard his and were developing their belief for a while:
+
+> **John 16:29-31** - His disciples said, Ah, now you are speaking plainly and not using figurative speech! Now we know that you know all things and do not need anyone to question you; this is why we believe that you came from God. Jesus answered them, Do you now believe? (ESV)
+
+
+### Peter was quick to belief, and his belief led to obedience
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it. (ESV)
+
+Peter's obedience wasn't perfect after that, but His belief did lead to doing works that Jesus Himself did.
+
+Peter's belief and obedience worked together for a miracle but He wavered:
+
+> **Matthew 14:28-33** - And Peter answered him, Lord, if it is you, command me to come to you on the water. He said, Come. So Peter got out of the boat and walked on the water and came to Jesus. But when he saw the wind, he was afraid, and beginning to sink he cried out, Lord, save me. Jesus immediately reached out his hand and took hold of him, saying to him, O you of little faith, why did you doubt? And when they got into the boat, the wind ceased. And those in the boat worshiped him, saying, Truly you are the Son of God. (ESV)
+
+
+### Thomas was following Jesus around for a long time and was slow to belief, but arrived
+
+His obedience eventually led to belief. This is in line with the gospel.
+
+> **John 20:27-31** - Then he said to Thomas, Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe. Thomas answered him, My Lord and my God! Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed. Now Jesus did many other signs in the presence of the disciples, which are not written in this book; but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+
+> **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
+Then obeying Jesus and believing His words leads to Jesus:
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
+
+### Believing Jesus
 
 The drink is to believe that Jesus is the Christ (Messiah), the Son of God, who has come into the world:
 
