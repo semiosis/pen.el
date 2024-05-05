@@ -1422,11 +1422,11 @@ Thomas had extreme love towards Jesus and obedience to following Jesus:
 
 > **John 11:16** - So Thomas, called the Twin, said to his fellow disciples, Let us also go, that we may die with him. (ESV)
 
-If a person obeys Jesus they will eventually, like Thomas, arrive at the Truth and believe Jesus is who He says He is.
+If a person **continues to obey** Jesus they will eventually, like Thomas, arrive at the Truth and believe Jesus is who He says He is.
 
 > **John 20:27-31** - Then he said to Thomas, Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe. Thomas answered him, My Lord and my God! Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed. Now Jesus did many other signs in the presence of the disciples, which are not written in this book; but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
 
-Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief:
+Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief and actual **knowledge**:
 
 > **John 8:31-32** - So Jesus said to the Jews who had believed in him, If you abide in my word, you are truly my disciples, and you will know the truth, and the truth will set you free. (ESV)
 
@@ -1450,7 +1450,7 @@ If a person believes on Jesus and what He has accomplished they should arrive at
 
 > **John 15:10-14** - <ins>If you keep my commandments, you will abide in my love,</ins> just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. You are my friends <ins>if you do what I command you.</ins>
 
-I think faith in Jesus grows as both of these qualities increase.
+I think faith in Jesus grows as both of these qualities increase, and leads to actual knowledge of Christ:
 
 -   Whoever believes in Jesus Christ, the Only-Begotten Son of God, is not condemned.
 -   Otherwise, those who don't believe that fully and do not obey the gospel, I think fall into condemnation.
@@ -1459,6 +1459,8 @@ I think faith in Jesus grows as both of these qualities increase.
 Nevertheless, if someone believes on Him they have begun to obey Him, and so I believe they are in the Lord while they **trust in His name, Jesus Christ (Messiah) the Son of God, to be saved**, as the following applies:
 
 > **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+
+We still have life in Jesus Christ's name while we believe that Jesus is the Christ, the Son of God:
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
 
@@ -7935,13 +7937,30 @@ I made these equations to describe my understanding that faith is actually close
     22  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
     23  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
-But salvation is a gift and God is sovereign to save.
-That's why it's grace.
-Saved by grace through faith.
+But salvation is a gift and God is sovereign to save. That's why it's grace.
+Saved by grace through faith. Yet actual obedience to the gospel of Jesus is merely Jesus working through us. When a person truly believes then they naturally obey.
 
-I think a person needs **some** faith to be saved, and faith works. Salvation has to be accepted.
+I think a person needs **some** faith to be
+saved, and faith naturally produces work and
+any work done out of obedience to Jesus is
+Jesus' work.
+
+Salvation has to be accepted.
+
+I believe the explanation for the 'apparent
+paradox' of salvation by faith alone or
+salvation by 'faith\*works' is that while truly
+obeying God, it's actually God working through
+you, just as the Israelites obeyed God and
+went through the Red Sea, or when Noah obeyed
+God and built the Ark.
+
+We are saved by faith alone but that is not a
+reason to discourage people from obeying the gospel by the false (in my opinion) doctrine that 'faith and obedience' are mutually exclusive:
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+
+> **II Thessalonians 1:8** - in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. (ESV)
 
 > **James 1:21-22** - Therefore put away all filthiness and rampant wickedness and <ins>receive with meekness the implanted word, which is able to save your souls.</ins> But <ins>be doers of the word, and not hearers only, deceiving yourselves.</ins> (ESV)
 
@@ -11920,6 +11939,8 @@ If they do, however, endorse it then I think that inhibits them from approaching
 I believe that **the Holy Spirit** goes to those who obey God. I believe belief in Jesus comes first.
 
 > **Acts 2:38** - And Peter said to them, Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of **the Holy Spirit**. (ESV)
+
+And that if a person begins to repent and actually seek God then the Holy Spirit will come to you at some point:
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
 
