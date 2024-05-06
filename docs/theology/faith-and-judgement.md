@@ -142,6 +142,10 @@ We can repent from sin as an act of obedient faith to God:
 
 > **Jeremiah 4:4** - **Circumcise yourselves to the LORD**; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
 
+It's simultaneous:
+
+> **James 4:8** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
+
 And God helps us to do that. God changes our heart to love Him, so that we will live:
 
 > **Deuteronomy 30:6** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
@@ -12045,7 +12049,7 @@ But sin is rather described in such a way:
 
 We must instead be led by the Spirit:
 
-> **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And those who belong to Christ Jesus have crucified the flesh with its passions and desires. If we live by the Spirit, let us also walk by the Spirit. (ESV)
+> **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
 > **I Thessalonians 3:13** - so that He may establish your hearts without blame in holiness before our God and Father at the coming of our Lord Jesus with all His saints.
 
@@ -12359,7 +12363,7 @@ The universe is upheld by the word of Jesus' power.
     
     We must instead be led by the Spirit, and follow Christ Jesus:
     
-    > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And those who belong to Christ Jesus have crucified the flesh with its passions and desires. If we live by the Spirit, let us also walk by the Spirit. (ESV)
+    > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
 
 ### God's kingdom is from Heaven to Earth
@@ -14075,7 +14079,7 @@ Be perfect as your heavenly Father is perfect:
 
 Be accountable to God. Do not seek reward from others but from God. Focus on spiritual disciplines for the right reasons.
 
-> **Matthew 6:1-18** - Beware of practicing your righteousness before other people in order to be seen by them, for then you will have no reward from your Father who is in heaven. Thus, when you give to the needy, sound no trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may be praised by others. Truly, I say to you, they have received their reward. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. And your Father who sees in secret will reward you. And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and at the street corners, that they may be seen by others. Truly, I say to you, they have received their reward. But when you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you. And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him. Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil. For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
+> **Matthew 6:1-18** - Beware of practicing your righteousness before other people in order to be seen by them, for then you will have no reward from your Father who is in heaven. Thus, when you give to the needy, sound no trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may be praised by others. Truly, I say to you, they have received their reward. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. And your Father who sees in secret will reward you. And when you pray, you must not be like the hypocrites. For they love to stand and pray in the synagogues and at the street corners, that they may be seen by others. Truly, I say to you, they have received their reward. But when you pray, go into your room and shut the door and pray to your Father who is in secret. And your Father who sees in secret will reward you. And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him. Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil. For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that **your fasting may not be seen by others but by your Father** who is in secret. And your Father who sees in secret will reward you. (ESV)
 
 Have a relationship with God:
 
@@ -14327,11 +14331,13 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
     4      intense concerns to God in special times
     5      of prayer and worship.
 
-> **Matthew 6:16-18** - And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret. And your Father who sees in secret will reward you. (ESV)
+> **Matthew 6:16-18** - And when you fast, do not look gloomy like the hypocrites, for they disfigure their faces that their fasting may be seen by others. Truly, I say to you, they have received their reward. But when you fast, **anoint your head and wash your face**, that **your fasting may not be seen by others but by your Father** who is in secret. And your Father who sees in secret will reward you. (ESV)
 
 When you fast:
 
--   anoint your head and wash your face, that your fasting may not be seen by others but by your Father who is in secret
+-   anoint your head and wash your face
+    -   that **your fasting may not be seen by others but by your Father** who is in secret
+    -   don't even tell anyone
 -   pray while you fast:
     -   your Father knows what you need before you ask him
     -   pray in secret
@@ -14340,6 +14346,30 @@ When you fast:
 -   also, fast for those who persecute you
 -   be prepared with Scripture, and use it
 -   praise and worship the Lord
+
+Just fast for God, and focus on God:
+
+> **James 4:8** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
+
+Go for about a month month, or 40 days, just go without:
+
+-   breakfast
+-   lunch
+-   coffee
+
+Focus:
+
+-   more on prayer
+-   more on meditating on Jesus' commandments
+-   willing God's will and not your own
+
+Be:
+
+-   repentant
+
+Repent while fasting:
+
+> **Joel 2:12-17** - Yet even now, declares the LORD, return to me with all your heart, with fasting, with weeping, and with mourning; and rend your hearts and not your garments. Return to the LORD, your God, for he is gracious and merciful, slow to anger, and abounding in steadfast love; and he relents over disaster. Who knows whether he will not turn and relent, and leave a blessing behind him, a grain offering and a drink offering for the LORD your God? Blow the trumpet in Zion; consecrate a fast; call a solemn assembly; gather the people. Consecrate the congregation; assemble the elders; gather the children, even nursing infants. Let the bridegroom leave his room, and the bride her chamber. Between the vestibule and the altar let the priests, the ministers of the LORD, weep and say, Spare your people, O LORD, and make not your heritage a reproach, a byword among the nations. Why should they say among the peoples, Where is their God? (ESV)
 
 Be humble while fasting and supplicating to God:
 
@@ -14353,9 +14383,19 @@ Some manuscripts include 'fasting' in [Mark 9:29](https://hermeneutics.stackexch
 
 > **Mark 9:29** - And he said unto them, This kind can come forth by nothing, but by prayer **and fasting**. (KJV)
 
+We should fast to seek the LORD and we should fast together for a common purpose:
+
+> **II Chronicles 20:3** - Then Jehoshaphat was afraid and set his face to seek the LORD, and proclaimed a fast throughout all Judah. (ESV)
+
+> **Didache 7** - &#x2026; But before the baptism let the baptizer fast, and the baptized, **and whoever else can**; but you shall order the baptized to fast one or two days before.
+
+We should even fast for the sake of others:
+
 > **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you?  Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
 
-Use Scripture while fasting:
+> **Ezra 10:6** - Then Ezra withdrew from before the house of God and went to the chamber of Jehohanan the son of Eliashib, where he spent the night, neither eating bread nor drinking water, for he was mourning over the faithlessness of the exiles. (ESV)
+
+Use Scripture while fasting. Fast for days, or weeks:
 
 > **Matthew 4:1-4** - Then Jesus was led up by the Spirit into the wilderness to be tempted by the devil. And after fasting forty days and forty nights, he was hungry. And the tempter came and said to him, If you are the Son of God, command these stones to become loaves of bread. But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
 
@@ -14367,8 +14407,16 @@ Pray while fasting:
 
 > **Acts 14:23** - And when they had appointed elders for them in every church, with prayer and fasting they committed them to the Lord in whom they had believed. (ESV)
 
+Repentance in the heart:
 
-### 
+> **Psalms 69:10** - When I wept and humbled my soul with fasting, it became my reproach. (ESV)
+
+> **Psalms 69:10** - When I wept in my soul with fasting, It became my reproach. (NASB)
+
+> **Psalms 69:10** - When I wept, and chastened my soul with fasting, that was to my reproach. (KJV)
+
+
+### Lay up treasure in heaven, not on earth - have your heart in heaven, not on earth
 
 > **Matthew 6:19-21** - Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also. (ESV)
 
@@ -14386,7 +14434,7 @@ Pray while fasting:
 > **Matthew 6:34** - Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
 
 
-### 
+### Seek first the Kingdom of God and His righteousness
 
 > **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
 
@@ -15849,7 +15897,7 @@ Jesus made the Way - He **is** the Way:
 -   the many
 
 
-## We have free will
+## We have free will, but the Holy Spirit helps us and dwells with us and comes to be in us
 
 We're supposed to do the will of God from the heart:
 
@@ -15863,6 +15911,10 @@ If you keep Jesus' commandments then the Spirit of Truth will come to you, and h
 
 > **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
 
+Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person. It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
+
+> **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
+
 We obey Jesus to be saved:
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
@@ -15871,7 +15923,11 @@ We obey Jesus to receive the Holy Spirit:
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins>
 
-This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
+Jesus certainly suggests here that by believing and obeying Jesus' commandments, we can receive the Holy Spirit. Walking by Jesus' words and commandments is walking by the Spirit:
+
+> **John 6:63-65** - It is <ins>the Spirit who gives life</ins>; the flesh is of no avail. <ins>The words that I have spoken to you are spirit and life.</ins> But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And He was saying, “For this reason I have said to you, that no one can come to Me unless it has been granted him from the Father.”
+
+This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit inside of us.
 
 The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
 
@@ -16349,6 +16405,7 @@ The sons of God on earth who are being adopted by God:
 
 -   are led by the Spirit
     -   obeying Jesus Christ
+    -   crucified the flesh with its passions and desires
 -   are sons of Abraham, with the faith of Abraham
     -   demonstrating the faith that Abraham had
 -   have had faith in Jesus Christ's name
@@ -16356,6 +16413,12 @@ The sons of God on earth who are being adopted by God:
 -   await their adoption as sons when our bodies are redeemed
 -   have the creation eagerly longing for their revealing
 -   have heard God and had faith
+
+Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person. It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
+
+> **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
+
+Walking by the Spirit I believe looks like following Jesus' commandments:
 
 > **Romans 8:14-23** - For <ins>all who are led by the Spirit of God are sons of God.</ins> For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, <ins>provided we suffer with him in order that we may also be glorified with him.</ins> For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us. For the creation waits with eager longing for the revealing of the sons of God. For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. For we know that the whole creation has been groaning together in the pains of childbirth until now. And not only the creation, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as <ins>we wait eagerly for adoption as sons, the redemption of our bodies.</ins> (ESV)
 
