@@ -65,7 +65,7 @@ Belief in Jesus Christ turns to obedience, and imitating Christ:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
-As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -76,6 +76,18 @@ To get to know Jesus, we must obey His commandments:
 **Belief** leads to **obedience** which leads to **knowledge** of the truth:
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+
+Eternal life is knowing God and Jesus Christ who He has sent:
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+We need to take hold of it:
+
+> **I Timothy 6:12** - Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
+
+We should labor for the food that endures to eternal life:
+
+> **John 6:27** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal. (ESV)
 
 We have to put sin away after we come to believe in Him:
 
@@ -203,6 +215,11 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 > **John 3:3-5** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God.  Nicodemus said to him, How can a man be born when he is old?  Can he enter a second time into his mother's womb and be born?  Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
 
 
+### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
+
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+
 ## Eventually our own will lines up with God's will
 
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
@@ -284,7 +301,7 @@ Believing is an initial act of obedience before continuing in the teaching of Ch
 
 > **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
 
-As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -444,6 +461,62 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 > **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
 
 > **John 1:29** - The next day he saw Jesus coming toward him, and said, Behold, the Lamb of God, who takes away the sin of the world! (ESV)
+
+
+### Observing Jesus, continuing to believe in Him and believe His words and abide in His word, we will live forever
+
+We should be led into the knowledge of the Truth:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+
+We should come into a relationship with Jesus Christ and with Father God:
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+Anyone who believes in Jesus Christ, the Only Son of God, is not condemned. But the person who is not believing in Jesus Christ, the Only Son of God is condemned already:
+
+> **John 3:18** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+
+There is always more chances to believe:
+
+> **Romans 11:23-24** - And even they, if they do not continue in their unbelief, will be grafted in, for God has the power to graft them in again. For if you were cut from what is by nature a wild olive tree, and grafted, contrary to nature, into a cultivated olive tree, how much more will these, the natural branches, be grafted back into their own olive tree. (ESV)
+
+In believing we have eternal life, but we need to continue in obedience to Jesus Christ:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. But the enemy will certainly try to condemn the person after they are born-again:
+
+> **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+If we actually believe Jesus Christ is who He says He is, the Son of God, Messiah, we are not condemned.
+We're never condemned if we are believing in Jesus Christ, Son of God:
+
+> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst. (ESV)
+
+If you look upon Jesus Christ and believe in Him, you should have eternal life:
+
+> **John 6:40-44** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. So the Jews grumbled about him, because he said, I am the bread that came down from heaven. They said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does he now say, I have come down from heaven? Jesus answered them, Do not grumble among yourselves. No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. (ESV)
+
+> **John 6:47-51** - Truly, truly, I say to you, whoever believes has eternal life. I am the bread of life. Your fathers ate the manna in the wilderness, and they died. This is the bread that comes down from heaven, so that one may eat of it and not die. I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh. (ESV)
+
+> **John 6:53-58** - So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day. For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. As the living Father sent me, and I live because of the Father, so whoever feeds on me, he also will live because of me. This is the bread that came down from heaven, not as the fathers ate and died. Whoever feeds on this bread will live forever. (ESV)
+
+Eternal life is given to anyone who believes in Him. I guess there are simply some things I wont understand fully. But I do believe it:
+
+> **John 6:47** - Truly, truly, I say to you, whoever believes has eternal life. (ESV)
+
+In this current time (world) we may receive more than we lose for the sake of the kingdom, and eternal life is also received in the age to come:
+
+> **Luke 18:29-30** - And he said to them, Truly, I say to you, there is no one who has left house or wife or brothers or parents or children, for the sake of the kingdom of God, who will not receive many times more in this time, and **in the age to come eternal life**. (ESV)
+
+I do not affirm all religions. But I affirm **Romans 10:9**. I affirm that individual people are saved through belief and I think it should be true believe that's in the heart:
+
+> **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
+And out of the heart should flow rivers of living water. Now that re-emphasises that belief should be in the heart:
+
+> **John 7:38** - Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water. (ESV)
 
 
 ### We are saved by grace through faith in Jesus Christ
@@ -1201,6 +1274,10 @@ The demons have belief, but they don't have a response of love towards God:
 
 > **James 2:19** - You believe that God is one; you do well. Even the demons believe—and shudder! (ESV)
 
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
+
+> **John 8:44** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
+
 In response to forgiveness, we must love:
 
 > **Luke 7:47** - Therefore I tell you, her sins, which are many, are forgiven—for she loved much. But he who is forgiven little, loves little. (ESV)
@@ -1315,7 +1392,11 @@ If you keep Jesus' commandments then the Spirit of Truth will come to you, and h
 
 > **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
 
-This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
+The above definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
+
+We receive of God's Spirit. That is how we **know** we abide in Him:
+
+> **I John 4:13** - By this we know that we abide in him and he in us, because he has given us of his Spirit. (ESV)
 
 
 ### <ins>Faith</ins> in Jesus Christ's name to be saved
@@ -1744,6 +1825,28 @@ Faith is both believing and obedient, even faith in the heart:
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
+Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe:
+
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
+
+Willing to actually do the will of God, you'll receive revelation:
+
+> **John 7:17** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. (ESV)
+
+In seeking God, and coming to Jesus, we must believe that God exists and that in seeking Him, God rewards them:
+
+> **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
+
+We come to Jesus by faith and not by sight:
+
+> **Hebrews 11:1** - Now faith is the assurance of things hoped for, the conviction of things not seen. (ESV)
+
+> **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
+
+We must come to Jesus for eternal life:
+
+> **John 5:39-40** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
+
 
 ### Peter was quick to belief, and his belief led to obedience
 
@@ -2002,7 +2105,7 @@ I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
 
-As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -2640,6 +2743,21 @@ So to receive the Holy Spirit:
 -   lay your life down for Jesus
 
 
+## The work of the Holy Spirit
+
+
+### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
+
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+
+### Teaching us, leading us into the Truth
+
+> **John 16:13** - When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. (ESV)
+
+> **I John 2:27** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
+
+
 ## Becoming a servant, humbling oneself and following Jesus is what we should do
 
 A religious spirit is:
@@ -3137,6 +3255,10 @@ Jesus says that Jehovah God gave Him His name:
 
 > **John 17:11** - And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one. (ESV)
 
+Father God has a voice and a form, and sent Jesus:
+
+> **John 5:37-38** - And the Father who sent me has himself borne witness about me. His voice you have never heard, his form you have never seen, and you do not have his word abiding in you, for you do not believe the one whom he has sent. (ESV)
+
 I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
@@ -3186,6 +3308,14 @@ And eventually His commandments become unburdensome, and we're keeping them, and
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
+Also, the Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us, and eventually will be **in** us:
+
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+Also, it's important to purify ourselves, as we hope in Him:
+
+> **I John 3:1-3** - See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. And everyone who thus hopes in him purifies himself as he is pure. (ESV)
+
 
 ### Jesus has overcome the world
 
@@ -3194,6 +3324,8 @@ And eventually His commandments become unburdensome, and we're keeping them, and
 > **John 15:7** - If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. (ESV)
 
 AMEN!!
+
+> **I John 5:12-15** - Whoever has the Son has life; whoever does not have the Son of God does not have life. I write these things to you who believe in the name of the Son of God that you may know that you have eternal life. And this is the confidence that we have toward him, that **if we ask anything according to his will he hears us**. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him. (ESV)
 
 That's really good news for us:
 
@@ -3226,6 +3358,8 @@ Jesus Christ is our God. Forever, He is Father God's revelation to us of Himself
 
 
 ### Believe Jesus and allow His word to abide in you
+
+> **John 5:46-47** - If you believed Moses, you would believe me; for he wrote of me. But if you do not believe his writings, how will you believe my words? (ESV)
 
 > **Proverbs 7:1-3** - <ins>My son, keep my words and treasure up my commandments with you; keep my commandments and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart.</ins>
 
@@ -3448,7 +3582,11 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
     
-    It's the same gospel:
+    It's the same gospel. We must follow the light: Jesus:
+    
+    > **John 12:44-47** - And Jesus cried out and said, Whoever believes in me, believes not in me but in him who sent me. And whoever sees me sees him who sent me. I have come into the world as light, so that whoever believes in me may not remain in darkness. If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world. (ESV)
+    
+    It's the same gospel. We must follow the light: Jesus:
     
     > **Mark 8:35** - For whoever would save his life will lose it, but whoever loses his life for my sake and the gospel's will save it. (ESV)
     
@@ -3558,6 +3696,19 @@ I know I can testify to this fiery trial being a real thing:
 > **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
 
 
+### If we trust in the name of the Son of God, Jesus Christ, we have eternal life
+
+> **I John 5:10-13** - Whoever believes in the Son of God has the testimony in himself. Whoever does not believe God has made him a liar, because he has not believed in the testimony that God has borne concerning his Son. And this is the testimony, that God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life. I write these things to you who believe in the name of the Son of God that you may know that you have eternal life. (ESV)
+
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+You **must** obey Jesus, and that is choosing **light** and choosing **love**:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+
 ### Get to know Jesus by following His commandments
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
@@ -3571,6 +3722,14 @@ You can't have an abundant life without knowing Jesus, so we must have faith in 
 You must obey Jesus:
 
 > **John 3:36** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+We want to go ahead towards knowledge of Jesus, and not remain in darkness:
+
+> **John 12:46** - I have come into the world as light, so that whoever believes in me may not remain in darkness. (ESV)
+
+In believing and obeying Jesus, we have the Son:
+
+> **I John 5:12** - Whoever has the Son has life; whoever does not have the Son of God does not have life. (ESV)
 
 We must obey God. We have faith in God who was delivered up for our trespasses and raised for our justification, and having faith in God is having faith in His Son which is believing in and obeying Jesus Christ:
 
@@ -4454,6 +4613,8 @@ The same Apostle Paul wrote these:
 -   sacrifice
 -   death
 
+-   [Lord, I Lift Your Name On High - Petra {Backtrack no guitar?} - YouTube](https://www.youtube.com/watch?v=P_fksm-Lbec)
+
 We are sanctified by the Father in the way that Jesus was made perfect.
 We are made perfect the same way He was made perfect, by the sufferings that come through obedience to God's will.
 
@@ -5253,7 +5414,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **Acts 20:35** - In all things I have shown you that by working hard in this way we **must** <ins>help the weak</ins> and <ins>remember the words of the Lord Jesus, how he himself said,</ins> **It is more blessed to give than to receive.** (ESV)
     
-    As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+    It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
     
     > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
     
@@ -5624,6 +5785,14 @@ Therefore, faith quickly progresses into good work, serving the living God:
 
 > **Hebrews 9:14** - how much more will the blood of Christ, who through the eternal Spirit offered himself without blemish to God, purify our conscience from dead works to serve the living God.
 
+Those who's Father is God love Jesus, and will to do the will of God:
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
+
+But those who's father is the devil lie out of their own character - they mean to lie when they lie, and they will to do the devil's desires:
+
+> **John 8:44** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
+
 'Believing in rewards from God for seeking Him' belongs in faith, or it's not faith anymore, even in regards to justifying faith.
 
 > **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
@@ -5671,7 +5840,7 @@ We don't want lazy, cowardly, disobedient faith:
 
 > **Luke 12:48** - But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. (ESV)
 
-As we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -9128,7 +9297,7 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tr>
 <td class="org-left">Messiah would be rejected by his own people.</td>
 <td class="org-left">Ps 69:8, Is 53:3</td>
-<td class="org-left">Jn 1:11, John 7:5</td>
+<td class="org-left">Jn 1:11, Jn 7:5</td>
 </tr>
 
 
@@ -10013,6 +10182,10 @@ Father God authorizes people to come to Jesus, but that person must come to Jesu
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **John 15:3-4** - Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.
+
+We've got to believe Jesus:
+
+> **John 5:37-38** - And the Father who sent me has himself borne witness about me. His voice you have never heard, his form you have never seen, and you do not have his word abiding in you, for you do not believe the one whom he has sent. (ESV)
 
 > **John 15:7** - If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. (ESV)
 
@@ -12800,7 +12973,7 @@ We follow them in faith.
     
     > **II Timothy 1:14** - Guard, through **the Holy Spirit** who dwells in us, the treasure which has been entrusted to you.
     
-    > **Jn 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
+    > **John 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
 
 3.  I wrote about following the law by faith, also law written on my heart.
 
@@ -14350,6 +14523,10 @@ When you fast:
 Just fast for God, and focus on God:
 
 > **James 4:8** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
+
+Have a goal reason for fasting:
+
+-   e.g. before baptism
 
 Go for about a month month, or 40 days, just go without:
 
@@ -15921,6 +16098,8 @@ It appears there is evidence that we live by the Spirit even before we walk by t
 
 > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
+> **I John 3:2-7** - Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. And everyone who thus hopes in him purifies himself as he is pure. Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. You know that he appeared to take away sins, and in him there is no sin. No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him. Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+
 We obey Jesus to be saved:
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
@@ -15934,6 +16113,21 @@ Jesus certainly suggests here that by believing and obeying Jesus' commandments,
 > **John 6:63-65** - It is <ins>the Spirit who gives life</ins>; the flesh is of no avail. <ins>The words that I have spoken to you are spirit and life.</ins> But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And He was saying, “For this reason I have said to you, that no one can come to Me unless it has been granted him from the Father.”
 
 This definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit inside of us.
+
+
+## We have free will. We must believe God
+
+There is intellectual belief and there is experiential belief, and we could have both, by having both belief and obedience to Jesus.
+To believe, we must be seeking God, not glory from one another:
+
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
+
+Nevertheless, if a person hears the word of Christ, and believes the word of Christ, they are believing the truth, and a natural consequence of that
+should be the development of faith because while believing the truth, other things become more apparent:
+
+-   [Spiritual Warfare: How to Put on the Armor of God (Belt of Truth) - YouTube](https://youtu.be/e6X-c3QcSX4?t=95)
+
+> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
 
 The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
 
@@ -16315,6 +16509,8 @@ We must walk in Jesus' commandments and believe that He came from God.
 
 
 ## In a way, the Son is the Father as far as we can see because looking upon Jesus we see the Father, but the Father is greater
+
+> **John 12:44-45** - And Jesus cried out and said, Whoever believes in me, believes not in me but in him who sent me. And whoever sees me sees him who sent me. (ESV)
 
 One thing is for sure, Jesus is the only way to the Father.
 
@@ -16724,6 +16920,10 @@ I believe in all of theses:
 -   `Solus Christus` AMEN!!
 -   `Soli Deo gloria` (glory to God alone) AMEN!! But the glory God gives us glorifies God.
 
+To believe, we must be seeking God, not glory from one another:
+
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
+
 > **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood.
 
 I'm honestly just trying to combat falsehood by reading and applying the Scriptures in a way where I'm responding to promptings from **the Holy Spirit** and taking every thought captive to obey Christ, and I want to honour Jesus and honour God, and not bury my talent. So I hope my Bible study has been helpful. And all glory to God.
@@ -16742,7 +16942,7 @@ We seek to glorify God. We seek to be found in Jesus. We seek the glorification 
 
 The glory comes from God:
 
-> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God?
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
 > **Psalms 73:24** - You guide me with your counsel, and afterward you will receive me to glory.
 
@@ -17186,7 +17386,7 @@ The Only True God is the God and Father of Jesus Christ, and Jesus Christ who He
 
 > **Jude 1:25** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
 
-> **Jn 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
+> **John 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
 
 > **Ephesians 3:20-21** - Now to him who is able to do far more abundantly than all that we ask or think, according to the power at work within us, to him be glory in the church and in Christ Jesus throughout all generations, forever and ever. Amen. (ESV)
 
