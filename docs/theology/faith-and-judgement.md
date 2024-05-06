@@ -2596,7 +2596,7 @@ So we should ask God to receive **the Holy Spirit**, and believe He will give **
 
 > **Luke 11:13** - If you then, who are evil, know how to give good gifts to your children, how much more will the heavenly Father give **the Holy Spirit** to those who ask him! (ESV)
 
-This says Father God gives **the Holy Spirit** to His children. Then we should seek to behave His children and ask Him.
+This says Father God gives **the Holy Spirit** to His children. Then we should seek to behave as His children and ask Him for the Holy Spirit:
 
 > **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
 
@@ -15911,7 +15911,13 @@ If you keep Jesus' commandments then the Spirit of Truth will come to you, and h
 
 > **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
 
-Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person. It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
+Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person.
+
+We should aim for Jesus' commandments to become unburdensome. So I would use the analogy of [entering a current of water](https://www.youtube.com/watch?v=U6go9eFUIIU&ab_channel=DisneyChannelUK). While **in** the Holy Spirit, Jesus' commandments should be unburdensome, and having the Holy Spirit **in us** helps us to keep Jesus' commandments even when we face resistance from the world:
+
+> **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+
+It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
 
 > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
@@ -16414,7 +16420,9 @@ The sons of God on earth who are being adopted by God:
 -   have the creation eagerly longing for their revealing
 -   have heard God and had faith
 
-Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person. It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
+Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person.
+
+It appears there is evidence that we live by the Spirit even before we walk by the Spirit. We must **also** walk by the Spirit:
 
 > **Galatians 5:22-25** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
