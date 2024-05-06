@@ -371,7 +371,7 @@ We trust that our sin is covered by Jesus Christ's blood, as we abide in Him thr
 
 > **Revelation of John 1:4-6** - John to the seven churches that are in Asia: Grace to you and peace from him who is and who was and who is to come, and from the seven spirits who are before his throne, and from Jesus Christ the faithful witness, the firstborn of the dead, and the ruler of kings on earth. To him who loves us and has **freed us from our sins by his blood** and made us a kingdom, priests to his God and Father, to him be glory and dominion forever and ever. Amen. (ESV)
 
-In Jesus Christ we have redemption, the forgiveness of sins:
+In Jesus Christ we have redemption, the forgiveness of sins, and are transferred into the Kingdom of Jesus Christ:
 
 > **Colossians 1:13-14** - He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, in whom we have redemption, the forgiveness of sins. (ESV)
 
@@ -1293,6 +1293,10 @@ We should have a loving response to God for Him having saved us. It certainly ap
 Our response might be a positive response of proclaiming to others how much God has done for them - giving God the glory:
 
 > **Luke 8:39** - Return to your home, and declare how much God has done for you. And he went away, proclaiming throughout the whole city how much Jesus had done for him. (ESV)
+
+We **must** have a response of love for Jesus:
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
 
 So we want to have a response of love for Jesus:
 
@@ -3709,7 +3713,7 @@ You **must** obey Jesus, and that is choosing **light** and choosing **love**:
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 
-### Get to know Jesus by following His commandments
+### Get to know Jesus by believing Him and following His commandments
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
@@ -3722,6 +3726,10 @@ You can't have an abundant life without knowing Jesus, so we must have faith in 
 You must obey Jesus:
 
 > **John 3:36** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+We **must** have a response of love for Jesus:
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
 
 We want to go ahead towards knowledge of Jesus, and not remain in darkness:
 
@@ -12653,6 +12661,45 @@ It's keeping accountable to God and maintaining faithfulness to God, not keeping
 This isn't self-righteousness, but is a self-sacrificial obedience to continue working as a bond-servant of Christ, being the light of the world.
 
 > **Philippians 2:14-16** - Do all things without grumbling or questioning, that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain.
+
+
+## Being in the Kingdom of Jesus Christ on earth is being the light of the world
+
+Seek the Kingdom of God:
+
+> **II Peter 1:5-11** - For this very reason, make every effort to supplement your faith with virtue, and virtue with knowledge, and knowledge with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love. For if these qualities are yours and are increasing, they keep you from being ineffective or unfruitful in the knowledge of our Lord Jesus Christ. For whoever lacks these qualities is so nearsighted that he is blind, having forgotten that he was cleansed from his former sins. Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. For in this way there will be richly provided for you an entrance into the eternal kingdom of our Lord and Savior Jesus Christ. (ESV)
+
+Become born of the Spirit:
+
+> **John 3:3-5** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God. Nicodemus said to him, How can a man be born when he is old? Can he enter a second time into his mother's womb and be born? Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
+
+In Jesus Christ we have redemption, the forgiveness of sins, and are transferred into the Kingdom of Jesus Christ:
+
+> **Colossians 1:13-14** - He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, in whom we have redemption, the forgiveness of sins. (ESV)
+
+It's the Kingdom of Christ and God:
+
+> **Ephesians 5:5** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. (ESV)
+
+As we walk in the light, as He is in the light, that is in the Truth, walking in, believing, professing and obeying Jesus Christ in Truth, the blood of Jesus Christ cleanses us from all sin:
+
+> **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+
+We are the light of the world. Yes, we must do good:
+
+> **Matthew 5:14-20** - You are the light of the world. A city set on a hill cannot be hidden. Nor do people light a lamp and put it under a basket, but on a stand, and it gives light to all in the house. In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. For truly, I say to you, until heaven and earth pass away, not an iota, not a dot, will pass from the Law until all is accomplished. Therefore **whoever relaxes** one of the least of these commandments and teaches others to do the same **will be called least** in the kingdom of heaven, but **whoever does them and teaches them will be called great** in the kingdom of heaven. For I tell you, <ins>unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven</ins>.
+
+We must do good, and behave like the children of God, or we will not enter the Kingdom:
+
+> **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
+
+> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+
+> **I John 2:29** - If you know that he is righteous, you may be sure that everyone who practices righteousness has been born of him. (ESV)
+
+When we are transferred into the Kingdom of Jesus Christ and God, the world hates us, but then we need to shine our light in the darkness, resisting the falsehood:
+
+> **John 15:19** - If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. (ESV)
 
 
 ## All the law is still used
