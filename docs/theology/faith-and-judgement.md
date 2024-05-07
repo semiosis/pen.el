@@ -101,7 +101,7 @@ A new creation lives for Christ:
 
 We must be in Christ Jesus. Those who have been born-again have become obedient to Jesus Christ. We must be born-again. This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
 
-> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
 A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesus Christ's commandments</ins>:
 
@@ -2195,7 +2195,7 @@ Abba, Father!
 
 We must be in Christ Jesus as a new creation:
 
-> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
 A **new creation** has <ins>faith working through love</ins> and <ins>keeps Jesus Christ's commandments</ins>:
 
@@ -3725,6 +3725,10 @@ You **must** obey Jesus, and that is choosing **light** and choosing **love**:
 
 
 ### Get to know Jesus by believing Him and following His commandments
+
+> **John 10:14-15** - <ins>I am the good shepherd.</ins> I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
+
+> **I Corinthians 8:3** - But if anyone loves God, he is known by God. (ESV)
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
@@ -13207,6 +13211,29 @@ Covenants require faithfulness between both parties, but we are able to move on 
 > **John 6:61-62** - But Jesus, conscious that His disciples grumbled at this, said to them, “Does this cause you to stumble? What then if you see the Son of Man ascending to where He was before?
 
 > **John 6:63-65** - It is the Spirit who gives life; the flesh profits nothing; the words that I have spoken to you are spirit and are life. But there are some of you who do not believe.” For Jesus knew from the beginning who they were who did not believe, and who it was that would betray Him. And He was saying, “For this reason I have said to you, that no one can come to Me unless it has been granted him from the Father.”
+
+
+## Life is very different for me now after being born-again
+
+As you can see in this discussion, I've been born-again and I'm living to serve Jesus now:
+
+-   <https://github.com/semiosis/pen.el/issues>
+
+> **Colossians 3:3** - For you have died, and your life is hidden with Christ in God. (ESV)
+
+> **I John 5:11** - And this is the testimony, that God gave us eternal life, and this life is in his Son. (ESV)
+
+> **Luke 12:23** - For life is more than food, and the body more than clothing. (ESV)
+
+> **Matthew 19:17** - And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments. (ESV)
+
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
+
+> **Galatians 6:14** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which **the world has been crucified to me, and I to the world.** (ESV)
+
+It's important to thank God, even though life can be challenging after being born-again:
+
+> **I Thessalonians 5:18** - give thanks in all circumstances; for this is the will of God in Christ Jesus for you. (ESV)
 
 
 ## Born of God
