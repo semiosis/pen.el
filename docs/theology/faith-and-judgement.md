@@ -1462,6 +1462,12 @@ Let's not focus on minimums, but maximums:
 
 -   **Sermon:** [John Piper: How Much Error Can I Believe and Still Be Saved? - YouTube](https://www.youtube.com/watch?v=MMBn3I-Rvi0)
 
+We must also accept that Jesus Christ, God's Only-Begotten Son was raised from the dead:
+
+> **I Corinthians 15:14-17** - And if Christ has not been raised, then our preaching is in vain and your faith is in vain. We are even found to be misrepresenting God, because we testified about God that he raised Christ, whom he did not raise if it is true that the dead are not raised. For if the dead are not raised, not even Christ has been raised. And if Christ has not been raised, your faith is futile and you are still in your sins. (ESV)
+
+> **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
 I believe that trusting Jesus and obedience in the heart towards Jesus is required. Obedience to Jesus is love.
 
 > **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love.
@@ -7827,9 +7833,11 @@ Otherwise why would God make a distinction in Exodus 16 between commandments (mi
 
 ### The doers of the law are justified. Jesus judges. No-one can be justified without faith
 
-Complying with the law (not breaking it) is good.
+Actually complying with the law (not breaking it) is good:
 
 > **Romans 2:13-16** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
+
+> **James 4:11-12** - Do not speak evil against one another, brothers. The one who speaks against a brother or judges his brother, speaks evil against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. There is only one lawgiver and judge, he who is able to save and to destroy. But who are you to judge your neighbor? (ESV)
 
 1.  I still think there is hope for people who do what the law requires, and have not yet heard the gospel
 
@@ -8952,6 +8960,10 @@ To follow the law by faith, I think, is to not lie, commit adultery, idolize, et
 This is the key, I think, to following the law by faith: **praise from God and not men**.
 
 > **Romans 2:29** - But he is a Jew who is one inwardly; and **circumcision is that which is of the heart, by the Spirit**, not by the letter; and his praise is not from men, but from God.
+
+Actually complying with the law (not breaking it) is good:
+
+> **James 4:11-12** - Do not speak evil against one another, brothers. The one who speaks against a brother or judges his brother, speaks evil against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. There is only one lawgiver and judge, he who is able to save and to destroy. But who are you to judge your neighbor? (ESV)
 
 > **Luke 16:15-17** - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God.  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
 
