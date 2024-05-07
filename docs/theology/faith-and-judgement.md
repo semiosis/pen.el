@@ -1466,6 +1466,8 @@ We must also accept that Jesus Christ, God's Only-Begotten Son was raised from t
 
 > **I Corinthians 15:14-17** - And if Christ has not been raised, then our preaching is in vain and your faith is in vain. We are even found to be misrepresenting God, because we testified about God that he raised Christ, whom he did not raise if it is true that the dead are not raised. For if the dead are not raised, not even Christ has been raised. And if Christ has not been raised, your faith is futile and you are still in your sins. (ESV)
 
+> **Luke 24:24-27** - Some of those who were with us went to the tomb and found it just as the women had said, but him they did not see. And he said to them, O foolish ones, and slow of heart to believe all that the prophets have spoken! Was it not necessary that the Christ should suffer these things and enter into his glory? And beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures the things concerning himself. (ESV)
+
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
 I believe that trusting Jesus and obedience in the heart towards Jesus is required. Obedience to Jesus is love.
@@ -1573,7 +1575,7 @@ Having faith in God involves following Jesus:
 
 I agree whole heartedly with this guy:
 
--   [The 'Cheap Grace' Gospel From HELL&#x2026;| - YouTube](https://www.youtube.com/watch?v=BCQX4R1mFAk)
+-   [Are All Christians Disciples? (Lordship Salvation)](https://www.youtube.com/watch?v=BCQX4R1mFAk)
 
 I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian.
 
@@ -5625,7 +5627,17 @@ Cleaned up (stop sinning) by having faith in the truth.
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
 
 
-# Clearing up justifying faith vs 'justifying works', which isn't a thing
+# Clearing up justifying faith vs justifying works - It's faith in **Jesus Himself** that matters
+
+I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
+
+If I hear Jesus' commandment to repent from sin, for example, and I obediently repent, then is that is having faith. Since faith comes from hearing the word of Christ - and that could be any part of His teaching. So if I try to actually follow Jesus' commandments, and that leads me to believe that Jesus is who He says He is (consider the Apostle Thomas and His slow belief), then when I arrive at a belief that Jesus is who He says He is, the Son of God, and the Christ, the Messiah, the Anointed one, the obedience of one of Jesus commandments leads to more belief and more obedience.
+
+> **James 2:14-26** - What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, Go in peace, be warmed and filled, without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead. But someone will say, You have faith and I have works. Show me your faith apart from your works, and I will show you my faith by my works. You believe that God is one; you do well. Even the demons believe—and shudder! Do you want to be shown, you foolish person, that faith apart from works is useless? Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that **faith was active along with his works**, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. You see that **a person is justified by works and not by faith alone**. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
+
+I think the solution to the justification by 'faith without work' and justification by 'faith with works' is that if a person is actually obeying Jesus then the works can be attributed to Jesus.
+
+Because it's faith in **Jesus Himself** that matters.
 
 Jesus makes it clear that the ones who truly believe in Him **will do** the **works** which **He does**:
 
@@ -5706,7 +5718,7 @@ But for the person who does not work but trusts God who justifies the ungodly, h
 
 > **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
 
-I'm trusting God wholeheartedly to be justified by Christ's finished work on the cross. And this type of justification by faith is for anyone who trusts in God for the forgiveness of their sins through Jesus' finished work on the cross. I don't deny that to other people.
+I'm **trusting God** wholeheartedly to be justified because of Christ's finished work on the cross. And this type of justification by faith is for anyone who **trusts God** for the forgiveness of their sins through Jesus' finished work on the cross. I don't deny that to other people. But we are **trusting God**, not trusting on the work alone without trusting/believing/obeying/loving God.
 
 I'm unsure if the following applies for justification (it may be that it is meant in a different context), but in some sense, forgiving others is still required if someone wants God to forgive them:
 
@@ -14055,10 +14067,16 @@ Jesus as a life-giving spirit proclaimed to the spirits in prison.
 
 Baptism is an appeal to God for a good conscience - It's an **appeal** to God but not strictly required to be saved.
 It is an appeal to God for a good conscience, through the resurrection of Jesus Christ.
+
 I definitely believe that "believer's baptism" is the right way to perform baptism.
-Baptism does save.
+
+Baptism does save, but I believe it must be coupled with belief:
 
 > **I Peter 3:18-21** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to **death in the flesh but made alive in the spirit**, in which he went and proclaimed to the spirits in prison, because **they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
+
+I believe a person **must** believe, and not just be baptised:
+
+> **Acts 19:1-6** - And it happened that while Apollos was at Corinth, Paul passed through the inland country and came to Ephesus. There he found some disciples. And he said to them, **Did you receive the Holy Spirit when you believed?** And they said, No, we have not even heard that there is a Holy Spirit. And he said, Into what then were you baptized? They said, Into John's baptism. And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. On hearing this, they were **baptized in the name of the Lord Jesus**. And when Paul had laid his hands on them, the Holy Spirit came on them, and they began speaking in tongues and prophesying. (ESV)
 
 This sounds interesting:
 
