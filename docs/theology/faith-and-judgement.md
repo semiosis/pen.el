@@ -4625,7 +4625,7 @@ We have peace with God:
     > **James 2:25** - And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? (ESV)
 
 
-### Justified by the blood of Jesus, received through obedience to Jesus Christ as Lord
+### Justified by the blood of Jesus, received through faith in Jesus Christ as Lord
 
 The same Apostle Paul wrote these:
 
@@ -4690,9 +4690,13 @@ The free gift of justification is **received through faith**.
 
 And I believe we need an obedient heart towards Jesus to receive.
 
-It's not about obedience to the law but about obeying Jesus / loving Jesus / trusting Jesus.
+It's not about putting our hope on compliance
+to the Mosaic law to save us but it's about
+obeying Jesus / loving Jesus / trusting Jesus,
+and the compliance to God's law will come
+naturally while obeying Jesus.
 
-The justifying work is finished - Jesus finished it, now we follow Him through the same way he went, by obeying Him.
+The justifying work is finished - Jesus finished it, now we follow Him through the same way he went, by trusting in Him to save us, believing Him, obeying Him and remaining faithful to Him.
 
 Now we need faith to receive it and I believe
 that faith necessitates love for Jesus, which
