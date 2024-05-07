@@ -6066,10 +6066,6 @@ Heresies:
     -   Well, I mean, they are actually trusting in Jesus if they are following Jesus and doing what He said.
     -   But if they are just doing good works to get to heaven then I think that's not really right.
 
-I believe that either of these heresies fall under this strong delusion category:
-
-> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit and belief in the truth.**  (ESV)
-
 > **I Timothy 6:3-11** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
 > **II Peter 2:6** - if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly;
@@ -7958,8 +7954,6 @@ Faith without working through love doesn't count for anything.
 > **John 15:14** - You are my friends if you do what I command you.
 
 > **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God.
-
-> **2 Thessalonians 2:11** -  Therefore God sends them a strong delusion, so that they may believe what is false, (ESV)
 
 
 ### The love of the truth involves sanctification
@@ -15946,10 +15940,6 @@ We should not lean on our own understanding:
 What we should do now is acknowledge the LORD, keep our eyes on Jesus, and live godly lives:
 
 > **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
-
-Focusing on predestination, election etc. without obeying what Jesus said to do, is not really obeying the will of God and **may** put a person in this category:
-
-> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  (ESV)
 
 Although God chooses who He has mercy on, we should still have a godly and humble response to God's mercy:
 

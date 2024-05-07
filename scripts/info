@@ -64,6 +64,10 @@ fi
 
 query="$@"
 
+if printf -- "%s\n" "$query" | grep -q -P '^[^(]+$'; then
+    query="($query)"
+fi
+
 if test "$has_stdout" = y; then
     "$bin" "$query" -o - | pavs
 elif test "$sn" = binfo; then
