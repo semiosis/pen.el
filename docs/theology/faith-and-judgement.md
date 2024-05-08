@@ -222,6 +222,8 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 
 ## Eventually our own will lines up with God's will - but His will is that we will to do His will - so we must will to do His will, not our will
 
+-   **Song:** [So Will I {100 Billion X} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=GfVd5x9W1Xc&list=RDGfVd5x9W1Xc&start_radio=1)
+
 > **Matthew 6:10** - Your kingdom come, your will be done, on earth as it is in heaven. (ESV)
 
 > **Matthew 26:42** - Again, for the second time, he went away and prayed, My Father, if this cannot pass unless I drink it, your will be done. (ESV)
