@@ -80,7 +80,7 @@ Belief in Jesus Christ turns to obedience, and imitating Christ:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
-It's imperative that as turn to obey the Lord Jesus, and that includes turning away from our sin:
+It's imperative that we turn to obey the Lord Jesus, and that includes repentance from sin:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
 
@@ -92,7 +92,7 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-And build each other up to help each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
+And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
 > **Ephesians 4:12-13** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
 
@@ -115,6 +115,8 @@ We need to take hold of it:
 We should labor for the food that endures to eternal life:
 
 > **John 6:27** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal. (ESV)
+
+> **John 4:34** - Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. (ESV)
 
 We have to put sin away after we come to believe in Him:
 
