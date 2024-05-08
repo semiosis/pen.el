@@ -61,6 +61,19 @@ I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, 
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
 
+> **Ephesians 2:10** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
+
+We're not being saved by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
+
+> **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
+
+-   **Talk by:** [John Lennox - How Christianity Is Different From Every Religion - YouTube](https://www.youtube.com/watch?v=7Ii46kW12Zo)
+
+Christianity is a relationship, like a marriage:
+
+-   Acceptance comes at the beginning
+-   It's not a merit-based religion
+
 Belief in Jesus Christ turns to obedience, and imitating Christ:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
@@ -220,6 +233,11 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 > **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 
+## We should avoid speaking
+
+> **John 7:17-18** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
+
+
 ## Eventually our own will lines up with God's will - but His will is that we will to do His will - so we must will to do His will, not our will
 
 -   **Song:** [So Will I {100 Billion X} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=GfVd5x9W1Xc&list=RDGfVd5x9W1Xc&start_radio=1)
@@ -227,6 +245,10 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 > **Matthew 6:10** - Your kingdom come, your will be done, on earth as it is in heaven. (ESV)
 
 > **Matthew 26:42** - Again, for the second time, he went away and prayed, My Father, if this cannot pass unless I drink it, your will be done. (ESV)
+
+> **I Peter 3:17** - For it is better to suffer for doing good, if that should be God's will, than for doing evil. (ESV)
+
+> **I Peter 4:19** - Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good. (ESV)
 
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
@@ -3033,6 +3055,19 @@ We must receive the redemption that is **in** Christ Jesus <ins>through faith</i
 
 > **Romans 3:22-25** - the righteousness of God through faith <ins>(G4102 **pistis**) in Jesus Christ</ins> for <ins>all who believe (G4100 **pisteuo**).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
 
+The redemption in Christ Jesus is a gift, and is a substitutionary atonement that is received through faith in Jesus:
+
+> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show <ins>his righteousness</ins> at the present time, so that he might be just and **the justifier of the one who has faith in Jesus**. (ESV)
+
+We're not being saved by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
+
+> **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
+
+We accept that God justifies us, given we place our faith in Jesus, and that means trusting Jesus.
+Then we continue following Jesus out of faithful obedience.
+
 All of these I believe belong under the umbrella of faith, not works:
 
 -   Taking communion is not 'dead works'. It's obedience.
@@ -3345,6 +3380,10 @@ So it's really important that I remain faithful to Jesus and do my best to not c
 And eventually His commandments become unburdensome, and we're keeping them, and we have confidence we have come to know Him:
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+This kind of sounds like people can use their intellect to avoid obeying Jesus, and we must come against that disobedience:
+
+> **II Corinthians 10:5** - <ins>We destroy arguments and every lofty opinion raised against the knowledge of God</ins>, and take every thought captive to **obey Christ**, (ESV)
 
 As we abide in the Word of God and are sanctified in the Truth, our spiritual eyesight becomes clearer:
 
@@ -3811,7 +3850,7 @@ Instead, let's follow Jesus Christ's teachings:
 
 If people including free-grace Christians do not repent from sin, they will still be repaid impartially, and on account of sinful things the wrath of God comes. We have to put to death sin:
 
-> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge **after the image of its creator.**
 
 Absolutely:
 
@@ -5017,9 +5056,17 @@ God's law is still used in judgement, but the one who has faith in Jesus is not 
 
 > **John 3:18** - He who believes (G4100 **pisteuo**) in Him is not judged; he who does not believe (G4100 pisteuo) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed (G4100 pisteuo) in the name of the only begotten Son of God. (NASB)
 
-If people including free-grace Christians do not repent from sin, they will still receive the wrath of God:
+Firstly, obedient children are children who hear the word of God, believe and love God, and we should be holy in all our conduct if we call on the LORD God who judges impartially according to each one's deeds:
 
-> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator.
+> **I Peter 1:14-19** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who <ins>judges impartially according to each one's deeds</ins>, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
+I'm quite convinced that the substitutionary atonement is there to help us put a stop to sin, and live to righteousness and holiness:
+
+> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+If people including free-grace Christians do not repent from sin, they may still receive the wrath of God, but I'm not the judge here:
+
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge **after the image of its creator.**
 
     1  :  2919  krino  kree'-no
     2  
@@ -5746,8 +5793,12 @@ My best understanding of **Romans 4:4** is: "The person who works receives wages
 
 However, the work we produce doesn't **justify us** before God (it doesn't clear us from being guilty of sin before God). We still need to have faith on God to justify us due to the atonement for our sin by Christ's blood.
 
-Before accepting God's forgiveness yourself, submitting to the righteousness of God, believing that you were in need of God's forgiveness and accepting that Jesus' blood has atoned for our sin, anything we try to give God is simply giving God what is due to Him, and that you will never be able to return enough stolen goods to God to ever be justified. Nor would you ever be able to forgive enough other people to attain that justification.
-<ins>We ultimately need God's forgiveness</ins>. 
+God justifies the person who has faith in Jesus:
+
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show <ins>his righteousness</ins> at the present time, so that he might be just and **the justifier of the one who has faith in Jesus**. (ESV)
+
+Before accepting God's forgiveness yourself, submitting to the righteousness of God, believing that you were in need of God's forgiveness and accepting that Jesus' blood has atoned for our sin and placing our faith in Jesus so that God may justify us, anything we try to give God is simply giving God what is due to Him, and that you will never be able to return enough stolen goods to God to ever be justified. Nor would you ever be able to forgive enough other people to attain that justification.
+<ins>We ultimately need God's forgiveness through faith in Jesus</ins>. 
 
 > **Romans 4:5-7** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; (ESV)
 
@@ -5888,6 +5939,13 @@ We're not being saved by our works - we've already been redeemed, but we do work
 
 > **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
 
+-   **Talk by:** [John Lennox - How Christianity Is Different From Every Religion - YouTube](https://www.youtube.com/watch?v=7Ii46kW12Zo)
+
+Christianity is a relationship, like a marriage:
+
+-   Acceptance comes at the beginning
+-   It's not a merit-based religion
+
 The Holy Spirit still goes to those who obey Jesus:
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
@@ -5931,9 +5989,9 @@ Jesus judges on deeds and on words (possibly on the way you judge others, the sa
 
 > **Matthew 25:21** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.
 
-The LORD God judges impartially according to each one's deeds:
+Firstly, obedient children are children who hear the word of God, believe and love God, and we should be holy in all our conduct if we call on the LORD God who judges impartially according to each one's deeds:
 
-> **I Peter 1:17** - And if you call on him as Father who <ins>judges impartially according to each one's deeds</ins>, conduct yourselves with fear throughout the time of your exile,
+> **I Peter 1:14-19** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who <ins>judges impartially according to each one's deeds</ins>, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
 
 > **Ecclesiastes 12:13-14** - The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man. For God will bring every deed into judgment, with every secret thing, whether good or evil.
 
@@ -7188,7 +7246,7 @@ These do not contradict:
 
 > **Acts 17:11** - Now these Jews were more noble than those in Thessalonica; they received the word with all eagerness, examining the Scriptures daily to see if these things were so. (ESV)
 
-> **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ, (ESV)
+> **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised <ins>against the knowledge of God</ins>, and take every thought captive to **obey Christ**, (ESV)
 
 1.  `sola scriptura` as the source of truth against false dreams and against lies
 
@@ -9815,7 +9873,7 @@ Faith in Jesus probably qualifies a person to 'enter' the Kingdom of Heaven.
 Also, following the law by faith in truth I think qualifies a person to enter the Kingdom of Heaven.
 Also the Kingdom of Heaven, I think is from Heaven to Earth.
 
-> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God.
+> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
 > **Titus 3:7** - so that being justified by his grace we might become heirs according to the hope of eternal life.
 
