@@ -815,7 +815,11 @@ Jesus' selfless love also faithful to God. **Without breaking faith with God**, 
 
 > **Hebrews 5:8-9** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
 
-To put it another way, while needing to fulfill the law and the prophets, he did not sin, and sinners took his life and even his clothes:
+No-one took Jesus' life, but Jesus laid it down of His own accord. Nevertheless, he was killed by sinners. To put it another way, while needing to fulfill the law and the prophets, he did not sin, and sinners killed Him and cast lots with His clothes, but actually you could say that Jesus gave His life, and let them have His clothes:
+
+> **John 10:18** - No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
+
+> **Matthew 5:40** - And if anyone would sue you and take your tunic, let him have your cloak as well. (ESV)
 
 > **I Peter 2:22** - He committed no sin, neither was deceit found in his mouth. (ESV)
 
@@ -14382,9 +14386,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
             -   we know we are loving one another,
             -   just has He has commanded us.
     
-    > **I John 3:21-23** - Beloved, if our heart does not condemn us, we have confidence before God;
-    
-    and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us.
+    > **I John 3:21-23** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. (ESV)
     
     Who is of God listens to us:
     
