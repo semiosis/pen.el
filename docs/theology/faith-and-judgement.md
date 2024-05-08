@@ -2472,6 +2472,15 @@ Obey God, obey Jesus:
 > **Mark 10:17-21** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.
 
 
+## God opens the eyes to see the light of the gospel
+
+Sovereign God, looks into dead, glory-ignoring heart and says, "Let there be light!"
+
+> **II Corinthians 4:3-6** - And even if our gospel is veiled, it is veiled only to those who are perishing. In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. For what we proclaim is not ourselves, but Jesus Christ as Lord, with ourselves as your servants for Jesus' sake. For God, who said, Let light shine out of darkness, has shone in our hearts to give the light of the knowledge of the glory of God in the face of Jesus Christ. (ESV)
+
+[The Gospel of the Glory of Christ - YouTube](https://www.youtube.com/watch?v=0_gPuBQe5UM)
+
+
 ## Gospel
 
 The Good News of Jesus Christ is **the power of God for salvation** (stress: **power of God** for salvation) to everyone who believes:
@@ -3891,7 +3900,7 @@ We **must** serve our Lord:
 
 > **Colossians 3:23-24** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.
 
-Walk how Jesus taught us to walk, with faith in Him, and receive
+Walk how Jesus taught us to walk, with faith in Him, and in so doing receive fellowship with one another and the cleansing of the blood of Jesus:
 
 > **I John 1:7** - But <ins>**if we walk in the light**</ins>, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
 
@@ -3960,11 +3969,7 @@ We must believe Jesus, and have faith in Jesus Christ, obeying Jesus, and that i
 
 Therefore, to arrive at the knowledge of the truth, you've got to have an obedient heart.
 
-How can they call on Him whom they have not had faith in?
-
-How will they have faith in Him whom they have not heard?
-
-How will they hear without a preacher?
+We must hear about Jesus, believe and have faith in Him, and call on Him. In Paul's writing here, the <ins>calling on Jesus</ins> comes **after** <ins>hearing about Jesus</ins> and **after** <ins>believing in Him</ins>, and the hear of Jesus, necessitates a preacher:
 
 > **Romans 10:14-15**- But how are they to call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent? As it is written, How beautiful are the feet of those who preach the good news!
 
@@ -17656,8 +17661,19 @@ I was spiritually bankrupt and I knew I needed God's help.
 
 > **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
 
+> **II Corinthians 4:3** - And even if our gospel is veiled, it is veiled only to those who are perishing. (ESV)
+
+
+### Father God intervenes and draws us to Jesus
+
+> **II Corinthians 4:6** - For God, who said, Let light shine out of darkness, has shone in our hearts to give the light of the knowledge of the glory of God in the face of Jesus Christ. (ESV)
+
+> **John 6:44** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. (ESV)
+
 
 ### My spiritual senses were enabled
+
+I was born-again of the Spirit.
 
 > **John 3:3** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God. (ESV)
 
