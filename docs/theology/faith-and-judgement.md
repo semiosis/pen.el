@@ -3334,6 +3334,10 @@ Jehovah is God Almighty:
 
 [Exodus 6:3 Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;](https://biblehub.com/interlinear/exodus/6-3.htm)
 
+-   **Sermon:** [John Piper - God's Own Name - YouTube](https://www.youtube.com/watch?v=kPHOZSZW584)
+
+> **II Timothy 2:19** - But God's firm foundation stands, bearing this seal: The Lord knows those who are his, and, Let everyone who names the name of the Lord depart from iniquity. (ESV)
+
 Jehovah God gave Jesus His name, Jesus Christ, Son of God:
 
 > **Matthew 1:21** - She will bear a son, and you shall call his name Jesus, for he will save his people from their sins. (ESV)
@@ -7896,7 +7900,7 @@ Nevertheless, when we judge others by the law, we're judged by the same standard
 
 > **Matthew 7:1** - Judge not, that you be not judged. (ESV)
 
-But if someone judges by the law, it seems right to submit to the law, unless it is that you are actually being obedient to Jesus (being led by the Spirit / following Jesus' commandments), in which you should carry on being obedient to Jesus. The law is meant for sinners.
+But if someone judges you by the law, it seems right to submit to the law, unless it is that you are actually being obedient to Jesus (being led by the Spirit / following Jesus' commandments), in which you should carry on being obedient to Jesus. The law is meant for sinners.
 
 > **Matthew 23:2-3** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. (ESV)
 
@@ -10444,7 +10448,7 @@ We remember Jesus as we take communion:
 
 I believe that taking the Eucharist absolutely has spiritual and physical effects, and the body and blood of Jesus are received through faith.
 
-> **I Corinthians 11:30** - That is why many of you are weak and ill, and some have died.  But if we judged ourselves truly, we would not be judged.  But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world.
+> **I Corinthians 11:30** - That is why many of you are weak and ill, and some have died. But if we judged ourselves truly, we would not be judged. But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world. (ESV)
 
 > **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
 
