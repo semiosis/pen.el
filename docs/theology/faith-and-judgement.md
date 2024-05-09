@@ -549,7 +549,7 @@ In this current time (world) we may receive more than we lose for the sake of th
 
 > **Luke 18:29-30** - And he said to them, Truly, I say to you, there is no one who has left house or wife or brothers or parents or children, for the sake of the kingdom of God, who will not receive many times more in this time, and **in the age to come eternal life**. (ESV)
 
-I do not affirm all religions. But I affirm **Romans 10:9**. I affirm that individual people are saved through belief and I think it should be true believe that's in the heart:
+I do not affirm all religions. But I affirm **Romans 10:9**. I affirm that individual people are saved through belief and I think it should be true belief that's in the heart:
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
@@ -7439,6 +7439,8 @@ The ones who live <ins>not under law</ins> of God will be thrown into the fiery 
 
 OK, so being led by the Spirit, we still actually comply with the Law of God.
 
+> **Psalms 119:160** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
+
 So we must have Christ in us, and being led by the Spirit.
 
 So we are <ins>under</ins> the <ins>law of Christ</ins>, which is a law of faith in Christ, and led by the Spirit to have the requirement of the Law fulfilled in us.
@@ -11571,7 +11573,6 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     > And I also prayed that I would not have any out of body experiences like this.
     
     I saw a dark spot around my rib when I was born-again.
-    I think this indicates I am male, and there's a female kingdom partner out there for me!
     
     <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/>
     
@@ -11736,6 +11737,10 @@ Like begets like:
 -   Like Father,
 -   like Son (Jesus).
 -   Like disciple of Jesus / adopted son
+
+> **John 5:19** - So Jesus said to them, Truly, truly, I say to you, the Son can do nothing of his own accord, but only what he sees the Father doing. For whatever the Father does, that the Son does likewise. (ESV)
+
+[God sees what your going through and he wants you to hear this message ? - YouTube](https://www.youtube.com/watch?v=C7UyroArDxI)
 
 > **Matthew 5:44-45** - But I say to you, love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven; for He causes His sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
 
