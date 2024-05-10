@@ -3079,7 +3079,7 @@ We must receive the redemption that is **in** Christ Jesus <ins>through faith</i
 
 > **Romans 3:22-25** - the righteousness of God through faith <ins>(G4102 **pistis**) in Jesus Christ</ins> for <ins>all who believe (G4100 **pisteuo**).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
 
-The redemption in Christ Jesus is a gift, and is a substitutionary atonement that is received through faith in Jesus:
+The redemption in Christ Jesus is a gift, and is a substitutionary atonement that is received through faith in Jesus. I think of this like a blood transfusion, that should be received by faith, faith which includes the belief of faith and the obedience of faith:
 
 > **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
@@ -3122,9 +3122,19 @@ We are implored to strive to follow Jesus to our best ability:
 
 ### The gospel has to be obeyed
 
-> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus.
+> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting **vengeance on those who do not know God** and **on those who do not obey the gospel of our Lord Jesus**.
 
 > **I Peter 4:12-19** - Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ's sufferings, that you may also rejoice and be glad when his glory is revealed. If you are insulted for the name of Christ, you are blessed, because the Spirit of glory and of God rests upon you. But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name. <ins>For it is time for judgment to begin at the household of God; and if it begins with us, what will be the outcome for those who do not obey the gospel of God?</ins> And If the righteous is scarcely saved, what will become of the ungodly and the sinner? Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good.
+
+Where there is perfect belief, I think there is perfect obedience:
+
+> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+> **Matthew 5:44-45** - But I say to you, love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven; for He causes His sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
+
+> **Matthew 5:48** - Therefore you are to be perfect, as your heavenly Father is perfect.
+
+> **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you? Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
 
 
 ### God will be the judge of who has had faith in Jesus, and who has obeyed Him. I wouldn't take obedience lightly
