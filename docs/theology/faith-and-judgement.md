@@ -7426,18 +7426,24 @@ Self-righteous forgiveness:
 
 # laws
 
--   Great commandments
-    -   to love the Lord your God with all your heart, soul, mind and strength and your neighbour as yourself
--   10 Commandments
--   the 613 Mosaic laws
--   the law of Christ
-    -   a law of faith
+-   **Law of God**
+    -   **Great commandments**
+        -   1) To love the Lord your God with all your heart, soul, mind and strength, and 2) love your neighbour as yourself
+            -   We should endeavour to fulfill these by following Jesus
+            -   **Romans 8:3-4** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+        -   **10 Commandments**
+            -   We should endeavour to remain faithful to God with these from the heart
+            -   **I John 5:21** - Little children, keep yourselves from idols. (ESV)
+            -   **Matthew 5:28** - But I say to you that everyone who looks at a woman with lustful intent has already committed adultery with her in his heart. (ESV)
+        -   **the 613 Mosaic laws**
+            -   **Romans 5:20** - Now the law came in to increase the trespass, but where sin increased, grace abounded all the more, (ESV)
+            -   **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. (ESV)
+        -   **the law of Christ**
+            -   a law of faith
+            -   **I John 1:7** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+            -   **Acts 13:38-39** - Let it be known to you therefore, brothers, that through this man forgiveness of sins is proclaimed to you, and by him everyone who believes is freed from everything from which you could not be freed by the law of Moses. (ESV)
 
-> **John 7:19** - Has not Moses given you the law? Yet none of you keeps the law. Why do you seek to kill me?
-
-The ones who live <ins>not under law</ins> of God will be thrown into the fiery furnace.
-
-OK, so being led by the Spirit, we still actually comply with the Law of God.
+OK, so being led by the Spirit, under the law of Christ, we still actually comply with the Law of God, but and the law of Moses cannot condemn us.
 
 > **Psalms 119:160** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
 
