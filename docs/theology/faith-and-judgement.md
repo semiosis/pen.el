@@ -3079,11 +3079,22 @@ We must receive the redemption that is **in** Christ Jesus <ins>through faith</i
 
 > **Romans 3:22-25** - the righteousness of God through faith <ins>(G4102 **pistis**) in Jesus Christ</ins> for <ins>all who believe (G4100 **pisteuo**).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
 
-The redemption in Christ Jesus is a gift, and is a substitutionary atonement that is received through faith in Jesus. I think of this like a blood transfusion, that should be received by faith, faith which includes the belief of faith and the obedience of faith:
+The redemption in Christ Jesus is a gift, and
+is a substitutionary atonement that is
+received through faith in Jesus.
+
+As far as glory goes, or sharing in Jesus' holiness, I think of this like a blood transfusion, that
+should be received by faith, faith which
+includes the belief of faith and the obedience
+of faith, such as obedience to the discipline of Christ, that should yield the peaceful fruit of righteousness:
 
 > **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
-We're not being saved by our works - we've already been redeemed, and we are justified by faith in Jesus. God is the one who justifies:
+We should be sanctified by the Truth, as we trust in God, trust in Jesus, trust in God's Word:
+
+> **John 17:8-26** - For I have given them the words that you gave me, and they have received them and have come to know in truth that I came from you; and they have believed that you sent me.  I am praying for them. I am not praying for the world but for those whom you have given me, for they are yours.  All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>.  And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me. I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled.  But now I am coming to you, and these things I speak in the world, that they may have my joy fulfilled in themselves.  I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world.  I do not ask that you take them out of the world, but that you keep them from the evil one.  They are not of the world, just as I am not of the world.  Sanctify them in the truth; your word is truth.  As you sent me into the world, so I have sent them into the world.  And for their sake I consecrate myself, that they also may be sanctified in truth.  I do not ask for these only, but also for those who will believe in me through their word, that they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.  The glory that you have given me I have given to them, that they may be one even as we are one, I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me.  Father, I desire that they also, whom you have given me, may be with me where I am, to see my glory that you have given me because you loved me before the foundation of the world.  O righteous Father, even though the world does not know you, I know you, and these know that you have sent me.  I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.
+
+We're not being saved by our works - we've already been redeemed, and we are justified by faith in Jesus, but we are also sanctified by faith in Jesus Christ. God is the one who justifies:
 
 > **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show <ins>his righteousness</ins> at the present time, so that he might be just and **the justifier of the one who has faith in Jesus**. (ESV)
 
@@ -3115,6 +3126,8 @@ God will be the judge of who has had faith in Jesus; who has obeyed Him and who 
 > **Hebrews 10:10-17** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. And every priest stands daily at his service, offering repeatedly the same sacrifices, which can never take away sins. But when <ins>Christ had offered for all time a single sacrifice for sins,</ins> he sat down at the right hand of God, waiting from that time until his enemies should be made a footstool for his feet. For by a single offering he has perfected for all time those who are being sanctified. And **the Holy Spirit** also bears witness to us; for after saying, This is the covenant that I will make with them after those days, declares the Lord: I will put my laws on their hearts, and write them on their minds, then he adds, I will remember their sins and their lawless deeds no more.
 
 > **Hebrews 10:26** - For if we go on sinning willfully after receiving the knowledge of the truth, there no longer remains a sacrifice for sins,
+
+God please forgive and heal us.
 
 
 ### All judgement has been given to Jesus
@@ -11128,7 +11141,9 @@ Abraham was 10 years older than Sarah!
 
 > **Genesis 17:17** - Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child? (ESV)
 
-Demon spirits deny relationships because:
+I'm not saying that the only reason my own relationships have not worked out for me is because of evil spirits, but I feel like I have had very obvious spiritual resistance a lot of the time, for whatever reason. Maybe I've had trouble because in the past I have had trouble with pornography.
+
+I feel like sometimes demon spirits deny relationships that would be good:
 
 For example:
 
@@ -11137,7 +11152,13 @@ For example:
 -   a spirit spouse which thinks it's my spouse
 -   if all of the above spirits start manifesting
 
-As far as forsaking God's precepts for worldly precepts go, the truth is that while in God's favour, God provides, and we cooperate with God by working, etc. But if God doesn't want you to get a job at a particular time, you wont get a job, etc.
+And as far as forsaking God's precepts for
+worldly precepts go, the truth is that while
+in God's favour, God provides, and we
+cooperate with God by working, etc.
+
+But if God doesn't want you to get a job at a
+particular time, you wont get a job, etc. and that goes for other things such as relationships.
 
 > **Acts 16:6** - And they went through the region of Phrygia and Galatia, having been **forbidden by the Holy Spirit to speak the word in Asia.** (ESV)
 
