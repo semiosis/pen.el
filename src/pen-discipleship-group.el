@@ -62,7 +62,17 @@
                  "Psalm 24"
                  "Psalm 51"
                  "Psalm 103"
-                 "Psalm 119"))))
+                 "Psalm 119:1-128"))
+          (19 . ("I Kings 2"
+                 "I Kings 6"
+                 "I Kings 8-9"
+                 "Psalm 148-150"
+                 
+                 "Psalm 119:129-176"))
+          (20 . ("Proverbs 1-4"
+                 "Proverbs 16-18"
+                 "Proverbs 31"
+                 "I Kings 11-12"))))
 
 (defset d-group-weekly-readings-ot260
         '((1 . ("Genesis 1-6"
@@ -378,6 +388,8 @@
           (50 . ("Matthew 7:24-25"))
           (51 . ("Matthew 7:26-27"))
           (52 . ("Matthew 7:28-29"))))
+
+;; "Psalm 139"
 
 (defun d-group-get-weekly-scripture-memory-nt (&optional week)
   (setq week (or week (date-week-number)))
