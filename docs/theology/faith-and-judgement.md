@@ -2785,7 +2785,7 @@ This says Father God gives **the Holy Spirit** to His children. Then we should s
 
 Who receives **the Holy Spirit**? The ones who obey God!
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 The Holy Spirit is received through faith:
 
@@ -4150,7 +4150,7 @@ Faith involves obeying Jesus Christ:
 
 > **I John 5:3-4** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -5190,7 +5190,7 @@ Eternal judgement:
 Luke writes that Peter says **the Holy Spirit** goes to those who obey Jesus.
 If the book of Acts is finished after Paul went to Galatia, then it is in knowledge of the letter to the Galatians, where Paul says the promised Spirit is received through faith.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -5802,7 +5802,7 @@ So the point I'm trying to make is that the free gift of **the Holy Spirit** is 
 
 Therefore I still think there's a false dichotomy between faith and works - because obedience is intrinsic to faith, but the gift of **the Holy Spirit** remains a completely free gift which is <ins>received through faith</ins> and that **merit** by works of righteousness is not the reason **why** it's given to us, but nevertheless, <ins>**the Holy Spirit** is given to those who obey Him.</ins>
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -6562,36 +6562,38 @@ You can't have faith without obedience.
 
 -   **Song:** [Keith Green - To Obey Is Better Than Sacrifice (live)](https://youtu.be/TzWyZxlwGKI?list=RDz7oCa9BvO9g&t=98)
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     1  Faith = Hope * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      4  
-     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      6  
-     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      8  
-     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
     10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     12  
-    13  L ∝ f
-    14  Love is proportional-to the baggage which has been forgiven
-    15  Love ∝ forgiven-baggage
-    16  
-    17  Obedience ∝ Love
+    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    14  
+    15  L ∝ f
+    16  Love is proportional-to the baggage which has been forgiven
+    17  Love ∝ forgiven-baggage
     18  
-    19  F = H * L
-    20  Faith = Hope * Love
-    21  
-    22  Faith-in-God when tested by God is found to be true Faith in God.
-    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    19  Obedience ∝ Love
+    20  
+    21  F = H * L
+    22  Faith = Hope * Love
+    23  
+    24  Faith-in-God when tested by God is found to be true Faith in God.
+    25  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    26  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 Something like this:
 
@@ -8082,7 +8084,7 @@ If we teach others to annul even the least of the commandments and annul them ou
 
 > **Acts 8:18-21** - Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive **the Holy Spirit**.  But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money!  You have neither part nor lot in this matter, for your heart is not right before God.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
 
@@ -8481,29 +8483,31 @@ I made these equations to describe my understanding that faith is actually close
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     1  Faith = Hope * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      4  
-     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      6  
-     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      8  
-     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
     10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     12  
-    13  Love is proportional-to the baggage which has been forgiven
-    14  Love ∝ forgiven-baggage
-    15  
-    16  Obedience ∝ Love
+    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    14  
+    15  Love is proportional-to the baggage which has been forgiven
+    16  Love ∝ forgiven-baggage
     17  
-    18  F = H * L
-    19  Faith = Hope * Love
-    20  
-    21  Faith-in-God when tested by God is found to be true Faith in God.
-    22  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    23  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    18  Obedience ∝ Love
+    19  
+    20  F = H * L
+    21  Faith = Hope * Love
+    22  
+    23  Faith-in-God when tested by God is found to be true Faith in God.
+    24  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    25  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 But salvation is a gift and God is sovereign to save. That's why it's grace.
 Saved by grace through faith. Yet actual obedience to the gospel of Jesus is merely Jesus working through us. When a person truly believes then they naturally obey.
@@ -9116,7 +9120,7 @@ We must then believe what is said in the Holy Scriptures and trust it and obey i
 
 The Holy Spirit goes to those who obey God, and causes the person to walk in God's precepts - stopping lying, stealing, coveting, idolizing, cheating, etc.
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 Faith involves:
 
@@ -10150,7 +10154,7 @@ Please God, give me the righteousness required to enter the kingdom.
 
 It is the sovereign work of God to make someone born-again of the Spirit, but the Apostles say **the Holy Spirit** is given to those who believe in / obey him:
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -12780,6 +12784,8 @@ Jesus ate with sinners but Jesus was the special guest. Think of Nicodemus invit
 
 > **Hebrews 11:1** - Now faith is the substance of things hoped for, the evidence of things not seen. (KJV)
 
+> **Hebrews 11:1** - Now faith is the assurance of things hoped for, the conviction of things not seen. (ESV)
+
 For me, I was acting in faith ever since I was born-again, resulting in a huge chain of events and confirmations!
 
 
@@ -13291,7 +13297,7 @@ Not just by hearing but by hearing with faith.
 
 ## Faith requires obedience
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **he Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
@@ -13633,30 +13639,34 @@ The rhema word of God:
 
 [What is the rhema word? | GotQuestions.org](https://www.gotquestions.org/rhema-word.html)
 
+> **Hebrews 11:1-3** - Now **faith is the assurance of things hoped for**, the **conviction of things not seen**. For by it the people of old received their commendation. **By faith we understand that the universe was created by the word of God**, so that what is seen was not made out of things that are visible. (ESV)
+
 I put a bunch of concepts together to describe faith:
 
-     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     1  Faith = Hope * Work/Love/Walking-By-Faith
      2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      4  
-     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      6  
-     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      8  
-     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
     10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     12  
-    13  Love is proportional-to the baggage which has been forgiven
-    14  Love ∝ forgiven-baggage
-    15  
-    16  Obedience ∝ Love
+    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    14  
+    15  Love is proportional-to the baggage which has been forgiven
+    16  Love ∝ forgiven-baggage
     17  
-    18  F = H * L
+    18  Obedience ∝ Love
     19  
-    20  Faith-in-God when tested by God is found to be true Faith in God.
-    21  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    22  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    20  F = H * L
+    21  
+    22  Faith-in-God when tested by God is found to be true Faith in God.
+    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 These things are factors of faith.
 
