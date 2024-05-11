@@ -2368,3 +2368,5 @@ cd texlab
 cargo build --release
 chown a+x target/release/texlab
 )
+
+agi texlive-fonts-extra
