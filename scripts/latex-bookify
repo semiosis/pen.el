@@ -3,6 +3,10 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# TODO This should only run if the \usepackage{fontspec} is not used
+# because fontspec needs xelatex, and this bookify script only works
+# with pdflatex.
+
 IFS= read -r -d '' BOOK_HEADER <<HEREDOC
 \documentclass[twoside,12pt,english]{book}
 \usepackage{babel}
