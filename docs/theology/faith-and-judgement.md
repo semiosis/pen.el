@@ -88,9 +88,21 @@ We **must** forgive each other:
 
 > **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; **as the Lord has forgiven you, so you also must forgive.** (ESV)
 
+We **must** love our brother and our sister in Christ. It's imperative that we follow Jesus Christ's teachings and commandments:
+
+> **I John 4:20-21** - If anyone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen. And this commandment we have from him: whoever loves God must also love his brother. (ESV)
+
+I confess that Jesus is the Son of God:
+
+> **I John 4:15** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
+
 It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments as we also **believe** Jesus, and believe God sent Him:
+
+> **I John 5:1-5** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
 
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
@@ -217,7 +229,9 @@ Again, these people were baptised in the name of the Lord Jesus, but they hadn't
 For me it was years after being baptised in water that I was born-again of the Spirit, and being born-again of the Spirit happened shortly after I had begun seeking God in truth, and repenting from sin.
 
 
-### Water baptism is an <ins>appeal to God for a good conscience, through the resurrection of Jesus Christ</ins>
+### Water baptism as an appeal to God
+
+Water baptism is an <ins>appeal to God for a good conscience, through the resurrection of Jesus Christ</ins>.
 
 I think baptism of water is an **appeal** to God and identifying oneself into Christ's death and resurrection but the sacrament **maybe** is not strictly required to be saved (as far as I understand).
 
@@ -249,7 +263,9 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 > **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 
-## Eventually our own will lines up with God's will - but His will is that we will to do His will - so we must will to do His will, not our will
+## Our will should be for God's will to be done, and to will to do God's will
+
+I believe that eventually our own will lines up with God's will for us, and I believe that His will is that we will to do His will, and that we will for His will to be done. So I believe we should desire both to do His will as God has revealed to us though the Scriptures, and also to desire that God's will be done over our own will, but that our will may become His will.
 
 -   **Song:** [So Will I {100 Billion X} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=GfVd5x9W1Xc&list=RDGfVd5x9W1Xc&start_radio=1)
 
@@ -10034,6 +10050,12 @@ I think that choosing a relationship Biblically is contrary to worldly precepts:
 
 > **Matthew 6:31-33** - Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you.
 
+> **Acts 26:18** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are **sanctified by faith in me**. (ESV)
+
+> **I John 5:19** - We know that we are from God, and the whole world lies in the power of the evil one. (ESV)
+
+> **Ephesians 2:2** - in which you once walked, following the course of this world, following the prince of the power of the air, the spirit that is now at work in the sons of disobedience— (ESV)
+
 
 # Who will enter Heaven? Only the ones who do the will of Father God
 
@@ -10044,6 +10066,38 @@ OBEDIENCE!
 In Spyridon's words, "Paradise will not be filled with sinless people - it will be filled with people who have repented."
 
 -   **Sermon:** [DESPITE REPEATED SINS, DO NOT DESPAIR - YouTube](https://www.youtube.com/watch?v=MAsHNMlv2bQ)
+
+We **must** be repent from sinful practices:
+
+> **I John 3:3-7** - And everyone who thus hopes in him purifies himself as he is pure. Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. You know that he appeared to take away sins, and in him there is no sin. No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him. Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+
+We **must** forgive each other:
+
+> **Colossians 3:13** - bearing with one another and, if one has a complaint against another, forgiving each other; **as the Lord has forgiven you, so you also must forgive.** (ESV)
+
+We **must** love our brother and our sister in Christ. It's imperative that we follow Jesus Christ's teachings and commandments:
+
+> **I John 4:20-21** - If anyone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen. And this commandment we have from him: whoever loves God must also love his brother. (ESV)
+
+I confess that Jesus is the Son of God:
+
+> **I John 4:15** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
+
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments as we also **believe** Jesus, and believe God sent Him:
+
+> **I John 5:1-5** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
+
+And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
+
+> **Ephesians 4:12-13** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+
+To get to know Jesus, we must obey His commandments:
+
+> **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
 
 # Sermon on the mount
