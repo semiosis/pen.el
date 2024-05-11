@@ -2370,3 +2370,4 @@ chown a+x target/release/texlab
 )
 
 agi texlive-fonts-extra
+agi texstudio
