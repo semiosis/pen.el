@@ -6031,6 +6031,29 @@ And I do not believe the following verse necessarily is talking about justificat
 
 -   **sesōsmenoi (saved):** <https://biblehub.com/greek/seso_smenoi_4982.htm>
 
+So this morning <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-05-12 Sun&gt; </span></span> I got a picture of John Piper in my mind with this Bible verse, and so I googled it and found this tweet a few days ago:
+
+Awesome:
+
+-   <https://twitter.com/JohnPiper/status/1784160580569375072>
+
+> **I Corinthians 15:57-58** - But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
+
+John Piper
+@JohnPiper
+God gives us the victory over death through our Lord Jesus Christ.
+
+> **I Corinthians 15:57-58** - But thanks be to God, who gives us the victory through our Lord Jesus Christ. Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
+
+No labor in vain in the Lord.
+10:00 PM · Apr 27, 2024
+
+AMEN!!
+
+Also, it looks like John Piper has another talk on this:
+
+-   [The Jerusalem Above Is Free: Galatians 4:21-31, Part 5 - YouTube](https://www.youtube.com/watch?v=nRvTnpnNI_k)
+
 
 ## You can't work for justification. We must have faith on God justifying us even though we are ungodly
 
