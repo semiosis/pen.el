@@ -100,7 +100,13 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments as we also **believe** Jesus, and believe God sent Him:
+Believing Jesus, having the love of God within us, loving Father GOd, and loving one another who are children of God, all should be true together:
+
+> **John 5:37-42** - And the Father who sent me has himself borne witness about me. His voice you have never heard, his form you have never seen, and you do not have his word abiding in you, for you do not believe the one whom he has sent. You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. I do not receive glory from people. But I know that you do not have the love of God within you. (ESV)
+
+Also being true together with believing Jesus Christ is obeying His commandments, and being obedient to Him. As I read this, John is really saying here that whoever trusts that Jesus is the Son of God overcomes the world and God's commandments are not burdensome [anymore].
+
+they have overcome the world and now, being far more obedient to God, cheerfully obey His commandments rather than find them difficult - they have had their heart purified and now they love God and they love the children of God (like the good Samaritan):
 
 > **I John 5:1-5** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
 
