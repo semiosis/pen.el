@@ -107,3 +107,22 @@ expansion=true]{microtype}
 \counterwithout{table}{chapter}
 
 HEREDOC
+
+
+test "$#" -gt 0 && {
+    last_arg="${@: -1}"
+    if test -f "$last_arg"; then
+        exec < <(cat "$last_arg")
+    fi
+}
+
+{
+    printf -- "%s\n" "$BOOK_HEADER"
+    sed '0,/documentclass/d' | awk 1
+} | {
+    if test -n "$last_arg" && test -f "$last_arg"; then
+        sponge "$last_arg"
+    else
+        pavs
+    fi
+}
