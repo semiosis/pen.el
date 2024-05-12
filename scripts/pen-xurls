@@ -5,11 +5,13 @@ export TTY
     # e:$HOME/blog/posts/thy-kingdom-come.org
     sed 's%< youtube \([^ ]\+\) >%https://www.youtube.com/watch?v=\1%'
 } | {
-    if test -f ${GOPATH%%:*}/bin/xurls; then
-        ${GOPATH%%:*}/bin/xurls "$@"
-    else
-        rosie-urls "$@"
-    fi
+    # Rosie URLs does not cut off the youtube times
+    rosie-urls "$@"
+    # if test -f ${GOPATH%%:*}/bin/xurls; then
+    #     ${GOPATH%%:*}/bin/xurls "$@"
+    # else
+    #     rosie-urls "$@"
+    # fi
 } | 
     sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}" |
     sed "/\/\/www.youtube.com/{s=\&ab.*==}" |
