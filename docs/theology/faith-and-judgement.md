@@ -8883,6 +8883,86 @@ Loving God is obeying His commandments.
 > **I John 5:2-3** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
 
 
+# We must love God
+
+-   [Love Jesus More Than You Love Anything - YouTube](https://www.youtube.com/watch?v=n9QP-cqwyAw)
+
+> **Matthew 22:37-39** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. (ESV)
+
+In response to forgiveness, we must love:
+
+> **Luke 7:47** - Therefore I tell you, her sins, which are many, are forgiven—for she loved much. But he who is forgiven little, loves little. (ESV)
+
+He loved us first, and that is why we love:
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
+
+## We must love Jesus
+
+> **Matthew 10:37** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+
+## What's the relationship between loving God and loving Jesus?
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
+
+> **John 5:42** - But I know that you do not have the love of God within you. (ESV)
+
+Loving Jesus is the test of whether you love God.
+
+
+## What is the nature of this love?
+
+In a way the love of Jesus is like the love of your children:
+
+> **Matthew 10:37** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+Your children are your treasure; you wouldn't sell them for billions of dollars.
+Jesus has to be our treasure.
+
+Jesus has to be our Pearl of Great price:
+
+> **Matthew 13:45-46** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. (ESV)
+
+
+### We need to treasure Jesus, and from there we should keep Jesus' commandments. Jesus must be our number 1
+
+Jesus certainly does command us to have emotions for things. For example:
+
+-   we should fear God
+-   we should be thankful
+-   we should be compassionate
+-   we should fear the right things
+-   we should be earnest
+-   we should hope
+
+
+### The person who has Jesus' commandments and keeps them, loves Jesus
+
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+
+### If we love Jesus, then we will keep Jesus' commandments
+
+> **John 14:15** - If you love me, you will keep my commandments. (ESV)
+
+So in order to make it much easier to keep Jesus' commandments, we should make Jesus our Pearl of Great Price, our #1 love.
+If we don't make Jesus our #1 love then it will be much harder to keep Jesus' commandments.
+
+
+## How do we get to this place of treasuring Jesus?
+
+> **Luke 7:47** - Therefore I tell you, her sins, which are many, are forgiven—for she loved much. But he who is forgiven little, loves little. (ESV)
+
+
+## If we don't love Jesus, we wont have Jesus
+
+> **Matthew 10:37** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+> **I Corinthians 16:22** - If anyone has no love for the Lord, let him be accursed. Our Lord, come! (ESV)
+
+
 # Kingdom of Servants
 
 -   Jesus Christ is God's servant
