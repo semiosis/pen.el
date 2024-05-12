@@ -55,7 +55,9 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from anything that tries to hinder us from obeying God in truth.
+
+We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
@@ -6037,6 +6039,8 @@ But works of the law is different from works:
     7   itself:--assurance, belief, believe, faith, fidelity.
     8   see GREEK for 3982
 
+> **II Corinthians 10:18** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+
 And I do not believe the following verse necessarily is talking about justification, and also my definition of faith includes obedience:
 
 > **Ephesians 2:8-9** - For by grace you have been saved (sesōsmenoi) through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
@@ -6844,32 +6848,34 @@ You can't have faith without obedience.
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith = Hope * Work/Love/Walking-By-Faith
+Our hope should not be on our own lustful or idolatrous desires, but our hope should be on God's promises:
+
+> **Proverbs 4:23** - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
+
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
-     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
-     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     10  
-    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
     12  
-    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    14  
-    15  L ∝ f
-    16  Love is proportional-to the baggage which has been forgiven
-    17  Love ∝ forgiven-baggage
+    13  L ∝ f
+    14  Love is proportional-to the baggage which has been forgiven
+    15  Love ∝ forgiven-baggage
+    16  
+    17  Obedience ∝ Love
     18  
-    19  Obedience ∝ Love
-    20  
-    21  F = H * L
-    22  Faith = Hope * Love
-    23  
-    24  Faith-in-God when tested by God is found to be true Faith in God.
-    25  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    26  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    19  F = H * L
+    20  Faith = Hope * Love
+    21  
+    22  Faith-in-God when tested by God is found to be true Faith in God.
+    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 Something like this:
 
@@ -7016,7 +7022,11 @@ Faith in the wrong thing:
 
 -   On the Faithless plane, positive magnitude comes from trust in something else, i.e. money or self
 
-But it's God that tests the faith, and God that justifies. That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
+But it's God that tests the faith, and God that justifies.
+
+> **II Corinthians 10:18** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+
+That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
 
 > **Galatians 5:5** - For through the Spirit, by faith, we ourselves eagerly **wait for the hope of righteousness**.
 
@@ -8761,31 +8771,29 @@ I made these equations to describe my understanding that faith is actually close
 
 > **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
 
-     1  Faith = Hope * Work/Love/Walking-By-Faith
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
-     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
-     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     10  
-    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
     12  
-    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    14  
-    15  Love is proportional-to the baggage which has been forgiven
-    16  Love ∝ forgiven-baggage
+    13  Love is proportional-to the baggage which has been forgiven
+    14  Love ∝ forgiven-baggage
+    15  
+    16  Obedience ∝ Love
     17  
-    18  Obedience ∝ Love
-    19  
-    20  F = H * L
-    21  Faith = Hope * Love
-    22  
-    23  Faith-in-God when tested by God is found to be true Faith in God.
-    24  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    25  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    18  F = H * L
+    19  Faith = Hope * Love
+    20  
+    21  Faith-in-God when tested by God is found to be true Faith in God.
+    22  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    23  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 But salvation is a gift and God is sovereign to save. That's why it's grace.
 Saved by grace through faith. Yet actual obedience to the gospel of Jesus is merely Jesus working through us. When a person truly believes then they naturally obey.
@@ -9306,6 +9314,10 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     Eternal punishment vs eternal life:
     
     > **Matthew 25:31-46** - When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, Come, you who are blessed by my Father, inherit the kingdom prepared for you from the foundation of the world. For **I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me. Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.** Then he will say to those on his left, Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into eternal punishment, but the righteous into eternal life. (ESV)
+
+3.  Deliverance for Jesus' servants
+
+    > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
 
 # Coming into the Body of Christ / into abiding in Jesus
@@ -11437,7 +11449,7 @@ Jesus' servants are given mercy by Jesus and they also show mercy to others.
 
 If you know why I'm writing this, there's some people I have already forgiven about stuff to do with me and a certain marriage proposal.
 But I have forgiven them, and I believe it's best to put Jesus first and to have no idols before or besides Him, and I believe that marriage
-or a spouse can be an idol, and in my case it was.
+or a [spouse can be an idol](https://www.youtube.com/watch?v=o3pFwQPu2EA), and in my case it was.
 
 I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ:
 
@@ -11449,11 +11461,12 @@ I forgive everyone.
 
 > **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the <ins>insincerity of liars whose consciences are seared, who forbid marriage</ins> and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For <ins>everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer.</ins> If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
 
+
+### Marriage is good
+
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
 
-> **Colossians 2:18** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, (ESV)
-
-> **Colossians 2:23** - These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
+> **Colossians 2:18-23** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
 
 Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
 
@@ -11870,7 +11883,9 @@ The new Jerusalem is the Bride of Christ:
 > **Revelation of John 21:2** - And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. (ESV)
 
 But can they **enter** the kingdom on earth? I'm not sure.
+
 God is the justifier.
+
 So long as they continue in practicing homosexuality, they wouldn't stay.
 
 They have to be practicing righteousness, through following Jesus Christ - and obeying Jesus' commandments:
@@ -12939,6 +12954,9 @@ I think this is generally the order of things.
 ## Just saying a creed doesn't guarantee that a person is saved (I think)
 
 God chooses who is saved, and how they are saved.
+
+> **II Corinthians 10:18** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+
 God justifies.
 
 > **I Timothy 6:11-16** - But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness.  Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses.  I charge you in the presence of God, who gives life to all things, and of Christ Jesus, who in his testimony before Pontius Pilate made the good confession, to <ins>keep the commandment unstained and free from reproach until the appearing of our Lord Jesus Christ</ins>, which he will display at the proper time—he who is the blessed and only Sovereign, the King of kings and Lord of lords, who alone has immortality, who dwells in unapproachable light, whom no one has ever seen or can see. To him be honor and eternal dominion. Amen.
@@ -13977,30 +13995,28 @@ The rhema word of God:
 
 I put a bunch of concepts together to describe faith:
 
-     1  Faith = Hope * Work/Love/Walking-By-Faith
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
      2  
-     3  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
      4  
-     5  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
      6  
-     7  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
-     9  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
     10  
-    11  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
     12  
-    13  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    14  
-    15  Love is proportional-to the baggage which has been forgiven
-    16  Love ∝ forgiven-baggage
+    13  Love is proportional-to the baggage which has been forgiven
+    14  Love ∝ forgiven-baggage
+    15  
+    16  Obedience ∝ Love
     17  
-    18  Obedience ∝ Love
+    18  F = H * L
     19  
-    20  F = H * L
-    21  
-    22  Faith-in-God when tested by God is found to be true Faith in God.
-    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    20  Faith-in-God when tested by God is found to be true Faith in God.
+    21  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    22  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 These things are factors of faith.
 

@@ -1,5 +1,5 @@
 #+TITLE: Thoughts on Faith and Judgement
-#+DATE: <2024-05-12 Sun>
+#+DATE: <2024-05-13 Mon>
 #+AUTHOR: Shane Mulligan
 #+KEYWORDS: faith christianity
 
@@ -65,7 +65,9 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
   *Romans 15:17-18* - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to *obedience—by word and deed,*
 #+END_QUOTE
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from anything that tries to hinder us from obeying God in truth.
+
+We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
 
 #+BEGIN_QUOTE
   *II Corinthians 3:17* - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
@@ -8106,6 +8108,10 @@ But works of the law is different from works:
    see GREEK for 3982
 #+END_SRC
 
+#+BEGIN_QUOTE
+  *II Corinthians 10:18* - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+#+END_QUOTE
+
 And I do not believe the following verse necessarily is talking about justification, and also my definition of faith includes obedience:
 
 #+BEGIN_QUOTE
@@ -9243,9 +9249,13 @@ You can't have faith without obedience.
   *I Corinthians 13:2* - And if I have prophetic powers, and understand all mysteries and all knowledge, and *if I have all faith, so as to remove mountains, but have not love, I am nothing.* (ESV)
 #+END_QUOTE
 
-#+BEGIN_SRC text -n :async :results verbatim code :lang text
-  Faith = Hope * Work/Love/Walking-By-Faith
+Our hope should not be on our own lustful or idolatrous desires, but our hope should be on God's promises:
 
+#+BEGIN_QUOTE
+  *Proverbs 4:23* - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
   Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
 
   Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
@@ -9478,7 +9488,13 @@ An obedient heart is required for it to not be 'dead faith'.
 Faith in the wrong thing:
 - On the Faithless plane, positive magnitude comes from trust in something else, i.e. money or self
 
-But it's God that tests the faith, and God that justifies. That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
+But it's God that tests the faith, and God that justifies.
+
+#+BEGIN_QUOTE
+  *II Corinthians 10:18* - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+#+END_QUOTE
+
+That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
 
 #+BEGIN_QUOTE
   *Galatians 5:5* - For through the Spirit, by faith, we ourselves eagerly *wait for the hope of righteousness*.
@@ -11802,8 +11818,6 @@ I made these equations to describe my understanding that faith is actually close
 #+END_QUOTE
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  Faith = Hope * Work/Love/Walking-By-Faith
-
   Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
 
   Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
@@ -12602,6 +12616,12 @@ Eternal punishment vs eternal life:
 
 #+BEGIN_QUOTE
   *Matthew 25:31-46* - When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, Come, you who are blessed by my Father, inherit the kingdom prepared for you from the foundation of the world. For *I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me. Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.* Then he will say to those on his left, Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into eternal punishment, but the righteous into eternal life. (ESV)
+#+END_QUOTE
+
+**** Deliverance for Jesus' servants
+
+#+BEGIN_QUOTE
+  *Isaiah 54:17* - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 #+END_QUOTE
 
 * Coming into the Body of Christ / into abiding in Jesus
@@ -15030,7 +15050,7 @@ Jesus' servants are given mercy by Jesus and they also show mercy to others.
 ** Marriage should not be forbidden
 If you know why I'm writing this, there's some people I have already forgiven about stuff to do with me and a certain marriage proposal.
 But I have forgiven them, and I believe it's best to put Jesus first and to have no idols before or besides Him, and I believe that marriage
-or a spouse can be an idol, and in my case it was.
+or a [[https://www.youtube.com/watch?v=o3pFwQPu2EA][spouse can be an idol]], and in my case it was.
 
 I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ:
 
@@ -15046,14 +15066,11 @@ I forgive everyone.
   *1 Timothy 4:1-8* - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the _insincerity of liars whose consciences are seared, who forbid marriage_ and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For _everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer._ If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
 #+END_QUOTE
 
+*** Marriage is good
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
 
 #+BEGIN_QUOTE
-  *Colossians 2:18* - Let no one disqualify you, insisting on *asceticism* and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, (ESV)
-#+END_QUOTE
-
-#+BEGIN_QUOTE
-  *Colossians 2:23* - These have indeed an appearance of wisdom in promoting *self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.* (ESV)
+  *Colossians 2:18-23* - Let no one disqualify you, insisting on *asceticism* and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting *self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.* (ESV)
 #+END_QUOTE
 
 Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
@@ -15645,7 +15662,9 @@ The new Jerusalem is the Bride of Christ:
 #+END_QUOTE
 
 But can they *enter* the kingdom on earth? I'm not sure.
+
 God is the justifier.
+
 So long as they continue in practicing homosexuality, they wouldn't stay.
 
 They have to be practicing righteousness, through following Jesus Christ - and obeying Jesus' commandments:
@@ -17087,6 +17106,11 @@ I think this is generally the order of things.
 ** Just saying a creed doesn't guarantee that a person is saved (I think)
 
 God chooses who is saved, and how they are saved.
+
+#+BEGIN_QUOTE
+  *II Corinthians 10:18* - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+#+END_QUOTE
+
 God justifies.
 
 #+BEGIN_QUOTE
@@ -18503,8 +18527,6 @@ The rhema word of God:
 I put a bunch of concepts together to describe faith:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  Faith = Hope * Work/Love/Walking-By-Faith
-
   Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
 
   Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
