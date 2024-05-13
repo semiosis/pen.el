@@ -1334,7 +1334,7 @@ I think believing in the Son is also obedience, but it is an act of obedience wh
 
 > **John 6:68** - Simon Peter answered him, Lord, to whom shall we go? You have the words of eternal life, (ESV)
 
-> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 > **John 4:14** - but whoever drinks of the water that I will give him will never be thirsty forever. The water that I will give him will become in him a spring of water welling up to eternal life. (ESV)
 
@@ -1573,7 +1573,7 @@ God has called us out of darkness and into His marvelous light:
 
 Saving faith does come (originate) from hearing through the word of Christ:
 
-> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 I believe that saving faith must arrive and settle in the heart, and as the heart is made clean, a person's outside changes:
 
@@ -6046,7 +6046,7 @@ So we are saved by obeying Jesus:
 
 But I feel like a lot of people have a problem with salvation by obedience, but it's totally Scriptural. Noah and the Israelites through the Red Sea and the Apostle Thomas after following Jesus around for ages and finally arrived at belief. And I think this is the correct teaching.
 
-> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 Faith comes from hearing Jesus' words and we can hear a commandment of Jesus such as 'love your enemies' and that faith can come from that, and it's Jesus working through them when they hear Jesus' words and obey them, and I think a person can be saved this way if they continue in Jesus' word.
 
@@ -6901,7 +6901,7 @@ But our faith, as Christians, should be while willing God's will. We can ask God
 
 ## This guy supplicated to Jesus. Did he pray to Jesus? Maybe that's what Jesus meant by prayer
 
-> **Mark 9:23-29** - And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, **I believe; help my unbelief!** And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, <ins>I command you, come out of him and never enter him again.</ins> And after crying out and convulsing him terribly, it came out, and the boy was like a corpse, so that most of them said, He is dead. But Jesus took him by the hand and lifted him up, and he arose. And when he had entered the house, his disciples asked him privately, Why could we not cast it out? And he said to them, This kind cannot be driven out by anything but **prayer.** (ESV)
+> **Mark 9:23-29** - And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, **I believe; help my unbelief!** And *when Jesus saw that a crowd came running together*, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, <ins>I command you, come out of him and never enter him again.</ins> And after crying out and convulsing him terribly, it came out, and the boy was like a corpse, so that most of them said, He is dead. But Jesus took him by the hand and lifted him up, and he arose. And when he had entered the house, his disciples asked him privately, Why could we not cast it out? And he said to them, This kind cannot be driven out by anything but **prayer.** (ESV)
 
 Also, one other interesting note is Jesus commanded the demon to come out and to never reenter again.
 
@@ -6914,13 +6914,17 @@ Also, when we pray, we will for God's will to be done:
 
 > **II Chronicles 20:20** - And they rose early in the morning and went out into the wilderness of Tekoa. And when they went out, Jehoshaphat stood and said, Hear me, Judah and inhabitants of Jerusalem! Believe in the LORD your God, and you will be established; believe his prophets, and you will succeed. (ESV)
 
+When we are living our lives trusting in God, believing that He exists and rewards those who seek Him, I feel like God builds our house, and our faith:
+
+> **Psalms 127:1** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
+
 
 ## We should have minds that, by testing, we can discern the will of God, and act in faith according to God's will as far as we can discern
 
 > **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that **by testing** you may **discern what is the will of God**, what is good and **acceptable** and perfect. (ESV)
 
 
-## Faith (which is intrinsically in accordance with God's will) being built up, miracles result
+## Faith that has been built up in God's will produces miracles
 
 > **Mark 11:23** - Truly, I say to you, whoever says to this mountain, Be taken up and thrown into the sea, and does not doubt in his heart, but believes that what he says will come to pass, **it will be done for him.** (ESV)
 
@@ -6931,9 +6935,13 @@ Also, when we pray, we will for God's will to be done:
 > **Luke 17:6** - And the Lord said, If you had faith like a grain of mustard seed, you could say to this mulberry tree, Be uprooted and planted in the sea, and it would obey you. (ESV)
 
 
-## This man trusted Jesus' word - He had faith in Jesus. Jesus was acting in faith
+## This man trusted Jesus' word and acted on it - He had faith in Jesus
 
-> **John 4:48-50** - So Jesus said to him, Unless you see signs and wonders you will not believe. The official said to him, Sir, come down before my child dies. Jesus said to him, Go; your son will live. The man believed the word that Jesus spoke to him and went on his way. (ESV)
+The guy believed Jesus and acted on it:
+
+> **John 4:48-50** - So Jesus said to him, Unless you see signs and wonders you will not believe. The official said to him, Sir, come down before my child dies. Jesus said to him, Go; your son will live. The man **believed the word that Jesus spoke to him and went on his way.** (ESV)
+
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 
 ## This man had faith to be made well. Paul the Apostle was also acting in faith
@@ -14158,7 +14166,7 @@ Our faith must be sound. We must believe and have assurance in the Truth:
 
 Faith comes from hearing the word of Christ. Christ's words are Absolute Truth, therefore, as we believe them, it increases our faith:
 
-> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 With faith we believe what God's Word tells us:
 
@@ -17106,7 +17114,7 @@ should be the development of faith because while believing the truth, other thin
 
 -   [Spiritual Warfare: How to Put on the Armor of God (Belt of Truth) - YouTube](https://youtu.be/e6X-c3QcSX4?t=95)
 
-> **Romans 10:17** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
+> **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
 The Scriptures say Abraham believed God, and it doesn't say God believed God. We must believe God:
 
