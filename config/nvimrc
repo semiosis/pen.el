@@ -289,7 +289,16 @@ digr li 128077
 digr dl 128078
 " ☕
 digr co 9749
-
+" ³
+digr S3 179
+" ²
+digr S2 178
+" ¹ - already works
+" digr S1 185
+" ⁴ - already works
+" digr S4 8308
+" ₄
+digr S4 8324
 
 
 function! Q(string)
