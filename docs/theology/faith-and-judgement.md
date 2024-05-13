@@ -55,7 +55,7 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from anything that tries to hinder us from obeying God in truth.
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
 We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
 
@@ -1045,7 +1045,31 @@ Christian love:
 
 -   **Talk:** [Believing Loving and Obeying and abiding in the presence of the Holy Spirit - YouTube](https://www.youtube.com/watch?v=ZHhVXgvVSks)
 
+We want Jesus, so we should treasure Jesus:
+
+> **Psalms 37:4** - Delight yourself in the LORD, and he will give you the desires of your heart. (ESV)
+
+> **Matthew 6:21** - For where your treasure is, there your heart will be also. (ESV)
+
+Jesus must be our number 1 heart's desire:
+
+> **Matthew 10:37** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+We must love Jesus by keeping His commandments:
+
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+
+If we treasure Jesus, and make Jesus our number 1 heart's desire, we will be able to keep Jesus' commandments:
+
 > **John 14:15** - If you love me, you will keep my commandments. (ESV)
+
+We must give ourselves first to the Lord Jesus:
+
+> **II Corinthians 8:3-5** - For they gave *according to their means*, as I can testify, and *beyond their means*, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
+
+And following Jesus' commandments we will love one another:
+
+> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
 
 ## Some indicators to know for SURE you are saved
@@ -4385,6 +4409,12 @@ Part of the will of Father God is that we repent from sin:
 > **Proverbs 5:21** - For a man's ways are before the eyes of the LORD, and he ponders all his paths. (ESV)
 
 > **Job 10:4-8** - Have you eyes of flesh? Do you see as man sees? Are your days as the days of man, or your years as a man's years, that you seek out my iniquity and search for my sin, although you know that I am not guilty, and there is none to deliver out of your hand? Your hands fashioned and made me, and now you have destroyed me altogether. (ESV)
+
+We should ask God to search our heart, and our thoughts, and try us:
+
+> **Psalms 139:23-24** - Search me, O God, and know my heart! Try me and know my thoughts! And see if there be any grievous way in me, and lead me in the way everlasting! (ESV)
+
+> **Psalms 19:14** - Let the words of my mouth and the meditation of my heart be acceptable in your sight, O LORD, my rock and my redeemer. (ESV)
 
 
 ## The law is laid down for the sinners

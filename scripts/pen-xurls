@@ -12,10 +12,15 @@ export TTY
     # else
     #     rosie-urls "$@"
     # fi
-} | 
+} | {
+    sed "s/youtu\\.be\\//youtube.com\\/watch\\?v=/" |
+    sed "/\\?v=.*\\?t=/s/\\?t/\&t/"
+} | {
     sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}" |
     sed "/\/\/www.youtube.com/{s=\&ab.*==}" |
     sed "s=^http://www.google.com/url?q\===" | sed "s/&sa=.*//" |
-    sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" | sed-pcre "s/(?<!(m\/url|earch|forum|watch|ylist))\?.*//" | sed 's/&fbcli.*//' |
+    sed "s=^http.\\?://webcache\\.googleusercontent\\.com/search?q\\=cache:==" |
+    sed-pcre "s/(?<!(m\/url|earch|forum|watch|ylist))\?.*//" |
+    sed 's/&fbcli.*//' |
     sed "s=\\\n$=="
-
+}
