@@ -894,7 +894,7 @@ We are commanded to be innocent, and to bear witness of Jesus before men who per
 > 
 > Is it crucial to obey the gospel? Yes. Is that a 'works-based' gospel? If we must put a label on it, I'd describe it more of a **my-willingness-to-work-serving-Christ-based-on-Jesus'-finished-works-and-God-working-in-me-based** gospel.
 
-God works in us to save us. Since obedience to God is faith, God works in us through faith:
+God works in us to save us. Since trusting obedience to God is walking in faith, God works in us through faith:
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
 
@@ -5859,378 +5859,6 @@ Cleaned up (stop sinning) by having faith in the truth.
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
 
 
-# Faith in God
-
-> **Hebrews 11:1** - Now faith is the assurance of things hoped for, the conviction of things not seen. (ESV)
-
-
-## Only with God are all things possible for one who believes. Our faith must be faith 'with God', and our faith should in accordance with His will
-
-With faith the impossible is possible, but not without God making it happen:
-
-> **Matthew 17:20** - He said to them, Because of your little faith. For truly, I say to you, **if you have faith** like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and **nothing will be impossible for you.** (ESV)
-
-With God, it's the impossible is possible. I think this is saying that <ins>**to be in accordance with God's will is an intrinsic quality of faith**</ins>:
-
-> **Mark 10:27** - Jesus looked at them and said, **With man it is impossible, but not with God. For all things are possible with God.** (ESV)
-
-> **Matthew 19:26** - But Jesus looked at them and said, With man this is impossible, but **with God all things are possible.** (ESV)
-
-> **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
-
-But our faith, as Christians, should be while willing God's will. We can ask God for things, but we should desire His will be done:
-
-> **Mark 14:36** - And he said, Abba, Father, **all things are possible for you.** Remove this cup from me. **Yet not what I will, but what you will.** (ESV)
-
-
-## This guy supplicated to Jesus. Did he pray to Jesus? Maybe that's what Jesus meant by prayer
-
-> **Mark 9:23-29** - And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, **I believe; help my unbelief!** And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, <ins>I command you, come out of him and never enter him again.</ins> And after crying out and convulsing him terribly, it came out, and the boy was like a corpse, so that most of them said, He is dead. But Jesus took him by the hand and lifted him up, and he arose. And when he had entered the house, his disciples asked him privately, Why could we not cast it out? And he said to them, This kind cannot be driven out by anything but **prayer.** (ESV)
-
-Also, one other interesting note is Jesus commanded the demon to come out and to never reenter again.
-
-Also, when we pray, we will for God's will to be done:
-
-> **Matthew 6:9-12** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
-
-
-## Faith should be built up on trusting the Word of God
-
-> **II Chronicles 20:20** - And they rose early in the morning and went out into the wilderness of Tekoa. And when they went out, Jehoshaphat stood and said, Hear me, Judah and inhabitants of Jerusalem! Believe in the LORD your God, and you will be established; believe his prophets, and you will succeed. (ESV)
-
-
-## We should have minds that, by testing, we can discern the will of God, and act in faith according to God's will as far as we can discern
-
-> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that **by testing** you may **discern what is the will of God**, what is good and **acceptable** and perfect. (ESV)
-
-
-## Faith (which is intrinsically in accordance with God's will) being built up, miracles result
-
-> **Mark 11:23** - Truly, I say to you, whoever says to this mountain, Be taken up and thrown into the sea, and does not doubt in his heart, but believes that what he says will come to pass, **it will be done for him.** (ESV)
-
-> **Matthew 17:20** - He said to them, Because of your little faith. For truly, I say to you, **if you have faith** like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and **nothing will be impossible for you.** (ESV)
-
-> **Matthew 21:21-22** - And Jesus answered them, Truly, I say to you, if you have faith and do not doubt, you will not only do what has been done to the fig tree, but even if you say to this mountain, Be taken up and thrown into the sea, it will happen. And whatever you ask in prayer, you will receive, if you have faith. (ESV)
-
-> **Luke 17:6** - And the Lord said, If you had faith like a grain of mustard seed, you could say to this mulberry tree, Be uprooted and planted in the sea, and it would obey you. (ESV)
-
-
-## This man trusted Jesus' word - He had faith in Jesus. Jesus was acting in faith
-
-> **John 4:48-50** - So Jesus said to him, Unless you see signs and wonders you will not believe. The official said to him, Sir, come down before my child dies. Jesus said to him, Go; your son will live. The man believed the word that Jesus spoke to him and went on his way. (ESV)
-
-
-## This man had faith to be made well. Paul the Apostle was also acting in faith
-
-> **Acts 14:8-10** - Now at Lystra there was a man sitting who could not use his feet. He was crippled from birth and had never walked. He listened to Paul speaking. And Paul, looking intently at him and seeing that he had faith to be made well, said in a loud voice, Stand upright on your feet. And he sprang up and began walking. (ESV)
-
-
-## Jesus, with faith, commanded the unclean spirit to leave
-
-> **Mark 9:19** - And he answered them, O faithless generation, how long am I to be with you? How long am I to bear with you? Bring him to me. (ESV)
-
-> **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
-
-> **Mark 9:25** - And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, I command you, come out of him and never enter him again. (ESV)
-
-
-### Faith requires obedience - i.e. acting in faith / living by faith
-
-> **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God and do it.”
-
--   The Holy Spirit is given to those who obey Jesus.
--   The Holy Spirit is given to those who have faith in Jesus.
-
-You can't have faith without obedience.
-
--   **Song:** [Keith Green - To Obey Is Better Than Sacrifice (live)](https://youtu.be/TzWyZxlwGKI?list=RDz7oCa9BvO9g&t=98)
-
-> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
-
-> **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
-
-> **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
-
-Our hope should not be on our own lustful or idolatrous desires, but our hope should be on God's promises:
-
-> **Proverbs 4:23** - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
-
-Actually, our faith and hope and heart's desire and our walking in faith should really be in line with God's will, and God's plan:
-
-> **Matthew 6:9-12** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
-
-     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
-     2  
-     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
-     4  
-     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
-     6  
-     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
-     8  
-     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
-    10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    12  
-    13  L ∝ f
-    14  Love is proportional-to the baggage which has been forgiven
-    15  Love ∝ forgiven-baggage
-    16  
-    17  Obedience ∝ Love
-    18  
-    19  F = H * L
-    20  Faith = Hope * Love
-    21  
-    22  Faith-in-God when tested by God is found to be true Faith in God.
-    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
-
-Something like this:
-
-> **I Thessalonians 1:3** - remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ. (ESV)
-
-As the LORD's works are done in faithfulness, our work should be done in faithfulness towards God.
-Everything we do should be done in faithfulness to Him.
-
-> **Psalms 33:4** - For the word of the LORD is upright, and all his work is done in faithfulness. (ESV)
-
-Even after arriving at the true knowledge through obedience, faith is further supplemented/nourished/aided by virtue, knowledge, self-control, steadfastness, godliness, brotherly affection and love:
-
-> **II Peter 1:3-7** - His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence, by which he has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature, having escaped from the corruption that is in the world because of sinful desire. For this very reason, make every effort to <ins>supplement your faith with virtue</ins>, and virtue with knowledge, and knowledge with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love. (ESV)
-
-The true knowledge of Jesus grants us everything pertaining to life and godliness, allowing us to partake in the divine nature. We should then reinforce the divine nature with such things:
-
-> **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
-
-Because, having **arrived** at the true knowledge of Jesus, we are partakers of the divine nature, in order to be fruitful we should supply to our faith those qualities:
-
-> **II Peter 1:8** - For **if these qualities are yours and are increasing**, they render you <ins>neither useless nor unfruitful</ins> in the <ins>true knowledge</ins> (G1922 **epignosis**) of our Lord Jesus Christ.
-
-    1  :  1922  epignosis  ep-ig'-no-sis
-    2  
-    3   from 1921; recognition, i.e. (by implication) full discernment,
-    4   acknowledgement:--(ac-)knowledge(-ing, - ment).
-    5   see GREEK for 1921
-
-1.  Work/Love/Walking-By-Faith
-
-    > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
-    
-    We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
-    
-    > **John 15:12** - This is my commandment, that you love one another as I have loved you.
-    
-    > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
-    
-    > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
-    
-    > **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
-    
-    > **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
-    
-    > **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
-    
-    > **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
-    
-    Jesus' commandments are consistent with the rest of God's commandments:
-    
-    > **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
-    
-    > **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
-    
-    > **John 14:15** If you love me, you will keep my commandments.
-    
-    > **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
-    
-    > **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
-    
-    > **John 15:12** This is my commandment, that you love one another as I have loved you.
-
-2.  Fear-of-God
-
-    > **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
-    
-    AMEN!! But this doesn't mean the other elements of working faith can't play a part.
-    
-    Without love, faith is dead:
-    
-    > **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
-    
-    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
-    
-    `pisteuo` is obedient faith as it is the verb for faith (pistis).
-    
-    > **James 2:22-26** - You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
-    
-    Without faith, work is dead. Whatever actions we make outside of faith is sin:
-    
-    > **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
-    
-    But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
-    
-    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
-
-
-### Faith vector illustration
-
-Deeds, love, faith, service and perseverance are not mutually exclusive. They're all important to God and overlap:
-
-> **Revelation of John 2:19** - ‘I know your deeds, and your love and faith and service and perseverance, and that your deeds of late are greater than at first.
-
-There is a relation here:
-
-> **I Corinthians 13:7** - Love bears all things, believes all things, hopes all things, endures all things.
-
-> **1 Timothy 1:5** -  The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith.  (ESV)
-
-> **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love.
-
-Belief and action are like a vector.
-
-     1  
-     2         Faith plane                 __
-     3         Serving God plane            /|
-     4                                     /                       From past
-     5                                    /                          baggage          o     _
-     6  An obedient    __              __/                         persecuting       /       /|
-     7  and believing   /| 1x Love      /|    2x Love               Jesus           /       /
-     8  heart          /               /                           to receiving    /   →   /
-     9    _           /               /                             forgiveness   /       /
-    10    /|         /               /                             and loving   |/_      /
-    11   o          o               o                                Jesus              o
-    12  
-    13  --------------------------------------------+-------------+----------------------------
-    14                                              |  Dead faith |    Impossible to be
-    15        Faithless plane                       |             |     simultaneously
-    16        Serving yourself plane                |      o      |
-    17        Justifying yourself plane             |             |   yoked to God  _
-    18             __                               | disobedient |  (led by)       /|
-    19              /| Dead works                   +-------------+                /
-    20             /                                              |    while      o
-    21            /                                               |              /
-    22           /            These are entirely worthless        |            |/_
-    23          x                                                 |  (led by)
-    24                                                            |   yoked to money
-
-Faith has 'substance/magnitude' and may be described as a vector:
-
--   The origin of hope/belief is represented by the point.
-    -   On the Faith plane, positive magnitude comes from trust in God
--   Hope-from/in-God is the direction.
--   Work/Love/Walking-By-Faith/Obedience is the magnitude.
-
-I want to be clear, having faith in Jesus Christ is not dead faith.
-Dead faith is precisely not having faith in Jesus Christ.
-
-An obedient heart is required for it to not be 'dead faith'.
-
-> **John 7:17** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.
-
-Faith in the wrong thing:
-
--   On the Faithless plane, positive magnitude comes from trust in something else, i.e. money or self
-
-But it's God that tests the faith, and God that justifies.
-
-> **II Corinthians 10:18** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
-
-That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
-
-> **Galatians 5:5** - For through the Spirit, by faith, we ourselves eagerly **wait for the hope of righteousness**.
-
-> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law.
-
-We must be **doing** the will of God to not be under the law:
-
-> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
-
-> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
-
-> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but **will have the light of life**.
-
-Righteousness is the free gift to be received through obedience:
-
-> **Romans 5:17** - If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the **free gift of righteousness** reign in life through the one man Jesus Christ. (ESV)
-
-Jesus made the Way - He **is** the Way:
-
-> **Romans 5:18-19** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness <ins>leads to</ins> **justification and life** for all men. For as by the one man's disobedience the many were made sinners, so by the one man's obedience **the many** will be made righteous.
-
-The Way is <ins>available</ins> to walk for everyone who is <ins>obedient</ins>.
-
-Doing the will of Father God:
-
--   obedience to Jesus leads to righteousness - obedience/faith to receive the gift, even of the Spirit
-    -   led by the Spirit, obeying Jesus' words
-        -   being led by the Spirit and obeying Jesus' words are in alignment and do not contradict
--   slaves to righteousness leading to sanctification
-    -   at its end, eternal life
--   sanctification leading to eternal life
-    -   sanctification by the Spirit and belief in the truth
-    -   knowledge of the truth
-    -   justification
-
-> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching** to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
-
-The love of the truth must be received and accepted to be saved:
-
-> **II Thessalonians 2:10** - and with all the deception of wickedness for those who perish, because they did not receive the love of the truth so as to be saved. (NASB)
-
-People will trust in what is false:
-
-> **II Thessalonians 2:11** - For this reason God will send upon them a deluding influence so that they will believe (G4100 **pisteuo**) what is false (G5579 pseudos), (NASB)
-
-Those people who did not have faith in the truth but took took pleasure in unrighteousness may be condemned:
-
-> **II Thessalonians 2:12** - in order that all may be condemned who did not believe (G4100 **pisteuo**) the truth but had pleasure in unrighteousness.
-
-But God chose some to be saved through sanctification by the Spirit and belief in the truth:
-
-> **II Thessalonians 2:13** - But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**.
-
-So that they may be obtain the glory of our Lord Jesus Christ:
-
-> **II Thessalonians 2:14** - To this he called you through our gospel, so that you may **obtain the glory of our Lord Jesus Christ**.
-
-We live by the Spirit:
-
-> **Ephesians 2:18** - For through him we both have access in one Spirit to the Father.
-
-We are made alive by the Spirit so we should walk by the Spirit:
-
-> **Galatians 5:25** - If we live by the Spirit, let us also walk by the Spirit.
-
-If we walk by the Spirit, we will not gratify the desires of the flesh:
-
-> **Galatians 5:16** - But I say, walk by the Spirit, and you will not gratify the desires of the flesh.
-
-There are sinning people that alienate themselves from the life of God because of the ignorance that is in them, due to their hardness of heart:
-
-> **Ephesians 4:18-29** - They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart. They have become callous and have given themselves up to sensuality, greedy to practice every kind of impurity.
-
-But having been taught in Jesus, the truth which is in Jesus, to put off the old self and to be renewed in the spirit our our mind, and put on the new self, created after the likeness of God in true righteousness:
-
-> **Ephesians 4:21-24** - assuming that you have heard about him and were taught in him, as the truth is in Jesus, to put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and to be renewed in the spirit of your minds, and to put on the new self, created after the likeness of God in true righteousness and holiness.
-
-Speak the truth and do not sin:
-
-> **Ephesians 4:25-27** - Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another. Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil.
-
-> **Ephesians 1:17** - that the God of our Lord Jesus Christ, the Father of glory, may give you a spirit of wisdom and of revelation in the knowledge of him,
-
-The outcome of being set free from sin and becoming a slave to God is receiving the gift of eternal life:
-
-> **Romans 8:33** -  **Who shall bring any charge against God's elect?**  It is God who justifies.  (ESV)
-
-> **Romans 6:22-23** - But now that you have been set free from sin and have become slaves to God, the fruit you reap leads to holiness, and the outcome is eternal life. For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. (BSB)
-
-A person must **do** the will **of Father God** (not their own will); They must be obedient.
-Faith and obedience are inseparable.
-
-To be fruitful, a person must be further obedient after arriving at the knowledge of the truth and supplement their faith with Christian virtues:
-
-> **II Peter 1:8** - For **if these qualities are yours and are increasing**, they render you <ins>neither useless nor unfruitful</ins> in the <ins>true knowledge</ins> (G1922 **epignosis**) of our Lord Jesus Christ.
-
-
 # Clearing up justifying faith vs justifying works - It's faith in **Jesus Himself** that matters. Also, it's God who justifies us, not we who justify ourselves. We have faith in God to justify us, as we place our faith in Him
 
 I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
@@ -6404,7 +6032,7 @@ So when we obey Jesus' words and commandments, Jesus works in us:
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
 
-God works in us to save us. Since obedience to God is faith, God works in us through faith:
+God works in us to save us. Since trusting obedience to God is walking in faith, God works in us through faith:
 
 > **Philippians 1:6** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
 
@@ -6649,7 +6277,7 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
 
 With an obedient heart, a person will receive revelation as they hear the teaching of Jesus.
 
-A person must be at least willing to do His will - obedience is the essence of faith:
+A person must be at least willing to do His will - obedience is at the essence of faith:
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
@@ -7192,7 +6820,7 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
 
 1.  The obedience of faith
 
-    A person must be at least willing to do His will - obedience is the essence of faith:
+    A person must be at least willing to do His will - obedience is at the essence of faith:
     
     > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
     
@@ -7243,6 +6871,380 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
     > **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love.
     
     > **1 Timothy 1:5** -  The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith.  (ESV)
+
+
+# Faith in God
+
+> **Hebrews 11:1** - Now faith is the assurance of things hoped for, the conviction of things not seen. (ESV)
+
+
+## Only with God are all things possible for one who believes. Our faith must be faith 'with God', and our faith should in accordance with His will
+
+> **Romans 8:31** - What then shall we say to these things? <ins>If God is for us, who can be against us?</ins> (ESV)
+
+With faith the impossible is possible, but <ins>not without God making it happen:</ins>
+
+> **Matthew 17:20** - He said to them, Because of your little faith. For truly, I say to you, **if you have faith** like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and **nothing will be impossible for you.** (ESV)
+
+**With God**, the impossible is possible. I think this is saying that <ins>**to be in accordance with God's will is an intrinsic quality of faith**</ins>:
+
+> **Mark 10:27** - Jesus looked at them and said, **With man it is impossible, but not with God. For all things are possible with God.** (ESV)
+
+> **Matthew 19:26** - But Jesus looked at them and said, With man this is impossible, but **with God all things are possible.** (ESV)
+
+> **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
+
+But our faith, as Christians, should be while willing God's will. We can ask God for things, but we should desire His will be done:
+
+> **Mark 14:36** - And he said, Abba, Father, **all things are possible for you.** Remove this cup from me. **Yet not what I will, but what you will.** (ESV)
+
+
+## This guy supplicated to Jesus. Did he pray to Jesus? Maybe that's what Jesus meant by prayer
+
+> **Mark 9:23-29** - And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, **I believe; help my unbelief!** And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, <ins>I command you, come out of him and never enter him again.</ins> And after crying out and convulsing him terribly, it came out, and the boy was like a corpse, so that most of them said, He is dead. But Jesus took him by the hand and lifted him up, and he arose. And when he had entered the house, his disciples asked him privately, Why could we not cast it out? And he said to them, This kind cannot be driven out by anything but **prayer.** (ESV)
+
+Also, one other interesting note is Jesus commanded the demon to come out and to never reenter again.
+
+Also, when we pray, we will for God's will to be done:
+
+> **Matthew 6:9-12** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
+
+
+## Faith should be built up on trusting the Word of God
+
+> **II Chronicles 20:20** - And they rose early in the morning and went out into the wilderness of Tekoa. And when they went out, Jehoshaphat stood and said, Hear me, Judah and inhabitants of Jerusalem! Believe in the LORD your God, and you will be established; believe his prophets, and you will succeed. (ESV)
+
+
+## We should have minds that, by testing, we can discern the will of God, and act in faith according to God's will as far as we can discern
+
+> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that **by testing** you may **discern what is the will of God**, what is good and **acceptable** and perfect. (ESV)
+
+
+## Faith (which is intrinsically in accordance with God's will) being built up, miracles result
+
+> **Mark 11:23** - Truly, I say to you, whoever says to this mountain, Be taken up and thrown into the sea, and does not doubt in his heart, but believes that what he says will come to pass, **it will be done for him.** (ESV)
+
+> **Matthew 17:20** - He said to them, Because of your little faith. For truly, I say to you, **if you have faith** like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and **nothing will be impossible for you.** (ESV)
+
+> **Matthew 21:21-22** - And Jesus answered them, Truly, I say to you, if you have faith and do not doubt, you will not only do what has been done to the fig tree, but even if you say to this mountain, Be taken up and thrown into the sea, it will happen. And whatever you ask in prayer, you will receive, if you have faith. (ESV)
+
+> **Luke 17:6** - And the Lord said, If you had faith like a grain of mustard seed, you could say to this mulberry tree, Be uprooted and planted in the sea, and it would obey you. (ESV)
+
+
+## This man trusted Jesus' word - He had faith in Jesus. Jesus was acting in faith
+
+> **John 4:48-50** - So Jesus said to him, Unless you see signs and wonders you will not believe. The official said to him, Sir, come down before my child dies. Jesus said to him, Go; your son will live. The man believed the word that Jesus spoke to him and went on his way. (ESV)
+
+
+## This man had faith to be made well. Paul the Apostle was also acting in faith
+
+> **Acts 14:8-10** - Now at Lystra there was a man sitting who could not use his feet. He was crippled from birth and had never walked. He listened to Paul speaking. And Paul, looking intently at him and seeing that he had faith to be made well, said in a loud voice, Stand upright on your feet. And he sprang up and began walking. (ESV)
+
+
+## Jesus, with faith, commanded the unclean spirit to leave
+
+> **Mark 9:19** - And he answered them, O faithless generation, how long am I to be with you? How long am I to bear with you? Bring him to me. (ESV)
+
+> **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
+
+> **Mark 9:25** - And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, I command you, come out of him and never enter him again. (ESV)
+
+
+### Faith requires obedience - i.e. acting in faith / living by faith
+
+> **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God and do it.”
+
+-   The Holy Spirit is given to those who obey Jesus.
+-   The Holy Spirit is given to those who have faith in Jesus.
+
+You can't have faith without obedience.
+
+-   **Song:** [Keith Green - To Obey Is Better Than Sacrifice (live)](https://youtu.be/TzWyZxlwGKI?list=RDz7oCa9BvO9g&t=98)
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+
+> **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
+
+> **I Corinthians 13:2** - And if I have prophetic powers, and understand all mysteries and all knowledge, and **if I have all faith, so as to remove mountains, but have not love, I am nothing.** (ESV)
+
+Our hope should not be on our own lustful or idolatrous desires, but our hope should be on God's promises:
+
+> **Proverbs 4:23** - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
+
+Actually, our faith and hope and heart's desire and our walking in faith should really be in line with God's will, and God's plan:
+
+> **Matthew 6:9-12** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
+
+     1  Faith-in-God = Hope-from/in-God * Work/Love/Walking-By-Faith
+     2  
+     3  Hope-from/in-God = Belief(believing God) * Truth(God's word is Truth, Jesus is the Truth)
+     4  
+     5  Work/Love/Walking-By-Faith = Obedience * Faithfulness * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)
+     6  
+     7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
+     8  
+     9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
+    10  
+    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    12  
+    13  L ∝ f
+    14  Love is proportional-to the baggage which has been forgiven
+    15  Love ∝ forgiven-baggage
+    16  
+    17  Obedience ∝ Love
+    18  
+    19  F = H * L
+    20  Faith = Hope * Love
+    21  
+    22  Faith-in-God when tested by God is found to be true Faith in God.
+    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
+
+Something like this:
+
+> **I Thessalonians 1:3** - remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ. (ESV)
+
+As the LORD's works are done in faithfulness, our work should be done in faithfulness towards God.
+Everything we do should be done in faithfulness to Him.
+
+> **Psalms 33:4** - For the word of the LORD is upright, and all his work is done in faithfulness. (ESV)
+
+Even after arriving at the true knowledge through obedience, faith is further supplemented/nourished/aided by virtue, knowledge, self-control, steadfastness, godliness, brotherly affection and love:
+
+> **II Peter 1:3-7** - His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence, by which he has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature, having escaped from the corruption that is in the world because of sinful desire. For this very reason, make every effort to <ins>supplement your faith with virtue</ins>, and virtue with knowledge, and knowledge with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love. (ESV)
+
+The true knowledge of Jesus grants us everything pertaining to life and godliness, allowing us to partake in the divine nature. We should then reinforce the divine nature with such things:
+
+> **II Peter 1:3-4** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
+
+Because, having **arrived** at the true knowledge of Jesus, we are partakers of the divine nature, in order to be fruitful we should supply to our faith those qualities:
+
+> **II Peter 1:8** - For **if these qualities are yours and are increasing**, they render you <ins>neither useless nor unfruitful</ins> in the <ins>true knowledge</ins> (G1922 **epignosis**) of our Lord Jesus Christ.
+
+    1  :  1922  epignosis  ep-ig'-no-sis
+    2  
+    3   from 1921; recognition, i.e. (by implication) full discernment,
+    4   acknowledgement:--(ac-)knowledge(-ing, - ment).
+    5   see GREEK for 1921
+
+1.  Work/Love/Walking-By-Faith
+
+    > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
+    
+    We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
+    
+    > **John 15:12** - This is my commandment, that you love one another as I have loved you.
+    
+    > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
+    
+    > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
+    
+    > **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
+    
+    > **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
+    
+    > **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
+    
+    > **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
+    
+    Jesus' commandments are consistent with the rest of God's commandments:
+    
+    > **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+    
+    > **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
+    
+    > **John 14:15** If you love me, you will keep my commandments.
+    
+    > **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+    
+    > **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+    
+    > **John 15:12** This is my commandment, that you love one another as I have loved you.
+
+2.  Fear-of-God
+
+    > **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
+    
+    AMEN!! But this doesn't mean the other elements of working faith can't play a part.
+    
+    Without love, faith is dead:
+    
+    > **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
+    
+    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+    
+    `pisteuo` is obedient faith as it is the verb for faith (pistis).
+    
+    > **James 2:22-26** - You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
+    
+    Without faith, work is dead. Whatever actions we make outside of faith is sin:
+    
+    > **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
+    
+    But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
+    
+    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+
+
+### Faith vector illustration
+
+Deeds, love, faith, service and perseverance are not mutually exclusive. They're all important to God and overlap:
+
+> **Revelation of John 2:19** - ‘I know your deeds, and your love and faith and service and perseverance, and that your deeds of late are greater than at first.
+
+There is a relation here:
+
+> **I Corinthians 13:7** - Love bears all things, believes all things, hopes all things, endures all things.
+
+> **1 Timothy 1:5** -  The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith.  (ESV)
+
+> **I Corinthians 13:13** - So now faith, hope, and love abide, these three; but the greatest of these is love.
+
+Belief and action are like a vector.
+
+     1  
+     2         Faith plane                 __
+     3         Serving God plane            /|
+     4                                     /                       From past
+     5                                    /                          baggage          o     _
+     6  An obedient    __              __/                         persecuting       /       /|
+     7  and believing   /| 1x Love      /|    2x Love               Jesus           /       /
+     8  heart          /               /                           to receiving    /   →   /
+     9    _           /               /                             forgiveness   /       /
+    10    /|         /               /                             and loving   |/_      /
+    11   o          o               o                                Jesus              o
+    12  
+    13  --------------------------------------------+-------------+----------------------------
+    14                                              |  Dead faith |    Impossible to be
+    15        Faithless plane                       |             |     simultaneously
+    16        Serving yourself plane                |      o      |
+    17        Justifying yourself plane             |             |   yoked to God  _
+    18             __                               | disobedient |  (led by)       /|
+    19              /| Dead works                   +-------------+                /
+    20             /                                              |    while      o
+    21            /                                               |              /
+    22           /            These are entirely worthless        |            |/_
+    23          x                                                 |  (led by)
+    24                                                            |   yoked to money
+
+Faith has 'substance/magnitude' and may be described as a vector:
+
+-   The origin of hope/belief is represented by the point.
+    -   On the Faith plane, positive magnitude comes from trust in God
+-   Hope-from/in-God is the direction.
+-   Work/Love/Walking-By-Faith/Obedience is the magnitude.
+
+I want to be clear, having faith in Jesus Christ is not dead faith.
+Dead faith is precisely not having faith in Jesus Christ.
+
+An obedient heart is required for it to not be 'dead faith'.
+
+> **John 7:17** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.
+
+Faith in the wrong thing:
+
+-   On the Faithless plane, positive magnitude comes from trust in something else, i.e. money or self
+
+But it's God that tests the faith, and God that justifies.
+
+> **II Corinthians 10:18** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+
+That's why I don't like making an assertion on the exact way that God justifies, because God is the justifier.
+
+> **Galatians 5:5** - For through the Spirit, by faith, we ourselves eagerly **wait for the hope of righteousness**.
+
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law.
+
+We must be **doing** the will of God to not be under the law:
+
+> **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
+
+> **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.
+
+> **John 8:12** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but **will have the light of life**.
+
+Righteousness is the free gift to be received through obedience:
+
+> **Romans 5:17** - If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the **free gift of righteousness** reign in life through the one man Jesus Christ. (ESV)
+
+Jesus made the Way - He **is** the Way:
+
+> **Romans 5:18-19** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness <ins>leads to</ins> **justification and life** for all men. For as by the one man's disobedience the many were made sinners, so by the one man's obedience **the many** will be made righteous.
+
+The Way is <ins>available</ins> to walk for everyone who is <ins>obedient</ins>.
+
+Doing the will of Father God:
+
+-   obedience to Jesus leads to righteousness - obedience/faith to receive the gift, even of the Spirit
+    -   led by the Spirit, obeying Jesus' words
+        -   being led by the Spirit and obeying Jesus' words are in alignment and do not contradict
+-   slaves to righteousness leading to sanctification
+    -   at its end, eternal life
+-   sanctification leading to eternal life
+    -   sanctification by the Spirit and belief in the truth
+    -   knowledge of the truth
+    -   justification
+
+> **Romans 6:13-23** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness.  For sin will have no dominion over you, since you are not under law but under grace.  What then? Are we to sin because we are not under law but under grace? By no means!  Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**?  But thanks be to God, that you who were once slaves of sin have become **obedient from the heart to the standard of teaching** to which you were committed\*, and, having been set free from sin, have become **slaves of righteousness**.  I am speaking in human terms, because of your natural limitations. For just as you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness, so now present your members as slaves to righteousness leading to sanctification.  When you were slaves of sin, you were free in regard to righteousness.  But what fruit were you getting at that time from the things of which you are now ashamed? The end of those things is death.  But now that you have been <ins>set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.  For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord</ins>.
+
+The love of the truth must be received and accepted to be saved:
+
+> **II Thessalonians 2:10** - and with all the deception of wickedness for those who perish, because they did not receive the love of the truth so as to be saved. (NASB)
+
+People will trust in what is false:
+
+> **II Thessalonians 2:11** - For this reason God will send upon them a deluding influence so that they will believe (G4100 **pisteuo**) what is false (G5579 pseudos), (NASB)
+
+Those people who did not have faith in the truth but took took pleasure in unrighteousness may be condemned:
+
+> **II Thessalonians 2:12** - in order that all may be condemned who did not believe (G4100 **pisteuo**) the truth but had pleasure in unrighteousness.
+
+But God chose some to be saved through sanctification by the Spirit and belief in the truth:
+
+> **II Thessalonians 2:13** - But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**.
+
+So that they may be obtain the glory of our Lord Jesus Christ:
+
+> **II Thessalonians 2:14** - To this he called you through our gospel, so that you may **obtain the glory of our Lord Jesus Christ**.
+
+We live by the Spirit:
+
+> **Ephesians 2:18** - For through him we both have access in one Spirit to the Father.
+
+We are made alive by the Spirit so we should walk by the Spirit:
+
+> **Galatians 5:25** - If we live by the Spirit, let us also walk by the Spirit.
+
+If we walk by the Spirit, we will not gratify the desires of the flesh:
+
+> **Galatians 5:16** - But I say, walk by the Spirit, and you will not gratify the desires of the flesh.
+
+There are sinning people that alienate themselves from the life of God because of the ignorance that is in them, due to their hardness of heart:
+
+> **Ephesians 4:18-29** - They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart. They have become callous and have given themselves up to sensuality, greedy to practice every kind of impurity.
+
+But having been taught in Jesus, the truth which is in Jesus, to put off the old self and to be renewed in the spirit our our mind, and put on the new self, created after the likeness of God in true righteousness:
+
+> **Ephesians 4:21-24** - assuming that you have heard about him and were taught in him, as the truth is in Jesus, to put off your old self, which belongs to your former manner of life and is corrupt through deceitful desires, and to be renewed in the spirit of your minds, and to put on the new self, created after the likeness of God in true righteousness and holiness.
+
+Speak the truth and do not sin:
+
+> **Ephesians 4:25-27** - Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another. Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil.
+
+> **Ephesians 1:17** - that the God of our Lord Jesus Christ, the Father of glory, may give you a spirit of wisdom and of revelation in the knowledge of him,
+
+The outcome of being set free from sin and becoming a slave to God is receiving the gift of eternal life:
+
+> **Romans 8:33** -  **Who shall bring any charge against God's elect?**  It is God who justifies.  (ESV)
+
+> **Romans 6:22-23** - But now that you have been set free from sin and have become slaves to God, the fruit you reap leads to holiness, and the outcome is eternal life. For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. (BSB)
+
+A person must **do** the will **of Father God** (not their own will); They must be obedient.
+Faith and obedience are inseparable.
+
+To be fruitful, a person must be further obedient after arriving at the knowledge of the truth and supplement their faith with Christian virtues:
+
+> **II Peter 1:8** - For **if these qualities are yours and are increasing**, they render you <ins>neither useless nor unfruitful</ins> in the <ins>true knowledge</ins> (G1922 **epignosis**) of our Lord Jesus Christ.
 
 
 # Jesus has immortality and gives eternal life, but we must come to Him in obedience, and follow Him, to receive it
@@ -8458,7 +8460,7 @@ And I follow pursue the commandments by faith and not works.
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
-A person must be at least willing to do His will - obedience is the essence of faith:
+A person must be at least willing to do His will - obedience is at the essence of faith:
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
@@ -8945,7 +8947,7 @@ reason to discourage people from obeying the gospel by the false (in my opinion)
 
 > **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall <ins>live by</ins> faith.
 
-A person must be at least willing to do His will - obedience is the essence of faith:
+A person must be at least willing to do His will - obedience is at the essence of faith:
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
@@ -10451,7 +10453,7 @@ Salvation is the gift. Works can be dead works when they're not done in faith. T
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
-A person must be at least willing to do His will - obedience is the essence of faith:
+A person must be at least willing to do His will - obedience is at the essence of faith:
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
@@ -14392,7 +14394,7 @@ Stress: Trust in God.
 
 &#x2014;
 
-> **Romans 8:31** - What then shall we say to these things? If God is for us, who can be against us? (ESV)
+> **Romans 8:31** - What then shall we say to these things? <ins>If God is for us, who can be against us?</ins> (ESV)
 
 -   **<ins>Condition:</ins> When God is for you.:** <ins>Promise:</ins> No one can be against you.
 
