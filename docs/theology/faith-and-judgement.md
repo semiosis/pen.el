@@ -6916,6 +6916,8 @@ Also, when we pray, we will for God's will to be done:
 
 When we are living our lives trusting in God, believing that He exists and rewards those who seek Him, I feel like God builds our house, and our faith:
 
+> **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
+
 > **Psalms 127:1** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
 
 
@@ -6949,16 +6951,35 @@ The guy believed Jesus and acted on it:
 > **Acts 14:8-10** - Now at Lystra there was a man sitting who could not use his feet. He was crippled from birth and had never walked. He listened to Paul speaking. And Paul, looking intently at him and seeing that he had faith to be made well, said in a loud voice, Stand upright on your feet. And he sprang up and began walking. (ESV)
 
 
-## Jesus, with faith, commanded the unclean spirit to leave
+## Jesus, with compassion for the man, and faith in God, sternly commanded the unclean spirit to leave
 
 > **Mark 9:19** - And he answered them, O faithless generation, how long am I to be with you? How long am I to bear with you? Bring him to me. (ESV)
 
 > **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
 
-> **Mark 9:25** - And when Jesus saw that a crowd came running together, he rebuked the unclean spirit, saying to it, You mute and deaf spirit, I command you, come out of him and never enter him again. (ESV)
+> **Mark 9:22-25** - And it has often cast him into fire and into water, to destroy him. But if you can do anything, have **compassion** on us and help us. And Jesus said to him, If you can! All things are possible for one who believes. Immediately the father of the child cried out and said, <ins>I believe; help my unbelief!</ins> And when Jesus saw that a crowd came running together, he <ins>rebuked the unclean spirit, saying to it, You mute and deaf spirit, I command you, come out of him and never enter him again.</ins> (ESV)
 
 
-### Faith requires obedience - i.e. acting in faith / living by faith
+## I feel like we should have compassion when we are serving others, even in healing / deliverance ministries
+
+> **Matthew 15:32** - Then Jesus called his disciples to him and said, **I have compassion** on the crowd because they have been with me now three days and have nothing to eat. And I am unwilling to send them away hungry, lest they faint on the way. (ESV)
+
+> Jesus had genuine compassion while performing miracles, and He had reasons too:
+> 
+> -   **Mt 9:36** - When he saw the crowds, **he had compassion for them**, <ins>because they were harassed and helpless, like sheep without a shepherd.</ins> (ESV)
+> -   **Mt 14:14** - When he went ashore he saw a great crowd, and he had **compassion on them and healed their sick**. (ESV)
+> -   **Mt 15:32** - Then Jesus called his disciples to him and said, **I have compassion on the crowd** <ins>because they</ins> have been with me now three days and <ins>have nothing to eat.</ins> **And I am unwilling to send them away hungry**, lest they faint on the way. (ESV)
+> -   **Mk 6:34** - When he went ashore he saw a great crowd, and **he had compassion on them, because** <ins>they were like sheep without a shepherd</ins>. And he began to teach them many things. (ESV)
+> -   **Mk 8:2** - **I have compassion on the crowd, because** <ins>they have been with me now three days and have nothing to eat.</ins> (ESV)
+> -   **Mk 9:22** - And it has often cast him into fire and into water, to destroy him. But if you can do anything, **have compassion** on us and help us. (ESV)
+> -   **Lk 7:13** - And when the Lord saw her, **he had compassion on her** <ins>and said</ins> to her, Do not weep. (ESV)
+
+Likewise, we should have compassion:
+
+> **Lk 10:33** - But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. (ESV)
+
+
+## Faith requires obedience - i.e. acting in faith / living by faith
 
 > **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God and do it.”
 
@@ -7035,63 +7056,65 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
     4   acknowledgement:--(ac-)knowledge(-ing, - ment).
     5   see GREEK for 1921
 
-1.  Work/Love/Walking-By-Faith
 
-    > **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
-    
-    We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
-    
-    > **John 15:12** - This is my commandment, that you love one another as I have loved you.
-    
-    > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
-    
-    > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
-    
-    > **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
-    
-    > **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
-    
-    > **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
-    
-    > **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
-    
-    Jesus' commandments are consistent with the rest of God's commandments:
-    
-    > **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
-    
-    > **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
-    
-    > **John 14:15** If you love me, you will keep my commandments.
-    
-    > **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
-    
-    > **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
-    
-    > **John 15:12** This is my commandment, that you love one another as I have loved you.
+### Work/Love/Walking-By-Faith
 
-2.  Fear-of-God
+> **II John 1:5-6** - And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that <ins>we love one another</ins>. And **this is love**, that <ins>we walk according to his commandments</ins>; this is the commandment, just as you have heard from the beginning, so that you should walk in it. (ESV)
 
-    > **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
-    
-    AMEN!! But this doesn't mean the other elements of working faith can't play a part.
-    
-    Without love, faith is dead:
-    
-    > **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
-    
-    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
-    
-    `pisteuo` is obedient faith as it is the verb for faith (pistis).
-    
-    > **James 2:22-26** - You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
-    
-    Without faith, work is dead. Whatever actions we make outside of faith is sin:
-    
-    > **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
-    
-    But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
-    
-    > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
+
+> **John 15:12** - This is my commandment, that you love one another as I have loved you.
+
+> **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
+
+> **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
+
+> **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
+
+> **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
+
+> **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
+
+> **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
+
+Jesus' commandments are consistent with the rest of God's commandments:
+
+> **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+
+> **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
+
+> **John 14:15** If you love me, you will keep my commandments.
+
+> **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+
+> **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+
+> **John 15:12** This is my commandment, that you love one another as I have loved you.
+
+
+### Fear-of-God
+
+> **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin.
+
+AMEN!! But this doesn't mean the other elements of working faith can't play a part.
+
+Without love, faith is dead:
+
+> **I Corinthians 13:1** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.
+
+> **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
+
+`pisteuo` is obedient faith as it is the verb for faith (pistis).
+
+> **James 2:22-26** - You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
+
+Without faith, work is dead. Whatever actions we make outside of faith is sin:
+
+> **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin.
+
+But the work of God is to believe in whom He has sent. So even believing in Jesus is work that is done in faith:
+
+> **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.** (ESV)
 
 
 ### Faith vector illustration
