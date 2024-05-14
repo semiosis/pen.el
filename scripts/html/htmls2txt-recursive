@@ -5,15 +5,20 @@ export TTY
 
 set -xv
 
+
 find . -name '*.html' | awk1 | while IFS=$'\n' read -r line; do
 (
     exec 0</dev/null
 
     dn="$(dirname "$line")"
     cd "$dn"
+    CWD="$(pwd)"
     bn="$(basename -- "$line")"
     mant="${bn%.*}"
 
-    elinks-dump "$bn" > "${mant}.txt"
+    if ! test -f "${mant}.txt"; then
+        echo "elinks-dump \"$CWD/$bn\" > \"${mant}.txt\""
+        elinks-dump "$CWD/$bn" > "${mant}.txt"
+    fi
 )
 done
