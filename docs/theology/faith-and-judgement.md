@@ -57,7 +57,7 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
-We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
+We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
@@ -1973,6 +1973,11 @@ Faith is both believing and obedient, even faith in the heart:
 </table>
 
 
+### The Holy Spirit is the living water
+
+> **John 7:37-39** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. **Whoever believes in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+
+
 ### Belief leads to obedience, which leads to knowledge of the Truth
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
@@ -2026,9 +2031,13 @@ Then obeying Jesus and believing His words leads to Jesus:
 
 ### Believing Jesus
 
-The drink is to believe that Jesus is the Christ (Messiah), the Son of God, who has come into the world:
+The drink is to believe that Jesus is the Christ (Messiah), the Son of God, who has come into the world,and receive the Holy Spirit:
 
 > **John 4:10-56** - Jesus answered her, If you knew the gift of God, and who it is that is saying to you, Give me a drink, you would have asked him, and he would have given you living water. Jesus said to her, Everyone who drinks of this water will be thirsty again, but whoever drinks of the water that I will give him will never be thirsty forever. The water that I will give him will become in him a spring of water welling up to eternal life. So Jesus said to them, Truly, truly, I say to you, unless you eat the flesh of the Son of Man and drink his blood, you have no life in you. Whoever feeds on my flesh and drinks my blood has eternal life, and I will raise him up on the last day. For my flesh is true food, and my blood is true drink. Whoever feeds on my flesh and drinks my blood abides in me, and I in him. (ESV)
+
+The Holy Spirit is the living water:
+
+> **John 7:37-39** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. **Whoever believes in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
 
 This belief is a free gift which has to be received in faith (you have to believe it):
 
@@ -5949,9 +5958,11 @@ We are slaves to Christ Jesus:
 
 -   **Bible study:** [You Are a Child of the Free Woman: Galatians 4:21-31, Part 8 - YouTube](https://youtu.be/mUnh98bcLek?t=126)
 
-So John Piper is taking the Apostle John's writing in **II John 9:2** and saying that Apostle John is warning against people talking about justification through works, but I don't think that's what the Apostle John is talking about.
+So John Piper is taking the Apostle John's writing in **II John 1:9** and saying that Apostle John is warning against people talking about justification through works, but I don't think that's what the Apostle John is talking about. But I think it's important to affirm Lord Jesus's teaching.
 
-> **II John 9:2** - And I looked, and behold, a white horse! And its rider had a bow, and a crown was given to him, and he came out conquering, and to conquer. (ESV)
+> **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+> **I Timothy 6:3-4** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, (ESV)
 
 I think the Apostle John means that new believers need to go on to abide in Jesus' teachings, and I suspect that John Piper is interpreting the verse the same way, but rather John Piper is interpretting the Apostle John's verse to be against justification by works - but I don't think that's in any way what the Apostle John is alluding to. I actually think the Apostle John is saying we must be obedient to Jesus and the Apostle John is warning about people who oppose Jesus' teachings to love one another, and oppose the truth which is that Jesus has come in the flesh. I think believing Jesus and trusting Jesus and being obedient to Him should all be true at the same time.
 
@@ -12224,7 +12235,7 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     
     > **Ezekiel 36:24-27** - I will take you from the nations and gather you from all the countries and bring you into your own land. I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules. (ESV)
     
-    <https://youtu.be/MSc3BfyHDfg?t=289>
+    [Nicodemus by  Pastor John Piper - YouTube](https://youtube.com/watch?v=MSc3BfyHDfg&t=289)
 
 3.  The truth is God made them male and female, but handed erroneous, rebellious people over to their lust in impurity
 
@@ -13539,6 +13550,8 @@ The universe is upheld by the word of Jesus' power.
     > **John 3:5** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God.
     
     > **I Corinthians 15:50d** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable.
+    
+    [The Chosen scene: John 3:16 - YouTube](https://youtube.com/watch?v=_p2XIUK9VgA&t=128)
 
 
 ## There is no sexual immorality in Heaven, no violence, no sinners.
