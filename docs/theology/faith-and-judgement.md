@@ -3459,6 +3459,8 @@ Jehovah is God Almighty:
 
 > **II Timothy 2:19** - But God's firm foundation stands, bearing this seal: The Lord knows those who are his, and, <ins>Let everyone who names the name of the Lord depart from iniquity.</ins> (ESV)
 
+-   **Sermon:** [John Piper - The Superior Name of the Son - YouTube](https://www.youtube.com/watch?v=7vIfhcb0obg)
+
 Jehovah God gave Jesus His name, Jesus Christ, Son of God:
 
 > **Matthew 1:21** - She will bear a son, and you shall call his name Jesus, for he will save his people from their sins. (ESV)
@@ -6170,9 +6172,13 @@ Also, it looks like John Piper has another talk on this:
 
 > **Galatians 4:30-31** - But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus in word and deed, the blood of Jesus cleanses us from all sin:
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
+
+We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:􀵲
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
+
+> **Galatians 5:1-6** - **For freedom Christ has set us free**; stand firm therefore, and do not submit again to a yoke of slavery. Look: I, Paul, say to you that if you accept circumcision, Christ will be of no advantage to you. I testify again to every man who accepts circumcision that he is obligated to keep the whole law. You are severed from Christ, you who would be justified by the law; you have fallen away from grace. For **through the Spirit, by faith**, we ourselves eagerly wait for the hope of righteousness. For **in Christ Jesus** neither circumcision nor uncircumcision counts for anything, but **only faith working through love**. (ESV)
 
 We **have been** ransomed from our futile ways, so that our ways may change, and we love God because He loved us first. Therefore, be holy! Obey God:
 
