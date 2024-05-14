@@ -3334,7 +3334,7 @@ I believe there is only one good shepherd, and that is Jesus Christ, Immanuel (G
 
 > **John 10:14-15** - <ins>I am the good shepherd.</ins> I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
 
-> **John 1:14** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
+> **John 1:14** - And **the Word became flesh** and dwelt among us, and we have seen his glory, glory as of **the only Son from the Father, full of grace and truth.** (ESV)
 
 Jesus makes intercession for those who draw near to God through Him:
 
@@ -3644,6 +3644,16 @@ We must obey His commandments to walk in the same way He walked so we get to kno
 > **Luke 9:35** - Then a voice came out of the cloud, saying, “This is My Son, My Chosen One; listen to Him!”
 
 > **John 8:44-47** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. But because I tell the truth, you do not believe me. Which one of you convicts me of sin? <ins>If I tell the truth, why do you not believe me? Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God.</ins>
+
+[Look at Jesus! - YouTube](https://www.youtube.com/watch?v=3GRbIN7BJ0c)
+
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and **the Word was God**. (ESV)
+
+> **John 1:14** - And **the Word became flesh** and dwelt among us, and we have seen his glory, glory as of **the only Son from the Father, full of grace and truth.** (ESV)
+
+> **Hebrews 1:2** - but <ins>in these last days</ins> **he has spoken to us by his Son**, whom he appointed the heir of all things, through whom also he created the world. (ESV)
+
+> **Hebrews 2:1** - Therefore **we must pay much closer attention to what we have heard, lest we drift away from it.** (ESV)
 
 
 ### We are implored to honour Jesus
@@ -6213,7 +6223,7 @@ I'm unsure if the following applies for justification (it may be that it is mean
 
 > **Matthew 6:12-15** -  and forgive us our debts, as we also have forgiven our debtors.  And lead us not into temptation, but deliver us from evil.  For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses.  (ESV)
 
-Nevertheless, I forgive everyone, and hold no gurdges.
+Nevertheless, I forgive everyone, and hold no grudges.
 
 
 ## Obedient action including seeking God in faith (trusting God's words and seeking)
@@ -17413,7 +17423,7 @@ There are those who have faith, and those who betray. Betrayal is counter to hav
 
 ### Father God was always with Jesus
 
-> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV)
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and **the Word was God**. (ESV)
 
 > **John 16:25-32**- I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, because you have loved me and have believed that I came from God. I came from the Father and have come into the world, and now I am leaving the world and going to the Father. His disciples said, Ah, now you are speaking plainly and not using figurative speech! Now we know that you know all things and do not need anyone to question you; this is why we believe that you came from God. Jesus answered them, Do you now believe? Behold, the hour is coming, indeed it has come, when you will be scattered, each to his own home, and will leave me alone. Yet I am not alone, for the Father is with me.
 
@@ -17748,7 +17758,7 @@ The world (the remaining people, who have not repented) may know that Father God
 
 > **Proverbs 8:22-23** - The LORD possessed me at the beginning of his work, the first of his acts of old. Ages ago I was set up, at the first, before the beginning of the earth. (ESV)
 
-> **John 1:1** - In the beginning was the Word, and the Word was with God, and the Word was God. (ESV)
+> **John 1:1** - In the beginning was the Word, and the Word was with God, and **the Word was God**. (ESV)
 
 > **John 10:18** - No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
 
