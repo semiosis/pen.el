@@ -5730,6 +5730,11 @@ We are being prepared to be presented to Jesus:
 > **Colossians 1:21-22** - And you, who <ins>once were alienated</ins> and **hostile in mind, doing evil deeds**, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, (ESV)
 
 
+### The Holy Spirit will teach you
+
+-   [Wilderness How To Come Out /  New Wineskin New Season  #2024 - YouTube](https://www.youtube.com/watch?v=_JCI7ZbxUuE)
+
+
 ## Be corrected by the truth
 
 > **John 17:17-19** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
@@ -14111,6 +14116,27 @@ As you can see in this discussion, I've been born-again and I'm living to serve 
 It's important to thank God, even though life can be challenging after being born-again:
 
 > **I Thessalonians 5:18** - give thanks in all circumstances; for this is the will of God in Christ Jesus for you. (ESV)
+
+
+### The 'wilderness' - I guess this is common experience/season for born-again season Christians after being baptised / born-again of the Spirit
+
+Well explained here:
+
+-   [Wilderness How To Come Out /  New Wineskin New Season  #2024 - YouTube](https://www.youtube.com/watch?v=_JCI7ZbxUuE)
+
+> **Matthew 3:15-17** - But Jesus answered him, Let it be so now, for thus it is fitting for us to fulfill all righteousness. Then he consented. And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+
+Jesus Himself used the Scriptures to combat lies from the enemy:
+
+> **Matthew 4:1-11** - Then Jesus was led up by the Spirit into the wilderness to be tempted by the devil. And after fasting forty days and forty nights, he was hungry. And the tempter came and said to him, If you are the Son of God, command these stones to become loaves of bread. But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. Then the devil took him to the holy city and set him on the pinnacle of the temple and said to him, If you are the Son of God, throw yourself down, for it is written, He will command his angels concerning you, and On their hands they will bear you up, lest you strike your foot against a stone. Jesus said to him, Again it is written, You shall not put the Lord your God to the test. Again, the devil took him to a very high mountain and showed him all the kingdoms of the world and their glory. And he said to him, All these I will give you, if you will fall down and worship me. Then Jesus said to him, Be gone, Satan! For it is written, You shall worship the Lord your God and him only shall you serve. Then the devil left him, and behold, angels came and were ministering to him. (ESV)
+
+The lies certainly come not just through dreams, etc. but through other people. We are tested and must use the word of God to fight against lies:
+
+> **Ephesians 6:17** - and take the helmet of salvation, and the sword of the Spirit, which is the word of God, (ESV)
+
+We have to learn the voice of God.
+
+The Holy Spirit train us to learn the voice of God.
 
 
 ## Born of God
