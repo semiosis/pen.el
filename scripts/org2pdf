@@ -7,6 +7,19 @@ rp="$(realpath "$fp")"
 
 sn="$(basename -- "$0")"
 
+: "${VANILLA:="y"}"
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -nov) {
+        VANILLA=n
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 case "$sn" in
     org2pdf) {
         f=org-latex-export-to-pdf
@@ -24,5 +37,11 @@ esac
 # This is fast but to export with custom latex options, I should use the main emacs instead
 
 echo "Running $sn through emacs" 1>&2
-unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m : -s "(setq org-export-with-broken-links t)" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+
+if test "$VANILLA" = "y"; then
+    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m : -s "(setq org-export-with-broken-links t)" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+else
+    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m : -s "(setq org-export-with-broken-links t)" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+fi
+
 echo "Running $sn through emacs... done!" 1>&2

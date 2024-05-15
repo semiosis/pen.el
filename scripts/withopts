@@ -40,6 +40,16 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            van|vanilla) {
+                export VANILLA=y
+            }
+            ;;
+
+            nov|novan|novanilla) {
+                export VANILLA=n
+            }
+            ;;
+
             nbd|nobd) {
                 export BORDER=n
             }
