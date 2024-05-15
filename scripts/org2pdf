@@ -21,6 +21,8 @@ case "$sn" in
     *)
 esac
 
+# This is fast but to export with custom
+
 echo "Running $sn through emacs" 1>&2
 unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UUU -m : -s "(setq org-export-with-broken-links t)" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
 echo "Running $sn through emacs... done!" 1>&2
