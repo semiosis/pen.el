@@ -1,5 +1,5 @@
 #+TITLE: Thoughts on Faith and Judgement
-#+DATE: <2024-05-15 Wed>
+#+DATE: <2024-05-16 Thu>
 #+AUTHOR: Shane Mulligan
 #+KEYWORDS: faith christianity
 
@@ -1487,7 +1487,33 @@ The prophets, saints, and servants of Jesus will be rewarded:
   *I Thessalonians 5:12-14* - We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you, and to esteem them very highly in love because of their work. Be at peace among yourselves. And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
 #+END_QUOTE
 
+I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us:
+
+#+BEGIN_QUOTE
+  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  - *Eph 2:8* - For by grace you have been saved through faith (G4102 pistis); and that not of yourselves, it is the gift (G1435 doron) of God; (NASB)
+  - *Eph 2:9* - not as a result of works (G2041 ergon), so that no one may boast. (NASB)
+  - *Eph 2:10* - For we are His workmanship, created in Christ Jesus for good works (G2041 ergon), which God prepared beforehand so that we would walk in them. (NASB)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  1435  doron  do'-ron
+
+   a present; specially, a sacrifice:--gift, offering.
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  :  2041  ergon  er'-gon
+
+   from a primary (but obsolete) ergo (to work); toil (as an effort or
+   occupation); by implication, an act:--deed, doing, labour, work.
+#+END_SRC
+
 Work being done by God in us to sanctify us and bring us everlasting life *is* work done in faith.
+
 So the problem isn't work (even work relating to salvation) but the problem is work that is not done in faith (i.e. dead work).
 
 #+BEGIN_QUOTE
@@ -8032,6 +8058,18 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 #+END_QUOTE
 
 *** Salvation by obedience
+I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us:
+
+#+BEGIN_QUOTE
+  *Ephesians 2:8-9* - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  - *Eph 2:8* - For by grace you have been saved through faith (G4102 pistis); and that not of yourselves, it is the gift (G1435 doron) of God; (NASB)
+  - *Eph 2:9* - not as a result of works (G2041 ergon), so that no one may boast. (NASB)
+  - *Eph 2:10* - For we are His workmanship, created in Christ Jesus for good works (G2041 ergon), which God prepared beforehand so that we would walk in them. (NASB)
+#+END_QUOTE
+
 We are instructed to work for God:
 
 #+BEGIN_QUOTE
@@ -16293,6 +16331,10 @@ Also Paul says he does indeed have the right to be a burden on others (because, 
   *2 Thessalonians 3:8-10* - nor did we eat anyone's bread without paying for it, but with toil and labor we worked night and day, that we might not be a burden to any of you. It was not because we do not have that right, but to give you in ourselves an example to imitate. For even when we were with you, we would give you this command: If anyone is not willing to work, let him not eat. (ESV)
 #+END_QUOTE
 
+#+BEGIN_QUOTE
+  *I Thessalonians 5:12-14* - We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you, and to esteem them very highly in love because of their work. Be at peace among yourselves. And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
+#+END_QUOTE
+
 * Hearing the gospel progresses to abiding in Christ
 #+BEGIN_QUOTE
   *I John 2:24* - Let what you heard from the beginning abide in you. If what you heard from the beginning abides in you, then you too will abide in the Son and in the Father.
@@ -23203,7 +23245,7 @@ The world (the remaining people, who have not repented) may know that Father God
   *Hebrews 10:19-20* - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, (ESV)
 #+END_QUOTE
 
-* Jesus rose from the dead and ascended. Amen
+* Jesus rose from the dead and ascended by His own authority given to Him by Father God. Amen
 #+BEGIN_QUOTE
   *Luke 24:1-7* - But on the first day of the week, at early dawn, they came to the tomb bringing the spices which they had prepared. And they found the stone rolled away from the tomb, but when they entered, they did not find the body of the Lord Jesus. While they were perplexed about this, behold, two men suddenly stood near them in dazzling clothing; and as the women were terrified and bowed their faces to the ground, the men said to them, “Why do you seek the living One among the dead? He is not here, but He has risen. Remember how He spoke to you while He was still in Galilee, saying that the Son of Man must be delivered into the hands of sinful men, and be crucified, and the third day rise again.” (ESV)
 #+END_QUOTE
@@ -23214,6 +23256,14 @@ The world (the remaining people, who have not repented) may know that Father God
 
 #+BEGIN_QUOTE
   *Luke 24:38-49* - And he said to them, Why are you troubled, and why do doubts arise in your hearts? See my hands and my feet, that it is I myself. Touch me, and see. For a spirit does not have flesh and bones as you see that I have. And when he had said this, he showed them his hands and his feet. And while they still disbelieved for joy and were marveling, he said to them, Have you anything here to eat? They gave him a piece of broiled fish, and he took it and ate before them. Then he said to them, These are my words that I spoke to you while I was still with you, that everything written about me in the Law of Moses and the Prophets and the Psalms must be fulfilled. Then he opened their minds to understand the Scriptures, and said to them, Thus it is written, that the Christ should suffer and on the third day rise from the dead, and that repentance and forgiveness of sins should be proclaimed in his name to all nations, beginning from Jerusalem. You are witnesses of these things. And behold, I am sending the promise of my Father upon you. But stay in the city until you are clothed with power from on high. (ESV)
+#+END_QUOTE
+
+Jesus, by His own authority, rose from the dead. AMEN!!
+
+[[https://youtube.com/watch?v=gwNM9ye06Ug&t=174][Message To All Christians - YouTube]]
+
+#+BEGIN_QUOTE
+  *John 10:17-18* - For this reason the Father loves me, because I lay down my life that I may take it up again. No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
 #+END_QUOTE
 
 ** Ascension
