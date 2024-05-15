@@ -1034,9 +1034,9 @@ Once again, we are instructed to work for God:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
-Jesus has literally promised that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High:
+Jesus has literally taught people that that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. This shows that obedience to Jesus is just part of having faith in Jesus:
 
-> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+> **Luke 6:35-36** - But love your enemies, and do good, and **lend, expecting nothing in return,** and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
 The prophets, saints, and servants of Jesus will be rewarded:
 
@@ -4733,7 +4733,7 @@ Jesus is so generous that He saves even unthankful people, but we should definit
 
 We are meant to exercise common grace to other people.
 
-> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+> **Luke 6:35-36** - But love your enemies, and do good, and **lend, expecting nothing in return,** and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
 When we pray, we should desire to **do** God's will, as Jesus has prayed for us to remain here to do His will:
 
@@ -5981,9 +5981,9 @@ Once again, we are instructed to work for God:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
-Jesus has literally promised that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High:
+Jesus has literally taught people that that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. This shows that obedience to Jesus is just part of having faith in Jesus:
 
-> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+> **Luke 6:35-36** - But love your enemies, and do good, and **lend, expecting nothing in return,** and your reward will be great, <ins>and you will be sons of the Most High,</ins> for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
 
 The prophets, saints, and servants of Jesus will be rewarded:
 
