@@ -442,4 +442,28 @@ a \"file\" link."
     (`nil (user-error "No valid link in %S" s))
     (link (org-link-open link arg))))
 
+
+;; (org-link-set-parameters
+;;  "org-protocol"
+;;  :export (lambda (path desc backend)
+;;        (cond
+;;         ((eq 'html backend)
+;;          (format "<a href=\"org-protocol:%s\">%s</a>" path desc)))))
+
+;; TODO Make a web server which can run programs when a url is queried
+
+;; Glossary server should display a glossary definition on port 7838
+
+(org-link-set-parameters
+ "y"
+ :export (lambda (path desc backend)
+           (let ((title (or desc
+                            (s-replace-regexp "^[^:]*:" "" path)))
+                 (urlsegment (urlencode path)))
+             (cond
+              ((eq 'html backend)
+               (format "<a href=\"http://localhost:7838/%s\">%s</a>" urlsegment title))
+              ((eq 'latex backend)
+               (tv (format "\\href{http://localhost:7838/%s}{%s}" urlsegment title)))))))
+
 (provide 'pen-org-link-types)

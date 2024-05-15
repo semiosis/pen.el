@@ -1026,6 +1026,21 @@ Our obedience is penitent, not perfect.
 Also I conclude that obeying Jesus Christ is having faith in Him.
 
 Why then do people preach to stop 'working for God'? The problem isn't work, but that work not done in faith is sin.
+We are instructed to work for God:
+
+> **II John 1:8** - Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. (ESV)
+
+Once again, we are instructed to work for God:
+
+> **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
+
+Jesus has literally promised that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. It sounds to me as if Jesus indeed preached a works gospel:
+
+> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+
+The prophets, saints, and servants of Jesus will be rewarded:
+
+> **Revelation of John 11:18** - The nations raged, but your wrath came, and the time for the dead to be judged, and for rewarding your servants, the prophets and saints, and those who fear your name, both small and great, and for destroying the destroyers of the earth. (ESV)
 
 > **I Thessalonians 5:12-14** - We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you, and to esteem them very highly in love because of their work. Be at peace among yourselves. And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
 
@@ -5957,6 +5972,22 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 
 
 ### Salvation by obedience
+
+We are instructed to work for God:
+
+> **II John 1:8** - Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. (ESV)
+
+Once again, we are instructed to work for God:
+
+> **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
+
+Jesus has literally promised that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. It sounds to me as if Jesus indeed preached a works gospel:
+
+> **Luke 6:35-36** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. Be merciful, even as your Father is merciful. (ESV)
+
+The prophets, saints, and servants of Jesus will be rewarded:
+
+> **Revelation of John 11:18** - The nations raged, but your wrath came, and the time for the dead to be judged, and for rewarding your servants, the prophets and saints, and those who fear your name, both small and great, and for destroying the destroyers of the earth. (ESV)
 
 > **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as servants of Christ, doing the will of God from the heart, (ESV)
 

@@ -5,6 +5,8 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+# alt -q urlencode &>/dev/null || agi gridsite-clients &>/dev/null
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -z) {
@@ -27,3 +29,7 @@ if stdin_exists; then
 else
     /usr/bin/urlencode "$@"
 fi
+
+# python:
+# import urllib
+# urllib.parse.quote("yo hodsfkl")
