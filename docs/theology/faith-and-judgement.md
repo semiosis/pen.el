@@ -234,7 +234,7 @@ Also being true together with believing Jesus Christ is obeying His commandments
 
 Their heart is purified through faith, believing in and obeying Jesus, and now they love God and they love the children of God:
 
-> **I John 4:7-17** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
+> **I John 4:7-17** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. *By this is love **perfected** with us*, <ins>so that we may have confidence for the day of judgment</ins>, because **as he is so also are we in this world**. (ESV)
 
 
 ## Receiving the Holy Spirit
@@ -1460,7 +1460,7 @@ We must obey Jesus and love one another:
 
 The knowledge comes from having obeyed God's voice. Love becomes perfected in us when we abide in God:
 
-> **I John 4:15-17** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world.
+> **I John 4:15-17** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. *By this is love **perfected** with us*, <ins>so that we may have confidence for the day of judgment</ins>, because **as he is so also are we in this world**.
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -3284,7 +3284,7 @@ Where there is perfect belief, I think there is perfect obedience:
 
 > **Hebrews 3:14** - For we share in Christ, if indeed we hold our original confidence firm to the end.
 
-> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world.
+> **I John 4:17** - *By this is love **perfected** with us*, <ins>so that we may have confidence for the day of judgment</ins>, because **as he is so also are we in this world**.
 
 
 ### We must recognise that where our efforts to obey falls short, Jesus's blood covers us. But we must still have the heart to make Jesus our Lord and King, and be following Him
@@ -10450,9 +10450,19 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 
 > **Luke 23:46** - Then Jesus, calling out with a loud voice, said, Father, into your hands I commit my spirit! And having said this he breathed his last.  (ESV)
 
-Jesus saving me:
+The Holy Spirit is a person:
 
-[Astral Projection Pt. 2 // Bodacious Blog](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/)
+> **John 16:13** - When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. (ESV)
+
+If the Holy Spirit dwells in you, you are in the Spirit, not in the flesh:
+
+> **Romans 8:9** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
+
+> **Acts 1:5** - for John baptized with water, but you will be baptized with the Holy Spirit not many days from now. (ESV)
+
+Jesus saving me - This is evidence the Holy Spirit is Person:
+
+-   [Astral Projection Pt. 2 // Bodacious Blog](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/)
 
 > I do not actually know what 'astral projection is'. I just googled for whatever I could find to describe it.
 > 
@@ -12270,6 +12280,10 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     
     > **John 1:12-13** - But to all who did receive him, who believed in his name, he gave the right to become children of God, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God. (ESV)
     
+    A total surprise:
+    
+    > **John 3:8** - The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit. (ESV)
+    
     It gave me insight:
     
     > **Proverbs 9:10** - The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight.
@@ -13999,6 +14013,8 @@ We follow them in faith.
 
 2.  Meeting with **the Holy Spirit**
 
+    Jesus saving me - This is evidence the Holy Spirit is Person:
+    
     <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/>
     
     > **I Timothy 6:20** - O Timothy, guard what has been entrusted to you, avoiding worldly and empty chatter and the opposing arguments of what is falsely called “knowledge”&#x2013;
