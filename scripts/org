@@ -115,12 +115,16 @@ case "$opt" in
             elif lit "$uri" | grep -q -P '^https?://'; then
                 # The : must be escaped so URLs can be placed in an org
                 # definition
+                time="$(printf -- "%s" "$uri" | sed -n '/&t=/{s/.*&t=\([0-9]\+\)/\1/p}')"
                 title="$(get_link "$uri" | c ascify | tr -d '\n' | sed 's/ \+/ /' | sed 's/\(\[\|\]\)/ /g' | tr ')' '}' | tr '(' '{' | sed 's/::/=::=/' | strip-unicode)"
                 if [ -z "$title" ]; then
                     title="$(p "$uri" | sed 's/^https\?:\/\///')"
                 fi
                 if test "$BASENAME" = "y"; then
                     title="$(basename "$title")"
+                fi
+                if test -n "$time"; then
+                    title="$title @time: ${time}s"
                 fi
                 printf -- "%s\n" "[[$uri][$title]]"
             elif test -e "$unminimised"; then
