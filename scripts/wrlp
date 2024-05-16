@@ -21,14 +21,17 @@ esac; done
 
 awk 1 | {
     while IFS=$'\n' read -r line; do
-        if test -n "$line"; then
-            if test "$DEBUG" = "y"; then
-                printf -- "%s" "$line" 1>&2
-            fi
+        (
+            exec 0</dev/null
+            if test -n "$line"; then
+                if test "$DEBUG" = "y"; then
+                    printf -- "%s" "$line" 1>&2
+                fi
 
-            printf -- "%s" "$line" | eval "$CMD" | awk 1
-        else
-            echo
-        fi
+                printf -- "%s" "$line" | eval "$CMD" | awk 1
+            else
+                echo
+            fi
+        )
     done
 }
