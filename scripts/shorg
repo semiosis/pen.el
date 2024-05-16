@@ -7,4 +7,9 @@ export TTY
 # e.g.
 # echo "John 20:22" | shorg
 
-nbd onelined decorated sh - | cat
+awk1 | while IFS=$'\n' read -r line; do
+(
+    exec 0</dev/null
+    echo "$line" | nbd onelined decorated sh - | cat
+)
+done
