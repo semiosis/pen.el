@@ -7080,13 +7080,29 @@ Likewise, we should have compassion:
 
 [Mass Deliverance Prayer - If You Need Deliverance, Watch This! {Day 3 of 7} - YouTube](https://www.youtube.com/watch?v=36hgyM20BrA)
 
+-   Typically, one person casts out the demon from another person.
+
 
 ### Demons are not rare
 
 > **Mark 1:39** - And he went throughout all Galilee, preaching in their synagogues and casting out demons. (ESV)
 
 
+### Demons consider a persons' body their home
+
+-   Sinful thoughts/behaviour attracts demons.
+
+> **Matthew 12:43-45** - When the unclean spirit has gone out of a person, it passes through waterless places seeking rest, but finds none. Then it says, I will return to my house from which I came. And when it comes, it finds the house empty, swept, and put in order. Then it goes and brings with it seven other spirits more evil than itself, and they enter and dwell there, and the last state of that person is worse than the first. So also will it be with this evil generation. (ESV)
+
+
+### Renounce the ungodliness
+
+> **Titus 2:11-14** - For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age, waiting for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+
+
 ### This demon came out within the hour
+
+It's often not instantaneous.
 
 > **Acts 16:18** - And this she kept doing *for many days*. Paul, having become greatly annoyed, turned and said to the spirit, I command you in the name of Jesus Christ to come out of her. And it came out **that very hour.** (ESV)
 
@@ -7103,6 +7119,13 @@ The demon then responded.
 Then Jesus asked the demon its name.
 
 > **Mark 5:7-13** - And crying out with a loud voice, he said, What have you to do with me, Jesus, Son of the Most High God? I adjure you by God, do not torment me. For he was saying to him, **Come out of the man, you unclean spirit!** And Jesus asked him, What is your name? He replied, My name is Legion, for we are many. And he begged him earnestly not to send them out of the country. Now a great herd of pigs was feeding there on the hillside, and they begged him, saying, Send us to the pigs; let us enter them. So he gave them permission. And the unclean spirits came out, and entered the pigs, and the herd, numbering about two thousand, rushed down the steep bank into the sea and were drowned in the sea. (ESV)
+
+
+### All believers can cast out demons
+
+> **Mark 16:17** - And these signs will accompany those who believe: in my name they will cast out demons; they will speak in new tongues; (ESV)
+
+> **Luke 10:19** - Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you. (ESV)
 
 
 ## Faith requires obedience - i.e. acting in faith / living by faith
