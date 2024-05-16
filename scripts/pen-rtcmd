@@ -46,7 +46,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ++*) { # pattern
         pattern="$(printf -- "%s" "$opt" | sed 's/^++//' | chomp)"
 
-        # This should go to just after the "
+        # This should go to just after the '"' of the pattern
         vimpat+="+/\(\\<$pattern\\>\( -[^ ]\+\)* [^-]\)\@<=."
 
         # vimopts_end+=" -c startinsert "

@@ -10,7 +10,7 @@ vimevalcmd() {
     cmd="$1"
 
     # debug
-    echo "$cmd" | hls darkteal nearblack 1>&2
+    # echo "$cmd" | hls darkteal nearblack 1>&2
 
     eval "$cmd"
 }
