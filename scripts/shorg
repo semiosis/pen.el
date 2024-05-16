@@ -17,6 +17,7 @@ stdin_exists() {
     } &>/dev/null
 }
 
+{
 if stdin_exists; then
     awk1 | while IFS=$'\n' read -r line; do
     (
@@ -27,3 +28,4 @@ if stdin_exists; then
 else
     nbd onelined decorated "$@" | cat
 fi
+} | pavs
