@@ -6,6 +6,15 @@ test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 # eval 'echo -e -n "export PS4=\"+\t\\\"$(basename $0)\\\"\t${LINENO}\t\""'
 # set -xv
 
+vimevalcmd() {
+    cmd="$1"
+
+    # debug
+    # echo "$cmd" | hls darkteal nearblack 1>&2
+
+    eval "$cmd"
+}
+
 # env | tv &>/dev/null
 
 export OPENAI_API_KEY
@@ -380,7 +389,7 @@ if stdin_exists; then
     cmd="$bin $cmd -"
     cmd="$(printf -- "%s" "$cmd" | pen-esc '`' | pen-ds vlast)"
 
-    printf -- "%s\n" "$input" | eval "$cmd"
+    printf -- "%s\n" "$input" | vimevalcmd "$cmd"
 
     exit $?
 fi
@@ -397,7 +406,7 @@ if test "$LOCATE_IT" = "y"; then
 
         cmd=" -c $(cmd-nice-posix "$extra_commands") $opts $CMD"
 
-        eval "$bin $cmd $w"
+        vimevalcmd "$bin $cmd $w"
     fi
     exit $?
 fi
@@ -489,4 +498,4 @@ fi
 
 cmd="$(printf -- "%s" "$cmd" | pen-esc '`' | pen-ds vlast)"
 
-eval "$cmd"
+vimevalcmd "$cmd"

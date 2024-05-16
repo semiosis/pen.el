@@ -8,6 +8,8 @@ export LINES
 WINCMD="sph -p 80%"
 # WINCMD="spv -p 30%"
 
+fargs=()
+
 pattern=
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     -E) {
@@ -48,7 +50,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
         vimpat+="+/\(\\<$pattern\\>\( -[^ ]\+\)* [^-]\)\@<=."
 
         # vimopts_end+=" -c startinsert "
-        vimopts_end+=" -c StartAppend "
+        # vimopts_end+=" -c StartAppend "
+        fargs+=("-c" "call StartAppend()")
         shift
     }
     ;;
@@ -58,7 +61,8 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
         vimpat+="+/$pattern"
 
-        vimopts_end+=" -c StartAppend "
+        # vimopts_end+=" -c StartAppend "
+        fargs+=("-c" "call StartAppend()")
 
         shift
     }
@@ -115,4 +119,4 @@ respawn_command="tee \"$rtcmd_cmd_fp\" | pen-tm -f -S -tout rsp $(test "$NEOVIM"
 # sp +/"RTCmdSetup(cmd)" "$EMACSD_BUILTIN/host/pen.el/config/nvimrc"
 
 # When this vim is edited, the buffer contents are piped the respawn command
-echo -e "$CMD" | pen-v "$vimpat" -ft sh -rt "$respawn_command" -pc "set ls=0" $vimopts_end
+echo -e "$CMD" | pen-v "$vimpat" -ft sh -rt "$respawn_command" -pc "set ls=0" "${fargs[@]}"
