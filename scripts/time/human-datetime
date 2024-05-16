@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+date +"%a %b %e %_I:%M %p %Y"
