@@ -19,8 +19,8 @@ stdin_exists() {
 
 {
 if stdin_exists; then
-    wrlp -E "nbd onelined decorated sh - | cat"
+    in-pen wrlp -E "nbd onelined decorated sh - | cat"
 else
-    nbd onelined decorated "$@" | cat
+    in-pen nbd onelined decorated "$@" | cat
 fi
 } | pavs
