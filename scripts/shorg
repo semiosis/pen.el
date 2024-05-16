@@ -4,5 +4,7 @@ export TTY
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # Use this inside vim inside org-mode
+# e.g.
+# echo "John 20:22" | shorg
 
 nbd onelined decorated sh - | cat
