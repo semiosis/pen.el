@@ -1,3 +1,6 @@
+;; Map to find someone to help receive deliverance
+;; https://www.isaiahsaldivar.com/deliverance
+
 (defun spiritual-warfare-prayer-before-sleep ()
   (interactive)
   
