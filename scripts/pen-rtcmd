@@ -43,10 +43,10 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    ## This does not work
     ++*) { # pattern
         pattern="$(printf -- "%s" "$opt" | sed 's/^++//' | chomp)"
 
+        # This should go to just after the "
         vimpat+="+/\(\\<$pattern\\>\( -[^ ]\+\)* [^-]\)\@<=."
 
         # vimopts_end+=" -c startinsert "
@@ -57,7 +57,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     ;;
 
     +/*) { # pattern
-        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | chomp)"
+        pattern="$(printf -- "%s" "$opt" | sed 's=^+/==' | chomp | tv)"
 
         vimpat+="+/$pattern"
 

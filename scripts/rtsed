@@ -24,7 +24,7 @@ CMD="$(cmd "$@")"
 cmdname=sed
 
 if stdin_exists; then
-    s chomp | rtcmd ++$cmdname -E "$cmdname $CMD | v -nls"
+    s chomp | rtcmd "++$cmdname" -E "$cmdname $CMD | v -nls"
 else
     rtcmd ++$cmdname -E "$cmd_prefix $cmdname $CMD | v -nls"
 fi
