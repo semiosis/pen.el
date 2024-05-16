@@ -65,6 +65,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
             }
             ;;
 
+            detailed) {
+                export DETAILED=y
+            }
+            ;;
+
             columnated) {
                 export COLUMNATED=y
             }

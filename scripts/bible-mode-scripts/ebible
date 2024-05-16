@@ -307,7 +307,7 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
             cat
         } | { 
             if test "$VERSE_NUMBERS" = "y"; then
-                cat
+                sed 's/^\(.* \)\([0-9]\+:[0-9]\+\): */\2 /' | pen-s remove-trailing-whitespace | sed '/^$/d'
             else
                 # Remove the verse references from the start of each line
                 sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d'
