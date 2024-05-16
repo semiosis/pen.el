@@ -275,6 +275,10 @@ iforcat() {
     fi
 }
 
+if test "$DETAILED" = "y"; then
+    VERSE_NUMBERS=y
+fi
+
 export -f iforcat
 
 IFS= read -r -d '' pipeline <<'HEREDOC'
@@ -302,8 +306,12 @@ IFS= read -r -d '' pipeline <<'HEREDOC'
             # sed 's/^.* \([0-9]\+:[0-9]\+\): */\1 /'
             cat
         } | { 
-            # Remove the verse references from the start of each line
-            sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d'
+            if test "$VERSE_NUMBERS" = "y"; then
+                cat
+            else
+                # Remove the verse references from the start of each line
+                sed 's/^.* [0-9]\+:[0-9]\+: *//' | pen-s remove-trailing-whitespace | sed '/^$/d'
+            fi
         } | {
             # Using patm is quite slow.
             # ebible -cac Revelation 22 | cat
