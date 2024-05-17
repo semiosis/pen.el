@@ -14,6 +14,7 @@ I agree whole heartedly with John Piper here:
 
 -   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
 -   [John Piper - God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
+-   [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 
 
 # My thoughts and bible references regarding theology
@@ -1883,6 +1884,16 @@ The righteousness that comes through having faith in Jesus Christ - faith (not m
 The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
 
 > **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
+
+Believing:
+
+-   [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
+
+Our **heart** must be close to Jesus:
+
+> **Matthew 15:8** - This people honors me with their lips, but their heart is far from me; (ESV)
+
+> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst. (ESV)
 
 Faith is both believing and obedient, even faith in the heart:
 
