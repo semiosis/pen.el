@@ -228,7 +228,7 @@ Those who trust Jesus and believe Jesus is the Son of God, now being far more ob
 
 > **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
-We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking car of them with mercy:
+We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking care of them with mercy:
 
 > **Luke 10:25-37** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
@@ -724,7 +724,8 @@ We put our hope on Him to be our High Priest and Advocate, we obey Him as He sav
 These should really go hand in hand:
 
 -   Believing in Jesus Christ for His finished work to receive justification and eternal life and remain in relationship with Father God and with Jesus
--   Obeying Jesus Christ to be saved from the wrath of God should really go hand-in-hand.
+-   Obeying Jesus Christ (repenting from sin, loving God and your neighbour) to be saved from the wrath of God should really go hand-in-hand.
+    -   [Toss Me in the Water - YouTube @time: 3 min 37 sec](https://youtube.com/watch?v=h_HbG0zROW8&t=217)
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
@@ -733,8 +734,8 @@ Being justified by Jesus' blood, we are saved by Him from the wrath of God:
 > **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
 -   Immediately we are reconciled to God by the death of His Son,
--   and then we are saved from the wrath of God by His life.
--   Also, we meanwhile rejoice in God through our Lord Jesus Christ
+-   and then we are saved from the wrath of God by His life, repenting from sin and keeping His commandments,
+-   also, we meanwhile rejoice in God through our Lord Jesus Christ
 
 > **Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, now that we are reconciled, shall we be saved by his life. More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
 
@@ -2789,6 +2790,8 @@ The grace given to Paul allowed him to turn from his evil ways and pursue Jesus,
 > **I Corinthians 15:10** - But by the grace of God I am what I am, and his grace toward me was not in vain. On the contrary, I worked harder than any of them, though it was not I, but the grace of God that is with me. (ESV)
 
 > **Acts 2:47** - Praising God, and having favour with all the people. And the Lord added to the church daily such as should be saved. (ESV)
+
+[John Piper's Sermon with Scripture only - YouTube](https://www.youtube.com/watch?v=ldag_fIFnqg)
 
 
 ### Living a godly life in Christ Jesus is part of the gospel
@@ -6186,7 +6189,7 @@ And I do not believe the following verse necessarily is talking about justificat
 
 -   **sesōsmenoi (saved):** <https://biblehub.com/greek/seso_smenoi_4982.htm>
 
-We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking car of them with mercy:
+We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking care of them with mercy:
 
 > **Luke 10:25-37** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
@@ -7196,7 +7199,7 @@ Actually, our faith and hope and heart's desire and our walking in faith should 
     23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
     24  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
-Something like this:
+> **I Corinthians 13:1-8** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal. And if I have prophetic powers, and understand all mysteries and all knowledge, and <ins>if I have all **faith**, so as to remove mountains, but have not **love**, I am nothing</ins>. <ins>If I give away all I have, and if I deliver up my body to be burned, but have not **love**, I gain nothing.</ins> Love is patient and kind; love does not envy or boast; it is not arrogant or rude. **It does not insist on its own way**; it is not irritable or resentful; it <ins>does not rejoice at wrongdoing</ins>, but **rejoices with the truth**. Love <ins>bears all things, believes all things, hopes all things, endures all things. Love never ends</ins>. As for prophecies, they will pass away; as for tongues, they will cease; as for knowledge, it will pass away. (ESV)
 
 > **I Thessalonians 1:3** - remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ. (ESV)
 
@@ -8913,6 +8916,11 @@ An obedient heart is required for it to not be 'dead faith'.
 
 
 ## Saving faith
+
+We were saved in this hope, but we still continue to hope:
+s
+
+> **Romans 8:23-25** - And not only the creation, but **we ourselves, who have the firstfruits of the Spirit**, groan inwardly as we **wait eagerly for adoption as sons, the redemption of our bodies**. For **in this hope we were saved**. Now hope that is seen is not hope. For who hopes for what he sees? But if we hope for what we do not see, we wait for it with patience. (ESV)
 
 
 ### believing on Jesus
