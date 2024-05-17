@@ -43,7 +43,7 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 # Being born-again
 
--   **Billy Graham really explains this quite well:** [Born Again | Billy Graham Classic - YouTube](https://youtu.be/CGS2A1RBo00?t=650)
+-   **Billy Graham really explains this quite well:** [Born Again | Billy Graham Classic - YouTube @time: 10 min 50 sec](https://youtube.com/watch?v=CGS2A1RBo00&t=650)
 
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
@@ -55,7 +55,7 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [{ ALL NIGHT PRAYER } POWERFUL DELIVERANCE PRAYERS TO BREAK EVERY CURSE AGAINT YOU - YouTube @time: 1 hrs 59 sec](https://youtube.com/watch?v=9pn_Lx1Hrnk&t=3659) from obeying God in truth.
 
 We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
 
@@ -310,7 +310,7 @@ I believe that eventually our own will lines up with God's will for us, and I be
 
 What God does by way of initiative and what we do as a response is inextricably woven together [to the point where our obedience and God's work may be indistinguishable]. God turns our enmity to love and our disbelief to faith:
 
--   **Sermon:** [Born Again - Alistair Begg, Parkside Church - YouTube](https://youtu.be/D70xSncZBDI?t=2052)
+-   **Sermon:** [Born Again - Alistair Begg, Parkside Church - YouTube @time: 34 min 12 sec](https://youtube.com/watch?v=D70xSncZBDI&t=2052)
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
 
@@ -332,7 +332,7 @@ Paul commends both desiring to do the will of God, and then encourages to comple
 
 > **II Corinthians 8:10-12** - And in this matter I give my judgment: this benefits you, who a year ago started <ins>not only to do this work</ins> but **also to desire to do it**. So now <ins>finish doing it as well</ins>, so that your **readiness in desiring it may be matched by your completing it** out of what you have. For if the readiness is there, it is acceptable according to what a person has, not according to what he does not have. (ESV)
 
-In "[The Blazing Center: Part 3 - YouTube](https://youtu.be/La7TpqSmuJk)" John Piper says, "Maybe my will could correspond to God's will so I could do His will and it would be my will?!" I agree with him.
+In "[The Blazing Center: Part 3 - YouTube](https://youtube.com/watch?v=La7TpqSmuJk)" John Piper says, "Maybe my will could correspond to God's will so I could do His will and it would be my will?!" I agree with him.
 
 And through our obedience to Jesus we are saved. The Bible is clear - a works-based gospel based on God working through us saves:
 
@@ -1083,7 +1083,7 @@ So the problem isn't work (even work relating to salvation) but the problem is w
 
 ## Eternal security for those who follow Jesus
 
--   **Sermon:** [Eternal Security - Charles Spurgeon Sermon - YouTube](https://youtu.be/i27b4cE4xyo?t=1513)
+-   **Sermon:** [Eternal Security - Charles Spurgeon Sermon - YouTube @time: 25 min 13 sec](https://youtube.com/watch?v=i27b4cE4xyo&t=1513)
 
 > At the stage they trust in Jesus, they may have no work but I believe at that stage they are justified, when in their heart is obedient, trusting, believing faith in Christ who is their life. But I'm not the one to justify them, God is.
 > And I assume that Jesus knows who those people are - He knows that they are His sheep, and that Father God draws those people to Him.
@@ -1126,7 +1126,7 @@ And following Jesus' commandments we will love one another:
 
 ## Some indicators to know for SURE you are saved
 
--   **Talk:** [This is how you can know for SURE that you are saved | Assurance of Salvation | Kaci Nicole - YouTube](https://youtu.be/0y-hQrI_sTA?t=779)
+-   **Talk:** [This is how you can know for SURE that you are saved | Assurance of Salvation | Kaci Nicole - YouTube @time: 12 min 59 sec](https://youtube.com/watch?v=0y-hQrI_sTA&t=779)
 
 For assurance of salvation, here's three indicators:
 
@@ -1406,7 +1406,7 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 
 > John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
 
--   **Sermon:** [God's Delight in Obedience - YouTube](https://youtu.be/tqtl-sXeTmA?t=1459)
+-   **Sermon:** [God's Delight in Obedience - YouTube @time: 24 min 19 sec](https://youtube.com/watch?v=tqtl-sXeTmA&t=1459)
 
 
 ### Faith is not merely belief, but faith is walking as Abraham did - believing and obedient
@@ -1606,7 +1606,7 @@ Be convinced and keep having and doing faith in Jesus Christ. John uses the verb
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that <ins>by believing you may have life in his name.</ins> (ESV)
 
--   **Sermon:** [His Voice in Yours: How Christ Wins the World](https://youtu.be/fYJ1oFqSgv4?t=772)
+-   **Sermon:** [His Voice in Yours: How Christ Wins the World - YouTube @time: 12 min 52 sec](https://youtube.com/watch?v=fYJ1oFqSgv4&t=772)
 
 > **Jeremiah 23:5-6** - Behold, the days are coming, declares the LORD, when I will raise up for David a righteous Branch, and he shall reign as king and deal wisely, and shall execute justice and righteousness in the land. In his days Judah will be saved, and Israel will dwell securely. And this is the name by which he will be called: **The LORD is our righteousness.** (ESV)
 
@@ -2405,7 +2405,7 @@ Following Jesus Christ is not having a religious spirit, but it's serving God in
 
 > **Galatians 3:26** - for in Christ Jesus you are all sons of God, through faith. (ESV)
 
--   **Bible study:** [John Piper - Free from Judgment, Fighting Sin, Full Assurance - YouTube](https://youtu.be/M9EbSw8O6uc?t=1846)
+-   **Bible study:** [John Piper - Free from Judgment, Fighting Sin, Full Assurance - YouTube @time: 30 min 46 sec](https://youtube.com/watch?v=M9EbSw8O6uc&t=1846)
 
 Jesus is asking of us to believe that He is the resurrection and the life; Coming to a belief which [in John's terminology] involves personally <ins>committing oneself to Jesus as Son of God, Saviour, Lord, Lamb of God and King</ins>:
 
@@ -3959,7 +3959,7 @@ Therefore, the way of truth involves following Jesus and putting a stop to sin.
 
 I agree with Billy Graham:
 
--   <https://www.youtube.com/watch?v=jCrhHjQgVhA>
+-   [Billy Graham Classic Sermon - YouTube](https://www.youtube.com/watch?v=jCrhHjQgVhA)
 
 > **Revelation of John 21:8** - But as for the cowardly, the faithless, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death." (ESV)
 
@@ -5246,7 +5246,7 @@ We are made a new man in Christ Jesus by the power of **the Holy Spirit**.
 
 > **John 10:27** - My sheep hear my voice, and I know them, and they follow me. (ESV)
 
--   **Sermon:** [Holiness Demanded - Charles Spurgeon Sermon - YouTube](https://youtu.be/S8rmiZRzqfg)
+-   **Sermon:** [Holiness Demanded - Charles Spurgeon Sermon - YouTube](https://youtube.com/watch?v=S8rmiZRzqfg)
 
 -   **Sermon:** [Eternal Security - Charles Spurgeon Sermon - YouTube](https://www.youtube.com/watch?v=i27b4cE4xyo)
 
@@ -6051,7 +6051,7 @@ We are slaves to Christ Jesus:
 
 > **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
--   **Bible study:** [You Are a Child of the Free Woman: Galatians 4:21-31, Part 8 - YouTube](https://youtu.be/mUnh98bcLek?t=126)
+-   **Bible study:** [You Are a Child of the Free Woman: Galatians 4:21-31, Part 8 - YouTube @time: 2 min 6 sec](https://youtube.com/watch?v=mUnh98bcLek&t=126)
 
 So John Piper is taking the Apostle John's writing in **II John 1:9** and saying that Apostle John is warning against people talking about justification through works, but I don't think that's what the Apostle John is talking about. But I think it's important to affirm Lord Jesus's teaching.
 
@@ -6200,7 +6200,7 @@ We don't justify ourselves. The lawyer here was desiring to justify himself. God
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
 
--   <https://pastortomhicks.com/2020/03/10/what-does-it-mean-to-be-under-the-law/>
+-   [What does it mean to be under the law? - Ask the Pastor](https://pastortomhicks.com/2020/03/10/what-does-it-mean-to-be-under-the-law/)
 
 > To be "under the law" is to "rely" on **[your own perfect obedience to]** the law
 > for justification, life and salvation.
@@ -6259,7 +6259,7 @@ Also, it looks like John Piper has another talk on this:
 
 > **Galatians 4:30-31** - But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [{ ALL NIGHT PRAYER } POWERFUL DELIVERANCE PRAYERS TO BREAK EVERY CURSE AGAINT YOU - YouTube @time: 1 hrs 59 sec](https://youtube.com/watch?v=9pn_Lx1Hrnk&t=3659) from obeying God in truth.
 
 We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:􀵲
 
@@ -8112,7 +8112,7 @@ So we are <ins>under</ins> the <ins>law of Christ</ins>, which is a law of faith
 
 I'm with this guy:
 
--   [DEBATE: Should a Christian Observe the Torah Today? - YouTube](https://youtu.be/vVa86R6z0DA?t=1284)
+-   [DEBATE: Should a Christian Observe the Torah Today? - YouTube @time: 21 min 24 sec](https://youtube.com/watch?v=vVa86R6z0DA&t=1284)
 
 The lawbreakers will be thrown into the fiery furnace:
 
@@ -8831,7 +8831,7 @@ We follow the law in truth.
 Jesus fulfilled the law. Jesus' blood is the atonement for sin.
 So we go to Jesus for forgiveness instead of perform the ceremonial law to try to make atonement for sin.
 
-This looks like an interesting resource about that - <http://www.abideinchrist.com/messages/tabernacletype.html>
+This looks like an interesting resource about that - [Exodus 25-40 The Tabernacle as a Type of Jesus Christ](http://www.abideinchrist.com/messages/tabernacletype.html)
 
 
 ## Don't be deceived: Keeping commandments isn't the same thing as placing oneself under the Mosaic law for justification. We're commanded to obey Jesus, and that matters
@@ -12431,7 +12431,7 @@ Here's the grace. I choose to interpret this in this way, and I claim it because
     
     > **Ezekiel 36:24-27** - I will take you from the nations and gather you from all the countries and bring you into your own land. I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules. (ESV)
     
-    [Nicodemus by  Pastor John Piper - YouTube](https://youtube.com/watch?v=MSc3BfyHDfg&t=289)
+    [Nicodemus by  Pastor John Piper - YouTube @time: 4 min 49 sec](https://youtube.com/watch?v=MSc3BfyHDfg&t=289)
 
 3.  The truth is God made them male and female, but handed erroneous, rebellious people over to their lust in impurity
 
@@ -13349,7 +13349,7 @@ We're under grace, and we're supposed to not be enslaved to sin, neither are we 
 
 Things like pornography probably attracts evil spirits which hinders finding a relationship, and obviously, we still want to obey God's precepts for our own good:
 
--   [Prayers Against Evil Attacks During Sleep - Powerful Prayers Against Bad Dreams and Nightmares - YouTube](https://youtu.be/qu8QxxIF4UE?t=520)
+-   [Prayers Against Evil Attacks During Sleep - Powerful Prayers Against Bad Dreams and Nightmares - YouTube @time: 8 min 40 sec](https://youtube.com/watch?v=qu8QxxIF4UE&t=520)
 
 Of course we still need to be sanctified and stop sinning, following Jesus.
 
@@ -13751,7 +13751,7 @@ The universe is upheld by the word of Jesus' power.
     
     > **I Corinthians 15:50d** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable.
     
-    [The Chosen scene: John 3:16 - YouTube](https://youtube.com/watch?v=_p2XIUK9VgA&t=128)
+    [The Chosen scene: John 3:16 - YouTube @time: 2 min 8 sec](https://youtube.com/watch?v=_p2XIUK9VgA&t=128)
 
 
 ## There is no sexual immorality in Heaven, no violence, no sinners.
@@ -17347,7 +17347,7 @@ If you keep Jesus' commandments then the Spirit of Truth will come to you, and h
 
 Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person.
 
-We should aim for Jesus' commandments to become unburdensome. So I would use the analogy of [entering a current of water](https://www.youtube.com/watch?v=U6go9eFUIIU&ab_channel=DisneyChannelUK). While **in** the Holy Spirit, Jesus' commandments should be unburdensome, and having the Holy Spirit **in us** helps us to keep Jesus' commandments even when we face resistance from the world:
+We should aim for Jesus' commandments to become unburdensome. So I would use the analogy of [entering a current of water (like the Turtle Cruising in Finding Nemo)](https://www.youtube.com/watch?v=U6go9eFUIIU) While **in** the Holy Spirit, Jesus' commandments should be unburdensome, and having the Holy Spirit **in us** helps us to keep Jesus' commandments even when we face resistance from the world:
 
 > **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
@@ -17382,7 +17382,7 @@ To believe, we must be seeking God, not glory from one another:
 Nevertheless, if a person hears the word of Christ, and believes the word of Christ, they are believing the truth, and a natural consequence of that
 should be the development of faith because while believing the truth, other things become more apparent:
 
--   [Spiritual Warfare: How to Put on the Armor of God (Belt of Truth) - YouTube](https://youtu.be/e6X-c3QcSX4?t=95)
+-   [Spiritual Warfare: How to Put on the Armor of God (Belt of Truth) - YouTube @time: 1 min 35 sec](https://youtube.com/watch?v=e6X-c3QcSX4&t=95)
 
 > **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
@@ -18015,7 +18015,7 @@ The world (the remaining people, who have not repented) may know that Father God
 
 Jesus, by His own authority, rose from the dead. AMEN!!
 
-[Message To All Christians - YouTube](https://youtube.com/watch?v=gwNM9ye06Ug&t=174)
+[Message To All Christians - YouTube @time: 2 min 54 sec](https://youtube.com/watch?v=gwNM9ye06Ug&t=174)
 
 > **John 10:17-18** - For this reason the Father loves me, because I lay down my life that I may take it up again. No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
 
@@ -18517,7 +18517,7 @@ Also, that means deepening my relationship with Jesus.
 
 # I was dead and helpless before being made alive in Christ
 
--   [Is the Calvinist-Arminian Debate Really Important? - YouTube](https://youtu.be/H_wfnir1hQ4?t=278)
+-   [Is the Calvinist-Arminian Debate Really Important? - YouTube @time: 4 min 38 sec](https://youtube.com/watch?v=H_wfnir1hQ4&t=278)
 
 
 ## Before being born-again of the spirit I was thinking worldly/materially

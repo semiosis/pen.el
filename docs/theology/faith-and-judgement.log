@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 MAY 2024 10:14
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 MAY 2024 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,14 +976,8 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 12191.
 
-[228] [229] [230] [231] [232] [233] [234] [235] [236]
-Overfull \hbox (16.0254pt too wide) in paragraph at lines 12601--12602
-[]\TU/lmr/m/n/10.95 This looks like an interesting resource about that - []$[][
-][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][]
-[] [] [][][][][][][][][][][][][][] []
- []
-
-[237] [238] [239] [240] [241] [242] [243]
+[228] [229] [230] [231] [232] [233] [234] [235] [236] [237] [238] [239]
+[240] [241] [242] [243]
 Overfull \hbox (176.56859pt too wide) in paragraph at lines 13021--13021
 [] \TU/lmtt/m/n/10.95 5  Work/Love/Walking-By-Faith = Obedience * Faithfulness 
 * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)[] 
