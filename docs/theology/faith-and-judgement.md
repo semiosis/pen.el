@@ -6282,6 +6282,14 @@ Jesus' commandments are all about selfless love. We must abide in Jesus' teachin
 
 ## You can't work for justification. We must have faith on God justifying us even though we are ungodly
 
+Firstly, God owns everything. Whatever we give God, he already owned. Neither do we give God wages as if we were the previous owner of our gift. And we don't give God advice:
+
+> **Romans 11:34-36** - For who has known the mind of the Lord, or who has been his counselor? Or who has given a gift to him that he might be repaid? For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
+
+We just depend on and trust and hope on God to justify us, to commend us, to give us mercy:
+
+> **Romans 9:16** - So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
+
 My best understanding of **Romans 4:4** is: "The person who works receives wages, but **the wages are not a gift**, but the person does receive reward which is due for his work." - But that's not good enough. We need to accept the gift of salvation from God. So working is not good enough, we must submit to the righteousness of God and accept the gift for forgiveness because we don't deserve the gift of Salvation what God has given us as a gift, by the shedding of Jesus Christ's blood.
 
 > **Romans 4:4** - Now to the one who works, his wages are not counted as a gift but as his due.
@@ -17549,6 +17557,10 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 > **Romans 1:18-25** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
 
 > **Deuteronomy 7:9** - Know therefore that the LORD your God is God, the faithful God who keeps covenant and steadfast love with those who love him and keep his commandments, to a thousand generations, (ESV)
+
+-   **Sermon:** [John Piper - To Him Be Glory Forever - YouTube](https://www.youtube.com/watch?v=LJ8dLCgAkZ4)
+
+> **Romans 11:33-36** - Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways! For who has known the mind of the Lord, or who has been his counselor? Or who has given a gift to him that he might be repaid? For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
 
 
 ## Jesus is the Only Way to Father God
