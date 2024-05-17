@@ -3882,6 +3882,10 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Mark 8:35** - For whoever would save his life will lose it, but whoever loses his life for my sake and the gospel's will save it. (ESV)
     
+    > **John 3:14-16** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
+    
+    > **John 6:40** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. (ESV)
+    
     > **Mark 10:19-30** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. Disheartened by the saying, he went away sorrowful, for he had great possessions. And Jesus looked around and said to his disciples, How difficult it will be for those who have wealth to enter the kingdom of God! And the disciples were amazed at his words. But Jesus said to them again, Children, how difficult it is to enter the kingdom of God! It is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. And they were exceedingly astonished, and said to him, Then who can be saved? Jesus looked at them and said, With man it is impossible, but not with God. For all things are possible with God. Peter began to say to him, See, we have left everything and followed you. Jesus said, Truly, I say to you, there is no one who has left house or brothers or sisters or mother or father or children or lands, for my sake and for the gospel, who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life. (ESV)
     
     > **Mark 13:9-10** - But be on your guard. For they will deliver you over to councils, and you will be beaten in synagogues, and you will stand before governors and kings for my sake, to bear witness before them. And the gospel must first be proclaimed to all nations. (ESV)
@@ -7776,6 +7780,10 @@ And <ins>willing</ins> to do the will of God must become <ins>'doing'</ins>.
 `pisteuo = to have faith upon`
 
 > **John 3:36** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+
+> **John 3:14-16** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
+
+> **John 6:40** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. (ESV)
 
 > **John 3:16** - "For God so loved (G25 agapao) the world (G2889 kosmos), that He gave His only (G3439 monogenes) begotten (G3439 monogenes) Son (G5207 huios), that whoever believes (G4100 pisteuo) in Him shall not perish, but have eternal (G166 aionios) life (G2222 zoe).
 
