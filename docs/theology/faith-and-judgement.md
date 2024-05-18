@@ -295,6 +295,8 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 
 ## Our will should be for God's will to be done, and to will to do God's will
 
+> **Psalms 51:10-12** - Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from your presence, and take not your Holy Spirit from me. Restore to me the joy of your salvation, and uphold me with a **willing** spirit. (ESV)
+
 I believe that eventually our own will lines up with God's will for us, and I believe that His will is that we will to do His will, and that we will for His will to be done. So I believe we should desire both to do His will as God has revealed to us though the Scriptures, and also to desire that God's will be done over our own will, but that our will may become His will.
 
 -   **Song:** [So Will I {100 Billion X} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=GfVd5x9W1Xc&list=RDGfVd5x9W1Xc&start_radio=1)
@@ -441,6 +443,17 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
 
+### Being filled with the Holy Spirit
+
+-   Being a servant of God is a likely precursor to being filled with the Holy Spirit
+    -   **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
+-   Speaking the word of God with boldness is a sure sign of being filled with the Holy Spirit.
+-   Saying one's own belongings do not our own is a sure sign of being filled with the Holy Spirit.
+    -   Giving to others freely to relieve the burdens of others is a another sure sign.
+
+> **Acts 4:24-35** - And when they heard it, they lifted their voices together to God and said, Sovereign Lord, who made the heaven and the earth and the sea and everything in them, who through the mouth of our father David, <ins>your servant, said by the Holy Spirit</ins>, Why did the Gentiles rage, and the peoples plot in vain? The kings of the earth set themselves, and the rulers were gathered together, against the Lord and against his Anointed— for truly in this city there were gathered together against your **holy servant Jesus**, whom you anointed, both Herod and Pontius Pilate, along with the Gentiles and the peoples of Israel, to do whatever your hand and your plan had predestined to take place. And now, Lord, look upon their threats and grant to your **servants** to continue to speak your word with all boldness, while you stretch out your hand to heal, and signs and wonders are performed through the name of your holy servant Jesus. And when they had prayed, the place in which they were gathered together was shaken, and **they were all filled with the Holy Spirit and continued to speak the word of God with boldness**. Now the full number of those who believed were of <ins>one heart and soul</ins>, and **no one said that any of the things that belonged to him was his own, but they had everything in common**. And with great power the apostles were giving their testimony to the resurrection of the Lord Jesus, and great grace was upon them all. There was not a needy person among them, for as many as were owners of lands or houses sold them and brought the proceeds of what was sold and laid it at the apostles' feet, <ins>and it was distributed to each **as any had need**</ins>. (ESV)
+
+
 ## In God's mercy, we come to obedient faith and come into Christ Jesus
 
 "At one time disobedient&#x2026;" means we are brought to obedience. Therefore, God's mercy is that we become obedient:
@@ -526,6 +539,8 @@ Loving our neighbour as ourself should look like showing merciful love to those 
 > **Mark 12:32-34** - And the scribe said to him, You are right, Teacher. You have truly said that he is one, and there is no other besides him. And to love him with all the heart and with all the understanding and with all the strength, and to love one's neighbor as oneself, is much more than all whole burnt offerings and sacrifices. And when Jesus saw that he answered wisely, he said to him, You are not far from the kingdom of God. And after that no one dared to ask him any more questions. (ESV)
 
 We are supposed to fulfill the royal law:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
 
 > **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
 
@@ -1031,9 +1046,17 @@ Even having faith in God through faith in Jesus is obedience according to `Roman
 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
 
+Also, faith in Jesus is obedience to Jesus, because we are instructed to **hold the faith without partiality**:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
+
+Through faith to Jesus we are justified - that's believing obedience - so it's quite important to bear one another's burdens:
+
+> **Galatians 2:16** - yet we know that a person is not justified by works of the law but **through faith in Jesus Christ**, so we also have believed in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. (ESV)
+
 We must go to Jesus to receive eternal life.
 
-Our obedience is penitent, not perfect.
+Our obedience is penitent, but our our justification doesn't hang on our perfection. Our obedience should also be without partiality.
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
 
@@ -1401,9 +1424,13 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 > something.
 
 
-## Our obedience is penitent, not perfect
+## Our obedient faith should be penitent, and doesn't have to be perfect, and should be without partiality
 
 > John Piper - "Faith is the baking our **hope on the mercy of God**."
+
+Obeying Jesus should be impartial:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
 
 > John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
 
@@ -1562,7 +1589,7 @@ I agree whole heartedly with John Piper here:
 
 > **Hebrews 5:9** - And being made perfect, he became the source of eternal salvation to <ins>all who obey him,</ins>
 
-> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins>
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
 
 If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
 
@@ -5855,6 +5882,10 @@ Paul awaits Christ to be formed in the person:
 
 > **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth until Christ is formed in you!
 
+We want Christ to dwell in our hearts through faith:
+
+> **Ephesians 3:14-19** - For this reason I bow my knees before the Father, from whom every family in heaven and on earth is named, that according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being, so that **Christ may dwell in your hearts through faith** — that you, being <ins>rooted and grounded in</ins> **love**, may have strength to comprehend with all the saints what is the breadth and length and height and depth, and <ins>to know the love of Christ that surpasses knowledge, that you may be filled with all the fullness of God.</ins> (ESV)
+
 
 ## Sanctification by the Spirit and faith / obedience
 
@@ -5959,6 +5990,10 @@ Since faith comes from hearing the word of Christ - and there faith could come f
 So if I try to actually follow Jesus' commandments, and that leads me to believe that Jesus is who He says He is (consider the Apostle Thomas and his slow belief), then when I arrive at a belief that Jesus is who He says He is, the Son of God, and the Christ, the Messiah, the Anointed one, the obedience of one of Jesus commandments leads to more belief and more obedience.
 
 > **James 2:14-26** - What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, Go in peace, be warmed and filled, without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead. But someone will say, You have faith and I have works. Show me your faith apart from your works, and I will show you my faith by my works. You believe that God is one; you do well. Even the demons believe—and shudder! Do you want to be shown, you foolish person, that faith apart from works is useless? Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that **faith was active along with his works**, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. You see that **a person is justified by works and not by faith alone**. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
+
+Even from James' perspective, it's clearly apparent that God surely can forgive people without work on their part:
+
+> **James 5:15-16** - And **the prayer of faith will save the one who is sick**, and the Lord will raise him up. <ins>And if he has committed sins, he will be forgiven</ins>. Therefore, <ins>confess your sins to one another and pray for one another, that you may be healed.</ins> The prayer of a righteous person has great power as it is working. (ESV)
 
 I think the solution to the justification by 'faith without work' and justification by 'faith with works' apparent paradox is that if a person is actually obeying Jesus then the works can be attributed to Jesus.
 
