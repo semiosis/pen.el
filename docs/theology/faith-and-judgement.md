@@ -78,7 +78,8 @@ Christianity is a relationship, like a marriage:
 
 -   Acceptance comes at the beginning
 -   It's not a merit-based religion
--   We **must** be obedient to Jesus
+-   We **must** have a response of love for Jesus
+    -   **John 14:21** - <ins>Whoever has my commandments and keeps them, he it is who loves me.</ins> And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 -   In whatever we do, we should be serving the Lord Jesus Christ
 
 Belief in Jesus Christ turns to obedience, and imitating Christ:
@@ -6096,8 +6097,6 @@ We are slaves to Christ Jesus:
 > **Romans 6:16-18** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
 
 > **Romans 6:22-23** - But now having been freed from sin and **enslaved to God**, you derive your benefit, resulting in sanctification, and the outcome, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (NASB)
-
-> **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
 -   **Bible study:** [You Are a Child of the Free Woman: Galatians 4:21-31, Part 8 - YouTube @time: 2 min 6 sec](https://youtube.com/watch?v=mUnh98bcLek&t=126)
 
