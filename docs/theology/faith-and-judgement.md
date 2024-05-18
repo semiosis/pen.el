@@ -56,7 +56,7 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [{ ALL NIGHT PRAYER } POWERFUL DELIVERANCE PRAYERS TO BREAK EVERY CURSE AGAINT YOU - YouTube @time: 1 hrs 59 sec](https://youtube.com/watch?v=9pn_Lx1Hrnk&t=3659) from obeying God in truth.
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
 We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
 
@@ -11943,7 +11943,7 @@ If you know why I'm writing this, there's some people I have already forgiven ab
 But I have forgiven them, and I believe it's best to put Jesus first and to have no idols before or besides Him, and I believe that marriage
 or a [spouse can be an idol](https://www.youtube.com/watch?v=o3pFwQPu2EA), and in my case it was.
 
-I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ:
+I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still [not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ](https://www.youtube.com/watch?v=EYJgSI6Jbfs&ab_channel=TommiLorraine):
 
 > **Luke 14:26** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
 
@@ -11952,6 +11952,8 @@ Jesus saved me from a bad situation and I just want those who come to read this 
 I forgive everyone.
 
 > **1 Timothy 4:1-8** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the <ins>insincerity of liars whose consciences are seared, who forbid marriage</ins> and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For <ins>everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer.</ins> If you put these things before the brothers, you will be a good servant of Christ Jesus, being trained in the words of the faith and of the good doctrine that you have followed. Have nothing to do with irreverent, silly myths. Rather train yourself for godliness; for while bodily training is of some value, godliness is of value in every way, as it holds promise for the present life and also for the life to come. (ESV)
+
+> **Colossians 1:16** - For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things were created through him and for him. (ESV)
 
 
 ### Marriage is good
