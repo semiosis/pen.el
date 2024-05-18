@@ -1121,11 +1121,31 @@ I just want to be clear that good works we do in obedience to Jesus are still co
     3   from a primary (but obsolete) ergo (to work); toil (as an effort or
     4   occupation); by implication, an act:--deed, doing, labour, work.
 
-Work being done by God in us to sanctify us and bring us everlasting life **is** work done in faith.
+Work being done by God in us to sanctify us and bring us fruit for everlasting life **is** work done in faith:
+
+> **Romans 6:22** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. (ESV)
+
+> **Matthew 3:8** - Bear fruit in keeping with repentance. (ESV)
+
+We must be abiding in Jesus to produce fruit, and that means we must have faith in Jesus:
+
+> **John 15:4** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. (ESV)
+
+OK, so we should confess that Jesus is the Son of God and continue obeying Him in faith:
+
+> **I John 4:15** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
 
 So the problem isn't work (even work relating to salvation) but the problem is work that is not done in faith (i.e. dead work).
 
+> **Hebrews 6:1** - Therefore let us leave the elementary doctrine of Christ and go on to maturity, not laying again a foundation of repentance from dead works and of faith toward God, (ESV)
+
+The faith Paul talks about is faith towards God. The faith towards God believes God and believes Jesus:
+
+> **Romans 14:23** - But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin. (ESV)
+
 > I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
+
+-   **Song:** [Hillsong+Delirious? - History Maker - YouTube](https://www.youtube.com/watch?v=jM8M_xgKbrc)
 
 
 ## Eternal security for those who follow Jesus
@@ -1523,6 +1543,10 @@ We **must** have a response of love for Jesus:
 So we want to have a response of love for Jesus:
 
 > **Luke 12:48** - But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. (ESV)
+
+As a husband loves his wife, so Jesus loves us. As a wife respects her husband, so must the members of Christ's body respect Christ:
+
+> **Ephesians 5:30-33** - because we are members of his body. Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church. However, let each one of you love his wife as himself, and let the wife see that she respects her husband. (ESV)
 
 Jesus is so generous that He saves people who turn out to be unthankful, but we should definitely love Jesus as a response. This story should be taken not only to see how Good God is, but also taken as a warning against unthankfulness:
 
@@ -18321,7 +18345,7 @@ Likewise, we must obey God, and obey God by obeying Jesus, and being sanctified 
 > **II Thessalonians 1:10** - when he comes on that day to be glorified in his saints, and to be marveled at among all who have believed, because our testimony to you was believed.
 
 
-### Glorification is Christ-likeness
+## Glorification is Christ-likeness
 
 We are trying to shine the Truth of Jesus Christ and Jesus' gospel.
 
@@ -18353,7 +18377,7 @@ Abram did this too. It's a necessary act of faith.
 > **Genesis 15:1** - After these things the word of the Lord came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great.
 
 
-### True obedience leads to glory/holiness/Christ-likeness
+## True obedience leads to glory/holiness/Christ-likeness
 
 For example, to truly obey God and love / do no harm to one's neighbour involves relieving other's burdens as they ask more from you.
 
@@ -18371,7 +18395,7 @@ We are forgiven and given grace, then we can choose to forgive others and lighte
 > **Hebrews 12:10** - For they disciplined us for a short time as it seemed best to them, but he disciplines us for our good, that we may share his holiness.
 
 
-### Forgive others' offenses towards you is glory
+## Forgive others' offenses towards you is glory
 
 > **Proverbs 19:11** - Good sense makes one slow to anger, and it is his glory to overlook an offense. (ESV)
 
@@ -18423,7 +18447,7 @@ We are instructed to forward grace to others:
 > **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. **You received without paying; give without pay.** (ESV)
 
 
-### Be extremely generous - give without limits to relieve the burdens of others
+## Be extremely generous - give without limits to relieve the burdens of others
 
 > **Matthew 10:8** - Heal the sick, raise the dead, cleanse lepers, cast out demons. **You received without paying; give without pay.** (ESV)
 
@@ -18444,7 +18468,7 @@ Paul commends giving even beyond their means. This is in accordance with the wid
 > **II Corinthians 8:3-5** - For they gave *according to their means*, as I can testify, and *beyond their means*, **of their own free will**, begging us earnestly for the favor of taking part in the relief of the saints— and this, not as we expected, but they <ins>gave themselves first to the Lord</ins> and **then by the will of God to us.** (ESV)
 
 
-### Do the good works which have been gifted to you
+## Do the good works which have been gifted to you
 
 Our works have been gifted to us by God's grace - works of deed and word:
 
@@ -18457,12 +18481,12 @@ God chose us and called us out of darkness into His marvelous light to proclaim 
 > **Matthew 5:16** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
 
 
-### Walk in righteousness
+## Walk in righteousness
 
 > **Daniel 12:3** - And those who are wise shall shine like the brightness of the sky above; and those who turn many to righteousness, like the stars forever and ever. (ESV)
 
 
-### The deeds of glory - Christlikeness
+## The deeds of glory - Christlikeness
 
 > **Hebrews 3:14** - For we share in Christ, if indeed we hold our original confidence firm to the end. (ESV)
 
@@ -18551,7 +18575,7 @@ And in Jesus Christ there is no sin:
 > **I John 3:5-6** - You know that he appeared to take away sins, and in him there is no sin. No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him.
 
 
-### Seeing Jesus, appearing in glory
+## Seeing Jesus, appearing in glory
 
 > **1 John 3:2** -  Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is.  (ESV)
 
@@ -18568,12 +18592,12 @@ And in Jesus Christ there is no sin:
 > **John 6:39** -  And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day.  (ESV)
 
 
-### The putting off of the body
+## The putting off of the body
 
 > **II Peter 1:13-21** - I think it right, as long as I am in this body, to stir you up by way of reminder, since I know that the putting off of my body will be soon, as our Lord Jesus Christ made clear to me.  And I will make every effort so that after my departure you may be able at any time to recall these things.  For we did not follow cleverly devised myths when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty.  For when he received honor and glory from God the Father, and the voice was borne to him by the Majestic Glory, This is my beloved Son, with whom I am well pleased, we ourselves heard this very voice borne from heaven, for we were with him on the holy mountain.  And we have something more sure, the prophetic word, to which you will do well to pay attention as to a lamp shining in a dark place, until the day dawns and the morning star rises in your hearts, knowing this first of all, that no prophecy of Scripture comes from someone's own interpretation.  For no prophecy was ever produced by the will of man, but men spoke from God as they were carried along by **the Holy Spirit**.
 
 
-### I think to relax commandments is throw away glorification
+## I think to relax commandments is throw away glorification
 
 > **Matthew 5:19** - Therefore whoever relaxes one of the least of these commandments and teaches others to do the same will be called least in the kingdom of heaven, but whoever does them and teaches them will be called great in the kingdom of heaven. (ESV)
 
