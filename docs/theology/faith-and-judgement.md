@@ -6307,9 +6307,9 @@ Also, it looks like John Piper has another talk on this:
 
 > **Galatians 4:30-31** - But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
 
-In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [{ ALL NIGHT PRAYER } POWERFUL DELIVERANCE PRAYERS TO BREAK EVERY CURSE AGAINT YOU - YouTube @time: 1 hrs 59 sec](https://youtube.com/watch?v=9pn_Lx1Hrnk&t=3659) from obeying God in truth.
+In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
-We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:􀵲
+We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 

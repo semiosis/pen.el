@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 MAY 2024 14:37
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 MAY 2024 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,9 +882,7 @@ Missing character: There is no ό in font [lmmono10-regular]:!
 Missing character: There is no μ in font [lmmono10-regular]:!
 Missing character: There is no ο in font [lmmono10-regular]:!
 Missing character: There is no υ in font [lmmono10-regular]:!
- [166] [167]
-Missing character: There is no 􀵲 in font [lmroman10-regular]:mapping=tex-text;!
- [168] [169] [170] [171] [172] [173]
+ [166] [167] [168] [169] [170] [171] [172] [173]
 [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184] [185]
 [186] [187]
 Overfull \hbox (143.15952pt too wide) in paragraph at lines 10068--10069
