@@ -3560,6 +3560,8 @@ Jesus was with Father God in the beginning:
 
 AMEN!!
 
+-   **Song:** [He is Jehovah | by Betty Jean Robinson - YouTube](https://www.youtube.com/watch?v=rTSlIx46B8E)
+
 Jehovah is God Almighty:
 
 > **Exodus 6:3** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
