@@ -6235,9 +6235,15 @@ Jesus called us to sanctified (i.e. repent from sin, and live to God). We seek t
 
 > **II Thessalonians 2:14** - To this he called you through our gospel, so that you may **obtain the glory of our Lord Jesus Christ**.
 
-We seek the glory of our Lord Jesus Christ, not our own glory:
+We seek the glory of our Lord Jesus Christ, not our own glory. We should aim not to speak on our own authority, but instead to speak the Truth from God. That's interesting to me:
 
-> **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
+> **John 7:18** - The one who speaks on his own authority seeks his own glory, but <ins>the one who seeks the glory of him who sent him is true</ins>, and in him there is no falsehood. (ESV)
+
+For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth.
+
+Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe. I guess that seeking the glory that comes from the only God involves seeking to glorify God:
+
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
 I believe we should have a noticable change of heart and behaviour as a result of faith in Jesus:
 
@@ -7569,9 +7575,15 @@ Jesus called us to sanctified (i.e. repent from sin, and live to God). We seek t
     4  of [the] glory of the   Lord     of us    Jesus    Christ
     5  N-GFS          Art-GMS  N-GMS    PPro-G1P N-GMS    N-GMS
 
-We seek the glory of our Lord Jesus Christ, not our own glory:
+We seek the glory of our Lord Jesus Christ, not our own glory. We should aim not to speak on our own authority, but instead to speak the Truth from God. That's interesting to me:
 
-> **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
+> **John 7:18** - The one who speaks on his own authority seeks his own glory, but <ins>the one who seeks the glory of him who sent him is true</ins>, and in him there is no falsehood. (ESV)
+
+For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth.
+
+Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe. I guess that seeking the glory that comes from the only God involves seeking to glorify God:
+
+> **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
 We live by the Spirit:
 
