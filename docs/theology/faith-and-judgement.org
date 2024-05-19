@@ -4893,7 +4893,7 @@ I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknow
 
 As of now (28 April '24), though, I have not actually heard that confession through the Spirit (as I expect to hear it) that Jesus Christ has come in the flesh - just being honest,
 
-I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to hearth in the flesh, born of the virgin Mary, was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand, and I pray daily to Father God.
+I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to earth in the flesh, born of the virgin Mary, was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand, and I pray daily to Father God.
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
@@ -10182,6 +10182,36 @@ So that they may be obtain the glory of our Lord Jesus Christ:
 
 #+BEGIN_QUOTE
   *II Thessalonians 2:14* - To this he called you through our gospel, so that you may *obtain the glory of our Lord Jesus Christ*.
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1519 [e] 3739 [e]   2532 [e] 2564 [e]  4771 [e]
+  eis      ho         kai      ekalesen  hymas
+  εἰς      ὃ          καὶ      ἐκάλεσεν  ὑμᾶς  ,
+  to       this       also     He called you
+  Prep     RelPro-ANS Conj     V-AIA-3S  PPro-A2P
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1223 [e] 3588 [e] 2098 [e]   1473 [e] 1519 [e] 4047 [e]
+  dia      tou      euangeliou hēmōn    eis      peripoiēsin
+  διὰ      τοῦ      εὐαγγελίου ἡμῶν  ,  εἰς      περιποίησιν
+  through  the      gospel     of us    to       [the] obtaining
+  Prep     Art-GNS  N-GNS      PPro-G1P Prep     N-AFS
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  1391 [e]       3588 [e] 2962 [e] 1473 [e] 2424 [e] 5547 [e]
+  doxēs          tou      Kyriou   hēmōn    Iēsou    Christou
+  δόξης          τοῦ      Κυρίου   ἡμῶν     Ἰησοῦ    Χριστοῦ  .
+  of [the] glory of the   Lord     of us    Jesus    Christ
+  N-GFS          Art-GMS  N-GMS    PPro-G1P N-GMS    N-GMS
+#+END_SRC
+
+We seek the glory of our Lord Jesus Christ:
+
+#+BEGIN_QUOTE
+  *John 7:18* - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
 #+END_QUOTE
 
 We live by the Spirit:
