@@ -3650,7 +3650,7 @@ I really want to hear the voice of the Holy Spirit cry 'Abba Father', and acknow
 
 As of now (28 April '24), though, I have not actually heard that confession through the Spirit (as I expect to hear it) that Jesus Christ has come in the flesh - just being honest,
 
-I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to hearth in the flesh, born of the virgin Mary, was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand, and I pray daily to Father God.
+I still profess that Jesus Christ is the Only-Begotten Son of God who has proceeded from Father God, come from heaven to earth in the flesh, born of the virgin Mary, was crucified and died for the sins of mankind and raised from the dead on the third day and has ascended to the Father and sits at His right hand, and I pray daily to Father God.
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
@@ -6204,8 +6204,42 @@ The redemption in Christ Jesus is a gift, and
 is a substitutionary atonement that is
 received through faith in Jesus.
 
-As far as glory goes, or sharing in Jesus' holiness, I think in part this works like a blood transfusion, or a like Jesus' car battery recharging our car battery, that should be received by faith, faith which includes the belief of faith and the obedience
-of faith, such as obedience to the discipline of Christ, that should yield the peaceful fruit of righteousness. I believe we should have a noticable change of heart and behaviour as a result of faith in Jesus:
+As far as "obtaining the glory of our Lord Jesus Christ" goes, or sharing in Jesus'
+holiness, a limited analogy may be that this works like a
+blood transfusion, or a like Jesus' car
+battery recharging our car battery, that
+should be received by faith, faith which
+includes the belief of faith and the obedience
+of faith, such as obedience to the discipline
+of Christ, that should yield the peaceful
+fruit of righteousness.
+
+I think we should always be seeking the glory
+of our Jesus Christ, not seeking our own
+glory. Personally, my motivations for writing this Bible Study document, and for 'good works' etc. is simply because:
+
+-   I am remorseful for the sin which I've had in my life
+-   I want to serve God, and I want to live in the truth
+-   I have a lot of joy in showing people that Jesus Christ is real
+-   I want to love Jesus. It seems to me like it's the reason for living
+-   I want my life to honour Jesus
+-   Jesus is worthy of all love, all praise, all glory
+-   I need Jesus
+-   I want to be found as a friend of Jesus
+
+But God chose some to be saved through sanctification by the Spirit and belief in the truth:
+
+> **II Thessalonians 2:13** - But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**.
+
+Jesus called us to sanctified (i.e. repent from sin, and live to God). We seek the glory of our Lord Jesus Christ. Interestingly, we don't seek our own glory, but Paul says that God chose us to be sanctified by the Spirit and belief in the truth:
+
+> **II Thessalonians 2:14** - To this he called you through our gospel, so that you may **obtain the glory of our Lord Jesus Christ**.
+
+We seek the glory of our Lord Jesus Christ, not our own glory:
+
+> **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
+
+I believe we should have a noticable change of heart and behaviour as a result of faith in Jesus:
 
 > **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
@@ -7511,9 +7545,33 @@ But God chose some to be saved through sanctification by the Spirit and belief i
 
 > **II Thessalonians 2:13** - But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**.
 
-So that they may be obtain the glory of our Lord Jesus Christ:
+Jesus called us to sanctified (i.e. repent from sin, and live to God). We seek the glory of our Lord Jesus Christ. Interestingly, we don't seek our own glory, but Paul says that God chose us to be sanctified by the Spirit and belief in the truth:
 
 > **II Thessalonians 2:14** - To this he called you through our gospel, so that you may **obtain the glory of our Lord Jesus Christ**.
+
+    1  1519 [e] 3739 [e]   2532 [e] 2564 [e]  4771 [e]
+    2  eis      ho         kai      ekalesen  hymas
+    3  εἰς      ὃ          καὶ      ἐκάλεσεν  ὑμᾶς  ,
+    4  to       this       also     He called you
+    5  Prep     RelPro-ANS Conj     V-AIA-3S  PPro-A2P
+
+    1  1223 [e] 3588 [e] 2098 [e]   1473 [e] 1519 [e] 4047 [e]
+    2  dia      tou      euangeliou hēmōn    eis      peripoiēsin
+    3  διὰ      τοῦ      εὐαγγελίου ἡμῶν  ,  εἰς      περιποίησιν
+    4  through  the      gospel     of us    to       [the] obtaining
+    5  Prep     Art-GNS  N-GNS      PPro-G1P Prep     N-AFS
+
+*of [the] glory of <ins>the   Lord     of us    Jesus    Christ</ins>*:
+
+    1  1391 [e]       3588 [e] 2962 [e] 1473 [e] 2424 [e] 5547 [e]
+    2  doxēs          tou      Kyriou   hēmōn    Iēsou    Christou
+    3  δόξης          τοῦ      Κυρίου   ἡμῶν     Ἰησοῦ    Χριστοῦ  .
+    4  of [the] glory of the   Lord     of us    Jesus    Christ
+    5  N-GFS          Art-GMS  N-GMS    PPro-G1P N-GMS    N-GMS
+
+We seek the glory of our Lord Jesus Christ, not our own glory:
+
+> **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. (ESV)
 
 We live by the Spirit:
 
