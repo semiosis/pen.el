@@ -2108,6 +2108,12 @@ Faith is both believing and obedient, even faith in the heart:
 
 > **John 7:37-39** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts, let him come to me and drink. **Whoever believes in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
 
+I desire You, Lord Jesus Christ! Please, God, let me always believe in You!
+
+> **Revelation of John 22:17** - The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is **thirsty** come; let the one who desires take the **water of life without price**. (ESV)
+
+Stay thirsty people!
+
 
 ### Belief leads to obedience, which leads to knowledge of the Truth
 
@@ -12346,7 +12352,7 @@ Jesus reinforces that idea:
 
 > **Isaiah 62:3-5** - You shall be a crown of beauty in the hand of the Lord, and a royal diadem in the hand of your God. You shall no more be termed Forsaken, and your land shall no more be termed Desolate, but you shall be called My Delight Is in Her, and your land Married; for the Lord delights in you, and your land shall be married. For as a young man marries a young woman, so shall your sons marry you, and as the bridegroom rejoices over the bride, so shall your God rejoice over you.
 
-> **Revelation of John 22:17** - The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is thirsty come; let the one who desires take the water of life without price. (ESV)
+> **Revelation of John 22:17** - The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is **thirsty** come; let the one who desires take the **water of life without price**. (ESV)
 
 
 ## I do not endorse gay marriage - I consider it to be sin - grave sin, actually
