@@ -3685,6 +3685,18 @@ Also, it's important to purify ourselves, as we hope in Him:
 
 > **I John 3:1-3** - See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. And **everyone who thus hopes in him purifies himself as he is pure**. (ESV)
 
+> **Colossians 1:18** - And he is the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent. (ESV)
+
+This entire chapter is very important for testing the spirits:
+
+> **I John 4:1-17** - Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world. By this you know the Spirit of God: <ins>every spirit that confesses that Jesus Christ has come in the flesh is from God</ins>, and *every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist*, which you heard was coming and now is in the world already. Little children, you are from God and have overcome them, for he who is in you is greater than he who is in the world. They are from the world; therefore they speak from the world, and the world listens to them. We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. Beloved, let us love one another, for **love is from God**, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. **In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins**. Beloved, <ins>if God so loved us, we also ought to love one another</ins>. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
+
+-   every spirit that confesses that Jesus Christ has come in the flesh is from God
+
+We must hold fast to Jesus, the Head:
+
+> **Colossians 2:18-19** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. (ESV)
+
 
 ### Jesus has overcome the world
 
@@ -6265,6 +6277,8 @@ Jesus is still working through us:
 
 > **Philippians 2:13** - for it is God who works in you, both to will and to work for his good pleasure. (ESV)
 
+-   **Song:** [Way Maker - Paul McClure | Moment - YouTube @time: 4 min 12 sec](https://youtube.com/watch?v=cHoGEDQQ67o&t=252)
+
 So when we obey Jesus' words and commandments, Jesus works in us:
 
 > **John 6:63** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
@@ -6440,6 +6454,8 @@ Before accepting God's forgiveness yourself, submitting to the righteousness of 
 You will never be able to return enough stolen goods to God to ever be justified. Nor would you ever be able to forgive enough other people to attain that justification. <ins>We ultimately need God's forgiveness through faith in Jesus</ins>, and so we need to come to realise our spiritual bankruptcy before God and cry out to Him to forgive us. Self-righteousness has no place in asking God to be forgiven and justified by faith in the atonement made by God in Jesus:
 
 > **Romans 4:5-7** - And <ins>to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness,</ins> just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; (ESV)
+
+-   **Sermon:** [The Hands of Jesus | Billy Graham Classic - YouTube @time: 11 min 43 sec](https://youtube.com/watch?v=vKquHzd2MaM&t=703)
 
 We must be able to accept that our gifts which we give to God will never be good enough, and we need to receive the gift of Salvation which God has offered us. We need a penitent heart.
 
@@ -6794,6 +6810,8 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 ### Jesus's Lordship is not merely His authority over us, but us yielding our lives to Jesus - us wanting to do His will, and us wanting to obey Him
 
 > **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+> **Colossians 2:5-6** - For though I am absent in body, yet I am with you in spirit, rejoicing to see your good order and the firmness of your faith in Christ. Therefore, <ins>as you received Christ Jesus the Lord,</ins> **so walk in him,** (ESV)
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -17300,6 +17318,8 @@ Jesus has granted us what we need to live a godly life:
 
 I believe that here on earth, God wants us to choose Jesus. But from God's perspective, who knows how it works.
 
+> **Isaiah 55:8-9** - For my thoughts are not your thoughts, neither are your ways my ways, declares the LORD. For as the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts. (ESV)
+
 God can raise up children from anyone who has repentance and may grant being a child of Abraham to anyone who walks in the footsteps of the faith that Abraham had before he was circumcised.
 
 > **Luke 3:8** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
@@ -17467,6 +17487,8 @@ And Jesus instructs us to have an obedient heart if we want to know that Jesus' 
 ## God loved us first
 
 > **I John 4:8-11** - Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In **this is love**, <ins>not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.</ins> Beloved, if God so loved us, we also ought to love one another.
+
+> **Isaiah 64:8** - But now, O LORD, you are our Father; we are the clay, and you are our potter; we are all the work of your hand. (ESV)
 
 
 ### God's love is greater
