@@ -8031,6 +8031,16 @@ The guy was still coveting his possessions. To find life, one needs to let go of
 
 > **Luke 12:15** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
 
+[God is the Gospel - YouTube @time: 45 min 31 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2731)
+
+-   **Quote from John Piper:** The prosperity gospel is no gospel because what it does is offer to people what they want as natural people.
+
+Amen to that.
+
+The reason we want to be righteous is so we get God.
+
+[God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
+
 
 ## Justifying faith should result in going from disobedient to obedient
 
