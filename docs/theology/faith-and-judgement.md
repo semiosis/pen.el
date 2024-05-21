@@ -19,6 +19,16 @@ I agree whole heartedly with John Piper here:
 -   [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 
 
+# Heidelberg Catechism
+
+-   <https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism>
+
+I currently agree with the vast majority of the HeidelBerg Catechism.
+I'll put it here for others' reference. However, I am still working through it myself.
+
+<./Heidelberg-Catechism.txt>
+
+
 # My thoughts and bible references regarding theology
 
 I've been thinking about belief, faith, works, law and receiving **the Holy Spirit**!
