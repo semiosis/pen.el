@@ -12,14 +12,14 @@ I agree whole heartedly also with MP Nick Fletcher:
 
 -   [Christian MP: 'A life in Christ is the most wonderful thing' - YouTube](https://www.youtube.com/watch?v=TWPoQN8PO9E)
 
-I agree whole heartedly with John Piper here:
+I agree whole heartedly with John Piper in these videos:
 
 -   [The Blazing Center by John Piper - YouTube](https://www.youtube.com/watch?v=4ltvYtwMef4)
 -   [John Piper - God's Delight in Obedience - YouTube](https://www.youtube.com/watch?v=tqtl-sXeTmA)
 -   [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 -   [God is the Gospel - YouTube](https://www.youtube.com/watch?v=duJhsyAjhNg)
 
-To be able to have affection for God and treasure God, and have a desire for God is such a gift&#x2026;. Thank you John Piper for helping me to see that, and lead me into that truth&#x2026; It makes so much sense in hindsight. Nothing in this world could replace the gift of being able to know God Himself and have an affectionate, treasuring, obedient, believing, desiring love for God.
+-   **Acknowledgement:** To be able to have affection for God and treasure God, and have a desire for God is such a gift&#x2026;. Thank you John Piper for helping me to see that, and lead me into that truth&#x2026; It makes so much sense in hindsight. Nothing in this world could replace the gift of being able to know God Himself and have an affectionate, treasuring, obedient, believing, desiring love for God.
 
 > **Romans 6:23** - For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
