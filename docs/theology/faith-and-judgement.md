@@ -15545,7 +15545,40 @@ So in this life we can know that we will partake in the resurrection at the seco
 
 Our heavenly inheritance is imperishable!
 
-> **1 Peter 1:4** -  to an inheritance that is imperishable, undefiled, and unfading, kept in heaven for you,  (ESV)
+> **1 Peter 1:4** - to an inheritance that is imperishable, undefiled, and unfading, kept in heaven for you,  (ESV)
+
+
+### The fiery trial and the rapture being contemporaneous
+
+So long as I'm in the fiery trial I am currently in, will expect rapture as though it were imminent. Come lord Jesus!
+
+> **Revelation of John 22:20** - He who testifies to these things says, Surely I am coming soon. Amen. Come, Lord Jesus! (ESV)
+
+John Piper's explanation of the rapture I affirm:
+
+-   [What Is the Rapture? - YouTube](https://www.youtube.com/watch?v=4UkAQOi3QPg)
+
+I'm a total believer in the rapture.
+
+> **Revelation of John 3:10** - Because you have kept my word about patient endurance, I will keep you from the hour of trial that is coming on the whole world, to try those who dwell on the earth. (ESV)
+
+> **I Peter 4:12** - Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. (ESV)
+
+Relief for believers and affliction for the disbelievers as one coming:
+
+> **II Thessalonians 1:6-8** - since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. (ESV)
+
+> **II Thessalonians 2:1-3** - Now concerning the coming of our Lord Jesus Christ and our being gathered together to him, we ask you, brothers, not to be quickly shaken in mind or alarmed, either by a spirit or a spoken word, or a letter seeming to be from us, to the effect that the day of the Lord has come. Let no one deceive you in any way. For that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, the son of destruction, (ESV)
+
+Rapture:
+
+> **I Thessalonians 4:16-17** - For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord. (ESV)
+
+> **Revelation of John 22:20** - He who testifies to these things says, Surely I am coming soon. Amen. Come, Lord Jesus! (ESV)
+
+Amen! I'm waiting for that day. Also, I believe God can take me up any time if it's His will!
+
+> **Mark 9:23** - And Jesus said to him, If you can! **All things are possible for one who believes.** (ESV)
 
 
 ### The resurrection of the just
