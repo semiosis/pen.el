@@ -1047,6 +1047,19 @@ So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believi
 
 > **Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
 
+
+### God working in us
+
+God loved us first. We must accept that.
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
+> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+> **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
+
 When we are believing in Jesus Christ's finished work and obeying Jesus, obeying His commandments, it is actually God who is working in us, transforming us, sanctifying us, restoring us:
 
 > **Philippians 2:13** - for it is **God who works in you, both to will and to work** for his good pleasure. (ESV)
@@ -1099,12 +1112,58 @@ Our obedience is penitent, but our our justification doesn't hang on our perfect
 
 Also I conclude that obeying Jesus Christ is having faith in Him.
 
-Why then do people preach to stop 'working for God'? The problem isn't work, but that work not done in faith is sin.
+
+### God acts for those who wait for Him
+
+God acts for those who wait for Him:
+
+> **Isaiah 64:4** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <ins>for those who wait for him</ins>. (ESV)
+
+If God is for us, who can be against us?
+
+> **Romans 8:31** - What then shall we say to these things? If God is for us, who can be against us? (ESV)
+
+
+### The free gift is God - God is the Gospel
+
+We get out of the way everything that is an obstacle to enjoying God when we are forgiven. AMEN:
+
+> **Ephesians 1:7** - In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace, (ESV)
+
+> **Colossians 1:14** - in whom we have redemption, the forgiveness of sins. (ESV)
+
+
+### The point of justification - we rejoice in the hope of the glory of God
+
+[God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
+
+> **Romans 5:1-2** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, <ins>and we rejoice in hope of the glory of God.</ins> (ESV)
+
+We rejoice in the hope of the glory of God. That's the point of justification. Who cares if we are righteous. We don't want to be God - we want to see the glory of God.
+
+The reason we want to be righteous is so we get God. We don't get put in hell.
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+
+### Why do we want to live righteously? To honour Christ
+
+We want to honour/exalt/magnify Christ in our lives, to **trust** Him, **honour** Him, believe His promises, and even faithfully wait/hold to those promises, and even want others to see the light of the gospel of the glory of Christ who is the image of God:
+
+> **Philippians 1:20-21** - According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be **magnified** in my body, whether it be **by life**, **or by death**. For to me to live is Christ, and to die is gain. (KJV)
+
+> **II Corinthians 4:4** - In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. (ESV)
+
+
+### Under the right conditions, I don't see a problem with 'working' for God
+
+The motivation has to be right. We do work for God to honour God, and as a response to Him loving us first, and as a response of love for Him forgiving us first, and giving us the gift of eternal life.
+
 We are instructed to work for God:
 
 > **II John 1:8** - Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. (ESV)
 
-Once again, we are instructed to work for God:
+Once again, we are actually instructed to work for God, but it's not wrong under the right conditions:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
