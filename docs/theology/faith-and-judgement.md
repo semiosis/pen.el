@@ -23,10 +23,9 @@ I agree whole heartedly with John Piper here:
 
 -   <https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism>
 
-I currently agree with the vast majority of the HeidelBerg Catechism.
-I'll put it here for others' reference. However, I am still working through it myself.
-
-<./Heidelberg-Catechism.txt>
+I currently agree with the vast majority of the Heidelberg Catechism.
+I'll put it here for others' reference.
+However, I am still working through it myself.
 
 
 # My thoughts and bible references regarding theology
