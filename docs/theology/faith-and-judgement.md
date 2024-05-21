@@ -5479,6 +5479,14 @@ I still think the 10 commandments are special, and following them in truth is re
 
 ### Judgement
 
+I certainly affirm that Jesus will return to save those waiting for Him, and I currently am waiting for His return.
+
+> **Hebrews 9:27-28** - And just as **it is appointed for man to die once, and after that comes judgment**, so Christ, <ins>having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him.</ins> (ESV)
+
+Also, I do not affirm reincarnation, but I think the truth is that it is appointed for man to die once, and after that, judgement, and the LORD creates an **entirely new** heavens and a new earth. No recycling. No reincarnation. I await the second coming of Christ. AMEN!
+
+> **Isaiah 65:17** - For behold, I create new heavens and a new earth, and <ins>the former things shall not be remembered or come into mind.</ins>
+
 > **Luke 18:8** - I tell you, he will give justice to them speedily. Nevertheless, when the Son of Man comes, <ins>will he find faith on earth</ins>?
 
 Will anyone be believing and obeying Jesus?
@@ -8956,7 +8964,7 @@ Jesus helped Thomas believe by giving him a commandment to do. It's implied that
 
 ### The new heavens and new earth
 
-> **Isaiah 65:17** - For behold, I create new heavens and a new earth, and the former things shall not be remembered or come into mind.
+> **Isaiah 65:17** - For behold, I create new heavens and a new earth, and <ins>the former things shall not be remembered or come into mind.</ins>
 
 > **Isaiah 66:22** - For as the new heavens and the new earth that I makeshall remain before me, says the Lord, so shall your offspring and your name remain.
 
