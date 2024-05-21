@@ -1,6 +1,8 @@
 This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
 I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
-a Bible study. I hope it spreads some light on the Scriptures.
+a Bible study. I have just wanted to read the Bible for myself to understand and apply the Scriptures, come into agreement with God's Truth and share my understanding it with others for accountability purposes. I don't presume to be always right.
+
+> **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
 
 I agree whole heartedly with Keith Green here:
 
