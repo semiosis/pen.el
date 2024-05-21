@@ -23,9 +23,29 @@ I agree whole heartedly with John Piper here:
 
 -   <https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism>
 
-I currently agree with the vast majority of the Heidelberg Catechism.
-I'll put it here for others' reference.
-However, I am still working through it myself.
+I agree with pretty much all of the Heidelberg Catechism, but when I read a statement such as <ins>"What is the aim of the tenth commandment? A. That not even the&#x2026;"</ins> I would say it means more than what it suggests. However, it is a catechism, and not Scripture.
+I'll put it here for others' reference. By all means read the Heidelberg Catechism first/also.
+
+I think that Q&A 133 could more greatly emphasise that when the chips are down we should covet God alone; that Jesus must be our #1 treasure, our Pearl of Great Price:
+
+> **Luke 12:15** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
+
+> **Colossians 3:5** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. (ESV)
+
+     1  Lord’s Day 44
+     2  Q&A 113
+     3  Q. What is the aim of the tenth commandment?
+     4  A. That not even the slightest desire or thought
+     5     contrary to any one of God’s commandments
+     6     should ever arise in our hearts.
+     7  
+     8     Rather, with all our hearts
+     9     we should always hate sin
+    10     and take pleasure in whatever is right.
+    11  
+    12  1 Ps. 19:7-14; 139:23-24; Rom 7:7-8
+
+I may use the catechism to make adjustments to my theology document if I find errors in my understanding.
 
 
 # My thoughts and bible references regarding theology
@@ -1478,7 +1498,7 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 > something.
 
 
-## Our obedient faith should be penitent, and doesn't have to be perfect, and should be without partiality
+## Our obedient faith should be penitent, and should be without partiality. We **aim** for perfection, to be conformed to Christ's image
 
 > John Piper - "Faith is the baking our **hope on the mercy of God**."
 
@@ -1489,6 +1509,12 @@ Obeying Jesus should be impartial:
 > John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
 
 -   **Sermon:** [God's Delight in Obedience - YouTube @time: 24 min 19 sec](https://youtube.com/watch?v=tqtl-sXeTmA&t=1459)
+
+> **II Corinthians 13:11** - Finally, brethren, rejoice, be made complete, be comforted, be like-minded, live in peace; and the God of love and peace will be with you. (NASB)
+
+> **II Corinthians 13:11** - Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you. (KJV)
+
+> **II Corinthians 13:11-14** - Finally, brothers, rejoice. Aim for restoration, comfort one another, agree with one another, live in peace; and the God of love and peace will be with you. Greet one another with a holy kiss. All the saints greet you. The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all. (ESV)
 
 
 ### Faith is not merely belief, but faith is walking as Abraham did - believing and obedient
