@@ -631,6 +631,10 @@ In believing we have eternal life, but we need to continue in obedience to Jesus
 
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
+Jesus Christ is our Lord and Teacher - that means we obey Him:
+
+> **John 13:13-14** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
+
 If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. But the enemy will certainly try to condemn the person after they are born-again:
 
 > **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
@@ -9000,6 +9004,8 @@ Jesus helped Thomas believe by giving him a commandment to do. It's implied that
 
 > **Revelation of John 21:1-7** - Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying, Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning nor crying nor pain anymore, for the former things have passed away. And he who was seated on the throne said, Behold, I am making all things new. Also he said, Write this down, for these words are trustworthy and true. And he said to me, It is done! I am the Alpha and the Omega, the beginning and the end. To the thirsty I will give from the spring of the water of life without payment. The one who conquers will have this heritage, and I will be his God and he will be my son.
 
+> **Revelation of John 22:12-14** - Behold, I am coming soon, bringing my recompense with me, to repay everyone for what he has done. I am the Alpha and the Omega, the first and the last, the beginning and the end. Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. (ESV)
+
 
 ### The Mosaic law is not abolished but Jesus fulfilled it like a prophesy
 
@@ -11196,6 +11202,8 @@ The peace Jesus brings is peace in Christ:
 
 > **Colossians 1:21-22** - And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, (ESV)
 
+> **II Timothy 2:22** - Now flee from youthful lusts and pursue righteousness, faith, love and peace, with those who call on the Lord from a pure heart. (NASB)
+
 
 ## The kingdom of heaven may be inherited
 
@@ -11757,7 +11765,9 @@ To be domineering is to behave like a lord.
 
 > **John 13:13** - You call me Teacher and Lord, and you are right, for so I am. (ESV)
 
-> **Matthew 23:8** - But you are not to be called rabbi, for you have one teacher, and you are all brothers. (ESV)
+> **Matthew 23:8** - But you are not to be called rabbi, for **you have one teacher, and you are all brothers.** (ESV)
+
+> **Matthew 23:10** - Neither be called instructors, for **you have one instructor, the Christ.** (ESV)
 
 
 ### Jesus has said we must stop sinning and follow Jesus to enter the kingdom
@@ -12865,7 +12875,33 @@ We must be fruitful branches, abiding in Jesus:
 
 # Abiding in Christ
 
-> **John 3:36** - He who believes (G4100 pisteuo) in the Son (G5207 huios) has (G2192 echo) eternal (G166 aionios) life (G2222 zoe); but he who does not obey (G544 apeitheo) the Son (G5207 huios) will not see (G3708 horao) life (G2222 zoe), but the wrath (G3709 orge) of God (G2316 theos) abides (G3306 meno) on him.”
+> **Matthew 23:8** - But you are not to be called rabbi, for **you have one teacher, and you are all brothers.** (ESV)
+
+God is our Father:
+
+> **Matthew 23:9** - And call no man your father on earth, for you have one Father, who is in heaven. (ESV)
+
+Jesus Christ is our Teacher:
+
+> **Matthew 23:10** - Neither be called instructors, for **you have one instructor, the Christ.** (ESV)
+
+Jesus Christ is our Lord and Teacher - that means we obey Him:
+
+> **John 13:13-14** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
+
+We both practice and observe. We serve God in word and deed:
+
+> **Matthew 23:2-4** - The scribes and the Pharisees sit on Moses' seat, so **practice and observe** whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. (ESV)
+
+We believe and obey Jesus:
+
+> **John 3:36** - He who **believes in the Son** has eternal life; but he who does not **obey the Son** will not see life, but the wrath of God abides on him.”
+
+God loved us first. We must accept that.
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love because he first loved us. (ESV)
 
 Abiding in Christ, one abides in God.
 
@@ -16445,12 +16481,12 @@ Repentance in the heart:
 
 ### 
 
-> **Matthew 23:2-4** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. (ESV)
+> **Matthew 23:2-4** - The scribes and the Pharisees sit on Moses' seat, so **practice and observe** whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. (ESV)
 
 
 ### 
 
-> **Matthew 23:8** - But you are not to be called rabbi, for you have one teacher, and you are all brothers. (ESV)
+> **Matthew 23:8** - But you are not to be called rabbi, for **you have one teacher, and you are all brothers.** (ESV)
 
 
 ### 
@@ -16460,7 +16496,7 @@ Repentance in the heart:
 
 ### 
 
-> **Matthew 23:10** - Neither be called instructors, for you have one instructor, the Christ. (ESV)
+> **Matthew 23:10** - Neither be called instructors, for **you have one instructor, the Christ.** (ESV)
 
 
 ### 
