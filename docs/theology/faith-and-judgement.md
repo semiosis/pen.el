@@ -1,4 +1,4 @@
-This document has been a work in progress. I have been born-again and have done my own Bible study, and I'm happy with what I have written here.
+This document has been a work in progress. I have been born-again and have done my own Bible study to be taught and be corrected by the word of God, and I'm happy with what I have written here.
 I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
 a Bible study. I have just wanted to read the Bible for myself to understand and apply the Scriptures, come into agreement with God's Truth and share my understanding it with others for accountability purposes. I don't presume to be always right.
 
@@ -269,7 +269,7 @@ Believing Jesus, having the love of God within us, loving Father God, and loving
 
 Those who trust Jesus and believe Jesus is the Son of God, now being far more obedient to God, cheerfully obey His commandments rather than find them difficult (for example: they find it unburdensome to act like the good Samaritan):
 
-> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking care of them with mercy:
 
@@ -1098,6 +1098,8 @@ has achieved for us on the cross, because the blood of Jesus Christ redeems us <
 > **Ephesians 1:7** - In him we have redemption through his blood, the forgiveness of our trespasses, according to the riches of his grace, (ESV)
 
 -   **Song:** [Chris Tomlin - Holy Forever {Lyric Video} - YouTube](https://youtu.be/IkHgxKemCRk?list=RDf2oxGYpuLkw&t=94)
+
+> **Hebrews 12:28-29** - Therefore let us <ins>be grateful</ins> for receiving a kingdom that cannot be shaken, and thus <ins>let us offer to God acceptable worship, with reverence and awe,</ins> for **our God is a consuming fire**. (ESV)
 
 Even having faith in God through faith in Jesus is obedience according to `Romans 16:26`. **If a person is trusting in Him when they die, they will live.**
 
@@ -2546,7 +2548,7 @@ Those who love Him, obey Him:
 
 We love God and our brothers and sisters in Christ by following God's commandments:
 
-> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 The crown of life is gifted to those who are obedient, and have been tested:
 
@@ -2820,6 +2822,20 @@ The Good News of Jesus Christ is **the power of God for salvation** (stress: **p
 
 -   **salvation from sin**, and
 -   **eternal life in Christ Jesus.**
+
+We have to repent and believe:
+
+> **Mark 1:14-15** - Now after John was arrested, Jesus came into Galilee, proclaiming the gospel of God, and saying, The time is fulfilled, and the kingdom of God is at hand; **repent and believe in the gospel**. (ESV)
+
+We have to believe the Truth. We have to agree with the word of God:
+
+> **John 17:17-19** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
+
+We have to be corrected by the word of God:
+
+> **II Timothy 3:16-17** - All Scripture is breathed out by God and profitable for teaching, for reproof, **for correction**, and for training in righteousness, that the man of God may be competent, equipped for every good work. (ESV)
+
+For those who believe, it is the power of God for salvation:
 
 > **Romans 1:16** - For I am not ashamed of the gospel, for it is the **power of God for salvation** <ins>to everyone who believes,</ins> to the Jew first and also to the Greek. (ESV)
 
@@ -3740,6 +3756,8 @@ I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
 > **I John 5:11** - And this is the testimony, that God gave us eternal life, and this life is in his Son. (ESV)
 
+> **Isaiah 43:10** - You are my witnesses, declares the LORD, and my servant whom I have chosen, that you may know and believe me and understand that I am he. **Before me no god was formed, nor shall there be any after me.** (ESV)
+
 To have the Spirit of Christ is to have the Spirit of God:
 
 > **Romans 8:9-10** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. (ESV)
@@ -3808,6 +3826,12 @@ This entire chapter is very important for testing the spirits:
 We must hold fast to Jesus, the Head:
 
 > **Colossians 2:18-19** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. (ESV)
+
+Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
+
+> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
 
 ### Jesus has overcome the world
@@ -6858,6 +6882,10 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 Even the demons believe God is one and they shudder. The faithful believe God and love God (a totally different response). Love is obedience to God, and includes accepting and having faith in the one who God sent, Jesus.
 
 > **James 2:19** - You believe that God is one; you do well. Even the demons believe—and shudder!
+
+Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
+
+> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 > **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
@@ -12047,7 +12075,9 @@ The new self should be <ins>Christ formed in you:</ins>
 
 > **Ephesians 3:9-11** - and to bring to light for everyone what is the plan of the mystery hidden for ages in God who created all things, so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places. This was according to <ins>the eternal purpose that he has realized in Christ Jesus</ins> our Lord,
 
-**By** him all things were created. Firstborn here does not mean 'created first'.
+**By** him all things were created. Firstborn here <ins>does not mean</ins> 'created first':
+
+> **Isaiah 43:10** - You are my witnesses, declares the LORD, and my servant whom I have chosen, that you may know and believe me and understand that I am he. **Before me no god was formed, nor shall there be any after me.** (ESV)
 
 > **Colossians 1:15-20** - He is the image of the invisible God, the firstborn of all creation. For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things were created through him and for him. And he is before all things, and in him all things hold together. And he is the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent. For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross.
 
@@ -19049,6 +19079,12 @@ It's obedience which leads to righteousness, even the righteousness of faith.
 ### A heart of obedience is the start of faith
 
 > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+
+Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
+
+> **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+
+> **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
 
 ## For one's work to stand the test of fire
