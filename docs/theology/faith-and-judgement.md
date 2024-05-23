@@ -2254,6 +2254,11 @@ We must come to Jesus for eternal life:
 > **John 5:39-40** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
 
 
+### As we come to Jesus, we are conformed to His image
+
+> **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
+
+
 ### Peter was quick to belief, and his belief led to obedience
 
 > **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it. (ESV)
@@ -18349,6 +18354,16 @@ Receiving is a mixture of believing, obeying, trusting, believing to receive - a
 
 > **Galatians 3:3-6** - Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh? <ins>Did you suffer so many things</ins> in vain—if indeed it was in vain? Does he who supplies the Spirit to you and works miracles among you do so by works of the law, or by <ins>hearing with faith—</ins> just as Abraham believed God, and it was counted to him as righteousness?
 
+We are to be conformed into Christ's image:
+
+> **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
+
+It makes sense to me that being conformed into Christ's image and knowing Father God and Jesus Christ who God has sent would be contemporaneous:
+
+> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+> **Jude 1:25** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
+
 
 ## Inheriting the promises made to Abraham and to Christ
 
@@ -18674,6 +18689,10 @@ Likewise, we must obey God, and obey God by obeying Jesus, and being sanctified 
 > **John 17:8-26** - For I have given them the words that you gave me, and they have received them and have come to know in truth that I came from you; and they have believed that you sent me.  I am praying for them. I am not praying for the world but for those whom you have given me, for they are yours.  All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>.  And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me. I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled.  But now I am coming to you, and these things I speak in the world, that they may have my joy fulfilled in themselves.  I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world.  I do not ask that you take them out of the world, but that you keep them from the evil one.  They are not of the world, just as I am not of the world.  Sanctify them in the truth; your word is truth.  As you sent me into the world, so I have sent them into the world.  And for their sake I consecrate myself, that they also may be sanctified in truth.  I do not ask for these only, but also for those who will believe in me through their word, that they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.  The glory that you have given me I have given to them, that they may be one even as we are one, I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me.  Father, I desire that they also, whom you have given me, may be with me where I am, to see my glory that you have given me because you loved me before the foundation of the world.  O righteous Father, even though the world does not know you, I know you, and these know that you have sent me.  I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.
 
 > **II Thessalonians 1:10** - when he comes on that day to be glorified in his saints, and to be marveled at among all who have believed, because our testimony to you was believed.
+
+We are to be conformed into Christ's image:
+
+> **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
 
 
 ## Glorification is Christ-likeness
@@ -19046,6 +19065,10 @@ Also, I've been born of God, so I have Christ in me:
 I have the Spirit of God in me:
 
 > **Romans 8:9** - You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
+
+We are to be conformed into Christ's image:
+
+> **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
 
 
 # Praising and thanking God in Heaven:
