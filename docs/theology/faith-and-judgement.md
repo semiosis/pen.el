@@ -472,7 +472,7 @@ The Apostle John also commands us to:
 
 Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. Yes, so I think we must believe Jesus and obey Him:
 
-> **I John 3:24** - Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 > **John 14:10-15** - Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but <ins>the Father who dwells in me does his works.</ins> Believe me that I am in the Father and the Father is in me, or else believe on account of the works themselves. Truly, truly, I say to you, **whoever believes in me will also do the works that I do;** and greater works than these will he do, because I am going to the Father. Whatever you ask in my name, this I will do, that the Father may be glorified in the Son. If you ask me anything in my name, I will do it. <ins>If you love me, you will keep my commandments.</ins> (ESV)
 
@@ -2303,6 +2303,10 @@ Therefore, I believe that believing Jesus is the Christ (Messiah), the Son of Go
 Obedience should grow. A change should have taken place in the person's life:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+The Holy Spirit leads us:
+
+> **Romans 8:14-17** - For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
 
 We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
 
@@ -6757,6 +6761,8 @@ The Holy Spirit still goes to those who obey Jesus:
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom <ins>God has given to those who obey him.</ins> (ESV)
 
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And <ins>by this we know that he abides in us, by the Spirit whom he has given us.</ins> (ESV)
+
 It's extremely important to have a response of love for Jesus, and to do the good works which we have been created in Christ Jesus to do, but Jesus also saves people who turn out to be unthankful:
 
 > **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
@@ -9059,6 +9065,8 @@ If we teach others to annul even the least of the commandments and annul them ou
 
 > **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
 
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And <ins>by this we know that he abides in us, by the Spirit whom he has given us.</ins> (ESV)
+
 > **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
 
 
@@ -9079,6 +9087,8 @@ Otherwise why would God make a distinction in Exodus 16 between commandments (mi
 > **Exodus 20:6** - but showing steadfast love to thousands of those who love me and keep my commandments. (ESV)
 
 > **Exodus 34:28** - So he was there with the Lord forty days and forty nights. He neither ate bread nor drank water. And he wrote on the tablets the words of the covenant, the Ten Commandments. (ESV)
+
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And <ins>by this we know that he abides in us, by the Spirit whom he has given us.</ins> (ESV)
 
 1.  The Apostles also placed requirements on the Gentiles similar to the 10 commandments
 
@@ -11637,7 +11647,7 @@ We've got to believe Jesus:
 
 Living as Jesus instructed us to live. Living as Jesus also lived.
 
-> **I John 3:24** - Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 > **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
 
@@ -19121,6 +19131,8 @@ Believing Father God Jehovah, loving Him, obeying His commandments, loving and o
 > **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 > **John 8:42** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
+
+> **I John 3:24** - **Whoever keeps his commandments abides in him, and he in them.** And <ins>by this we know that he abides in us, by the Spirit whom he has given us.</ins> (ESV)
 
 
 ## For one's work to stand the test of fire
