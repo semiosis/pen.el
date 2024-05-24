@@ -993,6 +993,8 @@ That rest looks like living for the will of God:
 
 > **I John 5:3** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
+> **Psalms 46:10** - “Cease striving and know that I am God; I will be exalted among the nations, I will be exalted in the earth.” (NASB)
+
 So it's still extremely important for us to try to keep His commandments, and His commandments are to love God and one another as He loved us, selflessly.
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
@@ -3732,6 +3734,13 @@ Jehovah is God Almighty:
 > **Exodus 6:3** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
 
 [Exodus 6:3 Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;](https://biblehub.com/interlinear/exodus/6-3.htm)
+
+
+# Jehovah is Almighty God, Creator of Heaven and Earth
+
+> **Jeremiah 31:33** - But this is the covenant that I will make with the house of Israel after those days, declares the LORD (H3068 Yhovah): I will put my law within them, and I will write it on their hearts. And I will be their God, and they shall be my people. (ESV)
+
+> **Genesis 2:7** - then the LORD (H3068 Yhovah) God (H430 'elohiym) formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature. (ESV)
 
 -   **Sermon:** [John Piper - God's Own Name - YouTube](https://www.youtube.com/watch?v=kPHOZSZW584)
 
