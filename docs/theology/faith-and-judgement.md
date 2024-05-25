@@ -11245,6 +11245,8 @@ The peace Jesus brings is peace in Christ:
 
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
+[This Fierce Battle You're Facing - YouTube](https://www.youtube.com/watch?v=0XB_lNr3TXw)
+
 
 # The Kingdom of God
 
@@ -12285,6 +12287,14 @@ I forgive everyone.
 
 ### Marriage is good
 
+The right person to marry should be based on such things as this:
+
+> **Galatians 5:22-23** - But the fruit of the Spirit is love (G26 **agape**), joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; <ins>against such things there is no law</ins>. (ESV)
+
+To be married to the right person makes it far easier to not sin:
+
+> **Galatians 5:16** - But I say, walk by the Spirit, and you will not gratify the desires of the flesh. (ESV)
+
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
 
 > **Colossians 2:18-23** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
@@ -12303,7 +12313,7 @@ For example:
 
 -   worldly spirit through a person telling me I need to be financially successful first, or
 -   a spirit of slander or gossip which keeps me isolated, or a rejection-spirit spreading gossip/slander among people around me, creating social anxiety, making it hard to socialise with people who would be good to talk to, or
--   a spirit spouse which thinks it's my spouse
+-   a [spirit spouse](https://www.youtube.com/watch?v=Pqrd2ff8My0&ab_channel=VladSavchuk) which thinks it's my spouse
 -   if all of the above spirits start manifesting
 
 And as far as forsaking God's precepts for
