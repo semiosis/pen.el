@@ -3770,6 +3770,8 @@ I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
+-   **Video:** [Gospel of Mark calls Jesus God in every chapter - YouTube](https://www.youtube.com/watch?v=YwQF-SS-O_g)
+
 > **John 8:18-19** - I am the one who bears witness about myself, and the Father who sent me bears witness about me. They said to him therefore, Where is your Father? Jesus answered, You know neither me nor my Father. If you knew me, you would know my Father also. (ESV)
 
 > **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
@@ -12287,13 +12289,23 @@ I forgive everyone.
 
 ### Marriage is good
 
-The right person to marry should be based on such things as this:
+Without following Christ's law, the fruit of the Spirit cannot be used to justify yourself of why you should be allowed to marry someone (just because it feels right, that's still not good enough).
+
+But the right person to marry **should** still be based on such things as this:
 
 > **Galatians 5:22-23** - But the fruit of the Spirit is love (G26 **agape**), joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; <ins>against such things there is no law</ins>. (ESV)
 
-To be married to the right person makes it far easier to not sin:
+The fruit of the Spirit, while lawful, are not enough to justify marrying a person. Also, only Jesus was perfect. Christ's law **must** be followed rather than using the fruit of the Spirit to as an excuse to self-justify; **Bearing your neighbours burdens**, and <ins>awaiting God to provide</ins>, because God is the justifier, not us:
 
-> **Galatians 5:16** - But I say, walk by the Spirit, and you will not gratify the desires of the flesh. (ESV)
+> **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
+
+Being <ins>led by the spirit involves following Christ's law.</ins> To be married to the right person makes it far easier to not sin:
+
+> **Galatians 5:13-16** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but <ins>through love serve one another. For the whole law is fulfilled in one word: You shall love your neighbor as yourself.</ins> But if you bite and devour one another, watch out that you are not consumed by one another. But I say, <ins>walk by the Spirit, and you will not gratify the desires of the flesh.</ins> (ESV)
+
+**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law.:
+
+> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
 
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
 
@@ -13748,7 +13760,11 @@ Heaven and earth have not passed away yet and neither has the Law:
 
 > **Luke 16:17** - But it is easier for heaven and earth to pass away than for one dot of the Law to become void. (ESV)
 
-**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law:
+Being led by the spirit involves following Christ's law:
+
+> **Galatians 5:13-16** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but <ins>through love serve one another. For the whole law is fulfilled in one word: You shall love your neighbor as yourself.</ins> But if you bite and devour one another, watch out that you are not consumed by one another. But I say, <ins>walk by the Spirit, and you will not gratify the desires of the flesh.</ins> (ESV)
+
+**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law.:
 
 > **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
 
