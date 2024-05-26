@@ -1,7 +1,4 @@
-* Easy instructions
-- https://semiosis.github.io/posts/pen-el-installation-from-scratch/
-
-** Running Pen.el on your host machine
+* Running Pen.el on your host machine
 This is a demo of setting up Pen.el for the first time.
 
 The following commands run on your host machine.
@@ -16,20 +13,11 @@ The following commands run on your host machine.
 
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
-  git clone "https://github.com/semiosis/prompts"
 
-  # Currently about 8GB
+  # Currently about 60GB
   docker pull semiosis/pen.el:latest
 
   mkdir -p $HOME/.pen
-
-  # Put in your keys, or do not, it's up to you!
-  echo "sk-<openai key here>" > $HOME/.pen/openai_api_key       # https://openai.com/
-  echo "<ai21 key here>" > $HOME/.pen/ai21_api_key              # https://www.ai21.com/
-  echo "<hf key here>" > $HOME/.pen/hf_api_key                  # https://huggingface.co/
-  echo "<nlpcloud key here>" > $HOME/.pen/nlpcloud_api_key      # https://nlpcloud.io/
-  echo "<alephalpha key here>" > $HOME/.pen/alephalpha_api_key  # https://aleph-alpha.de/
-  echo "<cohere key here>" > $HOME/.pen/cohere_api_key          # https://cohere.ai/
 
   # Add the scripts to the PATH
   echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> $HOME/.profile
@@ -43,89 +31,3 @@ The following commands run on your host machine.
   # Run pen
   pen
 #+END_SRC
-
-#+BEGIN_EXPORT html
-<!-- Play on asciinema.com -->
-<!-- <a title="asciinema recording" href="https://asciinema.org/a/at9VpN22g7ZZkf4Vkoy8hIOJJ" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/at9VpN22g7ZZkf4Vkoy8hIOJJ.svg" /></a> -->
-<!-- Play on the blog -->
-<script src="https://asciinema.org/a/at9VpN22g7ZZkf4Vkoy8hIOJJ.js" id="asciicast-at9VpN22g7ZZkf4Vkoy8hIOJJ" async></script>
-#+END_EXPORT
-
-Assuming the key that you entered is the actual key, continue now to use Pen!
-
-#+BEGIN_EXPORT html
-<!-- Play on asciinema.com -->
-<!-- <a title="asciinema recording" href="https://asciinema.org/a/ZF8boxsqiKpUB6nQeaBszMk4y" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/ZF8boxsqiKpUB6nQeaBszMk4y.svg" /></a> -->
-<!-- Play on the blog -->
-<script src="https://asciinema.org/a/ZF8boxsqiKpUB6nQeaBszMk4y.js" id="asciicast-ZF8boxsqiKpUB6nQeaBszMk4y" async></script>
-#+END_EXPORT
-
-In this test, everything except Apostrophe seemed to be working on a clean installation.
-I have introduced a bug that I will fix soon. Done!
-
-#+BEGIN_EXPORT html
-<!-- Play on asciinema.com -->
-<!-- <a title="asciinema recording" href="https://asciinema.org/a/pxrwm2tI47KCDwKGwHaqKL18M" target="_blank"><img alt="asciinema recording" src="https://asciinema.org/a/pxrwm2tI47KCDwKGwHaqKL18M.svg" /></a> -->
-<!-- Play on the blog -->
-<script src="https://asciinema.org/a/pxrwm2tI47KCDwKGwHaqKL18M.js" id="asciicast-pxrwm2tI47KCDwKGwHaqKL18M" async></script>
-#+END_EXPORT
-
-** Running Pen.el exclusively within the docker container
-You will need to source =~/.profile= and =setup-term.sh= upon entering a container shell.
-From there, you may consult the =run.sh= command for initiating the pen daemons for the first time.
-
-* Advanced installation
-These setup instructions are designed for Debian 10 or Ubuntu 20.04.
-
-** Dependencies
-- emacs 28
-
-** Tutorial
-https://semiosis.github.io/posts/pen-tutorial/
-
-** =AIx= API key (for GPT-J-6b)
-Get your key.
-
-https://apps.aixsolutionsgroup.com/
-
-** =OpenAI= API key (for GPT-3)
-You will need your own OpenAI API key.
-
-The shell command =openai-complete.sh= requires =OPENAI_API_KEY= to be
-provided to at as an environment variable.
-
-It's up to you to provide this to the script.
-
-[[./scripts/openai-complete.sh]]
-
-Alternatively, the script will look for it here =$HOME/.pen/openai_api_key=.
-
-** Setup script for a Debian 10 docker image
-[[./scripts/setup.sh]]
-
-Adjust this script for your own installation.
-
-** Emacs =.emacs= / =init.el=
-The following emacs init file contains the
-base requirements to run =pen.el= in a vanilla
-emacs.
-
-[[./src/init.el]]
-
-*** Configure =pen.el=
-See the above =init.el= file for an example of
-where to load your config (after all
-dependencies are loaded).
-
-**** Example emacs config
-[[./src/pen-example-config.el]]
-
-** Running =pen.el=
-This is tested to run on a Debian 10 docker image.
-
-[[./scripts/run.sh]]
-
-*** Add scripts to PATH
-=pen.el= requires some external scripts to be in the path.
-
-- https://github.com/semiosis/pen.el/tree/master/scripts
