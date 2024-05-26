@@ -1420,7 +1420,7 @@ Jesus is the divinely appointed servant of God:
 
 He's the image of God:
 
-> **Colossians 1:15** - He is the image of the invisible God, the firstborn of all creation. (ESV)
+> **Colossians 1:15** - He is <ins>the image of the invisible God, the firstborn of all creation.</ins> (ESV)
 
 -   **Song:** [Let It Be Christ - The Sations - YouTube](https://www.youtube.com/watch?v=urnl_qYQ9l0&list=RDurnl_qYQ9l0&start_radio=1)
 
@@ -3768,6 +3768,8 @@ Father God has a voice and a form, and sent Jesus:
 
 I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
+> **John 1:1-3** - In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made. (ESV)
+
 > **John 1:14** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
 > **John 1:17** - For the law was given through Moses; <ins>grace and truth came through Jesus Christ.</ins> (ESV)
@@ -3775,6 +3777,87 @@ I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
 -   **Video:** [Gospel of Mark calls Jesus God in every chapter - YouTube](https://www.youtube.com/watch?v=YwQF-SS-O_g)
+
+God the Father and God the Son are one.
+
+> **John 10:30** - I and the Father are one.
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Yeshua, Jesus</th>
+<th scope="col" class="org-left">Yahweh, Jehovah</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Mark 1:3</b> - the voice of one crying in the wilderness: Prepare the way of the Lord, make his paths straight, (ESV)</td>
+<td class="org-left"><b>Isaiah 40:3</b> - A voice cries: In the wilderness prepare the way of the LORD; make straight in the desert a highway for our God. (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 2:7</b> - Why does this man speak like that? He is blaspheming! Who can forgive sins but God alone? (ESV)</td>
+<td class="org-left"><b>Isaiah 43:25</b> - I, I am he who blots out your transgressions for my own sake, and I will not remember your sins. (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 3:27</b> - But no one can enter a strong man's house and plunder his goods, unless he first binds the strong man. Then indeed he may plunder his house. (ESV)</td>
+<td class="org-left">He has authority to do this.</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 4:38</b> - But he was in the stern, asleep on the cushion. And they woke him and said to him, Teacher, do you not care that we are perishing? (ESV)</td>
+<td class="org-left"><b>Psalms 107:28-29</b> - Then they cried to the LORD in their trouble, and he delivered them from their distress. He made the storm be still, and the waves of the sea were hushed. (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 5:35-43</b> - While he was still speaking, there came from the ruler's house some who said, Your daughter is dead. Why trouble the Teacher any further? But overhearing what they said, Jesus said to the ruler of the synagogue, Do not fear, only believe. And he allowed no one to follow him except Peter and James and John the brother of James. They came to the house of the ruler of the synagogue, and Jesus saw a commotion, people weeping and wailing loudly. And when he had entered, he said to them, Why are you making a commotion and weeping? The child is not dead but sleeping. And they laughed at him. But he put them all outside and took the child's father and mother and those who were with him and went in where the child was. Taking her by the hand he said to her, Talitha cumi, which means, Little girl, I say to you, arise. And immediately the girl got up and began walking (for she was twelve years of age), and they were immediately overcome with amazement. And he strictly charged them that no one should know this, and told them to give her something to eat. (ESV)</td>
+<td class="org-left"><b>I Kings 17:21-22</b> - Then he stretched himself upon the child three times and cried to the Lord, O Lord my God, let this child's life come into him again. And the Lord listened to the voice of Elijah. And the life of the child came into him again, and he revived. <b>2 Kings 4:32-35</b> -  When Elisha came into the house, he saw the child lying dead on his bed.  So he went in and shut the door behind the two of them and prayed to the LORD.  Then he went up and lay on the child, putting his mouth on his mouth, his eyes on his eyes, and his hands on his hands.  And as he stretched himself upon him, the flesh of the child became warm.  Then he got up again and walked once back and forth in the house, and went up and stretched himself upon him. The child sneezed seven times, and the child opened his eyes.  (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 6:48</b> - And he saw that they were making headway painfully, for the wind was against them. And about the fourth watch of the night he came to them, walking on the sea. He meant to pass by them, (ESV)</td>
+<td class="org-left"><b>Job 9:8</b> - who alone stretched out the heavens and trampled the waves of the sea; (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 7:31-47</b> - Then he returned from the region of Tyre and went through Sidon to the Sea of Galilee, in the region of the Decapolis. And they brought to him a man who was deaf and had a speech impediment, and they begged him to lay his hand on him. And taking him aside from the crowd privately, he put his fingers into his ears, and after spitting touched his tongue. And looking up to heaven, he sighed and said to him, Ephphatha, that is, Be opened. And his ears were opened, his tongue was released, and he spoke plainly. And Jesus charged them to tell no one. But the more he charged them, the more zealously they proclaimed it. And they were astonished beyond measure, saying, He has done all things well. He even makes the deaf hear and the mute speak. In those days, when again a great crowd had gathered, and they had nothing to eat, he called his disciples to him and said to them, I have compassion on the crowd, because they have been with me now three days and have nothing to eat. And if I send them away hungry to their homes, they will faint on the way. And some of them have come from far away. And his disciples answered him, How can one feed these people with bread here in this desolate place? And he asked them, How many loaves do you have? They said, Seven. And he directed the crowd to sit down on the ground. And he took the seven loaves, and having given thanks, he broke them and gave them to his disciples to set before the people; and they set them before the crowd. And they had a few small fish. And having blessed them, he said that these also should be set before them. And they ate and were satisfied. And they took up the broken pieces left over, seven baskets full. And there were about four thousand people. And he sent them away. And immediately he got into the boat with his disciples and went to the district of Dalmanutha. (ESV)</td>
+<td class="org-left"><b>Exodus 4:11</b> - Then the LORD said to him, Who has made man's mouth? Who makes him mute, or deaf, or seeing, or blind? Is it not I, the LORD? (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 8:1-10</b> - In those days, when again a great crowd had gathered, and they had nothing to eat, he called his disciples to him and said to them, I have compassion on the crowd, because they have been with me now three days and have nothing to eat. And if I send them away hungry to their homes, they will faint on the way. And some of them have come from far away. And his disciples answered him, How can one feed these people with bread here in this desolate place? And he asked them, How many loaves do you have? They said, Seven. And he directed the crowd to sit down on the ground. And he took the seven loaves, and having given thanks, he broke them and gave them to his disciples to set before the people; and they set them before the crowd. And they had a few small fish. And having blessed them, he said that these also should be set before them. And they ate and were satisfied. And they took up the broken pieces left over, seven baskets full. And there were about four thousand people. And he sent them away. And immediately he got into the boat with his disciples and went to the district of Dalmanutha. (ESV)</td>
+<td class="org-left"><b>Exodus 16:4</b> - Then the LORD said to Moses, Behold, I am about to rain bread from heaven for you, and the people shall go out and gather a day's portion every day, that I may test them, whether they will walk in my law or not. (ESV)</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 9:2-5</b> - And after six days Jesus took with him Peter and James and John, and led them up a high mountain by themselves. And he was transfigured before them, and his clothes became radiant, intensely white, as no one on earth could bleach them. And there appeared to them Elijah with Moses, and they were talking with Jesus. And Peter said to Jesus, Rabbi, it is good that we are here. Let us make three tents, one for you and one for Moses and one for Elijah. (ESV)</td>
+<td class="org-left">Only 2 people to climb a mountain to commune with God. Moses in <b>Exodus 24</b>, and Elijah in <b>I Kings 19</b></td>
+</tr>
+
+
+<tr>
+<td class="org-left"><b>Mark 14:61-62</b> - But he remained silent and made no answer. Again the high priest asked him, Are you the Christ, the Son of the Blessed? And Jesus said, I am, and you will see the Son of Man seated at the right hand of Power, and coming with the clouds of heaven. (ESV)</td>
+<td class="org-left"><b>Daniel 7:13-14</b> - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that all peoples, nations, and languages should serve him; his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)</td>
+</tr>
+</tbody>
+</table>
 
 > **John 8:18-19** - I am the one who bears witness about myself, and the Father who sent me bears witness about me. They said to him therefore, Where is your Father? Jesus answered, You know neither me nor my Father. If you knew me, you would know my Father also. (ESV)
 
@@ -12080,7 +12163,7 @@ The new self should be <ins>Christ formed in you:</ins>
 
 > **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being <ins>renewed in knowledge after the image of its creator.</ins>
 
-> **Colossians 1:15** - He is the image of the invisible God, the firstborn of all creation. (ESV)
+> **Colossians 1:15** - He is <ins>the image of the invisible God, the firstborn of all creation.</ins> (ESV)
 
 > **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth <ins>until Christ is formed in you!</ins>
 
@@ -19151,11 +19234,18 @@ By God's grace I've been set free from sin, and brought into a relationship with
 
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
 
-The Only True God is the God and Father of Jesus Christ, and Jesus Christ who He Sent.
+The Only True God is the [God and Father of Jesus Christ, and Jesus Christ who He Sent](https://www.youtube.com/watch?v=14zixS3TvZg&ab_channel=DesiringGod).
 
-> **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+> **John 17:3** - And this is eternal life, that they know <ins>you the only true God, and Jesus Christ whom you have sent.</ins> (ESV)
 
-> **Jude 1:25** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
+What I believe is that everything that is in the 'made' category has been created through Jesus (Yeshua) by Jehovah (Yahweh) God.
+sJesus Christ was not made. He was there with Jehovah in the beginning. He is the Word of God. Jesus is God the Son:
+
+> **John 1:1-3** - In the beginning was the Word, and <ins>the Word was with God,</ins> and <ins>the Word was God.</ins> He was in the beginning with God. <ins>All things were made through him, and without him was not any thing made that was made.</ins> (ESV)
+
+> **Colossians 1:15** - He is <ins>the image of the invisible God, the firstborn of all creation.</ins> (ESV)
+
+> **Jude 1:25** - to <ins>the only God, our Savior, through Jesus Christ our Lord</ins>, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
 
 > **John 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
 
