@@ -3768,6 +3768,10 @@ Father God has a voice and a form, and sent Jesus:
 
 I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son:
 
+> **John 1:14** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
+
+> **John 1:17** - For the law was given through Moses; <ins>grace and truth came through Jesus Christ.</ins> (ESV)
+
 > **Romans 9:4-5** - They are Israelites, and to them belong the adoption, the glory, the covenants, the giving of the law, the worship, and the promises. To them belong the patriarchs, and from their race, according to the flesh, is the **Christ who is God over all**, blessed forever. Amen. (ESV)
 
 -   **Video:** [Gospel of Mark calls Jesus God in every chapter - YouTube](https://www.youtube.com/watch?v=YwQF-SS-O_g)
@@ -8284,7 +8288,7 @@ These do not contradict:
 -   Jesus' words are Truth and Life
 -   God's word is truth
     -   The Scripture (Torah) does not contradict
--   Jesus Christ is the Word of God in the Flesh
+-   [Jesus Christ is the Word of God](https://www.youtube.com/watch?v=buZm8hUguEc&ab_channel=DesiringGod), who has come into the world in the flesh
     -   Emmanuel
 -   The Spirit of Truth is the Truth
 
@@ -8416,6 +8420,8 @@ Innovating (good):
         -   **Matthew 18:21-22** -  Then Peter came up and said to him, Lord, how often will my brother sin against me, and I forgive him?  As many as seven times?  Jesus said to him, I do not say to you seven times, but seventy times seven. (ESV)
     -   forgives even those who do not see their need of forgiveness:
         -   **Luke 23:33-35** - And when they came to the place that is called The Skull, there they crucified him, and the criminals, one on his right and one on his left.  And Jesus said, Father, forgive them, for they know not what they do. And they cast lots to divide his garments.  And the people stood by, watching, but the rulers scoffed at him, saying, He saved others; let him save himself, if he is the Christ of God, his Chosen One! (ESV)
+
+> **Isaiah 43:18-19** - Remember not the former things, nor consider the things of old. Behold, I am doing a new thing; now it springs forth, do you not perceive it? I will make a way in the wilderness and rivers in the desert. (ESV)
 
 > **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
@@ -15621,6 +15627,10 @@ Jesus is the Saviour of the world.
 
 > **I John 4:14** - And we have seen and testify that the Father has sent his Son to be the Savior of the world.
 
+> **John 1:17** - For the law was given through Moses; grace and truth came through Jesus Christ. (ESV)
+
+> **John 12:46-48** - I have come into the world as light, so that whoever believes in me may not remain in darkness. If anyone hears my words and does not keep them, I do not judge him; for I did not come to judge the world but to save the world. The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day. (ESV)
+
 > **Isaiah 43:10-11** - You are my witnesses, declares the Lord, and my servant whom I have chosen, that you may know and believe me and understand that I am he. Before me no god was formed, nor shall there be any after me. I, I am the Lord, and besides me there is no savior.
 
 God saves through Jesus.
@@ -18198,13 +18208,15 @@ As Jesus came in His Father's name, and spoke His Father's words,
 > **Luke 1:35** - And the angel answered her, The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God. (ESV)
 
 
-### The Word became flesh
+### The Word became flesh - Jesus Christ is the Word of God
 
 > **John 17:5** - And now, Father, glorify me in your own presence with the glory that I had with you before the world existed. (ESV)
 
 > **John 16:28** - I came from the Father and have come into the world, and now I am leaving the world and going to the Father.
 
 > **Matthew 1** -23: Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel (which means, God with us). (ESV)
+
+> **Revelation of John 19:13** - He is clothed in a robe dipped in blood, and the name by which he is called is The Word of God. (ESV)
 
 
 ### Jesus returned to the Father
