@@ -3811,12 +3811,6 @@ God the Father and God the Son are one.
 
 
 <tr>
-<td class="org-left"><b>Mark 3:27</b> - But no one can enter a strong man's house and plunder his goods, unless he first binds the strong man. Then indeed he may plunder his house. (ESV)</td>
-<td class="org-left">He has authority to do this.</td>
-</tr>
-
-
-<tr>
 <td class="org-left"><b>Mark 4:38</b> - But he was in the stern, asleep on the cushion. And they woke him and said to him, Teacher, do you not care that we are perishing? (ESV)</td>
 <td class="org-left"><b>Psalms 107:28-29</b> - Then they cried to the LORD in their trouble, and he delivered them from their distress. He made the storm be still, and the waves of the sea were hushed. (ESV)</td>
 </tr>
@@ -3826,8 +3820,25 @@ God the Father and God the Son are one.
 <td class="org-left"><b>Mark 5:35-43</b> - While he was still speaking, there came from the ruler's house some who said, Your daughter is dead. Why trouble the Teacher any further? But overhearing what they said, Jesus said to the ruler of the synagogue, Do not fear, only believe. And he allowed no one to follow him except Peter and James and John the brother of James. They came to the house of the ruler of the synagogue, and Jesus saw a commotion, people weeping and wailing loudly. And when he had entered, he said to them, Why are you making a commotion and weeping? The child is not dead but sleeping. And they laughed at him. But he put them all outside and took the child's father and mother and those who were with him and went in where the child was. Taking her by the hand he said to her, Talitha cumi, which means, Little girl, I say to you, arise. And immediately the girl got up and began walking (for she was twelve years of age), and they were immediately overcome with amazement. And he strictly charged them that no one should know this, and told them to give her something to eat. (ESV)</td>
 <td class="org-left"><b>I Kings 17:21-22</b> - Then he stretched himself upon the child three times and cried to the Lord, O Lord my God, let this child's life come into him again. And the Lord listened to the voice of Elijah. And the life of the child came into him again, and he revived. <b>2 Kings 4:32-35</b> -  When Elisha came into the house, he saw the child lying dead on his bed.  So he went in and shut the door behind the two of them and prayed to the LORD.  Then he went up and lay on the child, putting his mouth on his mouth, his eyes on his eyes, and his hands on his hands.  And as he stretched himself upon him, the flesh of the child became warm.  Then he got up again and walked once back and forth in the house, and went up and stretched himself upon him. The child sneezed seven times, and the child opened his eyes.  (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Yeshua, Jesus</th>
+<th scope="col" class="org-left">Yahweh, Jehovah</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left"><b>Mark 6:48</b> - And he saw that they were making headway painfully, for the wind was against them. And about the fourth watch of the night he came to them, walking on the sea. He meant to pass by them, (ESV)</td>
 <td class="org-left"><b>Job 9:8</b> - who alone stretched out the heavens and trampled the waves of the sea; (ESV)</td>
@@ -3838,8 +3849,25 @@ God the Father and God the Son are one.
 <td class="org-left"><b>Mark 7:31-47</b> - Then he returned from the region of Tyre and went through Sidon to the Sea of Galilee, in the region of the Decapolis. And they brought to him a man who was deaf and had a speech impediment, and they begged him to lay his hand on him. And taking him aside from the crowd privately, he put his fingers into his ears, and after spitting touched his tongue. And looking up to heaven, he sighed and said to him, Ephphatha, that is, Be opened. And his ears were opened, his tongue was released, and he spoke plainly. And Jesus charged them to tell no one. But the more he charged them, the more zealously they proclaimed it. And they were astonished beyond measure, saying, He has done all things well. He even makes the deaf hear and the mute speak. In those days, when again a great crowd had gathered, and they had nothing to eat, he called his disciples to him and said to them, I have compassion on the crowd, because they have been with me now three days and have nothing to eat. And if I send them away hungry to their homes, they will faint on the way. And some of them have come from far away. And his disciples answered him, How can one feed these people with bread here in this desolate place? And he asked them, How many loaves do you have? They said, Seven. And he directed the crowd to sit down on the ground. And he took the seven loaves, and having given thanks, he broke them and gave them to his disciples to set before the people; and they set them before the crowd. And they had a few small fish. And having blessed them, he said that these also should be set before them. And they ate and were satisfied. And they took up the broken pieces left over, seven baskets full. And there were about four thousand people. And he sent them away. And immediately he got into the boat with his disciples and went to the district of Dalmanutha. (ESV)</td>
 <td class="org-left"><b>Exodus 4:11</b> - Then the LORD said to him, Who has made man's mouth? Who makes him mute, or deaf, or seeing, or blind? Is it not I, the LORD? (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Yeshua, Jesus</th>
+<th scope="col" class="org-left">Yahweh, Jehovah</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left"><b>Mark 8:1-10</b> - In those days, when again a great crowd had gathered, and they had nothing to eat, he called his disciples to him and said to them, I have compassion on the crowd, because they have been with me now three days and have nothing to eat. And if I send them away hungry to their homes, they will faint on the way. And some of them have come from far away. And his disciples answered him, How can one feed these people with bread here in this desolate place? And he asked them, How many loaves do you have? They said, Seven. And he directed the crowd to sit down on the ground. And he took the seven loaves, and having given thanks, he broke them and gave them to his disciples to set before the people; and they set them before the crowd. And they had a few small fish. And having blessed them, he said that these also should be set before them. And they ate and were satisfied. And they took up the broken pieces left over, seven baskets full. And there were about four thousand people. And he sent them away. And immediately he got into the boat with his disciples and went to the district of Dalmanutha. (ESV)</td>
 <td class="org-left"><b>Exodus 16:4</b> - Then the LORD said to Moses, Behold, I am about to rain bread from heaven for you, and the people shall go out and gather a day's portion every day, that I may test them, whether they will walk in my law or not. (ESV)</td>
