@@ -14,12 +14,6 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
-    -bn) {
-        BASENAME=y
-        shift
-    }
-    ;;
-
     *) break;
 esac; done
 
@@ -123,13 +117,12 @@ case "$opt" in
                 if [ -z "$title" ]; then
                     title="$(p "$uri" | sed 's/^https\?:\/\///')"
                 fi
-                if test "$BASENAME" = "y"; then
-                    title="$(basename "$title")"
-                fi
+                dmn="$(0</dev/null xurls -d "$uri")"
                 if test -n "$time"; then
                     title="$title @time: ${time}"
                 fi
-                printf -- "%s\n" "[[$uri][$title]]"
+                title="$(printf -- "%s" "$title" | sed 's/ - YouTube//')"
+                printf -- "%s\n" "[[$uri][$dmn: $title]]"
             elif test -e "$unminimised"; then
                 bn="$(basename "$uri")"
                 dn="$(dirname "$uri")"

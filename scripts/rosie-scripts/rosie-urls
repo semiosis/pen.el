@@ -1,5 +1,42 @@
 #!/bin/bash
 export TTY
 
-rosie grep -o subs net.url_common |
-    sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}"
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if ! stdin_exists; then
+    argstr="$@"
+    exec < <(printf -- "%s" "$argstr")
+fi
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        mode=domainname
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+{
+case "$mode" in
+    domainname) {
+        rosie grep -o subs net.fqdn_practical | sed 's/^www\.//'
+    }
+    ;;
+
+    *) {
+        rosie grep -o subs net.url_common
+    }
+    ;;
+esac
+} | sed "/\/\/www.youtube.com/{s~/embed/~/watch?v=~}"
