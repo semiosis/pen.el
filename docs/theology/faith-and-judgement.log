@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  26 MAY 2024 18:44
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  26 MAY 2024 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,8 +1115,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 14219.
 
-[266] [267] [268] [269] [270] [271] [272] [273] [274] [275] [276] [277]
-[278] [279] [280]
+[266] [267] [268] [269] [270] [271] [272]
+Overfull \hbox (64.96521pt too wide) in paragraph at lines 14549--14550
+[]\TU/lmr/m/n/10.95 I like to think about faith in God as an equation like: \TU
+/lmtt/m/n/10.95 Believing-God * Obedience/Action/Work/Love/PatientEndurance\TU/
+lmr/m/n/10.95 . 
+ []
+
+[273] [274] [275] [276] [277] [278] [279] [280]
 Missing character: There is no 􄌹 in font [lmroman10-regular]:mapping=tex-text;!
  [281] [282] [283] [284]
 Underfull \hbox (badness 3601) in paragraph at lines 15182--15182
@@ -1515,7 +1521,7 @@ Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 (rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  4A45437D37EB6EF27EB8015B557D30A0.
+(rerunfilecheck)             After:  24B34304B4F23986710DF0DE88317C28.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 

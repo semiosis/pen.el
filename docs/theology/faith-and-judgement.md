@@ -8828,15 +8828,6 @@ This is similar to how the Israelites trusted in Moses, and they actually were t
 > **Exodus 14:31** - When Israel saw the great power which the Lord had used against the Egyptians, the people feared the Lord, and they believed (H539 **'aman**) in the Lord and in His servant Moses. (ESV)
 
 
-# We should observe the law - but be a doer, and avoid judging others with the law
-
-> **Matthew 23:2-7** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
-
--   **Sermon:** [How Preachers Grow Graceless - YouTube](https://www.youtube.com/watch?v=alOI2zxIPgc)
-
-> **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
-
-
 # Be compliant with the law, not merely a hearer
 
 > **James 1:22-23** -  But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. (ESV)
@@ -8860,6 +8851,15 @@ escape sinful thoughts and practices, and to
 behave in a way that approaches God's will for
 us to love Him with all our heart, soul, mind
 and strength, and our neighbour as ourself.
+
+
+## We should observe the law - but be a doer, and avoid judging others with the law
+
+> **Matthew 23:2-7** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
+
+-   **Sermon:** [How Preachers Grow Graceless - YouTube](https://www.youtube.com/watch?v=alOI2zxIPgc)
+
+> **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
 
 
 # Mosaic Law, and progressing from having hope in Moses to having hope in Jesus
@@ -10256,7 +10256,7 @@ One must have faith to receive the gift of salvation.
 
 > **Mark 11:22** - And Jesus answered them, **Have faith in God.**
 
-The basic Faith-in-God equation is `Believing-God * Obedience/Action/Work/Love/PatientEndurance`.
+I like to think about faith in God as an equation like: `Believing-God * Obedience/Action/Work/Love/PatientEndurance`.
 
 > **Mark 11:23** - Truly, I say to you, whoever **says to this mountain, Be taken up and thrown into the sea**, and **does not doubt in his heart**, but believes that what he says **will come to pass**, it will be done for him.
 
