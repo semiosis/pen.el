@@ -16,6 +16,8 @@ if ! stdin_exists; then
     exec < <(printf -- "%s" "$argstr")
 fi
 
+# options such as -d are passed to rosie-urls
+
 {
     # e:$HOME/blog/posts/thy-kingdom-come.org
     sed 's%< youtube \([^ ]\+\) >%https://www.youtube.com/watch?v=\1%'
