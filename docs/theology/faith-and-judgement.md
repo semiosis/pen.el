@@ -790,6 +790,7 @@ These should really go hand in hand:
 -   Believing in Jesus Christ for His finished work to receive justification and eternal life and remain in relationship with Father God and with Jesus
 -   Obeying Jesus Christ (repenting from sin, loving God and your neighbour) to be saved from the wrath of God should really go hand-in-hand.
     -   [Toss Me in the Water - YouTube @time: 3 min 37 sec](https://youtube.com/watch?v=h_HbG0zROW8&t=217)
+    -   [youtube.com: Live Like You Belong in Heaven: Philippians 3:18-21, Part 7](https://www.youtube.com/watch?v=psOxlnZCQQA)
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
@@ -6885,7 +6886,7 @@ We're not being saved by our works - we've already been redeemed, but we do work
 
 Christianity is a relationship, like a marriage:
 
--   Acceptance comes at the beginning
+-   Acceptance comes at the beginning (like a kingdom marriage proposal)
 -   It's not a merit-based religion
 
 The Holy Spirit still goes to those who obey Jesus:
@@ -10263,6 +10264,15 @@ We must obey Jesus.
 > **Philippians 3:8-17** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. **Let those of us who are mature think this way**, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. (ESV)
 
 
+### Don't be an enemy of the cross to others - Don't allow enemies of the cross to deter you
+
+We must be thinking as a person of Heaven.
+
+-   [youtube.com: Live Like You Belong in Heaven: Philippians 3:18-21, Part 7](https://www.youtube.com/watch?v=psOxlnZCQQA)
+
+> **Philippians 3:18-21** - For many, of whom I have often told you and now tell you even with tears, walk as enemies of the cross of Christ. Their end is destruction, their god is their belly, and they glory in their shame, with minds set on earthly things. But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ, who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
+
+
 ## Pray for others to come into Jesus' Kingdom
 
 -   [Ducklings vs. Stairs - YouTube](https://www.youtube.com/watch?v=JHy6bBKu0j4)
@@ -11371,7 +11381,11 @@ The peace Jesus brings is peace in Christ:
 
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
-[This Fierce Battle You're Facing - YouTube](https://www.youtube.com/watch?v=0XB_lNr3TXw)
+-   [This Fierce Battle You're Facing - YouTube](https://www.youtube.com/watch?v=0XB_lNr3TXw)
+
+And the spiritual attack has been awful - this person knows it:
+
+-   [Do not be angry. God said, "It had to happen." #propheticword - YouTube @time: 5 min 52 sec](https://youtube.com/watch?v=bA7LBhO7Q_E&t=352)
 
 
 # The Kingdom of God
@@ -12325,6 +12339,17 @@ I believe that what this says is that at the point Jesus knows you listen to His
 A Psalm of David:
 
 > **Psalms 23:1-6** - The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He leads me in paths of righteousness for his name's sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows. Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever.
+
+
+## The voice of Truth
+
+> **John 18:37** - Then Pilate said to him, So you are a king? Jesus answered, You say that I am a king. For this purpose I was born and for this purpose I have come into the world—to bear witness to the truth. Everyone who is of the truth listens to my voice. (ESV)
+
+> **John 10:27-28** - My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. (ESV)
+
+> **John 15:20** - Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
+
+> **I John 4:6** - We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. (ESV)
 
 
 # Marriage
