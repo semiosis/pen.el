@@ -3933,6 +3933,8 @@ I still profess that Jesus Christ is the Only-Begotten Son of God who has procee
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
 
+And even up till now I still am seeking irrefutable personal assurance of God's justification beyond the unseen evidence I already hold out for by faith in God, and the faith in the promises of God written in Scripture that say I am justified for my faith in Jesus.
+
 Not everything I have had in my dreams is against the truth. For example, recently I heard this in a dream:
 
 > **I John 4:19** - We love because he first loved us. (ESV)
@@ -19346,7 +19348,32 @@ Consider St Polycarp:
 
 I had to sacrifice the marriage proposal I made being born again in order to not put her in first place, and also to abide by Christ's law because selfish agape is no agape at all and love comes from God, and it's because God loved us first that we love, and whatever is not done in faith is sin and without the type of love Jesus showed us, faith is dead. And this is challenging ask but it's what God asks of us.
 
-And even up till now I still am seeking irrefutable personal assurance of God's justification beyond the unseen evidence I already hold out for by faith in God, and the faith in the promises of God written in Scripture that say I am justified for my faith in Jesus.
+Required to satisfy the "Christ's love" criteria I believe are:
+
+-   Our first agape love has to be Jesus
+-   We love because God loved us first. We ought to love others because we have been loved by God
+-   We forgive out of a loving response to God and to others, knowing we have already been forgiven of our debt
+-   It must satisfy Christ's law
+
+Our first agape love has to be Jesus:
+
+> **Revelation of John 2:1-5** - “To the angel of the church in Ephesus write: The One who holds the seven stars in His right hand, the One who walks among the seven golden lampstands, says this: ‘I know your deeds and your toil and perseverance, and that you cannot tolerate evil men, and you put to the test those who call themselves apostles, and they are not, and you found them to be false; and you have perseverance and have endured for My name’s sake, and have not grown weary. But I have this against you, that you have left your first (G4413 protos) love (G26 **agape**). Therefore remember from where you have fallen, and repent and do the deeds you did at first; or else I am coming to you and will remove your lampstand out of its place&#x2013;unless you repent. (NASB)
+
+Our love is in response to Christ having loved us first:
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
+> **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
+
+I am a new creation:
+
+> **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+
+> -   **In anticipation of any spiritual backlash I will leave the following disclaimer:** In Jesus Christ's name I rebuke any spirit which tries to put the old issues of the past (before I was born-again on 2 April 2022) back on to me. I am a new Creation in Christ Jesus ever since I was born-again and regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). As I understand it, as of then I had a completely clean record. On top of that there is no condemnation for those in Christ Jesus. Yes teh Apostle John says that we ought to pass-forward love as a response, but I also have the right to move on completely from things which did not work out, and I offer that same right to others as well.
+
+> **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
