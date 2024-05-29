@@ -19340,14 +19340,18 @@ I just say this in order to describe the events leading up to being born-again, 
 
 God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and following Jesus became the most important thing.
 
-On I had a meeting with the Holy Spirit out body, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I pleaded guilty in court.
+On I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I pleaded guilty in court.
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
-Immediately before I had that out of body meeting with the Holy Spirit, I had come to my wits end after doing everything I could in April and May, writing to my pastor Philip, I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing.
+Immediately before I had that out-of-body meeting with the Holy Spirit, I had come to the end of myself after doing everything I could in April, writing to my pastor Philip.
 
-I prayed earnestly in tears to marry the person I ended up proposing to.
-Certainly, I felt as though I was carving out a piece of my heart. Because I was obedient to God after being born-again, and I then had a prayer request.
+Because I was trying to be obedient to God after being born-again, and I then had a prayer request after I considered I had become burnt out from going "all out for God", having given God my first fruits of being born-again for a full month.
+
+I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing in prayer and it was me crying to God saying I have given Him everything but I don't have any love in my life and it was taken from me, then in my heart I accepted that I would see her again - you could call it faith, or deluding myself on purpose in order that I would be able to sleep, and I felt immediately better afterwards. That's how it happened for the record.
+
+I felt as though I was carving out a piece of my heart because it felt as if I had said to God in my heart that I could only be happy while I held faith that I'd see her again.
+
 If I recall correctly, that was the night **before** May 3.
 
 Still in May 2022 around Pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
@@ -19414,6 +19418,11 @@ I am a new creation:
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
 > **Matthew 24:9** - Then they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake. (ESV)
+
+Now I'm saying that it's all in God's hands, and I've put Jesus in my life, and I feel like I have a good conscience with God, and I have been acting in both my own truth and also, legally by God, to my best understanding.
+
+I still seek a personal acknowledgement from God that I have acted faithfully to Him!
+We're always seeking God's justification - but we live by faith in Christ Jesus, in belief to His promises and in obedience to His commandments.
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
