@@ -268,6 +268,18 @@ born-again of the Spirit, because this is the way it happened with me, and it's 
 
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
+The Hebrew has two words for 'helper'. The word which the greek in **John 14** refers to I believe is the Saviour one:
+
+    1  מוֹשִׁיעַ
+    2  savior, deliverer, helper, saviour
+
+But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assistant!:
+
+    1  עוֹזֵר
+    2  assistant, aide, helper, second
+
+> **Genesis 2:18** - Then the Lord (H3068 Yhovah) God (H430 'elohiym) said (H559 'amar), “It is not good (H2896 towb) for the man (H120 'adam) to be alone (H905 bad); I will make (H6213 \`asah) him a helper (H5828 \`ezer) suitable (H5048 neged) for him.”
+
 
 ### The importance of loving one another
 
@@ -12444,6 +12456,18 @@ or a [spouse can be an idol](https://www.youtube.com/watch?v=o3pFwQPu2EA), and i
 I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still [not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ](https://www.youtube.com/watch?v=EYJgSI6Jbfs&ab_channel=TommiLorraine):
 
 > **Luke 14:26** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+
+The Hebrew has two words for 'helper'. The word which the greek in **John 14** refers to I believe is the Saviour one:
+
+    1  מוֹשִׁיעַ
+    2  savior, deliverer, helper, saviour
+
+But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assistant!:
+
+    1  עוֹזֵר
+    2  assistant, aide, helper, second
+
+> **Genesis 2:18** - Then the Lord (H3068 Yhovah) God (H430 'elohiym) said (H559 'amar), “It is not good (H2896 towb) for the man (H120 'adam) to be alone (H905 bad); I will make (H6213 \`asah) him a helper (H5828 \`ezer) suitable (H5048 neged) for him.”
 
 Jesus saved me from a bad situation and I just want those who come to read this or hear my testimony to come to know the Lord Jesus for themself.
 
