@@ -5429,6 +5429,10 @@ We must love (not just any way you believe it's defined) but in the same way tha
 
 > **John 13:34** - A new commandment I give to you, that you **love one another: just as I have loved you**, you also are to love one another. (ESV)
 
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
 
 ### Christians are not <ins>under</ins> the Mosaic law because **we are under Christ's law**, but we don't despise the Torah, nor annul it, nor teach others to annul it
 
@@ -19295,9 +19299,17 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 
 When I was attempting to prove that agape-love
 should be the basis of a romantic
-relationship, I would receive persecution. But in all fairness, at this time I didn't have a relationship with God.
+relationship, I would receive persecution. But in all fairness, at this time I didn't have a relationship with God that involved following Christ's law.
 
-And I gave up with it because there was no mutual feeling, and for Christ's law.
+We must love (not just any way you believe it's defined, not even merely with love) but in the same way that Jesus loved us - self-sacrificially, following Christ's law:
+
+> **John 13:34** - A new commandment I give to you, that you **love one another: just as I have loved you**, you also are to love one another. (ESV)
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love because he first loved us. (ESV)
+
+And I gave up with seeking a romantic relationship with it because there was no mutual feeling, and for Christ's law. Agape love puts others before themselves.
 
 At the time I was trying to keep Jesus' commandments and I was also trying to fulfill a desire which only Jesus can fill.
 
@@ -19321,15 +19333,20 @@ After I was born-again I decided that Jesus was the most important thing and I b
 Keeping with obedience to Jesus Christ's commandments is very challenging when the world opposes you.
 
 I do not say I have done this perfectly, but I record this because I want to explain what obedient faith looks like.
+
 It looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
+
 The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life.
+
 What I mean to say is that, I think God is still justified in giving only enough grace to save the person's soul, while allowing them to be put to death for a response of obedience to Him.
 
 Consider St Polycarp:
 
 -   [en.wikipedia.org: Polycarp - Wikipedia](https://en.wikipedia.org/wiki/Polycarp)
 
-Even up till now I still am seeking irrefutable personal assurance of God's justification beyond the unseen evidence I already hold out for by faith in God, and the faith in the promises of God written in Scripture that say I am justified for my faith in Jesus.
+I had to sacrifice the marriage proposal I made being born again in order to not put her in first place, and also to abide by Christ's law because selfish agape is no agape at all and love comes from God, and it's because God loved us first that we love, and whatever is not done in faith is sin and without the type of love Jesus showed us, faith is dead. And this is challenging ask but it's what God asks of us.
+
+And even up till now I still am seeking irrefutable personal assurance of God's justification beyond the unseen evidence I already hold out for by faith in God, and the faith in the promises of God written in Scripture that say I am justified for my faith in Jesus.
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
