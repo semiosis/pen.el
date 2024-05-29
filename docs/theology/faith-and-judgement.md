@@ -19299,13 +19299,28 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 
 God renewed me when I was born-again of the Spirit.
 
-When I was practicing agape-love, I would receive persecution. When I tried to follow Jesus, I would receive extreme resistance. I was trying to keep Jesus' commandments.
+When I was attempting to prove that agape-love should be the basis of a romantic relationship, I would receive persecution.
+When I tried to follow Jesus, I would receive extreme resistance. I was trying to keep Jesus' commandments.
 
-God made me born-again and filled me with the
-Holy Spirit and made me into an overcomer, but after this happened
-I decided to sow my own life for Jesus' sake
-after being born-again out of obedience to
-Jesus, just continuing to practice His commandments - everything from repentance to giving to those who beg me.
+I say this not for my own glory but in order to describe the events leading up to being born-again, for the sake of others.
+
+God made me born-again/regenerated me on [2 April](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/),
+I still am seeking personal assurance of God's justification beyond what I hold out faith for in Scripture.
+
+After I was born-again I decided to sow my own
+life for Jesus' sake, in keeping with
+obedience to Jesus Christ's commandments, and
+also simply out of natural desire to do no
+harm to the person who I had asked to marry.
+
+I do not say I have done this perfectly, but I record this because I want to explain what obedient faith looks like.
+It looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
+The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life.
+What I mean to say is that, I think God is still justified in giving only enough grace to save the person's soul, while allowing them to be put to death for a response of obedience to Him.
+
+Consider St Polycarp:
+
+-   [en.wikipedia.org: Polycarp - Wikipedia](https://en.wikipedia.org/wiki/Polycarp)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
