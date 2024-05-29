@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  29 MAY 2024 16:23
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  29 MAY 2024 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1483,35 +1483,36 @@ Overfull \hbox (110.33736pt too wide) in paragraph at lines 25266--25267
 
 [466] [467] [468] [469] [470] [471] [472] [473] [474] [475] [476] [477]
 [478] [479] [480] [481] [482] [483] [484] [485] [486] [487] [488] [489]
-[490]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 26688--26689
+[490] [491]
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 26726--26727
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
-[491] [492] [493] [494]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 26960--26960
+[492] [493] [494] [495]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 27002--27002
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
-[495]
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 26960--26960
+
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 27002--27002
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
 
-Overfull \hbox (55.84486pt too wide) in paragraph at lines 26972--26972
+Overfull \hbox (55.84486pt too wide) in paragraph at lines 27014--27014
 []\TU/lmtt/m/n/10.95 7  Nevertheless, I live to serve You, God, and to be confo
 rmed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26993.
 [496]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26993.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27035.
+ [497]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27035.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 26993.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26993
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27035.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27035
 .
 
 
@@ -1525,7 +1526,7 @@ Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26993.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27035.
  ) 
 Here is how much of TeX's memory you used:
  10930 strings out of 494868
@@ -1536,4 +1537,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  28i,9n,45p,6286b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./faith-and-judgement.pdf (496 pages).
+Output written on ./faith-and-judgement.pdf (497 pages).

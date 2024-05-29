@@ -19301,7 +19301,12 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 
 When I was attempting to prove that agape-love
 should be the basis of a romantic
-relationship, I would receive persecution. But in all fairness, at this time I didn't have a relationship with God that involved following Christ's law.
+relationship, I would receive persecution.
+
+But in all fairness, at this time I didn't
+have a relationship with God that involved
+following Christ's law - I had not learned yet
+to follow Jesus, nor did I know Jesus.
 
 We must love (not just any way you believe it's defined, not even merely with love) but in the same way that Jesus loved us - self-sacrificially, following Christ's law:
 
@@ -19311,32 +19316,55 @@ We must love (not just any way you believe it's defined, not even merely with lo
 
 > **I John 4:19** - We love because he first loved us. (ESV)
 
-And I gave up with seeking a romantic relationship with it because there was no mutual feeling, and for Christ's law. Agape love puts others before themselves.
+And I gave up on seeking a romantic
+relationship with that person because there was definitely no
+mutual feeling.
 
 At the time I was trying to keep Jesus' commandments and I was also trying to fulfill a desire which only Jesus can fill.
 
-But then I was very surprised to meet someone
+But then I was very surprised to meet someone else
 who I simply felt at total peace with being around,
 someone who I thought also didn't hate me,
 after struggling for years having romantic
 feelings for people who didn't have any
 affection for me at all.
 
-And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el for the course of 2021.
+And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el before it was Bible Study software for the course of 2021.
+
+> **Psalms 127:1** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
 I just say this in order to describe the events leading up to being born-again, for the sake of others so they may know how God saved me.
 
 
 ## Being born-again / being regenerated of Spirit
 
-God made me born-again/regenerated me on [2 April](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and later gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/),
+God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and following Jesus became the most important thing.
+
+On I had a meeting with the Holy Spirit out body, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on [3 May 2023](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) when I pleaded guilty in court.
+
+Still in May 2022 around pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
+
+One year later I pleaded guilty on Easter. There was absolutely no grace in the court process.
+
+> **Matthew 10:18** - and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
 
 After I was born-again I decided that Jesus was the most important thing and I began following Jesus, and learning to live by Christ's law.
-Keeping with obedience to Jesus Christ's commandments is very challenging when the world opposes you.
 
-I do not say I have done this perfectly, but I record this because I want to explain what obedient faith looks like.
+I made the proposal during this time.
 
-It looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
+> **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. (ESV)
+
+Keeping with obedience to Jesus Christ's commandments is very challenging as the world opposes those who Christ has selected.
+
+> **John 15:19** - If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. (ESV)
+
+I personally believe that fulfilling Christ's law means doing no harm to your neighbour and pleading guilty does the least damage. Where pleading not guilty on easter would be not carrying my cross, and would be like the unforgiving servant:
+
+> **Matthew 18:21-35** - Then Peter came up and said to him, Lord, how often will my brother sin against me, and I forgive him? As many as seven times? Jesus said to him, I do not say to you seven times, but seventy times seven. Therefore the kingdom of heaven may be compared to a king who wished to settle accounts with his servants. When he began to settle, one was brought to him who owed him ten thousand talents. And since he could not pay, his master ordered him to be sold, with his wife and children and all that he had, and payment to be made. So the servant fell on his knees, imploring him, Have patience with me, and I will pay you everything. And out of pity for him, the master of that servant released him and forgave him the debt. But when that same servant went out, he found one of his fellow servants who owed him a hundred denarii, and seizing him, he began to choke him, saying, Pay what you owe. So his fellow servant fell down and pleaded with him, Have patience with me, and I will pay you. He refused and went and put him in prison until he should pay the debt. When his fellow servants saw what had taken place, they were greatly distressed, and they went and reported to their master all that had taken place. Then his master summoned him and said to him, You wicked servant! I forgave you all that debt because you pleaded with me. And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
+
+I do not say I have done this perfectly, but I record this because I want to explain what obedient faith looks like, and to show that I simply meant no harm at all but I was simply born-again and I come against any spirit which ties to oppose that fact in Jesus Christ's name, and in Jehovah's name.
+
+Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
 
 The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life.
 
@@ -19374,6 +19402,8 @@ I am a new creation:
 > -   **In anticipation of any spiritual backlash I will leave the following disclaimer:** In Jesus Christ's name I rebuke any spirit which tries to put the old issues of the past (before I was born-again on 2 April 2022) back on to me. I am a new Creation in Christ Jesus ever since I was born-again and regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). As I understand it, as of then I had a completely clean record. On top of that there is no condemnation for those in Christ Jesus. Yes teh Apostle John says that we ought to pass-forward love as a response, but I also have the right to move on completely from things which did not work out, and I offer that same right to others as well.
 
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
+
+> **Matthew 24:9** - Then they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake. (ESV)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
