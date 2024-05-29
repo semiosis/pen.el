@@ -1076,7 +1076,7 @@ God loved us first. We must accept that.
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 > **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
@@ -1649,7 +1649,7 @@ In response to forgiveness, we must love:
 
 He loved us first, and that is why we love:
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 We should have a loving response to God for Him having saved us. It certainly appears that not having a loving/obedient/thankful response to God for His mercy, we may miss out on 'entering into the joy of our master':
 
@@ -2007,7 +2007,7 @@ And I believe too that we must arrive at willing to do the will of God:
 
 Jesus loved us before we loved Him:
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 If someone obeys Jesus they should arrive at belief in Jesus and who He is and what He has accomplished; they should accept Him:
 
@@ -3944,7 +3944,7 @@ And even up till now I still am seeking irrefutable personal assurance of God's 
 
 Not everything I have had in my dreams is against the truth. For example, recently I heard this in a dream:
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 Therefore, I will continue to endeavour to keep Jesus' commandments:
 
@@ -5440,7 +5440,7 @@ We must love (not just any way you believe it's defined) but in the same way tha
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 
 ### Christians are not <ins>under</ins> the Mosaic law because **we are under Christ's law**, but we don't despise the Torah, nor annul it, nor teach others to annul it
@@ -7179,7 +7179,7 @@ Justified i.e. has faith:
     -   Obedient to Jesus
     -   The finished work of Jesus covers them
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 Probably not justified i.e. without faith:
 
@@ -9752,7 +9752,7 @@ In response to forgiveness, we must love:
 
 He loved us first, and that is why we love:
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 
 ## We must love Jesus
@@ -13185,7 +13185,7 @@ God loved us first. We must accept that.
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 Abiding in Christ, one abides in God.
 
@@ -19304,16 +19304,19 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
 
-## 1 year before I was born-again of the Spirit
+## 2020 (About 1 and a bit years before I was born-again of the Spirit)
 
-When I was attempting to prove that agape-love
-should be the basis of a romantic
-relationship, I would receive persecution.
+I was attempting to prove that "faithful, truthful, unconditional" love
+should be the basis of a romantic relationship, and I would receive persecution for it.
 
-But in all fairness, at this time I didn't
-have a relationship with God that involved
-following Christ's law - I had not learned yet
-to follow Jesus, nor did I know Jesus.
+But in all fairness, at this time **I still didn't have a relationship with God** that involved following Christ's law - I had not learned yet
+to follow Jesus, nor did I know Jesus yet, at least not very well.
+
+I gave up on seeking a romantic
+relationship with that person because there was definitely no
+mutual feeling from them.
+
+At the time I was just beginning to learn to keep Jesus' commandments but I was also trying to fulfill a desire which only Jesus can fill, and I had not died.
 
 We must love (not just any way you believe it's defined, not even merely with charity) but in the same way that Jesus loved us - self-sacrificially, impartially, following Christ's law (bearing one another's burdens) and in a response to having been loved already:
 
@@ -19321,35 +19324,33 @@ We must love (not just any way you believe it's defined, not even merely with ch
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
-And I gave up on seeking a romantic
-relationship with that person because there was definitely no
-mutual feeling.
-
-At the time I was trying to keep Jesus' commandments and I was also trying to fulfill a desire which only Jesus can fill.
-
-But then I was very surprised to meet someone else
+Then I was amazed surprised to meet someone else
 who I simply felt at total peace with being around,
 someone who I thought also didn't hate me,
 after struggling for years having romantic
 feelings for people who didn't have any
 affection for me at all.
 
-And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el before it was Bible Study software for the course of 2021.
+And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el when it was AI software (before it was Bible Study software) for the course of 2021.
 
 > **Psalms 127:1** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
-I just say this in order to describe the events leading up to being born-again, for the sake of others so they may know how God saved me.
+I just say this in order to describe the events leading up to being born-again, for the sake of others, and so they may know how God saved me, as this is my testimony of being born-again.
 
 
 ## Being born-again / being regenerated of Spirit
 
 God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and following Jesus became the most important thing.
 
-On I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I pleaded guilty in court.
+On I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
+
+Despite being born-again, we must sow our own life for Jesus' sake:
+
+> **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
 
 Immediately before I had that out-of-body meeting with the Holy Spirit, I had come to the end of myself after doing everything I could in April, writing to my pastor Philip.
 
@@ -19423,7 +19424,7 @@ Our love is in response to Christ having loved us first:
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
-> **I John 4:19** - We love because he first loved us. (ESV)
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 > **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
