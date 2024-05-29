@@ -19348,7 +19348,17 @@ Immediately before I had that out-of-body meeting with the Holy Spirit, I had co
 
 Because I was trying to be obedient to God after being born-again, and I then had a prayer request after I considered I had become burnt out from going "all out for God", having given God my first fruits of being born-again for a full month.
 
-I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing in prayer and it was me crying to God saying I have given Him everything but I don't have any love in my life and it was taken from me, then in my heart I accepted that I would see her again - you could call it faith, or deluding myself on purpose in order that I would be able to sleep, and I felt immediately better afterwards. That's how it happened for the record.
+I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing in prayer and it was me crying to God saying I have given Him everything but I don't have any love in my life and it was taken from me, then in my heart I accepted that I would see her again - you could call it faith, or deluding myself on purpose in order that I would be able to sleep, and I felt immediately better afterwards.
+
+I actually don't think it was a delusion though. I actually think it's the truth.
+
+> **I Corinthians 13:4-8** - Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, endures all things. Love never ends. As for prophecies, they will pass away; as for tongues, they will cease; as for knowledge, it will pass away. (ESV)
+
+We are commanded to love our wives the way Jesus did.
+
+> **Ephesians 5:25-27** - Husbands, love your wives, as Christ loved the church and gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word, so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish.
+
+That's how it happened for the record.
 
 I felt as though I was carving out a piece of my heart because it felt as if I had said to God in my heart that I could only be happy while I held faith that I'd see her again.
 
@@ -19396,6 +19406,7 @@ Required to satisfy the "Christ's love" criteria I believe are:
 -   We love because God loved us first. We ought to love others because we have been loved by God
 -   We forgive out of a loving response to God and to others, knowing we have already been forgiven of our debt
 -   It must satisfy Christ's law
+-   Acceptance comes at the beginning
 
 Our first agape love has to be Jesus:
 
