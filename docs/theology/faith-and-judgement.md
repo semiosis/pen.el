@@ -19308,7 +19308,7 @@ have a relationship with God that involved
 following Christ's law - I had not learned yet
 to follow Jesus, nor did I know Jesus.
 
-We must love (not just any way you believe it's defined, not even merely with love) but in the same way that Jesus loved us - self-sacrificially, following Christ's law:
+We must love (not just any way you believe it's defined, not even merely with charity) but in the same way that Jesus loved us - self-sacrificially, impartially, following Christ's law (bearing one another's burdens) and in a response to having been loved already:
 
 > **John 13:34** - A new commandment I give to you, that you **love one another: just as I have loved you**, you also are to love one another. (ESV)
 
@@ -19340,17 +19340,21 @@ I just say this in order to describe the events leading up to being born-again, 
 
 God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and following Jesus became the most important thing.
 
-On I had a meeting with the Holy Spirit out body, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on [3 May 2023](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) when I pleaded guilty in court.
+On I had a meeting with the Holy Spirit out body, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I pleaded guilty in court.
+
+> **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
 Still in May 2022 around pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
 
-One year later I pleaded guilty on Easter. There was absolutely no grace in the court process.
+One year later on 3 May 2023 I pleaded guilty on Easter, and I pleaded guilty in full knowledge that God is watching and knows my innermost thoughts and the fruit of the Spirit while lawful do not justify me. I must carry my cross and make testimony of Jesus and follow Christ's law.
+
+There was absolutely no grace in the court process. I decided to just use it as an opportunity to bear witness of Jesus Christ:
 
 > **Matthew 10:18** - and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
 
 After I was born-again I decided that Jesus was the most important thing and I began following Jesus, and learning to live by Christ's law.
 
-I made the proposal during this time.
+I made the proposal during this time. I received a dream on [6 Aug](https://en.wikipedia.org/wiki/Feast_of_the_Transfiguration), which happened to be the Feast of Transfiguration, I found out a year or so later, and made the proposal on 10 Aug, which is the 222 day of 2022, at 2:22pm. Honestly, at the time I just thought it sounded memorable and I wanted it to be. Go figure!
 
 > **Galatians 5:18** - But if you are led by the Spirit, you are not under the law. (ESV)
 
