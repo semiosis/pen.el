@@ -10,6 +10,8 @@
     ("👎" "thumbs down sign")
     ("👎" "thumbs down")
     ("🤔")
+    ("😆" "laughing")
+    ("😂" "tears of joy")
     ("🙄" "Face With Rolling Eye")
     ("🖖" "Vulcan salute")
     ("💫" "Dizzy")

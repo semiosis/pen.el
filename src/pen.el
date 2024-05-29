@@ -2377,6 +2377,7 @@ May use to generate code from comments."
 (require 'pen-metacognition)
 (require 'pen-dap)
 (require 'pen-solidity)
+(require 'pen-emojiis)
 (require 'pen-cacheit)
 (require 'pen-ii)
 (require 'pen-hymnal)

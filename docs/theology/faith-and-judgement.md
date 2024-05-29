@@ -151,6 +151,12 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
+We learn Christ, and are taught by Christ (becoming obedient to His teachings and commandments) while we are **in** Him:
+
+> **Ephesians 4:20-21** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
+
+Therefore, even before I was born-again of the Spirit, as I was endeavoring to practice Jesus' commandments, Jesus must have been already working in me.
+
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
 > **Ephesians 4:12-13** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
@@ -230,7 +236,7 @@ If you want to really get to know someone then you would learn to walk in their 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
 
-### That's because God gives us a new spirit to obey Him
+### We overcome the world with a new spirit God has given us to wait and trust on Him and obey Him
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
@@ -259,6 +265,18 @@ I believe that belief and obedience to Jesus naturally comes
 **before** being born-again of the Spirit, but
 that obedience is much easier **after** being
 born-again of the Spirit, because this is the way it happened with me, and it's also scriptural.
+
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
+
+God renewed me when I was born-again of the Spirit.
+
+When I was practicing agape-love, I would receive persecution. When I tried to follow Jesus, I would receive extreme resistance. I was trying to keep Jesus' commandments.
+
+God made me born-again and filled me with the
+Holy Spirit and made me into an overcomer, but after this happened
+I decided to sow my own life for Jesus' sake
+after being born-again out of obedience to
+Jesus, just continuing to practice His commandments - everything from repentance to giving to those who beg me.
 
 
 ### The importance of loving one another
@@ -332,7 +350,7 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 
 ### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
 
-> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 
 ## Our will should be for God's will to be done, and to will to do God's will
@@ -1151,7 +1169,7 @@ We get out of the way everything that is an obstacle to enjoying God when we are
 
 ### The point of justification - we rejoice in the hope of the glory of God
 
-[God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
+-   **Sermon:** [John Piper: God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
 
 > **Romans 5:1-2** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, <ins>and we rejoice in hope of the glory of God.</ins> (ESV)
 
@@ -1755,7 +1773,7 @@ I agree whole heartedly with John Piper here:
 
 If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
 
-> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
 The above definitely indicates that we should try to keep Jesus Christ's commandments even before receiving the Holy Spirit.
 
@@ -3199,7 +3217,7 @@ So to receive the Holy Spirit:
 
 ### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
 
-> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 
 ### Teaching us, leading us into the Truth
@@ -3430,7 +3448,7 @@ And the Holy Spirit helps us to follow His teaching:
 
 Those who seek to know Jesus, following His commandments, may receive His Spirit:
 
-> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 
 ### We have to believe in and obey Jesus. We all fall short but we still must have faith in Jesus
@@ -3949,7 +3967,7 @@ As we abide in the Word of God and are sanctified in the Truth, our spiritual ey
 
 Also, the Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us, and eventually will be **in** us:
 
-> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:16-21** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 Also, it's important to purify ourselves, as we hope in Him:
 
@@ -5294,6 +5312,8 @@ The same Apostle Paul wrote these:
 
 > **Romans 5:9** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
+-   **Song:** [Lord, I Lift Your Name On High - Petra {Backtrack no guitar?} - YouTube](https://www.youtube.com/watch?v=P_fksm-Lbec)
+
 **The way** that Jesus went is the way that we go. [The new and living way is the Jesus way](https://youtu.be/cAsTwftk0OE?t=485):
 
 -   self denial
@@ -5301,8 +5321,6 @@ The same Apostle Paul wrote these:
 -   obedience
 -   sacrifice
 -   death
-
--   [Lord, I Lift Your Name On High - Petra {Backtrack no guitar?} - YouTube](https://www.youtube.com/watch?v=P_fksm-Lbec)
 
 We are sanctified by the Father in the way that Jesus was made perfect.
 We are made perfect the same way He was made perfect, by the sufferings that come through obedience to God's will.
@@ -7690,7 +7708,7 @@ We must love in the same **way** Jesus has loved us - sacrificially, obedient to
 
 > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
 
-> **John 14:15-21** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+> **John 14:15-21** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
 
@@ -12561,7 +12579,69 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 Not that I was or am perfect.
 
 
-### But gay 'marriage' should not be held in equal standing to God's design
+### I was learning Christ before I was born-again
+
+We learn Christ, and are taught by Christ (becoming obedient to His teachings and commandments) while we are **in** Him:
+
+> **Ephesians 4:20-21** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
+
+Therefore, even before I was born-again of the Spirit, as I was endeavoring to practice Jesus' commandments, Jesus was already working in me. I say this for other's understanding.
+
+While the Scriptures says that we are born of God when we believe (I've been attending church my whole life, and baptised at 16 years old - 15-17), I was born-again/regenerated of the Spirit much later (when I was 37). Does that mean I hadn't truly believed until I was 37? Perhaps in a way. I had became disillusioned with AI in 2021 I began seeking after God, and then I got born-again. The Holy Spirit must have been working in my life before I was [born-again of the Spirit in this way](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). Holy Spirit must have been dwelling **with** me even before He was **in** me:
+
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
+
+> **I John 5:1** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him.
+
+Through beginning to have patient endurance and resisting the world, and beginning to follow Jesus, God made me born-again of the Spirit. The faith which overcomes the world involves obedience:
+
+> **I John 5:4** - For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world-our faith.
+
+Sadly, I have been attacked a lot even after being born of God. So this confuses me. I certainly actively avoid sinning, but I have been attacked by the enemy a lot after being regenerated.
+
+> **I John 5:18** - We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him.
+
+I affirm the way I learned Christ was through trying hard to be faithful to Jesus in private - seeking glory from God who can see me, even when others can't.
+
+> **Ephesians 4:18-20** - They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart. They have become callous and have given themselves up to sensuality, greedy to practice every kind of impurity. But that is not the way you learned Christ!— (ESV)
+
+But the yoke of the Lord Jesus has been extremely difficult.
+
+
+### Holiness - J.C. Ryle
+
+> Holiness:
+> 
+> -   The habit of being of one mind with God, according as we find His mind described in Scripture:
+>     -   It is the habit of agreeing in God's judgment, hating what He hates, loving
+>         what He loves, and measuring everything in this world by the standard of
+>         His Word. He who most entirely agrees with God, he is the most holy man.
+> -   endeavor to shun every known sin and to keep every known commandment.
+> -   strive to be like our Lord Jesus Christ
+> -   follow after meekness, patience, gentleness, patience, kind tempers,
+>     government of his tongue. He will bear much, forbear much, overlook much and
+>     be slow to talk of standing on his rights
+> -   follow after temperance and self&#x2013;denial. He will labor to mortify the
+>     desires of his body, to crucify his flesh with his affections and lusts, to
+>     curb his passions, to restrain his carnal inclinations
+> -   follow after charity and brotherly kindness
+> -   follow after a spirit of mercy and benevolence towards others
+> -   follow after purity of heart. He will dread all filthiness and uncleanness of
+>     spirit, and seek to avoid all things that might draw him into it
+> -   follow after the fear of God. I do not mean the fear of a slave, who only
+>     works because he is afraid of punishment and would be idle if he did not
+>     dread discovery
+> -   follow after humility. He will desire, in lowliness of mind, to esteem all
+>     others better than himself
+> -   follow after faithfulness in all the duties and relations in life. He will
+>     try, not merely to fill his place as well as others who take no thought for
+>     their souls, but even better, because he has higher motives and more help
+>     than they
+> -   follow after spiritual&#x2013;mindedness. He will endeavor to set his affections
+>     entirely on things above and to hold things on earth with a very loose hand.
+
+
+### Gay 'marriage' should not be held in equal standing to God's design
 
 > **Isaiah 6:20** - Woe to those who call evil good, and good evil; Who substitute darkness for light and light for darkness; Who substitute bitter for sweet and sweet for bitter!
 
@@ -13971,7 +14051,7 @@ And that if a person begins to repent and actually seek God then the Holy Spirit
 
 If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
 
-> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
 Belief in Jesus comes first but receiving **the Holy Spirit** and baptism may happen in any order after that.
 
@@ -17977,7 +18057,7 @@ When we hear Jesus' voice, we must open the door. We have free will to receive o
 
 If you keep Jesus' commandments then the Spirit of Truth will come to you, and help you, and be in you. If we obey Jesus, the Holy Spirit helps us, even before He's inside us:
 
-> **John 14:15-17** - If you love me, you will **keep my commandments.  And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
 Since the Holy Spirit dwells **with** us even before He is **in** us, I do understand that the Holy Spirit may seem to be more force-like before the Holy Spirit dwells inside and we know Him as a person.
 
@@ -19215,6 +19295,18 @@ I had begun speaking out against evil and I had begun repenting from my evil dee
 > inclined by nature to serve their own will and
 > desires and reject his rule.
 
+> **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
+
+God renewed me when I was born-again of the Spirit.
+
+When I was practicing agape-love, I would receive persecution. When I tried to follow Jesus, I would receive extreme resistance. I was trying to keep Jesus' commandments.
+
+God made me born-again and filled me with the
+Holy Spirit and made me into an overcomer, but after this happened
+I decided to sow my own life for Jesus' sake
+after being born-again out of obedience to
+Jesus, just continuing to practice His commandments - everything from repentance to giving to those who beg me.
+
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
 
@@ -19314,7 +19406,7 @@ The Only True God is the [God and Father of Jesus Christ, and Jesus Christ who H
 > **John 17:3** - And this is eternal life, that they know <ins>you the only true God, and Jesus Christ whom you have sent.</ins> (ESV)
 
 What I believe is that everything that is in the 'made' category has been created through Jesus (Yeshua) by Jehovah (Yahweh) God.
-sJesus Christ was not made. He was there with Jehovah in the beginning. He is the Word of God. Jesus is God the Son:
+Jesus Christ was not made. He was there with Jehovah in the beginning. He is the Word of God. Jesus is God the Son:
 
 > **John 1:1-3** - In the beginning was the Word, and <ins>the Word was with God,</ins> and <ins>the Word was God.</ins> He was in the beginning with God. <ins>All things were made through him, and without him was not any thing made that was made.</ins> (ESV)
 
