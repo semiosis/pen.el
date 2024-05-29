@@ -19344,7 +19344,13 @@ On I had a meeting with the Holy Spirit out body, and a dream on [3 May 2022](ht
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
-Still in May 2022 around pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
+Immediately before I had that out of body meeting with the Holy Spirit, I had come to my wits end after doing everything I could in April and May, writing to my pastor Philip, I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing.
+
+I prayed earnestly in tears to marry the person I ended up proposing to.
+Certainly, I felt as though I was carving out a piece of my heart. Because I was obedient to God after being born-again, and I then had a prayer request.
+If I recall correctly, that was the night **before** May 3.
+
+Still in May 2022 around Pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
 
 One year later on 3 May 2023 I pleaded guilty on Easter, and I pleaded guilty in full knowledge that God is watching and knows my innermost thoughts and the fruit of the Spirit while lawful do not justify me. I must carry my cross and make testimony of Jesus and follow Christ's law.
 
@@ -19403,7 +19409,7 @@ I am a new creation:
 
 > **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
 
-> -   **In anticipation of any spiritual backlash I will leave the following disclaimer:** In Jesus Christ's name I rebuke any spirit which tries to put the old issues of the past (before I was born-again on 2 April 2022) back on to me. I am a new Creation in Christ Jesus ever since I was born-again and regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). As I understand it, as of then I had a completely clean record. On top of that there is no condemnation for those in Christ Jesus. Yes teh Apostle John says that we ought to pass-forward love as a response, but I also have the right to move on completely from things which did not work out, and I offer that same right to others as well.
+> -   **In anticipation of any spiritual backlash I will leave the following disclaimer:** In Jesus Christ's name I rebuke any spirit which tries to put the old issues of the past (before I was born-again on 2 April 2022) back on to me. I am a new Creation in Christ Jesus ever since I was born-again and regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). As I understand it, as of then I had a completely clean record. I'm basically 2 years old. On top of that there is no condemnation for those in Christ Jesus. Yes the Apostle John says that we ought to pass-forward love as a response, but I also have the right to move on completely from things which did not work out, and I offer that same right to others as well.
 
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
