@@ -19389,9 +19389,17 @@ I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](h
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
 I did not want to test God by pleading not guilty, especially on Easter.
-Nor does it make sense to challenge someone in court who you want to marry because we are supposed to love our wives as Christ loves His church - self-sacrificially:
+
+Nor does it make sense to challenge someone in court who you want to marry because:
+
+-   **a)** that would be illogical because having love for them I do not want want to hurt them, and
+-   **b)** we are supposed to love our wives as Christ loves His church - self-sacrificially
 
 > **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
+Nor does it make senses to pit old concerns of my pre-born-again life such as "a conviction might make it harder to get a job" up against the needs of the person I want to marry.
+
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
 Despite being born-again, we must sow our own life for Jesus' sake:
 
