@@ -16245,7 +16245,7 @@ Go above and beyond. Forgive:
 
 Love your enemies as well as your friends. Be like Your Heavenly Father. Be perfect:
 
-> **Matthew 5:43-48** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
+> **Matthew 5:43-48** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, **Love your enemies** and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must <ins>be perfect, as your heavenly Father is perfect.</ins> (ESV)
 
 Be perfect as your heavenly Father is perfect:
 
@@ -19388,6 +19388,11 @@ I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](h
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
+I did not want to test God by pleading not guilty, especially on Easter.
+Nor does it make sense to challenge someone in court who you want to marry because we are supposed to love our wives as Christ loves His church - self-sacrificially:
+
+> **I Corinthians 10:9** - We must not put Christ to the test, as some of them did and were destroyed by serpents, (ESV)
+
 Despite being born-again, we must sow our own life for Jesus' sake:
 
 > **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
@@ -19422,15 +19427,27 @@ So I decided to just use it as an opportunity to bear witness of Jesus Christ:
 
 > **Matthew 10:18** - and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
 
-Jesus was led like a lamb to the slaughter. I'm not Jesus, but my experience with court felt a lot like this. I'm an imperfect, fallible person though:
-
-> **Isaiah 53:7** - He was oppressed, and he was afflicted, yet he opened not his mouth; like a lamb that is led to the slaughter, and like a sheep that before its shearers is silent, so he opened not his mouth. (ESV)
-
-Jesus Christ, however, is full of grace and truth:
+Jesus Christ is full of grace and truth:
 
 > **John 1:14** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
 > **John 1:17** - For the law was given through Moses; grace and truth came through Jesus Christ. (ESV)
+
+Jesus was led like a lamb to the slaughter. I'm not Jesus, but my experience with court felt a lot like this. I'm an imperfect, fallible person though:
+
+> **Isaiah 53:7** - He was oppressed, and he was afflicted, yet he opened not his mouth; like a lamb that is led to the slaughter, and like a sheep that before its shearers is silent, so he opened not his mouth. (ESV)
+
+The other party, I never considered to be my adversaries! I only ever held love for them. Spiritually, it's not one side vs another in court but there are external spiritual influences:
+
+> **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
+
+Jesus commands us to love our enemies:
+
+> **Matthew 5:43-48** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, **Love your enemies** and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must <ins>be perfect, as your heavenly Father is perfect.</ins> (ESV)
+
+But they were never my enemies because I never considered them my enemy. I will always love them:
+
+> **Didache 1** - &#x2026; But love those who hate you, and you shall not have an enemy. &#x2026;
 
 After I was born-again I decided that Jesus was the most important thing and I began following Jesus, and learning to live by Christ's law.
 
