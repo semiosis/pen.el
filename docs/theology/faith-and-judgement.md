@@ -19399,9 +19399,15 @@ Nor does it make sense to challenge someone in court who you want to marry becau
 
 Nor does it make senses to pit old concerns of my pre-born-again life such as "a conviction might make it harder to get a job" up against the needs of the person I want to marry.
 
-> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
+And we are called to love with Christ's love impartially, so had the court situation been with different people and with a different charge, Christ's law still applies:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
+
+> **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
 
 Despite being born-again, we must sow our own life for Jesus' sake:
+
+> **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
 > **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
 
