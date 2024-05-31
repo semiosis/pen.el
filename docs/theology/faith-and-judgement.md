@@ -3947,6 +3947,8 @@ Also, I have had as of 28 May '24 in my dreams:
 -   A picture of "Jehovah 🌹" - Jehovah's name with a rose by it, and
 -   A voice which said, "Jesus is God"
 
+[star.net.nz:  The Word for Today - The right balance - May 28th](https://www.star.net.nz/the-word-for-today/-the-right-balance-2024_05_28)
+
 Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God. I will be still waiting for the Biblical acknowledgement.
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
@@ -6517,17 +6519,21 @@ Also, Jesus' own work on the cross is sufficient work for us to be justified by 
 
 > **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
-Jesus bore our sins in His body on the tree so that we **might** die to sin and live to righteousness.
+Jesus bore our sins in His body on the tree so that we **might** die to sin and live to righteousness. We are also supposed to live in the truth and in the love of God, ourselves practicing the love of Christ, and entrust ourselves to God, even when others are lying about us and slandering us.
 
 > **I Peter 2:22-24** - He committed no sin, neither was deceit found in his mouth. When he was reviled, he did not revile in return; when he suffered, he did not threaten, but continued entrusting himself to him who judges justly. He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. (ESV)
 
 You'll be able to see who has been healed by their fruits.
 
+God is still very busy working:
+
+> **John 5:17** - But Jesus answered them, My Father is working until now, and I am working. (ESV)
+
 We are God's workmanship:
 
 > **Ephesians 2:7-10** - so that in the coming ages he might show the immeasurable riches of his grace in kindness toward us in Christ Jesus. For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
 
-We absolutely must have a response of love for God - we must abide in love to abide in God.
+We absolutely must have a response of love for God - we must abide in Christ's love to abide in God.
 
 The redemption in Christ Jesus is a gift, and
 is a substitutionary atonement that is
@@ -14711,6 +14717,12 @@ If you belong to Christ by faith then you are one in spirit with Christ and Abra
 
 > **Galatians 3:29** - And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
 
+A new creation lives for Christ:
+
+> **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
+
+> **Matthew 20:27-28** - and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+
 Jesus Christ's blood is the atonement for our sin.
 
 We should also become obedient to Him - we must have faith in Jesus.
@@ -19208,6 +19220,8 @@ Suffering for Christian obedience, as Christ suffered for His obedience:
 
 > **I Peter 4:16** - Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name.
 
+-   **Sermon:** [youtube.com: John Piper Recites from 1 Peter](https://www.youtube.com/watch?v=2_7tJrTmGxs)
+
 Please your neighbour for their good:
 
 > **Romans 15:2-3** - Let each of us please his neighbor for his good, to build him up. For Christ did not please himself, but as it is written, The reproaches of those who reproached you fell on me.
@@ -19368,7 +19382,9 @@ I just say this in order to describe the events leading up to being born-again, 
 
 God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and following Jesus became the most important thing.
 
-On I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
+> **I John 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
@@ -19400,9 +19416,21 @@ Still in May 2022 around Pentecost, God, gave me an [immersive vision of healing
 
 One year later on 3 May 2023 I pleaded guilty on Easter, and I pleaded guilty in full knowledge that God is watching and knows my innermost thoughts and the fruit of the Spirit while lawful do not justify me. I must carry my cross and make testimony of Jesus and follow Christ's law.
 
-There was absolutely no grace in the court process. I decided to just use it as an opportunity to bear witness of Jesus Christ:
+There was absolutely no grace in the court process.
+
+So I decided to just use it as an opportunity to bear witness of Jesus Christ:
 
 > **Matthew 10:18** - and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. (ESV)
+
+Jesus was led like a lamb to the slaughter. I'm not Jesus, but my experience with court felt a lot like this. I'm an imperfect, fallible person though:
+
+> **Isaiah 53:7** - He was oppressed, and he was afflicted, yet he opened not his mouth; like a lamb that is led to the slaughter, and like a sheep that before its shearers is silent, so he opened not his mouth. (ESV)
+
+Jesus Christ, however, is full of grace and truth:
+
+> **John 1:14** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
+
+> **John 1:17** - For the law was given through Moses; grace and truth came through Jesus Christ. (ESV)
 
 After I was born-again I decided that Jesus was the most important thing and I began following Jesus, and learning to live by Christ's law.
 
