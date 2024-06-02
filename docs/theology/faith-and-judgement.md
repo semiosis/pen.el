@@ -177,6 +177,10 @@ We need to take hold of it:
 
 > **I Timothy 6:12** - Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
 
+In order to know God we must love one another in the way that God has loved us:
+
+> **I John 4:7-12** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
+
 We should labor for the food that endures to eternal life:
 
 > **John 6:27** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal. (ESV)
@@ -304,6 +308,10 @@ Their heart is purified through faith, believing in and obeying Jesus, and now t
 > **I John 4:7-17** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. *By this is love **perfected** with us*, <ins>so that we may have confidence for the day of judgment</ins>, because **as he is so also are we in this world**. (ESV)
 
 > **Matthew 24:9-13** - Then <ins>they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake</ins>. And then <ins>many will fall away and betray one another and hate one another</ins>. And many false prophets will arise and lead many astray. And because <ins>lawlessness will be increased, the love of many will grow cold</ins>. But <ins>the one who endures to the end will be saved.</ins> (ESV)
+
+In order to know God we must love one another in the way that God has loved us:
+
+> **I John 4:7-12** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
 
 
 ## Receiving the Holy Spirit
@@ -1706,6 +1714,10 @@ The knowledge comes from having obeyed God's voice. Love becomes perfected in us
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
 > **John 8:55** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
+
+In order to know God we must love one another in the way that God has loved us:
+
+> **I John 4:7-12** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
 
 
 ### Joy requires apostolic work
@@ -4424,6 +4436,10 @@ You **must** obey Jesus, and that is choosing **light** and choosing **love**:
 You can't have an abundant life without knowing Jesus, so we must have faith in God and follow Jesus' commandments to get to know Him:
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+In order to know God we must love one another in the way that God has loved us:
+
+> **I John 4:7-12** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
 
 You must obey Jesus:
 
@@ -11426,6 +11442,8 @@ And the spiritual attack has been awful - this person knows it:
 
 -   [Do not be angry. God said, "It had to happen." #propheticword - YouTube @time: 5 min 52 sec](https://youtube.com/watch?v=bA7LBhO7Q_E&t=352)
 
+> **I Timothy 4:2-5** - through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. (ESV)
+
 
 # The Kingdom of God
 
@@ -13941,6 +13959,12 @@ The Didache's estimated range of dating is 50-120 A.D, according to [earlychrist
 Of course, I believe God doesn't send all His servants to be martyred, but probably uses what amount a person is willing to bear for the Lord Jesus.
 
 > **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
+
+> **John 12:26** - <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins>
+
+> **Luke 9:23** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me.
+
+I'm still trying to figure out how Jesus' yoke is easy. I guess that if a person denies self daily, and heart is always gentle and lowly, then Jesus' yoke is easy and burden light:
 
 > **Matthew 11:29-30** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.
 
@@ -19371,11 +19395,29 @@ after struggling for years having romantic
 feelings for people who didn't have any
 affection for me at all.
 
-And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el when it was AI software (before it was Bible Study software) for the course of 2021.
+And almost as soon as I met this person I had to let her go for the time being and I simply worked on Pen.el when it was AI software (before it was Bible Study software) for the course of 2021. With the AI project I was building a 'virtual house', but Jesus wants us to allow Him to build it:
 
 > **Psalms 127:1** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
 
 I just say this in order to describe the events leading up to being born-again, for the sake of others, and so they may know how God saved me, as this is my testimony of being born-again.
+
+Even though from time to time I sin, I do not consider myself to be a 'ravenous wolf' because I'm in a world that is incredibly toxic and unconducive to holiness. Nor am I a liar by nature. I hate lying. And I rejoice in the truth. Also my first allegiance is always to Jesus. I am conformed to Jesus, not trying to conform Jesus to me. Jesus also did battle against demons, and I identify as being with Him, on His side, of the truth.
+
+I love Jesus as a response to having been loved by God, and I love God's law, and God has cleaned my heart and my attitude, and remain faithful to Jesus. With my mind I serve the law of God, and I have yielded and am yielding my life to Jesus' control and Lordship, but with my flesh I serve the law of sin:
+
+> **Romans 7:25** - Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
+
+God made me born-again. God shone light into my heart, and I embraced Jesus and abandoned the false-substitute AI stuff that I was using to think outside the cage (like a caged lion):
+
+> **John 3:19** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+These people did not obey Jesus, and produced bad fruit:
+
+> **Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+
+These people did not believe, and their works were not done in faith:
+
+> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. **Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock**.
 
 
 ## Being born-again / being regenerated of Spirit
