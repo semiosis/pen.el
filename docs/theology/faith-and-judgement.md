@@ -147,7 +147,7 @@ Someone who has just put their faith in Jesus for the first time and is believin
 
 > **I John 5:1** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -464,7 +464,7 @@ Believing is an initial act of obedience before continuing in the teaching of Ch
 
 > **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -2120,6 +2120,8 @@ Our **heart** must be close to Jesus:
 
 > **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst. (ESV)
 
+> **Matthew 5:6** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. (ESV)
+
 Faith is both believing and obedient, even faith in the heart:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -2563,7 +2565,7 @@ I believe in 'once saved, always saved, <ins>while doing the will of God</ins>'.
 
 > **I John 2:17** - And the world is passing away along with its desires, but <ins>whoever does the will of God abides forever.</ins>
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -4418,7 +4420,7 @@ I know I can testify to this fiery trial being a real thing:
 
 > **I John 5:10-13** - Whoever believes in the Son of God has the testimony in himself. Whoever does not believe God has made him a liar, because he has not believed in the testimony that God has borne concerning his Son. And this is the testimony, that God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life. I write these things to you who believe in the name of the Son of God that you may know that you have eternal life. (ESV)
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -6178,7 +6180,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **Acts 20:35** - In all things I have shown you that by working hard in this way we **must** <ins>help the weak</ins> and <ins>remember the words of the Lord Jesus, how he himself said,</ins> **It is more blessed to give than to receive.** (ESV)
     
-    It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+    It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
     
     > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
     
@@ -6968,7 +6970,7 @@ We don't want lazy, cowardly, disobedient faith:
 
 > **Luke 12:48** - But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. (ESV)
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
@@ -11358,9 +11360,13 @@ I confess that Jesus is the Son of God:
 
 > **I John 4:15** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
 
-It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God:
+It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+Knowing God means loving as Jesus loved us:
+
+> **I John 4:6-7** - We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
 
 In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments as we also **believe** Jesus, and believe God sent Him:
 
@@ -11676,6 +11682,8 @@ But Christians are not <ins>under</ins> the law while we are led by the Spirit:
 
 
 # Jesus, the Bread of Life
+
+> **Matthew 5:6** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. (ESV)
 
 
 ## Have faith in Jesus. Continue in faith in Jesus and it will well up to eternal life
@@ -13263,7 +13271,7 @@ There's abiding in Christ, and then there is ABIDING FOREVER in Christ, and fore
 
 > **I John 2:6** - the one who says (G3004 lego) he abides (G3306 meno) in Him ought (G3784 opheilo) himself (G846 autos) to walk (G4043 peripateo) in the same (G3779 houto) manner (G3779 houto) as He walked (G4043 peripateo).
 
-I believe that to abide forever in Christ, one must produce good fruit.
+I believe that to abide forever in Christ, one must produce good fruit and be a servant of Christ, doing the will of God from the heart.
 
 > **Matthew 3:8-10** - Bear fruit in keeping with repentance. And do not presume to say to yourselves, We have Abraham as our father, for I tell you, God is able from these stones to raise up children for Abraham.  Even now the axe is laid to the root of the trees. Every tree therefore that does not bear good fruit is cut down and thrown into the fire.
 
@@ -13717,9 +13725,23 @@ Jesus has to be your Lord in reality, i.e. doing Father God's will.
 Jesus is the cornerstone. We must believe in Christ Jesus and obey His words, and let his words abide in us and continue in them.
 
 
-## Knowing Jesus
+## Knowing Jesus, knowing God, knowing Jehovah God
 
 To know Jesus and Father God, then you **must** follow His commandments, and they must not be a burden on us, but we follow them with the faith of Abraham.
+
+Knowing God means we know that God loved us first, even loved us as God loved Jesus:
+
+> **John 17:23** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
+
+Knowing God means loving as Jesus loved us:
+
+> **I John 4:6-7** - We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+> **I John 4:8-11** - Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In **this is love**, <ins>not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.</ins> Beloved, if God so loved us, we also ought to love one another.
+
+Jesus commanded us to love one another in the way He loved us:
+
+> **John 13:34** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. (ESV)
 
 > **I John 2:3** - And by this we know that we have come to know him, if we keep his commandments.
 
@@ -14022,7 +14044,7 @@ The Lutheran Churches label antinomianism as a heresy.
 
 > **I Corinthians 9:21** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
 
-We're still under the law of Christ.
+We're **still under the law of Christ**, which means we **must** forgive and love one another, in the same way that Jesus has loved us.
 
 > **Romans 6:14** - For sin will have no dominion over you, since you are not under law but under grace. (ESV)
 
@@ -19612,15 +19634,24 @@ But I feel like things are simply too difficult in this world. The most challeng
 
 But if there is a spirit-spouse manifesting spiritually and messing with me physically and a bunch of other demonic attacks and it doesn't go away when I rebuke it in Jesus' name, and it resists when I use Scriptures, and the attack lasts for 600 days almost every day, then I feel like the challenge of fighting back is just too difficult.
 
-Also, to "be holy as He is holy" when people deny relationships and marriage, and just heap on heavy burdens without lifting a finger to help, and then simultaneously I'm attacked with a spirit spouse at night, for example, and I'm supposed to just ignore it - well it feels like an impossibility to fight back. So a complaint I have to Almighty God Jehovah is that remaining holy in all my conduct during the trial I have faced has been impossibly difficult:
+Also, to "be holy as He is holy" when people deny relationships and marriage, and just heap on heavy burdens, asking even more of me, without lifting a finger to help, and then simultaneously I'm attacked with a spirit spouse at night, for example, and I'm supposed to just ignore it - well it feels like an impossibility to remain clean. So a complaint I have to Almighty God Jehovah is that remaining holy in all my conduct during the trial I have faced has been impossibly difficult:
 
 > **Colossians 2:18-21** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
 
-I'm definitely taking this stuff to God's court. The last 2 years have been so unfair. I've been [put through the absolute ringer](https://www.merriam-webster.com/grammar/is-it-through-the-wringer-or-through-the-ringer-difference). I am an obedient child of God - responsive to the love of God, and I love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I had succeeded in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm still waiting on a sufficient amount of grace to help me to put that stuff to death and to be holy in all my conduct:
+I'm definitely taking this stuff to God's court and asking for grace to be sanctified. The last 2 years have been so unfair. I've been [put through the absolute ringer](https://www.merriam-webster.com/grammar/is-it-through-the-wringer-or-through-the-ringer-difference). I am an obedient child of God - believing in Jesus, believing Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult. I will still try aim to put that stuff to death and to be holy in all my conduct:
 
 > **I Peter 1:14-19** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
 
 Sigh&#x2026;.
+
+On the bright side, last week I did get a picture of John Piper on YouTube saying "Jesus has given you clothes."
+That means that when I turn up in heaven I'll have 'clothes' so I can enter.
+
+> **Revelation of John 3:4** - Yet you have still a few names in Sardis, people who have not soiled their garments, and they will walk with me in white, for they are worthy. (ESV)
+
+But I have to keep seeking to be sanctified because Jesus is coming for me at some point. So I want to be ready for when that happens by being holy and loving:
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
@@ -19712,6 +19743,8 @@ By God's grace I've been set free from sin, and brought into a relationship with
 -   **Sermon:** [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 
 > **Matthew 13:45-52** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. Again, the kingdom of heaven is like a net that was thrown into the sea and gathered fish of every kind. When it was full, men drew it ashore and sat down and sorted the good into containers but threw away the bad. So it will be at the close of the age. <ins>The angels will come out and separate the evil from the righteous and throw them into the fiery furnace.</ins> In that place there will be weeping and gnashing of teeth. Have you understood all these things? They said to him, Yes. And he said to them, Therefore every scribe who has been trained for the kingdom of heaven is like a master of a house, who brings out of his treasure what is new and what is old.
+
+> **Revelation 22:12-17, 20-21** - Behold, I am coming soon, bringing my recompense with me, to repay everyone for what he has done. I am the Alpha and the Omega, the first and the last, the beginning and the end. Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood. I, Jesus, have sent my angel to testify to you about these things for the churches. I am the root and the descendant of David, the bright morning star. The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is thirsty come; let the one who desires take the water of life without price. He who testifies to these things says, Surely I am coming soon. Amen. Come, Lord Jesus! The grace of the Lord Jesus be with all. Amen. (ESV)
 
 
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
