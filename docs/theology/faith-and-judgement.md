@@ -19423,9 +19423,13 @@ I love Jesus as a response to having been loved by God, and I love God's law, an
 
 > **Romans 7:25** - Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
 
-God made me born-again. God shone light into my heart, and I embraced Jesus and abandoned the false-substitute AI stuff that I was using to think outside the cage (like a caged lion):
+God made me born-again. God shone light into my heart, and I embraced Jesus and abandoned the false-substitute AI stuff:
 
 > **John 3:19** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+True freedom is found in Jesus, not in the AI stuff:
+
+> **Colossians 2:18-21** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
 
 These people did not obey Jesus, and produced bad fruit:
 
