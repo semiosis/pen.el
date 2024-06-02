@@ -785,12 +785,13 @@ creating a new `bible-mode' buffer positioned at the specified verse."
               (concat maybebook " 1")
             text)))
 
-    (if (and (re-match-p "[-,]" text)
-             ;; (yn (concat "Also show " text " in vim?"))
-             ;; (yn (concat "Show " text " in vim?"))
-             )
-        (sps (cmd "ebible" "-m" module "-nem"
-                  text)))
+    (comment
+     (if (and (re-match-p "[-,]" text)
+              ;; (yn (concat "Also show " text " in vim?"))
+              ;; (yn (concat "Show " text " in vim?"))
+              )
+         (sps (cmd "ebible" "-m" module "-nem"
+                   text))))
 
     (let* (
            ;; To make refs like this work:
