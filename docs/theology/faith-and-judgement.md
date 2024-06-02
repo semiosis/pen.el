@@ -12764,6 +12764,10 @@ Noah still had a wife, a believing wife, I assume.
 
 > **Luke 20:33-36** - In the resurrection, therefore, whose wife will the woman be? For the seven had her as wife. And Jesus said to them, The sons of this age (G165 **aion**) marry (G1060 **gameo**) and are given in marriage (G1061 **gamisko**), but those who are considered worthy to attain to that age (G165 **aion**) and to the resurrection (G386 **anastasis**) from the dead neither marry nor are given in marriage, for they cannot die anymore, because they are equal to angels and are sons of God, being sons of the resurrection.
 
+This is the best explanation I have found for this:
+
+[youtube.com: Strive to let everything bodily die within you, and you will rise before the general resurrection](https://www.youtube.com/watch?v=dOvtJjvmrY0)
+
 
 ### In heaven, people are like angels - imperishable
 
@@ -19423,9 +19427,13 @@ I love Jesus as a response to having been loved by God, and I love God's law, an
 
 > **Romans 7:25** - Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
 
-God made me born-again. God shone light into my heart, and I embraced Jesus and abandoned the false-substitute AI stuff:
+God made me born-again. God shone light into my heart, and I embraced Jesus and abandoned the false-substitute AI stuff, and have made a big effort to turn away from sin, and be as obedient as I can:
 
 > **John 3:19** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+
+My own obedience/righteousness will never be enough, but I hate sin (especially after I have committed it) and I have made an effort to be conformed to holiness, and I honestly feel like without grace/assistance the call to "be holy as He is holy" feels impossible. But as far as being right with God goes, I'm resting on the righteousness that comes through faith in Jesus so on the day of judgement I hope to receive a "not guilty" verdict:
+
+-   [youtube.com: If you are struggling with what to do with sin after you receive Jesus, take a listen&#x2026; ?](https://www.youtube.com/watch?v=InDrIMKL2E8)
 
 True freedom is found in Jesus, not in the AI stuff:
 
@@ -19588,6 +19596,31 @@ Now I'm saying that it's all in God's hands, and I've made an effort to have Jes
 I still hope for the personal acknowledgement from God that I have acted faithfully to Him!
 
 We're always seeking God's justification - but we live by faith in Christ Jesus, in belief to His promises and in obedience to His commandments all of our life as Christians - hoping for God's commendation.
+
+
+## I'm definitely leaving this stuff in God's court
+
+At the end of the day I am resting on the righteousness that comes through faith in Jesus - Amen to that.
+
+I've been going through a lot of trial and tribulation over the last 2 years:
+
+> **I Peter 1:6-9** - In this you rejoice, though now for a little while, if necessary, you have been grieved by various trials, so that the tested genuineness of your faith—more precious than gold that perishes though it is tested by fire—may be found to result in praise and glory and honor at the revelation of Jesus Christ. Though you have not seen him, you love him. Though you do not now see him, you believe in him and rejoice with joy that is inexpressible and filled with glory, obtaining the outcome of your faith, the salvation of your souls. (ESV)
+
+But I feel like things are simply too difficult in this world. The most challenging resistance has actually been when I get attacked both spiritually and physically. By the Holy Spirit we are supposed to put to death the deeds of the body:
+
+> **Romans 8:13** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+But if there is a spirit-spouse manifesting spiritually and messing with me physically and a bunch of other demonic attacks and it doesn't go away when I rebuke it in Jesus' name, and it resists when I use Scriptures, and the attack lasts for 600 days almost every day, then I feel like the challenge of fighting back is just too difficult.
+
+Also, to "be holy as He is holy" when people deny relationships and marriage, and just heap on heavy burdens without lifting a finger to help, and then simultaneously I'm attacked with a spirit spouse at night, for example, and I'm supposed to just ignore it - well it feels like an impossibility to fight back. So a complaint I have to Almighty God Jehovah is that remaining holy in all my conduct during the trial I have faced has been impossibly difficult:
+
+> **Colossians 2:18-21** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
+
+I'm definitely taking this stuff to God's court. The last 2 years have been so unfair. I've been [put through the absolute ringer](https://www.merriam-webster.com/grammar/is-it-through-the-wringer-or-through-the-ringer-difference). I am an obedient child of God - responsive to the love of God, and I love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I had succeeded in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm still waiting on a sufficient amount of grace to help me to put that stuff to death and to be holy in all my conduct:
+
+> **I Peter 1:14-19** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
+Sigh&#x2026;.
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
