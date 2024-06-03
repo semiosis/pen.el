@@ -1970,6 +1970,10 @@ God still makes apostles and prophetic people:
 
 > **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be children, tossed to and fro by the waves and carried about by every wind of doctrine, by human cunning, by craftiness in deceitful schemes. Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love.
 
+But we should listen to sound teaching first and always test the spirits:
+
+> **II Timothy 4:3** - For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions, (ESV)
+
 > **Daniel 2:28** - but there is a God in heaven who reveals mysteries, and he has made known to King Nebuchadnezzar what will be in the latter days. Your dream and the visions of your head as you lay in bed are these: (ESV)
 
 God is loving and altogether gracious:
@@ -3599,6 +3603,10 @@ So the blood of Jesus covers us while we are following Him.
 
 
 ### Do not condemn others. Speak the truth and leave judgement to the Judge
+
+We are allowed to say that the world's works are evil:
+
+> **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
 
 > **John 8:16-18** - Yet even if I do judge, my judgment is true, for it is not I alone who judge, but I and the Father who sent me. In your Law it is written that the testimony of two men is true. I am the one who bears witness about myself, and the Father who sent me bears witness about me.
 
@@ -9998,6 +10006,10 @@ Endurance is important:
 
 > **Hebrews 10:36-39** - For you have need of endurance, so that when you have done the will of God you may receive what is promised. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls.
 
+Resist the false teaching from impostors who do not want to repent even from sin and believe, and turn to obey God and do good work:
+
+> **II Timothy 3:12-17** - Indeed, all who desire to **live a godly life in Christ Jesus** will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, **continue in what you have learned and have firmly believed**, knowing from whom you learned it and how from childhood you have been acquainted with the sacred writings, which are able to make you wise for salvation through faith in Christ Jesus. All Scripture is breathed out by God and profitable for teaching, for reproof, **for correction**, and for training in righteousness, that the man of God may be competent, **equipped for every good work**. (ESV)
+
 A disciple of Jesus is a servant of Jesus:
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
@@ -12423,6 +12435,8 @@ A Psalm of David:
 > **John 15:20** - Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
 
 > **I John 4:6** - We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. (ESV)
+
+> **John 8:46-47** - Which one of you convicts me of sin? If I tell the truth, why do you not believe me? Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
 
 
 # Marriage
@@ -15663,6 +15677,10 @@ Circumcise your heart and do not be stubborn:
 
 
 # Personally judging sin
+
+> **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
+
+> **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
 
 
 ## We should always discern what is right on our own initiative
@@ -19296,6 +19314,8 @@ Suffering for Christian obedience, as Christ suffered for His obedience:
 
 > **I Peter 4:16** - Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name.
 
+> **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
+
 -   **Sermon:** [youtube.com: John Piper Recites from 1 Peter](https://www.youtube.com/watch?v=2_7tJrTmGxs)
 
 Please your neighbour for their good:
@@ -19408,7 +19428,9 @@ I felt like giving up, and I cried out to Jesus one night to save me:
 
 ### With regards to God
 
-I had begun speaking out against evil and I had begun repenting from my evil deeds, but I was still very much spiritually depraved.
+Before I was born-again, I had begun speaking out against evil and I had begun repenting from my evil deeds, but I was still very much spiritually depraved. God was still working in my life.
+
+> **John 7:7** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
 
 > The doctrine of total depravity asserts that
 > people are, as a result of the fall, not
@@ -19875,15 +19897,16 @@ It should be:
     13  In Jesus Christ's name I pray,
     14  AMEN!!
 
-    1  Dear Heavenly Father, Jehovah God,
-    2  Please forgive, me, LORD.
-    3  I want to serve You, God.
-    4  I don't deserve any of Your grace, LORD.
-    5  Thank You, God, for not condemning me, because Jesus has paid the price for my sin.
-    6  I believe that. I know it's already paid for.
-    7  Nevertheless, I live to serve You, God, and to be conformed into the image of Your Son, Jesus Christ.
-    8  In Jesus Christ's name I pray,
-    9  AMEN!!
+     1  Dear Heavenly Father, Jehovah God,
+     2  Please forgive, me, LORD.
+     3  Have mercy on me, a sinner!
+     4  I want to serve You, God.
+     5  I don't deserve any of Your grace, LORD.
+     6  Thank You, God, for not condemning me, because Jesus has paid the price for my sin.
+     7  I believe that. I know it's already paid for.
+     8  Nevertheless, I live to serve You, God, and to be conformed into the image of Your Son, Jesus Christ.
+     9  In Jesus Christ's name I pray,
+    10  AMEN!!
 
 > **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
 
