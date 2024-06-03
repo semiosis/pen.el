@@ -12571,7 +12571,7 @@ Abraham was 10 years older than Sarah!
 
 > **Genesis 17:17** - Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child? (ESV)
 
-I'm not saying that the only reason my own relationships have not worked out for me is because of evil spirits, but I feel like I have had very obvious spiritual resistance a lot of the time, for whatever reason. Maybe I've had trouble because in the past I have had trouble with pornography.
+I'm not saying that the only reason my own relationships have not worked out for me is because of evil spirits, but I feel like I have had very obvious spiritual resistance a lot of the time, for whatever reason. Maybe I've had trouble because in the past I have had trouble with pornography, but probably the bigger reason is I have been trying to follow Jesus' commandments.
 
 I feel like sometimes demon spirits deny relationships that would be good:
 
@@ -12579,7 +12579,10 @@ For example:
 
 -   worldly spirit through a person telling me I need to be financially successful first, or
 -   a spirit of slander or gossip which keeps me isolated, or a rejection-spirit spreading gossip/slander among people around me, creating social anxiety, making it hard to socialise with people who would be good to talk to, or
--   a [spirit spouse](https://www.youtube.com/watch?v=Pqrd2ff8My0&ab_channel=VladSavchuk) which thinks it's my spouse
+-   spirits of gossip and slander, fear, disunity, grudges, antichrist, anti-Christ's-love, unforgiveness
+    -   Being kicked out of churches for following Jesus and obeying Jesus' commandments, for example
+-   a spirit spouse which thinks it's my spouse
+    -   [youtube.com: Prayer Against Spiritual Spouse](https://www.youtube.com/watch?v=Pqrd2ff8My0) <- Yeah, this.
 -   if all of the above spirits start manifesting
 
 And as far as forsaking God's precepts for
