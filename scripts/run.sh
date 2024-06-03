@@ -4,6 +4,10 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export NO_AUTO_START=n
 
+export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
+export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
+export PATH="$PATH:/root/go/bin"
+
 sn="$(basename -- "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
     ~/.emacs.d/host/pen.el/scripts/$sn "$@"
@@ -214,10 +218,6 @@ unset YAMLMOD_PATH
 test -d "$EMACSD/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD/emacs-yamlmod"}"
 test -d "$EMACSD_BUILTIN/emacs-yamlmod" && : "${YAMLMOD_PATH:="$EMACSD_BUILTIN/emacs-yamlmod"}"
 export YAMLMOD_PATH
-
-export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
-export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
-export PATH="$PATH:/root/go/bin"
 
 if test -n "$PEN_USER"; then
     echo "$PEN_USER" > ~/pen_user.txt
