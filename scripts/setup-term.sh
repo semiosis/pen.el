@@ -27,8 +27,10 @@ export XDG_CONFIG_HOME="$XDG_CONFIG_HOME"
 : "${TMUX:="$PEN_TMUX"}"
 : "${PEN_TMUX:="$TMUX"}"
 
-export SCRIPTS=$HOME/scripts
-export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+export SCRIPTS=/root/.emacs.d/pen.el/scripts
+if test -d /root/.emacs.d/host/pen.el/scripts; then
+    export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+fi
 export PEN=/root/.pen
 
 unset EMACSD_BUILTIN

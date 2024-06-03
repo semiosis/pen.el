@@ -4,9 +4,18 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export NO_AUTO_START=n
 
-export PATH=$PATH:$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts
-export PATH=$PATH:$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container
+export SCRIPTS=/root/.emacs.d/pen.el/scripts
+if test -d /root/.emacs.d/host/pen.el/scripts; then
+    export SCRIPTS=/root/.emacs.d/host/pen.el/scripts
+fi
+
+export PATH=$EMACSD/host/pen.el/scripts-host:$EMACSD/pen.el/scripts-host:$PATH
+export PATH=$EMACSD/host/pen.el/scripts:$EMACSD/pen.el/scripts:$PATH
+export PATH=$EMACSD/host/pen.el/scripts/container:$EMACSD/pen.el/scripts/container:$PATH
+export PATH="$(find "$SCRIPTS" -maxdepth 4 -mindepth 1 -type d | sed -z "s~\n~:~g" | sed "s/:\$//"):$PATH"
 export PATH="$PATH:/root/go/bin"
+export PATH="$PATH:/root/.cargo/bin/cargo"
+export PATH="$PATH:/root/repos/go-ethereum/build/bin"
 
 sn="$(basename -- "$0")"
 if test -f $HOME/.emacs.d/host/pen.el/scripts/$sn && ! test "$HOME/.emacs.d/host/pen.el/scripts" = "$(dirname "$0")"; then
