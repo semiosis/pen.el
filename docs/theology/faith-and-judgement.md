@@ -2843,6 +2843,41 @@ or they do not have the heart to obey and receive salvation - so they are a goat
 > **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 
+### Doing the will of God
+
+> **Mark 3:35** - Whoever does the will of God, he is my brother and sister and mother. (ESV)
+
+> **Romans 8:27** - And he who searches hearts knows what is the mind of the Spirit, because the Spirit intercedes for the saints according to the will of God. (ESV)
+
+> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. (ESV)
+
+> **I Corinthians 1:1** - Paul, called by the will of God to be an apostle of Christ Jesus, and our brother Sosthenes, (ESV)
+
+> **II Corinthians 1:1** - Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother, To the church of God that is at Corinth, with all the saints who are in the whole of Achaia: (ESV)
+
+> **II Corinthians 8:5** - and this, not as we expected, but they gave themselves first to the Lord and then by the will of God to us. (ESV)
+
+> **Ephesians 1:1** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are faithful in Christ Jesus: (ESV)
+
+> **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as servants of Christ, doing the will of God from the heart, (ESV)
+
+> **Colossians 1:1** - Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother, (ESV)
+
+> **Colossians 4:12** - Epaphras, who is one of you, a servant of Christ Jesus, greets you, always struggling on your behalf in his prayers, that you may stand mature and fully assured in all the will of God. (ESV)
+
+> **I Thessalonians 4:3** - For this is the will of God, your sanctification: that you abstain from sexual immorality; (ESV)
+
+> **I Thessalonians 5:18** - give thanks in all circumstances; for this is the will of God in Christ Jesus for you. (ESV)
+
+> **II Timothy 1:1** - Paul, an apostle of Christ Jesus by the will of God according to the promise of the life that is in Christ Jesus, (ESV)
+
+> **Hebrews 10:36** - For you have need of endurance, so that when you have done the will of God you may receive what is promised. (ESV)
+
+> **I Peter 2:15** - For this is the will of God, that by doing good you should put to silence the ignorance of foolish people. (ESV)
+
+> **I John 2:17** - And the world is passing away along with its desires, but whoever does the will of God abides forever. (ESV)
+
+
 ### Work may be burned up, and the person who has a believing and obedient heart is still saved
 
 This person worked - served God - and this verse guarantees that the one who tried to work for God is still saved:
@@ -11457,6 +11492,9 @@ The peace Jesus brings is peace in Christ:
 
 > **Matthew 5:11-13**  Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet.
 
+Surely God has some greater purpose surrounding why I've had to endure near ceaseless spiritual attack,
+inside and outside church, and internationally.
+
 
 ### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time
 
@@ -11469,6 +11507,10 @@ And the spiritual attack has been awful - this person knows it:
 -   [Do not be angry. God said, "It had to happen." #propheticword - YouTube @time: 5 min 52 sec](https://youtube.com/watch?v=bA7LBhO7Q_E&t=352)
 
 > **I Timothy 4:2-5** - through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. (ESV)
+
+Daily I feel this way:
+
+> **Psalms 22:1** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
 
 
 # The Kingdom of God
@@ -13300,7 +13342,7 @@ There's abiding in Christ, and then there is ABIDING FOREVER in Christ, and fore
 
 > **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as <ins>servants of Christ, doing the will of God</ins> **from the heart**,
 
-> **I John 2:6** - the one who says (G3004 lego) he abides (G3306 meno) in Him ought (G3784 opheilo) himself (G846 autos) to walk (G4043 peripateo) in the same (G3779 houto) manner (G3779 houto) as He walked (G4043 peripateo).
+> **I John 2:6** - whoever says he **abides in him** <ins>ought to</ins> **walk in the same way in which he walked.** (ESV)
 
 I believe that to abide forever in Christ, one must produce good fruit and be a servant of Christ, doing the will of God from the heart.
 
@@ -13774,7 +13816,9 @@ Jesus commanded us to love one another in the way He loved us:
 
 > **John 13:34** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. (ESV)
 
-> **I John 2:3** - And by this we know that we have come to know him, if we keep his commandments.
+We must walk in the manner that he walked:
+
+> **I John 2:3-6** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him: whoever says he abides in him ought to **walk in the same way in which he walked**. (ESV)
 
 > **I John 5:3-4** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith.
 
@@ -13797,6 +13841,18 @@ However, I believe keeping Jesus' word and obeying Jesus also leads to communion
 -   **communion:** sharing thoughts and feelings
 
 > **John 14:22-23** - Judas (not Iscariot) said to him, Lord, how is it that you will manifest yourself to us, and not to the world? Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him.
+
+Believe God's testimony concerning His Son. Know the testimony:
+
+> **I Corinthians 2:1-2** - And I, when I came to you, brothers, did not come proclaiming to you the testimony of God with lofty speech or wisdom. For I decided to know nothing among you except Jesus Christ and him crucified. (ESV)
+
+> **I John 5:10** - Whoever believes in the Son of God has the testimony in himself. Whoever does not believe God has made him a liar, because he has not believed in the testimony that God has borne concerning his Son. (ESV)
+
+Know Jesus experientially:
+
+> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+
+> **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
 
 ### Anyone who doesn't abide will be thrown away like a branch and withers. Eventually they will be into the fire (Hell, I assume)
