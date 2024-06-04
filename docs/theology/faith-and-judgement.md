@@ -89,6 +89,8 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
+> **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God. (ESV)
+
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
 > **Romans 6:22-23** - But now having been freed from sin and **enslaved to God**, you derive your benefit, resulting in sanctification, and the outcome, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (NASB)
@@ -98,6 +100,8 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
 In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
+
+> **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God. (ESV)
 
 We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
 
@@ -524,6 +528,7 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 -   Speaking the word of God with boldness is a sure sign of being filled with the Holy Spirit.
 -   Saying one's own belongings are not our own [but belong to God] is a sure sign of being filled with the Holy Spirit.
     -   Giving to others freely to relieve the burdens of others is a another sure sign.
+        -   **Acts 2:45** - And they were selling their possessions and belongings and distributing the proceeds to all, as any had need. (ESV)
     -   **Job 1:21** - And he said, Naked I came from my mother's womb, and naked shall I return. The LORD gave, and the LORD has taken away; blessed be the name of the LORD. (ESV)
     -   **Romans 11:36** - For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
 
@@ -535,6 +540,10 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 "At one time disobedient&#x2026;" means we are brought to obedience. Therefore, God's mercy is that we become obedient:
 
 > **Romans 11:30-32** - Just as you were <ins>at one time disobedient</ins> to God but now have received mercy because of their disobedience, so they too have now been disobedient in order that by the mercy shown to you they also may now receive mercy. For **God has consigned all to disobedience, that he may have mercy on all.** (ESV)
+
+Mercy is so that we can be forgiven and change our ways:
+
+> **John 8:11** - She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
 
 -   **Song:** [King of Kings {Lyric Video} - Hillsong Worship - YouTube](https://www.youtube.com/watch?v=Of5IcFWiEpg&list=RDf2oxGYpuLkw&index=2)
 
@@ -1096,7 +1105,7 @@ So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believi
 
 ### God working in us
 
-God loved us first. We must accept that.
+God loved us first. We must accept that:
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
@@ -1233,7 +1242,7 @@ The free gift is eternal life **in** Christ Jesus, our Lord:
 
 After believing in Jesus, we must turn from our wicked ways and serve God:
 
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 Jesus has literally taught people that that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. This shows that obedience to Jesus is just part of having faith in Jesus:
 
@@ -2013,7 +2022,7 @@ If a person truly believes Jesus is who He says He is then they have eternal lif
 
 Like the Apostle Peter, they may be **quick** to belief, and stumble their way to obedience:
 
-> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it. (ESV)
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
 Thomas had extreme love towards Jesus and obedience to following Jesus:
 
@@ -2298,6 +2307,20 @@ We must come to Jesus for eternal life:
 
 > **John 5:39-40** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
 
+Jesus is the Rock.
+
+Belief is important:
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
+
+Obedience is important:
+
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+We believe the Lord Jesus is who He is, the Christ, the Son of the living God, and Jesus builds the house as we obey Him.
+
+> **Psalms 127:1** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
+
 
 ### As we come to Jesus, we are conformed to His image
 
@@ -2306,7 +2329,7 @@ We must come to Jesus for eternal life:
 
 ### Peter was quick to belief, and his belief led to obedience
 
-> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it. (ESV)
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
 Peter's obedience wasn't perfect after that, but His belief did lead to doing works that Jesus Himself did.
 
@@ -3499,7 +3522,7 @@ Jesus gave us teachings:
 
 The Apostle Paul taught these teachings, and taught people to remember Jesus' teachings:
 
-> **Acts 20:35** - In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, It is more blessed to give than to receive. (ESV)
+> **Acts 20:35** - In all things I have shown you that by working hard in this way we must help the weak and remember the words of **the Lord Jesus, how he himself said, It is more blessed to give than to receive**. (ESV)
 
 And the Holy Spirit helps us to follow His teaching:
 
@@ -4476,11 +4499,25 @@ You **must** obey Jesus, and that is choosing **light** and choosing **love**:
 
 > **John 10:14-15** - <ins>I am the good shepherd.</ins> I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
 
+Believing and obeying (loving) Jesus, we will be known by God:
+
 > **I Corinthians 8:3** - But if anyone loves God, he is known by God. (ESV)
+
+We believe and obey Jesus:
+
+> **John 3:36** - He who **believes in the Son** has eternal life; but he who does not **obey the Son** will not see life, but the wrath of God abides on him.”
+
+God loved us first. We must accept that:
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
+
+We must also obey the teaching of Jesus, believe on His name and follow His commandments:
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 You can't have an abundant life without knowing Jesus, so we must have faith in God and follow Jesus' commandments to get to know Him:
 
@@ -4816,7 +4853,7 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -5876,7 +5913,7 @@ Love Jesus (being obedient to Him) **and** believe that He came from God:
 
 > **Matthew 7:21-27** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -6433,6 +6470,16 @@ Cleaned up (stop sinning) by having faith in the truth.
 # Clearing up justifying faith vs justifying works - It's faith in **Jesus Himself** that matters. Also, it's God who justifies us, not we who justify ourselves. We have faith in God to justify us, as we place our faith in Him
 
 I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
+
+Jesus is the Rock.
+
+Belief is important:
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
+
+Obedience is important:
+
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 If I hear Jesus' commandment to repent from sin, for example, and I obediently repent, then that is walking by faith.
 Since faith comes from hearing the word of Christ - and there faith could come from any part of His teaching.
@@ -7207,7 +7254,7 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 
 ### Jesus's Lordship is not merely His authority over us, but us yielding our lives to Jesus - us wanting to do His will, and us wanting to obey Him
 
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **Colossians 2:5-6** - For though I am absent in body, yet I am with you in spirit, rejoicing to see your good order and the firmness of your faith in Christ. Therefore, <ins>as you received Christ Jesus the Lord,</ins> **so walk in him,** (ESV)
 
@@ -7594,7 +7641,17 @@ When we are living our lives trusting in God, believing that He exists and rewar
 
 > **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
-> **Psalms 127:1** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
+Jesus is the Rock.
+
+Belief is important:
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
+
+Obedience is important:
+
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+We believe the Lord Jesus is who He is, the Christ, the Son of the living God, and Jesus builds the house as we obey Him.
 
 
 ## We should have minds that, by testing, we can discern the will of God, and act in faith according to God's will as far as we can discern
@@ -7708,6 +7765,15 @@ Then Jesus asked the demon its name.
 > **Mark 16:17** - And these signs will accompany those who believe: in my name they will cast out demons; they will speak in new tongues; (ESV)
 
 > **Luke 10:19** - Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you. (ESV)
+
+
+### We must be spiritually-minded, not earthly-minded
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+> **II Corinthians 5:16** - From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. (ESV)
+
+> **James 2:26** - For as the body apart from the spirit is dead, so also faith apart from works is dead. (ESV)
 
 
 ## Faith requires obedience - i.e. acting in faith / living by faith
@@ -13318,7 +13384,7 @@ We believe and obey Jesus:
 
 > **John 3:36** - He who **believes in the Son** has eternal life; but he who does not **obey the Son** will not see life, but the wrath of God abides on him.”
 
-God loved us first. We must accept that.
+God loved us first. We must accept that:
 
 > **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
 
@@ -14802,13 +14868,17 @@ because they have been deceived by the two-gospel heresy:
 
 -   [The Two Gospel Heresy - Anton Bosch](https://antonbosch.org/the-two-gospel-heresy)
 
-Even before His crucifixion, it's clear Jesus taught the New Covenant:
+Even before His crucifixion, it's clear that Jesus taught the New Covenant:
 
 > **Luke 22:20** - And likewise the cup after they had eaten, saying, This cup that is poured out for you is the new covenant in my blood. (ESV)
 
-And according to Paul, Jesus' commands are still binding:
+Even before His crucifixion, it's clear that we may have faith in Jesus to forgive us, and change our ways:
 
-> **Acts 20:35** - In all things I have shown you that by working hard in this way we must help the weak and remember the words of the Lord Jesus, how he himself said, It is more blessed to give than to receive. (ESV)
+> **John 8:11** - She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
+
+And according to Paul, Jesus' commands are still binding. We must help the weak. We must remember the words of the Lord Jesus:
+
+> **Acts 20:35** - In all things I have shown you that by working hard in this way **we must help the weak and remember the words of the Lord Jesus**, how <ins>he himself said, It is more blessed to give than to receive.</ins> (ESV)
 
 > **I Corinthians 11:24-25** - and when he had given thanks, he broke it, and said, This is my body which is for you. Do this in remembrance of me. In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me. (ESV)
 
@@ -17655,7 +17725,7 @@ Consider this as I read Jesus' words talking about Father God:
 
 ### 
 
-> **John 8:11** - She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more.]] (ESV)
+> **John 8:11** - She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
 
 
 ### 
@@ -19937,6 +20007,19 @@ It should be:
 </table>
 
 -   **Song:** [Praise {feat. Brandon Lake, Chris Brown & Chandler Moore} | Elevation Worship - YouTube](https://www.youtube.com/watch?v=f2oxGYpuLkw)
+
+> **Isaiah 64:4** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, who acts for those who wait for him. (ESV)
+
+> **Acts 5:39** - but if it is of God, you will not be able to overthrow them. You might even be found opposing God! So they took his advice, (ESV)
+
+
+## Please help me by repenting, forgiving your family in Christ, and imitating Christ
+
+-   I forgive everyone.
+-   I hold no grudges.
+-   But I'm fighting a spiritual battle right now, and I'm going to speak the truth as best as I can.
+
+> **I Corinthians 13:6** - it does not rejoice at wrongdoing, but rejoices with the truth. (ESV)
 
 
 ## Prayer of thanks
