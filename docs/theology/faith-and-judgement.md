@@ -11581,15 +11581,16 @@ And the spiritual attack has been awful - this person knows it:
 
 > **I Timothy 4:2-5** - through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. (ESV)
 
-Daily I feel this way:
+In recent times, daily I have felt this way:
 
 > **Psalms 22:1** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
 
-But I know my true adversaries are evil spirits, not the people who took me to court:
+But I know my true adversaries are evil spirits, not the people who took me to court after I got born-again:
+a
 
 > **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
 
-I don't expect everybody to understand, but was very much aware throughout the process:
+I don't expect everybody to understand, but having been born-again I was very much aware throughout the process that "the conflict was spiritual":
 
 > **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
 
@@ -19760,6 +19761,12 @@ Also, in Jesus Christ's name I come against and rebuke any vindictive spirit or 
 > **Romans 3:23-24** - <ins>for all have sinned and fall short of the glory of God</ins>, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, (ESV)
 
 > **Colossians 3:12-13** - Put on then, as God's chosen ones, holy and beloved, compassion, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, forgiving each other; **as the Lord has forgiven you, so you also must forgive**. (ESV)
+
+Forgiveness is very important:
+
+> **Matthew 5:25** - Come to terms quickly with your accuser while you are going with him to court, lest your accuser hand you over to the judge, and the judge to the guard, and you be put in prison. (ESV)
+
+> **Matthew 6:14** - For if you forgive others their trespasses, your heavenly Father will also forgive you, (ESV)
 
 Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
 
