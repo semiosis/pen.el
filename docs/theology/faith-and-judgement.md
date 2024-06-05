@@ -89,8 +89,6 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
 
-> **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God. (ESV)
-
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
 > **Romans 6:22-23** - But now having been freed from sin and **enslaved to God**, you derive your benefit, resulting in sanctification, and the outcome, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (NASB)
@@ -122,6 +120,7 @@ We do works out of love for Jesus, and out of ongoing faith, ongoing obedience, 
 Christianity is a relationship, like a marriage:
 
 -   Acceptance comes at the beginning
+    -   We must still forgive and love our family in Christ. This isn't 'work', but it is obedience, and it is a required heart attitude
 -   It's not a merit-based religion
 -   We **must** have a response of love for Jesus
     -   **John 14:21** - <ins>Whoever has my commandments and keeps them, he it is who loves me.</ins> And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
@@ -164,6 +163,10 @@ Therefore, even before I was born-again of the Spirit, as I was endeavoring to p
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
 > **Ephesians 4:12-13** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+
+When the day of judgement comes, we should be loving our brother and sister in Christ, or we may face the wrath of God:
+
+> **I John 4:17-21** - By this is love perfected with us, so <ins>that we may have **confidence** for the day of judgment</ins>, because as he is so also are we in this world. There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love. We love because he first loved us. If anyone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen. And <ins>this commandment we have from him:</ins> whoever loves God **must** also love his brother. (ESV)
 
 To get to know Jesus, we must obey His commandments:
 
