@@ -259,6 +259,8 @@ We can repent from sin as an act of obedient faith to God:
 
 > **Jeremiah 4:4** - **Circumcise yourselves to the LORD**; remove the foreskin of your hearts, O men of Judah and inhabitants of Jerusalem; lest my wrath go forth like fire, and burn with none to quench it, because of the evil of your deeds. (ESV)
 
+> **Deuteronomy 10:16-17** - Circumcise therefore the foreskin of your heart, and be no longer stubborn. For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
+
 It's simultaneous:
 
 > **James 4:8** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
@@ -466,6 +468,8 @@ Therefore, we teach people to both believe and to obey the Gospel. When we obey 
 In Christ Jesus, through faith in Him (through trusting Him, believing Him, believing in Him and obeying Him), we have Jesus as our righteousness, and sanctification and redemption:
 
 > **I Corinthians 1:30** - He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption. (ESV)
+
+-   **Song:** [youtube.com: Be Thou My Vision - Audrey Assad](https://www.youtube.com/watch?v=Optrm7lF16s&list=RD8txqw-u4V78&index=11)
 
 Believing is an initial act of obedience before continuing in the teaching of Christ. If we believe in Him we have obeyed Him, but belief doesn't end there:
 
@@ -11565,7 +11569,7 @@ Surely God has some greater purpose surrounding why I've had to endure near ceas
 inside and outside church, and internationally.
 
 
-### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time
+### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time in this life or the next
 
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
@@ -11580,6 +11584,16 @@ And the spiritual attack has been awful - this person knows it:
 Daily I feel this way:
 
 > **Psalms 22:1** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
+
+But I know my true adversaries are evil spirits, not the people who took me to court:
+
+> **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
+
+I don't expect everybody to understand, but was very much aware throughout the process:
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+-   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
 
 
 # The Kingdom of God
@@ -18531,6 +18545,8 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 
 > **Jeremiah 10:10** - But the Lord is the true God; he is the living God and the everlasting King. At his wrath the earth quakes, and the nations cannot endure his indignation.
 
+> **Deuteronomy 10:14** - Behold, to the LORD your God belong heaven and the heaven of heavens, the earth with all that is in it. (ESV)
+
 > **Ephesians 3:9-11** - and to bring to light for everyone what is the plan of the mystery hidden for ages in God who created all things, so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places. This was according to the eternal purpose that he has realized in Christ Jesus our Lord,
 
 > **Romans 1:18-25** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
@@ -20067,5 +20083,5 @@ It should be:
 
 > **Hebrews 13:20-21** - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, equip you with everything good that you may do his will, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
 
--   **Download:** [PDF](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.pdf), [TEXT](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt), [MARKDOWN](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.md), [ORG](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.org)
+-   **Download:** [PDF](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.pdf), [TEXT](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/index.txt), [MARKDOWN](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.md), [ORG](https://raw.githubusercontent.com/semiosis/semiosis.github.io/master/README.org), [semiosis.github.io](https://semiosis.github.io/)
 

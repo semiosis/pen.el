@@ -18,6 +18,10 @@ export VIPIFY=y
 if test -n "$1"; then
     : ${CMD:="$(cmd-nice "$@")"}
     export EDITOR="$CMD"
+
+    # Also set VISUAL so tpop works
+    # echo hi | tpop vipe v
+    export VISUAL="$CMD"
 fi
 
 if is_tty; then
