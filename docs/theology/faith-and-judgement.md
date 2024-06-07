@@ -14134,7 +14134,7 @@ Know Jesus experientially:
 > **John 17:11-12** -  And I am no longer in the world, but they are in the world, and I am coming to you.  Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me.  I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled. (ESV)
 
 
-## Securely abiding in Jesus, abiding in Jesus Christ's love
+## Securely abiding in Jesus, abiding in Jesus Christ's love, and passing-forward Christ's love
 
 -   Loving Jesus and abiding in His love involves keeping His commandments
     -   Love one another as He loved us - the same way, selflessly, forgivingly, mercifully, compassionately
@@ -19814,6 +19814,56 @@ Before I was born-again, I had begun speaking out against evil and I had begun r
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
 
+## Christ's love
+
+Required to satisfy the "Christ's love" criteria I believe are:
+
+-   Our first agape love has to be Jesus
+-   We love because God loved us first. We ought to love others because we have been loved by God
+-   We forgive out of a loving response to God and to others, knowing we have already been forgiven of our debt
+-   It must satisfy Christ's law
+-   Acceptance comes at the beginning
+
+Our first agape love has to be Jesus:
+
+> **Revelation of John 2:1-5** - “To the angel of the church in Ephesus write: The One who holds the seven stars in His right hand, the One who walks among the seven golden lampstands, says this: ‘I know your deeds and your toil and perseverance, and that you cannot tolerate evil men, and you put to the test those who call themselves apostles, and they are not, and you found them to be false; and you have perseverance and have endured for My name’s sake, and have not grown weary. But I have this against you, that you have left your first (G4413 protos) love (G26 **agape**). Therefore remember from where you have fallen, and repent and do the deeds you did at first; or else I am coming to you and will remove your lampstand out of its place&#x2013;unless you repent. (NASB)
+
+Our love is in response to Christ having loved us first:
+
+> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
+
+> **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
+
+
+### Obedience to God and passing forward the love of Christ
+
+It was Father God's will that Jesus went to the cross:
+
+> **Luke 22:42** - saying, Father, if you are willing, remove this cup from me. Nevertheless, not my will, but yours, be done. (ESV)
+
+Jesus was willing to do God's will - Jesus was obedient:
+
+> **John 10:18** - No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
+
+In response to forgiveness, we must love:
+
+> **Luke 7:47** - Therefore I tell you, her sins, which are many, are forgiven—for she loved much. But he who is forgiven little, loves little. (ESV)
+
+He loved us first, and that is why and how we love (knowing we've already received mercy). Christ's love is not simply charity but a) it's passing-forward Christ's love, and b) it's to relieve other's burdens (mercy, not sacrifice):
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
+
+> **Acts 2:45** - And they were selling their possessions and belongings and distributing the proceeds to all, as any had need. (ESV)
+
+Jesus laid down His life. Maybe this says something about how we should also lay down our lives for each other:
+
+> **John 10:17** - For this reason the Father loves me, because I lay down my life that I may take it up again. (ESV)
+
+> **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
+
+
 ## 2020 (About 1 and a bit years before I was born-again of the Spirit)
 
 I was attempting to prove that "faithful, truthful, unconditional" love
@@ -20008,26 +20058,6 @@ Consider St Polycarp:
 -   [en.wikipedia.org: Polycarp - Wikipedia](https://en.wikipedia.org/wiki/Polycarp)
 
 I had to sacrifice the marriage proposal I made being born again in order to not put her in first place, and also to abide by Christ's law because selfish agape is no agape at all and love comes from God, and it's because God loved us first that we love, and whatever is not done in faith is sin and without the type of love Jesus showed us, faith is dead. And this is challenging ask but it's what God asks of us.
-
-Required to satisfy the "Christ's love" criteria I believe are:
-
--   Our first agape love has to be Jesus
--   We love because God loved us first. We ought to love others because we have been loved by God
--   We forgive out of a loving response to God and to others, knowing we have already been forgiven of our debt
--   It must satisfy Christ's law
--   Acceptance comes at the beginning
-
-Our first agape love has to be Jesus:
-
-> **Revelation of John 2:1-5** - “To the angel of the church in Ephesus write: The One who holds the seven stars in His right hand, the One who walks among the seven golden lampstands, says this: ‘I know your deeds and your toil and perseverance, and that you cannot tolerate evil men, and you put to the test those who call themselves apostles, and they are not, and you found them to be false; and you have perseverance and have endured for My name’s sake, and have not grown weary. But I have this against you, that you have left your first (G4413 protos) love (G26 **agape**). Therefore remember from where you have fallen, and repent and do the deeds you did at first; or else I am coming to you and will remove your lampstand out of its place&#x2013;unless you repent. (NASB)
-
-Our love is in response to Christ having loved us first:
-
-> **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
-
-> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
-
-> **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
 I am a new creation:
 
