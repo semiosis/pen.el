@@ -12260,9 +12260,9 @@ I see no problem with getting baptised again, personally.
 I see it as like renewing wedding vows.
 I've only been made a child of God, born-again of the spirit (grafted into Christ), once, though!
 
-I have been baptised 3 times total now.
+I have been baptised 3 times total now, but I would not recommend more than one baptism!
 
-But born-again as a child of God through the
+But being born-again as a child of God through the
 spirit only happened to me one time.
 
 But each time I was baptised it was in the
@@ -12278,9 +12278,9 @@ But at 35 I was spontaneously born-again of
 the Spirit after a little repentance and
 seeking God.
 
-Then I was drawn into a church soon after and
-I got baptised again, but experienced a lot of
-spiritual attack.
+After I was born-again of the spirit, I began studying and writing about early Christian writings including stuff which is not canon, and writing out and responding to my visions online, and that appears to have had a strong effect on my world and relationships.
+
+For example, as a consequence I had a dream of a mass baptism 10 days in advance and was drawn into a church again and I got baptised again, which in retrospect I believe was a mistake.
 
 I wanted to get baptised the last time to
 really show God I was all in with Jesus, with
@@ -12288,7 +12288,13 @@ nothing else, and to repent of sin,
 to repent of declaring any public endorsement of gay marriage,
 to fall out of agreement with Valentinianism,
 to repent towards holiness and a more sound
-understanding of the Christian faith.
+understanding of the Christian faith - I wanted a good conscience with God.
+
+And now I feel like I'm dealing with the
+fallout of a very messy and action-packed
+born-again experience, but at this stage I no
+longer feel condemnation, and I feel a lot
+stronger in my faith and prepared, and I have a good conscience with God.
 
 Repentance after being born-again of the Spirit is biblical:
 
@@ -12297,8 +12303,10 @@ Repentance after being born-again of the Spirit is biblical:
 Each time I was baptised, was into the names of the
 Father, Son and Holy Spirit.
 
+Well, actually, the third time I had actually been baptised in the names of Almighty Father God, His Only-Begotton and precious Jesus Christ, and His Holy Spirit.
+
 So therefore, I don't see the big problem with
-wanting to rededicate myself to Jesus.
+wanting to rededicate myself to Jesus, but I would definitely recommend sticking to doing this one time, and also at the point where you really want to partake in the resurrection of Jesus - I think believer's baptism is Scriptural.
 
 I don't have all the answers guys to how it
 works! But Jesus did say in
@@ -15575,6 +15583,8 @@ We should be able to see the transformation described in the sermon of the mount
 </tr>
 </tbody>
 </table>
+
+> **Jeremiah 29:13-14** - You will seek me and find me. When you seek me with all your heart, I will be found by you, declares the LORD, and I will restore your fortunes and gather you from all the nations and all the places where I have driven you, declares the LORD, and I will bring you back to the place from which I sent you into exile. (ESV)
 
 &#x2014;
 
@@ -19574,6 +19584,12 @@ I felt like giving up, and I cried out to Jesus one night to save me:
 
 > **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
+I had already begun to seek God before I was born-again of the Spirit / regenerated on 2 April 2022.
+
+> **Jeremiah 29:13-14** - You will seek me and find me. When you seek me with all your heart, I will be found by you, declares the LORD, and I will restore your fortunes and gather you from all the nations and all the places where I have driven you, declares the LORD, and I will bring you back to the place from which I sent you into exile. (ESV)
+
+I had begun trying to repent from sin by trying to follow the 10 commandments from the heart.
+
 
 ### With regards to God
 
@@ -19817,6 +19833,15 @@ I still hope for the personal acknowledgement from God that I have acted faithfu
 We're always seeking God's justification - but we live by faith in Christ Jesus, in belief to His promises and in obedience to His commandments all of our life as Christians - hoping for God's commendation.
 
 
+## The spiritual attack I have received in recent times
+
+The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure this is just a new dimension of spiritual life. I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
+
+> **John 3:12** - If I have told you earthly things and you do not believe, how can you believe if I tell you heavenly things? (ESV)
+
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
+
+
 ## I'm definitely leaving this stuff in God's court
 
 At the end of the day I am resting on the righteousness that comes through faith in Jesus - Amen to that.
@@ -19842,7 +19867,7 @@ I'm definitely taking this stuff to God's court and asking for grace to be sanct
 Sigh&#x2026;.
 
 On the bright side, last week I did get a picture of John Piper on YouTube saying "Jesus has given you clothes."
-That means that when I turn up in heaven I'll have 'clothes' so I can enter.
+That means that when I turn up in heaven I'll have 'clothes' so I can enter - the imputed righteousness of Christ.
 
 > **Revelation of John 3:4** - Yet you have still a few names in Sardis, people who have not soiled their garments, and they will walk with me in white, for they are worthy. (ESV)
 
@@ -19854,6 +19879,8 @@ But I have to keep seeking to be sanctified because Jesus is coming for me at so
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
 
 I was spiritually bankrupt and I knew I needed God's help.
+
+> **Jeremiah 29:13-14** - You will seek me and find me. When you seek me with all your heart, I will be found by you, declares the LORD, and I will restore your fortunes and gather you from all the nations and all the places where I have driven you, declares the LORD, and I will bring you back to the place from which I sent you into exile. (ESV)
 
 > **Ephesians 2:4-5** - But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
 
