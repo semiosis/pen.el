@@ -229,6 +229,18 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
+Jesus is the Rock:
+
+> **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
+
+Belief is important:
+
+> **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
+
+Obedience is important:
+
+> **Luke 6:46-48** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
+
 We learn Christ, and are taught by Christ (becoming obedient to His teachings and commandments) while we are **in** Him:
 
 > **Ephesians 4:20-21** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
@@ -2476,7 +2488,9 @@ We must come to Jesus for eternal life:
 
 > **John 5:39-40** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
 
-Jesus is the Rock.
+Jesus is the Rock:
+
+> **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
 Belief is important:
 
@@ -6675,7 +6689,9 @@ I affirm that even after regeneration and being healed, corruption has remained 
 
 I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
 
-Jesus is the Rock.
+Jesus is the Rock:
+
+> **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
 Belief is important:
 
@@ -7847,7 +7863,9 @@ When we are living our lives trusting in God, believing that He exists and rewar
 
 > **Hebrews 11:6** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
-Jesus is the Rock.
+Jesus is the Rock:
+
+> **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
 Belief is important:
 
