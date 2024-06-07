@@ -1337,15 +1337,25 @@ We are instructed to work for God:
 
 > **II John 1:8** - Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. (ESV)
 
-Once again, we are actually instructed to work for God, but it's not wrong under the right conditions:
+In believing in Jesus, we are guaranteed an inheritance in heaven:
+
+> **Ephesians 1:13,14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+
+The inheritance is in heaven:
+
+> **I Peter 1:4** - to obtain an inheritance which is imperishable and undefiled and will not fade away, reserved in heaven for you, (ESV)
+
+We work for the Lord while believing in Jesus:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
-All the Apostle Paul is saying here, I think is that in working for God, you haven't accepted a gift yet:
+So once again, we are actually instructed to work for God, but it's not wrong under the right conditions.
+
+All the Apostle Paul is saying here, I think is that in "working for God" doesn't imply you have accepted a gift. But, yes, you **can** accept the gift (believe in Jesus) and under that condition work for God:
 
 > **Romans 4:4** - Now to the one who works, his wages are not counted as a gift but as his due. (ESV)
 
-But we still really do need to accept the free gift! Actually, it's imperative, no matter how much we've been working for God, that we accept the free gift from God:
+We still really do need to accept the free gift! Actually, it's imperative, no matter how much we've been attempting to work for God, that we accept the free gift from God:
 
 > **Romans 4:5-8** - And to the one who does not work but trusts him who justifies the ungodly, his faith is counted as righteousness, just as David also speaks of the blessing of the one to whom God counts righteousness apart from works: Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin. (ESV)
 
@@ -16537,7 +16547,17 @@ The Holy Spirit dwelling within us guarantees our imperishable inheritance:
 
 > **I Peter 1:23** - for you have been born again not of seed which is perishable but imperishable, that is, through the living and enduring word of God.
 
+In believing in Jesus, we are guaranteed an inheritance in heaven:
+
 > **Ephesians 1:13,14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+
+The inheritance is in heaven:
+
+> **I Peter 1:4** - to obtain an inheritance which is imperishable and undefiled and will not fade away, reserved in heaven for you, (ESV)
+
+We work for the Lord while believing in Jesus:
+
+> **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
 Even our bodies will be raised imperishable:
 
