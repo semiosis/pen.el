@@ -291,7 +291,12 @@ If you want to really get to know someone then you would learn to walk in their 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
 
-### We overcome the world with a new spirit God has given us to wait and trust on Him and obey Him
+## The initial deal of the Holy Spirit comes with hearing the gospel and believing in Jesus
+
+> **Ephesians 1:13-14** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
+
+## We overcome the world with a new spirit God has given us to wait and trust on Him and obey Him
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
@@ -318,9 +323,7 @@ God sends His Spirit to help us to obey Him.
 
 In other words, believing the gospel and repentance leads to getting born-again of the Spirit.
 
-I believe that belief and obedience to Jesus naturally comes
-**before** being born-again of the Spirit, but
-that obedience is much easier **after** being
+I believe that belief and obedience to Jesus naturally comes **before** being born-again of the Spirit, but that obedience is much easier **after** being
 born-again of the Spirit, because this is the way it happened with me, and it's also scriptural.
 
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
@@ -338,7 +341,7 @@ But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assis
 > **Genesis 2:18** - Then the Lord (H3068 Yhovah) God (H430 'elohiym) said (H559 'amar), “It is not good (H2896 towb) for the man (H120 'adam) to be alone (H905 bad); I will make (H6213 \`asah) him a helper (H5828 \`ezer) suitable (H5048 neged) for him.”
 
 
-### The importance of loving one another
+## The importance of loving one another
 
 Believing Jesus, having the love of God within us, loving Father God, and loving one another who are children of God, all should be true together:
 
@@ -6296,7 +6299,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **Hebrews 5:7-10** - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to him who was able to save him from death, and he was heard because of his reverence. <ins>Although he was a son, he learned obedience through what he suffered.</ins> And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek.
     
-    I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light.
+    I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light which involves walking in love characteristic of Christ's love.
     
     <ins>II John 1:1-11 highlights</ins>:
     
@@ -6494,6 +6497,27 @@ Cleaned up (stop sinning) by having faith in the truth.
     6   profession; by extension, the system of religious (Gospel) truth
     7   itself:--assurance, belief, believe, faith, fidelity.
     8   see GREEK for 3982
+
+
+### Corruption remains a problem even for the regenerated
+
+The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) affirms that the problem of corruption remains after regeneration:
+
+     1  Paragraph 5
+     2  
+     3  The corruption of nature, during this life,
+     4  does remain in those that are regenerated;13
+     5  and although it be through Christ pardoned and
+     6  mortified, yet both itself, and the first
+     7  motions thereof, are truly and properly sin.14
+     8  
+     9  13 Rom. 7:18,23; Eccles. 7:20; 1 John 1:8
+    10  14 Rom. 7:23–25; Gal. 5:17
+
+I affirm that even after regeneration and being healed, corruption has remained a problem for me mainly because of the world I live in:
+
+-   the influences of worldly people, and
+-   the influences of demons.
 
 
 ### Bad desire - leads to death. We do not want to be enslaved to corruption
@@ -18274,22 +18298,44 @@ To be sanctified by faith in Jesus is an applied process, I think:
 
 > **Acts 26:18** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are **sanctified by faith in me**. (ESV)
 
-In similar fashion to Jesus continually obeying Father God as he endured suffering, I think we should learn to submit and follow Jesus' commandments
+Obeying Jesus Christ, and having love perfected in us is the most important part of sanctification, I think:
+
+> **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
+
+In similar fashion to Jesus continually obeying Father God as he endured suffering, I think we should learn to submit and follow Jesus' commandments:
 
 > **Hebrews 5:7-10** - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to him who was able to save him from death, and he was heard because of his reverence. <ins>Although he was a son, he learned obedience through what he suffered.</ins> And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek.
 
-I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light.
+The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) affirms that the problem of corruption remains after regeneration:
 
-So I was born-again of the Spirit and when that happened I was given some very strong faith/knowledge that God exists, but I still had to seek Jesus because the Bible says that anyone who
-claims to know Jesus but doesn't walk in His commandments is not telling the truth, and I want to come to know Jesus.
+     1  Paragraph 5
+     2  
+     3  The corruption of nature, during this life,
+     4  does remain in those that are regenerated;13
+     5  and although it be through Christ pardoned and
+     6  mortified, yet both itself, and the first
+     7  motions thereof, are truly and properly sin.14
+     8  
+     9  13 Rom. 7:18,23; Eccles. 7:20; 1 John 1:8
+    10  14 Rom. 7:23–25; Gal. 5:17
+
+
+## My experience in turning to love Jesus and obey Jesus
+
+I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light which involves walking in love characteristic of Christ's love.
+
+So I was born-again of the Spirit and when that happened I was given some very strong faith/knowledge that God exists, but I still had to seek Jesus because the Bible says that anyone who claims to know Jesus but doesn't walk in His commandments is not telling the truth, and I want to come to know Jesus.
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+
+## Repentance includes bearing fruit and being raised up as a child for Abraham
 
 John the Baptist taught repentance and love for one's neighbour before receiving the baptisim of **the Holy Spirit**:
 
 > **Luke 3:3-8** - And he went into all the region around the Jordan, proclaiming a baptism of repentance for the forgiveness of sins. As it is written in the book of the words of Isaiah the prophet, The voice of one crying in the wilderness: Prepare the way of the Lord, make his paths straight. Every valley shall be filled, and every mountain and hill shall be made low, and the crooked shall become straight, and the rough places shall become level ways, and all flesh shall see the salvation of God. He said therefore to the crowds that came out to be baptized by him, You brood of vipers! Who warned you to flee from the wrath to come? <ins>Bear fruits in keeping with repentance</ins>. And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-Regeneration is the sovereign work of **the Holy Spirit**, though. AMEN!! Nevertheless, I believe in allowing Jesus Christ to be my Lord.
+Regeneration is the sovereign work of **the Holy Spirit**, though. AMEN!! Nevertheless, I believe in allowing Jesus Christ to be my Lord and being sanctified through obedience to Jesus:
 
 > **John 3:5-8** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. Do not marvel that I said to you, You must be born again. The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit.
 
@@ -19754,6 +19800,8 @@ Immediately before I had that out-of-body meeting with the Holy Spirit, I had co
 
 Because I was trying to be obedient to God after being born-again, and I then had a prayer request after I considered I had become burnt out from going "all out for God", having given God my first fruits of being born-again for a full month.
 
+> **Genesis 4:4** - and Abel also brought of the firstborn of his flock and of their fat portions. And the LORD had regard for Abel and his offering, (ESV)
+
 I was in tears feeling as though I had poured out my heart in obedience to Jesus, and asked Him for one thing in prayer and it was me crying to God saying I have given Him everything but I don't have any love in my life and it was taken from me, then in my heart I accepted that I would see her again - you could call it faith, or deluding myself on purpose in order that I would be able to sleep, and I felt immediately better afterwards.
 
 I actually don't think it was a delusion though. I actually think it's the truth.
@@ -19830,7 +19878,7 @@ Forgiveness is very important:
 
 > **Matthew 6:14** - For if you forgive others their trespasses, your heavenly Father will also forgive you, (ESV)
 
-Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given.
+Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given. We have faith that we are justified in advance of receiving the personal commendation from Jesus, but that doesn't mean we don't need to obey. We still seek personal commendation from the Lord Jesus as we do not justify ourselves. So we should still live in faithful obedience to Jesus, following Him for the rest of our lives - just like Abraham's faith.
 
 The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life.
 
