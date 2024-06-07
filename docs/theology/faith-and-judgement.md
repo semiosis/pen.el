@@ -70,6 +70,33 @@ Jesus' disciples here were being led by Jesus. We're only not guilty if we're fo
 > **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
 
 
+### Notes for Chapter 9, paragraph 3
+
+     1  Paragraph 3
+     2  
+     3  Man, by his fall into a state of sin, has
+     4  wholly lost all ability of will to any
+     5  spiritual good accompanying salvation;4 so as
+     6  a natural man, being altogether averse from
+     7  that good, and dead in sin,5 is not able by
+     8  his own strength to convert himself, or to
+     9  prepare himself thereunto.6
+    10  
+    11  4 Rom. 5:6, 8:7
+    12  5 Eph. 2:1,5
+    13  6 Titus 3:3–5; John 6:44
+
+I don't **entirely** agree with this paragraph. But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
+
+Man's inability to do any spiritual good accompanying salvation is essentially like a broken-down car's inability to drive
+and without God's assistance by empowering us with His Holy Spirit (either inside or around us),
+though a person might seek after God or will to repent, they're not able to save themself.
+
+So the problem in my opinion is not the will to do the will of God but the ability to carry out the will of God.
+
+> **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+
+
 ## Heidelberg Catechism
 
 -   <https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism>
