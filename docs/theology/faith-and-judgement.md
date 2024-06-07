@@ -28,7 +28,7 @@ a Bible study. I have just wanted to read the Bible for myself to understand and
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real', and always Scriptural.
 
 
 ## 1689 Baptist confession of faith
@@ -61,7 +61,7 @@ AMEN!!
 
 > **Romans 4:5** - And to the one who does not work but <ins>trusts him who justifies the ungodly</ins>, his faith is counted as righteousness, (ESV)
 
-Walk according to the will of God. Walk the way Jesus Christ has called us to walk. **Led by the Spirit = following Jesus**:
+Walk according to the will of God. Walk the way Jesus Christ calls us to walk. **Led by the Spirit = following Jesus**. That's not *working* but it is *walking* and it is being obedient to Jesus. The Israelites through the Red Sea were being led by the Spirit - they were not working for God as they walked in obedience:
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
@@ -76,7 +76,7 @@ Jesus' disciples here were being led by Jesus. We're only not guilty if we're fo
 
 I affirm almost all of the Heidelberg Catechism. However, I see it as a teaching resource, and not Scripture. Though, after doing the independent Bible study below, I am pleasantly surprised to be in (from what I can currently tell) almost full agreement with it, with some minor differences. For example, when I read its logical statements such as <ins>"Q. What is the aim of the tenth commandment? A. That not even the&#x2026;"</ins>, I think there's a bit more to it.
 
-Also, I believe that [believer's baptism](https://www.gotquestions.org/believers-baptism.html) is Scriptural, where I yet need to be convinced about [infant baptism](https://www.gotquestions.org/infant-baptism.html) (although I myself was Christened as a baby, and I believe that no harm has come from that?).
+Also, I believe that [believer's baptism](https://www.gotquestions.org/believers-baptism.html) is Scriptural and should result in following Jesus, where I yet need to be convinced about [infant baptism](https://www.gotquestions.org/infant-baptism.html) (although I myself was Christened as a baby, and I believe that no harm has come from that?).
 
 I link the Heidelberg Catechism here for others' reference. By all means read the Heidelberg Catechism first.
 
@@ -1188,7 +1188,7 @@ Let's see what the word **katergazomai** (the word for 'work out') means:
     4  only     but     now      much     more     in       the      absence of me    with     fear     and
     5  Adv      Conj    Adv      Adj-DNS  Adv      Prep     Art-DFS  N-DFS   PPro-G1S Prep     N-GMS    Conj
 
-Work out (**katergazomai**) means here to perform your salvation by work (which has yet still been gifted to us, and the salvation which we are working is not the result of works):
+'Work out' (**katergazomai**) means here to perform your salvation by work (which has yet still been gifted to us, and the salvation which we are performing is not the result of works) - so I think it's more like 'walk'/'perform' rather than 'work':
 
     1  5156      3588     1438        4991      2716
     2  tromou    tēn      heautōn     sōtērian  katergazesthe
@@ -1202,6 +1202,10 @@ Work out (**katergazomai**) means here to perform your salvation by work (which 
     4   finish, fashion:--cause, to (deed), perform, work (out).
     5   see GREEK for 2596
     6   see GREEK for 2038
+
+Walk according to the will of God. Walk the way Jesus Christ calls us to walk. **Led by the Spirit = following Jesus**. That's not *working* but it is *walking* and it is being obedient to Jesus. The Israelites through the Red Sea were being led by the Spirit - they were not working for God as they walked in obedience:
+
+> **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
 So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction:
 
@@ -2718,7 +2722,7 @@ Jesus Christ is the Lord referred to:
 
 > **II Corinthians 3:15-18** - Yes, to this day whenever Moses is read a veil lies over their hearts. But when one turns to the Lord, the veil is removed. Now the Lord *(Κύριος, Kyrios, Lord, Master)* is the Spirit, and where the Spirit of the Lord is, there is freedom. And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
 
-Walk according to the will of God. Walk the way Jesus Christ has called us to walk. **Led by the Spirit = following Jesus**:
+Walk according to the will of God. Walk the way Jesus Christ calls us to walk. **Led by the Spirit = following Jesus**. That's not *working* but it is *walking* and it is being obedient to Jesus. The Israelites through the Red Sea were being led by the Spirit - they were not working for God as they walked in obedience:
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
