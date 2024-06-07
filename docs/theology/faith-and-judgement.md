@@ -986,10 +986,15 @@ Jesus' act of obedience leads to:
 -   justification
 -   life
     -   I believe that the life of Jesus helps us to stop sinning
+    -   Even though we are born of the Spirit, we still live the rest of the time on earth in obedience to Jesus to get to know Jesus and become like Him in His death
 
 > **Romans 5:18** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. (ESV)
 
 > **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. (ESV)
+
+Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in his sufferings) and His resurrection:
+
+> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
 We are saved from the wrath of God by the life of Jesus Christ. I think that's in part saying that the life of Jesus helps us to stop practicing sinful things:
 
@@ -3764,7 +3769,7 @@ All of these I believe belong under the umbrella of faith, not works:
 -   Getting baptised is not 'dead works'. It's obedience.
 -   Obeying Jesus Christ's commandments are not 'dead works'. It's obedience.
 
-Faith presses on to walk the same way Jesus walked:
+Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in his sufferings) and His resurrection:
 
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
