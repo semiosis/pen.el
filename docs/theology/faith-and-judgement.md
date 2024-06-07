@@ -26,7 +26,51 @@ a Bible study. I have just wanted to read the Bible for myself to understand and
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
 
-# Heidelberg Catechism
+# Confessions of faith
+
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
+
+
+## 1689 Baptist confession of faith
+
+-   <https://www.the1689confession.com/>
+
+
+### Chapter 1
+
+     1  Paragraph 10
+     2  
+     3  The supreme judge, by which all controversies
+     4  of religion are to be determined, and all
+     5  decrees of councils, opinions of ancient
+     6  writers, doctrines of men, and private
+     7  spirits, are to be examined, and in whose
+     8  sentence we are to rest, can be no other but
+     9  the Holy Scripture delivered by the Spirit,
+    10  into which Scripture so delivered, our faith
+    11  is finally resolved
+    12  
+    13  21 Matt. 22:29, 31, 32; Eph. 2:20; Acts 28:23
+
+AMEN!!
+
+
+### Notes for Chapter 2, paragraph 1
+
+> **Numbers 14:18** - The LORD is slow to anger and abounding in steadfast love, forgiving iniquity and transgression, but he will **by no means clear the guilty**, visiting the iniquity of the fathers on the children, to the third and the fourth generation. (ESV)
+
+> **Romans 4:5** - And to the one who does not work but <ins>trusts him who justifies the ungodly</ins>, his faith is counted as righteousness, (ESV)
+
+Walk according to the will of God. Walk the way Jesus Christ has called us to walk. **Led by the Spirit = following Jesus**:
+
+> **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
+
+Jesus' disciples here were being led by Jesus. We're only not guilty if we're following Jesus:
+
+> **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
+
+
+## Heidelberg Catechism
 
 -   <https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism>
 
@@ -2624,9 +2668,9 @@ Walk according to the will of God. Walk the way Jesus Christ has called us to wa
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
-Jesus' disciples here were being led by Jesus:
+Jesus' disciples here were being led by Jesus. We're only not guilty if we're following Jesus:
 
-> **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the guiltless. For the Son of Man is lord of the Sabbath. (ESV)
+> **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
 
 Those who love Him, obey Him:
 
@@ -7266,6 +7310,8 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 > **Colossians 2:5-6** - For though I am absent in body, yet I am with you in spirit, rejoicing to see your good order and the firmness of your faith in Christ. Therefore, <ins>as you received Christ Jesus the Lord,</ins> **so walk in him,** (ESV)
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+> **I Peter 1:2-3** - according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you. Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead, (ESV)
 
 Even the demons are subject to the authority of Jesus Christ, but they certainly don't have a response of love for God.
 
