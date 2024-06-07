@@ -92,9 +92,13 @@ Man's inability to do any spiritual good accompanying salvation is essentially l
 and without God's assistance by empowering us with His Holy Spirit (either inside or around us),
 though a person might seek after God or will to repent, they're not able to save themself.
 
+> **Acts 17:26-27** - And he made from one man every nation of mankind to live on all the face of the earth, having determined allotted periods and the boundaries of their dwelling place, that they should seek God, in the hope that they might feel their way toward him and find him. Yet he is actually not far from each one of us, (ESV)
+
 So the problem in my opinion is not the will to do the will of God but the ability to carry out the will of God.
 
 > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
+
+> **Matthew 7:7** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. (ESV)
 
 
 ## Heidelberg Catechism
@@ -172,7 +176,7 @@ In Christ Jesus there is freedom from things which were bad for us, including se
 
 > **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God. (ESV)
 
-We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
+We are freed from, for example, making the worries of the world our first thought in the day such as thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments in actuality, to be able to love God, I believe with our **whole** heart, soul, mind and strength and to love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, passing-forward Christ's love to others, the blood of Jesus cleanses us from all sin:
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
@@ -1223,7 +1227,7 @@ Let's see what the word **katergazomai** (the word for 'work out') means:
     4  only     but     now      much     more     in       the      absence of me    with     fear     and
     5  Adv      Conj    Adv      Adj-DNS  Adv      Prep     Art-DFS  N-DFS   PPro-G1S Prep     N-GMS    Conj
 
-'Work out' (**katergazomai**) means here to perform your salvation by work (which has yet still been gifted to us, and the salvation which we are performing is not the result of works) - so I think it's more like 'walk'/'perform' rather than 'work':
+'Work out' (**katergazomai**) means here to perform your salvation by work (which has yet still been gifted to us, and the salvation which we are performing is not the result of works) - so I think it's more like 'walk'*'perform'*'obey' similarly to the Israelites through the Red Sea, but with respect to obeying the gospel, rather than 'work' in any way that is not in obedience to the gospel:
 
     1  5156      3588     1438        4991      2716
     2  tromou    tēn      heautōn     sōtērian  katergazesthe
@@ -7038,7 +7042,7 @@ Also, it looks like John Piper has another talk on this:
 
 In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
-We are freed from making the worries of the world our first thought in the day, and thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments which felt so difficult before - to be able to love God with our whole heart, soul, mind and strength and love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, the blood of Jesus cleanses us from all sin:
+We are freed from, for example, making the worries of the world our first thought in the day such as thinking always in terms of "will I have enough money, for example", to instead, with the Holy Spirit in us, thinking correctly, having joy in being able to live out the great commandments in actuality, to be able to love God, I believe with our **whole** heart, soul, mind and strength and to love our neighbour as ourselves, and as we abide in Jesus Christ, focused on Jesus as our Pearl of Great Price, obeying God in word and deed, passing-forward Christ's love to others, the blood of Jesus cleanses us from all sin:
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
