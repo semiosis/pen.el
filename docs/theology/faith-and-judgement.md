@@ -286,14 +286,65 @@ Belief (in the heart) that Jesus is the Son of God leads to:
 
 > **I John 5:3-5** - For this is the love of God, that **we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world.** And this is the victory that has overcome the world—our faith. **Who is it that overcomes the world except the one who believes that Jesus is the Son of God?** (ESV)
 
+
+## Experiential heart belief through obedience
+
 If you want to really get to know someone then you would learn to walk in their footsteps. Belief must arrive in the heart, not merely the head. There's a confession, an admittance, and a belief in the heart:
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
 
-## The initial deal of the Holy Spirit comes with hearing the gospel and believing in Jesus
+## Repentance from sin may come before believing in Jesus
+
+> **Acts 19:4** - And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. (ESV)
+
+
+## A person who is really believing in Jesus will do the works of Jesus - they'll produce good works
+
+This doesn't necessarily mean that obedience is nonexistent before good works, as believing in Jesus is obedience, and repentance is obedience and these things are not good works but belief and obedience are better described as simply ending the bad works:
+
+> **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+But repentance and belief should result in good works (serving the living God):
+
+> **Hebrews 9:14** - how much more will the blood of Christ, who through the eternal Spirit offered himself without blemish to God, purify our conscience from dead works to serve the living God. (ESV)
+
+
+## Everyone who is actively and actually believing that Jesus is the Christ has been born of God
+
+But we must turn to obedience to Jesus and loving with Christ's love to come to know Him:
+
+> **I John 5:1** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
+
+
+### Receiving the inheritance naturally comes after hearing the word of truth and believing in Jesus
+
+The initial seal of the Holy Spirit comes with hearing the gospel and believing in Jesus.
 
 > **Ephesians 1:13-14** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
+
+## Further repentance from sin and to come to love in the way that Jesus did is an inevitable consequence of being born of God i.e. truly believing in Jesus
+
+People are able to repent from sin before coming to believe in Jesus but it's much easier and inevitable after coming to believe in Jesus.
+
+God's spirit really helps us to stop sinning. Actively believing in Jesus should produce the fruit of putting a stop to sin:
+
+> **I John 3:9** - No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. (ESV)
+
+> **I John 5:18** - We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him. (ESV)
+
+
+## Knowing God by obeying Jesus and loving with Christ's love implies you have at some stage been born of God
+
+> **I John 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+> **I John 5:1** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
+
+
+## Obedience lead to belief which leads to obedience (loving with Christ's love with the help of God's spirit) which leads to overcoming the world
+
+> **I John 5:4** - For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. (ESV)
 
 
 ## We overcome the world with a new spirit God has given us to wait and trust on Him and obey Him
@@ -10747,8 +10798,10 @@ Actually complying with the law (not breaking it) is good:
 
 > **Luke 16:15-17** - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God.  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
 
--   John the baptist taught 'turn from sin and believe in the One to come'.
--   Jesus taught to 'come to and believe in Him (Jesus) for forgiveness and stop sinning'.
+-   John the baptist taught 'turn from sin and believe in the One to come':
+    -   **Acts 19:4** - And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. (ESV)
+-   Jesus taught to 'come to and believe in Him (Jesus) for forgiveness and stop sinning':
+    -   **John 8:11** - She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
 
 > **Acts 3:25-26** - You are the sons of the prophets and of the covenant that God made with your fathers, saying to Abraham, And in your offspring shall all the families of the earth be blessed. God, having raised up his servant, **sent him to you first, to bless you by turning every one of you from your wickedness**.
 
