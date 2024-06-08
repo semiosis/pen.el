@@ -75,6 +75,17 @@
   (interactive)
   (dired-sort-other "-alXGh --group-directories-first"))
 
+;; j:dired-sort-set-mode-line is actually really cool though, because it demonstrates a variable mode-line mode minor-mode status
+(defun dired-sort-other (switches &optional no-revert)
+  "Specify new `ls' SWITCHES for current Dired buffer.
+Values matching `dired-sort-by-date-regexp' or `dired-sort-by-name-regexp'
+set the minor mode accordingly, others appear literally in the mode line.
+With optional second arg NO-REVERT, don't refresh the listing afterwards."
+  (dired-sort-R-check switches)
+  (setq dired-actual-switches switches)
+  ;; (dired-sort-set-mode-line)
+  (or no-revert (revert-buffer)))
+
 (add-hook 'dired-mode-hook 'dired-sort-dirs-first)
 
 (require 'dired)

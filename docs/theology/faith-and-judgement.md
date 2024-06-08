@@ -65,7 +65,7 @@ If you have trusting faith in God then you will walk according to the will of Go
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
-Jesus' disciples here were being led by Jesus. We're only not guilty if we're following Jesus:
+Jesus' disciples here were being led by Jesus. As I understand it, we're only not guilty if we're trusting Jesus who justifies the ungodly. Trusting Him who justifies the ungodly has noticeable fruit of following Him because those who trust Him follow Him:
 
 > **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
 
@@ -86,13 +86,13 @@ Jesus' disciples here were being led by Jesus. We're only not guilty if we're fo
     12  5 Eph. 2:1,5
     13  6 Titus 3:3–5; John 6:44
 
-I don't **entirely** agree with this paragraph. But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
+I don't **entirely** agree with this paragraph saying all ability of will is lost. But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
 
 Man's inability to do any spiritual good accompanying salvation is essentially like a broken-down car's inability to drive
 and without God's assistance by empowering us with His Holy Spirit (either inside or around us),
 though a person might seek after God or will to repent, they're not able to save themself.
 
-> **Acts 17:26-27** - And he made from one man every nation of mankind to live on all the face of the earth, having determined allotted periods and the boundaries of their dwelling place, that they should seek God, in the hope that they might feel their way toward him and find him. Yet he is actually not far from each one of us, (ESV)
+> **Acts 17:26-27** - And he made from one man every nation of mankind to live on all the face of the earth, having determined allotted periods and the boundaries of their dwelling place, <ins>that they should seek God, in the hope that they might feel their way toward him and find him.</ins> Yet he is actually not far from each one of us, (ESV)
 
 So the problem in my opinion is not the will to do the will of God but the ability to carry out the will of God.
 
@@ -162,11 +162,15 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 -   **Billy Graham really explains this quite well:** [Born Again | Billy Graham Classic - YouTube @time: 10 min 50 sec](https://youtube.com/watch?v=CGS2A1RBo00&t=650)
 
-I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace.
+I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace - a slave to righteousness.
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
 > **Romans 6:22-23** - But now having been freed from sin and **enslaved to God**, you derive your benefit, resulting in sanctification, and the outcome, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (NASB)
+
+> **Romans 6:18-20** - and, having been set free from sin, have become **slaves of righteousness**. I am speaking in human terms, because of your natural limitations. For **just as** <ins>you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness</ins>, **so now** <ins>present your members as slaves to righteousness leading to sanctification.</ins> When you were slaves of sin, you were free in regard to righteousness. (ESV)
+
+We are saved while believing in the name of Jesus of Nazareth, the only Son of God:
 
 > **John 3:18** - **Whoever believes in him is not condemned**, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
 
@@ -836,7 +840,7 @@ There is always more chances to believe:
 
 In believing we have eternal life, but we need to continue in obedience to Jesus Christ or will not see life, so there should be a change of behaviour:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 Jesus Christ is our Lord and Teacher - that means we obey Him:
 
@@ -1038,7 +1042,7 @@ That's confirmed here:
 
 We need to obey Jesus to see the life. That obedience isn't "working" but it is "performing/carrying out" but our justification isn't contingent on "working":
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -1800,7 +1804,7 @@ Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 I think believing in the Son is also obedience, but it is an act of obedience which is a gift to us.
 
@@ -2231,6 +2235,8 @@ There is a transformation in the heart of a born-again Christian that involves c
 
 > **Ezekiel 11:19-20** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
+> **Romans 6:18-20** - and, having been set free from sin, have become **slaves of righteousness**. I am speaking in human terms, because of your natural limitations. For **just as** <ins>you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness</ins>, **so now** <ins>present your members as slaves to righteousness leading to sanctification.</ins> When you were slaves of sin, you were free in regard to righteousness. (ESV)
+
 
 ## I believe that a loving, trusting ( <ins>believing</ins> and <ins>obedient</ins> ) heart for Jesus Christ is essential for permanent abiding in Him
 
@@ -2287,8 +2293,8 @@ If a person believes on Jesus and what He has accomplished they should arrive at
 I think faith in Jesus grows as both of these qualities increase, and leads to actual knowledge of Christ:
 
 -   Whoever believes in Jesus Christ, the Only-Begotten Son of God, is not condemned.
--   Otherwise, those who don't believe that fully and do not obey the gospel, I think fall into condemnation.
--   Those who obey in part yet do not believe the gospel, I think fall into condemnation.
+-   Otherwise, those who don't believe that fully and do not obey the gospel, I think fall into condemnation or tribulation.
+-   Those who obey in part yet do not believe the gospel, I think fall into condemnation or tribulation.
 
 Nevertheless, if someone believes on Him they have begun to obey Him, and so I believe they are in the Lord while they **trust in His name, Jesus Christ (Messiah) the Son of God, to be saved**, as the following applies:
 
@@ -2693,12 +2699,13 @@ Abraham was <ins>justified when He believed with an obedient heart</ins> but fai
 > **James 2:21-23** - Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
 
 Where previously I said "I'm going out on a limb when I say that without an obedient heart the so-called belief <ins>doesn't qualify as belief:</ins>",
-my best interpretation of this now is that, believing in Jesus Christ, a person has obeyed Jesus and has eternal life which is to know Jesus and Father God, but this belief must be true belief, incorporating a sense of 'trust' towards Jesus, the type of trust that elicits obedience.
+my best interpretation of this now is that, believing in Jesus Christ, a person has obeyed Jesus and has eternal life at that point or in their future, which is to know Jesus and Father God, but this belief must be true belief, incorporating a sense of 'trust' towards Jesus, the type of trust that elicits obedience in the heart - but also if they don't continue in obedience they may not "see life" and the wrath of God may remain on that person - so we must actually repent from sin and seek to know Jesus by following His commandments.
+
 We need to obey Jesus in order to have a good life, and without obedience to Jesus the wrath of God remains. I really believe we should both believe and obey Jesus, but I don't want to condemn people when I am not the judge, and nor can I see the person's heart.
 
 We need to obey Jesus to see the life. That obedience isn't "working" but it is "performing/carrying out" but our justification isn't contingent on "working":
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -2793,7 +2800,7 @@ Jesus commands us to take His yoke (obey Him) and learn from Him (believe Him):
 
 Whoever believes Jesus obeys Jesus - His sheep hear his voice, <ins>trust and obey</ins>:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 God loves those who love Him and keep His commandments:
 
@@ -2837,7 +2844,7 @@ so long as we are His sheep, coming to Him (by following His commandments), we w
 
 > **John 6:37** - All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. (ESV)
 
-I believe that anyone who is trusting in Jesus for His finished work is saved. Believing the gospel is obeying the gospel. I just think there's more to it in terms of abiding forever. Because we must bear fruit etc. and follow His commandments to come to know Him. I don't condemn anyone who is believing on Him for life through His name.
+I believe that anyone who is trusting in Jesus for His finished work is saved. Believing the gospel and trusting on Him who raised Jesus for the dead for our justification is obeying the gospel. I just think there's more to faith than just belief, to the end of knowing your Saviour (knowing God) / abiding forever. Because we must bear fruit etc. and follow His commandments to come to know Him. I don't condemn anyone who is believing on Him for life through His name.
 
 Doing the will of God is what it means to be led by the Spirit. So you have to **do** the will of God, being a servant of Christ under the law of Christ, to have the blessing of not being condemned by the law of Moses:
 
@@ -2851,7 +2858,7 @@ If you have trusting faith in God then you will walk according to the will of Go
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
-Jesus' disciples here were being led by Jesus. We're only not guilty if we're following Jesus:
+Jesus' disciples here were being led by Jesus. As I understand it, we're only not guilty if we're trusting Jesus who justifies the ungodly. Trusting Him who justifies the ungodly has noticeable fruit of following Him because those who trust Him follow Him:
 
 > **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
 
@@ -3097,7 +3104,7 @@ We must live for the will of God:
 If a person doesn't obey Jesus and His commandments then they probably are not saved because they either deny they have the spiritual circumcision which causes us to obey,
 or they do not have the heart to obey and receive salvation - so they are a goat, not a sheep.
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 
 ### Doing the will of God
@@ -3498,7 +3505,7 @@ The Holy Spirit is received through faith:
 
 We need to obey Jesus to see the life. That obedience isn't "working" but it is "performing/carrying out" but our justification isn't contingent on "working":
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 On the other hand, if we obey Jesus we will never see death:
 
@@ -3807,7 +3814,7 @@ We should be sanctified by the Truth, as we trust in God, trust in Jesus, trust 
 
 > **John 17:8-26** - For I have given them the words that you gave me, and they have received them and have come to know in truth that I came from you; and they have believed that you sent me.  I am praying for them. I am not praying for the world but for those whom you have given me, for they are yours.  All mine are yours, and yours are mine, and <ins>I am glorified in them</ins>.  And I am no longer in the world, but they are in the world, and I am coming to you. Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me. I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled.  But now I am coming to you, and these things I speak in the world, that they may have my joy fulfilled in themselves.  I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world.  I do not ask that you take them out of the world, but that you keep them from the evil one.  They are not of the world, just as I am not of the world.  Sanctify them in the truth; your word is truth.  As you sent me into the world, so I have sent them into the world.  And for their sake I consecrate myself, that they also may be sanctified in truth.  I do not ask for these only, but also for those who will believe in me through their word, that they may all be one, just as you, Father, are in me, and I in you, that they also may be in us, so that the world may believe that you have sent me.  The glory that you have given me I have given to them, that they may be one even as we are one, I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me.  Father, I desire that they also, whom you have given me, may be with me where I am, to see my glory that you have given me because you loved me before the foundation of the world.  O righteous Father, even though the world does not know you, I know you, and these know that you have sent me.  I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them.
 
-We're not being saved by our works - we've already been redeemed, and we are justified by faith in Jesus, but we are also sanctified by faith in Jesus Christ. God is the one who justifies:
+We're not being justified by our works - we've already been redeemed, and we are justified by faith in Jesus, but we are also sanctified by faith in Jesus Christ. God is the one who justifies:
 
 > **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show <ins>his righteousness</ins> at the present time, so that he might be just and **the justifier of the one who has faith in Jesus**. (ESV)
 
@@ -3815,7 +3822,7 @@ We must be obedient to God, we must be obedient to Jesus, repenting and followin
 
 > **Hebrews 12:9-11** - Besides this, we have had earthly fathers who disciplined us and we respected them. Shall we not much more be subject to the Father of spirits and live? For they disciplined us for a short time as it seemed best to them, but <ins>he disciplines us for our good, that we may share his holiness</ins>. For the moment all discipline seems painful rather than pleasant, but later it **yields the peaceful fruit of righteousness** to those who have been **trained** by it. (ESV)
 
-We're not being saved by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
+We're not being justified by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
 
 > **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
 
@@ -3860,7 +3867,7 @@ We are implored to strive to follow Jesus to our best ability:
 
 Where there is perfect belief, I think there is perfect obedience:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 > **Matthew 5:44-45** - But I say to you, love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven; for He causes His sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
 
@@ -4734,7 +4741,7 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 You **must** obey Jesus, and that is choosing **light** and choosing **love**:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 
 ### Get to know Jesus by believing Him and following His commandments
@@ -7157,7 +7164,7 @@ We **have been** ransomed from our futile ways, so that our ways may change, and
 
 Believing in Jesus and obeying Jesus go hand in hand:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 Jesus' commandments are all about selfless love. We must abide in Jesus' teaching and believe. It's imperative that as we go ahead, we **must** abide in the teaching of Christ. Confessing the coming of Jesus Christ in the flesh, and walking according to Jesus' commandments go hand in hand:
 
@@ -7337,7 +7344,7 @@ We've been created in Christ Jesus for good works:
 
 > **Ephesians 2:10** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
 
-We're not being saved by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
+We're not being justified by our works - we've already been redeemed, but we do works out of love for Jesus, and out of ongoing faith, ongoing obedience:
 
 > **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
 
@@ -7611,32 +7618,43 @@ Heresies/delusions:
     -   Not trusting Jesus who has done the finished work for their justification
 -   <ins>Lordship without free grace</ins> (working to be forgiven, without belief in the truth)
     -   Not willing to accept that Jesus Christ is the propitiation for our sins.
-    -   Not willing to submit to the righteousness of God.
+    -   Not willing to submit to the righteousness of God which is once again, to accept the propitiation for our sins.
+        -   We must know that God loved us and sent his Son to be the propitiation for our sins.
     -   Trusting on their own works to appease God's wrath.
     -   Not believing Jesus has done the finished work for their justification
 
 I believe that either of those two heresies/delusions <ins>likely</ins> (but I'm not the judge) fall under this strong delusion category. It's very serious if they indeed do:
 
-> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness.  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit and belief in the truth.**  (ESV)
+> **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit and belief in the truth.**  (ESV)
 
-Justified i.e. has faith:
+Justified and saved from wrath i.e. has faith:
 
--   Love for Jesus
+-   Response of love for Jesus
+    -   **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
+    -   **Ephesians 6:6** - not by the way of eye-service, as people-pleasers, but as <ins>servants of Christ, doing the will of God</ins> **from the heart**,
 -   trusting on the finished work of Jesus and **trusting on Jesus Himself** who has done the work
     -   Obedient to Jesus
     -   The finished work of Jesus covers them
 
 > **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
-Probably not justified i.e. without faith:
+Probably not saved from wrath i.e. without faith:
 
--   trusting on the finished work of Jesus **while not trusting on Jesus Himself** who has done the work
-    -   Disobedient to Jesus (not Jesus' sheep)
-    -   The finished work of Jesus probably doesn't help them
+-   trusting on the finished work of Jesus **while not trusting on Jesus Himself** who has done the work?
+    -   No love for Jesus (not Jesus' sheep)
+        -   not trying to keep His commandments
+        -   no response of love for Jesus
+    -   The finished work of Jesus probably doesn't help them because they don't receive it by uniting the gospel with faith
+
+Probably not justified:
+
+-   not submitting to the righteousness of God
+    -   not accepting that they needed forgiveness
+    -   not accepting that God loved them first by atoning for their sin
 
 Seriously, this verse:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
@@ -7721,7 +7739,7 @@ Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 
 ### Yield to God
@@ -12006,7 +12024,7 @@ Please God, give me the righteousness required to enter the kingdom.
 
 > **John 3:16** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 > **John 5:34** - Not that the testimony that I receive is from man, but I say these things so that you may be saved. (ESV)
 
@@ -12780,7 +12798,7 @@ Keeping Jesus Christ's commandments is a <ins>requirement</ins> to inherit etern
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 Therefore, I don't want to flat-out disqualify people who do not have precisely the correct doctrine or theology.
 
@@ -15326,7 +15344,7 @@ was very important for me through that time, so that I wasn't led astray by paga
 
 Obeying Jesus is very important:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 
 ### An obedient/loving response to Jesus, I think is extremely important
@@ -20405,6 +20423,10 @@ The more vocal I become about Jesus and the more I align with the Truth, the mor
 > **John 3:12** - If I have told you earthly things and you do not believe, how can you believe if I tell you heavenly things? (ESV)
 
 I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
+
+I think what this verse says is that putting a stop to sin goes a long way to 
+
+> **I John 5:18** - We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him. (ESV)
 
 
 ## I'm definitely leaving this stuff in God's court

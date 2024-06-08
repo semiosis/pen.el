@@ -4,6 +4,12 @@ export TTY
 export REPOS="$HOME/repos"
 gitfolder="$REPOS"
 
+if ! test "$SUPPRESS_EXTRA_INFO" = "y"; then
+    args="$@"
+    echo  "$(basename "$0") $args $(date)" | hls red blue 1>&2
+    export SUPPRESS_EXTRA_INFO=y
+fi
+
 # $VC_DUMP
 
 # examples:
