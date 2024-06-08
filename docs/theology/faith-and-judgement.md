@@ -229,6 +229,18 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
+Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+
+Bear fruit to prove to be a disciple of Jesus:
+
+> **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
+
+People will recognise we are Jesus' disciples by the love we have for one another:
+
+> **John 13:35** - By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
 Jesus is the Rock:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
@@ -2194,6 +2206,10 @@ I agree whole heartedly with this guy:
 -   [Are All Christians Disciples? (Lordship Salvation)](https://www.youtube.com/watch?v=BCQX4R1mFAk)
 
 I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian.
+
+Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
 
 There is a transformation in the heart of a born-again Christian that involves changing allegiance towards Jesus Christ, resulting in the will to obey Jesus, and God gives us the spirit to help us to obey Him.
 
@@ -10698,7 +10714,15 @@ We must obey Jesus.
 
 > **Colossians 1:28** - Him we proclaim, warning everyone and teaching everyone with all wisdom, that we may present everyone mature in Christ. (ESV)
 
-> **Philippians 3:8-17** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. **Let those of us who are mature think this way**, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. (ESV)
+The righteousness from God that depends on faith (obedient faith). We are found in Christ by exercising and passing forward Christ's love. Mature in Christ means knowing Jesus, the Truth, which necessitates obeying Him:
+
+> **Philippians 3:8-17** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may **know him and the power of his resurrection**, and may <ins>share his sufferings</ins>, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. **Let those of us who are mature think this way**, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. (ESV)
+
+Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
+
+> **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+
+And they will **know** the Truth.
 
 
 ### Don't be an enemy of the cross to others - Don't allow enemies of the cross to deter you
