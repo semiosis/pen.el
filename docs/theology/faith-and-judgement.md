@@ -1126,9 +1126,19 @@ With God's help, we must drop the old selfish self and allow Jesus to come in wi
 
 > **Psalms 37:27** - Turn away from evil and do good; so shall you dwell forever. (ESV)
 
-Selfish people killed Jesus. Jesus was selfless. Jesus was obedient to God unto death. We identify with Christ with a death like His, to be united with Him in a resurrection like His! This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
+Selfish people killed Jesus. Jesus was selfless. Christian selfless love is based upon God having loved us first; i.e. Christ's love has more nuance to it than mere charity.
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
+
+Jesus was obedient to God unto death.
+We identify with Christ with a death like His (dying to sin and living to serve God), to be united with Him in a resurrection like His!
+This is why obedience to Jesus is so important. How can a person be resurrected if they don't die? We need to die a death to be resurrected:
 
 > **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
+
+Dying with Christ is an immediate thing and also a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
+
+> **Romans 6:8-10** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. (ESV)
 
 I think baptism of water is an **appeal** to God and identifying oneself into Christ's death and resurrection but the sacrament **maybe** is not strictly required to be saved (as far as I understand).
 
@@ -1140,7 +1150,7 @@ As I understand it, in water baptism we make an appeal to partake in the resurre
 
 > **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
 
-The most important baptism is the baptism of the Holy Spirit, and I **think** that water baptism is an appeal to partake in it:
+I **think** that water baptism in part is an appeal to partake in the baptism of the Holy Spirit:
 
 > **I Corinthians 12:13** - For in one Spirit we were all baptized into one body—Jews or Greeks, slaves or free—and all were made to drink of one Spirit. (ESV)
 
@@ -14271,6 +14281,10 @@ Know Jesus experientially:
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
 > **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+Dying with Christ is an immediate thing and also a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
+
+> **Romans 6:8-10** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. (ESV)
 
 
 ### Anyone who doesn't abide will be thrown away like a branch and withers. Eventually they will be into the fire (Hell, I assume)
