@@ -1,9 +1,14 @@
 (require 'pen-dates-and-locales)
 
-(defset hymn-yt-urls '("[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s][Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene d???CHRISTIAN piano - YouTube]]"
-                       "[[https://www.youtube.com/watch?v=z6vR_FV7s7c][4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i?? - YouTube]]"
-                       "[[https://www.youtube.com/watch?v=9oVSJUk9wDg][The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano - YouTube]]"
-                       "[[https://www.youtube.com/watch?v=atM1QICvvtI][Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer - YouTube]]"))
+(defset hymn-yt-urls '("[[https://www.youtube.com/watch?v=K5qgKMWbo4c&t=1s][youtube.com: Wait On The Lord : Piano Instrumental Music With Scriptures & Autumn Scene d???CHRISTIAN piano]]"
+                       "[[https://www.youtube.com/watch?v=z6vR_FV7s7c][youtube.com: 4 Hours Best TOP 27 Worship Piano Instrumental for Prayer and Meditation e,?e??i??i??]]"
+                       "[[https://www.youtube.com/watch?v=9oVSJUk9wDg][youtube.com: The Love Of God : Instrumental Worship, Meditation & Prayer Music with Nature d???CHRISTIAN piano]]"
+                       "[[https://www.youtube.com/watch?v=atM1QICvvtI][youtube.com: Praise - Elevation worship | Instrumental Worship | Soaking Music | Deep Prayer]]"
+                       "[[https://www.youtube.com/watch?v=0v-JiclgWKE][youtube.com: Here I Am to Worship - 3 Hour Instrumental Soaking Worship for Prayer & Healing]]"
+                       "[[https://www.youtube.com/watch?v=hRuVDZndzhU][youtube.com: ?Worship & Prayer Instrumental Music - Gentle Instrumental Church Hymns to Calm the Soul]]"
+                       "[[https://www.youtube.com/watch?v=YIBNUIhqyFI][youtube.com: 24/7 HYMNS: A Peaceful Morning With JESUS  - soft piano hymns + loop]]"
+                       "[[https://www.youtube.com/watch?v=K6BpMe9BlzU&t=2759s][youtube.com: 24/7 HYMNS:  Early Morning With The Father Hymns - soft piano hymns + loop]]"
+                       "[[https://www.youtube.com/watch?v=S0j3BzPEy3w][youtube.com: 24/7 HYMNS: Thank God Its A New Day Hymns - soft piano hymns + loop]]"))
 
 (defun dgs-get-weekly-hymn-music-link (&optional week)
   (setq week (or week (date-week-number)))
