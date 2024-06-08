@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  8 JUN 2024 14:36
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  8 JUN 2024 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1233,14 +1233,14 @@ Overfull \hbox (21.60612pt too wide) in paragraph at lines 18859--18860
 [390] [391] [392] [393] [394] [395] [396] [397] [398] [399] [400]
 Missing character: There is no 􀧁 in font [lmroman10-regular]:mapping=tex-text;!
  [401]
-Overfull \hbox (4.60612pt too wide) in paragraph at lines 21491--21492
+Overfull \hbox (4.60612pt too wide) in paragraph at lines 21497--21498
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][]$[] 
  []
 
 
-Overfull \hbox (51.34987pt too wide) in paragraph at lines 21507--21508
+Overfull \hbox (51.34987pt too wide) in paragraph at lines 21513--21514
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1248,7 +1248,7 @@ $[]
  []
 
 
-Overfull \hbox (28.60112pt too wide) in paragraph at lines 21524--21525
+Overfull \hbox (28.60112pt too wide) in paragraph at lines 21530--21531
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][]$[] 
@@ -1256,7 +1256,7 @@ Overfull \hbox (28.60112pt too wide) in paragraph at lines 21524--21525
  []
 
 [402]
-Overfull \hbox (34.34987pt too wide) in paragraph at lines 21540--21541
+Overfull \hbox (34.34987pt too wide) in paragraph at lines 21546--21547
 []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][][]
 [][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] 
 [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]$[
@@ -1264,7 +1264,7 @@ Overfull \hbox (34.34987pt too wide) in paragraph at lines 21540--21541
  []
 
 [403]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 21589--21590
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 21595--21596
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1272,19 +1272,19 @@ Overfull \hbox (110.33736pt too wide) in paragraph at lines 21589--21590
  []
 
 [404] [405] [406] [407] [408] [409] [410]
-Overfull \hbox (176.56859pt too wide) in paragraph at lines 22028--22028
+Overfull \hbox (176.56859pt too wide) in paragraph at lines 22034--22034
 [] \TU/lmtt/m/n/10.95 5  Work/Love/Walking-By-Faith = Obedience * Faithfulness 
 * Fear-of-God * Response-of-love-to-Jesus * Patient-Endurance(time)[] 
  []
 
 
-Overfull \hbox (44.34737pt too wide) in paragraph at lines 22028--22028
+Overfull \hbox (44.34737pt too wide) in paragraph at lines 22034--22034
 [] \TU/lmtt/m/n/10.95 7  Obedience = Submitting to the Righteousness of God * T
 urning from sin, loving, showing mercy, etc.[] 
  []
 
 
-Overfull \hbox (395.02104pt too wide) in paragraph at lines 22028--22028
+Overfull \hbox (395.02104pt too wide) in paragraph at lines 22034--22034
 [] \TU/lmtt/m/n/10.95 9  Fear-of-God = e.g. The poor in spirit recognise their 
 need of God's mercy and tremble at His Word: "beat his breast, saying, God, be 
 merciful to me, a sinner!"[] 
@@ -1293,47 +1293,47 @@ merciful to me, a sinner!"[]
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 Missing character: There is no ∝ in font [lmmono10-regular]:!
 [411] [412]
-Overfull \hbox (8.86021pt too wide) in paragraph at lines 22171--22172
+Overfull \hbox (8.86021pt too wide) in paragraph at lines 22177--22178
 []|   [] \TU/lmr/m/n/10.95 The Son
  []
 
 [413]
-Overfull \hbox (0.99814pt too wide) in paragraph at lines 22201--22202
+Overfull \hbox (0.99814pt too wide) in paragraph at lines 22207--22208
 []|   [] \TU/lmr/m/n/10.95 The end
  []
 
 
-Overfull \hbox (103.30942pt too wide) in paragraph at lines 22221--22222
+Overfull \hbox (103.30942pt too wide) in paragraph at lines 22227--22228
 []
  []
 
 [414]
-Overfull \hbox (26.29262pt too wide) in paragraph at lines 22277--22278
+Overfull \hbox (26.29262pt too wide) in paragraph at lines 22283--22284
 []|   [] \TU/lmr/m/n/10.95 When Christ
  []
 
 
-Overfull \hbox (192.63947pt too wide) in paragraph at lines 22297--22298
+Overfull \hbox (192.63947pt too wide) in paragraph at lines 22303--22304
 []
  []
 
 [415]
-Overfull \hbox (443.05136pt too wide) in paragraph at lines 22337--22338
+Overfull \hbox (443.05136pt too wide) in paragraph at lines 22343--22344
 []
  []
 
 
-Overfull \hbox (65.31293pt too wide) in paragraph at lines 22377--22378
+Overfull \hbox (65.31293pt too wide) in paragraph at lines 22383--22384
 []
  []
 
 [416]
-Overfull \hbox (5.95848pt too wide) in paragraph at lines 22427--22428
+Overfull \hbox (5.95848pt too wide) in paragraph at lines 22433--22434
 []|   [] \TU/lmr/m/n/10.95 Jesus will give
  []
 
 
-Overfull \hbox (17.31909pt too wide) in paragraph at lines 22447--22448
+Overfull \hbox (17.31909pt too wide) in paragraph at lines 22453--22454
 []|   []
  []
 
@@ -1504,7 +1504,7 @@ Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ׃ in font [lmmono10-regular]:!
 Missing character: There is no ס in font [lmmono10-regular]:!
  [481] [482] [483] [484] [485]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 26313--26314
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 26325--26326
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1514,34 +1514,34 @@ Overfull \hbox (110.33736pt too wide) in paragraph at lines 26313--26314
 [486] [487] [488] [489] [490] [491] [492] [493] [494] [495] [496] [497]
 [498] [499] [500] [501] [502] [503] [504] [505] [506] [507] [508] [509]
 [510] [511] [512] [513] [514] [515]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 28011--28012
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 28023--28024
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
 [516] [517] [518] [519] [520] [521] [522]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 28376--28376
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 28388--28388
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 28376--28376
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 28388--28388
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
 
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 28389--28389
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 28401--28401
 [] \TU/lmtt/m/n/10.95 8  Nevertheless, I live to serve You, God, and to be conf
 ormed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28410.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28422.
 [523]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28410.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28422.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 28410.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28410
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 28422.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28422
 .
 
 
@@ -1551,11 +1551,11 @@ Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 (rerunfilecheck)             Before: 
-(rerunfilecheck)             After:  79DE9120F0837FDCEC2AB2157FC787C4.
+(rerunfilecheck)             After:  C8E3DF4052B4E25E5D7881D687791F46.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28410.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28422.
  ) 
 Here is how much of TeX's memory you used:
  10958 strings out of 494868

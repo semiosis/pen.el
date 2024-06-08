@@ -14230,6 +14230,10 @@ Jesus is the cornerstone. We must believe in Christ Jesus and obey His words, an
 
 To know Jesus and Father God, then you **must** follow His commandments, and they must not be a burden on us, but we follow them with the faith of Abraham.
 
+We want to know Jesus experientially because Jesus has made us His own:
+
+> **Philippians 3:12** - Not that I have already obtained this or am already perfect, but I press on to make it my own, **because Christ Jesus has made me his own.** (ESV)
+
 Knowing God means we know that God loved us first, even loved us as God loved Jesus:
 
 > **John 17:23** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
@@ -14260,13 +14264,13 @@ Getting to know Jesus will come to result in you too abiding in the Son and in t
 
 My intuition says that walking as Jesus walked and obeying His commandments and believing in the truth produces in us an empathy for Jesus.
 
--   **empathy:** understanding and entering into another's feelings
+-   **Meaning of the word **empathy**::** "understanding and entering into another's feelings"
 
 We can know in part what Jesus experienced by walking in the truth as he walked.
 
 However, I believe keeping Jesus' word and obeying Jesus also leads to communion with Him and with Father God in the Spirit:
 
--   **communion:** sharing thoughts and feelings
+-   **Meaning of the word **communion**::** "sharing thoughts and feelings"
 
 > **John 14:22-23** - Judas (not Iscariot) said to him, Lord, how is it that you will manifest yourself to us, and not to the world? Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him.
 
@@ -14305,7 +14309,7 @@ Dying with Christ is an immediate thing and also a lifelong (while on this earth
 > **John 17:11-12** -  And I am no longer in the world, but they are in the world, and I am coming to you.  Holy Father, keep them in your name, which you have given me, that they may be one, even as we are one.  While I was with them, I kept them in your name, which you have given me.  I have guarded them, and not one of them has been lost except the son of destruction, that the Scripture might be fulfilled. (ESV)
 
 
-## Securely abiding in Jesus, abiding in Jesus Christ's love, and passing-forward Christ's love
+## Deeply abiding in Jesus, abiding in Jesus Christ's love, and passing-forward Christ's love
 
 -   Loving Jesus and abiding in His love involves keeping His commandments
     -   Love one another as He loved us - the same way, selflessly, forgivingly, mercifully, compassionately
@@ -18989,6 +18993,10 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 We must get to know God through knowing Jesus:
 
 > **John 14:7-9** - <ins>If you had known me, you would have known my Father also. From now on you do know him and have seen him.</ins> Philip said to him, Lord, show us the Father, and it is enough for us. Jesus said to him, Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father?
+
+We want to know Jesus experientially because Jesus has made us His own:
+
+> **Philippians 3:12** - Not that I have already obtained this or am already perfect, but I press on to make it my own, **because Christ Jesus has made me his own.** (ESV)
 
 A relationship is formed between the obedient person and God:
 
