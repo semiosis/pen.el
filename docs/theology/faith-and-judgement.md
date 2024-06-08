@@ -9227,6 +9227,8 @@ We are in the Spirit now, not the flesh, and we have Christ in us, and we are no
 
 > **Romans 8:8-9** - Those who are in the flesh cannot please God. You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
 
+> **I Corinthians 3:23** - and you are Christ's, and Christ is God's. (ESV)
+
 > **II Corinthians 5:16** - From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. (ESV)
 
 Christ is alive in us. The body is dead because of sin:
@@ -13742,6 +13744,8 @@ Abiding in Christ, one abides in God.
 
 > **1 John 4:15** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
 
+> **I Corinthians 3:23** - and you are Christ's, and Christ is God's. (ESV)
+
 Thomas going from unbelief to belief.
 
 > **John 20:27-28** - Then he said to Thomas, Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe. Thomas answered him, My Lord and my God!
@@ -14256,9 +14260,9 @@ However, I believe keeping Jesus' word and obeying Jesus also leads to communion
 
 > **John 14:22-23** - Judas (not Iscariot) said to him, Lord, how is it that you will manifest yourself to us, and not to the world? Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him.
 
-Believe God's testimony concerning His Son. Know the testimony:
+Knowing Jesus Christ and Him crucified means believing the testimony and also knowing Jesus experientially through becoming like Him in His death. Believe God's testimony concerning His Son. Know the testimony:
 
-> **I Corinthians 2:1-2** - And I, when I came to you, brothers, did not come proclaiming to you the testimony of God with lofty speech or wisdom. For I decided to know nothing among you except Jesus Christ and him crucified. (ESV)
+> **I Corinthians 2:1-2** - And I, when I came to you, brothers, did not come proclaiming to you the testimony of God with lofty speech or wisdom. For I decided to **know** nothing among you except **Jesus Christ and him crucified**. (ESV)
 
 > **I John 5:10** - Whoever believes in the Son of God has the testimony in himself. Whoever does not believe God has made him a liar, because he has not believed in the testimony that God has borne concerning his Son. (ESV)
 
@@ -14367,6 +14371,8 @@ It's God's grace that enables us to be saved through faith. While we are saved e
 ## We in Christ, Christ in us
 
 [What Does it Mean to be in Christ? - YouTube](https://www.youtube.com/watch?v=LNZ-ZBsPpgk)
+
+> **I Corinthians 3:23** - and you are Christ's, and Christ is God's. (ESV)
 
 
 ### Jesus Christ is in us
@@ -15028,6 +15034,23 @@ But the Kingdom of God exists from Heaven to Earth.
 But adhering to the law like a Pharisee is like strapping yourself to a razor blade, but that doesn't mean the law is wrong.
 
 > **Romans 3:20** - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin.
+
+The law doesn't save:
+
+> **Galatians 3:21-24** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. (ESV)
+
+The law doesn't save:
+
+> **Hebrews 7:19** - (for the law made nothing perfect); but on the other hand, a better hope is introduced, through which we draw near to God. (ESV)
+
+
+### Instead of adhering to the law like a Pharisee we should become obedient to Jesus
+
+That means loving others the way He loved us, and it involves accepting that He loved us first (through the atoning sacrifice):
+
+> **Matthew 5:20** - For I tell you, unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven. (ESV)
+
+We believe God and believe God has sent Jesus to be the propitiation for our sins, and love others freely with Christ's love, relieving their burdens and forgiving their trespasses against us, as we have freely received love and forgiveness from God. This is actually following the Great Commandments to love God and our neighbour properly.
 
 
 ## Follow the law mercifully and without self-righteousness, accountable to God, being a servant to others
