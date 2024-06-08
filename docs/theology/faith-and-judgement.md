@@ -6835,6 +6835,12 @@ I just want to be clear that good works we do in obedience to Jesus are still co
 
 > **Ephesians 2:8-9** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
+Justification and redemption are a total gift:
+
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. (ESV)
+
+Justification by obedience and justification by 'faith alone' are subordinate matters, in my opinion, because all the good works we do as a consequence of being redeemed are a gift to us.
+
 > -   **Eph 2:8** - For by grace you have been saved through faith (G4102 pistis); and that not of yourselves, it is the gift (G1435 doron) of God; (NASB)
 > -   **Eph 2:9** - not as a result of works (G2041 ergon), so that no one may boast. (NASB)
 > -   **Eph 2:10** - For we are His workmanship, created in Christ Jesus for good works (G2041 ergon), which God prepared beforehand so that we would walk in them. (NASB)
@@ -7802,6 +7808,13 @@ Jesus is so generous that He saves even unthankful people, but we should definit
 > **Luke 17:11-19** - On the way to Jerusalem he was passing along between Samaria and Galilee. And as he entered a village, he was met by ten lepers, who stood at a distance and lifted up their voices, saying, Jesus, Master, have mercy on us. When he saw them he said to them, Go and show yourselves to the priests. And as they went they were cleansed. Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. Then Jesus answered, Were not ten cleansed? Where are the nine? Was no one found to return and give praise to God except this foreigner? And he said to him, Rise and go your way; your faith has made you well. (ESV)
 
 
+### Justification and redemption are a total gift
+
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. (ESV)
+
+Justification by obedience and justification by 'faith alone' are subordinate matters, in my opinion, because all the good works we do as a consequence of being redeemed are a gift to us.
+
+
 ### Just believe/obey Jesus to receive more faith and revelation and salvation
 
 The account of Jesus itself when it's read, and Jesus' words, are enough to inspire faith. Therefore, faith comes by hearing the word of Christ.
@@ -7845,9 +7858,40 @@ And I feel like we just need to start obeying God and obeying Jesus in order to 
 
 > **Exodus 15:2** - The Lord is my strength and my song, and he has become my salvation; this is my God, and I will praise him, my father's God, and I will exalt him.
 
-Salvation is the gift, and faith implies an obedient heart. Works can be dead works when they're not done in faith. Faith is what justifies. But faith works. Faith requires obedience to God. Faithless works do not justify:
+Justification and redemption are a total gift:
 
-> **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. (ESV)
+
+Justification by obedience and justification by 'faith alone' are subordinate matters, in my opinion, because all the good works we do as a consequence of being redeemed are a gift to us.
+
+Salvation is the gift, and faith implies an obedient heart. Works can be dead works when they're not done in faith. Faith is what justifies. But faith works. Faith requires obedience to God. Faithless works do not justify. The works here that Paul speaks of are the works of the person who has been saved. It's Jesus' work on the cross which has brought us salvation:
+
+> **Ephesians 2:8-9** - For **by grace you have been saved (G4982 sozo) through faith.** And this is not your own doing; it is the gift of God, not a result of works (G2041 **ergon**), so that no one may boast. (ESV)
+
+    1  :  4982  sozo  sode'-zo
+    2  
+    3   from a primary sos (contraction for obsolete saos, "safe"); to save,
+    4   i.e. deliver or protect (literally or figuratively):--heal, preserve,
+    5   save (self), do well, be (make) whole.
+
+    1  :  2041  ergon  er'-gon
+    2  
+    3   from a primary (but obsolete) ergo (to work); toil (as an effort or
+    4   occupation); by implication, an act:--deed, doing, labour, work.
+
+I believe it's Jesus' works primarily, and that obedience on our part is an inevitable consequence of our redemption which is a gift to us, so to say we are justified by works (and James refers to Rahab who is mentioned in Hebrews 11) is really to say justified by obedience, but obedience is just a heart attitude that is part of faith and any work done in obedience is nothing to boast about:
+
+> **James 2:24** - You see that a person is justified (G1344 **dikaioo**) by works (G2041 **ergon**) and not by faith alone. (ESV)
+
+    1  :  1344  dikaioo  dik-ah-yo'-o
+    2  
+    3   from 1342; to render (i.e. show or regard as) just or innocent:--free,
+    4   justify(-ier), be righteous.
+    5   see GREEK for 1342
+
+Since it's faith in Him who raised from the dead Jesus our Lord that matters for justification, those who trust and obey God out of obedient faith are justified:
+
+> **Romans 4:23-25** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
 1.  The obedience of faith
 
