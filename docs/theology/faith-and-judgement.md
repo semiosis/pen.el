@@ -527,7 +527,13 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 
 ## Our will should be for God's will to be done, and to will to do God's will
 
+We may ask God for a willing spirit:
+
 > **Psalms 51:10-12** - Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from your presence, and take not your Holy Spirit from me. Restore to me the joy of your salvation, and uphold me with a **willing** spirit. (ESV)
+
+Obedience is good:
+
+> **Psalms 40:6-8** - Sacrifice and offering you have not desired, but you have given me an open ear. Burnt offering and sin offering you have not required. Then I said, Behold, I have come; in the scroll of the book it is written of me: **I desire to do your will, O my God; your law is within my heart**. (ESV)
 
 I believe that eventually our own will lines up with God's will for us, and I believe that His will is that we will to do His will, and that we will for His will to be done. So I believe we should desire both to do His will as God has revealed to us though the Scriptures, and also to desire that God's will be done over our own will, but that our will may become His will.
 
@@ -1016,7 +1022,7 @@ Jesus' act of obedience leads to:
 
 > **Romans 5:18** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. (ESV)
 
-> **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. (ESV)
+> **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in his sufferings) and His resurrection:
 
@@ -6750,7 +6756,10 @@ Even from James' perspective, it's clearly apparent that God surely can forgive 
 
 > **James 5:15-16** - And **the prayer of faith will save the one who is sick**, and the Lord will raise him up. <ins>And if he has committed sins, he will be forgiven</ins>. Therefore, <ins>confess your sins to one another and pray for one another, that you may be healed.</ins> The prayer of a righteous person has great power as it is working. (ESV)
 
-I think the solution to the justification by 'faith without work' and justification by 'faith with works' apparent paradox is that if a person is actually obeying Jesus then the works can be attributed to Jesus.
+I think the solution to the justification by 'faith without work' and justification by 'faith with works' apparent paradox is that:
+
+-   if a person is actually obeying Jesus then the works can be attributed to Jesus, and
+-   obedience is just one aspect of faith.
 
 Because it's faith in **Jesus Himself** that matters.
 
@@ -6890,7 +6899,7 @@ See even the Apostle Paul from my perspective has entertained the idea that a pe
 
 > **James 2:24** - You see that a person is justified by works and not by faith alone. (ESV)
 
-Also, Jesus' own work on the cross is sufficient work for us to be justified by faith alone without our own work, but that does not mean we should not work for God through obedience which is characteristic of faith, even for our salvation, or be sanctified in the Truth through trusting obedience to God, and arrive at the knowledge of the Truth, even that Jesus Christ is the propitiation of our sin and works in us to save us.
+Also, Jesus' own work on the cross is sufficient work for us to be justified by faith alone without our own work, but that does not mean we should not <ins>'work'/walk for God through obedience</ins> which is characteristic of faith, even for our salvation, or be sanctified in the Truth through trusting obedience to God, and arrive at the knowledge of the Truth, even that Jesus Christ is the propitiation of our sin and works in us to save us.
 
 > **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
@@ -6922,7 +6931,15 @@ should be received by faith, faith which
 includes the belief of faith and the obedience
 of faith, such as obedience to the discipline
 of Christ, that should yield the peaceful
-fruit of righteousness.
+fruit of righteousness. 
+
+I believe we should have a noticable change of heart and behaviour as a result of trusting obedient faith in Jesus:
+
+> **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit:
+
+> **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
 
 I think we should always be seeking the glory
 of our Jesus Christ, not seeking our own
@@ -6955,9 +6972,13 @@ Seeking God in truth and not seeking glory from one another is a good place to s
 
 > **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
-I believe we should have a noticable change of heart and behaviour as a result of faith in Jesus:
+I believe we should have a noticable change of heart and behaviour as a result of trusting obedient faith in Jesus:
 
 > **II Corinthians 5:21** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
+
+We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit:
+
+> **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
 
 I don't think James contradicts Paul because I think faith alone is sufficient but that working faith is fine "You'll know them by their fruits.". Also it's God, not us, who justifies:
 
@@ -7216,11 +7237,17 @@ God rewards faith and may choose to reveal Himself after a while serving God in 
 
 ## Obedience belongs in faith
 
-In God's mercy He has shown us the Way to be reconciled with Him. He has given us Jesus. He has told us what to do, and we can choose to be obedient or to not be obedient.
+-   Firstly, obedience is a heart attitude, so a person can have obedient faith without any work.
+-   Secondly, obedient action is nothing to boast about before God, because God commanded you to do it.
+-   Thirdly, "working for God" is as step beyond obedient action.
+
+In God's mercy He has shown us the Way to be reconciled with Him.
+He has given us Jesus, and we just need to have faith in Him.
+He has told us what to believe and what to do, and we can choose to be obedient in believing and acting or to not be obedient - to be disobedient.
 
 Jesus is the author of our faith, so having faith is grace from God, and even if works are working with our faith, it's all by grace and we still can't boast before God because our faith and our works are all gifted to us from God.
 
-For example, Noah's works of building the ark was given to Him by God. God even outlined every detail.
+For example, Noah's works of building the ark was given to Him by God. God even outlined every detail. Noah acted obediently to God's instruction.
 
 > **Hebrews 12:1-2** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the **founder** and **perfecter** of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God.
 
@@ -7273,7 +7300,7 @@ But those who's father is the devil lie out of their own character - they mean t
 
 > **Hebrews 11:24-26** - By faith Moses, when he was grown up, refused to be called the son of Pharaoh's daughter, choosing rather to be mistreated with the people of God than to enjoy the fleeting pleasures of sin. **He considered the reproach of Christ greater wealth than the treasures of Egypt, for he was looking to the reward**.
 
-We should pursue Jesus Christ similarly. God commanded it.
+We should pursue Jesus Christ similarly. God commanded it:
 
 > **Mark 9:7** - And a cloud overshadowed them, and a voice came out of the cloud, This is my beloved Son; listen to him.
 
@@ -7327,12 +7354,17 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **II John 1:9** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-Obedience is good.
+Obedience is good:
 
-> **Psalms 40:6-8** - Sacrifice and offering you have not desired, but you have given me an open ear. Burnt offering and sin offering you have not required. Then I said, Behold, I have come; in the scroll of the book it is written of me: I desire to do your will, O my God; your law is within my heart. (ESV)
+> **Psalms 40:6-8** - Sacrifice and offering you have not desired, but you have given me an open ear. Burnt offering and sin offering you have not required. Then I said, Behold, I have come; in the scroll of the book it is written of me: **I desire to do your will, O my God; your law is within my heart**. (ESV)
 
-'Working' for God is OK when it's done in faith.
-Obedience is intrinsic to faith.
+'Working' for God is OK when it's done in faith:
+
+> **James 2:22-23** - You see that faith was active along with his works, and faith was completed by his works; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness—and he was called a friend of God. (ESV)
+
+> **I Corinthians 3:9** - For we are God's fellow workers. You are God's field, God's building. (ESV)
+
+Obedience is intrinsic to faith:
 
 > **Hebrews 11:31** - By faith Rahab the prostitute did not perish with those who were disobedient, because she had given a friendly welcome to the spies.
 
@@ -7770,6 +7802,7 @@ Faith is like Peter stepping out on the water. Faith works. But I think sometime
 
 The LORD did something similar for the Israelites when He parted the Red Sea.
 The Israelites obeyed God, and their obedience led them to sure belief.
+The Israelites didn't "work for God" as they obeyed God to walk through the Red Sea. Walking in obedience is not the same as "working".
 The Israelites were an actual part of the miracle of going through the Red Sea. By obeying God, God was sending them through the Red Sea.
 Obedience, belief and trust are all important in faith.
 
@@ -7814,7 +7847,10 @@ Salvation is the gift, and faith implies an obedient heart. Works can be dead wo
     
     > **Exodus 14:14-16** - The Lord will fight for you, and you have only to be silent.  The Lord said to Moses, Why do you cry to me? Tell the people of Israel to go forward.  Lift up your staff, and stretch out your hand over the sea and divide it, that the people of Israel may go through the sea on dry ground.
     
-    When it says "not a result of works", I believe that something more like, even if works were tied into the faith, it's by grace. If a person's saving faith included works then that is fine.
+    The Israelites didn't "work for God" as they obeyed God to walk through the Red Sea. Walking in obedience is not the same as "working".
+    
+    When it says <ins>"not a result of works"</ins>, I believe it means something more like, "even if works were tied into the obedient faith, it's by grace".
+    If a person's saving faith included works then that is fine.
     
     > **I Corinthians 4:7** - For who sees anything different in you? What do you have that you did not receive? If then you received it, why do you boast as if you did not receive it? (ESV)
     
@@ -9621,7 +9657,7 @@ A person must be at least willing to do His will - obedience is at the essence o
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
-There is still obedience required. Obedience is intrinsic to faith.
+There is still obedience required. Obedience is intrinsic to faith. The Israelites didn't "work for God" to be saved from the Egyptians, but they "walked obediently for God":
 
 > **Exodus 14:14-16** - The Lord will fight for you, and you have only to be silent.  The Lord said to Moses, Why do you cry to me? Tell the people of Israel to go forward.  Lift up your staff, and stretch out your hand over the sea and divide it, that the people of Israel may go through the sea on dry ground.
 
@@ -10117,7 +10153,7 @@ A person must be at least willing to do His will - obedience is at the essence o
 
 > **John 7:17** - If anyone is willing to do His will, he will know of the teaching, whether it is of God or whether I speak from Myself.
 
-There is still obedience required. Obedience is intrinsic to faith. Obedience leads to knowledge of Jesus.
+There is still obedience required. Obedience is intrinsic to faith. Obedience leads to knowledge of Jesus:
 
 > **John 8:31-32** - So Jesus was saying to those Jews who had believed Him, “If you **continue in My word**, then you are truly disciples of Mine; and **you will know the truth**, and the truth will make you free.” (NASB)
 
@@ -18794,6 +18830,14 @@ This definitely indicates that we should try to keep Jesus Christ's commandments
 
 
 ## We have free will. We must believe God
+
+We may ask God for a willing spirit:
+
+> **Psalms 51:10-12** - Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from your presence, and take not your Holy Spirit from me. Restore to me the joy of your salvation, and uphold me with a **willing** spirit. (ESV)
+
+Obedience is good:
+
+> **Psalms 40:6-8** - Sacrifice and offering you have not desired, but you have given me an open ear. Burnt offering and sin offering you have not required. Then I said, Behold, I have come; in the scroll of the book it is written of me: **I desire to do your will, O my God; your law is within my heart**. (ESV)
 
 There is intellectual belief and there is experiential belief, and we could have both, by having both belief and obedience to Jesus.
 To believe, we must be seeking God, not glory from one another:
