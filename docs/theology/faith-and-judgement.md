@@ -25,6 +25,14 @@ a Bible study. I have just wanted to read the Bible for myself to understand and
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
+Because God loved us first:
+
+-   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+    -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
+    -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
+-   We should love because He loved us first
+-   We must forgive as we have been forgiven
+
 
 # Confessions of faith
 
@@ -1028,7 +1036,7 @@ Jesus' act of obedience leads to:
 
 > **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
 
-Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in his sufferings) and His resurrection:
+Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
 
 > **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
 
@@ -1832,6 +1840,14 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 > The Greek word *pisteuó* carries connotations of deep trust and
 > confidence. It means to believe, to entrust, to have confidence in
 > something.
+
+Have faith in God and have faith in Jesus:
+
+> **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+
+Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 I think faith is more like hopeful/trusting belief that results in action (walking by faith).
 
@@ -6944,6 +6960,14 @@ We are God's workmanship:
 
 We absolutely must have a response of love for God - we must abide in Christ's love to abide in God.
 
+Because God loved us first:
+
+-   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+    -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
+    -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
+-   We should love because He loved us first
+-   We must forgive as we have been forgiven
+
 The redemption in Christ Jesus is a gift, and
 is a substitutionary atonement that is
 received through faith in Jesus.
@@ -10267,7 +10291,17 @@ Here it says that unless the church **does the work** which it had started out d
 
 > **Revelation of John 2:5** - Remember therefore from where you have fallen; repent, and do the works you did at first. If not, I will come to you and remove your lampstand from its place, unless you repent.
 
-A response of love for Jesus **is** justifying work.
+Because God loved us first:
+
+-   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+    -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
+    -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
+-   We should love because He loved us first
+-   We must forgive as we have been forgiven
+
+If there is such a thing as justifying work then it is better described as obedient faith (**Hebrews 11:31**, **James 2:25**) and obedient faith is "being found in Christ".
+
+Is a response of love for Jesus **is** justifying 'work'? It would be based on being forgiven first.
 
 > **Luke 7:47-50** - Therefore I tell you, her sins, which are many, are forgiven-for she loved much. But he who is forgiven little, loves little. And he said to her, Your sins are forgiven. Then those who were at table with him began to say among themselves, Who is this, who even forgives sins? And he said to the woman, Your faith has saved you; go in peace. (ESV)
 
@@ -13016,6 +13050,12 @@ A Psalm of David:
 
 > **John 8:46-47** - Which one of you convicts me of sin? If I tell the truth, why do you not believe me? Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
 
+Jesus' friends do what Jesus' commands them. Jesus' friends hear His voice:
+
+> **John 3:29** - The one who has the bride is the bridegroom. The friend of the bridegroom, who stands and hears him, rejoices greatly at the bridegroom's voice. Therefore this joy of mine is now complete. (ESV)
+
+> **John 15:14** - You are my friends if you do what I command you. (ESV)
+
 
 # Marriage
 
@@ -13247,6 +13287,18 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 > **1 Timothy 1:8-11** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice **homosexuality**, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
 Not that I was or am perfect, but I have been following Jesus so I'm on Jesus' side. I was born-again and [filled with the Holy Spirit in 2022](https://web.archive.org/web/20220702053809/https://mullikine.github.io/posts/astral-projection-pt-3/) after I had begun to repent and seek God. For many years before that I've been denied relationships, but it's after I was born-again and actively following Jesus that I was denied marriage, and it was very obvious to me that it was an antichrist/antirelationship/slander spirit attacking me after I was born-again (only now I could easily see it working through people), and I feel like the spiritual attack (i.e. spirit spouse, LGBT dreams etc., thrown out of churches) I have received as a fallout for choosing Jesus, and endeavouring to abide by Christ's law, instead of using the [documented fact I was born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) as an excuse to plead not-guilty in court, I feel like has damaged me spiritually in ways which I have not experienced before. This is ultimately going to God's court because I feel like I have tried my best to remain faithful to God, and now I need full deliverance. I pray it does, and for the grace to be sanctified and for ultimate deliverance from those demons.
+
+> **Romans 4:7-8** - Blessed are those whose lawless deeds are forgiven, and whose sins are covered; <ins>blessed is the man against whom the Lord will not count his sin.</ins> (ESV)
+
+I pray that God will not count sin done in my brokenness.
+
+Trusting Him means having faith in Him, obeying, believing in God and having the fear of God, believing, following, yielding to Jesus. Ungodly here means wicked or behaviour not in accordance with the knowledge of God. Only God can justify the ungodly, so that's why by following Him, knowing we can be ungodly, we have the hope of God justifying us:
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+
+This qualifies:
+
+> **Luke 18:13** - But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! (ESV)
 
 
 ### I was learning Christ before I was born-again
@@ -14141,9 +14193,9 @@ And if a person doesn't believe in reality, then that person probably isn't save
 
 **However**, if a person trusts him who justifies the ungodly, his faith is counted as righteousness.
 
-Trusting Him means having faith in Him, obeying. Ungodly here means wicked.
+Trusting Him means having faith in Him, obeying, believing in God and having the fear of God, believing, following, yielding to Jesus. Ungodly here means wicked or behaviour not in accordance with the knowledge of God. Only God can justify the ungodly, so that's why by following Him, knowing we can be ungodly, we have the hope of God justifying us:
 
-> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness,
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 This qualifies:
 
@@ -15819,6 +15871,33 @@ But I believe we are forgiven to forgive others. That must be part of the act of
 > **Matthew 6:15** - but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. (ESV)
 
 
+### We have been saved, we are being saved, and we will be saved
+
+-   [simplybible.com: Saved in Three Tenses](https://www.simplybible.com/f066-sure-saved-in-three-tenses.htm)
+
+We have been saved (when we believed):
+
+> **II Timothy 1:9** - who saved us and called us to a holy calling, not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, (ESV)
+
+> **I Corinthians 6:11** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
+
+We are being saved:
+
+> **I Corinthians 1:18** - For the word of the cross is folly to those who are perishing, but to us who are being saved it is the power of God. (ESV)
+
+> **II Corinthians 2:15** - For we are the aroma of Christ to God among those who are being saved and among those who are perishing, (ESV)
+
+> **Philippians 2:12-13** - Therefore, my beloved, as you have always obeyed, so now, not only as in my presence but much more in my absence, work out your own salvation with fear and trembling, for it is God who works in you, both to will and to work for his good pleasure. (ESV)
+
+We shall be saved:
+
+> **Romans 5:9-10** - Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, now that we are reconciled, shall we be saved by his life. (ESV)
+
+> **Romans 13:11** - Besides this you know the time, that the hour has come for you to wake from sleep. For salvation is nearer to us now than when we first believed. (ESV)
+
+> **Ephesians 1:14** - who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
+
 ### Justified by faith alone. But faith is substantiated by works, Jesus' works which is entirely sufficient and Jesus working in us even by our obedience
 
 > **James 2:10** - For whoever keeps the whole law but fails in one point has become accountable for all of it. For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law. So speak and so act as those who are to be judged under the law of liberty. For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment. What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, Go in peace, be warmed and filled, without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead. But someone will say, You have faith and I have works. Show me your faith apart from your works, and I will show you my faith by my works. You believe that God is one; you do well. Even the demons believe-and shudder! Do you want to be shown, you foolish person, that faith apart from works is useless? Was not Abraham our father justified by works when he offered up his son Isaac on the altar? You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone.
@@ -15855,11 +15934,11 @@ If a person loves one another, they have been born of God:
 
 > **I John 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
 
-How can anyone the having faith in Jesus from His words and teachings? We need to have love for one another to be saved as we believe in Jesus to be saved.
+We need to have love for one another to be saved as we believe in Jesus to be saved.
 
 How can a person believe without having a heart that trusts Jesus? How can a person have life without a relationship with God?
 
-A relationship involves more than belief.
+A relationship involves more than just 'belief', but I'm quite sure it also means being a conduit of Christ's love.
 
 > **II Timothy 2:19** - But God's firm foundation stands, bearing this seal: **The Lord knows those who are his**, and, <ins>Let everyone who names the name of the Lord depart from iniquity.</ins> (ESV)
 
@@ -16960,6 +17039,10 @@ Have faith in God:
 Have faith in God and have faith in Jesus:
 
 > **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+
+Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 Repent, for the kingdom of heaven is near:
 
@@ -20184,6 +20267,14 @@ Our love is in response to Christ having loved us first:
 
 > **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
+Because God loved us first:
+
+-   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+    -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
+    -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
+-   We should love because He loved us first
+-   We must forgive as we have been forgiven
+
 
 ### Obedience to God and passing forward the love of Christ
 
@@ -20400,6 +20491,8 @@ Obedient faith looks like remaining faithful to Jesus Christ to one's best abili
 The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life.
 
 What I mean to say is that, I think God is still justified in giving only enough grace to save the person's soul, while allowing them to be put to death for a response of obedience to Him.
+
+> **Ephesians 4:7** - But grace was given to each one of us according to the measure of Christ's gift. (ESV)
 
 Consider St Polycarp:
 
