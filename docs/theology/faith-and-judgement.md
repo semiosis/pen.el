@@ -1023,6 +1023,7 @@ Being justified by Jesus' blood, we are saved by Him from the wrath of God:
 
 -   Immediately we are reconciled to God by the death of His Son,
 -   and then we are saved from the wrath of God by His life, repenting from sin and keeping His commandments,
+    -   **Ephesians 2:3** - among whom we all once lived in the passions of our flesh, carrying out the desires of the body and the mind, and were by nature children of wrath, like the rest of mankind. (ESV)
 -   also, we meanwhile rejoice in God through our Lord Jesus Christ
 
 > **Romans 5:8-11** - but God shows his love for us in that while we were still sinners, Christ died for us. Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. For if while we were enemies we were reconciled to God by the death of his Son, much more, now that we are reconciled, shall we be saved by his life. More than that, we also rejoice in God through our Lord Jesus Christ, through whom we have now received reconciliation. (ESV)
@@ -1045,6 +1046,8 @@ Faith presses on to walk the same way Jesus walked - even to spend the rest of t
 We are saved from the wrath of God by the life of Jesus Christ. I think that's in part saying that the life of Jesus helps us to stop practicing sinful things:
 
 > **Ephesians 5:5-7** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
+
+> **Ephesians 2:3** - among whom we all once lived in the passions of our flesh, carrying out the desires of the body and the mind, and were by nature children of wrath, like the rest of mankind. (ESV)
 
 That's confirmed here:
 
@@ -7673,6 +7676,8 @@ Probably not saved from wrath i.e. without faith:
         -   not trying to keep His commandments
         -   no response of love for Jesus
     -   The finished work of Jesus probably doesn't help them because they don't receive it by uniting the gospel with faith
+
+> **Ephesians 2:3** - among whom we all once lived in the passions of our flesh, carrying out the desires of the body and the mind, and were by nature children of wrath, like the rest of mankind. (ESV)
 
 Probably not justified:
 
