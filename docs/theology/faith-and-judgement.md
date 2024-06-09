@@ -13139,6 +13139,14 @@ We should put our faith in God, and in God's promises:
 
 > **Mark 11:22** - And Jesus answered them, **Have faith in God.**
 
+We have the right to take a believing wife:
+
+> **I Corinthians 9:5** - Do we not have the right to take along a believing wife, as do the other apostles and the brothers of the Lord and Cephas? (ESV)
+
+We live in a time where people deny marriage:
+
+> **I Timothy 4:1-3** - Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons, through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. (ESV)
+
 The asceticism [of denying marriage] has no value in stopping the indulgence of the flesh:
 
 > **Colossians 2:18-23** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
@@ -13238,7 +13246,7 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 
 > **1 Timothy 1:8-11** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice **homosexuality**, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
-Not that I was or am perfect.
+Not that I was or am perfect, but I have been following Jesus so I'm on Jesus' side. I was born-again and [filled with the Holy Spirit in 2022](https://web.archive.org/web/20220702053809/https://mullikine.github.io/posts/astral-projection-pt-3/) after I had begun to repent and seek God. For many years before that I've been denied relationships, but it's after I was born-again and actively following Jesus that I was denied marriage, and it was very obvious to me that it was an antichrist/antirelationship/slander spirit attacking me after I was born-again (only now I could easily see it working through people), and I feel like the spiritual attack (i.e. spirit spouse, LGBT dreams etc., thrown out of churches) I have received as a fallout for choosing Jesus, and endeavouring to abide by Christ's law, instead of using the [documented fact I was born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) as an excuse to plead not-guilty in court, I feel like has damaged me spiritually in ways which I have not experienced before. This is ultimate going to God's court.
 
 
 ### I was learning Christ before I was born-again
