@@ -1156,7 +1156,7 @@ This is why obedience to Jesus is so important. How can a person be resurrected 
 
 > **II Timothy 2:11** - The saying is trustworthy, for: If we have died with him, we will also live with him; (ESV)
 
-Dying with Christ is an immediate thing and also a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
+Dying to sin an immediate thing and living to Christ, becoming like Jesus in His death is a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
 
 > **Romans 6:8-10** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. (ESV)
 
@@ -14470,7 +14470,7 @@ Know Jesus experientially:
 
 > **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
-Dying with Christ is an immediate thing and also a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
+Dying to sin an immediate thing and living to Christ, becoming like Jesus in His death is a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
 
 > **Romans 6:8-10** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. (ESV)
 
@@ -19828,13 +19828,15 @@ The day of the Lord will come like a thief in the night. But we know it's coming
 
 > **I Thessalonians 5:4-5** - But you are not in darkness, brothers, for that day to surprise you like a thief. For you are all children of light, children of the day. We are not of the night or of the darkness. (ESV)
 
-Keep shining your light, maintaining a heart of service, and do good works of faith to glorify God, as we put our hope fully on the mercy and grace from Jesus Christ.
+Keep shining your light, maintaining a heart of service, and do good works of faith to glorify God, as we put our hope fully on the mercy and grace from Jesus Christ:
 
 > **I Peter 1:13** - Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. (ESV)
 
 Jesus will serve His servants who are awake:
 
 > **Luke 12:33-37** - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. For where your treasure is, there will your heart be also. Stay dressed for action and keep your lamps burning, and be like men who are waiting for their master to come home from the wedding feast, so that they may open the door to him at once when he comes and knocks. Blessed are those servants whom the master finds awake when he comes. Truly, I say to you, he will **dress himself for service** and have them recline at table, and he will come and serve them. (ESV)
+
+> **Matthew 23:11** - The greatest among you shall be your servant. (ESV)
 
 
 # Solae
@@ -20533,9 +20535,11 @@ The more vocal I become about Jesus and the more I align with the Truth, the mor
 
 I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
 
-I think what this verse says is that putting a stop to sin goes a long way to 
+I think what this verse says is that putting a stop to sin 'closes doors' which the enemy uses to attack:
 
 > **I John 5:18** - We know that everyone who has been born of God does not keep on sinning, but he who was born of God protects him, and the evil one does not touch him. (ESV)
+
+> **Psalms 66:18** - If I had cherished iniquity in my heart, the Lord would not have listened. (ESV)
 
 
 ## I'm definitely leaving this stuff in God's court
