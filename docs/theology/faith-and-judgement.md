@@ -27,11 +27,13 @@ a Bible study. I have just wanted to read the Bible for myself to understand and
 
 Because God loved us first:
 
--   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+-   The Apostle Paul endeavours to know Jesus ('makes it his own'. See **Php 3:9-13** below) because Jesus made Paul His own
     -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
     -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
 -   We should love because He loved us first
 -   We must forgive as we have been forgiven
+
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 
 # Confessions of faith
@@ -6962,11 +6964,13 @@ We absolutely must have a response of love for God - we must abide in Christ's l
 
 Because God loved us first:
 
--   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+-   The Apostle Paul endeavours to know Jesus ('makes it his own'. See **Php 3:9-13** below) because Jesus made Paul His own
     -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
     -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
 -   We should love because He loved us first
 -   We must forgive as we have been forgiven
+
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 The redemption in Christ Jesus is a gift, and
 is a substitutionary atonement that is
@@ -10293,11 +10297,13 @@ Here it says that unless the church **does the work** which it had started out d
 
 Because God loved us first:
 
--   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+-   The Apostle Paul endeavours to know Jesus ('makes it his own'. See **Php 3:9-13** below) because Jesus made Paul His own
     -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
     -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
 -   We should love because He loved us first
 -   We must forgive as we have been forgiven
+
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 If there is such a thing as justifying work then it is better described as obedient faith (**Hebrews 11:31**, **James 2:25**) and obedient faith is "being found in Christ".
 
@@ -20269,11 +20275,13 @@ Our love is in response to Christ having loved us first:
 
 Because God loved us first:
 
--   The Apostle Paul endeavours to know Jesus (makes it His own **Php 3:12**) because Jesus made Paul His own
+-   The Apostle Paul endeavours to know Jesus ('makes it his own'. See **Php 3:9-13** below) because Jesus made Paul His own
     -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
     -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
 -   We should love because He loved us first
 -   We must forgive as we have been forgiven
+
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 
 ### Obedience to God and passing forward the love of Christ
