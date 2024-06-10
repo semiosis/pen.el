@@ -186,6 +186,10 @@ We are saved while believing in the name of Jesus of Nazareth, the only Son of G
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
+
 In Christ Jesus there is freedom from things which were bad for us, including selfishness, condemnation, slavery to sin and death. There is freedom from [anything that tries to hinder us](https://youtu.be/9pn_Lx1Hrnk?t=3659) from obeying God in truth.
 
 > **I Peter 2:16** - Live as people who are free, not using your freedom as a cover-up for evil, but living as servants of God. (ESV)
@@ -215,11 +219,11 @@ Christianity is a relationship, like a marriage:
     -   **John 14:21** - <ins>Whoever has my commandments and keeps them, he it is who loves me.</ins> And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 -   In whatever we do, we should be serving the Lord Jesus Christ
 
-Belief in Jesus Christ turns to obedience, and imitating Christ:
+Belief in Jesus Christ continues in obedience, and imitating Christ:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
-It's imperative that we turn to obey the Lord Jesus' teachings, and that includes repentance from sin:
+It's imperative that we continue in obedience to abide by the Lord Jesus' teachings, and that includes repentance from sin:
 
 > **Colossians 3:23-25** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
 
@@ -259,7 +263,7 @@ Jesus is the Rock:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
-Belief is important:
+Belief is important (and is an initial act of obedience):
 
 > **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
@@ -852,7 +856,7 @@ In believing we have eternal life, but we need to continue in obedience to Jesus
 
 > **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
-Jesus Christ is our Lord and Teacher - that means we obey Him:
+Jesus Christ is our Lord and Teacher - that means we believe and obey Him:
 
 > **John 13:13-14** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
 
@@ -2568,7 +2572,7 @@ Jesus is the Rock:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
-Belief is important:
+Belief is important (and is an initial act of obedience):
 
 > **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
@@ -2643,6 +2647,10 @@ The Holy Spirit leads us:
 We must have believing, obedient faith in God regarding Jesus Christ His Son as Abraham had faith in God:
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 The righteousness of faith:
 
@@ -5594,6 +5602,10 @@ I think, that means that if a person **loves** (is obedient to) and has faith in
 
 > **Galatians 3:11** - Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. (ESV)
 
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
+
 > **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
 
 > **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
@@ -5646,6 +5658,10 @@ Being firm in our faith, we can resist:
 
 We have to have faith which is characteristic of Abraham's faith, but with regards to following the Lord Jesus.
 
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
+
 Our justification comes from having trusting faith in God our Father, who has raised from the dead Jesus Christ
 our **Lord** (our brother who we obey); the Jesus Christ who
 was delivered up for our trespasses and raised
@@ -5692,6 +5708,10 @@ We have peace with God:
 
 1.  When James mentions "justification by works", he actually is referring to justification by obedient faith (obedient faith is still faith)
 
+    It's obedience which leads to righteousness, even the righteousness of faith:
+    
+    > **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
+    
     > **James 2:25** - And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? (ESV)
     
     **Hebrews 11:31** links obedience to works in **James 2:25**:
@@ -6778,7 +6798,7 @@ Jesus is the Rock:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
-Belief is important:
+Belief is important (and is an initial act of obedience):
 
 > **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
@@ -6854,7 +6874,7 @@ And in **John 14:1** Jesus tells us to 'do faith' in God and to 'do faith' in Hi
 
 If you are believing in Jesus, then you are obediently working.
 
-To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -7527,7 +7547,7 @@ Works and faith can't exist apart from one another because even to believe in Je
 
 > **John 6:28-29** - Then they said to him, <ins>What must we do, to be doing the works of God?</ins> Jesus answered them, This is the work of God, that **you believe (G4100 pisteuo) in him whom he has sent.**
 
-To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -8063,7 +8083,7 @@ Jesus is the Rock:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
-Belief is important:
+Belief is important (and is an initial act of obedience):
 
 > **Matthew 16:15-18** - He said to them, But who do you say that I am? Simon Peter replied, You are the Christ, the Son of the living God. And Jesus answered him, Blessed are you, Simon Bar-Jonah! For flesh and blood has not revealed this to you, but my Father who is in heaven. And I tell you, you are Peter, and **on this rock I will build my church**, and the gates of hell shall not prevail against it. (ESV)
 
@@ -9064,7 +9084,7 @@ These do not contradict:
 -   Contradicts Scripture
 -   Contradicts God's Word
 
-> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
 
 
 ### Don't believe lies nor even listen to false dreams from false prophets and diviners
@@ -9699,7 +9719,7 @@ But what does it take for the <ins>heart</ins> to truly believe? Because that's 
 
 More obedience may still need to take place for that individual to arrive at justifying faith, and God may be allowing you to come to your faith.
 
-To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -9936,11 +9956,15 @@ This looks like an interesting resource about that - [Exodus 25-40 The Tabernacl
 > **I Corinthians 7:17-19** - Only let each person lead the life that the Lord has assigned to him, and to which God has called him. This is my rule in all the churches. Was anyone at the time of his call already circumcised? Let him not seek to remove the marks of circumcision. Was anyone at the time of his call uncircumcised? Let him not seek circumcision. For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God.
 
 
-## Justified by faith alone
+## Justified by faith alone - faith is obedient
 
 > [Martin Luther](https://www.goodreads.com/quotes/26222-we-are-saved-by-faith-alone-but-the-faith-that) - “We are saved by faith alone, but the faith that saves is never alone.”
 
 > **Romans 4:12** -  and to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised.  (ESV)
+
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 Faith eclipses the law:
 
@@ -10930,7 +10954,7 @@ And build each other up to help each other attain unity of faith and knowledge o
 
 # Faith
 
-One must have faith to receive the gift of salvation.
+One must have faith to receive the gift of salvation. Faith is belief and obedience. "By faith\_ **Abraham obeyed**".
 
 > **Mark 11:22** - And Jesus answered them, **Have faith in God.**
 
@@ -10940,7 +10964,17 @@ I like to think about faith in God as an equation like: `Believing-God * Obedien
 
 > **Mark 11:24** - Therefore I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours.
 
-Here, asking God in prayer is the work.
+Abraham believed and obeyed to receive:
+
+> **Hebrews 11:8** - <ins>By faith</ins> **Abraham obeyed** when he was called to go out to a place that he was **to receive** as an inheritance. And he went out, not knowing where he was going. (ESV)
+
+Because we obey God, we receive when we ask:
+
+> **I John 3:22** - and whatever we ask we receive from him, **because we keep his commandments and do what pleases him**. (ESV)
+
+It's obedience which leads to righteousness, even the righteousness of faith:
+
+> **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 
 # Receiving **the Holy Spirit**
@@ -11060,7 +11094,7 @@ Anyway, see Revelation and you will see Jesus points out different works for dif
 
 ### The faith of Abraham looks like this. This is what salvation-accepting faith looks like
 
-To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+To be justified, a person must have the faith of Abraham. By faith Abraham obeyed. So the faith has the fruit of <ins>walking in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
 > **Romans 4:9-12** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
@@ -11886,11 +11920,11 @@ This is not a work of the law, but it is a work of faith: "*when she received th
 The law is not overthrown but it is upheld.
 
 
-### Faith receives
+### Faith receives - it believes and obeys
 
-Abraham obeyed to receive:
+Abraham believed and obeyed to receive:
 
-> **Hebrews 11:8** - By faith **Abraham obeyed** when he was called to go out to a place that he was **to receive** as an inheritance. And he went out, not knowing where he was going. (ESV)
+> **Hebrews 11:8** - <ins>By faith</ins> **Abraham obeyed** when he was called to go out to a place that he was **to receive** as an inheritance. And he went out, not knowing where he was going. (ESV)
 
 > **Hebrews 11:13** - These all died in faith, not having received the things promised, but having seen them and greeted them from afar, and having acknowledged that they were strangers and exiles on the earth.
 
@@ -11927,7 +11961,7 @@ Her love is a work of faith.
 I also currently believe that one's response to forgiveness must be like the woman Jesus mentions in Luke 7:47 - with a **proprotional love** for Jesus.
 
 
-# Worldly precepts completely contradict the Truth and don't help to stop sin
+# Worldly precepts generally contradict the Truth and don't help to stop sin
 
 > **Colossians 2:20-23** - If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. (ESV)
 
@@ -11935,7 +11969,7 @@ I think that choosing a relationship Biblically is contrary to worldly precepts:
 
 > **Mark 7:7-9** in vain do they worship me, teaching as doctrines the commandments of men.  You **leave the commandment of God** and <ins>hold to the tradition of men.</ins>  And he said to them, You have a fine way of <ins>rejecting the commandment of God in order to establish your tradition!</ins>
 
-> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
 
 > **Matthew 6:31-33** - Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you.
 
@@ -11980,7 +12014,7 @@ Knowing God means loving as Jesus loved us:
 
 > **I John 4:6-7** - We are from God. Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error. Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
 
-In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments as we also **believe** Jesus, and believe God sent Him:
+In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments out of thankful love for Jesus as we also **believe** Jesus, and believe God sent Him:
 
 > **I John 5:1-5** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
 
@@ -13956,7 +13990,7 @@ Jesus Christ is our Teacher:
 
 > **Matthew 23:10** - Neither be called instructors, for **you have one instructor, the Christ.** (ESV)
 
-Jesus Christ is our Lord and Teacher - that means we obey Him:
+Jesus Christ is our Lord and Teacher - that means we believe and obey Him:
 
 > **John 13:13-14** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
 
@@ -14366,7 +14400,7 @@ The thoughts that go through our minds must not be:
 
 -   How can I secure my life here on earth with enough crypto to be taken care of so I don't have to worry - that type of thinking is **emnity** against God. That's making money #1 and Jesus after that.
 
-> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
 
 > **John 12:25** - Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. (ESV)
 
@@ -17040,7 +17074,7 @@ Even our bodies will be raised imperishable:
 
 -   **Article:** [Why is Friendship with the World Enmity with God? {James 4:4} - InspiredWalk.com](https://www.inspiredwalk.com/11273/why-is-friendship-with-the-world-enmity-with-god-james-44)
 
-> **James 4:4** - You adulterous people! Do you not know that friendship with the world is enmity with God? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
 
 > **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that **by testing** you may **discern what is the will of God**, what is good and **acceptable** and perfect. (ESV)
 
@@ -20766,14 +20800,14 @@ The motivation for everything must be to glorify God.
 
 > **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God <ins>and do it</ins>.” (ESV)
 
-It's obedience which leads to righteousness, even the righteousness of faith.
+It's obedience which leads to righteousness, even the righteousness of faith:
 
 > **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 > **Romans 4:12-13** - and to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised. For the promise to Abraham and his offspring that he would be heir of the world did not come through the law but through the righteousness of faith.
 
 
-### A heart of obedience is the start of faith
+### A heart of belief and obedience is the start of faith
 
 > **John 7:17** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
 
