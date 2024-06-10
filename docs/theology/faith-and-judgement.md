@@ -184,6 +184,8 @@ We are saved while believing in the name of Jesus of Nazareth, the only Son of G
 
 > **John 3:18** - **Whoever believes in him is not condemned**, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
 
+And brought into doing the will of God:
+
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
 It's obedience which leads to righteousness, even the righteousness of faith:
@@ -204,7 +206,7 @@ I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, 
 
 > **Ephesians 2:10** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
 
-We do works out of love for Jesus, and out of ongoing faith, ongoing obedience, out of obedience to the Holy Spirit, and also in order to allow Jesus to sanctify us:
+While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit:
 
 > **Titus 3:8** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
 
@@ -242,6 +244,10 @@ I confess that Jesus is the Son of God, and I believe that God loved us first an
 Someone who has just put their faith in Jesus for the first time and is believing that Jesus is the Christ is a newborn Christian:
 
 > **I John 5:1** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
+
+The Jesus which the Apostles proclaimed is the same Jesus we need to proclaim in Church - so Jesus' teachings should be taught right along with the gospel and along with all that the prophets have spoken which relate to Jesus:
+
+> **II Corinthians 11:4** - For if someone comes and proclaims another Jesus than the one we proclaimed, or if you receive a different spirit from the one you received, or if you accept a different gospel from the one you accepted, you put up with it readily enough. (ESV)
 
 It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
@@ -11197,6 +11203,8 @@ Actually complying with the law (not breaking it) is good:
 
 Stopping sinning is important from either angle.
 
+> **I Corinthians 15:34** - Wake up from your drunken stupor, as is right, and **do not go on sinning**. <ins>For some have no knowledge of God. I say this to your shame.</ins> (ESV)
+
 -   The apostles also taught people to turn from sin, believe and stop sinning.
 
 > **John 5:14** - Afterward Jesus found him in the temple and said to him, See, you are well! Sin no more, that nothing worse may happen to you.
@@ -15733,7 +15741,17 @@ We follow them in faith.
 
 1.  Being born-again
 
+    Being born of the Spirit isn't receiving the glory body:
+    
     <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/>
+    
+    So while I have Jesus' spirit in me, I'm also still in this body of dust:
+    
+    > **I Corinthians 15:42-48** - So is it with the resurrection of the dead. What is sown is perishable; what is raised is imperishable. It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power. It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual body. Thus it is written, The first man Adam became a living being; the last Adam became a life-giving spirit. But it is not the spiritual that is first but the natural, and then the spiritual. The first man was from the earth, a man of dust; the second man is from heaven. As was the man of dust, so also are those who are of the dust, and as is the man of heaven, so also are those who are of heaven.
+    
+    The lowly, natural, corruptible body, which I am still in, will be transformed into an incorruptible body:
+    
+    > **Philippians 3:20-21** - But our citizenship is in heaven, and from it we await a Savior, the Lord Jesus Christ, who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
     
     As interesting as what happened to me is, regarding a light body, I believe more important is objectively walking in the light of the truth.
     
@@ -16927,7 +16945,7 @@ Amen! I'm waiting for that day. Also, I believe God can take me up any time if i
 
 We may die a natural death in this life but be raised at the second coming with an incorruptible body.
 
-> **I Corinthians 15:42-48** - So is it with the resurrection of the dead. What is sown is perishable; what is raised is imperishable.  It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power.  It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual body.  Thus it is written, The first man Adam became a living being; the last Adam became a life-giving spirit.  But it is not the spiritual that is first but the natural, and then the spiritual.  The first man was from the earth, a man of dust; the second man is from heaven.  As was the man of dust, so also are those who are of the dust, and as is the man of heaven, so also are those who are of heaven.
+> **I Corinthians 15:42-48** - So is it with the resurrection of the dead. What is sown is perishable; what is raised is imperishable. It is sown in dishonor; it is raised in glory. It is sown in weakness; it is raised in power. It is sown a natural body; it is raised a spiritual body. If there is a natural body, there is also a spiritual body. Thus it is written, The first man Adam became a living being; the last Adam became a life-giving spirit. But it is not the spiritual that is first but the natural, and then the spiritual. The first man was from the earth, a man of dust; the second man is from heaven. As was the man of dust, so also are those who are of the dust, and as is the man of heaven, so also are those who are of heaven.
 
 Jesus can subject all things to Himself. By that power, Jesus will transform our lowly body to be like His glorious body:
 
@@ -20631,6 +20649,18 @@ I still hope for the personal acknowledgement from God that I have acted faithfu
 We're always seeking God's justification - but we live by faith in Christ Jesus, in belief to His promises and in obedience to His commandments all of our life as Christians - hoping for God's commendation.
 
 
+### Humility
+
+Being born-again, I actually had a lot to learn about humility, and service.
+
+Quote from Martin Luther King Jr.:
+
+> “Everybody can be great&#x2026;because anybody can
+> serve. You don't have to have a college degree to
+> serve. You don't have to make your subject and verb
+> agree to serve. You only need a heart full of grace. A soul generated by love.” 
+
+
 ## The spiritual attack I have received in recent times
 
 The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure this is just a new dimension of spiritual life. I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
@@ -20771,6 +20801,10 @@ By God's grace I've been set free from sin, and brought into a relationship with
 -   **Sermon:** [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 
 > **Matthew 13:45-52** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. Again, the kingdom of heaven is like a net that was thrown into the sea and gathered fish of every kind. When it was full, men drew it ashore and sat down and sorted the good into containers but threw away the bad. So it will be at the close of the age. <ins>The angels will come out and separate the evil from the righteous and throw them into the fiery furnace.</ins> In that place there will be weeping and gnashing of teeth. Have you understood all these things? They said to him, Yes. And he said to them, Therefore every scribe who has been trained for the kingdom of heaven is like a master of a house, who brings out of his treasure what is new and what is old.
+
+God is not saving Lucifer/Satan/the devil or his demons/devils. They're all going to hell forever. Amen to that:
+
+> **Revelation of John 20:7-10** - And when the thousand years are ended, Satan will be released from his prison and will come out to deceive the nations that are at the four corners of the earth, Gog and Magog, to gather them for battle; their number is like the sand of the sea. And they marched up over the broad plain of the earth and surrounded the camp of the saints and the beloved city, but fire came down from heaven and consumed them, and **the devil who had deceived them was thrown into the lake of fire and sulfur where the beast and the false prophet were, and they will be tormented day and night forever and ever**. (ESV)
 
 > **Revelation 22:12-17, 20-21** - Behold, I am coming soon, bringing my recompense with me, to repay everyone for what he has done. I am the Alpha and the Omega, the first and the last, the beginning and the end. Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood. I, Jesus, have sent my angel to testify to you about these things for the churches. I am the root and the descendant of David, the bright morning star. The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is thirsty come; let the one who desires take the water of life without price. He who testifies to these things says, Surely I am coming soon. Amen. Come, Lord Jesus! The grace of the Lord Jesus be with all. Amen. (ESV)
 
