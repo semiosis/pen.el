@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+first_term="$1"
+shift
+
+otherterms="$@"
+otherterms="$(printf -- "%s" "$otherterms" | sed 's/ /\.*/g')"
+
+bible-search -l -m NASB "$first_term" | grep -P "$otherterms" | pavs
