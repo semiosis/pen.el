@@ -963,6 +963,10 @@ We must continue in our faith. We must continue to believe Jesus and trust in Je
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
+Becoming the righteousness of God is cooperative:
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+
 
 ### We become obedient to Jesus
 
@@ -3117,6 +3121,10 @@ Faith is obedient. Love is applied faith in Jesus:
 Grace is free, but a person **must** become obedient - God gives the heart to obey, but a person must desire to do God's will to receive it.
 
 > **Revelation of John 22:3** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
+
+Becoming the righteousness of God is cooperative:
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 We must live for the will of God:
 
@@ -6988,6 +6996,10 @@ includes the belief of faith and the obedience
 of faith, such as obedience to the discipline
 of Christ, that should yield the peaceful
 fruit of righteousness. 
+
+Becoming the righteousness of God is cooperative:
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 I believe we should have a noticable change of heart and behaviour as a result of trusting obedient faith in Jesus:
 
@@ -10947,6 +10959,10 @@ Faith involves obedience. It's repentance from sin to the aligning of the heart 
 
 ## The faith itself may be a gift, but certainly is cooperative
 
+Becoming the righteousness of God is cooperative:
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+
 God and Abram (Abraham) had a real relationship first.
 
 God spoke to Abram first, and then Abram **obeyed**.
@@ -11872,7 +11888,34 @@ The law is not overthrown but it is upheld.
 
 ### Faith receives
 
+Abraham obeyed to receive:
+
+> **Hebrews 11:8** - By faith **Abraham obeyed** when he was called to go out to a place that he was **to receive** as an inheritance. And he went out, not knowing where he was going. (ESV)
+
 > **Hebrews 11:13** - These all died in faith, not having received the things promised, but having seen them and greeted them from afar, and having acknowledged that they were strangers and exiles on the earth.
+
+Because we obey God, we receive when we ask:
+
+> **I John 3:22** - and whatever we ask we receive from him, **because we keep his commandments and do what pleases him**. (ESV)
+
+> **James 1:6-7** - But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. For that person must not suppose that he will receive anything from the Lord; (ESV)
+
+We receive the promised Spirit through faith:
+
+> **Galatians 3:14** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith. (ESV)
+
+> **Galatians 3:2** - Let me ask you only this: Did you receive the Spirit by works of the law or by hearing with faith? (ESV)
+
+
+### Love gives
+
+> **I John 3:16** - By this we know love, that he laid down his life for us, and we ought to lay down our lives for the brothers. (ESV)
+
+> **John 15:13** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
+
+> **Galatians 1:4** - who gave himself for our sins to deliver us from the present evil age, according to the will of our God and Father, (ESV)
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
 
 ### Her faith saved her / is forgiven because she loved much - her love gave substance to her faith
@@ -20508,6 +20551,10 @@ The saving grace we receive is primarily for the salvation of our souls, not in 
 What I mean to say is that, I think God is still justified in giving only enough grace to save the person's soul, while allowing them to be put to death for a response of obedience to Him.
 
 > **Ephesians 4:7** - But grace was given to each one of us according to the measure of Christ's gift. (ESV)
+
+We can still ask for more grace when we are in need:
+
+> **Hebrews 4:16** - Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need. (ESV)
 
 Consider St Polycarp:
 
