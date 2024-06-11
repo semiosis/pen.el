@@ -76,11 +76,11 @@ version="$(pen-rc-get default_bible_version)"
 
 maybe_version="$(cmd-nice "$book" "$@" | bible-get-module-from-ref -df "$version")"
 # Remove quotes (don't use cmd)
-: ${CMD:="$@"}
 
-ref="$CMD"
-ref="$(printf -- "%s" "$ref" | c ascify)"
-ref="$(cmd-nice "$book" "$ref")"
+# Hebrews 12:5–6
+ascified_args="$(printf -- "%s\n" "$@" | wrlp c ascify | q -l -f | s join)"
+ref="\"$book\" $ascified_args"
+ref="$(eval "cmd-nice $ref")"
 
 # if test "$FAST" = "y"; then
 #     ref="$(cmd-nice "$book" "$@")"
