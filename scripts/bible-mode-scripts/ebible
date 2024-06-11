@@ -228,6 +228,7 @@ fi
 : ${CMD:="$@"}
 
 ref="$CMD"
+ref="$(printf -- "%s" "$ref" | c ascify)"
 : "${ref:="Genesis 1"}"
 
 if ! test "$FAST" = "y"; then
