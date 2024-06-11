@@ -110,6 +110,8 @@ So the problem in my opinion is not the will to do the will of God but the abili
 
 > **Matthew 7:7** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. (ESV)
 
+> **Matthew 26:40-43** - And he came to the disciples and found them sleeping. And he said to Peter, So, <ins>could you not watch with me one hour? Watch and pray that you may not enter into temptation.</ins> **The spirit indeed is willing, but the flesh is weak**. Again, for the second time, he went away and prayed, My Father, if this cannot pass unless I drink it, your will be done. <ins>And again he came and found them sleeping, for their eyes were heavy.</ins> (ESV)
+
 
 ## Heidelberg Catechism
 
@@ -372,6 +374,10 @@ If you want to really get to know someone then you would learn to walk in their 
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
+Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
+
+> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+
 
 ## Repentance from sin may come before believing in Jesus
 
@@ -457,6 +463,9 @@ I believe that belief and obedience to Jesus naturally comes **before** being bo
 born-again of the Spirit, because this is the way it happened with me, and it's also scriptural.
 
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
+
+
+### Marriage should not become idolatry
 
 The Hebrew has two words for 'helper'. The word which the greek in **John 14** refers to I believe is the Saviour one:
 
@@ -3489,7 +3498,13 @@ Do not love the world:
 
 ### Give our mind to Christ
 
-> **II Corinthians 10:5** - We destroy arguments and every lofty opinion raised against the knowledge of God, and **take every thought captive to obey Christ,** (ESV)
+> **1 Joh 2:3-5** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him: (ESV)
+
+We should use the Word of God to come against even arguments and opinions which are raised against the knowledge of God. Even our thoughts must be brought into obedience to Christ:
+
+> **II Corinthians 10:2-6** - I beg of you that when I am present I may not have to show boldness with such confidence as I count on showing against some who suspect us of walking according to the flesh. For though we walk in the flesh, we are not waging war according to the flesh. For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds. <ins>We destroy arguments and every lofty opinion raised against the</ins> **knowledge of God**, and **take every thought captive to obey Christ**, being <ins>ready to punish every disobedience, when your obedience is complete</ins>. (ESV)
+
+"<sub>ready</sub> to punish every disobedience, when your obedience is complete\_" means to even be ready to come against slip-ups.
 
 > **Proverbs 16:32** - Whoever is slow to anger is better than the mighty, and <ins>he who rules his spirit</ins> than he who takes a city. (ESV)
 
@@ -6663,15 +6678,26 @@ We are being prepared to be presented to Jesus:
 
 ## Put a stop to sin and practice personal righteousness
 
-> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous.
+Because God loved us first:
+
+-   The Apostle Paul endeavours to know Jesus ('makes it his own'. See **Php 3:9-13** below) because Jesus made Paul His own
+    -   To be found in Jesus **is** what Paul describes as the righteousness from God that depends on faith
+    -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
+-   We should love because He loved us first
+-   We must forgive as we have been forgiven
+
+> **I John 3:7** - Little children, **let no one deceive you**. Whoever practices righteousness is righteous, as he is righteous.
+
+> **I John 2:29** - If you know that he is righteous, you may be sure that everyone who practices righteousness has been born of him. (ESV)
 
 > **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother.
 
 > **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed.
 
-We must die to sin and practice righteousness.
+We must be born of God, die to sin and practice righteousness.
 
 Then while practicing righteousness after dying to sin, we may suffer for practicing righteousness.
+
 Therefore this righteousness is a personal righteousness, which we practice after dying to sin.
 
 > **I Peter 3:14** But even if you should suffer for righteousness' sake, you will be blessed. Have no fear of them, nor be troubled,
@@ -6779,7 +6805,12 @@ The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) 
 I affirm that even after regeneration and being healed, corruption has remained a problem for me mainly because of the world I live in:
 
 -   the influences of worldly people, and
+    -   **I Corinthians 15:33** - Do not be deceived: Bad company ruins good morals. (ESV)
 -   the influences of demons.
+
+But for the person born of God, they have died to sin, they cannot keep on doing it, they absolutely hate the sin.
+
+> **I John 3:9** - No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. (ESV)
 
 
 ### Bad desire - leads to death. We do not want to be enslaved to corruption
@@ -13818,7 +13849,7 @@ So long as they continue in practicing homosexuality, they wouldn't stay.
 
 They have to be practicing righteousness, through following Jesus Christ - and obeying Jesus' commandments:
 
-> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous.
+> **I John 3:7** - Little children, **let no one deceive you**. Whoever practices righteousness is righteous, as he is righteous.
 
 > **Matthew 6:10** - Your kingdom come, your will be done, on earth as it is in heaven.
 
@@ -15209,7 +15240,14 @@ The universe is upheld by the word of Jesus' power.
 
     > **Mark 9:35** - And he sat down and called the twelve. And he said to them, If anyone would be first, he must be last of all and servant of all. (ESV)
     
-    > **Mark 10:43** - But it shall not be so among you. But whoever would be great among you must be your servant, (ESV)
+    > **Mark 10:43-45** - But it shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be slave of all. For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+    
+    Quote from Martin Luther King Jr.:
+    
+    > “Everybody can be great&#x2026;because anybody can
+    > serve. You don't have to have a college degree to
+    > serve. You don't have to make your subject and verb
+    > agree to serve. You only need a heart full of grace. A soul generated by love.” 
 
 3.  The humble and obedient will be called great
 
@@ -15420,7 +15458,7 @@ We must do good, and behave like the children of God, or we will not enter the K
 
 > **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
 
-> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+> **I John 3:7** - Little children, **let no one deceive you**. Whoever practices righteousness is righteous, as he is righteous. (ESV)
 
 > **I John 2:29** - If you know that he is righteous, you may be sure that everyone who practices righteousness has been born of him. (ESV)
 
@@ -16841,6 +16879,8 @@ we are partaking in the death and resurrection of Jesus, where Jesus had actuall
 Spiritually died with Christ:
 
 > **Colossians 2:20** - If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations—
+
+> **Colossians 3:3** - For you have died, and your life is hidden with Christ in God. (ESV)
 
 Spiritually raised with Christ:
 
@@ -20445,6 +20485,8 @@ mutual feeling from them.
 
 At the time I was just beginning to learn to keep Jesus' commandments but I was also trying to fulfill a desire which only Jesus can fill, and I had not died.
 
+> **Colossians 3:3** - For you have died, and your life is hidden with Christ in God. (ESV)
+
 We must love (not just any way you believe it's defined, not even merely with charity) but in the same way that Jesus loved us - self-sacrificially, impartially, following Christ's law (bearing one another's burdens) and in a response to having been loved already:
 
 > **John 13:34** - A new commandment I give to you, that you **love one another: just as I have loved you**, you also are to love one another. (ESV)
@@ -20478,6 +20520,10 @@ God made me born-again. God shone light into my heart, and I embraced Jesus and 
 
 > **John 3:19** - And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
 
+I died and my life is now hidden with Christ in God:
+
+> **Colossians 3:3** - For you have died, and your life is hidden with Christ in God. (ESV)
+
 My own obedience/righteousness will never be enough, but I hate sin (especially after I have committed it) and I have made an effort to be conformed to holiness, and I honestly feel like without grace/assistance the call to "be holy as He is holy" feels impossible. But as far as being right with God goes, I'm resting on the righteousness that comes through faith in Jesus so on the day of judgement I hope to receive a "not guilty" verdict:
 
 -   [youtube.com: If you are struggling with what to do with sin after you receive Jesus, take a listen&#x2026; ?](https://www.youtube.com/watch?v=InDrIMKL2E8)
@@ -20485,14 +20531,6 @@ My own obedience/righteousness will never be enough, but I hate sin (especially 
 True freedom is found in Jesus, not in the AI stuff:
 
 > **Colossians 2:18-21** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
-
-These people did not obey Jesus, and produced bad fruit:
-
-> **Matthew 7:13-16** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
-
-These people did not believe, and their works were not done in faith:
-
-> **Matthew 7:21-24** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. **Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock**.
 
 
 ## Being born-again / being regenerated of Spirit
@@ -20638,6 +20676,8 @@ I am a new creation:
 
 > -   **In anticipation of any spiritual backlash I will leave the following disclaimer:** In Jesus Christ's name I rebuke any spirit which tries to put the old issues of the past (before I was born-again on 2 April 2022) back on to me. I am a new Creation in Christ Jesus ever since I was born-again and regenerated on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). As I understand it, as of then I had a completely clean record. I'm basically 2 years old. On top of that there is no condemnation for those in Christ Jesus. Yes the Apostle John says that we ought to pass-forward love as a response, but I also have the right to move on completely from things which did not work out, and I offer that same right to others as well.
 
+-   **[star.net.nz: How to have peace (3) - June 10th](https://www.star.net.nz/the-word-for-today/-how-to-have-peace-3-2024_06_10):** (2) Accept God’s pardon. Guilt is the top destroyer of peace. When we feel guilty, we feel haunted by our past. We read about people who make amends for a wrong they committed thirty years earlier, saying, ‘I was living in hell all those years and had to get it off my chest.’ The only way to have peace is to possess a clear conscience, and only God is able to give you that. ‘Who is a God like you, who pardons sin and forgives…transgression?…You do not stay angry forever but delight to show mercy’ (Micah 7:18 NIV). Notice, Micah reveals God is eager – ready and waiting – to clean your slate. He enjoys forgiving. He owns a big eraser. It’s his personality: ‘If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness’ (1 John 1:9 NIV).
+
 > **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
 
 > **Matthew 24:9** - Then they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake. (ESV)
@@ -20659,6 +20699,21 @@ Quote from Martin Luther King Jr.:
 > serve. You don't have to have a college degree to
 > serve. You don't have to make your subject and verb
 > agree to serve. You only need a heart full of grace. A soul generated by love.” 
+
+
+### Marriage should not become idolatry
+
+The Hebrew has two words for 'helper'. The word which the greek in **John 14** refers to I believe is the Saviour one:
+
+    1  מוֹשִׁיעַ
+    2  savior, deliverer, helper, saviour
+
+But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assistant!:
+
+    1  עוֹזֵר
+    2  assistant, aide, helper, second
+
+> **Genesis 2:18** - Then the Lord (H3068 Yhovah) God (H430 'elohiym) said (H559 'amar), “It is not good (H2896 towb) for the man (H120 'adam) to be alone (H905 bad); I will make (H6213 \`asah) him a helper (H5828 \`ezer) suitable (H5048 neged) for him.”
 
 
 ## The spiritual attack I have received in recent times
@@ -20700,7 +20755,7 @@ I'm definitely taking this stuff to God's court and asking for grace to be sanct
 
 Sigh&#x2026;.
 
-On the bright side, last week I did get a picture of John Piper on YouTube saying "Jesus has given you clothes."
+On the bright side, last week I did get a picture of John Piper on YouTube saying **"Jesus has given you clothes."**
 That means that when I turn up in heaven I'll have 'clothes' so I can enter - the imputed righteousness of Christ.
 
 > **Revelation of John 3:4** - Yet you have still a few names in Sardis, people who have not soiled their garments, and they will walk with me in white, for they are worthy. (ESV)
