@@ -1421,9 +1421,15 @@ Also I conclude that obeying Jesus Christ is having faith in Him.
 
 ### God acts for those who wait for Him
 
+God wants to be our strength. AMEN!!
+
 God acts for those who wait for Him:
 
 > **Isaiah 64:4** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <ins>for those who wait for him</ins>. (ESV)
+
+Also, waiting on the LORD our strength is renewed:
+
+> **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
 If God is for us, who can be against us?
 
@@ -3093,9 +3099,17 @@ You **must** believe:
 
 > **Romans 11:20-23** - That is true. <ins>They were broken off because of their unbelief, but you stand fast through faith.</ins> So do not become proud, but stand in awe. For if God did not spare the natural branches, neither will he spare you. And even they, if they do not continue in their unbelief, will be grafted in, for God has the power to graft them in again.
 
+God acts for those who wait for Him:
+
+> **Isaiah 64:4** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <ins>for those who wait for him</ins>. (ESV)
+
 You **must** obey:
 
 > **John 15:1-6** - I am the true vine, and my Father is the vinedresser.  Every branch of mine that does not bear fruit he takes away, and every branch that does bear fruit he prunes, that it may bear more fruit.  Already you are clean because of the word that I have spoken to you.  Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.  I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. <ins>If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned.</ins>
+
+Also, waiting on the LORD our strength is renewed:
+
+> **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
 We **must** put a stop to sin - it's for our own good:
 
@@ -20554,6 +20568,8 @@ God made me born-again/regenerated me on [2 April 2022](https://web.archive.org/
 > **I John 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
 
 I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
+
+> **Romans 3:4** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
