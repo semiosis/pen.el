@@ -1431,6 +1431,10 @@ Also, waiting on the LORD our strength is renewed:
 
 > **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
+We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked byhaving faith in Jesus:
+
+> **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
+
 If God is for us, who can be against us?
 
 > **Romans 8:31** - What then shall we say to these things? If God is for us, who can be against us? (ESV)
@@ -3110,6 +3114,10 @@ You **must** obey:
 Also, waiting on the LORD our strength is renewed:
 
 > **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
+
+We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked byhaving faith in Jesus:
+
+> **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
 We **must** put a stop to sin - it's for our own good:
 
@@ -20629,7 +20637,7 @@ I actually don't think it was a delusion though. I actually think it's the truth
 
 > **I Corinthians 13:4-8** - Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, endures all things. Love never ends. As for prophecies, they will pass away; as for tongues, they will cease; as for knowledge, it will pass away. (ESV)
 
-We are commanded to love our wives the way Jesus did.
+We are commanded to love our wives the way Jesus did. - <https://omny.fm/shows/today/questions-to-ask-before-you-marry-1-12-june-2024>
 
 > **Ephesians 5:25-27** - Husbands, love your wives, as Christ loved the church and gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word, so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish.
 
