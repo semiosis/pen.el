@@ -98,6 +98,8 @@ Jesus' disciples here were being led by Jesus. As I understand it, we're only no
 
 I don't **entirely** agree with this paragraph saying all ability of will is lost. But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
 
+> **Isaiah 1:19** - If you are willing and obedient, you shall eat the good of the land; (ESV)
+
 Man's inability to do any spiritual good accompanying salvation is essentially like a broken-down car's inability to drive
 and without God's assistance by empowering us with His Holy Spirit (either inside or around us),
 though a person might seek after God or will to repent, they're not able to save themself.
@@ -222,6 +224,8 @@ Christianity is a relationship, like a marriage:
 -   We **must** have a response of love for Jesus
     -   **John 14:21** - <ins>Whoever has my commandments and keeps them, he it is who loves me.</ins> And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 -   In whatever we do, we should be serving the Lord Jesus Christ
+
+> **Proverbs 3:5-6** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
 Belief in Jesus Christ continues in obedience, and imitating Christ:
 
@@ -718,6 +722,10 @@ Whoever keeps His **commandments** (plural) abides in Jesus, and Jesus in them. 
 > **Romans 16:26** - but has now been disclosed and through the prophetic writings has been made known to all nations, according to <ins>the command of the eternal God</ins>, to bring about the **obedience of faith** — (ESV)
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
+
+Like Jesus, we should do the will of God:
+
+> **Hebrews 10:7** - Then I said, Behold, I have come to do your will, O God, as it is written of me in the scroll of the book. (ESV)
 
 
 ### Being filled with the Holy Spirit
@@ -6694,6 +6702,12 @@ Because God loved us first:
 
 > **I Peter 2:24** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed.
 
+We must honour God with our bodies:
+
+> **Romans 6:13** - Do not present your members to sin as instruments for unrighteousness, but present yourselves to God as those who have been brought from death to life, and your members to God as instruments for righteousness. (ESV)
+
+> **I Corinthians 6:19-20** - Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body. (ESV)
+
 We must be born of God, die to sin and practice righteousness.
 
 Then while practicing righteousness after dying to sin, we may suffer for practicing righteousness.
@@ -6721,7 +6735,7 @@ We want Christ to dwell in our hearts through faith:
 
 > **II Thessalonians 2:13** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit and faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
 
-**Faith** in the truth - strong faith word!
+**Faith**  in the truth - pistis is a strong faith word!
 
 > **II Thessalonians 2:11-15** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit** and **belief in the truth**. To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ. So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
 
@@ -7886,7 +7900,7 @@ Desire to do the will of God, and allow God's word to teach you what that is:
 
 Actually practice faith, and don't over-intellectualise God:
 
-> **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+> **Proverbs 3:5-6** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
 > **John 5:39-44** - <ins>You search the Scriptures because you think that in them you have eternal life;</ins> and it is <ins>they that bear witness about me,</ins> yet **you refuse to come to me that you may have life.** I do not receive glory from people. But I know that **you do not have the love of God within you.** I have come in my Father's name, and you do not receive me. If another comes in his own name, you will receive him. How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
@@ -18916,7 +18930,7 @@ We should not lean on our own understanding:
 
 What we should do now is acknowledge the LORD, keep our eyes on Jesus, and live godly lives:
 
-> **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+> **Proverbs 3:5-6** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
 Although God chooses who He has mercy on, we should still have a godly and humble response to God's mercy:
 
@@ -20842,7 +20856,7 @@ By God's grace I've been set free from sin, and brought into a relationship with
 
 > **Deuteronomy 29:29** -  The secret things belong to the LORD our God, but the things that are revealed belong to us and to our children forever, that we may do all the words of this law.  (ESV)
 
-> **Proverbs 3:5-6** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+> **Proverbs 3:5-6** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
 
 > **Jeremiah 29:11** -  For I know the plans I have for you, declares the LORD, plans for wholeness and not for evil, to give you a future and a hope.  (ESV)
 
