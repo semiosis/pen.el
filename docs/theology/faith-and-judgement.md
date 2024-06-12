@@ -182,6 +182,8 @@ I believe we are set free from being condemned by / under the Mosaic Law to beco
 
 > **Romans 6:22-23** - But now having been freed from sin and **enslaved to God**, you derive your benefit, resulting in sanctification, and the outcome, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (NASB)
 
+> **Galatians 4:8** - Formerly, when you did not know God, you were enslaved to those that by nature are not gods. (ESV)
+
 > **Romans 6:18-20** - and, having been set free from sin, have become **slaves of righteousness**. I am speaking in human terms, because of your natural limitations. For **just as** <ins>you once presented your members as slaves to impurity and to lawlessness leading to more lawlessness</ins>, **so now** <ins>present your members as slaves to righteousness leading to sanctification.</ins> When you were slaves of sin, you were free in regard to righteousness. (ESV)
 
 We are saved while believing in the name of Jesus of Nazareth, the only Son of God:
@@ -191,6 +193,10 @@ We are saved while believing in the name of Jesus of Nazareth, the only Son of G
 And brought into doing the will of God:
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
+
+We have confidence when keep His commandments, believing in the name of God's Son Jesus Christ and loving one another:
+
+> **I John 3:21-24** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
@@ -1431,9 +1437,11 @@ Also, waiting on the LORD our strength is renewed:
 
 > **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
-We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked byhaving faith in Jesus:
+We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked by having believing, obedient, trusting, following faith in Jesus where we are being led by His Spirit, and are walking by His Spirit:
 
 > **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
+
+> **Philippians 4:13** - I can do all things through him who strengthens me. (ESV)
 
 If God is for us, who can be against us?
 
@@ -1677,6 +1685,156 @@ I believe the above prophetically talks about Jesus. We must obey Jesus. God doe
 > **Matthew 21:32** - For John came to you in the <ins>way of righteousness</ins>, and you did not believe him, but the tax collectors and the prostitutes believed him. And even when you saw it, you did not afterward change your minds and believe him.
 
 > **John 14:6** - Jesus said to him, <ins>I am the way</ins>, and the truth, and the life. No one comes to the Father except through me.
+
+
+## Walk by the Spirit = Obey Jesus = Led by the Spirit
+
+It is clear that following Jesus helps us to not sin, which means that the destructiveness of sin for is is still a reality if we are not following Jesus. We get on top of it by following Jesus and walking by His Spirit:
+
+> **Galatians 5:14-16** - For **the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. (ESV)
+
+I've heard from many deluded Christians in the past who think that as Christians we "do not need to follow Christ's law".
+
+Also, I believe that loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty".
+
+> **Philippians 3:9-10** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through **faith in Christ**, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings, becoming like him in his death**, (ESV)
+
+In Christ Jesus, as we are abiding in Jesus, getting to know Jesus through obedience to Him, getting to know Him in Spirit as we get really intimate with Jesus, walking as He walked, we have the peace of God:
+
+> **Philippians 4:7** - And the peace of God, which surpasses all understanding, **will guard your hearts and your minds in Christ Jesus**. (ESV)
+
+Following Jesus includes your thought life:
+
+> **Philippians 4:8** - Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things. (ESV)
+
+
+## Following Jesus is the way of righteousness
+
+By faith, we continue to abide in Jesus, believing Him and following Him in obedience. We do not simply commend ourselves for one act of belief, and then abandon the way:
+
+> **Galatians 5:5** - For through the Spirit, by faith, we ourselves eagerly **wait for the hope of righteousness**. (ESV)
+
+We have peace with God and are justified by faith when we are following Jesus Christ who is our Lord. Yes, we have peace because we are following Jesus::
+
+> **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through **our Lord <ins>Jesus Christ</ins>.** (ESV)
+
+"Jesus our Lord" means we are following Jesus. Those who trust in God who raised Jesus from the dead and follow Jesus will be justified:
+
+> **Romans 4:23-25** - But the words it was counted to him were not written for his sake alone, but for ours also. It **will be** <ins>counted to us who believe in him who raised from the dead **Jesus our Lord**,</ins> who was delivered up for our trespasses and <ins>raised for our justification</ins>. (ESV)
+
+> **Luke 6:46-49** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and hears my words and **does them**, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+OBEDIENCE!
+
+
+## Obey the Truth, obey Jesus. Serve one another through love
+
+Even Paul shows that in obeying Jesus, we <ins>walk by the Spirit</ins>:
+
+> **Galatians 5:13-17** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but **through love serve one another. For the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For <ins>the desires of the flesh are against the Spirit</ins>, and the desires of the Spirit are against the flesh, for <ins>these are opposed to each other</ins>, to keep you from doing the things you want to do. (ESV)
+
+**Walking** by the Spirit is being **led** by the Spirit is being obedient to Jesus.
+
+
+### You cannot serve God, and also be yoked to money
+
+Priorities:
+
+-   1. Jesus
+-   2-∞. Everything else
+
+> **Matthew 6:24** - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+
+You cannot make money master over you. We must accept Jesus as Master over us. In order to follow Jesus, sometimes You will **have to** drop money because there are many people you around you who need you to lighten their burdens!
+
+OBEDIENCE!
+
+-   **Sermon:** [Seven Reasons We Must Pursue Supreme Satisfaction in God - YouTube](https://www.youtube.com/watch?v=aUPSZBm1OjY)
+
+We must get on the path:
+
+> **II Corinthians 1:20** - For <ins>all the promises of God find their Yes</ins> **in him**. That is why it is through him that we utter our Amen to God for his glory. (ESV)
+
+> **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of **eternal salvation to all who obey him**, being designated by God a high priest after the order of Melchizedek.
+
+We must be yoked to Jesus Christ alone. How? By following His commandments in reality. If you're not yoked to Jesus then you're susceptible to being yoked to anything else.
+
+You cannot serve God and cryptocurrency. With money, and with cryptocurrency, you are making a black and white choice between God and money.
+
+> **Matthew 8:22** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
+
+> **Acts 8:18-21** - Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive **the Holy Spirit**.  But Peter said to him, **May your silver perish with you,** because you thought you could obtain the gift of God with money!  You have neither part nor lot in this matter, for your heart is not right before God.
+
+This widow gave in **faith**, because she believes God will take care of her even if she gives everything (that's the mindset of faith):
+
+> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, <ins>this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on.</ins> (ESV)
+
+Following Jesus doesn't mean not providing for family. In fact, following Jesus does mean providing for family.
+So when you read Jesus' commandments and someone asks you for help, you give them what they need, without stealing though. If the money is for taking care of family, we must keep that. But our neighbour who we must love are more than just our immediate family. We are commanded by the Apostle Paul to provide for our family:
+
+> **I Timothy 5:8** - But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever. (ESV)
+
+Following Jesus comes first, even before following your family. To even love your family best is to put Jesus first. It's for their sake too:
+
+> **Matthew 10:36-39** - And a person's enemies will be those of his own household. Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. And whoever does not take his cross and follow me is not worthy of me. Whoever finds his life will lose it, and whoever loses his life for my sake will find it. (ESV)
+
+> **Mark 8:34** - And he called to him the crowd with his disciples and said to them, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
+
+It's black and white - we must be yoked to Jesus:
+
+> **Mark 10:21** - And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
+
+The thoughts that go through our minds must not be:
+
+-   How can I secure my life here on earth with enough crypto to be taken care of so I don't have to worry - that type of thinking is **emnity** against God. That's making money #1 and Jesus after that.
+
+> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
+
+> **John 12:25** - Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. (ESV)
+
+The thoughts that go through our minds must be:
+
+-   How can I help other people / where can I sow money to help other people.
+
+> **Luke 9:23** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. (ESV)
+
+> **Luke 9:59-62** - To another he said, Follow me. But he said, Lord, let me first go and bury my father. And Jesus said to him, Leave the dead to bury their own dead. But as for you, go and proclaim the kingdom of God. Yet another said, I will follow you, Lord, but let me first say farewell to those at my home. Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
+
+> **Luke 18:22** - When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
+
+You can't follow Jesus Christ's instructions in faith while asking OpenAI if it's OK.
+You can not be led by God and be led by an AI such as ChatGPT.
+
+> **Matthew 8:22** - And Jesus said to him, **Follow me**, and **leave the dead to bury their own dead.** (ESV)
+
+We have the Word of God. We can also walk in Jesus' commandments. We've got to be yoked to Jesus Christ.
+
+God can speak to us directly without internet, even through His Spirit, even in a dream.
+
+
+### Make friends with charity while money hasn't yet failed
+
+Money is temporary. While it's in your hands, make friends with it, by giving in charity to those in need.
+
+Money will fail - bitcoin will fail, ethereum will fail, and when it fails people will see you as a friend.
+
+> **Luke 16:1-8** - He also said to the disciples, There was a rich man who had a manager, and charges were brought to him that this man was wasting his possessions. And he called him and said to him, What is this that I hear about you? Turn in the account of your management, for you can no longer be manager. And the manager said to himself, What shall I do, since my master is taking the management away from me? I am not strong enough to dig, and I am ashamed to beg. I have decided what to do, so that when I am removed from management, people may receive me into their houses. So, summoning his master's debtors one by one, he said to the first, How much do you owe my master? He said, A hundred measures of oil. He said to him, Take your bill, and sit down quickly and write fifty. Then he said to another, And how much do you owe? He said, A hundred measures of wheat. He said to him, Take your bill, and write eighty. The master commended the dishonest manager for his shrewdness. For the sons of this world are more shrewd in dealing with their own generation than the sons of light. (ESV)
+
+> **Luke 16:8-9** - And I tell you, make friends for yourselves by means of unrighteous wealth, so that when it fails they may receive you into the eternal dwellings. (ESV)
+
+
+### In this world God can see if we are to be trusted with true heavenly wealth by seeing how we used our money
+
+> **Luke 16:11-12** - If then you have not been faithful in the unrighteous wealth, who will entrust to you the true riches? And if you have not been faithful in that which is another's, who will give you that which is your own?
+
+> **I Timothy 6:9-10** - But those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction. For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. (ESV)
+
+
+### We must actually make following Jesus a reality to take hold of the eternal life to which we are called
+
+We make the confession, but we must then take hold of it.
+
+> **I Timothy 6:11-12** - But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
 
 
 # Great commission
@@ -3115,7 +3273,7 @@ Also, waiting on the LORD our strength is renewed:
 
 > **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
-We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked byhaving faith in Jesus:
+We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked by having believing, obedient, trusting, following faith in Jesus where we are being led by His Spirit, and are walking by His Spirit:
 
 > **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
@@ -4370,7 +4528,9 @@ Also, I have had as of 28 May '24 in my dreams:
 
 [star.net.nz:  The Word for Today - The right balance - May 28th](https://www.star.net.nz/the-word-for-today/-the-right-balance-2024_05_28)
 
-Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God. I will be still waiting for the Biblical acknowledgement.
+Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God. I will be still waiting for the Biblical acknowledgement I am waiting for "Jesus is the Son of God who has proceeded forth from Father God in the flesh, the ".
+
+> **I Thessalonians 5:20-22** - Do not despise prophecies, but test everything; hold fast what is good. Abstain from every form of evil. (ESV)
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
 So I mean, if the devil or evil spirits can speak lies to me then I just have total confidence that at the right time I'll hear from God.
@@ -8714,7 +8874,7 @@ Therefore, it's an ongoing thing.
 
 But for our prayer requests to be answered this way, we must be keeping His commandments and do what pleases Him:
 
-> **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+> **I John 3:21-24** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 > **Proverbs 14:26** - In the fear of the LORD one has strong confidence, and his children will have a refuge. (ESV)
 
@@ -9665,7 +9825,7 @@ And we are <ins>commanded</ins> (even as Christians not <ins>under the law</ins>
 
 > **John 15:16** - You did not choose me, but I chose you and appointed you that you should go and bear fruit and that your fruit should abide, so that <ins>whatever you ask the Father in my name, he may give it to you</ins>. (ESV)
 
-> **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+> **I John 3:21-24** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 The rest of the Mosaic law is still useful for training in righteousness. It shows people how to live in obedience to God and in love for God and one's neighbour. But we are not under the Mosaic law, but we are under the law of Christ. We have faith in Christ.
 
@@ -9715,11 +9875,13 @@ Because we keep His commandments, we receive from him whatever we ask.
 And our heart does not condemn us.
 And we have confidence before God.
 
+> **Hebrews 13:18** - Pray for us, for we are sure that we have a clear conscience, desiring to act honorably in all things. (ESV)
+
 By this we know <ins>he</ins> abides in <ins>us</ins>:
 
 -   He has given us His Spirit.
 
-> **I John 3:21-24** - Beloved, if our heart does not condemn us, we have confidence before God; and <ins>whatever we ask we receive from him</ins>, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
+> **I John 3:21-24** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 <ins>We abide in Him</ins>, and <ins>He in us.</ins>
 
@@ -14441,122 +14603,6 @@ It quickly progresses to obeying Jesus, receiving the Spirit.
 > **Daniel 7:18** - But the saints of the Most High shall receive the kingdom and possess the kingdom forever, forever and ever. (ESV)
 
 > **Revelation 2:26-28** - The one who conquers and who keeps my works until the end, to him I will give authority over the nations, and he will rule them with a rod of iron, as when earthen pots are broken in pieces, even as I myself have received authority from my Father. And I will give him the morning star. (ESV)
-
-
-## Following Jesus
-
-We have peace with God and are justified by faith when we are following Jesus Christ who is our Lord:
-
-> **Romans 5:1** - Therefore, since we have been justified by faith, we have peace with God through **our Lord <ins>Jesus Christ</ins>.** (ESV)
-
-"Jesus our Lord" means we are following Jesus. Those who trust in God who raised Jesus from the dead and follow Jesus will be justified:
-
-> **Romans 4:23-25** - But the words it was counted to him were not written for his sake alone, but for ours also. It **will be** <ins>counted to us who believe in him who raised from the dead **Jesus our Lord**,</ins> who was delivered up for our trespasses and <ins>raised for our justification</ins>. (ESV)
-
-> **Luke 6:46-49** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and hears my words and **does them**, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
-
-OBEDIENCE!
-
-
-### You cannot serve God, and also be yoked to money
-
-Priorities:
-
--   1. Jesus
--   2-∞. Everything else
-
-> **Matthew 6:24** - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
-
-You cannot follow money. You have to drop money in order to follow Jesus!
-
-OBEDIENCE!
-
--   **Sermon:** [Seven Reasons We Must Pursue Supreme Satisfaction in God - YouTube](https://www.youtube.com/watch?v=aUPSZBm1OjY)
-
-We must get on the path:
-
-> **II Corinthians 1:20** - For <ins>all the promises of God find their Yes</ins> **in him**. That is why it is through him that we utter our Amen to God for his glory. (ESV)
-
-> **Hebrews 5:8-10** - Although he was a son, he learned obedience through what he suffered. And being made perfect, he became the source of **eternal salvation to all who obey him**, being designated by God a high priest after the order of Melchizedek.
-
-We must be yoked to Jesus Christ alone. How? By following His commandments in reality. If you're not yoked to Jesus then you're susceptible to being yoked to anything else.
-
-You cannot serve God and cryptocurrency. With money, and with cryptocurrency, you are making a black and white choice between God and money.
-
-> **Matthew 8:22** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
-
-> **Acts 8:18-21** - Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive **the Holy Spirit**.  But Peter said to him, **May your silver perish with you,** because you thought you could obtain the gift of God with money!  You have neither part nor lot in this matter, for your heart is not right before God.
-
-This widow gave in **faith**, because she believes God will take care of her even if she gives everything (that's the mindset of faith):
-
-> **Mark 12:41-44** - And he sat down opposite the treasury and watched the people putting money into the offering box. Many rich people put in large sums. And a poor widow came and put in two small copper coins, which make a penny. And he called his disciples to him and said to them, Truly, I say to you, <ins>this poor widow has put in more than all those who are contributing to the offering box. For they all contributed out of their abundance, but she out of her poverty has put in everything she had, all she had to live on.</ins> (ESV)
-
-Following Jesus doesn't mean not providing for family. In fact, following Jesus does mean providing for family.
-So when you read Jesus' commandments and someone asks you for help, you give them what they need, without stealing though. If the money is for taking care of family, we must keep that. But our neighbour who we must love are more than just our immediate family. We are commanded by the Apostle Paul to provide for our family:
-
-> **I Timothy 5:8** - But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever. (ESV)
-
-Following Jesus comes first, even before following your family. To even love your family best is to put Jesus first. It's for their sake too:
-
-> **Matthew 10:36-39** - And a person's enemies will be those of his own household. Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. And whoever does not take his cross and follow me is not worthy of me. Whoever finds his life will lose it, and whoever loses his life for my sake will find it. (ESV)
-
-> **Mark 8:34** - And he called to him the crowd with his disciples and said to them, If anyone would come after me, let him deny himself and take up his cross and follow me. (ESV)
-
-It's black and white - we must be yoked to Jesus:
-
-> **Mark 10:21** - And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
-
-The thoughts that go through our minds must not be:
-
--   How can I secure my life here on earth with enough crypto to be taken care of so I don't have to worry - that type of thinking is **emnity** against God. That's making money #1 and Jesus after that.
-
-> **James 4:4** - You adulterous people! Do you not know that <ins>friendship with the world is enmity with God</ins>? Therefore whoever wishes to be a friend of the world makes himself an enemy of God. (ESV)
-
-> **John 12:25** - Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. (ESV)
-
-The thoughts that go through our minds must be:
-
--   How can I help other people / where can I sow money to help other people.
-
-> **Luke 9:23** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. (ESV)
-
-> **Luke 9:59-62** - To another he said, Follow me. But he said, Lord, let me first go and bury my father. And Jesus said to him, Leave the dead to bury their own dead. But as for you, go and proclaim the kingdom of God. Yet another said, I will follow you, Lord, but let me first say farewell to those at my home. Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
-
-> **Luke 18:22** - When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
-
-You can't follow Jesus Christ's instructions in faith while asking OpenAI if it's OK.
-You can not be led by God and be led by an AI such as ChatGPT.
-
-> **Matthew 8:22** - And Jesus said to him, **Follow me**, and **leave the dead to bury their own dead.** (ESV)
-
-We have the Word of God. We can also walk in Jesus' commandments. We've got to be yoked to Jesus Christ.
-
-God can speak to us directly without internet, even through His Spirit, even in a dream.
-
-
-### Make friends with charity while money hasn't yet failed
-
-Money is temporary. While it's in your hands, make friends with it, by giving in charity to those in need.
-
-Money will fail - bitcoin will fail, ethereum will fail, and when it fails people will see you as a friend.
-
-> **Luke 16:1-8** - He also said to the disciples, There was a rich man who had a manager, and charges were brought to him that this man was wasting his possessions. And he called him and said to him, What is this that I hear about you? Turn in the account of your management, for you can no longer be manager. And the manager said to himself, What shall I do, since my master is taking the management away from me? I am not strong enough to dig, and I am ashamed to beg. I have decided what to do, so that when I am removed from management, people may receive me into their houses. So, summoning his master's debtors one by one, he said to the first, How much do you owe my master? He said, A hundred measures of oil. He said to him, Take your bill, and sit down quickly and write fifty. Then he said to another, And how much do you owe? He said, A hundred measures of wheat. He said to him, Take your bill, and write eighty. The master commended the dishonest manager for his shrewdness. For the sons of this world are more shrewd in dealing with their own generation than the sons of light. (ESV)
-
-> **Luke 16:8-9** - And I tell you, make friends for yourselves by means of unrighteous wealth, so that when it fails they may receive you into the eternal dwellings. (ESV)
-
-
-### In this world God can see if we are to be trusted with true heavenly wealth by seeing how we used our money
-
-> **Luke 16:11-12** - If then you have not been faithful in the unrighteous wealth, who will entrust to you the true riches? And if you have not been faithful in that which is another's, who will give you that which is your own?
-
-> **I Timothy 6:9-10** - But those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction. For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. (ESV)
-
-
-### We must actually make following Jesus a reality to take hold of the eternal life to which we are called
-
-We make the confession, but we must then take hold of it.
-
-> **I Timothy 6:11-12** - But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
 
 
 ## Be humble in this world and serve others of humble circumstances while in this world
@@ -20961,6 +21007,10 @@ The motivation for everything must be to glorify God.
 [The most terrifying passage in the Bible | Matthew 7:21-23 - YouTube](https://www.youtube.com/watch?v=v60efH7_POE&t=616s)
 
 > **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God <ins>and do it</ins>.” (ESV)
+
+Paul agrees:
+
+> **Philippians 4:9** - What you have learned and received and heard and seen in me — **practice these things**, <ins>and the God of peace will be with you.</ins> (ESV)
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
