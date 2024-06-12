@@ -1687,9 +1687,16 @@ I believe the above prophetically talks about Jesus. We must obey Jesus. God doe
 > **John 14:6** - Jesus said to him, <ins>I am the way</ins>, and the truth, and the life. No one comes to the Father except through me.
 
 
+## Being led by the Spirit is not license to sin
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
+
+Repenting from sin, including such things as idolatry, witchcraft, jealousy and sexual immorality is all a part of following Jesus and being led by the Spirit.
+
+
 ## Walk by the Spirit = Obey Jesus = Led by the Spirit
 
-It is clear that following Jesus helps us to not sin, which means that the destructiveness of sin for is is still a reality if we are not following Jesus. We get on top of it by following Jesus and walking by His Spirit:
+It is clear that following Jesus helps us to not sin, which means that the destructiveness of sin for us is still a reality if we are not following Jesus. We get on top of it by following Jesus and walking by His Spirit:
 
 > **Galatians 5:14-16** - For **the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. (ESV)
 
@@ -13025,7 +13032,7 @@ Do not even seek them out:
 
 > **I Samuel 15:22-23** - And Samuel said, Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to <ins>obey is better than sacrifice</ins>, and <ins>to listen than the fat of rams</ins>. For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. <ins>Because you have rejected the word of the LORD, he has also rejected you from being king.</ins> (ESV)
 
-> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
 
 
 ### Jesus when He sets us free, helps us to stop sinning
@@ -15057,7 +15064,7 @@ Of course we still need to be sanctified and stop sinning, following Jesus.
 
 But sin is rather described in such a way:
 
-> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
 
 We must instead be led by the Spirit:
 
@@ -20864,6 +20871,13 @@ That means that when I turn up in heaven I'll have 'clothes' so I can enter - th
 But I have to keep seeking to be sanctified because Jesus is coming for me at some point. So I want to be ready for when that happens by being holy and loving:
 
 > **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
+
+Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
+The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me
+feel disqualified, but I know it's just demons/witchcraft and I'm resisting it to my best ability, including in my thoughts.
+Asides from that, I'll continue endeavouring to abide by Jesus' commandments, and I have a good conscience.
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
