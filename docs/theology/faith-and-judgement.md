@@ -4953,7 +4953,20 @@ Follow Jesus through the new and living Way:
 > **Hebrews 10:19-27** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, and since we have a great priest over the house of God, let us draw near with a true heart in full assurance of faith, with our hearts sprinkled clean from an evil conscience and our bodies washed with pure water. Let us hold fast the confession of our hope without wavering, for he who promised is faithful. And let us consider how to stir up one another to love and good works, not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near. For if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries.
 
 
+### Everyone needs saving
+
+> **Romans 3:1-19** - Then what advantage has the Jew? Or what is the value of circumcision? Much in every way. To begin with, the Jews were entrusted with the oracles of God. What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! **Let God be true though every one were a liar**, as it is written, That you may be justified in your words, and prevail when you are judged. But if our unrighteousness serves to show the righteousness of God, what shall we say? That God is unrighteous to inflict wrath on us? (I speak in a human way.) By no means! For then how could God judge the world? But if through my lie God's truth abounds to his glory, why am I still being condemned as a sinner? And why not do evil that good may come?—as some people slanderously charge us with saying. Their condemnation is just. What then? Are we Jews any better off? No, not at all. For we have already charged that **all, both Jews and Greeks, are under sin**, as it is written: **None is righteous, no, not one**; no one understands; no one seeks for God. All have turned aside; together they have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to deceive. The venom of asps is under their lips. Their mouth is full of curses and bitterness. Their feet are swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no fear of God before their eyes. Now we know that **whatever the law says it speaks to those who are under the law, so that every mouth may be stopped, and the whole world may be held accountable to God.** (ESV)
+
+> **Romans 3:20** - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. (ESV)
+
+
 ### Whoever makes an appeal to God, calls upon His name will be saved
+
+We call upon the Lord to be saved. And everyone needs saving.
+
+> **Acts 2:21** - And it shall come to pass that everyone who calls upon the name of the Lord shall be saved. (ESV)
+
+> **Acts 22:16** - And now why do you wait? Rise and be baptized and wash away your sins, calling on his name. (ESV)
 
     1  :  1941  epikaleomai  ep-ee-kal-eh'-om-ahee
     2  
@@ -6959,6 +6972,10 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 
 
 ### Salvation by obedience
+
+In obeying God, God helps us:
+
+> **Joshua 1:9** - Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your God is with you wherever you go. (ESV)
 
 I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us:
 
