@@ -3249,6 +3249,43 @@ The ones who are slaves to righteousness, following Jesus Christ, go to eternal 
 > **Matthew 25:46** - And these will go away into eternal punishment, but the righteous into eternal life.
 
 
+### Believing Jesus, we have **the right** to become a child of God
+
+Receive Jesus, believing in His name:
+
+> **John 1:12** - But to all who did receive him, who believed in his name, he gave the right to become children of God, (ESV)
+
+> **I Joh 3:10** - By this it is evident who are the children of God, and who are the children of the devil: **whoever does not practice righteousness is not of God**, nor is the one who does not love his brother. (ESV)
+
+**The children of God are the ones who love other children of God by following God's commandments:**
+
+> **I Joh 5:2** - By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
+
+> **Romans 8:16** - The Spirit himself bears witness with our spirit that we are children of God, (ESV)
+
+> **I Joh 3:1** - See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. (ESV)
+
+> **John 11:50-52** - Nor do you understand that it is better for you that one man should die for the people, not that the whole nation should perish. He did not say this of his own accord, but being high priest that year he prophesied that Jesus would die for the nation, and not for the nation only, but also to gather into one the children of God who are scattered abroad. (ESV)
+
+> **Romans 8:21** - that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. (ESV)
+
+> **Philippians 2:15** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, (ESV)
+
+> **I Joh 3:18** - Little children, let us not love in word or talk but in deed and in truth. (ESV)
+
+> **I Joh 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+
+> **II Joh 1:4** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. (ESV)
+
+> **III Joh 1:4** - I have no greater joy than to hear that my children are **walking in the truth**. (ESV)
+
+Whoever loves with Christ's love knows Father God:
+
+> **I Joh 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+> **I Joh 2:13** - I am writing to you, fathers, because you know him who is from the beginning. I am writing to you, young men, because you have overcome the evil one. I write to you, **children, because you know the Father**. (ESV)
+
+
 ### My understanding of repentance
 
 We need <ins>all</ins> of these:
@@ -21011,13 +21048,21 @@ Also, to "be holy as He is holy" when people deny relationships and marriage, an
 
 > **Colossians 2:18-21** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
 
-I'm definitely taking this stuff to God's court and asking for grace to be sanctified/delivered - I think delivered is the better term because I've endured isolation, and even cut off from Christian fellowship for following Jesus,
-denied marriage continually, locally and internationally slandered, and after getting born-again enduring the most soul-crushing circumstances,
-and then continually harassed by demons at night over the last 2 years.
+I'm definitely taking this stuff to God's court and asking for grace to be sanctified/delivered.
+I think delivered is the better term because I've endured isolation, and even cut off from Christian fellowship for following Jesus,
+denied marriage, denied relationships continually, locally and internationally slandered,
+and after getting born-again enduring the most soul-crushing circumstances,
+and then continually harassed by demons almost every night over the last 1.5 years. Literally:
 
-I feel spiritually injured by what I've had to endure regarding a spirit spouse
-and this daily bombardment of demonic dreams, and visions.
+> **Psalms 88:18** - You have caused my beloved and my friend to shun me; my companions have become darkness. (ESV)
+
+I actually feel spiritually damaged/injured by what I've had to endure regarding a spirit spouse - I simply don't understand why that thing
+has been allowed to touch me for 1.5 years and this daily bombardment of demonic dreams, and visions is very demoralizing.
 With regards to the spirit spouse, it makes me feel very gross and it makes me feel Psalm 22:1 forsaken by God - no joke.
+I have literally no idea why Father God waited such a long time in the first place to draw me to Jesus.
+I want to hear from God clearly, but I feel like being delivered from being attacked by demons would be really good.
+
+> **Psalms 22:1** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
 
 And it doesn't give me any joy to be spending so much time challenging the lies that come through other people regarding theology,
 rather than being in that position of being able to rest and enjoy God, as John Piper puts it.
@@ -21025,7 +21070,7 @@ I was in that happy place shortly after being born-again even though my theology
 
 > **I Timothy 6:12** - Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
 
-I am an obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult.
+I claim to be an obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult.
 I will still try aim to put that stuff to death and to be holy in all my conduct:
 
 > **I Peter 1:14-19** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
