@@ -39,11 +39,17 @@ Because God loved us first:
 
 -   **David Mathis:** "Don't think that becoming like Jesus in his death means that Paul is anticipating that he himself will be crucified, or that we will be crucified, but that he wants us to know Christ as we live in the pattern in which he lived; That we would **have his heart**, we would **have his mind** (mindset). We would **know him by walking in that mind**, **in that heart**. That's the pattern Paul wants to be conformed to. And knowing Christ by sharing in his sufferings means <ins>walking in the footsteps of his self-humbling,</ins> and **experiencing Jesus' help and the fellowship of having Him near and His resurrection power on the path of our obedience when it's the hardest**".
 
-AMEN!! Very well put by David Mathis. I'd say that in obeying Christ and imitating Christ, we endeavour to be found in Him, and He is our righteousness, and He is also our strength.
+Very well put by David Mathis. I'd say that in obeying Christ and imitating Christ, we endeavour to be found in Him, and He is our righteousness, and He is also our strength. However, I still believe that the upward call of God in Christ Jesus may result in some being martyred.
+
+> **John 21:19** - (This he said to show by what kind of death he was to glorify God.) And after saying this he said to him, Follow me. (ESV)
 
 Jesus follows us and supports us:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. (ESV)
+
+The crown of life is gifted to those who are obedient, and have been tested. I think this verse can also be taken in the literal sense:
+
+> **Revelation 2:10** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be **tested,** and for ten days you will have tribulation. Be faithful unto death, and I will give you the <ins>crown of life.</ins> (ESV)
 
 
 # Confessions of faith
@@ -1720,6 +1726,8 @@ We endeavour to be justified through faithful obedience to Jesus, and if we fall
 
 I believe the above prophetically talks about Jesus. We must obey Jesus. God doesn't guarantee that following Jesus will be easy.
 
+-   **Song:** [youtube.com: Steve Apirana - I Have Decided](https://www.youtube.com/watch?v=X-saQr3m4Vs)
+
 > **John 6:44-46** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. (ESV)
 
 > **II John 1:6** - And **this is love**, <ins>that we walk according to his commandments</ins>; this is the **commandment**, just as you have heard from the beginning, so that you should **walk in it**. (ESV)
@@ -3151,7 +3159,7 @@ We love God and our brothers and sisters in Christ by following God's commandmen
 
 > **I John 5:1-3** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
-The crown of life is gifted to those who are obedient, and have been tested:
+The crown of life is gifted to those who are obedient, and have been tested. I think this verse can also be taken in the literal sense:
 
 > **Revelation 2:10** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be **tested,** and for ten days you will have tribulation. Be faithful unto death, and I will give you the <ins>crown of life.</ins> (ESV)
 
