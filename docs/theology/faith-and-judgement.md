@@ -41,6 +41,10 @@ Because God loved us first:
 
 AMEN!! Very well put by David Mathis. I'd say that in obeying Christ and imitating Christ, we endeavour to be found in Him, and He is our righteousness, and He is also our strength.
 
+Jesus follows us and supports us:
+
+> **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. (ESV)
+
 
 # Confessions of faith
 
@@ -10752,6 +10756,8 @@ Jesus has to be our Pearl of Great price:
 
 > **Matthew 13:45-46** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. (ESV)
 
+-   **Song:** [youtube.com: Be the Centre - Michael Frye](https://www.youtube.com/watch?v=MERQ0P6O0CE)
+
 
 ### We need to treasure Jesus, and from there we should keep Jesus' commandments. Jesus must be our number 1
 
@@ -15978,6 +15984,12 @@ We follow them in faith.
     > **II Timothy 1:14** - Guard, through **the Holy Spirit** who dwells in us, the treasure which has been entrusted to you.
     
     > **John 3:33-34** - Whoever receives his testimony sets his seal to this, that **God is true.** For he whom God has sent utters the <ins>words of God,</ins> for he gives <ins>the Spirit</ins> without measure. (ESV)
+    
+    Something I realised fairly recently. I also before having that short conversation with Holy Spirit knew (as I was dreaming/asleep) that they were following me:
+    
+    Jesus follows us and supports us:
+    
+    > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. (ESV)
 
 3.  I wrote about following the law by faith, also law written on my heart.
 
@@ -20264,6 +20276,8 @@ The motivation is to glorify Jesus, and to honour Jesus.
 > **I Corinthians 6:20** - for you were bought with a price. So glorify God in your body. (ESV)
 
 > **Romans 12:1** - I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. (ESV)
+
+-   **Song:** [youtube.com: Steve Apirana - Living Sacrifice](https://www.youtube.com/watch?v=L4PSTgzgQuA)
 
 This should never replace Jesus, but glorifies Jesus because it's being a disciple of Jesus.
 
