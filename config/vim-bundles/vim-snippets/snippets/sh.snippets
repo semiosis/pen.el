@@ -673,7 +673,10 @@ snippet wrloneliner-old
 	# https://stackoverflow.com/questions/4165135/how-to-use-while-read-bash-to-read-the-last-line-in-a-file-if-there-s-no-new
 	while read line; do ${0}; done
 snippet wrl "# This removes starting whitespace"
-	awk1 | while IFS=$'\n' read -r line; do
+	# newline
+	IFS="
+	"
+	awk1 | while IFS="$IFS" read -r line; do
 		${0}
 	done
 snippet wrln "# This removes starting whitespace and traling newlines (good)"

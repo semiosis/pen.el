@@ -19,8 +19,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     *) break;
 esac; done
 
+# newline
+IFS="
+"
+
 awk 1 | {
-    while IFS=$'\n' read -r line; do
+    while IFS="$IFS" read -r line; do
         (
             exec 0</dev/null
             if test -n "$line"; then

@@ -1496,6 +1496,11 @@ We get out of the way everything that is an obstacle to enjoying God when we are
 > **Colossians 1:14** - in whom we have redemption, the forgiveness of sins. (ESV)
 
 
+### God the justifier of the one who has faith in Jesus - the righteousness of God apart from the law is received by faith
+
+> **Romans 3:21-26** - But now the **righteousness of God has been manifested** apart from the law, although the Law and the Prophets bear witness to it— the **righteousness of God through faith in Jesus Christ for all who believe**. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be **received by faith**. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that **he might be just and the justifier of the one who has faith in Jesus**. (ESV)
+
+
 ### The point of justification - we rejoice in the hope of the glory of God, and we are transformed
 
 -   **Sermon:** [John Piper: God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
@@ -3255,15 +3260,15 @@ Receive Jesus, believing in His name:
 
 > **John 1:12** - But to all who did receive him, who believed in his name, he gave the right to become children of God, (ESV)
 
-> **I Joh 3:10** - By this it is evident who are the children of God, and who are the children of the devil: **whoever does not practice righteousness is not of God**, nor is the one who does not love his brother. (ESV)
+> **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: **whoever does not practice righteousness is not of God**, nor is the one who does not love his brother. (ESV)
 
 **The children of God are the ones who love other children of God by following God's commandments:**
 
-> **I Joh 5:2** - By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
+> **I John 5:2** - By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
 
 > **Romans 8:16** - The Spirit himself bears witness with our spirit that we are children of God, (ESV)
 
-> **I Joh 3:1** - See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. (ESV)
+> **I John 3:1** - See what kind of love the Father has given to us, that we should be called children of God; and so we are. The reason why the world does not know us is that it did not know him. (ESV)
 
 > **John 11:50-52** - Nor do you understand that it is better for you that one man should die for the people, not that the whole nation should perish. He did not say this of his own accord, but being high priest that year he prophesied that Jesus would die for the nation, and not for the nation only, but also to gather into one the children of God who are scattered abroad. (ESV)
 
@@ -3271,19 +3276,19 @@ Receive Jesus, believing in His name:
 
 > **Philippians 2:15** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, (ESV)
 
-> **I Joh 3:18** - Little children, let us not love in word or talk but in deed and in truth. (ESV)
+> **I John 3:18** - Little children, let us not love in word or talk but in deed and in truth. (ESV)
 
-> **I Joh 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
 
-> **II Joh 1:4** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. (ESV)
+> **II John 1:4** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. (ESV)
 
-> **III Joh 1:4** - I have no greater joy than to hear that my children are **walking in the truth**. (ESV)
+> **III John 1:4** - I have no greater joy than to hear that my children are **walking in the truth**. (ESV)
 
 Whoever loves with Christ's love knows Father God:
 
-> **I Joh 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+> **I John 4:7** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
 
-> **I Joh 2:13** - I am writing to you, fathers, because you know him who is from the beginning. I am writing to you, young men, because you have overcome the evil one. I write to you, **children, because you know the Father**. (ESV)
+> **I John 2:13** - I am writing to you, fathers, because you know him who is from the beginning. I am writing to you, young men, because you have overcome the evil one. I write to you, **children, because you know the Father**. (ESV)
 
 
 ### My understanding of repentance
@@ -3787,7 +3792,7 @@ Do not love the world:
 
 ### Give our mind to Christ
 
-> **1 Joh 2:3-5** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him: (ESV)
+> **1 John 2:3-5** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him: (ESV)
 
 We should use the Word of God to come against even arguments and opinions which are raised against the knowledge of God. Even our thoughts must be brought into obedience to Christ:
 
@@ -4080,6 +4085,8 @@ I can only say that salvation was a total gift for me, an unrighteous sinner. Bu
 
 
 ### The narrow gate vitally requires submitting to God's righteousness. We need God's forgiveness and His justification that comes through faith
+
+> **Romans 3:21-26** - But now the **righteousness of God has been manifested** apart from the law, although the Law and the Prophets bear witness to it— the **righteousness of God through faith in Jesus Christ for all who believe**. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. (ESV)
 
 > **Romans 10:3** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. (ESV)
 
@@ -4631,7 +4638,7 @@ Also, I have had as of 28 May '24 in my dreams:
 
 Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God the Son, and Jehovah is God and is Love. I will be still waiting for the Biblical acknowledgement I am waiting for "Jesus is the Son of God who has proceeded forth from Father God **in the flesh** from heaven to earth". Otherwise I'm simply not going to trust the spirit sending dreams/visions. They can get very tactical sometimes, so I have to be very discerning. Though I will test them because I still get some true visions/dreams sometimes.
 
-> **I Joh 4:2-3** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
+> **I John 4:2-3** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
 > **I Thessalonians 5:20-22** - Do not despise prophecies, but test everything; hold fast what is good. Abstain from every form of evil. (ESV)
 
@@ -9845,6 +9852,10 @@ The Torah is the compilation of the first five books of the Hebrew Bible, namely
 Keeping to <ins>the precepts of the law</ins> is great, and making yourself accountable to God with it, is great.
 
 > **Proverbs 28:9** - If one turns away his ear from hearing the law, even his prayer is an abomination. (ESV)
+
+Even as Christ-followers, living righteously by loving God and our neighbour, and putting a stop to sin is what we are called to do, and the Torah (law of God) teaches us a lot about how to do that:
+
+> **Psalms 1:1-3** - Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers; but his delight is in the law of the LORD, and on his law he meditates day and night. He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither. In all that he does, he prospers. (ESV)
 
 Here, Paul actually argues **for** keeping the precepts of the Torah, and relates actually keeping the precepts to those who have been circumcised in the heart:
 
@@ -21097,6 +21108,8 @@ I know my family in Christ also experience the same kind of suffering / spiritua
 
 > **I Peter 5:9** - Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
 
+-   **Song:** [youtube.com: Elvis Presley - Help me {With Lyrics}](https://www.youtube.com/watch?v=Y76Nez0dI7A)
+
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
 
@@ -21261,7 +21274,7 @@ Do not be an enemy of the cross of Christ, imitate Christ:
 
 > **Hebrews 13:7** - Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith. (ESV)
 
-> **III Joh 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
+> **III John 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
@@ -21358,9 +21371,11 @@ It should be:
      9  In Jesus Christ's name I pray,
     10  AMEN!!
 
-> **Romans 3:25** -  whom God put forward as a propitiation by his blood, to be received by faith.  This was to show God's righteousness, because in his divine forbearance he had passed over former sins.  (ESV)
+> **Romans 3:21-26** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. (ESV)
 
-> **Colossians 2:14** - by canceling the record of debt that stood against us with its legal demands. This he set aside, nailing it to the cross.
+> **Colossians 2:14** - by canceling **the record of debt** that stood against us with its legal demands. This he set aside, **nailing it to the cross**.
+
+> **Revelation of John 1:5** - and from Jesus Christ the faithful witness, the firstborn of the dead, and the ruler of kings on earth. To him who loves us and has **freed us from our sins by his blood** (ESV)
 
 > **Philippians 1:9-11** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
