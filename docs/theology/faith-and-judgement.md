@@ -12465,11 +12465,9 @@ The persecution is for the cross of Christ - the offense of the cross:
 
 > **I Corinthians 4:12** - and we labor, working with our own hands. When reviled, we bless; when persecuted, we endure; (ESV)
 
->   **II Thessalonians 1:4** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. (ESV)
-> \#+END<sub>QUOTE</sub>,
-> 
-> \#+BEGIN<sub>QUOTE</sub>
->   **Matthew 13:21** - yet he has no root in himself, but endures for a while, and when tribulation or persecution arises on account of the word, immediately he falls away. (ESV)
+> **II Thessalonians 1:4** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. (ESV)
+
+> **Matthew 13:21** - yet he has no root in himself, but endures for a while, and when tribulation or persecution arises on account of the word, immediately he falls away. (ESV)
 
 
 ## The kingdom of heaven may be inherited
@@ -12483,8 +12481,11 @@ The persecution is for the cross of Christ - the offense of the cross:
 
 > **Matthew 5:11-13**  Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet.
 
+It was easy at first to rejoice but the spiritual attack I've faced is intolerable, and we are supposed to use the word of God to combat these things.
+And I document it here for others' understanding.
+
 Surely God has some greater purpose surrounding why I've had to endure near ceaseless spiritual attack,
-inside and outside church, and internationally.
+and being treated like garbage from worldly Christians, and through the press.
 
 
 ### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time in this life or the next
@@ -21090,6 +21091,13 @@ Christian persecution is not for suffering as an evildoer:
 > **I Peter 4:15** - But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. (ESV)
 
 What I've gone through after being born-again is definitely a lot of suffering for following Jesus. I've been persecuted as a disciple of Jesus by Christians and by many non-Christians, though I had joy over putting up with it, I'm very tired of it now and exhausted. I'm sorry I am just very tired of it and against false-Christians who are not showing Christ's love - who show no mercy and think just people of the world, and do not have the mind of Christ and who don't know Christ's love, nor can see it in other people.
+
+By writing this document, I do not want to be thought of as a 'living martyr' and I neither want to glory in any of the persecution I've received.
+It sucks. It's not fun, and the people who have persecuted me should definitely repent.
+
+I just want people to stop slandering me in Jesus Christ's name please, and a wife who has actual love in her heart, not malice, nor worldliness,
+and has a real faith in Jesus, someone worth spending the rest of my life with here on this earth,
+and I don't want to be abused for it, especially by so-call Christ-followers who don't actually obey Jesus.
 
 
 # Jesus Christ is fully God and fully human
