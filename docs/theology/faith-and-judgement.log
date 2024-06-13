@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  13 JUN 2024 13:54
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  13 JUN 2024 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1345,9 +1345,9 @@ Overfull \hbox (17.31909pt too wide) in paragraph at lines 23212--23213
 [456] [457] [458] [459] [460] [461] [462] [463] [464] [465] [466] [467]
 [468] [469] [470] [471] [472] [473] [474] [475] [476] [477] [478] [479]
 [480] [481] [482] [483] [484] [485] [486] [487] [488] [489] [490] [491]
+[492]
 Missing character: There is no 􇩙 in font [lmroman10-regular]:mapping=tex-text;!
-
-[492] [493] [494]
+ [493] [494] [495]
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ḵ in font [lmmono10-regular]:!
@@ -1447,7 +1447,7 @@ Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ֽ in font [lmmono10-regular]:!
 Missing character: There is no י in font [lmmono10-regular]:!
 Missing character: There is no ־ in font [lmmono10-regular]:!
- [495]
+ [496]
 Missing character: There is no ḵ in font [lmmono10-regular]:!
 Missing character: There is no ה in font [lmmono10-regular]:!
 Missing character: There is no ַ in font [lmmono10-regular]:!
@@ -1507,30 +1507,30 @@ Missing character: There is no ו in font [lmmono10-regular]:!
 Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ׃ in font [lmmono10-regular]:!
 Missing character: There is no ס in font [lmmono10-regular]:!
- [496] [497] [498] [499]
-Overfull \hbox (110.33736pt too wide) in paragraph at lines 27106--27107
+ [497] [498] [499] [500]
+Overfull \hbox (110.33736pt too wide) in paragraph at lines 27112--27113
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][] [] [][][]
 [][][][][][][][][][][] [] [][][][][] [] [] [] [][][][][][][][][] [] [][][][][][
 ] [] [][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][]$[] 
  []
 
-[500] [501] [502] [503] [504] [505] [506] [507] [508] [509] [510] [511]
-[512] [513] [514] [515] [516] [517] [518] [519] [520] [521] [522] [523]
-[524] [525] [526] [527]
-Overfull \hbox (185.21338pt too wide) in paragraph at lines 28704--28705
+[501] [502] [503] [504] [505] [506] [507] [508] [509] [510] [511] [512]
+[513] [514] [515] [516] [517] [518] [519] [520] [521] [522] [523] [524]
+[525] [526] [527] [528]
+Overfull \hbox (185.21338pt too wide) in paragraph at lines 28710--28711
 []\TU/lmr/m/n/10.95 We are commanded to love our wives the way Jesus did. - []$
 [][][][][] [] [] [] [][][][] [] [][] [] [][][][][] [] [][][][][] [] [][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][]$[] 
  []
 
-[528] [529]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 28835--28836
+[529] [530]
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 28841--28842
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
-[530]
+[531] [532]
 Missing character: There is no מ in font [lmmono10-regular]:!
 Missing character: There is no ו in font [lmmono10-regular]:!
 Missing character: There is no ֹ in font [lmmono10-regular]:!
@@ -1546,30 +1546,31 @@ Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ז in font [lmmono10-regular]:!
 Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ר in font [lmmono10-regular]:!
- [531] [532] [533] [534] [535] [536] [537] [538]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 29297--29297
+ [533] [534] [535] [536] [537] [538] [539]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 29321--29321
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 29297--29297
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 29321--29321
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
 
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 29310--29310
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 29334--29334
 [] \TU/lmtt/m/n/10.95 8  Nevertheless, I live to serve You, God, and to be conf
 ormed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29331.
-[539]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 29331.
+[540]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29355.
+ [541]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29355.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 29331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29331
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 29355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29355
 .
 
 
@@ -1583,7 +1584,7 @@ Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29331.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29355.
  ) 
 Here is how much of TeX's memory you used:
  10968 strings out of 494868
@@ -1594,4 +1595,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  28i,9n,45p,6286b,1088s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./faith-and-judgement.pdf (539 pages).
+Output written on ./faith-and-judgement.pdf (541 pages).
