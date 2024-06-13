@@ -1,0 +1,43 @@
+#!/bin/bash
+export TTY
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+fp="$last_arg"
+bn="$(basename "$fp")" # bn is required
+ext="${bn##*.}"
+
+if printf -- "%s\n" "$last_arg" | grep -q -P '^http.?:'; then
+    case "$fp" in
+        */) {
+            tf_webpage="$(ux tf webpage "txt" || echo /dev/null)"
+
+            elinks-dump "$last_arg" > "$tf_webpage"
+        }
+        ;;
+
+        *) {
+            case "$ext" in
+                htm*) {
+                    tf_webpage="$(ux tf webpage txt || echo /dev/null)"
+
+                    elinks-dump "$last_arg" > "$tf_webpage"
+
+                }
+                ;;
+
+                *) {
+                    tf_webpage="$(ux tf webpage "$ext" || echo /dev/null)"
+
+                    curl "$last_arg" 2>/dev/null > "$tf_webpage"
+                }
+                ;;
+            esac
+        }
+    esac
+
+    set -- "${@:1:$(($#-1))}" # shift last arg
+
+    printf -- "%s\n" "$tf_webpage"
+else
+    printf -- "%s\n" "$last_arg"
+fi
