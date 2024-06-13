@@ -75,9 +75,23 @@ If you have trusting faith in God then you will walk according to the will of Go
 
 > **Galatians 5:16-18** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
-Jesus' disciples here were being led by Jesus. As I understand it, we're only not guilty if we're trusting Jesus who justifies the ungodly. Trusting Him who justifies the ungodly has noticeable fruit of following Him because those who trust Him follow Him:
+-   **Song:** [youtube.com: Shane & Shane: I Will Wait For You {Psalm 130}](https://www.youtube.com/watch?v=l8pCbtLeXzc)
+
+Jesus' disciples here were being led by Jesus. As I understand it, we're only not guilty if we're trusting Jehovah God who justifies the ungodly by trusting Jesus. Serving Jesus = Following Jesus. We've got to follow Jesus:
+
+> **John 12:26** - If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+
+> **Matthew 8:22** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
+
+Trusting Him who justifies the ungodly has noticeable fruit of following Him because those who trust Him follow Him:
 
 > **Matthew 12:1-8** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
+
+Jesus will serve His servants who are awake:
+
+> **Luke 12:37** - Blessed are those servants whom the master finds awake when he comes. Truly, I say to you, he will dress himself for service and have them recline at table, and he will come and serve them. (ESV)
+
+> **Matthew 23:11** - The greatest among you shall be your servant. (ESV)
 
 
 ### Notes for Chapter 9, paragraph 3
@@ -1702,7 +1716,7 @@ It is clear that following Jesus helps us to not sin, which means that the destr
 
 I've heard from many deluded Christians in the past who think that as Christians we "do not need to follow Christ's law".
 
-Also, I believe that loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty".
+Also, I believe that loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty". Following Jesus starts with believing in Him and believing He is the Son of God, and Anointed one, the Messiah, and following Jesus continues in getting to know Him through obedience to Him.
 
 > **Philippians 3:9-10** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through **faith in Christ**, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings, becoming like him in his death**, (ESV)
 
@@ -4535,7 +4549,9 @@ Also, I have had as of 28 May '24 in my dreams:
 
 [star.net.nz:  The Word for Today - The right balance - May 28th](https://www.star.net.nz/the-word-for-today/-the-right-balance-2024_05_28)
 
-Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God. I will be still waiting for the Biblical acknowledgement I am waiting for "Jesus is the Son of God who has proceeded forth from Father God in the flesh, the ".
+Interesting. It's not exactly what I'm still having faith for, but Jesus is indeed God the Son, and Jehovah is God and is Love. I will be still waiting for the Biblical acknowledgement I am waiting for "Jesus is the Son of God who has proceeded forth from Father God **in the flesh** from heaven to earth". Otherwise I'm simply not going to trust the spirit sending dreams/visions. They can get very tactical sometimes, so I have to be very discerning. Though I will test them because I still get some true visions/dreams sometimes.
+
+> **I Joh 4:2-3** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
 > **I Thessalonians 5:20-22** - Do not despise prophecies, but test everything; hold fast what is good. Abstain from every form of evil. (ESV)
 
