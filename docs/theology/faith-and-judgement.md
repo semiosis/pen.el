@@ -1719,6 +1719,10 @@ I believe the above prophetically talks about Jesus. We must obey Jesus. God doe
 
 Repenting from sin, including such things as idolatry, witchcraft, jealousy and sexual immorality is all a part of following Jesus and being led by the Spirit.
 
+-   **Sermon:** [youtube.com: The Trademarks of Witchcraft - Derek Prince](https://www.youtube.com/watch?v=Cf7EA8w_vQc)
+
+Practicing witchcraft, for example, is definitely not loving your neighbour as yourself.
+
 
 ## Walk by the Spirit = Obey Jesus = Led by the Spirit
 
@@ -13706,7 +13710,7 @@ We learn Christ, and are taught by Christ (becoming obedient to His teachings an
 
 Therefore, even before I was born-again of the Spirit, as I was endeavoring to practice Jesus' commandments, Jesus was already working in me. I say this for other's understanding.
 
-While the Scriptures says that we are born of God when we believe (I've been attending church my whole life, and baptised at 16 years old - 15-17), I was born-again/regenerated of the Spirit much later (when I was 37). Does that mean I hadn't truly believed until I was 37? Perhaps in a way. I had became disillusioned with AI in 2021 I began seeking after God, and then I got born-again. The Holy Spirit must have been working in my life before I was [born-again of the Spirit in this way](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). Holy Spirit must have been dwelling **with** me even before He was **in** me:
+While the Scriptures says that we are born of God when we believe (I've been attending church my whole life, and baptised at 16 years old - 15-17), I was [born-again/regenerated of the Spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) much later (when I was 35). Does that mean I hadn't truly believed until I was 35? Perhaps in a way. I had became disillusioned with AI in 2021 I began seeking after God, and then I got born-again. The Holy Spirit must have been working in my life before I was [born-again of the Spirit in this way](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). Holy Spirit must have been dwelling **with** me even before He was **in** me:
 
 > **John 14:15-17** - If you love me, you will **keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. (ESV)
 
@@ -20856,7 +20860,9 @@ But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assis
 
 ## The spiritual attack I have received in recent times
 
-The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure this is just a new dimension of spiritual life. I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
+The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure the spiritual warfare is just a new dimension of spiritual life.
+
+I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
 
 > **John 3:12** - If I have told you earthly things and you do not believe, how can you believe if I tell you heavenly things? (ESV)
 
@@ -20908,6 +20914,10 @@ feel disqualified, but I know it's just demons/witchcraft and I'm resisting it t
 Asides from that, I'll continue endeavouring to abide by Jesus' commandments, and I have a good conscience.
 
 > **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
+
+I know my family in Christ also experience the same kind of suffering / spiritual warfare:
+
+> **I Peter 5:9** - Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
