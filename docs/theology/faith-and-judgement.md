@@ -37,6 +37,10 @@ Because God loved us first:
 
 -   **Sermon:** [youtube.com: What Is It Like to 'Know Christ'?](https://www.youtube.com/watch?v=0g2ExGC1GaE)
 
+-   **David Mathis:** "Don't think that becoming like Jesus in his death means that Paul is anticipating that he himself will be crucified, or that we will be crucified, but that he wants us to know Christ as we live in the pattern in which he lived; That we would **have his heart**, we would **have his mind** (mindset). We would **know him by walking in that mind**, **in that heart**. That's the pattern Paul wants to be conformed to. And knowing Christ by sharing in his sufferings means <ins>walking in the footsteps of his self-humbling,</ins> and **experiencing Jesus' help and the fellowship of having Him near and His resurrection power on the path of our obedience when it's the hardest**".
+
+AMEN!! Very well put by David Mathis. I'd say that in obeying Christ and imitating Christ, we endeavour to be found in Him, and He is our righteousness, and He is also our strength.
+
 
 # Confessions of faith
 
