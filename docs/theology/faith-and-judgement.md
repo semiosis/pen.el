@@ -238,7 +238,7 @@ While obedience exists in the heart, as belief does, as **faith is** <ins>believ
 
 Christianity is a relationship, like a marriage:
 
--   Acceptance comes at the beginning
+-   Acceptance comes at the beginning; Jesus gives us the benefit of the doubt
     -   We must still forgive and love our family in Christ. This isn't 'work', but it is obedience, and it is a required heart attitude
 -   It's not a merit-based religion
 -   We **must** have a response of love for Jesus
@@ -1471,7 +1471,7 @@ We get out of the way everything that is an obstacle to enjoying God when we are
 > **Colossians 1:14** - in whom we have redemption, the forgiveness of sins. (ESV)
 
 
-### The point of justification - we rejoice in the hope of the glory of God
+### The point of justification - we rejoice in the hope of the glory of God, and we are transformed
 
 -   **Sermon:** [John Piper: God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
 
@@ -1483,6 +1483,10 @@ The reason we want to be righteous is so we get God. We don't get put in hell.
 
 > **John 17:3** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
+Not only are we able to behold the glory of God, but we are **transformed**!
+
+> **II Corinthians 3:18** - And we all, with unveiled face, **beholding the glory** of the Lord, are **being transformed into the same image from one degree of glory to another**. For this comes from the Lord who is the Spirit. (ESV)
+
 
 ### Why do we want to live righteously? To honour Christ
 
@@ -1491,6 +1495,14 @@ We want to honour/exalt/magnify Christ in our lives, to **trust** Him, **honour*
 > **Philippians 1:20-21** - According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be **magnified** in my body, whether it be **by life**, **or by death**. For to me to live is Christ, and to die is gain. (KJV)
 
 > **II Corinthians 4:4** - In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. (ESV)
+
+We want to obey God, and we will be transformed in this life:
+
+> **Romans 12:2** - Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. (ESV)
+
+And have communion with God:
+
+> **Revelation of John 3:4** - Yet you have still a few names in Sardis, people who have not soiled their garments, and they will walk with me in white, for they are worthy. (ESV)
 
 
 ### Under the right conditions, I don't see a problem with 'working' for God
@@ -4790,7 +4802,7 @@ Led by the Spirit of God is doing God's will:
 
 > **Psalms 143:10** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
-> **II Corinthians 3:18** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
+> **II Corinthians 3:18** - And we all, with unveiled face, **beholding the glory** of the Lord, are **being transformed into the same image from one degree of glory to another**. For this comes from the Lord who is the Spirit. (ESV)
 
 > **II Corinthians 3:6** - who has made us competent to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life. (ESV)
 
@@ -4980,6 +4992,8 @@ I agree with Billy Graham:
     Jesus says you must obey God to be part of His family:
     
     > **Luke 8:21** - But He answered and said to them, “My mother and My brothers are these who hear the word of God and do it.”
+    
+    > **Hebrews 2:11** - For he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers, (ESV)
     
     Jesus implies you must obey Him (Jesus) to be part of His family:
     
@@ -7696,7 +7710,7 @@ We're not being justified by our works - we've already been redeemed, but we do 
 
 Christianity is a relationship, like a marriage:
 
--   Acceptance comes at the beginning (like a kingdom marriage proposal)
+-   Acceptance comes at the beginning; Jesus gives us the benefit of the doubt (like a kingdom marriage proposal)
 -   It's not a merit-based religion
 
 The Holy Spirit still goes to those who obey Jesus:
@@ -20541,7 +20555,7 @@ Required to satisfy the "Christ's love" criteria I believe are:
 -   We love because God loved us first. We ought to love others because we have been loved by God
 -   We forgive out of a loving response to God and to others, knowing we have already been forgiven of our debt
 -   It must satisfy Christ's law
--   Acceptance comes at the beginning
+-   Acceptance comes at the beginning; Jesus gives us the benefit of the doubt
 
 Our first agape love has to be Jesus:
 
@@ -21041,6 +21055,18 @@ The motivation for everything must be to glorify God.
 Paul agrees:
 
 > **Philippians 4:9** - What you have learned and received and heard and seen in me — **practice these things**, <ins>and the God of peace will be with you.</ins> (ESV)
+
+Walk as an imitator of Christ:
+
+> **Philippians 3:17-18** - Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. For many, of whom I have often told you and now tell you even with tears, walk as enemies of the cross of Christ. (ESV)
+
+> **I Corinthians 11:1** - Be imitators of me, as I am of Christ. (ESV)
+
+Do not be an enemy of the cross of Christ, imitate Christ:
+
+> **Hebrews 13:7** - Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith. (ESV)
+
+> **III Joh 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
