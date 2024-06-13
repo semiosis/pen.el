@@ -12431,9 +12431,50 @@ The peace Jesus brings is peace in Christ:
 > **II Timothy 2:22** - Now flee from youthful lusts and pursue righteousness, faith, love and peace, with those who call on the Lord from a pure heart. (NASB)
 
 
+## Christian persecution is for abiding in Jesus through the cross
+
+Christian persecution happens for obeying Jesus' commandments, through being a servant of Jesus, for being found in Jesus:
+
+> **Matthew 5:10** - Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven. (ESV)
+
+Christian persecution is not for suffering as an evildoer:
+
+> **I Peter 4:15** - But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. (ESV)
+
+Christian persecution happens because a person is actually serving Jesus (i.e. following His commandments):
+
+> **John 15:20** - Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
+
+Worldly people (including worldly Christians) persecute those who are walking in the Spirit:
+
+> **Galatians 4:29** - But just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now. (ESV)
+
+> **Matthew 5:12** - Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+
+The persecution is for the cross of Christ - the offense of the cross:
+
+> **Galatians 6:12** - It is those who want to make a good showing in the flesh who would force you to be circumcised, and only in order that they may not be persecuted for the cross of Christ. (ESV)
+
+
+### There are huge rewards for Christian persecution
+
+> **Mark 10:30** - who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life. (ESV)
+
+
+### We bless back and endure
+
+> **I Corinthians 4:12** - and we labor, working with our own hands. When reviled, we bless; when persecuted, we endure; (ESV)
+
+>   **II Thessalonians 1:4** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. (ESV)
+> \#+END<sub>QUOTE</sub>,
+> 
+> \#+BEGIN<sub>QUOTE</sub>
+>   **Matthew 13:21** - yet he has no root in himself, but endures for a while, and when tribulation or persecution arises on account of the word, immediately he falls away. (ESV)
+
+
 ## The kingdom of heaven may be inherited
 
-> **Matthew 5:10** - Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven.
+> **Matthew 5:10** - Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven. (ESV)
 
 > **Matthew 5:3-9** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
@@ -20943,6 +20984,13 @@ I think what this verse says is that putting a stop to sin 'closes doors' which 
 > **Psalms 66:18** - If I had cherished iniquity in my heart, the Lord would not have listened. (ESV)
 
 
+## The very reason I found myself in court is for coming to the light, and for exposing darkness, but that meant doing the right thing even though it would give me a conviction
+
+> **John 3:21** - But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God. (ESV)
+
+Jehovah God as my witness.
+
+
 ## I'm definitely leaving this stuff in God's court
 
 At the end of the day I am resting on the righteousness that comes through faith in Jesus - Amen to that.
@@ -21033,6 +21081,15 @@ There was an incredible amount of resistance from other people to following Jesu
 > **Ephesians 4:32** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
 Likewise, there was also a lot of resistance, spiritually, to repenting from sin.
+
+
+### We're persecuted for following Jesus
+
+Christian persecution is not for suffering as an evildoer:
+
+> **I Peter 4:15** - But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. (ESV)
+
+What I've gone through after being born-again is definitely a lot of suffering for following Jesus. I've been persecuted as a disciple of Jesus by Christians and by many non-Christians, though I had joy over putting up with it, I'm very tired of it now and exhausted. I'm sorry I am just very tired of it and against false-Christians who are not showing Christ's love - who show no mercy and think just people of the world, and do not have the mind of Christ and who don't know Christ's love, nor can see it in other people.
 
 
 # Jesus Christ is fully God and fully human
