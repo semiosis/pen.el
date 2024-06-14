@@ -276,11 +276,13 @@ START and END can be in either order."
                                                       (or (calibredb-getattr (car (calibredb-find-candidate-at-point)) :file-path) ""))) "") :chomp t)))
   (let* ((s_wintype (sym2str wintype))
          (fun (str2sym (concat "pen-e-" s_wintype))))
-    (if (and
-         (not output_b)
-         (>= (prefix-numeric-value current-prefix-arg) 8))
-        (funcall fun 'new-buffer-from-string)
-      (pen-tm-nw cmd s_wintype nw_args input dir output_b))))
+    (pen-tm-nw cmd s_wintype nw_args input dir output_b)
+    ;; (if (and
+    ;;      (not output_b)
+    ;;      (>= (prefix-numeric-value current-prefix-arg) 8))
+    ;;     (funcall fun 'new-buffer-from-string)
+    ;;   (pen-tm-nw cmd s_wintype nw_args input dir output_b))
+    ))
 
 (defun pen-nw (&optional cmd nw_args input dir output_b)
   "Runs command in a sensible split"

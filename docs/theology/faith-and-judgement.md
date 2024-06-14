@@ -260,6 +260,7 @@ Christianity is a relationship, like a marriage:
 -   It's not a merit-based religion
 -   We **must** have a response of love for Jesus
     -   **John 14:21** - <ins>Whoever has my commandments and keeps them, he it is who loves me.</ins> And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+    -   **John 16:27** - for the Father himself loves you, **because** you have loved me and have believed that I came from God. (ESV)
 -   In whatever we do, we should be serving the Lord Jesus Christ
 
 > **Proverbs 3:5-6** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
@@ -5507,7 +5508,7 @@ So the promise is for all who put their faith in God by obeying Jesus Christ wit
 
 If we are led by the spirit then we are not under the Mosaic law. So we should stop sinning as it is described by such works of the flesh as listed:
 
-> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+> **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
 
 The law (Mosaic law) is laid down for those who are lawless and disobedient!:
 
@@ -13704,7 +13705,7 @@ Being <ins>led by the spirit involves following Christ's law.</ins> To be marrie
 
 **If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law.:
 
-> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+> **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
 
 Now while we may have faith, hoping, even having a conviction for something which God may not have directly told us about (such as a marriage),
 ultimately God may approve or deny it:
@@ -14225,6 +14226,8 @@ But neither does marriage between man and woman even exist in heaven.
 
 But those who practice sexual impurity which includes homosexuality probably wont **inherit** the kingdom,
 nor enter into the New Jerusalem in Heaven - those are for the saints (those who keep God's commandments AND have faith in Jesus).
+
+> **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
 
 > **II Corinthians 11:2** - I feel a divine jealousy for you, for I <ins>betrothed you to one husband, to present you as a pure virgin to Christ</ins>. (ESV)
 
@@ -15213,7 +15216,7 @@ Being led by the spirit involves following Christ's law:
 
 **If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law.:
 
-> **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+> **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
 
 So we should still stop sinning as it is described:
 
@@ -15557,7 +15560,7 @@ The universe is upheld by the word of Jesus' power.
     
     > **Matthew 7:3-5** - Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
     
-    > **Galatians 5:18** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God.
+    > **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
     
     We must be **doing** the will of God to not be under the law:
     
@@ -21021,9 +21024,25 @@ But the Hebrew for helper in **Genesis 2:18** is not the 'saviour' but the assis
 
 The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure the spiritual warfare is just a new dimension of spiritual life.
 
-I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
+I've been discernibly harassed by demons, even daily, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>, and adding to this, increasingly daily even 1 week later to today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-14 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels 5 dimensional and explaining 5D situations requires a little bit more explanation. As Jesus said:
 
 > **John 3:12** - If I have told you earthly things and you do not believe, how can you believe if I tell you heavenly things? (ESV)
+
+And as Paul said:
+
+> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
+
+More accurately though, when people manifest demons its as if they become different people as the demons speak and act through them:
+
+> **Luke 8:30** - Jesus then asked him, What is your name? And he said, Legion, for many demons had entered him. (ESV)
+
+Anyway, I see this stuff in the spirit, and the way to fight against it is with the Word of God:
+
+> **Matthew 4:9-11** - And he said to him, All these I will give you, if you will fall down and worship me. Then Jesus said to him, Be gone, Satan! For it is written, You shall worship the Lord your God and him only shall you serve. Then the devil left him, and behold, angels came and were ministering to him. (ESV)
+
+The Word of God is a light to our path. Metaphorically, it's a bit like having a GPS while navigating at night:
+
+> **Psalms 119:105** - Your word is a lamp to my feet and a light to my path. (ESV)
 
 I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
 

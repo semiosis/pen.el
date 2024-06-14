@@ -20,6 +20,11 @@
 
 (defun e-faith-and-judgement ()
   (interactive)
-  (e "$EMACSD/pen.el/docs/theology/faith-and-judgement.org"))
+
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (cond ((>= gparg 16) (sps "vd /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org $EMACSD/pen.el/docs/theology/faith-and-judgement.org"))
+          ((>= gparg 4) (e "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org"))
+          (t (e "$EMACSD/pen.el/docs/theology/faith-and-judgement.org")))))
 
 (provide 'pen-documents)
