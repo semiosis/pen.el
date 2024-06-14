@@ -12928,6 +12928,7 @@ Keeping Jesus' commandments is obeying Jesus. Obedience to Jesus is a requiremen
 We remember Jesus as we take communion:
 
 -   We give thanks to God
+    -   **Colossians 3:17** - And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks (G2168 **eucharisteo**) to God the Father through him. (ESV)
 -   We proclaim the Lord Jesus' death until He comes
 -   We examine ourselves and compare our hearts to the heart of the Lord Jesus
 -   We consider what our Lord Jesus has done for us on the cross
