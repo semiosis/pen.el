@@ -1358,6 +1358,8 @@ We need to perform our salvation in obedience to God:
 
 > **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
+We have different gifts, a different calling. We cannot compare or boast. We're different parts of the body of Christ.
+
 Let's see what the word **katergazomai** (the word for 'work out') means:
 
 -   [Philippians 2:12 (Interlinear)](https://biblehub.com/interlinear/philippians/2-12.htm)
@@ -7682,13 +7684,13 @@ We must be able to accept that our gifts which we give to God will never be good
 
 For the person who does not work but trusts God who justifies the ungodly, his faith is counted as righteousness:
 
-> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
 
 I'm **trusting God** wholeheartedly to be justified because of Christ's finished work on the cross. And this type of justification by faith is for anyone who **trusts God** for the forgiveness of their sins through Jesus' finished work on the cross. I don't deny that to other people. But we are **trusting God**, not trusting on the work alone without trusting/believing/obeying/loving God.
 
 I'm unsure if the following applies for justification (it may be that it is meant in a different context), but in some sense, forgiving others is still required if someone wants God to forgive them:
 
-> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV) (ESV)
 
 > **Matthew 6:12-15** -  and forgive us our debts, as we also have forgiven our debtors.  And lead us not into temptation, but deliver us from evil.  For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses.  (ESV)
 
@@ -9048,7 +9050,7 @@ Walk in what you have asked for in prayer:
 
 It's important to forgive others in order to move forward, because unforgiveness I think may inhibit moving into what you have asked for in prayer:
 
-> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
 
 We must receive Jesus' words, walk in them and come to **know in truth** (we must truly know) that Jesus came from God.
 
@@ -10161,7 +10163,10 @@ And the word **confess** I think means to admit with repentance - an admission o
 
 If a person confesses this truthfully, they professes that they submit to the righteousness of God.
 
-That's a little bit loaded. It results in a heart growing in obedience towards God.
+That's a little bit loaded. It results in a heart growing in obedience towards God, and agreement with God over His precepts and His Truth.
+
+Also, when confessing sin, a person is agreeing with God's precepts.
+
 And I believe it's the resulting obedience to God that ends up saving that person, even if that obedience hasn't produced any work yet other than belief. God is the one that saves and justifies.
 
 Then Jesus hits us with this:
@@ -13457,33 +13462,33 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 
 > **Micah 4:1-13** - It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths. For out of Zion shall go forth the law, and the word of the LORD from Jerusalem. He shall judge between many peoples, and shall decide for strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the LORD of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the LORD our God forever and ever. In that day, declares the LORD, I will assemble the lame and gather those who have been driven away and those whom I have afflicted; and the lame I will make the remnant, and those who were cast off, a strong nation; and the LORD will reign over them in Mount Zion from this time forth and forevermore. And you, O tower of the flock, hill of the daughter of Zion, to you shall it come, the former dominion shall come, kingship for the daughter of Jerusalem. Now why do you cry aloud? Is there no king in you? Has your counselor perished, that pain seized you like a woman in labor? Writhe and groan, O daughter of Zion, like a woman in labor, for now you shall go out from the city and dwell in the open country; you shall go to Babylon. There you shall be rescued; there the LORD will redeem you from the hand of your enemies. Now many nations are assembled against you, saying, Let her be defiled, and let our eyes gaze upon Zion. But they do not know the thoughts of the LORD; they do not understand his plan, that he has gathered them as sheaves to the threshing floor. Arise and thresh, O daughter of Zion, for I will make your horn iron, and I will make your hoofs bronze; you shall beat in pieces many peoples; and shall devote their gain to the LORD, their wealth to the Lord of the whole earth. (ESV)
 
-> **James 1:26** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
+> **James 1:26** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. (ESV)
 
 
 ## They also have to repent from idolatry
 
-> **I Thessalonians 1:9-10** - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come.
+> **I Thessalonians 1:9-10** - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come. (ESV)
 
-> **I Corinthians 10:14-31** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
+> **I Corinthians 10:14-31** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God. (ESV)
 
 
 ### Idolatry
 
-> **Acts 17:29** - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man.
+> **Acts 17:29** - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man. (ESV)
 
-> **Romans 1:23** - and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles.􄐺
+> **Romans 1:23** - and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. (ESV)
 
-> **Psalms 106:20** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
+> **Psalms 106:20** - They exchanged the glory of God for the image of an ox that eats grass. (ESV)
 
 
 # Man is made in the image of God
 
-> **Job 33:4** - The Spirit of God has made me, and the breath of the Almighty gives me life.
+> **Job 33:4** - The Spirit of God has made me, and the breath of the Almighty gives me life. (ESV)
 
 
 ## Male and female
 
-> **Genesis 1:27** So God created man in his own image, in the image of God he created him; male and female he created them.
+> **Genesis 1:27** - So God created man in his own image, in the image of God he created him; male and female he created them. (ESV)
 
 > **Matthew 19:4** - He answered, Have you not read that he who created them from the beginning made them male and female, (ESV)
 
@@ -13499,11 +13504,11 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 
 The new self should be <ins>Christ formed in you:</ins>
 
-> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being <ins>renewed in knowledge after the image of its creator.</ins>
+> **Colossians 3:5-10** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being <ins>renewed in knowledge after the image of its creator.</ins> (ESV)
 
 > **Colossians 1:15** - He is <ins>the image of the invisible God, the firstborn of all creation.</ins> (ESV)
 
-> **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth <ins>until Christ is formed in you!</ins>
+> **Galatians 4:18-19** - It is always good to be made much of for a good purpose, and not only when I am present with you, my little children, for whom I am again in the anguish of childbirth <ins>until Christ is formed in you!</ins> (ESV)
 
 > **John 8:31-32** - So Jesus was saying to those Jews who had believed Him, “If you **continue in My word**, then you are truly disciples of Mine; and **you will know the truth**, and the truth will make you free.” (NASB)
 
@@ -18354,7 +18359,7 @@ Repentance in the heart:
 
 ### 
 
-> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV) (ESV)
 
 
 ### 
@@ -20359,6 +20364,10 @@ To believe, we must be seeking God, not glory from one another:
 
 > **John 5:44** - How can you believe, when you receive glory from one another and do not seek the glory that comes from the only God? (ESV)
 
+I'm using the Word of God and doing this Bible study to tread on serpents. Thanks Jesus for giving me authority to do that:
+
+> **Luke 10:19** - Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you. (ESV)
+
 > **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood.
 
 I'm honestly just trying to combat falsehood by reading and applying the Scriptures in a way where I'm responding to promptings from **the Holy Spirit** and taking every thought captive to obey Christ, and I want to honour Jesus and honour God, and not bury my talent. So I hope my Bible study has been helpful. And all glory to God.
@@ -20374,6 +20383,10 @@ Jesus sent us. We seek to glorify Jesus. We seek to glorify our Master.
 We seek to glorify God. We seek to be found in Jesus. We seek the glorification that comes from being found in our Master, Jesus Christ.
 
 > **John 7:18** - The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood.
+
+I'm using the Word of God and doing this Bible study to tread on serpents. Thanks Jesus for giving me authority to do that:
+
+> **Luke 10:19** - Behold, I have given you authority to tread on serpents and scorpions, and over all the power of the enemy, and nothing shall hurt you. (ESV)
 
 The glory comes from God:
 
@@ -20503,17 +20516,35 @@ Jesus is the one who forgives sin, but we actually participate in propagating th
 
 > **Matthew 6:12** - and forgive us our debts, as we also have forgiven our debtors.
 
+Sometimes you don't know if you're in the right or wrong, so forgiving others' offences towards you is freeing yourself:
+
+> **Matthew 18:21-35** - Then Peter came up and said to him, Lord, how often will my brother sin against me, and I forgive him? As many as seven times? Jesus said to him, I do not say to you seven times, but seventy times seven. Therefore the kingdom of heaven may be compared to a king who wished to settle accounts with his servants. When he began to settle, one was brought to him who owed him ten thousand talents. And since he could not pay, his master ordered him to be sold, with his wife and children and all that he had, and payment to be made. So the servant fell on his knees, imploring him, Have patience with me, and I will pay you everything. And out of pity for him, the master of that servant released him and forgave him the debt. But when that same servant went out, he found one of his fellow servants who owed him a hundred denarii, and seizing him, he began to choke him, saying, Pay what you owe. So his fellow servant fell down and pleaded with him, Have patience with me, and I will pay you. He refused and went and put him in prison until he should pay the debt. When his fellow servants saw what had taken place, they were greatly distressed, and they went and reported to their master all that had taken place. Then his master summoned him and said to him, You wicked servant! I forgave you all that debt because you pleaded with me. And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
+
+Before God we're all guilty:
+
+> **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
+
+Forgiving others means not holding a grudge:
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
+Forgiving each other moves mountains (I know Gospel of Thomas is not considered canon, but this saying rings true for me, and I believe it means that when two people make peace, they can move mountains. Whether Jesus truly said it or not, who knows.):
+
+> **Thomas 48** - Jesus said: If two make peace with one another in this one house, they will say to the mountain: Be removed, and it will be removed.
+
+> **Matthew 18:15-20** - If your brother sins against you, go and tell him his fault, between you and him alone. If he listens to you, you have gained your brother. But if he does not listen, take one or two others along with you, that every charge may be established by the evidence of two or three witnesses. If he refuses to listen to them, tell it to the church. And if he refuses to listen even to the church, let him be to you as a Gentile and a tax collector. Truly, I say to you, whatever you bind on earth shall be bound in heaven, and whatever you loose on earth shall be loosed in heaven. Again I say to you, if two of you agree on earth about anything they ask, it will be done for them by my Father in heaven. For where two or three are gathered in my name, there am I among them. (ESV)
+
 It's Christlike to forgive others' offences against us:
 
 > **Proverbs 19:11** - Good sense makes one slow to anger, and it is his glory to overlook an offense. (ESV)
 
 We'll be chastised if we do not forgive our brother from our heart:
 
-> **Matthew 18:35** - So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart.
+> **Matthew 18:35** - So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
 
 Our unforgiveness is an impediment to receiving forgiveness:
 
-> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses.
+> **Mark 11:25** - And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
 
 > **Matthew 6:14-15** - For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. (ESV)
 
