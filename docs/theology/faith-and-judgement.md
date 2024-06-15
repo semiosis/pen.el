@@ -241,6 +241,10 @@ We are freed from, for example, making the worries of the world our first though
 
 > **II Corinthians 3:17** - Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. (ESV)
 
+-   **Song:** [youtube.com: Jesus All for Jesus {Lyrics}](https://www.youtube.com/watch?v=Ay7TQe-8G2M)
+
+-   **Lyrics:** Jesus, all for Jesus; All I am and have and ever hope to be; All of my ambitions, hopes and plans; I surrender these into your hands; **For it's only in your will that I am free**;
+
 I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet.
 
 > **John 20:31** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
@@ -325,7 +329,7 @@ We learn Christ, and are taught by Christ (becoming obedient to His teachings an
 
 > **Ephesians 4:20-21** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
 
-Therefore, even before I was noticeably born-again of the Spirit in 2020, I had begun to try to practice Jesus' commandments in 2020/2021 in an effort to seek God, Jesus must have been already working in me, but I say this to explain how I believe that it might be quite hard to pinpoint the starting point, but we know that it's God's grace through faith (believing, obedient, trusting faith) that it happens, but that doesn't mean believing and obeying Jesus are not important to receive the Holy Spirit, because they are.
+Therefore, even before I was noticeably "born-again of the water and the Spirit" in 2022, I had begun to try to practice Jesus' commandments in 2020/2021 in an effort to seek God, Jesus must have been already working in me, but I say this to explain how I believe that it might be quite hard to pinpoint the starting point, but we know that it's God's grace through faith (believing, obedient, trusting faith) that it happens, but that doesn't mean believing and obeying Jesus are not important to receive the Holy Spirit, because they are.
 
 > **Ephesians 2:8-9** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
@@ -13927,7 +13931,7 @@ We learn Christ, and are taught by Christ (becoming obedient to His teachings an
 
 > **Ephesians 4:20-21** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
 
-Therefore, even before I was born-again of the Spirit, as I was endeavoring to practice Jesus' commandments, Jesus was already working in me. I say this for other's understanding.
+Therefore, even before I was noticeably "born-again of the water and the Spirit" in 2022, I had begun to try to practice Jesus' commandments in 2020/2021 in an effort to seek God, Jesus must have been already working in me, but I say this to explain how I believe that it might be quite hard to pinpoint the starting point, but we know that it's God's grace through faith (believing, obedient, trusting faith) that it happens, but that doesn't mean believing and obeying Jesus are not important to receive the Holy Spirit, because they are.
 
 While the Scriptures says that we are born of God when we believe (I've been attending church my whole life, and baptised at 16 years old - 15-17), I was [born-again/regenerated of the Spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) much later (when I was 35). Does that mean I hadn't truly believed until I was 35? Perhaps in a way. I had became disillusioned with AI in 2021 I began seeking after God, and then I got born-again. The Holy Spirit must have been working in my life before I was [born-again of the Spirit in this way](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). Holy Spirit must have been dwelling **with** me even before He was **in** me:
 
