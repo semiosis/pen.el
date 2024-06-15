@@ -1765,9 +1765,11 @@ It is clear that following Jesus helps us to not sin, which means that the destr
 
 > **Galatians 5:14-16** - For **the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. (ESV)
 
-I've heard from many deluded Christians in the past who think that as Christians we "do not need to follow Christ's law".
+I've heard from many deluded Christians in the past who think that as Christians we "do not need to follow Christ's law". But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
 
-Also, I believe that loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty". Following Jesus starts with believing in Him and believing He is the Son of God, and Anointed one, the Messiah, and following Jesus continues in getting to know Him through obedience to Him.
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
+Also, I believe that abiding by Christ's law and loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty". Following Jesus starts with believing in Him and believing He is the Son of God, and Anointed one, the Messiah, and following Jesus continues in getting to know Him through obedience to Him:
 
 > **Philippians 3:9-10** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through **faith in Christ**, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings, becoming like him in his death**, (ESV)
 
