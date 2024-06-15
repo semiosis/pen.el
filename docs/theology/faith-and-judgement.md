@@ -1765,7 +1765,13 @@ It is clear that following Jesus helps us to not sin, which means that the destr
 
 > **Galatians 5:14-16** - For **the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. (ESV)
 
-I've heard from many deluded Christians in the past who think that as Christians we "do not need to follow Christ's law". But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
+The golden rule:
+
+> **Matthew 7:12** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
+
+I've heard it said Christians "do not need to follow the golden rule". But the golden rule is at the heart of Christ's law.
+Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.w
+But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
 
@@ -11207,6 +11213,14 @@ We now live for the will of God:
 AMEN!!
 
 > **Galatians 5:14** - For the whole law is fulfilled in one word: You shall love your neighbor as yourself.
+
+AMEN!! Loving your neighbour as yourself involves forgiving your neighbour, and not bearing a grudge.
+
+I've heard it said Christians "do not need to follow the golden rule". But the golden rule is at the heart of Christ's law.
+Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.
+But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
 
 AMEN!!
 
