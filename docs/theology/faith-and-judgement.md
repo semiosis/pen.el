@@ -335,7 +335,7 @@ Therefore, even before I was noticeably "born-again of the water and the Spirit"
 
 By His grace we have to actually come into obeying Jesus to find life. Think about what it means to obey Jesus: It's to walk in the Spirit, to abide in Jesus' Spirit, to be obeying Jesus' commandments, to seek to follow the pattern of life that He lived to be found in Him. You can abide in Jesus' Spirit if You have faith in Him, knowing Him, and being found in Him!
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 Faith in Christ I believe means believing in Him and being obedient to Him, having communion with Him, etc. becoming intimate with Him, following Him. This isn't our own merit, but we still obey Jesus to be found in Him. In Him we have Jesus' righteousness:
 
@@ -432,7 +432,7 @@ If you want to really get to know someone then you would learn to walk in their 
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 
 ## Repentance from sin may come before believing in Jesus
@@ -860,13 +860,17 @@ The eternal redemption is in Christ Jesus:
 
 God's commandments are not too difficult to follow.
 
+We may ask God for a willing spirit:
+
+> **Psalms 51:10-12** - Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from your presence, and take not your Holy Spirit from me. Restore to me the joy of your salvation, and uphold me with a **willing** spirit. (ESV)
+
 Love the LORD your God:
 
-> **Deuteronomy 30:10-11** - when you obey the voice of the LORD your God, to keep his commandments and his statutes that are written in this Book of the Law, when you turn to the LORD your God with all your heart and with all your soul. For this commandment that I command you today is not too hard for you, neither is it far off. (ESV)
+> **Deuteronomy 30:10-11** - **when you obey** the voice of the LORD your God, to keep his commandments and his statutes that are written in this Book of the Law, **when you turn to the LORD your God with all your heart and with all your soul**. For **this commandment that I command you today is not too hard for you**, <ins>neither is it far off.</ins> (ESV)
 
 Serve God:
 
-> **Joshua 22:5** - Only be very careful to observe the commandment and the law that Moses the servant of the LORD commanded you, to love the LORD your God, and to walk in all his ways and to keep his commandments and to cling to him and to serve him with all your heart and with all your soul. (ESV)
+> **Joshua 22:5** - Only be very careful to observe the commandment and the law that <ins>Moses the servant of the LORD commanded you</ins>, to **love the LORD your God**, and to **walk in all his ways** and to **keep his commandments** and to **cling to him** and to **serve him with all your heart and with all your soul**. (ESV)
 
 Love God [from the heart and soul] so that we may live:
 
@@ -1048,7 +1052,7 @@ And as we know, no-one in Christ is condemned:
 
 We must continue in our faith. We must continue to believe Jesus and trust in Jesus:
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
@@ -1134,7 +1138,7 @@ Jesus' act of obedience leads to:
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 We are saved from the wrath of God by the life of Jesus Christ. I think that's in part saying that the life of Jesus helps us to stop practicing sinful things:
 
@@ -1806,7 +1810,7 @@ But we must love like Christ loved us in the knowledge that He loved us first. W
 
 Also, I believe that abiding by Christ's law and loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty". Following Jesus starts with believing in Him and believing He is the Son of God, and Anointed one, the Messiah, and following Jesus continues in getting to know Him through obedience to Him:
 
-> **Philippians 3:9-10** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through **faith in Christ**, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings, becoming like him in his death**, (ESV)
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 So an important part of being led by the Spirit of Jesus and being not "under the law" is to forgive one another as we have been forgiven by Jesus.
 
@@ -2066,7 +2070,7 @@ We aim for perfection / to be made complete / full restoration:
 Paul presses on to try to live like Christ, and his rational is that Jesus made him (Paul) his own (i.e. Jesus loved him),
 and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm convinced that's the motivation). He wants to be with Jesus.
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 > **John 8:31-32** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
@@ -4233,7 +4237,7 @@ All of these I believe belong under the umbrella of faith, not works:
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in his sufferings) and His resurrection:
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 God will be the judge of who has had faith in Jesus; who has obeyed Him and who has trusted in Him and who has made Him their Lord and who has accepted Him as their Saviour.
 
@@ -7364,7 +7368,7 @@ Justification by works/obedience and justification by so-called 'faith alone' is
 
 By His grace we have to actually come into obeying Jesus to find life. Think about what it means to obey Jesus: It's to walk in the Spirit, to abide in Jesus' Spirit, to be obeying Jesus' commandments, to seek to follow the pattern of life that He lived to be found in Him. You can abide in Jesus' Spirit if You have faith in Him, knowing Him, and being found in Him!
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 Faith in Christ I believe means believing in Him and being obedient to Him, having communion with Him, etc. becoming intimate with Him, following Him. This isn't our own merit, but we still obey Jesus to be found in Him. In Him we have Jesus' righteousness:
 
@@ -13242,7 +13246,9 @@ We should be more confident with the light!
 
 > **I John 2:5** - but whoever keeps his word, in him truly the love of God is perfected. By this we may be sure that we are in him: (ESV)
 
-> **Philippians 3:9-14** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. (ESV)
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
+
+> **Philippians 3:14** - I press on toward the goal for the prize of **the upward call of God in Christ Jesus.** (ESV)
 
 > **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.
 
@@ -15023,7 +15029,7 @@ Knowing Jesus Christ and Him crucified means believing the testimony and also kn
 
 Know Jesus experientially:
 
-> **Philippians 3:9-12** - and be found in him, not having a righteousness of my own that comes from the law, but <ins>that which comes through faith in Christ, the righteousness from God that depends on faith</ins> — that <ins>I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death,</ins> <ins>that by any means possible I may attain the resurrection from the dead.</ins> <ins>Not that I have already obtained this or am already perfect, but I press on to make it my own,</ins> because Christ Jesus has made me his own.
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
 > **I John 2:3-4** - And by this we know that we have come to know him, if we keep his commandments. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -15265,6 +15271,13 @@ Of course, I believe God doesn't send all His servants to be martyred, but proba
 I'm still trying to figure out how Jesus' yoke is easy. I guess that if a person denies self daily, and heart is always gentle and lowly, then Jesus' yoke is easy and burden light:
 
 > **Matthew 11:29-30** - Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.
+
+
+### The upward call of God in Christ Jesus
+
+> **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
+
+> **Philippians 3:14** - I press on toward the goal for the prize of **the upward call of God in Christ Jesus.** (ESV)
 
 
 ## Personal holiness
