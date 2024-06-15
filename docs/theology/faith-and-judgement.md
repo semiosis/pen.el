@@ -2080,9 +2080,9 @@ We must keep ourselves in the love of God by obeying Jesus Christ's commandments
 
 > **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
 
-Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+Keeping Jesus Christ's commandments is a <ins>requirement</ins> to inherit eternal life, <ins>not an extra</ins>:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
@@ -8210,9 +8210,9 @@ We must keep ourselves in the love of God by obeying Jesus Christ's commandments
 
 > **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
 
-Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
+Keeping Jesus Christ's commandments is a <ins>requirement</ins> to inherit eternal life, <ins>not an extra</ins>:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
@@ -8722,7 +8722,7 @@ Because, having **arrived** at the true knowledge of Jesus, we are partakers of 
 
 We must love in the same **way** Jesus has loved us - sacrificially, obedient to God - showing God's truthfulness, serving others:
 
-> **John 15:12** - This is my commandment, that you love one another as I have loved you.
+> **John 15:12** - This is my commandment, that you love one another as I have loved you. (ESV)
 
 > **Matthew 19:17** And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments.
 
@@ -8730,27 +8730,27 @@ We must love in the same **way** Jesus has loved us - sacrificially, obedient to
 
 > **Matthew 22:37-40** - And he said to him, You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets.
 
-> **Mark 10:19** You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother.
+> **Mark 10:19** - You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. (ESV)
 
-> **Mark 12:28** And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all?
+> **Mark 12:28** - And one of the scribes came up and heard them disputing with one another, and seeing that he answered them well, asked him, Which commandment is the most important of all? (ESV)
 
-> **Mark 12:31** The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these.
+> **Mark 12:31** - The second is this: You shall love your neighbor as yourself. There is no other commandment greater than these. (ESV)
 
-> **Luke 1:6** And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.
+> **Luke 1:6** - And they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord. (ESV)
 
 Jesus' commandments are consistent with the rest of God's commandments:
 
-> **John 12:49-50** For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me.
+> **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
 
-> **John 13:34** A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.
+> **John 13:34** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. (ESV)
 
-> **John 14:15** If you love me, you will keep my commandments.
+> **John 14:15** - If you love me, you will keep my commandments. (ESV)
 
-> **John 14:21** Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him.
+> **John 14:21** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
-> **John 15:10** If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
-> **John 15:12** This is my commandment, that you love one another as I have loved you.
+> **John 15:12** - This is my commandment, that you love one another as I have loved you. (ESV)
 
 
 ### Fear-of-God
@@ -10045,7 +10045,7 @@ By this we know <ins>he</ins> abides in <ins>us</ins>:
 
 We keep His commandments, and we abide in Him:
 
-> **John 15:10** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 We are in Jesus Christ. Eternal life is in Jesus Christ:
 
@@ -10071,11 +10071,15 @@ hearts and deeds:
 
 > **Revelation of John 14:12** - Here is a call for the endurance of the saints, those who keep the commandments of God and their faith in Jesus.
 
-I read this as 'A saint is someone who has faith in Jesus AND keeps the commandments (pursuing by faith, not works)'.
+I read this as 'A saint is someone who has faith in Jesus and keeps His commandments (pursuing by faith, not works), and keeps the commandments of God'.
 I read this as the Great commandments, 10 Commandments and faith in Jesus Christ, and potentially various other commandments from the Mosaic law if you know about them, or whatever subset a person practices by faith making themself accountable to God.
-But the law, if it's pursued at all, should be pursued by faith and not by works.
+Keep in mind that God commanded us to listen to Jesus, and Jesus' commandments came from God, so as long as a person is keeping Jesus' commandments, they are also keeping God's commandments, but there are many commandments of God, even in the Torah.
+But the Mosaic Law, if it's pursued at all, should be pursued by faith and not by works, and it's not pursued for justification. Justification comes from faith in Christ.
+We may abide in Jesus' love by keeping His commandments, and we may abide in Father God's love by keeping His commandments. A saint, I think is someone who does this:
 
-> **John 15:10** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
+
+> **John 16:27** - for the Father himself loves you, **because** you have loved me and have believed that I came from God. (ESV)
 
 > **Romans 9:30-32** - What shall we say, then? That Gentiles who did not pursue righteousness have attained it, that is, a righteousness that is by faith; but that Israel who pursued a law that would lead to righteousness did not succeed in reaching that law. Why? Because they did not pursue it by faith, but as if it were based on works. They have stumbled over the stumbling stone, (ESV)
 
@@ -10502,7 +10506,7 @@ I believe that a person needs to have an obedient heart - <ins>wanting to do the
 
 Keeping Jesus Christ's commandments is a <ins>requirement</ins> to inherit eternal life, <ins>not an extra</ins>:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 Faith may <ins>come</ins> from simply observing Jesus work, reading Jesus' words and believing, or through work from disciples of Jesus, etc.
 
@@ -13419,7 +13423,7 @@ We must keep ourselves in the love of God by obeying Jesus Christ's commandments
 
 Keeping Jesus Christ's commandments is a <ins>requirement</ins> to inherit eternal life, <ins>not an extra</ins>:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
@@ -14813,7 +14817,7 @@ It quickly progresses to obeying Jesus, receiving the Spirit.
 
 ## Saint - an imitator of Jesus - keeps the commandments of God AND has faith in Jesus
 
-> **John 15:10** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love.
+> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept **my Father's commandments and abide in his love.** (ESV)
 
 > **Ephesians 1:1** - Paul, an apostle of Christ Jesus by the will of God, To the saints who are in Ephesus, and are faithful in Christ Jesus:
 
