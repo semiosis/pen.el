@@ -12955,10 +12955,21 @@ I believe the body and blood of Jesus are received through faith and thanksgivin
 in the sacrament but also simply with faith, and with belief and obedience to Jesus through his words and commandments,
 and it's my belief that we don't need to attend the Catholic mass exclusively to partake in this,
 but that taking the Lord's supper / communion with believers in other church denominations is being just as effective and faithful to Jesus.
+
 If I were to attend the Catholic mass then I would simply receive it with faith, remembrance, repentance and thanksgiving, as I do at any church other I've attended.
 The way I currently view the Catholic mass is not "re-sacrificing Jesus" at all as people have said but "co-offering", which is a word which the following article uses to explain it:
 
 -   <https://stpaulcenter.com/victim-and-priest-christs-sacrifice-in-the-eucharist/>
+
+However, there is only one Mediator between God and man, the man Christ Jesus, and I do not need any other priest other than Jesus Christ himself in order to receive the Lord's supper:
+
+> **I Timothy 2:5** - For there is one God, and there is one mediator between God and men, the man Christ Jesus, (ESV)
+
+And Jesus is with us in Spirit:
+
+> **II Corinthians 5:16** - From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. (ESV)
+
+> **Matthew 18:20** - For where two or three are gathered in my name, there am I among them. (ESV)
 
 > **Hebrews 10:19** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh,
 
