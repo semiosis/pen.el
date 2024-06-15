@@ -1787,12 +1787,19 @@ It is clear that following Jesus helps us to not sin, which means that the destr
 
 > **Galatians 5:14-16** - For **the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. (ESV)
 
-The golden rule:
+The Golden Rule:
 
 > **Matthew 7:12** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
 
 I've heard it said Christians "do not need to follow the golden rule". But the golden rule is at the heart of Christ's law.
-Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.
+Applying love to the golden rule, we have the second of the great commandments, the Royal Law, which is to: "Love your neighbour as yourself". It's actually very important.
+
+We are supposed to fulfill the royal law:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
+
+> **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
+
 But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
@@ -11257,7 +11264,14 @@ AMEN!!
 AMEN!! Loving your neighbour as yourself involves forgiving your neighbour, and not bearing a grudge.
 
 I've heard it said Christians "do not need to follow the golden rule". But the golden rule is at the heart of Christ's law.
-Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.
+Applying love to the golden rule, we have the second of the great commandments, the Royal Law, which is to: "Love your neighbour as yourself". It's actually very important.
+
+We are supposed to fulfill the royal law:
+
+> **James 2:1** - My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory. (ESV)
+
+> **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
+
 But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
