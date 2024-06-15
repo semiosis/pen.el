@@ -1770,7 +1770,7 @@ The golden rule:
 > **Matthew 7:12** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
 
 I've heard it said Christians "do not need to follow the golden rule". But the golden rule is at the heart of Christ's law.
-Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.w
+Applying love to the golden rule, we have the second of the great commandments, which is to: "Love your neighbour as yourself". It's actually very important.
 But we must love like Christ loved us in the knowledge that He loved us first. We must forgive our family in Christ, as we have been forgiven:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
@@ -1778,6 +1778,8 @@ But we must love like Christ loved us in the knowledge that He loved us first. W
 Also, I believe that abiding by Christ's law and loving your neighbour as yourself **does not cancel out** <ins>the rest of the law of God</ins>, but that a person must be **actually following Christ** by **obeying Christ's commandments** in order to not be "under the law" and to be "not guilty". Following Jesus starts with believing in Him and believing He is the Son of God, and Anointed one, the Messiah, and following Jesus continues in getting to know Him through obedience to Him:
 
 > **Philippians 3:9-10** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through **faith in Christ**, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings, becoming like him in his death**, (ESV)
+
+So an important part of being led by the Spirit of Jesus and being not "under the law" is to forgive one another as we have been forgiven by Jesus.
 
 In Christ Jesus, as we are abiding in Jesus, getting to know Jesus through obedience to Him, getting to know Him in Spirit as we get really intimate with Jesus, walking as He walked, we have the peace of God:
 
