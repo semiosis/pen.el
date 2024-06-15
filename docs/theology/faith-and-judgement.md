@@ -591,6 +591,16 @@ I think baptism of water is an **appeal** to God and identifying oneself into Ch
 
 ### What is more important, probably, is to be born-again and baptised by the Holy Spirit
 
+It's natural to water baptize a person after they believe:
+
+> **Acts 8:36-38** - And as they were going along the road they came to some water, and the eunuch said, See, here is water! What prevents me from being baptized? And he commanded the chariot to stop, and they both went down into the water, Philip and the eunuch, and he baptized him. (ESV)
+
+Also, the Lord Jesus Himself baptized Gentile believers in the Holy Spirit, people who were not yet baptised in water:
+
+> **Acts 10:44-48** - While Peter was still saying these things, the Holy Spirit fell on all who heard the word. And the believers from among the circumcised who had come with Peter were amazed, because the gift of the Holy Spirit was poured out even on the Gentiles. For they were hearing them speaking in tongues and extolling God. Then Peter declared, **Can anyone withhold water for baptizing these people, who have received the Holy Spirit just as we have?** <ins>And he commanded them to be baptized in the name of Jesus Christ.</ins> Then they asked him to remain for some days. (ESV)
+
+We need to be born of water and the Spirit to enter the kingdom of God:
+
 > **John 3:5** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
 
 And as it happened for me, the water baptism
@@ -13433,9 +13443,16 @@ So therefore, I don't see the big problem with
 wanting to rededicate myself to Jesus, but I would definitely recommend sticking to doing this one time, and also at the point where you really want to partake in the resurrection of Jesus - I think believer's baptism is Scriptural.
 
 I don't have all the answers guys to how it
-works! But Jesus did say in
+works! But Jesus did say:
 
 > **John 3:8** - The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit. (ESV)
+
+
+## We are baptised into Christ, not into a denomination
+
+> **Romans 6:3** - Do you not know that all of us who have been baptized into Christ Jesus were baptized into his death? (ESV)
+
+> **I Corinthians 1:13** - Is Christ divided? Was Paul crucified for you? Or were you baptized in the name of Paul? (ESV)
 
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
