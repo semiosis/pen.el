@@ -1485,7 +1485,7 @@ Also, waiting on the LORD our strength is renewed:
 
 > **Isaiah 40:31** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
-We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked by having believing, obedient, trusting, following faith in Jesus where we are being led by His Spirit, and are walking by His Spirit:
+As we walk in the Spirit of Jesus, we are strengthened to walk as Jesus walked. We are ourselves empowered to walk as Jesus walked thanks to Jesus' own endurance, and that is unlocked by having believing, obedient, trusting, following faith in Jesus where we are being led by His Spirit, and are walking by His Spirit:
 
 > **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
@@ -1494,6 +1494,12 @@ We are ourselves empowered thanks to Jesus' own endurance, and that is unlocked 
 If God is for us, who can be against us?
 
 > **Romans 8:31** - What then shall we say to these things? If God is for us, who can be against us? (ESV)
+
+-   **Song:** [youtube.com: Everlasting God](https://www.youtube.com/watch?v=q0eD67xKSbs)
+
+> **Psalms 68:5** - Father of the fatherless and protector of widows is God in his holy habitation. (ESV)
+
+> **Psalms 82:3-4** - Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked. (ESV)
 
 
 ### The free gift is God - God is the Gospel
@@ -6658,6 +6664,22 @@ It also says that God and the angels are overjoyed when people repent from sin a
 The father was <ins>always happy with the obedient son</ins>, but he was simply full of joy that his wayward son had returned:
 
 > **Luke 15:31-32** - And he said to him, <ins>Son, you are always with me, and all that is mine is yours.</ins> It was fitting to celebrate and be glad, for this your brother was dead, and is alive; <ins>he was lost, and is found.</ins>
+
+Yes, we must feel sorry for our sin:
+
+> **Luke 18:13** - But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! (ESV)
+
+We must turn from our wicked ways:
+
+> **2 Chronicles 7:14** - if my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. (ESV)
+
+Yes, we must turn from our wicked ways to obey God - absolutely!:
+
+> **Romans 6:16-18** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+
+Assuming you are following Jesus, then when we confess our sin, God is faithful and just to forgive us our sins. I've heard people say we only need to confess our sin, but we also need to be following Jesus / walking in the light. Repentance is still totally about changing our ways from wickedness to obedience:
+
+> **I John 1:7-9** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. (ESV)
 
 
 # Obtain a faith of equal standing with the Apostles by the righteousness of our God and Savior Jesus Christ
