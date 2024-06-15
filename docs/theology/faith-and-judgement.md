@@ -12965,6 +12965,10 @@ However, there is only one Mediator between God and man, the man Christ Jesus, a
 
 > **I Timothy 2:5** - For there is one God, and there is one mediator between God and men, the man Christ Jesus, (ESV)
 
+Those in the Kingdom of Jesus Christ are priests:
+
+> **Revelation of John 5:10** - and you have made them a kingdom and priests to our God, and they shall reign on the earth. (ESV)
+
 And Jesus is with us in Spirit:
 
 > **II Corinthians 5:16** - From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. (ESV)
