@@ -19667,6 +19667,23 @@ Blessed are those who ask and seek for a blessing:
 > **II Timothy 4:6-9** - For I am already being poured out as a drink offering, and the time of my departure has come. I have fought the good fight, I have finished the race, I have kept the faith. Henceforth there is laid up for me the crown of righteousness, which the Lord, the righteous judge, will award to me on that Day, and not only to me but also to all who have loved his appearing. Do your best to come to me soon.
 
 
+### Steadfastness
+
+> **James 1:1-4** - James, a servant of God and of the Lord Jesus Christ, To the twelve tribes in the Dispersion: Greetings. Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing. (ESV)
+
+> **II Peter 1:5-10** - For this very reason, make every effort to supplement your faith with virtue, and virtue with knowledge, and knowledge with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love. For if these qualities are yours and are increasing, they keep you from being ineffective or unfruitful in the knowledge of our Lord Jesus Christ. For whoever lacks these qualities is so nearsighted that he is blind, having forgotten that he was cleansed from his former sins. Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. (ESV)
+
+> **James 1:12** - Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him. (ESV)
+
+> **James 5:11** - Behold, we consider those blessed who remained steadfast. You have heard of the steadfastness of Job, and you have seen the purpose of the Lord, how the Lord is compassionate and merciful. (ESV)
+
+> **Titus 2:1-8** - But as for you, teach what accords with sound doctrine. Older men are to be sober-minded, dignified, self-controlled, sound in faith, in love, and in steadfastness. Older women likewise are to be reverent in behavior, not slanderers or slaves to much wine. They are to teach what is good, and so train the young women to love their husbands and children, to be self-controlled, pure, working at home, kind, and submissive to their own husbands, that the word of God may not be reviled. Likewise, urge the younger men to be self-controlled. Show yourself in all respects to be a model of good works, and in your teaching show integrity, dignity, and sound speech that cannot be condemned, so that an opponent may be put to shame, having nothing evil to say about us. (ESV)
+
+> **I Corinthians 15:58** - Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain. (ESV)
+
+> **Colossians 1:21-23** - And you, who once were alienated and hostile in mind, doing evil deeds, he has now reconciled in his body of flesh by his death, in order to present you holy and blameless and above reproach before him, if indeed you continue in the faith, stable and steadfast, not shifting from the hope of the gospel that you heard, which has been proclaimed in all creation under heaven, and of which I, Paul, became a minister. (ESV)
+
+
 ## God has planned in advance our salvation
 
 
@@ -21466,6 +21483,11 @@ It's obedience which leads to righteousness, even the righteousness of faith:
 > **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 > **Romans 4:12-13** - and to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised. For the promise to Abraham and his offspring that he would be heir of the world did not come through the law but through the righteousness of faith.
+
+
+### Obey the gospel of our Lord Jesus
+
+> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. (ESV)
 
 
 ### A heart of belief and obedience is the start of faith
