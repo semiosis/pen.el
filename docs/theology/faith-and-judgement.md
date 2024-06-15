@@ -12947,7 +12947,18 @@ I believe that taking the Eucharist absolutely has spiritual and physical effect
 
 > **I Corinthians 11:30** - That is why many of you are weak and ill, and some have died. But if we judged ourselves truly, we would not be judged. But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world. (ESV)
 
-> **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
+Paul is talking about unity with other believers, participating together in the body of Christ, even through the sacrament of the Lord's supper / communion / the Eucharist:
+
+> **I Corinthians 10:16-18** - The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, **we who are many are one body, for we all partake of the one bread**. Consider the people of Israel: are not those who eat the sacrifices participants in the altar?
+
+I believe the body and blood of Jesus are received through faith and thanksgiving, and in unity with other believers,
+in the sacrament but also simply with faith, and with belief and obedience to Jesus through his words and commandments,
+and it's my belief that we don't need to attend the Catholic mass exclusively to partake in this,
+but that taking the Lord's supper / communion with believers in other church denominations is being just as effective and faithful to Jesus.
+If I were to attend the Catholic mass then I would simply receive it with faith, remembrance, repentance and thanksgiving, as I do at any church other I've attended.
+The way I currently view the Catholic mass is not "re-sacrificing Jesus" at all as people have said but "co-offering", which is a word which the following article uses to explain it:
+
+-   <https://stpaulcenter.com/victim-and-priest-christs-sacrifice-in-the-eucharist/>
 
 > **Hebrews 10:19** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh,
 
