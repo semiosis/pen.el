@@ -6959,6 +6959,14 @@ As we are have faith in Jesus, even obeying Him to go out into the world, we are
 
 We are healed, corrected, sanctified by God's word.
 
+Becoming the righteousness of God is cooperative:
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+
+The Holy Spirit goes to those who obey God, and causes the person to walk in God's precepts - stopping lying, stealing, coveting, idolizing, cheating, etc.
+
+> **Acts 5:32** - And we are witnesses to these things, and so is **the Holy Spirit**, whom God has given <ins>to those who obey him</ins>. (ESV)
+
 
 ## Repent of evil deeds, feelings and thoughts
 
@@ -7007,6 +7015,8 @@ Because God loved us first:
     -   We know Jesus by believing in Him and obeying His commandments, and when we love and forgive we know God loved us and forgive us first
 -   We should love because He loved us first
 -   We must forgive as we have been forgiven
+
+Practicing righteousness is an indicator that someone is born of God:
 
 > **I John 3:7** - Little children, **let no one deceive you**. Whoever practices righteousness is righteous, as he is righteous.
 
@@ -7130,13 +7140,13 @@ The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) 
      9  13 Rom. 7:18,23; Eccles. 7:20; 1 John 1:8
     10  14 Rom. 7:23–25; Gal. 5:17
 
-I affirm that even after regeneration and being healed, corruption has remained a problem for me mainly because of the world I live in:
+I affirm that even after regeneration and being healed, corruption has remained a problem for me mainly because of the world I live in, but also because I need to be renewed in mind:
 
 -   the influences of worldly people, and
     -   **I Corinthians 15:33** - Do not be deceived: Bad company ruins good morals. (ESV)
 -   the influences of demons.
 
-But for the person born of God, they have died to sin, they cannot keep on doing it, they absolutely hate the sin.
+But for the person born of God, they have died to sin, it no longer has a legal over them, they cannot keep on doing it, they absolutely hate the sin.
 
 > **I John 3:9** - No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. (ESV)
 
@@ -7259,6 +7269,23 @@ So what Jesus is saying is quite similar - we must have the faith that Abraham h
 
 
 ### Salvation by obedience
+
+Since Jesus commanded us to have faith in Him, to trust in Jesus is to have obeyed Him.
+
+Have faith in God:
+
+> **Mark 11:22** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God (G2316 theos).
+
+Have faith in God and have faith in Jesus:
+
+> **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+
+Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+
+The Israelites didn't "work for God" as they obeyed God to walk through the Red Sea. Walking in obedience is not the same as "working".
+The Israelites were an actual part of the miracle of going through the Red Sea. The miracle wasn't just the water splitting, the Israelites walking through it was also miraculous. By obeying God, God sent them through the Red Sea.
 
 In obeying God, God helps us:
 
@@ -8298,7 +8325,7 @@ Faith is like Peter stepping out on the water. Faith works. But I think sometime
 The LORD did something similar for the Israelites when He parted the Red Sea.
 The Israelites obeyed God, and their obedience led them to sure belief.
 The Israelites didn't "work for God" as they obeyed God to walk through the Red Sea. Walking in obedience is not the same as "working".
-The Israelites were an actual part of the miracle of going through the Red Sea. By obeying God, God was sending them through the Red Sea.
+The Israelites were an actual part of the miracle of going through the Red Sea. The miracle wasn't just the water splitting, the Israelites walking through it was also miraculous. By obeying God, God sent them through the Red Sea.
 Obedience, belief and trust are all important in faith.
 
 Revelation comes as we do what God commands us:
