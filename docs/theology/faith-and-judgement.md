@@ -13752,6 +13752,35 @@ Jesus' friends do what Jesus' commands them. Jesus' friends hear His voice:
 > **John 15:14** - You are my friends if you do what I command you. (ESV)
 
 
+## Sheep vs goats: Sheep inherit the kingdom of God, goats do not
+
+Following Jesus certainly means
+
+> **I Corinthians 6:9-10** - Do you not know that **the unrighteous will not inherit the kingdom of God**? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God**. (ESV)
+
+Also, obedience means obeying Jesus Christ's commandments! Following Jesus means obeying Jesus' commandments:
+
+> **Matthew 25:26-46** - But his master answered him, You wicked and slothful servant! You knew that I reap where I have not sowed and gather where I scattered no seed? Then you ought to have invested my money with the bankers, and at my coming I should have received what was my own with interest. So take the talent from him and give it to him who has the ten talents. For to everyone who has will more be given, and he will have an abundance. But from the one who has not, even what he has will be taken away. And cast the worthless servant into the outer darkness. In that place there will be weeping and gnashing of teeth. When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, Come, you who are blessed by my Father, **inherit the kingdom** prepared for you from the foundation of the world. For **I was hungry and you gave me food**, **I was thirsty and you gave me drink**, **I was a stranger and you welcomed me**, **I was naked and you clothed me**, **I was sick and you visited me**, **I was in prison and you came to me**. Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me. Then he will say to those on his left, Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into eternal punishment, but the righteous into eternal life. (ESV)
+
+Sheep:
+
+-   Sheep are obedient
+    -   They follow Jesus' commandments
+    -   They are servants
+    -   They practice righteousness, as Jesus did
+    -   They forgive and do not bear a grudge against other family in Christ
+
+Goats:
+
+-   Goats are disobedient!
+
+Love your neighbour as yourself:
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
+
 # Marriage
 
 -   **Message:** [Urgent, a very strong warning from Mar Mari Emmanuel to the whole world today - YouTube](https://youtu.be/o4_OXvDnqDE?t=1271)
@@ -14340,6 +14369,11 @@ Also, I think eternal life is for those who:
 This is my current understanding. So most likely it is not tolerated in the kingdom of God.
 
 I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, but that doesn't mean they inherit the Kingdom.
+
+> **I Corinthians 6:9-10** - Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
+
+> **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God**. (ESV)
+
 But faith requires obedience, and salvation requires turning from sin.
 
 And it doesn't excuse them from repentance from sin.
@@ -21342,6 +21376,10 @@ That means that when I turn up in heaven I'll have 'clothes' so I can enter - th
 But I have to keep seeking to be sanctified because Jesus is coming for me at some point. So I want to be ready for when that happens by being holy and loving:
 
 > **I John 4:17** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
+
+Personal righteousness (holiness and 'doing good') is still extremely important for **inheriting** the kingdom of God:
+
+> **I Corinthians 6:9-10** - Do you not know that **the unrighteous will not inherit the kingdom of God**? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
 The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me
