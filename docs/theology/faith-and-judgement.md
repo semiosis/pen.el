@@ -3104,6 +3104,8 @@ unwavering, over an amount of time.
 Therefore, when we trust wholeheartedly in God who has raised from the dead Jesus Christ (who is our Lord, meaning we obey Him),
 and because we believe, we then inevitably produce working faith.
 
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+
 Our faith is exhibited plainly in our action. Our own actions and way of expressing that faith paint a unique picture, with a faith towards God
 that may be expressed a little bit differently, in different works of faith, or simply keeping Jesus Christ's words and not denying His name - patient endurance.
 
@@ -8480,6 +8482,10 @@ Since it's faith in Him who raised from the dead Jesus our Lord that matters for
     
     > **Ephesians 2:10** - For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
     
+    We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+    
+    > **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+    
     God chose us and called us out of darkness into His marvelous light to proclaim His excellencies:
     
     > **I Peter 2:9** - But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may <ins>proclaim the excellencies of him who called you out of darkness into his marvelous light.</ins> (ESV)
@@ -10782,7 +10788,7 @@ reason to discourage people from obeying the gospel by the false (in my opinion)
 
 > **Ephesians 2:8-9** - For **by grace you have been saved through faith.** And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
-> **II Thessalonians 1:8** - in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. (ESV)
+> **II Thessalonians 1:8** - in flaming fire, inflicting vengeance on **those who do not know God and on those who do not obey** the gospel of our Lord Jesus. (ESV)
 
 > **James 1:21-22** - Therefore put away all filthiness and rampant wickedness and <ins>receive with meekness the implanted word, which is able to save your souls.</ins> But <ins>be doers of the word, and not hearers only, deceiving yourselves.</ins> (ESV)
 
@@ -10844,7 +10850,7 @@ Because God loved us first:
 
 If there is such a thing as justifying work then it is better described as obedient faith (**Hebrews 11:31**, **James 2:25**) and obedient faith is "being found in Christ".
 
-Is a response of love for Jesus **is** justifying 'work'? It would be based on being forgiven first.
+If a response of love for Jesus justifying 'work' then it would be based on being loved and forgiven first by God.
 
 > **Luke 7:47-50** - Therefore I tell you, her sins, which are many, are forgiven-for she loved much. But he who is forgiven little, loves little. And he said to her, Your sins are forgiven. Then those who were at table with him began to say among themselves, Who is this, who even forgives sins? And he said to the woman, Your faith has saved you; go in peace. (ESV)
 
@@ -15002,6 +15008,10 @@ We must walk in the manner that he walked:
 > **I John 5:3-4** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith.
 
 > **I John 2:3-4** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+Obeying Jesus is a very serious matter:
+
+> **II Thessalonians 1:8** - in flaming fire, inflicting vengeance on **those who do not know God and on those who do not obey** the gospel of our Lord Jesus. (ESV)
 
 Getting to know Jesus will come to result in you too abiding in the Son and in the Father.
 
@@ -20541,6 +20551,15 @@ We are to be conformed into Christ's image:
 
 > **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
 
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+
+
+## Glorification is grace
+
+Being persecuted for doing good works of faith by His power is all grace:
+
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+
 
 ## Glorification is Christ-likeness
 
@@ -20560,6 +20579,8 @@ The motivation is to glorify Jesus, and to honour Jesus.
 -   **Song:** [youtube.com: Steve Apirana - Living Sacrifice](https://www.youtube.com/watch?v=L4PSTgzgQuA)
 
 This should never replace Jesus, but glorifies Jesus because it's being a disciple of Jesus.
+
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good** and every **work of faith** by his power, <ins>so that the name of our Lord Jesus may be glorified in you, and you in him,</ins> according to the *grace* of our God and the Lord Jesus Christ. (ESV)
 
 > **Hebrews 2:10** - For it was fitting for Him, for whom (G3739 hos) are all (G3956 pas) things (G3956 pas), and through whom (G3739 hos) are all (G3956 pas) things (G3956 pas), in **bringing many sons to glory** (G1391 doxa), to perfect (G5048 teleioo) the author of their salvation (G4991 soteria) through sufferings.
 
@@ -21369,6 +21390,21 @@ Christian persecution is not for suffering as an evildoer:
 
 > **I Peter 4:15** - But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. (ESV)
 
+Being persecuted for righteousness-sake, for faithful obedience to Jesus is evidence of entering the Kingdom of God:
+
+> **II Thessalonians 1:4-5** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— (ESV)
+
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+
+
+### Believers will marvel. The saints will do good works which glorify Jesus, all done in God's grace
+
+Is there a subtle difference between 'believer' and 'saint'?
+
+> **II Thessalonians 1:9-12** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
+
 
 # Jesus Christ is fully God and fully human
 
@@ -21500,7 +21536,7 @@ It's obedience which leads to righteousness, even the righteousness of faith:
 
 ### Obey the gospel of our Lord Jesus
 
-> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on those who do not know God and on those who do not obey the gospel of our Lord Jesus. (ESV)
+> **II Thessalonians 1:4-8** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. <ins>This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering</ins> — since indeed God considers it just to repay with affliction those who afflict you, and to grant relief to you who are afflicted as well as to us, when the Lord Jesus is revealed from heaven with his mighty angels in flaming fire, inflicting vengeance on **those who do not know God** and on those **who do not obey the gospel of our Lord Jesus.** (ESV)
 
 
 ### A heart of belief and obedience is the start of faith

@@ -56,7 +56,13 @@
 
 (defun pen-acolyte-dired-penel ()
   (interactive)
-  (dired pen-penel-directory))
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (cond
+     ;; ((>= gparg 16) nil)
+     ((>= gparg 4)
+      (dired "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology"))
+     (t (dired pen-penel-directory)))))
 
 (defun pen-dired-repos ()
   (interactive)
