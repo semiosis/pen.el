@@ -36,6 +36,10 @@ Because God loved us first:
 
 > **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
+Jesus' servants (people who obey Him) are found **in him**:
+
+> **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
+
 -   **Sermon:** [youtube.com: What Is It Like to 'Know Christ'?](https://www.youtube.com/watch?v=0g2ExGC1GaE)
 
 -   **David Mathis:** "Don't think that becoming like Jesus in his death means that Paul is anticipating that he himself will be crucified, or that we will be crucified, but that he wants us to know Christ as we live in the pattern in which he lived; That we would **have his heart**, we would **have his mind** (mindset). We would **know him by walking in that mind**, **in that heart**. That's the pattern Paul wants to be conformed to. And knowing Christ by sharing in his sufferings means <ins>walking in the footsteps of his self-humbling,</ins> and **experiencing Jesus' help and the fellowship of having Him near and His resurrection power on the path of our obedience when it's the hardest**".
@@ -5339,7 +5343,7 @@ Jesus has been perfectly obedient, so Jesus speaks what Father God speaks, and w
 
 Also, through perfect obedience, Jesus has spoken Father God's commandment of eternal life, which is what He has said:
 
--   "<sub>the</sub> Father who sent me has himself given me a commandment—what to say and what to speak.\_"
+-   <ins>"the Father who sent me has himself given me a commandment—what to say and what to speak."</ins>
 
 Whoever has faith in Jesus, has faith in God. Whoever sees Jesus sees the Father:
 
@@ -6752,6 +6756,10 @@ Suffering for righteousness sake (suffering for being Christlike).
 
 > **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
 
+Jesus' servants (people who obey Him) are found **in him**:
+
+> **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
+
 It involves:
 
 -   believing the truth
@@ -7391,7 +7399,11 @@ By His grace we have to actually come into obeying Jesus to find life. Think abo
 
 Faith in Christ I believe means believing in Him and being obedient to Him, having communion with Him, etc. becoming intimate with Him, following Him. This isn't our own merit, but we still obey Jesus to be found in Him. In Him we have Jesus' righteousness:
 
-> **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+Jesus' servants (people who obey Him) are found **in him**:
+
+> **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
+
+> **Matthew 16:25** - For whoever would save his life will lose it, but whoever loses his life **for my sake** will find it. (ESV)
 
 We are instructed to work for God:
 
