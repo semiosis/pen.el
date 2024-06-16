@@ -906,6 +906,10 @@ The same way that Jesus loved, selflessly:
 
 > **Galatians 6:2** - Bear one another's burdens, and so fulfill the law of Christ. (ESV)
 
+Loving one another includes forgiving one another. Forgiving others means not holding a grudge:
+
+> **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
 We should aim to fulfill these great commandments while being merciful:
 
 > **James 2:11-13** - For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law. So speak and so act as those who are to be judged under the law of liberty. For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment. (ESV)
@@ -13503,6 +13507,8 @@ works! But Jesus did say:
 
 > **I Corinthians 1:13** - Is Christ divided? Was Paul crucified for you? Or were you baptized in the name of Paul? (ESV)
 
+> **Ephesians 4:4-5** - There is one body and one Spirit—just as you were called to the one hope that belongs to your call— one Lord, one faith, one baptism, (ESV)
+
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
@@ -13537,6 +13543,10 @@ For that reason, I would have more confidence before God if I was serving Him, h
 A comprehensive and broad understanding of the Bible is certainly important so we are not "tossed around by every wind of doctrine", and to grow into and become established in the knowledge of Jesus, and able to not be tossed around when people ask questions about doctrine (I have often felt tested in this way, and sometimes unprepared), and that is why I am writing this Bible study out:
 
 > **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, **to equip the saints** for the **work** of ministry, for **building up the body of Christ**, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be <ins>children, tossed to and fro by the waves and carried about by every wind of doctrine</ins>, by human cunning, by craftiness in **deceitful** schemes. Rather, **speaking the truth in love**, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. (ESV)
+
+We shouldn't go beyond what is written:
+
+> **I Corinthians 4:6** - I have applied all these things to myself and Apollos for your benefit, brothers, that you may learn by us not to go beyond what is written, that none of you may be puffed up in favor of one against another. (ESV)
 
 We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
 
@@ -20306,6 +20316,8 @@ We put on Christ when we are baptized into Christ:
 
 > **Galatians 3:27** - For as many of you as were baptized into Christ have put on Christ.
 
+> **Ephesians 4:4-5** - There is one body and one Spirit—just as you were called to the one hope that belongs to your call— one Lord, one faith, one baptism, (ESV)
+
 If you are Christ's (in Christ) then you are Abraham's offspring:
 
 > **Galatians 3:29** - And if you are Christ's, then you are Abraham's offspring, heirs according to promise.
@@ -20727,7 +20739,7 @@ Before God we're all guilty:
 
 > **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
 
-Forgiving others means not holding a grudge:
+Loving one another includes forgiving one another. Forgiving others means not holding a grudge:
 
 > **Leviticus 19:18** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
 
