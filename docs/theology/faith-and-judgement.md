@@ -2538,7 +2538,7 @@ Paul and the other faithful Apostles were exhibited as last of all, like men sen
 
 God still makes apostles and prophetic people:
 
-> **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be children, tossed to and fro by the waves and carried about by every wind of doctrine, by human cunning, by craftiness in deceitful schemes. Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love.
+> **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, **to equip the saints** for the **work** of ministry, for **building up the body of Christ**, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be <ins>children, tossed to and fro by the waves and carried about by every wind of doctrine</ins>, by human cunning, by craftiness in **deceitful** schemes. Rather, **speaking the truth in love**, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. (ESV)
 
 But we should listen to sound teaching first and always test the spirits:
 
@@ -3958,6 +3958,17 @@ So to receive the Holy Spirit:
 > **John 16:13** - When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. (ESV)
 
 > **I John 2:27** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
+
+
+### The fruit of the Spirit
+
+> **Galatians 5:22-23** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. (ESV)
+
+> **II Timothy 1:7** - for God gave us a spirit not of fear but of power and love and self-control. (ESV)
+
+> **II Timothy 1:7** - For God has not given us a spirit of timidity, but of power and love and discipline. (NASB)
+
+> **II Timothy 1:7** - For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind. (KJV)
 
 
 ## Becoming a servant, humbling oneself and following Jesus is what we should do
@@ -7531,7 +7542,9 @@ We seek the glory of our Lord Jesus Christ, not our own glory. We should aim not
 
 > **John 7:18** - The one who speaks on his own authority seeks his own glory, but <ins>the one who seeks the glory of him who sent him is true</ins>, and in him there is no falsehood. (ESV)
 
-For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth.
+For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth:
+
+> **Ephesians 4:15-19** - Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. Now this I say and testify in the Lord, that you must no longer walk as the Gentiles do, in the futility of their minds. They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart. They have become callous and have given themselves up to sensuality, greedy to practice every kind of impurity. (ESV)
 
 Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe. I guess that seeking the glory that comes from the only God involves seeking to glorify God:
 
@@ -9004,7 +9017,9 @@ We seek the glory of our Lord Jesus Christ, not our own glory. We should aim not
 
 > **John 7:18** - The one who speaks on his own authority seeks his own glory, but <ins>the one who seeks the glory of him who sent him is true</ins>, and in him there is no falsehood. (ESV)
 
-For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth.
+For sure, I just want to speak the truth from God, and I want to be sanctified by the Truth, and I want to be corrected by the Truth:
+
+> **Ephesians 4:15-19** - Rather, speaking the truth in love, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. Now this I say and testify in the Lord, that you must no longer walk as the Gentiles do, in the futility of their minds. They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart. They have become callous and have given themselves up to sensuality, greedy to practice every kind of impurity. (ESV)
 
 Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe. I guess that seeking the glory that comes from the only God involves seeking to glorify God:
 
@@ -10969,6 +10984,8 @@ If we don't make Jesus our #1 love then it will be much harder to keep Jesus' co
 > **Psalms 34:22** - The LORD redeems the life of his servants; none of those who take refuge in him will be condemned. (ESV)
 
 > **II Timothy 2:24-26** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will.
+
+-   **Song:** [youtube.com: I'm Your Servant](https://www.youtube.com/watch?v=wc4gWafIgeY)
 
 Jesus is God's servant:
 
@@ -13517,6 +13534,10 @@ For that reason, I would have more confidence before God if I was serving Him, h
 
 > **Psalms 1:4-5** - The wicked are not so, but are like chaff that the wind drives away. Therefore the wicked will not stand in the judgment, nor sinners in the congregation of the righteous; (ESV)
 
+A comprehensive and broad understanding of the Bible is certainly important so we are not "tossed around by every wind of doctrine", and to grow into and become established in the knowledge of Jesus, and able to not be tossed around when people ask questions about doctrine (I have often felt tested in this way, and sometimes unprepared), and that is why I am writing this Bible study out:
+
+> **Ephesians 4:11-16** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, **to equip the saints** for the **work** of ministry, for **building up the body of Christ**, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be <ins>children, tossed to and fro by the waves and carried about by every wind of doctrine</ins>, by human cunning, by craftiness in **deceitful** schemes. Rather, **speaking the truth in love**, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. (ESV)
+
 We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
 
 > **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
@@ -13754,13 +13775,15 @@ Jesus' friends do what Jesus' commands them. Jesus' friends hear His voice:
 
 ## Sheep vs goats: Sheep inherit the kingdom of God, goats do not
 
-Following Jesus certainly means
+Following Jesus certainly means repenting from, turning away from practicing sin because Jesus taught that we should. The ones who practice the works of the flesh will never even enter the kingdom:
+
+> **Matthew 5:20** - For I tell you, unless your righteousness exceeds that of the scribes and Pharisees, you will **never enter the kingdom of heaven**. (ESV)
 
 > **I Corinthians 6:9-10** - Do you not know that **the unrighteous will not inherit the kingdom of God**? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
 
 > **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God**. (ESV)
 
-Also, obedience means obeying Jesus Christ's commandments! Following Jesus means obeying Jesus' commandments:
+Also, obedience means obeying Jesus Christ's commandments on how to love one another! Following Jesus means obeying Jesus' commandments:
 
 > **Matthew 25:26-46** - But his master answered him, You wicked and slothful servant! You knew that I reap where I have not sowed and gather where I scattered no seed? Then you ought to have invested my money with the bankers, and at my coming I should have received what was my own with interest. So take the talent from him and give it to him who has the ten talents. For to everyone who has will more be given, and he will have an abundance. But from the one who has not, even what he has will be taken away. And cast the worthless servant into the outer darkness. In that place there will be weeping and gnashing of teeth. When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, Come, you who are blessed by my Father, **inherit the kingdom** prepared for you from the foundation of the world. For **I was hungry and you gave me food**, **I was thirsty and you gave me drink**, **I was a stranger and you welcomed me**, **I was naked and you clothed me**, **I was sick and you visited me**, **I was in prison and you came to me**. Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me. Then he will say to those on his left, Depart from me, you cursed, into the eternal fire prepared for the devil and his angels. For I was hungry and you gave me no food, I was thirsty and you gave me no drink, I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into eternal punishment, but the righteous into eternal life. (ESV)
 
@@ -13770,6 +13793,7 @@ Sheep:
     -   They follow Jesus' commandments
     -   They are servants
     -   They practice righteousness, as Jesus did
+    -   They repent and turn away from practicing sin
     -   They forgive and do not bear a grudge against other family in Christ
 
 Goats:
@@ -16042,6 +16066,8 @@ was very important for me through that time, so that I wasn't led astray by paga
 Obeying Jesus is very important:
 
 > **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
+
+-   **Song:** [youtube.com: Charity Gayle - Thank You Jesus for the Blood {Live}](https://www.youtube.com/watch?v=dhU-Omwg2rU&list=RDdhU-Omwg2rU&start_radio=1)
 
 
 ### An obedient/loving response to Jesus, I think is extremely important
@@ -20363,7 +20389,7 @@ Jesus, by His own authority, rose from the dead. AMEN!!
 
 > **Ephesians 6:11-13** - Put on the whole armor of God, that you may be able to stand against the schemes of the devil. For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm. (ESV)
 
--   Belt of Truth and Faithfulness
+-   Belt of Truth
 -   Breastplate of Righteousness
 -   Shoes of the Gospel of Peace
 -   Shield of Faith
@@ -20373,13 +20399,18 @@ Jesus, by His own authority, rose from the dead. AMEN!!
 -   Lamp
 
 
-## Belt of Truth and Faithfulness
+## Belt of Truth
 
-> **Ephesians 6:14** - Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness, (ESV)
-
-> **Isaiah 11:5** - Righteousness shall be the belt of his waist, and faithfulness the belt of his loins. (ESV)
+> **Ephesians 6:14** - Stand therefore, having fastened on the **belt of truth**, and having put on the **breastplate of righteousness**, (ESV)
 
 > **Ephesians 5:9** - (for the fruit of light is found in all that is good and right and true), (ESV)
+
+A comprehensive and broad understanding of the Bible is certainly important so we are not "tossed around by every wind of doctrine", and to grow into and become established in the knowledge of Jesus, and able to not be tossed around when people ask questions about doctrine (I have often felt tested in this way, and sometimes unprepared), and that is why I am writing this Bible study out:
+
+
+### Belts of righteousness, faithfulness
+
+> **Isaiah 11:5** - Righteousness shall be the belt of his waist, and faithfulness the belt of his loins. (ESV)
 
 
 ### We are fighting against lawlessness
@@ -20975,6 +21006,8 @@ Required to satisfy the "Christ's love" criteria I believe are:
 Our first agape love has to be Jesus:
 
 > **Revelation of John 2:1-5** - “To the angel of the church in Ephesus write: The One who holds the seven stars in His right hand, the One who walks among the seven golden lampstands, says this: ‘I know your deeds and your toil and perseverance, and that you cannot tolerate evil men, and you put to the test those who call themselves apostles, and they are not, and you found them to be false; and you have perseverance and have endured for My name’s sake, and have not grown weary. But I have this against you, that you have left your first (G4413 protos) love (G26 **agape**). Therefore remember from where you have fallen, and repent and do the deeds you did at first; or else I am coming to you and will remove your lampstand out of its place&#x2013;unless you repent. (NASB)
+
+-   **Song:** [youtube.com: Petra - First Love](https://www.youtube.com/watch?v=pzKaHWi2GEE)
 
 Our love is in response to Christ having loved us first:
 

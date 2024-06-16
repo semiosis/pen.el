@@ -171,6 +171,7 @@
                                 nil nil nil t))))
 (defset org-mode-funcs ;; (list 'org-latex-export-to-pdf 'tvipe-org-table-export)
   (list
+   'pen-org-add-tag
    'org-toggle-link-display
    'org-ascii-convert-region-to-utf8
    'org-html-export-to-html
