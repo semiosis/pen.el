@@ -3104,6 +3104,8 @@ unwavering, over an amount of time.
 Therefore, when we trust wholeheartedly in God who has raised from the dead Jesus Christ (who is our Lord, meaning we obey Him),
 and because we believe, we then inevitably produce working faith.
 
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
+
 > **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
 
 Our faith is exhibited plainly in our action. Our own actions and way of expressing that faith paint a unique picture, with a faith towards God
@@ -7810,6 +7812,10 @@ He has told us what to believe and what to do, and we can choose to be obedient 
 
 Jesus is the author of our faith, so having faith is grace from God, and even if works are working with our faith, it's all by grace and we still can't boast before God because our faith and our works are all gifted to us from God.
 
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
+
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+
 For example, Noah's works of building the ark was given to Him by God. God even outlined every detail. Noah acted obediently to God's instruction.
 
 > **Hebrews 12:1-2** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the **founder** and **perfecter** of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God.
@@ -8482,7 +8488,7 @@ Since it's faith in Him who raised from the dead Jesus our Lord that matters for
     
     > **Ephesians 2:10** - For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. (ESV)
     
-    We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+    We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
     
     > **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
     
@@ -15132,6 +15138,10 @@ I think that salvation is a totally free gift and the baseline salvation is trus
 finished work done on the cross.
 But the people that oppose obeying the full gospel of Jesus saying that works oppose grace are very deluded.
 
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
+
+> **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
+
 But salvation is a gift and God is sovereign to save.
 That's why it's grace.
 Saved by grace through faith.
@@ -20551,7 +20561,7 @@ We are to be conformed into Christ's image:
 
 > **Romans 8:29** - For those whom he foreknew he also predestined to be conformed to the image of his Son, in order that he might be the firstborn among many brothers. (ESV)
 
-We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
 
 
 ## Glorification is grace
@@ -21394,7 +21404,7 @@ Being persecuted for righteousness-sake, for faithful obedience to Jesus is evid
 
 > **II Thessalonians 1:4-5** - Therefore we ourselves boast about you in the churches of God for your steadfastness and faith in all your persecutions and in the afflictions that you are enduring. This is evidence of the righteous judgment of God, that you may be considered worthy of the kingdom of God, for which you are also suffering— (ESV)
 
-We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those are entirely grace:
+We're supposed to do good works of faith by Jesus' power so that Jesus' name is glorified - and those works done in Jesus' power are entirely given by grace to us:
 
 > **II Thessalonians 1:11-12** - To this end we always pray for you, that our God may make you worthy of his calling and may fulfill every resolve for good and every **work of faith** *by **his** power*, so that the name of our Lord Jesus may be glorified in you, and you in him, *according to the **grace** of our God and the Lord Jesus Christ.* (ESV)
 
