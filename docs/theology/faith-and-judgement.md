@@ -36,9 +36,21 @@ Because God loved us first:
 
 > **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
-Jesus' servants (people who obey Him) are found **in him**:
+We abide in Jesus when He washes us:
+
+> **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+Peter obeyed to let Jesus wash him:
+
+> **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
+
+Jesus' servants (people who obey Him) are found **in him**. Jesus' servants are those who have been washed, and they ought to then wash:
 
 > **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
+
+And they were put in Him by Him:
+
+> **Titus 3:5-7** - he saved us, not because of works done by us in righteousness, but **according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit**, whom he poured out on us richly through Jesus Christ our Savior, so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
 
 -   **Sermon:** [youtube.com: What Is It Like to 'Know Christ'?](https://www.youtube.com/watch?v=0g2ExGC1GaE)
 
@@ -2068,6 +2080,10 @@ Yes, I believe that Jesus can save a person who believes in His name. But He is 
 We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+Peter obeyed to let Jesus wash him:
+
+> **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
 We call on Jesus to wash us:
 
@@ -6764,7 +6780,7 @@ Suffering for righteousness sake (suffering for being Christlike).
 
 > **Philippians 3:8-11** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may know him and the power of his resurrection, and may share his sufferings, becoming like him in his death, that by any means possible I may attain the resurrection from the dead. (ESV)
 
-Jesus' servants (people who obey Him) are found **in him**:
+Jesus' servants (people who obey Him) are found **in him**. Jesus' servants are those who have been washed, and they ought to then wash:
 
 > **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
 
@@ -7407,7 +7423,7 @@ By His grace we have to actually come into obeying Jesus to find life. Think abo
 
 Faith in Christ I believe means believing in Him and being obedient to Him, having communion with Him, etc. becoming intimate with Him, following Him. This isn't our own merit, but we still obey Jesus to be found in Him. In Him we have Jesus' righteousness:
 
-Jesus' servants (people who obey Him) are found **in him**:
+Jesus' servants (people who obey Him) are found **in him**. Jesus' servants are those who have been washed, and they ought to then wash:
 
 > **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
 
@@ -11131,6 +11147,10 @@ As servants of Jesus, we should encourage other servants of Jesus to maturity:
 We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+Peter obeyed to let Jesus wash him:
+
+> **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
 We call on Jesus to wash us:
 
