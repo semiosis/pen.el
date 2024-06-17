@@ -2115,6 +2115,19 @@ case "$file_type" in
     }
     ;;
 
+    cpl) {
+        # does it have a shebang? (For different problog invocations)
+        if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
+            cd "$dn"
+            perl "$rp" | pen-pavs
+            exit $?
+        else
+            run-cpl "$rp"
+        fi
+        exit 0
+    }
+    ;;
+
     problog) {
         # does it have a shebang? (For different problog invocations)
         if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then

@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+d="$(date +%d.%m.%y)"
+fullwd="$(pwd)/$d"
+mkdir -p "$fullwd"
+cd "$fullwd"
+CWD="$fullwd" zsh

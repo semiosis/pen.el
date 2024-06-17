@@ -21,6 +21,7 @@
 (remove-hook 'after-init-hook #'global-flycheck-mode)
 
 (add-to-list 'auto-mode-alist '("\\.plrc\\'" . prolog-mode))
+(add-to-list 'auto-mode-alist '("\\.cpl\\'" . cpl-mode))
 (add-to-list 'auto-mode-alist '("\\.kt\\'" . kotlin-mode))
 (add-to-list 'auto-mode-alist '("/\\.[^/]*\\'" . fundamental-mode))
 (add-to-list 'auto-mode-alist '("\\.ssh/config" . ssh-config-mode))

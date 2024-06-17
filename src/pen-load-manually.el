@@ -11,7 +11,10 @@
       (require 'obvious)
 
       (add-to-list 'load-path "/root/.emacs.d/manual-packages/problog-mode")
-      (require 'problog-mode)))
+      (require 'problog-mode)
+      
+      (add-to-list 'load-path "/root/.emacs.d/manual-packages/cpl-mode")
+      (require 'cpl-mode)))
 
 
 ;; e:$EMACSD_BUILTIN/straight/repos/org-verse
