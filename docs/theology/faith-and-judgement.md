@@ -2065,6 +2065,14 @@ Yes, I believe that Jesus can save a person who believes in His name. But He is 
 
 > **Revelation of John 3:8** - I know your works. Behold, I have set before you an open door, which no one is able to shut. I know that <ins>you have but little power, and yet you have kept my word and have not denied my name.</ins>
 
+We abide in Jesus when He washes us:
+
+> **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+We call on Jesus to wash us:
+
+> **Acts 22:16** - And now why do you wait? Rise and be baptized and wash away your sins, calling on his name. (ESV)
+
 I think Jesus calls us to pursue perfection through following Him, and we should definitely give it a go:
 
 > **John 17:23** - I in them and you in me, that <ins>they may become perfectly one,</ins> so that the world may know that you sent me and loved them even as you loved me.
@@ -11116,6 +11124,25 @@ As servants of Jesus, we should encourage other servants of Jesus to maturity:
 > **Colossians 4:12** - Epaphras, who is one of you, a servant of Christ Jesus, greets you, always struggling on your behalf in his prayers, that you may stand mature and fully assured in all the will of God.
 
 > **Colossians 1:7** - just as you learned it from Epaphras our beloved fellow servant. He is a faithful minister of Christ on your behalf
+
+
+## Being washed and washing one another
+
+We abide in Jesus when He washes us:
+
+> **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+We call on Jesus to wash us:
+
+> **Acts 22:16** - And now why do you wait? Rise and be baptized and wash away your sins, calling on his name. (ESV)
+
+> **I Corinthians 6:11** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
+
+Being washed, we ought to wash one another's feet:
+
+> **John 13:14** - If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
+
+> **I Timothy 5:9-10** - Let a widow be enrolled if she is not less than sixty years of age, having been the wife of one husband, and having a reputation for good works: if she has brought up children, has shown hospitality, has washed the feet of the saints, has cared for the afflicted, and has devoted herself to every good work. (ESV)
 
 
 ## Entering into life / the Kingdom of Heaven
