@@ -1,0 +1,186 @@
+#!/bin/bash
+export TTY
+
+# This would be the type of format I'd use but I don't yet know how to
+# implment it. I would need something like racket
+
+# $HOME/scripts/unalias
+
+lang="$1"
+
+case "$lang" in
+    hs) {
+        lang=haskell
+    } ;;
+
+    tcl|exp|expect) {
+        lang=tcl
+    }
+    ;;
+
+    es|elasticsearch) {
+        lang=elasticsearch
+    }
+    ;;
+
+    hy|hylang) {
+        lang=hylang
+    }
+    ;;
+
+    el|emacslisp|emacs-lisp|emacs-lisp-elisp) {
+        lang=emacs-lisp-elisp
+    }
+    ;;
+
+    exp|experimentation|experiments) {
+        lang=experiments
+    }
+    ;;
+
+    rb|ruby) {
+        lang=rust
+    }
+    ;;
+
+    rs|rust) {
+        lang=rust
+    }
+    ;;
+
+    cl|common-lisp|common-lisp-clisp) {
+        lang=common-lisp-clisp
+    }
+    ;;
+
+    fp|functional-programming) {
+        lang=functional-programming
+    }
+    ;;
+
+    hs|haskell) {
+        lang=haskell
+    }
+    ;;
+
+    tc|torch|pytorch) {
+        lang=pytorch
+    }
+    ;;
+
+    dj|django) {
+        lang=django
+    }
+    ;;
+
+    rl|reinforcement-learning) {
+        lang=reinforcement-learning
+    }
+    ;;
+
+    dl|deep-learning) {
+        lang=deep-learning
+    }
+    ;;
+
+    nlp|natural-language-processing) {
+        lang=natural-language-processing
+    }
+    ;;
+
+    tf|tensorflow) {
+        lang=tensorflow
+    }
+    ;;
+
+    clj|clojure) {
+        lang=clojure
+    }
+    ;;
+
+    sy|spacy) {
+        lang=spacy
+    }
+    ;;
+
+    codegen|code-generation) {
+        lang=code-generation
+    }
+    ;;
+
+    rpl|rosie) {
+        lang=rosie
+    }
+    ;;
+
+    ps|purs|purescript) {
+        lang=purescript
+    }
+    ;;
+
+    ds|datascience|data-science) {
+        lang=data-science
+    }
+    ;;
+
+    py|python) {
+        lang=python
+    }
+    ;;
+
+    tu|turtle) {
+        lang=turtle
+    }
+    ;;
+
+    pb|problog) {
+        lang=problog
+    }
+    ;;
+
+    mp|megaparsack) {
+        lang=megaparsack
+    }
+    ;;
+
+    rkt|racket) {
+        lang=racket
+    }
+    ;;
+
+    js|javascript) {
+        lang=javascript
+    }
+    ;;
+
+    gh|github) {
+        lang=github
+    }
+    ;;
+
+    gr|google) {
+        lang=google
+    }
+    ;;
+
+    ml|machine-learning) {
+        lang=machine-learning
+    }
+    ;;
+
+    ts|typescript) {
+        lang=typescript
+    }
+    ;;
+
+    pl|perl) {
+        lang=perl
+    }
+    ;;
+
+    *)
+esac
+
+echo "$lang"
+
+# $MYGIT/facebookresearch/fastText/wikifil.pl

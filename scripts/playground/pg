@@ -1,0 +1,526 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# # Start using this when building playgrounds
+# https://github.com/google/python-fire/blob/master/docs/using-cli.md
+# py i fire
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -d) {
+        default=y
+        shift
+    }
+    ;;
+
+    -r) {
+        scratchonly=y
+        shift
+    }
+    ;;
+
+    -cd) {
+        cdonly=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# or ext
+lang="$1"
+shift
+
+if test "$default" = "y"; then
+    dp="$HOME/notes/ws/playgrounds/$lang"
+    mkdir -p "$dp"
+
+    spv orspe -nf "$dp/notes.org"
+    spv orspe -nf "$dp/remember.org"
+    orspe -nf "$dp/commands.sh"
+    exit $?
+fi
+
+lang="$(ua "$lang")"
+
+dp="$HOME/notes/ws/playgrounds/$lang"
+
+is_tty() {
+    # If stout is a tty
+    [[ -t 1 ]]
+}
+
+if ! is_tty; then
+    echo "$dp"
+    exit $?
+fi
+
+if test "$cdonly" = "y"; then
+    mkdir -p "$dp"
+    zcd "$dp"
+    exit 0
+fi
+
+if test "$scratchonly" = "y"; then
+    mkdir -p "$dp"
+    cd "$dp"
+    fp="$(glob -b "scratch.*" | head -n 1)"
+    if test -n "$fp"; then
+        sp "$fp"
+    else
+        zcd "$dp"
+    fi
+    exit 0
+fi
+
+mkdir -p "$dp"
+cd "$dp"
+
+case "$lang" in
+    termui) {
+        spv orspe $MYGIT/hoanhan101/ultimate-go/README.md
+        sps orspe ${GOPATH%%:*}/src/github.com/gizak/termui/_examples
+        orspe -ci go-playground
+
+        tmux select-layout tiled
+    }
+    ;;
+
+    go|golang) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/golang/notes.org
+        sph orspe -nf $HOME/notes/ws/playgrounds/golang/remember.org
+        spv orspe $MYGIT/hoanhan101/ultimate-go/README.md
+        sps orspe -ci go-playground
+
+        # orspe -nf $HOME/notes/ws/playgrounds/golang/commands.sh
+
+        ## gore and go-pry are both terrible
+        # xs gore
+        # gore (go-pry)
+        # orspe -ci go-scratch
+
+        # orspe -ci go-playground
+        # spv sp ${GOPATH%%:*}/src/github.com/gizak/termui/_example
+
+        tmux select-layout tiled
+
+        # Make ranger the original pane because it needs to not change size
+        ranger $MYGIT/mmcgrana/gobyexample
+    }
+    ;;
+
+    bert) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/bert/notes.org
+        sph orspe -nf $HOME/notes/ws/playgrounds/bert/remember.org
+        orspe -nf $HOME/notes/ws/playgrounds/bert/commands.sh
+    }
+    ;;
+
+    hylang) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/hylang/notes.org
+        sph orspe -nf $HOME/notes/ws/playgrounds/hylang/remember.org
+        orspe -nf $HOME/notes/ws/playgrounds/hylang/commands.sh
+    }
+    ;;
+
+    cpp) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/cpp/notes.org
+        sph orspe -nf $HOME/notes/ws/playgrounds/cpp/remember.org
+        orspe -nf $HOME/notes/ws/playgrounds/cpp/commands.org
+    }
+    ;;
+
+    gdb) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/gdb/notes.org
+        sph orspe -nf $HOME/notes/ws/playgrounds/gdb/remember.org
+        orspe -nf $HOME/notes/ws/playgrounds/gdb/commands.org
+    }
+    ;;
+
+    vim) {
+        spv orspe -nf $HOME/notes/ws/vim/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/vim/notes.org
+    }
+    ;;
+
+    fuse) {
+        spv orspe -nf $HOME/notes/ws/fuse/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/fuse/notes.org
+    }
+    ;;
+
+    experiments) {
+        spv orspe -nf $HOME/notes/ws/experiments/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/experiments/notes.org
+    }
+    ;;
+
+    keras) {
+        spv orspe -nf $HOME/notes/ws/keras/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/keras/notes.org
+    }
+    ;;
+
+    rust) {
+        spv orspe -nf $HOME/notes/ws/rust/commands.sh
+        spv orspe $MYGIT/crazymykl/rust-koans
+        tmux select-layout tiled
+        orspe -nf $HOME/notes/ws/playgrounds/rust/notes.org
+    }
+    ;;
+
+    tabnine) {
+        spv orspe -nf $HOME/notes/ws/tabnine/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/tabnine/notes.org
+    }
+    ;;
+
+    common-lisp-clisp) {
+        spv orspe -nf $HOME/notes/ws/common-lisp-clisp/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/common-lisp-clisp/notes.org
+    }
+    ;;
+
+    bioinformatics) {
+        spv orspe -nf $HOME/notes/ws/bioinformatics/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/bioinformatics/notes.org
+    }
+    ;;
+
+    pandas) {
+        spv orspe -nf $HOME/notes/ws/pandas/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/pandas/notes.org
+    }
+    ;;
+
+    todo) {
+        spv orspe -nf $HOME/notes/ws/todo-mode/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/todo-mode/notes.org
+    }
+    ;;
+
+    gpt2) {
+        spv orspe -nf $HOME/notes/ws/gpt2/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/gpt2/notes.org
+    }
+    ;;
+
+    transformer) {
+        spv orspe -nf $HOME/notes/ws/transformer/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/transformer/notes.org
+    }
+    ;;
+
+    functional-programming) {
+        spv orspe -nf $HOME/notes/ws/functional-programming/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/functional-programming/notes.org
+    }
+    ;;
+
+    haskell) {
+        # sph ranger $MYGIT/google/haskell-trainings
+        # spv ranger $MYGIT/lotz84/haskellbyexample/ex
+
+        sph sp $NOTES/ws/playgrounds/haskell/directories.txt
+
+        #sph sp $MYGIT/google/haskell-trainings
+        #sph sp $MYGIT/sdiehl/write-you-a-haskell
+        #spv sp $MYGIT/lotz84/haskellbyexample/ex
+        #spv sp $MYGIT/hskoans/hskoans
+        #tmux select-layout tiled
+
+        orspe -nf $HOME/notes/ws/playgrounds/haskell/commands.sh
+
+        # orspe -nf $HOME/notes/ws/playgrounds/haskell/remember.org
+
+        # printf -- "%s\n" "$extra" | mnm | v -ft sh
+    }
+    ;;
+
+    pytorch) {
+        spv orspe -nf $HOME/notes/ws/pytorch/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/pytorch/notes.org
+    }
+    ;;
+
+    hstf) {
+        spv orspe -nf $HOME/notes/ws/haskell-tensorflow/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/haskell-tensorflow/notes.org
+    }
+    ;;
+
+    spark) {
+        spv orspe -nf $HOME/notes/ws/spark/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/spark/notes.org
+    }
+    ;;
+
+    keras) {
+        spv orspe -nf $HOME/notes/ws/keras/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/keras/notes.org
+    }
+    ;;
+
+    nltk) {
+        spv orspe -nf $HOME/notes/ws/nltk/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/nltk/notes.org
+    }
+    ;;
+
+    pytrends) {
+        spv orspe -nf $HOME/notes/ws/pytrends/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/pytrends/notes.org
+    }
+    ;;
+
+    django) {
+        spv orspe -nf $HOME/notes/ws/django/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/django/notes.org
+        tmux select-layout tiled
+    }
+    ;;
+
+    reinforcement-learning) {
+        spv vs -nf $HOME/notes/ws/reinforcement-learning/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/reinforcement-learning/notes.org
+    }
+    ;;
+
+    deep-learning) {
+        spv vs -nf $HOME/notes/ws/playgrounds/deep-learning/commands.sh
+        orspe -nf $HOME/notes/ws/playgrounds/deep-learning/notes.org
+    }
+    ;;
+
+    #emacs-lisp-elisp) {
+    #    spv orspe -nf $HOME/notes/ws/emacs-lisp-elisp/commands.sh
+    #    orspe -nf $HOME/notes/ws/playgrounds/emacs-lisp-elisp/notes.org
+    #    orspe -nf $HOME/notes/ws/playgrounds/emacs-lisp/notes.org
+    #}
+    #;;
+
+    natural-language-processing) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/natural-language-processing/notes.org
+        orspe -nf $HOME/notes/ws/playgrounds/natural-language-processing/remember.org
+    }
+    ;;
+
+    tensorflow) {
+        spv eww https://www.tensorflow.org/tutorials
+        sph gc https://github.com/tensorflow/examples
+        v $HOME/notes/ws/playgrounds/tensorflow/notes.org
+        # tm sel localhost:xpti3.0
+        # spv eww https://www.tensorflow.org/tutorials
+        spv ewwlinks +/"Get Started with TensorFlow" "https://www.tensorflow.org/tutorials"
+        # sph gc https://github.com/tensorflow/examples
+        sph ranger $MYGIT/tensorflow/examples
+        tmux select-layout tiled
+
+        orspe -nf $HOME/notes/ws/playgrounds/tensorflow/commands.sh
+    }
+    ;;
+
+    clojure) {
+        spv ewwlinks "https://clojure.org/reference/evaluation"
+        orspe -nf $HOME/notes/ws/playgrounds/clojure/notes.org
+        orspe -nf $NOTES/ws/clojure/examples/tutorial/tutorial/project.clj
+    }
+    ;;
+
+    spacy) {
+        # tm sel localhost:xpti3.0
+        spv ranger $MYGIT/ines/spacy-course/exercises
+        og -nf $HOME/notes/ws/playgrounds/spacy/notes.org
+    }
+    ;;
+
+    rasa) {
+        # tm sel localhost:xpti3.0
+        spv ranger $MYGIT/santteegt/rasa-chatbot-example
+        og -nf $HOME/notes/ws/playgrounds/rasa/notes.org
+    }
+    ;;
+
+    code-generation) {
+        spv eww "http://hackage.haskell.org/packages/#cat:language"
+
+        og -nf $HOME/notes/ws/playgrounds/code-generation/notes.org
+    }
+    ;;
+
+    prolog) {
+        # tm sel localhost:xpti3.0
+        spv ranger $MYGIT/Anniepoo/prolog-examples
+        v -nf $HOME/notes/ws/playgrounds/prolog/notes.org
+        v -nf $HOME/notes/ws/playgrounds/prolog/remember.org
+    }
+    ;;
+
+    tcl) {
+        sph ranger $MYGIT/google/haskell-trainings
+        spv ranger $MYGIT/lotz84/haskellbyexample/ex
+
+        orspe -nf $HOME/notes/ws/playgrounds/tcl/commands.sh
+    }
+    ;;
+
+    semantic) {
+        sph ranger $MYGIT/github/semantic
+
+        orspe -nf $HOME/notes/ws/playgrounds/semantic/notes.org
+    }
+    ;;
+
+    duckling) {
+        sph ranger $MYGIT/facebook/duckling
+
+        orspe -nf $HOME/notes/ws/playgrounds/duckling/notes.org
+    }
+    ;;
+
+    rosie) {
+        spv ranger $MYGIT/rosie-pattern-language/rosie/extra/examples
+        sph orspe -nf $HOME/notes/ws/rosie/scratch/scratch.rpl
+        og -nf $HOME/notes/ws/playgrounds/rosie/remember.org
+    }
+    ;;
+
+    purescript) {
+        spv ranger $MYGIT/kvsm/purescript-by-example
+        sph orspe -nf $HOME/notes/ws/purescript/scratch/hello-world.purs
+        sph ranger $MYGIT/purescript/documentation/guides
+        v -nf $HOME/notes/ws/playgrounds/purescript/notes.org
+    }
+    ;;
+
+    data-science) {
+        # tm sel localhost:xpti3.0
+        sph orspe -nf $HOME/notes/ws/playgrounds/data-science/notes.org
+        orspe -nf $HOME/notes/ws/playgrounds/data-science/commands.sh
+        # orspe -nf $HOME/notes/ws/playgrounds/data-science/commands.org
+    }
+    ;;
+
+    python) {
+        cd "$HOME/notes/ws/playgrounds/python/"
+        # tm sel localhost:xpti3.0
+        spv orspe -nf "scratch.py"
+        spv orspe -nf notes.org
+        sph orspe -nf remember.org
+        orspe -nf commands.sh
+        TMUX= tmux select-layout tiled
+    }
+    ;;
+
+    rnn) {
+        # tm sel localhost:xpti3.0
+        v -nf $HOME/notes/ws/playgrounds/python/notes.org
+    }
+    ;;
+
+    c) {
+        orspe -ci cc-playground
+    }
+    ;;
+
+    turtle) {
+        spv orspe -nf $HOME/notes/ws/playgrounds/turtle/links.org
+        sph eww http://hackage.haskell.org/package/turtle-1.5.14/docs/Turtle-Tutorial.html
+        vs $HOME/notes/ws/turtle/scratch/echo.hs
+    }
+    ;;
+
+    problog) {
+        vs $HOME/notes/ws/problog/scratch/scratch.problog
+    }
+    ;;
+
+    megaparsack) {
+        # xs megaparsack
+        spv ranger $MYGIT/lexi-lambda/megaparsack
+        orspe -nf $HOME/notes/ws/racket/scratch/pg-megaparsack.rkt
+    }
+    ;;
+
+    curly-fn) {
+        orspe -nf $HOME/notes/ws/racket/scratch/pg-curly-fn.rkt
+    }
+    ;;
+
+    rkt|racket) {
+        # spv ranger $MYGIT/mbutterick/beautiful-racket
+        # sph orspe -nf "$HOME/notes/ws/racket/scratch/scratch.rkt"
+        # orspe -nf $HOME/notes/ws/racket/commands.sh
+
+        sph ranger $MYGIT/lexi-lambda/megaparsack
+        spv ranger $MYGIT/mbutterick/beautiful-racket
+
+        read -r -d '' extra <<HEREDOC
+sp $HOME/notes/ws/racket/scratch/scratch.rkt
+og $MYGIT/mullikine/mullikine.github.io/practical-macros-in-racket-and-how-to-work-with-them.org
+sp $HOME/.racketrc
+HEREDOC
+        printf -- "%s\n" "$extra" | mnm | v -ft sh
+
+    }
+    ;;
+
+
+    javascript) {
+        v -nf "$HOME/notes/ws/node/playground/basic-test.js"
+    }
+    ;;
+
+    github) {
+        $HOME/notes/current/playgrounds/my-github.sh "$@"
+    }
+    ;;
+
+    google) {
+        $HOME/notes/current/playgrounds/my-google.sh "$@"
+    }
+    ;;
+
+    machine-learning) {
+        # xs megaparsack
+        spv ranger /var/smulliga/source/git/albahnsen/PracticalMachineLearningClass
+        orspe -nf $NOTES/ws/playgrounds/machine-learning/notes.org
+    }
+    ;;
+
+    clql) {
+        :
+    }
+    ;;
+
+    perl) {
+        orspe -nf $HOME/notes/ws/perl/scratch/playground.pl
+    }
+    ;;
+
+    *) {
+        # tf "$lang" | xa orspe
+
+        unset TTY
+
+        mkdir -p "$dp"
+        cd "$dp"
+        
+        NEWSESSION="$(TMUX= tmux new -c "$dp" -d -F "#{session_id}" -P "unset TTY; orspe -nf notes.org")"
+
+        fp="$(glob -b "scratch.*" | head -n 1)"
+        if test -n "$fp"; then
+            spv -t "$NEWSESSION" orspe -nf "$fp"
+        fi
+
+        spv -t "$NEWSESSION" orspe -nf "remember.org"
+        spv -t "$NEWSESSION" orspe -nf "commands.sh"
+        TMUX= tmux select-layout -t "$NEWSESSION" tiled
+        TMUX= tmux attach -t "$NEWSESSION"
+    }
+    ;;
+
+esac

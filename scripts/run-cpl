@@ -5,6 +5,7 @@ export TTY
 
 fp="$1"
 rp="$(realpath "$fp")"
+rp_slug="$(printf -- "%s\n" "$rp" | tr '\n' ' ' | sed 's/ $//' | slugify)"
 
 fn=$(basename -- "$fp")
 dn=$(dirname "$fp")
@@ -13,7 +14,9 @@ mant="${fn%.*}"
 
 cd "$dn"
 
-td_pita_pl="$(mktemp -t -d td_pita_plXXXXXX || echo /dev/null)"
+test -d "$TMPDIR" || exit 1
+
+td_pita_pl="$TMPDIR/$rp_slug"
 trap "rmdir \"$td_pita_pl\" 2>/dev/null" 0
 
 IFS= read -r -d '' PITA_HEAD <<HEREDOC
@@ -26,6 +29,8 @@ IFS= read -r -d '' PITA_FOOT <<HEREDOC
 :- end_lpad.
 HEREDOC
 
+new_fp="$td_pita_pl/${mant}.pl"
+
 mkdir -p "$td_pita_pl"
 cd "$td_pita_pl"
 
@@ -33,4 +38,5 @@ printf -- "%s\n" "$PITA_HEAD" > "${mant}.pl"
 cat "$rp" | awk 1 >> "${mant}.pl"
 printf -- "%s\n" "$PITA_FOOT" >> "${mant}.pl"
 
-x -sh swipl -e "?-" -s "[$mant]." -c m -i
+sps -d v "$new_fp"
+nvt x -sh swipl -e "?-" -s "[$mant]." -c m -i

@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+lang="$1"
+shift
+
+tm -d nw -args -n playground-"$lang" pg "$lang"
