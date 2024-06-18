@@ -36,15 +36,19 @@ Because God loved us first:
 
 > **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
+It's <ins>perfect</ins> self-humbling obedience which only Jesus Christ managed to reach:
+
+> **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
+
 We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
 
-Peter obeyed to let Jesus wash him:
+Peter believed/received/obeyed/trusted to let Jesus wash him but it was Jesus doing the work:
 
 > **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
-Jesus' servants (people who obey Him) are found **in him**. We self-humble when we obey Jesus. Jesus' servants are those who have been washed, and they ought to then wash:
+Jesus' servants (people who believe and obey Him) are found **in him**. We know Christ by living in the pattern in which he lived. Jesus' servants are those who have accepted Jesus to wash them, and they ought to then wash one another:
 
 > **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
 
@@ -932,9 +936,9 @@ We should aim to fulfill these great commandments while being merciful:
 
 > **James 2:11-13** - For he who said, Do not commit adultery, also said, Do not murder. If you do not commit adultery but do murder, you have become a transgressor of the law. So speak and so act as those who are to be judged under the law of liberty. For judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment. (ESV)
 
-It's <ins>perfect</ins> obedience which only Jesus Christ managed to reach:
+It's <ins>perfect</ins> self-humbling obedience which only Jesus Christ managed to reach:
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+> **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
 
 We come to having obedient faith in God through obedient faith in Jesus Christ.
 
@@ -2095,7 +2099,7 @@ We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
 
-Peter obeyed to let Jesus wash him:
+Peter believed/received/obeyed/trusted to let Jesus wash him but it was Jesus doing the work:
 
 > **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
@@ -7414,7 +7418,7 @@ We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
 
-Peter obeyed to let Jesus wash him:
+Peter believed/received/obeyed/trusted to let Jesus wash him but it was Jesus doing the work:
 
 > **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
@@ -7866,7 +7870,7 @@ Because he offered nothing to God through his work other than what was asked of 
 
 Jesus was perfectly faithful to God by being obedient:
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+> **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
 
 > **Romans 9:15-16** - For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
 
@@ -11174,7 +11178,7 @@ We abide in Jesus when He washes us:
 
 > **John 13:8** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
 
-Peter obeyed to let Jesus wash him:
+Peter believed/received/obeyed/trusted to let Jesus wash him but it was Jesus doing the work:
 
 > **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
@@ -15408,7 +15412,7 @@ Remain obedient to Jesus, and do not take vengeance for yourself:
 
 Following Jesus' example of being obedient:
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+> **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
 
 > **Hebrews 5:7-8** - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to **him who was able to save him from death**, and he was heard because of his reverence. Although he was a son, <ins>he learned obedience through what he suffered.</ins> (ESV)
 
@@ -20775,7 +20779,7 @@ Abram did this too. It's a necessary act of faith.
 
 For example, to truly obey God and love / do no harm to one's neighbour involves relieving other's burdens as they ask more from you.
 
-> **Philippians 2:8** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+> **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
 
 Jesus endured the weight of His cross to lighten our burden.
 
