@@ -39,4 +39,4 @@ cat "$rp" | awk 1 >> "${mant}.pl"
 printf -- "%s\n" "$PITA_FOOT" >> "${mant}.pl"
 
 sps -d v "$new_fp"
-nvt x -sh swipl -e "?-" -s "[$mant]." -c m -i
+nvt x -sh swipl -e "?-" -s "[$mant]." -c m -c l -s "prob(,P)." -c a -c f -c f -c f -c f -c f -i

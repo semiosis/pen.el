@@ -44,7 +44,7 @@ Peter obeyed to let Jesus wash him:
 
 > **John 13:9** - Simon Peter said to him, Lord, not my feet only but also my hands and my head! (ESV)
 
-Jesus' servants (people who obey Him) are found **in him**. Jesus' servants are those who have been washed, and they ought to then wash:
+Jesus' servants (people who obey Him) are found **in him**. We self-humble when we obey Jesus. Jesus' servants are those who have been washed, and they ought to then wash:
 
 > **Psalms 34:22** - The LORD redeems the life of his **servants**; none of those who take refuge **in him** will be condemned. (ESV)
 
@@ -223,7 +223,9 @@ not from the ESV, I have almost certainly marked it with the alternative version
 
 -   **Billy Graham really explains this quite well:** [Born Again | Billy Graham Classic - YouTube @time: 10 min 50 sec](https://youtube.com/watch?v=CGS2A1RBo00&t=650)
 
-I believe we are set free from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace - a slave to righteousness.
+I believe we are set free from sin and from being condemned by / under the Mosaic Law to become a slave to Christ Jesus under grace - a slave to righteousness.
+
+> **Romans 6:20** - When you were slaves of sin, you were free in regard to righteousness. (ESV)
 
 > **Romans 8:1-2** - There is therefore now no condemnation for those <ins>who are in Christ Jesus.</ins> For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
@@ -458,7 +460,7 @@ Faith presses on to walk the same way Jesus walked - even to spend the rest of t
 
 ## A person who is really believing in Jesus will do the works of Jesus - they'll produce good works
 
-This doesn't necessarily mean that obedience is nonexistent before good works, as believing in Jesus is obedience, and repentance is obedience and these things are not good works but belief and obedience are better described as simply ending the bad works:
+This doesn't necessarily mean that obedience is nonexistent before good works, as believing in Jesus is obedience, and repentance is obedience and these things are not good works. It is obedient to end (turn away from) the bad works:
 
 > **John 14:12** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
@@ -1060,7 +1062,11 @@ AMEN!!
 
 Justification comes through through the righteousness of living by faith:
 
-> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
+> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall **live by** his faith. (ESV)
+
+We are justified by His grace as a free gift through the redemption that is in Christ Jesus, received by [living by] faith:
+
+> **Romans 3:21-25** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, **through the redemption that is in Christ Jesus**, whom God put forward as a **propitiation** by his blood, to be **received by faith**. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. (ESV)
 
 Even the new believer is not condemned:
 
@@ -1331,6 +1337,14 @@ Likewise, that's the type of selfless love we should have. Selfless love while t
 The purest selfless love loves while not breaking faith with God. Jesus maintained faithfulness to God while maintaining selfless love. We should endeavour to have the same mind:
 
 > **Philippians 2:5-8** - Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, taking the form of a servant, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+
+The Apostle Paul strove to maintain a clear conscience with God:
+
+> **Acts 24:14-16** - But this I confess to you, that according to the Way, which they call a sect, I worship the God of our fathers, believing everything laid down by the Law and written in the Prophets, having a hope in God, which these men themselves accept, that there will be a resurrection of both the just and the unjust. **So I always take pains to have a clear conscience toward both God and man.** (ESV)
+
+Yes, it's very important for Christians to practice righteousness:
+
+> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
 
 We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
 
@@ -6041,7 +6055,7 @@ It's obedience which leads to righteousness, even the righteousness of faith:
 
 > **Romans 6:16** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
-> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall live by his faith. (ESV)
+> **Habakkuk 2:4** - Behold, his soul is puffed up; it is not upright within him, but the righteous shall **live by** his faith. (ESV)
 
 > **II Corinthians 5:7** - for we walk by faith, not by sight. (ESV)
 

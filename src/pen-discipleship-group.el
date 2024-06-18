@@ -16,6 +16,8 @@
   (-select-mod-element hymn-yt-urls week))
 
 ;; e:/volumes/home/shane/notes/d-group-replicate
+;; Show the F260 pdf
+(comment (snc "cd \"/volumes/home/shane/notes/d-group-replicate\"; z Replicate\\ -\\ F260\\ Reading\\ Plan.pdf &"))
 
 ;; It's better to compact the verses than to separate into days
 ;; It's easier to handle them that way.
@@ -77,7 +79,58 @@
           (20 . ("Proverbs 1-4"
                  "Proverbs 16-18"
                  "Proverbs 31"
-                 "I Kings 11-12"))))
+                 "I Kings 11-12"))
+          (21 . ("I Kings 16:29-34"
+                 "I Kings 17"
+                 "II Kings 2"
+                 "II Kings 5"
+                 "II Kings 6:1-23"))
+          (22 . ("Jonah 1-4"
+                 "Hosea 1-3"
+                 "Amos 1:1"
+                 "Amos 9"
+                 "Joel 1-3"))
+          (23 . ("Isaiah 6"
+                 "Isaiah 9"
+                 "Isaiah 44-45"
+                 "Isaiah 52-53"
+                 "Isaiah 65-66"
+                 "Micah 1"
+                 "Micah 4:6-13"
+                 "Micah 5"))
+          (24 . ("II Kings 17-18"
+                 "II Kings 19-21"
+                 "II Kings 22-23"
+                 "Jeremiah 1-2"
+                 "Jeremiah 3:1-5"
+                 "Jeremiah 25"
+                 "Jeremiah 29"))
+          (25 . ("Jeremiah 31:31-40"
+                 "Jeremiah 32-33"
+                 "Jeremiah 52"
+                 "II Kings 24-25"
+                 "Ezekiel 1:1-3"
+                 "Ezekiel 36:16-38"
+                 "Ezekiel 37"
+                 "Daniel 1-2"
+                 "Daniel 3-4"))
+          (26 . ("Daniel 5-6"
+                 "Daniel 9-10"
+                 "Daniel 12"
+                 "Ezra 1-2"
+                 "Ezra 3-4"
+                 "Ezra 5-6"))
+          (27 . ("Zechariah 1:1-6"
+                 "Zechariah 2"
+                 "Zechariah 12"
+                 "Ezra 7-8"
+                 "Ezra 9-10"
+                 "Esther 1-2"
+                 "Esther 3-4"))
+          (28 . ("Esther 5-7"
+                 "Esther 8-10"
+                 "Nehemiah 3-4"
+                 "Nehemiah 5-6"))))
 
 (defset d-group-weekly-readings-ot260
         '((1 . ("Genesis 1-6"
