@@ -247,7 +247,7 @@ And brought into doing the will of God:
 
 > **Romans 15:17-18** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
 
-We have confidence when keep His commandments, believing in the name of God's Son Jesus Christ and loving one another:
+We have confidence when we keep His commandments, believing in the name of God's Son Jesus Christ and loving one another and our heart doesn't condemn us:
 
 > **I John 3:21-24** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
@@ -11218,6 +11218,10 @@ Being washed, we ought to wash one another's feet:
 
 > **I Timothy 5:9-10** - Let a widow be enrolled if she is not less than sixty years of age, having been the wife of one husband, and having a reputation for good works: if she has brought up children, has shown hospitality, has washed the feet of the saints, has cared for the afflicted, and has devoted herself to every good work. (ESV)
 
+Correct others with gentleness:
+
+> **II Timothy 2:24-26** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will. (ESV)
+
 
 ## Entering into life / the Kingdom of Heaven
 
@@ -14335,7 +14339,23 @@ Abraham was 10 years older than Sarah!
 
 > **Genesis 17:17** - Then Abraham fell on his face and laughed and said to himself, Shall a child be born to a man who is a hundred years old? Shall Sarah, who is ninety years old, bear a child? (ESV)
 
-I'm not saying that the only reason my own relationships have not worked out for me is because of evil spirits, but I feel like I have had very obvious spiritual resistance a lot of the time, for whatever reason. Maybe I've had trouble because in the past I have had trouble with pornography, but probably the bigger reason is I have been trying to follow Jesus' commandments.
+I feel like I have had very obvious spiritual resistance a lot of the time, for whatever reason. Maybe I've had trouble because in the past I have had trouble with pornography:
+
+> **Colossians 1:13-14** - He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son, in whom we have redemption, the forgiveness of sins. (ESV)
+
+Light and darkness do not gel:
+
+> **I Corinthians 10:21** - You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons. (ESV)
+
+> **I Corinthians 9:5** - Do we not have the right to take along a believing wife, as do the other apostles and the brothers of the Lord and Cephas? (ESV)
+
+> **II Corinthians 6:14** - Do not be unequally yoked with unbelievers. For what partnership has righteousness with lawlessness? Or what fellowship has light with darkness? (ESV)
+
+Another reason would be that there is resistance to be expected when wanting to live faithfully to God in Christ, and I was **being saved**, and the devil didn't want me to be saved, and wanted to keep me in darkness, and in hopelessness, and not in the freedom of Jesus' Spirit:
+
+> **II Timothy 3:12** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, (ESV)
+
+> **Romans 15:13** - May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope. (ESV)
 
 I feel like sometimes demon spirits deny relationships that would be good:
 
@@ -14353,6 +14373,10 @@ And as far as forsaking God's precepts for
 worldly precepts go, the truth is that while
 in God's favour, God provides, and we
 cooperate with God by working, etc.
+
+> **Psalms 66:18** - If I had cherished iniquity in my heart, the Lord would not have listened. (ESV)
+
+> **II Corinthians 5:21-6:1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 But if God doesn't want you to get a job at a
 particular time, you wont get a job, etc. and that goes for other things such as relationships.
@@ -19898,21 +19922,27 @@ So I'd say if a person's heart is not totally hard, then soften it.
 
 A heart not easy to be moved with virtuous affections:
 
--   **Deuteronomy 15:7** - If among you, one of your brothers should become poor, in any of your towns within your land that the Lord your God is giving you, you shall not harden your heart or shut your hand against your poor brother, (ESV)
--   **Mark 3:4-5** - And He said to them, “Is it lawful to do good or to do harm on the Sabbath, to save a life or to kill?” But they kept silent. After looking around at them with anger, grieved at their hardness of heart, He said to the man, “Stretch out your hand.” And he stretched it out, and his hand was restored. (ESV)
--   [Do I Have a Hard Heart? - YouTube](https://www.youtube.com/watch?v=JaMVzW9yiBc)
--   **Mark 8:17** - And Jesus, aware of this, said to them, Why are you discussing the fact that you have no bread? Do you not yet perceive or understand? Are your hearts hardened? (ESV)
--   **II Chronicles 36:12-13** - He did what was evil in the sight of the Lord his God. He did not humble himself before Jeremiah the prophet, who spoke from the mouth of the Lord. He also rebelled against King Nebuchadnezzar, who had made him swear by God. He stiffened his neck and hardened his heart against turning to the Lord, the God of Israel. (ESV)
--   **Romans 2:4** - Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? (ESV)
--   **Zechariah 7:12** - They made their hearts diamond-hard lest they should hear the law and the words that the Lord of hosts had sent by his Spirit through the former prophets. Therefore great anger came from the Lord of hosts. (ESV)
+> **Deuteronomy 15:7** - If among you, one of your brothers should become poor, in any of your towns within your land that the Lord your God is giving you, you shall not harden your heart or shut your hand against your poor brother, (ESV)
+
+> **Mark 3:4-5** - And He said to them, “Is it lawful to do good or to do harm on the Sabbath, to save a life or to kill?” But they kept silent. After looking around at them with anger, grieved at their hardness of heart, He said to the man, “Stretch out your hand.” And he stretched it out, and his hand was restored. (ESV)
+
+-   **Sermon:** [youtube.com: Do I Have a Hard Heart?](https://www.youtube.com/watch?v=JaMVzW9yiBc)
+
+> **Mark 8:17** - And Jesus, aware of this, said to them, Why are you discussing the fact that you have no bread? Do you not yet perceive or understand? Are your hearts hardened? (ESV)
+
+> **II Chronicles 36:12-13** - He did what was evil in the sight of the Lord his God. He did not humble himself before Jeremiah the prophet, who spoke from the mouth of the Lord. He also rebelled against King Nebuchadnezzar, who had made him swear by God. He stiffened his neck and hardened his heart against turning to the Lord, the God of Israel. (ESV)
+
+> **Romans 2:4** - Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? (ESV)
+
+> **Zechariah 7:12** - They made their hearts diamond-hard lest they should hear the law and the words that the Lord of hosts had sent by his Spirit through the former prophets. Therefore great anger came from the Lord of hosts. (ESV)
 
 If we have a hard heart, we should ask for a new one:
 
--   **Ezekiel 36:26** - And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh.
+> **Ezekiel 36:26** - And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh.
 
-Don't let your heart go hard - find a community of encouraging believers:
+Don't let your heart go hard - find a community of encouraging believers - this place looks cool: <https://www.youtube.com/@jesusimage>:
 
--   **Hebrews 3:13** - But exhort one another every day, as long as it is called today, that none of you may be hardened by the deceitfulness of sin.
+> **Hebrews 3:13** - But exhort one another every day, as long as it is called today, that none of you may be hardened by the deceitfulness of sin.
 
 > **Acts 13:46-48** - And Paul and Barnabas spoke out boldly, saying, It was necessary that the word of God be spoken first to you.  Since you thrust it aside and **judge yourselves unworthy** of eternal life, behold, we are turning to the Gentiles.  For so the Lord has commanded us, saying, I have made you a light for the Gentiles, that you may bring salvation to the ends of the earth.  And when the Gentiles heard this, they began rejoicing and glorifying the word of the Lord, and as many as were appointed to eternal life believed. (ESV)
 
