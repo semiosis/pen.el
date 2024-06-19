@@ -13089,45 +13089,6 @@ The persecution is for the cross of Christ - the offense of the cross:
 > **Matthew 5:3-9** - Blessed are the poor in spirit, for theirs is the kingdom of heaven.
 
 
-## Rejoicing with all the slander which has come against me has not been easy
-
-> **Matthew 5:11-13**  Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet.
-
-It was easy at first to rejoice but the spiritual attack I've faced is intolerable, and we are supposed to use the word of God to combat these things.
-And I document it here for others' understanding.
-
-Surely God has some greater purpose surrounding why I've had to endure near ceaseless spiritual attack,
-and being treated like garbage from worldly Christians, and through the press.
-
-
-### The snowballing slander against me will ultimately fail and I'll be vindicated at the right time in this life or the next
-
-> **Isaiah 54:17** - no weapon that is fashioned against you shall succeed, and you shall confute every tongue that rises against you in judgment. This is the heritage of the servants of the LORD and their vindication from me, declares the LORD. (ESV)
-
--   [This Fierce Battle You're Facing - YouTube](https://www.youtube.com/watch?v=0XB_lNr3TXw)
-
-And the spiritual attack has been awful - this person knows it:
-
--   [Do not be angry. God said, "It had to happen." #propheticword - YouTube @time: 5 min 52 sec](https://youtube.com/watch?v=bA7LBhO7Q_E&t=352)
-
-> **I Timothy 4:2-5** - through the insincerity of liars whose consciences are seared, who forbid marriage and require abstinence from foods that God created to be received with thanksgiving by those who believe and know the truth. For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving, for it is made holy by the word of God and prayer. (ESV)
-
-In recent times, daily I have felt this way:
-
-> **Psalms 22:1** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
-
-But I know my true adversaries are evil spirits, not the people who took me to court after I got born-again:
-a
-
-> **Ephesians 6:12** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
-
-I don't expect everybody to understand, but having been born-again I was very much aware throughout the process that "the conflict was spiritual":
-
-> **I Corinthians 2:14** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
-
--   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
-
-
 # The Kingdom of God
 
 After I got born-again I started getting dreams with themes of the 'Kingdom of God', and also through interactions I began having with people, while I was pursuing following Jesus' commandments, etc. So my 'evidence' is a personal conviction that comes through faith in Jesus which has been working.
@@ -17253,9 +17214,11 @@ We should be able to see the transformation described in the sermon of the mount
 
 &#x2014;
 
-> **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+> **Matthew 5:11-13** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet. (ESV)
 
 -   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
+
+-   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
 
 &#x2014;
 
@@ -18196,7 +18159,7 @@ Come and follow Jesus and allow Him to make you into a fisher of men:
 
 Rejoice when you're persecuted in Jesus' name:
 
-> **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+> **Matthew 5:11-13** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet. (ESV)
 
 Let your light shine before all people:
 
@@ -18408,7 +18371,7 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
 
 ### Rejoice when persecuted, and slandered on Jesus' account
 
-> **Matthew 5:11-12** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+> **Matthew 5:11-13** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the salt of the earth, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet. (ESV)
 
 Following Jesus:
 
