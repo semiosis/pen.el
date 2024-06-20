@@ -1352,7 +1352,7 @@ The Apostle Paul strove to maintain a clear conscience with God:
 
 Yes, it's very important for Christians to practice righteousness:
 
-> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+> **I John 3:7** - Little children, let no one deceive you. **Whoever practices righteousness is righteous, as he is righteous**. (ESV)
 
 We are commanded to be innocent, and to bear witness of Jesus before men who persecute us:
 
@@ -3360,13 +3360,15 @@ The ones who are slaves to righteousness, following Jesus Christ, go to eternal 
 
 ### Believing Jesus, we have **the right** to become a child of God
 
+-   **Song:** [youtube.com: Who You Say I Am - Hillsong Worship](https://www.youtube.com/watch?v=lKw6uqtGFfo&list=RDGMEMMib4QpREwENw3_jAc0YgNwVMdhU-Omwg2rU&index=5)
+
 Receive Jesus, believing in His name:
 
 > **John 1:12** - But to all who did receive him, who believed in his name, he gave the right to become children of God, (ESV)
 
-> **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: **whoever does not practice righteousness is not of God**, nor is the one who does not love his brother. (ESV)
-
 **The children of God are the ones who love other children of God by following God's commandments:**
+
+> **I John 3:10** - By this it is evident who are the children of God, and who are the children of the devil: **whoever does not practice righteousness is not of God**, nor is the one who does not love his brother. (ESV)
 
 > **I John 5:2** - By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
 
@@ -3380,9 +3382,11 @@ Receive Jesus, believing in His name:
 
 > **Philippians 2:15** - that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, (ESV)
 
-> **I John 3:18** - Little children, let us not love in word or talk but in deed and in truth. (ESV)
+> **I John 3:18** - Little children, let us not **love** in word or talk but **in deed and in truth**. (ESV)
 
-> **I John 3:7** - Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. (ESV)
+Children look like their Father:
+
+> **I John 3:7** - Little children, let no one deceive you. **Whoever practices righteousness is righteous, as he is righteous**. (ESV)
 
 > **II John 1:4** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. (ESV)
 
@@ -3435,6 +3439,8 @@ We want to abide in God's love through following Jesus' commandments, and then n
 God draws the person to Jesus:
 
 > **John 6:44-46** - No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. (ESV)
+
+-   **Song:** [youtube.com: Draw Me Close | feat. Michael Bethany | Gateway Worship](https://www.youtube.com/watch?v=fQNm75ZglgQ&list=RDyN1RZBxXX_I&index=8)
 
 Jesus said He will not cast people out <ins>who have come to Him</ins>, and it's His sheep who come to Him, those who follow Him:
 
@@ -6644,6 +6650,10 @@ Eternal judgement:
     We should not live a double-life.
     We should not deny in our private life what we preach in public.
     
+    Serving Christ means doing the will of God **from the heart**, in truth, seeking to please God who sees everything even done in private:
+    
+    > **Ephesians 6:5-8** - Slaves, obey your earthly masters with fear and trembling, with a sincere heart, **as you would Christ, not by the way of eye-service**, as people-pleasers, **but as servants of Christ, doing the will of God from the heart**, rendering service with a good will as to the Lord and not to man, knowing that whatever good anyone does, this he will receive back from the Lord, whether he is a slave or free. (ESV)
+    
     I'm not a perfect person. I'm writing this document as I am learning, and interpreting as I go.
     And I am trying to clean myself up in my own private life.
 
@@ -6672,6 +6682,10 @@ Jesus implies you must obey Him (Jesus) to be part of His family:
 Love Jesus (being obedient to Him) **and** believe that He came from God:
 
 > **John 16:25-27**- I have said these things to you in figures of speech. The hour is coming when I will no longer speak to you in figures of speech but will tell you plainly about the Father. In that day you will ask in my name, and I do not say to you that I will ask the Father on your behalf; for the Father himself loves you, because you have loved me and have believed that I came from God.
+
+Doing the will of God from the heart means obedience, and integrity and seeking to please God:
+
+> **Ephesians 6:5-8** - Slaves, obey your earthly masters with fear and trembling, with a sincere heart, **as you would Christ, not by the way of eye-service**, as people-pleasers, **but as servants of Christ, doing the will of God from the heart**, rendering service with a good will as to the Lord and not to man, knowing that whatever good anyone does, this he will receive back from the Lord, whether he is a slave or free. (ESV)
 
 
 ## The obedient children are the ones who are not conformed to the passions of our former ignorance
@@ -8565,6 +8579,8 @@ done in obedience is nothing to boast about because it is God who gives us instr
     3   from 1342; to render (i.e. show or regard as) just or innocent:--free,
     4   justify(-ier), be righteous.
     5   see GREEK for 1342
+
+-   **Read:** <https://www.hopefaithprayer.com/rahab-harlot-genealogy-christ/>
 
 Since it's faith in Him who raised from the dead Jesus our Lord that matters for justification, those who trust and obey God out of obedient faith are justified:
 
@@ -14802,17 +14818,25 @@ Also, I think eternal life is for those who:
 -   b) obey Jesus and become a bondservant of God.
 
 
-### Sanctification (turning from sin, etc.) is essential for eternal life
+### Sanctification (turning from sin, etc.) is essential for inheriting the kingdom and eternal life
 
 > **Romans 6:22** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life.
 
 This is my current understanding. So most likely it is not tolerated in the kingdom of God.
 
-I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, but that doesn't mean they inherit the Kingdom.
+I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, and receive eternal life, but I think repentance from sin and sanctification are quite important for inheriting the Kingdom.
 
 > **I Corinthians 6:9-10** - Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
 
 > **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God**. (ESV)
+
+Believers have eternal life and are not condemned:
+
+> **John 5:24** - Truly, truly, I say to you, whoever hears my word and believes him who sent me has eternal life. He does not come into judgment, but has passed from death to life. (ESV)
+
+All who have believed will marvel:
+
+> **II Thessalonians 1:9-12** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
 
 But faith requires obedience, and salvation requires turning from sin.
 
@@ -14835,6 +14859,8 @@ mercy and faithfulness, gay 'marriage' would be totally unjustifiable.
 Judgment is without mercy to one who has shown no mercy. Mercy triumphs over judgment.
 
 God, please have mercy. I repent from all sexual immorality, and from endorsing it.
+
+> **John 8:7-11** - And as they continued to ask him, he stood up and said to them, Let him who is without sin among you be the first to throw a stone at her. And once more he bent down and wrote on the ground. But when they heard it, they went away one by one, beginning with the older ones, and Jesus was left alone with the woman standing before him. Jesus stood up and said to her, Woman, where are they? Has no one condemned you? She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and **from now on sin no more**.]] (ESV)
 
 
 ### Without following Jesus Christ's commandments, gay 'marriage' would never be justifiable
@@ -21893,6 +21919,10 @@ But I have to keep seeking to be sanctified because Jesus is coming for me at so
 Personal righteousness (holiness and 'doing good') is still extremely important for **inheriting** the kingdom of God:
 
 > **I Corinthians 6:9-10** - Do you not know that **the unrighteous will not inherit the kingdom of God**? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
+
+Doing the will of God is important for **inheriting** the kingdom of God:
+
+> **Matthew 25:23** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
 The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me
