@@ -5246,6 +5246,8 @@ We must obey! This obedience is being led by the Spirit.
     
     > **Philippians 3:2-3** - Look out for the dogs, look out for the evildoers, look out for those who mutilate the flesh. For we are the real circumcision, who worship by the Spirit of God and glory in Christ Jesus and put no confidence in the flesh— (ESV)
     
+    > **Hebrews 12:28-29** - Therefore let us be grateful for receiving a kingdom that cannot be shaken, and thus let us offer to God acceptable worship, with reverence and awe, for our God is a consuming fire. (ESV)
+    
     Paul says that pursuing the righteousness that is by Mosaic law, is placing confidence in the flesh:
     
     > **Philippians 3:4-7** - though I myself have reason for confidence in the flesh also. If anyone else thinks he has reason for confidence in the flesh, I have more: circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; as to the law, a Pharisee; as to zeal, a persecutor of the church; as to righteousness, under the law blameless. But whatever gain I had, I counted as loss for the sake of Christ. (ESV)
@@ -7288,8 +7290,6 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     Definitely stop sinning after receiving the knowledge of the truth:
     
     > **Hebrews 10:26-29** - For if we go on sinning deliberately **after receiving the knowledge of the truth**, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has outraged the Spirit of grace? (ESV)
-    
-    > **Hebrews 10:16-18** - This is the covenant that I will make with them after those days, declares the Lord: I will put my laws on their hearts, and write them on their minds, then he adds, I will remember their sins and their lawless deeds no more. Where there is forgiveness of these, there is no longer any offering for sin.
     
     To **know** if Jesus' teaching comes from God, one must desire to do God's will.
     
@@ -13895,6 +13895,10 @@ We should be more confident with the light!
 
 > **Hebrews 10:1** - For since the law has but a shadow of the good things to come instead of the true form of these realities, it can never, by the same sacrifices that are continually offered every year, make perfect those who draw near. (ESV)
 
+Jesus' sacrifice is comprehensive:
+
+> **Hebrews 10:16-18** - This is the covenant that I will make with them after those days, declares the Lord: I will put my laws on their hearts, and write them on their minds, then he adds, I will remember their sins and their lawless deeds no more. Where there is forgiveness of these, there is no longer any offering for sin.
+
 > **Hebrews 10:14** - For by a single offering he has perfected for all time those who are being sanctified. (ESV)
 
 > **Hebrews 9:9** - (which is symbolic for the present age). According to this arrangement, gifts and sacrifices are offered that cannot perfect the conscience of the worshiper, (ESV)
@@ -14147,17 +14151,17 @@ works! But Jesus did say:
 > **Ephesians 4:4-5** - There is one body and one Spirit—just as you were called to the one hope that belongs to your call— one Lord, one faith, one baptism, (ESV)
 
 
-# Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
+# Can other religions exist anywhere in the Kingdom of God? They have to put their faith in and follow Jesus
+
+It's not really the religion but the person who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
 > **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
+
+Also, no-one can save themself from eternal damnation - it's only the blood of Jesus which can.
 
 The words Jesus Christ spoke were **altogether** a commandment of eternal life which Father God had given Jesus to speak:
 
 > **John 12:49-50** - For **I have not spoken on my own authority, but the Father who sent me has himself given me a commandment—what to say and what to speak**. And I know that his commandment is eternal life. What I say, therefore, I say as the Father has told me. (ESV)
-
-It's not really the religion but the person who puts their faith in Jesus and **obeys** the gospel who will be saved.
-
-Also, no-one can save themself from eternal damnation - it's only the blood of Jesus which can.
 
 It is all by God's grace that we are saved. A believing and obedient heart is a trusting heart - a heart of faith - and our obedience gives us confidence. All glory to God alone. We must obey Jesus to become like Jesus:
 
@@ -14222,7 +14226,7 @@ Jesus goes to those who hear His voice to bring them into His flock:
 Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
 
 
-### Not all religions are equal. There is only one true God, the <ins>Father of Jesus Christ who has **revealed Himself** in Jesus Christ</ins>
+## Not all religions are equal. There is only one true God, the <ins>Father of Jesus Christ who has **revealed Himself** in Jesus Christ</ins>
 
 > **Ignatius to the Magnesians 8** - Be not deceived with *strange doctrines*, nor with *old fables*, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is **one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word**, not proceeding forth from silence, and who in all things pleased Him that sent Him.
 
@@ -20800,6 +20804,10 @@ As Jesus came in His Father's name, and spoke His Father's words,
 
 > **John 14:26** - But the Helper, **the Holy Spirit**, whom the Father will send in my name, <ins>he</ins> will teach you all things and bring to your remembrance all that I have said to you.
 
+The following verse was brought to my mind as I was sleeping:
+
+> **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
+
 
 ### Jesus is Immanuel, God with us
 
@@ -22386,6 +22394,8 @@ By God's grace I've been set free from sin, and brought into a relationship with
 
 -   **Sermon:** [His Voice in Yours: How Christ Wins the World - YouTube](https://www.youtube.com/watch?v=fYJ1oFqSgv4)
 
+> **Revelation of John 14:7** - And he said with a loud voice, **Fear God and give him glory**, because the hour of his judgment has come, and worship him who made heaven and earth, the sea and the springs of water. (ESV)
+
 > **Matthew 13:45-52** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. Again, the kingdom of heaven is like a net that was thrown into the sea and gathered fish of every kind. When it was full, men drew it ashore and sat down and sorted the good into containers but threw away the bad. So it will be at the close of the age. <ins>The angels will come out and separate the evil from the righteous and throw them into the fiery furnace.</ins> In that place there will be weeping and gnashing of teeth. Have you understood all these things? They said to him, Yes. And he said to them, Therefore every scribe who has been trained for the kingdom of heaven is like a master of a house, who brings out of his treasure what is new and what is old.
 
 God is not saving Lucifer/Satan/the devil or his demons/devils. They're all going to hell forever. Amen to that:
@@ -22493,9 +22503,6 @@ It should be:
 -   In obedience to the Word of God
 -   Working in the power of **the Holy Spirit**
 
--   **Medley:** [youtube.com: God And God Alone {Gospel Medley}](https://www.youtube.com/watch?v=yN1RZBxXX_I)
--   **Medley:** [youtube.com: Holy Are You Lord Medley | Jesus Image](https://www.youtube.com/watch?v=8xs_wiKWZuc)
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -22519,6 +22526,9 @@ It should be:
 </tbody>
 </table>
 
+-   **Medley:** [youtube.com: God And God Alone {Gospel Medley}](https://www.youtube.com/watch?v=yN1RZBxXX_I)
+-   **Medley:** [youtube.com: Holy Are You Lord Medley | Jesus Image](https://www.youtube.com/watch?v=8xs_wiKWZuc)
+-   **Song:** [youtube.com: All Honor {Consuming Fire} | Jesus Image](https://www.youtube.com/watch?v=DeHWWK3Vmnk)
 -   **Song:** [youtube.com: Praise {feat. Brandon Lake, Chris Brown & Chandler Moore} | Elevation Worship](https://www.youtube.com/watch?v=f2oxGYpuLkw)
 
 > **Isaiah 64:4** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, who acts for those who wait for him. (ESV)
