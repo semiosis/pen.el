@@ -41,9 +41,11 @@ Because God loved us first:
 
 > **Philippians 3:9-13** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
-It's <ins>perfect</ins> self-humbling obedience without committing sin which only Jesus Christ managed to reach, was able to reach and was destined to reach:
+It's <ins>perfect</ins> self-humbling obedience throughout His sinless life as He walked the earth in the flesh that only Jesus Christ has reached, was able to reach and was destined to reach:
 
 > **Philippians 2:8** - And being found in human form, <ins>he **humbled himself** by becoming **obedient** to the point of death, even death on a cross.</ins> (ESV)
+
+> **I Corinthians 15:45** - Thus it is written, The first man Adam became a living being; the last Adam became a life-giving spirit. (ESV)
 
 We abide in Jesus when He washes us:
 
@@ -73,7 +75,7 @@ Jesus follows us and supports us:
 
 > **I Corinthians 10:4** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and the Rock was Christ. (ESV)
 
-Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to be conformed to His image. God's strength does not a guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
+Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to be conformed to His image. God's strength does not guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
 
 > **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
@@ -156,7 +158,7 @@ Jesus will serve His servants who are awake:
     12  5 Eph. 2:1,5
     13  6 Titus 3:3–5; John 6:44
 
-I don't **entirely** agree with this paragraph saying all ability of will is lost. But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
+I don't **entirely** agree with this paragraph saying all ability of will is lost (I could be wrong). But I do believe that without God's assistance in drawing us to Jesus, it is impossible for us to be saved.
 
 > **Isaiah 1:19** - If you are willing and obedient, you shall eat the good of the land; (ESV)
 
@@ -406,6 +408,10 @@ We live through the life of Jesus in this intellectual and experiential knowledg
 
 > **I John 4:8-11** - Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might **live through him**. In **this is love**, <ins>not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.</ins> Beloved, if God so loved us, we also ought to love one another.
 
+Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
+
+> **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
+
 We should labor for the food that endures to eternal life:
 
 > **John 6:27** - Do not labor for the food that perishes, but for the food that endures to eternal life, which the Son of Man will give to you. For on him God the Father has set his seal. (ESV)
@@ -463,6 +469,8 @@ Belief (in the heart) that Jesus is the Son of God leads to:
     -   God's commandments are not burdensome
 
 > **I John 5:3-5** - For this is the love of God, that **we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world.** And this is the victory that has overcome the world—our faith. **Who is it that overcomes the world except the one who believes that Jesus is the Son of God?** (ESV)
+
+-   **Song:** [youtube.com: Pat Barrett - Build My Life {feat. Chris Tomlin} {Live}](https://www.youtube.com/watch?v=Z32HiCoFzlU&list=RD0cnEDUMfPXs&index=4)
 
 
 ## Experiential heart belief through obedience
@@ -750,7 +758,8 @@ Like the:
 
 -   Israelites walking through the Red Sea, or
 -   Noah building the ark, or
--   The lame man standing up to be healed
+-   The lame man standing up to be healed, or
+-   Peter allowing Jesus to wash his feet
 
 Obedience to the gospel leads to eternal salvation. I believe obedience should arrive at belief, and belief should yield obedience, and **knowledge**.
 
@@ -1021,6 +1030,10 @@ Eternal life is given to anyone who believes in Him. I guess there are simply [s
 
 > **John 6:47** - Truly, truly, I say to you, whoever believes has eternal life. (ESV)
 
+God commanded eternal life for those who believe: God's word never comes back void:
+
+> **Isaiah 55:11** - so shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose, and shall succeed in the thing for which I sent it. (ESV)
+
 In this current time (world) we may receive more than we lose for the sake of the kingdom, and eternal life is also received in the age to come:
 
 > **Luke 18:29-30** - And he said to them, Truly, I say to you, there is no one who has left house or wife or brothers or parents or children, for the sake of the kingdom of God, who will not receive many times more in this time, and **in the age to come eternal life**. (ESV)
@@ -1029,16 +1042,47 @@ I do not affirm all religions. But I affirm **Romans 10:9**. I affirm that indiv
 
 > **Romans 10:9** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
+Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
+
+From our perspective it may look like things are **still being brought into subjection to Him**:
+
+> **Ephesians 1:22** - And he put all things under his feet and gave him as head over all things to the church,
+
+> **Hebrews 2:5-8** - Now it was not to angels that God subjected the world to come, of which we are speaking. It has been testified somewhere, What is man, that you are mindful of him, or the son of man, that you care for him? You made him for a little while lower than the angels; you have crowned him with glory and honor, putting everything in subjection under his feet. Now in putting **everything in subjection to him**, <ins>he left nothing outside his control</ins>. At present, we do not yet see everything in subjection to him.
+
+Everything is put in subjection under Jesus and in subjection under Father God:
+
+> **I Corinthians 15:24-28** - Then comes the end, when he delivers the kingdom to God the Father after destroying every rule and every authority and power. For he must reign until he has put **all his enemies under his feet. The last enemy to be destroyed is death.** For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.
+
+Including our own mortal bodies!
+
+> **Philippians 3:21** - who will transform our lowly body to be like his glorious body, by the power that enables him even to subject all things to himself. (ESV)
+
 Consider that in truthfully confessing that Jesus is Lord, that person has faith **in** Jesus,
 and in believing in their heart that God raised Him from the dead,
 that person has faith **in** God even in the matter that Jesus was resurrected, even for our justification.
 So it's faith not only in the finished work of Christ on the cross, but faith in Jesus Himself.
+
 That's important in my opinion because we must trust Jesus Himself to follow Him, to love Him, to keep His words,
 to keep His commandments, to keep our eyes on Him, to abide by His teaching.
 
 And out of the heart should flow rivers of living water. Now that re-emphasises that belief should be in the heart:
 
 > **John 7:38** - Whoever believes in me, as the Scripture has said, Out of his heart will flow rivers of living water. (ESV)
+
+Walk as an imitator of Christ:
+
+> **Philippians 3:17-18** - Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. For many, of whom I have often told you and now tell you even with tears, walk as enemies of the cross of Christ. (ESV)
+
+> **I Corinthians 11:1** - Be imitators of me, as I am of Christ. (ESV)
+
+Do not be an enemy of the cross of Christ, submit to the righteousness of God - we needed Jehovah God, Father of Jesus Christ, to pay for our sin - and we must imitate Christ, passing forward Christ's love and forgiving as we have been forgiven, and repenting from sin:
+
+> **Hebrews 13:7** - Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith. (ESV)
+
+> **III John 1:11** - Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
+
+> **Jude 1:4** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
 
 
 ### We are saved by grace through faith in Jesus Christ
@@ -2276,6 +2320,8 @@ It's God's grace that enables us to be saved through faith. While we are saved e
 > **Ephesians 2:8** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, (ESV)
 
 > **John 6:68** - Simon Peter answered him, Lord, to whom shall we go? You have the words of eternal life, (ESV)
+
+-   **Song:** [youtube.com: Show Us Christ - Sovereign Grace](https://www.youtube.com/watch?v=uLIi5SAVMRw&list=RD0cnEDUMfPXs&index=14)
 
 > **Romans 10:17** - So faith comes from hearing, and **hearing through the word of Christ.** (ESV)
 
@@ -11626,7 +11672,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
     
-    From our perspective it may look like things are still being brought into subjection to Him:
+    From our perspective it may look like things are **still being brought into subjection to Him**:
     
     > **John 16:33** - I have said these things to you, that in me you may have peace.  In the world you will have tribulation.  But take heart; I have overcome the world.  (ESV)
     
@@ -11668,7 +11714,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
     
-    From our perspective it may look like things are still being brought into subjection to Him:
+    From our perspective it may look like things are **still being brought into subjection to Him**:
     
     > **Ephesians 1:22** - And he put all things under his feet and gave him as head over all things to the church,
     
@@ -11676,7 +11722,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     Everything is put in subjection under Jesus and in subjection under Father God:
     
-    > **I Corinthians 15:24-28** - Then comes the end, when he delivers the kingdom to God the Father after destroying every rule and every authority and power. For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.
+    > **I Corinthians 15:24-28** - Then comes the end, when he delivers the kingdom to God the Father after destroying every rule and every authority and power. For he must reign until he has put **all his enemies under his feet. The last enemy to be destroyed is death.** For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.
     
     -   **Song:** [Victor's Crown - Darlene Zschech {Official Live Video} - YouTube](https://www.youtube.com/watch?v=_2nBOGA6X2g&list=RDurnl_qYQ9l0&index=3)
 
@@ -13462,14 +13508,13 @@ The law certainly still exists:
 
 > **Romans 13:10** - Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
 
-
-## [The Epistle of Ignatius to the Magnesians](http://persweb.wabash.edu/facstaff/royaltyr/AncientCities/web/bradleyj/Project%201/The%20Epistle%20of%20Ignatius%20to%20the%20Magnesians.htm)
+-   **Read:** [The Epistle of Ignatius to the Magnesians](http://persweb.wabash.edu/facstaff/royaltyr/AncientCities/web/bradleyj/Project%201/The%20Epistle%20of%20Ignatius%20to%20the%20Magnesians.htm)
 
 But Christians are not <ins>under</ins> the law while we are led by the Spirit:
 
-> **Ignatius to the Magnesians 8** - Be not deceived with strange doctrines, nor with old fables, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is **one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word**, not proceeding forth from silence, and who in all things pleased Him that sent Him.
+> **Ignatius to the Magnesians 8** - Be not deceived with *strange doctrines*, nor with *old fables*, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is **one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word**, not proceeding forth from silence, and who in all things pleased Him that sent Him.
 
-**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law, but we are bearing one another's burdens impartially and not harming our neighbour, and we are not allowing sin to reign in our mortal bodies. Inheriting the Kingdom of God is for those who abide by God's law, and conform to Christ's image, and do not allow sin to reign in their mortal body:
+**If** we are led by the spirit (if we're serving Jesus Christ, seeking justification through faith in Jesus Christ) then we are not under the Mosaic law, but we are trying to bear one another's burdens without partiality and seeking to not harming our neighbour, and we are seeking to not allowing sin to reign in our mortal bodies. Inheriting the Kingdom of God is for those who abide by God's law, and conform to Christ's image, and do not allow sin to reign in their mortal body:
 
 > **Galatians 5:18-21** - But **if** you are led by the Spirit, you are not under the law. Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God.** (ESV)
 
@@ -14146,9 +14191,12 @@ Jesus goes to those who hear His voice to bring them into His flock:
 
 Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
 
-Not all religions are equal. There is only one true God, the Father of Jesus Christ who has revealed Himself in Jesus Christ.
 
-The only way is Jesus:
+### Not all religions are equal. There is only one true God, the <ins>Father of Jesus Christ who has **revealed Himself** in Jesus Christ</ins>
+
+> **Ignatius to the Magnesians 8** - Be not deceived with *strange doctrines*, nor with *old fables*, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is **one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word**, not proceeding forth from silence, and who in all things pleased Him that sent Him.
+
+The **only way** to Father God is through Jesus:
 
 > **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 
@@ -20746,7 +20794,7 @@ As Jesus came in His Father's name, and spoke His Father's words,
 > **John 14:26** - But the Helper, **the Holy Spirit**, whom the Father will send in my name, <ins>he</ins> will teach you all things and bring to your remembrance all that I have said to you.
 
 
-### Jesus is God with us
+### Jesus is Immanuel, God with us
 
 > **Matthew 1:18-25** - Now the birth of Jesus Christ took place in this way. When his mother Mary had been betrothed to Joseph, before they came together she was found to be <ins>with child from **the Holy Spirit**.</ins> And her husband Joseph, being a just man and unwilling to put her to shame, resolved to divorce her quietly. But as he considered these things, behold, an angel of the Lord appeared to him in a dream, saying, Joseph, son of David, do not fear to take Mary as your wife, for that which is conceived in her is from **the Holy Spirit**. She will bear a son, and you shall call his name Jesus, for he will save his people from their sins. All this took place to fulfill what the Lord had spoken by the prophet: Behold, the virgin shall conceive and bear a son, and <ins>they shall call his name Immanuel (which means, God with us)</ins>. When Joseph woke from sleep, he did as the angel of the Lord commanded him: he took his wife, but knew her not until she had given birth to a son. And he called his name Jesus. (ESV)
 
@@ -21871,7 +21919,7 @@ And we are called to love with Christ's love impartially, so had the court situa
 
 > **James 2:8-9** - If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. But if you show partiality, you are committing sin and are convicted by the law as transgressors. (ESV)
 
-Despite being born-again, we must sow our own life for Jesus' sake:
+Despite being born of water and the Spirit, we must commit to offering our entire life as a living sacrifice for God, to sow our own life for Jesus' sake:
 
 > **II Corinthians 5:17** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
@@ -22198,9 +22246,13 @@ Doing the will of God is important for **inheriting** the kingdom of God:
 > **Matthew 25:23** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
+
 The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me
 feel disqualified, but I know it's just demons/witchcraft and I'm resisting it to my best ability, including in my thoughts.
+
 Asides from that, I'll continue endeavouring to abide by Jesus' commandments, and I have a good conscience.
+
+I'm also experiencing a lot of testing, and positive interactions, and some encouragements from God, and I'm feeling like studying the Gospel of Jesus using the Bible is changing my life for the better, and I feel really confident having a much better perspective.
 
 > **Galatians 5:19-21** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
 
@@ -22219,7 +22271,7 @@ I was spiritually bankrupt and I knew I needed God's help.
 
 > **Ephesians 2:4-5** - But God, being rich in mercy, because of the great love with which he loved us, even when we were dead in our trespasses, made us alive together with Christ—by grace you have been saved— (ESV)
 
-Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to be conformed to His image. God's strength does not a guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
+Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to be conformed to His image. God's strength does not guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
 
 > **Hebrews 12:1-3** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
@@ -22389,7 +22441,7 @@ Walk as an imitator of Christ:
 
 > **I Corinthians 11:1** - Be imitators of me, as I am of Christ. (ESV)
 
-Do not be an enemy of the cross of Christ, imitate Christ:
+Do not be an enemy of the cross of Christ, submit to the righteousness of God - we needed Jehovah God, Father of Jesus Christ, to pay for our sin - and we must imitate Christ, passing forward Christ's love and forgiving as we have been forgiven, and repenting from sin:
 
 > **Hebrews 13:7** - Remember your leaders, those who spoke to you the word of God. Consider the outcome of their way of life, and imitate their faith. (ESV)
 
