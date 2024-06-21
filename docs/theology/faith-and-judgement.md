@@ -3524,6 +3524,10 @@ Good work is rewarded. Lazy, disobedient belief is punished, and the worthless s
 
 > **Matthew 25:14-30** - For it will be like a man going on a journey, who called his servants and entrusted to them his property. To one he gave five talents, to another two, to another one, to each according to his ability. Then he went away. He who had received the five talents went at once and traded with them, and he made five talents more. So also he who had the two talents made two talents more. But he who had received the one talent went and dug in the ground and hid his master's money. Now after a long time the master of those servants came and settled accounts with them. And he who had received the five talents came forward, bringing five talents more, saying, Master, you delivered to me five talents; here I have made five talents more. <ins>His master said to him, Well done, good and faithful servant.</ins> You have been faithful over a little; I will set you over much. Enter into the joy of your master. And he also who had the two talents came forward, saying, Master, you delivered to me two talents; here I have made two talents more. His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. He also who had received the one talent came forward, saying, Master, I knew you to be a hard man, reaping where you did not sow, and gathering where you scattered no seed, so I was afraid, and I went and hid your talent in the ground. Here you have what is yours. But his master answered him, You wicked and slothful servant! You knew that I reap where I have not sowed and gather where I scattered no seed? Then you ought to have invested my money with the bankers, and at my coming I should have received what was my own with interest. So take the talent from him and give it to him who has the ten talents. For to everyone who has will more be given, and he will have an abundance. But from the one who has not, even what he has will be taken away. And cast the <ins>worthless servant</ins> into the outer darkness. In that place there will be weeping and gnashing of teeth.
 
+It's all about the heart though, as Ignatius says *"Let us not, therefore, be insensible to His kindness. For were He to reward us according to our works, we should cease to be."*:
+
+> **Ignatius to the Magnesians 10** - Let us not, therefore, be insensible to His kindness. For were He to reward us according to our works, we should cease to be. Therefore, **having become His disciples, let us learn to live according to the principles of Christianity**. For whosoever is called by any other name besides this, is not of God. Lay aside, therefore, the evil, the old, the sour leaven, and be ye changed into the new leaven, which is Jesus Christ. Be ye **salted** in Him, lest any one among you should be corrupted, since *by your savour ye shall be convicted*. It is absurd to profess Christ Jesus, and to Judaize. For <ins>Christianity did not embrace Judaism, but Judaism Christianity, that so every tongue which believeth might be gathered together to God</ins>.
+
 The righteous obey Jesus, and love our neighbour as He loved them; as He commanded:
 
 > **Matthew 25:31-40** - When the Son of Man comes in his glory, and all the angels with him, then he will sit on his glorious throne. Before him will be gathered all the nations, and he will separate people one from another as a shepherd separates the sheep from the goats. And he will place the sheep on his right, but the goats on the left. Then the King will say to those on his right, Come, you who are blessed by my Father, inherit the kingdom prepared for you from the foundation of the world. For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, <ins>I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.</ins> Then the righteous will answer him, saying, Lord, when did we see you hungry and feed you, or thirsty and give you drink? And when did we see you a stranger and welcome you, or naked and clothe you? And when did we see you sick or in prison and visit you? And the King will answer them, Truly, I say to you, <ins>as you did it to one of the least of these my brothers, you did it to me.</ins>
@@ -17552,15 +17556,19 @@ We should be able to see the transformation described in the sermon of the mount
 
 > **Matthew 5:11-13** - Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. You are the **salt of the earth**, but if salt has lost its taste, how shall its saltiness be restored? It is no longer good for anything except to be thrown out and trampled under people's feet. (ESV)
 
--   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
-
--   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
-
 The "salt of the earth" are the disciples of Jesus.
 
 > **Ignatius to the Magnesians 10** - Let us not, therefore, be insensible to His kindness. For were He to reward us according to our works, we should cease to be. Therefore, **having become His disciples, let us learn to live according to the principles of Christianity**. For whosoever is called by any other name besides this, is not of God. Lay aside, therefore, the evil, the old, the sour leaven, and be ye changed into the new leaven, which is Jesus Christ. Be ye **salted** in Him, lest any one among you should be corrupted, since *by your savour ye shall be convicted*. It is absurd to profess Christ Jesus, and to Judaize. For <ins>Christianity did not embrace Judaism, but Judaism Christianity, that so every tongue which believeth might be gathered together to God</ins>.
 
+People may take offense to disciples of Jesus as they did to Jesus, but we should still remain 'salty', which would predictably offend some people while it hasn't lost its taste, and it's desirable for Jesus' disciples to be set apart for God, and distinct the world.
+
 > **Matthew 11:6** - And blessed is the one who is not offended by me. (ESV)
+
+> **John 15:18** - If the world hates you, know that it has hated me before it hated you. (ESV)
+
+-   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
+
+-   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
 
 &#x2014;
 
