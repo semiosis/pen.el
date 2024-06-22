@@ -16150,6 +16150,8 @@ The Didache's estimated range of dating is 50-120 A.D, according to [earlychrist
 
 Of course, I believe God doesn't send all His servants to be martyred, but probably uses what amount a person is willing to bear for the Lord Jesus.
 
+-   **Quote from John Piper:** "We don't kill to spread our kingdom. We die to spread our kingdom." AMEN!!
+
 > **Matthew 19:21** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me.
 
 > **John 12:26** - <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins>
@@ -22408,6 +22410,8 @@ Personal righteousness (holiness and 'doing good') is still extremely important 
 Doing the will of God is important for **inheriting** the kingdom of God:
 
 > **Matthew 25:23** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
+
+-   **Quote from CH Spurgeon:** "Peace is joy resting, and joy is peace dancing"
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
 
