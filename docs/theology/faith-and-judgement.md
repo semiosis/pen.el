@@ -4579,6 +4579,8 @@ Where there is perfect belief, I think there is perfect obedience:
 
 > **John 3:36** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
+-   **[Bonhoeffer seems to have a very similar view](https://gbtseminary.org/cheap-grace-bonhoeffer-and-the-cost-of-discipleship/) to my own:** Though we are not saved by our works, Bonhoeffer believes that there is a great peril in ascribing “chronological distinctions” between belief (faith) and obedience as some often do. He believes that if we divorce the two (faith/obedience) we will inevitably overlook their essential unity to our detriment. **You cannot have one without the other.** Bonhoeffer says it like this, *“Only he who believes is obedient, and only he who is obedient believes.”*
+
 > **Matthew 5:44-45** - But I say to you, love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven; for He causes His sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
 
 > **Matthew 5:48** - Therefore you are to be perfect, as your heavenly Father is perfect.
@@ -17265,7 +17267,7 @@ We have to learn the voice of God.
 The Holy Spirit train us to learn the voice of God.
 
 
-## Born of God
+## Born of Water and the Spirit
 
 When a person is born-again of the Spirit, they receive the Spirit which helps them to stop sinning and it's really important to do so.
 
