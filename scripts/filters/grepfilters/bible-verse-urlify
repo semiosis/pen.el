@@ -8,4 +8,4 @@ export TTY
 
 # scrape-bible-references -v   # verses only
 
-grepfilter "wrlp debug oc" "scrape-bible-references -v"
+grepfilter "biblegatewayify-bible-ref" "scrape-bible-references -v"
