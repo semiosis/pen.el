@@ -7619,6 +7619,10 @@ You can't even have faith in God without obeying Jesus because the one who has f
 
 > **Philippians 2:12** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (katergazomai) your own salvation with fear and trembling, (ESV)
 
+Having believed in Jesus, having begun to trust in Jesus, we have become obedient to Jesus. Jesus works on us as we trust in Him even before we understand what He's doing, and we have become obedient because he commanded us to trust Him:
+
+> **John 13:6-7** - He came to Simon Peter, who said to him, Lord, do you wash my feet? Jesus answered him, What I am doing you do not understand now, but afterward you will understand. (ESV)
+
 And justifying faith is having obedient faith in God with regards to the promise given to Abraham.
 
 Obeying God **is** having faith in God. Obeying God **is** loving God. AMEN!!
@@ -7662,6 +7666,10 @@ Have faith in God and have faith in Jesus:
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
 > **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+
+Having believed in Jesus, having begun to trust in Jesus, we have become obedient to Jesus. Jesus works on us as we trust in Him even before we understand what He's doing, and we have become obedient because he commanded us to trust Him:
+
+> **John 13:6-7** - He came to Simon Peter, who said to him, Lord, do you wash my feet? Jesus answered him, What I am doing you do not understand now, but afterward you will understand. (ESV)
 
 We abide in Jesus when He washes us:
 
@@ -8052,6 +8060,8 @@ Firstly, God owns everything. Whatever we give God, he already owned. Neither do
 We just depend on and trust and hope on God to justify us, to commend us, to give us mercy:
 
 > **Romans 9:16** - So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
+
+> John Piper - "Faith is the baking our **hope on the mercy of God**."
 
 My best understanding of **Romans 4:4** is: "The person who works receives wages, but **the wages are not a gift**, but the person does receive reward which is due for his work." - But that's not good enough. We need to accept the gift of salvation from God. So working is not good enough, we must submit to the righteousness of God and accept the gift for forgiveness because we don't deserve the gift of Salvation what God has given us as a gift, by the shedding of Jesus Christ's blood.
 
@@ -8503,7 +8513,7 @@ I believe that either of those two heresies/delusions <ins>likely</ins> (but I'm
 
 > **2 Thessalonians 2:11-13** - Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through **sanctification by the Spirit and belief in the truth.**  (ESV)
 
-Justified and saved from wrath i.e. has faith:
+Justified and saved from wrath i.e. has obedient faith:
 
 -   Response of love for Jesus
     -   **I John 4:10-11** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. (ESV)
@@ -8514,7 +8524,7 @@ Justified and saved from wrath i.e. has faith:
 
 > **I John 4:19** - We love <ins>because he first loved us.</ins> (ESV)
 
-Probably not saved from wrath i.e. without faith:
+Probably not saved from wrath i.e. without obedient faith:
 
 -   trusting on the finished work of Jesus **while not trusting on Jesus Himself** who has done the work?
     -   No love for Jesus (not Jesus' sheep)
@@ -9721,6 +9731,22 @@ Fear and doubt weakened their faith. Maybe Peter took his eyes off Jesus, and in
 
 ## Obedience is essential to justifying faith
 
+Abraham believed God and it was counted to him as righteousness:
+
+> **Romans 4:3** - For what does the Scripture say? Abraham believed God, and it was counted to him as righteousness. (ESV)
+
+Jesus commanded us to believe (**pisteuo**) in Him:
+
+> **John 14:1** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
+
+Paul says we must trust (**pisteuo**) in Him:
+
+> **Romans 4:5** - And to the one who does not work but trusts (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+
+Having believed in Jesus, having begun to trust in Jesus, we have become obedient to Jesus. Jesus works on us as we trust in Him even before we understand what He's doing, and we have become obedient because he commanded us to trust Him:
+
+> **John 13:6-7** - He came to Simon Peter, who said to him, Lord, do you wash my feet? Jesus answered him, What I am doing you do not understand now, but afterward you will understand. (ESV)
+
 Abraham's <ins>obedience</ins> which he had as part of his faith led him to <ins>obey</ins>:
 
 > **Hebrews 11:8** - By faith Abraham obeyed when he was called to go out to a place that he was to receive as an inheritance.  And he went out, not knowing where he was going. (ESV)
@@ -9912,9 +9938,9 @@ These do not contradict:
     
     > **John 10:35-36** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
     
-    -   **Sermon:** [Contrary to Roman Catholics, the Bible Is Our Sufficient Authority - YouTube](https://www.youtube.com/watch?v=COTBu3fBtRs)
+    -   **Sermon:** [youtube.com: Contrary to Roman Catholics, the Bible Is Our Sufficient Authority](https://www.youtube.com/watch?v=COTBu3fBtRs)
     
-    -   **Sermon:** [John Piper's Sermon with Scripture only - YouTube](https://www.youtube.com/watch?v=ldag_fIFnqg)
+    -   **Sermon:** [youtube.com: John Piper's Sermon with Scripture only](https://www.youtube.com/watch?v=ldag_fIFnqg)
 
 2.  Do God's will - follow Jesus in truth, and be obedient to God to combat falsehood
 
@@ -9950,12 +9976,14 @@ They preach against repentance from sin.
 
 ## Renovating vs Innovating
 
-I think God wants us to be born-again and move on from the old life,
-not asking us to renovate our old life.
+I think God wants us to be born-again and move on from the old life, not asking us to renovate our old life.
 
 > **I Corinthians 5:7** - Cleanse out the old leaven that you may be a new lump, as you really are unleavened. For Christ, our Passover lamb, has been sacrificed. (ESV)
 
+> **Matthew 16:25** - For whoever would save his life will lose it, but <ins>whoever loses his life for my sake will find it.</ins> (ESV)
+
 Renovating is seeking to establish ones own righteousness while not submitting to God's righteousness.
+
 Following God's commandments is great - a person can renovate for a while but when presented with the Gospel of Jesus they **must** submit to God's righteousness and have faith in Jesus.
 
 > **Romans 10:3-4** - For, being ignorant of the righteousness that comes from God, and seeking to establish their own, they did not submit to God's righteousness. For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus).
