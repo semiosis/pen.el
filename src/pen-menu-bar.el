@@ -455,9 +455,6 @@
     (bindings--define-key menu [mi-pen-banner]
       '(menu-item "Pen.el Banner" pen-banner
                   :help "Display the startup banner"))
-    (bindings--define-key menu [mi-pen-of-imagination]
-      '(menu-item "The pen of imagination - |:ϝ∷¦ϝ" pen-of-imagination
-                  :help "The pen of imagination - |:ϝ∷¦ϝ"))
     (bindings--define-key menu [mi-menu-bar-workers-menu]
       `(menu-item "Workers" ,menu-bar-workers-menu
                   :help "Control Pen.el workers"))
