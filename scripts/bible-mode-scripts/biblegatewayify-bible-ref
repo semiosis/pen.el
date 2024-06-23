@@ -7,8 +7,8 @@ export TTY
 
 biblegatewayify_bible_ref() {
     ref="$1"
-    ref="$(p "$ref" | pen-urlencode)"
-    echo "https://www.biblegateway.com/passage/?search=${ref}&version=ESV"
+    ref_encoded="$(printf -- "%s" "$ref" | biblegateway-canonicalise-ref | pen-urlencode)"
+    echo "[[https://www.biblegateway.com/passage/?search=${ref_encoded}&version=ESV][$ref]]"
 }
 
 # newline
@@ -20,75 +20,3 @@ awk 1 | while IFS="$IFS" read -r line; do
         biblegatewayify_bible_ref "$line"
     )
 done
-
-# TODO Make a function for biblegateway
-# /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/crossref-canonicalise-ref
-
-# Valid biblegateway Book names
-
-# Genesis
-# Exodus
-# Leviticus
-# Numbers
-# Deuteronomy
-# Joshua
-# Judges
-# Ruth
-# 1 Samuel
-# 2 Samuel
-# 1 Kings
-# 2 Kings
-# 1 Chronicles
-# 2 Chronicles
-# Ezra
-# Nehemiah
-# Esther
-# Job
-# Psalm
-# Proverbs
-# Ecclesiastes
-# Song of Solomon
-# Isaiah
-# Jeremiah
-# Lamentations
-# Ezekiel
-# Daniel
-# Hosea
-# Joel
-# Amos
-# Obadiah
-# Jonah
-# Micah
-# Nahum
-# Habakkuk
-# Zephaniah
-# Haggai
-# Zechariah
-# Malachi
-# Matthew
-# Mark
-# Luke
-# John
-# Acts
-# Romans
-# 1 Corinthians
-# 2 Corinthians
-# Galatians
-# Ephesians
-# Philippians
-# Colossians
-# 1 Thessalonians
-# 2 Thessalonians
-# 1 Timothy
-# 2 Timothy
-# Titus
-# Philemon
-# Hebrews
-# James
-# 1 Peter
-# 2 Peter
-# 1 John
-# 2 John
-# 3 John
-# Jude
-# Revelation

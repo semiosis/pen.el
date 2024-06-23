@@ -1,4 +1,39 @@
 #!/bin/bash
 export TTY
 
-awk 1 | sed "s/\\[\\[\\(http[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        back_to_title=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+pat="$@"
+
+if test -n "$pat"; then
+    # newline
+    IFS="
+    "
+    awk1 | while IFS="$IFS" read -r line; do
+        (
+        exec 0</dev/null
+            if printf -- "%s\n" "$line" | grep -q -P "$pat"; then
+                if test "$back_to_title" = "y"; then
+                    printf -- "%s\n" "$line" | sed "s/\\[\\[http[^]]\\+\\]\\[\\([^]]\\+\\)\\]\\]/\\1/g"
+                else
+                    printf -- "%s\n" "$line" | sed "s/\\[\\[\\(http[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
+                fi
+            else
+                printf -- "%s\n" "$line"
+            fi
+        )
+    done
+
+else
+    awk 1 | sed "s/\\[\\[\\(http[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
+fi
+

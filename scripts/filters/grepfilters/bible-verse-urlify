@@ -1,11 +1,10 @@
 #!/bin/bash
 export TTY
 
-# grepfilter "wrlp org-unclink" filter-org-links | grepfilter "wrlp debug oc" rosie-urls
-
 # TODO First, unlinkify
 # Secondly,relinkify
 
 # scrape-bible-references -v   # verses only
 
-grepfilter "biblegatewayify-bible-ref" "scrape-bible-references -v"
+grepfilter "wrlp org-unclink -t biblegateway" filter-org-links | 
+    grepfilter "wrlp biblegatewayify-bible-ref" "scrape-bible-references -v"

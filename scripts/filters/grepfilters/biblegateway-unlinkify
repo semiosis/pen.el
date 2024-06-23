@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+grepfilter "wrlp org-unclink -t biblegateway" filter-org-links
