@@ -21,6 +21,9 @@ awk 1 | while IFS="$IFS" read -r line; do
     )
 done
 
+# TODO Make a function for biblegateway
+# /root/.emacs.d/host/pen.el/scripts/bible-mode-scripts/crossref-canonicalise-ref
+
 # Valid biblegateway Book names
 
 # Genesis
