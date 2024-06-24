@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+# literal grep
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -b|-eat|-l) {
+        bounds=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$bounds" = "y"; then
+    grep -F "$@"
+else
+    grep -F "$@"
+fi
