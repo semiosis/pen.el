@@ -1,7 +1,7 @@
 (require 'bible-mode)
 
 (if (inside-docker-p)
-(require 'universal-sidecar))
+    (require 'universal-sidecar))
 
 ;; Using:
 ;; e:$EMACSD/pen.el/src/pen-magit-margin.el
