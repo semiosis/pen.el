@@ -1142,7 +1142,6 @@ Day 100
 
 (add-hook 'org-mode-hook #'abbrev-mode)
 
-
 ;; A dynamic abbrev
 (defun my-current-time ()
   (insert (format-time-string "%T")))
