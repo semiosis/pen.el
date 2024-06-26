@@ -83,10 +83,16 @@
 
     (loop for ab in abbrevs
           do
-          (define-abbrev global-abbrev-table
-            (first ab)
-            (second ab)))))
+          (progn
+            (define-abbrev global-abbrev-table
+              (first ab)
+              (second ab))
+            (comment (define-abbrev org-mode-abbrev-table
+                       (first ab)
+                       (second ab)))))))
 
 (pen-abbrev-define-japanese)
+
+(add-hook 'org-mode-hook #'abbrev-mode)􃇃
 
 (provide 'pen-abbrev)

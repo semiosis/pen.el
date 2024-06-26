@@ -153,7 +153,10 @@
         (org-mode
          (on auto-highlight-symbol-mode)
          (off visual-line-mode)
-         (on org-verse))
+         (on org-verse)
+         ;; (on abbrev-mode) This didn't work.
+         ;; Instead: (add-hook 'org-mode-hook #'abbrev-mode)􃇃
+         )
 
         (yaml-mode
          (on auto-highlight-symbol-mode))
