@@ -302,7 +302,9 @@ I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, 
 
 > **[Ephesians 2:10](https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=ESV)** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
 
-While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit:
+While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit.
+
+And the obedience doesn't end. We continue to be sanctified through faith. We are saved from darkness, believing the word of God, and in obedience we are saved from sinning and try to fulfill the Royal Law, and even using our freedom in Christ to do good works that are pleasing to God:
 
 > **[Titus 3:8](https://www.biblegateway.com/passage/?search=Titus%203%3A8&version=ESV)** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. (ESV)
 
@@ -1093,7 +1095,7 @@ I do not affirm all religions. But I affirm **[Romans 10:9](https://www.biblegat
 
 Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
 
-From our perspective it may look like things are **still being brought into subjection to Him**:
+From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
 
 > **[Ephesians 1:22](https://www.biblegateway.com/passage/?search=Ephesians%201%3A22&version=ESV)** - And he put all things under his feet and gave him as head over all things to the church,
 
@@ -1938,7 +1940,11 @@ For assurance of salvation, here's three indicators:
 
 ***1. A change of heart towards humility, fear of God, belief and trust in Jesus to be saved, an awareness of one's own sin and the reality of judgement, and acknowledging Jesus' Lordship and deity:***
 
-All the thief could do was look to Jesus and cry out for mercy but thankfully that is all he needed. This was all that was required of him for salvation and the same is true for us.
+All the thief could do was look to Jesus and cry out for mercy but thankfully that is all he needed.
+
+> **My thoughts:** I still think that the thief obeyed the gospel by submitting to the righteousness of God. He had obeyed the gospel, even preached the gospel from his cross, and was no longer an enemy of the cross of Christ. I think if given the opportunity he would have continued on in obedience to Jesus and even in good works of service to Jesus because of his repentant heart. He acknowledged Jesus was righteous and did not deserve the punishment that they deserved, he asked Jesus to remember him in His kingdom, and had the fear of God in his heart which would have caused him to not turn from God.
+
+This was all that was required of him for salvation and the same is true for us.
 
 > The thief didn't get to go learn the bible, or get baptised or begin to follow Jesus in the way that he lived, but that is not to say that those things are not important because they are.
 > Those are things that God has commanded us to do, and if we love God then we should want to be obedient in doing those things. The distiction is that those things don't earn our salvation but they are the
@@ -2078,7 +2084,11 @@ Sin no more so that nothing worse happens:
 
 ### Subsequent behaviour - the Golden Rule and the Royal Law
 
-When it comes to 'works' and 'law-keeping', I believe disciples of Jesus should know they have been forgiven by grace through faith and they should also practice their righteousness. Christians should **both** submit to the righteousness of God through faith in Jesus Christ, having the imputed righteousness of Christ and they should practice righteousness (as Jesus said, "go and sin no more"), and Christians should seek to keep accountability primarily to God in regards to the law because He sees everything, and **secondarily** to men to love as Jesus loved:
+When it comes to 'works' and 'law-keeping', I believe disciples of Jesus should know they have been forgiven by grace through faith and they should also practice their righteousness and a person who has accepted forgiveness for their sin by the atonement made in Jesus' blood should certainly endeavour after that to fulfill practically the Royal Law, that is to love one's neighbour as themself, even owing that to other people:
+
+> **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
+
+Christians should **both** submit to the righteousness of God through faith in Jesus Christ, having the imputed righteousness of Christ and they should practice righteousness (as Jesus said, "go and sin no more"), and Christians should seek to keep accountability primarily to God in regards to the law because He sees everything, and **secondarily** to men to love as Jesus loved:
 
 > **[Matthew 23:2-7](https://www.biblegateway.com/passage/?search=Matthew%2023%3A2-7&version=ESV)** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
 
@@ -2940,13 +2950,30 @@ God still makes apostles and prophetic people:
 
 > **[Ephesians 4:11-16](https://www.biblegateway.com/passage/?search=Ephesians%204%3A11-16&version=ESV)** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, **to equip the saints** for the **work** of ministry, for **building up the body of Christ**, *until we all attain* to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be <ins>children, tossed to and fro by the waves and carried about by every wind of doctrine</ins>, by human cunning, by craftiness in **deceitful** schemes. Rather, **speaking the truth in love**, we are to grow up in every way into him who is the head, into Christ, from whom the whole body, joined and held together by every joint with which it is equipped, when each part is working properly, makes the body grow so that it builds itself up in love. (ESV)
 
-I myself, right after being born-again, have had visions of planting churches in the South Pacific.
-I've also had a vision of the morning star arising in the sky, and many other such visions.
+I myself, after being born-again, have had visions of planting churches in the South Pacific. However, to make this more complicated, I've also been going through daily testing and refinement on doctrine, etc. as the Holy Spirit has been teaching me and sanctifying me with the Word.
+
+I've also had a vision of a star rising in a purple sky (like a morning sunrise), and many other such prophetic visions - anyway, my point is the 'prophetic' is a reality, and we believe in a living God, and we believe in the Holy Spirit:
 
 > **[II Peter 1:19](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A19&version=ESV)** - And we have something more sure, the prophetic word, to which you will do well to pay attention as to a lamp shining in a dark place, until the day dawns and the morning star rises in your hearts, (ESV)
 
+I believe that cessationists are in error. Modern-day apostles, I believe, like branches on a tree, still branch from the original Apostles, and should preach the same Jesus, and the same gospel, in the same Spirit, and any apostle must have Jesus as their cornerstone. I believe Jesus still appoints apostles, and I'm prophetic myself so I have no doubts regarding this. I personally still see all things being placed into subjection under Christ and have no reason to think that Jesus has stopped appointing apostles and prophets as God is growing and guiding His church:
+
+> **[Ephesians 2:20-22](https://www.biblegateway.com/passage/?search=Ephesians%202%3A20-22&version=ESV)** - built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone, in whom the whole structure, being joined together, grows into a holy temple in the Lord. In him you also are being built together into a dwelling place for God by the Spirit. (ESV)
+
+I think a good reason Jesus would still be doing this is for sake of the unity of the church, and demonstration of the Spirit and power of God. We need the prophetic in the church:
+
+> **[1 Corinthians 2:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A4&version=ESV),5** - and my speech and my message were not in plausible words of wisdom, but in demonstration of the Spirit and of power, that your faith might not rest in the wisdom of men but in the power of God. (ESV)
+
+From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
+
+> **[Ephesians 1:22](https://www.biblegateway.com/passage/?search=Ephesians%201%3A22&version=ESV)** - And he put all things under his feet and gave him as head over all things to the church,
+
+> **[Hebrews 2:5-8](https://www.biblegateway.com/passage/?search=Hebrews%202%3A5-8&version=ESV)** - Now it was not to angels that God subjected the world to come, of which we are speaking. It has been testified somewhere, What is man, that you are mindful of him, or the son of man, that you care for him? You made him for a little while lower than the angels; you have crowned him with glory and honor, putting everything in subjection under his feet. Now in putting **everything in subjection to him**, <ins>he left nothing outside his control</ins>. At present, we do not yet see everything in subjection to him.
+
 Anyway, I **know** that God still makes apostles and prophetic people and is still working on the earth.
-Cessationists are quite simply incorrect. However apostolic and prophetic people have the truth revealed to them. These roles are service roles though for helping the body of Christ grow in the knowledge of the Son of God, so there's no bragging, just serving one another, as we have different roles in the body of Christ:
+Cessationists are quite simply incorrect. 
+
+However apostolic and prophetic people have the truth revealed to them. These roles are service roles though for helping the body of Christ grow in the knowledge of the Son of God, so there's no bragging, just serving one another, as we have different roles in the body of Christ:
 
 > **[Ephesians 3:5](https://www.biblegateway.com/passage/?search=Ephesians%203%3A5&version=ESV)** - which was not made known to the sons of men in other generations as it has now been revealed to his holy apostles and prophets by the Spirit. (ESV)
 
@@ -7510,7 +7537,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **[I John 2:3-4](https://www.biblegateway.com/passage/?search=1%20John%202%3A3-4&version=ESV)** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
     
-    And the obedience doesn't end. We continue to be sanctified through faith. We are saved from darkness, and saved from sinning, and even start doing good works pleasing to God.
+    And the obedience doesn't end. We continue to be sanctified through faith. We are saved from darkness, believing the word of God, and in obedience we are saved from sinning and try to fulfill the Royal Law, and even using our freedom in Christ to do good works that are pleasing to God:
     
     > **[II Peter 1:1-11](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A1-11&version=ESV)** - Simeon Peter, a servant and apostle of Jesus Christ, To those who have obtained a faith of equal standing with ours by the righteousness of our God and Savior Jesus Christ: May grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord.  His divine power has granted to us all things that pertain to life and godliness, through the knowledge of him who called us to his own glory and excellence, by which he has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature, having escaped from the corruption that is in the world because of sinful desire.  For this very reason, make every effort to **supplement your faith with virtue, and virtue with knowledge, and knowledge** with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love.  For if these qualities are yours and are increasing, they keep you from being ineffective or unfruitful in the knowledge of our Lord Jesus Christ.  For whoever lacks these qualities is so nearsighted that he is blind, having forgotten that he was cleansed from his former sins.  Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall.  For in this way <ins>there will be richly provided for you an entrance into the eternal kingdom of our Lord and Savior Jesus Christ</ins>.
     
@@ -11878,9 +11905,19 @@ Most importantly, don't betray Jesus:
 
 > **[John 6:70-71](https://www.biblegateway.com/passage/?search=John%206%3A70-71&version=ESV)** - Jesus answered them, Did I not choose you, the Twelve? And yet one of you is a devil. He spoke of Judas the son of Simon Iscariot, for he, one of the Twelve, was going to betray him.
 
-Obey the law (to your knowledge or level of commitment) in faith, not by works, making yourself accountable to God, not men, and accept the righteousness of God through Jesus Christ's atoning sacrifice through having faith in Jesus:
+Obey God's law (to your knowledge or level of commitment) in faith, not by works, making yourself accountable to God, not men, and accept the righteousness of God through Jesus Christ's atoning sacrifice through having faith in Jesus:
 
 > **[Romans 14:10-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A10-18&version=ESV)** - Why do you pass judgment on your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God; for it is written, As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God. So then **each of us will give an account of himself to God.** Therefore let us not pass judgment on one another any longer, but rather decide never to put a stumbling block or hindrance in the way of a brother. I know and am persuaded in the Lord Jesus that nothing is unclean in itself, but it is unclean for anyone who thinks it unclean. For if your brother is grieved by what you eat, you are no longer walking in love. By what you eat, do not destroy the one for whom Christ died. So do not let what you regard as good be spoken of as evil. For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. **Whoever thus serves Christ is acceptable to God and approved by men.** (ESV)
+
+Obey the Royal Law, even owing that to others. We still keep accountability to God for following this:
+
+> **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
+
+If we are servants of Christ then we are acceptable to God. Serving Christ, loving our neighbour as ourselves, bearing one another's burdens, trying to do no harm to our neighbour, we should have a good conscience before God and men:
+
+> **[Romans 14:18](https://www.biblegateway.com/passage/?search=Romans%2014%3A18&version=ESV)** - Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
+
+> **[Romans 13:10](https://www.biblegateway.com/passage/?search=Romans%2013%3A10&version=ESV)** - Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
 
 We need to be justified before God, and that is through faith in Jesus Christ.
 
@@ -12025,7 +12062,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
     
-    From our perspective it may look like things are **still being brought into subjection to Him**:
+    From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
     
     > **[John 16:33](https://www.biblegateway.com/passage/?search=John%2016%3A33&version=ESV)** - I have said these things to you, that in me you may have peace.  In the world you will have tribulation.  But take heart; I have overcome the world.  (ESV)
     
@@ -12067,7 +12104,7 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
     
     Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
     
-    From our perspective it may look like things are **still being brought into subjection to Him**:
+    From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
     
     > **[Ephesians 1:22](https://www.biblegateway.com/passage/?search=Ephesians%201%3A22&version=ESV)** - And he put all things under his feet and gave him as head over all things to the church,
     
@@ -13775,7 +13812,7 @@ Jesus' commandments us to even love one another, anyone around you, with selfles
 
 > **[John 13:34-35](https://www.biblegateway.com/passage/?search=John%2013%3A34-35&version=ESV)** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
-If we are servants of Christ then we are acceptable to God:
+If we are servants of Christ then we are acceptable to God. Serving Christ, loving our neighbour as ourselves, bearing one another's burdens, trying to do no harm to our neighbour, we should have a good conscience before God and men:
 
 > **[Romans 14:18](https://www.biblegateway.com/passage/?search=Romans%2014%3A18&version=ESV)** - Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
 
@@ -18371,9 +18408,15 @@ Jesus is our High Priest:
 
 > **[Romans 8:3-4](https://www.biblegateway.com/passage/?search=Romans%208%3A3-4&version=ESV)** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, **in order that the righteous requirement of the law might be fulfilled in us**, **who walk** not according to the flesh but **according to the Spirit.** (ESV)
 
-Jesus condemned sin in the flesh. Now we walk according to the spirit so that the righteous requirement of the law might be fulfilled in us - doing no harm to our neighbour.
+Jesus condemned sin in the flesh. Now we walk according to the spirit so that the righteous requirement of the law might be fulfilled in us - doing no harm to our neighbour:
+
+> **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
 
 It's still really important to put a stop to sin, and show no partiality as we love our neighbour as ourselves, doing no harm to our neighbour and bearing one another's burdens!
+
+> **[James 2:1](https://www.biblegateway.com/passage/?search=James%202%3A1&version=ESV)** - My brothers, show no partiality **as you hold the faith** in our Lord Jesus Christ, the Lord of glory. (ESV)
+
+> **[Galatians 6:2](https://www.biblegateway.com/passage/?search=Galatians%206%3A2&version=ESV)** - Bear one another's burdens, and so fulfill the law of Christ.
 
 Grace given through faith alone is not license to sin, but the power of salvation to be corrected, healed and brought into obedience to God, and into loving God and your neighbour.
 
@@ -22772,8 +22815,11 @@ Christians are instructed to love our enemies, to have the love of our Heavenly 
 
 I still believe strongly that there was an
 antichrist spirit meddling in the situation
-with court in 2022, with an agenda of pressuring me to be deceived into thinking I was not forgiven,
-and pressuring me to be deceived that I needed to pay for my salvation. I have lots of evidence of this.
+with court in 2022, diametrically opposed to grace, Christian marriage, forgiveness, mercy, and the truth of Jesus,
+with an agenda of pressuring me to be deceived into thinking I was not forgiven,
+and pressuring me to be deceived that I needed to pay for my salvation with good works, but I have done all my good works out of obedience, knowing I am born again and forgiven, price paid in full with Jesus' blood.
+
+I have lots of evidence of this. Jehovah knows it.
 
 When it comes to 'works' and 'law-keeping', I believe disciples of Jesus should know they have been forgiven by grace through faith and they should also practice their righteousness. Christians should **both** submit to the righteousness of God through faith in Jesus Christ, having the imputed righteousness of Christ and they should practice righteousness (as Jesus said, "go and sin no more"), and Christians should seek to keep accountability primarily to God in regards to the law because He sees everything, and **secondarily** to men to love as Jesus loved:
 
