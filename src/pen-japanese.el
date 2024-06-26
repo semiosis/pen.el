@@ -7,4 +7,6 @@
 
 (add-to-list 'magic-mode-alist '("^# japanese" . japanese-org-mode))
 
+;; j:japanese-words
+
 (provide 'pen-japanese)
