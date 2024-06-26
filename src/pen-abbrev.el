@@ -1,4 +1,5 @@
 (require 'abbrev)
+(require 'pen-japanese)
 
 ;; https://youtu.be/ruPpRlh2re4?t=110
 
@@ -1129,12 +1130,13 @@ Day 100
     (loop for ab in abbrevs
           do
           (progn
-            (define-abbrev global-abbrev-table
-              (first ab)
-              (second ab))
-            (comment (define-abbrev org-mode-abbrev-table
+            (comment (define-abbrev global-abbrev-table
                        (first ab)
-                       (second ab)))))))
+                       (second ab)))
+            ;; j:japanese-org-mode
+            (define-abbrev japanese-org-mode-abbrev-table
+              (first ab)
+              (second ab))))))
 
 (pen-abbrev-define-japanese)
 
