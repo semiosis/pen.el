@@ -95,4 +95,12 @@
 
 (add-hook 'org-mode-hook #'abbrev-mode)􃇃
 
+
+;; A dynamic abbrev
+(defun my-current-time ()
+  (insert (format-time-string "%T")))
+
+;; This makes a hook to a function
+(define-abbrev global-abbrev-table "medyn" "" 'my-current-time)
+
 (provide 'pen-abbrev)
