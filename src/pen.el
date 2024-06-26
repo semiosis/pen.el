@@ -2425,6 +2425,7 @@ May use to generate code from comments."
 (require 'pen-shebang)
 (require 'pen-show-map)
 (require 'pen-isearch)
+(require 'pen-abbrev)
 (require 'pen-perfect-margin)
 (require 'pen-visual-line)
 (if (inside-docker-p)
