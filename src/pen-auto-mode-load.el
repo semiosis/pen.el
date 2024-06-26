@@ -6,6 +6,7 @@
 
 ;; This only checks the first line
 (add-to-list 'magic-mode-alist '("^#lang racket" . racket-mode))
+;; (add-to-list 'magic-mode-alist '("^# japanese" . japanese-org-mode))
 (add-to-list 'magic-mode-alist '("^#lang scribble" . scribble-mode))
 (add-to-list 'magic-mode-alist '("^#lang " . racket-mode))
 (add-to-list 'magic-mode-alist '("^#.*env stack$" . haskell-mode))

@@ -1140,7 +1140,7 @@ Day 100
 
 (pen-abbrev-define-japanese)
 
-(add-hook 'org-mode-hook #'abbrev-mode)􃇃
+(add-hook 'org-mode-hook #'abbrev-mode)
 
 
 ;; A dynamic abbrev
