@@ -584,9 +584,17 @@ Belief (in the heart) that Jesus is the Son of God leads to:
 
 ## Being born-again of the Spirit - my experience
 
--   **[youtube.com: How to Seek the Holy Spirit @time: 48 min 13 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=2893):** "If anyone keeps Jesus' word, holds fast, treasures it, in obedience, that person will not be quenching the Spirit, that person will not be grieving the Spirit, but will know the fullness and sweetness of fellowship with the Father and the Son." - AMEN to that, John Piper
+-   **[youtube.com: How to Seek the Holy Spirit @time: 48 min 13 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=2893):** "If anyone keeps Jesus' word, holds fast, treasures it, in obedience, that person will not be quenching the Spirit, that person will not be grieving the Spirit, but will know the fullness and sweetness of fellowship with the Father and the Son."
 
-I was born-again of the Spirit on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) where I was given a new body, or it was regenerated - a blue light-body. But for most of my life I have been a nominal Christian. For the 2 years leading up to 2 April 2022, I can tell that God was working in my life. So was I born-again when I first believed as a child, or when I was baptised as a teenager? Not in the same way I was born-again on 2 April 2022. On 2 April 2022 I was truly born-again of the Spirit, and my best explanation as to what had changed was that I had begun to **authentically seek God and to be obedient to Jesus, accountable to God who sees in secret**, and not to man, and that activated a real prayer life, even though I could not yet hear His voice. On the 2 April 2022 I was born-again of water and the Spirit - I was spiritually regenerated. When that happened God had put the fear of Him in my heart so that I would not turn from Him. When I first 'believed' the gospel, this had not happened yet, but I had the testimony. Being born-again of water and the Spirit, I believe is what I experienced on 2 April 2022. But hearing and keeping the gospel of Jesus I believe they will have the event like my 2 April 2022 event happen in their future some time, I assume, or perhaps it is 'entering the Kingdom of God'. I don't know exactly how it works. I'm retroactively trying to figure out what has happened by reading the Scriptures.
+AMEN to that, John Piper.
+
+-   **[youtube.com: How to Preach with Supernatural Power @time: 8 min 16 sec](https://youtube.com/watch?v=xyJpROFrfc4&t=496):** He does not mean that something spiritual is religious or mystical or other-worldly. That's what most people think about spiritual&#x2026; Well, no it not. Instead spirtual for Paul meant originating by the Holy Spirit and having the quality of the Holy Spirit, formed by the character of the Holy Spirit. It is supernatural, wrought, shaped by the Holy Spirit&#x2026; The problem with the 'mind of the flesh is not that it fails to be religious, or that it fails to be mystical or that it fails to be other-worldly. In fact, the mind of the flesh may be intensely religious. The mind of the flesh may be very mystical, very other-worldly. The problem with the mind of the flesh is that it's hardened againsnt the beauty of God, the worth of God, the authority of God. It's hard against God. It's unable to welcome and love and delight in and enjoy God.
+
+AMEN John Piper. Thanks.
+
+> **Romans 8:6-9** - To set the mind on the flesh is death, but to set the mind on the Spirit is life and peace. For the mind that is set on the flesh is hostile to God, for it does not submit to God's law; indeed, it cannot. Those who are in the flesh cannot please God. You, however, are not in the flesh but in the Spirit, if in fact the Spirit of God dwells in you. Anyone who does not have the Spirit of Christ does not belong to him. (ESV)
+
+I was born-again 'of the Spirit' on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) where I was given a new body, or it was regenerated - a blue light-body. I don't really know what this is. It was something. Most of my life I have not been a very faithful Christian. I was a 'nominal' Christian but I didn't really have a lot of faith or knowledge of God. I had not been seeking out Jesus. For the 2 years leading up to 2 April 2022, I can tell now in retrospect that God was working in my life. So when was I born-again? Was it when I first believed as a child, or when I was baptised as a teenager? Not in the same way I was born-again on 2 April 2022. On 2 April 2022 I was truly born-again of the Spirit, and my best explanation as to what had changed was that I had begun to **authentically seek God and to be obedient to Jesus, accountable to God who sees in secret**, and not to man, and that activated a real prayer life, and I had asked God to give me His Holy Spirit. Even though I could not yet hear His voice, I was praying and seeking and beginning to repent. On the 2 April 2022 I was born-again the Spirit - I was spiritually regenerated - whatever it was that happened which I described. When that happened God had put the fear of Him in my heart so that I would not turn from Him. When I first 'believed' the gospel, this had not happened yet, but I had the testimony I guess. This event, what I experienced on 2 April 2022 I consider to me being born of 'water and the Spirit'. But hearing and keeping the gospel of Jesus, and asking God to receive the Holy Spirit, or seeking God I guess they will have some events, probably different to my 2 April 2022 event something similar happen then or in their future some time, I assume, or perhaps it is 'entering the Kingdom of God'. I don't know exactly how it works. I'm retroactively trying to figure things out by reading the Scriptures.
 
 As I understand it, if someone is "born of God", they would love Jesus. If someone loves with Christ's love then they are "born of God and know God" and they would love Jesus if presented with Jesus. If someone is "born of the Spirit" then they have been spiritually regenerated. Being born of the Spirit is what I understand is to be "born-again of water and the Spirit".
 
@@ -23615,35 +23623,24 @@ But the Hebrew for helper in **[Genesis 2:18](https://www.biblegateway.com/passa
 
 ## The spiritual attack I have received in recent times
 
-I'll be listening to music such as this to help maintain the correct perspective against all the lies, liars and earthly-minded accusers:
+I'll be listening to music such as this to help maintain the correct perspective against lies
+that come from the enemy through dreams and through other people:
 
 -   **Song:** [youtube.com: Who You Say I Am - Hillsong Worship](https://www.youtube.com/watch?v=lKw6uqtGFfo&list=RDdhU-Omwg2rU&index=3)
 
 -   **Song:** [youtube.com: Jesus Paid It All - Kim Walker-Smith | Worship Circle Hymns](https://www.youtube.com/watch?v=Ymkl0t0FOcw&list=RDdhU-Omwg2rU&index=4)
 
-The more vocal I become about Jesus and the more I align with the Truth, the more resistance I appear to be getting. My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams - things I can't even mention. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. so I figure the spiritual warfare is just a new dimension of spiritual life but I do believe the enemy will be defeated.
+The more vocal I become about Jesus and the more I align with the Truth and reject false-religion, and the more I disagree with sin as I repent from it, the more resistance I appear to be getting.
 
-I've been discernibly harassed by demons, even daily, in my sleep and through other people, right up until today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-07 Fri&gt;</span></span>, and adding to this, increasingly daily even 1 week later to today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-14 Fri&gt;</span></span>. I began to see this stuff in the spirit especially noticeably since the end of 2022. That's been one major motivation for this Bible study, as when I go about my day I do not want to be caught off-guard answering people's questions unscripturally (not in accordance with the Bible), and I need the full armour of God including the Sword of the Spirit and the Belt of Truth. These days I'm being frequently tested, spiritually, on my doctrine and on my obedience, actually. For the unspiritual people out there, the testing feels '5+ dimensional'(a limited analogy) sometimes and explaining 5D situations requires a little bit more explanation/data points. As Jesus said:
+My sleep has in recent times become highly disrupted as I've been bombarded with demonic dreams - things I can't even mention - pro-false-religion, anti-Christianity, pro-sinful things type dreams. Littered amongst those I sometimes also get Bible verses, or dreams of singing worship songs, etc. I frequently are tested through other people too.
 
-> **[John 3:12](https://www.biblegateway.com/passage/?search=John%203%3A12&version=ESV)** - If I have told you earthly things and you do not believe, how can you believe if I tell you heavenly things? (ESV)
-
-And as Paul said:
-
-> **[I Corinthians 2:14](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A14&version=ESV)** - The natural person does not accept the things of the Spirit of God, for they are folly to him, and he is not able to understand them because they are spiritually discerned. (ESV)
-
-More accurately though, when people manifest demons its as if they become different people as the demons speak and act through them:
-
-> **[Luke 8:30](https://www.biblegateway.com/passage/?search=Luke%208%3A30&version=ESV)** - Jesus then asked him, What is your name? And he said, Legion, for many demons had entered him. (ESV)
-
-Anyway, I see this stuff in the spirit, and the way to fight against it is with the Word of God:
+Anyway, I see this stuff in the spirit very easily (it's just like having eyes I didn't have before) after being born of the Spirit, and the way to fight against the evil is with the Word of God:
 
 > **[Matthew 4:9-11](https://www.biblegateway.com/passage/?search=Matthew%204%3A9-11&version=ESV)** - And he said to him, All these I will give you, if you will fall down and worship me. Then Jesus said to him, Be gone, Satan! For it is written, You shall worship the Lord your God and him only shall you serve. Then the devil left him, and behold, angels came and were ministering to him. (ESV)
 
-The Word of God is a light to our path. Metaphorically, it's a bit like having a GPS while navigating at night:
+The Word of God is a light to our path:
 
 > **[Psalms 119:105](https://www.biblegateway.com/passage/?search=Psalms%20119%3A105&version=ESV)** - Your word is a lamp to my feet and a light to my path. (ESV)
-
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or salvation by obedience and I want my theology to be 'raw and real'.
 
 I think what this verse says is that putting a stop to sin 'closes doors' which the enemy uses to attack:
 
@@ -23677,23 +23674,25 @@ I've been going through a lot of trial and tribulation over the last 2 years:
 
 > **[I Peter 1:6-9](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A6-9&version=ESV)** - In this you rejoice, though now for a little while, if necessary, you have been grieved by various trials, so that the tested genuineness of your faith—more precious than gold that perishes though it is tested by fire—may be found to result in praise and glory and honor at the revelation of Jesus Christ. Though you have not seen him, you love him. Though you do not now see him, you believe in him and rejoice with joy that is inexpressible and filled with glory, obtaining the outcome of your faith, the salvation of your souls. (ESV)
 
-But I feel like things are simply too difficult in this world. The most challenging resistance has actually been when I get attacked both spiritually and physically. By the Holy Spirit we are supposed to put to death the deeds of the body:
+By the Holy Spirit we are supposed to put to death the deeds of the body:
 
 > **[Romans 8:13](https://www.biblegateway.com/passage/?search=Romans%208%3A13&version=ESV)** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
 
-But if there is a spirit-spouse manifesting spiritually and messing with me physically and a bunch of other demonic attacks and it doesn't go away when I rebuke it in Jesus' name, and it resists when I use Scriptures, and the attack lasts for 600 days almost every day, then I feel like the challenge of fighting back is just too difficult.
+But if there is a spirit-spouse manifesting spiritually and messing with me physically and a bunch of other demonic attacks and it doesn't go away when I rebuke it in Jesus' name, and it resists when I use Scriptures, and the attack lasts for 600 days almost every day, then I feel like the challenge of fighting back is just too difficult. At least I do not feel as guilty about it. But I think I should continue to true to fight against it.
 
-Yeah, this morning <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-28 Fri&gt; </span></span> I had a night swamped with such evil dreams. God knows why. So evil that I cannot even mention them. This is the day after writing about how Christians should be have like children of their Father, Jehovah:
+> Yeah, this morning <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-28 Fri&gt; </span></span> I had a night swamped with such evil dreams. God knows why. So evil that I cannot even mention them. This is the day after writing about how Christians should be have like children of Father God, that is Jehovah:
 
 > The Golden Rule, I think explains that we should behave like a child of Father God who is by nature Good and gives good gifts to His children, and gifts that are truly good, far exceeding any amount of favour we might show our own children. As we behave like a child of Father God, believing the gospel of Jesus, and loving with Christ's love, we can really say our Father is God, as a child takes after their parents, and a child of Father God behaves like Jesus and follows Jesus. We try to follow Jesus, and imitate Christ's pattern, as Christ is **the** Son of God.
 
 Yeah, I am at my limits to what I can endure. This has been going on every day for nearly 2 years. Any Christians out there pray for me please that God will stop allowing the evil spirits to attack me. It's an actual living hell. What's worse though is when other so-called Christians, rather than show support, actually shun me and push me out of the church like a leper. I have no idea why God is putting me through this hell.
 
+> **[Psalms 88:18](https://www.biblegateway.com/passage/?search=Psalms%2088%3A18&version=ESV)** - You have caused my beloved and my friend to shun me; my companions have become darkness. (ESV)
+
 > **[Psalms 10:1](https://www.biblegateway.com/passage/?search=Psalms%2010%3A1&version=ESV)** - Why, O LORD, do you stand afar off? Why do you hide yourself in times of trouble? (ESV)
 
 > **[Psalms 10:12](https://www.biblegateway.com/passage/?search=Psalms%2010%3A12&version=ESV)** - Arise, O LORD; O God, lift up your hand; forget not the afflicted. (ESV)
 
-Also, to "be holy as He is holy" when people deny relationships and marriage, and just heap on heavy burdens, asking even more of me, without lifting a finger to help, and then simultaneously I'm attacked with a spirit spouse at night, for example, and I'm supposed to just ignore it - well it feels like an impossibility to remain clean. So a complaint I have to Almighty God Jehovah is that remaining holy in all my conduct during the trial I have faced has been impossibly difficult:
+Also, to "be holy as He is holy" when people deny relationships and marriage, and just heap on heavy burdens, asking even more of me, without lifting a finger to help, and then simultaneously I'm attacked with a spirit spouse at night, for example, and I'm supposed to just ignore it - well it feels like an impossibility to remain clean. So a complaint I have to Almighty God Jehovah is that remaining holy in all my conduct during the trial I have faced has felt impossibly difficult, and very graceless, and I've felt "under the pump", in constant spiritual warfare:
 
 > **[Colossians 2:18-21](https://www.biblegateway.com/passage/?search=Colossians%202%3A18-21&version=ESV)** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (ESV)
 
@@ -23701,28 +23700,23 @@ I'm definitely taking this stuff to God's court and asking for grace to be sanct
 
 > **[James 4:6](https://www.biblegateway.com/passage/?search=James%204%3A6&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. (ESV)
 
-I think delivered is the better term because I've endured isolation, and even cut off from Christian fellowship for following Jesus,
-denied marriage, denied relationships continually, locally and internationally slandered,
-and after getting born-again enduring the most soul-crushing circumstances,
-and then continually harassed by demons almost every night over the last 1.5 years. Literally:
+> **II Corinthians 9:8** - And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work. (ESV)
 
-> **[Psalms 88:18](https://www.biblegateway.com/passage/?search=Psalms%2088%3A18&version=ESV)** - You have caused my beloved and my friend to shun me; my companions have become darkness. (ESV)
+I actually feel spiritually damaged/injured by what I've had to endure regarding a spirit spouse - I simply don't understand why that thing has been allowed to touch me for 1.5 years and push lewd dreams into my head. This daily bombardment of demonic dreams, and visions is very demoralizing.
 
-I actually feel spiritually damaged/injured by what I've had to endure regarding a spirit spouse - I simply don't understand why that thing
-has been allowed to touch me for 1.5 years and this daily bombardment of demonic dreams, and visions is very demoralizing.
 With regards to the spirit spouse, it makes me feel very gross and it makes me feel [Psalm 22:1](https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&version=ESV) forsaken by God - no joke.
+
 I have literally no idea why Father God waited such a long time in the first place to draw me to Jesus.
+
 I want to hear from God clearly, but I feel like being delivered from being attacked by demons would be really good.
 
 > **[Psalms 22:1](https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&version=ESV)** - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)
 
-And it doesn't give me any joy to be spending so much time challenging the lies that come through other people regarding theology,
-rather than being in that position of being able to rest and enjoy God, as John Piper puts it.
 I was in that happy place shortly after being born-again even though my theology wasn't great, but then God has put me through this trial.
 
 > **[I Timothy 6:12](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A12&version=ESV)** - Fight the good fight of the faith. Take hold of the eternal life to which you were called and about which you made the good confession in the presence of many witnesses. (ESV)
 
-I claim to be an obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult.
+I claim to be an obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult:
 
 > **[Psalms 142:2](https://www.biblegateway.com/passage/?search=Psalms%20142%3A2&version=ESV)** - I pour out my complaint before him; I tell my trouble before him. (ESV)
 
@@ -23759,8 +23753,7 @@ Doing the will of God is important for **inheriting** the kingdom of God:
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
 
-The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me
-feel disqualified, but I know it's just demons/witchcraft and I'm resisting it to my best ability, including in my thoughts.
+The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me feel disqualified, but I know it's just demons/witchcraft and I'm resisting it to my best ability, including in my thoughts.
 
 Asides from that, I'll continue endeavouring to abide by Jesus' commandments, and I have a good conscience.
 
@@ -23809,6 +23802,8 @@ I <ins>do **not** think</ins> the Golden Rule is saying that "God is humanity." 
 I think the Golden Rule is really telling us to be loving, and love our enemies, as we would want to be loved by our enemies - love people the way Father God loves us:
 
 > **[Matthew 7:9-12](https://www.biblegateway.com/passage/?search=Matthew%207%3A9-12&version=ESV)** - Or which one of you, if his son asks him for bread, will give him a stone? Or if he asks for a fish, will give him a serpent? If you then, who are evil, know how to give good gifts to your children, how much more will **your Father** who is in heaven give good things to those who ask him! So **whatever you wish that others would do to you, do also to them**, for this is the Law and the Prophets. (ESV)
+
+I think I'll keep these notes here documenting a tiny view of spiritual attack I have endured, until I am delivered and on the other side of it.
 
 
 ## In my helpless state I cried out to God for help, and He made me born-again of the spirit
