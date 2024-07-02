@@ -14590,6 +14590,22 @@ We must do good, and behave like the children of God, or we will not enter the K
 
 # Entering and inheriting the kingdom
 
+It's received as an inheritance by being found **in Christ**, we don't work for it, but we do need repentance from sin.
+
+-   **Talk:** [youtube.com: How Do We Inherit the Kingdom? [[https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV][Galatians 5:19-21](https://www.youtube.com/watch?v=b8oMgvvwsGg), Part 2]]
+
+> **[Galatians 3:18](https://www.biblegateway.com/passage/?search=Galatians%203%3A18&version=ESV)** - For if the inheritance comes by the law, it no longer comes by promise; but God gave it to Abraham by a promise. (ESV)
+
+> **[Galatians 3:29](https://www.biblegateway.com/passage/?search=Galatians%203%3A29&version=ESV)** - And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
+
+> **[Romans 4:13](https://www.biblegateway.com/passage/?search=Romans%204%3A13&version=ESV)** - For the promise to Abraham and his offspring that he would be heir of the world did not come through the law but through the righteousness of faith. (ESV)
+
+> **[Galatians 4:6-7](https://www.biblegateway.com/passage/?search=Galatians%204%3A6-7&version=ESV)** - And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father! So you are no longer a slave, but a son, and if a son, then an heir through God. (ESV)
+
+> **[Romans 9:6-8](https://www.biblegateway.com/passage/?search=Romans%209%3A6-8&version=ESV)** - But it is not as though the word of God has failed. For not all who are descended from Israel belong to Israel, and not all are children of Abraham because they are his offspring, but Through Isaac shall your offspring be named. This means that it is not the children of the flesh who are the children of God, but the children of the promise are counted as offspring. (ESV)
+
+> **[Galatians 5:19-21](https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV)** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+
 There's so much stuff to do to enter the kingdom&#x2026; I feel entirely unworthy.
 
 Firstly, it has been by grace because I asked God to save me, even when I was very much stuck in sin. And I still <ins>feel</ins> as though I am approaching it and haven't quite entered it (just being honest here).
@@ -23663,13 +23679,13 @@ An import part of being sanctified and made perfect/complete is having love perf
 
 Ever since [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) I have been a new creation. I am controlled by the love of Christ and have stopped thinking like the world thinks, and I've been living for Christ, and I've been learning to do that better:
 
-> **II Corinthians 5:14-17** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and he died for all, that those who live might no longer live for themselves but for him who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. (ESV)
+> **[II Corinthians 5:14-17](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A14-17&version=ESV)** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and he died for all, that those who live might no longer live for themselves but for him who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. (ESV)
 
 I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
 Even though I have been born-again, and I think I've been treated with almost zero, even treated unfairly, I do not say I am without sin, and to have pleaded 'not guilty' as I am seeking to be obedient to Jesus, even while repenting from certain things which were nothing to do with court, and to not use the year I was born of the Spirit to make testimony of Jesus I think would be to dishonour Jesus, as Jesus is my Lord. So for that and also to try to do no harm to my neighbour, and also because I am not without sin, even after being washed and regenerated, I pleaded guilty in court:
 
-> **I John 1:8-10** - If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not sinned, we make him a liar, and his word is not in us. (ESV)
+> **[I John 1:8-10](https://www.biblegateway.com/passage/?search=1%20John%201%3A8-10&version=ESV)** - If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not sinned, we make him a liar, and his word is not in us. (ESV)
 
 > **[Romans 3:4](https://www.biblegateway.com/passage/?search=Romans%203%3A4&version=ESV)** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
 
