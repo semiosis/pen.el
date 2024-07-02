@@ -9836,14 +9836,24 @@ You may feel yourself a little midget, but you're representing a victorious Chri
 
 ### How to keep your deliverance
 
-1.  Make Jesus Lord in every area of my life. An unclean spirit in a dream last night <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-02 Tue&gt; </span></span> said Jesus wasn't my Lord. I rebuke it in Jesus Christ's name. - [youtube.com: Chris Tomlin - I Will Follow  With Lyrics ](https://www.youtube.com/watch?v=g02mOpdNDtY)
-2.  Garment of Praise. **[Isaiah 61:3](https://www.biblegateway.com/passage/?search=Isaiah%2061%3A3&version=ESV)** - To grant those who mourn in Zion, Giving them a garland instead of ashes, The oil of gladness instead of mourning, The mantle of praise instead of a spirit of fainting. So they will be called oaks of righteousness, The planting of the LORD, that He may be glorified. (NASB)
+1.  Make Jesus Lord in every area of my life.
+    -   I had a dream last night <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-02 Tue&gt; </span></span> which said someone other than Jesus was my Lord (if I recall correctly), among other harassing dreams. I rebuke it in Jesus Christ's name. Jesus is my Lord and Saviour.
+    -   [youtube.com: Chris Tomlin - I Will Follow  With Lyrics ](https://www.youtube.com/watch?v=g02mOpdNDtY)
+    -   [youtube.com: Sanctify Christ as Lord](https://www.youtube.com/watch?v=w-bUfmj21DM)
+2.  Garment of Praise.
+    -   **[Isaiah 61:3](https://www.biblegateway.com/passage/?search=Isaiah%2061%3A3&version=ESV)** - To grant those who mourn in Zion, Giving them a garland instead of ashes, The oil of gladness instead of mourning, The mantle of praise instead of a spirit of fainting. So they will be called oaks of righteousness, The planting of the LORD, that He may be glorified. (NASB)
 3.  Put on the full Armour of God
-4.  Live by God's Word. **[Matthew 4:4](https://www.biblegateway.com/passage/?search=Matthew%204%3A4&version=ESV)** - But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
-5.  Submit to God and resist satan. **[James 4:7](https://www.biblegateway.com/passage/?search=James%204%3A7&version=ESV)** - Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
+4.  Live by God's Word.
+    -   **[Matthew 4:4](https://www.biblegateway.com/passage/?search=Matthew%204%3A4&version=ESV)** - But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
+5.  Submit to God and resist satan.
+    -   **[James 4:7](https://www.biblegateway.com/passage/?search=James%204%3A7&version=ESV)** - Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
 6.  Right fellowship. Our fellowship is an acid test of where we are at in our spiritual life
-7.  Come under discipline. **[I Samuel 15:23](https://www.biblegateway.com/passage/?search=1%20Samuel%2015%3A23&version=ESV)** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV) Rebellion is as witchcraft. Most Christians indulge their moods and their whims and their fancies. We are not free to do that. It's just as dangerous to do that as it is to indulge your sexual impulses. You are not free to do it.
-8.  Make Jesus central. When satan is cast out, we need to fill the vacuum with Jesus. Focus on Jesus. **[John 12:31-32](https://www.biblegateway.com/passage/?search=John%2012%3A31-32&version=ESV)** - Now is the judgment of this world; now will the ruler of this world be cast out. And I, when I am lifted up from the earth, will draw all people to myself. (ESV)
+7.  Come under discipline.
+    -   **[I Samuel 15:23](https://www.biblegateway.com/passage/?search=1%20Samuel%2015%3A23&version=ESV)** - For rebellion is as the sin of divination, and presumption is as iniquity and idolatry. Because you have rejected the word of the LORD, he has also rejected you from being king. (ESV)
+    -   Rebellion is as divination/witchcraft. Most Christians indulge their moods and their whims and their fancies. We are not free to do that. It's just as dangerous to do that as it is to indulge your sexual impulses. You are not free to do it.
+8.  Make Jesus central.
+    -   When satan is cast out, we need to fill the vacuum with Jesus. Focus on Jesus.
+    -   **[John 12:31-32](https://www.biblegateway.com/passage/?search=John%2012%3A31-32&version=ESV)** - Now is the judgment of this world; now will the ruler of this world be cast out. And I, when I am lifted up from the earth, will draw all people to myself. (ESV)
 
 
 ### Prayer by Derek Prince
@@ -13333,7 +13343,7 @@ Faith eclipses the law:
 
 The ones under the law who also walk in the footsteps of the faith that Abraham had before he was circumcised, come under the umbrella of the faith of Abraham, which the Gentiles who also share the faith of Abraham are included within.
 
-    1           Faith ([[https://www.biblegateway.com/passage/?search=Galatians%203%3A6-9&version=ESV][Galatians 3:6-9]])
+    1           Faith (Galatians 3:6-9)
     2         /       \
     3    Those who     Gentiles who share
     4  pursue the law      the faith
@@ -14592,7 +14602,7 @@ We must do good, and behave like the children of God, or we will not enter the K
 
 It's received as an inheritance by being found **in Christ**, we don't work for it, but we do need repentance from sin.
 
--   **Talk:** [youtube.com: How Do We Inherit the Kingdom? [[https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV][Galatians 5:19-21](https://www.youtube.com/watch?v=b8oMgvvwsGg), Part 2]]
+-   **Talk:** [youtube.com: How Do We Inherit the Kingdom? Galatians 5:19-21, Part 2](https://www.youtube.com/watch?v=b8oMgvvwsGg)
 
 > **[Galatians 3:18](https://www.biblegateway.com/passage/?search=Galatians%203%3A18&version=ESV)** - For if the inheritance comes by the law, it no longer comes by promise; but God gave it to Abraham by a promise. (ESV)
 
