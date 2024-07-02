@@ -85,6 +85,12 @@ Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to b
 
 > **[Hebrews 12:1-3](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1-3&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
+-   **[youtube.com: Sanctify Christ as Lord @time: 21 min 49 sec](https://youtube.com/watch?v=w-bUfmj21DM&t=1309):** When I stress that the glory of Christianity is that **God wants His name to be hallowed through your hoping in what He does for you rather than for what you do for Him, that does not lead to passivity.** It never has in the history of the Christian church. The people that believe that most dearly and most intently have the **Holy Spirit working not instead of them but inside of them**, stirring them up to maximise their enjoyment of the grace of God shed abroad in their labours. **God took the sting out of death and He took the futility out of labour, so that He says, "You will mount up like wings like eagles. You will run and not grow weary. You will walk and not faint."** His power doesn't take the joy of meaningful labour and productivity away from up. It gets under it. It gets behind it. It gets in it. It gets in front of it with reward.  It empowers it so that it's satisfying and freeing and liberating and you come to the end of your day wonderfully weary, not excruciatingly weary. The main point of the message is that God's name and His Son's name should be hallowed in our hearts and it should be hallowed best when we hope most in Him.
+
+-   **Quote from John Piper:** God took the sting out of death and He took the futility out of labour, so that He says, "You will mount up like wings like eagles. You will run and not grow weary. You will walk and not faint."
+
+AMEN to that!
+
 The followers of Paul the Apostle <ins>live by</ins> (walk by) faith; those are the righteous ones. It's a lifestyle:
 
 > **[Galatians 3:11](https://www.biblegateway.com/passage/?search=Galatians%203%3A11&version=ESV)** - Now it is evident that no one is justified before God by the law, for The righteous shall **live by** faith. (ESV)
@@ -7382,6 +7388,8 @@ Those who are in the faith <ins>can't do anything against the truth</ins>.
 I think the Apostle here understands that we must test ourselves to see if we are in the faith, and encourage others to test themselves.
 But interestingly, he says, "not that we may appear to have met the test", and "though we may seem to have failed", as if it may **appear** and **seem** as
 though others have failed, but that we should **test ourselves**.
+
+-   **Sermon:** [youtube.com: Lord, Savior, and Treasure: The Complex Beauty of Jesus Christ @time: 2 min 44 sec](https://youtube.com/watch?v=vQsES0G8blk&t=164)
 
 Though there may seem to be **apparent** paradoxes, and **apparent** contradictions in the Scripture, I think they either resolve or we rest in God, not relying on our own understanding. But I confidently affirm God is True, though I don't understand everything, and I affirm that my spiritual eyesight is getting cleaned up by the Spirit, through faith, and by the washing of the word, and I have confidence that Jesus Christ is in me:
 
