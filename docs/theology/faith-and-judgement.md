@@ -1,10 +1,12 @@
-This document has been a work in progress. I have been born-again and have done my own Bible study to be taught and be [corrected by the word of God](https://davidkitz.blog/2018/09/05/the-need-for-correction/), and I'm happy with what I have written here.
+This document has been a work in progress. I have been born-again and have done my own Bible study to be taught and be [corrected by the word of God](https://davidkitz.blog/2018/09/05/the-need-for-correction/), and I'm feeling confident with what I have written here, if I have said anything in error I pray that it would be corrected.
 I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
 a Bible study. I have just wanted to read the Bible for myself to understand and apply the Scriptures, come into agreement with God's Truth and share my understanding it with others for accountability purposes,
 and also [affirm truth as I am renewed in mind by it](https://youtu.be/IAgmQ-c4QYc?t=795). I don't presume to be always right.
 I've also added parts of my own testimony. It's my hope that this Bible study helps other people to come to the obedience of faith in God through Jesus Christ.
 
 > **[Psalms 119:105](https://www.biblegateway.com/passage/?search=Psalms%20119%3A105&version=ESV)** - Your word is a lamp to my feet and a light to my path. (ESV)
+
+> **[Job 42:7](https://www.biblegateway.com/passage/?search=Job%2042%3A7&version=ESV)** - After the LORD had spoken these words to Job, the LORD said to Eliphaz the Temanite: My anger burns against you and against your two friends, for you have not spoken of me what is right, as my servant Job has. (ESV)
 
 > I agree whole heartedly with Keith Green here:
 > 
@@ -180,7 +182,7 @@ We are supposed to have a response of **repentance from sin**. God's kindness is
 
 > **[Matthew 5:6](https://www.biblegateway.com/passage/?search=Matthew%205%3A6&version=ESV)** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
 
-Those who annul and teach others to break the law will be called least in the kingdom. It's not humility to do so.
+Those who annul and teach others to break the law will be 'called' least in the kingdom. It's not humility to do so.
 
 -   It's prideful to say that God is wrong, Jesus behaved badly and that the Law is wrong
     -   It refuses to acknowledge sin
@@ -379,6 +381,18 @@ We are saved while believing in the name of Jesus of Nazareth, the only Son of G
 And brought into doing the will of God:
 
 > **[Romans 15:17-18](https://www.biblegateway.com/passage/?search=Romans%2015%3A17-18&version=ESV)** - In Christ Jesus, then, I have reason to be proud of my work for God. For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to **obedience—by word and deed,**
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+-   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
+
+Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+
+As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
+
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+
+> **[John 16:27-28](https://www.biblegateway.com/passage/?search=John%2016%3A27-28&version=ESV)** - for the Father himself loves you, because you have loved me and have believed that I came from God. I came from the Father and have come into the world, and now I am leaving the world and going to the Father. (ESV)
 
 We have confidence when we keep His commandments, believing in the name of God's Son Jesus Christ and loving one another and our heart doesn't condemn us:
 
@@ -1397,9 +1411,9 @@ We must continue in our faith. We must continue to believe Jesus and trust in Je
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
-I believe that becoming the righteousness of God is **cooperative** in that we allow Jesus to wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children is how we receive and walk into the kingdom which is given to us and that walking (living, **katergazomai**) in a childlike faith in Jesus is how we have the righteousness that is by faith. Living by faith is walking in faith, is following Jesus:
+I believe that becoming the righteousness of God is **cooperative** in that we allow Jesus to wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children is how we receive and walk into the kingdom which is given to us and that walking (living, **katergazomai**) in a childlike faith in Jesus is how we have the righteousness that is by faith. Living by faith is walking in faith, is following Jesus. I really wish there was not a chapter break between these two verses because it's revealing to to read them side by side:
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 We should disobey sin, and present ourselves to God as those alive from the dead, and our members as **instruments of righteousness to God**. We should be practicing righteousness, practicing love and holiness and truth:
 
@@ -1484,7 +1498,7 @@ Jesus' act of obedience leads to:
 
 > **[Romans 5:18](https://www.biblegateway.com/passage/?search=Romans%205%3A18&version=ESV)** - Therefore, as one trespass led to condemnation for all men, so one act of righteousness leads to justification and life for all men. (ESV)
 
-> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
+> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - **He himself bore our sins in his body on the tree**, <ins>that we might die to sin and live to righteousness. **By his wounds you have been healed**</ins>. (ESV)
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
 
@@ -1741,6 +1755,8 @@ We need to perform our salvation in obedience to God:
 > **[Philippians 2:12](https://www.biblegateway.com/passage/?search=Philippians%202%3A12&version=ESV)** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
 -   **Sermon:** [youtube.com: Work Out What Christ Has Won: The Christian Life as Gift and Duty](https://www.youtube.com/watch?v=g1L9ZyBF2Z8)
+
+-   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
 
 Jesus first made Paul His own, now Paul wants to press on to perfection/completion:
 
@@ -2626,7 +2642,9 @@ The original Apostles were instructed to feed Jesus' sheep with the living bread
 
 > **[John 6:33](https://www.biblegateway.com/passage/?search=John%206%3A33&version=ESV)** - For the bread of God is he who comes down from heaven and gives life to the world.
 
-> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will. (ESV)
+Repentance leads to the knowledge of the truth, and ceasing to do the devil's will:
+
+> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them **repentance leading to a knowledge of the truth,** and **they may escape from the snare of the devil**, after being **captured by him to do his will.** (ESV)
 
 
 ## Even the Old Testament makes a person wise for salvation through faith in Christ Jesus:
@@ -3234,7 +3252,15 @@ I've also had a vision of a star rising in a purple sky (like a morning sunrise)
 
 > **[II Peter 1:19](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A19&version=ESV)** - And we have something more sure, the prophetic word, to which you will do well to pay attention as to a lamp shining in a dark place, until the day dawns and the morning star rises in your hearts, (ESV)
 
-I believe that cessationists are in error. Modern-day apostles, I believe, like branches on a tree, still branch from the original Apostles, and should preach the same Jesus, and the same gospel, in the same Spirit, and any apostle must have Jesus as their cornerstone. I believe Jesus still appoints apostles, and I'm prophetic myself so I have no doubts regarding this. I personally still see all things being placed into subjection under Christ and have no reason to think that Jesus has stopped appointing apostles and prophets as God is growing and guiding His church:
+I believe that cessationists are in error. Modern-day apostles, I believe, like branches on a tree, still branch from the original Apostles, and should preach the same Jesus, and the same gospel, in the same Spirit, and any apostle must have Jesus as their cornerstone:
+
+> **[Matthew 7:14-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A14-20&version=ESV)** - For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
+
+We have the opportunity to receive correction from God and make the tree good and its fruit good:
+
+> **[Matthew 12:33-35](https://www.biblegateway.com/passage/?search=Matthew%2012%3A33-35&version=ESV)** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. You brood of vipers! How can you speak good, when you are evil? For out of the abundance of the heart the mouth speaks. The good person out of his good treasure brings forth good, and the evil person out of his evil treasure brings forth evil. (ESV)
+
+I believe Jesus still appoints apostles, and I'm prophetic myself so I have no doubts regarding this. I personally still see all things being placed into subjection under Christ and have no reason to think that Jesus has stopped appointing apostles and prophets as God is growing and guiding His church:
 
 > **[Ephesians 2:20-22](https://www.biblegateway.com/passage/?search=Ephesians%202%3A20-22&version=ESV)** - built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone, in whom the whole structure, being joined together, grows into a holy temple in the Lord. In him you also are being built together into a dwelling place for God by the Spirit. (ESV)
 
@@ -3278,6 +3304,8 @@ I agree whole heartedly with this guy:
 -   [Are All Christians Disciples? (Lordship Salvation)](https://www.youtube.com/watch?v=BCQX4R1mFAk)
 
 I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian.
+
+> **II Corinthians 3:18** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
@@ -4043,6 +4071,26 @@ The ones who are slaves to righteousness, following Jesus Christ, go to eternal 
 
 ### Believing Jesus, we have **the right** to become a child of God
 
+> **[John 1:12](https://www.biblegateway.com/passage/?search=John%201%3A12&version=ESV)** - But to all who did receive him, who believed in his name, he gave the right to become children of God, (ESV)
+
+OK, so how?
+
+Believers who turn to the Lord. Here a great number of the total number of believers ended up turning to the Lord::
+
+> **[Acts 11:21](https://www.biblegateway.com/passage/?search=Acts%2011%3A21&version=ESV)** - And the hand of the Lord was with them, and a great number who believed turned to the Lord. (ESV)
+
+Going forward, we must remain faithful to Jesus:
+
+> **[Acts 11:23-24](https://www.biblegateway.com/passage/?search=Acts%2011%3A23-24&version=ESV)** - When he came and saw the grace of God, he was glad, and he exhorted them all to remain faithful to the Lord with steadfast purpose, for he was a good man, full of the Holy Spirit and of faith. And a great many people were added to the Lord. (ESV)
+
+Believers who receive the Spirit:
+
+> **[John 7:39](https://www.biblegateway.com/passage/?search=John%207%3A39&version=ESV)** - Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+
+In this situation, **all** of the believers were of one heart and mind:
+
+> **[Acts 4:32](https://www.biblegateway.com/passage/?search=Acts%204%3A32&version=ESV)** - Now the full number of those who believed were of one heart and soul, and no one said that any of the things that belonged to him was his own, but they had everything in common. (ESV)
+
 -   **Song:** [youtube.com: Who You Say I Am - Hillsong Worship](https://www.youtube.com/watch?v=lKw6uqtGFfo&list=RDGMEMMib4QpREwENw3_jAc0YgNwVMdhU-Omwg2rU&index=5)
 
 Receive Jesus, believing in His name:
@@ -4236,9 +4284,9 @@ Grace is free, but a person **must** become obedient - God gives the heart to ob
 
 > **[Revelation of John 22:3](https://www.biblegateway.com/passage/?search=Revelation%2022%3A3&version=ESV)** - No longer will there be anything accursed, but <ins>the throne of God and of the Lamb</ins> will be in it, and **his servants will worship him.** (ESV)
 
-I believe that becoming the righteousness of God is **instantaneous** when we believe but also **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have His righteousness because we are found **in** Him and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have His righteousness, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus:
+I believe that becoming the righteousness of God is initially **instantaneous** when we believe but going forward it also is **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found **in** Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 We must live for the will of God:
 
@@ -4809,7 +4857,9 @@ Even if it becomes anathema to speak the truth and to live out the truth, I woul
 
 > **[Matthew 24:9-13](https://www.biblegateway.com/passage/?search=Matthew%2024%3A9-13&version=ESV)** - Then <ins>they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake</ins>. And then <ins>many will fall away and betray one another and hate one another</ins>. And many false prophets will arise and lead many astray. And because <ins>lawlessness will be increased, the love of many will grow cold</ins>. But <ins>the one who endures to the end will be saved.</ins> (ESV)
 
-We don't want to cultivate the opposite hate, depression, fear and anxiety, being inconsiderate, abusiveness, unwholesomeness, faithlessness, abrasiveness and quick-temperedness by punishing people who are prompted by the Holy Spirit to act:
+We don't want to cultivate what is opposite to the fruit of the Spirit; things such as hate, depression, fear and anxiety, being inconsiderate, abusiveness, unwholesomeness, faithlessness, abrasiveness and quick-temperedness by punishing people who are prompted by the Holy Spirit to act.
+
+But if we are afraid we should seek to have a genuine affection for God, loving Him with our whole heart, and seek to obey Jesus and build one another up in love, and that should cast out fear:
 
 > **[I John 4:18](https://www.biblegateway.com/passage/?search=1%20John%204%3A18&version=ESV)** - There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love. (ESV)
 
@@ -7345,6 +7395,18 @@ It was inevitable. The Scripture **had** to be fulfilled:
 
 ### Faith in Jesus Christ doesn't exclude obedience. Knowing Jesus is more than knowing about Jesus. About the Galatian error for those who try to use this passage in order to avoid obeying Jesus
 
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+-   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
+
+Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+
+As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
+
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+
+> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
+
 Even the Apostle Paul explains that our freedom is for serving one another:
 
 > **[Galatians 5:13](https://www.biblegateway.com/passage/?search=Galatians%205%3A13&version=ESV)** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but **through love serve one another.** (ESV)
@@ -7547,7 +7609,7 @@ Do what Jesus says and receive eternal life - obey Jesus:
 
 > **[1 Corinthians 1:30-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A30-31&version=ESV)** -  He is the source of your life in Christ Jesus, whom God made our wisdom and our righteousness and sanctification and redemption.  Therefore, as it is written, Let the one who boasts, boast in the Lord.  (ESV)
 
-God through Jesus is the source of our personal righteousness, and He **is** our righteousness:
+God through Jesus is the source of our personal righteousness as we are found in Him, and our righteousness comes through Him. That personal righteousness doesn't belong to us alone, but it also belongs to Christ because it comes from Christ:
 
 > **[Philippians 1:9-11](https://www.biblegateway.com/passage/?search=Philippians%201%3A9-11&version=ESV)** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
@@ -7809,6 +7871,14 @@ Also endeavor to also do lots of service as that is what Jesus' Kingdom is all a
 
 
 # Repentance from sin
+
+Repentance leads to the knowledge of the truth, and ceasing to do the devil's will:
+
+> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them **repentance leading to a knowledge of the truth,** and **they may escape from the snare of the devil**, after being **captured by him to do his will.** (ESV)
+
+We must cease to do the devil's will:
+
+> **[Hebrews 10:26-31](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A26-31&version=ESV)** - For **if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment**, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has **outraged the Spirit of grace?** For we know him who said, Vengeance is mine; I will repay. And again, The Lord will judge his people. It is a fearful thing to fall into the hands of the living God. (ESV)
 
 
 ## Parable of the prodigal son - God's joy over a sinner that repents from sin
@@ -8131,8 +8201,26 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     In similar fashion to Jesus continually obeying Father God as he endured suffering, I think we should learn to submit and follow Jesus' commandments
     
     > **[Hebrews 5:7-10](https://www.biblegateway.com/passage/?search=Hebrews%205%3A7-10&version=ESV)** - In the days of his flesh, Jesus offered up prayers and supplications, with loud cries and tears, to him who was able to save him from death, and he was heard because of his reverence. <ins>Although he was a son, he learned obedience through what he suffered.</ins> And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek.
+
+2.  Become what we are by identity - put to death the old leaven
+
+    After being born-again and placed into Christ, we must put to death the old leaven. We consider ourselves dead to sin and alive from the dead.
     
     I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light which involves walking in love characteristic of Christ's love.
+    
+    -   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
+    
+    Those who have been united with Christ really are in reality an 'unleavened' lump, and we attack the old leaven to get it out. We have been made new with union in Christ, and then we must then become in experience what we are in reality. The old leaven lingers, so we attack the remaining leaven:
+    
+    > **[I Corinthians 5:6-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A6-7&version=ESV)** - Your boasting is not good. Do you not know that a little leaven leavens the whole lump? Cleanse out the old leaven that you may be a new lump, as you really are unleavened. For Christ, our Passover lamb, has been sacrificed. (ESV)
+    
+    We must consider ourselves dead to sin and alive to God:
+    
+    > **[Romans 6:2,11](https://www.biblegateway.com/passage/?search=Romans%206%3A2&version=ESV)** - By no means! How can we who died to sin still live in it? So you also must consider yourselves dead to sin and alive to God in Christ Jesus. (ESV)
+    
+    Because we have died and our life is hidden with Christ in God we should put to death what is earthly in us. We are really unleavened so we should cleanse out the old leaven:
+    
+    > **[Colossians 3:3-5](https://www.biblegateway.com/passage/?search=Colossians%203%3A3-5&version=ESV)** - For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you:** sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. (ESV)
     
     <ins>[II John 1:1-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A1-11&version=ESV) highlights</ins>:
     
@@ -8193,9 +8281,15 @@ As we are have faith in Jesus, even obeying Him to go out into the world, we are
 
 We are healed, corrected, sanctified by God's word.
 
-I believe that becoming the righteousness of God is **instantaneous** when we believe but also **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have His righteousness because we are found **in** Him and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have His righteousness, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus:
+I believe that becoming the righteousness of God is initially **instantaneous** when we believe but going forward it also is **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith.
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+An adequate reading of the following which makes sense to me is that being found in Jesus, we have a righteousness which does indeed belong to us but it belongs also to Jesus who we are found in. The righteousness which we have in Jesus doesn't come from the law but through faith in Jesus, depending on faith in Jesus. In other words, the righteousness is not our own apart from Jesus, but the righteousness still belongs to us if it is the righteousness of faith in Jesus, us being found in Jesus. Our righteousness being found in Jesus doesn't make it self-righteousness to obey God's commandments:
+
+> **[Philippians 3:9](https://www.biblegateway.com/passage/?search=Philippians%203%3A9&version=ESV)** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— (ESV)
+
+I believe we have righteousness because we are found **in** Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
+
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 The Holy Spirit goes to those who obey God, and causes the person to walk in God's precepts - stopping lying, stealing, coveting, idolizing, cheating, etc.
 
@@ -8338,7 +8432,7 @@ The cross means a changed life, becoming like Jesus, keeping Jesus' commandments
 
 ### Filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God
 
-Jesus is the source of our personal righteousness, and He **is** our righteousness.
+God through Jesus is the source of our personal righteousness as we are found in Him, and our righteousness comes through Him. That personal righteousness doesn't belong to us alone, but it also belongs to Christ because it comes from Christ:
 
 > **[Philippians 1:9-11](https://www.biblegateway.com/passage/?search=Philippians%201%3A9-11&version=ESV)** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
@@ -8689,23 +8783,23 @@ of faith, such as obedience to the discipline
 of Christ, that should yield the peaceful
 fruit of righteousness.
 
-I believe that becoming the righteousness of God is **instantaneous** when we believe but also **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have His righteousness because we are found **in** Him and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have His righteousness, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus:
+I believe that becoming the righteousness of God is initially **instantaneous** when we believe but going forward it also is **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found **in** Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 I believe we should have a noticable change of heart and behaviour as a result of trusting obedient faith in Jesus:
 
 > **[II Corinthians 5:21](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
-We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit:
+We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit. We should also notice that healing comes with stopping sinning. Jesus bore our sins in His body on the tree so that we might stop sinning and live righteous lives in holiness and doing good:
 
-> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
+> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - **He himself bore our sins in his body on the tree**, <ins>that we might die to sin and live to righteousness. **By his wounds you have been healed**</ins>. (ESV)
 
 I think we should always be seeking the glory
 of our Jesus Christ, not seeking our own
 glory. Personally, my motivations for writing this Bible Study document, and for 'good works' etc. is simply because:
 
--   I am remorseful for the sin which I've had in my life
+-   I am remorseful for the sin which I've had in my life and want to be healed so that I no longer serve sin, but instead I live to righteousness (being obedient to God)
 -   I want to serve God, and I want to live in the truth
 -   I have a lot of joy in showing people that Jesus Christ is real
 -   I want to love Jesus. It seems to me like it's the reason for living
@@ -8738,9 +8832,9 @@ I believe we should have a noticable change of heart and behaviour as a result o
 
 > **[II Corinthians 5:21](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God. (ESV)
 
-We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit:
+We are healed by His wounds - a lot of Christians try to suppress the <ins>"We are healed"</ins> bit. We should also notice that healing comes with stopping sinning. Jesus bore our sins in His body on the tree so that we might stop sinning and live righteous lives in holiness and doing good:
 
-> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. **By his wounds you have been healed**. (ESV)
+> **[I Peter 2:24](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24&version=ESV)** - **He himself bore our sins in his body on the tree**, <ins>that we might die to sin and live to righteousness. **By his wounds you have been healed**</ins>. (ESV)
 
 I don't think James contradicts Paul because I think faith alone is sufficient but that working faith is fine "You'll know them by their fruits.". Also it's God, not us, who justifies:
 
@@ -9259,7 +9353,7 @@ Believing Father God Jehovah, loving Him, obeying His commandments, loving and o
 
 > **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
-> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
+> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
 Faith doesn't exist without obedience. Obedience doesn't exist without faith. The obedient will love Jesus, obeying Jesus, having faith in Jesus.
 
@@ -12481,7 +12575,7 @@ ONLY **working faith** counts for anything. Even Paul agrees. However, it says '
 
 Loving God is obeying His commandments.
 
-> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
+> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
 
 # We must love God
@@ -12553,6 +12647,10 @@ Jesus has to be our Pearl of Great price:
 
 
 ### We need to treasure Jesus, and from there we should keep Jesus' commandments. Jesus must be our number 1
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+-   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
 Jesus certainly does command us to have emotions for things. For example:
 
@@ -12741,7 +12839,7 @@ Being washed, we ought to wash one another's feet:
 
 Correct others with gentleness:
 
-> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will. (ESV)
+> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them **repentance leading to a knowledge of the truth,** and **they may escape from the snare of the devil**, after being **captured by him to do his will.** (ESV)
 
 
 ## Entering into life / the Kingdom of Heaven
@@ -12902,9 +13000,15 @@ The knowledge of Jesus Christ our God and Saviour comes through His words and ob
 
 > **[Matthew 6:19-21](https://www.biblegateway.com/passage/?search=Matthew%206%3A19-21&version=ESV)** - Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also.
 
-***Loving God is obedience to God.***
+-   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
-> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
+Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+
+As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
+
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+
+> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
 AMEN!!
 
@@ -13197,9 +13301,9 @@ Faith involves obedience. It's repentance from sin to the aligning of the heart 
 
 ## The faith itself may be a gift, but certainly is cooperative
 
-I believe that becoming the righteousness of God is **instantaneous** when we believe but also **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have His righteousness because we are found **in** Him and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have His righteousness, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus:
+I believe that becoming the righteousness of God is initially **instantaneous** when we believe but going forward it also is **cooperative** as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found **in** Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found **in** Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 God and Abram (Abraham) had a real relationship first.
 
@@ -13426,7 +13530,7 @@ Turning.
 
 ## Loving God is obedience to God
 
-> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome.
+> **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
 
 ## The law
@@ -15120,6 +15224,10 @@ The sexually immoral, impure, the covetous, the idolaters, have **no inheritance
 
 > **[Ephesians 5:5](https://www.biblegateway.com/passage/?search=Ephesians%205%3A5&version=ESV)** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has **no inheritance in the kingdom of Christ and God.** (ESV)
 
+An adequate reading of the following which makes sense to me is that being found in Jesus, we have a righteousness which does indeed belong to us but it belongs also to Jesus who we are found in. The righteousness which we have in Jesus doesn't come from the law but through faith in Jesus, depending on faith in Jesus. In other words, the righteousness is not our own apart from Jesus, but the righteousness still belongs to us if it is the righteousness of faith in Jesus, us being found in Jesus. Our righteousness being found in Jesus doesn't make it self-righteousness to obey God's commandments:
+
+> **[Philippians 3:9](https://www.biblegateway.com/passage/?search=Philippians%203%3A9&version=ESV)** - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— (ESV)
+
 Flock = Jesus' followers. God **wants** to give Jesus' followers the kingdom, but we have to stop the sin:
 
 > **[Luke 12:30-32](https://www.biblegateway.com/passage/?search=Luke%2012%3A30-32&version=ESV)** - For all the nations of the world seek after these things, and your Father knows that you need them. Instead, seek his kingdom, and these things will be added to you. Fear not, little flock, for **it is your Father's good pleasure to give you the kingdom.** (ESV)
@@ -16403,7 +16511,7 @@ cooperate with God by working, etc.
 
 > **[Psalms 66:18](https://www.biblegateway.com/passage/?search=Psalms%2066%3A18&version=ESV)** - If I had cherished iniquity in my heart, the Lord would not have listened. (ESV)
 
-> **[II Corinthians 5:21-6](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV):1** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
+> **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
 
 But if God doesn't want you to get a job at a
 particular time, you wont get a job, etc. and that goes for other things such as relationships.
@@ -18344,7 +18452,7 @@ The universe is upheld by the word of Jesus' power.
 
     > **[Matthew 5:6](https://www.biblegateway.com/passage/?search=Matthew%205%3A6&version=ESV)** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
     
-    Those who annul and teach others to break the law will be called least in the kingdom. It's not humility to do so.
+    Those who annul and teach others to break the law will be 'called' least in the kingdom. It's not humility to do so.
     
     -   It's prideful to say that God is wrong, Jesus behaved badly and that the Law is wrong
         -   It refuses to acknowledge sin
@@ -19758,7 +19866,13 @@ Grace given through faith alone is not license to sin, but the power of salvatio
 
 > **[Matthew 12:33](https://www.biblegateway.com/passage/?search=Matthew%2012%3A33&version=ESV)** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit.
 
-> **[Hebrews 10:26-31](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A26-31&version=ESV)** - For if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has outraged the Spirit of grace? For we know him who said, Vengeance is mine; I will repay. And again, The Lord will judge his people. It is a fearful thing to fall into the hands of the living God. (ESV)
+Repentance leads to the knowledge of the truth, and ceasing to do the devil's will:
+
+> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them **repentance leading to a knowledge of the truth,** and **they may escape from the snare of the devil**, after being **captured by him to do his will.** (ESV)
+
+We must cease to do the devil's will:
+
+> **[Hebrews 10:26-31](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A26-31&version=ESV)** - For **if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment**, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has **outraged the Spirit of grace?** For we know him who said, Vengeance is mine; I will repay. And again, The Lord will judge his people. It is a fearful thing to fall into the hands of the living God. (ESV)
 
 The big forgiveness, and that we must stop sinning to be provided an entrance into the eternal kingdom of our Lord and Saviour Jesus Christ:
 
@@ -24346,6 +24460,10 @@ I wont allow myself to be buried in condemnation by other people or by the enemy
 Now I'm saying that it's all in God's hands, and I've made an effort to have Jesus as the number one most important person in my life, and I feel like I have a good conscience with God, and I have been acting in truth (I have peace, and joy, and the fruit of the Holy Spirit with my decisions and I wouldn't change much. I'd still have made the proposal. It wasn't a mistake) and trying to conform to God's truth and also, trying to walk with faith in Jesus Christ, and fully with God, to my best endeavor, but God is the justifier. And I am as far as I can tell now in good conscience with God and a bachelor.
 
 > **[I Timothy 1:19](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A19&version=ESV)** - holding faith and a good conscience. By rejecting this, some have made shipwreck of their faith, (ESV)
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+-   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
 I have absolutely no unforgiveness or grudge with anyone involved regarding what has happened with the marriage proposal and I just want God to completely deliver me from the evil.
 
