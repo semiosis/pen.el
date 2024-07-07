@@ -69,7 +69,10 @@
 
 ;; Filter should include the extract and transform commands
 (defun pen-fwfzf (&optional type)
-  "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only."
+  "This will pipe the selection into fzf filters, replacing the original region. If no region is selected, then the entire buffer is passed read only.
+
+e:$EMACSD/pen.el/config/filters/filters.sh
+"
   (interactive)
 
   (cond ((>= (prefix-numeric-value current-prefix-arg) 16)
