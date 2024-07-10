@@ -2383,3 +2383,4 @@ chemtable
 chembalance
 listen
 ivy-fuz
+shrink-path

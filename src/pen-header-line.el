@@ -61,7 +61,10 @@
   ""
   (setq buffer (or buffer (current-buffer)))
 
-  (let ((fh (ph-get-path-string-for-buf buffer)))
+  (let ((fh
+         (mnm (ph-get-path-string-for-buf buffer))
+         ;; (shrink-path-file (ph-get-path-string-for-buf buffer))
+         ))
     (if fh
         (let* ((ph--full-header fh)
                (ph--header fh)

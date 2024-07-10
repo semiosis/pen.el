@@ -2373,3 +2373,5 @@ agi texlive-fonts-extra
 agi texstudio
 
 agi rename
+
+e ia shrink-path
