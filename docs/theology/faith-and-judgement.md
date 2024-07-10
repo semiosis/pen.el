@@ -1547,7 +1547,7 @@ We should disobey sin, and present ourselves to God as those alive from the dead
 But suffering for Christ's sake should be for giving glory to Jesus:
 
 
-### Eternal life and salvation is a gift received through faith
+### Eternal life and salvation is a gift received through faith and obedience to God
 
 We put our hope on Him to be our High Priest and Advocate, we obey Him as He saves us.
 
@@ -1560,7 +1560,19 @@ These should really go hand in hand:
 
 > **[John 17:3](https://www.biblegateway.com/passage/?search=John%2017%3A3&version=ESV)** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
 
-Being justified by Jesus' blood, we are saved by Him from the wrath of God:
+We ***endeavour*** to be justified in Christ - in Christ means abiding in Christ - through faith; trusting, believing, obedient faith:
+
+> **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith (G4102 pistis) in Jesus Christ**, so we also have believed (G4100 **pisteuo**) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
+
+Abraham's **trusting** faith was counted to him as righteousness. I guess it was counted because he was **fully conviced**, and trusting God. This same justification **will be** counted to those who trust in Go who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification:
+
+> **[Romans 4:20-25](https://www.biblegateway.com/passage/?search=Romans%204%3A20-25&version=ESV)** - No distrust made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised. That is why his faith was counted to him as righteousness. But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+
+We believe that our justification comes by faith so we place our trust in God and continue trusting; we just get on with living for God and serving God and trusting in God for that justification as we serve God and live in the peace of God. We don't justify ourselves. We have faith in God that He will/does justify us, and we get on with living for and serving God:
+
+> **[Romans 5:1-2](https://www.biblegateway.com/passage/?search=Romans%205%3A1-2&version=ESV)** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God. (ESV)
+
+Being justified by Jesus' blood, we are saved by Him from the wrath of God. We have faith in God also to be saved from the wrath of God. That doesn't come with God asking us to turn from our sin:
 
 > **[Romans 5:9](https://www.biblegateway.com/passage/?search=Romans%205%3A9&version=ESV)** - Since, therefore, we have now been justified by his blood, much more shall we be <ins>saved by him from the wrath of God.</ins> (ESV)
 
@@ -7131,40 +7143,13 @@ The righteousness in the actual doing of the law above is still upheld but there
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A14&amp;version=ESV">Exodus 20:14</a></b> - You shall not commit adultery. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Proverbs%206%3A32&amp;version=ESV">Proverbs 6:32</a></b> - He who commits adultery lacks sense; he who does it destroys himself. (ESV) <b><a href="https://www.biblegateway.com/passage/?search=Romans%207%3A2-3&amp;version=ESV">Romans 7:2-3</a></b> - Thus a married woman is bound by law to her husband while he lives, but if her husband dies she is released from the law of marriage. Accordingly, she will be called an adulteress if she lives with another man while her husband is alive. But if her husband dies, she is free from that law, and if she marries another man she is not an adulteress. (ESV)</td>
 </tr>
-</tbody>
-</table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">#</th>
-<th scope="col" class="org-left">Bible reference</th>
-<th scope="col" class="org-left">&#xa0;</th>
-</tr>
-</thead>
-
-<tbody>
 <tr>
 <td class="org-left"><b>8</b></td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A15&amp;version=ESV">Exodus 20:15</a></b> - You shall not steal. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Ephesians%204%3A28&amp;version=ESV">Ephesians 4:28</a></b> - Let the thief no longer steal, but rather let him labor, doing honest work with his own hands, so that he may have something to share with anyone in need. (ESV)</td>
 </tr>
-
-
-<tr>
-<td class="org-left"><b>9</b></td>
-<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A16&amp;version=ESV">Exodus 20:16</a></b> - You shall not bear false witness against your neighbor. (ESV)</td>
-<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A8-11&amp;version=ESV">I Timothy 1:8-11</a></b> - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice homosexuality, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)</td>
-</tr>
 </tbody>
 </table>
 
@@ -7187,6 +7172,13 @@ The righteousness in the actual doing of the law above is still upheld but there
 </thead>
 
 <tbody>
+<tr>
+<td class="org-left"><b>9</b></td>
+<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A16&amp;version=ESV">Exodus 20:16</a></b> - You shall not bear false witness against your neighbor. (ESV)</td>
+<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A8-11&amp;version=ESV">I Timothy 1:8-11</a></b> - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice homosexuality, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)</td>
+</tr>
+
+
 <tr>
 <td class="org-left"><b>10</b></td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A17&amp;version=ESV">Exodus 20:17</a></b> - You shall not covet your neighbor's house; you shall not covet your neighbor's wife, or his male servant, or his female servant, or his ox, or his donkey, or anything that is your neighbor's. (ESV)</td>
