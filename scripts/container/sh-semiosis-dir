@@ -4,6 +4,7 @@ export TTY
 clear
 # exec 1> >(pen-mnm)
 
+# o  zcd ~/.emacs.d/host/prompts
 # t  zcd ~/.emacs.d/host/openai-classification-training-data
 read -r -d '' options <<HEREDOC
 .  EDIT
@@ -35,7 +36,7 @@ d  zcd ~/.emacs.d/host/prompt-design-patterns
 t  zcd ~/.emacs.d/host/personalities
 I  zcd ~/.emacs.d/host/incarnations
 T  zcd ~/.emacs.d/host/tomes
-o  zcd ~/.emacs.d/host/prompts
+o  zcd ~/.emacs.d/host/notes-on-sermons
 O  zcd ~/.emacs.d/host/openai-complete-clj
 m  zcd ~/.emacs.d/host/engines
 n  zcd ~/.emacs.d/host/interpreters
@@ -81,7 +82,8 @@ case "$d" in
     R) cmd="zcd ~/.emacs.d/host/rhizome" ;;
     f) cmd="zcd ~/.emacs.d/host/pen.el/src" ;;
     X) cmd="sp ~/.emacs.d/host/pen.el/src/pen-examplary.el" ;;
-    o) cmd="zcd ~/.emacs.d/host/prompts" ;;
+    # o) cmd="zcd ~/.emacs.d/host/prompts" ;;
+    o) cmd="zcd ~/.emacs.d/host/notes-on-sermons" ;;
     O) cmd="zcd ~/.emacs.d/host/openai-complete-clj" ;;
     m) cmd="zcd ~/.emacs.d/host/engines" ;;
     n) cmd="zcd ~/.emacs.d/host/interpreters" ;;

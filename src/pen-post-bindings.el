@@ -33,6 +33,7 @@
 (sslk "laH" #'hackernews)
 (sslk "lan" #'ibuffer)
 (sslk "laj" #'e-faith-and-judgement)
+(sslk "lao" #'e-notes-on-sermons)
 (sslk "lam" #'tzc-world-clock)
 (sslk "law" #'aws-instances)
 ;; (sslk "lak" #'kubernetes-overview)

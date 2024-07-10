@@ -27,4 +27,13 @@
           ((>= gparg 4) (e "/volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org"))
           (t (e "$EMACSD/pen.el/docs/theology/faith-and-judgement.org")))))
 
+(defun e-notes-on-sermons ()
+  (interactive)
+
+  (let ((gparg (prefix-numeric-value current-prefix-arg))
+        (current-prefix-arg nil))
+    (cond ;; ((>= gparg 16) (sps "v /volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons/notes-on-sermons.org $EMACSD/pen.el/docs/theology/faith-and-judgement.org"))
+          ((>= gparg 4) (e "/volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons/notes-on-sermons.org"))
+          (t (e "/volumes/home/shane/var/smulliga/source/git/semiosis/notes-on-sermons/notes-on-sermons.org")))))
+
 (provide 'pen-documents)
