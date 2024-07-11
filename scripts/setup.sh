@@ -2375,3 +2375,5 @@ agi texstudio
 agi rename
 
 e ia shrink-path
+
+pip3.8 install AoE2ScenarioParser
