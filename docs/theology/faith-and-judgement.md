@@ -10,6 +10,8 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 -   **We are accountable to our Lord Jesus Christ for our actions and beliefs:** [youtube.com: Isn't Veganism Closer to God's Original Design?](https://www.youtube.com/watch?v=7NkpboocNA4)
 
+> **[Romans 14:4](https://www.biblegateway.com/passage/?search=Romans%2014%3A4&version=ESV)** - Who are you to pass judgment on the servant of another? **It is before his own master that he stands or falls.** And <ins>he will be upheld, for the Lord is able to make him stand.</ins> (ESV)
+
 We serve the Most High God, Jehovah and Jesus Christ who He has sent:
 
 > **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
@@ -195,27 +197,23 @@ The righteousness of God through faith in Jesus Christ is available for all who 
 
 > **[Romans 3:20-26](https://www.biblegateway.com/passage/?search=Romans%203%3A20-26&version=ESV)** - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that **he might be** just and **the justifier** of the one who has faith in Jesus. (ESV)
 
-The law is good. It's not our source of justification but we don't teach people to disobey it.
-Instead we focus on following Jesus first and foremost.
+Those in the kingdom of God hold faith in Jesus and serve Jesus:
 
-Those who annul and teach others to break the law will be 'called' least in the kingdom. It's not humility to do so.
+> **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
 
--   It's prideful to say that God is wrong, Jesus behaved badly and that the Law is wrong, and we shouldn't love God and our neighbour
-    -   Teaching others to break the law is teaching bad behaviour. It refuses to acknowledge sin and it refuses to agree with God and it refuses to acknowledge loving God and one another, and it refuses to acknowledge holiness and being a living sacrifice for God
+There are commandments from God which even Paul the Apostle regarded as important to follow for all people who serve Jesus, such as the 10 Commandments and the commandments which came from Jesus Himself, including the Golden Rule:
 
-Those who keep God's commandments and AND the righteousness of faith / the testimony of Jesus will be called great in the kingdom.
+> **[Romans 13:9-10](https://www.biblegateway.com/passage/?search=Romans%2013%3A9-10&version=ESV)** - The commandments, You shall not commit adultery, You shall not murder, You shall not steal, You shall not covet, and any other commandment, are summed up in this word: You shall love your neighbor as yourself. Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
 
--   It is humility to keep God's commandments by faith (and not works), accountable to God who sees in secret
+The law is good. It's not our source of justification but we don't teach people to disobey it, especially those who follow it by faith.
 
-It's God who tests the faith, and God who justifies:
+> **[Romans 14:10-14](https://www.biblegateway.com/passage/?search=Romans%2014%3A10-14&version=ESV)** - Why do you pass judgment on your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God; for it is written, As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God. So then each of us will give an account of himself to God. Therefore let us not pass judgment on one another any longer, but rather decide never to put a stumbling block or hindrance in the way of a brother. I know and am persuaded in the Lord Jesus that nothing is unclean in itself, but it is unclean for anyone who thinks it unclean. (ESV)
 
-> **[II Corinthians 10:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A18&version=ESV)** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+Instead we focus on following Jesus first and foremost:
 
-We 'endeavour' to be justified **in Christ**. We want to be found **in Christ**. We don't justify ourselves, and we don't put ourselves in, but we endeavour to be justified by God by being **in Christ**:
+> **[Romans 14:22-23](https://www.biblegateway.com/passage/?search=Romans%2014%3A22-23&version=ESV)** - The faith that you have, keep between yourself and God. Blessed is the one who has no reason to pass judgment on himself for what he approves. But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin. (ESV)
 
-> **[Galatians 2:17](https://www.biblegateway.com/passage/?search=Galatians%202%3A17&version=ESV)** - But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! (ESV)
-
-Surely to be found **in Christ** we would be trusting Him and and trusting in Him and living for Him, and even serving Him.
+-   **[Quote by John Piper](https://youtu.be/clrbUjkbNsM?t=701):** That's who we are as Christians. When we walk according to the Spirit, we fulfill the just requirement of the law. That is, we keep the commandments, we love. We are doers of the law. Not sinlessly perfect law-keepers. Nobody is nor anybody has been except Jesus, which is why we depend on Him, but rather, radically transformed people, through faith, in the power of the Holy Spirit, leaning on the grace of God that comes to us through Jesus Christ.
 
 
 # Confessions of faith
@@ -310,6 +308,14 @@ Trusting Him who justifies the ungodly has noticeable fruit of following Him bec
 
 > **[Matthew 12:1-8](https://www.biblegateway.com/passage/?search=Matthew%2012%3A1-8&version=ESV)** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And <ins>if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the</ins> **guiltless**. For the Son of Man is lord of the Sabbath. (ESV)
 
+As you can see, the disciples still generally followed the commandment to rest on the Sabbath day:
+
+> **[Luke 23:56](https://www.biblegateway.com/passage/?search=Luke%2023%3A56&version=ESV)** - Then they returned and prepared spices and ointments. On the Sabbath they rested according to the commandment. (ESV)
+
+But Jesus is lord of the Sabbath:
+
+> **[Mark 2:27-28](https://www.biblegateway.com/passage/?search=Mark%202%3A27-28&version=ESV)** - And he said to them, The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath. (ESV)
+
 Jesus will serve His servants who are awake:
 
 > **[Luke 12:37](https://www.biblegateway.com/passage/?search=Luke%2012%3A37&version=ESV)** - Blessed are those servants whom the master finds awake when he comes. Truly, I say to you, he will dress himself for service and have them recline at table, and he will come and serve them. (ESV)
@@ -350,6 +356,8 @@ So the problem in my opinion is not the will to do the will of God but the abili
 > **[Matthew 7:7](https://www.biblegateway.com/passage/?search=Matthew%207%3A7&version=ESV)** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. (ESV)
 
 > **[Matthew 26:40-43](https://www.biblegateway.com/passage/?search=Matthew%2026%3A40-43&version=ESV)** - And he came to the disciples and found them sleeping. And he said to Peter, So, <ins>could you not watch with me one hour? Watch and pray that you may not enter into temptation.</ins> **The spirit indeed is willing, but the flesh is weak**. Again, for the second time, he went away and prayed, My Father, if this cannot pass unless I drink it, your will be done. <ins>And again he came and found them sleeping, for their eyes were heavy.</ins> (ESV)
+
+> **[Romans 7:16-18](https://www.biblegateway.com/passage/?search=Romans%207%3A16-18&version=ESV)** - Now if I do what I do not want, I agree with the law, that it is good. So now it is no longer I who do it, but sin that dwells within me. For I know that nothing good dwells in me, that is, in my flesh. For I have the desire to do what is right, but not the ability to carry it out. (ESV)
 
 
 ## Heidelberg Catechism
@@ -636,7 +644,13 @@ A new creation lives for Christ:
 
 > **[Matthew 20:27-28](https://www.biblegateway.com/passage/?search=Matthew%2020%3A27-28&version=ESV)** - and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
 
-We must be in Christ Jesus. Those who have been born-again have become obedient to Jesus Christ. We must be born-again. This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
+We must be in Christ Jesus. Those who have been born-again have become obedient to Jesus Christ. We must be born-again:
+
+> -   **[Quote of John Piper](https://youtu.be/0ZrcokMSBZY?t=1366):** Your life becomes a foretaste for others of your cherished future. But if your future that you cherish is grace coming to you at the revelation of Jesus Christ and that is your treasure, and that is your hope and that is your faith and that is your vision and what you hold onto and embrace, **you cannot return evil for evil.** You know *why* you cannot return evil for evil? (If that's where your heart is.) Because **the cherished grace that's coming is that He's not going to return evil for evil to you.** Then we cannot turn around and have a lifestyle of returning evil for evil or insulting for insulting, and therefore the point of saying it's a <ins>condition</ins> for that is simply this, **"You must be born again."** Therefore, **it's a condition**, not in the sense of earning anything but **in the sense of bearing witness that you've fallen in love and live out of that confidence.**
+
+Amen. I want to say though that I obey Jesus when I'm feeling depressed and having a bad day myself, it most certainly still counts as love to Jesus. If I'm suffering for exercising obedient faith in Jesus, that obedience is still loving Jesus. In fact, it's more blessed to give than to receive. The obedience is still done out of love for Jesus and out of faith in Jesus. I believe that obedience to Jesus is an expression of faith in Jesus, and an expression of love for Jesus, and hope in Jesus. I've invested my life in Jesus, and happy about it because I believe and hope in Jesus.
+
+This is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
 
 > **[II Corinthians 5:17](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A17&version=ESV)** - Therefore, **if** anyone is in Christ, he is a new creation. The **old has passed away**; behold, the **new has come.**
 
@@ -2584,6 +2598,8 @@ Everyone will give an account of themself to God:
 
 > **[Romans 14:14-15](https://www.biblegateway.com/passage/?search=Romans%2014%3A14-15&version=ESV)** - I know and am persuaded in the Lord Jesus that nothing is unclean in itself, but it is unclean for anyone who thinks it unclean. For if your brother is grieved by what you eat, you are no longer walking in love. By what you eat, do not destroy the one for whom Christ died. (ESV)
 
+> **[Mark 7:18-19](https://www.biblegateway.com/passage/?search=Mark%207%3A18-19&version=ESV)** - And he said to them, Then are you also without understanding? Do you not see that whatever goes into a person from outside cannot defile him, since it enters not his **heart** but his stomach, and is expelled? *(Thus he declared all foods clean.)* (ESV)
+
 In some cases, I might even admire those that go beyond what a law strictly requires, inclusive of what the law requires. If a person wanted to go beyond **[Exodus 20:13](https://www.biblegateway.com/passage/?search=Exodus%2020%3A13&version=ESV)** to avoid eating meat to spare the lives of animals and make themself accountable to God over that in the hope it pleases God then I admire that commitment actually, but I wouldn't let anyone pass judgement on me over eating meat myself:
 
 > **[Romans 14:16](https://www.biblegateway.com/passage/?search=Romans%2014%3A16&version=ESV)** - So do not let what you regard as good be spoken of as evil. (ESV)
@@ -2770,7 +2786,15 @@ We should be able to live while having confidence that Jesus is all we need. The
 
 > **[Hebrews 13:5-6](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A5-6&version=ESV)** - Keep your life free from love of money, and be content with what you have, for he has said, I will never leave you nor forsake you. So we can confidently say, The Lord is my helper; I will not fear; what can man do to me? (ESV)
 
-You cannot make money master over you. We must accept Jesus as Master over us. But not only that; We also have to want God, treasure God and love God. And that means loving Him, treasure Him, love Him in trust and in belief and obedience. In order to follow Jesus, sometimes you will **have to** sacrifice financial security because there are many people you around you who need you to lighten their burdens. Also God may even test you to see if you love your money more than Him:
+You cannot make money master over you:
+
+> **Matthew 6:24** - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+
+We must accept Jesus as Master over us:
+
+> **[Romans 14:4](https://www.biblegateway.com/passage/?search=Romans%2014%3A4&version=ESV)** - Who are you to pass judgment on the servant of another? **It is before his own master that he stands or falls.** And <ins>he will be upheld, for the Lord is able to make him stand.</ins> (ESV)
+
+But not only that; We also have to want God, treasure God and love God. And that means loving Him, treasure Him, love Him in trust and in belief and obedience. In order to follow Jesus, sometimes you will **have to** sacrifice financial security because there are many people you around you who need you to lighten their burdens. Also God may even test you to see if you love your money more than Him:
 
 > **[I Peter 4:12](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A12&version=ESV)** - Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. (ESV)
 
@@ -4731,6 +4755,8 @@ The gospel allows us to become partakers of the divine nature, having escaped th
 
 > **[II Peter 1:3-4](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A3-4&version=NASB)** - seeing that His divine power has granted to us everything pertaining to life and godliness, **through the true knowledge** of Him who called us by His own glory and excellence. For by these He has granted to us <ins>His precious and magnificent promises,</ins> so that **by them you may become partakers of the divine nature, having escaped the corruption that is in the world by lust.** (NASB)
 
+-   **[youtube.com: Assurance for Battle @time: 18 min 2 sec](https://youtube.com/watch?v=qVajGb8n2Fg&t=1082):** If you don't fight you're probably not born again. At least, if you go on and on and on and on, slipping away from the vigilance of faith and fighting sin and the devil, you got no reason to think you're saved. Doesn't really matter what you prayed a long time ago, doesn't matter what card you signed. Doesn't matter. Baptism doesn't matter, what your parents did&#x2026; Salvation is **real**. It's real! It's real! It's the work of God in a human heart, and there are **effects** from it, and one of the effects is when the lion comes you fight. I'm a believer and he will keep me safe through faith - that He, Himself works in me.
+
 Some people will deny the **power** of the gospel:
 
 > **[II Timothy 3:1-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-7&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
@@ -5687,7 +5713,121 @@ Jehovah is God Almighty:
 
 > **[Exodus 6:3](https://www.biblegateway.com/passage/?search=Exodus%206%3A3&version=ESV)** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
 
-[Exodus 6:3 Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;](https://biblehub.com/interlinear/exodus/6-3.htm)
+[Exodus 6:3](https://biblehub.com/interlinear/exodus/6-3.htm) Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;]]
+
+
+### Faith and law-keeping as a Christian
+
+When it comes to following the law as a Christian, it's a matter of being accountable to God personally over our own level of law compliance
+while we follow Jesus first and foremost.
+
+-   **John Piper on Faith and Law-Keeping:** [youtube.com: How Our Faith and Law-Keeping Work Together in the Christian Life](https://www.youtube.com/watch?v=clrbUjkbNsM)
+
+We're all going to be judged by the divine standards that we have access to, and everybody has access to divine standards that we fall short of:
+
+> **[Romans 2:11-12](https://www.biblegateway.com/passage/?search=Romans%202%3A11-12&version=ESV)** - For **God shows no partiality**. For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. (ESV)
+
+It's not "having (having possession of) the law" which counts, but "doing it". This does **not** say they will be justified **by** doing the law, which means it could be thought of as a potential way of showing evidence for or confirming a person's faith in Jesus:
+
+> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. (ESV)
+
+We of course may be *imperfect* doers of the law, especially as Christians because we are justified by our faith in Jesus:
+
+-   **[Quote by John Piper](https://youtube.com/watch?v=clrbUjkbNsM&t=336):** A person today may be a doer of the law who trusts Jesus as the only basis of their justification before God, who in the power of that faith by the Spirit walks in a manner worthy of the LORD and then at the last judgement Christ will be the basis of our acceptance - Christ alone, the basis of our acceptance with the Father and our life of obedience doing the law will be brought in to confirm that our faith was real, because faith works through love. So "doing the law" will not be the <ins>basis</ins> of our being in God's favour, but the evidence that we are trusting Christ, united to Christ, and thus necessary at the last day.
+
+AMEN!! This has totally been my stance, but John Piper hit the nail on the head with this one.
+
+We can certainly "be obedient to God's commandments" and that is "doing":
+
+> **[I Peter 1:14-16](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A14-16&version=ESV)** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. (ESV)
+
+> **[Titus 3:3](https://www.biblegateway.com/passage/?search=Titus%203%3A3&version=ESV)** - For we ourselves were once foolish, disobedient, led astray, slaves to various passions and pleasures, passing our days in malice and envy, hated by others and hating one another. (ESV)
+
+> **[James 1:22](https://www.biblegateway.com/passage/?search=James%201%3A22&version=ESV)** - But be doers of the word, and not hearers only, deceiving yourselves. (ESV)
+
+> **[Hebrews 11:31](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A31&version=ESV)** - By faith Rahab the prostitute did not perish with those who were disobedient, because she had given a friendly welcome to the spies. (ESV)
+
+Perfect obedience though is something Jesus reached but I certainly have not:
+
+> **[Philippians 2:8](https://www.biblegateway.com/passage/?search=Philippians%202%3A8&version=ESV)** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+
+The nations have a form of God's law written on our hearts:
+
+> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+
+> **[Romans 3:28-29](https://www.biblegateway.com/passage/?search=Romans%203%3A28-29&version=ESV)** - For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, (ESV)
+
+> **[Romans 5:1-2](https://www.biblegateway.com/passage/?search=Romans%205%3A1-2&version=ESV)** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God. (ESV)
+
+There is no problem with keeping the law to your level of commitment accountable to God, but we should not feel under the law that we must keep all of it all the time. Also, our obedience to the law is not what justifies us:
+
+> **[Galatians 5:3-4](https://www.biblegateway.com/passage/?search=Galatians%205%3A3-4&version=ESV)** - I testify again to every man who accepts circumcision that he is obligated to keep the whole law. You are severed from Christ, you who would be justified by the law; you have fallen away from grace. (ESV)
+
+Those who annul and teach others to annul the law will be 'called' least in the kingdom. It's not humility to do so. They're teaching people against bearing good fruit.
+
+We should not forsake Jesus as our Master:
+
+> **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
+
+We certainly should not forsake the higher precepts of the law - mercy, justice and faithfulness:
+
+> **[Matthew 23:23](https://www.biblegateway.com/passage/?search=Matthew%2023%3A23&version=ESV)** - Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have neglected the weightier matters of the law: justice and mercy and faithfulness. These you ought to have done, without neglecting the others. (ESV)
+
+We certainly should not annul and teach others to annul the Great Commandments or the 10 Commandments:
+
+> **[I Corinthians 7:19](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A19&version=ESV)** - For neither circumcision counts for anything nor uncircumcision, but keeping the commandments of God. (ESV)
+
+It's prideful to say that God is wrong, Jesus behaved badly and that the Law is wrong, and we shouldn't love God and our neighbour:
+
+> **[Galatians 5:6](https://www.biblegateway.com/passage/?search=Galatians%205%3A6&version=ESV)** - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only faith working through love. (ESV)
+
+Love is the fulfillment of the law. Love does the commandments of God that the law requires. The person who does them can be described as a *doer* of the law:
+
+> **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/clrbUjkbNsM?t=701):** That's who we are as Christians. When we walk according to the Spirit, we fulfill the just requirement of the law. That is, we keep the commandments, we love. We are doers of the law. Not sinlessly perfect law-keepers. Nobody is nor anybody has been except Jesus, which is why we depend on Him, but rather, radically transformed people, through faith, in the power of the Holy Spirit, leaning on the grace of God that comes to us through Jesus Christ.
+
+AMEN!!
+
+Jesus' atonement means that the requirement of the law might be fulfilled in us who walk according to the Spirit - keeping the commandments of God:
+
+> **[Romans 8:3-4](https://www.biblegateway.com/passage/?search=Romans%208%3A3-4&version=ESV)** - For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit. (ESV)
+
+Teaching others to not obey Jesus' commandments and to not obey the 10 Commandments is teaching people *against* walking by the Spirit.
+
+Teaching others to break the law is teaching bad behaviour. 
+
+> **[Romans 2:6-7](https://www.biblegateway.com/passage/?search=Romans%202%3A6-7&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; (ESV)
+
+It refuses to acknowledge sin and it refuses to agree with God and it refuses to acknowledge loving God and one another, and it refuses to acknowledge holiness and being a living sacrifice for God:
+
+> **[Luke 1:5-6](https://www.biblegateway.com/passage/?search=Luke%201%3A5-6&version=ESV)** - In the days of Herod, king of Judea, there was a priest named Zechariah, of the division of Abijah. And he had a wife from the daughters of Aaron, and her name was Elizabeth. And **they were both righteous before God, walking blamelessly in all the commandments and statutes of the Lord.** (ESV)
+
+Jesus, the original Apostles and the founding fathers of Christianity still taught us to keep the 2 Great commandments and the 10 Commandments which is sound doctrine:
+
+-   **[I Corinthians 7:19](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A19&version=ESV)** - Circumcision is nothing, and uncircumcision is nothing, but the keeping of the commandments of God. (KJV)
+
+So long as we hold faith in Christ, we're no longer victims of the curse of the law (which is to rely on keeping the full law perfectly to avoid being cursed):
+
+> **[Galatians 3:10-13](https://www.biblegateway.com/passage/?search=Galatians%203%3A10-13&version=ESV)** - For all who rely on works of the law are under a curse; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them. Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. But the law is not of faith, rather The one who does them shall live by them. Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— (ESV)
+
+Those who keep God's commandments and **and** the righteousness of faith / the testimony of Jesus will be called great in the kingdom:
+
+> **[Matthew 5:19](https://www.biblegateway.com/passage/?search=Matthew%205%3A19&version=ESV)** - Therefore <ins>whoever relaxes one of the least of these commandments and teaches others to do the same</ins> will be called *least in the kingdom of heaven*, but <ins>whoever does them and teaches them</ins> will be called *great in the kingdom of heaven*. (ESV)
+
+It is humility to keep God's commandments by faith (and not works), accountable to God who sees in secret.
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=815):** "Pride is insubordinate. [It says,] You don't have a right to tell me what to do. That's what happened in the Garden of Eden right at the beginning of our sinful plight. And that's what all of us do apart from God's grace."
+
+It's God who tests the faith, and God who justifies:
+
+> **[II Corinthians 10:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A18&version=ESV)** - For it is not the one who commends himself who is approved, but the one whom the Lord commends. (ESV)
+
+We 'endeavour' to be justified **in Christ**. We want to be found **in Christ**. We don't justify ourselves, and we don't put ourselves in, but we endeavour to be justified by God by being **in Christ**:
+
+> **[Galatians 2:17](https://www.biblegateway.com/passage/?search=Galatians%202%3A17&version=ESV)** - But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! (ESV)
+
+Surely to be found **in Christ** we would be trusting Him and and trusting in Him and living for Him, and even serving Him.
 
 
 # Jehovah is Almighty God, Creator of Heaven and Earth
@@ -7255,6 +7395,52 @@ The righteousness in the actual doing of the law above is still upheld but there
 
 > **[Isaiah 13:11](https://www.biblegateway.com/passage/?search=Isaiah%2013%3A11&version=ESV)** - I will punish the world for its evil, and the wicked for their iniquity; I will put an end to the pomp of the arrogant, and lay low the pompous pride of the ruthless. (ESV)
 
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=693):** "Pride is **self-satisfaction**."
+
+> **[Hosea 13:4-6](https://www.biblegateway.com/passage/?search=Hosea%2013%3A4-6&version=ESV)** - But I am the LORD your God from the land of Egypt; you know no God but me, and besides me there is no savior. It was I who knew you in the wilderness, in the land of drought; but when they had grazed, they became full, they were filled, and their heart was lifted up; therefore they forgot me. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=731):** "Pride is **self-sufficiency** / **self-reliance**."
+
+> **[Deuteronomy 8:11-16](https://www.biblegateway.com/passage/?search=Deuteronomy%208%3A11-16&version=ESV)** - Take care lest you forget the LORD your God by not keeping his commandments and his rules and his statutes, which I command you today, lest, when you have eaten and are full and have built good houses and live in them, and when your herds and flocks multiply and your silver and gold is multiplied and all that you have is multiplied, then your heart be lifted up, and you forget the LORD your God, who brought you out of the land of Egypt, out of the house of slavery, who led you through the great and terrifying wilderness, with its fiery serpents and scorpions and thirsty ground where there was no water, who brought you water out of the flinty rock, who fed you in the wilderness with manna that your fathers did not know, that he might humble you and test you, to do you good in the end. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=783):** "Pride considers itself <ins>above instruction</ins> [from God] - **When God speaks and we don't listen**."
+
+> **[Jeremiah 13:9-11](https://www.biblegateway.com/passage/?search=Jeremiah%2013%3A9-11&version=ESV)** - Thus says the LORD: Even so will I spoil the pride of Judah and the **great pride** of Jerusalem. **This evil people, who refuse to hear my words**, who **stubbornly follow their own heart** and have gone after other gods to serve them and worship them, shall be like this loincloth, which is good for nothing. For as the loincloth clings to the waist of a man, so I made the whole house of Israel and the whole house of Judah cling to me, declares the LORD, that they might be for me a people, a name, a praise, and a glory, but they would not listen. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=815):** "Pride is insubordinate. [It says,] You don't have a right to tell me what to do. That's what happened in the Garden of Eden right at the beginning of our sinful plight. And that's what all of us do apart from God's grace."
+
+> **[Psalms 119:21](https://www.biblegateway.com/passage/?search=Psalms%20119%3A21&version=ESV)** - You rebuke the insolent, accursed ones, who wander from your commandments. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=853):** "Pride **takes credit for what God alone does**."
+
+> **[Daniel 4:30-34](https://www.biblegateway.com/passage/?search=Daniel%204%3A30-34&version=ESV)** - and the king answered and said, **Is not this great Babylon, which I have built by my mighty power as a royal residence and for the glory of my majesty?** *While the words were still in the king's mouth,* there fell a voice from heaven, O King Nebuchadnezzar, to you it is spoken: **The kingdom has departed from you, and you shall be driven from among men, and your dwelling shall be with the beasts of the field.** And you shall be made to eat grass like an ox, and seven periods of time shall pass over you, until you know that the Most High rules the kingdom of men and gives it to whom he will. Immediately the word was fulfilled against Nebuchadnezzar. He was driven from among men and ate grass like an ox, and his body was wet with the dew of heaven till his hair grew as long as eagles' feathers, and his nails were like birds' claws. At the end of the days I, Nebuchadnezzar, lifted my eyes to heaven, and my reason returned to me, and <ins>I blessed the **Most High**, and praised and honored him who lives forever, for his dominion is an everlasting dominion, and his kingdom endures from generation to generation;</ins> (ESV)
+
+> **[Daniel 4:37](https://www.biblegateway.com/passage/?search=Daniel%204%3A37&version=ESV)** - Now I, Nebuchadnezzar, praise and extol and honor the King of heaven, for all his works are right and his ways are just; and **those who walk in pride he is able to humble**. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=941):** "Pride exalts in being made much of."
+
+> **[Matthew 23:6-7](https://www.biblegateway.com/passage/?search=Matthew%2023%3A6-7&version=ESV)** - and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=965):** "Pride aspires to the place of God."
+
+> **[Acts 12:21-23](https://www.biblegateway.com/passage/?search=Acts%2012%3A21-23&version=ESV)** - On an appointed day Herod put on his royal robes, took his seat upon the throne, and delivered an oration to them. And the people were shouting, The voice of a god, and not of a man! Immediately an angel of the Lord struck him down, because he did not give God the glory, and he was eaten by worms and breathed his last. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=1023):** "Pride opposes the very existence of God."
+
+> **[Psalms 10:4](https://www.biblegateway.com/passage/?search=Psalms%2010%3A4&version=ESV)** - In the pride of his face the wicked does not seek him; all his thoughts are, There is no God. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=1077):** "Pride refuses to trust in God. The opposite of arrogance is not just humility, it's trust. Trust is a very lowly demeanor. [Trust is] a way of saying I don't have what I need in here; I have to trust somebody else to give it to me. I don't have the resources in here to save me, to forgive me, to reconcile me to God, to lead my life in a holy way, to be what my family needs from me, to be what a church needs from me. I do not have th the resources, I cannot do it. And you look around for an answer and God says, I have a mighty hand and I promise you I will care for you. Trust me. Pride cringes at the prospect of saying, I am bankrupt and helpless. I need another to save me, and help me and lead me and guide me, and hold me and strengthen me. Everything comes from outside me. Only humility can talk that way. **Trust in the promise of God is the expression of humility**."
+
+Arrogance is contrasted with trust in God:
+
+> **[Proverbs 28:25](https://www.biblegateway.com/passage/?search=Proverbs%2028%3A25&version=ESV)** - A greedy man stirs up strife, but the one who trusts in the LORD will be enriched. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=1292):** "Pride is often anxious about the future."
+
+Anxiety flows from pride. If we don't trust God we will be anxious about the future:
+
+> **[I Peter 5:6-7](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A6-7&version=ESV)** - Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you. (ESV)
+
 
 ### Discouraging the righteous, encouraging the wicked, even to misguide them to harm
 
@@ -8421,6 +8607,19 @@ It's still really important to put a stop to sin! And we must walk according to 
 
 
 ### Holiness
+
+I have so far found this series by R. C. Sproul to help clarify the meaning of the word 'holiness':
+
+-   **Playlist:** [youtube.com: The Holiness of God - R.C. Sproul](https://www.youtube.com/playlist?list=PL30acyfm60fVpGc7Eo--3S6w1kdhXY9Cb)
+
+I will defer to the following video by R. C. Sproul:
+
+-   **Watch:** [youtube.com: The Meaning of Holiness: The Holiness of God with R.C. Sproul](https://www.youtube.com/watch?v=K96e1tK7eN4)
+
+
+### Personal 'holiness' / 'righteousness' (i.e. devotion to Christ)
+
+-   **[Quote by R C Sproul](https://youtu.be/K96e1tK7eN4?list=PL30acyfm60fVpGc7Eo--3S6w1kdhXY9Cb&t=433):** "What makes something sacred, what makes something holy is the touch of God upon it. When the one who himself is other and different touches that which is ordinary, it becomes extraordinary."
 
 *Undivided* devotion to Christ:
 
@@ -10766,6 +10965,12 @@ Our hope should not be on our own lustful or idolatrous desires, but our hope sh
 
 > **[Proverbs 4:23](https://www.biblegateway.com/passage/?search=Proverbs%204%3A23&version=ESV)** - Keep your heart with all vigilance, for from it flow the springs of life. (ESV)
 
+We should hold the promises of God in our heart:
+
+> **[Mark 7:18-19](https://www.biblegateway.com/passage/?search=Mark%207%3A18-19&version=ESV)** - And he said to them, Then are you also without understanding? Do you not see that whatever goes into a person from outside cannot defile him, since it enters not his **heart** but his stomach, and is expelled? *(Thus he declared all foods clean.)* (ESV)
+
+> **[Acts 28:27](https://www.biblegateway.com/passage/?search=Acts%2028%3A27&version=ESV)** - For the heart of this people has become dull, And with their ears they scarcely hear, And they have closed their eyes; Otherwise they might see with their eyes, And hear with their ears, And **understand with their heart** and **return**, And I would heal them.”’
+
 Actually, our faith and hope and heart's desire and our walking in faith should really be in line with God's will, and God's plan:
 
 > **[Matthew 6:9-12](https://www.biblegateway.com/passage/?search=Matthew%206%3A9-12&version=ESV)** - Pray then like this: Our Father in heaven, hallowed be your name. Your kingdom come, <ins>your will be done,</ins> on earth as it is in heaven. Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. (ESV)
@@ -12149,6 +12354,8 @@ Jesus' disciples were obediently serving Jesus and while they were doing what Je
 > **[I Corinthians 6:12](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A12&version=ESV)** - All things are lawful **for me**, but not all things are helpful. All things are lawful **for me**, but I will not be enslaved by anything. (ESV)
 
 > **[Romans 14:17-22](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-22&version=ESV)** - For **the kingdom of God** is not a matter of eating and drinking but of **righteousness and peace and joy in the Holy Spirit**. Whoever thus **serves Christ** is <ins>acceptable to God</ins> and approved by men. So then let us pursue what makes for **peace and for mutual upbuilding**. *Do not, for the sake of food, destroy the work of God.* Everything is indeed clean, but it is wrong for anyone to make another stumble by what he eats. **It is good not to** eat meat or drink wine or **do anything that causes your brother to stumble**. <ins>The faith that you have, keep between yourself and God.</ins> **Blessed is the one who has no reason to pass judgment on himself for what he approves.** (ESV)
+
+> **[Mark 7:18-19](https://www.biblegateway.com/passage/?search=Mark%207%3A18-19&version=ESV)** - And he said to them, Then are you also without understanding? Do you not see that whatever goes into a person from outside cannot defile him, since it enters not his **heart** but his stomach, and is expelled? *(Thus he declared all foods clean.)* (ESV)
 
 We should seek to build one another up rather than damage our neighbour's faith on issues of of law compliance. If they serve Christ they are acceptable to God:
 
@@ -14080,6 +14287,8 @@ Faith eclipses the law:
 
 > **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him the father of all who believe without being circumcised, so that righteousness would be counted to them as well, and to make him the father of the circumcised who are <ins>not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
 
+> **Galatians 3:21-29** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith. For as many of you as were baptized into Christ have put on Christ. There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female, for you are all one in Christ Jesus. And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
+
 The ones under the law who also walk in the footsteps of the faith that Abraham had before he was circumcised, come under the umbrella of the faith of Abraham, which the Gentiles who also share the faith of Abraham are included within.
 
     1           Faith (Galatians 3:6-9)
@@ -14101,6 +14310,8 @@ The most important thing though is faith because it applies to both the adherent
 > **[Romans 4:16](https://www.biblegateway.com/passage/?search=Romans%204%3A16&version=ESV)** - That is why it depends on faith, in order that the promise may rest on grace and be guaranteed to all his offspring-not only to the adherent of the law but also to the one who shares the **faith of Abraham**, who is the father of us all, (ESV)
 
 > **[I Corinthians 10:1-5](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A1-5&version=ESV)** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. **For they drank from the spiritual Rock that followed them, and the Rock was Christ**. Nevertheless, with most of them God was not pleased, for they were overthrown in the wilderness.
+
+> **Galatians 3:21** - Is the law then contrary to the promises of God? Certainly not! For if a law had been given that could give life, then righteousness would indeed be by the law. (ESV)
 
 
 ### One in Christ Jesus - not excluding the adherent of the law
@@ -15562,6 +15773,8 @@ In believing in Jesus, we are guaranteed an inheritance in heaven:
 
 > **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV),14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
 
+> **[I Peter 1:13](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV)** - Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. (ESV)
+
 The inheritance is in heaven:
 
 > **[I Peter 1:4](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A4&version=ESV)** - to obtain an inheritance which is imperishable and undefiled and will not fade away, reserved in heaven for you, (ESV)
@@ -15708,6 +15921,12 @@ We must do good, and behave like the children of God, or we will not enter the K
 > **[I John 3:10](https://www.biblegateway.com/passage/?search=1%20John%203%3A10&version=ESV)** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
 
 > **[Luke 6:35](https://www.biblegateway.com/passage/?search=Luke%206%3A35&version=ESV)** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. (ESV)
+
+-   **Sermon:** [youtube.com: Called to Bless Others](https://www.youtube.com/watch?v=0ZrcokMSBZY)
+
+> -   **[Quote of John Piper](https://youtu.be/0ZrcokMSBZY?t=1366):** Your life becomes a foretaste for others of your cherished future. But if your future that you cherish is grace coming to you at the revelation of Jesus Christ and that is your treasure, and that is your hope and that is your faith and that is your vision and what you hold onto and embrace, **you cannot return evil for evil.** You know *why* you cannot return evil for evil? (If that's where your heart is.) Because **the cherished grace that's coming is that He's not going to return evil for evil to you.** Then we cannot turn around and have a lifestyle of returning evil for evil or insulting for insulting, and therefore the point of saying it's a <ins>condition</ins> for that is simply this, **"You must be born again."** Therefore, **it's a condition**, not in the sense of earning anything but **in the sense of bearing witness that you've fallen in love and live out of that confidence.**
+
+I believe this type of obedience, obedience to Jesus may come before or after being born of the Spirit, and obedience to Jesus is a part of faith in Jesus. If I obey Jesus when I'm feeling depressed and having a bad day myself, that's fine. It most certainly still counts as love. In fact, it's more blessed to give than to receive. The obedience is still done out of love for Jesus and out of faith in Jesus.
 
 
 ### Trust Jesus like a child trusts their parents
@@ -16430,6 +16649,14 @@ To be domineering is to behave like a lord.
 > **[Matthew 23:8](https://www.biblegateway.com/passage/?search=Matthew%2023%3A8&version=ESV)** - But you are not to be called rabbi, for **you have one teacher, and you are all brothers.** (ESV)
 
 > **[Matthew 23:10](https://www.biblegateway.com/passage/?search=Matthew%2023%3A10&version=ESV)** - Neither be called instructors, for **you have one instructor, the Christ.** (ESV)
+
+-   **[youtube.com: Humbling Ourselves @time: 13 min 3 sec](https://youtube.com/watch?v=nZT9N7Duu_Y&t=783):** Pride considers itself above instruction. When God speaks and we don't listen.
+
+> **[Jeremiah 13:9-11](https://www.biblegateway.com/passage/?search=Jeremiah%2013%3A9-11&version=ESV)** - Thus says the LORD: Even so will I spoil the pride of Judah and the **great pride** of Jerusalem. **This evil people, who refuse to hear my words**, who **stubbornly follow their own heart** and have gone after other gods to serve them and worship them, shall be like this loincloth, which is good for nothing. For as the loincloth clings to the waist of a man, so I made the whole house of Israel and the whole house of Judah cling to me, declares the LORD, that they might be for me a people, a name, a praise, and a glory, but they would not listen. (ESV)
+
+Elders, listen to God. Those who are younger, be subject to the elders:
+
+> **[I Peter 5:5-7](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A5-7&version=ESV)** - Likewise, you who are younger, be subject to the elders. Clothe yourselves, all of you, with humility toward one another, for God opposes the proud but gives grace to the humble. Humble yourselves, therefore, under the mighty hand of God so that at the proper time he may exalt you, casting all your anxieties on him, because he cares for you. (ESV)
 
 
 ### Jesus has said we must stop sinning and follow Jesus to enter the kingdom
@@ -19223,14 +19450,46 @@ The universe is upheld by the word of Jesus' power.
     
     > **[Jeremiah 31:34](https://www.biblegateway.com/passage/?search=Jeremiah%2031%3A34&version=ESV)** - And no longer shall each one teach his neighbor and each his brother, saying, Know the LORD, for they shall all know me, **from the least of them to the greatest**, declares the LORD. For I will forgive their iniquity, and I will remember their sin no more. (ESV)
     
-    Those who annul and teach others to break the law will be 'called' least in the kingdom. It's not humility to do so.
+    Those in the kingdom of God hold faith in Jesus and serve Jesus:
     
-    -   It's prideful to say that God is wrong, Jesus behaved badly and that the Law is wrong
-        -   It refuses to acknowledge sin
+    > **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
     
-    Those who keep God's commandments and AND the righteousness of faith / the testimony of Jesus will be called great in the kingdom.
+    There are commandments from God which even Paul the Apostle regarded as important to follow for all people who serve Jesus, such as the 10 Commandments and the commandments which came from Jesus Himself, including the Golden Rule:
     
-    -   It is humility to keep God's commandments by faith (and not works), accountable to God who sees in secret
+    > **[Romans 13:9-10](https://www.biblegateway.com/passage/?search=Romans%2013%3A9-10&version=ESV)** - The commandments, You shall not commit adultery, You shall not murder, You shall not steal, You shall not covet, and any other commandment, are summed up in this word: You shall love your neighbor as yourself. Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
+    
+    The law is good. It's not our source of justification but we don't teach people to disobey it, especially those who follow it by faith.
+    
+    > **[Romans 14:10-14](https://www.biblegateway.com/passage/?search=Romans%2014%3A10-14&version=ESV)** - Why do you pass judgment on your brother? Or you, why do you despise your brother? For we will all stand before the judgment seat of God; for it is written, As I live, says the Lord, every knee shall bow to me, and every tongue shall confess to God. So then each of us will give an account of himself to God. Therefore let us not pass judgment on one another any longer, but rather decide never to put a stumbling block or hindrance in the way of a brother. I know and am persuaded in the Lord Jesus that nothing is unclean in itself, but it is unclean for anyone who thinks it unclean. (ESV)
+    
+    Instead we focus on following Jesus first and foremost:
+    
+    > **[Romans 14:22-23](https://www.biblegateway.com/passage/?search=Romans%2014%3A22-23&version=ESV)** - The faith that you have, keep between yourself and God. Blessed is the one who has no reason to pass judgment on himself for what he approves. But whoever has doubts is condemned if he eats, because the eating is not from faith. For whatever does not proceed from faith is sin. (ESV)
+    
+    When it comes to following the law as a Christian, it's a matter of being accountable to God personally over our own level of law compliance
+    while we follow Jesus first and foremost.
+    
+    -   **[Quote by John Piper](https://youtu.be/clrbUjkbNsM?t=701):** That's who we are as Christians. When we walk according to the Spirit, we fulfill the just requirement of the law. That is, we keep the commandments, we love. We are doers of the law. Not sinlessly perfect law-keepers. Nobody is nor anybody has been except Jesus, which is why we depend on Him, but rather, radically transformed people, through faith, in the power of the Holy Spirit, leaning on the grace of God that comes to us through Jesus Christ.
+    
+    Jesus, the original Apostles and the founding fathers of Christianity still taught us to keep the 2 Great commandments and the 10 Commandments which is sound doctrine:
+    
+    -   **[I Corinthians 7:19](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A19&version=ESV)** - Circumcision is nothing, and uncircumcision is nothing, but the keeping of the commandments of God. (KJV)
+    
+    So long as we hold faith in Christ, we're no longer victims of the curse of the law (which is to rely on keeping the full law perfectly to avoid being cursed):
+    
+    > **[Galatians 3:10-13](https://www.biblegateway.com/passage/?search=Galatians%203%3A10-13&version=ESV)** - For all who rely on works of the law are under a curse; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them. Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. But the law is not of faith, rather The one who does them shall live by them. Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— (ESV)
+    
+    Those who keep God's commandments and **and** the righteousness of faith / the testimony of Jesus will be called great in the kingdom:
+    
+    > **[Matthew 5:19](https://www.biblegateway.com/passage/?search=Matthew%205%3A19&version=ESV)** - Therefore <ins>whoever relaxes one of the least of these commandments and teaches others to do the same</ins> will be called *least in the kingdom of heaven*, but <ins>whoever does them and teaches them</ins> will be called *great in the kingdom of heaven*. (ESV)
+    
+    So long as we hold faith in Christ, we're no longer victims of the curse of the law (which is to rely on keeping the full law perfectly to avoid being cursed):
+    
+    > **[Galatians 3:10-13](https://www.biblegateway.com/passage/?search=Galatians%203%3A10-13&version=ESV)** - For all who rely on works of the law are under a curse; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them. Now it is evident that no one is justified before God by the law, for The righteous shall live by faith. But the law is not of faith, rather The one who does them shall live by them. Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— (ESV)
+    
+    It is humility to keep God's commandments by faith (and not works), accountable to God who sees in secret.
+    
+    -   **[Quote by John Piper](https://youtu.be/nZT9N7Duu_Y?t=815):** "Pride is insubordinate. [It says,] You don't have a right to tell me what to do. That's what happened in the Garden of Eden right at the beginning of our sinful plight. And that's what all of us do apart from God's grace."
     
     There is a self-righteous way of trying to keep the law, and there is a humble way. The law is not annulled but our justification comes from faith in Jesus.
     
@@ -21497,7 +21756,7 @@ Make disciples of all the nations, teaching them to follow/obey Jesus:
 
 > **[Matthew 28:18-20](https://www.biblegateway.com/passage/?search=Matthew%2028%3A18-20&version=ESV)** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of **the Holy Spirit**, teaching them to observe (**[G5083 tereo](https://biblehub.com/greek/5083.htm)**) all that I have commanded you. And behold, I am with you always, to the end of the age. (ESV)
 
-> **Matthew 28:20** - and teaching them to obey (**[G5083 tereo](https://biblehub.com/greek/5083.htm)**) all that I have commanded you. And surely I am with you always, even to the end of the age.” (BSB)
+> **[Matthew 28:20](https://www.bible.com/bible/3034/mat.28.20)** - and teaching them to obey (**[G5083 tereo](https://biblehub.com/greek/5083.htm)**) all that I have commanded you. And surely I am with you always, even to the end of the age.” (BSB)
 
 The word tereo means (to keep, observe, obey, follow). Commandments are for obeying. That's all they are for. This observance means to remember and practice. Nowhere in the Bible does it teach to disobey God:
 
@@ -25623,9 +25882,15 @@ I'm also experiencing a lot of testing, and positive interactions, and some enco
 
 > **[Galatians 5:19-21](https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV)** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that <ins>those who do such things will not inherit the kingdom of God.</ins> (ESV)
 
+-   **Sermon:** [youtube.com: Assurance for Battle](https://www.youtube.com/watch?v=qVajGb8n2Fg)
+
 I know my family in Christ also experience the same kind of suffering / spiritual warfare:
 
 > **[I Peter 5:9](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A9&version=ESV)** - Resist him, firm in your faith, knowing that the same kinds of suffering are being experienced by your brotherhood throughout the world. (ESV)
+
+> **I Peter 4:16-17** - Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name. For it is time for judgment to begin at the household of God; and if it begins with us, what will be the outcome for those who do not obey the gospel of God? (ESV)
+
+> **Job 1:8-12** - And the LORD said to Satan, Have you considered my servant Job, that there is none like him on the earth, a blameless and upright man, who fears God and turns away from evil? Then Satan answered the LORD and said, Does Job fear God for no reason? Have you not put a hedge around him and his house and all that he has, on every side? You have blessed the work of his hands, and his possessions have increased in the land. But stretch out your hand and touch all that he has, and he will curse you to your face. And the LORD said to Satan, Behold, all that he has is in your hand. Only against him do not stretch out your hand. So Satan went out from the presence of the LORD. (ESV)
 
 > **[Psalms 57:1](https://www.biblegateway.com/passage/?search=Psalms%2057%3A1&version=ESV)** - Be merciful to me, O God, be merciful to me, for in you my soul takes refuge; in the shadow of your wings I will take refuge, till the storms of destruction pass by. (ESV)
 
