@@ -608,11 +608,11 @@ Obedience is important:
 
 Our obedience is not without trust. We obey because we trust God - we obey out of faith in God:
 
-> **Jeremiah 17:5-8** - Thus says the LORD: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the LORD. He is like a shrub in the desert, and shall not see any good come. He shall dwell in the parched places of the wilderness, in an uninhabited salt land. Blessed is the man who trusts in the LORD, whose trust is the LORD. He is like a tree planted by water, that sends out its roots by the stream, and does not fear when heat comes, for its leaves remain green, and is not anxious in the year of drought, for it does not cease to bear fruit. (ESV)
+> **[Jeremiah 17:5-8](https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A5-8&version=ESV)** - Thus says the LORD: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the LORD. He is like a shrub in the desert, and shall not see any good come. He shall dwell in the parched places of the wilderness, in an uninhabited salt land. Blessed is the man who trusts in the LORD, whose trust is the LORD. He is like a tree planted by water, that sends out its roots by the stream, and does not fear when heat comes, for its leaves remain green, and is not anxious in the year of drought, for it does not cease to bear fruit. (ESV)
 
 Our obedience is in the heart. We want to obey because we love Jesus (we will to):
 
-> **Luke 10:25-37** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him, You have answered correctly; do this, and you will live. But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise. (ESV)
+> **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him, You have answered correctly; do this, and you will live. But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise. (ESV)
 
      1  2036     25             2962       3588     2316
      2  eipen    Agapēseis      Kyrion     ton      Theon
@@ -772,10 +772,34 @@ See how faithfulness is related to faith - faith is faithful to God. Having fait
 I have a strong desire to do what God wants me to do as I feel comfortable that God is on my side and will not put me to shame for my shortcomings because I am trusting Him.
 If the devil tries to damage me to make me sin and I sin I know I have confidence that God is still taking care of me and knows everything.
 Now I know I want to love other people because I have joy in knowing God.
-But on a bad day, especially during this intense trial that I face, I have confidence that even though I may have a **Job 23:1-17** day, I will still
+But on a bad day, especially during this intense trial that I face, I have confidence that even though I may have a **[Job 23:1-17](https://www.biblegateway.com/passage/?search=Job%2023%3A1-17&version=ESV)** day, I will still
 I will still keep my heart of obedience to God, especially the call to love others because I do not want to misrepresent God or shame God in public which would be akin to taking His name in vain.
-So I have a joy that's in God, yes, but it does not mean that on a bad day I have no love for God.
+
+> **[Job 23:1-17](https://www.biblegateway.com/passage/?search=Job%2023%3A1-17&version=ESV)** - Then Job answered and said: Today also my complaint is bitter; my hand is heavy on account of my groaning. Oh, that I knew where I might find him, that I might come even to his seat! I would lay my case before him and fill my mouth with arguments. I would know what he would answer me and understand what he would say to me. Would he contend with me in the greatness of his power? No; he would pay attention to me. There an upright man could argue with him, and I would be acquitted forever by my judge. Behold, I go forward, but he is not there, and backward, but I do not perceive him; on the left hand when he is working, I do not behold him; he turns to the right hand, but I do not see him. But he knows the way that I take; when he has tried me, I shall come out as gold. My foot has held fast to his steps; I have kept his way and have not turned aside. I have not departed from the commandment of his lips; I have treasured the words of his mouth more than my portion of food. But he is unchangeable, and who can turn him back? What he desires, that he does. For he will complete what he appoints for me, and many such things are in his mind. Therefore I am terrified at his presence; when I consider, I am in dread of him. God has made my heart faint; the Almighty has terrified me; yet I am not silenced because of the darkness, nor because thick darkness covers my face. (ESV)
+
+So I have a joy that's in God, yes, but it does not mean that on a bad day (when I complain to God and feel as though I have no joy) that I have no love for God.
+I'm fully convinced that Job still loved God, and the "joy" of God was most likely still deep in Job's heart even though he felt bitter.
+That's how I feel sometimes. I love Jesus but I tell him I'm angry at him. Perhaps a bit like Martin Luther's psychosis:
+
+-   **[youtube.com: The Insanity of Luther: The Holiness of God with R.C. Sproul](https://www.youtube.com/watch?v=2StKxMKWfbU&t=434s):** He had such a fear of the wrath
+    of God that early on in his ministry
+    somebody put this question to him:
+    "Brother Martin, do you love God?" You
+    know what he said? He said, "Love God? You
+    ask me if I love God? Love God? Sometimes
+    I hate God. I see Christ as a consuming
+    judge who is simply looking at me to
+    evaluate me and to visit affliction upon
+    me.
+
+And I am convinced that God still loves Job even when he had a bad complaint and he felt bitterness.
+And I'm convinced that Martin Luther also loved God and God loved Martin Luther.
+
 Jesus says that the one who loves Him is the one who keeps His commandments. Amen.
+
+If you're obeying Jesus because you love Jesus then you'll be loved by Jehovah God, Abba Father God:
+
+> **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 The following is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
 
@@ -2424,7 +2448,7 @@ The prophets, saints, and servants of Jesus will be rewarded:
 
 > **[I Thessalonians 5:12-14](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A12-14&version=ESV)** - We ask you, brothers, to respect those who labor among you and are over you in the Lord and admonish you, and to esteem them very highly in love because of their work. Be at peace among yourselves. And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. (ESV)
 
-I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us. We work out what God has worked for. It's even a gift too be in position of being able to do good works in service to Jesus after He has washed us:
+I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us. We work out what God has worked for. It's even a gift to be in position of being able to do good works in service to Jesus after He has washed us:
 
 > **[Ephesians 2:8-9](https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=ESV)** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
@@ -9441,7 +9465,7 @@ In obeying God, God helps us:
 
 > **[Joshua 1:9](https://www.biblegateway.com/passage/?search=Joshua%201%3A9&version=ESV)** - Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your God is with you wherever you go. (ESV)
 
-I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us. We work out what God has worked for. It's even a gift too be in position of being able to do good works in service to Jesus after He has washed us:
+I just want to be clear that good works we do in obedience to Jesus are still considered a gift to us. We work out what God has worked for. It's even a gift to be in position of being able to do good works in service to Jesus after He has washed us:
 
 > **[Ephesians 2:8-9](https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=ESV)** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
@@ -18217,7 +18241,11 @@ But the real test is that I couldn't plead not guilty because being obedient to 
 The devil tried to steal my blessings, and tried to push me back into bondage, and into sin, by slamming me with lewd dreams and visions,
 meanwhile bombarding me with accusations of my past, and I've had to fight like heaven to get out of the intense condemnation I've faced.
 
-Nevertheless it got to the point where I could not test God by pleading not guilty because I know Jesus was there in the court room, and I was being faithful to my Jesus.
+I find it extremely difficult to believe (but not outside the realm of possibility) that the relationship possibility was not grace, but whatever is the case I am still obligated to obey Jesus, forward on to others love and forgiveness like the love and forgiveness that Jesus has loved me with and deny self (deny selfishness), and be faithful to Jesus:
+
+> **[Luke 14:27](https://www.biblegateway.com/passage/?search=Luke%2014%3A27&version=ESV)** - Whoever does not bear his own cross and come after me cannot be my disciple. (ESV)
+
+The escalating circumstances got to the point where I was asked what my plea would be about a week before easter, and I did not want to put God to the test by pleading not guilty because I know Jesus would be ever present with me after I was born-again. I have a strong conviction of the sense of His presence. And in the situations in court, I knew I should be faithful to Jesus.
 
 I had my own meeting with [Holy Spirit on 3 May](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/) which
 
