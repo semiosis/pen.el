@@ -12,11 +12,15 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 > **[Romans 14:4](https://www.biblegateway.com/passage/?search=Romans%2014%3A4&version=ESV)** - Who are you to pass judgment on the servant of another? **It is before his own master that he stands or falls.** And <ins>he will be upheld, for the Lord is able to make him stand.</ins> (ESV)
 
-We serve the Most High God, Jehovah and Jesus Christ who He has sent:
+We serve the Only True God, the Most High God, Jehovah and Jesus Christ who He has sent - the same God, and we are found in Christ Jesus:
 
 > **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
 
 > **[Deuteronomy 10:17](https://www.biblegateway.com/passage/?search=Deuteronomy%2010%3A17&version=ESV)** - For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
+
+Christ is reigning until all things are placed into subjection under Him. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+
+> **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
 > I agree whole heartedly with Keith Green here:
 > 
@@ -602,6 +606,77 @@ Obedience is important:
 
 > **[Luke 6:46-48](https://www.biblegateway.com/passage/?search=Luke%206%3A46-48&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
 
+Our obedience is not without trust. We obey because we trust God - we obey out of faith in God:
+
+> **Jeremiah 17:5-8** - Thus says the LORD: Cursed is the man who trusts in man and makes flesh his strength, whose heart turns away from the LORD. He is like a shrub in the desert, and shall not see any good come. He shall dwell in the parched places of the wilderness, in an uninhabited salt land. Blessed is the man who trusts in the LORD, whose trust is the LORD. He is like a tree planted by water, that sends out its roots by the stream, and does not fear when heat comes, for its leaves remain green, and is not anxious in the year of drought, for it does not cease to bear fruit. (ESV)
+
+Our obedience is in the heart. We want to obey because we love Jesus (we will to):
+
+> **Luke 10:25-37** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him, You have answered correctly; do this, and you will live. But he, desiring to justify himself, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, Take care of him, and whatever more you spend, I will repay you when I come back. Which of these three, do you think, proved to be a neighbor to the man who fell among the robbers? He said, The one who showed him mercy. And Jesus said to him, You go, and do likewise. (ESV)
+
+     1  2036     25             2962       3588     2316
+     2  eipen    Agapēseis      Kyrion     ton      Theon
+     3  εἶπεν  , Ἀγαπήσεις      Κύριον     τὸν      Θεόν
+     4  he said  You shall love [the] Lord the      God
+     5  V-AIA-3S V-FIA-2S       N-AMS      Art-AMS  N-AMS
+     6          +-------+
+     7  4771    |1537   | 3650     3588     2588     4771
+     8  sou     |ex  <--+ holēs    tēs      kardias  sou
+     9  σου     |ἐξ     | ὅλης     τῆς      καρδίας  σου  ,
+    10  of you  |with   | all      the      heart    of you
+    11  PPro-G2S|Prep   | Adj-GFS  Art-GFS  N-GFS    PPro-G2S
+    12          +-------+
+    13  2532    |1722   | 3650     3588     5590     4771
+    14  kai     |en     | holē     tē       psychē   sou
+    15  καὶ     |ἐν     | ὅλῃ      τῇ       ψυχῇ     σου  ,
+    16  and     |with   | all      the      soul     of you
+    17  Conj    |Prep   | Adj-DFS  Art-DFS  N-DFS    PPro-G2S
+    18          |       |
+    19  2532    |1722   | 3650     3588     2479     4771
+    20  kai     |en     | holē     tē       ischui   sou
+    21  καὶ     |ἐν     | ὅλῃ      τῇ       ἰσχύϊ    σου  ,
+    22  and     |with   | all      the      strength of you
+    23  Conj    |Prep   | Adj-DFS  Art-DFS  N-DFS    PPro-G2S
+    24          |       |
+    25  2532    |1722   | 3650     3588     1271     4771
+    26  kai     |en     | holē     tē       dianoia  sou
+    27  καὶ     |ἐν     | ὅλῃ      τῇ       διανοίᾳ  σου
+    28  and     |with   | all      the      mind     of you
+    29  Conj    |Prep   | Adj-DFS  Art-DFS  N-DFS    PPro-G2S
+    30          |       |
+    31  2532    |3588   | 4139     4771     5613     4572
+    32  kai     |Ton    | plēsion  sou      hōs      seauton
+    33  καὶ     |Τὸν    | πλησίον  σου      ὡς       σεαυτόν  .
+    34  and     |The    | neighbor of you   as       yourself
+    35  Conj    |Art-AMS| Adv      PPro-G2S Adv      PPro-AM2S
+    36          +-------+
+
+-   **[youtube.com: The Joy of the Puritans](https://www.youtube.com/watch?v=iEkEihkqI9I):** **Love for God is from the heart**. Now,
+    Luke's version of the great commandment gives a clue that that's the case.
+    Luke's version: Just to read it now in the ESV,
+    the lawyer expresses this and Jesus approves it, "You
+    shall love the Lord your God with all your heart, with all your soul, with all your strength, with all your mind"
+    *but that translation isn't exactly right*.
+    Because those four prepositional phrases
+    in the English are all the same, and in Greek they're **not**.
+    The first one **heart has a different preposition than the other three**.
+    It has the preposition EX "from or out-of"
+    and the others are all EN "in or with/by".
+    
+    So literally I would say it goes like this,
+    "You shall love the Lord your God **from (or out of) your heart**,
+    with your soul, and with your strength
+    and with your mind." Now, why does that
+    matter?
+    
+    That's a clue, that's a that's a hint
+    that the human heart is unique
+    in its role that it plays in loving God.
+
+-   **[Quote by John Piper](https://www.youtube.com/watch?v=iEkEihkqI9I):** The essence of love is heart work, not mind work.
+
+AMEN.
+
 We learn Christ, and are taught by Christ (becoming obedient to His teachings and commandments) while we are **in** Him:
 
 > **[Ephesians 4:20-21](https://www.biblegateway.com/passage/?search=Ephesians%204%3A20-21&version=ESV)** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
@@ -691,6 +766,16 @@ Faithfulness to Jesus, though, is a baseline requirement.
 See how faithfulness is related to faith - faith is faithful to God. Having faith in God **is** keeping accountability with God with regard to His commands and promises and maintaining faithfulness with God who sees in secret:
 
 > **[II Timothy 2:13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A13&version=ESV)** - if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/JkSAMTp5leQ?t=2305):** Christ-exalting love for people is the overflow of joy in God or it's not love in a Biblical sense.
+
+I have a strong desire to do what God wants me to do as I feel comfortable that God is on my side and will not put me to shame for my shortcomings because I am trusting Him.
+If the devil tries to damage me to make me sin and I sin I know I have confidence that God is still taking care of me and knows everything.
+Now I know I want to love other people because I have joy in knowing God.
+But on a bad day, especially during this intense trial that I face, I have confidence that even though I may have a **Job 23:1-17** day, I will still
+I will still keep my heart of obedience to God, especially the call to love others because I do not want to misrepresent God or shame God in public which would be akin to taking His name in vain.
+So I have a joy that's in God, yes, but it does not mean that on a bad day I have no love for God.
+Jesus says that the one who loves Him is the one who keeps His commandments. Amen.
 
 The following is Scripture and trumps my own thoughts. I affirm these verses wholeheartedly:
 
@@ -875,9 +960,13 @@ We are saved to obey God better. God puts us into Christ. We obey to wash others
 
 ## A person who is really believing in Jesus will do the works of Jesus - they'll produce good works
 
-This doesn't necessarily mean that obedience is nonexistent before good works, as believing in Jesus is obedience, and repentance is obedience and these things are not good works. It is obedient to end (turn away from) the bad works:
+This doesn't necessarily mean that obedience is nonexistent before good works, as believing in Jesus is obedience, and repentance is obedience and these things are not done in a heart of "working for justification". It is obedient to end (turn away from) the bad works:
 
 > **[John 14:12](https://www.biblegateway.com/passage/?search=John%2014%3A12&version=ESV)** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
+
+We just turn away from doing satan's will and doing God's will:
+
+> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
 
 But repentance and belief should result in good works (serving the living God):
 
@@ -1747,7 +1836,7 @@ If you hear Jesus' words which came from God and trust God then you have eternal
 
 > **[I Peter 4:7-11](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A7-11&version=ESV)** - **The end of all things is at hand;** therefore be self-controlled and sober-minded for the sake of your prayers. Above all, keep loving one another earnestly, since love covers a multitude of sins. Show hospitality to one another without grumbling. As each has received a gift, use it to serve one another, as good stewards of God's varied grace: whoever speaks, as one who speaks oracles of God; whoever serves, as one who serves by the strength that God supplies—in order that in everything God may be glorified through Jesus Christ. To him belong glory and dominion forever and ever. Amen. (ESV)
 
-God wants as many people as possible to be saved (I think of this a bit like as 'delaying' second coming):
+God wants as many people as possible to be saved (I think of this a bit like as 'delaying' second coming - my own speculation on eschatology is just me speculating):
 
 > **[John 1:12-13](https://www.biblegateway.com/passage/?search=John%201%3A12-13&version=ESV)** - But as many as received Him, to them He gave the right to become children of God, even to those who believe in His name, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God. (NASB)
 
@@ -1768,9 +1857,23 @@ Just as it is inevitable that every son or daughter of God will be disciplined:
 > **[Hebrews 12:6](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A6&version=ESV)** - For the Lord disciplines the one he loves, and chastises every son whom he receives. (ESV)
 
 I still hold *imminence* with regards to rapture a possibility on the basis that when I was born of the Spirit, things progressed very rapidly
-I was quickly baptised in the Holy Spirit and I asked God in prayer that the whole of my city would be saved. My words seemed to have a lot of impact during this time, and I guess that is the case because God has been testing me and using me as He did with Paul the Apostle after he was taken into service by Jesus. I received lots of visions and many of them came from the enemy I believe, then after I had said towards the end of 2022 on my blog that we should get ready for Armageddon, war broke out in the middle east soon after. I felt as though I nearly did actually get 'raptured' or it was quickly progressing that way, and then I made a declaration to court that Jesus is the Truth, I forgive everyone etc. That resulted in some very rapid changes. Things in my life spiritually began to stabilise as I have gone through police corrections and used the time to attend Bible studies, and by corrected by the Scripture. I'm still trying to be sanctified ongoingly.
+I was quickly baptised in the Holy Spirit and I asked God in prayer that the whole of my city would be saved. My words seemed to have a lot of impact during this time. This is my own speculation. I was riding by the seat of my pants after being born of the spirit.
+
+-   **video:** [youtube.com: Life or Death by Your Tongue](https://www.youtube.com/watch?v=WcGhzysmCl8)
+
+I guess that God has been testing me and using me similarly to as He did with Paul the Apostle after he was taken into service by Jesus but also I had much error and my tongue may was not well-bridled. Perhaps I still speak too much. I received lots of visions and many of them came from the enemy I believe after I had even been reading Apocryphal gospels, then after I had said towards the end of 2022 on my blog that we should get ready for Armageddon, war broke out in the middle east soon after. I felt as though I nearly did actually get 'raptured' or it was quickly progressing that way or something like that, and then I made a declaration to court that Jesus is the Truth, I forgive everyone etc. That resulted in some very rapid changes. Things in my life spiritually began to stabilise as I have gone through police corrections and used the time to attend Bible studies, **and be corrected by the Scripture** in my beliefs, obedience and deeds. I'm still trying to be sanctified ongoingly. I am really sorry for misleading people with regards to any error in my writings, but the way to handle this, I believe, is not to throw the baby out with the bath-water but to be corrected by the word of God. I'm still a work in progress.
+
+A friend said this at church the very day after I was born again of the Spirit, " **Just because some messages may have been wrong, don't quench the work of God's Spirit among you by banning all prophecies, but rather make sure you test them. Hold onto what is good and dismiss those that are not good** (i.e. those that are evil). "
+
+I feel that way about my experience of being born-again of the Spirit and then undergoing purification and ongoing repentance and correction.
+
+Over the course of 2022, I was actually speaking a lot of prophecy. There was a lot of truth in it, and a lot of error, but my defense is Jesus and I was getting to know Jesus through being washed in the word, and in obedience to Jesus' commandments, and being corrected by the word, but we don't want to throw the baby out with the bathwater.
 
 > **[Mark 13:20](https://www.biblegateway.com/passage/?search=Mark%2013%3A20&version=ESV)** - And if the Lord had not cut short the days, no human being would be saved. But for the sake of the elect, whom he chose, he shortened the days. (ESV)
+
+Ultimately, we are waiting for incorruptible bodies, and I totally believe in rapture and ultimately a completely new heavens and earth (not just a renewal, although I do believe God is still taking care of and reigning on the earth), so I think that whatever Paul the Apostle is referring to here, *well I have my speculatinons*, is something more imminent, and perhaps more to do with God's kingdom work on the earth, but I still hold the eschatological view that there is ultimately an entirely new heavens and earth without any corruption:
+
+> **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: the appointed time has grown very short. From now on, let those who have wives live as though they had none, and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and those who deal with the world as though they had no dealings with it. For the present form of this world is passing away. (ESV)
 
 > **[Acts 14:22](https://www.biblegateway.com/passage/?search=Acts%2014%3A22&version=ESV)** - strengthening the souls of the disciples, encouraging them to continue in the faith, and saying that **through many tribulations we must enter the kingdom of God.** (ESV)
 
@@ -2756,6 +2859,10 @@ Those who love God - those who believe and obey Him - those who trust Him - will
 
 > **[James 1:12](https://www.biblegateway.com/passage/?search=James%201%3A12&version=ESV)** - Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those <ins>who love him.</ins> (ESV)
 
+I believe strongly that I am **currently** going through this and I have been going through this discipline/testing/repentance/forgiving-others stuff for a year or longer now:
+
+> **[I Corinthians 11:32](https://www.biblegateway.com/passage/?search=1%20Corinthians%2011%3A32&version=ESV)** - But when we are judged by the Lord, we are disciplined so that we may not be condemned along with the world. (ESV)
+
 We have to believe and obey the Truth. We have to agree with the word of God, and allow God to correct our beliefs and behaviour:
 
 > **[John 17:17-19](https://www.biblegateway.com/passage/?search=John%2017%3A17-19&version=ESV)** - **Sanctify them in the truth; Your word is truth.** As you sent me into the world, <ins>so I have sent them into the world.</ins> And for their sake I consecrate myself, that they also may be sanctified in truth.  (ESV)
@@ -2866,15 +2973,17 @@ We should be willing to have our pockets completely emptied as we give mercy to 
 
 AMEN!!
 
-> **[Deuteronomy 30:6](https://www.biblegateway.com/passage/?search=Deuteronomy%2030%3A6&version=ESV)** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)􀀁􆸐
+> **[Deuteronomy 30:6](https://www.biblegateway.com/passage/?search=Deuteronomy%2030%3A6&version=ESV)** - And **the LORD your God will circumcise your heart** and the heart of your offspring, so that you will **love the LORD your God** <ins>with all your heart and with all your soul</ins>, **that you may live**. (ESV)
 
-> **[I John 2:15-17](https://www.biblegateway.com/passage/?search=1%20John%202%3A15-17&version=ESV)** - Do not love the world nor the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world, the lust of the flesh and the lust of the eyes and the boastful pride of life, is not from the Father, but is from the world. The world is passing away, and also its lusts; but the one who does the will of God lives forever.􀀢􂌺
+> **[I John 2:15-17](https://www.biblegateway.com/passage/?search=1%20John%202%3A15-17&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever. (ESV)
 
-> **[John 14:15-21](https://www.biblegateway.com/passage/?search=John%2014%3A15-21&version=ESV)** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)􀀑􋯞
+> **[John 14:15-21](https://www.biblegateway.com/passage/?search=John%2014%3A15-21&version=ESV)** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
 -   **Sermon:** [Seven Reasons We Must Pursue Supreme Satisfaction in God - YouTube](https://www.youtube.com/watch?v=aUPSZBm1OjY)
 
-We must get on the path:
+We must get on the path of having faith in Jesus, believe in the name of Jesus, God's Son, and obey God to have confidence. I believe this is really talking about the commandments of Jesus and even of Father God. I personally believe this includes the 10 Commandments which I believe are still important for Christians to follow by faith:
+
+> **[I John 3:21-24](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-24&version=ESV)** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 > **[II Corinthians 1:20](https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A20&version=ESV)** - For <ins>all the promises of God find their Yes</ins> **in him**. That is why it is through him that we utter our Amen to God for his glory. (ESV)
 
@@ -5855,7 +5964,7 @@ Jesus' atonement means that the requirement of the law might be fulfilled in us 
 
 Teaching others to not obey Jesus' commandments and to not obey the 10 Commandments is teaching people *against* walking by the Spirit.
 
-Teaching others to break the law is teaching bad behaviour. 
+Teaching others to break the law is teaching bad behaviour.
 
 > **[Romans 2:6-7](https://www.biblegateway.com/passage/?search=Romans%202%3A6-7&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; (ESV)
 
@@ -12916,7 +13025,15 @@ Jesus helped Thomas believe by giving him a commandment to do. It's implied that
 
 ### The new heavens and new earth
 
+This is cool:
+
 > **[Isaiah 65:17](https://www.biblegateway.com/passage/?search=Isaiah%2065%3A17&version=ESV)** - For behold, I create new heavens and a new earth, and <ins>the former things shall not be remembered or come into mind.</ins>
+
+I personally am holding out for an entirely new heavens and earth:
+
+> **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: the appointed time has grown very short. From now on, let those who have wives live as though they had none, and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and those who deal with the world as though they had no dealings with it. For **the present form of this world is passing away**. (ESV)
+
+I believe though, that the LORD is making an entirely new heavens and a new earth.
 
 > **[Isaiah 66:22](https://www.biblegateway.com/passage/?search=Isaiah%2066%3A22&version=ESV)** - For as the new heavens and the new earth that I makeshall remain before me, says the Lord, so shall your offspring and your name remain.
 
@@ -17704,6 +17821,8 @@ The asceticism [of denying marriage] has no value in stopping the indulgence of 
 
 > **[Colossians 2:18-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A18-23&version=ESV)** - Let no one disqualify you, insisting on **asceticism** and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, and not holding fast to the Head, from whom the whole body, nourished and knit together through its joints and ligaments, grows with a growth that is from God. If with Christ you died to the elemental spirits of the world, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to human precepts and teachings? These have indeed an appearance of wisdom in promoting **self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh.** (ESV)
 
+-   **Sermon:** [youtube.com: The Battle for Sexual Purity](https://www.youtube.com/watch?v=92JXBog4DtM)
+
 Marriage itself is good. So denying it for reasons of self-made religion / worldly precepts actually causes harm because it's not the truth.
 
 Abraham was 10 years older than Sarah!
@@ -17821,7 +17940,7 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 
 Not that I was or am perfect, but I have been following Jesus so I claim to be on Jesus' side. By the grace of God He made me born-again, washed, regenerated and [filled with the Holy Spirit in 2022](https://web.archive.org/web/20220702053809/https://mullikine.github.io/posts/astral-projection-pt-3/) after I had begun to repent and seek Jesus.
 
-For many years before that I've had what I've felt was unreasonably difficulty with relationships, but it's after I was born-again and actively following Jesus that I was denied my first ever marriage proposal, and it was very obvious to me that what I have been fighting is an antichrist/antirelationship/slander spirit attacking me after I was born-again (only now I could easily see it working through people) and probably long before that, and I feel like the spiritual attack (i.e. spirit spouse, LGBT dreams etc., thrown out of churches) I have received as a fallout for choosing Jesus, and endeavouring to abide by Christ's law, instead of using the [documented fact I was born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) as an excuse to plead not-guilty in court, I feel like has damaged me spiritually in ways which I have not experienced before, so I need Jesus to keep washing me as I try to be obedient to Him and be corrected by the Word of God. 
+For many years before that I've had what I've felt was unreasonably difficulty with relationships, but it's after I was born-again and actively following Jesus that I was denied my first ever marriage proposal, and it was very obvious to me that what I have been fighting is an antichrist/antirelationship/slander spirit attacking me after I was born-again (only now I could easily see it working through people) and probably long before that, and I feel like the spiritual attack (i.e. spirit spouse, LGBT dreams etc., thrown out of churches) I have received as a fallout for choosing Jesus, and endeavouring to abide by Christ's law, instead of using the [documented fact I was born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) as an excuse to plead not-guilty in court, I feel like has damaged me spiritually in ways which I have not experienced before, so I need Jesus to keep washing me as I try to be obedient to Him and be corrected by the Word of God.
 
 > **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
 
@@ -17891,6 +18010,8 @@ If the spirit spouse stuff is actually related to leftover sin in the body/mind/
 
 > **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
+-   **[Quote by John Piper](https://youtu.be/92JXBog4DtM?t=1595):** "You can't cast one devil out and leave the cravings of your heart empty - seven will return. You must fill your life with God, the glory and excellency of God."
+
 
 ### We should not be thieves and robbers
 
@@ -17911,6 +18032,215 @@ What I mean is we should not steal from God, even when Jesus has made us born-ag
 > **[John 10:1](https://www.biblegateway.com/passage/?search=John%2010%3A1&version=ESV),4,7-9** - Truly, truly, I say to you, he who does not enter the sheepfold by the door but climbs in by another way, that man is a thief and a robber. When he has brought out all his own, he goes before them, and the sheep follow him, for they know his voice. So Jesus again said to them, Truly, truly, I say to you, I am the door of the sheep. All who came before me are thieves and robbers, but the sheep did not listen to them. I am the door. If anyone enters by me, he will be saved and will go in and out and find pasture. (ESV)
 
 > **[John 8:44](https://www.biblegateway.com/passage/?search=John%208%3A44&version=ESV)** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
+
+
+### I want to get married but continue in sanctification first - that's the conflict - I don't want to bring any ongoing issues into marriage
+
+I want to continue in the process of sanctification, and holiness in body and spirit. But I feel like I'm made for marriage. And I feel like loneliness and isolation have been a cause of problems for me. The conflict is I wouldn't want to be married unless I was feeling totally cleaned up, and have everything under control, and I want to continue being cleaned up for a while:
+
+> **[I Corinthians 7:33-35](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A33-35&version=ESV)** - But the married man is anxious about worldly things, how to please his wife, and his interests are divided. And the unmarried or betrothed woman is anxious about the things of the Lord, **how to be holy in body and spirit**. But the married woman is anxious about worldly things, how to please her husband. I say this for your own benefit, not to lay any restraint upon you, but to promote good order and to secure your undivided devotion to the Lord. (ESV)
+
+> **[I Corinthians 9:25-27](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A25-27&version=ESV)** - Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable. So I do not run aimlessly; I do not box as one beating the air. But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. (ESV)
+
+
+### It's extremely important to respect the institution of marriage, and of marriage proposal
+
+I believe that outlawing marriage proposal is very close to outlawing God.
+
+I believe that it should be normalised that Christians should feel **comfortable** proposing being betrothed first needing to have a job or own a house.
+
+What I mean by betrothed is the person who a person has decided they want to marry:
+
+> **[I Corinthians 7:37-38](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A37-38&version=ESV)** - But whoever is firmly established in his heart, being under no necessity but having his desire under control, and has determined this in his heart, to keep her as his betrothed, he will do well. So then he who marries his betrothed does well, and he who refrains from marriage will do even better. (ESV)
+
+What I mean by this, is "having a job" or "owning a house" must never become a prerequisite to a Christian to being allowed to marry or at least to being "betrothed" (people should be allowed to propose and given a chance even if they have no assets, and no job).
+
+"Having God" is a much better prerequisite.
+
+We shouldn't fight against God by making Him out to be not enough because God is all we need, and at the start of a marriage, it should really be founded on that type of faith.
+
+Otherwise, at its essence, getting marriage security from a job is essentially encouraging prostitution and divorce. To make a person think they need money or a job before they can marry is to attack their faith. Satan can use money and his servants (anyone who isn't doing the will of God) to control people and manipulate marriage, and would rather see chatbots and robots marrying' human beings, open-marriage, interspecies, whatever, and satan would prefer more and more child trafficking as there is increasing wealth inequality. Following Jesus would increasingly mean not being able to marry because no-one would marry a poor person, even someone who obeyed Jesus command to give their possessions to those in need and follow Him, and I believe that to get marriage security through a job or through material possessions, is an attack against God's design and is faithless to God at its very essence and sets the stage for a divorce when there is a financial crisis because trust must be in God not money, and it's best to establish that trust in God at the very beginning.
+
+-   **Sermon :: [youtube.com: The Battle for Sexual Purity](https://www.youtube.com/watch?v=92JXBog4DtM):** And it came out that he was fasting and
+    praying to Satan, and the conversation
+    went on and the discovery was made that
+    what this person was fasting and praying
+    for was the destruction of ministers'
+    marriages.
+    
+    Now if if you were a Satan worshipper and
+    you wanted to know what to pray to your
+    father in hell, what's his will?
+    
+    Where would you go to find out go?
+    
+    -   to the Bible because the Bible is True.
+    
+    The Bible tells you Truly what Satan is
+    about in the world.
+    
+    And you go to the Bible, and what you find
+    in **1 Corinthians 7** [is] that Satan with
+    all his might is in favor of adultery and
+    against fidelity.
+    
+    No wonder then that Satan worshippers are
+    making their aim to pray for that sort of
+    thing.
+    
+    Learn from the scriptures this morning
+    that when you battle sexual temptation you
+    battle Satan, a cosmic power who wants
+    your soul.
+    
+    Never forget however, in conclusion, that
+    the Son of God came into the world to
+    destroy the works of the devil.
+    
+    And there is a way to resist, and I close
+    with commending this to you all, married
+    and single.
+    
+    **[1 Thessalonians 4:3-5](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A3-5&version=ESV)** contains a key for
+    what I think is the way out of bondage to
+    the abuses of sexual desire.
+    
+    Paul says there "this is the will of God,
+    your sanctification, that you abstain from
+    immorality that each one of you knows how
+    to take a wife for himself in holiness and
+    honor, not in passion of lust like the
+    heathens do who <ins>do not know God</ins>." You
+    see the key one kind of person governs his
+    life by the lust of fleshly passions.
+    
+    Another person governs his life by
+    holiness and honor.
+    
+    What's the difference?
+    
+    Whether you know God or not is the
+    difference.
+    
+    I mean, **know** God, not *know about* God,
+    **know God**.
+    
+    Paul said in **[Romans 1:28](https://www.biblegateway.com/passage/?search=Romans%201%3A28&version=ESV)** "since they did
+    not approve to have God in their
+    knowledge, He gave them up to a debased
+    mind and improper conduct." You see the
+    connection?
+    
+    He said in **[Galatians 4:8](https://www.biblegateway.com/passage/?search=Galatians%204%3A8&version=ESV)**, "formerly,
+    when you did not know God you were in
+    bondage to beings that by nature are not
+    gods." In other words, the antidote the
+    liberating force from the bondage of Satan
+    in the area of sexual desire is to know
+    God.
+
+> **[II John 1:9-10](https://www.biblegateway.com/passage/?search=2%20John%201%3A9-10&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, (ESV)
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+> **[Proverbs 7:1-3](https://www.biblegateway.com/passage/?search=Proverbs%207%3A1-3&version=ESV)** - My son, **keep my words** and treasure up my commandments with you; **keep my commandments** and live; keep my teaching as the apple of your eye; bind them on your fingers; write them on the tablet of your heart. (ESV)
+
+> **[Luke 12:15](https://www.biblegateway.com/passage/?search=Luke%2012%3A15&version=ESV)** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
+
+> **[Matthew 19:21](https://www.biblegateway.com/passage/?search=Matthew%2019%3A21&version=ESV)** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
+
+> **[Matthew 6:21](https://www.biblegateway.com/passage/?search=Matthew%206%3A21&version=ESV)** - For where your treasure is, there your heart will be also. (ESV)
+
+
+### Personal testimony thoughts around marriage sabotage
+
+Very sadly, after I made the marriage proposal in 2022 the devil really came at me to:
+
+-   Make me think I had to work for salvation after being born-again
+-   Make me think I need to "pay" to marry her - which is like a spirit of prostitution or trafficking - the devil would happily attempt to turn marriage into an economy - the devil is like a pimp
+
+In my view what has happened is **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)**:
+
+> **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
+
+For anyone who has some insight into my
+situation, another possibility is that I was tested by God after being born of the Spirit.
+
+I had attended a [Mormon](https://purposeinchrist.com/8-weird-mormon-beliefs/) church for the first and only time on
+(if I recall correctly) what I think was the second day (2 Jan) of 2022, and
+subsequently born-again of the Spirit on 2
+April 2022, I may have encountered some spirits of **bad doctrine**.
+
+But at the end of the day, I don't hold to their doctrine, and also I was seeking Jesus and endeavouring to remain accountable before God and bring my deeds into the light.
+
+According to a [Mormon](https://purposeinchrist.com/8-weird-mormon-beliefs/), they believe in polygamy which I think is not God's design,
+and from a quick internet search I can see their beliefs about becoming gods and goddesses and eternal marriage
+actually have an interest parallel **in my testing** / **[divine court](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre)** after being born-again of the spirit.
+
+When I said on Facebook something like: "Jesus is my life my truth and my heaven
+and [the girl I love is like a little bit of that](https://www.youtube.com/watch?v=OWNLVogchpU&ab_channel=DaveDobbyn-Topic).", the Hindu guy who was asking me for financial assistance (I still have the transcripts, and my lawyer also received them)
+(as I was getting pagan dreams of evading judgement through good works) immediately said on my Facebook post, "Maybe she's god, maybe you're god", as I was staying at the house of a close friend.
+
+I rebuked that comment in Jesus Christ's name because my love was genuine but was not going to allow the devil to continue trying to push me into feeling as though I was rejecting the grace of God by denying the **free gift** of justification by the blood of Jesus Christ by faith in Jesus Christ.
+
+I asked the Hindu guy, "Did you try to put a demon in me?"
+Instead of saying no, the Hindu guy then said, "But I need you to invent." - and I thought of this verse:
+
+> **[Romans 1:30](https://www.biblegateway.com/passage/?search=Romans%201%3A30&version=ESV)** - slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, (ESV)
+
+So I then rebuked him in Jesus Christ's name.
+
+The Hindu guy then said, "I'm going back to the sea. I hope to wash up on shore again soon.", and I felt a spirit depart from my body, and he disappeared from Facebook. - totally demonic stuff.
+
+I'm not going to allow the devil to try to frame it as though:
+
+-   I had to "pay" for justification
+    -   But I was actually just obeying Jesus out of obedience - God had simply through His grace granted me repentance to life, to be able to love Him back as a response of Him loving me first
+-   I wasn't already forgiven
+    -   But I was a born-again believer with my trust in Jesus Christ, simply being obedient to Jesus out of love for Him, and I believed I was totally forgiven, and without guilt
+-   I had to "pay" for the girl I proposed to by doing good works
+    -   the devil is a scumbag and probably wants to institute prostitution in the spiritual realm
+    -   the devil wants to put a spiritual price tag on getting married
+-   I was trying to be my own god, which I certainly was not trying to do, but I was interested in getting to know Jesus and "union with Christ"
+
+The devil wanted to make me think I was not
+forgiven by the one True God already, and prey on my active Fruit
+of the Holy Spirit desire to marry the girl I loved with a pure heart,
+and make it look like covetousness / licentiousness / lewdness when it was not - it was love.
+
+I hold to that belief / knowledge.
+
+But the real test is that I couldn't plead not guilty because being obedient to Jesus I have to admit in court that I am not perfect and I am guilty:
+
+> **[Romans 3:23](https://www.biblegateway.com/passage/?search=Romans%203%3A23&version=ESV)** - for all have sinned and fall short of the glory of God, (ESV)
+
+The devil tried to steal my blessings, and tried to push me back into bondage, and into sin, by slamming me with lewd dreams and visions,
+meanwhile bombarding me with accusations of my past, and I've had to fight like heaven to get out of the intense condemnation I've faced.
+
+Nevertheless it got to the point where I could not test God by pleading not guilty because I know Jesus was there in the court room, and I was being faithful to my Jesus.
+
+I had my own meeting with [Holy Spirit on 3 May](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/) which
+
+I found out much later that was her birthday and also the exact date of when I pleaded guilty in court a year later.
+
+I'm a trinitarian Christian, I confess the Nicene creed, I don't believe in polygamy, I believe that marriage should not be idolatry, I believe in being a servant in God's kingdom living as a sacrifice to God, and not hubris in "becoming my own god".
+I want a real relationship with Jesus by being obedient to Jesus is reality, accountable to God. Jehovah God as my witness:
+
+> **[I John 2:4](https://www.biblegateway.com/passage/?search=1%20John%202%3A4&version=ESV)** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+
+I don't believe in polygamy, in fact I am resolutely against it. I much prefer to believe that God has one person in mind for me,
+like Eve to Adam, yes, but not as if "in union we would become a god", but rather that we have our own union with Christ first and foremost.
+
+And I don't know about the permanency of marriage either but I do believe that God has all who are in Christ joined together by love and whatever God has in store for us will make earthly marriage look pale by comparison.
+
+> **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: the appointed time has grown very short. From now on, let those who have wives live as though they had none, and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and those who deal with the world as though they had no dealings with it. For **the present form of this world is passing away**. (ESV)
+
+Consider that Adam and Eve were in the paradise of God, which is our final destination.
+
+> **[Revelation of John 2:7](https://www.biblegateway.com/passage/?search=Revelation%202%3A7&version=ESV)** - He who has an ear, let him hear what the Spirit says to the churches. To the one who conquers I will grant to eat of the tree of life, which is in the paradise of God. (ESV)
+
+Since what has happened has been a train-wreck - I feel like my marriage prospects have been sabotaged -
+I currently am praying for God to do a miracle to fix everything, and I know my immediate concern is ongoing sanctification so that is my current focus.
 
 
 ### I was learning Christ before I was born-again
@@ -24439,7 +24769,7 @@ It's very clear that there is some distinction between Father and Son:
 
 > **[John 20:17](https://www.biblegateway.com/passage/?search=John%2020%3A17&version=ESV)** - Jesus said to her, Do not cling to me, for I have not yet ascended to the Father; but go to my brothers and say to them, I am ascending to my Father and your Father, to my God and your God. (ESV)
 
-> **[John 7:16](https://www.biblegateway.com/passage/?search=John%207%3A16&version=ESV)** - So Jesus answered them, My teaching is not mine, but his who sent me. (ESV) 
+> **[John 7:16](https://www.biblegateway.com/passage/?search=John%207%3A16&version=ESV)** - So Jesus answered them, My teaching is not mine, but his who sent me. (ESV)
 
 But Jesus Christ is our Mediator:
 
@@ -24923,6 +25253,18 @@ stand strong with the armour He has provided.
 
 
 # Solae
+
+I am covered by the Blood of Jesus Christ.
+My trust is in Jesus.
+I am justified by faith in Jesus Christ who has set me free from the law of sin and death.
+The law of the spirit of life in Christ has set me free from the law of sin and death.
+In Christ I am justified by His blood as I have placed by faith in Him and continue to trust Him and obey Him. He takes care of me.
+
+My justification and salvation are absolutely reliant on Him and He is faithful even when I am unfaithful.
+
+Obeying Jesus is not contrary to faith in Jesus but gives me confidence before God. AMEN!!
+
+> **[I John 3:21-24](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-24&version=ESV)** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
 I believe in all of theses:
 
@@ -25589,6 +25931,86 @@ Ever since [2 April 2022](https://web.archive.org/web/20220402091720/https://mul
 
 I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
+I got angry and yelled at the judge in court saying he was a liar because the judge had made a remark against my water baptism which was an appeal to God for a good conscience:
+
+-   **[youtube.com: The Hidden Snare of Bitterness @time: 9 min 21 sec](https://youtube.com/watch?v=ZSVWNhh1bbE&t=561):** "anger at something because God's
+    purposes are being resisted or God's
+    character is being maligned not our
+    purposes merely or our
+    character good anger is targeting sin
+    against God not just assaults against
+    us"
+
+Well, all humans except for Jesus have broken God's law - we've all been liars, but God is true. And that is exactly the reason why I pleaded guilty, and the judge is also guilty:
+
+> **[Romans 3:4](https://www.biblegateway.com/passage/?search=Romans%203%3A4&version=ESV)** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
+
+Sproul also had a moment like this:
+
+-   **[youtube.com: The Meaning of Holiness: The Holiness of God with R.C. Sproul](https://www.youtube.com/watch?v=K96e1tK7eN4&list=PL30acyfm60fVpGc7Eo--3S6w1kdhXY9Cb&index=5&t=506s):** I was lecturing on
+    the Lord's Supper, and his question was
+    not so much a question as an expression of
+    unbridled cynicism.
+    
+    He put his hand up, and I acknowledged
+    him.
+    
+    He said, "What's the big deal about bread
+    and wine?
+    
+    Why do we have to do that?
+    
+    Why can't we just have peanut butter and
+    jelly sandwiches and coca-cola?" That's
+    when I lost it.
+    
+    I just felt this rage just flowing up out
+    of my soul.
+    
+    He grated my sensitivity when he said
+    that, and instead of giving a polite,
+    genteel, professorial response to him, I
+    said, "You want to know why we don't have
+    peanut butter and jelly sandwiches and
+    coca-cola at Holy Communion?
+    
+    Because Jesus never consecrated peanut
+    butter and jelly or coca-cola." I just
+    wanted to kill him.
+    
+    Why?
+    
+    Because he had just profaned with his
+    question something that was precious and
+    holy in my experience.
+    
+    But what is it that makes the bread and
+    the wine so special?
+    
+    What is it that makes any moment in
+    history so special?
+    
+    What is it that makes a piece of real
+    estate holy ground?
+    
+    Why is it that Noah marked the spot where
+    he landed with a &#x2013; built an altar?
+    
+    And Abraham built an altar to God.
+    
+    Why is it that we are drawn to take
+    something that is common and make it
+    extraordinary because of its significance?
+    
+    It's not because of the intrinsic value of
+    these objects, but what makes something
+    sacred, what makes something holy is the
+    touch of God upon it.
+    
+    When the one who himself is other and
+    different touches that which is ordinary,
+    it becomes extraordinary.
+
 Even though I have been born-again, and I think I've been treated with almost zero grace, even treated unfairly, I do not say I am without sin, and to have pleaded 'not guilty' as I am seeking to be obedient to Jesus, even while repenting from certain things which were nothing to do with court, and to not use the year I was born of the Spirit to make testimony of Jesus I think would be to dishonour Jesus, as Jesus is my Lord. So for that and also to try to do no harm to my neighbour, and also because I am not without sin, even after being washed and regenerated, I pleaded guilty in court:
 
 > **[I John 1:8-10](https://www.biblegateway.com/passage/?search=1%20John%201%3A8-10&version=ESV)** - **If we say we have no sin, we deceive ourselves, and the truth is not in us.** If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not sinned, we make him a liar, and his word is not in us. (ESV)
@@ -25882,6 +26304,142 @@ with an agenda of pressuring me to be deceived into thinking I was not forgiven,
 and pressuring me to be deceived that I needed to pay for my salvation with good works, but I have done all my good works out of obedience, knowing I am born again and forgiven, price paid in full with Jesus' blood.
 
 I have lots of evidence of this. Jehovah knows it.
+
+-   **[Sermon](https://youtube.com/watch?v=6EBKeGC1LOo&t=488):** He says in **[Revelation 12:10](https://www.biblegateway.com/passage/?search=Revelation%2012%3A10&version=ESV)**,
+    he said, first-hand, "for the accuser of the
+    brethren who accuses them before God day
+    and night has been cast out."
+    
+    Here's what
+    I want you to see: The thing that's going
+    to cause complete and total breakthrough
+    is not you defeating a demon on a
+    battlefield&#x2026;
+    
+    It is you <ins>silencing the argument of a demon against you</ins>.
+    
+    When you silence the voice of the accuser
+    the full breakthrough is now free to come
+    you see.
+    
+    In other words, what is stopping us from
+    coming into the full breakthrough God has
+    for us is not a demon on a battlefield,
+    it's an argument in the spirit world
+    against you.
+    
+    And we have to know how to go in to the
+    spirit world in silence that argument.
+    
+    We have to know how to accomplish that
+    because when we do, when we were able to
+    silence the argument, then all of a sudden
+    everything that we were made for,
+    everything that we were were created to
+    accomplish, every destiny every purpose
+    ,every breakthrough begins to be set into
+    place so that we can experience what God
+    has for us.
+    
+    Because that's what you have to do with an
+    accuser.
+    
+    Now, the next verse tells us how to do.
+    
+    Here's what he says he says, "and they
+    overcame him by the blood of the Lamb and
+    by the word of their testimony and they
+    did not love their lives unto death." So
+    there's three things he says here, three
+    things that are necessary to overcome the
+    accuser.
+    
+    He says very clearly, it says, "these are
+    the way they overcame him".
+    
+    This is the way they silenced the legal
+    argument against them, was they overcame
+    him by the blood of the Lamb, the word of
+    their testimony and they loved not their
+    lives unto death.
+    
+    Okay, number one, the blood of the Lamb,
+    and we've talked about this a little bit
+    but the blood of the Lamb is what you use
+    to dismiss cases against you.
+    
+    That's what you do with the blood.
+    
+    The blood is used to dismiss cases that
+    the enemy would claim against you.
+    
+    Why?
+    
+    Because when I come and I repent, when I
+    come and I repent and through my
+    repentance agree with the blood of lamb,
+    when I do that then what happens is that
+    the blood is able to now silence the
+    voices that would be speaking against me
+    that the accuser would be using.
+    
+    Okay, so I use that or I use the blood to
+    silence the voice of course that's **[Hebrews12:24](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A24&version=ESV)** -
+    <ins>and to Jesus, the mediator of a new covenant, and to the sprinkled blood that speaks a better word than the blood of Abel. (ESV)</ins>
+    Now let me just show you one
+    scripture.
+    
+    Why it's important to repent: **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** -
+    <ins>But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)</ins>
+    It literally says keeps on
+    cleansing us from all sin.
+    
+    That's why - that's actually the verbiage
+    
+    -   it keeps on cleansing us - why because
+    
+    the blood is <ins>'not that which was **spoke**, it is that which is **speaking**'</ins>.
+    
+    That's what it said.
+    
+    There was a blood that *speaks* better
+    things.
+    
+    The blood isn't something that was spoke
+    about you.
+    
+    The blood is **speaking** concerning you.
+    
+    So watch, it says that the blood <span class="underline">keeps on
+    cleansing us from all sin but only when we
+    walk in the light as he is in the light</span>
+    See what does that mean?
+    
+    That means I come out of darkness into the
+    light.
+    
+    That means I have to repent.
+    
+    Repentance is coming out of darkness and
+    into light.
+    
+    So you cannot get the benefits of the
+    blood, you cannot agree with what the
+    blood is saying about you unless you come
+    out of darkness and into light.
+    
+    As we walk in the light as he is in the
+    light, the blood of Jesus keeps on
+    cleansing us from all unrighteousness at
+    all sins.
+    
+    Does that make sense?
+    
+    So it's very important to repent: that we
+    come and we acknowledge, we come in yoder
+    hearts, we come in surrender, we ask for
+    the blood to speak in our behalf, and it
+    begins to speak in our behalf, <ins>and the cases that are against us whether it's because by sin by transgression or by iniquity, those cases are *dismissed*.</ins>
 
 > In Jesus Christ's name I rebuke the antichrist spirit which continues to attack me and deny the grace, forgiveness and atonement which I have received through faith in Jesus Christ, as if God has not forgiven me especially in regards to the sins of my past particularly before I was born-again of water and the Spirit on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). I rebuke that spirit in Jesus Christ's name and in Jehovah's name. Also as I continue walking in the light as Jesus is in the light, even when I sin, the blood of Jesus continues to wash me clean. So in Jesus Christ's name I rebuke any antichrist spirit continuing to bother me, whether in my sleep or through other people.
 
@@ -26205,6 +26763,53 @@ On the bright side, last week I did get a picture of John Piper on YouTube sayin
 That means that when I turn up in heaven I'll have 'clothes' so I can enter - the imputed righteousness of Christ.
 
 > **[Matthew 22:11-13](https://www.biblegateway.com/passage/?search=Matthew%2022%3A11-13&version=ESV)** - But when the king came in to look at the guests, he saw there a man who had no wedding garment. And he said to him, Friend, how did you get in here without a wedding garment? And he was speechless. Then the king said to the attendants, Bind him hand and foot and cast him into the outer darkness. In that place there will be weeping and gnashing of teeth. (ESV)
+
+-   **[youtube.com: The Hidden Snare of Bitterness @time: 4 min 6 sec](https://youtube.com/watch?v=ZSVWNhh1bbE&t=246):** So when Paul says, "Put it on, this new     he means, "Act it out." If you have been
+    created anew after the likeness of God
+    clothe yourselves with godly garments.
+    
+    Now what is clothing?
+    
+    Clothing is what people see.
+    
+    When you put clothing around yourself you
+    give something for people to look at
+    that's presentable.
+    
+    So when Paul says "clothe yourselves, put
+    on your new nature," he means, "let that
+    inner reality that God has created work
+    itself out invisible actions and behaviors
+    and attitudes.
+    
+    Become what you are within." if the hidden
+    spring has been purified let the visible
+    streams run clean.
+    
+    But of course if the spring is purified
+    the streams will run clean.
+    
+    If the tree is good the fruit will be
+    good.
+    
+    Out of the abundance of the heart the
+    mouth does speak.
+    
+    &#x2026;
+    
+    These choices are the obedience
+    that confirm your calling and election
+    and make it
+    sure.
+    
+    &#x2026;
+
+-   **[**warning**](https://youtube.com/watch?v=ZSVWNhh1bbE&t=246):** If we neglect to understand that the
+    Christian life as it is lived out is a
+    miracle, then all our pursuit of morality
+    or holiness will become striving in our
+    own strength&#x2026; we will chalk it up to our
+    merit&#x2026;
 
 Also, I recall that some time in 2022 I had a dream where someone asked me, "How did you get in here?" And I responded pointing to 2 blog articles I had written ([2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) and [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) and indicating that it was through being born-again, through baptism, the death and resurrection of Jesus Christ.
 
