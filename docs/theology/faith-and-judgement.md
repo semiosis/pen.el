@@ -26103,7 +26103,28 @@ Part of why I could not resist but continue blogging,
 was because of the sheer injustice I felt regarding my freedom to write,
 and I felt like there was this relationship-destroying spirit sabotaging my relationships again,
 and whatever thing was completely against faith itself - I had already been writing on my blog very few times to demonstrate a track record
-of faithfulness, and another part was that after I proposed I wanted to demonstrate faithful waiting in way that was legal as the proposal had not been rejected.
+of faithfulness, and another part was that after I proposed I wanted to demonstrate faithful waiting **in way that was legal** as the proposal had not been rejected,
+and as far as I knew at the time, copying Reformed Church Quiz Night results on my blog was not illegal, despite it having elements of her name dispersed in the result answers,
+or a picture of a flowerbed on my own Facebook page. I realise that by doing this I was also ["poking the bear"](https://dictionary.cambridge.org/dictionary/english/poke-the-bear),
+but I'm a human being who proposed to someone, and I feel like I can in all honesty plead that I was just being human
+and I felt at the time like the system opposing me was an evil and graceless machine.
+
+I think the judiciary system should be careful not to infringe on basic human rights going forward with the AI-generated fiction which is now in the world,
+otherwise as I have said, robots may be taking human wives before poor people can, and that to God is an abomination I assure you - and I wouldn't want to tempt God.
+Tempting God with that seems a worse idea than "poking the bear".
+
+> **[II Samuel 12:1-25](https://www.biblegateway.com/passage/?search=2%20Samuel%2012%3A1-25&version=ESV)** - And the LORD sent Nathan to David. He came to him and said to him, There were two men in a certain city, the one rich and the other poor. The rich man had very many flocks and herds, but **the poor man had nothing but one little ewe lamb**, which he had bought. And he brought it up, and it grew up with him and with his children. It used to eat of his morsel and drink from his cup and lie in his arms, and it was like a daughter to him. Now there came a traveler to the rich man, and he was unwilling to take one of his own flock or herd to prepare for the guest who had come to him, but **he took the poor man's lamb and prepared it for the man who had come to him.** Then David's anger was greatly kindled against the man, and he said to Nathan, As the LORD lives, the man who has done this deserves to die, and he shall restore the lamb fourfold, because he did this thing, and because he had no pity. Nathan said to David, You are the man! Thus says the LORD, the God of Israel, I anointed you king over Israel, and I delivered you out of the hand of Saul. And I gave you your master's house and your master's wives into your arms and gave you the house of Israel and of Judah. And if this were too little, I would add to you as much more. Why have you despised the word of the LORD, to do what is evil in his sight? You have struck down Uriah the Hittite with the sword and have taken his wife to be your wife and have killed him with the sword of the Ammonites. Now therefore the sword shall never depart from your house, because you have despised me and have taken the wife of Uriah the Hittite to be your wife. Thus says the LORD, Behold, I will raise up evil against you out of your own house. And I will take your wives before your eyes and give them to your neighbor, and he shall lie with your wives in the sight of this sun. For you did it secretly, but I will do this thing before all Israel and before the sun. David said to Nathan, I have sinned against the LORD. And Nathan said to David, The LORD also has put away your sin; you shall not die. Nevertheless, because by this deed you have utterly scorned the LORD, the child who is born to you shall die. Then Nathan went to his house. And the LORD afflicted the child that Uriah's wife bore to David, and he became sick. David therefore sought God on behalf of the child. And David fasted and went in and lay all night on the ground. And the elders of his house stood beside him, to raise him from the ground, but he would not, nor did he eat food with them. On the seventh day the child died. And the servants of David were afraid to tell him that the child was dead, for they said, Behold, while the child was yet alive, we spoke to him, and he did not listen to us. How then can we say to him the child is dead? He may do himself some harm. But when David saw that his servants were whispering together, David understood that the child was dead. And David said to his servants, Is the child dead? They said, He is dead. Then David arose from the earth and washed and anointed himself and changed his clothes. And he went into the house of the LORD and worshiped. He then went to his own house. And when he asked, they set food before him, and he ate. Then his servants said to him, What is this thing that you have done? You fasted and wept for the child while he was alive; but when the child died, you arose and ate food. He said, While the child was still alive, I fasted and wept, for I said, Who knows whether the LORD will be gracious to me, that the child may live? But now he is dead. Why should I fast? Can I bring him back again? I shall go to him, but he will not return to me. Then David comforted his wife, Bathsheba, and went in to her and lay with her, and she bore a son, and he called his name Solomon. And the LORD loved him and sent a message by Nathan the prophet. So he called his name Jedidiah, because of the LORD. (ESV)
+
+I consider myself to be the poor man in this situation **and** not like David. I believe I could have asked God to get justice with this.
+But I did give a letter of forgiveness, so there's no (even spiritual) legal obligation to have this amended.
+
+But I am allowed to ask God for more grace:
+
+> **[James 4:6-7](https://www.biblegateway.com/passage/?search=James%204%3A6-7&version=ESV)** - But he gives more grace. Therefore it says, God opposes the proud, but gives grace to the humble. Submit yourselves therefore to God. Resist the devil, and he will flee from you. (ESV)
+
+And I'm allowed to speak the truth from my angle:
+
+> **[Isaiah 41:21](https://www.biblegateway.com/passage/?search=Isaiah%2041%3A21&version=ESV)** - Set forth your case, says the LORD; bring your proofs, says the King of Jacob. (ESV)
 
 I believe strongly that outlawing marriage proposal is very close to outlawing God,
 and outlawing my writing was punishing faith which is the way in which we are supposed to live.
@@ -26125,7 +26146,9 @@ I'm no longer interested in AI. I know God is real and is taking care of me.
 I realise what has happened regarding me and relationships is messy and the need to hold no grudge going forward.
 I offer it to anyone.
 
-Life doesn't feel like the kingdom of God to me currently because that would involve having this trifecta of **righteousness**, **peace** and **joy** in the Holy Spirit, but God is the only one who can solve this for me. At the end of the day, it's good conscience with God I am after and sanctification:
+Life doesn't feel like the kingdom of God to me currently because that would involve having this trifecta of **righteousness**, **peace** and **joy** in the Holy Spirit, and I have felt like I have had my blessings stolen from me by the enemy,
+but God is the only one who can solve this for me, but I do have peace and righteousness in the Holy Spirit, and baseline joy which is derived from a good conscience with God.
+At the end of the day, it's good conscience with God I am after and sanctification:
 
 > **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
 
@@ -26161,7 +26184,7 @@ Ever since [2 April 2022](https://web.archive.org/web/20220402091720/https://mul
 
 I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
-I got angry and yelled at the judge in court saying he was a liar because the judge had made a remark against my water baptism which was an appeal to God for a good conscience:
+I got angry and yelled at the judge in court saying he was a liar because the judge had made a remark against what I assumed was my water baptism (saying, "he must have been baptised at midnight"), but my water baptism was an appeal to God for a good conscience:
 
 -   **[youtube.com: The Hidden Snare of Bitterness @time: 9 min 21 sec](https://youtube.com/watch?v=ZSVWNhh1bbE&t=561):** "anger at something because God's
     purposes are being resisted or God's
@@ -26171,7 +26194,9 @@ I got angry and yelled at the judge in court saying he was a liar because the ju
     against God not just assaults against
     us"
 
-Well, all humans except for Jesus have broken God's law - we've all been liars, but God is true. And that is exactly the reason why I pleaded guilty, and the judge is also guilty:
+But maybe he was referring to me [meeting the Holy Spirit in my sleep at 12.30am](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/) which may of course have been part of my Holy Spirit baptism - this is mysterious so we can only speculate.
+
+Well, whatever is the case, all humans except for Jesus have broken God's law - we've all been liars, but God is true. And that is exactly the reason why I pleaded guilty, and the judge is also guilty:
 
 > **[Romans 3:4](https://www.biblegateway.com/passage/?search=Romans%203%3A4&version=ESV)** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
 
