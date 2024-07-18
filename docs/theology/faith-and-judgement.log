@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 JUL 2024 16:59
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 JUL 2024 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,7 +318,7 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-(.//faith-and-judgement.aux)
+No file faith-and-judgement.aux.
 \openout1 = `faith-and-judgement.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -339,7 +339,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -357,11 +356,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
-
-(.//faith-and-judgement.out) (.//faith-and-judgement.out)
 \@outlinefile=\write3
 \openout3 = `faith-and-judgement.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2098,31 +2098,31 @@ Overfull \hbox (12.60695pt too wide) in paragraph at lines 35150--35151
  []
 
 [675]
-Overfull \hbox (3.64989pt too wide) in paragraph at lines 35229--35250
+Overfull \hbox (3.64989pt too wide) in paragraph at lines 35230--35251
 []\TU/lmr/m/n/10.95 What if you just decided,
  []
 
-[676] [677] [678] [679] [680] [681] [682] [683] [684] [685]
-Overfull \hbox (14.33705pt too wide) in paragraph at lines 35827--35828
+[676] [677] [678] [679] [680] [681] [682] [683] [684] [685] [686]
+Overfull \hbox (14.33705pt too wide) in paragraph at lines 35842--35843
 []\TU/lmr/m/n/10.95 Jesus faced
  []
 
-[686] [687]
-Overfull \hbox (1.8857pt too wide) in paragraph at lines 35964--35968
+[687] [688] [689]
+Overfull \hbox (1.8857pt too wide) in paragraph at lines 36009--36013
 []\TU/lmr/m/n/10.95 I was lecturing on the
  []
 
-[688] [689] [690] [691] [692] [693] [694] [695]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 36402--36403
+[690] [691] [692] [693] [694] [695] [696]
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 36447--36448
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
-[696] [697] [698] [699] [700] [701]
-Overfull \hbox (177.03938pt too wide) in paragraph at lines 36735--36736
+[697] [698] [699] [700] [701] [702]
+Overfull \hbox (177.03938pt too wide) in paragraph at lines 36780--36781
 []
  []
 
-[702] [703]
+[703] [704]
 Missing character: There is no מ in font [lmmono10-regular]:!
 Missing character: There is no ו in font [lmmono10-regular]:!
 Missing character: There is no ֹ in font [lmmono10-regular]:!
@@ -2138,48 +2138,57 @@ Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ז in font [lmmono10-regular]:!
 Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ר in font [lmmono10-regular]:!
- [704] [705] [706]
-Overfull \hbox (44.26335pt too wide) in paragraph at lines 36998--36999
+ [705] [706] [707]
+Overfull \hbox (44.26335pt too wide) in paragraph at lines 37043--37044
 []
  []
 
-[707] [708] [709] [710] [711] [712] [713] [714] [715] [716] [717] [718]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 37678--37678
+[708] [709] [710] [711] [712] [713] [714] [715] [716] [717] [718] [719]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 37723--37723
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 37678--37678
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 37723--37723
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
-
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 37691--37691
+[720]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 37736--37736
 [] \TU/lmtt/m/n/10.95 8  Nevertheless, I live to serve You, God, and to be conf
 ormed into the image of Your Son, Jesus Christ.[] 
  []
 
-[719]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37716.
- [720]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37716.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37761.
+[721]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 37761.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37716.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37716
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37761.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37761
 .
-Package rerunfilecheck Info: File `faith-and-judgement.out' has not changed.
-(rerunfilecheck)             Checksum: 54EFBD55AFEAE81C9A5B2C5188F7B55C.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37716.
+
+
+Package rerunfilecheck Warning: File `faith-and-judgement.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
+(rerunfilecheck)             Before: 
+(rerunfilecheck)             After:  54EFBD55AFEAE81C9A5B2C5188F7B55C.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37761.
  ) 
 Here is how much of TeX's memory you used:
- 11296 strings out of 494868
- 159840 string characters out of 6175714
- 514332 words of memory out of 5000000
- 15125 multiletter control sequences out of 15000+600000
+ 11103 strings out of 494868
+ 156799 string characters out of 6175714
+ 266408 words of memory out of 5000000
+ 14938 multiletter control sequences out of 15000+600000
  10411 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,9n,45p,6376b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,9n,45p,6376b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./faith-and-judgement.pdf (720 pages).
+Output written on ./faith-and-judgement.pdf (721 pages).
