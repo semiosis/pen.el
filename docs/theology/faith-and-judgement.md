@@ -22,6 +22,10 @@ Christ is reigning until all things are placed into subjection under Him. We mus
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
+I'm trying to side with Jesus over issues regarding the evil which is still present in the world and "hate the sin, not the sinner", and starting by first taking a look at my own problems but by no means endorsing sinful things even things I consider I do which are sinful, I don't endorse them for myself either:
+
+> **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
+
 > I agree whole heartedly with Keith Green here:
 > 
 > -   [youtube.com: Keith Green 1978 : Make My Life A Prayer to You {live}](https://www.youtube.com/watch?v=z7oCa9BvO9g)
@@ -576,7 +580,7 @@ The Jesus which the Apostles proclaimed is the same Jesus we need to proclaim in
 
 > **[II Corinthians 11:4](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A4&version=ESV)** - For if someone comes and proclaims another Jesus than the one we proclaimed, or if you receive a different spirit from the one you received, or if you accept a different gospel from the one you accepted, you put up with it readily enough. (ESV)
 
-[youtube.com: You Cannot Obey God Without God](https://www.youtube.com/watch?v=mqlCjq60ogg&t=203s)
+-   **Talk by John Piper:** [youtube.com: You Cannot Obey God Without God](https://www.youtube.com/watch?v=mqlCjq60ogg&t=203s)
 
 It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God:
 
@@ -988,9 +992,9 @@ This doesn't necessarily mean that obedience is nonexistent before good works, a
 
 > **[John 14:12](https://www.biblegateway.com/passage/?search=John%2014%3A12&version=ESV)** - Truly, truly, I say to you, whoever believes in me will also do the works that I do; and greater works than these will he do, because I am going to the Father. (ESV)
 
-We just turn away from doing satan's will and doing God's will:
+We just turn away from doing satan's will and turn torwards doing God's will:
 
-> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.** (ESV)
 
 But repentance and belief should result in good works (serving the living God):
 
@@ -1755,7 +1759,7 @@ Being justified by Jesus' blood, we are saved by Him from the wrath of God. We h
 
 Continuing to be sanctified by faith is a process where a person continues in Jesus' words because they are sanctified by faith in Jesus and that means ongoing trust and faithful obedience.
 
-> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.** (ESV)
 
 To be sanctified by faith in Jesus is an applied process, I think:
 
@@ -1854,7 +1858,7 @@ If you hear Jesus' words which came from God and trust God then you have eternal
 
 ### How we should act how we're instructed to act while awaiting the Lord's return
 
-[youtube.com: Live with the End in View](https://www.youtube.com/watch?v=CTaeOKhiI1k)
+-   **Sermon:** [youtube.com: Live with the End in View](https://www.youtube.com/watch?v=CTaeOKhiI1k)
 
 > **[Luke 21:36](https://www.biblegateway.com/passage/?search=Luke%2021%3A36&version=ESV)** - But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man. (ESV)
 
@@ -3060,12 +3064,17 @@ The thoughts that go through our minds must be:
 
 You can't follow Jesus Christ's instructions in faith while asking OpenAI if it's OK.
 You can not be led by God and be led by an AI such as ChatGPT.
+You can not be led by God and be led by a Neuralink chip.
 
 > **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and **leave the dead to bury their own dead.** (ESV)
 
 We have the Word of God. We can also walk in Jesus' commandments. We've got to be yoked to Jesus Christ.
 
 God can speak to us directly without internet, even through His Spirit, even in a dream.
+
+> **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+
+-   **[youtube.com: Christ is Enough - Hillsong Worship | LYRIC VIDEO](https://www.youtube.com/watch?v=dEGT8lrNyvw&list=RDBgwVf-Xm4fE&index=5):** Christ is enough for me. Everything I need is in You.
 
 
 ### Make friends with charity while money hasn't yet failed
@@ -4487,7 +4496,7 @@ We seek to be adopted as sons. To receive the Spirit of God's Son in our hearts 
 
 I guess that means we should become slaves of Christ! We should be overcome by Christ:
 
-> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification **and its end, eternal life.** For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
 > **[Romans 6:16](https://www.biblegateway.com/passage/?search=Romans%206%3A16&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? (ESV)
 
@@ -7413,7 +7422,7 @@ The righteousness in the actual doing of the law above is still upheld but there
 <tr>
 <th scope="col" class="org-left">#</th>
 <th scope="col" class="org-left">Bible reference</th>
-<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Verses to show these commandments are still important</th>
 </tr>
 </thead>
 
@@ -7440,7 +7449,7 @@ The righteousness in the actual doing of the law above is still upheld but there
 <tr>
 <th scope="col" class="org-left">#</th>
 <th scope="col" class="org-left">Bible reference</th>
-<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Verses to show these commandments are still important</th>
 </tr>
 </thead>
 
@@ -7467,7 +7476,7 @@ The righteousness in the actual doing of the law above is still upheld but there
 <tr>
 <th scope="col" class="org-left">#</th>
 <th scope="col" class="org-left">Bible reference</th>
-<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Verses to show these commandments are still important</th>
 </tr>
 </thead>
 
@@ -7497,14 +7506,15 @@ The righteousness in the actual doing of the law above is still upheld but there
 
 <col  class="org-left" />
 </colgroup>
-<tbody>
+<thead>
 <tr>
-<td class="org-left">#</td>
-<td class="org-left">Bible reference</td>
-<td class="org-left">&#xa0;</td>
+<th scope="col" class="org-left">#</th>
+<th scope="col" class="org-left">Bible reference</th>
+<th scope="col" class="org-left">Verses to show these commandments are still important</th>
 </tr>
+</thead>
 
-
+<tbody>
 <tr>
 <td class="org-left"><b>5</b></td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2020%3A12&amp;version=ESV">Exodus 20:12</a></b> - Honor your father and your mother, that your days may be long in the land that the LORD your God is giving you. (ESV)</td>
@@ -7548,7 +7558,7 @@ The righteousness in the actual doing of the law above is still upheld but there
 <tr>
 <th scope="col" class="org-left">#</th>
 <th scope="col" class="org-left">Bible reference</th>
-<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Verses to show these commandments are still important</th>
 </tr>
 </thead>
 
@@ -9015,7 +9025,7 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     Continuing to be sanctified by faith is a process where a person continues in Jesus' words because they are sanctified by faith in Jesus and that means ongoing trust and faithful obedience.
     
-    > **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+    > **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.** (ESV)
     
     To be sanctified by faith in Jesus is an applied process, I think:
     
@@ -10510,6 +10520,8 @@ Sow your own life as an investment for Jesus' sake:
 > **[Matthew 16:25](https://www.biblegateway.com/passage/?search=Matthew%2016%3A25&version=ESV)** - For whoever would save his life will lose it, but <ins>whoever loses his life for my sake will find it.</ins> (ESV)
 
 > **[John 12:24-26](https://www.biblegateway.com/passage/?search=John%2012%3A24-26&version=ESV)** - Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. <ins>If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.</ins> (ESV)
+
+-   **[St. Theophan the Recluse (1815-1894)](https://classicalchristianity.com/2013/02/09/on-human-freedom/):** The goal of human freedom is not freedom itself… but in God… with the intention that man would voluntarily bring it as a sacrifice to God, a most pleasing offering. (St. Theophan’s “Path to Salvation” Topical Compendium, 169)
 
 Seek God:
 
@@ -12072,17 +12084,33 @@ It's false to say that 'all spirit is true' and body and soul are false.
 These do not contradict:
 
 -   Jesus is the Truth
+    -   **[Matthew 5:17](https://www.biblegateway.com/passage/?search=Matthew%205%3A17&version=ESV)** - Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. (ESV)
+    -   **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 -   Jesus' words are Truth and Life
--   God's word is truth
+    -   **[John 6:63](https://www.biblegateway.com/passage/?search=John%206%3A63&version=ESV)** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+-   God's word is truth. The sum of our Creator’s word is Truth
     -   The Scripture (Torah) does not contradict
+    -   **[Psalms 119:160](https://www.biblegateway.com/passage/?search=Psalms%20119%3A160&version=ESV)** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
+    -   **[John 17:17](https://www.biblegateway.com/passage/?search=John%2017%3A17&version=ESV)** - Sanctify them in the truth; your word is truth. (ESV)
 -   [Jesus Christ is the Word of God](https://www.youtube.com/watch?v=buZm8hUguEc&ab_channel=DesiringGod), who has come into the world in the flesh
     -   Emmanuel
+    -   **[Isaiah 7:14](https://www.biblegateway.com/passage/?search=Isaiah%207%3A14&version=ESV)** - Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel. (ESV)
 -   The Spirit of Truth is the Truth
+    -   **[I John 5:6](https://www.biblegateway.com/passage/?search=1%20John%205%3A6&version=ESV)** - This is he who came by water and blood—Jesus Christ; not by the water only but by the water and the blood. And the Spirit is the one who testifies, because the Spirit is the truth. (ESV)
+-   Jesus is God
+    -   **[Isaiah 9:6](https://www.biblegateway.com/passage/?search=Isaiah%209%3A6&version=ESV)** - For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. (ESV)
+    -   **[Jeremiah 32:17-18](https://www.biblegateway.com/passage/?search=Jeremiah%2032%3A17-18&version=ESV)** - Ah, Lord GOD! It is you who has made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you. You show steadfast love to thousands, but you repay the guilt of fathers to their children after them, O great and mighty God, whose name is the LORD of hosts, (ESV)
+
+-   **Read:** <https://www.scriptureway.com/home/jesus-is-the-truth>
+
+-   **[Quote by R. C. Sproul](https://www.ligonier.org/learn/devotionals/god-truth/):** "Truth is not defined by our own subjective standards; it is determined by the Source of truth Himself"
+
+> **[Ephesians 4:20-21](https://www.biblegateway.com/passage/?search=Ephesians%204%3A20-21&version=ESV)** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
 
 
 ### Jesus is noticeably present with us as we believe and affirm and obey the Truth
 
-[youtube.com: How to Seek the Holy Spirit @time: 19 min 20 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=1160)
+-   **Sermon:** [youtube.com: How to Seek the Holy Spirit @time: 19 min 20 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=1160)
 
 The work of the Holy Spirit is to cause you to remember Him (Jesus) and with the eyes of the heart **[Ephesians 1:17](https://www.biblegateway.com/passage/?search=Ephesians%201%3A17&version=ESV)** *see Him* there.
 
@@ -12488,7 +12516,7 @@ My past behaviour would have led to death:
 
 So we should be slaves to God now. But this doesn't mean putting ourselves 'under the Torah', because the spirit helps us to keep the higher precepts of the Law, to love God and our neighbour and follow Jesus Christ's commandments:
 
-> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification **and its end, eternal life.** For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
 Clearly there is a difference between actually keeping / complying with the commandments of God and placing oneself under the Torah, because a new creation still <ins>keeps the commandments of God</ins>:
 
@@ -12715,13 +12743,19 @@ Jesus' disciples were obediently serving Jesus and while they were doing what Je
 
 > **[Mark 7:18-19](https://www.biblegateway.com/passage/?search=Mark%207%3A18-19&version=ESV)** - And he said to them, Then are you also without understanding? Do you not see that whatever goes into a person from outside cannot defile him, since it enters not his **heart** but his stomach, and is expelled? *(Thus he declared all foods clean.)* (ESV)
 
-We should seek to build one another up rather than damage our neighbour's faith on issues of of law compliance. If they serve Christ they are acceptable to God:
+We should seek to build one another up rather than damage our neighbour's faith in Jesus by issues of of law compliance. If they serve Christ they are acceptable to God:
 
 > **[I Corinthians 10:23](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A23&version=ESV)** - All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. (ESV)
+
+The work of God in trusting in Jesus:
+
+> **[John 6:29](https://www.biblegateway.com/passage/?search=John%206%3A29&version=ESV)** - Jesus answered them, This is the work of God, that you believe in him whom he has sent. (ESV)
 
 If they hold a good conscience with God and hold genuine faith in Jesus Christ, we don't want to damage that. If they're fulfilling Christ's law (i.e. loving one another with Christ's love), that should be acceptable to the brethren:
 
 > **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
+
+> **[II Corinthians 3:6](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A6&version=ESV)** - who has made us competent to be ministers of a new covenant, not of the letter but of the Spirit. For the letter kills, but the Spirit gives life. (ESV)
 
 I still think that fulfilling Christ's law is important but actually the most important thing is having a saving faith in Jesus which is trusting on God's promises, and we have Jesus' righteousness if we are found in Jesus:
 
@@ -17865,6 +17899,10 @@ Light and darkness do not gel:
 
 > **[II Corinthians 6:14](https://www.biblegateway.com/passage/?search=2%20Corinthians%206%3A14&version=ESV)** - Do not be unequally yoked with unbelievers. For what partnership has righteousness with lawlessness? Or what fellowship has light with darkness? (ESV)
 
+This is why light and darkness do not go together because the whole point is to turn away from darkness:
+
+> -   **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive** forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+
 Another reason would be that there is resistance to be expected when wanting to live faithfully to God in Christ, and I was **being saved**, and the devil didn't want me to be saved, and wanted to keep me in darkness, and in hopelessness, and not in the freedom of Jesus' Spirit:
 
 > **[II Timothy 3:12](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A12&version=ESV)** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, (ESV)
@@ -17925,12 +17963,12 @@ If satan keeps delaying and blocking my relationships until seeking a relationsh
 
 > **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
-The Bible doesn't say that marriage among consenting adults with large age gap is immoral or forbidden, as far as I understand, although I need to do a more comprehensive Bible study and perhaps pray about it. But thus far I haven't found anything and God hasn't said anything against it to me as far as I know. Gay marriage, however, is not blessed at all.
+The Bible doesn't say that marriage among consenting adults with large age gap is immoral or forbidden [in itself], as far as I understand, although I need to do a more comprehensive Bible study and perhaps pray about it. But thus far I haven't found anything and God hasn't said anything against it to me as far as I know. Gay marriage, however, is not blessed at all.
 
 While I agree that lust, and impure motivations disqualify a relationship being seen as Biblically acceptable, there are certain things I think
 are not intrinsically wrong, such as marriage between consenting adults with an age gap.
 
-Worldly people will always discriminate against people who desire to live according to the Bible:
+Worldly people will always discriminate against people who desire to live according to the Bible, and I don't mean obeying the law by works but by obeying it in faith:
 
 > **[II Timothy 3:12-13](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A12-13&version=ESV)** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
@@ -17952,9 +17990,15 @@ Also, I won't accept accusations or condemnation from the enemy while I'm trying
 
 > **[Galatians 5:18](https://www.biblegateway.com/passage/?search=Galatians%205%3A18&version=ESV)** - But if you are led by the Spirit, you are not under the law. (ESV)
 
-And even if I sin from time to time, especially as a consequence of being in a difficult situation due to persecution, I won't accept accusations or condemnation for that, because I'm following Jesus:
+But if you think I'm wrong then please help correct me but please back it up with Scripture because I want to be sanctified by the Truth.
+
+And even if I sin from time to time, especially as a consequence of being in a difficult situation due to persecution, I won't accept accusations or condemnation for that, because I'm [trying to] follow Jesus, and I accept the need for repentance and correction:
 
 > **[Galatians 2:17](https://www.biblegateway.com/passage/?search=Galatians%202%3A17&version=ESV)** - But if, in our endeavor to be justified in Christ, we too were found to be sinners, is Christ then a servant of sin? Certainly not! (ESV)
+
+I'm trying to side with Jesus over issues regarding the evil which is still present in the world and "hate the sin, not the sinner", and starting by first taking a look at my own problems but by no means endorsing sinful things even things I consider I do which are sinful, I don't endorse them for myself either:
+
+> **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
 
 Also, I stress this verse again because if you're obeying God then the Mosaic law isn't meant for others to use it against you to condemn you. Literally, if your heart's in the right place, and you're being obedient to Jesus Christ then it's wrong for people to slap you with the Mosaic law:
 
@@ -17983,6 +18027,8 @@ I want it to stay in God's court (until I am sanctified and delivered) because I
 > **[II Timothy 2:21-22](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A21-22&version=ESV)** - Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the master of the house, ready for every good work. So flee youthful passions and pursue righteousness, faith, love, and peace, along with those who call on the Lord from a pure heart. (ESV)
 
 I've been getting pounded with antichrist dreams, voices and prodings during my sleep daily for well over a year, and have often found myself being tested throughout the day and I've been using the Bible to fight back and defend against it and trying to be obedient to Jesus.
+
+It helps when I am pro-active and pray to God before bed asking Him for a good night's rest and also leave prayers and scriptures written down next to or on me when I sleep.
 
 All of that spiritual attack I have received pales in comparison to the depression from having my joy taken from me.
 
@@ -18071,15 +18117,17 @@ I want to continue in the process of sanctification, and holiness in body and sp
 
 I believe that outlawing marriage proposal is very close to outlawing God.
 
-I believe that it should be normalised that Christians should feel **comfortable** proposing being betrothed first needing to have a job or own a house.
+I believe that it should be normalised that Christians should feel **comfortable** proposing or being betrothed without first needing to have a job or own a house.
 
-What I mean by betrothed is the person who a person has decided they want to marry:
+What I mean by betrothed is being able to express commitment to the person who a person has decided they want to marry:
 
 > **[I Corinthians 7:37-38](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A37-38&version=ESV)** - But whoever is firmly established in his heart, being under no necessity but having his desire under control, and has determined this in his heart, to keep her as his betrothed, he will do well. So then he who marries his betrothed does well, and he who refrains from marriage will do even better. (ESV)
 
 What I mean by this, is "having a job" or "owning a house" must never become a prerequisite to a Christian to being allowed to marry or at least to being "betrothed" (people should be allowed to propose and given a chance even if they have no assets, and no job).
 
 "Having God" is a much better prerequisite.
+
+-   **[youtube.com: Christ is Enough - Hillsong Worship | LYRIC VIDEO](https://www.youtube.com/watch?v=dEGT8lrNyvw&list=RDBgwVf-Xm4fE&index=5):** Christ is enough for me. Everything I need is in You.
 
 We shouldn't fight against God by making Him out to be not enough because God is all we need, and at the start of a marriage, it should really be founded on that type of faith.
 
@@ -18199,7 +18247,7 @@ But at the end of the day, I don't hold to their doctrine, and also I was seekin
 
 According to a [Mormon](https://purposeinchrist.com/8-weird-mormon-beliefs/), they believe in polygamy which I think is not God's design,
 and from a quick internet search I can see their beliefs about becoming gods and goddesses and eternal marriage
-actually have an interest parallel **in my testing** / **[divine court](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre)** after being born-again of the spirit.
+actually have an interesting parallel **in my testing** / **[divine court](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre)** after being born-again of the spirit.
 
 When I said on Facebook something like: "Jesus is my life my truth and my heaven
 and [the girl I love is like a little bit of that](https://www.youtube.com/watch?v=OWNLVogchpU&ab_channel=DaveDobbyn-Topic).", the Hindu guy who was asking me for financial assistance (I still have the transcripts, and my lawyer also received them)
@@ -18584,7 +18632,11 @@ However, endorsing gay marriage is not merely breaking commandment, but also it 
 > **[1 Timothy 1:8-11](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A8-11&version=ESV)** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice **homosexuality**, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
 
-## God's law is good. His precepts are good. I don't identify with any of this LGBT stuff
+## God's law is good. His precepts are good. I don't identify with any of this LGBT stuff, and I am against licentiousness
+
+I'm trying to side with Jesus over issues regarding the evil which is still present in the world and "hate the sin, not the sinner", and starting by first taking a look at my own problems but by no means endorsing sinful things even things I consider I do which are sinful, I don't endorse them for myself either:
+
+> **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
 
 > **[Hebrews 13:4](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A4&version=ESV)** - Let marriage be held in honor among all, and let the marriage bed be undefiled, for God will judge the sexually immoral and adulterous. (ESV)
 
@@ -20811,6 +20863,8 @@ We follow them in faith.
 
 3.  I wrote about following the law by faith, also law written on my heart.
 
+    -   **[Quote](https://www.scriptureway.com/home/jesus-is-the-truth/):** "When Jesus said that he is the truth, he was saying that he is the embodiment and fulfillment of the Word of God, and that he is alétheia, reality, the opposite of what is false or illusion."
+    
     <https://web.archive.org/web/20220703044748/https://mullikine.github.io/posts/the-tapestry-of-truth/>
     
     > **[Hebrews 8:10-13](https://www.biblegateway.com/passage/?search=Hebrews%208%3A10-13&version=ESV)** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
@@ -26861,6 +26915,10 @@ Doing the will of God is important for **inheriting** the kingdom of God:
 
 > **[Matthew 25:23](https://www.biblegateway.com/passage/?search=Matthew%2025%3A23&version=ESV)** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
 
+> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification **and its end, eternal life.** For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+
+> **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.** (ESV)
+
 -   **Quote from CH Spurgeon:** "Peace is joy resting, and joy is peace dancing"
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
@@ -26970,7 +27028,21 @@ There was an incredible amount of resistance from other people to following Jesu
 Likewise, there was also a lot of resistance, spiritually, to repenting from sin.
 
 
-### We're persecuted for following Jesus
+### I had to humble myself and repent
+
+I had to acknowledge certain beliefs and behaviour in my life was not what God's will was for me, and turn away from the bad beliefs and behaviour,
+and I want to continue learning Christ:
+
+> **[Ephesians 4:20-21](https://www.biblegateway.com/passage/?search=Ephesians%204%3A20-21&version=ESV)** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as the truth is in Jesus, (ESV)
+
+Trust and obey:
+
+> **[II Timothy 3:12-17](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A12-17&version=ESV)** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted,</ins> while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been **acquainted with the sacred writings**, which <ins>are able to make you wise for salvation through faith in Christ Jesus</ins>. All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for <ins>training in righteousness, that the man of God may be competent, equipped for every good work.</ins> (ESV)
+
+
+### We're persecuted for following Jesus. We're persecuted for repentance
+
+> **[John 7:7](https://www.biblegateway.com/passage/?search=John%207%3A7&version=ESV)** - The world cannot hate you, but it hates me because I testify about it that its works are evil. (ESV)
 
 > **[Galatians 4:29](https://www.biblegateway.com/passage/?search=Galatians%204%3A29&version=ESV)** - But just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now. (ESV)
 
