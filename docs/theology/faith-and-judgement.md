@@ -26095,12 +26095,21 @@ I still needed ongoing repentance and sanctification (correction theologically a
 and I think that theological error most likely led to endorsing things which I later wanted
 to repent from. I felt like it was urgent to repent from heresy and from publicly affirming that I would not judge gay marriage,
 and my need to plead guilty was in the light of the knowledge of my error.
-Also, my attitude of wanting to remain faithful to the girl began to degrade being faithful to Jesus.
-But ultimately, under test I felt the need to affirm Jesus as being the Truth, as from my perspective it looked like I was being tested on relationship idolatry.
+Also, my attitude of wanting to remain faithful to the girl began to degrade my faithfulness to Jesus as I began to make compromises in my writing
+to continue affirming faithfulness to the girl.
+But ultimately, under test I felt the need to affirm Jesus as being the Truth and forsake all else, as
+from my perspective it looked like I was being tested on relationship idolatry.
 Part of why I could not resist but continue blogging,
 was because of the sheer injustice I felt regarding my freedom to write,
-and another part was that I wanted to demonstrate faithful waiting in way that was legal as the proposal had not been rejected.
-I believe strongly that outlawing marriage proposal is very close to outlawing God.
+and I felt like there was this relationship-destroying spirit sabotaging my relationships again,
+and whatever thing was completely against faith itself - I had already been writing on my blog very few times to demonstrate a track record
+of faithfulness, and another part was that after I proposed I wanted to demonstrate faithful waiting in way that was legal as the proposal had not been rejected.
+
+I believe strongly that outlawing marriage proposal is very close to outlawing God,
+and outlawing my writing was punishing faith which is the way in which we are supposed to live.
+
+> **[Hebrews 10:38](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A38&version=ESV)** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
+
 I also believe that the situation was interfered with by the
 influences of unclean spirits.
 For all my faults I have been following Jesus, not perfectly but penitently.

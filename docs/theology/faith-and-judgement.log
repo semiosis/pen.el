@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 JUL 2024 17:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2023.12.17)  18 JUL 2024 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2108,21 +2108,21 @@ Overfull \hbox (14.33705pt too wide) in paragraph at lines 35842--35843
  []
 
 [687] [688] [689]
-Overfull \hbox (1.8857pt too wide) in paragraph at lines 36009--36013
+Overfull \hbox (1.8857pt too wide) in paragraph at lines 36020--36024
 []\TU/lmr/m/n/10.95 I was lecturing on the
  []
 
-[690] [691] [692] [693] [694] [695] [696]
-Overfull \hbox (14.0049pt too wide) in paragraph at lines 36447--36448
+[690] [691] [692] [693] [694] [695] [696] [697]
+Overfull \hbox (14.0049pt too wide) in paragraph at lines 36458--36459
 []\TU/lmr/m/n/10.95 In Jesus Christ’s
  []
 
-[697] [698] [699] [700] [701] [702]
-Overfull \hbox (177.03938pt too wide) in paragraph at lines 36780--36781
+[698] [699] [700] [701] [702] [703]
+Overfull \hbox (177.03938pt too wide) in paragraph at lines 36791--36792
 []
  []
 
-[703] [704]
+[704]
 Missing character: There is no מ in font [lmmono10-regular]:!
 Missing character: There is no ו in font [lmmono10-regular]:!
 Missing character: There is no ֹ in font [lmmono10-regular]:!
@@ -2138,35 +2138,36 @@ Missing character: There is no ֹ in font [lmmono10-regular]:!
 Missing character: There is no ז in font [lmmono10-regular]:!
 Missing character: There is no ֵ in font [lmmono10-regular]:!
 Missing character: There is no ר in font [lmmono10-regular]:!
- [705] [706] [707]
-Overfull \hbox (44.26335pt too wide) in paragraph at lines 37043--37044
+ [705] [706] [707] [708]
+Overfull \hbox (44.26335pt too wide) in paragraph at lines 37054--37055
 []
  []
 
-[708] [709] [710] [711] [712] [713] [714] [715] [716] [717] [718] [719]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 37723--37723
+[709] [710] [711] [712] [713] [714] [715] [716] [717] [718] [719] [720]
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 37734--37734
 [] \TU/lmtt/m/n/10.95 6  Thank You Father God for making a way for us to be rec
 onciled with You through Your Son Jesus Christ![] 
  []
 
 
-Overfull \hbox (222.55858pt too wide) in paragraph at lines 37723--37723
+Overfull \hbox (222.55858pt too wide) in paragraph at lines 37734--37734
 []\TU/lmtt/m/n/10.95 11  And I'm going to do my best to prepare myself to be ho
 ly and blameless for the day of Christ Jesus and to honor You with my life.[] 
  []
 
-[720]
-Overfull \hbox (61.59361pt too wide) in paragraph at lines 37736--37736
+
+Overfull \hbox (61.59361pt too wide) in paragraph at lines 37747--37747
 [] \TU/lmtt/m/n/10.95 8  Nevertheless, I live to serve You, God, and to be conf
 ormed into the image of Your Son, Jesus Christ.[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37761.
 [721]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37761.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37772.
+ [722]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 37772.
  (./faith-and-judgement.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37761.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37761
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37772.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37772
 .
 
 
@@ -2180,7 +2181,7 @@ Package rerunfilecheck Info: Checksums for `faith-and-judgement.out':
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37761.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37772.
  ) 
 Here is how much of TeX's memory you used:
  11103 strings out of 494868
@@ -2191,4 +2192,4 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  28i,9n,45p,6376b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ./faith-and-judgement.pdf (721 pages).
+Output written on ./faith-and-judgement.pdf (722 pages).
