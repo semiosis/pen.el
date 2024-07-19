@@ -5396,7 +5396,7 @@ Thomas had extreme love towards Jesus and obedience to following Jesus:
   *[[https://www.biblegateway.com/passage/?search=John%2011%3A16&version=ESV][John 11:16]]* - So Thomas, called the Twin, said to his fellow disciples, Let us also go, that we may die with him. (ESV)
 #+END_QUOTE
 
-Hearkening, listening and obeying seems to what we're called to do:
+Hearkening, listening and obeying seems to be what we're called to do:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Deuteronomy%2028%3A1&version=ESV][Deuteronomy 28:1]]* - “Now it shall be, if you diligently obey the LORD your God, being careful to do all His commandments which I command you today, the LORD your God will set you high above all the nations of the earth. (NASB)
@@ -5405,17 +5405,17 @@ Hearkening, listening and obeying seems to what we're called to do:
 [[https://biblehub.com/interlinear/deuteronomy/28.htm][Interlinear]] of the initial part of *[[https://biblehub.com/interlinear/deuteronomy/28.htm][Deuteronomy 28:1]]*:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  1961                        518
-  wə·hā·yāh,                  ’im-
-  וְהָיָ֗ה	                    אִם־
-  Now it shall come to pass   if
-  Conj‑w | V‑Qal‑ConjPerf‑3ms Conj
+  | 1961                        | 518
+  | wə·hā·yāh,                  | ’im-
+  | וְהָיָ֗ה                        | אִם־
+  | Now it shall come to pass   | if
+  | Conj‑w | V‑Qal‑ConjPerf‑3ms | Conj
 
-  8085 [e]     8085 [e]         6963 [e]       3068 [e]
-  šā·mō·w·a‘   tiš·ma‘          bə·qō·wl       Yah·weh
-  שָׁמ֤וֹעַ         תִּשְׁמַע֙             בְּקוֹל֙           יְהוָ֣ה
-  diligently   you obey         the voice      of Yahweh
-  V‑Qal‑InfAbs V‑Qal‑Imperf‑2ms Prep‑b | N‑msc N‑proper‑ms
+  | 8085 [e]     | 8085 [e]         |  6963 [e]       |  3068 [e]
+  | šā·mō·w·a‘   | tiš·ma‘          |  bə·qō·wl       |  Yah·weh
+  | שָׁמ֤וֹעַ         | תִּשְׁמַע֙             |  בְּקוֹל֙           |  יְהוָ֣ה
+  | diligently   | you obey         |  the voice      |  of Yahweh
+  | V‑Qal‑InfAbs | V‑Qal‑Imperf‑2ms |  Prep‑b | N‑msc |  N‑proper‑ms
 #+END_SRC
 
 Concordance:
