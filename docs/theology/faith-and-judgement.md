@@ -3875,7 +3875,7 @@ Thomas had extreme love towards Jesus and obedience to following Jesus:
 
 > **[John 11:16](https://www.biblegateway.com/passage/?search=John%2011%3A16&version=ESV)** - So Thomas, called the Twin, said to his fellow disciples, Let us also go, that we may die with him. (ESV)
 
-Hearkening, listening and obeying seems to what we're called to do:
+Hearkening, listening and obeying seems to be what we're called to do:
 
 > **[Deuteronomy 28:1](https://www.biblegateway.com/passage/?search=Deuteronomy%2028%3A1&version=ESV)** - “Now it shall be, if you diligently obey the LORD your God, being careful to do all His commandments which I command you today, the LORD your God will set you high above all the nations of the earth. (NASB)
 
@@ -3883,7 +3883,7 @@ Hearkening, listening and obeying seems to what we're called to do:
 
      1  1961                        518
      2  wə·hā·yāh,                  ’im-
-     3  וְהָיָ֗ה	                    אִם־
+     3  וְהָיָ֗ה                        אִם־
      4  Now it shall come to pass   if
      5  Conj‑w | V‑Qal‑ConjPerf‑3ms Conj
      6  
@@ -3893,12 +3893,10 @@ Hearkening, listening and obeying seems to what we're called to do:
     10  diligently   you obey         the voice      of Yahweh
     11  V‑Qal‑InfAbs V‑Qal‑Imperf‑2ms Prep‑b | N‑msc N‑proper‑ms
 
-Concordance:
-
 -   **[6963. qol](https://biblehub.com/hebrew/6963.htm):** sound, voice
 -   **[8085. shama](https://biblehub.com/hebrew/8085.htm):** to hear
--   [tiš·ma‘ - heed/hearken/listen/obey/understand](https://biblehub.com/hebrew/tishma_8085.htm)
--   [šā·mō·w·a‘ - diligently/truly/carefully/will indeed](https://biblehub.com/hebrew/shamoa_8085.htm)
+-   **[tiš·ma‘](https://biblehub.com/hebrew/tishma_8085.htm):** heed/hearken/listen/obey/understand
+-   **[šā·mō·w·a‘](https://biblehub.com/hebrew/shamoa_8085.htm):** diligently/truly/carefully/will indeed
 
 If a person **continues to obey** Jesus they will eventually, like Thomas, arrive at the Truth and believe Jesus is who He says He is.
 
@@ -3908,11 +3906,13 @@ Here is another example where obeying Jesus led to belief:
 
 > **[John 21:4-7](https://www.biblegateway.com/passage/?search=John%2021%3A4-7&version=ESV)** - Just as day was breaking, Jesus stood on the shore; yet the disciples did not know that it was Jesus. Jesus said to them, Children, do you have any fish? They answered him, No. He said to them, **Cast the net on the right side of the boat, and you will find some.** <ins>So they cast it, and now they were not able to haul it in, because of the quantity of fish.</ins> That disciple whom Jesus loved therefore said to Peter, It is the Lord! When Simon Peter heard that it was the Lord, he put on his outer garment, for he was stripped for work, and threw himself into the sea. (ESV)
 
-Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief and actual **knowledge**:
+Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief and understanding in the heart and ultimately an actual **knowledge**:
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+
+> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So **we have come to know and to believe** the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
 And I believe too that we must arrive at willing to do the will of God:
 
@@ -16361,6 +16361,10 @@ And is in line with what Jesus has said:
 
 There's so much stuff to do in obedience to enter the kingdom&#x2026; I feel entirely unworthy.
 
+At the same time, it's so simple and there is not a lot to do: just have a trusting heart towards Jesus and receive it:
+
+> **[Luke 18:17](https://www.biblegateway.com/passage/?search=Luke%2018%3A17&version=ESV)** - Truly, I say to you, whoever does not receive the kingdom of God like a child shall not enter it. (ESV)
+
 Firstly, it has been by grace because I asked God to save me, even when I was very much stuck in sin. And I still <ins>feel</ins> as though I am approaching it and haven't quite entered it (just being honest here), but I'm not turning back from the plow.
 
 Those who hunger and thirst for righteousness will be satisfied.
@@ -17059,7 +17063,7 @@ Keeping Jesus' commandments is obeying Jesus. Obedience to Jesus is a requiremen
 
 > **[John 15:8](https://www.biblegateway.com/passage/?search=John%2015%3A8&version=ESV)** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
 
-> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So **we have come to know and to believe** the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
 
 ### Communion is spiritual, and helps us to abide in Him
@@ -17152,7 +17156,7 @@ Living as Jesus instructed us to live. Living as Jesus also lived.
 
 > **[John 15:13](https://www.biblegateway.com/passage/?search=John%2015%3A13&version=ESV)** - Greater love has no one than this, that someone lays down his life for his friends. (ESV)
 
-> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So **we have come to know and to believe** the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
 
 # The day
@@ -21348,7 +21352,7 @@ Works:
 
 If a person is believing (verb) that Jesus Christ is the Son of the Living God then they abide in Christ:
 
-> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So **we have come to know and to believe** the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
 If a person hates their brother they don't have eternal life:
 
