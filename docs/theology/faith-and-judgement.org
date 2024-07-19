@@ -5405,17 +5405,17 @@ Hearkening, listening and obeying seems to be what we're called to do:
 [[https://biblehub.com/interlinear/deuteronomy/28.htm][Interlinear]] of the initial part of *[[https://biblehub.com/interlinear/deuteronomy/28.htm][Deuteronomy 28:1]]*:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
-  | 1961                        | 518
-  | wə·hā·yāh,                  | ’im-
-  | וְהָיָ֗ה                        | אִם־
-  | Now it shall come to pass   | if
-  | Conj‑w | V‑Qal‑ConjPerf‑3ms | Conj
+  1961                        518
+  wə·hā·yāh,                  ’im-
+  וְהָיָ֗ה                        אִם־
+  Now it shall come to pass   if
+  Conj‑w | V‑Qal‑ConjPerf‑3ms Conj
 
-  | 8085 [e]     | 8085 [e]         |  6963 [e]       |  3068 [e]
-  | šā·mō·w·a‘   | tiš·ma‘          |  bə·qō·wl       |  Yah·weh
-  | שָׁמ֤וֹעַ         | תִּשְׁמַע֙             |  בְּקוֹל֙           |  יְהוָ֣ה
-  | diligently   | you obey         |  the voice      |  of Yahweh
-  | V‑Qal‑InfAbs | V‑Qal‑Imperf‑2ms |  Prep‑b | N‑msc |  N‑proper‑ms
+  8085 [e]     8085 [e]         6963 [e]       3068 [e]
+  šā·mō·w·a‘   tiš·ma‘          bə·qō·wl       Yah·weh
+  שָׁמ֤וֹעַ         תִּשְׁמַע֙             בְּקוֹל֙           יְהוָ֣ה
+  diligently   you obey         the voice      of Yahweh
+  V‑Qal‑InfAbs V‑Qal‑Imperf‑2ms Prep‑b | N‑msc N‑proper‑ms
 #+END_SRC
 
 + [[https://biblehub.com/hebrew/6963.htm][6963. qol]] :: sound, voice
@@ -5435,7 +5435,7 @@ Here is another example where obeying Jesus led to belief:
   *[[https://www.biblegateway.com/passage/?search=John%2021%3A4-7&version=ESV][John 21:4-7]]* - Just as day was breaking, Jesus stood on the shore; yet the disciples did not know that it was Jesus. Jesus said to them, Children, do you have any fish? They answered him, No. He said to them, *Cast the net on the right side of the boat, and you will find some.* _So they cast it, and now they were not able to haul it in, because of the quantity of fish._ That disciple whom Jesus loved therefore said to Peter, It is the Lord! When Simon Peter heard that it was the Lord, he put on his outer garment, for he was stripped for work, and threw himself into the sea. (ESV)
 #+END_QUOTE
 
-Both belief and obedience lead to a knowledge of the Truth, and I believe we *must* essentially arrive at belief and actual *knowledge*:
+Both belief and obedience lead to a knowledge of the Truth, and I believe we *must* essentially arrive at belief and understanding in the heart and ultimately an actual *knowledge*:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV][John 8:31-32]]* - So Jesus said to the Jews _who had believed in him_, *If you abide in my word, you are truly my disciples, and you will know the truth*, _and the truth will set you free._ (ESV)
@@ -5443,6 +5443,10 @@ Both belief and obedience lead to a knowledge of the Truth, and I believe we *mu
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV][John 14:6]]* - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So *we have come to know and to believe* the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 #+END_QUOTE
 
 And I believe too that we must arrive at willing to do the will of God:
@@ -22009,7 +22013,7 @@ Keeping Jesus' commandments is obeying Jesus. Obedience to Jesus is a requiremen
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So *we have come to know and to believe* the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 #+END_QUOTE
 
 *** Communion is spiritual, and helps us to abide in Him
@@ -22133,7 +22137,7 @@ Living as Jesus instructed us to live. Living as Jesus also lived.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So *we have come to know and to believe* the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 #+END_QUOTE
 
 * The day
@@ -27825,7 +27829,7 @@ Works:
 If a person is believing (verb) that Jesus Christ is the Son of the Living God then they abide in Christ:
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV][I John 4:16]]* - So *we have come to know and to believe* the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 #+END_QUOTE
 
 If a person hates their brother they don't have eternal life:
