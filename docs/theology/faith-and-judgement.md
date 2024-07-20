@@ -26332,21 +26332,18 @@ It's right for me to focus on God right now, and remain obedient to Jesus:
     *unselfish*, *other oriented*, *love your
     neighbor as yourself*, *sacrificial* way of
     life, I'm telling you, is going to be
-    required of you in the midst of lifelong miseries, which are God's tests.
+    **required of you in the midst of lifelong miseries, which are God's tests.**
     
     That's where the obedience of this book
     (James) is going to be required of you.
     
-    There's no vacation time to do nice
-    obedience and then you can suffer at
-    another time&#x2026;
+    **There's no vacation time to do nice obedience and then you can suffer at another time&#x2026;**
     
     It is design in those tests
-    is your deep and Lasting happiness and
+    is your deep and lasting happiness and
     these tests provide circumstances
     through which you are found proven and
-    fit for the crown of
-    life.
+    fit for the crown of life.
     
     All God's tests are designed to make you
     deeply and lastingly happy.
@@ -26567,7 +26564,7 @@ And it means pleading guilty:
 
 > **[Romans 3:4](https://www.biblegateway.com/passage/?search=Romans%203%3A4&version=ESV)** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
 
-> **Romans 3:23** - for all have sinned and fall short of the glory of God, (ESV)
+> **[Romans 3:23](https://www.biblegateway.com/passage/?search=Romans%203%3A23&version=ESV)** - for all have sinned and fall short of the glory of God, (ESV)
 
 Only Jesus was without sin:
 
@@ -26632,9 +26629,13 @@ That's how it happened for the record.
 
 I felt as though I was carving out a piece of my heart because it felt as if I had said to God in my heart that I could only be happy while I held faith that I'd see her again.
 
-**If** I recall correctly, that was the night **before** May 3. But I *certainly* felt that way **after** May 3. I kind-of doubled-down in my heart regarding that. Part of the reasoning behind that is the joy I had throughout 2021. At this stage (May 3, 2022) I did not know what the significance of the date was and had no idea what the dream of the policeman questioning me was about.
+**If** I recall correctly, that was the night **before** May 3.
+
+But I *certainly* felt that way **after** May 3. I kind-of doubled-down in my heart regarding that. Part of the reasoning behind that is the joy I had throughout 2021. At this stage (May 3, 2022) I did not know what the significance of the date was and had no idea what the dream of the policeman questioning me was about.
 
 > **[Romans 13:1-7](https://www.biblegateway.com/passage/?search=Romans%2013%3A1-7&version=ESV)** - Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God. Therefore whoever resists the authorities resists what God has appointed, and those who resist will incur judgment. For rulers are not a terror to good conduct, but to bad. Would you have no fear of the one who is in authority? Then do what is good, and you will receive his approval, for he is God's servant for your good. But if you do wrong, be afraid, for he does not bear the sword in vain. For he is the servant of God, an avenger who carries out God's wrath on the wrongdoer. Therefore one must be in subjection, not only to avoid God's wrath but also for the sake of conscience. For the same reason you also pay taxes, for the authorities are ministers of God, attending to this very thing. Pay to all what is owed to them: taxes to whom taxes are owed, revenue to whom revenue is owed, respect to whom respect is owed, honor to whom honor is owed. (ESV)
+
+Now to make this slightly more complicated, there was someone I had met previously who I had feelings for in 2020 but at this stage, after being born-again, and then seeing her sitting by herself during easter, I had only compassion and no joy over seeing her by herself.
 
 Still in May 2022 around Pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
 
@@ -26646,7 +26647,17 @@ In all honesty, though the situation felt graceless, I needed behavioral and the
 
 > **[Matthew 7:5](https://www.biblegateway.com/passage/?search=Matthew%207%3A5&version=ESV)** - You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
 
-But during the process it was as if all the grace was sucked out of the world. But also, in retrospect I can see that I had blind spots on myself and my intuition was I should plead guilty because it felt like I was under God's microscope. I was right to try dying to my own ego, and I was right to believe that I was not completely without guilt, but this took some humbling, and overall I am glad that I pleaded guilty.
+The question is, "Is joy over a wife and a family even something that is allowed in this world? Or in acting on joy over somebody will I run out of grace and run up against heaven's courts? Will I get even pushed out of church communities for wanting to show compassion? Or get pushed out of church communities for making a marriage proposal out of joy and peace?" That is what has happened to me. So the root cause of my depression is well defined. I feel like this has been unfair for me in both cases. I see other people with wives and families and why am I not allowed one? [Who actually took me to court? I think the answer is probably satan](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre):
+
+> **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
+
+But God is our life (we can't trade God for anything):
+
+> **[John 17:3](https://www.biblegateway.com/passage/?search=John%2017%3A3&version=ESV)** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
+
+But during the process it was as if all the grace was sucked out of the world (and to be honest, it's not the first time I've felt like I've been treated with absolutely no grace - I've felt often shot down for acting on love, joy and truth - punished for it).
+
+But also, in retrospect I can see that I still had blind spots on myself after being born-again and entering court and my intuition was I should plead guilty because it felt like I was under God's microscope. I was right to try dying to my own ego, and I was right to believe that I was not completely without guilt, but this took some humbling, and overall I am glad that I pleaded guilty.
 
 It's very important to maintain a clear conscience with God and with man, but to be ultimately faithful to God:
 
