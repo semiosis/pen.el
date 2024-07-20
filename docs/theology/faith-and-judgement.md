@@ -26304,6 +26304,8 @@ Jesus showed perfect love. We then strive to have love perfected with us:
 
 > **[I John 4:17](https://www.biblegateway.com/passage/?search=1%20John%204%3A17&version=ESV)** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
 
+The truth is that I was born-again and then I met someone I already liked, and decided I wanted to marry and simply had joy with and also compassion and thought God made her for me because **everything** seemed to line up. That has never ever happened before.
+
 I think the judiciary system should be careful not to infringe on basic human rights going forward with the AI-generated fiction which is now in the world,
 otherwise as I have said, robots may be taking human wives before poor people can, and that to God is an abomination I assure you - and I wouldn't want to tempt God.
 
