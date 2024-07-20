@@ -530,9 +530,17 @@ We are freed from, for example, making the worries of the world our first though
 
 -   **Lyrics:** Jesus, all for Jesus; All I am and have and ever hope to be; All of my ambitions, hopes and plans; I surrender these into your hands; **For it's only in your will that I am free**;
 
-I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet.
+I believe this. If anyone is trusting that Jesus is the Christ, the Son of God, then they have life in His name. That doesn't mean they have come to know Him yet. But if they have just begun to trust that Jesus is the Christ, they have started on their journey to get to know Him. They are an infant in Christ:
 
 > **[John 20:31](https://www.biblegateway.com/passage/?search=John%2020%3A31&version=ESV)** - but these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name. (ESV)
+
+We must get on the path of having faith in Jesus, believe in the name of Jesus, God's Son, and obey God to have confidence:
+
+> **[Proverbs 10:17](https://www.biblegateway.com/passage/?search=Proverbs%2010%3A17&version=ESV)** - Whoever heeds instruction is on the path to life, but he who rejects reproof leads others astray. (ESV)
+
+> **[I John 3:21-22](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-22&version=ESV)** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because **we keep his commandments and do what pleases him**. (ESV)
+
+As we hold our faith in God, we understand that He loved us first. As we hold our faith in God, we draw closer to God as we practice Christ's love towards others:
 
 > **[I John 4:8-11](https://www.biblegateway.com/passage/?search=1%20John%204%3A8-11&version=ESV)** - Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might **live through him**. In **this is love**, <ins>not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.</ins> Beloved, if God so loved us, we also ought to love one another.
 
@@ -718,9 +726,25 @@ And we should be building each other up, helping each other attain unity of fait
 
 > **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
 
+OK, so we accept forgiveness from God, we forgive others, and we then walk in that reality and don't turn back - we live that reality out.
+We accept that God has loved us by making atonement through Jesus' blood, and then we pass-forward that loving forgiveness to others and we walk in that reality and don't turn back.
+We also try to live holy lives - be holy as He is Holy.
+
+We put on Christ:
+
+> **[Galatians 3:27-28](https://www.biblegateway.com/passage/?search=Galatians%203%3A27-28&version=ESV)** - For as many of you as were baptized into Christ have put on Christ. There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female, for you are all one in Christ Jesus. (ESV)
+
+When the day of judgement comes, we must have accepted forgiveness from God, or face the wrath of God:
+
+> **[Romans 4:7-8](https://www.biblegateway.com/passage/?search=Romans%204%3A7-8&version=ESV)** - Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin. (ESV)
+
 When the day of judgement comes, we should be loving our brother and sister in Christ, or we may face the wrath of God:
 
 > **[I John 4:17-21](https://www.biblegateway.com/passage/?search=1%20John%204%3A17-21&version=ESV)** - By this is love perfected with us, so <ins>that we may have **confidence** for the day of judgment</ins>, because as he is so also are we in this world. There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love. We love because he first loved us. If anyone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen cannot love God whom he has not seen. And <ins>this commandment we have from him:</ins> whoever loves God **must** also love his brother. (ESV)
+
+Our sins are forgiven and we love one another the way Christ loved us. It should be our aim to have arrived at this point where we are living in this reality as soon as possible:
+
+> **[I John 2:11-12](https://www.biblegateway.com/passage/?search=1%20John%202%3A11-12&version=ESV)** - But whoever hates his brother is in the darkness and walks in the darkness, and does not know where he is going, because the darkness has blinded his eyes. I am writing to you, little children, because your sins are forgiven for his name's sake. (ESV)
 
 If we are merciful then we will receive mercy:
 
@@ -2435,7 +2459,7 @@ We are instructed to work for God:
 
 In believing in Jesus, we are guaranteed an inheritance in heaven:
 
-> **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV),14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+> **[Ephesians 1:13,14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV)** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
 
 The inheritance is in heaven:
 
@@ -8547,7 +8571,7 @@ Jesus' words will not pass away:
 
 > **[I Peter 1:25](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A25&version=ESV)** - but the word of the Lord remains forever. And this word is the good news that was preached to you.
 
-> **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV),14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+> **[Ephesians 1:13,14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV)** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
 
 Adhering strictly to the Mosaic law is not needed to be justified by God if we believe in and follow Jesus:
 
@@ -16420,7 +16444,7 @@ The followers of Paul the Apostle <ins>live by</ins> (walk by) faith; those are 
 
 In believing in Jesus, we are guaranteed an inheritance in heaven:
 
-> **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV),14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+> **[Ephesians 1:13,14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV)** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
 
 > **[I Peter 1:13](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV)** - Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ. (ESV)
 
@@ -22459,7 +22483,7 @@ The Holy Spirit dwelling within us guarantees our imperishable inheritance:
 
 In believing in Jesus, we are guaranteed an inheritance in heaven:
 
-> **[Ephesians 1:13](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV),14** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
+> **[Ephesians 1:13,14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13&version=ESV)** -  In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory.  (ESV)
 
 The inheritance is in heaven:
 
@@ -26251,6 +26275,8 @@ and I think that theological error most likely led to endorsing things which I l
 to repent from. I felt like it was urgent to repent from heresy and from publicly affirming that I would not judge gay marriage,
 and my need to plead guilty was in the light of the knowledge of my error.
 
+I am not the judge of people. There is only one judge. But I am repentant from sin and affirm God's precepts, not sin.
+
 Also, my attitude of wanting to remain faithful to the girl began to degrade my faithfulness to Jesus as I began to make compromises in my writing
 to continue affirming faithfulness to the girl.
 
@@ -26510,7 +26536,7 @@ However graceless I thought the situation was, pleading not guilty from my persp
 -   not putting God first before a girl I like,
 -   and putting Christ to the test by saying I have not done anything wrong
 
-We must not put Christ tot he test:
+We must not put Christ to the test:
 
 > **[I Corinthians 10:9-11](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A9-11&version=ESV)** - **We must not put Christ to the test**, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. (ESV)
 
@@ -26558,7 +26584,9 @@ That's how it happened for the record.
 
 I felt as though I was carving out a piece of my heart because it felt as if I had said to God in my heart that I could only be happy while I held faith that I'd see her again.
 
-If I recall correctly, that was the night **before** May 3.
+**If** I recall correctly, that was the night **before** May 3. But I *certainly* felt that way **after** May 3. I kind-of doubled-down in my heart regarding that. Part of the reasoning behind that is the joy I had throughout 2021. At this stage (May 3, 2022) I did not know what the significance of the date was and had no idea what the dream of the policeman questioning me was about.
+
+> **[Romans 13:1-7](https://www.biblegateway.com/passage/?search=Romans%2013%3A1-7&version=ESV)** - Let every person be subject to the governing authorities. For there is no authority except from God, and those that exist have been instituted by God. Therefore whoever resists the authorities resists what God has appointed, and those who resist will incur judgment. For rulers are not a terror to good conduct, but to bad. Would you have no fear of the one who is in authority? Then do what is good, and you will receive his approval, for he is God's servant for your good. But if you do wrong, be afraid, for he does not bear the sword in vain. For he is the servant of God, an avenger who carries out God's wrath on the wrongdoer. Therefore one must be in subjection, not only to avoid God's wrath but also for the sake of conscience. For the same reason you also pay taxes, for the authorities are ministers of God, attending to this very thing. Pay to all what is owed to them: taxes to whom taxes are owed, revenue to whom revenue is owed, respect to whom respect is owed, honor to whom honor is owed. (ESV)
 
 Still in May 2022 around Pentecost, God, gave me an [immersive vision of healing people with compassion](https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/).
 
