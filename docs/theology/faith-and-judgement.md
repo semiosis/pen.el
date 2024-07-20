@@ -1354,6 +1354,14 @@ We receive the spirit by getting Jesus' words into us, believing them and obeyin
 
 We rest in believing what Jesus has accomplished on our behalf, but our heart should have become obedient to Jesus.
 
+We don't claim perfect obedience, but God also helps us and supports us:
+
+> **[Isaiah 64:4](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A4&version=ESV)** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <ins>for those who wait for him</ins>. (ESV)
+
+Also, waiting on the LORD our strength is renewed:
+
+> **[Isaiah 40:31](https://www.biblegateway.com/passage/?search=Isaiah%2040%3A31&version=ESV)** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
+
 It's crucial to keep Jesus Christ's commandments:
 
 > **[I John 3:20-24](https://www.biblegateway.com/passage/?search=1%20John%203%3A20-24&version=ESV)** - for whenever our heart condemns us, God is greater than our heart, and he knows everything. Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
@@ -1584,6 +1592,10 @@ If you look upon Jesus Christ and believe in Him, you should have eternal life:
 Eternal life is given to anyone who believes in Him. I guess there are simply [some things I wont understand fully, but I do believe it](https://www.youtube.com/watch?v=x9tTdR7WS7E&ab_channel=TheChosen). I trust in God, and lean not on my own understanding. I believe Jesus' words that are written in the Scriptures:
 
 > **[John 6:47](https://www.biblegateway.com/passage/?search=John%206%3A47&version=ESV)** - Truly, truly, I say to you, whoever believes has eternal life. (ESV)
+
+> **[I John 2:27](https://www.biblegateway.com/passage/?search=1%20John%202%3A27&version=ESV)** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
+
+> **[I John 2:24](https://www.biblegateway.com/passage/?search=1%20John%202%3A24&version=ESV)** - Let what you heard from the beginning abide in you. If what you heard from the beginning abides in you, then you too will abide in the Son and in the Father. (ESV)
 
 God commanded eternal life for those who believe: God's word never comes back void:
 
@@ -2384,11 +2396,59 @@ Also, waiting on the LORD our strength is renewed:
 
 > **[Isaiah 40:31](https://www.biblegateway.com/passage/?search=Isaiah%2040%3A31&version=ESV)** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
+We receive an anointing from God teaches us and we learn from it and abide in Him:
+
+> **[I John 2:27](https://www.biblegateway.com/passage/?search=1%20John%202%3A27&version=ESV)** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
+
+God leads us into the truth:
+
+> **[John 16:13](https://www.biblegateway.com/passage/?search=John%2016%3A13&version=ESV)** - When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. (ESV)
+
+> **[John 17:17](https://www.biblegateway.com/passage/?search=John%2017%3A17&version=ESV)** - Sanctify them in the truth; your word is truth. (ESV)
+
+> **[John 6:63](https://www.biblegateway.com/passage/?search=John%206%3A63&version=ESV)** - It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life. (ESV)
+
+> **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+
+We walk the way in which Jesus walked to abide in Jesus' love:
+
+> **[I John 2:6](https://www.biblegateway.com/passage/?search=1%20John%202%3A6&version=ESV)** - whoever says he abides in him ought to walk in the same way in which he walked. (ESV)
+
+> **[John 15:10](https://www.biblegateway.com/passage/?search=John%2015%3A10&version=ESV)** - If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love. (ESV)
+
+> **[I John 4:12](https://www.biblegateway.com/passage/?search=1%20John%204%3A12&version=ESV)** - No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
+
+> **[I John 4:16](https://www.biblegateway.com/passage/?search=1%20John%204%3A16&version=ESV)** - So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
+
+> **[I John 4:15](https://www.biblegateway.com/passage/?search=1%20John%204%3A15&version=ESV)** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. (ESV)
+
+> **[I John 3:14](https://www.biblegateway.com/passage/?search=1%20John%203%3A14&version=ESV)** - We know that we have passed out of death into life, because we love the brothers. Whoever does not love abides in death. (ESV)
+
+> **[I John 3:17](https://www.biblegateway.com/passage/?search=1%20John%203%3A17&version=ESV)** - But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him? (ESV)
+
 As we walk in the Spirit of Jesus, we are strengthened to walk as Jesus walked. We are ourselves empowered to walk as Jesus walked thanks to Jesus' own endurance, and that is unlocked by having believing, obedient, trusting, following faith in Jesus where we are being led by His Spirit, and are walking by His Spirit:
 
 > **[Hebrews 12:1-3](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1-3&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
 
 > **[Philippians 4:13](https://www.biblegateway.com/passage/?search=Philippians%204%3A13&version=ESV)** - I can do all things through him who strengthens me. (ESV)
+
+God literally helps us if we ask Him for help:
+
+> **[Psalms 46:1-3](https://www.biblegateway.com/passage/?search=Psalms%2046%3A1-3&version=ESV)** - God is our refuge and strength, a very present help in trouble. To the choirmaster. Of the Sons of Korah. According to Alamoth. A Song. Therefore we will not fear though the earth gives way, though the mountains be moved into the heart of the sea, though its waters roar and foam, though the mountains tremble at its swelling. Selah (ESV)
+
+See how we obey Him and he helps us:
+
+> **[I John 3:21-23](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-23&version=ESV)** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. (ESV)
+
+As obedient children of God we ask God in prayer and if it's according to His will He hears us he grants our requests:
+
+> **[I Peter 1:14](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A14&version=ESV)** - As obedient children, do not be conformed to the passions of your former ignorance, (ESV)
+
+> **[I John 5:14-15](https://www.biblegateway.com/passage/?search=1%20John%205%3A14-15&version=ESV)** - And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him. (ESV)
+
+But we must forgive:
+
+> **[Mark 11:24-25](https://www.biblegateway.com/passage/?search=Mark%2011%3A24-25&version=ESV)** - Therefore I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours. And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
 
 If God is for us, who can be against us?
 
@@ -17368,6 +17428,10 @@ To be domineering is to behave like a lord.
 
 ### Jesus is our only Teacher and Lord
 
+> **[I John 2:27](https://www.biblegateway.com/passage/?search=1%20John%202%3A27&version=ESV)** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
+
+> **[I John 2:24](https://www.biblegateway.com/passage/?search=1%20John%202%3A24&version=ESV)** - Let what you heard from the beginning abide in you. If what you heard from the beginning abides in you, then you too will abide in the Son and in the Father. (ESV)
+
 > **[John 13:13](https://www.biblegateway.com/passage/?search=John%2013%3A13&version=ESV)** - You call me Teacher and Lord, and you are right, for so I am. (ESV)
 
 > **[Matthew 23:8](https://www.biblegateway.com/passage/?search=Matthew%2023%3A8&version=ESV)** - But you are not to be called rabbi, for **you have one teacher, and you are all brothers.** (ESV)
@@ -26651,7 +26715,11 @@ In all honesty, though the situation felt graceless, I needed behavioral and the
 
 > **[Matthew 7:5](https://www.biblegateway.com/passage/?search=Matthew%207%3A5&version=ESV)** - You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
 
-The question is, "Is joy over a wife and a family even something that is allowed in this world? Or in acting on joy over somebody will I run out of grace and run up against heaven's courts? Will I get even pushed out of church communities for wanting to show compassion? Or get pushed out of church communities for making a marriage proposal out of joy and peace?" That is what has happened to me. So the root cause of my depression is well defined. I feel like this has been unfair for me in both cases. I see other people with wives and families and why am I not allowed one? [Who actually took me to court? I think the answer is probably satan](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre):
+The question is, "Is joy over a wife and a family even something that is allowed in this world? Or in acting on joy over somebody will I run out of grace and run up against heaven's courts? Will I get even pushed out of church communities for wanting to show compassion? Or get pushed out of church communities for making a marriage proposal out of joy and peace?" That is what has happened to me. So the root cause of my depression is well defined. I feel like this has been unfair for me in both cases. I see other people with wives and families and why am I not allowed one? [Who **actually** drew me into a situation where I found myself in court over the mariage proposal? I hold to external spiritual influences and ultimately God was overseeing it](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre):
+
+> **[Acts 27:24](https://www.biblegateway.com/passage/?search=Acts%2027%3A24&version=ESV)** - and he said, Do not be afraid, Paul; you must stand before Caesar. And behold, God has granted you all those who sail with you. (ESV)
+
+-   **[youtube.com: How God Uses Satan](https://www.youtube.com/watch?v=y4-C_oMg11E):** Every one of the sufferings that Jesus went through was lifting sin off of us and sin is the only thing Satan's got to kill us with. It's the only weapon he's got. Satan cannot hurt you without sin. If you solve your sin problem, you solve your Satan problem. He can show you green things in the middle of the night and terrify you but he cannot hurt you.
 
 > **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
