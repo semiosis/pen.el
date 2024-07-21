@@ -950,7 +950,13 @@ People were being born according to the Spirit for quite some time before Jesus 
 
 > **[Galatians 4:28-31](https://www.biblegateway.com/passage/?search=Galatians%204%3A28-31&version=ESV)** - Now you, brothers, like Isaac, are children of promise. But **just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now.** But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
 
-I was born-again 'of the Spirit' on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) where I was given a new body, or it was regenerated - a blue light-body. I don't really know what this is. It was something like a singularity event and my perception of the world is now spiritual. Most of my life I have not been a very faithful Christian. I was a 'nominal' Christian but I didn't really have a lot of faith or knowledge of God. I had not been seeking out Jesus. For the 2 years leading up to 2 April 2022, I can tell now in retrospect that God was working in my life. So when was I born-again? Was it when I first believed as a child, or when I was baptised as a teenager? Not in the same way I was born-again on 2 April 2022. On 2 April 2022 I was truly born-again of the Spirit, and my best explanation as to what had changed was that I had begun to **authentically seek God and to be obedient to Jesus, accountable to God who sees in secret**, and not to man, and that activated a real prayer life, and I had asked God to give me His Holy Spirit. Even though I could not yet hear His voice, I was praying and seeking and beginning to repent. On the 2 April 2022 I was born-again the Spirit - I was spiritually regenerated - whatever it was that happened which I described. When that happened God had put the fear of Him in my heart so that I would not turn from Him. When I first 'believed' the gospel, this had not happened yet, but I had the testimony I guess. This event, what I experienced on 2 April 2022 I consider to me being born of 'water and the Spirit'. But hearing and keeping the gospel of Jesus, and asking God to receive the Holy Spirit, or seeking God I guess they will have some events, probably different to my 2 April 2022 event something similar happen then or in their future some time, I assume, or perhaps it is 'entering the Kingdom of God'. I don't know exactly how it works. I'm retroactively trying to figure things out by reading the Scriptures.
+I was born-again 'of the Spirit' on [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) where I was given a new body, or it was regenerated - a blue light-body.
+
+> **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on let no one cause me trouble, for I bear on my body the marks of Jesus. (ESV)
+
+-   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
+
+I don't really know what this is. It was something like a singularity event and my perception of the world is now spiritual. Most of my life I have not been a very faithful Christian. I was a 'nominal' Christian but I didn't really have a lot of faith or knowledge of God. I had not been seeking out Jesus. For the 2 years leading up to 2 April 2022, I can tell now in retrospect that God was working in my life. So when was I born-again? Was it when I first believed as a child, or when I was baptised as a teenager? Not in the same way I was born-again on 2 April 2022. On 2 April 2022 I was truly born-again of the Spirit, and my best explanation as to what had changed was that I had begun to **authentically seek God and to be obedient to Jesus, accountable to God who sees in secret**, and not to man, and that activated a real prayer life, and I had asked God to give me His Holy Spirit. Even though I could not yet hear His voice, I was praying and seeking and beginning to repent. On the 2 April 2022 I was born-again the Spirit - I was spiritually regenerated - whatever it was that happened which I described. When that happened God had put the fear of Him in my heart so that I would not turn from Him. When I first 'believed' the gospel, this had not happened yet, but I had the testimony I guess. This event, what I experienced on 2 April 2022 I consider to me being born of 'water and the Spirit'. But hearing and keeping the gospel of Jesus, and asking God to receive the Holy Spirit, or seeking God I guess they will have some events, probably different to my 2 April 2022 event something similar happen then or in their future some time, I assume, or perhaps it is 'entering the Kingdom of God'. I don't know exactly how it works. I'm retroactively trying to figure things out by reading the Scriptures.
 
 As I understand it, if someone is "born of God", they would love Jesus. If someone loves with Christ's love then they are "born of God and know God" and they would love Jesus if presented with Jesus. If someone is "born of the Spirit" then they have been spiritually regenerated. Being born of the Spirit is what I understand is to be "born-again of water and the Spirit".
 
@@ -2852,7 +2858,9 @@ When it comes to 'works' and 'law-keeping', I believe disciples of Jesus should 
 
 > **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
 
-> **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
+> **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - **Bear one another's burdens**, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself. But <ins>let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor.</ins> **For each will have to bear his own load.** One who is taught the word **must share** all good things with the one who teaches. (ESV)
+
+> **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having **purified your souls by your obedience to the truth for a sincere brotherly love**, love one another earnestly from a pure heart, (ESV)
 
 The Golden Rule, I think explains that we should behave like a child of Father God who is by nature Good and gives good gifts to His children, and gifts that are truly good, far exceeding any amount of favour we might show our own children. As we behave like a child of Father God, believing the gospel of Jesus, and loving with Christ's love, we can really say our Father is God, as a child takes after their parents, and a child of Father God behaves like Jesus and follows Jesus. We try to follow Jesus, and imitate Christ's pattern, as Christ is **the** Son of God.
 
@@ -2999,6 +3007,35 @@ and after we are grafted into Christ, we now have His righteousness and Almighty
 like the All Blacks try to please their coach, and we seek to follow the Royal Law, which is a part of being obedient to Jesus. We have His Spirit, and His Spirit helps us to do this.
 
 > **[Titus 3:8-15](https://www.biblegateway.com/passage/?search=Titus%203%3A8-15&version=ESV)** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. But <ins>avoid foolish controversies, genealogies, dissensions, and quarrels about the law, for they are unprofitable and worthless.</ins> As for a person who stirs up division, after warning him once and then twice, have nothing more to do with him, knowing that such a person is warped and sinful; he is self-condemned. When I send Artemas or Tychicus to you, do your best to come to me at Nicopolis, for I have decided to spend the winter there. Do your best to speed Zenas the lawyer and Apollos on their way; see that they lack nothing. And let our people learn to devote themselves to good works, so as to help cases of urgent need, and not be unfruitful. All who are with me send greetings to you. **Greet those who love us in the faith**. Grace be with you all. (ESV)
+
+
+### Anti-christ-like behaviour - Making money or some other thing more important than God to "get ahead" materially, placing burdens on others, especially those who have their priorities in the correct order (they are obeying God) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst.")
+
+> **[Psalms 69:21](https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&version=ESV)** - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)
+
+It's not loving to make life harder on people by placing higher standards of exterior 'cleanliness' without helping them to achieve it, when in reality the way to achieve it is to clean the inside first:
+
+> **[Matthew 23:4](https://www.biblegateway.com/passage/?search=Matthew%2023%3A4&version=ESV)** - They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. (ESV)
+
+> **[Matthew 23:25-29](https://www.biblegateway.com/passage/?search=Matthew%2023%3A25-29&version=ESV)** - Woe to you, scribes and Pharisees, hypocrites! For you clean the outside of the cup and the plate, but inside they are full of greed and self-indulgence. You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which outwardly appear beautiful, but within are full of dead people's bones and all uncleanness. So you also outwardly appear righteous to others, but within you are full of hypocrisy and lawlessness. Woe to you, scribes and Pharisees, hypocrites! For you build the tombs of the prophets and decorate the monuments of the righteous, (ESV)
+
+> **[Luke 11:39](https://www.biblegateway.com/passage/?search=Luke%2011%3A39&version=ESV)** - And the Lord said to him, Now you Pharisees cleanse the outside of the cup and of the dish, but inside you are full of greed and wickedness. (ESV)
+
+Specific example:
+
+> Let's say there is a poor by appearances (but rich in God) person on the street who loves God with all His heart but has a rough outward appearance and the reason they have a rough outwards appearance is because the world hates them as a result of their faith in Jesus, being obedient to Jesus. Now along comes a worldly person who loves money, the pride of life and the pride of their possessions, who's gospel is the prosperity gospel, and they love money more than they love God. This worldly person goes up to the poor person on the street and says they must be burdened with sin because of their appearance, that they must take their eyes away from following God and focus on worldly things, that they have demons and need to clean up their appearance to be a real Christian, **and they don't lift a finger to help the poor person meet their standard of exterior wellbeing**. The worldly ignorant person has just acted like the blind Pharisees.
+
+> **[John 15:18-20](https://www.biblegateway.com/passage/?search=John%2015%3A18-20&version=ESV)** - If the world hates you, know that it has hated me before it hated you. If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
+
+The one worrying about the material things doesn't actually have the love of the Father in them but the poor person who loves God does - the materially poor but rich in faith person has their priorities in order and doesn't need correction from the natural, worldly person, but rather needs mercy from the materialistic worldly person. And the materialistic, worldly person needs to learn from the poor person so they can put God first. This is not glorifying poverty, but rather is about the truth of the matter that we must have God as our top love in our heart:
+
+> **[I John 2:15](https://www.biblegateway.com/passage/?search=1%20John%202%3A15&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. (ESV)
+
+> **[Matthew 6:21](https://www.biblegateway.com/passage/?search=Matthew%206%3A21&version=ESV)** - For where your treasure is, there your heart will be also. (ESV)
+
+> **[James 2:5-8](https://www.biblegateway.com/passage/?search=James%202%3A5-8&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and heirs of the kingdom, which he has promised to those who love him? But you have dishonored the poor man. Are not the rich the ones who oppress you, and the ones who drag you into court? Are they not the ones who blaspheme the honorable name by which you were called? If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you are doing well. (ESV)
+
+> **[Matthew 6:25-34](https://www.biblegateway.com/passage/?search=Matthew%206%3A25-34&version=ESV)** - Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they? And which of you by being anxious can add a single hour to his span of life? And why are you anxious about clothing? Consider the lilies of the field, how they grow: they neither toil nor spin, yet I tell you, even Solomon in all his glory was not arrayed like one of these. But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you. Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
 
 
 ### God definitely disciplines us even if we love Jesus - **every** son he receives
@@ -9340,6 +9377,8 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     I believe that after being [born-again of the spirit](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), I had (with very little knowledge of Jesus' commandments) had to learn Jesus' commandments and apply them, and I believe **the Holy Spirit** taught me to obey Jesus as I read Jesus' sayings and was subsequently tested on those sayings. For example, if I read that we must give to all who ask, and then the Lord sets up a situation where someone asks for money, then I have a choice to obey Jesus, which means resisting those who try to deter me from obeying Jesus. Upon being tested, someone would offer worldly wisdom in an attempt to deter me from following Jesus, and as I obey God I am led by **the Holy Spirit**, and taught by **the Holy Spirit**. And this is an ongoing process. I say this for others' sake to explain how I have come to know how faith in Jesus, following Jesus, works practically, that it is more than mere intellectual belief to be led by the Spirit, but it is also obedience, and a process of sanctification, and walking in the light which involves walking in love characteristic of Christ's love.
     
+    > **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on let no one cause me trouble, for I bear on my body the marks of Jesus. (ESV)
+    
     -   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
     
     Those who have been united with Christ really are in reality an 'unleavened' lump, and we attack the old leaven to get it out. We have been made new with union in Christ, and then we must then become in experience what we are in reality. The old leaven lingers, so we attack the remaining leaven:
@@ -12209,6 +12248,56 @@ The guy was still coveting his possessions. To find life, one needs to let go of
 
 Amen to that.
 
+God wants to be our treasure, our heart's desire. I want that too:
+
+> **[Matthew 6:21](https://www.biblegateway.com/passage/?search=Matthew%206%3A21&version=ESV)** - For where your treasure is, there your heart will be also. (ESV)
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
+
+Jesus emptied Himself so we can become rich - this is true, but it's so we can also empty ourselves so others can become rich:
+
+> **[II Corinthians 8:9](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A9&version=ESV)** - For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you by his poverty might become rich. (ESV)
+
+In doing so, it is then characteristic of Jesus' servants to love one another as He has loved them:
+
+> **[Matthew 20:26-28](https://www.biblegateway.com/passage/?search=Matthew%2020%3A26-28&version=ESV)** - It shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be your slave, even as the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+
+We pour out our wealth for others, as He did for us:
+
+> **[Acts 2:44-45](https://www.biblegateway.com/passage/?search=Acts%202%3A44-45&version=ESV)** - And all who believed were together and had all things in common. And they were selling their possessions and belongings and distributing the proceeds to all, as any had need. (ESV)
+
+But especially to the house hold of faith:
+
+> **[Galatians 6:10](https://www.biblegateway.com/passage/?search=Galatians%206%3A10&version=ESV)** - So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith. (ESV)
+
+And especially to one's own relatives and even more especially to one's own household:
+
+> **[I Timothy 5:8](https://www.biblegateway.com/passage/?search=1%20Timothy%205%3A8&version=ESV)** - But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever. (ESV)
+
+When Jesus washes us we abide in Him - we are found in Him. If we are to be "great" in the Kingdom, then we are to also become servants:
+
+> **[John 13:8](https://www.biblegateway.com/passage/?search=John%2013%3A8&version=ESV)** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+Jesus Christ is our Lord and Teacher - that means we believe and obey Him:
+
+> **[John 13:13-14](https://www.biblegateway.com/passage/?search=John%2013%3A13-14&version=ESV)** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
+
+The true gospel teaches people to obey Jesus:
+
+> **[Galatians 5:13-14](https://www.biblegateway.com/passage/?search=Galatians%205%3A13-14&version=ESV)** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but **through love serve one another.** For the whole law is fulfilled in one word: **You shall love your neighbor as yourself.** (ESV)
+
+-   **[Quote by John Piper](https://www.youtube.com/watch?v=ctSi4G74iGw&ab_channel=DesiringGod):** Justification by faith alone sets us free from law-keeping [as] a way of getting right with God. This justifying faith is the kind of faith that produces love. This love humbly, sacrificially serves others. Thus loving the neighbour as itself, this love fulfills the law. This faith-produced, neighbour-serving, law-fulfilling love is the "Law of Christ".
+
+I do believe God can set us free from the enemy who steals from us though - but we overcome by keeping faith and obedience and faithfulness with God, exhibiting real faith which is not set on material things, but on God's promises, and on God's heart:
+
+[desiringgod.org: How to Win the War for Your Mind | Desiring God](https://www.desiringgod.org/articles/how-to-win-the-war-for-your-mind)
+
+> **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
+
+I also believe the prosperity gospel is no gospel because it doesn't teach love. It teaches covetousness:
+
+> **[Luke 12:15](https://www.biblegateway.com/passage/?search=Luke%2012%3A15&version=ESV)** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
+
 The reason we want to be righteous is so we get God.
 
 [youtube.com: God is the Gospel @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
@@ -12562,15 +12651,128 @@ This is about being willing to work or unwilling. I'm definitely willing to work
 
 > **[II Thessalonians 3:1-14](https://www.biblegateway.com/passage/?search=2%20Thessalonians%203%3A1-14&version=ESV)** - Finally, brothers, pray for us, that the word of the Lord may speed ahead and be honored, as happened among you, and that we may be delivered from wicked and evil men. For not all have faith. But the Lord is faithful. He will establish you and guard you against the evil one. And we have confidence in the Lord about you, that you are doing and will do the things that we command. May the Lord direct your hearts to the love of God and to the steadfastness of Christ. Now we command you, brothers, in the name of our Lord Jesus Christ, that you **keep away from any brother who is walking in idleness and not in accord with the tradition that you received from us.** For you yourselves know how **you ought to imitate us**, because we were not idle when we were with you, nor did we eat anyone's bread without paying for it, but **with toil and labor we worked night and day, that we might not be a burden to any of you.** It was not because we do not have that right, but to give you in ourselves an example to imitate. For even when we were with you, we would give you this command: If anyone is not <ins>willing</ins> to work, let him not eat. For we hear that some among you walk in idleness, not busy at work, but busybodies. Now such persons we command and encourage in the Lord Jesus Christ to do their work quietly and to earn their own living. As for you, brothers, do not grow weary in doing good. If anyone does not obey what we say in this letter, take note of that person, and have nothing to do with him, that he may be ashamed. (ESV)
 
-Being **willing** to work is important as we are not supposed to be a burden on others. I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage job-wise. Although it is important to get a job, I have to be **fit** for getting a job, and the person who was recovering at the inn (in the parable of the good Samaritan was resting). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear:
+Being **willing** to work is important as we are not supposed to be a burden on others. 
 
-> **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - Bear one another's burdens, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself. But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load. One who is taught the word must share all good things with the one who teaches. (ESV)
+> **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - **Bear one another's burdens**, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself. But <ins>let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor.</ins> **For each will have to bear his own load.** One who is taught the word **must share** all good things with the one who teaches. (ESV)
+
+I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that puts having a job before having a wife I consider to be a spirit of prostitution / people trafficking. This antichrist spirit has also been attacking my family and manifesting within the household.
+
+> Jehovah God please grant us deliverance from this spirit of antichrist in Jesus Christ's name I ask.
+
+> **[Galatians 6:1-10](https://www.biblegateway.com/passage/?search=Galatians%206%3A1-10&version=ESV)** - Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted. **Bear one another's burdens, and so fulfill the law of Christ.** For if anyone thinks he is something, when he is nothing, he deceives himself. But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For <ins>each will have to bear his own load</ins>. **One who is taught the word must share all good things with the one who teaches.** Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. And let us not grow weary of doing good, for in due season we will reap, if we do not give up. **So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.** (ESV)
+
+What matters is a "new creation", faith working through love and keeping the commandments of God. Amen.
 
 On 2 Jan 2023 I had a dream of defending a house with Bible verses written on the doorposts.
 
 In my case I am in a season of focusing on Jesus after being born-again and obediently focusing on the Scriptures:
 
 > **[Luke 10:38-42](https://www.biblegateway.com/passage/?search=Luke%2010%3A38-42&version=ESV)** - Now as they went on their way, Jesus entered a village. And a woman named Martha welcomed him into her house. And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching. But Martha was distracted with much serving. And she went up to him and said, Lord, do you not care that my sister has left me to serve alone? Tell her then to help me. But the Lord answered her, Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her. (ESV)
+
+> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> On the topic of Mary and Martha,
+> 
+> I have been attacked by "new-creation-denying" spirits which forget I was born-again
+> to quickly remind me that I'm not employed - I get this harassment from people from time to time.
+
+As the Apostle Paul asks, "Let no one cause me trouble, for I bear on my body the marks of Jesus." I had a [stigmata too I believe](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/). But this me begging for people to for the sake of the cross of Christ just let me have some grace, as I have almost traumatic graceless experiences exclusively for most of my life, so please for the sake of the cross and for love of Jesus cut me some slack as I have also cut others slack in obedience to Jesus as He made me born-again. It's my turn to get born-again; and I would appreciate not being crucified immediately. The reason I have experienced hostility is for following Jesus, repenting, etc. and being obedient to Jesus. Thanks.
+
+> **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on **let no one cause me trouble**, for I bear on my body the marks of Jesus. (ESV)
+
+Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus.
+
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+
+Look, here's a blessing for loving Jesus and not being an enemy of the cross:
+
+> **[Matthew 10:40-42](https://www.biblegateway.com/passage/?search=Matthew%2010%3A40-42&version=ESV)** - Whoever receives you receives me, and whoever receives me receives him who sent me. The one who receives a prophet because he is a prophet will receive a prophet's reward, and the one who receives a righteous person because he is a righteous person will receive a righteous person's reward. And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward. (ESV)
+
+Disciples of Jesus carry their cross and face tribulation:
+
+> **[Acts 14:22](https://www.biblegateway.com/passage/?search=Acts%2014%3A22&version=ESV)** - strengthening the souls of the disciples, encouraging them to continue in the faith, and saying that through many tribulations we must enter the kingdom of God. (ESV)
+
+Jesus, on His cross said, "I thirst.":
+
+> **[John 19:28](https://www.biblegateway.com/passage/?search=John%2019%3A28&version=ESV)** - After this, Jesus, knowing that all was now finished, said (to fulfill the Scripture), I thirst. (ESV)
+
+> **[Matthew 5:12](https://www.biblegateway.com/passage/?search=Matthew%205%3A12&version=ESV)** - Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you. (ESV)
+
+> **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - **Bear one another's burdens, and so fulfill the law of Christ.** For if anyone thinks he is something, when he is nothing, he deceives himself. But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load. **One who is taught the word must share all good things with the one who teaches.** (ESV)
+
+[youtube.com: Hell and Heaven Are at Stake with Money: Galatians 6:6-10, Part 1 @time: 5 min 5 sec](https://youtube.com/watch?v=JlqqKdrVoII&t=305)
+
+> It's a spirit of "getting a job" taking precedence over "focusing on Jesus and obeying Jesus spirit"
+> right after getting born-again, when Jesus wants me to focus on Him. I get this stuff attacking me in my sleep too,
+> i.e. mocking me too by suggesting working for Neuralink, for example.
+> 
+> I am very much all for getting a job and bearing my own load, however I'm definitely not in the season to get a job.
+> 
+> As Paul said, "From now on **let no one cause me trouble**, for I bear on my body the marks of Jesus."
+> 
+> So have some respect, please people.
+> 
+> Me working right now would be like telling the person in the story of the good Samaritan
+> who was beaten on the side of the road, as he is still in recovery to get a job, which is pure insanity.
+> 
+> I had to receive a criminal conviction in obedience to Jesus, putting the needs of someone first who I love,
+> thus forfeiting my ability to get suitable work easily, and I'm in a completely new
+> season of my life where I am focusing on Jesus.
+> 
+> So in Jesus Christ's name I rebuke the antichrist spirit which specifically has:
+> 
+> -   prevented me from marrying, before and after getting born-again
+> -   depriving me of suitable work, before and after getting born-again
+> 
+> I work very hard, and after being born-again I have encountered a lot of resistance by
+> a spirit which keeps accusing me of needing to have a job, or I'm not a Christian, while being in corrections.
+> 
+> It's a very anti-Mary, pro-Martha spirit in a situation which is the same as the one Mary and Martha were in.
+> In that situation, Mary was in the right to listen to Jesus. That is my situation, so by focusing on Jesus,
+> I am doing the correct thing, but this antichrist spirit has been opposing that.
+> 
+> **[I Corinthians 16:22](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A22&version=ESV)** - If anyone has no love for the Lord, let him be accursed. Our Lord, come! (ESV)
+> 
+> I would love to be working, but I was getting harassed by the work spirit even quickly after being born-again,
+> and the correct thing to do then is to be focused on Jesus, even giving away all possessions and following Jesus, so
+> to say, "Get a job and focus on making money" instead of focus on and follow Jesus is totally antichrist. 
+> 
+> Also, right now I'm in corrections on a sickness benefit
+> as I have been getting harassed by demons nearly every night, and tested throughout the day,
+> as I try to do good works, and even harassed by demons through other people very frequently.
+> 
+> Last year I had a vision last year of defending my house with Bible verses,
+> so it's very clear to me that I'm in a situation where
+> I must be focused on being corrected theologically and behaviorally and a job will happen
+> when I'm ready for it, or when God wants me to get a job, since the Holy Spirit has taken over ownership
+> of my life and has started running my life.
+> 
+> So I just rebuke that antichrist spirit which has been
+> harassing me regarding that in Jesus Christ's name, and I'll get a job when I am delivered and fit for work.
+> 
+> It's literally satan attacking me, and I'm just sick and tired of it. I guess the reason I'm being attacked
+> is because God made me born-again, has me learning the Bible in corrections, focusing on Him and God
+> has been raising me up for His purposes.
+> 
+> The truth of the matter is I am not lazy. Leading up to being born-again, throughout 2021
+> I was extremely productive doing what I thought at the time was
+> important work for the good of society whilst being completely content,
+> having met the person I wanted to marry, I was in peace and joy.
+> 
+> There was a time for that research and my work served its purpose in its time.
+> 
+> Something the enemy has robbed from me is the ability to work contentedly, by undermining my joy.
+
+    1  Dear Heavenly Father, Jehovah God,
+    2  please, God, in Jesus Christ's name please help me.
+    3  Please, God, actually prevent people from heaping heavy burdens on me which I can't carry.
+    4  I'm inundated, as this antichrist spirit continues to attack me, steal from me, take my joy, make things harder, and tries to take my eyes away from You, God.
+    5  Please help me and those around me to fulfill Christ's law, which is to bear one another's burdens and not to lay up burdens on others.
+    6  Please help people to learn from Jesus as He carried our burdens to the end, so that we can be strong and ought to carry one others' burdens, and instead of giving each other sour wine when we thirst, to give one another water out of mercy.
+    7  In Jesus Christ's name, I ask,
+    8  AMEN!!
+
+> **[John 19:28](https://www.biblegateway.com/passage/?search=John%2019%3A28&version=ESV)** - After this, Jesus, knowing that all was now finished, said (to fulfill the Scripture), I thirst. (ESV)
+
+> **[Psalms 69:21](https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&version=ESV)** - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)
 
 > **[Galatians 1:8-9](https://www.biblegateway.com/passage/?search=Galatians%201%3A8-9&version=ESV)** - But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. (ESV)
 
@@ -14775,6 +14977,29 @@ Potentially still driven by:
 > **[I Corinthians 3:1](https://www.biblegateway.com/passage/?search=1%20Corinthians%203%3A1&version=ESV)** - But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. (ESV)
 
 -   **[youtube.com: How to Restore a Sinning Saint: Galatians 6:1-5, Part 1 @time: 4 min 54 sec](https://youtube.com/watch?v=U7v13scZqN0&t=294):** This is an illustration of why we need specific commandments. Remember last time I argued that it's not enough to say, "Walk by the Spirit." You need specific illustrations, and this ([Galatians 6:1-5](https://www.biblegateway.com/passage/?search=Galatians%206%3A1-5&version=ESV)) is a good example of that. Suppose somebody said, "No, the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, meekness, gentleness, self-control. If we live by those, we wont get in other people's lives and make lives miserable for them, and bring out their sin into the open. How would you answer that? We would answer it by saying, "Look, the Holy Spirit Himself in chapter 6, verse 1 of Galatians has told us that is not a right application of the fruit of the Spirit. You are drawing inferences from the fruit of the Spirit that are unbiblical; They're unfaithful. That's why we need the whole Scripture, not just vague statements about walking according to the Spirit or walking in love. We need specifics, and this is a specific. If you find somebody in transgression, love is not passive. Love does not turn away. Love doesn't sweep it under the rug." - Rather, you who are **spiritual** (walking by the Spirit) should restore him in a spirit of gentleness. The spiritual person is bearing fruit of the Spirit. They are walking by the Spirit. They are keeping in step with the Spirit.
+
+
+## A disciple of Jesus - someone who has been obedient to Jesus
+
+Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus.
+
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+
+Look, here's a blessing for loving Jesus and not being an enemy of the cross:
+
+> **[Matthew 10:40-42](https://www.biblegateway.com/passage/?search=Matthew%2010%3A40-42&version=ESV)** - Whoever receives you receives me, and whoever receives me receives him who sent me. The one who receives a prophet because he is a prophet will receive a prophet's reward, and the one who receives a righteous person because he is a righteous person will receive a righteous person's reward. And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward. (ESV)
+
+Disciples of Jesus carry their cross and face tribulation:
+
+> **[Acts 14:22](https://www.biblegateway.com/passage/?search=Acts%2014%3A22&version=ESV)** - strengthening the souls of the disciples, encouraging them to continue in the faith, and saying that through many tribulations we must enter the kingdom of God. (ESV)
+
+Jesus, on His cross said, "I thirst.":
+
+> **[John 19:28](https://www.biblegateway.com/passage/?search=John%2019%3A28&version=ESV)** - After this, Jesus, knowing that all was now finished, said (to fulfill the Scripture), I thirst. (ESV)
+
+Paul the Apostle asked for mercy - "From now on **let no one cause me trouble**" - he might have been at little bit stressed. Paul most surely was carrying His cross:
+
+> **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on **let no one cause me trouble**, for I bear on my body the marks of Jesus. (ESV)
 
 
 ## A person who is mature in Christ
@@ -18895,7 +19120,9 @@ precision close so that nothing is able to
 cause disunity, but that's actually what God
 wants us to be like with Him first and foremost.
 
-Marriage should be holy, it should be in the Lord and we are espoused to Christ.
+Marriage should be holy, it should be in the Lord and we are espoused to Christ. And this says that remarriage must be in the Lord:
+
+> **[I Corinthians 7:39](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A39&version=ESV)** - A wife is bound to her husband as long as he lives. But if her husband dies, she is free to be married to whom she wishes, only in the Lord. (ESV)
 
 This was a good sermon on the topic I watched today:
 
@@ -18907,11 +19134,9 @@ In all honesty, I think it's valuable that a Christian marriage couple should st
 
 > **[Matthew 19:5-6](https://www.biblegateway.com/passage/?search=Matthew%2019%3A5-6&version=ESV)** - and said, Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh? So they are no longer two but one flesh. What therefore God has joined together, let not man separate. (ESV)
 
-Like getting all the air bubbles out of bubble wrap before getting married. It's a precision thing, I think. But the most important thing is it's in the Lord.
+**The unbelieving spouse is sanctified because of the believing spouse**. So it's not the end of the world having an unbelieving spouse, but what this says is that the unbeliever is **made holy** - they will come to believe:
 
 > **[I Corinthians 7:14](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A14&version=ESV)** - For the unbelieving husband is made holy because of his wife, and the unbelieving wife is made holy because of her husband. Otherwise your children would be unclean, but as it is, they are holy. (ESV)
-
--   **[youtube.com: Building the ULTIMATE Vintage City Street DIORAMA](https://www.youtube.com/watch?v=Vz8X_Ndnwl4):** Someone commented, "I’m still watching but I am taking a second to tell you that I think that your idea about using the spray glue to attach the windows is genius! You’re right, no fingerprints, no glue smudges, just gorgeous!"
 
 
 ## Marriage is still good but so is singleness
@@ -20930,6 +21155,8 @@ I have a more detailed explanation here:
 
 -   [web.archive.org mullikine.github.io: Astral Projection Part 1 - Death with Jesus // Bodacious Blog](https://web.archive.org/web/20220703044913/https://mullikine.github.io/posts/astral-projection/)
 
+> **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on let no one cause me trouble, for I bear on my body the marks of Jesus. (ESV)
+
 Despite some people believing the new birth is not like a pregnancy, it was indeed like a pregnancy from my experience.
 
 > **[John 3:6](https://www.biblegateway.com/passage/?search=John%203%3A6&version=ESV)** - That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. (ESV)
@@ -20968,6 +21195,10 @@ I received a blue light-body made of blue Spirit light/fire:
 > I woke up intentionally and it was as if I were already awake but opening my eyes and getting out of bed again, though I could’ve easily slipped back into sleep if I wanted. &#x2026;
 
 To this day, I still have my blue light-body. Though I don't see it with my regular eyes I can still feel it humming!
+
+> **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on let no one cause me trouble, for I bear on my body the marks of Jesus. (ESV)
+
+-   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
 
 
 ### Even the smallest of laws still come into effect in certain circumstances
@@ -21279,6 +21510,10 @@ We follow them in faith.
     Being born of the Spirit isn't receiving the glory body:
     
     <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/>
+    
+    > **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on let no one cause me trouble, for I bear on my body the marks of Jesus. (ESV)
+    
+    -   **Sermon:** [youtube.com: Be Who You Are: Living Out Identity in Christ, Part 1](https://www.youtube.com/watch?v=blPUpGww3o4)
     
     So while I have Jesus' spirit in me, I'm also still in this body of dust:
     
