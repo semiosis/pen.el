@@ -2,6 +2,7 @@ This document has been a work in progress. I have been born-again and have done 
 I'm trying to speak the truth in mercy. This document shows my current understanding at the time of writing. I'm not judging people. This is just
 a Bible study. I have just wanted to read the Bible for myself to understand and apply the Scriptures, come into agreement with God's Truth and share my understanding it with others for accountability purposes,
 and also [affirm truth as I am renewed in mind by it](https://youtu.be/IAgmQ-c4QYc?t=795). I don't presume to be always right.
+I want to [let the Bible smash bad theology](https://www.youtube.com/watch?v=N2aJ1q-SBr4&t=55s).
 I've also added parts of my own testimony. It's my hope that this Bible study helps other people to come to the obedience of faith in God through Jesus Christ.
 
 > **[Psalms 119:105](https://www.biblegateway.com/passage/?search=Psalms%20119%3A105&version=ESV)** - Your word is a lamp to my feet and a light to my path. (ESV)
@@ -903,9 +904,21 @@ Belief (in the heart) that Jesus is the Son of God leads to:
 
 ## Being born-again of the Spirit
 
-People were being born of the Spirit for quite some time before Jesus was born of the virgin Mary:
+People were being born according to the Spirit for quite some time before Jesus was born of the virgin Mary:
 
 > **[Galatians 4:28-31](https://www.biblegateway.com/passage/?search=Galatians%204%3A28-31&version=ESV)** - Now you, brothers, like Isaac, are children of promise. But **just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now.** But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
+
+Rather than being born according to the flesh, to be born according to the Spirit happens being born through promise:
+
+> **[Galatians 4:23](https://www.biblegateway.com/passage/?search=Galatians%204%3A23&version=ESV)** - But the son of the slave was born according to the flesh, while the son of the free woman was born through promise. (ESV)
+
+OK, so the Spirit is received through faith (faith like Abraham's) in Jesus Christ to all who believe. The promise was made to Christ. Now we must be found in Christ. Amen:
+
+> **[Galatians 3:13-16](https://www.biblegateway.com/passage/?search=Galatians%203%3A13-16&version=ESV)** - Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus **the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.** To give a human example, brothers: even with a man-made covenant, no one annuls it or adds to it once it has been ratified. Now <ins>the promises were made to Abraham and to his offspring.</ins> It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ. (ESV)
+
+We are found in Christ by having faith in Christ and putting on Christ:
+
+> **[Galatians 3:22-29](https://www.biblegateway.com/passage/?search=Galatians%203%3A22-29&version=ESV)** - But the Scripture imprisoned everything under sin, so that the promise by faith in Jesus Christ might be given to those who believe. Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. But now that faith has come, we are no longer under a guardian, for **in Christ Jesus you are all sons of God, through faith.** For **as many of you as were baptized into Christ have put on Christ.** There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female, for you are all one in Christ Jesus. And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
 
 -   **Quote from John Piper:** The most profound change in the universe is when a human being passes from death to life - from spiritual deadness to spiritual aliveness and this text is about how to help that change happen.
 
@@ -933,7 +946,7 @@ Being born of the Spirit is something which is genuinely unpredictable but we ca
 
 > **[John 3:3-8](https://www.biblegateway.com/passage/?search=John%203%3A3-8&version=ESV)** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God. Nicodemus said to him, How can a man be born when he is old? Can he enter a second time into his mother's womb and be born? Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. Do not marvel that I said to you, You must be born again. The wind blows where it wishes, and you hear its sound, but **you do not know where it comes from or where it goes.** So it is with everyone who is **born of the Spirit.** (ESV)
 
-People were being born of the Spirit for quite some time before Jesus was born of the virgin Mary:
+People were being born according to the Spirit for quite some time before Jesus was born of the virgin Mary:
 
 > **[Galatians 4:28-31](https://www.biblegateway.com/passage/?search=Galatians%204%3A28-31&version=ESV)** - Now you, brothers, like Isaac, are children of promise. But **just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now.** But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
 
@@ -2309,6 +2322,8 @@ It's a '<sub>working</sub> out\_' of the salvation that is free-grace.
     -   grumbling
     -   [petty] disputing
     -   sin that leads to death
+    
+    > **[Titus 3:1-7](https://www.biblegateway.com/passage/?search=Titus%203%3A1-7&version=ESV)** - Remind them to be submissive to rulers and authorities, to be obedient, to be ready for every good work, to speak evil of no one, to avoid quarreling, to be gentle, and to show perfect courtesy toward all people. For we ourselves were once foolish, disobedient, led astray, slaves to various passions and pleasures, passing our days in malice and envy, hated by others and hating one another. But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through Jesus Christ our Savior, so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
 
 
 ### God working in us
@@ -2396,7 +2411,7 @@ Also, waiting on the LORD our strength is renewed:
 
 > **[Isaiah 40:31](https://www.biblegateway.com/passage/?search=Isaiah%2040%3A31&version=ESV)** - but they who wait for the LORD shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. (ESV)
 
-We receive an anointing from God teaches us and we learn from it and abide in Him:
+We receive an anointing from God. God teaches us and we learn from it and abide in Him:
 
 > **[I John 2:27](https://www.biblegateway.com/passage/?search=1%20John%202%3A27&version=ESV)** - But the anointing that you received from him abides in you, and you have no need that anyone should teach you. But as his anointing teaches you about everything—and is true and is no lie, just as it has taught you—abide in him. (ESV)
 
@@ -2440,7 +2455,7 @@ See how we obey Him and he helps us:
 
 > **[I John 3:21-23](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-23&version=ESV)** - Beloved, if our heart does not condemn us, we have confidence before God; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. (ESV)
 
-As obedient children of God we ask God in prayer and if it's according to His will He hears us he grants our requests:
+As obedient children of God we ask God in prayer and if it's according to His will He hears us and he grants us our requests:
 
 > **[I Peter 1:14](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A14&version=ESV)** - As obedient children, do not be conformed to the passions of your former ignorance, (ESV)
 
@@ -2812,6 +2827,8 @@ It's for our own good that we stop sinning. Sin is burdensome:
 
 > **[II Timothy 3:6-9](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A6-9&version=ESV)** - For among them are those who creep into households and capture weak women, **burdened with sins** and led astray by various passions, always learning and never able to arrive at a knowledge of the truth. Just as Jannes and Jambres opposed Moses, so these men also oppose the truth, men corrupted in mind and disqualified regarding the faith. But they will not get very far, for their folly will be plain to all, as was that of those two men. (ESV)
 
+> **[Hebrews 12:1](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, (ESV)
+
 Sin made against our own body is really bad for us. This is a warning:
 
 > **[I Corinthians 6:16-20](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A16-20&version=ESV)** - Or do you not know that he who is joined to a prostitute becomes one body with her? For, as it is written, The two will become one flesh. But he who is joined to the Lord becomes one spirit with him. Flee from sexual immorality. Every other sin a person commits is outside the body, but **the sexually immoral person sins against his own body.** Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own, for you were bought with a price. So glorify God in your body. (ESV)
@@ -2829,7 +2846,7 @@ Sin enslaves. We're supposed to stop doing it. Jesus payed the price of sin for 
 -   **[Quote by Tim Keller](https://www.youtube.com/watch?v=SDuXlGSV7l4):** When you do a sin, it has a powerful effect in which your own freedom - your freedom to want the good, to will the good, to think the good or understand the good is being undermined so that you are more and more by sin losing your freedom. It undermines your mind, it undermines your emotions and it undermines your will.
 
 
-### Subsequent behaviour - the Golden Rule and the Royal Law
+### Subsequent behaviour - the Golden Rule and the Royal Law, faith working through love
 
 When it comes to 'works' and 'law-keeping', I believe disciples of Jesus should know they have been forgiven by grace through faith and they should also practice their righteousness and a person who has accepted forgiveness for their sin by the atonement made in Jesus' blood should certainly endeavour after that to fulfill practically the Royal Law, that is to love one's neighbour as themself, even owing that to other people:
 
@@ -2980,6 +2997,8 @@ bearing their neighbours burdens and forgiving one another, but who has done tha
 As Christians we were at one time disobedient, and were not able to do this perfectly, and we have been saved by Jesus, having been forgiven by Him,
 and after we are grafted into Christ, we now have His righteousness and Almighty God as our Father, and Jesus is our Master and we seek to please our Master,
 like the All Blacks try to please their coach, and we seek to follow the Royal Law, which is a part of being obedient to Jesus. We have His Spirit, and His Spirit helps us to do this.
+
+> **[Titus 3:8-15](https://www.biblegateway.com/passage/?search=Titus%203%3A8-15&version=ESV)** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. But <ins>avoid foolish controversies, genealogies, dissensions, and quarrels about the law, for they are unprofitable and worthless.</ins> As for a person who stirs up division, after warning him once and then twice, have nothing more to do with him, knowing that such a person is warped and sinful; he is self-condemned. When I send Artemas or Tychicus to you, do your best to come to me at Nicopolis, for I have decided to spend the winter there. Do your best to speed Zenas the lawyer and Apollos on their way; see that they lack nothing. And let our people learn to devote themselves to good works, so as to help cases of urgent need, and not be unfruitful. All who are with me send greetings to you. **Greet those who love us in the faith**. Grace be with you all. (ESV)
 
 
 ### God definitely disciplines us even if we love Jesus - **every** son he receives
@@ -3659,6 +3678,8 @@ I agree whole heartedly with John Piper here:
 > want to quit give up the ministry give
 > up the faith, and at those moments we
 > need to fight like heaven to hold on.
+
+-   **Sermon:** [youtube.com: Sustaining Joy in Christ](https://www.youtube.com/watch?v=H8whTwDoiNA)
 
 
 ### We are bought with the precious blood of Christ and we should be obedient to God
@@ -6173,6 +6194,10 @@ We can certainly "be obedient to God's commandments" and that is "doing":
 > **[James 1:22](https://www.biblegateway.com/passage/?search=James%201%3A22&version=ESV)** - But be doers of the word, and not hearers only, deceiving yourselves. (ESV)
 
 > **[Hebrews 11:31](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A31&version=ESV)** - By faith Rahab the prostitute did not perish with those who were disobedient, because she had given a friendly welcome to the spies. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/BQDRdC0h1mM?t=2433):** The only sin that you can conquer in life is a forgiven sin. The only sin that you can successfully strive against without incurring the judgement of God on your legalism is a forgiven sin. This is glorious. It's a glorious way to become holy.
+
+-   **[Quote by John Piper](https://www.desiringgod.org/messages/christ-died-to-make-us-holy):** Namely, that the only sin that can be successfully fought is a forgiven sin. And not only that, but also since the forgiveness has been secured infallibly by the blood of Jesus, the fight will be successful.
 
 Perfect obedience though is something Jesus reached but I certainly have not:
 
@@ -9914,6 +9939,27 @@ of faith, such as obedience to the discipline
 of Christ, that should yield the peaceful
 fruit of righteousness as we then seek to imitate Christ, passing forward love and forgiveness and endeavoring to be holy.
 
+> [John Piper's aim in this sermon is that](https://www.youtube.com/watch?v=BQDRdC0h1mM):
+> 
+> -   1st: those of you who preach and teach the word of God would do so in a way that makes clear the effective connection between the sin bearing work of Christ and the sin killing work of the Christian
+> -   2nd: that you would make clear the effective connection between canceled sin and conquered sin
+> -   3rd: that you would make clear the effective connection between the horrors of Christ's suffering and the holiness of Christ's people
+> -   4th: that you would make clear the release of people from guilt and how it effectively connects with the securing of their lives of righteousness
+> -   5th: that you would make clear the effective connection between justification by his blood and progressive sanctification by that same blood, and
+> -   6th: Finally, that you would make clear the effective connection between the the tearing off of the flesh of Christ in crucifixion and the tearing out of your eye in the battle against lust.
+
+Referring to **[1 Peter 1:18-20](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A18-20&version=ESV)**:
+
+-   **[Quote by John Piper](https://youtu.be/BQDRdC0h1mM?t=1209):** "He does not say you were ransommed from guilt. He does not say you were ransommed from condemnation. He does not say you were ransommed from satan. He does not say you were ransommed from hell. He said you were ransommed from **ways**. **Live in holy conduct because He bought it with blood**."
+
+> **[I Peter 1:14-20](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A14-20&version=ESV)** - As obedient children, do not be conformed to the passions of your former ignorance, but as he who called you is holy, you also be holy in all your conduct, since it is written, You shall be holy, for I am holy. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. He was foreknown before the foundation of the world but was made manifest in the last times for your sake, (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/BQDRdC0h1mM?t=1535):** "Conduct yourself in holiness because you know you were ransommed from unholiness. You were ransommed from futile ways into holy ways."
+
+-   **[Quote by John Piper](https://youtu.be/BQDRdC0h1mM?t=1645):** It's not enough to say that God paid the ransom for His wife - so God's wife is kidnapped, she's across the plaza, and He's going to get her, for Himself, and he pays an **infinite** price, and it's not as though she steps out free from her captors and goes and shacks up with another man! That didn't happen at the cross. It doesn't happen. He doesn't fail in His purchases. He's not impotent. His blood is not ineffective. It was not in vain. The ransom bought a new life for His people, a new holiness for His people. They will walk in the way He bought. If they don't, they have no warrant to believe they're His.
+
+AMEN!!
+
 If we keep His commandments, keep His works we will reign with Him:
 
 > **[II Timothy 2:12-13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A12-13&version=ESV)** - if we endure, we will also reign with him; if we deny him, he also will deny us; if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
@@ -12416,40 +12462,130 @@ Yup, this has been real for me in seeking to be obedient to the promptings of th
 
 > **[II Corinthians 10:5](https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A5&version=ESV)** - We destroy arguments and every lofty opinion raised <ins>against the knowledge of God</ins>, and take every thought captive to **obey Christ**, (ESV)
 
-1.  `sola scriptura` as the source of truth against false dreams and against lies
 
-    I've definitely had some issues, but I've noticed that repenting from sinful habits and obeying Jesus helps a lot to deal with that.
-    
-    On 2 Jan 2023 I had a dream of defending a house with Bible verses written
-    on the doorposts.
-    
-    I didn't know this was Biblical until very recently:
-    
-    > **[Deuteronomy 6:9](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A9&version=ESV)** -  You shall write them on the doorposts of your house and on your gates.  (ESV)
-    
-    But now I know.
-    
-    `sola scriptura` (by Scripture alone) AMEN!!
-    
-    Jesus used the Scriptures to combat lies:
-    
-    > **[Luke 4:7-8](https://www.biblegateway.com/passage/?search=Luke%204%3A7-8&version=ESV)** - If you, then, will worship me, it will all be yours. And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. (ESV)
-    
-    > **[Luke 4:11-13](https://www.biblegateway.com/passage/?search=Luke%204%3A11-13&version=ESV)** - and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
-    
-    > **[John 10:35-36](https://www.biblegateway.com/passage/?search=John%2010%3A35-36&version=ESV)** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
-    
-    -   **Sermon:** [youtube.com: Contrary to Roman Catholics, the Bible Is Our Sufficient Authority](https://www.youtube.com/watch?v=COTBu3fBtRs)
-    
-    Jesus' warning against forsaking the word of God, the Holy Scriptures, for tradition:
-    
-    > **[Mark 7:11-13](https://www.biblegateway.com/passage/?search=Mark%207%3A11-13&version=ESV)** - But you say, If a man tells his father or his mother, Whatever you would have gained from me is Corban (that is, given to God)— then you no longer permit him to do anything for his father or mother, thus making void the word of God by your tradition that you have handed down. And many such things you do. (ESV)
-    
-    -   **Sermon:** [youtube.com: John Piper's Sermon with Scripture only](https://www.youtube.com/watch?v=ldag_fIFnqg)
+### `sola scriptura` as the source of truth against false dreams and against lies
 
-2.  Do God's will - follow Jesus in truth, and be obedient to God to combat falsehood
+I've definitely had some issues, but I've noticed that repenting from sinful habits and obeying Jesus helps a lot to deal with that.
 
-    > **[John 7:17-19](https://www.biblegateway.com/passage/?search=John%207%3A17-19&version=ESV)** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. Has not Moses given you the law? Yet none of you keeps the law. Why do you seek to kill me? (ESV)
+On 2 Jan 2023 I had a dream of defending a house with Bible verses written
+on the doorposts.
+
+I didn't know this was Biblical until very recently:
+
+> **[Deuteronomy 6:9](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A9&version=ESV)** -  You shall write them on the doorposts of your house and on your gates.  (ESV)
+
+But now I know.
+
+`sola scriptura` (by Scripture alone) AMEN!!
+
+Jesus used the Scriptures to combat lies:
+
+> **[Luke 4:7-8](https://www.biblegateway.com/passage/?search=Luke%204%3A7-8&version=ESV)** - If you, then, will worship me, it will all be yours. And Jesus answered him, It is written, You shall worship the Lord your God, and him only shall you serve. (ESV)
+
+> **[Luke 4:11-13](https://www.biblegateway.com/passage/?search=Luke%204%3A11-13&version=ESV)** - and On their hands they will bear you up, lest you strike your foot against a stone. And Jesus answered him, It is said, You shall not put the Lord your God to the test. And when the devil had ended every temptation, he departed from him until an opportune time. (ESV)
+
+> **[John 10:35-36](https://www.biblegateway.com/passage/?search=John%2010%3A35-36&version=ESV)** - If he called them gods to whom the word of God came—and <ins>Scripture cannot be broken</ins> — do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? (ESV)
+
+-   **Sermon:** [youtube.com: Contrary to Roman Catholics, the Bible Is Our Sufficient Authority](https://www.youtube.com/watch?v=COTBu3fBtRs)
+
+Jesus' warning against forsaking the word of God, the Holy Scriptures, for tradition:
+
+> **[Mark 7:11-13](https://www.biblegateway.com/passage/?search=Mark%207%3A11-13&version=ESV)** - But you say, If a man tells his father or his mother, Whatever you would have gained from me is Corban (that is, given to God)— then you no longer permit him to do anything for his father or mother, thus making void the word of God by your tradition that you have handed down. And many such things you do. (ESV)
+
+-   **Sermon:** [youtube.com: John Piper's Sermon with Scripture only](https://www.youtube.com/watch?v=ldag_fIFnqg)
+
+
+### Do not associate with people who call themselves believers but are against sound doctrine
+
+Do not greet or associate with people who do not abide in the teaching of Christ, and are in opposition to the truth:
+
+> **[II John 1:1-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A1-11&version=ESV)** - The elder to the elect lady and her children, whom I love in truth, and not only I, but also all who know the truth, because of the truth that abides in us and will be with us forever: Grace, mercy, and peace will be with us, from God the Father and from Jesus Christ the Father's Son, in truth and love. I rejoiced greatly to find some of your children **walking in the truth, just as we were commanded by the Father.** And now I ask you, dear lady—not as though I were writing you a new commandment, but the one we have had from the beginning—that we **love one another. And this is love, that we walk according to his commandments;** this is the commandment, just as you have heard from the beginning, so that you should walk in it. For many deceivers have gone out into the world, <ins>those who do not confess the coming of Jesus Christ in the flesh.</ins> Such a one is the deceiver and the antichrist. Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. <ins>Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son.</ins> **If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, for whoever greets him takes part in his wicked works.** (ESV)
+
+We must:
+
+-   confess the coming of Jesus Christ in the flesh
+-   abide in the teaching of Christ
+-   we must walk according to His commandments
+    -   We must love one another as He has loved us
+
+What counts is faith working through love:
+
+> **[Titus 3:8-15](https://www.biblegateway.com/passage/?search=Titus%203%3A8-15&version=ESV)** - The saying is trustworthy, and I want you to insist on these things, so that **those who have believed in God may be careful to devote themselves to good works**. These things are excellent and profitable for people. But <ins>avoid foolish controversies, genealogies, dissensions, and quarrels about the law, for they are unprofitable and worthless.</ins> As for a person who stirs up division, after warning him once and then twice, have nothing more to do with him, knowing that such a person is warped and sinful; he is self-condemned. When I send Artemas or Tychicus to you, do your best to come to me at Nicopolis, for I have decided to spend the winter there. Do your best to speed Zenas the lawyer and Apollos on their way; see that they lack nothing. And let our people learn to devote themselves to good works, so as to help cases of urgent need, and not be unfruitful. All who are with me send greetings to you. **Greet those who love us in the faith**. Grace be with you all. (ESV)
+
+What counts is faith working through love:
+
+> **[Galatians 5:1-6](https://www.biblegateway.com/passage/?search=Galatians%205%3A1-6&version=ESV)** - **For freedom Christ has set us free**; stand firm therefore, and do not submit again to a yoke of slavery. Look: I, Paul, say to you that if you accept circumcision, Christ will be of no advantage to you. I testify again to every man who accepts circumcision that he is obligated to keep the whole law. You are severed from Christ, you who would be justified by the law; you have fallen away from grace. For **through the Spirit, by faith**, we ourselves eagerly <ins>wait for the hope of righteousness.</ins> For **in Christ Jesus** neither circumcision nor uncircumcision counts for anything, but **only faith working through love**. (ESV)
+
+> **[Romans 16:17-18](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-18&version=ESV)** - I appeal to you, brothers, to watch out for those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them. For such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. (ESV)
+
+Avoid people who stubbornly oppose the teaching of Christ:
+
+> **[II Timothy 3:2-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A2-7&version=ESV)** - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, having the appearance of godliness, but denying its power. **Avoid such people**. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a knowledge of the truth. (ESV)
+
+We must not be:
+
+-   lovers of self
+-   lovers of money
+-   arrogant
+-   abusive
+-   disobedient to our parents
+-   ungrateful
+-   unholy
+-   heartless
+-   unappeasable
+-   slanderous
+-   without self-control
+-   brutal
+-   not loving good
+-   treacherous
+-   reckless
+-   swollen with conceit
+-   lovers of pleasure rather than lovers of God
+-   have the appearance of godliness but denying its power
+
+I literally have been getting tested with this stuff as I fight against an antichrist spirit.
+I'd love to be able to say that I have perfect self-control, am holy in thought and deed, etc. and perfectly obedient to my parents.
+Sometimes, though, it feels as though satan puts me in a choke hold where I need to be a perfect saint to pass all the tests.
+
+I literally feel as though I was just then tested through 3 different people the following passages:
+
+-   **[II Timothy 3:2-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A2-7&version=ESV)**
+-   **[II John 1:1-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A1-11&version=ESV)**
+
+God please help me to pass these tests.
+
+Avoid people who stubbornly oppose the teaching of Christ:
+
+> **[I Corinthians 5:11](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A11&version=ESV)** - But now I am writing to you not to associate with anyone who bears the name of brother if he is guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler—not even to eat with such a one. (ESV)
+
+This is about being willing to work or unwilling. I'm definitely willing to work. But not having a job doesn't mean being unwilling to work because a person can will to work but be unable to work for various reasons. Just stay busy. In my case I am in a season of focusing on Jesus after being born-again:
+
+> **[II Thessalonians 3:1-14](https://www.biblegateway.com/passage/?search=2%20Thessalonians%203%3A1-14&version=ESV)** - Finally, brothers, pray for us, that the word of the Lord may speed ahead and be honored, as happened among you, and that we may be delivered from wicked and evil men. For not all have faith. But the Lord is faithful. He will establish you and guard you against the evil one. And we have confidence in the Lord about you, that you are doing and will do the things that we command. May the Lord direct your hearts to the love of God and to the steadfastness of Christ. Now we command you, brothers, in the name of our Lord Jesus Christ, that you **keep away from any brother who is walking in idleness and not in accord with the tradition that you received from us.** For you yourselves know how **you ought to imitate us**, because we were not idle when we were with you, nor did we eat anyone's bread without paying for it, but **with toil and labor we worked night and day, that we might not be a burden to any of you.** It was not because we do not have that right, but to give you in ourselves an example to imitate. For even when we were with you, we would give you this command: If anyone is not <ins>willing</ins> to work, let him not eat. For we hear that some among you walk in idleness, not busy at work, but busybodies. Now such persons we command and encourage in the Lord Jesus Christ to do their work quietly and to earn their own living. As for you, brothers, do not grow weary in doing good. If anyone does not obey what we say in this letter, take note of that person, and have nothing to do with him, that he may be ashamed. (ESV)
+
+Being **willing** to work is important as we are not supposed to be a burden on others. I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage job-wise. Although it is important to get a job, I have to be **fit** for getting a job, and the person who was recovering at the inn (in the parable of the good Samaritan was resting). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear:
+
+> **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - Bear one another's burdens, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself. But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For each will have to bear his own load. One who is taught the word must share all good things with the one who teaches. (ESV)
+
+On 2 Jan 2023 I had a dream of defending a house with Bible verses written on the doorposts.
+
+In my case I am in a season of focusing on Jesus after being born-again and obediently focusing on the Scriptures:
+
+> **[Luke 10:38-42](https://www.biblegateway.com/passage/?search=Luke%2010%3A38-42&version=ESV)** - Now as they went on their way, Jesus entered a village. And a woman named Martha welcomed him into her house. And she had a sister called Mary, who sat at the Lord's feet and listened to his teaching. But Martha was distracted with much serving. And she went up to him and said, Lord, do you not care that my sister has left me to serve alone? Tell her then to help me. But the Lord answered her, Martha, Martha, you are anxious and troubled about many things, but one thing is necessary. Mary has chosen the good portion, which will not be taken away from her. (ESV)
+
+> **[Galatians 1:8-9](https://www.biblegateway.com/passage/?search=Galatians%201%3A8-9&version=ESV)** - But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. (ESV)
+
+> **[I Corinthians 16:22](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A22&version=ESV)** - If anyone has no love for the Lord, let him be accursed. Our Lord, come! (ESV)
+
+> **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+Greet those who love us in the faith:
+
+> **[Titus 3:14-15](https://www.biblegateway.com/passage/?search=Titus%203%3A14-15&version=ESV)** - And let our people learn to devote themselves to good works, so as to help cases of urgent need, and not be unfruitful. All who are with me send greetings to you. Greet those who love us in the faith. Grace be with you all. (ESV)
+
+
+### Do God's will - follow Jesus in truth, and be obedient to God to combat falsehood
+
+> **[John 7:17-19](https://www.biblegateway.com/passage/?search=John%207%3A17-19&version=ESV)** - If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority. The one who speaks on his own authority seeks his own glory, but the one who seeks the glory of him who sent him is true, and in him there is no falsehood. Has not Moses given you the law? Yet none of you keeps the law. Why do you seek to kill me? (ESV)
 
 
 ### Pay attention to promptings from the Holy Spirit
@@ -12475,7 +12611,7 @@ Yup, this has been real for me in seeking to be obedient to the promptings of th
 Woe to the shepherds who strengthen the hands of evildoers so that no one turns from his evil.
 They continually say to those who despise the word of the LORD, "It shall be well with you."
 
-They preach against repentance from sin.
+They preach against repentance from sin:
 
 > **[Jeremiah 23:1-40](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A1-40&version=ESV)** - <ins>Woe to the shepherds who destroy and scatter the sheep of my pasture!</ins> declares the LORD. Therefore thus says the LORD, the God of Israel, concerning the shepherds who care for my people: You have scattered my flock and have driven them away, and you have not attended to them. Behold, I will attend to you for your evil deeds, declares the LORD. Then I will gather the remnant of my flock out of all the countries where I have driven them, and I will bring them back to their fold, and they shall be fruitful and multiply. <ins>I will set shepherds over them who will care for them, and they shall fear no more, nor be dismayed, neither shall any be missing, declares the LORD.</ins> Behold, the days are coming, declares the LORD, when I will raise up for David a righteous Branch, and he shall reign as king and deal wisely, and shall execute justice and righteousness in the land. In his days Judah will be saved, and Israel will dwell securely. And this is the name by which he will be called: The LORD is our righteousness. Therefore, behold, the days are coming, declares the LORD, when they shall no longer say, As the LORD lives who brought up the people of Israel out of the land of Egypt, but As the LORD lives who brought up and led the offspring of the house of Israel out of the north country and out of all the countries where he had driven them. Then they shall dwell in their own land. Concerning the prophets: My heart is broken within me; all my bones shake; I am like a drunken man, like a man overcome by wine, because of the LORD and because of his holy words. For <ins>the land is full of adulterers;</ins> because of the curse the land mourns, and the pastures of the wilderness are dried up. Their course is evil, and their might is not right. Both prophet and priest are ungodly; <ins>even in my house I have found their evil,</ins> declares the LORD. Therefore their way shall be to them like slippery paths in the darkness, into which they shall be driven and fall, for I will bring disaster upon them in the year of their punishment, declares the LORD. In the prophets of Samaria I saw an unsavory thing: they prophesied by Baal and led my people Israel astray. But in the prophets of Jerusalem I have seen a horrible thing: **they commit adultery and walk in lies; they strengthen the hands of evildoers, so that no one turns from his evil;** all of them have become like Sodom to me, and its inhabitants like Gomorrah. Therefore thus says the LORD of hosts concerning the prophets: Behold, I will feed them with bitter food and give them poisoned water to drink, for from the prophets of Jerusalem ungodliness has gone out into all the land. Thus says the LORD of hosts: <ins>Do not listen to the words of the prophets who prophesy to you, filling you with vain hopes. They speak visions of their own minds, not from the mouth of the LORD.</ins> **They say continually to those who despise the word of the LORD, It shall be well with you; and to everyone who stubbornly follows his own heart, they say, No disaster shall come upon you.** For who among them has stood in the council of the LORD to see and to hear his word, or who has paid attention to his word and listened? Behold, the storm of the LORD! Wrath has gone forth, a whirling tempest; it will burst upon the head of the wicked. The anger of the LORD will not turn back until he has executed and accomplished the intents of his heart. In the latter days you will understand it clearly. <ins>I did not send the prophets, yet they ran; I did not speak to them, yet they prophesied.</ins> But if they had stood in my council, then they would have proclaimed my words to my people, and they would have turned them from their evil way, and from the evil of their deeds. Am I a God at hand, declares the LORD, and not a God afar off? Can a man hide himself in secret places so that I cannot see him? declares the LORD. Do I not fill heaven and earth? declares the LORD. <ins>I have heard what the prophets have said who prophesy lies in my name, saying, I have dreamed, I have dreamed! How long shall there be lies in the heart of the prophets who prophesy lies, and who prophesy the deceit of their own heart,</ins> who think to make my people forget my name by their dreams that they tell one another, even as their fathers forgot my name for Baal? **Let the prophet who has a dream tell the dream, but let him who has my word speak my word faithfully.** What has straw in common with wheat? declares the LORD. Is not my word like fire, declares the LORD, and like a hammer that breaks the rock in pieces? Therefore, behold, I am against the prophets, declares the LORD, who steal my words from one another. Behold, I am against the prophets, declares the LORD, who use their tongues and declare, declares the LORD. <ins>Behold, I am against those who prophesy lying dreams, declares the LORD, and who tell them and lead my people astray by their lies and their recklessness, when I did not send them or charge them.</ins> So they do not profit this people at all, declares the LORD. When one of this people, or a prophet or a priest asks you, What is the burden of the LORD? you shall say to them, You are the burden, and I will cast you off, declares the LORD. And as for the prophet, priest, or one of the people who says, The burden of the LORD, I will punish that man and his household. Thus shall you say, every one to his neighbor and every one to his brother, What has the LORD answered? or What has the LORD spoken? But the burden of the LORD you shall mention no more, for the burden is every man's own word, and <ins>you pervert the words of the living God,</ins> the LORD of hosts, our God. Thus you shall say to the prophet, What has the LORD answered you? or What has the LORD spoken? But if you say, The burden of the LORD, thus says the LORD, Because you have said these words, The burden of the LORD, when I sent to you, saying, You shall not say, The burden of the LORD, therefore, behold, I will surely lift you up and cast you away from my presence, you and the city that I gave to you and your fathers. And I will bring upon you everlasting reproach and perpetual shame, which shall not be forgotten. (ESV)
 
@@ -16196,9 +16332,19 @@ The persecution is for the cross of Christ - the offense of the cross:
 > **[Galatians 6:12](https://www.biblegateway.com/passage/?search=Galatians%206%3A12&version=ESV)** - It is those who want to make a good showing in the flesh who would force you to be circumcised, and only in order that they may not be persecuted for the cross of Christ. (ESV)
 
 
-### There are huge rewards for Christian persecution
+### There are huge rewards for following Jesus in this life and the one after
 
-> **[Mark 10:30](https://www.biblegateway.com/passage/?search=Mark%2010%3A30&version=ESV)** - who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life. (ESV)
+In other words, by giving up your present life for being a disciple of Jesus, for obeying Jesus and for the sake of His gospel, we are rewarded in this life and the one after:
+
+> **[Mark 10:29-30](https://www.biblegateway.com/passage/?search=Mark%2010%3A29-30&version=ESV)** - Jesus said, Truly, I say to you, there is no one who has left house or brothers or sisters or mother or father or children or lands, for my sake and for the gospel, who will not receive a hundredfold now in this time, houses and brothers and sisters and mothers and children and lands, with persecutions, and in the age to come eternal life. (ESV)
+
+But it also makes me think that I really wish I had tried to follow Jesus years ago, especially before I was born-again:
+
+> **[John 20:29](https://www.biblegateway.com/passage/?search=John%2020%3A29&version=ESV)** - Jesus said to him, Have you believed because you have seen me? Blessed are those who have not seen and yet have believed. (ESV)
+
+And also, I can't really claim "Christian persecution", I don't think.
+People have generally respected me as a Christian.
+ALso, I live in New Zealand. I've had it quite good, to be honest.
 
 
 ### We bless back and endure
@@ -16376,7 +16522,11 @@ We must be the good soil:
 
 > **[Matthew 13:22-23](https://www.biblegateway.com/passage/?search=Matthew%2013%3A22-23&version=ESV)** - As for what was sown among thorns, this is the one who hears the word, but the cares of the world and the deceitfulness of riches choke the word, and it proves unfruitful. As for what was sown on good soil, this is the one who hears the word and understands it. He indeed bears fruit and yields, in one case a hundredfold, in another sixty, and in another thirty. (ESV)
 
-It's received as an inheritance by being found **in Christ**. We believe we have it while we are found **in Christ**, and continue working it out, and we do need repentance from sin to inherit it.
+We do need a lot of faith (faith, faithfulness, obedience) in God to **inherit** the Kingdom of God:
+
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and heirs of the kingdom, which he has promised to those who love him? (ESV)
+
+It's received as an inheritance by being found **in Christ**. We believe we have it while we are found **in Christ**, and continue working it out, and we do need repentance from sin to inherit it. We need to be believing and obedient to Jesus. We need to be faithful to Jesus. We need to follow Jesus:
 
 > **[Galatians 5:22-25](https://www.biblegateway.com/passage/?search=Galatians%205%3A22-25&version=ESV)** - But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law. And **those who belong to Christ Jesus have crucified the flesh with its passions and desires**. If we live by the Spirit, let us also walk by the Spirit. (ESV)
 
@@ -18206,7 +18356,8 @@ For example:
 -   worldly spirit through a person telling me I need to be financially successful first, or
 -   a spirit of slander or gossip which keeps me isolated, or a rejection-spirit spreading gossip/slander among people around me, creating social anxiety, making it hard to socialise with people who would be good to talk to, or
 -   spirits of gossip and slander, fear, disunity, grudges, antichrist, anti-Christ's-love, unforgiveness
-    -   Being kicked out of churches for following Jesus and obeying Jesus' commandments, for example
+    -   Being kicked out of churches for following Jesus and obeying Jesus' commandments, for example. We should certainly not withhold people from attending churches especially if they are doing good and wanting to learn from Jesus and follow Jesus. If they're opposing Jesus, that's a different story:
+        -   **[III John 1:10-11](https://www.biblegateway.com/passage/?search=3%20John%201%3A10-11&version=ESV)** - So if I come, I will bring up what he is doing, talking wicked nonsense against us. And not content with that, he refuses to welcome the brothers, and also stops those who want to and puts them out of the church. Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
 -   a spirit spouse which thinks it's my spouse
     -   [youtube.com: Prayer Against Spiritual Spouse](https://www.youtube.com/watch?v=Pqrd2ff8My0) <- Yeah, this.
 -   if all of the above spirits start manifesting
@@ -18299,6 +18450,10 @@ Also, I stress this verse again because if you're obeying God then the Mosaic la
 Not that I was or am perfect, but I have been following Jesus so I claim to be on Jesus' side. By the grace of God He made me born-again, washed, regenerated and [filled with the Holy Spirit in 2022](https://web.archive.org/web/20220702053809/https://mullikine.github.io/posts/astral-projection-pt-3/) after I had begun to repent and seek Jesus.
 
 For many years before that I've had what I've felt was unreasonably difficulty with relationships, but it's after I was born-again and actively following Jesus that I was denied my first ever marriage proposal, and it was very obvious to me that what I have been fighting is an antichrist/antirelationship/slander spirit attacking me after I was born-again (only now I could easily see it working through people) and probably long before that, and I feel like the spiritual attack (i.e. spirit spouse, LGBT dreams etc., thrown out of churches) I have received as a fallout for choosing Jesus, and endeavouring to abide by Christ's law, instead of using the [documented fact I was born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/) as an excuse to plead not-guilty in court, I feel like has damaged me spiritually in ways which I have not experienced before, so I need Jesus to keep washing me as I try to be obedient to Him and be corrected by the Word of God.
+
+We should certainly not withhold people from attending churches especially if they are doing good and wanting to learn from Jesus and follow Jesus. If they're opposing Jesus, that's a different story:
+
+> **[III John 1:10-11](https://www.biblegateway.com/passage/?search=3%20John%201%3A10-11&version=ESV)** - So if I come, I will bring up what he is doing, talking wicked nonsense against us. And not content with that, he refuses to welcome the brothers, and also stops those who want to and puts them out of the church. Beloved, do not imitate evil but imitate good. Whoever does good is from God; whoever does evil has not seen God. (ESV)
 
 > **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
 
@@ -19241,7 +19396,7 @@ It's not of my own interpretation though:
 
 2.  Born of water and the spirit
 
-    People were being born of the Spirit for quite some time before Jesus was born of the virgin Mary:
+    People were being born according to the Spirit for quite some time before Jesus was born of the virgin Mary:
     
     > **[Galatians 4:28-31](https://www.biblegateway.com/passage/?search=Galatians%204%3A28-31&version=ESV)** - Now you, brothers, like Isaac, are children of promise. But **just as at that time he who was born according to the flesh persecuted him who was born according to the Spirit, so also it is now.** But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
     
@@ -25626,6 +25781,8 @@ We use scripture to demolish strongholds and take every thought captive for Chri
 
 > **[II Corinthians 10:4-5](https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A4-5&version=ESV)** - For the weapons of our warfare are not of the flesh but have divine power to destroy strongholds. We destroy arguments and every lofty opinion raised against the knowledge of God, and take every thought captive to obey Christ, (ESV)
 
+I want to [let the Bible smash bad theology](https://www.youtube.com/watch?v=N2aJ1q-SBr4&t=55s) - not just my own bad theology.
+
 Not by our own strength, but by God's power.
 God equips and enables us to stand firm so in
 the midst of every spiritual battle, let us
@@ -26372,6 +26529,10 @@ Everything seemed to line up:
 
 > The truth is that I was born-again and then I met someone I already liked, and decided I wanted to marry when I talked to her and simply had excessive joy with and also compassion for and thought God made her for me because **everything** seemed to line up and I was under the impression she liked me too. That has never ever happened before that everything has lined up. However, one must also consider relationship with God, and I knew/know practically nothing about their relationship with God. Perfection would include also both parties having joy in God and love for God, for Jesus, that remains even when the other person is taken away - in fact it's the most important thing in a Christian marriage probably. I would love to have more than just baseline joy in God when it's extremely tough. The question is do I have it? I would describe my relationship with God and joy over the person I wanted to marry as a cake which was mostly composed of icing (20% base, 80% icing), when I feel like ideally the composition should be more like a cake that was mostly cake and a little bit of icing (80% base, 20% icing) - where the joy over the wife is the icing and the joy over God is the base. In all honesty, I think I would prefer if it could be mostly cake base and icing on the top. God doesn't want to be merely the icing on the cake but the foundation of our life.
 
+This sermon helps:
+
+-   **[youtube.com: Sustaining Joy in Christ](https://www.youtube.com/watch?v=H8whTwDoiNA):** \#8 - "**Spend time with God saturated people who will help you see God and fight the fight of faith**." #9 "Read biographies of great Christian Saints." Now I mention this because it's biblical Hebrews 11 is all about heroes of the faith.
+
 I think the judiciary system should be careful not to infringe on basic human rights going forward with the AI-generated fiction which is now in the world,
 otherwise as I have said, robots may be taking human wives before poor people can, and that to God is an abomination I assure you - and I wouldn't want to tempt God.
 
@@ -26473,9 +26634,16 @@ I offer it to anyone.
 
 Life doesn't feel like the kingdom of God to me currently because that would involve having this trifecta of **righteousness**, **peace** and **joy** in the Holy Spirit, and I have felt like I have had my blessings stolen from me by the enemy,
 but God is the only one who can solve this for me, but I do have peace and righteousness in the Holy Spirit, and baseline joy which is derived from a good conscience with God.
+
 At the end of the day, it's good conscience with God I am after and sanctification:
 
 > **[Romans 14:17-18](https://www.biblegateway.com/passage/?search=Romans%2014%3A17-18&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. Whoever thus serves Christ is acceptable to God and approved by men. (ESV)
+
+A goal is to be content in any situation:
+
+> **[Philippians 4:11](https://www.biblegateway.com/passage/?search=Philippians%204%3A11&version=ESV)** - Not that I am speaking of being in need, for I have learned in whatever situation I am to be content. (ESV)
+
+> **[Hebrews 13:5](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A5&version=ESV)** - Keep your life free from love of money, and be content with what you have, for he has said, I will never leave you nor forsake you. (ESV)
 
 
 ## Being born-again / being regenerated of Spirit
@@ -26718,6 +26886,18 @@ In all honesty, though the situation felt graceless, I needed behavioral and the
 The question is, "Is joy over a wife and a family even something that is allowed in this world? Or in acting on joy over somebody will I run out of grace and run up against heaven's courts? Will I get even pushed out of church communities for wanting to show compassion? Or get pushed out of church communities for making a marriage proposal out of joy and peace?" That is what has happened to me. So the root cause of my depression is well defined. I feel like this has been unfair for me in both cases. I see other people with wives and families and why am I not allowed one? [Who **actually** drew me into a situation where I found myself in court over the mariage proposal? I hold to external spiritual influences and ultimately God was overseeing it](https://www.youtube.com/watch?v=6EBKeGC1LOo&t=488s&ab_channel=VictoryChristianCentre):
 
 > **[Acts 27:24](https://www.biblegateway.com/passage/?search=Acts%2027%3A24&version=ESV)** - and he said, Do not be afraid, Paul; you must stand before Caesar. And behold, God has granted you all those who sail with you. (ESV)
+
+I guess it's quite important to forsake all else for Jesus:
+
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+
+> **[I John 2:15-17](https://www.biblegateway.com/passage/?search=1%20John%202%3A15-17&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever. (ESV)
+
+We should forsake:
+
+-   the desires of the flesh, and
+-   the desires of the eyes,
+-   and pride in possessions
 
 -   **[youtube.com: How God Uses Satan](https://www.youtube.com/watch?v=y4-C_oMg11E):** Every one of the sufferings that Jesus went through was lifting sin off of us and sin is the only thing Satan's got to kill us with. It's the only weapon he's got. Satan cannot hurt you without sin. If you solve your sin problem, you solve your Satan problem. He can show you green things in the middle of the night and terrify you but he cannot hurt you.
 
@@ -27446,6 +27626,10 @@ Doing the will of God is still extremely important for **inheriting** the kingdo
 Doing the will of God is important for **inheriting** the kingdom of God:
 
 > **[Matthew 25:23](https://www.biblegateway.com/passage/?search=Matthew%2025%3A23&version=ESV)** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
+
+We do need a lot of faith (faith, faithfulness, obedience) in God to **inherit** the Kingdom of God:
+
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and heirs of the kingdom, which he has promised to those who love him? (ESV)
 
 > **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification **and its end, eternal life.** For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
