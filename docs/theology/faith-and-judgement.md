@@ -152,7 +152,7 @@ This is Christ's law:
 
 > **[John 15:12](https://www.biblegateway.com/passage/?search=John%2015%3A12&version=ESV)** - **This is my commandment**, that you love one another as I have loved you. (ESV)
 
-We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be does of Christ's law (which is not outside the law of God), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
+We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be doers of Christ's law (which is not outside the law of God, so we are doers of the law), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified**. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, <ins>God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
@@ -303,7 +303,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfeeb2e9) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org9b513e3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -7670,7 +7670,7 @@ We are under Christ's law, not the Mosaic law:
 
 > **[I Corinthians 9:21](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A21&version=ESV)** - To those outside the law I became as one outside the law (not being outside the law of God but <ins>under the law of Christ</ins>) that I might win those outside the law.
 
-We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be does of Christ's law (which is not outside the law of God), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
+We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be doers of Christ's law (which is not outside the law of God, so we are doers of the law), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified**. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, <ins>God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
@@ -10476,7 +10476,7 @@ My best understanding of **[Romans 4:4](https://www.biblegateway.com/passage/?se
 
 However, the work we produce doesn't **justify us** before God (it doesn't clear us from being guilty of sin before God). We still need to have faith on God to justify us even though we are ungodly, due to the atonement for our sin by Christ's blood.
 
-We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be does of Christ's law (which is not outside the law of God), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
+We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be doers of Christ's law (which is not outside the law of God, so we are doers of the law), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified**. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, <ins>God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
@@ -13324,7 +13324,7 @@ This is Christ's law:
 
 > **[John 15:12](https://www.biblegateway.com/passage/?search=John%2015%3A12&version=ESV)** - **This is my commandment**, that you love one another as I have loved you. (ESV)
 
-We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be does of Christ's law (which is not outside the law of God), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
+We must have faith in Jesus to be justified by faith. God justifies the person who trusts in Jesus and I believe we should be doers of Christ's law (which is not outside the law of God, so we are doers of the law), and God justifies the person with the blood of Jesus. If we're trusting in Jesus then we're trusting in God who justifies the ungodly. We're not trusting in God to justify our ungodliness, but to justify us as we keep our faith in Jesus:
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified**. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, <ins>God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
@@ -18832,15 +18832,23 @@ I forgive everyone.
 
 Without following Christ's law, the fruit of the Spirit cannot be used to justify yourself of why you should be allowed to marry someone (just because it feels right, that's still not good enough).
 
-But the right person to marry **should** still be based on such things as this:
+We must love our wives as Christ loved the church and gave himself up for her. We must love as Christ loved us:
+
+> **[Ephesians 5:25-33](https://www.biblegateway.com/passage/?search=Ephesians%205%3A25-33&version=ESV)** - **Husbands, love your wives, as Christ loved the church and gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word, so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish.** In the same way husbands should love their wives as their own bodies. He who loves his wife loves himself. For no one ever hated his own flesh, but nourishes and cherishes it, just as Christ does the church, because we are members of his body. Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church. However, let each one of you love his wife as himself, and let the wife see that she respects her husband. (ESV)
+
+But choosing the right person to marry rightly **should** desirably mean exhibiting such things as the fruit of the Spirit, in my opinion because it's much easier to not sin when exhibiting the fruit of the Spirit:
 
 > **[Galatians 5:22-23](https://www.biblegateway.com/passage/?search=Galatians%205%3A22-23&version=ESV)** - But the fruit of the Spirit is love (G26 **agape**), joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; <ins>against such things there is no law</ins>. (ESV)
 
-The fruit of the Spirit, while lawful, are not enough to justify marrying a person. Also, only Jesus was perfect. Christ's law **must** be followed rather than using the fruit of the Spirit to as an excuse to self-justify; **Bearing your neighbours burdens**, and <ins>awaiting God to provide</ins>, because God is the justifier, not us:
+But when choosing a wife, we must walk by the Spirit, and that includes bearing one another's burdens. This is also made plainly evident in **[Ephesians 5:25-33](https://www.biblegateway.com/passage/?search=Ephesians%205%3A25-33&version=ESV)**:
+
+> **[Galatians 5:15-17](https://www.biblegateway.com/passage/?search=Galatians%205%3A15-17&version=ESV)** - But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit, and you will not gratify the desires of the flesh.** For **the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh,** for these are opposed to each other, to keep you from doing the things you want to do. (ESV)
+
+Regarding making a marriage proposal after getting born-again: The fruit of the Spirit, while lawful, are not enough to justify marrying a person. Also, only Jesus was perfect. Christ's law **must** be followed rather than using the fruit of the Spirit to as an excuse to self-justify; **Bearing your neighbours burdens**, and <ins>awaiting God to provide</ins>, because God is the justifier, not us. We can't force someone to marry us, but we must die to self and give ourself up for our wife:
 
 > **[Romans 3:23](https://www.biblegateway.com/passage/?search=Romans%203%3A23&version=ESV)** - for all have sinned and fall short of the glory of God, (ESV)
 
-Being <ins>led by the spirit involves following Christ's law.</ins> To be married to the right person makes it far easier to not sin:
+Being <ins>led by the spirit involves following Christ's law.</ins> To be married to the right person makes it far easier to not sin. Yes, yielding the fruit of the Spirit, but also necessarily walking by the Spirit:
 
 > **[Galatians 5:13-16](https://www.biblegateway.com/passage/?search=Galatians%205%3A13-16&version=ESV)** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but <ins>through love serve one another. For the whole law is fulfilled in one word: You shall love your neighbor as yourself.</ins> But if you bite and devour one another, watch out that you are not consumed by one another. But I say, <ins>walk by the Spirit, and you will not gratify the desires of the flesh.</ins> (ESV)
 
@@ -18856,6 +18864,26 @@ ultimately God may approve or deny it:
 We should put our faith in God, and in God's promises:
 
 > **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, **Have faith in God.**
+
+In the case of the marriage proposal I made, I must hold faith in God which includes obedience to Jesus' command to love one another the way He loved us, and this is reflected in Paul's commandment to love your wife as Christ loves the church, so at the end of the day I have to demonstrate Christ's love which is ultimately obedient and faithful to Jesus:
+
+> **[Philippians 2:8](https://www.biblegateway.com/passage/?search=Philippians%202%3A8&version=ESV)** - And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. (ESV)
+
+> **[Hebrews 13:12-14](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A12-14&version=ESV)** - So Jesus also suffered outside the gate in order to sanctify the people through his own blood. Therefore let us go to him outside the camp and bear the reproach he endured. For here we have no lasting city, but we seek the city that is to come. (ESV)
+
+In my situation I had to put faithfulness to Jesus over faithfulness to the girl I wanted to marry and I had to die a death, carrying my cross, and to be faithful to Jesus first and foremost, and it was not fun, and it felt like in my case I was led to kill my Isaac on the altar. I'm a little bit confused about why I was drawn into this situation, but I believe the reasons will be in part that I was attacked by the enemy after being born-again, but God has been using me as I have confidence before God because I've been keeping Jesus' sayings and commandments. God sees it all. I think God just has been working in the kingdom as a disciple:
+
+> **[Luke 14:33](https://www.biblegateway.com/passage/?search=Luke%2014%3A33&version=ESV)** - So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+
+> **[John 15:8](https://www.biblegateway.com/passage/?search=John%2015%3A8&version=ESV)** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
+
+> **[John 12:24-26](https://www.biblegateway.com/passage/?search=John%2012%3A24-26&version=ESV)** - Truly, truly, I say to you, unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit. Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
+
+But I know it was painful. But I was tested on relationship idolatry / faithfulness to Jesus. God tested me, actually, like He did with Abraham:
+
+> **[Ephesians 5:25-33](https://www.biblegateway.com/passage/?search=Ephesians%205%3A25-33&version=ESV)** - **Husbands, love your wives, as Christ loved the church and gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word, so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish.** In the same way husbands should love their wives as their own bodies. He who loves his wife loves himself. For no one ever hated his own flesh, but nourishes and cherishes it, just as Christ does the church, because we are members of his body. Therefore a man shall leave his father and mother and hold fast to his wife, and the two shall become one flesh. This mystery is profound, and I am saying that it refers to Christ and the church. However, let each one of you love his wife as himself, and let the wife see that she respects her husband. (ESV)
+
+I'm a little bit confused at it all, but I will keep following Jesus.
 
 We have the right to take a believing wife:
 
@@ -27084,6 +27112,10 @@ And now I'm in this situation where I feel like:
 -   after being born-again, Jesus became the most important person to me and was still in love with the girl.
     -   When I had the vision of her on the beach, I thought she was a gift from God. I proposed to her after seeing her smiling at me on the street.
     -   I was brought into court. I needed to reinforce the following again truth again: that a spouse is not supposed to be one's saviour, and, also, **we're not supposed to be our spouses' saviour either**. A spouse cannot be an idol. Jesus must always be first because Jesus is our life.
+
+However, it's the husband's role to demonstrate Christ's love, and not deny their wife to know Jesus:
+
+> **[Ephesians 5:21-23](https://www.biblegateway.com/passage/?search=Ephesians%205%3A21-23&version=ESV)** - submitting to one another out of reverence for Christ. Wives, submit to your own husbands, as to the Lord. For the husband is the head of the wife even as Christ is the head of the church, his body, and is himself its Savior. (ESV)
 
 In my opinion, everything up to when I proposed to her was
 good - it was like heaven in terms of my
