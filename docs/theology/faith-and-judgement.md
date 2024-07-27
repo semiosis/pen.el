@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8586991) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7d9541b) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -880,6 +880,10 @@ Faithfulness to Jesus, though, is a baseline requirement.
 See how faithfulness is related to faith - faith is faithful to God. Having faith in God **is** keeping accountability with God with regard to His commands and promises and maintaining faithfulness with God who sees in secret:
 
 > **[II Timothy 2:13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A13&version=ESV)** - if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
+
+-   **[Quote from John Piper](https://www.desiringgod.org/messages/when-i-dont-desire-god-part-2/excerpts/true-joy-meets-the-needs-of-others):** Love is the overflow of joy that meets the needs of others.
+
+> **[II Corinthians 8:1-2](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A1-2&version=ESV)** - We want you to know, brothers, about the grace of God that has been given among the churches of Macedonia, for **in a severe test of affliction, their abundance of joy and their extreme poverty have overflowed in a wealth of generosity** on their part. (ESV)
 
 -   **[Quote from John Piper](https://youtu.be/JkSAMTp5leQ?t=2305):** Christ-exalting love for people is the overflow of joy in God or it's not love in a Biblical sense.
 
@@ -4028,7 +4032,7 @@ I believe Jesus still appoints apostles, and I'm prophetic myself so I have no d
 
 I think a good reason Jesus would still be doing this is for sake of the unity of the church, and demonstration of the Spirit and power of God. We need the prophetic in the church:
 
-> **[1 Corinthians 2:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A4&version=ESV),5** - and my speech and my message were not in plausible words of wisdom, but in demonstration of the Spirit and of power, that your faith might not rest in the wisdom of men but in the power of God. (ESV)
+> **[1 Corinthians 2:4,5](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A4&version=ESV)** - and my speech and my message were not in plausible words of wisdom, but in demonstration of the Spirit and of power, that your faith might not rest in the wisdom of men but in the power of God. (ESV)
 
 From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
 
@@ -4044,6 +4048,10 @@ However apostolic and prophetic people have the truth revealed to them. These ro
 > **[Ephesians 3:5](https://www.biblegateway.com/passage/?search=Ephesians%203%3A5&version=ESV)** - which was not made known to the sons of men in other generations as it has now been revealed to his holy apostles and prophets by the Spirit. (ESV)
 
 > **[I Corinthians 2:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A4&version=ESV)** - and my speech and my message were not in plausible words of wisdom, but in demonstration of the Spirit and of power, (ESV)
+
+Also, this seems relevant:
+
+> **[Matthew 11:11](https://www.biblegateway.com/passage/?search=Matthew%2011%3A11&version=ESV)** - Truly, I say to you, among those born of women there has arisen no one greater than John the Baptist. Yet the one who is least in the kingdom of heaven is greater than he. (ESV)
 
 But we should listen to sound teaching first and always test the spirits:
 
@@ -7142,7 +7150,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **[Acts 19:8](https://www.biblegateway.com/passage/?search=Acts%2019%3A8&version=ESV)** - And he entered the synagogue and for three months spoke boldly, reasoning and persuading them about the kingdom of God. (ESV)
     
-    > **[Zechariah 14:4](https://www.biblegateway.com/passage/?search=Zechariah%2014%3A4&version=ESV),9** - On that day his feet shall stand on the Mount of Olives that lies before Jerusalem on the east, and the Mount of Olives shall be split in two from east to west by a very wide valley, so that one half of the Mount shall move northward, and the other half southward. And the LORD will be king over all the earth. On that day the LORD will be one and his name one. (ESV)
+    > **[Zechariah 14:4,9](https://www.biblegateway.com/passage/?search=Zechariah%2014%3A4&version=ESV)** - On that day his feet shall stand on the Mount of Olives that lies before Jerusalem on the east, and the Mount of Olives shall be split in two from east to west by a very wide valley, so that one half of the Mount shall move northward, and the other half southward. And the LORD will be king over all the earth. On that day the LORD will be one and his name one. (ESV)
     
     > **[Acts 28:31](https://www.biblegateway.com/passage/?search=Acts%2028%3A31&version=ESV)** - proclaiming the kingdom of God and teaching about the Lord Jesus Christ with all boldness and without hindrance. (ESV)
     
@@ -10213,7 +10221,7 @@ We are not children of the slave woman but we are children of the free woman:
 
 -   **Bible study:** [youtube.com: You Are a Child of the Free Woman: Galatians 4:21-31, Part 8 @time: 2 min 6 sec](https://youtube.com/watch?v=mUnh98bcLek&t=126)
 
-So John Piper is taking the Apostle John's writing in **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** and saying that Apostle John is warning against people talking about justification through works, but I don't think that's what the Apostle John is talking about. But I think it's important to affirm Lord Jesus's teaching. And we should be corrected by the Lord's teaching. For example, in **Mark 10:18**, Jesus affirmed that God is Good. Therefore when we read this, we must also be sanctified by this truth, affirming and coming into agreement that God is Good:
+So John Piper is taking the Apostle John's writing in **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** and saying that Apostle John is warning against people talking about justification through works, but I don't think that's what the Apostle John is talking about. But I think it's important to affirm Lord Jesus's teaching. And we should be corrected by the Lord's teaching. For example, in **[Mark 10:18](https://www.biblegateway.com/passage/?search=Mark%2010%3A18&version=ESV)**, Jesus affirmed that God is Good. Therefore when we read this, we must also be sanctified by this truth, affirming and coming into agreement that God is Good:
 
 > **[II John 1:9-10](https://www.biblegateway.com/passage/?search=2%20John%201%3A9-10&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, (ESV)
 
@@ -18128,6 +18136,8 @@ We should be more confident with the light!
 
 > **[Matthew 5:16](https://www.biblegateway.com/passage/?search=Matthew%205%3A16&version=ESV)** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven.
 
+> **[II Corinthians 8:1-2](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A1-2&version=ESV)** - We want you to know, brothers, about the grace of God that has been given among the churches of Macedonia, for **in a severe test of affliction, their abundance of joy and their extreme poverty have overflowed in a wealth of generosity** on their part. (ESV)
+
 -   **Song:** [youtube.com: This Is The Day {Garratt}](https://www.youtube.com/watch?v=T9Eqm8uIuck)
 
 > **[Romans 13:12-14](https://www.biblegateway.com/passage/?search=Romans%2013%3A12-14&version=ESV)** - The night is far gone; the day is at hand. So then let us **cast off the works of darkness and put on the armor of light**. Let us walk properly as in the daytime, not in orgies and drunkenness, not in sexual immorality and sensuality, not in quarreling and jealousy. But **put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires.** (ESV)
@@ -18800,8 +18810,8 @@ be unable to be snatched away from His hand, when they are saved.
      4    and disobedient  |  |     |    |                ||
      5        goat    |    |  |     |    |   |            || Saved by entering through Jesus
      6          |     |    |  |     |    |   |  |        ||||
-     7          |     |    |  |     |    |   |  | |  Jesus, the good shepherd - [[https://www.biblegateway.com/passage/?search=John%2010%3A11&version=ESV][John 10:11]]
-     8          |     |    |  |     |                Jesus, the Door - [[https://www.biblegateway.com/passage/?search=John%2010%3A7&version=ESV][John 10:7]]
+     7          |     |    |  |     |    |   |  | |  Jesus, the good shepherd - John 10:11
+     8          |     |    |  |     |                Jesus, the Door - John 10:7
      9      Trusting--------------------------------------|--->
     10  sheep (justifed)   |  |                          ||||     pasture
     11          |     |   _|                              ||
@@ -18814,7 +18824,7 @@ be unable to be snatched away from His hand, when they are saved.
     18                                                    ||    Thief comes to
     19      unbelieving          dead works              /||\    steal, kill
     20      dead worker --------------------------------- || ->    and destroy
-    21      (thief/goat)                                  ||       [[https://www.biblegateway.com/passage/?search=John%2010%3A1&version=ESV][John 10:1]]
+    21      (thief/goat)                                  ||       John 10:1, John 10:10
 
 > **[John 10:7](https://www.biblegateway.com/passage/?search=John%2010%3A7&version=ESV)** - So Jesus again said to them, Truly, truly, I say to you, I am the door of the sheep. (ESV)
 
@@ -19693,7 +19703,7 @@ In all honesty, I think it's valuable that a Christian marriage couple should st
 
 > **[Matthew 19:5-6](https://www.biblegateway.com/passage/?search=Matthew%2019%3A5-6&version=ESV)** - and said, Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh? So they are no longer two but one flesh. What therefore God has joined together, let not man separate. (ESV)
 
-**The unbelieving spouse is sanctified because of the believing spouse**. So it's not the end of the world having an unbelieving spouse, but what this says is that the unbeliever is **made holy** - they will come to believe:
+Concerning existing marriages, where one person becomes a believer, **the unbelieving spouse is sanctified because of the believing spouse**. So it's not the end of the world having an unbelieving spouse, but what this says is that the unbeliever is **made holy** - they will come to believe:
 
 > **[I Corinthians 7:14](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A14&version=ESV)** - For the unbelieving husband is made holy because of his wife, and the unbelieving wife is made holy because of her husband. Otherwise your children would be unclean, but as it is, they are holy. (ESV)
 
@@ -21139,7 +21149,7 @@ Things like pornography probably attracts evil spirits which hinders finding a r
 
 Of course we still need to be sanctified and stop sinning, following Jesus.
 
-> **[Hebrews 12:14](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A14&version=ESV),15** -  Strive for peace with everyone, and for the holiness without which no one will see the Lord.  See to it that no one fails to obtain the grace of God; that no root of bitterness springs up and causes trouble, and by it many become defiled;  (ESV)
+> **[Hebrews 12:14,15](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A14&version=ESV)** -  Strive for peace with everyone, and for the holiness without which no one will see the Lord.  See to it that no one fails to obtain the grace of God; that no root of bitterness springs up and causes trouble, and by it many become defiled;  (ESV)
 
 But sin is rather described in such a way:
 
@@ -23645,6 +23655,8 @@ Let your light shine before all people:
 
 > **[Matthew 5:16](https://www.biblegateway.com/passage/?search=Matthew%205%3A16&version=ESV)** - In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven. (ESV)
 
+> **[II Corinthians 8:1-2](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A1-2&version=ESV)** - We want you to know, brothers, about the grace of God that has been given among the churches of Macedonia, for **in a severe test of affliction, their abundance of joy and their extreme poverty have overflowed in a wealth of generosity** on their part. (ESV)
+
 Be reconciled to one another:
 
 > **[Matthew 5:23-24](https://www.biblegateway.com/passage/?search=Matthew%205%3A23-24&version=ESV)** - So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift. (ESV)
@@ -23841,6 +23853,8 @@ Those who proclaim the gospel should get their living by the gospel:
 > **[I Corinthians 10:24](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A24&version=ESV)** - Let no one seek his own good, but the good of his neighbor. (ESV)
 
 > **[I Corinthians 10:19-21](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A19-21&version=ESV)** - What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons. (ESV)
+
+> **[I Corinthians 7:10-17](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A10-17&version=ESV)** - To the married I give this charge *(not I, but the Lord)*: the wife should not separate from her husband (but if she does, she should remain unmarried or else be reconciled to her husband), and the husband should not divorce his wife. To the rest I say *(I, not the Lord)* that if any brother has a wife who is an unbeliever, and she consents to live with him, he should not divorce her. If any woman has a husband who is an unbeliever, and he consents to live with her, she should not divorce him. For the unbelieving husband is made holy because of his wife, and the unbelieving wife is made holy because of her husband. Otherwise your children would be unclean, but as it is, they are holy. But if the unbelieving partner separates, let it be so. In such cases the brother or sister is not enslaved. God has called you to peace. Wife, how do you know whether you will save your husband? Husband, how do you know whether you will save your wife? Only let each person lead the life that the Lord has assigned to him, and to which God has called him. This is my rule in all the churches. (ESV)
 
 
 ## Do not be unequally yoked with unbelievers
@@ -25459,7 +25473,7 @@ The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) 
      6  mortified, yet both itself, and the first
      7  motions thereof, are truly and properly sin.14
      8  
-     9  13 [[https://www.biblegateway.com/passage/?search=Romans%207%3A18&version=ESV][Rom. 7:18]],23; Eccles. 7:20; 1 John 1:8
+     9  13 Rom. 7:18,23; Eccles. 7:20; 1 John 1:8
     10  14 Rom. 7:23–25; Gal. 5:17
 
 
@@ -27724,6 +27738,8 @@ We should forsake:
 
 > **[John 10:10](https://www.biblegateway.com/passage/?search=John%2010%3A10&version=ESV)** - The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. (ESV)
 
+-   **Read:** [star.net.nz: Protect your marriage](https://www.star.net.nz/the-word-for-today/-protect-your-marriage-2024_07_26)
+
 But God is our life (we can't trade God for anything):
 
 > **[John 17:3](https://www.biblegateway.com/passage/?search=John%2017%3A3&version=ESV)** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent. (ESV)
@@ -27851,6 +27867,10 @@ We can still ask for more grace when we are in need:
 -   **Consider St Polycarp:** [en.wikipedia.org: Polycarp - Wikipedia](https://en.wikipedia.org/wiki/Polycarp)
 
 I had to sacrifice the marriage proposal I made being born again in order to not put her in first place, and also to abide by Christ's law because selfish agape is no agape at all and love comes from God, and it's because God loved us first that we love, and whatever is not done in faith is sin and without the type of love Jesus showed us, faith is dead. And this is challenging ask but it's what God asks of us.
+
+We are faithful first and foremost to God:
+
+> **[I Corinthians 7:12-15](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A12-15&version=ESV)** - To the rest I say (I, not the Lord) that if any brother has a wife who is an unbeliever, and she consents to live with him, he should not divorce her. If any woman has a husband who is an unbeliever, and he consents to live with her, she should not divorce him. For the unbelieving husband is made holy because of his wife, and the unbelieving wife is made holy because of her husband. Otherwise your children would be unclean, but as it is, they are holy. But **if the unbelieving partner separates, let it be so. In such cases the brother or sister is not enslaved.** God has called you to peace. (ESV)
 
 I am a new creation:
 
