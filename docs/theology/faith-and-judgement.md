@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8c09d79) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org2eb76f3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3160,7 +3160,13 @@ like the All Blacks try to please their coach, and we seek to follow the Royal L
     5  In Jesus Christ's name I ask,
     6  AMEN!!
 
-For this reason, I think that Bible translations such as the ESV, correctly are reserved about printing the LORD's name inline throughout the whole Bible. The JW, as they consolidate their Bible translation (NWT) using the LORD's name, seems to me like an effort to try to engineer God, or self-affirm their own understanding, which is self-exalting. I do not affirm the NWT translation, but I do affirm the doctrine of Sola Scriptura.
+For this reason, I think that Bible translations such as the ESV, correctly are reserved about printing the LORD's name inline throughout the whole Bible. The JW, as they consolidate their Bible translation (NWT) using the LORD's name, seems to me either like an effort to try to engineer God, or self-affirm their own understanding, which is self-exalting but may (especially by those in their congregation) be done in ignorance. I do not affirm the NWT translation, but I do affirm the doctrine of [Sola Scriptura](https://www.reformationbiblecollege.org/blog/the-five-solas).
+
+These Scriptures refers to Jesus' name:
+
+> **[Matthew 18:20](https://www.biblegateway.com/passage/?search=Matthew%2018%3A20&version=ESV)** - For where two or three are gathered in my name, there am I among them. (ESV)
+
+> **[Matthew 18:19-20](https://www.biblegateway.com/passage/?search=Matthew%2018%3A19-20&version=ESV)** - Again I say to you, if two of you agree on earth about anything they ask, it will be done for them by my Father in heaven. For where two or three are gathered in my name, there am I among them. (ESV)
 
 However, I also neither like the way in which the names of other so-called gods are used in other translations of Scriptures and I can understand the concern about that:
 
