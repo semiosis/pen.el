@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org9aa1b65) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5a9f085) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -14243,6 +14243,10 @@ Faith receives, even the free gift of eternal life from God:
 
 > **[Ephesians 2:8-9](https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=ESV)** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
 
+> **[Romans 11:29](https://www.biblegateway.com/passage/?search=Romans%2011%3A29&version=ESV)** - For the gifts and the calling of God are irrevocable. (ESV)
+
+> **[Isaiah 55:11](https://www.biblegateway.com/passage/?search=Isaiah%2055%3A11&version=ESV)** - so shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose, and shall succeed in the thing for which I sent it. (ESV)
+
 Love gives:
 
 > **[I Corinthians 13:13](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A13&version=ESV)** - So now faith, hope, and love abide, these three; but the greatest of these is love. (ESV)
@@ -26672,6 +26676,8 @@ It makes sense to me that being conformed into Christ's image and knowing Father
 
 > **[Jude 1:25](https://www.biblegateway.com/passage/?search=Jude%201%3A25&version=ESV)** - to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen. (ESV)
 
+> **[Mark 10:35-45](https://www.biblegateway.com/passage/?search=Mark%2010%3A35-45&version=ESV)** - And James and John, the sons of Zebedee, came up to him and said to him, Teacher, we want you to do for us whatever we ask of you. And he said to them, What do you want me to do for you? And they said to him, **Grant us to sit, one at your right hand and one at your left, in your glory.** Jesus said to them, You do not know what you are asking. Are you able to drink the cup that I drink, or to be baptized with the baptism with which I am baptized? And they said to him, We are able. And Jesus said to them, The cup that I drink you will drink, and with the baptism with which I am baptized, you will be baptized, but **to sit at my right hand or at my left is not mine to grant, but it is for those for whom it has been prepared.** And when the ten heard it, they began to be indignant at James and John. And Jesus called them to him and said to them, You know that those who are considered rulers of the Gentiles lord it over them, and their great ones exercise authority over them. But it shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be slave of all. For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
+
 
 ## Inheriting the promises made to Abraham and to Christ
 
@@ -29148,6 +29154,16 @@ Jesus Christ was not made. He was there with Jehovah in the beginning. He is the
 > **[Revelation of John 17:14](https://www.biblegateway.com/passage/?search=Revelation%2017%3A14&version=ESV)** - They will make war on the Lamb, and the Lamb will conquer them, for he is Lord of lords and King of kings, and those with him are called and chosen and faithful. (ESV)
 
 > **[I Timothy 1:17](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A17&version=ESV)** - To the King of ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen.
+
+Jesus Christ (God the Son) currently has all authority in heaven and earth:
+
+> **[Matthew 28:18](https://www.biblegateway.com/passage/?search=Matthew%2028%3A18&version=ESV)** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. (ESV)
+
+Fellow heirs with Christ are still in subjection to Christ. Fellow heirs with Christ have Christ as their King and Lord and Saviour and God and Jehovah as their God.
+
+Christ is reigning until all things are placed into subjection under Him and then Jesus will also be subjected to Father God. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+
+> **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. **When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.** (ESV)
 
 
 # AMEN!!
