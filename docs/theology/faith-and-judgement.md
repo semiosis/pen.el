@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb3a8264) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8c09d79) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3182,8 +3182,8 @@ Pride and insubordination against God is antichrist-like behaviour:
 
 > **[II Thessalonians 2:3-4](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A3-4&version=ESV)** - Let no one deceive you in any way. For that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, the son of destruction, who opposes and exalts himself against every so-called god or object of worship, so that he takes his seat in the temple of God, proclaiming himself to be God. (ESV)
 
-Now with regards to Christlike behaviour,
-making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same material standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst."). Where Jesus came to help us, and to bring us to God:
+Now with regards to the way people should (or shouldn't) act,
+making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same material standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst."). Where Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
 
 > **[Psalms 69:21](https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&version=ESV)** - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)
 
@@ -3201,7 +3201,7 @@ Specific example:
 
 > **[John 15:18-20](https://www.biblegateway.com/passage/?search=John%2015%3A18-20&version=ESV)** - If the world hates you, know that it has hated me before it hated you. If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
 
-The one worrying about the material things doesn't actually have the love of the Father in them but the poor person who loves God does - the materially poor but rich in faith person has their priorities in order and doesn't need correction from the natural, worldly person, but rather needs mercy from the materialistic worldly person. And the materialistic, worldly person needs to learn from the poor person so they can put God first. This is not glorifying poverty, but rather is about the truth of the matter that we must have God as our top love in our heart:
+The one worrying about the material things isn't in doing so exhibiting the love of the Father in them but the poor person who loves God does - the materially poor but rich in faith person has their priorities in order and doesn't need correction from the natural, worldly person, but rather needs mercy from the materialistic worldly person. And the materialistic, worldly person needs to learn from the poor person so they can put God first. This is not glorifying poverty, but rather is about the truth of the matter that we must have God as our top love in our heart:
 
 > **[I John 2:15](https://www.biblegateway.com/passage/?search=1%20John%202%3A15&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. (ESV)
 
