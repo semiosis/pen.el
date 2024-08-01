@@ -1,38 +1,62 @@
 
 # Table of Contents
 
-1.  [Valentinus](#orgddc0c1b)
-    1.  [Refutations](#org2f85ecf)
-        1.  [Refutation of All Heresies (Hippolytus)](#org9e5df53)
-2.  [WATV - World Mission Society Church of God](#orge79e980)
-3.  [Free-grace without Lordship salvation](#org1c04665)
-4.  [Lordship salvation without free-grace](#org53172da)
-5.  [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#orgcece118)
-    1.  [They also have to repent from idolatry](#org3819618)
-        1.  [Idolatry](#orgf9b56ea)
-6.  [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#org4761f50)
+1.  [Valentinus](#org5d6a4cd)
+    1.  [Refutations](#org61ab8e9)
+        1.  [Refutation of All Heresies (Hippolytus)](#org0fa770e)
+2.  [Universal religion](#org0da6635)
+3.  [Mixing paganism with Christianity](#orge14b343)
+4.  [WATV - World Mission Society Church of God](#org3308313)
+5.  [JW](#orgf0a0c32)
+    1.  [Some thoughts I have to correct JW theology](#org02bedba)
+6.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#orgd7a0326)
+7.  [Free-grace without Lordship salvation](#org49abc89)
+8.  [Lordship salvation without free-grace](#orgb94a46e)
+9.  [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org18ec1c2)
+    1.  [They also have to repent from idolatry](#org3b1e173)
+        1.  [Idolatry](#orgf062c06)
+10. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#org6bc77b9)
 
 
-<a id="orgddc0c1b"></a>
+<a id="org5d6a4cd"></a>
 
 # Valentinus
 
 [A Valentinian Exposition](https://www.earlychristianwritings.com/text/valentinian.html)
 
+But I think at least they tried to conform to the image of Christ from what I can divulge, unlike most modern-day Christians.
+So, yeah, a lot of modern-day Christianity is probably even more heretical than Valentinianism to be honest.
 
-<a id="org2f85ecf"></a>
+
+<a id="org61ab8e9"></a>
 
 ## Refutations
 
 
-<a id="org9e5df53"></a>
+<a id="org0fa770e"></a>
 
 ### Refutation of All Heresies (Hippolytus)
 
 [CHURCH FATHERS: Refutation of All Heresies, Book VI {Hippolytus}](https://www.newadvent.org/fathers/050106.htm)
 
 
-<a id="orge79e980"></a>
+<a id="org0da6635"></a>
+
+# Universal religion
+
+-   trying to unite all religions as if they are all equal
+
+
+<a id="orge14b343"></a>
+
+# Mixing paganism with Christianity
+
+> **[I Corinthians 10:20-22](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A20-22&version=ESV)** - No, I imply that what pagans sacrifice they offer to demons and not to God. **I do not want you to be participants with demons. You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he?
+
+It disgusts me when people pursue paganism, the occult and demons.
+
+
+<a id="org3308313"></a>
 
 # WATV - World Mission Society Church of God
 
@@ -44,74 +68,201 @@
     -   They believe Gentiles are under the Mosaic law.
 
 
-<a id="org1c04665"></a>
+<a id="orgf0a0c32"></a>
+
+# JW
+
+I have reason to believe that Jesus is not Michael the Archangel:
+
+> **[Mark 13:32-33](https://www.biblegateway.com/passage/?search=Mark%2013%3A32-33&version=ESV)** - But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father. Be on guard, keep awake. For you do not know when the time will come. (ESV)
+
+
+<a id="org02bedba"></a>
+
+## Some thoughts I have to correct JW theology
+
+We never proclaim ourself to be God. Never:
+
+> **[II Thessalonians 2:1-4](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A1-4&version=ESV)** - Now concerning **the coming of our Lord Jesus Christ** and our being gathered together to him, we ask you, brothers, not to be quickly shaken in mind or alarmed, either by a spirit or a spoken word, or a letter seeming to be from us, to the effect that the day of the Lord has come. Let no one deceive you in any way. For that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, **the son of destruction, who opposes and exalts himself against every so-called god or object of worship**, so that he takes his seat in the temple of God, **proclaiming himself to be God.** (ESV)
+
+We must not take the name of the LORD in vain. This is something I'm concerned about with the JWs' Bible translation because they seem to be reinforcing/consolidating their Bible translation using the LORD's name and where it has errors this is saying, "thus saith the LORD" regarding their Bible translation:
+
+> **[Exodus 20:7](https://www.biblegateway.com/passage/?search=Exodus%2020%3A7&version=ESV)** - You shall not take the name of the LORD your God in vain, for the LORD will not hold him guiltless who takes his name in vain. (ESV)
+
+But we must do our best to not misrepresent God:
+
+> **[Job 42:7](https://www.biblegateway.com/passage/?search=Job%2042%3A7&version=ESV)** - After the LORD had spoken these words to Job, the LORD said to Eliphaz the Temanite: My anger burns against you and against your two friends, for you have not spoken of me what is right, as my servant Job has. (ESV)
+
+I think we must also recognise that the LORD is Jehovah-Jireh and He acts for those who wait for Him - who put their trust in Him:
+
+What we should do now is acknowledge the LORD, keep our eyes on Jesus, and live godly lives (godliness is behaviour in accordance with the knowledge of God, believe the truth and walk in that truth, love the light, walk in the light, walk in the truth). Trust in the LORD to save us as we walk in the light (in obedience):
+
+> **[Proverbs 3:5-6](https://www.biblegateway.com/passage/?search=Proverbs%203%3A5-6&version=ESV)** - **Trust** in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+
+At the end of the day it's not what we do for God but what God has done for us, and continues to do for us that matters most:
+
+> **[I John 4:10](https://www.biblegateway.com/passage/?search=1%20John%204%3A10&version=ESV)** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. (ESV)
+
+God acts for those who wait for Him:
+
+> **[Isaiah 64:4](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A4&version=ESV)** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <span class="underline">for those who wait for him</span>. (ESV)
+
+<https://stmarkcharlotte.org/wp-content/uploads/2018/12/The-Heresy-of-Jevhovah_s-Witness.pdf>
+
+The JW believe that the Lord Jesus Christ was assigned as a son
+to God in Baptism, which was the beginning of his second birth.
+The Lord Jesus Christ became a spiritual son to God in it, and a
+king over the Kingdom of Jehovah. Actually, Baptism was one
+of the occasions in which the Father witnessed to this Sonship
+saying, “This is My beloved Son, in whom I am well pleased”
+([Matthew 3:17](https://www.biblegateway.com/passage/?search=Matthew%203%3A17&version=ESV)):
+
+> **[Matthew 3:17](https://www.biblegateway.com/passage/?search=Matthew%203%3A17&version=ESV)** - and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
+
+John the Baptist also witnessed to this, saying,
+“And I have seen and testified that this is the Son of God”
+([John 1:34](https://www.biblegateway.com/passage/?search=John%201%3A34&version=ESV)):
+
+> **[John 1:34](https://www.biblegateway.com/passage/?search=John%201%3A34&version=ESV)** - And I have seen and have borne witness that this is the Son of God. (ESV)
+
+People will live happily in this earthly paradise and Isaiah’s
+prophecy will be fulfilled in them, “They shall build houses
+and inhabit them; They shall plant vineyards and eat their
+fruit” (Isaiah 65..21).
+
+In reply to this heresy we say:
+(1) The promise of granting them the earth, houses and trees is
+against the eternal joy that the Holy Bible spoke about, “Eye
+has not seen, nor ear heard, nor have entered into the heart of
+man the things which God has prepared for those who love
+Him” ([1 Corinthians 2:9](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A9&version=ESV))
+
+> **[I Corinthians 2:9](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A9&version=ESV)** - But, as it is written, What no eye has seen, nor ear heard, nor the heart of man imagined, what God has prepared for those who love him— (ESV)
+
+> **[Isaiah 64:4](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A4&version=ESV)** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, who acts for those who wait for him. (ESV)
+
+Ultimately, it's not about what we can do for God but for what God has done for us.
+
+AMEN!!
+
+
+<a id="orgd7a0326"></a>
+
+# In my independent Bible-Studying, I have not yet delved into many modern Christian sects
+
+But I find this person's website trustworthy:
+
+<./resources/jesusisgodandlordministries.com>
+
+<https://jesusisgodandlordministries.com/>
+
+
+<a id="org49abc89"></a>
 
 # Free-grace without Lordship salvation
 
 This is a problem in Calvinist churches with people (especially pastors)
 who don't preach for us to 'do' the will of God, but merely want God to do it, when Jesus told His disciples to teach people to obey Him.
 
+[Why Do So Many Christians Reject Calvinism? - YouTube](https://www.youtube.com/watch?v=Rvvdx4i2TK8)
+
 The truth is we are set free from sin to become slaves of God and the fruit of being a slave to God leads to sanctification and at its end, eternal life:
 
-> **Romans 6:22-23** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
+> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 
 We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
 
-> **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+> **[Jude 1:21](https://www.biblegateway.com/passage/?search=Jude%201%3A21&version=ESV)** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
 
 Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **[John 15:10](https://www.biblegateway.com/passage/?search=John%2015%3A10&version=ESV)** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+
+Love for God and an obedient heart is required to be a child of God:
+
+-   God's children love Him, and love Jesus, and the ones who obey Jesus are the ones who love Him.
+-   Faith believes Jesus, loves Jesus, and obeys Jesus
+
+Faith:
+
+-   Forward action in trusting Him
+    -   [This Video Popped Up For A Reason!! GOD WANTS YOU TO HEAR THIS? - YouTube](https://www.youtube.com/watch?v=YKVN-wCqraE)
+-   Fear ain't in this house
+
+It's what God has done for us that matters most, not what we can do for Him.
+In fact, we can't do anything if we abide outside of Christ.
+
+> **[John 15:4-5](https://www.biblegateway.com/passage/?search=John%2015%3A4-5&version=ESV)** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. (ESV)
+
+We abide in Christ when He washes us, and this is not our action but Jesus' action to us:
+
+> **[John 15:3](https://www.biblegateway.com/passage/?search=John%2015%3A3&version=ESV)** - Already you are clean because of the word that I have spoken to you. (ESV)
+
+> **[John 13:8](https://www.biblegateway.com/passage/?search=John%2013%3A8&version=ESV)** - Peter said to him, You shall never wash my feet. Jesus answered him, If I do not wash you, you have no share with me. (ESV)
+
+We must remain in Christ:
+
+> **[John 15:4](https://www.biblegateway.com/passage/?search=John%2015%3A4&version=ESV)** - Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. (ESV)
+
+Jesus doesn't cast us out:
+
+> **[John 6:37-39](https://www.biblegateway.com/passage/?search=John%206%3A37-39&version=ESV)** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. (ESV)
+
+We must accept this teaching:
+
+> **[John 6:40-47](https://www.biblegateway.com/passage/?search=John%206%3A40-47&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. So the Jews grumbled about him, because he said, I am the bread that came down from heaven. They said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does he now say, I have come down from heaven? Jesus answered them, Do not grumble among yourselves. No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes has eternal life. (ESV)
+
+AMEN!!
 
 
-<a id="org53172da"></a>
+<a id="orgb94a46e"></a>
 
 # Lordship salvation without free-grace
 
 I think that actually following Jesus is probably superior to someone who says that they are a follower of Jesus but doesn't actually follow.
 
-> **Matthew 21:28-31** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
+> **[Matthew 21:28-31](https://www.biblegateway.com/passage/?search=Matthew%2021%3A28-31&version=ESV)** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
 
-> **Matthew 7:21** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. (ESV)
+> **[Matthew 7:21](https://www.biblegateway.com/passage/?search=Matthew%207%3A21&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. (ESV)
 
-> **Luke 15:10** - Just so, I tell you, there is joy before the angels of God over one sinner who repents. (ESV)
+> **[Luke 15:10](https://www.biblegateway.com/passage/?search=Luke%2015%3A10&version=ESV)** - Just so, I tell you, there is joy before the angels of God over one sinner who repents. (ESV)
 
-> **Luke 19:9-10** - And Jesus said to him, Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost. (ESV)
+> **[Luke 19:9-10](https://www.biblegateway.com/passage/?search=Luke%2019%3A9-10&version=ESV)** - And Jesus said to him, Today salvation has come to this house, since he also is a son of Abraham. For the Son of Man came to seek and to save the lost. (ESV)
 
-> **II Peter 3:9** - The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance. (ESV)
+> **[II Peter 3:9](https://www.biblegateway.com/passage/?search=2%20Peter%203%3A9&version=ESV)** - The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance. (ESV)
 
-> **Matthew 12:50** - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
+> **[Matthew 12:50](https://www.biblegateway.com/passage/?search=Matthew%2012%3A50&version=ESV)** - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
 
 
-<a id="orgcece118"></a>
+<a id="org18ec1c2"></a>
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
-> **John 7:24** - Do not judge by appearances, but judge with right judgment. (ESV)
+> **[John 7:24](https://www.biblegateway.com/passage/?search=John%207%3A24&version=ESV)** - Do not judge by appearances, but judge with right judgment. (ESV)
 
 It's not really the religion but who puts their faith in Jesus and **obeys** the gospel who will be saved.
 
 Correct Christology is important, but so is obeying Jesus' commandments, and obeying Jesus' commandments is possibly even more important than belief:
 
-> **Matthew 21:28-31** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
+> **[Matthew 21:28-31](https://www.biblegateway.com/passage/?search=Matthew%2021%3A28-31&version=ESV)** - “But what do you think? A man had two sons, and he came to the first and said, ‘Son, go work today in the vineyard.’ And he answered, ‘I will not’; but afterward he regretted it and went.  The man came to the second and said the same thing; and he answered, ‘I will, sir’; but he did not go.  **Which of the two did the will of his father?” They said, “The first.”** Jesus said to them, “Truly I say to you that **the tax collectors and prostitutes will get into the kingdom of God before you.**
 
 We must keep ourselves in the love of God by obeying Jesus Christ's commandments, because we're awaiting to receive eternal life:
 
-> **Jude 1:21** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
+> **[Jude 1:21](https://www.biblegateway.com/passage/?search=Jude%201%3A21&version=ESV)** - **keep yourselves in the love of God,** waiting for the mercy of our Lord Jesus Christ that leads to eternal life. (ESV)
 
 Keeping Jesus Christ's commandments is a requirement to inherit eternal life:
 
-> **John 15:10** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
+> **[John 15:10](https://www.biblegateway.com/passage/?search=John%2015%3A10&version=ESV)** - **If you keep my commandments, you will abide in my love,** just as I have kept my Father's commandments and abide in his love. (ESV)
 
 Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Jesus Christ, and that obedience means being a slave of righteousness, leading to sanctification, which leads to eternal life:
 
-> **John 3:36** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 Therefore, I don't want to flat-out disqualify people who do not have precisely the correct doctrine or theology.
 
 Jesus goes to those who hear His voice to bring them into His flock:
 
-> **John 10:16** - And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
+> **[John 10:16](https://www.biblegateway.com/passage/?search=John%2010%3A16&version=ESV)** - And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
 
 Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
 
@@ -119,70 +270,90 @@ Not all religions are equal. There is only one true God, the Father of Jesus Chr
 
 The only way is Jesus:
 
-> **John 14:6** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
+> **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 
-> **1 Corinthians 8:5-6** - For although there may be so-called gods in heaven or on earth-as indeed there are many gods and many lords- yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist. (ESV)
+> **[1 Corinthians 8:5-6](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-6&version=ESV)** - For although there may be so-called gods in heaven or on earth-as indeed there are many gods and many lords- yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist. (ESV)
 
 Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 
-> **John 6:33** - For the bread of God is he who comes down from heaven and gives life to the world.
+> **[John 6:33](https://www.biblegateway.com/passage/?search=John%206%3A33&version=ESV)** - For the bread of God is he who comes down from heaven and gives life to the world.
 
-> **John 6:35** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
+> **[John 6:35](https://www.biblegateway.com/passage/?search=John%206%3A35&version=ESV)** - Jesus said to them, I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.
 
-> **John 13:34-35** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
+> **[John 13:34-35](https://www.biblegateway.com/passage/?search=John%2013%3A34-35&version=ESV)** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
-> **Galatians 1:6-10** - I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel- not that there is another one, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
+> **[Galatians 1:6-10](https://www.biblegateway.com/passage/?search=Galatians%201%3A6-10&version=ESV)** - I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel- not that there is another one, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
 
-> **Micah 4:1-13** - It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths. For out of Zion shall go forth the law, and the word of the LORD from Jerusalem. He shall judge between many peoples, and shall decide for strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the LORD of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the LORD our God forever and ever. In that day, declares the LORD, I will assemble the lame and gather those who have been driven away and those whom I have afflicted; and the lame I will make the remnant, and those who were cast off, a strong nation; and the LORD will reign over them in Mount Zion from this time forth and forevermore. And you, O tower of the flock, hill of the daughter of Zion, to you shall it come, the former dominion shall come, kingship for the daughter of Jerusalem. Now why do you cry aloud? Is there no king in you? Has your counselor perished, that pain seized you like a woman in labor? Writhe and groan, O daughter of Zion, like a woman in labor, for now you shall go out from the city and dwell in the open country; you shall go to Babylon. There you shall be rescued; there the LORD will redeem you from the hand of your enemies. Now many nations are assembled against you, saying, Let her be defiled, and let our eyes gaze upon Zion. But they do not know the thoughts of the LORD; they do not understand his plan, that he has gathered them as sheaves to the threshing floor. Arise and thresh, O daughter of Zion, for I will make your horn iron, and I will make your hoofs bronze; you shall beat in pieces many peoples; and shall devote their gain to the LORD, their wealth to the Lord of the whole earth. (ESV)
+> **[Micah 4:1-13](https://www.biblegateway.com/passage/?search=Micah%204%3A1-13&version=ESV)** - It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths. For out of Zion shall go forth the law, and the word of the LORD from Jerusalem. He shall judge between many peoples, and shall decide for strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the LORD of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the LORD our God forever and ever. In that day, declares the LORD, I will assemble the lame and gather those who have been driven away and those whom I have afflicted; and the lame I will make the remnant, and those who were cast off, a strong nation; and the LORD will reign over them in Mount Zion from this time forth and forevermore. And you, O tower of the flock, hill of the daughter of Zion, to you shall it come, the former dominion shall come, kingship for the daughter of Jerusalem. Now why do you cry aloud? Is there no king in you? Has your counselor perished, that pain seized you like a woman in labor? Writhe and groan, O daughter of Zion, like a woman in labor, for now you shall go out from the city and dwell in the open country; you shall go to Babylon. There you shall be rescued; there the LORD will redeem you from the hand of your enemies. Now many nations are assembled against you, saying, Let her be defiled, and let our eyes gaze upon Zion. But they do not know the thoughts of the LORD; they do not understand his plan, that he has gathered them as sheaves to the threshing floor. Arise and thresh, O daughter of Zion, for I will make your horn iron, and I will make your hoofs bronze; you shall beat in pieces many peoples; and shall devote their gain to the LORD, their wealth to the Lord of the whole earth. (ESV)
 
-> **James 1:26** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
+> **[James 1:26](https://www.biblegateway.com/passage/?search=James%201%3A26&version=ESV)** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
 
 
-<a id="org3819618"></a>
+<a id="org3b1e173"></a>
 
 ## They also have to repent from idolatry
 
-> **I Thessalonians 1:9-10** - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come.
+> **[I Thessalonians 1:9-10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A9-10&version=ESV)** - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come.
 
-> **I Corinthians 10:14-31** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
+> **[I Corinthians 10:14-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A14-31&version=ESV)** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
 
 
-<a id="orgf9b56ea"></a>
+<a id="orgf062c06"></a>
 
 ### Idolatry
 
-> **Acts 17:29** - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man.
+> **[Acts 17:29](https://www.biblegateway.com/passage/?search=Acts%2017%3A29&version=ESV)** - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man.
 
-> **Romans 1:23** - and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles.􄐺
+> **[Romans 1:23](https://www.biblegateway.com/passage/?search=Romans%201%3A23&version=ESV)** - and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles.􄐺
 
-> **Psalms 106:20** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
+> **[Psalms 106:20](https://www.biblegateway.com/passage/?search=Psalms%20106%3A20&version=ESV)** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
 
 
-<a id="org4761f50"></a>
+<a id="org6bc77b9"></a>
 
 # People who twist the Scriptures to seek worldly prosperity instead of following Jesus
 
 [How Kenneth Copeland Scammed Millions - YouTube](https://www.youtube.com/watch?v=lTMcFZJTN78)
 
-> **I Timothy 6:6** - Now there is great gain in godliness with contentment, (ESV)
+> **[I Timothy 6:6](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A6&version=ESV)** - Now there is great gain in godliness with contentment, (ESV)
 
-> **Acts 8:20** - But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money! (ESV)
+> **[Acts 8:20](https://www.biblegateway.com/passage/?search=Acts%208%3A20&version=ESV)** - But Peter said to him, May your silver perish with you, because you thought you could obtain the gift of God with money! (ESV)
 
-> **John 12:6** - He said this, not because he cared about the poor, but because he was a thief, and having charge of the moneybag he used to help himself to what was put into it. (ESV)
+> **[John 12:6](https://www.biblegateway.com/passage/?search=John%2012%3A6&version=ESV)** - He said this, not because he cared about the poor, but because he was a thief, and having charge of the moneybag he used to help himself to what was put into it. (ESV)
 
-> **Luke 12:33** - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. (ESV)
+> **[Luke 12:33](https://www.biblegateway.com/passage/?search=Luke%2012%3A33&version=ESV)** - Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys. (ESV)
 
-> **Luke 9:3** - And he said to them, Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics. (ESV)
+> **[Luke 9:3](https://www.biblegateway.com/passage/?search=Luke%209%3A3&version=ESV)** - And he said to them, Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics. (ESV)
 
-> **Luke 16:13** - No servant can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+> **[Luke 16:13](https://www.biblegateway.com/passage/?search=Luke%2016%3A13&version=ESV)** - No servant can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
 
-> **Luke 14:26** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
 
-> **II Timothy 3:2** - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, (ESV)
+> **[II Timothy 3:2](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A2&version=ESV)** - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, (ESV)
 
-> **Matthew 6:24** - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
+> **[Matthew 6:24](https://www.biblegateway.com/passage/?search=Matthew%206%3A24&version=ESV)** - No one can serve two masters, for either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve God and money. (ESV)
 
-> **Luke 18:25** - For it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. (ESV)
+> **[Luke 18:25](https://www.biblegateway.com/passage/?search=Luke%2018%3A25&version=ESV)** - For it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. (ESV)
 
-> **Matthew 6:33** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+> **[Matthew 6:33](https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=ESV)** - But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+
+[God is the Gospel - YouTube @time: 45 min 31 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2731)
+
+-   **Quote from John Piper:** The prosperity gospel is no gospel because what it does is offer to people what they want as natural people.
+
+Amen to that.
+
+The reason we want to be righteous is so we get God, not that we **become** God but that we abide in God.
+
+[God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
+
+Yes, we must be obedient as He is obedient, but that first act of obedience and the most important one is that we allow Jesus to wash us. We must believe, Jesus, trust in Jesus:
+
+> **[Philippians 2:5-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A5-11&version=ESV)** - Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, taking the form of a servant, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. (ESV)
+
+We must accept this teaching:
+
+> **[John 6:40-47](https://www.biblegateway.com/passage/?search=John%206%3A40-47&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. So the Jews grumbled about him, because he said, I am the bread that came down from heaven. They said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does he now say, I have come down from heaven? Jesus answered them, Do not grumble among yourselves. No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes has eternal life. (ESV)
+
+AMEN!!
 
