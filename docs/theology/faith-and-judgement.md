@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org25803b5) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org9aa1b65) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -9903,6 +9903,20 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     
     > **[Hebrews 10:26-29](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A26-29&version=ESV)** - For if we go on sinning deliberately **after receiving the knowledge of the truth**, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries. Anyone who has set aside the law of Moses dies without mercy on the evidence of two or three witnesses. How much worse punishment, do you think, will be deserved by the one who has spurned the Son of God, and has profaned the blood of the covenant by which he was sanctified, and has outraged the Spirit of grace? (ESV)
     
+    Don't live in fear over the warning in **[Hebrews 10:26-29](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A26-29&version=ESV)**, just continue confessing sin and continue being sanctified:
+    
+    > **[I Corinthians 13:12](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A12&version=ESV)** - For now we see in a mirror dimly, but then face to face. Now I know in part; then I shall know fully, even as I have been fully known. (ESV)
+    
+    Continue to be sanctified by faith in Jesus:
+    
+    > **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are **sanctified by faith in me.** (ESV)
+    
+    Continue to confess sin:
+    
+    > **[I John 1:9](https://www.biblegateway.com/passage/?search=1%20John%201%3A9&version=ESV)** - If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. (ESV)
+    
+    > **[Hebrews 10:14](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A14&version=ESV)** - For by a single offering he has perfected for all time those who are being sanctified. (ESV)
+    
     To **know** if Jesus' teaching comes from God, one must desire to do God's will.
     
     > **[John 7:17](https://www.biblegateway.com/passage/?search=John%207%3A17&version=ESV)** -  If anyone's will is to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority.  (ESV)
@@ -16886,7 +16900,7 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <tbody>
 <tr>
 <td class="org-left">Messiah would resurrect from the dead.</td>
-<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2016%3A10&amp;version=ESV">Psalms 16:10</a></b> - For you will not abandon my soul to Sheol, or let your holy one see corruption. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Psalms%2049%3A15&amp;version=ESV">Psalms 49:15</a></b> - But God will ransom my soul from the power of Sheol, for he will receive me. Selah (ESV)</td>
+<td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2016%3A10&amp;version=ESV">Psalms 16:10</a></b> - For <b>you will not abandon my soul to Sheol, or let your holy one see corruption.</b> (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Psalms%2049%3A15&amp;version=ESV">Psalms 49:15</a></b> - But God will ransom my soul from the power of Sheol, for he will receive me. Selah (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2028%3A2-7&amp;version=ESV">Matthew 28:2-7</a></b> - And behold, there was a great earthquake, for an angel of the Lord descended from heaven and came and rolled back the stone and sat on it. His appearance was like lightning, and his clothing white as snow. And for fear of him the guards trembled and became like dead men. But the angel said to the women, Do not be afraid, for I know that you seek Jesus who was crucified. He is not here, for he has risen, as he said. Come, see the place where he lay. Then go quickly and tell his disciples that he has risen from the dead, and behold, he is going before you to Galilee; there you will see him. See, I have told you. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Acts%202%3A22-32&amp;version=ESV">Acts 2:22-32</a></b> - Men of Israel, hear these words: Jesus of Nazareth, a man attested to you by God with mighty works and wonders and signs that God did through him in your midst, as you yourselves know— this Jesus, delivered up according to the definite plan and foreknowledge of God, you crucified and killed by the hands of lawless men. God raised him up, loosing the pangs of death, because it was not possible for him to be held by it. For David says concerning him, I saw the Lord always before me, for he is at my right hand that I may not be shaken; therefore my heart was glad, and my tongue rejoiced; my flesh also will dwell in hope. For you will not abandon my soul to Hades, or let your Holy One see corruption. You have made known to me the paths of life; you will make me full of gladness with your presence. Brothers, I may say to you with confidence about the patriarch David that he both died and was buried, and his tomb is with us to this day. Being therefore a prophet, and knowing that God had sworn with an oath to him that he would set one of his descendants on his throne, he foresaw and spoke about the resurrection of the Christ, that he was not abandoned to Hades, nor did his flesh see corruption. This Jesus God raised up, and of that we all are witnesses. (ESV)</td>
 </tr>
 </tbody>
@@ -19038,15 +19052,73 @@ The new self should be <ins>Christ formed in you:</ins>
 
 > **[Ephesians 3:9-11](https://www.biblegateway.com/passage/?search=Ephesians%203%3A9-11&version=ESV)** - and to bring to light for everyone what is the plan of the mystery hidden for ages in God who created all things, so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places. This was according to <ins>the eternal purpose that he has realized in Christ Jesus</ins> our Lord,
 
-**By** him all things were created. Firstborn here <ins>does not mean</ins> 'created first', but it means <ins>pre-eminent</ins>:
+**By** him all things were created. Firstborn here <ins>does not mean</ins> 'created first', but it means <ins>pre-eminent</ins> and firstborn of the dead:
+
+> **[Colossians 1:15-20](https://www.biblegateway.com/passage/?search=Colossians%201%3A15-20&version=ESV)** - He is the image of the invisible God, the firstborn of all creation. For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities — **all things were created through him and for him**. And he is before all things, and **in him all things hold together**. And he is the head of the body, the church. He is the beginning, **the firstborn from the dead**, that in everything he might be preeminent. For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross.
+
+When people say "God can't die, so Jesus is not God" the explanation is that Jesus conquered and sat down with His Father Jehovah on His throne.
+
+Thomas saw God in Jesus Christ, or Jesus Christ as God:
+
+> **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)** - Thomas answered him, My Lord and my God! (ESV)
+
+It's very clear that there is some distinction between Father and Son:
+
+> **[John 20:17](https://www.biblegateway.com/passage/?search=John%2020%3A17&version=ESV)** - Jesus said to her, Do not cling to me, for I have not yet ascended to the Father; but go to my brothers and say to them, I am ascending to my Father and your Father, to my God and your God. (ESV)
+
+But Jesus Christ is our Mediator:
+
+> **[I Timothy 2:5](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A5&version=ESV)** - For there is one God, and there is one mediator between God and men, the man Christ Jesus, (ESV)
+
+Jesus still refers to Father God as His God:
+
+> **[Revelation of John 3:12](https://www.biblegateway.com/passage/?search=Revelation%203%3A12&version=ESV)** - The one who conquers, I will make him a pillar in the temple of my God. Never shall he go out of it, and I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down from my God out of heaven, and my own new name. (ESV)
+
+I think this really clears things up a little bit:
+
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+
+We serve the Most High God, Jehovah and Jesus Christ who He has sent:
+
+> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
+
+Jesus has defeated death for himself and all who receive eternal life from Him:
+
+> **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
+
+AMEN!!
+
+That's why we can say that Jesus who is God the Son died and defeated death and sits with His Father who is God the Father, and they are One. We can still say that God doesn't die because Jesus defeated death:
+
+> **[Revelation of John 1:18](https://www.biblegateway.com/passage/?search=Revelation%201%3A18&version=ESV)** - and the living one. I died, and behold I am alive forevermore, and I have the keys of Death and Hades. (ESV)
+
+> **[Romans 8:11-13](https://www.biblegateway.com/passage/?search=Romans%208%3A11-13&version=ESV)** - If **the Spirit of him who raised Jesus from the dead** dwells in you, he who raised Christ Jesus from the dead will also give life to your mortal bodies through his Spirit who dwells in you. So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+> **[Psalms 16:10](https://www.biblegateway.com/passage/?search=Psalms%2016%3A10&version=ESV)** - For **you will not abandon my soul to Sheol, or let your holy one see corruption.** (ESV)
+
+But from the perspective of those currently being sanctified, things may still seem to be rolling out. Jesus, from His perspective, though has already won though and defeated first:
+
+> **[Romans 6:9](https://www.biblegateway.com/passage/?search=Romans%206%3A9&version=ESV)** - We know that **Christ being raised from the dead will never die again; death no longer has dominion over him.** (ESV)
+
+Death will be destroyed for all those who abide in Jesus:
+
+> **[I Corinthians 15:26](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A26&version=ESV)** - The last enemy to be destroyed is death. (ESV)
+
+> **[Hebrews 10:14](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A14&version=ESV)** - For by a single offering he has perfected for all time those who are being sanctified. (ESV)
+
+By faith I believe that Jesus even from my perspective has defeated death because Jesus will never let me go:
+
+> **[John 6:37-39](https://www.biblegateway.com/passage/?search=John%206%3A37-39&version=ESV)** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. (ESV)
+
+-   **See this:** [youtube.com: Derek Prince - Jesus Is Not Just A Prophet Or A Guru](https://www.youtube.com/watch?v=sRUp1nqIV-w)
 
 > **[Isaiah 43:10](https://www.biblegateway.com/passage/?search=Isaiah%2043%3A10&version=ESV)** - You are my witnesses, declares the LORD, and my servant whom I have chosen, that you may know and believe me and understand that I am he. **Before me no god was formed, nor shall there be any after me.** (ESV)
+
+> **[Colossians 1:18](https://www.biblegateway.com/passage/?search=Colossians%201%3A18&version=ESV)** - And he is the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent. (ESV)
 
 Jesus is pre-eminent, one with God in the beginning:
 
 > **[John 1:2](https://www.biblegateway.com/passage/?search=John%201%3A2&version=ESV)**: He was in the beginning with God.
-
-> **[Colossians 1:15-20](https://www.biblegateway.com/passage/?search=Colossians%201%3A15-20&version=ESV)** - He is the image of the invisible God, the firstborn of all creation. For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities—all things were created through him and for him. And he is before all things, and in him all things hold together. And he is the head of the body, the church. He is the beginning, the firstborn from the dead, that in everything he might be preeminent. For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross.
 
 Being <ins>pre-emintent</ins> one with God in the beginning, Jesus washes us first. Jesus acts first that we may abide in Him, that our works may abide in Him:
 
