@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org2eb76f3) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org67415cd) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3188,8 +3188,15 @@ Pride and insubordination against God is antichrist-like behaviour:
 
 > **[II Thessalonians 2:3-4](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A3-4&version=ESV)** - Let no one deceive you in any way. For that day will not come, unless the rebellion comes first, and the man of lawlessness is revealed, the son of destruction, who opposes and exalts himself against every so-called god or object of worship, so that he takes his seat in the temple of God, proclaiming himself to be God. (ESV)
 
-Now with regards to the way people should (or shouldn't) act,
-making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same material standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst."). Where Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
+Now with regards to the way people should (or shouldn't) act:
+
+-   **[Quote by Tim Keller](https://youtu.be/SDuXlGSV7l4?t=1174):** Know what the Bible says: Sin is craving something more than God. Sin is making something more important than God. Sin is is living for something more than God. If God is at the periphery of your life, if you're just religious occasionally, if God [is] sort of on the outskirts of your life, that is sin. That's the essence of sin.
+
+Bad or anti-christ-like behaviour would be making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same material standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst.").
+
+> **[Luke 23:36-37](https://www.biblegateway.com/passage/?search=Luke%2023%3A36-37&version=ESV)** - The soldiers also mocked him, coming up and offering him sour wine and saying, If you are the King of the Jews, save yourself! (ESV)
+
+Where Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
 
 > **[Psalms 69:21](https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&version=ESV)** - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)
 
@@ -12878,6 +12885,22 @@ The guy was still coveting his possessions. To find life, one needs to let go of
 
 Amen to that.
 
+The reason we want to be righteous is so we get God, not that we **become** God but that we abide in God.
+
+[God is the Gospel - YouTube @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
+
+Yes, we must be obedient as He is obedient, but that first act of obedience and the most important one is that we allow Jesus to wash us. We must believe, Jesus, trust in Jesus:
+
+> **[Philippians 2:5-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A5-11&version=ESV)** - Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but made himself nothing, taking the form of a servant, being born in the likeness of men. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. (ESV)
+
+We must accept this teaching:
+
+> **[John 6:40-47](https://www.biblegateway.com/passage/?search=John%206%3A40-47&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. So the Jews grumbled about him, because he said, I am the bread that came down from heaven. They said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does he now say, I have come down from heaven? Jesus answered them, Do not grumble among yourselves. No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes has eternal life. (ESV)
+
+AMEN!!
+
+Amen to that.
+
 God wants to be our treasure, our heart's desire. I want that too:
 
 > **[Matthew 6:21](https://www.biblegateway.com/passage/?search=Matthew%206%3A21&version=ESV)** - For where your treasure is, there your heart will be also. (ESV)
@@ -14366,6 +14389,34 @@ I believe though, that the LORD is making an entirely new heavens and a new eart
 > **[Revelation of John 21:1-7](https://www.biblegateway.com/passage/?search=Revelation%2021%3A1-7&version=ESV)** - Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying, Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning nor crying nor pain anymore, for the former things have passed away. And he who was seated on the throne said, Behold, I am making all things new. Also he said, Write this down, for these words are trustworthy and true. And he said to me, It is done! I am the Alpha and the Omega, the beginning and the end. To the thirsty I will give from the spring of the water of life without payment. The one who conquers will have this heritage, and I will be his God and he will be my son.
 
 > **[Revelation of John 22:12-14](https://www.biblegateway.com/passage/?search=Revelation%2022%3A12-14&version=ESV)** - Behold, I am coming soon, bringing my recompense with me, to repay everyone for what he has done. I am the Alpha and the Omega, the first and the last, the beginning and the end. Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. (ESV)
+
+
+### Being sanctified in the Truth
+
+Within Christ, Jesus, the head of the body of Christ, has the perfect vision:
+
+> **[Matthew 7:3-5](https://www.biblegateway.com/passage/?search=Matthew%207%3A3-5&version=ESV)** - Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye. (ESV)
+
+Then You have Father God, who as Jesus was in the flesh and at that time, Jesus referred to as having knowledge of the end, which Jesus, God's Son, didn't have in that moment:
+
+> **[Matthew 24:36](https://www.biblegateway.com/passage/?search=Matthew%2024%3A36&version=ESV)** - But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father only. (ESV)
+
+I believe that Jesus is the Alpha and the Omega. This declaration in Revelation shows that Jesus now sees the end:
+
+> **[Revelation of John 22:13-15](https://www.biblegateway.com/passage/?search=Revelation%2022%3A13-15&version=ESV)** - I am the Alpha and the Omega, the first and the last, the beginning and the end. Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. Outside are the dogs and sorcerers and the sexually immoral and murderers and idolaters, and everyone who loves and practices falsehood. (ESV)
+
+> **[Acts 7:56](https://www.biblegateway.com/passage/?search=Acts%207%3A56&version=ESV)** - And he said, Behold, I see the heavens opened, and the Son of Man standing at the right hand of God. (ESV)
+
+-   **Song:** [youtube.com: Chris Tomlin - How Great Is Our God {Live In Nashville 2022} ft. Hillsong UNITED](https://youtube.com/watch?v=XV4nOVmWW2A)
+
+> **[Philippians 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)** - Therefore God has highly exalted him and bestowed on him **the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father.** (ESV)
+
+AMEN!!
+
+Jesus Christ has the name above all names. Jesus Christ is Lord!
+Jesus Christ is Jehovah.
+Jesus Christ is Immanuel.
+AMEN!!
 
 
 ### The Mosaic law is not abolished but Jesus fulfilled it like a prophesy
