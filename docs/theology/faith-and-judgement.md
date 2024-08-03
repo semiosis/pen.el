@@ -342,7 +342,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb47c3ef) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgc6e4d76) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -492,7 +492,7 @@ So the problem in my opinion is not the will to do the will of God but the abili
 
 I affirm almost all of the Heidelberg Catechism. However, I see it as a teaching resource, and not Scripture. Though, after doing the independent Bible study below, I am pleasantly surprised to be in (from what I can currently tell) almost full agreement with it, with some minor differences. For example, when I read its logical statements such as <ins>"Q. What is the aim of the tenth commandment? A. That not even the&#x2026;"</ins>, I think there's a bit more to it.
 
-Also, I believe that [believer's baptism](https://www.gotquestions.org/believers-baptism.html) is Scriptural and should result in following Jesus, where I yet need to be convinced about [infant baptism](https://www.gotquestions.org/infant-baptism.html) (although I myself was Christened as a baby, and I believe that no harm has come from that?).
+Also, I believe that [believer's baptism](https://www.gotquestions.org/believers-baptism.html) is Scriptural and should result in following Jesus.
 
 I link the Heidelberg Catechism here for others' reference. By all means read the Heidelberg Catechism first.
 
@@ -7001,6 +7001,35 @@ Interesting. It's not exactly what I'm still having faith for, but Jesus is inde
 
 > **[I John 4:2-3](https://www.biblegateway.com/passage/?search=1%20John%204%3A2-3&version=ESV)** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
+Mari Mari Emmanuel loves Jesus and this is a great sermon. I wish I heard and understood this earlier. Mari is speaking a lot of truth here. I can't fact-check the entire thing but it could have brought me up to speed a bit faster I think if I watched it earlier:
+
+-   **[youtube.com: Part 1 Of Works Of The Holy Spirit | Bishop Mari Mari Emmanuel](https://youtube.com/watch?v=MZeznN9yDFY&t=3067):** He (Jesus Christ) is the only one who fulfilled all God's Commandments and laws He is the perfect human, like the Lord said in **[Matthew 5:48](https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV)** be as perfect as your Heavenly Father is.
+    
+    This man is the perfect one like his Heavenly Father.
+    
+    Therefore this human being can be the
+    Son for God. This human only can be the
+    Son - qualifies to be the Son because he
+    has fulfilled all God's demands, requests,
+    criterias. That's why, lawfully, he
+    qualifies to be the Son. Not in any other
+    way but by law, by law. So no one can challenge his
+    authenticity in any court of law
+    because he has fulfilled all laws.
+    
+    So whenever he stands in any court of law
+    he can stand with his head up, high up,
+    and can say, "Anyone of you can convict me of sin?"
+    No-one. He's the only human being who never
+    broke God's word, because everything in
+    Him was the yes and the AMEN!!
+    
+    We are talking here about the Lord's humanity, not divinity.
+    Divinity is God. He's the perfect God. We're talking
+    about the human being, perfect like God.
+
+> **[Hebrews 7:26-28](https://www.biblegateway.com/passage/?search=Hebrews%207%3A26-28&version=ESV)** - For it was indeed fitting that we should have such a high priest, holy, innocent, unstained, separated from sinners, and exalted above the heavens. He has no need, like those high priests, to offer sacrifices daily, first for his own sins and then for those of the people, since he did this once for all when he offered up himself. For the law appoints men in their weakness as high priests, but the word of the oath, which came later than the law, appoints a Son who has been made perfect forever. (ESV)
+
 > **[I Thessalonians 5:20-22](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A20-22&version=ESV)** - Do not despise prophecies, but test everything; hold fast what is good. Abstain from every form of evil. (ESV)
 
 But I am still seeking hearing that acknowledgement by continuing in Jesus' word, endeavoring to keep Jesus' commandments. I certainly have heard many false and deceptive voices, even blasphemy.
@@ -9363,7 +9392,9 @@ Ultimately, we are waiting for incorruptible bodies, and I totally believe in ra
 
 > **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: the appointed time has grown very short. From now on, let those who have wives live as though they had none, and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and those who deal with the world as though they had no dealings with it. For the present form of this world is passing away. (ESV)
 
-Also, I do not affirm reincarnation, but I think the truth is that it is appointed for man to die once, and after that, judgement, and the LORD creates an **entirely new** heavens and a new earth. No recycling. No reincarnation. I await the second coming of Christ. AMEN!
+Also, I do not affirm reincarnation, but I think the truth is that it is appointed for man to die once, and after that, judgement, and the LORD creates an **entirely new** heavens and a new earth. No recycling. No reincarnation. I await the second coming of Christ. AMEN! Amen to the New Covenant. Jesus Christ is my High Priest.
+
+> **[Hebrews 9:27-28](https://www.biblegateway.com/passage/?search=Hebrews%209%3A27-28&version=ESV)** - And just as it is appointed for man to die once, and after that comes judgment, so Christ, having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him. (ESV)
 
 > **[Isaiah 65:17](https://www.biblegateway.com/passage/?search=Isaiah%2065%3A17&version=ESV)** - For behold, I create new heavens and a new earth, and <ins>the former things shall not be remembered or come into mind.</ins>
 
@@ -19677,7 +19708,9 @@ The way I chose was based on truth and joy and being at peace. And the fact of t
 
 > **[Genesis 2:18](https://www.biblegateway.com/passage/?search=Genesis%202%3A18&version=ESV)** - Then the LORD God said, It is not good that the man should be alone; I will make him a helper fit for him. (ESV)
 
-Then the devil probably said, "It is not good that man should be allowed to marry the person God made for him, because then he wont feel the need to have any of my false sinful substitutes."
+Then the devil probably said, "It is not good that man should be allowed to marry the person God made for him, because then he wont feel the need to have any of my false sinful substitutes." But the situation is probably more complicated than that, and I can't see everything and I wasn't perfect so, yeah.
+
+Jesus is perfect though.
 
 I'm not upset with people, but I'm upset that I feel broken and as if I am in a world of lies as a result of following Jesus, and like I had to kill the marriage proposal to put Jesus first, and I'm grieved. I feel like Abraham if he was to actually kill Isaac on the Altar, and God didn't intervene.
 
@@ -19802,6 +19835,78 @@ I want to continue in the process of sanctification, and holiness in body and sp
 > **[I Corinthians 7:33-35](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A33-35&version=ESV)** - But the married man is anxious about worldly things, how to please his wife, and his interests are divided. And the unmarried or betrothed woman is anxious about the things of the Lord, **how to be holy in body and spirit**. But the married woman is anxious about worldly things, how to please her husband. I say this for your own benefit, not to lay any restraint upon you, but to promote good order and to secure your undivided devotion to the Lord. (ESV)
 
 > **[I Corinthians 9:25-27](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A25-27&version=ESV)** - Every athlete exercises self-control in all things. They do it to receive a perishable wreath, but we an imperishable. So I do not run aimlessly; I do not box as one beating the air. But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. (ESV)
+
+
+### Choosing a marriage partner in the Lord Jesus and who loves the Lord Jesus
+
+At this point I just am thankful that Jesus has saved my life, and has been sanctifying me. That's what matters.
+I kinda want to just develop my relationship with Jesus right now. I desire that for anyone.
+
+> **[Romans 6:4](https://www.biblegateway.com/passage/?search=Romans%206%3A4&version=ESV)** - We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in **newness of life**. (ESV)
+
+-   **[Quote from Mar Mari Emmanuel](https://youtu.be/11z22HR1KHo?t=3192):** Whenever there is a couple coming for marital
+    counseling, I always refer to the Book of
+    Proverbs (King Solomon) chapter 31, verse 10.
+    Book of Proverbs, 31 which is the last
+    chapter, and it's verse 10.
+    
+    Now the **Book of Proverbs teaches you wisdom on earth, not in heaven**, on earth - teaches you wisdom.
+    
+    So when you go to Chapter 31:10 of Proverbs King Solomon with the wisdom
+    which he received from God himself he
+    says, "A virtuous woman, who can find?"
+    
+    And then he continues
+    the same verse and says for her price
+    exceeds the precious pearls or
+    stones. "A virtuous woman who can find?"
+    
+    And I say this to that couple, "My son and my daughter, this verse, we divide into two parts:
+    
+    -   the first part is for the man,
+    -   and the second part is for the woman.
+    
+    So my dear son, you are looking for a girl to marry. Look for a girl that is virtuous."
+    
+    Now what does the word virtuous mean? It literally means "fearing the Lord".
+    
+    What is fearing the Lord means? Loving the Lord.
+    
+    When you come looking for a girl in marriage, you better look
+    for the girl that loves Jesus Christ of
+    Nazareth, because the day you find a girl
+    loving the Lord Jesus, don't never fear
+    that girl, she can never be bad to you,
+    because the Lord who is in her heart
+    will teach her to be good and nothing
+    else.
+    
+    Yes, you look for looks, it's okay to
+    a certain degree, but don't ever focus on
+    the external looks, focus on the internal
+    looks, see first and foremost where is
+    her heart? Is it with the Lord, or is it with
+    the world? If she is with the world, not a good choice.
+    
+    And how do you find out? The first time you meet that girl, ask her, say, "I go to church, what do you think of that?
+    Will you come with me? If she says, nah, don't pretend you're a saint and you're going to convert her,
+    because there is a very big chance she will convert you and take you away from Christ."
+
+    1  Dear Heavenly Father,
+    2  I ask that everyone who is involved  or reading this (without naming names),
+    3  that they entrust themselves to Jesus Christ, place their faith in Jesus
+    4  and stay strong in their faith in Jesus. No matter how anything works out.
+    5  That's my desire that, I do not hurt anyone but that they come to faith in Jesus.
+    6  So I pray that whatever happens, our faith is in Jesus now and ongoingly.
+    7  In Jesus Christ's name I ask,
+    8  AMEN!!
+
+The New Covenant is much better than the first covenant, so I'm sure Jesus is enough to sanctify me completely,
+The obvious thing to do right now when my dreams / visions and circumstances are giving me ambiguous and unclear stuff is to do is just choose Jesus, to not lose faith in Jesus, because keeping faith with Jesus is the most important thing. We're getting married to Jesus after all.
+
+> **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: **the appointed time has grown very short. From now on, let those who have wives live as though they had none,** and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and <ins>those who deal with the world as though they had no dealings with it.</ins> For **the present form of this world is passing away**. (ESV)
+
+> **[John 14:23](https://www.biblegateway.com/passage/?search=John%2014%3A23&version=ESV)** - Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. (ESV)
 
 
 ### It's extremely important to respect the institution of marriage, and of marriage proposal
@@ -22502,6 +22607,10 @@ The **day of the Lord** (as in the second-coming of Jesus Christ) has not happen
 
 > **[Matthew 24:36](https://www.biblegateway.com/passage/?search=Matthew%2024%3A36&version=ESV)** - But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father only. (ESV)
 
+Jesus is coming a second time to save those who are eagerly waiting for Him. AMEN!!:
+
+> **[Hebrews 9:27-28](https://www.biblegateway.com/passage/?search=Hebrews%209%3A27-28&version=ESV)** - And just as it is appointed for man to die once, and after that comes judgment, so Christ, having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him. (ESV)
+
 But I consider that Jesus may have visited me personally to make me born-again and bring me into His service:
 
 > **[Mark 13:32-37](https://www.biblegateway.com/passage/?search=Mark%2013%3A32-37&version=ESV)** - But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father. Be on guard, keep awake. For you do not know when the time will come. It is like a man going on a journey, when he leaves home and puts his servants in charge, each with his work, and commands the doorkeeper to stay awake. Therefore stay awake—for you do not know when the master of the house will come, in the evening, or at midnight, or when the cock crows, or in the morning— lest he come suddenly and find you asleep. And what I say to you I say to all: Stay awake. (ESV)
@@ -22676,11 +22785,36 @@ We follow them in faith.
 <https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/dream-the-way-the-truth-the-life/>
 
 
+## Jesus is our Eternal High Priest
+
+> **[Hebrews 7:26](https://www.biblegateway.com/passage/?search=Hebrews%207%3A26&version=ESV)** - For it was indeed fitting that we should have such a high priest, holy, innocent, unstained, separated from sinners, and exalted above the heavens. (ESV)
+
+> **[Hebrews 7:27](https://www.biblegateway.com/passage/?search=Hebrews%207%3A27&version=ESV)** - He has no need, like those high priests, to offer sacrifices daily, first for his own sins and then for those of the people, since he did this once for all when he offered up himself. (ESV)
+
+Jesus is not only Eternal High Priest, but Son of God, and made perfect forever. AMEN!!:
+
+> **[Hebrews 7:28](https://www.biblegateway.com/passage/?search=Hebrews%207%3A28&version=ESV)** - For the law appoints men in their weakness as high priests, but the word of the oath, which came later than the law, appoints **a Son who has been made perfect forever.** (ESV)
+
+Jesus is our Great High High Priest:
+
+> **[Hebrews 4:14-16](https://www.biblegateway.com/passage/?search=Hebrews%204%3A14-16&version=ESV)** - Since then we have a great high priest who has passed through the heavens, Jesus, the Son of God, let us hold fast our confession. For we do not have a high priest who is unable to sympathize with our weaknesses, but one who in every respect has been tempted as we are, yet without sin. Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need. (ESV)
+
+
 ## New covenant
 
-> **[Hebrews 8:10-13](https://www.biblegateway.com/passage/?search=Hebrews%208%3A10-13&version=ESV)** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest. For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+The first covenant had fault, but the New Covenant has no fault:
 
-Covenants require faithfulness between both parties, but we are able to move on from dead works and focus more on faith towards God, and serving God now.
+> **[Hebrews 8:6-9](https://www.biblegateway.com/passage/?search=Hebrews%208%3A6-9&version=ESV)** - But as it is, Christ has obtained a ministry that is as much more excellent than the old as the covenant he mediates is better, since it is enacted on better promises. For if that first covenant had been faultless, there would have been no occasion to look for a second. For he finds fault with them when he says: Behold, the days are coming, declares the Lord, when I will establish a new covenant with the house of Israel and with the house of Judah, not like the covenant that I made with their fathers on the day when I took them by the hand to bring them out of the land of Egypt. For they did not continue in my covenant, and so I showed no concern for them, declares the Lord. (ESV)
+
+God writes His laws on our minds and on our hearts:
+
+> **[Hebrews 8:10-13](https://www.biblegateway.com/passage/?search=Hebrews%208%3A10-13&version=ESV)** - For this is the covenant that I will make with the house of Israel after those days, declares the Lord: **I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people.** And <ins>they shall not teach, each one his neighbor and each one his brother, saying, Know the Lord, for they shall all know me, from the least of them to the greatest.</ins> For I will be merciful toward their iniquities, and I will remember their sins no more. In speaking of a new covenant, he makes the first one obsolete. And what is becoming obsolete and growing old is ready to vanish away.
+
+Covenants require faithfulness between both parties, But Jesus is faithful even when we are unfaithful:
+
+> **[II Timothy 2:13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A13&version=ESV)** - if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
+
+We come to know God through Jesus by faith and we are able to move on from dead works and focus more on faith towards God, and serving God now.
 
 > **[Hebrews 6:1](https://www.biblegateway.com/passage/?search=Hebrews%206%3A1&version=ESV)** - Therefore leaving the elementary teaching about the Christ, let us press on to maturity, not laying again a foundation of repentance from dead works and of faith toward God, (ESV)
 
@@ -29195,6 +29329,14 @@ God is not saving Lucifer/Satan/the devil or his demons/devils. They're all goin
 I'm a total believer in the rapture. In fact, I believe that a person can be raptured by faith. I really wouldn't mind being raptured today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-18 Thu&gt;</span></span>. The world lost its luster for me, and that is a good thing actually:
 
 > **[Hebrews 11:5](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A5&version=ESV)** - By faith Enoch was taken up so that he should not see death, and he was not found, because God had taken him. Now before he was taken he was commended as having pleased God. (ESV)
+
+Jesus is coming a second time to save those who are eagerly waiting for Him. AMEN!!:
+
+> **[Hebrews 9:27-28](https://www.biblegateway.com/passage/?search=Hebrews%209%3A27-28&version=ESV)** - And just as it is appointed for man to die once, and after that comes judgment, so Christ, having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him. (ESV)
+
+And Jesus' enemies will be made a footstool for His feet:
+
+> **[Hebrews 10:10-13](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A10-13&version=ESV)** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. And every priest stands daily at his service, offering repeatedly the same sacrifices, which can never take away sins. But when Christ had offered for all time a single sacrifice for sins, he sat down at the right hand of God, waiting from that time until his enemies should be made a footstool for his feet. (ESV)
 
 
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
