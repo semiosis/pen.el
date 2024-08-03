@@ -23,6 +23,8 @@ Christ is reigning until all things are placed into subjection under Him. We mus
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
+> **[Daniel 7:13-14](https://www.biblegateway.com/passage/?search=Daniel%207%3A13-14&version=ESV)** - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that **all peoples, nations, and languages should serve him;** his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)
+
 I'm trying to side with Jesus over issues regarding the evil which is still present in the world and "hate the sin, not the sinner", and starting by first taking a look at my own problems but by no means endorsing sinful things even things I consider I do which are sinful, I don't endorse them for myself either:
 
 > **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
@@ -342,7 +344,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgc6e4d76) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org3c55594) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -6344,7 +6346,7 @@ I am confident also that if we hold firm to obedience in Jesus keeping and obeyi
 
 > **[Matthew 5:48](https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV)** - Therefore you are to be perfect, as your heavenly Father is perfect.
 
-This is talking about fellow human beings. I.e. we still have enemies (that is, satan):
+This is talking about fellow human beings. i.e. we still have enemies (that is, satan and satan's servants):
 
 > **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you? Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
 
@@ -9113,6 +9115,8 @@ God is our life. We must love, **obey**, and hold fast to Him. Faith is not with
 God is our life because Christ is our life. Our life is hidden with Christ in God:
 
 > **[Colossians 3:1-4](https://www.biblegateway.com/passage/?search=Colossians%203%3A1-4&version=ESV)** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. (ESV)
+
+> **[I John 5:12](https://www.biblegateway.com/passage/?search=1%20John%205%3A12&version=ESV)** - Whoever has the Son has life; whoever does not have the Son of God does not have life. (ESV)
 
 -   **[youtube.com: Hope and the Fruit of Love @time: 2 min 0 sec](https://youtube.com/watch?v=bZ18ECfRKJc&t=120):** Since you have in obedience to the truth
     purified your souls for a sincere love
@@ -13440,6 +13444,10 @@ This is about being willing to work or unwilling. I'm definitely willing to work
 Being **willing** to work is important as we are not supposed to be a burden on others. 
 
 > **[Galatians 6:2-6](https://www.biblegateway.com/passage/?search=Galatians%206%3A2-6&version=ESV)** - **Bear one another's burdens**, and so fulfill the law of Christ. For if anyone thinks he is something, when he is nothing, he deceives himself. But <ins>let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor.</ins> **For each will have to bear his own load.** One who is taught the word **must share** all good things with the one who teaches. (ESV)
+
+Accepting support is OK when in need, but we should still seek to bear our own load:
+
+> **[II Corinthians 11:7-9](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A7-9&version=ESV)** - Or did I commit a sin in humbling myself so that you might be exalted, because I preached God's gospel to you free of charge? I robbed other churches by accepting support from them in order to serve you. And when I was with you and was in need, I did not burden anyone, for **the brothers who came from Macedonia supplied my need. So I refrained and will refrain from burdening you in any way.** (ESV)
 
 I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that puts having a job before having a wife I consider to be a spirit of prostitution / people trafficking. This antichrist spirit has also been attacking my family and manifesting within the household.
 
@@ -20788,7 +20796,11 @@ It's not of my own interpretation though:
 # Employment
 
 
-## Kingdom work **is** work
+## Kingdom work **is** work, but kingdom workers should still seek to carry their own load and accept support only when in need of support
+
+Accepting support is OK when in need, but we should still seek to bear our own load:
+
+> **[II Corinthians 11:7-9](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A7-9&version=ESV)** - Or did I commit a sin in humbling myself so that you might be exalted, because I preached God's gospel to you free of charge? I robbed other churches by accepting support from them in order to serve you. And when I was with you and was in need, I did not burden anyone, for **the brothers who came from Macedonia supplied my need. So I refrained and will refrain from burdening you in any way.** (ESV)
 
 Jesus wants more kingdom labourers:
 
@@ -22353,6 +22365,39 @@ For example, if Jesus sends you as an ambassador to some pagans and they asked y
 
 Therefore, a person should do what is out of love and faith for the LORD, based on their knowledge of the law,
 their faithfulness to God and their conviction.
+
+
+### We do not seek to change God's law
+
+Fellow heirs with Christ are still in subjection to Christ. Fellow heirs with Christ have Christ as their King and Lord and Saviour and God and Jehovah as their God.
+
+Christ is reigning until all things are placed into subjection under Him and then Jesus will also be subjected to Father God. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+
+> **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. **When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.** (ESV)
+
+The prophet Daniel had a vision of kings making war against God, and the saints siding with God:
+
+> **[Daniel 7:1-3](https://www.biblegateway.com/passage/?search=Daniel%207%3A1-3&version=ESV)** - In the first year of Belshazzar king of Babylon, Daniel saw a dream and visions of his head as he lay in his bed. Then he wrote down the dream and told the sum of the matter. Daniel declared, I saw in my vision by night, and behold, the four winds of heaven were stirring up the great sea. And four great beasts came up out of the sea, different from one another. (ESV)
+
+> **[Daniel 7:4-7](https://www.biblegateway.com/passage/?search=Daniel%207%3A4-7&version=ESV)** - The first was like a lion and had eagles' wings. Then as I looked its wings were plucked off, and it was lifted up from the ground and made to stand on two feet like a man, and the mind of a man was given to it. And behold, another beast, a second one, like a bear. It was raised up on one side. It had three ribs in its mouth between its teeth; and it was told, Arise, devour much flesh. After this I looked, and behold, another, like a leopard, with four wings of a bird on its back. And the beast had four heads, and dominion was given to it. After this I saw in the night visions, and behold, a fourth beast, terrifying and dreadful and exceedingly strong. It had great iron teeth; it devoured and broke in pieces and stamped what was left with its feet. <ins>It was different from all the beasts that were before it, and it had ten horns</ins>. (ESV)
+
+These four great beasts are four kings who shall arise out of the earth:
+
+> **[Daniel 7:1-8](https://www.biblegateway.com/passage/?search=Daniel%207%3A1-8&version=ESV)** - In the first year of Belshazzar king of Babylon, Daniel saw a dream and visions of his head as he lay in his bed. Then he wrote down the dream and told the sum of the matter. Daniel declared, I saw in my vision by night, and behold, the four winds of heaven were stirring up the great sea. And four great beasts came up out of the sea, different from one another. <ins>The first was like a lion and had eagles' wings. Then as I looked its wings were plucked off, and it was lifted up from the ground and made to stand on two feet like a man, and the mind of a man was given to it.</ins> And behold, another beast, a <ins>second one, like a bear. It was raised up on one side. It had three ribs in its mouth between its teeth; and it was told, Arise, devour much flesh.</ins> After this I looked, and behold, <ins>another, like a leopard, with four wings of a bird on its back. And the beast had four heads, and dominion was given to it.</ins> After this I saw in the night visions, and behold, a fourth beast, terrifying and dreadful and exceedingly strong. It had great iron teeth; it devoured and broke in pieces and stamped what was left with its feet. It was different from all the beasts that were before it, and it had ten horns. I considered the horns, and behold, there came up among them another horn, a little one, before which three of the first horns were plucked up by the roots. And behold, in this horn were eyes like the eyes of a man, and a mouth speaking great things. (ESV)
+
+> **[Daniel 7:9-12](https://www.biblegateway.com/passage/?search=Daniel%207%3A9-12&version=ESV)** - As I looked, thrones were placed, and the Ancient of days took his seat; his clothing was white as snow, and the hair of his head like pure wool; his throne was fiery flames; its wheels were burning fire. A stream of fire issued and came out from before him; a thousand thousands served him, and ten thousand times ten thousand stood before him; the court sat in judgment, and the books were opened. I looked then because of the sound of the great words that the horn was speaking. And as I looked, the beast was killed, and its body destroyed and given over to be burned with fire. As for the rest of the beasts, their dominion was taken away, but their lives were prolonged for a season and a time. (ESV)
+
+The saints of the Most High shall receive the kingdom and possess the kingdom forever, forever and ever:
+
+> **[Daniel 7:13-14](https://www.biblegateway.com/passage/?search=Daniel%207%3A13-14&version=ESV)** - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that **all peoples, nations, and languages should serve him;** his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)
+
+> **[Daniel 7:15-18](https://www.biblegateway.com/passage/?search=Daniel%207%3A15-18&version=ESV)** - As for me, Daniel, my spirit within me was anxious, and the visions of my head alarmed me. I approached one of those who stood there and asked him the truth concerning all this. So he told me and made known to me the interpretation of the things. **These four great beasts are four kings who shall arise out of the earth. But the saints of the Most High shall receive the kingdom and possess the kingdom forever, forever and ever.** (ESV)
+
+> **[Daniel 7:19-24](https://www.biblegateway.com/passage/?search=Daniel%207%3A19-24&version=ESV)** - Then I desired to know the truth about the fourth beast, which was different from all the rest, exceedingly terrifying, with its teeth of iron and claws of bronze, and which devoured and broke in pieces and stamped what was left with its feet, and about the ten horns that were on its head, and the other horn that came up and before which three of them fell, the horn that had eyes and a mouth that spoke great things, and that seemed greater than its companions. As I looked, this horn made war with the saints and prevailed over them, until the Ancient of Days came, and judgment was given for the saints of the Most High, and the time came when the saints possessed the kingdom. Thus he said: As for the fourth beast, there shall be a fourth kingdom on earth, which shall be different from all the kingdoms, and it shall devour the whole earth, and trample it down, and break it to pieces. As for the ten horns, out of this kingdom ten kings shall arise, and another shall arise after them; he shall be different from the former ones, and shall put down three kings. (ESV)
+
+> **[Daniel 7:25-26](https://www.biblegateway.com/passage/?search=Daniel%207%3A25-26&version=ESV)** - He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to change the times and the law; and they shall be given into his hand for a time, times, and half a time. But the court shall sit in judgment, and his dominion shall be taken away, to be consumed and destroyed to the end. (ESV)
+
+> **[Daniel 7:27-28](https://www.biblegateway.com/passage/?search=Daniel%207%3A27-28&version=ESV)** - And the kingdom and the dominion and the greatness of the kingdoms under the whole heaven shall be given to the people of the saints of the Most High; their kingdom shall be an everlasting kingdom, and all dominions shall serve and obey them. Here is the end of the matter. As for me, Daniel, my thoughts greatly alarmed me, and my color changed, but I kept the matter in my heart. (ESV)
 
 
 ## My experience of being born-again, and reasoning surrounding justification
@@ -26737,6 +26782,8 @@ This quite clearly shows that Jesus Christ is Almighty God:
 
 > **[Zechariah 12:10](https://www.biblegateway.com/passage/?search=Zechariah%2012%3A10&version=ESV)** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
 
+> **[John 10:28](https://www.biblegateway.com/passage/?search=John%2010%3A28&version=ESV)** - I give them eternal life, and they will never perish, and no one will snatch them out of my hand. (ESV)
+
 The Father abides in Jesus:
 
 > **[John 14:10](https://www.biblegateway.com/passage/?search=John%2014%3A10&version=NASB)** - Do you not believe that I am in the Father, and the Father is in Me? The words that I say to you I do not speak on My own initiative, but the Father abiding in Me does His works. (NASB)
@@ -29383,6 +29430,8 @@ Fellow heirs with Christ are still in subjection to Christ. Fellow heirs with Ch
 Christ is reigning until all things are placed into subjection under Him and then Jesus will also be subjected to Father God. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. **When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.** (ESV)
+
+> **[Daniel 7:13-14](https://www.biblegateway.com/passage/?search=Daniel%207%3A13-14&version=ESV)** - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that **all peoples, nations, and languages should serve him;** his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)
 
 
 # AMEN!!
