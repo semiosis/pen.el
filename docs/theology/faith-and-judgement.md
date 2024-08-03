@@ -223,7 +223,7 @@ God is our life because Christ is our life. Our life is hidden with Christ in Go
 
 > **[Colossians 3:1-4](https://www.biblegateway.com/passage/?search=Colossians%203%3A1-4&version=ESV)** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. (ESV)
 
-Obey God, obey Jesus. This doesn't say that obeying the 10 commandments (to love God and your neighbour in truth from the heart is the way to do this) is not important, but it does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
+Obey God, obey Jesus. This doesn't say that obeying the 10 commandments is not important. To love God and your neighbour in truth from the heart is the way to do this. But **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
 
 > **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, **You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.**
 
@@ -340,7 +340,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7090bf9) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org42cc85e) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -5429,7 +5429,7 @@ We don't try to save our worldly life. We seek the Kingdom of God:
 
 AMEN!!
 
-Obey God, obey Jesus. This doesn't say that obeying the 10 commandments (to love God and your neighbour in truth from the heart is the way to do this) is not important, but it does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
+Obey God, obey Jesus. This doesn't say that obeying the 10 commandments is not important. To love God and your neighbour in truth from the heart is the way to do this. But **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
 
 > **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, **You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.**
 
