@@ -11,8 +11,12 @@ tidy_youtube_links() {
     done
 }
 
+urlencode_dash() {
+    sed 's=-=%2D=g'
+}
+
 test "$#" -gt 0 && last_arg="${@}"
-id="$(p "$last_arg" | sed 's/.*v=//' | sed 's=.*/==')"
+id="$(p "$last_arg" | sed 's/.*v=//' | sed 's=.*/==' | urlencode_dash)"
 
 test "$#" -gt 0 && set -- "${@:1:$(($#-1))}" # shift last arg
 set -- "$@" "$id"

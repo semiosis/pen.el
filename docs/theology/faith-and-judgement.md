@@ -332,7 +332,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5a9f085) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org28f61f4) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3628,6 +3628,18 @@ I think Jesus calls us to pursue perfection through following Him, and we should
 
 > **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and you in me, that <ins>they may become perfectly one,</ins> so that the world may know that you sent me and loved them even as you loved me.
 
+In God's unconditional love He has paid the price for us to be saved from sin and death and hell:
+
+> **[I John 4:9-12](https://www.biblegateway.com/passage/?search=1%20John%204%3A9-12&version=ESV)** - In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
+
+We must accept God's love and forgiveness and keep Jesus' word, His commandments, and God's love will be perfected in us and He and Father God will make Their abode in us. There is a conditional aspect of God's unconditional love for us:
+
+> **[John 14:23-24](https://www.biblegateway.com/passage/?search=John%2014%3A23-24&version=ESV)** - Jesus answered him, If anyone loves me, he will keep my word, and my Father will love him, and we will come to him and make our home with him. Whoever does not love me does not keep my words. And the word that you hear is not mine but the Father's who sent me. (ESV)
+
+> **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+> **[I John 4:15-19](https://www.biblegateway.com/passage/?search=1%20John%204%3A15-19&version=ESV)** - Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love. We love because he first loved us. (ESV)
+
 We aim for perfection / to be made complete / full restoration:
 
 > **[II Corinthians 13:11](https://www.biblegateway.com/passage/?search=2%20Corinthians%2013%3A11&version=ESV)** - Finally, brethren, farewell. **Be perfect**, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you. (KJV)
@@ -3638,6 +3650,10 @@ Paul presses on to try to live like Christ, and his rational is that Jesus made 
 and Paul loves Jesus back, so he wants to be obedient out of love for Jesus (I'm convinced that's the motivation). He wants to be with Jesus.
 
 > **[Philippians 3:9-13](https://www.biblegateway.com/passage/?search=Philippians%203%3A9-13&version=ESV)** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
+
+We are transformed into Christ's image from one degree of glory to another:
+
+> **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from **the Lord who is the Spirit.** (ESV)
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
@@ -4196,7 +4212,7 @@ I agree whole heartedly with this guy:
 
 I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian:
 
-> **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit. (ESV)
+> **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from **the Lord who is the Spirit.** (ESV)
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
@@ -6564,6 +6580,10 @@ I affirm the [doctrine of the Trinity](https://www.desiringgod.org/articles/what
 > **[Isaiah 45:21-22](https://www.biblegateway.com/passage/?search=Isaiah%2045%3A21-22&version=ESV)** - Declare and present your case; let them take counsel together! Who told this long ago? Who declared it of old? Was it not I, the LORD? And there is no other god besides me, a righteous God and a Savior; there is none besides me. Turn to me and be saved, all the ends of the earth! For I am God, and there is no other. (ESV)
 
 > **[Isaiah 44:6-8](https://www.biblegateway.com/passage/?search=Isaiah%2044%3A6-8&version=ESV)** - Thus says the LORD, the King of Israel and his Redeemer, the LORD of hosts: I am the first and I am the last; besides me there is no god. Who is like me? Let him proclaim it. Let him declare and set it before me, since I appointed an ancient people. Let them declare what is to come, and what will happen. Fear not, nor be afraid; have I not told you from of old and declared it? And you are my witnesses! Is there a God besides me? There is no Rock; I know not any. (ESV)
+
+Holy Spirit is Lord:
+
+> **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from **the Lord who is the Spirit.** (ESV)
 
 Jesus was with Father God in the beginning:
 
@@ -10152,7 +10172,7 @@ I affirm that even after regeneration and being healed, corruption has remained 
 
 But for the person born of God, they have died to sin, it no longer has a legal hold over them, they cannot keep on doing it, they absolutely hate the sin, we are being sanctified.
 
-> **Romans 8:1-4** - There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, **he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.** (ESV)
+> **[Romans 8:1-4](https://www.biblegateway.com/passage/?search=Romans%208%3A1-4&version=ESV)** - There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. For God has done what the law, weakened by the flesh, could not do. By sending his own Son in the likeness of sinful flesh and for sin, **he condemned sin in the flesh, in order that the righteous requirement of the law might be fulfilled in us, who walk not according to the flesh but according to the Spirit.** (ESV)
 
 > **[I John 1:9](https://www.biblegateway.com/passage/?search=1%20John%201%3A9&version=ESV)** - If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. (ESV)
 
@@ -19694,9 +19714,13 @@ I still hold no grudges, but still going through sanctification, which I guess m
 
 If the spirit spouse stuff is actually related to leftover sin in the body/mind/soul-realm, then I'm this serious at this point with my reasoning, because I'm serious about sanctification, and I'm serious about living:
 
-> **[I Corinthians 5:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A5&version=ESV)** - you are to deliver this man to Satan for the destruction of the flesh, so that his spirit may be saved in the day of the Lord. (ESV)
+[youtube.com: Free from Judgment, Fighting Sin, Full Assurance](https://www.youtube.com/watch?v=M9EbSw8O6uc)
+
+> **[Romans 7:22-8](https://www.biblegateway.com/passage/?search=Romans%207%3A22-8&version=ESV):2** - For I delight in the law of God, in my inner being, but I see in my members another law waging war against the law of my mind and making me captive to the law of sin that dwells in my members. Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
 
 > **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
+
+> **[I Corinthians 5:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A5&version=ESV)** - you are to deliver this man to Satan for the destruction of the flesh, so that his spirit may be saved in the day of the Lord. (ESV)
 
 -   **[Quote by John Piper](https://youtu.be/92JXBog4DtM?t=1595):** "You can't cast one devil out and leave the cravings of your heart empty - seven will return. You must fill your life with God, the glory and excellency of God."
 

@@ -5,6 +5,13 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+# Sometimes, we need to also encode ASCII characters
+# see e:youtube-get-subtitles
+# https://www.w3schools.com/tags/ref_urlencode.ASP
+urlencode_dash() {
+    sed 's=-=%2D=g'
+}
+
 # alt -q urlencode &>/dev/null || agi gridsite-clients &>/dev/null
 
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
