@@ -27,6 +27,8 @@ I'm trying to side with Jesus over issues regarding the evil which is still pres
 
 > **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
 
+-   **[Quote from Mari Mari Emmanuel](https://youtube.com/watch?v=11z22HR1KHo&t=421):** So fear nothing, love everyone, but be firm when it comes to speaking the truth. Truth cannot be compromised. It cannot be sold.
+
 -   **Amen:** [youtube.com: The Holy Spirit took over my preaching in Las Vegas and left me in awe and trembling](https://www.youtube.com/watch?v=RgAjAwDACMU)
 
 > I agree whole heartedly with Keith Green here:
@@ -340,7 +342,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org42cc85e) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb47c3ef) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3223,13 +3225,25 @@ Now with regards to the way people should (or shouldn't) act:
 
 -   **[Quote by Tim Keller](https://youtu.be/SDuXlGSV7l4?t=1174):** Know what the Bible says: Sin is craving something more than God. Sin is making something more important than God. Sin is is living for something more than God. If God is at the periphery of your life, if you're just religious occasionally, if God [is] sort of on the outskirts of your life, that is sin. That's the essence of sin.
 
-Bad or anti-christ-like behaviour would be making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same material standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult (think of the Romans soldier offering vinegar to Jesus instead of water while Jesus was saying, "I thirst.").
+Bad or unchrist-like behaviour might be making money or some other thing more important than God to "get ahead" materially, placing burdens on others to fulfill the same materialistic/worldly standard, especially on those who have their priorities already in the correct order (they are obeying God, and are keeping their heart clean) and not lifting a finger to help them but actually make things more difficult. What I really mean is, it is the opposite of teaching Christlikeness to force someone to clean up their outward appearance or to meet certain worldly standards when they are in relationship Jesus, spending their time trying to help other people, and the bad outward appearance is a result of sacrificing for others following Jesus - I mean it is anti-christ-like behaviour to try to stop people from following Jesus or punish people for following Jesus.
+
+> **[John 19:28](https://www.biblegateway.com/passage/?search=John%2019%3A28&version=ESV)** - After this, Jesus, knowing that all was now finished, said (to fulfill the Scripture), I thirst. (ESV)
+
+> **[Matthew 23:26](https://www.biblegateway.com/passage/?search=Matthew%2023%3A26&version=ESV)** - You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. (ESV)
+
+Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
 
 > **[Luke 23:36-37](https://www.biblegateway.com/passage/?search=Luke%2023%3A36-37&version=ESV)** - The soldiers also mocked him, coming up and offering him sour wine and saying, If you are the King of the Jews, save yourself! (ESV)
 
-Where Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
-
 > **[Psalms 69:21](https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&version=ESV)** - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)
+
+I still consider that what matters is obedience to God from the heart:
+
+> **[John 8:44](https://www.biblegateway.com/passage/?search=John%208%3A44&version=ESV)** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
+
+> **[Matthew 23:27-28](https://www.biblegateway.com/passage/?search=Matthew%2023%3A27-28&version=ESV)** - Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which outwardly appear beautiful, but within are full of dead people's bones and all uncleanness. So you also outwardly appear righteous to others, but within you are full of hypocrisy and lawlessness. (ESV)
+
+We are also supposed to speak up for the God's Truth. We should affirm sound Christian teaching when it comes to what is sinful. Just because we may not judge others when it comes to something sinful, that doesn't mean that God wont judge us for practicing and affirming something sinful.
 
 It's not loving to make life harder on people by placing higher standards of exterior 'cleanliness' without helping them to achieve it, when in reality the way to achieve it is to clean the inside first:
 
@@ -5661,6 +5675,9 @@ We are freely given mercy that we may freely give mercy to others out of an exis
 I think that believers in Jesus Christ, those that have faith in Jesus, arrive at doing Christ's love, fulfilling Christ's law,
 while affirming a certain standard of judgement to which they are also held accountable, derived from the original standard being God's Law, and
 affirming the precepts of God are a good thing where the most important matters are justice, mercy and faithfulness and Jesus' blood sanctifies us.
+We are also supposed to speak up for the God's Truth. We should affirm sound Christian teaching when it comes to what is sinful. Just because we may not judge others when it comes to something sinful, that doesn't mean that God wont judge us for practicing and affirming something sinful.
+
+-   **[Quote from Mari Mari Emmanuel](https://youtube.com/watch?v=11z22HR1KHo&t=421):** So fear nothing, love everyone, but be firm when it comes to speaking the truth. Truth cannot be compromised. &#x2026; The one who is all love, He was sharper than a sword; When it came to holding the Truth, fighting for the Truth, He stood firm, never gave way, never compromised. Now that is love. If you truly love someone, wouldn't you want them to be living in the Truth? If you truly love the person, you will tell them, "This is right&#x2026; This is wrong&#x2026;"
 
 -   **Amen:** [youtube.com: The Holy Spirit took over my preaching in Las Vegas and left me in awe and trembling](https://www.youtube.com/watch?v=RgAjAwDACMU)
 
@@ -6327,7 +6344,23 @@ I am confident also that if we hold firm to obedience in Jesus keeping and obeyi
 
 > **[Matthew 5:48](https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV)** - Therefore you are to be perfect, as your heavenly Father is perfect.
 
+This is talking about fellow human beings. I.e. we still have enemies (that is, satan):
+
 > **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you? Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
+
+Loving all people doesn't mean approving of sin. We should speak the truth:
+
+> **[Acts 24:16](https://www.biblegateway.com/passage/?search=Acts%2024%3A16&version=ESV)** - So I always take pains to have a clear conscience toward both God and man. (ESV)
+
+> **[Romans 12:20](https://www.biblegateway.com/passage/?search=Romans%2012%3A20&version=ESV)** - To the contrary, if your enemy is hungry, feed him; if he is thirsty, give him something to drink; for by so doing you will heap burning coals on his head. (ESV)
+
+We want others to come to the truth:
+
+> **[Acts 26:29](https://www.biblegateway.com/passage/?search=Acts%2026%3A29&version=ESV)** - And Paul said, Whether short or long, I would to God that not only you but also all who hear me this day might become such as I am—except for these chains. (ESV)
+
+-   **[Quote from Mari Mari Emmanuel](https://youtube.com/watch?v=11z22HR1KHo&t=421):** So fear nothing, love everyone, but be firm when it comes to speaking the truth. Truth cannot be compromised. &#x2026; The one who is all love, He was sharper than a sword; When it came to holding the Truth, fighting for the Truth, He stood firm, never gave way, never compromised. Now that is love. If you truly love someone, wouldn't you want them to be living in the Truth? If you truly love the person, you will tell them, "This is right&#x2026; This is wrong&#x2026;"
+
+> **[John 8:44](https://www.biblegateway.com/passage/?search=John%208%3A44&version=ESV)** - You are of your father the devil, and your will is to do your father's desires. He was a murderer from the beginning, and has nothing to do with the truth, because there is no truth in him. When he lies, he speaks out of his own character, for he is a liar and the father of lies. (ESV)
 
 
 ### God will be the judge of who has had faith in Jesus, and who has obeyed Him. I wouldn't take obedience lightly
@@ -20270,6 +20303,10 @@ I personally do not endorse gay marriage. When I have in the past, I repent of t
 That is not to say it is not possible to endorse it yourself (and take the consequences of that) but a person is accountable to God for that act of annulling one of His commandments.
 
 > **[Matthew 5:19](https://www.biblegateway.com/passage/?search=Matthew%205%3A19&version=ESV)** - Therefore whoever relaxes one of the least of these commandments and teaches others to do the same will be called least in the kingdom of heaven, but whoever does them and teaches them will be called great in the kingdom of heaven.
+
+We are also supposed to speak up for the God's Truth. We should affirm sound Christian teaching when it comes to what is sinful. Just because we may not judge others when it comes to something sinful, that doesn't mean that God wont judge us for practicing and affirming something sinful.
+
+-   **[Quote from Mari Mari Emmanuel](https://youtube.com/watch?v=11z22HR1KHo&t=421):** So fear nothing, love everyone, but be firm when it comes to speaking the truth. Truth cannot be compromised. &#x2026; The one who is all love, He was sharper than a sword; When it came to holding the Truth, fighting for the Truth, He stood firm, never gave way, never compromised. Now that is love. If you truly love someone, wouldn't you want them to be living in the Truth? If you truly love the person, you will tell them, "This is right&#x2026; This is wrong&#x2026;"
 
 In the manner in which I judge, I know I will be judged.
 
