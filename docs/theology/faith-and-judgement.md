@@ -219,6 +219,14 @@ God is our life. We must love, **obey**, and hold fast to Him. Faith is not with
 
 > **[Deuteronomy 30:20](https://www.biblegateway.com/passage/?search=Deuteronomy%2030%3A20&version=ESV)** - **loving the LORD your God, obeying his voice and holding fast to him, for <ins>he is your life</ins>** and length of days, that you may dwell in the land that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them. (ESV)
 
+God is our life because Christ is our life. Our life is hidden with Christ in God:
+
+> **[Colossians 3:1-4](https://www.biblegateway.com/passage/?search=Colossians%203%3A1-4&version=ESV)** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. (ESV)
+
+Obey God, obey Jesus. This doesn't say that obeying the 10 commandments (to love God and your neighbour in truth from the heart is the way to do this) is not important, but it does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
+
+> **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, **You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.**
+
 To get to know Jesus, we **must obey** His commandments:
 
 > **[I John 2:3-4](https://www.biblegateway.com/passage/?search=1%20John%202%3A3-4&version=ESV)** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
@@ -235,7 +243,7 @@ Yes, Jesus has set us free, but it's to serve God by serving Christ. We are free
 
 > **[Galatians 5:1](https://www.biblegateway.com/passage/?search=Galatians%205%3A1&version=ESV)** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
 
-Slaves worship idols. Christians obey God, and in obeying God we are free:
+Slaves worship idols. Christians obey God, and in obeying God we are free. We love God and trust God and love Jesus and follow Jesus:
 
 > **[Exodus 20:2-3](https://www.biblegateway.com/passage/?search=Exodus%2020%3A2-3&version=ESV)** - I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before me. (ESV)
 
@@ -332,7 +340,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org28f61f4) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7090bf9) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1251,6 +1259,10 @@ Also being true together with believing Jesus Christ is obeying His commandments
 Their heart is purified through faith, believing in and obeying Jesus, and now they love God and they love the children of God:
 
 > **[I John 4:7-17](https://www.biblegateway.com/passage/?search=1%20John%204%3A7-17&version=ESV)** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So we have come to know and to believe the love that God has for us. God is love, and whoever abides in love abides in God, and God abides in him. *By this is love **perfected** with us*, <ins>so that we may have confidence for the day of judgment</ins>, because **as he is so also are we in this world**. (ESV)
+
+To get close to us we must accept God's love and love God back:
+
+> **[James 4:8](https://www.biblegateway.com/passage/?search=James%204%3A8&version=ESV)** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
 
 In order to know God we must love one another in the way that God has loved us:
 
@@ -5417,9 +5429,9 @@ We don't try to save our worldly life. We seek the Kingdom of God:
 
 AMEN!!
 
-Obey God, obey Jesus:
+Obey God, obey Jesus. This doesn't say that obeying the 10 commandments (to love God and your neighbour in truth from the heart is the way to do this) is not important, but it does say that following Jesus (treasuring Jesus, His words and putting them into practice) is vitally important:
 
-> **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.
+> **[Mark 10:17-21](https://www.biblegateway.com/passage/?search=Mark%2010%3A17-21&version=ESV)** - And as he was setting out on his journey, a man ran up and knelt before him and asked him, Good Teacher, what must I do to inherit eternal life? And Jesus said to him, Why do you call me good? No one is good except God alone. You know the commandments: Do not murder, Do not commit adultery, Do not steal, Do not bear false witness, Do not defraud, Honor your father and mother. And he said to him, Teacher, all these I have kept from my youth. And Jesus, looking at him, loved him, and said to him, **You lack one thing: go, sell all that you have and give to the poor, and you will have treasure in heaven; and come, follow me.**
 
 
 ## God opens the eyes to see the light of the gospel
@@ -8159,7 +8171,7 @@ It's lawful to love:
 
 > **[Luke 6:9-10](https://www.biblegateway.com/passage/?search=Luke%206%3A9-10&version=ESV)** - And Jesus said to them, I ask you, is it lawful on the Sabbath to do good or to do harm, to save life or to destroy it? And after looking around at them all he said to him, Stretch out your hand. And he did so, and his hand was restored. (ESV)
 
-Slaves worship idols. Christians obey God, and in obeying God we are free:
+Slaves worship idols. Christians obey God, and in obeying God we are free. We love God and trust God and love Jesus and follow Jesus:
 
 > **[Exodus 20:2-3](https://www.biblegateway.com/passage/?search=Exodus%2020%3A2-3&version=ESV)** - I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before me. (ESV)
 
@@ -9035,6 +9047,10 @@ Our freedom is so that we might live to God:
 God is our life. We must love, **obey**, and hold fast to Him. Faith is not without obedience, but we are to obey Jesus Christ and to believe in Jesus is to have begun to obey Him:
 
 > **[Deuteronomy 30:20](https://www.biblegateway.com/passage/?search=Deuteronomy%2030%3A20&version=ESV)** - **loving the LORD your God, obeying his voice and holding fast to him, for <ins>he is your life</ins>** and length of days, that you may dwell in the land that the LORD swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them. (ESV)
+
+God is our life because Christ is our life. Our life is hidden with Christ in God:
+
+> **[Colossians 3:1-4](https://www.biblegateway.com/passage/?search=Colossians%203%3A1-4&version=ESV)** - If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. (ESV)
 
 -   **[youtube.com: Hope and the Fruit of Love @time: 2 min 0 sec](https://youtube.com/watch?v=bZ18ECfRKJc&t=120):** Since you have in obedience to the truth
     purified your souls for a sincere love
