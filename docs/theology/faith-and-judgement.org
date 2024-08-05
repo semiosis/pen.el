@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2024-08-04 Sun>
+#+DATE: <2024-08-05 Mon>
 #+KEYWORDS: faith christianity
 
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
@@ -3710,6 +3710,16 @@ After believing in Jesus, we must turn from our wicked ways and serve God:
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV][Luke 6:46-49]]* - Why do you call me Lord, Lord, and not do what I tell you? *Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock*. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+#+END_QUOTE
+
+Jesus is the definitive Son of God. But we may be adopted as sons through faith in Jesus:
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV][John 1:14]]* - And *the Word became flesh* and dwelt among us, and we have seen his glory, glory as of *the only Son from the Father, full of grace and truth.* (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Galatians%203%3A26-29&version=ESV][Galatians 3:26-29]]* - for in Christ Jesus you are all sons of God, through faith. For as many of you as were baptized into Christ have put on Christ. There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female, for you are all one in Christ Jesus. And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
 #+END_QUOTE
 
 Jesus has literally taught people that that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. This shows that obedience to Jesus is just part of having faith in Jesus:
@@ -8586,10 +8596,20 @@ I am confident also that if we hold firm to obedience in Jesus keeping and obeyi
   *[[https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV][Matthew 5:48]]* - Therefore you are to be perfect, as your heavenly Father is perfect.
 #+END_QUOTE
 
-This is talking about fellow human beings. i.e. we still have enemies (that is, satan and satan's servants):
+This is talking about loving fellow human beings:
 
 #+BEGIN_QUOTE
   *Didache 1* - ... Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you? Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. ...
+#+END_QUOTE
+
+We still have enemies (that is, the forces of evil, satan and satan's demons and his fallen angels, principalities, powers etc.):
+
+#+BEGIN_QUOTE
+  *I Peter 5:8* - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Ephesians%206%3A12&version=ESV][Ephesians 6:12]]* - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
 #+END_QUOTE
 
 Loving all people doesn't mean approving of sin. We should speak the truth:
@@ -8807,6 +8827,14 @@ I believe there is only one good shepherd, and that is Jesus Christ, Immanuel (G
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%2010%3A14-15&version=ESV][John 10:14-15]]* - _I am the good shepherd._ I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24-25&version=ESV][I Peter 2:24-25]]* - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. For you were straying like sheep, but have now returned to the Shepherd and Overseer of your souls. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Hebrews%2013%3A20-21&version=ESV][Hebrews 13:20-21]]* - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, equip you with everything good that you may do his will, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -14938,6 +14966,26 @@ Jesus judges on deeds and on words (possibly on the way you judge others, the sa
 #+END_QUOTE
 
 #+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A10&version=ESV][Jeremiah 17:10]]* - I the LORD (*[[https://biblehub.com/interlinear/jeremiah/17-10.htm][Yahweh]]*) search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  3068 [e]
+  Yah·weh
+  יְהוָ֛ה
+  Yahweh
+  N‑proper‑ms
+#+END_SRC
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV][John 8:42]]* - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV][Revelation of John 3:21]]* - The one who conquers, I will grant him to sit with me on my throne, as *I also conquered and sat down with my Father on his throne.* (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Matthew%2025%3A21&version=ESV][Matthew 25:21]]* - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.
 #+END_QUOTE
 
@@ -17658,6 +17706,7 @@ These do not contradict:
   - *[[https://www.biblegateway.com/passage/?search=1%20John%205%3A6&version=ESV][I John 5:6]]* - This is he who came by water and blood—Jesus Christ; not by the water only but by the water and the blood. And the Spirit is the one who testifies, because the Spirit is the truth. (ESV)
 - *Jesus is God*
   - *[[https://www.biblegateway.com/passage/?search=Isaiah%209%3A6&version=ESV][Isaiah 9:6]]* - For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. (ESV)
+  - [[https://www.thegospelcoalition.org/article/how-can-jesus-be-our-everlasting-father/][thegospelcoalition.org: How Can Jesus Be Our Everlasting Father?]]
   - *[[https://www.biblegateway.com/passage/?search=Jeremiah%2032%3A17-18&version=ESV][Jeremiah 32:17-18]]* - Ah, Lord GOD! It is you who has made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you. You show steadfast love to thousands, but you repay the guilt of fathers to their children after them, O great and mighty God, whose name is the LORD of hosts, (ESV)
 
 #+BEGIN_QUOTE
@@ -23509,6 +23558,10 @@ We must overcome the evil one:
   *[[https://www.biblegateway.com/passage/?search=1%20John%202%3A13-14&version=ESV][I John 2:13-14]]* - I am writing to you, fathers, because you know him who is from the beginning. I am writing to you, young men, because you have overcome the evil one. I write to you, children, because you know the Father. I write to you, fathers, because you know him who is from the beginning. I write to you, young men, because you are strong, and the word of God abides in you, and you have overcome the evil one. (ESV)
 #+END_QUOTE
 
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A12&version=ESV][Revelation of John 3:12]]* - The one who conquers, I will make him a pillar in the temple of my God. Never shall he go out of it, and I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down from my God out of heaven, and my own new name. (ESV)
+#+END_QUOTE
+
 The gospel of the Kingdom of God (God's reign on earth):
 
 #+BEGIN_QUOTE
@@ -24854,7 +24907,7 @@ Jesus still refers to Father God as His God:
 I think this really clears things up a little bit:
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV][Revelation of John 3:21]]* - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV][Revelation of John 3:21]]* - The one who conquers, I will grant him to sit with me on my throne, as *I also conquered and sat down with my Father on his throne.* (ESV)
 #+END_QUOTE
 
 We serve the Most High God, Jehovah and Jesus Christ who He has sent:
@@ -34671,7 +34724,7 @@ Jesus still refers to Father God as His God:
 I think this really clears things up a little bit:
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV][Revelation of John 3:21]]* - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV][Revelation of John 3:21]]* - The one who conquers, I will grant him to sit with me on my throne, as *I also conquered and sat down with my Father on his throne.* (ESV)
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -37877,6 +37930,8 @@ There was an incredible amount of resistance from other people to following Jesu
 #+END_QUOTE
 
 Likewise, there was also a lot of resistance, spiritually, to repenting from sin.
+
+[[https://youtube.com/watch?v=N-UhdGA0Fis&t=466][youtube.com: The Good Shepard | His sheep |  Bishop Mar Mari Emmanuel @time: 7 min 46 sec]]
 
 *** I had to humble myself and repent
 I had to acknowledge certain beliefs and behaviour in my life was not what God's will was for me, and turn away from the bad beliefs and behaviour,
