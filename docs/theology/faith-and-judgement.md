@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1269958) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf6039d7) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1873,8 +1873,6 @@ We must continue in our faith. We must continue to believe Jesus and trust in Je
 I believe that we are saved not because of our own merit, but, still, obedience to the Gospel leads to righteousness which leads to salvation:
 
 > **[Hebrews 5:9](https://www.biblegateway.com/passage/?search=Hebrews%205%3A9&version=ESV)** - And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
-
-'
 
 > **[Acts 5:32](https://www.biblegateway.com/passage/?search=Acts%205%3A32&version=ESV)** - And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him. (ESV)
 
@@ -7850,12 +7848,62 @@ We are ransommed by the blood of Jesus and the blood of Jesus continues to clean
 
 > **[I John 1:6-7](https://www.biblegateway.com/passage/?search=1%20John%201%3A6-7&version=ESV)** - If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
 
+> **[Revelation of John 7:14](https://www.biblegateway.com/passage/?search=Revelation%207%3A14&version=ESV)** - I said to him, Sir, you know. And he said to me, These are the ones coming out of the great tribulation. They have washed their robes and made them white in the blood of the Lamb. (ESV)
+
 
 ### Everyone needs saving
 
 > **[Romans 3:1-19](https://www.biblegateway.com/passage/?search=Romans%203%3A1-19&version=ESV)** - Then what advantage has the Jew? Or what is the value of circumcision? Much in every way. To begin with, the Jews were entrusted with the oracles of God. What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! **Let God be true though every one were a liar**, as it is written, That you may be justified in your words, and prevail when you are judged. But if our unrighteousness serves to show the righteousness of God, what shall we say? That God is unrighteous to inflict wrath on us? (I speak in a human way.) By no means! For then how could God judge the world? But if through my lie God's truth abounds to his glory, why am I still being condemned as a sinner? And why not do evil that good may come?—as some people slanderously charge us with saying. Their condemnation is just. What then? Are we Jews any better off? No, not at all. For we have already charged that **all, both Jews and Greeks, are under sin**, as it is written: **None is righteous, no, not one**; no one understands; no one seeks for God. All have turned aside; together they have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to deceive. The venom of asps is under their lips. Their mouth is full of curses and bitterness. Their feet are swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no fear of God before their eyes. Now we know that **whatever the law says it speaks to those who are under the law, so that every mouth may be stopped, and the whole world may be held accountable to God.** (ESV)
 
 > **[Romans 3:20](https://www.biblegateway.com/passage/?search=Romans%203%3A20&version=ESV)** - For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin. (ESV)
+
+We are saved from this crooked generation:
+
+> **[Acts 2:40](https://www.biblegateway.com/passage/?search=Acts%202%3A40&version=ESV)** - And with many other words he bore witness and continued to exhort them, saying, **Save yourselves from this crooked generation.** (ESV)
+
+> **[Zephaniah 3:17](https://www.biblegateway.com/passage/?search=Zephaniah%203%3A17&version=ESV)** - The LORD your God is in your midst, a mighty one who will save; he will rejoice over you with gladness; he will quiet you by his love; he will exult over you with loud singing. (ESV)
+
+God is our deliverer from this generation (Consider if you were stuck in Sodom and wanted to escape - God can make that happen. God can pull a person out of the sinful generation):
+
+> **[Psalms 18:1-2](https://www.biblegateway.com/passage/?search=Psalms%2018%3A1-2&version=ESV)** - I love you, O LORD, my strength. To the choirmaster. A Psalm of David, the servant of the LORD, who addressed the words of this song to the LORD on the day when the LORD rescued him from the hand of all his enemies, and from the hand of Saul. He said: The LORD is my rock and my fortress and my deliverer, my God, my rock, in whom I take refuge, my shield, and the horn of my salvation, my stronghold. (ESV)
+
+Jesus picks us out and purifies us so we are set apart for His own possession who are zealous for good works. Jesus rescues us from the crooked generation:
+
+> **[Titus 2:14](https://www.biblegateway.com/passage/?search=Titus%202%3A14&version=ESV)** - who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+
+Jesus sets us free by His Spirit in us:
+
+> **[Galatians 5:1](https://www.biblegateway.com/passage/?search=Galatians%205%3A1&version=ESV)** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
+
+> **[I John 4:4](https://www.biblegateway.com/passage/?search=1%20John%204%3A4&version=ESV)** - Little children, you are from God and have overcome them, for he who is in you is greater than he who is in the world. (ESV)
+
+Jesus freely gifts His Spirit to the one who cries out to Him to be saved and wants to be saved:
+
+> **[Psalms 34:17-18](https://www.biblegateway.com/passage/?search=Psalms%2034%3A17-18&version=ESV)** - When the righteous cry for help, the LORD hears and delivers them out of all their troubles. The LORD is near to the brokenhearted and saves the crushed in spirit. (ESV)
+
+Our sins are blotted out so that we can return to God:
+
+> **[Isaiah 44:22](https://www.biblegateway.com/passage/?search=Isaiah%2044%3A22&version=ESV)** - I have blotted out your transgressions like a cloud and your sins like mist; return to me, for I have redeemed you. (ESV)
+
+We are zealous to do good works, Jesus having redeemed us and given us His Spirit, but we resist coming under condemnation from those who try to make us feel as though we must do them in order to be saved, when we have already been saved. Now repenting from sin is a little bit different. We are zealous to do good works, and we also want to repent from sin, and stop committing bad deeds:
+
+> **[Romans 8:1-2](https://www.biblegateway.com/passage/?search=Romans%208%3A1-2&version=ESV)** - There is therefore now no condemnation for those who are in Christ Jesus. For the law of the Spirit of life has set you free in Christ Jesus from the law of sin and death. (ESV)
+
+> **[Psalms 34:19](https://www.biblegateway.com/passage/?search=Psalms%2034%3A19&version=ESV)** - Many are the afflictions of the righteous, but the LORD delivers him out of them all. (ESV)
+
+Our sins were paid for by Jesus' death. Jesus rose from the dead:
+
+> **[I Corinthians 15:1-5](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-5&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve. (ESV)
+
+Jesus went to the place of the dead so people who had died (those who Paul is referring to here) may also be saved. Also, it seems that the rapture doctrine was **made known** from a **word from the Lord**:
+
+> **[I Thessalonians 4:14-17](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A14-17&version=ESV)** - For **since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.** For this **we declare to you by a word from the Lord,** that <ins>we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep. For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord.</ins> (ESV)
+
+Jesus made me born again and I'm a new creation. Now we wait for ultimate salvation:
+
+> **[I Thessalonians 5:1-10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A1-10&version=ESV)** - Now concerning the times and the seasons, brothers, you have no need to have anything written to you. For you yourselves are fully aware that **the day of the Lord will come like a thief in the night.** While people are saying, There is peace and security, then sudden destruction will come upon them as labor pains come upon a pregnant woman, and they will not escape. But you are not in darkness, brothers, for that day to surprise you like a thief. For you are all children of light, children of the day. We are not of the night or of the darkness. So then let us not sleep, as others do, but let us keep awake and be sober. For those who sleep, sleep at night, and those who get drunk, are drunk at night. But **since we belong to the day, let us be sober, having put on the breastplate of faith and love, and for a helmet the hope of salvation. For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ, who died for us so that whether we are awake or asleep we might live with him.** (ESV)
+
+-   **Video:** [youtube.com: Something HUGE Is Coming!](https://www.youtube.com/watch?v=EUjktz9zLXk)
 
 
 ### Whoever makes an appeal to God, calls upon His name will be saved
@@ -9482,6 +9530,10 @@ I certainly affirm that Jesus will return to save those waiting for Him, and I c
 
 > **[Hebrews 9:27-28](https://www.biblegateway.com/passage/?search=Hebrews%209%3A27-28&version=ESV)** - And just as **it is appointed for man to die once, and after that comes judgment**, so Christ, <ins>having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him.</ins> (ESV)
 
+Jesus went to the place of the dead so people who had died (those who Paul is referring to here) may also be saved. Also, it seems that the rapture doctrine was **made known** from a **word from the Lord**:
+
+> **[I Thessalonians 4:14-17](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A14-17&version=ESV)** - For **since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.** For this **we declare to you by a word from the Lord,** that <ins>we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep. For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord.</ins> (ESV)
+
 Ultimately, we are waiting for incorruptible bodies, and I totally believe in rapture and ultimately a completely new heavens and earth (not just a renewal, although **I do believe God is still taking care of and reigning on the earth**), so I think that whatever Paul the Apostle is referring to here, *well I have my speculatinons*, is something more imminent, and perhaps more to do with **God's kingdom work on the earth**, but I still hold the eschatological view that there is ultimately an entirely new heavens and earth without any corruption:
 
 > **[I Corinthians 7:29-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A29-31&version=ESV)** - This is what I mean, brothers: the appointed time has grown very short. From now on, let those who have wives live as though they had none, and those who mourn as though they were not mourning, and those who rejoice as though they were not rejoicing, and those who buy as though they had no goods, and those who deal with the world as though they had no dealings with it. For the present form of this world is passing away. (ESV)
@@ -11024,6 +11076,24 @@ We are freed from, for example, making the worries of the world our first though
 We **have been** ransomed from our futile ways, so that our ways may change, and we love God because He loved us first. Therefore, be holy! Obey God:
 
 > **[I Peter 1:16-22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A16-22&version=ESV)** - since it is written, **You shall be holy, for I am holy**. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that **you were ransomed from the futile ways** inherited from your forefathers, not with perishable things such as silver or gold, but **with the precious blood of Christ, like that of a lamb without blemish or spot**. He was foreknown before the foundation of the world but was made manifest in the last times for your sake, who through him are believers in God, who raised him from the dead and gave him glory, so that your faith and hope are in God. **Having purified your souls by your obedience to the truth** for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
+
+We are redeemed from lawless behaviour, God purifies us with the blood of Jesus and we do good deeds out of a **corrected will** to now do good deeds instead of lawless deeds because Jesus loved us and gave us Himself:
+
+> **[Titus 2:14](https://www.biblegateway.com/passage/?search=Titus%202%3A14&version=ESV)** - who gave Himself for us to redeem us from every lawless deed, and to purify for Himself a people for His own possession, zealous for good deeds. (NASB)
+
+Jesus tasted death for us. Since we are saved from death, and from the law of sin and death, we walk by the Spirit now and try to imitate Christ, empowered with His Spirit to help us do that:
+
+> **[Hebrews 2:9](https://www.biblegateway.com/passage/?search=Hebrews%202%3A9&version=ESV)** - But we see him who for a little while was made lower than the angels, namely Jesus, crowned with glory and honor because of the suffering of death, so that by the grace of God he might taste death for everyone. (ESV)
+
+> **[Romans 8:12-13](https://www.biblegateway.com/passage/?search=Romans%208%3A12-13&version=ESV)** - So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+> **[II Corinthians 3:9](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A9&version=ESV)** - For if there was glory in the ministry of condemnation, the ministry of righteousness must far exceed it in glory. (ESV)
+
+The reason we do our good deeds is not as if we are trying to earn our acceptance from God all over again, but walking by the Spirit which we have received, we do them out of Christ-defined love because we want to pass forward the love of God:
+
+> **[Galatians 5:1](https://www.biblegateway.com/passage/?search=Galatians%205%3A1&version=ESV)** - For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery. (ESV)
+
+> **[I John 4:17](https://www.biblegateway.com/passage/?search=1%20John%204%3A17&version=ESV)** - By this is love perfected with us, so that we may have confidence for the day of judgment, because as he is so also are we in this world. (ESV)
 
 Believing in Jesus and obeying Jesus go hand in hand. Believing in Jesus, obeying Jesus, trusting in Jesus, His words and promises, are all in the heart and not the head. I'm going to keep trying to do all of those things, and not make any sweeping statements about free will:
 
@@ -23333,9 +23403,13 @@ Jesus is coming a second time to save those who are eagerly waiting for Him. AME
 
 > **[Hebrews 9:27-28](https://www.biblegateway.com/passage/?search=Hebrews%209%3A27-28&version=ESV)** - And just as it is appointed for man to die once, and after that comes judgment, so Christ, having been offered once to bear the sins of many, will appear a second time, not to deal with sin but to save those who are eagerly waiting for him. (ESV)
 
-But I consider that Jesus may have visited me personally to make me born-again and bring me into His service:
+But I consider that Jesus may have visited me personally to make me born-again and bring me into His service. But I also strongly believe this was for my own purification - God's grace to me:
 
 > **[Mark 13:32-37](https://www.biblegateway.com/passage/?search=Mark%2013%3A32-37&version=ESV)** - But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father. Be on guard, keep awake. For you do not know when the time will come. It is like a man going on a journey, when he leaves home and puts his servants in charge, each with his work, and commands the doorkeeper to stay awake. Therefore stay awake—for you do not know when the master of the house will come, in the evening, or at midnight, or when the cock crows, or in the morning— lest he come suddenly and find you asleep. And what I say to you I say to all: Stay awake. (ESV)
+
+Jesus went to the place of the dead so people who had died (those who Paul is referring to here) may also be saved. Also, it seems that the rapture doctrine was **made known** from a **word from the Lord**:
+
+> **[I Thessalonians 4:14-17](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A14-17&version=ESV)** - For **since we believe that Jesus died and rose again, even so, through Jesus, God will bring with him those who have fallen asleep.** For this **we declare to you by a word from the Lord,** that <ins>we who are alive, who are left until the coming of the Lord, will not precede those who have fallen asleep. For the Lord himself will descend from heaven with a cry of command, with the voice of an archangel, and with the sound of the trumpet of God. And the dead in Christ will rise first. Then we who are alive, who are left, will be caught up together with them in the clouds to meet the Lord in the air, and so we will always be with the Lord.</ins> (ESV)
 
 Although it happened around midday, I was lying down on my bed very peacefully with my cat and took a nap during the day. And when I was born-again in this way I asked Jesus to save me because I didn't know what was going on. So Like Paul the Apostle and the heavenly vision he received, the idea is to be taken into service by Jesus and continue in obedient faithfulness to Jesus. I also recognise we still wait for the eschatological "Day of the Lord" - the second coming of Jesus has not yet happened:
 
