@@ -54,6 +54,10 @@ I'm trying to side with Jesus over issues regarding the evil which is still pres
 > 
 > -   [youtube.com: What Is It Like to 'Know Christ'?](https://www.youtube.com/watch?v=0g2ExGC1GaE)
 > -   [youtube.com: Work Out What Christ Has Won: The Christian Life as Gift and Duty](https://www.youtube.com/watch?v=g1L9ZyBF2Z8)
+> 
+> I affirm this man's message:
+> 
+> -   [youtube.com: The most eloquent, well spoken street preacher I've ever heard! | Preaching Times Square, NYC](https://www.youtube.com/watch?v=eb3g3lzOl70)
 
 -   **Acknowledgement:** To be able to have affection for God and treasure God, and have a desire for God is such a gift&#x2026;. Thank you John Piper for helping me to see that, and lead me into that truth&#x2026; It makes so much sense in hindsight. Nothing in this world could replace the gift of being able to know God Himself and have an affectionate, treasuring, obedient, believing, desiring love for God.
 
@@ -261,11 +265,33 @@ Bonhoeffer says it like this, “Only he who believes is obedient, and only he w
 
 We should disobey sin, and present ourselves to God as those alive from the dead, and our members as **instruments of righteousness to God**. We should be practicing righteousness, practicing love and holiness and truth:
 
-> **[Romans 6:12-13](https://www.biblegateway.com/passage/?search=Romans%206%3A12-13&version=NASB)** - Therefore **do not let sin reign** in your mortal body so that you **obey** its lusts, and **do not go on** presenting the members of your body to sin as instruments of unrighteousness; but <ins>*present yourselves to God as those alive from the dead, and your members as instruments of righteousness to God.*</ins> (NASB)
+> **[Romans 6:12-13](https://www.biblegateway.com/passage/?search=Romans%206%3A12-13&version=ESV)** - Therefore **do not let sin reign** in your mortal body so that you **obey** its lusts, and **do not go on** presenting the members of your body to sin as instruments of unrighteousness; but <ins>*present yourselves to God as those alive from the dead, and your members as instruments of righteousness to God.*</ins> (NASB)
 
 We need to receive the Holy Spirit:
 
 -   **[Quote by John Piper](https://youtube.com/watch?v=xqgeT26BAnE&t=2734):** Hold fast in obedience to what you have heard and believed.
+
+Father God loved Jesus, Jesus loved us, we love God back by loving Jesus back by keeping Jesus' commandments, and Jesus sends His Holy Spirit to us, and we come to know Jesus intimately:
+
+> **[John 15:9](https://www.biblegateway.com/passage/?search=John%2015%3A9&version=ESV)** - As the Father has loved me, so have I loved you. Abide in my love. (ESV)
+
+> **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+We love in the way Jesus loved us, which is how God loved Jesus:
+
+> **[John 17:26](https://www.biblegateway.com/passage/?search=John%2017%3A26&version=ESV)** - I made known to them your name, and I will continue to make it known, that the love with which you have loved me may be in them, and I in them. (ESV)
+
+> **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
+
+> **[John 14:15-17](https://www.biblegateway.com/passage/?search=John%2014%3A15-17&version=ESV)** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, even the Spirit of truth, whom the world cannot receive, because it neither sees him nor knows him. You know him, for he dwells with you and will be in you. (ESV)
+
+> **[I John 4:7](https://www.biblegateway.com/passage/?search=1%20John%204%3A7&version=ESV)** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+> **[I John 4:13](https://www.biblegateway.com/passage/?search=1%20John%204%3A13&version=ESV)** - By this we know that we abide in him and he in us, because he has given us of his Spirit. (ESV)
+
+God love Jesus, God loved us first through Jesus. Jesus loved us. Love comes from God. We then endeavour to love one another in the way Jesus loved us, passing forward this love. We don't take Jesus (God the Son) out of the equation, nor do we take Father God out of the equation. We were loved first by God:
+
+> **[I John 4:9-10](https://www.biblegateway.com/passage/?search=1%20John%204%3A9-10&version=ESV)** - In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. (ESV)
 
 Jesus and Father God manifest to those who keep His word and obey Him:
 
@@ -344,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org3c55594) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1269958) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1844,6 +1870,22 @@ We must continue in our faith. We must continue to believe Jesus and trust in Je
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
+I believe that we are saved not because of our own merit, but, still, obedience to the Gospel leads to righteousness which leads to salvation:
+
+> **[Hebrews 5:9](https://www.biblegateway.com/passage/?search=Hebrews%205%3A9&version=ESV)** - And being made perfect, he became the source of eternal salvation to all who obey him, (ESV)
+
+'
+
+> **[Acts 5:32](https://www.biblegateway.com/passage/?search=Acts%205%3A32&version=ESV)** - And we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him. (ESV)
+
+> **[John 14:15-16](https://www.biblegateway.com/passage/?search=John%2014%3A15-16&version=ESV)** - If you love me, you will keep my commandments. And I will ask the Father, and he will give you another Helper, to be with you forever, (ESV)
+
+> **[John 15:26](https://www.biblegateway.com/passage/?search=John%2015%3A26&version=ESV)** - But when the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, he will bear witness about me. (ESV)
+
+> **[Romans 6:16-18](https://www.biblegateway.com/passage/?search=Romans%206%3A16-18&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+
+> **[II Timothy 1:7-10](https://www.biblegateway.com/passage/?search=2%20Timothy%201%3A7-10&version=ESV)** - for God gave us a spirit not of fear but of power and love and self-control. Therefore do not be ashamed of the testimony about our Lord, nor of me his prisoner, but **share in suffering for the gospel by the power of God, who saved us and called us to a holy calling,** not because of our works but because of his own purpose and grace, which he gave us in Christ Jesus before the ages began, and which now has been manifested through the appearing of our Savior Christ Jesus, who abolished death and brought life and immortality to light through the gospel, (ESV)
+
 I believe that becoming the righteousness of God is **cooperative** in that we allow Jesus to wash us, and work in us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, <ins>walking</ins> in faith, and behaving as one of God's children is how we receive and walk into the kingdom which is given to us and that walking (living, **katergazomai**) in a childlike faith in Jesus is how we have the righteousness that is by faith. Living by faith is walking in faith, is following Jesus. I really wish there was not a chapter break between these two verses because it's revealing to to read them side by side:
 
 > **[II Corinthians 5:21-6:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV)** - For our sake he made him to be sin who knew no sin, so that in him **we might become the righteousness of God. Working together with him**, then, we appeal to you not to receive the grace of God in vain. (ESV)
@@ -2681,6 +2723,12 @@ The free gift is eternal life **in** Christ Jesus, our Lord:
 After believing in Jesus, we must turn from our wicked ways and serve God:
 
 > **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+Jesus is the definitive Son of God. But we may be adopted as sons through faith in Jesus:
+
+> **[John 1:14](https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV)** - And **the Word became flesh** and dwelt among us, and we have seen his glory, glory as of **the only Son from the Father, full of grace and truth.** (ESV)
+
+> **[Galatians 3:26-29](https://www.biblegateway.com/passage/?search=Galatians%203%3A26-29&version=ESV)** - for in Christ Jesus you are all sons of God, through faith. For as many of you as were baptized into Christ have put on Christ. There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female, for you are all one in Christ Jesus. And if you are Christ's, then you are Abraham's offspring, heirs according to promise. (ESV)
 
 Jesus has literally taught people that that if we love our enemies, do good and lend, expecting nothing in return we will be rewarded and be sons of the Most High. This shows that obedience to Jesus is just part of having faith in Jesus:
 
@@ -3791,6 +3839,36 @@ Examples:
 -   obeying Jesus' commandments out of seeking Jesus, or out of belief and love for Jesus, believing that God sees.
 
 
+## Fun acronyms
+
+-   **FAITH:** [Fear aint in this house](https://www.youtube.com/watch?v=S6nCvZX8Sgk&ab_channel=LivingWatersTabernacleNewburgh%2CNY)
+-   **BIBLE:** Basic instructions before leaving earth
+-   **HANDS:** [honors, attributes, names, deeds, seat](https://au.thegospelcoalition.org/article/a-hands-approach-to-showing-jesus-is-god/)
+
+
+### A H.A.N.D.S. Approach to Showing Jesus is God
+
+What reasons do we have for thinking that Jesus is truly God? Robert M. Bowman Jr. and J. Ed Komoszewski in their book Putting Jesus in His Place:The Case for the Deity of Christ published by Kregel in 2007, offer a simple and memorable way to do this. Using the acronym H.A.N.D.S., they reason that the Bible teaches that Jesus shares the Honour due only to God, that Jesus shares the Attributes of God, that Jesus shares the Names ascribed to God, that Jesus does the Deeds that only God can do, and that Jesus is Seated on the throne of God. Here are a few of the lines of evidence from the Scriptures that we can draw on.
+Honour
+
+Scripture indicates that God alone is to be worshipped (**[Deut 6:13](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A13&version=ESV)**; **[Matt 4:9-10](https://www.biblegateway.com/passage/?search=Matthew%204%3A9-10&version=ESV)**), yet Jesus is worshipped and accepts such worship (**[Matt 14:33](https://www.biblegateway.com/passage/?search=Matthew%2014%3A33&version=ESV)**; **[Heb 1:6](https://www.biblegateway.com/passage/?search=Hebrews%201%3A6&version=ESV)**; **[Rev 1:17](https://www.biblegateway.com/passage/?search=Revelation%201%3A17&version=ESV)**), so who does that mean Jesus truly is? If Jesus were merely human it would be wrong to honour Him as God alone is to be honoured. Yet, we read that devout Jews in the New Testament bowed down and worshipped Jesus (i.e. “doubting” Thomas in **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)**) and Jesus accepted that worship.
+
+If Jesus were merely human it would be wrong to honour Him as God. Yet devout Jews in the New Testament bowed down and worshipped Jesus
+
+Attributes
+
+The Bible tells us that Jesus has the same attributes as God, being: eternal (John 1:1-3; 8:58), all-powerful (Matt. 28:18), all-knowing (John 21:17), and loving (Rom 8:35-39). If someone possessed the same characteristics, the same nature as God, in the same way that God did, what would that make Him?
+Names
+
+Jesus is said to have been given the name that is above every other name (Phil. 2:9-11). Jesus is called God (John 20:28), Lord (Acts 1:24), the King of kings (Rev 19:16), Saviour (Luke 2:11), and the First and the Last (Rev 1:7-8). It would be wrong to call any older man our father, so if Jesus receives such titles, that is saying a lot about who He is.
+Deeds
+
+Who can do the things that God alone does? Jesus is said to be the creator (John 1:3), the sustainer of all things (Heb. 1:2-3), He is sovereign over the forces of nature (Matt. 8:2327), the one who forgives sins (Matt 9:1-8), and even the one who gives life (John 1:4; 5:21). In fact it could be said that everything that God does for us, Jesus does for us. How should one respond to such blessings?
+Seat
+
+Lastly, Jesus sits on God’s throne (Rev. 3:21), ruling over all things (Rev 5:13). This is nothing short of claiming to be equal with God (John 10:27-33). Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
+
+
 ## Our obedient faith should be penitent, and should be without partiality. We **aim** for perfection, to be conformed to Christ's image
 
 > John Piper - "Faith is the baking our **hope on the mercy of God**."
@@ -3865,6 +3943,8 @@ In response to forgiveness, we must love:
 He loved us first, and that is why and how we love (knowing we've already received mercy). Christ's love is not simply charity but a) it's passing-forward Christ's love, and b) it's to relieve other's burdens (mercy, not sacrifice):
 
 > **[I John 4:19](https://www.biblegateway.com/passage/?search=1%20John%204%3A19&version=ESV)** - We love <ins>because he first loved us.</ins> (ESV)
+
+> **[John 15:9-13](https://www.biblegateway.com/passage/?search=John%2015%3A9-13&version=ESV)** - As the Father has loved me, so have I loved you. Abide in my love. If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. Greater love has no one than this, that someone lays down his life for his friends. (ESV)
 
 > **[Acts 2:45](https://www.biblegateway.com/passage/?search=Acts%202%3A45&version=ESV)** - And they were selling their possessions and belongings and distributing the proceeds to all, as any had need. (ESV)
 
@@ -6346,9 +6426,15 @@ I am confident also that if we hold firm to obedience in Jesus keeping and obeyi
 
 > **[Matthew 5:48](https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV)** - Therefore you are to be perfect, as your heavenly Father is perfect.
 
-This is talking about fellow human beings. i.e. we still have enemies (that is, satan and satan's servants):
+This is talking about loving fellow human beings:
 
 > **Didache 1** - &#x2026; Bless those who curse you, and pray for your enemies, and fast for those who persecute you. For what reward is there for loving those who love you? Do not the Gentiles do the same? But love those who hate you, and you shall not have an enemy. &#x2026;
+
+We still have enemies (that is, the forces of evil, satan and satan's demons and his fallen angels, principalities, powers etc.):
+
+> **I Peter 5:8** - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. (ESV)
+
+> **[Ephesians 6:12](https://www.biblegateway.com/passage/?search=Ephesians%206%3A12&version=ESV)** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
 
 Loving all people doesn't mean approving of sin. We should speak the truth:
 
@@ -6501,6 +6587,10 @@ I believe there is only one good shepherd, and that is Jesus Christ, Immanuel (G
 
 > **[John 10:14-15](https://www.biblegateway.com/passage/?search=John%2010%3A14-15&version=ESV)** - <ins>I am the good shepherd.</ins> I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
 
+> **[I Peter 2:24-25](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A24-25&version=ESV)** - He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed. For you were straying like sheep, but have now returned to the Shepherd and Overseer of your souls. (ESV)
+
+> **[Hebrews 13:20-21](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A20-21&version=ESV)** - Now may the God of peace who brought again from the dead our Lord Jesus, the great shepherd of the sheep, by the blood of the eternal covenant, equip you with everything good that you may do his will, working in us that which is pleasing in his sight, through Jesus Christ, to whom be glory forever and ever. Amen. (ESV)
+
 > **[John 1:14](https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV)** - And **the Word became flesh** and dwelt among us, and we have seen his glory, glory as of **the only Son from the Father, full of grace and truth.** (ESV)
 
 Jesus makes intercession for those who draw near to God through Him:
@@ -6547,7 +6637,7 @@ This quite clearly shows that Jesus Christ is Almighty God:
 
 > **[Zechariah 12:10](https://www.biblegateway.com/passage/?search=Zechariah%2012%3A10&version=ESV)** - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on **me, on him whom they have pierced**, they shall <ins>mourn for him, as one mourns for an only child,</ins> and weep bitterly over him, <ins>as one weeps over a firstborn.</ins> (ESV)
 
-**Colossians 2:9** - For in him the whole fullness of deity dwells bodily, (ESV)
+> **[Colossians 2:9](https://www.biblegateway.com/passage/?search=Colossians%202%3A9&version=ESV)** - For in him the whole fullness of deity dwells bodily, (ESV)
 
 I affirm the Nicene creed wholeheartedly:
 
@@ -11226,6 +11316,18 @@ Jesus judges on deeds and on words (possibly on the way you judge others, the sa
 
 > **[Matthew 25:19](https://www.biblegateway.com/passage/?search=Matthew%2025%3A19&version=ESV)** - Now after a long time the master of those servants came and settled accounts with them.
 
+> **[Jeremiah 17:10](https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A10&version=ESV)** - I the LORD (**[Yahweh](https://biblehub.com/interlinear/jeremiah/17-10.htm)**) search the heart and test the mind, to give every man according to his ways, according to the fruit of his deeds. (ESV)
+
+    1  3068 [e]
+    2  Yah·weh
+    3  יְהוָ֛ה
+    4  Yahweh
+    5  N‑proper‑ms
+
+> **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
+
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as **I also conquered and sat down with my Father on his throne.** (ESV)
+
 > **[Matthew 25:21](https://www.biblegateway.com/passage/?search=Matthew%2025%3A21&version=ESV)** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master.
 
 Firstly, obedient children are children who hear the word of God, believe and love God, and we should be holy in all our conduct if we call on the LORD God who judges impartially according to each one's deeds:
@@ -13258,6 +13360,8 @@ The word return specifies 'action'.
 
 If you listen to someone with a deceptive, beguiling spirit, then the same measure of that would come into you.
 
+> **[Isaiah 30:1](https://www.biblegateway.com/passage/?search=Isaiah%2030%3A1&version=ESV)** - Ah, stubborn children, declares the LORD, who carry out a plan, but not mine, and who make an alliance, but not of my Spirit, that they may add sin to sin; (ESV)
+
 And that would would probably affect the truthfulness of your dreams if you have a prophetic gift, but there are other reasons a person may get dreams of falsehood including spiritual attack.
 
 
@@ -13306,6 +13410,7 @@ These do not contradict:
     -   **[I John 5:6](https://www.biblegateway.com/passage/?search=1%20John%205%3A6&version=ESV)** - This is he who came by water and blood—Jesus Christ; not by the water only but by the water and the blood. And the Spirit is the one who testifies, because the Spirit is the truth. (ESV)
 -   **Jesus is God**
     -   **[Isaiah 9:6](https://www.biblegateway.com/passage/?search=Isaiah%209%3A6&version=ESV)** - For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. (ESV)
+    -   [thegospelcoalition.org: How Can Jesus Be Our Everlasting Father?](https://www.thegospelcoalition.org/article/how-can-jesus-be-our-everlasting-father/)
     -   **[Jeremiah 32:17-18](https://www.biblegateway.com/passage/?search=Jeremiah%2032%3A17-18&version=ESV)** - Ah, Lord GOD! It is you who has made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you. You show steadfast love to thousands, but you repay the guilt of fathers to their children after them, O great and mighty God, whose name is the LORD of hosts, (ESV)
 
 > **[Ephesians 4:20-21](https://www.biblegateway.com/passage/?search=Ephesians%204%3A20-21&version=ESV)** - But that is not the way you learned Christ!— assuming that you have heard about him and were taught in him, as **the truth is in Jesus**, (ESV)
@@ -13449,7 +13554,9 @@ Accepting support is OK when in need, but we should still seek to bear our own l
 
 > **[II Corinthians 11:7-9](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A7-9&version=ESV)** - Or did I commit a sin in humbling myself so that you might be exalted, because I preached God's gospel to you free of charge? I robbed other churches by accepting support from them in order to serve you. And when I was with you and was in need, I did not burden anyone, for **the brothers who came from Macedonia supplied my need. So I refrained and will refrain from burdening you in any way.** (ESV)
 
-I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that puts having a job before having a wife I consider to be a spirit of prostitution / people trafficking. This antichrist spirit has also been attacking my family and manifesting within the household.
+I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that forces having a job, or especially forces having assets before having a wife I consider to be a spirit of prostitution / people trafficking. It's an abomination to me. This antichrist spirit has also been attacking my family and manifesting within the household. I feel safe calling it an antichrist spirit because as far as I can tell it's trying to eliminate marriage and make it so with money a person can have whatever they want, no matter how depraved:
+
+> **[Daniel 7:25](https://www.biblegateway.com/passage/?search=Daniel%207%3A25&version=ESV)** - He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to **change the times and the law;** and they shall be given into his hand for a time, times, and half a time. (ESV)
 
 > Jehovah God please grant us deliverance from this spirit of antichrist in Jesus Christ's name I ask.
 
@@ -13620,6 +13727,34 @@ They preach against repentance from sin:
 > **[Jeremiah 27:9](https://www.biblegateway.com/passage/?search=Jeremiah%2027%3A9&version=ESV)** - So do not listen to your prophets, your diviners, your dreamers, your fortune-tellers, or your sorcerers, who are saying to you, You shall not serve the king of Babylon. (ESV)
 
 > **[Jeremiah 29:8](https://www.biblegateway.com/passage/?search=Jeremiah%2029%3A8&version=ESV)** - For thus says the Lord of hosts, the God of Israel: Do not let your prophets and your diviners who are among you deceive you, and do not listen to the dreams that they dream, (ESV)
+
+
+### Heretical apocryphal 'gospels'
+
+There's too much in the so-called gospels of Thomas and Philip which seem to be antithetical to the sound words and teachings of the Lord Jesus Christ, so I renounce any public endorsement of them,
+as they seem both to be books which may have been written to mislead Christians.
+
+There is also much in them which is contrary to much of what the Apostle Paul has written.
+
+Also, I can't agree currently with the Thomas 77 logion and one main reason is it seems to me that there is still a lot of evil in the world and anti-christ sentiment.
+
+From my perspective it still seems like there is a lot of anti-Jesus sentiment out there, so I personally do not yet see everything in subjection to him; i.e it seems to me there is still a lot of rebellion against Christ. God's the judge, not me:
+
+> **[Hebrews 2:7-9](https://www.biblegateway.com/passage/?search=Hebrews%202%3A7-9&version=ESV)** - You made him for a little while lower than the angels; you have crowned him with glory and honor, putting everything in subjection under his feet. Now in putting everything in subjection to him, he left nothing outside his control. At present, we do not yet see everything in subjection to him. But we see him who for a little while was made lower than the angels, namely Jesus, crowned with glory and honor because of the suffering of death, so that by the grace of God he might taste death for everyone. (ESV)
+
+From my perspective, I am very reluctant to believe we have arrived at the point where we can currently say that God is 'all in all people on earth'.
+
+> **[I Corinthians 15:28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A28&version=ESV)** - When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
+
+My main reasons is there is still a lot of sin, idolatry, and lawlessness in the world and a lot of anti-Jesus sentiment. But I still believe that all things **will be** subjected to Him:
+
+> **[I John 3:5](https://www.biblegateway.com/passage/?search=1%20John%203%3A5&version=ESV)** - You know that he appeared to take away sins, and in him there is no sin. (ESV)
+
+> **[Philippians 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)** - Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. (ESV)
+
+In Christ, there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free. Outside of Christ though, is a different story:
+
+> **[Colossians 3:11](https://www.biblegateway.com/passage/?search=Colossians%203%3A11&version=ESV)** - Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all. (ESV)
 
 
 ## Renovating vs Innovating
@@ -16489,8 +16624,28 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%207%3A14&amp;version=ESV">Isaiah 7:14</a></b> - Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%201%3A22-23&amp;version=ESV">Matthew 1:22-23</a></b> - All this took place to fulfill what the Lord had spoken by the prophet: Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel (which means, God with us). (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Luke%201%3A26-31&amp;version=ESV">Luke 1:26-31</a></b> - In the sixth month the angel Gabriel was sent from God to a city of Galilee named Nazareth, to a virgin betrothed to a man whose name was Joseph, of the house of David. And the virgin's name was Mary. And he came to her and said, Greetings, O favored one, the Lord is with you! But she was greatly troubled at the saying, and tried to discern what sort of greeting this might be. And the angel said to her, Do not be afraid, Mary, for you have found favor with God. And behold, you will conceive in your womb and bear a son, and you shall call his name Jesus. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would come from the line of Abraham.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Genesis%2012%3A3&amp;version=ESV">Genesis 12:3</a></b> - I will bless those who bless you, and him who dishonors you I will curse, and in you all the families of the earth shall be blessed. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Genesis%2022%3A18&amp;version=ESV">Genesis 22:18</a></b> - and in your offspring shall all the nations of the earth be blessed, because you have obeyed my voice. (ESV)</td>
@@ -16523,15 +16678,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Genesis%2017%3A19&amp;version=ESV">Genesis 17:19</a></b> - God said, No, but Sarah your wife shall bear you a son, and you shall call his name Isaac. I will establish my covenant with him as an everlasting covenant for his offspring after him. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Genesis%2021%3A12&amp;version=ESV">Genesis 21:12</a></b> - But God said to Abraham, Be not displeased because of the boy and because of your slave woman. Whatever Sarah says to you, do as she tells you, for through Isaac shall your offspring be named. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%203%3A34&amp;version=ESV">Luke 3:34</a></b> - the son of Jacob, the son of Isaac, the son of Abraham, the son of Terah, the son of Nahor, (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be a descendant of Jacob.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Numbers%2024%3A17&amp;version=ESV">Numbers 24:17</a></b> - I see him, but not now; I behold him, but not near: a star shall come out of Jacob, and a scepter shall rise out of Israel; it shall crush the forehead of Moab and break down all the sons of Sheth. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%201%3A2&amp;version=ESV">Matthew 1:2</a></b> - Abraham was the father of Isaac, and Isaac the father of Jacob, and Jacob the father of Judah and his brothers, (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would come from the tribe of Judah.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Genesis%2049%3A10&amp;version=ESV">Genesis 49:10</a></b> - The scepter shall not depart from Judah, nor the ruler's staff from between his feet, until tribute comes to him; and to him shall be the obedience of the peoples. (ESV)</td>
@@ -16564,8 +16759,28 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=2%20Samuel%207%3A12-13&amp;version=ESV">II Samuel 7:12-13</a></b> - When your days are fulfilled and you lie down with your fathers, I will raise up your offspring after you, who shall come from your body, and I will establish his kingdom. He shall build a house for my name, and I will establish the throne of his kingdom forever. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Isaiah%209%3A7&amp;version=ESV">Isaiah 9:7</a></b> - Of the increase of his government and of peace there will be no end, on the throne of David and over his kingdom, to establish it and to uphold it with justice and with righteousness from this time forth and forevermore. The zeal of the LORD of hosts will do this. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%201%3A32-33&amp;version=ESV">Luke 1:32-33</a></b> - He will be great and will be called the Son of the Most High. And the Lord God will give to him the throne of his father David, and he will reign over the house of Jacob forever, and of his kingdom there will be no end. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Romans%201%3A3&amp;version=ESV">Romans 1:3</a></b> - concerning his Son, who was descended from David according to the flesh (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah's throne will be anointed and eternal.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2045%3A6-7&amp;version=ESV">Psalms 45:6-7</a></b> - Your throne, O God, is forever and ever. The scepter of your kingdom is a scepter of uprightness; you have loved righteousness and hated wickedness. Therefore God, your God, has anointed you with the oil of gladness beyond your companions; (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Daniel%202%3A44&amp;version=ESV">Daniel 2:44</a></b> - And in the days of those kings the God of heaven will set up a kingdom that shall never be destroyed, nor shall the kingdom be left to another people. It shall break in pieces all these kingdoms and bring them to an end, and it shall stand forever, (ESV)</td>
@@ -16598,15 +16813,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%207%3A14&amp;version=ESV">Isaiah 7:14</a></b> - Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%201%3A23&amp;version=ESV">Matthew 1:23</a></b> - Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel (which means, God with us). (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would spend a season in Egypt.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Hosea%2011%3A1&amp;version=ESV">Hosea 11:1</a></b> - When Israel was a child, I loved him, and out of Egypt I called my son. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%202%3A14-15&amp;version=ESV">Matthew 2:14-15</a></b> - And he rose and took the child and his mother by night and departed to Egypt and remained there until the death of Herod. This was to fulfill what the Lord had spoken by the prophet, Out of Egypt I called my son. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">A massacre of children would happen at Messiah's birthplace.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Jeremiah%2031%3A15&amp;version=ESV">Jeremiah 31:15</a></b> - Thus says the LORD: A voice is heard in Ramah, lamentation and bitter weeping. Rachel is weeping for her children; she refuses to be comforted for her children, because they are no more. (ESV)</td>
@@ -16639,15 +16894,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2040%3A3-5&amp;version=ESV">Isaiah 40:3-5</a></b> - A voice cries: In the wilderness prepare the way of the LORD; make straight in the desert a highway for our God. Every valley shall be lifted up, and every mountain and hill be made low; the uneven ground shall become level, and the rough places a plain. And the glory of the LORD shall be revealed, and all flesh shall see it together, for the mouth of the LORD has spoken. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%203%3A3-6&amp;version=ESV">Luke 3:3-6</a></b> - And he went into all the region around the Jordan, proclaiming a baptism of repentance for the forgiveness of sins. As it is written in the book of the words of Isaiah the prophet, The voice of one crying in the wilderness: Prepare the way of the Lord, make his paths straight. Every valley shall be filled, and every mountain and hill shall be made low, and the crooked shall become straight, and the rough places shall become level ways, and all flesh shall see the salvation of God. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be rejected by his own people.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2069%3A8&amp;version=ESV">Psalms 69:8</a></b> - I have become a stranger to my brothers, an alien to my mother's sons. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2053%3A3&amp;version=ESV">Isaiah 53:3</a></b> - He was despised and rejected by men; a man of sorrows, and acquainted with grief; and as one from whom men hide their faces he was despised, and we esteemed him not. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=John%201%3A11&amp;version=ESV">John 1:11</a></b> - He came to his own, and his own people did not receive him. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=John%207%3A5&amp;version=ESV">John 7:5</a></b> - For not even his brothers believed in him. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be a prophet.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Deuteronomy%2018%3A15&amp;version=ESV">Deuteronomy 18:15</a></b> - The LORD your God will raise up for you a prophet like me from among you, from your brothers—it is to him you shall listen— (ESV)</td>
@@ -16680,22 +16975,82 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Malachi%204%3A5-6&amp;version=ESV">Malachi 4:5-6</a></b> - Behold, I will send you Elijah the prophet before the great and awesome day of the LORD comes. And he will turn the hearts of fathers to their children and the hearts of children to their fathers, lest I come and strike the land with a decree of utter destruction. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2011%3A13-14&amp;version=ESV">Matthew 11:13-14</a></b> - For all the Prophets and the Law prophesied until John, and if you are willing to accept it, he is Elijah who is to come. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be declared the Son of God.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%202%3A7&amp;version=ESV">Psalms 2:7</a></b> - I will tell of the decree: The LORD said to me, You are my Son; today I have begotten you. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%203%3A16-17&amp;version=ESV">Matthew 3:16-17</a></b> - And when Jesus was baptized, immediately he went up from the water, and behold, the heavens were opened to him, and he saw the Spirit of God descending like a dove and coming to rest on him; and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be called a Nazarene.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2011%3A1&amp;version=ESV">Isaiah 11:1</a></b> - There shall come forth a shoot from the stump of Jesse, and a branch from his roots shall bear fruit. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%202%3A23&amp;version=ESV">Matthew 2:23</a></b> - And he went and lived in a city called Nazareth, that what was spoken by the prophets might be fulfilled: He shall be called a Nazarene. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would bring light to Galilee.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%209%3A1-2&amp;version=ESV">Isaiah 9:1-2</a></b> - But there will be no gloom for her who was in anguish. In the former time he brought into contempt the land of Zebulun and the land of Naphtali, but in the latter time he has made glorious the way of the sea, the land beyond the Jordan, Galilee of the nations. The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shined. (ESV)</td>
@@ -16755,15 +17110,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2061%3A1-2&amp;version=ESV">Isaiah 61:1-2</a></b> - The Spirit of the Lord GOD is upon me, because the LORD has anointed me to bring good news to the poor; he has sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to those who are bound; to proclaim the year of the LORD's favor, and the day of vengeance of our God; to comfort all who mourn; (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%204%3A18-19&amp;version=ESV">Luke 4:18-19</a></b> - The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed, to proclaim the year of the Lord's favor. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be a priest after the order of Melchizedek.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%20110%3A4&amp;version=ESV">Psalms 110:4</a></b> - The LORD has sworn and will not change his mind, You are a priest forever after the order of Melchizedek. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Hebrews%205%3A5-6&amp;version=ESV">Hebrews 5:5-6</a></b> - So also Christ did not exalt himself to be made a high priest, but was appointed by him who said to him, You are my Son, today I have begotten you; as he says also in another place, You are a priest forever, after the order of Melchizedek. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be called King.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%202%3A6&amp;version=ESV">Psalms 2:6</a></b> - As for me, I have set my King on Zion, my holy hill. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Zechariah%209%3A9&amp;version=ESV">Zechariah 9:9</a></b> - Rejoice greatly, O daughter of Zion! Shout aloud, O daughter of Jerusalem! behold, your king is coming to you; righteous and having salvation is he, humble and mounted on a donkey, on a colt, the foal of a donkey. (ESV)</td>
@@ -16796,15 +17191,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%208%3A2&amp;version=ESV">Psalms 8:2</a></b> - Out of the mouth of babes and infants, you have established strength because of your foes, to still the enemy and the avenger. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2021%3A16&amp;version=ESV">Matthew 21:16</a></b> - and they said to him, Do you hear what these are saying? And Jesus said to them, Yes; have you never read, Out of the mouth of infants and nursing babies you have prepared praise? (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be betrayed.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2041%3A9&amp;version=ESV">Psalms 41:9</a></b> - Even my close friend in whom I trusted, who ate my bread, has lifted his heel against me. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Zechariah%2011%3A12-13&amp;version=ESV">Zechariah 11:12-13</a></b> - Then I said to them, If it seems good to you, give me my wages; but if not, keep them. And they weighed out as my wages thirty pieces of silver. Then the LORD said to me, Throw it to the potter—the lordly price at which I was priced by them. So I took the thirty pieces of silver and threw them into the house of the LORD, to the potter. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%2022%3A47-48&amp;version=ESV">Luke 22:47-48</a></b> - While he was still speaking, there came a crowd, and the man called Judas, one of the twelve, was leading them. He drew near to Jesus to kiss him, but Jesus said to him, Judas, would you betray the Son of Man with a kiss? (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Matthew%2026%3A14-16&amp;version=ESV">Matthew 26:14-16</a></b> - Then one of the twelve, whose name was Judas Iscariot, went to the chief priests and said, What will you give me if I deliver him over to you? And they paid him thirty pieces of silver. And from that moment he sought an opportunity to betray him. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah's price money would be used to buy a potter's field.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Zechariah%2011%3A12-13&amp;version=ESV">Zechariah 11:12-13</a></b> - Then I said to them, If it seems good to you, give me my wages; but if not, keep them. And they weighed out as my wages thirty pieces of silver. Then the LORD said to me, Throw it to the potter—the lordly price at which I was priced by them. So I took the thirty pieces of silver and threw them into the house of the LORD, to the potter. (ESV)</td>
@@ -16837,22 +17272,82 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2035%3A11&amp;version=ESV">Psalms 35:11</a></b> - Malicious witnesses rise up; they ask me of things that I do not know. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Mark%2014%3A57-58&amp;version=ESV">Mark 14:57-58</a></b> - And some stood up and bore false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and in three days I will build another, not made with hands. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be silent before his accusers.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2053%3A7&amp;version=ESV">Isaiah 53:7</a></b> - He was oppressed, and he was afflicted, yet he opened not his mouth; like a lamb that is led to the slaughter, and like a sheep that before its shearers is silent, so he opened not his mouth. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Mark%2015%3A4-5&amp;version=ESV">Mark 15:4-5</a></b> - And Pilate again asked him, Have you no answer to make? See how many charges they bring against you. But Jesus made no further answer, so that Pilate was amazed. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be spat upon and struck.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2050%3A6&amp;version=ESV">Isaiah 50:6</a></b> - I gave my back to those who strike, and my cheeks to those who pull out the beard; I hid not my face from disgrace and spitting. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2026%3A67&amp;version=ESV">Matthew 26:67</a></b> - Then they spit in his face and struck him. And some slapped him, (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be hated without cause.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2035%3A19&amp;version=ESV">Psalms 35:19</a></b> - Let not those rejoice over me who are wrongfully my foes, and let not those wink the eye who hate me without cause. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Psalms%2069%3A4&amp;version=ESV">Psalms 69:4</a></b> - More in number than the hairs of my head are those who hate me without cause; mighty are those who would destroy me, those who attack me with lies. What I did not steal must I now restore? (ESV)</td>
@@ -16885,15 +17380,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2053%3A12&amp;version=ESV">Isaiah 53:12</a></b> - Therefore I will divide him a portion with the many, and he shall divide the spoil with the strong, because he poured out his soul to death and was numbered with the transgressors; yet he bore the sin of many, and makes intercession for the transgressors. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2027%3A38&amp;version=ESV">Matthew 27:38</a></b> - Then two robbers were crucified with him, one on the right and one on the left. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Mark%2015%3A27-28&amp;version=ESV">Mark 15:27-28</a></b> - And with him they crucified two robbers, one on his right and one on his left. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be given vinegar to drink.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2069%3A21&amp;version=ESV">Psalms 69:21</a></b> - They gave me poison for food, and for my thirst they gave me sour wine to drink. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2027%3A34&amp;version=ESV">Matthew 27:34</a></b> - they offered him wine to drink, mixed with gall, but when he tasted it, he would not drink it. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=John%2019%3A28-30&amp;version=ESV">John 19:28-30</a></b> - After this, Jesus, knowing that all was now finished, said (to fulfill the Scripture), I thirst. A jar full of sour wine stood there, so they put a sponge full of the sour wine on a hyssop branch and held it to his mouth. When Jesus had received the sour wine, he said, It is finished, and he bowed his head and gave up his spirit. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah's hands and feet would be pierced.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2022%3A16&amp;version=ESV">Psalms 22:16</a></b> - For dogs encompass me; a company of evildoers encircles me; they have pierced my hands and feet— (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Zechariah%2012%3A10&amp;version=ESV">Zechariah 12:10</a></b> - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on me, on him whom they have pierced, they shall mourn for him, as one mourns for an only child, and weep bitterly over him, as one weeps over a firstborn. (ESV)</td>
@@ -16926,22 +17461,82 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2022%3A7-8&amp;version=ESV">Psalms 22:7-8</a></b> - All who see me mock me; they make mouths at me; they wag their heads; He trusts in the LORD; let him deliver him; let him rescue him, for he delights in him! (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%2023%3A35&amp;version=ESV">Luke 23:35</a></b> - And the people stood by, watching, but the rulers scoffed at him, saying, He saved others; let him save himself, if he is the Christ of God, his Chosen One! (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Soldiers would gamble for Messiah's garments.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2022%3A18&amp;version=ESV">Psalms 22:18</a></b> - they divide my garments among them, and for my clothing they cast lots. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Matthew%2027%3A35-36&amp;version=ESV">Matthew 27:35-36</a></b> - And when they had crucified him, they divided his garments among them by casting lots. Then they sat down and kept watch over him there. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah's bones would not be broken.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Exodus%2012%3A46&amp;version=ESV">Exodus 12:46</a></b> - It shall be eaten in one house; you shall not take any of the flesh outside the house, and you shall not break any of its bones. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Psalms%2034%3A20&amp;version=ESV">Psalms 34:20</a></b> - He keeps all his bones; not one of them is broken. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=John%2019%3A33-36&amp;version=ESV">John 19:33-36</a></b> - But when they came to Jesus and saw that he was already dead, they did not break his legs. But one of the soldiers pierced his side with a spear, and at once there came out blood and water. He who saw it has borne witness—his testimony is true, and he knows that he is telling the truth—that you also may believe. For these things took place that the Scripture might be fulfilled: Not one of his bones will be broken. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be forsaken by God.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&amp;version=ESV">Psalms 22:1</a></b> - My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning? (ESV)</td>
@@ -16974,15 +17569,55 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%20109%3A4&amp;version=ESV">Psalms 109:4</a></b> - In return for my love they accuse me, but I give myself to prayer. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Luke%2023%3A34&amp;version=ESV">Luke 23:34</a></b> - And Jesus said, Father, forgive them, for they know not what they do. And they cast lots to divide his garments. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Soldiers would pierce Messiah's side.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Zechariah%2012%3A10&amp;version=ESV">Zechariah 12:10</a></b> - And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on me, on him whom they have pierced, they shall mourn for him, as one mourns for an only child, and weep bitterly over him, as one weeps over a firstborn. (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=John%2019%3A34&amp;version=ESV">John 19:34</a></b> - But one of the soldiers pierced his side with a spear, and at once there came out blood and water. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be buried with the rich.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Isaiah%2053%3A9&amp;version=ESV">Isaiah 53:9</a></b> - And they made his grave with the wicked and with a rich man in his death, although he had done no violence, and there was no deceit in his mouth. (ESV)</td>
@@ -17042,8 +17677,28 @@ I believe there is a strong emphasis on continued belief, and becoming a bondser
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2024%3A7-10&amp;version=ESV">Psalms 24:7-10</a></b> - Lift up your heads, O gates! And be lifted up, O ancient doors, that the King of glory may come in. Who is this King of glory? The LORD, strong and mighty, the LORD, mighty in battle! Lift up your heads, O gates! And lift them up, O ancient doors, that the King of glory may come in. Who is this King of glory? The LORD of hosts, he is the King of glory! Selah (ESV)</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Mark%2016%3A19&amp;version=ESV">Mark 16:19</a></b> - So then the Lord Jesus, after he had spoken to them, was taken up into heaven and sat down at the right hand of God. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Luke%2024%3A51&amp;version=ESV">Luke 24:51</a></b> - While he blessed them, he parted from them and was carried up into heaven. (ESV)</td>
 </tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Prophecies About Jesus</th>
+<th scope="col" class="org-left">Old Testament Scripture</th>
+<th scope="col" class="org-left">New Testament Fulfillment</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td class="org-left">Messiah would be seated at God's right hand.</td>
 <td class="org-left"><b><a href="https://www.biblegateway.com/passage/?search=Psalms%2068%3A18&amp;version=ESV">Psalms 68:18</a></b> - You ascended on high, leading a host of captives in your train and receiving gifts among men, even among the rebellious, that the LORD God may dwell there. (ESV), <b><a href="https://www.biblegateway.com/passage/?search=Psalms%20110%3A1&amp;version=ESV">Psalms 110:1</a></b> - The LORD says to my Lord: Sit at my right hand, until I make your enemies your footstool. (ESV)</td>
@@ -18184,6 +18839,8 @@ We must overcome the evil one:
 
 > **[I John 2:13-14](https://www.biblegateway.com/passage/?search=1%20John%202%3A13-14&version=ESV)** - I am writing to you, fathers, because you know him who is from the beginning. I am writing to you, young men, because you have overcome the evil one. I write to you, children, because you know the Father. I write to you, fathers, because you know him who is from the beginning. I write to you, young men, because you are strong, and the word of God abides in you, and you have overcome the evil one. (ESV)
 
+> **[Revelation of John 3:12](https://www.biblegateway.com/passage/?search=Revelation%203%3A12&version=ESV)** - The one who conquers, I will make him a pillar in the temple of my God. Never shall he go out of it, and I will write on him the name of my God, and the name of the city of my God, the new Jerusalem, which comes down from my God out of heaven, and my own new name. (ESV)
+
 The gospel of the Kingdom of God (God's reign on earth):
 
 > **[Revelation of John 11:15](https://www.biblegateway.com/passage/?search=Revelation%2011%3A15&version=ESV)** - Then the seventh angel blew his trumpet, and there were loud voices in heaven, saying, **The <ins>kingdom of the world</ins> has become the kingdom of our Lord and of his Christ, and he shall reign forever and ever.** (ESV)
@@ -19168,7 +19825,25 @@ The new self should be <ins>Christ formed in you:</ins>
 
 > **[Colossians 1:15-20](https://www.biblegateway.com/passage/?search=Colossians%201%3A15-20&version=ESV)** - He is the image of the invisible God, the firstborn of all creation. For by him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities — **all things were created through him and for him**. And he is before all things, and **in him all things hold together**. And he is the head of the body, the church. He is the beginning, **the firstborn from the dead**, that in everything he might be preeminent. For in him all the fullness of God was pleased to dwell, and through him to reconcile to himself all things, whether on earth or in heaven, making peace by the blood of his cross.
 
-When people say "God can't die, so Jesus is not God" the explanation is that Jesus conquered and sat down with His Father Jehovah on His throne.
+The prophets spoke of Him:
+
+> **[Exodus 4:22-23](https://www.biblegateway.com/passage/?search=Exodus%204%3A22-23&version=ESV)** - Then you shall say to Pharaoh, Thus says the LORD, Israel is my firstborn son, and I say to you, Let my son go that he may serve me. If you refuse to let him go, behold, I will kill your firstborn son. (ESV)
+
+> **[Psalms 2:7](https://www.biblegateway.com/passage/?search=Psalms%202%3A7&version=ESV)** - I will tell of the decree: The LORD said to me, You are my Son; today I have begotten you. (ESV)
+
+> **[Isaiah 7:14-15](https://www.biblegateway.com/passage/?search=Isaiah%207%3A14-15&version=ESV)** - Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel. He shall eat curds and honey when he knows how to refuse the evil and choose the good. (ESV)
+
+God audibly spoke of Jesus, His Son:
+
+> **[Luke 9:35](https://www.biblegateway.com/passage/?search=Luke%209%3A35&version=ESV)** - And a voice came out of the cloud, saying, This is my Son, my Chosen One; listen to him! (ESV)
+
+Jesus also claimed to be Christ, the Son of the Blessed One (**[2128. eulogétos](https://biblehub.com/greek/2128.htm)**):
+
+> **[Mark 14:61-62](https://www.biblegateway.com/passage/?search=Mark%2014%3A61-62&version=ESV)** - But he remained silent and made no answer. Again the high priest asked him, Are you the Christ, the Son of the Blessed? And Jesus said, I am, and you will see the Son of Man seated at the right hand of Power, and coming with the clouds of heaven. (ESV)
+
+When people say "God can't die, so Jesus is not God" the explanation is that Jesus conquered and sat down with His Father Jehovah on His throne, and is the image of God, Father God revealed to us through His Son, and Jesus is the only way to Father God:
+
+> **[Colossians 1:15](https://www.biblegateway.com/passage/?search=Colossians%201%3A15&version=ESV)** - He is the image of the invisible God, the firstborn of all creation. (ESV)
 
 Thomas saw God in Jesus Christ, or Jesus Christ as God:
 
@@ -19188,7 +19863,7 @@ Jesus still refers to Father God as His God:
 
 I think this really clears things up a little bit:
 
-> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as **I also conquered and sat down with my Father on his throne.** (ESV)
 
 We serve the Most High God, Jehovah and Jesus Christ who He has sent:
 
@@ -21359,6 +22034,8 @@ Know Jesus experientially:
 Dying to sin an immediate thing and living to Christ, becoming like Jesus in His death is a lifelong (while on this earth) process. Also, starting to live for God is an immediate thing, and to be with God is the long-term thing:
 
 > **[Romans 6:8-10](https://www.biblegateway.com/passage/?search=Romans%206%3A8-10&version=ESV)** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. (ESV)
+
+> **[John 15:3-12](https://www.biblegateway.com/passage/?search=John%2015%3A3-12&version=ESV)** - Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me. I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing. If anyone does not abide in me he is thrown away like a branch and withers; and the branches are gathered, thrown into the fire, and burned. If you abide in me, and my words abide in you, ask whatever you wish, and it will be done for you. By this my Father is glorified, that you bear much fruit and so prove to be my disciples. As the Father has loved me, so have I loved you. Abide in my love. If you keep my commandments, you will abide in my love, just as I have kept my Father's commandments and abide in his love. These things I have spoken to you, that my joy may be in you, and that your joy may be full. This is my commandment, that you love one another as I have loved you. (ESV)
 
 
 ### Anyone who doesn't abide will be thrown away like a branch and withers. Eventually they will be into the fire (Hell, I assume)
@@ -26830,7 +27507,7 @@ Jesus still refers to Father God as His God:
 
 I think this really clears things up a little bit:
 
-> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as **I also conquered and sat down with my Father on his throne.** (ESV)
 
 > **[John 16:32](https://www.biblegateway.com/passage/?search=John%2016%3A32&version=ESV)** - Behold, the hour is coming, indeed it has come, when you will be scattered, each to his own home, and will leave me alone. Yet I am not alone, for <ins>the Father is with me.</ins> (ESV)
 
@@ -27101,6 +27778,8 @@ A comprehensive and broad understanding of the Bible is certainly important so w
 ### We are fighting against lawlessness
 
 > **[II Thessalonians 2:9-13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A9-13&version=ESV)** - The coming of the lawless one is by the activity of Satan with all power and false signs and wonders, and with all wicked deception for those who are perishing, because they refused to love the truth and so be saved. Therefore God sends them a strong delusion, so that they may believe what is false, in order that all may be condemned who did not believe the truth but had pleasure in unrighteousness. But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth. (ESV)
+
+> **[Daniel 7:25-26](https://www.biblegateway.com/passage/?search=Daniel%207%3A25-26&version=ESV)** - He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to change the times and the law; and they shall be given into his hand for a time, times, and half a time. But the court shall sit in judgment, and his dominion shall be taken away, to be consumed and destroyed to the end. (ESV)
 
 > **[I Peter 1:2](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A2&version=ESV)** - according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you. (ESV)
 
@@ -28467,7 +29146,15 @@ The other party, I never considered to be my adversaries! I only ever held love 
 
 > **[Ephesians 6:12](https://www.biblegateway.com/passage/?search=Ephesians%206%3A12&version=ESV)** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
 
--   **[youtube.com: How God Uses Satan](https://www.youtube.com/watch?v=y4-C_oMg11E):** Every one of the sufferings that Jesus went through was lifting sin off of us and sin is the only thing Satan's got to kill us with. It's the only weapon he's got. Satan cannot hurt you without sin. If you solve your sin problem, you solve your Satan problem. He can show you green things in the middle of the night and terrify you but he cannot hurt you.
+-   **[youtube.com: How God Uses Satan](https://www.youtube.com/watch?v=y4-C_oMg11E):** Every one of the sufferings that Jesus went through was lifting sin off of us and sin is the only thing Satan's got to kill us with. It's the only weapon he's got.
+    
+    Satan cannot hurt you without sin. If you solve your sin problem, you solve your Satan problem. He can show you green things in the middle of the night and terrify you but he cannot hurt you. If Christ saves you from your sin through the cross he can never have you; never never ever have you aga in. Satan is the lacky, he's the lacky of God, he can't do anything without God's leash being lengthened, and God can shorten it anytime he pleases. Somehow or other God uses Satan as an intermediary cause was in some of the painful work that he ordains for our good.
+    
+    **[Revelation of John 2:10](https://www.biblegateway.com/passage/?search=Revelation%202%3A10&version=ESV)** - Do not fear what you are about to suffer. Behold, the devil is about to throw some of you into prison, that you may be tested, and for ten days you will have tribulation. Be faithful unto death, and I will give you the crown of life. (ESV)
+    
+    **[II Corinthians 12:7-8](https://www.biblegateway.com/passage/?search=2%20Corinthians%2012%3A7-8&version=ESV)** - So to keep me from being too elated by the surpassing greatness of the revelations, a thorn was given me in the flesh, a messenger of Satan to harass me, to keep me from being too elated. Three times I pleaded with the Lord about this, that it should leave me. (ESV)
+    
+    **[Romans 8:28](https://www.biblegateway.com/passage/?search=Romans%208%3A28&version=ESV)** - And we know that for those who love God all things work together for good, for those who are called according to his purpose. (ESV)
 
 Jesus commands us to love our enemies:
 
@@ -29268,6 +29955,8 @@ There was an incredible amount of resistance from other people to following Jesu
 > **[Ephesians 4:32](https://www.biblegateway.com/passage/?search=Ephesians%204%3A32&version=ESV)** - Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. (ESV)
 
 Likewise, there was also a lot of resistance, spiritually, to repenting from sin.
+
+[youtube.com: The Good Shepard | His sheep |  Bishop Mar Mari Emmanuel @time: 7 min 46 sec](https://youtube.com/watch?v=N-UhdGA0Fis&t=466)
 
 
 ### I had to humble myself and repent
