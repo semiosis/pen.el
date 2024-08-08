@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fp="$1"
+
+test -d "$NOTES/ws/jobs" && dn="$NOTES/ws/jobs"
+test -d "/volumes/home/shane/notes/ws/jobs" && dn="/volumes/home/shane/notes/ws/jobs"
+
+cd "$dn"
+: "${fp:="$(readlink "cv-newest.org")"}"
+bn="$(basename "$fp")"
+mant="${bn%.*}"
+
+org2pdf "$dn/${mant}.org"
+
+is_tty() { [ -t 1 ]; }
+
+if pl "$mant" | grep -q -P '^cv-'; then
+    ln -sf "$dn/${mant}.pdf" cv-newest.pdf
+fi
+
+if is_tty; then
+    z "$dn/${mant}.pdf"
+else
+    echo "$dn/${mant}.pdf"
+fi
