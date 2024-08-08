@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf6039d7) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd73d522) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1958,7 +1958,7 @@ We ***endeavour*** to be justified in Christ - in Christ means abiding in Christ
 
 > **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith (G4102 pistis) in Jesus Christ**, so we also have believed (G4100 **pisteuo**) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
 
-Abraham's **trusting** faith was counted to him as righteousness. I guess it was counted because he was **fully conviced**, and trusting God. This same justification **will be** counted to those who trust in Go who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification:
+Abraham's **trusting** faith was counted to him as righteousness. I guess it was counted because he was **fully conviced**, and trusting God. This same justification **will be** counted to those who trust in God who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification:
 
 > **[Romans 4:20-25](https://www.biblegateway.com/passage/?search=Romans%204%3A20-25&version=ESV)** - No distrust (**[apistia](https://biblehub.com/greek/570.htm)**) made him waver concerning the promise of God, but he grew strong in his faith as he gave glory to God, fully convinced that God was able to do what he had promised. That is why his faith was counted to him as righteousness. But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
@@ -13624,11 +13624,50 @@ Accepting support is OK when in need, but we should still seek to bear our own l
 
 > **[II Corinthians 11:7-9](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A7-9&version=ESV)** - Or did I commit a sin in humbling myself so that you might be exalted, because I preached God's gospel to you free of charge? I robbed other churches by accepting support from them in order to serve you. And when I was with you and was in need, I did not burden anyone, for **the brothers who came from Macedonia supplied my need. So I refrained and will refrain from burdening you in any way.** (ESV)
 
-I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that forces having a job, or especially forces having assets before having a wife I consider to be a spirit of prostitution / people trafficking. It's an abomination to me. This antichrist spirit has also been attacking my family and manifesting within the household. I feel safe calling it an antichrist spirit because as far as I can tell it's trying to eliminate marriage and make it so with money a person can have whatever they want, no matter how depraved:
+I'm willing to work and I would love to have a job and I would love to teach but I've been attacked a lot by demons, prevented from teaching due to a conviction, pushed out of churches for following Jesus, had the love of my life taken away from me, and been treated like absolute garbage, coming from such poverty that the poverty undermined my college degree, and my subsequent employment. For some reason it's been far too difficult. Although it is important to get a job, I have to be **fit** and prepared for work, and I'm doing battle against an anti-marriage spirit, and I'm like the person who was recovering at the inn (from the parable of the good Samaritan as Jesus has rescued me). Also, I'm in corrections (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-21 Sun&gt; </span></span> so I am being corrected by reading my Bible and studying the Word, so I still feel as though I am in the clear. I understand work is important, and I'm not exaggerating any of this. It will happen in the right order. And any spirit that forces having a job, or especially forces having assets before having a wife I consider to be a spirit of prostitution / people trafficking. It's an abomination to me. This antichrist spirit has also been attacking my family and manifesting within the household. I feel safe calling it an antichrist spirit because as far as I can tell it's trying to eliminate marriage (i.e. rewrite the law of God) and make it so with money a person can have whatever they want, no matter how depraved:
 
 > **[Daniel 7:25](https://www.biblegateway.com/passage/?search=Daniel%207%3A25&version=ESV)** - He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to **change the times and the law;** and they shall be given into his hand for a time, times, and half a time. (ESV)
 
+It's a heinous lie from hell that in pleading guilty that the person is admitting blame for the full summary of facts in the charge against them. God sees the heart and the true reasons. A big reason that I pleaded guilty was that I can't plead innocence to accusations about how someone felt harassed - who am I to say they didn't feel harassed? But I still plead guilty because even 1% guilt regarding the charge is not perfect innocence:
+
+> **[I Samuel 16:7](https://www.biblegateway.com/passage/?search=1%20Samuel%2016%3A7&version=ESV)** - But the LORD said to Samuel, Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart. (ESV)
+
+A quick search of pleading guilty in New Zealand will tell you that it is an admission of guilt to the charge - well, it might be or it might not be.
+To say that pleading guilty is an admission of all of the accusations against you and accepting the validity of the summary of facts (which was updated an the judge read out, and I had not even seen it, so had no possible way of pleading guilty to what I had not seen) is a heinous lie.
+
+Pleading guilty to a charge can be for the sole reason that a person cannot claim perfect innocence. Also, I did not have access to the updated summary of facts read before me when I was standing there in court submitting my guilty plea having slander from the judge made against me, but Jesus was present and witnessing all of it.
+
+> **[Romans 3:23](https://www.biblegateway.com/passage/?search=Romans%203%3A23&version=ESV)** - for all have sinned and fall short of the glory of God, (ESV)
+
+> **[I John 1:8](https://www.biblegateway.com/passage/?search=1%20John%201%3A8&version=ESV)** - If we say we have no sin, we deceive ourselves, and the truth is not in us. (ESV)
+
+Also, the reason can also be to simply not drag things out!
+
+> **[Matthew 5:25](https://www.biblegateway.com/passage/?search=Matthew%205%3A25&version=ESV)** - Come to terms quickly with your accuser while you are going with him to court, lest your accuser hand you over to the judge, and the judge to the guard, and you be put in prison. (ESV)
+
+Senselessly hated and persecuted for correct thinking because I've been taken from the world and belong to Jesus now:
+
+> **[John 15:25](https://www.biblegateway.com/passage/?search=John%2015%3A25&version=ESV)** - But the word that is written in their Law must be fulfilled: They hated me without a cause. (ESV)
+
+> **[John 15:18-20](https://www.biblegateway.com/passage/?search=John%2015%3A18-20&version=ESV)** - If the world hates you, know that it has hated me before it hated you. If you were of the world, the world would love you as its own; but because you are not of the world, but I chose you out of the world, therefore the world hates you. Remember the word that I said to you: A servant is not greater than his master. If they persecuted me, they will also persecute you. If they kept my word, they will also keep yours. (ESV)
+
+Our adversary, the accuser, is literally the devil and the devil working through people, not the people themselves:
+
+> **[I Peter 5:8](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A8&version=ESV)** - Be sober-minded; be watchful. Your adversary the devil prowls around like a roaring lion, seeking someone to devour. (ESV)
+
+> **[Ephesians 6:12](https://www.biblegateway.com/passage/?search=Ephesians%206%3A12&version=ESV)** - For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places. (ESV)
+
+Also, the summary of facts was conveniently changed when I made new appearances in court, and the judge spun huge amounts of slander against me in court, the slander then became international news. He'll have to answer to God for that. The whole thing was antichrist, so I simply made testimony of Jesus in court. There are other reasons a person pleads guilty, and one is that the person is abiding by Christ's law to do no harm against their neighbour, and another reason is to not put Christ to the test by claiming perfect innocence. I was born-again of Jesus' spirit in [2 April 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/), and subsequently charged with a conviction after making a marriage proposal, so the conviction now makes it now more difficult to love my neighbour because it's more difficult for me to provide financial assistance for my neighbour if it is more difficult to have a job thanks to having a conviction. Satan would happily like it if servants of Jesus are deprived of financial income and a bad public image because then they're less able to help their neighbour or support themself and their family:
+
 > Jehovah God please grant us deliverance from this spirit of antichrist in Jesus Christ's name I ask.
+
+God will give justice for his servants:
+
+> **[Luke 18:7-8](https://www.biblegateway.com/passage/?search=Luke%2018%3A7-8&version=ESV)** - And will not God give justice to his elect, who cry to him day and night? , Will he delay long over them? I tell you, he will give justice to them speedily. Nevertheless, when the Son of Man comes, will he find faith on earth? (ESV)
+
+We must obey God first and be faithful to God first rather than men. 
+
+> **[Acts 5:29](https://www.biblegateway.com/passage/?search=Acts%205%3A29&version=ESV)** - But Peter and the apostles answered, We must obey God rather than men. (ESV)
 
 > **[Galatians 6:1-10](https://www.biblegateway.com/passage/?search=Galatians%206%3A1-10&version=ESV)** - Brothers, if anyone is caught in any transgression, you who are spiritual should restore him in a spirit of gentleness. Keep watch on yourself, lest you too be tempted. **Bear one another's burdens, and so fulfill the law of Christ.** For if anyone thinks he is something, when he is nothing, he deceives himself. But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. For <ins>each will have to bear his own load</ins>. **One who is taught the word must share all good things with the one who teaches.** Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. And let us not grow weary of doing good, for in due season we will reap, if we do not give up. **So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.** (ESV)
 
