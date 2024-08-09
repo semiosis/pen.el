@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8941fc8) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfee0a26) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3847,24 +3847,25 @@ Examples:
 ### A H.A.N.D.S. Approach to Showing Jesus is God
 
 What reasons do we have for thinking that Jesus is truly God? Robert M. Bowman Jr. and J. Ed Komoszewski in their book Putting Jesus in His Place:The Case for the Deity of Christ published by Kregel in 2007, offer a simple and memorable way to do this. Using the acronym H.A.N.D.S., they reason that the Bible teaches that Jesus shares the Honour due only to God, that Jesus shares the Attributes of God, that Jesus shares the Names ascribed to God, that Jesus does the Deeds that only God can do, and that Jesus is Seated on the throne of God. Here are a few of the lines of evidence from the Scriptures that we can draw on.
-Honour
+
+***H - Honour***:
 
 Scripture indicates that God alone is to be worshipped (**[Deut 6:13](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A13&version=ESV)**; **[Matt 4:9-10](https://www.biblegateway.com/passage/?search=Matthew%204%3A9-10&version=ESV)**), yet Jesus is worshipped and accepts such worship (**[Matt 14:33](https://www.biblegateway.com/passage/?search=Matthew%2014%3A33&version=ESV)**; **[Heb 1:6](https://www.biblegateway.com/passage/?search=Hebrews%201%3A6&version=ESV)**; **[Rev 1:17](https://www.biblegateway.com/passage/?search=Revelation%201%3A17&version=ESV)**), so who does that mean Jesus truly is? If Jesus were merely human it would be wrong to honour Him as God alone is to be honoured. Yet, we read that devout Jews in the New Testament bowed down and worshipped Jesus (i.e. “doubting” Thomas in **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)**) and Jesus accepted that worship.
 
 If Jesus were merely human it would be wrong to honour Him as God. Yet devout Jews in the New Testament bowed down and worshipped Jesus
 
-Attributes
+***A - Attributes***:
 
-The Bible tells us that Jesus has the same attributes as God, being: eternal (John 1:1-3; 8:58), all-powerful (Matt. 28:18), all-knowing (John 21:17), and loving (Rom 8:35-39). If someone possessed the same characteristics, the same nature as God, in the same way that God did, what would that make Him?
+The Bible tells us that Jesus has the same attributes as God, being: eternal ([John 1:1-3](https://www.biblegateway.com/passage/?search=John%201%3A1-3&version=ESV); 8:58), all-powerful ([Matt. 28:18](https://www.biblegateway.com/passage/?search=Matthew%2028%3A18&version=ESV)), all-knowing ([John 21:17](https://www.biblegateway.com/passage/?search=John%2021%3A17&version=ESV)), and loving ([Rom 8:35-39](https://www.biblegateway.com/passage/?search=Romans%208%3A35-39&version=ESV)). If someone possessed the same characteristics, the same nature as God, in the same way that God did, what would that make Him?
 Names
 
-Jesus is said to have been given the name that is above every other name (Phil. 2:9-11). Jesus is called God (John 20:28), Lord (Acts 1:24), the King of kings (Rev 19:16), Saviour (Luke 2:11), and the First and the Last (Rev 1:7-8). It would be wrong to call any older man our father, so if Jesus receives such titles, that is saying a lot about who He is.
+Jesus is said to have been given the name that is above every other name ([Phil. 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)). Jesus is called God ([John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)), Lord ([Acts 1:24](https://www.biblegateway.com/passage/?search=Acts%201%3A24&version=ESV)), the King of kings ([Rev 19:16](https://www.biblegateway.com/passage/?search=Revelation%2019%3A16&version=ESV)), Saviour ([Luke 2:11](https://www.biblegateway.com/passage/?search=Luke%202%3A11&version=ESV)), and the First and the Last ([Rev 1:7-8](https://www.biblegateway.com/passage/?search=Revelation%201%3A7-8&version=ESV)). It would be wrong to call any older man our father, so if Jesus receives such titles, that is saying a lot about who He is.
 Deeds
 
-Who can do the things that God alone does? Jesus is said to be the creator (John 1:3), the sustainer of all things (Heb. 1:2-3), He is sovereign over the forces of nature (Matt. 8:2327), the one who forgives sins (Matt 9:1-8), and even the one who gives life (John 1:4; 5:21). In fact it could be said that everything that God does for us, Jesus does for us. How should one respond to such blessings?
+Who can do the things that God alone does? Jesus is said to be the creator ([John 1:3](https://www.biblegateway.com/passage/?search=John%201%3A3&version=ESV)), the sustainer of all things ([Heb. 1:2-3](https://www.biblegateway.com/passage/?search=Hebrews%201%3A2-3&version=ESV)), He is sovereign over the forces of nature ([Matt. 8:23-27](https://www.biblegateway.com/passage/?search=Matthew%208%3A23-27&version=ESV)), the one who forgives sins ([Matt 9:1-8](https://www.biblegateway.com/passage/?search=Matthew%209%3A1-8&version=ESV)), and even the one who gives life ([John 1:4](https://www.biblegateway.com/passage/?search=John%201%3A4&version=ESV); 5:21). In fact it could be said that everything that God does for us, Jesus does for us. How should one respond to such blessings?
 Seat
 
-Lastly, Jesus sits on God’s throne (Rev. 3:21), ruling over all things (Rev 5:13). This is nothing short of claiming to be equal with God (John 10:27-33). Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
+Lastly, Jesus sits on God’s throne ([Rev. 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)), ruling over all things ([Rev 5:13](https://www.biblegateway.com/passage/?search=Revelation%205%3A13&version=ESV)). This is nothing short of claiming to be equal with God ([John 10:27-33](https://www.biblegateway.com/passage/?search=John%2010%3A27-33&version=ESV)). Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
 
 
 ## Our obedient faith should be penitent, and should be without partiality. We **aim** for perfection, to be conformed to Christ's image
@@ -13634,7 +13635,19 @@ God sees the heart and the true reasons, and I was aware God was in the situatio
 
 > **[I Samuel 16:7](https://www.biblegateway.com/passage/?search=1%20Samuel%2016%3A7&version=ESV)** - But the LORD said to Samuel, Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart. (ESV)
 
-A quick search of ["pleading guilty in New Zealand"](https://communitylaw.org.nz/community-law-manual/test/how-criminal-cases-begin-pleading-guilty-not-guilty-bail-and-name-suppression/entering-your-plea-guilty-or-not-guilty/) will tell you that it is an admission that the charge made  - well, it might be or it might not be because that depends on what the person's real reason for pleading guilty really was, and there are reasons a person pleads guilty outside of believing they are guilty of the charge, and outside of what Community law NZ says).
+Firstly, I will say that I pleaded guilty believing I was guilty of the charge in a strict sense, and I still think I did the right thing pleading guilty.
+
+-   I was guilty of the charge of harassment as far as giving to Caesar that which belongs to Caesar goes (God as my witness).
+    -   Jesus caused offense too to people who wanted to put Him to death, and if He were to admit offense, then He would have truthfully admitted offense.
+-   I was guilty of other things as far as giving to God that which belongs to God goes (God as my witness).
+    -   I was taken to court while I was repenting from heresy, repenting from sin and trying to do good. In other words I was punished while I had the mindset of doing good and repenting.
+    -   **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
+-   It was a good opportunity and natural next step to make testimony of Jesus after being born-again, and also Jesus prophetically said this would happen to His disciples:
+    -   **[Matthew 10:17-23](https://www.biblegateway.com/passage/?search=Matthew%2010%3A17-23&version=ESV)** - Beware of men, for they will deliver you over to courts and flog you in their synagogues, and you will be dragged before governors and kings for my sake, to bear witness before them and the Gentiles. When they deliver you over, do not be anxious how you are to speak or what you are to say, for what you are to say will be given to you in that hour. For it is not you who speak, but the Spirit of your Father speaking through you. Brother will deliver brother over to death, and the father his child, and children will rise against parents and have them put to death, and you will be hated by all for my name's sake. But the one who endures to the end will be saved. When they persecute you in one town, flee to the next, for truly, I say to you, you will not have gone through all the towns of Israel before the Son of Man comes. (ESV)
+
+I was prepared to serve my sentence when I pleaded guilty, and I had selected community service, but was given corrections instead - regardless, the sentence I had accepted in pleading guilty. I was not aware that I would be publicly unlawfully slandered, the slander from the press not being anything to do with my sentence.
+
+A quick search of ["pleading guilty in New Zealand"](https://communitylaw.org.nz/community-law-manual/test/how-criminal-cases-begin-pleading-guilty-not-guilty-bail-and-name-suppression/entering-your-plea-guilty-or-not-guilty/) will tell you that it is an admission of committing the offence charged with - well, the reason might be or it might not be that because it depends on what the person's real reason for pleading guilty really was, and there are reasons a person pleads guilty outside of believing they are entirely guilty of the charge along with all the so-called facts, and outside of what Community law NZ says). Also God's Word is much sharper than man's law, so it's to be expected that NZ law cannot model the justice of God's law perfectly, and Christians are supposed to model Christ's love and bear witness of Jesus, not take vengeance for themselves, but to pass forward grace and forgiveness.
 
 -   **[Community law NZ](https://communitylaw.org.nz/community-law-manual/test/before-prison-the-criminal-court-process/pleading-guilty-or-not-guilty/):** Quote "If you plead guilty it means you agree that you did everything the police say you did, as set out in the police “summary of facts”, and that you’re ready to be sentenced by a judge for it. If you agree with some of what’s in the summary of facts but not all of it, make sure you tell your lawyer – they might be able to get the charges or the summary of facts changed."
 
