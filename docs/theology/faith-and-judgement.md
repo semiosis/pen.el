@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd73d522) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf97011c) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -13628,14 +13628,17 @@ I'm willing to work and I would love to have a job and I would love to teach but
 
 > **[Daniel 7:25](https://www.biblegateway.com/passage/?search=Daniel%207%3A25&version=ESV)** - He shall speak words against the Most High, and shall wear out the saints of the Most High, and shall think to **change the times and the law;** and they shall be given into his hand for a time, times, and half a time. (ESV)
 
-It's a heinous lie from hell that in pleading guilty that the person is admitting blame for the full summary of facts in the charge against them. God sees the heart and the true reasons. A big reason that I pleaded guilty was that I can't plead innocence to accusations about how someone felt harassed - who am I to say they didn't feel harassed? But I still plead guilty because even 1% guilt regarding the charge is not perfect innocence:
+It's a heinous lie from hell that in pleading guilty that the person is surely admitting blame for all accusations made against them, especially when I was not allowed to say anything really - It seemed like I was only allowed one of two options "take the conviction (and from the court's eyes admit all the slander against me is true) or dishonour Jesus by not obeying Jesus".
+
+God sees the heart and the true reasons, and I was aware God was in the situation with me. A big reason that I pleaded guilty was that I can't plead innocence to accusations about how someone felt harassed - who am I to say they didn't feel harassed? But I still plead guilty because even 1% guilt regarding the charge is not perfect innocence:
 
 > **[I Samuel 16:7](https://www.biblegateway.com/passage/?search=1%20Samuel%2016%3A7&version=ESV)** - But the LORD said to Samuel, Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart. (ESV)
 
-A quick search of pleading guilty in New Zealand will tell you that it is an admission of guilt to the charge - well, it might be or it might not be.
-To say that pleading guilty is an admission of all of the accusations against you and accepting the validity of the summary of facts (which was updated an the judge read out, and I had not even seen it, so had no possible way of pleading guilty to what I had not seen) is a heinous lie.
+A quick search of pleading guilty in New Zealand will tell you that it is an admission of guilt to the charge - well, it might be or it might not be - and an admission to the truth of the full set of facts in the 'summary of facts'.
 
-Pleading guilty to a charge can be for the sole reason that a person cannot claim perfect innocence. Also, I did not have access to the updated summary of facts read before me when I was standing there in court submitting my guilty plea having slander from the judge made against me, but Jesus was present and witnessing all of it.
+To say that pleading guilty is an admission of all of the accusations against you and accepting the validity of the summary of facts is a heinous lie unless it is actually true, and for me it is not true that the reason I pleaded guilty is because I believe the summary of facts. There was an almost complete absence of truth from my perspective in the accusations against me, and in the unlawful slander made against me after I was convicted. For the summary of facts had been updated when the judge read them out against me, and I had not even seen it had been updated, even if my lawyer had access to them, there's no way I could truthfully say that "pleading guilty is an admission of guilt to the full set of accusations and an admission that the summary of facts is true".
+
+Pleading guilty to a charge can be for the sole reason that a person cannot claim perfect innocence:
 
 > **[Romans 3:23](https://www.biblegateway.com/passage/?search=Romans%203%3A23&version=ESV)** - for all have sinned and fall short of the glory of God, (ESV)
 
