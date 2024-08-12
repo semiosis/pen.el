@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org6383b12) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orga756839) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -599,7 +599,19 @@ And brought into doing the will of God:
 
 -   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
-Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+Yeah, I agree with John Piper, for the most part. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. Where John Piper says 'affectionate love comes before obedience', I prefer to say that 'treasuring God includes obedience, trust, belief, desiring God, and affectionate love' and I also think that obedience (being in the will of God) may produce work for God but doesn't strictly mean work. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+
+God wants Him to be our treasure. We must obey Jesus and Jehovah Jireh will provide:
+
+I have also had a lot of suffering as I keep a good conscience with God, having been obedient to Him. But a good conscience with God remaining obedient to Him, enduring suffering and continuing to be faithful to God, and keeping the commandments of Jesus Christ while feeling like a zombie having what you love stolen from you by the enemy - this is still love for God to continue keeping the commandments of Jesus Christ.
+
+> **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+Consider Job. Obedience is in the heart, along with belief in the Truth and understanding of the gospel. Obedience can exist without work. Jesus said, "The spirit is indeed willing but the flesh is weak."
+
+> **[Matthew 26:41](https://www.biblegateway.com/passage/?search=Matthew%2026%3A41&version=ESV)** - Watch and pray that you may not enter into temptation. The spirit indeed is willing, but the flesh is weak. (ESV)
+
+Some people endure great suffering for serving God. Our obedience to God, having accepted Jesus, and passing forward love and forgiveness, is having a heart close to Jesus through keeping Jesus' commandments - see I John 4, John 14,15,16 and 17. Now having affections for God is great, but joy can exist alongside . Having a good conscience with God is great. John Piper I think incorrectly says just after [9:39 here](https://youtu.be/Zxahu5y79SA?t=579) that loving Jesus cannot mean obedience to Jesus' commands in this verse. We have to remain faithful to Jesus above all, I think. For the sake of making testimony of Jesus to those who are in darkness, for example. To bear the reproach that Jesus did for the sake of Jesus and His gospel. To remain obedient to the Truth as things are taken away from you, like what happened to Job - this is still love for God, but God wants us to treasure Him more than anything.
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
@@ -660,7 +672,7 @@ As we hold our faith in God, we understand that He loved us first. As we hold ou
 
 > **[Ephesians 2:10](https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=ESV)** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
 
-While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit.
+While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit. Doing the will of God isn't "work", but is a just mode of walking that is different from doing the will of satan.
 
 The reason Abraham's faith was counted as righteousness is because no **distrust** made him waver (Abraham faithfully trusted God regarding the promise). Abraham believed God was able to do what He had promised. So a good **indicator** that Abraham was totally trusting of God is that Abraham walked in the promise of God:
 
@@ -2849,6 +2861,10 @@ We want Jesus, so we should treasure Jesus:
 Jesus must be our number 1 heart's desire:
 
 > **[Matthew 10:37](https://www.biblegateway.com/passage/?search=Matthew%2010%3A37&version=ESV)** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+God wants Him to be our treasure. We must obey Jesus and Jehovah Jireh will provide:
+
+> **[Job 22:24-26](https://www.biblegateway.com/passage/?search=Job%2022%3A24-26&version=ESV)** - **if you lay gold in the dust**, and gold of Ophir among the stones of the torrent bed, **then the Almighty will be your gold and your precious silver. For then you will delight yourself in the Almighty and lift up your face to God.** (ESV)
 
 We must love Jesus by keeping His commandments:
 
@@ -8269,6 +8285,10 @@ We must have faith in Jesus to be justified by faith. God justifies the person w
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified**. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, <ins>God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
+> **[Job 22:30](https://www.biblegateway.com/passage/?search=Job%2022%3A30&version=ESV)** - He delivers even the one who is not innocent, who will be delivered through the cleanness of your hands. (ESV)
+
+> **[Hebrews 13:8](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A8&version=ESV)** - Jesus Christ is the same yesterday and today and forever. (ESV)
+
 **In His flesh** the emnity, which is the Law of commandments contained in ordinances is abolished:
 
 > **[Ephesians 2:14-16](https://www.biblegateway.com/passage/?search=Ephesians%202%3A14-16&version=NASB)** - For He Himself is our peace, who made both groups into one and broke down the barrier of the dividing wall, by **abolishing in His flesh the enmity, which is the Law of commandments contained in ordinances**, so that in Himself He might make the two into one new man, thus establishing peace, and might reconcile them both in one body to God through the cross, by it having put to death the enmity. (NASB)
@@ -9291,7 +9311,7 @@ It was inevitable. The Scripture **had** to be fulfilled:
 
 -   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
-Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+Yeah, I agree with John Piper, for the most part. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. Where John Piper says 'affectionate love comes before obedience', I prefer to say that 'treasuring God includes obedience, trust, belief, desiring God, and affectionate love' and I also think that obedience (being in the will of God) may produce work for God but doesn't strictly mean work. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
@@ -16065,7 +16085,7 @@ The knowledge of Jesus Christ our God and Saviour comes through His words and ob
 
 -   **God wants us to love Him, treasure Him, value Him with **all** our heart, and love and value and treasure one another as ourselves:** [youtube.com: What Is It Like to Enjoy God? @time: 35 min 16 sec](https://youtube.com/watch?v=JkSAMTp5leQ&t=2116)
 
-Yeah, I agree with John Piper. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
+Yeah, I agree with John Piper, for the most part. Loving God is not actually **first** working for God. But it is to truly desire God, and treasure Him, and treasure His word, and treasure His commandments, to give Him [due praise](https://youtu.be/YCz-AN6tO-c?t=1798), and to honour God, and give Him the glory, to love Him in the affectionate and treasuring sense is what God wants of us, and Jesus says that if we love Him then we will keep His commandments. Where John Piper says 'affectionate love comes before obedience', I prefer to say that 'treasuring God includes obedience, trust, belief, desiring God, and affectionate love' and I also think that obedience (being in the will of God) may produce work for God but doesn't strictly mean work. We want to keep His commandments so I believe we should treasure God with all our heart. God also commands us to love one another as ourselves, so we should also love and value other people with that same treasuring love, but God wants Him to be our number one treasure, and I think we have to make God our number one love.
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
