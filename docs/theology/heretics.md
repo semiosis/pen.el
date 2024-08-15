@@ -1,24 +1,25 @@
 
 # Table of Contents
 
-1.  [Valentinus](#org5d6a4cd)
-    1.  [Refutations](#org61ab8e9)
-        1.  [Refutation of All Heresies (Hippolytus)](#org0fa770e)
-2.  [Universal religion](#org0da6635)
-3.  [Mixing paganism with Christianity](#orge14b343)
-4.  [WATV - World Mission Society Church of God](#org3308313)
-5.  [JW](#orgf0a0c32)
-    1.  [Some thoughts I have to correct JW theology](#org02bedba)
-6.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#orgd7a0326)
-7.  [Free-grace without Lordship salvation](#org49abc89)
-8.  [Lordship salvation without free-grace](#orgb94a46e)
-9.  [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org18ec1c2)
-    1.  [They also have to repent from idolatry](#org3b1e173)
-        1.  [Idolatry](#orgf062c06)
-10. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#org6bc77b9)
+1.  [Valentinus](#orgb65ab47)
+    1.  [Refutations](#org040bff6)
+        1.  [Refutation of All Heresies (Hippolytus)](#orgb8cb30a)
+2.  [Universal religion](#orgd2b2973)
+3.  [Mixing paganism with Christianity](#org1597235)
+4.  [WATV - World Mission Society Church of God](#org2e84479)
+5.  [JW](#org6ad9520)
+    1.  [Some thoughts I have to correct JW theology](#org1f44eb4)
+        1.  [The divine name](#orgba24042)
+6.  [In my independent Bible-Studying, I have not yet delved into many modern Christian sects](#org1d91e9e)
+7.  [Free-grace without Lordship salvation](#orgedec896)
+8.  [Lordship salvation without free-grace](#orgfe2196c)
+9.  [Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus](#org13bf37b)
+    1.  [They also have to repent from idolatry](#org0b0a5ec)
+        1.  [Idolatry](#orgce2a2e0)
+10. [People who twist the Scriptures to seek worldly prosperity instead of following Jesus](#org131da29)
 
 
-<a id="org5d6a4cd"></a>
+<a id="orgb65ab47"></a>
 
 # Valentinus
 
@@ -28,26 +29,26 @@ But I think at least they tried to conform to the image of Christ from what I ca
 So, yeah, a lot of modern-day Christianity is probably even more heretical than Valentinianism to be honest.
 
 
-<a id="org61ab8e9"></a>
+<a id="org040bff6"></a>
 
 ## Refutations
 
 
-<a id="org0fa770e"></a>
+<a id="orgb8cb30a"></a>
 
 ### Refutation of All Heresies (Hippolytus)
 
 [CHURCH FATHERS: Refutation of All Heresies, Book VI {Hippolytus}](https://www.newadvent.org/fathers/050106.htm)
 
 
-<a id="org0da6635"></a>
+<a id="orgd2b2973"></a>
 
 # Universal religion
 
 -   trying to unite all religions as if they are all equal
 
 
-<a id="orge14b343"></a>
+<a id="org1597235"></a>
 
 # Mixing paganism with Christianity
 
@@ -56,7 +57,7 @@ So, yeah, a lot of modern-day Christianity is probably even more heretical than 
 It disgusts me when people pursue paganism, the occult and demons.
 
 
-<a id="org3308313"></a>
+<a id="org2e84479"></a>
 
 # WATV - World Mission Society Church of God
 
@@ -68,7 +69,7 @@ It disgusts me when people pursue paganism, the occult and demons.
     -   They believe Gentiles are under the Mosaic law.
 
 
-<a id="orgf0a0c32"></a>
+<a id="org6ad9520"></a>
 
 # JW
 
@@ -77,7 +78,7 @@ I have reason to believe that Jesus is not Michael the Archangel:
 > **[Mark 13:32-33](https://www.biblegateway.com/passage/?search=Mark%2013%3A32-33&version=ESV)** - But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father. Be on guard, keep awake. For you do not know when the time will come. (ESV)
 
 
-<a id="org02bedba"></a>
+<a id="org1f44eb4"></a>
 
 ## Some thoughts I have to correct JW theology
 
@@ -107,10 +108,13 @@ God acts for those who wait for Him:
 
 > **[Isaiah 64:4](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A4&version=ESV)** - From of old no one has heard or perceived by the ear, no eye has seen a God besides you, **who acts** <span class="underline">for those who wait for him</span>. (ESV)
 
-<https://stmarkcharlotte.org/wp-content/uploads/2018/12/The-Heresy-of-Jevhovah_s-Witness.pdf>
+I have not read all of this, and I can't affirm what I have not read:
+
+-   <https://stmarkcharlotte.org/wp-content/uploads/2018/12/The-Heresy-of-Jevhovah_s-Witness.pdf>
 
 The JW believe that the Lord Jesus Christ was assigned as a son
 to God in Baptism, which was the beginning of his second birth.
+
 The Lord Jesus Christ became a spiritual son to God in it, and a
 king over the Kingdom of Jehovah. Actually, Baptism was one
 of the occasions in which the Father witnessed to this Sonship
@@ -119,23 +123,13 @@ saying, “This is My beloved Son, in whom I am well pleased”
 
 > **[Matthew 3:17](https://www.biblegateway.com/passage/?search=Matthew%203%3A17&version=ESV)** - and behold, a voice from heaven said, This is my beloved Son, with whom I am well pleased. (ESV)
 
+-   **Jesus is **the** Son of God:** [biblehub.com 1-34.htm: John 1:34 Interlinear: and I have seen, and have testified, that this is the Son of God.'](https://biblehub.com/interlinear/john/1-34.htm)
+
 John the Baptist also witnessed to this, saying,
 “And I have seen and testified that this is the Son of God”
 ([John 1:34](https://www.biblegateway.com/passage/?search=John%201%3A34&version=ESV)):
 
 > **[John 1:34](https://www.biblegateway.com/passage/?search=John%201%3A34&version=ESV)** - And I have seen and have borne witness that this is the Son of God. (ESV)
-
-People will live happily in this earthly paradise and Isaiah’s
-prophecy will be fulfilled in them, “They shall build houses
-and inhabit them; They shall plant vineyards and eat their
-fruit” (Isaiah 65..21).
-
-In reply to this heresy we say:
-(1) The promise of granting them the earth, houses and trees is
-against the eternal joy that the Holy Bible spoke about, “Eye
-has not seen, nor ear heard, nor have entered into the heart of
-man the things which God has prepared for those who love
-Him” ([1 Corinthians 2:9](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A9&version=ESV))
 
 > **[I Corinthians 2:9](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A9&version=ESV)** - But, as it is written, What no eye has seen, nor ear heard, nor the heart of man imagined, what God has prepared for those who love him— (ESV)
 
@@ -143,10 +137,54 @@ Him” ([1 Corinthians 2:9](https://www.biblegateway.com/passage/?search=1%20Cor
 
 Ultimately, it's not about what we can do for God but for what God has done for us.
 
+Also, I believe that Jesus was from the very beginning Jehovah's Son.
+
+> **[John 1:1-2](https://www.biblegateway.com/passage/?search=John%201%3A1-2&version=ESV)** - In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. (ESV)
+
 AMEN!!
 
 
-<a id="orgd7a0326"></a>
+<a id="orgba24042"></a>
+
+### The divine name
+
+Jehovah's Witnesses believe that God's one true name-the name by which he must be identified-is Jehovah.
+
+I'm with the JW on this. God's name must be remembered.
+
+    1  Yhvh: the proper name of the God of Israel
+    2  Original Word: יְהוָֹה
+    3  Part of Speech: Proper Name
+    4  Transliteration: Yhvh
+    5  Phonetic Spelling: (yeh-ho-vaw')
+    6  Definition: the proper name of the God of Israel
+
+> **[Exodus 3:15](https://www.biblegateway.com/passage/?search=Exodus%203%3A15&version=ESV)** - God also said to Moses, Say this to the people of Israel, The LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm)), the God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has sent me to you. **This is my name forever, and thus I am to be remembered throughout all generations.** (ESV)
+
+I think it's important to affirm that this is God's name to be remembered throughout all generations, however we are not supposed to **misuse** the LORD's name.
+
+God is identified by many names, including:
+
+-   God (Hb. 'elohim; [Gen. 1:1](https://www.biblegateway.com/passage/?search=Genesis%201%3A1&version=ESV)),
+    -   **[Genesis 1:1](https://www.biblegateway.com/passage/?search=Genesis%201%3A1&version=ESV)** - In the beginning, God created the heavens and the earth. (ESV)
+-   God Almighty (Hb. 'El Shadday; [Gen. 17:1](https://www.biblegateway.com/passage/?search=Genesis%2017%3A1&version=ESV)),
+    -   **[Genesis 17:1](https://www.biblegateway.com/passage/?search=Genesis%2017%3A1&version=ESV)** - When Abram was ninety-nine years old the LORD appeared to Abram and said to him, I am God Almighty; walk before me, and be blameless, (ESV)
+-   Lord (Hb. 'Adonay; [Ps. 8:1](https://www.biblegateway.com/passage/?search=Psalms%208%3A1&version=ESV)), and
+    -   **[Psalms 8:1](https://www.biblegateway.com/passage/?search=Psalms%208%3A1&version=ESV)** - O LORD, our Lord, how majestic is your name in all the earth! You have set your glory above the heavens. (ESV)
+-   Lord of hosts (Hb. yhwh tseba'ot; [1 Sam. 1:3](https://www.biblegateway.com/passage/?search=1%20Samuel%201%3A3&version=ESV)).
+    -   **[I Samuel 1:3](https://www.biblegateway.com/passage/?search=1%20Samuel%201%3A3&version=ESV)** - Now this man used to go up year by year from his city to worship and to sacrifice to the LORD of hosts at Shiloh, where the two sons of Eli, Hophni and Phinehas, were priests of the LORD. (ESV)
+
+In NT times, Jesus referred to God as "Father" (Gk. Pater; [Matt. 6:9](https://www.biblegateway.com/passage/?search=Matthew%206%3A9&version=ESV)), as did the apostles ([1 Cor. 1:3](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A3&version=ESV)).
+
+> **[Matthew 6:9](https://www.biblegateway.com/passage/?search=Matthew%206%3A9&version=ESV)** - Pray then like this: Our Father in heaven, hallowed be your name. (ESV)
+
+> **[I Corinthians 1:3](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A3&version=ESV)** - Grace to you and peace from God our Father and the Lord Jesus Christ. (ESV)
+
+I consider that the reason for this is simply in that we do not take the LORD's name in vain.
+But we also want the LORD's name to be remembered.
+
+
+<a id="org1d91e9e"></a>
 
 # In my independent Bible-Studying, I have not yet delved into many modern Christian sects
 
@@ -157,7 +195,7 @@ But I find this person's website trustworthy:
 <https://jesusisgodandlordministries.com/>
 
 
-<a id="org49abc89"></a>
+<a id="orgedec896"></a>
 
 # Free-grace without Lordship salvation
 
@@ -215,7 +253,7 @@ We must accept this teaching:
 AMEN!!
 
 
-<a id="orgb94a46e"></a>
+<a id="orgfe2196c"></a>
 
 # Lordship salvation without free-grace
 
@@ -234,7 +272,7 @@ I think that actually following Jesus is probably superior to someone who says t
 > **[Matthew 12:50](https://www.biblegateway.com/passage/?search=Matthew%2012%3A50&version=ESV)** - For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
 
 
-<a id="org18ec1c2"></a>
+<a id="org13bf37b"></a>
 
 # Can other religions exist anywhere in the Kingdom of God. They have to put their faith in and follow Jesus
 
@@ -289,7 +327,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[James 1:26](https://www.biblegateway.com/passage/?search=James%201%3A26&version=ESV)** - If anyone thinks he is religious and does not bridle his tongue but deceives his heart, this person's religion is worthless. Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.
 
 
-<a id="org3b1e173"></a>
+<a id="org0b0a5ec"></a>
 
 ## They also have to repent from idolatry
 
@@ -298,7 +336,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[I Corinthians 10:14-31](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A14-31&version=ESV)** - Therefore, my beloved, flee from idolatry. I speak as to sensible people; judge for yourselves what I say. The cup of blessing that we bless, is it not a participation in the blood of Christ? The bread that we break, is it not a participation in the body of Christ? Because there is one bread, we who are many are one body, for we all partake of the one bread. Consider the people of Israel: are not those who eat the sacrifices participants in the altar? What do I imply then? That food offered to idols is anything, or that an idol is anything? No, I imply that what pagans sacrifice they offer to demons and not to God. I do not want you to be participants with demons. **You cannot drink the cup of the Lord and the cup of demons. You cannot partake of the table of the Lord and the table of demons**. Shall we provoke the Lord to jealousy? Are we stronger than he? All things are lawful, but not all things are helpful. All things are lawful, but not all things build up. Let no one seek his own good, but the good of his neighbor. Eat whatever is sold in the meat market without raising any question on the ground of conscience. For the earth is the Lord's, and the fullness thereof. If one of the unbelievers invites you to dinner and you are disposed to go, eat whatever is set before you without raising any question on the ground of conscience. But if someone says to you, This has been offered in sacrifice, then do not eat it, for the sake of the one who informed you, and for the sake of conscience— I do not mean your conscience, but his. For why should my liberty be determined by someone else's conscience? If I partake with thankfulness, why am I denounced because of that for which I give thanks? So, whether you eat or drink, or whatever you do, do all to the glory of God.
 
 
-<a id="orgf062c06"></a>
+<a id="orgce2a2e0"></a>
 
 ### Idolatry
 
@@ -309,7 +347,7 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 > **[Psalms 106:20](https://www.biblegateway.com/passage/?search=Psalms%20106%3A20&version=ESV)** - They exchanged the glory of God for the image of an ox that eats grass.􂉢
 
 
-<a id="org6bc77b9"></a>
+<a id="org131da29"></a>
 
 # People who twist the Scriptures to seek worldly prosperity instead of following Jesus
 
