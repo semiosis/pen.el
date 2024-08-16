@@ -370,7 +370,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf28e452) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org367a5da) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -11149,7 +11149,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org23935a7)
+See: [33.4.1](#orgfd049b2)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -15930,6 +15930,29 @@ Jesus has to be our Pearl of Great price:
 > **[Matthew 13:45-46](https://www.biblegateway.com/passage/?search=Matthew%2013%3A45-46&version=ESV)** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. (ESV)
 
 -   **Song:** [youtube.com: Be the Centre - Michael Frye](https://www.youtube.com/watch?v=MERQ0P6O0CE)
+
+
+### Heavenly treasure and the Pearl of Great Price
+
+The Pearl of Great Price, Jesus and Jesus' gospel:
+
+> **[Matthew 13:45-46](https://www.biblegateway.com/passage/?search=Matthew%2013%3A45-46&version=ESV)** - Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it. (ESV)
+
+The Pearl of Great Price is Jesus and we want to gain Christ, know Christ and invest our lives for His gospel. In following Jesus, eternal life is still a free gift because as Paul says here, what we give up is worthless compared to knowing Christ:
+
+> **[Philippians 3:8](https://www.biblegateway.com/passage/?search=Philippians%203%3A8&version=ESV)** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
+
+> **[Matthew 16:25](https://www.biblegateway.com/passage/?search=Matthew%2016%3A25&version=ESV)** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+
+> **[Mark 8:35](https://www.biblegateway.com/passage/?search=Mark%208%3A35&version=ESV)** - For whoever would save his life will lose it, but whoever loses his life for my sake and the gospel's will save it. (ESV)
+
+Heavenly treasure - we give up our earthly treasure and help other people with it and this becomes heavenly treasure, and we then go after Jesus as our Pearl of Great Price:
+
+> **[Matthew 6:19-21](https://www.biblegateway.com/passage/?search=Matthew%206%3A19-21&version=ESV)** - Do not lay up for yourselves treasures on earth, where moth and rust destroy and where thieves break in and steal, but lay up for yourselves treasures in heaven, where neither moth nor rust destroys and where thieves do not break in and steal. For where your treasure is, there your heart will be also. (ESV)
+
+> **[Matthew 19:21](https://www.biblegateway.com/passage/?search=Matthew%2019%3A21&version=ESV)** - Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
+
+Also, I still think that people, and acts of kindness towards people can be heavenly treasure, but they should not be our number 1 treasure. Jesus must be.
 
 
 ### We need to treasure Jesus, and from there we should keep Jesus' commandments. Jesus must be our number 1
@@ -21069,6 +21092,9 @@ I kinda want to just develop my relationship with Jesus right now. I desire that
 
 > **[Romans 6:4](https://www.biblegateway.com/passage/?search=Romans%206%3A4&version=ESV)** - We were buried therefore with him by baptism into death, in order that, just as Christ was raised from the dead by the glory of the Father, we too might walk in **newness of life**. (ESV)
 
+I somewhat disagree with Mari saying that the book of Proverbs teaches [strictly] earthly wisdom, and not heavenly wisdom because I think there is a lot of heavenly wisdom in there.
+But I find the rest of this quote helpful.
+
 -   **[Quote from Mar Mari Emmanuel](https://youtu.be/11z22HR1KHo?t=3192):** Whenever there is a couple coming for marital
     counseling, I always refer to the Book of
     Proverbs (King Solomon) chapter 31, verse 10.
@@ -23732,7 +23758,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org23935a7)
+See: [33.4.1](#orgfd049b2)
 
 To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
 
@@ -27519,6 +27545,19 @@ I still get encouragements such as this from God.
 I also got a bunch of pictures of my family.
 
 
+### We can rest in God and don't need to trust in our own understanding too much
+
+> **[Psalms 131:1-3](https://www.biblegateway.com/passage/?search=Psalms%20131%3A1-3&version=ESV)** - O LORD, **my heart is not lifted up; my eyes are not raised too high; I do not occupy myself with things too great and too marvelous for me.** A Song of Ascents. Of David. But I have calmed and quieted my soul, like a weaned child with its mother; like a weaned child is my soul within me. O Israel, **hope in the LORD from this time forth and forevermore.** (ESV)
+
+> **[Proverbs 3:5-6](https://www.biblegateway.com/passage/?search=Proverbs%203%3A5-6&version=ESV)** - Trust in the LORD with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths. (ESV)
+
+> **[Isaiah 55:8-9](https://www.biblegateway.com/passage/?search=Isaiah%2055%3A8-9&version=ESV)** - For my thoughts are not your thoughts, neither are your ways my ways, declares the LORD. For as the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts. (ESV)
+
+God has made Christ Jesus our wisdom:
+
+> **[I Corinthians 1:30](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A30&version=ESV)** - He is the source of your life in Christ Jesus, whom **God made our wisdom** and **our righteousness and sanctification and redemption.** (ESV)
+
+
 ## The Way is available for everyone, but not everyone ends up walking it
 
 Jesus made the Way - He **is** the Way:
@@ -28251,6 +28290,10 @@ The world (the remaining people, who have not repented) may know that Father God
 
 > **[John 10:18](https://www.biblegateway.com/passage/?search=John%2010%3A18&version=ESV)** - No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. (ESV)
 
+> **[Luke 11:47-51](https://www.biblegateway.com/passage/?search=Luke%2011%3A47-51&version=ESV)** - Woe to you! For you build the tombs of the prophets whom your fathers killed. So you are witnesses and you consent to the deeds of your fathers, for they killed them, and you build their tombs. Therefore also **the Wisdom of God said**, I will send them prophets and apostles, some of whom they will kill and persecute, so that the blood of all the prophets, shed from the foundation of the world, may be charged against this generation, from the blood of Abel to the blood of Zechariah, who perished between the altar and the sanctuary. Yes, I tell you, it will be required of this generation. (ESV)
+
+> **[I Corinthians 1:30](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A30&version=ESV)** - He is the source of your life in Christ Jesus, whom **God made our wisdom** and **our righteousness and sanctification and redemption.** (ESV)
+
 
 # Sun's light failing as the curtain was torn and Jesus died
 
@@ -28565,6 +28608,10 @@ My trust is in Jesus.
 I am justified by faith in Jesus Christ who has set me free from the law of sin and death.
 The law of the spirit of life in Christ has set me free from the law of sin and death.
 In Christ I am justified by His blood as I have placed by faith in Him and continue to trust Him and obey Him. He takes care of me.
+
+God has made Christ Jesus our wisdom:
+
+> **[I Corinthians 1:30](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A30&version=ESV)** - He is the source of your life in Christ Jesus, whom **God made our wisdom** and **our righteousness and sanctification and redemption.** (ESV)
 
 My justification and salvation are absolutely reliant on Him and He is faithful even when I am unfaithful.
 
