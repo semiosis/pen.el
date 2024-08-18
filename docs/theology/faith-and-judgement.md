@@ -376,7 +376,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgc7793f0) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org771c9ab) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -4129,13 +4129,62 @@ In order to know God we must love one another in the way that God has loved us:
 > **[I John 4:7-12](https://www.biblegateway.com/passage/?search=1%20John%204%3A7-12&version=ESV)** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. Anyone who does not love does not know God, because God is love. In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. (ESV)
 
 
-### Joy requires apostolic work
+### Joy and obedience - we want both of them at the same time
 
-I agree whole heartedly with John Piper here:
+John Piper stresses that although obeying sin
+steals your joy, making Jesus your Pearl of Great Price makes
+it much easier to forsake sin.
 
--   [youtube.com: The Blazing Center by John Piper](https://www.youtube.com/watch?v=4ltvYtwMef4)
+-   **[youtube.com: What Comes First: My Obedience to Jesus or My Joy in Jesus?](https://www.youtube.com/watch?v=Amx6M8fsnEw):** When we are living
+    in disobedience to Christ our joy in him
+    will be minimal or non-existent
+    depending on the depth and duration of
+    the disobedience.
+    
+    By all means forsake bad
+    behaviors but mainly the battle is look
+    to Jesus look to all that God is for you
+    in him and pray for eyes to see his all
+    satisfying beauty and worth so that you
+    rest in him and are so satisfied that
+    the root of sin is severed and you walk
+    in obedience.
 
-***Quote from John Piper:***
+I personally believe that **joy comes from having been given and maintaining a good conscience with God**.
+
+> **[II Corinthians 1:12](https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A12&version=ESV)** - For our boast is this: the testimony of our conscience that we behaved in the world with simplicity and godly sincerity, not by earthly wisdom but by the grace of God, and supremely so toward you. (ESV)
+
+-   **[johnrasicci.wordpress.com: JOY FROM A CLEAR CONSCIENCE | John Rasicci](https://johnrasicci.wordpress.com/2022/08/10/joy-from-a-clear-conscience/):** We cannot deceive ourselves either by simply
+    proclaiming we are the righteousness of God in
+    Christ while living in sin.
+    
+    There is a difference in claiming to be the
+    righteousness of God in Christ ([2 Corinthians 5:21](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21&version=ESV)) and actually
+    living righteously ([Titus 2:12](https://www.biblegateway.com/passage/?search=Titus%202%3A12&version=ESV);
+    also called the fruits of righteousness
+    [Philippians 1:11](https://www.biblegateway.com/passage/?search=Philippians%201%3A11&version=ESV)).
+    
+    The former speaks of our spiritual position in
+    Christ by the grace of God but the latter
+    speaks of our practice, the obedience of our
+    faith, our behavior, and our actual daily
+    conduct.
+    
+    Our position was by the work of Jesus; our
+    practice is by our work.
+    
+    God sees both our position in Christ and our
+    practice ([Hebrews 4:13](https://www.biblegateway.com/passage/?search=Hebrews%204%3A13&version=ESV)). Calvary didn’t blind God.
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
+> **[II Timothy 1:3](https://www.biblegateway.com/passage/?search=2%20Timothy%201%3A3&version=ESV)** - I thank God whom I serve, as did my ancestors, with a clear conscience, as I remember you constantly in my prayers night and day. (ESV)
+
+I also affirm the Didache here which shows that the upwards-call of the Christian absolutely involves making earthly sacrifices as we serve Jesus, and there are degrees of glory as we are conformed to Jesus' image:
+
+> **[Didache Chapter 6](https://www.earlychristianwritings.com/text/didache-roberts.html)** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
+
+***Now from John Piper:***
 
 > I'm dealing with the issue of God's
 > glory and our gladness. Can they really
@@ -4173,8 +4222,7 @@ I agree whole heartedly with John Piper here:
 
 > I was amazed when I saw that.
 > Paul says "I'm a worker for your joy" as
-> though **Joy requires apostolic work, and
-> if it does for him it does for me.** And so
+> though **Joy requires apostolic work, and if it does for him it does for me.** And so
 > yeah there are times in the ministerial
 > life or the Christian Life when we're
 > low. It seems like all the joy is gone we
@@ -4183,6 +4231,10 @@ I agree whole heartedly with John Piper here:
 > need to fight like heaven to hold on.
 
 -   **Sermon:** [youtube.com: Sustaining Joy in Christ](https://www.youtube.com/watch?v=H8whTwDoiNA)
+
+I believe that the freedom we have in Christ is for serving Jesus, and we have a heavenly perspective:
+
+> **[Colossians 3:22-25](https://www.biblegateway.com/passage/?search=Colossians%203%3A22-25&version=ESV)** - Slaves, obey in everything those who are your earthly masters, not by way of eye-service, as people-pleasers, but with sincerity of heart, fearing the Lord. Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
 
 ### We are bought with the precious blood of Christ and we should be obedient to God
@@ -5081,6 +5133,8 @@ That's right, and Abraham's faith included:
 -   works of faith
     -   not works of the law (which came later), but the works of faith such as:
         -   not accepting gifts from the king of Sodom
+            -   An interesting parallel is how the Apostle John's children/disciples were walking in love while walking in the truth, and rejecting offerings from Gentiles who were not walking in the truth:
+            -   **[III John 1:4-8](https://www.biblegateway.com/passage/?search=3%20John%201%3A4-8&version=ESV)** - I have no greater joy than to hear that **my children are walking in the truth**. Beloved, it is a <ins>faithful thing **you do** in all your efforts for these brothers</ins>, strangers as they are, who **testified to your love before the church**. You will do well to send them on their journey in a manner worthy of God. For they have gone out **for the sake of the name, accepting nothing from the Gentiles**. Therefore we ought to support people like these, that we may be fellow workers for the truth. (ESV)
         -   placing Isaac on the Altar
         -   etc.
 
@@ -6658,6 +6712,10 @@ But we must be walking in the light, just as He is in the light.
 > **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** - But <ins>**if we walk in the light**</ins>, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
 
 So the blood of Jesus covers us while we are following Him.
+
+The Apostle John's children/disciples were walking in love while walking in the truth, and rejecting offerings from Gentiles who were not walking in the truth:
+
+> **[III John 1:4-8](https://www.biblegateway.com/passage/?search=3%20John%201%3A4-8&version=ESV)** - I have no greater joy than to hear that **my children are walking in the truth**. Beloved, it is a <ins>faithful thing **you do** in all your efforts for these brothers</ins>, strangers as they are, who **testified to your love before the church**. You will do well to send them on their journey in a manner worthy of God. For they have gone out **for the sake of the name, accepting nothing from the Gentiles**. Therefore we ought to support people like these, that we may be fellow workers for the truth. (ESV)
 
 
 ### Do not condemn others. Speak the truth and leave judgement to the Judge
@@ -11209,7 +11267,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org1488ded)
+See: [33.4.1](#org051cd56)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -16804,6 +16862,10 @@ Abram, in an act of faith with faithfulness, displayed loyalty to God. Abram wan
 
 > **[Genesis 14:21-24](https://www.biblegateway.com/passage/?search=Genesis%2014%3A21-24&version=ESV)** - And the king of Sodom said to Abram, Give me the persons, but take the goods for yourself. But Abram said to the king of Sodom, I have lifted my hand to the Lord, God Most High, Possessor of heaven and earth, that I would not take a thread or a sandal strap or anything that is yours, lest you should say, I have made Abram rich. I will take nothing but what the young men have eaten, and the share of the men who went with me. Let Aner, Eshcol, and Mamre take their share.
 
+The Apostle John's children/disciples were walking in love while walking in the truth, and rejecting offerings from Gentiles who were not walking in the truth:
+
+> **[III John 1:4-8](https://www.biblegateway.com/passage/?search=3%20John%201%3A4-8&version=ESV)** - I have no greater joy than to hear that **my children are walking in the truth**. Beloved, it is a <ins>faithful thing **you do** in all your efforts for these brothers</ins>, strangers as they are, who **testified to your love before the church**. You will do well to send them on their journey in a manner worthy of God. For they have gone out **for the sake of the name, accepting nothing from the Gentiles**. Therefore we ought to support people like these, that we may be fellow workers for the truth. (ESV)
+
 God noticed and gave Abram a vision and made a promise to Abram, and Abram believed God and God counted it to Abram as righteousness.
 
 > **[Genesis 15:1](https://www.biblegateway.com/passage/?search=Genesis%2015%3A1&version=ESV)** - After these things the word of the Lord came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great. But Abram said, O Lord God, what will you give me, for I continue childless, and the heir of my house is Eliezer of Damascus? And Abram said, Behold, you have given me no offspring, and a member of my household will be my heir. And behold, the word of the Lord came to him: This man shall not be your heir; your very own son shall be your heir. And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
@@ -19775,11 +19837,13 @@ And Jesus is with us in Spirit:
 
 > **[Hebrews 10:19](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A19&version=ESV)** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh,
 
-> **Didache 10:6** - Let grace come, and let this world pass away. Hosanna to the Son of David. If any one is holy let him come (to the Eucharist); if any one is not, let him repent. Maranatha. Amen.
+> **[Didache 10:6](https://www.earlychristianwritings.com/text/didache-roberts.html)** - Let grace come, and let this world pass away. Hosanna to the Son of David. If any one is holy let him come (to the Eucharist); if any one is not, let him repent. Maranatha. Amen.
 
 Proclaim the Lord's death until He comes:
 
 > **[I Corinthians 11:25-26](https://www.biblegateway.com/passage/?search=1%20Corinthians%2011%3A25-26&version=ESV)** - In the same way also he took the cup, after supper, saying, This cup is the new covenant in my blood. Do this, as often as you drink it, in remembrance of me. For as often as you eat this bread and drink the cup, you proclaim the Lord's death until he comes.
+
+Do not in any way forsake the commandments of the Lord; but keep what you have received, neither adding thereto nor taking away therefrom. In the church you shall acknowledge your transgressions, and you shall not come near for your prayer with an evil conscience. This is the way of life.
 
 
 ### Getting Jesus' words in us helps us to abide in Him
@@ -19946,7 +20010,7 @@ Jesus' sacrifice is comprehensive:
 
 > **[Philippians 3:14](https://www.biblegateway.com/passage/?search=Philippians%203%3A14&version=ESV)** - I press on toward the goal for the prize of **the upward call of God in Christ Jesus.** (ESV)
 
-> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
+> **[Didache Chapter 6](https://www.earlychristianwritings.com/text/didache-roberts.html)** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
 
 > **[Matthew 5:47-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A47-48&version=ESV)** - And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect.
 
@@ -22289,7 +22353,7 @@ We must value Jesus above all and detach from our old life. Coming after Jesus a
 
 I appreciate the Didache's teaching on this because it shows there is an upwards call:
 
-> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
+> **[Didache Chapter 6](https://www.earlychristianwritings.com/text/didache-roberts.html)** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
 
 We are perfected (completed), transformed into His image, from one degree of glory to another:
 
@@ -22938,7 +23002,7 @@ I'm reluctant to use external sources outside of the Bible, but this is also des
 
 The Didache's estimated range of dating is 50-120 A.D, according to [earlychristianwritings.com](https://www.earlychristianwritings.com/text/didache-roberts.html).
 
-> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
+> **[Didache Chapter 6](https://www.earlychristianwritings.com/text/didache-roberts.html)** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
 
 > **[Matthew 5:47-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A47-48&version=ESV)** - And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect.
 
@@ -22963,6 +23027,10 @@ I'm still trying to figure out how Jesus' yoke is easy. I guess that if a person
 Thanks to Jesus' endurance, His spirit empowers us to live as He lived, and to be conformed to His image. God's strength does not guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
 
 > **[Hebrews 12:1-3](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1-3&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
+
+I believe that the freedom we have in Christ is for serving Jesus, and we have a heavenly perspective:
+
+> **[Colossians 3:22-25](https://www.biblegateway.com/passage/?search=Colossians%203%3A22-25&version=ESV)** - Slaves, obey in everything those who are your earthly masters, not by way of eye-service, as people-pleasers, but with sincerity of heart, fearing the Lord. Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For the wrongdoer will be paid back for the wrong he has done, and there is no partiality. (ESV)
 
 
 ### The upward call of God in Christ Jesus
@@ -23876,7 +23944,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org1488ded)
+See: [33.4.1](#org051cd56)
 
 To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
 
