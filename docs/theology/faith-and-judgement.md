@@ -376,7 +376,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org9ba1ef1) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgc7793f0) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -4464,13 +4464,33 @@ I agree whole heartedly with this guy:
 
 -   [Are All Christians Disciples? (Lordship Salvation)](https://www.youtube.com/watch?v=BCQX4R1mFAk)
 
-I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian:
+I believe that generally-speaking, there is no difference between being a disciple of Jesus and a Christian because those who have faith in Jesus will do works He does. Some disciples of Jesus turned away. Some believes in Jesus became His disciples:
+
+> **[Acts 11:21](https://www.biblegateway.com/passage/?search=Acts%2011%3A21&version=ESV)** - And the hand of the Lord was with them, and a great number who believed turned to the Lord. (ESV)
+
+We're clearly instructed to be disciples:
+
+> **[Matthew 28:19-20](https://www.biblegateway.com/passage/?search=Matthew%2028%3A19-20&version=ESV)** - Go therefore and **make disciples** of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to **observe all that I have commanded you**. And behold, I am with you always, to the end of the age. (ESV)
+
+> **John 13:35** - By this all people will know that you are my disciples, if you have love for one another. (ESV)
+
+> **John 15:8** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
+
+> **Luke 14:33** - So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+
+> **Luke 14:27** - Whoever does not bear his own cross and come after me cannot be my disciple. (ESV)
+
+In fact I think we should be both a believer and a disciple to be sanctified by the truth and regarded by God as on of His saints:
 
 > **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from **the Lord who is the Spirit.** (ESV)
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
 > **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+
+I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Saints both believe and keep the God's commandments. Believing disciples of Jesus may become saints.
+
+> **[II Thessalonians 1:9-12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%201%3A9-12&version=ESV)** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
 
 There is a transformation in the heart of a born-again Christian that involves changing allegiance towards Jesus Christ, resulting in the will to obey Jesus, and God gives us the spirit to help us to obey Him.
 
@@ -5967,7 +5987,7 @@ God forgive us and grant us sanctification. I know I still have issues, and I wa
 
 > **[Luke 9:23-24](https://www.biblegateway.com/passage/?search=Luke%209%3A23-24&version=ESV)** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
 
-> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate (**[miseo](https://biblehub.com/greek/3404.htm)**) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
 
 > **[Luke 14:27](https://www.biblegateway.com/passage/?search=Luke%2014%3A27&version=ESV)** - Whoever does not bear his own cross and come after me cannot be my disciple. (ESV)
 
@@ -8000,7 +8020,7 @@ Follow Jesus through the new and living Way:
 
 > **[Hebrews 10:19-27](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A19-27&version=ESV)** - Therefore, brothers, since we have confidence to enter the holy places by the blood of Jesus, by the new and living way that he opened for us through the curtain, that is, through his flesh, and since we have a great priest over the house of God, let us draw near with a true heart in full assurance of faith, with our hearts sprinkled clean from an evil conscience and our bodies washed with pure water. Let us hold fast the confession of our hope without wavering, for he who promised is faithful. And let us consider how to stir up one another to love and good works, not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near. For if we go on sinning deliberately after receiving the knowledge of the truth, there no longer remains a sacrifice for sins, but a fearful expectation of judgment, and a fury of fire that will consume the adversaries.
 
-We are ransommed by the blood of Jesus and the blood of Jesus continues to cleanse us as we walk in the light, as we obey the truth:
+We are ransommed by the blood of Jesus and the blood of Jesus [continues to cleanse us](https://youtube.com/shorts/BfiAKyv93DE) as we walk in the light, as we obey the truth:
 
 > **[I Peter 1:16-22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A16-22&version=ESV)** - since it is written, **You shall be holy, for I am holy**. And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that **you were ransomed from the futile ways** inherited from your forefathers, not with perishable things such as silver or gold, but **with the precious blood of Christ, like that of a lamb without blemish or spot**. He was foreknown before the foundation of the world but was made manifest in the last times for your sake, who through him are believers in God, who raised him from the dead and gave him glory, so that your faith and hope are in God. **Having purified your souls by your obedience to the truth** for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
 
@@ -11189,7 +11209,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org617b07e)
+See: [33.4.1](#org1488ded)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14052,7 +14072,7 @@ As the Apostle Paul asks, "Let no one cause me trouble, for I bear on my body th
 
 > **[Galatians 6:14-17](https://www.biblegateway.com/passage/?search=Galatians%206%3A14-17&version=ESV)** - But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world. For neither circumcision counts for anything, nor uncircumcision, but a new creation. And as for all who walk by this rule, peace and mercy be upon them, and upon the Israel of God. From now on **let no one cause me trouble**, for I bear on my body the marks of Jesus. (ESV)
 
-Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus.
+Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
 > **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
@@ -15998,7 +16018,7 @@ The Pearl of Great Price, Jesus and Jesus' gospel:
 
 The Pearl of Great Price is Jesus and we want to gain Christ, know Christ and invest our lives for His gospel. In following Jesus, eternal life is still a free gift because as Paul says here, what we give up is worthless compared to knowing Christ:
 
-> **[Philippians 3:8](https://www.biblegateway.com/passage/?search=Philippians%203%3A8&version=ESV)** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
+> **[Philippians 3:7-8](https://www.biblegateway.com/passage/?search=Philippians%203%3A7-8&version=ESV)** - But whatever gain I had, I counted as loss for the sake of Christ. Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
 
 > **[Matthew 16:25](https://www.biblegateway.com/passage/?search=Matthew%2016%3A25&version=ESV)** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
 
@@ -16593,7 +16613,7 @@ Potentially still driven by:
 
 ## A disciple of Jesus - someone who has been obedient to Jesus
 
-Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus.
+Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
 > **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
@@ -16664,7 +16684,7 @@ And build each other up to help each other attain unity of faith and knowledge o
 Support and encourage them for correction with regards to sound doctrine that is Scriptural, bearing their burdens as a disciple bears others' burdens, because it's a profound a real thing to be born-again of the Spirit and walk in obedience to Jesus, and the teachings of Christ
 are supposed to be followed by Christians.
 
-Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus.
+Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
 > **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
@@ -19926,7 +19946,7 @@ Jesus' sacrifice is comprehensive:
 
 > **[Philippians 3:14](https://www.biblegateway.com/passage/?search=Philippians%203%3A14&version=ESV)** - I press on toward the goal for the prize of **the upward call of God in Christ Jesus.** (ESV)
 
-> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.
+> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
 
 > **[Matthew 5:47-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A47-48&version=ESV)** - And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect.
 
@@ -20780,7 +20800,7 @@ or a [spouse can be an idol](https://www.youtube.com/watch?v=o3pFwQPu2EA), and i
 
 I know I was pretty messed up at the time and I'm not without any guilt, and my theology was quite warped. While I believe Kingdom marriage could be a thing, I also believe that we should still [not allow anything or anyone to be held up as an idol before or alongside Father God, or before or alongside our Saviour and God Jesus Christ](https://www.youtube.com/watch?v=EYJgSI6Jbfs&ab_channel=TommiLorraine):
 
-> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate (**[miseo](https://biblehub.com/greek/3404.htm)**) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
 
 The Hebrew has two words for 'helper'. The word which the greek in **John 14** refers to I believe is the Saviour one:
 
@@ -22259,15 +22279,41 @@ I believe that producing good fruit is necessary for being saved:
 [youtube.com: What does it mean to be "in Christ"?](https://www.youtube.com/watch?v=RZmmuLEptvE)
 
 
-## When it says 'hate' here, it means 'unfollow'
+## The cost of discipleship involves renouncing everything you have to achieve perfection
 
-> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple.
+When it says 'hate' here, it 'love less' and renounce, which is effectively results in being primarily yoked to Jesus, Jesus becoming our Pearl of Great Price by our choice.
 
-> **[Luke 14:27](https://www.biblegateway.com/passage/?search=Luke%2014%3A27&version=ESV)** - Whoever does not bear his own cross and come after me cannot be my disciple.
+We must value Jesus above all and detach from our old life. Coming after Jesus as His disciple means unfollowing everything else, pretty much, and carrying our cross:
 
-> **[Luke 14:33](https://www.biblegateway.com/passage/?search=Luke%2014%3A33&version=ESV)** - So therefore, any one of you who does not renounce all that he has cannot be my disciple.
+> **[Luke 14:25-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A25-33&version=ESV)** - Now great crowds accompanied him, and he turned and said to them, If anyone comes to me and does not hate (**[miseo](https://biblehub.com/greek/3404.htm)**) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you **who does not renounce all that he has cannot be my disciple**. (ESV)
+
+I appreciate the Didache's teaching on this because it shows there is an upwards call:
+
+> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
+
+We are perfected (completed), transformed into His image, from one degree of glory to another:
+
+> **II Corinthians 3:18** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image **from one degree of glory to another**. For this comes from the Lord who is the Spirit. (ESV)
+
+And also Paul's teaching. Being a disciple of Jesus is an upwards call:
+
+> **[Philippians 3:13-14](https://www.biblegateway.com/passage/?search=Philippians%203%3A13-14&version=ESV)** - Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. (ESV)
+
+The Pearl of Great Price is Jesus and we want to gain Christ, know Christ and invest our lives for His gospel. In following Jesus, eternal life is still a free gift because as Paul says here, what we give up is worthless compared to knowing Christ:
+
+> **[Philippians 3:7-8](https://www.biblegateway.com/passage/?search=Philippians%203%3A7-8&version=ESV)** - But whatever gain I had, I counted as loss for the sake of Christ. Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
+
+For Jesus' name's sake, basically everyone will disown/hate you for following Jesus, except for Jesus, as you choose Jesus:
+
+> **[Mark 13:13](https://www.biblegateway.com/passage/?search=Mark%2013%3A13&version=ESV)** - And you will be hated by all for my name's sake. But the one who endures to the end will be saved. (ESV)
+
+> **[I John 2:15](https://www.biblegateway.com/passage/?search=1%20John%202%3A15&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. (ESV)
 
 > **[Revelation of John 12:11](https://www.biblegateway.com/passage/?search=Revelation%2012%3A11&version=ESV)** - And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death. (ESV)
+
+The ones who are made perfect are the ones who are being sanctified:
+
+> **[Hebrews 10:14](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A14&version=ESV)** - For by a single offering he has perfected for all time those who are being sanctified. (ESV)
 
 
 ## The slave to sin doesn't abide forever. Repentance from sin is essential for eternal life
@@ -22892,7 +22938,7 @@ I'm reluctant to use external sources outside of the Bible, but this is also des
 
 The Didache's estimated range of dating is 50-120 A.D, according to [earlychristianwritings.com](https://www.earlychristianwritings.com/text/didache-roberts.html).
 
-> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.
+> **Didache Chapter 6** - See that no one causes you to err from this way of the Teaching, since apart from God it teaches you. For **if you are able to bear the entire yoke of the Lord, you will be perfect; but if you are not able to do this, do what you are able.**
 
 > **[Matthew 5:47-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A47-48&version=ESV)** - And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect.
 
@@ -23830,7 +23876,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org617b07e)
+See: [33.4.1](#org1488ded)
 
 To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
 
@@ -29783,7 +29829,11 @@ The question is, "Is joy over a wife and a family even something that is allowed
 
 I guess it's quite important to forsake all else for Jesus:
 
-> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate (**[miseo](https://biblehub.com/greek/3404.htm)**) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+
+The Pearl of Great Price is Jesus and we want to gain Christ, know Christ and invest our lives for His gospel. In following Jesus, eternal life is still a free gift because as Paul says here, what we give up is worthless compared to knowing Christ:
+
+> **[Philippians 3:7-8](https://www.biblegateway.com/passage/?search=Philippians%203%3A7-8&version=ESV)** - But whatever gain I had, I counted as loss for the sake of Christ. Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
 
 > **[I John 2:15-17](https://www.biblegateway.com/passage/?search=1%20John%202%3A15-17&version=ESV)** - Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. For all that is in the world—the desires of the flesh and the desires of the eyes and pride in possessions—is not from the Father but is from the world. And the world is passing away along with its desires, but whoever does the will of God abides forever. (ESV)
 
@@ -30697,7 +30747,7 @@ We're supposed to do good works of faith by Jesus' power so that Jesus' name is 
 
 ### Believers will marvel. The saints will do good works which glorify Jesus, all done in God's grace
 
-Is there a subtle difference between 'believer' and 'saint'? Saints keep the commandments of God.
+I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Saints both believe and keep the God's commandments. Saints are disciples of Jesus who have been sanctified by the Truth. Believing disciples of Jesus may become saints:
 
 > **[II Thessalonians 1:9-12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%201%3A9-12&version=ESV)** - They will suffer the punishment of eternal destruction, away from the presence of the Lord and from the glory of his might, when he comes on that day to be glorified in his saints, and to be **marveled at among all who have believed**, because our testimony to you was believed. To this end we always pray for you, that our God may make you worthy of his calling and may **fulfill every resolve for good and every work of faith by his power**, so that the name of our Lord Jesus may be glorified in you, and you in him, <ins>according to the grace of our God and the Lord Jesus Christ.</ins> (ESV)
 
