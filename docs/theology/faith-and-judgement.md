@@ -378,7 +378,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgccfc79f) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org6286223) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -4337,6 +4337,8 @@ I personally believe that **joy comes from having been given and maintaining a g
 
 > **[II Corinthians 1:12](https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A12&version=ESV)** - For our boast is this: the testimony of our conscience that we behaved in the world with simplicity and godly sincerity, not by earthly wisdom but by the grace of God, and supremely so toward you. (ESV)
 
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
 -   **[johnrasicci.wordpress.com: JOY FROM A CLEAR CONSCIENCE | John Rasicci](https://johnrasicci.wordpress.com/2022/08/10/joy-from-a-clear-conscience/):** We cannot deceive ourselves either by simply
     proclaiming we are the righteousness of God in
     Christ while living in sin.
@@ -4423,6 +4425,12 @@ I believe that the freedom we have in Christ is for serving Jesus, and we have a
 ### We are bought with the precious blood of Christ and we should be obedient to God
 
 > **[I Peter 1:17-19](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A17-19&version=ESV)** - And if you call on him as Father who judges impartially according to each one's deeds, conduct yourselves with fear throughout the time of your exile, knowing that you were ransomed from the futile ways inherited from your forefathers, not with perishable things such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot. (ESV)
+
+Faith that from a good conscience with God produces Christ's love:
+
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
 
 
 ### Eternal salvation goes to those who obey Him
@@ -8464,6 +8472,20 @@ Confess:
 
 ## Obedience - A heart of obedience is the start of faith, and belief is the start of continued obedience
 
+Faith which produces love:
+
+> **[Galatians 5:6](https://www.biblegateway.com/passage/?search=Galatians%205%3A6&version=ESV)** - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only faith working through love. (ESV)
+
+Faith that from a good conscience with God produces Christ's love:
+
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
+The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians:
+
+> **[I Timothy 2:13-15](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A13-15&version=ESV)** - For Adam was formed first, then Eve; and Adam was not deceived, but the woman was deceived and became a transgressor. Yet she will be saved through childbearing — **if they continue in faith and love and holiness, with self-control.** (ESV)
+
 
 ### Continued revelation comes from having a heart of obedience towards God
 
@@ -11240,6 +11262,12 @@ Also, Jesus' own work on the cross is sufficient work for us to be justified by 
 
 > **[Philippians 2:12](https://www.biblegateway.com/passage/?search=Philippians%202%3A12&version=ESV)** - Therefore, my beloved, as you have **always obeyed**, so now, not only as in my presence but much more in my absence, work out (**katergazomai**) your own salvation with fear and trembling, (ESV)
 
+Faith that from a good conscience with God produces Christ's love:
+
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
 When James mentions "justification by works", he actually is referring to justification by obedient faith (obedient faith is still faith):
 
 > **[James 2:25](https://www.biblegateway.com/passage/?search=James%202%3A25&version=ESV)** - And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way? (ESV)
@@ -11506,7 +11534,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org496203d)
+See: [33.4.1](#org19c79ad)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14790,6 +14818,12 @@ We have freedom from needing perfect law-keeping as a means of justification (i.
 
 > **[Galatians 5:18](https://www.biblegateway.com/passage/?search=Galatians%205%3A18&version=ESV)** - But **if** you are led by the Spirit, you are not under the law.
 
+Faith that from a good conscience with God produces Christ's love:
+
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
 Doing the will of God is what it means to be led by the Spirit of God:
 
 > **[Psalms 143:10](https://www.biblegateway.com/passage/?search=Psalms%20143%3A10&version=ESV)** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
@@ -15846,6 +15880,20 @@ Through faithful endurance we endeavor to be justified in Christ.
 The Revelation of John shows that Jesus looks at people's works.
 
 Faith without working through love doesn't count for anything.
+
+Faith which produces love:
+
+> **[Galatians 5:6](https://www.biblegateway.com/passage/?search=Galatians%205%3A6&version=ESV)** - For in Christ Jesus neither circumcision nor uncircumcision counts for anything, but only faith working through love. (ESV)
+
+Faith that from a good conscience with God produces Christ's love:
+
+> **[I Corinthians 16:13-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A13-14&version=ESV)** - Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love. (ESV)
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
+The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians:
+
+> **[I Timothy 2:13-15](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A13-15&version=ESV)** - For Adam was formed first, then Eve; and Adam was not deceived, but the woman was deceived and became a transgressor. Yet she will be saved through childbearing — **if they continue in faith and love and holiness, with self-control.** (ESV)
 
 
 ## Friends of God obey God
@@ -24236,7 +24284,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org496203d)
+See: [33.4.1](#org19c79ad)
 
 To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
 
