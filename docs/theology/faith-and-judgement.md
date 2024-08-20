@@ -378,7 +378,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgee75b63) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgccfc79f) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -804,6 +804,28 @@ Continue walking in the light, and does not go back to falling in love with the 
 Holding fast in faith, out of an honest and good heart, bear good fruit including works of righteousness, even remaining steadfast through trial and tribulation:
 
 > **[Luke 8:15](https://www.biblegateway.com/passage/?search=Luke%208%3A15&version=ESV)** - As for that in the good soil, they are those who, hearing the word, hold it fast in an honest and good heart, and bear fruit with patience. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/OQh3mpyjlts?t=254):** If God in fact in his
+    grace and power enables us to do things
+    that are good, He is going to reward them,
+    not ignore them. He's going to say, "Well
+    done good and faithful servant (Matthew 25:21).
+    Works of Faith are going to be
+    rewarded, not thrown away as filthy rags.
+
+> **[II Corinthians 5:10](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A10&version=ESV)** - For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil. (ESV)
+
+God considers being obedient from a forgiven heart, trusting in Jesus, to faithful service:
+
+> **[Matthew 25:23](https://www.biblegateway.com/passage/?search=Matthew%2025%3A23&version=ESV)** - His master said to him, Well done, good and faithful servant. You have been faithful over a little; I will set you over much. Enter into the joy of your master. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/OQh3mpyjlts?t=354):** He bought us by
+    grace, he sustains us by grace, he enables
+    us to do good works by
+    grace and we do the works trusting that
+    grace.
+
+> **[Ephesians 6:8](https://www.biblegateway.com/passage/?search=Ephesians%206%3A8&version=ESV)** - knowing that whatever good anyone does, this he will receive back from the Lord, whether he is a slave or free. (ESV)
 
 > **[Hebrews 10:36](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A36&version=ESV)** - For you have need of endurance, so that when you have done the will of God you may receive what is promised. (ESV)
 
@@ -8292,6 +8314,18 @@ We are zealous to do good works, Jesus having redeemed us and given us His Spiri
 
 > **[Psalms 34:19](https://www.biblegateway.com/passage/?search=Psalms%2034%3A19&version=ESV)** - Many are the afflictions of the righteous, but the LORD delivers him out of them all. (ESV)
 
+[youtube.com: Your Holy Deeds Are Not Filthy Rags](https://www.youtube.com/watch?v=OQh3mpyjlts)
+
+> **[Nehemiah 13:14](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A14&version=ESV)** - Remember me, O my God, concerning this, and do not wipe out my good deeds that I have done for the house of my God and for his service. (ESV)
+
+> **[Nehemiah 13:22](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A22&version=ESV)** - Then I commanded the Levites that they should purify themselves and come and guard the gates, to keep the Sabbath day holy. Remember this also in my favor, O my God, and spare me according to the greatness of your steadfast love. (ESV)
+
+> **[Nehemiah 13:30-31](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A30-31&version=ESV)** - Thus I cleansed them from everything foreign, and I established the duties of the priests and Levites, each in his work; and I provided for the wood offering at appointed times, and for the firstfruits. Remember me, O my God, for good. (ESV)
+
+God does not despise the righteous deeds of His children done by faith:
+
+> **[Isaiah 64:5-6](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A5-6&version=ESV)** - **You meet him who joyfully works righteousness, those who remember you in your ways.** Behold, you were angry, and we sinned; in our sins we have been a long time, and shall we be saved? We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away. (ESV)
+
 People who are now in Christ are a new creation, and we should be transitioning into the new. That might take some shaking off of old things, and involves being sanctified by obedience to the Truth. But those who are in Christ are a [brand new creation, born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/):
 
      1  5620 [e]  1487 [e] 5100 [e] 1722 [e] 5547 [e]  2537 [e]
@@ -10155,6 +10189,38 @@ We must obey God. We have faith in God who was delivered up for our trespasses a
 -   Be holy
 -   Be godly (behaviour in accordance with the knowledge of God)
 
+God does not despise the righteous deeds of His children done by faith:
+
+> **[Isaiah 64:5-6](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A5-6&version=ESV)** - **You meet him who joyfully works righteousness, those who remember you in your ways.** Behold, you were angry, and we sinned; in our sins we have been a long time, and shall we be saved? We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away. (ESV)
+
+Given a good conscience with God by faith in Jesus, we then do good works in love out of a forgiven heart:
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/OQh3mpyjlts?t=149):** That
+    misunderstanding of [Isaiah 64:6](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A6&version=ESV) has
+    caused many Christians to believe that
+    it is impossible for a Christian to
+    please God. If their best works are
+    filthy rags, there's nothing they can do
+    to please him - this is a profoundly
+    unbiblical notion through and through.
+
+> **[Philippians 4:18](https://www.biblegateway.com/passage/?search=Philippians%204%3A18&version=ESV)** - I have received full payment, and more. I am well supplied, having received from Epaphroditus the gifts you sent, a fragrant offering, a sacrifice acceptable and pleasing to God. (ESV)
+
+> **[Hebrews 13:16](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A16&version=ESV)** - Do not neglect to do good and to share what you have, for such sacrifices are pleasing to God. (ESV)
+
+Our works must be done in faith:
+
+> **[Hebrews 11:6](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A6&version=ESV)** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/OQh3mpyjlts?t=234):** Think
+    what a horrible thing it would be to say
+    that the fruit of the Holy Spirit in the
+    Christian Life is filthy rags. I can
+    hardly stand to think about it. They
+    are not filthy rags.
+
 > **[Galatians 1:10](https://www.biblegateway.com/passage/?search=Galatians%201%3A10&version=ESV)** - For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
 
 > **[James 1:27](https://www.biblegateway.com/passage/?search=James%201%3A27&version=ESV)** - Religion that is pure and undefiled before God, the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world. (ESV)
@@ -11440,7 +11506,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org7e240ca)
+See: [33.4.1](#org496203d)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14250,7 +14316,7 @@ There was an almost complete absence of truth from my perspective in the accusat
 
 > **[Matthew 5:43-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A43-48&version=ESV)** - You have heard that it was said, You shall love your neighbor and hate your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
 
-The summary of facts had been updated for the day the judge read it out against me, and I did not know what it was updated with. If I recall correctly, I had entered new information and the other side had entered new information. Even if my lawyer had access to them, there's no way I could truthfully say that "pleading guilty is an admission of guilt to the full set of accusations and an admission that the summary of facts is true" - it was a new document. I do not want to be a liar or a spreader of slander, so I cannot say the lies were true, and I also want people to stop slandering each other, but I still chose to plead guilty. I guess I had to become a bit of a scapegoat. It was my mindset to remain faithful to Jesus. And so Jesus was there watching the event as my advocate:
+The summary of facts had been updated for the day the judge read it out against me, and I did not know what it was updated with. If I recall correctly, I had entered new information and the other side had entered new information. Even if my lawyer had access to them, there's no way I could truthfully say that "pleading guilty is an admission of guilt to the full set of accusations and an admission that the summary of facts is true" - it was a new document. I do not want to be a liar or a spreader of slander, so I cannot say the lies were true, and I also want people to stop slandering each other, but I still chose to plead guilty. I guess I had to become a bit of a scapegoat. It was my mindset to remain faithful to Jesus and also do no harm to the person I proposed to because I love them. And so Jesus was there watching the event as my Advocate:
 
 > **[John 8:55](https://www.biblegateway.com/passage/?search=John%208%3A55&version=ESV)** - But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. (ESV)
 
@@ -14260,7 +14326,23 @@ Pleading guilty to a charge can be for the sole reason that a person cannot clai
 
 > **[I John 1:8](https://www.biblegateway.com/passage/?search=1%20John%201%3A8&version=ESV)** - If we say we have no sin, we deceive ourselves, and the truth is not in us. (ESV)
 
-Also, the reason can also be to simply not drag things out!
+When obeying man's law means disobeying God we should instead choose to obey God, and disobey man's law:
+
+> **[Acts 5:29](https://www.biblegateway.com/passage/?search=Acts%205%3A29&version=ESV)** - But Peter and the apostles answered, We must obey God rather than men. (ESV)
+
+If obeying man's law means doing evil, then I refuse to obey man's law. I found myself being pressured by people around me including the courts into taking the girl who I had proposed to to trial, and I refused to take her to trial or to seek justice for myself, I refused to play the game which the devil wanted me to play, and I took the sentence instead because that does not harm anyone but myself. I do not consider myself to have committed perjury by pleading guilty because, it is grey and even if I am a little bit responsible for what happened, I consider that grounds to plead guilty in court - it's the right thing to do:
+
+> **[Matthew 12:12](https://www.biblegateway.com/passage/?search=Matthew%2012%3A12&version=ESV)** - Of how much more value is a man than a sheep! So it is lawful to do good on the Sabbath. (ESV)
+
+My faith and God's law came up against the imperfect NZ law:
+
+> **[Romans 13:10](https://www.biblegateway.com/passage/?search=Romans%2013%3A10&version=ESV)** - Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
+
+> **[Proverbs 3:29-30](https://www.biblegateway.com/passage/?search=Proverbs%203%3A29-30&version=ESV)** - Do not plan evil against your neighbor, who dwells trustingly beside you. Do not contend with a man for no reason, when he has done you no harm. (ESV)
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And he looked around at them with anger, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+
+Also, the reason to take the sentence can also be to simply not drag things out!
 
 > **[Matthew 5:25](https://www.biblegateway.com/passage/?search=Matthew%205%3A25&version=ESV)** - Come to terms quickly with your accuser while you are going with him to court, lest your accuser hand you over to the judge, and the judge to the guard, and you be put in prison. (ESV)
 
@@ -24154,7 +24236,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org7e240ca)
+See: [33.4.1](#org496203d)
 
 To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
 
