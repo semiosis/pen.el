@@ -297,7 +297,7 @@ We love in the way Jesus loved us, which is how God loved Jesus:
 
 > **[I John 4:13](https://www.biblegateway.com/passage/?search=1%20John%204%3A13&version=ESV)** - By this we know that we abide in him and he in us, because he has given us of his Spirit. (ESV)
 
-God love Jesus, God loved us first through Jesus. Jesus loved us. Love comes from God. We then endeavour to love one another in the way Jesus loved us, passing forward this love. We don't take Jesus (God the Son) out of the equation, nor do we take Father God out of the equation. We were loved first by God:
+God loves Jesus, God loved us first through Jesus. Jesus loved us. Love comes from God. We then endeavour to love one another in the way Jesus loved us, passing forward this love. We don't take Jesus (God the Son) out of the equation, nor do we take Father God out of the equation. We were loved first by God:
 
 > **[I John 4:9-10](https://www.biblegateway.com/passage/?search=1%20John%204%3A9-10&version=ESV)** - In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. (ESV)
 
@@ -378,7 +378,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org6286223) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf5d4cb8) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -948,7 +948,15 @@ Faith in Christ I believe means believing in Him and being obedient to Him, havi
 
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
-> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+
+It's unity in faith and truth and love:
+
+> **[Colossians 3:14](https://www.biblegateway.com/passage/?search=Colossians%203%3A14&version=ESV)** - Beyond all (G3956 pas) these things put on love (G26 agape), which (G3739 hos) is the perfect bond of unity.
+
+> **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
+
+> **[II Timothy 1:13](https://www.biblegateway.com/passage/?search=2%20Timothy%201%3A13&version=ESV)** - Follow the pattern of the sound words that you have heard from me, in the faith and love that are in Christ Jesus. (ESV)
 
 OK, so we accept forgiveness from God, we forgive others, and we then walk in that reality and don't turn back - we live that reality out.
 We accept that God has loved us by making atonement through Jesus' blood, and then we pass-forward that loving forgiveness to others and we walk in that reality and don't turn back.
@@ -1240,6 +1248,10 @@ So I was born-again of the Spirit on 1 Nisan, which commemorates the death of ab
 
 > **I Peter 3:21** - Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ, (ESV)
 
+I just want to say that I don't observe any of these seasons, but it still happened that way. I guess God has liberated me from observing them, among others things, if that makes sense:
+
+> **[Galatians 4:6-11](https://www.biblegateway.com/passage/?search=Galatians%204%3A6-11&version=ESV)** - And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father! So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? **You observe days and months and seasons and years! I am afraid I may have labored over you in vain.** (ESV)
+
 As I have repented to be corrected by the Word of God, agreeing with it and endeavoring to obey the Gospel of Jesus Christ, it feels as though I have been rejecting lots and lots of heresies, and rejecting lots and lots of false religion, and I hope that this helps others also to be corrected. I have been trying to be corrected by obedience to the Gospel of Jesus a lot since recording this 'dream' / conversation in my sleep. After actively trying to be obedient to the Truth, obedient to Jesus, saved to obey Jesus, I have come to distrust odd spirits which speak to me in my sleep.
 
 I believe that among other things I have had to reject or repent from:
@@ -1251,14 +1263,40 @@ I believe that among other things I have had to reject or repent from:
 -   a spirit of Gnosticism
 -   a spirit of New Age
 
-> As interesting as the parallels or similarities are with my own testimony, I believe there are distortions in the Mormon interpretation. Even in here, the Mormans have suggested faith like Isaac's. Now I had gone into court willingly after being born-again as I held my faith in Jesus and submitted to the authorities, but not perfect. After breaking bail to get baptised and bring everything into the light, obeying God and not man, the whole thing felt outside of my control (extremely graceless), and I was under clear impression especially later in 2022 that I was battling an antichrist spirit:
+I have also had to:
+
+-   be sanctified through obedience to the Truth, faith and the Spirit
+    -   **[John 17:19](https://www.biblegateway.com/passage/?search=John%2017%3A19&version=ESV)** - And for their sake I consecrate myself, that they also may be sanctified in truth. (ESV)
+    -   **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me. (ESV)
+    -   **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
+-   get to know Jesus better through following His commandments
+    -   **[I John 2:4](https://www.biblegateway.com/passage/?search=1%20John%202%3A4&version=ESV)** - Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
+-   allow the LORD to build my house
+    -   **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the LORD builds the house, those who build it labor in vain. Unless the LORD watches over the city, the watchman stays awake in vain. (ESV)
+
+> Now I had gone into court willingly after being born-again as I held my faith in Jesus and submitted to the authorities, but not perfect. After breaking bail to get baptised and bring everything into the light, obeying God and not man, the whole thing felt outside of my control (extremely graceless), and I was under clear impression especially later in 2022 that I was battling an antichrist spirit pressuring me into several things:
 > 
-> -   **I think this Mormon doctrine shows interesting parallels or similarities with my own testimony but I disagree with their way of interpreting this:** [thechurchnews.com: Isaac: Child of the promise and heir of the promises - Church News (Mormonism)](https://www.thechurchnews.com/1994/5/7/23257073/isaac-child-of-the-promise-and-heir-of-the-promises/)
->     
->     So through obedience to the gospel, I came into the light, I pleaded guilty, I made testimony of Jesus, etc. <ins>"whoever would save his life will lose it, but whoever loses his life for my sake will find it."</ins> This is Biblical gospel teaching, that through faith in Jesus we may be saved, and I disagree with the Mormans' interpretation.
->     
->     -   **[John 3:21](https://www.biblegateway.com/passage/?search=John%203%3A21&version=ESV)** - But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God. (ESV)
->     -   **[Matthew 16:25](https://www.biblegateway.com/passage/?search=Matthew%2016%3A25&version=ESV)** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
+> -   Justification by works after I had already received the Spirit earlier that year:
+>     -   **[Galatians 3:3](https://www.biblegateway.com/passage/?search=Galatians%203%3A3&version=ESV)** - Are you so foolish? Having begun by the Spirit, are you now being perfected by the flesh? (ESV)
+> -   Tempting me to out of faith with Jesus, by making me fearful of jail
+>     -   **[Hebrews 12:16](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A16&version=ESV)** - that no one is sexually immoral or unholy like Esau, who sold his birthright for a single meal. (ESV)
+>     -   **[I John 4:18](https://www.biblegateway.com/passage/?search=1%20John%204%3A18&version=ESV)** - There is no fear in love, but perfect love casts out fear. For fear has to do with punishment, and whoever fears has not been perfected in love. (ESV)
+> -   Pressuring me to not pass forward the love of Christ
+>     -   **[Matthew 6:14-15](https://www.biblegateway.com/passage/?search=Matthew%206%3A14-15&version=ESV)** - For if you forgive others their trespasses, your heavenly Father will also forgive you, but if you do not forgive others their trespasses, neither will your Father forgive your trespasses. (ESV)
+>     -   **[Colossians 3:13](https://www.biblegateway.com/passage/?search=Colossians%203%3A13&version=ESV)** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive. (ESV)
+> -   Pressuring me to affirm all my error instead of embracing sanctification:
+>     -   **[I Peter 1:2](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A2&version=ESV)** - according to the foreknowledge of God the Father, in the sanctification of the Spirit, for obedience to Jesus Christ and for sprinkling with his blood: May grace and peace be multiplied to you. (ESV)
+> 
+> As interesting as the parallels or similarities are with my own testimony, I think this Mormon doctrine shows interesting parallels or similarities with my own testimony but I cannot affirm everything, nor their extra books, and I am not a Mormon :: [thechurchnews.com: Isaac: Child of the promise and heir of the promises - Church News (Mormonism)](https://www.thechurchnews.com/1994/5/7/23257073/isaac-child-of-the-promise-and-heir-of-the-promises/)
+> 
+> I don't need to prove myself to men, as God sees the heart, but I have my relationship with God:
+> 
+> **[I Chronicles 29:17](https://www.biblegateway.com/passage/?search=1%20Chronicles%2029%3A17&version=ESV)** - **I know, my God, that you test the heart and have pleasure in uprightness.** In the uprightness of my heart I have freely offered all these things, and now I have seen your people, who are present here, offering freely and joyously to you. (ESV)
+> 
+> So through obedience to the gospel, I came into the light, I pleaded guilty, I made testimony of Jesus, etc. <ins>"whoever would save his life will lose it, but whoever loses his life for my sake will find it."</ins> This is Biblical gospel teaching, that through faith in Jesus we may be saved, and I disagree with the Mormans' interpretation.
+> 
+> -   **[John 3:21](https://www.biblegateway.com/passage/?search=John%203%3A21&version=ESV)** - But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God. (ESV)
+> -   **[Matthew 16:25](https://www.biblegateway.com/passage/?search=Matthew%2016%3A25&version=ESV)** - For whoever would save his life will lose it, but whoever loses his life for my sake will find it. (ESV)
 
 I also do not affirm the LDS doctrine here:
 
@@ -8482,9 +8520,20 @@ Faith that from a good conscience with God produces Christ's love:
 
 > **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
 
-The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians:
+The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians. [John Piper](https://youtu.be/1Un1t13CVj0) explains this well:
 
 > **[I Timothy 2:13-15](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A13-15&version=ESV)** - For Adam was formed first, then Eve; and Adam was not deceived, but the woman was deceived and became a transgressor. Yet she will be saved through childbearing — **if they continue in faith and love and holiness, with self-control.** (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/1Un1t13CVj0?t=385):** and
+    then all of this: faith, love, holiness,
+    self-control is simply ordinary pathway
+    that all men and women must take in
+    order to come to eternal life and to
+    salvation. We must believe, we must love,
+    that love must yield
+    holiness, and part of the fruit of
+    the Holy Spirit in that holiness is
+    self-control.
 
 
 ### Continued revelation comes from having a heart of obedience towards God
@@ -11534,10 +11583,18 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org19c79ad)
+See: [33.4.1](#org343d10a)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
+
+It's *relying* on the works of the law which puts a person on under a curse. That doesn't mean we forsake the law. We just don't *rely* on it for our justification, life and salvation:
+
+> **[Galatians 3:10](https://www.biblegateway.com/passage/?search=Galatians%203%3A10&version=ESV)** - For **all who rely** on **works of the law are under a curse**; for it is written, Cursed be everyone who does not abide by all things written in the Book of the Law, and do them. (ESV)
+
+The curse of the law (which is the condemnation which arises from imperfect law compliance) is no longer a problem for us by having faith in Jesus, Jesus has taken that curse and paid for it with His blood:
+
+> **[Galatians 3:13-14](https://www.biblegateway.com/passage/?search=Galatians%203%3A13-14&version=ESV)** - **Christ redeemed us from the curse of the law** by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith. (ESV)
 
 -   [What does it mean to be under the law? - Ask the Pastor](https://pastortomhicks.com/2020/03/10/what-does-it-mean-to-be-under-the-law/)
 
@@ -11565,6 +11622,21 @@ See: [33.4.1](#org19c79ad)
 > Though they can never keep the law perfectly,
 > they try to follow the law as an expression of
 > faith in God and love to Him.
+
+To be regarded as a child of Abraham, a person must fall into one of 2 categories:
+
+-   <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with respect to having faith in Jesus Christ, but I also this likely counts to adherents of the law of God (i.e. the circumcised) who also walk in the footsteps of the faith that Abraham had before he was circumcised
+    -   **John 8:39** - They answered him, Abraham is our father. Jesus said to them, If you were Abraham's children, you would be doing what Abraham did, (ESV)
+-   faith in Jesus Christ:
+    -   **Galatians 3:7-9** - Know then that it is those of faith who are the sons of Abraham. And the Scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, In you shall all the nations be blessed. So then, those who are of faith are blessed along with Abraham, the man of faith. (ESV)
+
+> **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of all who believe without being circumcised</ins>, so that righteousness would be counted to them as well, and <ins>to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+I believe this also counts to those who are of the "real/spiritual circumcision". After being born-again of the Spirit, it seems natural to want to obey and trust God the way Abraham did and walk in works of faith like Abraham:
+
+> **[Philippians 3:3](https://www.biblegateway.com/passage/?search=Philippians%203%3A3&version=ESV)** - For we are the real circumcision, who worship by the Spirit of God and glory in Christ Jesus and put no confidence in the flesh— (ESV)
+
+> **[Colossians 2:11-12](https://www.biblegateway.com/passage/?search=Colossians%202%3A11-12&version=ESV)** - In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. (ESV)
 
 
 ### I affirm we are free in Christ Jesus, enslaved to God, and have victory over death
@@ -13231,21 +13303,24 @@ Actually, our faith and hope and heart's desire and our walking in faith should 
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
      9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
-    10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    12  
-    13  L ∝ f
-    14  Love is proportional-to the baggage which has been forgiven
-    15  Love ∝ forgiven-baggage
-    16  
-    17  Obedience ∝ Love
-    18  
-    19  F = H * L
-    20  Faith = Hope * Love
+    10                Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart,
+    11                endeavoring to please Christ with our actions.
+    12                godly grief produces a repentance that leads to salvation without regret
+    13  
+    14  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
+    15  
+    16  L ∝ f
+    17  Love is proportional-to the baggage which has been forgiven
+    18  Love ∝ forgiven-baggage
+    19  
+    20  Obedience ∝ Love
     21  
-    22  Faith-in-God when tested by God is found to be true Faith in God.
-    23  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    24  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    22  F = H * L
+    23  Faith = Hope * Love
+    24  
+    25  Faith-in-God when tested by God is found to be true Faith in God.
+    26  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    27  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 > **[I Corinthians 13:1-8](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A1-8&version=ESV)** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal. And if I have prophetic powers, and understand all mysteries and all knowledge, and <ins>if I have all **faith**, so as to remove mountains, but have not **love**, I am nothing</ins>. <ins>If I give away all I have, and if I deliver up my body to be burned, but have not **love**, I gain nothing.</ins> Love is patient and kind; love does not envy or boast; it is not arrogant or rude. **It does not insist on its own way**; it is not irritable or resentful; it <ins>does not rejoice at wrongdoing</ins>, but **rejoices with the truth**. Love <ins>bears all things, believes all things, hopes all things, endures all things. Love never ends</ins>. As for prophecies, they will pass away; as for tongues, they will cease; as for knowledge, it will pass away. (ESV)
 
@@ -15891,9 +15966,20 @@ Faith that from a good conscience with God produces Christ's love:
 
 > **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
 
-The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians:
+The only point I want to make from this text here is that faith is supposed to continue in love and holiness. I believe this continuation of obedience with faith, love and holiness (and self-control, which along with love is one of the fruit of the Spirit) applies to all Christians. [John Piper](https://youtu.be/1Un1t13CVj0) explains this well:
 
 > **[I Timothy 2:13-15](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A13-15&version=ESV)** - For Adam was formed first, then Eve; and Adam was not deceived, but the woman was deceived and became a transgressor. Yet she will be saved through childbearing — **if they continue in faith and love and holiness, with self-control.** (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/1Un1t13CVj0?t=385):** and
+    then all of this: faith, love, holiness,
+    self-control is simply ordinary pathway
+    that all men and women must take in
+    order to come to eternal life and to
+    salvation. We must believe, we must love,
+    that love must yield
+    holiness, and part of the fruit of
+    the Holy Spirit in that holiness is
+    self-control.
 
 
 ## Friends of God obey God
@@ -16199,20 +16285,23 @@ I made these equations to describe my understanding that faith is actually close
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
      9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
-    10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    12  
-    13  Love is proportional-to the baggage which has been forgiven
-    14  Love ∝ forgiven-baggage
+    10                Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart,
+    11                endeavoring to please Christ with our actions.
+    12                godly grief produces a repentance that leads to salvation without regret
+    13  
+    14  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
     15  
-    16  Obedience ∝ Love
-    17  
-    18  F = H * L
-    19  Faith = Hope * Love
+    16  Love is proportional-to the baggage which has been forgiven
+    17  Love ∝ forgiven-baggage
+    18  
+    19  Obedience ∝ Love
     20  
-    21  Faith-in-God when tested by God is found to be true Faith in God.
-    22  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    23  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    21  F = H * L
+    22  Faith = Hope * Love
+    23  
+    24  Faith-in-God when tested by God is found to be true Faith in God.
+    25  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    26  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 But salvation is a gift and God is sovereign to save. That's why it's grace.
 Saved by grace through faith. Yet actual obedience to the gospel of Jesus is merely Jesus working through us. When a person truly believes then they naturally obey.
@@ -16276,6 +16365,12 @@ Those who fear God inherit the Kingdom.
 -   **<ins>Condition:</ins> Those who are poor in spirit:** <ins>Promise:</ins> They will inherit the kingdom of Heaven
 
 > **[Isaiah 66:2](https://www.biblegateway.com/passage/?search=Isaiah%2066%3A2&version=ESV)** - All these things my hand has made, and so all these things came to be, declares the LORD. But this is the one to whom I will look: he who is humble and contrite in spirit and trembles at my word. (ESV)
+
+Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart, endeavoring to please Christ with our actions:
+
+> **[II Corinthians 5:6-11](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A6-11&version=ESV)** - So we are always of good courage. We know that while we are at home in the body we are away from the Lord, for we walk by faith, not by sight. Yes, we are of good courage, and we would rather be away from the body and at home with the Lord. So whether we are at home or away, **we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil.** Therefore, knowing the **fear of the Lord**, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. (ESV)
+
+> **[II Corinthians 7:10](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A10&version=ESV)** - For **godly grief produces a repentance that leads to salvation without regret**, whereas worldly grief produces death. (ESV)
 
 We need faithfulness and not faithlessness and disbelief to inherit the promises:
 
@@ -17049,7 +17144,7 @@ As we come into Jesus' Kingdom, we should be praying for and trying to lead othe
 
 And build each other up to help each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
-> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
 
 
 ## Don't abandon but support born-again, obedient, faithful disciples of Jesus, not pushing them back to worldly thinking
@@ -17304,7 +17399,15 @@ It's God who judges and gives mercy:
 
 > **[Romans 9:15-16](https://www.biblegateway.com/passage/?search=Romans%209%3A15-16&version=ESV)** - For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
 
-> **[Luke 16:15-17](https://www.biblegateway.com/passage/?search=Luke%2016%3A15-17&version=ESV)** - And he said to them, You are those who justify yourselves before men, but God knows your hearts. For what is exalted among men is an abomination in the sight of God.  The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it.  But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
+If a person is abiding by God's commandments then that is pleasing to God:
+
+> **[I Chronicles 29:17-19](https://www.biblegateway.com/passage/?search=1%20Chronicles%2029%3A17-19&version=ESV)** - I know, my God, that you test the heart and have pleasure in uprightness. In the uprightness of my heart I have freely offered all these things, and now I have seen your people, who are present here, offering freely and joyously to you. O LORD, the God of Abraham, Isaac, and Israel, our fathers, keep forever such purposes and thoughts in the hearts of your people, and direct their hearts toward you. Grant to Solomon my son a whole heart that he may keep your commandments, your testimonies, and your statutes, performing all, and that he may build the palace for which I have made provision. (ESV)
+
+> **[James 1:25](https://www.biblegateway.com/passage/?search=James%201%3A25&version=ESV)** - But one who looks intently at the perfect law, the law of liberty, and abides by it, not having become a forgetful hearer but an effectual doer, this man will be blessed in what he does.
+
+We should seek to be faithful to God who seeks our heart. It's about a real relationship with God:
+
+> **[Luke 16:15-17](https://www.biblegateway.com/passage/?search=Luke%2016%3A15-17&version=ESV)** - And he said to them, You are those who justify yourselves before men, but **God knows your hearts**. For **what is exalted among men is an abomination in the sight of God**. The Law and the Prophets were until John; since then the good news of the kingdom of God is preached, and everyone forces his way into it. But it is easier for heaven and earth to pass away than for one dot of the Law to become void.
 
 -   John the baptist taught 'turn from sin and believe in the One to come':
     -   **[Acts 19:4](https://www.biblegateway.com/passage/?search=Acts%2019%3A4&version=ESV)** - And Paul said, John baptized with the baptism of repentance, telling the people to believe in the one who was to come after him, that is, Jesus. (ESV)
@@ -19037,7 +19140,7 @@ In other words, the <ins>real</ins> Christians are the ones who know that we mus
 
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
-> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
+> **[Ephesians 4:12-13](https://www.biblegateway.com/passage/?search=Ephesians%204%3A12-13&version=ESV)** - to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the **unity of the faith and of the knowledge of the Son of God**, to mature manhood, to the measure of the stature of the fullness of Christ, (ESV)
 
 To get to know Jesus, we **must obey** His commandments:
 
@@ -20264,9 +20367,13 @@ We should be more confident with the light!
 > **[II Timothy 3:12-15](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A12-15&version=ESV)** - Indeed, <ins>all who desire to live a godly life in Christ Jesus will be persecuted</ins>, while evil people and impostors will go on from bad to worse, deceiving and being deceived. But as for you, continue in what you have learned and have firmly believed, knowing from whom you learned it and how from childhood you have been acquainted with the sacred writings, which are able to <ins>make you wise for salvation through faith in Christ Jesus</ins>. (ESV)
 
 
-## Unity in love
+## Unity in faith and truth and love
 
 > **[Colossians 3:14](https://www.biblegateway.com/passage/?search=Colossians%203%3A14&version=ESV)** - Beyond all (G3956 pas) these things put on love (G26 agape), which (G3739 hos) is the perfect bond of unity.
+
+> **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
+
+> **[II Timothy 1:13](https://www.biblegateway.com/passage/?search=2%20Timothy%201%3A13&version=ESV)** - Follow the pattern of the sound words that you have heard from me, in the faith and love that are in Christ Jesus. (ESV)
 
 > **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and You in Me, that they may be perfected (G5048 teleioo) in unity, so that the world (G2889 kosmos) may know (G1097 ginosko) that You sent Me, and loved (G25 agapao) them, even as You have loved (G25 agapao) Me.
 
@@ -20280,7 +20387,7 @@ We should be more confident with the light!
 
 ## It's cleaning ourselves up from all defilement of flesh and spirit
 
-> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), perfecting holiness in the fear of God (G2316 theos).
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), **perfecting holiness in the fear of God** (G2316 theos).
 
 
 ## It's a process leading to the day of Christ Jesus
@@ -20313,6 +20420,8 @@ We should be more confident with the light!
 > **[Hebrews 7:11](https://www.biblegateway.com/passage/?search=Hebrews%207%3A11&version=ESV)** - Now if perfection had been attainable through the Levitical priesthood (for under it the people received the law), what further need would there have been for another priest to arise after the order of Melchizedek, rather than one named after the order of Aaron?
 
 > **[Hebrews 2:11-12](https://www.biblegateway.com/passage/?search=Hebrews%202%3A11-12&version=ESV)** -  For he who sanctifies and those who are sanctified all have one origin.  That is why he is not ashamed to call them brothers, saying, I will tell of your name to my brothers; in the midst of the congregation I will sing your praise.  (ESV)
+
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), **perfecting holiness in the fear of God** (G2316 theos).
 
 
 ### Faith
@@ -20703,6 +20812,14 @@ For that reason, I would have more confidence before God if I was serving Him, h
 
 > **[Psalms 1:4-5](https://www.biblegateway.com/passage/?search=Psalms%201%3A4-5&version=ESV)** - The wicked are not so, but are like chaff that the wind drives away. Therefore the wicked will not stand in the judgment, nor sinners in the congregation of the righteous; (ESV)
 
+Unity in Christ is unity in **faith** and **truth** and **love**:
+
+> **[Colossians 3:14](https://www.biblegateway.com/passage/?search=Colossians%203%3A14&version=ESV)** - Beyond all (G3956 pas) these things put on love (G26 agape), which (G3739 hos) is the perfect bond of unity.
+
+> **[John 17:23](https://www.biblegateway.com/passage/?search=John%2017%3A23&version=ESV)** - I in them and you in me, that they may become perfectly one, so that the world may know that you sent me and loved them even as you loved me. (ESV)
+
+> **[II Timothy 1:13](https://www.biblegateway.com/passage/?search=2%20Timothy%201%3A13&version=ESV)** - Follow the pattern of the sound words that you have heard from me, in the faith and love that are in Christ Jesus. (ESV)
+
 Glorification can only come through being found in Jesus Christ:
 
 > **[Isaiah 42:8](https://www.biblegateway.com/passage/?search=Isaiah%2042%3A8&version=ESV)** - I am the LORD; that is my name; my glory I give to no other, nor my praise to carved idols. (ESV)
@@ -20744,6 +20861,12 @@ Saints keep the commandments of God:
 -   **Video:** [youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0)
 
 -   **Quote by Charles Spurgeon:** All are "saints" whom God has called by His grace and sanctified by His Spirit;
+
+Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and sanctified through obedience to Jesus' gospel:
+
+> **[Hebrews 2:11](https://www.biblegateway.com/passage/?search=Hebrews%202%3A11&version=ESV)** - For he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers, (ESV)
+
+> **[I Corinthians 1:2](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A2&version=ESV)** - To the church of God that is in Corinth, to those sanctified in Christ Jesus, called to be saints together with all those who in every place call upon the name of our Lord Jesus Christ, both their Lord and ours: (ESV)
 
 Jesus goes to those who hear His voice to bring them into His flock:
 
@@ -24284,11 +24407,22 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org19c79ad)
+See: [33.4.1](#org343d10a)
 
-To be justified, a person must <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with having faith in Jesus Christ:
+To be regarded as a child of Abraham, a person must fall into one of 2 categories:
+
+-   <ins>walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>, I believe with respect to having faith in Jesus Christ, but I also this likely counts to adherents of the law of God (i.e. the circumcised) who also walk in the footsteps of the faith that Abraham had before he was circumcised
+    -   **John 8:39** - They answered him, Abraham is our father. Jesus said to them, If you were Abraham's children, you would be doing what Abraham did, (ESV)
+-   faith in Jesus Christ:
+    -   **Galatians 3:7-9** - Know then that it is those of faith who are the sons of Abraham. And the Scripture, foreseeing that God would justify the Gentiles by faith, preached the gospel beforehand to Abraham, saying, In you shall all the nations be blessed. So then, those who are of faith are blessed along with Abraham, the man of faith. (ESV)
 
 > **[Romans 4:9-12](https://www.biblegateway.com/passage/?search=Romans%204%3A9-12&version=ESV)** - Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of all who believe without being circumcised</ins>, so that righteousness would be counted to them as well, and <ins>to make him the father of the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised</ins>.
+
+I believe this also counts to those who are of the "real/spiritual circumcision". After being born-again of the Spirit, it seems natural to want to obey and trust God the way Abraham did and walk in works of faith like Abraham:
+
+> **[Philippians 3:3](https://www.biblegateway.com/passage/?search=Philippians%203%3A3&version=ESV)** - For we are the real circumcision, who worship by the Spirit of God and glory in Christ Jesus and put no confidence in the flesh— (ESV)
+
+> **[Colossians 2:11-12](https://www.biblegateway.com/passage/?search=Colossians%202%3A11-12&version=ESV)** - In him also you were circumcised with a circumcision made without hands, by putting off the body of the flesh, by the circumcision of Christ, having been buried with him in baptism, in which you were also raised with him through faith in the powerful working of God, who raised him from the dead. (ESV)
 
 How do we become sons of Abraham:
 
@@ -24972,19 +25106,22 @@ I put a bunch of concepts together to describe faith:
      7  Obedience = Submitting to the Righteousness of God * Turning from sin, loving, showing mercy, etc.
      8  
      9  Fear-of-God = e.g. The poor in spirit recognise their need of God's mercy and tremble at His Word: "beat his breast, saying, God, be merciful to me, a sinner!"
-    10  
-    11  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
-    12  
-    13  Love is proportional-to the baggage which has been forgiven
-    14  Love ∝ forgiven-baggage
+    10                Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart,
+    11                endeavoring to please Christ with our actions.
+    12                godly grief produces a repentance that leads to salvation without regret
+    13  
+    14  Response-of-love-to-Jesus = e.g. praise, thankfulness, obeying His commandments
     15  
-    16  Obedience ∝ Love
-    17  
-    18  F = H * L
-    19  
-    20  Faith-in-God when tested by God is found to be true Faith in God.
-    21  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
-    22  Jesus Christ having paid the price of sin, enabling a relationship with God.
+    16  Love is proportional-to the baggage which has been forgiven
+    17  Love ∝ forgiven-baggage
+    18  
+    19  Obedience ∝ Love
+    20  
+    21  F = H * L
+    22  
+    23  Faith-in-God when tested by God is found to be true Faith in God.
+    24  Faith-in-God must submit to the Righteousness of God through faith in Jesus Christ,
+    25  Jesus Christ having paid the price of sin, enabling a relationship with God.
 
 These things are factors of faith.
 
@@ -25109,7 +25246,7 @@ People may take offense to disciples of Jesus as they did to Jesus, but we shoul
 
 -   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
 
--   **Song:** [youtube.com: I Asked The Lord - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
+-   **Song:** [youtube.com: I Asked The Lord by John Newton - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
 
 
 ### 
@@ -25487,7 +25624,7 @@ Make yourself ready <ins>imminently</ins>:
 
 > **[Matthew 7:3](https://www.biblegateway.com/passage/?search=Matthew%207%3A3&version=ESV)** - Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye?  Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye?  You hypocrite, first take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.
 
-> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), perfecting holiness in the fear of God (G2316 theos).
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), **perfecting holiness in the fear of God** (G2316 theos).
 
 > **[Revelation of John 22:14](https://www.biblegateway.com/passage/?search=Revelation%2022%3A14&version=ESV)** - Blessed are those who wash their robes, so that they may have the right to the tree of life and that they may enter the city by the gates. (ESV)
 
@@ -31321,7 +31458,9 @@ Jesus Christ has total dominion:
 
 Jesus is not ashamed to call brothers [and sisters] those who are cleaned up and sanctified through obedience to Jesus' gospel:
 
-> **Hebrews 2:11** - For he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers, (ESV)
+> **[Hebrews 2:11](https://www.biblegateway.com/passage/?search=Hebrews%202%3A11&version=ESV)** - For he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers, (ESV)
+
+> **[I Corinthians 1:2](https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A2&version=ESV)** - To the church of God that is in Corinth, to those sanctified in Christ Jesus, called to be saints together with all those who in every place call upon the name of our Lord Jesus Christ, both their Lord and ours: (ESV)
 
 
 ## The Bible does not say we are kings - it says we are royalty - a royal priesthood for His possession
@@ -31466,13 +31605,15 @@ The fear of God helps us to obey Him. God please forgive us:
 
 > **[Jeremiah 32:40](https://www.biblegateway.com/passage/?search=Jeremiah%2032%3A40&version=ESV)** - I will make with them an everlasting covenant, that I will not turn away from doing good to them. And **I will put the fear of me in their hearts, that they may not turn from me.** (ESV)
 
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Therefore, having these promises, beloved, let us cleanse ourselves (G1438 heautou) from all (G3956 pas) defilement of flesh (G4561 sarx) and spirit (G4151 pneuma), **perfecting holiness in the fear of God** (G2316 theos).
+
 > **[Proverbs 9:10](https://www.biblegateway.com/passage/?search=Proverbs%209%3A10&version=ESV)** - The fear of the LORD is the beginning of wisdom, and the knowledge of the Holy One is insight. (ESV)
 
 Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart, endeavoring to please Christ with our actions:
 
 > **[II Corinthians 5:6-11](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A6-11&version=ESV)** - So we are always of good courage. We know that while we are at home in the body we are away from the Lord, for we walk by faith, not by sight. Yes, we are of good courage, and we would rather be away from the body and at home with the Lord. So whether we are at home or away, **we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil.** Therefore, knowing the **fear of the Lord**, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. (ESV)
 
-> **[II Corinthians 7:10](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A10&version=ESV)** - For godly grief produces a repentance that leads to salvation without regret, whereas worldly grief produces death. (ESV)
+> **[II Corinthians 7:10](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A10&version=ESV)** - For **godly grief produces a repentance that leads to salvation without regret**, whereas worldly grief produces death. (ESV)
 
 
 ## For one's work to stand the test of fire
