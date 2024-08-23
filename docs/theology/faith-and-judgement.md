@@ -15,7 +15,7 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 We serve the Only True God, the Most High God, Jehovah and Jesus Christ who He has sent - the same God, and we are found in Christ Jesus:
 
-> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
+> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, <ins>not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled.</ins> (ESV)
 
 > **[Deuteronomy 10:17](https://www.biblegateway.com/passage/?search=Deuteronomy%2010%3A17&version=ESV)** - For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
 
@@ -24,6 +24,34 @@ Christ is reigning until all things are placed into subjection under Him. We mus
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
 > **[Daniel 7:13-14](https://www.biblegateway.com/passage/?search=Daniel%207%3A13-14&version=ESV)** - I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man, and he came to the Ancient of Days and was presented before him. And to him was given dominion and glory and a kingdom, that **all peoples, nations, and languages should serve him;** his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. (ESV)
+
+-   **[Quote by John Piper](https://youtu.be/Mm99f8B16Ts?t=183):** So if I were to put a title on
+    this message it would be "No neutrality. [There is] nothing in-between <ins>for</ins> and
+    <ins>against</ins> (i.e. there are only two options: for and against) - No
+    neutrality. If you're not for Him, [then] Jesus
+    says you're against Him.
+    
+    And I can imagine a person coming into this room and
+    saying, "I'm not against Jesus. I don't
+    even think about Jesus most of the time."
+    
+    To which I would respond, "You need to think about what you just
+    said, because to be against
+    Jesus is to be against his purpose for your life, and his purpose for your
+    life does not mean you should spend 99%
+    of your time not thinking about
+    him. That's not his
+    purpose"
+
+We have no other Lord, King, no other Master than Jesus Christ, but we serve each other:
+
+> **[Matthew 23:8-11](https://www.biblegateway.com/passage/?search=Matthew%2023%3A8-11&version=ESV)** - But you are not to be called rabbi, for you have one teacher, and you are all brothers. And call no man your father on earth, for you have one Father, who is in heaven. Neither be called instructors, for you have one instructor, the Christ. The greatest among you shall be your servant. (ESV)
+
+> **[Matthew 12:28-30](https://www.biblegateway.com/passage/?search=Matthew%2012%3A28-30&version=ESV)** - But if it is by the Spirit of God that I cast out demons, then the kingdom of God has come upon you. Or how can someone enter a strong man's house and plunder his goods, unless he first binds the strong man? Then indeed he may plunder his house. **Whoever is not with me is against me, and whoever does not gather with me scatters.** (ESV)
+
+We don't worship foreign gods. We don't worship other servants of God, angels or demons. We worship Jehovah God, and most Christians worship Jesus Christ as God the Son, reigning as God with His Father - that's totally all good:
+
+> **[Revelation of John 22:8-9](https://www.biblegateway.com/passage/?search=Revelation%2022%3A8-9&version=ESV)** - I, John, am the one who heard and saw these things. And when I heard and saw them, I fell down to worship at the feet of the angel who showed them to me, but he said to me, You must not do that! I am a fellow servant with you and your brothers the prophets, and with those who keep the words of this book. Worship God. (ESV)
 
 I'm trying to side with Jesus over issues regarding the evil which is still present in the world and "hate the sin, not the sinner", and starting by first taking a look at my own problems but by no means endorsing sinful things even things I consider I do which are sinful, I don't endorse them for myself either:
 
@@ -134,6 +162,12 @@ And they were put in Him by Him:
 When we walk in trusting, believing, obedient faith, God works in us and to deliver us and makes our paths straight for us:
 
 > **[Philippians 1:6](https://www.biblegateway.com/passage/?search=Philippians%201%3A6&version=ESV)** - And I am sure of this, that he who began a good work in you will bring it to completion at the day of Jesus Christ. (ESV)
+
+> **[Matthew 7:15-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A15-20&version=ESV)** - Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
+
+> **[Matthew 12:33-35](https://www.biblegateway.com/passage/?search=Matthew%2012%3A33-35&version=ESV)** - Either make the tree good and its fruit good, or make the tree bad and its fruit bad, for the tree is known by its fruit. You brood of vipers! How can you speak good, when you are evil? For out of the abundance of the heart the mouth speaks. The good person out of his good treasure brings forth good, and the evil person out of his evil treasure brings forth evil. (ESV)
+
+-   [youtube.com: STOP Trying To Be a Better Christian&#x2026; {Let Me Explain}](https://www.youtube.com/watch?v=4ENQEX1y7dM)
 
 -   **[David Mathis](https://www.youtube.com/watch?v=0g2ExGC1GaE):** "Don't think that becoming like Jesus in his death means that Paul is anticipating that he himself will be crucified, or that we will be crucified, but that he wants us to know Christ as we live in the pattern in which he lived; That we would **have his heart**, we would **have his mind** (mindset). We would **know him by walking in that mind**, **in that heart**. That's the pattern Paul wants to be conformed to. And knowing Christ by sharing in his sufferings means <ins>walking in the footsteps of his self-humbling,</ins> and **experiencing Jesus' help and the fellowship of having Him near and His resurrection power on the path of our obedience when it's the hardest**".
 
@@ -378,7 +412,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf5d4cb8) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org988602d) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1067,12 +1101,6 @@ See how faithfulness is related to faith - faith is faithful to God. Having fait
 
 > **[II Timothy 2:13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A13&version=ESV)** - if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
 
--   **[Quote from John Piper](https://www.desiringgod.org/messages/when-i-dont-desire-god-part-2/excerpts/true-joy-meets-the-needs-of-others):** Love is the overflow of joy that meets the needs of others.
-
-> **[II Corinthians 8:1-2](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A1-2&version=ESV)** - We want you to know, brothers, about the grace of God that has been given among the churches of Macedonia, for **in a severe test of affliction, their abundance of joy and their extreme poverty have overflowed in a wealth of generosity** on their part. (ESV)
-
--   **[Quote from John Piper](https://youtu.be/JkSAMTp5leQ?t=2305):** Christ-exalting love for people is the overflow of joy in God or it's not love in a Biblical sense.
-
 I have a strong desire to do what God wants me to do as I feel comfortable that God is on my side and will not put me to shame for my shortcomings because I am trusting Him.
 If the devil tries to damage me to make me sin and I sin I know I have confidence that God is still taking care of me and knows everything.
 Now I know I want to love other people because I have joy in knowing God.
@@ -1154,6 +1182,57 @@ Belief (in the heart) that Jesus is the Son of God leads to:
 > **[Acts 28:27](https://www.biblegateway.com/passage/?search=Acts%2028%3A27&version=ESV)** - For the heart of this people has become dull, And with their ears they scarcely hear, And they have closed their eyes; Otherwise they might see with their eyes, And hear with their ears, And **understand with their heart** and **return**, And I would heal them.”’
 
 -   **Song:** [youtube.com: Pat Barrett - Build My Life {feat. Chris Tomlin} {Live}](https://www.youtube.com/watch?v=Z32HiCoFzlU&list=RD0cnEDUMfPXs&index=4)
+
+New creation love:
+
+-   **[Quote from John Piper](https://www.desiringgod.org/messages/when-i-dont-desire-god-part-2/excerpts/true-joy-meets-the-needs-of-others):** Love is the overflow of joy that meets the needs of others.
+
+> **[II Corinthians 8:1-2](https://www.biblegateway.com/passage/?search=2%20Corinthians%208%3A1-2&version=ESV)** - We want you to know, brothers, about the grace of God that has been given among the churches of Macedonia, for **in a severe test of affliction, their abundance of joy and their extreme poverty have overflowed in a wealth of generosity** on their part. (ESV)
+
+-   **[Quote from John Piper](https://youtu.be/JkSAMTp5leQ?t=2305):** Christ-exalting love for people is the overflow of joy in God or it's not love in a Biblical sense.
+
+New creation love is emulating Christ's love towards others from a position of a good conscience with God having been obedient to the gospel or it's not love in a Biblical sense.
+
+Feel free to quote me on that. It's continued obedience to God that proceeds from a good conscience with God.
+
+Fear of God is not only about having the heart to repent from sin and "beat hand on chest and ask God for mercy", but it is also having a changed heart, endeavoring to please Christ with our actions:
+
+> **[II Corinthians 5:6-11](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A6-11&version=ESV)** - So we are always of good courage. We know that while we are at home in the body we are away from the Lord, for we walk by faith, not by sight. Yes, we are of good courage, and we would rather be away from the body and at home with the Lord. So whether we are at home or away, **we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil.** Therefore, knowing the **fear of the Lord**, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. (ESV)
+
+> **[Isaiah 66:2](https://www.biblegateway.com/passage/?search=Isaiah%2066%3A2&version=ESV)** - All these things my hand has made, and so all these things came to be, declares the LORD. But this is the one to whom I will look: he who is humble and contrite in spirit and trembles at my word. (ESV)
+
+The repentant sinner next to Jesus on the cross knew he deserved his punishment, and he even demonstrated that he had a heart that obeys the gospel (whereas the other person appears to have been disobedient to the gospel to death):
+
+> **[John 7:17](https://www.biblegateway.com/passage/?search=John%207%3A17&version=ESV)** - <ins>If anyone's will is to do God's will</ins>, he will know whether the teaching is from God or whether I am speaking on my own authority.
+
+The unrepentant sinner wanted Jesus to save his present life:
+
+> **[Luke 23:39](https://www.biblegateway.com/passage/?search=Luke%2023%3A39&version=ESV)** - One of the criminals who were hanged there was hurling abuse at Him, saying, “Are You not the Christ? Save Yourself and us!”
+
+The repentant sinner feared God and put his hope on Jesus Christ, not to save him from the cross, but to save his soul:
+
+> **[Luke 23:40-43](https://www.biblegateway.com/passage/?search=Luke%2023%3A40-43&version=ESV)** - But the other answered, and rebuking him said, “Do you not even fear God, since you are under the same sentence of condemnation? And we indeed are suffering justly, for we are receiving what we deserve for our deeds; but this man has done nothing wrong.” And he was saying, “Jesus, remember me when You come in Your kingdom!” And He said to him, “Truly I say to you, today you shall be with Me in Paradise.”
+
+     1  Our Father in Heaven,
+     2  
+     3  thank You, God, for loving us first by paying
+     4  the price for our sin with Jesus' blood.
+     5  
+     6  Thank You God that we can now love You and our
+     7  neighbour from a good conscience with You,
+     8  showing others forgiveness and love as we have
+     9  received forgiveness and love.
+    10  
+    11  Please God, help us to trust and obey You
+    12  through trusting and obey Jesus Christ our
+    13  Lord.
+    14  
+    15  Please God never let us fall away but sanctify
+    16  us through Your Spirit.
+    17  
+    18  In Jesus Christ's name I ask.
+    19  
+    20  AMEN!!
 
 
 ## Being born-again of the Spirit
@@ -1463,7 +1542,106 @@ I think being born of God might in some way mean being born of *the will of* God
 
 > **[I John 5:1](https://www.biblegateway.com/passage/?search=1%20John%205%3A1&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
 
+I think this verse could likely mean that the person who is born of God has the power to not sin, as opposed to "never sins", but I'd have to research that:
+
+     1  3956    3588    1080             1537 3588
+     2  Pas     ho      gegennēmenos     ek   tou
+     3  Πᾶς     ὁ       γεγεννημένος     ἐκ   τοῦ
+     4  Anyone   -      having been born of    -
+     5  Adj-NMS Art-NMS V-RPM/P-NMS      Prep Art-GMS
+     6  
+     7  2316    266       3756 4160      3754    4690
+     8  Theou   hamartian ou   poiei     hoti    sperma
+     9  Θεοῦ  , ἁμαρτίαν  οὐ   ποιεῖ  ,  ὅτι     σπέρμα
+    10  God     sin       not  practices because seed
+    11  N-GMS   N-AFS     Adv  V-PIA-3S  Conj    N-NNS
+    12  
+    13  846       1722 846       3306     2532 3756
+    14  autou     en   autō      menei    kai  ou
+    15  αὐτοῦ     ἐν   αὐτῷ      μένει  , καὶ  οὐ
+    16  of Him    in   him       abides   and  not
+    17  PPro-GM3S Prep PPro-DM3S V-PIA-3S Conj Adv
+    18  
+    19  1410       264                 3754
+    20  dynatai    hamartanein         hoti
+    21  δύναται    ἁμαρτάνειν  ,       ὅτι
+    22  he is able to continue sinning because
+    23  V-PIM/P-3S V-PNA               Conj
+    24  
+    25  1537 3588    2316  1080
+    26  ek   tou     Theou gegennētai
+    27  ἐκ   τοῦ     Θεοῦ  γεγέννηται  .
+    28  of   mfs -   God   he has been born
+    29  Prep Art-GMS N-GMS V-RIM/P-3S
+
+One thing for sure, the person born of God is brought into doing the will of God:
+
+> **[I John 5:18](https://www.biblegateway.com/passage/?search=1%20John%205%3A18&version=ESV)** - We know that whosoever is born of God sinneth not; but he that is begotten of God keepeth himself, and that wicked one toucheth him not. (KJV)
+
+> **[I John 5:4](https://www.biblegateway.com/passage/?search=1%20John%205%3A4&version=ESV)** - For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. (ESV)
+
 Someone who has just been born of God is a newborn, an infant in Christ.
+
+Keeping Father God's commandments, we love Father God and we love all those who have been born of Him. We must love all those who believes that Jesus is the Messiah because anyone who believes Jesus is the Messiah has been born of God:
+
+> **[I John 5:1](https://www.biblegateway.com/passage/?search=1%20John%205%3A1&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. (ESV)
+
+The one who believes Jesus is the Son of God is loved by the brethren, joins the family and overcomes the world:
+
+> **[I John 5:5](https://www.biblegateway.com/passage/?search=1%20John%205%3A5&version=ESV)** - Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
+
+> **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
+
+
+### We put away the false gods, and only worship the One True God: Jehovah, and Jesus Christ who He sent
+
+Jehovah is God Almighty who was working through Jesus Christ who is **the** Son of God who also is to be worshiped as Jehovah God, now reigning on the throne of His Father:
+
+> **[Exodus 6:3](https://www.biblegateway.com/passage/?search=Exodus%206%3A3&version=ESV)** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
+
+-   **[Exodus 6:3 (Interlinear)](https://biblehub.com/interlinear/exodus/6-3.htm):** and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;
+
+Jesus reigns and inherits all things. Jesus is the radiance of the glory of God:
+
+> **[Hebrews 1:1-4](https://www.biblegateway.com/passage/?search=Hebrews%201%3A1-4&version=ESV)** - Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son, whom he appointed **the heir of all things**, through whom also he created the world. He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power.  After making purification for sins, he sat down at the right hand of the Majesty on high, having become as much superior to angels as the name he has inherited is more excellent than theirs. (ESV)
+
+Jesus is to be honoured just the Father is honoured:
+
+> **[John 5:22-23](https://www.biblegateway.com/passage/?search=John%205%3A22-23&version=ESV)** - The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. (ESV)
+
+The Bible actually teaches that other so-called gods (all those Hindu gods, for example) are not the One True God who created everything. I affirm Christianity's perspective on this. According to Christianity, to serve them is actually to live in some kind of delusion:
+
+> **[I Corinthians 8:3-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A3-7&version=ESV)** - But if anyone loves God, he is known by God. Therefore, as to the eating of food offered to idols, we know that an idol has no real existence, and that **there is no God but one.** For although there may be so-called gods in heaven or on earth—as indeed there are many gods and many lords— yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist.** However, <ins>not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled.</ins> (ESV)
+
+It's true that there are such heavenly beings, but we're not supposed to worship them:
+
+> **[Psalms 82:6-8](https://www.biblegateway.com/passage/?search=Psalms%2082%3A6-8&version=ESV)** - I said, You are gods, sons of the Most High, all of you; nevertheless, like men you shall die, and fall like any prince. Arise, O God, judge the earth; for you shall inherit all the nations! (ESV)
+
+> **[Colossians 2:18](https://www.biblegateway.com/passage/?search=Colossians%202%3A18&version=ESV)** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, (ESV)
+
+In times past, God overlooked the worship of false-gods:
+
+> **[Joshua 24:15](https://www.biblegateway.com/passage/?search=Joshua%2024%3A15&version=ESV)** - And if it is evil in your eyes to serve the LORD, choose this day whom you will serve, whether the gods your fathers served in the region beyond the River, or the gods of the Amorites in whose land you dwell. But as for me and my house, we will serve the LORD. (ESV)
+
+> **[John 10:34-38](https://www.biblegateway.com/passage/?search=John%2010%3A34-38&version=ESV)** - Jesus answered them, Is it not written in your Law, I said, you are gods? If he called them gods to whom the word of God came—and Scripture cannot be broken— do you say of him whom the Father consecrated and sent into the world, You are blaspheming, because I said, I am the Son of God? If I am not doing the works of my Father, then do not believe me; but if I do them, even though you do not believe me, believe the works, that you may know and understand that the Father is in me and I am in the Father. (ESV)
+
+But now God calls all people everywhere to repent. Christians must turn away from worshiping false-gods, practicing witchcraft, etc.:
+
+> **[Acts 17:29-32](https://www.biblegateway.com/passage/?search=Acts%2017%3A29-32&version=ESV)** - Being then God's offspring, we ought not to think that the divine being is like gold or silver or stone, an image formed by the art and imagination of man. The times of ignorance God overlooked, but now he commands all people everywhere to repent, because he has fixed a day on which he will judge the world in righteousness by a man whom he has appointed; and of this he has given assurance to all by raising him from the dead. Now when they heard of the resurrection of the dead, some mocked. But others said, We will hear you again about this. (ESV)
+
+Christians do not worship foreign gods:
+
+> **[Joshua 24:23](https://www.biblegateway.com/passage/?search=Joshua%2024%3A23&version=ESV)** - He said, Then put away the foreign gods that are among you, and incline your heart to the LORD, the God of Israel. (ESV)
+
+> **[Genesis 35:2-3](https://www.biblegateway.com/passage/?search=Genesis%2035%3A2-3&version=ESV)** - So Jacob said to his household and to all who were with him, Put away the foreign gods that are among you and purify yourselves and change your garments. Then let us arise and go up to Bethel, so that I may make there an altar to the God who answers me in the day of my distress and has been with me wherever I have gone. (ESV)
+
+As a Christian, I want nothing to do with false-gods:
+
+> **[Revelation of John 9:20-21](https://www.biblegateway.com/passage/?search=Revelation%209%3A20-21&version=ESV)** - The rest of mankind, who were not killed by these plagues, did not **repent of the works of their hands nor give up worshiping demons and idols of gold and silver and bronze and stone and wood, which cannot see or hear or walk, nor did they repent of their murders or their sorceries or their sexual immorality or their thefts.** (ESV)
+
+And as a prophetic person, I do not want to encourage anyone to worship false-gods and so be labeled as a false-prophet:
+
+> **[Revelation of John 16:13-15](https://www.biblegateway.com/passage/?search=Revelation%2016%3A13-15&version=ESV)** - And I saw, coming out of the mouth of the dragon and out of the mouth of the beast and out of the mouth of the false prophet, three unclean spirits like frogs. For **they are demonic spirits, performing signs, who go abroad to the kings of the whole world, to assemble them for battle on the great day of God the Almighty.** (Behold, I am coming like a thief! Blessed is the one who stays awake, keeping his garments on, that he may not go about naked and be seen exposed!) (ESV)
 
 
 ### Peter initially protested, but then came to <ins>trust</ins> Jesus and have a "share with Jesus"
@@ -3202,7 +3380,25 @@ Both robbers start off mocking Jesus but then one of the robbers has a change of
 
 > **[Luke 23:39-43](https://www.biblegateway.com/passage/?search=Luke%2023%3A39-43&version=ESV)** - One of the criminals who were hanged railed at him, saying, Are you not the Christ? Save yourself and us! But the other rebuked him, saying, Do you not fear God, since you are under the same sentence of condemnation? And we indeed justly, for we are receiving the due reward of our deeds; but this man has done nothing wrong. And he said, Jesus, remember me when you come into your kingdom. And he said to him, Truly, I say to you, today you will be with me in Paradise. (ESV)
 
+The fear of God should mean we want to do what pleases God - it's a heart that wishes to have a good conscience with God - wishes for God's commendation and not His wrath:
+
+> **[Proverbs 16:6](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A6&version=ESV)** - By steadfast love and faithfulness iniquity is atoned for, and by the fear of the LORD one turns away from evil. (ESV)
+
+We want to always have the fear of God:
+
+> **[Proverbs 14:27](https://www.biblegateway.com/passage/?search=Proverbs%2014%3A27&version=ESV)** - The fear of the LORD is a fountain of life, that one may turn away from the snares of death. (ESV)
+
+It's great having a good conscience with God, and a relationship with God:
+
+> **[Proverbs 23:17](https://www.biblegateway.com/passage/?search=Proverbs%2023%3A17&version=ESV)** - Let not your heart envy sinners, but continue in the fear of the LORD all the day. (ESV)
+
+We're supposed to live this way as Christians:
+
+> **[Acts 9:31](https://www.biblegateway.com/passage/?search=Acts%209%3A31&version=ESV)** - So the church throughout all Judea and Galilee and Samaria had peace and was being built up. And walking in the fear of the Lord and in the comfort of the Holy Spirit, it multiplied. (ESV)
+
 ***2. We must have a hatred of one's own sin:***
+
+> **[Proverbs 8:13](https://www.biblegateway.com/passage/?search=Proverbs%208%3A13&version=ESV)** - The fear of the LORD is hatred of evil. Pride and arrogance and the way of evil and perverted speech I hate. (ESV)
 
 > To be a Christian doesn't mean that we are without sin this side of heaven, but it does mean that we have a hatred for our own sin, that we are wrestling with the flesh that is still inside us even as Jesus is making us new, rather than being complacent over our sin.
 
@@ -4196,26 +4392,129 @@ Examples:
 
 ### A H.A.N.D.S. Approach to Showing Jesus is God
 
+Firstly, I understand that Jesus Christ is God in that He is the Son of God, but that also Jehovah is God. I believe that Jesus Christ is Jehovah in that He is God the Son, but there is also God the Father:
+
+[Proverbs 30:4](https://www.biblegateway.com/passage/?search=Proverbs%2030%3A4&version=ESV) and [John 3:13-7](https://www.biblegateway.com/passage/?search=John%203%3A13-7&version=ESV) talk about God and His Son:
+
+> **[Proverbs 30:4](https://www.biblegateway.com/passage/?search=Proverbs%2030%3A4&version=ESV)** - Who has ascended to heaven and come down? Who has gathered the wind in his fists? Who has wrapped up the waters in a garment? Who has established all the ends of the earth? What is his name, and what is his son's name? Surely you know! (ESV)
+
+> **[John 3:13-17](https://www.biblegateway.com/passage/?search=John%203%3A13-17&version=ESV)** - No one has ascended into heaven except he who descended from heaven, the Son of Man. And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. (ESV)
+
+> **[Colossians 2:9-10](https://www.biblegateway.com/passage/?search=Colossians%202%3A9-10&version=ESV)** - For in him the whole fullness of deity dwells bodily, and you have been filled in him, who is the head of all rule and authority. (ESV)
+
 What reasons do we have for thinking that Jesus is truly God? Robert M. Bowman Jr. and J. Ed Komoszewski in their book Putting Jesus in His Place:The Case for the Deity of Christ published by Kregel in 2007, offer a simple and memorable way to do this. Using the acronym H.A.N.D.S., they reason that the Bible teaches that Jesus shares the Honour due only to God, that Jesus shares the Attributes of God, that Jesus shares the Names ascribed to God, that Jesus does the Deeds that only God can do, and that Jesus is Seated on the throne of God. Here are a few of the lines of evidence from the Scriptures that we can draw on.
 
 ***H - Honour***:
 
-Scripture indicates that God alone is to be worshipped (**[Deut 6:13](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A13&version=ESV)**; **[Matt 4:9-10](https://www.biblegateway.com/passage/?search=Matthew%204%3A9-10&version=ESV)**), yet Jesus is worshipped and accepts such worship (**[Matt 14:33](https://www.biblegateway.com/passage/?search=Matthew%2014%3A33&version=ESV)**; **[Heb 1:6](https://www.biblegateway.com/passage/?search=Hebrews%201%3A6&version=ESV)**; **[Rev 1:17](https://www.biblegateway.com/passage/?search=Revelation%201%3A17&version=ESV)**), so who does that mean Jesus truly is? If Jesus were merely human it would be wrong to honour Him as God alone is to be honoured. Yet, we read that devout Jews in the New Testament bowed down and worshipped Jesus (i.e. “doubting” Thomas in **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)**) and Jesus accepted that worship.
+Scripture indicates that God alone is to be worshipped:
 
-If Jesus were merely human it would be wrong to honour Him as God. Yet devout Jews in the New Testament bowed down and worshipped Jesus
+> **[Deuteronomy 6:13](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A13&version=ESV)** - It is the LORD your God you shall fear. Him you shall serve and by his name you shall swear. (ESV)
+
+> **[Matthew 4:9-10](https://www.biblegateway.com/passage/?search=Matthew%204%3A9-10&version=ESV)** - And he said to him, All these I will give you, if you will fall down and worship me. Then Jesus said to him, Be gone, Satan! For it is written, You shall worship the Lord your God and him only shall you serve. (ESV)
+
+Yet Jesus is worshipped and accepts such worship:
+
+> **[Matthew 14:33](https://www.biblegateway.com/passage/?search=Matthew%2014%3A33&version=ESV)** - And those in the boat worshiped him, saying, Truly you are the Son of God. (ESV)
+
+> **[Hebrews 1:6](https://www.biblegateway.com/passage/?search=Hebrews%201%3A6&version=ESV)** - And again, when he brings the firstborn into the world, he says, Let all God's angels worship him. (ESV)
+
+> **[Revelation of John 1:17](https://www.biblegateway.com/passage/?search=Revelation%201%3A17&version=ESV)** - When I saw him, I fell at his feet as though dead. But he laid his right hand on me, saying, Fear not, I am the first and the last, (ESV)
+
+So who does that mean Jesus truly is? If Jesus were merely human it would be wrong to honour Him as God alone is to be honoured. Yet, we read that devout Jews in the New Testament bowed down and worshipped Jesus (i.e. “doubting” Thomas in **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)**) and Jesus accepted that worship:
+
+> **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)** - Thomas answered him, My Lord and my God! (ESV)
+
+If Jesus were merely human it would be wrong to honour Him as God. Yet devout Jews in the New Testament bowed down and worshipped Jesus.
 
 ***A - Attributes***:
 
-The Bible tells us that Jesus has the same attributes as God, being: eternal ([John 1:1-3](https://www.biblegateway.com/passage/?search=John%201%3A1-3&version=ESV); 8:58), all-powerful ([Matt. 28:18](https://www.biblegateway.com/passage/?search=Matthew%2028%3A18&version=ESV)), all-knowing ([John 21:17](https://www.biblegateway.com/passage/?search=John%2021%3A17&version=ESV)), and loving ([Rom 8:35-39](https://www.biblegateway.com/passage/?search=Romans%208%3A35-39&version=ESV)). If someone possessed the same characteristics, the same nature as God, in the same way that God did, what would that make Him?
-Names
+The Bible tells us that Jesus has the same attributes as God, being eternal:
 
-Jesus is said to have been given the name that is above every other name ([Phil. 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)). Jesus is called God ([John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)), Lord ([Acts 1:24](https://www.biblegateway.com/passage/?search=Acts%201%3A24&version=ESV)), the King of kings ([Rev 19:16](https://www.biblegateway.com/passage/?search=Revelation%2019%3A16&version=ESV)), Saviour ([Luke 2:11](https://www.biblegateway.com/passage/?search=Luke%202%3A11&version=ESV)), and the First and the Last ([Rev 1:7-8](https://www.biblegateway.com/passage/?search=Revelation%201%3A7-8&version=ESV)). It would be wrong to call any older man our father, so if Jesus receives such titles, that is saying a lot about who He is.
-Deeds
+> **[John 1:1-3](https://www.biblegateway.com/passage/?search=John%201%3A1-3&version=ESV)** - In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made. (ESV)
 
-Who can do the things that God alone does? Jesus is said to be the creator ([John 1:3](https://www.biblegateway.com/passage/?search=John%201%3A3&version=ESV)), the sustainer of all things ([Heb. 1:2-3](https://www.biblegateway.com/passage/?search=Hebrews%201%3A2-3&version=ESV)), He is sovereign over the forces of nature ([Matt. 8:23-27](https://www.biblegateway.com/passage/?search=Matthew%208%3A23-27&version=ESV)), the one who forgives sins ([Matt 9:1-8](https://www.biblegateway.com/passage/?search=Matthew%209%3A1-8&version=ESV)), and even the one who gives life ([John 1:4](https://www.biblegateway.com/passage/?search=John%201%3A4&version=ESV); 5:21). In fact it could be said that everything that God does for us, Jesus does for us. How should one respond to such blessings?
-Seat
+all-powerful:
 
-Lastly, Jesus sits on God’s throne ([Rev. 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)), ruling over all things ([Rev 5:13](https://www.biblegateway.com/passage/?search=Revelation%205%3A13&version=ESV)). This is nothing short of claiming to be equal with God ([John 10:27-33](https://www.biblegateway.com/passage/?search=John%2010%3A27-33&version=ESV)). Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
+> **[Matthew 28:18](https://www.biblegateway.com/passage/?search=Matthew%2028%3A18&version=ESV)** - And Jesus came and said to them, All authority in heaven and on earth has been given to me. (ESV)
+
+all-knowing:
+
+> **[John 21:17](https://www.biblegateway.com/passage/?search=John%2021%3A17&version=ESV)** - He said to him the third time, Simon, son of John, do you love me? Peter was grieved because he said to him the third time, Do you love me? and he said to him, Lord, you know everything; you know that I love you. Jesus said to him, Feed my sheep. (ESV)
+
+loving:
+
+> **[Romans 8:35-39](https://www.biblegateway.com/passage/?search=Romans%208%3A35-39&version=ESV)** - Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword? As it is written, For your sake we are being killed all the day long; we are regarded as sheep to be slaughtered. No, in all these things we are more than conquerors through him who loved us. For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord. (ESV)
+
+If someone possessed the same characteristics, the same nature as God, in the same way that God did, what would that make Him?
+
+I do recognise that if it wasn't for the salvation which God gives us in His Son Jesus, God would be against us because of sin. But God, out of His love, has appeased His own wrath towards those who are saved by Jesus:
+
+> **[Romans 1:18](https://www.biblegateway.com/passage/?search=Romans%201%3A18&version=ESV)** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. (ESV)
+
+> **[Colossians 3:5-8](https://www.biblegateway.com/passage/?search=Colossians%203%3A5-8&version=ESV)** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. (ESV)
+
+***N - Names***:
+
+([Phil. 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)). Jesus is called God ([John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)), Lord ([Acts 1:24](https://www.biblegateway.com/passage/?search=Acts%201%3A24&version=ESV)), the King of kings ([Rev 19:16](https://www.biblegateway.com/passage/?search=Revelation%2019%3A16&version=ESV)), Saviour ([Luke 2:11](https://www.biblegateway.com/passage/?search=Luke%202%3A11&version=ESV)), and the First and the Last ([Rev 1:7-8](https://www.biblegateway.com/passage/?search=Revelation%201%3A7-8&version=ESV)):
+
+Jesus is said to have been given the name that is above every other name:
+
+> **[Philippians 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)** - Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. (ESV)
+
+> **[John 20:28](https://www.biblegateway.com/passage/?search=John%2020%3A28&version=ESV)** - Thomas answered him, My Lord and my God! (ESV)
+
+> **[Acts 1:24](https://www.biblegateway.com/passage/?search=Acts%201%3A24&version=ESV)** - And they prayed and said, You, Lord, who know the hearts of all, show which one of these two you have chosen (ESV)
+
+> **[Revelation of John 19:16](https://www.biblegateway.com/passage/?search=Revelation%2019%3A16&version=ESV)** - On his robe and on his thigh he has a name written, King of kings and Lord of lords. (ESV)
+
+> **[Luke 2:11](https://www.biblegateway.com/passage/?search=Luke%202%3A11&version=ESV)** - For unto you is born this day in the city of David a Savior, who is Christ the Lord. (ESV)
+
+> **[Revelation of John 1:7-8](https://www.biblegateway.com/passage/?search=Revelation%201%3A7-8&version=ESV)** - Behold, he is coming with the clouds, and every eye will see him, even those who pierced him, and all tribes of the earth will wail on account of him. Even so. Amen. I am the Alpha and the Omega, says the Lord God, who is and who was and who is to come, the Almighty. (ESV)
+
+It would be wrong to call any older man our father, so if Jesus receives such titles, that is saying a lot about who He is:
+
+> **[Isaiah 9:6](https://www.biblegateway.com/passage/?search=Isaiah%209%3A6&version=ESV)** - For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. (ESV)
+
+*\*D - Deeds*:
+
+All things were made *through* Him:
+
+> **[John 1:3](https://www.biblegateway.com/passage/?search=John%201%3A3&version=ESV)** - All things were made through him, and without him was not any thing made that was made. (ESV)
+
+The sustainer of all things:
+
+> **[Hebrews 1:2-3](https://www.biblegateway.com/passage/?search=Hebrews%201%3A2-3&version=ESV)** - but in these last days he has spoken to us by his Son, whom he appointed **the heir of all things**, **through whom also he created the world. He is the radiance of the glory of God and the exact imprint of his nature,** and he upholds the universe by the word of his power. After making purification for sins, he sat down at the right hand of the Majesty on high, (ESV)
+
+He is sovereign over the forces of nature:
+
+> **[Matthew 8:23-27](https://www.biblegateway.com/passage/?search=Matthew%208%3A23-27&version=ESV)** - And when he got into the boat, his disciples followed him. And behold, there arose a great storm on the sea, so that the boat was being swamped by the waves; but he was asleep. And they went and woke him, saying, Save us, Lord; we are perishing. And he said to them, Why are you afraid, O you of little faith? Then he rose and rebuked the winds and the sea, and there was a great calm. And the men marveled, saying, What sort of man is this, that even winds and sea obey him? (ESV)
+
+He is the one who forgives sins:
+
+> **[Matthew 9:1-8](https://www.biblegateway.com/passage/?search=Matthew%209%3A1-8&version=ESV)** - And getting into a boat he crossed over and came to his own city. And behold, some people brought to him a paralytic, lying on a bed. And when Jesus saw their faith, he said to the paralytic, Take heart, my son; your sins are forgiven. And behold, some of the scribes said to themselves, This man is blaspheming. But Jesus, knowing their thoughts, said, Why do you think evil in your hearts? For which is easier, to say, Your sins are forgiven, or to say, Rise and walk? But that you may know that **the Son of Man has authority on earth to forgive sins** — he then said to the paralytic—Rise, pick up your bed and go home. And he rose and went home. When the crowds saw it, they were afraid, and they glorified God, who had given such authority to men. (ESV)
+
+He is one who gives life:
+
+> **[John 1:4](https://www.biblegateway.com/passage/?search=John%201%3A4&version=ESV)** - In him was life, and the life was the light of men. (ESV)
+
+> **[John 5:21](https://www.biblegateway.com/passage/?search=John%205%3A21&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. (ESV)
+
+In fact it could be said that everything that God does for us, Jesus does for us. How should one respond to such blessings?
+
+*\*S - Seat*:
+
+Jesus sits on God’s throne:
+
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+
+Jesus is ruling over all things:
+
+> **[Revelation of John 5:13](https://www.biblegateway.com/passage/?search=Revelation%205%3A13&version=ESV)** - And I heard every creature in heaven and on earth and under the earth and in the sea, and all that is in them, saying, To him who sits on the throne and to the Lamb be blessing and honor and glory and might forever and ever! (ESV)
+
+This is nothing short of claiming to be equal with God:
+
+> **[John 10:27-33](https://www.biblegateway.com/passage/?search=John%2010%3A27-33&version=ESV)** - My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one. The Jews picked up stones again to stone him. Jesus answered them, I have shown you many good works from the Father; for which of them are you going to stone me? The Jews answered him, It is not for a good work that we are going to stone you but for blasphemy, because you, being a man, make yourself God. (ESV)
+
+Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
 
 
 ## Our obedient faith should be penitent, and should be without partiality. We **aim** for perfection, to be conformed to Christ's image
@@ -7213,7 +7512,7 @@ Jehovah is God Almighty:
 
 > **[Exodus 6:3](https://www.biblegateway.com/passage/?search=Exodus%206%3A3&version=ESV)** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
 
-[Exodus 6:3](https://biblehub.com/interlinear/exodus/6-3.htm) Interlinear: and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;]]
+-   **[Exodus 6:3 (Interlinear)](https://biblehub.com/interlinear/exodus/6-3.htm):** and I appear unto Abraham, unto Isaac, and unto Jacob, as God Almighty; as to My name Jehovah, I have not been known to them;
 
 
 ### Faith and law-keeping as a Christian
@@ -7804,7 +8103,7 @@ We must obey His commandments to walk in the same way He walked so we get to kno
 
 > **[John 1:14](https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV)** - And **the Word became flesh** and dwelt among us, and we have seen his glory, glory as of **the only Son from the Father, full of grace and truth.** (ESV)
 
-> **[Hebrews 1:2](https://www.biblegateway.com/passage/?search=Hebrews%201%3A2&version=ESV)** - but <ins>in these last days</ins> **he has spoken to us by his Son**, whom he appointed the heir of all things, through whom also he created the world. (ESV)
+> **[Hebrews 1:2](https://www.biblegateway.com/passage/?search=Hebrews%201%3A2&version=ESV)** - but <ins>in these last days</ins> **he has spoken to us by his Son**, whom he appointed **the heir of all things**, through whom also he created the world. (ESV)
 
 > **[Hebrews 2:1](https://www.biblegateway.com/passage/?search=Hebrews%202%3A1&version=ESV)** - Therefore **we must pay much closer attention to what we have heard, lest we drift away from it.** (ESV)
 
@@ -8360,18 +8659,6 @@ We are zealous to do good works, Jesus having redeemed us and given us His Spiri
 
 > **[Psalms 34:19](https://www.biblegateway.com/passage/?search=Psalms%2034%3A19&version=ESV)** - Many are the afflictions of the righteous, but the LORD delivers him out of them all. (ESV)
 
-[youtube.com: Your Holy Deeds Are Not Filthy Rags](https://www.youtube.com/watch?v=OQh3mpyjlts)
-
-> **[Nehemiah 13:14](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A14&version=ESV)** - Remember me, O my God, concerning this, and do not wipe out my good deeds that I have done for the house of my God and for his service. (ESV)
-
-> **[Nehemiah 13:22](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A22&version=ESV)** - Then I commanded the Levites that they should purify themselves and come and guard the gates, to keep the Sabbath day holy. Remember this also in my favor, O my God, and spare me according to the greatness of your steadfast love. (ESV)
-
-> **[Nehemiah 13:30-31](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A30-31&version=ESV)** - Thus I cleansed them from everything foreign, and I established the duties of the priests and Levites, each in his work; and I provided for the wood offering at appointed times, and for the firstfruits. Remember me, O my God, for good. (ESV)
-
-God does not despise the righteous deeds of His children done by faith:
-
-> **[Isaiah 64:5-6](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A5-6&version=ESV)** - **You meet him who joyfully works righteousness, those who remember you in your ways.** Behold, you were angry, and we sinned; in our sins we have been a long time, and shall we be saved? We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away. (ESV)
-
 People who are now in Christ are a new creation, and we should be transitioning into the new. That might take some shaking off of old things, and involves being sanctified by obedience to the Truth. But those who are in Christ are a [brand new creation, born-again](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection/):
 
      1  5620 [e]  1487 [e] 5100 [e] 1722 [e] 5547 [e]  2537 [e]
@@ -8405,6 +8692,21 @@ Jesus made me born again and I'm a new creation. Now we wait for ultimate salvat
 > **[I Thessalonians 5:1-10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A1-10&version=ESV)** - Now concerning the times and the seasons, brothers, you have no need to have anything written to you. For you yourselves are fully aware that **the day of the Lord will come like a thief in the night.** While people are saying, There is peace and security, then sudden destruction will come upon them as labor pains come upon a pregnant woman, and they will not escape. But you are not in darkness, brothers, for that day to surprise you like a thief. For you are all children of light, children of the day. We are not of the night or of the darkness. So then let us not sleep, as others do, but let us keep awake and be sober. For those who sleep, sleep at night, and those who get drunk, are drunk at night. But **since we belong to the day, let us be sober, having put on the breastplate of faith and love, and for a helmet the hope of salvation. For God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ, who died for us so that whether we are awake or asleep we might live with him.** (ESV)
 
 -   **Video:** [youtube.com: Something HUGE Is Coming!](https://www.youtube.com/watch?v=EUjktz9zLXk)
+
+
+### Righteous deeds
+
+-   **Sermon:** [youtube.com: John Pipe - Your Holy Deeds Are Not Filthy Rags](https://www.youtube.com/watch?v=OQh3mpyjlts)
+
+> **[Nehemiah 13:14](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A14&version=ESV)** - Remember me, O my God, concerning this, and do not wipe out my good deeds that I have done for the house of my God and for his service. (ESV)
+
+> **[Nehemiah 13:22](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A22&version=ESV)** - Then I commanded the Levites that they should purify themselves and come and guard the gates, to keep the Sabbath day holy. Remember this also in my favor, O my God, and spare me according to the greatness of your steadfast love. (ESV)
+
+> **[Nehemiah 13:30-31](https://www.biblegateway.com/passage/?search=Nehemiah%2013%3A30-31&version=ESV)** - Thus I cleansed them from everything foreign, and I established the duties of the priests and Levites, each in his work; and I provided for the wood offering at appointed times, and for the firstfruits. Remember me, O my God, for good. (ESV)
+
+God does not despise the righteous deeds of His children done by faith:
+
+> **[Isaiah 64:5-6](https://www.biblegateway.com/passage/?search=Isaiah%2064%3A5-6&version=ESV)** - **You meet him who joyfully works righteousness, those who remember you in your ways.** Behold, you were angry, and we sinned; in our sins we have been a long time, and shall we be saved? We have all become like one who is unclean, and all our righteous deeds are like a polluted garment. We all fade like a leaf, and our iniquities, like the wind, take us away. (ESV)
 
 
 ### Whoever makes an appeal to God, calls upon His name will be saved
@@ -9460,6 +9762,12 @@ Being firm in our faith, we can resist:
 ## Sanctification (turning from sin and being cleaned) is a marker of those who are in Jesus
 
 > **[I Corinthians 6:11](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A11&version=ESV)** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
+
+We should also ask God to sanctify us, and we should will to be sanctified. God wants us to be sanctified, and to depart from impurity:
+
+> **[I John 5:14-15](https://www.biblegateway.com/passage/?search=1%20John%205%3A14-15&version=ESV)** - And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him. (ESV)
+
+> **[I Thessalonians 4:3-8](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A3-8&version=ESV)** - For this is the will of God, your sanctification: that you abstain from sexual immorality; that each one of you know how to control his own body in holiness and honor, not in the passion of lust like the Gentiles who do not know God; that no one transgress and wrong his brother in this matter, because the Lord is an avenger in all these things, as we told you beforehand and solemnly warned you. For God has not called us for impurity, but in holiness. Therefore whoever disregards this, disregards not man but God, who gives his Holy Spirit to you. (ESV)
 
 
 ## We are justified by faith in God who delivered up for our trespasses and <ins>raised Jesus Christ from the dead for our justification</ins>
@@ -11583,7 +11891,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org343d10a)
+See: [33.4.1](#org5c0346d)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14138,6 +14446,10 @@ The word return specifies 'action'.
 
 
 # Spirit of Truth vs Spirit of Error
+
+Don't rely on your dreams - they may come from evil spirits:
+
+> **[Jude 1:8](https://www.biblegateway.com/passage/?search=Jude%201%3A8&version=ESV)** - Yet in like manner these people also, relying on their dreams, defile the flesh, reject authority, and blaspheme the glorious ones. (ESV)
 
 
 ## Don't believe falsehood
@@ -20274,7 +20586,7 @@ Proclaim the Lord's death until He comes:
      1  What does 1 Corinthians 11:29 mean?
      2  This is a sobering verse, especially for believers who regularly participate in communion. Paul has already warned Christians to examine themselves before taking part in the Lord's Supper to avoid doing so in an unworthy way (1 Corinthians 11:28).
      3  
-     4  The cup represents Christ's blood, and the bread represents His broken body. The purpose of taking communion is to commemorate and reflect on the sacrificial death of Jesus (Matthew 26:26–28). To do so without "discerning the body" brings judgment on the participant. 
+     4  The cup represents Christ's blood, and the bread represents His broken body. The purpose of taking communion is to commemorate and reflect on the sacrificial death of Jesus (Matthew 26:26–28). To do so without "discerning the body" brings judgment on the participant.
      5  
      6  The first question this raises is the precise meaning of "discerning the body." Bible scholars primarily suggest two ways of interpreting this, both of which are reasonable, and which can even both be true.
      7  
@@ -21037,7 +21349,7 @@ I think this really clears things up a little bit:
 
 We serve the Most High God, Jehovah and Jesus Christ who He has sent:
 
-> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
+> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, <ins>not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled.</ins> (ESV)
 
 Jesus has defeated death for himself and all who receive eternal life from Him:
 
@@ -23254,7 +23566,9 @@ Dying to sin an immediate thing and living to Christ, becoming like Jesus in His
 
 > **[Acts 3:16](https://www.biblegateway.com/passage/?search=Acts%203%3A16&version=ESV)** - And his name-by faith in his name-has made this man strong whom you see and know, and the faith that is through Jesus has given the man this perfect health in the presence of you all.??
 
-> **[Hebrews 1:1-4](https://www.biblegateway.com/passage/?search=Hebrews%201%3A1-4&version=ESV)** -  Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son, whom he appointed the heir of all things, through whom also he created the world.  He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power.  After making purification for sins, he sat down at the right hand of the Majesty on high, having become as much superior to angels as the name he has inherited is more excellent than theirs. (ESV)
+Jesus reigns and inherits all things. Jesus is the radiance of the glory of God:
+
+> **[Hebrews 1:1-4](https://www.biblegateway.com/passage/?search=Hebrews%201%3A1-4&version=ESV)** - Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son, whom he appointed **the heir of all things**, through whom also he created the world. He is the radiance of the glory of God and the exact imprint of his nature, and he upholds the universe by the word of his power.  After making purification for sins, he sat down at the right hand of the Majesty on high, having become as much superior to angels as the name he has inherited is more excellent than theirs. (ESV)
 
 > **[Philippians 2:9-11](https://www.biblegateway.com/passage/?search=Philippians%202%3A9-11&version=ESV)** - Therefore God has highly exalted him and bestowed on him the name that is above every name, so that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father. (ESV)
 
@@ -24407,7 +24721,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org343d10a)
+See: [33.4.1](#org5c0346d)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -29947,9 +30261,11 @@ I died and my life is now hidden with Christ in God:
 
 > **[Colossians 3:3](https://www.biblegateway.com/passage/?search=Colossians%203%3A3&version=ESV)** - For you have died, and your life is hidden with Christ in God. (ESV)
 
-My own obedience/righteousness will never be enough, but I hate sin (especially after I have committed it) and I have made an effort to be conformed to holiness, and I honestly feel like without grace/assistance the call to "be holy as He is holy" feels impossible. But as far as being right with God goes, I'm resting on the righteousness that comes through faith in Jesus so on the day of judgement I hope to receive a "not guilty" verdict:
+My own obedience/righteousness will never be enough on its own (I also need to have accepted forgiveness from God by Jesus' blood), but I hate sin (especially after I have committed it) and I have made an effort to be conformed to holiness, and I honestly feel like without grace/assistance the call to "be holy as He is holy" feels impossible. But as far as being right with God goes, I'm resting on the righteousness that comes through faith in Jesus so on the day of judgement I hope to receive a "not guilty" verdict, and the ongoing fear of God I believe is a continuing trust and obedience to Jesus Christ after accepting Him as Lord and Saviour - accepting the truth of His Gospel:
 
 -   [youtube.com: If you are struggling with what to do with sin after you receive Jesus, take a listen&#x2026; ?](https://www.youtube.com/watch?v=InDrIMKL2E8)
+
+> **[Matthew 13:37-43](https://www.biblegateway.com/passage/?search=Matthew%2013%3A37-43&version=ESV)** - He answered, The one who sows the good seed is the Son of Man. The field is the world, and the good seed is the children of the kingdom. The weeds are the sons of the evil one, and the enemy who sowed them is the devil. The harvest is the close of the age, and the reapers are angels. Just as the weeds are gathered and burned with fire, so will it be at the close of the age. The Son of Man will send his angels, and they will gather out of his kingdom all causes of sin and all law-breakers, and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth. Then the righteous will shine like the sun in the kingdom of their Father. He who has ears, let him hear. (ESV)
 
 True freedom is found in Jesus, not in the AI stuff:
 
@@ -30473,6 +30789,28 @@ After I was born-again I decided that Jesus was the most important thing and I b
 
 I made the proposal during this time. I received a dream on [6 Aug](https://en.wikipedia.org/wiki/Feast_of_the_Transfiguration), which happened to be the Feast of Transfiguration, I found out a year or so later, and made the proposal on 10 Aug, which is the 222 day of 2022, at 2:22pm. Honestly, at the time I just thought it sounded memorable and I wanted it to be. Go figure! I'm not going to justify my own actions here.
 
+I find this interesting, notice the word for life (Zoe) has the Strongs number 2222.
+
+[John 5:12 (Interlinar)](https://biblehub.com/interlinear/1_john/5-12.htm):
+
+     1  3588      2192      3588    5207  2192     3588
+     2  ho        echōn     ton     Huion echei    tēn
+     3  ὁ         ἔχων      τὸν     Υἱὸν  ἔχει     τὴν
+     4  The [one] having    the     Son   has       -
+     5  Art-NMS   V-PPA-NMS Art-AMS N-AMS V-PIA-3S Art-AFS
+     6  
+     7  2222    3588      3361 2192      3588    5207
+     8  zōēn    ho        mē   echōn     ton     Huion
+     9  ζωήν  ; ὁ         μὴ   ἔχων      τὸν     Υἱὸν
+    10  life    the [one] not  having    the     Son
+    11  N-AFS   Art-NMS   Adv  V-PPA-NMS Art-AMS N-AMS
+    12  
+    13  3588    2316    3588    2222  3756 2192
+    14  tou     Theou   tēn     zōēn  ouk  echei
+    15  τοῦ     Θεοῦ  , τὴν     ζωὴν  οὐκ  ἔχει  .
+    16   -      of God   -      life  not  has
+    17  Art-GMS N-GMS   Art-AFS N-AFS Adv  V-PIA-3S
+
 Being born of the Spirit unpredictable:
 
 > **[John 3:8](https://www.biblegateway.com/passage/?search=John%203%3A8&version=ESV)** - The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit. (ESV)
@@ -30989,6 +31327,8 @@ But if there is a spirit-spouse manifesting spiritually and messing with me phys
 
 > Yeah, this morning <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-28 Fri&gt; </span></span> I had a night swamped with such evil dreams. God knows why. So evil that I cannot even mention them. This is the day after writing about how Christians should be have like children of Father God, that is Jehovah:
 
+> **[Psalms 91:5-8](https://www.biblegateway.com/passage/?search=Psalms%2091%3A5-8&version=ESV)** - You will not fear the terror of the night, nor the arrow that flies by day, nor the pestilence that stalks in darkness, nor the destruction that wastes at noonday. A thousand may fall at your side, ten thousand at your right hand, but it will not come near you. You will only look with your eyes and see the recompense of the wicked. (ESV)
+
 > The Golden Rule, I think explains that we should behave like a child of Father God who is by nature Good and gives good gifts to His children, and gifts that are truly good, far exceeding any amount of favour we might show our own children. As we behave like a child of Father God, believing the gospel of Jesus, and loving with Christ's love, we can really say our Father is God, as a child takes after their parents, and a child of Father God behaves like Jesus and follows Jesus. We try to follow Jesus, and imitate Christ's pattern, as Christ is **the** Son of God.
 
 Yeah, I am at my limits to what I can endure.
@@ -31406,7 +31746,7 @@ The Only True God is the [God and Father of Jesus Christ, and Jesus Christ who H
 
 We serve the Most High God, Jehovah and Jesus Christ who He has sent:
 
-> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled. (ESV)
+> **[I Corinthians 8:5-7](https://www.biblegateway.com/passage/?search=1%20Corinthians%208%3A5-7&version=ESV)** - For although <ins>there may be so-called gods in heaven or on earth</ins> — *as indeed there are many gods and many lords* — yet **for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist**. However, <ins>not all possess this knowledge. But some, through former association with idols, eat food as really offered to an idol, and their conscience, being weak, is defiled.</ins> (ESV)
 
 > **[Deuteronomy 10:17](https://www.biblegateway.com/passage/?search=Deuteronomy%2010%3A17&version=ESV)** - For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
 
@@ -31558,6 +31898,8 @@ The motivation for everything must be to glorify God.
 [youtube.com: The most terrifying passage in the Bible | Matthew 7:21-23](https://www.youtube.com/watch?v=v60efH7_POE&t=616s)
 
 > **[Luke 8:21](https://www.biblegateway.com/passage/?search=Luke%208%3A21&version=ESV)** - But He answered and said to them, “My mother and My brothers are these who hear the word of God <ins>and do it</ins>.” (ESV)
+
+> **[Matthew 12:48-50](https://www.biblegateway.com/passage/?search=Matthew%2012%3A48-50&version=ESV)** - But he replied to the man who told him, Who is my mother, and who are my brothers? And stretching out his hand toward his disciples, he said, Here are my mother and my brothers! For whoever does the will of my Father in heaven is my brother and sister and mother. (ESV)
 
 Paul agrees:
 
