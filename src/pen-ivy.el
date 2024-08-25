@@ -374,4 +374,14 @@ prompt additionally for EXTRA-AG-ARGS."
 (advice-add 'ivy--format-minibuffer-line :around #'ivy--format-minibuffer-line-around-advice)
 ;; (advice-remove 'ivy--format-minibuffer-line #'ivy--format-minibuffer-line-around-advice)
 
+;; Make it so I can click on results in ivy, as I can with helm
+(defun ivy-mouse-done (event)
+  (interactive "@e")
+  (let ((offset (ivy-mouse-offset event)))
+    (when offset
+      (ivy-next-line offset)
+      (ivy--exhibit)
+      ;; (ivy-alt-done)
+      (ivy-done))))
+
 (provide 'pen-ivy)
