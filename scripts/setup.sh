@@ -2377,3 +2377,5 @@ agi rename
 e ia shrink-path
 
 pip3.8 install AoE2ScenarioParser
+
+e ia discover discover-my-major
