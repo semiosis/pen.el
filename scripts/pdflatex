@@ -12,6 +12,6 @@ final-tidy-latex "$last_arg"
 # TODO This should only run if the \usepackage{fontspec} is not used
 # because fontspec needs xelatex, and this bookify script only works
 # with pdflatex.
-## latex-bookify "$last_arg"
+# latex-bookify "$last_arg"
 
 /usr/bin/pdflatex -interaction nonstopmode "$@"

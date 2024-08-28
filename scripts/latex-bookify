@@ -33,16 +33,16 @@ IFS= read -r -d '' BOOK_HEADER <<HEREDOC
 \input Acorn.fd
 \newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
 
-\usepackage{geometry}
-\geometry{
-tmargin=5cm, 
-bmargin=5cm, 
-lmargin=5cm, 
-rmargin=3cm,
-headheight=1.5cm,
-headsep=0.8cm,
-footskip=0.5cm}
 
+\usepackage{geometry}
+% \geometry{
+% tmargin=5cm, 
+% bmargin=5cm, 
+% lmargin=5cm, 
+% rmargin=3cm,
+% headheight=1.5cm,
+% headsep=0.8cm,
+% footskip=0.5cm}
 
 % \usepackage[full]{textcomp}
 \renewcommand{\familydefault}{pplj} 
@@ -97,7 +97,7 @@ expansion=true]{microtype}
 
 
 \usepackage{lipsum}
-\setlength{\parindent}{1em} % Sangría española
+\setlength{\parindent}{1em}
 \pagestyle{fancy}
 
 \renewcommand{\footnoterule}{\vspace{-0.5em}\noindent\textcolor{marron}{\decosix \raisebox{2.9pt}{\line(1,0){100}} \lefthand} \vspace{.5em} }
