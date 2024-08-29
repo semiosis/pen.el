@@ -412,7 +412,7 @@ Instead we focus on following Jesus first and foremost:
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5ed69dd) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgc11b1e9) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -11936,7 +11936,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org2d31944)
+See: [33.4.1](#org6face29)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14747,13 +14747,28 @@ Other reasons I had to plead guilty:
 -   I was seeking to emulate Christ's love to the person I wanted to marry instead of do what is antithetical to Christian marriage, and I felt like that also meant reneging on the marriage proposal and carrying my cross.
     -   Doing what is antithetical to Christian marriage would prove me to be not exercising Christ's love, and so, sadly, I had to give up on the prospect of marrying the person I wanted to marry in order to serve Jesus most faithfully and love my neighbour as Jesus loved me.
     -   I'd only marry someone who has made Jesus their number one treasure and is abiding **in-Christ** and takes the initiative to confess Jesus Christ as their Lord and Saviour before people and is unashamed of Jesus and is practicing the passing-forward of Christ's love and is embracing sanctification
-        -   I'd only marry a born-again Christian at this stage (i.e. someone who is obeying the gospel of the Lord Jesus)
+        -   At this stage I'd only marry a born-again Christian while keeping my foremost faithfulness to Jesus (i.e. someone who is actively obeying Jesus as their Lord and Saviour, obeying the gospel of the Lord Jesus)
+        -   **[Ephesians 4:25](https://www.biblegateway.com/passage/?search=Ephesians%204%3A25&version=ESV)** - Therefore, having put away falsehood, let each one of you speak the truth with his neighbor, for we are members one of another. (ESV)
 -   What is not done in faith is sin. I could not plead "not guilty" as I could not do so confidently thinking it was the right thing to do. To plead not-guilty felt like vindictive behaviour. Blessed are the merciful for they will receive mercy.
 -   I was not without fault.
 
 I must obey God rather than obey Christ-denying lawlessness. God as my witness:
 
 > **[Acts 5:29-32](https://www.biblegateway.com/passage/?search=Acts%205%3A29-32&version=ESV)** - But Peter and the apostles answered, **We must obey God rather than men.** The God of our fathers raised Jesus, whom you killed by hanging him on a tree. God exalted him at his right hand as Leader and Savior, to give repentance to Israel and forgiveness of sins. And **we are witnesses to these things, and so is the Holy Spirit, whom God has given to those who obey him.** (ESV)
+
+We need to **act out** the truth, like Jesus:
+
+> **[I John 1:6](https://www.biblegateway.com/passage/?search=1%20John%201%3A6&version=ESV)** - If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth. (ESV)
+
+> **[I John 3:2-3](https://www.biblegateway.com/passage/?search=1%20John%203%3A2-3&version=ESV)** - Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is. And everyone who thus hopes in him purifies himself as he is pure. (ESV)
+
+-   **Read:** [desiringgod.org: Is It Ever Right to Lie? | Desiring God](https://www.desiringgod.org/articles/is-it-ever-right-to-lie)
+
+God's Truth is righteous Truth:
+
+> **[Isaiah 45:19](https://www.biblegateway.com/passage/?search=Isaiah%2045%3A19&version=ESV)** - I did not speak in secret, in a land of darkness; I did not say to the offspring of Jacob, Seek me in vain. I the LORD speak the truth; I declare what is right. (ESV)
+
+> **[Deuteronomy 32:3-4](https://www.biblegateway.com/passage/?search=Deuteronomy%2032%3A3-4&version=ESV)** - For I will proclaim the name of the LORD; ascribe greatness to our God! The Rock, his work is perfect, for all his ways are justice. A God of faithfulness and without iniquity, just and upright is he. (ESV)
 
 But to say that pleading guilty is an admission that the full set of facts in the 'summary of facts' which came out the day I pleaded guilty is true is, I think a heinous lie, and my guilty plea was not an endorsement of the slander against me. There's something very antichrist about how the opportunity for "forgiveness" and the opportunity to choose to "take the penalty without accepting the truth of the summary of so-called facts" (i.e. taking the fall) had been squashed out of the court system which was looking to paint one person as entirely innocent and one person as guilty (without a trial). But when the judge read my letter which said that <ins>I believe the words of Jesus Christ which He received from Almighty God and that Jesus Christ is the Truth and that I forgive everyone</ins>, and want to be forgiven myself, and I want to move on from the person I proposed to and put the past behind me, and I pray she recovers completely, the judge said, "that is your opinion" and spoke a lot of evil slander at me while he was the only one allowed to speak - well I pray God has mercy on him when he answers to the Lord for that. I forgive the judge and everyone involved and ask for forgiveness.
 
@@ -24807,7 +24822,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org2d31944)
+See: [33.4.1](#org6face29)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
