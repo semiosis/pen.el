@@ -24,6 +24,7 @@ IFS= read -r -d '' BOOK_HEADER <<HEREDOC
 \definecolor{darkgray}{RGB}{0,80,0}
 \definecolor{darkred}{RGB}{80,0,0}
 \definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+
 \usepackage[demo]{graphicx}
 \usepackage{wallpaper}
 \usepackage{wrapfig,booktabs}
@@ -35,14 +36,14 @@ IFS= read -r -d '' BOOK_HEADER <<HEREDOC
 
 
 \usepackage{geometry}
-% \geometry{
-% tmargin=5cm, 
-% bmargin=5cm, 
-% lmargin=5cm, 
-% rmargin=3cm,
-% headheight=1.5cm,
-% headsep=0.8cm,
-% footskip=0.5cm}
+\geometry{
+tmargin=3cm, 
+bmargin=3cm, 
+lmargin=2cm, 
+rmargin=2cm,
+headheight=1.5cm,
+headsep=0.8cm,
+footskip=0.5cm}
 
 % \usepackage[full]{textcomp}
 \renewcommand{\familydefault}{pplj} 
