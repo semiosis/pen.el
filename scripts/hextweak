@@ -22,6 +22,14 @@ esac; done
 
 if test "$preview_with_repeats" = "y"; then
     input_fp="$(cat | tf txt)"
+
+    # Make a named/id'd split window which contains a less +&
+    # less +F yo.txt
+    # Then append to the file?
+    # But I think I would prefer to have something which can be
+    # entirely refreshed. Maybe emacs -Q -nw with auto-revert-mode
+    # emacs-file-monitor yo.txt
+
     cat "$input_fp" | tv &>/dev/null
     # Sadly, this will remove the trailing spaces
     exec < <(cat "$input_fp")

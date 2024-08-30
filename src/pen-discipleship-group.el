@@ -130,7 +130,36 @@
           (28 . ("Esther 5-7"
                  "Esther 8-10"
                  "Nehemiah 3-4"
-                 "Nehemiah 5-6"))))
+                 "Nehemiah 5-6"))
+          (29 . ("Nehemiah 7-8"
+                 "Nehemiah 9-10"
+                 "Nehemiah 11-12"))
+          (30 . ("Nehemiah 13"
+                 "Malachi 1-2"
+                 "Malachi 3-4"))
+          (31 . ("Luke 1-2"
+                 "Matthew 1-2"
+                 "Mark 1"
+                 "John 1"))
+          (32 . ("Matthew 3-4"
+                 "Matthew 5-6"
+                 "Matthew 7-8"))
+          (33 . ("Luke 9:10-62"
+                 "Mark 9-10"
+                 "Luke 12"
+                 "John 3-4"
+                 "Luke 14"))
+          (34 . ("John 6"
+                 "Matthew 19:16-30"
+                 "Luke 15-16"
+                 "Luke 17:11-37"
+                 "Luke 18"
+                 "Mark 10"))
+          (35 . ("John 11"
+                 "Matthew 21:1-13"
+                 "John 13-14"
+                 "John 15-16"
+                 "Matthew 24:1-31"))))
 
 (defset d-group-weekly-readings-ot260
         '((1 . ("Genesis 1-6"

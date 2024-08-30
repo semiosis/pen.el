@@ -21,6 +21,11 @@ dn="$(pwd)"
 # pen-tm -sout -vipe "sps" "echo hi" | cat
 
 # I need to run br in a hidden tmux instead
-( echo -n " "; pwd; ( tm-run-command-in-other-window-with-output unbuffer br --height 100 --color no -c "$query pt" | strip-ansi | sed 1d | erase-trailing-whitespace ) ) | {
+
+tf_broot_output="$(ux tf broot_output || echo /dev/null)"
+trap "rm \"$tf_broot_output\" 2>/dev/null" 0
+tm-run-command-in-other-window-with-output unbuffer br --height 100 --color no -c "$query pt" > "$tf_broot_output"
+
+( echo -n " "; pwd; ( cat "$tf_broot_output" | strip-ansi | sed 1d | erase-trailing-whitespace ) ) | {
     broot-grep-tidy | sed "s=^$dn/==" | sed 's/   .*//' | sed '/…/d' | pen-scrape-files-fast.sh
 } | pavs
