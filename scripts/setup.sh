@@ -2394,3 +2394,16 @@ pip3.8 install AoE2ScenarioParser
 e ia discover discover-my-major
 
 e ia tzc
+
+# https://www.muppetlabs.com/~breadbox/software/chd.html
+# /root/.local/bin
+(
+cd /root
+wget "http://www.muppetlabs.com/~breadbox/pub/software/chd-1.1.tar.gz"
+tar zxf chd-1.1.tar.gz
+cd chd-1.1 
+make
+cp -a chd ~/.local/bin
+rm -rf /root/chd-1.1
+rm ~/chd-1.1.tar.gz 
+)

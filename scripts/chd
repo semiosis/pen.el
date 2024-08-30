@@ -1,0 +1,21 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+bin=$HOME/.local/bin/chd
+
+if test -f "$bin"; then
+(
+    cd /root
+    wget "http://www.muppetlabs.com/~breadbox/pub/software/chd-1.1.tar.gz"
+    tar zxf chd-1.1.tar.gz
+    cd chd-1.1 
+    make
+    cp -a chd ~/.local/bin
+    rm -rf /root/chd-1.1
+    rm ~/chd-1.1.tar.gz 
+)
+fi
+
+"$bin" "$@"
