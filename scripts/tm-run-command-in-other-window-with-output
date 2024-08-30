@@ -4,4 +4,4 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-pen-tm -sout -vipe nw -d -fargs "$@"
+pen-tm -sout -vipe nw -d -fargs "$@" | cat
