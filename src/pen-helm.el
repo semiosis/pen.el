@@ -541,6 +541,14 @@ Call `helm' only with SOURCES and BUFFER as args."
 (define-key helm-map (kbd "<help> p") #'helm-test-code)
 (define-key helm-map (kbd "M-k") 'ace-jump-helm-line)
 (define-key helm-map (kbd "M-n") 'next-line)
+
+(define-key helm-map (kbd "<right>") 'forward-char)
+(define-key helm-map (kbd "<left>") 'backward-char)
+
+;; left and right were bound to these:
+;; helm-previous-source
+;; helm-next-source
+
 (define-key helm-buffer-map (kbd "C-M-@") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-SPC") 'helm-toggle-visible-mark)
 (define-key helm-buffer-map (kbd "M-u") 'helm-unmark-all)

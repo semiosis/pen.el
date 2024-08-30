@@ -38,7 +38,8 @@ fi
 if test "$repeat" = "y"; then
     tf_out="$(ux tf out || echo /dev/null)"
     trap "rm \"$tf_out\" 2>/dev/null" 0
-    xxd | soak | vipe | xxd -r  > "$tf_out"
+    # xxd | soak | vipe | xxd -r  > "$tf_out"
+    chd | soak | vipe | chd -r  > "$tf_out"
 
     if test "$preview_with_repeats" = "y"; then
         cat "$tf_out" | tv &>/dev/null
@@ -46,5 +47,6 @@ if test "$repeat" = "y"; then
 
     cat "$tf_out" | hextweak -r | pavs
 else
-    xxd | vipe | xxd -r | pavs
+    # xxd | vipe | xxd -r | pavs
+    chd | vipe | chd -r | pavs
 fi

@@ -5,7 +5,7 @@ export TTY
 
 bin=$HOME/.local/bin/chd
 
-if test -f "$bin"; then
+if ! test -f "$bin"; then
 (
     cd /root
     wget "http://www.muppetlabs.com/~breadbox/pub/software/chd-1.1.tar.gz"
