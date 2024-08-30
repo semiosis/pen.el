@@ -1,6 +1,11 @@
 #!/bin/bash
 export TTY
 
+# This =br= script is still run from other scripts
+
+# Edit this:
+# /root/.emacs.d/host/pen.el/config/br-function.sh
+
 # https://dystroy.org/broot/#apply-a-standard-or-personal-command-to-a-file
 # Apply commands on several files
 # Add files to the staging area then execute any command on all of them.
@@ -21,7 +26,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 esac; done
 
 if test "$DO_VT00" = "y"; then
-    nvc -22 br "$@"
+    nvc -22 br --color no "$@"
     exit "$?"
 fi
 
@@ -38,7 +43,10 @@ which broot &>/dev/null || {
     source $HOME/.config/broot/launcher/bash/br
 }
 
-br "$@"
+brffp="$PENEL_DIR/config/br-function.sh"
+test -f "$brffp" && . "$brffp"
+
+br_pen_fun "$@"
 
 # nvc vt100 tmux new br
 # nvc vt100 -tm br

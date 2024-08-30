@@ -1032,11 +1032,17 @@ make -j 4
 make altinstall
 )
 
+# TODO Learn to install these in a venv
+# https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+# It seems as though my screen is dying.
+
 pip3.10 install --force-reinstall ipython
 pip3.10 install bpython
 pip3.10 install baca
+pip3.10 install hexabyte
 # paint for the terminal
-pip3.10 install textual-paint
+pip3.11 install textual-paint
 
 (
 cd
@@ -2379,3 +2385,4 @@ e ia shrink-path
 pip3.8 install AoE2ScenarioParser
 
 e ia discover discover-my-major
+

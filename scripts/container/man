@@ -105,6 +105,13 @@ if test "$#" -gt 0; then
         }
         ;;
 
+        broot) {
+            shift
+            br -h "$@"
+            exit "$?"
+        }
+        ;;
+
         figlet) {
             shift
             set -- toilet "$@"
