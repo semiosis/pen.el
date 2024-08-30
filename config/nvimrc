@@ -21,6 +21,8 @@ set fileencodings=ucs-bom,utf-8
 set nocompatible
 set listchars=nbsp:¬,tab:>-
 set list
+" so it works:
+au VimEnter * set list
 " set cursorline
 set diffopt+=vertical
 set isk+=é
@@ -2467,3 +2469,4 @@ endfunction
 
 command! -nargs=1 DiffPrevRev call DiffPrevRev(<args>)
 map <silent> <Leader>= ;<C-U>DiffPrevRev(v:count1)<CR>
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+export TTY
+
+slice="$1"
+: ${slice:=":"}
+
+pwd
+printf -- "%s\n" "py: $(pwd | pyslice / $slice)"
+printf -- "%s\n" "go: $(pwd | goslice / $slice)"

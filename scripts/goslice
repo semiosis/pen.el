@@ -1,0 +1,49 @@
+#!/bin/bash
+export TTY
+
+delim="$1"
+: ${delim:="/"}
+slicenotation="$2"
+
+# reverses
+# : ${slicenotation:="::-1"}
+
+# does nothing
+: ${slicenotation:=":"}
+
+tf_go="$(ux tf slice go || echo /dev/null)"
+trap "rm \"$tf_go\" 2>/dev/null" 0
+
+go_apppend_line=
+if printf -- "%s\n" "$slicenotation" | grep -q -P ':'; then
+    go_apppend_line="sl = append(sl, result...)"
+else
+    go_apppend_line="sl = append(sl, result)"
+fi
+
+cat > "$tf_go" <<HEREDOC
+package main
+
+import "os"
+import "fmt"
+import "strings"
+import "bufio"
+import "io/ioutil"
+
+func main() {
+    bytes, _ := ioutil.ReadAll(os.Stdin)
+
+    scanner := bufio.NewScanner(strings.NewReader(string(bytes)))
+    for scanner.Scan() {
+        var sl []string
+
+        result := strings.Split(scanner.Text(), "$delim")[$slicenotation]
+
+        ${go_apppend_line}
+
+        fmt.Println(strings.Join(sl, "$delim"))
+    }
+}
+HEREDOC
+
+go run "$tf_go" 2>/dev/null

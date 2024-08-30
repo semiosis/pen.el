@@ -1,0 +1,33 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# This uses "slice notation"
+
+# Split line, get slicenotation of words using python syntax from getopts, then join
+# I should generate the python with bash
+
+delim="$1"
+: ${delim:="/"}
+slicenotation="$2"
+
+# reverses
+# : ${slicenotation:="::-1"}
+
+# does nothing
+: ${slicenotation:=":"}
+
+read -r -d '' PYCODE <<HEREDOC
+import sys
+
+try:
+    for line in sys.stdin:
+        sub=line.rstrip().split('$delim')[$slicenotation]
+        sub = sub if type(sub) == list else [sub]
+        sys.stdout.write('$delim'.join(sub) + "\n")
+except:
+    pass
+HEREDOC
+
+python3 -c "$PYCODE"

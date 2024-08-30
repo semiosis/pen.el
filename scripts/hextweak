@@ -17,20 +17,31 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -PF) {
+        PREVIEW_FILE="$2"
+        shift
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
 if test "$preview_with_repeats" = "y"; then
-    input_fp="$(cat | tf txt)"
+    : "${input_fp:="$PREVIEW_FILE"}"
+    : "${input_fp:="$(cat | tf txt)"}"
 
     # Make a named/id'd split window which contains a less +&
     # less +F yo.txt
     # Then append to the file?
     # But I think I would prefer to have something which can be
     # entirely refreshed. Maybe emacs -Q -nw with auto-revert-mode
-    # emacs-file-monitor yo.txt
 
-    cat "$input_fp" | tv &>/dev/null
+    if ! test -n "$PREVIEW_FILE"; then
+        0</dev/null sps -d -p "40%" nvc -2 emacs-file-monitor "$input_fp"
+    fi
+
+    # cat "$input_fp" | tv &>/dev/null
     # Sadly, this will remove the trailing spaces
     exec < <(cat "$input_fp")
 fi
@@ -42,10 +53,11 @@ if test "$repeat" = "y"; then
     chd | soak | vipe | chd -r  > "$tf_out"
 
     if test "$preview_with_repeats" = "y"; then
-        cat "$tf_out" | tv &>/dev/null
+        # cat "$tf_out" | tv &>/dev/null
+        cat "$tf_out" > "$input_fp"
     fi
 
-    cat "$tf_out" | hextweak -r | pavs
+    cat "$tf_out" | hextweak -r -p -PF "$input_fp" | pavs
 else
     # xxd | vipe | xxd -r | pavs
     chd | vipe | chd -r | pavs
