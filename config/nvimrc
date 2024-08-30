@@ -239,6 +239,10 @@ xnoremap F :<C-u>call FindCharBack('v', v:count1)<CR>
 command! K call ToggleKeymap() " This is the one I should use
 command! TK call ToggleKeymap()
 
+function! EraseBadWhitespace()
+    EraseBadWhitespace
+endfunction
+
 " extra digraphs
 " sp +/"extra digraphs" "$EMACSD/config/my-evil.el"
 digr ZZ 8484

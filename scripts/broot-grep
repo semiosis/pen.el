@@ -22,5 +22,5 @@ dn="$(pwd)"
 
 # I need to run br in a hidden tmux instead
 ( echo -n " "; pwd; ( tm-run-command-in-other-window-with-output unbuffer br --height 100 --color no -c "$query pt" | strip-ansi | sed 1d | erase-trailing-whitespace ) ) | {
-    broot-grep-tidy | sed "s=^$dn/==" | sed 's/   .*//' | sed '/…/d'
+    broot-grep-tidy | sed "s=^$dn/==" | sed 's/   .*//' | sed '/…/d' | pen-scrape-files-fast.sh
 } | pavs

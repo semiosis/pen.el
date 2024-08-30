@@ -34,7 +34,8 @@
 (sslk "lan" #'ibuffer)
 (sslk "laj" #'e-faith-and-judgement)
 (sslk "lao" #'e-notes-on-sermons)
-(sslk "lam" #'tzc-world-clock)
+;; (sslk "lam" #'tzc-world-clock)
+(sslk "lam" #'man)
 (sslk "law" #'aws-instances)
 ;; (sslk "lak" #'kubernetes-overview)
 
@@ -253,6 +254,7 @@
 (define-key global-map (kbd "<help> h i") 'ap/helm-info-emacs-elisp-cl)
 ;; (sslk "lLi" 'ap/helm-info-emacs-elisp-cl)
 (define-key global-map (kbd "<help> h f") 'pen-helm-find-files)
+(define-key global-map (kbd "<help> h b") 'pen-helm-broot-grep)
 ;; (sslk "lLf" 'pen-helm-find-files)
                                         ; It's a little different from spacemacs' one. Spacemacs uses C-h for up dir where this uses C-l.
 (sslk "lkJ" 'compile-run-term)

@@ -185,6 +185,8 @@ It's really meant for key bindings and which-key, so they should all be interact
 (require 'helm-fzf)
 (if (inside-docker-p)
     (require 'pen-helm-fzf))
+(if (inside-docker-p)
+    (require 'pen-helm-broot-grep))
 (require 'pen-help)
 (require 'pen-helpful)
 (require 'pen-eipe)

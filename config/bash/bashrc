@@ -41,6 +41,10 @@ fi
 [ -f "/root/.ghcup/env" ] && source "/root/.ghcup/env" # ghcup-env
 
 source /root/.config/broot/launcher/bash/br
+
+brffp=$PENEL_DIR/config/br-function.sh
+test -f "$brffp" && . "$brffp"
+
 source /root/repos/kanban.bash/kanban.completion
 
 eval "$(direnv hook bash)"

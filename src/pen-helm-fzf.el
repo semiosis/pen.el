@@ -51,16 +51,19 @@
   (let ((dir (if (or top (equalp current-prefix-arg '(4)))
                  (vc-get-top-level)
                (pen-pwd))))
-    (if (equalp current-prefix-arg '(16))
-        (progn
-          (let ((current-prefix-arg nil))
-            (helm-fzf-d2 dir
-                         (if (pen-selected-p)
-                             (concat "'" (pen-selection))))))
-      (let ((current-prefix-arg nil))
-        (helm-fzf dir
-                  (if (pen-selected-p)
-                      (concat "'" (pen-selection))))))))
+
+    (let ((gparg (prefix-numeric-value current-prefix-arg))
+          (current-prefix-arg nil))
+
+      (cond ((>= gparg 16)
+             (let ((current-prefix-arg nil))
+               (helm-fzf-d2 dir
+                            (if (pen-selected-p)
+                                (concat "'" (pen-selection))))))
+            (t (let ((current-prefix-arg nil))
+                 (helm-fzf dir
+                           (if (pen-selected-p)
+                               (concat "'" (pen-selection))))))))))
 
 (defun pen-helm-fzf-top ()
   (interactive)
