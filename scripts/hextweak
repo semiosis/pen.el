@@ -1,0 +1,42 @@
+#!/bin/bash
+export TTY
+
+# Pipe into this to tweak the hex codes to see what happens
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -r) {
+        repeat=y
+        shift
+    }
+    ;;
+
+    -p) {
+        preview_with_repeats=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$preview_with_repeats" = "y"; then
+    input_fp="$(cat | tf txt)"
+    cat "$input_fp" | tv &>/dev/null
+    # Sadly, this will remove the trailing spaces
+    exec < <(cat "$input_fp")
+fi
+
+if test "$repeat" = "y"; then
+    tf_out="$(ux tf out || echo /dev/null)"
+    trap "rm \"$tf_out\" 2>/dev/null" 0
+    xxd | soak | vipe | xxd -r  > "$tf_out"
+
+    if test "$preview_with_repeats" = "y"; then
+        cat "$tf_out" | tv &>/dev/null
+    fi
+
+    cat "$tf_out" | hextweak -r | pavs
+else
+    xxd | vipe | xxd -r | pavs
+fi

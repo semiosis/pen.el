@@ -13,6 +13,15 @@ stdin_exists() {
     ! [ -t 0 ]
 }
 
+case "$VISUAL" in
+    nano) {
+        export VISUAL=v
+    }
+    ;;
+
+    *)
+esac
+
 export VIPIFY=y
 
 if test -n "$1"; then

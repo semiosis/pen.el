@@ -1,0 +1,26 @@
+#!/bin/bash
+export TTY
+
+# INT is C-c. Hup is no hangup when tty is killed
+# trap '' HUP INT
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+query="$@"
+
+# sleep 0.1
+
+# query="/\.org/&c/TracMap"
+
+dn="$(pwd)"
+
+# echo "yo" | tv &>/dev/null
+# sps -d
+# pwd
+
+# pen-tm -sout -vipe "sps" "echo hi" | cat
+
+# I need to run br in a hidden tmux instead
+( echo -n " "; pwd; ( tm-run-command-in-other-window-with-output unbuffer br --height 100 --color no -c "$query pt" | strip-ansi | sed 1d | erase-trailing-whitespace ) ) | {
+    broot-grep-tidy | sed "s=^$dn/==" | sed 's/   .*//' | sed '/…/d'
+} | pavs

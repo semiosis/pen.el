@@ -1,0 +1,38 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+venv_dn=~/.virtualenvs/$sn
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -install-only) {
+        install_only=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+# Install
+if ! test -f "${venv_dn}/bin/$sn"; then
+    (
+    python3.8 -m venv "$venv_dn"
+    source "${venv_dn}/bin/activate"
+    pip install $sn
+    )
+fi
+
+if test "$install_only" = "y"; then
+    exit "$?"
+fi
+
+if test -f "${venv_dn}/bin/$sn"; then
+    source "${venv_dn}/bin/activate"
+    "$sn" "$@"
+fi

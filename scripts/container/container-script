@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+echo "$EDITOR $VISUAL" tv &>/dev/null
+
 sn="$(basename -- "$0")"
 sn="pen-$sn"
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sed "s=^/=<pen-newline>/=" | pen-aatr -k '<pen-newline>' "broot-grep-tidy" | sed "s=^<pen-newline>=="

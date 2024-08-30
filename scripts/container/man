@@ -105,9 +105,16 @@ if test "$#" -gt 0; then
         }
         ;;
 
-        broot) {
+        br|broot) {
             shift
-            br -h "$@"
+            br -h
+            exit "$?"
+        }
+        ;;
+
+        hb|hexabyte) {
+            shift
+            hb -h
             exit "$?"
         }
         ;;

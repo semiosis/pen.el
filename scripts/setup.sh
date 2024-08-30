@@ -1035,14 +1035,21 @@ make altinstall
 # TODO Learn to install these in a venv
 # https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
-# It seems as though my screen is dying.
+# It seems as though my laptop screen is dying.
 
 pip3.10 install --force-reinstall ipython
-pip3.10 install bpython
-pip3.10 install baca
-pip3.10 install hexabyte
+
+mkdir -p ~/.pen/virtualenvs
+
+# Instead of doing it like this, allow the scripts to install themself
+# pip3.10 install bpython
+# pip3.10 install baca
+
+bpython -install-only
+baca -install-only
+hexabyte -install-only
 # paint for the terminal
-pip3.11 install textual-paint
+textual-paint -install-only
 
 (
 cd
@@ -2386,3 +2393,4 @@ pip3.8 install AoE2ScenarioParser
 
 e ia discover discover-my-major
 
+e ia tzc

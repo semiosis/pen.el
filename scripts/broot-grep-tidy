@@ -1,0 +1,43 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+input_fp="$(cat | sed 's/^ //' | tf txt)"
+
+exec < <(cat "$input_fp")
+
+IFS= read -r dir
+# echo "$dir" | tv &>/dev/null
+
+body_content="$(cat)"
+
+if ! test -n "$body_content"; then
+    test -n "$dir" && echo "$dir"
+    exit "$?"
+fi
+
+body_fp="$(printf -- "%s\n" "$body_content" | tf txt)"
+
+# {
+#     echo "$dir"
+#     cat "$body_fp"
+# } | pavs
+# exit "$?"
+
+{
+if cat "$body_fp" | grep -q -P '(└──|├──)'; then
+    {
+        break_up_input_fp="$(cat "$body_fp" | sed 's/...//' | sed "s=^[^├└│]─*=${dir}/&=" | tf txt)"
+        cat "$break_up_input_fp" | compress-tree-output
+        # TODO Work it out:
+        # cat /root/dump/tmp/scratchPooxOQ.txt | pen-aatr '\\n/' broot-grep-tidy
+        # Put each section through broot-grep-tidy
+        # | broot-grep-tidy
+    }
+else
+    echo "${dir}_"
+    cat "$body_fp"
+fi
+} | pavs

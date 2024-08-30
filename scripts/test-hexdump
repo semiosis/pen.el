@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+#( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+IFS= read -r -d '' data <<HEREDOC
+. 
+a 
+b 
+c 
+1 
+2 
+3 
+/ 
+├ 
+─ 
+HEREDOC
+
+
+printf -- "%s\n" "$data" | hexdump -C -c -x | pavs
