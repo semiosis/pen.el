@@ -8825,11 +8825,39 @@ We're not justified through the works of the law but through faith, and faith in
   *[[https://www.biblegateway.com/passage/?search=Galatians%202%3A15-16&version=ESV][Galatians 2:15-16]]* - “We are Jews by nature and not sinners from among the Gentiles; nevertheless knowing that a man is not justified by the works of the Law but through faith in Christ Jesus, even we have believed in Christ Jesus, so that we may be *justified by faith in Christ* and not by the works of the Law; since by the works of the Law no flesh will be justified.
 #+END_QUOTE
 
-It's by faith in Christ that we are justified, and faith involves obedience (at least of the heart).
+It's by faith in Christ that we are justified, and faith involves active belief, active trust - obedience (of the heart).
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV][John 3:36]]* - Whoever believes (G4100 pisteuo) in the Son has eternal life; whoever does not *obey* the Son shall not see life, but the wrath of God remains on him. (ESV)
 #+END_QUOTE
+
+[[https://biblehub.com/interlinear/john/3-16.htm][biblehub.com 3-16.htm: John 3:16 Interlinear: for God did so love the world, that His Son -- the only begotten -- He gave, that every one who is believing in him may not perish, but may have life age-during.]]
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  3778   1063 25       3588    2316  3588    2889      5620
+  Houtōs gar  ēgapēsen ho      Theos ton     kosmon    hōste
+  Οὕτως  γὰρ  ἠγάπησεν ὁ       Θεὸς  τὸν     κόσμον  , ὥστε
+  Thus   for  loved     -      God   the     world     that
+  Adv    Conj V-AIA-3S Art-NMS N-NMS Art-AMS N-AMS     Conj
+
+  3588    5207    3588    3439          1325
+  ton     Huion   ton     monogenē      edōken
+  τὸν     Υἱὸν  , τὸν     μονογενῆ  ,   ἔδωκεν  ,
+  the     Son     the     only begotten He gave
+  Art-AMS N-AMS   Art-AMS Adj-AMS       V-AIA-3S
+
+  2443    3956     3588    4100      1519 846
+  hina    pas      ho      pisteuōn  eis  auton
+  ἵνα     πᾶς      ὁ       πιστεύων  εἰς  αὐτὸν
+  so that everyone  -      believing in   Him
+  Conj    Adj-NMS  Art-NMS V-PPA-NMS Prep PPro-AM3S
+
+  3361 622           235  2192        2222  166
+  mē   apolētai      all’ echē        zōēn  aiōnion
+  μὴ   ἀπόληται  ,   ἀλλ’ ἔχῃ         ζωὴν  αἰώνιον  .
+  not  should perish but  should have life  eternal
+  Adv  V-ASM-3S      Conj V-PSA-3S    N-AFS Adj-AFS
+#+END_SRC
 
 It's faith in the heart which we need; obedience to Jesus Christ and belief in Jesus Christ in the heart, and belief and obedience to God who has _raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification_.
 
