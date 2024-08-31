@@ -809,18 +809,17 @@ Please feel free to discuss it with me.
 
 ** Bible versions used in this document
 
-Almost all of verses are taken from the ESV
-(English Standard Version) bible with the odd NASB
-(New American Standard Bible), KJV (King
-James Version), and BSB (Berean Study Bible)
-used here and there.
+Almost all of verses are taken from the [[https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/][ESV (English Standard Version)]] bible
+with the odd [[https://www.biblegateway.com/versions/New-American-Standard-Bible-NASB1995/#vinfo][NASB (New American Standard Bible)]],
+[[https://www.biblegateway.com/versions/King-James-Version-KJV-Bible/][KJV (King James Version)]], and
+[[https://bereanbibles.com/about-berean-study-bible/][BSB (Berean Study Bible)]] used here and there.
 
 I have also used the original Hebrew and Greek
 from the Interlinear Bible on Biblehub.com a
 couple of times.
 
-By default I will use the ESV and where it is
-not from the ESV, I have almost certainly marked it with the alternative version used.
+By default I will use the [[https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/][ESV]] and where it is
+not from the [[https://www.biblegateway.com/versions/English-Standard-Version-ESV-Bible/][ESV]], I have almost certainly marked it with the alternative version used.
 
 * Being born-again
 + Billy Graham really explains this quite well :: [[https://youtube.com/watch?v=CGS2A1RBo00&t=650][Born Again | Billy Graham Classic - YouTube @time: 10 min 50 sec]]
