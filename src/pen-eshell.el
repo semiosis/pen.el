@@ -130,6 +130,10 @@ list of (fn args) to pass to `apply''"
 
                ;; eshell-previous-matching-input
                (define-key eshell-hist-mode-map (kbd "M-r") nil)
+               (define-key eshell-hist-mode-map (kbd "M-p") 'eshell-previous-matching-input-from-input)
+               (define-key eshell-hist-mode-map (kbd "M-n") 'eshell-next-matching-input-from-input)
+               (define-key eshell-hist-mode-map (kbd "<up>") nil)
+               (define-key eshell-hist-mode-map (kbd "<down>") nil)
                ;; (define-key eshell-mode-map (kbd "M-r") nil)
 
                (define-key eshell-mode-map

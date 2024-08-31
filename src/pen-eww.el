@@ -1470,7 +1470,8 @@ xdg-open is a desktop utility that calls your preferred web browser."
 
 (defun reload-eww-use-chrome-dom-matchers ()
   (setq eww-use-chrome-dom-matchers
-        (pen-str2list (chomp (cat (f-join penconfdir "conf" "chrome-dom-url-patterns.txt"))))))
+        (-uniq-u (append (pen-str2list (chomp (cat (f-join penconfdir "conf" "chrome-dom-url-patterns.txt"))))
+                         (pen-str2list (chomp (cat (f-join pen-penel-directory "config" "chrome-dom-url-patterns.txt"))))))))
 (reload-eww-use-chrome-dom-matchers)
 
 (defun reload-eww-use-reader-matchers ()
