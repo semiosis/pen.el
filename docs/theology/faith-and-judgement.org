@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2024-09-03 Tue>
+#+DATE: <2024-09-04 Wed>
 #+KEYWORDS: faith christianity
 
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
@@ -9624,6 +9624,40 @@ These people just sat around watching Jesus but didn't obey Him:
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=Luke%2013%3A24-26&version=ESV][Luke 13:24-26]]* - Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able. When once the master of the house has risen and shut the door, and you begin to stand outside and to knock at the door, saying, Lord, open to us, then he will answer you, I do not know where you come from. Then you will begin to say, We ate and drank in your presence, and you taught in our streets. But he will say, I tell you, I do not know where you come from. Depart from me, all you workers of evil!
 #+END_QUOTE
+
+We strive to enter through Jesus who is the door:
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=John%2010%3A9-16&version=ESV][John 10:9-16]]* - _I am the door. If anyone enters by me, he will be saved and will go in and out and find pasture._ The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly. I am the good shepherd. The good shepherd lays down his life for the sheep. He who is a hired hand and not a shepherd, who does not own the sheep, sees the wolf coming and leaves the sheep and flees, and the wolf snatches them and scatters them. He flees because he is a hired hand and cares nothing for the sheep. I am the good shepherd. I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. And I have other sheep that are not of this fold. I must bring them also, and they will listen to my voice. So there will be one flock, one shepherd. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  agónizomai: to contend for a prize, struggle
+  Original Word: ἀγωνίζομαι
+  Part of Speech: Verb
+  Transliteration: agónizomai
+  Phonetic Spelling: (ag-o-nid'-zom-ahee)
+  Definition: to contend for a prize, struggle
+  Usage: I am struggling, striving (as in an athletic contest or warfare); I contend, as with an adversary.
+#+END_SRC
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV][Matthew 7:13-14]]* - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=Luke%2013%3A24-30&version=ESV][Luke 13:24-30]]* - *[[https://biblehub.com/greek/75.htm][Strive (75. agónizomai)]]* to enter through the narrow door. _For many, I tell you, will *seek* to enter and will not be able._ When once the master of the house has risen and shut the door, and you begin to stand outside and to knock at the door, saying, Lord, open to us, then he will answer you, I do not know where you come from. Then you will begin to say, We ate and drank in your presence, and you taught in our streets. But he will say, I tell you, I do not know where you come from. Depart from me, all you workers of evil ([[https://biblehub.com/greek/93.htm][93. adikia]])! In that place there will be weeping and gnashing of teeth, /when you see Abraham and Isaac and Jacob and all the prophets in the kingdom of God but you yourselves cast out./ And people will come from east and west, and from north and south, and recline at table in the kingdom of God. And behold, some are last who will be first, and some are first who will be last. (ESV)
+#+END_QUOTE
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  adikia: injustice, unrighteousness
+  Original Word: ἀδικία, ας, ἡ
+  Part of Speech: Noun, Feminine
+  Transliteration: adikia
+  Phonetic Spelling: (ad-ee-kee'-ah)
+  Definition: injustice, unrighteousness
+  Usage: injustice, unrighteousness, hurt.
+#+END_SRC
 
 *** Obedience to Jesus has everything to do with receiving Him, and receiving Salvation
 #+BEGIN_QUOTE
@@ -25252,6 +25286,8 @@ This is not a work of the law, but it is a work of faith: "/when she received th
 The law is not overthrown but it is upheld.
 
 *** Faith receives - it believes, trusts and obeys
++ Sermon :: [[https://www.youtube.com/watch?v=-9v23xtoVgw][youtube.com: Faith Trusts the God Who Rewards]]
+
 Abraham believed and obeyed to receive:
 
 #+BEGIN_QUOTE
