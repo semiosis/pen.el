@@ -15,7 +15,7 @@ IFS= read -r -d '' BOOK_HEADER <<HEREDOC
 
 %% https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends
 \usepackage{xcolor}
-\pagecolor{yellow!07}
+% \pagecolor{yellow!07}
 
 \definecolor{marron}{RGB}{60,30,10}
 \definecolor{darkblue}{RGB}{0,0,80}
@@ -76,8 +76,8 @@ expansion=true]{microtype}
 
 \newcommand{\estcab}[1]{\itshape\textcolor{marron}{\nouppercase #1}}
 
-\fancyhead[LE]{\estcab{Fran Oldstyle}}
-\fancyhead[RE]{\estcab{History of taxonomy}}
+\fancyhead[LE]{\estcab{Shane Mulligan}}
+\fancyhead[RE]{\estcab{Faith and Judgement}}
 % \fancyhead[CE,CO]{\estcab{\decoone}}
 \fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
 \fancyhead[RO]{\estcab{\leftmark}}
