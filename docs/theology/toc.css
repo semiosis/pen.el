@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap');
+
+  /* similar to the bootstrap */
+  .fixed-top {
+    position: fixed;
+    /* top: 0; */
+    /* right: 50vw; */
+    height: 30%;
+    z-index: 1000;
+    overflow-y: overlay;
+
+    bottom: 0;
+
+    background: #fff;
+
+      scroll-padding: 50px;
+    font-family: 'DM Sans', sans-serif;
+
+
+    /* padding: 10px; */
+    /* display: grid; */
+    /* gap: 2rem; */
+    /* grid-template-columns: 3fr 1fr; */
+  }
+
+  legend {
+    font-weight: bold;
+    /* color: red: */
+  }
+
+  aside {
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.2);
+    align-self: start;
+    position: sticky;
+    top: 10px;
+    border-radius: 0.2em;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 0.15em;
+        a {
+          color: inherit;
+          text-transform: none;
+          display: inline-block;
+          transform-origin: left;
+          transition: transform 0.1s linear;
+          &.active {
+            font-weight: 600;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    main {
+      grid-template-columns: 1fr;
+  }
+    aside {
+      display: none;
+    }
+  }
