@@ -4,6 +4,12 @@ export TTY
 export REPOS="$HOME/repos"
 gitfolder="$REPOS"
 
+sn="$(basename -- "$0")"
+if test "$1" = get-top-level || \
+   test "$sn" = is-git; then
+    export SUPPRESS_EXTRA_INFO=y
+fi
+
 if ! test "$SUPPRESS_EXTRA_INFO" = "y"; then
     args="$@"
     echo  "$(basename "$0") $args $(date)" | hls red blue 1>&2

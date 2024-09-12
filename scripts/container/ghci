@@ -3,4 +3,8 @@ export TTY
 
 export TERM=vt100
 
-tmwr /root/.ghcup/bin/ghci "$@"
+if inside-emacs-comint-p; then
+    /root/.ghcup/bin/ghci "$@"
+else
+    tmwr /root/.ghcup/bin/ghci "$@"
+fi
