@@ -347,6 +347,7 @@ Be mindful of quoting arguments correctly."
 ;; breaks emacs 29
 ;; (require 'pen-emacsql)
 (require 'pen-devotionals)
+(require 'pen-readings)
 (require 'pen-glimpse)
 (require 'pen-digraphs)
 (require 'pen-meson)
