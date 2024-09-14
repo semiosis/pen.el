@@ -2225,8 +2225,22 @@ case "$file_type" in
     ;;
 
     md) {
-        any2org "$rp"
-        pen-pak
+        printf -- "%s\n" "$rp"
+        ans="$(qa -. edit \
+                  -o any2org \
+                  -v vimglow \
+                  -g glow)"
+
+        case "$ans" in
+            edit) { vs $rp; } ;;
+            any2org) { any2org "$rp"; } ;;
+            glow) { glow -f "$rp"; } ;;
+            vimglow) { vimglow "$rp"; } ;;
+            *) ;;
+        esac
+
+        # any2org "$rp"
+        # pen-pak
         exit 0
     }
     ;;
