@@ -498,7 +498,7 @@ display values."
 
                          ("1" #'get-clql-verbose "CLQL for selection")
                          ("2" #'get-clql-terse "CLQL for selection (short)")
-                         ("a" #'helm-system-packages "apt / system packages")
+                         ;; ("a" #'helm-system-packages "apt / system packages")
                          ("A" #'org-agenda-list "org agenda list")
                          ;; ("b" #'org-brain-visualize "org-brain visualise")
                          ;; ("b" #'org-brain-visualize-goto "org-brain visualise goto")
@@ -513,6 +513,7 @@ display values."
                          ("f" #'helm-do-grep-ag "ag silversercher")
                          ("g" (dff (call-interactively 'greek-digraph-select)) "Insert Greek digraph")
                          ("h" (dff (call-interactively 'hebrew-digraph-select)) "Insert Hebrew digraph")
+                         ("a" (dff (call-interactively 'aramaic-digraph-select)) "Insert Aramaic digraph")
                          ("d" (dff (call-interactively 'digraph-select)) "Insert digraph")
                          ("y" (dff (call-interactively 'symbol-select)) "Insert symbol")
                          ("p" (dff (call-interactively 'pick-emoji)) "Insert emoji")

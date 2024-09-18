@@ -1,4 +1,6 @@
 #!/bin/bash
 export TTY
 
-list-unicode | mfz -nv -q "'" | cut -d '	' -f 1 | chomp
+filter="$@"
+
+list-unicode | mfz -nv -q "'${filter}" | cut -d '	' -f 1 | chomp
