@@ -2415,3 +2415,6 @@ cp -a chd ~/.local/bin
 rm -rf /root/chd-1.1
 rm ~/chd-1.1.tar.gz 
 )
+
+# sol: A de-minifier (formatter, exploder, beautifier) for shell one-liners.
+go install -v github.com/noperator/sol/cmd/sol@latest
