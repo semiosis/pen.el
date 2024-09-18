@@ -2264,16 +2264,24 @@ e ia org-treeusage org-transform-tree-table org-timeline org-tidy org-tag-beauti
 
 e ia itail
 
-# # Run chromium inside of a terminal
-# (
-# cd ~/repos
-# git clone "https://github.com/fathyb/carbonyl"
-# cd carbonyl
-# cargo build
-# )
+# Run chromium inside of a terminal
+(
+cd ~/repos
+git clone "https://github.com/fathyb/carbonyl"
+cd carbonyl
+cargo build
+)
+# npm install --global carbonyl
+# wget "https://github.com/fathyb/carbonyl/releases/download/v0.0.3/carbonyl.linux-amd64.zip"
 
 # Instead, run this on the host OS
 # docker run -ti fathyb/carbonyl https://youtube.com
+
+# I had lots of problems running carbonyl in Pen.el
+
+# Or use browsh
+# wget "https://github.com/browsh-org/browsh/releases/download/v1.8.3/browsh-1.8.3.xpi"
+# cd "$MYGIT/browsh-org/browsh"; npm install -g webpack webpack-cli web-ext
 
 mkdir -p ~/.pen/elpa-light
 mkdir -p ~/.pen/elpa-full

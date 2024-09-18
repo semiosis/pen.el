@@ -7,4 +7,4 @@ export TTY
 
 # The remote tmux (tmwr) is needed to prevent a crash
 
-pen-cterm-ssh -ssh -t -- tmwr docker run -ti fathyb/carbonyl "$@"
+# pen-cterm-ssh -ssh -t -- tmwr docker run -ti fathyb/carbonyl "$@"
