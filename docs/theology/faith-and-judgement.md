@@ -531,7 +531,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org56f1074) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1381485) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -7888,6 +7888,86 @@ The Apostle John's children/disciples were walking in love while walking in the 
 
 > **[III John 1:4-8](https://www.biblegateway.com/passage/?search=3%20John%201%3A4-8&version=ESV)** - I have no greater joy than to hear that **my children are walking in the truth**. Beloved, it is a <ins>faithful thing **you do** in all your efforts for these brothers</ins>, strangers as they are, who **testified to your love before the church**. You will do well to send them on their journey in a manner worthy of God. For they have gone out **for the sake of the name, accepting nothing from the Gentiles**. Therefore we ought to support people like these, that we may be fellow workers for the truth. (ESV)
 
+I really affirm Christa's message:
+
+-   **[youtube.com: THE BATTLE IS IN YOUR  MIND!!](https://youtu.be/uMyVzp0SAnc?t=316):** If you're asking the Lord, "Will you
+    cleanse my will? Will you
+    cleanse my emotions, my heart?
+    
+    "Cleanse my body with the blood of Jesus.
+    I plead the blood of Jesus over 'so and so'.
+    I plead the blood of Jesus over
+    their mind, over their heart, heal them."
+    
+    You know, if you start saying
+    this it might really help you, okay,
+    because it's helped me. It has helped me
+    tremendously. And just to encourage you
+    all, just renounce and cancel stuff from
+    the enemy. close those doors, okay.
+    
+    We got to lead a life of repentance and when
+    you do that friends you are more you are
+    more protected, and you are more covered.
+    
+    I John 1:6-9
+    
+    But if you're over there and you're
+    not coming out of agreement with sin if
+    you are not asking the Lord to forgive
+    you of your sin we get be become dirty
+    we become spiritually dirty. And we
+    want to become spiritually clean because
+    when we are spiritually clean we can
+    hear the voice of God. 
+    
+    II Corinthians 7:1
+    
+    When we are spiritually clean we can see the things
+    of the lord, we can hear things, and he can speak to us more.
+    
+    We can hear him more when we are spiritually clean.
+
+-   **Read:** [desiringgod.org: Detox Your Soul | Desiring God](https://www.desiringgod.org/articles/detox-your-soul)
+
+Walking in the light is about walking in the Truth and God's guidance, God's will for us, God's instruction for us:
+
+> **[Psalms 43:3](https://www.biblegateway.com/passage/?search=Psalms%2043%3A3&version=ESV)** - Send out your light and your truth; let them **lead me**; let them bring me to your holy hill and to your dwelling! (ESV)
+
+> **[Psalms 119:105](https://www.biblegateway.com/passage/?search=Psalms%20119%3A105&version=ESV)** - Your word is a lamp to my feet and a light to my path. (ESV)
+
+The ones in the light agape their family in Christ:
+
+> **[I John 2:9](https://www.biblegateway.com/passage/?search=1%20John%202%3A9&version=ESV)** - Whoever says he is in the light and hates his brother is still in darkness. (ESV)
+
+The ones in the light practice the truth. Confessing the truth, even the truth of when we have sinned, that is something which people who walk in the light (practice the truth) do:
+
+> **[I John 1:6-9](https://www.biblegateway.com/passage/?search=1%20John%201%3A6-9&version=ESV)** - If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. If we say we have no sin, we deceive ourselves, and the truth is not in us. If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. (ESV)
+
+We should be cleansing ourselves of every defilement of body, and **spirit** with faith, the Word of God and the Spirit of God:
+
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Since we have these promises, beloved, let us cleanse ourselves from every defilement of body ([4561. sarx](https://biblehub.com/greek/4561.htm)) and spirit ([4151. pneuma](https://biblehub.com/greek/4151.htm)), bringing holiness to completion in the fear of God. (ESV)
+
+God cleanses our hearts as we practice our faith in Him:
+
+> **[Acts 15:9](https://www.biblegateway.com/passage/?search=Acts%2015%3A9&version=ESV)** - and he made no distinction between us and them, having cleansed their hearts by faith. (ESV)
+
+We walk in the light (God's light, truth) in trust, faith, obedience:
+
+> **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
+
+We should be seeking Him out with our heart:
+
+> **[Jeremiah 29:13](https://www.biblegateway.com/passage/?search=Jeremiah%2029%3A13&version=ESV)** - You will seek me and find me. When you seek me with all your heart, (ESV)
+
+> **[Proverbs 8:17](https://www.biblegateway.com/passage/?search=Proverbs%208%3A17&version=ESV)** - I love those who love me, and those who seek me diligently find me. (ESV)
+
+> **[Psalms 14:2](https://www.biblegateway.com/passage/?search=Psalms%2014%3A2&version=ESV)** - The LORD looks down from heaven on the children of man, to see if there are any who understand, who seek after God. (ESV)
+
+> **[Psalms 24:3-4](https://www.biblegateway.com/passage/?search=Psalms%2024%3A3-4&version=ESV)** - Who shall ascend the hill of the LORD? And who shall stand in his holy place? He who has clean hands and a pure heart, who does not lift up his soul to what is false and does not swear deceitfully. (ESV)
+
+> **[Hebrews 10:22](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A22&version=ESV)** - let us draw near with a true heart in full assurance of faith, with our hearts sprinkled clean from an evil conscience and our bodies washed with pure water. (ESV)
+
 
 ### Do not condemn others. Speak the truth and leave judgement to the Judge
 
@@ -13044,7 +13124,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org3477db5)
+See: [33.4.1](#orgfd4b2a7)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -26607,7 +26687,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org3477db5)
+See: [33.4.1](#orgfd4b2a7)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
