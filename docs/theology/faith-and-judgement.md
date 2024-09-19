@@ -531,7 +531,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb29d1e5) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org56f1074) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -814,8 +814,19 @@ We are freed from, for example, making the worries of the world our first though
     of love, the path where
     we move toward need, not comfort.
 
--   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2](https://www.youtube.com/watch?v=6dB9hygVhRc):** One of
-    the things we're saved from is this awful bent towards sinning.
+-   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2 @time: 2 min 33 sec](https://youtube.com/watch?v=6dB9hygVhRc&t=153):** Salvation? Savior? From what? There's
+    a whole world view implied in that word
+    'Savior' that many people do not grasp at
+    all. Unbelievers don't know what they
+    need to be saved from.
+    
+    &#x2026;
+    
+    One of the things we're saved from is this awful bent towards sinning.
+
+Our salvation looks like being cleaned up by His spirit, behaving in a way now reflecting that we have knowledge of God (i.e. godliness), and not worldliness, treasuring God and one another, and letting go of treasuring/valuing worldly things, with hope for eternal life:
+
+> **[Titus 2:11-13](https://www.biblegateway.com/passage/?search=Titus%202%3A11-13&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, <ins>training us</ins> to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, (ESV)
 
 > **[Titus 3:3-7](https://www.biblegateway.com/passage/?search=Titus%203%3A3-7&version=ESV)** - For we ourselves were once foolish, disobedient, led astray, slaves to various passions and pleasures, passing our days in malice and envy, hated by others and hating one another. But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit, whom he poured out on us richly through Jesus Christ our Savior, so that being justified by his grace we might become heirs according to the hope of eternal life. (ESV)
 
@@ -2780,10 +2791,15 @@ And as we know, no-one in Christ is condemned:
 
 > **[Romans 8:1](https://www.biblegateway.com/passage/?search=Romans%208%3A1&version=ESV)** - There is therefore now no condemnation for those who are in Christ Jesus.
 
--   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2 @time: 5 min 20 sec](https://youtube.com/watch?v=6dB9hygVhRc&t=320):** there is therefore now no
-
-condemnation for those who are in Christ
-Jesus this was the main problem
+-   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2 @time: 5 min 20 sec](https://youtu.be/6dB9hygVhRc?t=320):** There is therefore now no
+    condemnation for those who are in Christ Jesus. This was the main problem.
+    
+    &#x2026;
+    
+    The main problem is God's response to sin is a legal and
+    just and holy condemnation - we must
+    escape this. And in Christ Jesus we are saved
+    from condemnation.
 
 > **[Romans 5:9](https://www.biblegateway.com/passage/?search=Romans%205%3A9&version=ESV)** - Since, therefore, we have now been justified by his blood, much more shall we be saved by him from the wrath of God. (ESV)
 
@@ -7483,7 +7499,7 @@ We're under the <ins>law of Christ,</ins> and that shouldn't be a heavy burden:
 
 > **[I John 5:3](https://www.biblegateway.com/passage/?search=1%20John%205%3A3&version=ESV)** - For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
-You **must** obey Jesus, and that is choosing **light** and choosing **love**:
+You **must** obey Jesus, and that is choosing **light** and choosing **agape love** towards God and people and not towards the world or worldly things:
 
 > **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
@@ -9324,7 +9340,7 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 > **[II John 1:9-10](https://www.biblegateway.com/passage/?search=2%20John%201%3A9-10&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, (ESV)
 
-You **must** obey Jesus, and that is choosing **light** and choosing **love**:
+You **must** obey Jesus, and that is choosing **light** and choosing **agape love** towards God and people and not towards the world or worldly things:
 
 > **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes in the Son **has** eternal life; whoever does not obey the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
@@ -13028,7 +13044,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org5c9ce16)
+See: [33.4.1](#org3477db5)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14736,7 +14752,7 @@ I also put on a piece of paper over my body like this:
 
 ### Renounce the ungodliness
 
-> **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age, waiting for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+> **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, training us to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
 
 
 ### This demon came out within the hour
@@ -26591,7 +26607,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org5c9ce16)
+See: [33.4.1](#org3477db5)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -30211,7 +30227,7 @@ Perfect godliness revealing God through Jesus Christ:
 
 > **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God (G2316 theos) and an apostle of Jesus (G2424 Iesous) Christ (G5547 Christos), for the faith (G4102 pistis) of those chosen of God (G2316 theos) and the knowledge (G1922 epignosis) of the truth (G225 aletheia) which is according to godliness (G2150 eusebeia),
 
-> **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing salvation for all people, training us to renounce ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in the present age, waiting for our blessed hope, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.
+> **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, training us to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.
 
 Jesus has granted us what we need to live a godly life:
 
@@ -30299,9 +30315,8 @@ To <ins>make election sure</ins>, and **to not fail**, one must practice persona
 One thing is for sure. The elect do not have hard hearts.
 So I'd say if a person's heart is not totally hard, then soften it.
 
--   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2 @time: 2 min 3 sec](https://youtube.com/watch?v=6dB9hygVhRc&t=123):** He does as an
-    apostle to help people who turn out to be God's
-    elect obtain salvation.
+-   **[youtube.com: God Is Our Savior from What? 1 Timothy 1:1-2, Part 2 @time: 2 min 3 sec](https://youtube.com/watch?v=6dB9hygVhRc&t=123):** He does everything he does as an
+    apostle to help people (who turn out to be God's elect) obtain salvation.
 
 > **[II Timothy 2:10](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A10&version=ESV)** - Therefore I endure everything for the sake of the elect, that they also may obtain the salvation that is in Christ Jesus with eternal glory. (ESV)
 
