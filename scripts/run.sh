@@ -307,6 +307,8 @@ if pen-rc-test truecolor; then
 fi
 
 runclient() {
+    # This does colourise the init but I think I prefer just a single colour
+    # USE_NVC=y
     if test "$USE_NVC" = "y"; then
         unbuffer in-tm -d -n pen nvc "${term_env_arr[@]}" pen-emacsclient -s $SOCKET "$@" & disown
     else
