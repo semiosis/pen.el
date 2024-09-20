@@ -62,7 +62,7 @@ Christ is reigning until all things are placed into subjection under Him. We mus
     him. That's not his
     purpose"
 
-We have no other Lord, King, no other Master than Jesus Christ, but we serve Jesus in serving each other:
+We have no other [Lord, King, no other Master](https://biblehub.com/greek/2962.htm) than Jesus Christ, but we serve Jesus in serving each other:
 
 > **[Matthew 23:8-11](https://www.biblegateway.com/passage/?search=Matthew%2023%3A8-11&version=ESV)** - But you are not to be called rabbi, for you have one teacher, and you are all brothers. And call no man your father on earth, for you have one Father, who is in heaven. Neither be called instructors, for you have one instructor, the Christ. The greatest among you shall be your servant. (ESV)
 
@@ -531,7 +531,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1381485) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org618146e) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1040,7 +1040,7 @@ People will recognise we are Jesus' disciples by the love we have for one anothe
 
 > **[John 13:35](https://www.biblegateway.com/passage/?search=John%2013%3A35&version=ESV)** - By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
-Jesus is the Rock:
+Jesus is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
 > **[I Corinthians 10:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A4&version=ESV)** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
@@ -3088,7 +3088,11 @@ I guess that God has been testing me and using me similarly to as He did with Pa
 
 Paul was an [Apostle by Command](https://www.youtube.com/watch?v=lr9zJYw9tlc&t=560s). As for me, I'm just acting on faith after confessing Jesus.
 
-Perhaps I still speak too much. I received lots of visions and many of them came from the enemy I believe after I had even been reading Apocryphal gospels which I think are misleading and I do not affirm them. Then, after I had said towards the end of 2022 on my blog that we should get ready for Armageddon, war broke out in the middle east soon after. I felt as though I nearly did actually get 'raptured' or it was quickly progressing that way or something like that, and then I made a declaration to court that Jesus is the Truth, I forgive everyone etc. That resulted in some very rapid changes. Things in my life spiritually began to stabilise as I have gone through police corrections and used the time to attend Bible studies, **and be corrected by the Scripture** in my beliefs, obedience and deeds. I'm still trying to be sanctified ongoingly. I am really sorry for misleading people with regards to any error in my writings, but the way to handle this, I believe, is not to throw the baby out with the bath-water but to be corrected by the word of God. I'm still a work in progress.
+Perhaps I still [speak too much](https://www.youtube.com/watch?v=kkzQqG26Wkk). 
+
+> **[James 3:3](https://www.biblegateway.com/passage/?search=James%203%3A3&version=ESV)** - If we put bits into the mouths of horses so that they obey us, we guide their whole bodies as well. (ESV)
+
+I received lots of visions and many of them came from the enemy I believe after I had even been reading Apocryphal gospels which I think are misleading and I do not affirm them. Then, after I had said towards the end of 2022 on my blog that we should get ready for Armageddon, war broke out in the middle east soon after. I felt as though I nearly did actually get 'raptured' or it was quickly progressing that way or something like that, and then I made a declaration to court that Jesus is the Truth, I forgive everyone etc. That resulted in some very rapid changes. Things in my life spiritually began to stabilise as I have gone through police corrections and used the time to attend Bible studies, **and be corrected by the Scripture** in my beliefs, obedience and deeds. I'm still trying to be sanctified ongoingly. I am really sorry for misleading people with regards to any error in my writings, but the way to handle this, I believe, is not to throw the baby out with the bath-water but to be corrected by the word of God. I'm still a work in progress.
 
 A friend said this at church the very day after I was born again of the Spirit, " **Just because some messages may have been wrong, don't quench the work of God's Spirit among you by banning all prophecies, but rather make sure you test them. Hold onto what is good and dismiss those that are not good** (i.e. those that are evil). "
 
@@ -6003,7 +6007,7 @@ We must come to Jesus for eternal life:
 
 > **[John 5:39-40](https://www.biblegateway.com/passage/?search=John%205%3A39-40&version=ESV)** - You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
 
-Jesus is the Rock:
+Jesus is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
 > **[I Corinthians 10:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A4&version=ESV)** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
@@ -6399,9 +6403,19 @@ Clearly 'believe' means also 'to be obedient' to because the ones that <ins>foll
 
 > **[John 10:26-38](https://www.biblegateway.com/passage/?search=John%2010%3A26-38&version=ESV)** - but you do not believe (G4100 **pisteuo**) because you are not part of my flock. My sheep <ins>hear my voice,</ins> and <ins>I know them, and they follow me.</ins> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
 
-Those enslaved by corruption are not sons:
+We come into walking in the will of God:
 
-> **[II Peter 2:19](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A19&version=ESV)** - They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved.
+> **[Romans 8:13-17](https://www.biblegateway.com/passage/?search=Romans%208%3A13-17&version=ESV)** - For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For **all who are led by the Spirit of God are sons of God**. For you did not receive the spirit of slavery to fall back into fear, but you have received **the Spirit of adoption** as sons, by whom we cry, Abba! Father! The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+
+Those in the process of being sanctified by Jesus are sons:
+
+> **[Hebrews 12:5-8](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A5-8&version=ESV)** - And have you forgotten the exhortation that addresses you as sons? My son, do not regard lightly the discipline of the Lord, nor be weary when reproved by him. For the Lord disciplines the one he loves, and chastises every son whom he receives. It is for discipline that you have to endure. God is treating you as sons. For what son is there whom his father does not discipline? If you are left without discipline, in which all have participated, then you are illegitimate children and not sons. (ESV)
+
+> **[Hebrews 2:10-13](https://www.biblegateway.com/passage/?search=Hebrews%202%3A10-13&version=ESV)** - For it was fitting that he, for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation perfect through suffering. For **he who sanctifies and those who are sanctified all have one origin. That is why he is not ashamed to call them brothers**, saying, I will tell of your name to my brothers; in the midst of the congregation I will sing your praise. And again, I will put my trust in him. And again, Behold, I and the children God has given me. (ESV)
+
+We put our trust in Jehovah God. We put our trust in Jesus:
+
+> **[Isaiah 12:2](https://www.biblegateway.com/passage/?search=Isaiah%2012%3A2&version=ESV)** - Behold, God is my salvation; I will trust, and will not be afraid; for the LORD GOD is my strength and my song, and he has become my salvation. (ESV)
 
 People fall away if they are not freed from sin. We're seeking to be freed from sin:
 
@@ -8355,6 +8369,10 @@ Fear of God is not only about having the heart to repent from sin and "beat hand
 
 > **[II Corinthians 5:6-11](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A6-11&version=ESV)** - So we are always of good courage. We know that while we are at home in the body we are away from the Lord, for we walk by faith, not by sight. Yes, we are of good courage, and we would rather be away from the body and at home with the Lord. So whether we are at home or away, **we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil.** Therefore, knowing the **fear of the Lord**, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. (ESV)
 
+Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+
 Jesus was pleased with some of the Israelites here. But we must learn from the example here so that we still walk in righteousness and desire to do good and not evil according to God's precepts:
 
 > **[I Corinthians 10:1-10](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A1-10&version=ESV)** - I want you to know, brothers, that our fathers were all under the cloud, and all passed through the sea, and all were baptized into Moses in the cloud and in the sea, and all ate the same spiritual food, and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. Nevertheless, with **most** of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play. We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. (ESV)
@@ -9779,6 +9797,10 @@ Confess:
     
     > **[I Peter 3:18-21](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-21&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to **death in the flesh but made alive in the spirit**, in which he went and proclaimed to the spirits in prison, because **they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
     
+    Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+    
+    > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+    
     Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
     
     > **[James 1:6-7](https://www.biblegateway.com/passage/?search=James%201%3A6-7&version=ESV)** - But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. For that person must not suppose that he will receive anything from the Lord; (ESV)
@@ -10163,6 +10185,45 @@ Sinners:
 ## Whoever transgresses the law is liable to judgement
 
 > **[Matthew 5:21](https://www.biblegateway.com/passage/?search=Matthew%205%3A21&version=ESV)** - You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. (ESV)
+
+
+## Anger leads to the matter being settled in God's court
+
+Anger is not necessarily sinful but it has to be well-placed:
+
+> **[Ephesians 4:26-27](https://www.biblegateway.com/passage/?search=Ephesians%204%3A26-27&version=ESV)** - Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil. (ESV)
+
+If someone is angry with his brother, then God may take this matter to judgement:
+
+> **[Matthew 5:22](https://www.biblegateway.com/passage/?search=Matthew%205%3A22&version=ESV)** - But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
+
+If you're unrighteously angry then watch out:
+
+> **John 7:19-25** - Has not Moses given you the law? Yet none of you keeps the law. <ins>Why do you seek to kill me?</ins> The crowd answered, You have a demon! Who is seeking to kill you? Jesus answered them, I did one deed, and you all marvel at it. Moses gave you circumcision (not that it is from Moses, but from the fathers), and you circumcise a man on the Sabbath. If on the Sabbath a man receives circumcision, so that the law of Moses may not be broken, **are you angry with me because** <ins>on the Sabbath I made a man's whole body well?</ins> *Do not judge by appearances, but judge with right judgment.* Some of the people of Jerusalem therefore said, <ins>Is not this the man whom they seek to kill?</ins> (ESV)
+
+Because to be angry at Jesus for doing good sparked Jesus' anger in [John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV). Who would win that dispute in God's court? Jesus would:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+
+We must forgive our family in Christ from the heart:
+
+> **[Matthew 18:33-35](https://www.biblegateway.com/passage/?search=Matthew%2018%3A33-35&version=ESV)** - And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
+
+The <ins>"anger of man"</ins> is exemplified in [John 7:23](https://www.biblegateway.com/passage/?search=John%207%3A23&version=ESV) where some people blindly were angry and Jesus for doing good:
+
+> **[James 1:19-21](https://www.biblegateway.com/passage/?search=James%201%3A19-21&version=ESV)** - Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the **anger of man** does not produce the righteousness that God requires. Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls. (ESV)
+
+God's anger is just and He is Righteous:
+
+> **[Psalms 7:11](https://www.biblegateway.com/passage/?search=Psalms%207%3A11&version=ESV)** - God is a righteous judge, and a God who **feels indignation every day**. (ESV)
+
+> **[Deuteronomy 6:15](https://www.biblegateway.com/passage/?search=Deuteronomy%206%3A15&version=ESV)** - for the LORD your God in your midst is a jealous God, lest **the anger of the LORD your God** be kindled against you, and **he destroy you from off the face of the earth**. (ESV)
+
+> **[Nahum 1:2-3](https://www.biblegateway.com/passage/?search=Nahum%201%3A2-3&version=ESV)** - The LORD is a **jealous and avenging** God; the LORD is **avenging and wrathful**; the LORD takes vengeance on his adversaries and keeps wrath for his enemies. The LORD is slow to anger and great in power, and the LORD will by no means clear the guilty. His way is in whirlwind and storm, and the clouds are the dust of his feet. (ESV)
+
+> **[Nahum 1:2-3](https://www.biblegateway.com/passage/?search=Nahum%201%3A2-3&version=ESV)** - God is jealous, and the LORD revengeth; the LORD revengeth, and is **furious**; the LORD will take **vengeance on his adversaries**, and he **reserveth wrath for his enemies**. The LORD is **slow to anger, and great in power**, and will not at all acquit the wicked: the LORD hath his way in the whirlwind and in the storm, and the clouds are the dust of his feet. (KJV)
+
+> **[John 17:25](https://www.biblegateway.com/passage/?search=John%2017%3A25&version=ESV)** - O **righteous Father**, even though the world does not know you, I know you, and these know that you have sent me. (ESV)
 
 
 ## Sin - what does it look like
@@ -11677,6 +11738,8 @@ I do actually consider theology to be quite important but we should not be white
 
 I think the person's lifestyle should be 'pure and undefiled religion' as James defines it.
 
+> **[[[https://www.biblegateway.com/passage/?search=1%20Peter%203%3A16&version=ESV][1 Peter 3:16](https://biblehub.com/interlinear/1_peter/3-16.htm)]]** - a conscience having good so that in this they might speak against you they shall be ashamed those reviling your - <ins>good **in Christ** manner of life</ins> ([391. anastrophé](https://biblehub.com/greek/391.htm)) (Interlinear)
+
 I should probably actually do my own Bible study though because there's a lot of false religion out there.
 Rather than fill my mind with other people's doctrines and religion, we should obey God, knowing God knows.
 
@@ -12506,7 +12569,7 @@ Lust is super bad, even after born-again:
 
 I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
 
-Jesus is the Rock:
+Jesus is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
 > **[I Corinthians 10:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A4&version=ESV)** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
@@ -12518,7 +12581,7 @@ Obedience is important:
 
 > **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
-Jehovah is the Rock:
+Jehovah is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
 > **[Deuteronomy 32:3-4](https://www.biblegateway.com/passage/?search=Deuteronomy%2032%3A3-4&version=ESV)** - For I will proclaim the name of the LORD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm)); ascribe greatness to our God! The Rock, his work is perfect, for all his ways are justice. A God of faithfulness and without iniquity, just and upright is he. (ESV)
 
@@ -13124,7 +13187,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgfd4b2a7)
+See: [33.4.1](#org46e1f6e)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14393,7 +14456,7 @@ When we are living our lives trusting in God, believing that He exists and rewar
 
 > **[Hebrews 11:6](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A6&version=ESV)** - And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him. (ESV)
 
-Jesus is the Rock:
+Jesus is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
 > **[I Corinthians 10:4](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A4&version=ESV)** - and all drank the same spiritual drink. For they drank from the spiritual Rock that followed them, and **the Rock was Christ**. (ESV)
 
@@ -15834,9 +15897,8 @@ We have assurance in Lordship Salvation because we believe what Jesus said:
 
 > **[Luke 6:35](https://www.biblegateway.com/passage/?search=Luke%206%3A35&version=ESV)** - But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil. (ESV)
 
-Father God makes many sons. For it was fitting that he (Father God), for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation (Jesus Christ) perfect through suffering:
+Father God makes many sons. For it was fitting that He (Father God), for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation (Jesus Christ) perfect through suffering:
 
-> \#+BEGIN<sub>QUOTE</sub>
 > **[Hebrews 2:10](https://www.biblegateway.com/passage/?search=Hebrews%202%3A10&version=ESV)** - For it was fitting that he, for whom and by whom all things exist, in bringing many sons to glory, should make the founder of their salvation perfect through suffering. (ESV)
 
 He was raised **for** our justification; now in order to be justified by faith, we simply need to put our faith in Him - we need to trusting Jesus Christ.
@@ -16205,7 +16267,7 @@ By faith Shane now awaits the mercy from God for those who fear Him and hope in 
 
 > **[Isaiah 25:8](https://www.biblegateway.com/passage/?search=Isaiah%2025%3A8&version=ESV)** - He will swallow up death forever; and the Lord GOD will wipe away tears from all faces, and the reproach of his people he will take away from all the earth, for the LORD has spoken. (ESV)
 
-Now I have a criminal conviction and have borne reproach internationally and locally effectively for being born-again of the Spirit, following Jesus and making a marriage proposal, and for standing up for what is right against the spirit of the world rejects God:
+Now I have a criminal conviction and have borne reproach internationally and locally effectively for being born-again of the Spirit, following Jesus and making a marriage proposal, and for standing up for what is right against the spirit of the world that rejects God:
 
 > **[John 14:17](https://www.biblegateway.com/passage/?search=John%2014%3A17&version=ESV)** - even the Spirit of truth, <ins>whom the world cannot receive, because it neither sees him nor knows him.</ins> You know him, for he dwells with you and will be in you. (ESV)
 
@@ -20996,6 +21058,10 @@ Because we love and obey God, loving and obeying Jesus, we receive from God when
 
 > **[I John 3:22](https://www.biblegateway.com/passage/?search=1%20John%203%3A22&version=ESV)** - and whatever we ask we receive from him, **because we keep his commandments and do what pleases him**. (ESV)
 
+Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+
 Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
 
 > **[James 1:6-7](https://www.biblegateway.com/passage/?search=James%201%3A6-7&version=ESV)** - But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. For that person must not suppose that he will receive anything from the Lord; (ESV)
@@ -21010,6 +21076,10 @@ I really think that God is faithful and He's above all things, and we just need 
 I think James is saying that without **holding fast to the word of God** (the truth) and allowing oneself to be influenced and our lives changed, and **to be saved by it**, we are not transformed, and to be not transformed by the word of God is a big issue because it concerns the salvation of our souls:
 
 > **[James 1:21-24](https://www.biblegateway.com/passage/?search=James%201%3A21-24&version=ESV)** - Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls. But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. For he looks at himself and goes away and at once forgets what he was like. (ESV)
+
+Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
 Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
 
@@ -21497,7 +21567,7 @@ Put to death the earthly in us:
 -   evil desire,
 -   covetousness, lying,
 -   slander,
--   anger,
+-   unrighteous anger,
 -   obscene talk
 
 We **must** forgive one another:
@@ -21639,7 +21709,7 @@ Put to death the earthly in us:
 -   evil desire,
 -   covetousness, lying,
 -   slander,
--   anger,
+-   unrighteous anger,
 -   obscene talk
 
 We **must** forgive one another:
@@ -26687,7 +26757,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgfd4b2a7)
+See: [33.4.1](#org46e1f6e)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -32456,7 +32526,9 @@ and my need to plead guilty was in the light of the knowledge of my error.
 
 I understand now from experience that spreading heresy is a very dangerous thing to do:
 
-> **[II Peter 2:1](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. (ESV)
+> **[II Peter 2:1](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even **denying the Master who bought them, bringing upon themselves swift destruction**. (ESV)
+
+> **[II Peter 2:15-16](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A15-16&version=ESV)** - Forsaking the right way, they have gone astray. They have followed the way of Balaam, the son of Beor, who loved gain from wrongdoing, but was rebuked for his own transgression; a speechless donkey spoke with human voice and restrained the prophet's madness. (ESV)
 
 I am not the judge of people. There is only one judge. But I am repentant from sin and affirm God's precepts, not sin.
 
@@ -32645,7 +32717,7 @@ Ever since [2 April 2022](https://web.archive.org/web/20220402091720/https://mul
 
 I had an out-of-body meeting with the Holy Spirit, and a dream on [3 May 2022](https://web.archive.org/web/20220402091720/https://mullikine.github.io/posts/astral-projection-pt-2/) foreshadowing 1 year later on 3 May 2023 when I ended up pleading guilty in court.
 
-I got angry and yelled at the judge in court saying he was a liar because the judge had made a remark against what I assumed was my water baptism (saying, "he must have been baptised at midnight"), but my water baptism was an appeal to God for a good conscience:
+I got angry and yelled at the judge in court saying he was a liar because the judge had made a remark against what I assumed was my water baptism (saying, "he must have been baptised at midnight"), but my water baptism was an appeal to God for a good conscience and I was trying to "do good" like in **[John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV)**:
 
 -   **[youtube.com: The Hidden Snare of Bitterness @time: 9 min 21 sec](https://youtube.com/watch?v=ZSVWNhh1bbE&t=561):** "anger at something because God's
     purposes are being resisted or God's
@@ -32655,9 +32727,13 @@ I got angry and yelled at the judge in court saying he was a liar because the ju
     against God not just assaults against
     us"
 
-But maybe he was referring to me [meeting the Holy Spirit in my sleep at 12.30am](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/) which may of course have been part of my Holy Spirit baptism - this is mysterious so we can only speculate.
+I regretted getting angry in court very much and I'm very sorry about that, but I was under extreme pressure, not understanding why I was forced to be in court and I was very upset that even after having arrived at peace pleading guilty that it was the most loving thing to do, I was provoked to anger by both judges in court who had the freedom to speak when I did not. But I am very sorry for my outburst of anger and i hold no grudge to either judge or to anyone. I really want the spiritual attack against me to end.
 
-Well, whatever is the case, all humans except for Jesus have broken God's law - we've all been liars, but God is true. And that is exactly the reason why I pleaded guilty, and the judge is also guilty:
+But maybe the judge was referring to me [meeting the Holy Spirit in my sleep at 12.30am](https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/) which may of course have been part of my Holy Spirit baptism - this is mysterious so we can only speculate.
+
+Also, I'm aware that I've been born-again, saved from walking in darkness and in sin and the need to pass-forward forgiveness and the need to obey Jesus, and I'm aware that I was not strictly perfectly innocent. I snapped in court and I'm sorry about it.
+
+Well, whatever is the reasons for what happened, all humans except for Jesus have broken God's law - we've all been liars, but God is true. And that is exactly the reason why I pleaded guilty, and the judge is also guilty:
 
 > **[Romans 3:4](https://www.biblegateway.com/passage/?search=Romans%203%3A4&version=ESV)** - By no means! Let God be true though every one were a liar, as it is written, That you may be justified in your words, and prevail when you are judged. (ESV)
 
@@ -32726,6 +32802,22 @@ Sproul also had a moment like this:
     When the one who himself is other and
     different touches that which is ordinary,
     it becomes extraordinary.
+
+If someone is angry with his brother, then God may take this matter to judgement:
+
+> **[Matthew 5:22](https://www.biblegateway.com/passage/?search=Matthew%205%3A22&version=ESV)** - But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
+
+If you're unrighteously angry then watch out:
+
+> **[John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV)** - Has not Moses given you the law? Yet none of you keeps the law. <ins>Why do you seek to kill me?</ins> The crowd answered, You have a demon! Who is seeking to kill you? Jesus answered them, I did one deed, and you all marvel at it. Moses gave you circumcision (not that it is from Moses, but from the fathers), and you circumcise a man on the Sabbath. If on the Sabbath a man receives circumcision, so that the law of Moses may not be broken, **are you angry with me because** <ins>on the Sabbath I made a man's whole body well?</ins> *Do not judge by appearances, but judge with right judgment.* Some of the people of Jerusalem therefore said, <ins>Is not this the man whom they seek to kill?</ins> (ESV)
+
+Because to be angry at Jesus for doing good sparked Jesus' anger in [John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV). Who would win that dispute in God's court? Jesus would:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+
+We must forgive our family in Christ from the heart:
+
+> **[Matthew 18:33-35](https://www.biblegateway.com/passage/?search=Matthew%2018%3A33-35&version=ESV)** - And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
 
 Even though I have been born-again, and I think I've been treated with almost zero grace, even treated unfairly, I do not say I am without sin, and to have pleaded 'not guilty' as I am seeking to be obedient to Jesus, even while repenting from certain things which were nothing to do with court, and to not use the year I was born of the Spirit to make testimony of Jesus I think would be to dishonour Jesus, as Jesus is my Lord. So for that and also to try to do no harm to my neighbour, and also because I am not without sin, even after being washed and regenerated, I pleaded guilty in court:
 
@@ -33355,15 +33447,58 @@ I think it's possible to say, "I've been justified by Jesus' blood because I'm h
 
 And then we await personal commendation from God.
 
-I think it's dangerous and probably incorrect to say, "I've been justified and saved from the wrath of God" without having become obedient to Jesus.
+Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
 
-[We don't justify ourselves ever](https://youtu.be/S5E_MqEqk-U?t=606), but we still have faith that we are justified already by God as we hold faith in Jesus, and we don't necessarily know **when** God has personally justified us by faith because, like Abraham's faith, it's from obedience to God's commandments that we get personal assurance. But if we are serving Jesus then we certainly can have faith that we have already been justified by God, where if we are not serving Jesus then I think to say that we are justified and saved from God's wrath is very bold.
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+
+> **[I Corinthians 10:5-12](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A5-12&version=ESV)** - Nevertheless, with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play. We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. Therefore let anyone who thinks that he stands take heed lest he fall. (ESV)
+
+I think it's dangerous and probably incorrect to say, "I've been justified and saved from the wrath of God" without having become trustingly obedient to Jesus, or without having become someone steadfastly hoping in Him to fulfill His promises.
+
+> **[Hebrews 6:11-15](https://www.biblegateway.com/passage/?search=Hebrews%206%3A11-15&version=ESV)** - And we desire each one of you to show the same earnestness to have the **full assurance of hope** until the end, so that you may **not be sluggish, but imitators of those who through faith and patience inherit the promises**. For when God made a promise to Abraham, since he had no one greater by whom to swear, he swore by himself, saying, Surely I will bless you and multiply you. And thus Abraham, **having patiently waited, obtained the promise.** (ESV)
+
+> **[Hebrews 4:3](https://www.biblegateway.com/passage/?search=Hebrews%204%3A3&version=ESV)** - For we who have believed enter that rest, as he has said, As I swore in my wrath, They shall not enter my rest, although his works were finished from the foundation of the world. (ESV)
+
+> **[Hebrews 3:14-15](https://www.biblegateway.com/passage/?search=Hebrews%203%3A14-15&version=ESV)** - For we share in Christ, if indeed we hold our original confidence firm to the end. As it is said, Today, if you hear his voice, do not harden your hearts as in the rebellion. (ESV)
+
+[We don't justify ourselves ever](https://youtu.be/S5E_MqEqk-U?t=606), but we still have faith that we are justified already by God as we hold faith in Jesus, and we don't necessarily know **when** God has personally justified us by faith because, like Abraham's faith, it's from obedience to God's commandments that we get personal assurance. But if we are hoping in God's promises while serving Jesus then we certainly can have confidence that God will/has justified us, where if we are not agapé-ing God and our family in Christ, serving Jesus then I think to say that we are justified and saved from God's wrath while going on doing evil is very daring and I wouldn't be surprised if that person receives the wrath of God.
+
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+
+> **[II Peter 2:4-9](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A4-9&version=ESV)** - For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment; if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then the Lord knows how to rescue the godly from trials, and to **keep the unrighteous under punishment until the day of judgment**, (ESV)
+
+faith maintains hope in God to fulfill His promises:
+
+-   **[youtube.com: Future-Oriented Faith](https://www.youtube.com/watch?v=aLf7WrwqBLE):** Justifying faith, the faith that justifies you that
+    makes you right with God that receives
+    the imputation of righteousness is
+    <ins>future-oriented faith in the promises of God.</ins>
+    
+    Faith first looks back to Jesus and it takes a
+    step back and says, "I believe God Almighty sent his
+    son died for my sins raised him from the
+    dead covers all my sins imputes to me his
+    righteousness" and standing on that rock
+    of past accomplished salvation, faith
+    looks steadfastly into the future
+    &#x2026; and faith on the basis of this
+    assurance and security believes the
+    promises of God for this reality called
+    future and that's the way we live.
 
 See how faithfulness is related to faith - faith is faithful to God. Having faith in God **is** keeping accountability with God with regard to His commands and promises and maintaining faithfulness with God who sees in secret:
 
 > **[II Timothy 2:13](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A13&version=ESV)** - if we are faithless, he remains faithful— for he cannot deny himself. (ESV)
 
 > **[Hebrews 10:30-31](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A30-31&version=ESV)** - For we know him who said, Vengeance is mine; I will repay. And again, The Lord will judge his people. It is a fearful thing to fall into the hands of the living God. (ESV)
+
+We are justified through holding faith in Jesus:
+
+> **[Romans 3:21-28](https://www.biblegateway.com/passage/?search=Romans%203%3A21-28&version=ESV)** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that one is justified by faith apart from works of the law. (ESV)
+
+There is a way of following the commandments of God that is by faith, compatible with keeping faith in Jesus, and that is in seeking praise from God, not from men - it's not about trying to keep a good conscience by justifying yourself in the eyes of men, but it's about keeping a good conscience by keeping accounts with God:
+
+> **[Romans 2:26-29](https://www.biblegateway.com/passage/?search=Romans%202%3A26-29&version=ESV)** - So, if a man who is uncircumcised keeps the precepts of the law, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But a Jew is one inwardly, and **circumcision is a matter of the heart, by the Spirit**, not by the letter. **His praise is not from man but from God.** (ESV)
 
 > **[Romans 5:1-2](https://www.biblegateway.com/passage/?search=Romans%205%3A1-2&version=ESV)** - Therefore, since we have been justified by faith, we have peace with God through our Lord Jesus Christ. Through him we have also obtained access by faith into this grace in which we stand, and we rejoice in hope of the glory of God. (ESV)
 
@@ -33421,7 +33556,7 @@ But the Hebrew for helper in **[Genesis 2:18](https://www.biblegateway.com/passa
 
 ## The spiritual attack I have received in recent times
 
-My spiritual experiences are not *all* bad, but it has been very bad. I'm "in the Spirit" now and I am engaged in spiritual warfare.
+My spiritual experiences are not *all* bad, but it has been very bad at times, and really good at times too. I'm "in the Spirit" now and I am engaged in spiritual warfare.
 
 It makes sense that I've been receiving spiritual attack because I'm at war with satan's kingdom after being born of the Spirit:
 
@@ -33503,6 +33638,14 @@ By the Holy Spirit we are supposed to put to death the deeds of the body:
 
 But if there is a spirit-spouse manifesting spiritually and messing with me physically and a bunch of other demonic attacks and it doesn't go away when I rebuke it in Jesus' name, and it resists when I use Scriptures, and the attack lasts for 600 days almost every day, then I feel like the challenge of fighting back is just too difficult. At least I do not feel as guilty about it. But I think I should continue to true to fight against it.
 
+I sometimes worry that some of the spiritual attack experiences I've had are so extreme that my mistakes involving them can't be forgiven but God knows my heart and how I think the spiritual attack situations I've been in are so extreme and so excessive and so relentless that they ordeal is just plain unfair - a [stich-up](https://www.urbandictionary.com/define.php?term=stitch%20up):
+
+> **[Matthew 12:31-32](https://www.biblegateway.com/passage/?search=Matthew%2012%3A31-32&version=ESV)** - Therefore I tell you, every sin and blasphemy will be forgiven people, but the blasphemy against the Spirit will not be forgiven. And whoever speaks a word against the Son of Man will be forgiven, but whoever speaks against the Holy Spirit will not be forgiven, either in this age or in the age to come. (ESV)
+
+> **[Luke 12:10](https://www.biblegateway.com/passage/?search=Luke%2012%3A10&version=ESV)** - And everyone who speaks a word against the Son of Man will be forgiven, but the one who blasphemes against the Holy Spirit will not be forgiven. (ESV)
+
+> **[I John 3:20](https://www.biblegateway.com/passage/?search=1%20John%203%3A20&version=ESV)** - for whenever our heart condemns us, God is greater than our heart, and he knows everything. (ESV)
+
 > Yeah, this morning <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-28 Fri&gt; </span></span> I had a night swamped with such evil dreams. God knows why. So evil that I cannot even mention them. This is the day after writing about how Christians should be have like children of Father God, that is Jehovah:
 
 > **[Psalms 91:5-8](https://www.biblegateway.com/passage/?search=Psalms%2091%3A5-8&version=ESV)** - You will not fear the terror of the night, nor the arrow that flies by day, nor the pestilence that stalks in darkness, nor the destruction that wastes at noonday. A thousand may fall at your side, ten thousand at your right hand, but it will not come near you. You will only look with your eyes and see the recompense of the wicked. (ESV)
@@ -33561,11 +33704,33 @@ I'm definitely taking this stuff to God's court and asking for grace to be sanct
 
 > **[II Corinthians 9:8](https://www.biblegateway.com/passage/?search=2%20Corinthians%209%3A8&version=ESV)** - And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work. (ESV)
 
-I actually feel spiritually damaged/injured by what I've had to endure regarding a spirit spouse - I simply don't understand why that thing has been allowed to touch me for 1.5 years and push lewd dreams into my head. This daily bombardment of demonic dreams, and visions is very demoralizing.
+I have felt spiritually damaged/injured by what I've had to endure regarding a "spirit spouse / defilement" - I simply don't understand why that thing has been allowed to touch me for 1.5 years and push lewd dreams into my head. This daily bombardment of demonic dreams, and visions is very demoralizing but especially when I succumb to "defilement" often because of anxiety, and when I don't keep perspective (i.e. when I fail to praise God through trial). I believe that I will be totally healed.
 
 -   **[youtube.com: Called to Be Saints | Charles Spurgeon | Devotional | Morning & Evening: Daily Readings](https://www.youtube.com/watch?v=E6gazvPBXF0):** All are "saints" whom God has called by His grace and sanctified by His Spirit; but we are apt to look upon the apostles in the New Testament as extraordinary beings, scarcely subject to the same weaknesses and temptations as ourselves. Yet in so doing, we are forgetful of this truth that the nearer a man lives to God <ins>the more intensely  he has to mourn over his own evil heart.</ins> **the more also does the evil of the flesh provoke and harass him day by day.**
 
-With regards to the spirit spouse, it makes me feel very gross and it makes me feel [Psalm 22:1](https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&version=ESV) forsaken by God - no joke.
+With regards to the spirit spouse, it makes me feel very gross and it mas in the past made me sometimes feel [Psalm 22:1](https://www.biblegateway.com/passage/?search=Psalms%2022%3A1&version=ESV) forsaken by God - no joke. But, also, fascinatingly, after making such complaints to God in my private praying, I have like a reflex action been encouraged through other people that Jesus is the Good Shepherd and will not leave or forsake me.
+
+> **[Hebrews 13:5](https://www.biblegateway.com/passage/?search=Hebrews%2013%3A5&version=ESV)** - Keep your life free from love of money, and be content with what you have, for he has said, **I will never leave you nor forsake you.** (ESV)
+
+> **[Deuteronomy 31:8](https://www.biblegateway.com/passage/?search=Deuteronomy%2031%3A8&version=ESV)** - **It is the LORD who goes before you. He will be with you; he will not leave you or forsake you. Do not fear or be dismayed.** (ESV)
+
+-   **[youtube.com: Petra: No Doubt](https://www.youtube.com/watch?v=SWGEbfB5ARY&list=RD1nSEW9hS0nY&index=12):** There are times when you fell like you can't go on
+    
+    There are times when you fell like giving in
+    
+    And there are times when you feel like you can't try anymore
+    
+    There are times of trouble in believing
+    
+    This test of your faith will last
+    
+    As long as it takes to pass
+    
+    Till you have no more doubt you'll endure
+    
+    And you faith will emerge true and pure
+
+> **[Romans 8:28](https://www.biblegateway.com/passage/?search=Romans%208%3A28&version=ESV)** - And we know that for those who love God all things work together for good, for those who are called according to his purpose. (ESV)
 
 God does give me encouragements from time to time though, and my confidence in God is not failing:
 
@@ -33599,7 +33764,7 @@ I was in that happy place shortly after being born-again even though my theology
 
 > **[Acts 14:22](https://www.biblegateway.com/passage/?search=Acts%2014%3A22&version=ESV)** - strengthening the souls of the disciples, encouraging them to continue in the faith, and saying that through many tribulations we must enter the kingdom of God. (ESV)
 
-I claim to be an obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult:
+I claim to be a fallibly obedient child of God - trusting in Jesus and responsive to the love of God, and I claim to love and follow the law of God in my mind, and I actually try very hard to not be conformed to sinful lusts - and I though I was quite successful in doing in advance of my trial, but it's just so difficult to live properly now because of such intense persecution in this world - physical and spiritual, inside and outside of church, so I'm complaining to God and saying it has been far too difficult:
 
 > **[Psalms 142:2](https://www.biblegateway.com/passage/?search=Psalms%20142%3A2&version=ESV)** - I pour out my complaint before him; I tell my trouble before him. (ESV)
 
@@ -33689,15 +33854,27 @@ We do need a lot of faith (faith, faithfulness, obedience) in God to **inherit**
 
 > **[Acts 26:18](https://www.biblegateway.com/passage/?search=Acts%2026%3A18&version=ESV)** - to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, **that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.** (ESV)
 
--   **Quote from CH Spurgeon:** "Peace is joy resting, and joy is peace dancing"
+-   **[Quote from CH Spurgeon](https://www.spurgeon.org/resource-library/sermons/a-round-of-delights/):** "Peace is joy resting, and joy is peace dancing"
 
 Sigh&#x2026;. For the record, as of <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-06-13 Thu&gt;</span></span>, it still feels as though I'm being hit by witchcraft.
 
-The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me feel disqualified, but I know it's just demons/witchcraft and I'm resisting it to my best ability, including in my thoughts.
+The spirit spouse stuff has continued. It's only been a problem since the end of 2022, and I think its objective is to make me feel disqualified, but I know it's just demons/witchcraft/defilement and I'm resisting it to my best ability, including in my thoughts (sometimes I have succumbed).
 
 It's interesting with the spirit spouse stuff, as it affects me it is involuntary (like rape in my sleep), and it tries to make it so that sex is voluntary (think myself to sex):
 
 -   [biblehub.com: Strong's Greek: 1596. ???????? {hekousios} &#x2013; voluntarily](https://biblehub.com/greek/1596.htm)
+
+We should be cleansing ourselves of every defilement of body, and **spirit** with faith, the Word of God and the Spirit of God:
+
+> **[II Corinthians 7:1](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A1&version=ESV)** - Since we have these promises, beloved, let us cleanse ourselves from every defilement of body ([4561. sarx](https://biblehub.com/greek/4561.htm)) and spirit ([4151. pneuma](https://biblehub.com/greek/4151.htm)), bringing holiness to completion in the fear of God. (ESV)
+
+God cleanses our hearts as we practice our faith in Him:
+
+> **[Acts 15:9](https://www.biblegateway.com/passage/?search=Acts%2015%3A9&version=ESV)** - and he made no distinction between us and them, having cleansed their hearts by faith. (ESV)
+
+We walk in the light (God's light, truth) in trust, faith, obedience:
+
+> **[I Peter 1:22](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, (ESV)
 
 Asides from that, I'll continue endeavouring to abide by Jesus' commandments, and I have a good conscience.
 
