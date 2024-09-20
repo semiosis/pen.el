@@ -531,7 +531,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org618146e) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org55476d1) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -5097,6 +5097,10 @@ Obedience to God is faith. Abraham went to live in the land of promise by **obed
 [Hebrews 11:9](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A9&version=ESV) says that Abraham went to live in the land of promise by **faith**:
 
 > **[Hebrews 11:9](https://www.biblegateway.com/passage/?search=Hebrews%2011%3A9&version=ESV)** - By faith he went to live in the land of promise, as in a foreign land, living in tents with Isaac and Jacob, heirs with him of the same promise. (ESV)
+
+**Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
+
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
 We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
 
@@ -10201,15 +10205,17 @@ If you're unrighteously angry then watch out:
 
 > **John 7:19-25** - Has not Moses given you the law? Yet none of you keeps the law. <ins>Why do you seek to kill me?</ins> The crowd answered, You have a demon! Who is seeking to kill you? Jesus answered them, I did one deed, and you all marvel at it. Moses gave you circumcision (not that it is from Moses, but from the fathers), and you circumcise a man on the Sabbath. If on the Sabbath a man receives circumcision, so that the law of Moses may not be broken, **are you angry with me because** <ins>on the Sabbath I made a man's whole body well?</ins> *Do not judge by appearances, but judge with right judgment.* Some of the people of Jerusalem therefore said, <ins>Is not this the man whom they seek to kill?</ins> (ESV)
 
-Because to be angry at Jesus for doing good sparked Jesus' anger in [John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV). Who would win that dispute in God's court? Jesus would:
+-   ****[3709. orgé](https://biblehub.com/greek/3709.htm)**:** "Orgē comes from the verb oragō meaning, 'to teem, to swell'; and thus implies that it is not a sudden outburst, but rather (referring to God's) fixed, controlled, passionate feeling against sin . . . a settled indignation (so Hendriksen)" (D. E. Hiebert, at [1 Thes 1:10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A10&version=ESV)).
 
-> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+Jesus' *anger* here was a godly grief:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger ([3709. orgé](https://biblehub.com/greek/3709.htm))**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
 
 We must forgive our family in Christ from the heart:
 
 > **[Matthew 18:33-35](https://www.biblegateway.com/passage/?search=Matthew%2018%3A33-35&version=ESV)** - And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
 
-The <ins>"anger of man"</ins> is exemplified in [John 7:23](https://www.biblegateway.com/passage/?search=John%207%3A23&version=ESV) where some people blindly were angry and Jesus for doing good:
+The <ins>"anger of man"</ins> is exemplified in [John 7:23](https://www.biblegateway.com/passage/?search=John%207%3A23&version=ESV) where some people blindly were angry at Jesus for doing good:
 
 > **[James 1:19-21](https://www.biblegateway.com/passage/?search=James%201%3A19-21&version=ESV)** - Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger; for the **anger of man** does not produce the righteousness that God requires. Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls. (ESV)
 
@@ -13187,7 +13193,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org46e1f6e)
+See: [33.4.1](#org784a3a1)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -16309,7 +16315,11 @@ My faith and God's law came up against the imperfect NZ law:
 
 > **[Proverbs 3:29-30](https://www.biblegateway.com/passage/?search=Proverbs%203%3A29-30&version=ESV)** - Do not plan evil against your neighbor, who dwells trustingly beside you. Do not contend with a man for no reason, when he has done you no harm. (ESV)
 
-> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And he looked around at them with anger, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+-   ****[3709. orgé](https://biblehub.com/greek/3709.htm)**:** "Orgē comes from the verb oragō meaning, 'to teem, to swell'; and thus implies that it is not a sudden outburst, but rather (referring to God's) fixed, controlled, passionate feeling against sin . . . a settled indignation (so Hendriksen)" (D. E. Hiebert, at [1 Thes 1:10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A10&version=ESV)).
+
+Jesus' *anger* here was a godly grief:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger ([3709. orgé](https://biblehub.com/greek/3709.htm))**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
 
 Also, the reason to take the sentence can also be to simply not drag things out!
 
@@ -16333,11 +16343,39 @@ Also, the summary of facts was conveniently changed when I made new appearances 
 
 > **[I Corinthians 13:1-8](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A1-8&version=ESV)** - If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal. And if I have prophetic powers, and understand all mysteries and all knowledge, and if I have all faith, so as to remove mountains, but have not love, I am nothing. If I give away all I have, and if I deliver up my body to be burned, but have not love, I gain nothing. Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, endures all things. Love never ends. As for prophecies, they will pass away; as for tongues, they will cease; as for knowledge, it will pass away. (ESV)
 
-Love doesn't take into account wrongs suffered. I believe the NASB is more accurate on this than the NIV. Even if the NIV is right, I can't identify any specific thing the other side of court did wrong to me wrong prior to going to court. However, during and after my interactions with police and court it's different story. There was a relentlessly slandering, antichrist graceless spirit coming out from the other side. If I could identify the specific wrongs or the root causes I wouldn't impute them to them anyway because I forgave them. But there are some very suspect things which happened around around the time I got born-again. The entire thing surrounding getting pulled into court felt out of control, and influenced externally by antichrist spirits. I feel as if witchcraft was performed against me, with the demons harassing me and manifesting through people around me. I feel wronged and my complaint sits in God's courts. Until I am delivered, my complaint remains in God's courts. In summary, it feels like God made me born-again into LGBT GPT Neuralink demons-everywhere world. I proposed to the love of my life and God allowed all the demons attack me unceasingly for 2 years, not only destroying that but allowing the demons to cause corruption and defilement in my body which is the temple of the Holy Spirit and I expect God to rectify this somehow because an injustice has happened:
+Love doesn't take into account wrongs suffered. <ins>I believe the NASB is more accurate on this than the NIV</ins>. Even if the NIV is right, I can't identify any specific thing the other side of court did wrong to me wrong prior to going to court. However, during and after my interactions with police and court it's different story. There was a relentlessly slandering, antichrist graceless spirit coming out from the other side. If I could identify the specific wrongs or the root causes I wouldn't impute them to them anyway because I forgave them. But there are some very suspect things which happened around around the time I got born-again. The entire thing surrounding getting pulled into court felt out of control, and influenced externally by antichrist spirits. I feel as if witchcraft was performed against me, with the demons harassing me and manifesting through people around me. I feel wronged and my complaint sits in God's courts. Until I am delivered, my complaint remains in God's courts. In summary, it feels like God made me born-again into LGBT GPT Neuralink demons-everywhere world. I proposed to the love of my life and God allowed all the demons attack me unceasingly for 2 years, not only destroying that but allowing the demons to cause corruption and defilement in my body which is the temple of the Holy Spirit and I expect God to rectify this somehow because an injustice has happened:
 
-> **[I Corinthians 13:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A5&version=ESV)** - does not act unbecomingly; it does not seek its own, is not provoked, does not take into account (**logizetai**) a wrong suffered, (NASB)
+> **[I Corinthians 13:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A5&version=ESV)** - does not act unbecomingly; it does not seek its own, *is not provoked*, <ins>does not take into account (**logizetai**) a wrong suffered</ins>, (NASB)
 
-> **[[[https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A5&version=ESV][I Corinthians 13:5](https://web.mit.edu/jywang/www/cef/Bible/NIV/NIV_Bible/1COR+13.html)]]** - It is not rude, it is not self-seeking, it is not easily angered, *it keeps no record of wrongs*. (NIV)
+I believe the NASB in saying that *"love does not take into account (**logizetai**) a wrong suffered"* is more accurate than the NIV which says *"keeps no record of wrongs"*.
+
+> **[I Corinthians 13:5](https://web.mit.edu/jywang/www/cef/Bible/NIV/NIV_Bible/1COR+13.html)** - It is not rude, it is not self-seeking, it is not easily angered, *it keeps no record of wrongs*. (NIV)
+
+However, the NASB in this instance I think is wrong about love not being provoked. Love is sometimes provoked, since [God is love](https://www.biblegateway.com/passage/?search=1%20John%204%3A7-21&version=ESV) and love comes from God, but love isn't [easily provoked](https://biblehub.com/greek/paroxynetai_3947.htm) to anger. God's anger here was for their overall benefit:
+
+> **[Deuteronomy 9:7](https://www.biblegateway.com/passage/?search=Deuteronomy%209%3A7&version=ESV)** - Remember and do not forget how you **provoked the LORD your God to wrath** in the wilderness. From the day you came out of the land of Egypt until you came to this place, you have been rebellious against the LORD. (ESV)
+
+> **[I Corinthians 13:5](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A5&version=ESV)** - Doth not behave itself unseemly, seeketh not her own, is **not easily provoked**, thinketh no evil; (KJV)
+
+We should be imitators of God's love:
+
+> **[Psalms 103:8](https://www.biblegateway.com/passage/?search=Psalms%20103%3A8&version=ESV)** - The LORD is **merciful and gracious, slow to anger and abounding in steadfast love.** (ESV)
+
+> **[Ephesians 5:1-2](https://www.biblegateway.com/passage/?search=Ephesians%205%3A1-2&version=ESV)** - Therefore **be imitators of God, as beloved children**. And **walk in love**, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God. (ESV)
+
+> **[I John 4:7](https://www.biblegateway.com/passage/?search=1%20John%204%3A7&version=ESV)** - Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. (ESV)
+
+-   ****[3709. orgé](https://biblehub.com/greek/3709.htm)**:** "Orgē comes from the verb oragō meaning, 'to teem, to swell'; and thus implies that it is not a sudden outburst, but rather (referring to God's) fixed, controlled, passionate feeling against sin . . . a settled indignation (so Hendriksen)" (D. E. Hiebert, at [1 Thes 1:10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A10&version=ESV)).
+
+Jesus' *anger* here was a godly grief:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger ([3709. orgé](https://biblehub.com/greek/3709.htm))**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+
+The Pharisees here trying to outlaw Jesus' disciples from acting lawfully and trying to outlaw deeds of mercy:
+
+> **[Matthew 12:1-14](https://www.biblegateway.com/passage/?search=Matthew%2012%3A1-14&version=ESV)** - At that time Jesus went through the grainfields on the Sabbath. His disciples were hungry, and they began to pluck heads of grain and to eat. But when the Pharisees saw it, they said to him, Look, your disciples are doing what is not lawful to do on the Sabbath. He said to them, Have you not read what David did when he was hungry, and those who were with him: how he entered the house of God and ate the bread of the Presence, which it was not lawful for him to eat nor for those who were with him, but only for the priests? Or have you not read in the Law how on the Sabbath the priests in the temple profane the Sabbath and are guiltless? I tell you, something greater than the temple is here. And if you had known what this means, I desire mercy, and not sacrifice, you would not have condemned the guiltless. For the Son of Man is lord of the Sabbath. He went on from there and entered their synagogue. And a man was there with a withered hand. And they asked him, Is it lawful to heal on the Sabbath?—so that they might accuse him. He said to them, Which one of you who has a sheep, if it falls into a pit on the Sabbath, will not take hold of it and lift it out? Of how much more value is a man than a sheep! So it is lawful to do good on the Sabbath. Then he said to the man, Stretch out your hand. And the man stretched it out, and it was restored, healthy like the other. But the Pharisees went out and conspired against him, how to destroy him. (ESV)
+
+> **[Mark 2:23-28](https://www.biblegateway.com/passage/?search=Mark%202%3A23-28&version=ESV)** - One Sabbath he was going through the grainfields, and as they made their way, **his disciples began to pluck heads of grain**. And the Pharisees were saying to him, Look, why are they doing what is not lawful on the Sabbath? And he said to them, Have you never read what David did, **when he was in need and was hungry**, he and those who were with him: how he entered the house of God, in the time of Abiathar the high priest, and ate the bread of the Presence, which it is not lawful for any but the priests to eat, and also gave it to those who were with him? And he said to them, The Sabbath was made for man, not man for the Sabbath. So the Son of Man is lord even of the Sabbath. (ESV)
 
 What we're supposed to do is not bear a **grudge** against our **neighbour** / the **sons of our own people**:
 
@@ -26757,7 +26795,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org46e1f6e)
+See: [33.4.1](#org784a3a1)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -32807,19 +32845,24 @@ If someone is angry with his brother, then God may take this matter to judgement
 
 > **[Matthew 5:22](https://www.biblegateway.com/passage/?search=Matthew%205%3A22&version=ESV)** - But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. (ESV)
 
+-   ****[5520. cholaó](https://biblehub.com/greek/5520.htm)**:** Definition: to be melancholy, mad, angry Usage: I am angry with.
+    5520 xoláō (akin to 5521 /xolḗ, "gall, bile") – properly, full of bile; (figuratively) filled with bitter anger and hence harsh (even violent).
+
 If you're unrighteously angry then watch out:
 
 > **[John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV)** - Has not Moses given you the law? Yet none of you keeps the law. <ins>Why do you seek to kill me?</ins> The crowd answered, You have a demon! Who is seeking to kill you? Jesus answered them, I did one deed, and you all marvel at it. Moses gave you circumcision (not that it is from Moses, but from the fathers), and you circumcise a man on the Sabbath. If on the Sabbath a man receives circumcision, so that the law of Moses may not be broken, **are you angry with me because** <ins>on the Sabbath I made a man's whole body well?</ins> *Do not judge by appearances, but judge with right judgment.* Some of the people of Jerusalem therefore said, <ins>Is not this the man whom they seek to kill?</ins> (ESV)
 
-Because to be angry at Jesus for doing good sparked Jesus' anger in [John 7:19-25](https://www.biblegateway.com/passage/?search=John%207%3A19-25&version=ESV). Who would win that dispute in God's court? Jesus would:
+-   ****[3709. orgé](https://biblehub.com/greek/3709.htm)**:** "Orgē comes from the verb oragō meaning, 'to teem, to swell'; and thus implies that it is not a sudden outburst, but rather (referring to God's) fixed, controlled, passionate feeling against sin . . . a settled indignation (so Hendriksen)" (D. E. Hiebert, at [1 Thes 1:10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A10&version=ESV)).
 
-> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
+Jesus' *anger* here was a godly grief:
+
+> **[Mark 3:4-5](https://www.biblegateway.com/passage/?search=Mark%203%3A4-5&version=ESV)** - And he said to them, Is it lawful on the Sabbath to do good or to do harm, to save life or to kill? But they were silent. And **he looked around at them with anger ([3709. orgé](https://biblehub.com/greek/3709.htm))**, grieved at their hardness of heart, and said to the man, Stretch out your hand. He stretched it out, and his hand was restored. (ESV)
 
 We must forgive our family in Christ from the heart:
 
 > **[Matthew 18:33-35](https://www.biblegateway.com/passage/?search=Matthew%2018%3A33-35&version=ESV)** - And should not you have had mercy on your fellow servant, as I had mercy on you? And in anger his master delivered him to the jailers, until he should pay all his debt. So also my heavenly Father will do to every one of you, if you do not forgive your brother from your heart. (ESV)
 
-Even though I have been born-again, and I think I've been treated with almost zero grace, even treated unfairly, I do not say I am without sin, and to have pleaded 'not guilty' as I am seeking to be obedient to Jesus, even while repenting from certain things which were nothing to do with court, and to not use the year I was born of the Spirit to make testimony of Jesus I think would be to dishonour Jesus, as Jesus is my Lord. So for that and also to try to do no harm to my neighbour, and also because I am not without sin, even after being washed and regenerated, I pleaded guilty in court:
+Even though I have been born-again, and I think I've been treated with almost zero grace, even treated unfairly, I do not say I am without sin, and to have pleaded 'not guilty' as I am seeking to be obedient to Jesus, even while repenting from certain things which were nothing to do with court, and to not use the year I was born of the Spirit to make testimony of Jesus I think would be to dishonour Jesus, as Jesus is my Lord. So for that and also to try to do no harm to my neighbour, and also because I am not without sin, even after being washed and regenerated, I pleaded guilty in court. I was upset because I thought my latest water baptism was being disrespected and because I was under intense pressure due to what felt like severe spiritual attack against me in the prior months and an unreasonable lack of reality, grace, truth, and fear of God in the court yet I know I was not without sin:
 
 > **[I John 1:8-10](https://www.biblegateway.com/passage/?search=1%20John%201%3A8-10&version=ESV)** - **If we say we have no sin, we deceive ourselves, and the truth is not in us.** If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. If we say we have not sinned, we make him a liar, and his word is not in us. (ESV)
 
