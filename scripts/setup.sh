@@ -2441,6 +2441,9 @@ make install
 # Sadly, this didn't work. I may need to upgrade debian in Pen.el.
 # Unison
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/glibc/lib"
+
+# Also, Unison is built on Haskell and to compile it myself requires stack
+# Therefore, maybe I need to upgrade my debian distribution.
 (
 cd ~
 mkdir -p unisonlanguage && cd unisonlanguage
