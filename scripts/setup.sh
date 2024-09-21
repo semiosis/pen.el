@@ -2418,3 +2418,33 @@ rm ~/chd-1.1.tar.gz
 
 # sol: A de-minifier (formatter, exploder, beautifier) for shell one-liners.
 go install -v github.com/noperator/sol/cmd/sol@latest
+
+# Compile a new version of glibc - I hope this doesn't break Debian 10
+# Can't allow LD_LIBRARY_PATH to have the "current directory" (an empty value) when building glibc
+# A trailing : means there is an empty value at the end.
+(
+export LD_LIBRARY_PATH="$(echo "$LD_LIBRARY_PATH" | sed "s/:$//")"
+cd ~
+mkdir -p glibc && cd glibc
+wget -c https://ftp.gnu.org/gnu/glibc/glibc-2.29.tar.gz
+tar -zxvf glibc-2.29.tar.gz
+mkdir glibc-2.29/build
+cd glibc-2.29/build
+../configure --prefix=/opt/glibc
+make 
+make install
+)
+
+# Use multiple versions of glibc
+# https://stackoverflow.com/questions/847179/multiple-glibc-libraries-on-a-single-host/851229#851229
+
+# Sadly, this didn't work. I may need to upgrade debian.
+# Unison
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/glibc/lib"
+(
+cd ~
+mkdir -p unisonlanguage && cd unisonlanguage
+curl -L https://github.com/unisonweb/unison/releases/latest/download/ucm-linux.tar.gz \
+	| tar -xz
+./ucm
+)
