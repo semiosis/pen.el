@@ -2438,7 +2438,7 @@ make install
 # Use multiple versions of glibc
 # https://stackoverflow.com/questions/847179/multiple-glibc-libraries-on-a-single-host/851229#851229
 
-# Sadly, this didn't work. I may need to upgrade debian.
+# Sadly, this didn't work. I may need to upgrade debian in Pen.el.
 # Unison
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/glibc/lib"
 (
