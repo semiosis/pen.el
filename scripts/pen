@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pen
-# Version 3.0, bash
+# Version 4.0, bash
 
 # echo "shutdown computer" | penf -u pf-nlsh/2 "Windows 95" {}
 
@@ -18,7 +18,7 @@
 # ufs $MYGIT/semiosis/yas-snippets $HOME/.pen/host/snippets
 # ufs $HOME/learn-functions $HOME/.pen/documents/learn-functions
 
-pen_version=3.0
+pen_version=4.0
 
 sn="$(basename "$0")"
 bn="$sn"
@@ -1745,6 +1745,13 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -rcmd) {
+        remote_cmd="$2"
+        shift
+        shift
+    }
+    ;;
+
     --)
         shift
         break
@@ -1752,6 +1759,11 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     *) break;
 esac; done
+
+{
+echo "remote_cmd=\"$remote_cmd\"" | hls green 
+dgrey
+} 1>&2
 
 if ! test "$vanilla" = "y" && ! inside-docker-p && ! docker-running-p; then
     test -n "$MYGIT" && test -d "$MYGIT/semiosis/glossaries" && : "${GLOSSARIES_DIR:="$MYGIT/semiosis/glossaries"}"

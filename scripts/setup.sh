@@ -152,7 +152,7 @@ cargo install xsv
 (
 cd "$EMACSD/emacs-yamlmod"
 . $HOME/.cargo/env
-make -j 4 || :
+make -j $(nproc) || :
 )
 
 # I need the tree entire tree, to get the commit I want
@@ -186,7 +186,10 @@ apt install libgtk-3-0 libgtk-3-dev
 )
 
 (
-    cd /root/emacs
+    cd ~/repos
+    git clone --branch emacs-29 --depth 1 "https://github.com/emacs-mirror/emacs"
+    cd emacs
+
     # Has object-intervals
     # emacs 28
     # git checkout df882c9701
@@ -194,12 +197,23 @@ apt install libgtk-3-0 libgtk-3-dev
     # ./configure --with-all --with-x-toolkit=yes --without-makeinfo --with-modules --with-gnutls=yes
 
     # emacs 29
-    git checkout ec4d29c4494f32acf0ff7c5632a1d951d957f084
+    # git checkout ec4d29c4494f32acf0ff7c5632a1d951d957f084
+
     # git clone --branch emacs-29 --depth 1 "https://github.com/emacs-mirror/emacs"
     # --with-native-compilation takes longer
     # --with-small-ja-dic appears to make it hang
     ./autogen.sh
-    sudo apt install libsqlite3-dev libgccjit0 libgccjit-8-dev
+    # sudo apt install libsqlite3-dev libgccjit0 libgccjit-8-dev
+    # Debian 12
+    sudo apt install libsqlite3-dev libgccjit0 libgccjit-12-dev libfribidi0 libfribidi-dev
+
+    # On Debian 12 I had to install this deb manually
+    (
+        cd /tmp
+        wget "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi-dev_1.0.8-2.1_amd64.deb"
+        dpkg -i libfribidi-dev_1.0.8-2.1_amd64.deb
+    )
+
     #./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes \
     #    --with-native-compilation --with-tree-sitter --with-small-ja-dic \
     #    --with-gif --with-png --with-jpeg --with-rsvg --with-tiff \
@@ -209,7 +223,7 @@ apt install libgtk-3-0 libgtk-3-dev
     ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-tree-sitter --with-small-ja-dic --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
 
     # emacs-28
-    ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
+    # ./configure --with-all --with-x-toolkit=yes --with-modules --with-gnutls=yes --with-gif --with-png --with-jpeg --with-rsvg --with-tiff --with-imagemagick
     # make
     # Remove scripts from the path (because emacs will hang when it looks for
     # and finds cvs, and tries to run it.)
@@ -218,7 +232,7 @@ apt install libgtk-3-0 libgtk-3-dev
     make -j$(nproc)
     make install
 )
-rm -rf /root/emacs
+# rm -rf /root/emacs
 
 # I want huggingface transformers and I'm going to use clojure to access them
 # (
@@ -340,7 +354,7 @@ cd
 git clone https://libwebsockets.org/repo/libwebsockets
 cd libwebsockets && mkdir build && cd build
 cmake -DLWS_WITH_LIBUV=ON -DLWS_WITH_MBEDTLS=ON ..
-make -j 4 && make install
+make -j $(nproc) && make install
 )
 
 # ttyd
@@ -354,7 +368,7 @@ sed -i "s/ttyd - Terminal/Pen.el/" html/webpack.config.js
 mkdir build && cd build
 cmake ..
 ` # This was here but broke it: sed -i "s/^/# /" /usr/local/lib/cmake/libwebsockets/libwebsockets-config.cmake `
-make -j 4 && make install
+make -j $(nproc) && make install
 )
 
 # tree-sitter cli
@@ -492,8 +506,10 @@ agi libpython3-dev
 cd ~/repos
 git clone --depth 1 "https://github.com/vim/vim"
 cd vim
+make clean
+make distclean
 ./configure --with-features=huge --enable-cscope --enable-multibyte --with-x --enable-perlinterp=yes --enable-pythoninterp=yes --enable-python3interp
-make -j8
+make -j $(nproc)
 make install
 )
 
@@ -558,7 +574,7 @@ pen-x \
     -e "Would you like" -s y -c m \
     -e "Would you like" -s y -c m \
     -i
-make -j 5
+make -j $(nproc)
 ./configure --uid "$pen_id"
 make install
 cp -a ~/repos/pen.el/config/irc-config.conf /inspircd-2.0.25/run/conf/inspircd.conf
@@ -1020,7 +1036,7 @@ pip3 install bpython
 
 # Python3.10 for baca - epub viewer
 # apt update
-# make -j 4, also runs tests, annoyingly
+# make -j $(nproc), also runs tests, annoyingly
 (
 agi build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
 mcd $DUMP/programs
@@ -1028,7 +1044,7 @@ curl -O https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
 tar Jxf Python-3.10.0.tar.xz
 cd Python-3.10.0
 ./configure --enable-optimizations
-make -j 4
+make -j $(nproc)
 make altinstall
 )
 
@@ -1295,9 +1311,11 @@ agi ftp
 
 (
 cd "$(gc "https://github.com/tmux/tmux")"
+make clean
+make distclean
 ./autogen.sh
 ./configure --enable-sixel --prefix=$HOME/.local
-make -j 4
+make -j $(nproc)
 make install
 )
 
@@ -1405,7 +1423,7 @@ pip3.10 install pip-search
 
 # Python3.11 for baca - epub viewer
 # apt update
-# make -j 4, also runs tests, annoyingly
+# make -j $(nproc), also runs tests, annoyingly
 (
 agi build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
 mcd $DUMP/programs
@@ -1413,7 +1431,7 @@ curl -O https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz
 tar Jxf Python-3.11.4.tar.xz
 cd Python-3.11.4
 ./configure --enable-optimizations
-make -j 4
+make -j $(nproc)
 make altinstall
 
 # broot
@@ -1713,11 +1731,13 @@ sudo rm -rf /usr/local/lib/R
     cd R-4.3.1/
     agi libpcre2-32-0 libpcre2-dev
     ./configure 
-    make -j 10
+    make -j $(nproc)
     make install
 )
 
-# This debian version of R is not new enough
+# agi r-base r-base-dev
+
+# This Debian 10 version of R is not new enough
 (
     cd "$(gc "https://github.com/REditorSupport/languageserver")"
     Rscript -e "install.packages(c('remotes', 'rcmdcheck'), repos = 'https://cloud.r-project.org')"
@@ -1750,7 +1770,7 @@ pip install lyricy
     cd "$(gc "https://github.com/flonatel/pipexec")"
     autoreconf -i 
     ./configure
-    make -j 10
+    make -j $(nproc)
     make install
 )
 
@@ -1770,7 +1790,7 @@ e ia helm-dogears dogears
     cd "$(gc "https://github.com/hpjansson/chafa")"
     git checkout origin/1.12
     ./autogen.sh
-    make -j 4
+    make -j $(nproc)
     make install
     ldconfig
 )
@@ -1870,7 +1890,7 @@ wget "https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v2.6
 tar zxf task-2.6.2.tar.gz
 cd $HOME/programs/task-2.6.2
 cmake -DCMAKE_BUILD_TYPE=release .
-make -j 4
+make -j $(nproc)
 sudo make install
 ` # not much need for the code, tbh `
 cd "$(gc "https://github.com/kdheepak/taskwarrior-tui")"
@@ -2419,26 +2439,8 @@ rm ~/chd-1.1.tar.gz
 # sol: A de-minifier (formatter, exploder, beautifier) for shell one-liners.
 go install -v github.com/noperator/sol/cmd/sol@latest
 
-# Compile a new version of glibc - I hope this doesn't break Debian 10
-# Can't allow LD_LIBRARY_PATH to have the "current directory" (an empty value) when building glibc
-# A trailing : means there is an empty value at the end.
-(
-export LD_LIBRARY_PATH="$(echo "$LD_LIBRARY_PATH" | sed "s/:$//")"
-cd ~
-mkdir -p glibc && cd glibc
-wget -c https://ftp.gnu.org/gnu/glibc/glibc-2.29.tar.gz
-tar -zxvf glibc-2.29.tar.gz
-mkdir glibc-2.29/build
-cd glibc-2.29/build
-../configure --prefix=/opt/glibc
-make 
-make install
-)
 
-# Use multiple versions of glibc
-# https://stackoverflow.com/questions/847179/multiple-glibc-libraries-on-a-single-host/851229#851229
-
-# Sadly, this didn't work. I may need to upgrade debian in Pen.el.
+I had to upgrade Debian in Pen.el from 10 to 12.
 # Unison
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/glibc/lib"
 

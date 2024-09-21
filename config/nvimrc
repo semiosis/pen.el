@@ -2321,6 +2321,9 @@ imap <Esc>L <Esc>a<Esc>ljki<C-l>
 imap <C-l> <Plug>snipMateNextOrTrigger
 smap <C-l> <Plug>snipMateNextOrTrigger
 
+" The extra <CR> gets rid of the annoying "Press ENTER or type command to continue" prompt
+vnoremap <silent> K K<cr>
+
 nnoremap <silent> <leader>! :set opfunc=ProgramFilter<cr>g@
 vnoremap <silent> <leader>! :<c-u>call ProgramFilter(visualmode(), 1)<cr>
 function! ProgramFilter(vt, ...)
