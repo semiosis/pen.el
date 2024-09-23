@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Annoyingly, it appears that I can't have access to the project's src/ symbols using rebel.
+# But that works with "lein repl".
+
+# This starts the CLI after downloading the dependencies.
+# The dependencies are exclusive to this environment
+# The dependencies live here
+# $HOME/.m2/repository/com/bhauman/rebel-readline
+
+# vim +/":rebel" "$HOME/.clojure/deps.edn"
+# clojure -A:rebel "$@"
+
+# doesn't appear to work
+# -Sdeps '{:mvn/local-repo "/home/shane/.m2/repository"}' 
+
+clojure -Sdeps "{:deps {com.bhauman/rebel-readline {:mvn/version \"0.1.4\"}}}" -m rebel-readline.main "$@"

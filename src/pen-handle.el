@@ -35,7 +35,7 @@
          (bufname (concat "*" cmdslug "*")))
     `(defun ,fsym ()
        (interactive)
-       (pen-term ,cmd nil nil ,bufname ,reuse))))
+       (pen-term (pen-nsfa ,cmd) nil nil ,bufname ,reuse))))
 (defalias 'etc 'gen-term-command)
 
 (defun pen-ask-documentation (thing query)
@@ -74,7 +74,9 @@
         :repls (list
                 'cider-switch-to-repl-buffer
                 'cider-switch-to-repl-buffer-any
+                ;; (etc "nvc -f clj-rebel" t)
                 (etc "clj-rebel" t)
+                ;; (etc "nvc -f lein repl" t)
                 (etc "lein repl" t))
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix

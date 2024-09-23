@@ -168,7 +168,7 @@
   (define-key term-raw-map (kbd "M-l") nil)
   ;; Keep in mind that company-mode only works in term-line-mode
   ;; (define-key term-raw-map (kbd "C-z") 'company-try-hard)
-  (define-key term-raw-map (kbd "M-=") 'my-handle-repls)
+  (define-key term-raw-map (kbd "M-=") 'pen-handle-repls)
   ;; I want M-x to transmit through
   ;; (define-key term-raw-map (kbd "M-x") nil)
   (define-key term-raw-map (kbd "C-c ESC") #'pen-term-c-c-esc)

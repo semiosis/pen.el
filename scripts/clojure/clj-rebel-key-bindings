@@ -1,0 +1,4 @@
+#!/bin/bash
+export TTY
+
+xs clj-rebel-key-bindings

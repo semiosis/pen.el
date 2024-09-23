@@ -2,6 +2,9 @@
 (require 'cider)
 (require 'ob-clojure)
 
+;; Clojure memory usage (test to see if this is actually working) :
+;; e:$EMACSD/pen.el/scripts/java-opts.sh
+
 (require 'clomacs)
 
 (if (inside-docker-p)

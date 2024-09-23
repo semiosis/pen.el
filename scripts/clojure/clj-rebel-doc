@@ -1,0 +1,12 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+func="$1"
+test -n "$func" || exit 1
+
+x -sh clj-rebel -e "=>" -s "($func" -c q -i
+
+
+

@@ -55,6 +55,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -f) {
+        force_nvc_on=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -80,7 +86,7 @@ if test "$has_stdin" = y; then
 fi
 
 # just run the command without nvim
-if inside-emacs-p; then
+if inside-emacs-p && ! test "$force_nvc_on" = y; then
     eval "$CMD"
     exit "$?"
 fi
@@ -95,7 +101,7 @@ if test "$INSIDE_NEOVIM" = y || test "$NO_NVC" = y; then
     exit "$?"
 fi
 
-# This must come *AFTER* insite-emacs-p
+# This must come *AFTER* inside-emacs-p
 if test "$isstdoutpipe" -eq 0; then
     output_fp="$(0</dev/null tf txt)"
     CMD="$CMD > $(cmd "$output_fp")"
