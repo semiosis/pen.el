@@ -200,6 +200,21 @@ if test -n "$PEN_EIPE_DATA"; then
     printf -- "%s" "$PEN_EIPE_DATA" > "/root/.pen/eipe/${SOCKET}_eipe_data"
 fi
 
+# EMACS_NOT_RUNNING=y
+
+if test "$NO_EMACS" = "y"; then
+    if test "$#" -eq 1 && test -d "$1"; then
+        dir="$1"
+        shift
+        in-tm zcd "$dir"
+    elif test "$#" -eq 1 && test -f "$1"; then
+        file="$1"
+        shift
+        in-tm v "$file"
+    fi
+    exit "$?"
+fi
+
 if test "$#" -eq 1 && test -d "$1"; then
     dir="$1"
     shift

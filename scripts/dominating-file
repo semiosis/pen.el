@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+fn="$1"
+test -n "$fn" || exit 1
+
+x=`pwd`
+if test -e "$fn"; then
+    printf -- "%s\n" "$(pwd)/$fn"
+    exit 0
+fi
+
+found=
+while [ "$x" != "/" ] ; do
+    x=`dirname "$x"`
+    out="$(find "$x" -maxdepth 1 -name "$fn")"
+    if test -n "$out"; then
+        printf -- "%s\n" "$out"
+        found=1
+    fi
+done
+test -n "$found"

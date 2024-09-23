@@ -1,0 +1,15 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://circleci.com/docs/java-oom/
+
+# This script is called with lein / pen-lein from emacs
+# CMD="$(cmd "$@")"
+# : ${CMD:="$(cmd "$@")"}
+# ns "$CMD"
+
+. $PENEL_DIR/scripts/java-opts.sh
+
+/usr/bin/java "$@"

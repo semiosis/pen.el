@@ -1,0 +1,8 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+. $PENEL_DIR/scripts/java-opts.sh
+
+$EMACSD_BUILTIN/.cache/lsp/clojure/clojure-lsp "$@"

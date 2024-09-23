@@ -349,6 +349,16 @@ case "$sn" in
     }
     ;;
 
+    piz) {
+        sn=pen
+        : "${PREFER_GUI:="n"}"
+        : "${NO_EMACS:="y"}"
+        : "${no:="y"}"
+        # Minimum for apostrophe is 2
+        export PEN_N_WORKERS=2
+    }
+    ;;
+
     pind) {
         sn=pen
         : "${PREFER_GUI:="n"}"
@@ -493,6 +503,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     # Would be great to be using a virtual filesystem as the abstraction, actually.
     -n1) {
         export PEN_N_WORKERS=1
+        shift
+    }
+    ;;
+
+    -nem) {
+        export NO_EMACS=y
         shift
     }
     ;;
@@ -2060,6 +2076,7 @@ fi
 
 export PEN_USE_GUI
 export PEN_SHARE_X
+export NO_EMACS
 
 if test "$docker_cmd" = run && docker-running-p && ! inside-docker-p; then
     docker_cmd=exec
@@ -2157,6 +2174,7 @@ IFS= read -r -d '' shcode <<HEREDOC
         --env PEN_ENGINE \
         --env PEN_NO_TIMEOUT \
         --env PEN_N_WORKERS \
+        --env NO_EMACS \
         --env PEN_PROMPT \
         --env PEN_HELP \
         --env PEN_OVERLAY \
@@ -2260,7 +2278,7 @@ HEREDOC
 
         evalcommand="$(cmd-nice ". ~/.emacs.d/pen.el/scripts/setup-term.sh; $(cmd-nice eval "$(cmd-onelineify-safe "$remote_cmd" "$@")")")"
 IFS= read -r -d '' shcode <<HEREDOC
-docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
+docker "$docker_cmd" --detach-keys="$docker_detach_keys" --env USE_POOL --env USE_NVC --env NO_EMACS --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env PEN_CONTAINER_NAME --env PEN_ENGINE --env PEN_NO_TIMEOUT $(test "$HAS_TTY" = y && printf -- "%s " -ti ) "$PEN_CONTAINER_NAME" bash -c $evalcommand
 HEREDOC
     }
     ;;

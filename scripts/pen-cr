@@ -1976,6 +1976,14 @@ case "$file_type" in
         dn="$(dirname "$rp")"
         cd "$dn"
 
+        # check to see if babshka
+        if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
+            cd "$dn"
+            perl "$rp"
+            pen-pak
+            exit $?
+        fi
+
         if dominating-file project.clj | pen-mnm 1>&2 && pen-yn "Use project.clj?"; then
             pen-cr project.clj;
             exit "$?"

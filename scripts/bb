@@ -1,6 +1,55 @@
 #!/bin/bash
 export TTY
 
-( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+sn="$(basename -- "$0")"
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if test "$#" = 0 && ! stdin_exists; then
+    set -- repl "$@"
+fi
+
+opt="$1"
+case "$opt" in
+    repl) {
+        if ! test "$INSIDE_NEOVIM" = y; then
+            # echo putting inside nvt 1>&2
+            nvt "$sn" "$@"
+            exit "$?"
+        fi
+
+        if ! test -n "$RLWRAP_EDITOR"; then
+            # echo putting inside rlwrap 1>&2
+            rlwrap "$sn" "$@"
+            exit "$?"
+        fi
+    }
+    ;;
+
+    *)
+esac
 
 /usr/local/bin/bb "$@"
+
+# Since babashka scripts ofter use the TTY for things like reading input from the user,
+# I should not use pavs
+
+# is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+# 
+# if is_tty && ! test "$opt" = "repl"; then
+#     set -o pipefail
+# 
+#     /usr/local/bin/bb "$@" | pavs
+# else
+#     /usr/local/bin/bb "$@"
+# fi

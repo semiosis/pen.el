@@ -1,6 +1,8 @@
 #!/bin/bash
 export TTY
 
+. $PENEL_DIR/scripts/java-opts.sh
+
 export OPENAI_API_KEY="$(cat ~/.pen/openai_api_key)"
 
 export HOME=/root

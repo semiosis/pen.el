@@ -995,12 +995,13 @@ creating a new `bible-mode' buffer positioned at the specified verse."
   (cua-set-mark)
   (end-of-line))
 
+;; I disabled this because it's annoying in lein repl
 (defun spinner-start-around-advice (proc &rest args)
   (if (not (display-graphic-p))
-      (pen-snc "spinner-start -b"))
+      (pen-snc "spinner-start -b advice"))
   (let ((res (apply proc args)))
     res))
-(advice-add 'spinner-start :around #'spinner-start-around-advice)
+;; (advice-add 'spinner-start :around #'spinner-start-around-advice)
 ;; (advice-remove 'spinner-start #'spinner-start-around-advice)
 
 (defun spinner-stop-around-advice (proc &rest args)

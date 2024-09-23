@@ -230,8 +230,13 @@ This issue might be caused by:
 
 (setq lsp-enable-indentation nil)
 
-(if (not (inside-docker-p))
-    (setq lsp-clojure-server-command '("bash" "-c" "clojure-lsp")))
+(comment
+ (if (not (inside-docker-p))
+     (progn
+       ;; (setq lsp-clojure-server-command '("bash" "-c" "clojure-lsp"))
+       (setq lsp-clojure-custom-server-command '("bash" "-c" "clojure-lsp")))))
+(setq lsp-clojure-server-store-path (umn "$EMACSD/pen.el/scripts/"))
+(setq lsp-clojure-custom-server-command '("bash" "-c" "clojure-lsp"))
 ;; Up to here is ok
 
 (setq ccls-executable (executable-find "ccls"))

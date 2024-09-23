@@ -3,4 +3,19 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-/bin/df "$@" | pavs
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty && ! test "$INSIDE_NEOVIM" = y; then
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+
+    sn="$(basename -- "$0")"
+
+    if yn "Watch?\n\tnvc watch $sn $CMD"; then
+        nvc watch "$sn" "$@"
+    else
+        /bin/df "$@" | pavs
+    fi
+else
+    /bin/df "$@" | pavs
+fi
