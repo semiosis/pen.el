@@ -170,7 +170,7 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
 
     -cd ) {
         cd "$2"
-        export CWD="$1"
+        export CWD="$2"
         shift
         shift
     }

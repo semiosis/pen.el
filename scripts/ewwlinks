@@ -1,0 +1,23 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# should basically act like vimlinks but with eww instead
+# It needs to search in the page for the query
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    +/*) { # pattern
+        pattern="$(p "$opt" | mcut -d+/ -f2 | s chomp | unbs '\[' | unbs ']')"
+
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+url="$1"
+
+# xs eww "$url" "$pattern"
+xs eww-occur "$url" "$pattern"
