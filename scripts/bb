@@ -19,19 +19,62 @@ if test "$#" = 0 && ! stdin_exists; then
     set -- repl "$@"
 fi
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+
+    -van|-vanilla) {
+        shift
+        export VANILLA=y
+    }
+    ;;
+
+    -norl) {
+        shift
+        export NO_RL=y
+    }
+    ;;
+
+    *) break;
+esac; done
+
 opt="$1"
 case "$opt" in
     repl) {
-        if ! test "$INSIDE_NEOVIM" = y; then
-            # echo putting inside nvt 1>&2
-            nvt "$sn" "$@"
-            exit "$?"
-        fi
+        while [ $# -gt 0 ]; do opt="$2"; case "$opt" in
+            -van|-vanilla) {
+                shift
+                shift
+                set -- repl "$@"
+                export VANILLA=y
+            }
+            ;;
 
-        if ! test -n "$RLWRAP_EDITOR"; then
-            # echo putting inside rlwrap 1>&2
-            rlwrap "$sn" "$@"
-            exit "$?"
+            -norl) {
+                shift
+                shift
+                set -- repl "$@"
+                export NO_RL=y
+            }
+            ;;
+
+            *) break;
+        esac; done
+
+        if ! test "$VANILLA" = "y"; then
+            if ! test "$INSIDE_NEOVIM" = y; then
+                # echo putting inside nvt 1>&2
+
+                # TODO Maybe at some stage pass- forward the NO_RL here
+
+                nvt "$sn" "$@"
+                exit "$?"
+            fi
+
+            if ! test -n "$RLWRAP_EDITOR"; then
+                # echo putting inside rlwrap 1>&2
+                rlwrap "$sn" "$@"
+                exit "$?"
+            fi
         fi
     }
     ;;

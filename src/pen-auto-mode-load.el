@@ -14,6 +14,23 @@
 (add-to-list 'magic-mode-alist '("^#.*xsh" . sh-mode))
 (add-to-list 'magic-mode-alist '("#!/sbin/runscript$" . sh-mode))
 
+(defun b-contains-bb-shebang-p ()
+  "e:/volumes/home/shane/var/smulliga/source/git/justone/dotfiles-personal/bin/bbts"
+  (let ((case-fold-search nil))
+    ;; (looking-at "#!/sbin/runscript$")
+    (ignore-errors (save-excursion (re-search-forward "^ +\"exec.*bb.*-I.*0")))))
+
+;; "sh5" in j:interpreter-mode-alist beats j:b-contains-bb-shebang-p in j:magic-mode-alist
+;; see j:set-auto-mode
+;; (add-to-list 'magic-mode-alist `(b-contains-bb-shebang-p . clojure-mode))
+;; Therefore, I should add a hook to
+
+(defun check-if-bb ()
+  (if (b-contains-bb-shebang-p)
+      (clojure-mode)))
+
+(add-hook 'bash-ts-mode-hook 'check-if-bb)
+
 ;; pyramid scheme -- one day I will have a racket mode
 (add-to-list 'auto-mode-alist '("\\.pmd\\'" . racket-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.network\\|\\.netdev\\|\\.path\\|\\.socket\\|\\.slice\\|\\.automount\\|\\.mount\\|\\.target\\|\\.timer\\|\\.service\\)\\'" . systemd-mode))
@@ -270,7 +287,7 @@
 (add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode-config))
 
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'haskell-decl-scan-mode) ;This creates a menu. Access with M-l 
+(add-hook 'haskell-mode-hook 'haskell-decl-scan-mode) ;This creates a menu. Access with M-l
 
 (add-to-list 'auto-mode-alist '("\\.asd\\'" . lisp-mode))
 
