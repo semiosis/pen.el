@@ -4,6 +4,8 @@ export PS4='+	"$(basename $0)"	${LINENO}	 '
 
 export NO_AUTO_START=n
 
+export FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"
+
 export SCRIPTS=/root/.emacs.d/pen.el/scripts
 if test -d /root/.emacs.d/host/pen.el/scripts; then
     export SCRIPTS=/root/.emacs.d/host/pen.el/scripts

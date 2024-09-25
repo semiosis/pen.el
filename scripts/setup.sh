@@ -2453,3 +2453,5 @@ curl -L https://github.com/unisonweb/unison/releases/latest/download/ucm-linux.t
 	| tar -xz
 ./ucm
 )
+
+agi okular

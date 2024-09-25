@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# https://blog.aktsbot.in/no-more-blurry-fonts.html
+export FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"
+
 test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
 test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
