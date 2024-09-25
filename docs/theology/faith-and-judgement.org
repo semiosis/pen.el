@@ -1,6 +1,6 @@
 #+TITLE: Thoughts on Faith and Judgement
 #+AUTHOR: Shane Mulligan
-#+DATE: <2024-09-25 Wed>
+#+DATE: <2024-09-26 Thu>
 #+KEYWORDS: faith christianity
 
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
@@ -2461,8 +2461,14 @@ We are saved to work for Christ for the sake of Christ and the ministry of recon
 The Apostles were working with Christ. I believe the Apostles also here are exhorting believers to work with Christ to receive the grace of God:
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%206%3A1&version=ESV][II Corinthians 6:1]]* - Working together with him, then, we appeal to you not to receive the grace of God in vain. (ESV)
+  *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
 #+END_QUOTE
+
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=James%202%3A22&version=ESV][James 2:22]]* - You see that faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was working with ([[https://biblehub.com/greek/4903.htm][4903. sunergeó]]) his works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), and as a result of the works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was perfected ([[https://www.blueletterbible.org/lexicon/g5048/kjv/tr/0-1/][G5048 teleioo]]);
+#+END_QUOTE
+
++ [[https://biblehub.com/greek/4903.htm][4903. sunergeó]] :: Definition: to work together. Usage: I cooperate with, work together.
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A15&version=ESV][II Corinthians 7:15]]* - And his affection for you is even greater, as he remembers the obedience of you all, how you received him with fear and trembling. (ESV)
@@ -3915,6 +3921,12 @@ I believe that becoming the righteousness of God is *cooperative* in that we all
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
 #+END_QUOTE
 
+#+BEGIN_QUOTE
+  *[[https://www.biblegateway.com/passage/?search=James%202%3A22&version=ESV][James 2:22]]* - You see that faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was working with ([[https://biblehub.com/greek/4903.htm][4903. sunergeó]]) his works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), and as a result of the works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was perfected ([[https://www.blueletterbible.org/lexicon/g5048/kjv/tr/0-1/][G5048 teleioo]]);
+#+END_QUOTE
+
++ [[https://biblehub.com/greek/4903.htm][4903. sunergeó]] :: Definition: to work together. Usage: I cooperate with, work together.
+
 We should disobey sin, and present ourselves to God as those alive from the dead, and our members as *instruments of righteousness to God*. We should be practicing righteousness, practicing love and holiness and truth:
 
 #+BEGIN_QUOTE
@@ -5243,8 +5255,8 @@ I just want to be clear that good works we do in obedience to Jesus are still co
 
 #+BEGIN_QUOTE
   - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A8&version=NASB][Eph 2:8]]* - For by grace you have been saved through faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]); and that not of yourselves, it is the gift (G1435 doron) of God; (NASB)
-  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A9&version=NASB][Eph 2:9]]* - not as a result of works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), so that no one may boast. (NASB)
-  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=NASB][Eph 2:10]]* - For we are His workmanship, created in Christ Jesus for good works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), which God prepared beforehand so that we would walk in them. (NASB)
+  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A9&version=NASB][Eph 2:9]]* - not as a result of works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), so that no one may boast. (NASB)
+  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=NASB][Eph 2:10]]* - For we are His workmanship, created in Christ Jesus for good works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), which God prepared beforehand so that we would walk in them. (NASB)
 #+END_QUOTE
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
@@ -9348,7 +9360,7 @@ Grace is free, but a person *must* become obedient - God gives the heart to obey
   *[[https://www.biblegateway.com/passage/?search=Revelation%2022%3A3&version=ESV][Revelation of John 22:3]]* - No longer will there be anything accursed, but _the throne of God and of the Lamb_ will be in it, and *his servants will worship him.* (ESV)
 #+END_QUOTE
 
-I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
+I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because [[https://www.youtube.com/watch?v=cksbIq-g76k][we don't have righteousness apart from Him]] (as far as I understand):
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
@@ -13585,7 +13597,7 @@ Paul the Apostle met James, brother of Jesus:
 Interestingly, James believes that a person is justified not by faith alone, but by works of faith:
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=James%202%3A21-24&version=ESV][James 2:21-24]]* - Was not Abraham our father justified by works when he offered up Isaac his son on the altar? You see that faith was working with his works, and as a result of the works, faith was perfected; and the Scripture was fulfilled which says, “And Abraham believed God, and it was reckoned to him as righteousness,” and he was called the friend of God. You see that a man is justified by works and not by faith alone.
+  *[[https://www.biblegateway.com/passage/?search=James%202%3A21-24&version=ESV][James 2:21-24]]* - Was not Abraham our father justified by works when he offered up Isaac his son on the altar? You see that faith was working with ([[https://biblehub.com/greek/4903.htm][4903. sunergeó]]) his works, and as a result of the works, faith was perfected; and the Scripture was fulfilled which says, “And Abraham believed God, and it was reckoned to him as righteousness,” and he was called the friend of God. You see that a man is justified by works and not by faith alone.
 #+END_QUOTE
 
 Fear-of-God:
@@ -16703,7 +16715,7 @@ An adequate reading of the following which makes sense to me is that being found
   *[[https://www.biblegateway.com/passage/?search=Philippians%203%3A9&version=ESV][Philippians 3:9]]* - and be found in him, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— (ESV)
 #+END_QUOTE
 
-I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
+I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because [[https://www.youtube.com/watch?v=cksbIq-g76k][we don't have righteousness apart from Him]] (as far as I understand):
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
@@ -17407,8 +17419,8 @@ Justification by working-faith (obedience to the gospel producing works) and jus
 
 #+BEGIN_QUOTE
   - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A8&version=NASB][Eph 2:8]]* - For by grace you have been saved through faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]); and that not of yourselves, it is the gift ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]) of God; (NASB)
-  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A9&version=NASB][Eph 2:9]]* - not as a result of works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), so that no one may boast. (NASB)
-  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=NASB][Eph 2:10]]* - For we are His workmanship, created in Christ Jesus for good works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), which God prepared beforehand so that we would walk in them. (NASB)
+  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A9&version=NASB][Eph 2:9]]* - not as a result of works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), so that no one may boast. (NASB)
+  - *[[https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=NASB][Eph 2:10]]* - For we are His workmanship, created in Christ Jesus for good works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), which God prepared beforehand so that we would walk in them. (NASB)
 #+END_QUOTE
 
 John Piper puts it this way: "The first act of saving faith justifies and the subsequent ones justify too". That's an interesting theory, but it's also God who justifies, not us, so we should [[https://www.biblegateway.com/passage/?search=Romans%203%3A26&version=ESV][let God be God, trust Jesus]] and [[https://www.biblegateway.com/passage/?search=Romans%2014%3A17-19&version=ESV][serve Him]]:
@@ -17697,7 +17709,7 @@ If we keep His commandments, keep His works we will reign with Him:
   *[[https://www.biblegateway.com/passage/?search=Revelation%202%3A26&version=ESV][Revelation of John 2:26]]* - The one who conquers and who keeps my works until the end, to him I will give authority over the nations, (ESV)
 #+END_QUOTE
 
-I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
+I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because [[https://www.youtube.com/watch?v=cksbIq-g76k][we don't have righteousness apart from Him]] (as far as I understand):
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
@@ -24397,7 +24409,7 @@ The only point I want to make from this text here is that faith is supposed to c
 
 ** Friends of God obey God
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=James%202%3A22-24&version=ESV][James 2:22-24]]* - You see that faith was working with his works, and as a result of the works, faith was perfected; and the Scripture was fulfilled which says, “And _Abraham believed God_, and it was reckoned to him as righteousness,” and he was called the _friend_ of God. You see that a man is justified by works and not by faith alone.
+  *[[https://www.biblegateway.com/passage/?search=James%202%3A22-24&version=ESV][James 2:22-24]]* - You see that faith was working with ([[https://biblehub.com/greek/4903.htm][4903. sunergeó]]) his works, and as a result of the works, faith was perfected; and the Scripture was fulfilled which says, “And _Abraham believed God_, and it was reckoned to him as righteousness,” and he was called the _friend_ of God. You see that a man is justified by works and not by faith alone.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
@@ -26220,7 +26232,7 @@ For example, out of faith in trying to follow the 10 Commandments / 2 Great Comm
 Faith involves obedience. It's repentance from sin to the aligning of the heart to God's commandments.
 
 ** The faith itself may be a gift, but certainly is cooperative
-I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because we don't have righteousness apart from Him (as far as I understand):
+I believe that becoming the righteousness of God is initially *instantaneous* when we believe but going forward it also is *cooperative* as we live, submitting to the righteousness of God (Jesus' righteousness) and then being found in Jesus, letting Jesus wash us, and work in us, transform us, and that a childlike trust in Jesus (a believing and obedient trust), following Jesus, _walking_ in faith, and behaving as one of God's children, following Jesus our Lord and Saviour is how we receive and walk into the kingdom which is given to us and that walking in a childlike faith in Jesus is how we have the righteousness that is by faith. I believe we have righteousness because we are found *in* Him, and He is our High Priest and or Lord and King, and Saviour. Living by faith is a lifestyle to be found in Jesus and that's how we have righteousness from Him, because we are found *in* Him and are being perfected and sanctified like a branch getting healthier because it's connected to Jesus. It does not mean we are able to displace Him as the head of the body because [[https://www.youtube.com/watch?v=cksbIq-g76k][we don't have righteousness apart from Him]] (as far as I understand):
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A21-6&version=ESV][II Corinthians 5:21-6:1]]* - For our sake he made him to be sin who knew no sin, so that in him *we might become the righteousness of God. Working together with him*, then, we appeal to you not to receive the grace of God in vain. (ESV)
@@ -29371,8 +29383,10 @@ Jesus mends ([[https://www.blueletterbible.org/lexicon/g2675/kjv/tr/0-1/][G2675 
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=James%202%3A22&version=ESV][James 2:22]]* - You see that faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was working with his works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), and as a result of the works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was perfected ([[https://www.blueletterbible.org/lexicon/g5048/kjv/tr/0-1/][G5048 teleioo]]);
+  *[[https://www.biblegateway.com/passage/?search=James%202%3A22&version=ESV][James 2:22]]* - You see that faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was working with ([[https://biblehub.com/greek/4903.htm][4903. sunergeó]]) his works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), and as a result of the works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), faith ([[https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/][G4102 pistis]]) was perfected ([[https://www.blueletterbible.org/lexicon/g5048/kjv/tr/0-1/][G5048 teleioo]]);
 #+END_QUOTE
+
++ [[https://biblehub.com/greek/4903.htm][4903. sunergeó]] :: Definition: to work together. Usage: I cooperate with, work together.
 
 #+BEGIN_QUOTE
   *[[https://www.biblegateway.com/passage/?search=1%20John%202%3A5&version=ESV][I John 2:5]]* - but whoever keeps His word (G3056 logos), in him the love ([[https://www.blueletterbible.org/lexicon/g26/kjv/tr/0-1/][G26 agape]]) of God ([[https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/][G2316 theos]]) has truly been perfected ([[https://www.blueletterbible.org/lexicon/g5048/kjv/tr/0-1/][G5048 teleioo]]). By this we know ([[https://www.blueletterbible.org/lexicon/g1097/kjv/tr/0-1/][G1097 ginosko]]) that we are in Him:
@@ -39562,7 +39576,7 @@ Perfect godliness revealing God through Jesus Christ:
 #+END_QUOTE
 
 #+BEGIN_QUOTE
-  *[[https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A10&version=ESV][I Timothy 2:10]]* - but rather by means of good works ([[https://www.blueletterbible.org/lexicon/g1435/kjv/tr/0-1/][G1435 doron]]), as is proper for women making a claim to godliness.
+  *[[https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A10&version=ESV][I Timothy 2:10]]* - but rather by means of good works ([[https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/][G2041 ergon]]), as is proper for women making a claim to godliness.
 #+END_QUOTE
 
 #+BEGIN_QUOTE
