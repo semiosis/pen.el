@@ -588,7 +588,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5c66ee4) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8b33306) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1037,7 +1037,7 @@ It's imperative that as we go ahead, we **must** abide in the teaching of Christ
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
 
 Don't stop believing. We must continue trusting and believing the Truth to be saved:
 
@@ -1328,7 +1328,7 @@ To get to know Jesus, we **must obey** His commandments:
 
 **Belief** leads to **obedience** which leads to **knowledge** of the truth:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Eternal life is knowing God and Jesus Christ who He has sent:
 
@@ -2474,7 +2474,7 @@ Like the:
 
 Obedience to the gospel leads to eternal salvation. I believe obedience should arrive at belief, and belief should yield obedience, and **knowledge**.
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Obeying Jesus is quite simply one aspect of having faith in Jesus.
 
@@ -2710,7 +2710,7 @@ Jesus Christ obeyed Father God perfectly, and sinners put Him to death, and He b
 
 We should be led into the knowledge of the Truth:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 We should come into a relationship with Jesus Christ and with Father God:
 
@@ -2920,7 +2920,7 @@ We must continue in our faith. We must continue to believe Jesus and trust in Je
 
 > **[Philippians 3:9-13](https://www.biblegateway.com/passage/?search=Philippians%203%3A9-13&version=ESV)** - and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through <ins>faith in Christ</ins>, the righteousness from God that depends on faith— that I may **know him** and the power of his resurrection, and may **share his sufferings**, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. <ins>Not that I have already obtained this or am already perfect</ins>, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, (ESV)
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 I believe that we are saved not because of our own merit, but, still, obedience to the Gospel leads to righteousness which leads to salvation:
 
@@ -4965,7 +4965,7 @@ We are transformed into Christ's image from one degree of glory to another:
 
 > **[II Corinthians 3:18](https://www.biblegateway.com/passage/?search=2%20Corinthians%203%3A18&version=ESV)** - And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from **the Lord who is the Spirit.** (ESV)
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[John 15:8](https://www.biblegateway.com/passage/?search=John%2015%3A8&version=ESV)** - By this my Father is glorified, that you bear much fruit and so prove to be my disciples. (ESV)
 
@@ -5767,7 +5767,7 @@ In fact I think we should be both a believer and a disciple to be sanctified by 
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
 
 I am increasingly of the opinion that there is a subtle difference between simply 'believer' and 'saint' who is also a believer. Saints both believe and keep the God's commandments. Believing disciples of Jesus may become saints.
 
@@ -5864,7 +5864,7 @@ Learning to trust in Jesus, learning to trust Jesus, as we obey Him and witness 
 
 Both belief and obedience lead to a knowledge of the Truth, and I believe we **must** essentially arrive at belief and understanding in the heart and ultimately an actual **knowledge**:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[John 14:6](https://www.biblegateway.com/passage/?search=John%2014%3A6&version=ESV)** - Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me. (ESV)
 
@@ -6066,7 +6066,7 @@ Faith is both believing and obedient, even faith in the heart:
 
 <tr>
 <td class="org-left"><a href="https://www.biblegateway.com/passage/?search=John%206%3A35&amp;version=ESV">John 6:35</a></td>
-<td class="org-left">whoever believes in me shall never thirst</td>
+<td class="org-left">whoever believes (<a href="https://biblehub.com/greek/4100.htm">4100. pisteuó</a>) in me shall never thirst</td>
 <td class="org-left"><ins>whoever comes to me</ins> shall not hunger</td>
 </tr>
 
@@ -6117,21 +6117,25 @@ Faith is both believing and obedient, even faith in the heart:
 
 ### The Holy Spirit is the living water
 
-We trust Jesus (Yeshua), so we accept and treasure His words, so we trust in Him and obey Him out of trust and He is our strength, and song and Yahweh becomes our salvation. In trusting Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)) we trust Jehovah (Yahweh) who has sent Jesus (Yeshua):
+We trust Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)), so we accept and treasure His words, so we trust in Him and obey Him out of trust and He is our strength, and song and Yahweh becomes our salvation. In trusting Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)) we trust Jehovah (Yahweh) who has sent Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)). It's Jesus Christ who saves us. It's Yahweh who saves us:
 
-> **[Isaiah 12:1-3](https://www.biblegateway.com/passage/?search=Isaiah%2012%3A1-3&version=ESV)** - You will say in that day: I will give thanks to you, O LORD ([3068. Yhvh)](https://biblehub.com/hebrew/3068.htm), for though you were angry with me, your anger turned away, that you might comfort me. Behold, God is my salvation; I will trust ([982. batach](https://biblehub.com/hebrew/982.htm)), and will not be afraid; for the LORD GOD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm)) is my strength ([5797. oz](https://biblehub.com/hebrew/5797.htm)) and my song ([2176. zimrath)](https://biblehub.com/hebrew/2176.htm), and he has become my salvation (**[3444. yeshuah](https://biblehub.com/hebrew/3444.htm)**). With joy ([8342. sason](https://biblehub.com/hebrew/8342.htm)) you will draw water ([4325. mayim](https://biblehub.com/hebrew/4325.htm)) from the wells of salvation.\_ (ESV)
+> **[Isaiah 12:1-3](https://www.biblegateway.com/passage/?search=Isaiah%2012%3A1-3&version=ESV)** - You will say in that day: I will give thanks to you, O LORD ([3068. Yhvh)](https://biblehub.com/hebrew/3068.htm), for though you were angry with me, your anger turned away, that you might comfort me. <ins>Behold, God is my salvation; **I will trust** ([982. batach](https://biblehub.com/hebrew/982.htm)), and will **not be afraid**; for the LORD GOD ([3068. Yhvh](https://biblehub.com/hebrew/3068.htm)) is my strength ([5797. oz](https://biblehub.com/hebrew/5797.htm)) and my song ([2176. zimrath)](https://biblehub.com/hebrew/2176.htm), and he has become my salvation (**[3444. yeshuah](https://biblehub.com/hebrew/3444.htm)**). With joy ([8342. sason](https://biblehub.com/hebrew/8342.htm)) you will draw water ([4325. mayim](https://biblehub.com/hebrew/4325.htm)) from the wells of salvation.</ins> (ESV)
 
-> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts ([1372. dipsaó](https://biblehub.com/greek/1372.htm)), let him come to me and drink ([4095. pinó](https://biblehub.com/greek/4095.htm)). **Whoever believes in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts ([1372. dipsaó](https://biblehub.com/greek/1372.htm)), let him come to me and drink ([4095. pinó](https://biblehub.com/greek/4095.htm)). **Whoever believes ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+
+> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
 
 -   **[1372. dipsaó](https://biblehub.com/greek/1372.htm):** Definition: to thirst. Usage: I thirst for, desire earnestly.
 
-I desire You, Lord Jesus Christ! Please, God, let me always believe in You, and trust in You! Thank You God for Your mercy!
+I desire You, Lord Jesus Christ! Please, God, let me always believe in You, trusting in You! Thank You God for Your mercy!
 
 > **[Revelation of John 22:17](https://www.biblegateway.com/passage/?search=Revelation%2022%3A17&version=ESV)** - The Spirit and the Bride say, Come. And let the one who hears say, Come. And let the one who is **thirsty** come; let the one who desires take the **water of life without price ([1432. dórean](https://biblehub.com/greek/1432.htm))**. (ESV)
 
--   **[1432. dórean](https://biblehub.com/greek/1432.htm):** Definition: as a gift, to no purpose.  Usage: as a free gift, without payment, freely.  Cognate: 1432 dōreán(the adverbial form of 1431/dōrea) – something freely done (as gratis), i.e. without "cause"; unearned (undeserved); freely given (without cost) hence not done out of mere obligation or compulsion. See 1431 (dōrea).
+-   **[1432. dórean](https://biblehub.com/greek/1432.htm):** Definition: as a gift, to no purpose.  Usage: as a free gift, without payment, freely.  Cognate: 1432 dōreán(the adverbial form of 1431/dōrea) – something freely done (as gratis), i.e. without "cause"; unearned (undeserved); freely given (without cost) hence not done out of mere obligation or compulsion. See [1431 (dōrea)](https://www.blueletterbible.org/lexicon/g1431/kjv/tr/0-1/).
 
-Stay thirsty people! Keep trusting Jesus, trusting in Him, treasuring and trusting His words, trusting in God.
+If you're thirsty for Jesus then trust in Jesus! Jesus is always there to satisfy that desire for Him. If you're thirsty, put your trust in Jesus. Keep trusting Jesus, trusting in Him, treasuring and trusting His words, trusting in God and you'll never be thirsty again.
+
+> **[Matthew 5:6](https://www.biblegateway.com/passage/?search=Matthew%205%3A6&version=ESV)** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. (ESV)
 
 > **[Luke 8:6](https://www.biblegateway.com/passage/?search=Luke%208%3A6&version=ESV)** - And some fell on the rock, and as it grew up, it withered away, because it had no **moisture**. (ESV)
 
@@ -6143,10 +6147,24 @@ Stay thirsty people! Keep trusting Jesus, trusting in Him, treasuring and trusti
 
 > **[Isaiah 58:9-11](https://www.biblegateway.com/passage/?search=Isaiah%2058%3A9-11&version=ESV)** - Then you shall call, and the LORD will answer; you shall cry, and he will say, Here I am. If you take away the yoke from your midst, the pointing of the finger, and speaking wickedness, if you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday. And the LORD will guide you continually and satisfy your desire in scorched places and make your bones strong; and you shall be like a watered garden, like a spring of water, whose waters do not fail. (ESV)
 
+> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
 
-### Belief leads to obedience, which leads to knowledge of the Truth
+     1  3588      4100      1519 1473     2531   2036     3588    1124      4215   
+     2  ho        pisteuōn  eis  eme      kathōs eipen    hē      graphē    Potamoi
+     3  ὁ         πιστεύων  εἰς  ἐμέ  ,   καθὼς  εἶπεν    ἡ       γραφή  :  Ποταμοὶ
+     4  The [one] believing in   Me       as     has said the     Scripture Rivers 
+     5  Art-NMS   V-PPA-NMS Prep PPro-A1S Adv    V-AIA-3S Art-NFS N-NFS     N-NMP  
+     6  
+     7  1537   3588    2836    846       4482       5204     2198     
+     8  ek     tēs     koilias autou     rheusousin hydatos  zōntos   
+     9  ἐκ     τῆς     κοιλίας αὐτοῦ     ῥεύσουσιν  ὕδατος   ζῶντος  .
+    10  out of the     belly   of him    will flow  of water living   
+    11  Prep   Art-GFS N-GFS   PPro-GM3S V-FIA-3P   N-GNS    V-PPA-GNS
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+
+### Trusting belief ([through grace](https://freely-given.org/OBD/ref/GrkWrd/ACTc18v27w61.htm)) leads to continued obedience, which leads to knowledge of the Truth
+
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Seeking God in truth and not seeking glory from one another is a good place to start in coming to believe:
 
@@ -6507,7 +6525,7 @@ I believe that a person does not have any <ins>security</ins> of eternal salvati
 
 The knowledge of the truth is for those who abide in Jesus' word and follow Him:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 I believe that obedience is as intrinsic and necessary to faith as belief is.
 
@@ -12091,7 +12109,7 @@ Faith:
 -   Belief and Obedience => true knowledge => fruit
     -   Belief and obedience leads to true knowledge, and after true knowledge, fruit
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Also, the Old Testament speaks a lot about how to walk in righteousness:
 
@@ -13461,7 +13479,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org62fee9f)
+See: [33.4.1](#orgce10493)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14320,7 +14338,7 @@ But we must not believe in vain. Rather, we must believe and hold fast to the go
 
 > **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 Trusting and obeying Jesus qualifies, but belief without obedience or trust in the heart doesn't qualify, I am **quite** sure. But I am not the judge, God is.
 
@@ -19044,7 +19062,7 @@ Servants of Jesus who are servants of God encounter resistance from the world as
 
 > **[Hebrews 10:38](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A38&version=ESV)** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[Hebrews 10:38](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A38&version=ESV)** - but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. (ESV)
 
@@ -19122,7 +19140,7 @@ Resist the false teaching from impostors who do not want to repent even from sin
 
 A disciple of Jesus is a servant of Jesus:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 It requires letting go of this world:
 
@@ -19539,7 +19557,7 @@ The righteousness from God that depends on faith (obedient faith). We are found 
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples**, <ins>and you will know the truth, and the truth will set you free.</ins> (ESV)
 
 And they will **know** the Truth.
 
@@ -22727,7 +22745,7 @@ Loving the way Jesus loves is a **requirement**!
 
 Keeping Jesus' commandments is obeying Jesus. Obedience to Jesus is a requirement of a Christian - obedience in the heart, which translates into deeds.
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[John 13:35](https://www.biblegateway.com/passage/?search=John%2013%3A35&version=ESV)** - By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
@@ -22834,7 +22852,7 @@ Father God authorizes people to come to Jesus, but that person must come to Jesu
 
 > **[John 6:61-65](https://www.biblegateway.com/passage/?search=John%206%3A61-65&version=ESV)** - But Jesus, knowing in himself that his disciples were grumbling about this, said to them, Do you take offense at this?  Then what if you were to see the Son of Man ascending to where he was before?  It is the Spirit who gives life; the flesh is of no avail. The words that I have spoken to you are spirit and life.  But there are some of you who do not believe. (For Jesus knew from the beginning who those were who did not believe, and who it was who would betray him. ) And he said, This is why I told you that no one can come to me unless it is granted him by the Father.
 
-> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
+> **[John 8:31-32](https://www.biblegateway.com/passage/?search=John%208%3A31-32&version=ESV)** - So Jesus said to the Jews <ins>who had believed ([4100. pisteuó](https://biblehub.com/greek/4100.htm), [pepisteukotas](https://biblehub.com/greek/pepisteukotas_4100.htm)) in him</ins>, **If you abide in my word, you are truly my disciples, and you will know the truth**, <ins>and the truth will set you free.</ins> (ESV)
 
 > **[John 15:3-4](https://www.biblegateway.com/passage/?search=John%2015%3A3-4&version=ESV)** - Already you are clean because of the word that I have spoken to you. Abide in me, and I in you. As the branch cannot bear fruit by itself, unless it abides in the vine, neither can you, unless you abide in me.
 
@@ -27318,7 +27336,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org62fee9f)
+See: [33.4.1](#orgce10493)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -34803,7 +34821,7 @@ We serve the Most High God, Jehovah and Jesus Christ who He has sent:
 
 > **[Deuteronomy 10:17](https://www.biblegateway.com/passage/?search=Deuteronomy%2010%3A17&version=ESV)** - For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
 
-What I believe is that everything that is in the 'made' category has been created through Jesus (Yeshua) by Jehovah (Yahweh) God.
+What I believe is that everything that is in the 'made' category has been created through Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)) by Jehovah (Yahweh) God.
 Jesus Christ was not made. He was there with Jehovah in the beginning. He is the Word of God. Jesus is God the Son:
 
 > **[John 1:1-3](https://www.biblegateway.com/passage/?search=John%201%3A1-3&version=ESV)** - In the beginning was the Word, and <ins>the Word was with God,</ins> and <ins>the Word was God.</ins> He was in the beginning with God. <ins>All things were made through him, and without him was not any thing made that was made.</ins> (ESV)
