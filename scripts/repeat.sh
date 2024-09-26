@@ -15,10 +15,20 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -E) {
+        DO_EXEC=y
+        shift
+    }
+    ;;
+
     *) break;
 esac; done
 
-CMD="$(cmd-nice "$@")"
+if test "$DO_EXEC" = "y"; then
+    CMD="$1"
+else
+    CMD="$(cmd "$@")"
+fi
 
 check_repeat() {
     if test "$do_ask" = y; then
