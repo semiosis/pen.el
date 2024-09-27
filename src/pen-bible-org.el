@@ -8,7 +8,7 @@
 (org-add-link-type "strongs" 'follow-strongs-link)
 (defun follow-strongs-link (query)
   "Run `strongs' with QUERY as argument."
-  (tv query)
+  (bible-term-show-word query)
   ;; (strongs-mode-lookup query)
   )
 

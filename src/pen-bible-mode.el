@@ -1481,6 +1481,24 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
               (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
     word))
 
+(defun bible-term-show-word (term_code)
+  (interactive "sTerm: ")
+  (let* ((term_code (str term_code))
+         (split_code (s-replace-regexp "." "" term_code))
+         (is_greek (re-match-p "^G" term_code))
+         (is_hebrew (re-match-p "^H" term_code))
+         (term_code (s-replace-regexp "^[GH]" "" term_code))
+         (info
+          (cond
+           (is_greek (bible-mode--open-term-greek term_code))
+           (is_hebrew (bible-mode--open-term-hebrew term_code))
+           (t nil)))
+         (word
+          ;; This isn't the main bottleneck
+          (if info
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+    word))
+
 ;; This speeds it up a lot
 ;; I should ensure that the memoization databases are saved on the host
 (memoize 'bible-term-get-word)
