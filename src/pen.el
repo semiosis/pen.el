@@ -2503,6 +2503,7 @@ May use to generate code from comments."
     (require 'pen-universal-sidecar)
   (require 'pen-sideline))
 (require 'pen-bible-audio)
+(require 'pen-bible-org)
 (require 'pen-picture)
 (require 'pen-magit-margin)
 (require 'pen-vc)

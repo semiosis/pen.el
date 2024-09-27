@@ -1,6 +1,17 @@
 #!/bin/bash
 export TTY
 
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -urlonly) {
+        urlonly=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
 # https://www.biblegateway.com/passage/?search=Romans+6%3A23&version=ESV
@@ -8,7 +19,11 @@ export TTY
 biblegatewayify_bible_ref() {
     ref="$1"
     ref_encoded="$(printf -- "%s" "$ref" | biblegateway-canonicalise-ref | pen-urlencode)"
-    echo "[[https://www.biblegateway.com/passage/?search=${ref_encoded}&version=ESV][$ref]]"
+    if test "$urlonly" = "y"; then
+        echo "https://www.biblegateway.com/passage/?search=${ref_encoded}&version=ESV"
+    else
+        echo "[[https://www.biblegateway.com/passage/?search=${ref_encoded}&version=ESV][$ref]]"
+    fi
 }
 
 # newline
