@@ -6,3 +6,5 @@ grepfilter "sed 's/./_/g'" "rosie grep -o subs net.any"     # Blank out IP addre
 grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
 biblegateway-relinkify
 biblegateway-unlinkify
+strongs-codes-relinkify
+biblegateway-relinkify-canonicalised

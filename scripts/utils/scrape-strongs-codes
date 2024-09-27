@@ -1,0 +1,7 @@
+#!/bin/bash
+export TTY
+
+type="$@"
+
+scrape "\\(G[0-9]+\\ [^ )]+\\)"
+# scrape "G[0-9]+"

@@ -1,0 +1,28 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# https://www.biblegateway.com/passage/?search=Romans+6%3A23&version=ESV
+
+blueletterbibleify_strongs_code() {
+    ref="$1"
+    # TODO Also do some cleanup, such as removing asterisks from for example (H539 *'aman*)
+
+    word="$(p "$ref" | sed 's/([GH][^ ]* \(.*\))/\1/')"
+    ref="$(p "$ref" | sed 's/(\([GH][^ ]*\) .*)/\1/')"
+
+    ref_encoded="$(printf -- "%s" "$ref" | s lc | pen-urlencode)"
+    word="$(p "$word" | sed 's/\*//g')"
+    echo "[[https://www.blueletterbible.org/lexicon/${ref_encoded}/kjv/tr/0-1/][($ref $word)]]"
+}
+
+# newline
+IFS="
+"
+awk 1 | while IFS="$IFS" read -r line; do
+    (
+        exec 0</dev/null
+        blueletterbibleify_strongs_code "$line"
+    )
+done

@@ -7,4 +7,4 @@ export TTY
 # scrape-bible-references -v   # verses only
 
 biblegateway-unlinkify | 
-    grepfilter "wrlp biblegatewayify-bible-ref" "scrape-bible-references -v"
+    grepfilter "wrlp -E \"biblegatewayify-bible-ref | canonicalise-bible-ref\"" "scrape-bible-references -v"

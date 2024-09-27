@@ -6,5 +6,5 @@ export TTY
 
 # scrape-bible-references -v   # verses only
 
-biblegateway-unlinkify | 
-    grepfilter "wrlp biblegatewayify-bible-ref" "scrape-bible-references -v"
+strongs-codes-unlinkify | 
+    grepfilter "wrlp blueletterbibleify-strongs-code" "scrape-strongs-codes"
