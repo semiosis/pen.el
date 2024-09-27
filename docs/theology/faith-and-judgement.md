@@ -597,7 +597,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7994ec3) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org2e7f69a) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -7428,7 +7428,7 @@ We have knowledge of the truth through obedience to the gospel.
 
 > **[Galatians 2:14](https://www.biblegateway.com/passage/?search=Galatians%202%3A14&version=ESV)** - But when I saw that <ins>their conduct was not in step with the truth of the gospel</ins>, I said to Cephas before them all, If you, though a Jew, live like a Gentile and not like a Jew, how can you force the Gentiles to live like Jews? (ESV)
 
-> **[II Timothy 3:13](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A13&version=ESV)** - while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
+> **[II Timothy 3:12-13](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A12-13&version=ESV)** - Indeed, all who desire to live a godly life in Christ Jesus will be persecuted, while evil people and impostors will go on from bad to worse, deceiving and being deceived. (ESV)
 
 People who go astray:
 
@@ -10565,7 +10565,7 @@ Even as born-again Christians, keeping the 10 Commandments is very important. Ju
 
 The righteousness in the actual doing of the law above is still upheld but there is now the righteousness that is by faith in Jesus Christ. In other words, keeping the commandments of God and following Jesus are not mutually exclusive. And the law still describes what good behaviour looks like and what bad behaviour looks like. But through the redemption that is in Christ Jesus, as we follow and place our faith in Jesus, obeying Jesus to repent from sin and to do good and to pass forward love and forgiveness, etc., we can be justified by our faith in Jesus. As we go on living, we keep our obedient believing faith in Jesus, and no longer want to rebel against God's law. Perfect compliance to the law is no longer the basis of our justification but we seek to not break the law:
 
-> **[Romans 3:21-31](https://www.biblegateway.com/passage/?search=Romans%203%3A21-31&version=ESV)** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that **one is justified by faith apart from works of the law.** Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. He will justify the circumcised by faith and the uncircumcised through faith. Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
+> **[Romans 3:21-31](https://www.biblegateway.com/passage/?search=Romans%203%3A21-31&version=ESV)** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that **one is justified by faith apart from works of the law.** Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. **He will justify the circumcised by faith and the uncircumcised through faith.** Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -13553,7 +13553,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org351e59c)
+See: [33.4.1](#orgcc8fb47)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -14326,9 +14326,13 @@ All who `a)` believe without being circumcised (i.e. they are not under the law)
 
 > **[Romans 4:11-12](https://www.biblegateway.com/passage/?search=Romans%204%3A11-12&version=ESV)** - He received the sign of circumcision as a seal of the righteousness that he had by faith while he was still uncircumcised. The purpose was to make him <ins>the father of</ins> **all who believe without being circumcised**, so that righteousness would be counted to them as well, and to make him <ins>the father of</ins> **the circumcised who are not merely circumcised but who also walk in the footsteps of the faith that our father Abraham had before he was circumcised.** (ESV)
 
-It's evident from **[Romans 4:11-12](https://www.biblegateway.com/passage/?search=Romans%204%3A11-12&version=ESV)** and **[Romans 3:27-31](https://www.biblegateway.com/passage/?search=Romans%203%3A27-31&version=ESV)** that both the circumcised (those still keeping the Jewish law) and the uncircumcised are justified by faith. i.e. replacement-theology is wrong:
+It's evident from **[Romans 4:11-12](https://www.biblegateway.com/passage/?search=Romans%204%3A11-12&version=ESV)** and **[Romans 3:27-31](https://www.biblegateway.com/passage/?search=Romans%203%3A27-31&version=ESV)** that both the circumcised (those still keeping the precepts of the Law) and the uncircumcised are justified by faith. i.e. replacement-theology is wrong. Working-faith as a mode of being justified, walking as Abraham did while keeping the precepts of the law is still a mode of justification, as I currently (<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-28 Sat&gt;</span></span>) understand:
 
-> **[Romans 3:27-31](https://www.biblegateway.com/passage/?search=Romans%203%3A27-31&version=ESV)** - Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. He will justify the circumcised by faith and the uncircumcised through faith. Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
+> **[Romans 3:27-31](https://www.biblegateway.com/passage/?search=Romans%203%3A27-31&version=ESV)** - Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. **He will justify the circumcised by faith and the uncircumcised through faith.** Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
+
+Here, Paul actually argues **for** keeping the precepts of the Torah, and relates actually keeping the precepts to those who have been circumcised in the heart. Being a 'Jew' inwardly is unbound by time:
+
+> **[Romans 2:25-29](https://www.biblegateway.com/passage/?search=Romans%202%3A25-29&version=ESV)** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps <ins>the precepts of the law</ins>, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But <ins>a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter.</ins> His praise is not from man but from God.
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
@@ -14537,6 +14541,15 @@ Whoever truly believes Jesus trusts in and is obedient to Jesus. We must obey Je
 But we must not believe in vain. Rather, we must believe and hold fast to the gospel:
 
 > **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
+
+
+### God desired to give assurance to the heirs of the promise
+
+God let Abraham know He would bless him because he was obedient to His voice and didn't withhold his son (Abraham's faith was tested to show that he agape loved God first before even his only son):
+
+> **[Genesis 22:15-18](https://www.biblegateway.com/passage/?search=Genesis%2022%3A15-18&version=ESV)** - And the angel of the LORD called to Abraham a second time from heaven and said, By myself I have sworn, declares the LORD, **because you have done this and have not withheld your son, your only son, I will surely bless you**, and I will surely multiply your offspring as the stars of heaven and as the sand that is on the seashore. And your offspring shall possess the gate of his enemies, and in your offspring shall all the nations of the earth be blessed, **because you have obeyed my voice.** (ESV)
+
+> **[Hebrews 6:13-20](https://www.biblegateway.com/passage/?search=Hebrews%206%3A13-20&version=ESV)** - For when God made a promise to Abraham, since he had no one greater by whom to swear, he swore by himself, saying, Surely I will bless you and multiply you. And thus Abraham, having patiently waited, obtained the promise. For people swear by something greater than themselves, and in all their disputes an oath is final for confirmation. **So when God desired to show more convincingly to the heirs of the promise the unchangeable character of his purpose, he guaranteed it with an oath, so that by two unchangeable things, in which it is impossible for God to lie, we who have fled for refuge might have strong encouragement to hold fast to the hope set before us.** We have this as a sure and steadfast anchor of the soul, a hope that enters into the inner place behind the curtain, where Jesus has gone as a forerunner on our behalf, having become a high priest forever after the order of Melchizedek. (ESV)
 
 
 ### Yield to God
@@ -17381,7 +17394,7 @@ Even as born-again Christians, keeping the 10 Commandments is very important. Ju
 
 The righteousness in the actual doing of the law above is still upheld but there is now the righteousness that is by faith in Jesus Christ. In other words, keeping the commandments of God and following Jesus are not mutually exclusive. And the law still describes what good behaviour looks like and what bad behaviour looks like. But through the redemption that is in Christ Jesus, as we follow and place our faith in Jesus, obeying Jesus to repent from sin and to do good and to pass forward love and forgiveness, etc., we can be justified by our faith in Jesus. As we go on living, we keep our obedient believing faith in Jesus, and no longer want to rebel against God's law. Perfect compliance to the law is no longer the basis of our justification but we seek to not break the law:
 
-> **[Romans 3:21-31](https://www.biblegateway.com/passage/?search=Romans%203%3A21-31&version=ESV)** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that **one is justified by faith apart from works of the law.** Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. He will justify the circumcised by faith and the uncircumcised through faith. Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
+> **[Romans 3:21-31](https://www.biblegateway.com/passage/?search=Romans%203%3A21-31&version=ESV)** - But now the righteousness of God has been manifested apart from the law, although the Law and the Prophets bear witness to it— the righteousness of God through faith in Jesus Christ for all who believe. For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God put forward as a propitiation by his blood, to be received by faith. This was to show God's righteousness, because in his divine forbearance he had passed over former sins. It was to show his righteousness at the present time, so that he might be just and the justifier of the one who has faith in Jesus. Then what becomes of our boasting? It is excluded. By what kind of law? By a law of works? No, but by the law of faith. For we hold that **one is justified by faith apart from works of the law.** Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. **He will justify the circumcised by faith and the uncircumcised through faith.** Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
 
 
 ## The law of the Spirit of life vs law of sin and death
@@ -17577,7 +17590,7 @@ Even as Christ-followers, living righteously by loving God and our neighbour, an
 
 > **[Psalms 1:1-3](https://www.biblegateway.com/passage/?search=Psalms%201%3A1-3&version=ESV)** - Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers; but his delight is in the law of the LORD, and on his law he meditates day and night. He is like a tree planted by streams of water that yields its fruit in its season, and its leaf does not wither. In all that he does, he prospers. (ESV)
 
-Here, Paul actually argues **for** keeping the precepts of the Torah, and relates actually keeping the precepts to those who have been circumcised in the heart:
+Here, Paul actually argues **for** keeping the precepts of the Torah, and relates actually keeping the precepts to those who have been circumcised in the heart. Being a 'Jew' inwardly is unbound by time:
 
 > **[Romans 2:25-29](https://www.biblegateway.com/passage/?search=Romans%202%3A25-29&version=ESV)** - For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision. So, if a man who is uncircumcised keeps <ins>the precepts of the law</ins>, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But <ins>a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter.</ins> His praise is not from man but from God.
 
@@ -21618,7 +21631,7 @@ This is not a work of the law, but it is a work of faith: "*when she received th
 
 > **[James 2:26](https://www.biblegateway.com/passage/?search=James%202%3A26&version=ESV)** - For as the body apart from the spirit is dead, so also faith apart from works is dead.
 
-> **[Romans 3:28-31](https://www.biblegateway.com/passage/?search=Romans%203%3A28-31&version=ESV)** - For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. He will justify the circumcised by faith and the uncircumcised through faith. Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
+> **[Romans 3:28-31](https://www.biblegateway.com/passage/?search=Romans%203%3A28-31&version=ESV)** - For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, since God is one. **He will justify the circumcised by faith and the uncircumcised through faith.** Do we then overthrow the law by this faith? By no means! On the contrary, we uphold the law. (ESV)
 
 The law is not overthrown but it is upheld.
 
@@ -27452,7 +27465,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org351e59c)
+See: [33.4.1](#orgcc8fb47)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
