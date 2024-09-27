@@ -1,0 +1,10 @@
+#!/bin/bash
+export TTY
+
+# TODO First, unlinkify
+# Secondly,relinkify
+
+# scrape-bible-references -v   # verses only
+
+biblegateway-unlinkify | 
+    grepfilter "wrlp -E \"canonicalise-bible-ref | bibleorgify-bible-ref\"" "scrape-bible-references -v"

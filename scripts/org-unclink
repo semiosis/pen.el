@@ -14,6 +14,8 @@ esac; done
 
 pat="$@"
 
+: "${pat:="http"}"
+
 if test -n "$pat"; then
     # newline
     IFS="
@@ -23,9 +25,9 @@ if test -n "$pat"; then
         exec 0</dev/null
             if printf -- "%s\n" "$line" | grep -q -P "$pat"; then
                 if test "$back_to_title" = "y"; then
-                    printf -- "%s\n" "$line" | sed "s/\\[\\[http[^]]\\+\\]\\[\\([^]]\\+\\)\\]\\]/\\1/g"
+                    printf -- "%s\n" "$line" | sed "s/\\[\\[[a-z]\\+[^]]\\+\\]\\[\\([^]]\\+\\)\\]\\]/\\1/g"
                 else
-                    printf -- "%s\n" "$line" | sed "s/\\[\\[\\(http[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
+                    printf -- "%s\n" "$line" | sed "s/\\[\\[\\([a-z]\\+[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
                 fi
             else
                 printf -- "%s\n" "$line"
@@ -34,6 +36,5 @@ if test -n "$pat"; then
     done
 
 else
-    awk 1 | sed "s/\\[\\[\\(http[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
+    awk 1 | sed "s/\\[\\[\\([a-z]\\+[^]]\\+\\)\\]\\[[^]]\\+\\]\\]/\\1/g"
 fi
-

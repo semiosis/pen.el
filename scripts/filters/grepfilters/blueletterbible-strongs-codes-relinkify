@@ -6,4 +6,5 @@ export TTY
 
 # scrape-bible-references -v   # verses only
 
-grepfilter "wrlp org-unclink -t \"(strongs:|blueletterbible.org/lexicon)\"" filter-org-links
+strongs-codes-unlinkify | 
+    grepfilter "wrlp blueletterbibleify-strongs-code" "scrape-strongs-codes"

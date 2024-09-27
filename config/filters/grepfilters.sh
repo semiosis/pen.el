@@ -7,4 +7,7 @@ grepfilter "sed 's/./_/g'" "xurls"                          # Blank out URLs
 biblegateway-relinkify
 biblegateway-unlinkify
 strongs-codes-relinkify
+strongs-codes-unlinkify
+blueletterbible-strongs-codes-relinkify
 biblegateway-relinkify-canonicalised
+bibleorg-relinkify-canonicalised

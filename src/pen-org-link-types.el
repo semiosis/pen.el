@@ -332,11 +332,6 @@ PATH is the sexp to evaluate, as a string."
   ;; (ange-ftp-smart-login)
   )
 
-(org-add-link-type "bible" 'follow-bible-link)
-(defun follow-bible-link (query)
-  "Run `bible' with QUERY as argument."
-  (bible-mode-lookup query))
-
 (org-add-link-type "v" 'pen-follow-v-link)
 (defun pen-follow-v-link (pattern)
   "Run v `pattern'."

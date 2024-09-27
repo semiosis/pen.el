@@ -7,4 +7,4 @@ export TTY
 # scrape-bible-references -v   # verses only
 
 strongs-codes-unlinkify | 
-    grepfilter "wrlp blueletterbibleify-strongs-code" "scrape-strongs-codes"
+    grepfilter "wrlp bibleorgify-strongs-code" "scrape-strongs-codes"

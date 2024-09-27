@@ -1,0 +1,20 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+bibleorgify_bible_ref() {
+    ref="$1"
+    ref_encoded="$(printf -- "%s" "$ref" | biblegateway-canonicalise-ref | pen-urlencode)"
+    echo "[[bible:$ref][$ref]]"
+}
+
+# newline
+IFS="
+"
+awk 1 | while IFS="$IFS" read -r line; do
+    (
+        exec 0</dev/null
+        bibleorgify_bible_ref "$line"
+    )
+done
