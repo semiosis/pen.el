@@ -537,6 +537,15 @@ We're saved and rescued from idolatry and from other lawlessness, and in order t
 
 > **[Ezekiel 36:25-27](https://www.biblegateway.com/passage/?search=Ezekiel%2036%3A25-27&version=ESV)** - I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules. (ESV)
 
+-   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
+    forsaking the vain and empty talking and the error of the many, for
+    that ye have believed on Him that raised our Lord Jesus Christ from
+    the dead and gave unto him glory and a throne on His right hand;
+    unto whom all things were made subject that are in heaven and that
+    are on the earth; to whom every creature that hath breath doeth
+    service; who cometh as judge of quick and dead; whose blood God
+    will require of them that are disobedient unto Him.
+
 A short version of my testimony of being born-again and Jesus [setting me free](https://www.youtube.com/watch?v=GLugRDi7uH0&ab_channel=TheRockChurch):
 
 -   Baptised as a teenager in Vanuatu in 2005
@@ -588,7 +597,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8b33306) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7994ec3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1857,6 +1866,50 @@ We need to call on God for help:
 
 > **[Romans 10:8-13](https://www.biblegateway.com/passage/?search=Romans%2010%3A8-13&version=ESV)** - But what does it say? The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved. For the Scripture says, Everyone who believes in him will not be put to shame. For there is no distinction between Jew and Greek; the same Lord is Lord of all, bestowing his riches on all who call on him. For everyone who calls on the name of the Lord will be saved. (ESV)
 
+OK, so the Spirit is received through faith (faith like Abraham's) in Jesus Christ to all who believe. The promise was made to Abraham and to Christ. Now we must be found in Christ. Amen:
+
+> **[Galatians 3:13-16](https://www.biblegateway.com/passage/?search=Galatians%203%3A13-16&version=ESV)** - Christ redeemed us from the curse of the law by becoming a curse for us—for it is written, Cursed is everyone who is hanged on a tree— so that in Christ Jesus **the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.** To give a human example, brothers: even with a man-made covenant, no one annuls it or adds to it once it has been ratified. Now <ins>the promises were made to Abraham and to his offspring.</ins> It does not say, And to offsprings, referring to many, but referring to one, And to your offspring, who is Christ. (ESV)
+
+
+### Becoming born-again of the Spirit may be receiving the inheritance
+
+Then there may be some nuance between receiving the Holy Spirit who is the guarantee of our inheritance, and being born of the Spirit which may be [part of] our inheritance.
+
+In trusting in Jesus Christ, we may receive the Holy Spirit:
+
+> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts (1372. dipsaó), let him come to me and drink (4095. pinó). Whoever believes (4100. pisteuó) in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive, for **as yet the Spirit had not been given, because Jesus was not yet glorified.** (ESV)
+
+> **[Ephesians 1:13-14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV)** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, **who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory**. (ESV)
+
+> **[John 3:5](https://www.biblegateway.com/passage/?search=John%203%3A5&version=ESV)** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
+
+
+### The living water, the Holy Spirit of promise is the seal of our inheritance, and received through faith in Jesus
+
+> **[John 4:10](https://www.biblegateway.com/passage/?search=John%204%3A10&version=ESV)** - Jesus answered her, If you knew the gift of God, and who it is that is saying to you, Give me a drink, you would have asked him, and he would have given you living water. (ESV)
+
+> **[John 4:14](https://www.biblegateway.com/passage/?search=John%204%3A14&version=ESV)** - but whoever drinks of the water that I will give him will never be thirsty forever. The water that I will give him will become in him a spring of water welling up to eternal life. (ESV)
+
+
+### Jesus being glorified means we can receive the Holy Spirit through faith
+
+> **[John 13:31-32](https://www.biblegateway.com/passage/?search=John%2013%3A31-32&version=ESV)** - Therefore, when he was gone out, Jesus said, Now is the Son of man glorified, and God is glorified in him. If God be glorified in him, God shall also glorify him in himself, and shall straightway glorify him. (KJV)
+
+> **[John 20:22](https://www.biblegateway.com/passage/?search=John%2020%3A22&version=ESV)** - And when he had said this, he breathed on them and said to them, Receive the Holy Spirit. (ESV)
+
+> **[Acts 2:4](https://www.biblegateway.com/passage/?search=Acts%202%3A4&version=ESV)** - And they were all filled with the Holy Spirit and began to speak in other tongues as the Spirit gave them utterance. (ESV)
+
+
+### When we are born of the Spirit, we receive a regenerated spirit-man. This is part of the inheritance, I think
+
+Being born of the Spirit / spiritually regenerated I think is a different event to receiving the Holy Spirit which typically happens beforehand, particularly for Gentile Christians when we give our heart to the Lord Jesus:
+
+> **[Galatians 4:28-31](https://www.biblegateway.com/passage/?search=Galatians%204%3A28-31&version=ESV)** - Now you, brothers, like Isaac, are children of promise. But just as **at that time he who was born according to the flesh persecuted him who was born according to the Spirit**, so also it is now. But what does the Scripture say? Cast out the slave woman and her son, for the son of the slave woman shall not inherit with the son of the free woman. So, brothers, we are not children of the slave but of the free woman. (ESV)
+
+> **[Romans 4:13-18](https://www.biblegateway.com/passage/?search=Romans%204%3A13-18&version=ESV)** - For the promise to Abraham and his offspring that he would be heir of the world did not come through the law but through the righteousness of faith. For if it is the adherents of the law who are to be the heirs, faith is null and the promise is void. For the law brings wrath, but where there is no law there is no transgression. That is why it depends on faith, in order that the promise may rest on grace and be guaranteed to all his offspring—not only to the adherent of the law but also to the one who shares the faith of Abraham, who is the father of us all, as it is written, I have made you the father of many nations—in the presence of the God in whom he believed, who gives life to the dead and calls into existence the things that do not exist. In hope he believed against hope, that he should become the father of many nations, as he had been told, So shall your offspring be. (ESV)
+
+> **[Ephesians 1:13-14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV)** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory. (ESV)
+
 
 ### Any spiritual experience should be in the character of the Holy Spirit
 
@@ -2158,6 +2211,16 @@ God's spirit really helps us to stop sinning. Actively believing in Jesus should
 We overcome the world, reigning in life thanks to the free gift of righteousness **through** Jesus Christ:
 
 > **[Romans 5:15-17](https://www.biblegateway.com/passage/?search=Romans%205%3A15-17&version=ESV)** - But the free gift is not like the trespass. For if many died through one man's trespass, much more have the grace of God and the free gift by the grace of that one man Jesus Christ abounded for many. And the free gift is not like the result of that one man's sin. For the judgment following one trespass brought condemnation, but the free gift following many trespasses brought justification. If, because of one man's trespass, death reigned through that one man, much more will those who receive the abundance of grace and the free gift of righteousness **reign ([basileuó](https://biblehub.com/greek/936.htm)) in life** through the one man Jesus Christ. (ESV)
+
+-   **[Polycarp 5:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Knowing then that God is not mocked, we ought to walk worthily of His commandment and His glory.
+
+-   **[Polycarp 5:2](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** In like manner deacons should be blameless in the presence of His
+    righteousness, as deacons of God and Christ and not of men; not
+    calumniators, not double-tongued, not lovers of money, temperate in
+    all things, compassionate, diligent, walking according to the truth
+    of the Lord who became a minister (deacon) of all. For **if we be well pleasing unto Him in this present world, we shall receive the future world also**, according as He promised us to raise us from the
+    dead, and that if we conduct ourselves worthily of Him we shall
+    also reign with Him, if indeed we have faith.
 
 > **[Ezekiel 11:19-20](https://www.biblegateway.com/passage/?search=Ezekiel%2011%3A19-20&version=ESV)** - And I will give them one heart, and a new spirit I will put within them. I will remove the heart of stone from their flesh and give them a heart of flesh, that they may walk in my statutes and keep my rules and obey them. And they shall be my people, and I will be their God. (ESV)
 
@@ -3740,6 +3803,11 @@ As obedient children of God we ask God in prayer and if it's according to His wi
 But we must forgive:
 
 > **[Mark 11:24-25](https://www.biblegateway.com/passage/?search=Mark%2011%3A24-25&version=ESV)** - Therefore I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours. And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. (ESV)
+
+-   **[Polycarp 6:2](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** If then we entreat the Lord that He would forgive us, we also ought
+    to forgive: for we are before the eyes of our Lord and God, and we
+    must all stand at the judgment-seat of Christ, and each man must
+    give an account of himself.
 
 If God is for us, who can be against us?
 
@@ -5980,6 +6048,10 @@ Our **heart** must be close to Jesus:
 
 > **[Matthew 5:6](https://www.biblegateway.com/passage/?search=Matthew%205%3A6&version=ESV)** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. (ESV)
 
+If we trust God, we trust in Him. If we trust in Him, we trust Him. We trust Jesus' words. We trust Jehovah's words. Trusting *in* is not naturally separate from trusting. For the one **trusting** (it says trusting, not trusted), out of their belly will flow living water:
+
+> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
+
 Faith is both believing and obedient, even faith in the heart:
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -6123,7 +6195,9 @@ We trust Jesus ([Yeshua](https://biblehub.com/hebrew/3444.htm)), so we accept an
 
 > **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts ([1372. dipsaó](https://biblehub.com/greek/1372.htm)), let him come to me and drink ([4095. pinó](https://biblehub.com/greek/4095.htm)). **Whoever believes ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) in me**, as the Scripture has said, **Out of his heart will flow rivers of living water**. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
 
-> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
+If we trust God, we trust in Him. If we trust in Him, we trust Him. We trust Jesus' words. We trust Jehovah's words. Trusting *in* is not naturally separate from trusting. For the one **trusting** (it says trusting, not trusted), out of their belly will flow living water:
+
+> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
 
 -   **[1372. dipsaó](https://biblehub.com/greek/1372.htm):** Definition: to thirst. Usage: I thirst for, desire earnestly.
 
@@ -6147,7 +6221,7 @@ If you're thirsty for Jesus then trust in Jesus! Jesus is always there to satisf
 
 > **[Isaiah 58:9-11](https://www.biblegateway.com/passage/?search=Isaiah%2058%3A9-11&version=ESV)** - Then you shall call, and the LORD will answer; you shall cry, and he will say, Here I am. If you take away the yoke from your midst, the pointing of the finger, and speaking wickedness, if you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday. And the LORD will guide you continually and satisfy your desire in scorched places and make your bones strong; and you shall be like a watered garden, like a spring of water, whose waters do not fail. (ESV)
 
-> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
+> [John 7:38](https://biblehub.com/interlinear/john/7-38.htm) - The [one] **believing ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) in Me** as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
 
      1  3588      4100      1519 1473     2531   2036     3588    1124      4215   
      2  ho        pisteuōn  eis  eme      kathōs eipen    hē      graphē    Potamoi
@@ -8586,7 +8660,7 @@ Jesus was pleased with some of the Israelites here. But we must learn from the e
 
 It's not "having (having possession of) the law" which counts, but "doing it". I think this part of Romans is really talking about how the Law of God is effectively used to judge people. And what's interesting is that it seems as though, through Christ Jesus, God judges the secrets of men, and that happens to all people:
 
-> **[Romans 2:12-16](https://www.biblegateway.com/passage/?search=Romans%202%3A12-16&version=ESV)** - For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that <ins>the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
+> **[Romans 2:12-16](https://www.biblegateway.com/passage/?search=Romans%202%3A12-16&version=ESV)** - For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that <ins>the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
 In those who walk according to the Spirit, the righteous requirement of the law might be fulfilled:
 
@@ -8600,7 +8674,7 @@ We certainly still will to do the will of God after being saved:
 
 > **[Matthew 22:36-40](https://www.biblegateway.com/passage/?search=Matthew%2022%3A36-40&version=ESV)** - Teacher, which is the great commandment in the Law? And he said to him, **You shall love the Lord your God with all your heart and with all your soul and with all your mind.** This is the great and first commandment. And a second is like it: **You shall love your neighbor as yourself.** <ins>On these two commandments **depend** all the Law and the Prophets.</ins> (ESV)
 
-> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. (ESV)
+> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified. (ESV)
 
 We of course may be *imperfect* doers of the law, especially as Christians because we are justified by our faith in Jesus:
 
@@ -13479,7 +13553,15 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgce10493)
+See: [33.4.1](#org351e59c)
+
+-   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
+    forsaking the vain and empty talking and the error of the many, for
+    that ye have believed on Him that raised our Lord Jesus Christ from
+    the dead and gave unto him glory and a throne on His right hand;
+    unto whom all things were made subject that are in heaven and that
+    are on the earth; to whom every creature that hath breath doeth
+    service; who cometh as judge of quick and dead; **whose blood God will require of them that are disobedient unto Him.**
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -13625,7 +13707,7 @@ God justifies who has faith in Jesus.
 
 There is a way of doing the law that is by faith:
 
-> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. (ESV)
+> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified. (ESV)
 
 I'm sure that James would be referring to what Paul refers to in [Romans 4:11-12](https://www.biblegateway.com/passage/?search=Romans%204%3A11-12&version=ESV):
 
@@ -13709,7 +13791,7 @@ However, who am I to restrict God? God may justify and save whom He will:
 
 > **[Romans 10:20](https://www.biblegateway.com/passage/?search=Romans%2010%3A20&version=ESV)** - Then Isaiah is so bold as to say, I have been found by those who did not seek me; I have shown myself to those who did not ask for me. (ESV)
 
-> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. (ESV)
+> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified. (ESV)
 
 There is justification by faith is for anyone who **trusts God** for the forgiveness of their sins through Jesus' finished work on the cross as they place their faith in Jesus and follow Jesus by belief and obedience. I don't deny that to other people. But we are **trusting God**, not trusting on the work alone without trusting/believing/obeying/loving God. What I mean is, God justifies the one who has faith in Jesus. We believe and obey Jesus, loving one another as He loved us, but in the knowledge that God has loved us first by paying the price for our sin with Jesus' blood:
 
@@ -15995,6 +16077,13 @@ See, Jesus actually taught people to practice, but without hypocrisy:
 
 > **[Matthew 23:2-7](https://www.biblegateway.com/passage/?search=Matthew%2023%3A2-7&version=ESV)** - The scribes and the Pharisees sit on Moses' seat, so practice and observe whatever they tell you—but not what they do. For they preach, but do not practice. They tie up heavy burdens, hard to bear, and lay them on people's shoulders, but they themselves are not willing to move them with their finger. They do all their deeds to be seen by others. For they make their phylacteries broad and their fringes long, and they love the place of honor at feasts and the best seats in the synagogues and greetings in the marketplaces and being called rabbi by others. (ESV)
 
+-   **[Polycarp 6:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Let us therefore so serve Him with fear and all reverence, as He
+    himself gave commandment and the Apostles who preached the Gospel to
+    us and the prophets who proclaimed beforehand the coming of our Lord;
+    being zealous as touching that which is good, abstaining from
+    offenses and from the false brethren and from them that bear the name
+    of the Lord in hypocrisy, who lead foolish men astray.
+
 The law is not of the flesh. The law is spiritual:
 
 > **[Romans 7:14](https://www.biblegateway.com/passage/?search=Romans%207%3A14&version=ESV)** - For we know that the law is spiritual, but I am of the flesh, sold under sin. (ESV)
@@ -17540,7 +17629,7 @@ As we walk in the light, as He is in the light, that is in the Truth, walking in
 
 There's nothing wrong with doing what the law requires (God can see):
 
-> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
 
 So there is the righteousness that is of 'continuing to do/comply with' the Mosaic law. But the Mosaic law doesn't save. But Jesus does save:
 
@@ -17662,7 +17751,12 @@ And we are <ins>commanded</ins> (even as Christians not <ins>under the law</ins>
 
 The rest of the Mosaic law is still useful for training in righteousness. It shows people how to live in obedience to God and in love for God and one's neighbour. But we are not under the Mosaic law, but we are under the law of Christ. We have faith in Christ.
 
-We can pursue the righteousness that is through faith (G4100 **pisteuo**) in Jesus Christ.
+We can pursue the righteousness that is through faith (G4100 **pisteuo**) in Jesus Christ:
+
+-   **[Polycarp 8:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Let us therefore without ceasing hold fast by our hope and by the
+    earnest of **our righteousness, which is Jesus Christ** who took up our
+    sins in His own body upon the tree, who did no sin, neither was
+    guile found in His mouth, but for our sakes **He endured all things, that we might live in Him.**
 
 We must set our hope on Jesus, not on Moses.
 
@@ -18138,7 +18232,7 @@ Otherwise why would God make a distinction in Exodus 16 between commandments (mi
 
 Actually complying with the law (not breaking it) is good:
 
-> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
 
 > **[James 4:11-12](https://www.biblegateway.com/passage/?search=James%204%3A11-12&version=ESV)** - Do not speak evil against one another, brothers. The one who speaks against a brother or judges his brother, speaks evil against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. There is only one lawgiver and judge, he who is able to save and to destroy. But who are you to judge your neighbor? (ESV)
 
@@ -19363,7 +19457,7 @@ AMEN!!
 
 AMEN!!
 
-> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. (ESV)
+> **[Romans 2:13](https://www.biblegateway.com/passage/?search=Romans%202%3A13&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified. (ESV)
 
 Yup - and in truth. I think the commandments often need to be looked at to see what loving looks like.
 
@@ -19562,7 +19656,12 @@ Jesus said to these believers that if they abide in His word (and I believe that
 And they will **know** the Truth.
 
 
-### Don't be an enemy of the cross to others - Don't allow enemies of the cross to deter you
+### Don't be an enemy of the cross to others - Don't allow enemies of the cross to deter you, but rather pray for them
+
+-   **[Polycarp 12:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Pray for all the saints. Pray also for kings and powers and
+    princes and for them that persecute and hate you and for the
+    enemies of the cross, that your fruit may be manifest among all
+    men, that ye may be perfect in Him.
 
 We must be thinking as a person of Heaven.
 
@@ -25376,7 +25475,7 @@ It's not of my own interpretation though:
     
     -   **Read:** [alexiscarucci.com: Jesus is The Bridegroom - Living the Abundant Life](https://alexiscarucci.com/2022/05/18/jesus-is-the-bridegroom/)
     
-    And Adam had a rib taken from Him to make Eve:
+    And Adam had a rib taken from him to make Eve:
     
     > **[Genesis 2:22](https://www.biblegateway.com/passage/?search=Genesis%202%3A22&version=ESV)** - And the rib that the LORD God had taken from the man he made into a woman and brought her to the man. (ESV)
     
@@ -25656,6 +25755,16 @@ Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did G
 
 -   All people, even enemies
     -   <https://biblehub.com/greek/agapa_25.htm>
+
+> **[Galatians 6:10](https://www.biblegateway.com/passage/?search=Galatians%206%3A10&version=ESV)** - So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith. (ESV)
+
+Those who listen to those who are in Christ are of God. Those who listen to world are of the world.
+
+> **[I John 4:5-6](https://www.biblegateway.com/passage/?search=1%20John%204%3A5-6&version=ESV)** - They are from the world; therefore they speak from the world, and the world listens to them. We are from God. **Whoever knows God listens to us; whoever is not from God does not listen to us. By this we know the Spirit of truth and the spirit of error.** (ESV)
+
+> **John 17:14-15** - I have given them your word, and the world has hated them because they are not of the world, just as I am not of the world. I do not ask that you take them out of the world, but that you keep them from the evil one. (ESV)
+
+> **Philippians 2:14-16** - Do all things without grumbling or questioning, that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
 
 
 ### What Christians **must not** agape love
@@ -26591,7 +26700,7 @@ God keeps us from stumbling along the way:
 
 Fulfilling the requirement of the law is required of us by God. God judges the secrets of men by Christ Jesus.
 
-> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
 
 
 ### These people performed dead works, and never obeyed Jesus
@@ -27332,11 +27441,18 @@ Jesus' words are the words of eternal life:
 
 > **[John 6:68](https://www.biblegateway.com/passage/?search=John%206%3A68&version=ESV)** -  Simon Peter answered him, Lord, to whom shall we go?  You have the words of eternal life,  (ESV)
 
+-   **[Polycarp 2:3](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** but remembering the words which the Lord spake, as He taught; Judge
+    not that ye be not judged. Forgive, and it shall be forgiven to
+    you. Have mercy that ye may receive mercy. With what measure ye
+    mete, it shall be measured to you again; and again Blessed are
+    the poor and they that are persecuted for righteousness' sake, for
+    theirs is the kingdom of God.
+
 To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgce10493)
+See: [33.4.1](#org351e59c)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -33078,6 +33194,12 @@ There is unconditional love, which extends even to the evil and the ungrateful.
 This is just one of those apparent paradoxes. However, there is some profoundly conditional aspects of God's love to us which include many promises He makes to those who love Him back:
 
 > **[John 10:27-28](https://www.biblegateway.com/passage/?search=John%2010%3A27-28&version=ESV)** - My sheep hear my voice, and I know them, and they follow me. I give them eternal life, and they will never perish, and no one will snatch them out of my hand. (ESV)
+
+-   **[Polycarp 2:2](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Now He that raised Him from the dead will raise us also; if we
+    do His will and walk in His commandments and love the things which He
+    loved, abstaining from all unrighteousness, covetousness, love of
+    money, evil speaking, false witness; not rendering evil for evil or
+    railing for railing or blow for blow or cursing for cursing;
 
 But in all fairness, at this time **I still didn't have a relationship with God** where I considered Christ's law and bearing my neighbour's burdens, doing no harm and counting others more significant than myself as a defining part of agape love.
 And for the sake of trying to solve my own problems, I was not **at all times** counting them as more significant them myself, but I think it's very unfair to say that I did not ever.
