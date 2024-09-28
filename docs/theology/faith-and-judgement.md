@@ -597,7 +597,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orge633536) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb764fdf) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1540,9 +1540,9 @@ When we believe God's word given through Jesus, we have passed from death to lif
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -2799,13 +2799,13 @@ Jesus Christ is our Lord and Teacher - that means we believe and obey Him:
 
 > **[John 13:13-14](https://www.biblegateway.com/passage/?search=John%2013%3A13-14&version=ESV)** - You call me Teacher and Lord, and you are right, for so I am. If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet. (ESV)
 
-If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. We must continue trusting. But the enemy will certainly try to condemn the person after they are born-again:
+If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. We must continue trusting. But the enemy will certainly try to condemn the person after they are born-again.
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -2939,9 +2939,9 @@ AMEN!!
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -3174,9 +3174,9 @@ If you hear Jesus' words which came from God and trust God then you have eternal
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -6328,9 +6328,9 @@ God wants to bring people to the obedience of faith. We have to hear Jesus' word
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -13557,7 +13557,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org672b4d7)
+See: [33.4.1](#org20c17b1)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -25312,11 +25312,13 @@ I 100% believe that anyone who has faith in Jesus Christ can be saved / spared f
 
 Believers have eternal life and are not condemned:
 
+> **Romans 10:11** - For the Scripture says, Everyone who believes in him will not be put to shame. (ESV)
+
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
@@ -27469,7 +27471,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org672b4d7)
+See: [33.4.1](#org20c17b1)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -31265,13 +31267,15 @@ God wants everyone who comes to Jesus and place their trust in Him to have etern
 
 > **[John 6:40-47](https://www.biblegateway.com/passage/?search=John%206%3A40-47&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. So the Jews grumbled about him, because he said, I am the bread that came down from heaven. They said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does he now say, I have come down from heaven? Jesus answered them, Do not grumble among yourselves. No one can come to me unless the Father who sent me draws him. And I will raise him up on the last day. It is written in the Prophets, And they will all be taught by God. Everyone who has heard and learned from the Father comes to me— not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes has eternal life. (ESV)
 
-If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. We must continue trusting. But the enemy will certainly try to condemn the person after they are born-again:
+If you hear Jesus' word and believe Father God, then you have eternal life, and don't come into judgement. I don't doubt it. We must continue trusting. But the enemy will certainly try to condemn the person after they are born-again.
+
+> **[Matthew 17:5](https://www.biblegateway.com/passage/?search=Matthew%2017%3A5&version=ESV)** - He was still speaking when, behold, a bright cloud overshadowed them, and a voice from the cloud said, This is my beloved Son, with whom I am well pleased; **listen to him**. (ESV)
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. **The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him.** Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-I think it's probably more accurate to translate [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) with "passes" rather than "has passed", but I'm not the Judge.
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
