@@ -197,7 +197,10 @@ If FILEXT is provided, return files with extension FILEXT instead."
 
 (require 'ox-latex)
 
+;; Also needs to be updated here
+;; [[sps:v +/"pdflatex-bookify" "$EMACSD/pen.el/scripts/org2pdf"]]
 (add-to-list 'org-latex-compilers "pdflatex-bookify")
+(add-to-list 'org-latex-compilers "pdflatex-cvify")
 
 (setq org-latex-pdf-process
       '("%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f"))

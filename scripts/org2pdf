@@ -39,9 +39,9 @@ esac
 echo "Running $sn through emacs" 1>&2
 
 if test "$VANILLA" = "y"; then
-    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
 else
-    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
+    unbuffer x -shE "emacs -nw -Q $(aqf-nice "$fp")" -e UU -m : -s "(progn (require 'ox-latex)(add-to-list 'org-latex-compilers \"pdflatex-bookify\")(add-to-list 'org-latex-compilers \"pdflatex-cvify\")(setq org-export-with-broken-links t))" -c m -m x -s "$f" -c m -sl 2 -m x -s kill-emacs -c m -i &>/dev/null
 fi
 
 echo "Running $sn through emacs... done!" 1>&2
