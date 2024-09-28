@@ -7,6 +7,7 @@ is_tty() {
 }
 
 export EDITOR=v
+export GY_CMD
 
 pager() {
     if is_tty; then

@@ -5,6 +5,9 @@ sn="$(basename "$0")"
 
 export UPDATE
 
+CMD="$(cmd "$@")"
+export GY_CMD="readsubs $CMD"
+
 if test "$#" -eq 0; then
     url="$(pen-xc)"
     echo "reopening: $url" | hls green 1>&2
