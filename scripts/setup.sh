@@ -2455,3 +2455,6 @@ curl -L https://github.com/unisonweb/unison/releases/latest/download/ucm-linux.t
 )
 
 agi okular
+
+e ia cursor-flash
+e ia buffer-move

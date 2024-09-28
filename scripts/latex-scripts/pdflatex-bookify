@@ -13,5 +13,6 @@ final-tidy-latex "$last_arg"
 # because fontspec needs xelatex, and this bookify script only works
 # with pdflatex.
 latex-bookify "$last_arg"
+# e:pdflatex-bookify
 
 /usr/bin/pdflatex -interaction nonstopmode "$@"

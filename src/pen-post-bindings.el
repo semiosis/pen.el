@@ -85,7 +85,8 @@
   (define-key pen-map (kbd "M-m w V") #'pen-e-spv-zsh)
 
   (define-key pen-map (kbd "M-m w N") #'spv-new-buffer)
-  (define-key pen-map (kbd "M-m w n") #'sph-new-buffer)
+  (define-key pen-map (kbd "M-m w n") #'spv-new-buffer)
+  ;; (define-key pen-map (kbd "M-m w n") #'pen-e-nw-zsh)
 
   (define-key pen-map (kbd "M-m w O") #'win-swap)
   (define-key pen-map (kbd "M-m w o") #'win-swap)

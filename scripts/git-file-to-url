@@ -52,7 +52,7 @@ bn="$(basename "$fp")"
 ext="${bn##*.}"
 fn="${bn%.*}"
 
-fpd="$(printf -- "%s" "$fp" | u dn)"
+fpd="$(printf -- "%s" "$fp" | pen-ux dn)"
 cd "$fpd"
 fp="$(realpath "$bn" | remove-prefix "$fpd/")"
 

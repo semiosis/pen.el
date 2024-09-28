@@ -388,6 +388,9 @@ older requests with \"done\" status."
 
 (defun pen-clojure-eval-last-sexp ()
   (interactive)
+  ;; (pen-message-no-echo "%s" "Evaluation")
+  ;; (message "%s" "Evaluation")
+  (pen-flash)
   (let ((s (pen-regex-match-string-1 "^(\\([^ ]+\\) " (cider-last-sexp))))
     (cond
      ((string-equal "ns" s)

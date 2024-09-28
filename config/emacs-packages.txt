@@ -2385,3 +2385,4 @@ listen
 ivy-fuz
 shrink-path
 tzc
+cursor-flash

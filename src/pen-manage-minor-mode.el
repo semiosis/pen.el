@@ -77,6 +77,8 @@
         
         (prolog-mode
          (on org-link-minor-mode))
+        (clojure-mode
+         (on org-link-minor-mode))
         
         (universal-sidecar-buffer-mode
          (on org-link-minor-mode))
