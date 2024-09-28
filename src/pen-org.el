@@ -197,6 +197,8 @@ If FILEXT is provided, return files with extension FILEXT instead."
 
 (require 'ox-latex)
 
+(add-to-list 'org-latex-compilers "pdflatex-bookify")
+
 (setq org-latex-pdf-process
       '("%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f" "%latex -interaction nonstopmode -output-directory %o %f"))
 
