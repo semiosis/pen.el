@@ -597,7 +597,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org2e7f69a) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orge633536) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -8337,6 +8337,8 @@ Jesus is One with Almighty God and their will is in perfect alignment. Jesus dem
 
 > **[John 10:30](https://www.biblegateway.com/passage/?search=John%2010%3A30&version=ESV)** - I and the Father are one.
 
+> **[John 5:30](https://www.biblegateway.com/passage/?search=John%205%3A30&version=ESV)** - I can do nothing on my own. As I hear, I judge, and my judgment is just, because I seek not my own will but the will of him who sent me. (ESV)
+
 Father God has been working through Jesus, His Son:
 
 > **[John 14:8-10](https://www.biblegateway.com/passage/?search=John%2014%3A8-10&version=ESV)** - Philip said to him, Lord, show us the Father, and it is enough for us. Jesus said to him, Have I been with you so long, and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, Show us the Father? Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but the Father who dwells in me does his works. (ESV)
@@ -9439,6 +9441,8 @@ Whoever honours Jesus by obeying Him, honours Father God. Whoever hears these wo
 And in obeying Jesus we are performing good works which are works done in faith towards God.
 
 > **[John 5:17-29](https://www.biblegateway.com/passage/?search=John%205%3A17-29&version=ESV)** - But Jesus answered them, My Father is working until now, and I am working. This was why the Jews were seeking all the more to kill him, because not only was he breaking the Sabbath, but he was even calling God his own Father, making himself equal with God. So Jesus said to them, Truly, truly, I say to you, the Son can do nothing of his own accord, but only what he sees the Father doing. For whatever the Father does, that the Son does likewise. For the Father loves the Son and shows him all that he himself is doing. And greater works than these will he show him, so that you may marvel. For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him.</ins> Truly, truly, I say to you, <ins>whoever hears my word and believes him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.</ins> Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. For as the Father has life in himself, so he has granted the Son also to have life in himself. And he has given him authority to execute judgment, because he is the Son of Man. Do not marvel at this, for an hour is coming when all who are in the tombs will hear his voice and come out, <ins>those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment.</ins> (ESV)
+
+-   **[youtube.com: John MacArthur "Jesus is God"](https://www.youtube.com/watch?v=P7yvLm6qsMY):** He is to be obeyed in a way that is due only to God.
 
 
 ### Having faith (living in accordance with the truth, and in relationship with God) is asked of us - faith continues
@@ -13553,7 +13557,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgcc8fb47)
+See: [33.4.1](#org672b4d7)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17088,7 +17092,7 @@ From my perspective, I am very reluctant to believe we have arrived at the point
 
 All things are under Jesus' feet. God fills all who are in Christ Jesus:
 
-> **[Ephesians 1:15-23](https://www.biblegateway.com/passage/?search=Ephesians%201%3A15-23&version=ESV)** - For this reason, because I have heard of your faith in the Lord Jesus and your love toward all the saints, I do not cease to give thanks for you, remembering you in my prayers, that the God of our Lord Jesus Christ, the Father of glory, may give you a spirit of wisdom and of revelation in the knowledge of him, having the eyes of your hearts enlightened, that you may know what is the hope to which he has called you, what are the riches of his glorious inheritance in the saints, and what is the immeasurable greatness of his power toward us who believe, according to the working of his great might that he worked in Christ when he raised him from the dead and seated him at his right hand in the heavenly places, far above all rule and authority and power and dominion, and above every name that is named, <ins>not only in this age but also in the one to come.</ins> And **he put all things under his feet and gave him as head over all things to the church, which is his body, the fullness of him who fills all in all.** (ESV)
+> **[Ephesians 1:15-23](https://www.biblegateway.com/passage/?search=Ephesians%201%3A15-23&version=ESV)** - For this reason, because I have heard of your faith in the Lord Jesus and your love toward all the saints, I do not cease to give thanks for you, remembering you in my prayers, that the God of our Lord Jesus Christ, the Father of glory, may give you a spirit of wisdom and of revelation in the knowledge of him, having the eyes of your hearts enlightened, that you may know what is the hope to which he has called you, what are the riches of his glorious inheritance in the saints, and what is the immeasurable greatness of his power toward us who believe, according to the working of his great might that he worked in Christ when he raised him from the dead and seated him at his right hand in the heavenly places, far above all rule and authority and power and dominion, and above every name that is named, <ins>not only in this age but also in the one to come.</ins> And **he put all things under his feet and gave him as head over all things to the church, which is his body, the fullness of him who fills all [(G3956 panta)](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/) in all [(G3956 pasin)](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/).** (ESV)
 
 My main reasons is there is still a lot of sin, idolatry, and lawlessness in the world and a lot of anti-Jesus sentiment. But I still believe that all things **will be** subjected to Him:
 
@@ -27465,7 +27469,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgcc8fb47)
+See: [33.4.1](#org672b4d7)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
