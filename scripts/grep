@@ -5,4 +5,11 @@ export TTY
 
 set -o pipefail
 
-/bin/grep "$@" | pavs
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if is_tty; then
+    /bin/grep "$@" | pavs
+else
+    /bin/grep "$@"
+fi
+
