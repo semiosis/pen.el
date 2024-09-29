@@ -9,8 +9,8 @@ bilbeorgify_strongs_code() {
     ref="$1"
     # TODO Also do some cleanup, such as removing asterisks from for example (H539 *'aman*)
 
-    word="$(p "$ref" | sed 's/([GH][^ ]* \(.*\))/\1/')"
-    ref="$(p "$ref" | sed 's/(\([GH][^ ]*\) .*)/\1/')"
+    word="$(p "$ref" | sed 's/([GHgh][0-9]*\.\? \(.*\))/\1/')"
+    ref="$(p "$ref" | sed 's/(\([GHgh][0-9]*\)\.\? .*)/\U\1/')"
 
     word="$(p "$word" | sed 's/\*//g')"
     echo "[[strongs:${ref}][($ref $word)]]"
