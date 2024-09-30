@@ -372,9 +372,11 @@ But we must not believe in vain. Rather, we must believe and hold fast to the go
 
 > **[I Corinthians 15:1-2](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A1-2&version=ESV)** - Now I would remind you, brothers, of the gospel I preached to you, which you received, in which you stand, and by which you are being saved, if you hold fast to the word I preached to you—unless you believed in vain. (ESV)
 
-Bonhoeffer says it like this, “Only he who believes is obedient, and only he who is obedient believes.”
+[Dietrich Bonhoeffer](https://www.youtube.com/watch?v=FVVImVBQ_nc) says it like this, “Only he who believes is obedient, and only he who is obedient believes.”
 
 -   **Read:** [gbtseminary.org: Cheap Grace: Bonhoeffer and the Cost of Discipleship - Grace Bible Theological Seminary](https://gbtseminary.org/cheap-grace-bonhoeffer-and-the-cost-of-discipleship/)
+
+-   **Read:** [goodreads.com: The Cost of Discipleship Quotes by Dietrich Bonhoeffer](https://www.goodreads.com/work/quotes/2723088-nachfolge)
 
 We should disobey sin, and present ourselves to God as those alive from the dead, and our members as **instruments of righteousness to God**. We should be practicing righteousness, practicing love and holiness and truth:
 
@@ -459,7 +461,7 @@ Jesus has set me free, and there's no condemnation for those who are in Christ, 
 
 -   **[desiringgod.org: The High Cost of Sexual Sin | Desiring God](https://www.desiringgod.org/interviews/the-high-cost-of-sexual-sin):** I'm trying to explode the doctrine that the battle for obedience is optional because only faith is necessary for salvation. This is very tricky the way words are used here. The battle for obedience is **absolutely necessary** for salvation because it **is** the fight of faith. The **battle for obedience is absolutely necessary for getting to heaven** because **it is** the battle against unbelief. **It is** the fight of faith. There are **not** <ins>two battles</ins>: one to get yourself saved by a single act of faith, and the other to collect rewards by work. There is only **one battle** - it's the one that gets you started, it's the one that gets you there, and it's the fight of faith not works! Faith is what severs the root of covetousness,  misplaced shame, anxiety, lust, envy, and six more before we are done this year. There is one warfare, and it is the warfare of faith.
 
-AMEN!! If only someone had told me this first. Repentance from sin is **absolutely necessary** for salvation.
+AMEN!! If only someone had told me this first. Repentance ([metanoia](https://www.blueletterbible.org/lexicon/g3341/kjv/tr/0-1/)) from sin is **absolutely necessary** for salvation. This is because I don't think it's a separate issue from salvation. We continue to believe the Truth, being washed in the Truth, God's Word, and alongside that our souls are being purified through obedience to the Truth, God's Word. Jesus is the Son of God, the Word of God, the Word of God made flesh. God's spoken Word is the Word of God. Jesus' Words are also the Word. We trust, believe and obey the Word of God, and this repentance is absolutely necessary for salvation.
 
 We must embrace sanctification, and be slaves of God, obeying God, obeying righteousness:
 
@@ -597,7 +599,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb764fdf) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org976a8b1) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -852,7 +854,7 @@ Some people endure great suffering for serving God. Our obedience to God, having
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
-I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, ["God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"](https://youtu.be/iK3tz3LDrb0?t=381)
 
 > **[John 16:27-28](https://www.biblegateway.com/passage/?search=John%2016%3A27-28&version=ESV)** - for the Father himself loves you, because you have loved me and have believed that I came from God. I came from the Father and have come into the world, and now I am leaving the world and going to the Father. (ESV)
 
@@ -1736,6 +1738,8 @@ I believe that among other things I have had to reject or repent from:
 
 -   a spirit of Mormomism
 -   a spirit of Islam
+    -   [youtube.com: How Thomas Aquinas refuted Muhammad and Islam](https://www.youtube.com/watch?v=Vf70jEdwOF0)
+    -   [Summa Contra Gentiles of St. Thomas Aquinas](https://basilica.ca/documents/2016/10/St.%20Thomas%20Aquinas-The%20Summa%20Contra%20Gentiles.pdf)
 -   a spirit of LGBT
 -   a spirit of Hinduism
 -   a spirit of Gnosticism
@@ -2008,6 +2012,10 @@ As a result of being born of the Spirit and subsequent obedience to Jesus' comma
 If you want to really get to know someone then you would learn to walk in their footsteps. Belief must arrive in the heart, not merely the head. There's a confession, an admittance, and a belief in the heart:
 
 > **[Romans 10:9](https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=ESV)** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
+We should definitely confess Jesus to others:
+
+> **[Luke 12:8-9](https://www.biblegateway.com/passage/?search=Luke%2012%3A8-9&version=ESV)** - And I tell you, everyone who acknowledges me before men, the Son of Man also will acknowledge before the angels of God, but the one who denies me before men will be denied before the angels of God. (ESV)
 
 Faith presses on to walk the same way Jesus walked - even to spend the rest of the time on earth obedient to Jesus to know Jesus and the power of His resurrection, becoming like Him in His death (i.e. being faithful to God, stopping sin, exercising righteousness, becoming a scapegoat, even to death like the Apostles, sharing in His sufferings, living has He lived) and His resurrection:
 
@@ -2844,6 +2852,10 @@ I do not affirm all religions. But I affirm **[Romans 10:9](https://www.biblegat
 
 > **[Romans 10:9](https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=ESV)** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
+We should definitely confess Jesus to others:
+
+> **[Luke 12:8-9](https://www.biblegateway.com/passage/?search=Luke%2012%3A8-9&version=ESV)** - And I tell you, everyone who acknowledges me before men, the Son of Man also will acknowledge before the angels of God, but the one who denies me before men will be denied before the angels of God. (ESV)
+
 Everything is in subjection to Jesus, God has left nothing outside Jesus' control.
 
 From our perspective it may look like things are **still being brought into subjection to Him**. It still looks that way to me:
@@ -3200,6 +3212,11 @@ I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that t
 [youtube.com: Love Jesus More Than You Love Anything](https://www.youtube.com/watch?v=n9QP-cqwyAw)
 
 > **[Philippians 3:8](https://www.biblegateway.com/passage/?search=Philippians%203%3A8&version=ESV)** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ (ESV)
+
+
+### Eschatology
+
+-   **I really appreciated Allie's video here:** [youtube.com: Eschatology, End Times and What's to Come  | Ep 134](https://www.youtube.com/watch?v=Yk3Eu0ST5Kk)
 
 
 ### How we should act how we're instructed to act while awaiting the Lord's return
@@ -4320,7 +4337,13 @@ I think a lot of people are literally blinded from being able to see the truth o
 
 > **[II Corinthians 4:4](https://www.biblegateway.com/passage/?search=2%20Corinthians%204%3A4&version=ESV)** - In their case **the god of this world has blinded the minds of the unbelievers**, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God. (ESV)
 
-God I hate living in this world. It's a cesspool.
+[I rebuke AI fiction](http://github.com/semiosis/pen.el/blob/master/docs/journal/16.02.24.org) in Jesus Christ's name and I choose to allow my mind to be conformed to the mind of Christ and I choose to listen to the voice of Christ and follow Christ. All of the generative AI stuff I consider to be unclean.
+
+-   **[Dietrich Bonhoeffer](https://www.cornerstonefrederick.com/blog/2023/9/5/church-and-politicsby-pastor-paul-black):** "I do believe that the church is one of the foundations of our civilization. Without the church performing its sacramental and pastoral functions, the forces of barbarism would be given free sway. **The church cannot remain a positive force if it continues to remove itself from the stress and strain of contemporary events. The church has a prophetic role to play in the world, not just a pastoral role.** <ins>The true church and the world can that always be unfriendly terms.</ins> The sort of friendliness between church and society that we have cultivated in the past is actually the cause of the churches increasing irrelevance."
+
+God I hate living in this world. It's a cesspool. I just feel as though it's on the abyss.
+
+> **[Revelation of John 18:4](https://www.biblegateway.com/passage/?search=Revelation%2018%3A4&version=ESV)** - Then I heard another voice from heaven saying, Come out of her, my people, lest you take part in her sins, lest you share in her plagues; (ESV)
 
 Everyone will give an account of themself to God:
 
@@ -4479,6 +4502,10 @@ However, I also neither like the way in which the names of other so-called gods 
 
 > **[Exodus 23:13](https://www.biblegateway.com/passage/?search=Exodus%2023%3A13&version=ESV)** - Pay attention to all that I have said to you, and make no mention of the names of other gods, nor let it be heard on your lips. (ESV)
 
+Let's have reverence for Jehovah God and serve Him:
+
+> **[Malachi 3:15-18](https://www.biblegateway.com/passage/?search=Malachi%203%3A15-18&version=ESV)** - And now we call the arrogant blessed. <ins>Evildoers</ins> not only prosper but they <ins>put God to the test</ins> and they escape. Then <ins>those who feared the LORD spoke with one another.</ins> The LORD paid attention and heard them, and a book of remembrance was written before him of **those who feared the LORD and esteemed his name.** They shall be mine, says the LORD of hosts, in the day when I make up my treasured possession, and <ins>I will spare them as a man spares his son who serves him.</ins> Then once more you shall see \_the distinction between the righteous and the wicked, between one who serves God and one who does not serve him. (ESV)
+
 These Scriptures refers to Jesus' name:
 
 > **[Matthew 18:20](https://www.biblegateway.com/passage/?search=Matthew%2018%3A20&version=ESV)** - For where two or three are gathered in my name, there am I among them. (ESV)
@@ -4498,7 +4525,7 @@ The JW are right to affirm that we must remember God's name. **[Exodus 3:15](htt
     5  Phonetic Spelling: (yeh-ho-vaw')
     6  Definition: the proper name of the God of Israel
 
-> **[Malachi 3:16](https://www.biblegateway.com/passage/?search=Malachi%203%3A16&version=ESV)** - Then those who feared the LORD spoke with one another. The LORD paid attention and heard them, and a book of remembrance was written before him of those who feared the LORD and esteemed his name. (ESV)
+> **[Malachi 3:16](https://www.biblegateway.com/passage/?search=Malachi%203%3A16&version=ESV)** - Then <ins>those who feared the LORD spoke with one another.</ins> The LORD paid attention and heard them, and a book of remembrance was written before him of those who feared the LORD and esteemed his name. (ESV)
 
 Father God has given Jesus Christ all authority in heaven and on earth. In other words, Jesus Christ is God, just as Jehovah is God and Holy Spirit is God:
 
@@ -4598,6 +4625,36 @@ Servants serve:
 > **[Mark 10:43-45](https://www.biblegateway.com/passage/?search=Mark%2010%3A43-45&version=ESV)** - But it shall not be so among you. But whoever would be great among you must be your servant, and whoever would be first among you must be slave of all. For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many. (ESV)
 
 > **[Matthew 6:25-34](https://www.biblegateway.com/passage/?search=Matthew%206%3A25-34&version=ESV)** - Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they? And which of you by being anxious can add a single hour to his span of life? And why are you anxious about clothing? Consider the lilies of the field, how they grow: they neither toil nor spin, yet I tell you, even Solomon in all his glory was not arrayed like one of these. But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you. Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
+
+
+### We should welcome people who hear Jesus' words and want to learn how to follow Jesus, and we should give them Jesus' words
+
+If anyone claims to be a believer but does not abide in the teaching of Christ, they do not have God, and we should not associate with them.
+We need to cling to Christ's words and teachings and use them to correct our brothers in Christ.
+If there is resistance to Christ's teachings within the church, then that is not good.
+
+We should let people in who want to follow Jesus.
+We should give the cold shoulder to people who do not want to follow Jesus.
+
+If anyone claims to be a believer but doesn't abide in Christ's teachings then don't welcome that person in:
+
+> **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+
+> **[I Timothy 6:1-5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A1-5&version=ESV)** - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled. Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things. **If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing**. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. (ESV)
+
+If anyone claims to be a believer but is an unrepentant sinner then don't allow that person in:
+
+> **[I Corinthians 5:11-13](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A11-13&version=ESV)** - But now I am writing to you not to associate with anyone who bears the name of brother if he is guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler—not even to eat with such a one. For what have I to do with judging outsiders? **Is it not those inside the church whom you are to judge?** God judges those outside. Purge the evil person from among you. (ESV)
+
+-   **Read:** <https://www.desiringgod.org/interviews/avoid-the-unrepentant-but-what-if-theyre-family>
+
+If anyone claims to be a believer but does not agape his brother, they are still in darkness:
+
+> **[I John 2:9](https://www.biblegateway.com/passage/?search=1%20John%202%3A9&version=ESV)** - Whoever says he is in the light and hates his brother is still in darkness. (ESV)
+
+Churches should be teaching Jesus' teachings:
+
+> **[Luke 12:42-49](https://www.biblegateway.com/passage/?search=Luke%2012%3A42-49&version=ESV)** - And the Lord said, Who then is the faithful and wise manager, whom his master will set over his household, to give them their portion of food at the proper time? Blessed is that servant whom his master will find so doing when he comes. Truly, I say to you, he will set him over all his possessions. But if that servant says to himself, My master is delayed in coming, and begins to beat the male and female servants, and to eat and drink and get drunk, the master of that servant will come on a day when he does not expect him and at an hour he does not know, and will cut him in pieces and put him with the unfaithful. And that servant who knew his master's will but did not get ready or act according to his will, will receive a severe beating. But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. I came to cast fire on the earth, and would that it were already kindled! (ESV)
 
 
 ### God definitely disciplines us even if we love Jesus - **every** son he receives
@@ -5639,6 +5696,10 @@ We must also accept that Jesus Christ, God's Only-Begotten Son was raised from t
 
 > **[Romans 10:9](https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=ESV)** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
 
+We should definitely confess Jesus to others:
+
+> **[Luke 12:8-9](https://www.biblegateway.com/passage/?search=Luke%2012%3A8-9&version=ESV)** - And I tell you, everyone who acknowledges me before men, the Son of Man also will acknowledge before the angels of God, but the one who denies me before men will be denied before the angels of God. (ESV)
+
 I believe that trusting Jesus and obedience in the heart towards Jesus is required. Obedience to Jesus is love.
 
 > **[I Corinthians 13:13](https://www.biblegateway.com/passage/?search=1%20Corinthians%2013%3A13&version=ESV)** - So now faith, hope, and love abide, these three; but the greatest of these is love.
@@ -6584,6 +6645,10 @@ If a person has an obedient and believing heart - a heart of faith - towards Jes
     -   This must result in the person accepting forgiveness for sin
 
 > **[Romans 10:9](https://www.biblegateway.com/passage/?search=Romans%2010%3A9&version=ESV)** - because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. (ESV)
+
+We should definitely confess Jesus to others:
+
+> **[Luke 12:8-9](https://www.biblegateway.com/passage/?search=Luke%2012%3A8-9&version=ESV)** - And I tell you, everyone who acknowledges me before men, the Son of Man also will acknowledge before the angels of God, but the one who denies me before men will be denied before the angels of God. (ESV)
 
 I believe that a person does not have any <ins>security</ins> of eternal salvation unless they have in their heart <ins>obedient, believing faith</ins> in Jesus Christ, and even then there is often a race and a journey to receive it.
 
@@ -11479,7 +11544,7 @@ Yeah, I agree with John Piper, for the most part. Loving God is not actually **f
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
-I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, ["God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"](https://youtu.be/iK3tz3LDrb0?t=381)
 
 > **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
@@ -12966,6 +13031,12 @@ Building our lives on Jesus means believing Him and obeying Him:
 
 > **[Matthew 7:24-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A24-27&version=ESV)** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
+If we actually 
+
+> **[John 5:37-40](https://www.biblegateway.com/passage/?search=John%205%3A37-40&version=ESV)** - And the Father who sent me has himself borne witness about me. His voice you have never heard, his form you have never seen, and you do not have his word abiding in you, for you do not believe the one whom he has sent. You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
+
+[youtube.com: How to Find Gold in God's Word: Reading the Bible with Supernatural Help](https://www.youtube.com/watch?v=0lvGW5tw-wA)
+
 If I hear Jesus' commandment to repent from sin, for example, and I obediently repent, then that is walking by faith.
 Since faith comes from hearing the word of Christ - and there faith could come from any part of His teaching.
 So if I try to actually follow Jesus' commandments, and that leads me to believe that Jesus is who He says He is (consider the Apostle Thomas and his slow belief), then when I arrive at a belief that Jesus is who He says He is, the Son of God, and the Christ, the Messiah, the Anointed one, the obedience of one of Jesus commandments leads to more belief and more obedience.
@@ -13557,7 +13628,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org20c17b1)
+See: [33.4.1](#org0d27272)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -13566,6 +13637,48 @@ See: [33.4.1](#org20c17b1)
     unto whom all things were made subject that are in heaven and that
     are on the earth; to whom every creature that hath breath doeth
     service; who cometh as judge of quick and dead; **whose blood God will require of them that are disobedient unto Him.**
+
+
+## Walking in trusting faith in Jesus
+
+I honestly don't know everything and I don't have all the answers. But I think God is sanctifying me through faith. As we hold our faith, willing to do God's will, and trusting Him, we are sanctified - cleaned, washed, and things will become clearer. His spirit sanctifies us. His word sanctifies us. We are sanctified as we hold our faith in Him.
+
+Just keep trusting in, trusting Jesus, believing and obeying and treasuring from the heart and I think things will become clearer. That's what I'm doing.
+
+We trust Jesus (Yeshua), so we accept and treasure His words, so we trust in Him and obey Him out of trust and He is our strength, and song and Yahweh becomes our salvation. In trusting Jesus (Yeshua) we trust Jehovah (Yahweh) who has sent Jesus (Yeshua). It's Jesus Christ who saves us. It's Yahweh who saves us:
+
+> **[Isaiah 12:1-3](https://www.biblegateway.com/passage/?search=Isaiah%2012%3A1-3&version=ESV)** - You will say in that day: I will give thanks to you, O LORD [(H3068 Yhvh)](https://www.blueletterbible.org/lexicon/h3068/kjv/tr/0-1/), for though you were angry with me, your anger turned away, that you might comfort me. Behold, God is my salvation; I will trust [(H982 batach)](https://www.blueletterbible.org/lexicon/h982/kjv/tr/0-1/), and will not be afraid; for the LORD GOD [(H3068 Yhvh)](https://www.blueletterbible.org/lexicon/h3068/kjv/tr/0-1/) is my strength [(H5797 oz)](https://www.blueletterbible.org/lexicon/h5797/kjv/tr/0-1/) and my song [(H2176 zimrath)](https://www.blueletterbible.org/lexicon/h2176/kjv/tr/0-1/), and he has become my salvation [(H3444 yeshuah)](https://www.blueletterbible.org/lexicon/h3444/kjv/tr/0-1/). With joy [(H8342 sason)](https://www.blueletterbible.org/lexicon/h8342/kjv/tr/0-1/) you will draw water [(H4325 mayim)](https://www.blueletterbible.org/lexicon/h4325/kjv/tr/0-1/) from the wells of salvation. (ESV)
+
+> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts [(G1372 dipsaó)](https://www.blueletterbible.org/lexicon/g1372/kjv/tr/0-1/), let him come to me and drink [(G4095 pinó)](https://www.blueletterbible.org/lexicon/g4095/kjv/tr/0-1/). Whoever believes [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive, for as yet the Spirit had not been given, because Jesus was not yet glorified. (ESV)
+
+> **[John 7:38](https://www.biblegateway.com/passage/?search=John%207%3A38&version=ESV)** - The [one] believing in Me as has said the Scripture Rivers out of the belly of him will flow of water living (Interlinear)
+
+God is our #1 treasure. Family in Christ is also treasure - we love one another as ourselves as companded. We must treasure family in Christ. Also God wants  all people to be saved. We are called to agape treasure all people, even our enemies. We want them to be saved too:
+
+> **[Leviticus 19:9-18](https://www.biblegateway.com/passage/?search=Leviticus%2019%3A9-18&version=ESV)** - When you reap the harvest of your land, you shall not reap your field right up to its edge, neither shall you gather the gleanings after your harvest. And you shall not strip your vineyard bare, neither shall you gather the fallen grapes of your vineyard. You shall leave them for the poor and for the sojourner: I am the LORD your God. You shall not steal; you shall not deal falsely; you shall not lie to one another. You shall not swear by my name falsely, and so profane the name of your God: I am the LORD. You shall not oppress your neighbor or rob him. The wages of a hired servant shall not remain with you all night until the morning. You shall not curse the deaf or put a stumbling block before the blind, but you shall fear your God: I am the LORD. You shall do no injustice in court. You shall not be partial to the poor or defer to the great, but in righteousness shall you judge your neighbor. You shall not go around as a slanderer among your people, and you shall not stand up against the life of your neighbor: I am the LORD. You shall not hate your brother in your heart, but you shall reason frankly with your neighbor, lest you incur sin because of him. You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the LORD. (ESV)
+
+Anyway, we should just keep trusting the Lord and maintain a good conscience before God, follow Him faithfully, trust Him and treasure his words and commandments. Love as he loved, walk as he walked. Like Peter on the water, we keep our eyes on Jesus - the eyes of our heart, and God takes care of us:
+
+> **[Matthew 14:28-33](https://www.biblegateway.com/passage/?search=Matthew%2014%3A28-33&version=ESV)** - And Peter answered him, Lord, if it is you, command me to come to you on the water. He said, Come. So Peter got out of the boat and walked on the water and came to Jesus. But when he saw the wind, he was afraid, and beginning to sink he cried out, Lord, save me. Jesus immediately reached out his hand and took hold of him, saying to him, O you of little faith, why did you doubt? And when they got into the boat, the wind ceased. And those in the boat worshiped him, saying, Truly you are the Son of God. (ESV)
+
+> **[I Timothy 1:18-20](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A18-20&version=ESV)** - This charge I entrust to you, Timothy, my child, in accordance with the prophecies previously made about you, that by them you may wage the good warfare, holding faith and a good conscience. By rejecting this, some have made shipwreck of their faith, among whom are Hymenaeus and Alexander, whom I have handed over to Satan that they may learn not to blaspheme. (ESV)
+
+The other thing is, we should put out faith on the Truth in the Bible because dreams and visions are very often lying:
+
+> **[Ezekiel 13:6](https://www.biblegateway.com/passage/?search=Ezekiel%2013%3A6&version=ESV)** - They have seen false visions and lying divinations. They say, Declares the LORD, when the LORD has not sent them, and yet they expect him to fulfill their word. (ESV)
+
+I get lied to in dreams and visions from the devil very often, even through other people. This is why it helps to do a good Bible study. So I trust what God has spoken through Bible:
+
+> **[Ephesians 4:11-14](https://www.biblegateway.com/passage/?search=Ephesians%204%3A11-14&version=ESV)** - And he gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God, to mature manhood, to the measure of the stature of the fullness of Christ, so that we may no longer be children, tossed to and fro by the waves and carried about by every wind of doctrine, by human cunning, by craftiness in deceitful schemes. (ESV)
+
+Spiritual dreams and visions happen, and God can speak to us through a dream, but the devil can also lie to us through a dream, so don't trust all your dreams. Most of the dreams I get I don't believe.
+So this is one reason why we should maintain a good conscience with God, because we don't want to be misled by demons:
+
+> **[I John 3:22-23](https://www.biblegateway.com/passage/?search=1%20John%203%3A22-23&version=ESV)** - and whatever we ask we receive from him, because we keep his commandments and do what pleases him. And this is his commandment, that we believe in the name of his Son Jesus Christ and love one another, just as he has commanded us. (ESV)
+
+> **[I Timothy 1:18-20](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A18-20&version=ESV)** - This charge I entrust to you, Timothy, my child, in accordance with the prophecies previously made about you, that by them you may wage the good warfare, holding faith and a good conscience. By rejecting this, some have made shipwreck of their faith, among whom are Hymenaeus and Alexander, whom I have handed over to Satan that they may learn not to blaspheme. (ESV)
+
+-   **Song:** [youtube.com: Bob Fitts- Jesus Christ Is Lord {Medley} {Hosanna! Music} @time: 5 min 43 sec](https://youtube.com/watch?v=9u5hj4Pdr9M&t=343)
 
 
 ### To be "under the law" is to "rely" on your own perfect obedience to the law for justification, life and salvation
@@ -14464,7 +14577,7 @@ The ones who do not submit to the righteousness of God, but do not accept the lo
 
 > **[Malachi 3:8](https://www.biblegateway.com/passage/?search=Malachi%203%3A8&version=ESV)** - **Will man rob God? Yet you are robbing me.** But you say, How have we robbed you? In your tithes and contributions. (ESV)
 
-> **[Malachi 3:15-18](https://www.biblegateway.com/passage/?search=Malachi%203%3A15-18&version=ESV)** - And **now we call the arrogant blessed. Evildoers not only prosper but they put God to the test and they escape.** Then those who feared the LORD spoke with one another. The LORD paid attention and heard them, and a book of remembrance was written before him of those who feared the LORD and esteemed his name. They shall be mine, says the LORD of hosts, in the day when **I make up my treasured possession, and I will spare them as a man spares his son who serves him.** Then once more you shall see the distinction between the righteous and the wicked, **between one who serves God and one who does not serve him.** (ESV)
+> **[Malachi 3:15-18](https://www.biblegateway.com/passage/?search=Malachi%203%3A15-18&version=ESV)** - And **now we call the arrogant blessed. <ins>Evildoers</ins> not only prosper but they <ins>put God to the test</ins> and they escape.** Then <ins>those who feared the LORD spoke with one another.</ins> The LORD paid attention and heard them, and a book of remembrance was written before him of **those who feared the LORD and esteemed his name.** They shall be mine, says the LORD of hosts, in the day when **I make up my treasured possession, and I will spare them as a man spares his son who serves him.** Then once more you shall see the distinction between the righteous and the wicked, **between one who serves God and one who does not serve him.** (ESV)
 
 God loved us first. We must accept that:
 
@@ -17604,6 +17717,12 @@ I believe what Paul says here is that Christians who observe and follow the Tora
 
 > **[I Kings 11:38](https://www.biblegateway.com/passage/?search=1%20Kings%2011%3A38&version=ESV)** - And if you will listen to all that I command you, and will walk in my ways, and do what is right in my eyes by keeping my statutes and my commandments, as David my servant did, I will be with you and will build you a sure house, as I built for David, and I will give Israel to you.
 
+-   **[youtube.com: Put to Death the Deeds of the Body @time: 44 min 0 sec](https://youtube.com/watch?v=pCvxNfefBy8&t=2640):** Inheriting the world is huge and
+    Therefore, don't worry too much about
+    whether you or God's redeemed Israel (not secular Israel) will one day inherit
+    Israel, which they will, along with the
+    world.
+
 
 # Whoever puts their faith in Jesus, puts their faith in God
 
@@ -18149,6 +18268,48 @@ Jesus Christ has the name above all names. Jesus Christ is Lord!
 Jesus Christ is Jehovah.
 Jesus Christ is Immanuel.
 AMEN!!
+
+
+### A study on the pronunciation of `Yhvh`, the proper name of the God of Israel
+
+-   **[biblehub.com 3-16.htm: Malachi 3:16 Interlinear: Then have those fearing Jehovah spoken one to another, And Jehovah doth attend and hear, And written is a book of memorial before Him Of those fearing Jehovah, And of those esteeming His name.](https://biblehub.com/interlinear/malachi/3-16.htm):** Then spoke those who feared Yahweh one to another and listened Yahweh and heard [them] so was written a book of remembrance before Him for those who fear Yahweh and who meditate on His name
+
+     1  227  1696             3372             3068        376  854
+     2  ’āz  niḏ·bə·rū        yir·’ê           Yah·weh     ’îš  ’eṯ-
+     3  אָ֧ז   נִדְבְּר֛וּ            יִרְאֵ֥י             יְהוָ֖ה        אִ֣ישׁ  אֶת־
+     4  Then spoke            those who feared Yahweh      one  to
+     5  Adv  V‑Nifal‑Perf‑3cp Adj‑mpc          N‑proper‑ms N‑ms Prep
+     6  
+     7    7453          7181                              3068
+     8    rê·‘ê·hū;     way·yaq·šêḇ                       Yah·weh
+     9  ､ רֵעֵ֑הוּ        ､ וַיַּקְשֵׁ֤ב                             יְהוָה֙
+    10    another       and listened                      Yahweh
+    11    N‑msc | 3ms   Conj‑w | V‑Hifil‑ConsecImperf‑3ms N‑proper‑ms
+    12  
+    13  8085                            3789
+    14  way·yiš·mā‘,                    way·yik·kā·ṯêḇ
+    15  וַיִּשְׁמָ֔ע                           וַ֠יִּכָּתֵב
+    16  and heard [them]                so was written
+    17  Conj‑w | V‑Qal‑ConsecImperf‑3ms Conj‑w | V‑Nifal‑ConsecImperf‑3ms
+    18  
+    19  5612   2146           6440                 3372
+    20  sê·p̄er zik·kā·rō·wn   lə·p̄ā·nāw            lə·yir·’ê
+    21  סֵ֣פֶר    זִכָּר֤וֹן          לְפָנָיו֙                לְיִרְאֵ֣י
+    22  a book of remembrance before Him           for those who fear
+    23  N‑msc  N‑ms           Prep‑l | N‑cpc | 3ms Prep‑l | Adj‑mpc
+    24  
+    25    3068        2803                                8034
+    26    Yah·weh,    ū·lə·ḥō·šə·ḇê                       šə·mōw.
+    27  ､ יְהוָ֔ה        וּלְחֹשְׁבֵ֖י                            . שְׁמֽוֹ׃
+    28    Yahweh      and who meditate                    on His name
+    29    N‑proper‑ms Conj‑w, Prep‑l | V‑Qal‑Prtcpl‑mpc   N‑msc | 3ms
+
+Consider that God's 
+
+-   **[ὄνομα ónoma, on'-om-ah](https://www.blueletterbible.org/lexicon/g3686/kjv/tr/0-1/):** from a presumed derivative of the base of G1097 (compare G3685); a "name" (literally or figuratively) (authority, character):—called, (+ sur-)name(-d).
+
+-   [youtube.com: Where did the name "Jesus" come from?](https://www.youtube.com/watch?v=rtvtD3cXIyU)
+-   [youtube.com: Is the name of God pronounced Yehovah?](https://www.youtube.com/watch?v=SxCQXWuZ9Ko)
 
 
 ### The Mosaic law is not abolished but Jesus fulfilled it like a prophesy
@@ -19399,7 +19560,7 @@ Yeah, I agree with John Piper, for the most part. Loving God is not actually **f
 
 As I understand it, **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** isn't saying that God's commandments are universally unburdensome to all people. It's saying that when we love God then keeping His commandments is unburdensome. If we're struggling with keeping the commandments of God and struggling with sin then we should make Him our number one love heart's desire and treasure and seek Him first with all our heart and we will be able to find His commandments unburdensome! It's true.
 
-I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, "God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"
+I feel like I could still say, **"Loving God is obedience to God,"** but I would rather rephrase it as, ["God in His love gifted me to be able to love Him back and live. I can see in retrospect He had been working in my life and it's awesome and magnificent and I just want to cherish and obey God now, and God made the way for me to do that!"](https://youtu.be/iK3tz3LDrb0?t=381)
 
 > **[I John 5:2-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A2-3&version=ESV)** - By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that **we keep his commandments. And his commandments are not burdensome.**
 
@@ -27471,7 +27632,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org20c17b1)
+See: [33.4.1](#org0d27272)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -34402,6 +34563,38 @@ My sleep has in recent times become highly disrupted as I've been bombarded with
 -   **[youtube.com: How to Seek the Holy Spirit @time: 16 min 59 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=1019):** He is the spirit of Truth according to **[John 14:17](https://www.biblegateway.com/passage/?search=John%2014%3A17&version=ESV)**, **[John 15:26](https://www.biblegateway.com/passage/?search=John%2015%3A26&version=ESV)**, **[John 16:13](https://www.biblegateway.com/passage/?search=John%2016%3A13&version=ESV)**, and He brings to our minds whatever truth we need, little or much. He will bring it to your mind. <ins>All the forces of darkness will seek to confuse you and obscure the light of truth in that hour.</ins> All the proportions of power in this world will appear to make God look distant, small, ineffective — like nothing. That is the goal of Satan and sin: to make God look useless and worthless. **The work of the Holy Spirit in that hour — the work of the Spirit of truth — is to rest upon you with whatever measure of truth you will need in order to be faithful.**
 
 AMEN, John Piper. Yup, this is my experience too. God is faithful though even when I am unfaithful.
+
+> **[Romans 8:20-21](https://www.biblegateway.com/passage/?search=Romans%208%3A20-21&version=ESV)** - For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. (ESV)
+
+Thanks to John Piper for helping me to maintain perspective on suffering, even for struggling against sin:
+
+> **[Romans 8:16-17](https://www.biblegateway.com/passage/?search=Romans%208%3A16-17&version=ESV)** - The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+
+-   **[youtube.com: Put to Death the Deeds of the Body @time: 55 min 28 sec](https://youtube.com/watch?v=pCvxNfefBy8&t=3328):** The global context of my
+    suffering is that he says, "all creation is
+    awaiting my coming out into
+    sonship". Until you are manifested,
+    creation's holding back, and when you are
+    manifested creation will say, "all right,
+    here we come." And all the futility of the
+    natural world will be removed. All
+    the horrors of of natural calamities
+    will be taken away. But that's all
+    waiting until God does his redemptive
+    work on you.
+    
+    Aven though it may seem strange to you
+    that if a person comes to you with
+    suffering that you'd want to help them
+    get into a global context, maybe do it at
+    a better time. Like right now we're doing
+    it so that when you go home and find
+    some horrible thing has happened, you
+    will be able not just to deal with it in
+    some little microcosm of your life and
+    how God works everything together for
+    your good, but that it's part of
+    something absolutely huge.
 
 -   **Read:** [desiringgod.org: How to Seek the Holy Spirit | Desiring God](https://www.desiringgod.org/messages/how-to-seek-the-holy-spirit)
 
