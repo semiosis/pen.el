@@ -15,7 +15,61 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 This is a short preview of where I'm at with my theology. I don't claim to know everything or to have perfect theology:
 
-    1  If we believe on Yeshua's (Jesus's) name it's typically the initial act of obedience of a Christian, Jesus having commanded us to believe on His name as Son of God, Christ, Messiah as foretold by the prophets. I'm quite sure trust, obedience, belief and faith are not really separate things when it comes to believing the Word of God, and if a person has put their trust in Jesus then they've done something which is in the will of God. Our faith and obedience are supposed to increase as we are sanctified. Trust, belief and obedience, and even agape and knowledge of God when they are settled in the heart is what God sees and God is our justifier, and He justifies the one who puts their faith/trust in Jesus Christ. We believe by faith that we are justified by the blood of Jesus and just get to serving God with agape love proceeding from a good conscience having believed the Gospel and placed their faith in Christ. Christ died for our sins according to the Scriptures, He was buried, He was raised on the third day according to the Scriptures, and He appeared to many eye-witnesses. In this way did God agape love (treasure/value) the world, that He gave His Only-Begotten Son that everyone who is trusting/believing in Him may not perish, but may have life everlasting which is to be reconciled to our Creator and His Son, in relationship with God forever, never perishing nor being cut off from our source of life and all that is good. Agape love is a treasuring/valuing love and God the Father and Jesus God the Son should be our first agape love, and those in the family of Christ we must also agape love, and our spouses we must agape love and we are even called to agape all people, but we're supposed to have no agape for this world. Agape-loving our neighbour as ourself includes not bearing a grudge against our neighbour and not taking vengeance - it's loving as we have been loved and forgiven by God through Jesus, passing the agape love and mercy forwards. We move forward serving God with hope to see His glory. Obedience is in the heart, along with belief in the Truth and understanding of the gospel. Obedience can exist without work. Jesus said, "The spirit is indeed willing but the flesh is weak." The law can also be followed by faith where it's a matter of seeking praise from God and not from men. Our faith should be modelled on Abraham's faith. We're supposed to have joy in our obedience to God. We're supposed to go from agapeing darkness to agapeing God's light, and into walking in the light, walking in God's will, and we're supported by God's Spirit as we are doing this.
+     1  If we believe on Yeshua's (Jesus's) name it's typically the initial act of
+     2  obedience of a Christian, Jesus having commanded us to believe on His name as
+     3  Son of God, Christ, Messiah as foretold by the prophets.
+     4  
+     5  Trust, obedience, belief and faith are not really separate things when it
+     6  comes to believing the Word of God in the heart, and if a person has put their
+     7  trust in Jesus then they've done something which is in the will of God.
+     8  
+     9  Our faith and obedience are supposed to increase as we are sanctified.
+    10  
+    11  Trust, belief and obedience, and even agape and knowledge of God when they are
+    12  settled in the heart is what God sees and God is our justifier, and He
+    13  justifies the one who puts their faith/trust in Jesus Christ.
+    14  
+    15  We believe by faith that we are justified by the blood of Jesus and just get
+    16  to serving God with agape love proceeding from a good conscience having
+    17  believed the Gospel and placed out faith in Christ.
+    18  
+    19  Christ died for our sins according to the Scriptures, He was buried, He was
+    20  raised on the third day according to the Scriptures, and He appeared to many
+    21  eye-witnesses.
+    22  
+    23  In this way did God agape love (treasure/value) the world, that He gave His
+    24  Only-Begotten Son that everyone who is trusting/believing in Him may not
+    25  perish, but may have life everlasting which is to be reconciled to our Creator
+    26  and His Son, in relationship with God forever, never perishing nor being cut
+    27  off from our source of life and all that is good.
+    28  
+    29  Agape love is a treasuring/valuing love and God the Father and Jesus God the
+    30  Son should be our first agape love, and those in the family of Christ we must
+    31  also agape love, and our spouses we must agape love and we are even called to
+    32  agape all people, but we're supposed to have no agape for this world.
+    33  
+    34  Agape-loving our neighbour as ourself includes not bearing a grudge against
+    35  our neighbour and not taking vengeance - it's loving as we have been loved and
+    36  forgiven by God through Jesus, passing the agape love and mercy forwards.
+    37  
+    38  We move forward serving God with hope to see His glory.
+    39  
+    40  Obedience is in the heart, along with belief in the Truth and understanding of
+    41  the gospel.
+    42  
+    43  Obedience can exist without work.
+    44  
+    45  Jesus said, "The spirit is indeed willing but the flesh is weak." The law can
+    46  also be followed by faith where it's a matter of seeking praise from God and
+    47  not from men.
+    48  
+    49  Our faith should be modelled on Abraham's faith.
+    50  
+    51  We're supposed to have joy in our obedience to God.
+    52  
+    53  We're supposed to go from agapeing darkness to agapeing God's light, and into
+    54  walking in the light, walking in God's will, and we're supported by God's
+    55  Spirit as we are doing this.
 
 We serve the Only True God, the Most High God, Jehovah and Jesus Christ who He has sent - the same God, and we are found in Christ Jesus:
 
@@ -599,7 +653,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdce7761) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1ed0b78) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -4772,6 +4826,26 @@ Even Paul shows that in obeying Jesus, we <ins>walk by the Spirit</ins>:
 > **[Galatians 5:13-17](https://www.biblegateway.com/passage/?search=Galatians%205%3A13-17&version=ESV)** - For you were called to freedom, brothers. Only do not use your freedom as an opportunity for the flesh, but **through love serve one another. For the whole law is fulfilled in one word: You shall love your neighbor as yourself.** But if you bite and devour one another, watch out that you are not consumed by one another. But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For <ins>the desires of the flesh are against the Spirit</ins>, and the desires of the Spirit are against the flesh, for <ins>these are opposed to each other</ins>, to keep you from doing the things you want to do. (ESV)
 
 **Walking** by the Spirit is being **led** by the Spirit is being obedient to Jesus.
+
+-   **[youtube.com: If We Have the Spirit, Why Commands? Galatians 5:22-26, Part 3 @time: 14 min 38 sec](https://youtube.com/watch?v=XiJMREBWRn8&t=878):** Don't be conceited.
+    Don't provoke one another.
+    Don't envy, but rather keep in step with the Spirit and the Spirit will
+    incline you to Christ and who
+    and enable you to remember that you are
+    justified by faith and not by law-keeping
+    by which you can show yourself
+    better than somebody. Faith is a great
+    leveler; It's so humble and
+    dependent and it enables you to see that
+    this kind of life here is
+    self-exalting which is exactly the
+    opposite of what walking according to
+    the spirit does because walking
+    according to the holy spirit is walking
+    in love and love humbles itself to serve
+    others, not exalt ourselves above them.
+
+Amen, John Piper.
 
 
 ### You cannot serve God, and also be yoked to money
@@ -13696,7 +13770,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org39e4e90)
+See: [33.4.1](#org476fae8)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -26957,7 +27031,9 @@ God keeps us from stumbling along the way:
 
 Fulfilling the requirement of the law is required of us by God. God judges the secrets of men by Christ Jesus.
 
-> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
+
+-   **Song:** [youtube.com: Delirious? - Investigate {Live}](https://www.youtube.com/watch?v=dZE_1sJOpNw)
 
 
 ### These people performed dead works, and never obeyed Jesus
@@ -27709,7 +27785,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org39e4e90)
+See: [33.4.1](#org476fae8)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
