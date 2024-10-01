@@ -2454,7 +2454,14 @@ curl -L https://github.com/unisonweb/unison/releases/latest/download/ucm-linux.t
 ./ucm
 )
 
+# Since last docker commit:
+
 agi okular
 
 e ia cursor-flash
 e ia buffer-move
+
+agi dict
+
+# Dictionary and definitions
+sudo apt install dictd dict-gcide
