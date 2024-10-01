@@ -599,7 +599,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org0c1af04) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org458850e) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -610,7 +610,13 @@ The gospel in a nutshell:
 The general order of salvation from what I can dilvulge from **Acts 26** and **Acts 28**:
 
 -   See with their eyes
+    -   **[II Corinthians 4:6](https://www.biblegateway.com/passage/?search=2%20Corinthians%204%3A6&version=ESV)** - For God, who said, Let light shine out of darkness, has shone in our hearts to give the light of the knowledge of the glory of God in the face of Jesus Christ. (ESV)
+    -   **[Isaiah 42:6-7](https://www.biblegateway.com/passage/?search=Isaiah%2042%3A6-7&version=ESV)** - I am the LORD; I have called you in righteousness; I will take you by the hand and keep you; I will give you as a covenant for the people, a light for the nations, to open the eyes that are blind, to bring out the prisoners from the dungeon, from the prison those who sit in darkness. (ESV)
+    -   **[Luke 4:18-19](https://www.biblegateway.com/passage/?search=Luke%204%3A18-19&version=ESV)** - The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim **liberty to the captives and recovering of sight to the blind**, to set at liberty those who are oppressed, to proclaim the year of the Lord's favor. (ESV)
+    -   **[John 8:12](https://www.biblegateway.com/passage/?search=John%208%3A12&version=ESV)** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life. (ESV)
 -   Hear with their ears
+    -   **[Matthew 11:15](https://www.biblegateway.com/passage/?search=Matthew%2011%3A15&version=ESV)** - He who has ears to hear, let him hear. (ESV)
+    -   **[Romans 10:17](https://www.biblegateway.com/passage/?search=Romans%2010%3A17&version=ESV)** - So faith comes from hearing, and hearing through the word of Christ. (ESV)
 -   Understand with their heart
     -   **[Romans 10:10](https://www.biblegateway.com/passage/?search=Romans%2010%3A10&version=ESV)** - For with the heart one believes and is justified, and with the mouth one confesses and is saved. (ESV)
 -   Turn from darkness to light
@@ -3025,6 +3031,10 @@ We should disobey sin, and present ourselves to God as those alive from the dead
 
 
 ### We become obedient to Jesus
+
+The righteous try to be obedient. They make mistakes sometimes, they mess up sometimes but they return to God with the fear of God (they repent):
+
+> **[Proverbs 24:15-18](https://www.biblegateway.com/passage/?search=Proverbs%2024%3A15-18&version=ESV)** - Lie not in wait as a wicked man against the dwelling of the righteous; do no violence to his home; for **the righteous falls seven times and rises again**, but the wicked stumble in times of calamity. Do not rejoice when your enemy falls, and let not your heart be glad when he stumbles, lest the LORD see it and be displeased, and turn away his anger from him. (ESV)
 
 > John Piper - "Mercy means that **our obedience doesn't have to be perfect, it has to be penitent**."
 
@@ -13684,7 +13694,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org8aac921)
+See: [33.4.1](#orge9e2012)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -27697,7 +27707,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org8aac921)
+See: [33.4.1](#orge9e2012)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
