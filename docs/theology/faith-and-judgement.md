@@ -539,7 +539,7 @@ We're saved and rescued from idolatry and from other lawlessness, and in order t
 
 > **[Ezekiel 36:25-27](https://www.biblegateway.com/passage/?search=Ezekiel%2036%3A25-27&version=ESV)** - I will sprinkle clean water on you, and you shall be clean from all your uncleannesses, and from all your idols I will cleanse you. And I will give you a new heart, and a new spirit I will put within you. And I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put my Spirit within you, and cause you to walk in my statutes and be careful to obey my rules. (ESV)
 
--   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
+-   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
     that ye have believed on Him that raised our Lord Jesus Christ from
     the dead and gave unto him glory and a throne on His right hand;
@@ -599,7 +599,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org458850e) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdce7761) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1779,7 +1779,7 @@ I have also had to:
 > 
 > I don't need to prove myself to men, as God sees the heart, but I have my relationship with God:
 > 
-> **[I Chronicles 29:17](https://www.biblegateway.com/passage/?search=1%20Chronicles%2029%3A17&version=ESV)** - **I know, my God, that you test the heart and have pleasure in uprightness.** In the uprightness of my heart I have freely offered all these things, and now I have seen your people, who are present here, offering freely and joyously to you. (ESV)
+> -   **[I Chronicles 29:17](https://www.biblegateway.com/passage/?search=1%20Chronicles%2029%3A17&version=ESV)** - **I know, my God, that you test the heart and have pleasure in uprightness.** In the uprightness of my heart I have freely offered all these things, and now I have seen your people, who are present here, offering freely and joyously to you. (ESV)
 > 
 > So through obedience to the gospel, I came into the light, I pleaded guilty, I made testimony of Jesus, etc. <ins>"whoever would save his life will lose it, but whoever loses his life for my sake will find it."</ins> This is Biblical gospel teaching, that through faith in Jesus we may be saved, and I disagree with the Mormans' interpretation.
 > 
@@ -2575,7 +2575,7 @@ In Christ Jesus, through faith in Him (through trusting Him, believing Him, beli
 
 Believing in your heart is an initial act of obedience before continuing in the teaching of Christ. If we believe in Him we have obeyed Him, but belief doesn't end there:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me. (NASB)
 
 It's imperative that as we go ahead, we **must** abide in the teaching of Christ, or we won't have God (Jehovah God), and God is love and love comes from God, so we need to abide in Christ's teachings, by belief and by obedience. For example, in **[Mark 10:18](https://www.biblegateway.com/passage/?search=Mark%2010%3A18&version=ESV)**, Jesus affirmed that God is Good. Therefore when we read this, we must also be sanctified by this truth, affirming and coming into agreement that God is Good. Also, Jesus commanded us to love one another as He loved us **[John 13:34-35](https://www.biblegateway.com/passage/?search=John%2013%3A34-35&version=ESV)**:
 
@@ -3097,7 +3097,7 @@ These should really go hand in hand:
 
 We ***endeavour*** to be justified in Christ - in Christ means abiding in Christ - through faith; trusting, believing, obedient faith:
 
-> **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Jesus Christ**, so we also have believed (G4100 **pisteuo**) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
+> **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Jesus Christ**, so we also have believed [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
 
 Abraham's **trusting** faith was counted to him as righteousness. I guess it was counted because he was **fully conviced**, and trusting God. This same justification **will be** counted to those who trust in God who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification:
 
@@ -3996,7 +3996,7 @@ The faith Paul talks about is faith towards God. The faith towards God believes 
 
 > I believe that anyone who trusts (is trusting) in the Lord Jesus Christ for their salvation, even they have no works, but only a trusting heart, believing what Jesus said, and putting their hope in Jesus for their salvation, <ins>repentant and willing to obey (obedient),</ins> theoretically are to be in Christ if God does it. I consider that obedience to Jesus and turning away from sin is essential to be found in Him. If someone dies while trusting in Him they will live. If someone trusts in Him while they live they will never die.
 
--   **Song:** [Hillsong+Delirious? - History Maker - YouTube](https://www.youtube.com/watch?v=jM8M_xgKbrc)
+-   **Song:** [Hillsong+Delirious? - History Maker](https://www.youtube.com/watch?v=jM8M_xgKbrc)
 
 
 ## Eternal security for those who follow Jesus
@@ -5047,7 +5047,7 @@ We testify about the Light, so that through our testimony, others might believe.
 
 To anyone who receives Jesus, even those who believe on His name, Jesus has given the right to become children of God, to be born of God.
 
-> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
+> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
 > **[I John 1:6-7](https://www.biblegateway.com/passage/?search=1%20John%201%3A6-7&version=ESV)** - If we say we have fellowship with him while we walk in darkness, we lie and do not practice the truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
 
@@ -5198,11 +5198,11 @@ The word for 'believe' which is used in the New Testament is the verb for faith 
 
 Have faith in God and have faith in Jesus:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me.
 
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 I think faith is more like hopeful/trusting belief that results in action (walking by faith).
 
@@ -5785,7 +5785,7 @@ It's those that believe in him (trust Him, receive Him, <ins>expect to receive H
 
 We <ins>must honour Jesus Christ in our bodies and in our lives</ins> - fruitful labour, so that we can be confident with [John 5:24](https://www.biblegateway.com/passage/?search=John%205%3A24&version=ESV). AMEN!! We must be slaves of righteousness, leading to sanctification, which at its end is eternal life:
 
-> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes (G4100 **pisteuo**) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
 
 I believe [John 5:24](https://www.biblegateway.com/passage/?search=John%205%3A24&version=ESV) is a true statement and that it should not be read outside of the words Jesus said directly before it (`Whoever does not honor the Son does not honor the Father who sent him`).
 
@@ -5851,7 +5851,7 @@ From our perspective it may look like things are **still being brought into subj
 
 > **[Hebrews 2:5-8](https://www.biblegateway.com/passage/?search=Hebrews%202%3A5-8&version=ESV)** - Now it was not to angels that God subjected the world to come, of which we are speaking. It has been testified somewhere, What is man, that you are mindful of him, or the son of man, that you care for him? You made him for a little while lower than the angels; you have crowned him with glory and honor, putting everything in subjection under his feet. Now in putting **everything in subjection to him**, <ins>he left nothing outside his control</ins>. At present, we do not yet see everything in subjection to him.
 
-Anyway, I **know** that God still makes apostles and prophetic people and is still working on the earth.
+Anyway, I am very **confident** that God still makes apostles and I **know** the 'prophetic' is a reality. God certainly still appoints people with spiritual gifts and is still working on the earth through people in the power of the Holy Spirit.
 Cessationists are quite simply incorrect.
 
 However apostolic and prophetic people have the truth revealed to them. These roles are service roles though for helping the body of Christ grow in the knowledge of the Son of God, so there's no bragging, just serving one another, as we have different roles in the body of Christ:
@@ -6739,7 +6739,7 @@ And I also think people have free will to sabotage their race.
 
 Clearly 'believe' means also 'to be obedient' to because the ones that <ins>follow Jesus</ins> (which means obey His commandments) are the ones who are counted as believing (**pisteuo**):
 
-> **[John 10:26-38](https://www.biblegateway.com/passage/?search=John%2010%3A26-38&version=ESV)** - but you do not believe (G4100 **pisteuo**) because you are not part of my flock. My sheep <ins>hear my voice,</ins> and <ins>I know them, and they follow me.</ins> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
+> **[John 10:26-38](https://www.biblegateway.com/passage/?search=John%2010%3A26-38&version=ESV)** - but you do not believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) because you are not part of my flock. My sheep <ins>hear my voice,</ins> and <ins>I know them, and they follow me.</ins> I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one.
 
 We come into walking in the will of God:
 
@@ -7371,7 +7371,7 @@ We have **always obeyed** - God works through us:
 
 We must honour Jesus Christ:
 
-> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes (G4100 **pisteuo**) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
 
 I believe [John 5:24](https://www.biblegateway.com/passage/?search=John%205%3A24&version=ESV) is a true statement and that it should not be read outside of the words Jesus said directly before it (`Whoever does not honor the Son does not honor the Father who sent him`).
 
@@ -7421,7 +7421,7 @@ Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did G
 
 It's faith in the heart which we need; obedience to Jesus Christ and belief in Jesus Christ in the heart, and belief and obedience to God who has <ins>raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification</ins>.
 
-> **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes (G4100 **pisteuo**) in him should not perish but have eternal life. (ESV)
+> **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him should not perish but have eternal life. (ESV)
 
     1  :  4100  pisteuo  pist-yoo'-o
     2  
@@ -7863,7 +7863,7 @@ We're under the <ins>law of Christ,</ins> and that shouldn't be a heavy burden:
 
 You **must** obey Jesus, and that is choosing **light** and choosing **agape love** towards God and people and not towards the world or worldly things:
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 > **[Matthew 23:11-33](https://www.biblegateway.com/passage/?search=Matthew%2023%3A11-33&version=ESV)** - <ins>The greatest among you shall be your servant.</ins> Whoever exalts himself will be humbled, and whoever humbles himself will be exalted. But <ins>woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in people's faces. For you neither enter yourselves nor allow those who would enter to go in.</ins> Woe to you, scribes and Pharisees, hypocrites! For you travel across sea and land to make a single proselyte, and when he becomes a proselyte, you make him twice as much a child of hell as yourselves. Woe to you, blind guides, who say, If anyone swears by the temple, it is nothing, but if anyone swears by the gold of the temple, he is bound by his oath. You blind fools! For which is greater, the gold or the temple that has made the gold sacred? And you say, If anyone swears by the altar, it is nothing, but if anyone swears by the gift that is on the altar, he is bound by his oath. You blind men! For which is greater, the gift or the altar that makes the gift sacred? So whoever swears by the altar swears by it and by everything on it. And whoever swears by the temple swears by it and by him who dwells in it. And whoever swears by heaven swears by the throne of God and by him who sits upon it. Woe to you, scribes and Pharisees, hypocrites! For you tithe mint and dill and cumin, and have **neglected** the weightier matters of the law: **justice and mercy and faithfulness**. These you ought to have done, without neglecting the others. You blind guides, straining out a gnat and swallowing a camel! Woe to you, scribes and Pharisees, hypocrites! For you clean the outside of the cup and the plate, but inside they are full of greed and self-indulgence. You blind Pharisee! First <ins>clean the inside of the cup and the plate, that the outside also may be clean.</ins> Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which outwardly appear beautiful, but within are full of dead people's bones and all uncleanness. So you also outwardly appear righteous to others, but within you are **full of hypocrisy and lawlessness**. Woe to you, scribes and Pharisees, hypocrites! For you build the tombs of the prophets and decorate the monuments of the righteous, saying, If we had lived in the days of our fathers, we would not have taken part with them in shedding the blood of the prophets. Thus you witness against yourselves that you are sons of those who murdered the prophets. Fill up, then, the measure of your fathers. You serpents, you brood of vipers, <ins>how are you to escape being sentenced to hell?</ins> (ESV)
 
@@ -7970,7 +7970,7 @@ We strive to enter through Jesus who is the door:
 
 Jesus' sheep follow Jesus. Jesus knows them:
 
-> **[John 10:25-28](https://www.biblegateway.com/passage/?search=John%2010%3A25-28&version=NASB)** - Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me, but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. But you do not believe (G4100 **pisteuo**) because you are not of My sheep. My sheep hear My voice, and I know them, and they follow (G190 akoloutheo) Me; and I give eternal life to them, and they will never perish; and no one will snatch them out of My hand. (NASB)
+> **[John 10:25-28](https://www.biblegateway.com/passage/?search=John%2010%3A25-28&version=NASB)** - Jesus answered them, I told you, and you do not believe. The works that I do in my Father's name bear witness about me, but you do not believe because you are not part of my flock. My sheep hear my voice, and I know them, and they follow me. But you do not believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) because you are not of My sheep. My sheep hear My voice, and I know them, and they follow (G190 akoloutheo) Me; and I give eternal life to them, and they will never perish; and no one will snatch them out of My hand. (NASB)
 
     1  :  190  akoloutheo  ak-ol-oo-theh'-o
     2  
@@ -8107,7 +8107,7 @@ Jesus is the Lamb of God.
 
 We must receive the redemption that is **in** Christ Jesus <ins>through faith</ins>:
 
-> **[Romans 3:22-25](https://www.biblegateway.com/passage/?search=Romans%203%3A22-25&version=ESV)** - the righteousness of God through faith <ins>(G4102 **pistis**) in Jesus Christ</ins> for <ins>all who believe (G4100 **pisteuo**).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
+> **[Romans 3:22-25](https://www.biblegateway.com/passage/?search=Romans%203%3A22-25&version=ESV)** - the righteousness of God through faith <ins>[(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in Jesus Christ</ins> for <ins>all who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/).</ins> For there is no distinction: for all have sinned and fall short of the glory of God, and are justified by his grace as a gift, through the redemption that is in Christ Jesus, whom God displayed publicly as a propitiation in His blood through faith. This was to demonstrate His righteousness, because in the forbearance of God He passed over the sins previously committed;
 
 The redemption in Christ Jesus is a gift, and
 is a substitutionary atonement that is
@@ -9318,6 +9318,8 @@ Believing Father God Jehovah, loving Him, obeying His commandments, loving and o
 
 > **[John 9:5](https://www.biblegateway.com/passage/?search=John%209%3A5&version=ESV)** - As long as I am in the world, I am the light of the world. (ESV)
 
+-   **Song:** [youtube.com: Delirious? - Everything {Live}](https://www.youtube.com/watch?v=QYSD0NOv0co)
+
 
 ### The Door
 
@@ -9466,7 +9468,7 @@ We must obey His commandments to walk in the same way He walked so we get to kno
 
 > **[John 8:48-49](https://www.biblegateway.com/passage/?search=John%208%3A48-49&version=ESV)** - The Jews answered him, Are we not right in saying that you are a Samaritan and have a demon? Jesus answered, I do not have a demon, but I honor my Father, and you dishonor me.
 
-> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes (G4100 **pisteuo**) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. <ins>Whoever does not honor the Son does not honor the Father who sent him</ins>. Truly, truly, I say to you, whoever <ins>hears my word and believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who sent me has eternal life</ins>. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed from death to life.
 
 
 ### We are implored to keep Jesus' words
@@ -9847,7 +9849,7 @@ In order to know God we must love one another in the way that God has loved us:
 
 You must obey Jesus:
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 We **must** have a response of love for Jesus:
 
@@ -9863,7 +9865,7 @@ In believing and obeying Jesus, we have the Son:
 
 We must obey God. We have faith in God who was delivered up for our trespasses and raised for our justification, and having faith in God is having faith in His Son which is believing in and obeying Jesus Christ:
 
-> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe (G4100 **pisteuo**) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
 We must obey Jesus' commandments to know Jesus, just as Jesus obeyed Father God's commandments, and knows Father God:
 
@@ -9994,7 +9996,7 @@ Absolutely:
 
 > **[Ephesians 5:5-7](https://www.biblegateway.com/passage/?search=Ephesians%205%3A5-7&version=ESV)** - For you may be sure of this, that everyone who is sexually immoral or impure, or who is covetous (that is, an idolater), has no inheritance in the kingdom of Christ and God. Let no one deceive you with empty words, for because of these things the wrath of God comes upon the sons of disobedience. Therefore do not associate with them;
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 > **[Colossians 3:23-25](https://www.biblegateway.com/passage/?search=Colossians%203%3A23-25&version=ESV)** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
 
@@ -10149,7 +10151,7 @@ We call upon the Lord to be saved. And everyone needs saving.
 
 Confessing that Jesus is Lord is becoming obedient to Him:
 
-> **[Romans 10:8-9](https://www.biblegateway.com/passage/?search=Romans%2010%3A8-9&version=NASB)** - But what does it say? “The word is near you, in your mouth and in your heart”&#x2013; that is, the word (G4487 rhema) of faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) which we are preaching, that if you confess (G3670 homologeo) with your mouth Jesus as Lord, and <ins>believe (G4100 **pisteuo**) in your heart</ins> (G2588 kardia) that God raised Him from the dead, you will be saved; (NASB)
+> **[Romans 10:8-9](https://www.biblegateway.com/passage/?search=Romans%2010%3A8-9&version=NASB)** - But what does it say? “The word is near you, in your mouth and in your heart”&#x2013; that is, the word (G4487 rhema) of faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) which we are preaching, that if you confess (G3670 homologeo) with your mouth Jesus as Lord, and <ins>believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in your heart</ins> (G2588 kardia) that God raised Him from the dead, you will be saved; (NASB)
 
 It's faith in the heart which we need; obedience to Jesus Christ and belief in Jesus Christ in the heart, and belief and obedience to God who has <ins>raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification</ins>.
 
@@ -10403,7 +10405,7 @@ Jesus implies you must obey Him (Jesus) to be part of His family:
 
 So obeying Jesus Christ is having faith in God:
 
-> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe (G4100 **pisteuo**) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
 
 ## The obedient children are the ones who are not conformed to the passions of our former ignorance
@@ -10432,11 +10434,11 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 
 You must obey Jesus:
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 We must obey God. We have faith in God who was delivered up for our trespasses and raised for our justification, and having faith in God is having faith in His Son which is believing in and obeying Jesus Christ:
 
-> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe (G4100 **pisteuo**) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
 `pisteuo` is the faith verb.
 
@@ -11677,13 +11679,13 @@ Yes, Jesus has set us free, but it's to serve God by serving Christ. We are free
 
 We ***endeavour*** to be justified in Christ - in Christ means abiding in Christ - through faith; trusting, believing, obedient faith:
 
-> **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Jesus Christ**, so we also have believed (G4100 **pisteuo**) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
+> **[Galatians 2:16-19](https://www.biblegateway.com/passage/?search=Galatians%202%3A16-19&version=ESV)** - yet we know that a person is not **justified** by works of the law but **through faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Jesus Christ**, so we also have believed [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Christ Jesus, in order to be justified by faith in Christ and not by works of the law, because by works of the law no one will be justified. But if, in our endeavor to be **justified in Christ**, we too were found to be sinners, is Christ then a servant of sin? Certainly not! For if I rebuild what I tore down, I prove myself to be a transgressor. For through the law I died to the law, so that I might live to God. (ESV)
 
 Trusting, believing, obedient faith is faith which trusts Jesus Christ and obeys Jesus Christ's commandments. The word 'law' should not be anathema. It it possible to be justified by obedience to Christ's commandments which include Christ's law, because obedience to Jesus is a part of faith and is an intrinsic quality of faith, as is belief.
 
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 Paul lives by faith in Jesus Christ:
 
@@ -11716,7 +11718,7 @@ Through faith we are justified, but we should absolutely stop sinning
 
 We are sanctified by the Spirit **and** faith in the truth (taking God's words as True and using them to combat lies):
 
-> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks [(G2168 eucharisteo)](https://www.blueletterbible.org/lexicon/g2168/kjv/tr/0-1/) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning [(G746 arche)](https://www.blueletterbible.org/lexicon/g746/kjv/tr/0-1/) for salvation through sanctification by the Spirit **and** faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/). (NASB)
 
 -   And the Spirit is the Truth
 -   And God's Word is Truth
@@ -11988,7 +11990,7 @@ God's law is still used in judgement, but the one who has faith in Jesus is not 
 
 [John 3:18 Interlinear: he who is believing in him is not judged, but he who is not believing hath been judged already, because he hath not believed in the name of the only begotten Son of God.](https://biblehub.com/interlinear/john/3-18.htm)
 
-> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=NASB)** - He who believes (G4100 **pisteuo**) in Him is not judged; he who does not believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in the name of the only begotten Son of God. (NASB)
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=NASB)** - He who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Him is not judged; he who does not believe ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) has been judged (G2919 **krino**) already (G2235 ede), because he has not believed ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in the name of the only begotten Son of God. (NASB)
 
 Firstly, obedient children are children who hear the word of God, believe and love God, and we should be holy in all our conduct if we call on the LORD God who judges impartially according to each one's deeds:
 
@@ -12141,11 +12143,11 @@ Doing the will of God from the heart means obedience, and integrity and seeking 
 
 You must obey Jesus:
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 We must obey God. We have faith in God who was delivered up for our trespasses and raised for our justification, and having faith in God is having faith in His Son which is believing in and obeying Jesus Christ:
 
-> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe (G4100 **pisteuo**) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
+> **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It will be counted to us who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him who raised from the dead Jesus our Lord, who was delivered up for our trespasses and raised for our justification. (ESV)
 
 
 # True religion
@@ -12372,7 +12374,7 @@ We need to attempt to cease from sin, and live for the will of God.
 
 > **[1 Peter 4:1-2](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A1-2&version=ESV)** - Since therefore Christ suffered in the flesh, arm yourselves with the same way of thinking, for whoever has suffered in the flesh has ceased from sin, so as to live for the rest of the time in the flesh no longer for human passions but for the will of God. (ESV)
 
-> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks [(G2168 eucharisteo)](https://www.blueletterbible.org/lexicon/g2168/kjv/tr/0-1/) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning [(G746 arche)](https://www.blueletterbible.org/lexicon/g746/kjv/tr/0-1/) for salvation through sanctification by the Spirit **and** faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/). (NASB)
 
 Jesus has enabled us to die to sin and live to righteousness:
 
@@ -12884,7 +12886,7 @@ We want Christ to dwell in our hearts through faith:
 
 > **[2 Thessalonians 2:13-15](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13-15&version=ESV)** -  But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth.  To this he called you through our gospel, so that you may obtain the glory of our Lord Jesus Christ.  So then, brothers, stand firm and hold to the traditions that you were taught by us, either by our spoken word or by our letter.  (ESV)
 
-> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit and faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks [(G2168 eucharisteo)](https://www.blueletterbible.org/lexicon/g2168/kjv/tr/0-1/) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning [(G746 arche)](https://www.blueletterbible.org/lexicon/g746/kjv/tr/0-1/) for salvation through sanctification by the Spirit and faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/). (NASB)
 
 **Faith**  in the truth - pistis is a strong faith word!
 
@@ -12980,7 +12982,7 @@ God through Jesus is the source of our personal righteousness as we are found in
 
 ## We must **both** believe the truth and be sanctified, **and** stop sinning to be saved
 
-> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks (G2168 eucharisteo) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning (G746 arche) for salvation through sanctification by the Spirit **and** faith (G4102 **pistis**) in the truth (G225 aletheia). (NASB)
+> **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks [(G2168 eucharisteo)](https://www.blueletterbible.org/lexicon/g2168/kjv/tr/0-1/) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning [(G746 arche)](https://www.blueletterbible.org/lexicon/g746/kjv/tr/0-1/) for salvation through sanctification by the Spirit **and** faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/). (NASB)
 
 Cleaned up (stop sinning) by having faith in the truth.
 
@@ -13174,11 +13176,11 @@ And justifying faith is having obedient faith in God with regards to the promise
 
 Obeying God **is** having faith in God. Obeying God **is** loving God. AMEN!!
 
-> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)). (ESV)
+> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)). (ESV)
 
 **pistis** is the faith noun.
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me. (NASB)
 
 **pisteuo** is the faith verb.
 
@@ -13230,15 +13232,15 @@ Through faith in Jesus, and obedience to Jesus we can have faith in Father God:
 
 Have faith in God:
 
-> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)).
+> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)).
 
 Have faith in God and have faith in Jesus:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me.
 
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 Learning to trust in Jesus, learning to trust Jesus, as we obey Him and witness His glory, and come to trust in Him, to believe in Him. Obedience to Jesus leads to witnessing His glory which inspires our faith:
 
@@ -13694,9 +13696,9 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orge9e2012)
+See: [33.4.1](#org39e4e90)
 
--   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
+-   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
     that ye have believed on Him that raised our Lord Jesus Christ from
     the dead and gave unto him glory and a throne on His right hand;
@@ -14107,7 +14109,7 @@ We should pursue Jesus Christ similarly. God commanded it:
 
 > **[Luke 9:35](https://www.biblegateway.com/passage/?search=Luke%209%3A35&version=ESV)** - And a voice came out of the cloud, saying, This is my Son, my Chosen One; listen to him!
 
-> **[1 Timothy 1:15-17](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A15-17&version=ESV)** - The saying is trustworthy and deserving of full acceptance, that **Christ Jesus came into the world to save sinners**, of whom I am the foremost. But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience **as an example** to those who were to believe (G4100 **pisteuo**) in him for eternal life. To the King of ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen. (ESV)
+> **[1 Timothy 1:15-17](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A15-17&version=ESV)** - The saying is trustworthy and deserving of full acceptance, that **Christ Jesus came into the world to save sinners**, of whom I am the foremost. But I received mercy for this reason, that in me, as the foremost, Jesus Christ might display his perfect patience **as an example** to those who were to believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him for eternal life. To the King of ages, immortal, invisible, the only God, be honor and glory forever and ever. Amen. (ESV)
 
 
 ## The type of work that is good - works done in faith
@@ -15942,11 +15944,11 @@ The love of the truth must be received and accepted to be saved:
 
 People will trust in what is false:
 
-> **[II Thessalonians 2:11](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A11&version=NASB)** - For this reason God will send upon them a deluding influence so that they will believe (G4100 **pisteuo**) what is false (G5579 pseudos), (NASB)
+> **[II Thessalonians 2:11](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A11&version=NASB)** - For this reason God will send upon them a deluding influence so that they will believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) what is false (G5579 pseudos), (NASB)
 
 Those people who did not have faith in the truth but took took pleasure in unrighteousness may be condemned:
 
-> **[II Thessalonians 2:12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A12&version=ESV)** - in order that all may be condemned who did not believe (G4100 **pisteuo**) the truth but had pleasure in unrighteousness.
+> **[II Thessalonians 2:12](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A12&version=ESV)** - in order that all may be condemned who did not believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) the truth but had pleasure in unrighteousness.
 
 But God chose some to be saved through sanctification by the Spirit and belief in the truth:
 
@@ -16079,7 +16081,7 @@ Surely, the Bible teaches that all of these together are the will of God, and no
 The one who does not doubt is unwavering and is not tossed around by the sea.
 Therefore, it's an ongoing thing.
 
-> **[James 1:6](https://www.biblegateway.com/passage/?search=James%201%3A6&version=NASB)** - But he must ask in faith (G4102 **pistis**) without any doubting (G1252 **diakrino**), for the one who doubts (G1252 diakrino) is like the surf of the sea, driven and tossed by the wind. (NASB)
+> **[James 1:6](https://www.biblegateway.com/passage/?search=James%201%3A6&version=NASB)** - But he must ask in faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) without any doubting (G1252 **diakrino**), for the one who doubts (G1252 diakrino) is like the surf of the sea, driven and tossed by the wind. (NASB)
 
 But for our prayer requests to be answered this way, we must be keeping His commandments and do what pleases Him:
 
@@ -16178,7 +16180,7 @@ Learning God's will through submission to God's Word.
 
 All things are possible for those who have faith.
 
-> **[Mark 9:22-27](https://www.biblegateway.com/passage/?search=Mark%209%3A22-27&version=ESV)** - It has often thrown him both into the fire and into the water to destroy him. But if You can do anything, take pity on us and help us!” And Jesus said to him, “‘If You can?’ All things are possible to him who believes (G4100 **pisteuo**).” Immediately the boy’s father cried out and said, “I do believe; help my unbelief.” When Jesus saw that a crowd was rapidly gathering, He rebuked the unclean spirit, saying to it, “You deaf and mute spirit, I command you, come out of him and do not enter him again.” After crying out and throwing him into terrible convulsions, it came out; and the boy became so much like a corpse that most of them said, “He is dead!” But Jesus took him by the hand and raised him; and he got up.
+> **[Mark 9:22-27](https://www.biblegateway.com/passage/?search=Mark%209%3A22-27&version=ESV)** - It has often thrown him both into the fire and into the water to destroy him. But if You can do anything, take pity on us and help us!” And Jesus said to him, “‘If You can?’ All things are possible to him who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/).” Immediately the boy’s father cried out and said, “I do believe; help my unbelief.” When Jesus saw that a crowd was rapidly gathering, He rebuked the unclean spirit, saying to it, “You deaf and mute spirit, I command you, come out of him and do not enter him again.” After crying out and throwing him into terrible convulsions, it came out; and the boy became so much like a corpse that most of them said, “He is dead!” But Jesus took him by the hand and raised him; and he got up.
 
 > **[Matthew 17:20](https://www.biblegateway.com/passage/?search=Matthew%2017%3A20&version=ESV)** - He said to them, Because of your little faith. For truly, I say to you, if you have faith like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and nothing will be impossible for you.
 
@@ -16217,7 +16219,7 @@ Jesus Christ was and is sinless:
 
 And we are also cleaned up through faith in Jesus, being led by His Spirit, following His commandments, helping us to meet the requirement of the law, not by trying to be justified through perfect Mosaic law-keeping but instead by having faith in Jesus Christ, following **Christ's law**:
 
-> **[Acts 13:38-39](https://www.biblegateway.com/passage/?search=Acts%2013%3A38-39&version=NASB)** - Therefore let it be known to you, brethren, that through (G1223 **dia**) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes (G4100 **pisteuo**) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
+> **[Acts 13:38-39](https://www.biblegateway.com/passage/?search=Acts%2013%3A38-39&version=NASB)** - Therefore let it be known to you, brethren, that through (G1223 **dia**) Him forgiveness (G859 aphesis) of sins is proclaimed to you, and through (G1722 en) Him everyone who believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) is freed (G1344 dikaioo) from all things, from which you could not be freed through the Law of Moses. (NASB)
 
 Due to Jesus, forgiveness is proclaimed:
 
@@ -16446,11 +16448,11 @@ Abraham believed God and it was counted to him as righteousness:
 
 Jesus commanded us to believe (**pisteuo**) in Him:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=NASB)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me. (NASB)
 
 Paul says we must trust (**pisteuo**) in Him:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 Having believed in Jesus, having begun to trust in Jesus, we have become obedient to Jesus. Jesus works on us as we trust in Him even before we understand what He's doing, and we have become obedient because he commanded us to trust Him:
 
@@ -16472,7 +16474,7 @@ And <ins>willing</ins> to do the will of God must become <ins>'doing'</ins>.
 
 `pisteuo = to have faith upon`
 
-> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes (G4100 **pisteuo**) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in the Son has eternal life; whoever does not **obey** the Son shall not see life, but the wrath of God remains on him. (ESV)
 
 > **[John 3:14-16](https://www.biblegateway.com/passage/?search=John%203%3A14-16&version=ESV)** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. (ESV)
 
@@ -17960,7 +17962,7 @@ And we are <ins>commanded</ins> (even as Christians not <ins>under the law</ins>
 
 The rest of the Mosaic law is still useful for training in righteousness. It shows people how to live in obedience to God and in love for God and one's neighbour. But we are not under the Mosaic law, but we are under the law of Christ. We have faith in Christ.
 
-We can pursue the righteousness that is through faith (G4100 **pisteuo**) in Jesus Christ:
+We can pursue the righteousness that is through faith [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in Jesus Christ:
 
 -   **[Polycarp 8:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Let us therefore without ceasing hold fast by our hope and by the
     earnest of **our righteousness, which is Jesus Christ** who took up our
@@ -17991,7 +17993,7 @@ We must obey Jesus:
 
 > **[Romans 10:4](https://www.biblegateway.com/passage/?search=Romans%2010%3A4&version=ESV)** - For Christ is the end of the law for righteousness to everyone who believes (G4100 **pisteuo** has <ins>faith</ins> in Jesus).
 
-(G4100 **pisteuo**) is <ins>practicing</ins> faith.
+[(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) is <ins>practicing</ins> faith.
 
 This means, yes that by practicing faith in Jesus, we can pursue righteousness - Jesus' righteousness given to us.
 
@@ -18616,7 +18618,7 @@ We must receive Jesus' words, walk in them and come to **know in truth** (we mus
 
 > **[John 17:8](https://www.biblegateway.com/passage/?search=John%2017%3A8&version=ESV)** - For I have given them the words that you gave me, and they have received them and have **come to know in truth that I came from you**; and they have believed that you sent me.
 
-> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
+> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
 Therefore, we should obey Jesus and arrive at the truth. Obedience is a part of faith. Like Abraham obeying God, or like Israel crossing through the Red Sea, it's obedience which leads to sure belief.
 And the obedience doesn't end.
@@ -22633,15 +22635,15 @@ Peter believed/received/obeyed/trusted like a child of God (he cooperated) to le
 
 ### Have active faith in Jesus and **trust** in Him. This is the good news:
 
-> **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes (G4100 **pisteuo**) in him should not perish but have eternal life. (ESV)
+> **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him should not perish but have eternal life. (ESV)
 
 Have faith in God and have faith in Jesus:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me.
 
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 > **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes in the Son **has** eternal life; whoever does not obey ([544. apeitheó](https://biblehub.com/greek/544.htm)) the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
@@ -22668,7 +22670,7 @@ It is the sovereign work of God to make someone born-again of the Spirit, but th
 
 > **[Galatians 3:14](https://www.biblegateway.com/passage/?search=Galatians%203%3A14&version=ESV)** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might **receive the promised Spirit through faith**. (ESV)
 
-> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe (G4100 **pisteuo**) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
+> **[John 1:11-13](https://www.biblegateway.com/passage/?search=John%201%3A11-13&version=ESV)** - He came to His own, and those who were His own did not receive Him. But <ins>as many as received Him, to them He gave the right to become children of God, even to those who believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in His name</ins>, who were born, not of blood nor of the will of the flesh nor of the will of man, but of God.
 
 
 ### We must be born of God
@@ -24599,7 +24601,7 @@ I pray that God will not count sin done in my brokenness.
 
 Trusting Him means having faith in Him, obeying, believing in God and having the fear of God, believing, following, yielding to Jesus. Ungodly here means wicked or behaviour not in accordance with the knowledge of God. Only God can justify the ungodly, so that's why by following Him, knowing we can be ungodly, we have the hope of God justifying us:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 This qualifies:
 
@@ -26295,7 +26297,7 @@ And if a person doesn't believe in reality, then that person probably isn't save
 
 Trusting Him means having faith in Him, obeying, believing in God and having the fear of God, believing, following, yielding to Jesus. Ungodly here means wicked or behaviour not in accordance with the knowledge of God. Only God can justify the ungodly, so that's why by following Him, knowing we can be ungodly, we have the hope of God justifying us:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 This qualifies:
 
@@ -27707,7 +27709,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orge9e2012)
+See: [33.4.1](#org39e4e90)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -28458,7 +28460,7 @@ Justified ***through (G1223 dia) faith ([G4102 pistis](https://www.blueletterbib
 
 > **[Galatians 2:16](https://www.biblegateway.com/passage/?search=Galatians%202%3A16&version=ESV)** - nevertheless (G1161 de) knowing (G3609 oikeios) that a man (G444 anthropos) is not justified (G1344 dikaioo) by the works ([G2041 ergon](https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/)) of the Law (G3551 nomos) but through (G1223 dia) faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)) Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)), even (G2532 kai) we have believed ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)) Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)), so (G2443 hina) that we may be justified (G1344 dikaioo) by faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) in Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)) and not by the works ([G2041 ergon](https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/)) of the Law (G3551 nomos); since ([G3754 hoti](https://www.blueletterbible.org/lexicon/g3754/kjv/tr/0-1/)) by the works ([G2041 ergon](https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/)) of the Law (G3551 nomos) no (G3756 ou) ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) flesh ([G4561 sarx](https://www.blueletterbible.org/lexicon/g4561/kjv/tr/0-1/)) will be justified (G1344 dikaioo).
 
-Justified through (G1223 dia) faith (G4102 **pistis**) in Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)) Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)).
+Justified through (G1223 dia) faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)) Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)).
 Pistis is a strong word for faith that doesn't merely encapsulate belief, but it includes trust.
 
 The greeks can turn the noun faith into the verb believing faith ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)).
@@ -29560,15 +29562,15 @@ The words Jesus Christ spoke were **altogether** a commandment of eternal life w
 
 Have faith in God:
 
-> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith (G4102 **pistis**) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)).
+> **[Mark 11:22](https://www.biblegateway.com/passage/?search=Mark%2011%3A22&version=ESV)** - And Jesus answered them, Have (G2192 echo) faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)).
 
 Have faith in God and have faith in Jesus:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me.
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me.
 
 Pisteuo means to trust. Trust in God, trust also in God's Son Jesus:
 
-> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** (G4100 **pisteuo**) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
+> **[Romans 4:5](https://www.biblegateway.com/passage/?search=Romans%204%3A5&version=ESV)** - And to the one who does not work but **trusts** [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) him who justifies the ungodly, his faith is counted as righteousness, (ESV)
 
 Repent, for the kingdom of heaven is near:
 
@@ -31129,7 +31131,7 @@ Paul following and teaching Christ's teachings regarding overcoming evil with go
 
 The word godliness, I think means, to <ins>act in a way fitting of having true knowledge of our God, and of our Lord and Saviour Jesus Christ</ins>, and preparing oneself for eternity.
 
-> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and the knowledge (G1922 epignosis) of the truth (G225 aletheia) which is according to godliness (G2150 eusebeia),
+> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and the knowledge (G1922 epignosis) of the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/) which is according to godliness (G2150 eusebeia),
 
 Perfect godliness revealing God through Jesus Christ:
 
@@ -31309,7 +31311,7 @@ Perfect godliness revealing God through Jesus Christ:
 
 > **[Isaiah 32:6](https://www.biblegateway.com/passage/?search=Isaiah%2032%3A6&version=ESV)** - For a fool speaks nonsense, And his heart inclines toward wickedness: To practice ungodliness and to speak error against the Lord (H3068 Yhovah), To keep the hungry person unsatisfied And to withhold drink from the thirsty.
 
-> **[Romans 1:18](https://www.biblegateway.com/passage/?search=Romans%201%3A18&version=ESV)** - For the wrath of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) is revealed from heaven ([G3772 ouranos](https://www.blueletterbible.org/lexicon/g3772/kjv/tr/0-1/)) against all ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) ungodliness and unrighteousness of men who suppress the truth (G225 aletheia) in unrighteousness,
+> **[Romans 1:18](https://www.biblegateway.com/passage/?search=Romans%201%3A18&version=ESV)** - For the wrath of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) is revealed from heaven ([G3772 ouranos](https://www.blueletterbible.org/lexicon/g3772/kjv/tr/0-1/)) against all ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) ungodliness and unrighteousness of men who suppress the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/) in unrighteousness,
 
 > **[Romans 11:26](https://www.biblegateway.com/passage/?search=Romans%2011%3A26&version=ESV)** - and so all ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) Israel will be saved (G4982 sozo); just as it is written, “The Deliverer will come from Zion, He will remove ungodliness from Jacob.”
 
@@ -31329,7 +31331,7 @@ Perfect godliness revealing God through Jesus Christ:
 
 > **[II Timothy 3:5](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A5&version=ESV)** - holding to a form of godliness (G2150 eusebeia), although they have denied its power (G1411 dunamis); Avoid such men as these.
 
-> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and the knowledge (G1922 epignosis) of the truth (G225 aletheia) which is according to godliness (G2150 eusebeia),
+> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and the knowledge (G1922 epignosis) of the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/) which is according to godliness (G2150 eusebeia),
 
 > **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, training us to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.
 
@@ -31497,7 +31499,7 @@ When people say, "Is there anyone who does not know Jesus yet? Please put up you
 
 Believing in your heart is an initial act of obedience before continuing in the teaching of Christ. If we believe in Him we have obeyed Him, but belief doesn't end there:
 
-> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe (G4100 **pisteuo**) in God, believe (G4100 **pisteuo**) also in Me. (NASB)
+> **[John 14:1](https://www.biblegateway.com/passage/?search=John%2014%3A1&version=ESV)** - “Do not let your heart be troubled; believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in God, believe [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) also in Me. (NASB)
 
 > **[Acts 28:27](https://www.biblegateway.com/passage/?search=Acts%2028%3A27&version=ESV)** - For the heart of this people has become dull, And with their ears they scarcely hear, And they have closed their eyes; Otherwise they might see with their eyes, And hear with their ears, And **understand with their heart** and **return**, And I would heal them.”’
 
@@ -31534,7 +31536,7 @@ Regeneration is the sovereign work of **the Holy Spirit**, though. AMEN!! Nevert
 
 > **[John 3:5-8](https://www.biblegateway.com/passage/?search=John%203%3A5-8&version=ESV)** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. That which is born of the flesh is flesh, and that which is born of the Spirit is spirit. Do not marvel that I said to you, You must be born again. The wind blows where it wishes, and you hear its sound, but you do not know where it comes from or where it goes. So it is with everyone who is born of the Spirit.
 
-> **[John 6:45-47](https://www.biblegateway.com/passage/?search=John%206%3A45-47&version=ESV)** - It is written in the Prophets, And they will all be taught by God. <ins>Everyone who has heard and learned from the Father comes to me</ins> — not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes (G4100 **pisteuo**) has eternal life.
+> **[John 6:45-47](https://www.biblegateway.com/passage/?search=John%206%3A45-47&version=ESV)** - It is written in the Prophets, And they will all be taught by God. <ins>Everyone who has heard and learned from the Father comes to me</ins> — not that anyone has seen the Father except he who is from God; he has seen the Father. Truly, truly, I say to you, whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) has eternal life.
 
 Also, I believe that this is what God actually wants from us - to seek Him and worship Him of our own volition.
 
