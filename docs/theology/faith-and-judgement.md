@@ -599,7 +599,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org976a8b1) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org0c1af04) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1118,7 +1118,7 @@ Belief is important (and is an initial act of obedience):
 
 Obedience is important:
 
-> **[Luke 6:46-48](https://www.biblegateway.com/passage/?search=Luke%206%3A46-48&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 Our obedience is not without trust. We obey because we trust God - we obey out of faith in God:
 
@@ -3927,7 +3927,7 @@ The free gift is eternal life **in** Christ Jesus, our Lord:
 
 After believing in Jesus, we must turn from our wicked ways and serve God:
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 Jesus is the definitive Son of God. But we may be adopted as sons through faith in Jesus:
 
@@ -4638,7 +4638,7 @@ We should give the cold shoulder to people who do not want to follow Jesus.
 
 If anyone claims to be a believer but doesn't abide in Christ's teachings then don't welcome that person in:
 
-> **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
+> **[II John 1:9-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A9-11&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, for whoever greets him takes part in his wicked works. (ESV)
 
 > **[I Timothy 6:1-5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A1-5&version=ESV)** - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled. Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things. **If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing**. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. (ESV)
 
@@ -4734,7 +4734,7 @@ We have peace with God and are justified by faith when we are following Jesus Ch
 
 > **[Romans 4:23-25](https://www.biblegateway.com/passage/?search=Romans%204%3A23-25&version=ESV)** - But the words it was counted to him were not written for his sake alone, but for ours also. It **will be** <ins>counted to us who believe in him who raised from the dead **Jesus our Lord**,</ins> who was delivered up for our trespasses and <ins>raised for our justification</ins>. (ESV)
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and hears my words and **does them**, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and hears my words and **does them**, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 OBEDIENCE!
 
@@ -5458,7 +5458,7 @@ We must obey Jesus and love one another:
 
 > **[I Corinthians 16:22](https://www.biblegateway.com/passage/?search=1%20Corinthians%2016%3A22&version=ESV)** - If anyone has no love for the Lord, let him be accursed. Our Lord, come! (ESV)
 
-> **[Luke 6:46-48](https://www.biblegateway.com/passage/?search=Luke%206%3A46-48&version=ESV)** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and **hears my words and does them**, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
+> **[Luke 6:46-48](https://www.biblegateway.com/passage/?search=Luke%206%3A46-48&version=ESV)** - Why do you call me Lord, Lord, and not **do what I tell you**? Everyone who comes to me and **hears my words and does them**, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. (ESV)
 
 The knowledge comes from having obeyed God's voice. Love becomes perfected in us when we abide in God:
 
@@ -6333,11 +6333,11 @@ Belief is important (and is an initial act of obedience):
 
 Obedience is important:
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 We believe the Lord Jesus is who He is, the Christ, the Son of the living God, and Jesus builds the house as we obey Him.
 
-> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
+> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the **Lord builds the house**, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
 
 > **[I John 4:10-16](https://www.biblegateway.com/passage/?search=1%20John%204%3A10-16&version=ESV)** - In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another. No one has ever seen God; if we love one another, God abides in us and his love is perfected in us. By this we know that we abide in him and he in us, because he has given us of his Spirit. And we have seen and testify that the Father has sent his Son to be the Savior of the world. Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. So **we have come to know and to believe the love that God has for us.** God is love, and whoever abides in love abides in God, and God abides in him. (ESV)
 
@@ -7861,7 +7861,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
@@ -8931,7 +8931,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
@@ -9825,7 +9825,7 @@ We must also obey the teaching of Jesus, believe on His name and follow His comm
 
 > **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 You can't have an abundant life without knowing Jesus, so we must have faith in God and follow Jesus' commandments to get to know Him:
 
@@ -9890,6 +9890,62 @@ I'm quite convinced that the substitutionary atonement is there to help us put a
 If people including free-grace Christians do not repent from sin, they may still receive the wrath of God, but I'm not the judge here:
 
 > **[Colossians 3:5-10](https://www.biblegateway.com/passage/?search=Colossians%203%3A5-10&version=ESV)** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. <ins>On account of these the wrath of God is coming.</ins> In these you too once walked, when you were living in them. But now you **must** put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge **after the image of its creator.**
+
+Whether we circumcise our hearts or God does it or it happens at the same time, we are circumcised in the heart that we might die to sin and practice righteousness. Repenting, we are not resisting the Holy Spirit:
+
+> **[Acts 7:51](https://www.biblegateway.com/passage/?search=Acts%207%3A51&version=ESV)** - You **stiff-necked people, uncircumcised in heart and ears**, you always resist the Holy Spirit. As your fathers did, so do you. (ESV)
+
+> **[Deuteronomy 10:12-17](https://www.biblegateway.com/passage/?search=Deuteronomy%2010%3A12-17&version=ESV)** - And now, Israel, what does the LORD your God require of you, but to fear the LORD your God, to walk in all his ways, to love him, to serve the LORD your God with all your heart and with all your soul, and to keep the commandments and statutes of the LORD, which I am commanding you today for your good? Behold, to the LORD your God belong heaven and the heaven of heavens, the earth with all that is in it. Yet the LORD set his heart in love on your fathers and chose their offspring after them, you above all peoples, as you are this day. **Circumcise therefore the foreskin of your heart**, and **be no longer stubborn**. For the LORD your God is God of gods and Lord of lords, the great, the mighty, and the awesome God, who is not partial and takes no bribe. (ESV)
+
+> **[Romans 2:5-8](https://www.biblegateway.com/passage/?search=Romans%202%3A5-8&version=ESV)** - But because of your <ins>hard and impenitent heart</ins> **you are storing up wrath for yourself** on the day of wrath when God's righteous judgment will be revealed. **He will render to each one according to his works**: to those who **by patience in well-doing** seek for glory and honor and immortality, he will give eternal life; but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury.** (ESV)
+
+We must stop doing evil:
+
+> **[Romans 2:9-11](https://www.biblegateway.com/passage/?search=Romans%202%3A9-11&version=ESV)** - There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+
+> **[Romans 2:12-13](https://www.biblegateway.com/passage/?search=Romans%202%3A12-13&version=ESV)** - For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
+
+> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+
+We must live out the truth:
+
+> **[Romans 6:11](https://www.biblegateway.com/passage/?search=Romans%206%3A11&version=ESV)** - So you also must consider yourselves dead to sin and alive to God in Christ Jesus. (ESV)
+
+We stop obeying sin and start obeying righteousness, and God's Spirit helps us to do that:
+
+> **[Romans 6:16](https://www.biblegateway.com/passage/?search=Romans%206%3A16&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of obedience, which leads to righteousness? (ESV)
+
+> **[Romans 6:17-18](https://www.biblegateway.com/passage/?search=Romans%206%3A17-18&version=ESV)** - But thanks be to God, that you who were once slaves of sin have become obedient from the heart to the standard of teaching to which you were committed, and, having been set free from sin, have become slaves of righteousness. (ESV)
+
+> **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)** - But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
+
+> **[Romans 7:25](https://www.biblegateway.com/passage/?search=Romans%207%3A25&version=ESV)** - Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
+
+We are debtors. We are debtors to God for His mercy on us so we should by His grace put to death the deeds of the body, the deeds of the flesh:
+
+> **[Romans 8:12-15](https://www.biblegateway.com/passage/?search=Romans%208%3A12-15&version=ESV)** - So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. For all who are led by the Spirit of God are sons of God. For you did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, Abba! Father! (ESV)
+
+> **[Romans 8:20-21](https://www.biblegateway.com/passage/?search=Romans%208%3A20-21&version=ESV)** - For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to decay and obtain the freedom of the glory of the children of God. (ESV)
+
+There's nothing wrong with following the law by faith, knowing God sees our hearts, seeking praise from God and not men, but when presented with Jesus Christ, we should love Him and accept Him and place our faith in Him as He commanded:
+
+> **[Romans 9:32-33](https://www.biblegateway.com/passage/?search=Romans%209%3A32-33&version=ESV)** - Why? Because they did not pursue it by faith, but as if it were based on works. They have stumbled over the stumbling stone, as it is written, Behold, I am laying in Zion a stone of stumbling, and a rock of offense; and whoever believes in him will not be put to shame. (ESV)
+
+> **[Romans 10:8-10](https://www.biblegateway.com/passage/?search=Romans%2010%3A8-10&version=ESV)** - But what does it say? The word is near you, in your mouth and in your heart (that is, the word of faith that we proclaim); because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved. For with the heart one believes and is justified, and with the mouth one confesses and is saved. (ESV)
+
+We should still be obedient to God. This verse clearly shows that God desires us to be obedient to Him:
+
+> **[Romans 10:21](https://www.biblegateway.com/passage/?search=Romans%2010%3A21&version=ESV)** - But of Israel he says, All day long I have held out my hands to a disobedient and contrary people. (ESV)
+
+> **[Romans 13:3-5](https://www.biblegateway.com/passage/?search=Romans%2013%3A3-5&version=ESV)** - For rulers are not a terror to good conduct, but to bad. Would you have no fear of the one who is in authority? Then do what is good, and you will receive his approval, for he is God's servant for your good. But if you do wrong, be afraid, for he does not bear the sword in vain. For he is the servant of God, an avenger who carries out God's wrath on the wrongdoer. Therefore one must be in subjection, not only to avoid God's wrath but also for the sake of conscience. (ESV)
+
+We should be compassionate on one another and accept one another, knowing Jesus welcomed us even though we had lots of faults ourselves:
+
+> **[Romans 15:7](https://www.biblegateway.com/passage/?search=Romans%2015%3A7&version=ESV)** - Therefore welcome one another as Christ has welcomed you, for the glory of God. (ESV)
+
+> **[Romans 16:17-19](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-19&version=ESV)** - I appeal to you, brothers, to watch out for those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them. For such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. For your obedience is known to all, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. (ESV)
+
+> **[Romans 15:18-19](https://www.biblegateway.com/passage/?search=Romans%2015%3A18-19&version=ESV)** - For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to obedience—by word and deed, by the power of signs and wonders, by the power of the Spirit of God—so that from Jerusalem and all the way around to Illyricum I have fulfilled the ministry of the gospel of Christ; (ESV)
 
 Absolutely:
 
@@ -9974,6 +10030,8 @@ We are ransommed by the blood of Jesus and the blood of Jesus [continues to clea
 
 
 ### Everyone needs saving
+
+> **[Romans 11:32](https://www.biblegateway.com/passage/?search=Romans%2011%3A32&version=ESV)** - For God has consigned all to disobedience, that he may have mercy on all. (ESV)
 
 > **[Romans 3:1-19](https://www.biblegateway.com/passage/?search=Romans%203%3A1-19&version=ESV)** - Then what advantage has the Jew? Or what is the value of circumcision? Much in every way. To begin with, the Jews were entrusted with the oracles of God. What if some were unfaithful? Does their faithlessness nullify the faithfulness of God? By no means! **Let God be true though every one were a liar**, as it is written, That you may be justified in your words, and prevail when you are judged. But if our unrighteousness serves to show the righteousness of God, what shall we say? That God is unrighteous to inflict wrath on us? (I speak in a human way.) By no means! For then how could God judge the world? But if through my lie God's truth abounds to his glory, why am I still being condemned as a sinner? And why not do evil that good may come?—as some people slanderously charge us with saying. Their condemnation is just. What then? Are we Jews any better off? No, not at all. For we have already charged that **all, both Jews and Greeks, are under sin**, as it is written: **None is righteous, no, not one**; no one understands; no one seeks for God. All have turned aside; together they have become worthless; no one does good, not even one. Their throat is an open grave; they use their tongues to deceive. The venom of asps is under their lips. Their mouth is full of curses and bitterness. Their feet are swift to shed blood; in their paths are ruin and misery, and the way of peace they have not known. There is no fear of God before their eyes. Now we know that **whatever the law says it speaks to those who are under the law, so that every mouth may be stopped, and the whole world may be held accountable to God.** (ESV)
 
@@ -10358,7 +10416,7 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 
 > **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **[I John 2:3-4](https://www.biblegateway.com/passage/?search=1%20John%202%3A3-4&version=ESV)** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -10628,7 +10686,7 @@ The New Testament writers still taught believers to not break the 10 Commandment
 
 Even as born-again Christians, keeping the 10 Commandments is very important. Just because we may be justified by faith in Jesus Christ doesn't mean that followers of Jesus obey unrighteousness. Followers of Jesus still obey righteousness:
 
-> **[Romans 1:29-2:13](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV)** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your hard and impenitent heart you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
+> **[Romans 1:29-2:13](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV)** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
 
 > **[I Timothy 1:8-11](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A8-11&version=ESV)** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice homosexuality, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
@@ -10948,7 +11006,7 @@ Anxiety flows from pride. If we don't trust God we will be anxious about the fut
 
 ### Lies and adultery
 
-> **[Jeremiah 23:14](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A14&version=ESV)** - But in the prophets of Jerusalem I have seen a horrible thing: they commit adultery and walk in lies; they strengthen the hands of evildoers, so that no one turns from his evil; all of them have become like Sodom to me, and its inhabitants like Gomorrah. (ESV)
+> **[Jeremiah 23:14](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A14&version=ESV)** - But in the prophets of Jerusalem I have seen a horrible thing: they commit adultery and walk in lies; **they strengthen the hands of evildoers, so that no one turns from his evil;** all of them have become like Sodom to me, and its inhabitants like Gomorrah. (ESV)
 
 
 ### Iniquity
@@ -11973,11 +12031,11 @@ When one speaks evil against a brother, they become a judge of the law.
 
 Repentance involves turning away from sin, and all believers are supposed to turn away from sin which they themselves condemn:
 
-> **[Romans 2:1-5](https://www.biblegateway.com/passage/?search=Romans%202%3A1-5&version=ESV)** - Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your hard and impenitent heart you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. (ESV)
+> **[Romans 2:1-5](https://www.biblegateway.com/passage/?search=Romans%202%3A1-5&version=ESV)** - Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. (ESV)
 
 We must stop doing evil:
 
-> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
 Eternal judgement:
 
@@ -12065,7 +12123,7 @@ Doing the will of God from the heart means obedience, and integrity and seeking 
 
 > **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **[I John 2:3-4](https://www.biblegateway.com/passage/?search=1%20John%202%3A3-4&version=ESV)** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
 
@@ -12848,11 +12906,11 @@ It's really important to purify ourselves of every defilement of body and spirit
 
 I want to be sanctified completely:
 
-**[I Thessalonians 5:23](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A23&version=ESV)** - Now may the God of peace himself sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ. (ESV)
+> **[I Thessalonians 5:23](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A23&version=ESV)** - Now may the God of peace himself sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ. (ESV)
 
 There is no lust in the divine nature:
 
-**[II Peter 1:4](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A4&version=ESV)** - by which he has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature, having escaped from the corruption that is in the world because of sinful desire. (ESV)
+> **[II Peter 1:4](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A4&version=ESV)** - by which he has granted to us his precious and very great promises, so that through them you may become partakers of the divine nature, having escaped from the corruption that is in the world because of sinful desire. (ESV)
 
 I want to bring glory to God by being a living sacrifice - living in a holy manner pleasing to God:
 
@@ -12864,7 +12922,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
@@ -12945,7 +13003,7 @@ The [1689 Baptist confession](https://www.the1689confession.com/1689/chapter-6) 
 
 > **[Romans 7:23-25](https://www.biblegateway.com/passage/?search=Romans%207%3A23-25&version=ESV)** - but I see in my members another law waging war against the law of my mind and making me captive to the law of sin that dwells in my members. Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. (ESV)
 
-I affirm that even after regeneration and being healed, corruption has remained a problem for me mainly because of the world I live in, but also because I need to be renewed in mind:
+I affirm that even after regeneration and being healed, corruption has remained a problem for me, partly because of the influence the world I live in has had on me, but also because I need to be renewed in mind:
 
 -   the influences of worldly people, and
     -   **[I Corinthians 15:33](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A33&version=ESV)** - Do not be deceived: Bad company ruins good morals. (ESV)
@@ -12999,7 +13057,7 @@ Belief is important (and is an initial act of obedience):
 
 Obedience is important:
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 Jehovah is [the Rock](https://www.youtube.com/watch?v=1nSEW9hS0nY&list=RD1nSEW9hS0nY&start_radio=1&ab_channel=metalfranlazar777):
 
@@ -13030,8 +13088,6 @@ It's definitely Almighty God, the Judge of all the earth:
 Building our lives on Jesus means believing Him and obeying Him:
 
 > **[Matthew 7:24-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A24-27&version=ESV)** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
-
-If we actually 
 
 > **[John 5:37-40](https://www.biblegateway.com/passage/?search=John%205%3A37-40&version=ESV)** - And the Father who sent me has himself borne witness about me. His voice you have never heard, his form you have never seen, and you do not have his word abiding in you, for you do not believe the one whom he has sent. You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life. (ESV)
 
@@ -13628,7 +13684,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org0d27272)
+See: [33.4.1](#org8aac921)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore gird up your loins and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -13836,7 +13892,7 @@ I'm sure that James would be referring to what Paul refers to in [Romans 4:11-12
 
 Firstly, God owns everything. Whatever we give God, he already owned. Neither do we give God wages as if we were the previous owner of our gift. And we don't give God advice:
 
-> **[Romans 11:34-36](https://www.biblegateway.com/passage/?search=Romans%2011%3A34-36&version=ESV)** - For who has known the mind of the Lord, or who has been his counselor? Or who has given a gift to him that he might be repaid? For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
+> **[Romans 11:34-36](https://www.biblegateway.com/passage/?search=Romans%2011%3A34-36&version=ESV)** - For who has known the mind of the Lord, or who has been his counselor? Or **who has given a gift to him that he might be repaid?** For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
 
 We just depend on and trust and hope on God to justify us, to commend us, to give us mercy, and we simply follow Jesus and have peace with God because we believe in Jesus, and in believing and obeying Jesus we have the hope of being justified by faith in Jesus:
 
@@ -14392,7 +14448,7 @@ If someone trusts their Lord then they do what their Lord does and has commanded
 
 ### Jesus's Lordship is not merely His authority over us, but us yielding our lives to Jesus - us wanting to do His will, and us wanting to obey Him
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **[Colossians 2:5-6](https://www.biblegateway.com/passage/?search=Colossians%202%3A5-6&version=ESV)** - For though I am absent in body, yet I am with you in spirit, rejoicing to see your good order and the firmness of your faith in Christ. Therefore, <ins>as you received Christ Jesus the Lord,</ins> **so walk in him,** (ESV)
 
@@ -15029,7 +15085,7 @@ Belief is important (and is an initial act of obedience):
 
 Obedience is important:
 
-> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? **Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock**. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 We believe the Lord Jesus is who He is, the Christ, the Son of the living God, and Jesus builds the house as we obey Him.
 
@@ -17170,12 +17226,19 @@ Greet those who love us in the faith:
 
 ### Don't believe lies nor even listen to false dreams from false prophets and diviners
 
-> **[Zechariah 10:2](https://www.biblegateway.com/passage/?search=Zechariah%2010%3A2&version=ESV)** - For the household gods utter nonsense, and the diviners see lies; they tell false dreams and give empty consolation. Therefore the people wander like sheep; they are afflicted for lack of a shepherd. (ESV)
+> **[Zechariah 10:2](https://www.biblegateway.com/passage/?search=Zechariah%2010%3A2&version=ESV)** - For the household gods utter nonsense, and the diviners see lies; <ins>they tell false dreams and give **empty consolation**.</ins> Therefore the people wander like sheep; they are afflicted for lack of a shepherd. (ESV)
 
 > **[Jeremiah 23:25-28](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A25-28&version=ESV)** -  <ins>I have heard what the prophets have said who prophesy lies in my name, saying, I have dreamed, I have dreamed! How long shall there be lies in the heart of the prophets who prophesy lies, and who prophesy the deceit of their own heart,</ins> who think to make my people forget my name by their dreams that they tell one another, even as their fathers forgot my name for Baal?  **Let the prophet who has a dream tell the dream, but let him who has my word speak my word faithfully.**  What has straw in common with wheat?  declares the LORD.  (ESV)
 
-Woe to the shepherds who strengthen the hands of evildoers so that no one turns from his evil.
-They continually say to those who despise the word of the LORD, "It shall be well with you."
+Woe to the shepherds who strengthen the hands of evildoers so that no one turns from his evil. We should be encouraging turning away from sin and encouraging abiding by Christ's teachings:
+
+> **[Jeremiah 23:14](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A14&version=ESV)** - But in the prophets of Jerusalem I have seen a horrible thing: they commit adultery and walk in lies; **they strengthen the hands of evildoers, so that no one turns from his evil;** all of them have become like Sodom to me, and its inhabitants like Gomorrah. (ESV)
+
+They continually say to those who despise the word of the LORD, "It shall be well with you." They preach a watered down gospel:
+
+> **[Jeremiah 23:17](https://www.biblegateway.com/passage/?search=Jeremiah%2023%3A17&version=ESV)** - They say continually to those who despise the word of the LORD, It shall be well with you; and to everyone who stubbornly follows his own heart, they say, No disaster shall come upon you. (ESV)
+
+> **Zechariah 10:2** - For the household gods utter nonsense, and the diviners see lies; <ins>they tell false dreams and give **empty consolation**.</ins> Therefore the people wander like sheep; they are afflicted for lack of a shepherd. (ESV)
 
 They preach against repentance from sin:
 
@@ -17507,7 +17570,7 @@ means we are not **under** the Mosaic law as our actions are law-fulfilling. If 
 
 Even as born-again Christians, keeping the 10 Commandments is very important. Just because we may be justified by faith in Jesus Christ doesn't mean that followers of Jesus obey unrighteousness. Followers of Jesus still obey righteousness:
 
-> **[Romans 1:29-2](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV):13** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your hard and impenitent heart you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
+> **[Romans 1:29-2](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV):13** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
 
 The righteousness in the actual doing of the law above is still upheld but there is now the righteousness that is by faith in Jesus Christ. In other words, keeping the commandments of God and following Jesus are not mutually exclusive. And the law still describes what good behaviour looks like and what bad behaviour looks like. But through the redemption that is in Christ Jesus, as we follow and place our faith in Jesus, obeying Jesus to repent from sin and to do good and to pass forward love and forgiveness, etc., we can be justified by our faith in Jesus. As we go on living, we keep our obedient believing faith in Jesus, and no longer want to rebel against God's law. Perfect compliance to the law is no longer the basis of our justification but we seek to not break the law:
 
@@ -19766,9 +19829,11 @@ Submitting to the righteousness that comes through having faith in Jesus is beli
 
 # Coming into the Body of Christ / into abiding in Jesus
 
-> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the Lord builds the house, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
+When we do what Jesus says, it's as if Jesus is working through us. We are like a man building a house, but it is actually the Lord Jesus building it. A person must/should **do** what Jesus said:
 
-> **[Luke 6:47-49](https://www.biblegateway.com/passage/?search=Luke%206%3A47-49&version=ESV)** - Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the **Lord builds the house**, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
 
 We must throw out the old and allow God to build the new house/life for us.
 We must cooperate with God by doing what Jesus has instructed, and not fighting against Jesus' commandments.
@@ -22225,7 +22290,7 @@ Being the good soil is walking in the light, in the truth, the word of truth, th
 
 > **[I John 2:24-25](https://www.biblegateway.com/passage/?search=1%20John%202%3A24-25&version=ESV)** - Let what you heard from the beginning abide in you. If what you heard from the beginning abides in you, then you too will abide in the Son and in the Father. And this is the promise that he made to us—eternal life. (ESV)
 
-> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
 > **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)** - But now that you have been **set free from sin and have become slaves of God, the fruit you get leads to sanctification and its end, eternal life**. For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
@@ -24323,7 +24388,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
@@ -26122,7 +26187,7 @@ Those that obey Jesus' voice He will give eternal life:
 
 ### Every human being who does evil will receive tribulation and distress. God is fair.
 
-> **[Romans 2:9-11](https://www.biblegateway.com/passage/?search=Romans%202%3A9-11&version=ESV)** - There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.
+> **[Romans 2:9-11](https://www.biblegateway.com/passage/?search=Romans%202%3A9-11&version=ESV)** - There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.
 
 
 ### Human beings were totally at the mercy of God. We needed Jesus to come. We still need Jesus
@@ -27632,7 +27697,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org0d27272)
+See: [33.4.1](#org8aac921)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -28360,9 +28425,11 @@ These things are factors of faith.
 
 God is the judge.
 
-A person must/should **do** what Jesus said.
+When we do what Jesus says, it's as if Jesus is working through us. We are like a man building a house, but it is actually the Lord Jesus building it. A person must/should **do** what Jesus said:
 
-> **[Luke 6:47-49](https://www.biblegateway.com/passage/?search=Luke%206%3A47-49&version=ESV)** - Everyone who comes to me and hears my words and does them, I will show you what he is like: he is like a man building a house, who dug deep and laid the foundation on the rock. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built.  But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great.
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
+
+> **[Psalms 127:1](https://www.biblegateway.com/passage/?search=Psalms%20127%3A1&version=ESV)** - Unless the **Lord builds the house**, those who build it labor in vain. Unless the Lord watches over the city, the watchman stays awake in vain.
 
 > **[Matthew 7:24-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A24-27&version=ESV)** - <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
@@ -31014,7 +31081,7 @@ Consider this as I read Jesus' words talking about Father God:
 
 > **[II John 1:9](https://www.biblegateway.com/passage/?search=2%20John%201%3A9&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. (ESV)
 
-> **[Luke 6:46](https://www.biblegateway.com/passage/?search=Luke%206%3A46&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? (ESV)
+> **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **[Mark 16:15](https://www.biblegateway.com/passage/?search=Mark%2016%3A15&version=ESV)** - And he said to them, Go into all the world and proclaim the gospel to the whole creation. (ESV)
 
@@ -31832,7 +31899,7 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 
 -   **Sermon:** [youtube.com: To Him Be Glory Forever](https://www.youtube.com/watch?v=LJ8dLCgAkZ4)
 
-> **[Romans 11:33-36](https://www.biblegateway.com/passage/?search=Romans%2011%3A33-36&version=ESV)** - Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways! For who has known the mind of the Lord, or who has been his counselor? Or who has given a gift to him that he might be repaid? For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
+> **[Romans 11:33-36](https://www.biblegateway.com/passage/?search=Romans%2011%3A33-36&version=ESV)** - Oh, the depth of the riches and wisdom and knowledge of God! How unsearchable are his judgments and how inscrutable his ways! For who has known the mind of the Lord, or who has been his counselor? Or **who has given a gift to him that he might be repaid?** For from him and through him and to him are all things. To him be glory forever. Amen. (ESV)
 
 
 ## Jesus is the Only Way to Father God
@@ -33460,7 +33527,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
@@ -34447,7 +34514,7 @@ I think it's dangerous and probably incorrect to say, "I've been justified and s
 
 [We aren't the justifiers of ourselves ever](https://youtu.be/S5E_MqEqk-U?t=606), but we still have faith that we are justified already by God as we hold faith in Jesus, and we don't necessarily know **when** God has personally justified us by faith because, like Abraham's faith, it's from obedience to God's commandments that we get personal assurance. But if we are hoping in God's promises while serving Jesus then we certainly can have confidence that God will/has justified us, where if we are not agapé-ing God and our family in Christ, serving Jesus then I think to say that we are justified and saved from God's wrath while going on doing evil is very daring and I wouldn't be surprised if that person receives the wrath of God.
 
-> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life**; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for **every human being who does evil**, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
 > **[II Peter 2:4-9](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A4-9&version=ESV)** - For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment; if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then the Lord knows how to rescue the godly from trials, and to **keep the unrighteous under punishment until the day of judgment**, (ESV)
 
@@ -34726,7 +34793,7 @@ We must keep and accept the precepts of God over the precepts of men:
 
 > **[Mark 7:6-9](https://www.biblegateway.com/passage/?search=Mark%207%3A6-9&version=ESV)** - And he said to them, Well did Isaiah prophesy of you hypocrites, as it is written, **This people honors me with their lips,** but **their heart is far from me**; **in vain do they worship me, teaching as doctrines the commandments of men**. **You leave the commandment of God** and hold to the tradition of men. And he said to them, You have a fine way of rejecting the commandment of God in order to establish your tradition! (ESV)
 
-This passage is condemning submitting to **worldly** / **human** precepts and emploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
+This passage is condemning submitting to **worldly** / **human** precepts and imploring us to submit to God's precepts. It's not condemning God's precepts but imploring us to put to death what is against God's precepts:
 
 > **[Colossians 2:20-23](https://www.biblegateway.com/passage/?search=Colossians%202%3A20-23&version=ESV),3:1-6** - If with Christ you **died to the elemental spirits of the world**, why, as if you were still alive in the world, do you submit to regulations— Do not handle, Do not taste, Do not touch (referring to things that all perish as they are used)—according to **human precepts** and teachings? These have indeed an appearance of wisdom in promoting self-made religion and asceticism and severity to the body, but they are of no value in stopping the indulgence of the flesh. If then you have been **raised with Christ, seek the things that are above**, where Christ is, seated at the right hand of God. Set your minds on things that are above, not on things that are on earth. For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming.** (ESV)
 
