@@ -5,7 +5,8 @@ export TTY
 
 # e21 shx "$@"
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 if stdin_exists; then
     ts -i '[%H:%M:%.S]'

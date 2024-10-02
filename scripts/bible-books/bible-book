@@ -8,7 +8,8 @@ sn="$(basename -- "$0")"
 
 # If I could memoise bash functions, that would be great!
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 if ! { test "$istty" = 0 || test "$isstdoutpipe" = 0; }; then
     # e.g. (pen-snc "1John")

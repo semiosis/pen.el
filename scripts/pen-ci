@@ -6,7 +6,8 @@
 export PS4='+	"$(basename $0)"	${LINENO}	 '
 # set -xv
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 if test "$hasstdin" = 0; then
     USING_STDIN=y

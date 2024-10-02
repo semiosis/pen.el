@@ -16,7 +16,8 @@ sn="$(basename -- "$0")"
 
 # set -a # export the functions and variables
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 # (eshell-environment-variables)
 # TODO Make these export here

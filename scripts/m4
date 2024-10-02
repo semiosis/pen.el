@@ -5,7 +5,8 @@ export TTY
 
 sn="$(basename -- "$0")"
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 if test "$istty" = 0 && ! in-pen-p; then
     if test "$has_stdout" = y; then

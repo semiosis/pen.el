@@ -1,6 +1,7 @@
 # alias pf='printf'
 
-. $PENEL_DIR/scripts/utils.sh
+# . $PENEL_DIR/scripts/utils.sh
+. $PENELD/scripts/utils.sh
 
 pf() {
     printf "$@"
