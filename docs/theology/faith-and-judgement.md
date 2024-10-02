@@ -31,7 +31,7 @@ This is a short preview of where I'm at with my theology. I don't claim to know 
     14  
     15  We believe by faith that we are justified by the blood of Jesus and just get
     16  to serving God with agape love proceeding from a good conscience having
-    17  believed the Gospel and placed out faith in Christ.
+    17  believed the Gospel and placed our faith in Christ.
     18  
     19  Christ died for our sins according to the Scriptures, He was buried, He was
     20  raised on the third day according to the Scriptures, and He appeared to many
@@ -653,7 +653,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org1ed0b78) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org615e69d) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -2026,7 +2026,7 @@ Being born-again of the spirit was a total gift received through faith in Jesus,
 
 > I don't really know what this is. It was something like a singularity event and my perception of the world is now spiritual. Most of my life I have not been a very faithful Christian. I was a 'nominal' Christian but I didn't really have a lot of faith or knowledge of God. I had not been seeking out Jesus. For the 2 years leading up to 2 April 2022, I can tell now in retrospect that God was working in my life, and I had begun seeking Jesus, and trying out repentance, and eventually arrived at the point where I was crying to God for help. So when was I born-again? Was it when I first believed as a child, or when I was baptised as a teenager? Not in the same way I was born-again on 2 April 2022. On 2 April 2022 I was truly born-again of the Spirit, and my best explanation as to what had changed was that I had begun to **authentically seek God and to be obedient to Jesus, accountable to God who sees in secret**, and not to man, and that activated a real prayer life, and actively believing God exists and sees, and I had asked God to give me His Holy Spirit. Even though I could not yet hear His voice, I was praying and seeking and beginning to repent. On the 2 April 2022 I was born-again the Spirit - I was spiritually regenerated - whatever it was that happened which I described. When that happened God had put the fear of Him in my heart so that I would not turn from Him, and it was receiving a new spiritual light-body like being birthed from a womb. When I first 'believed' the gospel, this had not happened yet, but I had the testimony I guess. This event, what I experienced on 2 April 2022 I consider to me being born of 'water and the Spirit'. But hearing and keeping the gospel of Jesus, and asking God to receive the Holy Spirit, or seeking God I guess they will have some events, probably different to my 2 April 2022 event something similar happen then or in their future some time, I assume, or perhaps it is 'entering the Kingdom of God'. I don't know exactly how it works. I'm retroactively trying to figure things out by reading the Scriptures.
 
-As I understand it, if someone is "born of God", they would love Jesus. If someone loves with Christ's love then they are "born of God and know God" and they would love Jesus if presented with Jesus. If someone is "born of the Spirit" then they have been spiritually regenerated. Being born of the Spirit is what I understand is to be "born-again of water and the Spirit".
+As I understand it, if someone is "born of God", [they would love Jesus](https://www.youtube.com/watch?v=9nlvj9nNVCA). If someone loves with Christ's love then they are "born of God and know God" and they would love Jesus if presented with Jesus. If someone is "born of the Spirit" then they have been spiritually regenerated. Being born of the Spirit is what I understand is to be "born-again of water and the Spirit".
 
 Maybe these two things are at the same time if a person believes without doubting.
 
@@ -2344,7 +2344,7 @@ Believing Jesus, having the love of God within us, loving Father God, and loving
 
 Those who trust Jesus and believe Jesus is the Son of God, now being far more obedient to God, cheerfully obey His commandments rather than find them difficult (for example: they find it unburdensome to act like the good Samaritan):
 
-> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 We don't justify ourselves. The lawyer here was desiring to justify himself. God is the justifier. Jesus explains that the one who proved to be a neighbour is the one who showed compassion for and took care of the helpless person, taking care of them with mercy:
 
@@ -3674,9 +3674,13 @@ That's not *working* but it is *walking* and it is being obedient to Jesus. The 
 
 > **[Galatians 5:16-18](https://www.biblegateway.com/passage/?search=Galatians%205%3A16-18&version=ESV)** - But I say, **walk by the Spirit**, and you will not gratify the desires of the flesh. For the desires of the flesh are against the Spirit, and the desires of the Spirit are against the flesh, for these are opposed to each other, to keep you from doing the things you want to do. But **if** you are led by the Spirit, you are not under the law.
 
-So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction:
+So I think trusting Jesus, obeying Jesus and believing Jesus' words, and believing in Him should be **true simultaneously**, because people misconstrue Jesus' words to their own destruction. Do we have to obey Christ? Yes we do. We must abide by His teaching:
 
-> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+
+We are saved from doing evil deeds, and brought into the will of God. Our faith is tested. That sounds like the straight and narrow to me:
+
+> **[I Peter 4:12-19](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A12-19&version=ESV)** - Beloved, do not be surprised at the fiery trial when it comes upon you to test you, as though something strange were happening to you. But rejoice insofar as you share Christ's sufferings, that you may also rejoice and be glad when his glory is revealed. If you are insulted for the name of Christ, you are blessed, because the Spirit of glory and of God rests upon you. But let none of you suffer as a murderer or a thief or an evildoer or as a meddler. Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name. For it is time for judgment to begin at the household of God; and if it begins with us, what will be the outcome for those who do not obey the gospel of God? And If the righteous is scarcely saved, what will become of the ungodly and the sinner? Therefore let those who suffer according to God's will entrust their souls to a faithful Creator while doing good. (ESV)
 
 
 ### The Christian life is both gift and duty
@@ -4100,19 +4104,28 @@ And following Jesus' commandments we will love one another:
 > **[John 13:34-35](https://www.biblegateway.com/passage/?search=John%2013%3A34-35&version=ESV)** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
 
-## Some indicators to know for SURE you are saved
+## Some indicators to know for sure you are saved
 
 -   **Talk:** [This is how you can know for SURE that you are saved | Assurance of Salvation | Kaci Nicole - YouTube @time: 12 min 59 sec](https://youtube.com/watch?v=0y-hQrI_sTA&t=779)
 
-For assurance of salvation, here's three indicators:
+For assurance of salvation, here's some indicators:
 
--   Firstly, a change of heart according to the example from **[Matt 27:43-44](https://www.biblegateway.com/passage/?search=Matthew%2027%3A43-44&version=ESV)**.
-    -   the repentant thief had come to a place of humility and fear of God
-    -   he had an awareness of his own sin and the reality of judgement
-    -   he knew that it was only by Jesus, not by his own works that he could be saved
-    -   he affirmed the Lordship and deity of Christ
--   The second thing is a hatred of one's own sin
--   Thirdly, that you have kept the faith despite trials and testing
+-   Trust in Jesus. Pursuaded by Jesus Christ
+    -   Believe that He is the Messiah and Son of God
+-   Humility. Broken over their sin, and grateful by what Jesus has done.
+    -   A change of heart according to the example from **[Matt 27:43-44](https://www.biblegateway.com/passage/?search=Matthew%2027%3A43-44&version=ESV)**.
+        -   the repentant thief had come to a place of humility and fear of God
+        -   he had an awareness of his own sin and the reality of judgement
+        -   he knew that it was only by Jesus, not by his own works that he could be saved
+        -   he affirmed the Lordship and deity of Christ
+    -   A hatred of one's own sin
+    -   Accepted forgiveness from God
+-   Treasuring and valuing Jesus and His words
+-   <ins>Obedience</ins> to Jesus
+    -   Passing forward forgiveness and mercy to others
+-   That you have [kept the faith despite trials and testing](https://www.youtube.com/watch?v=9nlvj9nNVCA)
+    -   What I mean by this is that confidence grows as you go through trials
+-   Receiving the Spirit of God
 
 ***1. A change of heart towards humility, fear of God, belief and trust in Jesus to be saved, an awareness of one's own sin and the reality of judgement, and acknowledging Jesus' Lordship and deity:***
 
@@ -5889,7 +5902,7 @@ I've also had a vision of a star rising in a purple sky (like a morning sunrise)
 
 I believe that cessationists are in error. Modern-day apostles, I believe, like branches on a tree, still branch from the original Apostles, and should preach the same Jesus, and the same gospel, in the same Spirit, and any apostle must have Jesus as their cornerstone:
 
-> **[Matthew 7:14-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A14-20&version=ESV)** - For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
+> **[Matthew 7:14-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A14-20&version=ESV)** - For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
 
 -   **[youtube.com: An Apostle by Command: 1 Timothy 1:1-2, Part 1 @time: 8 min 0 sec](https://youtube.com/watch?v=lr9zJYw9tlc&t=480):** Paul claims extraordinary authority. Here's what he says in 1 Corinthians 14.
     If anyone thinks that he's a prophet or spiritual (in other
@@ -6773,7 +6786,14 @@ so long as we are His sheep, coming to Him (by following His commandments), we w
 
 > **[John 6:37](https://www.biblegateway.com/passage/?search=John%206%3A37&version=ESV)** - All that the Father gives me will come to me, and <ins>whoever comes to me</ins> I will never cast out. (ESV)
 
-I believe that anyone who is trusting in Jesus for His finished work is saved. Believing the gospel and trusting on Him who raised Jesus for the dead for our justification is obeying the gospel. I just think there's more to faith than just belief, to the end of knowing your Saviour (knowing God) / abiding forever. Because we must bear fruit etc. and follow His commandments to come to know Him. I don't condemn anyone who is believing on Him for life through His name.
+I believe that anyone who is trusting Jesus is saved by Him through His finished work. That's not a call to not abide in / obey Jesus' teachings.
+God raised Jesus from the dead for our justification.
+If we believe this fact we believe God's testimony about Jesus - that's important and it shows we trust God.
+Believing the gospel and trusting Father God, trusting Jesus, trusting God's words, trusting Jesus and God's words spoken through Jesus is obeying the gospel.
+When we trust Jesus, we believe who He is and what He accomplished and we believe His words.
+I also think there's more to faith in Jesus than just an intellectual belief as far as getting to know your Saviour (knowing God) and abiding forever.
+I think we need to actually trust Jesus - so we believe His words when we hear them.
+Because we must bear fruit etc. and follow His commandments to come to know Him. I don't condemn anyone who is believing on Him for life through His name.
 
 Doing the will of God is what it means to be led by the Spirit. So you have to **do** the will of God, being a servant of Christ under the law of Christ, to have the blessing of not being condemned by the law of Moses:
 
@@ -6803,7 +6823,7 @@ Those who love Him, obey Him:
 
 We love God and our brothers and sisters in Christ by following God's commandments:
 
-> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 The crown of life is gifted to those who are obedient, and have been tested. I think this verse can also be taken in the literal sense:
 
@@ -7955,9 +7975,9 @@ This passage is condemning submitting to **worldly** / **human** precepts and im
 
 ### Narrow is the gate and hard is the way that leads to life
 
-> **[Matthew 7:13](https://www.biblegateway.com/passage/?search=Matthew%207%3A13&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many.
+I think this shows the strait and narrow way involves repentance and sanctification:
 
-> **[Matthew 7:14](https://www.biblegateway.com/passage/?search=Matthew%207%3A14&version=ESV)** - For the gate is narrow and the way is hard that leads to life, and those who find it are few.
+> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
 
 > **[Luke 13:24](https://www.biblegateway.com/passage/?search=Luke%2013%3A24&version=ESV)** - Strive to enter through the narrow door. For many, I tell you, will seek to enter and will not be able.
 
@@ -7997,7 +8017,7 @@ A person needs to have obedient, believing faith in Jesus Christ to take the nar
 
 These people did not obey Jesus, and produced bad fruit:
 
-> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
+> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
 
 These people did not believe, and their works were not done in faith:
 
@@ -8005,7 +8025,7 @@ These people did not believe, and their works were not done in faith:
 
 These people didn't endure in faith:
 
-> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few.
+> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few.
 
 These people just sat around watching Jesus but didn't obey Him:
 
@@ -8023,7 +8043,7 @@ We strive to enter through Jesus who is the door:
     6  Definition: to contend for a prize, struggle
     7  Usage: I am struggling, striving (as in an athletic contest or warfare); I contend, as with an adversary.
 
-> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. (ESV)
 
 > **[Luke 13:24-30](https://www.biblegateway.com/passage/?search=Luke%2013%3A24-30&version=ESV)** - **[Strive (75. agónizomai)](https://biblehub.com/greek/75.htm)** to enter through the narrow door. <ins>For many, I tell you, will **seek** to enter and will not be able.</ins> When once the master of the house has risen and shut the door, and you begin to stand outside and to knock at the door, saying, Lord, open to us, then he will answer you, I do not know where you come from. Then you will begin to say, We ate and drank in your presence, and you taught in our streets. But he will say, I tell you, I do not know where you come from. Depart from me, all you workers of evil ([93. adikia](https://biblehub.com/greek/93.htm))! In that place there will be weeping and gnashing of teeth, *when you see Abraham and Isaac and Jacob and all the prophets in the kingdom of God but you yourselves cast out.* And people will come from east and west, and from north and south, and recline at table in the kingdom of God. And behold, some are last who will be first, and some are first who will be last. (ESV)
 
@@ -8092,14 +8112,14 @@ Judas betrayed Jesus after being chosen:
 
 ### The way is easy that leads to destruction
 
-> **[Matthew 7:13](https://www.biblegateway.com/passage/?search=Matthew%207%3A13&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many.
+> **[Matthew 7:13-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-16&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?
 
 I'm not the judge. But Jesus's words which He left us will be the judge.
 
 
 ### Narrow gate
 
-> **[II Peter 1:10](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A10&version=ESV)** - Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. (ESV)
+> **[II Peter 1:5-10](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A5-10&version=ESV)** - For this very reason, make every effort to supplement your faith with virtue, and virtue with knowledge, and knowledge with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love. For if these qualities are yours and are increasing, they keep you from being ineffective or unfruitful in the knowledge of our Lord Jesus Christ. For whoever lacks these qualities is so nearsighted that he is blind, having forgotten that he was cleansed from his former sins. Therefore, brothers, be all the more diligent to make your calling and election sure, for if you practice these qualities you will never fall. (ESV)
 
 > **[Hebrews 4:11](https://www.biblegateway.com/passage/?search=Hebrews%204%3A11&version=ESV)** - Let us therefore strive to enter that rest, so that no one may fall by the same sort of disobedience. (ESV)
 
@@ -8995,9 +9015,9 @@ We must put Jesus' words into action:
 
 > **[Matthew 7:24-28](https://www.biblegateway.com/passage/?search=Matthew%207%3A24-28&version=ESV)** - Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. And when Jesus finished these sayings, the crowds were astonished at his teaching, (ESV)
 
-The words which Jesus had just spoken which he was probably referring to. We should be doers of the Law, specifically to **love** - to fulfill the Royal Law:
+The words which Jesus had just spoken which he was probably referring to. We should be doers of the Law, specifically to **love** - to fulfill the Royal Law - and the "strait and narrow" involves repentance and sanctification:
 
-> **[Matthew 7:1-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A1-20&version=ESV)** - **Judge not, that you be not judged**. For <ins>with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you.</ins> Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first **take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.** Do not give dogs what is holy, and **do not throw your pearls before pigs**, lest they trample them underfoot and turn to attack you. **Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you**. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened. Or which one of you, if his son asks him for bread, will give him a stone? Or if he asks for a fish, will give him a serpent? If you then, who are evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask him! So **whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets.** Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
+> **[Matthew 7:1-20](https://www.biblegateway.com/passage/?search=Matthew%207%3A1-20&version=ESV)** - **Judge not, that you be not judged**. For <ins>with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you.</ins> Why do you see the speck that is in your brother's eye, but do not notice the log that is in your own eye? Or how can you say to your brother, Let me take the speck out of your eye, when there is the log in your own eye? You hypocrite, first **take the log out of your own eye, and then you will see clearly to take the speck out of your brother's eye.** Do not give dogs what is holy, and **do not throw your pearls before pigs**, lest they trample them underfoot and turn to attack you. **Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you**. For everyone who asks receives, and the one who seeks finds, and to the one who knocks it will be opened. Or which one of you, if his son asks him for bread, will give him a stone? Or if he asks for a fish, will give him a serpent? If you then, who are evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask him! So **whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets.** Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? So, every healthy tree bears good fruit, but the diseased tree bears bad fruit. A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit. Every tree that does not bear good fruit is cut down and thrown into the fire. Thus you will recognize them by their fruits. (ESV)
 
 > **[Romans 13:10](https://www.biblegateway.com/passage/?search=Romans%2013%3A10&version=ESV)** - Love does no wrong to a neighbor; therefore love is the fulfilling of the law. (ESV)
 
@@ -9367,7 +9387,7 @@ We must hold fast to Jesus, the Head:
 
 Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
 
-> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 > **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
@@ -13770,7 +13790,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org476fae8)
+See: [33.4.1](#org9c8581f)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -14407,7 +14427,7 @@ Even the demons believe God is one and they shudder. The faithful believe God an
 
 Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
 
-> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 > **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
@@ -19675,9 +19695,9 @@ To do the will of Father God, one must do it in truth - God knows and can see th
 
 > **[II Corinthians 11:31](https://www.biblegateway.com/passage/?search=2%20Corinthians%2011%3A31&version=ESV)** - The God and Father of the Lord Jesus, he who is blessed forever, knows that I am not lying.
 
-Don't be a ravenous wolf on the inside (repent from sin)!
+Don't be a ravenous wolf on the inside (repent from sin)! Embrace repentance and sanctification and abide in the teachings of Christ. Be doers of Christ's law:
 
-> **[Matthew 7:14-23](https://www.biblegateway.com/passage/?search=Matthew%207%3A14-23&version=ESV)** - For the gate is narrow and the way is hard that leads to life, and those who find it are few.  Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves.  You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?  So, every healthy tree bears good fruit, but the diseased tree bears bad fruit.  A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit.  Every tree that does not bear good fruit is cut down and thrown into the fire.  Thus you will recognize them by their fruits.  Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.
+> **[Matthew 7:14-23](https://www.biblegateway.com/passage/?search=Matthew%207%3A14-23&version=ESV)** - For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few.  Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves.  You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles?  So, every healthy tree bears good fruit, but the diseased tree bears bad fruit.  A healthy tree cannot bear bad fruit, nor can a diseased tree bear good fruit.  Every tree that does not bear good fruit is cut down and thrown into the fire.  Thus you will recognize them by their fruits.  Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.
 
 We **must** obey God's commandments to love Him and love our neighbour, and have faith in Jesus Christ.
 We must submit to the righteousness of God.
@@ -22083,7 +22103,7 @@ Knowing God means loving as Jesus loved us:
 
 In other words, the <ins>real</ins> Christians are the ones who know that we must **trust** Jesus and **obey** Jesus' commandments out of thankful love for Jesus as we also **believe** Jesus, and believe God sent Him:
 
-> **[I John 5:1-5](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-5&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
+> **[I John 5:1-5](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-5&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when we love God and obey his commandments. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. For everyone who has been born of God overcomes the world. And this is the victory that has overcome the world—our faith. Who is it that overcomes the world except the one who believes that Jesus is the Son of God? (ESV)
 
 And we should be building each other up, helping each other attain unity of faith and knowledge of the Lord Jesus Christ, the Son of God:
 
@@ -22184,7 +22204,7 @@ But it also makes me think that I really wish I had tried to follow Jesus years 
 
 And also, I can't really claim "Christian persecution", I don't think.
 People have generally respected me as a Christian.
-ALso, I live in New Zealand. I've had it quite good, to be honest.
+Also, I live in [New Zealand](https://www.youtube.com/watch?v=ZJx0uyxQdf4). I've had it quite good, to be honest.
 
 
 ### We bless back and endure
@@ -22704,7 +22724,7 @@ Peter believed/received/obeyed/trusted like a child of God (he cooperated) to le
 
 > **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me. (ESV)
 
-> **[I John 5:1-2](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-2&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
+> **[I John 5:1-2](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-2&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
 
 
 ### Have active faith in Jesus and **trust** in Him. This is the good news:
@@ -27785,7 +27805,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org476fae8)
+See: [33.4.1](#org9c8581f)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -29756,7 +29776,7 @@ Treat others as you would like to be treated:
 
 Choose the narrow path to life:
 
-> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. (ESV)
 
 Look out for false prophets:
 
@@ -30156,7 +30176,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 
 ### 
 
-> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow and the way is hard that leads to life, and those who find it are few. (ESV)
+> **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. (ESV)
 
 
 ### 
@@ -35501,7 +35521,7 @@ It's obedience which leads to righteousness, even the righteousness of faith:
 
 Believing Father God Jehovah, loving Him, obeying His commandments, loving and obeying Jesus Christ His son, all must be true together, even to have a sound definition of what love is:
 
-> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and everyone who loves the Father loves whoever has been born of him. By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
+> **[I John 5:1-3](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-3&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when **we love God and obey his commandments**. For this is the love of God, that we keep his commandments. And his commandments are not burdensome. (ESV)
 
 > **[John 8:42](https://www.biblegateway.com/passage/?search=John%208%3A42&version=ESV)** - Jesus said to them, If God were your Father, you would love me, for I came from God and I am here. I came not of my own accord, but he sent me.
 
