@@ -653,7 +653,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org615e69d) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org0e6ddb5) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -4113,7 +4113,7 @@ For assurance of salvation, here's some indicators:
 -   Trust in Jesus. Pursuaded by Jesus Christ
     -   Believe that He is the Messiah and Son of God
 -   Humility. Broken over their sin, and grateful by what Jesus has done.
-    -   A change of heart according to the example from **[Matt 27:43-44](https://www.biblegateway.com/passage/?search=Matthew%2027%3A43-44&version=ESV)**.
+    -   A change of heart like the example of the repentant thief (Read: **[Matt 27:43-44](https://www.biblegateway.com/passage/?search=Matthew%2027%3A43-44&version=ESV)** and **[Luke 23:39-43](https://www.biblegateway.com/passage/?search=Luke%2023%3A39-43&version=ESV)**).
         -   the repentant thief had come to a place of humility and fear of God
         -   he had an awareness of his own sin and the reality of judgement
         -   he knew that it was only by Jesus, not by his own works that he could be saved
@@ -7632,7 +7632,7 @@ God forgive us and grant us sanctification. I know I still have issues, and I wa
 
 > **[Luke 9:23-24](https://www.biblegateway.com/passage/?search=Luke%209%3A23-24&version=ESV)** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. (ESV)
 
-> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate (**[miseo](https://biblehub.com/greek/3404.htm)**) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
+> **[Luke 14:26](https://www.biblegateway.com/passage/?search=Luke%2014%3A26&version=ESV)** - If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. (ESV)
 
 > **[Luke 14:27](https://www.biblegateway.com/passage/?search=Luke%2014%3A27&version=ESV)** - Whoever does not bear his own cross and come after me cannot be my disciple. (ESV)
 
@@ -7657,11 +7657,17 @@ See:
 
 ### The high cost of following Christ
 
-Change your mind and He will change your heart
+Billy Graham said here, "Change your mind and He will change your heart."
 
 -   **Sermon:** [youtube.com: The High Cost of Following Christ | Billy Graham Classic Sermon](https://www.youtube.com/watch?v=-vOGxGce3OM)
 
-> **[Luke 14:27-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A27-33&version=ESV)** - Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+> **[Matthew 13:44](https://www.biblegateway.com/passage/?search=Matthew%2013%3A44&version=ESV)** - The kingdom of heaven is like treasure hidden in a field, which a man found and covered up. Then in his joy he goes and sells all that he has and buys that field. (ESV)
+
+We are supposed to treasure people, that is true. But Jesus has to be our number 1. Jesus is worth more than anyone or anything. Marriage cannot be idolatry. God is worth more and needs to come first.
+
+> **[Matthew 10:37](https://www.biblegateway.com/passage/?search=Matthew%2010%3A37&version=ESV)** - Whoever loves father or mother more than me is not worthy of me, and whoever loves son or daughter more than me is not worthy of me. (ESV)
+
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. **Whoever does not bear his own cross and come after me cannot be my disciple**. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, **any one of you who does not renounce all that he has cannot be my disciple.** (ESV)
 
 Do not love the world:
 
@@ -7674,6 +7680,33 @@ Do not love the world:
 > **[Romans 12:1](https://www.biblegateway.com/passage/?search=Romans%2012%3A1&version=ESV)** - I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. (ESV)
 
 > **[Matthew 24:9-13](https://www.biblegateway.com/passage/?search=Matthew%2024%3A9-13&version=ESV)** - Then <ins>they will deliver you up to tribulation and put you to death, and you will be hated by all nations for my name's sake</ins>. And then <ins>many will fall away and betray one another and hate one another</ins>. And many false prophets will arise and lead many astray. And because <ins>lawlessness will be increased, the love of many will grow cold</ins>. But <ins>the one who endures to the end will be saved.</ins> (ESV)
+
+-   Do not resist the one who is evil
+    -   **[Romans 12:21](https://www.biblegateway.com/passage/?search=Romans%2012%3A21&version=ESV)** - Do not be overcome by evil, but overcome evil with good. (ESV)
+    -   if anyone slaps you on the right cheek, turn to him the other also
+    -   if anyone would sue you and take your tunic, let him have your cloak as well
+    -   if anyone forces you to go one mile, go with him two miles
+    -   if anyone forces you to go one mile, go with him two miles
+    -   Give to the one who begs from you, and do not refuse the one who would borrow from you
+    -   Love your enemies and pray for those who persecute you
+
+> **[Matthew 5:38-48](https://www.biblegateway.com/passage/?search=Matthew%205%3A38-48&version=ESV)** - You have heard that it was said, An eye for an eye and a tooth for a tooth. But I say to you, **Do not resist the one who is evil**. But **if anyone slaps you on the right cheek, turn to him the other also**. And **if anyone would sue you and take your tunic, let him have your cloak as well**. And **if anyone forces you to go one mile, go with him two miles**. **Give to the one who begs from you, and do not refuse the one who would borrow from you**. You have heard that it was said, You shall love your neighbor and hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) your enemy. But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father who is in heaven. For he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust. For if you love those who love you, what reward do you have? Do not even the tax collectors do the same? And if you greet only your brothers, what more are you doing than others? Do not even the Gentiles do the same? You therefore must be perfect, as your heavenly Father is perfect. (ESV)
+
+With Jesus' commandments in mind, we should have joy when the time of testing happens and things are taken away from us. It can take a really long time. But we need to not shrink back. I'm also speaking to myself.
+
+> **[Hebrews 10:34-39](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A34-39&version=ESV)** - For **you had compassion on those in prison, and you joyfully accepted the plundering of your property**, since you knew that **you yourselves had a better possession and an abiding one**. Therefore do not throw away your confidence, which has a great reward. For you have need of endurance, so that **when you have done the will of God you may receive what is promised**. For, Yet a little while, and the coming one will come and will not delay; but my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. But we are not of those who shrink back and are destroyed, but of those who have faith and preserve their souls. (ESV)
+
+We must draw closer to Jesus and seek Jesus first and **trust Jesus** because to be in relationship with God is the most important thing. To not be in relationship with God is to abide in death:
+
+> **[Matthew 6:31-33](https://www.biblegateway.com/passage/?search=Matthew%206%3A31-33&version=ESV)** - Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But **seek first the kingdom of God and his righteousness, and all these things will be added to you**. (ESV)
+
+We are commanded to reject the idols to treasure God first. If we do this then we draw near to God and God draws near to us:
+
+> **[II Corinthians 6:17-18](https://www.biblegateway.com/passage/?search=2%20Corinthians%206%3A17-18&version=ESV)** - Therefore **go out from their midst, and be separate from them**, says the Lord, and **touch no unclean thing**; **then I will welcome you**, and I will be a father to you, and you shall be sons and daughters to me, says the Lord Almighty. (ESV)
+
+> **[James 4:8](https://www.biblegateway.com/passage/?search=James%204%3A8&version=ESV)** - Draw near to God, and he will draw near to you. Cleanse your hands, you sinners, and purify your hearts, you double-minded. (ESV)
+
+> **[Psalms 73:25-28](https://www.biblegateway.com/passage/?search=Psalms%2073%3A25-28&version=ESV)** - Whom have I in heaven but you? And **there is nothing on earth that I desire besides you**. <ins>My flesh and my heart may fail, but **God is the strength of my heart and my portion** forever.</ins> For behold, **those who are far from you shall perish; you put an end to everyone who is unfaithful to you**. But for me **it is good to be near God;** I have made the Lord GOD my refuge, that I may tell of all your works. (ESV)
 
 
 ### Give our mind to Christ
@@ -13790,7 +13823,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org9c8581f)
+See: [33.4.1](#org5f4e0e2)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17154,7 +17187,7 @@ As the Apostle Paul asks, "Let no one cause me trouble, for I bear on my body th
 
 Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
-> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
 Look, here's a blessing for loving Jesus and not being an enemy of the cross:
 
@@ -19967,7 +20000,7 @@ Potentially still driven by:
 
 Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
-> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
 Look, here's a blessing for loving Jesus and not being an enemy of the cross:
 
@@ -20043,7 +20076,7 @@ are supposed to be followed by Christians.
 
 Jesus still refers to new disciples as "little ones". Disciples have been obediently following Jesus:
 
-> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
+> **[Luke 14:26-33](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-33&version=ESV)** - If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, This man began to build and was not able to finish. Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. (ESV)
 
 Look, here's a blessing for loving Jesus and not being an enemy of the cross:
 
@@ -26633,7 +26666,7 @@ Jesus reigns and inherits all things. Jesus is the radiance of the glory of God:
 
 > **[Matthew 19:29](https://www.biblegateway.com/passage/?search=Matthew%2019%3A29&version=ESV)** - And everyone who has left houses or brothers or sisters or father or mother or children or lands, for my name's sake, will receive a hundredfold and will inherit eternal life. (ESV)
 
-> **[Luke 14:26-28](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-28&version=ESV)** If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it?
+> **[Luke 14:26-28](https://www.biblegateway.com/passage/?search=Luke%2014%3A26-28&version=ESV)** If anyone comes to me and does not hate ([3404. miseó, 3404 miséō – properly, to detest (on a comparative basis); hence, denounce; to love someone or something less than someone (something) else, i.e. to renounce one choice in favor of another.](https://biblehub.com/greek/3404.htm)) his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it?
 
 > **[John 12:25](https://www.biblegateway.com/passage/?search=John%2012%3A25&version=ESV)** - Whoever loves his life loses it, and whoever hates his life in this world will keep it for eternal life. (ESV)
 
@@ -27805,7 +27838,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org9c8581f)
+See: [33.4.1](#org5f4e0e2)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
