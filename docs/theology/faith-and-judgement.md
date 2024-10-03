@@ -15,61 +15,79 @@ I've also added parts of my own testimony. It's my hope that this Bible study he
 
 This is a short preview of where I'm at with my theology. I don't claim to know everything or to have perfect theology:
 
-     1  If we believe on Yeshua's (Jesus's) name it's typically the initial act of
-     2  obedience of a Christian, Jesus having commanded us to believe on His name as
-     3  Son of God, Christ, Messiah as foretold by the prophets.
-     4  
-     5  Trust, obedience, belief and faith are not really separate things when it
-     6  comes to believing the Word of God in the heart, and if a person has put their
-     7  trust in Jesus then they've done something which is in the will of God.
-     8  
-     9  Our faith and obedience are supposed to increase as we are sanctified.
+     1  If we trust God, believing on Yeshua's (Jesus's) name, it's typically the
+     2  initial act of obedience of a Christian, Jesus having commanded us to trust
+     3  Him, and believe Him, especialy concerning His name as Son of God, Christ,
+     4  Messiah as foretold by the prophets, and we are sealed by the Holy Spirit when
+     5  we do this.
+     6  
+     7      Acts 10:43 - To him all the prophets bear witness that everyone who
+     8      believes in him receives forgiveness of sins through his name.
+     9      (ESV)
     10  
-    11  Trust, belief and obedience, and even agape and knowledge of God when they are
-    12  settled in the heart is what God sees and God is our justifier, and He
-    13  justifies the one who puts their faith/trust in Jesus Christ.
-    14  
-    15  We believe by faith that we are justified by the blood of Jesus and just get
-    16  to serving God with agape love proceeding from a good conscience having
-    17  believed the Gospel and placed our faith in Christ.
-    18  
-    19  Christ died for our sins according to the Scriptures, He was buried, He was
-    20  raised on the third day according to the Scriptures, and He appeared to many
-    21  eye-witnesses.
+    11      Ephesians 1:7-12 - In him we have redemption through his blood, the
+    12      forgiveness of our trespasses, according to the riches of his grace, which
+    13      he lavished upon us, in all wisdom and insight making known to us the
+    14      mystery of his will, according to his purpose, which he set forth in
+    15      Christ as a plan for the fullness of time, to unite all things in him,
+    16      things in heaven and things on earth.
+    17      In him we have obtained an inheritance, having been predestined according
+    18      to the purpose of him who works all things according to the counsel of his
+    19      will, so that we who were the first to hope in Christ might be to the
+    20      praise of his glory.
+    21      (ESV)
     22  
-    23  In this way did God agape love (treasure/value) the world, that He gave His
-    24  Only-Begotten Son that everyone who is trusting/believing in Him may not
-    25  perish, but may have life everlasting which is to be reconciled to our Creator
-    26  and His Son, in relationship with God forever, never perishing nor being cut
-    27  off from our source of life and all that is good.
+    23  Trust, obedience, belief and faith are not really separate things when it
+    24  comes to believing the Word of God in the heart, and if a person has put their
+    25  trust in Jesus then they've done something which is in the will of God.
+    26  
+    27  Our faith and obedience are supposed to increase as we are sanctified.
     28  
-    29  Agape love is a treasuring/valuing love and God the Father and Jesus God the
-    30  Son should be our first agape love, and those in the family of Christ we must
-    31  also agape love, and our spouses we must agape love and we are even called to
-    32  agape all people, but we're supposed to have no agape for this world.
-    33  
-    34  Agape-loving our neighbour as ourself includes not bearing a grudge against
-    35  our neighbour and not taking vengeance - it's loving as we have been loved and
-    36  forgiven by God through Jesus, passing the agape love and mercy forwards.
-    37  
-    38  We move forward serving God with hope to see His glory.
-    39  
-    40  Obedience is in the heart, along with belief in the Truth and understanding of
-    41  the gospel.
-    42  
-    43  Obedience can exist without work.
-    44  
-    45  Jesus said, "The spirit is indeed willing but the flesh is weak." The law can
-    46  also be followed by faith where it's a matter of seeking praise from God and
-    47  not from men.
-    48  
-    49  Our faith should be modelled on Abraham's faith.
-    50  
-    51  We're supposed to have joy in our obedience to God.
-    52  
-    53  We're supposed to go from agapeing darkness to agapeing God's light, and into
-    54  walking in the light, walking in God's will, and we're supported by God's
-    55  Spirit as we are doing this.
+    29  Trust, belief and obedience, and even agape and knowledge of God when they are
+    30  settled in the heart is what God sees and God is our justifier, and He
+    31  justifies the one who puts their faith/trust in Jesus Christ.
+    32  
+    33  We believe by faith that we are justified by the blood of Jesus and just get
+    34  to serving God with agape love proceeding from a good conscience having
+    35  believed the Gospel and placed our faith in Christ.
+    36  
+    37  Christ died for our sins according to the Scriptures, He was buried, He was
+    38  raised on the third day according to the Scriptures, and He appeared to many
+    39  eye-witnesses.
+    40  
+    41  In this way did God agape love (treasure/value) the world, that He gave His
+    42  Only-Begotten Son that everyone who is trusting/believing in Him may not
+    43  perish, but may have life everlasting which is to be reconciled to our Creator
+    44  and His Son, in relationship with God forever, never perishing nor being cut
+    45  off from our source of life and all that is good.
+    46  
+    47  Agape love is a treasuring/valuing love and God the Father and Jesus God the
+    48  Son should be our first agape love, and those in the family of Christ we must
+    49  also agape love, and our spouses we must agape love and we are even called to
+    50  agape all people, but we're supposed to have no agape for this world.
+    51  
+    52  Agape-loving our neighbour as ourself includes not bearing a grudge against
+    53  our neighbour and not taking vengeance - it's loving as we have been loved and
+    54  forgiven by God through Jesus, passing the agape love and mercy forwards.
+    55  
+    56  We move forward serving God with hope to see His glory.
+    57  
+    58  Obedience is in the heart, along with belief in the Truth and understanding of
+    59  the gospel.
+    60  
+    61  Obedience can exist without work.
+    62  
+    63  Jesus said, "The spirit is indeed willing but the flesh is weak." The law can
+    64  also be followed by faith where it's a matter of seeking praise from God and
+    65  not from men.
+    66  
+    67  Our faith should be modelled on Abraham's faith.
+    68  
+    69  We're supposed to have joy in our obedience to God.
+    70  
+    71  We're supposed to go from agapeing darkness to agapeing God's light, and into
+    72  walking in the light, walking in God's will, and we're supported by God's
+    73  Spirit as we are doing this.
 
 We serve the Only True God, the Most High God, Jehovah and Jesus Christ who He has sent - the same God, and we are found in Christ Jesus:
 
@@ -653,7 +671,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org0e6ddb5) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfd82a88) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -7686,7 +7704,6 @@ Do not love the world:
     -   if anyone slaps you on the right cheek, turn to him the other also
     -   if anyone would sue you and take your tunic, let him have your cloak as well
     -   if anyone forces you to go one mile, go with him two miles
-    -   if anyone forces you to go one mile, go with him two miles
     -   Give to the one who begs from you, and do not refuse the one who would borrow from you
     -   Love your enemies and pray for those who persecute you
 
@@ -11252,6 +11269,19 @@ Defiling passion <ins>defiles</ins>:
 
 > **[I Corinthians 6:9-10](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A9-10&version=ESV)** - Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers will inherit the kingdom of God. (ESV)
 
+I think John Piper's view on this is sound:
+
+-   **[youtube.com: Is Drinking Alcohol a Sin?](https://www.youtube.com/watch?v=oXYk6Hz0OfU):** It could be.
+    Drinking water when you should be giving a glass to
+    someone else in need - that's sin. Drinking
+    water when you should be paying more
+    reverence to the preaching of God's word -
+    that's a sin. Drinking water when just
+    someone just warned you it's
+    contaminated it may kill you - that sin. So
+    drinking water can be sin and presumably
+    then alcohol could be sin, but it may not be.
+
 [youtube.com: CAN CHRISTIANS DRINK/SMOKE?! {The Harsh Truth&#x2026;}](https://www.youtube.com/watch?v=xmDugyc2_zA)
 
 
@@ -13823,7 +13853,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org5f4e0e2)
+See: [33.4.1](#org195b7ef)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -14165,7 +14195,8 @@ God rewards faith and may choose to reveal Himself after a while serving God in 
 -   Secondly, obedient action is nothing to boast about before God, because God commanded you to do it.
     -   **[Romans 4:2](https://www.biblegateway.com/passage/?search=Romans%204%3A2&version=ESV)** - For if Abraham was justified by works, he has something to boast about, but not before God. (ESV)
 -   Thirdly, "working for God" is as step beyond obedient action.
-    -   **[I Corinthians 9:12](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12&version=ESV),9:15-18** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting. For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For if I do this of my own will, I have a reward, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel. (ESV)
+    -   Paul doesn't claim his full rights in the gospel (even rights shown by God's precepts in God's law) that He might receive reward from God for going beyond the call of His duty:
+    -   **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
 
 In God's mercy He has shown us the Way to be reconciled with Him.
 He has given us Jesus, and we just need to have faith in Him.
@@ -16150,6 +16181,8 @@ The outcome of being set free from sin and becoming a slave to God is receiving 
 > **[Romans 8:33](https://www.biblegateway.com/passage/?search=Romans%208%3A33&version=ESV)** -  **Who shall bring any charge against God's elect?**  It is God who justifies.  (ESV)
 
 > **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)** - But now that you have been set free from sin and have become slaves to God, the fruit you reap leads to holiness, and the outcome is eternal life. For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. (BSB)
+
+-   **Salvation is forever. Once saved, always saved. Once received eternal life, it's forever:** [youtube.com: John MacArthur - How do I know if I'm really saved?](https://www.youtube.com/watch?v=9nlvj9nNVCA)
 
 A person must **do** the will **of Father God** (not their own will); They must be obedient.
 Faith and obedience are inseparable.
@@ -22536,6 +22569,8 @@ Of course we cannot inherit righteousness, peace and joy without putting to deat
 
 -   **Interesting fact:** [Te reo Māori](https://www.reomaori.co.nz/) doesn't have any filthy words. Every language has capacity to express anger, disgust or outrage. [Te reo Māori](https://www.reomaori.co.nz/) is no different. There are no single words that equate to English equivalents in terms of obscenity of insult. As Alan pointed out, words for body parts, copulation etc are just words — quite neutral.
 
+-   **Watch:** [youtube.com: John Piper - On Cussing](https://www.youtube.com/watch?v=fKY5vRFu5j0)
+
 I still think though, that lying, slander and obscene talk can be done in any language using neutral words, so we should not use language in a bad way.
 
 Put to death the earthly in us:
@@ -25669,15 +25704,17 @@ Also, I think eternal life is for those who:
 
 This is my current understanding. So most likely it is not tolerated in the kingdom of God.
 
-I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, and receive eternal life, but I think repentance from sin and sanctification are quite important for inheriting the Kingdom.
+I 100% believe that anyone who has faith in Jesus Christ can be saved / spared from being condemned to hell, and receive eternal life, but I think repentance from sin and sanctification are quite important for inheriting the Kingdom and indeed from being spared from being given over to our own lusts and from being spared from the wrath of God that comes with that. We trust Jesus and He leads us out of darkness.
 
 > **[I Corinthians 6:9-10](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A9-10&version=ESV)** - Do you not know that the unrighteous will not inherit the kingdom of God? Do not be deceived: neither the sexually immoral, nor idolaters, nor adulterers, nor men who practice homosexuality, nor thieves, nor the greedy, nor drunkards, nor revilers, nor swindlers **will inherit the kingdom of God**. (ESV)
 
 > **[Galatians 5:19-21](https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV)** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things **will not inherit the kingdom of God**. (ESV)
 
-Believers have eternal life and are not condemned:
+> **[I John 2:19](https://www.biblegateway.com/passage/?search=1%20John%202%3A19&version=ESV)** - They went out from us, but they were not of us; for if they had been of us, they would have continued with us. But they went out, that it might become plain that they all are not of us. (ESV)
 
-> **Romans 10:11** - For the Scripture says, Everyone who believes in him will not be put to shame. (ESV)
+Believers (trusters) of Jesus Christ have eternal life and are not condemned:
+
+> **[Romans 10:11](https://www.biblegateway.com/passage/?search=Romans%2010%3A11&version=ESV)** - For the Scripture says, Everyone who believes in him will not be put to shame. (ESV)
 
 Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
 
@@ -27838,7 +27875,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org5f4e0e2)
+See: [33.4.1](#org195b7ef)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -34926,9 +34963,9 @@ Paul says:
 
 > **[I Corinthians 9:3-14](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A3-14&version=ESV)** - This is my defense to those who would examine me. Do we not have the right to eat and drink? Do we not have the right to take along a believing wife, as do the other apostles and the brothers of the Lord and Cephas? Or is it only Barnabas and I who have no right to refrain from working for a living? Who serves as a soldier at his own expense? Who plants a vineyard without eating any of its fruit? Or who tends a flock without getting some of the milk? Do I say these things on human authority? Does not the Law say the same? For it is written in the Law of Moses, You shall not muzzle an ox when it treads out the grain. Is it for oxen that God is concerned? Does he not speak entirely for our sake? It was written for our sake, because the plowman should plow in hope and the thresher thresh in hope of sharing in the crop. If we have sown spiritual things among you, is it too much if we reap material things from you? If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. Do you not know that those who are employed in the temple service get their food from the temple, and those who serve at the altar share in the sacrificial offerings? In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel. (ESV)
 
-Paul doesn't claim his full rights (even by God's law) that He might receive reward from God for going beyond the call of His duty:
+Paul doesn't claim his full rights in the gospel (even rights shown by God's precepts in God's law) that He might receive reward from God for going beyond the call of His duty:
 
-> **[I Corinthians 9:12](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12&version=ESV),9:15-18** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting. For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For if I do this of my own will, I have a reward, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel. (ESV)
+> **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
 
 We must keep and accept the precepts of God over the precepts of men:
 
