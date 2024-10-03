@@ -671,7 +671,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfd82a88) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org960dd80) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1812,9 +1812,11 @@ I just want to say that I don't observe any of these seasons, but it still happe
 
 As I have repented to be corrected by the Word of God, agreeing with it and endeavoring to obey the Gospel of Jesus Christ, it feels as though I have been rejecting lots and lots of heresies, and rejecting lots and lots of false religion, and I hope that this helps others also to be corrected. I have been trying to be corrected by obedience to the Gospel of Jesus a lot since recording this 'dream' / conversation in my sleep. After actively trying to be obedient to the Truth, obedient to Jesus, saved to obey Jesus, I have come to distrust odd spirits which speak to me in my sleep.
 
-I believe that among other things I have had to reject or repent from:
+I believe that among other things I have had to fight against, reject or repent from:
 
 -   a spirit of Mormomism
+    -   [youtube.com: Mormon Religion in a nutshell - John MacArthur](https://www.youtube.com/watch?v=5uOqHX10OSA)
+    -   Thanks, John MacArthur. Yeah, I do not affirm Mormonism at all.
 -   a spirit of Islam
     -   [youtube.com: How Thomas Aquinas refuted Muhammad and Islam](https://www.youtube.com/watch?v=Vf70jEdwOF0)
     -   [Summa Contra Gentiles of St. Thomas Aquinas](https://basilica.ca/documents/2016/10/St.%20Thomas%20Aquinas-The%20Summa%20Contra%20Gentiles.pdf)
@@ -13853,7 +13855,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org195b7ef)
+See: [33.4.1](#org4f92b78)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -20063,6 +20065,12 @@ Mature and stable. Grown beyond fleshly things. Not sucked into the old ways of 
 The righteousness from God that depends on faith (obedient faith). We are found in Christ by exercising and passing forward Christ's love. Mature in Christ means knowing Jesus, the Truth, which necessitates obeying Him:
 
 > **[Philippians 3:8-17](https://www.biblegateway.com/passage/?search=Philippians%203%3A8-17&version=ESV)** - Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord. For his sake I have suffered the loss of all things and count them as rubbish, in order that I may gain Christ and **be found in him**, not having a righteousness of my own that comes from the law, but that which comes through faith in Christ, the righteousness from God that depends on faith— that I may **know him and the power of his resurrection**, and may <ins>share his sufferings</ins>, **becoming like him in his death**, that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus. **Let those of us who are mature think this way**, and if in anything you think otherwise, God will reveal that also to you. Only let us hold true to what we have attained. Brothers, join in imitating me, and keep your eyes on those who walk according to the example you have in us. (ESV)
+
+We progress in the Christian life practicing to distinguish good from evil:
+
+> **[I Corinthians 2:15](https://www.biblegateway.com/passage/?search=1%20Corinthians%202%3A15&version=ESV)** - The spiritual person judges all things, but is himself to be judged by no one. (ESV)
+
+> **[Hebrews 5:9-14](https://www.biblegateway.com/passage/?search=Hebrews%205%3A9-14&version=ESV)** - And being made perfect, he became the source of eternal salvation to all who obey him, being designated by God a high priest after the order of Melchizedek. About this we have much to say, and it is hard to explain, since you have become dull of hearing. For though by this time you ought to be teachers, you need someone to teach you again the basic principles of the oracles of God. You need milk, not solid food, for everyone who lives on milk is unskilled in the word of righteousness, since he is a child. But solid food is for the mature, for those who have their powers of discernment trained by constant practice to distinguish good from evil. (ESV)
 
 Jesus said to these believers that if they abide in His word (and I believe that means keep His word, even in obedience), they are His disciples - so a person can be a believer before they are a disciple. But we're supposed to make this transition:
 
@@ -27875,7 +27883,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org195b7ef)
+See: [33.4.1](#org4f92b78)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
