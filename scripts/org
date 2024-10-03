@@ -109,7 +109,7 @@ case "$opt" in
             elif lit "$uri" | grep -q -P '^https?://'; then
                 # The : must be escaped so URLs can be placed in an org
                 # definition
-                time="$(printf -- "%s" "$uri" | sed -n '/&t=/{s/.*&t=\([0-9]\+\)/\1/p}')"
+                time="$(printf -- "%s" "$uri" | sed -n '/&t=/{s/.*&t=\([0-9]\+\)s\?/\1/p}')"
                 if test -n "$time"; then
                     time="$(humantime "$time")"
                 fi
