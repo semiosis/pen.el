@@ -7,8 +7,8 @@
 
 width="$1"
 # : ${width:="38"} # phone
-# : ${width:="46"}
-: ${width:="80"}
+: ${width:="46"}
+# : ${width:="80"}
 
 tf_input="$(pen-tf)"
 trap "rm \"$tf_input\" 2>/dev/null" 0
