@@ -677,7 +677,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb12329b) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd5e47f2) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -8876,6 +8876,26 @@ AMEN!!
 
 -   **Song:** [youtube.com: He is Jehovah | by Betty Jean Robinson](https://www.youtube.com/watch?v=rTSlIx46B8E)
 
+-   **Lyrics:** He is Jehovah, God of creation.;
+    He is Jehovah, Lord God almighty.;
+    The Balm of Gilead, the Rock of Ages.;
+    He is Jehovah, the God that healeth thee.
+    
+    He is the great I Am, the God of Abraham,;
+    Jehovah Shalom, the God peace I am.;
+    The God of Israel, the Everlasting One.;
+    He is Jehovah, the God that healeth thee.
+    
+    Sing hallelujah, sing hallelujah,;
+    Sing hallelujah, sing hallelujah.;
+    He is Jehovah, Lord God almighty.;
+    He is Jehovah, the God that healeth thee.
+    
+    I am your Provider, Jehovah Jireh;
+    God of salvation, God of Messiah;
+    My Son who came to you, and testified of him.;
+    He is Jehovah, the God that healeth thee.
+
 Jehovah is God Almighty:
 
 > **[Exodus 6:3](https://www.biblegateway.com/passage/?search=Exodus%206%3A3&version=ESV)** - I appeared to Abraham, to Isaac, and to Jacob, as God Almighty, but by my name the LORD I did not make myself known to them. (ESV)
@@ -9282,6 +9302,26 @@ I believe that Jesus Christ **is** Jehovah, in that Jesus is God the Son, and th
 
 -   **Song:** [youtube.com: What A Beautiful Name - Hillsong Worship](https://www.youtube.com/watch?v=nQWFzMvCfLE)
 
+-   **Hillsong - What A Beautiful Name (Lyrics):** You didn't want Heaven without us;
+    So Jesus, You brought Heaven down;
+    My sin was great, Your love was greater;
+    What could separate us now?
+    
+    Death could not hold You, the veil tore before You;
+    You silenced the boast of sin and grave;
+    The Heavens are roaring, the praise of Your glory;
+    For You are raised to life again
+    
+    You have no rival, You have no equal;
+    Now and forever, God, You reign;
+    Yours is the Kingdom, Yours is the Glory;
+    Yours is the Name above all names
+    
+    What a powerful Name it is, what a powerful Name it is;
+    The Name of Jesus Christ, my King;
+    What a powerful Name it is, nothing can stand against;
+    What a powerful Name it is, the Name of Jesus
+
 > **[John 1:14](https://www.biblegateway.com/passage/?search=John%201%3A14&version=ESV)** - And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
 > **[John 1:17](https://www.biblegateway.com/passage/?search=John%201%3A17&version=ESV)** - For the law was given through Moses; <ins>grace and truth came through Jesus Christ.</ins> (ESV)
@@ -9456,6 +9496,29 @@ Interesting. It's not exactly what I'm still having faith for, but Jesus is inde
 
 -   **Song:** [youtube.com: Petra: Love](https://www.youtube.com/watch?v=KvmV3X5s1gU)
 
+-   **Petra - Love (Lyrics):** Love is patient, love is kind;
+    No eyes of envy, true love is blind;
+    Love is humble, it knows no pride;
+    No selfish motive hiden inside;
+    Love is gentle, makes no demands;
+    Despite all wrong, true love still stands;
+    Love is holy, love is pure;
+    It lasts forever, it will endure
+    
+    Love is loyal, believes the best;
+    It loves the truth, love stands the test;
+    Love is God sent in His Son;
+    Love forgives all we have done
+    
+    Love knows when to let go;
+    Love knows when to say no;
+    Love grows in the light on the Son;
+    And love show the world that the Son of Love has come
+    
+    In this world where hatred seems to grow;
+    True love goes against the flow;
+    And becomes so hard to show
+
 They can get very tactical sometimes, so I have to be very discerning. Though I will test them because I still get some true visions/dreams sometimes.
 
 > **[I John 4:2-3](https://www.biblegateway.com/passage/?search=1%20John%204%3A2-3&version=ESV)** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
@@ -9571,6 +9634,10 @@ Believing Father God Jehovah, loving Him, obeying His commandments, loving and o
 
 -   **Song:** [youtube.com: Delirious? - Everything {Live}](https://www.youtube.com/watch?v=QYSD0NOv0co)
 
+-   **Delirious? - Everything (Lyrics):** It's a beautiful day and the world is bright;
+    'cause you took me away from the longest night;
+    What can I do but give all I have to you
+
 
 ### The Door
 
@@ -9584,6 +9651,13 @@ Believing Father God Jehovah, loving Him, obeying His commandments, loving and o
 > **[John 10:11](https://www.biblegateway.com/passage/?search=John%2010%3A11&version=ESV)** - I am the good shepherd. The good shepherd lays down his life for the sheep. (ESV)
 
 > **[John 10:14-15](https://www.biblegateway.com/passage/?search=John%2010%3A14-15&version=ESV)** - I am the good shepherd. I know my own and my own know me, just as the Father knows me and I know the Father; and I lay down my life for the sheep. (ESV)
+
+-   **Song:** [youtube.com: CityAlight - Yet Not I But Through Christ In Me {Live}](https://www.youtube.com/watch?v=hwc2d1Xt8gM)
+
+-   **CityAlight - Yet Not I but Through Christ in Me (Lyrics):** To this I hold, my Shepherd will defend me;
+    Through the deepest valley, He will lead;
+    Oh, the night has been won, and I shall overcome;
+    Yet not I, but through Christ in me
 
 
 ### The Resurrection and the Life
@@ -14017,7 +14091,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org062caf2)
+See: [33.4.1](#org0384197)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15600,6 +15674,7 @@ You may feel yourself a little midget, but you're representing a victorious Chri
     -   [youtube.com: Sanctify Christ as Lord](https://www.youtube.com/watch?v=w-bUfmj21DM)
 2.  Garment of Praise.
     -   **[Isaiah 61:3](https://www.biblegateway.com/passage/?search=Isaiah%2061%3A3&version=NASB)** - To grant those who mourn in Zion, Giving them a garland instead of ashes, The oil of gladness instead of mourning, The mantle of praise instead of a spirit of fainting. So they will be called oaks of righteousness, The planting of the LORD, that He may be glorified. (NASB)
+    -   [youtube.com: Mighty to Save - Hillsong Worship](https://www.youtube.com/watch?v=GEAcs2B-kNc&list=RDGEAcs2B-kNc&start_radio=1)
 3.  Put on the full Armour of God
 4.  Live by God's Word.
     -   **[Matthew 4:4](https://www.biblegateway.com/passage/?search=Matthew%204%3A4&version=ESV)** - But he answered, It is written, Man shall not live by bread alone, but by every word that comes from the mouth of God. (ESV)
@@ -16801,6 +16876,14 @@ Abraham's <ins>obedience</ins> which he had as part of his faith led him to <ins
 > **[Hebrews 4:6](https://www.biblegateway.com/passage/?search=Hebrews%204%3A6&version=ESV)** - Since therefore it remains for some to enter it, and those who formerly received the good news failed to enter because of disobedience,
 
 > **[Hebrews 4:11](https://www.biblegateway.com/passage/?search=Hebrews%204%3A11&version=ESV)** - Let us therefore strive to enter that rest, so that no one may fall by the same sort of disobedience.
+
+-   **Song:** [youtube.com: From The Inside Out - Hillsong UNITED](https://www.youtube.com/watch?v=F881DVFZr8g&list=RDGEAcs2B-kNc&index=16)
+
+-   **From the Inside Out (Lyrics):** Everlasting, your light will shine when all else fades;
+    Never ending, your glory goes beyond all fame;
+    And the cry of my heart is to bring you praise;
+    From the inside out;
+    Lord my soul cries out
 
 And <ins>willing</ins> to do the will of God must become <ins>'doing'</ins>.
 
@@ -28169,7 +28252,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org062caf2)
+See: [33.4.1](#org0384197)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -35821,7 +35904,7 @@ The Lake of Fire is where unrepentant sinners who reject God go - i.e. those who
 
 > **[Matthew 13:42](https://www.biblegateway.com/passage/?search=Matthew%2013%3A42&version=ESV)** - and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth. (ESV)
 
--   **What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?:** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and Revelation 20:10, Revelation 14-15, is the final hell, the place of eternal punishment for all unrepentant rebels, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature (Luke 16:24; [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination.
+-   **[What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?](https://www.gotquestions.org/sheol-hades-hell.html):** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and Revelation 20:10, Revelation 14-15, is the final hell, the place of eternal punishment for all unrepentant rebels, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature (Luke 16:24; [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination.
 
 
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)
