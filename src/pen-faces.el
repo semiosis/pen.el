@@ -764,7 +764,9 @@ is specified, `:italic' is ignored."
     (set-face-foreground 'org-block-end-line "#222222")
     
     (set-face-foreground 'org-list-dt "#7777ff")
-    (set-face-background 'org-list-dt "#111111")
+    ;; (set-face-foreground 'org-list-dt nil)
+    ;; (set-face-background 'org-list-dt "#111111")
+    (set-face-background 'org-list-dt nil)
     ;; (set-face-underline 'org-list-dt t)
     (set-face-underline 'org-list-dt nil)
 
