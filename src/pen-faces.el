@@ -762,6 +762,11 @@ is specified, `:italic' is ignored."
     ;; (set-face-foreground 'org-block-end-line "#af5faf")
     (set-face-foreground 'org-block-begin-line "#222222")
     (set-face-foreground 'org-block-end-line "#222222")
+    
+    (set-face-foreground 'org-list-dt "#7777ff")
+    (set-face-background 'org-list-dt "#111111")
+    ;; (set-face-underline 'org-list-dt t)
+    (set-face-underline 'org-list-dt nil)
 
 
     (require 'w3m-util)
@@ -1185,6 +1190,8 @@ Also see option `magit-blame-styles'."
                              helm-selection
                              ivy-highlight-face
                              ivy-current-match
+                             
+                             org-list-dt
 
                              org-agenda-date-weekend-today
                              org-agenda-current-time
