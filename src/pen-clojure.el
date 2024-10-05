@@ -739,4 +739,24 @@ the namespace in the Clojure source buffer"
 (define-key cider-repl-mode-map (kbd "C-x C-e") 'pen-clojure-eval-last-sexp)
 (define-key cider-mode-map (kbd "C-x C-e") 'pen-clojure-eval-last-sexp)
 
+;; DISCARD. For cider-doc. Instead of jar:file:/root/... links just have e:/
+;; The link isn't a proper path
+;; It also contains the inner file path
+;; Therefore, I should make a new link type to unzip and observe the file,
+;; handling the jar.
+;; Rather, edit j:cider-find-file
+
+(defun cider--abbreviate-file-protocol (file-with-protocol)
+  "Abbreviate the file-path in `file:/path/to/file' of FILE-WITH-PROTOCOL."
+  ;; (s-replace-regexp "^jar:file:" "e:"
+  ;;                   nil)
+  (if (string-match "\\`file:\\(.*\\)" file-with-protocol)
+      (let ((file (match-string 1 file-with-protocol))
+            (proj-dir (clojure-project-dir)))
+        (if (and proj-dir
+                 (file-in-directory-p file proj-dir))
+            (file-relative-name file proj-dir)
+          file))
+    file-with-protocol))
+
 (provide 'pen-clojure)

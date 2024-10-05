@@ -2465,3 +2465,6 @@ agi dict
 
 # Dictionary and definitions
 sudo apt install dictd dict-gcide
+
+# Simon's emacs plugin
+e ia org-wc

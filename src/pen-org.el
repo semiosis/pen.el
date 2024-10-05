@@ -15,6 +15,7 @@
 (require 'org-parser)
 (require 'org-sql)
 (require 'org-ql)
+(require 'org-wc)
 ;; There appears to be an issue with helm-org-ql currently
 ;; TODO Fix it
 ;; (require 'helm-org-ql)
