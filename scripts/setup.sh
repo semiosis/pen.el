@@ -2468,3 +2468,6 @@ sudo apt install dictd dict-gcide
 
 # Simon's emacs plugin
 e ia org-wc
+
+update-rust
+cargo install --locked ttysvr
