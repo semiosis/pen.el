@@ -117,7 +117,10 @@ It is used when no mode-specific one is available.")
   (if org-verse-mode
       (progn
         (org-verse--turn-on)
-        (add-hook 'after-save-hook #'org-verse-buttonize-buffer)))
+        (comment
+         (add-hook 'after-save-hook #'org-verse-buttonize-buffer)
+         (comment
+          (remove-hook 'after-save-hook #'org-verse-buttonize-buffer)))))
 
   (when font-lock-mode
     (if (fboundp 'font-lock-flush)
