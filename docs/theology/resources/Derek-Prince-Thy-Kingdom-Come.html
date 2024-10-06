@@ -1,1114 +1,1951 @@
-#+TITLE: Thy Kingdom Come
-#+AUTHOR: Derek Prince
-#+DATE: <2024-10-07 Mon>
-#+KEYWORDS: faith christianity
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-07 Mon 11:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thy Kingdom Come</title>
+<meta name="author" content="Derek Prince" />
+<meta name="keywords" content="faith christianity" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
-#+OPTIONS: toc:nil
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Thy Kingdom Come</h1>
 
-#+LATEX_COMPILER: xelatex
-
-* Thy Kingdom Come
-
+<div id="outline-container-orgacb6f21" class="outline-2">
+<h2 id="orgacb6f21"><span class="section-number-2">1.</span> Thy Kingdom Come</h2>
+<div class="outline-text-2" id="text-1">
+<p>
 Derek Prince preached this sermon some time in the 80s, I would guess.
+</p>
 
-+ DerekPrince.com :: [[https://www.derekprince.com/sermons/409][derekprince.com: Thy Kingdom Come | Sermon | Derek Prince Ministries]]
+<dl class="org-dl">
+<dt>DerekPrince.com</dt><dd><a href="https://www.derekprince.com/sermons/409">derekprince.com: Thy Kingdom Come | Sermon | Derek Prince Ministries</a></dd>
 
-+ YouTube :: [[https://www.youtube.com/watch?v=9L-ZM0g6yf0][youtube.com: Thy Kingdom Come | Sermon by Derek Prince]]
+<dt>YouTube</dt><dd><a href="https://www.youtube.com/watch?v=9L-ZM0g6yf0">youtube.com: Thy Kingdom Come | Sermon by Derek Prince</a></dd>
+</dl>
+</div>
 
-** Transcript
-
+<div id="outline-container-orgff094d5" class="outline-3">
+<h3 id="orgff094d5"><span class="section-number-3">1.1.</span> Transcript</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
 If I were to ask you here whom do you consider
 the most influential kind of person on earth,
 I suppose you might think of various different
 answers.
+</p>
 
+<p>
 Probably your mind would turn to political
 leaders such as George Bush or Mikhail
 Gorbachev.
+</p>
 
+<p>
 Or, others, men of science.
+</p>
 
+<p>
 Or, maybe even military commanders.
+</p>
 
+<p>
 But I don't believe that they are the really
 influential people.
+</p>
 
+<p>
 I look in a completely different direction.
+</p>
 
+<p>
 As I understand it, the most influential
 people on earth today are those who know how
 to get their prayers answered.
+</p>
 
+<p>
 Because, they can release the omnipotence of
 God into situations which goes far beyond
 anything that the wisest or most powerful
 human being can do.
+</p>
 
+<p>
 So, I want to speak to you in this message on
 certain requirements for getting our prayers
 answered.
+</p>
 
+<p>
 But first of all, I just want to read to you
 three statements from the New Testament about
 what prayer can do.
+</p>
 
-The first is found in [[https://www.biblegateway.com/passage/?search=Matthew%2021%3A22&version=ESV][Matthew 21:22]].
+<p>
+The first is found in <a href="https://www.biblegateway.com/passage/?search=Matthew%2021%3A22&amp;version=ESV">Matthew 21:22</a>.
+</p>
 
+<p>
 Jesus Himself is speaking and He says:
+</p>
 
-#+BEGIN_QUOTE
-  "And all things whatever you ask in prayer, believing, you will receive."
-#+END_QUOTE
+<blockquote>
+<p>
+"And all things whatever you ask in prayer, believing, you will receive."
+</p>
+</blockquote>
 
+<p>
 Notice, all things that you ask in prayer you will
 receive.
+</p>
 
+<p>
 There's no restrictions.
+</p>
 
+<p>
 There's just one condition-believing.
+</p>
 
+<p>
 The condition there is faith.
+</p>
 
+<p>
 And then we turn to John's gospel, chapter 15
 and verse 7.
+</p>
 
+<p>
 And again we have the words of Jesus to His
 disciples:
+</p>
 
-#+BEGIN_QUOTE
-  "If you abide in me, and my words
-  abide in you, you will ask what you desire and
-  it shall be done for you."
-#+END_QUOTE
+<blockquote>
+<p>
+"If you abide in me, and my words
+abide in you, you will ask what you desire and
+it shall be done for you."
+</p>
+</blockquote>
 
+<p>
 Another version says "ask what you desire and it shall be done
 for you." Notice there what you desire.
+</p>
 
+<p>
 There's no other restriction, but the
 condition is if my words abide in you.
+</p>
 
+<p>
 In other words, if we pray according to God's
 word.
+</p>
 
+<p>
 And one final Scripture in the first epistle
 of John, chapter 5, verses 14-15:
+</p>
 
-#+BEGIN_QUOTE
-  Now this is the confidence that we have in
-  Him [that is, in God], that, if we ask
-  anything according to His will, He hears us.
+<blockquote>
+<p>
+Now this is the confidence that we have in
+Him [that is, in God], that, if we ask
+anything according to His will, He hears us.
+</p>
 
-  And if we know that He hears us in whatever
-  we ask, we know that we have the petitions
-  that we have asked of him.
-#+END_QUOTE
+<p>
+And if we know that He hears us in whatever
+we ask, we know that we have the petitions
+that we have asked of him.
+</p>
+</blockquote>
 
+<p>
 There again it says whatever we ask.
+</p>
 
+<p>
 But again there's a condition attached, it's
 according to His will.
+</p>
 
+<p>
 So if you take those three passages together,
 you'll find that the scope of prayer is
 unlimited.
+</p>
 
+<p>
 Nothing is excluded.
+</p>
 
+<p>
 But, the conditions are threefold: faith,
 according to God's word and according to God's
 will.
+</p>
 
+<p>
 And they go together because God's word
 reveals God's will.
+</p>
 
+<p>
 And we know that when we're praying according
 to God's will we will get what we pray for.
+</p>
 
+<p>
 So I want to deal in this message with what I
 consider to be the basic requirements for
 praying that kind of prayer, for making you a
 person who can change the course of history.
+</p>
 
+<p>
 I don't know whether you're aware, but in the
 light of recent events in Eastern Europe, the
 overthrow of the Iron Curtain, the release of
 political liberty inside the Soviet Union.
+</p>
 
+<p>
 In 1987 the church in Russian, which was
 looking forward to its one thousandth
 anniversary, set aside the month of January
 for prayer and fasting.
+</p>
 
+<p>
 I believe if you look for the real cause of
 the dramatic political changes in Eastern
 Europe and the Soviet Union, it's not in the
 decision of politicians, it's in the prayers
 of God's people.
+</p>
 
+<p>
 I'd have to say, and I trust you'd agree with
 me, that if that amount of authority has been
 committed to us as believers in Jesus and in
 the Bible, we are really foolish if we don't
 make use of it.
+</p>
 
+<p>
 I think we're negligent.
+</p>
 
+<p>
 I think God is going to call us to account if
 He's committed that kind of authority to us
 and we don't appreciate it and make use of it.
+</p>
 
+<p>
 Now, for the conditions that I want to speak
 about I want to turn to the sermon on the
 mount.
+</p>
 
+<p>
 And particularly, to the 6th chapter.
+</p>
 
+<p>
 I want to take the first part of what is
 familiarly know to Christians around the earth
 as the Lord's Prayer.
+</p>
 
-Jesus says in [[https://www.biblegateway.com/passage/?search=Matthew%206%3A9&version=ESV][Matthew 6:9]]:
+<p>
+Jesus says in <a href="https://www.biblegateway.com/passage/?search=Matthew%206%3A9&amp;version=ESV">Matthew 6:9</a>:
+</p>
 
-#+BEGIN_QUOTE
-  "In this manner therefore pray..."
-#+END_QUOTE
+<blockquote>
+<p>
+"In this manner therefore pray&#x2026;"
+</p>
+</blockquote>
 
+<p>
 I don't believe He means that we've always
 got to use precisely those words-although
 they're beautiful words.
+</p>
 
+<p>
 I believe He set forth a pattern of the way we
 ought to pray.
+</p>
 
+<p>
 And typically, it's very concise but very
 complete.
+</p>
 
+<p>
 I only want to take the first two verses,
 verse 9 and verse 10.
+</p>
 
+<p>
 I believe they contain the key to effective
 praying.
+</p>
 
+<p>
 I hope I can put this key in your hands and
 you can walk out of this meeting with a key
 that will unlock the omnipotence of God.
+</p>
 
+<p>
 Let's just read those familiar words.
+</p>
 
+<p>
 I'm reading from the New King James Version.
+</p>
 
-#+BEGIN_QUOTE
-  "Our Father in heaven, hallowed be your name,
-  your kingdom come, your will be done on earth
-  as it is in heaven."
-#+END_QUOTE
+<blockquote>
+<p>
+"Our Father in heaven, hallowed be your name,
+your kingdom come, your will be done on earth
+as it is in heaven."
+</p>
+</blockquote>
 
+<p>
 First of all, we address God as Father.
+</p>
 
+<p>
 That makes all the difference.
+</p>
 
+<p>
 We're not praying to some remote unknown
 deity, some impersonal force; but we're
 praying to a person who has made Himself our
 Father through Jesus Christ.
+</p>
 
+<p>
 You see, the mechanistic view of the universe
 that it's just a series of material explosions
 and causes leaves a person very lonely, lost
 in the vastness of the universe which he
 doesn't understand and can't control.
+</p>
 
+<p>
 I always think of a friend of mine, a well
 known Catholic Charismatic speaker.
+</p>
 
+<p>
 If I gave you his name it would be know to
 almost all of you-incidentally, he was
 recently here in New Zealand so I'm giving a
 lot away.
+</p>
 
+<p>
 And, he told me years back he was in one of
 the slums of the big cities of the United
 States and it was late in the evening, it was
 getting dark.
+</p>
 
+<p>
 It was a cold, windy evening and the dust was
 swirling up around him.
+</p>
 
+<p>
 He was standing on the corner of the street
 and he felt so lonely and so weak.
+</p>
 
+<p>
 Then it came to him just to use one word and
 he repeated again and again, "Father, Father,
 Father," addressing it to God.
+</p>
 
+<p>
 The more he repeated the word Father the
 stronger and more secure he felt.
+</p>
 
+<p>
 And just reinforcing that one relationship to
 Almighty God as his Father completely changed
 his whole outlook on his situation at that
 moment.
+</p>
 
+<p>
 For me, my background is in philosophy and I
 studied for a good many years the various
 theories about the origin of the universe.
+</p>
 
+<p>
 I never could find one that satisfied me
 intellectually.
+</p>
 
+<p>
 Then I started to read the Bible in
 desperation.
+</p>
 
+<p>
 I thought at least it can't be any sillier
 than some of the other theories I'd heard.
+</p>
 
+<p>
 I didn't believe it was divinely inspired or
 unique, I just said I'll treat it like any
 other book, start at the beginning and read it
 through to the end.
+</p>
 
+<p>
 I did that when I went into the British Army
 in 1940.
+</p>
 
+<p>
 So, I took a Bible with me, planning to read
 it through when I was in the army.
+</p>
 
+<p>
 And of course, I had plenty of time because I
 spent the next five and a half years in the
 British Army-not by my choice.
+</p>
 
+<p>
 I always recall the impact this made the first
 night I was in the barrack room with twenty-
 four other new recruits.
+</p>
 
+<p>
 I didn't think anything about it, I just sat
 down and opened up the Bible.
+</p>
 
+<p>
 The other soldiers began to look at me and
 they realized I was reading the Bible and an
 uneasy hush fell on the whole barrack room.
+</p>
 
+<p>
 I couldn't believe that one book would have
 that much effect! And the thing was I baffled
 them all because when I was not reading the
 Bible I didn't live the least bit like people
 who regularly read the Bible.
+</p>
 
+<p>
 However, through reading the Bible I met the
 author.
+</p>
 
+<p>
 And once I met the author the book made the
 most wonderful sense to me.
+</p>
 
+<p>
 I found in the Bible the answers that I had
 not found in philosophy.
+</p>
 
+<p>
 I found a description of the beginning of
 things that explained me to myself.
+</p>
 
+<p>
 That was what really mattered.
+</p>
 
+<p>
 When I read the description of creation of man
 in Genesis chapters 1, 2 and 3, it explained
 what was going on inside me.
+</p>
 
+<p>
 See, my favorite philosopher whom I studied, I
 read every word he ever wrote in the Greek
 language, was Plato.
+</p>
 
+<p>
 One of Plato's pictures was the human soul was
 like a chariot drawn by two horses-one black
 and one white.
+</p>
 
+<p>
 The white horse was always trying to go
 upwards, the black horse was always pulling
 the chariot downwards.
+</p>
 
+<p>
 And really that was so true to my experience.
+</p>
 
+<p>
 I didn't get any further but when I read the
 description of the creation of man I saw man
 comes from two sources.
+</p>
 
+<p>
 He's from the dust of the earth below but he's
 from the breath of Almighty God above.
+</p>
 
+<p>
 And there is in every one of us something of a
 tension between what comes from above and what
 comes from the earth.
+</p>
 
+<p>
 But God shows us in His word how to resolve
 that tension and bring our lives into harmony.
+</p>
 
+<p>
 I can't go into that tonight but I just want
 to testify that the Bible made the most
 wonderful sense to me, it explained me to
 myself.
+</p>
 
+<p>
 I had a totally different view of the universe
 from that time onwards.
+</p>
 
+<p>
 When I met the God of the Bible I knew that
 there wasn't some impersonal force, some big
 bang that just brought the universe into
 being; but I came to understand that there was
 a Father and that the real power behind
 everything is the love of God.
+</p>
 
+<p>
 And one thing the Bible never explains is the
 love of God.
+</p>
 
+<p>
 It tells us God loves us, it never tells us
 why God loves us.
+</p>
 
+<p>
 The one unexplained fact in the universe is
 the love of God.
+</p>
 
+<p>
 We just have to receive it, we'll never
 understand it.
+</p>
 
+<p>
 Why God should love us passes our
 comprehension but the good news is He really
 does.
+</p>
 
+<p>
 And so, Jesus says when you start to pray to
 God, the first word you use is Father.
+</p>
 
+<p>
 In the English translation it comes out "our
 Father," but in the Greek "Father" comes first
 and then "our." So the first thing you do when
 you pray if you know God as Father through
 Jesus Christ is approach Him as Father.
+</p>
 
+<p>
 And then the word our is important because
 most of us are extremely self centered and
 when we pray we tend to pray, "Lord, bless me,
 help me, heal me." Jesus reminds us, "You're
 not the only child God has.
+</p>
 
+<p>
 He's got a lot of other children and they're
 all important to Him.
+</p>
 
+<p>
 It's important to Him that you care for your
 brothers and sisters." And then the next
 phrase is "hallowed be thy name." That
 expresses an attitude of reverence, of
 worship.
+</p>
 
+<p>
 And so after we've acknowledged God as Father
 we need to adopt an attitude of reverence.
+</p>
 
+<p>
 I have to say that in many sections of the
 church today that's sadly lacking, the
 approach of reverence to Almighty God.
+</p>
 
+<p>
 God doesn't want us terrified but He does want
 us reverent.
+</p>
 
+<p>
 And something happens in our spirit when we
 let that attitude of reverence express itself
 in our prayers.
+</p>
 
+<p>
 And then we come to the first two, if you
 could call it, petitions.
+</p>
 
+<p>
 And these are the ones I want to deal with.
+</p>
 
-#+BEGIN_QUOTE
-  "Your kingdom come..."
-#+END_QUOTE
+<blockquote>
+<p>
+"Your kingdom come&#x2026;"
+</p>
+</blockquote>
 
+<p>
 And then:
+</p>
 
-#+BEGIN_QUOTE
-  "... your will be done on earth as it is in heaven."
-#+END_QUOTE
+<blockquote>
+<p>
+"&#x2026; your will be done on earth as it is in heaven."
+</p>
+</blockquote>
 
+<p>
 And notice we don't begin by praying
 for what we need.
+</p>
 
+<p>
 That follows:
+</p>
 
-#+BEGIN_QUOTE
-  "Give us this day our daily bread, and forgive us our trespasses..."
-#+END_QUOTE
+<blockquote>
+<p>
+"Give us this day our daily bread, and forgive us our trespasses&#x2026;"
+</p>
+</blockquote>
 
+<p>
 But that's not where we start.
 We start with God's purposes, what's important
 to God.
+</p>
 
+<p>
 See, through the fall man was shut up in a
 little prison called self.
+</p>
 
+<p>
 Natural man is self-centered, his life focuses
 on himself.
+</p>
 
+<p>
 How can I get what I want?
+</p>
 
+<p>
 Who's going to help me?
+</p>
 
+<p>
 What do I get out of this?
+</p>
 
+<p>
 That's a prison.
+</p>
 
+<p>
 But through the new birth and through the
 grace of God we can be released from that
 prison of self-centeredness and enter into a
 relationship with God where what God wants is
 more important than what we want.
+</p>
 
+<p>
 And when you pray that way you're beginning to
 grow wings, you can move out of the natural
 level.
+</p>
 
+<p>
 Praying is not going to God with a shopping
 list, did you know that?
+</p>
 
+<p>
 After all, Jesus said your Father knows what
 you need before you ask Him.
+</p>
 
+<p>
 You don't have to tell God what you need.
+</p>
 
+<p>
 What's important is that you get into such a
 relationship with God that you know when you
 do tell Him you're going to get it.
+</p>
 
+<p>
 Establishing the relationship is much more
 important than giving God a list of what you
 need.
+</p>
 
+<p>
 So, the first thing we are directed to say is
 "Your kingdom come." That's tremendously
 important because what we're doing is aligning
 ourselves with God's purpose.
+</p>
 
+<p>
 God's ultimate purpose in this age is very
 simple in its essence-the details may be
 complicated.
+</p>
 
+<p>
 But the essential plan of God is simple: to
 establish His kingdom on earth.
+</p>
 
+<p>
 And notice Jesus says on earth.
+</p>
 
+<p>
 That's God's first priority.
+</p>
 
+<p>
 All through the history of this age from the
 time that Jesus died and rose again until now,
 God's priority has never changed.
+</p>
 
+<p>
 Millions and millions of Christians pray the
 Lord's Prayer and never realize what they're
 praying for.
+</p>
 
+<p>
 When we say "Your kingdom come," we are
 aligning ourselves with what God wants done in
 the earth.
+</p>
 
+<p>
 You see, ultimately the only real, practical
 solution to the needs of humanity is the
 establishment of God's kingdom.
+</p>
 
+<p>
 We hear a lot today about a social gospel,
 meaning that we need to care for man's
 physical and material needs.
+</p>
 
+<p>
 I agree.
+</p>
 
+<p>
 I believe all Christians should be concerned
 with the physical and material needs of our
 fellow human beings.
+</p>
 
+<p>
 I believe that's the expression of love.
+</p>
 
+<p>
 If you love people you'll be concerned about
 their needs.
+</p>
 
+<p>
 But, I don't believe that it's in our path
 really to meet the needs of humanity as a
 whole.
+</p>
 
+<p>
 The church has been here nearly 2,000 years
 and the needs in many cases are greater now
 than they've ever been at any time in human
 history.
+</p>
 
+<p>
 40,000 children under the age of five die
 every week on the earth today, mainly of
 malnutrition, unsanitary conditions.
+</p>
 
+<p>
 And yet, if all the money that was spent by
 the nations on military armaments were made
 available, it would be abundant to establish
 hospitals, clinics, safe water supplies in
 every nation on earth.
+</p>
 
+<p>
 The problem is not the resources are not
 available, the problem is that human greed and
 fear and hate cause the resources to be
 misdirected.
+</p>
 
+<p>
 Now don't misunderstand me, I'm not preaching
 pacifism, I'm just pointing out that the root
 of the problem is in human nature.
+</p>
 
+<p>
 And personally, I don't believe that man by
 himself or the church by itself is ever going
 to resolve the material and practical needs of
 humanity.
+</p>
 
+<p>
 It's only one thing that can do that.
+</p>
 
+<p>
 What is that?
+</p>
 
+<p>
 The establishment of God's kingdom on earth.
+</p>
 
+<p>
 See, I claim to be a practical person.
+</p>
 
+<p>
 I don't want to be just a visionary or a
 dreamer.
+</p>
 
+<p>
 I tell people many times the Holy Spirit is
 the most practical person on the earth today.
+</p>
 
+<p>
 If a thing is not practical it's not
 spiritual.
+</p>
 
+<p>
 I believe the establishment of God's kingdom
 is the only practical solution to human need.
+</p>
 
+<p>
 The people who preach what's called a social
 gospel are presenting a dream.
+</p>
 
+<p>
 Their motives may be good but to suggest that
 by merely focusing on man's material needs we
 can resolve them is not true.
+</p>
 
+<p>
 There's only one hope for humanity.
+</p>
 
+<p>
 Ruth and I travel widely and we've been to a
 lot of places where people are desperately
 poor and in need and in ignorance.
+</p>
 
+<p>
 If you've never been outside this beautiful
 nation you probably have a very faint picture
 of the needs of humanity in many, many nations
 across the earth.
+</p>
 
+<p>
 And, they are not being met.
+</p>
 
+<p>
 In many cases they are increasing.
+</p>
 
+<p>
 Poverty, deprivation, hunger.
+</p>
 
+<p>
 They're not less.
+</p>
 
+<p>
 If anything, they're more.
+</p>
 
+<p>
 I'm not a pessimist.
+</p>
 
+<p>
 I believe there's a solution but I believe
 it's God's solution.
+</p>
 
+<p>
 And, it's a practical solution.
+</p>
 
+<p>
 It's the establishment of Christ's kingdom on
 earth.
+</p>
 
+<p>
 I don't believe anything else is going to do
 it.
+</p>
 
+<p>
 God is a great realist and His love for
 humanity causes Him to make priority number
 one the meeting of the needs of humanity
 through the establishment of Christ's kingdom
 on earth.
+</p>
 
+<p>
 I hope you understand me.
+</p>
 
+<p>
 Now, we need to have a little clarity about
 the way the kingdom is established.
+</p>
 
+<p>
 This is a subject which is of great interest
 to Christians at the present time.
+</p>
 
+<p>
 First of all, the kingdom is defined in its
 essential nature by Paul in one simple verse
-in [[https://www.biblegateway.com/passage/?search=Romans%2014%3A17&version=ESV][Romans 14:17]]:
+in <a href="https://www.biblegateway.com/passage/?search=Romans%2014%3A17&amp;version=ESV">Romans 14:17</a>:
+</p>
 
-#+BEGIN_QUOTE
-  The kingdom of God is not food and drink; but righteousness, peace and
-  joy in the Holy Spirit.
-#+END_QUOTE
+<blockquote>
+<p>
+The kingdom of God is not food and drink; but righteousness, peace and
+joy in the Holy Spirit.
+</p>
+</blockquote>
 
+<p>
 I want to point out two things.
+</p>
 
+<p>
 First of all, righteousness comes first and
 without true righteousness there will never be
 true peace.
+</p>
 
+<p>
 The world today is talking a great deal about
 peace and many sections of the church are
 praying for peace.
+</p>
 
+<p>
 That's a good prayer but bear in mind without
 righteousness peace will never come to this
 earth.
+</p>
 
+<p>
 God says twice in the prophet Isaiah there is
 no peace to the wicked.
+</p>
 
+<p>
 I meet many Christians who want peace and joy
 but very often I find they've omitted the fact
 that they only come as the results of
 righteousness.
+</p>
 
+<p>
 Righteousness is the first expression of the
 kingdom.
+</p>
 
+<p>
 And any attempt to achieve peace without
 righteousness is doomed to frustration.
+</p>
 
+<p>
 Personally, my understanding of Biblical
 prophecy is that there will come an
 antichrist, a satanically inspired ruler.
+</p>
 
+<p>
 And he will promise peace and will seem for a
 very brief moment to achieve it.
+</p>
 
-But Paul says in [[https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A3&version=ESV][1 Thessalonians 5:3]]:
+<p>
+But Paul says in <a href="https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A3&amp;version=ESV">1 Thessalonians 5:3</a>:
+</p>
 
-#+BEGIN_QUOTE
-  When they say peace and security, then sudden
-  destruction comes upon them without warning.
-#+END_QUOTE
+<blockquote>
+<p>
+When they say peace and security, then sudden
+destruction comes upon them without warning.
+</p>
+</blockquote>
 
+<p>
 So the pursuit of peace bypassing
 righteousness is foolishness.
+</p>
 
+<p>
 So it's righteousness, peace and joy in the
 Holy Spirit.
+</p>
 
+<p>
 The only power that can impart those things in
 their true nature is the Holy Spirit.
+</p>
 
+<p>
 Somebody said the limits of the kingdom of God
 are the limits of where the Holy Spirit is
 present.
+</p>
 
+<p>
 Where the Holy Spirit is not present you
 cannot have the kingdom of God.
+</p>
 
+<p>
 Now, the first way that the kingdom comes is
 inwardly.
+</p>
 
+<p>
 Jesus told the Pharisees of His day the
 kingdom doesn't come by watching and waiting
 for it externally.
+</p>
 
+<p>
 He said the kingdom of God is within you or
 among you.
+</p>
 
+<p>
 There's no kingdom without a king.
+</p>
 
+<p>
 So if we want the kingdom we have to welcome
 the king.
+</p>
 
+<p>
 And many of you here in this meeting know from
 experience that when the King comes in He
 bring His kingdom with Him.
+</p>
 
+<p>
 But to want the kingdom apart from the King is
 to deceive yourself.
+</p>
 
+<p>
 So, there is an individual experience of the
 kingdom of God that every true believer can
 have who makes Jesus unreservedly king.
+</p>
 
+<p>
 And that means displacing self from the throne
 of your heart and placing Jesus on that
 throne.
+</p>
 
+<p>
 And when you do that then the kingdom of God
 sets in.
+</p>
 
+<p>
 Righteousness, peace and joy.
+</p>
 
+<p>
 But Jesus also said the kingdom of God is
 within you.
+</p>
 
+<p>
 I believe there's a corporate expression of
 the kingdom which is in the true community of
 believers which is called the church.
+</p>
 
+<p>
 Not some man-made institution but the
 fellowship of those who've made Jesus king in
 their own hearts and lives and relate to one
 another on that basis.
+</p>
 
+<p>
 I believe that it's the responsibility of the
 church in any place to model the kingdom of
 God, that by our attitudes and our
 relationships and the way we live we challenge
 the world with a glimpse of the kingdom.
+</p>
 
+<p>
 And, people should be able to look at the
 church and say, "So that's what the kingdom of
 God is like." Righteousness, peace and joy in
 the Holy Spirit.
+</p>
 
+<p>
 I tell you that where the church demonstrates
 these things, the hearts of men and women are
 nearly always open to the truth of the gospel.
+</p>
 
+<p>
 But if the world doesn't see the kingdom in
 the church, why should the world believe our
 message.
+</p>
 
+<p>
 Probably they will not.
+</p>
 
+<p>
 Let me just suggest one very practical and
 important way in which we can model the
 kingdom and it's a way that today is somewhat
 controversial.
+</p>
 
+<p>
 The fact of the matter is that today truth is
 controversial.
+</p>
 
+<p>
 Isaiah wrote about a time when truth has
 fallen in the street and righteousness cannot
 enter.
+</p>
 
+<p>
 And we're not far from a time like this in
 many parts of the human society.
+</p>
 
+<p>
 But Paul said to Christian married couples:
+</p>
 
-#+BEGIN_QUOTE
-  "Husbands, love your wives as Christ loved the
-  church."
-#+END_QUOTE
+<blockquote>
+<p>
+"Husbands, love your wives as Christ loved the
+church."
+</p>
+</blockquote>
 
+<p>
 And I tell husbands that's not a
 recommendation, that's a commandment.
+</p>
 
+<p>
 You are commanded to love your wife.
+</p>
 
+<p>
 You don't have any options.
+</p>
 
+<p>
 And furthermore, it will do you a lot of good
 when you do it.
+</p>
 
+<p>
 Some of you may have seen that book which has
 rather a lengthy title, Husbands, Do
 Yourselves a Favor, Love Your Wives.
+</p>
 
+<p>
 It's true.
+</p>
 
+<p>
 But the other side of it is:
+</p>
 
-#+BEGIN_QUOTE
-  "Wives, submit to your husbands as the church is submitted to Jesus Christ."
-#+END_QUOTE
+<blockquote>
+<p>
+"Wives, submit to your husbands as the church is submitted to Jesus Christ."
+</p>
+</blockquote>
 
+<p>
 If you put the first two statements together I
 see it this way, that every Christian married
 couple should be a prophetic message to the
 world.
+</p>
 
+<p>
 When the world looks at Christian married
 couples the world should say, "I understand
 that the way that man loves his wife is the
 way Christ loved the church.
+</p>
 
+<p>
 And, the way that woman relates to her husband
 is the way the church relates to Christ."
 Would you like to be prophetic?
+</p>
 
+<p>
 I think all of us, in a way, would have an
 ambition to be somewhat prophetic.
+</p>
 
+<p>
 Well, a committed Christian couple can be
 prophetic.
+</p>
 
+<p>
 You can be a message to the world.
+</p>
 
+<p>
 This is what the kingdom of God is like.
+</p>
 
+<p>
 If there's one place that the kingdom should
 be demonstrated first and foremost, it's in
 the believer's family.
+</p>
 
+<p>
 And if there's one place that Satan is
 attacking today, it's the family.
+</p>
 
+<p>
 Because, it was designed by God to represent
 the kingdom and Satan wants to blur and
 obscure and eliminate the message of the
 kingdom.
+</p>
 
+<p>
 He's afraid of the kingdom because wherever
 the kingdom is established his power is come
 to an end.
+</p>
 
+<p>
 So there are two primary ways in which the
 kingdom can come invisibly.
+</p>
 
+<p>
 In the individual heart and life of the
 believer and in the corporate fellowship of
 the true church.
+</p>
 
+<p>
 And, not least, in the Christian home.
+</p>
 
+<p>
 But, that's not the ultimate.
+</p>
 
+<p>
 The ultimate is the visible establishment of
 God's kingdom on earth.
+</p>
 
+<p>
 And the visible kingdom requires a visible
 king.
+</p>
 
+<p>
 Only when the King Himself has returned
 visibly and in person can the true kingdom of
 God be established on earth.
+</p>
 
+<p>
 And personally, I have to say I feel it
 presumptuous for the church to suggest that we
 can do the job and finish it off without
 Jesus.
+</p>
 
+<p>
 The Bible says that we should be eagerly
 longing for His appearing.
+</p>
 
+<p>
 It says that in many different places.
+</p>
 
+<p>
 I would like to ask you this evening, are you
 eagerly longing for the appearing of Jesus?
+</p>
 
+<p>
 If not, why not?
+</p>
 
+<p>
 A friend of mine who is a preacher has a
 rather droll way of expressing himself.
+</p>
 
+<p>
 He said when Jesus comes back the church
 should do something more than just say, "Nice
 to have you back." Believe me, brothers and
 sisters, things are going to happen on earth
 between now and then that will make us
 desperately anxious to see Him back.
+</p>
 
+<p>
 God is going to arrange that.
+</p>
 
+<p>
 So that's the primary purpose of God, the
 establishment of His kingdom on earth visibly
 with a visible king ruling over it.
+</p>
 
+<p>
 And everything that God does is directed
 toward that.
+</p>
 
+<p>
 And until we make that our priority, we are
 not really aligned with the will and purpose
 of God.
+</p>
 
+<p>
 See, that's why that's the first thing that we
 are required to say after acknowledging God as
 our Father.
+</p>
 
+<p>
 We are required to align ourselves with God's
 purpose.
+</p>
 
+<p>
 I tell people this: Prayer is not a way for
 you to get God to do what you want.
+</p>
 
+<p>
 A lot of Christians think it is.
+</p>
 
+<p>
 It may work out that way but that's not its
 purpose.
+</p>
 
+<p>
 Prayer is a way for you to become an
 instrument for God to do what He wants.
+</p>
 
+<p>
 All right?
+</p>
 
+<p>
 I think I'm going to say that again.
+</p>
 
+<p>
 Prayer is not a way for you to get God to do
 what you want.
+</p>
 
+<p>
 Prayer is a way for you to become an
 instrument for God to do what He wants.
+</p>
 
+<p>
 And when you become aligned with God's purpose
 you're going to pray prayers that are
 irresistible.
+</p>
 
+<p>
 There'll be no power, human or satanic, that
 will be able to resist the outworking of your
 prayer.
+</p>
 
+<p>
 And then Jesus said one more thing:
+</p>
 
-#+BEGIN_QUOTE
-  "Your will be done on earth as it is in heaven."
-#+END_QUOTE
+<blockquote>
+<p>
+"Your will be done on earth as it is in heaven."
+</p>
+</blockquote>
 
+<p>
 Do you believe that's possible?
+</p>
 
+<p>
 Do you really believe that when we pray
 rightly in any given situation God's will can
 be done as completely here on earth as it's
 being done in heaven?
+</p>
 
+<p>
 I do.
+</p>
 
+<p>
 It doesn't mean everything is perfect on earth
 but it means in any given situation God's
 purpose and solution can be perfectly worked
 out.
+</p>
 
+<p>
 Do you believe that?
+</p>
 
+<p>
 You see, you'll pray differently if you
 convince yourself of that.
+</p>
 
+<p>
 But, if you say to God, "Your will be done,"
 do you know what you're saying?
+</p>
 
+<p>
 Not my will.
+</p>
 
+<p>
 So that's the second essential requirement
 that you renounce your own will wherever it
 conflicts with God's will.
+</p>
 
+<p>
 And I want to tell you this, God's will is
 best.
+</p>
 
+<p>
 Most of us have let the devil make us afraid
 of God's will.
+</p>
 
+<p>
 "Oh, if I embrace the will of God it means
 suffering.
+</p>
 
+<p>
 It means denial, I'm going to have to give
 things up." It could happen that way but I
-read in [[https://www.biblegateway.com/passage/?search=Revelation%204%3A11&version=ESV][Revelation 4:11]]:
+read in <a href="https://www.biblegateway.com/passage/?search=Revelation%204%3A11&amp;version=ESV">Revelation 4:11</a>:
+</p>
 
-#+BEGIN_QUOTE
-  All things were created for your will [or according to your will].
-#+END_QUOTE
+<blockquote>
+<p>
+All things were created for your will [or according to your will].
+</p>
+</blockquote>
 
+<p>
 And I've pondered on that verse many times,
 partly because there's a song that's put out
 by Scripture in Song on their first major
 album.
+</p>
 
-They did [[https://www.biblegateway.com/passage/?search=Revelation%204%3A11&version=ESV][Revelation 4:11]] as a song.
+<p>
+They did <a href="https://www.biblegateway.com/passage/?search=Revelation%204%3A11&amp;version=ESV">Revelation 4:11</a> as a song.
+</p>
 
+<p>
 And it particularly blessed me and so I
 pondered on that verse many times.
+</p>
 
+<p>
 I was thinking it over sometime back and I
 suddenly realized that there could not be
 anything better than God's will.
+</p>
 
+<p>
 God's will is the best way for anything to be
 at any time.
+</p>
 
+<p>
 So, don't be afraid of embracing God's will.
+</p>
 
+<p>
 But, you do it without knowing what it'll
 involve.
+</p>
 
+<p>
 When Ruth and I were preparing for these
 meetings, theoretically we were resting in
 Hawaii but actually we were battling the
 forces of Satan.
+</p>
 
+<p>
 We came to a point where both of us, I think
 we were on the floor, said, "Lord, we embrace
 your will without any reservation whatever.
+</p>
 
+<p>
 Whatever you will, we embrace." And I think
 God was kind of squeezing us, putting pressure
 on us, to bring us to that place of total
 surrender and embracing of the will of God.
+</p>
 
+<p>
 And there comes a relief when you do that.
+</p>
 
+<p>
 You don't know exactly what you're praying for
 but remember, you've got a Father who loves
 you, who's omnipotent, who always wants the
 best for you.
+</p>
 
+<p>
 It's foolish to press your will against God's
 will.
+</p>
 
+<p>
 His will is best.
+</p>
 
+<p>
 As I look back over nearly 50 that I've walked
 with the Lord, again and again I thank God for
 the times that He didn't let me have my way.
+</p>
 
+<p>
 I can see situation after situation, if I'd
 done things the way I wanted, it would have
 been disastrous.
+</p>
 
+<p>
 I thank Him.
+</p>
 
+<p>
 I thank God for the prayers He's answered, I
 also thank Him for the prayers He didn't
 answer.
+</p>
 
+<p>
 He knows what is best.
+</p>
 
+<p>
 So there are the two, I would say, attitudes,
 the two ways you have to align yourself to
 become an effective pray-er, to be able to
 pray the kind of prayers that will change
 nations, change situations, change families.
+</p>
 
+<p>
 I look back on my own walk with the Lord and I
 can say to the glory of God I can see several
 points in the history of the last 50 years
 where history was changed by my prayers.
+</p>
 
+<p>
 I have a book, I don't know whether it's
 available, called Shaping History Through
 Prayer and Fasting.
+</p>
 
+<p>
 And in it I give about four or five specific
 examples of history changed when I prayed the
 will of God.
+</p>
 
+<p>
 I was saved in Britain in the army in 1941 and
 just a few weeks later I was sent overseas
 with my unit to North Africa.
+</p>
 
+<p>
 I spent the next four and a half years in the
 Middle East.
+</p>
 
+<p>
 And during that time my unit took part in the
 longest retreat recorded in the history of the
 British Army, 750 miles, from a place called
 El Agala in Tripoli, to the well known place
 in Egypt, El Alamein.
+</p>
 
+<p>
 I can tell you it's somewhat depressing to be
 retreating continually for 750 miles,
 particularly in a very barren and unattractive
 desert.
+</p>
 
+<p>
 And there I was, newly converted, I hadn't had
 any opportunity to attend church.
+</p>
 
+<p>
 All I had was the Bible and the Holy Spirit.
+</p>
 
+<p>
 I thought to myself I ought to be able to pray
 about this situation intelligently.
+</p>
 
+<p>
 I knew I didn't know what to pray.
+</p>
 
+<p>
 So I said in my naive way, "Lord, show me how
 you want me to pray." And the Lord gave me a
 specific answer which was this: "Lord, give us
@@ -1116,16 +1953,24 @@ leaders such that it will be to your glory to
 give us victory through them." I was less than
 a year old in the Lord when I prayed that
 prayer.
+</p>
 
+<p>
 I prayed it consistently.
+</p>
 
+<p>
 And then the command of what was then the
 Eighth Army was changed and Montgomery took
 over by a series of strange accidents which I
 can't go into in detail.
+</p>
 
+<p>
 He was not destined to be commander.
+</p>
 
+<p>
 And Montgomery at that time-I read an article
 just recently in a British newspaper on the
 100th anniversary of Montgomery's birth in
@@ -1133,32 +1978,50 @@ which it says that no British general in human
 history has ever conducted a more brilliant
 campaign than Montgomery conducted at that
 time in North Africa.
+</p>
 
+<p>
 Do you know why?
+</p>
 
+<p>
 Shall I tell you why?
+</p>
 
+<p>
 Because I prayed.
+</p>
 
+<p>
 Do you believe that?
+</p>
 
+<p>
 Can you believe that God will do things for
 you.
+</p>
 
+<p>
 Now I know there were other Christians in
 Britain praying.
+</p>
 
+<p>
 And after the battle of El Alamein, which was
 the turning point of the war in that area, had
 been fought, I was with my unit's lorry in the
 desert somewhere and there was a little
 portable radio on the tail board of the lorry.
+</p>
 
+<p>
 There was a newscaster giving an eyewitness
 account of the scene at Montgomery's
 headquarters the night before the battle of El
 Alamein was fought.
+</p>
 
+<p>
 And he reported how General Montgomery came
 out and called together his officers and his
 men and said, "Let us ask the Lord, mighty in
@@ -1167,20 +2030,28 @@ heard that, I don't know whether you know what
 heaven's electricity is like, some of you do,
 but it went right through me from the crown of
 my head to the soles of my feet.
+</p>
 
+<p>
 God spoke to me inaudibly, "That's the answer
 to your prayer." See, to be able to pray like
 that is worth more than all the fortune in
 this world.
+</p>
 
+<p>
 A person who can pray like that is more
 influential than the general who wins the
 victory, the government that controls the
 general.
+</p>
 
+<p>
 Now I haven't always prayed that kind of
 prayer.
+</p>
 
+<p>
 Sometimes I've got bogged down in my own
 little petty concerns and my limitations and I
 got praying, "Give me, help me, bless me, heal
@@ -1189,29 +2060,49 @@ heal you but it won't really produce the
 divine result until your whole attitude and
 motivation is aligned with God's purpose in
 the earth.
+</p>
 
+<p>
 See, God's not going to change His purposes.
+</p>
 
+<p>
 If God and I are out of harmony, guess who's
 going to change?
+</p>
 
+<p>
 There's only one option.
+</p>
 
+<p>
 I have to change.
+</p>
 
+<p>
 And living out of harmony with God, especially
 if you're a Spirit baptized believer, is
 painful.
+</p>
 
+<p>
 How many of you would agree to that?
+</p>
 
+<p>
 Don't put your hands up! Sit on your hands at
 that point.
+</p>
 
+<p>
 But how can we be in harmony?
+</p>
 
+<p>
 The answer is align with God's purpose.
+</p>
 
+<p>
 And the first two key steps are there at the
 beginning of the Lord's Prayer, "Thy kingdom
 come." Lord, I'm not praying for my own
@@ -1219,440 +2110,713 @@ interests or what I think is important, I'm
 praying for the thing that's important in your
 eyes, the thing that really is the solution-
 the coming of your kingdom.
+</p>
 
+<p>
 And then, Lord, I submit my will to you
 personally.
+</p>
 
+<p>
 Your will be done.
+</p>
 
+<p>
 And where your will and my will clashes, Lord,
 I say not my will be done.
+</p>
 
+<p>
 I will tell you that there will always come a
 point in the life of every believer where we
 have to say not my will but yours be done.
+</p>
 
+<p>
 And it's often extremely painful at the time.
+</p>
 
+<p>
 But the end is always blessed.
+</p>
 
+<p>
 I see some of you smiling and nodding your
 heads.
+</p>
 
+<p>
 You've found it for yourself.
+</p>
 
-And then in [[https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=ESV][Matthew 6:33]], Jesus gives one more
+<p>
+And then in <a href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33&amp;version=ESV">Matthew 6:33</a>, Jesus gives one more
 direction which is the outworking of what
 we've already discussed.
+</p>
 
-How many of you know what [[https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=ESV][Matthew 6:33]] says?
+<p>
+How many of you know what <a href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33&amp;version=ESV">Matthew 6:33</a> says?
+</p>
 
-#+BEGIN_QUOTE
-  "But seek ye first the kingdom of God and His
-  righteousness, and all these things will be
-  added to you."
-#+END_QUOTE
+<blockquote>
+<p>
+"But seek ye first the kingdom of God and His
+righteousness, and all these things will be
+added to you."
+</p>
+</blockquote>
 
+<p>
 Get your priorities right and
 you really don't have to spend a lot of time
 praying for your personal needs.
+</p>
 
+<p>
 God will take care of your personal needs if
 you align with His priorities.
+</p>
 
+<p>
 As I say, I've been a Christian almost 50
 years.
+</p>
 
+<p>
 It's hard to believe.
+</p>
 
+<p>
 I've been responsible for this ministry which
 really is a worldwide ministry for at least 10
 years now.
+</p>
 
+<p>
 We marvel continually at how God supplies our
 need.
+</p>
 
+<p>
 We don't have any big resources, we don't have
 any millionaires that lavish their fortune on
 us.
+</p>
 
+<p>
 Most of the people that support this ministry
 are comparatively humble people.
+</p>
 
+<p>
 And most of them ask for really no
 recognition.
+</p>
 
+<p>
 And yet I'd have to say-and here's the members
 of our staff here-God has never failed to
 supply our needs once.
+</p>
 
+<p>
 And continually we have to reach out in faith.
+</p>
 
+<p>
 We don't wait until the resources are there
 and say now we can do it.
+</p>
 
+<p>
 We say if this is what God wants us to do,
 we'll do it and trust Him for the resources.
+</p>
 
+<p>
 Years ago I was preaching to a group of young
 people in the States on how to arrange your
 life in line with God.
+</p>
 
+<p>
 I said-it was a risky thing to say but I said,
 when I go into a store I don't ask can I
 afford this, I ask is this what God wants me
 to have.
+</p>
 
+<p>
 Because, if God wants me to have it I can
 afford it.
+</p>
 
+<p>
 Well, about six of those young people went out
 after the service was over to a restaurant
 across the road to get a little supper.
+</p>
 
+<p>
 I heard this from them personally.
+</p>
 
+<p>
 And they began to look at the menu and say
 what can we afford?
+</p>
 
+<p>
 And one of them said let's do what the
 preacher said and just decide what does God
 want us to have and order it.
+</p>
 
+<p>
 I mean, I'm glad I wasn't there because I
 would have been trembling.
+</p>
 
+<p>
 So they did that and when they wanted to pay
 the waiter said, "That gentleman over there
 has just paid your bill!" But listen, don't do
 it unless you have the faith.
+</p>
 
+<p>
 Do you know what will happen?
+</p>
 
+<p>
 You'll spend your evening washing greasy
 dishes.
+</p>
 
+<p>
 Now, one more vital question and we close this
 message, which is how can I discover God's
 will?
+</p>
 
+<p>
 And I want to turn to one of my favorite
 passages, Romans 12, and very briefly outline
 the steps to discovering God's will.
+</p>
 
-As I understand it, they're all here in [[https://www.biblegateway.com/passage/?search=Romans%2012%3A1-8&version=ESV][Romans 12:1-8]].
+<p>
+As I understand it, they're all here in <a href="https://www.biblegateway.com/passage/?search=Romans%2012%3A1-8&amp;version=ESV">Romans 12:1-8</a>.
+</p>
 
+<p>
 We don't have long but I'll go through it
 briefly.
+</p>
 
+<p>
 Paul begins with a therefore in verse 1, and
 many of you have heard me say when you find a
 therefore in the Bible, you want to find out
 what it's there for.
+</p>
 
+<p>
 And this therefore is because of the previous
 11 chapters of Romans in which Paul has
 outlined the whole message of God's mercy and
 grace.
+</p>
 
+<p>
 And he says In the light of that, what should
 we do, how shall we respond?
+</p>
 
+<p>
 And the answer is:
+</p>
 
-#+BEGIN_QUOTE
-  Present your body a living sacrifice, holy, acceptable to God...
-#+END_QUOTE
+<blockquote>
+<p>
+Present your body a living sacrifice, holy, acceptable to God&#x2026;
+</p>
+</blockquote>
 
+<p>
 That always blesses me, the Bible is so down
 to earth.
+</p>
 
+<p>
 A lot of us would expect something super-
 spiritual, you know.
+</p>
 
+<p>
 After all this glorious unfolding of the grace
 of God, "God, what do you want?" "I want your
 body." You see, when He gets our body, He gets
 the contents.
+</p>
 
+<p>
 He is so wise.
+</p>
 
+<p>
 So He says, "Present your body to me a living
 sacrifice." Why does it say a living
 sacrifice?
+</p>
 
+<p>
 Because Paul's contrasting it with the Old
 Testament sacrifices which were first killed
 and placed on the altar.
+</p>
 
+<p>
 But Paul says don't kill your body and place
 it on the altar, place a living body on the
 altar.
+</p>
 
+<p>
 When a sacrifice was placed on the altar it no
 longer belonged to the person who offered it,
 it belonged to God.
+</p>
 
+<p>
 So God says place your body on my altar as a
 living sacrifice and from now on you don't own
 it.
+</p>
 
+<p>
 I own it.
+</p>
 
+<p>
 You don't make the decisions as to what will
 happen to your body, I make them.
+</p>
 
+<p>
 You don't decide where you're going to go, you
 don't decide what you're going to eat, you
 don't decide what you're going to wear, those
 are my decisions, my responsibility, I take
 full responsibility for your body.
+</p>
 
+<p>
 And I'll tell you, He's much better able to
 look after our bodies than we can.
+</p>
 
+<p>
 You can't lose by putting God in charge of
 your body.
+</p>
 
+<p>
 But it has to be a genuine surrender.
+</p>
 
+<p>
 And then the next verse says:
+</p>
 
-#+BEGIN_QUOTE
-  Do not be conformed to this world [or this age], but be
-  transformed by the renewing of your mind, that
-  you may prove what is the good and acceptable
-  and perfect will of God.
-#+END_QUOTE
+<blockquote>
+<p>
+Do not be conformed to this world [or this age], but be
+transformed by the renewing of your mind, that
+you may prove what is the good and acceptable
+and perfect will of God.
+</p>
+</blockquote>
 
+<p>
 You see, to discover God's will you have to
 have a change in your thinking.
+</p>
 
+<p>
 Your mind has to be renewed.
+</p>
 
+<p>
 And God can do that but He will not do it
 until He has your body.
+</p>
 
+<p>
 He says present your body, then I'll renew
 your mind.
+</p>
 
+<p>
 And when your mind is renewed you can discover
 the will of God.
+</p>
 
+<p>
 You can't discover it with your old unrenewed
 mind.
+</p>
 
+<p>
 Lots of people get saved and I suppose they
 get to heaven at the end but they never
 discover God's will in this life because their
 mind is never renewed.
+</p>
 
-And then Paul says in the next verse ([[https://www.biblegateway.com/passage/?search=Romans%2012%3A3&version=ESV][Romans 12:3]]):
+<p>
+And then Paul says in the next verse (<a href="https://www.biblegateway.com/passage/?search=Romans%2012%3A3&amp;version=ESV">Romans 12:3</a>):
+</p>
 
-#+BEGIN_QUOTE
-  I say through the grace given to me to everyone who
-  is among you, not to think of himself more
-  highly than he ought to think; but to think
-  soberly, as God has dealt to each one a
-  measure of faith.
-#+END_QUOTE
+<blockquote>
+<p>
+I say through the grace given to me to everyone who
+is among you, not to think of himself more
+highly than he ought to think; but to think
+soberly, as God has dealt to each one a
+measure of faith.
+</p>
+</blockquote>
 
+<p>
 So the renewed mind is not proud, it's not
 arrogant, it's not self asserting.
+</p>
 
+<p>
 It is humble, it is sober, it's realistic.
+</p>
 
+<p>
 The first day you walk into the bank to work,
 don't expect to sit in the manager's chair.
+</p>
 
+<p>
 See, that's unrealistic.
+</p>
 
+<p>
 You come into the kingdom, don't expect to be
 an apostle on day one.
+</p>
 
+<p>
 Be willing to be an office boy, empty the
 wastepaper baskets.
+</p>
 
+<p>
 You know, in the spiritual life, you know the
 way up?
+</p>
 
+<p>
 It's down, that's right.
+</p>
 
+<p>
 The lower down you go the higher up you end.
+</p>
 
+<p>
 And then Paul says in effect, and I'm not
 going to read the verse but he says you're not
 going to make it on your own.
+</p>
 
+<p>
 You're going to have to be part of the body of
 Christ.
+</p>
 
+<p>
 And God has given you a measure of faith, a
 proportion of faith, suitable to your place in
 the body.
+</p>
 
+<p>
 So, you have to find your place in the body
 and when you find your place you'll discover
 that you have the faith that you need for that
 place and for that function.
+</p>
 
+<p>
 You see, my hand works wonderfully well as a
 hand but if I try to walk on my hands I get
 into trouble.
+</p>
 
+<p>
 Because, my hand is designed to be a hand and
 not a foot.
+</p>
 
+<p>
 Lots of Christians are feet trying to be hands
 or noses trying to be ears.
+</p>
 
+<p>
 And if you have a continual struggle for faith
 in your Christian walk it's almost a sure
 guarantee that you're trying to be something
 God didn't design you to be.
+</p>
 
+<p>
 Because, basically the life of faith has tests
 and problems but it flows.
+</p>
 
+<p>
 It's not a continual struggle.
+</p>
 
+<p>
 And when you find your place in the body your
 allotted proportion of faith that God has
 given you will make you successful in that
 place.
+</p>
 
+<p>
 And then finally Paul says, in closing this
 little simple outline, when you're in your
 place in the body, God will give you the gifts
 you need for that place.
+</p>
 
+<p>
 A lot of people just are interested in
 spiritual gifts, and I agree, they're
 exciting.
+</p>
 
+<p>
 But they are not to be sought in detachment
 from the body.
+</p>
 
+<p>
 Because until you know your place in the body
 you don't know what gifts you'll need.
+</p>
 
+<p>
 My experience has been that when I get in the
 right place I have the right gifts.
+</p>
 
+<p>
 I remember when God thrust me into the
 ministry of deliverance, helping people to be
 free from demons, a certain friend of mine
 brought his sister, a married woman, for
 deliverance, to my first wife and me in a
 hotel somewhere in Colorado.
+</p>
 
+<p>
 And she sat there and she was a picture of
 misery.
+</p>
 
+<p>
 She obviously had problems.
+</p>
 
+<p>
 I looked at her and I opened my mouth and I
 heard myself say, "You need to be delivered
-from..." and I named about eight demons.
+from&#x2026;" and I named about eight demons.
+</p>
 
+<p>
 And then I thought to myself how did I know
 that?
+</p>
 
+<p>
 And then I realized God had given me the word
 of knowledge.
+</p>
 
+<p>
 Why?
+</p>
 
+<p>
 As an ornament?
+</p>
 
+<p>
 No.
+</p>
 
+<p>
 Because I needed it to be effective in the
 place that He put me.
+</p>
 
+<p>
 But remember that the key, the initial move,
 is to present your body a living sacrifice to
 God.
+</p>
 
+<p>
 That's a definite experience.
+</p>
 
+<p>
 And as I close this message I want to
 challenge you.
+</p>
 
+<p>
 Have you ever really handed over the control
 of your body to the Lord Jesus Christ?
+</p>
 
+<p>
 Have you really said, "God, it's yours.
+</p>
 
+<p>
 It's at your disposal, do with it what you
 want." And if you haven't, there's no better
 time than now to make that decision.
+</p>
 
+<p>
 Shall we pray together just for a few moments?
+</p>
 
+<p>
 I don't want to pressure anybody but it would
 be unfair to close this message without giving
 you an opportunity to respond.
+</p>
 
+<p>
 If you've heard tonight something about what
 God requires of you, a condition you haven't
 fulfilled and you want to fulfill it, you want
 to align yourself with God's purposes and
 God's priorities, and you say, "God, here I
 am.
+</p>
 
+<p>
 Here's my body, I place it on your altar." If
 you feel God prompting you to make that
 decision, we want to help you.
+</p>
 
+<p>
 Very, very simply, just ask you to do one
 thing to indicate your decision, just stand to
 your feet where you are in your place as an
 act of surrender to God.
+</p>
 
+<p>
 Say, "I take my hands off and I hand myself
 over to God and His will." You want to make
 that decision, stand to your feet wherever you
 are.
+</p>
 
+<p>
 Bless you.
+</p>
 
+<p>
 Now this is a very serious decision and I
 don't want to pressure you into making a
 decision that you'll go back on.
+</p>
 
+<p>
 God doesn't expect you to be perfect from this
 moment onwards but He does expect you to be
 sincere and wholehearted.
+</p>
 
+<p>
 So, if you really have decided that this is
 the night that you're going to put your body
 on God's altar, I suggest that you say this
 simple prayer out loud after me.
+</p>
 
+<p>
 You're not praying to me, I'm just giving you
 the words with which you can approach God.
+</p>
 
+<p>
 It'll be very brief and very simple, it
 doesn't have to be a long prayer.
+</p>
 
+<p>
 You say these words:
+</p>
 
-#+BEGIN_QUOTE
-  "Lord Jesus Christ, I thank you that on the cross you died in my
-  place to save me from my sin and to make me a child of God.
-  
-  And in response to your mercy, Lord, I now
-  present my body to you.
-  
-  I lay it upon the altar of your service as a
-  living sacrifice.
-  
-  From tonight onwards it belongs to you, Lord,
-  and not to me.
-  
-  I thank you you receive this sacrifice because
-  I offer it to you through Jesus. *Amen.*"
-#+END_QUOTE
+<blockquote>
+<p>
+"Lord Jesus Christ, I thank you that on the cross you died in my
+place to save me from my sin and to make me a child of God.
+</p>
 
+<p>
+And in response to your mercy, Lord, I now
+present my body to you.
+</p>
+
+<p>
+I lay it upon the altar of your service as a
+living sacrifice.
+</p>
+
+<p>
+From tonight onwards it belongs to you, Lord,
+and not to me.
+</p>
+
+<p>
+I thank you you receive this sacrifice because
+I offer it to you through Jesus. <b>Amen.</b>"
+</p>
+</blockquote>
+
+<p>
 Now just continue a few moments just quietly thanking God.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-10-07 Mon 00:00</p>
+<p class="author">Author: Derek Prince</p>
+<p class="date">Created: 2024-10-07 Mon 11:31</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
