@@ -165,7 +165,7 @@
 (add-to-list 'auto-mode-alist '("\\(\\.gntrc\\|tigrc\\)\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\(\\.clisprc\\|\\.clojurerc\\)\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\(CONTRIBUTING\\|\\.md\\|\\.markdown\\|\\.Rmd\\)\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\(\\.clj\\|\\.clojurerc\\|\\.repl\\)\\'" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\(\\.clj\\|\\.bb\\|\\.clojurerc\\|\\.repl\\)\\'" . clojure-mode))
 (add-to-list 'auto-minor-mode-alist '("\\.clj\\'" . helm-cider-mode))
 (add-to-list 'auto-mode-alist '("\\.lsp\\'" . lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojurescript-mode))

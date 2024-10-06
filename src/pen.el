@@ -989,11 +989,21 @@ Reconstruct the entire yaml-ht for a different language."
       (pen-q input)
     ""))
 
+;; TODO See if I can use shell-quote-argument instead
+;; (shell-quote-argument "Hi '")
+;; (pen-list2cmd '("Hi '" "Yo \"" " sup"))
+;; I think shell-quote-argument has a similar function to qf-or-empty
+;; combine-and-quote-strings has a similar function to pen-list2cmd
+;; (combine-and-quote-strings '("Hi '" "Yo \"" " sup"))
+
 ;; Dir is specified here to prevent a bug with tramp
 ;; Call with "/"
-(defun pen-list2cmd (l)
-  (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
-           nil default-directory))
+(comment
+ (defun pen-list2cmd (l)
+   (pen-snc (concat "cmd-nice-posix " (mapconcat 'qf-or-empty l " "))
+            nil default-directory)))
+
+(defalias 'pen-list2cmd 'combine-and-quote-strings)
 
 (defun pen-list2cmd-f (l)
   (pen-snc (concat "cmd-nice-posix " (mapconcat 'pen-q l " "))
