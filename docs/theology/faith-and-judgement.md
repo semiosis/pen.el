@@ -134,7 +134,7 @@ To let go and let God purify us is generally incorrect. The [Bible teaches](http
 
 > **[Acts 15:9](https://www.biblegateway.com/passage/?search=Acts%2015%3A9&version=ESV)** - and he made no distinction between us and them, having cleansed their hearts by faith. (ESV)
 
-Christ is reigning until all things are placed into subjection under Him. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+Christ is reigning until all things are subjected to Him. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all. (ESV)
 
@@ -677,7 +677,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd19c14d) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgb95ffe3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1822,7 +1822,7 @@ I just want to say that I don't observe any of these seasons, but it still happe
 
 > **[Galatians 4:6-11](https://www.biblegateway.com/passage/?search=Galatians%204%3A6-11&version=ESV)** - And because you are sons, God has sent the Spirit of his Son into our hearts, crying, Abba! Father! So you are no longer a slave, but a son, and if a son, then an heir through God. Formerly, when you did not know God, you were enslaved to those that by nature are not gods. But now that you have come to know God, or rather to be known by God, how can you turn back again to the weak and worthless elementary principles of the world, whose slaves you want to be once more? **You observe days and months and seasons and years! I am afraid I may have labored over you in vain.** (ESV)
 
-As I have repented to be corrected by the Word of God, agreeing with it and endeavoring to obey the Gospel of Jesus Christ, it feels as though I have been rejecting lots and lots of heresies, and rejecting lots and lots of false religion, and I hope that this helps others also to be corrected. I have been trying to be corrected by obedience to the Gospel of Jesus a lot since recording this 'dream' / conversation in my sleep. After actively trying to be obedient to the Truth, obedient to Jesus, saved to obey Jesus, I have come to distrust odd spirits which speak to me in my sleep.
+As I have repented to be corrected by the Word of God, agreeing with it and endeavoring to obey the Gospel of Jesus Christ, it feels as though I have been rejecting lots and lots of heresies, and rejecting lots and lots of false religion, and I hope that this helps others also to be corrected. I have been trying to be corrected by obedience to the Gospel of Jesus a lot since [recording this 'dream' / conversation in my sleep](https://web.archive.org/web/20221128020542/https://mullikine.github.io/posts/dream-king-john-the-baptist/). After actively trying to be obedient to the Truth, obedient to Jesus, saved to obey Jesus, I have come to distrust odd spirits which speak to me in my sleep.
 
 I believe that among other things I have had to fight against, reject or repent from:
 
@@ -5576,7 +5576,7 @@ If someone possessed the same characteristics, the same nature as God, in the sa
 
 I do recognise that if it wasn't for the salvation which God gives us in His Son Jesus, God would be against us because of sin. But God, out of His love, has appeased His own wrath towards those who are saved by Jesus:
 
-> **[Romans 1:18](https://www.biblegateway.com/passage/?search=Romans%201%3A18&version=ESV)** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. (ESV)
+> **[Romans 1:18](https://www.biblegateway.com/passage/?search=Romans%201%3A18&version=ESV)** - For the wrath of God is revealed from heaven against all ungodliness ([763. asebeia](https://biblehub.com/greek/763.htm)) and unrighteousness ([93. adikia](https://biblehub.com/greek/93.htm)) of men, who **by their unrighteousness suppress the truth**. (ESV)
 
 > **[Colossians 3:5-8](https://www.biblegateway.com/passage/?search=Colossians%203%3A5-8&version=ESV)** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. (ESV)
 
@@ -5677,6 +5677,46 @@ Obedience to God is faith. Abraham went to live in the land of promise by **obed
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
 > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+
+By unrighteousness and ungodliness, people suppress the Truth of God:
+
+> **[Romans 1:17-18](https://www.biblegateway.com/passage/?search=Romans%201%3A17-18&version=ESV)** - For in it the righteousness of God is revealed from faith for faith, as it is written, The righteous shall live by faith. For the wrath of God is revealed from heaven against all ungodliness ([763. asebeia](https://biblehub.com/greek/763.htm)) and unrighteousness ([93. adikia](https://biblehub.com/greek/93.htm)) of men, who **by their unrighteousness suppress the truth**. (ESV)
+
+When people give up the Truth of God and **suppress** the Truth of God, then God gives them over to destruction:
+
+> **[Romans 1:19-25](https://www.biblegateway.com/passage/?search=Romans%201%3A19-25&version=ESV)** - For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, **because they exchanged the truth about God for a lie** and worshiped and served the creature rather than the Creator, who is blessed forever! Amen. (ESV)
+
+We love God and God's power through His Spirit helps us to serve Him to do  works that are pleasing to Him:
+
+> **[II Timothy 3:1-5](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-5&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be **lovers of self**, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, **not loving good**, treacherous, reckless, swollen with conceit, lovers of pleasure <ins>rather than lovers of God ([5377. philotheos](https://biblehub.com/greek/5377.htm))</ins>, **having the appearance of godliness, but denying its power**. Avoid such people. (ESV)
+
+Paul taught that we accept God's forgiveness for our sins by placing our trusting faith in Jesus, paid Jesus' blood. God cleans our heart. And out of a pure heart and good conscience and sincere faith we love God and one another:
+
+> **[I Timothy 1:5](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5&version=ESV)** - The aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith. (ESV)
+
+But our good works can't make atonement for our sin. We must still be granted forgiveness from God. We know that anyone who places their trust in Jesus receives this forgiveness:
+
+> **[Hebrews 9:22](https://www.biblegateway.com/passage/?search=Hebrews%209%3A22&version=ESV)** - Indeed, under the law almost everything is purified with blood, and without the shedding of blood there is no forgiveness of sins. (ESV)
+
+God judges very fairly, but we must not reject Jesus:
+
+> **[John 12:48](https://www.biblegateway.com/passage/?search=John%2012%3A48&version=ESV)** - The one who rejects me and does not receive my words has a judge; the word that I have spoken will judge him on the last day. (ESV)
+
+God judges very fairly. He judges the hearts of all people. Christians should naturally serve and obey Jesus as they hold their faith in Jesus. The gospel of Jesus is the power of salvation to all that believe/trust/obey:
+
+> **[Romans 2:1-16](https://www.biblegateway.com/passage/?search=Romans%202%3A1-16&version=ESV)** - Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your hard and impenitent heart you are storing up wrath for yourself **on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works:** <ins>to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury.</ins> **There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
+
+We still need to accept forgiveness from God that our sins are forgiven. We can't reject the forgiveness of God. We need God's forgiveness:
+
+> **[Romans 4:7-10](https://www.biblegateway.com/passage/?search=Romans%204%3A7-10&version=ESV)** - Blessed are those whose lawless deeds are forgiven, and whose sins are covered; blessed is the man against whom the Lord will not count his sin. Is this blessing then only for the circumcised, or also for the uncircumcised? We say that faith was counted to Abraham as righteousness. How then was it counted to him? Was it before or after he had been circumcised? It was not after, but before he was circumcised. (ESV)
+
+Therefore we must trust Jesus, trust in Jesus, receive Jesus Christ Son of God as our Lord and Saviour:
+
+> **[Acts 10:43](https://www.biblegateway.com/passage/?search=Acts%2010%3A43&version=ESV):** Of Him all **the prophets bear witness** that **through His name** everyone who believes in Him receives forgiveness of sins."
+
+Once again, we must not reject Jesus:
+
+> **[Hebrews 3:15-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A15-19&version=ESV)** - As it is said, Today, **if you hear his voice, do not harden your hearts as in the rebellion**. For who were those who heard and yet rebelled? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but **to those who were disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
 
 We hear the gospel, and we receive salvation through faith. Reaching it is a journey of applied faith:
 
@@ -7614,7 +7654,7 @@ The gospel allows us to become partakers of the divine nature, having escaped th
 
 Some people will deny the **power** of the gospel:
 
-> **[II Timothy 3:1-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-7&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
+> **[II Timothy 3:1-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-7&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God ([5377. philotheos](https://biblehub.com/greek/5377.htm)), <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
 
 Jesus Christ bore the punishment for our iniquity to bring us peace with God:
 
@@ -7795,7 +7835,7 @@ We are also supposed to speak up for the God's Truth. We should affirm sound Chr
 
 -   **Amen:** [youtube.com: The Holy Spirit took over my preaching in Las Vegas and left me in awe and trembling](https://www.youtube.com/watch?v=RgAjAwDACMU)
 
-> **[II Timothy 3:1-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-7&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
+> **[II Timothy 3:1-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A1-7&version=ESV)** - But understand this, that in the last days there will come times of difficulty. For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God ([5377. philotheos](https://biblehub.com/greek/5377.htm)), <ins>having the appearance of godliness, but denying its power</ins>. Avoid such people. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a **knowledge of the truth**. (ESV)
 
 Godliness (behaviour in accordance with the knowledge of the truth) has the power to change a person's life to go from being selfish to selfless.
 
@@ -9087,7 +9127,7 @@ Fear of God is not only about having the heart to repent from sin and "beat hand
 
 > **[II Corinthians 5:6-11](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A6-11&version=ESV)** - So we are always of good courage. We know that while we are at home in the body we are away from the Lord, for we walk by faith, not by sight. Yes, we are of good courage, and we would rather be away from the body and at home with the Lord. So whether we are at home or away, **we make it our aim to please him. For we must all appear before the judgment seat of Christ, so that each one may receive what is due for what he has done in the body, whether good or evil.** Therefore, knowing the **fear of the Lord**, we persuade others. But what we are is known to God, and I hope it is known also to your conscience. (ESV)
 
-Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+**Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
 > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
@@ -9147,7 +9187,7 @@ Perfect obedience though is something Jesus reached but I certainly have not:
 
 The nations have a form of God's law written on our hearts:
 
-> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
 > **[Romans 3:28-29](https://www.biblegateway.com/passage/?search=Romans%203%3A28-29&version=ESV)** - For we hold that one is justified by faith apart from works of the law. Or is God the God of Jews only? Is he not the God of Gentiles also? Yes, of Gentiles also, (ESV)
 
@@ -10108,9 +10148,13 @@ We must obey! This obedience is being led by the Spirit.
 
 7.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
 
+    While we may have been justified, we still want to stop willfully sinning so that God can make better use of us:
+    
+    > **[Proverbs 16:32](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A32&version=ESV)** - Whoever is slow to anger is better than the mighty, and **he who rules his spirit than he who takes a city.** (ESV)
+    
     We should clean ourselves up:
     
-    > **[II Timothy 2:21](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A21&version=ESV)** - Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the master of the house, ready for every good work.
+    > **[II Timothy 2:21](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A21&version=ESV)** - Therefore, **if anyone cleanses himself from what is dishonorable**, he will be a vessel for honorable use, set apart as holy, **useful to the master of the house**, ready for every good work.
     
     Through faith, **the Holy Spirit** cleanses us:
     
@@ -10331,7 +10375,7 @@ We must stop doing evil:
 
 > **[Romans 2:12-13](https://www.biblegateway.com/passage/?search=Romans%202%3A12-13&version=ESV)** - For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
 
-> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+> **[Romans 2:14-16](https://www.biblegateway.com/passage/?search=Romans%202%3A14-16&version=ESV)** - For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
 We must live out the truth:
 
@@ -10635,7 +10679,7 @@ Confess:
     
     > **[I Peter 3:18-21](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-21&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to **death in the flesh but made alive in the spirit**, in which he went and proclaimed to the spirits in prison, because **they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ,
     
-    Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+    **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
     
     > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
     
@@ -14180,7 +14224,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org810877b)
+See: [33.4.1](#orgf5ea000)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15013,6 +15057,8 @@ Here, Paul actually argues **for** keeping the precepts of the Torah, and relate
 It's obedience which leads to righteousness, even the righteousness of faith:
 
 > **[Romans 6:16](https://www.biblegateway.com/passage/?search=Romans%206%3A16&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
+
+-   **Sermon:** [youtube.com: The Book of James - {James 1:1-12}](https://www.youtube.com/watch?v=UUJGyQhOx88) - God's word is a mirror to my condition to encourage what's right in me, correct what's wrong in me, and reflect God's love for me. A sermon by Chris Hilken in the book of James series at College Ave Church.
 
 You can't have only half of Jesus. Jesus both protects us and disciplines us:
 
@@ -17293,7 +17339,7 @@ We must abide in the teachings of Jesus, believing what Jesus has said, believin
 
 Avoid people who stubbornly oppose the teaching of Christ:
 
-> **[II Timothy 3:2-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A2-7&version=ESV)** - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God, having the appearance of godliness, but denying its power. **Avoid such people**. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a knowledge of the truth. (ESV)
+> **[II Timothy 3:2-7](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A2-7&version=ESV)** - For people will be lovers of self, lovers of money, proud, arrogant, abusive, disobedient to their parents, ungrateful, unholy, heartless, unappeasable, slanderous, without self-control, brutal, not loving good, treacherous, reckless, swollen with conceit, lovers of pleasure rather than lovers of God ([5377. philotheos](https://biblehub.com/greek/5377.htm)), having the appearance of godliness, but denying its power. **Avoid such people**. For among them are those who creep into households and capture weak women, burdened with sins and led astray by various passions, always learning and never able to arrive at a knowledge of the truth. (ESV)
 
 We must not be:
 
@@ -17313,7 +17359,7 @@ We must not be:
 -   treacherous
 -   reckless
 -   swollen with conceit
--   lovers of pleasure rather than lovers of God
+-   lovers of pleasure rather than lovers of God ([5377. philotheos](https://biblehub.com/greek/5377.htm))
 -   have the appearance of godliness but denying its power
 
 I literally have been getting tested with this stuff as I fight against an antichrist spirit.
@@ -18414,7 +18460,7 @@ As we walk in the light, as He is in the light, that is in the Truth, walking in
 
 There's nothing wrong with doing what the law requires (God can see):
 
-> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus. (ESV)
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
 So there is the righteousness that is of 'continuing to do/comply with' the Mosaic law. But the Mosaic law doesn't save. But Jesus does save:
 
@@ -22489,7 +22535,7 @@ Because we love and obey God, loving and obeying Jesus, we receive from God when
 
 > **[I John 3:22](https://www.biblegateway.com/passage/?search=1%20John%203%3A22&version=ESV)** - and whatever we ask we receive from him, **because we keep his commandments and do what pleases him**. (ESV)
 
-Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+**Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
 > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
@@ -22508,7 +22554,7 @@ I think James is saying that without **holding fast to the word of God** (the tr
 
 > **[James 1:21-24](https://www.biblegateway.com/passage/?search=James%201%3A21-24&version=ESV)** - Therefore put away all filthiness and rampant wickedness and receive with meekness the implanted word, which is able to save your souls. But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. For he looks at himself and goes away and at once forgets what he was like. (ESV)
 
-Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+**Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
 > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
@@ -28180,7 +28226,7 @@ their faithfulness to God and their conviction.
 
 Fellow heirs with Christ are still in subjection to Christ. Fellow heirs with Christ have Christ as their King and Lord and Saviour and God and Jehovah as their God.
 
-Christ is reigning until all things are placed into subjection under Him and then Jesus will also be subjected to Father God. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+Christ is reigning until all things are subjected to Him. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. **When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.** (ESV)
 
@@ -28378,7 +28424,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org810877b)
+See: [33.4.1](#orgf5ea000)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -32604,7 +32650,7 @@ There are other instances of this - it's faith in Jesus which makes a person wel
 
 > **[Ephesians 3:9-11](https://www.biblegateway.com/passage/?search=Ephesians%203%3A9-11&version=ESV)** - and to bring to light for everyone what is the plan of the mystery hidden for ages in God who created all things, so that through the church the manifold wisdom of God might now be made known to the rulers and authorities in the heavenly places. This was according to the eternal purpose that he has realized in Christ Jesus our Lord,
 
-> **[Romans 1:18-25](https://www.biblegateway.com/passage/?search=Romans%201%3A18-25&version=ESV)** - For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
+> **[Romans 1:18-25](https://www.biblegateway.com/passage/?search=Romans%201%3A18-25&version=ESV)** - For the wrath of God is revealed from heaven against all ungodliness ([763. asebeia](https://biblehub.com/greek/763.htm)) and unrighteousness ([93. adikia](https://biblehub.com/greek/93.htm)) of men, who by their unrighteousness suppress the truth. For what can be known about God is plain to them, because God has shown it to them. For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse. For although they knew God, they did not honor him as God or give thanks to him, but they became futile in their thinking, and their foolish hearts were darkened. Claiming to be wise, they became fools, and exchanged the glory of the immortal God for images resembling mortal man and birds and animals and reptiles. Therefore God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves, because they exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.
 
 > **[Deuteronomy 7:9](https://www.biblegateway.com/passage/?search=Deuteronomy%207%3A9&version=ESV)** - Know therefore that the LORD your God is God, the faithful God who keeps covenant and steadfast love with those who love him and keep his commandments, to a thousand generations, (ESV)
 
@@ -35213,7 +35259,7 @@ I think it's possible to say, "I've been justified by Jesus' blood because I'm h
 
 And then we await personal commendation from God.
 
-Disbelief causes disobedience. Disbelief caused the Israelites to not walk in obedience:
+**Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
 > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
 
@@ -36091,7 +36137,7 @@ Jesus Christ (God the Son) currently has all authority in heaven and earth:
 
 Fellow heirs with Christ are still in subjection to Christ. Fellow heirs with Christ have Christ as their King and Lord and Saviour and God and Jehovah as their God.
 
-Christ is reigning until all things are placed into subjection under Him and then Jesus will also be subjected to Father God. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
+Christ is reigning until all things are subjected to Him. We must come under the Lordship of Christ Jesus. I consider any so-called god which is in rebellion to Christ to be a demon:
 
 > **[I Corinthians 15:25-28](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A25-28&version=ESV)** - For he must reign until he has put all his enemies under his feet. The last enemy to be destroyed is death. For God has put all things in subjection under his feet. But when it says, all things are put in subjection, it is plain that he is excepted who put all things in subjection under him. **When all things are subjected to him, then the Son himself will also be subjected to him who put all things in subjection under him, that God may be all in all.** (ESV)
 
