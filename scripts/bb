@@ -34,6 +34,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -h|--help) {
+        shift
+        do_help=y
+    }
+    ;;
+
     *) break;
 esac; done
 
@@ -82,7 +88,11 @@ case "$opt" in
     *)
 esac
 
-/usr/local/bin/bb "$@"
+if test "$do_help" = "y"; then
+    /usr/local/bin/bb --help "$@" | pavs
+else
+    /usr/local/bin/bb "$@"
+fi
 
 # Since babashka scripts ofter use the TTY for things like reading input from the user,
 # I should not use pavs
