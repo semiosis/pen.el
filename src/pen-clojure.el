@@ -759,4 +759,6 @@ the namespace in the Clojure source buffer"
           file))
     file-with-protocol))
 
+(add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
+
 (provide 'pen-clojure)

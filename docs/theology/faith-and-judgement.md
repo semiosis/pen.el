@@ -688,7 +688,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdf9995e) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdd5e072) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -2131,6 +2131,10 @@ I was born-again 'of the Spirit' on [2 April 2022](https://web.archive.org/web/2
 We are saved to serve Christ:
 
 > **[II Corinthians 5:15](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A15&version=ESV)** - and he died for all, that those who live might no longer live for themselves but for him who for their sake died and was raised. (ESV)
+
+We are meant to serve God. We are saved from not serving God, that we serve God through serving Christ:
+
+> **[Luke 4:4-8](https://www.biblegateway.com/passage/?search=Luke%204%3A4-8&version=ESV)** - And Jesus answered him, It is written, Man shall not live by bread alone. And the devil took him up and showed him all the kingdoms of the world in a moment of time, and said to him, To you I will give all this authority and their glory, for it has been delivered to me, and I give it to whom I will. If you, then, will worship me, it will all be yours. And Jesus answered him, It is written, **You shall worship the Lord your God, and him only shall you serve.** (ESV)
 
 We are saved to work for Christ for the sake of Christ and the ministry of reconciling other sinners to God through Christ:
 
@@ -4757,7 +4761,7 @@ As Christians we were at one time disobedient, and were not able to do this perf
 and after we are grafted into Christ, we now have His righteousness and Almighty God as our Father, and Jesus is our Master and we seek to please our Master,
 like the All Blacks try to please their coach, and we seek to follow the Royal Law, which is a part of being obedient to Jesus. We have His Spirit, and His Spirit helps us to do this.
 
--   **:** And he fell down before them
+-   **[Quote by Billy Graham](https://youtu.be/Co2h4YQsQc4?t=613):** And he fell down before them
     and says, "What must I do to be saved? And
     they gave him a very simple answer, not
     something complicated. Simple, so that
@@ -4825,7 +4829,7 @@ However, I also neither like the way in which the names of other so-called gods 
 
 Let's have reverence for Jehovah God and serve Him:
 
-> **[Malachi 3:15-18](https://www.biblegateway.com/passage/?search=Malachi%203%3A15-18&version=ESV)** - And now we call the arrogant blessed. <ins>Evildoers</ins> not only prosper but they <ins>put God to the test</ins> and they escape. Then <ins>those who feared the LORD spoke with one another.</ins> The LORD paid attention and heard them, and a book of remembrance was written before him of **those who feared the LORD and esteemed his name.** They shall be mine, says the LORD of hosts, in the day when I make up my treasured possession, and <ins>I will spare them as a man spares his son who serves him.</ins> Then once more you shall see \_the distinction between the righteous and the wicked, between one who serves God and one who does not serve him. (ESV)
+> **[Malachi 3:15-18](https://www.biblegateway.com/passage/?search=Malachi%203%3A15-18&version=ESV)** - And now we call the arrogant blessed. <ins>Evildoers</ins> not only prosper but they <ins>put God to the test</ins> and they escape. Then <ins>those who feared the LORD spoke with one another.</ins> The LORD paid attention and heard them, and a book of remembrance was written before him of **those who feared the LORD and esteemed his name.** They shall be mine, says the LORD of hosts, in the day when I make up my treasured possession, and <ins>I will spare them as a man spares his son who serves him.</ins> Then once more you shall see <ins>the distinction between the righteous and the wicked, between one who serves God and one who does not serve him.</ins> (ESV)
 
 These Scriptures refers to Jesus' name:
 
@@ -4891,7 +4895,7 @@ Bad or unchrist-like behaviour might be making money or some other thing more im
 
 > **[Matthew 23:26](https://www.biblegateway.com/passage/?search=Matthew%2023%3A26&version=ESV)** - You blind Pharisee! First clean the inside of the cup and the plate, that the outside also may be clean. (ESV)
 
-Jesus came to help us, shed His blood for us as atonement, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
+Jesus came to help us, shed His blood for us as atonement to ransom us from our sin, so that we can be set free from it and put a stop to it, and to bring us to God. Jesus certainly has made it easier for us to obey God, and we can be sanctified by His blood:
 
 > **[Luke 23:36-37](https://www.biblegateway.com/passage/?search=Luke%2023%3A36-37&version=ESV)** - The soldiers also mocked him, coming up and offering him sour wine and saying, If you are the King of the Jews, save yourself! (ESV)
 
@@ -6122,6 +6126,20 @@ Christ died for us, so through His mercy alone, he purchased us.
 
 ### Those who have a heart of faith towards Him (and anyone who He wills) may receive forgiveness of sins through his name
 
+It's impossible for man to save himself:
+
+> **[Matthew 19:25-26](https://www.biblegateway.com/passage/?search=Matthew%2019%3A25-26&version=ESV)** - When the disciples heard this, they were greatly astonished, saying, Who then can be saved? But Jesus looked at them and said, With man this is impossible, but with God all things are possible. (ESV)
+
+Anyone God wills He may forgive and make clean:
+
+> **[Matthew 8:1-3](https://www.biblegateway.com/passage/?search=Matthew%208%3A1-3&version=ESV)** - When he came down from the mountain, great crowds followed him. And behold, a leper came to him and knelt before him, saying, **Lord, if you will, you can make me clean**. And Jesus stretched out his hand and touched him, saying, **I will; be clean. And immediately his leprosy was cleansed.** (ESV)
+
+> **[Matthew 9:5-8](https://www.biblegateway.com/passage/?search=Matthew%209%3A5-8&version=ESV)** - For <ins>which is easier, to say, **Your sins are forgiven**, or to say, **Rise and walk**? But that you may know that the Son of Man has authority on earth to forgive sins</ins> — he then said to the paralytic—Rise, pick up your bed and go home. And he rose and went home. When the crowds saw it, they were afraid, and they glorified God, who had given such authority to men. (ESV)
+
+We certainly must trust in the name of the Only-Begotten Son of God if we want to be born of God:
+
+> **[John 1:12-13](https://www.biblegateway.com/passage/?search=John%201%3A12-13&version=ESV)** - But to all who did receive him, **who believed in his name**, he gave the right to become children of God, who were **born**, not of blood nor of the will of the flesh nor of the will of man, but **of God**. (ESV)
+
 An heart of faith looks like:
 
 -   Wanting to do God's will
@@ -7171,7 +7189,9 @@ A new creation lives for Christ:
 
 > **[II Corinthians 5:14-17](https://www.biblegateway.com/passage/?search=2%20Corinthians%205%3A14-17&version=ESV)** - For the love of Christ controls us, because we have concluded this: that one has died for all, therefore all have died; and <ins>he died for all, that those who live might no longer live for themselves but for him</ins> who for their sake died and was raised. From now on, therefore, we regard no one according to the flesh. Even though we once regarded Christ according to the flesh, we regard him thus no longer. Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.
 
-Following Jesus Christ is not having a religious spirit, but it's serving God in reality.
+Following Jesus Christ is not having a religious spirit, but it's serving God in reality:
+
+> **[Ephesians 5:13-16](https://www.biblegateway.com/passage/?search=Ephesians%205%3A13-16&version=ESV)** - But when anything is exposed by the light, it becomes visible, for anything that becomes visible is light. Therefore it says, Awake, O sleeper, and arise from the dead, and Christ will shine on you. Look carefully then how you walk, not as unwise but as wise, making the best use of the time, because the days are evil. (ESV)
 
 > **[Galatians 3:26](https://www.biblegateway.com/passage/?search=Galatians%203%3A26&version=ESV)** - for in Christ Jesus you are all sons of God, through faith. (ESV)
 
@@ -14263,7 +14283,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgde507c1)
+See: [33.4.1](#org18cd5a2)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17210,6 +17230,19 @@ Don't rely on your dreams - they may come from evil spirits:
 If you listen to someone with a deceptive, beguiling spirit, then the same measure of that would come into you.
 
 > **[Isaiah 30:1](https://www.biblegateway.com/passage/?search=Isaiah%2030%3A1&version=ESV)** - Ah, stubborn children, declares the LORD, who carry out a plan, but not mine, and who make an alliance, but not of my Spirit, that they may add sin to sin; (ESV)
+
+-   **[youtube.com: AFreshWord - Important](https://www.youtube.com/watch?v=hlbMJmG9_W4):** You know, one thing that I can't
+    stand about these familiar spirits
+    is that they usually lead you to the
+    doorstep of destruction. They'll have you moving and doing all
+    these different things just to end up
+    completely destitute somewhere and
+    outside of the will of God. I absolutely
+    hate it. And it's my prayer that you
+    would be completely delivered and if
+    you've been led astray by a deceiving
+    lying spirit I pray that your entire
+    life would be redeemed.
 
 And that would would probably affect the truthfulness of your dreams if you have a prophetic gift, but there are other reasons a person may get dreams of falsehood including spiritual attack.
 
@@ -26349,6 +26382,14 @@ I don't think it's possible to receive the grace without receiving the truth, be
 
 Prideful sin definitely doesn't make the cut.
 
+> **[Proverbs 16:18](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A18&version=ESV)** - Pride goes before destruction, and a haughty spirit before a fall. (ESV)
+
+> **[Proverbs 16:5](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A5&version=ESV)** - Everyone who is arrogant in heart is an abomination to the LORD; be assured, he will not go unpunished. (ESV)
+
+> **[Proverbs 16:49](https://www.biblegateway.com/passage/?search=Proverbs%2016%3A49&version=ESV)** - Why should a fool have money in his hand to buy wisdom when he has no sense? (ESV)
+
+> **[Isaiah 2:17](https://www.biblegateway.com/passage/?search=Isaiah%202%3A17&version=ESV)** - And the haughtiness of man shall be humbled, and the lofty pride of men shall be brought low, and the LORD alone will be exalted in that day. (ESV)
+
 
 ### The everlasting covenant if one is in the everlasting covenant, should incite a person's shame for their past sin - not their pride
 
@@ -28489,7 +28530,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgde507c1)
+See: [33.4.1](#org18cd5a2)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
