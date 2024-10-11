@@ -688,7 +688,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdd5e072) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7258dc3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1054,7 +1054,7 @@ As we hold our faith in God, we understand that He loved us first. As we hold ou
 
 > **[Ephesians 2:10](https://www.biblegateway.com/passage/?search=Ephesians%202%3A10&version=ESV)** - For we are his workmanship, **created in Christ Jesus for good works**, which God prepared beforehand, that we should walk in them. (ESV)
 
-While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit. Doing the will of God isn't "work", but is a just mode of walking that is different from doing the will of satan.
+While obedience exists in the heart, as belief does, as **faith is** <ins>believing and obedient</ins> **trust**, works are the actions we do out of that obedience, that love for Jesus, and out of ongoing believing, obedient faith, out of obedience to the Holy Spirit. Doing the will of God isn't "work", but is a just mode of walking. It's a mode of walking that is different from doing the will of satan. Satan is not God's equal and opposite.
 
 > **[John 3:36](https://biblehub.com/interlinear/john/3-36.htm)** - The [one] believing (**[pisteuōn](https://biblehub.com/greek/4100.htm)**) in the Son has life eternal; the [one] however not obeying (**[apeithōn](https://biblehub.com/greek/544.htm)**) the Son not will see life but the wrath - of God abides on him (Interlinear)
 
@@ -14283,7 +14283,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org18cd5a2)
+See: [33.4.1](#org738b3c5)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -18209,6 +18209,8 @@ We must forgive our family in Christ:
 > **[Luke 17:3-4](https://www.biblegateway.com/passage/?search=Luke%2017%3A3-4&version=ESV)** - Pay attention to yourselves! If your brother sins, rebuke him, and if he repents, forgive him, and if he sins against you seven times in the day, and turns to you seven times, saying, I repent, you must forgive him.
 
 > **[Colossians 3:13](https://www.biblegateway.com/passage/?search=Colossians%203%3A13&version=ESV)** - bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so <ins>you also must forgive.</ins> (ESV)
+
+-   **Song:** [youtube.com: Majesty{Here I am} - Delirious](https://www.youtube.com/watch?v=vNjH8QDpBFY)
 
 It's obedience which leads to righteousness, even the righteousness of faith:
 
@@ -23142,6 +23144,55 @@ Put to death the earthly in us:
 We **must** forgive one another:
 
 > **[Colossians 3:5-13](https://www.biblegateway.com/passage/?search=Colossians%203%3A5-13&version=ESV)** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. On account of these the wrath of God is coming. In these you too once walked, when you were living in them. But now you must put them all away: anger, wrath, malice, slander, and obscene talk from your mouth. Do not lie to one another, seeing that you have put off the old self with its practices and have put on the new self, which is being renewed in knowledge after the image of its creator. Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all. Put on then, as God's chosen ones, holy and beloved, compassion, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, **forgiving each other**; as the Lord has forgiven you, so **you also must forgive.** (ESV)
+
+
+## Inheriting the Kingdom of God, even on earth
+
+-   Stop sinning - repent from sin
+-   Make Jesus #1 agape
+-   Obey Jesus
+-   Inherit the kingdom of God
+    -   Righteousness, peace, joy in the Holy Spirit
+
+> **[Matthew 6:30-33](https://www.biblegateway.com/passage/?search=Matthew%206%3A30-33&version=ESV)** - But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you. (ESV)
+
+> **[Romans 14:17](https://www.biblegateway.com/passage/?search=Romans%2014%3A17&version=ESV)** - For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. (ESV)
+
+> **[Galatians 5:19-21](https://www.biblegateway.com/passage/?search=Galatians%205%3A19-21&version=ESV)** - Now the works of the flesh are evident: sexual immorality, impurity, sensuality, idolatry, sorcery, enmity, strife, jealousy, fits of anger, rivalries, dissensions, divisions, envy, drunkenness, orgies, and things like these. I warn you, as I warned you before, that those who do such things will not inherit the kingdom of God. (ESV)
+
+We must be actively keeping Jesus as our Pearl of Great Price:
+
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love ([25. agapōsin / agape loving](https://biblehub.com/greek/25.htm)) him?** (ESV)
+
+     1  191        80       1473     27         3756 3588
+     2  Akousate   adelphoi mou      agapētoi   ouch ho
+     3  Ἀκούσατε , ἀδελφοί  μου      ἀγαπητοί . οὐχ  ὁ
+     4  Listen     brothers my       beloved    Not   -
+     5  V-AMA-2P   N-VMP    PPro-G1S Adj-VMP    Adv  Art-NMS
+     6  
+     7  2316  1586       3588 [e 4434     3588 [e 2889
+     8  Theos exelexato  tous    ptōchous tō      kosmō
+     9  Θεὸς  ἐξελέξατο  τοὺς    πτωχοὺς  τῷ      κόσμῳ
+    10  God   has chosen the     poor      -      in this world
+    11  N-NMS V-AIM-3S   Art-AMP Adj-AMP  Art-DMS N-DMS
+    12  
+    13  4145         1722 4102   2532 2818        3588
+    14  plousious    en   pistei kai  klēronomous tēs
+    15  πλουσίους    ἐν   πίστει καὶ  κληρονόμους τῆς
+    16  [to be] rich in   faith  and  heirs       of the
+    17  Adj-AMP      Prep N-DFS  Conj N-AMP       Art-GFS
+    18  
+    19  932       3739       1861        3588
+    20  basileias hēs        epēngeilato tois
+    21  βασιλείας ἧς         ἐπηγγείλατο τοῖς
+    22  kingdom   that       He promised to those
+    23  N-GFS     RelPro-GFS V-AIM-3S    Art-DMP
+    24  
+    25  25        846
+    26  agapōsin  auton
+    27  ἀγαπῶσιν  αὐτόν  ?
+    28  loving    Him
+    29  V-PPA-DMP PPro-AM3S
 
 
 ## Jesus explains how we can go about seeking the Kingdom of God and His righteousness - this is obedience (the type of faith we must have), not works!
@@ -28530,7 +28581,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org18cd5a2)
+See: [33.4.1](#org738b3c5)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
