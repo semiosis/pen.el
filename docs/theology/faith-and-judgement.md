@@ -690,7 +690,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org88881ac) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf39eee3) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -944,6 +944,33 @@ I have also had a lot of suffering as I keep a good conscience with God, having 
 But a good conscience with God remaining obedient to Him, enduring suffering and continuing to be faithful to God, and keeping the commandments of Jesus Christ while feeling like a zombie having what you love stolen from you by the enemy - this is still love for God to continue keeping the commandments of Jesus Christ.
 
 > **[John 14:21](https://www.biblegateway.com/passage/?search=John%2014%3A21&version=ESV)** - Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
+
+-   **[youtube.com: Especially for someone who is feeling downcast - Lamentations 3: 22-23 | 29th September @time: 14 sec](https://youtube.com/watch?v=2WuQzk0QI-c&t=14):** The book of
+    Lamentations is unlikely to be the most
+    popular book in the Bible, and the
+    reason for this is it's a book of
+    laments. It's written round about the
+    time of the [Babylonian exile](https://en.wikipedia.org/wiki/Babylonian_captivity) and
+    it's it's written from the point of view
+    of someone who has lost everything and
+    doesn't hold back in how he feels about this. But nevertheless, if you look hard
+    enough, you'll find that the book of Lamentations does
+    contain some nuggets of pure, pure gold,
+    and this week's verses are a case in
+    point.
+    
+    They help us show the difference it can
+    make if we focus our eyes not so much on
+    what we have *lost* but on what we still
+    <ins>have</ins>. If all we do is focus on our eyes
+    on all that we have lost, the result will
+    be a soul that is
+    downcast. Whereas, if we remember to focus
+    on what we still have, the result is a
+    soul that still has hope for
+    better times to come.
+
+> **[Lamentations 3:19-23](https://www.biblegateway.com/passage/?search=Lamentations%203%3A19-23&version=ESV)** - Remember my affliction and my wanderings, the wormwood and the gall! My soul continually remembers it and is bowed down within me. But this I call to mind, and therefore I have hope: [The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.](https://www.youtube.com/watch?v=JYkGipgrqmg) (ESV)
 
 Consider Job. Obedience is in the heart, along with belief in the Truth and understanding of the gospel. Obedience can exist without work. Jesus said, "The spirit is indeed willing but the flesh is weak."
 
@@ -2063,9 +2090,11 @@ OK, so the Spirit is received through faith (faith like Abraham's) in Jesus Chri
 
 Then there may be some nuance between receiving the Holy Spirit who is the guarantee of our inheritance, and being born of the Spirit which may be [part of] our inheritance.
 
+> **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)** - I tell you this, brothers: **flesh and blood cannot inherit the kingdom of God**, nor does the perishable inherit the imperishable. (ESV)
+
 In trusting in Jesus Christ, we may receive the Holy Spirit:
 
-> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts (1372. dipsaó), let him come to me and drink (4095. pinó). Whoever believes (4100. pisteuó) in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive, for **as yet the Spirit had not been given, because Jesus was not yet glorified.** (ESV)
+> **[John 7:37-39](https://www.biblegateway.com/passage/?search=John%207%3A37-39&version=ESV)** - On the last day of the feast, the great day, Jesus stood up and cried out, If anyone thirsts [(G1372 dipsaó)](https://www.blueletterbible.org/lexicon/g1372/kjv/tr/0-1/), let him come to me and drink [(G4095 pinó)](https://www.blueletterbible.org/lexicon/g4095/kjv/tr/0-1/). Whoever believes [(G4100 pisteuó)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in me, as the Scripture has said, Out of his heart will flow rivers of living water. Now this he said about the Spirit, whom those who believed in him were to receive, for **as yet the Spirit had not been given, because Jesus was not yet glorified.** (ESV)
 
 > **[Ephesians 1:13-14](https://www.biblegateway.com/passage/?search=Ephesians%201%3A13-14&version=ESV)** - In him you also, when you heard the word of truth, the gospel of your salvation, and believed in him, were sealed with the promised Holy Spirit, **who is the guarantee of our inheritance until we acquire possession of it, to the praise of his glory**. (ESV)
 
@@ -8364,7 +8393,9 @@ These people did not obey Jesus, and produced bad fruit:
 
 These people did not believe, and their works were not done in faith:
 
-> **[Matthew 7:21-24](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-24&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. **Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock**.
+> **[Matthew 7:21-24](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-24&version=ESV)** - Not everyone who says to me, Lord, Lord, will <ins>enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.</ins> On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. **Everyone then who hears these words of mine and does them will be like a wise man who built his house on the rock**.
+
+> **[Matthew 6:10](https://www.biblegateway.com/passage/?search=Matthew%206%3A10&version=ESV)** - <ins>Your kingdom come, your will be done, on earth as it is in heaven.</ins> (ESV)
 
 These people didn't endure in faith:
 
@@ -9346,7 +9377,9 @@ We must do the will of the Father:
 
 We must not be workers of lawlessness, but our belief should produce more obedience:
 
-> **[Matthew 7:21-23](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-23&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven. On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness [(458. anomia)](https://biblehub.com/interlinear/matthew/7-23.htm). (ESV)
+> **[Matthew 7:21-23](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-23&version=ESV)** - Not everyone who says to me, Lord, Lord, will <ins>enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.</ins> On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness [(458. anomia)](https://biblehub.com/interlinear/matthew/7-23.htm). (ESV)
+
+> **[Matthew 6:10](https://www.biblegateway.com/passage/?search=Matthew%206%3A10&version=ESV)** - <ins>Your kingdom come, your will be done, on earth as it is in heaven.</ins> (ESV)
 
     1  anomia: lawlessness
     2  Original Word: ἀνομία, ας, ἡ
@@ -10354,7 +10387,9 @@ God loved us first. We must accept that:
 
 We must also obey the teaching of Jesus, believe on His name and follow His commandments:
 
-> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will <ins>enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.</ins> On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+
+> **[Matthew 6:10](https://www.biblegateway.com/passage/?search=Matthew%206%3A10&version=ESV)** - <ins>Your kingdom come, your will be done, on earth as it is in heaven.</ins> (ESV)
 
 > **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
@@ -10945,7 +10980,9 @@ Repentance from sin, obeying Jesus Christ, making Jesus your Lord and Saviour:
 
 ## Get to know Jesus by following His commandments
 
-> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will <ins>enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.</ins> On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+
+> **[Matthew 6:10](https://www.biblegateway.com/passage/?search=Matthew%206%3A10&version=ESV)** - <ins>Your kingdom come, your will be done, on earth as it is in heaven.</ins> (ESV)
 
 > **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
@@ -12708,13 +12745,13 @@ Doing the will of God from the heart means obedience, and integrity and seeking 
 
 ## Get to know Jesus by following His commandments
 
-> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will <ins>enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.</ins> On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name? And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock. And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand. And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+
+> **[Matthew 6:10](https://www.biblegateway.com/passage/?search=Matthew%206%3A10&version=ESV)** - <ins>Your kingdom come, your will be done, on earth as it is in heaven.</ins> (ESV)
 
 > **[Luke 6:46-49](https://www.biblegateway.com/passage/?search=Luke%206%3A46-49&version=ESV)** - Why do you call me Lord, Lord, and not do what I tell you? <ins>Everyone who comes to me and hears my words and does them, I will show you **what he is like: he is like** a man building a house, who dug deep and laid the foundation on the rock</ins>. And when a flood arose, the stream broke against that house and could not shake it, because it had been well built. But the one who hears and does not do them is like a man who built a house on the ground without a foundation. When the stream broke against it, immediately it fell, and the ruin of that house was great. (ESV)
 
 > **[I John 2:3-4](https://www.biblegateway.com/passage/?search=1%20John%202%3A3-4&version=ESV)** - And <ins>by this we know that we have come to</ins> **know him**, <ins>if we</ins> **keep his commandments**. Whoever says I know him but does not keep his commandments is a liar, and the truth is not in him, (ESV)
-
-> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness.  <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>.  And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 You must obey Jesus:
 
@@ -14285,7 +14322,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org3684a1f)
+See: [33.4.1](#orge1ec1dc)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -23556,7 +23593,7 @@ Zacchaeus was repentant, and was saved through Jesus as he had the faith of Abra
 
 ### We must be born-again
 
-> **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable. (ESV)
+> **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)** - I tell you this, brothers: **flesh and blood cannot inherit the kingdom of God**, nor does the perishable inherit the imperishable. (ESV)
 
 
 ### Made alive in Christ
@@ -27792,7 +27829,7 @@ Fulfilling the requirement of the law is required of us by God. God judges the s
 
 ### These people performed dead works, and never obeyed Jesus
 
-> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.  And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
+> **[Matthew 7:21-27](https://www.biblegateway.com/passage/?search=Matthew%207%3A21-27&version=ESV)** - Not everyone who says to me, Lord, Lord, will enter the kingdom of heaven, but the one who does the will of my Father who is in heaven.  On that day many will say to me, Lord, Lord, did we not prophesy in your name, and cast out demons in your name, and do many mighty works in your name?  And then will I declare to them, I never knew you; depart from me, you workers of lawlessness. <ins>Everyone then who hears these words of mine</ins> **and does them** <ins>will be like a wise man who built his house on the rock</ins>. And the rain fell, and the floods came, and the winds blew and beat on that house, but it did not fall, because it had been founded on the rock.  And everyone who hears these words of mine and does not do them will be like a foolish man who built his house on the sand.And the rain fell, and the floods came, and the winds blew and beat against that house, and it fell, and great was the fall of it. (ESV)
 
 To get to know Jesus, follow His commandments - be obedient to Jesus.
 
@@ -28147,7 +28184,7 @@ The universe is upheld by the word of Jesus' power.
     
     > **[John 3:5](https://www.biblegateway.com/passage/?search=John%203%3A5&version=ESV)** - Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God.
     
-    > **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)d** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable.
+    > **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)d** - I tell you this, brothers: **flesh and blood cannot inherit the kingdom of God**, nor does the perishable inherit the imperishable.
     
     [youtube.com: The Chosen scene: John 3:16 @time: 2 min 8 sec](https://youtube.com/watch?v=_p2XIUK9VgA&t=128)
 
@@ -28583,7 +28620,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org3684a1f)
+See: [33.4.1](#orge1ec1dc)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -30255,13 +30292,17 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
     
     And then it's possible to inherit the imperishable:
     
-    > **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)** - I tell you this, brothers: flesh and blood cannot inherit the kingdom of God, nor does the perishable inherit the imperishable.
+    > **[I Corinthians 15:50](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A50&version=ESV)** - I tell you this, brothers: **flesh and blood cannot inherit the kingdom of God**, nor does the perishable inherit the imperishable.
     
     > **I Corinthians 15:51-54** - Behold! I tell you a mystery. We shall not all sleep, but we shall all be changed, in a moment, in the twinkling of an eye, at the last trumpet. For the trumpet will sound, and the dead will be raised imperishable, and we shall be changed. For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory. (ESV)
 
 2.  The mortal puts on immortality (at the resurrection)
 
     > **[I Corinthians 15:53](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A53&version=ESV)** - For this perishable body must put on the imperishable, and this mortal body must put on immortality. When the perishable puts on the imperishable, and the mortal puts on immortality, then shall come to pass the saying that is written: Death is swallowed up in victory.
+    
+    Because truth is truth, it is imperishable:
+    
+    > **[I Peter 1:22-25](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22-25&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
     
     > **[Isaiah 25:8](https://www.biblegateway.com/passage/?search=Isaiah%2025%3A8&version=ESV)** - He will swallow up death forever; and the Lord God will wipe away tears from all faces, and the reproach of his people he will take away from all the earth, for the Lord has spoken.
 
@@ -30276,7 +30317,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
         
         So that, this afternoon, when sin comes to you, and this is the way he comes, and he says, "You know, life is short, my pleasures are large, and then you die. Maximize. Eat, drink and be merry, for tomorrow you die." To which, you, now after this morning's message, will say, " And the day after that, I will live again, forever, and therefore you're a liar! You're a liar! You're telling me that this life is all I've got, and I should follow you because you can maximize it for me? Well, I'll tell you what I'm going to rise from the dead with Jesus and then I live 10 million million Ages of Ages, and if I were to choose your way now and go to hell rather than Jesus' way and go to heaven I would be an absolute fool. Out of here, sin! That's the way you argue with sin. It's the only way you can defeat sin. Righteousness is not automatic, folks. It is won by warfare with Truth from the Bible.
     
-    Because truth is truth, it is imperishable.
+    Because truth is truth, it is imperishable:
     
     > **[I Peter 1:22-25](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A22-25&version=ESV)** - Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; for All flesh is like grass and all its glory like the flower of grass. The grass withers, and the flower falls, but the word of the Lord remains forever. And this word is the good news that was preached to you. (ESV)
     
