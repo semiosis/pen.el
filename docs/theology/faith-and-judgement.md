@@ -532,6 +532,8 @@ Then after a month I [confessed Jesus](https://web.archive.org/web/2022050303034
 
 OK, so in response for being forgiven and born-again, we should live to serve God through serving Christ, getting to know Christ, and **disobeying sin**.
 
+> **[Romans 7:1-4](https://www.biblegateway.com/passage/?search=Romans%207%3A1-4&version=ESV)** - Or do you not know, brothers—for I am speaking to those who know the law—that the law is binding on a person only as long as he lives? Thus a married woman is bound by law to her husband while he lives, but if her husband dies she is released from the law of marriage. Accordingly, she will be called an adulteress if she lives with another man while her husband is alive. But if her husband dies, she is free from that law, and if she marries another man she is not an adulteress. Likewise, my brothers, **you also have died to the law through the body of Christ, so that you may belong to another**, to <ins>him who has been raised from the dead,</ins> **in order that we may bear fruit for God**. (ESV)
+
 I believe that if I am disobeying sin and obeying Jesus then I am cooperating with Jesus as He fights for me to overcome the sin and to put the sin to death:
 
 > **[Colossians 3:5](https://www.biblegateway.com/passage/?search=Colossians%203%3A5&version=ESV)** - Put to death therefore what is earthly in you: sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. (ESV)
@@ -688,7 +690,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfb70df8) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org88881ac) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1364,7 +1366,7 @@ See where else this word used to describe agape love is used:
 
 Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkness to agape-loving (treasuring, valuing) light:
 
-> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
+> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
 Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did God love ([25. agapaó](https://biblehub.com/greek/25.htm) - *value,treasure*) the world, that He gave His Only-Begotten Son that everyone who is trusting/believing in Him may not perish, but may have life everlasting:
 
@@ -1667,21 +1669,17 @@ We must live in the spirit the way God does, not for human passions, but for the
 
 When we believe God's word given through Jesus, we have passed from death to life. We should definitely then listen to Jesus to see what He has actually spoken.
 
-Trusting Jesus' words we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement. Jesus is the judge of that:
-
-> **John 5:21-24** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears my word (**[191. akouó](https://biblehub.com/greek/191.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
-
 I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
 
 -   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
 
 -   ****[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**:** to pass over, withdraw, depart
 
-In trusting Jesus' words - or even His name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) and He is the judge - we do not come into judgement, but change direction, and instead our destiny is life eternal. We do not come into judgement:
+In trusting Jesus' words - or even His name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) and He is the judge - we do not come into judgement, but change direction, and instead our destiny is life eternal. Jesus is the judge of that. We do not come into judgement:
 
-> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears (**[191. akouó](https://biblehub.com/greek/191.htm)**) my word (**[3056. logos](https://biblehub.com/greek/3056.htm)**) and believes (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears (**[191. akouó](https://biblehub.com/greek/191.htm)**) my word (**[3056. logos](https://biblehub.com/greek/3056.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
 
-> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes (**[pisteuōn](https://biblehub.com/greek/pisteuo_n_4100.htm)**) in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) of the only Son of God. (ESV)
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes (**[pisteuōn](https://biblehub.com/greek/pisteuo_n_4100.htm)**) in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) of the only Son of God. (ESV)
 
 An indication that we have passed from death to life is that we [agapé](https://biblehub.com/interlinear/1_john/3-14.htm) / treasure our family in Christ:
 
@@ -3016,7 +3014,7 @@ We should come into a relationship with Jesus Christ and with Father God:
 
 Anyone who believes in Jesus Christ, the Only Son of God, is not condemned. But the person who is not believing in Jesus Christ, the Only Son of God is condemned already:
 
-> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. (ESV)
 
 There is always more chances to believe:
 
@@ -3164,7 +3162,7 @@ Just because we're gifted repentance to life, that doesn't mean that to go ahead
 
 We believe on Jesus Christ and receive eternal life, and we are saved through Jesus Christ. We see that Jesus Christ obeyed God perfectly and He is the light. We have our hope on Jesus to save us when we believe on Him. We should trust Jesus enough to obey His commandments when we are presented with opportunities to glorify God with our actions. God works through us as we obey Jesus.
 
-> **[John 3:16-19](https://www.biblegateway.com/passage/?search=John%203%3A16-19&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
+> **[John 3:16-19](https://www.biblegateway.com/passage/?search=John%203%3A16-19&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. (ESV)
 
 We must hear the words of God. If we hear them then we are of God.
 I know I hear them.
@@ -6428,7 +6426,7 @@ I think faith in Jesus grows as both of these qualities increase, and leads to a
 
 Nevertheless, if someone believes on Him they have begun to obey Him, and so I believe they are in the Lord while they **trust in His name, Jesus Christ (Messiah) the Son of God, to be saved**, as the following applies:
 
-> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. (ESV)
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. (ESV)
 
 We still have life in Jesus Christ's name while we believe that Jesus is the Christ, the Son of God:
 
@@ -7745,7 +7743,7 @@ We are saved through faith - it's not our own doing - it's not a **result** of w
 
 Whoever trusts in Jesus Christ shouldn't perish, but they should have eternal life. We've just got to have faith in Jesus:
 
-> **[John 3:16-21](https://www.biblegateway.com/passage/?search=John%203%3A16-21&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) believes ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. But <ins>whoever does what is true comes to the light</ins>, so that <ins>it may be clearly seen that his deeds have been carried out in God</ins>. (ESV)
+> **[John 3:16-21](https://www.biblegateway.com/passage/?search=John%203%3A16-21&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) believes ([G4100 pisteuo](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/)) in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. But <ins>whoever does what is true comes to the light</ins>, so that <ins>it may be clearly seen that his deeds have been carried out in God</ins>. (ESV)
 
 The gospel *involves* having <ins>believing</ins> **and** <ins>obedient</ins> heart. The entrypoint is believing in Jesus Christ to be saved - that itself is an act of obedience.
 
@@ -7920,6 +7918,8 @@ People who go astray:
 God forgive us and grant us sanctification. I know I still have issues, and I want to put to death the sensuality:
 
 > **[II Peter 2:1-22](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-22&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. And **many will follow their sensuality, and because of them the way of truth will be blasphemed**. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep. For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment; if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then **the Lord knows how to rescue the godly from trials, and to keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority**. Bold and willful, they do not tremble as they blaspheme the glorious ones, whereas angels, though greater in might and power, do not pronounce a blasphemous judgment against them before the Lord. But these, like irrational animals, creatures of instinct, born to be caught and destroyed, blaspheming about matters of which they are ignorant, will also be destroyed in their destruction, suffering wrong as the wage for their wrongdoing. They count it pleasure to revel in the daytime. They are blots and blemishes, reveling in their deceptions, while they feast with you. They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have hearts trained in greed. Accursed children! **Forsaking the right way, they have gone astray**. They have followed the way of Balaam, the son of Beor, who loved gain from wrongdoing, but was rebuked for his own transgression; a speechless donkey spoke with human voice and restrained the prophet's madness. These are waterless springs and mists driven by a storm. For them the gloom of utter darkness has been reserved. For, speaking loud boasts of folly, they entice by sensual passions of the flesh those who are barely escaping from those who live in error. **They promise them freedom, but they themselves are slaves of corruption**. For **whatever overcomes a person, to that he is enslaved.** For **if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.** For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire. (ESV)
+
+> **[John 8:34-35](https://www.biblegateway.com/passage/?search=John%208%3A34-35&version=ESV)** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
 
 
 ## Be a disciple of Jesus to be set free and abide forever
@@ -14285,7 +14285,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org1fcf14b)
+See: [33.4.1](#org3684a1f)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -21149,7 +21149,7 @@ Repentance from sin is required step for those who are in sin, along with forgiv
 
 ### Eternal life **available** for all who believe in Jesus, but obedience and sanctification is necessary
 
-> **[John 3:14-18](https://www.biblegateway.com/passage/?search=John%203%3A14-18&version=ESV)** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God.
+> **[John 3:14-18](https://www.biblegateway.com/passage/?search=John%203%3A14-18&version=ESV)** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God.
 
 I believe there is a strong emphasis on continued belief, and becoming a bondservant of God.
 
@@ -25895,7 +25895,7 @@ Going from darkness to light and arriving at a genuine understanding in the hear
 
 Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkness to agape-loving (treasuring, valuing) light:
 
-> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
+> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
 In order to be faithful to God, you will start acting unpredictably to others who are still in darkness. Firstly, as happened to me, you may tell someone about Jesus for the first time. Also, you will be led amongst people in darkness and make confessions of the truth to combat lies in remaining faithful to God, and obey Jesus' commandments in situations where others in darkness or under the power of Satan may pressure you to not. And people may react in hostile ways. I just think that turning from darkness to light and the power of Satan to God naturally results in decoupling from the world:
 
@@ -26782,7 +26782,7 @@ The ones who are made perfect are the ones who are being sanctified:
 
 Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkness to agape-loving (treasuring, valuing) light:
 
-> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
+> **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
 Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did God love ([25. agapaó](https://biblehub.com/greek/25.htm) - *value,treasure*) the world, that He gave His Only-Begotten Son that everyone who is trusting/believing in Him may not perish, but may have life everlasting:
 
@@ -28583,7 +28583,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org1fcf14b)
+See: [33.4.1](#org3684a1f)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -30267,7 +30267,7 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
 
 3.  Victory over sin and death through Jesus
 
-    [Sinning believers](#org624f2df) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+    will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
     
     -   **[youtube.com: Christ Appeared for Our Sake @time: 11 min 21 sec](https://youtu.be/MEYSRQCfIHc?t=660):** I think the resurrection of Jesus does two things: One, it vindicates the value of the ransom. When God looked down on the bloodshedding of his Son, which he himself ordained and caused, and He looked at it and Jesus said, "It is finished.", the Father said, "It **is** finished."
         Then He raised him from the dead to say to all the world, "It was finished. It is all satisfying and all valuable and all sufficient. No more needs to be paid. Once for all, it is done."
@@ -34627,7 +34627,7 @@ For all my faults I have been following Jesus, not perfectly but penitently.
 
 I had to be obedient after going to court:
 
-> **[John 3:16-21](https://www.biblegateway.com/passage/?search=John%203%3A16-21&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. **But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God.** (ESV)
+> **[John 3:16-21](https://www.biblegateway.com/passage/?search=John%203%3A16-21&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved the darkness rather than the light because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. **But whoever does what is true comes to the light, so that it may be clearly seen that his deeds have been carried out in God.** (ESV)
 
 I've had to be corrected even after being born-again of the Spirit. Jesus has to be number one.
 
@@ -36164,6 +36164,21 @@ There are those who are not really alive but are like the walking dead.
 ## Hades and Hell - eternal fire
 
 
+### Those who do not trust God's testimony of Jesus are condemned even now, and should repent and believe to not be condemned
+
+I think [John 5:24](https://biblehub.com/interlinear/john/5-24.htm) reads that the one who is trusting the words spoken through Jesus, trusting God, trusting Jesus is holds/posesses eternal life and has passed from death into life.
+
+-   ****[2064. erchomai](https://biblehub.com/greek/2064.htm)**:** to come, go
+
+-   ****[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**:** to pass over, withdraw, depart
+
+In trusting Jesus' words - or even His name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) and He is the judge - we do not come into judgement, but change direction, and instead our destiny is life eternal. Jesus is the judge of that. We do not come into judgement:
+
+> **[John 5:21-24](https://www.biblegateway.com/passage/?search=John%205%3A21-24&version=ESV)** - For as the Father raises the dead and gives them life, so also the Son gives life to whom he will. The Father judges no one, but has given all judgment to the Son, that all may honor the Son, just as they honor the Father. Whoever does not honor the Son does not honor the Father who sent him. Truly, truly, I say to you, whoever hears (**[191. akouó](https://biblehub.com/greek/191.htm)**) my word (**[3056. logos](https://biblehub.com/greek/3056.htm)**) <ins>and believes</ins> (**[4100. pisteuó](https://biblehub.com/greek/4100.htm)**) him who sent me has eternal life. He does not come (**[2064. erchomai](https://biblehub.com/greek/2064.htm)**) into judgment, but has passed (**[3327. metabain](https://biblehub.com/interlinear/john/5-24.htm)**) from death to life. (ESV)
+
+> **[John 3:18](https://www.biblegateway.com/passage/?search=John%203%3A18&version=ESV)** - Whoever believes (**[pisteuōn](https://biblehub.com/greek/pisteuo_n_4100.htm)**) in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name (**[onoma](https://biblehub.com/greek/onoma_3686.htm)**) of the only Son of God. (ESV)
+
+
 ### Eternal life vs eternal punishment - Judgement at the close of the age
 
 > **[Matthew 25:43-46](https://www.biblegateway.com/passage/?search=Matthew%2025%3A43-46&version=ESV)** - I was a stranger and you did not welcome me, naked and you did not clothe me, sick and in prison and you did not visit me. Then they also will answer, saying, Lord, when did we see you hungry or thirsty or a stranger or naked or sick or in prison, and did not minister to you? Then he will answer them, saying, Truly, I say to you, as you did not do it to one of the least of these, you did not do it to me. And these will go away into **eternal punishment**, but the righteous into eternal life. (ESV)
@@ -36179,11 +36194,15 @@ It's really important to get to know God and obey the gospel of our Lord Jesus:
 
 ### Sheol / Hades - this is where Jesus went
 
+-   **Read:** [youthpastortheologian.com: What does the Apostles' Creed mean by "He descended to the dead"?  - Youth Pastor Theologian](https://www.youthpastortheologian.com/blog/what-does-the-apostles-creed-mean-by-he-descended-to-the-dead)
+
 > **[Proverbs 15:24](https://www.biblegateway.com/passage/?search=Proverbs%2015%3A24&version=ESV)** - The path of life leads upward for the prudent, that he may turn away from Sheol beneath. (ESV)
+
+> **[Matthew 12:40](https://www.biblegateway.com/passage/?search=Matthew%2012%3A40&version=ESV)** - For just as Jonah was three days and three nights in the belly of the great fish, so will the Son of Man be three days and three nights in the heart of the earth. (ESV)
 
 > **[Proverbs 2:16-19](https://www.biblegateway.com/passage/?search=Proverbs%202%3A16-19&version=ESV)** - So you will be delivered from the forbidden woman, from the adulteress with her smooth words, who forsakes the companion of her youth and forgets the covenant of her God; for her house sinks down to death, and her paths to the departed; none who go to her come back, nor do they regain the paths of life. (ESV)
 
-> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)􀀴􆠖
+> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)
 
 > **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might live in the spirit the way God does. (ESV)
 
@@ -36203,21 +36222,25 @@ But Sheol will be thrown into hell after those in Sheol are judged.
 
 > **[Acts 2:27-28](https://www.biblegateway.com/passage/?search=Acts%202%3A27-28&version=ESV)** - For you will not abandon my soul to Hades, or let your Holy One see corruption. You have made known to me the paths of life; you will make me full of gladness with your presence. (ESV)
 
-The bad part of Hades though is still a place of torment with fire. Maybe Jesus visited this place - I suppose He did. KJV considers this place to be hell too - but it's not the Lake of Fire:
+The bad part of Sheol/Hades though is still a place of torment with fire. Maybe Jesus visited this place - I suppose He did:
+
+> **[Revelation of John 1:17-18](https://www.biblegateway.com/passage/?search=Revelation%201%3A17-18&version=ESV)** - When I saw him, I fell at his feet as though dead. But he laid his right hand on me, saying, Fear not, I am the first and the last, and the living one. <ins>I **died**, and behold I am alive forevermore, and I have the keys of Death and Hades.</ins> (ESV)
+
+KJV considers this place to be hell too - but it's not the Lake of Fire:
 
 > **[Luke 16:27-28](https://www.biblegateway.com/passage/?search=Luke%2016%3A27-28&version=ESV)** - And he said, Then I beg you, father, to send him to my father's house— for I have five brothers—so that he may warn them, lest they also come into this place of torment. (ESV)
 
-Death and Hades are thrown into the <ins>lake of fire, which is Hell</ins>:
+Death and Hades will be thrown into the <ins>lake of fire, which is Hell</ins>:
 
 > **[Revelation of John 20:13-14](https://www.biblegateway.com/passage/?search=Revelation%2020%3A13-14&version=ESV)** - And the sea gave up the dead who were in it, Death and Hades ([86. hadés](https://biblehub.com/greek/86.htm)) <ins>gave up the dead who were in them, and they were judged, each one of them, according to what they had done.</ins> Then Death and Hades were thrown into the lake of fire. This is the second death, the lake of fire. (ESV)
 
-Jesus went to Hades:
+Jesus went to Hades, the bad part:
 
-> **[I Peter 3:18-20](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-20&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit, in which he went and proclaimed to the spirits in prison, because they formerly did not obey, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. (ESV)
+> **[I Peter 3:18-20](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-20&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit, in which he went and **proclaimed to the spirits in prison, because they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. (ESV)
 
-Unrighteous people remain locked up here until judgement:
+**And** Jesus went to the Bosom of Abraham:
 
-> **[II Peter 2:5-10](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A5-10&version=ESV)** - if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then the Lord knows how to rescue the godly from trials, and to **keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority.** Bold and willful, they do not tremble as they blaspheme the glorious ones, (ESV)
+> **[Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV)** - And he said to him, Truly, I say to you, today you will be with me in Paradise. (ESV)
 
 -   **Read:** [gotquestions.org did-Jesus-go-to-hell.html: Did Jesus go to hell between His death and resurrection? | GotQuestions.org](https://www.gotquestions.org/did-Jesus-go-to-hell.html)
 
@@ -36243,6 +36266,21 @@ More likely, Ephesians 4 refers to the ascension of Christ.) **All the unbelievi
 Some of the confusion has arisen from such passages as [Psalm 16:10-11](https://www.biblegateway.com/passage/?search=Psalms%2016%3A10-11&version=ESV) as translated in the King James Version: "For thou wilt not leave my soul in hell; neither wilt thou suffer thine Holy One to see corruption. . . . Thou wilt show me the path of life." <ins>"Hell" is not a correct translation in this verse.</ins> A correct reading would be "the grave" or "sheol." Jesus said to the thief beside Him, "Today you will be with me in paradise" ([Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV))
 
 
+### The dead hearing the gospel - was it only a one time thing?
+
+I think it's important to trust Jesus in this life because no guarantees with hearing the gospel in the place of the dead.
+
+> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)
+
+> **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might live in the spirit the way God does. (ESV)
+
+Proclaiming the gospel in the place of the dead *might* have only been a one-time thing:
+
+> **[I Peter 3:18-22](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-22&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit, in which **he went and proclaimed to the spirits in prison, because they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ, who has gone into heaven and is at the right hand of God, with angels, authorities, and powers having been subjected to him. (ESV)
+
+> **[John 5:28-29](https://www.biblegateway.com/passage/?search=John%205%3A28-29&version=ESV)** - Do not marvel at this, for an hour is coming when all who are in the tombs will hear his voice and come out, those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment. (ESV)
+
+
 ### Tartaroó
 
 God cast rebellious angels into this place. It sounds like Hades but maybe worse:
@@ -36257,7 +36295,7 @@ Satan and his angels and demons will ultimately end up in the eternal fire.
 
 ### Hell, lake of fire, the second death
 
-Jesus didn't go to the Lake of Fire, as far as I understand. Jesus went to the place of the dead, Hades. The Lake of Fire is the final Hell, and is a Christless eternity with no hope of salvation.
+Jesus didn't go to the Lake of Fire, as far as I understand. Jesus went to the place of the dead, both Abraham's Bosom and the bad part of Sheol/Hades colloquially known as hell. The Lake of Fire is the final Hell, and is a Christless eternity with no hope of salvation.
 
 > **[Matthew 10:28](https://www.biblegateway.com/passage/?search=Matthew%2010%3A28&version=ESV)** - And do not fear those who kill the body but cannot kill the soul. Rather fear him who can destroy ([622. apollumi](https://biblehub.com/greek/622.htm)) both soul and body in hell. (ESV)
 
@@ -36284,7 +36322,20 @@ The lake of fire is for people who not only are unrepentant sinners but also rej
 -   **[What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?](https://www.gotquestions.org/sheol-hades-hell.html):** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and [Revelation 20:10](https://www.biblegateway.com/passage/?search=Revelation%2020%3A10&version=ESV), Revelation 14-15, is the <ins>final hell</ins>, the place of eternal punishment for <ins>all unrepentant rebels</ins>, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature ([Luke 16:24](https://www.biblegateway.com/passage/?search=Luke%2016%3A24&version=ESV); [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). <ins>Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination</ins>.
 
 
-### The ones who 'do good' will go to Abraham's bosom
+### The ones who have not heard the gospel are judged by God very fairly
+
+> **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified. For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, **while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.** (ESV)
+
+> **[Romans 2:26-29](https://www.biblegateway.com/passage/?search=Romans%202%3A26-29&version=ESV)** - So, if a man who is uncircumcised keeps the precepts of the law, will not his uncircumcision be regarded as circumcision? Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law. For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical. But a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter. His praise is not from man but from God. (ESV)
+
+> **[Isaiah 65:1](https://www.biblegateway.com/passage/?search=Isaiah%2065%3A1&version=ESV)** - I was ready to be sought by those who did not ask for me; I was ready to be found by those who did not seek me. I said, Here am I, here am I, to a nation that was not called by my name. (ESV)
+
+As God judges, unrighteous people remain under punishment until they are judged and until the righteous are freed from trial:
+
+> **[II Peter 2:5-10](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A5-10&version=ESV)** - if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked <ins>(for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard)</ins>; then the Lord knows how to <ins>rescue the godly from trials</ins>, and to **keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority.** Bold and willful, they do not tremble as they blaspheme the glorious ones, (ESV)
+
+
+### The outcome of just judgement for all
 
 Glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.
 
@@ -36292,24 +36343,35 @@ Glory and honor and peace for everyone who does good, the Jew first and also the
 
 > **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - <ins>He will render to each one according to his works:</ins> to those who <ins>by patience in well-doing seek for glory and honor and immortality, he will give eternal life;</ins> but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, **but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.** (ESV)
 
+> **[John 5:28-29](https://www.biblegateway.com/passage/?search=John%205%3A28-29&version=ESV)** - Do not marvel at this, for an hour is coming when all who are in the tombs will hear his voice and come out, those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment. (ESV)
 
-### The unrepentant sinners including believers
 
-Sinning believers will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+### The unrepentant sinners including believers who do not want to repent from sin
+
+Sinning believers will still experience tribulation. Believers who are unrepentant from sin are probably not true believers or are rebellious even in face of hearing the gospel and maybe even experience the literal place Hades (the bad part).
 
 Those who <ins>do not repent from sin</ins>, but instead embrace evil will experience tribulation.
 
+-   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
+    forsaking the vain and empty talking and the error of the many, for
+    that ye have believed on Him that raised our Lord Jesus Christ from
+    the dead and gave unto him glory and a throne on His right hand;
+    unto whom all things were made subject that are in heaven and that
+    are on the earth; to whom every creature that hath breath doeth
+    service; who cometh as judge of quick and dead; **whose blood God will require of them that are disobedient unto Him.**
+
 All sinners (even believers) will experience tribulation and distress on earth if they do not turn away from their sinning.
 
-'Hades' might look like a plane of reality of extreme hardship (if that is sound theology, and I am not certain about that, that those who die and go to the bad part of Hades may hear the voice of the Son of God). Perhaps it's only literal place:
+If a person is a remorseless, unrepentant sinner, it's better for them that their body destroyed so their soul is saved:
 
-> **[Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV)** - And you, Capernaum, will you be exalted to heaven? You shall be brought down to Hades. (ESV)
+> **[I Corinthians 5:4-5](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A4-5&version=ESV)** - When you are assembled in the name of the Lord Jesus and my spirit is present, with the power of our Lord Jesus, you are to deliver this man to Satan for the destruction of the flesh, so that his spirit may be saved in the day of the Lord. (ESV)
 
-But the dead (those who do not have the spirit of Christ while on earth, or perhaps those in Sheol/Hades) possibly may hear the voice of the Son of God, hear the gospel, and live:
+> **[Matthew 5:29-30](https://www.biblegateway.com/passage/?search=Matthew%205%3A29-30&version=ESV)** - If your right eye causes you to sin, tear it out and throw it away. For it is better that you lose one of your members than that your whole body be thrown into hell. And if your right hand causes you to sin, cut it off and throw it away. For it is better that you lose one of your members than that your whole body go into hell. (ESV)
 
-> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)􀀴􆠖
-
-> **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might live in the spirit the way God does. (ESV)
+-   **Me speculating:** Hades as it's used in this way could possibly look
+    appearance-wise the same, but perhaps God re-organises cities and their inhabitants (me speculating), say forcing unrepentant sinners to other cities. Or perhaps it really is a literal place.
+    
+    **[Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV)** - And you, Capernaum, will you be exalted to heaven? You shall be brought down to Hades. (ESV)
 
 Any person who is experiencing tribulation/torment for wrongdoing would not be experiencing the Kingdom of God on earth, but they may still go to heaven at the final judgment if they end up putting their trust in Jesus Christ:
 
@@ -36332,7 +36394,8 @@ Unrighteous people remain locked up here until judgement:
 
 ### The believers who have embraced repentance from sin and sanctification while on earth
 
-These will enter the Kingdom of God while on Earth and inherit eternal life and not experience the place of torment in Hades.
+Believers who have obeyed the gospel and are living to serve Christ
+will enter the Kingdom of God while on Earth and inherit eternal life and not experience the place of torment in Hades, but go straight to heaven.
 
 > **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be **tribulation and distress for every human being who does evil, the Jew first and also the Greek**, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
