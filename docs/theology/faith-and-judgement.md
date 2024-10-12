@@ -688,7 +688,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7258dc3) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orge64e9ae) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -14283,7 +14283,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org738b3c5)
+See: [33.4.1](#org8b1545b)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -27785,7 +27785,7 @@ Fulfilling the requirement of the law is required of us by God. God judges the s
 
 > **[Romans 2:13-16](https://www.biblegateway.com/passage/?search=Romans%202%3A13-16&version=ESV)** - For it is not the hearers of the law who are righteous before God, but the doers ([4163. poiétés](https://biblehub.com/greek/4163.htm)) of the law who will be justified.  For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.  They show that the work of the law is written on their hearts, while their conscience also bears witness, and <ins>their conflicting thoughts accuse or even excuse them on that day when, according to my gospel, God judges the secrets of men by Christ Jesus.</ins> (ESV)
 
--   **Song:** [youtube.com: Delirious? - Investigate {Live}](https://www.youtube.com/watch?v=dZE_1sJOpNw)
+-   **Song:** [youtube.com: Delirious? - {Investigate} Live From Farewell Show In London - 2010](https://www.youtube.com/watch?v=qZiahchgemY)
 
 
 ### These people performed dead works, and never obeyed Jesus
@@ -28581,7 +28581,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org738b3c5)
+See: [33.4.1](#org8b1545b)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -36172,7 +36172,7 @@ It's really important to get to know God and obey the gospel of our Lord Jesus:
 
 > **[Psalms 9:17](https://www.biblegateway.com/passage/?search=Psalms%209%3A17&version=ESV)** - The wicked shall return to Sheol, **all the nations that forget God.** (ESV)
 
-Sheol is not hell, but it's still not a nice place. KJV is not accurate here calling Sheol hell, I think:
+While Sheol/Hades includes a place of torment regarded to be hell, that place is not the Lake of Fire, but it's still not a nice place:
 
 > **[Proverbs 23:14](https://www.biblegateway.com/passage/?search=Proverbs%2023%3A14&version=ESV)** - If you strike him with the rod, you will <ins>save his soul from **Sheol**.</ins> (ESV)
 
@@ -36182,7 +36182,7 @@ But Sheol will be thrown into hell after those in Sheol are judged.
 
 > **[Acts 2:27-28](https://www.biblegateway.com/passage/?search=Acts%202%3A27-28&version=ESV)** - For you will not abandon my soul to Hades, or let your Holy One see corruption. You have made known to me the paths of life; you will make me full of gladness with your presence. (ESV)
 
-The bad part of Hades though is still a place of torment. Maybe Jesus visited this place - I suppose He did:
+The bad part of Hades though is still a place of torment with fire. Maybe Jesus visited this place - I suppose He did. KJV considers this place to be hell too - but it's not the Lake of Fire:
 
 > **[Luke 16:27-28](https://www.biblegateway.com/passage/?search=Luke%2016%3A27-28&version=ESV)** - And he said, Then I beg you, father, to send him to my father's house— for I have five brothers—so that he may warn them, lest they also come into this place of torment. (ESV)
 
@@ -36205,13 +36205,21 @@ Unrighteous people remain locked up here until judgement:
 If Jesus visited the place of torment in [Luke 16:28](https://www.biblegateway.com/passage/?search=Luke%2016%3A28&version=ESV) (the bad part of Sheol/Hades), it was just temporarily.
 My current belief is that He would have visited all of the place of the dead (both sides of the chasm).
 
-Jesus went to Hades and there's nothing to say that Jesus did not visit the bad part of Hades. Jesus experienced Death and Jesus experienced Hades.
+Jesus went to Hades and I haven't been convinced that Jesus did not visit the bad part of Hades. Jesus experienced Death and Jesus experienced Hades.
 
 > **[Revelation of John 1:18](https://www.biblegateway.com/passage/?search=Revelation%201%3A18&version=ESV)** - and the living one. I died, and behold I am alive forevermore, and I have the keys of Death and Hades. (ESV)
 
-> **Sheol/hades is a realm with two divisions** - a place of **blessing** and a place of **judgment** ([Matthew 11:23](https://www.biblegateway.com/passage/?search=Matthew%2011%3A23&version=ESV); [Matthew 16:18](https://www.biblegateway.com/passage/?search=Matthew%2016%3A18&version=ESV); [Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV); [Luke 16:23](https://www.biblegateway.com/passage/?search=Luke%2016%3A23&version=ESV); [Acts 2:27-31](https://www.biblegateway.com/passage/?search=Acts%202%3A27-31&version=ESV)). <ins>The abodes of the saved and the lost are both generally called "hades" in the Bible.</ins> The abode of the saved is also called **"Abraham's bosom"** (KJV) or "Abraham's side" (NIV) in [Luke 16:22](https://www.biblegateway.com/passage/?search=Luke%2016%3A22&version=ESV) and "paradise" in [Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV). The abodes of the saved and the lost are separated by a **"great chasm"** ([Luke 16:26](https://www.biblegateway.com/passage/?search=Luke%2016%3A26&version=ESV)). When Jesus died, He went to the blessed side of sheol, or paradise. (Some believe, based on a particular interpretation of [Ephesians 4:8-10](https://www.biblegateway.com/passage/?search=Ephesians%204%3A8-10&version=ESV), that Jesus took believers with Him from sheol to another place of bliss that we now call heaven. More likely, Ephesians 4 refers to the ascension of Christ.) **All the unbelieving dead go to the cursed side of hades to await the final judgment.** **All the believing dead go to the blessed side of hades to await the resurrection.** Did Jesus go to sheol/hades? Yes, according to Jesus' own words, <ins>He went to the blessed region of sheol.</ins>
-> 
-> Some of the confusion has arisen from such passages as [Psalm 16:10-11](https://www.biblegateway.com/passage/?search=Psalms%2016%3A10-11&version=ESV) as translated in the King James Version: "For thou wilt not leave my soul in hell; neither wilt thou suffer thine Holy One to see corruption. . . . Thou wilt show me the path of life." <ins>"Hell" is not a correct translation in this verse.</ins> A correct reading would be "the grave" or "sheol." Jesus said to the thief beside Him, "Today you will be with me in paradise" ([Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV))
+**Sheol/hades is a realm with two divisions** - a place of **blessing** and a place of **judgment** ([Matthew 11:23](https://www.biblegateway.com/passage/?search=Matthew%2011%3A23&version=ESV); [Matthew 16:18](https://www.biblegateway.com/passage/?search=Matthew%2016%3A18&version=ESV); [Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV); [Luke 16:23](https://www.biblegateway.com/passage/?search=Luke%2016%3A23&version=ESV); [Acts 2:27-31](https://www.biblegateway.com/passage/?search=Acts%202%3A27-31&version=ESV)). <ins>The abodes of the saved and the lost are both generally called "hades" in the Bible.</ins> The abode of those who die while they have done good in this life is also called **"Abraham's bosom"** (KJV) or "Abraham's side" (NIV) in [Luke 16:22](https://www.biblegateway.com/passage/?search=Luke%2016%3A22&version=ESV) and "paradise" in [Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV).
+
+The abodes of the ones who have lived righteously in God's sight and the lost are separated by a **"great chasm"** ([Luke 16:26](https://www.biblegateway.com/passage/?search=Luke%2016%3A26&version=ESV)).
+
+When Jesus died, He went to the blessed side of sheol, or paradise.
+
+(Some believe, based on a particular interpretation of [Ephesians 4:8-10](https://www.biblegateway.com/passage/?search=Ephesians%204%3A8-10&version=ESV), that Jesus took believers with Him from sheol to another place of bliss that we now call heaven.
+
+More likely, Ephesians 4 refers to the ascension of Christ.) **All the unbelieving dead go to the cursed side of hades to await the final judgment.** **All the believing dead go to the blessed side of hades to await the resurrection.**
+
+Some of the confusion has arisen from such passages as [Psalm 16:10-11](https://www.biblegateway.com/passage/?search=Psalms%2016%3A10-11&version=ESV) as translated in the King James Version: "For thou wilt not leave my soul in hell; neither wilt thou suffer thine Holy One to see corruption. . . . Thou wilt show me the path of life." <ins>"Hell" is not a correct translation in this verse.</ins> A correct reading would be "the grave" or "sheol." Jesus said to the thief beside Him, "Today you will be with me in paradise" ([Luke 23:43](https://www.biblegateway.com/passage/?search=Luke%2023%3A43&version=ESV))
 
 
 ### Tartaroó
@@ -36228,13 +36236,13 @@ Satan and his angels and demons will ultimately end up in the eternal fire.
 
 ### Hell, lake of fire, the second death
 
-Jesus didn't go to the Lake of Fire, as far as I understand. Jesus went to the place of the dead, Hades. The Lake of Fire is the final Hell.
+Jesus didn't go to the Lake of Fire, as far as I understand. Jesus went to the place of the dead, Hades. The Lake of Fire is the final Hell, and is a Christless eternity with no hope of salvation.
 
 > **[Matthew 10:28](https://www.biblegateway.com/passage/?search=Matthew%2010%3A28&version=ESV)** - And do not fear those who kill the body but cannot kill the soul. Rather fear him who can destroy ([622. apollumi](https://biblehub.com/greek/622.htm)) both soul and body in hell. (ESV)
 
 -   **[622. apollumi](https://biblehub.com/greek/622.htm):** Definition: <ins>to destroy, destroy utterly</ins> Usage: (a) I kill, destroy, (b) I lose, mid: I am perishing (the resultant death being viewed as certain). 622 apóllymi (from 575 /apó, "away from," which intensifies ollymi, "to destroy") – properly, fully destroy, **cutting off entirely \*(note the force of the prefix, 575 /apó). 622 /apóllymi \*("violently/completely perish")** implies **permanent (absolute) destruction**, i.e. to cancel out (remove); "to die, with **the implication of ruin and destruction**" (L & N, 1, 23.106); cause to be lost (utterly perish) by **experiencing a miserable end**.
 
-The Lake of Fire is where unrepentant sinners who reject God go - i.e. those who do not know God and on those who do not obey the gospel of our Lord Jesus. It's also where Satan and his angels and demons go:
+The Lake of Fire is where unrepentant sinners who reject God (and reject Jesus) go - i.e. those who do not know God and on those who do not obey the gospel of our Lord Jesus - they do not want to be saved from their sin. It's also where Satan and his angels and demons go:
 
 > **[Matthew 13:49-50](https://www.biblegateway.com/passage/?search=Matthew%2013%3A49-50&version=ESV)** - So it will be at the close of the age. The angels will come out and separate the evil from the righteous and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth. (ESV)
 
@@ -36250,7 +36258,40 @@ The Lake of Fire is where unrepentant sinners who reject God go - i.e. those who
 
 > **[Matthew 13:42](https://www.biblegateway.com/passage/?search=Matthew%2013%3A42&version=ESV)** - and throw them into the fiery furnace. In that place there will be weeping and gnashing of teeth. (ESV)
 
--   **[What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?](https://www.gotquestions.org/sheol-hades-hell.html):** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and [Revelation 20:10](https://www.biblegateway.com/passage/?search=Revelation%2020%3A10&version=ESV), Revelation 14-15, is the final hell, the place of eternal punishment for all unrepentant rebels, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature ([Luke 16:24](https://www.biblegateway.com/passage/?search=Luke%2016%3A24&version=ESV); [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination.
+The lake of fire is for people who not only are unrepentant sinners but also reject Christ (they do not want to be saved).
+
+-   **[What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?](https://www.gotquestions.org/sheol-hades-hell.html):** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and [Revelation 20:10](https://www.biblegateway.com/passage/?search=Revelation%2020%3A10&version=ESV), Revelation 14-15, is the <ins>final hell</ins>, the place of eternal punishment for <ins>all unrepentant rebels</ins>, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature ([Luke 16:24](https://www.biblegateway.com/passage/?search=Luke%2016%3A24&version=ESV); [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). <ins>Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination</ins>.
+
+
+### The unrepentant sinners *even believers* who <ins>do not repent from sin</ins>, but instead embrace evil
+
+These people will still experience Hades.
+
+The believers who experience Hades would not have entered the Kingdom of God on earth, but they may still go to heaven at the final judgment:
+
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be **tribulation and distress for every human being who does evil, the Jew first and also the Greek**, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+
+The bad part of Sheol/Hades is for those who do evil deeds, including believers who do not repent from sin:
+
+> **[Luke 16:22-31](https://www.biblegateway.com/passage/?search=Luke%2016%3A22-31&version=ESV)** - The poor man died and was carried by the angels to Abraham's side. The rich man also died and was buried, and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side. And he called out, Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame. But Abraham said, Child, remember that you in your lifetime received your good things, and Lazarus in like manner bad things; but now he is comforted here, and you are in anguish. And besides all this, between us and you a great chasm has been fixed, in order that those who would pass from here to you may not be able, and none may cross from there to us. And he said, Then I beg you, father, to send him to my father's house— for I have five brothers—so that he may warn them, lest they also come into this place of torment. But Abraham said, They have Moses and the Prophets; let them hear them. And he said, No, father Abraham, but if someone goes to them from the dead, they will repent. He said to him, If they do not hear Moses and the Prophets, neither will they be convinced if someone should rise from the dead. (ESV)
+
+But the ones who trust in Jesus will be spared from the Lake of Fire at the judgement.
+
+
+### The believers who have embraced repentance from sin and sanctification
+
+These will enter the Kingdom of God while on Earth and inherit eternal life and not experience the place of torment in Hades.
+
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be **tribulation and distress for every human being who does evil, the Jew first and also the Greek**, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
+
+
+### Those who do not repent from practicing sin and also reject Jesus will go to the lake of fire
+
+> **[Revelation of John 20:14-15](https://www.biblegateway.com/passage/?search=Revelation%2020%3A14-15&version=ESV)** - Then Death and Hades were thrown into the lake of fire. **This is the second death, the lake of fire**. And **if anyone's name was not found written in the book of life, he was thrown into the lake of fire.** (ESV)
+
+> **[Revelation of John 20:9-10](https://www.biblegateway.com/passage/?search=Revelation%2020%3A9-10&version=ESV)** - And they marched up over the broad plain of the earth and surrounded the camp of the saints and the beloved city, but fire came down from heaven and consumed them, and the devil who had deceived them was thrown into the lake of fire and sulfur where the beast and the false prophet were, and they will be tormented day and night forever and ever. (ESV)
+
+> **[Revelation of John 14:11](https://www.biblegateway.com/passage/?search=Revelation%2014%3A11&version=ESV)** - And the smoke of their torment goes up forever and ever, and they have no rest, day or night, these worshipers of the beast and its image, and whoever receives the mark of its name. (ESV)
 
 
 # [Jesus Christ is Lord! :)](https://www.youtube.com/watch?v=kemT9EoKvHs&ab_channel=CHRISPlus)

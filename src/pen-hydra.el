@@ -240,7 +240,8 @@ display values."
                        (defhydra h_o (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "VISUAL: tools"
                          "VISUAL: tools"
                          ("e" (dff (rfilter (lambda (s) (concat "[[egr:" pen-str "]]")))) "egr")
-                         ("l" (df h-org-clink (pen-region-pipe "oc")) "oc")
+                         ;; ("l" (df h-org-clink (pen-region-pipe "oc")) "oc")
+                         ("l" (df h-org-clink (pen-region-pipe "relinkify")) "relinkify")
                          ("L" (df h-org-clink-u (pen-region-pipe "org clink -u")) "org clink -u")
                          ("g" (df h-org-clink-g (pen-region-pipe "org clink -g")) "org clink -g")
                          ("u" 'h-org-clink-u "org clink -u")))
