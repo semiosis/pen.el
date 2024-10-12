@@ -688,7 +688,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orge64e9ae) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfb70df8) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -785,7 +785,9 @@ Jesus' disciples here were being led by Jesus. As I understand it, we're only no
 
 > **[John 12:26](https://www.biblegateway.com/passage/?search=John%2012%3A26&version=ESV)** - If anyone serves me, **he must follow me;** and where I am, there will my servant be also. If anyone serves me, the Father will honor him. (ESV)
 
-> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
+> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
+
+> **[Luke 9:60](https://www.biblegateway.com/passage/?search=Luke%209%3A60&version=ESV)** - And Jesus said to him, Leave the dead to bury their own dead. But as for you, **go and proclaim the kingdom of God**. (ESV)
 
 Trusting Him who justifies the ungodly has noticeable fruit of following Him because those who trust Him follow Him:
 
@@ -5176,7 +5178,7 @@ We must be yoked to Jesus Christ alone. How? By following His commandments in re
 
 You cannot serve God and cryptocurrency. With money, and with cryptocurrency, you are making a black and white choice between God and money.
 
-> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
+> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
 
 > **[Acts 8:18-21](https://www.biblegateway.com/passage/?search=Acts%208%3A18-21&version=ESV)** - Now when Simon saw that the Spirit was given through the laying on of the apostles' hands, he offered them money, saying, Give me this power also, so that anyone on whom I lay my hands may receive **the Holy Spirit**.  But Peter said to him, **May your silver perish with you,** because you thought you could obtain the gift of God with money!  You have neither part nor lot in this matter, for your heart is not right before God.
 
@@ -5221,7 +5223,7 @@ The thoughts that go through our minds must be:
 
 > **[Luke 9:23](https://www.biblegateway.com/passage/?search=Luke%209%3A23&version=ESV)** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. (ESV)
 
-> **[Luke 9:59-62](https://www.biblegateway.com/passage/?search=Luke%209%3A59-62&version=ESV)** - To another he said, Follow me. But he said, Lord, let me first go and bury my father. And Jesus said to him, Leave the dead to bury their own dead. But as for you, go and proclaim the kingdom of God. Yet another said, I will follow you, Lord, but let me first say farewell to those at my home. Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
+> **[Luke 9:59-62](https://www.biblegateway.com/passage/?search=Luke%209%3A59-62&version=ESV)** - To another he said, Follow me. But he said, Lord, let me first go and bury my father. And Jesus said to him, Leave the dead to bury their own dead. But as for you, **go and proclaim the kingdom of God**. Yet another said, I will follow you, Lord, but let me first say farewell to those at my home. Jesus said to him, No one who puts his hand to the plow and looks back is fit for the kingdom of God. (ESV)
 
 > **[Luke 18:22](https://www.biblegateway.com/passage/?search=Luke%2018%3A22&version=ESV)** - When Jesus heard this, he said to him, One thing you still lack. Sell all that you have and distribute to the poor, and you will have treasure in heaven; and come, follow me. (ESV)
 
@@ -14283,7 +14285,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org8b1545b)
+See: [33.4.1](#org1fcf14b)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -28581,7 +28583,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org8b1545b)
+See: [33.4.1](#org1fcf14b)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -30265,6 +30267,8 @@ Jesus can subject all things to Himself. By that power, Jesus will transform our
 
 3.  Victory over sin and death through Jesus
 
+    [Sinning believers](#org624f2df) will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+    
     -   **[youtube.com: Christ Appeared for Our Sake @time: 11 min 21 sec](https://youtu.be/MEYSRQCfIHc?t=660):** I think the resurrection of Jesus does two things: One, it vindicates the value of the ransom. When God looked down on the bloodshedding of his Son, which he himself ordained and caused, and He looked at it and Jesus said, "It is finished.", the Father said, "It **is** finished."
         Then He raised him from the dead to say to all the world, "It was finished. It is all satisfying and all valuable and all sufficient. No more needs to be paid. Once for all, it is done."
         
@@ -30992,7 +30996,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 
 ### 
 
-> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, Follow me, and leave the dead to bury their own dead. (ESV)
+> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
 
 
 ### 
@@ -31521,7 +31525,7 @@ And absolutely do not bear grudges against those who are in Christ:
 
 ### 
 
-> **[Luke 9:60](https://www.biblegateway.com/passage/?search=Luke%209%3A60&version=ESV)** - And Jesus said to him, Leave the dead to bury their own dead. But as for you, go and proclaim the kingdom of God. (ESV)
+> **[Luke 9:60](https://www.biblegateway.com/passage/?search=Luke%209%3A60&version=ESV)** - And Jesus said to him, Leave the dead to bury their own dead. But as for you, **go and proclaim the kingdom of God**. (ESV)
 
 
 ### 
@@ -36144,6 +36148,19 @@ And Jesus' enemies will be made a footstool for His feet:
 > **[Hebrews 10:10-13](https://www.biblegateway.com/passage/?search=Hebrews%2010%3A10-13&version=ESV)** - And by that will we have been sanctified through the offering of the body of Jesus Christ once for all. And every priest stands daily at his service, offering repeatedly the same sacrifices, which can never take away sins. But when Christ had offered for all time a single sacrifice for sins, he sat down at the right hand of God, waiting from that time until his enemies should be made a footstool for his feet. (ESV)
 
 
+## Living and the dead
+
+There are those who are not really alive but are like the walking dead.
+
+> **[I Peter 4:4-5](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A4-5&version=ESV)** - With respect to this they are surprised when you do not join them in the same flood of debauchery, and they malign you; but they will give account to him who is ready to judge the living and the dead. (ESV)
+
+> **[Romans 8:10-13](https://www.biblegateway.com/passage/?search=Romans%208%3A10-13&version=ESV)** - But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. If the Spirit of him who raised Jesus from the dead dwells in you, he who raised Christ Jesus from the dead will also give life to your mortal bodies through his Spirit who dwells in you. So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
+
+> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
+
+> **[Luke 9:60](https://www.biblegateway.com/passage/?search=Luke%209%3A60&version=ESV)** - And Jesus said to him, Leave the dead to bury their own dead. But as for you, **go and proclaim the kingdom of God**. (ESV)
+
+
 ## Hades and Hell - eternal fire
 
 
@@ -36165,6 +36182,10 @@ It's really important to get to know God and obey the gospel of our Lord Jesus:
 > **[Proverbs 15:24](https://www.biblegateway.com/passage/?search=Proverbs%2015%3A24&version=ESV)** - The path of life leads upward for the prudent, that he may turn away from Sheol beneath. (ESV)
 
 > **[Proverbs 2:16-19](https://www.biblegateway.com/passage/?search=Proverbs%202%3A16-19&version=ESV)** - So you will be delivered from the forbidden woman, from the adulteress with her smooth words, who forsakes the companion of her youth and forgets the covenant of her God; for her house sinks down to death, and her paths to the departed; none who go to her come back, nor do they regain the paths of life. (ESV)
+
+> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)􀀴􆠖
+
+> **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might live in the spirit the way God does. (ESV)
 
 -   **[7585. sheol](https://biblehub.com/hebrew/7585.htm):** Definition: underworld (place to which people descend at death).
 
@@ -36263,29 +36284,64 @@ The lake of fire is for people who not only are unrepentant sinners but also rej
 -   **[What is the difference between Sheol, Hades, Hell, the lake of fire, Paradise, and Abraham’s bosom?](https://www.gotquestions.org/sheol-hades-hell.html):** The lake of fire, mentioned only in [Revelation 19:20](https://www.biblegateway.com/passage/?search=Revelation%2019%3A20&version=ESV) and [Revelation 20:10](https://www.biblegateway.com/passage/?search=Revelation%2020%3A10&version=ESV), Revelation 14-15, is the <ins>final hell</ins>, the place of eternal punishment for <ins>all unrepentant rebels</ins>, both angelic and human ([Matthew 25:41](https://www.biblegateway.com/passage/?search=Matthew%2025%3A41&version=ESV)). It is described as a place of burning sulfur, and those in it experience eternal, unspeakable agony of an unrelenting nature ([Luke 16:24](https://www.biblegateway.com/passage/?search=Luke%2016%3A24&version=ESV); [Mark 9:45-46](https://www.biblegateway.com/passage/?search=Mark%209%3A45-46&version=ESV)). <ins>Those who have rejected Christ and are in the temporary abode of the dead in hades/sheol have the lake of fire as their final destination</ins>.
 
 
-### The unrepentant sinners *even believers* who <ins>do not repent from sin</ins>, but instead embrace evil
+### The ones who 'do good' will go to Abraham's bosom
 
-These people will still experience Hades.
+Glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.
 
-The believers who experience Hades would not have entered the Kingdom of God on earth, but they may still go to heaven at the final judgment:
+> **[Luke 16:22-25](https://www.biblegateway.com/passage/?search=Luke%2016%3A22-25&version=ESV)** - <ins>The poor man died and was carried by the angels to Abraham's side.</ins> The rich man also died and was buried, and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side. And he called out, Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame. But Abraham said, Child, remember that you in your lifetime received your good things, and Lazarus in like manner bad things; but now he is comforted here, and you are in anguish. (ESV)
+
+> **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - <ins>He will render to each one according to his works:</ins> to those who <ins>by patience in well-doing seek for glory and honor and immortality, he will give eternal life;</ins> but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek, **but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality.** (ESV)
+
+
+### The unrepentant sinners including believers
+
+Sinning believers will still experience tribulation. Believers who are unrepentant from sin are probably not true believers and will experience the literal place Hades (the bad part).
+
+Those who <ins>do not repent from sin</ins>, but instead embrace evil will experience tribulation.
+
+All sinners (even believers) will experience tribulation and distress on earth if they do not turn away from their sinning.
+
+'Hades' might look like a plane of reality of extreme hardship (if that is sound theology, and I am not certain about that, that those who die and go to the bad part of Hades may hear the voice of the Son of God). Perhaps it's only literal place:
+
+> **[Luke 10:15](https://www.biblegateway.com/passage/?search=Luke%2010%3A15&version=ESV)** - And you, Capernaum, will you be exalted to heaven? You shall be brought down to Hades. (ESV)
+
+But the dead (those who do not have the spirit of Christ while on earth, or perhaps those in Sheol/Hades) possibly may hear the voice of the Son of God, hear the gospel, and live:
+
+> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)􀀴􆠖
+
+> **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might live in the spirit the way God does. (ESV)
+
+Any person who is experiencing tribulation/torment for wrongdoing would not be experiencing the Kingdom of God on earth, but they may still go to heaven at the final judgment if they end up putting their trust in Jesus Christ:
 
 > **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be **tribulation and distress for every human being who does evil, the Jew first and also the Greek**, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
-The bad part of Sheol/Hades is for those who do evil deeds, including believers who do not repent from sin:
+The bad part of Sheol/Hades is for those who do evil deeds, possibly including believers who do not repent from sin:
 
 > **[Luke 16:22-31](https://www.biblegateway.com/passage/?search=Luke%2016%3A22-31&version=ESV)** - The poor man died and was carried by the angels to Abraham's side. The rich man also died and was buried, and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side. And he called out, Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame. But Abraham said, Child, remember that you in your lifetime received your good things, and Lazarus in like manner bad things; but now he is comforted here, and you are in anguish. And besides all this, between us and you a great chasm has been fixed, in order that those who would pass from here to you may not be able, and none may cross from there to us. And he said, Then I beg you, father, to send him to my father's house— for I have five brothers—so that he may warn them, lest they also come into this place of torment. But Abraham said, They have Moses and the Prophets; let them hear them. And he said, No, father Abraham, but if someone goes to them from the dead, they will repent. He said to him, If they do not hear Moses and the Prophets, neither will they be convinced if someone should rise from the dead. (ESV)
 
-But the ones who trust in Jesus will be spared from the Lake of Fire at the judgement.
+> **[I John 2:19](https://www.biblegateway.com/passage/?search=1%20John%202%3A19&version=ESV)** - They went out from us, but they were not of us; for if they had been of us, they would have continued with us. But they went out, that it might become plain that they all are not of us. (ESV)
+
+But the ones who hear the voice of God and trust in Jesus will certainly be <ins>spared from the Lake of Fire at the judgement</ins>.
+
+> **[John 5:24](https://www.biblegateway.com/passage/?search=John%205%3A24&version=ESV)** - Truly, truly, I say to you, <ins>whoever hears my word and believes him who sent me has eternal life.</ins> He does not come into <ins>judgment</ins>, but has passed from death to life. (ESV)
+
+Unrighteous people remain locked up here until judgement:
+
+> **[II Peter 2:5-10](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A5-10&version=ESV)** - if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then the Lord knows how to rescue the godly from trials, and to **keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority.** Bold and willful, they do not tremble as they blaspheme the glorious ones, (ESV)
 
 
-### The believers who have embraced repentance from sin and sanctification
+### The believers who have embraced repentance from sin and sanctification while on earth
 
 These will enter the Kingdom of God while on Earth and inherit eternal life and not experience the place of torment in Hades.
 
 > **[Romans 2:6-11](https://www.biblegateway.com/passage/?search=Romans%202%3A6-11&version=ESV)** - He will render to each one according to his works: to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life; but for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be **tribulation and distress for every human being who does evil, the Jew first and also the Greek**, but glory and honor and peace for everyone who does good, the Jew first and also the Greek. For God shows no partiality. (ESV)
 
 
-### Those who do not repent from practicing sin and also reject Jesus will go to the lake of fire
+### Those who are not repentant from sin, and who do not trust Jesus (do not want to be saved) will go to the second death, the Lake of Fire
+
+Those who do not ultimately repent from practicing sin and also distrust Jesus (they do not want to do the will of God) will go to the lake of fire:
+
+> **[Revelation of John 21:5-8](https://www.biblegateway.com/passage/?search=Revelation%2021%3A5-8&version=ESV)** - And he who was seated on the throne said, Behold, I am making all things new. Also he said, Write this down, for these words are trustworthy and true. And he said to me, It is done! I am the Alpha and the Omega, the beginning and the end. To the thirsty I will give from the spring of the water of life without payment. The one who conquers will have this heritage, and I will be his God and he will be my son. But as for <ins>the cowardly, the **faithless**, the detestable, as for murderers, the sexually immoral, sorcerers, idolaters, and all liars, their portion will be in the lake that burns with fire and sulfur, which is the second death.</ins> (ESV)
 
 > **[Revelation of John 20:14-15](https://www.biblegateway.com/passage/?search=Revelation%2020%3A14-15&version=ESV)** - Then Death and Hades were thrown into the lake of fire. **This is the second death, the lake of fire**. And **if anyone's name was not found written in the book of life, he was thrown into the lake of fire.** (ESV)
 
