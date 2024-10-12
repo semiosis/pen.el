@@ -5,6 +5,9 @@
 (defalias 'undefvar 'makunbound)
 (defalias 'undefun 'fmakunbound)
 
+
+(defalias 'mx 'call-interactively)
+
 (defun test-n (s)
   (not (string-empty-p s)))
 

@@ -2471,3 +2471,12 @@ e ia org-wc
 
 update-rust
 cargo install --locked ttysvr
+
+# Emacs-Clojure interop. Write emacs packages in Clojure
+# Also added this:
+# /root/.emacs.d/host/pen.el/src/pen-cloel.el
+(
+cd "$(gc "https://github.com/manateelazycat/cloel")"
+clojure -X:jar
+clojure -X:install
+)
