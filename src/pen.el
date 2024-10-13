@@ -2465,7 +2465,7 @@ May use to generate code from comments."
 (if (inside-docker-p)
 (require 'pen-header-line))
 (require 'pen-clojure)
-(require 'pen-cloel)
+;; (require 'pen-cloel)
 (require 'pen-cs-notation)
 (require 'pen-deprecated)
 (require 'pen-tcp-server)
