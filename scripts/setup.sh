@@ -2480,3 +2480,5 @@ cd "$(gc "https://github.com/manateelazycat/cloel")"
 clojure -X:jar
 clojure -X:install
 )
+
+e ia peertube

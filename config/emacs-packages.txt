@@ -2386,3 +2386,4 @@ ivy-fuz
 shrink-path
 tzc
 cursor-flash
+peertube
