@@ -13,7 +13,8 @@
 (require 'pen-lsp-common-lisp)
 
 (require 'lsp-semgrep)
-(setq lsp-semgrep-languages nil)
+(defset lsp-semgrep-languages nil)
+(load-library "lsp-semgrep")
 
 ;; Ensure that the entire background face is used.
 ;; Otherwise, inverse doesn't work
