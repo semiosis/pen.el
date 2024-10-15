@@ -2482,3 +2482,9 @@ clojure -X:install
 )
 
 e ia peertube
+
+(
+cd /root/.sword
+wget "https://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/LXX.zip"
+unzip LXX.zip
+)

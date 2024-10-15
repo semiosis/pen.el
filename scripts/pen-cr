@@ -1970,6 +1970,12 @@ case "$file_type" in
     }
     ;;
 
+    bb) {
+        zrepl -cm bb "$rp"
+        exit "$?"
+    }
+    ;;
+
     clj) {
         # https://stackoverflow.com/questions/7656523/how-can-i-run-a-clj-clojure-file-i-created
 
