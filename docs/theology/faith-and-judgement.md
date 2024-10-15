@@ -181,7 +181,51 @@ I'm trying to side with Jesus over issues regarding the evil which is still pres
 
 > **[John 7:6-8](https://www.biblegateway.com/passage/?search=John%207%3A6-8&version=ESV)** - Jesus said to them, My time has not yet come, but your time is always here. The world cannot hate you, but it hates me because I testify about it that its works are evil. You go up to the feast. I am not going up to this feast, for my time has not yet fully come. (ESV)
 
-> **[Psalms 82:1-8](https://www.biblegateway.com/passage/?search=Psalms%2082%3A1-8&version=ESV)** - God has taken his place in the divine council; in the midst of the gods he holds judgment: A Psalm of Asaph. How long will you judge unjustly and show partiality to the wicked? Selah Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked. They have neither knowledge nor understanding, they walk about in darkness; all the foundations of the earth are shaken. I said, You are gods, sons of the Most High, all of you; nevertheless, like men you shall die, and fall like any prince. Arise, O God, judge the earth; for you shall inherit all the nations! (ESV)
+> **[Psalms 82:1-8](https://www.biblegateway.com/passage/?search=Psalms%2082%3A1-8&version=ESV)** - God has taken his place in the [divine council](https://www.youtube.com/watch?v=eGzprqZfw3U); in the midst of the gods he holds judgment: A Psalm of Asaph. How long will you judge unjustly and show partiality to the wicked? Selah Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked. They have neither knowledge nor understanding, they walk about in darkness; all the foundations of the earth are shaken. I said, You are gods, sons of the Most High, all of you; nevertheless, like men you shall die, and fall like any prince. Arise, O God, judge the earth; for you shall inherit all the nations! (ESV)
+
+-   **[youtube.com: Deuteronomy 32 World View - There are Principalities That Rule over Nations @time: 17 min 56 sec](https://youtube.com/watch?v=eGzprqZfw3U&t=1076):** Here's just one
+    observation from `I John 3` and `John 1`.
+    You go back in the Old Testament.
+    Who are the holy ones?
+    
+    Overwhelmingly, like `98%` of the time,
+    it's members of the heavenly host, the
+    Divine Council. In the New Testament, holy
+    ones, your English Bible will have 'saints'.
+    That title is never used of the heavenly
+    host, the angels, it's only used of you - of believers.
+    Why the switch? Because we are the new sons and
+    daughters of God. We are going to
+    replace what was lost in all these
+    rebellions both on Earth and ultimately in heaven, or the
+    new Earth, the new Eden. You go to `Hebrews 2` where this is the passage where Jesus
+    is not ashamed to call us brothers,
+    siblings. Where does that scene take place? If go read the
+    passage? Before the congregation. Before the
+    council. It's right there in the text.
+    Paul in `1 Corinthians 6` tells the
+    Corinthians who are basically doing
+    everything wrong, he says "Look, will you
+    stop taking each other to
+    court. Don't you know that you're going
+    to rule or judge angels.
+    
+    What it means is: How
+    are we going to judge
+    angels? If you keep reading `Revelation 2`,
+    `Revelation 3`, in the new Eden we are put
+    over the nations. To him that overcomes I
+    will put him over the nations. To the one
+    that overcomes I will let him sit on my
+    throne and rule the nations. Who rules
+    the nations
+    now? The fallen gods, the principalities,
+    the powers the rebellious sons of God.
+    Who gets to replace
+    them? Who judges them? Who will ultimately
+    rule over them and displace and replace
+    them? That would be us.
+    This is not a throwaway line in Paul.
 
 -   **[Quote from Mari Mari Emmanuel](https://youtube.com/watch?v=11z22HR1KHo&t=421):** So fear nothing, love everyone, but be firm when it comes to speaking the truth. Truth cannot be compromised. It cannot be sold.
 
@@ -690,7 +734,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org7c4d519) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdd0c5e0) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1149,6 +1193,8 @@ Belief in Jesus Christ continues in obedience, and imitating Christ:
 It's imperative that we continue in obedience to abide by the Lord Jesus' teachings, and that includes repentance from sin:
 
 > **[Colossians 3:23-25](https://www.biblegateway.com/passage/?search=Colossians%203%3A23-25&version=ESV)** - Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ. For **the wrongdoer will be paid back for the wrong he has done, and there is no partiality.**
+
+> **[Psalms 119:11](https://www.biblegateway.com/passage/?search=Psalms%20119%3A11&version=ESV)** - I have stored up your word in my heart, that I might not sin against you. (ESV)
 
 We **must** forgive each other:
 
@@ -14330,7 +14376,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org5a8b1b7)
+See: [33.4.1](#org6806dee)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -28628,7 +28674,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org5a8b1b7)
+See: [33.4.1](#org6806dee)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -33457,6 +33503,11 @@ Jesus, by His own authority, rose from the dead. AMEN!!
 -   Sword of the Spirit
 -   Prayer
 -   Lamp
+
+
+## Love and holiness
+
+> -   **[Romans 13:10-14](https://www.biblegateway.com/passage/?search=Romans%2013%3A10-14&version=ESV)** - Love does no wrong to a neighbor; therefore love is the fulfilling of the law. Besides this you know the time, that the hour has come for you to wake from sleep. For salvation is nearer to us now than when we first believed. The night is far gone; the day is at hand. So then let us cast off the works of darkness and put on the armor of light. Let us walk properly as in the daytime, not in orgies and drunkenness, not in sexual immorality and sensuality, not in quarreling and jealousy. But put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires. (ESV)
 
 
 ## Belt of Truth
