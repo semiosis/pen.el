@@ -1,6 +1,15 @@
 #!/bin/bash
 export TTY
 
+is_tty() { [ -t 0 ] && ! test "$TERM" = "dumb"; }
+
+sn="$(basename -- "$0")"
+
+if ! is_tty; then
+    tpop -nostdin -h 3 sout "$sn" "$@"
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -l) {

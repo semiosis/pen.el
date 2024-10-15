@@ -28,6 +28,12 @@ while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     }
     ;;
 
+    -nostdin) {
+        no_stdin=y
+        shift
+    }
+    ;;
+
     -nos) {
         hide_status=y
         shift
@@ -191,6 +197,8 @@ if pl "$y" | grep -q -P '^[0-9]+$'; then
     y="$((y + height))"
 fi
 
+# This isn't accurate.
+# It only really tests if fd0 is not a tty
 stdin_exists() {
     {
     ! [ -t 0 ] && \
@@ -203,7 +211,7 @@ stdin_exists() {
 
 CMD="bash -c $(cmd "$CMD")"
 
-if stdin_exists; then
+if stdin_exists && ! test "$no_stdin" = y; then
     input_fp="$(cat | tf txt)"
     CMD="cat \"$input_fp\" | $CMD"
 fi

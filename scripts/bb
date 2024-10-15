@@ -45,6 +45,16 @@ esac; done
 
 opt="$1"
 case "$opt" in
+    nrepl-server) {
+        FIND_CLASSPATH=y
+    }
+    ;;
+
+    print-deps) {
+        USE_PAGER=y
+    }
+    ;;
+
     repl) {
         while [ $# -gt 0 ]; do opt="$2"; case "$opt" in
             -van|-vanilla) {
@@ -82,16 +92,31 @@ case "$opt" in
                 exit "$?"
             fi
         fi
+        FIND_CLASSPATH=y
     }
     ;;
 
     *)
 esac
 
+# This means that the cider repl works in emacs
+# e:/root/.emacs.d/host/pen.el/scripts/babashka/basic_cli_tool/core.bb
+if test "$FIND_CLASSPATH" = "y"; then
+    df="$(dominating-file bb.edn)"
+    if test -f "$df"; then
+        dn="$(dirname "$df")"
+        cd "$dn"
+    fi
+fi
+
 if test "$do_help" = "y"; then
     /usr/local/bin/bb --help "$@" | pavs
 else
-    /usr/local/bin/bb "$@"
+    if test "$USE_PAGER" = "y"; then
+        /usr/local/bin/bb "$@" | pavs
+    else
+        /usr/local/bin/bb "$@"
+    fi
 fi
 
 # Since babashka scripts ofter use the TTY for things like reading input from the user,

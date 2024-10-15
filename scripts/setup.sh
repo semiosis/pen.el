@@ -2472,6 +2472,11 @@ e ia org-wc
 update-rust
 cargo install --locked ttysvr
 
+# The emacs version was working perfectly fine.
+# But whatever.
+# Install clojure-lsp
+sudo bash < <(curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install)
+
 # Emacs-Clojure interop. Write emacs packages in Clojure
 # Also added this:
 # /root/.emacs.d/host/pen.el/src/pen-cloel.el

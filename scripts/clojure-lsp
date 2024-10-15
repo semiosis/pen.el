@@ -3,6 +3,20 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+# cd "$(pen-readln Dir)"
+echo "Starting in $(pwd)" 1>&2
+
 . $PENEL_DIR/scripts/java-opts.sh
 
-$EMACSD_BUILTIN/.cache/lsp/clojure/clojure-lsp "$@"
+# # This is to get lsp working for babashka
+# # I don't think it's necessary
+# df="$(dominating-file bb.edn)"
+# if test -f "$df"; then
+#     dn="$(dirname "$df")"
+#     cd "$dn"
+# fi
+
+# $EMACSD_BUILTIN/.cache/lsp/clojure/clojure-lsp "$@"
+
+/usr/local/bin/clojure-lsp "$@"
+# arbitrate $EMACSD_BUILTIN/.cache/lsp/clojure/clojure-lsp "$@"

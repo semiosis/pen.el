@@ -229,11 +229,11 @@ canceled the action, signal quit."
   ;; different values of IFS, and the possibility that they'll be run remotely
   ;; (e.g. with TRAMP). Using `", "` causes problems with TRAMP, for example.
   ;; Please be careful when changing them.
-  ;; (tv project-type)
   (pcase project-type
     ('lein        (concat cider-lein-parameters " :port " (n-get-free-port "40500" "40800")))
     ('boot        cider-boot-parameters)
     ('clojure-cli nil)
+    ('babashka    cider-babashka-parameters)
     ('shadow-cljs cider-shadow-cljs-parameters)
     ('gradle      cider-gradle-parameters)
     (_            (user-error "Unsupported project type `%S'" project-type))))
@@ -242,13 +242,18 @@ canceled the action, signal quit."
 ;; I should probably make it select a random port
 (setq cider-lein-parameters "repl :headless :host localhost")
 
+;; (setq cider-babashka-command "/usr/local/bin/bb")
+(setq cider-babashka-command "bb")
+
 (defun cider-jack-in-around-advice (proc &rest args)
   "This exists actually to ensure the nrepl directory is at the top level
 so the same nrepl is used for all files in the project"
   (let* ((gdir (sor
                 (locate-dominating-file default-directory ".git")
                 (projectile-acquire-root)))
-         (pdir (locate-dominating-file default-directory "project.clj"))
+         (pdir
+          (sor (locate-dominating-file default-directory "project.clj")
+               (locate-dominating-file default-directory "bb.edn")))
          (dir (or (and (string-equal gdir pdir)
                        gdir)
                   pdir

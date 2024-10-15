@@ -12,6 +12,9 @@
 (require 'lsp-headerline)
 (require 'pen-lsp-common-lisp)
 
+(require 'lsp-semgrep)
+(setq lsp-semgrep-languages nil)
+
 ;; Ensure that the entire background face is used.
 ;; Otherwise, inverse doesn't work
 (defun lsp-ui-doc--inline-padding (string len)
