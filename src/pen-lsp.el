@@ -496,7 +496,11 @@ We don't extract the string that `lps-line' is already displaying."
             (sps-pet (cmd "glow" "-f") s))
            (t
             ;; old code - still the best
-            (let ((lsp-help-buf-name "*lsp-help*"))
+            (let* ((lsp-help-buf-name "*lsp-help*")
+                   (win (get-buffer-window lsp-help-buf-name)))
+
+              (if win
+                  (delete-window win))
               (with-current-buffer (get-buffer-create lsp-help-buf-name)
                 (let ((delay-mode-hooks t))
                   (lsp-help-mode)

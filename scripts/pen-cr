@@ -1971,7 +1971,13 @@ case "$file_type" in
     ;;
 
     bb) {
-        zrepl -cm bb "$rp"
+        if test -f "$rp" && test "$(head -c 2 "$rp")" = "#!"; then
+            cd "$dn"
+            perl "$rp"
+            exit $?
+        else
+            zrepl -cm bb "$rp"
+        fi
         exit "$?"
     }
     ;;

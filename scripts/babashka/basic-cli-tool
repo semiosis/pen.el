@@ -3,4 +3,4 @@ export TTY
 
 ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-bb -m basic-cli-tool.core/main "$@"
+bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" -m basic-cli-tool.core/main "$@"
