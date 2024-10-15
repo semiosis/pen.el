@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 
-(ns is-tty
+(ns utils.is-tty
   (:require [babashka.process :as p]))
 
 (defn- is-tty

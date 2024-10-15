@@ -7,10 +7,10 @@ script_fp="$1"
 shift
 
 ns="$(cat "$script_fp" | scrape "^\\(ns [a-z._-]+\\b" | cut -d ' ' -f 2)"
-has_main="$(cat "$script_fp" | scrape "^\\(defn main\\b" | cut -d ' ' -f 2)"
+has_main="$(cat "$script_fp" | scrape "^\\(defn -?main\\b" | cut -d ' ' -f 2)"
 
 if test -n "$has_main"; then
-    bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" -m "$ns/main" "$@"
+    bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" -m "$ns/$has_main" "$@"
 else
     bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" "$@"
 fi

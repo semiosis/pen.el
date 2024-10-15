@@ -3,7 +3,7 @@
 ;; TODO Get this working
 
 ;; (ns humanise-timestamps)
-(ns humanise-timestamps
+(ns utils.humanise-timestamps
   (:require [babashka.deps :as deps]
             [clojure.walk :as walk])
   (:import (java.time Instant
