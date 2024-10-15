@@ -2493,3 +2493,9 @@ cd /root/.sword
 wget "https://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/LXX.zip"
 unzip LXX.zip
 )
+
+
+(
+cd ~/repos
+git clone "https://github.com/babashka/bbin"
+)
