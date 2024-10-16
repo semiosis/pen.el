@@ -69,6 +69,9 @@
         (with-current-buffer
             (find-file testpath)))))
 
+;; (advice-add 'cider-doc-thing-at-point :around #'around-advice-save-excursion)
+;; (advice-remove 'cider-doc-thing-at-point #'around-advice-save-excursion)
+
 (handle '(clojure-mode clojurescript-mode cider-repl-mode inf-clojure)
         ;; Re-using may not be good, actually, if I'm working with multiple projects
         :repls (list
@@ -81,9 +84,10 @@
         :formatters '(lsp-format-buffer)
         :docs '(pen-esp-docs-for-thing-if-prefix
                 pen-doc-override
+                ;; Cider is better, especially for babashka scripts
+                cider-doc-thing-at-point
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                cider-doc-thing-at-point
                 pen-docs-for-thing-given-screen)
 
         ;; Project syms (not general syms)

@@ -1,7 +1,8 @@
 #!/usr/bin/env bb
 
 (ns utils.is-tty
-  (:require [babashka.process :as p]))
+  (:require [babashka.process :as p])
+  (:require [utils.common :as uc]))
 
 (defn- is-tty
   [fd key]
@@ -15,7 +16,7 @@
 (defn out-is-tty? [] (is-tty 1 :out))
 (defn err-is-tty? [] (is-tty 2 :err))
 
-(when (= *file* (System/getProperty "babashka.file"))
+(when (uc/invoked-as-script-p)
   (println "STDIN is TTY?:" (in-is-tty?))
   (println "STDOUT is TTY?:" (out-is-tty?))
   (println "STDERR is TTY?:" (err-is-tty?)))

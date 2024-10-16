@@ -99,6 +99,10 @@ case "$opt" in
     *)
 esac
 
+if test -f "$1"; then
+    FIND_CLASSPATH=y
+fi
+
 # This means that the cider repl works in emacs
 # e:/root/.emacs.d/host/pen.el/scripts/babashka/basic_cli_tool/core.bb
 if test "$FIND_CLASSPATH" = "y"; then

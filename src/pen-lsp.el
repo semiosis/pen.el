@@ -727,8 +727,10 @@ We don't extract the string that `lps-line' is already displaying."
 
 (defun lsp-lens-refresh-around-advice (proc &rest args)
   (if (pen-rc-test "lsp_lens")
-      (let ((res (apply proc args)))
-        res)))
+      ;; Just disable lsp lens because it doesn't work well with the lsp docs
+      (if (not lsp-ui-sideline-mode)
+          (let ((res (apply proc args)))
+            res))))
 (advice-add 'lsp-lens-refresh :around #'lsp-lens-refresh-around-advice)
 
 ;; (-union '("a" "b") '("a"))
@@ -834,13 +836,28 @@ We don't extract the string that `lps-line' is already displaying."
 ;;   (-doto (make-sparse-keymap)
 ;;     (define-key [mouse-3] (lsp-lens--create-interactive-command command))))
 
+
+;; Oh, I disabled this. lsp-lens--display
 ;; And C-click is taken by right click menu
+;; TODO Make it so j:lsp-lens--create-interactive-command excursion switches to the buffer when running the command
+;; I have to remember inside the lambda command the buffer id, I think.
 (defun lsp-lens--keymap (command)
   "Build the lens keymap for COMMAND."
   (-doto (make-sparse-keymap)
     ;; (define-key (kbd "C-<down-mouse-1>") (lsp-lens--create-interactive-command command))
     (define-key (kbd "<down-mouse-1>") (lambda () (interactive) (message "Use M-<down-mouse-1>")))
+
+    ;; Hmm, this needs to also change the cursor position somehow
     (define-key (kbd "M-<down-mouse-1>") (lsp-lens--create-interactive-command command))))
+
+;; (defun lsp-lens--create-interactive-command-around-advice (proc &rest args)
+;;   (progn
+;;     ;; (mouse-drag-region)
+;;     ;; (tv "yo")
+;;     (let ((res (apply proc args)))
+;;       res)))
+;; (advice-add 'lsp-lens--create-interactive-command :around #'lsp-lens--create-interactive-command-around-advice)
+;; (advice-remove 'lsp-lens--create-interactive-command #'lsp-lens--create-interactive-command-around-advice)
 
 (advice-add 'lsp-lens--display :around #'ignore-errors-around-advice)
 

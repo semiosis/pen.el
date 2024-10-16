@@ -397,7 +397,8 @@ display values."
                          ("." #'helpful-at-point "helpful thing at point")
                          ("p" #'show-map "fz show map")
                          ("P" #'copy-current-major-mode "copy current major mode")
-                         ("i" (df sh-interpreter (term "sh-interpreter")))))
+                         ("i" (df sh-interpreter (term "sh-interpreter")))
+                         ("I" (df e-setup (e (umn "$EMACSD/pen.el/scripts/setup.sh"))))))
 
 (convert-hydra-to-sslk "lW"
                        (defhydra h_nW (:exit t :pre (prehydra) :post (posthydra) :color blue :hint nil :columns 4) ;; "NORMAL: action/appearance"

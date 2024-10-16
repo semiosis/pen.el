@@ -163,7 +163,11 @@
             ("*Apropos*" :ignore nil :select t :same t)
             ("*prodigy*" :select t :same t)
             ("*lsp-diagnostics*" :select t :same t)
-            ("*lsp-help*" :select t :same nil :custom lsp-help-detect-mode)
+            ("*lsp-help*" :select t :same nil :custom lsp-help-detect-mode :align pen--shackle-sensible-alignment)
+            
+            ;; ev:cider-doc-auto-select-buffer
+            ;; ("*cider-doc*" :select t :same nil :custom lsp-help-detect-mode :align pen--shackle-sensible-alignment)
+            
             ;; ("*Shell Command Output*" :select nil)
             ("*Shell Command Output*" :ignore t :select nil :same nil)
             ("\\*Async Shell.*" :regexp t :ignore t)

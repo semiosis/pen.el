@@ -2,6 +2,9 @@
 (require 'cider)
 (require 'ob-clojure)
 
+;; This is like shackle behaviour - it sets the cursor to the docs when it appears
+(setq cider-doc-auto-select-buffer nil)
+
 ;; Clojure memory usage (test to see if this is actually working) :
 ;; e:$EMACSD/pen.el/scripts/java-opts.sh
 

@@ -12,7 +12,7 @@ has_main="$(cat "$script_fp" | scrape "^\\(defn -?main\\b" | cut -d ' ' -f 2)"
 if test -n "$has_main"; then
     bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" -m "$ns/$has_main" "$@"
 else
-    bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" "$@"
+    bb -cp "/root/.emacs.d/host/pen.el/scripts/babashka" "$script_fp" "$@"
 fi
 
 exit "$?"
