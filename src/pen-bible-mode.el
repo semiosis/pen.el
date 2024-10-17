@@ -1735,7 +1735,17 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 
   ;; bible-mode-book-chapters
 
-  (bible-mode--set-global-chapter (+ bible-mode-global-chapter 1)))
+  (let ((book (car bible-mode-ref-tuple))
+        (chapter (cadr bible-mode-ref-tuple))
+        (verse (caddr bible-mode-ref-tuple))
+        (current-book-index (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
+        (next-book-chapter
+         (-sum )
+         ))
+
+    (+ 1 (-find-index (lambda (e) (string-equal book (car e))) bible-mode-book-chapters))
+
+    (bible-mode--set-global-chapter (+ bible-mode-global-chapter 1))))
 
 ;; Where object-orientation is useful is with getters and setters
 ;; to make abstractions such as 'iterable'/arraylike
