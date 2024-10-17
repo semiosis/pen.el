@@ -734,7 +734,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdd0c5e0) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8d73f8a) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -14376,7 +14376,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org6806dee)
+See: [33.4.1](#orgdf470e4)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -23748,6 +23748,20 @@ Indeed the "paradise of God" (Garden of Eden, I assume) is still around:
 
 -   **<ins>Condition:</ins> If we persevere over evil and endure for Christ's namesake and overcome (persecution and trials):** <ins>Promise:</ins> We will be allowed to eat from the Tree of Life which is in the paradise of God
 
+We must set aside sin, and endure our cross, supported by Jesus' spirit:
+
+> **[Hebrews 12:1-3](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1-3&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, **let us also lay aside every weight, and sin** which clings so closely, and let us **run with endurance** the race that is set before us, **looking to Jesus**, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, so that you may not grow weary or fainthearted. (ESV)
+
+The ones who will receive the Kingdom are the ones who are producing the right fruit, keeping Jesus' works:
+
+> **[Matthew 21:43-44](https://www.biblegateway.com/passage/?search=Matthew%2021%3A43-44&version=ESV)** - Therefore I tell you, the kingdom of God will be taken away from you and given to a people producing its fruits. And the one who falls on this stone will be broken to pieces; and when it falls on anyone, it will crush him. (ESV)
+
+> **[Revelation of John 2:26-28](https://www.biblegateway.com/passage/?search=Revelation%202%3A26-28&version=ESV)** - The one who conquers and who keeps my works until the end, to him I will give authority over the nations, and he will rule them with a rod of iron, as when earthen pots are broken in pieces, even as I myself have received authority from my Father. And I will give him the morning star. (ESV)
+
+> **[Revelation of John 3:21](https://www.biblegateway.com/passage/?search=Revelation%203%3A21&version=ESV)** - The one who conquers, I will grant him to sit with me on my throne, as I also conquered and sat down with my Father on his throne. (ESV)
+
+> **[Matthew 24:13-14](https://www.biblegateway.com/passage/?search=Matthew%2024%3A13-14&version=ESV)** - But the one who endures to the end will be saved. And this gospel of the kingdom will be proclaimed throughout the whole world as a testimony to all nations, and then the end will come. (ESV)
+
 
 # Who will enter the holy city of Jerusalem which is in Heaven? Not sinners. Only servants. Only those who follow Jesus' commandments
 
@@ -28674,7 +28688,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org6806dee)
+See: [33.4.1](#orgdf470e4)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -36303,12 +36317,35 @@ There are those who are not really alive but are like the walking dead.
 
 > **[Romans 8:10-13](https://www.biblegateway.com/passage/?search=Romans%208%3A10-13&version=ESV)** - But if Christ is in you, although the body is dead because of sin, the Spirit is life because of righteousness. If the Spirit of him who raised Jesus from the dead dwells in you, he who raised Christ Jesus from the dead will also give life to your mortal bodies through his Spirit who dwells in you. So then, brothers, we are debtors, not to the flesh, to live according to the flesh. For if you live according to the flesh you will die, but if by the Spirit you put to death the deeds of the body, you will live. (ESV)
 
-> **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
+Could we say that a person who believes in / trusts in Jesus may die?
+Yes, we can say that, but though they may die, yet they will live. So if believers die, they then they live:
 
-> **[Luke 9:60](https://www.biblegateway.com/passage/?search=Luke%209%3A60&version=ESV)** - And Jesus said to him, Leave the dead to bury their own dead. But as for you, **go and proclaim the kingdom of God**. (ESV)
+> **[John 11:25-27](https://www.biblegateway.com/passage/?search=John%2011%3A25-27&version=ESV)** - Jesus said to her, I am the resurrection and the life. **Whoever believes in me, though he die, yet shall he live**, and <ins>everyone who lives and believes in me shall never die</ins>. Do you believe this? She said to him, Yes, Lord; I believe that you are the Christ, the Son of God, who is coming into the world. (ESV)
+
+OK, so if a believer/truster in Jesus dies then they will live.
+
+And if a person lives and they trust/believe in Jesus, they will never die:
+
+> **[Romans 6:8-11](https://www.biblegateway.com/passage/?search=Romans%206%3A8-11&version=ESV)** - Now if we have died with Christ, we believe that we will also live with him. We know that Christ being raised from the dead will never die again; death no longer has dominion over him. For the death he died he died to sin, once for all, but the life he lives he lives to God. So **you also must consider yourselves dead to sin and alive to God in Christ Jesus**. (ESV)
+
+So we are born-again, and continue in faith in Jesus.
+
+I think Jesus was suggesting to his disciple that to not follow Him (Jesus) is to live in a futile way. The <ins>path of life</ins>, however, involves following Him, and living for Him and His gospel, and that person will live:
+
+> **[Matthew 8:21-23](https://www.biblegateway.com/passage/?search=Matthew%208%3A21-23&version=ESV)** - Another of the disciples said to him, Lord, *let me first go and bury my father*. And Jesus said to him, **Follow me**, and <ins>leave the dead to bury their own dead</ins>. And when he got into the boat, his disciples followed him. (ESV)
+
+> **[Luke 9:59-62](https://www.biblegateway.com/passage/?search=Luke%209%3A59-62&version=ESV)** - To another he said, Follow me. But he said, Lord, *let me first go and bury my father*. And Jesus said to him, <ins>Leave the dead to bury their own dead.</ins> But as for you, **go and proclaim the kingdom of God**. Yet another said, I will follow you, Lord, but *let me first say farewell to those at my home*. Jesus said to him, <ins>No one who puts his hand to the plow and looks back is fit for the kingdom of God.</ins> (ESV)
+
+Those who follow Jesus will have the light of life:
+
+> **[John 8:12](https://www.biblegateway.com/passage/?search=John%208%3A12&version=ESV)** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life. (ESV)
+
+It is those people who will to live (though they die, they will live). Then they are truly alive - joined with Him -having died with Jesus now alive with Him. The one who is alive from the dead who continues to trust in Him will never die.
 
 
 ## Hades and Hell - eternal fire
+
+> **[Ephesians 4:8-10](https://www.biblegateway.com/passage/?search=Ephesians%204%3A8-10&version=ESV)** - Therefore it says, When he ascended on high he <ins>led a host of captives</ins>, and he gave gifts to men. (In saying, He ascended, what does it mean but that he had also <ins>descended into the lower parts of the earth?</ins> He who descended is the one who also ascended **far above all the heavens**, that he might fill all things.) (ESV)
 
 
 ### Those who do not trust God's testimony of Jesus are condemned even now, and should repent and believe to not be condemned
@@ -36415,7 +36452,7 @@ Some of the confusion has arisen from such passages as [Psalm 16:10-11](https://
 
 ### The dead hearing the gospel - was it only a one time thing?
 
-I think it's important to trust Jesus in this life because no guarantees with hearing the gospel in the place of the dead.
+I think it's important to trust Jesus in this life because no guarantees with hearing the gospel in the place of the dead. Who knows, though, right? Because perhaps a believer who dies in Christ could preach the gospel to Hades and bounce back up as Jesus did.
 
 > **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)
 
