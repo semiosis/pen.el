@@ -734,7 +734,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org8d73f8a) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf7ac1fa) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -782,7 +782,11 @@ God is the justifier, not us:
 
 > **[Romans 3:26](https://www.biblegateway.com/passage/?search=Romans%203%3A26&version=ESV)** - It was to show his righteousness at the present time, so that he might be just **and** the ***justifier*** of the one who has faith in Jesus. (ESV)
 
-I really like John MacArthur's church's [doctrinal statement](https://www.gracechurch.org/about/doctrinal-statement).
+I really like John MacArthur's church's [doctrinal statement](https://www.gracechurch.org/about/doctrinal-statement). I just think it's helpful and quite accurate, but I may have my disagreements.
+
+When we are born of God, I believe we have willed/done something which is in God's will. [John 1:12-14](https://www.biblegateway.com/passage/?search=John%201%3A12-14&version=ESV) I think shows that when a person's will becomes God's will through believing ([4100. pisteuó](https://biblehub.com/greek/4100.htm)) faith in Jesus Christ's name, they have the authority to become children of God:
+
+> **[John 1:12-14](https://www.biblegateway.com/passage/?search=John%201%3A12-14&version=ESV)** - But to all who did receive him, who believed in his name, he gave the *right* to become **children of God**, who were <ins>born, not of blood nor of the will of the flesh nor of the will of man</ins>, **but of God**. And **the Word became flesh and dwelt among us**, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
 
 ## 1689 Baptist confession of faith
@@ -7563,6 +7567,33 @@ I think the person who has arrived at this point has repented from dead work and
 
 
 ### We must have a changed heart, which longs to serve the living God, to be a bondservant of Jesus. AMEN!!
+
+-   Firstly, obedience is a heart attitude, so a person can have obedient faith without any work.
+    -   **[Psalms 119:34](https://www.biblegateway.com/passage/?search=Psalms%20119%3A34&version=ESV)** - Give me understanding, that I may keep your law and observe it with my whole heart. (ESV)
+-   Secondly, obedient action is nothing to boast about before God, because God commanded you to do it.
+    -   **[Romans 4:2](https://www.biblegateway.com/passage/?search=Romans%204%3A2&version=ESV)** - For if Abraham was justified by works, he has something to boast about, but not before God. (ESV)
+-   Thirdly, "working for God" is as step beyond obedient action.
+    -   Paul doesn't claim his full rights in the gospel (even rights shown by God's precepts in God's law) that He might receive reward from God for going beyond the call of His duty:
+    -   **[I Corinthians 9:12](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12&version=ESV),9:15-18** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For <ins>if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel!</ins> For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
+
+Being a slave to righteousness is essential for eternal life.
+
+Are we [slaves and/or bondservants](https://www.youtube.com/watch?v=Mx06mtApu8k)? Both.
+
+If Jesus entrusts us with stewardship then we **must** be obedient slaves to Jesus Christ in this regard. We also are rewarded for going beyond the call of duty -
+as bondservants.
+
+> **[I Corinthians 9:17-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A17-18&version=ESV)** - For if I do this of my own will, I have a reward, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel. (ESV)
+
+We are all stewards of God's varied grace so there is obligation to serve one another:
+
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good stewards of God's varied grace: (ESV)
+
+> **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
+
+We shouldn't be deterred from using the word "slave" by the bad connotations of the word "slave" when we're talking about being a "slave to righteousness" or a "slave to God".
+
+> **[I Corinthians 7:22](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A22&version=ESV)** - For **he who was called in the Lord as a slave is a freedman of the Lord.** Likewise he who was free when called is a slave of Christ. (ESV)
 
 God gives us the new heart when we seek to have that new heart.
 
@@ -14376,7 +14407,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgdf470e4)
+See: [33.4.1](#org55196dd)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -14725,7 +14756,7 @@ God rewards faith and may choose to reveal Himself after a while serving God in 
     -   **[Romans 4:2](https://www.biblegateway.com/passage/?search=Romans%204%3A2&version=ESV)** - For if Abraham was justified by works, he has something to boast about, but not before God. (ESV)
 -   Thirdly, "working for God" is as step beyond obedient action.
     -   Paul doesn't claim his full rights in the gospel (even rights shown by God's precepts in God's law) that He might receive reward from God for going beyond the call of His duty:
-    -   **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
+    -   **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For <ins>if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel!</ins> For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
 
 In God's mercy He has shown us the Way to be reconciled with Him.
 He has given us Jesus, and we just need to have faith in Him.
@@ -23118,7 +23149,7 @@ Being the good soil is walking in the light, in the truth, the word of truth, th
 
 We do need a lot of faith (faith, faithfulness, obedience) in God to **inherit** the Kingdom of God:
 
-> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love him?** (ESV)
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love ([25. agapaó](https://biblehub.com/greek/25.htm)) him?** (ESV)
 
 It's received as an inheritance by being found **in Christ**. We believe we have it while we are found **in Christ**, and continue working it out, and we do need repentance from sin to inherit it. We need to be believing and obedient to Jesus. We need to be faithful to Jesus. We need to follow Jesus:
 
@@ -23640,9 +23671,17 @@ Zacchaeus was repentant, and was saved through Jesus as he had the faith of Abra
 
 ## Inheriting the kingdom (being an Heir of the Kingdom)
 
-> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love him?** (ESV)
+We must be gifted redemption. God washes/purifies us as He justifies us, so that in continuing to trust in Him, we may become heirs of the Kingdom. We're graciously cleaned up by God in order to serve God and become fellow heirs as we suffer with Christ for righteousness-sake as we are obedient to God:
 
-> **[Romans 8:16-17](https://www.biblegateway.com/passage/?search=Romans%208%3A16-17&version=ESV)** - The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him. (ESV)
+> **[I Corinthians 6:11](https://www.biblegateway.com/passage/?search=1%20Corinthians%206%3A11&version=ESV)** - And such were some of you. But you were washed, you were sanctified, you were justified in the name of the Lord Jesus Christ and by the Spirit of our God. (ESV)
+
+> **[Titus 3:4-7](https://www.biblegateway.com/passage/?search=Titus%203%3A4-7&version=ESV)** - But when the goodness and loving kindness of God our Savior appeared, he saved us, not because of works done by us in righteousness, but **according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit**, whom he poured out on us richly through Jesus Christ our Savior, so that **being justified by his grace we might become heirs** according to the hope of eternal life. (ESV)
+
+Yes we must serve God, being a slave to righteousness, even practicing righteousness (God cleans us so we can do this), and we love (agape treasure Him and His words):
+
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love ([25. agapaó](https://biblehub.com/greek/25.htm)) him?** (ESV)
+
+> **[Romans 8:16-17](https://www.biblegateway.com/passage/?search=Romans%208%3A16-17&version=ESV)** - The Spirit himself bears witness with our spirit that we are children of God, and if children, then heirs—heirs of God and fellow heirs with Christ, <ins>provided we suffer with him in order that we may also be glorified with him.</ins> (ESV)
 
 
 ### We must be born-again
@@ -28688,7 +28727,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgdf470e4)
+See: [33.4.1](#org55196dd)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -35852,7 +35891,7 @@ Paul says:
 
 Paul doesn't claim his full rights in the gospel (even rights shown by God's precepts in God's law) that He might receive reward from God for going beyond the call of His duty:
 
-> **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel! For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
+> **[I Corinthians 9:12,9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A12%2C9%3A15-18&version=ESV)** - If others share this rightful claim on you, do not we even more? Nevertheless, we have not made use of this right, but we endure anything rather than put an obstacle in the way of the gospel of Christ. But **I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of my ground for boasting.** For <ins>if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me. Woe to me if I do not preach the gospel!</ins> For **if I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, <ins>so as not to make full use of my right in the gospel.</ins> (ESV)
 
 We must keep and accept the precepts of God over the precepts of men:
 
@@ -36016,7 +36055,7 @@ Doing the will of God is important for **inheriting** the kingdom of God:
 
 We do need a lot of faith (faith, faithfulness, obedience) in God to **inherit** the Kingdom of God:
 
-> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love him?** (ESV)
+> **[James 2:5](https://www.biblegateway.com/passage/?search=James%202%3A5&version=ESV)** - Listen, my beloved brothers, has not God chosen those who are poor in the world to be rich in faith and **heirs of the kingdom, which he has promised to those who love ([25. agapaó](https://biblehub.com/greek/25.htm)) him?** (ESV)
 
 > **[Romans 6:22-23](https://www.biblegateway.com/passage/?search=Romans%206%3A22-23&version=ESV)**- But now that you have been set free from sin and have become slaves of God, the fruit you get leads to sanctification **and its end, eternal life.** For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. (ESV)
 
@@ -36461,6 +36500,8 @@ I think it's important to trust Jesus in this life because no guarantees with he
 Proclaiming the gospel in the place of the dead *might* have only been a one-time thing:
 
 > **[I Peter 3:18-22](https://www.biblegateway.com/passage/?search=1%20Peter%203%3A18-22&version=ESV)** - For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God, being put to death in the flesh but made alive in the spirit, in which **he went and proclaimed to the spirits in prison, because they formerly did not obey**, when God's patience waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight persons, were brought safely through water. Baptism, which corresponds to this, now saves you, not as a removal of dirt from the body but as an appeal to God for a good conscience, through the resurrection of Jesus Christ, who has gone into heaven and is at the right hand of God, with angels, authorities, and powers having been subjected to him. (ESV)
+
+> **[John 3:36](https://www.biblegateway.com/passage/?search=John%203%3A36&version=ESV)** - Whoever believes in the Son **has** eternal life; whoever does not obey ([544. apeitheó](https://biblehub.com/greek/544.htm)) the Son shall not **see** life, but <ins>the wrath of God remains on him.</ins> (ESV)
 
 > **[John 5:28-29](https://www.biblegateway.com/passage/?search=John%205%3A28-29&version=ESV)** - Do not marvel at this, for an hour is coming when all who are in the tombs will hear his voice and come out, those who have done good to the resurrection of life, and those who have done evil to the resurrection of judgment. (ESV)
 
