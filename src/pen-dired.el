@@ -138,20 +138,20 @@ With optional second arg NO-REVERT, don't refresh the listing afterwards."
   (let ((file (dired-get-file-for-visit)))
     (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
             (string-equal (current-major-mode-string) "ranger-mode"))
-        (evs file)
-      (progn
+        (progn
           (setq current-prefix-arg nil)
-          (pen-sps (concat "pen-vs " (pen-q file)))))))
+          (pen-sps (concat "pen-vs " (pen-q file))))
+      (evs file))))
 
 (defun dired-view-file-v (&optional arg)
   (interactive "P")
   (let ((file (dired-get-file-for-visit)))
-    (if (or (not (>= (prefix-numeric-value current-prefix-arg) 4))
+    (if (or (>= (prefix-numeric-value current-prefix-arg) 4)
             (string-equal (current-major-mode-string) "ranger-mode"))
-        (progn
-        (setq current-prefix-arg nil)
-        (pen-sps (concat "pen-v " (pen-q file))))
-      (ev file))))
+        (evim file)
+      (progn
+          (setq current-prefix-arg nil)
+          (pen-sps (concat "pen-v " (pen-q file)))))))
 
 (defalias 'dired-filter 'dired-narrow)
 
