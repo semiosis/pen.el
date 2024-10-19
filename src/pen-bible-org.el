@@ -26,4 +26,18 @@
               ((eq 'latex backend)
                (format "\\href{%s}{%s}" url title))))))
 
+(org-link-set-parameters
+ "strongs"
+ :export (lambda (path desc backend)
+           (let ((title (or desc
+                            (s-replace-regexp "^[^:]*:" "" path)))
+                 (url (snc "blueletterbibleify-strongs-code | xurls" path))
+                 ;; (urlsegment (urlencode path))
+                 )
+             (cond
+              ((eq 'html backend)
+               (format "<a href=\"%s\">%s</a>" url title))
+              ((eq 'latex backend)
+               (format "\\href{%s}{%s}" url title))))))
+
 (provide 'pen-bible-org)

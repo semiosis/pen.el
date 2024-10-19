@@ -5,7 +5,7 @@ export TTY
 
 # https://www.biblegateway.com/passage/?search=Romans+6%3A23&version=ESV
 
-bilbeorgify_strongs_code() {
+bibleorgify_strongs_code() {
     ref="$1"
     # TODO Also do some cleanup, such as removing asterisks from for example (H539 *'aman*)
 
@@ -22,6 +22,6 @@ IFS="
 awk 1 | while IFS="$IFS" read -r line; do
     (
         exec 0</dev/null
-        bilbeorgify_strongs_code "$line"
+        bibleorgify_strongs_code "$line"
     )
 done

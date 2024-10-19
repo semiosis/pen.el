@@ -3,10 +3,17 @@ export TTY
 
 # ( hs "$(basename -- "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
+unicode=y
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -8|-utf) {
         unicode=y
+        shift
+    }
+    ;;
+
+    -n8|-nutf) {
+        unicode=n
         shift
     }
     ;;
