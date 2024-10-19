@@ -1,0 +1,5 @@
+#!/bin/bash
+export TTY
+
+# nvc eww -2 "$@"
+nvt eww -2 "$@"
