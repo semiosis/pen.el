@@ -210,19 +210,16 @@ I'm trying to side with Jesus over issues regarding the evil which is still pres
     court. Don't you know that you're going
     to rule or judge angels.
     
-    What it means is: How
-    are we going to judge
+    What it means is: How are we going to judge
     angels? If you keep reading `Revelation 2`,
     `Revelation 3`, in the new Eden we are put
     over the nations. To him that overcomes I
     will put him over the nations. To the one
     that overcomes I will let him sit on my
     throne and rule the nations. Who rules
-    the nations
-    now? The fallen gods, the principalities,
+    the nations now? The fallen gods, the principalities,
     the powers the rebellious sons of God.
-    Who gets to replace
-    them? Who judges them? Who will ultimately
+    Who gets to replace them? Who judges them? Who will ultimately
     rule over them and displace and replace
     them? That would be us.
     This is not a throwaway line in Paul.
@@ -734,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf7ac1fa) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd493e14) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1445,6 +1442,10 @@ Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkn
 
 > **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
+Genuine agape loves the light. The Truth of God is light and is good and is not wicked:
+
+> **[Romans 12:9](https://www.biblegateway.com/passage/?search=Romans%2012%3A9&version=ESV)** - Let love [(G26 agapé)](G26) be genuine [(G505 anupokritos)](G505). Abhor what is evil; hold fast to what is good. (ESV)
+
 Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did God love ([25. agapaó](https://biblehub.com/greek/25.htm) - *value,treasure*) the world, that He gave His Only-Begotten Son that everyone who is trusting/believing in Him may not perish, but may have life everlasting:
 
 [biblehub.com 3-16.htm: John 3:16 Interlinear: for God did so love the world, that His Son &#x2013; the only begotten &#x2013; He gave, that every one who is believing in him may not perish, but may have life age-during.](https://biblehub.com/interlinear/john/3-16.htm)
@@ -1465,6 +1466,7 @@ Who Christians are called to agape love:
 
 -   All people, even enemies
     -   <https://biblehub.com/greek/agapa_25.htm>
+    -   <https://biblehub.com/interlinear/matthew/5-44.htm>
 
 What Christians **must not** agape love:
 
@@ -1942,6 +1944,23 @@ I believe that among other things I have had to fight against, reject or repent 
     -   [youtube.com: Mormon Religion in a nutshell - John MacArthur](https://www.youtube.com/watch?v=5uOqHX10OSA)
     -   Thanks, John MacArthur. Yeah, I do not affirm Mormonism at all.
     -   [youtube.com: Mormon Jesus vs Bible Jesus - Jeff Durbin](https://www.youtube.com/watch?v=39EO83sbWWk)
+    -   [youtube.com: Dr. John MacArthur on Mormonism](https://www.youtube.com/watch?v=-AMhTaUbg3o)
+        -   According to Mormon theology, the Mormon couples that
+            have been baptized in the temple in Salt
+            Lake and have been faithful Mormons and
+            done what you're supposed to do they get
+            their own planet and they just make Gods
+            with some kind of strange celestial sex
+            forever and ever and ever - that part of
+            it folks is very much like the 70
+            virgins that the jihadist terrorists
+            think they're going to meet when they
+            blow themselves up along with the
+            infidels. This is a very, very pagan religious system.
+        -   different God, a different Christ a
+            different gospel different Source
+            material and you got a false religion.
+        -   Joseph Smith is a false prophet.
 -   a spirit of Islam
     -   [youtube.com: How Thomas Aquinas refuted Muhammad and Islam](https://www.youtube.com/watch?v=Vf70jEdwOF0)
     -   [Summa Contra Gentiles of St. Thomas Aquinas](https://basilica.ca/documents/2016/10/St.%20Thomas%20Aquinas-The%20Summa%20Contra%20Gentiles.pdf)
@@ -1992,7 +2011,7 @@ I appreciated Bryce's testimony here as he also had to turn away from false reli
     And then I was like, "Well, it doesn't say how much
     is enough, so how do I know if by the
     time I'm dead if I did enough? And then,
-    you know, Buddhism and Hinduism, they've
+    you know, [Buddhism](https://www.youtube.com/watch?v=tTigAV14cmw) and Hinduism, they've
     got thousands of gods and you're trying
     to get enlightened and not get bad karma
     cuz then you might get reincarnated into
@@ -2016,6 +2035,35 @@ I appreciated Bryce's testimony here as he also had to turn away from false reli
     labeled religion but I'm not following
     structured religion, I'm following Jesus.
     I'm putting my faith and trust in him.
+
+-   **[Quote from Mari Mari](https://www.youtube.com/watch?v=tTigAV14cmw) Emmanuel:** Buddhist monks, you ask, why are
+    you leaving the world and living in
+    absolute isolation? They'll tell you we
+    are trying frantically to achieve what
+    one thing. To kill the human
+    desire, because when we are able to kill
+    the human desire we are in
+    control.
+    
+    Why do you become enslaved
+    to something? Because of your desire if
+    you did not desire this thing you
+    wouldn't have been so weak when you
+    e faced it. True.
+    
+    When you desire money
+    money becomes your God you start
+    worshiping money when you desire fame
+    fame becomes your God.
+    
+    But they have failed to realize
+    this truth: They can never kill desire. You know why? Because
+    the one who put desire in the human
+    being is God and what God gives no one can take
+    away. God put desire in us so we can
+    desire Him in order to worship Him. Without
+    desire, there is no
+    worship.
 
 > Now I had gone into court willingly after being born-again as I held my faith in Jesus and submitted to the authorities, but not perfect. After breaking bail to get baptised and bring everything into the light, obeying God and not man ([See this video](https://www.youtube.com/watch?v=zTtbT33MOiI)), the whole thing felt outside of my control (extremely graceless), and I was under clear impression especially later in 2022 that I was battling an antichrist spirit pressuring me into several things:
 > 
@@ -3226,6 +3274,8 @@ Do not be an enemy of the cross of Christ, submit to the righteousness of God - 
 
 > **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
 
+> **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ. (KJV)
+
 
 ### We are saved by grace through faith in Jesus Christ
 
@@ -3581,7 +3631,7 @@ Before the second coming of our Lord Jesus Christ there is the appearance of the
 
 > **[Luke 21:36](https://www.biblegateway.com/passage/?search=Luke%2021%3A36&version=ESV)** - But stay awake at all times, praying that you may have strength to escape all these things that are going to take place, and to stand before the Son of Man. (ESV)
 
-> **[I Peter 4:7-11](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A7-11&version=ESV)** - **The end of all things is at hand;** therefore be self-controlled and sober-minded for the sake of your prayers. Above all, keep loving one another earnestly, since love covers a multitude of sins. Show hospitality to one another without grumbling. As each has received a gift, use it to serve one another, as good stewards of God's varied grace: whoever speaks, as one who speaks oracles of God; whoever serves, as one who serves by the strength that God supplies—in order that in everything God may be glorified through Jesus Christ. To him belong glory and dominion forever and ever. Amen. (ESV)
+> **[I Peter 4:7-11](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A7-11&version=ESV)** - **The end of all things is at hand;** therefore be self-controlled and sober-minded for the sake of your prayers. Above all, keep loving one another earnestly, since love covers a multitude of sins. Show hospitality to one another without grumbling. As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: whoever speaks, as one who speaks oracles of God; whoever serves, as one who serves by the strength that God supplies—in order that in everything God may be glorified through Jesus Christ. To him belong glory and dominion forever and ever. Amen. (ESV)
 
 Jesus doesn't delay. We must be vigilant and ready to serve Jesus:
 
@@ -3944,7 +3994,7 @@ Jesus first made Paul His own, now Paul wants to press on to perfection/completi
 
 We have different gifts, a different calling. We cannot compare or boast. We're different parts of the body of Christ.
 
-> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good stewards of God's varied grace: (ESV)
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
 
 Let's see what the word **katergazomai** (the word for 'work out') means:
 
@@ -5040,25 +5090,65 @@ If there is resistance to Christ's teachings within the church, then that is not
 We should let people in who want to follow Jesus.
 We should give the cold shoulder to people who do not want to follow Jesus.
 
-If anyone claims to be a believer but doesn't abide in Christ's teachings then don't welcome that person in:
+If anyone claims to be a believer but doesn't abide in Christ's teachings then don't welcome that person in.
 
-> **[II John 1:9-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A9-11&version=ESV)** - Everyone who goes on ahead and does not abide in the teaching of Christ, does not have God. Whoever abides in the teaching has both the Father and the Son. If anyone comes to you and does not bring this teaching, do not receive him into your house or give him any greeting, for whoever greets him takes part in his wicked works. (ESV)
+It's really important that we **continue in the teaching of Christ and about Christ** and allow ourselves to come into agreement with the <ins>teaching of Christ **and** about Christ</ins>.
 
-> **[I Timothy 6:1-5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A1-5&version=ESV)** - Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled. Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things. **If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing**. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. (ESV)
+We should separate ourselves from people who do not stay/remain/abide in the teaching of Christ (including about service and godliness) and about Christ (doctrine, even from the gospel accounts, eyewitnesses, etc.).
+If people do not want to continue in the teaching of Christ and about Christ, and they do not abide in it, and do not want to
+be corrected by the Word of God, then we should separate ourselves from them:
+
+> **[II John 1:7-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A7-11&version=ESV)** - For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist. Watch yourselves, so that you may not lose what we have worked for, but may win a full reward. **Everyone who goes on ahead and does not abide in the teaching ([1322. didaché](https://biblehub.com/greek/1322.htm)) of Christ, does not have God**. Whoever abides in the teaching has both the Father and the Son. <ins>If anyone comes to you **and does not bring this teaching**, do not receive him into your house or give him any greeting, for whoever greets him takes part in his wicked works</ins>. (ESV)
+
+We must also withdraw ourselves from false teachers who bring in destructive heresies, particularly those teaching us we don't need to serve/obey the Master who bought us:
+
+> **[II Peter 2:1](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even <ins>denying the Master who bought them</ins>, bringing upon themselves swift destruction. (ESV)
+
+-   **Read:** [bibleoutlines.com: Bible Outlines - Jude 1-4 - Doctrine Worth Fighting For - Combating False Teachers](https://www.bibleoutlines.com/jude-1-4-doctrine-worth-fighting-for-combating-false-teachers/)
+
+> **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
+
+> **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ. (KJV)
+
+We shouldn't exclude those who are following Jesus and being taught by Jesus, and producing the right fruits. The ones who serve Jesus are obedient to Him:
+
+> **[Romans 16:17-19](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-19&version=ESV)** - I appeal to you, brothers, to watch out for those who **cause divisions** and **create obstacles contrary to the doctrine that you have been taught**; avoid them. For such persons **do not serve our Lord Christ**, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. For your **obedience** is known to all, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. (ESV)
+
+> **[Luke 6:22-23](https://www.biblegateway.com/passage/?search=Luke%206%3A22-23&version=ESV)** - Blessed are you when people hate you and when they **exclude** you and revile you and spurn your name as evil, on account of the Son of Man! Rejoice in that day, and leap for joy, for behold, your reward is great in heaven; for so their fathers did to the prophets. (ESV)
+
+We must produce the right fruits:
+
+> **[Matthew 21:43](https://www.biblegateway.com/passage/?search=Matthew%2021%3A43&version=ESV)** - Therefore I tell you, the kingdom of God will be taken away from you and given to a people producing its fruits. (ESV)
+
+> **[I Timothy 1:5-7](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A5-7&version=ESV)** - The **aim of our charge is love that issues from a pure heart and a good conscience and a sincere faith**. Certain persons, by swerving from these, have wandered away into vain discussion, desiring to be teachers of the law, without understanding either what they are saying or the things about which they make confident assertions. (ESV)
+
+We must produce the right fruits, not the wrong fruits. And we certainly shouldn't shut out people who are producing the right fruits:
+
+> **[Matthew 23:13](https://www.biblegateway.com/passage/?search=Matthew%2023%3A13&version=ESV)** - But woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in people's faces. For you neither enter yourselves nor allow those who would enter to go in. (ESV)
+
+> **[Matthew 19:14](https://www.biblegateway.com/passage/?search=Matthew%2019%3A14&version=ESV)** - but Jesus said, Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. (ESV)
+
+> **[I John 1:7](https://www.biblegateway.com/passage/?search=1%20John%201%3A7&version=ESV)** - But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin. (ESV)
+
+> **[I Timothy 6:1-5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A1-5&version=ESV)** - <ins>Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled.</ins> Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things. **If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing**. He has *an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain.* (ESV)
 
 If anyone claims to be a believer but is an unrepentant sinner then don't allow that person in:
 
-> **[I Corinthians 5:11-13](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A11-13&version=ESV)** - But now I am writing to you not to associate with anyone who bears the name of brother if he is guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler—not even to eat with such a one. For what have I to do with judging outsiders? **Is it not those inside the church whom you are to judge?** God judges those outside. Purge the evil person from among you. (ESV)
+> **[I Corinthians 5:11-13](https://www.biblegateway.com/passage/?search=1%20Corinthians%205%3A11-13&version=ESV)** - But now I am writing to you not to associate with anyone who bears the name of brother if he is **guilty of sexual immorality or greed, or is an idolater, reviler, drunkard, or swindler — not even to eat with such a one**. For what have I to do with judging outsiders? **Is it not those inside the church whom you are to judge?** God judges those outside. Purge the evil person from among you. (ESV)
 
 -   **Read:** <https://www.desiringgod.org/interviews/avoid-the-unrepentant-but-what-if-theyre-family>
 
-If anyone claims to be a believer but does not agape his brother, they are still in darkness:
+If anyone claims to be a believer but does not agape (treasure) his brother, they are still in darkness:
 
 > **[I John 2:9](https://www.biblegateway.com/passage/?search=1%20John%202%3A9&version=ESV)** - Whoever says he is in the light and hates his brother is still in darkness. (ESV)
 
-Churches should be teaching Jesus' teachings:
+We are all **stewards** of God's varied grace so there is obligation to serve one another:
 
-> **[Luke 12:42-49](https://www.biblegateway.com/passage/?search=Luke%2012%3A42-49&version=ESV)** - And the Lord said, Who then is the faithful and wise manager, whom his master will set over his household, to give them their portion of food at the proper time? Blessed is that servant whom his master will find so doing when he comes. Truly, I say to you, he will set him over all his possessions. But if that servant says to himself, My master is delayed in coming, and begins to beat the male and female servants, and to eat and drink and get drunk, the master of that servant will come on a day when he does not expect him and at an hour he does not know, and will cut him in pieces and put him with the unfaithful. And that servant who knew his master's will but did not get ready or act according to his will, will receive a severe beating. But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. I came to cast fire on the earth, and would that it were already kindled! (ESV)
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
+
+Churches should be teaching Jesus' teachings, and we should be teaching each other to abide in Christ's teachings without hypocrisy (i.e. whilst abiding ourselves in Christ's teachings):
+
+> **[Luke 12:42-49](https://www.biblegateway.com/passage/?search=Luke%2012%3A42-49&version=ESV)** - And the Lord said, Who then is the **faithful and wise manager**, whom his master will set over his household, **to give them their portion of food at the proper time?** Blessed is that servant whom his master will find so doing when he comes. Truly, I say to you, he will set him over all his possessions. But if that servant says to himself, My master is delayed in coming, and begins to beat the male and female servants, and to eat and drink and get drunk, the master of that servant will come on a day when he does not expect him and at an hour he does not know, and will cut him in pieces and put him with the unfaithful. And that servant who knew his master's will but did not get ready or act according to his will, will receive a severe beating. But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. I came to cast fire on the earth, and would that it were already kindled! (ESV)
 
 
 ### God definitely disciplines us even if we love Jesus - **every** son he receives
@@ -5794,7 +5884,9 @@ Obedience to God is faith. Abraham went to live in the land of promise by **obed
 
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
-> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
 
 By unrighteousness and ungodliness, people suppress the Truth of God:
 
@@ -7437,6 +7529,10 @@ Children look like their Father:
 
 > **[I John 3:7](https://www.biblegateway.com/passage/?search=1%20John%203%3A7&version=ESV)** - Little children, let no one deceive you. **Whoever practices righteousness is righteous, as he is righteous**. (ESV)
 
+People who do not practice righteousness, and do not abide in Christ's teachings probably don't actually believe or have faith in Jesus:
+
+> **[II Thessalonians 3:1-6](https://www.biblegateway.com/passage/?search=2%20Thessalonians%203%3A1-6&version=ESV)** - Finally, brothers, pray for us, that the word of the Lord may speed ahead and be honored, as happened among you, and that we may be *delivered from wicked and evil men*. **For not all have faith**. But the Lord is faithful. He will establish you and guard you against the evil one. And **we have confidence** in the Lord about you, that **you are doing and will do the things that we command**. May the Lord direct your hearts to the love of God and to the steadfastness of Christ. Now we command you, brothers, in the name of our Lord Jesus Christ, that you <ins>keep away from any brother who is walking in idleness and not in accord with **the tradition that you received from us**.</ins> (ESV)
+
 > **[II John 1:4](https://www.biblegateway.com/passage/?search=2%20John%201%3A4&version=ESV)** - I rejoiced greatly to find some of your children walking in the truth, just as we were commanded by the Father. (ESV)
 
 > **[III John 1:4](https://www.biblegateway.com/passage/?search=3%20John%201%3A4&version=ESV)** - I have no greater joy than to hear that my children are **walking in the truth**. (ESV)
@@ -7585,9 +7681,9 @@ as bondservants.
 
 > **[I Corinthians 9:17-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A17-18&version=ESV)** - For if I do this of my own will, I have a reward, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel. (ESV)
 
-We are all stewards of God's varied grace so there is obligation to serve one another:
+We are all **stewards** of God's varied grace so there is obligation to serve one another:
 
-> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good stewards of God's varied grace: (ESV)
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
 
 > **[Romans 13:8](https://www.biblegateway.com/passage/?search=Romans%2013%3A8&version=ESV)** - Owe no one anything, except to love each other, for the one who loves another has fulfilled the law. (ESV)
 
@@ -8023,7 +8119,7 @@ People who go astray:
 
 God forgive us and grant us sanctification. I know I still have issues, and I want to put to death the sensuality:
 
-> **[II Peter 2:1-22](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-22&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. And **many will follow their sensuality, and because of them the way of truth will be blasphemed**. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep. For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment; if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then **the Lord knows how to rescue the godly from trials, and to keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority**. Bold and willful, they do not tremble as they blaspheme the glorious ones, whereas angels, though greater in might and power, do not pronounce a blasphemous judgment against them before the Lord. But these, like irrational animals, creatures of instinct, born to be caught and destroyed, blaspheming about matters of which they are ignorant, will also be destroyed in their destruction, suffering wrong as the wage for their wrongdoing. They count it pleasure to revel in the daytime. They are blots and blemishes, reveling in their deceptions, while they feast with you. They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have hearts trained in greed. Accursed children! **Forsaking the right way, they have gone astray**. They have followed the way of Balaam, the son of Beor, who loved gain from wrongdoing, but was rebuked for his own transgression; a speechless donkey spoke with human voice and restrained the prophet's madness. These are waterless springs and mists driven by a storm. For them the gloom of utter darkness has been reserved. For, speaking loud boasts of folly, they entice by sensual passions of the flesh those who are barely escaping from those who live in error. **They promise them freedom, but they themselves are slaves of corruption**. For **whatever overcomes a person, to that he is enslaved.** For **if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.** For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire. (ESV)
+> **[II Peter 2:1-22](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-22&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even <ins>denying the Master who bought them</ins>, bringing upon themselves swift destruction. And **many will follow their sensuality, and because of them the way of truth will be blasphemed**. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep. For if God did not spare angels when they sinned, but cast them into hell and committed them to chains of gloomy darkness to be kept until the judgment; if he did not spare the ancient world, but preserved Noah, a herald of righteousness, with seven others, when he brought a flood upon the world of the ungodly; if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly; and if he rescued righteous Lot, greatly distressed by the sensual conduct of the wicked (for as that righteous man lived among them day after day, he was tormenting his righteous soul over their lawless deeds that he saw and heard); then **the Lord knows how to rescue the godly from trials, and to keep the unrighteous under punishment until the day of judgment**, and **especially those who indulge in the lust of defiling passion and despise authority**. Bold and willful, they do not tremble as they blaspheme the glorious ones, whereas angels, though greater in might and power, do not pronounce a blasphemous judgment against them before the Lord. But these, like irrational animals, creatures of instinct, born to be caught and destroyed, blaspheming about matters of which they are ignorant, will also be destroyed in their destruction, suffering wrong as the wage for their wrongdoing. They count it pleasure to revel in the daytime. They are blots and blemishes, reveling in their deceptions, while they feast with you. They have eyes full of adultery, insatiable for sin. They entice unsteady souls. They have hearts trained in greed. Accursed children! **Forsaking the right way, they have gone astray**. They have followed the way of Balaam, the son of Beor, who loved gain from wrongdoing, but was rebuked for his own transgression; a speechless donkey spoke with human voice and restrained the prophet's madness. These are waterless springs and mists driven by a storm. For them the gloom of utter darkness has been reserved. For, speaking loud boasts of folly, they entice by sensual passions of the flesh those who are barely escaping from those who live in error. **They promise them freedom, but they themselves are slaves of corruption**. For **whatever overcomes a person, to that he is enslaved.** For **if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.** For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire. (ESV)
 
 > **[John 8:34-35](https://www.biblegateway.com/passage/?search=John%208%3A34-35&version=ESV)** - Jesus answered them, Truly, truly, I say to you, everyone who commits sin is a slave to sin. The slave does not remain in the house forever; the son remains forever.
 
@@ -9302,7 +9398,9 @@ Fear of God is not only about having the heart to repent from sin and "beat hand
 
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
-> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
 
 Jesus was pleased with some of the Israelites here. But we must learn from the example here so that we still walk in righteousness and desire to do good and not evil according to God's precepts:
 
@@ -9375,6 +9473,8 @@ Those who annul and teach others to annul the law will be 'called' least in the 
 We should not forsake Jesus as our Master:
 
 > **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
+
+> **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ. (KJV)
 
 We certainly should not forsake the higher precepts of the law - mercy, justice and faithfulness:
 
@@ -10594,7 +10694,7 @@ We should be compassionate on one another and accept one another, knowing Jesus 
 
 > **[Romans 15:7](https://www.biblegateway.com/passage/?search=Romans%2015%3A7&version=ESV)** - Therefore welcome one another as Christ has welcomed you, for the glory of God. (ESV)
 
-> **[Romans 16:17-19](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-19&version=ESV)** - I appeal to you, brothers, to watch out for those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them. For such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. For your obedience is known to all, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. (ESV)
+> **[Romans 16:17-19](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-19&version=ESV)** - I appeal to you, brothers, to watch out for those who **cause divisions** and **create obstacles contrary to the doctrine that you have been taught**; avoid them. For such persons **do not serve our Lord Christ**, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. For your **obedience** is known to all, so that I rejoice over you, but I want you to be wise as to what is good and innocent as to what is evil. (ESV)
 
 > **[Romans 15:18-19](https://www.biblegateway.com/passage/?search=Romans%2015%3A18-19&version=ESV)** - For I will not venture to speak of anything except what Christ has accomplished through me to bring the Gentiles to obedience—by word and deed, by the power of signs and wonders, by the power of the Spirit of God—so that from Jerusalem and all the way around to Illyricum I have fulfilled the ministry of the gospel of Christ; (ESV)
 
@@ -10862,7 +10962,9 @@ Confess:
     
     **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
     
-    > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+    > **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+    
+    > **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
     
     Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
     
@@ -13517,7 +13619,7 @@ We are being prepared to be presented to Jesus:
 
 > **[Colossians 2:18](https://www.biblegateway.com/passage/?search=Colossians%202%3A18&version=ESV)** - Let no one disqualify you, insisting on asceticism and worship of angels, going on in detail about visions, puffed up without reason by his sensuous mind, (ESV)
 
-> **[I Timothy 6:5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A5&version=ESV)** - and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. (ESV)
+> **[I Timothy 6:5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A5&version=ESV)** - and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain. (ESV)
 
 > **[I Timothy 3:2](https://www.biblegateway.com/passage/?search=1%20Timothy%203%3A2&version=ESV)** - Therefore an overseer must be above reproach, the husband of one wife, sober-minded, self-controlled, respectable, hospitable, able to teach, (ESV)
 
@@ -14407,7 +14509,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org55196dd)
+See: [33.4.1](#orgccf3746)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -14937,7 +15039,7 @@ Firstly, obedient children are children who hear the word of God, believe and lo
 
 We must follow the way righteousness, repenting from sin, and following Jesus Christ. Jesus Christ is Lord:
 
-> **[II Peter 2:1-3](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-3&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Master who bought them, bringing upon themselves swift destruction. And many will follow their sensuality, and because of them the way of truth will be blasphemed. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep.
+> **[II Peter 2:1-3](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A1-3&version=ESV)** - But false prophets also arose among the people, just as there will be false teachers among you, who will secretly bring in destructive heresies, even <ins>denying the Master who bought them</ins>, bringing upon themselves swift destruction. And many will follow their sensuality, and because of them the way of truth will be blasphemed. And in their greed they will exploit you with false words. Their condemnation from long ago is not idle, and their destruction is not asleep.
 
 > **[II Peter 2:20-22](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A20-22&version=ESV)** - For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire.
 
@@ -15397,7 +15499,7 @@ Sanctification:
 
 > **[I Thessalonians 5:23](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A23&version=ESV)** - Now may the God of peace himself sanctify you completely, and may your whole spirit and soul and body be kept blameless at the coming of our Lord Jesus Christ. (ESV)
 
-> **[I Timothy 6:3-11](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-11&version=ESV)** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
+> **[I Timothy 6:3-11](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-11&version=ESV)** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
 > **[II Peter 2:6](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A6&version=ESV)** - if by turning the cities of Sodom and Gomorrah to ashes he condemned them to extinction, making them an example of what is going to happen to the ungodly;
 
@@ -17129,6 +17231,8 @@ I also believe the prosperity gospel is no gospel because it doesn't teach love.
 
 > **[Luke 12:15](https://www.biblegateway.com/passage/?search=Luke%2012%3A15&version=ESV)** - And he said to them, Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions. (ESV)
 
+> **[I Timothy 6:1-5](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A1-5&version=ESV)** - <ins>Let all who are under a yoke as slaves regard their own masters as worthy of all honor, so that the name of God and the teaching may not be reviled.</ins> Those who have believing masters must not be disrespectful on the ground that they are brothers; rather they must serve all the better since those who benefit by their good service are believers and beloved. Teach and urge these things. **If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing**. He has *an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain.* (ESV)
+
 The reason we want to be righteous is so we get God.
 
 [youtube.com: God is the Gospel @time: 40 min 42 sec](https://youtube.com/watch?v=duJhsyAjhNg&t=2442)
@@ -17446,6 +17550,21 @@ These do not contradict:
 
 -   **[Quote by R. C. Sproul](https://www.ligonier.org/learn/devotionals/god-truth/):** "Truth is not defined by our own subjective standards; it is determined by the Source of truth **Himself**"
 
+[Here](https://topicalbiblestudies.com/are-we-saved-by-faith-alone/) is an interesting read with some interesting points.
+One could use a number of verses to teach “salvation by **X** alone” doctrines. For instance, we could teach:
+
+-   Repentance alone from [2 Corinthians 7:10](https://www.biblegateway.com/passage/?search=2%20Corinthians%207%3A10&version=ESV)
+-   Baptism alone from [Acts 22:16](https://www.biblegateway.com/passage/?search=Acts%2022%3A16&version=ESV)
+-   The life of Christ alone from [Romans 5:10](https://www.biblegateway.com/passage/?search=Romans%205%3A10&version=ESV)
+-   The blood of Christ alone from [Revelation 1:5](https://www.biblegateway.com/passage/?search=Revelation%201%3A5&version=ESV)
+-   The word of God alone from [James 1:21](https://www.biblegateway.com/passage/?search=James%201%3A21&version=ESV)
+-   Obedience alone from [Hebrews 5:9](https://www.biblegateway.com/passage/?search=Hebrews%205%3A9&version=ESV), and so on.
+-   The sum of Your word is truth, And every one of Your righteous ordinances is everlasting.
+
+> **[Psalms 119:160](https://www.biblegateway.com/passage/?search=Psalms%20119%3A160&version=ESV)** - The sum of your word is truth, and every one of your righteous rules endures forever. (ESV)
+
+As the psalmist states, the **sum** of God’s word is truth. However, when we make passages fight against each other, we are saying only some of God’s word is truth.
+
 
 ### Jesus is noticeably present with us as we believe and affirm and obey the Truth
 
@@ -17527,7 +17646,7 @@ What counts is faith working through love:
 
 > **[Galatians 5:1-6](https://www.biblegateway.com/passage/?search=Galatians%205%3A1-6&version=ESV)** - **For freedom Christ has set us free**; stand firm therefore, and do not submit again to a yoke of slavery. Look: I, Paul, say to you that if you accept circumcision, Christ will be of no advantage to you. I testify again to every man who accepts circumcision that he is obligated to keep the whole law. You are severed from Christ, you who would be justified by the law; you have fallen away from grace. For **through the Spirit, by faith**, we ourselves eagerly <ins>wait for the hope of righteousness.</ins> For **in Christ Jesus** neither circumcision nor uncircumcision counts for anything, but **only faith working through love**. (ESV)
 
-> **[Romans 16:17-18](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-18&version=ESV)** - I appeal to you, brothers, to watch out for those who cause divisions and create obstacles contrary to the doctrine that you have been taught; avoid them. For such persons do not serve our Lord Christ, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. (ESV)
+> **[Romans 16:17-18](https://www.biblegateway.com/passage/?search=Romans%2016%3A17-18&version=ESV)** - I appeal to you, brothers, to watch out for those who **cause divisions** and **create obstacles contrary to the doctrine that you have been taught**; avoid them. For such persons **do not serve our Lord Christ**, but their own appetites, and by smooth talk and flattery they deceive the hearts of the naive. (ESV)
 
 We must abide in the teachings of Jesus, believing what Jesus has said, believing Jesus:
 
@@ -18360,6 +18479,12 @@ The demons believe and tremble because they don't have the kind of faith that pr
 
 > **[James 2:19](https://www.biblegateway.com/passage/?search=James%202%3A19&version=ESV)** - You believe that God is one; you do well. Even the demons believe—and shudder! (ESV)
 
+We are supposed to be harmless, innocent like children, but wise and mature, in both thinking and deed:
+
+> **[I Corinthians 14:20](https://www.biblegateway.com/passage/?search=1%20Corinthians%2014%3A20&version=ESV)** - Brothers, stop thinking like children. In regard to evil be infants, but in your thinking be mature. (engbsb2020eb)
+
+> **[Matthew 10:16](https://www.biblegateway.com/passage/?search=Matthew%2010%3A16&version=ESV)** - Behold, I send you forth as sheep in the midst of wolves: be ye therefore wise as serpents, and harmless as doves. (KJV)
+
 God's strength does not guarantee that we will not suffer as a result of following Jesus. But God gives us the power at the time we need it to endure the suffering:
 
 > **[Hebrews 12:1-3](https://www.biblegateway.com/passage/?search=Hebrews%2012%3A1-3&version=ESV)** - Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God. Consider him who endured from sinners such hostility against himself, **so that you may not grow weary or fainthearted.** (ESV)
@@ -18389,6 +18514,18 @@ Also the merciful will receive mercy:
 We need to imitate God:
 
 > **[Ephesians 5:1-2](https://www.biblegateway.com/passage/?search=Ephesians%205%3A1-2&version=ESV)** - Therefore be imitators of God, as beloved children. And walk in love, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God. (ESV)
+
+Believers must become imitators of the Lord:
+
+> **[I Thessalonians 1:6-7](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A6-7&version=ESV)** - And you became imitators of us and of the Lord, for you received the word in much affliction, with the joy of the Holy Spirit, so that you became an example to all the believers in Macedonia and in Achaia. (ESV)
+
+The in-dwelling word of God works in us who believe/trust as we imitate Jesus:
+
+> **[I Thessalonians 2:13](https://www.biblegateway.com/passage/?search=1%20Thessalonians%202%3A13&version=ESV)** - And we also thank God constantly for this, that when you received the word of God, which you heard from us, you accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers. (ESV)
+
+Believers turn from idols to serve the living and true God, waiting on His Son to deliver us from the wrath to come. While we are waiting to be delivered from the wrath to come, we serve God, serving Christ, serving the brethren:
+
+> **[I Thessalonians 1:9-10](https://www.biblegateway.com/passage/?search=1%20Thessalonians%201%3A9-10&version=ESV)** - For they themselves report concerning us the kind of reception we had among you, and how you turned to God from idols to serve the living and true God, and to wait for his Son from heaven, whom he raised from the dead, Jesus who delivers us from the wrath to come. (ESV)
 
 The law-fulfilling love we produce as a result of justifying faith
 means we are not **under** the Mosaic law as our actions are law-fulfilling. If we have faith in Christ working through love then our actions are law-fulfilling. In other words, as we follow Jesus we are being led by His Spirit and we are not under the law. As we put our trust in Jesus for our justification, exercising obedience to Jesus, our obedient action is law-fulfilling, and since Jesus is our Lord and Master, we have Him as Advocate and High Priest to God and we can live in peace with God.
@@ -22735,7 +22872,9 @@ Because we love and obey God, loving and obeying Jesus, we receive from God when
 
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
-> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
 
 Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
 
@@ -22754,7 +22893,9 @@ I think James is saying that without **holding fast to the word of God** (the tr
 
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
-> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
 
 Doubt is very contrary to faith, even contrary to obedient faith. Ask in obedient faith without any doubting:
 
@@ -24768,7 +24909,9 @@ Jesus Himself is the bread of God - Jesus Himself **is** the source of life:
 
 > **[John 13:34-35](https://www.biblegateway.com/passage/?search=John%2013%3A34-35&version=ESV)** - A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another. By this all people will know that you are my disciples, if you have love for one another. (ESV)
 
-> **[Galatians 1:6-10](https://www.biblegateway.com/passage/?search=Galatians%201%3A6-10&version=ESV)** - I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel- not that there is another one, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
+Jesus delivers us from the present evil age, that we may seek to please God as slaves/bond-servants of Christ:
+
+> **[Galatians 1:1-10](https://www.biblegateway.com/passage/?search=Galatians%201%3A1-10&version=ESV)** - Paul, an apostle—not from men nor through man, but through Jesus Christ and God the Father, who raised him from the dead— and all the brothers who are with me, To the churches of Galatia: Grace to you and peace from God our Father and the **Lord Jesus Christ, who gave himself for our sins to deliver us from the present evil age**, according to the will of our God and Father, to whom be the glory forever and ever. Amen. I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel — *not that there is another one*, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now **seeking the approval** of man, or **of God**? Or am I trying to please man? If I were still trying to please man, I would not be **a servant of Christ**. (ESV)
 
 > **[Micah 4:1-13](https://www.biblegateway.com/passage/?search=Micah%204%3A1-13&version=ESV)** - It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and it shall be lifted up above the hills; and peoples shall flow to it, and many nations shall come, and say: Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths. For out of Zion shall go forth the law, and the word of the LORD from Jerusalem. He shall judge between many peoples, and shall decide for strong nations afar off; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore; but they shall sit every man under his vine and under his fig tree, and no one shall make them afraid, for the mouth of the LORD of hosts has spoken. For all the peoples walk each in the name of its god, but we will walk in the name of the LORD our God forever and ever. In that day, declares the LORD, I will assemble the lame and gather those who have been driven away and those whom I have afflicted; and the lame I will make the remnant, and those who were cast off, a strong nation; and the LORD will reign over them in Mount Zion from this time forth and forevermore. And you, O tower of the flock, hill of the daughter of Zion, to you shall it come, the former dominion shall come, kingship for the daughter of Jerusalem. Now why do you cry aloud? Is there no king in you? Has your counselor perished, that pain seized you like a woman in labor? Writhe and groan, O daughter of Zion, like a woman in labor, for now you shall go out from the city and dwell in the open country; you shall go to Babylon. There you shall be rescued; there the LORD will redeem you from the hand of your enemies. Now many nations are assembled against you, saying, Let her be defiled, and let our eyes gaze upon Zion. But they do not know the thoughts of the LORD; they do not understand his plan, that he has gathered them as sheaves to the threshing floor. Arise and thresh, O daughter of Zion, for I will make your horn iron, and I will make your hoofs bronze; you shall beat in pieces many peoples; and shall devote their gain to the LORD, their wealth to the Lord of the whole earth. (ESV)
 
@@ -26041,6 +26184,10 @@ Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkn
 
 > **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
+Genuine agape loves the light. The Truth of God is light and is good and is not wicked:
+
+> **[Romans 12:9](https://www.biblegateway.com/passage/?search=Romans%2012%3A9&version=ESV)** - Let love [(G26 agapé)](G26) be genuine [(G505 anupokritos)](G505). Abhor what is evil; hold fast to what is good. (ESV)
+
 In order to be faithful to God, you will start acting unpredictably to others who are still in darkness. Firstly, as happened to me, you may tell someone about Jesus for the first time. Also, you will be led amongst people in darkness and make confessions of the truth to combat lies in remaining faithful to God, and obey Jesus' commandments in situations where others in darkness or under the power of Satan may pressure you to not. And people may react in hostile ways. I just think that turning from darkness to light and the power of Satan to God naturally results in decoupling from the world:
 
 > **[John 10:18-21](https://www.biblegateway.com/passage/?search=John%2010%3A18-21&version=ESV)** - No one takes it from me, but I lay it down of my own accord. I have authority to lay it down, and I have authority to take it up again. This charge I have received from my Father. There was again a division among the Jews because of these words. Many of them said, He has a demon, and is insane; why listen to him? Others said, These are not the words of one who is oppressed by a demon. Can a demon open the eyes of the blind? (ESV)
@@ -26928,6 +27075,10 @@ Agape-love can be misplaced. We go from agape-loving (treasuring, valuing) darkn
 
 > **[John 3:16-20](https://www.biblegateway.com/passage/?search=John%203%3A16-20&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God. And this is the judgment: the light has come into the world, and people loved ([25. agapaó](https://biblehub.com/greek/25.htm)) the darkness rather than the light ([5457. phós](https://biblehub.com/greek/5457.htm)) because their deeds were evil. For everyone who does wicked things hates the light and does not come to the light, lest his deeds should be exposed. (ESV)
 
+Genuine agape loves the light. The Truth of God is light and is good and is not wicked:
+
+> **[Romans 12:9](https://www.biblegateway.com/passage/?search=Romans%2012%3A9&version=ESV)** - Let love [(G26 agapé)](G26) be genuine [(G505 anupokritos)](G505). Abhor what is evil; hold fast to what is good. (ESV)
+
 Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did God love ([25. agapaó](https://biblehub.com/greek/25.htm) - *value,treasure*) the world, that He gave His Only-Begotten Son that everyone who is trusting/believing in Him may not perish, but may have life everlasting:
 
 [biblehub.com 3-16.htm: John 3:16 Interlinear: for God did so love the world, that His Son &#x2013; the only begotten &#x2013; He gave, that every one who is believing in him may not perish, but may have life age-during.](https://biblehub.com/interlinear/john/3-16.htm)
@@ -26950,6 +27101,7 @@ Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did G
 
 -   All people, even enemies
     -   <https://biblehub.com/greek/agapa_25.htm>
+    -   <https://biblehub.com/interlinear/matthew/5-44.htm>
 
 > **[Galatians 6:10](https://www.biblegateway.com/passage/?search=Galatians%206%3A10&version=ESV)** - So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith. (ESV)
 
@@ -28727,7 +28879,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org55196dd)
+See: [33.4.1](#orgccf3746)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -28892,6 +29044,11 @@ Not just by hearing but by hearing with faith.
 > **[Matthew 19:16-26](https://www.biblegateway.com/passage/?search=Matthew%2019%3A16-26&version=ESV)** - And behold, a man came up to him, saying, Teacher, what good deed must I do to have eternal life? And he said to him, Why do you ask me about what is good? There is only one who is good. If you would enter life, keep the commandments. He said to him, Which ones? And Jesus said, You shall not murder, You shall not commit adultery, You shall not steal, You shall not bear false witness, Honor your father and mother, and, You shall love your neighbor as yourself. The young man said to him, All these I have kept. What do I still lack? Jesus said to him, If you would be perfect, go, sell what you possess and give to the poor, and you will have treasure in heaven; and come, follow me. When the young man heard this he went away sorrowful, for he had great possessions. And Jesus said to his disciples, Truly, I say to you, only with difficulty will a rich person enter the kingdom of heaven. Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God. When the disciples heard this, they were greatly astonished, saying, Who then can be saved? But Jesus looked at them and said, With man this is impossible, but with God all things are possible.
 
 I was born-again on 2 April 2022. On 1 April 2022 (one day before) I was wearing a pendant which on one side I had written 1023 which is decimal for the binary 1111111111 - which are ten ones. I was trying hard to follow the ten commandments **from the heart**, like Jesus teaches. I was doing this to seek Jesus. Then I was born-again. What a mystery.
+
+-   **Read:** [cbs.mbts.edu: April 3, AD 33: Why We Believe We Can Know the Exact Date Jesus Died - The Center for Biblical Studies](https://cbs.mbts.edu/2020/04/08/april-3-ad-33-why-we-believe-we-can-know-the-exact-date-jesus-died/)
+
+I've also seen written people's estimations that it was on April 1,
+but at this time I am leaning towards April 3 as the date.
 
 The **day of the Lord** (as in the second-coming of Jesus Christ) has not happened yet:
 
@@ -29072,6 +29229,8 @@ We follow them in faith.
     In other words, I received the grace **before** I had perfect obedience, and I believe I should not exchange this grace for anything, but use it to obey Jesus Christ:
     
     > **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For certain people have crept in unnoticed who long ago were designated for this condemnation, ungodly people, who pervert the grace of our God into sensuality and deny our only Master and Lord, Jesus Christ. (ESV)
+    
+    > **[Jude 1:4](https://www.biblegateway.com/passage/?search=Jude%201%3A4&version=ESV)** - For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ. (KJV)
     
     I believe that after I made testimony of being born-again and baptised by fire, I needed to be sanctified/corrected by the Truth, the Word of God, and as a consequence of endeavouring to do so by repenting and becoming obedient to Jesus, I was spiritually attacked and deplatformed.
 
@@ -29589,6 +29748,10 @@ People may take offense to disciples of Jesus as they did to Jesus, but we shoul
 -   **<ins>Condition:</ins> If people revile and persecute you for Jesus' sake and your faith in Him:** <ins>Promise:</ins> The Son of Man (Jesus) will reward you in Heaven and the reward will be great
 
 -   **Song:** [youtube.com: I Asked The Lord by John Newton - Indelible Grace](https://www.youtube.com/watch?v=0cnEDUMfPXs&list=RD0cnEDUMfPXs&start_radio=1)
+
+-   **Song:** [youtube.com: I Asked the Lord that I Might Grow | Hymn by John Newton | 2 Corinthians 12 : 7-10](https://www.youtube.com/watch?v=sq7GEUdc6_0)
+
+> **[II Corinthians 12:7-10](https://www.biblegateway.com/passage/?search=2%20Corinthians%2012%3A7-10&version=ESV)** - So to keep me from being too elated by the surpassing greatness of the revelations, a thorn was given me in the flesh, a messenger of Satan to harass me, to keep me from being too elated. Three times I pleaded with the Lord about this, that it should leave me. But he said to me, My grace is sufficient for you, for my power is made perfect in weakness. Therefore I will boast all the more gladly of my weaknesses, so that the power of Christ may rest upon me. For the sake of Christ, then, I am content with weaknesses, insults, hardships, persecutions, and calamities. For when I am weak, then I am strong. (ESV)
 
 
 ### 
@@ -30837,7 +31000,7 @@ Those who proclaim the gospel should get their living by the gospel:
     -   steadfastness,
     -   gentleness.
 
-> **[I Timothy 6:3-11](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-11&version=ESV)** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
+> **[I Timothy 6:3-11](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-11&version=ESV)** - If anyone teaches a different doctrine and does not agree with <ins>the sound words of our Lord Jesus Christ and the teaching that accords with godliness</ins>, he is <ins>puffed up with conceit and understands nothing.</ins> He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain. Now there is great gain in <ins>godliness with contentment,</ins> for we brought nothing into the world, and we cannot take anything out of the world. But if we have food and clothing, with these we will be content. But <ins>those who desire to be rich fall into temptation, into a snare, into many senseless and harmful desires that plunge people into ruin and destruction.</ins> For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, <ins>flee these things</ins>. Pursue righteousness, godliness, faith, love, steadfastness, gentleness. (ESV)
 
 > **[I Corinthians 10:24](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A24&version=ESV)** - Let no one seek his own good, but the good of his neighbor. (ESV)
 
@@ -31571,7 +31734,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 
 ### 
 
-> **[Luke 6:22-23](https://www.biblegateway.com/passage/?search=Luke%206%3A22-23&version=ESV)** - Blessed are you when people hate you and when they exclude you and revile you and spurn your name as evil, on account of the Son of Man! Rejoice in that day, and leap for joy, for behold, your reward is great in heaven; for so their fathers did to the prophets. (ESV)
+> **[Luke 6:22-23](https://www.biblegateway.com/passage/?search=Luke%206%3A22-23&version=ESV)** - Blessed are you when people hate you and when they **exclude** you and revile you and spurn your name as evil, on account of the Son of Man! Rejoice in that day, and leap for joy, for behold, your reward is great in heaven; for so their fathers did to the prophets. (ESV)
 
 
 ### 
@@ -32373,25 +32536,25 @@ Perfect godliness revealing God through Jesus Christ:
 
 > **[I Timothy 2:10](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A10&version=ESV)** - but rather by means of good works ([G2041 ergon](https://www.blueletterbible.org/lexicon/g2041/nasb95/mgnt/0-1/)), as is proper for women making a claim to godliness.
 
-> **[I Timothy 3:16](https://www.biblegateway.com/passage/?search=1%20Timothy%203%3A16&version=ESV)** - By common confession, great is the mystery (G3466 musterion) of godliness (G2150 eusebeia): He who ([G3739 hos](https://www.blueletterbible.org/lexicon/g3739/kjv/tr/0-1/)) was revealed in the flesh ([G4561 sarx](https://www.blueletterbible.org/lexicon/g4561/kjv/tr/0-1/)), Was vindicated in the Spirit ([G4151 pneuma](https://www.blueletterbible.org/lexicon/g4151/kjv/tr/0-1/)), Seen by angels, Proclaimed among the nations, Believed on in the world ([G2889 kosmos](https://www.blueletterbible.org/lexicon/g2889/kjv/tr/0-1/)), Taken up in glory ([G1391 doxa](https://www.blueletterbible.org/lexicon/g1391/kjv/tr/0-1/)).
+> **[I Timothy 3:16](https://www.biblegateway.com/passage/?search=1%20Timothy%203%3A16&version=ESV)** - By common confession, great is the mystery [(G3466 musterion)](G3466) of godliness [(G2150 eusebeia)](G2150): He who ([G3739 hos](https://www.blueletterbible.org/lexicon/g3739/kjv/tr/0-1/)) was revealed in the flesh ([G4561 sarx](https://www.blueletterbible.org/lexicon/g4561/kjv/tr/0-1/)), Was vindicated in the Spirit ([G4151 pneuma](https://www.blueletterbible.org/lexicon/g4151/kjv/tr/0-1/)), Seen by angels, Proclaimed among the nations, Believed on in the world ([G2889 kosmos](https://www.blueletterbible.org/lexicon/g2889/kjv/tr/0-1/)), Taken up in glory ([G1391 doxa](https://www.blueletterbible.org/lexicon/g1391/kjv/tr/0-1/)).
 
-> **[I Timothy 4:7-8](https://www.biblegateway.com/passage/?search=1%20Timothy%204%3A7-8&version=ESV)** - But have nothing to do with worldly fables fit only for old women. On the other hand, discipline yourself for the purpose of godliness (G2150 eusebeia); for bodily discipline is only of little profit, but godliness (G2150 eusebeia) is profitable for all ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) things ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)), since it holds promise for the present life (G2222 zoe) and also for the life to come.
+> **[I Timothy 4:7-8](https://www.biblegateway.com/passage/?search=1%20Timothy%204%3A7-8&version=ESV)** - But have nothing to do with worldly fables fit only for old women. On the other hand, discipline yourself for the purpose of godliness [(G2150 eusebeia)](G2150); for bodily discipline is only of little profit, but godliness [(G2150 eusebeia)](G2150) is profitable for all [(G3956 pas)](G3956) things [(G3956 pas)](G3956), since it holds promise for the present life [(G2222 zoe)](G2222) and also for the life to come.
 
-> **[I Timothy 6:3-6](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-6&version=ESV)** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are depraved in mind and deprived of the truth, imagining that godliness is a means of gain. But godliness (G2150 eusebeia) actually is a means of great gain when accompanied by contentment.
+> **[I Timothy 6:3-6](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A3-6&version=ESV)** - If anyone teaches a different doctrine and does not agree with the sound words of our Lord Jesus Christ and the teaching that accords with godliness, he is puffed up with conceit and understands nothing. He has an unhealthy craving for controversy and for quarrels about words, which produce envy, dissension, slander, evil suspicions, and constant friction among people who are **depraved in mind and deprived of the truth**, imagining that godliness is a means of gain. But godliness [(G2150 eusebeia)](G2150) actually is a means of great gain when accompanied by contentment.
 
 > **[I Timothy 6:10-11](https://www.biblegateway.com/passage/?search=1%20Timothy%206%3A10-11&version=ESV)** - For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs. But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness.
 
 > **[II Timothy 2:16](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A16&version=ESV)** - But avoid worldly and empty chatter, for it will lead to further ungodliness,
 
-> **[II Timothy 3:5](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A5&version=ESV)** - holding to a form of godliness (G2150 eusebeia), although they have denied its power (G1411 dunamis); Avoid such men as these.
+> **[II Timothy 3:5](https://www.biblegateway.com/passage/?search=2%20Timothy%203%3A5&version=ESV)** - holding to a form of godliness [(G2150 eusebeia)](G2150), although they have denied its power [(G1411 dunamis)](G1411); Avoid such men as these.
 
-> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant (G1401 doulos) of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God ([G2316 theos](https://www.blueletterbible.org/lexicon/g2316/kjv/tr/0-1/)) and the knowledge (G1922 epignosis) of the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/) which is according to godliness (G2150 eusebeia),
+> **[Titus 1:1](https://www.biblegateway.com/passage/?search=Titus%201%3A1&version=ESV)** - Paul, a bond-servant [(G1401 doulos)](G1401) of God [(G2316 theos)](G2316) and an apostle of Jesus ([G2424 Iesous](https://www.blueletterbible.org/lexicon/g2424/kjv/tr/0-1/)) Christ ([G5547 Christos](https://www.blueletterbible.org/lexicon/g5547/kjv/tr/0-1/)), for the faith ([G4102 pistis](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/)) of those chosen of God [(G2316 theos)](G2316) and the knowledge [(G1922 epignosis)](G1922) of the truth [(G225 aletheia)](G225) which is according to godliness [(G2150 eusebeia)](G2150),
 
 > **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, training us to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works.
 
 Jesus has granted us what we need to live a godly life:
 
-> **[II Peter 1:3](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A3&version=ESV)** - seeing that His divine power (G1411 dunamis) has granted to us everything ([G3956 pas](https://www.blueletterbible.org/lexicon/g3956/kjv/tr/0-1/)) pertaining to life (G2222 zoe) and godliness (G2150 eusebeia), through the true (G1922 epignosis) knowledge (G1922 epignosis) of Him who called us by His own glory ([G1391 doxa](https://www.blueletterbible.org/lexicon/g1391/kjv/tr/0-1/)) and excellence.
+> **[II Peter 1:3](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A3&version=ESV)** - seeing that His divine power [(G1411 dunamis)](G1411) has granted to us everything [(G3956 pas)](G3956) pertaining to life [(G2222 zoe)](G2222) and godliness [(G2150 eusebeia)](G2150), through the true [(G1922 epignosis)](G1922) knowledge [(G1922 epignosis)](G1922) of Him who called us by His own glory [(G1391 doxa)](G1391) and excellence.
 
 > **[II Peter 1:5-7](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A5-7&version=ESV)** - For this very reason, make every effort to **supplement your faith with virtue, and virtue with knowledge, and knowledge** with self-control, and self-control with steadfastness, and steadfastness with godliness, and godliness with brotherly affection, and brotherly affection with love.
 
@@ -33245,6 +33408,7 @@ We must walk in Jesus' commandments and believe that He came from God.
 
 -   All people, even enemies
     -   <https://biblehub.com/greek/agapa_25.htm>
+    -   <https://biblehub.com/interlinear/matthew/5-44.htm>
 
 
 ### What Christians **must not** agape love
@@ -34208,6 +34372,8 @@ Paul commends giving even beyond their means. This is in accordance with the wid
 Give as you have made up in your mind, not reluctantly or under compulsion, but resist other people deterring you from giving when your heart convicts you it's the right thing to do as far as obeying Jesus goes:
 
 > **[II Corinthians 9:6-9](https://www.biblegateway.com/passage/?search=2%20Corinthians%209%3A6-9&version=ESV)** - The point is this: **whoever sows sparingly will also reap sparingly**, and **whoever sows bountifully will also reap bountifully**. Each one must **give as he has made up his mind**, not reluctantly or under compulsion, for God loves a cheerful giver. And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work. As it is written, He has distributed freely, he has given to the poor; his righteousness endures forever. (ESV)
+
+> **[Philemon 1:13-14](https://www.biblegateway.com/passage/?search=Philemon%201%3A13-14&version=ESV)** - I would have been glad to keep him with me, in order that he might serve me on your behalf during my imprisonment for the gospel, but I preferred to do nothing without your consent in order that **your goodness might not be by compulsion but of your own free will.** (ESV)
 
 
 ## Do the good works which have been gifted to you
@@ -35245,9 +35411,13 @@ Forgiveness is very important:
 
 > **[Matthew 6:14](https://www.biblegateway.com/passage/?search=Matthew%206%3A14&version=ESV)** - For if you forgive others their trespasses, your heavenly Father will also forgive you, (ESV)
 
-Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given - we hope that justification has already been given but we continue to obey God. We don't act like justification and obedience was a one time thing that happened in the past and now there's no more need to trust, hope and obey even for justification. We don't justify ourselves. Rather, we believe that God justifies the one who has faith in Jesus, and we don't stop having faith in Jesus - we live by that faith, now serving God. Living by faith in Jesus Christ looks like trusting, cleaving to, believing, obeying Jesus Christ to the end, putting our trust in God to justify even the ungodly. We don't justify ourselves but we still have faith to be justified by God as we hold faith in Jesus. We have faith that we are justified in advance of receiving that personal commendation from Jesus, but that doesn't mean we don't need to continue to obey! We still seek personal commendation from the Lord Jesus as we do not justify ourselves. So we should still live in faithful obedience to Jesus, following Him for the rest of our lives - just like Abraham's faith.
+Obedient faith looks like remaining faithful to Jesus Christ to one's best ability as an appropriate response of love for grace and justification already given - we hope that justification has already been given but we continue to obey God. We don't act like justification and obedience was a one time thing that happened in the past and now there's no more need to trust, hope and obey even for justification. We don't justify ourselves. Rather, we believe that God justifies the one who has faith in Jesus, and we don't stop having faith in Jesus - we live by that faith, now serving God. Living by faith in Jesus Christ looks like trusting, cleaving to, believing, obeying Jesus Christ to the end, putting our trust in God to justify even the ungodly. We don't justify ourselves but we still have faith to be justified by God as we hold faith in Jesus. We have faith that we are <ins>justified in advance of receiving that **personal commendation from Jesus which we seek**,</ins> but that doesn't mean we don't need to continue to obey! We still seek personal commendation from the Lord Jesus as we do not justify ourselves. So we should still live in faithful obedience to Jesus, following Him for the rest of our lives - just like Abraham's faith.
 
-The saving grace we receive is primarily for the salvation of our souls, not in order to enjoy this life:
+Jesus delivers us from the present evil age, that we may seek to please God as slaves/bond-servants of Christ:
+
+> **[Galatians 1:1-10](https://www.biblegateway.com/passage/?search=Galatians%201%3A1-10&version=ESV)** - Paul, an apostle—not from men nor through man, but through Jesus Christ and God the Father, who raised him from the dead— and all the brothers who are with me, To the churches of Galatia: Grace to you and peace from God our Father and the **Lord Jesus Christ, who gave himself for our sins to deliver us from the present evil age**, according to the will of our God and Father, to whom be the glory forever and ever. Amen. I am astonished that you are so quickly deserting him who called you in the grace of Christ and are turning to a different gospel — *not that there is another one*, but there are some who trouble you and want to distort the gospel of Christ. But even if we or an angel from heaven should preach to you a gospel contrary to the one we preached to you, let him be accursed. As we have said before, so now I say again: If anyone is preaching to you a gospel contrary to the one you received, let him be accursed. For am I now **seeking the approval** of man, or **of God**? Or am I trying to please man? If I were still trying to please man, I would not be **a servant of Christ**. (ESV)
+
+The saving grace we receive is primarily for the salvation of our souls, not in order to be materially-minded and agape loving the world (i.e. we're supposed to live godly lives in the knowledge of God, not ungodly lives living for materialism or false gods/idols) - but as we have fellowship with the brethren, we may live in peace and contentedness:
 
 > **[Ephesians 4:7](https://www.biblegateway.com/passage/?search=Ephesians%204%3A7&version=ESV)** - But grace was given to each one of us according to the measure of Christ's gift. (ESV)
 
@@ -35575,7 +35745,9 @@ And then we await personal commendation from God.
 
 **Disbelief causes disobedience**. Disbelief caused the Israelites to not walk in obedience:
 
-> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were disobedient? So we see that they were unable to enter because of unbelief. (ESV)
+> **[Hebrews 3:16-19](https://www.biblegateway.com/passage/?search=Hebrews%203%3A16-19&version=ESV)** - For who were those who **heard and yet rebelled**? Was it not all those who left Egypt led by Moses? And with whom was he provoked for forty years? Was it not with those who sinned, whose bodies fell in the wilderness? And to whom did he swear that they would not enter his rest, but to those who were **disobedient**? So we see that they were unable to enter **because of unbelief**. (ESV)
+
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because **I had acted ignorantly in unbelief**, (ESV)
 
 > **[I Corinthians 10:5-12](https://www.biblegateway.com/passage/?search=1%20Corinthians%2010%3A5-12&version=ESV)** - Nevertheless, with most of them God was not pleased, for they were overthrown in the wilderness. Now these things took place as examples for us, that we might not desire evil as they did. Do not be idolaters as some of them were; as it is written, The people sat down to eat and drink and rose up to play. We must not indulge in sexual immorality as some of them did, and twenty-three thousand fell in a single day. We must not put Christ to the test, as some of them did and were destroyed by serpents, nor grumble, as some of them did and were destroyed by the Destroyer. Now these things happened to them as an example, but they were written down for our instruction, on whom the end of the ages has come. Therefore let anyone who thinks that he stands take heed lest he fall. (ESV)
 
@@ -35793,7 +35965,7 @@ I'm fighting hard against evil spirits to make no provision for the flesh:
 
 > **[Romans 13:12-14](https://www.biblegateway.com/passage/?search=Romans%2013%3A12-14&version=ESV)** - The night is far gone; the day is at hand. So then let us **cast off the works of darkness and put on the armor of light**. Let us walk properly as in the daytime, not in orgies and drunkenness, not in sexual immorality and sensuality, not in quarreling and jealousy. But **put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires.** (ESV)
 
-> **[I Peter 4:5-10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A5-10&version=ESV)** - but they will give account to him who is ready to judge the living and the dead. For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might **live in the spirit the way God does**. The end of all things is at hand; therefore **be self-controlled and sober-minded** for the sake of your prayers. Above all, **keep loving one another earnestly, since love covers a multitude of sins**. Show hospitality to one another without grumbling. As each has received a gift, use it to serve one another, as good stewards of God's varied grace: (ESV)
+> **[I Peter 4:5-10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A5-10&version=ESV)** - but they will give account to him who is ready to judge the living and the dead. For this is why the gospel was preached even to those who are dead, that though judged in the flesh the way people are, they might **live in the spirit the way God does**. The end of all things is at hand; therefore **be self-controlled and sober-minded** for the sake of your prayers. Above all, **keep loving one another earnestly, since love covers a multitude of sins**. Show hospitality to one another without grumbling. As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
 
 We must live in the spirit the way God does, not for human passions, but for the will of God:
 
