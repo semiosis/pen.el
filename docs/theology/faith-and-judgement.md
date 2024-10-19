@@ -731,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgd493e14) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf2b0d80) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -9927,6 +9927,31 @@ They can get very tactical sometimes, so I have to be very discerning. Though I 
 
 > **[I John 4:2-3](https://www.biblegateway.com/passage/?search=1%20John%204%3A2-3&version=ESV)** - By this you know the Spirit of God: every spirit that confesses that Jesus Christ has come in the flesh is from God, and every spirit that does not confess Jesus is not from God. This is the spirit of the antichrist, which you heard was coming and now is in the world already. (ESV)
 
+Some stuff happened last week I might mention.
+
+Tues <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-08 Tue&gt;</span></span>:
+
+-   I woke up to a very puffy face - like I got beat up - by spiritual attack which has happened a few times in the last year on specific dates like Halloween.
+    -   But I went to Don's Bible study anyway
+    -   One of the guys walked out early
+    -   I blame witchcraft / satanic stuff / still feeling like I'm under a lot of spiritual attack
+
+Also in this week, the guy from India told me by email he'd "beat me up" if I didn't help him financially. - Definitely a spiritual attack thing.
+
+Wednesday <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-09 Wed&gt;</span></span>:
+
+-   JWs came to my door
+    -   I mentioned how I implore them to accept that Holy Spirit is a person, not merely a force
+
+Thursday <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-10 Thu&gt;</span></span>:
+
+-   In the morning, on the verge of waking up, I heard a voice that said, "Shane" - same voice as when I heard them say "Jesus is God."
+    -   then I thought/spoke in my mind, "Please speak to me God." and I got a bright white flash immediately, then I woke up and got out of bed
+
+What's interesting about this, is it's as if, connecting both of these events hearing this same voice, I'm hearing, "God is telling me that Jesus is God." This seems correct, and I affirm.
+
+I've strangely still been getting a huge amount of spiritual attack as I resist bad doctrine. The fight is ongoing.
+
 Mari Mari Emmanuel loves Jesus and this is a great sermon. I wish I heard and understood this earlier. Mari is speaking a lot of truth here. I can't fact-check the entire thing but it could have brought me up to speed a bit faster I think if I watched it earlier:
 
 -   **[youtube.com: Part 1 Of Works Of The Holy Spirit | Bishop Mari Mari Emmanuel](https://youtube.com/watch?v=MZeznN9yDFY&t=3067):** He (Jesus Christ) is the only one who fulfilled all God's Commandments and laws He is the perfect human, like the Lord said in **[Matthew 5:48](https://www.biblegateway.com/passage/?search=Matthew%205%3A48&version=ESV)** be as perfect as your Heavenly Father is.
@@ -14509,7 +14534,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgccf3746)
+See: [33.4.1](#orgdc9f0b3)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -28879,7 +28904,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgccf3746)
+See: [33.4.1](#orgdc9f0b3)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
