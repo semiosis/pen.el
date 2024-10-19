@@ -1,0 +1,27 @@
+#!/usr/bin/env bb
+
+;; (ns enter-your-name)
+(ns enter-your-name
+  (:require [babashka.deps :as deps]))
+
+;; [[sps:ewwlinks +/"^It’s rather amazing" "https://endot.org/2023/12/30/writing-babashka-scripts/"]]
+;; (deps/add-deps '{:deps {org.clj-commons/pretty {:mvn/version "2.2"}}})
+
+;; [[sps:ewwlinks +/"was the file invoked from the command line" "https://book.babashka.org/"]]
+(when (= *file* (System/getProperty "babashka.file")) ;; [3]
+  )
+
+;; (require '[clojure.java.io :as io])
+
+(println "Enter in your name: ") 
+(def name (read-line))
+
+;; The variable can then be referenced by "enter-your-name/name" or simply "name" when in the namespace
+;; enter-your-name> enter-your-name/name
+;; "kaldsjflkk"
+
+(println "Hello" name "!!!") 
+ 
+(println "Enter in your age: ") 
+(def age (. Integer parseInt (read-line))) 
+(println name "your age is" age "in 10 years you will be" (+ 10 age))
