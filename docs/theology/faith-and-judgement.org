@@ -12295,7 +12295,7 @@ This quite clearly shows that Jesus Christ is Almighty God:
     are falling away a little bit from our
     own roots and so we need reform.
 
-I affirm the Nicene creed wholeheartedly:
+I affirm the [[https://hastings.rcnz.org.nz/our-beliefs/the-nicene-creed/][Nicene creed]] wholeheartedly:
 
 #+BEGIN_SRC text -n :async :results verbatim code :lang text
   We believe in one God,
@@ -12334,6 +12334,34 @@ I affirm the Nicene creed wholeheartedly:
         We affirm one baptism for the forgiveness of sins.
         We look forward to the resurrection of the dead,
         and to life in the world to come. Amen.
+#+END_SRC
+
+AMEN!!
+
+I affirm the [[https://www.crcna.org/welcome/beliefs/creeds/apostles-creed][Apostles' creed]] wholeheartedly:
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  I believe in God, the Father almighty,
+        creator of heaven and earth.
+  I believe in Jesus Christ, his only Son, our Lord,
+        who was conceived by the Holy Spirit
+        and born of the virgin Mary.
+        He suffered under Pontius Pilate,
+        was crucified, died, and was buried;
+        he descended to hell.
+        The third day he rose again from the dead.
+        He ascended to heaven
+        and is seated at the right hand of God the Father almighty.
+        From there he will come to judge the living and the dead.
+
+  I believe in the Holy Spirit,
+        the holy catholic* church,
+        the communion of saints,
+        the forgiveness of sins,
+        the resurrection of the body,
+        and the life everlasting. Amen.
+
+  *that is, the true Christian church of all times and all places
 #+END_SRC
 
 AMEN!!
