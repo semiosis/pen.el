@@ -304,7 +304,7 @@ When we are living in faith in God for His promises we are living in an obedient
     chapter 1 (i.e. [I Peter 1]), means "hoping faith is the
     assurance of things hoped for."
 
-Our faith should be in God and our hope should be for God's promises. God has spoken a lot already in the Scriptures and about how we should listen to Jesus. Saving faith trusts God:
+Our faith should be in God and our hope should be for God's promises **as** we serve God through Jesus. God has spoken a lot already in the Scriptures and about how we should listen to Jesus. Saving faith trusts God:
 
 > **[I Peter 1:20-23](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A20-23&version=ESV)** - He was foreknown before the foundation of the world but was made manifest in the last times for your sake, who through him are believers in God, who raised him from the dead and gave him glory, **so that your faith and hope are in God**. Having purified your souls by your obedience to the truth for a sincere brotherly love, love one another earnestly from a pure heart, since you have been born again, not of perishable seed but of imperishable, through the living and abiding word of God; (ESV)
 
@@ -731,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgf2b0d80) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5a650f5) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -3992,9 +3992,11 @@ Jesus first made Paul His own, now Paul wants to press on to perfection/completi
 
 > **[Philippians 3:11-12](https://www.biblegateway.com/passage/?search=Philippians%203%3A11-12&version=ESV)** - that by any means possible I may attain the resurrection from the dead. Not that I have already obtained this or am already perfect, but I press on to make it my own, because Christ Jesus has made me his own. (ESV)
 
-We have different gifts, a different calling. We cannot compare or boast. We're different parts of the body of Christ.
+When it comes to be being saved to serve Christ, we can't boast that in some way we earned salvation outside of God's gift/grace:
 
-> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
+> **[Ephesians 2:8-9](https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=ESV)** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+
+> **[Romans 11:32](https://www.biblegateway.com/passage/?search=Romans%2011%3A32&version=ESV)** - For God has consigned all to disobedience, that he may have mercy on all. (ESV)
 
 Let's see what the word **katergazomai** (the word for 'work out') means:
 
@@ -7680,6 +7682,32 @@ If Jesus entrusts us with stewardship then we **must** be obedient slaves to Jes
 as bondservants.
 
 > **[I Corinthians 9:17-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A17-18&version=ESV)** - For if I do this of my own will, I have a reward, but not of my own will, I am still entrusted with a stewardship. What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel. (ESV)
+
+When it comes to be being saved to serve Christ, we can't boast that in some way we earned salvation outside of God's gift/grace:
+
+> **[Ephesians 2:8-9](https://www.biblegateway.com/passage/?search=Ephesians%202%3A8-9&version=ESV)** - For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast. (ESV)
+
+> **[Romans 11:32](https://www.biblegateway.com/passage/?search=Romans%2011%3A32&version=ESV)** - For God has consigned all to disobedience, that he may have mercy on all. (ESV)
+
+Even with stewardship (being brought into service to God with a calling), we have different gifts, a different calling. We cannot compare or boast in this regard because we are *stewards* of His varied grace. We're different parts of the body of Christ. Being a steward, we are obligated to fulfill our calling. But, technically, we may have something to boast about if we go beyond what is required of us.
+
+> **[I Peter 4:10](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A10&version=ESV)** - As each has received a gift, use it to serve one another, as good **stewards** of God's varied grace: (ESV)
+
+Paul preaches free of charge so as not to make full use of his right in the gospel, and understands he will be rewarded for this:
+
+> **[I Corinthians 9:15-18](https://www.biblegateway.com/passage/?search=1%20Corinthians%209%3A15-18&version=ESV)** - But I have made no use of any of these rights, nor am I writing these things to secure any such provision. For I would rather die than have anyone deprive me of <ins>my ground for boasting</ins>. For **if I preach the gospel, that gives me no ground for boasting. For necessity is laid upon me.** Woe to me if I do not preach the gospel! For if **I do this of my own will, I have a reward**, but not of my own will, I am still entrusted with a **stewardship**. <ins>What then is my reward? That in my preaching I may present the gospel free of charge, so as not to make full use of my right in the gospel.</ins> (ESV)
+
+> **[I Thessalonians 2:19](https://www.biblegateway.com/passage/?search=1%20Thessalonians%202%3A19&version=ESV)** - For <ins>what is our hope or joy or crown of boasting before our Lord Jesus at his coming? Is it not you?</ins> (ESV)
+
+> **[Galatians 6:4](https://www.biblegateway.com/passage/?search=Galatians%206%3A4&version=ESV)** - But let each one test his own work, and then his reason to boast will be in himself alone and not in his neighbor. (ESV)
+
+We boast in Lord who has given us an area of influence. For me that might be on GitHub, I guess, since that's where I'm writing my Bible Study. We still hope that this influence spreads and the gospel message is taken further.
+
+> **[II Corinthians 10:12-18](https://www.biblegateway.com/passage/?search=2%20Corinthians%2010%3A12-18&version=ESV)** - Not that we dare to classify or compare ourselves with some of those who are commending themselves. But <ins>when they measure themselves by one another and compare themselves with one another, they are without understanding.</ins> But we will not boast beyond limits, but will **boast only with regard to the area of influence God assigned to us, to reach even to you. For we are not overextending ourselves**, as though we did not reach you. We were the first to come all the way to you with the gospel of Christ. We do not boast beyond limit in the labors of others. But **our hope is that as your faith increases, our area of influence among you may be greatly enlarged, so that we may preach the gospel in lands beyond you**, without boasting of work already done in another's area of influence. <ins>Let the one who boasts, boast in the Lord. For it is not the one who commends himself who is approved, but the one whom the Lord commends.</ins> (ESV)
+
+Boasting should never be with selfish ambition:
+
+> **[James 3:14](https://www.biblegateway.com/passage/?search=James%203%3A14&version=ESV)** - But if you have bitter jealousy and selfish ambition in your hearts, do not boast and be false to the truth. (ESV)
 
 We are all **stewards** of God's varied grace so there is obligation to serve one another:
 
@@ -11509,7 +11537,7 @@ The New Testament writers still taught believers to not break the 10 Commandment
 
 Even as born-again Christians, keeping the 10 Commandments is very important. Just because we may be justified by faith in Jesus Christ doesn't mean that followers of Jesus obey unrighteousness. Followers of Jesus still obey righteousness:
 
-> **[Romans 1:29-2:13](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV)** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
+> **[Romans 1:29-2:13](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2%3A13&version=ESV)** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
 
 > **[I Timothy 1:8-11](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A8-11&version=ESV)** - Now we know that the law is good, if one uses it lawfully, understanding this, that the law is not laid down for the just but for the lawless and disobedient, for the ungodly and sinners, for the unholy and profane, for those who strike their fathers and mothers, for murderers, the sexually immoral, men who practice homosexuality, enslavers, liars, perjurers, and whatever else is contrary to sound doctrine, in accordance with the glorious gospel of the blessed God with which I have been entrusted. (ESV)
 
@@ -14534,7 +14562,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orgdc9f0b3)
+See: [33.4.1](#org0ccdb94)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17287,11 +17315,11 @@ The followers of Paul the Apostle <ins>live by</ins> (walk by) faith; those are 
 
 Faith in God is believing God and walking in that belief and trusting Jesus and obeying Jesus and allowing Jesus to work through you as you believe and obey His commandments.
 
-The ones who remained in the boat and did not step out onto the water did not have enough faith to walk on water.
+The ones who remained in the boat and did not step out onto the water did not have enough faith to walk on water. Fear and doubt weakened their faith. Maybe Peter took his eyes off Jesus, and instead focused on the water.
 
 > **[Matthew 14:27-32](https://www.biblegateway.com/passage/?search=Matthew%2014%3A27-32&version=ESV)** - But immediately Jesus spoke to them, saying, Take heart; it is I. Do not be afraid. And Peter answered him, Lord, if it is you, **command** me to come to you on the water. He said, Come. So Peter **got out of the boat and walked on the water and came to Jesus**. But when he saw the wind, he was afraid, and beginning to sink he cried out, Lord, save me. Jesus immediately reached out his hand and took hold of him, saying to him, O you of little faith, why did you doubt? And when they got into the boat, the wind ceased.
 
-Fear and doubt weakened their faith. Maybe Peter took his eyes off Jesus, and instead focused on the water.
+> **[Mark 5:36](https://www.biblegateway.com/passage/?search=Mark%205%3A36&version=ESV)** - But overhearing what they said, Jesus said to the ruler of the synagogue, Do not fear, only believe. (ESV)
 
 > **[Hebrews 2:2](https://www.biblegateway.com/passage/?search=Hebrews%202%3A2&version=ESV)** - For since the message declared by angels proved to be reliable and every transgression or disobedience received a just retribution,
 
@@ -18562,7 +18590,7 @@ means we are not **under** the Mosaic law as our actions are law-fulfilling. If 
 
 Even as born-again Christians, keeping the 10 Commandments is very important. Just because we may be justified by faith in Jesus Christ doesn't mean that followers of Jesus obey unrighteousness. Followers of Jesus still obey righteousness:
 
-> **[Romans 1:29-2](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2&version=ESV):13** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
+> **[Romans 1:29-2:13](https://www.biblegateway.com/passage/?search=Romans%201%3A29-2%3A13&version=ESV)** - They were filled with all manner of unrighteousness, evil, covetousness, malice. They are full of envy, murder, strife, deceit, maliciousness. They are gossips, slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, foolish, faithless, heartless, ruthless. Though they know God's decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them. Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things. We know that the judgment of God rightly falls on those who do such things. Do you suppose, O man—you who judge those who do such things and yet do them yourself—that you will escape the judgment of God? Or do you presume on the riches of his kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance? But because of your <ins>hard and impenitent heart</ins> you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed. He will render to each one according to his works: **to those who by patience in well-doing seek for glory and honor and immortality, he will give eternal life;** but **for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury. There will be tribulation and distress for every human being who does evil,** the Jew first and also the Greek, but **glory and honor and peace for everyone who does good,** the Jew first and also the Greek. For **God shows no partiality.** For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law. For it is not the hearers of the law who are righteous before God, but **the doers of the law who will be justified.** (ESV)
 
 The righteousness in the actual doing of the law above is still upheld but there is now the righteousness that is by faith in Jesus Christ. In other words, keeping the commandments of God and following Jesus are not mutually exclusive. And the law still describes what good behaviour looks like and what bad behaviour looks like. But through the redemption that is in Christ Jesus, as we follow and place our faith in Jesus, obeying Jesus to repent from sin and to do good and to pass forward love and forgiveness, etc., we can be justified by our faith in Jesus. As we go on living, we keep our obedient believing faith in Jesus, and no longer want to rebel against God's law. Perfect compliance to the law is no longer the basis of our justification but we seek to not break the law:
 
@@ -28904,7 +28932,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orgdc9f0b3)
+See: [33.4.1](#org0ccdb94)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -36802,6 +36830,19 @@ Any person who is experiencing tribulation/torment for wrongdoing would not be e
 The bad part of Sheol/Hades is for those who do evil deeds, possibly including believers who do not repent from sin:
 
 > **[Luke 16:22-31](https://www.biblegateway.com/passage/?search=Luke%2016%3A22-31&version=ESV)** - The poor man died and was carried by the angels to Abraham's side. The rich man also died and was buried, and in Hades, being in torment, he lifted up his eyes and saw Abraham far off and Lazarus at his side. And he called out, Father Abraham, have mercy on me, and send Lazarus to dip the end of his finger in water and cool my tongue, for I am in anguish in this flame. But Abraham said, Child, remember that you in your lifetime received your good things, and Lazarus in like manner bad things; but now he is comforted here, and you are in anguish. And besides all this, between us and you a great chasm has been fixed, in order that those who would pass from here to you may not be able, and none may cross from there to us. And he said, Then I beg you, father, to send him to my father's house— for I have five brothers—so that he may warn them, lest they also come into this place of torment. But Abraham said, They have Moses and the Prophets; let them hear them. And he said, No, father Abraham, but if someone goes to them from the dead, they will repent. He said to him, If they do not hear Moses and the Prophets, neither will they be convinced if someone should rise from the dead. (ESV)
+
+-   **[youtube.com: Judgment Is Coming For Those Who Distort Scripture @time: 2 min 5 sec](https://youtube.com/watch?v=t9nSnxy1N8I&t=125):** God is love. Everything he does
+    is out of love. So you have to look
+    at judgment in the light of love, and you
+    have to look at a person's long-term, not
+    short-term, benefit. Because God's always
+    interested in the eternal. He's put
+    eternity in our hearts, and when we look
+    at the length of this life, Arden, it is a
+    blip, a blip on the screen, compared to
+    eternity. And so God is always speaking
+    to us in regard to our eternal benefit,
+    not our temporary.
 
 > **[I John 2:19](https://www.biblegateway.com/passage/?search=1%20John%202%3A19&version=ESV)** - They went out from us, but they were not of us; for if they had been of us, they would have continued with us. But they went out, that it might become plain that they all are not of us. (ESV)
 
