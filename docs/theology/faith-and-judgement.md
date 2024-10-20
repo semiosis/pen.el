@@ -731,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org5a650f5) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgdb0f023) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -1033,7 +1033,29 @@ We have confidence when we keep His commandments, believing in the name of God's
 
 > **[I John 3:21-24](https://www.biblegateway.com/passage/?search=1%20John%203%3A21-24&version=ESV)** - Beloved, if our heart does not condemn us, **we have confidence before God**; and <ins>whatever we ask we receive from him</ins>, **because we keep his commandments and do what pleases him**. And this is his commandment, that we **believe in the name of his Son Jesus Christ and love one another**, just as he has commanded us. Whoever keeps his commandments abides in him, and he in them. And by this we know that he abides in us, by the Spirit whom he has given us. (ESV)
 
-It's obedience which leads to righteousness, even the righteousness of faith:
+When the apostles said that Jesus rose again, they meant that his physical body came back to life. The risen Jesus wasn't a phantom or ghost, but a breakfast-eating, flesh-and-bone, human being. This is gospel Truth:
+
+> **[Luke 24:36-43](https://www.biblegateway.com/passage/?search=Luke%2024%3A36-43&version=ESV)** - As they were talking about these things, Jesus himself stood among them, and said to them, Peace to you! But they were startled and frightened and thought they saw a spirit. And he said to them, Why are you troubled, and why do doubts arise in your hearts? See my hands and my feet, that it is I myself. Touch me, and see. For a spirit does not have flesh and bones as you see that I have. And when he had said this, he showed them his hands and his feet. And while they still disbelieved for joy and were marveling, he said to them, Have you anything here to eat? They gave him a piece of broiled fish, and he took it and ate before them. (ESV)
+
+> **[John 21:10-14](https://www.biblegateway.com/passage/?search=John%2021%3A10-14&version=ESV)** - Jesus said to them, Bring some of the fish that you have just caught. So Simon Peter went aboard and hauled the net ashore, full of large fish, 153 of them. And although there were so many, the net was not torn. Jesus said to them, Come and have breakfast. Now none of the disciples dared ask him, Who are you? They knew it was the Lord. Jesus came and took the bread and gave it to them, and so with the fish. This was now the third time that Jesus was revealed to the disciples after he was raised from the dead. (ESV)
+
+Holding the mystery of the faith (believing the Truth, believing Jesus, holding faith in Jesus, believing the gospel Truth and the facts about Jesus ) with a clear conscience, we serve Christ:
+
+> **[I Timothy 3:9-13](https://www.biblegateway.com/passage/?search=1%20Timothy%203%3A9-13&version=ESV)** - They must **hold the mystery of the faith with a clear conscience**. And let them also be tested first; then let them serve as deacons if they prove themselves blameless. Their wives likewise must be dignified, not slanderers, but sober-minded, **faithful in all things**. Let deacons each be the husband of one wife, managing their children and their own households well. For **those who serve well** as deacons **gain a good standing for themselves and also great confidence in the faith that is in Christ Jesus**. (ESV)
+
+God desires all people to be saved, **coming to a <ins>knowledge of the Truth</ins> (not without coming to a knowledge of the Truth), ceasing to do the will of the devil (not without ceasing to do the will of the devil)**:
+
+> **[I Timothy 2:3-6](https://www.biblegateway.com/passage/?search=1%20Timothy%202%3A3-6&version=ESV)** - This is good, and it is pleasing in the sight of God our Savior, who desires all people to be saved and to come to the knowledge of the truth. For there is one God, and there is one mediator between God and men, the man Christ Jesus, who gave himself as a ransom for all, which is the testimony given at the proper time. (ESV)
+
+We agape love even the people who are lost in the hope that God will grant them repentance to life, leading to a knowledge of the Truth, that they might cease to do the devil's will. Make no mistake, spreading dangerous heresy about Jesus Christ is the devil's will. So we hope that God grants the heretics repentance to come to a knowledge of the Truth, to be sanctified in the Truth. Jesus Christ is the Son of God and is the Word of God and is God's revelation of Himself to us and is the Bread of Life. Amen:
+
+> **[II Timothy 2:24-26](https://www.biblegateway.com/passage/?search=2%20Timothy%202%3A24-26&version=ESV)** - And the Lord's servant must not be quarrelsome but kind to everyone, able to teach, patiently enduring evil, correcting his opponents with gentleness. God may perhaps grant them repentance leading to a knowledge of the truth, and they may escape from the snare of the devil, after being captured by him to do his will. (ESV)
+
+God's mercy is ultimately not dependent on human will, but on God who has mercy to grant us repentance to Life:
+
+> **[Romans 9:15-16](https://www.biblegateway.com/passage/?search=Romans%209%3A15-16&version=ESV)** - For he says to Moses, I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion. So then it depends not on human will or exertion, but on God, who has mercy. (ESV)
+
+It's obedience which leads to righteousness, even the righteousness of faith. God grants us repentance:
 
 > **[Romans 6:16](https://www.biblegateway.com/passage/?search=Romans%206%3A16&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
@@ -7060,8 +7082,17 @@ The blessing was <ins>assured to him by God because of obedience</ins> (the obed
 
 Therefore, we should believe with an obedient heart, and obey to receive God's assurance.
 
-I believe that every one of Jesus' sheep have a believing, obedient heart, and Jesus knows
-who they are and no-one will be able to snatch them from Jesus' hand.
+I believe that every one of Jesus' sheep have a believing, obedient heart, and Jesus knows who they are and no-one will be able to snatch them from Jesus' hand.
+
+No man has the power to take the salvation of Jesus Christ away from another. No Pope has the power to take the salvation of Jesus Christ away from another, even by 'excommunication'. Amen.
+
+> **[John 10:28-30](https://www.biblegateway.com/passage/?search=John%2010%3A28-30&version=ESV)** - I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand. I and the Father are one. (ESV)
+
+> **[John 6:37-39](https://www.biblegateway.com/passage/?search=John%206%3A37-39&version=ESV)** - All that the Father gives me will come to me, and whoever comes to me I will never cast out. For I have come down from heaven, not to do my own will but the will of him who sent me. And this is the will of him who sent me, that I should lose nothing of all that he has given me, but raise it up on the last day. (ESV)
+
+> **[Galatians 1:10](https://www.biblegateway.com/passage/?search=Galatians%201%3A10&version=ESV)** - For am I now seeking the approval of man, or of God? Or am I trying to please man? If I were still trying to please man, I would not be a servant of Christ. (ESV)
+
+> **[Romans 14:22](https://www.biblegateway.com/passage/?search=Romans%2014%3A22&version=ESV)** - The faith that you have, keep between yourself and God. Blessed is the one who has no reason to pass judgment on himself for what he approves. (ESV)
 
 I personally believe that it's God's role to justify, not ours, and if we want personal assurance that we are saved, we
 must seek and follow Jesus, and arrive at the door.
@@ -9167,7 +9198,7 @@ This quite clearly shows that Jesus Christ is Almighty God:
     are falling away a little bit from our
     own roots and so we need reform.
 
-I affirm the Nicene creed wholeheartedly:
+I affirm the [Nicene creed](https://hastings.rcnz.org.nz/our-beliefs/the-nicene-creed/) wholeheartedly:
 
      1  We believe in one God,
      2        the Father almighty,
@@ -9205,6 +9236,32 @@ I affirm the Nicene creed wholeheartedly:
     34        We affirm one baptism for the forgiveness of sins.
     35        We look forward to the resurrection of the dead,
     36        and to life in the world to come. Amen.
+
+AMEN!!
+
+I affirm the [Apostles' creed](https://www.crcna.org/welcome/beliefs/creeds/apostles-creed) wholeheartedly:
+
+     1  I believe in God, the Father almighty,
+     2        creator of heaven and earth.
+     3  I believe in Jesus Christ, his only Son, our Lord,
+     4        who was conceived by the Holy Spirit
+     5        and born of the virgin Mary.
+     6        He suffered under Pontius Pilate,
+     7        was crucified, died, and was buried;
+     8        he descended to hell.
+     9        The third day he rose again from the dead.
+    10        He ascended to heaven
+    11        and is seated at the right hand of God the Father almighty.
+    12        From there he will come to judge the living and the dead.
+    13  
+    14  I believe in the Holy Spirit,
+    15        the holy catholic* church,
+    16        the communion of saints,
+    17        the forgiveness of sins,
+    18        the resurrection of the body,
+    19        and the life everlasting. Amen.
+    20  
+    21  *that is, the true Christian church of all times and all places
 
 AMEN!!
 
@@ -12282,13 +12339,39 @@ Faith is a mixture of belief and obedience.
 
 > **[I Peter 2:21](https://www.biblegateway.com/passage/?search=1%20Peter%202%3A21&version=ESV)** - For to this you have been called, because Christ also suffered for you, <ins>leaving you an example, so that you might follow in his steps.</ins> (ESV)
 
+Jesus is the Way, the Truth and the Life - the Only Way to the Father. Amen.
+
+Jesus is the bread of Life.
+
+We focus on Jesus, keep His words, believe His words, pratice His commandments, imitate Him, etc.
+reject falsehood, accept the Truth and the Truth is in Jesus. We do this and Jesus saves us.
+
+-   **[youtube.com: The Way, the Truth, & the Life: Knowing Christ - The I AM Sayings of Jesus with R.C. Sproul](https://www.youtube.com/watch?v=P7H0B1wmlRY):** There is such a unity here in
+    the Godhead between the Father and the Son that if
+    you see the Son, you see the Father. If you know the Son, you
+    know the Father. And conversely, if you know
+    the Father, you know the Son. This was the point
+    of dispute that Jesus had with the Pharisees
+    who claimed to be disciples of God the Father but
+    who rejected Jesus. And He said to them, look,
+    if you know the Father, you have to believe
+    in the Son, because the Father bears witness
+    to Me. And so the way to the Father is through the
+    Son. The way to see the Father is to see the Son.
+    The way to get to the Father is to go through
+    the Son.
+
+> **[John 14:1-7](https://www.biblegateway.com/passage/?search=John%2014%3A1-7&version=ESV)** - Let not your hearts be troubled. **Believe in God; believe also in me**. In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you? And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also. And **you know the way to where I am going**. Thomas said to him, Lord, we do not know where you are going. How can we know the way? **Jesus said to him, I am the way, and the truth, and the life. No one comes to the Father except through me**. If you had known me, you would have known my Father also. From now on you do know him and have seen him. (ESV)
+
+> **[John 8:48-59](https://www.biblegateway.com/passage/?search=John%208%3A48-59&version=ESV)** - The Jews answered him, Are we not right in saying that you are a Samaritan and have a demon? Jesus answered, I do not have a demon, but I honor my Father, and you dishonor me. Yet I do not seek my own glory; there is One who seeks it, and he is the judge. Truly, truly, I say to you, if anyone keeps my word, he will never see death. The Jews said to him, Now we know that you have a demon! Abraham died, as did the prophets, yet you say, If anyone keeps my word, he will never taste death. Are you greater than our father Abraham, who died? And the prophets died! Who do you make yourself out to be? Jesus answered, If I glorify myself, my glory is nothing. It is my Father who glorifies me, of whom you say, He is our God. But you have not known him. I know him. If I were to say that I do not know him, I would be a liar like you, but I do know him and I keep his word. Your father Abraham rejoiced that he would see my day. He saw it and was glad. So the Jews said to him, You are not yet fifty years old, and have you seen Abraham? Jesus said to them, Truly, truly, I say to you, **before Abraham was, I am**. So they picked up stones to throw at him, but Jesus hid himself and went out of the temple. (ESV)
+
 Obedience to God is an act of faith: (**Hebrews 11**). On the flip side, disobedience flows from unbelief/faithlessness:
 
 > **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - though formerly I was a blasphemer, persecutor, and insolent opponent. But I received mercy because I had acted ignorantly in unbelief, (ESV)
 
 Acting in accordance with faithlessness is sinful behaviour:
 
-> **[1Ti 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - even though I was formerly a blasphemer and a persecutor and a violent aggressor. Yet I was shown mercy because I **acted** ([G4160 poieo](https://www.blueletterbible.org/lexicon/g4160/kjv/tr/0-1/)) **ignorantly** (G50 agnoeo) in **unbelief** (G570 apaistia, faithlessness, disobedience);
+> **[I Timothy 1:13](https://www.biblegateway.com/passage/?search=1%20Timothy%201%3A13&version=ESV)** - even though I was formerly a blasphemer and a persecutor and a violent aggressor. Yet I was shown mercy because I **acted** [(G4160 poieo)](https://www.blueletterbible.org/lexicon/g4160/kjv/tr/0-1/) **ignorantly** [(G50 agnoeo)](https://www.blueletterbible.org/lexicon/g50/kjv/tr/0-1/) in **unbelief** [(G570 apaistia i.e. faithlessness, disobedience)](G570); (NASB)
 
     1  :  570  apaistia  ap-is-tee'-ah
     2  
@@ -14562,7 +14645,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org0ccdb94)
+See: [33.4.1](#orge344aa7)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -18164,6 +18247,33 @@ Greet those who love us in the faith:
 > 
 > -   <https://web.archive.org/web/20220503030344/https://mullikine.github.io/posts/astral-projection-pt-2/>
 > -   **I John 5:20** - And we know that the Son of God has come and has given us understanding, so that we may know him who is true; and we are in him who is true, in his Son Jesus Christ. He is the true God and eternal life. (ESV)
+
+
+### False adversaries and the real adversary
+
+I've been getting dreams and visions of my old friends
+portraying several of them to be my adversaries, as if I ever had any problem with them, which I didn't. I got another one even today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-20 Sun&gt; </span></span> of someone I always considered to be a friend, but before I was born-again a spirit of murder working through her Muslim friend got her to yell at me saying it would string me up and hang me on the balcony - definitely not a spirit that comes from God.
+
+I've noticed that before I was born-again, the devil was causing this type of thing to happen where I never held grudges against
+certain people, but other people began saying things like, "I have to take X person's side." But to me there was never a side.
+After I've been born-again, I've seen similar stuff in dreams and visions.
+But what is really going on, I believe is that the devil, Satan, **'the'** adversary, **'our'** adversary has been doing this.
+
+> **[I Peter 5:8](https://www.biblegateway.com/passage/?search=1%20Peter%205%3A8&version=ESV)** - Be sober-minded; be watchful. **Your adversary the devil** prowls around like a roaring lion, seeking someone to devour. (ESV)
+
+We overcome the enemy. Jesus Christ is from the beginning:
+
+> **[I John 2:14](https://www.biblegateway.com/passage/?search=1%20John%202%3A14&version=ESV)** - I write to you, fathers, because you **know him who is from the beginning**. I write to you, young men, because you are strong, and the word of God abides in you, and you have overcome the evil one. (ESV)
+
+The JWs have to really believe this if they want to overcome the enemy. Jesus is the Word of God. Jesus is God. Jesus is the Son of God. Father God is also God:
+
+> **[John 1:1-5](https://www.biblegateway.com/passage/?search=John%201%3A1-5&version=ESV)** - **In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made.** In him was life, and the life was the light of men. The light shines in the darkness, and the darkness has not overcome it. (ESV)
+
+Holy Spirit is God. Not merely an active force:
+
+> **[Genesis 1:1-2](https://www.biblegateway.com/passage/?search=Genesis%201%3A1-2&version=ESV)** - In the beginning, God created the heavens and the earth. The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters. (ESV)
+
+> **[Revelation of John 12:11](https://www.biblegateway.com/passage/?search=Revelation%2012%3A11&version=ESV)** - And they have conquered him by the blood of the Lamb and by the word of their testimony, for they loved not their lives even unto death. (ESV)
 
 
 ### Jesus is giving us perspective.
@@ -28932,7 +29042,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org0ccdb94)
+See: [33.4.1](#orge344aa7)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
