@@ -1478,7 +1478,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (word
           ;; This isn't the main bottleneck
           (if info
-              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines (shut-up-buffer-string info)))))))
     word))
 
 (defun bible-term-show-word (term_code)
@@ -1496,7 +1496,7 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
          (word
           ;; This isn't the main bottleneck
           (if info
-              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines info))))))
+              (snc "sed 's/ \\+/ /g' | cut -d ' ' -f 3" (car (str2lines (shut-up-buffer-string info)))))))
     word))
 
 ;; This speeds it up a lot
