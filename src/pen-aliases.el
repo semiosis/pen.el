@@ -53,4 +53,6 @@
       (defalias 'list2str 'pen-list2str)
       (defalias 'pen-haskell-fill-hole 'pen-haskell-hoogle-type)))
 
+(defalias 's-lowercase 's-downcase)
+
 (provide 'pen-aliases)

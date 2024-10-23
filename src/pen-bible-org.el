@@ -5,6 +5,12 @@
   "Run `bible' with QUERY as argument."
   (bible-mode-lookup query))
 
+;; TODO Run a loop over the various modules
+;; (org-add-link-type "nasb" 'follow-bible-link-nasb)
+;; (defun follow-bible-link-nasb (query)
+;;   "Run `bible' with QUERY as argument."
+;;   (bible-mode-lookup query "nasb"))
+
 (org-add-link-type "strongs" 'follow-strongs-link)
 (defun follow-strongs-link (query)
   "Run `strongs' with QUERY as argument."

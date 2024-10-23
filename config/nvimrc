@@ -962,6 +962,8 @@ fun! GeneralSyntax()
     syntax match googleblue '\c\(\<goo\)\@<=g\(le\)\@='
     syntax match googleblue '\<g\([rl]\>\)\@='
     syntax match googleblue '\<f\(l\>\)\@='
+    hi ytred cterm=NONE ctermfg=212 ctermbg=124
+    syntax match ytred '\<youtube\>'
     hi googlered cterm=NONE ctermfg=197 ctermbg=255
     syntax match googlered '\c\(\<g\)\@<=o\(ogle\)\@='
     syntax match googlered '\c\(\<googl\)\@<=e[ry]\?'
@@ -975,7 +977,6 @@ fun! GeneralSyntax()
     syntax match googlered '\<wk\>'
     syntax match googlered '\<gdc\>'
     syntax match googlered '\<googling\>'
-    syntax match googlered '\<youtube\>'
     hi tensorflow cterm=NONE ctermfg=202 ctermbg=255
     syntax match tensorflow '\c\<tensorflow\>'
     syntax match tensorflow '\c\<tf\>'

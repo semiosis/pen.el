@@ -596,6 +596,10 @@
        ;; (bible-search-phrase (pen-selection))
        (bible-open-version ,module-name))))
 
+
+;; TODO Loop over:
+;; bible-module-map-names
+
 (defun-bible-open-version "NASB" nasb)
 (defun-bible-open-version "KJV" kjv)
 (defun-bible-open-version "engbsb2020eb" bsb)
@@ -1338,16 +1342,41 @@ produced by `bible-mode-exec-diatheke'. Outputs text to active buffer with prope
 (defun fz-bible-version ()
   (completing-read "Module: " (bible-mode--list-biblical-modules)))
 
+(defun fz-bible-version-shorten ()
+  (bible-shorten-module-name (completing-read "Module: " (bible-mode--list-biblical-modules))))
+
+(defun bible-shorten-module-name (module &optional nilfailure)
+  (s-lowercase
+   (cl-loop for tp in bible-module-map-names
+            until ;; (member module (cdr tp))
+            (member-similar module tp)
+            ;; (member module tp)
+            finally return
+            (if ;; (member module (cdr tp))
+                (member-similar module tp)
+                ;; (member module tp)
+                (cadr tp)
+              (if nilfailure
+                  nil
+                module)))))
+
+(defset bible-module-map-names
+  '(("NASB" "nasb")
+    ("KJV" "kjv")
+    ("engbsb2020eb" "bsb")
+    ("RLT" "rlt")
+    ("ESV" "esv")))
+
 (defun bible-mode-verse-other-version (version)
   (interactive (list (fz-bible-version)))
   (cond
    ((>= (prefix-numeric-value current-prefix-arg) 16) (let ((prefix-numeric-value nil)
-                                                           (current-prefix-arg nil))
-                                                       (let ((ver (sor version))
-                                                             (ref (sor (bible-mode-get-link))))
-                                                         (if (and version
-                                                                  ref)
-                                                             (sps (concat "ebible -m " version " " ref " | cvs"))))))
+                                                            (current-prefix-arg nil))
+                                                        (let ((ver (sor version))
+                                                              (ref (sor (bible-mode-get-link))))
+                                                          (if (and version
+                                                                   ref)
+                                                              (sps (concat "ebible -m " version " " ref " | cvs"))))))
    ((>= (prefix-numeric-value current-prefix-arg) 4) (let ((prefix-numeric-value nil)
                                                            (current-prefix-arg nil))
                                                        (let ((ver (sor version))
