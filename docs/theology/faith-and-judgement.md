@@ -731,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org37251f6) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfeebb44) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -786,9 +786,19 @@ When we are born of God, I believe we have willed/done something which is in God
 > **[John 1:12-14](https://www.biblegateway.com/passage/?search=John%201%3A12-14&version=ESV)** - But to all who did receive him, who believed in his name, he gave the *right* to become **children of God**, who were <ins>born, not of blood nor of the will of the flesh nor of the will of man</ins>, **but of God**. And **the Word became flesh and dwelt among us**, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. (ESV)
 
 
+## I'm non-denominational
+
+I do not consider myself to be a part of any particular denomination;
+I have an affinity to churches which have strong Biblical teaching, and a focus on applying Jesus' commandments.
+
+-   **[Saint Justin Martyr: Fragments of the Lost Work of Justin on the Resurrection {Roberts-Donaldson}](https://www.earlychristianwritings.com/text/justinmartyr-resurrection.html):** The word of truth is free, and <ins>carries its own authority, **disdaining to fall under any skilful argument, or to endure the logical scrutiny of its hearers**. But it would be **believed for its own nobility**, and for the confidence due to Him who sends it</ins>.
+
+> **[Romans 14:22](https://www.biblegateway.com/passage/?search=Romans%2014%3A22&version=ESV)** - The faith that you have, keep between yourself and God. Blessed is the one who has no reason to pass judgment on himself for what he approves. (ESV)
+
+
 ## 1689 Baptist confession of faith
 
--   <https://www.the1689confession.com/>
+-   **Read:** <https://www.the1689confession.com/>
 
 
 ### Chapter 1
@@ -1188,7 +1198,7 @@ And the obedience doesn't end. We continue to be sanctified through faith. We ar
 
 -   **[youtube.com: John Lennox: How do I choose which religion to follow? @time: 8 min 12 sec](https://youtube.com/watch?v=xe9eg2G3tCk&t=492):** You've heard about my wife. Well, over fifty years ago, I saw this vision in Cambridge, so I decided I'd like to marry her. So I came to her one day and I had a little present wrapped up for her. It was a cookbook. So I said, "I'd like to marry you, Sally. Now the condition would be this: Let's look at page 147 - it's apple cake, and here are the laws for making apple cake. Thou shalt take some what's flour, thou shall take some what sugar, and there you are. Now, here's the way it's gonna be: If you keep these laws for the next forty years, I think about accepting you. If you don't, you can go back to your mother."
     
-    But, look why are you laughing? That is what many of you sitting here think about God. And you would never insult a fellow human being by basing a relationship of merit. You wouldn't. And so my marriage, it's been good, why? Because my wife is not cooking in order to gain my acceptance. She likes cooking because she's got it. And the wonderful thing about Christianity is precisely that. It's not religion in that sense, it's a relationship.
+    But, look why are you laughing? That is what many of you sitting here think about God. And you would never insult a fellow human being by basing a relationship on merit. You wouldn't. And so my marriage, it's been good, why? Because my wife is not cooking in order to gain my acceptance. She likes cooking because she's got it. And the wonderful thing about Christianity is precisely that. It's not religion in that sense, it's a relationship.
 
 Amen to that.
 
@@ -1666,7 +1676,7 @@ So I have a joy that's in God, yes, but it does not mean that on a bad day (when
 I'm fully convinced that Job still loved God, and the "joy" of God was most likely still deep in Job's heart even though he felt bitter.
 That's how I feel sometimes. I love Jesus but I tell him I'm angry at him. Perhaps a bit like Martin Luther's psychosis:
 
--   **[youtube.com: The Insanity of Luther: The Holiness of God with R.C. Sproul](https://www.youtube.com/watch?v=2StKxMKWfbU&t=434s):** He had such a fear of the wrath
+-   **[youtube.com: The Insanity of Luther: The Holiness of God with R.C. Sproul](https://youtu.be/2StKxMKWfbU?t=359):** He had such a fear of the wrath
     of God that early on in his ministry
     somebody put this question to him:
     "Brother Martin, do you love God?" You
@@ -14679,7 +14689,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#orge3108ed)
+See: [33.4.1](#org8c30716)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -15120,7 +15130,7 @@ We're not being justified by our works - we've already been redeemed, but we do 
 
 -   **[youtube.com: John Lennox: How do I choose which religion to follow? @time: 8 min 12 sec](https://youtube.com/watch?v=xe9eg2G3tCk&t=492):** You've heard about my wife. Well, over fifty years ago, I saw this vision in Cambridge, so I decided I'd like to marry her. So I came to her one day and I had a little present wrapped up for her. It was a cookbook. So I said, "I'd like to marry you, Sally. Now the condition would be this: Let's look at page 147 - it's apple cake, and here are the laws for making apple cake. Thou shalt take some what's flour, thou shall take some what sugar, and there you are. Now, here's the way it's gonna be: If you keep these laws for the next forty years, I think about accepting you. If you don't, you can go back to your mother."
     
-    But, look why are you laughing? That is what many of you sitting here think about God. And you would never insult a fellow human being by basing a relationship of merit. You wouldn't. And so my marriage, it's been good, why? Because my wife is not cooking in order to gain my acceptance. She likes cooking because she's got it. And the wonderful thing about Christianity is precisely that. It's not religion in that sense, it's a relationship.
+    But, look why are you laughing? That is what many of you sitting here think about God. And you would never insult a fellow human being by basing a relationship on merit. You wouldn't. And so my marriage, it's been good, why? Because my wife is not cooking in order to gain my acceptance. She likes cooking because she's got it. And the wonderful thing about Christianity is precisely that. It's not religion in that sense, it's a relationship.
 
 Christianity is a relationship, like a marriage:
 
@@ -29082,7 +29092,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#orge3108ed)
+See: [33.4.1](#org8c30716)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -33268,11 +33278,11 @@ The man had faith - faith enters into the truth / receives from God:
 
 > **[Acts 3:5-8](https://www.biblegateway.com/passage/?search=Acts%203%3A5-8&version=ESV)** - And he began to give them his attention, <ins>expecting to receive something from them</ins>. But Peter said, “I do not possess silver and gold, but what I do have I give to you: In the name of Jesus Christ the Nazarene&#x2013; walk!” And seizing him by the right hand, he raised him up; and immediately his feet and his ankles were strengthened. With a leap he stood upright and began to walk; and he entered the temple with them, walking and leaping and praising God.
 
-Jesus made the man walk through Jesus' power and Jesus' holiness:
+Through Peter, Jesus made the man walk through Jesus' own power and Jesus' holiness:
 
-> **[Acts 3:11-12](https://www.biblegateway.com/passage/?search=Acts%203%3A11-12&version=ESV)** - While he was clinging to Peter and John, all the people ran together to them at the so-called portico of Solomon, full of amazement. But when Peter saw this, he replied to the people, “Men of Israel, why are you amazed at this, or <ins>why do you gaze at us, as if by our own power or piety we had made him walk</ins>?
+> **[Acts 3:6-7](https://www.biblegateway.com/passage/?search=Acts%203%3A6-7&version=ESV),11-12** - But Peter said, I have no silver and gold, but what I do have I give to you. In the name of Jesus Christ of Nazareth, rise up and walk! And he took him by the right hand and raised him up, and immediately his feet and ankles were made strong. While he clung to Peter and John, all the people ran together to them in the portico called Solomon's, astounded. And when Peter saw it he addressed the people: Men of Israel, <ins>why do you wonder at this, or why do you stare at us, as though by our own power or piety we have made him walk?</ins> (ESV)
 
-The faith which He had in Jesus' name is what healed him:
+The faith which comes through Jesus which the man had in Jesus' name is what healed the man:
 
 > **[Acts 3:16](https://www.biblegateway.com/passage/?search=Acts%203%3A16&version=ESV)** - And on the basis of faith in His name, it is <ins>the name of Jesus which has strengthened this man whom you see and know</ins>; and <ins>the faith which comes through Him has given him this perfect health</ins> in the presence of you all.
 
@@ -35158,8 +35168,44 @@ I'm no longer interested in AI. I know God is real and is taking care of me.
 I realise what has happened regarding me and relationships is messy and the need to hold no grudge going forward.
 I offer it to anyone.
 
-Life doesn't feel like the kingdom of God to me currently because that would involve having this trifecta of **righteousness**, **peace** and **joy** in the Holy Spirit, and I have felt like I have had my blessings stolen from me by the enemy,
-but God is the only one who can solve this for me, but I do have peace and righteousness in the Holy Spirit, and baseline joy which is derived from a good conscience with God.
+Life doesn't feel like the kingdom of God to me currently because that would involve having this trifecta of **righteousness**, **peace** and **joy** in the Holy Spirit, and I have felt like I have had my blessings stolen from me by the enemy, but God is the only one who can solve this for me, but I do have peace and righteousness in the Holy Spirit, and baseline joy which is derived from a good conscience with God.
+
+I was quite depressed today <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-23 Wed&gt;</span></span>. God help me. I wasn't even jealous. What happened flattened me and shattered me spiritually. God help me, please.
+
+-   **[youtube.com: WHO IS GOD? {Nahum 1:2-7} By John MacArthur @time: 20 min 48 sec](https://youtube.com/watch?v=pJ-DuTRtvvc&t=1248):** And so God is jealous for his glory.
+    God is also jealous for his love.
+    Jealousy really only belongs to those who love.
+    Husband and a wife - jealousy is possible
+    A girlfriend and a boyfriend - jealousy is possible.
+    Jealousy fits into a love relationship, and so it does with God.
+    God is jealous because he loves.
+
+-   **[youtube.com: WHO IS GOD? {Nahum 1:2-7} By John MacArthur @time: 21 min 34 sec](https://youtube.com/watch?v=pJ-DuTRtvvc&t=1294):** Hosea, you remember Hosea?
+    Dear old Hosea, the prophet.
+    God gave him really a wonderful
+    illustration to live in his own life.
+    And God told him to marry a woman,
+    Gomer, who turned out to be a prostitute.
+    He told him to marry this woman Gomer
+    who turned out to be a prostitute, and
+    God then said this is a graphic
+    illustration of what Israel has done to me.
+    Israel has been an unfaithful wife and
+    God was jealous over Israel because
+    Israel was his love.
+    And God's heart was grieved.
+    God's heart was indeed broken.
+    <ins>God gets jealous when those he loves are stolen from him by somebody else.</ins>
+    
+    And so God's jealousy is not only the
+    jealousy of honor, but it's the jealousy of love.
+    
+    All through the old
+    testament God says I'm jealous for my
+    people, I'm jealous for my land, I'm
+    jealous for those things that are mine.
+    When god sets his affection on something
+    and something robs him of that, he's jealous.
 
 At the end of the day, it's good conscience with God I am after and sanctification:
 
@@ -36879,6 +36925,14 @@ Some of the confusion has arisen from such passages as [Psalm 16:10-11](https://
 
 ### The dead hearing the gospel - was it only a one time thing?
 
+Though not raised, the dead may hear the voice of the son of God, the gospel, and live in the spirit the way God does.
+
+> **[I Corinthians 15:29](https://www.biblegateway.com/passage/?search=1%20Corinthians%2015%3A29&version=ESV)** - Otherwise, what do people mean by being baptized on behalf of the dead? If the dead are not raised at all, why are people baptized on their behalf? (ESV)
+
+> **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming, and is now here, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)
+
+> **[I Peter 4:6](https://www.biblegateway.com/passage/?search=1%20Peter%204%3A6&version=ESV)** - For the gospel has for this purpose been preached even to those who are dead, that though they are judged in the flesh as men, they may live in the spirit according to the will of God. (NASB)
+
 I think it's important to trust Jesus in this life because no guarantees with hearing the gospel in the place of the dead. Who knows, though, right? Because perhaps a believer who dies in Christ could preach the gospel to Hades and bounce back up as Jesus did.
 
 > **[John 5:25](https://www.biblegateway.com/passage/?search=John%205%3A25&version=ESV)** - Truly, truly, I say to you, an hour is coming and now is, when the dead will hear the voice of the Son of God, and those who hear will live. (ESV)
@@ -37344,6 +37398,35 @@ Please, God, continue to sanctify us.
 ## Gospel
 
 -   **Amen:** [youtube.com: The Holy Spirit took over my preaching in Las Vegas and left me in awe and trembling](https://www.youtube.com/watch?v=RgAjAwDACMU)
+
+
+### A universal opportunity to accept Jesus
+
+I believe all people are given an opportunity at some stage to believe in Jesus. How God makes that happen is God's business.
+
+> **[Revelation of John 7:9](https://www.biblegateway.com/passage/?search=Revelation%207%3A9&version=ESV)** - After this I looked, and behold, a great multitude that no one could number, from **every nation, from all tribes and peoples and languages**, standing before the throne and before the Lamb, clothed in white robes, with palm branches in their hands, (ESV)
+
+-   **Song:** [youtube.com: Every Nation Tribe And Tongue Music Video 细罗音乐小组 Cada Nacion, Cada Lengua Adoracion](https://www.youtube.com/watch?v=OKVxyBJ14qE)
+
+People still have to put their trust in Jesus when the testimony of Jesus comes their way / when Jesus is made apparent to them.
+
+> **[John 12:31-32](https://www.biblegateway.com/passage/?search=John%2012%3A31-32&version=ESV)** - Now is the judgment of this world; now will the ruler of this world be cast out. And I, when I am lifted up from the earth, will draw all people to myself. (ESV)
+
+> **[John 6:40](https://www.biblegateway.com/passage/?search=John%206%3A40&version=ESV)** - For this is the will of my Father, that everyone who looks on the Son and believes in him should have eternal life, and I will raise him up on the last day. (ESV)
+
+> **[John 8:47](https://www.biblegateway.com/passage/?search=John%208%3A47&version=ESV)** - Whoever is of God hears the words of God. The reason why you do not hear them is that you are not of God. (ESV)
+
+But I have confidence that those who are 'of God' will naturally hear Jesus' words and they still have to come to believe/trust in Him:
+
+> **[I John 3:10](https://www.biblegateway.com/passage/?search=1%20John%203%3A10&version=ESV)** - By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. (ESV)
+
+> **[John 8:39-42](https://www.biblegateway.com/passage/?search=John%208%3A39-42&version=ESV)** - They answered him, Abraham is our father. Jesus said to them, **If you were Abraham's children, you would be doing what Abraham did**, but now you seek to kill me, a man who has <ins>told you the truth that I heard from God</ins>. This is not what Abraham did. You are doing what your father did. They said to him, We were not born of sexual immorality. We have one Father—even God. <ins>Jesus said to them, **If God were your Father, you would love me**, for I came from God and I am here. I came not of my own accord, but he sent me.</ins> (ESV)
+
+We still need to believe to avoid condemnation:
+
+> **[Mark 16:16](https://www.biblegateway.com/passage/?search=Mark%2016%3A16&version=ESV)** - Whoever believes and is baptized will be saved, but **whoever does not believe will be condemned**. (ESV)
+
+> **[I John 5:12](https://www.biblegateway.com/passage/?search=1%20John%205%3A12&version=ESV)** - Whoever has the Son has life; whoever does not have the Son of God does not have life. (ESV)
 
 
 ## Prayer of thanks
