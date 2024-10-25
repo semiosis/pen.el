@@ -731,7 +731,7 @@ AMEN!!
 
 # Confessions of faith
 
-I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#orgfeebb44) and I want my theology to be 'raw and real', and always Scriptural.
+I plan on adhering to what the Word of God says, even if it offends other Christians when it comes to contentious topics as the [order of salvation](https://en.wikipedia.org/wiki/Ordo_salutis), or [salvation by obedience](#org07f3cb0) and I want my theology to be 'raw and real', and always Scriptural.
 
 The gospel in a nutshell:
 
@@ -778,6 +778,15 @@ The general order of salvation from what I can dilvulge from **Acts 26** and **A
 God is the justifier, not us:
 
 > **[Romans 3:26](https://www.biblegateway.com/passage/?search=Romans%203%3A26&version=ESV)** - It was to show his righteousness at the present time, so that he might be just **and** the ***justifier*** of the one who has faith in Jesus. (ESV)
+
+God raised Jesus up on the cross of Calvary and word got around with the preaching of gospel the Kingdom of God, so that those who trust in Him and believe Him, putting their trust in Him for who He is (the Son of God, the Messiah, our Lord and Saviour) and what He taught might be saved from the wrath of God and have eternal life.
+
+I also take [John 3:14](https://www.biblegateway.com/passage/?search=John%203%3A14&version=ESV) in the sense that in a way God still does this to remind us. For example, with the popular TV series the Chosen, I feel like God has reminded the world about Jesus.
+
+> **[John 3:14-19](https://www.biblegateway.com/passage/?search=John%203%3A14-19&version=ESV)** - And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up: That whosoever believeth in him should not perish, but have eternal life. For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life. For God sent not his Son into the world to condemn the world; but that the world through him might be saved. He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God. And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil. (KJV)
+
+Jesus is brought into the spotlight.
+Those who would put their trust in Jesus, believing in Him are not condemned.
 
 I really like John MacArthur's church's [doctrinal statement](https://www.gracechurch.org/about/doctrinal-statement). I just think it's helpful and quite accurate, but I may have my disagreements.
 
@@ -2000,6 +2009,7 @@ I believe that among other things I have had to fight against, reject or repent 
 -   a spirit of Hinduism
 -   a spirit of Gnosticism
 -   a spirit of New Age
+    -   [youtube.com: Demonically Oppressed to Divinely Saved, New Age to Jesus Testimony](https://www.youtube.com/watch?v=kM30ZkbKsm0)
 
 I have also had to:
 
@@ -2840,7 +2850,7 @@ And begin born-again of the Spirit and receiving the Holy Spirit helps us to obe
 > **[John 3:3-5](https://www.biblegateway.com/passage/?search=John%203%3A3-5&version=ESV)** - Jesus answered him, Truly, truly, I say to you, unless one is born again he cannot see the kingdom of God. Nicodemus said to him, How can a man be born when he is old?  Can he enter a second time into his mother's womb and be born? Jesus answered, Truly, truly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. (ESV)
 
 
-### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
+### The Holy Spirit may teach us even before He is *in* us, by helping us as He dwells *with* us
 
 > **[John 14:16-21](https://www.biblegateway.com/passage/?search=John%2014%3A16-21&version=ESV)** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
@@ -5188,7 +5198,7 @@ Churches should be teaching Jesus' teachings, and we should be teaching each oth
 > **[Luke 12:42-49](https://www.biblegateway.com/passage/?search=Luke%2012%3A42-49&version=ESV)** - And the Lord said, Who then is the **faithful and wise manager**, whom his master will set over his household, **to give them their portion of food at the proper time?** Blessed is that servant whom his master will find so doing when he comes. Truly, I say to you, he will set him over all his possessions. But if that servant says to himself, My master is delayed in coming, and begins to beat the male and female servants, and to eat and drink and get drunk, the master of that servant will come on a day when he does not expect him and at an hour he does not know, and will cut him in pieces and put him with the unfaithful. And that servant who knew his master's will but did not get ready or act according to his will, will receive a severe beating. But the one who did not know, and did what deserved a beating, will receive a light beating. Everyone to whom much was given, of him much will be required, and from him to whom they entrusted much, they will demand the more. I came to cast fire on the earth, and would that it were already kindled! (ESV)
 
 
-### God definitely disciplines us even if we love Jesus - **every** son he receives
+### God definitely disciplines us even if we love Jesus - *every* son he receives
 
 The ones who love Jesus, keep His teachings:
 
@@ -5890,7 +5900,7 @@ This is nothing short of claiming to be equal with God:
 Jesus is the judge of all history, of the entire world, of each person – to Him every knee will bow. Just as Buckingham Palace is the residence of the Queen, so the one who reigns sovereignly from heaven can be none other than the God of gods.
 
 
-## Our obedient faith should be penitent, and should be without partiality. We **aim** for perfection, to be conformed to Christ's image
+## Our obedient faith should be penitent, and should be without partiality. We *aim* for perfection, to be conformed to Christ's image
 
 > John Piper - "Faith is the baking our **hope on the mercy of God**."
 
@@ -7451,7 +7461,7 @@ The ones who are slaves to righteousness, following Jesus Christ, go to eternal 
 > **[Matthew 25:46](https://www.biblegateway.com/passage/?search=Matthew%2025%3A46&version=ESV)** - And these will go away into eternal punishment, but the righteous into eternal life.
 
 
-### Believing Jesus, we have **the right** to become a child of God
+### Believing Jesus, we have *the right* to become a child of God
 
 > **[John 1:12](https://www.biblegateway.com/passage/?search=John%201%3A12&version=ESV)** - But to all who did receive him, who believed in his name, he gave the right to become children of God, (ESV)
 
@@ -8407,7 +8417,7 @@ So to receive the Holy Spirit:
 ## The work of the Holy Spirit
 
 
-### The Holy Spirit may teach us even before He is **in** us, by helping us as He dwells **with** us
+### The Holy Spirit may teach us even before He is *in* us, by helping us as He dwells *with* us
 
 > **[John 14:16-21](https://www.biblegateway.com/passage/?search=John%2014%3A16-21&version=ESV)** - And I will ask the Father, and he will give you another **Helper**, to be with you forever, even the **Spirit of truth**, whom the world cannot receive, because it neither sees him nor knows him. You know him, for <ins>he dwells with you</ins> and <ins>will be **in** you</ins>. I will not leave you as orphans; I will come to you. Yet a little while and the world will see me no more, but you will see me. Because I live, you also will live. In that day you will know that I am in my Father, and you in me, and I in you. Whoever has my commandments and keeps them, he it is who loves me. And he who loves me will be loved by my Father, and I will love him and manifest myself to him. (ESV)
 
@@ -9086,7 +9096,7 @@ Jesus is also extremely merciful to the woman who was brought before Jesus:
 > **[John 8:10-11](https://www.biblegateway.com/passage/?search=John%208%3A10-11&version=ESV)** - Jesus stood up and said to her, Woman, where are they? Has no one condemned you? She said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more. (ESV)
 
 
-### Jesus Christ **is** the word of life, Jesus Christ **is** the eternal life
+### Jesus Christ *is* the word of life, Jesus Christ *is* the eternal life
 
 > **[I John 1:1-3](https://www.biblegateway.com/passage/?search=1%20John%201%3A1-3&version=ESV)** - That which was from the beginning, which we have heard, which we have seen with our eyes, which we looked upon and have touched with our hands, concerning the word of life— the life was made manifest, and we have seen it, and testify to it and proclaim to you the eternal life, which was with the Father and was made manifest to us— that which we have seen and heard we proclaim also to you, so that you too may have fellowship with us; and indeed our fellowship is with the Father and with his Son Jesus Christ. (ESV)
 
@@ -10441,7 +10451,7 @@ We must obey! This obedience is being led by the Spirit.
 
     > **[Galatians 6:7-8](https://www.biblegateway.com/passage/?search=Galatians%206%3A7-8&version=ESV)** - Do not be deceived: God is not mocked, for whatever one sows, that will he also reap. For the one who sows to his own flesh will from the flesh reap corruption, but the one who sows to the Spirit will from the Spirit reap eternal life. (ESV)
 
-3.  We **must** be servants of Christ
+3.  We *must* be servants of Christ
 
     Also, from the heart:
     
@@ -10561,7 +10571,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **[Luke 9:23-26](https://www.biblegateway.com/passage/?search=Luke%209%3A23-26&version=ESV)** - And he said to all, If anyone would come after me, let him deny himself and take up his cross daily and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will save it. For what does it profit a man if he gains the whole world and loses or forfeits himself? For whoever is ashamed of me and of my words, of him will the Son of Man be ashamed when he comes in his glory and the glory of the Father and of the holy angels. (ESV)
 
-7.  We should clean ourselves with the aid of the Word and **the Holy Spirit**
+7.  We should clean ourselves with the aid of the Word and *the Holy Spirit*
 
     While we may have been justified, we still want to stop willfully sinning so that God can make better use of us:
     
@@ -10603,7 +10613,7 @@ We must obey! This obedience is being led by the Spirit.
     
     > **[Psalms 143:10](https://www.biblegateway.com/passage/?search=Psalms%20143%3A10&version=ESV)** - <ins>Teach me to do your will,</ins> for you are my God! **Let your good Spirit lead me** on level ground! (ESV)
 
-8.  We **must** clean ourselves up with God's help
+8.  We *must* clean ourselves up with God's help
 
     > **[Daniel 12:9-10](https://www.biblegateway.com/passage/?search=Daniel%2012%3A9-10&version=ESV)** - He said, Go your way, Daniel, for the words are shut up and sealed until the time of the end.  Many shall purify themselves and make themselves white and be refined, but the wicked shall act wickedly. And none of the wicked shall understand, but those who are wise shall understand.
     
@@ -11432,7 +11442,7 @@ Part of the will of Father God is that we repent from sin:
 > **[I Thessalonians 4:3-7](https://www.biblegateway.com/passage/?search=1%20Thessalonians%204%3A3-7&version=ESV)** - For this is the will of God, your sanctification: that you abstain from sexual immorality; that each one of you know how to control his own body in holiness and honor, not in the passion of lust like the Gentiles who do not know God; that no one transgress and wrong his brother in this matter, because the Lord is an avenger in all these things, as we told you beforehand and solemnly warned you. For God has not called us for impurity, but in holiness. (ESV)
 
 
-# Try to clarify what ***sin*** looks like from Bible verses
+# Try to clarify what **sin** looks like from Bible verses
 
 -   1. Rejecting Jesus
     -   **[John 15:22-23](https://www.biblegateway.com/passage/?search=John%2015%3A22-23&version=ESV)** - If I had not come and spoken to them, they would not have been guilty of sin, but **now they have no excuse for their sin. Whoever hates me hates my Father also.**
@@ -12165,7 +12175,7 @@ Jesus is God revealed in the flesh.
 I think, that means that if a person **loves** (is obedient to) and has faith in Him, they are most likely saved.
 
 
-## We must **live** by faith - live by obedience to God!
+## We must *live* by faith - live by obedience to God!
 
 Jesus will manifest to those who keep His commandments:
 
@@ -12544,7 +12554,7 @@ We must love (not just any way you believe it's defined) but in the same way tha
 > **[Ephesians 5:25-27](https://www.biblegateway.com/passage/?search=Ephesians%205%3A25-27&version=ESV)** - Husbands, love your wives, as Christ loved the church and gave himself up for her, that he might sanctify her, having cleansed her by the washing of water with the word, so that he might present the church to himself in splendor, without spot or wrinkle or any such thing, that she might be holy and without blemish.
 
 
-### Christians are not <ins>under</ins> the Mosaic law because **we are under grace as we are under Christ's law**, but we don't despise the Torah, nor annul it, nor teach others to annul it
+### Christians are not <ins>under</ins> the Mosaic law because *we are under grace as we are under Christ's law*, but we don't despise the Torah, nor annul it, nor teach others to annul it
 
 I enjoyed this video, but I still am of the opinion that following the full Mosaic law is not necessary, (but not prohibited, so long as it is pursued by faith and submits to God's righteousness):
 
@@ -13499,7 +13509,7 @@ We are the temple of God:
     > **[Colossians 3:10-17](https://www.biblegateway.com/passage/?search=Colossians%203%3A10-17&version=ESV)** - and have put on the new self, which is being renewed in knowledge after the image of its creator. Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all. Put on then, as God's chosen ones, holy and beloved, compassion, kindness, humility, meekness, and patience, bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive. And above all these put on love (**[26. agapé](https://biblehub.com/greek/agape_n_26.htm)**), which binds everything together in perfect harmony. And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
 
 
-### What must be believe, and what we must do: Walk in **truth** and **love** the way Jesus has commanded us
+### What must be believe, and what we must do: Walk in *truth* and *love* the way Jesus has commanded us
 
 We must receive Jesus' words through faith, walk in them through faith and come to **know in truth** (we must truly know) that Jesus came from God, and continue in faith, continuing to be sanctified.
 
@@ -13684,6 +13694,34 @@ This is what we must come to know in truth - that Jesus came from Father God, an
     Because we have died and our life is hidden with Christ in God we should put to death what is earthly in us. We are really unleavened so we should cleanse out the old leaven:
     
     > **[Colossians 3:3-5](https://www.biblegateway.com/passage/?search=Colossians%203%3A3-5&version=ESV)** - For you have died, and your life is hidden with Christ in God. When Christ who is your life appears, then you also will appear with him in glory. **Put to death therefore what is earthly in you:** sexual immorality, impurity, passion, evil desire, and covetousness, which is idolatry. (ESV)
+    
+    -   **[youtube.com: The Narrow Road is Lonely&#x2026;.No One Tells You This @time: 10 min 53 sec](https://youtube.com/watch?v=Db9n9WY9Tso&t=653):** Jesus is the example for us to
+        follow and become more like Him.
+        And as we follow Him, we get cleaner, we get
+        purer, our minds are renewed, the
+        impurities start to wash away. He starts
+        to prune us. Our hearts start to
+        soften. We start to align more with His
+        will for us, with his desires for us. We
+        start learning who our identity is, when
+        the enemy our whole lives has been
+        trying to steal the true knowledge of who we are.
+        He never wants us to find out who we are in Christ.
+        [The enemy] wants us to give us identity in this
+        world. That's why we place our identity
+        so much on the things that we have, on
+        the political leaders we follow, on the
+        clothes we wear, on the music artists we
+        listen to. [The enemy] wants us to identify with the
+        things of this world because it'll keep
+        us further away from our true identity
+        in Christ, and so he convinces us that it's
+        our own idea, that this identity that
+        we've created and manufactured for
+        ourselves was our idea, it's our desire,
+        it's exactly what we want - I identify as
+        this, I identify as that, we have flags
+        for everything.
     
     <ins>[II John 1:1-11](https://www.biblegateway.com/passage/?search=2%20John%201%3A1-11&version=ESV) highlights</ins>:
     
@@ -13959,7 +13997,7 @@ God through Jesus is the source of our personal righteousness as we are found in
 > **[Philippians 1:9-11](https://www.biblegateway.com/passage/?search=Philippians%201%3A9-11&version=ESV)** - And it is my prayer that your love may abound more and more, with knowledge and all discernment, so that you may approve what is excellent, and so be pure and blameless for the day of Christ, filled with the fruit of righteousness that comes through Jesus Christ, to the glory and praise of God.
 
 
-## We must **both** believe the truth and be sanctified, **and** stop sinning to be saved
+## We must *both* believe the truth and be sanctified, *and* stop sinning to be saved
 
 > **[II Thessalonians 2:13](https://www.biblegateway.com/passage/?search=2%20Thessalonians%202%3A13&version=NASB)** - But we should always give thanks [(G2168 eucharisteo)](https://www.blueletterbible.org/lexicon/g2168/kjv/tr/0-1/) to God for you, brethren beloved by the Lord, because God has chosen you from the beginning [(G746 arche)](https://www.blueletterbible.org/lexicon/g746/kjv/tr/0-1/) for salvation through sanctification by the Spirit **and** faith [(G4102 pistis)](https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/) in the truth [(G225 aletheia)](https://www.blueletterbible.org/lexicon/g225/kjv/tr/0-1/). (NASB)
 
@@ -14034,7 +14072,7 @@ Lust is super bad, even after born-again:
 > **[Leviticus 19:18](https://www.biblegateway.com/passage/?search=Leviticus%2019%3A18&version=ESV)** - You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord.
 
 
-# Clearing up justifying faith vs justifying works - It's faith in **Jesus Himself** that matters. Also, it's God who justifies us, not we who justify ourselves. We have faith in God to justify us, as we place our faith in Him
+# Clearing up justifying faith vs justifying works - It's faith in *Jesus Himself* that matters. Also, it's God who justifies us, not we who justify ourselves. We have faith in God to justify us, as we place our faith in Him
 
 I believe that when a person **actually** obeys Jesus' commandments out of love for Jesus, this isn't working for justification, but is as if Jesus is working through them.
 
@@ -14689,7 +14727,7 @@ And I do not believe the following verse necessarily is merely talking about jus
 
 > **[Luke 10:25-37](https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=ESV)** - And behold, a lawyer stood up to put him to the test, saying, Teacher, what shall I do to inherit eternal life? He said to him, What is written in the Law? How do you read it? And he answered, **You shall love the Lord your God with all your heart and with all your soul and with all your strength and with all your mind, and your neighbor as yourself. And he said to him**, <ins>You have answered correctly</ins>; **do this, and you will live**. But he, *desiring to justify himself*, said to Jesus, And who is my neighbor? Jesus replied, A man was going down from Jerusalem to Jericho, and he fell among robbers, who stripped him and beat him and departed, leaving him half dead. Now by chance a priest was going down that road, and when he saw him he passed by on the other side. So likewise a Levite, when he came to the place and saw him, passed by on the other side. But a Samaritan, as he journeyed, came to where he was, and when he saw him, **he had compassion**. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, <ins>Take care of him, and whatever more you spend, I will repay you when I come back</ins>. Which of these three, do you think, *proved to be a neighbor* to the man who fell among the robbers? He said, <ins>The one who showed him</ins> **mercy**. And Jesus said to him, **You go, and do likewise.** (ESV)
 
-See: [33.4.1](#org8c30716)
+See: [33.4.1](#org5a9423d)
 
 -   **[Polycarp 2:1](https://www.earlychristianwritings.com/text/polycarp-lightfoot.html):** Wherefore [gird up your loins](https://www.biblegateway.com/passage/?search=1%20Peter%201%3A13&version=ESV) and serve God in fear and truth,
     forsaking the vain and empty talking and the error of the many, for
@@ -17804,6 +17842,21 @@ Jesus' warning against forsaking the word of God, the Holy Scriptures, for tradi
 
 -   **Sermon:** [youtube.com: John Piper's Sermon with Scripture only](https://www.youtube.com/watch?v=ldag_fIFnqg)
 
+Prophesy should be tested, prophets should be tested, the spirits must confess Jesus and the message should align with the Scripture:
+
+-   **[youtube.com: The Lord Says - Do Not Be Swept Up By The Lie](https://www.youtube.com/watch?v=9wis_m_V76I):** There is a great
+    deception coming over the earth.
+    A delusion which will overcome the minds
+    of men. He who is not tethered to the
+    Rock shall be swept away by
+    it. It is a strong and
+    seductive delusion. Already many have been taken
+    captive by it. Their ears have become
+    dull. Their eyes have become blinded to the
+    Truth. Yet they are convinced among
+    themselves that they have grasped the
+    truth.
+
 
 ### Do not associate with people who call themselves believers but are against sound doctrine
 
@@ -19591,7 +19644,7 @@ If we teach others to annul even the least of the commandments and annul them ou
 > **[Matthew 5:19](https://www.biblegateway.com/passage/?search=Matthew%205%3A19&version=ESV)** - Therefore whoever relaxes one of the least of these commandments and teaches others to do the same will be called least in the kingdom of heaven, but whoever does them and teaches them will be called great in the kingdom of heaven.
 
 
-### A person must begin repenting of sin and have a faithful heart towards God to receive **the Holy Spirit**
+### A person must begin repenting of sin and have a faithful heart towards God to receive *the Holy Spirit*
 
 > **[Acts 8:9](https://www.biblegateway.com/passage/?search=Acts%208%3A9&version=ESV)**: But there was a man named Simon, who had previously practiced magic in the city and amazed the people of Samaria, saying that he himself was somebody great.
 
@@ -19604,7 +19657,7 @@ If we teach others to annul even the least of the commandments and annul them ou
 > **[Galatians 3:14](https://www.biblegateway.com/passage/?search=Galatians%203%3A14&version=ESV)** - so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might receive the promised Spirit through faith.
 
 
-### I believe the 10 commandments are special, and Jesus calls us to follow them **from the heart**
+### I believe the 10 commandments are special, and Jesus calls us to follow them *from the heart*
 
 Otherwise why would God make a distinction in Exodus 16 between commandments (mitsvah) and instructions/law (towrah)?
 
@@ -20902,7 +20955,7 @@ Following Christ's law is how to love. Trusting in Jesus is having faith in Him.
 
 Submitting to the righteousness that comes through having faith in Jesus is believing and obeying the Gospel.
 
-1.  All things **are** put under Jesus' feet whether we are compliant or understand it or not
+1.  All things *are* put under Jesus' feet whether we are compliant or understand it or not
 
     The victory has already been won.
     
@@ -21163,7 +21216,7 @@ It's obedience which leads to righteousness, even the righteousness of faith:
 > **[Romans 6:16](https://www.biblegateway.com/passage/?search=Romans%206%3A16&version=ESV)** - Do you not know that if you present yourselves to anyone as obedient slaves, you are slaves of the one whom you obey, either of sin, which leads to death, or of **obedience, which leads to righteousness**? (ESV)
 
 
-# Receiving **the Holy Spirit**
+# Receiving *the Holy Spirit*
 
 -   **[youtube.com: How to Seek the Holy Spirit @time: 48 min 13 sec](https://youtube.com/watch?v=xqgeT26BAnE&t=2893):** "If anyone keeps Jesus' word, holds fast, treasures it, in obedience, that person will not be quenching the Spirit, that person will not be grieving the Spirit, but will know the fullness and sweetness of fellowship with the Father and the Son." - AMEN to that, John Piper
 
@@ -21246,7 +21299,7 @@ God noticed and gave Abram a vision and made a promise to Abram, and Abram belie
 > **[Genesis 15:1](https://www.biblegateway.com/passage/?search=Genesis%2015%3A1&version=ESV)** - After these things the word of the Lord came to Abram in a vision: Fear not, Abram, I am your shield; your reward shall be very great. But Abram said, O Lord God, what will you give me, for I continue childless, and the heir of my house is Eliezer of Damascus? And Abram said, Behold, you have given me no offspring, and a member of my household will be my heir. And behold, the word of the Lord came to him: This man shall not be your heir; your very own son shall be your heir. And he brought him outside and said, Look toward heaven, and number the stars, if you are able to number them. Then he said to him, So shall your offspring be. And he believed the Lord, and he counted it to him as righteousness.
 
 
-### Faith and works - they overlap and are **not** mutually exclusive!
+### Faith and works - they overlap and are *not* mutually exclusive!
 
 > **[James 2:22-25](https://www.biblegateway.com/passage/?search=James%202%3A22-25&version=ESV)** - You see that **faith was active along with his works, and faith was completed by his works**; and the Scripture was fulfilled that says, Abraham believed God, and it was counted to him as righteousness-and he was called a friend of God. You see that a person is justified by works and not by faith alone. And in the same way was not also Rahab the prostitute justified by works when she received the messengers and sent them out by another way?
 
@@ -21613,7 +21666,7 @@ Repentance from sin is required step for those who are in sin, along with forgiv
 > **[John 17:3](https://www.biblegateway.com/passage/?search=John%2017%3A3&version=ESV)** - And this is eternal life, that they know you the only true God, and Jesus Christ whom you have sent.
 
 
-### Eternal life **available** for all who believe in Jesus, but obedience and sanctification is necessary
+### Eternal life *available* for all who believe in Jesus, but obedience and sanctification is necessary
 
 > **[John 3:14-18](https://www.biblegateway.com/passage/?search=John%203%3A14-18&version=ESV)** - And as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him may have eternal life. For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but **whoever does not believe is condemned already**, because he has not believed in the name of the only Son of God.
 
@@ -23873,7 +23926,7 @@ Peter believed/received/obeyed/trusted like a child of God (he cooperated) to le
 > **[I John 5:1-2](https://www.biblegateway.com/passage/?search=1%20John%205%3A1-2&version=ESV)** - Everyone who believes that Jesus is the Christ has been born of God, and [everyone who loves the Father loves whoever has been born of him](https://biblehub.com/john/8-42.htm). By this we know that we love the children of God, when we love God and obey his commandments. (ESV)
 
 
-### Have active faith in Jesus and **trust** in Him. This is the good news:
+### Have active faith in Jesus and *trust* in Him. This is the good news:
 
 > **[John 3:16](https://www.biblegateway.com/passage/?search=John%203%3A16&version=ESV)** - For God so loved the world, that he gave his only Son, that whoever believes [(G4100 pisteuo)](https://www.blueletterbible.org/lexicon/g4100/kjv/tr/0-1/) in him should not perish but have eternal life. (ESV)
 
@@ -24163,7 +24216,7 @@ I think it's really the hope of inheritance for people who have strived to enter
 > **[Revelation of John 21:27](https://www.biblegateway.com/passage/?search=Revelation%2021%3A27&version=ESV)** -  But nothing unclean will ever enter it, nor anyone who does what is detestable or false, but only those who are written in the Lamb's book of life. (ESV)
 
 
-## Those who have stopped sinning (potentially through the power of **the Holy Spirit**) and who believe in Jesus Christ
+## Those who have stopped sinning (potentially through the power of *the Holy Spirit*) and who believe in Jesus Christ
 
 > **[Acts 5:31](https://www.biblegateway.com/passage/?search=Acts%205%3A31&version=ESV)** - God exalted him at his right hand as Leader and Savior, to give repentance to Israel and forgiveness of sins.
 
@@ -25104,7 +25157,7 @@ Jesus goes to those who hear His voice to bring them into His flock:
 Jesus Christ is God's servant. We are Jesus' servants. It is a kingdom of servants, obedient to God.
 
 
-## Not all religions are equal. There is only one true God, the <ins>Father of Jesus Christ who has **revealed Himself** in Jesus Christ</ins>
+## Not all religions are equal. There is only one true God, the <ins>Father of Jesus Christ who has *revealed Himself* in Jesus Christ</ins>
 
 > **[Ignatius to the Magnesians 8](https://www.earlychristianwritings.com/text/ignatius-magnesians-longer.html)** - Be not deceived with *strange doctrines*, nor with *old fables*, which are unprofitable. For if we still live according to the Jewish law, we acknowledge that we have not received grace. For the divinest prophets lived according to Christ Jesus. On this account also they were persecuted, being inspired by His grace to fully convince the unbelieving that there is **one God, who has manifested Himself by Jesus Christ His Son, who is His eternal Word**, not proceeding forth from silence, and who in all things pleased Him that sent Him.
 
@@ -26553,7 +26606,7 @@ Concerning existing marriages, where one person becomes a believer, **the unbeli
     > **[II Peter 1:3-4](https://www.biblegateway.com/passage/?search=2%20Peter%201%3A3-4&version=NASB)** - seeing that His divine power has granted to us everything pertaining to life and godliness, through the true knowledge of Him who called us by His own glory and excellence. For by these He has granted to us His precious and magnificent promises, so that by them you may become <ins>partakers of the divine nature, having escaped the corruption that is in the world by lust</ins>. (NASB)
 
 
-### No-one **marrys** (verb) or is **given in marriage** (verb)
+### No-one *marrys* (verb) or is *given in marriage* (verb)
 
 > **[Luke 20:33-36](https://www.biblegateway.com/passage/?search=Luke%2020%3A33-36&version=ESV)** - In the resurrection, therefore, whose wife will the woman be? For the seven had her as wife. And Jesus said to them, The sons of this age ([G165 aion](https://www.blueletterbible.org/lexicon/g165/kjv/tr/0-1/)) marry ([G1060 gameo](https://www.blueletterbible.org/lexicon/g1060/kjv/tr/0-1/)) and are given in marriage ([G1061 gamisko](https://www.equipgodspeople.com/lexicons-word-study/new-testament-greek/strongs-g1061)), but those who are considered worthy to attain to that age ([G165 aion](https://www.blueletterbible.org/lexicon/g165/kjv/tr/0-1/)) and to the resurrection ([G386 anastasis](https://www.blueletterbible.org/lexicon/g386/kjv/tr/0-1/)) from the dead neither marry nor are given in marriage, for they cannot die anymore, because they are equal to angels and are sons of God, being sons of the resurrection.
 
@@ -27085,7 +27138,7 @@ It's not of my own interpretation though:
 # Employment
 
 
-## Kingdom work **is** work, but kingdom workers should still seek to carry their own load and accept support only when in need of support
+## Kingdom work *is* work, but kingdom workers should still seek to carry their own load and accept support only when in need of support
 
 Accepting support is OK when in need, but we should still seek to bear our own load:
 
@@ -27297,7 +27350,7 @@ Thus so (**[Houtōs](https://biblehub.com/greek/3779.htm)**) (in this way) did G
 [biblehub.com 3-16.htm: John 3:16 Interlinear: for God did so love the world, that His Son &#x2013; the only begotten &#x2013; He gave, that every one who is believing in him may not perish, but may have life age-during.](https://biblehub.com/interlinear/john/3-16.htm)
 
 
-### Who Christians **must** agape love
+### Who Christians *must* agape love
 
 -   God (Father God, Jesus Christ and Holy Spirit)
     -   <https://biblehub.com/interlinear/1_john/2-15.htm>
@@ -27327,7 +27380,7 @@ Those who listen to those who are in Christ are of God. Those who listen to worl
 > **Philippians 2:14-16** - Do all things without grumbling or questioning, that you may be blameless and innocent, children of God without blemish in the midst of a crooked and twisted generation, among whom you shine as lights in the world, holding fast to the word of life, so that in the day of Christ I may be proud that I did not run in vain or labor in vain. (ESV)
 
 
-### What Christians **must not** agape love
+### What Christians *must not* agape love
 
 -   <https://biblehub.com/interlinear/1_john/2-15.htm>
 
@@ -27613,7 +27666,7 @@ This qualifies:
 > **[Luke 18:13](https://www.biblegateway.com/passage/?search=Luke%2018%3A13&version=ESV)** - But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! (ESV)
 
 
-## Jesus abiding in **you** / **me**
+## Jesus abiding in *you* / *me*
 
 It quickly progresses to obeying Jesus, receiving the Spirit.
 
@@ -28012,7 +28065,7 @@ But the Mosaic law still exists.
 > **[I John 3:4-11](https://www.biblegateway.com/passage/?search=1%20John%203%3A4-11&version=ESV)** - Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. You know that he appeared to take away sins, and in him there is no sin. No one who abides in him keeps on sinning; no one who keeps on sinning has either seen him or known him. Little children, let no one deceive you. Whoever practices righteousness is righteous, as he is righteous. Whoever makes a practice of sinning is of the devil, for the devil has been sinning from the beginning. The reason the Son of God appeared was to destroy the works of the devil. No one born of God makes a practice of sinning, for God's seed abides in him, and he cannot keep on sinning because he has been born of God. By this it is evident who are the children of God, and who are the children of the devil: whoever does not practice righteousness is not of God, nor is the one who does not love his brother. For this is the message that you have heard from the beginning, that we should love one another.
 
 
-## Sharing Jesus' holiness / personal righteousness (fruit of righteousness) - coming **after** faith in Jesus
+## Sharing Jesus' holiness / personal righteousness (fruit of righteousness) - coming *after* faith in Jesus
 
 
 ### Have faith in Jesus; Believe in Him, and be obedient to Him, following His teaching
@@ -28223,7 +28276,7 @@ And no-one should endorse sinful things. Homosexuality is erroneous.
 If they do, however, endorse it then I think that inhibits them from approaching God.
 
 
-## Belief comes before or at the time of receiving **the Holy Spirit** (receiving **the Holy Spirit** comes at the time of or after believing)
+## Belief comes before or at the time of receiving *the Holy Spirit* (receiving *the Holy Spirit* comes at the time of or after believing)
 
 I believe that **the Holy Spirit** goes to those who obey God. I believe belief in Jesus comes first.
 
@@ -28306,7 +28359,7 @@ Fulfilling the requirement of the law is required of us by God. God judges the s
 To get to know Jesus, follow His commandments - be obedient to Jesus.
 
 
-## Outside of **the Holy Spirit**, noone can say Jesus is Lord
+## Outside of *the Holy Spirit*, noone can say Jesus is Lord
 
 > **[1 Corinthians 12:3](https://www.biblegateway.com/passage/?search=1%20Corinthians%2012%3A3&version=ESV)** - Therefore I want you to understand that no one speaking in the Spirit of God ever says Jesus is accursed! and no one can say Jesus is Lord except in **the Holy Spirit**. (ESV)
 
@@ -28379,7 +28432,7 @@ A disciple of Jesus isn't Jesus, but a disciple.
 > **[Luke 12:8](https://www.biblegateway.com/passage/?search=Luke%2012%3A8&version=ESV)** - And I tell you, everyone who acknowledges me before men, the Son of Man also will acknowledge before the angels of God,
 
 
-### It's **really** important to not reject Jesus through
+### It's *really* important to not reject Jesus through
 
 > **[John 8:12](https://www.biblegateway.com/passage/?search=John%208%3A12&version=ESV)** - Again Jesus spoke to them, saying, I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.
 
@@ -28497,9 +28550,11 @@ The universe is upheld by the word of Jesus' power.
 
 ### Great or small in the kingdom of God
 
-1.  The least will be greatest
+1.  The one who is least in the kingdom is who is great
 
-    > **[Luke 9:48](https://www.biblegateway.com/passage/?search=Luke%209%3A48&version=ESV)** - and said to them, Whoever receives this child in my name receives me, and whoever receives me receives him who sent me. For he who is least among you all is the one who is great. (ESV)
+    > **[Matthew 18:4](https://www.biblegateway.com/passage/?search=Matthew%2018%3A4&version=ESV)** - Whoever **humbles himself like this child** is the greatest in the kingdom of heaven. (ESV)
+    
+    > **[Luke 9:48](https://www.biblegateway.com/passage/?search=Luke%209%3A48&version=ESV)** - and said to them, Whoever receives this child <ins>in my name</ins> receives me, and whoever receives me receives him who sent me. For **he who is least ([3398. mikros](https://biblehub.com/greek/3398.htm)) <ins>among you</ins> all is the one who is great**. (ESV)
 
 2.  Your servant will be greater
 
@@ -28516,6 +28571,20 @@ The universe is upheld by the word of Jesus' power.
 
 3.  The humble and obedient will be called great
 
+    There's a quiet confidence from practicing one's righteousness (accountable to God) so long as we are seeking to honour God by our obedience and get praise from God, not seeking worldly praise:
+    
+    > **[I John 3:18-22](https://www.biblegateway.com/passage/?search=1%20John%203%3A18-22&version=ESV)** - Little children, let us not love in word or talk but in deed and in truth. By this we shall know that we are of the truth and reassure our heart before him; for whenever our heart condemns us, God is greater than our heart, and he knows everything. Beloved, <ins>if our heart does not condemn us, we have confidence before God</ins>; and whatever we ask we receive from him, because we keep his commandments and do what pleases him. (ESV)
+    
+    The justified are not self-righteous but live with an awareness they **still** need God's grace and practice their obedience in *submission* to God:
+    
+    > **[Luke 18:10-14](https://www.biblegateway.com/passage/?search=Luke%2018%3A10-14&version=ESV)** - Two men went up into the temple to pray, one a Pharisee and the other a tax collector. The Pharisee, standing by himself, prayed thus: God, I thank you that I am not like other men, extortioners, unjust, adulterers, or even like this tax collector. I fast twice a week; I give tithes of all that I get. But the tax collector, standing far off, would not even lift up his eyes to heaven, but beat his breast, saying, God, be merciful to me, a sinner! I tell you, this man went down to his house justified, rather than the other. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted. (ESV)
+    
+    Being under grace means knowing we always live under the mercy of God:
+    
+    > **[Romans 6:14](https://www.biblegateway.com/passage/?search=Romans%206%3A14&version=ESV)** - For sin will have no dominion over you, since you are not under law but **under grace**. (ESV)
+    
+    > **[Titus 2:11-14](https://www.biblegateway.com/passage/?search=Titus%202%3A11-14&version=ESV)** - For the grace of God has appeared, bringing **salvation for all people**, training us to **renounce ungodliness and worldly passions**, and to **live self-controlled, upright, and godly lives** <ins>in the present age</ins>, **waiting for our blessed hope**, the appearing of the glory of our great God and Savior Jesus Christ, who gave himself for us to redeem us from all lawlessness and to purify for himself a people for his own possession who are zealous for good works. (ESV)
+    
     > **[Matthew 5:6](https://www.biblegateway.com/passage/?search=Matthew%205%3A6&version=ESV)** - Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.
     
     > **[Jeremiah 31:34](https://www.biblegateway.com/passage/?search=Jeremiah%2031%3A34&version=ESV)** - And no longer shall each one teach his neighbor and each his brother, saying, Know the LORD, for they shall all know me, **from the least of them to the greatest**, declares the LORD. For I will forgive their iniquity, and I will remember their sin no more. (ESV)
@@ -29092,7 +29161,7 @@ To be raised up as a child of Abraham, bear fruit in keeping with repentance:
 
 > **[Luke 3:8](https://www.biblegateway.com/passage/?search=Luke%203%3A8&version=ESV)** - <ins>Bear fruits in keeping with repentance.</ins> And do not begin to say to yourselves, We have Abraham as our father. For I tell you, <ins>God is able from these stones to raise up children for Abraham.</ins>
 
-See: [33.4.1](#org8c30716)
+See: [33.4.1](#org5a9423d)
 
 To be regarded as a child of Abraham, a person must fall into one of 2 categories:
 
@@ -29229,7 +29298,7 @@ It's possible to keep commandments by faith:
 > **[Matthew 5:17-25](https://www.biblegateway.com/passage/?search=Matthew%205%3A17-25&version=ESV)** - Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them. For truly, I say to you, until heaven and earth pass away, not an iota, not a dot, will pass from the Law until all is accomplished. Therefore whoever relaxes one of the least of these commandments and teaches others to do the same will be called least in the kingdom of heaven, but whoever does them and teaches them will be called great in the kingdom of heaven. For I tell you, unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven. You have heard that it was said to those of old, You shall not murder; and whoever murders will be liable to judgment. But I say to you that everyone who is angry with his brother will be liable to judgment; whoever insults his brother will be liable to the council; and whoever says, You fool! will be liable to the hell of fire. So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar and go. First be reconciled to your brother, and then come and offer your gift. Come to terms quickly with your accuser while you are going with him to court, lest your accuser hand you over to the judge, and the judge to the guard, and you be put in prison. (ESV)
 
 
-## Theoretically belief usually comes before or at the time receiving **the Holy Spirit**
+## Theoretically belief usually comes before or at the time receiving *the Holy Spirit*
 
 But for me I believe before I was born-again and before I was baptised in **the Holy Spirit**.
 
@@ -29383,7 +29452,7 @@ We follow them in faith.
     
     > **[John 12:36](https://www.biblegateway.com/passage/?search=John%2012%3A36&version=ESV)** - While you have the light, <ins>believe in the light, that you may become sons of light</ins>. When Jesus had said these things, he departed and hid himself from them.
 
-2.  Meeting with **the Holy Spirit**
+2.  Meeting with *the Holy Spirit*
 
     Jesus saving me - This is evidence the Holy Spirit is Person:
     
@@ -29413,7 +29482,7 @@ We follow them in faith.
     
     > **[I Corinthians 7:19](https://www.biblegateway.com/passage/?search=1%20Corinthians%207%3A19&version=ESV)** - For <ins>neither circumcision counts for anything nor uncircumcision,</ins> but **keeping the commandments of God.** (ESV)
 
-4.  Baptised in **the Holy Spirit**
+4.  Baptised in *the Holy Spirit*
 
     <https://web.archive.org/web/20220806085237/https://mullikine.github.io/posts/astral-projection-pt-3/>
     
@@ -30270,7 +30339,7 @@ We **must** stop sinning after the big forgiveness:
 > **[II Peter 2:20-22](https://www.biblegateway.com/passage/?search=2%20Peter%202%3A20-22&version=ESV)** - For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first. For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them. What the true proverb says has happened to them: The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire.
 
 
-### We totally **should** stop sinning, since we await a place without sinning
+### We totally *should* stop sinning, since we await a place without sinning
 
 > **[II Peter 3:13-14](https://www.biblegateway.com/passage/?search=2%20Peter%203%3A13-14&version=ESV)** - But according to his promise we are waiting for new heavens and a new earth in which righteousness dwells. Therefore, beloved, since you are waiting for these, be diligent to be found by him without spot or blemish, and at peace.
 
@@ -31471,7 +31540,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 
 ### Trust in God to provide
 
-> \*[Matthew 6:25-34](https://www.biblegateway.com/passage/?search=Matthew%206%3A25-34&version=ESV) - Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they? And which of you by being anxious can add a single hour to his span of life? And why are you anxious about clothing? Consider the lilies of the field, how they grow: they neither toil nor spin, yet I tell you, even Solomon in all his glory was not arrayed like one of these. But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you. Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
+> **[Matthew 6:25-34](https://www.biblegateway.com/passage/?search=Matthew%206%3A25-34&version=ESV)** - Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they? And which of you by being anxious can add a single hour to his span of life? And why are you anxious about clothing? Consider the lilies of the field, how they grow: they neither toil nor spin, yet I tell you, even Solomon in all his glory was not arrayed like one of these. But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, What shall we eat? or What shall we drink? or What shall we wear? For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you. Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. (ESV)
 
 
 ### Seek first the Kingdom of God and His righteousness
@@ -31503,7 +31572,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 > **[Matthew 7:7](https://www.biblegateway.com/passage/?search=Matthew%207%3A7&version=ESV)** - Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you. (ESV)
 
 
-### 
+### Golden Rule
 
 > **[Matthew 7:12](https://www.biblegateway.com/passage/?search=Matthew%207%3A12&version=ESV)** - So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets. (ESV)
 
@@ -31513,12 +31582,12 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 > **[Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew%207%3A13-14&version=ESV)** - Enter by the narrow gate. For the gate is wide and the way is easy that leads to destruction, and those who enter by it are many. For the gate is narrow ([4728 stenos ie. *narrow, small*](https://biblehub.com/greek/4728.htm)) and the way is hard ([2346 thlibó - meaning: like when circumstances "rub us the wrong way" that make us feel confined (hemmed in); restricted to a "narrow" place/](https://biblehub.com/greek/2346.htm)) that leads to life, and those who find it are few. (ESV)
 
 
-### 
+### Beware of false prophets
 
 > **[Matthew 7:15-16](https://www.biblegateway.com/passage/?search=Matthew%207%3A15-16&version=ESV)** - Beware of false prophets, who come to you in sheep's clothing but inwardly are ravenous wolves. You will recognize them by their fruits. Are grapes gathered from thornbushes, or figs from thistles? (ESV)
 
 
-### 
+### Follow Jesus
 
 > **[Matthew 8:22](https://www.biblegateway.com/passage/?search=Matthew%208%3A22&version=ESV)** - And Jesus said to him, **Follow me**, and leave the dead to bury their own dead. (ESV)
 
@@ -31528,7 +31597,7 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 > **[Matthew 9:2](https://www.biblegateway.com/passage/?search=Matthew%209%3A2&version=ESV)** - And behold, some people brought to him a paralytic, lying on a bed. And when Jesus saw their faith, he said to the paralytic, Take heart, my son; your sins are forgiven. (ESV)
 
 
-### 
+### Rely on God's mercy continually, and have mercy on others
 
 > **[Matthew 9:13](https://www.biblegateway.com/passage/?search=Matthew%209%3A13&version=ESV)** - Go and learn what this means, I desire mercy, and not sacrifice. For I came not to call the righteous, but sinners. (ESV)
 
@@ -31543,9 +31612,12 @@ I'm pretty convinced that what Jesus means by the following is that by giving up
 > **[Matthew 9:29](https://www.biblegateway.com/passage/?search=Matthew%209%3A29&version=ESV)** - Then he touched their eyes, saying, According to your faith be it done to you. (ESV)
 
 
-### 
+### Pray for God to work/extend His kingdom, sending laborers
 
 > **[Matthew 9:38](https://www.biblegateway.com/passage/?search=Matthew%209%3A38&version=ESV)** - therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest. (ESV)
+
+-   **[bibledaily.net: Pray for God to Send More Labourers To The Harvest Field](https://www.bibledaily.net/devotional/pray-for-god-to-send-more-labourers-to-the-harvest-field/):** Father, I pray that You'll send more labourers into the harvest field of souls.
+    Supply them with the anointing and provision to do your work without struggle, in the name of Jesus. Amen
 
 
 ### 
@@ -32039,7 +32111,7 @@ And absolutely do not bear grudges against those who are in Christ:
 
 ### 
 
-> **[Luke 9:48](https://www.biblegateway.com/passage/?search=Luke%209%3A48&version=ESV)** - and said to them, Whoever receives this child in my name receives me, and whoever receives me receives him who sent me. For he who is least among you all is the one who is great. (ESV)
+> **[Luke 9:48](https://www.biblegateway.com/passage/?search=Luke%209%3A48&version=ESV)** - and said to them, Whoever receives this child in my name receives me, and whoever receives me receives him who sent me. For he who is least ([3398. mikros](https://biblehub.com/greek/3398.htm)) among you all is the one who is great. (ESV)
 
 
 ### 
@@ -33480,7 +33552,7 @@ The Holy Spirit is a person, and is a He:
 > **[John 14:26](https://www.biblegateway.com/passage/?search=John%2014%3A26&version=ESV)** - But the Helper, **the Holy Spirit**, whom the Father will send in my name, <ins>he</ins> will teach you all things and bring to your remembrance all that I have said to you.
 
 
-### We **must** do God's will
+### We *must* do God's will
 
 > **[John 4:32-34](https://www.biblegateway.com/passage/?search=John%204%3A32-34&version=ESV)** - But he said to them, I have food to eat that you do not know about. So the disciples said to one another, Has anyone brought him something to eat? Jesus said to them, My food is to do the will of him who sent me and to accomplish his work. (ESV)
 
@@ -33604,7 +33676,7 @@ We must walk in Jesus' commandments and believe that He came from God.
 > **[I Thessalonians 5:18](https://www.biblegateway.com/passage/?search=1%20Thessalonians%205%3A18&version=ESV)** - give thanks in all circumstances; for this is the will of God in Christ Jesus for you. (ESV)
 
 
-### Who Christians **must** agape love
+### Who Christians *must* agape love
 
 -   God (Father God, Jesus Christ and Holy Spirit)
     -   <https://biblehub.com/interlinear/1_john/2-15.htm>
@@ -33624,7 +33696,7 @@ We must walk in Jesus' commandments and believe that He came from God.
     -   <https://biblehub.com/interlinear/matthew/5-44.htm>
 
 
-### What Christians **must not** agape love
+### What Christians *must not* agape love
 
 -   <https://biblehub.com/interlinear/1_john/2-15.htm>
 
