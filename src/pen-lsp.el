@@ -12,6 +12,16 @@
 (require 'lsp-headerline)
 (require 'pen-lsp-common-lisp)
 
+(defun lsp-graphql-activate-p (filename &optional _)
+  "Check if the GraphQL language server should be enabled based on FILENAME."
+  (comment
+   (or (string-match-p (rx (one-or-more anything) "."
+                           (or "ts" "js" "jsx" "tsx" "vue" "graphql" "gql")eos)
+                       filename)
+       (and (derived-mode-p 'js-mode 'js2-mode 'typescript-mode 'typescript-ts-mode)
+            (not (derived-mode-p 'json-mode)))))
+  nil)
+
 (require 'lsp-semgrep)
 (defset lsp-semgrep-languages nil)
 (load-library "lsp-semgrep")

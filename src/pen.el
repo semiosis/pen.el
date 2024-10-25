@@ -2539,6 +2539,8 @@ May use to generate code from comments."
 (require 'pen-timeout)
 (require 'pen-amot)
 (require 'pen-flash)
+(require 'guess-style)
+(require 'pen-javascript)
 
 (if (inside-docker-p)
     (progn
