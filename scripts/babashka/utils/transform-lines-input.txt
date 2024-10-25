@@ -1,0 +1,3 @@
+SUCCESS("1111", "Customer sign up is successful and can proceed."),
+FAILURE("0000", "Customer signup failed due to lack of eligibility."),
+PENDING("1001", "Checking if user is eligible."),

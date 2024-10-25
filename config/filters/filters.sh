@@ -482,3 +482,4 @@ canonicalise-bible-ref # Could be a book title or entire ref
 fill-lines-to-longest-line
 f-point-out-parentheses
 fix-nasb-links-org
+org-mode-make-headline-asterisks-into-slash.bb
