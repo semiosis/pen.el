@@ -1,6 +1,13 @@
 #!/bin/bash
 export TTY
 
+is_tty() { [ -t 1 ] && ! test "$TERM" = "dumb"; }
+
+if ! is_tty; then
+    cat
+    exit "$?"
+fi
+
 # A more basic version of 'his'
 
 colour_fg="$1"
