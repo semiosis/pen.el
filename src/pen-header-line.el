@@ -55,9 +55,15 @@
           (str gp)
         "(eq nil (get-path nil t))"))))
 
+(defun get-battery-power ()
+  (interactive)
+  (ifietv
+   (esed "[^:]*: " ""
+         (snc "pen-ci -nd -f -t 20 acpi -b"))))
+
 ;; This should simply display some status information about the current buffer.
 ;; Also, consider adding a date on the far-right - This is a good way to do it.
-(defun ph--make-header (&optional nodate buffer)
+(defun ph--make-header (&optional nodate buffer nobatt)
   ""
   (setq buffer (or buffer (current-buffer)))
 
@@ -86,7 +92,9 @@
                 (concat (ph--with-face ph--header
                                        :foreground "#8fb28f"
                                        :weight 'bold)))
-            (let ((datestr (str (ph-get-date))))
+            (let ((datestr (str (ph-get-date)))
+                  ;; (battstr (str (get-battery-power)))
+                  )
               ;; Instead of always using inverse-video, only use inverse-video when in black and white mode
               (concat (ph--with-face ph--header
                                      'header-line-highlight)
@@ -97,6 +105,11 @@
                                                                        1
                                                                      0)
                                                                   ,(length datestr))))
+                      ;; (if (not nobatt)
+                      ;;     (ph--with-face battstr
+                      ;;                    'header-line-highlight)
+                      ;;   "")
+                      ;; " "
                       (if (not nodate)
                           (ph--with-face datestr
                                          'header-line-highlight)

@@ -672,10 +672,18 @@ single-character strings, or a string of characters."
   (not (eq nil (get-buffer bufname))))
 (defalias 'buffer-match-p 'buffer-exists)
 
+;; Sadly, I couldn't find a way to combine &key with &rest
 (defmacro pen-b (&rest body)
   "Runs a shell command
 Write straight bash within elisp syntax (it looks like emacs-lisp)"
   `(pen-sn (e-cmd ,@body)))
+
+;; (pen-b-stdin "yo" "sps" "v")
+(cl-defmacro pen-b-stdin (stdin &rest body)
+  "Runs a shell command
+Write straight bash within elisp syntax (it looks like emacs-lisp)"
+  
+  `(pen-sn (e-cmd ,@body) ,stdin))
 
 (if (inside-docker-p)
     (defalias 'b 'pen-b))
