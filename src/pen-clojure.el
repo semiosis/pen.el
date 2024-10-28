@@ -787,6 +787,10 @@ the namespace in the Clojure source buffer"
 
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
 
+(defun y-or-n-p (prompt)
+  (let ((res (snc (cmd "code-out" "tpop-yn" prompt))))
+    (equalp "0" res)))
+
 (defun cider-project-type (&optional project-dir)
   "Determine the type of the project in PROJECT-DIR.
 When multiple project file markers are present, check for a preferred build
