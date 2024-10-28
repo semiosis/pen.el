@@ -1,0 +1,13 @@
+#!/bin/bash
+export TTY
+
+# I actually don't like calling this script `tss` because
+# I had planned to make the tmux search system
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+# echo "$CMD" | tmless
+# echo "tm -f -S -tout nw -fa $CMD" | tmless
+# eval "tm -f -S -tout ss -np -fa $CMD"
+eval "tm -f -S -tout ss -fa $CMD"

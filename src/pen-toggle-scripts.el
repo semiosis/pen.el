@@ -247,4 +247,36 @@
   ;; (pen-helm-imenu)
   )
 
+(defun cider-project-type (&optional project-dir)
+  "Determine the type of the project in PROJECT-DIR.
+When multiple project file markers are present, check for a preferred build
+tool in `cider-preferred-build-tool', otherwise prompt the user to choose.
+PROJECT-DIR defaults to the current project."
+  (let* ((choices (cider--identify-buildtools-present project-dir))
+         (multiple-project-choices (> (length choices) 1))
+         ;; this needs to be a string to be used in `completing-read'
+         (default (symbol-name (car choices)))
+         ;; `cider-preferred-build-tool' used to be a string prior to CIDER
+         ;; 0.18, therefore the need for `cider-maybe-intern'
+         (preferred-build-tool (cider-maybe-intern cider-preferred-build-tool)))
+    (cond ((and multiple-project-choices
+                (member "babashka" (tv (pps choices))))
+           "babashka")
+          ((and multiple-project-choices
+                (member preferred-build-tool choices))
+           preferred-build-tool)
+          (multiple-project-choices
+           (intern
+            (completing-read
+             (format "Which command should be used (default %s): " default)
+             choices nil t nil nil default)))
+          (choices
+           (car choices))
+          ;; TODO: Move this fallback outside the project-type check
+          ;; if we're outside a project we fallback to whatever tool
+          ;; is specified in `cider-jack-in-default' (normally clojure-cli)
+          ;; `cider-jack-in-default' used to be a string prior to CIDER
+          ;; 0.18, therefore the need for `cider-maybe-intern'
+          (t (cider-maybe-intern cider-jack-in-default)))))
+
 (provide 'pen-toggle-scripts)

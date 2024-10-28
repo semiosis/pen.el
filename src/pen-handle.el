@@ -78,7 +78,9 @@
                 'cider-switch-to-repl-buffer
                 'cider-switch-to-repl-buffer-any
                 ;; (etc "nvc -f clj-rebel" t)
-                (etc "nvt clj-rebel" t)
+                ;; (etc "nvt clj-rebel" t)
+                ;; (etc "tns clj-rebel" t)
+                (etc "tmwr clj-rebel" t)
                 ;; (etc "nvc -f lein repl" t)
                 (etc "lein repl" t))
         :formatters '(lsp-format-buffer)

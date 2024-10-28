@@ -2079,7 +2079,14 @@ case "$f" in
         test "$PRESS_ANY_KEY_START" = "y" && cmd_pre="$cmd_pre pen-pak -k s; "
 
         if test "$HAS_STDIN" = "y"; then
-            ff0="$(pen-ux mkfifo tm_stdin)"
+            if test "$SUB_SESSION" = "y"; then
+                # Not actually a fifo but a file
+                ff0="$(ux tf  || echo /dev/null)"
+                trap "rm \"$tf_\" 2>/dev/null" 0
+                cat > "$ff0"
+            else
+                ff0="$(pen-ux mkfifo tm_stdin)"
+            fi
 
             if test "$BUFFER_IN" = "y"; then
                 cmd_pre="$cmd_pre buffer | "
@@ -2236,17 +2243,20 @@ case "$f" in
         elif test "$f" = "rs" || test "$f" = "rsp"; then
             full_id="$(tmux respawnp -k -t "$TARGET" -t "$TARGET" "export TMUX=; $fullcmd")"
         elif test "$SUB_SESSION" = "y"; then
-
             unset TMUX
 
             if test -n "$session_name"; then
                 session_name_opt=" -s $session_name "
             fi
 
-            full_id="$(tmux new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "$fullcmd")"
+            exec <&2
+            # restore with exec <&1, not exec <$TTY nor exec <
+            # exec <`tm-tty` `# see etty` 
+
+            full_id="$(tmux new -P -F "$ID_FORMAT" -d $session_name_opt -n "$window_name" -c "$dir" "export TMUX=; $fullcmd")"
 
             if ! test -n "$BACKGROUNDED"; then
-                tmux attach -t "$full_id"
+                TMUX= tmux attach -t "$full_id"
             fi
 
         elif test -n "$SPLIT"; then
@@ -2317,8 +2327,12 @@ case "$f" in
         fi
 
         if test "$HAS_STDIN" = "y"; then
-            cat > "$ff0"
-            rm "$ff0" 2>/dev/null
+            if test "$SUB_SESSION" = "y"; then
+                rm "$ff0" 2>/dev/null
+            else
+                cat > "$ff0"
+                rm "$ff0" 2>/dev/null
+            fi
         fi
 
         if test "$HAS_STDOUT" = "y"; then

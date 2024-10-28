@@ -209,7 +209,11 @@ stdin_exists() {
     } &>/dev/null
 }
 
-CMD="bash -c $(cmd "$CMD")"
+tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
+trap "rm $(cmd-nice-posix "$tf_returncode") 2>/dev/null" 0
+
+
+CMD="set -o pipefail; bash -c $(cmd "$CMD"); echo \$? > $tf_returncode"
 
 if stdin_exists && ! test "$no_stdin" = y; then
     input_fp="$(cat | tf txt)"
@@ -283,3 +287,8 @@ if test "$ispipe" = 0; then
     tmux wait-for "$sentinal_string"
     cat "$output_fp"
 fi
+
+code="$(cat "$tf_returncode")"
+
+set -o pipefail
+test -n "$code" && exit "$code"

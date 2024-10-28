@@ -1,6 +1,9 @@
 #!/bin/bash
 export TTY
 
+# Also consider:
+# echo hi | tns v
+
 stdin_exists() {
     {
     ! [ -t 0 ] && \

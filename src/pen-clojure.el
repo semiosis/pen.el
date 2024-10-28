@@ -248,6 +248,9 @@ canceled the action, signal quit."
 ;; (setq cider-babashka-command "/usr/local/bin/bb")
 (setq cider-babashka-command "bb")
 
+
+;; Is there a better way to ensure this? Because the temporary buffer stuff
+;; is a little bit problematic.
 (defun cider-jack-in-around-advice (proc &rest args)
   "This exists actually to ensure the nrepl directory is at the top level
 so the same nrepl is used for all files in the project"
@@ -263,6 +266,7 @@ so the same nrepl is used for all files in the project"
                   (pen-pwd)))
          ;; Timestamp is needed to ensure created buffers are unique
          (ts (str (date-ts)))
+         (is-a-bb-buffer (current-buffer-is-bb-p))
          (jack-in-bufname (concat "*" (slugify (concat "jack-in" " in " dir)) "-" ts "*"))
          (bufname
           (if (re-match-p "closure" (str proc))
@@ -273,6 +277,9 @@ so the same nrepl is used for all files in the project"
         (with-current-buffer b
           (insert (concat (str proc) " in " dir))
           (insert "\n")
+          ;; This is so from the jack-in command I can detect if it was a bb buffer
+          (if is-a-bb-buffer
+              (insert "env bb\n"))
           (cd dir)
 
           ;; Also, clean up the buffer after 5 seconds, just in case
@@ -290,6 +297,17 @@ so the same nrepl is used for all files in the project"
 (advice-add 'cider-jack-in :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-clj :around #'cider-jack-in-around-advice)
 (advice-add 'cider-jack-in-cljs :around #'cider-jack-in-around-advice)
+
+(defun current-buffer-is-bb-p ()
+  (pen-string-in-buffer-p "env bb"))
+
+(defun cider-remove-jack-in-advice ()
+  (interactive)
+
+  (advice-add 'cider-restart #'cider-jack-in-around-advice)
+  (advice-add 'cider-jack-in #'cider-jack-in-around-advice)
+  (advice-add 'cider-jack-in-clj #'cider-jack-in-around-advice)
+  (advice-add 'cider-jack-in-cljs #'cider-jack-in-around-advice))
 
 (define-key cider-repl-mode-map (kbd "C-c h f") 'pen-cider-docfun)
 
@@ -768,5 +786,40 @@ the namespace in the Clojure source buffer"
     file-with-protocol))
 
 (add-to-list 'auto-mode-alist '("\\.clj\\'" . clojure-mode))
+
+(defun cider-project-type (&optional project-dir)
+  "Determine the type of the project in PROJECT-DIR.
+When multiple project file markers are present, check for a preferred build
+tool in `cider-preferred-build-tool', otherwise prompt the user to choose.
+PROJECT-DIR defaults to the current project."
+  (let* ((choices (cider--identify-buildtools-present project-dir))
+         (multiple-project-choices (> (length choices) 1))
+         ;; this needs to be a string to be used in `completing-read'
+         (default (symbol-name (car choices)))
+         ;; `cider-preferred-build-tool' used to be a string prior to CIDER
+         ;; 0.18, therefore the need for `cider-maybe-intern'
+         (preferred-build-tool (cider-maybe-intern cider-preferred-build-tool)))
+    (cond ((and multiple-project-choices
+                (member 'babashka choices)
+                ;; annoyingly, the buffer is changed
+                ;; I could, possibly insert the string inside the temporary buffer?
+                (pen-string-in-buffer-p "env bb"))
+           'babashka)
+          ((and multiple-project-choices
+                (member preferred-build-tool choices))
+           preferred-build-tool)
+          (multiple-project-choices
+           (intern
+            (completing-read
+             (format "Which command should be used (default %s): " default)
+             choices nil t nil nil default)))
+          (choices
+           (car choices))
+          ;; TODO: Move this fallback outside the project-type check
+          ;; if we're outside a project we fallback to whatever tool
+          ;; is specified in `cider-jack-in-default' (normally clojure-cli)
+          ;; `cider-jack-in-default' used to be a string prior to CIDER
+          ;; 0.18, therefore the need for `cider-maybe-intern'
+          (t (cider-maybe-intern cider-jack-in-default)))))
 
 (provide 'pen-clojure)
