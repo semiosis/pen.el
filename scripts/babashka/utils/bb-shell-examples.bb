@@ -21,6 +21,7 @@
 ;; TODO Make a cmd function in babashka
 ;; e:$EMACSD/khala/src/khala/utils.clj
 
+;; I need un 'uncmd'
 (defn cmd
   ""
   [& args]
@@ -33,13 +34,33 @@
                  (sh "pen-q-jq" :in (str s))
                  :out)) args)))
 
+(comment
+  (uncmd "yo \"wassup noob\" yo"))
+
+(defn uncmd
+  "Example:
+(uncmd \"yo \\\"wassup noob\\\" yo\")
+
+emacs' s-lines is replaced by split.
+  "
+  [s]
+  (split
+   (:out (sh "bash" "-c" (str "pl " s)))
+   #"\n"))
+
 (defn tv [s]
   (sh "pen-tv" :in (str s))
   s)
 
+;; she and snc effectively do the same thing
 (defn she [s]
   (:out
    (sh "sh" "-c" s :in (str s))))
+
+(defn snc
+  ""
+  [s]
+  (:out (eval `(sh ~@(uncmd (str s))))))
 
 (defn tm-notify [s]
   (sh "tm-notify" :in (str s))
@@ -84,8 +105,18 @@
 (defn get-filename-only [s]
   (nth (reverse (split-by-slash s)) 0))
 
-(println (shell "ls" "-la")) ;; no options
-(shell "ls -la" ".") ;; first string is tokenized automatically, more strings may be provided
+(comment
+  (println (:out (shell "ls" "-la"))))
+(println (:out (sh "ls" "-la"))) ;; no options
+
+
+
+(comment
+  (shell "ls -la" ".")) ;; first string is tokenized automatically, more strings may be provided
+
+(comment
+  (tv (:out (eval `(sh ~@(uncmd "ls -la ."))))))
+
 (shell {:dir "."} "ls" "-la")
 (process {:in "hello"} "cat")
 
@@ -106,7 +137,7 @@
 ;; TODO Figure out how to start the babashka repl from inside the script
 
 ;; exec seems to terminate the babashka script when it runs the program
-(exec {:extra-env {"FOO" "BAR"}} "bash -c 'echo $FOO' | v")
+(exec {:extra-env {"FOO" "BAR"}} "bash -c 'echo $FOO' | sps v")
 
 (comment
   ;; 
