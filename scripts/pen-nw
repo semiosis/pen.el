@@ -8,6 +8,36 @@ unset CWD
 
 declare -a tmargs
 
+is_stdout_pipe() {
+    # If stout is a pipe
+    [[ -p /dev/stdout ]]
+}
+is_stdout_pipe
+ispipe="$?"
+
+if test "$ispipe" -eq 0; then
+    tmargs+=(-w)
+fi
+
+stdin_exists() {
+    {
+    ! [ -t 0 ] && \
+    ! test "$(readlink /proc/$$/fd/0)" = /dev/null  && \
+    ! test "$(readlink /proc/$$/fd/0)" = "$(readlink /proc/$$/fd/1)"
+    # stdin may be redirected to the tty, but  will continue to say false (due to a bash bug)
+    # So test to make sure 0 does not point to 1
+    } &>/dev/null
+}
+
+if stdin_exists && test "$ispipe" -eq 0; then
+    # echo hi | pen-tm -sout -vipe sps "vipe" | v
+    CMD="$(cmd "$@")"
+    : ${CMD:="$(cmd "$@")"}
+    sn="$(p "$sn" | sed 's/pen-//')"
+    pen-tm -sout -vipe "$sn" "$CMD" | cat
+    exit "$?"
+fi
+
 while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
     "") { shift; }; ;;
     -E) {

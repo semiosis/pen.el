@@ -2108,7 +2108,14 @@ case "$f" in
         fi
 
         if test "$HAS_STDOUT" = "y"; then
-            ff1="$(pen-ux mkfifo tm_stdout)"
+            if test "$SUB_SESSION" = "y"; then
+                # Not actually a fifo but a file
+                ff1="$(ux tf  || echo /dev/null)"
+                trap "rm \"$tf_\" 2>/dev/null" 0
+                cat > "$ff1"
+            else
+                ff1="$(pen-ux mkfifo tm_stdout)"
+            fi
 
             if test "$UNBUFFER_OUT" = "y"; then
                 cmd_pre="$cmd_pre unbuffer"

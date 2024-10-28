@@ -1,0 +1,7 @@
+$ cat sample.edn
+{:mulog/timestamp 1697642960678}
+{:mulog/data {:timestamp 1697642960678}}
+
+$ cat sample.edn | humanise-timestamps.bb
+{:mulog/timestamp "2023-10-18 8:29:20.67 AM"}
+{:mulog/data {:timestamp "2023-10-18 8:29:20.67 AM"}}

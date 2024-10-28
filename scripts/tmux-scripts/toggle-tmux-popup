@@ -212,7 +212,7 @@ stdin_exists() {
 tf_returncode="$(mktemp -t tf_returncodeXXXXXX || echo /dev/null)"
 trap "rm $(cmd-nice-posix "$tf_returncode") 2>/dev/null" 0
 
-CMD="set -o pipefail; bash -c $(cmd "$CMD ; echo \$? > $tf_returncode")"
+CMD="bash -c $(cmd "set -o pipefail; $CMD ; echo \$? > $tf_returncode")"
 
 if stdin_exists && ! test "$no_stdin" = y; then
     input_fp="$(cat | tf txt)"

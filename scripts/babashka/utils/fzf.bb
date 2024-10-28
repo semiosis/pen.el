@@ -10,4 +10,16 @@
                          :out :string})]
     (:out @proc)))
 
-(print (fzf (slurp *in*)))
+(defn sps-fzf [s]
+  (let [proc (p/process ["sout" "sps" "fzf" "-m"]
+                        {:in s :err :inherit
+                         :out :string})]
+    (:out @proc)))
+
+(comment
+  (print (fzf (slurp *in*)))
+  (print (sps-fzf (slurp *in*))))
+
+;; TODO Make it so it waits
+
+(print (sps-fzf (slurp *in*)))

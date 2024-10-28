@@ -3,7 +3,7 @@
 ;; https://github.com/babashka/process
 
 ;; (ns enter-your-name)
-(ns myshell
+(ns utils.myshell
   (:require [babashka.deps :as deps]
             [clojure.string :as str])
   (:import
@@ -52,6 +52,10 @@ emacs' s-lines is replaced by split.
   (sh "pen-tv" :in (str s))
   s)
 
+(defn tpvipe [s]
+  (:out (sh "tpvipe" :in (str s))))
+;; TODO Figure out how to make s optional - then I can use this to insert stuff into babashka
+
 ;; she and snc effectively do the same thing
 (defn she [s]
   (:out
@@ -88,10 +92,7 @@ emacs' s-lines is replaced by split.
 (defn uri-to-path [s]
   (Paths/get s))
 
-(defn string-to-path
-  "Example:
-(string-to-path \"/root/.emacs.d/host/pen.el/scripts/babashka/utils/bb-shell-examples.bb\")"
-  [s]
+(defn string-to-path [s]
   (-> s string-to-uri uri-to-path))
 
 (defn split-by-slash [s]
@@ -109,10 +110,8 @@ emacs' s-lines is replaced by split.
   (nth (reverse (split-by-slash s)) 0))
 
 (comment
-  (println (:out (shell "ls" "-la"))))
-(println (:out (sh "ls" "-la"))) ;; no options
-
-
+  (println (:out (shell "ls" "-la")))
+  (println (:out (sh "ls" "-la")))) ;; no options
 
 (comment
   (shell "ls -la" ".")) ;; first string is tokenized automatically, more strings may be provided
@@ -120,34 +119,35 @@ emacs' s-lines is replaced by split.
 (comment
   (tv (:out (eval `(sh ~@(uncmd "ls -la ."))))))
 
-(shell {:dir "."} "ls" "-la")
-(process {:in "hello"} "cat")
-
-(let [progs '["v" "nano"]]
-  (doseq [i progs]
-    (println (str "Babashka starting " i "..."))
-    ;; (shell {:extra-env {"FOO" "BAR"}} (str "sps " i))
-    (shell i)))
-
-(doseq [i '["v" "nano"]]
-  (println i))
-
-;; Start the REPL
-(clojure.main/repl)
-
-(tv "yo")
-
-;; TODO Figure out how to start the babashka repl from inside the script
-
-;; exec seems to terminate the babashka script when it runs the program
-(exec {:extra-env {"FOO" "BAR"}} "bash -c 'echo $FOO' | sps v")
-
 (comment
-  ;; 
-  (for [i '[1 2]]
-    (println (str "Babashka starting " i "...")))
+  (shell {:dir "."} "ls" "-la")
+  (process {:in "hello"} "cat")
 
-  ;; Why does this not work? I think it's because a Clojure for may not be able to take a list of strings
-  (for [i '["nano" "vim"]]
-    (println (str "Babashka starting " i "..."))
-    (exec {:extra-env {"FOO" "BAR"}} i)))
+  (let [progs '["v" "nano"]]
+    (doseq [i progs]
+      (println (str "Babashka starting " i "..."))
+    ;; (shell {:extra-env {"FOO" "BAR"}} (str "sps " i))
+      (shell i)))
+
+  (doseq [i '["v" "nano"]]
+    (println i))
+
+  ;; Start the REPL
+  (clojure.main/repl)
+
+  (tv "yo")
+
+  ;; TODO Figure out how to start the babashka repl from inside the script
+
+  ;; exec seems to terminate the babashka script when it runs the program
+  (exec {:extra-env {"FOO" "BAR"}} "bash -c 'echo $FOO' | sps v")
+
+  (comment
+    ;; 
+    (for [i '[1 2]]
+      (println (str "Babashka starting " i "...")))
+
+    ;; Why does this not work? I think it's because a Clojure for may not be able to take a list of strings
+    (for [i '["nano" "vim"]]
+      (println (str "Babashka starting " i "..."))
+      (exec {:extra-env {"FOO" "BAR"}} i))))

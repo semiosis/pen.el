@@ -90,7 +90,8 @@
                 cider-doc-thing-at-point
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                pen-docs-for-thing-given-screen)
+                ;; pen-docs-for-thing-given-screen
+                )
 
         ;; Project syms (not general syms)
         :fz-sym '(clojure-fz-symbol
@@ -247,7 +248,9 @@
                 pen-doc-override
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                pen-docs-for-thing-given-screen)
+                ;; prog-mode handles this
+                ;; pen-docs-for-thing-given-screen
+                )
         :references '(lsp-ui-peek-find-references
                       ;; lsp-find-references
                       pen-counsel-ag-thing-at-point)
@@ -269,7 +272,9 @@
                 pen-doc-override
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                pen-docs-for-thing-given-screen)
+                ;; prog-mode handles this
+                ;; pen-docs-for-thing-given-screen
+                )
         :references '(lsp-ui-peek-find-references
                       ;; lsp-find-references
                       pen-counsel-ag-thing-at-point)
@@ -319,7 +324,9 @@
                 pen-doc-override
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                pen-docs-for-thing-given-screen)
+                ;; prog-mode handles this
+                ;; pen-docs-for-thing-given-screen
+                )
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
         :fz-sym '()
@@ -348,7 +355,10 @@
                 pen-doc-override
                 lsp-describe-thing-at-point
                 pen-doc-thing-at-point
-                pen-docs-for-thing-given-screen)
+
+                ;; prog-mode handles this
+                ;; pen-docs-for-thing-given-screen
+                )
         :toggle-test '(projectile-toggle-between-implementation-and-test
                        clojure-open-test)
         :fz-sym '()
