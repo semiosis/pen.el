@@ -1,0 +1,32 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -gl) {
+        use_google=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+query="$@"
+query="$(p "$query" | urlencode)"
+
+{
+oci elinks-dump "https://clojars.org/search?q=$query" | scrape "^[a-z/]+ [0-9]+\.[0-9]+\.[0-9]+$" | sed 's/^/[/;s/ \(.*\)/ "\1"/;s/$/]/;' | awk 1
+if test "$use_google" = "y"; then
+    # Don't do more than 3. It's too slow at the moment.
+    # Parallelise it in the future with clojure
+    gl site:clojars.org "$@" | head -n 5 | while IFS=$'\n' read -r line; do
+    (
+        exec 0</dev/null
+        timeout 2 oci elinks-dump "$line"
+    )
+    done | scrape "^\[[a-z/]+ \"[0-9.]+\"\]"
+fi
+} | uniqnosort | pavs

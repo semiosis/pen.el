@@ -2,4 +2,22 @@
 export TTY
 
 # /usr/bin/xprop "$@" | pen-xt -b pa -v
-/usr/bin/xprop "$@" | pen-xt -b v
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+test "$#" -gt 0 && last_arg="${@: -1}"
+
+if test "$last_arg" = _DT_SAVE_MODE || test "$last_arg" = "-root"; then
+    # Allow programs such as xdg-settings to detect the desktop environment without creating an xterm vim
+    # e.g. https://www.sussex.ac.uk/eduroam/installers/eduroam-linux-UoS-eduroam.py
+
+    # `-chrome,677522
+    # `-xdg-settings,677746 /usr/bin/xdg-settings check default-web-browser google-chrome.desktop
+      # `-xprop,677759 /home/shane/source/git/semiosis/pen.el/scripts/xprop -root _DT_SAVE_MODE
+
+    /usr/bin/xprop "$@"
+else
+    # This ensures that "pen-xt -b v" doesn't think it's piping out (without a tty) when google chrome starts
+    unbuffer bash -c "/usr/bin/xprop $CMD | pen-xt -b v"
+fi

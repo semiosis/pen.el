@@ -1,6 +1,6 @@
 #!/usr/bin/env bbb
 
-(ns utils.sets)
+(ns utils.modules)
 
 ; Use "use" to get all functions from the module
 (use 'clojure.set)

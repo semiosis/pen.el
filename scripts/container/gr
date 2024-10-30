@@ -68,12 +68,16 @@ export UPDATE
 # python3.7 -c "$PYCODE"
 
 search_with_googler() {
+    echo googler 1>&2
+    cmd1 ocif python $REPOS/googler/googler "$@" 1>&2
     ocif python $REPOS/googler/googler "$@" 2>/dev/null
 }
 
 # duck duck go
 search_with_ddg() {
-    ocif ddgr "$@" 2>/dev/null
+    echo ddgr 1>&2
+    cmd1 ocif ddgr "$@" 1>&2
+    1 ocif ddgr "$@" 2>/dev/null
 }
 
 search() {

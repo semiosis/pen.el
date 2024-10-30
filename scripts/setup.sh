@@ -2499,3 +2499,5 @@ unzip LXX.zip
 cd ~/repos
 git clone "https://github.com/babashka/bbin"
 )
+
+agi ddgr
