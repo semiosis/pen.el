@@ -371,6 +371,8 @@ tmux new -d -s init
 tmux new -d -s localhost
 )
 
+pen-ensure-deps
+
 if test -n "$DISPLAY" && test "$PEN_USE_GUI" = y; then
     runclient -c -a "" "$@"
 else

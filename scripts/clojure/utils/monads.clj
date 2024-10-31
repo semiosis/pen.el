@@ -5,6 +5,16 @@
 
 ;; DONE. Works. Figure out how to add monads to the deps of this script using a project edn.
 
+;; https://github.com/clojure/algo.monads?tab=readme-ov-file
+;; https://github.com/khinsen/monads-in-clojure/blob/master/PART1.md
+;; https://github.com/khinsen/monads-in-clojure/blob/master/PART2.md
+;; https://github.com/khinsen/monads-in-clojure/blob/master/PART3.md
+;; https://github.com/khinsen/monads-in-clojure/blob/master/PART4.md
+;; https://www.leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/
+;; https://www.leonardoborges.com/writings/2012/12/02/monads-in-small-bites-part-ii-applicative-functors/
+;; https://www.leonardoborges.com/writings/2012/12/05/monads-in-small-bites-part-iii-monoids/
+;; https://www.leonardoborges.com/writings/2012/12/08/monads-in-small-bites-part-iv-monads/
+
 ;; I'm determined to use the standard clojure interpreter for scripting alongside babashka.
 
 (ns utils.monads

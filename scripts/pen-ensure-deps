@@ -1,0 +1,14 @@
+#!/bin/bash
+export TTY
+# shopt -s nullglob # use for 'for' loops but not for 'ls', 'grep'
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# Emacs-Clojure interop. Write emacs packages in Clojure
+# Also added this:
+# /root/.emacs.d/host/pen.el/src/pen-cloel.el
+test -d /root/repos/manateelazycat/cloel || (
+cd "$(gc "https://github.com/manateelazycat/cloel")"
+clojure -X:jar
+clojure -X:install
+)
