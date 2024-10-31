@@ -49,8 +49,15 @@ $deplist
 }}"
 fi
 
+# This works:
+# https://clojure.org/reference/clojure_cli
+# user config directory, used to store user deps.edn, tool config, and cpcache for commands without a project deps.edn (default = ~/.clojure)
+export CLJ_CONFIG="/root/.emacs.d/host/pen.el/scripts/clojure"
+
 #_You can put other options here
 OPTS='-J-Xms256m -J-Xmx256m -J-client'
 
-# 
-exec clojure $OPTS -Scp "/root/.emacs.d/host/pen.el/scripts/clojure"  -Sdeps "$DEPS" -M "$@"
+# This works but I don't want to be forced to do this
+# cd "/root/.emacs.d/host/pen.el/scripts/clojure"
+ 
+exec clojure $OPTS -Sdeps "$DEPS" -M "$@"

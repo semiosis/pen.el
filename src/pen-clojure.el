@@ -47,7 +47,7 @@
 
 (defun pen-cider-macroexpand-1-or-copy ()
   (interactive)
-  (if (pen-selected-text-ignore-no-selection)
+  (if (sor (pen-selected-text-ignore-no-selection))
       (xc)
     (call-interactively 'pen-cider-macroexpand-1)))
 
