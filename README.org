@@ -51,6 +51,8 @@ The Bible-software I hope will be as featureful as any of the other options avai
 
 This should just start the Pen.el docker image.
 
+[[./scripts/pen-boot-basic]]:
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   export PEN_USE_GUI=n
   export PEN_SHARE_X=y
@@ -66,11 +68,16 @@ This should just start the Pen.el docker image.
   docker exec "--detach-keys=ctrl-q,ctrl-q" -e "DISPLAY=:0" -it pen sh -c ". /root/.profile; . /root/.emacs.d/pen.el/scripts/setup-term.sh; 'pen-tm' 'init-or-attach' '-n' 'pen'"
 #+END_SRC
 
-** Quick installation
+** Quick installation - on the host machine
+This will still run =Pen.el= inside a docker container.
+However, running =Pen.el= in this way allows you to make changes to =Pen.el=, such as modifying the emacs configuration in the =pen.el= repository,
+and when the docker image starts, it will use the =pen.el= repo on the host machine (which contains your modifications) instead of the default repo inside the docker container.
+Also, this will allow you to configure pen with the =~/.pen= directory on your host machine.
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
 
-  # This is where configuration lives
+  # This is where the optional configuration lives
   mkdir -p ~/.pen
 
   # Add the scripts to the PATH
@@ -79,8 +86,11 @@ This should just start the Pen.el docker image.
   # Prevent C-s from freezing the terminal
   stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 
-  # Run pen
+  # Run pen in GUI
   pen
+
+  # Or run pen in the terminal
+  pin
 #+END_SRC
 
 ** It's about holiness
