@@ -1,0 +1,8 @@
+#!/usr/bin/env org-shebang
+
+# Some babel blocks should be data that exports to environment variables
+# and becommes available for other data/code blocks
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
+  echo hi
+#+END_SRC
