@@ -5,6 +5,16 @@
 
 # Emacs should open the org file and parse and execute it.
 
+# Data should appear kidna like this
+
+#+BEGIN_SRC text -n :async :results verbatim code :lang text
+  あ a か ka が ga さ ざ た
+  い i き ki ぎ gi し じ ち
+  う u く ku ぐ gu す ず つ
+  え e け ke げ ge せ ぜ て
+  お o こ ko ご go そ ぞ と
+#+END_SRC
+
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code :lang text
-  echo hi
+  echo hello world
 #+END_SRC
