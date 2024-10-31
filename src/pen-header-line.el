@@ -53,7 +53,9 @@
     (let ((gp (get-path nil t nil t)))
       (if gp
           (str gp)
-        "(eq nil (get-path nil t))"))))
+        (concat default-directory "  [j:get-path]")
+        ;; "j:get-path"
+        ))))
 
 (defun get-battery-power ()
   (interactive)

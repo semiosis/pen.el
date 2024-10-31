@@ -12,6 +12,9 @@
 
       (add-to-list 'load-path "/root/.emacs.d/manual-packages/problog-mode")
       (require 'problog-mode)
+
+      (add-to-list 'load-path "/root/.emacs.d/manual-packages/clj-refactor.el")
+      (require 'clj-refactor)
       
       (add-to-list 'load-path "/root/.emacs.d/manual-packages/cpl-mode")
       (require 'cpl-mode)))

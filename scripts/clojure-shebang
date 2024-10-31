@@ -1,0 +1,56 @@
+#!/bin/sh
+
+deplist=""
+
+while [ $# -gt 0 ]; do opt="$1"; case "$opt" in
+    "") { shift; }; ;;
+    -t) {
+        use_time=y
+        shift
+    }
+    ;;
+
+    -dep) {
+        add_deps=y
+        deplist="$deplist""$2"
+        shift
+        shift
+    }
+    ;;
+
+    -bb) {
+        use_babashka=y
+        shift
+    }
+    ;;
+
+    *) break;
+esac; done
+
+if test "$use_time" = "y"; then
+    add_deps=y
+    deplist="$deplist"'clj-time/clj-time {:mvn/version "0.14.2"}'
+fi
+
+if test "$use_babashka" = "y"; then
+    add_deps=y
+    deplist="$deplist"'babashka/fs {:mvn/version "0.3.17"}
+babashka/process {:mvn/version "0.4.14"}
+org.babashka/cli {:mvn/version "0.6.43"}
+org.babashka/http-client {:mvn/version "0.1.8"}
+org.babashka/json {:mvn/version "0.1.1"}
+'
+fi
+
+#_DEPS is same format as deps.edn. Multiline is okay.
+if test "$add_deps" = "y"; then
+    DEPS="{:deps {
+$deplist
+}}"
+fi
+
+#_You can put other options here
+OPTS='-J-Xms256m -J-Xmx256m -J-client'
+
+# 
+exec clojure $OPTS -Scp "/root/.emacs.d/host/pen.el/scripts/clojure"  -Sdeps "$DEPS" -M "$@"

@@ -82,7 +82,7 @@ buffer."
 
 (defun clojure-select-copy-dependency ()
   (interactive)
-  (xc (fz (pen-snc "cd $NOTES; oci clojure-list-deps"))))
+  (xc (fz (pen-snc "cd $NOTES; oci clojure-list-deps") nil nil "copy used dep: ")))
 
 (defun clojure-find-deps (use-google &rest query)
   (interactive (list (or

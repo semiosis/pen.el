@@ -54,10 +54,18 @@ if test "$YN_DEFAULT" = "n"; then
     exit 1
 fi
 
+# gum is cool but I still prefer my own
+# gum-confirm "$message"
+
 while :; do
     read -p " $allowed_re_color: " -n 1 -r
     echo
     [[ $REPLY =~ $allowed_re ]] && break
+
+    echo
+    message="$(printf -- "%s" "$message" | his -f lgreen '.*')"
+    echo -e " $message"
+    echo
 done
 echo
 

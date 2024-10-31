@@ -1,0 +1,11 @@
+#!/bin/bash
+export TTY
+
+{
+find $MYGIT -name "*.clj"
+} | umn | awk1 | while IFS=$'\n' read -r line; do
+    (
+    exec 0</dev/null
+    cat "$line" | bb -i "(doseq [l (map str (->> (read-string (clojure.string/join \" \" *input*)) (drop-while (complement #{:dependencies})) next first))] (println l))" -o 2>/dev/null | cat
+    )
+done | uniqnosort

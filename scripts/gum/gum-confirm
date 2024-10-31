@@ -1,0 +1,6 @@
+#!/bin/bash
+export TTY
+
+message="$1"
+
+gum confirm --prompt.foreground="130" --selected.foreground="235" --selected.background="243" --unselected.foreground="243" --unselected.background="235" "$message"

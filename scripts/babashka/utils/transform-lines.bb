@@ -1,5 +1,10 @@
 #!/usr/bin/env bb
 
+;; sister script
+;; e:$EMACSD/pen.el/scripts/clojure/utils/transform-lines.clj
+
+(ns utils.transform-lines)
+
 (require '[clojure.string :as str]
          '[clojure.java.io :as io])
 

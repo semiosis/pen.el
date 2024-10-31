@@ -1,0 +1,13 @@
+{:paths ["."]
+ :deps { ;; com.taoensso/timbre {:mvn/version "5.2.1"}
+        ;; expound/expound {:mvn/version "0.9.0"}
+        ;; fipp/fipp {:mvn/version "0.6.26"}
+        org.clojure/algo.monads {:mvn/version "0.2.0"}
+        ;; org.clojure/tools.gitlibs {:mvn/version "2.4.181"}
+        ;; selmer/selmer {:mvn/version "1.12.55"}
+        version-clj/version-clj {:mvn/version "2.0.2"}
+
+        ;; This was added using cljr | =H-* a p= | =cljr-add-project-dependency= | =clj-refactor-map=
+        ;; babashka/babashka {:mvn/version "1.12.195-SNAPSHOT"}
+        }
+ }

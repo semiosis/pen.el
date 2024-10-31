@@ -144,6 +144,9 @@
 
                (and (major-mode-enabled 'ascii-adventures-mode)
                     "ASCII Adventures")
+               
+               ;; (and (major-mode-enabled 'cider-repl-mode)
+               ;;      default-directory)
 
                (and (major-mode-enabled 'universal-sidecar-buffer-mode)
                     "Sidecar")
@@ -196,7 +199,12 @@
 
                (and (major-mode-enabled 'Custom-mode)
                     (custom-get-path))
+               
+               (and (major-mode-enabled 'eshell-mode)
+                    default-directory)
 
+               (and (major-mode-enabled 'w3m-mode)
+                    w3m-current-url)
                (and (major-mode-enabled 'w3m-mode)
                     w3m-current-url)
 

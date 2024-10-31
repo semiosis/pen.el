@@ -1,7 +1,13 @@
 #!/usr/bin/env bbb
 
 (ns utils.monads
-  (:require [org.clojure/algo.monads "0.2.0"]))
+  (:require [babashka.deps :as deps])
+  ;; (:require [ as m])
+  )
+
+(deps/add-deps '{:deps {org.clojure/algo.monads {:mvn/version "0.2.0"}}})
+
+(require '[clojure.algo.monads :as m])
 
 (let [a  1
       b  (inc a)]
@@ -22,7 +28,8 @@
 (m-bind (inc a)  (fn [b]
         (* a b)))))
 
-(domonad identity-m
-  [a  1
-   b  (inc a)]
-  (* a b))
+(println
+ (m/domonad m/identity-m
+            [a  1
+             b  (inc a)]
+            (* a b)))

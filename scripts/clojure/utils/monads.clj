@@ -3,7 +3,9 @@
 ;; When using as a script, the deps must be added this way.
 ;; But I must also add the deps to the project edn file.
 
-;; TODO Figure out how to add monads to the deps of this script using a project edn.
+;; DONE. Works. Figure out how to add monads to the deps of this script using a project edn.
+
+;; I'm determined to use the standard clojure interpreter for scripting alongside babashka.
 
 (ns utils.monads
   ;; Is there something like babashka.deps for clojure?
@@ -39,8 +41,12 @@
 (m-bind (inc a)  (fn [b]
         (* a b)))))
 
+;; TODO Run macroexpand on this
 (println
  (m/domonad m/identity-m
             [a  1
              b  (inc a)]
             (* a b)))
+
+(clojure.algo.monads/with-monad m/identity-m
+  (m-bind 1 (fn [a] (m-bind (inc a) (fn [b] (m-result (* a b)))))))

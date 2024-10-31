@@ -4,4 +4,15 @@ export TTY
 
 # ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
 
-tpop -nos -h 5 sout yn "$@"
+# tpop -nos -h 5 sout yn "$@"
+
+message="$@"
+# Remove trailing spaces
+message="$(printf -- "%s" "$message" | s remove-trailing-whitespace)"
+len=${#message} 
+shortest_len=21
+if test "$len" -lt "$shortest_len"; then
+    len="$shortest_len"
+fi
+
+tpop -nos -w "$(( len + 4 ))" -h 7 sout yn "$message"

@@ -446,9 +446,10 @@ printf -- "%s\n" "$SHELL_CODE" >> ~/.bashrc
 # clojure
 agi openjdk-11-jre
 (
-curl -O https://download.clojure.org/install/linux-install-1.10.3.1040.sh
-chmod +x linux-install-1.10.3.1040.sh
-./linux-install-1.10.3.1040.sh
+cd ~
+curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
+chmod +x linux-install.sh
+./linux-install.sh
 )
 (
 cd /usr/local/bin/
@@ -2501,3 +2502,8 @@ git clone "https://github.com/babashka/bbin"
 )
 
 agi ddgr
+
+(
+cd ~/.emacs.d/manual-packages
+git clone "https://github.com/clojure-emacs/clj-refactor.el"
+)

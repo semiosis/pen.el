@@ -129,7 +129,9 @@ if test "$detach" = "y"; then
 fi
 
 : ${CMD:="$shcmd"}
-: ${CMD:="$(cmd-nice "$@")"}
+# cmd-nice has trouble with unicode
+# : ${CMD:="$(cmd-nice "$@")"}
+: ${CMD:="$(cmd "$@")"}
 
 # may be a percentage or a fixed integer number of characters
 : "${width:="80%"}"
