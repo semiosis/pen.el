@@ -233,16 +233,16 @@ if stdin_exists; then
 else
     if [ -n "$tag" ]; then
         mkdir -p "$NOTES/clipboard/"
-        xclip -o 2>/dev/null | awk 1 >> "$NOTES/clipboard/${tag}.txt"
+        xclip -o -selection clipboard 2>/dev/null | awk 1 >> "$NOTES/clipboard/${tag}.txt"
     else
-        xclip -o 2>/dev/null | awk 1 >> $NOTES/clipboard.txt
+        xclip -o -selection clipboard 2>/dev/null | awk 1 >> $NOTES/clipboard.txt
     fi
 
     {
         if test "$TRIM" = "y"; then
-            xclip -o 2>/dev/null | soak | chomp
+            xclip -o -selection clipboard 2>/dev/null | soak | chomp
         else
-            xclip -o 2>/dev/null
+            xclip -o -selection clipboard 2>/dev/null
         fi
     } | {
         if test "$UNMINIMISE_IT" = "y"; then

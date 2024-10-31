@@ -40,9 +40,15 @@ unset EMACSD_BUILTIN
 test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
 export EMACSD_BUILTIN
 
+# Must be posix compliant. Because docker exec sources setup-term.sh from the pen script:
+test_nonemptydir() {
+  dir="$1"
+  test -n "$(ls -A "$dir")"
+}
+
 unset EMACSD
-test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
-test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+test -d "/root/.emacs.d/host" && test_nonemptydir "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && test_nonemptydir "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
 
 export PENELD="$EMACSD/pen.el"

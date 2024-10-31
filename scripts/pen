@@ -2128,7 +2128,7 @@ IFS= read -r -d '' shcode <<HEREDOC
     # Double ensure it's removed
     docker container rm "$PEN_CONTAINER_NAME" &>/dev/null
 
-    docker "$docker_cmd" \
+    pen-docker "$docker_cmd" \
         -d \
         $(test "$docker_cmd" = run && printf -- "%s " --rm ) \
         $(test -n "$OPENAI_API_KEY" && printf -- "%s " -e "OPENAI_API_KEY:$OPENAI_API_KEY" ) \
@@ -2285,6 +2285,13 @@ HEREDOC
 
     *)
 esac
+
+pen-docker() {
+    # echo the environment passed to the command
+    printf -- "%s\n" docker "$@" | sed -z "s/--env\\n/--env /g" | grep -- --env | grep -v = | cut -d ' ' -f 2 | while read varname; do val="${!varname}"; if test -n "$val"; then echo "${varname}=$val"; fi; done | hls blue 1>&2
+
+    docker "$@"
+}
 
 pen_eval() {
     if test "$DEBUG" = "y"; then

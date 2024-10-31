@@ -24,9 +24,15 @@ unset EMACSD_BUILTIN
 test -d "/root/.emacs.d" && : "${EMACSD_BUILTIN:="/root/.emacs.d"}"
 export EMACSD_BUILTIN
 
+# posix compliant
+test_nonemptydir() {
+  dir="$1"
+  test -n "$(ls -A "$dir")"
+}
+
 unset EMACSD
-test -d "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
-test -d "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
+test -d "/root/.emacs.d/host" && test_nonemptydir "/root/.emacs.d/host" && : "${EMACSD:="/root/.emacs.d/host"}"
+test -d "/root/.emacs.d" && test_nonemptydir "/root/.emacs.d" && : "${EMACSD:="/root/.emacs.d"}"
 export EMACSD
 
 term_setup_fp_host="$EMACSD_BUILTIN/host/pen.el/scripts/setup-term.sh"
