@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 
-(ns utils.org-mode-make-headline-asterisks-into-slash
+(ns utils.hiragana-to-romanji
   (:require [babashka.deps :as deps]))
 
 ;; cat /volumes/home/shane/var/smulliga/source/git/semiosis/thoughts-on-theology/README.org | org-mode-make-headline-asterisks-into-slash.bb | v

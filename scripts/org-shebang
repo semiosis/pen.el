@@ -1,0 +1,34 @@
+#!/bin/bash
+export TTY
+
+# ( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+# org-shebang Genesis 3
+# org-shebang /root/.emacs.d/host/pen.el/scripts/org-scripts/hello-world.org
+
+# TODO Inside this heredoc, write the elisp for parsing and running the org-mode document.
+
+IFS= read -r -d '' elisp <<'HEREDOC'
+(defun get-chapter-title (book chapter)
+ (interactive (list (read-string "Book: ")
+                    (read-string "Chapter: ")))
+ (with-temp-buffer
+   (ignore-errors (insert-file-contents "/root/.pen/documents/notes/ws/peniel/Bible-chapter-titles.txt"))
+   (search-forward book)
+   (search-forward-regexp (concat "\\b" chapter "\\b"))
+   (search-forward-regexp "\\. ")
+   (let ((start (point))
+         (end (progn
+                (end-of-line)
+                (point))))
+     (buffer-substring start end))))
+
+;; (message "Yo: %S" argv)
+;; (message "Hello: %S" argv)
+;; (get-chapter-title (car argv) (cadr argv))
+
+(message "%s" (get-chapter-title (car argv) (cadr argv)))
+HEREDOC
+
+# emacs --quick --script "$(echo "$elisp" | tf el)" "$@"
+emacs --quick --script <(echo "$elisp") "$@"

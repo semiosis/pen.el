@@ -1,6 +1,7 @@
 #!/bin/bash
 export TTY
 
-message="$1"
+# If I specify empty string as the message then it will not show a message
+# message="$1"
 
-gum confirm --prompt.foreground="130" --selected.foreground="235" --selected.background="243" --unselected.foreground="243" --unselected.background="235" "$message"
+gum confirm --prompt.foreground="130" --selected.foreground="235" --selected.background="243" --unselected.foreground="243" --unselected.background="235" "$@"
