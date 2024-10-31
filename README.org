@@ -2,8 +2,6 @@
 Pen.el is an emacs-based operating system designed with holiness in mind.
 It's a free and holy OS made with emacs, debian linux and docker.
 
-/This project is not in a ready state/
-
 It's holy because:
 - This software is dedicated to supporting one's Christian faith
   - Facilitate:
@@ -49,20 +47,37 @@ The Bible-software I hope will be as featureful as any of the other options avai
 - It runs in a docker container.
 - It's primarily text-based computing environment with emacs as the main component towards that end.
 
+** Quick run
+
+This should just start the Pen.el docker image.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  export PEN_USE_GUI=n
+  export PEN_SHARE_X=y
+  export PEN_CONTAINER_NAME=pen
+  export TTYD_PORT=7689
+  export KHALA_PORT=9845
+  export PEN_ENGINE=nil
+  export PEN_N_WORKERS=2
+  export TERM=screen-256color
+  
+  docker run --rm -d --rm -v /home/shane/.pen:/root/.pen -ti --hostname pen-agia --env PEN_USE_GUI --env PEN_SHARE_X --env PEN_NO_TM --env INTERACTIVE --env EXPOSE_ETHEREUM --env PEN_CONTAINER_NAME --env TTYD_PORT --env KHALA_PORT --env PEN_ENGINE --env PEN_NO_TIMEOUT --env PEN_N_WORKERS --env NO_EMACS --env PEN_PROMPT --env PEN_HELP --env PEN_OVERLAY --env NO_QUIT_WORKERS --env USE_NVC --env TERM --env USE_NVC "--detach-keys=ctrl-q,ctrl-q" --privileged --env COLORFGBG -e "DISPLAY=:0" --env EMAIL --env "PEN_USER=shane" --env GIT_AUTHOR_EMAIL --env GIT_AUTHOR_NAME --env GIT_COMMITTER_EMAIL --env GIT_COMMITTER_NAME --env SSH_AUTH_SOCK --env "TIMEZONE=UTC" --env "VIDEO_GROUP_ID=44" -v /dev/dri:/dev/dri -v /dev/shm:/dev/shm -v /tmp/.X11-unix:/tmp/.X11-unix "--cap-add=SYS_PTRACE" "--cap-add=SYS_ADMIN" "--cap-add=NET_ADMIN" --ulimit "rtprio=100:100" -v /var/log/coredumps:/var/log/coredumps --network host --expose 7689 -p 7689:7689 --expose 9845 -p 9845:9845 "--entrypoint=" "--name=pen" semiosis/pen.el:latest /root/run.sh
+  
+  docker exec "--detach-keys=ctrl-q,ctrl-q" -e "DISPLAY=:0" -it pen sh -c ". /root/.profile; . /root/.emacs.d/pen.el/scripts/setup-term.sh; 'pen-tm' 'init-or-attach' '-n' 'pen'"
+#+END_SRC
+
 ** Quick installation
 #+BEGIN_SRC bash -n :i bash :async :results verbatim code
   git clone "https://github.com/semiosis/pen.el"
 
+  # This is where configuration lives
   mkdir -p ~/.pen
 
   # Add the scripts to the PATH
-  echo export PATH="$(realpath .)/pen.el/scripts:\$PATH" >> ~/.profile
+  export PATH="$(realpath .)/pen.el/scripts:\$PATH"
 
-  # Add this to prevent C-s from freezing the terminal
-  echo "stty stop undef 2>/dev/null; stty start undef 2>/dev/null" | tee -a ~/.zshrc >> ~/.bashrc
-
-  # Source your .profile
-  . ~/.profile
+  # Prevent C-s from freezing the terminal
+  stty stop undef 2>/dev/null; stty start undef 2>/dev/null
 
   # Run pen
   pen

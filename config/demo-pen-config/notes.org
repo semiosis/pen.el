@@ -1,0 +1,6 @@
+* 
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  # This is where configuration lives
+  mkdir -p ~/.pen
+#+END_SRC
