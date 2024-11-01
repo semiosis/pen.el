@@ -6,8 +6,9 @@
 
 ;; why did this run twice?
 (message "start of pen.el")
-
+ 
 (setq large-file-warning-threshold nil)
+(setq create-lockfiles nil)
 
 ;; Speed up pen-sn
 (require 'pen-simple)
