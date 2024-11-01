@@ -1018,6 +1018,7 @@ Reconstruct the entire yaml-ht for a different language."
            nil default-directory))
 
 ;; (cmd-cip "-5" 5 "hello" "=h")
+;; [[sps:eval "cmd-cip -5 5 \"hello there\" =h" | v]]
 (defun pen-cmd-cip (&rest args)
   ;; default-directory specified here to avoid a bug with tramp
   (let ((default-directory "/"))

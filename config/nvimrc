@@ -141,8 +141,16 @@ set autochdir
 " set undodir=/dev/shm/var/tmp/shane/vim
 set foldcolumn=0 " margin, gutter
 
-call pathogen#infect()
-call pathogen#infect("/root/.pen/vim-bundles/{}")
+if ! has('nvim')
+    call pathogen#infect()
+    call pathogen#infect("/root/.pen/vim-bundles/{}")
+endif
+
+if has('nvim')
+    set ls=0
+
+    set mouse=a
+endif
 
 """ NERDCommenter
 "let NERDCreateDefaultMappings=0 " disable default mappings
@@ -2198,7 +2206,10 @@ command! -nargs=+ MapToggleBoth call MapToggleBoth(<f-args>)
 
 command! ForceQuit silent! call ForceQuit()
 
-colorscheme inkpot
+if ! has('nvim')
+    colorscheme inkpot
+endif
+
 source ~/.vim/paste-replace.vim
 source ~/.vim/utils.vim
 source ~/.vim/pen.vim

@@ -48,16 +48,23 @@
           ;; (tv (str symstr))
           (if (re-match-p "^\\[.*\\]$" argrepr)
               (progn
-                (eval
-                 `(call-interactively
-                   (lambda (,@arglist)
-                     (interactive (list ,@iarglist))
-                     (let* ((valstr (pen-cmd ,@arglist))
-                            (clj (concat "(" ,symstr " " valstr ")")))
-                       (cider-nrepl-request:eval clj nil))))))
+                (if has-variable-arg
+                    (eval
+                     `(call-interactively
+                       (lambda (,@arglist)
+                         (interactive (list ,@iarglist))
+                         ;; ,@arglist should just be a single string
+                         (let* ((valstr (pen-snc (cmd "eval" "cmd-cip" ,@arglist)))
+                                (clj (concat "(" ,symstr " " valstr ")")))
+                           (cider-nrepl-request:eval clj nil)))))
+                  (eval
+                     `(call-interactively
+                       (lambda (,@arglist)
+                         (interactive (list ,@iarglist))
+                         (let* ((valstr (pen-cmd ,@arglist))
+                                (clj (concat "(" ,symstr " " valstr ")")))
+                           (cider-nrepl-request:eval clj nil)))))))
             (cider-nrepl-request:eval (concat "(" symstr ")") nil))))))
-
-
 
 ;; J:mount-pensieve
 ;; (s-substring "\\[\\(.*\\)\\]" (str (caddr (sexp-at-point))))

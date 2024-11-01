@@ -19,8 +19,19 @@
             (.getCanonicalPath f)
             (recur (rest paths))))))))
 
+;; I can E on -main function now from lispy
+;; e.g.
+;; (1/3) & args:
+;; foo -5
 (defn -main [& args]
-  (myshell/tv (str (count args)
-                   "\n" args))
-  (when-let [executable (first *command-line-args*)]
-    (println (which executable))))
+  (comment
+    (myshell/tv (str (count args)
+                     "\n" args)))
+
+  ;; bbb handles the -main well now.
+  ;; So does lispy E in cider
+  (if args
+    (when-let [executable (first args)]
+      (println (myshell/tv (which executable))))
+    (when-let [executable (first *command-line-args*)]
+      (println (which executable)))))
