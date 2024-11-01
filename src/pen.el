@@ -8,6 +8,8 @@
 (message "start of pen.el")
  
 (setq large-file-warning-threshold nil)
+
+;; Ignore file locking until startup is complete. That way I can start multiple emacs workers at the same time
 (setq create-lockfiles nil)
 
 ;; Speed up pen-sn
@@ -2743,5 +2745,8 @@ May use to generate code from comments."
 ;; why did this run twice?
 (message "end of pen.el")
 ;; reload this when the frame starts
+
+;; Re-enable file locking when startup is complete.
+(setq create-lockfiles t)
 
 (provide 'pen)
