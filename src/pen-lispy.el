@@ -28,13 +28,21 @@
                ;; caddr = third
                (argvec (third sexp))
                (arglist (pen-vector2list argvec))
+               (oarglist arglist)
+               (has-variable-arg (member '& oarglist))
                ;; Probably the simplest fix is to remove the &
                ;; Rather than implementing variable arguments
-               (arglist (-filter (lambda (s) (not (string-equal "&" s)))
-                                 arglist))
-               (iarglist (mapcar
-                          (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
-                          arglist))
+               (arglist
+                (-filter (lambda (s) (not (string-equal "&" s)))
+                         arglist))
+               (iarglist
+                (if has-variable-arg
+                    (mapcar
+                     (lambda (e) `(read-string-hist ,(concat "& " (str e) ": ")))
+                     arglist)
+                  (mapcar
+                   (lambda (e) `(read-string-hist ,(concat (str e) ": ")))
+                   arglist)))
                (argrepr (str (third sexp)))
                (argstr (s-substring "\\[\\(.*\\)\\]" argrepr)))
           ;; (tv (str symstr))

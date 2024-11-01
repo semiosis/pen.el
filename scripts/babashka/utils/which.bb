@@ -1,9 +1,10 @@
-#!/usr/bin/env bb
+#!/usr/bin/env bbb
 
 ;; bb /volumes/home/shane/var/smulliga/source/git/babashka/babashka/examples/which.clj gedit
 
 (ns utils.which
-  (:require [babashka.deps :as deps]))
+  (:require [babashka.deps :as deps]
+            [utils.myshell :as myshell]))
 
 (require '[clojure.java.io :as io])
 
@@ -18,5 +19,8 @@
             (.getCanonicalPath f)
             (recur (rest paths))))))))
 
-(when-let [executable (first *command-line-args*)]
-  (println (which executable)))
+(defn -main [& args]
+  (myshell/tv (str (count args)
+                   "\n" args))
+  (when-let [executable (first *command-line-args*)]
+    (println (which executable))))

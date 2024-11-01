@@ -1,3 +1,5 @@
+#!/usr/bin/env bbb
+
 (ns swing
   (:import [javax.swing JFrame JLabel JButton]
            [java.awt.event WindowListener]))
