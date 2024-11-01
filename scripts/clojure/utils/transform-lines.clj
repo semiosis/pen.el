@@ -1,4 +1,5 @@
-#!/usr/bin/env -S clojure-shebang -t
+#!/usr/bin/env -S clojure-shebang
+;; #!/usr/bin/env -S clojure-shebang -t
 
 ;; Deps are in the clojure-shebang script
 

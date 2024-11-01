@@ -1,0 +1,24 @@
+#!/bin/bash
+export TTY
+
+( hs "$(basename "$0")" "$@" "#" "<==" "$(ps -o comm= $PPID)" 0</dev/null ) &>/dev/null
+
+liqcmd="clojure -Sdeps '{:deps {mogenslund/liquid {:mvn/version \"2.1.2\"}}}' -m liq.core"
+
+CMD="$(cmd "$@")"
+: ${CMD:="$(cmd "$@")"}
+
+unset CWD
+
+first_arg="$1"
+if test -f "$first_arg"; then
+    rp="$(realpath "$first_arg")"
+    bn="$(basename -- "$rp")"
+    dn="$(dirname "$rp")"
+    cd "$dn"
+    x -sh "$liqcmd" -e "~" -s ":e $bn" -c m -i
+elif test "$first_arg" == "-h" || test "$first_arg" == "--help"; then
+    x -sh "$liqcmd" -e "~" -s ":help" -c m -i
+else
+    eval "$liqcmd $CMD"
+fi

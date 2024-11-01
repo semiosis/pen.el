@@ -59,5 +59,28 @@ OPTS='-J-Xms256m -J-Xmx256m -J-client'
 
 # This works but I don't want to be forced to do this
 # cd "/root/.emacs.d/host/pen.el/scripts/clojure"
- 
-exec clojure $OPTS -Sdeps "$DEPS" -M "$@"
+
+script_fp="$1"
+shift
+
+runclojure() {
+    if test -n "$DEPS"; then
+        cmd-nice clojure $OPTS -Sdeps "$DEPS" -M "$@" | awk 1 | hls blue 1>&2
+        exec clojure $OPTS -Sdeps "$DEPS" -M "$@"
+    else
+        cmd-nice clojure $OPTS -M "$@" | awk 1 | hls blue 1>&2
+        exec clojure $OPTS -M "$@"
+    fi
+}
+
+ns="$(cat "$script_fp" | scrape "^\\(ns [a-z._-]+\\b" | cut -d ' ' -f 2)"
+has_main="$(cat "$script_fp" | scrape "^\\(defn -?main\\b" | cut -d ' ' -f 2)"
+
+if test -n "$has_main"; then
+    # See e:bbb
+    # Differently from babashka, it seems that when I specify the name of the main function, it doesn't work
+    # runclojure -m "$ns/$has_main" "$@"
+    runclojure -m "$ns" "$@"
+else
+    runclojure "$script_fp" "$@"
+fi
