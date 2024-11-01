@@ -68,6 +68,18 @@ This should just start the Pen.el docker image.
   docker exec "--detach-keys=ctrl-q,ctrl-q" -e "DISPLAY=:0" -it pen sh -c ". /root/.profile; . /root/.emacs.d/pen.el/scripts/setup-term.sh; 'pen-tm' 'init-or-attach' '-n' 'pen'"
 #+END_SRC
 
+** Exiting
+
+Typically, to shut down Pen.el, you would run =penq= from within Pen.el or from
+the host machine.
+
+#+BEGIN_SRC bash -n :i bash :async :results verbatim code
+  penq
+
+  # To forcefully shut down Pen.el use the docker command
+  docker container stop pen
+#+END_SRC
+
 ** Quick installation - on the host machine
 This will still run =Pen.el= inside a docker container.
 However, running =Pen.el= in this way allows you to make changes to =Pen.el=, such as modifying the emacs configuration in the =pen.el= repository,
