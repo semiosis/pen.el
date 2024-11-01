@@ -24,8 +24,8 @@ export VIMSNIPPETS
 export GOPATH="$HOME/go"
 export GOBIN="$HOME/go/bin"
 unset TMPDIR
-: "${TMPDIR:="/root/.pen/tmp"}"
-: "${TMPDIR:="/tmp"}"
+test -d "/root/.pen/tmp" && : "${TMPDIR:="/root/.pen/tmp"}"
+test -d "/tmp" && : "${TMPDIR:="/tmp"}"
 export TMPDIR
 export PENCONF="$HOME/.pen"
 export GLOSSARIES="$PENCONF/glossaries"
